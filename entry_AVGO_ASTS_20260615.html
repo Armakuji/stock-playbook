@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XVARY Research · Entry Strategy · AVGO + ASTS · 2026-06-15</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0f172a;
+    color: #e2e8f0;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    padding: 32px 24px;
+    min-height: 100vh;
+  }
+
+  .header { margin-bottom: 28px; padding-bottom: 18px; border-bottom: 1px solid #1e293b; }
+  .header h1 { font-size: 21px; font-weight: 700; color: #f8fafc; }
+  .header span { font-size: 12px; color: #64748b; display: block; margin-top: 3px; }
+
+  /* Summary picks */
+  .summary-bar { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 28px; }
+  .summary-card { background: #1e293b; border-radius: 10px; padding: 14px 16px; border: 1px solid #334155; display: flex; align-items: center; gap: 12px; }
+  .summary-rank { font-size: 24px; }
+  .summary-ticker { font-size: 18px; font-weight: 800; color: #f8fafc; }
+  .summary-sub { font-size: 11px; color: #64748b; margin-top: 1px; }
+  .summary-badge { margin-left: auto; font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 16px; white-space: nowrap; }
+  .badge-core { background: #10b98118; color: #10b981; border: 1px solid #10b98140; }
+  .badge-moon { background: #f59e0b18; color: #f59e0b; border: 1px solid #f59e0b40; }
+
+  /* Stock block */
+  .stock-block { margin-bottom: 28px; border: 1px solid #334155; border-radius: 14px; overflow: hidden; }
+  .stock-block.avgo { border-top: 3px solid #10b981; }
+  .stock-block.asts { border-top: 3px solid #f59e0b; }
+
+  .block-header { background: #1e293b; padding: 18px 22px; }
+  .block-header-top { display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 12px; }
+  .block-ticker { font-size: 22px; font-weight: 800; color: #f8fafc; }
+  .block-name { font-size: 12px; color: #64748b; margin-top: 2px; }
+  .block-price .val { font-size: 22px; font-weight: 700; color: #f8fafc; text-align: right; }
+  .block-price .sub { font-size: 12px; color: #64748b; margin-top: 2px; text-align: right; }
+
+  /* Company description */
+  .company-desc {
+    background: #0f172a;
+    border-radius: 8px;
+    padding: 11px 14px;
+    font-size: 12.5px;
+    color: #94a3b8;
+    line-height: 1.6;
+    border-left: 3px solid #334155;
+  }
+  .company-desc strong { color: #e2e8f0; }
+
+  .block-body { padding: 20px 22px; display: grid; gap: 20px; }
+
+  .section-label { font-size: 10px; font-weight: 700; color: #64748b; letter-spacing: 0.8px; text-transform: uppercase; margin-bottom: 12px; }
+
+  /* Upside scenarios */
+  .scenarios { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  @media (max-width: 600px) { .scenarios { grid-template-columns: 1fr; } }
+  .scenario-card { background: #0f172a; border-radius: 10px; padding: 14px; border: 1px solid #1e293b; }
+  .sc-label { font-size: 10px; font-weight: 700; letter-spacing: 0.7px; text-transform: uppercase; margin-bottom: 8px; }
+  .sc-bear { color: #ef4444; }
+  .sc-base { color: #f59e0b; }
+  .sc-bull { color: #10b981; }
+  .sc-pct { font-size: 26px; font-weight: 800; margin-bottom: 4px; line-height: 1; }
+  .sc-price { font-size: 13px; color: #94a3b8; margin-bottom: 6px; }
+  .sc-date { display: inline-block; font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 8px; margin-bottom: 8px; }
+  .date-bear  { background: #ef444420; color: #ef4444; border: 1px solid #ef444430; }
+  .date-base  { background: #f59e0b20; color: #f59e0b; border: 1px solid #f59e0b30; }
+  .date-bull  { background: #10b98120; color: #10b981; border: 1px solid #10b98130; }
+  .sc-note { font-size: 11.5px; color: #64748b; line-height: 1.5; }
+
+  /* Catalyst timeline */
+  .timeline { display: flex; flex-direction: column; gap: 10px; }
+  .tl-item { display: flex; align-items: flex-start; gap: 14px; }
+  .tl-date { min-width: 90px; font-size: 11px; font-weight: 700; padding: 4px 8px; border-radius: 6px; text-align: center; white-space: nowrap; margin-top: 1px; }
+  .tl-hot   { background: #ef444420; color: #ef4444; border: 1px solid #ef444440; }
+  .tl-soon  { background: #f59e0b20; color: #f59e0b; border: 1px solid #f59e0b40; }
+  .tl-later { background: #334155;   color: #94a3b8; border: 1px solid #475569; }
+  .tl-text { font-size: 13px; color: #cbd5e1; line-height: 1.5; }
+  .tl-text strong { color: #f8fafc; }
+
+  /* Levels */
+  .levels-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+  @media (max-width: 600px) { .levels-grid { grid-template-columns: 1fr; } }
+  .level-card { background: #0f172a; border-radius: 10px; padding: 14px; border: 1px solid #1e293b; }
+  .level-card.tp { border-color: #10b98130; }
+  .level-card.sl { border-color: #ef444430; }
+  .level-header { font-size: 10px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; margin-bottom: 10px; }
+  .lh-entry { color: #94a3b8; }
+  .lh-tp    { color: #10b981; }
+  .lh-sl    { color: #ef4444; }
+  .level-row { display: flex; justify-content: space-between; align-items: flex-start; padding: 7px 0; border-bottom: 1px solid #1e293b; gap: 8px; }
+  .level-row:last-child { border-bottom: none; padding-bottom: 0; }
+  .lr-left { flex: 1; }
+  .lr-label { font-size: 12px; color: #64748b; }
+  .lr-note  { font-size: 10px; color: #475569; margin-top: 2px; }
+  .lr-price { font-size: 13px; font-weight: 700; white-space: nowrap; }
+  .lr-pct   { display: block; font-size: 10px; color: #64748b; font-weight: 400; margin-top: 2px; text-align: right; }
+  .price-entry { color: #e2e8f0; }
+  .price-tp    { color: #10b981; }
+  .price-sl    { color: #ef4444; }
+
+  .ok-chip   { display: inline-block; background: #10b98115; border: 1px solid #10b98130; color: #10b981; font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 10px; margin-left: 5px; }
+  .warn-chip { display: inline-block; background: #ef444415; border: 1px solid #ef444430; color: #ef4444; font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 10px; margin-left: 5px; }
+  .info-chip { display: inline-block; background: #6366f115; border: 1px solid #6366f130; color: #818cf8; font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 10px; margin-left: 5px; }
+
+  /* Verdict */
+  .verdict-box { background: #1e293b; border-radius: 8px; padding: 13px 16px; font-size: 13px; color: #94a3b8; line-height: 1.6; border-left: 3px solid #334155; }
+  .verdict-box strong { color: #f8fafc; }
+  .verdict-box.avgo { border-left-color: #10b981; }
+  .verdict-box.asts { border-left-color: #f59e0b; }
+
+  /* Sources */
+  .sources { margin-top: 20px; padding: 14px 16px; background: #1e293b; border-radius: 8px; border: 1px solid #334155; }
+  .sources h3 { font-size: 11px; font-weight: 700; color: #64748b; letter-spacing: 0.8px; text-transform: uppercase; margin-bottom: 8px; }
+  .sources a { display: block; font-size: 11.5px; color: #38bdf8; text-decoration: none; margin-bottom: 3px; opacity: 0.8; }
+  .sources a:hover { opacity: 1; }
+  footer { margin-top: 20px; text-align: center; font-size: 11px; color: #334155; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>XVARY Research · Entry Strategy Report</h1>
+  <span>Best 2 New Entry Picks · AVGO + ASTS · June 15, 2026</span>
+</div>
+
+<div class="summary-bar">
+  <div class="summary-card">
+    <div class="summary-rank">🥇</div>
+    <div>
+      <div class="summary-ticker">AVGO</div>
+      <div class="summary-sub">Higher conviction · dip recovery · Aug re-rate</div>
+    </div>
+    <span class="summary-badge badge-core">🟢 Core</span>
+  </div>
+  <div class="summary-card">
+    <div class="summary-rank">🥈</div>
+    <div>
+      <div class="summary-ticker">ASTS</div>
+      <div class="summary-sub">Binary event · Jun 17 launch + Japan award</div>
+    </div>
+    <span class="summary-badge badge-moon">🔴 ค่าขนม</span>
+  </div>
+</div>
+
+
+<!-- ===== AVGO ===== -->
+<div class="stock-block avgo">
+  <div class="block-header">
+    <div class="block-header-top">
+      <div>
+        <div class="block-ticker">AVGO — Broadcom Inc.</div>
+        <div class="block-name">AI Custom Silicon · Networking · Software · NASDAQ</div>
+      </div>
+      <div class="block-price">
+        <div class="val">$382.07</div>
+        <div class="sub">June 15, 2026 · -8.9% past month</div>
+      </div>
+    </div>
+    <!-- Company description -->
+    <div class="company-desc">
+      <strong>What is AVGO?</strong> Broadcom ออกแบบชิปเซมิคอนดักเตอร์ระดับสูงและซอฟต์แวร์โครงสร้างพื้นฐาน เชี่ยวชาญด้านชิป AI แบบ Custom (XPU) ให้กับยักษ์ใหญ่ tech เช่น Meta, Google, Apple — เป็นเหมือน "ช่างทำชิป AI ส่วนตัว" ของ Hyperscalers นอกจากนี้ยังมีธุรกิจ Networking, Storage และ VMware (Enterprise Software) ที่ให้รายได้มั่นคง รายได้ไตรมาสล่าสุดทะลุ $15B — record สูงสุด แต่ราคาร่วงเพราะตลาดคาดไว้สูงกว่า
+    </div>
+  </div>
+
+  <div class="block-body">
+
+    <!-- Upside scenarios -->
+    <div>
+      <div class="section-label">Upside Scenarios — เส้นทางขึ้น</div>
+      <div class="scenarios">
+
+        <div class="scenario-card">
+          <div class="sc-label sc-bear">🔴 Bear Case</div>
+          <div class="sc-pct" style="color:#ef4444">-11%</div>
+          <div class="sc-price">ลงต่อ → $340</div>
+          <div class="sc-date date-bear">ถ้าเกิด: Jun–Jul 2026</div>
+          <div class="sc-note">ตลาดกลัว AI ชะลอ / macro ซบ / ลงต่อจากจุดนี้ก่อน stop ที่ $340</div>
+        </div>
+
+        <div class="scenario-card">
+          <div class="sc-label sc-base">🟡 Base Case</div>
+          <div class="sc-pct" style="color:#f59e0b">+13%</div>
+          <div class="sc-price">ฟื้นตัว → $430</div>
+          <div class="sc-date date-base">คาดว่า: Jul 2026</div>
+          <div class="sc-note">ฟื้นจากแรงขายหลัง earnings กลับสู่ระดับก่อนร่วง แนวต้านบริเวณ $400–430</div>
+        </div>
+
+        <div class="scenario-card">
+          <div class="sc-label sc-bull">🟢 Bull Case</div>
+          <div class="sc-pct" style="color:#10b981">+37%</div>
+          <div class="sc-price">Consensus → $522</div>
+          <div class="sc-date date-bull">คาดว่า: Aug–Sep 2026</div>
+          <div class="sc-note">Earnings ถัดไป Aug 2026 re-rate ราคา + AI chip demand ยืนยัน → ดึงกลับสู่ consensus $522</div>
+        </div>
+
+      </div>
+      <!-- Extra bull -->
+      <div style="margin-top:10px; background:#0f172a; border-radius:8px; padding:12px 14px; border:1px solid #10b98120; display:flex; align-items:center; gap:16px; flex-wrap:wrap;">
+        <div>
+          <div style="font-size:10px;font-weight:700;color:#10b981;letter-spacing:0.6px;text-transform:uppercase;margin-bottom:4px;">🚀 Super Bull — ถ้า AI spending ยังร้อนแรง</div>
+          <div style="font-size:13px;color:#cbd5e1;">Street high target <strong style="color:#10b981">$671</strong> <span style="color:#10b981;font-weight:700;">+75.6%</span> — Jefferies · ถ้า custom AI chip wins เพิ่มขึ้น (Amazon, Microsoft ลงชื่อใหม่)</div>
+        </div>
+        <div style="text-align:right;white-space:nowrap;">
+          <div style="font-size:11px;font-weight:700;color:#10b981;background:#10b98115;border:1px solid #10b98130;padding:3px 10px;border-radius:8px;">คาดว่า: Q4 2026 – Q1 2027</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Catalysts -->
+    <div>
+      <div class="section-label">Catalyst Timeline</div>
+      <div class="timeline">
+        <div class="tl-item">
+          <span class="tl-date tl-hot">ตอนนี้</span>
+          <div class="tl-text"><strong>Post-earnings dip entry window.</strong> AVGO ร่วง -12.6% หลัง Q2 earnings ทั้งที่ revenue record $15B — ตลาดคาดสูงเกินจริง นักวิเคราะห์ขึ้น target ทันทีหลังราคาร่วง = valuation gap เปิดอยู่</div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-date tl-soon">Jul 2026</span>
+          <div class="tl-text"><strong>การฟื้นตัวแรก.</strong> Price forecast: avg $370, high $407 ในเดือน Jul — แรงขายเริ่มหมด momentum กลับ</div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-date tl-soon">Aug 2026</span>
+          <div class="tl-text"><strong>Earnings ถัดไป + การฟื้นตัวหลัก.</strong> Forecast: สิ้น Aug อยู่ที่ ~$432 (+14.9% จากต้นเดือน) — ถ้า guidance AI chip ดี ราคาจะ re-rate สูงกว่านี้ไปได้มาก</div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-date tl-later">Q4 2026+</span>
+          <div class="tl-text"><strong>Full AI cycle bull case.</strong> Amazon / Microsoft custom chip contracts เพิ่ม → ราคาไปสู่ consensus $522 และ street high $671</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Entry / TP / SL -->
+    <div>
+      <div class="section-label">Entry · Take Profit · Stop Loss</div>
+      <div class="levels-grid">
+
+        <div class="level-card entry">
+          <div class="level-header lh-entry">Entry Zones</div>
+          <div class="level-row">
+            <div class="lr-left">
+              <div class="lr-label">Entry 1 <span class="ok-chip">ตอนนี้</span></div>
+              <div class="lr-note">Volume support $385 · RSI neutral 48</div>
+            </div>
+            <div>
+              <div class="lr-price price-entry">$375–390</div>
+              <div class="lr-pct">current zone</div>
+            </div>
+          </div>
+          <div class="level-row">
+            <div class="lr-left">
+              <div class="lr-label">Entry 2</div>
+              <div class="lr-note">ถ้ารูดต่อ / gap-fill</div>
+            </div>
+            <div>
+              <div class="lr-price price-entry">$350–360</div>
+              <div class="lr-pct">-6% to -9%</div>
+            </div>
+          </div>
+          <div class="level-row">
+            <div class="lr-left">
+              <div class="lr-label">Entry 3 <span class="warn-chip">Deep</span></div>
+              <div class="lr-note">Structural support</div>
+            </div>
+            <div>
+              <div class="lr-price price-entry">$293–310</div>
+              <div class="lr-pct">-20% to -24%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="level-card tp">
+          <div class="level-header lh-tp">Take Profit</div>
+          <div class="level-row">
+            <div class="lr-left">
+              <div class="lr-label">TP1</div>
+              <div class="lr-note">Pre-earnings recovery · Jul 2026</div>
+            </div>
+            <div>
+              <div class="lr-price price-tp">$430</div>
+              <div class="lr-pct">+12.5%</div>
+            </div>
+          </div>
+          <div class="level-row">
+            <div class="lr-left">
+              <div class="lr-label">TP2</div>
+              <div class="lr-note">Consensus analyst · Aug–Sep 2026</div>
+            </div>
+            <div>
+              <div class="lr-price price-tp">$522</div>
+              <div class="lr-pct">+36.6%</div>
+            </div>
+          </div>
+          <div class="level-row">
+            <div class="lr-left">
+              <div class="lr-label">TP3</div>
+              <div class="lr-note">Street high · Q4 2026–Q1 2027</div>
+            </div>
+            <div>
+              <div class="lr-price price-tp">$671</div>
+              <div class="lr-pct">+75.6%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="level-card sl">
+          <div class="level-header lh-sl">Stop Loss</div>
+          <div class="level-row">
+            <div class="lr-left">
+              <div class="lr-label">Tight Stop</div>
+              <div class="lr-note">Entry 1 ใช้อันนี้</div>
+            </div>
+            <div>
+              <div class="lr-price price-sl">$355</div>
+              <div class="lr-pct">-7%</div>
+            </div>
+          </div>
+          <div class="level-row">
+            <div class="lr-left">
+              <div class="lr-label">Hard Stop</div>
+              <div class="lr-note">ต่ำกว่านี้ structure แตก</div>
+            </div>
+            <div>
+              <div class="lr-price price-sl">$340</div>
+              <div class="lr-pct">-11%</div>
+            </div>
+          </div>
+          <div class="level-row">
+            <div class="lr-left">
+              <div class="lr-label">Risk/Reward</div>
+              <div class="lr-note">Hard stop vs TP2</div>
+            </div>
+            <div>
+              <div class="lr-price" style="color:#10b981;">3.4 : 1</div>
+              <div class="lr-pct">✅ ดีมาก</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="verdict-box avgo">
+      <strong>AVGO Verdict:</strong> ตัวเลือกที่ดีที่สุดในตอนนี้ — fundamental ดี แต่ราคาร่วงจาก sentiment ตลาดคาดสูงเกิน Recovery เริ่ม Jul ที่ $407 และเป้าหลัก Aug ที่ $432 R/R ดีมาก 3.4:1 ถึง consensus $522 <strong>แนะนำ 60–70% ของ capital ที่ต้องการ deploy</strong>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ===== ASTS ===== -->
+<div class="stock-block asts">
+  <div class="block-header">
+    <div class="block-header-top">
+      <div>
+        <div class="block-ticker">ASTS — AST SpaceMobile Inc.</div>
+        <div class="block-name">Space · Direct-to-Device Satellite Broadband · NASDAQ</div>
+      </div>
+      <div class="block-price">
+        <div class="val">$82.41</div>
+        <div class="sub">June 15, 2026 · ลงจาก high $97.56</div>
+      </div>
+    </div>
+    <!-- Company description -->
+    <div class="company-desc">
+      <strong>What is ASTS?</strong> AST SpaceMobile กำลังสร้างเครือข่าย broadband ผ่านดาวเทียมที่ใหญ่ที่สุดในโลก — โดดเด่นตรงที่ใช้โทรศัพท์ธรรมดาเชื่อมต่อได้เลย ไม่ต้องมีอุปกรณ์พิเศษ พาร์ทเนอร์ได้แก่ AT&T, Verizon, Vodafone, Rakuten ครอบคลุมพื้นที่ไม่มีสัญญาณทั่วโลก ปัจจุบันอยู่ในช่วง commercial launch — BlueBird satellites คือกลุ่มดาวที่ทำให้บริการเปลี่ยนจาก "demo" เป็น "product จริง"
+    </div>
+  </div>
+
+  <div class="block-body">
+
+    <!-- Upside scenarios -->
+    <div>
+      <div class="section-label">Upside Scenarios — เส้นทางขึ้น</div>
+      <div class="scenarios">
+
+        <div class="scenario-card">
+          <div class="sc-label sc-bear">🔴 Bear Case</div>
+          <div class="sc-pct" style="color:#ef4444">-27%</div>
+          <div class="sc-price">ร่วงสู่ → $60</div>
+          <div class="sc-date date-bear">ถ้าเกิด: หลัง Jun 17</div>
+          <div class="sc-note">Launch ล้มเหลว / delay หรือ Japan แพ้ → Barclays bear target $60 เป็นแนวรับ</div>
+        </div>
+
+        <div class="scenario-card">
+          <div class="sc-label sc-base">🟡 Base Case</div>
+          <div class="sc-pct" style="color:#f59e0b">+18%</div>
+          <div class="sc-price">ขึ้นสู่ → $97</div>
+          <div class="sc-date date-base">คาดว่า: Jun 17–20</div>
+          <div class="sc-note">Launch สำเร็จ ราคากลับไป high เดิม $97 ก่อน "sell the news" ดึงลงมา</div>
+        </div>
+
+        <div class="scenario-card">
+          <div class="sc-label sc-bull">🟢 Bull Case</div>
+          <div class="sc-pct" style="color:#10b981">+40%</div>
+          <div class="sc-price">ขึ้นสู่ → $115</div>
+          <div class="sc-date date-bull">คาดว่า: End Jun 2026</div>
+          <div class="sc-note">Launch สำเร็จ + Japan $1B award win → B. Riley target $115 เปิด</div>
+        </div>
+
+      </div>
+      <!-- Super bull -->
+      <div style="margin-top:10px; background:#0f172a; border-radius:8px; padding:12px 14px; border:1px solid #f59e0b20; display:flex; align-items:center; gap:16px; flex-wrap:wrap;">
+        <div>
+          <div style="font-size:10px;font-weight:700;color:#f59e0b;letter-spacing:0.6px;text-transform:uppercase;margin-bottom:4px;">🌙 Moon Shot — Japan win + Full commercial ramp</div>
+          <div style="font-size:13px;color:#cbd5e1;">Street high <strong style="color:#10b981">$150</strong> <span style="color:#10b981;font-weight:700;">+82%</span> — ถ้า Japan win + US service expand + Europe 2026 → ราคา $150 ภายใน 2027</div>
+        </div>
+        <div style="text-align:right;white-space:nowrap;">
+          <div style="font-size:11px;font-weight:700;color:#f59e0b;background:#f59e0b15;border:1px solid #f59e0b30;padding:3px 10px;border-radius:8px;">คาดว่า: 2027</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Catalysts -->
+    <div>
+      <div class="section-label">Catalyst Timeline</div>
+      <div class="timeline">
+        <div class="tl-item">
+          <span class="tl-date tl-hot">Jun 17 🚀</span>
+          <div class="tl-text"><strong>BlueBird 8/9/10 launch — SpaceX Falcon 9</strong> 2:39 AM EDT Cape Canaveral ดาวเทียม 3 ดวงนี้คือ "turning point" — ผ่าน threshold commercial service จริง contracts เปลี่ยนจาก MOU เป็นเงินจริง <span class="warn-chip">Watch: Sell the news dip</span></div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-date tl-hot">End Jun 🇯🇵</span>
+          <div class="tl-text"><strong>Japan $1B J-LEO Award Decision.</strong> ชิงกับ KDDI/SpaceX — ถ้า Rakuten/ASTS ชนะ = re-rating ครั้งใหญ่ นี่คือ catalyst ที่ใหญ่กว่า launch เสียอีก หุ้นกระโดด 6% ชั่วข้ามคืนแค่จากข่าว</div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-date tl-soon">Q3 2026</span>
+          <div class="tl-text"><strong>เป้า 45 BlueBird ในวงโคจร.</strong> Revenue ramp จริง — ผู้ใช้เพิ่ม → subscriber revenue เริ่มปรากฏใน earnings</div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-date tl-later">2027</span>
+          <div class="tl-text"><strong>Full commercial expansion.</strong> US + Europe + Japan + ตลาดใหม่ ถ้า FY2026 revenue $150–200M ตามที่ guide ไว้ → $150 target เป็นไปได้</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Levels -->
+    <div>
+      <div class="section-label">Entry · Take Profit · Stop Loss</div>
+      <div class="levels-grid">
+
+        <div class="level-card entry">
+          <div class="level-header lh-entry">Entry Zones</div>
+          <div class="level-row">
+            <div class="lr-left">
+              <div class="lr-label">Entry 1</div>
+              <div class="lr-note">Pre-launch · ราคาวิ่งมาแล้ว</div>
+            </div>
+            <div>
+              <div class="lr-price price-entry">$80–85</div>
+              <div class="lr-pct">ตอนนี้</div>
+            </div>
+          </div>
+          <div class="level-row">
+            <div class="lr-left">
+              <div class="lr-label">Entry 2 <span class="ok-chip">แนะนำ</span></div>
+              <div class="lr-note">Post-launch dip "sell the news"</div>
+            </div>
+            <div>
+              <div class="lr-price price-entry">$70–75</div>
+              <div class="lr-pct">Jun 17–19</div>
+            </div>
+          </div>
+          <div class="level-row">
+            <div class="lr-left">
+              <div class="lr-label">Entry 3</div>
+              <div class="lr-note">Barclays bear zone / แนวรับแกร่ง</div>
+            </div>
+            <div>
+              <div class="lr-price price-entry">$60–65</div>
+              <div class="lr-pct">ถ้าร่วงหนัก</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="level-card tp">
+          <div class="level-header lh-tp">Take Profit</div>
+          <div class="level-row">
+            <div class="lr-left">
+              <div class="lr-label">TP1</div>
+              <div class="lr-note">High เดิม · หลัง launch สำเร็จ</div>
+            </div>
+            <div>
+              <div class="lr-price price-tp">$97</div>
+              <div class="lr-pct">+17.7%</div>
+            </div>
+          </div>
+          <div class="level-row">
+            <div class="lr-left">
+              <div class="lr-label">TP2</div>
+              <div class="lr-note">Street high / Japan win · End Jun</div>
+            </div>
+            <div>
+              <div class="lr-price price-tp">$115</div>
+              <div class="lr-pct">+39.5%</div>
+            </div>
+          </div>
+          <div class="level-row">
+            <div class="lr-left">
+              <div class="lr-label">TP3 🌙</div>
+              <div class="lr-note">Full bull · Japan + expansion · 2027</div>
+            </div>
+            <div>
+              <div class="lr-price price-tp">$150</div>
+              <div class="lr-pct">+82%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="level-card sl">
+          <div class="level-header lh-sl">Stop Loss</div>
+          <div class="level-row">
+            <div class="lr-left">
+              <div class="lr-label">Tight Stop</div>
+              <div class="lr-note">ถ้าเข้า Entry 1 ใกล้ $82</div>
+            </div>
+            <div>
+              <div class="lr-price price-sl">$70</div>
+              <div class="lr-pct">-15%</div>
+            </div>
+          </div>
+          <div class="level-row">
+            <div class="lr-left">
+              <div class="lr-label">Hard Stop</div>
+              <div class="lr-note">ต่ำกว่า Barclays bear target</div>
+            </div>
+            <div>
+              <div class="lr-price price-sl">$58</div>
+              <div class="lr-pct">-29.6%</div>
+            </div>
+          </div>
+          <div class="level-row">
+            <div class="lr-left">
+              <div class="lr-label">Risk/Reward</div>
+              <div class="lr-note">Tight stop vs TP2</div>
+            </div>
+            <div>
+              <div class="lr-price" style="color:#f59e0b;">1.8 : 1</div>
+              <div class="lr-pct">⚠️ พอรับได้</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="verdict-box asts">
+      <strong>ASTS Verdict:</strong> High-risk high-reward — สองเหตุการณ์ใหญ่ใน 2 สัปดาห์ Jun 17 (launch) + End Jun (Japan $1B) ถ้าชนะทั้งคู่ราคาไป $115–130 ได้ใน 2 สัปดาห์ <strong>แนะนำ: รอ post-launch dip $70–75 แล้วซื้อเพื่อ Japan catalyst</strong> Size 30–40% ของ capital — ค่าขนม เงินไม่ใช่ทุ่ม
+    </div>
+
+  </div>
+</div>
+
+
+<div class="sources">
+  <h3>Sources</h3>
+  <a href="https://www.vantagemarkets.com/market-analysis/avgo-broadcom-stock-price-analysis-june-5-2026/" target="_blank">Vantage Markets — AVGO -12.59%: Record Revenue Wasn't Enough</a>
+  <a href="https://longforecast.com/avgo-stock" target="_blank">Long Forecast — AVGO Price Prediction Jul–Aug 2026</a>
+  <a href="https://stockanalysis.com/stocks/avgo/forecast/" target="_blank">StockAnalysis — AVGO Analyst Targets</a>
+  <a href="https://altindex.com/ticker/avgo/technical-analysis" target="_blank">AltIndex — AVGO Technical Analysis 2026</a>
+  <a href="https://www.barchart.com/story/news/2424934/dear-ast-spacemobile-stock-fans-mark-your-calendars-for-june-17" target="_blank">Barchart — ASTS Mark Your Calendars June 17</a>
+  <a href="https://www.benzinga.com/trading-ideas/movers/26/06/53139785/ast-spacemobile-stock-climbs-ahead-of-spacex-ipo-as-bluebird-launch-date-confirmed-for-june-17" target="_blank">Benzinga — ASTS Climbs Ahead of BlueBird Launch Confirmed June 17</a>
+  <a href="https://stocktwits.com/news-articles/markets/equity/asts-retail-eyes-win-japans-1b-starlink-award/cZKf4wOR7di" target="_blank">StockTwits — ASTS Japan $1B J-LEO Award Decision</a>
+  <a href="https://247wallst.com/investing/2026/06/12/prediction-can-ast-spacemobile-soar-to-150-by-2027/" target="_blank">24/7 Wall St. — Can ASTS Soar to $150 by 2027?</a>
+</div>
+
+<footer>Not financial advice · XVARY Research · June 15, 2026</footer>
+
+</body>
+</html>

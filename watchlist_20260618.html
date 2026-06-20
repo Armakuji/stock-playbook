@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XVARY Research · 30% Hunters · 2026-06-18</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0f172a;
+    color: #e2e8f0;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    padding: 0;
+    min-height: 100vh;
+  }
+
+  .top-banner {
+    background: linear-gradient(135deg, #0f172a 0%, #1a2744 50%, #0f172a 100%);
+    border-bottom: 1px solid #1e293b;
+    padding: 28px 36px 22px;
+    display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 14px;
+  }
+  .brand { font-size: 12px; font-weight: 800; color: #38bdf8; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 5px; }
+  .report-title { font-size: 22px; font-weight: 800; color: #f8fafc; }
+  .report-sub { font-size: 12px; color: #64748b; margin-top: 4px; }
+  .portfolio-note {
+    background: #1e293b; border: 1px solid #334155; border-radius: 8px;
+    padding: 10px 14px; font-size: 11.5px; color: #64748b; text-align: right;
+  }
+  .portfolio-note strong { color: #94a3b8; display: block; margin-bottom: 4px; }
+  .pn-tag { display: inline-block; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 10px; margin: 2px; }
+  .pn-held { background: #10b98115; color: #10b981; border: 1px solid #10b98130; }
+  .pn-watch { background: #f59e0b15; color: #f59e0b; border: 1px solid #f59e0b30; }
+
+  .page { max-width: 1050px; margin: 0 auto; padding: 28px 22px 48px; }
+
+  /* Macro bar */
+  .macro-bar {
+    background: #1e293b; border: 1px solid #334155; border-left: 3px solid #f59e0b;
+    border-radius: 8px; padding: 12px 16px; margin-bottom: 24px;
+    display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+  }
+  .mb-label { font-size: 10px; font-weight: 800; color: #64748b; letter-spacing: 0.8px; text-transform: uppercase; white-space: nowrap; }
+  .mb-badge { font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 12px; }
+  .mb-neutral { background: #f59e0b20; color: #f59e0b; border: 1px solid #f59e0b40; }
+  .mb-text { font-size: 12.5px; color: #94a3b8; flex: 1; }
+  .mb-text strong { color: #e2e8f0; }
+
+  /* Table */
+  .table-wrap { overflow-x: auto; border-radius: 12px; border: 1px solid #1e293b; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  thead { background: #1e293b; }
+  thead th { padding: 12px 14px; text-align: left; font-size: 10px; font-weight: 800; color: #64748b; letter-spacing: 0.8px; text-transform: uppercase; white-space: nowrap; }
+  tbody tr { border-top: 1px solid #1e293b; transition: background 0.15s; cursor: default; }
+  tbody tr:hover { background: #1e293b60; }
+  td { padding: 13px 14px; vertical-align: middle; }
+
+  .td-ticker { font-weight: 800; font-size: 16px; color: #f8fafc; }
+  .td-sector { font-size: 10px; color: #64748b; margin-top: 2px; }
+  .td-desc { font-size: 11px; color: #64748b; max-width: 200px; line-height: 1.4; margin-top: 3px; }
+
+  .c-green  { color: #10b981; font-weight: 700; }
+  .c-yellow { color: #f59e0b; font-weight: 700; }
+  .c-red    { color: #ef4444; font-weight: 700; }
+  .c-white  { color: #f8fafc; font-weight: 600; }
+  .c-grey   { color: #64748b; }
+
+  .verdict { display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border-radius: 16px; font-size: 11px; font-weight: 700; white-space: nowrap; }
+  .v-core  { background: #10b98118; color: #10b981; border: 1px solid #10b98140; }
+  .v-spec  { background: #f59e0b18; color: #f59e0b; border: 1px solid #f59e0b40; }
+  .v-kanon { background: #ef444418; color: #ef4444; border: 1px solid #ef444440; }
+  .v-watch { background: #6366f118; color: #818cf8; border: 1px solid #6366f140; }
+
+  .fed-low  { color: #10b981; font-weight: 700; font-size: 11px; }
+  .fed-med  { color: #f59e0b; font-weight: 700; font-size: 11px; }
+  .fed-high { color: #ef4444; font-weight: 700; font-size: 11px; }
+
+  .cat-chip { display: inline-block; font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 8px; margin-top: 3px; }
+  .cat-hot  { background: #ef444420; color: #ef4444; border: 1px solid #ef444430; }
+  .cat-soon { background: #f59e0b20; color: #f59e0b; border: 1px solid #f59e0b30; }
+
+  .upside-big { font-size: 16px; font-weight: 800; }
+
+  .note-row {
+    margin-top: 16px; padding: 12px 16px;
+    background: #1e293b; border-radius: 8px; border-left: 3px solid #334155;
+    font-size: 12px; color: #64748b; line-height: 1.5;
+  }
+  .note-row strong { color: #94a3b8; }
+
+  .sources { margin-top: 24px; padding: 14px 16px; background: #1e293b; border-radius: 8px; border: 1px solid #334155; }
+  .sources h3 { font-size: 10px; font-weight: 800; color: #64748b; letter-spacing: 0.8px; text-transform: uppercase; margin-bottom: 8px; }
+  .sources a { display: inline-block; font-size: 11.5px; color: #38bdf8; text-decoration: none; margin: 2px 10px 2px 0; opacity: 0.8; }
+  .sources a:hover { opacity: 1; }
+
+  footer { margin-top: 20px; text-align: center; font-size: 11px; color: #334155; }
+</style>
+</head>
+<body>
+
+<div class="top-banner">
+  <div>
+    <div class="brand">XVARY Research</div>
+    <div class="report-title">30% Hunters · June 18, 2026</div>
+    <div class="report-sub">5 Fresh Picks · Tech / AI / Semiconductor · Excluding current portfolio</div>
+  </div>
+  <div class="portfolio-note">
+    <strong>📦 Current Portfolio</strong>
+    <span class="pn-tag pn-held">AVGO ✅ In</span>
+    <span class="pn-tag pn-held">ASTS 🔴 In</span>
+    <span class="pn-tag pn-watch">MU ✓ Sold</span>
+  </div>
+</div>
+
+<div class="page">
+
+  <div class="macro-bar">
+    <span class="mb-label">FED</span>
+    <span class="mb-badge mb-neutral">NEUTRAL</span>
+    <span class="mb-text">
+      Rates on hold · AI capex supercycle ยังร้อนแรง · <strong>Agentic AI</strong> ดันอุปสงค์ CPU ใหม่ · Semi equipment growing 30%+ calendar 2026
+    </span>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Ticker · What is it</th>
+          <th>Price</th>
+          <th>Bull Upside</th>
+          <th>High Target</th>
+          <th>Catalyst</th>
+          <th>Est. Date ขึ้น</th>
+          <th>Fed Risk</th>
+          <th>Verdict</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <!-- AMD -->
+        <tr>
+          <td>
+            <div class="td-ticker">AMD</div>
+            <div class="td-sector">AI · CPU / GPU · Semiconductor</div>
+            <div class="td-desc">ผู้ผลิต CPU/GPU สำหรับ AI Data Center คู่แข่งหลัก NVIDIA ในตลาด AI chip ปี 2026 ขึ้น +130% YTD</div>
+          </td>
+          <td><span class="c-white">~$510</span></td>
+          <td><span class="upside-big c-green">+30.4%</span></td>
+          <td>
+            <div class="c-green">$665</div>
+            <div style="font-size:10px;color:#64748b">Barclays · Citi $575</div>
+          </td>
+          <td>
+            <div style="font-size:12px;color:#cbd5e1">Venice CPU launch + AI roadmap ใหม่</div>
+            <div><span class="cat-chip cat-soon">Advancing AI 2026 Event</span></div>
+          </td>
+          <td>
+            <div class="c-yellow">Jul 22–23</div>
+            <div style="font-size:10px;color:#64748b">Pre-event run เริ่ม Jul</div>
+          </td>
+          <td><span class="fed-low">LOW</span></td>
+          <td><span class="verdict v-core">🟢 Core</span></td>
+        </tr>
+
+        <!-- INTC -->
+        <tr>
+          <td>
+            <div class="td-ticker">INTC</div>
+            <div class="td-sector">Agentic AI · Server CPU · Data Center</div>
+            <div class="td-desc">Intel — ผู้ผลิต CPU เบอร์ 1 โลก กำลังฟื้นตัวจาก Agentic AI ที่ดันความต้องการ Server CPU ขึ้นแรง BofA double-upgrade</div>
+          </td>
+          <td><span class="c-white">~$90 est.</span></td>
+          <td><span class="upside-big c-green">+50%</span></td>
+          <td>
+            <div class="c-green">$135</div>
+            <div style="font-size:10px;color:#64748b">BofA · Wells Fargo $110 · Mizuho $128</div>
+          </td>
+          <td>
+            <div style="font-size:12px;color:#cbd5e1">Agentic AI → CPU demand surge · BofA double-upgrade · AI partnerships</div>
+            <div><span class="cat-chip cat-hot">Multiple upgrades Jun 2026</span></div>
+          </td>
+          <td>
+            <div class="c-yellow">Q3 2026</div>
+            <div style="font-size:10px;color:#64748b">Earnings + AI server ramp</div>
+          </td>
+          <td><span class="fed-low">LOW</span></td>
+          <td><span class="verdict v-spec">🟡 Speculative</span></td>
+        </tr>
+
+        <!-- AMAT -->
+        <tr>
+          <td>
+            <div class="td-ticker">AMAT</div>
+            <div class="td-sector">AI Equipment · Semiconductor Tools</div>
+            <div class="td-desc">Applied Materials ผลิตเครื่องมือสำหรับโรงงานผลิตชิป — ทุก fab ที่สร้างใหม่ต้องซื้อ AMAT ได้ประโยชน์ direct จาก AI capex boom</div>
+          </td>
+          <td><span class="c-white">$586.32</span></td>
+          <td><span class="upside-big c-green">+21.1%</span></td>
+          <td>
+            <div class="c-green">$710</div>
+            <div style="font-size:10px;color:#64748b">Citi · Cantor $650 · Barclays $590</div>
+          </td>
+          <td>
+            <div style="font-size:12px;color:#cbd5e1">Singapore $500M campus เปิดแล้ว · NAND memory demand · Semi equipment +30% 2026</div>
+            <div><span class="cat-chip cat-hot">4 banks upgraded Jun 17</span></div>
+          </td>
+          <td>
+            <div class="c-yellow">Jul–Aug 2026</div>
+            <div style="font-size:10px;color:#64748b">Earnings + fab expansion</div>
+          </td>
+          <td><span class="fed-low">LOW</span></td>
+          <td><span class="verdict v-core">🟢 Core</span></td>
+        </tr>
+
+        <!-- ARM -->
+        <tr>
+          <td>
+            <div class="td-ticker">ARM</div>
+            <div class="td-sector">AI Chip Architecture · Licensing</div>
+            <div class="td-desc">ARM Holdings ออกแบบ chip architecture ที่ทุก smartphone และ AI chip ต้องใช้ รายได้จาก royalty ทุก chip ที่ขาย = passive AI income</div>
+          </td>
+          <td><span class="c-white">$425.57</span></td>
+          <td><span class="upside-big c-yellow">+17.5%</span></td>
+          <td>
+            <div class="c-green">$500</div>
+            <div style="font-size:10px;color:#64748b">Bernstein · Mizuho $500 · BofA $335</div>
+          </td>
+          <td>
+            <div style="font-size:12px;color:#cbd5e1">AI chip proliferation → royalty revenue ขึ้นทุกปี · Bernstein raised $500 from $300</div>
+            <div><span class="cat-chip cat-soon">Ongoing AI tailwind</span></div>
+          </td>
+          <td>
+            <div class="c-yellow">Q3–Q4 2026</div>
+            <div style="font-size:10px;color:#64748b">Earnings cycle</div>
+          </td>
+          <td><span class="fed-low">LOW</span></td>
+          <td><span class="verdict v-spec">🟡 Speculative</span></td>
+        </tr>
+
+        <!-- MU Watch -->
+        <tr style="opacity:0.65">
+          <td>
+            <div class="td-ticker" style="color:#818cf8">MU</div>
+            <div class="td-sector">AI Memory · HBM · Watch Only</div>
+            <div class="td-desc">Micron ผู้ผลิต HBM memory สำหรับ AI GPU — ขายไปแล้วที่ $1,063 แต่ยังน่าจับตา earnings Jun 24</div>
+          </td>
+          <td><span class="c-grey">~$1,063</span></td>
+          <td><span class="upside-big" style="color:#818cf8">+64.6%</span></td>
+          <td>
+            <div style="color:#818cf8">$1,750</div>
+            <div style="font-size:10px;color:#64748b">Susquehanna bull · consensus $838</div>
+          </td>
+          <td>
+            <div style="font-size:12px;color:#94a3b8">Q3 FY26 Earnings — HBM4 update · binary event</div>
+            <div><span class="cat-chip cat-hot">Jun 24 — 6 days</span></div>
+          </td>
+          <td>
+            <div style="color:#818cf8">Jun 24</div>
+            <div style="font-size:10px;color:#64748b">Earnings binary</div>
+          </td>
+          <td><span class="fed-low">LOW</span></td>
+          <td><span class="verdict v-watch">👁 Watch only</span></td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <div class="note-row">
+    <strong>📦 Portfolio Note:</strong> AVGO และ ASTS อยู่ใน portfolio แล้ว — ไม่รวมในรายการนี้ · MU เป็น Watch only ขายไปแล้ว แต่ earnings Jun 24 น่าจับตาถ้าอยากกลับเข้าหลังผล · <strong>แนะนำลำดับ: AMD → INTC → AMAT</strong> ถ้า deploy Powder ที่เหลือ
+  </div>
+
+  <div class="sources">
+    <h3>Sources</h3>
+    <a href="https://www.tikr.com/blog/applied-materials-stock-surged-10-this-week-after-a-650-analyst-target-is-the-ai-upcycle-already-priced-in" target="_blank">AMAT +10% This Week — TIKR</a>
+    <a href="https://stockstotrade.com/news/applied-materials-inc-amat-news-2026_06_17/" target="_blank">AMAT Singapore AI Build-Out — StocksToTrade</a>
+    <a href="https://www.thestreet.com/investing/stocks/intc-intel-stock-price-target-bank-of-america-june-2026" target="_blank">INTC BofA Raises to $135 — TheStreet</a>
+    <a href="https://stockstotrade.com/news/intel-corporation-intc-news-2026_06_08-3/" target="_blank">INTC AI Rally, Wall Street Hikes Targets — StocksToTrade</a>
+    <a href="https://videocardz.com/newz/amd-confirms-advancing-ai-2026-event-is-set-for-july-22-23" target="_blank">AMD Advancing AI 2026 Jul 22–23 — VideoCardz</a>
+    <a href="https://stockanalysis.com/stocks/arm/forecast/" target="_blank">ARM Analyst Targets — StockAnalysis</a>
+    <a href="https://www.startuphub.ai/ai-news/ai-stocks-daily/2026/ai-stocks-2026-06-17" target="_blank">AI Stocks Daily Jun 17 — StartupHub.ai</a>
+  </div>
+
+  <footer>Not financial advice · XVARY Research · June 18, 2026</footer>
+
+</div>
+</body>
+</html>

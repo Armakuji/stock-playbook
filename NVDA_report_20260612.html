@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NVDA · XVARY Research</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #0f1117; color: #e2e8f0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 14px; line-height: 1.6; padding: 24px; max-width: 960px; margin: 0 auto; }
+  h1 { font-size: 22px; font-weight: 600; color: #f8fafc; }
+  h2 { font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: #64748b; margin: 0 0 12px; }
+  .card { background: #1e2330; border: 1px solid #2d3748; border-radius: 12px; padding: 20px; margin-bottom: 16px; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+  .kv { display: flex; justify-content: space-between; align-items: center; padding: 7px 0; border-bottom: 1px solid #2d3748; font-size: 13px; }
+  .kv:last-child { border-bottom: none; }
+  .k { color: #94a3b8; }
+  .v { font-weight: 600; color: #f1f5f9; text-align: right; }
+  .v.up { color: #10b981; }
+  .v.dn { color: #ef4444; }
+  .v.warn { color: #f59e0b; }
+  .badge { display: inline-block; font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 6px; }
+  .badge-green { background: #064e3b; color: #10b981; }
+  .badge-amber { background: #451a03; color: #f59e0b; }
+  .badge-red { background: #450a0a; color: #ef4444; }
+  .badge-blue { background: #0c1a3a; color: #60a5fa; }
+  .badge-gray { background: #1e293b; color: #94a3b8; }
+  .price-cell { background: #0f1117; border: 1px solid #2d3748; border-radius: 8px; padding: 12px; text-align: center; }
+  .price-cell-label { font-size: 11px; color: #64748b; margin-bottom: 4px; }
+  .price-cell-val { font-size: 18px; font-weight: 700; color: #f8fafc; }
+  .price-cell-sub { font-size: 11px; color: #475569; margin-top: 2px; }
+  .tp-row { display: flex; align-items: center; gap: 8px; padding: 7px 0; border-bottom: 1px solid #2d3748; font-size: 13px; }
+  .tp-row:last-child { border-bottom: none; }
+  .tp-label { font-weight: 700; min-width: 40px; color: #94a3b8; font-size: 12px; }
+  .tp-price { font-weight: 700; min-width: 80px; color: #f1f5f9; }
+  .tp-pct { color: #10b981; font-size: 12px; min-width: 50px; }
+  .tp-action { color: #64748b; font-size: 12px; flex: 1; text-align: right; }
+  .verdict { border-left: 3px solid #f59e0b; border-radius: 0 8px 8px 0; background: #1a1f2e; padding: 12px 16px; font-size: 13px; font-weight: 600; color: #f1f5f9; margin-top: 12px; line-height: 1.5; }
+  .verdict.green { border-left-color: #10b981; }
+  .verdict.red { border-left-color: #ef4444; }
+  .sources { font-size: 11px; color: #475569; margin-top: 16px; line-height: 2; }
+  .sources a { color: #60a5fa; text-decoration: none; }
+  .footer { text-align: center; font-size: 11px; color: #334155; margin-top: 24px; padding-top: 16px; border-top: 1px solid #1e2330; }
+  .why-tag { display: inline-flex; align-items: center; gap: 6px; background: #1e2330; border: 1px solid #2d3748; border-radius: 6px; padding: 5px 10px; font-size: 12px; color: #94a3b8; margin: 0 4px 4px 0; }
+</style>
+</head>
+<body>
+
+<!-- ═══ HEADER ═══ -->
+<div class="card" style="margin-bottom:16px">
+  <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:12px;margin-bottom:12px">
+    <div>
+      <div style="font-size:11px;color:#64748b;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px">NVIDIA Corporation · NASDAQ:NVDA</div>
+      <h1>NVDA <span style="font-size:16px;font-weight:400;color:#10b981">$205.36 <span style="font-size:13px">+0.24% today</span></span></h1>
+      <div style="font-size:12px;color:#64748b;margin-top:4px">ATH: ~$209 · Earnings: Aug 26 (75 days) · Options implied ±9% at earnings</div>
+    </div>
+    <div style="text-align:right">
+      <div style="font-size:11px;color:#64748b;margin-bottom:4px">Analyst consensus</div>
+      <div style="font-size:14px;font-weight:700;color:#f1f5f9">Strong Buy</div>
+      <div style="font-size:12px;color:#10b981">Avg PT: $298.42 · High: $319+</div>
+    </div>
+  </div>
+  <div style="font-size:12px;color:#64748b;margin-bottom:6px;font-weight:600">Why it's moving</div>
+  <span class="why-tag">📈 S&P Credit Upgrade — "Insatiable AI Demand"</span>
+  <span class="why-tag">🇨🇳 China H200 Access Reopened</span>
+  <span class="why-tag">🏗️ Helix $10B AI Infrastructure Deal (KKR + Kuwait)</span>
+  <span class="why-tag">⚡ Blackwell Backlog Surge</span>
+  <span class="why-tag">✅ Q1 FY2026 Beat — Data Center Blowout</span>
+</div>
+
+<!-- ═══ FED / MACRO RISK ═══ -->
+<div class="card">
+  <h2>Section 1 — Fed / Macro Risk</h2>
+  <div class="grid2" style="margin-bottom:16px">
+    <div>
+      <div style="font-size:12px;color:#64748b;margin-bottom:8px;font-weight:600">Rate environment</div>
+      <div class="kv"><span class="k">Fed funds rate</span><span class="v">3.50 – 3.75%</span></div>
+      <div class="kv"><span class="k">Next FOMC</span><span class="v">Jun 17, 2026</span></div>
+      <div class="kv"><span class="k">Hold probability</span><span class="v up">97.1%</span></div>
+      <div class="kv"><span class="k">Hike probability (2026)</span><span class="v warn">~3%</span></div>
+      <div class="kv"><span class="k">10yr Treasury</span><span class="v warn">~4.45%</span></div>
+    </div>
+    <div>
+      <div style="font-size:12px;color:#64748b;margin-bottom:8px;font-weight:600">NVDA sensitivity</div>
+      <div class="kv"><span class="k">Sector</span><span class="v">Semiconductors / AI</span></div>
+      <div class="kv"><span class="k">Rate sensitivity</span><span class="v warn">MEDIUM</span></div>
+      <div class="kv"><span class="k">+25bps hike impact</span><span class="v dn">-3 to -5% valuation</span></div>
+      <div class="kv"><span class="k">Beta</span><span class="v">~1.75</span></div>
+    </div>
+  </div>
+
+  <div style="font-size:12px;color:#64748b;margin-bottom:8px;font-weight:600">Macro events before catalyst (Aug 26 earnings)</div>
+  <div class="kv"><span class="k">Jun 17</span><span class="v" style="font-weight:400;font-size:12px">FOMC decision — 97% hold, dot plot update could shift yield curve</span></div>
+  <div class="kv"><span class="k">Jul 10 (est.)</span><span class="v" style="font-weight:400;font-size:12px">NFP Jobs Report — strong labor = Fed hawkishness risk, tech pressure</span></div>
+  <div class="kv"><span class="k">Jul 14</span><span class="v" style="font-weight:400;font-size:12px">CPI print — May CPI already hottest in 3 years; June print is key risk</span></div>
+
+  <div style="font-size:12px;color:#64748b;margin:12px 0 6px;font-weight:600">Fed Risk Verdict</div>
+  <div class="verdict">
+    <span style="color:#f59e0b;font-size:15px;vertical-align:-1px">●</span>
+    MEDIUM FED RISK — Near-term rate path is stable (97% hold Jun 17), but May CPI printed at 3-year-high pace and the Jul 14 CPI print could re-ignite hike fears before NVDA's Aug 26 earnings. High multiple semi stocks reprice fast when real yields spike. AI capex demand provides partial insulation but does not fully offset rate exposure at $5T mkt cap.
+  </div>
+</div>
+
+<!-- ═══ ENTRY STRATEGY ═══ -->
+<div class="card">
+  <h2>Section 2 — Entry Strategy</h2>
+
+  <div style="margin-bottom:12px;display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+    <span style="font-size:12px;color:#64748b;font-weight:600">Entry type:</span>
+    <span class="badge badge-amber">DCA / Split Entry</span>
+    <span style="font-size:12px;color:#64748b">Hot CPI + FOMC in 5 days creates short-term macro uncertainty — scale in on dips rather than lump sum</span>
+  </div>
+
+  <div class="grid3" style="margin-bottom:16px">
+    <div class="price-cell">
+      <div class="price-cell-label">Aggressive entry</div>
+      <div class="price-cell-val">$205</div>
+      <div class="price-cell-sub">Current price · FOMC hold confirmed</div>
+    </div>
+    <div class="price-cell">
+      <div class="price-cell-label">Base entry</div>
+      <div class="price-cell-val">$192</div>
+      <div class="price-cell-sub">~-6.5% · Post-FOMC rotation dip</div>
+    </div>
+    <div class="price-cell">
+      <div class="price-cell-label">Strong entry</div>
+      <div class="price-cell-val">$178</div>
+      <div class="price-cell-sub">~-13% · Hot CPI / macro selloff</div>
+    </div>
+  </div>
+
+  <div class="grid2">
+    <div>
+      <div style="font-size:12px;color:#64748b;margin-bottom:8px;font-weight:600">Take profit</div>
+      <div class="tp-row">
+        <span class="tp-label">TP1</span>
+        <span class="tp-price">$228</span>
+        <span class="tp-pct">+11.2%</span>
+        <span class="tp-action">trim 30–50%</span>
+      </div>
+      <div class="tp-row">
+        <span class="tp-label">TP2</span>
+        <span class="tp-price">$258</span>
+        <span class="tp-pct">+25.7%</span>
+        <span class="tp-action">trim 30%</span>
+      </div>
+      <div class="tp-row">
+        <span class="tp-label">TP3</span>
+        <span class="tp-price">$298</span>
+        <span class="tp-pct">+45.1%</span>
+        <span class="tp-action">let it ride</span>
+      </div>
+    </div>
+    <div>
+      <div style="font-size:12px;color:#64748b;margin-bottom:8px;font-weight:600">Risk management</div>
+      <div class="kv"><span class="k">Position size</span><span class="v">7–10% (Core Speculative)</span></div>
+      <div class="kv"><span class="k">Stop loss</span><span class="v dn">$182 (-11.4%)</span></div>
+      <div class="kv"><span class="k">Max risk per trade</span><span class="v">2–3% of portfolio</span></div>
+    </div>
+  </div>
+
+  <div class="verdict green">
+    → DCA ⅓ near $205 now (post-FOMC hold Jun 17 confirmation), add ⅓ on pullback to $192, final ⅓ at $178 on any macro-driven selloff — target holding into Aug 26 earnings for full catalyst. TP3 $298 aligns with analyst consensus. ค่าขนม zone = TP1. Core holding = TP3 runner.
+  </div>
+</div>
+
+<!-- ═══ SOURCES ═══ -->
+<div class="sources">
+  <strong style="color:#64748b">Sources:</strong><br>
+  <a href="https://stockanalysis.com/stocks/nvda/">stockanalysis.com — NVDA Stock Price & Overview</a><br>
+  <a href="https://finance.yahoo.com/quote/NVDA/">finance.yahoo.com — NVDA Quote & History</a><br>
+  <a href="https://www.marketbeat.com/stocks/NASDAQ/NVDA/earnings/">marketbeat.com — NVDA Earnings Date &amp; Reports 2026</a><br>
+  <a href="https://www.tipranks.com/stocks/nvda/forecast">tipranks.com — NVDA Analyst Price Targets</a><br>
+  <a href="https://www.cnbc.com/2026/05/20/nvidia-shares-could-see-big-moves-on-earnings-how-to-capitalize-on-the-potential-swings.html">cnbc.com — NVDA Options Implied Move at Earnings</a><br>
+  <a href="https://www.barchart.com/stocks/quotes/nvda/expected-move">barchart.com — NVDA Expected Move</a><br>
+  <a href="https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html">cmegroup.com — CME FedWatch Tool</a><br>
+  <a href="https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm">federalreserve.gov — FOMC Meeting Calendar</a><br>
+  <a href="https://www.cnbc.com/2026/06/10/heres-the-inflation-breakdown-for-may-2026-in-one-chart.html">cnbc.com — May 2026 CPI Breakdown</a><br>
+  <a href="https://www.kiplinger.com/investing/economy/cpi-report-may-2026-what-to-expect">kiplinger.com — May CPI: Fastest Pace in 3 Years</a><br>
+  <a href="https://www.bls.gov/schedule/">bls.gov — BLS Release Schedule 2026</a>
+</div>
+
+<div class="footer">XVARY Research · June 12, 2026 · Not financial advice</div>
+
+</body>
+</html>
