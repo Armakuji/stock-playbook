@@ -50,14 +50,14 @@ export default function RootLayout({
         className="min-h-full flex flex-col"
         style={{ backgroundColor: "var(--bg)", color: "var(--text)", fontFamily: "var(--font-body, system-ui, sans-serif)" }}
       >
-        <header style={{ borderBottom: "1px solid var(--border)", backgroundColor: "var(--card)", position: "relative" }}>
-          {/* Animated gradient accent line */}
-          <div style={{
-            position: "absolute", top: 0, left: 0, right: 0, height: 2,
-            background: "linear-gradient(90deg, #10b981, #3b82f6, #8b5cf6, #f59e0b, #10b981)",
-            backgroundSize: "300% 100%",
-            animation: "gradientShift 8s linear infinite",
-          }} />
+        {/* Gradient accent bar — outside header, normal flow, no overflow issues */}
+        <div style={{
+          height: 3, flexShrink: 0,
+          background: "linear-gradient(90deg, #10b981, #3b82f6, #8b5cf6, #f59e0b, #10b981)",
+          backgroundSize: "300% 100%",
+          animation: "gradientShift 8s linear infinite",
+        }} />
+        <header style={{ borderBottom: "1px solid var(--border)", backgroundColor: "var(--card)" }}>
           <div style={{ maxWidth: 1200, margin: "0 auto", padding: "14px 16px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
             <a href="/" style={{ textDecoration: "none" }}>
               <span style={{ fontSize: 20, fontWeight: 800, letterSpacing: "-0.5px", color: "var(--text)", fontFamily: "var(--font-display, sans-serif)" }}>
