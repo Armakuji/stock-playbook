@@ -1,0 +1,94 @@
+{
+  "ticker": "NVDA",
+  "companyName": "NVIDIA Corporation",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-12T00:00:00.000Z",
+  "price": 131.38,
+  "priceChange": 2.4,
+  "priceNote": "Near ATH · Blackwell ramp cycle",
+  "marketCap": "$3.2T",
+  "sector": "Technology / Semiconductors",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 88,
+  "summary": "NVIDIA dominates AI accelerator market with ~80% GPU share and Blackwell ramp accelerating. Data center revenue tripled YoY. Sovereign AI deals and CoWoS supply constraints easing into H2 2026 make this a core long-term position.",
+  "catalysts": [
+    {
+      "icon": "⚡",
+      "name": "Blackwell GB200 NVL72 Ramp",
+      "description": "400% more interconnect bandwidth vs H100. Hyperscaler orders locked through 2027.",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🌍",
+      "name": "Sovereign AI Demand",
+      "description": "UAE, Saudi Arabia, Japan, India GPU orders — government-backed multi-billion deals.",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🧱",
+      "name": "CUDA Ecosystem Moat",
+      "description": "4M+ developers, switching cost is existential. NIM microservices driving enterprise software attach rate.",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "AMD MI350 + Intel Gaudi 3 gaining on price-performance at the margin",
+    "US export restrictions on China (H20 ban) — ~$15B revenue gap",
+    "Customer capex fatigue if ROI from AI doesn't materialize",
+    "CoWoS packaging still bottleneck through Q3 2026",
+    "Valuation: 35x forward PE demands continued beat-and-raise"
+  ],
+  "estimateDates": [
+    { "event": "Q2 FY27 Earnings", "dateRange": "Aug 27, 2026", "note": "Blackwell revenue ramp read-through", "est": "est. EPS $0.95", "highlight": "blue" },
+    { "event": "GTC Fall 2026", "dateRange": "Oct 2026", "note": "Next-gen Rubin architecture reveal", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -20, "price": 105 },
+    { "label": "Base", "color": "yellow", "pct": 14, "price": 150 },
+    { "label": "Bull", "color": "green", "pct": 26, "price": 165 },
+    { "label": "Moon", "color": "purple", "pct": 41, "price": 185 }
+  ],
+  "analystTargets": [
+    { "firm": "Morgan Stanley", "target": 160, "rating": "Overweight" },
+    { "firm": "Bank of America", "target": 165, "rating": "Buy" },
+    { "firm": "Mizuho", "target": 155, "rating": "Buy" },
+    { "firm": "Bernstein", "target": 140, "rating": "Outperform" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "1-2 cuts expected in 2026 H2 — supportive for growth multiples",
+    "inflationNote": "PCE at 2.6% — above target but trending down, no urgency to hike",
+    "sectorImpact": "Tech/AI neutral-to-positive: lower rates expand DCF values; no direct rate sensitivity",
+    "summary": "Macro is a tailwind if cuts come. Primary risk is sentiment shift if AI capex narrative cracks."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 131, "note": "Current price, dip from ATH", "timing": "ตอนนี้" },
+      { "label": "Entry 2", "level": 120, "note": "10% pullback — strong support", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 108, "note": "200-day MA zone, max conviction", "timing": "ถ้าร่วงหนัก" }
+    ],
+    "tp1": { "price": 150, "pct": 14.2, "note": "Near-term resistance" },
+    "tp2": { "price": 165, "pct": 25.6, "note": "Street consensus high" },
+    "tp3": { "price": 185, "pct": 40.8, "note": "Bull case · 2027 Rubin cycle", "moon": true },
+    "stopLoss": {
+      "tight": 118,
+      "tightPct": -10,
+      "tightNote": "Below key support",
+      "hard": 102,
+      "hardPct": -22,
+      "hardNote": "200-day MA breach",
+      "riskReward": "2.5 : 1",
+      "rrNote": "Tight stop vs TP2",
+      "rrWarning": "Good R/R"
+    },
+    "verdict": "Core holding — BUY on dips to $120, scale in to $108. Hold through Blackwell ramp.",
+    "approach": "DCA"
+  },
+  "earningsDate": "2026-08-27",
+  "sources": [
+    "https://finance.yahoo.com/quote/NVDA",
+    "https://www.nvidia.com/en-us/about-nvidia/investors/",
+    "https://www.cnbc.com/2026/06/10/nvidia-blackwell-demand.html"
+  ]
+}

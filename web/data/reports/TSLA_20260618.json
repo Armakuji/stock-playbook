@@ -1,0 +1,97 @@
+{
+  "ticker": "TSLA",
+  "companyName": "Tesla Inc.",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-18T00:00:00.000Z",
+  "price": 312.45,
+  "priceChange": -0.9,
+  "priceNote": "Robotaxi narrative driving multiple expansion",
+  "marketCap": "$1.0T",
+  "sector": "EV / AI / Autonomous",
+  "verdict": "HOLD",
+  "scoreLabel": "Speculative",
+  "score": 58,
+  "summary": "Tesla is no longer just a car company — it's pricing in Robotaxi (Cybercab), Optimus humanoid robot, and AI/energy storage at 90x+ forward PE. Core auto margins under pressure from price cuts and BYD competition, but FSD v13 and Cybercab launch in 2026 H2 are binary events. Binary risk/reward.",
+  "catalysts": [
+    {
+      "icon": "🚕",
+      "name": "Cybercab Robotaxi Launch",
+      "description": "Scheduled Austin launch H2 2026. First paid autonomous rides = validation of $25T TAM narrative. Stock re-rates if launch successful.",
+      "dotColor": "yellow",
+      "dateBadge": "H2 2026",
+      "badgeColor": "yellow"
+    },
+    {
+      "icon": "🤖",
+      "name": "Optimus Gen 3 Production",
+      "description": "10,000 units target by end 2026. Factory deployment at Fremont. Long-term TAM larger than auto business.",
+      "dotColor": "green",
+      "dateBadge": "Q4 2026",
+      "badgeColor": "green"
+    },
+    {
+      "icon": "⚡",
+      "name": "Energy Storage Record",
+      "description": "Megapack revenue $3.5B+ in 2026. 40% gross margin vs 18% auto. Fastest-growing segment.",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "BYD outselling Tesla in China + Europe — market share erosion structural",
+    "FSD safety incident could trigger regulatory ban on autonomy",
+    "Elon Musk distraction risk: DOGE/xAI/SpaceX pulling attention",
+    "90x PE bakes in perfect execution — any miss = -20% correction",
+    "Cybercab delay beyond 2026 removes key re-rating catalyst"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Deliveries", "dateRange": "Jul 2, 2026", "note": "400K+ target — miss = selloff", "est": "est. 410K units", "highlight": "blue" },
+    { "event": "Cybercab Austin Launch", "dateRange": "Aug–Oct 2026", "note": "Binary event for bulls", "highlight": "yellow" },
+    { "event": "Optimus Production Update", "dateRange": "Q4 2026", "note": "10K units milestone" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -35, "price": 203 },
+    { "label": "Base", "color": "yellow", "pct": 12, "price": 350 },
+    { "label": "Bull", "color": "green", "pct": 44, "price": 450 },
+    { "label": "Moon", "color": "purple", "pct": 92, "price": 600 }
+  ],
+  "analystTargets": [
+    { "firm": "Wedbush", "target": 550, "rating": "Outperform" },
+    { "firm": "Morgan Stanley", "target": 400, "rating": "Overweight" },
+    { "firm": "Barclays", "target": 225, "rating": "Underweight" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Lower rates help EV financing affordability — modest demand tailwind",
+    "inflationNote": "Battery material costs (lithium, cobalt) declining — margin relief ongoing",
+    "sectorImpact": "EV sector mixed: lower rates help demand but China competition trumps macro",
+    "summary": "Macro is secondary. TSLA is a binary bet on Robotaxi + Optimus execution in H2 2026."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 312, "note": "Current — speculative add", "timing": "ตอนนี้" },
+      { "label": "Entry 2", "level": 270, "rangeMax": 280, "note": "Pre-Cybercab launch dip", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 240, "note": "Deep support zone", "timing": "ถ้าร่วงหนัก" }
+    ],
+    "tp1": { "price": 350, "pct": 12.0, "note": "Pre-Cybercab launch" },
+    "tp2": { "price": 450, "pct": 44.0, "note": "Successful Robotaxi launch" },
+    "tp3": { "price": 600, "pct": 92.0, "note": "Optimus + Robotaxi scaling · 2027", "moon": true },
+    "stopLoss": {
+      "tight": 275,
+      "tightPct": -12,
+      "tightNote": "Below 50-day MA",
+      "hard": 240,
+      "hardPct": -23,
+      "hardNote": "Key long-term support",
+      "riskReward": "2.0 : 1",
+      "rrNote": "Tight stop vs TP2",
+      "rrWarning": "พอรับได้"
+    },
+    "verdict": "HOLD — wait for Cybercab launch clarity or dip to $270-280 for better entry. High risk at current valuation.",
+    "approach": "Scale In"
+  },
+  "sources": [
+    "https://finance.yahoo.com/quote/TSLA",
+    "https://ir.tesla.com/",
+    "https://www.cnbc.com/2026/06/15/tesla-robotaxi-cybercab-launch.html"
+  ]
+}

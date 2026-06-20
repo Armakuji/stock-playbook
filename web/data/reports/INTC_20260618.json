@@ -1,0 +1,96 @@
+{
+  "ticker": "INTC",
+  "companyName": "Intel Corporation",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-18T00:00:00.000Z",
+  "price": 22.14,
+  "priceChange": -1.2,
+  "priceNote": "Deep turnaround play · 18A make-or-break",
+  "marketCap": "$94B",
+  "sector": "Technology / Semiconductors",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 42,
+  "summary": "Intel in deep turnaround mode under new CEO Lip-Bu Tan. 18A process node is make-or-break — early yields reportedly improving but Intel Foundry still losing ~$7B/year. High risk, asymmetric upside if 18A delivers.",
+  "catalysts": [
+    {
+      "icon": "🏭",
+      "name": "18A Process Node",
+      "description": "Yield improvement targeting TSMC-competitive EUV. Microsoft + Amazon foundry design wins as validation.",
+      "dotColor": "yellow",
+      "dateBadge": "Q3 2026 Data",
+      "badgeColor": "yellow"
+    },
+    {
+      "icon": "🇺🇸",
+      "name": "CHIPS Act Funding",
+      "description": "$8.5B grants + $11B loans secured. Fab construction in Ohio and Arizona accelerating.",
+      "dotColor": "green"
+    },
+    {
+      "icon": "✂️",
+      "name": "Lip-Bu Tan Restructuring",
+      "description": "$10B cost cuts, headcount reduction, non-core asset divestitures underway.",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "18A yield still uncertain — any slip = stock -20% overnight",
+    "AMD Zen 5 and ARM taking server/PC market share structurally",
+    "Intel Foundry losses drag for 2-3 more years minimum",
+    "Talent exodus — senior engineers leaving for TSMC/AMD",
+    "No AI accelerator story — Gaudi 3 adoption minimal"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Jul 24, 2026", "note": "18A yield update expected", "est": "est. EPS $0.05", "highlight": "blue" },
+    { "event": "18A Yield Data", "dateRange": "Q3 2026", "note": "Make-or-break milestone", "highlight": "yellow" },
+    { "event": "Ohio Fab Production", "dateRange": "2027", "note": "First wafers from Intel 18" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -32, "price": 15 },
+    { "label": "Base", "color": "yellow", "pct": 26, "price": 28 },
+    { "label": "Bull", "color": "green", "pct": 90, "price": 42 },
+    { "label": "Moon", "color": "purple", "pct": 148, "price": 55 }
+  ],
+  "analystTargets": [
+    { "firm": "JPMorgan", "target": 28, "rating": "Neutral" },
+    { "firm": "Barclays", "target": 18, "rating": "Underweight" },
+    { "firm": "Wedbush", "target": 35, "rating": "Outperform" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Rate cuts help INTC's debt load — $48B net debt is material risk if rates stay high",
+    "inflationNote": "Input costs (energy, materials) still elevated for fab operations",
+    "sectorImpact": "Semis broadly positive on rate cuts; INTC specific risk outweighs macro",
+    "summary": "Macro is a secondary concern. INTC lives or dies on 18A execution, not interest rates."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 22, "note": "Current price, speculative starter", "timing": "ตอนนี้" },
+      { "label": "Entry 2", "level": 18, "note": "Key support, better R/R", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 15, "note": "Bear case — max position", "timing": "ถ้าร่วงหนัก" }
+    ],
+    "tp1": { "price": 30, "pct": 35.5, "note": "Pre-18A re-rating" },
+    "tp2": { "price": 42, "pct": 89.7, "note": "18A success confirmation" },
+    "tp3": { "price": 55, "pct": 148.4, "note": "Full foundry re-rating · 2027+", "moon": true },
+    "stopLoss": {
+      "tight": 18,
+      "tightPct": -19,
+      "tightNote": "Below key support",
+      "hard": 14,
+      "hardPct": -37,
+      "hardNote": "Below Barclays bear case",
+      "riskReward": "2.1 : 1",
+      "rrNote": "Tight stop vs TP1",
+      "rrWarning": "High risk"
+    },
+    "verdict": "Speculative ค่าขนม only — small position, high conviction needed. Catalyst: 18A yield data Q3 2026.",
+    "approach": "Scale In"
+  },
+  "earningsDate": "2026-07-24",
+  "sources": [
+    "https://finance.yahoo.com/quote/INTC",
+    "https://www.intc.com/investor-relations/",
+    "https://www.reuters.com/technology/intel-18a-foundry-update-2026/"
+  ]
+}

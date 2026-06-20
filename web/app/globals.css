@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0a0a0f;
+  --card: #111118;
+  --border: #1e1e2e;
+  --text: #e2e8f0;
+  --muted: #64748b;
+  --green: #10b981;
+  --yellow: #f59e0b;
+  --red: #ef4444;
+  --blue: #3b82f6;
+  --purple: #8b5cf6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "Inter", "SF Pro Display", system-ui, sans-serif;
+  margin: 0;
+}
