@@ -98,6 +98,59 @@ export interface AnalystTarget {
   rating: string;
 }
 
+// ─── i18n (translations) ─────────────────────────────────────────────────────
+// Top-level report fields are the English default.
+// i18n.th contains Thai overrides — only fields present in th will be swapped.
+
+export interface CatalystTranslation {
+  name?: string;
+  description?: string;
+}
+
+export interface EntryLevelTranslation {
+  note?: string;
+  timing?: string;
+}
+
+export interface MacroRiskTranslation {
+  rateOutlook?: string;
+  inflationNote?: string;
+  sectorImpact?: string;
+  summary?: string;
+}
+
+export interface EstimateDateTranslation {
+  event?: string;
+  note?: string;
+}
+
+export interface ReportTranslation {
+  summary?: string;
+  priceNote?: string;
+  scoreLabel?: string;
+  catalysts?: CatalystTranslation[];
+  risks?: string[];
+  macroRisk?: MacroRiskTranslation;
+  entryStrategy?: {
+    verdict?: string;
+    entryLevels?: EntryLevelTranslation[];
+    tp1?: { note?: string };
+    tp2?: { note?: string };
+    tp3?: { note?: string };
+    stopLoss?: {
+      tightNote?: string;
+      hardNote?: string;
+      rrNote?: string;
+      rrWarning?: string;
+    };
+  };
+  estimateDates?: EstimateDateTranslation[];
+}
+
+export interface ReportI18n {
+  th?: ReportTranslation;
+}
+
 // ─── Main Report ─────────────────────────────────────────────────────────────
 
 export interface StockReport {
@@ -123,4 +176,5 @@ export interface StockReport {
   entryStrategy: EntryStrategy;
   earningsDate?: string;
   sources: string[];
+  i18n?: ReportI18n;
 }

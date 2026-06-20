@@ -90,5 +90,46 @@
     "https://finance.yahoo.com/quote/AVGO",
     "https://investors.broadcom.com/",
     "https://www.cnbc.com/2026/06/05/broadcom-ai-custom-chip-revenue.html"
-  ]
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Broadcom คือผู้ชนะ AI ที่หลายคนมองข้าม — chip AI แบบ custom (XPU) สำหรับ Google, Meta, Apple บวกกับ AI networking (Ethernet switching) กำลังรวมตัวเป็นธุรกิจรายได้ $60B+ ภายในปี 2027 การรวมกิจการ VMware เริ่มสร้างกระแสเงินสดบวกเร็วกว่าแผน และรายได้ซอฟต์แวร์แบบ recurring เปลี่ยนโครงสร้าง P&L ถาวร",
+      "priceNote": "momentum หลัง stock split · วัฏจักร AI networking",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "🧠 ธุรกิจ Custom AI XPU", "description": "Google TPUs, Meta MTIA, Apple neural engine — AVGO ออกแบบให้ทั้งหมด TAM ขยายถึง $60-90B ภายในปี 2027" },
+        { "name": "🔗 AI Ethernet Networking", "description": "Tomahawk 5 + Jericho3-AI switches ชนะ Infiniband ใน AI clusters ของ hyperscaler รายได้ networking $4B+ โต 40% YoY" },
+        { "name": "💼 รวม VMware เร็วกว่าแผน", "description": "เปลี่ยนเป็น subscription เสร็จแล้ว รายได้ recurring $8.5B ต่อปี EBITDA margin ขยายถึง 65%+" }
+      ],
+      "risks": [
+        "ลูกค้ากระจุก: Google + Meta = ~40% ของรายได้ AI chip",
+        "AMD และ Marvell แข่งงาน custom silicon",
+        "VMware enterprise อาจลดลงถ้า pricing ดันให้ลูกค้าหนีไปทางเลือกอื่น",
+        "หนี้จากการซื้อ VMware (~$70B) จำกัดความยืดหยุ่น buyback",
+        "ข้อจำกัดการค้า US-จีน อาจกระทบรายได้ semiconductor เดิม"
+      ],
+      "macroRisk": {
+        "rateOutlook": "การลดดอกเบี้ยลดต้นทุนหนี้ VMware — มีนัยต่อการขยาย FCF",
+        "inflationNote": "สัดส่วน software สูงป้องกัน inflation วัสดุ margin semiconductor คงที่",
+        "sectorImpact": "Tech ได้ประโยชน์จากการลดดอกเบี้ย รายได้ AVGO software ทนทานต่อ recession",
+        "summary": "ความไวต่อ macro ต่ำ AI custom silicon + VMware ARR = รายได้ทนทานไม่ขึ้นกับดอกเบี้ย"
+      },
+      "entryStrategy": {
+        "verdict": "Core Holding — BUY แข็งแกร่งเมื่อย่อต่ำกว่า $230 AI XPU + VMware ARR = คุณภาพ+growth หายากในตลาด",
+        "entryLevels": [
+          { "note": "ปัจจุบัน — เข้าตาม momentum", "timing": "ตอนนี้" },
+          { "note": "โซนย่อหลัง earnings", "timing": "ถ้าย่อ" },
+          { "note": "แนวรับสำคัญ / 200-day MA", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "เป้า consensus ระยะสั้น" },
+        "tp2": { "note": "Bull case / XPU ramp" },
+        "tp3": { "note": "AI monetization เต็มรูปแบบ · 2027" },
+        "stopLoss": { "tightNote": "ต่ำกว่าระดับ breakout", "hardNote": "หลุด 200-day MA", "rrNote": "Tight stop เทียบ TP2", "rrWarning": "R/R แข็งแกร่ง" }
+      },
+      "estimateDates": [
+        { "event": "ประกาศผล Q3 FY26", "note": "ยืนยันการ ramp รายได้ XPU" },
+        { "event": "ดีล AI XPU ใหม่", "note": "คาด partnership hyperscaler รายใหม่" }
+      ]
+    }
+  }
 }

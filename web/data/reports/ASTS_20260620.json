@@ -129,5 +129,61 @@
     "https://finance.yahoo.com/quote/ASTS",
     "https://www.ast-science.com/investor-relations/",
     "https://www.reuters.com/technology/ast-spacemobile-bluebird-launch-2026/"
-  ]
+  ],
+  "i18n": {
+    "th": {
+      "summary": "AST SpaceMobile สร้างเครือข่าย broadband ผ่านดาวเทียมในอวกาศ ที่เชื่อมต่อกับโทรศัพท์ธรรมดาได้เลยโดยไม่ต้องมีอุปกรณ์พิเศษ — เปรียบเหมือน 'Starlink แต่ใช้กับมือถือทั่วไปได้เลย' พาร์ทเนอร์ได้แก่ AT&T, Verizon, Vodafone, Rakuten ปัจจุบันกำลังส่งดาวเทียม BlueBird รุ่น commercial เพื่อเปลี่ยนจาก demo → product จริง",
+      "priceNote": "ลงจาก high $97.56 · เสี่ยงสูง",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "🚀 BlueBird 8/9/10 ปล่อยขึ้นสู่อวกาศ",
+          "description": "SpaceX Falcon 9 · 2:39 AM EDT Cape Canaveral ผ่าน threshold commercial service จริง = contracts เปลี่ยนจาก MOU เป็นเงินจริง"
+        },
+        {
+          "name": "🇯🇵 Japan $1B J-LEO Award",
+          "description": "ชิงกับ KDDI/SpaceX ถ้าชนะ = re-rating ครั้งใหญ่ หุ้นขึ้น 6% แค่จากข่าวลือเดียว"
+        },
+        {
+          "name": "ดาวเทียม 45 ดวงในวงโคจร",
+          "description": "เปิด commercial service เต็มรูปแบบ · เริ่มรับรายได้จากผู้ใช้งาน"
+        }
+      ],
+      "risks": [
+        "ความล้มเหลวในการปล่อยดาวเทียม — ถ้า Falcon 9 มีปัญหา หุ้นร่วง -40% ข้ามคืน",
+        "Japan award ไปที่ KDDI/SpaceX — ตัด narrative รายได้ $1B+ ออก",
+        "เผาเงิน ~$120M ต่อไตรมาส ต้องเพิ่มทุนก่อนถึงจุดทำกำไร",
+        "ความเสี่ยงด้านกฎระเบียบ: ข้อพิพาทคลื่นความถี่ในหลายตลาด",
+        "Starlink Direct-to-Cell เปิดให้บริการแล้ว — แรงกดดันการแข่งขันเพิ่มขึ้น"
+      ],
+      "macroRisk": {
+        "rateOutlook": "การลดดอกเบี้ยใน H2 2026 ช่วย growth stocks — ASTS เป็น pre-revenue จึงไวต่อ DCF มาก",
+        "inflationNote": "ต้นทุนการปล่อยผูกกับสัญญา SpaceX — ค่อนข้างคงที่ ไม่ได้รับผลจาก inflation มาก",
+        "sectorImpact": "กลุ่ม Space/Satellite ได้ประโยชน์จากการลดดอกเบี้ย; ปัจจัย geopolitical หนุน sovereign contracts",
+        "summary": "มหภาคเป็น tailwind แต่ ASTS เป็น binary bet ที่ launch success และ Japan award — ไม่ใช่ Fed"
+      },
+      "entryStrategy": {
+        "verdict": "Speculative ค่าขนม เท่านั้น — ลงทุนน้อย ต้องมั่นใจสูง catalyst: BlueBird launch + Japan award มิ.ย. 2026",
+        "entryLevels": [
+          { "note": "Pre-launch · ราคาวิ่งมาแล้ว", "timing": "ตอนนี้" },
+          { "note": "Post-launch 'sell the news' dip", "timing": "17–19 มิ.ย." },
+          { "note": "แนวรับแกร่ง / โซน bear target", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "High เดิม · หลัง launch สำเร็จ" },
+        "tp2": { "note": "Street high / Japan ชนะ" },
+        "tp3": { "note": "Full bull · US+Japan+EU · 2027" },
+        "stopLoss": {
+          "tightNote": "ถ้าเข้าใกล้ $82",
+          "hardNote": "ต่ำกว่า Barclays bear $60",
+          "rrNote": "Tight stop เทียบ TP2",
+          "rrWarning": "พอรับได้"
+        }
+      },
+      "estimateDates": [
+        { "event": "Catalyst จากการ Launch", "note": "ขึ้นก่อน / อาจ sell the news" },
+        { "event": "ผลรางวัล Japan", "note": "re-rating ครั้งใหญ่ถ้าชนะ" },
+        { "event": "เปิด commercial เต็มรูปแบบ", "note": "Revenue inflection point" }
+      ]
+    }
+  }
 }

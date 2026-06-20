@@ -92,5 +92,47 @@
     "https://finance.yahoo.com/quote/INTC",
     "https://www.intc.com/investor-relations/",
     "https://www.reuters.com/technology/intel-18a-foundry-update-2026/"
-  ]
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Intel อยู่ในโหมดฟื้นฟูองค์กรครั้งใหญ่ภายใต้ CEO คนใหม่ Lip-Bu Tan กระบวนการผลิต 18A คือ make-or-break — yield เริ่มดีขึ้นตามรายงาน แต่ Intel Foundry ยังขาดทุน ~$7B ต่อปี ความเสี่ยงสูง แต่ upside แบบ asymmetric ถ้า 18A สำเร็จ",
+      "priceNote": "หุ้น turnaround ลึก · 18A คือ make-or-break",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "🏭 กระบวนการ 18A", "description": "yield กำลังปรับปรุงเพื่อแข่ง TSMC ดีล foundry จาก Microsoft + Amazon เป็นสัญญาณยืนยัน" },
+        { "name": "🇺🇸 เงินทุน CHIPS Act", "description": "grant $8.5B + loan $11B ได้รับแล้ว ก่อสร้างโรงงานใน Ohio และ Arizona เร่งตัว" },
+        { "name": "✂️ การปรับโครงสร้างของ Lip-Bu Tan", "description": "ลดต้นทุน $10B ลดพนักงาน ขายทรัพย์สินที่ไม่ใช่ธุรกิจหลัก" }
+      ],
+      "risks": [
+        "yield ของ 18A ยังไม่แน่นอน — ถ้าสะดุดหุ้นร่วง -20% ข้ามคืน",
+        "AMD Zen 5 และ ARM แย่งส่วนแบ่ง server/PC เชิงโครงสร้าง",
+        "Intel Foundry ขาดทุนต่อเนื่องอีก 2-3 ปี",
+        "สมองไหล — วิศวกรอาวุโสย้ายไป TSMC/AMD",
+        "ไม่มี AI accelerator story — Gaudi 3 ไม่ได้รับการยอมรับ"
+      ],
+      "macroRisk": {
+        "rateOutlook": "การลดดอกเบี้ยช่วยลดภาระหนี้ — หนี้สุทธิ $48B เป็นความเสี่ยงสำคัญ",
+        "inflationNote": "ต้นทุนพลังงานและวัสดุยังสูง กระทบการผลิต fab",
+        "sectorImpact": "กลุ่ม semis ได้บวกจากการลดดอกเบี้ย แต่ความเสี่ยงเฉพาะ INTC ใหญ่กว่า macro",
+        "summary": "มหภาคเป็นปัจจัยรอง INTC อยู่หรือตายที่ 18A ไม่ใช่อัตราดอกเบี้ย"
+      },
+      "entryStrategy": {
+        "verdict": "Speculative ค่าขนม เท่านั้น — position เล็ก ต้องมั่นใจสูง catalyst: ข้อมูล yield 18A Q3 2026",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน เริ่มต้น speculative", "timing": "ตอนนี้" },
+          { "note": "แนวรับสำคัญ R/R ดีกว่า", "timing": "ถ้าย่อ" },
+          { "note": "กรณีแย่สุด — position เต็ม", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "re-rating ก่อน 18A ยืนยัน" },
+        "tp2": { "note": "ยืนยัน 18A สำเร็จ" },
+        "tp3": { "note": "re-rating Foundry เต็มรูปแบบ · 2027+" },
+        "stopLoss": { "tightNote": "ต่ำกว่าแนวรับสำคัญ", "hardNote": "ต่ำกว่า bear case ของ Barclays", "rrNote": "Tight stop เทียบ TP1", "rrWarning": "ความเสี่ยงสูง" }
+      },
+      "estimateDates": [
+        { "event": "ประกาศผล Q2 2026", "note": "คาดอัปเดต yield 18A" },
+        { "event": "ข้อมูล Yield 18A", "note": "milestone ชี้ชะตาบริษัท" },
+        { "event": "โรงงาน Ohio เริ่มผลิต", "note": "wafer แรกจาก Intel 18A" }
+      ]
+    }
+  }
 }

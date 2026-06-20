@@ -90,5 +90,46 @@
     "https://finance.yahoo.com/quote/NVDA",
     "https://www.nvidia.com/en-us/about-nvidia/investors/",
     "https://www.cnbc.com/2026/06/10/nvidia-blackwell-demand.html"
-  ]
+  ],
+  "i18n": {
+    "th": {
+      "summary": "NVIDIA ครองตลาด AI accelerator ด้วยส่วนแบ่ง GPU ~80% และการ ramp Blackwell ที่เร่งตัวขึ้น รายได้ Data Center พุ่งขึ้น 3 เท่า YoY ดีล Sovereign AI และคอขวดของ CoWoS ที่คลายตัวเข้าสู่ H2 2026 ทำให้นี่เป็น Core Holding ระยะยาว",
+      "priceNote": "ใกล้ ATH · วัฏจักร Blackwell ramp",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "⚡ Blackwell GB200 NVL72 Ramp", "description": "bandwidth interconnect มากกว่า H100 ถึง 400% orders จาก Hyperscaler ล็อคถึงปี 2027" },
+        { "name": "🌍 Sovereign AI Demand", "description": "UAE, ซาอุดิอาระเบีย, ญี่ปุ่น, อินเดีย — ดีล GPU ระดับรัฐบาล มูลค่าหลายพันล้านเหรียญ" },
+        { "name": "🧱 CUDA Ecosystem Moat", "description": "นักพัฒนา 4M+ คน ต้นทุนในการเปลี่ยนแพลตฟอร์มสูงมาก NIM microservices ขยาย Software attach rate" }
+      ],
+      "risks": [
+        "AMD MI350 + Intel Gaudi 3 เริ่มแย่งส่วนแบ่งด้าน price-performance",
+        "ข้อจำกัดส่งออกสหรัฐฯ–จีน (แบน H20) — ช่องว่างรายได้ ~$15B",
+        "ลูกค้าอาจระวังการลงทุนถ้า ROI จาก AI ยังไม่เห็นผล",
+        "CoWoS packaging ยังเป็นคอขวดจนถึง Q3 2026",
+        "Valuation: P/E forward 35x ต้องการผลงานที่ beat-and-raise ต่อเนื่อง"
+      ],
+      "macroRisk": {
+        "rateOutlook": "คาดลดดอกเบี้ย 1-2 ครั้งใน H2 2026 — หนุน multiple ของ growth stocks",
+        "inflationNote": "PCE 2.6% — เกินเป้าแต่ทิศทางลง Fed ไม่รีบขึ้นดอกเบี้ย",
+        "sectorImpact": "Tech/AI เป็นกลาง-บวก: ดอกเบี้ยลดขยาย DCF ไม่มีความเสี่ยงโดยตรงจากอัตราดอกเบี้ย",
+        "summary": "มหภาคเป็น tailwind ถ้า Fed ลดดอกเบี้ย ความเสี่ยงหลักคือ sentiment พลิกถ้า narrative AI capex สะดุด"
+      },
+      "entryStrategy": {
+        "verdict": "Core Holding — BUY เมื่อราคาดิ่งถึง $120 ทยอยสะสมถึง $108 ถือยาวผ่าน Blackwell ramp",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน ดิ่งจาก ATH", "timing": "ตอนนี้" },
+          { "note": "ย่อ 10% — แนวรับแข็งแกร่ง", "timing": "ถ้าย่อ" },
+          { "note": "โซน 200-day MA โอกาสทอง", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "แนวต้านระยะสั้น" },
+        "tp2": { "note": "เป้า consensus นักวิเคราะห์" },
+        "tp3": { "note": "Bull case · วัฏจักร Rubin 2027" },
+        "stopLoss": { "tightNote": "ต่ำกว่าแนวรับสำคัญ", "hardNote": "หลุด 200-day MA", "rrNote": "Tight stop เทียบ TP2", "rrWarning": "R/R ดี" }
+      },
+      "estimateDates": [
+        { "event": "ประกาศผล Q2 FY27", "note": "ติดตาม Blackwell revenue ramp" },
+        { "event": "GTC Fall 2026", "note": "เปิดตัว Rubin architecture รุ่นใหม่" }
+      ]
+    }
+  }
 }
