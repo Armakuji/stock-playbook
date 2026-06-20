@@ -1,16 +1,28 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { getAllReports } from "@/lib/reports";
 
 export const metadata: Metadata = {
   title: "Stock Radar Weekly",
   description: "Weekly stock analysis",
 };
 
+function getLatestReportDate(): string {
+  const reports = getAllReports();
+  if (reports.length === 0) return "—";
+  const latest = new Date(reports[0].generatedAt);
+  const dd = String(latest.getDate()).padStart(2, "0");
+  const mm = String(latest.getMonth() + 1).padStart(2, "0");
+  const yyyy = latest.getFullYear();
+  return `${dd}/${mm}/${yyyy}`;
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const lastUpdated = getLatestReportDate();
   return (
     <html lang="en" className="h-full">
       <body className="min-h-full flex flex-col" style={{ backgroundColor: "var(--bg)", color: "var(--text)" }}>
@@ -21,7 +33,7 @@ export default function RootLayout({
                 📡 Stock Radar Weekly
               </span>
             </a>
-            <span style={{ fontSize: 12, color: "var(--muted)" }}>Auto-updated weekly</span>
+            <span style={{ fontSize: 12, color: "var(--muted)" }}>Updated {lastUpdated}</span>
           </div>
         </header>
         <main style={{ flex: 1, maxWidth: 1200, width: "100%", margin: "0 auto", padding: "24px 16px" }}>
