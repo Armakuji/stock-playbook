@@ -9,14 +9,17 @@ export function getAllReports(): StockReport[] {
 
   const files = fs
     .readdirSync(REPORTS_DIR)
-    .filter((f) => f.endsWith(".json"))
-    .sort()
-    .reverse(); // newest first
+    .filter((f) => f.endsWith(".json"));
 
-  return files.map((file) => {
+  const reports = files.map((file) => {
     const content = fs.readFileSync(path.join(REPORTS_DIR, file), "utf-8");
     return JSON.parse(content) as StockReport;
   });
+
+  // Sort by generatedAt descending (newest report first)
+  return reports.sort(
+    (a, b) => new Date(b.generatedAt).getTime() - new Date(a.generatedAt).getTime()
+  );
 }
 
 export function getReport(ticker: string): StockReport | null {
