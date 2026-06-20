@@ -50,6 +50,44 @@ export default function RootLayout({
         className="min-h-full flex flex-col"
         style={{ backgroundColor: "var(--bg)", color: "var(--text)", fontFamily: "var(--font-body, system-ui, sans-serif)" }}
       >
+        {/* ── Deep Space ambient layer (fixed, behind everything) ── */}
+        <div aria-hidden="true" style={{
+          position: "fixed", inset: 0, pointerEvents: "none", zIndex: -1, overflow: "hidden",
+        }}>
+          {/* Radar sweep — slow rotating conic gradient, the signature effect */}
+          <div style={{
+            position: "absolute", top: "50%", left: "50%",
+            width: "220vmax", height: "220vmax",
+            transform: "translate(-50%, -50%)",
+            background: "conic-gradient(from 0deg, transparent 0deg, rgba(16,185,129,0.022) 18deg, transparent 45deg)",
+            animation: "radarSweep 18s linear infinite",
+          }} />
+          {/* Green origin glow — top center, like the radar source */}
+          <div style={{
+            position: "absolute", top: "-15%", left: "50%", transform: "translateX(-50%)",
+            width: "min(1000px, 130vw)", height: 700,
+            background: "radial-gradient(ellipse at center, rgba(16,185,129,0.08) 0%, transparent 65%)",
+          }} />
+          {/* Blue glow — bottom right */}
+          <div style={{
+            position: "absolute", bottom: "-15%", right: "-10%",
+            width: 700, height: 600,
+            background: "radial-gradient(ellipse at center, rgba(59,130,246,0.055) 0%, transparent 65%)",
+          }} />
+          {/* Purple accent — mid left */}
+          <div style={{
+            position: "absolute", top: "35%", left: "-12%",
+            width: 500, height: 450,
+            background: "radial-gradient(ellipse at center, rgba(139,92,246,0.04) 0%, transparent 65%)",
+          }} />
+          {/* Warm amber hint — bottom left */}
+          <div style={{
+            position: "absolute", bottom: "5%", left: "10%",
+            width: 350, height: 300,
+            background: "radial-gradient(ellipse at center, rgba(245,158,11,0.03) 0%, transparent 65%)",
+          }} />
+        </div>
+
         {/* Gradient accent bar — outside header, normal flow, no overflow issues */}
         <div style={{
           height: 3, flexShrink: 0,

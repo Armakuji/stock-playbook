@@ -23,6 +23,12 @@
 
 body {
   background-color: var(--bg);
+  /* Two-layer background: top-center green vignette + dot grid */
+  background-image:
+    radial-gradient(ellipse 110% 55% at 50% -5%, rgba(16,185,129,0.045) 0%, transparent 60%),
+    radial-gradient(circle, #1d1d33 1px, transparent 1px);
+  background-size: 100% 100%, 26px 26px;
+  background-repeat: no-repeat, repeat;
   color: var(--text);
   font-family: var(--font-body);
   margin: 0;
@@ -62,6 +68,11 @@ body {
 
 @keyframes scoreArc {
   from { stroke-dasharray: 0 113; }
+}
+
+@keyframes radarSweep {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
 /* ─── Utility ────────────────────────────────────────────────────────────────── */

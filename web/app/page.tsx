@@ -2,67 +2,111 @@ import { getAllReports } from "@/lib/reports";
 import { rankReports } from "@/lib/ranking";
 import { StockCard } from "./StockCard";
 
+const VERDICT_COLORS = {
+  BUY: "#10b981", HOLD: "#f59e0b", SELL: "#ef4444", SPECULATIVE: "#8b5cf6",
+} as const;
+
 export default function DashboardPage() {
   const reports = getAllReports();
   const ranked = rankReports(reports);
 
-  const buys = ranked.filter((r) => r.verdict === "BUY").length;
+  const buys  = ranked.filter((r) => r.verdict === "BUY").length;
   const holds = ranked.filter((r) => r.verdict === "HOLD").length;
   const specs = ranked.filter((r) => r.verdict === "SPECULATIVE").length;
 
+  // Aggregate stats
+  const avgUpside = ranked.length > 0
+    ? Math.round(ranked.reduce((s, r) => s + ((r.entryStrategy.tp2.price - r.price) / r.price) * 100, 0) / ranked.length)
+    : 0;
+  const avgScore = ranked.length > 0
+    ? Math.round(ranked.reduce((s, r) => s + (r.score ?? 0), 0) / ranked.length)
+    : 0;
+  const lowFedRisk = ranked.filter((r) => r.macroRisk.fedRisk === "LOW").length;
+  const topPick = ranked[0];
+
+  const statsItems = [
+    { label: "Top Pick",      value: topPick?.ticker ?? "—",   color: "#10b981"       },
+    { label: "Avg TP2 Upside",value: `+${avgUpside}%`,         color: "#10b981"       },
+    { label: "Avg Score",     value: `${avgScore}`,            color: "var(--text)"   },
+    { label: "Low Fed Risk",  value: `${lowFedRisk} / ${ranked.length}`, color: "#10b981" },
+    { label: "BUY Signals",   value: `${buys}`,                color: "#10b981"       },
+  ];
+
   return (
     <div>
-      {/* Header */}
-      <div style={{ marginBottom: 32 }}>
-        <h1 style={{
-          fontSize: "clamp(22px, 4vw, 30px)", fontWeight: 900, margin: "0 0 6px",
-          letterSpacing: "-0.5px", fontFamily: "var(--font-display, sans-serif)",
-        }}>
-          Weekly Watchlist
-        </h1>
-        <p style={{ fontSize: 13, color: "var(--muted)", margin: "0 0 18px", fontFamily: "var(--font-mono, monospace)" }}>
-          {ranked.length} stocks · ranked by conviction score
+      {/* ── Hero header ───────────────────────────────────────── */}
+      <div style={{ marginBottom: 24 }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 4 }}>
+          {/* Radar pulse icon */}
+          <div style={{ position: "relative", width: 18, height: 18, flexShrink: 0 }}>
+            <div style={{
+              position: "absolute", inset: 0, borderRadius: "50%",
+              border: "2px solid #10b981",
+              animation: "livePulse 2s ease-in-out infinite",
+            }} />
+            <div style={{
+              position: "absolute", inset: 4, borderRadius: "50%",
+              background: "#10b981",
+            }} />
+          </div>
+          <h1 style={{
+            fontSize: "clamp(20px, 4vw, 28px)", fontWeight: 900, margin: 0,
+            letterSpacing: "-0.5px", fontFamily: "var(--font-display, sans-serif)",
+          }}>
+            Weekly Watchlist
+          </h1>
+        </div>
+        <p style={{ fontSize: 12, color: "var(--muted)", margin: "0 0 20px", fontFamily: "var(--font-mono, monospace)" }}>
+          {ranked.length} stocks · ranked by conviction · {new Date().toLocaleDateString("en-GB")}
         </p>
 
-        {/* Legend badges */}
-        <div style={{ display: "flex", gap: 10, flexWrap: "wrap", alignItems: "center" }}>
+        {/* ── Radar Stats strip ─────────────────────────────── */}
+        {ranked.length > 0 && (
+          <div style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(110px, 1fr))",
+            gap: 8, marginBottom: 20,
+          }}>
+            {statsItems.map(({ label, value, color }) => (
+              <div key={label} style={{
+                background: "var(--card)", border: "1px solid var(--border)",
+                borderRadius: 10, padding: "10px 12px",
+              }}>
+                <div style={{ fontSize: 9, color: "var(--muted)", textTransform: "uppercase", letterSpacing: "1px", marginBottom: 4, fontFamily: "var(--font-mono, monospace)" }}>
+                  {label}
+                </div>
+                <div style={{ fontSize: 17, fontWeight: 800, color, fontFamily: "var(--font-mono, monospace)", letterSpacing: "-0.5px" }}>
+                  {value}
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* ── Verdict badges ────────────────────────────────── */}
+        <div style={{ display: "flex", gap: 8, flexWrap: "wrap", alignItems: "center" }}>
           {buys > 0 && (
-            <span style={{
-              fontSize: 11, padding: "4px 12px", borderRadius: 8,
-              background: "#10b98118", color: "#10b981",
-              border: "1px solid #10b98130", fontWeight: 800,
-              fontFamily: "var(--font-mono, monospace)",
-            }}>
+            <span style={{ fontSize: 11, padding: "4px 12px", borderRadius: 8, background: "#10b98118", color: "#10b981", border: "1px solid #10b98130", fontWeight: 800, fontFamily: "var(--font-mono, monospace)" }}>
               BUY ×{buys}
             </span>
           )}
           {holds > 0 && (
-            <span style={{
-              fontSize: 11, padding: "4px 12px", borderRadius: 8,
-              background: "#f59e0b18", color: "#f59e0b",
-              border: "1px solid #f59e0b30", fontWeight: 800,
-              fontFamily: "var(--font-mono, monospace)",
-            }}>
+            <span style={{ fontSize: 11, padding: "4px 12px", borderRadius: 8, background: "#f59e0b18", color: "#f59e0b", border: "1px solid #f59e0b30", fontWeight: 800, fontFamily: "var(--font-mono, monospace)" }}>
               HOLD ×{holds}
             </span>
           )}
           {specs > 0 && (
-            <span style={{
-              fontSize: 11, padding: "4px 12px", borderRadius: 8,
-              background: "#8b5cf618", color: "#8b5cf6",
-              border: "1px solid #8b5cf630", fontWeight: 800,
-              fontFamily: "var(--font-mono, monospace)",
-            }}>
+            <span style={{ fontSize: 11, padding: "4px 12px", borderRadius: 8, background: "#8b5cf618", color: "#8b5cf6", border: "1px solid #8b5cf630", fontWeight: 800, fontFamily: "var(--font-mono, monospace)" }}>
               SPEC ×{specs}
             </span>
           )}
           <span style={{ fontSize: 11, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>
-            · verdict · Fed · score · upside
+            sorted: verdict · fed · score · upside
           </span>
         </div>
       </div>
 
-      {/* Grid */}
+      {/* ── Card grid ─────────────────────────────────────────── */}
       {ranked.length === 0 ? (
         <div style={{ textAlign: "center", padding: "80px 0", color: "var(--muted)" }}>
           <div style={{ fontSize: 32, marginBottom: 12 }}>📊</div>
