@@ -2,8 +2,6 @@ import { getAllReports } from "@/lib/reports";
 import { rankReports } from "@/lib/ranking";
 import { StockCard } from "./StockCard";
 
-const VERDICT_ORDER = ["BUY", "HOLD", "SPECULATIVE", "SELL"];
-
 export default function DashboardPage() {
   const reports = getAllReports();
   const ranked = rankReports(reports);
@@ -56,7 +54,7 @@ export default function DashboardPage() {
           </p>
         </div>
       ) : (
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: 16 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 16 }}>
           {ranked.map((r) => (
             <StockCard key={`${r.ticker}-${r.generatedAt}`} report={r} rank={r.rank} rankScore={r.rankScore} />
           ))}

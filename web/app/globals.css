@@ -13,13 +13,99 @@
   --purple: #8b5cf6;
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
   background-color: var(--bg);
   color: var(--text);
   font-family: "Inter", "SF Pro Display", system-ui, sans-serif;
   margin: 0;
+}
+
+/* ─── Responsive grids ─────────────────────────────────────────────────────── */
+
+/* 3-column report grid → 1 col on mobile, 2 col on tablet, 3 col on desktop */
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+/* 4-column macro grid */
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Dashboard card grid */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+/* ─── Hero layout ──────────────────────────────────────────────────────────── */
+
+.hero-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.hero-price {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.hero-title {
+  font-size: 40px;
+  font-weight: 900;
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+/* ─── Report page padding ──────────────────────────────────────────────────── */
+
+.report-page {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ─── Mobile ≤ 640px ───────────────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+  .grid-4 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero-title {
+    font-size: 28px;
+  }
+  .hero-price {
+    text-align: left;
+  }
+  main {
+    padding: 20px 16px !important;
+  }
+  header > div {
+    padding: 12px 16px !important;
+  }
+}
+
+/* ─── Tablet 641px – 900px ─────────────────────────────────────────────────── */
+@media (min-width: 641px) and (max-width: 900px) {
+  .grid-3 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-4 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero-title {
+    font-size: 34px;
+  }
 }

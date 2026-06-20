@@ -301,39 +301,39 @@ export function ReportContent({ report: baseReport }: { report: StockReport }) {
       </div>
 
       {/* Hero */}
-      <div style={{ background: "#111118", border: "1px solid #1e1e2e", borderTop: `2px solid ${verdictColor}`, borderRadius: 14, padding: "24px 28px", marginBottom: 16 }}>
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: 16 }}>
-          <div>
-            <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 6 }}>
-              <h1 style={{ fontSize: 40, fontWeight: 900, margin: 0, letterSpacing: "-1px" }}>{report.ticker}</h1>
-              <span style={{ fontSize: 12, fontWeight: 800, padding: "4px 12px", borderRadius: 6, background: verdictColor + "20", color: verdictColor, border: `1px solid ${verdictColor}40` }}>
+      <div style={{ background: "#111118", border: "1px solid #1e1e2e", borderTop: `2px solid ${verdictColor}`, borderRadius: 14, padding: "20px 22px", marginBottom: 16 }}>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: 16, justifyContent: "space-between", alignItems: "flex-start" }}>
+          <div style={{ flex: "1 1 260px", minWidth: 0 }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 6, flexWrap: "wrap" }}>
+              <h1 style={{ fontSize: "clamp(24px, 5vw, 40px)", fontWeight: 900, margin: 0, letterSpacing: "-1px" }}>{report.ticker}</h1>
+              <span style={{ fontSize: 12, fontWeight: 800, padding: "4px 12px", borderRadius: 6, background: verdictColor + "20", color: verdictColor, border: `1px solid ${verdictColor}40`, whiteSpace: "nowrap" }}>
                 {report.scoreLabel ?? report.verdict}
               </span>
             </div>
-            <div style={{ fontSize: 13, color: "#64748b", marginBottom: 14 }}>
+            <div style={{ fontSize: 13, color: "#64748b", marginBottom: 12 }}>
               {report.companyName}{report.exchange ? ` · ${report.exchange}` : ""} · {report.sector}
             </div>
-            <p style={{ fontSize: 14, color: "#94a3b8", lineHeight: 1.7, margin: 0, maxWidth: 640 }}>{report.summary}</p>
+            <p style={{ fontSize: 14, color: "#94a3b8", lineHeight: 1.7, margin: 0 }}>{report.summary}</p>
           </div>
-          <div style={{ textAlign: "right", flexShrink: 0 }}>
-            <div style={{ fontSize: 36, fontWeight: 900, letterSpacing: "-1px" }}>${report.price.toFixed(2)}</div>
-            <div style={{ fontSize: 13, color: isPositive ? "#10b981" : "#ef4444", marginBottom: 6 }}>
+          <div style={{ flexShrink: 0 }}>
+            <div style={{ fontSize: "clamp(24px, 5vw, 32px)", fontWeight: 900, letterSpacing: "-1px" }}>${report.price.toFixed(2)}</div>
+            <div style={{ fontSize: 13, color: isPositive ? "#10b981" : "#ef4444", marginBottom: 4 }}>
               {isPositive ? "▲" : "▼"} {Math.abs(report.priceChange).toFixed(2)}%
             </div>
-            {report.priceNote && <div style={{ fontSize: 12, color: "#475569", maxWidth: 200 }}>{report.priceNote}</div>}
+            {report.priceNote && <div style={{ fontSize: 12, color: "#475569" }}>{report.priceNote}</div>}
           </div>
         </div>
       </div>
 
-      {/* Row 1 */}
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 12, marginBottom: 12 }}>
+      {/* Row 1 — stacks to 1 col on mobile */}
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 12, marginBottom: 12 }}>
         <CatalystCard catalysts={report.catalysts} />
         <EntryCard levels={report.entryStrategy.entryLevels} />
         <TakeProfitCard report={report} />
       </div>
 
-      {/* Row 2 */}
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 12, marginBottom: 12 }}>
+      {/* Row 2 — stacks to 1 col on mobile */}
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 12, marginBottom: 12 }}>
         <StopLossCard report={report} />
         {report.estimateDates && report.estimateDates.length > 0 ? (
           <EstimateDateCard dates={report.estimateDates} />
@@ -356,7 +356,7 @@ export function ReportContent({ report: baseReport }: { report: StockReport }) {
           🏛️ Fed / Macro Risk —{" "}
           <span style={{ color: RISK_COLOR[report.macroRisk.fedRisk] }}>{report.macroRisk.fedRisk}</span>
         </SectionTitle>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 10 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))", gap: 10 }}>
           {([
             ["Rate Outlook", report.macroRisk.rateOutlook],
             ["Inflation", report.macroRisk.inflationNote],
