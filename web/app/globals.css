@@ -1,16 +1,22 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #0a0a0f;
-  --card: #111118;
-  --border: #1e1e2e;
+  --bg: #06060a;
+  --card: #0c0c14;
+  --card-elevated: #111120;
+  --border: #1a1a2e;
+  --border-bright: #26264a;
   --text: #e2e8f0;
   --muted: #64748b;
+  --dim: #374151;
   --green: #10b981;
   --yellow: #f59e0b;
   --red: #ef4444;
   --blue: #3b82f6;
   --purple: #8b5cf6;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  --font-display: 'Bricolage Grotesque', system-ui, sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -18,13 +24,53 @@
 body {
   background-color: var(--bg);
   color: var(--text);
-  font-family: "Inter", "SF Pro Display", system-ui, sans-serif;
+  font-family: var(--font-body);
   margin: 0;
 }
 
+/* ─── Keyframes ─────────────────────────────────────────────────────────────── */
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 300% 50%; }
+}
+
+@keyframes livePulse {
+  0%, 100% { opacity: 1;   transform: scale(1); box-shadow: 0 0 0 0 rgba(16,185,129,0.4); }
+  50%       { opacity: 0.8; transform: scale(1.2); box-shadow: 0 0 0 4px rgba(16,185,129,0); }
+}
+
+@keyframes pulseDot {
+  0%, 100% { opacity: 1;   transform: scale(1);   box-shadow: 0 0 4px currentColor; }
+  50%       { opacity: 0.6; transform: scale(1.5); box-shadow: 0 0 12px currentColor; }
+}
+
+@keyframes barFill {
+  from { width: 0; }
+  to   { width: var(--bar-w, 100%); }
+}
+
+@keyframes cardIn {
+  from { opacity: 0; transform: translateY(12px) scale(0.98); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes scoreArc {
+  from { stroke-dasharray: 0 113; }
+}
+
+/* ─── Utility ────────────────────────────────────────────────────────────────── */
+
+.mono { font-family: var(--font-mono); }
+.display { font-family: var(--font-display); }
+
 /* ─── Responsive grids ─────────────────────────────────────────────────────── */
 
-/* 3-column report grid → 1 col on mobile, 2 col on tablet, 3 col on desktop */
 .grid-3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -32,14 +78,12 @@ body {
   margin-bottom: 12px;
 }
 
-/* 4-column macro grid */
 .grid-4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
 
-/* Dashboard card grid */
 .grid-cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -56,56 +100,16 @@ body {
   gap: 16px;
 }
 
-.hero-price {
-  text-align: right;
-  flex-shrink: 0;
-}
-
-.hero-title {
-  font-size: 40px;
-  font-weight: 900;
-  margin: 0;
-  letter-spacing: -1px;
-}
-
-/* ─── Report page padding ──────────────────────────────────────────────────── */
-
-.report-page {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
 /* ─── Mobile ≤ 640px ───────────────────────────────────────────────────────── */
 @media (max-width: 640px) {
-  .grid-3 {
-    grid-template-columns: 1fr;
-  }
-  .grid-4 {
-    grid-template-columns: 1fr 1fr;
-  }
-  .hero-title {
-    font-size: 28px;
-  }
-  .hero-price {
-    text-align: left;
-  }
-  main {
-    padding: 20px 16px !important;
-  }
-  header > div {
-    padding: 12px 16px !important;
-  }
+  .grid-3 { grid-template-columns: 1fr; }
+  .grid-4 { grid-template-columns: 1fr 1fr; }
+  main { padding: 20px 16px !important; }
+  header > div { padding: 12px 16px !important; }
 }
 
 /* ─── Tablet 641px – 900px ─────────────────────────────────────────────────── */
 @media (min-width: 641px) and (max-width: 900px) {
-  .grid-3 {
-    grid-template-columns: 1fr 1fr;
-  }
-  .grid-4 {
-    grid-template-columns: 1fr 1fr;
-  }
-  .hero-title {
-    font-size: 34px;
-  }
+  .grid-3 { grid-template-columns: 1fr 1fr; }
+  .grid-4 { grid-template-columns: 1fr 1fr; }
 }
