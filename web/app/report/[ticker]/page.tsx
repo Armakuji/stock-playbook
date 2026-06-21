@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
 import { getReport, getAllReports } from "@/lib/reports";
+import { getTickerTimeline } from "@/lib/timeline";
 import { ReportContent } from "./ReportContent";
+import { StockTimeline } from "./StockTimeline";
 
 export async function generateStaticParams() {
   const reports = getAllReports();
@@ -12,5 +14,7 @@ export default async function ReportPage({ params }: { params: Promise<{ ticker:
   const report = getReport(ticker.toUpperCase());
   if (!report) notFound();
 
-  return <ReportContent report={report} />;
+  const timelinePoints = getTickerTimeline(ticker.toUpperCase());
+
+  return <ReportContent report={report} timelinePoints={timelinePoints} />;
 }
