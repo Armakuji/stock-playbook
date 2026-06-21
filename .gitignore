@@ -1,2 +1,7 @@
 node_modules/
 .playwright/
+
+# ── PRIVATE — never commit ──────────────────────────────────────────────────
+# Trade journal holds private position/money data.
+# Lives on Mac Mini only. NEVER pushed to GitHub or Vercel.
+private/

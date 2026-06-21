@@ -44,6 +44,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const lastUpdated = getLatestReportDate();
+  const isLocal = !process.env.VERCEL;
   return (
     <html lang="en" className={`h-full ${bricolage.variable} ${dmSans.variable} ${jetbrains.variable}`}>
       <body
@@ -102,7 +103,15 @@ export default function RootLayout({
                 📡 Stock Radar Weekly
               </span>
             </a>
-            <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
+              <a href="/backtest" style={{ fontSize: 11, color: "var(--muted)", textDecoration: "none", fontFamily: "var(--font-mono, monospace)", fontWeight: 700, letterSpacing: "0.3px" }}>
+                📊 Backtest
+              </a>
+              {isLocal && (
+                <a href="/journal" style={{ fontSize: 11, color: "#f59e0b", textDecoration: "none", fontFamily: "var(--font-mono, monospace)", fontWeight: 700, letterSpacing: "0.3px" }}>
+                  📒 Journal
+                </a>
+              )}
               <span style={{ display: "inline-block", width: 7, height: 7, borderRadius: "50%", background: "#10b981", animation: "livePulse 2s ease-in-out infinite", flexShrink: 0 }} />
               <span style={{ fontSize: 12, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>Updated {lastUpdated}</span>
             </div>

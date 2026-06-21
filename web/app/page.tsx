@@ -1,14 +1,17 @@
 import { getAllReports } from "@/lib/reports";
 import { rankReports } from "@/lib/ranking";
 import { getRankingChanges } from "@/lib/ranking-history";
+import { getCatalystCalendar } from "@/lib/catalyst-calendar";
 import { StockCard } from "./StockCard";
 import { RankingChangeTable } from "./RankingChangeTable";
+import { CatalystCalendar } from "./CatalystCalendar";
 import { ThemeGroups } from "./ThemeGroups";
 
 export default function DashboardPage() {
   const reports = getAllReports();
   const ranked = rankReports(reports);
   const rankChanges = getRankingChanges();
+  const calendarEvents = getCatalystCalendar();
 
   // drift map: ticker → scoreDrift (used by StockCard)
   const driftMap: Record<string, number | null> = {};
@@ -119,6 +122,9 @@ export default function DashboardPage() {
 
       {/* ── Ranking Change section ─────────────────────────────── */}
       <RankingChangeTable rows={rankChanges} />
+
+      {/* ── Catalyst Calendar ─────────────────────────────────── */}
+      <CatalystCalendar events={calendarEvents} />
     </div>
   );
 }
