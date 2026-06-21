@@ -128,11 +128,32 @@ function PriceBar({ report, verdictColor }: { report: StockReport; verdictColor:
   );
 }
 
+// ── Conviction drift arrow ────────────────────────────────────────────────────
+function DriftIndicator({ drift }: { drift: number | null }) {
+  if (drift === null) return null;
+  const up   = drift >= 5;
+  const down = drift <= -5;
+  const color = up ? "#10b981" : down ? "#ef4444" : "#64748b";
+  const arrow = up ? "↑" : down ? "↓" : "→";
+  const label = drift > 0 ? `+${drift}` : drift === 0 ? "" : `${drift}`;
+  return (
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 1 }}>
+      <span style={{ fontSize: 13, lineHeight: 1, color, fontWeight: 800 }}>{arrow}</span>
+      {label && (
+        <span style={{ fontSize: 8, color, fontFamily: "var(--font-mono, monospace)", fontWeight: 700, lineHeight: 1 }}>
+          {label}
+        </span>
+      )}
+    </div>
+  );
+}
+
 // ── Main card ─────────────────────────────────────────────────────────────────
-export function StockCard({ report, rank, rankScore }: {
+export function StockCard({ report, rank, rankScore, scoreDrift = null }: {
   report: StockReport;
   rank: number;
   rankScore: number;
+  scoreDrift?: number | null;
 }) {
   const verdictColor = VERDICT_COLORS[report.verdict] ?? "#64748b";
   const riskColor    = RISK_COLORS[report.macroRisk.fedRisk] ?? "#64748b";
@@ -185,7 +206,10 @@ export function StockCard({ report, rank, rankScore }: {
           }}>
             {rankMeta?.label ?? `#${rank}`}
           </span>
-          <ScoreRing score={report.score ?? rankScore} color={verdictColor} />
+          <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+            <DriftIndicator drift={scoreDrift} />
+            <ScoreRing score={report.score ?? rankScore} color={verdictColor} />
+          </div>
         </div>
 
         {/* Row 2: ticker + verdict + company */}

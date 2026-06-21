@@ -19,6 +19,9 @@ export interface RankChange {
   price: number;
   priceChange: number;
   reason: string;
+  prevScore: number | null;   // null = no previous snapshot
+  scoreDrift: number | null;  // current - prev, null = NEW
+  source?: { headline: string; url: string; date: string };
 }
 
 function scoreToConfidence(score: number): "High" | "Medium" | "Low" {
@@ -121,20 +124,26 @@ export function getRankingChanges(): RankChange[] {
       ((r.entryStrategy.tp2.price - r.price) / r.price) * 100
     );
     const reason = buildReason(r, prev, delta);
+    const currScore = r.score ?? r.rankScore;
+    const prevScore = prev != null ? (prev.score ?? 0) : null;
+    const scoreDrift = prevScore != null ? currScore - prevScore : null;
     return {
       ticker: r.ticker,
       companyName: r.companyName,
       currentRank: r.rank,
       prevRank,
       delta,
-      score: r.score ?? r.rankScore,
-      confidence: scoreToConfidence(r.score ?? 0),
+      score: currScore,
+      confidence: scoreToConfidence(currScore),
       weeksInTop10: snapshotCount[r.ticker] ?? 1,
       tp2Upside,
       verdict: r.verdict,
       price: r.price,
       priceChange: r.priceChange,
       reason,
+      prevScore,
+      scoreDrift,
+      source: r.rankChangeSource,
     };
   });
 }

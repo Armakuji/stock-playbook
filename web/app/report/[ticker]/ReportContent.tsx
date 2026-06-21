@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { StockReport, Catalyst, EntryLevel, Scenario, EstimateDate } from "@/lib/types";
+import { StockReport, Catalyst, EntryLevel, Scenario, EstimateDate, CatalystSpot, ComparableCase } from "@/lib/types";
 import { applyTranslation, Lang } from "@/lib/i18n";
 
 // ─── Color maps ───────────────────────────────────────────────────────────────
@@ -308,6 +308,203 @@ function ScenariosCard({ scenarios }: { scenarios: Scenario[] }) {
   );
 }
 
+// ─── Catalyst Spot Mode ───────────────────────────────────────────────────────
+
+function CatalystSpotCard({ cs, currentPrice, lang }: { cs: CatalystSpot; currentPrice: number; lang: Lang }) {
+  const th = lang === "th";
+  const blocks: { icon: string; label: string; sublabel?: string; content: React.ReactNode }[] = [
+    {
+      icon: "📈",
+      label: "Pre-Catalyst Run-up Pattern",
+      content: (
+        <div>
+          <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 8 }}>
+            <span style={{ fontSize: 11, padding: "2px 8px", borderRadius: 5, background: "#10b98118", color: "#10b981", border: "1px solid #10b98130", fontFamily: "var(--font-mono, monospace)", fontWeight: 700 }}>
+              {cs.preRunupPct}
+            </span>
+            <span style={{ fontSize: 11, padding: "2px 8px", borderRadius: 5, background: "#3b82f618", color: "#3b82f6", border: "1px solid #3b82f630", fontFamily: "var(--font-mono, monospace)", fontWeight: 700 }}>
+              {cs.preRunupTiming}
+            </span>
+          </div>
+          <p style={{ fontSize: 12, color: "#94a3b8", lineHeight: 1.65, margin: 0 }}>{cs.preRunup}</p>
+        </div>
+      ),
+    },
+    {
+      icon: "🎲",
+      label: "Historical Post-Catalyst Move",
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+          <div style={{ background: "#10b98110", border: "1px solid #10b98130", borderRadius: 10, padding: "10px 14px" }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 4 }}>
+              <span style={{ fontSize: 11, fontWeight: 700, color: "#10b981", fontFamily: "var(--font-mono, monospace)" }}>
+                {th ? "✅ Catalyst ออกดี" : "✅ Catalyst Win"}
+              </span>
+              <span style={{ fontSize: 16, fontWeight: 800, color: "#10b981", fontFamily: "var(--font-mono, monospace)" }}>avg +{cs.postWin.avgPct}%</span>
+            </div>
+            <div style={{ display: "flex", gap: 8, marginBottom: 4 }}>
+              <span style={{ fontSize: 10, color: "#64748b", fontFamily: "var(--font-mono, monospace)" }}>range: {cs.postWin.range}</span>
+              {cs.postWin.exampleDate && <span style={{ fontSize: 10, color: "#475569", fontFamily: "var(--font-mono, monospace)" }}>· {cs.postWin.exampleDate}</span>}
+            </div>
+            <div style={{ fontSize: 11, color: "#94a3b8", lineHeight: 1.55 }}>{cs.postWin.note}</div>
+          </div>
+          <div style={{ background: "#ef444410", border: "1px solid #ef444430", borderRadius: 10, padding: "10px 14px" }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 4 }}>
+              <span style={{ fontSize: 11, fontWeight: 700, color: "#ef4444", fontFamily: "var(--font-mono, monospace)" }}>
+                {th ? "❌ Catalyst ล้มเหลว" : "❌ Catalyst Miss"}
+              </span>
+              <span style={{ fontSize: 16, fontWeight: 800, color: "#ef4444", fontFamily: "var(--font-mono, monospace)" }}>avg {cs.postLose.avgPct}%</span>
+            </div>
+            <div style={{ display: "flex", gap: 8, marginBottom: 4 }}>
+              <span style={{ fontSize: 10, color: "#64748b", fontFamily: "var(--font-mono, monospace)" }}>range: {cs.postLose.range}</span>
+              {cs.postLose.exampleDate && <span style={{ fontSize: 10, color: "#475569", fontFamily: "var(--font-mono, monospace)" }}>· {cs.postLose.exampleDate}</span>}
+            </div>
+            <div style={{ fontSize: 11, color: "#94a3b8", lineHeight: 1.55 }}>{cs.postLose.note}</div>
+          </div>
+        </div>
+      ),
+    },
+    {
+      icon: "💼",
+      label: "Spot Position Sizing",
+      sublabel: th
+        ? "แนะนำให้ใส่เงินกี่ % ของพอร์ตสำหรับ position นี้โดยเฉพาะ"
+        : "Recommended % of portfolio to allocate for this position",
+      content: (
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 16 }}>
+          <div style={{ textAlign: "center", flexShrink: 0 }}>
+            <div style={{ fontSize: 32, fontWeight: 900, color: "#8b5cf6", fontFamily: "var(--font-mono, monospace)", lineHeight: 1 }}>{cs.spotSizing.pct}%</div>
+            <div style={{ fontSize: 9, color: "var(--muted)", textTransform: "uppercase", letterSpacing: "1px", marginTop: 2 }}>
+              {th ? "ของพอร์ต" : "of portfolio"}
+            </div>
+          </div>
+          <p style={{ fontSize: 12, color: "#94a3b8", lineHeight: 1.65, margin: 0 }}>{cs.spotSizing.reason}</p>
+        </div>
+      ),
+    },
+    {
+      icon: "🛑",
+      label: th ? "Stop Loss แบบ Spot" : "Stop Loss · Spot Trade",
+      sublabel: th
+        ? "จุดตัดขาดทุนสำหรับ spot trade — แยกจาก stop loss ของ core holding"
+        : "Cut-loss levels for spot trade — separate from core holding stop loss",
+      content: (
+        <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+          <div style={{ background: "#f59e0b10", border: "1px solid #f59e0b30", borderRadius: 10, padding: "10px 14px" }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 4 }}>
+              <span style={{ fontSize: 11, fontWeight: 700, color: "#f59e0b", fontFamily: "var(--font-mono, monospace)" }}>
+                {th ? "ก่อน Catalyst" : "Before Catalyst"}
+              </span>
+              <div style={{ textAlign: "right" }}>
+                <span style={{ fontSize: 15, fontWeight: 800, color: "#f59e0b", fontFamily: "var(--font-mono, monospace)" }}>{cs.stopPreCatalyst.pct}%</span>
+                {cs.stopPreCatalyst.price && (
+                  <span style={{ fontSize: 11, color: "#f59e0b", fontFamily: "var(--font-mono, monospace)", marginLeft: 6 }}>(${cs.stopPreCatalyst.price})</span>
+                )}
+              </div>
+            </div>
+            <div style={{ fontSize: 11, color: "#94a3b8" }}>{cs.stopPreCatalyst.note}</div>
+          </div>
+          <div style={{ background: "#ef444410", border: "1px solid #ef444430", borderRadius: 10, padding: "10px 14px" }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 4 }}>
+              <span style={{ fontSize: 11, fontWeight: 700, color: "#ef4444", fontFamily: "var(--font-mono, monospace)" }}>
+                {th ? "หลัง Catalyst (ผล Bad)" : "After Catalyst (Bad Result)"}
+              </span>
+              <span style={{ fontSize: 15, fontWeight: 800, color: "#ef4444", fontFamily: "var(--font-mono, monospace)" }}>{cs.stopPostCatalyst.pct}%</span>
+            </div>
+            <div style={{ fontSize: 11, color: "#94a3b8" }}>{cs.stopPostCatalyst.note}</div>
+          </div>
+        </div>
+      ),
+    },
+  ];
+
+  return (
+    <div style={{ ...card(), marginBottom: 12 }}>
+      <SectionTitle>🎯 Catalyst Spot Mode</SectionTitle>
+      <p style={{ fontSize: 11, color: "var(--muted)", margin: "-8px 0 16px", fontFamily: "var(--font-mono, monospace)", lineHeight: 1.6 }}>
+        {th
+          ? "การวิเคราะห์สำหรับเปิด position ระยะสั้นเพื่อเล่น catalyst event โดยเฉพาะ — แยกจาก core holding"
+          : "Short-term position analysis for catalyst event plays — separate from your core holding"}
+      </p>
+      <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+        {blocks.map(({ icon, label, sublabel, content }, i) => (
+          <div key={i}>
+            <div style={{ marginBottom: 10 }}>
+              <div style={{
+                fontSize: 11, fontWeight: 700, color: "var(--text)",
+                display: "flex", alignItems: "center", gap: 6,
+                fontFamily: "var(--font-mono, monospace)",
+              }}>
+                <span>{icon}</span>
+                <span style={{ textTransform: "uppercase", letterSpacing: "0.5px", color: "var(--muted)" }}>{label}</span>
+              </div>
+              {sublabel && (
+                <div style={{ fontSize: 10, color: "#475569", marginTop: 3, fontFamily: "var(--font-mono, monospace)", paddingLeft: 18 }}>
+                  {sublabel}
+                </div>
+              )}
+            </div>
+            {content}
+            {i < blocks.length - 1 && <Divider />}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// ─── Comparable Cases ─────────────────────────────────────────────────────────
+
+function ComparableCasesCard({ cases, currentTicker, lang }: { cases: ComparableCase[]; currentTicker: string; lang: Lang }) {
+  const th = lang === "th";
+  const OUTCOME_STYLE: Record<string, { bg: string; color: string; label: string }> = {
+    good:  { bg: "#10b98118", color: "#10b981", label: th ? "✅ ดี"      : "✅ Good"  },
+    mixed: { bg: "#f59e0b18", color: "#f59e0b", label: th ? "⚡ ปนกัน"  : "⚡ Mixed" },
+    bad:   { bg: "#ef444418", color: "#ef4444", label: th ? "❌ แย่"     : "❌ Bad"   },
+  };
+
+  return (
+    <div style={{ ...card(), marginBottom: 12 }}>
+      <SectionTitle>🔍 Similar-Catalyst Comparable Check</SectionTitle>
+      <p style={{ fontSize: 11, color: "var(--muted)", margin: "0 0 14px", fontFamily: "var(--font-mono, monospace)" }}>
+        {th
+          ? "หุ้นอื่นที่เคยผ่าน catalyst แบบเดียวกัน — ใช้ calibrate ว่า target +30%+ realistic แค่ไหน"
+          : "Stocks that went through similar catalyst events — calibrate whether the +30%+ target is realistic"}
+      </p>
+      <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+        {cases.map((c, i) => {
+          const s = OUTCOME_STYLE[c.outcome] ?? OUTCOME_STYLE.mixed;
+          const moveColor = c.movePct >= 0 ? "#10b981" : "#ef4444";
+          return (
+            <div key={i} style={{
+              background: "#ffffff05", border: "1px solid var(--border)", borderRadius: 10, padding: "12px 14px",
+              borderLeft: `3px solid ${s.color}`,
+            }}>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 6 }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                  <span style={{ fontSize: 13, fontWeight: 800, color: "var(--text)", fontFamily: "var(--font-display, sans-serif)" }}>{c.ticker}</span>
+                  <span style={{ fontSize: 10, fontWeight: 700, padding: "1px 7px", borderRadius: 4, background: s.bg, color: s.color, border: `1px solid ${s.color}30`, fontFamily: "var(--font-mono, monospace)" }}>{s.label}</span>
+                  <span style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>{c.date}</span>
+                </div>
+                <div style={{ textAlign: "right", flexShrink: 0 }}>
+                  <div style={{ fontSize: 16, fontWeight: 800, color: moveColor, fontFamily: "var(--font-mono, monospace)" }}>
+                    {c.movePct >= 0 ? "+" : ""}{c.movePct}%
+                  </div>
+                  <div style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>
+                    {th ? `ใน ${c.days} วัน` : `in ${c.days} day${c.days !== 1 ? "s" : ""}`}
+                  </div>
+                </div>
+              </div>
+              <div style={{ fontSize: 11, color: "#64748b", marginBottom: 4, fontFamily: "var(--font-mono, monospace)" }}>{c.event}</div>
+              <div style={{ fontSize: 11, color: "#94a3b8", lineHeight: 1.55 }}>{c.note}</div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
 // ─── Language Toggle ──────────────────────────────────────────────────────────
 
 function LangToggle({ lang, hasThai, onChange }: { lang: Lang; hasThai: boolean; onChange: (l: Lang) => void }) {
@@ -437,7 +634,7 @@ export function ReportContent({ report: baseReport }: { report: StockReport }) {
         <TakeProfitCard report={report} />
       </div>
 
-      {/* Row 2: Stop Loss · Estimate Date · Scenarios */}
+      {/* Row 2: Stop Loss · Estimate Date · Scenarios — directly below Row 1 */}
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 12, marginBottom: 12 }}>
         <StopLossCard report={report} />
         {report.estimateDates && report.estimateDates.length > 0 ? (
@@ -462,12 +659,22 @@ export function ReportContent({ report: baseReport }: { report: StockReport }) {
         )}
       </div>
 
+      {/* Catalyst Spot Mode — shown if catalystSpot data present */}
+      {report.catalystSpot && (
+        <CatalystSpotCard cs={report.catalystSpot} currentPrice={report.price} lang={lang} />
+      )}
+
       {/* Macro */}
       <div style={{ ...card(), marginBottom: 12 }}>
         <SectionTitle>
           🏛️ Fed / Macro Risk —{" "}
           <span style={{ color: fedColor, fontFamily: "var(--font-mono, monospace)" }}>{report.macroRisk.fedRisk}</span>
         </SectionTitle>
+        <p style={{ fontSize: 11, color: "var(--muted)", margin: "-8px 0 16px", fontFamily: "var(--font-mono, monospace)", lineHeight: 1.6 }}>
+          {lang === "th"
+            ? "ประเมินว่าสภาพแวดล้อม Fed / อัตราดอกเบี้ย / เงินเฟ้อ กระทบหุ้นนี้มากแค่ไหน — LOW = เสี่ยงน้อย, HIGH = ระวัง"
+            : "Assesses how Fed policy / interest rates / inflation affect this stock — LOW = minimal risk, HIGH = proceed with caution"}
+        </p>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))", gap: 10 }}>
           {([
             ["Rate Outlook", report.macroRisk.rateOutlook],
@@ -492,6 +699,11 @@ export function ReportContent({ report: baseReport }: { report: StockReport }) {
       {report.analystTargets && report.analystTargets.length > 0 && (
         <div style={{ ...card(), marginBottom: 12 }}>
           <SectionTitle>🎯 Analyst Targets</SectionTitle>
+          <p style={{ fontSize: 11, color: "var(--muted)", margin: "-8px 0 16px", fontFamily: "var(--font-mono, monospace)", lineHeight: 1.6 }}>
+            {lang === "th"
+              ? "ราคาเป้าหมายจากนักวิเคราะห์ Wall Street — ใช้ cross-check ว่า TP ที่ตั้งไว้สมเหตุสมผลแค่ไหน"
+              : "Price targets from Wall Street analysts — cross-check whether our TP levels are reasonable"}
+          </p>
           {report.analystTargets.map((a, i) => (
             <div key={i} style={{
               display: "flex", justifyContent: "space-between", alignItems: "center",
@@ -508,6 +720,11 @@ export function ReportContent({ report: baseReport }: { report: StockReport }) {
             </div>
           ))}
         </div>
+      )}
+
+      {/* Comparable Cases — shown if data present */}
+      {report.comparableCases && report.comparableCases.length > 0 && (
+        <ComparableCasesCard cases={report.comparableCases} currentTicker={report.ticker} lang={lang} />
       )}
 
       {/* Verdict */}
@@ -533,7 +750,7 @@ export function ReportContent({ report: baseReport }: { report: StockReport }) {
           ))}
         </div>
         <p style={{ fontSize: 11, color: "#475569", marginTop: 12, marginBottom: 0 }}>
-          Generated {new Date(report.generatedAt).toLocaleString()} · Not financial advice
+          Generated {report.generatedAt.slice(0, 10)} · Not financial advice
         </p>
       </div>
     </div>

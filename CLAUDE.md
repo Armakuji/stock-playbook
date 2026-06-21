@@ -28,7 +28,16 @@ Every analysis follows a strict research-first workflow before generating any ou
 
 After generating any stock report, you MUST:
 
-### Step 1 — Save JSON to web/data/reports/
+### Step 1 — Research before writing JSON
+
+Before writing the JSON, fetch and verify:
+- Live price, market cap, 52-week range
+- Most recent earnings / catalyst outcome
+- **catalystSpot**: search historical % moves for the same catalyst type in this sector (e.g. "NVDA earnings beat historical move %") — use real numbers, ห้าม fabricate
+- **comparableCases**: find 2–3 real historical stocks that passed a similar event — use actual ticker, date, % move from search
+- **rankChangeSource**: if verdict or score changed from last report, search for news that drove the change
+
+### Step 2 — Save JSON to web/data/reports/
 
 Save the report as JSON to:
 `web/data/reports/<TICKER>_<YYYYMMDD>.json`
@@ -98,6 +107,46 @@ The JSON must follow this exact TypeScript type (StockReport in web/lib/types.ts
     "verdict": "One-line verdict in English",
     "approach": "DCA"
   },
+  "catalystSpot": {
+    "catalystType": "earnings_beat | satellite_launch | fda_decision | foundry_validation | delivery_beat | partnership_win",
+    "preRunup": "อธิบาย pattern การวิ่งก่อน event โดยอ้างอิงจากประวัติ sector เดียวกัน",
+    "preRunupTiming": "เช่น '1–2 สัปดาห์ก่อน event'",
+    "preRunupPct": "เช่น '+8–15%'",
+    "postWin": {
+      "avgPct": 15,
+      "range": "+10% to +24%",
+      "note": "อ้างอิงตัวเลขจริงจากประวัติ — ห้าม fabricate",
+      "exampleDate": "เช่น 'Dec 2024' หรือ 'Q3 FY24 · May 2024' — วันที่ตัวอย่างที่ดีที่สุดที่ใช้อ้างอิงใน note"
+    },
+    "postLose": {
+      "avgPct": -12,
+      "range": "-8% to -20%",
+      "note": "อ้างอิงตัวเลขจริง เช่น กรณีที่ catalyst ล้มเหลวในอดีต",
+      "exampleDate": "เช่น 'Aug 2022' — วันที่กรณีล้มเหลวที่ใช้อ้างอิง"
+    },
+    "spotSizing": {
+      "pct": 5,
+      "reason": "อธิบายว่าทำไม sizing เท่านี้ อ้างอิง conviction score + catalyst clarity"
+    },
+    "stopPreCatalyst": { "pct": -10, "price": 0, "note": "ระดับที่ถ้าหลุดแปลว่า thesis เปลี่ยน" },
+    "stopPostCatalyst": { "pct": -15, "note": "ถ้า catalyst ออกมาแย่ ออกเมื่อไหร่" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "TICKER",
+      "event": "ชื่อ event เดิมที่เคยเกิดขึ้น",
+      "date": "Mon YYYY",
+      "movePct": 20,
+      "days": 2,
+      "outcome": "good",
+      "note": "อธิบายว่าทำไม case นี้ comparable และ takeaway คืออะไร"
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "ชื่อข่าวที่ทำให้ verdict/score เปลี่ยน (ถ้าหาได้จริง)",
+    "url": "https://...",
+    "date": "Mon YYYY"
+  },
   "sources": ["https://..."],
   "i18n": {
     "th": {
@@ -140,6 +189,8 @@ The JSON must follow this exact TypeScript type (StockReport in web/lib/types.ts
 **badgeColor values:** `"red"` | `"yellow"` | `"green"` | `"blue"`
 **highlight values:** `"blue"` | `"yellow"`
 **approach values:** `"DCA"` | `"Lump Sum"` | `"Scale In"`
+**catalystType values:** `"earnings_beat"` | `"satellite_launch"` | `"fda_decision"` | `"foundry_validation"` | `"delivery_beat"` | `"partnership_win"` | `"product_launch"` | `"regulatory_approval"`
+**outcome values:** `"good"` | `"mixed"` | `"bad"`
 
 ### Step 2 — Git commit and push
 

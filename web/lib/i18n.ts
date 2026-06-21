@@ -1,4 +1,4 @@
-import { StockReport, ReportTranslation } from "./types";
+import { StockReport, ReportTranslation, CatalystSpotTranslation } from "./types";
 
 export type Lang = "en" | "th";
 
@@ -58,6 +58,26 @@ export function applyTranslation(report: StockReport, lang: Lang): StockReport {
       ...d,
       event: t.estimateDates?.[i]?.event ?? d.event,
       note: t.estimateDates?.[i]?.note ?? d.note,
+    })),
+
+    catalystSpot: report.catalystSpot ? (() => {
+      const cs = report.catalystSpot!;
+      const ct: CatalystSpotTranslation | undefined = t.catalystSpot;
+      return {
+        ...cs,
+        preRunup:      ct?.preRunup      ?? cs.preRunup,
+        preRunupTiming: ct?.preRunupTiming ?? cs.preRunupTiming,
+        postWin:  { ...cs.postWin,  note: ct?.postWin?.note  ?? cs.postWin.note  },
+        postLose: { ...cs.postLose, note: ct?.postLose?.note ?? cs.postLose.note },
+        spotSizing:       { ...cs.spotSizing,       reason: ct?.spotSizing?.reason             ?? cs.spotSizing.reason       },
+        stopPreCatalyst:  { ...cs.stopPreCatalyst,  note:   ct?.stopPreCatalyst?.note          ?? cs.stopPreCatalyst.note    },
+        stopPostCatalyst: { ...cs.stopPostCatalyst, note:   ct?.stopPostCatalyst?.note         ?? cs.stopPostCatalyst.note   },
+      };
+    })() : undefined,
+
+    comparableCases: report.comparableCases?.map((c, i) => ({
+      ...c,
+      note: t.comparableCases?.[i]?.note ?? c.note,
     })),
   };
 }

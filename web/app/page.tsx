@@ -3,11 +3,16 @@ import { rankReports } from "@/lib/ranking";
 import { getRankingChanges } from "@/lib/ranking-history";
 import { StockCard } from "./StockCard";
 import { RankingChangeTable } from "./RankingChangeTable";
+import { ThemeGroups } from "./ThemeGroups";
 
 export default function DashboardPage() {
   const reports = getAllReports();
   const ranked = rankReports(reports);
   const rankChanges = getRankingChanges();
+
+  // drift map: ticker → scoreDrift (used by StockCard)
+  const driftMap: Record<string, number | null> = {};
+  for (const rc of rankChanges) driftMap[rc.ticker] = rc.scoreDrift;
 
   const buys  = ranked.filter((r) => r.verdict === "BUY").length;
   const holds = ranked.filter((r) => r.verdict === "HOLD").length;
@@ -100,7 +105,7 @@ export default function DashboardPage() {
         </div>
       </div>
 
-      {/* ── Card grid ─────────────────────────────────────────── */}
+      {/* ── Card grid — grouped by theme ──────────────────────── */}
       {ranked.length === 0 ? (
         <div style={{ textAlign: "center", padding: "80px 0", color: "var(--muted)" }}>
           <div style={{ fontSize: 32, marginBottom: 12 }}>📊</div>
@@ -109,13 +114,7 @@ export default function DashboardPage() {
           </p>
         </div>
       ) : (
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 16 }}>
-          {ranked.map((r, idx) => (
-            <div key={`${r.ticker}-${r.generatedAt}`} style={{ animation: `cardIn 0.4s ease ${idx * 0.07}s both` }}>
-              <StockCard report={r} rank={r.rank} rankScore={r.rankScore} />
-            </div>
-          ))}
-        </div>
+        <ThemeGroups ranked={ranked} driftMap={driftMap} />
       )}
 
       {/* ── Ranking Change section ─────────────────────────────── */}

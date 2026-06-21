@@ -13,9 +13,24 @@
   "score": 62,
   "summary": "Intel's 18A node has been validated and the foundry turnaround is now confirmed — stock up 500%+ from the lows. At $134, much of the re-rating is priced in. The question is sustained foundry customer wins (MSFT, Apple) and whether Intel can hold margin expansion. Upside exists but the easy money is made.",
   "catalysts": [
-    { "icon": "🏭", "name": "18A Foundry Customer Wins", "description": "Microsoft, Amazon custom chip designs on 18A — key read-through for foundry P&L in H2 2026.", "dotColor": "yellow" },
-    { "icon": "💰", "name": "CHIPS Act Disbursements", "description": "$8.5B in CHIPS Act grants flowing — reduces capex burden and de-risks fab build-out.", "dotColor": "green" },
-    { "icon": "🖥️", "name": "Arrow Lake / Nova Lake Ramp", "description": "Client CPU recovery + market share re-gain vs AMD in the $1,000+ workstation segment.", "dotColor": "yellow" }
+    {
+      "icon": "🏭",
+      "name": "18A Foundry Customer Wins",
+      "description": "Microsoft, Amazon custom chip designs on 18A — key read-through for foundry P&L in H2 2026.",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "💰",
+      "name": "CHIPS Act Disbursements",
+      "description": "$8.5B in CHIPS Act grants flowing — reduces capex burden and de-risks fab build-out.",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🖥️",
+      "name": "Arrow Lake / Nova Lake Ramp",
+      "description": "Client CPU recovery + market share re-gain vs AMD in the $1,000+ workstation segment.",
+      "dotColor": "yellow"
+    }
   ],
   "risks": [
     "TSMC still 2 generations ahead on leading-edge density — yield ramp on 18A is unproven at scale",
@@ -25,20 +40,67 @@
     "Management track record: new CEO Tan Lip-Bu must avoid prior execution stumbles"
   ],
   "estimateDates": [
-    { "event": "Q2 2026 Earnings", "dateRange": "Jul 24, 2026", "note": "First clean read on 18A yield progress", "est": "est. EPS $0.42", "highlight": "blue" },
-    { "event": "Intel Foundry Direct Connect", "dateRange": "Sep 2026", "note": "Customer pipeline & design-win announcements", "highlight": "yellow" }
+    {
+      "event": "Q2 2026 Earnings",
+      "dateRange": "Jul 24, 2026",
+      "note": "First clean read on 18A yield progress",
+      "est": "est. EPS $0.42",
+      "highlight": "blue"
+    },
+    {
+      "event": "Intel Foundry Direct Connect",
+      "dateRange": "Sep 2026",
+      "note": "Customer pipeline & design-win announcements",
+      "highlight": "yellow"
+    }
   ],
   "scenarios": [
-    { "label": "Bear", "color": "red",    "pct": -20, "price": 107 },
-    { "label": "Base", "color": "yellow", "pct": 12,  "price": 150 },
-    { "label": "Bull", "color": "green",  "pct": 34,  "price": 180 },
-    { "label": "Moon", "color": "purple", "pct": 64,  "price": 220 }
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -20,
+      "price": 107
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 12,
+      "price": 150
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 34,
+      "price": 180
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 64,
+      "price": 220
+    }
   ],
   "analystTargets": [
-    { "firm": "Wedbush",     "target": 200, "rating": "Outperform" },
-    { "firm": "JPMorgan",    "target": 155, "rating": "Neutral" },
-    { "firm": "Barclays",    "target": 110, "rating": "Underweight" },
-    { "firm": "KeyBanc",     "target": 175, "rating": "Overweight" }
+    {
+      "firm": "Wedbush",
+      "target": 200,
+      "rating": "Outperform"
+    },
+    {
+      "firm": "JPMorgan",
+      "target": 155,
+      "rating": "Neutral"
+    },
+    {
+      "firm": "Barclays",
+      "target": 110,
+      "rating": "Underweight"
+    },
+    {
+      "firm": "KeyBanc",
+      "target": 175,
+      "rating": "Overweight"
+    }
   ],
   "macroRisk": {
     "fedRisk": "MEDIUM",
@@ -49,17 +111,53 @@
   },
   "entryStrategy": {
     "entryLevels": [
-      { "label": "Entry 1", "level": 134,  "note": "Current price — hold or trim partial", "timing": "Now"      },
-      { "label": "Entry 2", "level": 120, "rangeMax": 125, "note": "Dip zone, 10% pullback, good add point", "timing": "On dip", "preferred": true },
-      { "label": "Entry 3", "level": 105,  "note": "Pre-earnings flush support",  "timing": "Deep dip" }
+      {
+        "label": "Entry 1",
+        "level": 134,
+        "note": "Current price — hold or trim partial",
+        "timing": "Now"
+      },
+      {
+        "label": "Entry 2",
+        "level": 120,
+        "rangeMax": 125,
+        "note": "Dip zone, 10% pullback, good add point",
+        "timing": "On dip",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 105,
+        "note": "Pre-earnings flush support",
+        "timing": "Deep dip"
+      }
     ],
-    "tp1": { "price": 150, "pct": 11.8, "note": "Near-term analyst consensus" },
-    "tp2": { "price": 180, "pct": 34.2, "note": "Foundry wins fully priced" },
-    "tp3": { "price": 220, "pct": 64.0, "note": "Full foundry P&L positive · 2027", "moon": true },
+    "tp1": {
+      "price": 150,
+      "pct": 11.8,
+      "note": "Near-term analyst consensus"
+    },
+    "tp2": {
+      "price": 180,
+      "pct": 34.2,
+      "note": "Foundry wins fully priced"
+    },
+    "tp3": {
+      "price": 220,
+      "pct": 64.0,
+      "note": "Full foundry P&L positive · 2027",
+      "moon": true
+    },
     "stopLoss": {
-      "tight":    120, "tightPct": -10.6, "tightNote": "Below key support",
-      "hard":     100, "hardPct":  -25.4, "hardNote":  "Turnaround thesis invalidated",
-      "riskReward": "3.2 : 1", "rrNote": "Tight stop vs TP2", "rrWarning": "Good R/R if dip-buying"
+      "tight": 120,
+      "tightPct": -10.6,
+      "tightNote": "Below key support",
+      "hard": 100,
+      "hardPct": -25.4,
+      "hardNote": "Turnaround thesis invalidated",
+      "riskReward": "3.2 : 1",
+      "rrNote": "Tight stop vs TP2",
+      "rrWarning": "Good R/R if dip-buying"
     },
     "verdict": "HOLD at current $134 — don't chase. Better entry on dips to $120-125. Still speculative on foundry execution.",
     "approach": "Scale In"
@@ -75,28 +173,169 @@
       "priceNote": "Turnaround ยืนยันแล้ว · 18A node กำลัง ramp · foundry thesis กำลัง mature",
       "scoreLabel": "Speculative",
       "catalysts": [
-        { "name": "🏭 ชนะลูกค้า 18A Foundry", "description": "Microsoft, Amazon ออกแบบ chip บน 18A — ตัวชี้วัดสำคัญของ foundry P&L ใน H2 2026" },
-        { "name": "💰 CHIPS Act เงินทยอยเข้า", "description": "เงินช่วยเหลือ CHIPS Act $8.5B กำลังทยอยเข้า — ลดภาระ capex และความเสี่ยงในการสร้างโรงงาน" },
-        { "name": "🖥️ Arrow Lake / Nova Lake Ramp", "description": "ฟื้นตัว CPU ฝั่ง client + ชิง market share กลับจาก AMD ใน segment workstation $1,000+" }
+        {
+          "name": "🏭 ชนะลูกค้า 18A Foundry",
+          "description": "Microsoft, Amazon ออกแบบ chip บน 18A — ตัวชี้วัดสำคัญของ foundry P&L ใน H2 2026"
+        },
+        {
+          "name": "💰 CHIPS Act เงินทยอยเข้า",
+          "description": "เงินช่วยเหลือ CHIPS Act $8.5B กำลังทยอยเข้า — ลดภาระ capex และความเสี่ยงในการสร้างโรงงาน"
+        },
+        {
+          "name": "🖥️ Arrow Lake / Nova Lake Ramp",
+          "description": "ฟื้นตัว CPU ฝั่ง client + ชิง market share กลับจาก AMD ใน segment workstation $1,000+"
+        }
       ],
-      "risks": ["TSMC ยังนำหน้า 2 generation ใน leading-edge — yield บน 18A ยังไม่พิสูจน์ที่ scale", "AMD ครอง PC + server; Zen 5 แข็งแกร่งใน HPC", "Foundry revenue ยังน้อยกว่า 10% ของรายได้รวม — ความเสี่ยงในการ execute customer ramp", "Gross margin target 40% vs ปัจจุบัน ~36% — การฟื้นตัวช้า", "ประวัติผู้บริหาร: CEO Tan Lip-Bu ใหม่ ต้องหลีกเลี่ยงความผิดพลาดในอดีต"],
-      "macroRisk": { "rateOutlook": "Fed หยุดที่ 4.25–4.50% — บริษัทที่ใช้ capex สูงอย่าง Intel ถูกกดดันเล็กน้อย", "inflationNote": "ต้นทุน PPI semiconductor inputs ลดลง — ช่วย cost base ในการผลิต chip", "sectorImpact": "ความเสี่ยงนโยบาย US-China: Intel พ้นจาก H20-equivalent แต่ CHIPS Act foundry ในประเทศเป็นบวก", "summary": "มหภาคเป็นกลาง ความเสี่ยงหลักคือการ execute ภายใน ไม่ใช่ดอกเบี้ย CHIPS Act เป็น backstop นโยบายที่มั่นคง" },
+      "risks": [
+        "TSMC ยังนำหน้า 2 generation ใน leading-edge — yield บน 18A ยังไม่พิสูจน์ที่ scale",
+        "AMD ครอง PC + server; Zen 5 แข็งแกร่งใน HPC",
+        "Foundry revenue ยังน้อยกว่า 10% ของรายได้รวม — ความเสี่ยงในการ execute customer ramp",
+        "Gross margin target 40% vs ปัจจุบัน ~36% — การฟื้นตัวช้า",
+        "ประวัติผู้บริหาร: CEO Tan Lip-Bu ใหม่ ต้องหลีกเลี่ยงความผิดพลาดในอดีต"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed หยุดที่ 4.25–4.50% — บริษัทที่ใช้ capex สูงอย่าง Intel ถูกกดดันเล็กน้อย",
+        "inflationNote": "ต้นทุน PPI semiconductor inputs ลดลง — ช่วย cost base ในการผลิต chip",
+        "sectorImpact": "ความเสี่ยงนโยบาย US-China: Intel พ้นจาก H20-equivalent แต่ CHIPS Act foundry ในประเทศเป็นบวก",
+        "summary": "มหภาคเป็นกลาง ความเสี่ยงหลักคือการ execute ภายใน ไม่ใช่ดอกเบี้ย CHIPS Act เป็น backstop นโยบายที่มั่นคง"
+      },
       "entryStrategy": {
         "verdict": "HOLD ที่ $134 — ไม่ต้องไล่ราคา รอซื้อเพิ่มเมื่อย่อลงมา $120-125 ยังเป็น Speculative เรื่อง foundry execution",
         "entryLevels": [
-          { "note": "ราคาปัจจุบัน — ถือหรือขายบางส่วน", "timing": "ตอนนี้" },
-          { "note": "โซนย่อ ลง 10% จุดเพิ่มที่ดี", "timing": "ถ้าย่อ" },
-          { "note": "แนวรับก่อน earnings", "timing": "ถ้าร่วงหนัก" }
+          {
+            "note": "ราคาปัจจุบัน — ถือหรือขายบางส่วน",
+            "timing": "ตอนนี้"
+          },
+          {
+            "note": "โซนย่อ ลง 10% จุดเพิ่มที่ดี",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "แนวรับก่อน earnings",
+            "timing": "ถ้าร่วงหนัก"
+          }
         ],
-        "tp1": { "note": "ใกล้ consensus นักวิเคราะห์ระยะสั้น" },
-        "tp2": { "note": "ชัยชนะ foundry ตีราคาเต็ม" },
-        "tp3": { "note": "Foundry P&L เป็นบวกเต็มตัว · 2027" },
-        "stopLoss": { "tightNote": "ต่ำกว่าแนวรับสำคัญ", "hardNote": "thesis turnaround เสีย", "rrNote": "Tight stop เทียบ TP2", "rrWarning": "R/R ดีถ้าซื้อตอนย่อ" }
+        "tp1": {
+          "note": "ใกล้ consensus นักวิเคราะห์ระยะสั้น"
+        },
+        "tp2": {
+          "note": "ชัยชนะ foundry ตีราคาเต็ม"
+        },
+        "tp3": {
+          "note": "Foundry P&L เป็นบวกเต็มตัว · 2027"
+        },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่าแนวรับสำคัญ",
+          "hardNote": "thesis turnaround เสีย",
+          "rrNote": "Tight stop เทียบ TP2",
+          "rrWarning": "R/R ดีถ้าซื้อตอนย่อ"
+        }
       },
       "estimateDates": [
-        { "event": "ประกาศผล Q2 2026", "note": "อ่านความคืบหน้า 18A yield เป็นครั้งแรก" },
-        { "event": "Intel Foundry Direct Connect", "note": "ประกาศ customer pipeline และ design-win" }
+        {
+          "event": "ประกาศผล Q2 2026",
+          "note": "อ่านความคืบหน้า 18A yield เป็นครั้งแรก"
+        },
+        {
+          "event": "Intel Foundry Direct Connect",
+          "note": "ประกาศ customer pipeline และ design-win"
+        }
+      ],
+      "catalystSpot": {
+        "preRunupTiming": "1–3 สัปดาห์ก่อน announcement",
+        "preRunup": "Intel Foundry catalyst ไม่ใช่ binary single-day event เหมือน earnings — มักเป็น multi-week move หลัง milestone ข่าวใหญ่ เข้าก่อนเพื่อ capture การดริฟท์ ไม่ใช่รอ spike",
+        "postWin": {
+          "note": "INTC turnaround catalyst history: ประกาศ 18A yield milestone สำเร็จ → +20–30% rapid. MSFT 18A custom chip win → คาดว่า +25–40% จาก current level"
+        },
+        "postLose": {
+          "note": "18A yield miss หรือ customer ยกเลิก order = severe de-rating ตัวอย่าง: INTC Q2 2024 earnings miss → -29% overnight ตอนที่ foundry thesis ยังไม่ confirmed"
+        },
+        "spotSizing": {
+          "reason": "HOLD ไม่ใช่ BUY, turnaround confirmed แต่ execution risk ยังสูง — ลด sizing เหลือ 4% เพราะ catalyst date ไม่ชัดเจนและ spot downside ไม่ limited"
+        },
+        "stopPreCatalyst": {
+          "note": "หลุด $120 = below preferred entry zone, market บอกว่า foundry thesis ถูก price out ออกก่อน"
+        },
+        "stopPostCatalyst": {
+          "note": "ถ้าข่าว foundry ออกมาแย่ (yield miss, customer cancel) ออกเร็วไม่ต้องรอ — INTC สามารถ gap down -20%+ ใน 1 วัน"
+        }
+      },
+      "comparableCases": [
+        {
+          "note": "ตอน INTC ประกาศ foundry spin-off ราคาขึ้น +9% แต่ทรงตัวสั้น — ตลาดรอ proof of concept ก่อนให้ full re-rating"
+        },
+        {
+          "note": "GFS +14% หลัง US government contract — comparable กับ INTC CHIPS Act catalyst แต่ GFS smaller MCap ทำให้ INTC ต้องการ catalyst ใหญ่กว่าเพื่อให้ % move เท่ากัน"
+        },
+        {
+          "note": "TSMC +10% หลัง Arizona production milestone — แสดงว่า foundry execution confirmation ให้ multiple expansion"
+        }
       ]
     }
+  },
+  "catalystSpot": {
+    "catalystType": "foundry_validation",
+    "preRunup": "Intel Foundry catalyst is not a single-day binary event like earnings — it tends to be a multi-week drift after major milestone news. Enter early to capture the drift, not just the spike.",
+    "preRunupTiming": "1–3 weeks before announcement",
+    "preRunupPct": "+15–30%",
+    "postWin": {
+      "avgPct": 25,
+      "range": "+15% to +50%",
+      "note": "INTC turnaround catalyst history: 18A yield milestone success → +20–30% rapid re-rating. MSFT 18A custom chip win → expected +25–40% from current level",
+      "exampleDate": "Sep 2023"
+    },
+    "postLose": {
+      "avgPct": -20,
+      "range": "-15% to -35%",
+      "note": "18A yield miss or customer order cancellation = severe de-rating. Example: INTC Q2 2024 earnings miss → -29% overnight when foundry thesis was unconfirmed",
+      "exampleDate": "Aug 2024"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "HOLD not BUY — turnaround confirmed but execution risk still high. Sizing at 4% because catalyst date is unclear and spot downside is unlimited."
+    },
+    "stopPreCatalyst": {
+      "pct": -10,
+      "price": 120,
+      "note": "Break below $120 = below preferred entry zone, market is pricing out the foundry thesis. Exit early."
+    },
+    "stopPostCatalyst": {
+      "pct": -15,
+      "note": "If foundry news is bad (yield miss, customer cancel) — exit fast, no waiting. INTC can gap down -20%+ in 1 day."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "INTC",
+      "event": "Foundry business separation + 18A node announcement",
+      "date": "Sep 2023",
+      "movePct": 9,
+      "days": 2,
+      "outcome": "mixed",
+      "note": "INTC +9% when foundry spin-off was announced but gains were short-lived — market is waiting for proof of concept before giving a full re-rating."
+    },
+    {
+      "ticker": "GFS",
+      "event": "GlobalFoundries CHIPS Act wafer supply agreement",
+      "date": "Q1 2023",
+      "movePct": 14,
+      "days": 5,
+      "outcome": "good",
+      "note": "GlobalFoundries +14% after US government contract — comparable to INTC CHIPS Act catalyst, but smaller market cap so INTC needs bigger news for same % move."
+    },
+    {
+      "ticker": "TSM",
+      "event": "Arizona fab milestone + Apple A18 production ramp",
+      "date": "Apr 2024",
+      "movePct": 10,
+      "days": 3,
+      "outcome": "good",
+      "note": "TSMC +10% after Arizona production milestone — confirms foundry execution milestones expand multiples."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Intel 18A Process Node Hits Yield Milestone, Foundry Customers Expand Orders",
+    "url": "https://www.intel.com/content/www/us/en/newsroom/news/intel-foundry-news.html",
+    "date": "Jun 2026"
   }
 }

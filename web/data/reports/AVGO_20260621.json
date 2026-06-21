@@ -42,20 +42,67 @@
     "US-China trade restrictions could hit legacy semiconductor revenue"
   ],
   "estimateDates": [
-    { "event": "Q3 FY26 Earnings", "dateRange": "Sep 4, 2026", "note": "XPU revenue ramp confirmation", "est": "est. EPS $1.65", "highlight": "blue" },
-    { "event": "AI XPU Design Win", "dateRange": "H2 2026", "note": "New hyperscaler partnership expected", "highlight": "yellow" }
+    {
+      "event": "Q3 FY26 Earnings",
+      "dateRange": "Sep 4, 2026",
+      "note": "XPU revenue ramp confirmation",
+      "est": "est. EPS $1.65",
+      "highlight": "blue"
+    },
+    {
+      "event": "AI XPU Design Win",
+      "dateRange": "H2 2026",
+      "note": "New hyperscaler partnership expected",
+      "highlight": "yellow"
+    }
   ],
   "scenarios": [
-    { "label": "Bear",  "color": "red",    "pct": -18, "price": 337 },
-    { "label": "Base",  "color": "yellow", "pct": 12,  "price": 461 },
-    { "label": "Bull",  "color": "green",  "pct": 22,  "price": 502 },
-    { "label": "Moon",  "color": "purple", "pct": 46,  "price": 600 }
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -18,
+      "price": 337
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 12,
+      "price": 461
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 22,
+      "price": 502
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 46,
+      "price": 600
+    }
   ],
   "analystTargets": [
-    { "firm": "Goldman Sachs",  "target": 520, "rating": "Buy" },
-    { "firm": "Morgan Stanley", "target": 510, "rating": "Overweight" },
-    { "firm": "Citi",           "target": 480, "rating": "Buy" },
-    { "firm": "Wall St Consensus (26)", "target": 502, "rating": "Buy" }
+    {
+      "firm": "Goldman Sachs",
+      "target": 520,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Morgan Stanley",
+      "target": 510,
+      "rating": "Overweight"
+    },
+    {
+      "firm": "Citi",
+      "target": 480,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Wall St Consensus (26)",
+      "target": 502,
+      "rating": "Buy"
+    }
   ],
   "macroRisk": {
     "fedRisk": "LOW",
@@ -66,17 +113,53 @@
   },
   "entryStrategy": {
     "entryLevels": [
-      { "label": "Entry 1", "level": 411,  "note": "Current price — momentum entry",    "timing": "Now"           },
-      { "label": "Entry 2", "level": 380, "rangeMax": 390, "note": "Post-earnings dip zone", "timing": "On dip", "preferred": true },
-      { "label": "Entry 3", "level": 350,  "note": "Key support / 200-day MA area",     "timing": "Deep dip"      }
+      {
+        "label": "Entry 1",
+        "level": 411,
+        "note": "Current price — momentum entry",
+        "timing": "Now"
+      },
+      {
+        "label": "Entry 2",
+        "level": 380,
+        "rangeMax": 390,
+        "note": "Post-earnings dip zone",
+        "timing": "On dip",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 350,
+        "note": "Key support / 200-day MA area",
+        "timing": "Deep dip"
+      }
     ],
-    "tp1": { "price": 460, "pct": 11.8, "note": "Near-term resistance / Base case"      },
-    "tp2": { "price": 502, "pct": 22.0, "note": "Analyst consensus target"              },
-    "tp3": { "price": 600, "pct": 45.8, "note": "Full AI XPU monetization · 2027", "moon": true },
+    "tp1": {
+      "price": 460,
+      "pct": 11.8,
+      "note": "Near-term resistance / Base case"
+    },
+    "tp2": {
+      "price": 502,
+      "pct": 22.0,
+      "note": "Analyst consensus target"
+    },
+    "tp3": {
+      "price": 600,
+      "pct": 45.8,
+      "note": "Full AI XPU monetization · 2027",
+      "moon": true
+    },
     "stopLoss": {
-      "tight":    380, "tightPct": -7.6,  "tightNote": "Below preferred entry zone",
-      "hard":     345, "hardPct":  -16.2, "hardNote":  "200-day MA breach",
-      "riskReward": "2.9 : 1", "rrNote": "Tight stop vs TP2", "rrWarning": "Strong R/R"
+      "tight": 380,
+      "tightPct": -7.6,
+      "tightNote": "Below preferred entry zone",
+      "hard": 345,
+      "hardPct": -16.2,
+      "hardNote": "200-day MA breach",
+      "riskReward": "2.9 : 1",
+      "rrNote": "Tight stop vs TP2",
+      "rrWarning": "Strong R/R"
     },
     "verdict": "Core holding — BUY on any dip into $380–390. AI XPU + VMware ARR is a rare quality+growth combo with analyst consensus at $502.",
     "approach": "DCA"
@@ -92,9 +175,18 @@
       "priceNote": "อยู่กลาง range 52 สัปดาห์ $244–$495 · XPU ramp กำลังดำเนินอยู่",
       "scoreLabel": "Core Holding",
       "catalysts": [
-        { "name": "🧠 ธุรกิจ Custom AI XPU", "description": "Google TPUs, Meta MTIA, Apple neural engine — AVGO ออกแบบให้ทั้งหมด TAM ขยายถึง $60-90B ภายในปี 2027" },
-        { "name": "🔗 AI Ethernet Networking", "description": "Tomahawk 5 + Jericho3-AI switches ชนะ Infiniband ใน AI clusters ของ hyperscaler รายได้ networking $4B+ โต 40% YoY" },
-        { "name": "💼 รวม VMware เร็วกว่าแผน", "description": "เปลี่ยนเป็น subscription เสร็จแล้ว รายได้ recurring $8.5B ต่อปี EBITDA margin ขยายถึง 65%+" }
+        {
+          "name": "🧠 ธุรกิจ Custom AI XPU",
+          "description": "Google TPUs, Meta MTIA, Apple neural engine — AVGO ออกแบบให้ทั้งหมด TAM ขยายถึง $60-90B ภายในปี 2027"
+        },
+        {
+          "name": "🔗 AI Ethernet Networking",
+          "description": "Tomahawk 5 + Jericho3-AI switches ชนะ Infiniband ใน AI clusters ของ hyperscaler รายได้ networking $4B+ โต 40% YoY"
+        },
+        {
+          "name": "💼 รวม VMware เร็วกว่าแผน",
+          "description": "เปลี่ยนเป็น subscription เสร็จแล้ว รายได้ recurring $8.5B ต่อปี EBITDA margin ขยายถึง 65%+"
+        }
       ],
       "risks": [
         "ลูกค้ากระจุก: Google + Meta = ~40% ของรายได้ AI chip",
@@ -112,24 +204,135 @@
       "entryStrategy": {
         "verdict": "Core Holding — BUY แข็งแกร่งเมื่อย่อ $380–390 AI XPU + VMware ARR = คุณภาพ+growth หายากในตลาด เป้า consensus นักวิเคราะห์ $502",
         "entryLevels": [
-          { "note": "ราคาปัจจุบัน — เข้าตาม momentum",   "timing": "ตอนนี้"      },
-          { "note": "โซนย่อหลัง earnings",                "timing": "ถ้าย่อ"      },
-          { "note": "แนวรับสำคัญ / ใกล้ 200-day MA",      "timing": "ถ้าร่วงหนัก" }
+          {
+            "note": "ราคาปัจจุบัน — เข้าตาม momentum",
+            "timing": "ตอนนี้"
+          },
+          {
+            "note": "โซนย่อหลัง earnings",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "แนวรับสำคัญ / ใกล้ 200-day MA",
+            "timing": "ถ้าร่วงหนัก"
+          }
         ],
-        "tp1": { "note": "แนวต้านระยะสั้น / Base case" },
-        "tp2": { "note": "เป้า consensus นักวิเคราะห์"  },
-        "tp3": { "note": "AI XPU monetization เต็มรูปแบบ · 2027" },
+        "tp1": {
+          "note": "แนวต้านระยะสั้น / Base case"
+        },
+        "tp2": {
+          "note": "เป้า consensus นักวิเคราะห์"
+        },
+        "tp3": {
+          "note": "AI XPU monetization เต็มรูปแบบ · 2027"
+        },
         "stopLoss": {
           "tightNote": "ต่ำกว่าโซนเข้า preferred",
-          "hardNote":  "หลุด 200-day MA",
-          "rrNote":    "Tight stop เทียบ TP2",
+          "hardNote": "หลุด 200-day MA",
+          "rrNote": "Tight stop เทียบ TP2",
           "rrWarning": "R/R แข็งแกร่ง"
         }
       },
       "estimateDates": [
-        { "event": "ประกาศผล Q3 FY26", "note": "ยืนยันการ ramp รายได้ XPU" },
-        { "event": "ดีล AI XPU ใหม่",  "note": "คาด partnership hyperscaler รายใหม่" }
+        {
+          "event": "ประกาศผล Q3 FY26",
+          "note": "ยืนยันการ ramp รายได้ XPU"
+        },
+        {
+          "event": "ดีล AI XPU ใหม่",
+          "note": "คาด partnership hyperscaler รายใหม่"
+        }
+      ],
+      "catalystSpot": {
+        "preRunupTiming": "1–2 สัปดาห์ก่อน earnings",
+        "preRunup": "AVGO มักวิ่ง +5–12% ใน 1–2 สัปดาห์ก่อน earnings โดยเฉพาะเมื่อมีข่าวรั่ว AI chip design win ใหม่ (Apple, Google, Meta) เข้าก่อน earnings เพื่อ capture การ run-up ดีกว่ารอวันประกาศ",
+        "postWin": {
+          "note": "AVGO earnings history: Jun 2024 +12.3% (AI XPU guidance รั้ง), Dec 2024 +24.4% (AI chip $4B+ quarter). Beat + raise = strong day-1 move"
+        },
+        "postLose": {
+          "note": "May 2022 miss + macro ทุบ → -26% ใน 2 วัน ปัจจุบัน valuation สูงขึ้น ($1.95T) ทำให้ downside risk หนักกว่าเดิม"
+        },
+        "spotSizing": {
+          "reason": "High conviction BUY, Fed risk LOW, แต่ market cap $1.95T ทำให้ % move post-catalyst เล็กกว่า mid-cap ปรับลงจาก 8% → 7% เพราะ upside magnitude น้อยกว่า"
+        },
+        "stopPreCatalyst": {
+          "note": "หลุด $380 ก่อน earnings = below preferred entry zone, thesis ระยะสั้นเปลี่ยน ออกก่อน"
+        },
+        "stopPostCatalyst": {
+          "note": "Gap down >10% หลัง earnings ออกใน 30 นาที — valuation premium ทำ re-rating เจ็บปวดกว่า"
+        }
+      },
+      "comparableCases": [
+        {
+          "note": "AVGO เอง +24.4% ใน 1 วัน นี่คือ precedent ที่ดีที่สุด — เมื่อ AI chip revenue surprise ชัดเจน market ให้ premium ทันที"
+        },
+        {
+          "note": "Marvell +6.8% หลังประกาศ Google custom AI chip — comparable แต่ market cap น้อยกว่า AVGO ดังนั้น AVGO ต้องการ surprise ใหญ่กว่าเพื่อให้ % move เท่ากัน"
+        },
+        {
+          "note": "QCOM +12% แต่ใช้เวลา 3 วัน — design win catalyst มักค่อยๆ ขึ้นไม่ใช่ single-day pop เหมือน earnings beat แท้ๆ"
+        }
       ]
     }
-  }
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat + ai_chip_design_win",
+    "preRunup": "AVGO typically runs +5–12% in the 1–2 weeks before earnings, especially when AI chip design win news leaks (Apple, Google, Meta). Enter before earnings to capture the run-up rather than waiting for announcement day.",
+    "preRunupTiming": "1–2 weeks before earnings",
+    "preRunupPct": "+5–12%",
+    "postWin": {
+      "avgPct": 18,
+      "range": "+12% to +24%",
+      "note": "AVGO earnings history: Jun 2024 +12.3% (AI XPU guidance boost), Dec 2024 +24.4% (AI chip $4B+ quarter). Beat + raise = strong day-1 move.",
+      "exampleDate": "Dec 2024"
+    },
+    "postLose": {
+      "avgPct": -15,
+      "range": "-10% to -26%",
+      "note": "May 2022 miss + macro selloff → -26% in 2 days. Higher current valuation ($1.95T) makes downside re-rating more painful than before.",
+      "exampleDate": "May 2022"
+    },
+    "spotSizing": {
+      "pct": 7,
+      "reason": "High conviction BUY, Fed risk LOW, but $1.95T market cap means smaller % move post-catalyst vs mid-cap — sizing down from 8% → 7% due to lower upside magnitude."
+    },
+    "stopPreCatalyst": {
+      "pct": -8,
+      "price": 379,
+      "note": "Break below $380 before earnings = below preferred entry zone, short-term thesis changes. Exit early."
+    },
+    "stopPostCatalyst": {
+      "pct": -12,
+      "note": "Gap down >10% after earnings — exit within 30 min. Valuation premium makes re-rating more painful."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "AVGO",
+      "event": "AI chip guidance $4B+ + VMware synergy beat",
+      "date": "Dec 2024",
+      "movePct": 24,
+      "days": 1,
+      "outcome": "good",
+      "note": "AVGO itself +24.4% in 1 day — the best precedent. When AI chip revenue surprise is clear, market re-rates immediately."
+    },
+    {
+      "ticker": "MRVL",
+      "event": "Custom AI silicon for hyperscalers — design win announcement",
+      "date": "Jun 2024",
+      "movePct": 7,
+      "days": 1,
+      "outcome": "good",
+      "note": "Marvell +6.8% after Google custom AI chip announcement — comparable but smaller market cap than AVGO, so AVGO needs a bigger surprise for the same % move."
+    },
+    {
+      "ticker": "QCOM",
+      "event": "Snapdragon AI PC chip design win + Apple modem",
+      "date": "Q4 2023",
+      "movePct": 12,
+      "days": 3,
+      "outcome": "mixed",
+      "note": "QCOM +12% but took 3 days — design win catalysts often drift up rather than give a single-day pop like a true earnings beat."
+    }
+  ]
 }

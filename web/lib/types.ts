@@ -124,6 +124,20 @@ export interface EstimateDateTranslation {
   note?: string;
 }
 
+export interface CatalystSpotTranslation {
+  preRunup?: string;
+  preRunupTiming?: string;
+  postWin?: { note?: string };
+  postLose?: { note?: string };
+  spotSizing?: { reason?: string };
+  stopPreCatalyst?: { note?: string };
+  stopPostCatalyst?: { note?: string };
+}
+
+export interface ComparableCaseTranslation {
+  note?: string;
+}
+
 export interface ReportTranslation {
   summary?: string;
   priceNote?: string;
@@ -145,10 +159,43 @@ export interface ReportTranslation {
     };
   };
   estimateDates?: EstimateDateTranslation[];
+  catalystSpot?: CatalystSpotTranslation;
+  comparableCases?: ComparableCaseTranslation[];
 }
 
 export interface ReportI18n {
   th?: ReportTranslation;
+}
+
+// ─── Catalyst Spot Mode ──────────────────────────────────────────────────────
+
+export interface CatalystSpot {
+  /** e.g. "earnings_beat", "satellite_launch", "fda_decision", "foundry_validation" */
+  catalystType: string;
+  /** How the stock typically moves in the run-up period before the event */
+  preRunup: string;
+  preRunupTiming: string;  // e.g. "1–2 สัปดาห์ก่อน event"
+  preRunupPct: string;     // e.g. "+8–15%"
+  /** What happens historically if catalyst succeeds */
+  postWin: { avgPct: number; range: string; note: string; exampleDate?: string };
+  /** What happens historically if catalyst fails */
+  postLose: { avgPct: number; range: string; note: string; exampleDate?: string };
+  /** Spot position sizing recommendation */
+  spotSizing: { pct: number; reason: string };
+  /** Stop loss BEFORE the catalyst event (thesis breach) */
+  stopPreCatalyst: { pct: number; price?: number; note: string };
+  /** Stop loss AFTER the catalyst event (if result is bad) */
+  stopPostCatalyst: { pct: number; note: string };
+}
+
+export interface ComparableCase {
+  ticker: string;
+  event: string;
+  date: string;
+  movePct: number;
+  days: number;
+  outcome: "good" | "mixed" | "bad";
+  note: string;
 }
 
 // ─── Main Report ─────────────────────────────────────────────────────────────
@@ -175,6 +222,10 @@ export interface StockReport {
   macroRisk: MacroRisk;
   entryStrategy: EntryStrategy;
   earningsDate?: string;
+  catalystSpot?: CatalystSpot;
+  comparableCases?: ComparableCase[];
+  /** Optional news link explaining the latest rank/verdict change — stored in JSON at report time */
+  rankChangeSource?: { headline: string; url: string; date: string };
   sources: string[];
   i18n?: ReportI18n;
 }

@@ -13,9 +13,24 @@
   "score": 55,
   "summary": "AST SpaceMobile successfully launched BlueBird 8, 9, and 10 — the commercial constellation is live. Post-launch sell-the-news dip offers re-entry opportunity. The critical next catalyst is Japan J-LEO award (multi-billion contract) and activating commercial service with AT&T and Verizon. High conviction on long-term thesis; short-term volatile.",
   "catalysts": [
-    { "icon": "🛰️", "name": "BlueBird 8/9/10 — In Orbit ✅", "description": "Commercial constellation live. SpaceX Falcon 9 launch successful. Coverage expansion accelerating.", "dotColor": "green" },
-    { "icon": "🇯🇵", "name": "Japan J-LEO Award (Pending)", "description": "Multi-billion JPY contract with Rakuten / NTT Docomo. Decision expected Q3 2026 — massive catalyst if awarded.", "dotColor": "yellow" },
-    { "icon": "📡", "name": "AT&T / Verizon Commercial Launch", "description": "Direct-to-cell service activating across major US carriers. Subscription revenue ramp begins H2 2026.", "dotColor": "yellow" }
+    {
+      "icon": "🛰️",
+      "name": "BlueBird 8/9/10 — In Orbit ✅",
+      "description": "Commercial constellation live. SpaceX Falcon 9 launch successful. Coverage expansion accelerating.",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🇯🇵",
+      "name": "Japan J-LEO Award (Pending)",
+      "description": "Multi-billion JPY contract with Rakuten / NTT Docomo. Decision expected Q3 2026 — massive catalyst if awarded.",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📡",
+      "name": "AT&T / Verizon Commercial Launch",
+      "description": "Direct-to-cell service activating across major US carriers. Subscription revenue ramp begins H2 2026.",
+      "dotColor": "yellow"
+    }
   ],
   "risks": [
     "Satellite manufacturing yield — scaling from 10 to 45+ satellites is untested",
@@ -26,20 +41,67 @@
     "No revenue yet — burn rate increasing with constellation expansion"
   ],
   "estimateDates": [
-    { "event": "Japan J-LEO Award Decision", "dateRange": "Q3 2026", "note": "Binary event — win = +40%+, miss = -25%", "highlight": "blue" },
-    { "event": "Q2 2026 Earnings", "dateRange": "Aug 14, 2026", "note": "First commercial service activation metrics", "highlight": "yellow" },
-    { "event": "Block 2 Satellite Launch", "dateRange": "Q4 2026", "note": "Scale to 45 satellites — global coverage milestone", "highlight": "yellow" }
+    {
+      "event": "Japan J-LEO Award Decision",
+      "dateRange": "Q3 2026",
+      "note": "Binary event — win = +40%+, miss = -25%",
+      "highlight": "blue"
+    },
+    {
+      "event": "Q2 2026 Earnings",
+      "dateRange": "Aug 14, 2026",
+      "note": "First commercial service activation metrics",
+      "highlight": "yellow"
+    },
+    {
+      "event": "Block 2 Satellite Launch",
+      "dateRange": "Q4 2026",
+      "note": "Scale to 45 satellites — global coverage milestone",
+      "highlight": "yellow"
+    }
   ],
   "scenarios": [
-    { "label": "Bear", "color": "red",    "pct": -40, "price": 48  },
-    { "label": "Base", "color": "yellow", "pct": 20,  "price": 97  },
-    { "label": "Bull", "color": "green",  "pct": 43,  "price": 115 },
-    { "label": "Moon", "color": "purple", "pct": 86,  "price": 150 }
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -40,
+      "price": 48
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 20,
+      "price": 97
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 43,
+      "price": 115
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 86,
+      "price": 150
+    }
   ],
   "analystTargets": [
-    { "firm": "Goldman Sachs",  "target": 120, "rating": "Buy" },
-    { "firm": "Morgan Stanley", "target": 105, "rating": "Overweight" },
-    { "firm": "Citigroup",      "target": 90,  "rating": "Buy" }
+    {
+      "firm": "Goldman Sachs",
+      "target": 120,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Morgan Stanley",
+      "target": 105,
+      "rating": "Overweight"
+    },
+    {
+      "firm": "Citigroup",
+      "target": 90,
+      "rating": "Buy"
+    }
   ],
   "macroRisk": {
     "fedRisk": "LOW",
@@ -50,17 +112,53 @@
   },
   "entryStrategy": {
     "entryLevels": [
-      { "label": "Entry 1", "level": 80,   "note": "Current price, post-launch dip zone", "timing": "ค่าขนม size only" },
-      { "label": "Entry 2", "level": 65, "rangeMax": 70, "note": "Deeper dip — better risk/reward", "timing": "If weak", "preferred": true },
-      { "label": "Entry 3", "level": 55,   "note": "Bear capitulation zone",              "timing": "Deep dip"   }
+      {
+        "label": "Entry 1",
+        "level": 80,
+        "note": "Current price, post-launch dip zone",
+        "timing": "ค่าขนม size only"
+      },
+      {
+        "label": "Entry 2",
+        "level": 65,
+        "rangeMax": 70,
+        "note": "Deeper dip — better risk/reward",
+        "timing": "If weak",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 55,
+        "note": "Bear capitulation zone",
+        "timing": "Deep dip"
+      }
     ],
-    "tp1": { "price": 97,  "pct": 20.3, "note": "Pre-launch highs reclaimed"       },
-    "tp2": { "price": 115, "pct": 42.6, "note": "Japan award scenario"             },
-    "tp3": { "price": 150, "pct": 85.9, "note": "45-satellite global coverage · 2027", "moon": true },
+    "tp1": {
+      "price": 97,
+      "pct": 20.3,
+      "note": "Pre-launch highs reclaimed"
+    },
+    "tp2": {
+      "price": 115,
+      "pct": 42.6,
+      "note": "Japan award scenario"
+    },
+    "tp3": {
+      "price": 150,
+      "pct": 85.9,
+      "note": "45-satellite global coverage · 2027",
+      "moon": true
+    },
     "stopLoss": {
-      "tight":    68, "tightPct": -15.7, "tightNote": "Below key support",
-      "hard":     55, "hardPct":  -31.8, "hardNote":  "Thesis-level breach",
-      "riskReward": "2.7 : 1", "rrNote": "Tight stop vs TP2", "rrWarning": "Speculative — size small"
+      "tight": 68,
+      "tightPct": -15.7,
+      "tightNote": "Below key support",
+      "hard": 55,
+      "hardPct": -31.8,
+      "hardNote": "Thesis-level breach",
+      "riskReward": "2.7 : 1",
+      "rrNote": "Tight stop vs TP2",
+      "rrWarning": "Speculative — size small"
     },
     "verdict": "SPECULATIVE — ค่าขนม size only. Post-launch dip is opportunity but Japan J-LEO is binary. Never more than 2-3% portfolio.",
     "approach": "Lump Sum"
@@ -76,29 +174,169 @@
       "priceNote": "Dip หลัง launch · BlueBird 8/9/10 อยู่ในวงโคจรแล้ว · รอรางวัล Japan",
       "scoreLabel": "ค่าขนม",
       "catalysts": [
-        { "name": "🛰️ BlueBird 8/9/10 — อยู่ในวงโคจรแล้ว ✅", "description": "Constellation เชิงพาณิชย์ live แล้ว SpaceX Falcon 9 launch สำเร็จ การขยาย coverage เร่งตัวขึ้น" },
-        { "name": "🇯🇵 รางวัล Japan J-LEO (รอผล)", "description": "สัญญา JPY หลายพันล้านกับ Rakuten / NTT Docomo คาดว่าจะตัดสินใจใน Q3 2026 — catalyst ใหญ่มากถ้าได้รับ" },
-        { "name": "📡 เปิดตัวเชิงพาณิชย์กับ AT&T / Verizon", "description": "บริการ direct-to-cell กำลัง activate กับ carrier หลักในสหรัฐฯ รายได้ subscription เริ่ม ramp ใน H2 2026" }
+        {
+          "name": "🛰️ BlueBird 8/9/10 — อยู่ในวงโคจรแล้ว ✅",
+          "description": "Constellation เชิงพาณิชย์ live แล้ว SpaceX Falcon 9 launch สำเร็จ การขยาย coverage เร่งตัวขึ้น"
+        },
+        {
+          "name": "🇯🇵 รางวัล Japan J-LEO (รอผล)",
+          "description": "สัญญา JPY หลายพันล้านกับ Rakuten / NTT Docomo คาดว่าจะตัดสินใจใน Q3 2026 — catalyst ใหญ่มากถ้าได้รับ"
+        },
+        {
+          "name": "📡 เปิดตัวเชิงพาณิชย์กับ AT&T / Verizon",
+          "description": "บริการ direct-to-cell กำลัง activate กับ carrier หลักในสหรัฐฯ รายได้ subscription เริ่ม ramp ใน H2 2026"
+        }
       ],
-      "risks": ["ผลผลิตการผลิตดาวเทียม — การ scale จาก 10 ไปถึง 45+ ดวงยังไม่เคยทดสอบ", "ประสิทธิภาพในวงโคจร: interference, latency, throughput ที่ scale เชิงพาณิชย์", "Starlink T-Mobile ของ SpaceX — คู่แข่งตรงที่มีดาวเทียม 300+ ดวงนำหน้า", "กฎระเบียบ: การประสานงาน FCC spectrum ในแต่ละประเทศใช้เวลานาน", "ความเสี่ยงการเจือจาง: โมเดลใช้ทุนสูง อาจออกหุ้นใหม่ที่ $70-80", "ยังไม่มีรายได้ — burn rate เพิ่มขึ้นตามการขยาย constellation"],
-      "macroRisk": { "rateOutlook": "สภาพแวดล้อมดอกเบี้ยไม่สำคัญระยะสั้น — ASTS ขึ้นอยู่กับ binary catalysts ไม่ใช่ DCF", "inflationNote": "ต้นทุนการปล่อยจรวดลดลงด้วย SpaceX reusability — ลดต้นทุนต่อดาวเทียม", "sectorImpact": "ภาค Space ไม่ได้รับผลจาก Fed policy กฎระเบียบ FCC และ spectrum ระหว่างประเทศเป็นปัจจัยมหภาคหลัก", "summary": "ความเสี่ยงมหภาคต่ำ หุ้นนี้ขับเคลื่อนด้วย catalyst และผลลัพธ์แบบ binary จัดสัดส่วนตามความเหมาะสม" },
+      "risks": [
+        "ผลผลิตการผลิตดาวเทียม — การ scale จาก 10 ไปถึง 45+ ดวงยังไม่เคยทดสอบ",
+        "ประสิทธิภาพในวงโคจร: interference, latency, throughput ที่ scale เชิงพาณิชย์",
+        "Starlink T-Mobile ของ SpaceX — คู่แข่งตรงที่มีดาวเทียม 300+ ดวงนำหน้า",
+        "กฎระเบียบ: การประสานงาน FCC spectrum ในแต่ละประเทศใช้เวลานาน",
+        "ความเสี่ยงการเจือจาง: โมเดลใช้ทุนสูง อาจออกหุ้นใหม่ที่ $70-80",
+        "ยังไม่มีรายได้ — burn rate เพิ่มขึ้นตามการขยาย constellation"
+      ],
+      "macroRisk": {
+        "rateOutlook": "สภาพแวดล้อมดอกเบี้ยไม่สำคัญระยะสั้น — ASTS ขึ้นอยู่กับ binary catalysts ไม่ใช่ DCF",
+        "inflationNote": "ต้นทุนการปล่อยจรวดลดลงด้วย SpaceX reusability — ลดต้นทุนต่อดาวเทียม",
+        "sectorImpact": "ภาค Space ไม่ได้รับผลจาก Fed policy กฎระเบียบ FCC และ spectrum ระหว่างประเทศเป็นปัจจัยมหภาคหลัก",
+        "summary": "ความเสี่ยงมหภาคต่ำ หุ้นนี้ขับเคลื่อนด้วย catalyst และผลลัพธ์แบบ binary จัดสัดส่วนตามความเหมาะสม"
+      },
       "entryStrategy": {
         "verdict": "SPECULATIVE — ขนาดแค่ค่าขนม Dip หลัง launch เป็นโอกาส แต่ Japan J-LEO คือ binary ไม่ควรเกิน 2-3% ของ portfolio",
         "entryLevels": [
-          { "note": "ราคาปัจจุบัน โซน dip หลัง launch", "timing": "ขนาดค่าขนมเท่านั้น" },
-          { "note": "Dip ลึกกว่า risk/reward ดีกว่า", "timing": "ถ้าอ่อนแอ" },
-          { "note": "โซน bear capitulation", "timing": "ถ้าร่วงหนัก" }
+          {
+            "note": "ราคาปัจจุบัน โซน dip หลัง launch",
+            "timing": "ขนาดค่าขนมเท่านั้น"
+          },
+          {
+            "note": "Dip ลึกกว่า risk/reward ดีกว่า",
+            "timing": "ถ้าอ่อนแอ"
+          },
+          {
+            "note": "โซน bear capitulation",
+            "timing": "ถ้าร่วงหนัก"
+          }
         ],
-        "tp1": { "note": "กลับไปยัง highs ก่อน launch" },
-        "tp2": { "note": "Scenario รับรางวัล Japan" },
-        "tp3": { "note": "45 ดาวเทียม ครอบคลุมทั่วโลก · 2027" },
-        "stopLoss": { "tightNote": "ต่ำกว่าแนวรับสำคัญ", "hardNote": "หลุดระดับ thesis", "rrNote": "Tight stop เทียบ TP2", "rrWarning": "Speculative — ขนาดเล็ก" }
+        "tp1": {
+          "note": "กลับไปยัง highs ก่อน launch"
+        },
+        "tp2": {
+          "note": "Scenario รับรางวัล Japan"
+        },
+        "tp3": {
+          "note": "45 ดาวเทียม ครอบคลุมทั่วโลก · 2027"
+        },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่าแนวรับสำคัญ",
+          "hardNote": "หลุดระดับ thesis",
+          "rrNote": "Tight stop เทียบ TP2",
+          "rrWarning": "Speculative — ขนาดเล็ก"
+        }
       },
       "estimateDates": [
-        { "event": "ผลรางวัล Japan J-LEO", "note": "ผลลัพธ์แบบ binary — ได้ = +40%+, พลาด = -25%" },
-        { "event": "ประกาศผล Q2 2026", "note": "ตัวชี้วัด commercial service activation ครั้งแรก" },
-        { "event": "ปล่อยดาวเทียม Block 2", "note": "Scale ไปถึง 45 ดวง — milestone ครอบคลุมทั่วโลก" }
+        {
+          "event": "ผลรางวัล Japan J-LEO",
+          "note": "ผลลัพธ์แบบ binary — ได้ = +40%+, พลาด = -25%"
+        },
+        {
+          "event": "ประกาศผล Q2 2026",
+          "note": "ตัวชี้วัด commercial service activation ครั้งแรก"
+        },
+        {
+          "event": "ปล่อยดาวเทียม Block 2",
+          "note": "Scale ไปถึง 45 ดวง — milestone ครอบคลุมทั่วโลก"
+        }
+      ],
+      "catalystSpot": {
+        "preRunupTiming": "2–3 สัปดาห์ก่อน launch",
+        "preRunup": "ASTS มีประวัติวิ่งขึ้นสูงมากก่อน launch — BB2-7 วิ่งจาก $10 → $27 ก่อน launch (+170% ใน 3 สัปดาห์). BB8-10 วิ่งจาก $65 → $80+ ก่อน launch เข้าก่อน 2–3 สัปดาห์เพื่อ capture drift อย่า chase วัน launch — sell-the-news เกิดขึ้นจริง",
+        "postWin": {
+          "note": "BB1 Apr 2024 → หุ้นวิ่งจาก $2.50 → $7.50 (+200%) ใน 2 สัปดาห์หลัง launch. BB2-7 Sep 2024 → +192% overall move. ถ้า Japan J-LEO win ประกาศ → คาด +40%+"
+        },
+        "postLose": {
+          "note": "Satellite failure หรือ coverage miss = severe crash ตัวอย่าง BB8-10 Jun 2026 sell-the-news -5.58% (mild). ถ้า launch fail = -30%+ ใน 1 วัน เพราะ thesis ทั้งหมดพังทันที"
+        },
+        "spotSizing": {
+          "reason": "SPECULATIVE ค่าขนม — binary outcome, downside unlimited, ไม่มี revenue ยังเป็นไฟเขียวสูงสุดที่ 3% เท่านั้น ถ้าชนะ Japan J-LEO อาจ re-size เพิ่มได้"
+        },
+        "stopPreCatalyst": {
+          "note": "หลุด $68 ก่อน Japan award = institutional selling บอกโอกาสน้อย ออกก่อน"
+        },
+        "stopPostCatalyst": {
+          "note": "ถ้า Japan miss หรือ commercial activation ล่าช้า → ออกทันทีไม่รอ — ASTS ไม่มี revenue รองรับ downside"
+        }
+      },
+      "comparableCases": [
+        {
+          "note": "Globalstar +53% ใน 1 วันหลัง Apple deal ประกาศ — carrier partnership catalyst ให้ผลรุนแรงมาก เทียบได้กับ ASTS Japan J-LEO scenario"
+        },
+        {
+          "note": "ASTS เอง วิ่ง +100%+ ใน 2 สัปดาห์หลัง BB1 launch สำเร็จ — นี่คือ template ถ้า Japan J-LEO win + commercial activation confirmed"
+        },
+        {
+          "note": "Rocket Lab วิ่ง +180% ใน 3 เดือนหลัง contract wins หลายอัน — Space sector binary catalyst ให้ผลรุนแรงมาก"
+        }
       ]
     }
-  }
+  },
+  "catalystSpot": {
+    "catalystType": "satellite_launch + carrier_activation + contract_win",
+    "preRunup": "ASTS has a history of massive pre-launch runs — BB2-7 ran from $10 → $27 before launch (+170% in 3 weeks). BB8-10 ran from $65 → $80+ pre-launch. Enter 2–3 weeks early to capture the drift. Do NOT chase on launch day — sell-the-news risk is real.",
+    "preRunupTiming": "2–3 weeks before launch",
+    "preRunupPct": "+35–170%",
+    "postWin": {
+      "avgPct": 90,
+      "range": "+35% to +275%",
+      "note": "BB1 Apr 2024 → stock ran from $2.50 → $7.50 (+200%) in 2 weeks post-launch. BB2-7 Sep 2024 → +192% overall move. If Japan J-LEO win announced → expected +40%+",
+      "exampleDate": "Apr 2024"
+    },
+    "postLose": {
+      "avgPct": -30,
+      "range": "-20% to -50%",
+      "note": "Satellite failure or coverage miss = severe crash. BB8-10 Jun 2026 sell-the-news -5.58% (mild case). If launch fails = -30%+ in 1 day as the entire thesis collapses immediately.",
+      "exampleDate": "Jun 2026"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "SPECULATIVE / ค่าขนม — binary outcome, unlimited downside, no revenue yet. Max 3% of portfolio only. Can re-size up if Japan J-LEO win is confirmed."
+    },
+    "stopPreCatalyst": {
+      "pct": -15,
+      "price": 68,
+      "note": "Break below $68 before Japan award = institutional selling signals low probability. Exit early."
+    },
+    "stopPostCatalyst": {
+      "pct": -20,
+      "note": "If Japan misses or commercial activation is delayed → exit immediately, no waiting. ASTS has no revenue to cushion the downside."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "GSAT",
+      "event": "Apple satellite partnership announcement",
+      "date": "Sep 2022",
+      "movePct": 53,
+      "days": 1,
+      "outcome": "good",
+      "note": "Globalstar +53% in 1 day after Apple deal announced — carrier partnership catalyst can be extremely powerful, comparable to ASTS Japan J-LEO scenario."
+    },
+    {
+      "ticker": "ASTS",
+      "event": "BlueBird 1 launch success + first direct-to-cell call",
+      "date": "Apr 2024",
+      "movePct": 100,
+      "days": 14,
+      "outcome": "good",
+      "note": "ASTS itself ran +100%+ in 2 weeks after BB1 launch success — this is the exact template if Japan J-LEO win + commercial activation is confirmed."
+    },
+    {
+      "ticker": "RKLB",
+      "event": "Neutron rocket + satellite constellation win",
+      "date": "2024",
+      "movePct": 180,
+      "days": 90,
+      "outcome": "good",
+      "note": "Rocket Lab ran +180% in 3 months after multiple contract wins — Space sector binary catalysts produce massive moves."
+    }
+  ]
 }

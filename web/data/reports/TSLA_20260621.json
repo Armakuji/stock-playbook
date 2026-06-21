@@ -13,9 +13,27 @@
   "score": 68,
   "summary": "Tesla is near the top of its 52-week range at $400. The autonomy optionality (Robotaxi, FSD v13, Optimus) is real and potentially transformational, but current EV margins remain under pressure from price cuts and rising competition. At $400, the market prices in a lot of good news. HOLD unless autonomy catalysts crystallize.",
   "catalysts": [
-    { "icon": "🚗", "name": "Robotaxi Launch — Austin", "description": "Unsupervised FSD Robotaxi service launching in Austin TX — first commercial autonomy revenue for Tesla.", "urgencyLabel": "NOW", "dateBadge": "Jun 2026", "badgeColor": "red", "dotColor": "red" },
-    { "icon": "🤖", "name": "Optimus Robot Revenue", "description": "Tesla targeting 1,000+ Optimus units shipped to external customers in 2026. Production scale-up key.", "dotColor": "yellow" },
-    { "icon": "⚡", "name": "FSD v13 Subscription Growth", "description": "v13 DOJO-trained model showing step-change in intervention rates. Subscription attach rate rising.", "dotColor": "green" }
+    {
+      "icon": "🚗",
+      "name": "Robotaxi Launch — Austin",
+      "description": "Unsupervised FSD Robotaxi service launching in Austin TX — first commercial autonomy revenue for Tesla.",
+      "urgencyLabel": "NOW",
+      "dateBadge": "Jun 2026",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "🤖",
+      "name": "Optimus Robot Revenue",
+      "description": "Tesla targeting 1,000+ Optimus units shipped to external customers in 2026. Production scale-up key.",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "⚡",
+      "name": "FSD v13 Subscription Growth",
+      "description": "v13 DOJO-trained model showing step-change in intervention rates. Subscription attach rate rising.",
+      "dotColor": "green"
+    }
   ],
   "risks": [
     "EV volume growth flat: deliveries at risk from BYD and Chinese competition in key markets",
@@ -25,20 +43,67 @@
     "Valuation: 85x forward P/E — any autonomy narrative slip = severe derating"
   ],
   "estimateDates": [
-    { "event": "Q2 2026 Deliveries", "dateRange": "Jul 2, 2026", "note": "Critical volume recovery read after Q1 miss", "est": "est. 430K units", "highlight": "blue" },
-    { "event": "Q2 2026 Earnings", "dateRange": "Jul 23, 2026", "note": "Robotaxi revenue line + Optimus update", "highlight": "yellow" }
+    {
+      "event": "Q2 2026 Deliveries",
+      "dateRange": "Jul 2, 2026",
+      "note": "Critical volume recovery read after Q1 miss",
+      "est": "est. 430K units",
+      "highlight": "blue"
+    },
+    {
+      "event": "Q2 2026 Earnings",
+      "dateRange": "Jul 23, 2026",
+      "note": "Robotaxi revenue line + Optimus update",
+      "highlight": "yellow"
+    }
   ],
   "scenarios": [
-    { "label": "Bear", "color": "red",    "pct": -25, "price": 300 },
-    { "label": "Base", "color": "yellow", "pct": 10,  "price": 440 },
-    { "label": "Bull", "color": "green",  "pct": 25,  "price": 500 },
-    { "label": "Moon", "color": "purple", "pct": 50,  "price": 600 }
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -25,
+      "price": 300
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 10,
+      "price": 440
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 25,
+      "price": 500
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 50,
+      "price": 600
+    }
   ],
   "analystTargets": [
-    { "firm": "Wedbush",       "target": 550, "rating": "Outperform" },
-    { "firm": "Morgan Stanley","target": 410, "rating": "Equal Weight" },
-    { "firm": "Goldman Sachs", "target": 320, "rating": "Neutral" },
-    { "firm": "Avg (all)",     "target": 421, "rating": "Mixed" }
+    {
+      "firm": "Wedbush",
+      "target": 550,
+      "rating": "Outperform"
+    },
+    {
+      "firm": "Morgan Stanley",
+      "target": 410,
+      "rating": "Equal Weight"
+    },
+    {
+      "firm": "Goldman Sachs",
+      "target": 320,
+      "rating": "Neutral"
+    },
+    {
+      "firm": "Avg (all)",
+      "target": 421,
+      "rating": "Mixed"
+    }
   ],
   "macroRisk": {
     "fedRisk": "LOW",
@@ -49,17 +114,53 @@
   },
   "entryStrategy": {
     "entryLevels": [
-      { "label": "Entry 1", "level": 400,  "note": "Current price — near range top, sizing carefully", "timing": "Small position" },
-      { "label": "Entry 2", "level": 360, "rangeMax": 370, "note": "Better risk/reward, prior consolidation zone", "timing": "On dip", "preferred": true },
-      { "label": "Entry 3", "level": 315,  "note": "52-wk support zone, max conviction level", "timing": "Deep dip" }
+      {
+        "label": "Entry 1",
+        "level": 400,
+        "note": "Current price — near range top, sizing carefully",
+        "timing": "Small position"
+      },
+      {
+        "label": "Entry 2",
+        "level": 360,
+        "rangeMax": 370,
+        "note": "Better risk/reward, prior consolidation zone",
+        "timing": "On dip",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 315,
+        "note": "52-wk support zone, max conviction level",
+        "timing": "Deep dip"
+      }
     ],
-    "tp1": { "price": 450, "pct": 12.4, "note": "Mid-range breakout target" },
-    "tp2": { "price": 500, "pct": 24.9, "note": "Near 52-wk high $499 — Robotaxi priced in" },
-    "tp3": { "price": 600, "pct": 49.8, "note": "Optimus + autonomous fleet · 2027", "moon": true },
+    "tp1": {
+      "price": 450,
+      "pct": 12.4,
+      "note": "Mid-range breakout target"
+    },
+    "tp2": {
+      "price": 500,
+      "pct": 24.9,
+      "note": "Near 52-wk high $499 — Robotaxi priced in"
+    },
+    "tp3": {
+      "price": 600,
+      "pct": 49.8,
+      "note": "Optimus + autonomous fleet · 2027",
+      "moon": true
+    },
     "stopLoss": {
-      "tight":    370, "tightPct": -7.6,  "tightNote": "Below consolidation zone",
-      "hard":     315, "hardPct":  -21.3, "hardNote":  "52-wk support breach",
-      "riskReward": "3.3 : 1", "rrNote": "Tight stop vs TP2", "rrWarning": "Good R/R if entering on dip"
+      "tight": 370,
+      "tightPct": -7.6,
+      "tightNote": "Below consolidation zone",
+      "hard": 315,
+      "hardPct": -21.3,
+      "hardNote": "52-wk support breach",
+      "riskReward": "3.3 : 1",
+      "rrNote": "Tight stop vs TP2",
+      "rrWarning": "Good R/R if entering on dip"
     },
     "verdict": "HOLD / Small position at $400. Better entry at $360-370. Asymmetric upside if Robotaxi scales — but conviction requires autonomy execution.",
     "approach": "Scale In"
@@ -75,28 +176,164 @@
       "priceNote": "range 52 สัปดาห์ $289–$499 · FSD v13 + Robotaxi กำลังมา · ใกล้แนวต้านด้านบน",
       "scoreLabel": "Speculative",
       "catalysts": [
-        { "name": "🚗 เปิดตัว Robotaxi — Austin", "description": "บริการ FSD Robotaxi แบบไม่มีคนขับในเมือง Austin TX — รายได้ autonomy เชิงพาณิชย์ครั้งแรกของ Tesla" },
-        { "name": "🤖 รายได้ Optimus Robot", "description": "Tesla ตั้งเป้าส่งมอบ Optimus 1,000+ หน่วยให้ลูกค้าภายนอกในปี 2026 การขยาย scale การผลิตเป็นกุญแจสำคัญ" },
-        { "name": "⚡ การเติบโตสมาชิก FSD v13", "description": "โมเดล v13 ที่เทรนด้วย DOJO แสดงให้เห็น step-change ในอัตราการ intervention อัตราการติด subscription สูงขึ้น" }
+        {
+          "name": "🚗 เปิดตัว Robotaxi — Austin",
+          "description": "บริการ FSD Robotaxi แบบไม่มีคนขับในเมือง Austin TX — รายได้ autonomy เชิงพาณิชย์ครั้งแรกของ Tesla"
+        },
+        {
+          "name": "🤖 รายได้ Optimus Robot",
+          "description": "Tesla ตั้งเป้าส่งมอบ Optimus 1,000+ หน่วยให้ลูกค้าภายนอกในปี 2026 การขยาย scale การผลิตเป็นกุญแจสำคัญ"
+        },
+        {
+          "name": "⚡ การเติบโตสมาชิก FSD v13",
+          "description": "โมเดล v13 ที่เทรนด้วย DOJO แสดงให้เห็น step-change ในอัตราการ intervention อัตราการติด subscription สูงขึ้น"
+        }
       ],
-      "risks": ["ปริมาณ EV ไม่เติบโต: deliveries เสี่ยงจาก BYD และการแข่งขันจากจีนในตลาดสำคัญ", "Gross margin 17.4% auto — ลดราคาเพิ่มเติมอาจกด margin ลงอีก", "กฎระเบียบ Robotaxi: ต้องขออนุญาตทีละเมือง NHTSA ยังตรวจสอบอยู่", "ความเสี่ยงจากการเมืองของ Elon Musk — ความเสียหายต่อ brand ในตลาดสำคัญ (EU, blue-state US)", "Valuation: P/E forward 85x — ถ้า narrative autonomy สะดุด จะเกิด derating รุนแรง"],
-      "macroRisk": { "rateOutlook": "Fed ลดดอกเบี้ยใน H2 2026 ส่งผลดีต่อ auto loans — เป็นบวกต่อความต้องการ EV ที่ margin", "inflationNote": "ราคา Lithium carbonate ต่ำสุดในรอบหลายปี — tailwind ต้นทุน battery ปี 2026-2027", "sectorImpact": "EV sector: ความไม่แน่นอนเรื่องการรักษา IRA credit แต่ Tesla พึ่งพาน้อยกว่า autonomy เป็นการเล่น narrative ล้วนๆ", "summary": "มหภาคเป็น tailwind เล็กน้อย (ลดดอกเบี้ย, ต้นทุน battery) ความเสี่ยงหลักคือ operational ไม่ใช่เศรษฐกิจมหภาค" },
+      "risks": [
+        "ปริมาณ EV ไม่เติบโต: deliveries เสี่ยงจาก BYD และการแข่งขันจากจีนในตลาดสำคัญ",
+        "Gross margin 17.4% auto — ลดราคาเพิ่มเติมอาจกด margin ลงอีก",
+        "กฎระเบียบ Robotaxi: ต้องขออนุญาตทีละเมือง NHTSA ยังตรวจสอบอยู่",
+        "ความเสี่ยงจากการเมืองของ Elon Musk — ความเสียหายต่อ brand ในตลาดสำคัญ (EU, blue-state US)",
+        "Valuation: P/E forward 85x — ถ้า narrative autonomy สะดุด จะเกิด derating รุนแรง"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed ลดดอกเบี้ยใน H2 2026 ส่งผลดีต่อ auto loans — เป็นบวกต่อความต้องการ EV ที่ margin",
+        "inflationNote": "ราคา Lithium carbonate ต่ำสุดในรอบหลายปี — tailwind ต้นทุน battery ปี 2026-2027",
+        "sectorImpact": "EV sector: ความไม่แน่นอนเรื่องการรักษา IRA credit แต่ Tesla พึ่งพาน้อยกว่า autonomy เป็นการเล่น narrative ล้วนๆ",
+        "summary": "มหภาคเป็น tailwind เล็กน้อย (ลดดอกเบี้ย, ต้นทุน battery) ความเสี่ยงหลักคือ operational ไม่ใช่เศรษฐกิจมหภาค"
+      },
       "entryStrategy": {
         "verdict": "HOLD / ถือจำนวนน้อยที่ $400 Entry ที่ดีกว่าคือ $360-370 Upside แบบ asymmetric ถ้า Robotaxi scale ได้ — แต่ต้องการความเชื่อมั่นในการ execute autonomy",
         "entryLevels": [
-          { "note": "ราคาปัจจุบัน — ใกล้ด้านบน range ควรซื้อน้อย", "timing": "ถือจำนวนน้อย" },
-          { "note": "Risk/reward ดีกว่า โซน consolidation ก่อนหน้า", "timing": "ถ้าย่อ" },
-          { "note": "โซนแนวรับ 52 สัปดาห์ ระดับ conviction สูงสุด", "timing": "ถ้าร่วงหนัก" }
+          {
+            "note": "ราคาปัจจุบัน — ใกล้ด้านบน range ควรซื้อน้อย",
+            "timing": "ถือจำนวนน้อย"
+          },
+          {
+            "note": "Risk/reward ดีกว่า โซน consolidation ก่อนหน้า",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "โซนแนวรับ 52 สัปดาห์ ระดับ conviction สูงสุด",
+            "timing": "ถ้าร่วงหนัก"
+          }
         ],
-        "tp1": { "note": "เป้าหมาย breakout กลาง range" },
-        "tp2": { "note": "ใกล้ high 52 สัปดาห์ $499 — Robotaxi ถูกตีราคาแล้ว" },
-        "tp3": { "note": "Optimus + autonomous fleet · 2027" },
-        "stopLoss": { "tightNote": "ต่ำกว่าโซน consolidation", "hardNote": "หลุดแนวรับ 52 สัปดาห์", "rrNote": "Tight stop เทียบ TP2", "rrWarning": "R/R ดีถ้า entry ตอนย่อ" }
+        "tp1": {
+          "note": "เป้าหมาย breakout กลาง range"
+        },
+        "tp2": {
+          "note": "ใกล้ high 52 สัปดาห์ $499 — Robotaxi ถูกตีราคาแล้ว"
+        },
+        "tp3": {
+          "note": "Optimus + autonomous fleet · 2027"
+        },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่าโซน consolidation",
+          "hardNote": "หลุดแนวรับ 52 สัปดาห์",
+          "rrNote": "Tight stop เทียบ TP2",
+          "rrWarning": "R/R ดีถ้า entry ตอนย่อ"
+        }
       },
       "estimateDates": [
-        { "event": "Deliveries Q2 2026", "note": "อ่านการฟื้นตัวปริมาณหลังพลาด Q1" },
-        { "event": "ประกาศผล Q2 2026", "note": "บรรทัดรายได้ Robotaxi + อัปเดต Optimus" }
+        {
+          "event": "Deliveries Q2 2026",
+          "note": "อ่านการฟื้นตัวปริมาณหลังพลาด Q1"
+        },
+        {
+          "event": "ประกาศผล Q2 2026",
+          "note": "บรรทัดรายได้ Robotaxi + อัปเดต Optimus"
+        }
+      ],
+      "catalystSpot": {
+        "preRunupTiming": "1 สัปดาห์ก่อน delivery date",
+        "preRunup": "TSLA มี 2 catalyst types ที่ overlap กัน: (1) Delivery numbers ออกต้นเดือน ถ้า pre-release channel check บอกว่า beat มักวิ่ง +5–15% ก่อน (2) Autonomous/Robotaxi events เป็น sell-the-news — อย่าเข้าก่อน event เหล่านี้",
+        "postWin": {
+          "note": "Q3 2024 delivery beat 463K vs est 461K → +21.9% ใน 1 วัน. Earnings beat Q4 2024 → +11.7%. Delivery catalyst มักให้ single-day pop ชัดเจนกว่า autonomous announcement"
+        },
+        "postLose": {
+          "note": "Q1 2024 delivery miss 386K vs est 449K → -9.4%. Robotaxi reveal disappointment Oct 10, 2024 → -8.78% (event ไม่ได้ give concrete launch timeline). Autonomous overhype = sell-the-news"
+        },
+        "spotSizing": {
+          "reason": "HOLD — binary risk/reward แต่ record mixed (delivery beat ดีมาก, autonomous event มักผิดหวัง). 5% สะท้อน conviction ระดับกลาง — ถ้าเป็น delivery catalyst เพิ่มเป็น 6–7% ได้"
+        },
+        "stopPreCatalyst": {
+          "note": "หลุด $370 ก่อน delivery date = market บอก delivery miss แล้ว ออกก่อน"
+        },
+        "stopPostCatalyst": {
+          "note": "Delivery miss หรือ Robotaxi launch disappoint → ออกทันทีในวันนั้น TSLA สามารถ gap -15% ได้ใน 1 วัน"
+        }
+      },
+      "comparableCases": [
+        {
+          "note": "TSLA เอง +21.9% ใน 1 วัน — delivery beat แบบชัดเจนให้ผลดีที่สุด. เป็น precedent ที่ดีที่สุดสำหรับ Q2 2026 delivery"
+        },
+        {
+          "note": "Rivian +5.6% หลัง delivery beat — แสดงว่า EV delivery positive surprise ยังให้ผลดี แต่ TSLA scale ทำให้ effect ใหญ่กว่า"
+        },
+        {
+          "note": "Robotaxi reveal → -8.78% — autonomous event มักเป็น sell-the-news เพราะ market priced in คาดหวังสูงเกินจริงไว้ก่อนแล้ว"
+        }
       ]
     }
-  }
+  },
+  "catalystSpot": {
+    "catalystType": "delivery_beat + autonomous_launch",
+    "preRunup": "TSLA has 2 overlapping catalyst types: (1) Delivery numbers released early each month — if pre-release channel checks suggest a beat, stock often runs +5–15% beforehand. (2) Autonomous/Robotaxi events are sell-the-news — do NOT enter before these.",
+    "preRunupTiming": "1 week before delivery date",
+    "preRunupPct": "+5–15%",
+    "postWin": {
+      "avgPct": 16,
+      "range": "+10% to +22%",
+      "note": "Q3 2024 delivery beat 463K vs est 461K → +21.9% in 1 day. Earnings beat Q4 2024 → +11.7%. Delivery catalyst typically gives a cleaner single-day pop than autonomous announcements.",
+      "exampleDate": "Oct 2024"
+    },
+    "postLose": {
+      "avgPct": -10,
+      "range": "-8% to -20%",
+      "note": "Q1 2024 delivery miss 386K vs est 449K → -9.4%. Robotaxi reveal disappointment Oct 10, 2024 → -8.78% (event gave no concrete launch timeline). Autonomous overhype = sell-the-news.",
+      "exampleDate": "Apr 2024"
+    },
+    "spotSizing": {
+      "pct": 5,
+      "reason": "HOLD — binary risk/reward but mixed track record (delivery beats are great, autonomous events often disappoint). 5% reflects medium conviction — can increase to 6–7% if this is purely a delivery catalyst."
+    },
+    "stopPreCatalyst": {
+      "pct": -8,
+      "price": 368,
+      "note": "Break below $370 before delivery date = market already pricing in a miss. Exit early."
+    },
+    "stopPostCatalyst": {
+      "pct": -15,
+      "note": "Delivery miss or Robotaxi launch disappointment → exit same day. TSLA can gap -15% in 1 day."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "TSLA",
+      "event": "Q3 2024 delivery beat 463K — market surprise",
+      "date": "Oct 2024",
+      "movePct": 22,
+      "days": 1,
+      "outcome": "good",
+      "note": "TSLA itself +21.9% in 1 day — a clear delivery beat gives the strongest result. Best precedent for Q2 2026 delivery."
+    },
+    {
+      "ticker": "RIVN",
+      "event": "Q3 2024 delivery beat + production ramp",
+      "date": "Oct 2024",
+      "movePct": 6,
+      "days": 1,
+      "outcome": "good",
+      "note": "Rivian +5.6% after delivery beat — shows EV delivery positive surprises still work, but TSLA's scale amplifies the effect."
+    },
+    {
+      "ticker": "TSLA",
+      "event": "Robotaxi reveal event — disappointing demo",
+      "date": "Oct 2024",
+      "movePct": -9,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Robotaxi reveal → -8.78% — autonomous events tend to be sell-the-news because market expectations are priced in ahead of the event."
+    }
+  ]
 }
