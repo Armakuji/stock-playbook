@@ -62,7 +62,7 @@ export function RankingChangeTable({ rows }: { rows: RankChange[] }) {
         }}>
           <thead>
             <tr style={{ background: "var(--card)", borderBottom: "1px solid var(--border)" }}>
-              {["Rank", "Δ Rank", "Stock", "Score", "Confidence", "Weeks Listed", "TP2 Upside", "Reason"].map((h) => (
+              {["Rank", "Δ Rank", "Stock", "Score", "Confidence", "Weeks Listed", "TP2 Upside", "Reason", "Source"].map((h) => (
                 <th key={h} style={{
                   padding: "10px 14px", textAlign: "left",
                   fontSize: 9, fontWeight: 800, color: "var(--muted)",
@@ -115,6 +115,26 @@ export function RankingChangeTable({ rows }: { rows: RankChange[] }) {
                     <span style={{ fontSize: 11, color: "var(--muted)", lineHeight: 1.4 }}>
                       {row.reason}
                     </span>
+                  </td>
+                  <td style={{ padding: "12px 14px", maxWidth: 200 }}>
+                    {row.source ? (
+                      <div>
+                        <a href={row.source.url} target="_blank" rel="noopener noreferrer" style={{
+                          fontSize: 11, color: "#3b82f6", textDecoration: "none", lineHeight: 1.4,
+                          display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden",
+                          fontFamily: "var(--font-body, sans-serif)",
+                        }}>
+                          {row.source.headline}
+                        </a>
+                        <div style={{ fontSize: 9, color: "var(--muted)", marginTop: 2, fontFamily: "var(--font-mono, monospace)" }}>
+                          {row.source.date}
+                        </div>
+                      </div>
+                    ) : (
+                      <span style={{ fontSize: 10, color: "#374151", fontFamily: "var(--font-mono, monospace)", fontStyle: "italic" }}>
+                        ไม่พบข่าวเฉพาะ — อาจเป็น sector-wide move
+                      </span>
+                    )}
                   </td>
                 </tr>
               );

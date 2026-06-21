@@ -40,6 +40,14 @@ stock-radar-weekly/
 
 ---
 
+## Features
+
+- **Weekly Watchlist** — Dashboard of all tracked stocks ranked by conviction (verdict, Fed risk, score, upside). Each card shows price, score ring, price-to-target bar, and Fed risk at a glance.
+- **Ranking Change** — Table showing how each stock's rank shifted vs the previous report snapshot, with auto-generated reason (verdict change, score shift, upside movement).
+- **Stock Report Detail** — Full single-stock deep-dive with catalyst timeline, bear/base/bull/moon scenarios, analyst targets, Fed/macro risk verdict, and 3-level entry strategy with TP1/TP2/TP3 and stop loss. Supports EN/TH toggle.
+
+---
+
 ## Slash commands
 
 | Command | Description |

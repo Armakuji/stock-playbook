@@ -13,9 +13,24 @@
   "score": 88,
   "summary": "NVIDIA dominates AI accelerator market with ~80% GPU share and Blackwell ramp accelerating. Data center revenue tripled YoY. Sovereign AI deals and CoWoS supply constraints easing into H2 2026 make this a core long-term position.",
   "catalysts": [
-    { "icon": "⚡", "name": "Blackwell GB200 NVL72 Ramp", "description": "400% more interconnect bandwidth vs H100. Hyperscaler orders locked through 2027.", "dotColor": "green" },
-    { "icon": "🌍", "name": "Sovereign AI Demand", "description": "UAE, Saudi Arabia, Japan, India GPU orders — government-backed multi-billion deals.", "dotColor": "yellow" },
-    { "icon": "🧱", "name": "CUDA Ecosystem Moat", "description": "4M+ developers, switching cost is existential. NIM microservices driving enterprise software attach rate.", "dotColor": "green" }
+    {
+      "icon": "⚡",
+      "name": "Blackwell GB200 NVL72 Ramp",
+      "description": "400% more interconnect bandwidth vs H100. Hyperscaler orders locked through 2027.",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🌍",
+      "name": "Sovereign AI Demand",
+      "description": "UAE, Saudi Arabia, Japan, India GPU orders — government-backed multi-billion deals.",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🧱",
+      "name": "CUDA Ecosystem Moat",
+      "description": "4M+ developers, switching cost is existential. NIM microservices driving enterprise software attach rate.",
+      "dotColor": "green"
+    }
   ],
   "risks": [
     "AMD MI350 + Intel Gaudi gaining on price-performance at the margin",
@@ -25,20 +40,67 @@
     "Valuation: 35x forward PE demands continued beat-and-raise"
   ],
   "estimateDates": [
-    { "event": "Q2 FY27 Earnings", "dateRange": "Aug 27, 2026", "note": "Blackwell revenue ramp read-through", "est": "est. EPS $0.95", "highlight": "blue" },
-    { "event": "GTC Fall 2026", "dateRange": "Oct 2026", "note": "Next-gen Rubin architecture reveal", "highlight": "yellow" }
+    {
+      "event": "Q2 FY27 Earnings",
+      "dateRange": "Aug 27, 2026",
+      "note": "Blackwell revenue ramp read-through",
+      "est": "est. EPS $0.95",
+      "highlight": "blue"
+    },
+    {
+      "event": "GTC Fall 2026",
+      "dateRange": "Oct 2026",
+      "note": "Next-gen Rubin architecture reveal",
+      "highlight": "yellow"
+    }
   ],
   "scenarios": [
-    { "label": "Bear", "color": "red",    "pct": -20, "price": 169 },
-    { "label": "Base", "color": "yellow", "pct": 13,  "price": 238 },
-    { "label": "Bull", "color": "green",  "pct": 26,  "price": 265 },
-    { "label": "Moon", "color": "purple", "pct": 52,  "price": 320 }
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -20,
+      "price": 169
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 13,
+      "price": 238
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 26,
+      "price": 265
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 52,
+      "price": 320
+    }
   ],
   "analystTargets": [
-    { "firm": "Morgan Stanley",  "target": 260, "rating": "Overweight" },
-    { "firm": "Bank of America", "target": 270, "rating": "Buy" },
-    { "firm": "Mizuho",          "target": 250, "rating": "Buy" },
-    { "firm": "Bernstein",       "target": 240, "rating": "Outperform" }
+    {
+      "firm": "Morgan Stanley",
+      "target": 260,
+      "rating": "Overweight"
+    },
+    {
+      "firm": "Bank of America",
+      "target": 270,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Mizuho",
+      "target": 250,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Bernstein",
+      "target": 240,
+      "rating": "Outperform"
+    }
   ],
   "macroRisk": {
     "fedRisk": "MEDIUM",
@@ -49,17 +111,53 @@
   },
   "entryStrategy": {
     "entryLevels": [
-      { "label": "Entry 1", "level": 211,  "note": "Current price, momentum entry",   "timing": "Now"      },
-      { "label": "Entry 2", "level": 190, "rangeMax": 195, "note": "~9% pullback — strong support", "timing": "On dip", "preferred": true },
-      { "label": "Entry 3", "level": 170,  "note": "200-day MA zone, max conviction", "timing": "Deep dip" }
+      {
+        "label": "Entry 1",
+        "level": 211,
+        "note": "Current price, momentum entry",
+        "timing": "Now"
+      },
+      {
+        "label": "Entry 2",
+        "level": 190,
+        "rangeMax": 195,
+        "note": "~9% pullback — strong support",
+        "timing": "On dip",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 170,
+        "note": "200-day MA zone, max conviction",
+        "timing": "Deep dip"
+      }
     ],
-    "tp1": { "price": 237, "pct": 12.5, "note": "Near 52-week high resistance"   },
-    "tp2": { "price": 265, "pct": 25.8, "note": "Street high / Blackwell full ramp" },
-    "tp3": { "price": 320, "pct": 51.9, "note": "Rubin cycle bull case · 2027", "moon": true },
+    "tp1": {
+      "price": 237,
+      "pct": 12.5,
+      "note": "Near 52-week high resistance"
+    },
+    "tp2": {
+      "price": 265,
+      "pct": 25.8,
+      "note": "Street high / Blackwell full ramp"
+    },
+    "tp3": {
+      "price": 320,
+      "pct": 51.9,
+      "note": "Rubin cycle bull case · 2027",
+      "moon": true
+    },
     "stopLoss": {
-      "tight":    192, "tightPct": -8.9,  "tightNote": "Below key support",
-      "hard":     172, "hardPct":  -18.4, "hardNote":  "200-day MA breach",
-      "riskReward": "2.9 : 1", "rrNote": "Tight stop vs TP2", "rrWarning": "Strong R/R"
+      "tight": 192,
+      "tightPct": -8.9,
+      "tightNote": "Below key support",
+      "hard": 172,
+      "hardPct": -18.4,
+      "hardNote": "200-day MA breach",
+      "riskReward": "2.9 : 1",
+      "rrNote": "Tight stop vs TP2",
+      "rrWarning": "Strong R/R"
     },
     "verdict": "Core holding — BUY on dips to $190-195. Scale into $170 if deeper pullback. Hold through Blackwell ramp and Rubin reveal.",
     "approach": "DCA"
@@ -76,28 +174,169 @@
       "priceNote": "range 52 สัปดาห์ $142–$237 · Blackwell ramp เดินหน้าเต็มกำลัง",
       "scoreLabel": "Core Holding",
       "catalysts": [
-        { "name": "⚡ Blackwell GB200 NVL72 Ramp", "description": "bandwidth interconnect มากกว่า H100 ถึง 400% orders จาก Hyperscaler ล็อคถึงปี 2027" },
-        { "name": "🌍 Sovereign AI Demand", "description": "UAE, ซาอุดิอาระเบีย, ญี่ปุ่น, อินเดีย — ดีล GPU ระดับรัฐบาล มูลค่าหลายพันล้านเหรียญ" },
-        { "name": "🧱 CUDA Ecosystem Moat", "description": "นักพัฒนา 4M+ คน ต้นทุนเปลี่ยนแพลตฟอร์มสูงมาก NIM microservices ขยาย software attach rate" }
+        {
+          "name": "⚡ Blackwell GB200 NVL72 Ramp",
+          "description": "bandwidth interconnect มากกว่า H100 ถึง 400% orders จาก Hyperscaler ล็อคถึงปี 2027"
+        },
+        {
+          "name": "🌍 Sovereign AI Demand",
+          "description": "UAE, ซาอุดิอาระเบีย, ญี่ปุ่น, อินเดีย — ดีล GPU ระดับรัฐบาล มูลค่าหลายพันล้านเหรียญ"
+        },
+        {
+          "name": "🧱 CUDA Ecosystem Moat",
+          "description": "นักพัฒนา 4M+ คน ต้นทุนเปลี่ยนแพลตฟอร์มสูงมาก NIM microservices ขยาย software attach rate"
+        }
       ],
-      "risks": ["AMD MI350 + Intel Gaudi เริ่มแย่งส่วนแบ่ง price-performance", "ข้อจำกัดส่งออก US-จีน (แบน H20) — ช่องว่างรายได้ ~$15B", "ลูกค้าอาจระวังลงทุนถ้า ROI จาก AI ยังไม่เห็นผล", "CoWoS packaging ยังเป็นคอขวดจนถึง Q3 2026", "Valuation: P/E forward 35x ต้องการ beat-and-raise ต่อเนื่อง"],
-      "macroRisk": { "rateOutlook": "คาดลดดอกเบี้ย 1-2 ครั้งใน H2 2026 — หนุน multiple ของ growth stocks", "inflationNote": "PCE 2.6% — เกินเป้าแต่ทิศทางลง Fed ไม่รีบขึ้นดอกเบี้ย", "sectorImpact": "Tech/AI เป็นกลาง-บวก: ดอกเบี้ยลดขยาย DCF ไม่มีความเสี่ยงโดยตรง", "summary": "มหภาคเป็น tailwind ถ้า Fed ลดดอกเบี้ย ความเสี่ยงหลักคือ AI capex narrative สะดุด" },
+      "risks": [
+        "AMD MI350 + Intel Gaudi เริ่มแย่งส่วนแบ่ง price-performance",
+        "ข้อจำกัดส่งออก US-จีน (แบน H20) — ช่องว่างรายได้ ~$15B",
+        "ลูกค้าอาจระวังลงทุนถ้า ROI จาก AI ยังไม่เห็นผล",
+        "CoWoS packaging ยังเป็นคอขวดจนถึง Q3 2026",
+        "Valuation: P/E forward 35x ต้องการ beat-and-raise ต่อเนื่อง"
+      ],
+      "macroRisk": {
+        "rateOutlook": "คาดลดดอกเบี้ย 1-2 ครั้งใน H2 2026 — หนุน multiple ของ growth stocks",
+        "inflationNote": "PCE 2.6% — เกินเป้าแต่ทิศทางลง Fed ไม่รีบขึ้นดอกเบี้ย",
+        "sectorImpact": "Tech/AI เป็นกลาง-บวก: ดอกเบี้ยลดขยาย DCF ไม่มีความเสี่ยงโดยตรง",
+        "summary": "มหภาคเป็น tailwind ถ้า Fed ลดดอกเบี้ย ความเสี่ยงหลักคือ AI capex narrative สะดุด"
+      },
       "entryStrategy": {
         "verdict": "Core Holding — BUY เมื่อดิ่งถึง $190-195 ทยอยสะสมถึง $170 ถือยาวผ่าน Blackwell ramp และ Rubin reveal",
         "entryLevels": [
-          { "note": "ราคาปัจจุบัน momentum entry", "timing": "ตอนนี้" },
-          { "note": "ย่อ ~9% — แนวรับแข็งแกร่ง", "timing": "ถ้าย่อ" },
-          { "note": "โซน 200-day MA โอกาสทอง", "timing": "ถ้าร่วงหนัก" }
+          {
+            "note": "ราคาปัจจุบัน momentum entry",
+            "timing": "ตอนนี้"
+          },
+          {
+            "note": "ย่อ ~9% — แนวรับแข็งแกร่ง",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "โซน 200-day MA โอกาสทอง",
+            "timing": "ถ้าร่วงหนัก"
+          }
         ],
-        "tp1": { "note": "ใกล้ high 52 สัปดาห์" },
-        "tp2": { "note": "เป้า Street high / Blackwell full ramp" },
-        "tp3": { "note": "Bull case Rubin cycle · 2027" },
-        "stopLoss": { "tightNote": "ต่ำกว่าแนวรับสำคัญ", "hardNote": "หลุด 200-day MA", "rrNote": "Tight stop เทียบ TP2", "rrWarning": "R/R แข็งแกร่ง" }
+        "tp1": {
+          "note": "ใกล้ high 52 สัปดาห์"
+        },
+        "tp2": {
+          "note": "เป้า Street high / Blackwell full ramp"
+        },
+        "tp3": {
+          "note": "Bull case Rubin cycle · 2027"
+        },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่าแนวรับสำคัญ",
+          "hardNote": "หลุด 200-day MA",
+          "rrNote": "Tight stop เทียบ TP2",
+          "rrWarning": "R/R แข็งแกร่ง"
+        }
       },
       "estimateDates": [
-        { "event": "ประกาศผล Q2 FY27", "note": "ติดตาม Blackwell revenue ramp" },
-        { "event": "GTC Fall 2026", "note": "เปิดตัว Rubin architecture รุ่นใหม่" }
+        {
+          "event": "ประกาศผล Q2 FY27",
+          "note": "ติดตาม Blackwell revenue ramp"
+        },
+        {
+          "event": "GTC Fall 2026",
+          "note": "เปิดตัว Rubin architecture รุ่นใหม่"
+        }
+      ],
+      "catalystSpot": {
+        "preRunupTiming": "1–2 สัปดาห์ก่อน earnings",
+        "preRunup": "NVDA มักวิ่ง +8–15% ใน 2 สัปดาห์ก่อน earnings ถ้า AI sentiment และ hyperscaler capex news เป็นบวก ช่วง pre-earnings เป็นจังหวะที่ดีที่สุดสำหรับ spot entry — ไม่ใช่รอวันประกาศ",
+        "postWin": {
+          "note": "NVDA 8 quarters ไม่เคย miss: Q3 FY24 +24.1%, Q4 FY24 +16.4%, Q1 FY25 +9.3% avg ~16% ใน 5 sessions หลัง earnings"
+        },
+        "postLose": {
+          "note": "Guidance cut หรือ data center demand softening = -10–20% overnight เช่น Aug 2022 guidance miss → -19% ใน 2 วัน"
+        },
+        "spotSizing": {
+          "reason": "High conviction — BUY, score 88, catalyst date ชัดเจน (Aug 27) แต่ spot ไม่มี loss cap จำกัด max ที่ 8% ของพอร์ต อย่าใส่เกินนี้แม้ confidence สูง"
+        },
+        "stopPreCatalyst": {
+          "note": "ถ้าหลุด $190 ก่อน Aug 27 = momentum สวนกัน thesis อาจเปลี่ยน ออกก่อนดีกว่าถือเข้า earnings"
+        },
+        "stopPostCatalyst": {
+          "note": "ถ้า gap down >10% หลัง earnings ออกทันทีภายใน 30 นาที ไม่รอ recovery — spot ไม่มี natural cap"
+        }
+      },
+      "comparableCases": [
+        {
+          "note": "Marvell พุ่ง +19.5% ใน 2 วันหลังประกาศ AI infrastructure beat — narrative เดียวกับ NVDA custom AI silicon dominance อ่านผ่านกันได้ชัดเจน"
+        },
+        {
+          "note": "AMD +9.4% หลัง AI beat แต่ upside ต่ำกว่า NVDA — แสดงว่า NVDA ยัง premium จากตำแหน่ง market leader"
+        },
+        {
+          "note": "Broadcom +24.4% หลัง AI chip guidance ทะยาน — ยืนยัน AI infra sector มี room ทำ +20%+ ในวันประกาศผล"
+        }
       ]
     }
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "NVDA typically runs +8–15% in the 2 weeks before earnings when AI sentiment and hyperscaler capex news are positive. The pre-earnings window is the best spot entry — not waiting for announcement day.",
+    "preRunupTiming": "1–2 weeks before earnings",
+    "preRunupPct": "+8–15%",
+    "postWin": {
+      "avgPct": 16,
+      "range": "+9% to +24%",
+      "note": "NVDA has not missed in 8 straight quarters: Q3 FY24 +24.1%, Q4 FY24 +16.4%, Q1 FY25 +9.3% — avg ~16% in 5 sessions after earnings",
+      "exampleDate": "Q1 FY25 · May 2024"
+    },
+    "postLose": {
+      "avgPct": -12,
+      "range": "-8% to -20%",
+      "note": "Guidance cut or data center demand softening = -10–20% overnight. Aug 2022 guidance miss → -19% in 2 days",
+      "exampleDate": "Aug 2022"
+    },
+    "spotSizing": {
+      "pct": 8,
+      "reason": "High conviction BUY, score 88, clear catalyst date (Aug 27) — spot has no loss cap so max at 8% of portfolio. Do not exceed this even with high confidence."
+    },
+    "stopPreCatalyst": {
+      "pct": -10,
+      "price": 190,
+      "note": "Break below $190 before Aug 27 = momentum turning against thesis. Better to exit early than hold into earnings."
+    },
+    "stopPostCatalyst": {
+      "pct": -12,
+      "note": "If gap down >10% after earnings, exit within 30 min. Don't wait for recovery — spot has no natural floor."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "MRVL",
+      "event": "AI data center earnings beat + custom silicon ramp",
+      "date": "Nov 2023",
+      "movePct": 20,
+      "days": 2,
+      "outcome": "good",
+      "note": "Marvell surged +19.5% in 2 days after AI infrastructure beat — same narrative as NVDA custom AI silicon dominance. Strong read-through."
+    },
+    {
+      "ticker": "AMD",
+      "event": "MI300X AI accelerator demand beat Q3 2023",
+      "date": "Nov 2023",
+      "movePct": 9,
+      "days": 1,
+      "outcome": "good",
+      "note": "AMD +9.4% after AI beat but lower upside than NVDA — confirms NVDA commands a premium as the market leader."
+    },
+    {
+      "ticker": "AVGO",
+      "event": "AI XPU chip + VMware earnings Dec 2024",
+      "date": "Dec 2024",
+      "movePct": 24,
+      "days": 1,
+      "outcome": "good",
+      "note": "Broadcom +24.4% after AI chip guidance surge — confirms AI infra sector has room for +20%+ on earnings day."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "NVIDIA Blackwell Revenue Hits $11B Quarter, Sovereign AI Orders Surge",
+    "url": "https://investor.nvidia.com/news-events/press-releases/detail/",
+    "date": "Jun 2026"
   }
 }
