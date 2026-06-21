@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { RankChange } from "@/lib/ranking-history";
 import { StockReport } from "@/lib/types";
 
@@ -62,7 +63,7 @@ export function RankingChangeTable({ rows }: { rows: RankChange[] }) {
         }}>
           <thead>
             <tr style={{ background: "var(--card)", borderBottom: "1px solid var(--border)" }}>
-              {["Rank", "Δ Rank", "Stock", "Score", "Confidence", "Weeks Listed", "TP2 Upside", "Reason", "Source"].map((h) => (
+              {["Rank", "Δ Rank", "Stock", "Score", "Confidence", "Weeks Listed", "TP2 Upside", "Reason", "Source", ""].map((h) => (
                 <th key={h} style={{
                   padding: "10px 14px", textAlign: "left",
                   fontSize: 9, fontWeight: 800, color: "var(--muted)",
@@ -86,17 +87,19 @@ export function RankingChangeTable({ rows }: { rows: RankChange[] }) {
                   <td style={{ padding: "12px 14px", fontWeight: 800, fontSize: 13, color: "var(--text)" }}>#{row.currentRank}</td>
                   <td style={{ padding: "12px 14px" }}><DeltaBadge delta={row.delta} /></td>
                   <td style={{ padding: "12px 14px" }}>
-                    <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-                      <div style={{ width: 3, height: 28, borderRadius: 2, background: verdictColor, flexShrink: 0 }} />
-                      <div>
-                        <div style={{ fontWeight: 800, fontSize: 13, color: "var(--text)", fontFamily: "var(--font-display, sans-serif)", letterSpacing: "-0.3px" }}>
-                          {row.ticker}
-                        </div>
-                        <div style={{ fontSize: 10, color: "var(--muted)", marginTop: 1, fontFamily: "var(--font-body, sans-serif)" }}>
-                          {row.companyName.split(" ").slice(0, 2).join(" ")}
+                    <Link href={`/report/${row.ticker.toLowerCase()}`} style={{ textDecoration: "none" }}>
+                      <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                        <div style={{ width: 3, height: 28, borderRadius: 2, background: verdictColor, flexShrink: 0 }} />
+                        <div>
+                          <div style={{ fontWeight: 800, fontSize: 13, color: verdictColor, fontFamily: "var(--font-display, sans-serif)", letterSpacing: "-0.3px", textDecoration: "underline", textDecorationColor: `${verdictColor}55`, textUnderlineOffset: 3 }}>
+                            {row.ticker}
+                          </div>
+                          <div style={{ fontSize: 10, color: "var(--muted)", marginTop: 1, fontFamily: "var(--font-body, sans-serif)" }}>
+                            {row.companyName.split(" ").slice(0, 2).join(" ")}
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    </Link>
                   </td>
                   <td style={{ padding: "12px 14px" }}>
                     <span style={{ fontWeight: 800, fontSize: 13, color: verdictColor }}>{row.score}</span>
@@ -135,6 +138,25 @@ export function RankingChangeTable({ rows }: { rows: RankChange[] }) {
                         ไม่พบข่าวเฉพาะ — อาจเป็น sector-wide move
                       </span>
                     )}
+                  </td>
+                  <td style={{ padding: "12px 14px", whiteSpace: "nowrap" }}>
+                    <Link
+                      href={`/report/${row.ticker.toLowerCase()}`}
+                      style={{
+                        fontSize: 11, fontWeight: 800,
+                        padding: "4px 10px", borderRadius: 6,
+                        background: `${verdictColor}15`,
+                        color: verdictColor,
+                        border: `1px solid ${verdictColor}35`,
+                        textDecoration: "none",
+                        fontFamily: "var(--font-mono, monospace)",
+                        letterSpacing: "0.3px",
+                        display: "inline-block",
+                        transition: "background 0.15s",
+                      }}
+                    >
+                      View →
+                    </Link>
                   </td>
                 </tr>
               );
