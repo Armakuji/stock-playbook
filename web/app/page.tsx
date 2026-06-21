@@ -1,20 +1,18 @@
 import { getAllReports } from "@/lib/reports";
 import { rankReports } from "@/lib/ranking";
+import { getRankingChanges } from "@/lib/ranking-history";
 import { StockCard } from "./StockCard";
-
-const VERDICT_COLORS = {
-  BUY: "#10b981", HOLD: "#f59e0b", SELL: "#ef4444", SPECULATIVE: "#8b5cf6",
-} as const;
+import { RankingChangeTable } from "./RankingChangeTable";
 
 export default function DashboardPage() {
   const reports = getAllReports();
   const ranked = rankReports(reports);
+  const rankChanges = getRankingChanges();
 
   const buys  = ranked.filter((r) => r.verdict === "BUY").length;
   const holds = ranked.filter((r) => r.verdict === "HOLD").length;
   const specs = ranked.filter((r) => r.verdict === "SPECULATIVE").length;
 
-  // Aggregate stats
   const avgUpside = ranked.length > 0
     ? Math.round(ranked.reduce((s, r) => s + ((r.entryStrategy.tp2.price - r.price) / r.price) * 100, 0) / ranked.length)
     : 0;
@@ -25,11 +23,11 @@ export default function DashboardPage() {
   const topPick = ranked[0];
 
   const statsItems = [
-    { label: "Top Pick",      value: topPick?.ticker ?? "—",   color: "#10b981"       },
-    { label: "Avg TP2 Upside",value: `+${avgUpside}%`,         color: "#10b981"       },
-    { label: "Avg Score",     value: `${avgScore}`,            color: "var(--text)"   },
-    { label: "Low Fed Risk",  value: `${lowFedRisk} / ${ranked.length}`, color: "#10b981" },
-    { label: "BUY Signals",   value: `${buys}`,                color: "#10b981"       },
+    { label: "Top Pick",       value: topPick?.ticker ?? "—",            color: "#10b981"     },
+    { label: "Avg TP2 Upside", value: `+${avgUpside}%`,                  color: "#10b981"     },
+    { label: "Avg Score",      value: `${avgScore}`,                      color: "var(--text)" },
+    { label: "Low Fed Risk",   value: `${lowFedRisk} / ${ranked.length}`, color: "#10b981"     },
+    { label: "BUY Signals",    value: `${buys}`,                          color: "#10b981"     },
   ];
 
   return (
@@ -37,17 +35,13 @@ export default function DashboardPage() {
       {/* ── Hero header ───────────────────────────────────────── */}
       <div style={{ marginBottom: 24 }}>
         <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 4 }}>
-          {/* Radar pulse icon */}
           <div style={{ position: "relative", width: 18, height: 18, flexShrink: 0 }}>
             <div style={{
               position: "absolute", inset: 0, borderRadius: "50%",
               border: "2px solid #10b981",
               animation: "livePulse 2s ease-in-out infinite",
             }} />
-            <div style={{
-              position: "absolute", inset: 4, borderRadius: "50%",
-              background: "#10b981",
-            }} />
+            <div style={{ position: "absolute", inset: 4, borderRadius: "50%", background: "#10b981" }} />
           </div>
           <h1 style={{
             fontSize: "clamp(20px, 4vw, 28px)", fontWeight: 900, margin: 0,
@@ -123,6 +117,9 @@ export default function DashboardPage() {
           ))}
         </div>
       )}
+
+      {/* ── Ranking Change section ─────────────────────────────── */}
+      <RankingChangeTable rows={rankChanges} />
     </div>
   );
 }
