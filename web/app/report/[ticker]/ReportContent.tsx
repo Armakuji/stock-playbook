@@ -883,11 +883,26 @@ export function ReportContent({ report: baseReport }: { report: StockReport }) {
       <StickySummaryBar report={report} verdictColor={verdictColor} />
 
       {/* Nav row */}
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 20 }}>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 20, flexWrap: "wrap", gap: 10 }}>
         <Link href="/" style={{ fontSize: 13, color: "var(--muted)", textDecoration: "none", display: "flex", alignItems: "center", gap: 6 }}>
           ← All Reports
         </Link>
-        <LangToggle lang={lang} hasThai={hasThai} onChange={setLang} />
+        <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+          <Link
+            href={`/report/${report.ticker.toLowerCase()}/simulator`}
+            style={{
+              fontSize: 12, fontWeight: 800, padding: "6px 14px", borderRadius: 8,
+              background: "#8b5cf620", color: "#c4b5fd",
+              border: "1px solid #8b5cf640",
+              textDecoration: "none", display: "flex", alignItems: "center", gap: 6,
+              fontFamily: "var(--font-mono, monospace)", letterSpacing: "0.5px",
+              transition: "background 0.15s, border-color 0.15s",
+            }}
+          >
+            📐 Simulate Position
+          </Link>
+          <LangToggle lang={lang} hasThai={hasThai} onChange={setLang} />
+        </div>
       </div>
 
       {/* Language-keyed wrapper → smooth fade on EN/TH swap */}
