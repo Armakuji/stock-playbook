@@ -67,9 +67,20 @@ export function applyTranslation(report: StockReport, lang: Lang): StockReport {
         ...cs,
         preRunup:      ct?.preRunup      ?? cs.preRunup,
         preRunupTiming: ct?.preRunupTiming ?? cs.preRunupTiming,
+        earningsHistory: cs.earningsHistory?.map((e, i) => ({
+          ...e,
+          note: ct?.earningsHistory?.[i]?.note ?? e.note,
+        })),
         postWin:  { ...cs.postWin,  note: ct?.postWin?.note  ?? cs.postWin.note  },
         postLose: { ...cs.postLose, note: ct?.postLose?.note ?? cs.postLose.note },
-        spotSizing:       { ...cs.spotSizing,       reason: ct?.spotSizing?.reason             ?? cs.spotSizing.reason       },
+        spotSizing: {
+          ...cs.spotSizing,
+          reason: ct?.spotSizing?.reason ?? cs.spotSizing.reason,
+          breakdown: cs.spotSizing.breakdown?.map((b, i) => ({
+            ...b,
+            label: ct?.spotSizing?.breakdown?.[i]?.label ?? b.label,
+          })),
+        },
         stopPreCatalyst:  { ...cs.stopPreCatalyst,  note:   ct?.stopPreCatalyst?.note          ?? cs.stopPreCatalyst.note    },
         stopPostCatalyst: { ...cs.stopPostCatalyst, note:   ct?.stopPostCatalyst?.note         ?? cs.stopPostCatalyst.note   },
       };

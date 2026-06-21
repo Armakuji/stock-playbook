@@ -124,3 +124,94 @@ body {
   .grid-3 { grid-template-columns: 1fr 1fr; }
   .grid-4 { grid-template-columns: 1fr 1fr; }
 }
+
+/* ─── Report layout: asymmetric grids (reduces visual sameness) ─────────────── */
+
+.report-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 12px;
+  align-items: stretch;
+}
+.report-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 12px;
+  align-items: stretch;
+}
+@media (max-width: 860px) {
+  .report-grid-3, .report-grid-2 { grid-template-columns: 1fr; }
+}
+
+/* ─── Micro-interactions ───────────────────────────────────────────────────── */
+
+.hover-lift {
+  transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease, box-shadow 0.18s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-bright);
+  background: #ffffff09;
+  box-shadow: 0 6px 22px rgba(0,0,0,0.35);
+}
+
+.analyst-fill {
+  transition: width 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Smooth EN/TH language swap */
+@keyframes langFade {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.lang-fade { animation: langFade 0.32s ease both; }
+
+/* Sticky summary bar */
+@keyframes slideDownBar {
+  from { transform: translateY(-100%); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+.sticky-summary {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 60;
+  animation: slideDownBar 0.28s cubic-bezier(0.22, 1, 0.36, 1) both;
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+}
+
+/* ─── Terminal depth: continuous atmosphere on the report surface ───────────── */
+
+.terminal-surface {
+  position: relative;
+}
+.terminal-surface::before {
+  content: "";
+  position: absolute;
+  inset: -40px -10px;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(ellipse 70% 22% at 50% 0%, rgba(16,185,129,0.06) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 30% at 88% 38%, rgba(139,92,246,0.05) 0%, transparent 60%),
+    radial-gradient(ellipse 55% 28% at 10% 72%, rgba(245,158,11,0.035) 0%, transparent 60%);
+}
+.terminal-surface > * { position: relative; z-index: 1; }
+
+/* Faint scanlines on the spot-mode panel for the "terminal" feel */
+.scanlines {
+  background-image: repeating-linear-gradient(
+    180deg,
+    rgba(255,255,255,0.015) 0px,
+    rgba(255,255,255,0.015) 1px,
+    transparent 1px,
+    transparent 4px
+  );
+}
+
+@keyframes spotPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(139,92,246,0.0); }
+  50%       { box-shadow: 0 0 22px 0 rgba(139,92,246,0.12); }
+}
