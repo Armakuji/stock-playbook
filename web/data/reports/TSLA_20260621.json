@@ -1,0 +1,102 @@
+{
+  "ticker": "TSLA",
+  "companyName": "Tesla, Inc.",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-21T00:00:00.000Z",
+  "price": 400.49,
+  "priceChange": 1.04,
+  "priceNote": "52-wk range $289–$499 · FSD v13 + Robotaxi approaching · near range resistance",
+  "marketCap": "$1.28T",
+  "sector": "Technology / EV / Autonomy",
+  "verdict": "HOLD",
+  "scoreLabel": "Speculative",
+  "score": 68,
+  "summary": "Tesla is near the top of its 52-week range at $400. The autonomy optionality (Robotaxi, FSD v13, Optimus) is real and potentially transformational, but current EV margins remain under pressure from price cuts and rising competition. At $400, the market prices in a lot of good news. HOLD unless autonomy catalysts crystallize.",
+  "catalysts": [
+    { "icon": "🚗", "name": "Robotaxi Launch — Austin", "description": "Unsupervised FSD Robotaxi service launching in Austin TX — first commercial autonomy revenue for Tesla.", "urgencyLabel": "NOW", "dateBadge": "Jun 2026", "badgeColor": "red", "dotColor": "red" },
+    { "icon": "🤖", "name": "Optimus Robot Revenue", "description": "Tesla targeting 1,000+ Optimus units shipped to external customers in 2026. Production scale-up key.", "dotColor": "yellow" },
+    { "icon": "⚡", "name": "FSD v13 Subscription Growth", "description": "v13 DOJO-trained model showing step-change in intervention rates. Subscription attach rate rising.", "dotColor": "green" }
+  ],
+  "risks": [
+    "EV volume growth flat: deliveries at risk from BYD and Chinese competition in key markets",
+    "Gross margin 17.4% auto — further price cuts could compress further",
+    "Robotaxi regulatory: city-by-city approval process; NHTSA scrutiny ongoing",
+    "Elon Musk political distraction risk — brand damage in key markets (EU, blue-state US)",
+    "Valuation: 85x forward P/E — any autonomy narrative slip = severe derating"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Deliveries", "dateRange": "Jul 2, 2026", "note": "Critical volume recovery read after Q1 miss", "est": "est. 430K units", "highlight": "blue" },
+    { "event": "Q2 2026 Earnings", "dateRange": "Jul 23, 2026", "note": "Robotaxi revenue line + Optimus update", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red",    "pct": -25, "price": 300 },
+    { "label": "Base", "color": "yellow", "pct": 10,  "price": 440 },
+    { "label": "Bull", "color": "green",  "pct": 25,  "price": 500 },
+    { "label": "Moon", "color": "purple", "pct": 50,  "price": 600 }
+  ],
+  "analystTargets": [
+    { "firm": "Wedbush",       "target": 550, "rating": "Outperform" },
+    { "firm": "Morgan Stanley","target": 410, "rating": "Equal Weight" },
+    { "firm": "Goldman Sachs", "target": 320, "rating": "Neutral" },
+    { "firm": "Avg (all)",     "target": 421, "rating": "Mixed" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Fed cuts in H2 2026 benefit auto loans — positive for EV demand at the margin",
+    "inflationNote": "Lithium carbonate prices at multi-year lows — battery cost tailwind for 2026-2027",
+    "sectorImpact": "EV sector: IRA credit retention uncertain but Tesla less dependent; autonomy is a pure narrative play",
+    "summary": "Macro is a mild tailwind (rate cuts, battery costs). Core risk is operational — not macroeconomic."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 400,  "note": "Current price — near range top, sizing carefully", "timing": "Small position" },
+      { "label": "Entry 2", "level": 360, "rangeMax": 370, "note": "Better risk/reward, prior consolidation zone", "timing": "On dip", "preferred": true },
+      { "label": "Entry 3", "level": 315,  "note": "52-wk support zone, max conviction level", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 450, "pct": 12.4, "note": "Mid-range breakout target" },
+    "tp2": { "price": 500, "pct": 24.9, "note": "Near 52-wk high $499 — Robotaxi priced in" },
+    "tp3": { "price": 600, "pct": 49.8, "note": "Optimus + autonomous fleet · 2027", "moon": true },
+    "stopLoss": {
+      "tight":    370, "tightPct": -7.6,  "tightNote": "Below consolidation zone",
+      "hard":     315, "hardPct":  -21.3, "hardNote":  "52-wk support breach",
+      "riskReward": "3.3 : 1", "rrNote": "Tight stop vs TP2", "rrWarning": "Good R/R if entering on dip"
+    },
+    "verdict": "HOLD / Small position at $400. Better entry at $360-370. Asymmetric upside if Robotaxi scales — but conviction requires autonomy execution.",
+    "approach": "Scale In"
+  },
+  "sources": [
+    "https://finance.yahoo.com/quote/TSLA/",
+    "https://ir.tesla.com/",
+    "https://www.cnbc.com/markets/stocks/TSLA"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Tesla อยู่ใกล้ด้านบนของ range 52 สัปดาห์ที่ $400 โอกาสด้าน autonomy (Robotaxi, FSD v13, Optimus) เป็นจริงและอาจเปลี่ยนเกมได้ แต่ EV margin ยังถูกกดดันจากการลดราคาและการแข่งขันที่เพิ่มขึ้น ที่ $400 ตลาดตีราคาข่าวดีไปมากแล้ว HOLD เว้นแต่ autonomy catalysts ชัดเจนขึ้น",
+      "priceNote": "range 52 สัปดาห์ $289–$499 · FSD v13 + Robotaxi กำลังมา · ใกล้แนวต้านด้านบน",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "🚗 เปิดตัว Robotaxi — Austin", "description": "บริการ FSD Robotaxi แบบไม่มีคนขับในเมือง Austin TX — รายได้ autonomy เชิงพาณิชย์ครั้งแรกของ Tesla" },
+        { "name": "🤖 รายได้ Optimus Robot", "description": "Tesla ตั้งเป้าส่งมอบ Optimus 1,000+ หน่วยให้ลูกค้าภายนอกในปี 2026 การขยาย scale การผลิตเป็นกุญแจสำคัญ" },
+        { "name": "⚡ การเติบโตสมาชิก FSD v13", "description": "โมเดล v13 ที่เทรนด้วย DOJO แสดงให้เห็น step-change ในอัตราการ intervention อัตราการติด subscription สูงขึ้น" }
+      ],
+      "risks": ["ปริมาณ EV ไม่เติบโต: deliveries เสี่ยงจาก BYD และการแข่งขันจากจีนในตลาดสำคัญ", "Gross margin 17.4% auto — ลดราคาเพิ่มเติมอาจกด margin ลงอีก", "กฎระเบียบ Robotaxi: ต้องขออนุญาตทีละเมือง NHTSA ยังตรวจสอบอยู่", "ความเสี่ยงจากการเมืองของ Elon Musk — ความเสียหายต่อ brand ในตลาดสำคัญ (EU, blue-state US)", "Valuation: P/E forward 85x — ถ้า narrative autonomy สะดุด จะเกิด derating รุนแรง"],
+      "macroRisk": { "rateOutlook": "Fed ลดดอกเบี้ยใน H2 2026 ส่งผลดีต่อ auto loans — เป็นบวกต่อความต้องการ EV ที่ margin", "inflationNote": "ราคา Lithium carbonate ต่ำสุดในรอบหลายปี — tailwind ต้นทุน battery ปี 2026-2027", "sectorImpact": "EV sector: ความไม่แน่นอนเรื่องการรักษา IRA credit แต่ Tesla พึ่งพาน้อยกว่า autonomy เป็นการเล่น narrative ล้วนๆ", "summary": "มหภาคเป็น tailwind เล็กน้อย (ลดดอกเบี้ย, ต้นทุน battery) ความเสี่ยงหลักคือ operational ไม่ใช่เศรษฐกิจมหภาค" },
+      "entryStrategy": {
+        "verdict": "HOLD / ถือจำนวนน้อยที่ $400 Entry ที่ดีกว่าคือ $360-370 Upside แบบ asymmetric ถ้า Robotaxi scale ได้ — แต่ต้องการความเชื่อมั่นในการ execute autonomy",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ใกล้ด้านบน range ควรซื้อน้อย", "timing": "ถือจำนวนน้อย" },
+          { "note": "Risk/reward ดีกว่า โซน consolidation ก่อนหน้า", "timing": "ถ้าย่อ" },
+          { "note": "โซนแนวรับ 52 สัปดาห์ ระดับ conviction สูงสุด", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "เป้าหมาย breakout กลาง range" },
+        "tp2": { "note": "ใกล้ high 52 สัปดาห์ $499 — Robotaxi ถูกตีราคาแล้ว" },
+        "tp3": { "note": "Optimus + autonomous fleet · 2027" },
+        "stopLoss": { "tightNote": "ต่ำกว่าโซน consolidation", "hardNote": "หลุดแนวรับ 52 สัปดาห์", "rrNote": "Tight stop เทียบ TP2", "rrWarning": "R/R ดีถ้า entry ตอนย่อ" }
+      },
+      "estimateDates": [
+        { "event": "Deliveries Q2 2026", "note": "อ่านการฟื้นตัวปริมาณหลังพลาด Q1" },
+        { "event": "ประกาศผล Q2 2026", "note": "บรรทัดรายได้ Robotaxi + อัปเดต Optimus" }
+      ]
+    }
+  }
+}

@@ -16,10 +16,16 @@ export function getAllReports(): StockReport[] {
     return JSON.parse(content) as StockReport;
   });
 
-  // Sort by generatedAt descending (newest report first)
-  return reports.sort(
+  // Sort by generatedAt descending (newest first), then deduplicate — keep only latest per ticker
+  const sorted = reports.sort(
     (a, b) => new Date(b.generatedAt).getTime() - new Date(a.generatedAt).getTime()
   );
+  const seen = new Set<string>();
+  return sorted.filter((r) => {
+    if (seen.has(r.ticker)) return false;
+    seen.add(r.ticker);
+    return true;
+  });
 }
 
 export function getReport(ticker: string): StockReport | null {

@@ -1,0 +1,135 @@
+{
+  "ticker": "AVGO",
+  "companyName": "Broadcom Inc.",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-21T00:00:00.000Z",
+  "price": 411.46,
+  "priceChange": 0.85,
+  "priceNote": "Near mid-range of 52-wk $244–$495 · AI XPU ramp in progress",
+  "marketCap": "$1.95T",
+  "sector": "Technology / Semiconductors",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 85,
+  "summary": "Broadcom is the stealth AI winner — custom AI chips (XPUs) for Google, Meta, Apple plus AI networking (Ethernet switching) are compounding into a $60B+ AI revenue business by 2027. VMware integration now cash-flow positive ahead of schedule, and the recurring software revenue transforms the P&L permanently.",
+  "catalysts": [
+    {
+      "icon": "🧠",
+      "name": "Custom AI XPU Business",
+      "description": "Google TPUs, Meta MTIA, Apple neural engine — AVGO designs them all. TAM expanding to $60-90B by 2027 per management guidance.",
+      "dotColor": "green",
+      "dateBadge": "FY27 Ramp",
+      "badgeColor": "green"
+    },
+    {
+      "icon": "🔗",
+      "name": "AI Ethernet Networking",
+      "description": "Tomahawk 5 + Jericho3-AI switches winning vs Infiniband in hyperscaler AI clusters. $4B+ networking revenue growing 40% YoY.",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "💼",
+      "name": "VMware Integration Ahead of Schedule",
+      "description": "Subscription transition completed. $8.5B annual recurring revenue locked. EBITDA margin expanding to 65%+.",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Customer concentration: Google + Meta = ~40% of AI chip revenue",
+    "AMD and Marvell competing for custom silicon wins",
+    "VMware enterprise churn if pricing pushes customers to alternatives",
+    "Debt load from VMware acquisition (~$70B) limits buyback flexibility",
+    "US-China trade restrictions could hit legacy semiconductor revenue"
+  ],
+  "estimateDates": [
+    { "event": "Q3 FY26 Earnings", "dateRange": "Sep 4, 2026", "note": "XPU revenue ramp confirmation", "est": "est. EPS $1.65", "highlight": "blue" },
+    { "event": "AI XPU Design Win", "dateRange": "H2 2026", "note": "New hyperscaler partnership expected", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear",  "color": "red",    "pct": -18, "price": 337 },
+    { "label": "Base",  "color": "yellow", "pct": 12,  "price": 461 },
+    { "label": "Bull",  "color": "green",  "pct": 22,  "price": 502 },
+    { "label": "Moon",  "color": "purple", "pct": 46,  "price": 600 }
+  ],
+  "analystTargets": [
+    { "firm": "Goldman Sachs",  "target": 520, "rating": "Buy" },
+    { "firm": "Morgan Stanley", "target": 510, "rating": "Overweight" },
+    { "firm": "Citi",           "target": 480, "rating": "Buy" },
+    { "firm": "Wall St Consensus (26)", "target": 502, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Rate cuts reduce VMware debt servicing costs — meaningful for FCF expansion",
+    "inflationNote": "Software-heavy mix insulates from materials inflation; semiconductor margins stable",
+    "sectorImpact": "Tech sector broadly benefits from rate cuts; AVGO software revenue is recession-resilient",
+    "summary": "Low macro sensitivity. AI custom silicon + VMware ARR = durable revenue regardless of rates."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 411,  "note": "Current price — momentum entry",    "timing": "Now"           },
+      { "label": "Entry 2", "level": 380, "rangeMax": 390, "note": "Post-earnings dip zone", "timing": "On dip", "preferred": true },
+      { "label": "Entry 3", "level": 350,  "note": "Key support / 200-day MA area",     "timing": "Deep dip"      }
+    ],
+    "tp1": { "price": 460, "pct": 11.8, "note": "Near-term resistance / Base case"      },
+    "tp2": { "price": 502, "pct": 22.0, "note": "Analyst consensus target"              },
+    "tp3": { "price": 600, "pct": 45.8, "note": "Full AI XPU monetization · 2027", "moon": true },
+    "stopLoss": {
+      "tight":    380, "tightPct": -7.6,  "tightNote": "Below preferred entry zone",
+      "hard":     345, "hardPct":  -16.2, "hardNote":  "200-day MA breach",
+      "riskReward": "2.9 : 1", "rrNote": "Tight stop vs TP2", "rrWarning": "Strong R/R"
+    },
+    "verdict": "Core holding — BUY on any dip into $380–390. AI XPU + VMware ARR is a rare quality+growth combo with analyst consensus at $502.",
+    "approach": "DCA"
+  },
+  "sources": [
+    "https://finance.yahoo.com/quote/AVGO/",
+    "https://investors.broadcom.com/financial-information/stock-information/historical-price-lookup",
+    "https://public.com/stocks/avgo/forecast-price-target"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Broadcom คือผู้ชนะ AI ที่หลายคนมองข้าม — chip AI แบบ custom (XPU) สำหรับ Google, Meta, Apple บวกกับ AI networking กำลังรวมตัวเป็นธุรกิจรายได้ $60B+ ภายในปี 2027 การรวมกิจการ VMware เริ่มสร้างกระแสเงินสดบวกเร็วกว่าแผน และรายได้ซอฟต์แวร์แบบ recurring เปลี่ยนโครงสร้าง P&L ถาวร",
+      "priceNote": "อยู่กลาง range 52 สัปดาห์ $244–$495 · XPU ramp กำลังดำเนินอยู่",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "🧠 ธุรกิจ Custom AI XPU", "description": "Google TPUs, Meta MTIA, Apple neural engine — AVGO ออกแบบให้ทั้งหมด TAM ขยายถึง $60-90B ภายในปี 2027" },
+        { "name": "🔗 AI Ethernet Networking", "description": "Tomahawk 5 + Jericho3-AI switches ชนะ Infiniband ใน AI clusters ของ hyperscaler รายได้ networking $4B+ โต 40% YoY" },
+        { "name": "💼 รวม VMware เร็วกว่าแผน", "description": "เปลี่ยนเป็น subscription เสร็จแล้ว รายได้ recurring $8.5B ต่อปี EBITDA margin ขยายถึง 65%+" }
+      ],
+      "risks": [
+        "ลูกค้ากระจุก: Google + Meta = ~40% ของรายได้ AI chip",
+        "AMD และ Marvell แข่งงาน custom silicon",
+        "VMware enterprise อาจลดลงถ้า pricing ดันให้ลูกค้าหนีไปทางเลือกอื่น",
+        "หนี้จากการซื้อ VMware (~$70B) จำกัดความยืดหยุ่น buyback",
+        "ข้อจำกัดการค้า US-จีน อาจกระทบรายได้ semiconductor เดิม"
+      ],
+      "macroRisk": {
+        "rateOutlook": "การลดดอกเบี้ยลดต้นทุนหนี้ VMware — มีนัยต่อการขยาย FCF",
+        "inflationNote": "สัดส่วน software สูงป้องกัน inflation วัสดุ margin semiconductor คงที่",
+        "sectorImpact": "Tech ได้ประโยชน์จากการลดดอกเบี้ย รายได้ AVGO software ทนทานต่อ recession",
+        "summary": "ความไวต่อ macro ต่ำ AI custom silicon + VMware ARR = รายได้ทนทานไม่ขึ้นกับดอกเบี้ย"
+      },
+      "entryStrategy": {
+        "verdict": "Core Holding — BUY แข็งแกร่งเมื่อย่อ $380–390 AI XPU + VMware ARR = คุณภาพ+growth หายากในตลาด เป้า consensus นักวิเคราะห์ $502",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — เข้าตาม momentum",   "timing": "ตอนนี้"      },
+          { "note": "โซนย่อหลัง earnings",                "timing": "ถ้าย่อ"      },
+          { "note": "แนวรับสำคัญ / ใกล้ 200-day MA",      "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "แนวต้านระยะสั้น / Base case" },
+        "tp2": { "note": "เป้า consensus นักวิเคราะห์"  },
+        "tp3": { "note": "AI XPU monetization เต็มรูปแบบ · 2027" },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่าโซนเข้า preferred",
+          "hardNote":  "หลุด 200-day MA",
+          "rrNote":    "Tight stop เทียบ TP2",
+          "rrWarning": "R/R แข็งแกร่ง"
+        }
+      },
+      "estimateDates": [
+        { "event": "ประกาศผล Q3 FY26", "note": "ยืนยันการ ramp รายได้ XPU" },
+        { "event": "ดีล AI XPU ใหม่",  "note": "คาด partnership hyperscaler รายใหม่" }
+      ]
+    }
+  }
+}
