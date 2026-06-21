@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { StockReport, Catalyst, EntryLevel, Scenario, EstimateDate, CatalystSpot, ComparableCase } from "@/lib/types";
 import { applyTranslation, Lang } from "@/lib/i18n";
+import { TimelinePoint } from "@/lib/timeline";
+import { StockTimeline } from "./StockTimeline";
 
 // ─── Color maps ───────────────────────────────────────────────────────────────
 
@@ -870,7 +872,7 @@ function LangToggle({ lang, hasThai, onChange }: { lang: Lang; hasThai: boolean;
 
 // ─── Main Export ──────────────────────────────────────────────────────────────
 
-export function ReportContent({ report: baseReport }: { report: StockReport }) {
+export function ReportContent({ report: baseReport, timelinePoints = [] }: { report: StockReport; timelinePoints?: TimelinePoint[] }) {
   const [lang, setLang] = useState<Lang>("en");
   const report = applyTranslation(baseReport, lang);
   const hasThai = !!baseReport.i18n?.th;
@@ -993,6 +995,11 @@ export function ReportContent({ report: baseReport }: { report: StockReport }) {
             </div>
           )}
         </div>
+
+        {/* Stock Timeline */}
+        {timelinePoints.length > 0 && (
+          <StockTimeline points={timelinePoints} ticker={report.ticker} />
+        )}
 
         {/* Possible Up % — kept as the new full-width diverging chart */}
         {report.scenarios && report.scenarios.length > 0 && (
