@@ -94,11 +94,23 @@ export function getRankingChanges(): RankChange[] {
     byTicker[ticker].sort((a, b) => a.date.localeCompare(b.date));
   }
 
-  // Current = latest per ticker; previous = second-to-latest (if exists)
+  // Current = latest per ticker
   const currentReports = Object.values(byTicker).map((arr) => arr[arr.length - 1].report);
+
+  // Find the most recent date in the entire report set ("today")
+  const maxDate = Object.values(byTicker)
+    .flatMap((arr) => arr.map((e) => e.date))
+    .reduce((a, b) => (a > b ? a : b), "");
+
+  // Previous = each ticker's latest report STRICTLY BEFORE maxDate
+  // This way tickers not updated today (e.g. AVGO still on yesterday's file) are still
+  // ranked correctly in the previous snapshot instead of appearing as NEW.
   const prevReports = Object.values(byTicker)
-    .filter((arr) => arr.length >= 2)
-    .map((arr) => arr[arr.length - 2].report);
+    .map((arr) => {
+      const older = arr.filter((e) => e.date < maxDate);
+      return older.length > 0 ? older[older.length - 1].report : null;
+    })
+    .filter((r): r is StockReport => r !== null);
 
   const currentRanked = rankReports(currentReports);
   const prevRanked = rankReports(prevReports);
