@@ -48,21 +48,75 @@
     "Revenue ramp ($260–270M guidance) heavily dependent on government + enterprise contract timing"
   ],
   "estimateDates": [
-    { "event": "Q2 2026 Earnings", "dateRange": "Aug 2026", "note": "Revenue ramp read", "est": "est. $60M+ Q2", "highlight": "blue" },
-    { "event": "Profitable Quarter Target", "dateRange": "Late 2026 / Q1 2027", "note": "First profitable quarter", "est": "Milestone", "highlight": "yellow" },
-    { "event": "FY2028 Revenue", "dateRange": "2028", "note": "$388M target", "est": "$388M", "highlight": "yellow" }
+    {
+      "event": "Q2 2026 Earnings",
+      "dateRange": "Aug 2026",
+      "note": "Revenue ramp read",
+      "est": "est. $60M+ Q2",
+      "highlight": "blue"
+    },
+    {
+      "event": "Profitable Quarter Target",
+      "dateRange": "Late 2026 / Q1 2027",
+      "note": "First profitable quarter",
+      "est": "Milestone",
+      "highlight": "yellow"
+    },
+    {
+      "event": "FY2028 Revenue",
+      "dateRange": "2028",
+      "note": "$388M target",
+      "est": "$388M",
+      "highlight": "yellow"
+    }
   ],
   "scenarios": [
-    { "label": "Bear", "color": "red", "pct": -40, "price": 36 },
-    { "label": "Base", "color": "yellow", "pct": 18, "price": 70 },
-    { "label": "Bull", "color": "green", "pct": 45, "price": 86 },
-    { "label": "Moon", "color": "purple", "pct": 130, "price": 137 }
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -40,
+      "price": 36
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 18,
+      "price": 70
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 45,
+      "price": 86
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 130,
+      "price": 137
+    }
   ],
   "analystTargets": [
-    { "firm": "Northland", "target": 70, "rating": "Outperform" },
-    { "firm": "Needham", "target": 68, "rating": "Buy" },
-    { "firm": "B. Riley", "target": 65, "rating": "Buy" },
-    { "firm": "Stifel", "target": 55, "rating": "Hold" }
+    {
+      "firm": "Northland",
+      "target": 70,
+      "rating": "Outperform"
+    },
+    {
+      "firm": "Needham",
+      "target": 68,
+      "rating": "Buy"
+    },
+    {
+      "firm": "B. Riley",
+      "target": 65,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Stifel",
+      "target": 55,
+      "rating": "Hold"
+    }
   ],
   "macroRisk": {
     "fedRisk": "MEDIUM",
@@ -73,17 +127,53 @@
   },
   "entryStrategy": {
     "entryLevels": [
-      { "label": "Entry 1", "level": 60, "note": "Current price — ค่าขนม entry", "timing": "Now" },
-      { "label": "Entry 2", "level": 48, "rangeMax": 52, "note": "Dip to 50-day MA area", "timing": "If dips", "preferred": true },
-      { "label": "Entry 3", "level": 38, "note": "Deep dip / bear case", "timing": "Deep dip" }
+      {
+        "label": "Entry 1",
+        "level": 60,
+        "note": "Current price — ค่าขนม entry",
+        "timing": "Now"
+      },
+      {
+        "label": "Entry 2",
+        "level": 48,
+        "rangeMax": 52,
+        "note": "Dip to 50-day MA area",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 38,
+        "note": "Deep dip / bear case",
+        "timing": "Deep dip"
+      }
     ],
-    "tp1": { "price": 70, "pct": 17.6, "note": "Northland target / QKD traction" },
-    "tp2": { "price": 86, "pct": 44.5, "note": "Bull case — enterprise + government scale" },
-    "tp3": { "price": 137, "pct": 130.0, "note": "Moon case · Quantum advantage proven 2027–2028", "moon": true },
+    "tp1": {
+      "price": 70,
+      "pct": 17.6,
+      "note": "Northland target / QKD traction"
+    },
+    "tp2": {
+      "price": 86,
+      "pct": 44.5,
+      "note": "Bull case — enterprise + government scale"
+    },
+    "tp3": {
+      "price": 137,
+      "pct": 130.0,
+      "note": "Moon case · Quantum advantage proven 2027–2028",
+      "moon": true
+    },
     "stopLoss": {
-      "tight": 46, "tightPct": -23, "tightNote": "Below 50-day MA — momentum broken",
-      "hard": 36, "hardPct": -40, "hardNote": "Bear case floor — quantum disappointment",
-      "riskReward": "1.8 : 1", "rrNote": "Tight stop vs TP1", "rrWarning": "Low R/R — ค่าขนม only"
+      "tight": 46,
+      "tightPct": -23,
+      "tightNote": "Below 50-day MA — momentum broken",
+      "hard": 36,
+      "hardPct": -40,
+      "hardNote": "Bear case floor — quantum disappointment",
+      "riskReward": "1.8 : 1",
+      "rrNote": "Tight stop vs TP1",
+      "rrWarning": "Low R/R — ค่าขนม only"
     },
     "verdict": "ค่าขนม position only — size 3–5% max. Quantum is a 10-year bet, not a trade",
     "approach": "Lump Sum"
@@ -109,8 +199,15 @@
       "pct": 3,
       "reason": "ค่าขนม 62/100 — quantum computing เป็น high-risk long-duration bet จำกัด 3–5% เท่านั้น อย่า size ใหญ่กว่านี้"
     },
-    "stopPreCatalyst": { "pct": -23, "price": 46, "note": "ถ้าหลุด $46 = momentum broken ออกได้เลย" },
-    "stopPostCatalyst": { "pct": -30, "note": "ถ้า Q2 revenue miss target หนักๆ ออกทันที" }
+    "stopPreCatalyst": {
+      "pct": -23,
+      "price": 46,
+      "note": "ถ้าหลุด $46 = momentum broken ออกได้เลย"
+    },
+    "stopPostCatalyst": {
+      "pct": -30,
+      "note": "ถ้า Q2 revenue miss target หนักๆ ออกทันที"
+    }
   },
   "comparableCases": [
     {
@@ -148,9 +245,18 @@
       "priceNote": "Quantum leader — QKD product แรก launch แล้ว",
       "scoreLabel": "ค่าขนม",
       "catalysts": [
-        { "name": "Clavis XG Multiplex Launch", "description": "QKD product แรก บน metro fiber ปกติ — generate revenue จริงแล้ว" },
-        { "name": "IonQ Forte Enterprise", "description": "Available บน AWS, Azure, Google Cloud — enterprise contracts รามปีนี้" },
-        { "name": "Q2 2026 Earnings", "description": "Raised guidance $260–270M — ติดตาม revenue ramp" }
+        {
+          "name": "Clavis XG Multiplex Launch",
+          "description": "QKD product แรก บน metro fiber ปกติ — generate revenue จริงแล้ว"
+        },
+        {
+          "name": "IonQ Forte Enterprise",
+          "description": "Available บน AWS, Azure, Google Cloud — enterprise contracts รามปีนี้"
+        },
+        {
+          "name": "Q2 2026 Earnings",
+          "description": "Raised guidance $260–270M — ติดตาม revenue ramp"
+        }
       ],
       "risks": [
         "Profitability ไม่ใช่ focus ปี 2026 — burn cash ต่อเนื่องบน R&D",
@@ -167,13 +273,29 @@
       "entryStrategy": {
         "verdict": "ค่าขนม position เท่านั้น — 3–5% max ของ portfolio Quantum คือ 10-year bet ไม่ใช่ trade",
         "entryLevels": [
-          { "note": "ราคาปัจจุบัน — ค่าขนม entry", "timing": "ตอนนี้" },
-          { "note": "Dip ไป 50-day MA area", "timing": "ถ้าย่อ" },
-          { "note": "Deep dip / bear case", "timing": "ถ้าร่วงลึก" }
+          {
+            "note": "ราคาปัจจุบัน — ค่าขนม entry",
+            "timing": "ตอนนี้"
+          },
+          {
+            "note": "Dip ไป 50-day MA area",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "Deep dip / bear case",
+            "timing": "ถ้าร่วงลึก"
+          }
         ],
-        "tp1": { "note": "Northland target / QKD traction" },
-        "tp2": { "note": "Bull case — enterprise + government scale" },
-        "tp3": { "note": "Moon case · Quantum advantage proven 2027–2028", "moon": true },
+        "tp1": {
+          "note": "Northland target / QKD traction"
+        },
+        "tp2": {
+          "note": "Bull case — enterprise + government scale"
+        },
+        "tp3": {
+          "note": "Moon case · Quantum advantage proven 2027–2028",
+          "moon": true
+        },
         "stopLoss": {
           "tightNote": "ต่ำกว่า 50-day MA — momentum broken",
           "hardNote": "Bear case floor — quantum disappointment",
@@ -182,10 +304,21 @@
         }
       },
       "estimateDates": [
-        { "event": "Q2 2026 Earnings", "note": "read revenue ramp QKD + Forte" },
-        { "event": "First Profitable Quarter", "note": "milestone สำคัญ late 2026" },
-        { "event": "FY2028 Revenue $388M", "note": "long-term target" }
-      ]
+        {
+          "event": "Q2 2026 Earnings",
+          "note": "read revenue ramp QKD + Forte"
+        },
+        {
+          "event": "First Profitable Quarter",
+          "note": "milestone สำคัญ late 2026"
+        },
+        {
+          "event": "FY2028 Revenue $388M",
+          "note": "long-term target"
+        }
+      ],
+      "companyDescription": "Quantum computing · สร้าง quantum computer ด้วย trapped-ion technology และให้บริการผ่าน cloud (AWS, Azure, Google)"
     }
-  }
+  },
+  "companyDescription": "Quantum computing · Trapped-ion quantum computers available via AWS, Azure, and Google Cloud"
 }

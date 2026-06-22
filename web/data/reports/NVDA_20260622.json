@@ -48,22 +48,80 @@
     "Valuation premium (50x P/E) leaves limited margin of safety if growth disappoints even 1 quarter"
   ],
   "estimateDates": [
-    { "event": "Q2 FY2027 Earnings", "dateRange": "Aug 27, 2026", "note": "Beat + guide TP1 trigger", "est": "est. $220+", "highlight": "blue" },
-    { "event": "TP1 Target", "dateRange": "Sep–Oct 2026", "note": "Post-earnings momentum", "est": "$240", "highlight": "yellow" },
-    { "event": "TP2 Target", "dateRange": "Q1 2027", "note": "Blackwell full ramp", "est": "$270", "highlight": "yellow" }
+    {
+      "event": "Q2 FY2027 Earnings",
+      "dateRange": "Aug 27, 2026",
+      "note": "Beat + guide TP1 trigger",
+      "est": "est. $220+",
+      "highlight": "blue"
+    },
+    {
+      "event": "TP1 Target",
+      "dateRange": "Sep–Oct 2026",
+      "note": "Post-earnings momentum",
+      "est": "$240",
+      "highlight": "yellow"
+    },
+    {
+      "event": "TP2 Target",
+      "dateRange": "Q1 2027",
+      "note": "Blackwell full ramp",
+      "est": "$270",
+      "highlight": "yellow"
+    }
   ],
   "scenarios": [
-    { "label": "Bear", "color": "red", "pct": -20, "price": 168 },
-    { "label": "Base", "color": "yellow", "pct": 20, "price": 253 },
-    { "label": "Bull", "color": "green", "pct": 42, "price": 299 },
-    { "label": "Moon", "color": "purple", "pct": 65, "price": 347 }
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -20,
+      "price": 168
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 20,
+      "price": 253
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 42,
+      "price": 299
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 65,
+      "price": 347
+    }
   ],
   "analystTargets": [
-    { "firm": "Goldman Sachs", "target": 300, "rating": "Buy" },
-    { "firm": "Morgan Stanley", "target": 320, "rating": "Overweight" },
-    { "firm": "BofA Securities", "target": 295, "rating": "Buy" },
-    { "firm": "Wedbush", "target": 350, "rating": "Outperform" },
-    { "firm": "Barclays", "target": 285, "rating": "Overweight" }
+    {
+      "firm": "Goldman Sachs",
+      "target": 300,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Morgan Stanley",
+      "target": 320,
+      "rating": "Overweight"
+    },
+    {
+      "firm": "BofA Securities",
+      "target": 295,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Wedbush",
+      "target": 350,
+      "rating": "Outperform"
+    },
+    {
+      "firm": "Barclays",
+      "target": 285,
+      "rating": "Overweight"
+    }
   ],
   "macroRisk": {
     "fedRisk": "LOW",
@@ -74,17 +132,53 @@
   },
   "entryStrategy": {
     "entryLevels": [
-      { "label": "Entry 1", "level": 210, "note": "Current price — dip from ATH", "timing": "Now" },
-      { "label": "Entry 2", "level": 195, "rangeMax": 200, "note": "Support zone / 50-day MA area", "timing": "If dips", "preferred": true },
-      { "label": "Entry 3", "level": 175, "note": "200-day MA / deep reset", "timing": "Deep dip" }
+      {
+        "label": "Entry 1",
+        "level": 210,
+        "note": "Current price — dip from ATH",
+        "timing": "Now"
+      },
+      {
+        "label": "Entry 2",
+        "level": 195,
+        "rangeMax": 200,
+        "note": "Support zone / 50-day MA area",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 175,
+        "note": "200-day MA / deep reset",
+        "timing": "Deep dip"
+      }
     ],
-    "tp1": { "price": 240, "pct": 14.0, "note": "Post-Q2 earnings breakout" },
-    "tp2": { "price": 270, "pct": 28.1, "note": "Blackwell full ramp consensus" },
-    "tp3": { "price": 347, "pct": 65.0, "note": "Moon case · Robotics re-rating 2027", "moon": true },
+    "tp1": {
+      "price": 240,
+      "pct": 14.0,
+      "note": "Post-Q2 earnings breakout"
+    },
+    "tp2": {
+      "price": 270,
+      "pct": 28.1,
+      "note": "Blackwell full ramp consensus"
+    },
+    "tp3": {
+      "price": 347,
+      "pct": 65.0,
+      "note": "Moon case · Robotics re-rating 2027",
+      "moon": true
+    },
     "stopLoss": {
-      "tight": 185, "tightPct": -12, "tightNote": "Below 50-day MA support",
-      "hard": 160, "hardPct": -24, "hardNote": "200-day MA structural break",
-      "riskReward": "3.5 : 1", "rrNote": "Tight stop vs TP2", "rrWarning": "Excellent R/R"
+      "tight": 185,
+      "tightPct": -12,
+      "tightNote": "Below 50-day MA support",
+      "hard": 160,
+      "hardPct": -24,
+      "hardNote": "200-day MA structural break",
+      "riskReward": "3.5 : 1",
+      "rrNote": "Tight stop vs TP2",
+      "rrWarning": "Excellent R/R"
     },
     "verdict": "Scale into NVDA on dips toward $195–200 — AI supercycle thesis intact, Blackwell ramp is accelerating",
     "approach": "DCA"
@@ -110,8 +204,15 @@
       "pct": 20,
       "reason": "Core Holding — high conviction score 90/100. Size accordingly. Use DCA to average into weakness."
     },
-    "stopPreCatalyst": { "pct": -12, "price": 185, "note": "ถ้าหลุด $185 ก่อน earnings thesis เปลี่ยน" },
-    "stopPostCatalyst": { "pct": -8, "note": "ถ้า earnings miss + guide down ออกทันที ไม่รอ" }
+    "stopPreCatalyst": {
+      "pct": -12,
+      "price": 185,
+      "note": "ถ้าหลุด $185 ก่อน earnings thesis เปลี่ยน"
+    },
+    "stopPostCatalyst": {
+      "pct": -8,
+      "note": "ถ้า earnings miss + guide down ออกทันที ไม่รอ"
+    }
   },
   "comparableCases": [
     {
@@ -149,9 +250,18 @@
       "priceNote": "Pre-market $210.10 · ย่อจาก ATH · supercycle AI ยังคงแข็งแกร่ง",
       "scoreLabel": "Core Holding",
       "catalysts": [
-        { "name": "Blackwell B200/GB200 Ramp", "description": "Hyperscalers เร่งซื้อ Blackwell — supply ยัง tight ถึงสิ้นปี 2026" },
-        { "name": "Physical AI / หุ่นยนต์", "description": "Cosmos + Isaac platform กำลัง gain traction ใน enterprise robotics" },
-        { "name": "Q2 FY2027 Earnings", "description": "คาด revenue $45B+ · beat-and-raise streak 6 ไตรมาสติดต่อกัน" }
+        {
+          "name": "Blackwell B200/GB200 Ramp",
+          "description": "Hyperscalers เร่งซื้อ Blackwell — supply ยัง tight ถึงสิ้นปี 2026"
+        },
+        {
+          "name": "Physical AI / หุ่นยนต์",
+          "description": "Cosmos + Isaac platform กำลัง gain traction ใน enterprise robotics"
+        },
+        {
+          "name": "Q2 FY2027 Earnings",
+          "description": "คาด revenue $45B+ · beat-and-raise streak 6 ไตรมาสติดต่อกัน"
+        }
       ],
       "risks": [
         "Export control ชิป H20 ไปจีน — เสี่ยงสูญรายได้ $5B+",
@@ -168,13 +278,29 @@
       "entryStrategy": {
         "verdict": "DCA เข้า NVDA ที่โซน $195–200 — thesis Blackwell ramp ยังแข็งแกร่ง แนะนำถือ 20–30% ของ portfolio",
         "entryLevels": [
-          { "note": "ราคาปัจจุบัน ย่อจาก ATH", "timing": "ตอนนี้" },
-          { "note": "โซน support / ใกล้ 50-day MA", "timing": "ถ้าย่อ" },
-          { "note": "200-day MA / ย่อหนัก", "timing": "ถ้าร่วงลึก" }
+          {
+            "note": "ราคาปัจจุบัน ย่อจาก ATH",
+            "timing": "ตอนนี้"
+          },
+          {
+            "note": "โซน support / ใกล้ 50-day MA",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "200-day MA / ย่อหนัก",
+            "timing": "ถ้าร่วงลึก"
+          }
         ],
-        "tp1": { "note": "breakout หลัง Q2 earnings" },
-        "tp2": { "note": "Blackwell full ramp — consensus" },
-        "tp3": { "note": "Moon case · Robotics re-rating ปี 2027", "moon": true },
+        "tp1": {
+          "note": "breakout หลัง Q2 earnings"
+        },
+        "tp2": {
+          "note": "Blackwell full ramp — consensus"
+        },
+        "tp3": {
+          "note": "Moon case · Robotics re-rating ปี 2027",
+          "moon": true
+        },
         "stopLoss": {
           "tightNote": "ต่ำกว่า support 50-day MA",
           "hardNote": "200-day MA structural break",
@@ -183,10 +309,21 @@
         }
       },
       "estimateDates": [
-        { "event": "Q2 FY2027 Earnings", "note": "Beat + guide → trigger TP1" },
-        { "event": "เป้า TP1", "note": "momentum หลัง earnings" },
-        { "event": "เป้า TP2", "note": "Blackwell full ramp" }
-      ]
+        {
+          "event": "Q2 FY2027 Earnings",
+          "note": "Beat + guide → trigger TP1"
+        },
+        {
+          "event": "เป้า TP1",
+          "note": "momentum หลัง earnings"
+        },
+        {
+          "event": "เป้า TP2",
+          "note": "Blackwell full ramp"
+        }
+      ],
+      "companyDescription": "AI GPU · ผู้นำตลาด GPU สำหรับ AI training/inference (H100, B200, Blackwell) + CUDA platform ที่ทั้ง industry ใช้"
     }
-  }
+  },
+  "companyDescription": "AI GPU · Dominant H100/Blackwell AI training chips + CUDA ecosystem — picks & shovels of the AI era"
 }

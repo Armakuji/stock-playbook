@@ -48,21 +48,75 @@
     "Q2 earnings (Aug 2026) — any revenue miss on Electron launches could trigger selloff"
   ],
   "estimateDates": [
-    { "event": "Neutron First Flight", "dateRange": "Q4 2026", "note": "Re-rating catalyst", "est": "est. $200+ stock", "highlight": "yellow" },
-    { "event": "Q2 2026 Earnings", "dateRange": "Aug 2026", "note": "$225–240M revenue guide", "est": "est. $230M", "highlight": "blue" },
-    { "event": "Neutron Commercial Revenue", "dateRange": "H1 2027", "note": "First $50M+ launch revenue", "est": "Game changer", "highlight": "yellow" }
+    {
+      "event": "Neutron First Flight",
+      "dateRange": "Q4 2026",
+      "note": "Re-rating catalyst",
+      "est": "est. $200+ stock",
+      "highlight": "yellow"
+    },
+    {
+      "event": "Q2 2026 Earnings",
+      "dateRange": "Aug 2026",
+      "note": "$225–240M revenue guide",
+      "est": "est. $230M",
+      "highlight": "blue"
+    },
+    {
+      "event": "Neutron Commercial Revenue",
+      "dateRange": "H1 2027",
+      "note": "First $50M+ launch revenue",
+      "est": "Game changer",
+      "highlight": "yellow"
+    }
   ],
   "scenarios": [
-    { "label": "Bear", "color": "red", "pct": -30, "price": 75 },
-    { "label": "Base", "color": "yellow", "pct": 15, "price": 123 },
-    { "label": "Bull", "color": "green", "pct": 35, "price": 145 },
-    { "label": "Moon", "color": "purple", "pct": 90, "price": 204 }
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -30,
+      "price": 75
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 15,
+      "price": 123
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 35,
+      "price": 145
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 90,
+      "price": 204
+    }
   ],
   "analystTargets": [
-    { "firm": "KeyBanc", "target": 135, "rating": "Overweight" },
-    { "firm": "Deutsche Bank", "target": 128, "rating": "Buy" },
-    { "firm": "Canaccord", "target": 120, "rating": "Buy" },
-    { "firm": "Barclays", "target": 85, "rating": "Equal Weight" }
+    {
+      "firm": "KeyBanc",
+      "target": 135,
+      "rating": "Overweight"
+    },
+    {
+      "firm": "Deutsche Bank",
+      "target": 128,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Canaccord",
+      "target": 120,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Barclays",
+      "target": 85,
+      "rating": "Equal Weight"
+    }
   ],
   "macroRisk": {
     "fedRisk": "MEDIUM",
@@ -73,17 +127,53 @@
   },
   "entryStrategy": {
     "entryLevels": [
-      { "label": "Entry 1", "level": 107, "note": "Nasdaq-100 inclusion day momentum", "timing": "Now" },
-      { "label": "Entry 2", "level": 90, "rangeMax": 95, "note": "Post-inclusion pullback zone", "timing": "If dips", "preferred": true },
-      { "label": "Entry 3", "level": 75, "note": "Deep dip / bear case entry", "timing": "Deep dip" }
+      {
+        "label": "Entry 1",
+        "level": 107,
+        "note": "Nasdaq-100 inclusion day momentum",
+        "timing": "Now"
+      },
+      {
+        "label": "Entry 2",
+        "level": 90,
+        "rangeMax": 95,
+        "note": "Post-inclusion pullback zone",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 75,
+        "note": "Deep dip / bear case entry",
+        "timing": "Deep dip"
+      }
     ],
-    "tp1": { "price": 135, "pct": 26.0, "note": "KeyBanc target / Neutron progress" },
-    "tp2": { "price": 165, "pct": 54.0, "note": "Post-Neutron first flight re-rating" },
-    "tp3": { "price": 204, "pct": 90.0, "note": "Moon case · Neutron revenue + defense contracts 2027", "moon": true },
+    "tp1": {
+      "price": 135,
+      "pct": 26.0,
+      "note": "KeyBanc target / Neutron progress"
+    },
+    "tp2": {
+      "price": 165,
+      "pct": 54.0,
+      "note": "Post-Neutron first flight re-rating"
+    },
+    "tp3": {
+      "price": 204,
+      "pct": 90.0,
+      "note": "Moon case · Neutron revenue + defense contracts 2027",
+      "moon": true
+    },
     "stopLoss": {
-      "tight": 88, "tightPct": -18, "tightNote": "Below post-inclusion support",
-      "hard": 72, "hardPct": -33, "hardNote": "Pre-Nasdaq-100 run level — thesis broken",
-      "riskReward": "2.2 : 1", "rrNote": "Tight stop vs TP1", "rrWarning": "Acceptable R/R — speculative"
+      "tight": 88,
+      "tightPct": -18,
+      "tightNote": "Below post-inclusion support",
+      "hard": 72,
+      "hardPct": -33,
+      "hardNote": "Pre-Nasdaq-100 run level — thesis broken",
+      "riskReward": "2.2 : 1",
+      "rrNote": "Tight stop vs TP1",
+      "rrWarning": "Acceptable R/R — speculative"
     },
     "verdict": "Speculative buy on Nasdaq-100 inclusion dip — Neutron first flight Q4 2026 is the real re-rating event",
     "approach": "Scale In"
@@ -109,8 +199,15 @@
       "pct": 7,
       "reason": "Speculative 74/100 — Neutron delay risk is real. จำกัด sizing ที่ 7% ของ portfolio. ใช้ Scale In strategy รอ dip หลัง inclusion."
     },
-    "stopPreCatalyst": { "pct": -18, "price": 88, "note": "ถ้าหลุด $88 หลัง inclusion = arbs ขายแล้ว thesis เปลี่ยน" },
-    "stopPostCatalyst": { "pct": -20, "note": "ถ้า Neutron delay ประกาศ ออกทันที ไม่รอ" }
+    "stopPreCatalyst": {
+      "pct": -18,
+      "price": 88,
+      "note": "ถ้าหลุด $88 หลัง inclusion = arbs ขายแล้ว thesis เปลี่ยน"
+    },
+    "stopPostCatalyst": {
+      "pct": -20,
+      "note": "ถ้า Neutron delay ประกาศ ออกทันที ไม่รอ"
+    }
   },
   "comparableCases": [
     {
@@ -149,9 +246,18 @@
       "priceNote": "Nasdaq-100 inclusion วันนี้ — index buying active",
       "scoreLabel": "Speculative",
       "catalysts": [
-        { "name": "Nasdaq-100 Index Inclusion", "description": "QQQ ETF + passive funds ต้องซื้อ RKLB $2–3B วันนี้" },
-        { "name": "Neutron Rocket First Flight", "description": "จรวดขนาดใหญ่ payload 8 ตัน ราคา $50–55M/launch — บินครั้งแรก Q4 2026" },
-        { "name": "Defense & NRO Contracts", "description": "DoD HASTE + NRO classified contracts สร้าง backlog $2B+" }
+        {
+          "name": "Nasdaq-100 Index Inclusion",
+          "description": "QQQ ETF + passive funds ต้องซื้อ RKLB $2–3B วันนี้"
+        },
+        {
+          "name": "Neutron Rocket First Flight",
+          "description": "จรวดขนาดใหญ่ payload 8 ตัน ราคา $50–55M/launch — บินครั้งแรก Q4 2026"
+        },
+        {
+          "name": "Defense & NRO Contracts",
+          "description": "DoD HASTE + NRO classified contracts สร้าง backlog $2B+"
+        }
       ],
       "risks": [
         "Neutron delay risk — ถ้า Q4 2026 ล่าช้าหุ้นจะย่อหนัก",
@@ -168,13 +274,29 @@
       "entryStrategy": {
         "verdict": "Speculative buy บน Nasdaq-100 inclusion dip — Neutron first flight Q4 2026 คือ re-rating event จริง แนะนำ 7% ของ portfolio เท่านั้น",
         "entryLevels": [
-          { "note": "วัน Nasdaq-100 inclusion momentum", "timing": "ตอนนี้" },
-          { "note": "โซน pullback หลัง inclusion", "timing": "ถ้าย่อ" },
-          { "note": "Deep dip / bear case entry", "timing": "ถ้าร่วงลึก" }
+          {
+            "note": "วัน Nasdaq-100 inclusion momentum",
+            "timing": "ตอนนี้"
+          },
+          {
+            "note": "โซน pullback หลัง inclusion",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "Deep dip / bear case entry",
+            "timing": "ถ้าร่วงลึก"
+          }
         ],
-        "tp1": { "note": "KeyBanc target / Neutron progress" },
-        "tp2": { "note": "Post-Neutron first flight re-rating" },
-        "tp3": { "note": "Moon case · Neutron revenue + defense 2027", "moon": true },
+        "tp1": {
+          "note": "KeyBanc target / Neutron progress"
+        },
+        "tp2": {
+          "note": "Post-Neutron first flight re-rating"
+        },
+        "tp3": {
+          "note": "Moon case · Neutron revenue + defense 2027",
+          "moon": true
+        },
         "stopLoss": {
           "tightNote": "ต่ำกว่า support หลัง inclusion",
           "hardNote": "ระดับก่อน Nasdaq-100 run — thesis broken",
@@ -183,10 +305,21 @@
         }
       },
       "estimateDates": [
-        { "event": "Neutron First Flight", "note": "catalyst สำหรับ re-rating" },
-        { "event": "Q2 2026 Earnings", "note": "guide $225–240M revenue" },
-        { "event": "Neutron Commercial Revenue", "note": "Game changer สำหรับ valuation" }
-      ]
+        {
+          "event": "Neutron First Flight",
+          "note": "catalyst สำหรับ re-rating"
+        },
+        {
+          "event": "Q2 2026 Earnings",
+          "note": "guide $225–240M revenue"
+        },
+        {
+          "event": "Neutron Commercial Revenue",
+          "note": "Game changer สำหรับ valuation"
+        }
+      ],
+      "companyDescription": "Space launch & systems · จรวด Electron สำหรับดาวเทียมขนาดเล็ก + กำลังพัฒนา Neutron + ผลิตชิ้นส่วน spacecraft"
     }
-  }
+  },
+  "companyDescription": "Space launch & systems · Electron small-sat rocket + Neutron mid-size + spacecraft components"
 }
