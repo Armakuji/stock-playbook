@@ -114,17 +114,31 @@ function Sparkline({
           />
         )}
 
-        {/* Line */}
-        <path
-          id={pathId}
-          d={pathD}
-          fill="none"
-          stroke={color}
-          strokeWidth={2}
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          clipPath={animated ? `url(#${clipId})` : undefined}
-        />
+        {/* Line — or horizontal dashed baseline when only 1 point */}
+        {n === 1 ? (
+          <line
+            x1={pad.left}
+            y1={pts[0][1]}
+            x2={pad.left + innerW}
+            y2={pts[0][1]}
+            stroke={color}
+            strokeWidth={1.5}
+            strokeDasharray="4 4"
+            strokeOpacity={0.4}
+            clipPath={animated ? `url(#${clipId})` : undefined}
+          />
+        ) : (
+          <path
+            id={pathId}
+            d={pathD}
+            fill="none"
+            stroke={color}
+            strokeWidth={2}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            clipPath={animated ? `url(#${clipId})` : undefined}
+          />
+        )}
 
         {/* Data points */}
         {pts.map(([x, y], i) => {

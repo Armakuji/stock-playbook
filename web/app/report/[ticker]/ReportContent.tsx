@@ -927,8 +927,8 @@ export function ReportContent({ report: baseReport, timelinePoints = [] }: { rep
             pointerEvents: "none",
           }} />
 
-          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 12, position: "relative", marginBottom: 10 }}>
-            <div style={{ minWidth: 0 }}>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 12, position: "relative", marginBottom: 10, flexWrap: "wrap" }}>
+            <div style={{ minWidth: 0, flex: 1 }}>
               <div style={{ display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap", marginBottom: 4 }}>
                 <h1 style={{
                   fontSize: "clamp(24px, 5vw, 44px)", fontWeight: 900, margin: 0, letterSpacing: "-1px",
@@ -945,8 +945,10 @@ export function ReportContent({ report: baseReport, timelinePoints = [] }: { rep
                   {report.scoreLabel ?? report.verdict}
                 </span>
               </div>
-              <div style={{ fontSize: 11, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", lineHeight: 1.4 }}>
-                {report.companyName}{report.exchange ? ` · ${report.exchange}` : ""}{report.sector ? ` · ${report.sector}` : ""}
+              <div style={{ fontSize: 11, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", lineHeight: 1.6, display: "flex", flexWrap: "wrap", gap: "2px 0", alignItems: "center" }}>
+                <span style={{ whiteSpace: "nowrap" }}>{report.companyName}</span>
+                {report.exchange && <span style={{ whiteSpace: "nowrap", color: "#334155" }}>&nbsp;·&nbsp;<span style={{ color: "var(--muted)" }}>{report.exchange}</span></span>}
+                {report.sector && <span style={{ whiteSpace: "nowrap", color: "#334155" }}>&nbsp;·&nbsp;<span style={{ color: "var(--muted)" }}>{report.sector}</span></span>}
               </div>
             </div>
 
@@ -961,7 +963,7 @@ export function ReportContent({ report: baseReport, timelinePoints = [] }: { rep
                 <div style={{ fontSize: 11, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", marginTop: 2 }}>MCap {report.marketCap}</div>
               )}
               {report.priceNote && (
-                <div style={{ fontSize: 10, color: "#475569", marginTop: 2 }}>{report.priceNote}</div>
+                <div style={{ fontSize: 10, color: "#475569", marginTop: 2, maxWidth: 180, textAlign: "right" }}>{report.priceNote}</div>
               )}
             </div>
           </div>
