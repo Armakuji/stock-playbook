@@ -48,22 +48,80 @@
     "High valuation creates persistent short-seller pressure and analyst skepticism"
   ],
   "estimateDates": [
-    { "event": "Q2 2026 Earnings", "dateRange": "Aug 10, 2026", "note": "Key catalyst for breakout", "est": "est. $1.85B rev", "highlight": "blue" },
-    { "event": "TP1 Target", "dateRange": "Sep 2026", "note": "Post-earnings momentum", "est": "$155", "highlight": "yellow" },
-    { "event": "TP2 Target", "dateRange": "Q1 2027", "note": "Full year guidance beat", "est": "$193", "highlight": "yellow" }
+    {
+      "event": "Q2 2026 Earnings",
+      "dateRange": "Aug 10, 2026",
+      "note": "Key catalyst for breakout",
+      "est": "est. $1.85B rev",
+      "highlight": "blue"
+    },
+    {
+      "event": "TP1 Target",
+      "dateRange": "Sep 2026",
+      "note": "Post-earnings momentum",
+      "est": "$155",
+      "highlight": "yellow"
+    },
+    {
+      "event": "TP2 Target",
+      "dateRange": "Q1 2027",
+      "note": "Full year guidance beat",
+      "est": "$193",
+      "highlight": "yellow"
+    }
   ],
   "scenarios": [
-    { "label": "Bear", "color": "red", "pct": -25, "price": 95 },
-    { "label": "Base", "color": "yellow", "pct": 22, "price": 154 },
-    { "label": "Bull", "color": "green", "pct": 52, "price": 193 },
-    { "label": "Moon", "color": "purple", "pct": 80, "price": 228 }
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -25,
+      "price": 95
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 22,
+      "price": 154
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 52,
+      "price": 193
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 80,
+      "price": 228
+    }
   ],
   "analystTargets": [
-    { "firm": "Wedbush", "target": 210, "rating": "Outperform" },
-    { "firm": "BofA Securities", "target": 195, "rating": "Buy" },
-    { "firm": "Deutsche Bank", "target": 180, "rating": "Buy" },
-    { "firm": "Jefferies", "target": 130, "rating": "Hold" },
-    { "firm": "Morgan Stanley", "target": 105, "rating": "Underweight" }
+    {
+      "firm": "Wedbush",
+      "target": 210,
+      "rating": "Outperform"
+    },
+    {
+      "firm": "BofA Securities",
+      "target": 195,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Deutsche Bank",
+      "target": 180,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Jefferies",
+      "target": 130,
+      "rating": "Hold"
+    },
+    {
+      "firm": "Morgan Stanley",
+      "target": 105,
+      "rating": "Underweight"
+    }
   ],
   "macroRisk": {
     "fedRisk": "LOW",
@@ -74,17 +132,53 @@
   },
   "entryStrategy": {
     "entryLevels": [
-      { "label": "Entry 1", "level": 127, "note": "Current price — 11% off highs", "timing": "Now" },
-      { "label": "Entry 2", "level": 110, "rangeMax": 115, "note": "50-day MA support zone", "timing": "If dips", "preferred": true },
-      { "label": "Entry 3", "level": 95, "note": "200-day MA deep dip", "timing": "Deep dip" }
+      {
+        "label": "Entry 1",
+        "level": 127,
+        "note": "Current price — 11% off highs",
+        "timing": "Now"
+      },
+      {
+        "label": "Entry 2",
+        "level": 110,
+        "rangeMax": 115,
+        "note": "50-day MA support zone",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 95,
+        "note": "200-day MA deep dip",
+        "timing": "Deep dip"
+      }
     ],
-    "tp1": { "price": 155, "pct": 22.4, "note": "Post-Q2 earnings breakout" },
-    "tp2": { "price": 193, "pct": 52.4, "note": "Median analyst target" },
-    "tp3": { "price": 228, "pct": 80.0, "note": "Moon case · Wedbush bull scenario 2027", "moon": true },
+    "tp1": {
+      "price": 155,
+      "pct": 22.4,
+      "note": "Post-Q2 earnings breakout"
+    },
+    "tp2": {
+      "price": 193,
+      "pct": 52.4,
+      "note": "Median analyst target"
+    },
+    "tp3": {
+      "price": 228,
+      "pct": 80.0,
+      "note": "Moon case · Wedbush bull scenario 2027",
+      "moon": true
+    },
     "stopLoss": {
-      "tight": 110, "tightPct": -13, "tightNote": "Below 50-day MA support",
-      "hard": 92, "hardPct": -27, "hardNote": "200-day MA — structural breakdown",
-      "riskReward": "3.0 : 1", "rrNote": "Tight stop vs TP2", "rrWarning": "Good R/R"
+      "tight": 105,
+      "tightPct": -17,
+      "tightNote": "Below Entry 2 zone ($110 support)",
+      "hard": 92,
+      "hardPct": -27,
+      "hardNote": "200-day MA / structural breakdown",
+      "riskReward": "3.0 : 1",
+      "rrNote": "Tight stop vs TP2",
+      "rrWarning": "Good R/R"
     },
     "verdict": "Scale into PLTR on 11% pullback — US commercial 100%+ growth is historic, Q2 earnings is next catalyst",
     "approach": "Scale In"
@@ -110,8 +204,15 @@
       "pct": 10,
       "reason": "Speculative 78/100 — high conviction on growth but 144x P/E limits sizing. Max 10% of portfolio. Scale in on dips."
     },
-    "stopPreCatalyst": { "pct": -13, "price": 110, "note": "ถ้าหลุด $110 ก่อน earnings = sentiment เปลี่ยน ออกก่อน" },
-    "stopPostCatalyst": { "pct": -15, "note": "ถ้า Q2 miss commercial growth < 80% YoY ออกทันที" }
+    "stopPreCatalyst": {
+      "pct": -13,
+      "price": 110,
+      "note": "ถ้าหลุด $110 ก่อน earnings = sentiment เปลี่ยน ออกก่อน"
+    },
+    "stopPostCatalyst": {
+      "pct": -15,
+      "note": "ถ้า Q2 miss commercial growth < 80% YoY ออกทันที"
+    }
   },
   "comparableCases": [
     {
@@ -150,9 +251,18 @@
       "priceNote": "ย่อ 11% จาก high ล่าสุด — โซน entry ดี",
       "scoreLabel": "Speculative",
       "catalysts": [
-        { "name": "US Government AI Contracts", "description": "AIP deploy ใน 50+ หน่วยงานกลาโหม — DOGE mandate เร่ง AI adoption" },
-        { "name": "US Commercial AIP Bootcamps", "description": "US Commercial ข้าม 100% YoY growth ครั้งแรก — pipeline Fortune 500 โต" },
-        { "name": "Q2 2026 Earnings", "description": "Aug 10, 2026 — consensus คาด revenue $1.85B+ ต่อเนื่อง" }
+        {
+          "name": "US Government AI Contracts",
+          "description": "AIP deploy ใน 50+ หน่วยงานกลาโหม — DOGE mandate เร่ง AI adoption"
+        },
+        {
+          "name": "US Commercial AIP Bootcamps",
+          "description": "US Commercial ข้าม 100% YoY growth ครั้งแรก — pipeline Fortune 500 โต"
+        },
+        {
+          "name": "Q2 2026 Earnings",
+          "description": "Aug 10, 2026 — consensus คาด revenue $1.85B+ ต่อเนื่อง"
+        }
       ],
       "risks": [
         "Valuation 144x P/E — priced for perfection ถ้า miss แม้แต่ไตรมาสเดียวจะร่วงหนัก",
@@ -169,24 +279,49 @@
       "entryStrategy": {
         "verdict": "Scale เข้า PLTR บน 11% pullback — US commercial 100%+ growth เป็นประวัติศาสตร์ Q2 earnings คือ catalyst ถัดไป แนะนำ 10% ของ portfolio",
         "entryLevels": [
-          { "note": "ราคาปัจจุบัน ย่อ 11% จาก high", "timing": "ตอนนี้" },
-          { "note": "โซน 50-day MA support", "timing": "ถ้าย่อ" },
-          { "note": "200-day MA deep dip", "timing": "ถ้าร่วงลึก" }
+          {
+            "note": "ราคาปัจจุบัน ย่อ 11% จาก high",
+            "timing": "ตอนนี้"
+          },
+          {
+            "note": "โซน 50-day MA support",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "200-day MA deep dip",
+            "timing": "ถ้าร่วงลึก"
+          }
         ],
-        "tp1": { "note": "breakout หลัง Q2 earnings" },
-        "tp2": { "note": "median analyst target" },
-        "tp3": { "note": "Moon case · Wedbush bull scenario ปี 2027", "moon": true },
+        "tp1": {
+          "note": "breakout หลัง Q2 earnings"
+        },
+        "tp2": {
+          "note": "median analyst target"
+        },
+        "tp3": {
+          "note": "Moon case · Wedbush bull scenario ปี 2027",
+          "moon": true
+        },
         "stopLoss": {
-          "tightNote": "ต่ำกว่า 50-day MA support",
+          "tightNote": "Below Entry 2 zone ($110 support)",
           "hardNote": "200-day MA structural breakdown",
           "rrNote": "Tight stop vs TP2",
           "rrWarning": "R/R ดี"
         }
       },
       "estimateDates": [
-        { "event": "Q2 2026 Earnings", "note": "catalyst สำคัญสำหรับ breakout" },
-        { "event": "เป้า TP1", "note": "momentum หลัง Q2 earnings" },
-        { "event": "เป้า TP2", "note": "beat guidance ทั้งปี" }
+        {
+          "event": "Q2 2026 Earnings",
+          "note": "catalyst สำคัญสำหรับ breakout"
+        },
+        {
+          "event": "เป้า TP1",
+          "note": "momentum หลัง Q2 earnings"
+        },
+        {
+          "event": "เป้า TP2",
+          "note": "beat guidance ทั้งปี"
+        }
       ]
     }
   }

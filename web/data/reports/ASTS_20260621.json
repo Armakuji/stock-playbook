@@ -150,15 +150,15 @@
       "moon": true
     },
     "stopLoss": {
-      "tight": 68,
-      "tightPct": -15.7,
-      "tightNote": "Below key support",
-      "hard": 55,
-      "hardPct": -31.8,
-      "hardNote": "Thesis-level breach",
-      "riskReward": "2.7 : 1",
-      "rrNote": "Tight stop vs TP2",
-      "rrWarning": "Speculative — size small"
+      "tight": 60,
+      "tightPct": -11,
+      "tightNote": "Below Entry 2 zone ($65) — stop must be under entry, not inside it",
+      "hard": 52,
+      "hardPct": -23,
+      "hardNote": "Thesis-level breach · below Entry 3 capitulation zone",
+      "riskReward": "4.5 : 1",
+      "rrNote": "From Entry 2 preferred ($67.5) tight stop vs TP2",
+      "rrWarning": "Good R/R from Entry 2 — do NOT enter at $68–70 with $60 stop"
     },
     "verdict": "SPECULATIVE — ค่าขนม size only. Post-launch dip is opportunity but Japan J-LEO is binary. Never more than 2-3% portfolio.",
     "approach": "Lump Sum"
@@ -227,9 +227,9 @@
           "note": "45 ดาวเทียม ครอบคลุมทั่วโลก · 2027"
         },
         "stopLoss": {
-          "tightNote": "ต่ำกว่าแนวรับสำคัญ",
-          "hardNote": "หลุดระดับ thesis",
-          "rrNote": "Tight stop เทียบ TP2",
+          "tightNote": "ต่ำกว่า Entry 2 zone ($65) — stop ต้องอยู่ใต้ entry ไม่ใช่ภายใน zone",
+          "hardNote": "หลุด thesis · ต่ำกว่า Entry 3 capitulation zone",
+          "rrNote": "จาก Entry 2 preferred ($67.5) tight stop เทียบ TP2",
           "rrWarning": "Speculative — ขนาดเล็ก"
         }
       },

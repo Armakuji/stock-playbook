@@ -3,9 +3,9 @@
   "companyName": "Marvell Technology, Inc.",
   "exchange": "NASDAQ",
   "generatedAt": "2026-06-22T00:00:00.000Z",
-  "price": 263.47,
-  "priceChange": 2.1,
-  "priceNote": "S&P 500 inclusion TODAY — index funds forced to buy",
+  "price": 302.0,
+  "priceChange": 14.7,
+  "priceNote": "S&P 500 inclusion day — index funds buying, price surged from $263",
   "marketCap": "$220B",
   "sector": "Technology / Semiconductors",
   "verdict": "BUY",
@@ -48,21 +48,75 @@
     "TSMC N3/N2 allocation competition with NVDA and AMD could constrain Marvell's XPU production"
   ],
   "estimateDates": [
-    { "event": "Custom Silicon Sampling", "dateRange": "Jul 1, 2026", "note": "New XPU milestone", "est": "Catalyst", "highlight": "yellow" },
-    { "event": "Q2 FY2027 Earnings", "dateRange": "Aug 2026", "note": "Revenue ramp read", "est": "est. $2.2B+", "highlight": "blue" },
-    { "event": "FY2028 Revenue Target", "dateRange": "FY2028", "note": "$16.5B raised guidance", "est": "$16.5B", "highlight": "yellow" }
+    {
+      "event": "Custom Silicon Sampling",
+      "dateRange": "Jul 1, 2026",
+      "note": "New XPU milestone",
+      "est": "Catalyst",
+      "highlight": "yellow"
+    },
+    {
+      "event": "Q2 FY2027 Earnings",
+      "dateRange": "Aug 2026",
+      "note": "Revenue ramp read",
+      "est": "est. $2.2B+",
+      "highlight": "blue"
+    },
+    {
+      "event": "FY2028 Revenue Target",
+      "dateRange": "FY2028",
+      "note": "$16.5B raised guidance",
+      "est": "$16.5B",
+      "highlight": "yellow"
+    }
   ],
   "scenarios": [
-    { "label": "Bear", "color": "red", "pct": -25, "price": 197 },
-    { "label": "Base", "color": "yellow", "pct": 20, "price": 316 },
-    { "label": "Bull", "color": "green", "pct": 46, "price": 385 },
-    { "label": "Moon", "color": "purple", "pct": 70, "price": 448 }
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -25,
+      "price": 227
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 5,
+      "price": 317
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 28,
+      "price": 386
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 48,
+      "price": 448
+    }
   ],
   "analystTargets": [
-    { "firm": "KeyBanc", "target": 385, "rating": "Overweight" },
-    { "firm": "Rosenblatt", "target": 321, "rating": "Buy" },
-    { "firm": "B. Riley", "target": 310, "rating": "Buy" },
-    { "firm": "Morgan Stanley", "target": 290, "rating": "Overweight" }
+    {
+      "firm": "KeyBanc",
+      "target": 385,
+      "rating": "Overweight"
+    },
+    {
+      "firm": "Rosenblatt",
+      "target": 321,
+      "rating": "Buy"
+    },
+    {
+      "firm": "B. Riley",
+      "target": 310,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Morgan Stanley",
+      "target": 290,
+      "rating": "Overweight"
+    }
   ],
   "macroRisk": {
     "fedRisk": "LOW",
@@ -73,17 +127,53 @@
   },
   "entryStrategy": {
     "entryLevels": [
-      { "label": "Entry 1", "level": 263, "note": "Current price (pre-S&P 500 bump)", "timing": "Now" },
-      { "label": "Entry 2", "level": 240, "rangeMax": 250, "note": "Post-inclusion pullback zone", "timing": "If dips", "preferred": true },
-      { "label": "Entry 3", "level": 210, "note": "200-day MA support level", "timing": "Deep dip" }
+      {
+        "label": "Entry 1",
+        "level": 302,
+        "note": "Current price (pre-S&P 500 bump)",
+        "timing": "Now"
+      },
+      {
+        "label": "Entry 2",
+        "level": 240,
+        "rangeMax": 250,
+        "note": "Post-inclusion pullback zone",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 210,
+        "note": "200-day MA support level",
+        "timing": "Deep dip"
+      }
     ],
-    "tp1": { "price": 316, "pct": 20.0, "note": "Post-Q2 earnings momentum" },
-    "tp2": { "price": 385, "pct": 46.2, "note": "KeyBanc Street-high target" },
-    "tp3": { "price": 448, "pct": 70.0, "note": "Moon case · FY2028 $16.5B revenue re-rating", "moon": true },
+    "tp1": {
+      "price": 316,
+      "pct": 4.6,
+      "note": "Post-Q2 earnings momentum"
+    },
+    "tp2": {
+      "price": 385,
+      "pct": 27.5,
+      "note": "KeyBanc Street-high target"
+    },
+    "tp3": {
+      "price": 448,
+      "pct": 48.3,
+      "note": "Moon case · FY2028 $16.5B revenue re-rating",
+      "moon": true
+    },
     "stopLoss": {
-      "tight": 230, "tightPct": -13, "tightNote": "Below S&P 500 inclusion support",
-      "hard": 200, "hardPct": -24, "hardNote": "200-day MA structural break",
-      "riskReward": "3.2 : 1", "rrNote": "Tight stop vs TP2", "rrWarning": "Strong R/R"
+      "tight": 230,
+      "tightPct": -24,
+      "tightNote": "Below Entry 2 zone ($240 support)",
+      "hard": 200,
+      "hardPct": -34,
+      "hardNote": "200-day MA structural break",
+      "riskReward": "3.2 : 1",
+      "rrNote": "Tight stop vs TP2",
+      "rrWarning": "Strong R/R"
     },
     "verdict": "Buy MRVL on S&P 500 inclusion dip — custom silicon + optical moat is the AI infrastructure play the market is underpricing",
     "approach": "DCA"
@@ -109,8 +199,15 @@
       "pct": 15,
       "reason": "Core Holding conviction 87/100. S&P 500 inclusion creates institutional demand floor. Size 15% of portfolio — pull back if stock spikes >20% on inclusion day."
     },
-    "stopPreCatalyst": { "pct": -13, "price": 229, "note": "ถ้าหลุด $230 ก่อน Jul 1 XPU milestone = thesis เปลี่ยน" },
-    "stopPostCatalyst": { "pct": -15, "note": "ถ้า XPU sampling disappoints ออกภายใน 2 วัน" }
+    "stopPreCatalyst": {
+      "pct": -13,
+      "price": 229,
+      "note": "ถ้าหลุด $230 ก่อน Jul 1 XPU milestone = thesis เปลี่ยน"
+    },
+    "stopPostCatalyst": {
+      "pct": -15,
+      "note": "ถ้า XPU sampling disappoints ออกภายใน 2 วัน"
+    }
   },
   "comparableCases": [
     {
@@ -149,9 +246,18 @@
       "priceNote": "S&P 500 inclusion วันนี้ — index funds forced to buy",
       "scoreLabel": "Core Holding",
       "catalysts": [
-        { "name": "S&P 500 Index Inclusion", "description": "MRVL เข้า S&P 500 วันนี้ — Vanguard, BlackRock ต้องซื้อหุ้นเพิ่มทันที" },
-        { "name": "Custom AI Silicon Sampling", "description": "XPU milestone สำหรับ Google/Amazon คาด Jul 1, 2026" },
-        { "name": "Optical Interconnect Dominance", "description": "PAM4 DSP ของ Marvell ส่งข้อมูล AI 80%+ ของ data center ทั่วโลก" }
+        {
+          "name": "S&P 500 Index Inclusion",
+          "description": "MRVL เข้า S&P 500 วันนี้ — Vanguard, BlackRock ต้องซื้อหุ้นเพิ่มทันที"
+        },
+        {
+          "name": "Custom AI Silicon Sampling",
+          "description": "XPU milestone สำหรับ Google/Amazon คาด Jul 1, 2026"
+        },
+        {
+          "name": "Optical Interconnect Dominance",
+          "description": "PAM4 DSP ของ Marvell ส่งข้อมูล AI 80%+ ของ data center ทั่วโลก"
+        }
       ],
       "risks": [
         "Customer concentration — Google + Amazon รวม >50% ของรายได้ custom silicon",
@@ -168,24 +274,49 @@
       "entryStrategy": {
         "verdict": "ซื้อ MRVL บน dip หลัง S&P 500 inclusion — custom silicon + optical moat คือ AI infrastructure play ที่ตลาดยังประเมินต่ำเกินไป แนะนำ 15% ของ portfolio",
         "entryLevels": [
-          { "note": "ราคาปัจจุบัน ก่อน S&P 500 bump", "timing": "ตอนนี้" },
-          { "note": "โซน pullback หลัง inclusion", "timing": "ถ้าย่อ" },
-          { "note": "200-day MA support", "timing": "ถ้าร่วงลึก" }
+          {
+            "note": "ราคาปัจจุบัน ก่อน S&P 500 bump",
+            "timing": "ตอนนี้"
+          },
+          {
+            "note": "โซน pullback หลัง inclusion",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "200-day MA support",
+            "timing": "ถ้าร่วงลึก"
+          }
         ],
-        "tp1": { "note": "momentum หลัง Q2 earnings" },
-        "tp2": { "note": "KeyBanc Street-high target" },
-        "tp3": { "note": "Moon case · FY2028 $16.5B revenue re-rating", "moon": true },
+        "tp1": {
+          "note": "momentum หลัง Q2 earnings"
+        },
+        "tp2": {
+          "note": "KeyBanc Street-high target"
+        },
+        "tp3": {
+          "note": "Moon case · FY2028 $16.5B revenue re-rating",
+          "moon": true
+        },
         "stopLoss": {
-          "tightNote": "ต่ำกว่า support หลัง S&P 500 inclusion",
+          "tightNote": "Below Entry 2 zone ($240 support)",
           "hardNote": "200-day MA structural break",
           "rrNote": "Tight stop vs TP2",
           "rrWarning": "R/R แข็งแกร่ง"
         }
       },
       "estimateDates": [
-        { "event": "Custom Silicon Sampling", "note": "XPU milestone ใหม่" },
-        { "event": "Q2 FY2027 Earnings", "note": "read revenue ramp" },
-        { "event": "FY2028 Revenue Target", "note": "raised guidance $16.5B" }
+        {
+          "event": "Custom Silicon Sampling",
+          "note": "XPU milestone ใหม่"
+        },
+        {
+          "event": "Q2 FY2027 Earnings",
+          "note": "read revenue ramp"
+        },
+        {
+          "event": "FY2028 Revenue Target",
+          "note": "raised guidance $16.5B"
+        }
       ]
     }
   }
