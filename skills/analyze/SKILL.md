@@ -301,3 +301,16 @@ Do not fabricate prices, dates, or probabilities.
 - If user specifies a timeframe ("30 days", "before earnings") → use that as the TP horizon
 - If the ticker is unknown / delisted → say so clearly, do not hallucinate prices
 - Always verify earnings date before writing it — wrong dates break the thesis
+
+## 📈 Stock Timeline — How it builds
+
+Every time `/analyze TICKER` runs, it saves a new `TICKER_YYYYMMDD.json` to `web/data/reports/`. The `StockTimeline` component in the web dashboard reads **all** JSON files for that ticker and plots Score, TP2, and Rank over time as sparklines.
+
+**ผลลัพธ์:** ยิ่งรัน `/analyze` บ่อย timeline ยิ่ง rich — แต่ถ้ามีแค่ 1 ไฟล์ จะเห็นแค่ "1 snapshot · First snapshot — check back next week"
+
+**แนวทาง:** รัน `/analyze` ซ้ำเมื่อ:
+- มี catalyst ใหม่ (earnings, product launch, news)
+- ราคาเปลี่ยนมากกว่า 10% จาก last report
+- หรือทุกสัปดาห์ถ้าต้องการ trend ที่ชัดเจน
+
+แต่ละ report ใหม่จะสร้าง snapshot ใหม่โดยอัตโนมัติ ไม่ต้องทำอะไรพิเศษ
