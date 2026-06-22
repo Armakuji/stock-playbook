@@ -1,0 +1,192 @@
+{
+  "ticker": "MRVL",
+  "companyName": "Marvell Technology, Inc.",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-22T00:00:00.000Z",
+  "price": 263.47,
+  "priceChange": 2.1,
+  "priceNote": "S&P 500 inclusion TODAY — index funds forced to buy",
+  "marketCap": "$220B",
+  "sector": "Technology / Semiconductors",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 87,
+  "summary": "Marvell is the quiet giant of AI infrastructure — custom silicon (XPUs) for Google, Amazon, Microsoft plus dominance in optical interconnects that carry all AI data. Today's S&P 500 inclusion forces passive fund buying regardless of price. KeyBanc set a Street-high $385 target (+46%) citing optical networking as a more durable growth engine than headline AI chips. Q1 FY2027 guidance came in above consensus with fiscal 2028 revenue target raised to $16.5B.",
+  "catalysts": [
+    {
+      "icon": "📈",
+      "name": "S&P 500 Index Inclusion",
+      "description": "MRVL officially joins S&P 500 on June 22, 2026 — index funds (Vanguard, BlackRock, State Street) must buy ~$5–8B worth of shares today regardless of valuation.",
+      "urgencyLabel": "TODAY",
+      "dateBadge": "Jun 22, 2026",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "⚡",
+      "name": "Custom AI Silicon (XPU) Ramp",
+      "description": "Customer sampling on new custom silicon milestone expected July 1, 2026. Marvell supplies XPUs to Google TPU and Amazon Trainium — TAM expanding to tens of billions annually by 2028.",
+      "urgencyLabel": "9 DAYS",
+      "dateBadge": "Jul 1, 2026",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🌐",
+      "name": "Optical Interconnect Dominance",
+      "description": "Marvell's PAM4 DSPs carry 80%+ of AI data center traffic. Optical connectivity demand growing 3x faster than compute as AI models scale. KeyBanc calls this the most durable moat.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "2026–2028",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Customer concentration risk — Google and Amazon together represent >50% of custom silicon revenue",
+    "Stock up 260%+ YTD in 2026 — any execution miss could trigger sharp reversion",
+    "Consensus analyst targets ($238–240) below current price — street has been slow to catch up to growth",
+    "TSMC N3/N2 allocation competition with NVDA and AMD could constrain Marvell's XPU production"
+  ],
+  "estimateDates": [
+    { "event": "Custom Silicon Sampling", "dateRange": "Jul 1, 2026", "note": "New XPU milestone", "est": "Catalyst", "highlight": "yellow" },
+    { "event": "Q2 FY2027 Earnings", "dateRange": "Aug 2026", "note": "Revenue ramp read", "est": "est. $2.2B+", "highlight": "blue" },
+    { "event": "FY2028 Revenue Target", "dateRange": "FY2028", "note": "$16.5B raised guidance", "est": "$16.5B", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -25, "price": 197 },
+    { "label": "Base", "color": "yellow", "pct": 20, "price": 316 },
+    { "label": "Bull", "color": "green", "pct": 46, "price": 385 },
+    { "label": "Moon", "color": "purple", "pct": 70, "price": 448 }
+  ],
+  "analystTargets": [
+    { "firm": "KeyBanc", "target": 385, "rating": "Overweight" },
+    { "firm": "Rosenblatt", "target": 321, "rating": "Buy" },
+    { "firm": "B. Riley", "target": 310, "rating": "Buy" },
+    { "firm": "Morgan Stanley", "target": 290, "rating": "Overweight" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Fed rate cuts H2 2026 support multiple expansion for AI semis",
+    "inflationNote": "Semiconductor equipment inflation subsiding — TSMC capex stable",
+    "sectorImpact": "Lower rates = higher growth multiple. Custom silicon is capex-driven, independent of consumer cycle.",
+    "summary": "Fed risk LOW — Marvell's revenue is driven by hyperscaler AI capex budgets, not consumer spending or rate-sensitive markets. S&P 500 inclusion adds permanent institutional demand floor."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 263, "note": "Current price (pre-S&P 500 bump)", "timing": "Now" },
+      { "label": "Entry 2", "level": 240, "rangeMax": 250, "note": "Post-inclusion pullback zone", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 210, "note": "200-day MA support level", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 316, "pct": 20.0, "note": "Post-Q2 earnings momentum" },
+    "tp2": { "price": 385, "pct": 46.2, "note": "KeyBanc Street-high target" },
+    "tp3": { "price": 448, "pct": 70.0, "note": "Moon case · FY2028 $16.5B revenue re-rating", "moon": true },
+    "stopLoss": {
+      "tight": 230, "tightPct": -13, "tightNote": "Below S&P 500 inclusion support",
+      "hard": 200, "hardPct": -24, "hardNote": "200-day MA structural break",
+      "riskReward": "3.2 : 1", "rrNote": "Tight stop vs TP2", "rrWarning": "Strong R/R"
+    },
+    "verdict": "Buy MRVL on S&P 500 inclusion dip — custom silicon + optical moat is the AI infrastructure play the market is underpricing",
+    "approach": "DCA"
+  },
+  "catalystSpot": {
+    "catalystType": "foundry_validation",
+    "preRunup": "S&P 500 inclusions historically see 5–10% price move in the week before effective date as arbitrageurs front-run index funds. MRVL already ran ~15% from announcement to inclusion.",
+    "preRunupTiming": "1–2 สัปดาห์ก่อน inclusion date",
+    "preRunupPct": "+10–15%",
+    "postWin": {
+      "avgPct": 8,
+      "range": "+3% to +18%",
+      "note": "S&P 500 inclusions average +8% in the 30 days post-effective date as passive funds complete purchases. ARM Holdings (ARM) rose +12% in 30 days post-S&P inclusion in Dec 2023.",
+      "exampleDate": "Dec 2023"
+    },
+    "postLose": {
+      "avgPct": -5,
+      "range": "-3% to -12%",
+      "note": "ถ้า S&P 500 buying completes and no fundamental catalyst materializes, stock can pull back 5–10% as arbs exit",
+      "exampleDate": "General pattern"
+    },
+    "spotSizing": {
+      "pct": 15,
+      "reason": "Core Holding conviction 87/100. S&P 500 inclusion creates institutional demand floor. Size 15% of portfolio — pull back if stock spikes >20% on inclusion day."
+    },
+    "stopPreCatalyst": { "pct": -13, "price": 229, "note": "ถ้าหลุด $230 ก่อน Jul 1 XPU milestone = thesis เปลี่ยน" },
+    "stopPostCatalyst": { "pct": -15, "note": "ถ้า XPU sampling disappoints ออกภายใน 2 วัน" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "ARM",
+      "event": "S&P 500 Index Inclusion",
+      "date": "Dec 2023",
+      "movePct": 12,
+      "days": 30,
+      "outcome": "good",
+      "note": "ARM rose ~12% in 30 days post-S&P 500 inclusion as passive funds completed purchases. Comparable as high-growth semi with institutional demand catalyst."
+    },
+    {
+      "ticker": "AVGO",
+      "event": "AI custom chip re-rating on hyperscaler wins",
+      "date": "Jun 2024",
+      "movePct": 28,
+      "days": 45,
+      "outcome": "good",
+      "note": "Broadcom re-rated +28% after revealing XPU custom chip wins with Google/Meta — MRVL follows same playbook with Google TPU and Amazon Trainium"
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Marvell Technology joins S&P 500 on June 22, 2026 — index funds forced to buy",
+    "url": "https://www.tikr.com/blog/marvell-is-up-around-260-in-2026-as-it-joins-the-sp-500-heres-where-the-stock-could-go",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://www.tikr.com/blog/marvell-is-up-around-260-in-2026-as-it-joins-the-sp-500-heres-where-the-stock-could-go",
+    "https://stockanalysis.com/stocks/mrvl/forecast/",
+    "https://www.marketbeat.com/stocks/NASDAQ/MRVL/forecast/",
+    "https://public.com/stocks/mrvl/forecast-price-target"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Marvell คือ quiet giant ของ AI infrastructure — custom silicon (XPU) ให้ Google, Amazon, Microsoft และครอง optical interconnect ที่ส่งข้อมูล AI ทั้งหมด วันนี้ MRVL เข้า S&P 500 อย่างเป็นทางการ — index funds ต้องซื้อหุ้น $5–8B ไม่ว่าจะแพงแค่ไหน KeyBanc ตั้ง target $385 (+46%) อ้างว่า optical networking คือ moat ที่ยั่งยืนกว่า AI chip ตรงๆ",
+      "priceNote": "S&P 500 inclusion วันนี้ — index funds forced to buy",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "S&P 500 Index Inclusion", "description": "MRVL เข้า S&P 500 วันนี้ — Vanguard, BlackRock ต้องซื้อหุ้นเพิ่มทันที" },
+        { "name": "Custom AI Silicon Sampling", "description": "XPU milestone สำหรับ Google/Amazon คาด Jul 1, 2026" },
+        { "name": "Optical Interconnect Dominance", "description": "PAM4 DSP ของ Marvell ส่งข้อมูล AI 80%+ ของ data center ทั่วโลก" }
+      ],
+      "risks": [
+        "Customer concentration — Google + Amazon รวม >50% ของรายได้ custom silicon",
+        "หุ้นขึ้น 260%+ YTD แล้ว — miss เล็กน้อยอาจทำให้ร่วงหนัก",
+        "Consensus target ($238–240) ต่ำกว่าราคาปัจจุบัน — street ตามไม่ทัน",
+        "TSMC allocation แข่งกับ NVDA/AMD อาจ constrain production XPU"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed ลดดอกเบี้ย H2 2026 — tailwind สำหรับ growth multiple",
+        "inflationNote": "Semiconductor equipment inflation ลดลง — TSMC capex stable",
+        "sectorImpact": "Rate ลด = higher growth multiple. Custom silicon ขับเคลื่อนโดย hyperscaler capex ไม่ใช่ consumer",
+        "summary": "Fed risk ต่ำ — รายได้ Marvell ขับเคลื่อนโดย AI capex ของ hyperscalers ไม่ใช่ consumer spending. S&P 500 inclusion เพิ่ม institutional demand floor ถาวร"
+      },
+      "entryStrategy": {
+        "verdict": "ซื้อ MRVL บน dip หลัง S&P 500 inclusion — custom silicon + optical moat คือ AI infrastructure play ที่ตลาดยังประเมินต่ำเกินไป แนะนำ 15% ของ portfolio",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน ก่อน S&P 500 bump", "timing": "ตอนนี้" },
+          { "note": "โซน pullback หลัง inclusion", "timing": "ถ้าย่อ" },
+          { "note": "200-day MA support", "timing": "ถ้าร่วงลึก" }
+        ],
+        "tp1": { "note": "momentum หลัง Q2 earnings" },
+        "tp2": { "note": "KeyBanc Street-high target" },
+        "tp3": { "note": "Moon case · FY2028 $16.5B revenue re-rating", "moon": true },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า support หลัง S&P 500 inclusion",
+          "hardNote": "200-day MA structural break",
+          "rrNote": "Tight stop vs TP2",
+          "rrWarning": "R/R แข็งแกร่ง"
+        }
+      },
+      "estimateDates": [
+        { "event": "Custom Silicon Sampling", "note": "XPU milestone ใหม่" },
+        { "event": "Q2 FY2027 Earnings", "note": "read revenue ramp" },
+        { "event": "FY2028 Revenue Target", "note": "raised guidance $16.5B" }
+      ]
+    }
+  }
+}

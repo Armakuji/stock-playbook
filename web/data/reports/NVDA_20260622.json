@@ -1,0 +1,192 @@
+{
+  "ticker": "NVDA",
+  "companyName": "NVIDIA Corporation",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-22T00:00:00.000Z",
+  "price": 210.69,
+  "priceChange": -0.28,
+  "priceNote": "Pre-market $210.10 · off ATH · AI infrastructure supercycle intact",
+  "marketCap": "$5.1T",
+  "sector": "Technology / Semiconductors",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 90,
+  "summary": "NVIDIA remains the undisputed AI infrastructure backbone — H100/H200 demand from hyperscalers shows no signs of slowing and the Blackwell ramp is accelerating. With 62 analysts averaging a $299 price target (+42% from here), the risk/reward at current levels is compelling. Physical AI (Robotics, autonomous vehicles) is the next multi-year growth vector that the market is just beginning to price in.",
+  "catalysts": [
+    {
+      "icon": "⚡",
+      "name": "Blackwell B200 / GB200 Ramp",
+      "description": "Hyperscalers (Microsoft, Google, Meta, AWS) accelerating Blackwell orders; supply-constrained through end of 2026. Revenue from Blackwell expected to dwarf Hopper cycle.",
+      "urgencyLabel": "NOW",
+      "dateBadge": "Ongoing",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "🤖",
+      "name": "Physical AI / Robotics Platform",
+      "description": "NVIDIA Cosmos + Isaac robotics platform gaining enterprise traction. CEO Jensen Huang keynote at Computex signaled robotics as next $1T addressable market for NVDA.",
+      "urgencyLabel": "2 MONTHS",
+      "dateBadge": "Aug 2026",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📊",
+      "name": "Q2 FY2027 Earnings",
+      "description": "Next earnings report expected late Aug 2026. Consensus estimates revenue ~$45B+. Beat-and-raise cadence has been consistent for 6 consecutive quarters.",
+      "urgencyLabel": "2 MONTHS",
+      "dateBadge": "Aug 27, 2026",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Export controls on H20 chips to China — $5B+ revenue at risk if restrictions tighten further",
+    "Blackwell supply chain constraints delaying hyperscaler deployments → revenue recognition pushed into Q3/Q4",
+    "AMD MI450 gaining enterprise traction with cost-competitive alternative; potential market share erosion in 2027",
+    "Valuation premium (50x P/E) leaves limited margin of safety if growth disappoints even 1 quarter"
+  ],
+  "estimateDates": [
+    { "event": "Q2 FY2027 Earnings", "dateRange": "Aug 27, 2026", "note": "Beat + guide TP1 trigger", "est": "est. $220+", "highlight": "blue" },
+    { "event": "TP1 Target", "dateRange": "Sep–Oct 2026", "note": "Post-earnings momentum", "est": "$240", "highlight": "yellow" },
+    { "event": "TP2 Target", "dateRange": "Q1 2027", "note": "Blackwell full ramp", "est": "$270", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -20, "price": 168 },
+    { "label": "Base", "color": "yellow", "pct": 20, "price": 253 },
+    { "label": "Bull", "color": "green", "pct": 42, "price": 299 },
+    { "label": "Moon", "color": "purple", "pct": 65, "price": 347 }
+  ],
+  "analystTargets": [
+    { "firm": "Goldman Sachs", "target": 300, "rating": "Buy" },
+    { "firm": "Morgan Stanley", "target": 320, "rating": "Overweight" },
+    { "firm": "BofA Securities", "target": 295, "rating": "Buy" },
+    { "firm": "Wedbush", "target": 350, "rating": "Outperform" },
+    { "firm": "Barclays", "target": 285, "rating": "Overweight" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Fed on hold through Sep 2026 — 1–2 cuts expected H2 2026",
+    "inflationNote": "PCE easing toward 2.5% — no re-acceleration risk for tech multiples near-term",
+    "sectorImpact": "Lower rates = multiple expansion for high-growth semis. NVDA benefits directly.",
+    "summary": "Fed risk LOW for NVDA — rate cuts are a tailwind for growth multiple. AI capex from hyperscalers is supply-side driven and independent of rate cycles. No macro headwinds on the horizon."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 210, "note": "Current price — dip from ATH", "timing": "Now" },
+      { "label": "Entry 2", "level": 195, "rangeMax": 200, "note": "Support zone / 50-day MA area", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 175, "note": "200-day MA / deep reset", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 240, "pct": 14.0, "note": "Post-Q2 earnings breakout" },
+    "tp2": { "price": 270, "pct": 28.1, "note": "Blackwell full ramp consensus" },
+    "tp3": { "price": 347, "pct": 65.0, "note": "Moon case · Robotics re-rating 2027", "moon": true },
+    "stopLoss": {
+      "tight": 185, "tightPct": -12, "tightNote": "Below 50-day MA support",
+      "hard": 160, "hardPct": -24, "hardNote": "200-day MA structural break",
+      "riskReward": "3.5 : 1", "rrNote": "Tight stop vs TP2", "rrWarning": "Excellent R/R"
+    },
+    "verdict": "Scale into NVDA on dips toward $195–200 — AI supercycle thesis intact, Blackwell ramp is accelerating",
+    "approach": "DCA"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "NVDA historically runs 8–15% in the 2 weeks before earnings as options market prices in volatility premium. Pattern has repeated for 5 of last 6 quarters.",
+    "preRunupTiming": "1–2 สัปดาห์ก่อน earnings",
+    "preRunupPct": "+8–15%",
+    "postWin": {
+      "avgPct": 12,
+      "range": "+7% to +24%",
+      "note": "Q3 FY2026 (Nov 2025) beat drove +4.9% next day; Q4 FY2026 (Feb 2026) beat drove +8.2% — market now expects beats so reaction more muted",
+      "exampleDate": "Feb 2026"
+    },
+    "postLose": {
+      "avgPct": -8,
+      "range": "-5% to -15%",
+      "note": "May 2024 guide-light caused -7% single-day drop despite EPS beat",
+      "exampleDate": "May 2024"
+    },
+    "spotSizing": {
+      "pct": 20,
+      "reason": "Core Holding — high conviction score 90/100. Size accordingly. Use DCA to average into weakness."
+    },
+    "stopPreCatalyst": { "pct": -12, "price": 185, "note": "ถ้าหลุด $185 ก่อน earnings thesis เปลี่ยน" },
+    "stopPostCatalyst": { "pct": -8, "note": "ถ้า earnings miss + guide down ออกทันที ไม่รอ" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "NVDA",
+      "event": "Hopper cycle acceleration Q2 FY2024",
+      "date": "Aug 2023",
+      "movePct": 40,
+      "days": 30,
+      "outcome": "good",
+      "note": "Revenue tripled YoY driven by data center AI — stock rerated from $40 to $500+ (split-adjusted) over 18 months. Blackwell cycle mirrors Hopper in magnitude."
+    },
+    {
+      "ticker": "TSMC",
+      "event": "AI chip foundry demand surge Q3 2024",
+      "date": "Oct 2024",
+      "movePct": 25,
+      "days": 45,
+      "outcome": "good",
+      "note": "TSMC rerated on NVDA-driven AI demand — comparable as upstream beneficiary of same capex cycle"
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "NVIDIA Blackwell demand exceeds supply through 2026 — Jensen Huang confirms at Computex",
+    "url": "https://stockanalysis.com/stocks/nvda/",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/nvda/",
+    "https://tickernerd.com/stock/nvda-forecast/",
+    "https://www.marketbeat.com/stocks/NASDAQ/NVDA/forecast/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "NVIDIA คือกระดูกสันหลังของ AI infrastructure ทั่วโลก — ชิป H100/H200 และ Blackwell กำลัง ramp อย่างรวดเร็ว hyperscalers ทั้ง Microsoft, Google, Meta ยังคง queue ซื้อไม่หยุด นักวิเคราะห์ 62 ราย ตั้ง target เฉลี่ย $299 หรือ +42% จากราคาปัจจุบัน NVDA ยังคงเป็น Core Holding ระยะยาว",
+      "priceNote": "Pre-market $210.10 · ย่อจาก ATH · supercycle AI ยังคงแข็งแกร่ง",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "Blackwell B200/GB200 Ramp", "description": "Hyperscalers เร่งซื้อ Blackwell — supply ยัง tight ถึงสิ้นปี 2026" },
+        { "name": "Physical AI / หุ่นยนต์", "description": "Cosmos + Isaac platform กำลัง gain traction ใน enterprise robotics" },
+        { "name": "Q2 FY2027 Earnings", "description": "คาด revenue $45B+ · beat-and-raise streak 6 ไตรมาสติดต่อกัน" }
+      ],
+      "risks": [
+        "Export control ชิป H20 ไปจีน — เสี่ยงสูญรายได้ $5B+",
+        "Supply chain Blackwell ล่าช้า → recognition revenue เลื่อนไป Q3/Q4",
+        "AMD MI450 เข้ามาแย่ง market share ด้วยราคาที่ถูกกว่า",
+        "Valuation premium 50x P/E — margin of safety น้อยถ้า miss แม้แต่ไตรมาสเดียว"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ยถึง Sep 2026 — คาดลด 1–2 ครั้ง H2 2026",
+        "inflationNote": "PCE ลดลงสู่ 2.5% — ไม่มีความเสี่ยงจาก re-acceleration ระยะสั้น",
+        "sectorImpact": "Rate ลด = multiple expansion สำหรับ growth semis — NVDA ได้ประโยชน์โดยตรง",
+        "summary": "Fed risk ต่ำมากสำหรับ NVDA — การลดดอกเบี้ยเป็น tailwind สำหรับ multiple AI capex จาก hyperscalers ขับเคลื่อนโดย supply-side ไม่ขึ้นกับ rate cycle"
+      },
+      "entryStrategy": {
+        "verdict": "DCA เข้า NVDA ที่โซน $195–200 — thesis Blackwell ramp ยังแข็งแกร่ง แนะนำถือ 20–30% ของ portfolio",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน ย่อจาก ATH", "timing": "ตอนนี้" },
+          { "note": "โซน support / ใกล้ 50-day MA", "timing": "ถ้าย่อ" },
+          { "note": "200-day MA / ย่อหนัก", "timing": "ถ้าร่วงลึก" }
+        ],
+        "tp1": { "note": "breakout หลัง Q2 earnings" },
+        "tp2": { "note": "Blackwell full ramp — consensus" },
+        "tp3": { "note": "Moon case · Robotics re-rating ปี 2027", "moon": true },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า support 50-day MA",
+          "hardNote": "200-day MA structural break",
+          "rrNote": "Tight stop vs TP2",
+          "rrWarning": "R/R ดีเยี่ยม"
+        }
+      },
+      "estimateDates": [
+        { "event": "Q2 FY2027 Earnings", "note": "Beat + guide → trigger TP1" },
+        { "event": "เป้า TP1", "note": "momentum หลัง earnings" },
+        { "event": "เป้า TP2", "note": "Blackwell full ramp" }
+      ]
+    }
+  }
+}

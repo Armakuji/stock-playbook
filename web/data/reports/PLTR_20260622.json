@@ -1,0 +1,193 @@
+{
+  "ticker": "PLTR",
+  "companyName": "Palantir Technologies Inc.",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-22T00:00:00.000Z",
+  "price": 126.65,
+  "priceChange": -1.2,
+  "priceNote": "Pulled back 11% from recent high — compelling entry zone",
+  "marketCap": "$308B",
+  "sector": "Technology / AI Software",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 78,
+  "summary": "Palantir just delivered US revenue growth of 104% year-over-year — the first time commercial US crossed 100% growth — and raised full-year 2026 revenue guidance to 71% growth. The stock has pulled back 11% from highs creating a re-entry opportunity. With a median analyst target of $193 (+52% upside) and Q2 earnings on Aug 10, the bull thesis is intact. Valuation (144x P/E) is the only real bear case.",
+  "catalysts": [
+    {
+      "icon": "🏛️",
+      "name": "US Government AI Contracts",
+      "description": "Pentagon AI contracts scaling rapidly — AIP (AI Platform) now deployed across 50+ defense agencies. DOGE efficiency mandate driving accelerated AI adoption in federal government.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Q3 2026",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🏢",
+      "name": "Commercial US AIP Bootcamps",
+      "description": "US Commercial revenue crossed 100% YoY growth in Q1 2026. AIP bootcamp model driving rapid enterprise adoption — Fortune 500 pipeline growing every quarter.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "Earnings Aug 10, 2026. Consensus expects continued US commercial + government acceleration. Revenue guidance raised to 71% YoY growth for full year — street estimate $1.85B Q2.",
+      "urgencyLabel": "7 WEEKS",
+      "dateBadge": "Aug 10, 2026",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Valuation 144x P/E — priced for perfection, any miss in commercial or government spend causes sharp selloff",
+    "Government contract spending risk — continuing resolution or budget freeze could slow federal deployments",
+    "Competition from Microsoft Copilot, Google Cloud Vertex AI for enterprise AI workloads",
+    "High valuation creates persistent short-seller pressure and analyst skepticism"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Aug 10, 2026", "note": "Key catalyst for breakout", "est": "est. $1.85B rev", "highlight": "blue" },
+    { "event": "TP1 Target", "dateRange": "Sep 2026", "note": "Post-earnings momentum", "est": "$155", "highlight": "yellow" },
+    { "event": "TP2 Target", "dateRange": "Q1 2027", "note": "Full year guidance beat", "est": "$193", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -25, "price": 95 },
+    { "label": "Base", "color": "yellow", "pct": 22, "price": 154 },
+    { "label": "Bull", "color": "green", "pct": 52, "price": 193 },
+    { "label": "Moon", "color": "purple", "pct": 80, "price": 228 }
+  ],
+  "analystTargets": [
+    { "firm": "Wedbush", "target": 210, "rating": "Outperform" },
+    { "firm": "BofA Securities", "target": 195, "rating": "Buy" },
+    { "firm": "Deutsche Bank", "target": 180, "rating": "Buy" },
+    { "firm": "Jefferies", "target": 130, "rating": "Hold" },
+    { "firm": "Morgan Stanley", "target": 105, "rating": "Underweight" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Rate cuts support high-growth software multiples — PLTR P/E compression risk decreases",
+    "inflationNote": "Software margins not directly affected by inflation — PLTR 35%+ adjusted operating margins",
+    "sectorImpact": "Lower rates = multiple re-expansion for high-P/E AI software. Government contracts are inflation-proof.",
+    "summary": "Fed risk LOW — government and enterprise AI contracts are long-cycle, not rate-sensitive. Rate cuts reduce valuation compression risk on 144x P/E. Main risk is execution, not macro."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 127, "note": "Current price — 11% off highs", "timing": "Now" },
+      { "label": "Entry 2", "level": 110, "rangeMax": 115, "note": "50-day MA support zone", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 95, "note": "200-day MA deep dip", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 155, "pct": 22.4, "note": "Post-Q2 earnings breakout" },
+    "tp2": { "price": 193, "pct": 52.4, "note": "Median analyst target" },
+    "tp3": { "price": 228, "pct": 80.0, "note": "Moon case · Wedbush bull scenario 2027", "moon": true },
+    "stopLoss": {
+      "tight": 110, "tightPct": -13, "tightNote": "Below 50-day MA support",
+      "hard": 92, "hardPct": -27, "hardNote": "200-day MA — structural breakdown",
+      "riskReward": "3.0 : 1", "rrNote": "Tight stop vs TP2", "rrWarning": "Good R/R"
+    },
+    "verdict": "Scale into PLTR on 11% pullback — US commercial 100%+ growth is historic, Q2 earnings is next catalyst",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "PLTR historically runs 10–20% in 2 weeks pre-earnings as options vol expands. AIP bootcamp announcements and government contract wins often leak pre-print.",
+    "preRunupTiming": "1–2 สัปดาห์ก่อน Aug 10 earnings",
+    "preRunupPct": "+10–20%",
+    "postWin": {
+      "avgPct": 18,
+      "range": "+10% to +35%",
+      "note": "Q1 2026 earnings (May 2026) beat drove +18% single day — US commercial 104% YoY shocked street. Pattern: PLTR beats on commercial, guides up, pops hard.",
+      "exampleDate": "May 2026"
+    },
+    "postLose": {
+      "avgPct": -15,
+      "range": "-10% to -25%",
+      "note": "Feb 2024 miss on government revenue caused -15% single session — government budget risk is the key bear case",
+      "exampleDate": "Feb 2024"
+    },
+    "spotSizing": {
+      "pct": 10,
+      "reason": "Speculative 78/100 — high conviction on growth but 144x P/E limits sizing. Max 10% of portfolio. Scale in on dips."
+    },
+    "stopPreCatalyst": { "pct": -13, "price": 110, "note": "ถ้าหลุด $110 ก่อน earnings = sentiment เปลี่ยน ออกก่อน" },
+    "stopPostCatalyst": { "pct": -15, "note": "ถ้า Q2 miss commercial growth < 80% YoY ออกทันที" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "PLTR",
+      "event": "Q1 2026 Earnings Beat — US Commercial 104% YoY",
+      "date": "May 2026",
+      "movePct": 18,
+      "days": 1,
+      "outcome": "good",
+      "note": "Palantir crossed 100% US commercial YoY growth for first time — drove +18% single session. Q2 2026 earnings could repeat if commercial maintains momentum."
+    },
+    {
+      "ticker": "SNOW",
+      "event": "AI platform commercial acceleration",
+      "date": "Mar 2024",
+      "movePct": 22,
+      "days": 30,
+      "outcome": "good",
+      "note": "Snowflake re-rated on enterprise AI platform story — comparable as high-P/E AI software with government + enterprise split"
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Palantir Q1 2026 US Revenue Growth of 104% YoY — raises FY2026 guidance to 71% growth",
+    "url": "https://investors.palantir.com/news-details/2026/Palantir-Reports-Q1-2026-U-S--Revenue-Growth-of-104-YY-and-Revenue-Growth-of-85-YY-Raises-FY-2026-Revenue-Guidance-to-71-YY-Growth-and-U-S--Comm-Revenue-Guidance-to-120-YY-Crushing-Consensus-Expectations/",
+    "date": "May 2026"
+  },
+  "sources": [
+    "https://investors.palantir.com/news-details/2026/Palantir-Reports-Q1-2026-U-S--Revenue-Growth-of-104-YY-and-Revenue-Growth-of-85-YY-Raises-FY-2026-Revenue-Guidance-to-71-YY-Growth-and-U-S--Comm-Revenue-Guidance-to-120-YY-Crushing-Consensus-Expectations/",
+    "https://capital.com/en-int/market-updates/palantir-stock-forecast-02-06-2026",
+    "https://www.marketbeat.com/stocks/NASDAQ/PLTR/forecast/",
+    "https://stockanalysis.com/stocks/pltr/forecast/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Palantir เพิ่งรายงาน US revenue growth 104% YoY — ครั้งแรกที่ US commercial ข้าม 100% growth และปรับ guidance ทั้งปี 2026 เป็น 71% growth หุ้นย่อ 11% จาก high สร้าง entry โอกาสดี median analyst target $193 = upside 52% และ Q2 earnings Aug 10 เป็น catalyst ถัดไป valuation 144x P/E คือ bear case เดียว",
+      "priceNote": "ย่อ 11% จาก high ล่าสุด — โซน entry ดี",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "US Government AI Contracts", "description": "AIP deploy ใน 50+ หน่วยงานกลาโหม — DOGE mandate เร่ง AI adoption" },
+        { "name": "US Commercial AIP Bootcamps", "description": "US Commercial ข้าม 100% YoY growth ครั้งแรก — pipeline Fortune 500 โต" },
+        { "name": "Q2 2026 Earnings", "description": "Aug 10, 2026 — consensus คาด revenue $1.85B+ ต่อเนื่อง" }
+      ],
+      "risks": [
+        "Valuation 144x P/E — priced for perfection ถ้า miss แม้แต่ไตรมาสเดียวจะร่วงหนัก",
+        "Government budget freeze หรือ continuing resolution ชะลอ federal deployment",
+        "Microsoft Copilot + Google Vertex AI แข่งในตลาด enterprise AI",
+        "High valuation ดึงดูด short-sellers ตลอดเวลา"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Rate cuts สนับสนุน multiple re-expansion สำหรับ high-growth AI software",
+        "inflationNote": "Software margin ไม่ได้รับผลกระทบจาก inflation — PLTR margin 35%+",
+        "sectorImpact": "Rate ลด = multiple expansion สำหรับ AI software P/E สูง",
+        "summary": "Fed risk ต่ำ — government + enterprise contract เป็น long-cycle ไม่ sensitive กับ rate. Rate cuts ลดความเสี่ยง valuation compression ของ 144x P/E"
+      },
+      "entryStrategy": {
+        "verdict": "Scale เข้า PLTR บน 11% pullback — US commercial 100%+ growth เป็นประวัติศาสตร์ Q2 earnings คือ catalyst ถัดไป แนะนำ 10% ของ portfolio",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน ย่อ 11% จาก high", "timing": "ตอนนี้" },
+          { "note": "โซน 50-day MA support", "timing": "ถ้าย่อ" },
+          { "note": "200-day MA deep dip", "timing": "ถ้าร่วงลึก" }
+        ],
+        "tp1": { "note": "breakout หลัง Q2 earnings" },
+        "tp2": { "note": "median analyst target" },
+        "tp3": { "note": "Moon case · Wedbush bull scenario ปี 2027", "moon": true },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า 50-day MA support",
+          "hardNote": "200-day MA structural breakdown",
+          "rrNote": "Tight stop vs TP2",
+          "rrWarning": "R/R ดี"
+        }
+      },
+      "estimateDates": [
+        { "event": "Q2 2026 Earnings", "note": "catalyst สำคัญสำหรับ breakout" },
+        { "event": "เป้า TP1", "note": "momentum หลัง Q2 earnings" },
+        { "event": "เป้า TP2", "note": "beat guidance ทั้งปี" }
+      ]
+    }
+  }
+}
