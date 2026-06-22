@@ -3,9 +3,9 @@
   "companyName": "Broadcom Inc.",
   "exchange": "NASDAQ",
   "generatedAt": "2026-06-21T00:00:00.000Z",
-  "price": 411.46,
-  "priceChange": 0.85,
-  "priceNote": "Near mid-range of 52-wk $244–$495 · AI XPU ramp in progress",
+  "price": 396.3,
+  "priceChange": -3.5,
+  "priceNote": "Jun 22 real-time · -3.5% · Google chip program delay fears dragging semis",
   "marketCap": "$1.95T",
   "sector": "Technology / Semiconductors",
   "verdict": "BUY",
@@ -60,25 +60,25 @@
     {
       "label": "Bear",
       "color": "red",
-      "pct": -18,
+      "pct": -15.0,
       "price": 337
     },
     {
       "label": "Base",
       "color": "yellow",
-      "pct": 12,
+      "pct": 16.0,
       "price": 461
     },
     {
       "label": "Bull",
       "color": "green",
-      "pct": 22,
+      "pct": 27.0,
       "price": 502
     },
     {
       "label": "Moon",
       "color": "purple",
-      "pct": 46,
+      "pct": 51.0,
       "price": 600
     }
   ],
@@ -115,7 +115,7 @@
     "entryLevels": [
       {
         "label": "Entry 1",
-        "level": 411,
+        "level": 396,
         "note": "Current price — momentum entry",
         "timing": "Now"
       },
@@ -136,26 +136,26 @@
     ],
     "tp1": {
       "price": 460,
-      "pct": 11.8,
+      "pct": 16.1,
       "note": "Near-term resistance / Base case"
     },
     "tp2": {
       "price": 502,
-      "pct": 22.0,
+      "pct": 26.7,
       "note": "Analyst consensus target"
     },
     "tp3": {
       "price": 600,
-      "pct": 45.8,
+      "pct": 51.4,
       "note": "Full AI XPU monetization · 2027",
       "moon": true
     },
     "stopLoss": {
       "tight": 368,
-      "tightPct": -11,
+      "tightPct": -7.0,
       "tightNote": "Below Entry 2 zone ($380 support)",
       "hard": 340,
-      "hardPct": -17,
+      "hardPct": -14.0,
       "hardNote": "200-day MA / structural breakdown",
       "riskReward": "2.9 : 1",
       "rrNote": "Tight stop vs TP2",
@@ -172,7 +172,7 @@
   "i18n": {
     "th": {
       "summary": "Broadcom คือผู้ชนะ AI ที่หลายคนมองข้าม — chip AI แบบ custom (XPU) สำหรับ Google, Meta, Apple บวกกับ AI networking กำลังรวมตัวเป็นธุรกิจรายได้ $60B+ ภายในปี 2027 การรวมกิจการ VMware เริ่มสร้างกระแสเงินสดบวกเร็วกว่าแผน และรายได้ซอฟต์แวร์แบบ recurring เปลี่ยนโครงสร้าง P&L ถาวร",
-      "priceNote": "อยู่กลาง range 52 สัปดาห์ $244–$495 · XPU ramp กำลังดำเนินอยู่",
+      "priceNote": "Jun 22 real-time · -3.5% · Google chip delay fears กดดัน semis",
       "scoreLabel": "Core Holding",
       "catalysts": [
         {
