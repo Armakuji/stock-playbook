@@ -3,9 +3,9 @@
   "companyName": "Intel Corporation",
   "exchange": "NASDAQ",
   "generatedAt": "2026-06-21T00:00:00.000Z",
-  "price": 134.16,
-  "priceChange": 3.2,
-  "priceNote": "Turnaround confirmed · 18A node ramping · foundry thesis maturing",
+  "price": 139.02,
+  "priceChange": 3.6,
+  "priceNote": "Updated Jun 22 · +3.6% · Apple foundry + AI chip deal catalyst",
   "marketCap": "$563B",
   "sector": "Technology / Semiconductors",
   "verdict": "HOLD",
@@ -58,25 +58,25 @@
     {
       "label": "Bear",
       "color": "red",
-      "pct": -20,
+      "pct": -23.0,
       "price": 107
     },
     {
       "label": "Base",
       "color": "yellow",
-      "pct": 12,
+      "pct": 8.0,
       "price": 150
     },
     {
       "label": "Bull",
       "color": "green",
-      "pct": 34,
+      "pct": 29.0,
       "price": 180
     },
     {
       "label": "Moon",
       "color": "purple",
-      "pct": 64,
+      "pct": 58.0,
       "price": 220
     }
   ],
@@ -113,7 +113,7 @@
     "entryLevels": [
       {
         "label": "Entry 1",
-        "level": 134,
+        "level": 139,
         "note": "Current price — hold or trim partial",
         "timing": "Now"
       },
@@ -134,26 +134,26 @@
     ],
     "tp1": {
       "price": 150,
-      "pct": 11.8,
+      "pct": 7.9,
       "note": "Near-term analyst consensus"
     },
     "tp2": {
       "price": 180,
-      "pct": 34.2,
+      "pct": 29.5,
       "note": "Foundry wins fully priced"
     },
     "tp3": {
       "price": 220,
-      "pct": 64.0,
+      "pct": 58.3,
       "note": "Full foundry P&L positive · 2027",
       "moon": true
     },
     "stopLoss": {
       "tight": 114,
-      "tightPct": -15,
+      "tightPct": -18.0,
       "tightNote": "Below Entry 2 zone ($120 support)",
       "hard": 98,
-      "hardPct": -27,
+      "hardPct": -30.0,
       "hardNote": "200-day MA / structural breakdown",
       "riskReward": "3.2 : 1",
       "rrNote": "Tight stop vs TP2",
@@ -170,7 +170,7 @@
   "i18n": {
     "th": {
       "summary": "Intel พิสูจน์ว่า 18A node ใช้งานได้จริงและ turnaround กำลังดำเนินอยู่ — หุ้นขึ้นมา 500%+ จากจุดต่ำสุด ที่ราคา $134 ส่วนใหญ่ของการ re-rating ถูกตีราคาเข้าไปแล้ว คำถามคือ Intel จะชนะ foundry customers รายใหม่ได้ไหมและรักษา margin ขยายตัวได้ไหม โอกาสมีอยู่แต่เงินง่ายๆ ถูกทำไปแล้ว",
-      "priceNote": "Turnaround ยืนยันแล้ว · 18A node กำลัง ramp · foundry thesis กำลัง mature",
+      "priceNote": "อัปเดต Jun 22 · +3.6% · Apple foundry deal catalyst",
       "scoreLabel": "Speculative",
       "catalysts": [
         {

@@ -3,9 +3,9 @@
   "companyName": "Tesla, Inc.",
   "exchange": "NASDAQ",
   "generatedAt": "2026-06-21T00:00:00.000Z",
-  "price": 400.49,
-  "priceChange": 1.04,
-  "priceNote": "52-wk range $289–$499 · FSD v13 + Robotaxi approaching · near range resistance",
+  "price": 411.54,
+  "priceChange": 2.8,
+  "priceNote": "Updated Jun 22 · +2.8% on FSD/Robotaxi momentum · 52-wk $289–$499",
   "marketCap": "$1.28T",
   "sector": "Technology / EV / Autonomy",
   "verdict": "HOLD",
@@ -61,25 +61,25 @@
     {
       "label": "Bear",
       "color": "red",
-      "pct": -25,
+      "pct": -27.0,
       "price": 300
     },
     {
       "label": "Base",
       "color": "yellow",
-      "pct": 10,
+      "pct": 7.0,
       "price": 440
     },
     {
       "label": "Bull",
       "color": "green",
-      "pct": 25,
+      "pct": 21.0,
       "price": 500
     },
     {
       "label": "Moon",
       "color": "purple",
-      "pct": 50,
+      "pct": 46.0,
       "price": 600
     }
   ],
@@ -116,7 +116,7 @@
     "entryLevels": [
       {
         "label": "Entry 1",
-        "level": 400,
+        "level": 412,
         "note": "Current price — near range top, sizing carefully",
         "timing": "Small position"
       },
@@ -137,26 +137,26 @@
     ],
     "tp1": {
       "price": 450,
-      "pct": 12.4,
+      "pct": 9.3,
       "note": "Mid-range breakout target"
     },
     "tp2": {
       "price": 500,
-      "pct": 24.9,
+      "pct": 21.5,
       "note": "Near 52-wk high $499 — Robotaxi priced in"
     },
     "tp3": {
       "price": 600,
-      "pct": 49.8,
+      "pct": 45.8,
       "note": "Optimus + autonomous fleet · 2027",
       "moon": true
     },
     "stopLoss": {
       "tight": 348,
-      "tightPct": -13,
+      "tightPct": -15.0,
       "tightNote": "Below Entry 2 zone ($360 support)",
       "hard": 305,
-      "hardPct": -24,
+      "hardPct": -26.0,
       "hardNote": "200-day MA / thesis broken",
       "riskReward": "3.3 : 1",
       "rrNote": "Tight stop vs TP2",
@@ -173,7 +173,7 @@
   "i18n": {
     "th": {
       "summary": "Tesla อยู่ใกล้ด้านบนของ range 52 สัปดาห์ที่ $400 โอกาสด้าน autonomy (Robotaxi, FSD v13, Optimus) เป็นจริงและอาจเปลี่ยนเกมได้ แต่ EV margin ยังถูกกดดันจากการลดราคาและการแข่งขันที่เพิ่มขึ้น ที่ $400 ตลาดตีราคาข่าวดีไปมากแล้ว HOLD เว้นแต่ autonomy catalysts ชัดเจนขึ้น",
-      "priceNote": "range 52 สัปดาห์ $289–$499 · FSD v13 + Robotaxi กำลังมา · ใกล้แนวต้านด้านบน",
+      "priceNote": "อัปเดต Jun 22 · +2.8% · momentum FSD/Robotaxi",
       "scoreLabel": "Speculative",
       "catalysts": [
         {
