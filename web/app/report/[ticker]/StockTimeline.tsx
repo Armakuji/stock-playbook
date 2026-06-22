@@ -277,7 +277,7 @@ export function StockTimeline({ points, ticker }: Props) {
       {/* Three sparklines side by side */}
       <div style={{
         display: "grid",
-        gridTemplateColumns: "repeat(3, 1fr)",
+        gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
         gap: 12,
       }}>
         {metrics.map((m) => (
@@ -287,6 +287,7 @@ export function StockTimeline({ points, ticker }: Props) {
               background: "var(--card-elevated, #0f172a)",
               borderRadius: 10, padding: "14px 14px 10px",
               border: `1px solid ${m.color}30`,
+              minWidth: 0, overflow: "hidden",
             }}
           >
             {/* Metric header */}

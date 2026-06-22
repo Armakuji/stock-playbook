@@ -356,7 +356,6 @@ function TradeRow({ trade, onEdit, onDelete, onSaveExit }: {
     ? (trade.realizedPnL ?? calcPnL(trade))
     : null;
   const cost = trade.entryPrice * trade.shares;
-  const pnlPct = pnl !== null && cost > 0 ? (pnl / cost * 100) : null;
   const days = holdDays(trade);
   const tp1 = trade.plannedTP[0];
   const adherent = trade.status === "closed" && trade.exits.length > 0 && tp1 > 0
@@ -397,15 +396,12 @@ function TradeRow({ trade, onEdit, onDelete, onSaveExit }: {
           <div style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>{trade.shares} sh</div>
         </div>
 
-        {/* P&L */}
+        {/* P&L — closed: show $ amount; open: dash */}
         <div style={{ textAlign: "right", minWidth: 80 }}>
           {pnl !== null ? (
-            <>
-              <div style={{ fontSize: 13, fontWeight: 800, color: pnlColor(pnl), fontFamily: "var(--font-mono, monospace)" }}>{fmt$(pnl)}</div>
-              {pnlPct !== null && <div style={{ fontSize: 10, color: pnlColor(pnl), fontFamily: "var(--font-mono, monospace)" }}>{fmtPct(pnlPct)}</div>}
-            </>
+            <div style={{ fontSize: 13, fontWeight: 800, color: pnlColor(pnl), fontFamily: "var(--font-mono, monospace)" }}>{fmt$(pnl)}</div>
           ) : (
-            <span style={{ fontSize: 11, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>open</span>
+            <span style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>—</span>
           )}
         </div>
 
@@ -427,17 +423,90 @@ function TradeRow({ trade, onEdit, onDelete, onSaveExit }: {
 
       {/* Expanded detail */}
       {expanded && (
-        <div style={{ padding: "14px 16px", background: "var(--card-elevated, #0f172a)", borderTop: "1px solid var(--border)" }}>
-          <div style={{ display: "flex", gap: 20, flexWrap: "wrap", marginBottom: 12 }}>
-            <div style={{ fontSize: 11, fontFamily: "var(--font-mono, monospace)", color: "var(--muted)" }}>
-              Entry <strong style={{ color: "var(--text)" }}>{trade.entryDate}</strong>
+        <div style={{ padding: "18px 20px", background: "#070d18", borderTop: "1px solid rgba(255,255,255,0.05)" }}>
+
+          {/* Metric cards */}
+          {(() => {
+            const position = trade.entryPrice * trade.shares;
+            const slPct = trade.entryPrice > 0 && trade.plannedSL > 0
+              ? ((trade.plannedSL - trade.entryPrice) / trade.entryPrice * 100) : null;
+            const tp1Pct = trade.entryPrice > 0 && trade.plannedTP[0] > 0
+              ? ((trade.plannedTP[0] - trade.entryPrice) / trade.entryPrice * 100) : null;
+            const rr = tp1Pct && slPct && slPct < 0
+              ? (tp1Pct / Math.abs(slPct)) : null;
+            const cards = [
+              position > 0 && { label: "Position Size", value: `$${position.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`, color: "#e2e8f0", accent: "#38bdf8" },
+              slPct !== null && { label: "Stop Loss", value: `${slPct.toFixed(1)}%`, color: "#ef4444", accent: "#ef4444" },
+              tp1Pct !== null && { label: "TP1 Upside", value: `+${tp1Pct.toFixed(1)}%`, color: "#10b981", accent: "#10b981" },
+              rr !== null && { label: "Risk / Reward", value: `${rr.toFixed(1)} : 1`, color: "#3b82f6", accent: "#3b82f6" },
+            ].filter(Boolean) as { label: string; value: string; color: string; accent: string }[];
+            if (cards.length === 0) return null;
+            return (
+              <div style={{ display: "grid", gridTemplateColumns: `repeat(${cards.length}, minmax(0,1fr))`, gap: 8, marginBottom: 16 }}>
+                {cards.map((c) => (
+                  <div key={c.label} style={{ background: `${c.accent}0d`, border: `1px solid ${c.accent}28`, borderRadius: 9, padding: "10px 13px" }}>
+                    <div style={{ fontSize: 9, fontWeight: 700, color: "#334155", textTransform: "uppercase", letterSpacing: "1.2px", fontFamily: "var(--font-mono, monospace)", marginBottom: 5 }}>{c.label}</div>
+                    <div style={{ fontSize: 17, fontWeight: 900, color: c.color, fontFamily: "var(--font-mono, monospace)", letterSpacing: "-0.5px" }}>{c.value}</div>
+                  </div>
+                ))}
+              </div>
+            );
+          })()}
+
+          {/* Price levels track */}
+          {(trade.plannedSL > 0 || trade.plannedTP[0] > 0) && (
+            <div style={{ marginBottom: 14 }}>
+              <div style={{ fontSize: 9, fontWeight: 700, color: "#1e3a5f", textTransform: "uppercase", letterSpacing: "1.2px", fontFamily: "var(--font-mono, monospace)", marginBottom: 8 }}>Price Levels</div>
+              <div style={{ display: "flex", alignItems: "center", gap: 6, flexWrap: "wrap" }}>
+                {trade.plannedSL > 0 && (
+                  <div style={{ display: "flex", alignItems: "center", gap: 5, background: "#ef444412", border: "1px solid #ef444332", borderRadius: 7, padding: "5px 10px" }}>
+                    <div style={{ width: 6, height: 6, borderRadius: "50%", background: "#ef4444", flexShrink: 0 }} />
+                    <span style={{ fontSize: 9, color: "#64748b", fontFamily: "var(--font-mono, monospace)" }}>SL</span>
+                    <span style={{ fontSize: 12, fontWeight: 800, color: "#ef4444", fontFamily: "var(--font-mono, monospace)" }}>${trade.plannedSL}</span>
+                  </div>
+                )}
+                <div style={{ flex: 1, minWidth: 12, height: 1, background: "linear-gradient(90deg, #ef444430, #38bdf840)", borderRadius: 1 }} />
+                <div style={{ display: "flex", alignItems: "center", gap: 5, background: "#1e293b", border: "1px solid #2d3f55", borderRadius: 7, padding: "5px 10px" }}>
+                  <div style={{ width: 6, height: 6, borderRadius: "50%", background: "#38bdf8", flexShrink: 0 }} />
+                  <span style={{ fontSize: 9, color: "#64748b", fontFamily: "var(--font-mono, monospace)" }}>Entry</span>
+                  <span style={{ fontSize: 12, fontWeight: 800, color: "#94a3b8", fontFamily: "var(--font-mono, monospace)" }}>${trade.entryPrice.toFixed(2)}</span>
+                </div>
+                {trade.plannedTP[0] > 0 || trade.plannedTP[1] > 0 || trade.plannedTP[2] > 0 ? (
+                  <div style={{ flex: 1, minWidth: 12, height: 1, background: "linear-gradient(90deg, #38bdf840, #10b98160)", borderRadius: 1 }} />
+                ) : null}
+                {trade.plannedTP[0] > 0 && (
+                  <div style={{ display: "flex", alignItems: "center", gap: 5, background: "#10b98110", border: "1px solid #10b98128", borderRadius: 7, padding: "5px 10px" }}>
+                    <div style={{ width: 5, height: 5, borderRadius: "50%", background: "#10b981", flexShrink: 0 }} />
+                    <span style={{ fontSize: 9, color: "#475569", fontFamily: "var(--font-mono, monospace)" }}>TP1</span>
+                    <span style={{ fontSize: 12, fontWeight: 800, color: "#10b981", fontFamily: "var(--font-mono, monospace)" }}>${trade.plannedTP[0]}</span>
+                  </div>
+                )}
+                {trade.plannedTP[1] > 0 && (
+                  <div style={{ display: "flex", alignItems: "center", gap: 5, background: "#10b98118", border: "1px solid #10b98135", borderRadius: 7, padding: "5px 10px" }}>
+                    <div style={{ width: 5, height: 5, borderRadius: "50%", background: "#34d399", flexShrink: 0 }} />
+                    <span style={{ fontSize: 9, color: "#475569", fontFamily: "var(--font-mono, monospace)" }}>TP2</span>
+                    <span style={{ fontSize: 12, fontWeight: 800, color: "#34d399", fontFamily: "var(--font-mono, monospace)" }}>${trade.plannedTP[1]}</span>
+                  </div>
+                )}
+                {trade.plannedTP[2] > 0 && (
+                  <div style={{ display: "flex", alignItems: "center", gap: 5, background: "#10b98122", border: "1px solid #10b98145", borderRadius: 7, padding: "5px 10px" }}>
+                    <div style={{ width: 5, height: 5, borderRadius: "50%", background: "#6ee7b7", flexShrink: 0 }} />
+                    <span style={{ fontSize: 9, color: "#475569", fontFamily: "var(--font-mono, monospace)" }}>TP3</span>
+                    <span style={{ fontSize: 12, fontWeight: 800, color: "#6ee7b7", fontFamily: "var(--font-mono, monospace)" }}>${trade.plannedTP[2]}</span>
+                  </div>
+                )}
+              </div>
             </div>
-            {trade.plannedTP[0] > 0 && <div style={{ fontSize: 11, fontFamily: "var(--font-mono, monospace)", color: "#10b981" }}>TP1 <strong>${trade.plannedTP[0]}</strong></div>}
-            {trade.plannedTP[1] > 0 && <div style={{ fontSize: 11, fontFamily: "var(--font-mono, monospace)", color: "#10b981" }}>TP2 <strong>${trade.plannedTP[1]}</strong></div>}
-            {trade.plannedTP[2] > 0 && <div style={{ fontSize: 11, fontFamily: "var(--font-mono, monospace)", color: "#10b981" }}>TP3 <strong>${trade.plannedTP[2]}</strong></div>}
-            {trade.plannedSL > 0 && <div style={{ fontSize: 11, fontFamily: "var(--font-mono, monospace)", color: "#ef4444" }}>SL <strong>${trade.plannedSL}</strong></div>}
+          )}
+
+          {/* Entry date + report link */}
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 12, flexWrap: "wrap", gap: 8 }}>
+            <div style={{ fontSize: 11, fontFamily: "var(--font-mono, monospace)" }}>
+              <span style={{ color: "#1e3a5f", marginRight: 6, textTransform: "uppercase", fontSize: 9, letterSpacing: "1px", fontWeight: 700 }}>Entered</span>
+              <strong style={{ color: "#64748b" }}>{trade.entryDate}</strong>
+            </div>
             {trade.linkedReportDate && (
-              <Link href={`/report/${trade.ticker.toLowerCase()}`} style={{ fontSize: 11, color: "#3b82f6", fontFamily: "var(--font-mono, monospace)" }}>
+              <Link href={`/report/${trade.ticker.toLowerCase()}`} style={{ fontSize: 10, color: "#38bdf8", fontFamily: "var(--font-mono, monospace)", textDecoration: "none", background: "#38bdf80f", border: "1px solid #38bdf822", borderRadius: 6, padding: "3px 9px" }}>
                 Report {trade.linkedReportDate} →
               </Link>
             )}
@@ -445,26 +514,28 @@ function TradeRow({ trade, onEdit, onDelete, onSaveExit }: {
 
           {/* Exits */}
           {trade.exits.length > 0 && (
-            <div style={{ marginBottom: 12 }}>
-              <div style={{ fontSize: 9, fontWeight: 800, color: "var(--muted)", textTransform: "uppercase", letterSpacing: "1px", fontFamily: "var(--font-mono, monospace)", marginBottom: 6 }}>Exits</div>
-              {trade.exits.map((ex, i) => {
-                const exPnl = ex.shares * (ex.price - trade.entryPrice);
-                return (
-                  <div key={i} style={{ display: "flex", gap: 14, fontSize: 11, fontFamily: "var(--font-mono, monospace)", marginBottom: 4, flexWrap: "wrap" }}>
-                    <span style={{ color: "var(--muted)" }}>{ex.date}</span>
-                    <span>${ex.price.toFixed(2)}</span>
-                    <span>{ex.shares} sh</span>
-                    <span style={{ color: pnlColor(exPnl) }}>{fmt$(exPnl)}</span>
-                    {ex.note && <span style={{ color: "var(--muted)", fontStyle: "italic" }}>{ex.note}</span>}
-                  </div>
-                );
-              })}
+            <div style={{ marginBottom: 14 }}>
+              <div style={{ fontSize: 9, fontWeight: 700, color: "#1e3a5f", textTransform: "uppercase", letterSpacing: "1.2px", fontFamily: "var(--font-mono, monospace)", marginBottom: 8 }}>Exit History</div>
+              <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+                {trade.exits.map((ex, i) => {
+                  const exPnl = ex.shares * (ex.price - trade.entryPrice);
+                  return (
+                    <div key={i} style={{ display: "flex", gap: 12, fontSize: 11, fontFamily: "var(--font-mono, monospace)", flexWrap: "wrap", padding: "7px 11px", borderRadius: 7, alignItems: "center", background: exPnl >= 0 ? "#10b98108" : "#ef444408", border: `1px solid ${exPnl >= 0 ? "#10b98120" : "#ef444420"}` }}>
+                      <span style={{ color: "#475569" }}>{ex.date}</span>
+                      <span style={{ color: "#94a3b8", fontWeight: 700 }}>${ex.price.toFixed(2)}</span>
+                      <span style={{ color: "#475569" }}>{ex.shares} sh</span>
+                      <span style={{ color: pnlColor(exPnl), fontWeight: 800 }}>{fmt$(exPnl)}</span>
+                      {ex.note && <span style={{ color: "#475569", fontStyle: "italic" }}>{ex.note}</span>}
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           )}
 
           {/* Notes */}
           {trade.notes && (
-            <div style={{ fontSize: 11, color: "var(--muted)", fontFamily: "var(--font-body, sans-serif)", lineHeight: 1.5, marginBottom: 12, fontStyle: "italic" }}>
+            <div style={{ fontSize: 11, color: "#475569", fontFamily: "var(--font-body, sans-serif)", lineHeight: 1.6, marginBottom: 14, padding: "8px 12px", background: "#0d1424", borderRadius: 7, borderLeft: "2px solid #1e3a5f", fontStyle: "italic" }}>
               {trade.notes}
             </div>
           )}
@@ -478,26 +549,26 @@ function TradeRow({ trade, onEdit, onDelete, onSaveExit }: {
           )}
 
           {/* Actions */}
-          <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+          <div style={{ display: "flex", gap: 8, flexWrap: "wrap", paddingTop: 4 }}>
             {trade.status === "open" && !showExitForm && (
               <button
                 onClick={() => setShowExitForm(true)}
-                style={{ padding: "5px 12px", borderRadius: 6, border: "1px solid #f59e0b40", background: "#f59e0b18", color: "#f59e0b", fontSize: 11, fontWeight: 700, cursor: "pointer", fontFamily: "var(--font-mono, monospace)" }}
+                style={{ padding: "6px 14px", borderRadius: 7, border: "1px solid #f59e0b45", background: "linear-gradient(135deg,#f59e0b12,#f59e0b20)", color: "#f59e0b", fontSize: 11, fontWeight: 800, cursor: "pointer", fontFamily: "var(--font-mono, monospace)", letterSpacing: "0.3px" }}
               >
-                Log Exit
+                ↗ Log Exit
               </button>
             )}
             <button
               onClick={onEdit}
-              style={{ padding: "5px 12px", borderRadius: 6, border: "1px solid var(--border)", background: "transparent", color: "var(--muted)", fontSize: 11, cursor: "pointer", fontFamily: "var(--font-mono, monospace)" }}
+              style={{ padding: "6px 14px", borderRadius: 7, border: "1px solid #1e293b", background: "transparent", color: "#475569", fontSize: 11, cursor: "pointer", fontFamily: "var(--font-mono, monospace)" }}
             >
-              Edit
+              ✏ Edit
             </button>
             <button
               onClick={onDelete}
-              style={{ padding: "5px 12px", borderRadius: 6, border: "1px solid #ef444430", background: "#ef444412", color: "#ef4444", fontSize: 11, cursor: "pointer", fontFamily: "var(--font-mono, monospace)" }}
+              style={{ padding: "6px 14px", borderRadius: 7, border: "1px solid #ef444330", background: "#ef444408", color: "#ef4444", fontSize: 11, cursor: "pointer", fontFamily: "var(--font-mono, monospace)" }}
             >
-              Delete
+              ✕ Delete
             </button>
           </div>
         </div>

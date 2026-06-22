@@ -998,7 +998,9 @@ export function ReportContent({ report: baseReport, timelinePoints = [] }: { rep
 
         {/* Stock Timeline */}
         {timelinePoints.length > 0 && (
-          <StockTimeline points={timelinePoints} ticker={report.ticker} />
+          <div style={{ marginBottom: 24 }}>
+            <StockTimeline points={timelinePoints} ticker={report.ticker} />
+          </div>
         )}
 
         {/* Possible Up % — kept as the new full-width diverging chart */}

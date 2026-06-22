@@ -17,6 +17,7 @@ Every analysis follows a strict research-first workflow before generating any ou
 
 ## Available slash commands
 - `/analyze <TICKER>` — full single-stock report → saves JSON to web + git push → Vercel deploys
+- `/preview <TICKER>` — full single-stock report → generates HTML only for local viewing · **no JSON save · no git push**
 - `/dashboard` — find 5 stocks with 30%+ upside (Tech/AI/Space first) → save JSON reports for each → git push
 - `/compare <TICKER1> <TICKER2>` — side-by-side comparison of two stocks
 - `/watchlist <TICKER1> <TICKER2> ...` — quick scorecard table for multiple tickers
