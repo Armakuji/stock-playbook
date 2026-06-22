@@ -5,7 +5,7 @@
 
 import { readJournal } from "@/lib/journal";
 import { computeStats } from "@/lib/journal-math";
-import { getAllReports } from "@/lib/reports";
+import { getAllReports, getAllReportsGrouped } from "@/lib/reports";
 import { JournalContent } from "./JournalContent";
 
 export default function JournalPage() {
@@ -26,5 +26,30 @@ export default function JournalPage() {
     catalystType:    r.catalystSpot?.catalystType ?? null,
   }));
 
-  return <JournalContent initialTrades={journal.trades} stats={stats} reportOptions={reportOptions} />;
+  // Live price map — keyed by ticker, sourced from latest report JSON
+  const priceMap: Record<string, { price: number; generatedAt: string; companyName: string }> = {};
+  for (const r of reports) {
+    priceMap[r.ticker] = {
+      price:       r.price,
+      generatedAt: r.generatedAt,
+      companyName: r.companyName,
+    };
+  }
+
+  // All reports grouped by ticker — for report date select box in TradeForm
+  const grouped = getAllReportsGrouped();
+  const reportsByTicker: Record<string, { reportDate: string; price: number; tp1: number; tp2: number; tp3: number; tightStop: number | null; catalystType: string | null }[]> = {};
+  for (const [ticker, reps] of Object.entries(grouped)) {
+    reportsByTicker[ticker] = reps.map((r) => ({
+      reportDate:   r.generatedAt.slice(0, 10).replace(/-/g, ""), // YYYYMMDD
+      price:        r.price,
+      tp1:          r.entryStrategy.tp1.price,
+      tp2:          r.entryStrategy.tp2.price,
+      tp3:          r.entryStrategy.tp3.price,
+      tightStop:    r.entryStrategy.stopLoss.tight ?? null,
+      catalystType: r.catalystSpot?.catalystType ?? null,
+    }));
+  }
+
+  return <JournalContent initialTrades={journal.trades} stats={stats} reportOptions={reportOptions} priceMap={priceMap} reportsByTicker={reportsByTicker} />;
 }

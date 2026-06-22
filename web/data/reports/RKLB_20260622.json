@@ -1,0 +1,325 @@
+{
+  "ticker": "RKLB",
+  "companyName": "Rocket Lab USA, Inc.",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-22T00:00:00.000Z",
+  "price": 107.24,
+  "priceChange": 1.8,
+  "priceNote": "Nasdaq-100 inclusion TODAY — index buying pressure active",
+  "marketCap": "$54B",
+  "sector": "Space / Launch",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 74,
+  "summary": "Rocket Lab hits two massive milestones today — Nasdaq-100 inclusion forcing passive fund buying and a record $200M quarterly revenue run rate. The company is the only credible SpaceX alternative in the launch market with Electron already profitable and Neutron (12x larger rocket, $50–55M per launch) targeting Q4 2026 first flight. Up 280% in the past year, RKLB is re-rating from launch provider to full-stack space infrastructure company.",
+  "catalysts": [
+    {
+      "icon": "🚀",
+      "name": "Nasdaq-100 Index Inclusion",
+      "description": "RKLB officially joins Nasdaq-100 on June 22, 2026 — QQQ ETF and passive Nasdaq funds must buy ~$2–3B of RKLB shares today. Front-running already started last week.",
+      "urgencyLabel": "TODAY",
+      "dateBadge": "Jun 22, 2026",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "🛸",
+      "name": "Neutron Rocket First Flight",
+      "description": "Neutron launch vehicle (8-ton payload to LEO) targeting Q4 2026 first flight. At $50–55M per launch vs Electron's $8.4M, Neutron is a 6–7x revenue per launch step-change. Could re-rate RKLB valuation to $200+.",
+      "urgencyLabel": "6 MONTHS",
+      "dateBadge": "Q4 2026",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🛡️",
+      "name": "Defense & National Security Pipeline",
+      "description": "DoD HASTE hypersonic program + classified NRO contracts building $2B+ backlog. RKLB positioned as critical national security launch provider — SpaceX alternative with security clearances.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "2026–2027",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Neutron delay risk — any engineering setback to Q4 2026 first flight could cause sharp reversion",
+    "Stock up 280% in 12 months — stretched valuation at ~$54B market cap before Neutron revenue",
+    "SpaceX Falcon 9 dominance — cost structure advantage over RKLB in medium-lift market",
+    "Q2 earnings (Aug 2026) — any revenue miss on Electron launches could trigger selloff"
+  ],
+  "estimateDates": [
+    {
+      "event": "Neutron First Flight",
+      "dateRange": "Q4 2026",
+      "note": "Re-rating catalyst",
+      "est": "est. $200+ stock",
+      "highlight": "yellow"
+    },
+    {
+      "event": "Q2 2026 Earnings",
+      "dateRange": "Aug 2026",
+      "note": "$225–240M revenue guide",
+      "est": "est. $230M",
+      "highlight": "blue"
+    },
+    {
+      "event": "Neutron Commercial Revenue",
+      "dateRange": "H1 2027",
+      "note": "First $50M+ launch revenue",
+      "est": "Game changer",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -30,
+      "price": 75
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 15,
+      "price": 123
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 35,
+      "price": 145
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 90,
+      "price": 204
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "KeyBanc",
+      "target": 135,
+      "rating": "Overweight"
+    },
+    {
+      "firm": "Deutsche Bank",
+      "target": 128,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Canaccord",
+      "target": 120,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Barclays",
+      "target": 85,
+      "rating": "Equal Weight"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Rate cuts support growth-stage companies burning cash — RKLB benefits from easier capital markets",
+    "inflationNote": "Aerospace materials (titanium, composites) still elevated — cost pressure on Neutron development",
+    "sectorImpact": "High-growth pre-revenue (Neutron) stage means rate sensitivity is real. Rate cuts are a clear positive.",
+    "summary": "Fed risk MEDIUM — RKLB is partially rate-sensitive as a growth-stage company burning cash on Neutron development. Rate cuts reduce cost of capital and support valuation. Defense revenue is inflation-protected."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 107,
+        "note": "Nasdaq-100 inclusion day momentum",
+        "timing": "Now"
+      },
+      {
+        "label": "Entry 2",
+        "level": 90,
+        "rangeMax": 95,
+        "note": "Post-inclusion pullback zone",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 75,
+        "note": "Deep dip / bear case entry",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 135,
+      "pct": 26.0,
+      "note": "KeyBanc target / Neutron progress"
+    },
+    "tp2": {
+      "price": 165,
+      "pct": 54.0,
+      "note": "Post-Neutron first flight re-rating"
+    },
+    "tp3": {
+      "price": 204,
+      "pct": 90.0,
+      "note": "Moon case · Neutron revenue + defense contracts 2027",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 88,
+      "tightPct": -18,
+      "tightNote": "Below post-inclusion support",
+      "hard": 72,
+      "hardPct": -33,
+      "hardNote": "Pre-Nasdaq-100 run level — thesis broken",
+      "riskReward": "2.2 : 1",
+      "rrNote": "Tight stop vs TP1",
+      "rrWarning": "Acceptable R/R — speculative"
+    },
+    "verdict": "Speculative buy on Nasdaq-100 inclusion dip — Neutron first flight Q4 2026 is the real re-rating event",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "satellite_launch",
+    "preRunup": "Nasdaq-100 inclusions see 10–20% pre-run in 2 weeks before effective date as arbs front-run QQQ rebalancing. RKLB already up 15% in past 2 weeks on inclusion announcement.",
+    "preRunupTiming": "2 สัปดาห์ก่อน inclusion date",
+    "preRunupPct": "+10–20%",
+    "postWin": {
+      "avgPct": 10,
+      "range": "+5% to +25%",
+      "note": "Nasdaq-100 inclusions average +10% in 30 days post-effective as passive funds complete buying. Tesla (TSLA) gained +12% in 30 days post-Nasdaq-100 inclusion in Dec 2020.",
+      "exampleDate": "Dec 2020"
+    },
+    "postLose": {
+      "avgPct": -12,
+      "range": "-8% to -20%",
+      "note": "ถ้า Neutron ล่าช้าออกไปปี 2027 หรือ Electron launch fails หุ้นจะย่อ 12–20% ทันที",
+      "exampleDate": "General risk"
+    },
+    "spotSizing": {
+      "pct": 7,
+      "reason": "Speculative 74/100 — Neutron delay risk is real. จำกัด sizing ที่ 7% ของ portfolio. ใช้ Scale In strategy รอ dip หลัง inclusion."
+    },
+    "stopPreCatalyst": {
+      "pct": -18,
+      "price": 88,
+      "note": "ถ้าหลุด $88 หลัง inclusion = arbs ขายแล้ว thesis เปลี่ยน"
+    },
+    "stopPostCatalyst": {
+      "pct": -20,
+      "note": "ถ้า Neutron delay ประกาศ ออกทันที ไม่รอ"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "TSLA",
+      "event": "Nasdaq-100 Index Inclusion",
+      "date": "Dec 2020",
+      "movePct": 12,
+      "days": 30,
+      "outcome": "good",
+      "note": "Tesla gained +12% in 30 days post-Nasdaq-100 inclusion as passive funds completed buying. RKLB Nasdaq-100 inclusion is comparable catalyst with active institutional demand."
+    },
+    {
+      "ticker": "SPCE",
+      "event": "Virgin Galactic commercial space re-rating",
+      "date": "Feb 2021",
+      "movePct": 85,
+      "days": 45,
+      "outcome": "mixed",
+      "note": "Space tourism hype re-rated SPCE +85% before reality of delays hit. RKLB is more fundamentally sound (real revenue, defense contracts) but valuation risk is similar."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Rocket Lab joins Nasdaq-100 on June 22, 2026 — Neutron first flight Q4 2026 on track",
+    "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261965132-rocket-lab-stock-forecast-why-june-22-could-matter-more-than-the-spacex-ipo-tradingkey",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://www.tradingkey.com/analysis/stocks/us-stocks/261965132-rocket-lab-stock-forecast-why-june-22-could-matter-more-than-the-spacex-ipo-tradingkey",
+    "https://stockanalysis.com/stocks/rklb/forecast/",
+    "https://www.marketbeat.com/stocks/NASDAQ/RKLB/forecast/",
+    "https://www.top1markets.com/news/rklb-stock-2026-rocket-lab-neutron-defense-contracts-analysis"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Rocket Lab ทำสองสิ่งสำคัญวันนี้ — เข้า Nasdaq-100 บังคับให้ passive funds ซื้อ และทำ revenue record $200M ต่อไตรมาส บริษัทคือทางเลือกเดียวที่น่าเชื่อถือนอกจาก SpaceX ในตลาด launch Electron profitable แล้ว และ Neutron (จรวดใหญ่ $50–55M/launch) กำลังบิน Q4 2026 ถ้าสำเร็จจะ re-rate หุ้นไประดับ $200+",
+      "priceNote": "Nasdaq-100 inclusion วันนี้ — index buying active",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        {
+          "name": "Nasdaq-100 Index Inclusion",
+          "description": "QQQ ETF + passive funds ต้องซื้อ RKLB $2–3B วันนี้"
+        },
+        {
+          "name": "Neutron Rocket First Flight",
+          "description": "จรวดขนาดใหญ่ payload 8 ตัน ราคา $50–55M/launch — บินครั้งแรก Q4 2026"
+        },
+        {
+          "name": "Defense & NRO Contracts",
+          "description": "DoD HASTE + NRO classified contracts สร้าง backlog $2B+"
+        }
+      ],
+      "risks": [
+        "Neutron delay risk — ถ้า Q4 2026 ล่าช้าหุ้นจะย่อหนัก",
+        "หุ้นขึ้น 280% ใน 12 เดือน — stretched valuation ก่อน Neutron revenue",
+        "SpaceX Falcon 9 cost advantage ใน medium-lift market",
+        "Q2 earnings Aug 2026 — miss Electron launches = selloff"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Rate cuts สนับสนุน growth-stage companies burning cash — RKLB ได้ประโยชน์",
+        "inflationNote": "Aerospace materials ยังแพง — cost pressure บน Neutron development",
+        "sectorImpact": "Rate cut เป็น positive สำหรับ growth-stage ที่ยังขาดทุน Neutron",
+        "summary": "Fed risk MEDIUM — RKLB sensitive กับ rate บ้างในฐานะ growth-stage company Rate cuts ลด cost of capital defense revenue ป้องกัน inflation"
+      },
+      "entryStrategy": {
+        "verdict": "Speculative buy บน Nasdaq-100 inclusion dip — Neutron first flight Q4 2026 คือ re-rating event จริง แนะนำ 7% ของ portfolio เท่านั้น",
+        "entryLevels": [
+          {
+            "note": "วัน Nasdaq-100 inclusion momentum",
+            "timing": "ตอนนี้"
+          },
+          {
+            "note": "โซน pullback หลัง inclusion",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "Deep dip / bear case entry",
+            "timing": "ถ้าร่วงลึก"
+          }
+        ],
+        "tp1": {
+          "note": "KeyBanc target / Neutron progress"
+        },
+        "tp2": {
+          "note": "Post-Neutron first flight re-rating"
+        },
+        "tp3": {
+          "note": "Moon case · Neutron revenue + defense 2027",
+          "moon": true
+        },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า support หลัง inclusion",
+          "hardNote": "ระดับก่อน Nasdaq-100 run — thesis broken",
+          "rrNote": "Tight stop vs TP1",
+          "rrWarning": "R/R พอใช้ — Speculative"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "Neutron First Flight",
+          "note": "catalyst สำหรับ re-rating"
+        },
+        {
+          "event": "Q2 2026 Earnings",
+          "note": "guide $225–240M revenue"
+        },
+        {
+          "event": "Neutron Commercial Revenue",
+          "note": "Game changer สำหรับ valuation"
+        }
+      ],
+      "companyDescription": "Space launch & systems · จรวด Electron สำหรับดาวเทียมขนาดเล็ก + กำลังพัฒนา Neutron + ผลิตชิ้นส่วน spacecraft"
+    }
+  },
+  "companyDescription": "Space launch & systems · Electron small-sat rocket + Neutron mid-size + spacecraft components"
+}

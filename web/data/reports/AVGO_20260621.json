@@ -3,9 +3,9 @@
   "companyName": "Broadcom Inc.",
   "exchange": "NASDAQ",
   "generatedAt": "2026-06-21T00:00:00.000Z",
-  "price": 411.46,
-  "priceChange": 0.85,
-  "priceNote": "Near mid-range of 52-wk $244–$495 · AI XPU ramp in progress",
+  "price": 396.3,
+  "priceChange": -3.5,
+  "priceNote": "Jun 22 real-time · -3.5% · Google chip program delay fears dragging semis",
   "marketCap": "$1.95T",
   "sector": "Technology / Semiconductors",
   "verdict": "BUY",
@@ -60,25 +60,25 @@
     {
       "label": "Bear",
       "color": "red",
-      "pct": -18,
+      "pct": -15.0,
       "price": 337
     },
     {
       "label": "Base",
       "color": "yellow",
-      "pct": 12,
+      "pct": 16.0,
       "price": 461
     },
     {
       "label": "Bull",
       "color": "green",
-      "pct": 22,
+      "pct": 27.0,
       "price": 502
     },
     {
       "label": "Moon",
       "color": "purple",
-      "pct": 46,
+      "pct": 51.0,
       "price": 600
     }
   ],
@@ -115,7 +115,7 @@
     "entryLevels": [
       {
         "label": "Entry 1",
-        "level": 411,
+        "level": 396,
         "note": "Current price — momentum entry",
         "timing": "Now"
       },
@@ -136,27 +136,27 @@
     ],
     "tp1": {
       "price": 460,
-      "pct": 11.8,
+      "pct": 16.1,
       "note": "Near-term resistance / Base case"
     },
     "tp2": {
       "price": 502,
-      "pct": 22.0,
+      "pct": 26.7,
       "note": "Analyst consensus target"
     },
     "tp3": {
       "price": 600,
-      "pct": 45.8,
+      "pct": 51.4,
       "note": "Full AI XPU monetization · 2027",
       "moon": true
     },
     "stopLoss": {
-      "tight": 380,
-      "tightPct": -7.6,
-      "tightNote": "Below preferred entry zone",
-      "hard": 345,
-      "hardPct": -16.2,
-      "hardNote": "200-day MA breach",
+      "tight": 368,
+      "tightPct": -7.0,
+      "tightNote": "Below Entry 2 zone ($380 support)",
+      "hard": 340,
+      "hardPct": -14.0,
+      "hardNote": "200-day MA / structural breakdown",
       "riskReward": "2.9 : 1",
       "rrNote": "Tight stop vs TP2",
       "rrWarning": "Strong R/R"
@@ -172,7 +172,7 @@
   "i18n": {
     "th": {
       "summary": "Broadcom คือผู้ชนะ AI ที่หลายคนมองข้าม — chip AI แบบ custom (XPU) สำหรับ Google, Meta, Apple บวกกับ AI networking กำลังรวมตัวเป็นธุรกิจรายได้ $60B+ ภายในปี 2027 การรวมกิจการ VMware เริ่มสร้างกระแสเงินสดบวกเร็วกว่าแผน และรายได้ซอฟต์แวร์แบบ recurring เปลี่ยนโครงสร้าง P&L ถาวร",
-      "priceNote": "อยู่กลาง range 52 สัปดาห์ $244–$495 · XPU ramp กำลังดำเนินอยู่",
+      "priceNote": "Jun 22 real-time · -3.5% · Google chip delay fears กดดัน semis",
       "scoreLabel": "Core Holding",
       "catalysts": [
         {
@@ -227,7 +227,7 @@
           "note": "AI XPU monetization เต็มรูปแบบ · 2027"
         },
         "stopLoss": {
-          "tightNote": "ต่ำกว่าโซนเข้า preferred",
+          "tightNote": "Below Entry 2 zone ($380 support)",
           "hardNote": "หลุด 200-day MA",
           "rrNote": "Tight stop เทียบ TP2",
           "rrWarning": "R/R แข็งแกร่ง"
@@ -247,13 +247,27 @@
         "preRunupTiming": "1–2 สัปดาห์ก่อน earnings",
         "preRunup": "AVGO มักวิ่ง +5–12% ใน 1–2 สัปดาห์ก่อน earnings โดยเฉพาะเมื่อมีข่าวรั่ว AI chip design win ใหม่ (Apple, Google, Meta) เข้าก่อน earnings เพื่อ capture การ run-up ดีกว่ารอวันประกาศ",
         "earningsHistory": [
-          { "note": "เปิดตัวลูกค้า AI 3 ราย, TAM $60–90B ภายในปี 2027 — ทะลุ $1T (เคสพิเศษ)" },
-          { "note": "Beat + guide Q2 แข็ง (~+16% after-hours, ~+8% วันถัดมา)" },
-          { "note": "Beat แต่คงเป้า AI FY27 เท่าเดิม → sell-the-news" },
-          { "note": "รายได้ AI +63% YoY, ลูกค้า custom AI รายที่ 4 มูลค่า $10B" },
-          { "note": "Beat, ยอดชิป AI จะโตเท่าตัว — แต่ราคา priced in ไปแล้ว" },
-          { "note": "Beat + raise แต่ตลาดตอบรับน้อยที่ valuation สูง" },
-          { "note": "Beat แต่คงเป้า AI FY27 อีกครั้ง → re-rate ที่ราคา premium" }
+          {
+            "note": "เปิดตัวลูกค้า AI 3 ราย, TAM $60–90B ภายในปี 2027 — ทะลุ $1T (เคสพิเศษ)"
+          },
+          {
+            "note": "Beat + guide Q2 แข็ง (~+16% after-hours, ~+8% วันถัดมา)"
+          },
+          {
+            "note": "Beat แต่คงเป้า AI FY27 เท่าเดิม → sell-the-news"
+          },
+          {
+            "note": "รายได้ AI +63% YoY, ลูกค้า custom AI รายที่ 4 มูลค่า $10B"
+          },
+          {
+            "note": "Beat, ยอดชิป AI จะโตเท่าตัว — แต่ราคา priced in ไปแล้ว"
+          },
+          {
+            "note": "Beat + raise แต่ตลาดตอบรับน้อยที่ valuation สูง"
+          },
+          {
+            "note": "Beat แต่คงเป้า AI FY27 อีกครั้ง → re-rate ที่ราคา premium"
+          }
         ],
         "postWin": {
           "note": "ตัวอย่าง 7 ไตรมาส (FY24–FY26): ตอบรับบวก 5 ครั้ง เฉลี่ย ~+10% ค่ากลางจริงใกล้ +5–8% — เคส +24% (เปิด TAM ธ.ค. 2024) เป็น outlier ไม่ใช่ base case ปัจจุบันต้องมีข้อมูลใหม่จริง (ลูกค้าใหม่ / ยก TAM) ไม่ใช่แค่ beat"
@@ -264,11 +278,21 @@
         "spotSizing": {
           "reason": "คำนวณจากฐาน high-conviction 10% แล้วหักเพราะ mega-cap ทำให้ magnitude เล็ก ที่ $1.95T การ beat ขยับราคาน้อยกว่า mid-cap มาก spot จึง size เพื่อ payoff ที่เล็กและ variance ต่ำกว่า",
           "breakdown": [
-            { "label": "ฐาน — high-conviction BUY (score 85, Fed risk LOW)" },
-            { "label": "Mega-cap $1.95T → % move post-catalyst เล็กลง" },
-            { "label": "เคส beat อย่างเดียวตอบรับน้อย (median ~+5–8%)" },
-            { "label": "Run-up ก่อน earnings ถูก capture บางส่วนใน core แล้ว" },
-            { "label": "สัดส่วน spot" }
+            {
+              "label": "ฐาน — high-conviction BUY (score 85, Fed risk LOW)"
+            },
+            {
+              "label": "Mega-cap $1.95T → % move post-catalyst เล็กลง"
+            },
+            {
+              "label": "เคส beat อย่างเดียวตอบรับน้อย (median ~+5–8%)"
+            },
+            {
+              "label": "Run-up ก่อน earnings ถูก capture บางส่วนใน core แล้ว"
+            },
+            {
+              "label": "สัดส่วน spot"
+            }
           ]
         },
         "stopPreCatalyst": {
@@ -288,7 +312,8 @@
         {
           "note": "QCOM +12% แต่ใช้เวลา 3 วัน — design win catalyst มักค่อยๆ ขึ้นไม่ใช่ single-day pop เหมือน earnings beat แท้ๆ"
         }
-      ]
+      ],
+      "companyDescription": "Semiconductor + software · ออกแบบ custom AI chip (XPU) ให้ Google, Meta, Apple + networking/storage chips สำหรับ data center"
     }
   },
   "catalystSpot": {
@@ -297,13 +322,55 @@
     "preRunupTiming": "1–2 weeks before earnings",
     "preRunupPct": "+5–12%",
     "earningsHistory": [
-      { "quarter": "Q4 FY24", "date": "Dec 12, 2024", "reactionPct": 24, "outcome": "win", "note": "3 AI customers revealed, $60–90B TAM by 2027 — crossed $1T (outlier)" },
-      { "quarter": "Q1 FY25", "date": "Mar 6, 2025", "reactionPct": 8, "outcome": "win", "note": "Beat + strong Q2 guide (~+16% after-hours, ~+8% next session)" },
-      { "quarter": "Q2 FY25", "date": "Jun 5, 2025", "reactionPct": -5, "outcome": "miss", "note": "Beat but FY27 AI target left unchanged → sell-the-news" },
-      { "quarter": "Q3 FY25", "date": "Sep 4, 2025", "reactionPct": 10, "outcome": "win", "note": "AI rev +63% YoY, $10B 4th custom-AI customer" },
-      { "quarter": "Q4 FY25", "date": "Dec 11, 2025", "reactionPct": 3, "outcome": "win", "note": "Beat, AI chip sales to double — mostly priced in" },
-      { "quarter": "Q1 FY26", "date": "Mar 4, 2026", "reactionPct": 5, "outcome": "win", "note": "Beat + raise, modest reaction at elevated valuation" },
-      { "quarter": "Q2 FY26", "date": "Jun 3, 2026", "reactionPct": -13, "outcome": "miss", "note": "Beat but FY27 AI target again unchanged → re-rate at premium" }
+      {
+        "quarter": "Q4 FY24",
+        "date": "Dec 12, 2024",
+        "reactionPct": 24,
+        "outcome": "win",
+        "note": "3 AI customers revealed, $60–90B TAM by 2027 — crossed $1T (outlier)"
+      },
+      {
+        "quarter": "Q1 FY25",
+        "date": "Mar 6, 2025",
+        "reactionPct": 8,
+        "outcome": "win",
+        "note": "Beat + strong Q2 guide (~+16% after-hours, ~+8% next session)"
+      },
+      {
+        "quarter": "Q2 FY25",
+        "date": "Jun 5, 2025",
+        "reactionPct": -5,
+        "outcome": "miss",
+        "note": "Beat but FY27 AI target left unchanged → sell-the-news"
+      },
+      {
+        "quarter": "Q3 FY25",
+        "date": "Sep 4, 2025",
+        "reactionPct": 10,
+        "outcome": "win",
+        "note": "AI rev +63% YoY, $10B 4th custom-AI customer"
+      },
+      {
+        "quarter": "Q4 FY25",
+        "date": "Dec 11, 2025",
+        "reactionPct": 3,
+        "outcome": "win",
+        "note": "Beat, AI chip sales to double — mostly priced in"
+      },
+      {
+        "quarter": "Q1 FY26",
+        "date": "Mar 4, 2026",
+        "reactionPct": 5,
+        "outcome": "win",
+        "note": "Beat + raise, modest reaction at elevated valuation"
+      },
+      {
+        "quarter": "Q2 FY26",
+        "date": "Jun 3, 2026",
+        "reactionPct": -13,
+        "outcome": "miss",
+        "note": "Beat but FY27 AI target again unchanged → re-rate at premium"
+      }
     ],
     "postWin": {
       "avgPct": 10,
@@ -321,11 +388,27 @@
       "pct": 7,
       "reason": "Derived from a 10% high-conviction base, trimmed for mega-cap upside magnitude. At $1.95T a beat moves the stock far less than a mid-cap, so the spot is sized for a smaller, lower-variance payoff.",
       "breakdown": [
-        { "label": "Base — high-conviction BUY (score 85, Fed risk LOW)", "value": "10%" },
-        { "label": "Mega-cap $1.95T → smaller post-catalyst % magnitude", "value": "−3pt" },
-        { "label": "Beat-only reactions now muted (median ~+5–8%)", "value": "−1pt" },
-        { "label": "Pre-earnings run-up already partly captured in core", "value": "+1pt" },
-        { "label": "Spot allocation", "value": "7%", "total": true }
+        {
+          "label": "Base — high-conviction BUY (score 85, Fed risk LOW)",
+          "value": "10%"
+        },
+        {
+          "label": "Mega-cap $1.95T → smaller post-catalyst % magnitude",
+          "value": "−3pt"
+        },
+        {
+          "label": "Beat-only reactions now muted (median ~+5–8%)",
+          "value": "−1pt"
+        },
+        {
+          "label": "Pre-earnings run-up already partly captured in core",
+          "value": "+1pt"
+        },
+        {
+          "label": "Spot allocation",
+          "value": "7%",
+          "total": true
+        }
       ]
     },
     "stopPreCatalyst": {
@@ -366,5 +449,6 @@
       "outcome": "mixed",
       "note": "QCOM +12% but took 3 days — design win catalysts often drift up rather than give a single-day pop like a true earnings beat."
     }
-  ]
+  ],
+  "companyDescription": "Semiconductor + software · Custom AI chips (XPU) for Google/Meta + networking silicon for data centers"
 }

@@ -81,10 +81,150 @@ function rrColor(rr: number | null): string {
   if (rr >= 2) return "#f59e0b";
   return "#ef4444";
 }
+function rrLabel(rr: number | null): string {
+  if (rr === null) return "—";
+  if (rr >= 4) return "Excellent";
+  if (rr >= 3) return "Strong";
+  if (rr >= 2) return "Acceptable";
+  if (rr >= 1) return "Weak";
+  return "Poor";
+}
 function rrBadge(rr: number | null): string {
   if (rr === null) return "—";
   const flag = rr >= 3 ? " ✓" : rr >= 2 ? "" : " ⚠";
   return `${fmt(rr, 1)}:1${flag}`;
+}
+
+// ─── R:R Summary Card ─────────────────────────────────────────────────────────
+
+function RRCard({ levels, lang }: { levels: LevelCalc[]; lang: Lang }) {
+  const th = lang === "th";
+
+  const tp1 = levels.find((l) => l.key === "tp1");
+  const tp2 = levels.find((l) => l.key === "tp2");
+  const tp3 = levels.find((l) => l.key === "tp3");
+  const tight = levels.find((l) => l.key === "tight");
+  const hard  = levels.find((l) => l.key === "hard");
+
+  // Risk $ per share (tight / hard)
+  const tightRisk$ = tp1 && tight ? (tp1.exitPrice - tight.exitPrice) : null;
+  const hardRisk$  = tp1 && hard  ? (tp1.exitPrice - hard.exitPrice)  : null;
+
+  const rows = [
+    { label: "TP1", level: tp1, icon: "🎯", color: "#10b981" },
+    { label: "TP2", level: tp2, icon: "📈", color: "#10b981" },
+    { label: "TP3 🌙", level: tp3, icon: "🌙", color: "#8b5cf6" },
+  ];
+
+  // Determine best stop for gauge (prefer tight)
+  const bestRR = tp2?.rrTight ?? tp2?.rrHard ?? null;
+  const gaugeMax = 5;
+  const gaugePct = bestRR !== null ? Math.min(bestRR / gaugeMax, 1) * 100 : 0;
+  const gaugeColor = rrColor(bestRR);
+
+  // Breakeven win rate: 1 / (1 + R:R)
+  const breakeven = bestRR !== null ? (1 / (1 + bestRR)) * 100 : null;
+
+  return (
+    <div style={{
+      background: "var(--card)", border: `1px solid ${gaugeColor}30`,
+      borderRadius: 14, padding: "20px 20px 16px",
+      position: "relative", overflow: "hidden",
+    }}>
+      {/* Glow */}
+      <div style={{
+        position: "absolute", inset: 0, pointerEvents: "none",
+        background: `radial-gradient(ellipse 60% 40% at 50% -10%, ${gaugeColor}12 0%, transparent 70%)`,
+      }} />
+
+      {/* Header */}
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 14, position: "relative" }}>
+        <div style={{ fontSize: 10, fontWeight: 800, letterSpacing: "1.5px", color: "var(--muted)", textTransform: "uppercase", fontFamily: "var(--font-mono, monospace)" }}>
+          ⚖ {th ? "อัตราส่วนความเสี่ยง/กำไร" : "Risk : Reward Ratio"}
+        </div>
+        {bestRR !== null && (
+          <div style={{
+            display: "flex", alignItems: "center", gap: 6,
+            background: `${gaugeColor}15`, border: `1px solid ${gaugeColor}40`,
+            borderRadius: 20, padding: "3px 12px",
+          }}>
+            <span style={{ fontSize: 18, fontWeight: 900, color: gaugeColor, fontFamily: "var(--font-mono, monospace)", letterSpacing: "-0.5px" }}>
+              {fmt(bestRR, 1)}:1
+            </span>
+            <span style={{ fontSize: 10, fontWeight: 800, color: gaugeColor, fontFamily: "var(--font-mono, monospace)" }}>
+              {rrLabel(bestRR)}
+            </span>
+          </div>
+        )}
+      </div>
+
+      {/* Gauge bar */}
+      <div style={{ marginBottom: 14, position: "relative" }}>
+        <div style={{ height: 6, background: "var(--border)", borderRadius: 99, overflow: "hidden" }}>
+          <div style={{
+            height: "100%", width: `${gaugePct}%`,
+            background: `linear-gradient(90deg, #ef4444, #f59e0b 40%, ${gaugeColor})`,
+            borderRadius: 99, transition: "width 0.5s cubic-bezier(0.34,1.56,0.64,1)",
+          }} />
+        </div>
+        {/* Scale labels */}
+        <div style={{ display: "flex", justifyContent: "space-between", marginTop: 3 }}>
+          {[0, 1, 2, 3, 4, 5].map((v) => (
+            <span key={v} style={{ fontSize: 8, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>{v}</span>
+          ))}
+        </div>
+      </div>
+
+      {/* Per-target breakdown */}
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 8, marginBottom: 14 }}>
+        {rows.map(({ label, level, color }) => {
+          const rrT = level?.rrTight ?? null;
+          const rrH = level?.rrHard ?? null;
+          const primary = rrT ?? rrH;
+          const c = rrColor(primary);
+          return (
+            <div key={label} style={{
+              background: "#ffffff06", borderRadius: 10, padding: "10px 12px",
+              border: `1px solid ${c}25`,
+              textAlign: "center",
+            }}>
+              <div style={{ fontSize: 9, fontWeight: 800, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", textTransform: "uppercase", letterSpacing: "1px", marginBottom: 4 }}>
+                {label}
+              </div>
+              <div style={{ fontSize: 16, fontWeight: 900, color: c, fontFamily: "var(--font-mono, monospace)", letterSpacing: "-0.5px" }}>
+                {primary !== null ? `${fmt(primary, 1)}:1` : "—"}
+              </div>
+              <div style={{ fontSize: 9, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", marginTop: 2 }}>
+                {rrLabel(primary)}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      {/* Footer: stop reference + breakeven */}
+      <div style={{ display: "flex", flexWrap: "wrap", gap: 8, paddingTop: 12, borderTop: "1px solid var(--border)" }}>
+        {tight && (
+          <div style={{ fontSize: 11, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>
+            <span style={{ color: "#f59e0b", fontWeight: 700 }}>Tight SL</span> ${fmt(tight.exitPrice)} ·{" "}
+            <span style={{ color: "var(--text)", fontWeight: 600 }}>risk ${tight.pnlDollar < 0 ? fmt(Math.abs(tight.pnlDollar)) : "—"}</span>
+          </div>
+        )}
+        {hard && (
+          <div style={{ fontSize: 11, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>
+            <span style={{ color: "#ef4444", fontWeight: 700 }}>Hard SL</span> ${fmt(hard.exitPrice)} ·{" "}
+            <span style={{ color: "var(--text)", fontWeight: 600 }}>risk ${hard.pnlDollar < 0 ? fmt(Math.abs(hard.pnlDollar)) : "—"}</span>
+          </div>
+        )}
+        {breakeven !== null && (
+          <div style={{ fontSize: 11, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", marginLeft: "auto" }}>
+            {th ? "ต้อง win" : "Breakeven win rate"}{" "}
+            <span style={{ color: gaugeColor, fontWeight: 800 }}>{fmt(breakeven, 0)}%</span>
+          </div>
+        )}
+      </div>
+    </div>
+  );
 }
 
 // ─── Core calculation engine ───────────────────────────────────────────────────
@@ -261,7 +401,7 @@ function InputField({
     <div style={{
       display: "flex", alignItems: "center",
       background: "#0a0a14", border: "1px solid var(--border-bright)",
-      borderRadius: 8, overflow: "hidden",
+      borderRadius: 8, overflow: "hidden", width: "100%",
     }}>
       {prefix && (
         <span style={{ padding: "0 10px", fontSize: 13, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", flexShrink: 0 }}>
@@ -529,8 +669,8 @@ function MaxLossGain({ levels, lang }: { levels: LevelCalc[]; lang: Lang }) {
       borderRadius: 12, padding: "16px 20px", marginTop: 12,
     }}>
       <SectionLabel icon="⚖️">{th ? "สรุป Max Risk vs Max Reward" : "Max Loss vs Max Gain"}</SectionLabel>
-      <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
-        <div style={{ textAlign: "center" }}>
+      <div className="maxloss-row" style={{ display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
+        <div style={{ textAlign: "center", minWidth: 100 }}>
           <div style={{ fontSize: 10, color: "#ef4444", fontFamily: "var(--font-mono, monospace)", marginBottom: 3, textTransform: "uppercase", letterSpacing: "1px" }}>
             {th ? "ขาดทุนสูงสุด" : "Max Risk"} ({worstLoss.label})
           </div>
@@ -542,25 +682,21 @@ function MaxLossGain({ levels, lang }: { levels: LevelCalc[]; lang: Lang }) {
           </div>
         </div>
 
-        <div style={{ flex: 1, textAlign: "center", fontSize: 20, color: "var(--border-bright)" }}>↔</div>
-
-        <div style={{ flex: 2, textAlign: "center", padding: "10px 16px", background: "#ffffff07", borderRadius: 10 }}>
-          <div style={{ fontSize: 12, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", marginBottom: 4 }}>
+        <div style={{ flex: 1, minWidth: 140, textAlign: "center", padding: "10px 12px", background: "#ffffff07", borderRadius: 10 }}>
+          <div style={{ fontSize: 11, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", marginBottom: 4 }}>
             {th ? "กำลังเสี่ยง" : "Risking"}
           </div>
-          <div style={{ fontSize: 15, fontWeight: 800, color: "var(--text)", fontFamily: "var(--font-mono, monospace)" }}>
+          <div style={{ fontSize: 13, fontWeight: 800, color: "var(--text)", fontFamily: "var(--font-mono, monospace)", display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 4 }}>
             <span style={{ color: "#ef4444" }}>${fmt(Math.abs(worstLoss.pnlDollar))}</span>
-            <span style={{ color: "var(--muted)", margin: "0 8px" }}>{th ? "เพื่อทำกำไร" : "to make up to"}</span>
+            <span style={{ color: "var(--muted)" }}>{th ? "→" : "→"}</span>
             <span style={{ color: "#10b981" }}>${fmt(bestGain.pnlDollar)}</span>
           </div>
           <div style={{ fontSize: 11, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", marginTop: 3 }}>
-            {th ? `บน ${bestGain.label}` : `at ${bestGain.label}`} · implied R/R {fmt(bestGain.pnlDollar / Math.abs(worstLoss.pnlDollar), 1)}:1
+            R/R {fmt(bestGain.pnlDollar / Math.abs(worstLoss.pnlDollar), 1)}:1
           </div>
         </div>
 
-        <div style={{ flex: 1, textAlign: "center" }}>↔</div>
-
-        <div style={{ textAlign: "center" }}>
+        <div style={{ textAlign: "center", minWidth: 100 }}>
           <div style={{ fontSize: 10, color: "#10b981", fontFamily: "var(--font-mono, monospace)", marginBottom: 3, textTransform: "uppercase", letterSpacing: "1px" }}>
             {th ? "กำไรสูงสุด" : "Max Reward"} ({bestGain.label})
           </div>
@@ -819,7 +955,7 @@ export function SimulatorContent({ report }: { report: StockReport }) {
   }, []);
 
   return (
-    <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+    <div className="sim-root" style={{ maxWidth: 1200, margin: "0 auto" }}>
       {/* ── Sticky bar ── */}
       {showSticky && (
         <div style={{
@@ -949,7 +1085,7 @@ export function SimulatorContent({ report }: { report: StockReport }) {
       )}
 
       {/* ── Two-column layout ── */}
-      <div style={{ display: "grid", gridTemplateColumns: "minmax(300px, 380px) 1fr", gap: 16, alignItems: "start" }}>
+      <div className="sim-grid" style={{ display: "grid", gridTemplateColumns: "minmax(260px, 380px) 1fr", gap: 16, alignItems: "start" }}>
 
         {/* ── LEFT: Input panel ── */}
         <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
@@ -1167,6 +1303,9 @@ export function SimulatorContent({ report }: { report: StockReport }) {
         {/* ── RIGHT: Results ── */}
         <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
 
+          {/* R:R Summary Card */}
+          <RRCard levels={levels} lang={lang} />
+
           {/* Payoff Ladder */}
           <PayoffLadder levels={levels} totalCost={effectiveCost} lang={lang} />
 
@@ -1222,8 +1361,22 @@ export function SimulatorContent({ report }: { report: StockReport }) {
       {/* Mobile: stack single column */}
       <style>{`
         @media (max-width: 760px) {
-          div[style*="grid-template-columns: minmax(300px, 380px)"] {
+          .sim-root {
+            padding: 0 2px;
+            overflow-x: hidden;
+          }
+          .sim-grid {
             grid-template-columns: 1fr !important;
+          }
+          .sim-grid > div {
+            min-width: 0;
+          }
+          .maxloss-row {
+            flex-direction: column;
+            align-items: stretch !important;
+          }
+          .maxloss-row > div {
+            text-align: center;
           }
         }
         input[type=range] {

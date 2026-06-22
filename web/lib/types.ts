@@ -222,6 +222,8 @@ export interface ComparableCase {
 export interface StockReport {
   ticker: string;
   companyName: string;
+  /** One-line business type, e.g. "AI GPU · Dominant H100/Blackwell chips + CUDA ecosystem" */
+  companyDescription?: string;
   exchange?: string;
   generatedAt: string;      // ISO date string
   price: number;

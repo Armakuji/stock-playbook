@@ -149,12 +149,12 @@
       "moon": true
     },
     "stopLoss": {
-      "tight": 192,
-      "tightPct": -8.9,
-      "tightNote": "Below key support",
-      "hard": 172,
-      "hardPct": -18.4,
-      "hardNote": "200-day MA breach",
+      "tight": 185,
+      "tightPct": -12,
+      "tightNote": "Below Entry 2 zone ($190 support)",
+      "hard": 165,
+      "hardPct": -22,
+      "hardNote": "200-day MA structural break",
       "riskReward": "2.9 : 1",
       "rrNote": "Tight stop vs TP2",
       "rrWarning": "Strong R/R"
@@ -226,7 +226,7 @@
           "note": "Bull case Rubin cycle · 2027"
         },
         "stopLoss": {
-          "tightNote": "ต่ำกว่าแนวรับสำคัญ",
+          "tightNote": "Below Entry 2 zone ($190 support)",
           "hardNote": "หลุด 200-day MA",
           "rrNote": "Tight stop เทียบ TP2",
           "rrWarning": "R/R แข็งแกร่ง"
@@ -271,7 +271,8 @@
         {
           "note": "Broadcom +24.4% หลัง AI chip guidance ทะยาน — ยืนยัน AI infra sector มี room ทำ +20%+ ในวันประกาศผล"
         }
-      ]
+      ],
+      "companyDescription": "AI GPU · ผู้นำตลาด GPU สำหรับ AI training/inference (H100, B200, Blackwell) + CUDA platform ที่ทั้ง industry ใช้"
     }
   },
   "catalystSpot": {
@@ -338,5 +339,6 @@
     "headline": "NVIDIA Blackwell Revenue Hits $11B Quarter, Sovereign AI Orders Surge",
     "url": "https://investor.nvidia.com/news-events/press-releases/detail/",
     "date": "Jun 2026"
-  }
+  },
+  "companyDescription": "AI GPU · Dominant H100/Blackwell AI training chips + CUDA ecosystem — picks & shovels of the AI era"
 }

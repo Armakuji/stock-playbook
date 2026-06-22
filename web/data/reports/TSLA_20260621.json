@@ -4,8 +4,8 @@
   "exchange": "NASDAQ",
   "generatedAt": "2026-06-21T00:00:00.000Z",
   "price": 400.49,
-  "priceChange": 1.04,
-  "priceNote": "52-wk range $289–$499 · FSD v13 + Robotaxi approaching · near range resistance",
+  "priceChange": 1.0,
+  "priceNote": "Jun 18 close · +1.0% · FSD momentum · Jun 19 market closed (Juneteenth)",
   "marketCap": "$1.28T",
   "sector": "Technology / EV / Autonomy",
   "verdict": "HOLD",
@@ -61,25 +61,25 @@
     {
       "label": "Bear",
       "color": "red",
-      "pct": -25,
+      "pct": -25.0,
       "price": 300
     },
     {
       "label": "Base",
       "color": "yellow",
-      "pct": 10,
+      "pct": 10.0,
       "price": 440
     },
     {
       "label": "Bull",
       "color": "green",
-      "pct": 25,
+      "pct": 25.0,
       "price": 500
     },
     {
       "label": "Moon",
       "color": "purple",
-      "pct": 50,
+      "pct": 50.0,
       "price": 600
     }
   ],
@@ -142,7 +142,7 @@
     },
     "tp2": {
       "price": 500,
-      "pct": 24.9,
+      "pct": 24.8,
       "note": "Near 52-wk high $499 — Robotaxi priced in"
     },
     "tp3": {
@@ -152,12 +152,12 @@
       "moon": true
     },
     "stopLoss": {
-      "tight": 370,
-      "tightPct": -7.6,
-      "tightNote": "Below consolidation zone",
-      "hard": 315,
-      "hardPct": -21.3,
-      "hardNote": "52-wk support breach",
+      "tight": 348,
+      "tightPct": -13.0,
+      "tightNote": "Below Entry 2 zone ($360 support)",
+      "hard": 305,
+      "hardPct": -24.0,
+      "hardNote": "200-day MA / thesis broken",
       "riskReward": "3.3 : 1",
       "rrNote": "Tight stop vs TP2",
       "rrWarning": "Good R/R if entering on dip"
@@ -173,7 +173,7 @@
   "i18n": {
     "th": {
       "summary": "Tesla อยู่ใกล้ด้านบนของ range 52 สัปดาห์ที่ $400 โอกาสด้าน autonomy (Robotaxi, FSD v13, Optimus) เป็นจริงและอาจเปลี่ยนเกมได้ แต่ EV margin ยังถูกกดดันจากการลดราคาและการแข่งขันที่เพิ่มขึ้น ที่ $400 ตลาดตีราคาข่าวดีไปมากแล้ว HOLD เว้นแต่ autonomy catalysts ชัดเจนขึ้น",
-      "priceNote": "range 52 สัปดาห์ $289–$499 · FSD v13 + Robotaxi กำลังมา · ใกล้แนวต้านด้านบน",
+      "priceNote": "Jun 18 close · +1.0% · Jun 19 ตลาดปิด (Juneteenth)",
       "scoreLabel": "Speculative",
       "catalysts": [
         {
@@ -228,7 +228,7 @@
           "note": "Optimus + autonomous fleet · 2027"
         },
         "stopLoss": {
-          "tightNote": "ต่ำกว่าโซน consolidation",
+          "tightNote": "Below Entry 2 zone ($360 support)",
           "hardNote": "หลุดแนวรับ 52 สัปดาห์",
           "rrNote": "Tight stop เทียบ TP2",
           "rrWarning": "R/R ดีถ้า entry ตอนย่อ"
@@ -273,7 +273,8 @@
         {
           "note": "Robotaxi reveal → -8.78% — autonomous event มักเป็น sell-the-news เพราะ market priced in คาดหวังสูงเกินจริงไว้ก่อนแล้ว"
         }
-      ]
+      ],
+      "companyDescription": "EV + autonomy + energy · รถ EV, ซอฟต์แวร์ FSD ขับเอง, กักเก็บพลังงาน (Megapack) และหุ่นยนต์ Optimus"
     }
   },
   "catalystSpot": {
@@ -335,5 +336,6 @@
       "outcome": "bad",
       "note": "Robotaxi reveal → -8.78% — autonomous events tend to be sell-the-news because market expectations are priced in ahead of the event."
     }
-  ]
+  ],
+  "companyDescription": "EV + autonomy + energy · Electric vehicles, FSD self-driving, energy storage, and Optimus robot"
 }

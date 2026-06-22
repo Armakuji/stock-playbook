@@ -1,0 +1,324 @@
+{
+  "ticker": "IONQ",
+  "companyName": "IonQ, Inc.",
+  "exchange": "NYSE",
+  "generatedAt": "2026-06-22T00:00:00.000Z",
+  "price": 59.53,
+  "priceChange": 3.2,
+  "priceNote": "Quantum computing leader — first commercial QKD product launched",
+  "marketCap": "$9.8B",
+  "sector": "Technology / Quantum Computing",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 62,
+  "summary": "IonQ is the only pure-play publicly traded quantum computing company with real hardware and a credible commercial roadmap. The newly launched Clavis XG Multiplex (quantum key distribution over existing fiber) is the first product that generates real revenue today. Northland raised target to $70 on the launch. At $59, the risk/reward is asymmetric for a small speculative position — but profitability is explicitly not a focus in 2026, so this is strictly ค่าขนม sizing.",
+  "catalysts": [
+    {
+      "icon": "🔐",
+      "name": "Clavis XG Multiplex Launch",
+      "description": "First quantum key distribution (QKD) product allowing quantum + classical signals to share metro fiber. Targeting telecom and financial services. CEO says revenue-generating TODAY in 2026.",
+      "urgencyLabel": "NOW",
+      "dateBadge": "Live",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "💻",
+      "name": "IonQ Forte Enterprise Deployments",
+      "description": "Forte quantum computer now available on AWS Braket, Azure Quantum, and Google Cloud. Enterprise contracts for drug discovery, optimization, and finance applications ramping in 2026.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "2026",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings + Revenue Guidance",
+      "description": "IonQ raised 2026 revenue outlook to $260–270M and targeting $388M in 2028. First profitable quarter expected when Clavis + enterprise scale converges in late 2026 or early 2027.",
+      "urgencyLabel": "6 WEEKS",
+      "dateBadge": "Aug 2026",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Profitability not a key focus in 2026 — company explicitly burning cash on R&D and hardware",
+    "Quantum advantage over classical computing for commercial applications still unproven at scale",
+    "Competition from IBM Quantum, Google Willow, and Microsoft quantum projects with larger R&D budgets",
+    "Revenue ramp ($260–270M guidance) heavily dependent on government + enterprise contract timing"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q2 2026 Earnings",
+      "dateRange": "Aug 2026",
+      "note": "Revenue ramp read",
+      "est": "est. $60M+ Q2",
+      "highlight": "blue"
+    },
+    {
+      "event": "Profitable Quarter Target",
+      "dateRange": "Late 2026 / Q1 2027",
+      "note": "First profitable quarter",
+      "est": "Milestone",
+      "highlight": "yellow"
+    },
+    {
+      "event": "FY2028 Revenue",
+      "dateRange": "2028",
+      "note": "$388M target",
+      "est": "$388M",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -40,
+      "price": 36
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 18,
+      "price": 70
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 45,
+      "price": 86
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 130,
+      "price": 137
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Northland",
+      "target": 70,
+      "rating": "Outperform"
+    },
+    {
+      "firm": "Needham",
+      "target": 68,
+      "rating": "Buy"
+    },
+    {
+      "firm": "B. Riley",
+      "target": 65,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Stifel",
+      "target": 55,
+      "rating": "Hold"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Rate cuts benefit pre-profitable growth companies — lower discount rate raises DCF valuation",
+    "inflationNote": "Hardware R&D costs and talent expensive in quantum space — inflation headwind on opex",
+    "sectorImpact": "Rate-sensitive as pre-profitable company. Fed cuts are a moderate positive for valuation support.",
+    "summary": "Fed risk MEDIUM — IonQ is pre-profitable and rate-sensitive as a growth-stage company. Rate cuts support valuation but fundamental revenue ramp is the bigger driver. Government quantum contracts (NSF, DoD) are rate-independent."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 60,
+        "note": "Current price — ค่าขนม entry",
+        "timing": "Now"
+      },
+      {
+        "label": "Entry 2",
+        "level": 48,
+        "rangeMax": 52,
+        "note": "Dip to 50-day MA area",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 38,
+        "note": "Deep dip / bear case",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 70,
+      "pct": 17.6,
+      "note": "Northland target / QKD traction"
+    },
+    "tp2": {
+      "price": 86,
+      "pct": 44.5,
+      "note": "Bull case — enterprise + government scale"
+    },
+    "tp3": {
+      "price": 137,
+      "pct": 130.0,
+      "note": "Moon case · Quantum advantage proven 2027–2028",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 46,
+      "tightPct": -23,
+      "tightNote": "Below 50-day MA — momentum broken",
+      "hard": 36,
+      "hardPct": -40,
+      "hardNote": "Bear case floor — quantum disappointment",
+      "riskReward": "1.8 : 1",
+      "rrNote": "Tight stop vs TP1",
+      "rrWarning": "Low R/R — ค่าขนม only"
+    },
+    "verdict": "ค่าขนม position only — size 3–5% max. Quantum is a 10-year bet, not a trade",
+    "approach": "Lump Sum"
+  },
+  "catalystSpot": {
+    "catalystType": "product_launch",
+    "preRunup": "Quantum computing stocks spike on any 'quantum supremacy' or 'commercial milestone' news — often 20–50% in days before fading. IONQ's Clavis QKD launch caused a similar spike pattern in June 2026.",
+    "preRunupTiming": "1 สัปดาห์หลัง product milestone",
+    "preRunupPct": "+15–40%",
+    "postWin": {
+      "avgPct": 25,
+      "range": "+15% to +60%",
+      "note": "IonQ jumped +35% in Jan 2024 after Google Willow partnership announcement. Commercial product launches with real revenue have driven outsized moves.",
+      "exampleDate": "Jan 2024"
+    },
+    "postLose": {
+      "avgPct": -25,
+      "range": "-15% to -45%",
+      "note": "IONQ dropped -35% in Aug 2023 after competitor IBM announced higher qubit count — market is sentiment-driven, not fundamental",
+      "exampleDate": "Aug 2023"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "ค่าขนม 62/100 — quantum computing เป็น high-risk long-duration bet จำกัด 3–5% เท่านั้น อย่า size ใหญ่กว่านี้"
+    },
+    "stopPreCatalyst": {
+      "pct": -23,
+      "price": 46,
+      "note": "ถ้าหลุด $46 = momentum broken ออกได้เลย"
+    },
+    "stopPostCatalyst": {
+      "pct": -30,
+      "note": "ถ้า Q2 revenue miss target หนักๆ ออกทันที"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "IONQ",
+      "event": "Google Willow partnership + quantum milestone",
+      "date": "Jan 2024",
+      "movePct": 35,
+      "days": 5,
+      "outcome": "good",
+      "note": "IonQ surged +35% in 5 days on Google Willow quantum computing partnership — shows quantum milestones can drive explosive short-term moves even without revenue."
+    },
+    {
+      "ticker": "ARQQ",
+      "event": "Arqit Quantum commercial satellite QKD launch",
+      "date": "Sep 2022",
+      "movePct": -60,
+      "days": 90,
+      "outcome": "bad",
+      "note": "Arqit Quantum collapsed -60% after commercial QKD rollout disappointment — IONQ risk if Clavis XG adoption is slower than guided"
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "IonQ launches Clavis XG Multiplex — first commercial QKD product, Northland raises target to $70",
+    "url": "https://ts2.tech/en/ionq-stock-trades-ahead-of-holiday-with-eyes-on-products-and-partnerships/",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://ts2.tech/en/ionq-stock-trades-ahead-of-holiday-with-eyes-on-products-and-partnerships/",
+    "https://stockanalysis.com/stocks/ionq/forecast/",
+    "https://www.tipranks.com/stocks/ionq/forecast"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "IonQ เป็น pure-play quantum computing เดียวที่เทรดได้ในตลาดหุ้น มี hardware จริงและ roadmap ที่น่าเชื่อถือ Clavis XG Multiplex (QKD บน fiber ปกติ) เป็นสินค้าชิ้นแรกที่ generate รายได้จริงในปี 2026 Northland ขึ้น target เป็น $70 หลัง launch ที่ $59 risk/reward asymmetric สำหรับ position เล็กๆ แต่นี่คือ ค่าขนม เท่านั้น",
+      "priceNote": "Quantum leader — QKD product แรก launch แล้ว",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "Clavis XG Multiplex Launch",
+          "description": "QKD product แรก บน metro fiber ปกติ — generate revenue จริงแล้ว"
+        },
+        {
+          "name": "IonQ Forte Enterprise",
+          "description": "Available บน AWS, Azure, Google Cloud — enterprise contracts รามปีนี้"
+        },
+        {
+          "name": "Q2 2026 Earnings",
+          "description": "Raised guidance $260–270M — ติดตาม revenue ramp"
+        }
+      ],
+      "risks": [
+        "Profitability ไม่ใช่ focus ปี 2026 — burn cash ต่อเนื่องบน R&D",
+        "Quantum advantage เชิงพาณิชย์ยังไม่พิสูจน์ที่ scale ใหญ่",
+        "IBM, Google, Microsoft มี budget R&D quantum ใหญ่กว่ามาก",
+        "Revenue ramp ($260–270M) ขึ้นกับ timing government + enterprise contract"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Rate cuts ช่วย pre-profitable company — discount rate ลด = valuation สูงขึ้น",
+        "inflationNote": "Hardware R&D และ quantum talent แพง — inflation headwind บน opex",
+        "sectorImpact": "Rate ลด = moderate positive สำหรับ pre-profitable growth",
+        "summary": "Fed risk MEDIUM — IonQ sensitive กับ rate ในฐานะ pre-profitable company Rate cuts สนับสนุน valuation แต่ revenue ramp คือ driver หลัก"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม position เท่านั้น — 3–5% max ของ portfolio Quantum คือ 10-year bet ไม่ใช่ trade",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ค่าขนม entry",
+            "timing": "ตอนนี้"
+          },
+          {
+            "note": "Dip ไป 50-day MA area",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "Deep dip / bear case",
+            "timing": "ถ้าร่วงลึก"
+          }
+        ],
+        "tp1": {
+          "note": "Northland target / QKD traction"
+        },
+        "tp2": {
+          "note": "Bull case — enterprise + government scale"
+        },
+        "tp3": {
+          "note": "Moon case · Quantum advantage proven 2027–2028",
+          "moon": true
+        },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า 50-day MA — momentum broken",
+          "hardNote": "Bear case floor — quantum disappointment",
+          "rrNote": "Tight stop vs TP1",
+          "rrWarning": "R/R ต่ำ — ค่าขนม only"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "Q2 2026 Earnings",
+          "note": "read revenue ramp QKD + Forte"
+        },
+        {
+          "event": "First Profitable Quarter",
+          "note": "milestone สำคัญ late 2026"
+        },
+        {
+          "event": "FY2028 Revenue $388M",
+          "note": "long-term target"
+        }
+      ],
+      "companyDescription": "Quantum computing · สร้าง quantum computer ด้วย trapped-ion technology และให้บริการผ่าน cloud (AWS, Azure, Google)"
+    }
+  },
+  "companyDescription": "Quantum computing · Trapped-ion quantum computers available via AWS, Azure, and Google Cloud"
+}

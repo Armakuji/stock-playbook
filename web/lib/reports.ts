@@ -44,6 +44,25 @@ export function getReport(ticker: string): StockReport | null {
   return JSON.parse(content) as StockReport;
 }
 
+// Returns ALL reports for ALL tickers, grouped by ticker (newest first per ticker)
+export function getAllReportsGrouped(): Record<string, StockReport[]> {
+  if (!fs.existsSync(REPORTS_DIR)) return {};
+
+  const files = fs.readdirSync(REPORTS_DIR).filter((f) => f.endsWith(".json"));
+
+  const all = files.map((file) => {
+    const content = fs.readFileSync(path.join(REPORTS_DIR, file), "utf-8");
+    return JSON.parse(content) as StockReport;
+  }).sort((a, b) => new Date(b.generatedAt).getTime() - new Date(a.generatedAt).getTime());
+
+  const grouped: Record<string, StockReport[]> = {};
+  for (const r of all) {
+    if (!grouped[r.ticker]) grouped[r.ticker] = [];
+    grouped[r.ticker].push(r);
+  }
+  return grouped;
+}
+
 export function getReportFilename(ticker: string, date?: string): string {
   const d = date ?? new Date().toISOString().slice(0, 10).replace(/-/g, "");
   return `${ticker.toUpperCase()}_${d}.json`;
