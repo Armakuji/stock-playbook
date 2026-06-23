@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { StockReport, Catalyst, EntryLevel, Scenario, EstimateDate, CatalystSpot, ComparableCase } from "@/lib/types";
+import { StockReport, Catalyst, EntryLevel, Scenario, EstimateDate, CatalystSpot, ComparableCase, ScoreComponent } from "@/lib/types";
 import { applyTranslation, Lang } from "@/lib/i18n";
 import { TimelinePoint } from "@/lib/timeline";
 import { StockTimeline } from "./StockTimeline";
@@ -209,6 +209,78 @@ function VerdictHeadline({ report, verdictColor, lang }: { report: StockReport; 
           </div>
         )}
       </div>
+      {score !== undefined && report.scoreBreakdown && (
+        <ScoreBreakdown breakdown={report.scoreBreakdown} color={verdictColor} th={th} />
+      )}
+    </div>
+  );
+}
+
+// ─── Score breakdown (visible — answers "where did this score come from?") ──────
+
+function ScoreBreakdown({ breakdown, color, th }: { breakdown: ScoreComponent[]; color: string; th: boolean }) {
+  const [open, setOpen] = useState(false);
+  if (!breakdown?.length) return null;
+  const total = breakdown.reduce((s, c) => s + c.points, 0);
+
+  return (
+    <div style={{ marginTop: 16, paddingTop: 14, borderTop: "1px solid var(--border)" }}>
+      {/* Toggle header */}
+      <button
+        onClick={() => setOpen((o) => !o)}
+        aria-expanded={open}
+        style={{
+          display: "flex", alignItems: "center", justifyContent: "space-between", width: "100%",
+          background: "none", border: "none", padding: 0, cursor: "pointer", color: "inherit",
+        }}
+      >
+        <span style={{
+          fontSize: 9, fontWeight: 800, letterSpacing: "1.2px", textTransform: "uppercase",
+          color: "var(--muted)", fontFamily: "var(--font-mono, monospace)",
+        }}>
+          {th ? "คะแนนนี้มาจากไหน" : "How this score is built"}
+        </span>
+        <span style={{
+          fontSize: 10, color: open ? color : "var(--muted)", fontFamily: "var(--font-mono, monospace)",
+          fontWeight: 700, display: "flex", alignItems: "center", gap: 6, letterSpacing: "0.3px",
+        }}>
+          {open ? (th ? "ซ่อน" : "hide") : (th ? "ดูที่มา" : "breakdown")}
+          <span style={{ display: "inline-block", transform: open ? "rotate(90deg)" : "none", transition: "transform 0.2s ease" }}>▸</span>
+        </span>
+      </button>
+
+      {/* Expanded content */}
+      {open && (
+        <div style={{ marginTop: 14, animation: "fadeInUp 0.3s ease both" }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: 11 }}>
+            {breakdown.map((c) => {
+              const pct = c.max > 0 ? Math.max(0, Math.min(100, (c.points / c.max) * 100)) : 0;
+              return (
+                <div key={c.label} style={{ display: "grid", gridTemplateColumns: "minmax(0, 1.1fr) 1.3fr auto", alignItems: "center", gap: 12 }}>
+                  <div style={{ minWidth: 0 }}>
+                    <div style={{ fontSize: 11.5, color: "var(--text)", fontWeight: 600, lineHeight: 1.3 }}>{c.label}</div>
+                    <div style={{ fontSize: 9.5, color: "#64748b", fontFamily: "var(--font-mono, monospace)", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{c.detail}</div>
+                  </div>
+                  <div style={{ height: 6, borderRadius: 4, background: "var(--border)", overflow: "hidden" }}>
+                    <div style={{ height: "100%", width: `${pct}%`, background: color, borderRadius: 4, opacity: 0.85, transition: "width 0.5s ease" }} />
+                  </div>
+                  <span style={{ fontSize: 11.5, fontWeight: 800, color: "var(--text)", fontFamily: "var(--font-mono, monospace)", minWidth: 46, textAlign: "right", whiteSpace: "nowrap" }}>
+                    {c.points}<span style={{ color: "var(--muted)", fontWeight: 600 }}>/{c.max}</span>
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+          <div style={{ marginTop: 13, paddingTop: 11, borderTop: "1px dashed var(--border)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+            <span style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>
+              {th ? "สูตรเดิม → คะแนนเดิมทุกครั้ง" : "same inputs → same score"}
+            </span>
+            <span style={{ fontSize: 14, fontWeight: 900, color, fontFamily: "var(--font-mono, monospace)" }}>
+              {Math.round(total)}<span style={{ color: "var(--muted)", fontWeight: 600 }}>/100</span>
+            </span>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
