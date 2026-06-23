@@ -1,0 +1,324 @@
+{
+  "ticker": "SERV",
+  "companyName": "Serve Robotics Inc.",
+  "companyDescription": "Autonomous Delivery Robotics · Sidewalk delivery robots for food & laundry across 44 cities — building the last-mile autonomous logistics network of the future powered by Nvidia edge AI",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-23T00:00:00.000Z",
+  "price": 7.00,
+  "priceChange": -1.5,
+  "priceNote": "Small-cap speculative play consolidating at $7 — analyst avg target $17-18 implies 140%+ upside; ค่าขนม position only",
+  "marketCap": "$280M",
+  "sector": "Technology / Robotics",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 62,
+  "summary": "Serve Robotics is the purest autonomous delivery robotics play in the public market — 2,000+ robots deployed in 44 cities across 14 states with Uber Eats and DoorDash integration. Q1 2026 revenue $3M (+578% YoY), 2026 guidance $26M. 9 analysts with Strong Buy consensus and average target $17-18 (140%+ upside). New partnerships: NoScrubs laundry delivery expanding beyond food. Unveiled 'Maggie' AI conversational robot at Nvidia GTC 2026. Ultra-speculative: tiny revenues, not yet profitable, but the physical AI infrastructure story is compelling if robotics adoption accelerates.",
+  "catalysts": [
+    {
+      "icon": "🤖",
+      "name": "Fleet Scale to 5,000+ Robots",
+      "description": "Serve has deployed 2,000 robots across 44 cities and 14 states. Scaling to 5,000+ robots targets breakeven on unit economics. Each robot serves Uber Eats, DoorDash, Shake Shack, Little Caesars — per-robot revenue growing as utilization increases.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🧺",
+      "name": "NoScrubs Laundry — Expansion Beyond Food",
+      "description": "June 2026: Serve launched laundry delivery with NoScrubs in Los Angeles — first non-food delivery vertical. Diversification from food delivery reduces Uber Eats concentration risk and expands TAM for sidewalk robots.",
+      "urgencyLabel": "NEW",
+      "dateBadge": "Jun 2026",
+      "catalystDate": "2026-06-15",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "⚡",
+      "name": "Maggie AI Robot at Nvidia GTC",
+      "description": "Unveiled 'Maggie' — AI conversational robot built on T-Mobile 5G Advanced + Nvidia edge computing at GTC 2026. Demonstrates SERV is not just a hardware company but an AI+5G robotics platform.",
+      "urgencyLabel": "RECENT",
+      "dateBadge": "Apr 2026",
+      "catalystDate": "2026-04-07",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Revenue too small — $26M 2026 guidance for a $280M market cap = 10x P/S; needs massive scaling to justify valuation",
+    "Not yet profitable — non-GAAP operating expenses $160-170M vs $26M revenue = massive cash burn",
+    "Uber Eats / DoorDash concentration risk — losing a platform partner destroys the business model",
+    "Regulatory risk — city permit requirements, sidewalk navigation laws can slow or block deployment",
+    "Competition from Amazon Scout (restarted), Starship Technologies, Nuro — well-funded rivals"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q2 2026 Earnings",
+      "dateRange": "Aug 2026",
+      "note": "Revenue run-rate read — $26M guide requires strong H2",
+      "est": "est. $6-8M rev",
+      "highlight": "blue"
+    },
+    {
+      "event": "5,000 Robot Milestone",
+      "dateRange": "Q4 2026",
+      "note": "Key scale milestone for unit economics",
+      "est": "5,000 robots",
+      "highlight": "yellow"
+    },
+    {
+      "event": "TP1 Target",
+      "dateRange": "2027",
+      "note": "Analyst consensus target zone",
+      "est": "$17-18",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -57,
+      "price": 3
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 71,
+      "price": 12
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 150,
+      "price": 17.5
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 329,
+      "price": 30
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus Average (9 analysts)",
+      "target": 17,
+      "rating": "Strong Buy"
+    },
+    {
+      "firm": "Highest Target",
+      "target": 18,
+      "rating": "Strong Buy"
+    },
+    {
+      "firm": "WallStreetZen",
+      "target": 17.5,
+      "rating": "Strong Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Higher rates increase cost of capital for unprofitable small-cap growth companies — SERV's cash burn is rate-sensitive for future financing rounds",
+    "inflationNote": "Robot hardware and maintenance costs face supply chain inflation. Labor savings thesis gets STRONGER with higher wages (robots replace human delivery at lower cost).",
+    "sectorImpact": "Physical AI (robotics) sector attracts investor interest regardless of rate environment. But SERV specifically needs low rates to fund its cash burn runway without dilutive raises.",
+    "summary": "Fed risk MEDIUM — SERV is unprofitable with $160-170M annual opex vs $26M revenue. Lower rates reduce dilution risk. The labor replacement thesis actually strengthens with wage inflation. Main risk is runway, not macro."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 7.00,
+        "note": "ค่าขนม starter position — tiny size only",
+        "timing": "Now (small)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 5.50,
+        "rangeMax": 6.00,
+        "note": "Strong support — add if dips toward 52-week low area",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 4.00,
+        "note": "Deep dip — check if company raised capital at dilutive price",
+        "timing": "Deep dip (verify dilution)"
+      }
+    ],
+    "tp1": {
+      "price": 12,
+      "pct": 71.4,
+      "note": "Base case — 2026 guidance hit, fleet scaling visible"
+    },
+    "tp2": {
+      "price": 17.5,
+      "pct": 150.0,
+      "note": "Analyst consensus target — full buy-side adoption"
+    },
+    "tp3": {
+      "price": 30,
+      "pct": 328.6,
+      "note": "Moon case · 2027-28 if autonomous delivery becomes mainstream",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 5.00,
+      "tightPct": -29,
+      "tightNote": "Psychological $5 break — small-cap sentiment flip",
+      "hard": 3.50,
+      "hardPct": -50,
+      "hardNote": "Bear case — dilutive capital raise or partner loss",
+      "riskReward": "2.5 : 1",
+      "rrNote": "Tight stop vs TP1",
+      "rrWarning": "ค่าขนม only — max 2-3% of portfolio. Very high risk."
+    },
+    "verdict": "ค่าขนม position only — ultra-speculative physical AI play with 140%+ upside to consensus. Size 1-2% max. Do NOT chase. Wait for dips.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "SERV spikes on partnership announcements and Nvidia/AI robotics sector momentum days. Very low float = large % moves on relatively small news. Physical AI hype cycles (Nvidia GTC, CES) drive sector-wide runs.",
+    "preRunupTiming": "spike ทันทีบน partnership news หรือ Nvidia robotics catalyst",
+    "preRunupPct": "+30–80% บน major partnership announcement",
+    "postWin": {
+      "avgPct": 40,
+      "range": "+20% to +80%",
+      "note": "SERV +45% in Jan 2026 when Nvidia partnership and SERV inclusion in physical AI watchlists hit. Low float small-cap moves fast. NoScrubs partnership (Jun 2026) drove modest +15% — market is now more cautious on revenue scale.",
+      "exampleDate": "Jan 2026"
+    },
+    "postLose": {
+      "avgPct": -35,
+      "range": "-20% to -60%",
+      "note": "SERV dropped -40% in Oct 2025 when early revenue ramp was slower than expected and operating expenses were 5x revenue. Cash burn + slow scale = severe derating for small-cap.",
+      "exampleDate": "Oct 2025"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "ค่าขนม 62/100 — high upside potential but tiny revenues and massive cash burn. 1-2% of portfolio maximum. Treat as lottery ticket on physical AI trend."
+    },
+    "stopPreCatalyst": {
+      "pct": -30,
+      "price": 4.9,
+      "note": "ถ้าหลุด $5 = sentiment shift ลบ หรือ dilutive raise กำลังจะเกิด — ออก"
+    },
+    "stopPostCatalyst": {
+      "pct": -40,
+      "note": "ถ้า partner ยกเลิก contract หรือ capital raise dilutive > 20% ออกทันที"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "BIRD",
+      "event": "Micro-mobility scooter rollout — low revenue high valuation",
+      "date": "Nov 2021",
+      "movePct": -85,
+      "days": 365,
+      "outcome": "bad",
+      "note": "Bird Rides SPAC listing — same physical AI / autonomous mobility narrative with too much opex vs revenue. CAUTIONARY TALE: physical AI companies must scale revenue before opex destroys them. SERV must hit $26M guide."
+    },
+    {
+      "ticker": "SERV",
+      "event": "Nvidia GTC + physical AI sector rerating",
+      "date": "Jan 2026",
+      "movePct": 45,
+      "days": 10,
+      "outcome": "good",
+      "note": "SERV rallied hard in Jan 2026 as Nvidia physical AI theme drove small-cap robotics stocks across the board. Low float = big moves on sector momentum. Pattern: ride Nvidia GTC momentum."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Serve Robotics Q1 2026 revenue $3M +578% YoY, NoScrubs laundry partnership Jun 2026, Maggie AI robot at Nvidia GTC",
+    "url": "https://www.stocktitan.net/news/SERV/serve-robotics-announces-first-quarter-2026-results-with-3x-3jokz86uimr4.html",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://www.stocktitan.net/news/SERV/serve-robotics-announces-first-quarter-2026-results-with-3x-3jokz86uimr4.html",
+    "https://www.stocktitan.net/news/SERV/serve-robotics-continues-expansion-beyond-food-delivery-launches-r5j5povefg69.html",
+    "https://stockanalysis.com/stocks/serv/forecast/",
+    "https://public.com/stocks/serv/forecast-price-target",
+    "https://finance.yahoo.com/quote/SERV/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Serve Robotics คือ pure-play autonomous delivery robotics ที่ listed ใน market — 2,000+ robots ใน 44 เมือง 14 รัฐ integrate กับ Uber Eats และ DoorDash Q1 2026 revenue $3M (+578% YoY) guide 2026 $26M analyst 9 คน Strong Buy เฉลี่ย target $17-18 (+140% upside) partnership ใหม่: NoScrubs laundry delivery เปิด vertical ใหม่ ultra-speculative: revenue เล็กมาก ยังขาดทุน แต่ physical AI infrastructure story น่าสนใจมาก",
+      "priceNote": "Small-cap speculative $7 — target $17-18 = 140%+ upside ค่าขนม position เท่านั้น",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "ขยาย Fleet 5,000+ Robots",
+          "description": "deploy แล้ว 2,000 robots 44 เมือง ขยายไป 5,000+ คือ breakeven milestone บน unit economics"
+        },
+        {
+          "name": "NoScrubs Laundry — ขยายนอก Food",
+          "description": "Jun 2026: เปิด laundry delivery ใน LA กับ NoScrubs — vertical แรกที่ไม่ใช่ food ขยาย TAM"
+        },
+        {
+          "name": "Maggie AI Robot ที่ Nvidia GTC",
+          "description": "เปิดตัว Maggie robot AI conversational บน 5G + Nvidia edge AI ที่ GTC 2026 แสดงว่า SERV เป็น AI platform"
+        }
+      ],
+      "risks": [
+        "Revenue เล็กมาก — $26M guide สำหรับ market cap $280M = 10x P/S",
+        "ยังไม่ profitable — opex $160-170M/ปี vs revenue $26M = cash burn สูง",
+        "Uber Eats / DoorDash concentration — ถ้าเสีย partner ธุรกิจเจ็บหนัก",
+        "Regulatory risk — city permit และ sidewalk law ชะลอ deployment ได้"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Rate สูง = cost of capital สูงสำหรับ loss-making small-cap — dilutive raise risk ขึ้น",
+        "inflationNote": "Wage inflation = robots ถูกกว่า human delivery = thesis แข็งขึ้น robot hardware cost inflation = negative",
+        "sectorImpact": "Physical AI sector ดึงดูด investor แม้ rate สูง แต่ SERV เฉพาะต้องการ rate ต่ำเพื่อ fund cash burn โดยไม่ dilutive",
+        "summary": "Fed risk ปานกลาง — unprofitable กับ opex สูงกว่า revenue 6x lower rates ลด dilution risk wage inflation ทำ thesis แข็งขึ้น risk หลักคือ cash runway"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม position เท่านั้น — ultra-speculative upside 140%+ สู่ consensus max 1-2% ของ portfolio อย่าไล่ราคา รอ dip",
+        "entryLevels": [
+          {
+            "note": "ค่าขนม starter position เล็กมาก",
+            "timing": "ตอนนี้ (เล็ก)"
+          },
+          {
+            "note": "Support แข็งแกร่ง — เพิ่มถ้า dip ใกล้ 52-week low",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ร่วงลึก — ตรวจสอบ dilutive capital raise ก่อน",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base case — 2026 guidance hit fleet scaling เห็นชัด"
+        },
+        "tp2": {
+          "note": "Analyst consensus target — full buy-side adoption"
+        },
+        "tp3": {
+          "note": "Moon case · 2027-28 ถ้า autonomous delivery mainstream",
+          "moon": true
+        },
+        "stopLoss": {
+          "tightNote": "หลุด $5 = sentiment flip หรือ dilutive raise กำลังจะเกิด",
+          "hardNote": "Bear case — dilutive capital raise หรือ partner loss",
+          "rrNote": "Tight stop vs TP1",
+          "rrWarning": "ค่าขนม max 2-3% portfolio risk สูงมาก"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "Q2 2026 Earnings",
+          "note": "read revenue run-rate — guide $26M ต้อง H2 แข็งแกร่ง"
+        },
+        {
+          "event": "5,000 Robot Milestone",
+          "note": "scale milestone สำคัญสำหรับ unit economics"
+        },
+        {
+          "event": "เป้า TP1",
+          "note": "analyst consensus target zone"
+        }
+      ]
+    }
+  }
+}

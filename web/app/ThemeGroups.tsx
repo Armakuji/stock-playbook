@@ -108,7 +108,14 @@ export function ThemeGroups({
                   border: `1px solid ${avgScore >= 75 ? "#10b98130" : avgScore >= 55 ? "#f59e0b30" : "#ef444430"}`,
                   fontFamily: "var(--font-mono, monospace)",
                 }}>
-                  avg {avgScore}
+                  avg conviction {avgScore}
+                </span>
+                <span style={{
+                  fontSize: 9, color: "var(--muted)",
+                  fontFamily: "var(--font-mono, monospace)",
+                  letterSpacing: "0.2px",
+                }}>
+                  sorted: catalyst proximity → conviction
                 </span>
               </div>
               {concentrationWarning && (

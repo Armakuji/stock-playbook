@@ -61,10 +61,36 @@
 
 ---
 
+## North Star v2 — แก้ construct validity ของ metric (ทำตอน tuning phase · มีข้อมูลจริงแล้ว)
+
+ทั้งคู่ **คำนวณย้อนหลังได้จากประวัติ** (path หุ้น + benchmark history) → ไม่ต้องรีบ capture · ทำหลังมี completed window พอ
+
+- **v2.1 · per-catalystType window + time-to-hit distribution** *(คมสุด · ถูกเพราะ path เก็บแล้ว)*
+  **ปัญหา:** `north-star.ts` ใช้ `NS_WINDOW_DAYS=14` กับทุก catalystType — FDA/earnings จบ 1-3 วัน แต่ foundry/contract slow-burn 3-4 สัปดาห์ → slow-burn ดู "fail" ทั้งที่ thesis ยังดี · bias ที่ denominator บิดการเปรียบเทียบข้าม type
+  **ทำ:** (a) เก็บ time-to-hit (แตะ +30% วันที่เท่าไหร่) เป็น distribution — honest สุด (b) per-type window config (FDA 3d / earnings 5d / foundry-contract 30d) (c) **เก็บ fixed 14d ไว้ด้วย** อย่าทิ้ง — เป็น signal "ความเร็ว" ตาม thesis เดิม → รายงานทั้งคู่
+  **ไฟล์:** `web/lib/north-star.ts` · `web/app/backtest/BacktestContent.tsx`
+  **เป้า:** เทียบ hit-rate ข้าม catalystType ได้แฟร์ + เห็นรูปร่าง time-to-hit
+
+- **v2.2 · beta / benchmark-adjusted edge** *(ของหนัก · รอ sample + beta เสถียร)*
+  **ปัญหา:** hit-rate ดิบปน "catalyst เวิร์ก" กับ "ตลาดลากขึ้น" — universe beta สูง (AVGO 1.43, ASTS 2.80) ตลาด +8% ก็แตะ +30% ได้โดยไม่เกี่ยว catalyst · near-miss คุม selection แต่ไม่คุม regime
+  **ทำ:** fetch benchmark path (SPY/QQQ + SMH) ช่วง window เดียวกัน → คำนวณ excess return หัก market+sector beta (เริ่มจาก benchmark-relative ดิบก่อน แล้วค่อย full beta-adjusted) · ⚠️ n น้อย = noisy + beta หุ้นพวกนี้ไม่นิ่ง ทำเมื่อ sample พอ
+  **ไฟล์:** `scripts/fetch-backtest-prices.mjs` (ดึง benchmark) · `web/lib/north-star.ts` · `web/app/backtest/BacktestContent.tsx`
+  **เป้า:** isolate selection edge จริง — pick ชนะ expected move ของมันไหม
+
 ## ยังไม่เลือกทำ (ไว้พิจารณาทีหลัง)
 - **Earned category ranking + expectancy-based sizing** *(idea 5+9)* — ลบ sector priority (Tech→AI→Space) ให้ category ลอยขึ้น top ตาม hit-rate จริง + size ตาม expectancy (`hitRate × upside ÷ MAE`) **⚠️ ขึ้นกับ #9 มี sample พอก่อน** ไม่งั้น optimize บน noise — ต้องใส่ shrinkage/prior + cap อิทธิพลตอน N น้อย
 - **Portfolio-level correlation view** — holding (AVGO/NVDA/MRVL/INTC/PLTR/ASTS) correlate สูง เด้งพร้อมกันตาม AI sentiment; view exposure/concentration/powder *(ทับซ้อนกับ #10 — อาจรวม)*
 - **Price-trigger alerts** — ต่อ scheduled task + live price → alert "แตะ Entry 2 zone" / "ใกล้ stop" (pairs กับ journal-validator skill)
 - **Small-cap quota ใน /dashboard** — บังคับ ≥1 pick ที่ <$10B + แก้ scoring ให้ตอนไม่มี analyst target ใช้ scenario-implied upside แทนการให้ 0 (เลิกกดหุ้น coverage บาง)
+
+---
+
+## Ops setup (ทำบน Mac mini หลังย้าย project + เปลี่ยน account Claude)
+
+- **ตั้ง scheduled task รัน `backtest:fetch` รายเช้า** — ให้ price-cache + path-cache สะสมอัตโนมัติ ไม่งั้น backtest/North Star/near-miss จะว่างตลอด *(network ในแซนด์บ็อกซ์ blocked — ต้องรันบนเครื่องจริงที่ต่อ Yahoo ได้)*
+  - คำสั่ง: `cd web && npm run backtest:fetch` (หรือ `node scripts/fetch-backtest-prices.mjs` จาก root)
+  - cron แนะนำ: ทุกเช้าหลังตลาดปิด 1 รอบ เช่น `0 6 * * *`
+  - หมายเหตุ: ต้องตั้งบน account/เครื่องใหม่ (Mac mini) เพราะ schedule ผูกกับ session/เครื่อง
+- **รัน `npm run build` ครั้งแรกบน Mac** — ยืนยัน production build ผ่าน (แซนด์บ็อกซ์รันไม่ได้เพราะ SWC binary เป็น linux/arm64 ไม่ตรง platform) tsc ผ่านแล้วทุกไฟล์
 
 _Generated during code review · not financial advice · XVARY Research_

@@ -4,6 +4,76 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { CalendarEvent } from "@/lib/catalyst-calendar";
 
+const PAGE_SIZE = 5;
+
+function CalPagination({
+  page, totalPages, onPrev, onNext,
+}: { page: number; totalPages: number; onPrev: () => void; onNext: () => void }) {
+  if (totalPages <= 1) return null;
+  return (
+    <div style={{
+      display: "flex", alignItems: "center", justifyContent: "space-between",
+      padding: "10px 16px",
+      borderTop: "1px solid var(--border)",
+      marginTop: 4,
+    }}>
+      <button
+        onClick={onPrev}
+        disabled={page === 0}
+        style={{
+          fontSize: 11, fontWeight: 800, padding: "4px 12px", borderRadius: 6,
+          border: "1px solid var(--border)",
+          background: "transparent",
+          color: page === 0 ? "var(--muted)" : "var(--text)",
+          cursor: page === 0 ? "default" : "pointer",
+          fontFamily: "var(--font-mono, monospace)",
+          opacity: page === 0 ? 0.4 : 1,
+          transition: "opacity 0.15s",
+        }}
+      >
+        ← Prev
+      </button>
+
+      <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+        {Array.from({ length: totalPages }).map((_, i) => (
+          <div
+            key={i}
+            style={{
+              width: i === page ? 16 : 6, height: 6, borderRadius: 3,
+              background: i === page ? "#10b981" : "var(--border)",
+              transition: "all 0.2s ease",
+            }}
+          />
+        ))}
+      </div>
+
+      <span style={{
+        fontSize: 10, color: "var(--muted)",
+        fontFamily: "var(--font-mono, monospace)", fontWeight: 700,
+      }}>
+        {page + 1} / {totalPages}
+      </span>
+
+      <button
+        onClick={onNext}
+        disabled={page >= totalPages - 1}
+        style={{
+          fontSize: 11, fontWeight: 800, padding: "4px 12px", borderRadius: 6,
+          border: "1px solid var(--border)",
+          background: "transparent",
+          color: page >= totalPages - 1 ? "var(--muted)" : "var(--text)",
+          cursor: page >= totalPages - 1 ? "default" : "pointer",
+          fontFamily: "var(--font-mono, monospace)",
+          opacity: page >= totalPages - 1 ? 0.4 : 1,
+          transition: "opacity 0.15s",
+        }}
+      >
+        Next →
+      </button>
+    </div>
+  );
+}
+
 const VERDICT_COLORS: Record<string, string> = {
   BUY: "#10b981", HOLD: "#f59e0b", SELL: "#ef4444", SPECULATIVE: "#8b5cf6",
 };
@@ -157,6 +227,7 @@ function EventRow({ event, days, isFirst, isClusterHead, clusterSize }: RowProps
 
 export function CatalystCalendar({ events }: { events: CalendarEvent[] }) {
   const [days, setDays] = useState<number[]>([]);
+  const [page, setPage] = useState(0);
 
   // Compute days remaining client-side so countdown is always fresh
   useEffect(() => {
@@ -170,7 +241,7 @@ export function CatalystCalendar({ events }: { events: CalendarEvent[] }) {
     ? days
     : events.map((e) => daysUntil(e.isoDate));
 
-  // Build cluster groups: tag each event with clusterHead + clusterSize
+  // Build cluster groups on full list (preserve cross-page cluster detection)
   const clusterInfo: { isHead: boolean; size: number }[] = events.map(() => ({ isHead: false, size: 1 }));
   let i = 0;
   while (i < events.length) {
@@ -183,17 +254,30 @@ export function CatalystCalendar({ events }: { events: CalendarEvent[] }) {
     i = j;
   }
 
+  const totalPages = Math.ceil(events.length / PAGE_SIZE);
+  const start = page * PAGE_SIZE;
+  const pageEvents = events.slice(start, start + PAGE_SIZE);
+
   return (
     <div style={{ marginTop: 48 }}>
       {/* Header */}
-      <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 4 }}>
-        <span style={{ fontSize: 16 }}>📅</span>
-        <h2 style={{
-          fontSize: "clamp(16px, 3vw, 22px)", fontWeight: 900, margin: 0,
-          letterSpacing: "-0.5px", fontFamily: "var(--font-display, sans-serif)",
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 4 }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+          <span style={{ fontSize: 16 }}>📅</span>
+          <h2 style={{
+            fontSize: "clamp(16px, 3vw, 22px)", fontWeight: 900, margin: 0,
+            letterSpacing: "-0.5px", fontFamily: "var(--font-display, sans-serif)",
+          }}>
+            Catalyst Calendar
+          </h2>
+        </div>
+        <span style={{
+          fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)",
+          fontWeight: 700, padding: "3px 9px", borderRadius: 6,
+          border: "1px solid var(--border)", background: "var(--card)",
         }}>
-          Catalyst Calendar
-        </h2>
+          {events.length} events
+        </span>
       </div>
       <p style={{ fontSize: 12, color: "var(--muted)", margin: "0 0 16px", fontFamily: "var(--font-mono, monospace)" }}>
         Upcoming events across all tracked stocks · <span style={{ color: "#ef4444" }}>red ≤ 2d</span> · <span style={{ color: "#f59e0b" }}>amber ≤ 7d</span> · dashed = estimated date
@@ -201,19 +285,29 @@ export function CatalystCalendar({ events }: { events: CalendarEvent[] }) {
 
       <div style={{
         background: "var(--card)", border: "1px solid var(--border)",
-        borderRadius: 14, padding: "8px 4px",
+        borderRadius: 14, padding: "8px 4px 4px",
         display: "flex", flexDirection: "column", gap: 2,
       }}>
-        {events.map((event, idx) => (
-          <EventRow
-            key={`${event.ticker}-${event.isoDate}-${idx}`}
-            event={event}
-            days={daysArr[idx] ?? 0}
-            isFirst={idx === 0}
-            isClusterHead={clusterInfo[idx].isHead}
-            clusterSize={clusterInfo[idx].size}
-          />
-        ))}
+        {pageEvents.map((event, idx) => {
+          const globalIdx = start + idx;
+          return (
+            <EventRow
+              key={`${event.ticker}-${event.isoDate}-${globalIdx}`}
+              event={event}
+              days={daysArr[globalIdx] ?? 0}
+              isFirst={globalIdx === 0}
+              isClusterHead={clusterInfo[globalIdx].isHead}
+              clusterSize={clusterInfo[globalIdx].size}
+            />
+          );
+        })}
+
+        <CalPagination
+          page={page}
+          totalPages={totalPages}
+          onPrev={() => setPage((p) => Math.max(0, p - 1))}
+          onNext={() => setPage((p) => Math.min(totalPages - 1, p + 1))}
+        />
       </div>
     </div>
   );
