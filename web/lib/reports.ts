@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { StockReport } from "./types";
+import { withComputedScore } from "./scoring";
 
 const REPORTS_DIR = path.join(process.cwd(), "data", "reports");
 
@@ -13,7 +14,7 @@ export function getAllReports(): StockReport[] {
 
   const reports = files.map((file) => {
     const content = fs.readFileSync(path.join(REPORTS_DIR, file), "utf-8");
-    return JSON.parse(content) as StockReport;
+    return withComputedScore(JSON.parse(content) as StockReport);
   });
 
   // Sort by generatedAt descending (newest first), then deduplicate — keep only latest per ticker
@@ -41,7 +42,7 @@ export function getReport(ticker: string): StockReport | null {
   if (files.length === 0) return null;
 
   const content = fs.readFileSync(path.join(REPORTS_DIR, files[0]), "utf-8");
-  return JSON.parse(content) as StockReport;
+  return withComputedScore(JSON.parse(content) as StockReport);
 }
 
 // Returns ALL reports for ALL tickers, grouped by ticker (newest first per ticker)
@@ -52,7 +53,7 @@ export function getAllReportsGrouped(): Record<string, StockReport[]> {
 
   const all = files.map((file) => {
     const content = fs.readFileSync(path.join(REPORTS_DIR, file), "utf-8");
-    return JSON.parse(content) as StockReport;
+    return withComputedScore(JSON.parse(content) as StockReport);
   }).sort((a, b) => new Date(b.generatedAt).getTime() - new Date(a.generatedAt).getTime());
 
   const grouped: Record<string, StockReport[]> = {};

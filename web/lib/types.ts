@@ -217,6 +217,16 @@ export interface ComparableCase {
   note: string;
 }
 
+// ─── Score breakdown ─────────────────────────────────────────────────────────
+// One line of the deterministic score derivation (see web/lib/scoring.ts).
+
+export interface ScoreComponent {
+  label: string;     // e.g. "Analyst upside"
+  points: number;    // contribution toward the 0–100 total
+  max: number;       // max this component can contribute
+  detail: string;    // human-readable basis, e.g. "+38% to median $165"
+}
+
 // ─── Main Report ─────────────────────────────────────────────────────────────
 
 export interface StockReport {
@@ -234,6 +244,8 @@ export interface StockReport {
   verdict: "BUY" | "HOLD" | "SELL" | "SPECULATIVE";
   scoreLabel?: string;      // e.g. "Core Holding", "ค่าขนม", "Speculative"
   score?: number;
+  /** Deterministic score derivation — attached at load time by withComputedScore() */
+  scoreBreakdown?: ScoreComponent[];
   summary: string;
   catalysts: Catalyst[];
   risks: string[];

@@ -6,6 +6,7 @@ import { StockReport, Catalyst, EntryLevel, Scenario, EstimateDate, CatalystSpot
 import { applyTranslation, Lang } from "@/lib/i18n";
 import { TimelinePoint } from "@/lib/timeline";
 import { StockTimeline } from "./StockTimeline";
+import { StalenessBanner } from "./StalenessBanner";
 
 // ─── Color maps ───────────────────────────────────────────────────────────────
 
@@ -186,7 +187,15 @@ function VerdictHeadline({ report, verdictColor, lang }: { report: StockReport; 
           </p>
         </div>
         {score !== undefined && (
-          <div style={{ flexShrink: 0, textAlign: "center", paddingTop: 4 }}>
+          <div
+            style={{ flexShrink: 0, textAlign: "center", paddingTop: 4, cursor: report.scoreBreakdown ? "help" : "default" }}
+            title={
+              report.scoreBreakdown
+                ? "Score breakdown (deterministic):\n" +
+                  report.scoreBreakdown.map((c) => `• ${c.label}: ${c.points}/${c.max} — ${c.detail}`).join("\n")
+                : undefined
+            }
+          >
             <div style={{
               fontSize: 52, fontWeight: 900, color: verdictColor, lineHeight: 0.9,
               fontFamily: "var(--font-mono, monospace)", letterSpacing: "-2px",
@@ -194,7 +203,7 @@ function VerdictHeadline({ report, verdictColor, lang }: { report: StockReport; 
               {score}
             </div>
             <div style={{ fontSize: 9, color: "var(--muted)", letterSpacing: "1.5px", textTransform: "uppercase", fontFamily: "var(--font-mono, monospace)", marginTop: 2 }}>
-              {th ? "คะแนน / 100" : "score / 100"}
+              {th ? "คะแนน / 100" : "score / 100"}{report.scoreBreakdown ? " ⓘ" : ""}
             </div>
           </div>
         )}
@@ -906,6 +915,13 @@ export function ReportContent({ report: baseReport, timelinePoints = [] }: { rep
           <LangToggle lang={lang} hasThai={hasThai} onChange={setLang} />
         </div>
       </div>
+
+      {/* Freshness / price-drift indicator (uses untranslated base values) */}
+      <StalenessBanner
+        ticker={baseReport.ticker}
+        reportPrice={baseReport.price}
+        generatedAt={baseReport.generatedAt}
+      />
 
       {/* Language-keyed wrapper → smooth fade on EN/TH swap */}
       <div key={lang} className="lang-fade">
