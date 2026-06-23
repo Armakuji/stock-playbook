@@ -249,6 +249,9 @@ export interface StockReport {
   score?: number;
   /** Deterministic score derivation — attached at load time by withComputedScore() */
   scoreBreakdown?: ScoreComponent[];
+  /** Optional explicit factor tags (e.g. "ai_semi", "long_duration_rate"); the rest
+   *  are derived in web/lib/factors.ts for correlated-risk warnings. */
+  factorTags?: string[];
   summary: string;
   catalysts: Catalyst[];
   risks: string[];

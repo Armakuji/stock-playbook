@@ -4,6 +4,7 @@ import { useState, useCallback } from "react";
 import Link from "next/link";
 import { BacktestEntry, BacktestStats, Checkpoint } from "@/lib/backtest";
 import { NearMissOutcome } from "@/lib/near-miss";
+import { NorthStar } from "@/lib/north-star";
 
 // ── Constants ─────────────────────────────────────────────────────────────────
 
@@ -180,6 +181,69 @@ function FetchButton({ pendingItems }: {
   );
 }
 
+// ── North Star ──────────────────────────────────────────────────────────────
+
+function NorthStarSection({ ns }: { ns: NorthStar }) {
+  const rate = (v: number | null) => (v == null ? "—" : `${Math.round(v * 100)}%`);
+  const rateColor = (v: number | null) => (v == null ? "#64748b" : v >= 0.5 ? "#10b981" : v >= 0.3 ? "#f59e0b" : "#ef4444");
+
+  return (
+    <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: 14, padding: "20px 22px", marginBottom: 24 }}>
+      <div style={{ fontSize: 10, fontWeight: 800, color: "var(--muted)", textTransform: "uppercase", letterSpacing: "1.5px", fontFamily: "var(--font-mono, monospace)", marginBottom: 6 }}>
+        ⭐ North Star — +{ns.targetPct}% within {ns.windowDays} days
+      </div>
+      <p style={{ fontSize: 11.5, color: "var(--muted)", margin: "0 0 16px", lineHeight: 1.6 }}>
+        The actual job of a 30% hunter, measured. MAE = max drawdown endured before the target hit.
+      </p>
+
+      {ns.totalComplete === 0 ? (
+        <div style={{ textAlign: "center", padding: "24px 0", color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", fontSize: 12 }}>
+          <div style={{ fontSize: 22, marginBottom: 8 }}>⏳</div>
+          {ns.totalAccumulating} window{ns.totalAccumulating === 1 ? "" : "s"} still filling — run <code>npm run backtest:fetch</code> as the 14-day windows complete.
+        </div>
+      ) : (
+        <>
+          {/* Hero stats */}
+          <div style={{ display: "flex", gap: 28, flexWrap: "wrap", marginBottom: 18 }}>
+            <div>
+              <div style={{ fontSize: 34, fontWeight: 900, color: rateColor(ns.hitRate), fontFamily: "var(--font-mono, monospace)", lineHeight: 1 }}>{rate(ns.hitRate)}</div>
+              <div style={{ fontSize: 9, color: "var(--muted)", textTransform: "uppercase", letterSpacing: "1px", fontFamily: "var(--font-mono, monospace)", marginTop: 3 }}>hit rate · n={ns.totalComplete}</div>
+            </div>
+            <div>
+              <div style={{ fontSize: 34, fontWeight: 900, color: ns.medianMAE != null && ns.medianMAE > -15 ? "#10b981" : "#f59e0b", fontFamily: "var(--font-mono, monospace)", lineHeight: 1 }}>{fmtPct(ns.medianMAE)}</div>
+              <div style={{ fontSize: 9, color: "var(--muted)", textTransform: "uppercase", letterSpacing: "1px", fontFamily: "var(--font-mono, monospace)", marginTop: 3 }}>median MAE</div>
+            </div>
+          </div>
+
+          {/* By catalyst type */}
+          <div style={{ overflowX: "auto" }}>
+            <table style={{ width: "100%", borderCollapse: "collapse", minWidth: 520, fontFamily: "var(--font-mono, monospace)", fontSize: 12 }}>
+              <thead>
+                <tr style={{ borderBottom: "1px solid var(--border)" }}>
+                  {["Catalyst type", "n", "Hit +30%", "Median MAE", "Avg max gain"].map((h) => (
+                    <th key={h} style={{ padding: "8px 12px", textAlign: h === "Catalyst type" ? "left" : "center", fontSize: 9, fontWeight: 800, color: "var(--muted)", textTransform: "uppercase", letterSpacing: "1px", whiteSpace: "nowrap" }}>{h}</th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {ns.byType.map((t, i) => (
+                  <tr key={t.type} style={{ borderBottom: i < ns.byType.length - 1 ? "1px solid var(--border)" : "none" }}>
+                    <td style={{ padding: "8px 12px", fontWeight: 700 }}>{t.icon} {t.label}</td>
+                    <td style={{ padding: "8px 12px", textAlign: "center", color: "var(--muted)" }}>{t.n}</td>
+                    <td style={{ padding: "8px 12px", textAlign: "center", fontWeight: 800, color: rateColor(t.hitRate) }}>{rate(t.hitRate)}</td>
+                    <td style={{ padding: "8px 12px", textAlign: "center", fontWeight: 700, color: t.medianMAE != null && t.medianMAE > -15 ? "#10b981" : "#f59e0b" }}>{fmtPct(t.medianMAE)}</td>
+                    <td style={{ padding: "8px 12px", textAlign: "center", fontWeight: 700, color: t.avgMaxGain != null && t.avgMaxGain >= 0 ? "#10b981" : "#ef4444" }}>{fmtPct(t.avgMaxGain)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
+
 // ── Near-miss log ───────────────────────────────────────────────────────────
 
 function NearMissSection({ nearMisses, pickAvg30 }: { nearMisses: NearMissOutcome[]; pickAvg30: number | null }) {
@@ -241,7 +305,7 @@ function NearMissSection({ nearMisses, pickAvg30 }: { nearMisses: NearMissOutcom
 
 // ── Main ──────────────────────────────────────────────────────────────────────
 
-export function BacktestContent({ entries, stats, nearMisses }: { entries: BacktestEntry[]; stats: BacktestStats; nearMisses: NearMissOutcome[] }) {
+export function BacktestContent({ entries, stats, nearMisses, northStar }: { entries: BacktestEntry[]; stats: BacktestStats; nearMisses: NearMissOutcome[]; northStar: NorthStar }) {
   const pick30 = entries.flatMap((e) => e.checkpoints.filter((c) => c.days === 30 && c.actualPct !== null).map((c) => c.actualPct as number));
   const pickAvg30 = pick30.length ? pick30.reduce((s, v) => s + v, 0) / pick30.length : null;
   // Items that are past due but have no cached price yet
@@ -273,6 +337,9 @@ export function BacktestContent({ entries, stats, nearMisses }: { entries: Backt
 
         {pendingFetches.length > 0 && <FetchButton pendingItems={pendingFetches} />}
       </div>
+
+      {/* North Star — the headline metric */}
+      <NorthStarSection ns={northStar} />
 
       {/* Calibration chart */}
       <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: 14, padding: "20px 22px", marginBottom: 24 }}>

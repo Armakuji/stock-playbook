@@ -20,8 +20,10 @@ const ROOT = path.resolve(__dirname, "..");
 const REPORTS_DIR = path.join(ROOT, "web", "data", "reports");
 const CACHE_FILE = path.join(ROOT, "web", "data", "backtest-cache.json");
 const NEAR_MISS_FILE = path.join(ROOT, "web", "data", "near-misses.json");
+const PATH_CACHE_FILE = path.join(ROOT, "web", "data", "path-cache.json");
 const CHECKPOINTS = [30, 60, 90];
 const NEAR_MISS_CHECKPOINTS = [14, 30];
+const NS_WINDOW = 14;          // North Star: +30% within 14 days
 
 // ── must produce IDENTICAL keys to web/lib/backtest.ts ──────────────────────
 function addDays(dateStr, days) {              // dateStr "YYYYMMDD" → "YYYY-MM-DD"
@@ -125,4 +127,58 @@ for (const { ticker, date } of todo) {
 }
 
 writeCache(cache);
-console.log(`✅ done · ${ok} fetched · ${fail} failed · → web/data/backtest-cache.json`);
+console.log(`✅ checkpoints done · ${ok} fetched · ${fail} failed · → web/data/backtest-cache.json`);
+
+// ── North Star: fetch the 14-day daily price path per report snapshot ────────
+const ymdToISO = (s) => `${s.slice(0, 4)}-${s.slice(4, 6)}-${s.slice(6, 8)}`;
+
+function readPathCache() {
+  try { const j = JSON.parse(fs.readFileSync(PATH_CACHE_FILE, "utf-8")); return j; } catch { return { _note: "" }; }
+}
+
+async function fetchPath(ticker, fromISO, toISO) {
+  const p1 = Math.floor(new Date(fromISO + "T00:00:00Z").getTime() / 1000) - 86400;
+  const p2 = Math.floor(new Date(toISO + "T00:00:00Z").getTime() / 1000) + 2 * 86400;
+  const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(ticker)}?interval=1d&period1=${p1}&period2=${p2}`;
+  try {
+    const res = await fetch(url, { headers: { "User-Agent": "Mozilla/5.0" }, signal: AbortSignal.timeout(8000) });
+    if (!res.ok) return null;
+    const json = await res.json();
+    const r = json?.chart?.result?.[0];
+    const ts = r?.timestamp, closes = r?.indicators?.quote?.[0]?.close;
+    if (!ts || !closes) return null;
+    const out = [];
+    for (let i = 0; i < ts.length; i++) {
+      if (closes[i] == null) continue;
+      out.push({ d: new Date(ts[i] * 1000).toISOString().slice(0, 10), c: +closes[i].toFixed(2) });
+    }
+    return out;
+  } catch { return null; }
+}
+
+const pathCache = readPathCache();
+let pathOk = 0, pathSkip = 0;
+const snapshots = fs.existsSync(REPORTS_DIR)
+  ? fs.readdirSync(REPORTS_DIR).filter((x) => x.endsWith(".json")).map((f) => {
+      const m = f.match(/_(\d{8})\.json$/);
+      if (!m) return null;
+      try { return { ticker: JSON.parse(fs.readFileSync(path.join(REPORTS_DIR, f), "utf-8")).ticker, reportDate: m[1] }; }
+      catch { return null; }
+    }).filter(Boolean)
+  : [];
+
+for (const { ticker, reportDate } of snapshots) {
+  const key = `${ticker}_${reportDate}`;
+  const startISO = ymdToISO(reportDate);
+  const endISO = addDays(reportDate, NS_WINDOW);
+  if (startISO > today) continue;                         // window not started
+  const existing = pathCache[key];
+  const lastHave = Array.isArray(existing) && existing.length ? existing[existing.length - 1].d : null;
+  if (lastHave && (lastHave >= endISO || lastHave >= today)) { pathSkip++; continue; } // already complete / current
+  const path14 = await fetchPath(ticker, startISO, endISO);
+  if (path14 && path14.length) { pathCache[key] = path14; pathOk++; console.log(`  ⌁ ${ticker} path ${startISO}→${endISO} (${path14.length}d)`); }
+  await new Promise((r) => setTimeout(r, 250));
+}
+
+fs.writeFileSync(PATH_CACHE_FILE, JSON.stringify(pathCache, null, 2));
+console.log(`✅ paths done · ${pathOk} fetched · ${pathSkip} already complete · → web/data/path-cache.json`);
