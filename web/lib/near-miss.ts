@@ -38,7 +38,15 @@ function addDays(yyyymmdd: string, days: number): string {
 export function readNearMisses(): NearMiss[] {
   try {
     const j = JSON.parse(fs.readFileSync(STORE, "utf-8")) as NearMissFile;
-    return Array.isArray(j.nearMisses) ? j.nearMisses : [];
+    const arr = Array.isArray(j.nearMisses) ? j.nearMisses : [];
+    // Normalize legacy field names: date→screenDate, priceAtScreen→screenPrice, impliedUpside→screenUpsidePct
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    return arr.map((nm: any) => ({
+      ...nm,
+      screenDate:      nm.screenDate ?? (nm.date ? nm.date.replace(/-/g, "") : undefined),
+      screenPrice:     nm.screenPrice ?? nm.priceAtScreen ?? 0,
+      screenUpsidePct: nm.screenUpsidePct ?? nm.impliedUpside,
+    } as NearMiss));
   } catch { return []; }
 }
 
@@ -46,6 +54,7 @@ export function computeNearMissOutcomes(): NearMissOutcome[] {
   const cache = readCache();
   const today = new Date().toISOString().slice(0, 10);
   const pct = (nm: NearMiss, days: number): number | null => {
+    if (!nm.screenDate) return null;
     const target = addDays(nm.screenDate, days);
     if (target > today) return null;
     const p = cache[cacheKey(nm.ticker, target)]?.price ?? null;
