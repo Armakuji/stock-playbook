@@ -104,6 +104,23 @@ Scores are never final without kill criteria.
 
 If a listed kill criterion triggers, the thesis should be re-underwritten regardless of score level.
 
+## Deterministic Report Score (implemented)
+
+The `score` shown on every report is computed by `web/lib/scoring.ts` (`computeScore`)
+and recomputed at load time in `web/lib/reports.ts` — it is **reproducible**: same
+report JSON in → same score out, no hand-tuning. Components (max 100):
+
+| Component | Max | Basis (grounded field) |
+|-----------|-----|------------------------|
+| Verdict conviction | 30 | `verdict` (BUY 30 / SPECULATIVE 18 / HOLD 15 / SELL 4) |
+| Analyst upside | 20 | median `analystTargets` vs `price` (+40% ⇒ full) |
+| Scenario asymmetry | 15 | best/worst `scenarios.pct` ratio (3:1 ⇒ full) |
+| Entry R/R | 10 | TP2 vs tight stop from entry (3:1 ⇒ full) |
+| Catalyst density | 10 | count of `catalysts` |
+| Macro (Fed) risk | 15 | `macroRisk.fedRisk` (LOW 15 / MED 8 / HIGH 0) |
+
+Hover the score on a report to see the per-component breakdown.
+
 ## Not Included in Public Docs
 
 - Production weight values (`w1..w4`, `a..d`)

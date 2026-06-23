@@ -2,10 +2,12 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { StockReport, Catalyst, EntryLevel, Scenario, EstimateDate, CatalystSpot, ComparableCase } from "@/lib/types";
+import { StockReport, Catalyst, EntryLevel, Scenario, EstimateDate, CatalystSpot, ComparableCase, ScoreComponent } from "@/lib/types";
 import { applyTranslation, Lang } from "@/lib/i18n";
 import { TimelinePoint } from "@/lib/timeline";
 import { StockTimeline } from "./StockTimeline";
+import { StalenessBanner } from "./StalenessBanner";
+import { marketCapTier } from "@/lib/market-cap";
 
 // ─── Color maps ───────────────────────────────────────────────────────────────
 
@@ -186,7 +188,15 @@ function VerdictHeadline({ report, verdictColor, lang }: { report: StockReport; 
           </p>
         </div>
         {score !== undefined && (
-          <div style={{ flexShrink: 0, textAlign: "center", paddingTop: 4 }}>
+          <div
+            style={{ flexShrink: 0, textAlign: "center", paddingTop: 4, cursor: report.scoreBreakdown ? "help" : "default" }}
+            title={
+              report.scoreBreakdown
+                ? "Score breakdown (deterministic):\n" +
+                  report.scoreBreakdown.map((c) => `• ${c.label}: ${c.points}/${c.max} — ${c.detail}`).join("\n")
+                : undefined
+            }
+          >
             <div style={{
               fontSize: 52, fontWeight: 900, color: verdictColor, lineHeight: 0.9,
               fontFamily: "var(--font-mono, monospace)", letterSpacing: "-2px",
@@ -194,11 +204,83 @@ function VerdictHeadline({ report, verdictColor, lang }: { report: StockReport; 
               {score}
             </div>
             <div style={{ fontSize: 9, color: "var(--muted)", letterSpacing: "1.5px", textTransform: "uppercase", fontFamily: "var(--font-mono, monospace)", marginTop: 2 }}>
-              {th ? "คะแนน / 100" : "score / 100"}
+              {th ? "คะแนน / 100" : "score / 100"}{report.scoreBreakdown ? " ⓘ" : ""}
             </div>
           </div>
         )}
       </div>
+      {score !== undefined && report.scoreBreakdown && (
+        <ScoreBreakdown breakdown={report.scoreBreakdown} color={verdictColor} th={th} />
+      )}
+    </div>
+  );
+}
+
+// ─── Score breakdown (visible — answers "where did this score come from?") ──────
+
+function ScoreBreakdown({ breakdown, color, th }: { breakdown: ScoreComponent[]; color: string; th: boolean }) {
+  const [open, setOpen] = useState(false);
+  if (!breakdown?.length) return null;
+  const total = breakdown.reduce((s, c) => s + c.points, 0);
+
+  return (
+    <div style={{ marginTop: 16, paddingTop: 14, borderTop: "1px solid var(--border)" }}>
+      {/* Toggle header */}
+      <button
+        onClick={() => setOpen((o) => !o)}
+        aria-expanded={open}
+        style={{
+          display: "flex", alignItems: "center", justifyContent: "space-between", width: "100%",
+          background: "none", border: "none", padding: 0, cursor: "pointer", color: "inherit",
+        }}
+      >
+        <span style={{
+          fontSize: 9, fontWeight: 800, letterSpacing: "1.2px", textTransform: "uppercase",
+          color: "var(--muted)", fontFamily: "var(--font-mono, monospace)",
+        }}>
+          {th ? "คะแนนนี้มาจากไหน" : "How this score is built"}
+        </span>
+        <span style={{
+          fontSize: 10, color: open ? color : "var(--muted)", fontFamily: "var(--font-mono, monospace)",
+          fontWeight: 700, display: "flex", alignItems: "center", gap: 6, letterSpacing: "0.3px",
+        }}>
+          {open ? (th ? "ซ่อน" : "hide") : (th ? "ดูที่มา" : "breakdown")}
+          <span style={{ display: "inline-block", transform: open ? "rotate(90deg)" : "none", transition: "transform 0.2s ease" }}>▸</span>
+        </span>
+      </button>
+
+      {/* Expanded content */}
+      {open && (
+        <div style={{ marginTop: 14, animation: "fadeInUp 0.3s ease both" }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: 11 }}>
+            {breakdown.map((c) => {
+              const pct = c.max > 0 ? Math.max(0, Math.min(100, (c.points / c.max) * 100)) : 0;
+              return (
+                <div key={c.label} style={{ display: "grid", gridTemplateColumns: "minmax(0, 1.1fr) 1.3fr auto", alignItems: "center", gap: 12 }}>
+                  <div style={{ minWidth: 0 }}>
+                    <div style={{ fontSize: 11.5, color: "var(--text)", fontWeight: 600, lineHeight: 1.3 }}>{c.label}</div>
+                    <div style={{ fontSize: 9.5, color: "#64748b", fontFamily: "var(--font-mono, monospace)", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{c.detail}</div>
+                  </div>
+                  <div style={{ height: 6, borderRadius: 4, background: "var(--border)", overflow: "hidden" }}>
+                    <div style={{ height: "100%", width: `${pct}%`, background: color, borderRadius: 4, opacity: 0.85, transition: "width 0.5s ease" }} />
+                  </div>
+                  <span style={{ fontSize: 11.5, fontWeight: 800, color: "var(--text)", fontFamily: "var(--font-mono, monospace)", minWidth: 46, textAlign: "right", whiteSpace: "nowrap" }}>
+                    {c.points}<span style={{ color: "var(--muted)", fontWeight: 600 }}>/{c.max}</span>
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+          <div style={{ marginTop: 13, paddingTop: 11, borderTop: "1px dashed var(--border)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+            <span style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>
+              {th ? "สูตรเดิม → คะแนนเดิมทุกครั้ง" : "same inputs → same score"}
+            </span>
+            <span style={{ fontSize: 14, fontWeight: 900, color, fontFamily: "var(--font-mono, monospace)" }}>
+              {Math.round(total)}<span style={{ color: "var(--muted)", fontWeight: 600 }}>/100</span>
+            </span>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
@@ -879,6 +961,8 @@ export function ReportContent({ report: baseReport, timelinePoints = [] }: { rep
 
   const verdictColor = VERDICT_COLORS[report.verdict] ?? "#64748b";
   const isPositive = report.priceChange >= 0;
+  const cap = marketCapTier(baseReport.marketCap);
+  const th = lang === "th";
 
   return (
     <div className="terminal-surface" style={{ maxWidth: 1100, margin: "0 auto" }}>
@@ -906,6 +990,13 @@ export function ReportContent({ report: baseReport, timelinePoints = [] }: { rep
           <LangToggle lang={lang} hasThai={hasThai} onChange={setLang} />
         </div>
       </div>
+
+      {/* Freshness / price-drift indicator (uses untranslated base values) */}
+      <StalenessBanner
+        ticker={baseReport.ticker}
+        reportPrice={baseReport.price}
+        generatedAt={baseReport.generatedAt}
+      />
 
       {/* Language-keyed wrapper → smooth fade on EN/TH swap */}
       <div key={lang} className="lang-fade">
@@ -944,6 +1035,18 @@ export function ReportContent({ report: baseReport, timelinePoints = [] }: { rep
                 }}>
                   {report.scoreLabel ?? report.verdict}
                 </span>
+                {cap && (
+                  <span
+                    title={`Market-cap size tier · ${baseReport.marketCap ?? ""}`}
+                    style={{
+                      fontSize: 11, fontWeight: 800, padding: "4px 12px", borderRadius: 8,
+                      background: cap.bg, color: cap.color, border: `1px solid ${cap.color}40`,
+                      whiteSpace: "nowrap", fontFamily: "var(--font-mono, monospace)", letterSpacing: "0.5px",
+                    }}
+                  >
+                    {cap.label}
+                  </span>
+                )}
               </div>
               <div style={{ fontSize: 11, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", lineHeight: 1.6, display: "flex", flexWrap: "wrap", gap: "2px 0", alignItems: "center" }}>
                 <span style={{ whiteSpace: "nowrap" }}>{report.companyName}</span>
@@ -968,7 +1071,33 @@ export function ReportContent({ report: baseReport, timelinePoints = [] }: { rep
             </div>
           </div>
 
-          <p style={{ fontSize: 13, color: "#94a3b8", lineHeight: 1.75, margin: 0, position: "relative" }}>{report.summary}</p>
+          {/* What the business does (short) — distinct from the thesis below */}
+          {baseReport.companyDescription && (
+            <div style={{ display: "flex", gap: 8, alignItems: "baseline", flexWrap: "wrap", marginBottom: 10, position: "relative" }}>
+              <span style={{
+                fontSize: 8.5, fontWeight: 800, letterSpacing: "1.2px", textTransform: "uppercase",
+                color: "var(--muted)", fontFamily: "var(--font-mono, monospace)",
+                padding: "2px 7px", borderRadius: 5, background: "var(--border)", whiteSpace: "nowrap", flexShrink: 0,
+              }}>
+                {th ? "ธุรกิจ" : "Business"}
+              </span>
+              <span style={{ fontSize: 12.5, color: "#cbd5e1", lineHeight: 1.6, flex: 1, minWidth: 200 }}>
+                {baseReport.companyDescription}
+              </span>
+            </div>
+          )}
+
+          {/* Thesis — why it's interesting */}
+          <div style={{ display: "flex", gap: 8, alignItems: "baseline", flexWrap: "wrap", position: "relative" }}>
+            <span style={{
+              fontSize: 8.5, fontWeight: 800, letterSpacing: "1.2px", textTransform: "uppercase",
+              color: verdictColor, fontFamily: "var(--font-mono, monospace)",
+              padding: "2px 7px", borderRadius: 5, background: `${verdictColor}1c`, whiteSpace: "nowrap", flexShrink: 0,
+            }}>
+              {th ? "ทำไมน่าสนใจ" : "Thesis"}
+            </span>
+            <p style={{ fontSize: 13, color: "#94a3b8", lineHeight: 1.75, margin: 0, flex: 1, minWidth: 200 }}>{report.summary}</p>
+          </div>
         </div>
 
         {/* Verdict — promoted directly under hero, large & prominent */}

@@ -14,14 +14,29 @@ Every analysis follows a strict research-first workflow before generating any ou
 3. **Entry strategy is mandatory** — every report includes 3 entry levels, TP1/TP2/TP3, stop loss, and one-line verdict
 4. **Cite sources** — list URLs used at the bottom of every report
 5. **No financial advice disclaimer** — always append "Not financial advice"
+6. **Score is computed, not hand-set** — the `score` field is derived deterministically by `web/lib/scoring.ts` (`computeScore`) from grounded fields (verdict, analyst targets, scenarios, entry R/R, catalysts, Fed risk). It is recomputed at load time, so any value written into the JSON is advisory only. Fill the grounded fields accurately and the score follows. Same inputs → same score.
+7. **Reports must be sourced** — `sources[]` needs ≥1 real URL (≥2 preferred); `comparableCases` and `catalystSpot` historical averages must trace to sources / `exampleDate`. `scripts/validate-reports.mjs` enforces this and blocks `push-report.sh` on violations.
+8. **Primary catalyst needs a date** — set `catalystDate` (ISO `YYYY-MM-DD`) on at least the nearest catalyst. The dashboard sorts by catalyst proximity and warns on event-day clusters; a pick with no dated catalyst sinks to the bottom (it isn't a near-term catalyst play). Falls back to parsing `dateBadge` if `catalystDate` is omitted.
 
 ## Available slash commands
 - `/analyze <TICKER>` — full single-stock report → saves JSON to web + git push → Vercel deploys
 - `/preview <TICKER>` — full single-stock report → generates HTML only for local viewing · **no JSON save · no git push**
-- `/dashboard` — find 5 stocks with 30%+ upside (Tech/AI/Space/Semiconductors/Robotics first) → save JSON reports for each → git push
+- `/dashboard` — find 5 stocks with 30%+ upside (Tech/AI/Space/Semiconductors/Robotics first) → save JSON reports for each → **log runners-up to `web/data/near-misses.json`** (counterfactual) → git push
 - `/compare <TICKER1> <TICKER2>` — side-by-side comparison of two stocks
 - `/watchlist <TICKER1> <TICKER2> ...` — quick scorecard table for multiple tickers
 - `/macro` — standalone Fed/macro snapshot (FOMC, CPI, jobs, yield)
+- `/todo <item>` — append an improvement/backlog item to `IMPROVEMENT_BACKLOG.md` (see below)
+
+## /todo — append to IMPROVEMENT_BACKLOG.md
+
+When the user types `/todo <item>` — or asks in any phrasing to "add to TodoList / backlog / เพิ่มใน todo / จดไว้" — append the item to `IMPROVEMENT_BACKLOG.md` (NOT a session-only task list, so it survives across sessions).
+
+Rules:
+1. Append as a new `## <n>. <title>` section under the numbered list, continuing the existing numbering.
+2. Always capture enough so it can be picked up cold later: include **ปัญหา** (why it matters), **ทำ** (what to do), **ไฟล์** (relevant files — go look them up in the repo, don't guess), and **เป้า** (done = what).
+3. If the user only gives a one-liner, ask nothing — infer the files/intent from the codebase and fill the 4 fields yourself.
+4. Keep the "ยังไม่เลือกทำ" section at the bottom; insert chosen items above it.
+5. Confirm in one line: `✅ added to backlog → <title>`.
 
 ---
 
@@ -68,6 +83,7 @@ The JSON must follow this exact TypeScript type (StockReport in web/lib/types.ts
       "description": "Description of catalyst",
       "urgencyLabel": "2 DAYS",
       "dateBadge": "Jun 20, 2026",
+      "catalystDate": "2026-06-20",
       "badgeColor": "red",
       "dotColor": "yellow"
     }

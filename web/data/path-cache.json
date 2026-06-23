@@ -1,0 +1,3 @@
+{
+  "_note": "Daily price path for the first 14 days after each report (key: TICKER_YYYYMMDD → [{d:ISO, c:close}]). Populated by scripts/fetch-backtest-prices.mjs. Powers the North Star: did '+30% within 14d' actually happen, and what was the max adverse excursion (MAE) along the way."
+}

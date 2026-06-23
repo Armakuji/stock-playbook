@@ -8,6 +8,9 @@ export interface Catalyst {
   urgencyLabel?: string;
   /** Date string shown as a colored pill, e.g. "Jun 17, 2026" */
   dateBadge?: string;
+  /** Machine-readable event date (ISO YYYY-MM-DD). Drives timing sort & clustering;
+   *  falls back to parsing dateBadge when omitted. Set this for the primary catalyst. */
+  catalystDate?: string;
   /** Color of the date pill */
   badgeColor?: "red" | "yellow" | "green" | "blue";
   /** Color of the left-side dot indicator */
@@ -217,6 +220,16 @@ export interface ComparableCase {
   note: string;
 }
 
+// ─── Score breakdown ─────────────────────────────────────────────────────────
+// One line of the deterministic score derivation (see web/lib/scoring.ts).
+
+export interface ScoreComponent {
+  label: string;     // e.g. "Analyst upside"
+  points: number;    // contribution toward the 0–100 total
+  max: number;       // max this component can contribute
+  detail: string;    // human-readable basis, e.g. "+38% to median $165"
+}
+
 // ─── Main Report ─────────────────────────────────────────────────────────────
 
 export interface StockReport {
@@ -234,6 +247,11 @@ export interface StockReport {
   verdict: "BUY" | "HOLD" | "SELL" | "SPECULATIVE";
   scoreLabel?: string;      // e.g. "Core Holding", "ค่าขนม", "Speculative"
   score?: number;
+  /** Deterministic score derivation — attached at load time by withComputedScore() */
+  scoreBreakdown?: ScoreComponent[];
+  /** Optional explicit factor tags (e.g. "ai_semi", "long_duration_rate"); the rest
+   *  are derived in web/lib/factors.ts for correlated-risk warnings. */
+  factorTags?: string[];
   summary: string;
   catalysts: Catalyst[];
   risks: string[];

@@ -6,6 +6,8 @@ Priority sectors: Tech → AI → Space → then any sector.
 Filter: price > $5, clear near-term catalyst (earnings, FDA, contract, partnership), strong momentum.
 Pick 5 tickers. If Tech/AI/Space has 5 candidates, use those. If fewer, fill remaining from other sectors.
 
+**Log near-misses:** for every candidate that passed the filter but did NOT make the top 5, append an object to `web/data/near-misses.json` → `nearMisses[]`: `{ screenDate (YYYYMMDD), ticker, companyName, screenPrice, screenUpsidePct, verdictAtScreen, catalystType, reason }`. This is the counterfactual that proves whether the top-5 cut adds alpha — do NOT skip it.
+
 ## Step 2 — Quick Research (per ticker, keep it tight)
 For each ticker search "[TICKER] stock price target analyst 2026":
 - Current price + % change today

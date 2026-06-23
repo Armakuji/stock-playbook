@@ -2,6 +2,10 @@
 
 import Link from "next/link";
 import { StockReport } from "@/lib/types";
+import { marketCapTier } from "@/lib/market-cap";
+import { daysToCatalyst, timingTier } from "@/lib/catalyst-timing";
+
+const TIER_COLOR = ["#ef4444", "#f59e0b", "#3b82f6", "#64748b"];
 
 const VERDICT_COLORS: Record<StockReport["verdict"], string> = {
   BUY: "#10b981", HOLD: "#f59e0b", SELL: "#ef4444", SPECULATIVE: "#8b5cf6",
@@ -159,6 +163,9 @@ export function StockCard({ report, rank, rankScore, scoreDrift = null }: {
   const riskColor    = RISK_COLORS[report.macroRisk.fedRisk] ?? "#64748b";
   const isPositive   = report.priceChange >= 0;
   const rankMeta     = RANK_META[rank];
+  const cap          = marketCapTier(report.marketCap);
+  const dToc         = daysToCatalyst(report);
+  const tocColor     = TIER_COLOR[timingTier(dToc)];
 
   return (
     <Link href={`/report/${report.ticker}`} style={{ textDecoration: "none" }}>
@@ -212,9 +219,9 @@ export function StockCard({ report, rank, rankScore, scoreDrift = null }: {
           </div>
         </div>
 
-        {/* Row 2: ticker + verdict + company */}
+        {/* Row 2: ticker + verdict (the call) · company · meta chips (the facts) */}
         <div style={{ marginBottom: 10 }}>
-          <div style={{ display: "flex", alignItems: "baseline", gap: 8, marginBottom: 3 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 3, flexWrap: "wrap" }}>
             <span style={{
               fontSize: 22, fontWeight: 800, color: "var(--text)",
               fontFamily: "var(--font-display, sans-serif)", letterSpacing: "-0.5px",
@@ -230,6 +237,36 @@ export function StockCard({ report, rank, rankScore, scoreDrift = null }: {
             </span>
           </div>
           <div style={{ fontSize: 11, color: "var(--muted)" }}>{report.companyName}</div>
+
+          {/* Static facts: cap size + days-to-catalyst — kept off the headline line */}
+          {(cap || dToc !== null) && (
+            <div style={{ display: "flex", alignItems: "center", gap: 6, marginTop: 7, flexWrap: "wrap" }}>
+              {cap && (
+                <span
+                  title={`${cap.label} · ${report.marketCap ?? ""}`}
+                  style={{
+                    fontSize: 9, fontWeight: 800, padding: "2px 7px", borderRadius: 5,
+                    background: cap.bg, color: cap.color, border: `1px solid ${cap.color}3a`,
+                    letterSpacing: "0.5px", whiteSpace: "nowrap", fontFamily: "var(--font-mono, monospace)",
+                  }}
+                >
+                  {cap.short}
+                </span>
+              )}
+              {dToc !== null && (
+                <span
+                  title="Days to next catalyst"
+                  style={{
+                    fontSize: 9, fontWeight: 800, padding: "2px 7px", borderRadius: 5,
+                    background: `${tocColor}1c`, color: tocColor, border: `1px solid ${tocColor}3a`,
+                    letterSpacing: "0.5px", whiteSpace: "nowrap", fontFamily: "var(--font-mono, monospace)",
+                  }}
+                >
+                  ⏱ {dToc <= 0 ? "today" : `${dToc}d`}
+                </span>
+              )}
+            </div>
+          )}
         </div>
 
         {/* Row 3: price + change */}

@@ -1,4 +1,6 @@
 import { StockReport } from "./types";
+import { computeScore } from "./scoring";
+import { daysToCatalyst, timingTier } from "./catalyst-timing";
 
 const VERDICT_SCORE: Record<StockReport["verdict"], number> = {
   BUY: 40,
@@ -24,7 +26,9 @@ const FED_RISK_SCORE: Record<string, number> = {
 export function computeRankScore(report: StockReport): number {
   const verdictPts = VERDICT_SCORE[report.verdict] ?? 0;
   const fedPts = FED_RISK_SCORE[report.macroRisk.fedRisk] ?? 0;
-  const scorePts = report.score != null ? (report.score / 100) * 20 : 10;
+  // Use the deterministic score so ranking is reproducible regardless of any
+  // hand-set value in the JSON (see web/lib/scoring.ts).
+  const scorePts = (computeScore(report).score / 100) * 20;
   const momentumPts = report.priceChange > 0 ? Math.min(report.priceChange, 10) : 0;
   const tp2Upside =
     ((report.entryStrategy.tp2.price - report.price) / report.price) * 100;
@@ -34,8 +38,15 @@ export function computeRankScore(report: StockReport): number {
 }
 
 export function rankReports(reports: StockReport[]): (StockReport & { rank: number; rankScore: number })[] {
+  // Primary sort = catalyst proximity (this is a near-term catalyst hunter),
+  // secondary = conviction rankScore. Soft tiers, not a hard filter.
   return reports
     .map((r) => ({ ...r, rankScore: computeRankScore(r) }))
-    .sort((a, b) => b.rankScore - a.rankScore)
+    .sort((a, b) => {
+      const ta = timingTier(daysToCatalyst(a));
+      const tb = timingTier(daysToCatalyst(b));
+      if (ta !== tb) return ta - tb;          // nearer catalyst first
+      return b.rankScore - a.rankScore;        // then by conviction
+    })
     .map((r, i) => ({ ...r, rank: i + 1 }));
 }
