@@ -1,0 +1,264 @@
+{
+  "ticker": "RKLB",
+  "companyName": "Rocket Lab USA, Inc.",
+  "companyDescription": "Space Launch + Systems · Only at-scale public small/medium launch company outside SpaceX — Electron rocket (LEO workhorse) + Neutron in dev + space systems components. Picks & shovels of the commercial + defense space era.",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-23T00:00:00.000Z",
+  "price": 96.00,
+  "priceChange": -4.7,
+  "priceNote": "Jun 23 pre-mkt $95.59 (-4.7%) from $100.29 Jun 22 close — down ~36% from ATH $151 (late May) on SpaceX IPO capital rotation + SVP insider selling $9.5M Jun 18. NOW touching preferred entry zone.",
+  "marketCap": "$55.6B",
+  "sector": "Industrials / Aerospace & Defense",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 74,
+  "summary": "Rocket Lab is the only publicly-traded at-scale launch + space systems company beyond SpaceX. Revenue growing 52% YoY to ~$916M est FY2026, gross margins expanding from 34% → 40%+. The Jun 2026 selloff (-36% from ATH) is SpaceX IPO capital rotation — NOT fundamental deterioration. Q2 earnings Aug 6 and pending Nasdaq-100 inclusion are near-term re-rating catalysts. Insider selling (SVP $9.5M Jun 18) is the primary watch risk.",
+  "catalysts": [
+    {
+      "icon": "🚀",
+      "name": "Q2 2026 Earnings",
+      "description": "Q2 results Aug 6 — revenue ramp toward $916M FY target + gross margin expansion to 40%+ are the re-rating triggers. Consensus expects continued beat-and-raise trajectory. 12 Strong Buy / 3 Buy from 19 analysts.",
+      "urgencyLabel": "44 DAYS",
+      "dateBadge": "Aug 6, 2026",
+      "catalystDate": "2026-08-06",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📈",
+      "name": "Nasdaq-100 Inclusion",
+      "description": "Cantor Fitzgerald flagged Nasdaq-100 inclusion as 'the next big catalyst' — forces passive ETF buying at scale. Market cap now ~$55B qualifies. Timeline TBD but expected H2 2026.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-09-15",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "🛸",
+      "name": "Neutron Medium-Lift Milestone",
+      "description": "Neutron (13,000 kg LEO, reusable) development update expected H2 2026. Success milestones expand TAM from small → medium-lift, opening DoD + commercial constellation contracts.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-10-01",
+      "badgeColor": "green",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Insider selling: SVP disposed $9.5M shares Jun 18 — unusual for a bull thesis, signals possible further pressure",
+    "SpaceX SPCX IPO capital siphon: investors now have direct SpaceX access; long-term reallocation risk from RKLB",
+    "Pre-profit with negative FCF (-$270M FY2025) — vulnerable to rate-stays-higher-longer scenario",
+    "Wells Fargo bear PT $60 (-38% from current) on valuation compression thesis",
+    "Neutron rocket delays could disappoint growth investors expecting medium-lift revenue ramp"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q2 2026 Earnings",
+      "dateRange": "Aug 6, 2026",
+      "note": "Revenue ramp + gross margin expansion — the key re-rating read",
+      "est": "est. $220M+ rev",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -25, "price": 72 },
+    { "label": "Base", "color": "yellow", "pct": 40, "price": 134 },
+    { "label": "Bull", "color": "green", "pct": 56, "price": 150 },
+    { "label": "Moon", "color": "purple", "pct": 82, "price": 175 }
+  ],
+  "analystTargets": [
+    { "firm": "KeyBanc", "target": 135, "rating": "Buy" },
+    { "firm": "Stifel Nicolaus", "target": 132, "rating": "Buy" },
+    { "firm": "Clear Street", "target": 129, "rating": "Buy" },
+    { "firm": "Cantor Fitzgerald", "target": 120, "rating": "Buy" },
+    { "firm": "Wells Fargo", "target": 60, "rating": "Hold" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed holding at 4.25–4.50% through mid-2026; 1-2 cuts expected H2 2026 — a tailwind for pre-profit growth names like RKLB",
+    "inflationNote": "CPI trending toward 2.5% target; services sticky but goods deflation ongoing. PCE data key for timing first cut.",
+    "sectorImpact": "Space sector is dual-driver: defense contracts (rate-insensitive, ~40% RKLB revenue) + commercial launch (growth sentiment). Rate cuts in H2 benefit RKLB valuation multiple expansion significantly given pre-profit status.",
+    "summary": "MEDIUM Fed risk — RKLB burns cash (-$270M FCF) making it rate-sensitive, but defense revenue proportion provides cushion. H2 2026 cut thesis is a net tailwind for re-rating."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 90,
+        "rangeMax": 100,
+        "note": "Current zone — SpaceX IPO selloff at/near bottom. Pre-mkt $95.59 = at preferred zone today",
+        "timing": "Now",
+        "preferred": true
+      },
+      {
+        "label": "Entry 2",
+        "level": 80,
+        "rangeMax": 88,
+        "note": "Deeper dip / pre-earnings accumulation zone if market-wide selloff continues",
+        "timing": "If dips"
+      },
+      {
+        "label": "Entry 3",
+        "level": 70,
+        "note": "Near structural support / bear-case entry. Only if macro deteriorates significantly.",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": { "price": 120, "pct": 25.0, "note": "Mean reversion from IPO-selloff; first resistance" },
+    "tp2": { "price": 135, "pct": 40.6, "note": "KeyBanc PT — post-earnings re-rating target" },
+    "tp3": { "price": 150, "pct": 56.2, "note": "Stifel PT / ATH retest · Neutron milestone H2 2026", "moon": false },
+    "stopLoss": {
+      "tight": 82,
+      "tightPct": -14.6,
+      "tightNote": "Below recent support; if broken = capital rotation becoming structural, not temporary",
+      "hard": 70,
+      "hardPct": -27.1,
+      "hardNote": "Pre-rally structural support — thesis invalidated if broken",
+      "riskReward": "2.8 : 1",
+      "rrNote": "Entry $96 vs TP2 $135 / tight SL $82",
+      "rrWarning": "Acceptable R/R for Speculative"
+    },
+    "verdict": "Buy the SpaceX IPO selloff at preferred zone — fundamentals intact, capital rotation is temporary, Aug 6 earnings is the re-rating trigger. Scale in; don't lump sum given insider selling overhang.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "RKLB historically runs 8–15% in the 2–3 weeks before earnings as whisper numbers and backlog updates circulate. Revenue beat + gross margin print is the expected narrative heading into Aug 6.",
+    "preRunupTiming": "2–3 สัปดาห์ก่อน earnings (mid-July 2026)",
+    "preRunupPct": "+8–15%",
+    "postWin": {
+      "avgPct": 18,
+      "range": "+12% to +28%",
+      "note": "RKLB Q3 2025 earnings beat moved +18% over 3 trading days. Q1 2026 had initial -16% selloff on EBITDA miss vs estimates, but recovered +28% within 3 weeks from the low — showing strong hands absorb earnings dips.",
+      "exampleDate": "Q3 2025 · Nov 2025"
+    },
+    "postLose": {
+      "avgPct": -15,
+      "range": "-10% to -22%",
+      "note": "Q1 2026 initial reaction -16% when EBITDA missed Street estimates despite revenue beat. Worst-case if Q2 revenue misses + guidance cut = -20% from entry.",
+      "exampleDate": "Q1 2026 · May 2026"
+    },
+    "spotSizing": {
+      "pct": 7,
+      "reason": "Speculative label + insider selling headwind + pre-profit → 7% spot sizing. Not a Core Holding until profitability path clearer. Scale in across Entry 1 + Entry 2 zones."
+    },
+    "stopPreCatalyst": {
+      "pct": -15,
+      "price": 82,
+      "note": "หลุด $82 ก่อน earnings = thesis เปลี่ยน — capital rotation ถาวรจาก SpaceX IPO ออกทันที"
+    },
+    "stopPostCatalyst": {
+      "pct": -18,
+      "note": "ถ้า earnings miss + guidance cut ออกที่ -18% จาก post-earnings peak ไม่ถือรอ recovery"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "RKLB",
+      "event": "Q3 2025 Earnings Beat",
+      "date": "Nov 2025",
+      "movePct": 18,
+      "days": 3,
+      "outcome": "good",
+      "note": "Revenue + gross margin both beat consensus; stock moved +18% in 3 trading days. Comparable because Q2 2026 expected to show same beat-and-raise pattern with $220M+ revenue and 40%+ gross margins."
+    },
+    {
+      "ticker": "RKLB",
+      "event": "SpaceX Starship Explosion + RKLB single-day surge",
+      "date": "May 2026",
+      "movePct": 14,
+      "days": 1,
+      "outcome": "good",
+      "note": "RKLB surged +13.9% on the day SpaceX Starship exploded in May 2026 — demonstrates that RKLB is the direct beneficiary of SpaceX setbacks. The current SpaceX IPO selloff is the inverse, but fundamental driver remains unchanged."
+    },
+    {
+      "ticker": "ASTS",
+      "event": "Post-sector selloff recovery (J-LEO launch delay pressure)",
+      "date": "Apr 2026",
+      "movePct": 22,
+      "days": 14,
+      "outcome": "good",
+      "note": "Space sector selloffs driven by external events (competitor news, capital rotation) have historically reversed within 4–6 weeks when company fundamentals remain intact. RKLB SpaceX IPO selloff = same pattern, suggesting 4–6 week recovery window toward earnings."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Rocket Lab stock has plunged 30% from highs — here's why (SpaceX IPO capital rotation)",
+    "url": "https://www.tipranks.com/news/rocket-lab-rklb-stock-has-plunged-30-from-highs-heres-why",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/rklb/",
+    "https://stockanalysis.com/stocks/rklb/forecast/",
+    "https://www.tipranks.com/news/rocket-lab-rklb-key-executive-offloads-9-5m-in-shares-in-latest-insider-move",
+    "https://www.tipranks.com/news/rocket-lab-rklb-stock-has-plunged-30-from-highs-heres-why",
+    "https://invezz.com/news/2026/06/16/analyst-says-buy-these-two-space-stocks-amid-spacex-driven-sell-off/",
+    "https://www.tipranks.com/news/rocket-lab-stock-rises-as-keybanc-upgrades-to-buy-says-rklb-is-the-clear-2-to-spcx"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Rocket Lab คือบริษัทเดียวที่ขึ้น orbit ได้ในระดับ small-to-medium launch ในตลาดหลักทรัพย์ (นอก SpaceX) — revenue โต 52% YoY สู่ $916M est FY2026 และ gross margin ขยายสู่ 40%+ ราคาลง 36% จาก ATH เพราะ SpaceX IPO ดึงเงินออก ไม่ใช่ fundamental เสีย ตอนนี้ราคาแตะ preferred entry zone แล้ว Q2 earnings 6 ส.ค. คือ catalyst re-rating หลัก",
+      "priceNote": "Jun 23 pre-mkt $95.59 ลง 4.7% จาก $100.29 close เมื่อวาน — อยู่ใน preferred entry zone แล้ว",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        {
+          "name": "งบ Q2 2026",
+          "description": "6 ส.ค. — revenue และ gross margin expansion เป็น catalyst หลัก คาด $220M+ revenue และ gross margin 40%+"
+        },
+        {
+          "name": "เข้า Nasdaq-100",
+          "description": "Cantor Fitzgerald ระบุว่าเป็น catalyst ถัดไปที่ใหญ่ที่สุด — บังคับให้ passive ETF เข้าซื้อ RKLB โดยอัตโนมัติ"
+        },
+        {
+          "name": "Neutron rocket milestone",
+          "description": "H2 2026 — อัปเดต progress จรวด Neutron ที่ targets 13,000 kg LEO จะขยาย TAM สู่ medium-lift ได้"
+        }
+      ],
+      "risks": [
+        "Insider selling — SVP ขาย $9.5M ใน Jun 18 ผิดปกติสำหรับ bull thesis",
+        "SpaceX IPO ทำให้ investor มี direct access SpaceX แล้ว — อาจ reallocate ออกจาก RKLB ระยะยาว",
+        "Pre-profit + burn cash $270M — ไม่ดีถ้า rate ค้างสูงกว่าคาด",
+        "Wells Fargo PT $60 = downside 38% จากราคาปัจจุบัน",
+        "Neutron ล่าช้าจะกดดัน growth multiple"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง rate ถึง mid-2026 — คาด 1-2 ลด H2 บวกกับ valuation multiple ของ pre-profit growth name",
+        "inflationNote": "CPI ใกล้ target 2.5% แล้ว goods deflation ช่วย แต่ services ยัง sticky",
+        "sectorImpact": "Space sector มีทั้ง defense (ไม่ sensitive rate, ~40% revenue) + commercial (sensitive rate) — rate cut H2 เป็น tailwind สำหรับ RKLB",
+        "summary": "MEDIUM risk — defense revenue ช่วย cushion แต่ burn cash ทำให้ยังต้องระวัง rate scenario"
+      },
+      "entryStrategy": {
+        "verdict": "ซื้อช่วง SpaceX IPO selloff ที่ preferred zone ตอนนี้ — fundamental ยังดี capital rotation เป็น temporary ใช้ Scale In ไม่ lump sum เพราะ insider selling overhang Aug 6 คือ trigger re-rating",
+        "entryLevels": [
+          {
+            "note": "Zone ปัจจุบัน — pre-mkt $95.59 แตะ preferred zone แล้ว ซื้อ partial ได้",
+            "timing": "ตอนนี้"
+          },
+          {
+            "note": "Dip zone ลึกกว่า — สะสมเพิ่มก่อน earnings กรณีตลาดร่วงต่อ",
+            "timing": "ถ้าร่วง"
+          },
+          {
+            "note": "Support โครงสร้างแข็งแกร่ง — เข้าได้ถ้า macro แย่ลงมาก",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": { "note": "Mean reversion จาก IPO selloff กลับสู่ level ก่อนถูก siphon" },
+        "tp2": { "note": "KeyBanc PT — re-rating หลัง Q2 earnings beat" },
+        "tp3": { "note": "Stifel PT / retest ATH หลัง Neutron milestone" },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า support ปัจจุบัน — ถ้าหลุด = capital rotation ถาวรไม่ใช่ temporary",
+          "hardNote": "Support โครงสร้างก่อน rally ใหญ่ — thesis หลุดถ้าต่ำกว่านี้",
+          "rrNote": "Entry $96 vs TP2 $135 / tight SL $82",
+          "rrWarning": "R/R ดีพอสำหรับ Speculative"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "งบ Q2 2026",
+          "note": "Revenue ramp + gross margin expansion — key re-rating trigger ที่ตลาดรอดู"
+        }
+      ]
+    }
+  }
+}
