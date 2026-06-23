@@ -1,0 +1,333 @@
+{
+  "ticker": "LUNR",
+  "companyName": "Intuitive Machines, Inc.",
+  "companyDescription": "Space Infrastructure · Lunar landers + cislunar communications + national security space — transitioning from moon-lander story to space-to-Earth communications platform with $1.1B backlog",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-23T00:00:00.000Z",
+  "price": 21.69,
+  "priceChange": -2.1,
+  "priceNote": "Consolidating at $21-22 after analyst upgrades — 52-week range wide, Clear Street upgraded to top pick for 2026",
+  "marketCap": "$4.76B",
+  "sector": "Technology / Space",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 74,
+  "summary": "Intuitive Machines delivered record Q1 2026 revenue of $186.7M (up ~3x YoY) with $1.1B backlog — a $842M increase driven by Lanteris acquisition and new CLPS task orders. 2026 revenue guidance is $900M–$1B with positive adjusted EBITDA. With analyst consensus at $40.78 (+88% upside), Roth Capital at $50, and Clear Street calling LUNR its top pick for 2026, the space infrastructure thesis is compelling. Strategic acquisitions of Goonhilly + COMSAT add 44 antennas and deep-space ground assets, transforming LUNR into a cislunar communication platform.",
+  "catalysts": [
+    {
+      "icon": "🌙",
+      "name": "Golden Dome — National Security Space Contracts",
+      "description": "LUNR secured a contract under Andromeda IDIQ with US Space Force, ceiling value $6.24B. Golden Dome initiative driving multi-year national security space infrastructure demand. NASA + DoD backlog at $1.1B.",
+      "urgencyLabel": "MAJOR",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    },
+    {
+      "icon": "📡",
+      "name": "Goonhilly + COMSAT Acquisitions",
+      "description": "Acquisitions of Goonhilly Earth Station (UK) and COMSAT add 44 antennas and deep-space communications assets in U.S. and UK — transforms LUNR into space-to-Earth communications platform beyond just lunar landers.",
+      "urgencyLabel": "2026",
+      "dateBadge": "Q3 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🚀",
+      "name": "NASA Lunar Terrain Vehicle + CLPS Missions",
+      "description": "NASA Lunar Terrain Vehicle contract and additional CLPS task orders moving through procurement. 60-65% of $1.1B backlog converting to 2026 revenue = $660M–$715M floor revenue.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "Late 2026",
+      "catalystDate": "2026-11-30",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "EPS miss on Q1 2026 — LUNR missed EPS consensus (net loss $0.25 vs consensus -$0.06) despite record revenue; profitability path uncertain",
+    "Mission execution risk — lunar landing failures (IM-1 tipped over on landing) create contract risk and public perception issues",
+    "Government contract timing uncertainty — NASA + DoD procurement cycles can shift revenue recognition quarters",
+    "High valuation for pre-profit company — any revenue guidance reduction triggers sharp derating"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q2 2026 Earnings",
+      "dateRange": "Aug 2026",
+      "note": "Revenue ramp read — 2026 guide $900M-$1B",
+      "est": "est. $220M+ rev",
+      "highlight": "blue"
+    },
+    {
+      "event": "Space Force IDIQ Awards",
+      "dateRange": "Q3 2026",
+      "note": "Andromeda IDIQ ceiling $6.24B — any task order = catalyst",
+      "est": "Task order TBD",
+      "highlight": "yellow"
+    },
+    {
+      "event": "TP1 Target",
+      "dateRange": "Sep 2026",
+      "note": "Clear Street target zone",
+      "est": "$44",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -35,
+      "price": 14
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 88,
+      "price": 41
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 131,
+      "price": 50
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 246,
+      "price": 75
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Roth Capital",
+      "target": 50,
+      "rating": "Buy"
+    },
+    {
+      "firm": "B. Riley",
+      "target": 45,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Clear Street",
+      "target": 44,
+      "rating": "Buy (Top Pick 2026)"
+    },
+    {
+      "firm": "Consensus Average",
+      "target": 41,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Consensus Low",
+      "target": 11,
+      "rating": "Hold"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Government space contracts are multi-year, funded by congressional appropriations — largely independent of Fed rate cycles",
+    "inflationNote": "Space infrastructure costs are largely labor and specialized hardware — moderate inflation exposure. National security funding is inflation-protected.",
+    "sectorImpact": "Space sector re-rating underway as Golden Dome, Artemis, and commercial space commerce expand. LUNR is direct beneficiary of US government space infrastructure push.",
+    "summary": "Fed risk LOW — LUNR revenue is government-contract-driven (NASA + DoD + Space Force). Appropriations-funded contracts are rate-insensitive. Main risks are mission execution and EPS trajectory, not macro."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 21.69,
+        "note": "Current price — consolidating after analyst upgrade cycle",
+        "timing": "Now"
+      },
+      {
+        "label": "Entry 2",
+        "level": 18,
+        "rangeMax": 20,
+        "note": "Support zone — pre-analyst upgrade level",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 14,
+        "note": "Deep dip — bear case territory, thesis re-evaluation needed",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 44,
+      "pct": 102.8,
+      "note": "Clear Street top pick target"
+    },
+    "tp2": {
+      "price": 50,
+      "pct": 130.5,
+      "note": "Roth Capital bull case — CLPS + national security wins"
+    },
+    "tp3": {
+      "price": 75,
+      "pct": 245.9,
+      "note": "Moon case · 2027 if Andromeda IDIQ + Golden Dome contracts materialize",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 16,
+      "tightPct": -26,
+      "tightNote": "Below $18 support — government contract delay signal",
+      "hard": 12,
+      "hardPct": -45,
+      "hardNote": "Mission failure or major contract loss — thesis broken",
+      "riskReward": "3.2 : 1",
+      "rrNote": "Tight stop vs TP1",
+      "rrWarning": "High R/R — government-funded backlog reduces downside"
+    },
+    "verdict": "Buy in tranches — 88% average analyst upside with $1.1B backlog provides downside support. Size as speculative position given EPS miss history.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "LUNR historically runs 20-40% when large NASA or DoD contract announcements come through. Space sector momentum stocks move fast on government award news — any Andromeda IDIQ task order or Golden Dome contract will spike the stock.",
+    "preRunupTiming": "ภายใน 1-2 วันของ contract announcement",
+    "preRunupPct": "+20–40% on major contract win",
+    "postWin": {
+      "avgPct": 30,
+      "range": "+15% to +50%",
+      "note": "LUNR +35% in 1 week when Lanteris acquisition + $429M new awards announced (Q1 2026). Pattern: contract win + backlog growth = sharp re-rating. Clear Street upgraded to $44 after Q1 results drove +18% same day.",
+      "exampleDate": "May 2026"
+    },
+    "postLose": {
+      "avgPct": -25,
+      "range": "-15% to -40%",
+      "note": "IM-1 lunar lander tipped over on landing (Feb 2024) dropped -35% as mission partial failure. Mission execution risk is the key bear case for LUNR.",
+      "exampleDate": "Feb 2024"
+    },
+    "spotSizing": {
+      "pct": 6,
+      "reason": "Speculative 74/100 — $1.1B backlog gives confidence but EPS losses and mission risk limit sizing. Max 6% of portfolio. Scale in on dips."
+    },
+    "stopPreCatalyst": {
+      "pct": -20,
+      "price": 17,
+      "note": "ถ้าหลุด $17 = government contract timing shift หรือ mission concern ออกก่อน"
+    },
+    "stopPostCatalyst": {
+      "pct": -25,
+      "note": "ถ้า mission failure หรือ major contract loss ออกทันที"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "LUNR",
+      "event": "Lanteris acquisition + $429M new awards announced",
+      "date": "May 2026",
+      "movePct": 35,
+      "days": 5,
+      "outcome": "good",
+      "note": "Backlog jumped to $1.1B after Lanteris deal. Clear Street upgraded to Top Pick 2026. Space infrastructure re-rating underway — backlog visibility is the key re-rating catalyst."
+    },
+    {
+      "ticker": "RKT",
+      "event": "Rocket Lab RKLB re-rated on Neutron launch contract wins",
+      "date": "Jan 2026",
+      "movePct": 45,
+      "days": 30,
+      "outcome": "good",
+      "note": "RKLB re-rated from launcher to space infrastructure — similar to LUNR's transition from lunar lander to cislunar communications platform. Multi-contract backlog = multiple expansion."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Intuitive Machines Q1 2026 record revenue $186.7M, backlog $1.1B — Clear Street top pick, Roth Capital raises to $50",
+    "url": "https://www.stocktitan.net/news/LUNR/intuitive-machines-reports-first-quarter-2026-financial-results-zcbrjao1l7x0.html",
+    "date": "May 2026"
+  },
+  "sources": [
+    "https://www.stocktitan.net/news/LUNR/intuitive-machines-reports-first-quarter-2026-financial-results-zcbrjao1l7x0.html",
+    "https://stocktwits.com/news-articles/markets/equity/lunr-stock-eyes-third-week-of-gains-analyst-still-sees-upside/cZXlVYFReSD",
+    "https://tickeron.com/earnings/LUNR/",
+    "https://www.marketbeat.com/stocks/NASDAQ/LUNR/forecast/",
+    "https://finance.yahoo.com/quote/LUNR/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Intuitive Machines รายงาน Q1 2026 record revenue $186.7M (ขึ้น 3x YoY) backlog $1.1B เพิ่ม $842M จาก Lanteris acquisition และ CLPS task orders ใหม่ guidance 2026 $900M-$1B revenue พร้อม positive adjusted EBITDA Analyst consensus $40.78 (+88% upside) Roth Capital $50 Clear Street เรียก LUNR เป็น top pick ปี 2026 การซื้อ Goonhilly + COMSAT เปลี่ยน LUNR จาก lunar lander เป็น space-to-Earth communications platform",
+      "priceNote": "consolidate ที่ $21-22 หลัง analyst upgrade cycle — Clear Street upgrade เป็น top pick 2026",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        {
+          "name": "Golden Dome — National Security Space",
+          "description": "LUNR ได้ Andromeda IDIQ กับ US Space Force มูลค่า ceiling $6.24B Golden Dome initiative ดัน multi-year space infrastructure demand"
+        },
+        {
+          "name": "Goonhilly + COMSAT Acquisitions",
+          "description": "44 antennas เพิ่มใน US และ UK เปลี่ยน LUNR เป็น cislunar communications platform ไม่ใช่แค่ lunar lander"
+        },
+        {
+          "name": "NASA Lunar Terrain Vehicle + CLPS",
+          "description": "60-65% ของ backlog $1.1B convert เป็น 2026 revenue = $660M-$715M floor revenue"
+        }
+      ],
+      "risks": [
+        "EPS miss — Q1 2026 miss consensus EPS มาก (-$0.25 vs -$0.06 expected) เส้นทางสู่ profitability ยังไม่ชัด",
+        "Mission execution risk — lunar landing failure สร้าง contract risk",
+        "Government procurement timing ไม่แน่นอน — ขยับ revenue recognition ได้",
+        "High valuation สำหรับ pre-profit company"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Government space contracts multi-year appropriations-funded — ไม่ sensitive กับ Fed rate",
+        "inflationNote": "National security funding inflation-protected labor + hardware costs moderate",
+        "sectorImpact": "Space sector re-rating เกิดขึ้น — Golden Dome, Artemis, commercial space LUNR เป็น direct beneficiary",
+        "summary": "Fed risk ต่ำ — NASA + DoD contract-driven revenue ไม่ขึ้นกับ rate ความเสี่ยงหลักคือ mission execution และ EPS trajectory"
+      },
+      "entryStrategy": {
+        "verdict": "ซื้อแบบ tranches — analyst upside 88% เฉลี่ย backlog $1.1B ให้ downside support sizing เป็น speculative position เพราะ EPS ยังขาดทุน",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน consolidate หลัง analyst upgrade",
+            "timing": "ตอนนี้"
+          },
+          {
+            "note": "Support zone ระดับก่อน analyst upgrade",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ย่อลึก — ต้องพิจารณา thesis ใหม่",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Clear Street top pick target"
+        },
+        "tp2": {
+          "note": "Roth Capital bull case — CLPS + national security wins"
+        },
+        "tp3": {
+          "note": "Moon case · 2027 ถ้า Andromeda IDIQ + Golden Dome contracts materialise",
+          "moon": true
+        },
+        "stopLoss": {
+          "tightNote": "Below $18 support — government contract delay signal",
+          "hardNote": "Mission failure หรือ major contract loss — thesis broken",
+          "rrNote": "Tight stop vs TP1",
+          "rrWarning": "R/R สูง — government-funded backlog ลด downside"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "Q2 2026 Earnings",
+          "note": "อ่าน revenue ramp — guide 2026 $900M-$1B"
+        },
+        {
+          "event": "Space Force IDIQ Awards",
+          "note": "Andromeda ceiling $6.24B — task order ใดก็ตาม = catalyst"
+        },
+        {
+          "event": "เป้า TP1",
+          "note": "Clear Street target zone"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "ticker": "ASTS",
+  "companyName": "AST SpaceMobile, Inc.",
+  "companyDescription": "Satellite broadband · Direct-to-cell 4G/5G via LEO satellites — smartphones connect without towers",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-23T00:00:00.000Z",
+  "price": 73.00,
+  "priceChange": 5.0,
+  "priceNote": "Jun 23 · ↑5% today · BlueBird launch hype · Blue Origin recovery predicted H2 2026 · Barclays cut PT to $60",
+  "marketCap": "$28.3B",
+  "sector": "Technology / Space / Telecom",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 52,
+  "summary": "ASTS down from $79 to $73 as Barclays cut PT further to $60 (Underweight) and the stock continues fading from its $133 ATH. BlueBird 8/9/10 are successfully in orbit (Jun 17), and Blue Origin says it can resume launches by end-2026 — mitigating the key risk. Japan J-LEO award (Q3 2026) remains the binary catalyst that could reprice this stock by ±40%. Size is ค่าขนม only — no revenue, binary outcome.",
+  "catalysts": [
+    {
+      "icon": "🛰️",
+      "name": "BlueBird 8/9/10 — In Orbit ✅",
+      "description": "SpaceX Falcon 9 launched Jun 17 successfully. Nearly 2× peak data speeds vs Block 1. Commercial constellation now at ~10 satellites; target 45–60 by end-2026.",
+      "dotColor": "green",
+      "dateBadge": "Jun 17 ✅",
+      "badgeColor": "green",
+      "catalystDate": "2026-06-17"
+    },
+    {
+      "icon": "🇯🇵",
+      "name": "Japan J-LEO Award — Binary Event",
+      "description": "Multi-billion JPY contract with Rakuten / NTT Docomo. Decision expected Q3 2026. Win = +40%+, miss = -25%. Only reason to hold through the summer.",
+      "dotColor": "yellow",
+      "dateBadge": "Q3 2026",
+      "badgeColor": "yellow",
+      "urgencyLabel": "84 DAYS",
+      "catalystDate": "2026-09-15"
+    },
+    {
+      "icon": "🚀",
+      "name": "Blue Origin Recovery — H2 2026",
+      "description": "Jeff Bezos confirmed Blue Origin can resume New Glenn launches by end-2026. Relieves the biggest near-term concern: future ASTS satellite block launches via Blue Origin vehicle.",
+      "dotColor": "yellow",
+      "dateBadge": "H2 2026",
+      "badgeColor": "blue",
+      "catalystDate": "2026-12-15"
+    }
+  ],
+  "risks": [
+    "Blue Origin New Glenn explosion (May 29) — delays Block 3+ satellite launches; Q4 2026 timeline uncertain",
+    "Barclays Underweight PT $60 (cut from $65 on Jun 22) — latest analyst is bearish, valuation at $28B for pre-revenue company",
+    "Deutsche Bank downgraded to Hold PT $106 (Jun 9) — post-explosion thesis revision",
+    "No revenue yet — burn rate increasing; potential equity raise at $65–75 range would be dilutive",
+    "SpaceX Starlink T-Mobile direct competition — 300+ satellite head start, faster scaling",
+    "Japan J-LEO binary risk — miss = -25% from current levels",
+    "Satellite manufacturing yield — scaling from 10 to 45+ satellites untested at this speed"
+  ],
+  "estimateDates": [
+    {
+      "event": "Japan J-LEO Award Decision",
+      "dateRange": "Sep 15, 2026",
+      "note": "Binary event — win = +40%+, miss = -25%",
+      "highlight": "blue"
+    },
+    {
+      "event": "Q2 2026 Earnings",
+      "dateRange": "Aug 14, 2026",
+      "note": "First commercial activation metrics; subscription ramp read",
+      "highlight": "yellow"
+    },
+    {
+      "event": "Block 3 Satellite Launch",
+      "dateRange": "Q4 2026",
+      "note": "Blue Origin expected to resume; scale toward 45 satellites",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -45, "price": 40 },
+    { "label": "Base", "color": "yellow", "pct": 30, "price": 95 },
+    { "label": "Bull", "color": "green", "pct": 58, "price": 115 },
+    { "label": "Moon", "color": "purple", "pct": 105, "price": 150 }
+  ],
+  "analystTargets": [
+    { "firm": "Goldman Sachs", "target": 120, "rating": "Buy" },
+    { "firm": "Roth Capital", "target": 108, "rating": "Buy" },
+    { "firm": "Deutsche Bank", "target": 106, "rating": "Hold" },
+    { "firm": "Consensus (11)", "target": 82, "rating": "Hold" },
+    { "firm": "Barclays", "target": 60, "rating": "Underweight" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Rate environment irrelevant short-term — ASTS trades on binary satellite/contract catalysts, not DCF",
+    "inflationNote": "SpaceX Falcon 9 reusability keeps per-satellite launch cost falling. Blue Origin recovery adds optionality. No near-term inflation sensitivity.",
+    "sectorImpact": "Space sector immune to Fed policy; FCC spectrum regulation and launch vehicle availability are the only macro factors that matter here",
+    "summary": "Macro risk LOW — pure catalyst-driven, binary-outcome stock. Fed and rates have zero impact. Size accordingly: ค่าขนม only."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 73,
+        "note": "Current price — OK to hold/start small. But better R/R if you wait for Entry 2.",
+        "timing": "Hold / scale"
+      },
+      {
+        "label": "Entry 2",
+        "level": 62,
+        "rangeMax": 67,
+        "note": "Preferred zone — near Barclays bear PT, better risk-adjusted entry. Accumulate here.",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 52,
+        "note": "Deep bear capitulation — Barclays PT $60 and fear spike zone",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": { "price": 95, "pct": 30.1, "note": "Pre-launch highs reclaim / Base constellation value" },
+    "tp2": { "price": 115, "pct": 57.5, "note": "Japan J-LEO win scenario" },
+    "tp3": { "price": 150, "pct": 105.5, "note": "45-satellite global coverage · 2027", "moon": true },
+    "stopLoss": {
+      "tight": 56,
+      "tightPct": -13.8,
+      "tightNote": "Below Entry 2 zone ($62) — if thesis-level break before Japan award",
+      "hard": 48,
+      "hardPct": -26.2,
+      "hardNote": "Capitulation / thesis failure — no Japan award + Blue Origin delays compounding",
+      "riskReward": "5.6 : 1",
+      "rrNote": "From preferred Entry 2 ($65 mid) tight stop vs TP2 $115",
+      "rrWarning": "High R/R but binary — small size mandatory"
+    },
+    "verdict": "SPECULATIVE — ค่าขนม only (max 3% of portfolio). Japan J-LEO Q3 is the only reason to hold. Blue Origin recovery positive. If $62 breaks pre-catalyst → reduce. If Japan misses → exit immediately.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "satellite_launch + contract_win",
+    "preRunup": "ASTS has a pattern of massive pre-launch runs — BB2-7 ran from $10 → $27 (+170%) before launch. BB8-10 ran from $65 → $80+ pre-launch. Japan J-LEO rumor/pre-announcement could generate a similar run in Q3 before the official decision.",
+    "preRunupTiming": "2–4 weeks before catalyst announcement",
+    "preRunupPct": "+30–60%",
+    "postWin": {
+      "avgPct": 90,
+      "range": "+35% to +275%",
+      "note": "BB1 Apr 2024 → stock ran +200% in 2 weeks post-launch. BB2-7 Sep 2024 → +192% overall. Japan J-LEO win estimated +40%+ day-of based on Rakuten contract scale.",
+      "exampleDate": "Apr 2024"
+    },
+    "postLose": {
+      "avgPct": -25,
+      "range": "-18% to -40%",
+      "note": "Blue Origin explosion May 29, 2026 → ASTS -18% in 1 day. Japan J-LEO miss expected -25%+ given no revenue to cushion.",
+      "exampleDate": "May 2026"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "SPECULATIVE / ค่าขนม — binary Japan J-LEO outcome, Barclays PT $60 implies -17% downside from current, no revenue. Max 3% of portfolio. Can re-size to 5% if Japan win is confirmed."
+    },
+    "stopPreCatalyst": {
+      "pct": -15,
+      "price": 62,
+      "note": "Break below $62 before Japan award = institutional selling, low probability of win. Reduce exposure early."
+    },
+    "stopPostCatalyst": {
+      "pct": -20,
+      "note": "If Japan misses or commercial activation delayed → exit within 1 trading session. ASTS has no revenue to cushion downside."
+    }
+  },
+  "comparableCases": [
+    { "ticker": "GSAT", "event": "Apple satellite partnership announcement", "date": "Sep 2022", "movePct": 53, "days": 1, "outcome": "good", "note": "Globalstar +53% in 1 day after Apple deal — carrier partnership catalyst can be extreme. Comparable to ASTS Japan J-LEO win scenario with Rakuten/NTT Docomo." },
+    { "ticker": "ASTS", "event": "BlueBird 1 launch success + first direct-to-cell call", "date": "Apr 2024", "movePct": 100, "days": 14, "outcome": "good", "note": "ASTS itself +100%+ in 2 weeks after BB1 launch — template for Japan J-LEO win + commercial activation combo." },
+    { "ticker": "ASTS", "event": "Blue Origin New Glenn rocket explosion during hotfire test", "date": "May 2026", "movePct": -18, "days": 1, "outcome": "bad", "note": "ASTS crashed -18% in 1 day on Blue Origin explosion (key launch partner). Launch vehicle dependency is a real binary risk — position size must be small." }
+  ],
+  "rankChangeSource": {
+    "headline": "Barclays lowers ASTS price target to $60 from $65, maintains Underweight rating",
+    "url": "https://www.tipranks.com/news/the-fly/ast-spacemobile-price-target-lowered-to-60-from-65-at-barclays-thefly-news",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/asts/",
+    "https://www.tipranks.com/news/the-fly/ast-spacemobile-price-target-lowered-to-60-from-65-at-barclays-thefly-news",
+    "https://www.barrons.com/articles/blue-origin-launch-return-ast-spacemobile-stock-amazon-fb5274a6",
+    "https://www.timothysykes.com/news/ast-spacemobile-inc-asts-news-2026_06_17/",
+    "https://invezz.com/news/2026/05/29/ast-spacemobile-stock-crashes-on-blue-origin-disaster-buy-the-dip/",
+    "https://stockstotrade.com/news/ast-spacemobile-inc-asts-news-2026_06_23/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "ASTS ร่วงจาก $79 มาอยู่ที่ $73 หลัง Barclays ตัด PT ลงมาที่ $60 (Underweight) และหุ้นยังคงอ่อนตัวจาก ATH $133 BlueBird 8/9/10 ขึ้นวงโคจรสำเร็จแล้ว (17 มิ.ย.) และ Blue Origin บอกสามารถกลับมาปล่อยจรวดได้ภายในปลายปี 2026 ช่วยลด risk หลัก Japan J-LEO (Q3 2026) คือ binary catalyst ที่จะกำหนดทิศทาง ±40% ลงทุนแค่ค่าขนม — ยังไม่มีรายได้ ผลลัพธ์แบบ binary",
+      "priceNote": "Jun 23 · ↑5% วันนี้ · กระแส BlueBird launch · Blue Origin คาดกลับมา H2 2026 · Barclays ตัด PT เหลือ $60",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "🛰️ BlueBird 8/9/10 — อยู่ในวงโคจรแล้ว ✅", "description": "SpaceX Falcon 9 ปล่อยสำเร็จ 17 มิ.ย. ความเร็ว peak เกือบ 2× ของ Block 1 constellation ตอนนี้มี ~10 ดวง เป้าหมาย 45–60 ดวงภายในสิ้นปี 2026" },
+        { "name": "🇯🇵 รางวัล Japan J-LEO — ผลแบบ Binary", "description": "สัญญา JPY หลายพันล้านกับ Rakuten / NTT Docomo คาดตัดสินใจ Q3 2026 ได้รางวัล = +40%+ พลาด = -25% เหตุผลหลักที่ถือหุ้นข้ามหน้าร้อน" },
+        { "name": "🚀 Blue Origin กลับมา — H2 2026", "description": "Jeff Bezos ยืนยัน Blue Origin สามารถกลับมาปล่อยจรวด New Glenn ได้ภายในปลายปี 2026 ลดความกังวลหลักเรื่อง block launch ถัดไป" }
+      ],
+      "risks": [
+        "Blue Origin New Glenn ระเบิด (29 พ.ค.) — ดัน timeline Block 3+ ออกไป; Q4 2026 ยังไม่แน่",
+        "Barclays Underweight PT $60 (ตัดจาก $65 วันที่ 22 มิ.ย.) — นักวิเคราะห์ล่าสุดยังแบกรับ",
+        "Deutsche Bank downgrade Hold PT $106 (9 มิ.ย.) — revision หลัง explosion",
+        "ยังไม่มีรายได้ — อาจออกหุ้นใหม่ที่ $65–75 กด dilution",
+        "Starlink T-Mobile ของ SpaceX — คู่แข่งตรงมีดาวเทียม 300+ ดวงนำหน้า",
+        "Japan J-LEO binary risk — ถ้าพลาด = -25%+ จากระดับนี้",
+        "ผลผลิตการผลิตดาวเทียม — scale จาก 10 ไปถึง 45+ ดวงยังไม่เคยทดสอบในความเร็วนี้"
+      ],
+      "macroRisk": {
+        "rateOutlook": "สภาพดอกเบี้ยไม่มีผลระยะสั้น — ASTS ขึ้นอยู่กับ binary catalysts ไม่ใช่ DCF",
+        "inflationNote": "SpaceX Falcon 9 reusability ลดต้นทุน launch ต่อดาวเทียม Blue Origin recovery เพิ่ม optionality ไม่มีความเสี่ยง inflation ระยะสั้น",
+        "sectorImpact": "ภาค Space ไม่ได้รับผลจาก Fed ความพร้อมของ launch vehicle และ FCC spectrum คือปัจจัยมหภาคที่สำคัญ",
+        "summary": "Macro risk ต่ำ — หุ้น pure catalyst/binary outcome Fed และดอกเบี้ยไม่มีผล จัดสัดส่วนให้เล็กตาม"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — ค่าขนม เท่านั้น (max 3% ของ port) Japan J-LEO Q3 คือเหตุผลเดียวที่ถือ Blue Origin กลับมาเป็น positive ถ้า $62 หลุดก่อน catalyst → ลด ถ้า Japan พลาด → ออกทันที",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ถือ/เริ่มเล็กได้ แต่ R/R ดีกว่าถ้ารอ Entry 2", "timing": "ถือ / ค่อยๆ เพิ่ม" },
+          { "note": "โซน preferred — ใกล้ PT bear ของ Barclays R/R ดีกว่ามาก สะสมที่นี่", "timing": "ถ้าย่อ" },
+          { "note": "Deep bear capitulation — Barclays PT $60 zone panic", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "กลับไป high ก่อน launch / มูลค่า constellation พื้นฐาน" },
+        "tp2": { "note": "Scenario Japan J-LEO ชนะ" },
+        "tp3": { "note": "45 ดาวเทียม ครอบคลุมทั่วโลก · 2027" },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า Entry 2 zone ($62) — ถ้าหลุดก่อน Japan = สัญญาณ institutional selling",
+          "hardNote": "Capitulation / thesis fail — Japan miss + Blue Origin ล่าช้าพร้อมกัน",
+          "rrNote": "จาก Entry 2 preferred ($65 mid) tight stop เทียบ TP2 $115",
+          "rrWarning": "R/R สูงมาก แต่ binary — ขนาดเล็กบังคับ"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลรางวัล Japan J-LEO", "note": "ผลลัพธ์ binary — ได้ = +40%+, พลาด = -25%" },
+        { "event": "ประกาศผล Q2 2026", "note": "ตัวชี้วัด commercial activation และ subscriber รายแรก" },
+        { "event": "ปล่อยดาวเทียม Block 3", "note": "Blue Origin คาดกลับมา scale ไปถึง 45 ดวง" }
+      ],
+      "companyDescription": "Satellite broadband · สร้าง constellation ดาวเทียม LEO ให้ smartphone ทั่วโลก connect 4G/5G ได้โดยตรง ไม่ต้องมี cell tower"
+    }
+  }
+}

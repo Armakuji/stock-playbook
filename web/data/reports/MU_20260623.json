@@ -1,0 +1,327 @@
+{
+  "ticker": "MU",
+  "companyName": "Micron Technology, Inc.",
+  "companyDescription": "AI Memory · HBM3E/HBM4 sold out through 2026 — picks & shovels of the AI era via high-bandwidth memory for GPU clusters",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-23T00:00:00.000Z",
+  "price": 1089.37,
+  "priceChange": -10.07,
+  "priceNote": "Down 10% on broad semiconductor sell-off — pre-earnings dip ahead of Q3 FY26 results tomorrow Jun 24",
+  "marketCap": "$1.2T",
+  "sector": "Technology / Semiconductors",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Speculative",
+  "score": 76,
+  "summary": "Micron reports Q3 FY26 earnings tomorrow Jun 24 with consensus expecting $34.66B revenue and 81.6% gross margin — both potential all-time highs. HBM capacity is sold out through 2026 and HBM4 production ramp is 2x the speed of HBM3. Today's 10% pullback on sector-wide macro sell-off creates a pre-earnings entry window. Bull case analyst targets reach $1,750 (+60%). Extreme binary risk: beat-and-raise = big pop, miss = sharp drop.",
+  "catalysts": [
+    {
+      "icon": "⚡",
+      "name": "Q3 FY26 Earnings — Tomorrow",
+      "description": "Jun 24, 2026 — Consensus $34.66B revenue (top of guided range $32.75–$34.25B), EPS $19.95, gross margin 81.6% (potential all-time record). HBM4 ramp commentary will be the key forward catalyst.",
+      "urgencyLabel": "TOMORROW",
+      "dateBadge": "Jun 24, 2026",
+      "catalystDate": "2026-06-24",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "🧠",
+      "name": "HBM4 Ramp — 2x Speed of HBM3",
+      "description": "Micron's HBM4 production ramp is proceeding at twice the rate of HBM3. Allocations for Nvidia Vera Rubin Ultra (2027) are the key forward metric — commentary on Jun 24 call is critical.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "💰",
+      "name": "HBM Sold Out Through 2026",
+      "description": "Micron's HBM3E capacity is fully allocated through end of 2026, driven by AI server demand from Nvidia, AMD, and hyperscalers. Structural supply constraint supports premium pricing and margin expansion.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Full Year 2026",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Earnings binary risk — any miss vs $34.66B consensus or weak Q4 guidance triggers sharp drop (stock already down 10% into print)",
+    "DRAM oversupply risk — commodity DRAM cycles faster than HBM; non-AI memory could weigh on blended margins",
+    "Samsung HBM3E qualification at Nvidia — potential share erosion if Samsung catches up on quality",
+    "Macro sell-off extends — broader tech risk-off could pressure even a beat-and-raise scenario"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q3 FY26 Earnings",
+      "dateRange": "Jun 24, 2026",
+      "note": "Consensus $34.66B rev / 81.6% gross margin",
+      "est": "est. $34.66B",
+      "highlight": "blue"
+    },
+    {
+      "event": "Q4 FY26 Guidance",
+      "dateRange": "Jun 24, 2026",
+      "note": "Forward read on HBM4 allocations",
+      "est": "Key catalyst",
+      "highlight": "yellow"
+    },
+    {
+      "event": "TP1 Target",
+      "dateRange": "Jul 2026",
+      "note": "Post-earnings pop if beat-and-raise",
+      "est": "$1,300",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -22,
+      "price": 849
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 19,
+      "price": 1295
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 38,
+      "price": 1502
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 61,
+      "price": 1750
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Rosenblatt",
+      "target": 1200,
+      "rating": "Buy"
+    },
+    {
+      "firm": "UBS",
+      "target": 1500,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Cantor Fitzgerald",
+      "target": 1400,
+      "rating": "Overweight"
+    },
+    {
+      "firm": "TickerNerd Consensus",
+      "target": 1075,
+      "rating": "Strong Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Rate cuts expected H2 2026 — positive for capital-intensive memory capex cycle and semiconductor multiples",
+    "inflationNote": "HBM memory spot prices surging (HBM + GDDR6 up ~3x) due to structural supply shortage — actually inflationary for Micron margins",
+    "sectorImpact": "Semiconductor memory sector hit hardest by macro risk-off today (-10%+ sell-off). But AI-driven structural demand for HBM insulates Micron vs commodity DRAM players.",
+    "summary": "Fed risk MEDIUM — rate cuts support capex multiples but today's broad sell-off shows macro volatility is real. HBM scarcity is a structural, not cyclical, tailwind. Pre-earnings dip may be a buying opportunity if thesis intact."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 1089,
+        "note": "Current price — 10% off yesterday's close, pre-earnings dip",
+        "timing": "Now (risky)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 980,
+        "rangeMax": 1020,
+        "note": "Post-earnings dip support — buy after print if guidance is solid",
+        "timing": "Post-earnings dip",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 880,
+        "note": "200-day MA area — thesis change zone",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 1300,
+      "pct": 19.3,
+      "note": "Immediate post-earnings pop target if beat-and-raise"
+    },
+    "tp2": {
+      "price": 1500,
+      "pct": 37.7,
+      "note": "UBS bull case — HBM4 ramp confirmation"
+    },
+    "tp3": {
+      "price": 1750,
+      "pct": 60.7,
+      "note": "Moon case · Cantor bull scenario if HBM4 allocations beat 2027",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 950,
+      "tightPct": -13,
+      "tightNote": "Below post-earnings support — exit if guidance disappoints",
+      "hard": 850,
+      "hardPct": -22,
+      "hardNote": "200-day MA breach — full thesis breakdown",
+      "riskReward": "2.9 : 1",
+      "rrNote": "Tight stop vs TP2",
+      "rrWarning": "High binary risk — size small pre-earnings"
+    },
+    "verdict": "Small pre-earnings position only — earnings tomorrow is binary. Preferred entry is AFTER print if guidance solid. HBM4 ramp story is multi-year.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Micron historically rallies 5–15% in the 2 weeks pre-earnings as options vol expands and AI memory demand data points (hyperscaler capex, HBM spot checks) leak positive. Today's -10% is the opposite pattern — macro-driven fear into print.",
+    "preRunupTiming": "Typ. 2 สัปดาห์ก่อน earnings — แต่วันนี้ sold-off ผิดปกติ",
+    "preRunupPct": "+5–15% (สวนทางวันนี้ -10%)",
+    "postWin": {
+      "avgPct": 16,
+      "range": "+10% to +24%",
+      "note": "Micron Q4 FY25 (Sep 2025) beat drove +14% single session. Q2 FY26 (Mar 2026) beat on HBM sold-out news drove +22% single day. Pattern: Micron beats when AI capex is accelerating.",
+      "exampleDate": "Mar 2026"
+    },
+    "postLose": {
+      "avgPct": -14,
+      "range": "-10% to -22%",
+      "note": "Dec 2024 miss on DRAM oversupply concern dropped -16% single session. If Q4 FY26 guidance misses on commodity DRAM pricing, similar drop expected.",
+      "exampleDate": "Dec 2024"
+    },
+    "spotSizing": {
+      "pct": 5,
+      "reason": "Speculative 76/100 — pre-earnings binary risk limits sizing. Max 5% pre-earnings. Can scale to 10% post-print if guidance strong."
+    },
+    "stopPreCatalyst": {
+      "pct": -10,
+      "price": 980,
+      "note": "ถ้าหลุด $980 ก่อน earnings พรุ่งนี้ = sentiment เปลี่ยน ออกก่อน"
+    },
+    "stopPostCatalyst": {
+      "pct": -15,
+      "note": "ถ้า Q4 FY26 guidance ต่ำกว่า consensus มาก ออกทันที"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "MU",
+      "event": "Q2 FY26 Earnings Beat — HBM sold-out announcement",
+      "date": "Mar 2026",
+      "movePct": 22,
+      "days": 1,
+      "outcome": "good",
+      "note": "Micron beat Q2 FY26 estimates and confirmed HBM capacity sold out through 2026 — drove +22% single session. Q3 FY26 earnings could repeat if HBM4 ramp guidance impresses."
+    },
+    {
+      "ticker": "NVDA",
+      "event": "Blackwell GPU earnings beat Q3 FY25",
+      "date": "Nov 2024",
+      "movePct": 14,
+      "days": 1,
+      "outcome": "good",
+      "note": "NVDA beat on Blackwell ramp similar to how MU is beating on HBM ramp — AI infrastructure picks-and-shovels pattern of beating on sold-out capacity."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Micron down 10%+ pre-earnings on broad Asian semiconductor sell-off — HBM memory + GDDR6 spot prices tripling",
+    "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261979099-micron-q3-earnings-preview-gross-margin-expected-break-80-mark-tradingkey",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://www.tradingkey.com/analysis/stocks/us-stocks/261979099-micron-q3-earnings-preview-gross-margin-expected-break-80-mark-tradingkey",
+    "https://www.ig.com/en/news-and-trade-ideas/micron-q3-fy2026-earnings-preview-260623",
+    "https://www.tradingkey.com/analysis/stocks/us-stocks/261930650-micron-mu-hbm-ai-datacenter-sold-out-margin-expansion-fibonacci-breakout-memory-scarcity-guidance-raise-tradingkey",
+    "https://stockanalysis.com/stocks/mu/forecast/",
+    "https://finance.yahoo.com/quote/MU/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Micron รายงาน Q3 FY26 พรุ่งนี้ Jun 24 — consensus คาด revenue $34.66B และ gross margin 81.6% (อาจเป็น all-time high) HBM capacity ขายหมด (sold out) ถึงสิ้นปี 2026 และ HBM4 ramp เร็วกว่า HBM3 สองเท่า หุ้นร่วง 10% วันนี้จาก semiconductor sell-off กว้าง ถ้า beat-and-raise = โอกาส bull case $1,750 (+60%) แต่ถ้า miss = ร่วงหนัก binary risk สูง",
+      "priceNote": "ร่วง 10% วันนี้ก่อน earnings พรุ่งนี้ — sell-off กว้างใน semiconductor sector",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        {
+          "name": "Q3 FY26 Earnings พรุ่งนี้",
+          "description": "Jun 24 — consensus $34.66B revenue, gross margin 81.6% (อาจ all-time record) commentary บน HBM4 คือ key"
+        },
+        {
+          "name": "HBM4 Ramp เร็ว 2x",
+          "description": "Micron's HBM4 production ramp เร็วกว่า HBM3 สองเท่า — allocations สำหรับ Nvidia Vera Rubin Ultra 2027 คือ forward catalyst"
+        },
+        {
+          "name": "HBM Sold Out ถึงสิ้นปี",
+          "description": "HBM3E capacity full ถึงปลาย 2026 ราคา premium และ margin expansion ต่อเนื่อง"
+        }
+      ],
+      "risks": [
+        "Earnings binary — miss เดียวร่วงหนักมาก (down -15% to -22%)",
+        "DRAM ทั่วไป oversupply risk กดน้ำหนักบน blended margin",
+        "Samsung qualify HBM3E ที่ Nvidia ได้ = share erosion risk",
+        "Macro sell-off ต่อเนื่องกดแม้ถ้า beat-and-raise"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Rate cuts H2 2026 = positive สำหรับ capex-heavy semiconductor cycle และ multiple expansion",
+        "inflationNote": "HBM spot price ขึ้น 3x — ดีสำหรับ Micron margin แต่กดต้นทุน hyperscaler",
+        "sectorImpact": "Semiconductor memory ได้รับผลกระทบ macro risk-off มากที่สุด แต่ AI-driven HBM demand เป็น structural ไม่ใช่ cyclical",
+        "summary": "Fed risk ปานกลาง — HBM scarcity structural แต่ macro volatility สูงวันนี้ Pre-earnings dip อาจเป็นโอกาสถ้า thesis ยังดี"
+      },
+      "entryStrategy": {
+        "verdict": "Position เล็กก่อน earnings เท่านั้น — binary risk สูง preferred entry คือ หลัง print ถ้า guidance ดี HBM4 เป็น multi-year story",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน ร่วง 10% ก่อน earnings — risky",
+            "timing": "ตอนนี้ (เสี่ยง)"
+          },
+          {
+            "note": "หลัง earnings dip — ซื้อถ้า guidance solid",
+            "timing": "หลัง print"
+          },
+          {
+            "note": "โซน 200-day MA — thesis change zone",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "pop ทันทีหลัง earnings ถ้า beat-and-raise"
+        },
+        "tp2": {
+          "note": "UBS bull case — HBM4 ramp confirmed"
+        },
+        "tp3": {
+          "note": "Moon case · Cantor scenario ถ้า HBM4 allocation beat 2027",
+          "moon": true
+        },
+        "stopLoss": {
+          "tightNote": "Below post-earnings support — ออกถ้า guidance แย่",
+          "hardNote": "200-day MA breach — thesis breakdown ทั้งหมด",
+          "rrNote": "Tight stop vs TP2",
+          "rrWarning": "Binary risk สูง — size เล็กก่อน earnings"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "Q3 FY26 Earnings พรุ่งนี้",
+          "note": "consensus $34.66B rev / 81.6% gross margin"
+        },
+        {
+          "event": "Q4 FY26 Guidance",
+          "note": "read ล่วงหน้า HBM4 allocations"
+        },
+        {
+          "event": "เป้า TP1",
+          "note": "pop หลัง earnings ถ้า beat-and-raise"
+        }
+      ]
+    }
+  }
+}

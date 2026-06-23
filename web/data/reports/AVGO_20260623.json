@@ -1,0 +1,238 @@
+{
+  "ticker": "AVGO",
+  "companyName": "Broadcom Inc.",
+  "companyDescription": "Semiconductor + software · Custom AI chips (XPU) for Google/Meta + networking silicon for data centers",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-23T00:00:00.000Z",
+  "price": 380.00,
+  "priceChange": -3.09,
+  "priceNote": "Jun 23 live · -3.09% · Broad chip sector selloff · NOW AT PREFERRED ENTRY ZONE $380–390 · JPMorgan: aggressive buyers here",
+  "marketCap": "$1.81T",
+  "sector": "Technology / Semiconductors",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 87,
+  "summary": "AVGO at $380 has hit the preferred entry zone from yesterday's report — a technical selloff dragged by broad chip rotation, not a fundamental change. Q2 beat EPS $2.44 vs $2.32 (Jun 3). Q3 AI revenue guided +200% YoY to $16B. The $35B Apollo/Blackstone AI infrastructure platform (Jun 9) with Anthropic validates AVGO as the custom chip + networking backbone of the AI buildout. JPMorgan calls investors 'aggressive buyers at current levels', PT $580.",
+  "catalysts": [
+    {
+      "icon": "🧠",
+      "name": "Q3 AI Revenue +200% YoY — $16B Guide",
+      "description": "Broadcom guided Q3 AI semiconductor revenue >$16B (vs ~$5B same quarter 2025) — 3× acceleration. Earnings Sep 3, 2026. Beat-and-raise cycle intact.",
+      "dotColor": "red",
+      "dateBadge": "Sep 3, 2026",
+      "badgeColor": "red",
+      "urgencyLabel": "72 DAYS",
+      "catalystDate": "2026-09-03"
+    },
+    {
+      "icon": "🏦",
+      "name": "Apollo/Blackstone $35B AI Platform with Anthropic",
+      "description": "Broadcom, Apollo, and Blackstone launched a $35B AI infrastructure platform (Jun 9) — financing 20+ GW of global AI deployment using AVGO custom chips. Secures multi-year revenue visibility.",
+      "dotColor": "green",
+      "dateBadge": "Jun 9 ✅",
+      "badgeColor": "blue",
+      "catalystDate": "2026-06-09"
+    },
+    {
+      "icon": "🧩",
+      "name": "New Hyperscaler XPU Design Win",
+      "description": "Management signaling a 4th major hyperscaler adding AVGO custom XPU — expected announcement H2 2026. Each new customer expands the $60–90B 2027 TAM estimate.",
+      "dotColor": "yellow",
+      "dateBadge": "H2 2026",
+      "badgeColor": "yellow",
+      "catalystDate": "2026-12-01"
+    }
+  ],
+  "risks": [
+    "Google chip program delay fears (Jun 2026) — JPMorgan says 'ignore the noise' but program setback would be real",
+    "Beat-only is no longer enough — Jun 2026 earnings beat but -13% reaction when FY27 AI target unchanged",
+    "Customer concentration: Google + Meta = ~40% of AI chip revenue",
+    "Broad semiconductor sector selloff continues — SMH down, shorts piling on (CNBC, Jun 2026)",
+    "VMware enterprise churn risk if competitors undercut pricing",
+    "Debt load from VMware (~$70B) limits buyback flexibility until refinancing",
+    "US-China trade restrictions — legacy semiconductor revenue exposure"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q3 FY26 Earnings",
+      "dateRange": "Sep 3, 2026",
+      "note": "AI revenue $16B+ confirmation — the key re-rate event",
+      "est": "est. EPS $2.65",
+      "highlight": "blue"
+    },
+    {
+      "event": "New XPU Design Win Announcement",
+      "dateRange": "H2 2026",
+      "note": "4th hyperscaler XPU customer — each win expands TAM",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -12, "price": 334 },
+    { "label": "Base", "color": "yellow", "pct": 21, "price": 460 },
+    { "label": "Bull", "color": "green", "pct": 38, "price": 524 },
+    { "label": "Moon", "color": "purple", "pct": 58, "price": 600 }
+  ],
+  "analystTargets": [
+    { "firm": "JPMorgan", "target": 580, "rating": "Buy" },
+    { "firm": "Jefferies", "target": 550, "rating": "Buy" },
+    { "firm": "Mizuho", "target": 530, "rating": "Buy" },
+    { "firm": "Goldman Sachs", "target": 525, "rating": "Buy" },
+    { "firm": "Wall St Consensus (48)", "target": 524, "rating": "Strong Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Rate cuts benefit VMware debt servicing (saves ~$1.5B/yr) — incremental FCF expansion. Not the primary driver but a tailwind.",
+    "inflationNote": "Software-heavy revenue mix (VMware ARR ~$8.5B) insulates from materials inflation. Semiconductor margins stable at ~65% gross margin.",
+    "sectorImpact": "Broad semis selloff weighs on AVGO short-term but does not affect the $16B AI revenue run-rate or custom XPU design wins — those are long-cycle contracts.",
+    "summary": "Low macro sensitivity. AI custom silicon + VMware ARR creates a durable revenue base that is largely immune to rate and inflation cycles. The current -3% is sector noise."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 380,
+        "note": "PREFERRED ENTRY HIT TODAY — yesterday's report had $380–390 as the preferred accumulation zone. Broad selloff brought us here. Buy now.",
+        "timing": "Now — preferred",
+        "preferred": true
+      },
+      {
+        "label": "Entry 2",
+        "level": 360,
+        "rangeMax": 370,
+        "note": "Deeper dip — if chip selloff extends, add more here",
+        "timing": "If extends"
+      },
+      {
+        "label": "Entry 3",
+        "level": 340,
+        "note": "200-day MA structural support — max DCA zone",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": { "price": 460, "pct": 21.1, "note": "Near-term resistance / Base case Q3 earnings" },
+    "tp2": { "price": 524, "pct": 37.9, "note": "Analyst consensus target (48 analysts)" },
+    "tp3": { "price": 600, "pct": 57.9, "note": "Full AI XPU monetization + 4th hyperscaler · 2027", "moon": true },
+    "stopLoss": {
+      "tight": 355,
+      "tightPct": -6.6,
+      "tightNote": "Below $360 support — structural break of preferred entry zone",
+      "hard": 330,
+      "hardPct": -13.2,
+      "hardNote": "200-day MA breach — fundamental re-rating required",
+      "riskReward": "5.8 : 1",
+      "rrNote": "From $380 entry tight stop vs TP2 $524",
+      "rrWarning": "Excellent R/R — Core Holding"
+    },
+    "verdict": "Core Holding — preferred entry zone hit today. BUY into $380 weakness. JPMorgan: 'aggressive buyers at current levels'. The Google delay noise is overstated; $16B Q3 AI revenue guide is the anchor. Stop tight at $355.",
+    "approach": "DCA"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat + ai_chip_design_win",
+    "preRunup": "AVGO typically runs +5–12% in the 1–2 weeks before earnings when AI chip momentum is strong. The Sep 3 earnings date means the pre-run window opens ~Aug 20. Current dip is an opportunity to enter before the pre-earnings drift.",
+    "preRunupTiming": "1–2 weeks before Sep 3 earnings",
+    "preRunupPct": "+5–12%",
+    "earningsHistory": [
+      { "quarter": "Q4 FY24", "date": "Dec 12, 2024", "reactionPct": 24, "outcome": "win", "note": "3 AI customers revealed + $60–90B TAM guide — stock crossed $1T in one day (outlier move)" },
+      { "quarter": "Q1 FY25", "date": "Mar 6, 2025", "reactionPct": 8, "outcome": "win", "note": "Beat + strong Q2 guide — +8% next session" },
+      { "quarter": "Q2 FY25", "date": "Jun 5, 2025", "reactionPct": -5, "outcome": "miss", "note": "Beat but FY27 AI target unchanged → sell-the-news" },
+      { "quarter": "Q3 FY25", "date": "Sep 4, 2025", "reactionPct": 10, "outcome": "win", "note": "AI rev +63% YoY, 4th custom-AI customer confirmed" },
+      { "quarter": "Q4 FY25", "date": "Dec 11, 2025", "reactionPct": 3, "outcome": "win", "note": "Beat + AI chip rev to double — mostly priced in at elevated val" },
+      { "quarter": "Q1 FY26", "date": "Mar 4, 2026", "reactionPct": 5, "outcome": "win", "note": "Beat + raise, modest reaction at high valuation" },
+      { "quarter": "Q2 FY26", "date": "Jun 3, 2026", "reactionPct": -13, "outcome": "miss", "note": "Beat EPS $2.44 vs $2.32 but FY27 AI target again unchanged → -13% re-rate" }
+    ],
+    "postWin": {
+      "avgPct": 10,
+      "range": "+3% to +24%",
+      "note": "7-quarter sample: 5 positive reactions avg ~+10%. Big moves require a genuinely new datapoint (new customer / TAM raise). A bare beat at current premium valuation moves only +3–8%.",
+      "exampleDate": "Sep 2025"
+    },
+    "postLose": {
+      "avgPct": -9,
+      "range": "-5% to -13%",
+      "note": "Recent pattern: beat-but-no-raise = -5 to -13%. Jun 2026 showed a $2.44 beat with -13% reaction because FY27 AI target was left unchanged. Watch for explicit TAM raise at Sep 3.",
+      "exampleDate": "Jun 2026"
+    },
+    "spotSizing": {
+      "pct": 10,
+      "reason": "Core Holding score 87, Fed risk LOW, NOW at preferred entry zone, R/R 5.8:1. Mega-cap magnitude constraint partially offset by strong conviction + exact entry hit. Full core allocation."
+    },
+    "stopPreCatalyst": {
+      "pct": -6.6,
+      "price": 355,
+      "note": "Break below $355 before Sep 3 earnings = structural support failure; reduce before event."
+    },
+    "stopPostCatalyst": {
+      "pct": -12,
+      "note": "Gap down >10% after earnings (as Jun 2026 showed) — exit within 30 min. The valuation premium makes re-rating fast."
+    }
+  },
+  "comparableCases": [
+    { "ticker": "AVGO", "event": "AI chip TAM $60-90B guidance + 3 hyperscalers revealed", "date": "Dec 2024", "movePct": 24, "days": 1, "outcome": "good", "note": "AVGO itself +24% in 1 day — the template. When new datapoint (customers + TAM) is revealed the market re-rates immediately. Sep 3 needs this kind of surprise to replicate." },
+    { "ticker": "MRVL", "event": "Custom AI silicon hyperscaler design win announcement", "date": "Jun 2024", "movePct": 7, "days": 1, "outcome": "good", "note": "Marvell +6.8% after Google custom AI chip — design win catalysts comparable to AVGO's. Confirms hyperscaler XPU is still a powerful catalyst even at scale." },
+    { "ticker": "AVGO", "event": "Q2 FY26 earnings beat but FY27 AI target unchanged", "date": "Jun 2026", "movePct": -13, "days": 1, "outcome": "bad", "note": "Beat EPS $2.44 vs $2.32 but stock dropped -13%. At premium valuation, 'beat-only' is no longer enough — watch for TAM raise or new XPU customer at Sep 3." }
+  ],
+  "rankChangeSource": {
+    "headline": "Nvidia, AMD, Broadcom Fall as Tech Selloff Catches Up With Chips — JPMorgan reiterates 'aggressive buyers'",
+    "url": "https://www.barrons.com/articles/nvidia-stock-price-amd-broadcom-chips-ca80d4cc",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/avgo/",
+    "https://www.tipranks.com/news/ignore-the-noise-says-j-p-morgan-as-broadcom-stock-faces-google-fears",
+    "https://www.tipranks.com/news/investors-should-be-aggressive-buyers-of-broadcom-stock-avgo-says-jpmorgan",
+    "https://www.barrons.com/articles/nvidia-stock-price-amd-broadcom-chips-ca80d4cc",
+    "https://www.wsj.com/tech/ai/broadcom-apollo-blackstone-launch-35-billion-ai-infrastructure-platform-8fc8f65e",
+    "https://invezz.com/news/2026/06/17/broadcom-stock-rises-as-jpmorgan-backs-ai-growth-sees-54-upside/",
+    "https://stockanalysis.com/stocks/avgo/forecast/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "AVGO ที่ $380 เข้าสู่โซน preferred entry ที่วิเคราะห์ไว้เมื่อวาน — chip sector selloff ทางเทคนิค ไม่ใช่ fundamental เปลี่ยน Q2 EPS $2.44 beat ($2.32 est.) แล้ว (3 มิ.ย.) Q3 AI revenue guide +200% YoY ถึง $16B ดีล Apollo/Blackstone $35B AI platform กับ Anthropic (9 มิ.ย.) ยืนยัน AVGO เป็น backbone ของ AI infrastructure JPMorgan เรียกนักลงทุนว่า 'aggressive buyers ตอนนี้' PT $580",
+      "priceNote": "Jun 23 live · -3.09% · Chip sector selloff · ถึงโซน PREFERRED ENTRY $380–390 แล้ว · JPMorgan: ซื้อ aggressive",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "🧠 Q3 AI Revenue +200% YoY — Guide $16B", "description": "Broadcom guide Q3 AI semiconductor revenue >$16B (vs ~$5B ปีที่แล้ว) — เร่งตัว 3× earnings 3 ก.ย. 2026 วงจร beat-and-raise ยังคงอยู่" },
+        { "name": "🏦 Apollo/Blackstone $35B AI Platform กับ Anthropic", "description": "Broadcom + Apollo + Blackstone ตั้ง platform AI infrastructure $35B (9 มิ.ย.) ไฟแนนซ์ 20+ GW AI deployment ทั่วโลกด้วย AVGO custom chips รับรองรายได้หลายปีข้างหน้า" },
+        { "name": "🧩 XPU Design Win ใหม่จาก Hyperscaler", "description": "ผู้บริหารส่งสัญญาณว่า hyperscaler รายที่ 4 กำลังจะเพิ่ม AVGO custom XPU คาดประกาศ H2 2026 ลูกค้าใหม่แต่ละรายขยาย TAM $60–90B ปี 2027" }
+      ],
+      "risks": [
+        "ข่าว Google delay chip program (มิ.ย. 2026) — JPMorgan บอก 'ignore the noise' แต่ถ้า setback จริงจะกระทบ",
+        "Beat-only ไม่พอแล้ว — มิ.ย. 2026 beat แต่หุ้นลง -13% เพราะ FY27 AI target ไม่ปรับขึ้น",
+        "ลูกค้ากระจุก: Google + Meta = ~40% ของรายได้ AI chip",
+        "Chip sector selloff ยังกดหนัก — SMH ลง shorts เพิ่ม",
+        "VMware enterprise อาจลดถ้าคู่แข่ง undercut ราคา",
+        "หนี้จาก VMware (~$70B) จำกัด buyback",
+        "US-จีน trade — กระทบรายได้ semiconductor ดั้งเดิม"
+      ],
+      "macroRisk": {
+        "rateOutlook": "การลดดอกเบี้ยช่วยประหยัดต้นทุนหนี้ VMware ~$1.5B/ปี — เพิ่ม FCF ไม่ใช่ driver หลัก แต่เป็น tailwind",
+        "inflationNote": "รายได้ software สูง (VMware ARR ~$8.5B) ป้องกัน inflation วัสดุ semiconductor gross margin คงที่ ~65%",
+        "sectorImpact": "Semis sector selloff กดในระยะสั้น แต่ไม่กระทบ AI revenue $16B run-rate หรือ custom XPU design wins ซึ่งเป็นสัญญาระยะยาว",
+        "summary": "Macro sensitivity ต่ำ AI custom silicon + VMware ARR สร้างรายได้ทนทาน ไม่ขึ้นกับวัฏจักรดอกเบี้ย selloff ปัจจุบัน -3% คือ sector noise"
+      },
+      "entryStrategy": {
+        "verdict": "Core Holding — PREFERRED ENTRY ถึงแล้ววันนี้ ซื้อที่ $380 ได้เลย JPMorgan: 'aggressive buyers ตอนนี้' Google delay noise พูดเกินจริง AI revenue $16B Q3 คือสมอ stop tight ที่ $355",
+        "entryLevels": [
+          { "note": "PREFERRED ENTRY ถึงแล้ว — รายงานเมื่อวานระบุ $380–390 เป็น preferred zone เพราะ chip selloff พามาถึงแล้ว ซื้อตอนนี้", "timing": "ตอนนี้ — preferred" },
+          { "note": "ลึกกว่า — ถ้า chip selloff ลามต่อ เพิ่มที่นี่", "timing": "ถ้าลามต่อ" },
+          { "note": "แนวรับ 200-day MA — โซน DCA สูงสุด", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "แนวต้านระยะสั้น / Base case Q3 earnings" },
+        "tp2": { "note": "เป้า consensus นักวิเคราะห์ 48 คน" },
+        "tp3": { "note": "AI XPU เต็มรูปแบบ + hyperscaler รายที่ 4 · 2027" },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า $360 support — หลุด preferred entry zone โครงสร้าง",
+          "hardNote": "หลุด 200-day MA — ต้อง re-rate fundamental",
+          "rrNote": "จาก $380 entry tight stop เทียบ TP2 $524",
+          "rrWarning": "R/R ยอดเยี่ยม — Core Holding"
+        }
+      },
+      "estimateDates": [
+        { "event": "ประกาศผล Q3 FY26", "note": "ยืนยัน AI revenue $16B+ — event re-rate หลัก" },
+        { "event": "ประกาศ XPU Design Win ใหม่", "note": "hyperscaler รายที่ 4 — แต่ละรายขยาย TAM" }
+      ],
+      "companyDescription": "Semiconductor + software · ออกแบบ custom AI chip (XPU) ให้ Google, Meta, Apple + networking silicon สำหรับ AI data center + รายได้ VMware software recurring $8.5B/ปี"
+    }
+  }
+}

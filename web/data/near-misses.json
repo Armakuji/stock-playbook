@@ -1,4 +1,29 @@
 {
   "_note": "Candidates that PASSED the /dashboard screen but did NOT make the top 5. Logged to fight survivorship bias — their real outcome is the counterfactual that tells us whether the top-5 cut actually adds alpha. Append one object per rejected candidate per dashboard run.",
-  "nearMisses": []
+  "nearMisses": [
+    {
+      "date": "2026-06-23",
+      "ticker": "ARM",
+      "reason": "Structural AI CPU play but already up 84% in 2026 to ~$430. Mizuho top target $500 = only 16% upside from current price. New Street Research downgraded to Neutral Jun 18. Valuation stretched at 490x trailing P/E. AGI CPU story is multi-year but near-term upside insufficient for 30%+ threshold. Revisit after next pullback.",
+      "priceAtScreen": 430,
+      "topAnalystTarget": 500,
+      "impliedUpside": 16.3
+    },
+    {
+      "date": "2026-06-23",
+      "ticker": "LRCX",
+      "reason": "Lam Research solid semiconductor equipment pick — BofA top pick for 2026, record Q3 FY26 results. But trading at $393 vs Citigroup top target of $450 = only 14% upside. Morgan Stanley target $331 is below current. Consensus upside insufficient for 30%+ threshold despite strong fundamentals.",
+      "priceAtScreen": 393,
+      "topAnalystTarget": 450,
+      "impliedUpside": 14.5
+    },
+    {
+      "date": "2026-06-23",
+      "ticker": "SMCI",
+      "reason": "Super Micro Computer AI server infrastructure play with GF Securities upgrade to $48 (~40-55% upside at time of note). But consensus is Hold rating from 13 analysts with average target $37-38 = minimal upside from $34-40 range. Dilution risk (15% projected) and mixed analyst sentiment keep off dashboard. Revisit if Hold consensus upgrades to Buy.",
+      "priceAtScreen": 38,
+      "topAnalystTarget": 48,
+      "impliedUpside": 26.3
+    }
+  ]
 }

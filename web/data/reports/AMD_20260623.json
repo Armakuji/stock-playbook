@@ -1,0 +1,333 @@
+{
+  "ticker": "AMD",
+  "companyName": "Advanced Micro Devices, Inc.",
+  "companyDescription": "AI GPU + CPU · MI300X AI accelerators + EPYC server CPUs — the #2 AI chip platform challenging Nvidia in AI training/inference and dominating AMD64 data center server CPU market",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-23T00:00:00.000Z",
+  "price": 514.00,
+  "priceChange": -5.46,
+  "priceNote": "Down 5.46% today on broad semiconductor sell-off — was $544 yesterday; up 140%+ YTD from $214 at end of 2024",
+  "marketCap": "$832B",
+  "sector": "Technology / Semiconductors",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 80,
+  "summary": "AMD is the clearest AI GPU alternative to Nvidia — data center revenue up 57% YoY, MI300X selling out, and EPYC server CPUs taking share from Intel. Q1 2026 earnings beat drove a 154% YTD run. Today's -5.46% pull-back on sector sell-off is a buying opportunity: Bernstein raised PT to $600 (Outperform), Citi upgraded to Buy with $575 target, BofA reiterates Buy with $560 target. Bull case 2027: AMD's MI350 + MI400 GPU series and $120B TAM server CPU market support $700 by mid-2027.",
+  "catalysts": [
+    {
+      "icon": "⚡",
+      "name": "MI350 / MI400 GPU Launch — H2 2026",
+      "description": "AMD's next-gen MI350 AI accelerator (CDNA 4) launches H2 2026 targeting inference workloads at hyperscalers. MI400 (CDNA 4 Ultra) follows in 2027. Both target Nvidia H100/H200 displacement in inference — the fastest-growing AI market segment.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    },
+    {
+      "icon": "💻",
+      "name": "EPYC Genoa/Turin — Server CPU TAM $120B",
+      "description": "AMD EPYC Turin (5th Gen) is taking meaningful share from Intel Xeon in data center CPUs. Bernstein projects AMD's server CPU TAM at $120B as AI compute clusters require high-core-count CPUs alongside GPUs. AMD has 30%+ server CPU market share and growing.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Full Year 2026",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings — AI Accelerating",
+      "description": "Q2 2026 earnings expected late July 2026. Consensus expects continued data center revenue acceleration (+50%+ YoY). AMD 'Advancing AI' event keynote in mid-2026 will preview MI350 roadmap — key catalyst for re-rating.",
+      "urgencyLabel": "5 WEEKS",
+      "dateBadge": "Late Jul 2026",
+      "catalystDate": "2026-07-29",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Nvidia dominance — CUDA ecosystem moat means AMD MI300X wins inference but struggles vs H100/H200 for training; customers prefer Nvidia for new training clusters",
+    "Stock already up 140% YTD — much of the AI GPU re-rating may be priced in; incremental upside requires MI350 to meaningfully beat expectations",
+    "Intel Arc GPU + Gaudi 3 competition in data center inference — Intel is not giving up market share without a fight",
+    "Today's broad semiconductor sell-off (-5.46%) shows macro sensitivity — any AI capex slowdown narrative = pullback"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q2 2026 Earnings",
+      "dateRange": "Late Jul 2026",
+      "note": "Data center revenue acceleration read",
+      "est": "est. $9.5B+ rev",
+      "highlight": "blue"
+    },
+    {
+      "event": "AMD Advancing AI Event",
+      "dateRange": "Jun-Jul 2026",
+      "note": "MI350 roadmap preview — key catalyst",
+      "est": "MI350 launch date",
+      "highlight": "yellow"
+    },
+    {
+      "event": "TP1 Target",
+      "dateRange": "Q4 2026",
+      "note": "BofA/Citi target zone",
+      "est": "$560-575",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -25,
+      "price": 386
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 12,
+      "price": 575
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 17,
+      "price": 600
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 36,
+      "price": 700
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Bernstein",
+      "target": 600,
+      "rating": "Outperform"
+    },
+    {
+      "firm": "Citi",
+      "target": 575,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Bank of America",
+      "target": 560,
+      "rating": "Buy"
+    },
+    {
+      "firm": "DA Davidson",
+      "target": 530,
+      "rating": "Buy"
+    },
+    {
+      "firm": "New Street Research",
+      "target": 420,
+      "rating": "Neutral"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Rate cuts support high-multiple semiconductor stocks — AMD at ~50x forward P/E benefits from multiple expansion in lower rate environment",
+    "inflationNote": "HBM memory cost inflation (used in MI300X) is a headwind to GPU gross margins. But AMD passes costs to hyperscalers given strong demand.",
+    "sectorImpact": "Today's broad semiconductor sell-off shows macro risk is real for the sector. AMD specifically benefits from any shift of AI workloads to open-source / CUDA-alternative strategies at hyperscalers.",
+    "summary": "Fed risk MEDIUM — AMD has run 140%+ YTD and is now sensitive to macro semiconductor risk-off days (today: -5.46%). Rate cuts support multiple. HBM inflation is a margin headwind. Main catalyst is MI350 launch and continued data center revenue acceleration."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 514,
+        "note": "Today's price — 5.5% off yesterday's high, sector sell-off entry",
+        "timing": "Now"
+      },
+      {
+        "label": "Entry 2",
+        "level": 460,
+        "rangeMax": 480,
+        "note": "50-day MA support zone — add on next semiconductor dip",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 400,
+        "note": "200-day MA area — deep dip thesis re-entry",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 575,
+      "pct": 11.9,
+      "note": "Citi 12-month target — near-term catalyst from Q2 earnings"
+    },
+    "tp2": {
+      "price": 600,
+      "pct": 16.7,
+      "note": "Bernstein Outperform target — MI350 launch confirmation"
+    },
+    "tp3": {
+      "price": 700,
+      "pct": 36.2,
+      "note": "Moon case · 2027 if MI350/400 takes meaningful H100 share",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 440,
+      "tightPct": -14,
+      "tightNote": "Below 50-day MA — sector rotation out of semis signal",
+      "hard": 380,
+      "hardPct": -26,
+      "hardNote": "200-day MA breach — AI capex slowdown thesis",
+      "riskReward": "2.6 : 1",
+      "rrNote": "Tight stop vs TP2",
+      "rrWarning": "Good R/R — but stock already run 140% YTD, size conservatively"
+    },
+    "verdict": "Buy the semiconductor sell-off — AMD's AI GPU + CPU dual story gives more diversified exposure than single-product plays. Preferred entry $460-480 if dip continues.",
+    "approach": "DCA"
+  },
+  "catalystSpot": {
+    "catalystType": "product_launch",
+    "preRunup": "AMD runs 10-20% in the 2-4 weeks before major product launch events (GTC equivalents, Advancing AI keynotes). MI350 roadmap reveal and Q2 earnings are the two near-term pre-run catalysts.",
+    "preRunupTiming": "2-4 สัปดาห์ก่อน Advancing AI Event และ Q2 earnings (late Jul 2026)",
+    "preRunupPct": "+10–20%",
+    "postWin": {
+      "avgPct": 12,
+      "range": "+8% to +20%",
+      "note": "AMD Q1 2026 earnings beat on data center revenue (+57% YoY, MI300X sell-out) drove +15% the following week. Pattern: AMD beats when hyperscaler MI300X demand is stronger than feared.",
+      "exampleDate": "May 2026"
+    },
+    "postLose": {
+      "avgPct": -12,
+      "range": "-8% to -20%",
+      "note": "AMD Q3 2025 miss on GPU revenue timing guidance (MI300X qualification delays at some hyperscalers) dropped -13% single session. MI350 delay risk is the key bear case.",
+      "exampleDate": "Oct 2025"
+    },
+    "spotSizing": {
+      "pct": 8,
+      "reason": "Core Holding 80/100 — dual GPU+CPU AI story, broad analyst buy consensus. Stock already run 140% YTD limits sizing. Max 8% of portfolio. DCA into dips."
+    },
+    "stopPreCatalyst": {
+      "pct": -14,
+      "price": 442,
+      "note": "ถ้าหลุด $440 = sector rotation ออกจาก semiconductors ออกก่อน Q2 earnings"
+    },
+    "stopPostCatalyst": {
+      "pct": -12,
+      "note": "ถ้า Q2 data center revenue miss หรือ MI350 delay ออกทันที"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "AMD",
+      "event": "Q1 2026 Earnings Beat — data center revenue +57% YoY",
+      "date": "May 2026",
+      "movePct": 15,
+      "days": 5,
+      "outcome": "good",
+      "note": "AMD beat Q1 2026 on data center revenue acceleration and MI300X sell-through. Pattern: AMD re-rates when AI GPU narrative moves from 'possible Nvidia alternative' to 'confirmed hyperscaler deployment.'"
+    },
+    {
+      "ticker": "NVDA",
+      "event": "A100 to H100 transition — market share consolidation",
+      "date": "Feb 2023",
+      "movePct": 28,
+      "days": 30,
+      "outcome": "good",
+      "note": "Nvidia's H100 launch comparable as AMD's MI350 launch — generation transition events drive large re-ratings if product delivers on specs. AMD needs MI350 to be competitive vs H100 successor to sustain bull case."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Bernstein raises AMD to $600 Outperform; Citi upgrades to Buy $575; BofA reiterates Buy $560 — data center GPU + CPU dual story",
+    "url": "https://www.tikr.com/blog/amd-stock-forecast-2026-a-57-data-center-revenue-jump-and-a-120-billion-cpu-market",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://www.tikr.com/blog/amd-stock-forecast-2026-a-57-data-center-revenue-jump-and-a-120-billion-cpu-market",
+    "https://capital.com/en-int/market-updates/amd-stock-forecast-23-06-2026",
+    "https://www.barchart.com/story/news/1807709/as-cpus-steal-the-show-amd-stock-just-got-a-new-street-high-price-target",
+    "https://www.tradingkey.com/news/market-movers/261985191-market-movers-amd-20260623",
+    "https://finance.yahoo.com/quote/AMD/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "AMD คือ AI GPU alternative ที่ชัดที่สุดนอกจาก Nvidia — data center revenue ขึ้น 57% YoY, MI300X ขายหมด, EPYC server CPU แย่ง share จาก Intel Q1 2026 earnings beat ดัน YTD +140% หุ้นร่วง 5.46% วันนี้จาก sector sell-off เป็น buying opportunity Bernstein $600, Citi $575, BofA $560 bull case 2027: MI350/MI400 GPU + $120B TAM server CPU ดัน $700",
+      "priceNote": "ร่วง 5.46% วันนี้ sector sell-off — เมื่อวาน $544, YTD ขึ้น 140%+ จาก $214",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        {
+          "name": "MI350 / MI400 GPU Launch H2 2026",
+          "description": "MI350 (CDNA 4) เปิดตัว H2 2026 targeting inference workloads — MI400 ตาม 2027 ทั้งคู่ target Nvidia H100 displacement"
+        },
+        {
+          "name": "EPYC CPU TAM $120B",
+          "description": "EPYC Turin แย่ง share จาก Intel Xeon ใน data center AMD มี 30%+ server CPU market share และกำลังขยาย"
+        },
+        {
+          "name": "Q2 2026 Earnings + Advancing AI Event",
+          "description": "Late Jul 2026 earnings + AMD Advancing AI keynote — MI350 roadmap preview คือ key re-rating catalyst"
+        }
+      ],
+      "risks": [
+        "Nvidia CUDA moat — ลูกค้าชอบ Nvidia สำหรับ training clusters CUDA ecosystem ยาก replace",
+        "ขึ้นแล้ว 140% YTD — AI GPU re-rating ส่วนใหญ่ priced in แล้ว",
+        "Intel Gaudi 3 แข่งใน data center inference",
+        "Macro semiconductor sell-off วันนี้ -5.46% แสดง sensitivity ต่อ AI capex slowdown narrative"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Rate cuts สนับสนุน multiple expansion สำหรับ semiconductor P/E สูง",
+        "inflationNote": "HBM memory cost inflation เป็น headwind ต่อ MI300X gross margin แต่ AMD ส่ง cost ไปยัง hyperscaler ได้",
+        "sectorImpact": "Semiconductor sell-off วันนี้แสดง macro sensitivity สูง AMD benefit จาก hyperscaler shift ไป open-source / CUDA-alternative",
+        "summary": "Fed risk ปานกลาง — AMD run 140%+ YTD sensitive ต่อ macro risk-off Rate cuts สนับสนุน multiple HBM inflation เป็น margin headwind catalyst หลักคือ MI350 launch"
+      },
+      "entryStrategy": {
+        "verdict": "ซื้อบน semiconductor sell-off — AMD's AI GPU + CPU dual story ให้ exposure กว้างกว่า single-product play preferred entry $460-480 ถ้า dip ต่อ",
+        "entryLevels": [
+          {
+            "note": "ราคาวันนี้ ร่วง 5.5% จาก high เมื่อวาน",
+            "timing": "ตอนนี้"
+          },
+          {
+            "note": "50-day MA support zone — เพิ่มถ้า sector dip ต่อ",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "โซน 200-day MA — deep dip re-entry",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Citi 12-month target — Q2 earnings catalyst ใกล้"
+        },
+        "tp2": {
+          "note": "Bernstein Outperform — MI350 launch confirmed"
+        },
+        "tp3": {
+          "note": "Moon case · 2027 ถ้า MI350/400 แย่ง H100 share ได้จริง",
+          "moon": true
+        },
+        "stopLoss": {
+          "tightNote": "Below 50-day MA — sector rotation ออกจาก semis",
+          "hardNote": "200-day MA breach — AI capex slowdown thesis",
+          "rrNote": "Tight stop vs TP2",
+          "rrWarning": "R/R ดี แต่ stock run 140% YTD แล้ว size conservative"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "Q2 2026 Earnings",
+          "note": "data center revenue acceleration read"
+        },
+        {
+          "event": "AMD Advancing AI Event",
+          "note": "MI350 roadmap preview — key catalyst"
+        },
+        {
+          "event": "เป้า TP1",
+          "note": "BofA/Citi target zone"
+        }
+      ]
+    }
+  }
+}

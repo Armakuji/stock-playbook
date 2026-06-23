@@ -8,6 +8,9 @@ import { StockCard } from "./StockCard";
 import { RankingChangeTable } from "./RankingChangeTable";
 import { CatalystCalendar } from "./CatalystCalendar";
 import { ThemeGroups } from "./ThemeGroups";
+import { FactorRiskPanel } from "./FactorRiskPanel";
+
+const TOP_N = 10;
 
 export default function DashboardPage() {
   const reports = getAllReports();
@@ -16,12 +19,13 @@ export default function DashboardPage() {
   const calendarEvents = getCatalystCalendar();
 
   // Separate active hunt (pre / undated catalyst) from realized (event already passed).
-  // Realized picks are kept for the backtest but moved off the active board so they
-  // don't masquerade as fresh ideas.
-  const active   = ranked.filter((r) => reportStage(r) !== "post");
-  const realized = ranked.filter((r) => reportStage(r) === "post");
-  const clusters = detectCatalystClusters(active);
-  const factorRisk = factorConcentration(active);
+  const allActive = ranked.filter((r) => reportStage(r) !== "post");
+  const top5      = allActive.slice(0, TOP_N);           // dashboard shows top 5 only
+  const realized  = ranked.filter((r) => reportStage(r) === "post");
+
+  // Clusters + factor risk computed on ALL active (not just top 5) for accuracy
+  const clusters   = detectCatalystClusters(allActive);
+  const factorRisk = factorConcentration(allActive);
 
   // drift map: ticker → scoreDrift (used by StockCard)
   const driftMap: Record<string, number | null> = {};
@@ -69,7 +73,12 @@ export default function DashboardPage() {
           </h1>
         </div>
         <p style={{ fontSize: 12, color: "var(--muted)", margin: "0 0 20px", fontFamily: "var(--font-mono, monospace)" }}>
-          {ranked.length} stocks · ranked by conviction · {new Date().toLocaleDateString("en-GB")}
+          Top {Math.min(TOP_N, allActive.length)} of {ranked.length} stocks · ranked by catalyst proximity · {new Date().toLocaleDateString("en-GB")}
+          {ranked.length > TOP_N && (
+            <span style={{ color: "#3b82f6", marginLeft: 6 }}>
+              · all {ranked.length} in Ranking Change ↓
+            </span>
+          )}
         </p>
 
         {/* ── Radar Stats strip ─────────────────────────────── */}
@@ -118,43 +127,42 @@ export default function DashboardPage() {
         </div>
       </div>
 
-      {/* ── Factor-correlation warning (real risk: same factor, not same bucket) ── */}
-      {factorRisk.map((f) => {
-        const red = f.ratio >= 0.7;
-        const c = red ? "#ef4444" : "#f59e0b";
-        return (
-          <div key={f.factor} style={{
-            display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap",
-            padding: "9px 14px", marginBottom: 12, borderRadius: 10,
-            background: `${c}14`, border: `1px solid ${c}40`,
-            fontFamily: "var(--font-mono, monospace)", fontSize: 11.5,
-          }}>
-            <span style={{ color: c, fontWeight: 800 }}>{f.icon} FACTOR · {f.label}</span>
-            <span style={{ color: "var(--text)", fontWeight: 700 }}>{f.tickers.join(" · ")}</span>
-            <span style={{ color: "var(--muted)" }}>
-              {f.tickers.length} pick · {Math.round(f.ratio * 100)}% ของ book — เคลื่อนไหวพร้อมกันบนข่าว factor เดียว
-            </span>
-          </div>
-        );
-      })}
+      {/* ── Factor-correlation warning — collapsible ────────────── */}
+      <FactorRiskPanel risks={factorRisk} />
 
-      {/* ── Catalyst-day clustering warning ───────────────────── */}
-      {clusters.map((cl, i) => (
-        <div key={i} style={{
-          display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap",
-          padding: "9px 14px", marginBottom: 12, borderRadius: 10,
-          background: "#f59e0b14", border: "1px solid #f59e0b40",
-          fontFamily: "var(--font-mono, monospace)", fontSize: 11.5,
+      {/* ── Catalyst-day clustering warning — compact inline strip ── */}
+      {clusters.length > 0 && (
+        <div style={{
+          display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap",
+          padding: "7px 12px", marginBottom: 12, borderRadius: 8,
+          border: "1px solid #f59e0b28",
+          fontFamily: "var(--font-mono, monospace)",
         }}>
-          <span style={{ color: "#f59e0b", fontWeight: 800 }}>⚠️ EVENT CLUSTER</span>
-          <span style={{ color: "var(--text)", fontWeight: 700 }}>{cl.tickers.join(" · ")}</span>
-          <span style={{ color: "var(--muted)" }}>
-            มีอีเวนต์ภายใน 3 วันรอบ {new Date(cl.iso + "T00:00:00Z").toLocaleDateString("en-GB")} — กระจายวัน entry / ลด size กันพังพร้อมกัน
+          <span style={{ fontSize: 10, fontWeight: 800, color: "#f59e0b", flexShrink: 0 }}>
+            ⚠️ EVENT CLUSTER
+          </span>
+          {clusters.map((cl, i) => (
+            <span key={i} style={{
+              display: "inline-flex", alignItems: "center", gap: 6,
+              padding: "2px 9px", borderRadius: 5,
+              background: "#f59e0b0e", border: "1px solid #f59e0b22",
+              fontSize: 10,
+            }}>
+              <span style={{ color: "#f59e0b", fontWeight: 700, flexShrink: 0 }}>
+                {new Date(cl.iso + "T00:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "short" })}
+              </span>
+              <span style={{ color: "var(--text)", fontWeight: 600 }}>
+                {cl.tickers.join(" · ")}
+              </span>
+            </span>
+          ))}
+          <span style={{ fontSize: 10, color: "var(--muted)", flexShrink: 0 }}>
+            — กระจาย entry / ลด size
           </span>
         </div>
-      ))}
+      )}
 
-      {/* ── Card grid — grouped by theme ──────────────────────── */}
+      {/* ── Top 5 card grid — grouped by catalyst type ────────── */}
       {ranked.length === 0 ? (
         <div style={{ textAlign: "center", padding: "80px 0", color: "var(--muted)" }}>
           <div style={{ fontSize: 32, marginBottom: 12 }}>📊</div>
@@ -163,7 +171,7 @@ export default function DashboardPage() {
           </p>
         </div>
       ) : (
-        <ThemeGroups ranked={active} driftMap={driftMap} />
+        <ThemeGroups ranked={top5} driftMap={driftMap} />
       )}
 
       {/* ── Realized / post-catalyst (kept for backtest, off the active board) ── */}
