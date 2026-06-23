@@ -7,6 +7,7 @@ import { applyTranslation, Lang } from "@/lib/i18n";
 import { TimelinePoint } from "@/lib/timeline";
 import { StockTimeline } from "./StockTimeline";
 import { StalenessBanner } from "./StalenessBanner";
+import { marketCapTier } from "@/lib/market-cap";
 
 // ─── Color maps ───────────────────────────────────────────────────────────────
 
@@ -888,6 +889,8 @@ export function ReportContent({ report: baseReport, timelinePoints = [] }: { rep
 
   const verdictColor = VERDICT_COLORS[report.verdict] ?? "#64748b";
   const isPositive = report.priceChange >= 0;
+  const cap = marketCapTier(baseReport.marketCap);
+  const th = lang === "th";
 
   return (
     <div className="terminal-surface" style={{ maxWidth: 1100, margin: "0 auto" }}>
@@ -960,6 +963,18 @@ export function ReportContent({ report: baseReport, timelinePoints = [] }: { rep
                 }}>
                   {report.scoreLabel ?? report.verdict}
                 </span>
+                {cap && (
+                  <span
+                    title={`Market-cap size tier · ${baseReport.marketCap ?? ""}`}
+                    style={{
+                      fontSize: 11, fontWeight: 800, padding: "4px 12px", borderRadius: 8,
+                      background: cap.bg, color: cap.color, border: `1px solid ${cap.color}40`,
+                      whiteSpace: "nowrap", fontFamily: "var(--font-mono, monospace)", letterSpacing: "0.5px",
+                    }}
+                  >
+                    {cap.label}
+                  </span>
+                )}
               </div>
               <div style={{ fontSize: 11, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", lineHeight: 1.6, display: "flex", flexWrap: "wrap", gap: "2px 0", alignItems: "center" }}>
                 <span style={{ whiteSpace: "nowrap" }}>{report.companyName}</span>
@@ -984,7 +999,33 @@ export function ReportContent({ report: baseReport, timelinePoints = [] }: { rep
             </div>
           </div>
 
-          <p style={{ fontSize: 13, color: "#94a3b8", lineHeight: 1.75, margin: 0, position: "relative" }}>{report.summary}</p>
+          {/* What the business does (short) — distinct from the thesis below */}
+          {baseReport.companyDescription && (
+            <div style={{ display: "flex", gap: 8, alignItems: "baseline", flexWrap: "wrap", marginBottom: 10, position: "relative" }}>
+              <span style={{
+                fontSize: 8.5, fontWeight: 800, letterSpacing: "1.2px", textTransform: "uppercase",
+                color: "var(--muted)", fontFamily: "var(--font-mono, monospace)",
+                padding: "2px 7px", borderRadius: 5, background: "var(--border)", whiteSpace: "nowrap", flexShrink: 0,
+              }}>
+                {th ? "ธุรกิจ" : "Business"}
+              </span>
+              <span style={{ fontSize: 12.5, color: "#cbd5e1", lineHeight: 1.6, flex: 1, minWidth: 200 }}>
+                {baseReport.companyDescription}
+              </span>
+            </div>
+          )}
+
+          {/* Thesis — why it's interesting */}
+          <div style={{ display: "flex", gap: 8, alignItems: "baseline", flexWrap: "wrap", position: "relative" }}>
+            <span style={{
+              fontSize: 8.5, fontWeight: 800, letterSpacing: "1.2px", textTransform: "uppercase",
+              color: verdictColor, fontFamily: "var(--font-mono, monospace)",
+              padding: "2px 7px", borderRadius: 5, background: `${verdictColor}1c`, whiteSpace: "nowrap", flexShrink: 0,
+            }}>
+              {th ? "ทำไมน่าสนใจ" : "Thesis"}
+            </span>
+            <p style={{ fontSize: 13, color: "#94a3b8", lineHeight: 1.75, margin: 0, flex: 1, minWidth: 200 }}>{report.summary}</p>
+          </div>
         </div>
 
         {/* Verdict — promoted directly under hero, large & prominent */}

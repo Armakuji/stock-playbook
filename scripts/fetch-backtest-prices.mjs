@@ -19,7 +19,9 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
 const REPORTS_DIR = path.join(ROOT, "web", "data", "reports");
 const CACHE_FILE = path.join(ROOT, "web", "data", "backtest-cache.json");
+const NEAR_MISS_FILE = path.join(ROOT, "web", "data", "near-misses.json");
 const CHECKPOINTS = [30, 60, 90];
+const NEAR_MISS_CHECKPOINTS = [14, 30];
 
 // ── must produce IDENTICAL keys to web/lib/backtest.ts ──────────────────────
 function addDays(dateStr, days) {              // dateStr "YYYYMMDD" → "YYYY-MM-DD"
@@ -85,8 +87,27 @@ function collectPastTargets() {
   return [...out.values()];
 }
 
+// Near-miss outcome dates (screenDate + 14/30d) so the counterfactual log fills too.
+function collectNearMissTargets() {
+  if (!fs.existsSync(NEAR_MISS_FILE)) return [];
+  let nm;
+  try { nm = JSON.parse(fs.readFileSync(NEAR_MISS_FILE, "utf-8")).nearMisses ?? []; } catch { return []; }
+  const out = new Map();
+  for (const m of nm) {
+    if (!m.ticker || !m.screenDate) continue;
+    for (const days of NEAR_MISS_CHECKPOINTS) {
+      const targetDate = addDays(m.screenDate, days);
+      if (targetDate > today) continue;
+      out.set(cacheKey(m.ticker, targetDate), { ticker: m.ticker, date: targetDate });
+    }
+  }
+  return [...out.values()];
+}
+
 const cache = readCache();
-const targets = collectPastTargets();
+const merged = new Map();
+for (const t of [...collectPastTargets(), ...collectNearMissTargets()]) merged.set(cacheKey(t.ticker, t.date), t);
+const targets = [...merged.values()];
 const todo = targets.filter((t) => !cache[cacheKey(t.ticker, t.date)]);
 
 console.log(`📊 ${targets.length} past checkpoint(s) · ${todo.length} to fetch · ${targets.length - todo.length} cached`);

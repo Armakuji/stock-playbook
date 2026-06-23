@@ -2,6 +2,7 @@ import { getAllReports } from "@/lib/reports";
 import { rankReports } from "@/lib/ranking";
 import { getRankingChanges } from "@/lib/ranking-history";
 import { getCatalystCalendar } from "@/lib/catalyst-calendar";
+import { detectCatalystClusters, reportStage } from "@/lib/catalyst-timing";
 import { StockCard } from "./StockCard";
 import { RankingChangeTable } from "./RankingChangeTable";
 import { CatalystCalendar } from "./CatalystCalendar";
@@ -12,6 +13,13 @@ export default function DashboardPage() {
   const ranked = rankReports(reports);
   const rankChanges = getRankingChanges();
   const calendarEvents = getCatalystCalendar();
+
+  // Separate active hunt (pre / undated catalyst) from realized (event already passed).
+  // Realized picks are kept for the backtest but moved off the active board so they
+  // don't masquerade as fresh ideas.
+  const active   = ranked.filter((r) => reportStage(r) !== "post");
+  const realized = ranked.filter((r) => reportStage(r) === "post");
+  const clusters = detectCatalystClusters(active);
 
   // drift map: ticker → scoreDrift (used by StockCard)
   const driftMap: Record<string, number | null> = {};
@@ -103,10 +111,26 @@ export default function DashboardPage() {
             </span>
           )}
           <span style={{ fontSize: 11, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>
-            sorted: verdict · fed · score · upside
+            sorted: catalyst proximity · conviction
           </span>
         </div>
       </div>
+
+      {/* ── Catalyst-day clustering warning ───────────────────── */}
+      {clusters.map((cl, i) => (
+        <div key={i} style={{
+          display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap",
+          padding: "9px 14px", marginBottom: 12, borderRadius: 10,
+          background: "#f59e0b14", border: "1px solid #f59e0b40",
+          fontFamily: "var(--font-mono, monospace)", fontSize: 11.5,
+        }}>
+          <span style={{ color: "#f59e0b", fontWeight: 800 }}>⚠️ EVENT CLUSTER</span>
+          <span style={{ color: "var(--text)", fontWeight: 700 }}>{cl.tickers.join(" · ")}</span>
+          <span style={{ color: "var(--muted)" }}>
+            มีอีเวนต์ภายใน 3 วันรอบ {new Date(cl.iso + "T00:00:00Z").toLocaleDateString("en-GB")} — กระจายวัน entry / ลด size กันพังพร้อมกัน
+          </span>
+        </div>
+      ))}
 
       {/* ── Card grid — grouped by theme ──────────────────────── */}
       {ranked.length === 0 ? (
@@ -117,7 +141,33 @@ export default function DashboardPage() {
           </p>
         </div>
       ) : (
-        <ThemeGroups ranked={ranked} driftMap={driftMap} />
+        <ThemeGroups ranked={active} driftMap={driftMap} />
+      )}
+
+      {/* ── Realized / post-catalyst (kept for backtest, off the active board) ── */}
+      {realized.length > 0 && (
+        <div style={{ marginTop: 28 }}>
+          <div style={{
+            fontSize: 10, fontWeight: 800, color: "var(--muted)", textTransform: "uppercase",
+            letterSpacing: "1.5px", fontFamily: "var(--font-mono, monospace)", marginBottom: 10,
+          }}>
+            ✅ Realized · catalyst passed — monitoring only
+          </div>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+            {realized.map((r) => (
+              <a key={`${r.ticker}-${r.generatedAt}`} href={`/report/${r.ticker.toLowerCase()}`}
+                style={{
+                  display: "flex", alignItems: "center", gap: 8, textDecoration: "none",
+                  padding: "6px 12px", borderRadius: 8, background: "var(--card)",
+                  border: "1px solid var(--border)", opacity: 0.7,
+                  fontFamily: "var(--font-mono, monospace)", fontSize: 12,
+                }}>
+                <span style={{ fontWeight: 800, color: "var(--text)" }}>{r.ticker}</span>
+                <span style={{ fontSize: 10, color: "var(--muted)" }}>{r.verdict}</span>
+              </a>
+            ))}
+          </div>
+        </div>
       )}
 
       {/* ── Ranking Change section ─────────────────────────────── */}

@@ -8,6 +8,9 @@ export interface Catalyst {
   urgencyLabel?: string;
   /** Date string shown as a colored pill, e.g. "Jun 17, 2026" */
   dateBadge?: string;
+  /** Machine-readable event date (ISO YYYY-MM-DD). Drives timing sort & clustering;
+   *  falls back to parsing dateBadge when omitted. Set this for the primary catalyst. */
+  catalystDate?: string;
   /** Color of the date pill */
   badgeColor?: "red" | "yellow" | "green" | "blue";
   /** Color of the left-side dot indicator */

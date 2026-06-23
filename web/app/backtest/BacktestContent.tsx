@@ -3,6 +3,7 @@
 import { useState, useCallback } from "react";
 import Link from "next/link";
 import { BacktestEntry, BacktestStats, Checkpoint } from "@/lib/backtest";
+import { NearMissOutcome } from "@/lib/near-miss";
 
 // ── Constants ─────────────────────────────────────────────────────────────────
 
@@ -179,9 +180,70 @@ function FetchButton({ pendingItems }: {
   );
 }
 
+// ── Near-miss log ───────────────────────────────────────────────────────────
+
+function NearMissSection({ nearMisses, pickAvg30 }: { nearMisses: NearMissOutcome[]; pickAvg30: number | null }) {
+  const completed = nearMisses.filter((n) => n.pct30 !== null);
+  const nmAvg30 = completed.length
+    ? completed.reduce((s, n) => s + (n.pct30 as number), 0) / completed.length
+    : null;
+  const edge = pickAvg30 !== null && nmAvg30 !== null ? pickAvg30 - nmAvg30 : null;
+
+  return (
+    <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: 14, padding: "20px 22px", marginTop: 24 }}>
+      <div style={{ fontSize: 10, fontWeight: 800, color: "var(--muted)", textTransform: "uppercase", letterSpacing: "1.5px", fontFamily: "var(--font-mono, monospace)", marginBottom: 6 }}>
+        🕵️ Near-Miss Log — Selection Counterfactual
+      </div>
+      <p style={{ fontSize: 11.5, color: "var(--muted)", margin: "0 0 16px", lineHeight: 1.6 }}>
+        Candidates that passed the screen but missed the top 5. If picks don&apos;t beat near-misses, the ranking isn&apos;t adding alpha.
+      </p>
+
+      {nearMisses.length === 0 ? (
+        <div style={{ textAlign: "center", padding: "24px 0", color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", fontSize: 12 }}>
+          No near-misses logged yet — <code>/dashboard</code> will record qualified-but-not-picked candidates here.
+        </div>
+      ) : (
+        <>
+          {edge !== null && (
+            <div style={{ display: "flex", gap: 18, flexWrap: "wrap", marginBottom: 16, fontFamily: "var(--font-mono, monospace)", fontSize: 12 }}>
+              <span>Picks avg 30d: <strong style={{ color: pickAvg30! >= 0 ? "#10b981" : "#ef4444" }}>{fmtPct(pickAvg30)}</strong></span>
+              <span>Near-miss avg 30d: <strong style={{ color: nmAvg30! >= 0 ? "#10b981" : "#ef4444" }}>{fmtPct(nmAvg30)}</strong></span>
+              <span>Selection edge: <strong style={{ color: edge >= 0 ? "#10b981" : "#ef4444" }}>{fmtPct(edge)}</strong></span>
+            </div>
+          )}
+          <div style={{ overflowX: "auto" }}>
+            <table style={{ width: "100%", borderCollapse: "collapse", minWidth: 560, fontFamily: "var(--font-mono, monospace)", fontSize: 12 }}>
+              <thead>
+                <tr style={{ borderBottom: "1px solid var(--border)" }}>
+                  {["Screen", "Stock", "Why missed", "+14d", "+30d"].map((h) => (
+                    <th key={h} style={{ padding: "8px 12px", textAlign: h === "Why missed" || h === "Stock" ? "left" : "center", fontSize: 9, fontWeight: 800, color: "var(--muted)", textTransform: "uppercase", letterSpacing: "1px", whiteSpace: "nowrap" }}>{h}</th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {nearMisses.map((n, i) => (
+                  <tr key={`${n.ticker}-${n.screenDate}-${i}`} style={{ borderBottom: i < nearMisses.length - 1 ? "1px solid var(--border)" : "none" }}>
+                    <td style={{ padding: "8px 12px", textAlign: "center", color: "var(--muted)", fontSize: 11, whiteSpace: "nowrap" }}>{fmtDate(n.screenDate)}</td>
+                    <td style={{ padding: "8px 12px", fontWeight: 800 }}>{n.ticker}</td>
+                    <td style={{ padding: "8px 12px", color: "var(--muted)", fontSize: 11 }}>{n.reason}</td>
+                    <td style={{ padding: "8px 12px", textAlign: "center", fontWeight: 700, color: n.pct14 == null ? "#64748b" : n.pct14 >= 0 ? "#10b981" : "#ef4444" }}>{fmtPct(n.pct14)}</td>
+                    <td style={{ padding: "8px 12px", textAlign: "center", fontWeight: 700, color: n.pct30 == null ? "#64748b" : n.pct30 >= 0 ? "#10b981" : "#ef4444" }}>{fmtPct(n.pct30)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
+
 // ── Main ──────────────────────────────────────────────────────────────────────
 
-export function BacktestContent({ entries, stats }: { entries: BacktestEntry[]; stats: BacktestStats }) {
+export function BacktestContent({ entries, stats, nearMisses }: { entries: BacktestEntry[]; stats: BacktestStats; nearMisses: NearMissOutcome[] }) {
+  const pick30 = entries.flatMap((e) => e.checkpoints.filter((c) => c.days === 30 && c.actualPct !== null).map((c) => c.actualPct as number));
+  const pickAvg30 = pick30.length ? pick30.reduce((s, v) => s + v, 0) / pick30.length : null;
   // Items that are past due but have no cached price yet
   const today = new Date().toISOString().slice(0, 10);
   const pendingFetches = entries.flatMap((e) =>
@@ -306,6 +368,9 @@ export function BacktestContent({ entries, stats }: { entries: BacktestEntry[]; 
           </table>
         </div>
       </div>
+
+      {/* Near-miss counterfactual */}
+      <NearMissSection nearMisses={nearMisses} pickAvg30={pickAvg30} />
 
       <p style={{ fontSize: 11, color: "#475569", marginTop: 16, fontFamily: "var(--font-mono, monospace)" }}>
         Prices fetched from Yahoo Finance · Cached in web/data/backtest-cache.json · Not financial advice

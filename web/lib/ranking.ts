@@ -1,5 +1,6 @@
 import { StockReport } from "./types";
 import { computeScore } from "./scoring";
+import { daysToCatalyst, timingTier } from "./catalyst-timing";
 
 const VERDICT_SCORE: Record<StockReport["verdict"], number> = {
   BUY: 40,
@@ -37,8 +38,15 @@ export function computeRankScore(report: StockReport): number {
 }
 
 export function rankReports(reports: StockReport[]): (StockReport & { rank: number; rankScore: number })[] {
+  // Primary sort = catalyst proximity (this is a near-term catalyst hunter),
+  // secondary = conviction rankScore. Soft tiers, not a hard filter.
   return reports
     .map((r) => ({ ...r, rankScore: computeRankScore(r) }))
-    .sort((a, b) => b.rankScore - a.rankScore)
+    .sort((a, b) => {
+      const ta = timingTier(daysToCatalyst(a));
+      const tb = timingTier(daysToCatalyst(b));
+      if (ta !== tb) return ta - tb;          // nearer catalyst first
+      return b.rankScore - a.rankScore;        // then by conviction
+    })
     .map((r, i) => ({ ...r, rank: i + 1 }));
 }
