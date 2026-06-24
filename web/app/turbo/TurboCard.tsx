@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { StockReport } from "@/lib/types";
+import { marketCapTier } from "@/lib/market-cap";
 
 // ── Flame ring — replaces green score ring ────────────────────────────────────
 function FlameRing({ moonPct }: { moonPct: number }) {
@@ -141,14 +142,17 @@ export function TurboCard({
   report,
   rank,
   moonPct,
+  bullPct,
 }: {
   report: StockReport;
   rank: number;
   moonPct: number;
+  bullPct: number;
 }) {
   const isPositive = report.priceChange >= 0;
   const moonPrice = report.scenarios?.find((s) => s.label === "Moon")?.price
     ?? report.entryStrategy.tp3.price;
+  const cap = marketCapTier(report.marketCap);
 
   return (
     <Link href={`/report/${report.ticker}`} style={{ textDecoration: "none" }}>
@@ -211,7 +215,25 @@ export function TurboCard({
             </span>
           </div>
           <div style={{ fontSize: 11, color: "#7f4040" }}>{report.companyName}</div>
-          <div style={{ fontSize: 10, color: "#4d2020", marginTop: 3, fontStyle: "italic" }}>
+
+          {/* Cap size badge */}
+          {cap && (
+            <div style={{ marginTop: 6 }}>
+              <span
+                title={`${cap.label} · ${report.marketCap ?? ""}`}
+                style={{
+                  fontSize: 9, fontWeight: 800, padding: "2px 7px", borderRadius: 5,
+                  background: cap.bg, color: cap.color, border: `1px solid ${cap.color}3a`,
+                  letterSpacing: "0.5px", whiteSpace: "nowrap",
+                  fontFamily: "var(--font-mono, monospace)",
+                }}
+              >
+                {cap.short}
+              </span>
+            </div>
+          )}
+
+          <div style={{ fontSize: 10, color: "#4d2020", marginTop: 4, fontStyle: "italic" }}>
             {report.companyDescription}
           </div>
         </div>
@@ -236,6 +258,12 @@ export function TurboCard({
               fontFamily: "var(--font-mono, monospace)",
             }}>
               {isPositive ? "▲" : "▼"} {Math.abs(report.priceChange).toFixed(2)}%
+            </span>
+            <span style={{
+              fontSize: 10, fontWeight: 700, color: "#ff6d00",
+              fontFamily: "var(--font-mono, monospace)",
+            }}>
+              🔥 +{Math.round(bullPct)}% bull
             </span>
             <span style={{
               fontSize: 10, fontWeight: 700, color: "#d500f9",

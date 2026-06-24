@@ -952,26 +952,61 @@ function LangToggle({ lang, hasThai, onChange }: { lang: Lang; hasThai: boolean;
   );
 }
 
+// ─── Turbo theme constants ────────────────────────────────────────────────────
+
+const TURBO_COLORS = {
+  primary:   "#ff3d00",
+  secondary: "#ff6d00",
+  moon:      "#d500f9",
+  card:      "#0e0508",
+  border:    "#2d1010",
+  muted:     "#7f4040",
+  deepBg:    "#13050a",
+};
+
 // ─── Main Export ──────────────────────────────────────────────────────────────
 
-export function ReportContent({ report: baseReport, timelinePoints = [] }: { report: StockReport; timelinePoints?: TimelinePoint[] }) {
+export function ReportContent({ report: baseReport, timelinePoints = [], isTurbo = false }: { report: StockReport; timelinePoints?: TimelinePoint[]; isTurbo?: boolean }) {
   const [lang, setLang] = useState<Lang>("en");
   const report = applyTranslation(baseReport, lang);
   const hasThai = !!baseReport.i18n?.th;
 
-  const verdictColor = VERDICT_COLORS[report.verdict] ?? "#64748b";
+  // Turbo reports use fire accent instead of purple SPECULATIVE color
+  const verdictColor = isTurbo ? TURBO_COLORS.primary : (VERDICT_COLORS[report.verdict] ?? "#64748b");
   const isPositive = report.priceChange >= 0;
   const cap = marketCapTier(baseReport.marketCap);
   const th = lang === "th";
 
   return (
-    <div className="terminal-surface" style={{ maxWidth: 1100, margin: "0 auto" }}>
+    <div className="terminal-surface" style={{ maxWidth: 1100, margin: "0 auto", position: "relative" }}>
+      {/* ── Turbo fire theme override ── */}
+      {isTurbo && (
+        <>
+          <style>{`
+            .turbo-report { --card: ${TURBO_COLORS.card}; --border: ${TURBO_COLORS.border}; --muted: ${TURBO_COLORS.muted}; }
+            .turbo-report .analyst-fill { background: linear-gradient(90deg, #ff3d0055, #ff6d00) !important; }
+          `}</style>
+          {/* Fire ambient layers */}
+          <div aria-hidden="true" style={{ position: "fixed", inset: 0, pointerEvents: "none", zIndex: -1, overflow: "hidden" }}>
+            <div style={{ position: "absolute", top: "-10%", left: "50%", transform: "translateX(-50%)", width: "min(900px, 130vw)", height: 600, background: "radial-gradient(ellipse at center, rgba(255,61,0,0.07) 0%, transparent 65%)" }} />
+            <div style={{ position: "absolute", bottom: "-10%", right: "-5%", width: 600, height: 500, background: "radial-gradient(ellipse at center, rgba(213,0,249,0.05) 0%, transparent 65%)" }} />
+            <div style={{ position: "absolute", top: "40%", left: "-8%", width: 400, height: 400, background: "radial-gradient(ellipse at center, rgba(255,109,0,0.04) 0%, transparent 65%)" }} />
+          </div>
+          {/* Fire gradient top bar */}
+          <div style={{ height: 3, borderRadius: 2, marginBottom: 16, background: "linear-gradient(90deg, #ff6d00, #ff3d00, #d500f9)", backgroundSize: "200% 100%", animation: "gradientShift 4s linear infinite" }} />
+        </>
+      )}
+
+      <div className={isTurbo ? "turbo-report" : ""}>
       <StickySummaryBar report={report} verdictColor={verdictColor} />
 
       {/* Nav row */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 20, flexWrap: "wrap", gap: 10 }}>
-        <Link href="/" style={{ fontSize: 13, color: "var(--muted)", textDecoration: "none", display: "flex", alignItems: "center", gap: 6 }}>
-          ← All Reports
+        <Link
+          href={isTurbo ? "/turbo" : "/"}
+          style={{ fontSize: 13, color: isTurbo ? TURBO_COLORS.secondary : "var(--muted)", textDecoration: "none", display: "flex", alignItems: "center", gap: 6 }}
+        >
+          {isTurbo ? "← 🔥 Turbo" : "← All Reports"}
         </Link>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
           <Link
@@ -1178,6 +1213,7 @@ export function ReportContent({ report: baseReport, timelinePoints = [] }: { rep
           </p>
         </div>
       </div>
+      </div> {/* end turbo-report wrapper */}
     </div>
   );
 }

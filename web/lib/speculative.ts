@@ -44,19 +44,28 @@ export function getSpeculativeReport(ticker: string): StockReport | null {
   return withComputedScore(JSON.parse(content) as StockReport);
 }
 
-/** Rank turbo stocks by moon scenario % upside (highest first) */
+/** Rank turbo stocks by most potential upside — bull scenario % primary, moon % tiebreaker */
 export function rankTurboReports(
   reports: StockReport[]
-): (StockReport & { rank: number; moonPct: number })[] {
+): (StockReport & { rank: number; moonPct: number; bullPct: number })[] {
   return reports
     .map((r) => {
       const moon = r.scenarios?.find((s) => s.label === "Moon");
+      const bull = r.scenarios?.find((s) => s.label === "Bull");
+
       const moonPct = moon
         ? moon.pct
         : ((r.entryStrategy.tp3.price - r.price) / r.price) * 100;
-      return { ...r, moonPct };
+
+      // Bull % = primary sort key — most realistic "potential up"
+      // Fallback: TP2 upside if no bull scenario in JSON
+      const bullPct = bull
+        ? bull.pct
+        : ((r.entryStrategy.tp2.price - r.price) / r.price) * 100;
+
+      return { ...r, moonPct, bullPct };
     })
-    .sort((a, b) => b.moonPct - a.moonPct)
+    .sort((a, b) => b.bullPct - a.bullPct || b.moonPct - a.moonPct)
     .map((r, i) => ({ ...r, rank: i + 1 }));
 }
 

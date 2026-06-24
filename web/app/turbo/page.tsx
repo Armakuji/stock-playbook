@@ -80,7 +80,7 @@ export default function TurboPage() {
             fontFamily: "var(--font-mono, monospace)",
           }}>
             {ranked.length > 0
-              ? `${ranked.length} picks · ranked by 🌙 moon % upside · small/mid cap 300%++ plays`
+              ? `${ranked.length} picks · ranked by 🔥 most potential upside (bull case) · small/mid cap 300%++ plays`
               : "No turbo picks yet — run /analyze-turbo TICKER to generate one"}
           </p>
 
@@ -144,7 +144,7 @@ export default function TurboPage() {
                 border: "1px solid #2d1010", fontWeight: 800,
                 fontFamily: "var(--font-mono, monospace)",
               }}>
-                sorted: 🌙 moon % high → low
+                sorted: 🔥 most potential up (bull %)
               </span>
             </div>
           )}
@@ -181,6 +181,7 @@ export default function TurboPage() {
                 report={r}
                 rank={r.rank}
                 moonPct={r.moonPct}
+                bullPct={r.bullPct}
               />
             ))}
           </div>
