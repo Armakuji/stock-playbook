@@ -107,6 +107,9 @@ export default function RootLayout({
               <a href="/backtest" style={{ fontSize: 11, color: "var(--muted)", textDecoration: "none", fontFamily: "var(--font-mono, monospace)", fontWeight: 700, letterSpacing: "0.3px" }}>
                 📊 Backtest
               </a>
+              <a href="/turbo" style={{ fontSize: 11, textDecoration: "none", fontFamily: "var(--font-mono, monospace)", fontWeight: 700, letterSpacing: "0.3px", background: "linear-gradient(90deg, #ff6d00, #d500f9)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
+                🔥 Turbo
+              </a>
               {isLocal && (
                 <a href="/journal" style={{ fontSize: 11, color: "#f59e0b", textDecoration: "none", fontFamily: "var(--font-mono, monospace)", fontWeight: 700, letterSpacing: "0.3px" }}>
                   📒 Journal

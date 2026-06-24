@@ -77,6 +77,25 @@
   **ไฟล์:** `scripts/fetch-backtest-prices.mjs` (ดึง benchmark) · `web/lib/north-star.ts` · `web/app/backtest/BacktestContent.tsx`
   **เป้า:** isolate selection edge จริง — pick ชนะ expected move ของมันไหม
 
+## 11. Turbo-compare: moonshot ranking criteria แยกจาก core dashboard
+
+**ปัญหา:** `dashboard-compare` skill v2 ใช้ catalyst proximity เป็น primary gate — ถูกต้องสำหรับ core portfolio (event-driven 30% plays) แต่ turbo stocks มี thesis คนละแบบ: "lottery ticket ค่าขนม ถือรอเด้ง 300%+" ซึ่งไม่ต้องการ catalyst วันชัด แต่ต้องการ (1) survival / dilution risk ต่ำ (2) upside path เป็นจริงได้ (3) entry ถูกพอให้ % วิ่ง การนำ catalyst-gate มาใช้กับ turbo ทำให้ RXRX ถูก demote เพราะไม่มีวันที่ ทั้งที่มันคือ moonshot ที่ดีที่สุดในกลุ่ม
+
+**ทำ:** สร้าง turbo-compare logic แยก (skill หรือ section ใน dashboard-compare) โดยใช้ criteria ชุดใหม่:
+- **Survival score** (0–30): cash runway / burn rate / dilution risk · runway ≥ 18m = +30, 12–18m = +20, <12m = 0
+- **Upside reality score** (0–25): มี analyst PT ที่ฝันถึง 3x+ ไหม / TAM ใหญ่พอ / platform play vs single product
+- **Entry score** (0–25): distance จาก preferred zone (เหมือน v2)
+- **Headwind penalty** (−30 to 0): class action, cancelled POs, management transition, PFIC, analyst PT ต่ำกว่าราคา
+- **Bull% bonus** (0–10): bull case ≥ 200% = +10, 100–200% = +5 (ไม่ใช่ primary sort แต่ใช้เป็น tiebreaker)
+
+Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open NOW" — ชื่อต่างกันเพื่อเตือน framing
+
+**ไฟล์:** `skills/dashboard-compare/SKILL.md` (เพิ่ม turbo mode section) · อาจแยกเป็น `skills/turbo-compare/SKILL.md` ใหม่เลย
+
+**เป้า:** compare turbo portfolio ได้ถูก thesis — RXRX ขึ้น #1 เพราะ survival แข็ง + entry ใกล้โซน ไม่ใช่เพราะมีวัน catalyst ชัด
+
+---
+
 ## ยังไม่เลือกทำ (ไว้พิจารณาทีหลัง)
 - **Earned category ranking + expectancy-based sizing** *(idea 5+9)* — ลบ sector priority (Tech→AI→Space) ให้ category ลอยขึ้น top ตาม hit-rate จริง + size ตาม expectancy (`hitRate × upside ÷ MAE`) **⚠️ ขึ้นกับ #9 มี sample พอก่อน** ไม่งั้น optimize บน noise — ต้องใส่ shrinkage/prior + cap อิทธิพลตอน N น้อย
 - **Portfolio-level correlation view** — holding (AVGO/NVDA/MRVL/INTC/PLTR/ASTS) correlate สูง เด้งพร้อมกันตาม AI sentiment; view exposure/concentration/powder *(ทับซ้อนกับ #10 — อาจรวม)*

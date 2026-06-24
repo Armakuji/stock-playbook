@@ -1,0 +1,329 @@
+{
+  "ticker": "RXRX",
+  "companyName": "Recursion Pharmaceuticals Inc.",
+  "companyDescription": "AI-driven drug discovery · 5 active clinical programs · Partnerships with Sanofi & Roche — decoding biology at machine speed",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-24T12:00:00.000Z",
+  "price": 3.18,
+  "priceChange": -1.55,
+  "priceNote": "Near 52W low · Cash runway into early 2028 · JPMorgan PT $10 (Overweight) — significant disconnect",
+  "marketCap": "$1.7B",
+  "sector": "Healthcare / AI Drug Discovery",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 52,
+  "summary": "Recursion is the AI drug discovery bet — building the largest biological dataset on earth, partnered with Sanofi ($150M+) and Roche to discover drugs at machine speed. With 5 clinical programs advancing and cash into 2028, the bear case (no approvals, burn) is already priced in at $3.18. The moon case: one Phase 3 approval or Big Pharma acquisition = 5–10x. Binary risk: clinical trials can fail. Position max 2–3% — ถ้า trial fail = ลงได้ 50–70%.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "AI platform progress update + clinical milestones. Q1 showed 30% opex cut and cash runway into early 2028. Q2 = next read on Sanofi/Roche milestone timing.",
+      "urgencyLabel": "AUG 4",
+      "dateBadge": "Aug 4, 2026",
+      "catalystDate": "2026-08-04",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "💊",
+      "name": "REC-994 / REC-2282 Phase 2/3 Data Readout",
+      "description": "Lead programs targeting cavernous malformation and NF2 — Phase 2/3 data expected H2 2026 to 2027. Positive data = potential 5x",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🤝",
+      "name": "Sanofi / Roche Partnership Milestone",
+      "description": "Milestone payments from Sanofi ($150M+ deal) and Roche partnership — next milestone could validate AI platform credibility",
+      "urgencyLabel": "2026",
+      "dateBadge": "2026",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🏭",
+      "name": "Acquisition Target",
+      "description": "At $1.7B market cap with AI platform + 5 clinical programs + Big Pharma partnerships, RXRX is a prime M&A target for Pfizer, AZ, or Novo Nordisk",
+      "urgencyLabel": "WILDCARD",
+      "dateBadge": "Anytime",
+      "catalystDate": "2027-06-30",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Clinical trial failure — Phase 2/3 data miss = 50–70% downside overnight",
+    "Cash burn — spending ~$100M+/quarter; dilutive raises inevitable if no milestone payments",
+    "AI drug discovery unproven at scale — no AI-discovered drug has cleared Phase 3 anywhere yet",
+    "Competitive landscape — Schrödinger, Insilico Medicine, Exscientia all targeting same AI pharma space",
+    "Partnership revenue is milestone-gated, not recurring — lumpy and unpredictable"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q2 2026 Earnings",
+      "dateRange": "Aug 4, 2026",
+      "note": "Cash burn rate + milestone payment update",
+      "est": "Cash balance focus",
+      "highlight": "yellow"
+    },
+    {
+      "event": "REC-994 Phase 2 Data",
+      "dateRange": "H2 2026",
+      "note": "Cavernous malformation binary",
+      "est": "Go/No-go",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -65,
+      "price": 1.11
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 115,
+      "price": 6.84
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 245,
+      "price": 10.97
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 475,
+      "price": 18.11
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "JPMorgan",
+      "target": 10.0,
+      "rating": "Overweight"
+    },
+    {
+      "firm": "Morgan Stanley",
+      "target": 5.5,
+      "rating": "Overweight"
+    },
+    {
+      "firm": "Consensus (8 analysts)",
+      "target": 6.64,
+      "rating": "Hold"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Small-cap biotech is rate-sensitive — high rates make future DCF values of speculative pipelines less attractive. Fed cuts in 2026 would re-rate biotech multiples higher.",
+    "inflationNote": "Drug pricing pressures from IRA remain. But AI drug discovery companies monetize through partnerships, not direct drug sales.",
+    "sectorImpact": "Fed cuts = biotech re-rating catalyst. Small cap biotech benefits most from lower rates. RXRX is particularly sensitive as a pre-revenue biotech.",
+    "summary": "Fed risk MEDIUM — any Fed cut would be a sector tailwind for biotech. Rate-sensitive but clinical data is the primary catalyst."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Scale In 1",
+        "level": 3.18,
+        "note": "Near 52W low — start 1% position here",
+        "timing": "Now"
+      },
+      {
+        "label": "Scale In 2",
+        "level": 2.85,
+        "rangeMax": 3.0,
+        "note": "Near all-time support — preferred entry zone",
+        "timing": "On dip",
+        "preferred": true
+      },
+      {
+        "label": "Deep Dip",
+        "level": 2.5,
+        "note": "Risk-of-zero territory — only if you believe in the platform",
+        "timing": "If thesis intact"
+      }
+    ],
+    "tp1": {
+      "price": 6.84,
+      "pct": 115.1,
+      "note": "Consensus analyst target — first positive data"
+    },
+    "tp2": {
+      "price": 10.97,
+      "pct": 244.7,
+      "note": "JPMorgan bull case — multiple positive trial readouts"
+    },
+    "tp3": {
+      "price": 18.11,
+      "pct": 469.5,
+      "note": "Moon case — acquisition or Phase 3 approval · 2027",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 2.6,
+      "tightPct": -18.2,
+      "tightNote": "Below 52W low support — exit before zeros",
+      "hard": 1.75,
+      "hardPct": -44.9,
+      "hardNote": "50% from entry — thesis failed, take the loss",
+      "riskReward": "7.8 : 1",
+      "rrNote": "vs TP2 from Entry 2",
+      "rrWarning": "Asymmetric ✅"
+    },
+    "verdict": "ค่าขนม play — buy near the low, size 2–3% max. Clinical data is the only thing that matters. แนะนำ 2–3% ของ portfolio เท่านั้น ถ้า trial fail = -50–70%",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "Biotech stocks typically run 20–40% in 4–6 weeks before Phase 2/3 data readouts as sentiment turns positive. RXRX runs 30–60% before major clinical readouts historically.",
+    "preRunupTiming": "4–6 สัปดาห์ก่อน data readout",
+    "preRunupPct": "+25–50%",
+    "postWin": {
+      "avgPct": 150,
+      "range": "+80% to +350%",
+      "note": "Neumora Therapeutics +180% on Phase 2 depression trial success (2023). Karuna Therapeutics +300% on Phase 3 schizophrenia data → acquired by BMS for $14B.",
+      "exampleDate": "Sep 2023"
+    },
+    "postLose": {
+      "avgPct": -55,
+      "range": "-40% to -80%",
+      "note": "Typical Phase 2/3 failure in CNS: -50–70% same day. Passage Bio -72% on GBA1-PD trial fail (2024).",
+      "exampleDate": "Mar 2024"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "Pre-revenue biotech with binary clinical risk — 2% max. If data positive, add on the gap up. Never go all-in before binary data."
+    },
+    "stopPreCatalyst": {
+      "pct": -18,
+      "price": 2.6,
+      "note": "ถ้าหลุด $2.60 ก่อน data = ออก ไม่ถือผ่าน binary"
+    },
+    "stopPostCatalyst": {
+      "pct": -40,
+      "note": "ถ้า data fail ออกทันทีที่ market open ไม่ average down"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "RXRX",
+      "event": "Karuna Therapeutics — Phase 3 KarXT schizophrenia approval → BMS acquisition",
+      "date": "Sep 2023",
+      "movePct": 350,
+      "days": 90,
+      "outcome": "good",
+      "note": "CNS drug company with AI-informed drug design, acquired by BMS for $14B (+350% from pre-announcement). RXRX closest comparable in AI-enhanced CNS pipeline."
+    },
+    {
+      "ticker": "EXAI",
+      "event": "Exscientia — Sanofi AI partnership announcement $1.2B deal",
+      "date": "Jan 2022",
+      "movePct": 220,
+      "days": 5,
+      "outcome": "good",
+      "note": "AI drug discovery company (direct RXRX competitor) surged +220% on Sanofi mega-deal. RXRX already has Sanofi deal — next milestone payment could trigger similar re-rating."
+    },
+    {
+      "ticker": "NRBO",
+      "event": "Neumora Therapeutics — Phase 2 navacaprant depression data success",
+      "date": "Sep 2023",
+      "movePct": 180,
+      "days": 2,
+      "outcome": "good",
+      "note": "Small CNS biotech +180% on Phase 2 win. Similar to RXRX's REC-994 CNS program risk/reward profile."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Recursion Pharmaceuticals: Cash runway extended into early 2028 with Sanofi milestone payments",
+    "url": "https://stockanalysis.com/stocks/rxrx/",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/rxrx/",
+    "https://www.tipranks.com/news/the-fly/jpmorgan-overweight-rxrx"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "RXRX คือ bet บน AI drug discovery — กำลังสร้าง dataset ชีววิทยาที่ใหญ่ที่สุดในโลก ร่วมกับ Sanofi และ Roche ด้วย 5 โปรแกรม clinical ที่กำลังดำเนินอยู่ bear case ถูก price in แล้วที่ $3.18 moon case คือ การอนุมัติ Phase 3 หนึ่งตัวหรือถูก acquisition = 5–10x ความเสี่ยงสูงสุดคือ trial fail",
+      "priceNote": "ใกล้ 52W ต่ำ · cash ถึงต้นปี 2028 · JPMorgan เป้า $10",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "Data Phase 2/3 ของ REC-994/REC-2282",
+          "description": "โปรแกรมหลักสำหรับ cavernous malformation และ NF2 — data H2 2026 ถึง 2027 ถ้าบวก = 5x"
+        },
+        {
+          "name": "Milestone จาก Sanofi / Roche",
+          "description": "การจ่าย milestone ถัดไปจาก Sanofi ($150M+ deal) จะช่วย validate แพลตฟอร์ม AI"
+        },
+        {
+          "name": "เป้าหมาย Acquisition",
+          "description": "Market cap $1.7B + AI platform + 5 clinical programs = M&A target ที่น่าสนใจสำหรับ Pfizer, AZ, หรือ Novo Nordisk"
+        }
+      ],
+      "risks": [
+        "Trial fail = -50–70% ชั่วข้ามคืน",
+        "เผา cash ~$100M+/quarter ต้องระดมทุน dilutive",
+        "AI drug discovery ยังไม่มีใครผ่าน Phase 3 ได้ในโลกนี้",
+        "แข่งขันสูงในตลาด AI pharma",
+        "รายได้จาก milestone ไม่แน่นอนและกระโดด"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Biotech small cap sensitive ต่ออัตราดอกเบี้ย Fed cut = re-rate biotech ขึ้น",
+        "inflationNote": "แรงกดดัน drug pricing จาก IRA ยังอยู่ แต่ RXRX monetize ผ่าน partnership ไม่ใช่ drug sale",
+        "sectorImpact": "Fed cut = tailwind ใหญ่สำหรับ biotech small cap",
+        "summary": "Fed risk ปานกลาง clinical data คือ primary catalyst ไม่ใช่ macro"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม play — ซื้อใกล้จุดต่ำ size 2–3% max ข้อมูล trial คือทุกอย่าง แนะนำ 2–3% ของ portfolio เท่านั้น ถ้า trial fail = -50–70%",
+        "entryLevels": [
+          {
+            "note": "ใกล้ 52W low เริ่ม 1% ก่อน",
+            "timing": "ตอนนี้"
+          },
+          {
+            "note": "zone แนวรับหลัก — entry ที่ดีกว่า",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "เสี่ยง risk-of-zero เข้าได้ถ้าเชื่อ platform",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "เป้า consensus — data บวกตัวแรก"
+        },
+        "tp2": {
+          "note": "Bull case JPMorgan — trial หลาย data บวก"
+        },
+        "tp3": {
+          "note": "Moon case — ถูก acquisition หรือผ่าน Phase 3 · 2027"
+        },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า 52W low = ออกก่อน zeros",
+          "hardNote": "-45% จาก entry = thesis fail ยอมรับ loss",
+          "rrNote": "vs TP2 จาก Entry 2",
+          "rrWarning": "Asymmetric ✅"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "ผลประกอบการ Q2 2026",
+          "note": "อัพเดท cash burn + milestone payment"
+        },
+        {
+          "event": "Data Phase 2 ของ REC-994",
+          "note": "Binary catalyst หลัก H2 2026"
+        }
+      ]
+    }
+  }
+}

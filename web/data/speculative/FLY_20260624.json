@@ -1,0 +1,329 @@
+{
+  "ticker": "FLY",
+  "companyName": "Firefly Aerospace Inc.",
+  "companyDescription": "Commercial space launch + NASA contracts · Alpha rocket + Blue Ghost lunar lander · First private Moon landing success — picks & shovels of the new space economy",
+  "exchange": "NYSE",
+  "generatedAt": "2026-06-24T12:00:00.000Z",
+  "price": 30.95,
+  "priceChange": -0.64,
+  "priceNote": "SpaceX IPO selloff hit FLY -19.6% Jun 16, then KeyBanc upgraded to Overweight $50 PT on Jun 19. Now at $30.95 — well below analyst PT $48.22",
+  "marketCap": "$5.0B",
+  "sector": "Technology / Space Launch",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 62,
+  "summary": "Firefly Aerospace is the only private company with a successful Moon landing under its belt (Blue Ghost, 2025) and active NASA contracts for Moon Base construction. Alpha Flight 8 upcoming + $75M NASA MoonFall subcontract + Elytra orbital transfer vehicle in development. Buy-the-dip after SpaceX IPO selloff — secondary offering overhang cleared. KeyBanc Overweight $50, Jefferies $52. Moon case: Firefly becomes the Boeing of new space at $100+. Position max 3–5% — ค่าขนม ถ้า launch fails = ลง 50%+.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "Jefferies FY26 rev est $452M. Q2 = first full quarter post-NASA MoonFall $75M contract and SciTec Air Force ABMS award. Revenue ramp read.",
+      "urgencyLabel": "AUG",
+      "dateBadge": "Aug 2026",
+      "catalystDate": "2026-08-07",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🚀",
+      "name": "Alpha Flight 8 Launch",
+      "description": "Next Alpha rocket launch — successful delivery = commercial contract backlog accelerator and SpaceX alternative credibility",
+      "urgencyLabel": "Q3 2026",
+      "dateBadge": "Q3 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🌕",
+      "name": "NASA Moon Base Contract Phase 2",
+      "description": "Selected for NASA Moon Base — next phase contract award TBD. Multi-billion dollar program over 5–10 years if fully funded",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "yellow",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🛸",
+      "name": "Elytra Orbital Transfer Vehicle",
+      "description": "Space tug for satellite deployment — addressable market $5B+/year. First commercial demo could re-rate the stock significantly",
+      "urgencyLabel": "2027",
+      "dateBadge": "2027",
+      "catalystDate": "2027-06-30",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Launch failure — Alpha rocket explosion = -40–60% same day (SpaceX history: every public failure = major selloff)",
+    "NASA budget cuts — Moon Base program dependent on Congressional appropriations; political risk real",
+    "SpaceX competition — Falcon 9/9R dominates commercial launch; Firefly competes in small sat segment only",
+    "Cash burn — space companies require constant capital; dilution is structural",
+    "Secondary offering overhang — recent $48 offering created technical resistance"
+  ],
+  "estimateDates": [
+    {
+      "event": "Alpha Flight 8",
+      "dateRange": "Q3 2026",
+      "note": "Most important near-term binary event",
+      "est": "Success = +30%+",
+      "highlight": "yellow"
+    },
+    {
+      "event": "NASA Moon Base Phase 2",
+      "dateRange": "H2 2026",
+      "note": "Contract size determines re-rating",
+      "est": "Multi-year award",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -52,
+      "price": 14.86
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 65,
+      "price": 51.07
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 155,
+      "price": 78.92
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 330,
+      "price": 133.09
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "KeyBanc",
+      "target": 50.0,
+      "rating": "Overweight"
+    },
+    {
+      "firm": "Jefferies",
+      "target": 52.0,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Consensus (9 analysts)",
+      "target": 48.22,
+      "rating": "Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "NASA contracts are government-appropriated — rate-insensitive. Commercial satellite launch revenue is tied to corporate capex but is multi-year contracted.",
+    "inflationNote": "Rocket manufacturing is commodity-input intensive (aluminum, titanium, rocket fuel). Inflation squeezes margins but contract pricing is fixed-price government.",
+    "sectorImpact": "Space sector benefits from defense spending increases post-Ukraine/geopolitical risk. Bipartisan support for Moon program strong.",
+    "summary": "Fed risk LOW — revenue is NASA contract + government-backed. Rate environment secondary to launch success and contract awards."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Scale In 1",
+        "level": 30.95,
+        "note": "Current price after SpaceX selloff — start 1–2%",
+        "timing": "Now"
+      },
+      {
+        "label": "Scale In 2",
+        "level": 26.0,
+        "rangeMax": 28.0,
+        "note": "Dip zone — add 1–2% more if it fills the gap",
+        "timing": "On dip",
+        "preferred": true
+      },
+      {
+        "label": "Deep Dip",
+        "level": 20.0,
+        "note": "Near IPO support — only if no fundamental change",
+        "timing": "If thesis intact"
+      }
+    ],
+    "tp1": {
+      "price": 51.07,
+      "pct": 65.0,
+      "note": "Analyst consensus target — Alpha Flight 8 success"
+    },
+    "tp2": {
+      "price": 78.92,
+      "pct": 154.9,
+      "note": "Bull case — NASA Moon Base Phase 2 awarded"
+    },
+    "tp3": {
+      "price": 133.09,
+      "pct": 330.1,
+      "note": "Moon case — Firefly becomes space infrastructure prime · 2028",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 25.0,
+      "tightPct": -19.2,
+      "tightNote": "Below gap fill — launch program uncertainty",
+      "hard": 16.0,
+      "hardPct": -48.3,
+      "hardNote": "Near 52W low $16 — exit if here",
+      "riskReward": "5.8 : 1",
+      "rrNote": "vs TP2 from Entry 2",
+      "rrWarning": "Asymmetric ✅"
+    },
+    "verdict": "Best risk/reward in space sector post-selloff. Buy-the-dip on SpaceX IPO noise. Scale in 2–3%. แนะนำ 3–5% ของ portfolio เท่านั้น ถ้า Alpha launch fail = ลง 40–50%",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "satellite_launch",
+    "preRunup": "Space launch stocks typically run 10–25% in 2–3 weeks before announced launch windows as excitement builds. Alpha Flight 8 will follow same pattern.",
+    "preRunupTiming": "2–3 สัปดาห์ก่อน launch window",
+    "preRunupPct": "+10–25%",
+    "postWin": {
+      "avgPct": 45,
+      "range": "+25% to +80%",
+      "note": "Rocket Lab (RKLB) +45% on Electron launch success + NASA contract win (2023). Planet Labs +60% on manifest announcement. Space stocks have outsized reactions to successful launches.",
+      "exampleDate": "Nov 2023"
+    },
+    "postLose": {
+      "avgPct": -45,
+      "range": "-30% to -65%",
+      "note": "ABL Space dissolved after RS1 failure (2023). Virgin Orbit -80% post-launch failure leading to bankruptcy. Launch failure is existential for early-stage launch companies.",
+      "exampleDate": "Jan 2023"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Space launch is binary by nature — rocket either flies or it doesn't. 3% max. FLY has proven track record (Alpha Flight 7 success, Blue Ghost moon landing) which reduces risk vs pure early-stage."
+    },
+    "stopPreCatalyst": {
+      "pct": -19,
+      "price": 25.0,
+      "note": "ถ้าหลุด $25 ก่อน launch = ออกก่อน ไม่ถือผ่าน binary launch"
+    },
+    "stopPostCatalyst": {
+      "pct": -30,
+      "note": "ถ้า Alpha fail ออกได้เลยที่ open ไม่รอ"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "RKLB",
+      "event": "Rocket Lab — NASA CAPSTONE contract + Electron launch manifest expansion",
+      "date": "Nov 2022",
+      "movePct": 380,
+      "days": 180,
+      "outcome": "good",
+      "note": "Rocket Lab went from $4 to $19+ (+375%) as it accumulated NASA contracts and proved launch reliability. FLY at similar stage with Moon landing already proven — stronger foundation."
+    },
+    {
+      "ticker": "LUNR",
+      "event": "Intuitive Machines — IM-1 Odysseus Moon landing (first private US Moon landing)",
+      "date": "Feb 2024",
+      "movePct": 260,
+      "days": 3,
+      "outcome": "good",
+      "note": "LUNR surged +260% on first private Moon landing news. FLY already achieved this milestone (Blue Ghost, 2025) — next catalyst is sustained contract ramp."
+    },
+    {
+      "ticker": "ASTS",
+      "event": "AST SpaceMobile — FCC approval + AT&T/Verizon partnership announcement",
+      "date": "Sep 2024",
+      "movePct": 450,
+      "days": 60,
+      "outcome": "good",
+      "note": "Space tech stock +450% on regulatory approval + carrier partnership. FLY's NASA Moon Base selection is the equivalent inflection event for launch infrastructure."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Firefly Aerospace: KeyBanc upgrades to Overweight $50 target; secondary offering at $48 creates entry opportunity",
+    "url": "https://stockanalysis.com/stocks/fly/",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/fly/",
+    "https://www.tipranks.com/news/the-fly/keybanc-overweight-fly-50"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Firefly Aerospace คือบริษัท private เดียวที่ลงจอดบนดวงจันทร์ได้สำเร็จ (Blue Ghost 2025) และมี contract NASA Moon Base อยู่ Alpha Flight 8 กำลังจะมา + $75M NASA MoonFall subcontract + Elytra space tug ในพัฒนา buy the dip หลัง SpaceX IPO selloff — overhang secondary offering หมดแล้ว Moon case: Firefly กลายเป็น Boeing ของ new space ที่ $100+",
+      "priceNote": "ย่อจาก $73 หลัง secondary offering ที่ $48 · NASA Moon Base selected · SpaceX IPO selloff ให้ entry",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "Alpha Flight 8 Launch",
+          "description": "Launch ถัดไป — success = accelerate commercial backlog + credibility"
+        },
+        {
+          "name": "NASA Moon Base Phase 2 Contract",
+          "description": "Phase ถัดไปของ NASA Moon Base — multi-billion program ถ้าได้"
+        },
+        {
+          "name": "Elytra Orbital Transfer Vehicle",
+          "description": "Space tug สำหรับ satellite — TAM $5B+/ปี"
+        }
+      ],
+      "risks": [
+        "Launch fail = -40–60% ทันที",
+        "NASA budget ถูก cut จาก Congress",
+        "SpaceX แข่งขันในตลาด commercial launch",
+        "เผา cash ต้องระดมทุนต่อเนื่อง",
+        "Overhang จาก secondary offering ที่ $48"
+      ],
+      "macroRisk": {
+        "rateOutlook": "NASA contract เป็น government-funded ไม่ sensitive ต่ออัตราดอกเบี้ย",
+        "inflationNote": "การผลิตจรวดใช้วัตถุดิบ commodity — เงินเฟ้อกดดัน margin บ้าง",
+        "sectorImpact": "Space sector ได้ประโยชน์จากงบป้องกันประเทศเพิ่มขึ้น",
+        "summary": "Fed risk ต่ำ — รายได้มาจาก NASA + government contract"
+      },
+      "entryStrategy": {
+        "verdict": "Risk/reward ดีที่สุดใน space sector หลัง selloff Scale in 2–3% แนะนำ 3–5% ของ portfolio เท่านั้น ถ้า Alpha launch fail = ลง 40–50%",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบันหลัง SpaceX selloff เริ่ม 1–2%",
+            "timing": "ตอนนี้"
+          },
+          {
+            "note": "Zone dip เพิ่ม 1–2% ถ้าราคาลงมา",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ใกล้ IPO support เข้าได้ถ้า thesis ไม่เปลี่ยน",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "เป้า consensus — Alpha Flight 8 success"
+        },
+        "tp2": {
+          "note": "Bull case — NASA Moon Base Phase 2 ได้รับ"
+        },
+        "tp3": {
+          "note": "Moon case — Firefly กลายเป็น space prime · 2028"
+        },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า gap fill — ความไม่แน่นอน launch program",
+          "hardNote": "ใกล้ 52W low $16 = ออก",
+          "rrNote": "vs TP2 จาก Entry 2",
+          "rrWarning": "Asymmetric ✅"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "Alpha Flight 8",
+          "note": "Binary event ที่สำคัญที่สุดในระยะสั้น"
+        },
+        {
+          "event": "NASA Moon Base Phase 2",
+          "note": "ขนาด contract กำหนด re-rating"
+        }
+      ]
+    }
+  }
+}

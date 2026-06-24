@@ -1,0 +1,205 @@
+{
+  "ticker": "ACMR",
+  "companyName": "ACM Research, Inc.",
+  "companyDescription": "Wafer processing & semiconductor equipment · Dominant in China WFE market · ECP, PECVD, wet cleaning tools — riding China's $100B+ semiconductor self-sufficiency push",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-24T00:00:00.000Z",
+  "price": 104.46,
+  "priceChange": -4.92,
+  "priceNote": "⚠️ At 52W high ($111) — recently pulled back · Roth Capital PT $125 (Buy) · Analysts avg PT $88 below current",
+  "marketCap": "$7.2B",
+  "sector": "Technology / Semiconductor Equipment",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 55,
+  "summary": "⚠️ NOTE: ACMR market cap $7.2B exceeds typical Turbo profile ($5B max) and analysts' average PT $88 is BELOW current price. This is a pure momentum + China semiconductor upcycle play. ACMR dominates China WFE market and is executing: Q1 2026 revenue +34% YoY, EPS $0.34 vs $0.20 estimate. The moon case requires China's $150B+ semiconductor buildout to sustain AND ACMR to expand internationally — possible but a 3–5 year thesis. Roth Capital $125 target suggests 20% near-term upside; 300%+ requires China semicon boom + re-rating to premium multiple. Position max 2–3% — ค่าขนม ที่ risk/reward ปานกลาง.",
+  "catalysts": [
+    {
+      "icon": "🇨🇳",
+      "name": "China Semiconductor CAPEX Surge",
+      "description": "China's CXMT, YMTC, SMIC expanding aggressively — each fab expansion order means incremental ACMR equipment revenue. China WFE 2026 spend est. $40–50B",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "2026–2027",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings Beat",
+      "description": "FY26 guide $1.08B–$1.175B confirmed. Q2 shipments of $241M (+54% YoY) should drive revenue recognition acceleration in H2",
+      "urgencyLabel": "AUG 5",
+      "dateBadge": "Aug 5, 2026",
+      "catalystDate": "2026-08-05",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🌏",
+      "name": "International Expansion + PECVD SiCN",
+      "description": "First PECVD SiCN system shipped (Apr 2026) — opens advanced BEOL/packaging market outside China. Reduces geopolitical concentration risk",
+      "urgencyLabel": "2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "⚠️ Analysts' consensus PT ($88) is BELOW current price ($104) — stock may already reflect near-term upside",
+    "US export controls expansion — any new entity list additions targeting Chinese semiconductor fabs = major revenue risk",
+    "Kerrisdale Capital / Steamboat shareholder letter (Apr 2026) — corporate governance concerns, parent company structure with ACM Shanghai",
+    "China geopolitical risk — US-China tech war escalation; SMIC/CXMT customer bans would devastate revenue",
+    "Gross margin compression — new product mix (PECVD, furnace) at lower margins than ECP core",
+    "Taiwan contingency — conflict in strait would halt global semiconductor capex including China"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Aug 5, 2026", "note": "Revenue recognition from $241M shipments", "est": "est. $260M+ rev", "highlight": "yellow" },
+    { "event": "FY2026 Annual Revenue", "dateRange": "Mar 2027", "note": "$1.08B–$1.175B guidance achievement", "est": "$1.1B midpoint", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -55, "price": 47.01 },
+    { "label": "Base", "color": "yellow", "pct": 20, "price": 125.35 },
+    { "label": "Bull", "color": "green", "pct": 95, "price": 203.70 },
+    { "label": "Moon", "color": "purple", "pct": 325, "price": 443.96 }
+  ],
+  "analystTargets": [
+    { "firm": "Roth Capital", "target": 125.00, "rating": "Buy" },
+    { "firm": "Morgan Stanley", "target": 68.00, "rating": "Overweight" },
+    { "firm": "Seaport Research", "target": 75.00, "rating": "Buy" },
+    { "firm": "Consensus (8 analysts)", "target": 88.63, "rating": "Buy (avg below current)" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Semiconductor equipment companies are capital-intensive — customer capex decisions are sensitive to global rates. China fabs are government-subsidized so somewhat insulated from global rate cycles.",
+    "inflationNote": "Equipment manufacturing inflation manageable — ACMR sources many components in China. USD/CNY dynamics affect margins on international sales.",
+    "sectorImpact": "China WFE spend driven by government mandate, not Fed policy. But US sanctions risk is the primary non-fundamental risk for ACMR.",
+    "summary": "Fed risk MEDIUM — primarily geopolitical/export control risk, not rate risk. China semiconductor spend is policy-driven."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Watch at Current", "level": 104.46, "note": "At 52W high zone — wait for pullback before initiating", "timing": "Watch" },
+      { "label": "Entry 1", "level": 90.00, "rangeMax": 95.00, "note": "Pullback to analyst consensus range — preferred entry", "timing": "On dip", "preferred": true },
+      { "label": "Entry 2", "level": 75.00, "note": "Near Morgan Stanley PT — deep dip entry for China selloff", "timing": "On China news selloff" }
+    ],
+    "tp1": { "price": 125.35, "pct": 19.9, "note": "Roth Capital PT — near-term earnings momentum" },
+    "tp2": { "price": 203.70, "pct": 94.9, "note": "Bull case — FY27 revenue $2B+ re-rating at 10x forward sales" },
+    "tp3": { "price": 443.96, "pct": 325.0, "note": "Moon case — China semicon full buildout + international expansion · FY28–29", "moon": true },
+    "stopLoss": {
+      "tight": 83.00, "tightPct": -20.5, "tightNote": "Below Morgan Stanley PT — geopolitical catalyst",
+      "hard": 55.00, "hardPct": -47.3, "hardNote": "Below bear case — entity list or export ban",
+      "riskReward": "4.8 : 1", "rrNote": "vs TP2 from Entry 1", "rrWarning": "Moderate R/R"
+    },
+    "verdict": "⚠️ Not classic turbo profile — $7.2B market cap, analysts below current price. Best entered on a China news dip. Moon case requires 3–5 year China semiconductor buildout. แนะนำ 2–3% เท่านั้น",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "ACMR typically runs 15–25% in 4–6 weeks before earnings as channel checks on China fab capex spending leak positive. Q1 2026 was a strong beat (+34% revenue, EPS $0.34 vs $0.20).",
+    "preRunupTiming": "4–6 สัปดาห์ก่อน earnings",
+    "preRunupPct": "+10–20%",
+    "postWin": {
+      "avgPct": 35,
+      "range": "+20% to +60%",
+      "note": "ACMR surged from $56 to $111+ (+98%) in 2 months after consecutive earnings beats in Q4 2025 and Q1 2026. Chinese WFE leaders run hard on capex cycle confirmation.",
+      "exampleDate": "Mar 2026"
+    },
+    "postLose": {
+      "avgPct": -35,
+      "range": "-20% to -60%",
+      "note": "ACMR fell -18% on Q4 2025 earnings (Feb 2026) when gross margin disappointed. US export restrictions news = -20–40% historical drawdown.",
+      "exampleDate": "Feb 2026"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "Market cap $7.2B exceeds turbo profile — 2% max. Best risk/reward only if entered on dip near analyst consensus $88. At current $104, risk/reward is moderate at best."
+    },
+    "stopPreCatalyst": { "pct": -20, "price": 83.00, "note": "ถ้าหลุด $83 ก่อน earnings = ออก" },
+    "stopPostCatalyst": { "pct": -20, "note": "ถ้า miss + guidance cut ออกทันทีที่ market open" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "KLAC",
+      "event": "KLA Corporation — China WFE capex cycle 2020–2021 boom",
+      "date": "Jan 2021",
+      "movePct": 140,
+      "days": 180,
+      "outcome": "good",
+      "note": "KLA went from $200 to $480 (+140%) during China WFE boom 2020–2021. ACMR is a smaller, purer China WFE play with higher leverage to the same cycle."
+    },
+    {
+      "ticker": "AMAT",
+      "event": "Applied Materials — China semiconductor capacity buildout cycle",
+      "date": "Nov 2020",
+      "movePct": 110,
+      "days": 150,
+      "outcome": "good",
+      "note": "AMAT +110% during China WFE upcycle. ACMR has more concentrated China exposure = higher upside AND higher downside vs AMAT."
+    },
+    {
+      "ticker": "ACMR",
+      "event": "ACM Research — 52W breakout from $23 to $111 on China semicon boom",
+      "date": "Jan 2026",
+      "movePct": 382,
+      "days": 150,
+      "outcome": "good",
+      "note": "ACMR itself moved +382% in 5 months as China fab capex accelerated. Next move requires sustained CXMT/YMTC buildout and margin recovery — achievable but slower."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "ACM Research price target raised to $125 from $100 at Roth Capital following ROTH London Conference",
+    "url": "https://www.tipranks.com/news/the-fly/acm-research-price-target-raised-to-125-from-100-at-roth-capital-thefly-news",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/acmr/",
+    "https://www.tipranks.com/news/the-fly/acm-research-price-target-raised-to-125-from-100-at-roth-capital-thefly-news",
+    "https://www.globenewswire.com/news-release/2026/05/07/3289717/0/en/acm-research-reports-first-quarter-2026-results.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "⚠️ หมายเหตุ: ACMR market cap $7.2B เกิน profile Turbo ($5B max) และ analyst เฉลี่ย PT $88 ต่ำกว่าราคาปัจจุบัน $104 นี่คือ momentum + China semiconductor upcycle play ล้วนๆ ACMR ครองตลาด China WFE และ execute ได้ดี: Q1 2026 revenue +34% YoY EPS $0.34 vs estimate $0.20 moon case ต้องการ China semiconductor buildout ยั่งยืน + expansion นานาชาติ — 3–5 ปี Roth Capital เป้า $125 ให้ upside ~20% ระยะสั้น",
+      "priceNote": "⚠️ ใกล้ 52W สูง ($111) — ดีกว่าเข้าตอนย่อ · Roth Capital PT $125 · analyst เฉลี่ยต่ำกว่าราคาปัจจุบัน",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "China Semiconductor CAPEX พุ่ง", "description": "CXMT, YMTC, SMIC ขยายตัวแรง — แต่ละ fab expansion = revenue เพิ่ม ACMR" },
+        { "name": "ผลประกอบการ Q2 2026 Beat", "description": "Shipment $241M (+54% YoY) จะกลายเป็น revenue H2 — watch guidance" },
+        { "name": "International Expansion + PECVD SiCN", "description": "Ship PECVD SiCN system ตัวแรก (เม.ย. 2026) เปิดตลาด BEOL/packaging นอก China" }
+      ],
+      "risks": [
+        "⚠️ Analyst consensus PT $88 ต่ำกว่าราคาปัจจุบัน — อาจ over-priced ระยะสั้น",
+        "US export controls เพิ่มขึ้น — ถ้า SMIC/CXMT ถูก ban รายได้หาย",
+        "Kerrisdale Capital + Steamboat — governance concerns จากโครงสร้าง ACM Shanghai",
+        "ความเสี่ยงภูมิรัฐศาสตร์ China — สงครามเทคโนโลยี US-China รุนแรงขึ้น",
+        "Gross margin กดดัน — product mix ใหม่ margin ต่ำกว่า ECP core"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Equipment capex sensitive ต่ออัตราดอกเบี้ย แต่ China fab expansion ได้รับเงินอุดหนุนรัฐบาล",
+        "inflationNote": "Manufacturing ใน China — USD/CNY ส่งผลต่อ margin นานาชาติ",
+        "sectorImpact": "China WFE driven by government mandate ไม่ใช่ Fed นโยบาย — geopolitical risk คือหลัก",
+        "summary": "Fed risk ปานกลาง ความเสี่ยงหลักคือ export controls และ geopolitics"
+      },
+      "entryStrategy": {
+        "verdict": "⚠️ ไม่ใช่ turbo profile classic — market cap $7.2B, analyst ต่ำกว่าราคา ดีกว่าเข้าตอน China news dip แนะนำ 2–3% เท่านั้น",
+        "entryLevels": [
+          { "note": "ใกล้ 52W สูง รอ pullback ก่อน", "timing": "ดูก่อน" },
+          { "note": "ย่อมา zone analyst consensus — preferred entry", "timing": "ถ้าย่อ" },
+          { "note": "ใกล้ Morgan Stanley PT — deep dip entry ถ้า China news ออก", "timing": "ถ้า China news" }
+        ],
+        "tp1": { "note": "Roth Capital PT — earnings momentum ระยะสั้น" },
+        "tp2": { "note": "Bull case — FY27 revenue $2B+ re-rate ที่ 10x forward sales" },
+        "tp3": { "note": "Moon case — China semicon buildout เต็มรูปแบบ + international · FY28–29" },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า Morgan Stanley PT — geopolitical catalyst ออก",
+          "hardNote": "ต่ำกว่า bear case — entity list หรือ export ban",
+          "rrNote": "vs TP2 จาก Entry 1",
+          "rrWarning": "R/R ปานกลาง"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q2 2026", "note": "รับรู้รายได้จาก shipment $241M" },
+        { "event": "รายได้ประจำปี FY2026", "note": "ทำได้ตาม guidance $1.08B–$1.175B ไหม" }
+      ]
+    }
+  }
+}

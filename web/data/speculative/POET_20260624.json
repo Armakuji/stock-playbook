@@ -1,0 +1,205 @@
+{
+  "ticker": "POET",
+  "companyName": "POET Technologies Inc.",
+  "companyDescription": "Photonic Integrated Circuits (PICs) for AI optical networks · POET Optical Interposer — chip-level integration of electronic + photonic devices for frontier AI datacenter interconnects",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-24T00:00:00.000Z",
+  "price": 12.15,
+  "priceChange": 1.67,
+  "priceNote": "Recovering from Marvell cancellation -50% crash · $400M investment closed May 2026 · PFIC class action overhang",
+  "marketCap": "$2.1B",
+  "sector": "Technology / Semiconductors / Photonics",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 48,
+  "summary": "POET Technologies holds a genuinely differentiated photonic integration IP (Optical Interposer) that enables AI datacenters to push optical networking from the rack level to chip level — a massive TAM if they win. The $400M capital raise validates institutional belief in the platform. BUT: Marvell cancelled all purchase orders (Apr 2026) citing CFO confidentiality breach, triggering class action lawsuits and a -50% crash. Recovery thesis: new hyperscaler customer + Lumilens partnership execution. HIGH risk — position max 2% only. ถ้า thesis fail ลงได้ 70%+.",
+  "catalysts": [
+    {
+      "icon": "🔗",
+      "name": "New Hyperscaler Customer Announcement",
+      "description": "POET needs to replace Marvell with a direct hyperscaler (Microsoft, Google, Amazon, Meta) — any announcement would 3–5x the stock from current levels",
+      "urgencyLabel": "2026",
+      "dateBadge": "2026",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🔬",
+      "name": "Lumilens Partnership Scale-up",
+      "description": "POET + Lumilens advancing wafer-level photonic integration for next-gen AI optical networks (announced May 2026) — first revenue recognition from this partnership",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "💰",
+      "name": "$400M Capital Deployment",
+      "description": "Largest capital raise in POET history — institutional investor took $400M direct at $21/share. Capital to scale manufacturing and accelerate product leadership",
+      "urgencyLabel": "UNDERWAY",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-10-31",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "⚠️ CRITICAL: Marvell cancelled ALL purchase orders — POET's primary revenue pipeline was eliminated overnight (Apr 2026)",
+    "Class action lawsuits (Gibbs Mura, Bernstein Liebhard, Johnson Fistel) — CFO confidentiality breach allegation; legal overhang suppresses valuation",
+    "PFIC (Passive Foreign Investment Company) tax status issue — Canadian entity filing creates US investor tax complexity",
+    "Pre-revenue stage — $1.4M TTM revenue vs $2.1B market cap; extremely speculative valuation",
+    "New customer acquisition timeline unknown — may take 12–18 months to validate new hyperscaler partnership",
+    "Massive warrant overhang — $400M raise included 19M warrants; dilution if/when exercised"
+  ],
+  "estimateDates": [
+    { "event": "Next Earnings (Q2 2026)", "dateRange": "Aug 2026 est.", "note": "Revenue near zero; watch cash burn rate and customer pipeline update", "est": "Near zero rev", "highlight": "yellow" },
+    { "event": "Hyperscaler Customer Announcement", "dateRange": "2026", "note": "The binary catalyst — no date set", "est": "Unknown", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -70, "price": 3.65 },
+    { "label": "Base", "color": "yellow", "pct": 80, "price": 21.87 },
+    { "label": "Bull", "color": "green", "pct": 220, "price": 38.88 },
+    { "label": "Moon", "color": "purple", "pct": 430, "price": 64.40 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus Price Target", "target": 17.50, "rating": "+44% from current" },
+    { "firm": "52W High (pre-Marvell)", "target": 20.81, "rating": "Historical high" },
+    { "firm": "$400M Investor Entry", "target": 21.00, "rating": "Institutional buy-in price" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Pre-revenue semiconductor IP company is highly rate-sensitive in terms of valuation multiples. Higher rates = lower tolerance for zero-revenue companies.",
+    "inflationNote": "Wafer-level photonic manufacturing has high R&D and materials costs — inflation compresses cash runway. $400M raise provides buffer.",
+    "sectorImpact": "AI optical interconnect TAM is $50B+ by 2028 — massive secular tailwind if POET's Optical Interposer standard gets adopted. But near-term: class actions + no customer = valuation compression.",
+    "summary": "Fed risk MEDIUM — primarily company-specific risk from Marvell cancellation and class actions. Macro is secondary to customer pipeline execution."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Watch Only", "level": 12.15, "note": "Current price — DO NOT buy full position; wait for clarity on new customer", "timing": "Watch" },
+      { "label": "Scale In 1", "level": 9.00, "rangeMax": 10.00, "note": "If it retests $9–10 zone — start 1% position only", "timing": "On dip", "preferred": true },
+      { "label": "Scale In 2", "level": 6.50, "note": "Near book value support — max 2% if thesis still intact", "timing": "If thesis intact" }
+    ],
+    "tp1": { "price": 21.87, "pct": 80.0, "note": "Recovery to $400M investor entry price — base case new customer" },
+    "tp2": { "price": 38.88, "pct": 220.0, "note": "Bull case — hyperscaler validation + Lumilens ramp" },
+    "tp3": { "price": 64.40, "pct": 430.0, "note": "Moon case — POET Optical Interposer becomes AI datacenter standard · 2028", "moon": true },
+    "stopLoss": {
+      "tight": 8.50, "tightPct": -30.0, "tightNote": "Below $8.50 = new negative news; exit",
+      "hard": 5.00, "hardPct": -58.8, "hardNote": "Near bear case — class action settlement risk materializing",
+      "riskReward": "5.5 : 1", "rrNote": "vs TP2 from Scale In 1", "rrWarning": "High risk — size tiny"
+    },
+    "verdict": "⚠️ HIGHER RISK than typical ค่าขนม — Marvell cancellation + class actions = must wait for new customer confirmation. แนะนำ max 2% ของ portfolio เท่านั้น และรอ clarity ก่อนเข้า",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "Photonics stocks run 30–80% on hyperscaler partnership rumor alone — POET ran +70% in one week in April 2026 on hyperscaler speculation before the Marvell crash. Next hyperscaler partnership announcement could repeat this.",
+    "preRunupTiming": "1–2 สัปดาห์ก่อน hyperscaler announcement หรือ rumor ออก",
+    "preRunupPct": "+30–80%",
+    "postWin": {
+      "avgPct": 150,
+      "range": "+80% to +300%",
+      "note": "POET itself surged +315% from 52W low to $20 on hyperscaler speculation (Apr 2026). Silicon photonics peer Ayar Labs raised at $1B+ on hyperscaler design wins.",
+      "exampleDate": "Apr 2026"
+    },
+    "postLose": {
+      "avgPct": -50,
+      "range": "-40% to -80%",
+      "note": "POET crashed -50% when Marvell cancelled POs (Apr 27, 2026). Partnership loss = existential risk for pre-revenue photonics companies.",
+      "exampleDate": "Apr 2026"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "⚠️ Maximum 2% only — active class action lawsuits + zero revenue + Marvell PO cancellation = three simultaneous headwinds. Wait for new customer before sizing up."
+    },
+    "stopPreCatalyst": { "pct": -30, "price": 8.50, "note": "ถ้าหลุด $8.50 = bad news ออกได้เลย" },
+    "stopPostCatalyst": { "pct": -20, "note": "ถ้า partnership fall through อีกครั้ง ออกทันทีไม่รอ" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "IIVI",
+      "event": "II-VI (now Coherent) — photonic integration wins in datacenter optical transport",
+      "date": "Mar 2021",
+      "movePct": 280,
+      "days": 180,
+      "outcome": "good",
+      "note": "Photonics company that scaled from $2B to $8B+ market cap as hyperscaler optical interconnect demand exploded 2020–2022. POET is at a similar inflection point if it wins hyperscaler design-in."
+    },
+    {
+      "ticker": "LITE",
+      "event": "Lumentum Holdings — 3D sensing hyperscaler win (Apple iPhone Face ID supply)",
+      "date": "Aug 2017",
+      "movePct": 250,
+      "days": 90,
+      "outcome": "good",
+      "note": "Photonics company +250% on Apple hyperscaler supply contract. POET's Optical Interposer targeting similar integration win with AI datacenter hyperscalers."
+    },
+    {
+      "ticker": "POET",
+      "event": "POET Technologies — Hyperscaler speculation run (pre-Marvell crash)",
+      "date": "Apr 2026",
+      "movePct": 315,
+      "days": 14,
+      "outcome": "mixed",
+      "note": "POET itself ran +315% from $3.87 to $20.81 on hyperscaler rumor, then -50% on Marvell PO cancellation. Shows magnitude of move possible — and risk. New hyperscaler win = same setup."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "POET Technologies stock craters nearly 50% as Marvell relationship sours — cancels all purchase orders",
+    "url": "https://www.marketwatch.com/story/poet-technologies-stock-craters-nearly-50-in-record-drop-as-marvell-relationship-sours-1e37d970",
+    "date": "Apr 2026"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/poet/",
+    "https://www.marketwatch.com/story/poet-technologies-stock-craters-nearly-50-in-record-drop-as-marvell-relationship-sours-1e37d970",
+    "https://www.globenewswire.com/news-release/2026/05/18/3296776/0/en/POET-Technologies-Announces-Closing-of-US-400-Million-Investment.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "POET Technologies มี IP ด้าน photonic integration ที่แตกต่างจริง (Optical Interposer) ที่ช่วย AI datacenter ย้าย optical networking จาก rack level ลงมาถึงระดับชิป TAM ใหญ่มากถ้าชนะ แต่ Marvell ยกเลิก PO ทั้งหมด (เม.ย. 2026) + class action lawsuit + PFIC tax issue = 3 headwinds พร้อมกัน $400M investment ยืนยัน institutional belief แต่ต้องรอลูกค้า hyperscaler ใหม่ก่อนเข้า",
+      "priceNote": "ฟื้นตัวจาก crash -50% จาก Marvell ยกเลิก · $400M investment ปิดแล้ว · class action ยังอยู่",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "ลูกค้า Hyperscaler ใหม่", "description": "POET ต้องหาลูกค้าแทน Marvell — ถ้าประกาศ hyperscaler โดยตรง ราคา 3–5x ได้" },
+        { "name": "Partnership กับ Lumilens Scale-up", "description": "POET + Lumilens ก้าวหน้าใน wafer-level photonic สำหรับ AI optical networks" },
+        { "name": "การ deploy $400M", "description": "ระดมทุนใหญ่ที่สุดในประวัติ POET — ขยาย manufacturing และ accelerate product" }
+      ],
+      "risks": [
+        "⚠️ CRITICAL: Marvell ยกเลิก PO ทั้งหมด — pipeline รายได้หลักหายไปข้ามคืน",
+        "Class action lawsuits หลายคดีจาก CFO breach of confidentiality",
+        "PFIC tax status ปัญหา tax ซับซ้อนสำหรับนักลงทุนสหรัฐ",
+        "Revenue น้อยมาก $1.4M TTM แต่ market cap $2.1B — speculative มาก",
+        "ลูกค้าใหม่อาจใช้เวลา 12–18 เดือน",
+        "Warrant dilution จาก $400M raise"
+      ],
+      "macroRisk": {
+        "rateOutlook": "บริษัท pre-revenue sensitive ต่ออัตราดอกเบี้ย อัตราสูง = tolerance ต่ำสำหรับ zero-revenue",
+        "inflationNote": "R&D และ wafer manufacturing มีต้นทุนสูง เงินเฟ้อกดดัน cash runway",
+        "sectorImpact": "AI optical interconnect TAM $50B+ ภายในปี 2028 — secular tailwind ถ้า POET ชนะ",
+        "summary": "Fed risk ปานกลาง ความเสี่ยงหลักมาจาก company-specific ไม่ใช่ macro"
+      },
+      "entryStrategy": {
+        "verdict": "⚠️ เสี่ยงสูงกว่า ค่าขนม ทั่วไป ต้องรอยืนยันลูกค้าใหม่ก่อน แนะนำ max 2% ของ portfolio เท่านั้น",
+        "entryLevels": [
+          { "note": "ตอนนี้ดูอย่างเดียว อย่าเพิ่งซื้อ รอ clarity ลูกค้า", "timing": "ดูก่อน" },
+          { "note": "ถ้าย่อมา $9–10 เริ่ม 1% ได้", "timing": "ถ้าย่อ" },
+          { "note": "ใกล้ book value — max 2% ถ้า thesis ยังอยู่", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "ฟื้นราคา $400M investor entry — base case ลูกค้าใหม่" },
+        "tp2": { "note": "Bull case — hyperscaler validation + Lumilens ramp" },
+        "tp3": { "note": "Moon case — POET Optical Interposer กลายเป็นมาตรฐาน AI datacenter · 2028" },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า $8.50 = ข่าวแย่ใหม่ ออกได้เลย",
+          "hardNote": "ใกล้ bear case — class action settlement เป็นจริง",
+          "rrNote": "vs TP2 จาก Scale In 1",
+          "rrWarning": "High risk — size เล็กมาก"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q2 2026", "note": "Revenue ใกล้ศูนย์ ดูอัตราเผา cash และ pipeline ลูกค้า" },
+        { "event": "ประกาศลูกค้า Hyperscaler", "note": "Binary catalyst หลัก — ยังไม่มีวันที่" }
+      ]
+    }
+  }
+}

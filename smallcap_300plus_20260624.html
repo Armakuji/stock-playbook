@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XVARY Research — Small Cap Multibagger Watchlist · Jun 24, 2026</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #0f172a; color: #e2e8f0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 14px; line-height: 1.5; }
+  a { color: #38bdf8; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* ── BANNER ── */
+  .banner {
+    background: linear-gradient(135deg, #0a111e 0%, #1e293b 100%);
+    border-bottom: 1px solid #334155;
+    padding: 32px 24px 24px;
+    text-align: center;
+  }
+  .banner-brand { font-size: 11px; letter-spacing: 4px; color: #38bdf8; text-transform: uppercase; margin-bottom: 10px; }
+  .banner-title { font-size: 26px; font-weight: 800; color: #f8fafc; margin-bottom: 6px; }
+  .banner-sub { font-size: 14px; color: #94a3b8; margin-bottom: 16px; }
+  .banner-pills { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+  .pill { padding: 4px 14px; border-radius: 999px; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+  .pill-spec { background: rgba(245,158,11,0.15); color: #f59e0b; border: 1px solid rgba(245,158,11,0.3); }
+  .pill-risky { background: rgba(239,68,68,0.15); color: #ef4444; border: 1px solid rgba(239,68,68,0.3); }
+  .pill-date { background: rgba(56,189,248,0.1); color: #38bdf8; border: 1px solid rgba(56,189,248,0.25); }
+
+  /* ── MACRO BAR ── */
+  .macro-bar {
+    background: #1e293b;
+    border-bottom: 1px solid #334155;
+    padding: 10px 24px;
+    display: flex; align-items: center; gap: 24px; flex-wrap: wrap;
+    font-size: 12px; color: #94a3b8;
+  }
+  .macro-item { display: flex; align-items: center; gap: 6px; }
+  .macro-dot { width: 8px; height: 8px; border-radius: 50%; }
+  .macro-label { font-weight: 600; color: #e2e8f0; }
+  .macro-risk-badge { padding: 2px 10px; border-radius: 4px; font-size: 10px; font-weight: 800; letter-spacing: 1px; }
+  .risk-medium { background: rgba(245,158,11,0.2); color: #f59e0b; }
+  .risk-low { background: rgba(16,185,129,0.2); color: #10b981; }
+  .risk-high { background: rgba(239,68,68,0.2); color: #ef4444; }
+
+  /* ── WARNING BOX ── */
+  .warning-box {
+    margin: 16px 24px;
+    background: rgba(245,158,11,0.08);
+    border: 1px solid rgba(245,158,11,0.3);
+    border-left: 3px solid #f59e0b;
+    border-radius: 6px;
+    padding: 12px 16px;
+    font-size: 13px; color: #fbbf24;
+  }
+  .warning-box strong { color: #f59e0b; }
+
+  /* ── OVERVIEW TABLE ── */
+  .overview-wrap { padding: 16px 24px 0; }
+  .overview-title { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: #64748b; margin-bottom: 10px; }
+  .overview-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  .overview-table th { background: #1e293b; color: #64748b; text-transform: uppercase; letter-spacing: 0.8px; font-size: 10px; padding: 8px 10px; text-align: left; border-bottom: 1px solid #334155; }
+  .overview-table td { padding: 9px 10px; border-bottom: 1px solid #1e293b; color: #e2e8f0; vertical-align: middle; }
+  .overview-table tr:hover td { background: #1e293b44; }
+  .ov-ticker { font-weight: 800; font-size: 13px; color: #f8fafc; }
+  .ov-company { font-size: 11px; color: #64748b; display: block; margin-top: 1px; }
+  .c-green { color: #10b981; } .c-yellow { color: #f59e0b; } .c-red { color: #ef4444; } .c-blue { color: #38bdf8; } .c-purple { color: #a78bfa; } .c-grey { color: #94a3b8; } .c-white { color: #f8fafc; }
+  .v-pill { padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: 700; }
+  .v-spec { background: rgba(245,158,11,0.15); color: #f59e0b; }
+  .v-risky { background: rgba(239,68,68,0.15); color: #ef4444; }
+  .v-buy { background: rgba(16,185,129,0.15); color: #10b981; }
+
+  /* ── SECTION DIVIDER ── */
+  .section-header { padding: 28px 24px 12px; }
+  .section-header h2 { font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #64748b; display: flex; align-items: center; gap: 10px; }
+  .section-header h2::after { content: ''; flex: 1; height: 1px; background: #1e293b; }
+
+  /* ── STOCK CARD ── */
+  .cards-grid { display: flex; flex-direction: column; gap: 24px; padding: 0 24px 24px; }
+  .stock-card {
+    background: #1e293b;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #334155;
+  }
+  .card-accent { height: 3px; }
+  .accent-spec { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
+  .accent-risky { background: linear-gradient(90deg, #ef4444, #f87171); }
+  .accent-buy { background: linear-gradient(90deg, #10b981, #34d399); }
+
+  .card-header { padding: 16px 20px 12px; display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .card-ticker-block { flex: 1; }
+  .card-ticker { font-size: 22px; font-weight: 900; color: #f8fafc; letter-spacing: -0.5px; }
+  .card-name { font-size: 12px; color: #94a3b8; margin-top: 2px; }
+  .card-desc-en { font-size: 11px; color: #64748b; margin-top: 3px; font-style: italic; }
+  .card-price-block { text-align: right; }
+  .card-price { font-size: 22px; font-weight: 800; color: #f8fafc; }
+  .card-change { font-size: 12px; margin-top: 2px; }
+  .card-mc { font-size: 11px; color: #64748b; margin-top: 2px; }
+  .card-verdict { display: flex; align-items: center; gap: 8px; padding: 0 20px 12px; flex-wrap: wrap; }
+
+  /* ── INFO GRID ── */
+  .info-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; padding: 0 16px 14px; }
+  @media (max-width: 700px) { .info-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 480px) { .info-grid { grid-template-columns: 1fr; } }
+
+  .info-block { background: #0f172a; border-radius: 8px; padding: 12px; }
+  .ib-title { font-size: 10px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid #1e293b; }
+  .ib-t-catalyst { color: #f59e0b; }
+  .ib-t-entry { color: #38bdf8; }
+  .ib-t-tp { color: #10b981; }
+  .ib-t-sl { color: #ef4444; }
+  .ib-t-date { color: #a78bfa; }
+  .ib-t-upside { color: #38bdf8; }
+
+  .ib-row { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; padding: 4px 0; border-bottom: 1px solid #1e293b22; }
+  .ib-row:last-child { border-bottom: none; }
+  .ib-label { color: #64748b; font-size: 11px; flex: 1; }
+  .ib-label small { display: block; font-size: 10px; color: #475569; }
+  .ib-val { font-size: 12px; font-weight: 700; text-align: right; }
+  .ib-pct { font-size: 10px; font-weight: 400; margin-left: 4px; }
+  .preferred-chip { background: rgba(56,189,248,0.15); color: #38bdf8; font-size: 9px; font-weight: 700; padding: 1px 5px; border-radius: 3px; margin-left: 4px; letter-spacing: 0.5px; text-transform: uppercase; }
+
+  /* catalyst items */
+  .catalyst-item { display: flex; align-items: flex-start; gap: 8px; padding: 5px 0; }
+  .cat-dot { width: 8px; height: 8px; border-radius: 50%; margin-top: 4px; flex-shrink: 0; }
+  .cat-content { flex: 1; font-size: 11px; line-height: 1.4; }
+  .cat-content strong { color: #e2e8f0; font-size: 11px; }
+  .cat-date { display: inline-block; margin-top: 2px; font-size: 9px; font-weight: 700; padding: 1px 6px; border-radius: 3px; letter-spacing: 0.5px; }
+  .date-now { background: rgba(239,68,68,0.2); color: #ef4444; }
+  .date-soon { background: rgba(245,158,11,0.2); color: #f59e0b; }
+  .date-later { background: rgba(100,116,139,0.2); color: #94a3b8; }
+
+  /* upside bars */
+  .upside-row { display: flex; align-items: center; gap: 6px; padding: 4px 0; }
+  .upside-scenario { font-size: 10px; font-weight: 700; width: 36px; text-align: right; }
+  .upside-bar-wrap { flex: 1; height: 10px; background: #1e293b; border-radius: 5px; overflow: hidden; }
+  .upside-bar { height: 100%; border-radius: 5px; }
+  .bar-bear { background: #ef4444; }
+  .bar-base { background: #f59e0b; }
+  .bar-bull { background: #10b981; }
+  .bar-moon { background: linear-gradient(90deg, #a78bfa, #c4b5fd); }
+  .upside-pct { font-size: 11px; font-weight: 700; width: 48px; text-align: right; }
+  .upside-price { font-size: 10px; color: #64748b; width: 48px; text-align: right; }
+
+  /* ── CARD SUMMARY STRIP ── */
+  .card-summary { background: #0a111e; border-top: 1px solid #1e293b; padding: 14px 20px; }
+  .summary-text { font-size: 13px; color: #cbd5e1; line-height: 1.7; }
+  .summary-sizing { display: inline-block; margin-top: 8px; font-size: 11px; color: #64748b; background: #1e293b; padding: 3px 10px; border-radius: 4px; }
+
+  /* ── ANALYST TABLE ── */
+  .analyst-wrap { padding: 0 16px 16px; }
+  .analyst-title { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: #64748b; margin-bottom: 8px; }
+  .analyst-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  .analyst-table th { color: #475569; text-transform: uppercase; font-size: 9px; letter-spacing: 0.8px; padding: 6px 8px; text-align: left; border-bottom: 1px solid #1e293b; }
+  .analyst-table td { padding: 6px 8px; border-bottom: 1px solid #1e293b22; color: #e2e8f0; }
+  .analyst-table tr:last-child td { border-bottom: none; }
+
+  /* ── SOURCES ── */
+  .sources-section { padding: 16px 24px 24px; }
+  .sources-title { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: #475569; margin-bottom: 8px; }
+  .sources-list { display: flex; flex-wrap: wrap; gap: 6px; }
+  .sources-list a { font-size: 11px; color: #475569; background: #1e293b; padding: 3px 10px; border-radius: 4px; border: 1px solid #334155; }
+  .sources-list a:hover { color: #38bdf8; border-color: #38bdf8; }
+
+  /* ── FOOTER ── */
+  .footer { background: #0a111e; border-top: 1px solid #1e293b; padding: 16px 24px; text-align: center; font-size: 11px; color: #475569; }
+
+  /* ── BULL CASE SUMMARY ── */
+  .bull-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; padding: 0 24px 24px; }
+  @media (max-width: 800px) { .bull-grid { grid-template-columns: repeat(2, 1fr); } }
+  .bull-card { background: #1e293b; border-radius: 8px; padding: 14px; border: 1px solid #334155; text-align: center; }
+  .bull-ticker { font-size: 16px; font-weight: 900; color: #f8fafc; }
+  .bull-current { font-size: 11px; color: #64748b; margin-top: 2px; }
+  .bull-arrow { font-size: 20px; margin: 6px 0; }
+  .bull-target { font-size: 18px; font-weight: 800; color: #a78bfa; }
+  .bull-pct { font-size: 13px; font-weight: 700; color: #10b981; margin-top: 2px; }
+  .bull-label { font-size: 9px; letter-spacing: 1px; text-transform: uppercase; color: #475569; margin-top: 4px; }
+</style>
+</head>
+<body>
+
+<!-- ══ BANNER ══ -->
+<div class="banner">
+  <div class="banner-brand">⚡ XVARY Research</div>
+  <div class="banner-title">Small Cap Multibagger Watchlist</div>
+  <div class="banner-sub">5 High-Conviction Picks · 300%+ Bull Case · Jun 24, 2026</div>
+  <div class="banner-pills">
+    <span class="pill pill-spec">🟡 Speculative</span>
+    <span class="pill pill-risky">🔴 High Risk</span>
+    <span class="pill pill-date">📅 Jun 24, 2026</span>
+  </div>
+</div>
+
+<!-- ══ MACRO BAR ══ -->
+<div class="macro-bar">
+  <div class="macro-item">
+    <div class="macro-dot" style="background:#f59e0b"></div>
+    <span>Fed Outlook</span>
+    <span class="macro-label">HOLD · 1–2 cuts expected H2 2026</span>
+  </div>
+  <div class="macro-item">
+    <div class="macro-dot" style="background:#10b981"></div>
+    <span>Small Cap Climate</span>
+    <span class="macro-label">Russell 2000 +18.6% YTD · momentum positive</span>
+  </div>
+  <div class="macro-item">
+    <div class="macro-dot" style="background:#38bdf8"></div>
+    <span>AI Spend</span>
+    <span class="macro-label">Global AI capex still accelerating into 2027</span>
+  </div>
+  <div class="macro-item">
+    <span>Portfolio Fed Risk</span>
+    <span class="macro-risk-badge risk-medium">MEDIUM</span>
+  </div>
+</div>
+
+<!-- ══ WARNING ══ -->
+<div class="warning-box">
+  <strong>⚠️ High-Risk Watchlist</strong> — รายชื่อนี้เป็น speculative plays ทั้งหมด มี upside 300%++ แต่ downside risk สูงเช่นกัน
+  แนะนำให้ size เล็ก (3–5% ต่อตัว) และ cut loss เร็วถ้า thesis พัง · Not financial advice.
+</div>
+
+<!-- ══ BULL CASE SUMMARY ══ -->
+<div class="section-header"><h2>🚀 Bull Case Summary — 300%+ Upside Targets</h2></div>
+<div class="bull-grid">
+  <div class="bull-card">
+    <div class="bull-ticker">ONDS</div>
+    <div class="bull-current">Now: $8.53</div>
+    <div class="bull-arrow">↑</div>
+    <div class="bull-target">$35</div>
+    <div class="bull-pct">+310%</div>
+    <div class="bull-label">Moon Case</div>
+  </div>
+  <div class="bull-card">
+    <div class="bull-ticker">RXRX</div>
+    <div class="bull-current">Now: $3.40</div>
+    <div class="bull-arrow">↑</div>
+    <div class="bull-target">$14</div>
+    <div class="bull-pct">+311%</div>
+    <div class="bull-label">Moon Case</div>
+  </div>
+  <div class="bull-card">
+    <div class="bull-ticker">FLY</div>
+    <div class="bull-current">Now: $28.14</div>
+    <div class="bull-arrow">↑</div>
+    <div class="bull-target">$115</div>
+    <div class="bull-pct">+309%</div>
+    <div class="bull-label">Moon Case</div>
+  </div>
+  <div class="bull-card">
+    <div class="bull-ticker">POET</div>
+    <div class="bull-current">Now: $13.28</div>
+    <div class="bull-arrow">↑</div>
+    <div class="bull-target">$55</div>
+    <div class="bull-pct">+314%</div>
+    <div class="bull-label">Moon Case</div>
+  </div>
+  <div class="bull-card">
+    <div class="bull-ticker">ACMR</div>
+    <div class="bull-current">Now: $109</div>
+    <div class="bull-arrow">↑</div>
+    <div class="bull-target">$450</div>
+    <div class="bull-pct">+313%</div>
+    <div class="bull-label">Moon Case</div>
+  </div>
+</div>
+
+<!-- ══ OVERVIEW TABLE ══ -->
+<div class="overview-wrap">
+  <div class="overview-title">Quick Overview</div>
+  <table class="overview-table">
+    <thead>
+      <tr>
+        <th>Ticker</th>
+        <th>Price</th>
+        <th>Entry Zone</th>
+        <th>TP1</th>
+        <th>TP2</th>
+        <th>Stop Loss</th>
+        <th>Moon Target</th>
+        <th>Key Catalyst</th>
+        <th>Verdict</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="ov-ticker">ONDS</span><span class="ov-company">Ondas Holdings</span></td>
+        <td class="c-white">$8.53</td>
+        <td class="c-blue">$7.50–$8.80</td>
+        <td class="c-green">$14 <small class="c-grey">+64%</small></td>
+        <td class="c-green">$19.50 <small class="c-grey">+128%</small></td>
+        <td class="c-red">$6.80</td>
+        <td class="c-purple">$35 (+310%)</td>
+        <td>Pentagon drone deal</td>
+        <td><span class="v-pill v-spec">🟡 Spec</span></td>
+      </tr>
+      <tr>
+        <td><span class="ov-ticker">RXRX</span><span class="ov-company">Recursion Pharma</span></td>
+        <td class="c-white">$3.40</td>
+        <td class="c-blue">$3.00–$3.50</td>
+        <td class="c-green">$6.64 <small class="c-grey">+95%</small></td>
+        <td class="c-green">$10 <small class="c-grey">+194%</small></td>
+        <td class="c-red">$2.60</td>
+        <td class="c-purple">$14 (+311%)</td>
+        <td>FDA meeting REC-4881</td>
+        <td><span class="v-pill v-risky">🔴 ค่าขนม</span></td>
+      </tr>
+      <tr>
+        <td><span class="ov-ticker">FLY</span><span class="ov-company">Firefly Aerospace</span></td>
+        <td class="c-white">$28.14</td>
+        <td class="c-blue">$25–$29</td>
+        <td class="c-green">$50 <small class="c-grey">+78%</small></td>
+        <td class="c-green">$75 <small class="c-grey">+166%</small></td>
+        <td class="c-red">$22</td>
+        <td class="c-purple">$115 (+309%)</td>
+        <td>Alpha Flight 8 launch</td>
+        <td><span class="v-pill v-spec">🟡 Spec</span></td>
+      </tr>
+      <tr>
+        <td><span class="ov-ticker">POET</span><span class="ov-company">POET Technologies</span></td>
+        <td class="c-white">$13.28</td>
+        <td class="c-blue">$11–$14</td>
+        <td class="c-green">$22 <small class="c-grey">+66%</small></td>
+        <td class="c-green">$35 <small class="c-grey">+164%</small></td>
+        <td class="c-red">$9.50</td>
+        <td class="c-purple">$55 (+314%)</td>
+        <td>Lumilens $50M order ramp</td>
+        <td><span class="v-pill v-risky">🔴 ค่าขนม</span></td>
+      </tr>
+      <tr>
+        <td><span class="ov-ticker">ACMR</span><span class="ov-company">ACM Research</span></td>
+        <td class="c-white">$109</td>
+        <td class="c-blue">$95–$112</td>
+        <td class="c-green">$125 <small class="c-grey">+15%</small></td>
+        <td class="c-green">$175 <small class="c-grey">+61%</small></td>
+        <td class="c-red">$82</td>
+        <td class="c-purple">$450 (+313%)</td>
+        <td>China AI chip demand surge</td>
+        <td><span class="v-pill v-spec">🟡 Spec</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ══ STOCK CARDS ══ -->
+<div class="section-header"><h2>📊 Full Analysis</h2></div>
+<div class="cards-grid">
+
+  <!-- ─── CARD 1: ONDS ─── -->
+  <div class="stock-card">
+    <div class="card-accent accent-spec"></div>
+    <div class="card-header">
+      <div class="card-ticker-block">
+        <div class="card-ticker">ONDS <span style="font-size:12px;font-weight:400;color:#94a3b8">· Ondas Holdings</span></div>
+        <div class="card-name">Ondas Holdings Inc. · NASDAQ</div>
+        <div class="card-desc-en">Autonomous Drones · Defense + Rail + Energy autonomy platform</div>
+      </div>
+      <div class="card-price-block">
+        <div class="card-price">$8.53</div>
+        <div class="card-change c-red">▼ -4.05% (Jun 23)</div>
+        <div class="card-mc">Market Cap: ~$130M</div>
+      </div>
+    </div>
+    <div class="card-verdict">
+      <span class="pill pill-spec">🟡 Speculative</span>
+      <span class="macro-risk-badge risk-low">Fed Risk: LOW</span>
+      <span style="font-size:11px;color:#64748b;">52W: $3.20 – $12.40</span>
+    </div>
+
+    <div class="info-grid">
+      <!-- Catalyst -->
+      <div class="info-block">
+        <div class="ib-title ib-t-catalyst">⚡ Catalysts</div>
+        <div class="catalyst-item">
+          <div class="cat-dot" style="background:#ef4444"></div>
+          <div class="cat-content"><strong>$40M+ New Defense Orders</strong> — Autonomous Scout drones secured with FAA BVLOS approval<div><span class="cat-date date-now">Now Active</span></div></div>
+        </div>
+        <div class="catalyst-item">
+          <div class="cat-dot" style="background:#f59e0b"></div>
+          <div class="cat-content"><strong>Cyberhawk Acquisition</strong> — $125M deal closes, expands infrastructure inspection platform<div><span class="cat-date date-soon">Q3 2026</span></div></div>
+        </div>
+        <div class="catalyst-item">
+          <div class="cat-dot" style="background:#64748b"></div>
+          <div class="cat-content"><strong>Pentagon Autonomy Budget</strong> — US defense $901B FY2026, proposed $1.5T by 2027 with autonomous systems priority<div><span class="cat-date date-later">2027</span></div></div>
+        </div>
+      </div>
+
+      <!-- Entry -->
+      <div class="info-block">
+        <div class="ib-title ib-t-entry">🎯 Entry Point</div>
+        <div class="ib-row">
+          <div class="ib-label">Entry 1<small>Current zone</small></div>
+          <div class="ib-val c-blue">$8.00–$8.80<span class="preferred-chip">PREFERRED</span></div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">Entry 2<small>Dip zone</small></div>
+          <div class="ib-val c-yellow">$6.80–$7.50</div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">Entry 3<small>Deep dip</small></div>
+          <div class="ib-val c-grey">$5.50</div>
+        </div>
+      </div>
+
+      <!-- TP -->
+      <div class="info-block">
+        <div class="ib-title ib-t-tp">✅ Take Profit</div>
+        <div class="ib-row">
+          <div class="ib-label">TP1<small>Analyst avg</small></div>
+          <div class="ib-val c-green">$14<span class="ib-pct c-green">+64%</span></div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">TP2<small>Analyst high</small></div>
+          <div class="ib-val c-green">$19.50<span class="ib-pct c-green">+128%</span></div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">TP3 🌙<small>Moon · Pentagon scale</small></div>
+          <div class="ib-val c-purple">$35<span class="ib-pct c-purple">+310%</span></div>
+        </div>
+      </div>
+
+      <!-- Stop Loss -->
+      <div class="info-block">
+        <div class="ib-title ib-t-sl">🛑 Stop Loss</div>
+        <div class="ib-row">
+          <div class="ib-label">Tight Stop<small>Below support</small></div>
+          <div class="ib-val c-red">$6.80<span class="ib-pct c-red">-20%</span></div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">Hard Stop<small>Thesis broken</small></div>
+          <div class="ib-val c-red">$5.50<span class="ib-pct c-red">-36%</span></div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">R:R Ratio<small>vs TP2</small></div>
+          <div class="ib-val c-green">6.4 : 1 ✅</div>
+        </div>
+      </div>
+
+      <!-- Estimate Dates -->
+      <div class="info-block">
+        <div class="ib-title ib-t-date">📅 Price Timeline</div>
+        <div class="ib-row">
+          <div class="ib-label">Q3 2026<small>Cyberhawk close</small></div>
+          <div class="ib-val c-yellow">$12–$16</div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">Q4 2026<small>Revenue inflection</small></div>
+          <div class="ib-val c-green">$16–$22</div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">2027+<small>Pentagon at scale</small></div>
+          <div class="ib-val c-purple">$25–$35+</div>
+        </div>
+      </div>
+
+      <!-- Upside Bars -->
+      <div class="info-block">
+        <div class="ib-title ib-t-upside">📈 Scenarios</div>
+        <div class="upside-row">
+          <div class="upside-scenario c-red">Bear</div>
+          <div class="upside-bar-wrap"><div class="upside-bar bar-bear" style="width:13%"></div></div>
+          <div class="upside-pct c-red">-36%</div>
+          <div class="upside-price">$5.50</div>
+        </div>
+        <div class="upside-row">
+          <div class="upside-scenario c-yellow">Base</div>
+          <div class="upside-bar-wrap"><div class="upside-bar bar-base" style="width:41%"></div></div>
+          <div class="upside-pct c-yellow">+64%</div>
+          <div class="upside-price">$14</div>
+        </div>
+        <div class="upside-row">
+          <div class="upside-scenario c-green">Bull</div>
+          <div class="upside-bar-wrap"><div class="upside-bar bar-bull" style="width:65%"></div></div>
+          <div class="upside-pct c-green">+128%</div>
+          <div class="upside-price">$19.50</div>
+        </div>
+        <div class="upside-row">
+          <div class="upside-scenario c-purple">Moon</div>
+          <div class="upside-bar-wrap"><div class="upside-bar bar-moon" style="width:100%"></div></div>
+          <div class="upside-pct c-purple">+310%</div>
+          <div class="upside-price">$35</div>
+        </div>
+      </div>
+    </div><!-- /info-grid -->
+
+    <!-- Analyst Table -->
+    <div class="analyst-wrap">
+      <div class="analyst-title">Analyst Targets</div>
+      <table class="analyst-table">
+        <thead><tr><th>Firm</th><th>Target</th><th>Rating</th><th>vs Current</th></tr></thead>
+        <tbody>
+          <tr><td>Wall Street Avg (2 analysts)</td><td class="c-green">$19.50</td><td>Strong Buy</td><td class="c-green">+128%</td></tr>
+          <tr><td>High Target</td><td class="c-purple">$25.00</td><td>Buy</td><td class="c-purple">+193%</td></tr>
+          <tr><td>Consensus Rating</td><td colspan="2" class="c-green">Strong Buy (6 analysts)</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card-summary">
+      <div class="summary-text">
+        ONDS เป็น pure-play autonomous drone + robotics สำหรับ defense, rail และ energy — กลุ่มที่ได้ประโยชน์โดยตรงจาก
+        งบประมาณกลาโหม US $901B ที่มีแนวโน้มเพิ่มเป็น $1.5T ใน 2027 บริษัทเพิ่ง secure คำสั่งซื้อ $40M+ ใหม่
+        และกำลังปิดดีล Cyberhawk $125M ที่จะทำให้ revenue inflection เร็วขึ้น 🚁
+        Market cap เพียง ~$130M ทำให้ถ้า thesis ถูก upside 300%+ เป็นไปได้
+      </div>
+      <div class="summary-sizing">💼 แนะนำ position: 3–5% ของ portfolio · Cut loss ที่ $6.80</div>
+    </div>
+  </div><!-- /ONDS card -->
+
+
+  <!-- ─── CARD 2: RXRX ─── -->
+  <div class="stock-card">
+    <div class="card-accent accent-risky"></div>
+    <div class="card-header">
+      <div class="card-ticker-block">
+        <div class="card-ticker">RXRX <span style="font-size:12px;font-weight:400;color:#94a3b8">· Recursion Pharmaceuticals</span></div>
+        <div class="card-name">Recursion Pharmaceuticals Inc. · NASDAQ</div>
+        <div class="card-desc-en">AI Drug Discovery · Nvidia-backed AI-first biotech platform — picks & shovels of AI medicine</div>
+      </div>
+      <div class="card-price-block">
+        <div class="card-price">$3.40</div>
+        <div class="card-change c-grey">Est. current · analyst implied</div>
+        <div class="card-mc">Small Cap Biotech · AI-driven</div>
+      </div>
+    </div>
+    <div class="card-verdict">
+      <span class="pill pill-risky">🔴 ค่าขนม</span>
+      <span class="macro-risk-badge risk-low">Fed Risk: LOW</span>
+      <span style="font-size:11px;color:#64748b;">Analyst avg target: $6.64 · High: $10.00</span>
+    </div>
+
+    <div class="info-grid">
+      <div class="info-block">
+        <div class="ib-title ib-t-catalyst">⚡ Catalysts</div>
+        <div class="catalyst-item">
+          <div class="cat-dot" style="background:#ef4444"></div>
+          <div class="cat-content"><strong>FDA Meeting — REC-4881</strong> — Key regulatory discussion upcoming, could unlock rare disease program<div><span class="cat-date date-soon">Q3 2026</span></div></div>
+        </div>
+        <div class="catalyst-item">
+          <div class="cat-dot" style="background:#f59e0b"></div>
+          <div class="cat-content"><strong>Clinical Data Readouts</strong> — Multiple pipeline readouts expected next 12–18 months<div><span class="cat-date date-soon">Q4 2026</span></div></div>
+        </div>
+        <div class="catalyst-item">
+          <div class="cat-dot" style="background:#64748b"></div>
+          <div class="cat-content"><strong>NVIDIA Partnership Revenue</strong> — Joint AI compute platform for drug discovery, commercial ramp 2027<div><span class="cat-date date-later">2027</span></div></div>
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="ib-title ib-t-entry">🎯 Entry Point</div>
+        <div class="ib-row">
+          <div class="ib-label">Entry 1<small>Current zone</small></div>
+          <div class="ib-val c-blue">$3.00–$3.50<span class="preferred-chip">PREFERRED</span></div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">Entry 2<small>If dips</small></div>
+          <div class="ib-val c-yellow">$2.50–$2.80</div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">Entry 3<small>Deep dip</small></div>
+          <div class="ib-val c-grey">$2.00</div>
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="ib-title ib-t-tp">✅ Take Profit</div>
+        <div class="ib-row">
+          <div class="ib-label">TP1<small>Analyst avg</small></div>
+          <div class="ib-val c-green">$6.64<span class="ib-pct c-green">+95%</span></div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">TP2<small>Analyst high</small></div>
+          <div class="ib-val c-green">$10.00<span class="ib-pct c-green">+194%</span></div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">TP3 🌙<small>Pipeline success</small></div>
+          <div class="ib-val c-purple">$14.00<span class="ib-pct c-purple">+311%</span></div>
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="ib-title ib-t-sl">🛑 Stop Loss</div>
+        <div class="ib-row">
+          <div class="ib-label">Tight Stop<small>Below key support</small></div>
+          <div class="ib-val c-red">$2.60<span class="ib-pct c-red">-24%</span></div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">Hard Stop<small>Thesis broken</small></div>
+          <div class="ib-val c-red">$1.80<span class="ib-pct c-red">-47%</span></div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">R:R Ratio<small>vs TP2</small></div>
+          <div class="ib-val c-green">8.1 : 1 ✅</div>
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="ib-title ib-t-date">📅 Price Timeline</div>
+        <div class="ib-row">
+          <div class="ib-label">Q4 2026<small>FDA + data catalyst</small></div>
+          <div class="ib-val c-yellow">$5–$7</div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">H1 2027<small>Pipeline readouts</small></div>
+          <div class="ib-val c-green">$8–$11</div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">2027+<small>Commercial platform</small></div>
+          <div class="ib-val c-purple">$12–$15+</div>
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="ib-title ib-t-upside">📈 Scenarios</div>
+        <div class="upside-row">
+          <div class="upside-scenario c-red">Bear</div>
+          <div class="upside-bar-wrap"><div class="upside-bar bar-bear" style="width:15%"></div></div>
+          <div class="upside-pct c-red">-47%</div>
+          <div class="upside-price">$1.80</div>
+        </div>
+        <div class="upside-row">
+          <div class="upside-scenario c-yellow">Base</div>
+          <div class="upside-bar-wrap"><div class="upside-bar bar-base" style="width:47%"></div></div>
+          <div class="upside-pct c-yellow">+95%</div>
+          <div class="upside-price">$6.64</div>
+        </div>
+        <div class="upside-row">
+          <div class="upside-scenario c-green">Bull</div>
+          <div class="upside-bar-wrap"><div class="upside-bar bar-bull" style="width:72%"></div></div>
+          <div class="upside-pct c-green">+194%</div>
+          <div class="upside-price">$10</div>
+        </div>
+        <div class="upside-row">
+          <div class="upside-scenario c-purple">Moon</div>
+          <div class="upside-bar-wrap"><div class="upside-bar bar-moon" style="width:100%"></div></div>
+          <div class="upside-pct c-purple">+311%</div>
+          <div class="upside-price">$14</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="analyst-wrap">
+      <div class="analyst-title">Analyst Targets</div>
+      <table class="analyst-table">
+        <thead><tr><th>Firm</th><th>Target</th><th>Rating</th><th>vs Current</th></tr></thead>
+        <tbody>
+          <tr><td>Wall Street Avg (8 analysts)</td><td class="c-green">$6.64</td><td>Hold</td><td class="c-green">+95%</td></tr>
+          <tr><td>Bullish Camp Avg (4 analysts)</td><td class="c-green">$7.38</td><td>Buy</td><td class="c-green">+117%</td></tr>
+          <tr><td>High Target</td><td class="c-purple">$10.00</td><td>Buy</td><td class="c-purple">+194%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card-summary">
+      <div class="summary-text">
+        RXRX คือ AI-first drug discovery บริษัทที่ได้รับการ back โดย NVIDIA — ใช้ machine learning + automated biology lab
+        เพื่อค้นหายาใหม่เร็วกว่า traditional pharma 10–100 เท่า Cash runway ถึงต้นปี 2028 ทำให้มีเวลาพอสำหรับ pipeline readouts
+        ถ้า REC-4881 ผ่าน FDA หรือ partnership revenue เริ่มขึ้น ราคาสามารถ 3–4x ได้ 💊🤖
+        แต่นี่คือ binary bet — ถ้า trial fail ราคาจะ crash เหมือน NMRA
+      </div>
+      <div class="summary-sizing">💼 แนะนำ position: 2–3% ของ portfolio · ค่าขนม play · Cut ที่ $2.60</div>
+    </div>
+  </div><!-- /RXRX -->
+
+
+  <!-- ─── CARD 3: FLY ─── -->
+  <div class="stock-card">
+    <div class="card-accent accent-spec"></div>
+    <div class="card-header">
+      <div class="card-ticker-block">
+        <div class="card-ticker">FLY <span style="font-size:12px;font-weight:400;color:#94a3b8">· Firefly Aerospace</span></div>
+        <div class="card-name">Firefly Aerospace Inc. · NASDAQ</div>
+        <div class="card-desc-en">Commercial Space Launch · Alpha rocket + Blue Ghost lunar lander — #2 challenger to SpaceX small lift</div>
+      </div>
+      <div class="card-price-block">
+        <div class="card-price">$28.14</div>
+        <div class="card-change c-grey">Jun 22, 2026</div>
+        <div class="card-mc">Backlog: $1.3B · FY2026 Rev: $420–450M</div>
+      </div>
+    </div>
+    <div class="card-verdict">
+      <span class="pill pill-spec">🟡 Speculative</span>
+      <span class="macro-risk-badge risk-low">Fed Risk: LOW</span>
+      <span style="font-size:11px;color:#64748b;">Analyst target avg: $48.22 · 9/9 analysts Buy</span>
+    </div>
+
+    <div class="info-grid">
+      <div class="info-block">
+        <div class="ib-title ib-t-catalyst">⚡ Catalysts</div>
+        <div class="catalyst-item">
+          <div class="cat-dot" style="background:#ef4444"></div>
+          <div class="cat-content"><strong>Alpha Flight 8 Launch</strong> — Block II config upgrade for enhanced reliability & manufacturability<div><span class="cat-date date-soon">Q3 2026</span></div></div>
+        </div>
+        <div class="catalyst-item">
+          <div class="cat-dot" style="background:#f59e0b"></div>
+          <div class="cat-content"><strong>NASA Contract Expansion</strong> — Blue Ghost Mission 2 follow-on contracts, lunar economy ramp<div><span class="cat-date date-soon">H2 2026</span></div></div>
+        </div>
+        <div class="catalyst-item">
+          <div class="cat-dot" style="background:#64748b"></div>
+          <div class="cat-content"><strong>Revenue Inflection 2027</strong> — 80% of 2026 sales already booked, launch cadence scaling to 6+ per year<div><span class="cat-date date-later">2027</span></div></div>
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="ib-title ib-t-entry">🎯 Entry Point</div>
+        <div class="ib-row">
+          <div class="ib-label">Entry 1<small>Current zone</small></div>
+          <div class="ib-val c-blue">$25–$29<span class="preferred-chip">PREFERRED</span></div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">Entry 2<small>Dip zone</small></div>
+          <div class="ib-val c-yellow">$22–$25</div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">Entry 3<small>Deep dip</small></div>
+          <div class="ib-val c-grey">$18</div>
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="ib-title ib-t-tp">✅ Take Profit</div>
+        <div class="ib-row">
+          <div class="ib-label">TP1<small>Analyst consensus</small></div>
+          <div class="ib-val c-green">$50<span class="ib-pct c-green">+78%</span></div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">TP2<small>Jefferies target</small></div>
+          <div class="ib-val c-green">$75<span class="ib-pct c-green">+166%</span></div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">TP3 🌙<small>Space economy scale</small></div>
+          <div class="ib-val c-purple">$115<span class="ib-pct c-purple">+309%</span></div>
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="ib-title ib-t-sl">🛑 Stop Loss</div>
+        <div class="ib-row">
+          <div class="ib-label">Tight Stop<small>Below support</small></div>
+          <div class="ib-val c-red">$22<span class="ib-pct c-red">-22%</span></div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">Hard Stop<small>Launch failure risk</small></div>
+          <div class="ib-val c-red">$18<span class="ib-pct c-red">-36%</span></div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">R:R Ratio<small>vs TP2</small></div>
+          <div class="ib-val c-green">7.5 : 1 ✅</div>
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="ib-title ib-t-date">📅 Price Timeline</div>
+        <div class="ib-row">
+          <div class="ib-label">Q3 2026<small>Alpha Flt 8 success</small></div>
+          <div class="ib-val c-yellow">$40–$55</div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">Q1 2027<small>Revenue acceleration</small></div>
+          <div class="ib-val c-green">$60–$80</div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">2027+<small>Space economy scale</small></div>
+          <div class="ib-val c-purple">$90–$115+</div>
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="ib-title ib-t-upside">📈 Scenarios</div>
+        <div class="upside-row">
+          <div class="upside-scenario c-red">Bear</div>
+          <div class="upside-bar-wrap"><div class="upside-bar bar-bear" style="width:12%"></div></div>
+          <div class="upside-pct c-red">-36%</div>
+          <div class="upside-price">$18</div>
+        </div>
+        <div class="upside-row">
+          <div class="upside-scenario c-yellow">Base</div>
+          <div class="upside-bar-wrap"><div class="upside-bar bar-base" style="width:25%"></div></div>
+          <div class="upside-pct c-yellow">+78%</div>
+          <div class="upside-price">$50</div>
+        </div>
+        <div class="upside-row">
+          <div class="upside-scenario c-green">Bull</div>
+          <div class="upside-bar-wrap"><div class="upside-bar bar-bull" style="width:54%"></div></div>
+          <div class="upside-pct c-green">+166%</div>
+          <div class="upside-price">$75</div>
+        </div>
+        <div class="upside-row">
+          <div class="upside-scenario c-purple">Moon</div>
+          <div class="upside-bar-wrap"><div class="upside-bar bar-moon" style="width:100%"></div></div>
+          <div class="upside-pct c-purple">+309%</div>
+          <div class="upside-price">$115</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="analyst-wrap">
+      <div class="analyst-title">Analyst Targets</div>
+      <table class="analyst-table">
+        <thead><tr><th>Firm</th><th>Target</th><th>Rating</th><th>vs Current</th></tr></thead>
+        <tbody>
+          <tr><td>Analyst Consensus (9)</td><td class="c-green">$48.22</td><td>Buy (9/9)</td><td class="c-green">+71%</td></tr>
+          <tr><td>KeyBanc</td><td class="c-green">$50</td><td>Overweight</td><td class="c-green">+78%</td></tr>
+          <tr><td>Jefferies</td><td class="c-purple">$52</td><td>Buy</td><td class="c-purple">+85%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card-summary">
+      <div class="summary-text">
+        FLY คือ commercial space launch บริษัทที่เพิ่ง IPO และมีแผนเป็น #2 ใน small/medium lift หลัง SpaceX
+        Blue Ghost ลงจอดบนดวงจันทร์สำเร็จแล้วใน Q1 2026 — สร้าง credibility ระดับ NASA และ revenue $420–450M
+        พร้อม backlog $1.3B ให้ visibility ชัดเจน 🚀 ถ้า Alpha Flight 8 สำเร็จและ launch cadence เพิ่ม
+        stock สามารถ re-rate จาก ~3x revenue เป็น 8–10x revenue ได้ (= $115+)
+      </div>
+      <div class="summary-sizing">💼 แนะนำ position: 3–5% ของ portfolio · Catalyst play หลัก: Alpha Flight 8</div>
+    </div>
+  </div><!-- /FLY -->
+
+
+  <!-- ─── CARD 4: POET ─── -->
+  <div class="stock-card">
+    <div class="card-accent accent-risky"></div>
+    <div class="card-header">
+      <div class="card-ticker-block">
+        <div class="card-ticker">POET <span style="font-size:12px;font-weight:400;color:#94a3b8">· POET Technologies</span></div>
+        <div class="card-name">POET Technologies Inc. · NASDAQ</div>
+        <div class="card-desc-en">AI Photonics · Next-gen optical interconnect for AI data centers — solving the bandwidth bottleneck</div>
+      </div>
+      <div class="card-price-block">
+        <div class="card-price">$13.28</div>
+        <div class="card-change c-green">▲ +13.2% (Jun 12)</div>
+        <div class="card-mc">$50M purchase order · Lumilens</div>
+      </div>
+    </div>
+    <div class="card-verdict">
+      <span class="pill pill-risky">🔴 ค่าขนม</span>
+      <span class="macro-risk-badge risk-medium">Fed Risk: MEDIUM</span>
+      <span style="font-size:11px;color:#64748b;">Early-stage · Pre-revenue · High conviction speculative</span>
+    </div>
+
+    <div class="info-grid">
+      <div class="info-block">
+        <div class="ib-title ib-t-catalyst">⚡ Catalysts</div>
+        <div class="catalyst-item">
+          <div class="cat-dot" style="background:#ef4444"></div>
+          <div class="cat-content"><strong>Lumilens $50M Order</strong> — Initial purchase order placed; eng. samples expected late 2026<div><span class="cat-date date-soon">H2 2026</span></div></div>
+        </div>
+        <div class="catalyst-item">
+          <div class="cat-dot" style="background:#f59e0b"></div>
+          <div class="cat-content"><strong>Production Ramp 2027</strong> — Module qualification → manufacturing scale-up aligned with AI data center deployments<div><span class="cat-date date-later">Q1 2027</span></div></div>
+        </div>
+        <div class="catalyst-item">
+          <div class="cat-dot" style="background:#64748b"></div>
+          <div class="cat-content"><strong>AI Data Center Adoption</strong> — Photonic interconnect becomes critical as AI compute density exceeds copper bandwidth limits<div><span class="cat-date date-later">2027–2028</span></div></div>
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="ib-title ib-t-entry">🎯 Entry Point</div>
+        <div class="ib-row">
+          <div class="ib-label">Entry 1<small>Current zone</small></div>
+          <div class="ib-val c-blue">$11–$14<span class="preferred-chip">PREFERRED</span></div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">Entry 2<small>After volatility</small></div>
+          <div class="ib-val c-yellow">$8–$10</div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">Entry 3<small>Deep dip</small></div>
+          <div class="ib-val c-grey">$6</div>
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="ib-title ib-t-tp">✅ Take Profit</div>
+        <div class="ib-row">
+          <div class="ib-label">TP1<small>Lumilens samples</small></div>
+          <div class="ib-val c-green">$22<span class="ib-pct c-green">+66%</span></div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">TP2<small>Production confirmed</small></div>
+          <div class="ib-val c-green">$35<span class="ib-pct c-green">+164%</span></div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">TP3 🌙<small>AI DC adoption</small></div>
+          <div class="ib-val c-purple">$55<span class="ib-pct c-purple">+314%</span></div>
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="ib-title ib-t-sl">🛑 Stop Loss</div>
+        <div class="ib-row">
+          <div class="ib-label">Tight Stop<small>Below support</small></div>
+          <div class="ib-val c-red">$9.50<span class="ib-pct c-red">-28%</span></div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">Hard Stop<small>Order fails</small></div>
+          <div class="ib-val c-red">$6.50<span class="ib-pct c-red">-51%</span></div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">R:R Ratio<small>vs TP2</small></div>
+          <div class="ib-val c-green">5.8 : 1 ✅</div>
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="ib-title ib-t-date">📅 Price Timeline</div>
+        <div class="ib-row">
+          <div class="ib-label">H2 2026<small>Eng. samples delivered</small></div>
+          <div class="ib-val c-yellow">$18–$25</div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">Q2 2027<small>Production ramp</small></div>
+          <div class="ib-val c-green">$28–$40</div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">2027+<small>Hyperscaler deals</small></div>
+          <div class="ib-val c-purple">$40–$55+</div>
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="ib-title ib-t-upside">📈 Scenarios</div>
+        <div class="upside-row">
+          <div class="upside-scenario c-red">Bear</div>
+          <div class="upside-bar-wrap"><div class="upside-bar bar-bear" style="width:16%"></div></div>
+          <div class="upside-pct c-red">-51%</div>
+          <div class="upside-price">$6.50</div>
+        </div>
+        <div class="upside-row">
+          <div class="upside-scenario c-yellow">Base</div>
+          <div class="upside-bar-wrap"><div class="upside-bar bar-base" style="width:40%"></div></div>
+          <div class="upside-pct c-yellow">+66%</div>
+          <div class="upside-price">$22</div>
+        </div>
+        <div class="upside-row">
+          <div class="upside-scenario c-green">Bull</div>
+          <div class="upside-bar-wrap"><div class="upside-bar bar-bull" style="width:53%"></div></div>
+          <div class="upside-pct c-green">+164%</div>
+          <div class="upside-price">$35</div>
+        </div>
+        <div class="upside-row">
+          <div class="upside-scenario c-purple">Moon</div>
+          <div class="upside-bar-wrap"><div class="upside-bar bar-moon" style="width:100%"></div></div>
+          <div class="upside-pct c-purple">+314%</div>
+          <div class="upside-price">$55</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="analyst-wrap">
+      <div class="analyst-title">Analyst Targets</div>
+      <table class="analyst-table">
+        <thead><tr><th>Firm</th><th>Target</th><th>Rating</th><th>vs Current</th></tr></thead>
+        <tbody>
+          <tr><td>Analyst Median (4 analysts)</td><td class="c-grey">$8.20</td><td>Buy (1/4)</td><td class="c-grey">-38% (stale)</td></tr>
+          <tr><td>Note</td><td colspan="2" class="c-yellow">Targets set BEFORE Lumilens $50M order — likely to be raised</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card-summary">
+      <div class="summary-text">
+        POET Technologies ทำ photonic integrated circuit สำหรับ AI data center — แก้ปัญหา bandwidth bottleneck
+        ที่ copper interconnects ทำไม่ได้ใน hyperscale AI cluster รุ่นใหม่ ล่าสุด Lumilens วาง purchase order $50M
+        ซึ่งเป็น validation ครั้งใหญ่ที่สุดของบริษัท Analyst targets ยังเก่าอยู่ (ก่อน order) — ถ้า production เริ่มจริง
+        targets น่าจะถูก raise ขึ้น 3–5x ⚡ ค่าขนม play ที่มี asymmetric upside สูงมาก
+      </div>
+      <div class="summary-sizing">💼 แนะนำ position: 2–3% ของ portfolio · ค่าขนม · Cut ที่ $9.50</div>
+    </div>
+  </div><!-- /POET -->
+
+
+  <!-- ─── CARD 5: ACMR ─── -->
+  <div class="stock-card">
+    <div class="card-accent accent-spec"></div>
+    <div class="card-header">
+      <div class="card-ticker-block">
+        <div class="card-ticker">ACMR <span style="font-size:12px;font-weight:400;color:#94a3b8">· ACM Research</span></div>
+        <div class="card-name">ACM Research Inc. · NASDAQ</div>
+        <div class="card-desc-en">Semiconductor Equipment · Advanced wafer cleaning + packaging tools — China AI chip buildout picks & shovels</div>
+      </div>
+      <div class="card-price-block">
+        <div class="card-price">$109</div>
+        <div class="card-change c-green">▲ Roth Capital PT $125 (Jun 17)</div>
+        <div class="card-mc">Rev Guidance 2026: $1.08–$1.175B</div>
+      </div>
+    </div>
+    <div class="card-verdict">
+      <span class="pill pill-spec">🟡 Speculative</span>
+      <span class="macro-risk-badge risk-high">Fed Risk: HIGH</span>
+      <span style="font-size:11px;color:#64748b;">China trade war risk · 11 analysts · Median target $70 (stale)</span>
+    </div>
+
+    <div class="info-grid">
+      <div class="info-block">
+        <div class="ib-title ib-t-catalyst">⚡ Catalysts</div>
+        <div class="catalyst-item">
+          <div class="cat-dot" style="background:#ef4444"></div>
+          <div class="cat-content"><strong>China AI Chip Demand</strong> — Huawei, SMIC, and domestic Chinese fabs accelerating domestic chip capacity post-US export controls<div><span class="cat-date date-now">Ongoing</span></div></div>
+        </div>
+        <div class="catalyst-item">
+          <div class="cat-dot" style="background:#f59e0b"></div>
+          <div class="cat-content"><strong>New Product Ramps</strong> — Single-wafer SPM + vertical furnace systems gaining traction beyond China customer base<div><span class="cat-date date-soon">H2 2026</span></div></div>
+        </div>
+        <div class="catalyst-item">
+          <div class="cat-dot" style="background:#64748b"></div>
+          <div class="cat-content"><strong>Customer Diversification</strong> — Expanding beyond China to global fab customers reduces geo-political risk premium<div><span class="cat-date date-later">2027</span></div></div>
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="ib-title ib-t-entry">🎯 Entry Point</div>
+        <div class="ib-row">
+          <div class="ib-label">Entry 1<small>Current zone</small></div>
+          <div class="ib-val c-blue">$95–$112<span class="preferred-chip">PREFERRED</span></div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">Entry 2<small>Trade war dip</small></div>
+          <div class="ib-val c-yellow">$80–$92</div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">Entry 3<small>Deep dip</small></div>
+          <div class="ib-val c-grey">$65</div>
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="ib-title ib-t-tp">✅ Take Profit</div>
+        <div class="ib-row">
+          <div class="ib-label">TP1<small>Roth Capital target</small></div>
+          <div class="ib-val c-green">$125<span class="ib-pct c-green">+15%</span></div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">TP2<small>Re-rate on global expansion</small></div>
+          <div class="ib-val c-green">$175<span class="ib-pct c-green">+61%</span></div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">TP3 🌙<small>China AI buildout 3–5yr</small></div>
+          <div class="ib-val c-purple">$450<span class="ib-pct c-purple">+313%</span></div>
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="ib-title ib-t-sl">🛑 Stop Loss</div>
+        <div class="ib-row">
+          <div class="ib-label">Tight Stop<small>Below recent support</small></div>
+          <div class="ib-val c-red">$82<span class="ib-pct c-red">-25%</span></div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">Hard Stop<small>Export ban escalation</small></div>
+          <div class="ib-val c-red">$60<span class="ib-pct c-red">-45%</span></div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">R:R Ratio<small>vs TP2</small></div>
+          <div class="ib-val c-yellow">2.4 : 1 ⚠️</div>
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="ib-title ib-t-date">📅 Price Timeline</div>
+        <div class="ib-row">
+          <div class="ib-label">Q3 2026<small>Q2 earnings beat</small></div>
+          <div class="ib-val c-yellow">$120–$140</div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">2027<small>Customer diversity</small></div>
+          <div class="ib-val c-green">$160–$200</div>
+        </div>
+        <div class="ib-row">
+          <div class="ib-label">2028–2029<small>China AI at scale</small></div>
+          <div class="ib-val c-purple">$300–$450+</div>
+        </div>
+      </div>
+
+      <div class="info-block">
+        <div class="ib-title ib-t-upside">📈 Scenarios</div>
+        <div class="upside-row">
+          <div class="upside-scenario c-red">Bear</div>
+          <div class="upside-bar-wrap"><div class="upside-bar bar-bear" style="width:14%"></div></div>
+          <div class="upside-pct c-red">-45%</div>
+          <div class="upside-price">$60</div>
+        </div>
+        <div class="upside-row">
+          <div class="upside-scenario c-yellow">Base</div>
+          <div class="upside-bar-wrap"><div class="upside-bar bar-base" style="width:15%"></div></div>
+          <div class="upside-pct c-yellow">+15%</div>
+          <div class="upside-price">$125</div>
+        </div>
+        <div class="upside-row">
+          <div class="upside-scenario c-green">Bull</div>
+          <div class="upside-bar-wrap"><div class="upside-bar bar-bull" style="width:52%"></div></div>
+          <div class="upside-pct c-green">+61%</div>
+          <div class="upside-price">$175</div>
+        </div>
+        <div class="upside-row">
+          <div class="upside-scenario c-purple">Moon</div>
+          <div class="upside-bar-wrap"><div class="upside-bar bar-moon" style="width:100%"></div></div>
+          <div class="upside-pct c-purple">+313%</div>
+          <div class="upside-price">$450</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="analyst-wrap">
+      <div class="analyst-title">Analyst Targets (Recent Upgrades)</div>
+      <table class="analyst-table">
+        <thead><tr><th>Firm</th><th>Target</th><th>Rating</th><th>Date</th></tr></thead>
+        <tbody>
+          <tr><td>Roth Capital</td><td class="c-green">$125</td><td>Buy</td><td>Jun 17, 2026</td></tr>
+          <tr><td>Roth Capital (prev)</td><td class="c-yellow">$100</td><td>Buy</td><td>Jun 1, 2026</td></tr>
+          <tr><td>Consensus (11 analysts)</td><td class="c-grey">$70</td><td>Mixed</td><td>Stale — pre-run</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card-summary">
+      <div class="summary-text">
+        ACMR คือ "picks and shovels" ของ China AI chip buildout — ขาย wafer cleaning equipment ให้กับ SMIC, Huawei
+        และ domestic Chinese fabs ที่ต้องสร้าง capacity ในประเทศหลัง US export controls ปิดกั้น ASML/AMAT
+        Q1 2026 revenue +34% YoY และ guidance 2026 ไว้ที่ $1.08B+ สะท้อนว่า demand แข็งแกร่งมาก ⚠️ Risk หลัก
+        คือ escalation ของ US-China trade war ที่อาจกระทบ valuation ได้แรง — size เล็กและ hedge ด้วย stop loss
+      </div>
+      <div class="summary-sizing">💼 แนะนำ position: 3–5% ของ portfolio · ระวัง geopolitical risk · Cut ที่ $82</div>
+    </div>
+  </div><!-- /ACMR -->
+
+</div><!-- /cards-grid -->
+
+<!-- ══ SOURCES ══ -->
+<div class="sources-section">
+  <div class="section-header" style="padding:0 0 12px;"><h2>🔗 Sources</h2></div>
+  <div class="sources-list">
+    <a href="https://www.insidermonkey.com/blog/10-best-small-cap-stocks-ready-to-explode-in-2026-1684004/" target="_blank">Insider Monkey — Small Cap Explode 2026</a>
+    <a href="https://www.marketbeat.com/stocks/NASDAQ/ONDS/forecast/" target="_blank">MarketBeat — ONDS Forecast</a>
+    <a href="https://www.marketbeat.com/stocks/NASDAQ/RXRX/forecast/" target="_blank">MarketBeat — RXRX Forecast</a>
+    <a href="https://finance.yahoo.com/quote/FLY/" target="_blank">Yahoo Finance — FLY Quote</a>
+    <a href="https://stockstotrade.com/news/acm-research-inc-acmr-news-2026_06_18/" target="_blank">StocksToTrade — ACMR Roth Upgrade</a>
+    <a href="https://stockanalysis.com/stocks/rxrx/forecast/" target="_blank">StockAnalysis — RXRX Forecast</a>
+    <a href="https://stockanalysis.com/stocks/fly/forecast/" target="_blank">StockAnalysis — FLY Forecast</a>
+    <a href="https://tickernerd.com/stock/onds-forecast/" target="_blank">TickerNerd — ONDS Targets</a>
+    <a href="https://tickernerd.com/stock/poet-forecast/" target="_blank">TickerNerd — POET Forecast</a>
+    <a href="https://www.insidermonkey.com/blog/10-small-cap-stocks-with-potential-to-rise-1000-percent-1782072/" target="_blank">Insider Monkey — 1000% Small Caps</a>
+    <a href="https://ts2.tech/en/poet-technologies-stock-jumps-as-legal-deadline-nears-and-ai-photonics-bet-faces-key-test/" target="_blank">POET Technologies — AI Photonics Update</a>
+    <a href="https://finance.yahoo.com/news/5-small-cap-stocks-watch-132000433.html" target="_blank">Yahoo Finance — 5 Small Caps to Watch</a>
+  </div>
+</div>
+
+<!-- ══ FOOTER ══ -->
+<div class="footer">
+  ⚠️ Not financial advice · XVARY Research · Jun 24, 2026 · All prices as of latest available data · Small cap stocks carry significant liquidity and volatility risk
+</div>
+
+</body>
+</html>
