@@ -36,6 +36,17 @@ export function writeJournal(data: JournalFile): void {
 
 export function saveTrade(trade: Trade): void {
   const journal = readJournal();
+
+  // Auto-close: if total exited shares >= entry shares, mark closed and compute P&L
+  const exitedShares = trade.exits.reduce((s, e) => s + e.shares, 0);
+  if (exitedShares >= trade.shares) {
+    trade.status = "closed";
+    trade.realizedPnL = trade.exits.reduce(
+      (sum, e) => sum + e.shares * (e.price - trade.entryPrice),
+      0
+    );
+  }
+
   const idx = journal.trades.findIndex((t) => t.id === trade.id);
   if (idx >= 0) {
     journal.trades[idx] = trade;
