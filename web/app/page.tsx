@@ -1,3 +1,5 @@
+import fs from "fs";
+import path from "path";
 import { getAllReports } from "@/lib/reports";
 import { rankReports } from "@/lib/ranking";
 import { getRankingChanges } from "@/lib/ranking-history";
@@ -9,10 +11,21 @@ import { RankingChangeTable } from "./RankingChangeTable";
 import { CatalystCalendar } from "./CatalystCalendar";
 import { ThemeGroups } from "./ThemeGroups";
 import { FactorRiskPanel } from "./FactorRiskPanel";
+import { MarketTimingPanel } from "./MarketTimingPanel";
 
 const TOP_N = 10;
 
+function loadMarketTiming() {
+  try {
+    const p = path.join(process.cwd(), "data", "market-timing.json");
+    return JSON.parse(fs.readFileSync(p, "utf-8"));
+  } catch {
+    return null;
+  }
+}
+
 export default function DashboardPage() {
+  const marketTiming = loadMarketTiming();
   const reports = getAllReports();
   const ranked = rankReports(reports);
   const rankChanges = getRankingChanges();
@@ -129,6 +142,9 @@ export default function DashboardPage() {
 
       {/* ── Factor-correlation warning — collapsible ────────────── */}
       <FactorRiskPanel risks={factorRisk} />
+
+      {/* ── Market Timing Panel ───────────────────────────────────── */}
+      {marketTiming && <MarketTimingPanel data={marketTiming} />}
 
       {/* ── Catalyst-day clustering warning — compact inline strip ── */}
       {clusters.length > 0 && (

@@ -1,0 +1,264 @@
+{
+  "ticker": "ONDS",
+  "companyName": "Ondas Inc.",
+  "companyDescription": "Autonomous Defense & Counter-UAS · Palantir-backed LADOS AI command platform + Iron Drone Raider + Sentrycs (Lockheed Martin partner) — government-funded drone defense scaling to $390M revenue",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-26T00:00:00.000Z",
+  "price": 7.74,
+  "priceChange": 0.78,
+  "priceNote": "Jun 25, 2026 · -42% from Jun 4 high of $13.36 · now at compelling risk/reward zone vs $20.13 analyst avg",
+  "marketCap": "$3.93B",
+  "sector": "Defense Technology / Autonomous Systems",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 68,
+  "summary": "ONDS is Palantir-backed defense autonomy platform with $150M+ in Q2 orders and $390M+ FY2026 guidance, trading 42% below its Jun 4 peak. Lockheed Martin just integrated Sentrycs into their Sanctum Counter-UAS platform (Jun 24), and Cyberhawk acquisition ($125M) adds AI drone inspection revenue. With 8 analysts all rated Buy at avg target $20.13, the current $7.74 price offers 160% upside to consensus — high-risk/high-conviction defense play.",
+  "catalysts": [
+    {
+      "icon": "⚡",
+      "name": "Q2 2026 Earnings — Order Delivery Read",
+      "description": "$150M+ Q2-to-date orders (>3x Q1 revenue) should confirm raised FY2026 guidance ≥$390M. Strong beat = major re-rating catalyst. Q1 was already +1,065% YoY ($50.1M).",
+      "urgencyLabel": "46 DAYS",
+      "dateBadge": "Aug 11, 2026",
+      "catalystDate": "2026-08-11",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "🛡️",
+      "name": "Lockheed Martin / Sentrycs Integration",
+      "description": "Sentrycs' Cyber/RF Counter-UAS tech integrated into Lockheed's Sanctum platform (Jun 24). First joint deployment signals DoD-level credibility and de-risks revenue pipeline for H2 2026.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🤖",
+      "name": "Cyberhawk Acquisition Close",
+      "description": "$125M deal (95% cash) adds AI drone inspection + critical infrastructure intelligence. Expands dual-use (defense + commercial) revenue. Expected to close Jun–Jul 2026.",
+      "urgencyLabel": "SOON",
+      "dateBadge": "Jun–Jul 2026",
+      "catalystDate": "2026-07-31",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Net income $134.21M > revenue $96.61M TTM — anomalous; likely acquisition fair value gains not operating profit. Must verify in Q2 earnings report.",
+    "507.6M shares outstanding — rapid acquisitions dilute shareholders continuously; equity raise risk if Cyberhawk cash depletes balance sheet",
+    "Integration risk: 6+ acquisitions in 12 months (Omnisys, World View, Sentrycs, Cyberhawk, American Robotics, AIROBOTICS). Revenue synergies may take 12–18 months to materialize",
+    "DoD budget sequestration risk — if Congress cuts drone/defense AI appropriations, backlog delivery timeline slips",
+    "Beta 2.62 — 52W range $1.53–$15.28 (900% swing); meme behavior amplifies both upside and downside. 3% max position"
+  ],
+  "estimateDates": [
+    {
+      "event": "Cyberhawk Close + Q2 Order Confirmation",
+      "dateRange": "Jul 2026",
+      "note": "Watch for official Cyberhawk close + next order announcement",
+      "est": "$9–$12",
+      "highlight": "yellow"
+    },
+    {
+      "event": "Q2 2026 Earnings",
+      "dateRange": "Aug 11, 2026",
+      "note": "Key revenue confirmation — needs ≥$130M Q2 to stay on $390M guide track",
+      "est": "≥$130M Q2 rev",
+      "highlight": "blue"
+    },
+    {
+      "event": "TP2 Analyst Consensus",
+      "dateRange": "Q4 2026 – Q1 2027",
+      "note": "If $390M FY guide confirmed + Lockheed deployment expands",
+      "est": "$20.13 avg target",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -45, "price": 4.26 },
+    { "label": "Base", "color": "yellow", "pct": 55, "price": 12.0 },
+    { "label": "Bull", "color": "green", "pct": 160, "price": 20.13 },
+    { "label": "Moon", "color": "purple", "pct": 352, "price": 35.0 }
+  ],
+  "analystTargets": [
+    { "firm": "H.C. Wainwright", "target": 25.0, "rating": "Buy" },
+    { "firm": "Needham", "target": 23.0, "rating": "Buy" },
+    { "firm": "Stifel Nicolaus", "target": 18.0, "rating": "Buy" },
+    { "firm": "Ladenburg Thalmann", "target": 13.0, "rating": "Buy" },
+    { "firm": "Consensus (8 analysts)", "target": 20.13, "rating": "Strong Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Defense contracts are government-funded (NDAA appropriations); revenue streams are independent of interest rate cycles",
+    "inflationNote": "Defense procurement budgets typically include inflation adjustment clauses; minimal direct exposure",
+    "sectorImpact": "NATO restocking + US DoD AI/autonomy spending is structural tailwind — counter-cyclical to Fed tightening. Budget expansion regardless of rate environment.",
+    "summary": "Fed rate policy has minimal impact on ONDS. Revenue is driven by government defense contracts and DoD AI autonomy budget, which is expanding bipartisan across political cycles. Fed Risk = LOW."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 7.74,
+        "rangeMax": 8.0,
+        "note": "Current price zone — at compelling R/R vs $20.13 analyst target",
+        "timing": "Now",
+        "preferred": true
+      },
+      {
+        "label": "Entry 2",
+        "level": 6.5,
+        "rangeMax": 7.0,
+        "note": "Dip zone — add 1% if earnings fear pulls back",
+        "timing": "If dips"
+      },
+      {
+        "label": "Entry 3",
+        "level": 5.0,
+        "rangeMax": 5.5,
+        "note": "Deep bear support — add final tranche on guide cut fear",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": { "price": 12.0, "pct": 55.0, "note": "Resistance zone recovery — above Jun 4 selloff area" },
+    "tp2": { "price": 20.13, "pct": 160.1, "note": "Analyst consensus avg (8 analysts, all Buy rated)" },
+    "tp3": { "price": 35.0, "pct": 352.2, "note": "$390M+ revenue confirmed · defense platform re-rates at 10x revenue", "moon": true },
+    "stopLoss": {
+      "tight": 6.8,
+      "tightPct": -12.1,
+      "tightNote": "Below $7 psychological support — thesis weakening signal",
+      "hard": 5.0,
+      "hardPct": -35.4,
+      "hardNote": "Deep bear / guidance cut — structural thesis break",
+      "riskReward": "13.2 : 1",
+      "rrNote": "Tight SL (-12.1%) vs TP2 (+160.1%) — exceptional",
+      "rrWarning": "Excellent R/R — one of the best on dashboard"
+    },
+    "verdict": "Scale In 2–3% max · Start 1% at $7.50–$8.00 NOW · Add 1% if dips to $6.50–$7.00 · Hold for Q2 earnings Aug 11 confirmation before full size",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Defense/autonomy stocks with strong order backlog confirmation typically see pre-earnings run 1–2 weeks before release as buy-side builds positions. ONDS had +180% move in 3 weeks before Q1 earnings (Apr 2026).",
+    "preRunupTiming": "1–2 สัปดาห์ก่อน Aug 11",
+    "preRunupPct": "+15–30%",
+    "postWin": {
+      "avgPct": 45,
+      "range": "+20% to +80%",
+      "note": "Q1 2026 earnings (May 12): +1,065% YoY revenue drove stock from $4 → $13 in 3 weeks (+225%). Small-cap defense beats with strong guidance tend to be violent to the upside.",
+      "exampleDate": "May 2026"
+    },
+    "postLose": {
+      "avgPct": -25,
+      "range": "-15% to -40%",
+      "note": "Q3 2025 miss (revenue shortfall + delayed DoD contract): stock dropped from $8 → $3 (-62%). Guide cuts are catastrophic for ONDS given diluted share count.",
+      "exampleDate": "Nov 2025"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Score 68, Beta 2.62, early-stage defense platform with execution risk from 6+ acquisitions. 3% max, Scale In. หามาก = risk ออกเยอะ ถ้า Q2 miss"
+    },
+    "stopPreCatalyst": { "pct": -12, "price": 6.8, "note": "ถ้าหลุด $6.80 ก่อน Aug 11 = mkt ไม่เชื่อ Q2 guide — thesis เปลี่ยน" },
+    "stopPostCatalyst": { "pct": -20, "note": "ถ้า Q2 revenue miss + guide ลด = ออกทันที ไม่รอ recovery" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "KTOS",
+      "event": "Kratos Defense — autonomous drone + hypersonics platform NDAA funding ramp",
+      "date": "Jan 2021",
+      "movePct": 525,
+      "days": 360,
+      "outcome": "good",
+      "note": "$4 → $25 as NDAA AI/autonomous defense funding surged. ONDS at similar inflection point — multi-platform defense autonomy play with government contract validation. Same structural tailwind."
+    },
+    {
+      "ticker": "AVAV",
+      "event": "AeroVironment — small UAV + loitering munition surge post-Ukraine restocking",
+      "date": "Mar 2022",
+      "movePct": 180,
+      "days": 180,
+      "outcome": "good",
+      "note": "$55 → $155 on NATO restocking + Switchblade demand. ONDS' LMS (Loitering Munition System) is direct comparable. Lockheed partnership = similar DoD validation signal that preceded AVAV re-rating."
+    },
+    {
+      "ticker": "PLTR",
+      "event": "Palantir — AI defense software DoD contract re-rating (AIP + TRL deployment)",
+      "date": "Oct 2023",
+      "movePct": 340,
+      "days": 270,
+      "outcome": "good",
+      "note": "$8 → $35+ as government AI spending became structural. ONDS uses Palantir software stack in LADOS C2 system — derivative play on same trend, at earlier stage with direct hardware/drone platform ownership."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Ondas secures $40M+ in new June orders for autonomous defense systems; Q2-to-date exceeds $150M",
+    "url": "https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/ondas-secures-over-40-million-in-new-orders-for-autonomous-defens-1180085",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/onds/",
+    "https://stockanalysis.com/stocks/onds/forecast/",
+    "https://www.tipranks.com/stocks/onds",
+    "https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/ondas-secures-over-40-million-in-new-orders-for-autonomous-defens-1180085",
+    "https://www.tipranks.com/news/the-fly/ondas-announces-collaboration-between-sentrycs-lockheed-martin-thefly-news",
+    "https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/ondas-to-acquire-cyberhawk-expanding-into-critical-infrastructure-1178450",
+    "https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/ondas-launches-new-autonomous-defense-systems-of-systems-at-euros-1177991",
+    "https://www.barrons.com/articles/palantir-backed-ondas-stock-jumps-autonomous-drone-company-sees-revenue-grow-1-065-da6b5e1d"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "ONDS เป็น platform ป้องกันประเทศด้วย AI อิสระ ได้รับการสนับสนุนจาก Palantir มี Order Q2 มากกว่า $150M และคาดการณ์รายได้ปีงบ 2026 ≥$390M ราคาร่วงมา 42% จากจุดสูงสุดเมื่อ 4 มิ.ย. ทำให้ P/Target เป็น 1:2.6 — ดีที่สุดในรอบปี นักวิเคราะห์ทั้ง 8 คนให้ Buy/Strong Buy เฉลี่ย $20.13 (+160%) แต่ต้องระวัง dilution สูง Beta 2.62 และ integration risk จากการซื้อกิจการ 6+ รายใน 12 เดือน",
+      "priceNote": "25 มิ.ย. 2569 · ลง 42% จากจุดสูงสุด $13.36 เมื่อ 4 มิ.ย. — โอกาสซื้อหลังแรลลี่ระยะสั้น",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "งบ Q2 2026 — อ่านการส่งมอบ Order",
+          "description": "Order Q2-to-date >$150M (3x revenue Q1 ทั้งหมด) ควรยืนยัน guidance ≥$390M — ถ้าตีพิมพ์แข็ง = catalyst ครั้งใหญ่ Q1 เป็นแล้ว +1,065% YoY"
+        },
+        {
+          "name": "Lockheed Martin / Sentrycs บูรณาการ",
+          "description": "เทคโนโลยี Cyber/RF ของ Sentrycs ถูกรวมเข้ากับ platform Sanctum ของ Lockheed Martin (24 มิ.ย.) ยืนยันความน่าเชื่อถือระดับ DoD"
+        },
+        {
+          "name": "ปิดดีล Cyberhawk",
+          "description": "$125M (95% เงินสด) เพิ่ม AI drone inspection + ข่าวกรองโครงสร้างพื้นฐานสำคัญ ขยายรายได้ทั้ง defense และ commercial"
+        }
+      ],
+      "risks": [
+        "กำไรสุทธิ $134.21M > รายได้ $96.61M TTM — ผิดปกติ น่าจะเป็น fair value gains จาก acquisition ไม่ใช่กำไรจากการดำเนินงาน",
+        "507.6M หุ้น — dilution สูงจากการซื้อกิจการต่อเนื่อง",
+        "Integration risk: ซื้อกิจการ 6+ รายใน 12 เดือน synergy อาจใช้เวลา 12–18 เดือน",
+        "ความเสี่ยงงบประมาณ DoD — ถ้า Congress ตัด drone/AI defense budgets กระทบโดยตรง",
+        "Beta 2.62 — ผันผวนสูงมาก ถือครองสูงสุด 3% เท่านั้น"
+      ],
+      "macroRisk": {
+        "rateOutlook": "สัญญา defense ได้รับเงินทุนจากรัฐ (NDAA) — ไม่สัมพันธ์กับนโยบายดอกเบี้ย Fed",
+        "inflationNote": "งบ defense มักมีการปรับเงินเฟ้ออยู่แล้ว ผลกระทบทางตรงต่ำมาก",
+        "sectorImpact": "การใช้จ่าย AI/autonomy ของ NATO และ DoD เป็น structural tailwind ที่ขยายตัวต่อเนื่องโดยไม่ขึ้นกับวัฏจักร Fed",
+        "summary": "Fed Risk ต่ำมาก รายได้ขึ้นอยู่กับงบประมาณ defense ของรัฐบาลซึ่งเป็นการขยายตัวแบบ bipartisan"
+      },
+      "entryStrategy": {
+        "verdict": "Scale In 2–3% สูงสุด · เริ่ม 1% ที่ $7.50–$8.00 ตอนนี้ · เพิ่ม 1% ถ้าย่อลง $6.50–$7.00 · รอยืนยันงบ Q2 ก่อน full size",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — R/R vs target $20.13 ดีที่สุดในรอบปี", "timing": "ตอนนี้" },
+          { "note": "zone ย่อตัว — เพิ่มถ้าตลาดกลัวก่อนงบ", "timing": "ถ้าย่อ" },
+          { "note": "แนว support ลึก — เพิ่ม lot สุดท้ายถ้า guide ถูกตัด", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "แนวต้านเดิม — ก่อน Jun 4 selloff" },
+        "tp2": { "note": "เป้าเฉลี่ยนักวิเคราะห์ 8 คน (ทุกคน Buy)" },
+        "tp3": { "note": "ยืนยัน revenue $390M+ · re-rate เป็น platform defense ที่ 10x" },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่าแนวรับ $7 — สัญญาณ thesis อ่อนแอ",
+          "hardNote": "ลึกมาก / guide ถูกตัด — ออกทันที",
+          "rrNote": "SL แคบ (-12.1%) vs TP2 (+160.1%) — ดีเยี่ยม",
+          "rrWarning": "R/R 13:1 ดีที่สุดใน dashboard ปัจจุบัน"
+        }
+      },
+      "estimateDates": [
+        { "event": "ปิดดีล Cyberhawk + ยืนยัน Order Q2", "note": "ดู official close + ประกาศ order ใหม่" },
+        { "event": "งบ Q2 2026", "note": "ต้องการ revenue ≥$130M เพื่อยืนยัน guide $390M" },
+        { "event": "เป้าราคา analyst consensus", "note": "ถ้า $390M FY confirmed + Lockheed deployment ขยาย" }
+      ]
+    }
+  }
+}

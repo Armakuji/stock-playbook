@@ -1,0 +1,206 @@
+{
+  "ticker": "RKLB",
+  "companyName": "Rocket Lab Corporation",
+  "companyDescription": "Space launch + systems company · Electron small rocket (proven, 50+ missions) + Neutron medium-lift in development · 'The clear #2 to SpaceX'",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-26T00:00:00.000Z",
+  "price": 107.24,
+  "priceChange": -0.69,
+  "priceNote": "Stale price as of Jun 18 close — down ~30% from $151 ATH due to SpaceX IPO 'capital siphon' effect. KeyBanc upgraded to Buy ($135 PT) citing selloff as unwarranted.",
+  "marketCap": "$62B",
+  "sector": "Industrials / Aerospace & Defense",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 74,
+  "summary": "Rocket Lab is the 'clear #2 to SpaceX' per KeyBanc, offering the only end-to-end space company outside SpaceX with both launch services (Electron) and spacecraft systems. Down 30% from ATH due to SpaceX IPO capital rotation — this is the buying opportunity. Neutron maiden flight is the binary catalyst with 30-50% upside asymmetry. Q2 earnings Aug 6 and potential Nasdaq-100 inclusion are near-term catalysts.",
+  "catalysts": [
+    {
+      "icon": "🚀",
+      "name": "Neutron Maiden Flight",
+      "description": "Neutron medium-lift rocket (8-ton LEO capacity) maiden flight expected H2 2026. Successful launch would unlock large-class government + commercial contracts and validate RKLB as SpaceX competitor. Binary catalyst — binary outcome.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "Earnings Aug 6, 2026. Revenue TTM $679M (+45.8%). Market looking for Electron launch cadence and Neutron timeline update. Strong guidance = sentiment shift.",
+      "urgencyLabel": "6 WEEKS",
+      "dateBadge": "Aug 6, 2026",
+      "catalystDate": "2026-08-06",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📈",
+      "name": "Nasdaq-100 Inclusion",
+      "description": "Cantor Fitzgerald analyst says Nasdaq-100 inclusion is 'next big catalyst' — triggered +7% move in June. Inclusion would force index funds to buy and reduce volatility premium.",
+      "urgencyLabel": "PENDING",
+      "dateBadge": "TBD 2026",
+      "catalystDate": "2026-09-01",
+      "badgeColor": "green",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Neutron maiden flight failure would cause -30-50% immediate selloff — binary event risk",
+    "SpaceX IPO (SPCX) siphons institutional capital and mindshare from RKLB — direct competition pressure",
+    "Analyst consensus PT $106.92 = barely above current price; upside dependent on Neutron success",
+    "Still unprofitable: Net income -$182M TTM; cash burn risk if Neutron delays extend into 2027",
+    "Executive insider selling: SVP offloaded $9.5M in shares Jun 18 — worth monitoring"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Aug 6, 2026", "note": "Launch cadence + Neutron timeline update", "est": "Rev ~$175M", "highlight": "blue" },
+    { "event": "Neutron Maiden Flight Window", "dateRange": "H2 2026", "note": "Binary catalyst — most important event for the thesis", "est": "GO / NO-GO", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -35, "price": 70 },
+    { "label": "Base", "color": "yellow", "pct": 26, "price": 135 },
+    { "label": "Bull", "color": "green", "pct": 50, "price": 161 },
+    { "label": "Moon", "color": "purple", "pct": 87, "price": 201 }
+  ],
+  "analystTargets": [
+    { "firm": "KeyBanc (Jun 2026)", "target": 135, "rating": "Buy (upgraded)" },
+    { "firm": "Cantor Fitzgerald", "target": 130, "rating": "Buy" },
+    { "firm": "Consensus (19 analysts)", "target": 107, "rating": "Buy" },
+    { "firm": "Barrons / Street High", "target": 151, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "FOMC July 29 rate decision. Space/aerospace sector is less directly rate-sensitive than tech, but RKLB's high beta (2.50) means it moves hard on risk-off days. A hike could cause -15-20% from current levels.",
+    "inflationNote": "Government space contracts (NASA, DoD) are multi-year and inflation-adjusted — provides revenue floor. Commercial launch business is more cyclically sensitive.",
+    "sectorImpact": "MEDIUM. The SpaceX IPO effect is sector-specific and separate from macro. Fed risk adds volatility but doesn't change the launch contract fundamentals.",
+    "summary": "Fed risk MEDIUM — RKLB's government contract revenue provides stability, but high beta (2.5x) and unprofitability mean macro risk-off events hit hard. The Neutron binary event dwarfs macro as the risk factor. Wait for early August entry if possible."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 107, "note": "Current price — near consensus PT. Only enter on Neutron conviction.", "timing": "Now (ค่าขนม size)" },
+      { "label": "Entry 2", "level": 92, "rangeMax": 98, "note": "Post-FOMC dip / technical support zone", "timing": "Early Aug", "preferred": true },
+      { "label": "Entry 3", "level": 75, "note": "Deep dip — near-term revenue support floor", "timing": "If panic selloff" }
+    ],
+    "tp1": { "price": 135, "pct": 25.9, "note": "KeyBanc target — Neutron timeline confirmed" },
+    "tp2": { "price": 161, "pct": 50.1, "note": "ATH retest if Neutron maiden succeeds" },
+    "tp3": { "price": 200, "pct": 86.5, "note": "Full re-rate post-Neutron commercial success · 2027", "moon": true },
+    "stopLoss": {
+      "tight": 88, "tightPct": -17.9, "tightNote": "Below key support, pre-Neutron window closes",
+      "hard": 70, "hardPct": -34.7, "hardNote": "Revenue support floor — thesis broken if Neutron cancelled",
+      "riskReward": "2.1 : 1", "rrNote": "Entry 2 vs TP1", "rrWarning": "Acceptable — but position size small given binary risk"
+    },
+    "verdict": "Speculative BUY on SpaceX IPO selloff dip — Neutron is the binary bet. Small size now, larger at $92-98 post-FOMC.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "product_launch",
+    "preRunup": "Space launch companies historically run 15-30% in weeks before maiden flight announcements. RKLB itself ran +80% in the 6 weeks before SpaceX IPO (sector euphoria), showing how launch milestones trigger massive moves.",
+    "preRunupTiming": "4-6 สัปดาห์ก่อน Neutron flight announcement",
+    "preRunupPct": "+15-30%",
+    "postWin": {
+      "avgPct": 40,
+      "range": "+25% to +60%",
+      "note": "RKLB Electron first commercial success (Jan 2018) re-rated company 3x over 18 months. Comparable: Rocket One (RKTO) IPO catalyst +45% in 2 weeks Jun 2026 after successful launch. Space launch first-success events historically deliver 30-60% moves.",
+      "exampleDate": "Jun 2026"
+    },
+    "postLose": {
+      "avgPct": -35,
+      "range": "-25% to -55%",
+      "note": "Blue Origin New Glenn first anomaly (2025) caused -32% in sector peers. Virgin Orbit failure (Jan 2023) caused RKLB to drop -25% in sympathy despite being unrelated. Neutron failure would be RKLB-specific and potentially -40-50%.",
+      "exampleDate": "Jan 2023"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "Binary catalyst = size small. 4% of portfolio max. If Neutron succeeds, scale to 10-12% on confirmation. Don't bet farm on binary event."
+    },
+    "stopPreCatalyst": { "pct": -15, "price": 91, "note": "หลุด $91 ก่อน Neutron = institutional losing confidence — ออก" },
+    "stopPostCatalyst": { "pct": -25, "note": "ถ้า Neutron fail / delay — ออกทันที อย่า average down จนกว่าจะรู้ timeline ใหม่" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "RKLB",
+      "event": "Electron First Commercial Success",
+      "date": "Jan 2018",
+      "movePct": 55,
+      "days": 60,
+      "outcome": "good",
+      "note": "First successful commercial Electron launch validated the company and triggered a 3x re-rate over 18 months. Neutron success would be an even larger inflection point given the medium-lift market size."
+    },
+    {
+      "ticker": "RKTO",
+      "event": "Rocket One Successful Launch + SpaceX IPO euphoria",
+      "date": "Jun 2026",
+      "movePct": 45,
+      "days": 14,
+      "outcome": "good",
+      "note": "Competitor Rocket One surged 45% in 2 weeks after successful launch during SpaceX IPO enthusiasm. Shows the sector re-rates hard on successful new rocket milestones."
+    },
+    {
+      "ticker": "ASTS",
+      "event": "Blue Origin explosion sector selloff",
+      "date": "May 2026",
+      "movePct": -30,
+      "days": 5,
+      "outcome": "bad",
+      "note": "Blue Origin anomaly caused -30% across space stocks in sympathy. A Neutron failure would be worse for RKLB (direct, not sympathy). Underscores binary nature of launch catalyst."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "KeyBanc upgrades Rocket Lab to Overweight — 'Clear #2 to SpaceX', $135 price target",
+    "url": "https://www.tipranks.com/news/rocket-lab-stock-rises-as-keybanc-upgrades-to-buy-says-rklb-is-the-clear-2-to-spcx",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/rklb/",
+    "https://stockanalysis.com/stocks/rklb/forecast/",
+    "https://www.tipranks.com/news/rocket-lab-stock-rises-as-keybanc-upgrades-to-buy-says-rklb-is-the-clear-2-to-spcx",
+    "https://www.tipranks.com/news/rocket-lab-rklb-stock-jumped-7-after-top-analyst-says-nasdaq-100-inclusion-next-big-catalyst",
+    "https://invezz.com/news/2026/06/16/analyst-says-buy-these-two-space-stocks-amid-spacex-driven-sell-off/",
+    "https://www.tipranks.com/news/should-investors-buy-the-pullback-in-rocket-lab-stock-rklb-heres-wall-streets-take"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Rocket Lab คือ '#2 ที่ชัดเจนของ SpaceX' ตาม KeyBanc — ร่วง 30% จาก ATH เพราะ capital siphon จาก SpaceX IPO ถือเป็นโอกาสซื้อ Neutron maiden flight คือ binary catalyst ที่มี upside 30-50% หาก succeed Q2 earnings 6 ส.ค. และการเข้า Nasdaq-100 เป็น catalyst ใกล้มือ",
+      "priceNote": "ราคา stale ณ 18 มิ.ย. — ร่วง ~30% จาก ATH $151 จาก SpaceX IPO effect KeyBanc upgrade ราคาเป้า $135",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "Neutron Maiden Flight", "description": "จรวดขนาดกลาง Neutron (8 ตัน LEO) — binary catalyst ถ้าสำเร็จ = re-rate ใหญ่" },
+        { "name": "Q2 2026 Earnings", "description": "Earnings 6 ส.ค. — อ่าน launch cadence + Neutron timeline" },
+        { "name": "Nasdaq-100 Inclusion", "description": "Cantor Fitzgerald บอก NDX inclusion เป็น catalyst ถัดไป — force buy จาก index funds" }
+      ],
+      "risks": [
+        "Neutron fail = -30-50% ทันที",
+        "SpaceX ดูด capital และความสนใจออกจาก RKLB",
+        "ยังขาดทุน -$182M TTM ความเสี่ยงเงินสด",
+        "Insider ขายหุ้น $9.5M — สัญญาณเฝ้าระวัง"
+      ],
+      "macroRisk": {
+        "rateOutlook": "FOMC 29 ก.ค. — RKLB beta 2.5x = volatile มากในวัน risk-off",
+        "inflationNote": "สัญญา NASA/DoD ปรับตามเงินเฟ้อ — ให้ revenue floor แต่ commercial ไวต่อ cycle",
+        "sectorImpact": "MEDIUM — binary ของ Neutron ใหญ่กว่า macro risk มาก",
+        "summary": "Fed risk MEDIUM แต่ Neutron คือ risk ที่ใหญ่ที่สุด ถือขนาดเล็ก"
+      },
+      "entryStrategy": {
+        "verdict": "Speculative BUY บนการย่อจาก SpaceX IPO selloff — Neutron คือการพนัน binary ถือขนาดเล็ก เพิ่มที่ $92-98",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — เท่ากับ PT consensus เข้าเฉพาะถ้ามั่นใจ Neutron", "timing": "ตอนนี้ (ค่าขนม)" },
+          { "note": "โซนย่อหลัง FOMC — แนวรับ technical", "timing": "ต้นสิงหา" },
+          { "note": "ย่อลึก — panic selloff zone", "timing": "ถ้า panic" }
+        ],
+        "tp1": { "note": "เป้า KeyBanc — Neutron timeline ยืนยัน" },
+        "tp2": { "note": "retest ATH ถ้า Neutron maiden สำเร็จ" },
+        "tp3": { "note": "Full re-rate หลัง Neutron commercial success · 2027" },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า $91 ก่อน Neutron = ออก",
+          "hardNote": "Revenue floor — thesis เปลี่ยนถ้า Neutron ถูก cancel",
+          "rrNote": "Entry 2 vs TP1",
+          "rrWarning": "พอรับได้ — แต่ size เล็กเพราะ binary"
+        }
+      },
+      "estimateDates": [
+        { "event": "Earnings Q2 2026", "note": "อ่าน launch cadence + Neutron update" },
+        { "event": "Neutron Maiden Flight", "note": "Binary catalyst ที่สำคัญที่สุดสำหรับ thesis" }
+      ]
+    }
+  }
+}

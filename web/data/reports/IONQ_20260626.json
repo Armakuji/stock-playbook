@@ -1,0 +1,218 @@
+{
+  "ticker": "IONQ",
+  "companyName": "IonQ, Inc.",
+  "companyDescription": "Quantum computing platform · Trapped-ion technology leader · Government ($2B Trump grants) + commercial (AWS/Azure/GCP) + cybersecurity/QKD expansion · Only profitable quantum pure-play",
+  "exchange": "NYSE",
+  "generatedAt": "2026-06-26T00:00:00.000Z",
+  "price": 50.56,
+  "priceChange": -5.67,
+  "priceChange1D": -5.67,
+  "priceNote": "Pulled back -5.7% on Jun 25 — likely profit-taking. Northland just raised PT to $70 (+27%), Trump signed quantum EO Jun 23. Investor Day Sep 8 is next major re-rate event.",
+  "marketCap": "$18.87B",
+  "sector": "Technology / Quantum Computing",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 76,
+  "summary": "IonQ is the only publicly profitable quantum computing company with $187M TTM revenue (+334.6%) and $308M net income. Trump's executive orders to boost quantum computing (Jun 23) + $2B government grants to 9 quantum firms = direct IONQ tailwind. Investor Day Sep 8 is the next major catalyst. Strong Buy from 13 analysts with $68.79 PT (+36% upside). Revenue expected to double in 2026.",
+  "catalysts": [
+    {
+      "icon": "🏛",
+      "name": "Trump Quantum Executive Orders",
+      "description": "Trump signed 2 executive orders Jun 23, 2026 to boost US quantum computing and mitigate security threats. $2B in government grants to 9 quantum firms — IONQ among recipients. Government taking equity stakes signals long-term commitment.",
+      "urgencyLabel": "SIGNED",
+      "dateBadge": "Jun 23, 2026",
+      "catalystDate": "2026-06-23",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "📅",
+      "name": "Investor Day",
+      "description": "IonQ Investor Day September 8, 2026. Roadmap to 2M qubits by 2030, 256-qubit chip prototype, modular system upgrades. Northland raised PT to $70 specifically citing this event as re-rate catalyst.",
+      "urgencyLabel": "11 WEEKS",
+      "dateBadge": "Sep 8, 2026",
+      "catalystDate": "2026-09-08",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "⚡",
+      "name": "Q2 2026 Earnings",
+      "description": "Earnings Aug 5, 2026. Q1 2026 was record: revenue grew 755% YoY, RPOs surged 554% to $470M. Annual guidance raised. Expects revenue to double in full-year 2026.",
+      "urgencyLabel": "6 WEEKS",
+      "dateBadge": "Aug 5, 2026",
+      "catalystDate": "2026-08-05",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🔐",
+      "name": "Clavis XG Multiplex QKD Launch",
+      "description": "IonQ launched Clavis XG Multiplex Jun 17 — quantum key distribution deployable at scale in metro networks. New revenue stream in quantum cybersecurity.",
+      "urgencyLabel": "LAUNCHED",
+      "dateBadge": "Jun 17, 2026",
+      "catalystDate": "2026-06-17",
+      "badgeColor": "green",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Valuation: PE 54.88x on $308M net income — high for a company at this scale; any guidance miss = 20%+ de-rate",
+    "52-week range $25-84: -40% from ATH $84 already; if Investor Day disappoints, could revisit $35-40",
+    "Competition: IBM (1000+ qubits), Google Willow (72 qubits error-corrected), Microsoft fermion approach — all well-funded",
+    "Revenue base still small ($187M TTM); 'record' growth is off small base — sustainability of 300%+ growth rates is questionable",
+    "High beta (3.18) = most volatile on this list — 5% swings in a day are normal"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Aug 5, 2026", "note": "RPO trajectory + revenue doubling progress", "est": "est. Rev $50M+", "highlight": "blue" },
+    { "event": "Investor Day", "dateRange": "Sep 8, 2026", "note": "2M qubit roadmap + 256-qubit chip update = major re-rate trigger", "est": "KEY EVENT", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -35, "price": 33 },
+    { "label": "Base", "color": "yellow", "pct": 36, "price": 69 },
+    { "label": "Bull", "color": "green", "pct": 67, "price": 84 },
+    { "label": "Moon", "color": "purple", "pct": 138, "price": 120 }
+  ],
+  "analystTargets": [
+    { "firm": "Northland (Jun 2026)", "target": 70, "rating": "Outperform" },
+    { "firm": "Consensus (13 analysts)", "target": 69, "rating": "Strong Buy" },
+    { "firm": "JPMorgan", "target": 65, "rating": "Overweight" }
+  ],
+  "macroRisk": {
+    "fedRisk": "HIGH",
+    "rateOutlook": "FOMC July 29. IONQ is the highest-beta name on this list (3.18) with PE 54x — rate-sensitive. A surprise hike could trigger 20-25% correction.",
+    "inflationNote": "Government contracts (NSA, DoD quantum) partially insulate revenue. But commercial cloud access pricing is competitive — inflation doesn't help margins.",
+    "sectorImpact": "HIGH impact. High-growth, high-PE, high-beta quantum computing = maximum rate sensitivity. The $2B government grants signal helps but macro risk remains the biggest near-term overhang.",
+    "summary": "Fed risk HIGH for IONQ. Beta 3.18 + PE 54x = very sensitive to rate surprises. Wait for early August entry post-FOMC. The Trump EO + Investor Day Sep 8 provide a clear catalyst pathway — just need macro window to open."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 50.56, "note": "Current — after -5.7% pullback. Valid ค่าขนม entry on Trump EO momentum.", "timing": "Now (ค่าขนม size)" },
+      { "label": "Entry 2", "level": 42, "rangeMax": 46, "note": "Post-FOMC dip zone — 50-day MA area. Better entry.", "timing": "Early Aug", "preferred": true },
+      { "label": "Entry 3", "level": 33, "note": "Deep dip — near bear scenario price. Only if macro shock.", "timing": "Macro shock only" }
+    ],
+    "tp1": { "price": 69, "pct": 36.5, "note": "Consensus PT — pre-Investor Day" },
+    "tp2": { "price": 84, "pct": 66.2, "note": "ATH retest — post strong Investor Day" },
+    "tp3": { "price": 120, "pct": 137.4, "note": "Full quantum computing re-rate · 2027-28", "moon": true },
+    "stopLoss": {
+      "tight": 40, "tightPct": -20.9, "tightNote": "Below 50-day MA / key support",
+      "hard": 30, "hardPct": -40.7, "hardNote": "Near 52-week low — thesis broken if government contracts stall",
+      "riskReward": "2.4 : 1", "rrNote": "Entry 2 vs TP1", "rrWarning": "Adequate R/R — but high volatility requires smaller size"
+    },
+    "verdict": "Speculative BUY — Trump EO + Investor Day Sep 8 = clear catalyst pathway. Size 4-5% max due to beta 3.18. Add at $42-46 post-FOMC.",
+    "approach": "DCA"
+  },
+  "catalystSpot": {
+    "catalystType": "regulatory_approval",
+    "preRunup": "IONQ ran +180% in the 8 weeks before Q1 2026 earnings on $2B government grant news. Trump EO catalyst (Jun 23) already triggered +15% in days before pullback. Government policy catalysts create 2-4 week run-ups in quantum names.",
+    "preRunupTiming": "2-4 สัปดาห์ก่อน Investor Day หรือ policy announcement",
+    "preRunupPct": "+20-40%",
+    "postWin": {
+      "avgPct": 22,
+      "range": "+15% to +45%",
+      "note": "IONQ Q1 2026 earnings (May 6, 2026) — 755% YoY revenue growth, raised guidance → stock surged. $2B Trump government grants (May 22, 2026) → IONQ +35% over 2 weeks with sector. Strong policy + earnings beats deliver 20-40% moves.",
+      "exampleDate": "May 2026"
+    },
+    "postLose": {
+      "avgPct": -25,
+      "range": "-15% to -40%",
+      "note": "IONQ Q4 2024 — guidance softer than expected on enterprise sales timeline → stock -22% over 3 weeks. Investor Day without roadmap details or if 256-qubit chip delayed → could trigger -20-30% de-rate.",
+      "exampleDate": "Feb 2025"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "Highest beta on dashboard (3.18). Maximum 4% despite strong conviction. If Investor Day Sep 8 delivers clear qubit roadmap + commercial revenue inflection, can scale to 8-10% post-event."
+    },
+    "stopPreCatalyst": { "pct": -15, "price": 43, "note": "หลุด $43 ก่อน Investor Day = sentiment เปลี่ยน ออก" },
+    "stopPostCatalyst": { "pct": -20, "note": "ถ้า Investor Day ไม่มี 256-qubit detail หรือ roadmap หลวม ออกทันที" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "IONQ",
+      "event": "Trump $2B Quantum Computing Government Grants",
+      "date": "May 2026",
+      "movePct": 35,
+      "days": 14,
+      "outcome": "good",
+      "note": "US government taking equity stakes in 9 quantum firms including IONQ — stock +35% over 2 weeks with sector. Trump Executive Orders Jun 23 are an extension of this same policy tail."
+    },
+    {
+      "ticker": "QBTS",
+      "event": "D-Wave Record Revenue + Upbeat Outlook",
+      "date": "Jun 2026",
+      "movePct": 28,
+      "days": 5,
+      "outcome": "good",
+      "note": "D-Wave quantum led the sector +28% in 5 days on record earnings + government adoption narrative. Shows quantum earnings beats still drive 25-30% near-term moves even at elevated valuations."
+    },
+    {
+      "ticker": "IONQ",
+      "event": "Q1 2026 Earnings — 755% Revenue Growth + Raised Guide",
+      "date": "May 2026",
+      "movePct": 30,
+      "days": 7,
+      "outcome": "good",
+      "note": "Record Q1 with $470M RPOs (backlog) and revenue guidance raised — stock rallied 30% in the week following. Q2 earnings Aug 5 could replicate if growth trajectory sustains."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Trump signs two executive orders to boost quantum computing — Northland raises IONQ price target 27% to $70 ahead of Investor Day",
+    "url": "https://www.tipranks.com/news/why-ionq-stock-is-rising-today-and-why-this-5-star-analyst-raised-his-price-target-by-27",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/ionq/",
+    "https://stockanalysis.com/stocks/ionq/forecast/",
+    "https://www.tipranks.com/news/why-ionq-stock-is-rising-today-and-why-this-5-star-analyst-raised-his-price-target-by-27",
+    "https://www.wsj.com/politics/policy/trump-seeks-to-boost-quantum-computing-with-new-executive-orders-b2200634",
+    "https://www.wsj.com/tech/quantum-computing-grants-ibm-rigetti-globalfoundries-7382e6be",
+    "https://www.businesswire.com/news/home/20260617774914/en/IonQ-Introduces-Clavis-XG-Multiplex-Making-Quantum-Security-Deployable-at-Scale-in-Metro-Networks/",
+    "https://www.reuters.com/technology/quantum-computing-firm-ionq-raises-annual-revenue-forecast-2026-05-06/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "IonQ คือ quantum computing company ที่ทำกำไรเพียงรายเดียว รายได้ TTM $187M (+334.6%) และกำไร net $308M Trump ออก EO ส่งเสริม quantum computing (23 มิ.ย.) + grants รัฐบาล $2B = tailwind โดยตรง Investor Day 8 ก.ย. เป็น catalyst ใหญ่ถัดไป Strong Buy จาก 13 analysts",
+      "priceNote": "ย่อ -5.7% วัน 25 มิ.ย. — profit taking Northland เพิ่ง raise PT เป็น $70 Trump EO 23 มิ.ย. Investor Day 8 ก.ย.",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "Trump Quantum Executive Orders", "description": "Trump ออก EO 2 ฉบับ 23 มิ.ย. ส่งเสริม quantum + $2B grants รัฐบาลลงทุน equity stake ใน IONQ" },
+        { "name": "Investor Day", "description": "8 ก.ย. 2026 — roadmap 2M qubits ปี 2030 + 256-qubit chip prototype = re-rate event" },
+        { "name": "Earnings Q2 2026", "description": "5 ส.ค. — Q1 เติบโต 755% YoY คาด H2 revenue doubling ต่อเนื่อง" },
+        { "name": "Clavis XG Multiplex QKD", "description": "เปิดตัว 17 มิ.ย. — quantum cybersecurity revenue stream ใหม่" }
+      ],
+      "risks": [
+        "PE 54x — ไวต่อดอกเบี้ยและ guidance miss",
+        "52-week range $25-84 — ความผันผวนสูงมาก",
+        "IBM / Google / Microsoft — คู่แข่งที่มีเงินทุนสูง",
+        "Beta 3.18 — ขยับ 5%+ ต่อวันเป็นเรื่องปกติ"
+      ],
+      "macroRisk": {
+        "rateOutlook": "FOMC 29 ก.ค. — IONQ beta 3.18 + PE 54x = ไวต่อดอกเบี้ยมากที่สุดในกลุ่ม",
+        "inflationNote": "Government contracts ป้องกันได้บางส่วน แต่ valuation สูงทำให้ไวต่อ rate surprise",
+        "sectorImpact": "สูง — quantum high-growth = maximum rate sensitivity",
+        "summary": "Fed risk HIGH รอ early ส.ค. หลัง FOMC ก่อนเพิ่ม position Trump EO + Investor Day 8 ก.ย. ชัดเจนเรื่อง catalyst pathway"
+      },
+      "entryStrategy": {
+        "verdict": "Speculative BUY — Trump EO + Investor Day 8 ก.ย. = catalyst ชัดเจน ถือ 4-5% max เพราะ beta 3.18 เพิ่มที่ $42-46 หลัง FOMC",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — หลังย่อ 5.7% Trump EO momentum", "timing": "ตอนนี้ (ค่าขนม)" },
+          { "note": "หลัง FOMC dip zone — 50-day MA", "timing": "ต้นสิงหา" },
+          { "note": "Deep dip — เฉพาะ macro shock", "timing": "Macro shock เท่านั้น" }
+        ],
+        "tp1": { "note": "PT consensus ก่อน Investor Day" },
+        "tp2": { "note": "Retest ATH — หลัง Investor Day แข็งแกร่ง" },
+        "tp3": { "note": "Full quantum re-rate · 2027-28" },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า 50-day MA / $40 แนวรับหลัก",
+          "hardNote": "ใกล้ 52-week low — thesis เปลี่ยน",
+          "rrNote": "Entry 2 vs TP1",
+          "rrWarning": "R/R พอรับได้ แต่ size เล็กเพราะ beta สูง"
+        }
+      },
+      "estimateDates": [
+        { "event": "Earnings Q2 2026", "note": "RPO trajectory + revenue doubling progress" },
+        { "event": "Investor Day", "note": "roadmap 2M qubit + 256-qubit chip = re-rate ใหญ่" }
+      ]
+    }
+  }
+}

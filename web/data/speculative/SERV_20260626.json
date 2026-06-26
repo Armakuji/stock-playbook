@@ -1,0 +1,205 @@
+{
+  "ticker": "SERV",
+  "companyName": "Serve Robotics Inc.",
+  "companyDescription": "Autonomous Delivery Robots · NVIDIA-powered last-mile robot fleet backed by Uber",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-26T00:00:00.000Z",
+  "price": 6.12,
+  "priceChange": -4.52,
+  "priceNote": "At 52-week low ($6.02–$18.64) — was $18.64 high. Revenue +578% YoY Q1. Dilution shelf $300M filed — key risk.",
+  "marketCap": "$473M",
+  "sector": "Industrials / Autonomous Robotics",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 65,
+  "summary": "SERV is a ค่าขนม-grade autonomous delivery robot play backed by NVIDIA and Uber. Q1 2026 revenue +578% YoY, 2026 guidance $26M, expanding beyond food into laundry (NoScrubs). Moon case: scale to 10K+ robot fleet. Bear case: dilution ($300M shelf) crushes equity before profitability.",
+  "catalysts": [
+    {
+      "icon": "📦",
+      "name": "Q2 Earnings & Fleet Milestone",
+      "description": "Fleet scaling update toward 2,000+ robots. Uber Eats contract execution and new verticals (White Castle, NoScrubs laundry). Revenue acceleration from $3M Q1 toward $26M FY guidance.",
+      "urgencyLabel": "41 DAYS",
+      "dateBadge": "Aug 6, 2026",
+      "catalystDate": "2026-08-06",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🤖",
+      "name": "NVIDIA Partnership Depth",
+      "description": "Maggie AI conversational robot debuted at NVIDIA GTC 2026 — edge AI integration signals NVIDIA platform validation. Any hardware order or expanded partnership = major catalyst.",
+      "urgencyLabel": "NOW",
+      "dateBadge": "Ongoing",
+      "catalystDate": "2026-06-26",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🚀",
+      "name": "Fleet 10K Expansion Announcement",
+      "description": "Management has guided 2,000 robots by year-end. Moon case: Uber contract scales to 10K+ robots, creating first true commercial robot-as-a-service recurring revenue model in the US.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "Q3–Q4 2026",
+      "catalystDate": "2026-10-01",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "$300M mixed securities shelf filed May 2026 — dilution risk is #1 bear case; equity could be cut 40–60%",
+    "Revenue is still tiny ($26M FY2026 guidance vs $473M market cap = 18x P/S) — any miss crushes stock",
+    "Cathie Wood / institutional sentiment has been volatile; high short interest; Freedom Broker downgraded to Hold",
+    "Uber could build in-house robots or switch vendors — single customer concentration risk",
+    "Physical robot business has path-to-profit uncertainty — losses were -$137M TTM on $5M revenue"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Aug 6, 2026", "note": "Fleet count + revenue vs $26M guide", "est": "est. $6–7M", "highlight": "yellow" },
+    { "event": "TP1 Fleet 2K Milestone", "dateRange": "Q3 2026", "note": "2,000 robots deployed = commercialization proof", "est": "$10–12 target", "highlight": "blue" },
+    { "event": "TP2 / $26M Revenue FY2026", "dateRange": "Q4 2026", "note": "Full year guidance hit → re-rate", "est": "$18 target", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -55, "price": 2.75 },
+    { "label": "Base", "color": "yellow", "pct": 80, "price": 11.0 },
+    { "label": "Bull", "color": "green", "pct": 194, "price": 18.0 },
+    { "label": "Moon", "color": "purple", "pct": 390, "price": 30.0 }
+  ],
+  "analystTargets": [
+    { "firm": "Ladenburg", "target": 16.60, "rating": "Buy" },
+    { "firm": "Consensus (8 analysts)", "target": 18.45, "rating": "Strong Buy" },
+    { "firm": "Freedom Broker", "target": 18.00, "rating": "Hold" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Rate-neutral — robot-as-a-service revenue model not rate-sensitive",
+    "inflationNote": "Inflation actually benefits SERV: human labor cost inflation drives robotics adoption faster",
+    "sectorImpact": "AI robotics sector decoupled from rate cycle — catalyst-driven pure play",
+    "summary": "Fed risk LOW. SERV's growth tied to robot fleet utilization + Uber contract execution, not rate environment. Main macro risk is consumer spending slowdown cutting Uber Eats order volume."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 6.12, "note": "Current price · at 52-week low support", "timing": "Now (small scale)" },
+      { "label": "Entry 2", "level": 5.00, "rangeMax": 5.50, "note": "Dip zone · better R/R", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 3.50, "note": "Structural support · only if thesis intact", "timing": "Deep dip / dilution flush" }
+    ],
+    "tp1": { "price": 10.0, "pct": 63.4, "note": "Fleet 2K milestone re-rate" },
+    "tp2": { "price": 18.0, "pct": 194.1, "note": "FY guidance hit + analyst consensus" },
+    "tp3": { "price": 30.0, "pct": 390.2, "note": "Moon: 10K robot fleet + multi-vertical win · 2027", "moon": true },
+    "stopLoss": {
+      "tight": 4.80, "tightPct": -21.6, "tightNote": "Below 52-week low support — thesis in question",
+      "hard": 3.20, "hardPct": -47.7, "hardNote": "Dilution flush zone — equity at risk",
+      "riskReward": "9:1", "rrNote": "vs TP2 from preferred entry $5.25", "rrWarning": "Asymmetric ✅"
+    },
+    "verdict": "ค่าขนม play at 52-week low. Scale in 2–3% max. Prefer $5.00–5.50 dip entry over chasing $6.12.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "SERV has historically run 20–40% in weeks before fleet milestone announcements. Q4 2025 run from $6 to $18 was driven by Uber fleet expansion confirmation.",
+    "preRunupTiming": "1–3 สัปดาห์ก่อน earnings/fleet announcement",
+    "preRunupPct": "+15–30%",
+    "postWin": {
+      "avgPct": 25,
+      "range": "+15% to +60%",
+      "note": "Q4 2025 fleet milestone: SERV surged +45% over 3 weeks. Q1 2026 earnings (May 7) beat drove +28% intraday.",
+      "exampleDate": "Q4 2025 · Nov–Dec 2025"
+    },
+    "postLose": {
+      "avgPct": -25,
+      "range": "-20% to -45%",
+      "note": "May 2026: Freedom Broker downgrade + dilution shelf filing → -35% over 3 weeks from peak.",
+      "exampleDate": "May 2026"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "ค่าขนม play — 2% max. High dilution risk offsets strong catalysts. Conviction moderate."
+    },
+    "stopPreCatalyst": { "pct": -15, "price": 5.20, "note": "ถ้าหลุด $5.20 ก่อน earnings = thesis เปลี่ยน" },
+    "stopPostCatalyst": { "pct": -20, "note": "ถ้า earnings miss revenue guide > 15% ออกทันที" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "SERV",
+      "event": "Q4 2025 Uber fleet expansion confirmation",
+      "date": "Nov 2025",
+      "movePct": 210,
+      "days": 45,
+      "outcome": "good",
+      "note": "SERV went from $6 to ~$18.64 (+210%) in Nov–Dec 2025 on fleet scaling to 1,000+ robots. Current $6.12 = same entry level as before that run."
+    },
+    {
+      "ticker": "DASH",
+      "event": "DoorDash category creation — food delivery mainstream adoption",
+      "date": "Jan 2021",
+      "movePct": 130,
+      "days": 90,
+      "outcome": "good",
+      "note": "DASH $100 → $230 (+130%) on proof that on-demand delivery was a permanent behavior shift. SERV's bull case is that robot delivery = next platform."
+    },
+    {
+      "ticker": "AEHR",
+      "event": "Aehr Test Systems — SiC wafer testing order confirmation from ON Semi",
+      "date": "Sep 2022",
+      "movePct": 1200,
+      "days": 300,
+      "outcome": "good",
+      "note": "AEHR went from $4 to $56 (+1300%) 2022–2023 on EV adoption binary catalyst. Small-cap hardware-as-a-service with one dominant customer (ON Semi). SERV/Uber structure is similar."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Serve Robotics Appoints Andreas Lieber to Board of Directors + Q1 2026 revenue +578% YoY",
+    "url": "https://www.globenewswire.com/news-release/2026/06/24/3316840/0/en/Serve-Robotics-Appoints-Andreas-Lieber-to-Board-of-Directors.html",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/serv/",
+    "https://stockanalysis.com/stocks/serv/forecast/",
+    "https://www.globenewswire.com/news-release/2026/06/02/3305259/0/en/serve-robotics-continues-expansion-beyond-food-delivery-launches-autonomous-laundry-vertical-with-noscrubs.html",
+    "https://www.globenewswire.com/news-release/2026/04/07/3268971/0/en/Serve-Robotics-Debuts-Conversational-Robot-Powered-by-Edge-AI-at-NVIDIA-GTC-2026.html",
+    "https://www.marketbeat.com/stocks/NASDAQ/SERV/forecast/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "SERV คือ ค่าขนม play ของหุ้น robot delivery ที่ NVIDIA และ Uber หนุนหลัง รายได้ Q1 2026 พุ่ง +578% YoY และกำลังขยาย fleet ไปถึง 2,000 หุ่นยนต์ ความเสี่ยงหลักคือ dilution shelf $300M — ถ้า thesis ไม่ผิดพลาด moon case อยู่ที่ $30+ (+390%)",
+      "priceNote": "ใกล้จุดต่ำสุด 52 สัปดาห์ $6.02 — เคยขึ้นถึง $18.64 มาแล้ว ตอนนี้ entry ดีกว่าตอน peak มาก",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "Q2 Earnings + Fleet Milestone", "description": "รายได้ Q2 และจำนวน robot fleet — ถ้าเดินหน้าสู่ 2,000 ตัวได้ หุ้นจะ re-rate" },
+        { "name": "NVIDIA Partnership", "description": "Maggie robot บน NVIDIA edge AI — ถ้ามี hardware order ใหม่ = catalysts ทันที" },
+        { "name": "Fleet 10K Moon Case", "description": "ถ้า Uber ขยาย contract ไปถึง 10K robot = recurring revenue model ครั้งแรกในสหรัฐ" }
+      ],
+      "risks": [
+        "ออก dilution shelf $300M — ความเสี่ยงหลัก ถ้า raise เพิ่มหุ้นจะลง 40–60%",
+        "รายได้เล็กมาก ($26M guidance vs market cap $473M = P/S 18x) — miss = ลงหนัก",
+        "ลูกค้าหลักคือ Uber — ถ้า Uber หันไปใช้ robot เองจะกระทบ thesis ทั้งหมด"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed rate กระทบน้อย — robot-as-a-service ไม่ sensitive กับดอกเบี้ย",
+        "inflationNote": "เงินเฟ้อช่วย SERV — ค่าแรงพนักงาน delivery แพงขึ้น = robot ถูกกว่า",
+        "sectorImpact": "AI robotics sector ขับเคลื่อนด้วย catalyst ไม่ใช่ cycle",
+        "summary": "Fed risk ต่ำ ความเสี่ยงหลักคือ execution และ dilution ไม่ใช่ macro"
+      },
+      "entryStrategy": {
+        "verdict": "เป็น ค่าขนม ที่ 52-week low เหมาะ scale in 2% max รอดิป $5.00–5.50 ดีกว่าเข้าตอนนี้",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน ใกล้ 52-week low", "timing": "เข้าเล็ก" },
+          { "note": "โซนดิปที่ดีกว่า R/R", "timing": "ถ้าย่อ" },
+          { "note": "โซน dilution flush", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Fleet 2K milestone re-rate" },
+        "tp2": { "note": "รายได้ FY2026 ตาม guidance + analyst consensus" },
+        "tp3": { "note": "Moon: 10K robot fleet + multi-vertical 2027", "moon": true },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า 52-week low = thesis ผิดพลาด",
+          "hardNote": "โซน dilution flush",
+          "rrNote": "vs TP2 จาก preferred entry",
+          "rrWarning": "Asymmetric ✅"
+        }
+      },
+      "estimateDates": [
+        { "event": "Q2 2026 Earnings", "note": "fleet count + revenue vs guide $26M" },
+        { "event": "Fleet 2K Milestone", "note": "proof of commercialization" },
+        { "event": "TP2 / FY2026 Revenue Hit", "note": "re-rate เต็ม" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "ticker": "BTBT",
+  "companyName": "Bit Digital, Inc.",
+  "companyDescription": "ETH Treasury + AI/HPC Infrastructure · WhiteFiber AI data centers · Ethereum staking + colocation",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-26T00:00:00.000Z",
+  "price": 2.17,
+  "priceChange": 6.90,
+  "priceNote": "Price as of Jun 18 (most recent available, +6.9% that day). WhiteFiber (WYFI subsidiary) secured $100M facility May 27. Purchased $20M ETH May 28. 52-week: $1.25–$4.55.",
+  "marketCap": "$757M",
+  "sector": "Technology / AI Infrastructure + ETH Treasury",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 60,
+  "summary": "BTBT is a dual-catalyst moonshot: ETH treasury play (holds ETH + staking) AND AI/HPC infrastructure via WhiteFiber subsidiary. Strong Buy from HC Wainwright ($7 target = +222%), B. Riley ($4 = +84%). Moon case: WhiteFiber IPO/re-rate + ETH bull cycle = $8–10 (+268–361%). Bear case: ETH crashes + AI data center ramp slower than expected. 5 analysts, all Strong Buy.",
+  "catalysts": [
+    {
+      "icon": "⚡",
+      "name": "WhiteFiber AI Data Center Ramp",
+      "description": "WhiteFiber (subsidiary, Nasdaq: WYFI) secured $100M delayed draw facility May 2026 for AI/HPC infrastructure expansion. Q2 results will show first full quarter of WhiteFiber contribution. Any large AI compute contract = major catalyst.",
+      "urgencyLabel": "~50 DAYS",
+      "dateBadge": "~Aug 14, 2026",
+      "catalystDate": "2026-08-14",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "💎",
+      "name": "ETH Price + Staking Yield",
+      "description": "BTBT holds ~25,000+ ETH ($60M+) plus staking yield. Any ETH price surge (ETF flows, Ethereum upgrade, BTC cycle spillover) directly lifts BTBT's balance sheet. $20M ETH purchased at ~$2,334 in May 2026.",
+      "urgencyLabel": "NOW",
+      "dateBadge": "Correlated",
+      "catalystDate": "2026-06-26",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🏗️",
+      "name": "WhiteFiber Spin-off / Re-rating",
+      "description": "WhiteFiber trades separately (WYFI) but BTBT holds controlling interest. If WhiteFiber re-rates as a pure AI infrastructure play (like CoreWeave), BTBT's stake could be worth more than current market cap alone.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "ETH price is volatile — BTBT's balance sheet moves with ETH directly. ETH -50% = BTBT -60%+",
+    "B. Riley lowered target from $5 to $4 (May 2026) — AI data center ramp slower than expected",
+    "Q1 2026 net loss -$146.7M mainly from digital asset mark-to-market adjustments",
+    "WhiteFiber (WYFI) trades at discount to CoreWeave/pure AI infra peers — re-rating not guaranteed",
+    "349M shares outstanding = dilution pressure; equity raises possible to fund WhiteFiber expansion"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "~Aug 14, 2026", "note": "WhiteFiber revenue + ETH treasury update", "est": "est. $30–35M", "highlight": "yellow" },
+    { "event": "TP1 WhiteFiber Contract Win", "dateRange": "Q3 2026", "note": "First major AI compute contract announcement", "est": "$4.60 analyst target", "highlight": "blue" },
+    { "event": "TP3 Moon / ETH Bull + WhiteFiber", "dateRange": "2027", "note": "ETH $5K+ cycle + WhiteFiber at full capacity", "est": "$8–10 target", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -55, "price": 0.98 },
+    { "label": "Base", "color": "yellow", "pct": 85, "price": 4.01 },
+    { "label": "Bull", "color": "green", "pct": 130, "price": 4.99 },
+    { "label": "Moon", "color": "purple", "pct": 268, "price": 8.0 }
+  ],
+  "analystTargets": [
+    { "firm": "HC Wainwright", "target": 7.0, "rating": "Buy" },
+    { "firm": "Consensus (5 analysts)", "target": 4.60, "rating": "Strong Buy" },
+    { "firm": "B. Riley", "target": 4.0, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "HIGH",
+    "rateOutlook": "Crypto assets highly rate-sensitive. Fed cut = ETH price surge. Fed hold = range-bound. Rate hike signal = -30% ETH.",
+    "inflationNote": "Bitcoin/ETH often used as inflation hedge, but correlation to risk assets in practice. Macro tightening hurts.",
+    "sectorImpact": "AI data center demand secular — insulates WhiteFiber from rate cycle. But ETH treasury = rate-sensitive.",
+    "summary": "Fed risk HIGH due to ETH exposure. WhiteFiber (AI infra) is Fed-neutral. If Fed cuts rates post-FOMC Jul 29 — BTBT could surge on both ETH rally AND AI risk-on. Worst case: rate hike signal + ETH sell-off."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 2.17, "note": "Current price — midpoint of 52-week range", "timing": "Now (tiny position)" },
+      { "label": "Entry 2", "level": 1.70, "rangeMax": 1.90, "note": "Near 52-week low re-test", "timing": "If ETH sells off", "preferred": true },
+      { "label": "Entry 3", "level": 1.30, "note": "Near all-time low support", "timing": "Only if ETH crashes to $1,500" }
+    ],
+    "tp1": { "price": 4.60, "pct": 112.0, "note": "Analyst consensus — WhiteFiber ramp confirmed" },
+    "tp2": { "price": 7.0, "pct": 222.6, "note": "HC Wainwright target — ETH bull + AI infra re-rate" },
+    "tp3": { "price": 10.0, "pct": 360.8, "note": "Moon: ETH $5K cycle + WhiteFiber at scale — 2027", "moon": true },
+    "stopLoss": {
+      "tight": 1.70, "tightPct": -21.7, "tightNote": "ETH breakdown below $1,800 = thesis changes",
+      "hard": 1.20, "hardPct": -44.7, "hardNote": "Near 52-week low — risk-of-further-dilution zone",
+      "riskReward": "6:1", "rrNote": "vs TP2 from preferred entry $1.80", "rrWarning": "Asymmetric ✅"
+    },
+    "verdict": "ค่าขนม ETH + AI play — เข้า 2% max ที่ $1.70–1.90 ถ้าดิป TP2 $7 = 222% upside จาก preferred entry",
+    "approach": "DCA"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "BTBT ขึ้น 50–200% ตาม cycle ของ ETH price + AI infra sentiment มักนำ ETH price 2–4 สัปดาห์",
+    "preRunupTiming": "ตาม ETH price action + earnings",
+    "preRunupPct": "+30–100% ตาม ETH cycle",
+    "postWin": {
+      "avgPct": 80,
+      "range": "+40% to +200%",
+      "note": "BTBT went from $1.25 to $4.55 (+264%) during ETH rally Jan–Apr 2026. WhiteFiber $100M facility announcement May 27 drove +15% in one week.",
+      "exampleDate": "Jan–Apr 2026 ETH rally"
+    },
+    "postLose": {
+      "avgPct": -40,
+      "range": "-30% to -60%",
+      "note": "ETH price dropped 35% May 2026 → BTBT fell -45% from $4.55 peak to $2.17. Mark-to-market losses drove Q1 net loss -$146.7M.",
+      "exampleDate": "May 2026 ETH correction"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "ค่าขนม 2% only — high crypto correlation + AI ramp risk. Pure upside bet on ETH + WhiteFiber combo."
+    },
+    "stopPreCatalyst": { "pct": -20, "price": 1.74, "note": "ถ้า ETH หลุด $2,000 = BTBT thesis อ่อนแอ" },
+    "stopPostCatalyst": { "pct": -25, "note": "ถ้า WhiteFiber ramp ช้ากว่า Q2 guide = ออก" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "MARA",
+      "event": "Marathon Digital — Bitcoin treasury + mining cycle",
+      "date": "Jan 2023",
+      "movePct": 900,
+      "days": 365,
+      "outcome": "good",
+      "note": "MARA $1 → $10 (+900%) 2023 as Bitcoin re-rated. BTBT's ETH treasury play is structurally similar — crypto asset on balance sheet = massive leverage to price."
+    },
+    {
+      "ticker": "SMCI",
+      "event": "SuperMicro Computer — AI server demand validation",
+      "date": "Oct 2023",
+      "movePct": 1900,
+      "days": 120,
+      "outcome": "good",
+      "note": "SMCI $60 → $1200 (+1900%) on AI server demand. WhiteFiber (BTBT subsidiary) is targeting the same HPC/AI data center market. If WhiteFiber catches even 5% of that re-rating, BTBT doubles."
+    },
+    {
+      "ticker": "RIOT",
+      "event": "Riot Platforms — Bitcoin mining + treasury cycle",
+      "date": "Oct 2022",
+      "movePct": 350,
+      "days": 180,
+      "outcome": "good",
+      "note": "RIOT $3 → $16 (+433%) Oct 2022 → Apr 2023 on BTC cycle + mining efficiency. ETH treasury stocks follow similar patterns — BTBT with WhiteFiber AI adds secular tailwind."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Bit Digital Purchases $20M of Ethereum + WhiteFiber secures $100M facility for AI/HPC growth",
+    "url": "https://www.prnewswire.com/news-releases/bit-digital-purchases-20-million-of-ethereum-deepening-its-strategic-asset-position-302784388.html",
+    "date": "May 2026"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/btbt/",
+    "https://stockanalysis.com/stocks/btbt/forecast/",
+    "https://www.prnewswire.com/news-releases/whitefiber-secures-100-million-delayed-draw-facility-to-support-near-term-growth-initiatives-302783598.html",
+    "https://www.prnewswire.com/news-releases/bit-digital-purchases-20-million-of-ethereum-deepening-its-strategic-asset-position-302784388.html",
+    "https://www.marketbeat.com/stocks/NASDAQ/BTBT/forecast/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "BTBT คือ dual-catalyst ค่าขนม: ETH treasury (hold ETH + staking) + AI/HPC infra ผ่าน WhiteFiber ราคา $2.17 อยู่กลาง 52-week range แต่ HC Wainwright target $7 (+222%) moon case $10 (+361%) ถ้า ETH bull + WhiteFiber scale — risk หลัก: ETH ลง 50% = BTBT ลง 60%",
+      "priceNote": "ข้อมูลล่าสุด Jun 18 — ราคาอาจเปลี่ยน ตาม ETH price action",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "WhiteFiber AI Ramp", "description": "$100M facility สำหรับ AI/HPC — Q2 earnings จะแสดงผลครั้งแรก" },
+        { "name": "ETH Price + Staking", "description": "ถือ ETH $60M+ — ขึ้นตาม ETH price โดยตรง" },
+        { "name": "WhiteFiber Re-rate", "description": "ถ้า WYFI re-rate ในฐานะ pure AI infra = stake ของ BTBT มีมูลค่ามากกว่า market cap" }
+      ],
+      "risks": [
+        "ETH ลง 50% = BTBT ลง 60%+ — high crypto correlation",
+        "B. Riley ลด target จาก $5 เหลือ $4 — AI ramp ช้า",
+        "Q1 net loss -$146.7M จาก mark-to-market"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Crypto sensitive กับ rate — Fed cut = ETH ขึ้น, hike = ลง",
+        "inflationNote": "ETH เป็น risk asset มากกว่า inflation hedge",
+        "sectorImpact": "WhiteFiber (AI infra) ไม่ sensitive กับ rate — แต่ ETH treasury ทำให้ overall HIGH",
+        "summary": "Fed risk สูง เพราะ ETH exposure FOMC Jul 29 เป็น binary สำหรับ BTBT"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม 2% — เข้าที่ $1.70–1.90 ถ้า ETH ดิป TP2 $7 = 222% จาก preferred entry",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน กลาง 52-week range", "timing": "เข้าน้อย" },
+          { "note": "ใกล้ 52-week low — R/R ดีที่สุด", "timing": "ถ้า ETH ดิป" },
+          { "note": "ETH crash zone", "timing": "เฉพาะถ้า thesis ยัง intact" }
+        ],
+        "tp1": { "note": "analyst consensus — WhiteFiber ramp confirmed" },
+        "tp2": { "note": "HC Wainwright — ETH bull + AI infra re-rate" },
+        "tp3": { "note": "Moon: ETH $5K + WhiteFiber scale 2027", "moon": true },
+        "stopLoss": {
+          "tightNote": "ETH ต่ำกว่า $2,000 = thesis อ่อนแอ",
+          "hardNote": "ใกล้ 52-week low — dilution risk zone",
+          "rrNote": "vs TP2 จาก preferred entry",
+          "rrWarning": "Asymmetric ✅"
+        }
+      },
+      "estimateDates": [
+        { "event": "Q2 Earnings", "note": "WhiteFiber revenue + ETH treasury" },
+        { "event": "WhiteFiber Contract", "note": "first major AI compute win" },
+        { "event": "Moon / ETH Bull + WhiteFiber", "note": "2027 full cycle" }
+      ]
+    }
+  }
+}
