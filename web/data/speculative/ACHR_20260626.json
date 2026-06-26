@@ -1,0 +1,205 @@
+{
+  "ticker": "ACHR",
+  "companyName": "Archer Aviation Inc.",
+  "companyDescription": "eVTOL Air Taxi · FAA Type Certification Phase 4 · First commercial air taxi operations in the US expected 2026",
+  "exchange": "NYSE",
+  "generatedAt": "2026-06-26T00:00:00.000Z",
+  "price": 5.05,
+  "priceChange": -3.81,
+  "priceNote": "Near 52-week low ($4.80–$14.62). FAA Phase 4 cert nearing — CEO says initial US ops in 2026. Cathie Wood sold $12.3M Jun 8 (short-term pressure).",
+  "marketCap": "$3.84B",
+  "sector": "Industrials / Aerospace & eVTOL",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 62,
+  "summary": "ACHR is the highest-conviction eVTOL binary bet. FAA Type Certification is in Phase 4 (final phase) with 100% of 797 Means of Compliance accepted. CEO guided initial US commercial operations in 2026. $1.2B liquidity runway gives 3+ years. Moon case: FAA cert → United Airlines ops → 400%+ from current price. Bear case: lawsuits (ACHR vs JOBY vs Vertical) delay cert indefinitely.",
+  "catalysts": [
+    {
+      "icon": "✈️",
+      "name": "FAA Type Certification — Phase 4 Completion",
+      "description": "Phase 4 is final phase. CEO guided initial US operations in 2026 on FOX Business. 100% of compliance checklist approved (797 of 797 MOCs). Binary: cert = stock doubles; delay = -30%.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "~Q3 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "🛫",
+      "name": "Q2 Earnings + Certification Progress",
+      "description": "Q2 results will include FAA milestone updates, defense contract pipeline (AFWERX), and Abu Dhabi operations progress. Any certification announcement during or after earnings = +40%+.",
+      "urgencyLabel": "46 DAYS",
+      "dateBadge": "Aug 10, 2026",
+      "catalystDate": "2026-08-10",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🏙️",
+      "name": "United Airlines / Abu Dhabi Commercial Launch",
+      "description": "United Airlines is a launch partner. Abu Dhabi operations already underway. First paying US passenger flight = media moment → massive re-rating. Could happen before or after FAA cert (using existing exemptions).",
+      "urgencyLabel": "2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Lawsuit (ACHR vs JOBY vs Vertical Aerospace) — trade secret theft claims could delay certification or require settlement (CNBC May 2026)",
+    "Cathie Wood ARK sold $12.3M Jun 8, 2026 — institutional pressure may continue short-term",
+    "Multiple insider sales filed — executives selling at low prices creates negative signal",
+    "eVTOL certification has been repeatedly delayed since 2021; no eVTOL company has received US FAA cert yet",
+    "Market cap $3.84B on zero revenue — full valuation priced in optimistic scenario already"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Aug 10, 2026", "note": "FAA cert progress + defense pipeline update", "est": "est. $2–5M revenue", "highlight": "yellow" },
+    { "event": "FAA Type Certificate", "dateRange": "~Q3 2026", "note": "Binary event — cert = stock doubles+", "est": "TP2 trigger", "highlight": "blue" },
+    { "event": "First US Commercial Op", "dateRange": "H2 2026", "note": "United Airlines paying passenger", "est": "TP3 trigger", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -45, "price": 2.78 },
+    { "label": "Base", "color": "yellow", "pct": 110, "price": 10.61 },
+    { "label": "Bull", "color": "green", "pct": 220, "price": 16.16 },
+    { "label": "Moon", "color": "purple", "pct": 395, "price": 25.0 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (9 analysts)", "target": 10.61, "rating": "Buy" },
+    { "firm": "24/7 Wall St.", "target": 12.01, "rating": "Buy" },
+    { "firm": "Analyst high (implied)", "target": 16.0, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Pre-revenue company needs capital markets — high rates raise cost of capital. $1.2B cash runway insulates for 3+ years.",
+    "inflationNote": "Aviation fuel costs irrelevant (electric). Labor costs matter for pilot/operations once certified.",
+    "sectorImpact": "Aerospace/defense sector benefits from bipartisan support. eVTOL depends on regulatory not macro.",
+    "summary": "Fed risk MEDIUM — ACHR has $1.2B cash so no near-term financing risk. Main risk is regulatory/legal not macro. High rates pressure the valuation multiple on pre-revenue aerospace."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 5.05, "note": "Current — near 52-week low $4.80", "timing": "Now (small)" },
+      { "label": "Entry 2", "level": 4.20, "rangeMax": 4.60, "note": "Dip zone · max R/R", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 3.50, "note": "Near 52-week low breakdown", "timing": "Only if cert timeline slips badly" }
+    ],
+    "tp1": { "price": 10.61, "pct": 110.1, "note": "Analyst consensus — cert announcement" },
+    "tp2": { "price": 16.0, "pct": 216.8, "note": "Initial commercial ops re-rate" },
+    "tp3": { "price": 25.0, "pct": 395.0, "note": "Moon: United Airlines scaled ops + AFWERX defense — 2027", "moon": true },
+    "stopLoss": {
+      "tight": 4.20, "tightPct": -16.8, "tightNote": "Below 52-week low — cert delay confirmed",
+      "hard": 3.00, "hardPct": -40.6, "hardNote": "Dilution risk + lawsuit settlement concern",
+      "riskReward": "8:1", "rrNote": "vs TP2 from preferred entry $4.40", "rrWarning": "Asymmetric ✅"
+    },
+    "verdict": "เป็น binary bet เดิมพัน FAA cert — เข้า 2–3% ที่ $4.20–4.60. ถ้า cert เกิดขึ้นในปี 2026 = double+.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "regulatory_approval",
+    "preRunup": "eVTOL stocks run 20–50% in weeks before regulatory milestone announcements. ACHR ran +9% in a single day (Jun 18) on FAA Phase 4 CEO commentary.",
+    "preRunupTiming": "2–4 สัปดาห์ก่อน FAA announcement",
+    "preRunupPct": "+10–30%",
+    "postWin": {
+      "avgPct": 80,
+      "range": "+40% to +150%",
+      "note": "Comparable: JOBY Aviation surged +45% on FAA G-1 acceptance (Apr 2022). ACHR Phase 4 completion = bigger milestone. Historical aviation cert stocks double on cert news.",
+      "exampleDate": "Apr 2022 (JOBY FAA G-1 milestone)"
+    },
+    "postLose": {
+      "avgPct": -30,
+      "range": "-20% to -50%",
+      "note": "ACHR dropped -13% Jun 6 on CNBC lawsuit report (lawsuits between eVTOL companies threatening cert). Any court injunction = -30%+.",
+      "exampleDate": "Jun 2026 (CNBC lawsuit report)"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Binary regulatory bet — 3% max. High moon case (+395%) justifies the size. $1.2B cash = no near-term bankruptcy risk."
+    },
+    "stopPreCatalyst": { "pct": -15, "price": 4.29, "note": "ถ้า FAA ประกาศ delay หรือ lawsuit injunction → ออกที่ $4.29" },
+    "stopPostCatalyst": { "pct": -20, "note": "ถ้า cert fail หรือ postponed past 2026 = ออกทันที" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "JOBY",
+      "event": "FAA G-1 Issue Paper acceptance — first eVTOL milestone",
+      "date": "Apr 2022",
+      "movePct": 45,
+      "days": 3,
+      "outcome": "good",
+      "note": "JOBY +45% on FAA G-1 acceptance. ACHR's Phase 4 completion is a bigger milestone (final phase). Expected move: +50–100%."
+    },
+    {
+      "ticker": "SPCE",
+      "event": "Virgin Galactic first FAA commercial launch license",
+      "date": "Jun 2021",
+      "movePct": 150,
+      "days": 30,
+      "outcome": "good",
+      "note": "SPCE went +150% on FAA commercial spaceflight license — regulatory approval for novel aircraft = historical 100%+ move. Cautionary: SPCE later collapsed -90%."
+    },
+    {
+      "ticker": "TMDX",
+      "event": "TransMedics FDA approval for NRP organ transplant device",
+      "date": "May 2023",
+      "movePct": 380,
+      "days": 180,
+      "outcome": "good",
+      "note": "TMDX $15 → $72 (+380%) over 6 months post-FDA approval. Binary regulatory approval on novel medical device — closest structural analog to ACHR FAA cert."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Archer Aviation CEO Touts Tesla-Style Roadmap as FAA Phase 4 Nears — Initial US Operations Expected 2026",
+    "url": "https://www.tipranks.com/news/well-have-everybody-convinced-archer-ceo-touts-tesla-style-roadmap-as-faa-phase-4-nears",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/achr/",
+    "https://stockanalysis.com/stocks/achr/forecast/",
+    "https://www.tipranks.com/news/well-have-everybody-convinced-archer-ceo-touts-tesla-style-roadmap-as-faa-phase-4-nears",
+    "https://www.cnbc.com/2026/05/29/evtol-air-taxi-lawsuits-us-launch-trump.html",
+    "https://www.businesswire.com/news/home/20260511456956/en/Archer-Announces-First-Quarter-2026-Results-Highlighting-Record-FAA-Certification-Progress-With-Initial-US-Operations-Expected-In-2026/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "ACHR คือ binary bet ที่ใหญ่ที่สุดในกลุ่ม eVTOL — FAA Type Cert อยู่ใน Phase 4 ขั้นสุดท้าย และ CEO ประกาศบน FOX Business ว่าจะเริ่ม ops ในปี 2026 เงินสด $1.2B ค้ำอยู่ 3+ ปี moon case $25 (+395%) ถ้า cert ออก bear case -45% ถ้า lawsuit หยุด cert",
+      "priceNote": "ใกล้จุดต่ำสุด 52 สัปดาห์ $4.80 — Cathie Wood ขายออก $12.3M กดราคา แต่ FAA milestone ใกล้แล้ว",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "FAA Type Cert Phase 4", "description": "ขั้นสุดท้ายของการรับรอง — ถ้าได้ cert = stock double+" },
+        { "name": "Q2 Earnings + Cert Progress", "description": "ผล Q2 + update FAA milestone — trigger ระยะสั้น" },
+        { "name": "United Airlines Commercial Launch", "description": "เที่ยวบินแรกที่มีผู้โดยสารจ่ายเงิน = media moment ใหญ่" }
+      ],
+      "risks": [
+        "Lawsuit ระหว่าง ACHR JOBY Vertical อาจหยุด cert",
+        "Cathie Wood ขายหุ้นออก — institutional pressure",
+        "ไม่มีรายได้จริง market cap $3.84B เป็น valuation สูงมาก"
+      ],
+      "macroRisk": {
+        "rateOutlook": "เงินสด $1.2B ป้องกันความเสี่ยงดอกเบี้ย — ไม่ต้อง raise เงินใน 3 ปี",
+        "inflationNote": "ใช้ไฟฟ้าไม่ใช่เชื้อเพลิง — inflation ไม่กระทบ ops",
+        "sectorImpact": "Aerospace ได้รับการสนับสนุนจากรัฐสภาทุกพรรค",
+        "summary": "Fed risk ปานกลาง — ความเสี่ยงหลักคือ regulatory และ legal ไม่ใช่ macro"
+      },
+      "entryStrategy": {
+        "verdict": "Binary bet on FAA cert — เข้า 2–3% ที่ $4.20–4.60 ถ้า cert ออกในปี 2026 = double+",
+        "entryLevels": [
+          { "note": "ปัจจุบัน ใกล้ 52-week low", "timing": "เข้าเล็ก" },
+          { "note": "โซน R/R ดีที่สุด", "timing": "ถ้าย่อ" },
+          { "note": "ถ้า cert delay ยืนยัน", "timing": "เฉพาะถ้า thesis ยัง intact" }
+        ],
+        "tp1": { "note": "analyst consensus — cert announcement trigger" },
+        "tp2": { "note": "เริ่ม commercial ops re-rate" },
+        "tp3": { "note": "Moon: United Airlines scale + AFWERX defense 2027", "moon": true },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า 52-week low = cert delay ยืนยัน",
+          "hardNote": "ความเสี่ยง dilution + lawsuit settlement",
+          "rrNote": "vs TP2 จาก preferred entry",
+          "rrWarning": "Asymmetric ✅"
+        }
+      },
+      "estimateDates": [
+        { "event": "Q2 Earnings", "note": "FAA progress update + defense pipeline" },
+        { "event": "FAA Type Certificate", "note": "Binary — ถ้าได้ = double+" },
+        { "event": "Commercial Ops Launch", "note": "re-rate ใหญ่" }
+      ]
+    }
+  }
+}

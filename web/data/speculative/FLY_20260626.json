@@ -1,0 +1,222 @@
+{
+  "ticker": "FLY",
+  "companyName": "Firefly Aerospace Inc.",
+  "companyDescription": "Space & Defense · Alpha rocket launches + Blue Ghost lunar · SciTec DoD intelligence + ABMS · $440M FY2026 revenue ramp",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-26T00:00:00.000Z",
+  "price": 24.43,
+  "priceChange": -2.20,
+  "priceNote": "Jun 25 open. 50% below Jun 1 secondary offering price of $48. SpaceX IPO (Jun 13) triggered capital rotation — FLY fell -19.6% and -11.1% in 2 consecutive days. Analysts: 'selloff unwarranted' (KeyBanc upgrade Jun 16, $50 target). TODAY: Acquired Space-ng for autonomous space ops.",
+  "marketCap": "$3.91B",
+  "sector": "Industrials / Space & Defense",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 72,
+  "summary": "FLY is the #2 pure-play US space launch company — at 50% discount to its own secondary offering price 25 days ago. SpaceX IPO capital rotation crushed the stock; analysts say the selloff was unwarranted. Revenue $440M FY2026 guide (+175% YoY). Buy consensus (9 analysts), avg target $48.22 (+97%). TODAY acquired Space-ng for autonomous ops. 52-week high $73.80 = +202% from here.",
+  "catalysts": [
+    {
+      "icon": "🚀",
+      "name": "Space-ng Acquisition — Autonomous Space Ops (TODAY)",
+      "description": "Firefly acquired Space-ng (Jun 25, 2026) — adds autonomous space operations capability + Ethan Rublee (co-founder + CEO of Space-ng) as Firefly's Chief Engineer of Software. Positions FLY for autonomous on-orbit servicing market vs just launch.",
+      "urgencyLabel": "TODAY",
+      "dateBadge": "Jun 25, 2026",
+      "catalystDate": "2026-06-25",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "💰",
+      "name": "$110M US EXIM Loan + Launch Cadence",
+      "description": "FLY expected to secure $110M US Export-Import Bank loan (Reuters Jun 23) for facility expansion to ramp Alpha rocket cadence. More launches = faster revenue ramp toward $440M FY2026 guide. Any launch announcement drives stock.",
+      "urgencyLabel": "IMMINENT",
+      "dateBadge": "~Jul 2026",
+      "catalystDate": "2026-07-15",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🌙",
+      "name": "NASA MoonFall + Blue Ghost Lunar Ops",
+      "description": "Won $75M NASA JPL MoonFall subcontract (May 26, 2026) — Elytra spacecraft delivers 4 drones to Moon's south pole. Blue Ghost already delivered payloads to lunar surface Feb 2026. NASA Moon Base initiative = FLY is mission-critical for lunar economy.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "🛡️",
+      "name": "SciTec DoD ABMS Contract + Defense Pipeline",
+      "description": "SciTec (Firefly subsidiary) awarded US Air Force contract for Advanced Battle Management System data fusion (Jun 2, 2026). DoD defense revenue diversifies FLY beyond NASA launches — reduces binary risk. More DoD contracts expected.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "SpaceX (SPCX) IPO listed Jun 13, 2026 — ongoing capital rotation from small space stocks to SpaceX may continue",
+    "Secondary offering 12M shares at $48 (Jun 1) = dilutive; $110M EXIM loan adds leverage for facility expansion",
+    "Revenue $440M FY2026 guide requires significant launch cadence ramp — any delay = miss",
+    "Market cap $3.91B on $440M revenue = 8.9x P/S, premium valuation requires execution",
+    "Space launch is capital-intensive — competition from SpaceX on price and cadence may pressure margins"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "~Aug 4–7, 2026", "note": "Alpha launch cadence + DoD revenue + $440M FY guide confirmation", "est": "est. $100–120M", "highlight": "yellow" },
+    { "event": "TP1 Recovery to Secondary Price", "dateRange": "Q3 2026", "note": "Analysts return capital post-SpaceX hype → FLY recovers to $48 secondary level", "est": "$48 avg target", "highlight": "blue" },
+    { "event": "TP3 Moon / ATH Recovery + FY2027 Ramp", "dateRange": "2027", "note": "$700M FY2027 revenue + space sector re-rating beyond SpaceX halo effect", "est": "$85 moon target", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -35, "price": 15.88 },
+    { "label": "Base", "color": "yellow", "pct": 97, "price": 48.22 },
+    { "label": "Bull", "color": "green", "pct": 146, "price": 60.0 },
+    { "label": "Moon", "color": "purple", "pct": 248, "price": 85.0 }
+  ],
+  "analystTargets": [
+    { "firm": "Roth MKM", "target": 60.0, "rating": "Buy" },
+    { "firm": "Jefferies", "target": 52.0, "rating": "Buy" },
+    { "firm": "KeyBanc", "target": 50.0, "rating": "Overweight" },
+    { "firm": "Consensus (9 analysts)", "target": 48.22, "rating": "Buy" },
+    { "firm": "J.P. Morgan", "target": 40.0, "rating": "Buy" },
+    { "firm": "Goldman Sachs", "target": 35.0, "rating": "Hold" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Space infrastructure company with government contract revenue (NASA, DoD) — not rate-sensitive. $110M EXIM loan is government-backed, so rates don't materially impact.",
+    "inflationNote": "Cost-plus government contracts allow inflation pass-through. Commercial launch pricing set by market not CPI.",
+    "sectorImpact": "Defense/space spending bipartisan — NASA Moon Base initiative + DoD autonomy = multi-year secular tailwind regardless of Fed.",
+    "summary": "Fed risk LOW. Revenue driven by NASA/DoD contracts + commercial launches — not rate-sensitive. Main risk is execution and SpaceX competition, not macro."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 24.43, "note": "NOW — 50% below secondary price. Strong asymmetry.", "timing": "Now (preferred zone)" },
+      { "label": "Entry 2", "level": 20.00, "rangeMax": 22.00, "note": "If SpaceX rotation continues — add more", "timing": "If more selling", "preferred": true },
+      { "label": "Entry 3", "level": 16.00, "note": "52-week low — full capitulation / worst case", "timing": "Only if revenue misses badly" }
+    ],
+    "tp1": { "price": 48.22, "pct": 97.4, "note": "Analyst consensus — recovery to secondary offering price" },
+    "tp2": { "price": 60.0, "pct": 145.6, "note": "Roth MKM target — Alpha cadence + Blue Ghost lunar ops proven" },
+    "tp3": { "price": 85.0, "pct": 247.9, "note": "Moon: FY2027 $700M revenue + sector re-rating beyond SpaceX halo — 2027", "moon": true },
+    "stopLoss": {
+      "tight": 20.00, "tightPct": -18.1, "tightNote": "Below SpaceX-selloff support — more institutional exits incoming",
+      "hard": 14.00, "hardPct": -42.7, "hardNote": "Below 52-week low $16 — revenue miss + EXIM loan concerns",
+      "riskReward": "8:1", "rrNote": "vs TP2 from entry $24.43", "rrWarning": "Exceptional R/R ✅"
+    },
+    "verdict": "Space company at 50% discount to its own secondary offering — compelling dislocation. เข้าที่ $24.43 ได้เลย 3% max TP1 $48 = 97% TP2 $60 = 146%",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "FLY มักขึ้น 15–30% ก่อน launch event หรือ contract announcement เพราะ space sector sentiment-driven อย่างมาก การ upgrade จาก analyst post-selloff มักดึง momentum investors กลับเร็ว",
+    "preRunupTiming": "1–3 สัปดาห์ก่อน launch event / contract win",
+    "preRunupPct": "+15–30%",
+    "postWin": {
+      "avgPct": 40,
+      "range": "+20% to +100%",
+      "note": "Blue Ghost lunar landing Feb 2026: FLY surged from ~$40 to ~$73.80 (+84%) in the following weeks. NASA/DoD contract wins drive similar moves. KeyBanc upgrade Jun 16 post-SpaceX selloff already started the recovery from $24.",
+      "exampleDate": "Feb 2026 (Blue Ghost lunar delivery success)"
+    },
+    "postLose": {
+      "avgPct": -20,
+      "range": "-15% to -35%",
+      "note": "SpaceX IPO Jun 13, 2026 caused -19.6% and -11.1% in 2 days (-28% total). Any rocket failure or launch delay would similarly cause -20% to -35%.",
+      "exampleDate": "Jun 13–14, 2026 (SpaceX IPO capital rotation)"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "ค่าขนม 3% — strong Buy consensus, real revenue ($440M FY2026), post-secondary dislocation. Higher than typical turbo pick because catalyst is dislocation recovery not binary event."
+    },
+    "stopPreCatalyst": { "pct": -18, "price": 20.03, "note": "ถ้าหลุด $20 = institutional selling ยังไม่หยุด" },
+    "stopPostCatalyst": { "pct": -20, "note": "ถ้า Q2 revenue miss vs $440M guide หรือ Alpha launch delay = ออก" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "RKLB",
+      "event": "Rocket Lab — similar space launch thesis, post-SpaceX selloff recovery",
+      "date": "Jun 2026",
+      "movePct": 50,
+      "days": 30,
+      "outcome": "good",
+      "note": "RKLB also fell on SpaceX IPO announcement Jun 13 2026 but analysts upgraded as 'unwarranted selloff'. FLY is the direct analog — same sector, same catalyst, different scale. RKLB recovered faster due to larger float; FLY recovery trade is similar setup."
+    },
+    {
+      "ticker": "RKLB",
+      "event": "Rocket Lab — 2024–2025 multi-year re-rate as launch company",
+      "date": "Jan 2024",
+      "movePct": 600,
+      "days": 540,
+      "outcome": "good",
+      "note": "RKLB went from $5 (Jan 2024) to $35+ (May 2026) — a +600% move as launch company thesis proved with increasing cadence. FLY IPO'd Aug 2025 at similar stage of maturity. Same thesis: consistent launches + growing government/commercial backlog = multi-year compounding."
+    },
+    {
+      "ticker": "LHX",
+      "event": "L3Harris — defense tech re-rating on DoD modernization wave",
+      "date": "2020",
+      "movePct": 80,
+      "days": 365,
+      "outcome": "good",
+      "note": "L3Harris doubled as DoD modernization spending accelerated. FLY's SciTec subsidiary (ABMS, data fusion) is the same DoD intelligence/software play inside a space company — $440M revenue with DoD diversification makes FLY more than just a launch play."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "KeyBanc upgrades Firefly Aerospace to Overweight ($50 target) after SpaceX IPO selloff — 'compelling opportunity' at $24",
+    "url": "https://www.tipranks.com/news/the-fly/keybanc-upgrades-firefly-after-spacex-related-selloff-thefly-news",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/fly/",
+    "https://stockanalysis.com/stocks/fly/forecast/",
+    "https://www.globenewswire.com/news-release/2026/06/25/3317541/0/en/firefly-aerospace-acquires-space-ng-to-advance-future-of-autonomous-space-operations.html",
+    "https://www.reuters.com/science/firefly-aerospace-expected-secure-110-million-us-exim-loan-document-shows-2026-06-23/",
+    "https://www.globenewswire.com/news-release/2026/05/26/3301438/0/en/Firefly-Aerospace-Wins-75-Million-NASA-JPL-MoonFall-Subcontract-to-Deliver-Drones-to-the-Moon-s-South-Pole.html",
+    "https://www.globenewswire.com/news-release/2026/06/02/3305183/0/en/firefly-subsidiary-scitec-awarded-u-s-air-force-contract-option-to-deliver-data-fusion-capabilities-for-advanced-battle-management-system.html",
+    "https://www.tipranks.com/news/the-fly/keybanc-upgrades-firefly-after-spacex-related-selloff-thefly-news",
+    "https://www.barrons.com/articles/rocket-lab-firefly-stock-price-upgrade-db4af93c"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "FLY คือ space launch บริษัท #2 ของสหรัฐ (รองจาก SpaceX) — ราคาลงมา 50% จาก secondary offering $48 เมื่อวันที่ 1 มิ.ย. เพราะ SpaceX IPO ดูด capital ออกจาก space stocks นักวิเคราะห์บอก 'selloff ไม่สมเหตุสมผล' revenue $440M FY2026 (+175%) ยังเดินหน้า วันนี้ซื้อกิจการ Space-ng เพิ่ม autonomous ops CapTarget $85 moon case (+248%)",
+      "priceNote": "Jun 25 open — ต่ำกว่า secondary $48 ถึง 50% เป็นโอกาส dislocation ซื้อ",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "Space-ng Acquisition (วันนี้)", "description": "ซื้อ Space-ng เพิ่ม autonomous space ops — วันนี้ Jun 25" },
+        { "name": "$110M EXIM Loan + Launch Cadence", "description": "loan จาก US EXIM Bank เพื่อขยาย facility = Alpha รอบต่อไปเร็วขึ้น" },
+        { "name": "NASA MoonFall + Blue Ghost", "description": "$75M subcontract ส่ง drone ไปดวงจันทร์ + lunar economy play" },
+        { "name": "SciTec DoD ABMS", "description": "US Air Force contract — diversify revenue นอก NASA launches" }
+      ],
+      "risks": [
+        "SpaceX (SPCX) listed บน Nasdaq — capital rotation อาจต่อเนื่อง",
+        "Secondary 12M shares + $110M loan = dilution + leverage เพิ่ม",
+        "Revenue $440M FY2026 guide ต้องการ launch cadence สูง — delay = miss"
+      ],
+      "macroRisk": {
+        "rateOutlook": "NASA/DoD contract revenue ไม่ sensitive กับ rate",
+        "inflationNote": "Government contracts ส่งผ่าน inflation ผ่าน cost-plus structure",
+        "sectorImpact": "Defense/space spending bipartisan — secular tailwind ไม่ขึ้นกับ Fed",
+        "summary": "Fed risk ต่ำ — main risk คือ execution และ SpaceX competition ไม่ใช่ macro"
+      },
+      "entryStrategy": {
+        "verdict": "Space company ที่ 50% ต่ำกว่า secondary ราคา — เข้าได้เลย 3% TP1 $48 = 97% TP2 $60 = 146%",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — dislocation entry ชัดเจน", "timing": "เข้าได้เลย" },
+          { "note": "ถ้า SpaceX rotation ต่อ — เพิ่มได้", "timing": "ถ้าลงอีก" },
+          { "note": "52-week low / worst case", "timing": "เฉพาะถ้า revenue miss" }
+        ],
+        "tp1": { "note": "analyst consensus — recovery จาก SpaceX selloff" },
+        "tp2": { "note": "Roth MKM target — Alpha cadence + lunar ops proven" },
+        "tp3": { "note": "Moon: $700M FY2027 revenue + sector re-rate 2027", "moon": true },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า $20 = institutional selling ยังไม่จบ",
+          "hardNote": "ต่ำกว่า 52-week low — revenue miss ยืนยัน",
+          "rrNote": "vs TP2 จาก entry $24.43",
+          "rrWarning": "Exceptional R/R ✅"
+        }
+      },
+      "estimateDates": [
+        { "event": "Q2 Earnings", "note": "Alpha cadence + DoD + $440M guide confirmation" },
+        { "event": "Recovery to Secondary", "note": "นักวิเคราะห์ดึง capital กลับ — Q3 2026" },
+        { "event": "Moon / ATH Recovery", "note": "FY2027 $700M + sector re-rate 2027" }
+      ]
+    }
+  }
+}

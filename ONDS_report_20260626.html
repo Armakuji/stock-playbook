@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ONDS — XVARY Research Report · Jun 26, 2026</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #0f172a; color: #e2e8f0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 14px; line-height: 1.5; padding: 24px 20px; max-width: 960px; margin: 0 auto; }
+
+  /* Banner */
+  .banner { background: #1e293b; border-radius: 12px; padding: 20px 24px; margin-bottom: 16px; position: relative; overflow: hidden; }
+  .banner::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, #f59e0b, #fbbf24); }
+  .banner-top { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px; }
+  .brand { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; color: #f59e0b; text-transform: uppercase; }
+  .brand-date { font-size: 11px; color: #64748b; margin-top: 2px; }
+  .verdict-pill { padding: 6px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; background: rgba(245,158,11,0.15); border: 1px solid #f59e0b; color: #f59e0b; }
+  .ticker-headline { margin-top: 10px; }
+  .ticker-name { font-size: 26px; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  .ticker-hook { font-size: 13px; color: #94a3b8; margin-top: 4px; }
+  .price-row { margin-top: 12px; display: flex; align-items: baseline; gap: 10px; }
+  .price-big { font-size: 32px; font-weight: 700; color: #fff; }
+  .price-chg { font-size: 14px; color: #10b981; }
+  .price-range { font-size: 12px; color: #64748b; }
+
+  /* Macro bar */
+  .macro-bar { background: #0a111e; border-radius: 8px; padding: 10px 16px; margin-bottom: 16px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .macro-label { font-size: 11px; color: #64748b; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; }
+  .macro-tag { font-size: 12px; padding: 3px 10px; border-radius: 10px; font-weight: 600; }
+  .macro-neutral { background: rgba(16,185,129,0.15); color: #10b981; border: 1px solid rgba(16,185,129,0.3); }
+  .macro-text { font-size: 12px; color: #94a3b8; }
+  .fed-risk { font-size: 12px; padding: 3px 10px; border-radius: 10px; font-weight: 600; background: rgba(16,185,129,0.15); color: #10b981; border: 1px solid rgba(16,185,129,0.3); }
+
+  /* Quick overview table */
+  .overview-wrap { background: #1e293b; border-radius: 10px; overflow: hidden; margin-bottom: 20px; }
+  .overview-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  .overview-table th { background: #0f172a; padding: 8px 12px; text-align: center; font-size: 10px; font-weight: 600; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1px solid #1e293b; }
+  .overview-table td { padding: 12px; text-align: center; border-right: 1px solid #0f172a; }
+  .overview-table td:last-child { border-right: none; }
+  .ov-val { font-weight: 700; font-size: 14px; color: #fff; }
+  .ov-sub { font-size: 10px; color: #64748b; margin-top: 2px; }
+  .ov-green { color: #10b981; }
+  .ov-yellow { color: #f59e0b; }
+  .ov-red { color: #ef4444; }
+
+  /* Cards grid */
+  .card { background: #1e293b; border-radius: 12px; margin-bottom: 16px; overflow: hidden; }
+  .info-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; }
+  .info-block { background: #0f172a; margin: 1px; border-radius: 6px; padding: 14px; }
+  .ib-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid #1e293b; }
+  .ib-t-catalyst { color: #f59e0b; }
+  .ib-t-entry { color: #38bdf8; }
+  .ib-t-tp { color: #10b981; }
+  .ib-t-sl { color: #ef4444; }
+  .ib-t-date { color: #38bdf8; }
+  .ib-t-upside { color: #a78bfa; }
+  .ib-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; gap: 6px; }
+  .ib-row:last-child { margin-bottom: 0; }
+  .ib-label { font-size: 11px; color: #64748b; flex: 1; }
+  .ib-label small { display: block; font-size: 10px; color: #475569; }
+  .ib-val { font-size: 13px; font-weight: 600; text-align: right; }
+  .ib-pct { font-size: 11px; margin-left: 4px; font-weight: 400; }
+  .c-green { color: #10b981; }
+  .c-yellow { color: #f59e0b; }
+  .c-red { color: #ef4444; }
+  .c-blue { color: #38bdf8; }
+  .c-purple { color: #a78bfa; }
+  .c-grey { color: #94a3b8; }
+  .c-white { color: #fff; }
+
+  /* Catalyst items */
+  .catalyst-item { display: flex; gap: 8px; margin-bottom: 8px; }
+  .catalyst-item:last-child { margin-bottom: 0; }
+  .cat-dot { width: 8px; height: 8px; border-radius: 50%; margin-top: 4px; flex-shrink: 0; }
+  .cat-content { font-size: 11px; color: #cbd5e1; line-height: 1.4; }
+  .cat-content strong { color: #e2e8f0; font-size: 11px; }
+  .cat-date { display: inline-block; margin-top: 3px; padding: 1px 6px; border-radius: 4px; font-size: 10px; font-weight: 600; }
+  .date-now { background: rgba(239,68,68,0.2); color: #ef4444; }
+  .date-soon { background: rgba(245,158,11,0.2); color: #f59e0b; }
+  .date-later { background: rgba(148,163,184,0.15); color: #94a3b8; }
+
+  /* Entry preferred chip */
+  .preferred-chip { display: inline-block; font-size: 9px; font-weight: 700; padding: 1px 5px; border-radius: 3px; background: rgba(56,189,248,0.2); color: #38bdf8; margin-left: 4px; vertical-align: middle; }
+
+  /* Upside bars */
+  .upside-row { display: flex; align-items: center; gap: 8px; margin-bottom: 7px; }
+  .upside-row:last-child { margin-bottom: 0; }
+  .upside-scenario { font-size: 10px; font-weight: 700; width: 30px; text-align: right; }
+  .upside-bar-wrap { flex: 1; background: #1e293b; border-radius: 3px; height: 6px; }
+  .upside-bar { height: 6px; border-radius: 3px; }
+  .bar-bear { background: #ef4444; }
+  .bar-base { background: #f59e0b; }
+  .bar-bull { background: #10b981; }
+  .bar-moon { background: #a78bfa; }
+  .upside-pct { font-size: 11px; font-weight: 600; width: 44px; text-align: right; }
+  .upside-price { font-size: 10px; color: #64748b; width: 40px; text-align: right; }
+
+  /* Card summary */
+  .card-summary { background: #0a111e; padding: 16px 20px; border-top: 1px solid #1e293b; }
+  .card-summary p { font-size: 13px; color: #cbd5e1; line-height: 1.7; }
+  .card-summary strong { color: #fff; }
+
+  /* Analyst table */
+  .section-title { font-size: 12px; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.08em; margin: 20px 0 10px; }
+  .analyst-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  .analyst-table th { background: #0a111e; padding: 8px 12px; text-align: left; font-size: 10px; font-weight: 600; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; }
+  .analyst-table td { padding: 8px 12px; border-bottom: 1px solid #0f172a; color: #cbd5e1; }
+  .analyst-table tr:last-child td { border-bottom: none; }
+  .analyst-table tr:hover td { background: #0f172a; }
+  .at-firm { font-weight: 600; color: #e2e8f0; }
+  .at-target { font-weight: 700; color: #10b981; }
+  .at-up { color: #10b981; font-size: 11px; }
+
+  /* Comparable cases */
+  .comp-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  .comp-table th { background: #0a111e; padding: 8px 12px; text-align: left; font-size: 10px; font-weight: 600; color: #64748b; text-transform: uppercase; }
+  .comp-table td { padding: 8px 12px; border-bottom: 1px solid #0f172a; color: #cbd5e1; }
+  .comp-table tr:last-child td { border-bottom: none; }
+  .outcome-good { color: #10b981; font-weight: 600; font-size: 11px; }
+
+  /* Risk list */
+  .risk-list { background: #1e293b; border-radius: 10px; padding: 14px 16px; margin-bottom: 16px; }
+  .risk-item { display: flex; gap: 8px; margin-bottom: 8px; font-size: 12px; color: #94a3b8; line-height: 1.5; }
+  .risk-item:last-child { margin-bottom: 0; }
+  .risk-dot { color: #ef4444; font-size: 14px; flex-shrink: 0; margin-top: -1px; }
+
+  /* Sources */
+  .sources { margin-top: 20px; padding: 14px 16px; background: #1e293b; border-radius: 8px; }
+  .sources h4 { font-size: 11px; color: #64748b; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px; }
+  .sources a { font-size: 11px; color: #38bdf8; text-decoration: none; display: block; margin-bottom: 4px; }
+  .sources a:hover { text-decoration: underline; }
+
+  /* Footer */
+  .footer { margin-top: 20px; text-align: center; font-size: 11px; color: #475569; padding: 12px; border-top: 1px solid #1e293b; }
+
+  @media (max-width: 640px) {
+    .info-grid { grid-template-columns: 1fr; }
+    .banner-top { flex-direction: column; }
+    body { padding: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- BANNER -->
+<div class="banner">
+  <div class="banner-top">
+    <div>
+      <div class="brand">XVARY Research</div>
+      <div class="brand-date">Jun 26, 2026 · NASDAQ: ONDS</div>
+    </div>
+    <div class="verdict-pill">🟡 Speculative · ค่าขนม</div>
+  </div>
+  <div class="ticker-headline">
+    <div class="ticker-name">ONDS — Ondas Inc.</div>
+    <div class="ticker-hook">Autonomous Defense & Counter-UAS · Palantir-backed LADOS platform + Lockheed Martin partnership — defense AI systems building $390M revenue engine</div>
+  </div>
+  <div class="price-row">
+    <div class="price-big">$7.74</div>
+    <div class="price-chg">+0.78%</div>
+    <div class="price-range">Jun 25, 2026 · 52W: $1.53–$15.28</div>
+  </div>
+</div>
+
+<!-- MACRO BAR -->
+<div class="macro-bar">
+  <span class="macro-label">Fed</span>
+  <span class="macro-tag macro-neutral">NEUTRAL / DOVISH</span>
+  <span class="macro-text">Defense contracts are government-funded, counter-cyclical to Fed policy · NATO + DoD drone budgets expanding regardless of rates</span>
+  <span style="margin-left:auto;"><span class="macro-label" style="margin-right:6px">Fed Risk</span><span class="fed-risk">LOW</span></span>
+</div>
+
+<!-- QUICK OVERVIEW TABLE -->
+<div class="overview-wrap">
+  <table class="overview-table">
+    <thead>
+      <tr>
+        <th>Ticker</th>
+        <th>Live Price</th>
+        <th>Entry Zone</th>
+        <th>TP1</th>
+        <th>TP2 (Target)</th>
+        <th>Stop Loss</th>
+        <th>Bull Upside</th>
+        <th>Key Date</th>
+        <th>Verdict</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><div class="ov-val">ONDS</div><div class="ov-sub">NASDAQ</div></td>
+        <td><div class="ov-val">$7.74</div><div class="ov-sub">+0.78% Jun 25</div></td>
+        <td><div class="ov-val ov-blue" style="color:#38bdf8">$7.50–$8.00</div><div class="ov-sub">NOW zone</div></td>
+        <td><div class="ov-val ov-green">$12.00</div><div class="ov-sub">+55%</div></td>
+        <td><div class="ov-val ov-green">$20.13</div><div class="ov-sub">+160% analyst avg</div></td>
+        <td><div class="ov-val ov-red">$6.80</div><div class="ov-sub">-12.1% tight</div></td>
+        <td><div class="ov-val ov-green">+160%</div><div class="ov-sub">to analyst target</div></td>
+        <td><div class="ov-val">Aug 11</div><div class="ov-sub">Q2 Earnings</div></td>
+        <td><div class="ov-val ov-yellow">SPEC</div><div class="ov-sub">ค่าขนม</div></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- MAIN CARD -->
+<div class="card">
+  <div style="padding: 16px 20px 0; display:flex; justify-content:space-between; align-items:center;">
+    <div style="font-size:12px; color:#64748b; font-weight:600; text-transform:uppercase; letter-spacing:0.08em;">ONDS · Full Analysis</div>
+    <div style="font-size:11px; color:#64748b;">Score: <strong style="color:#f59e0b">68 / 100</strong> · 8 analysts Strong Buy</div>
+  </div>
+  <div class="info-grid" style="padding: 12px; gap: 4px;">
+
+    <!-- ⚡ CATALYST -->
+    <div class="info-block">
+      <div class="ib-title ib-t-catalyst">⚡ Catalysts</div>
+      <div class="catalyst-item">
+        <div class="cat-dot" style="background:#ef4444"></div>
+        <div class="cat-content">
+          <strong>Q2 2026 Earnings — Order Delivery Read</strong><br>
+          $150M+ Q2-to-date orders (>3x Q1 revenue) should confirm raised FY2026 guidance ≥$390M. Guidance beat = major re-rating catalyst.
+          <div><span class="cat-date date-now">Aug 11, 2026</span></div>
+        </div>
+      </div>
+      <div class="catalyst-item">
+        <div class="cat-dot" style="background:#f59e0b"></div>
+        <div class="cat-content">
+          <strong>Lockheed Martin / Sentrycs Integration</strong><br>
+          Sentrycs' Cyber/RF CUAS tech now integrated into Lockheed's Sanctum platform (announced Jun 24). First joint deployment signals DoD credibility validation.
+          <div><span class="cat-date date-soon">H2 2026</span></div>
+        </div>
+      </div>
+      <div class="catalyst-item">
+        <div class="cat-dot" style="background:#f59e0b"></div>
+        <div class="cat-content">
+          <strong>Cyberhawk Acquisition Close</strong><br>
+          $125M deal (95% cash) adds AI drone inspection + critical infrastructure intelligence. Expands Ondas' dual-use (defense + commercial) revenue base.
+          <div><span class="cat-date date-soon">Jun–Jul 2026</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 🎯 ENTRY -->
+    <div class="info-block">
+      <div class="ib-title ib-t-entry">🎯 Entry Point</div>
+      <div class="ib-row">
+        <div class="ib-label">Entry 1<small>NOW — current zone<span class="preferred-chip">PREFERRED</span></small></div>
+        <div class="ib-val c-blue">$7.50–$8.00<span class="ib-pct" style="color:#38bdf8">NOW</span></div>
+      </div>
+      <div class="ib-row">
+        <div class="ib-label">Entry 2<small>Dip zone / pullback</small></div>
+        <div class="ib-val c-yellow">$6.50–$7.00<span class="ib-pct" style="color:#f59e0b">-10%</span></div>
+      </div>
+      <div class="ib-row">
+        <div class="ib-label">Entry 3<small>Deep dip — hard support</small></div>
+        <div class="ib-val c-red">$5.00–$5.50<span class="ib-pct" style="color:#ef4444">-33%</span></div>
+      </div>
+      <div style="margin-top:8px; padding-top:8px; border-top:1px solid #1e293b; font-size:10px; color:#64748b;">
+        Market cap $3.93B · 507.6M shares · PE 17.69 · EPS +$0.44
+      </div>
+    </div>
+
+    <!-- ✅ TAKE PROFIT -->
+    <div class="info-block">
+      <div class="ib-title ib-t-tp">✅ Take Profit</div>
+      <div class="ib-row">
+        <div class="ib-label">TP1<small>Resistance zone recovery</small></div>
+        <div class="ib-val c-green">$12.00<span class="ib-pct">+55%</span></div>
+      </div>
+      <div class="ib-row">
+        <div class="ib-label">TP2<small>Analyst consensus avg (8 analysts)</small></div>
+        <div class="ib-val c-green">$20.13<span class="ib-pct">+160%</span></div>
+      </div>
+      <div class="ib-row">
+        <div class="ib-label">TP3 🌙<small>$390M+ revenue · defense re-rating</small></div>
+        <div class="ib-val c-purple">$35.00<span class="ib-pct">+352%</span></div>
+      </div>
+    </div>
+
+    <!-- 🛑 STOP LOSS -->
+    <div class="info-block">
+      <div class="ib-title ib-t-sl">🛑 Stop Loss</div>
+      <div class="ib-row">
+        <div class="ib-label">Tight stop<small>Below $7 support</small></div>
+        <div class="ib-val c-red">$6.80<span class="ib-pct">-12.1%</span></div>
+      </div>
+      <div class="ib-row">
+        <div class="ib-label">Hard stop<small>Deep bear / guide cut</small></div>
+        <div class="ib-val c-red">$5.00<span class="ib-pct">-35.4%</span></div>
+      </div>
+      <div class="ib-row">
+        <div class="ib-label">R:R ratio<small>Tight SL vs TP2</small></div>
+        <div class="ib-val c-green">13.2 : 1<span class="ib-pct" style="color:#10b981"> excellent</span></div>
+      </div>
+      <div class="ib-row">
+        <div class="ib-label">Approach<small>Build on dips</small></div>
+        <div class="ib-val c-blue">Scale In</div>
+      </div>
+    </div>
+
+    <!-- 📅 ESTIMATE DATES -->
+    <div class="info-block">
+      <div class="ib-title ib-t-date">📅 Estimate Dates</div>
+      <div class="ib-row">
+        <div class="ib-label">TP1 ~$12<small>If Q2 earnings beat strong</small></div>
+        <div class="ib-val c-blue">Aug–Sep 2026</div>
+      </div>
+      <div class="ib-row">
+        <div class="ib-label">TP2 ~$20<small>Analyst consensus delivery</small></div>
+        <div class="ib-val c-green">Q4 2026–Q1 2027</div>
+      </div>
+      <div class="ib-row">
+        <div class="ib-label">TP3 $35+<small>$390M+ revenue confirmation</small></div>
+        <div class="ib-val c-purple">2027</div>
+      </div>
+    </div>
+
+    <!-- 📈 UPSIDE -->
+    <div class="info-block">
+      <div class="ib-title ib-t-upside">📈 Possible Up %</div>
+      <div class="upside-row">
+        <div class="upside-scenario" style="color:#ef4444">Bear</div>
+        <div class="upside-bar-wrap"><div class="upside-bar bar-bear" style="width:13%"></div></div>
+        <div class="upside-pct c-red">-45%</div>
+        <div class="upside-price">$4.26</div>
+      </div>
+      <div class="upside-row">
+        <div class="upside-scenario" style="color:#f59e0b">Base</div>
+        <div class="upside-bar-wrap"><div class="upside-bar bar-base" style="width:44%"></div></div>
+        <div class="upside-pct c-yellow">+55%</div>
+        <div class="upside-price">$12.00</div>
+      </div>
+      <div class="upside-row">
+        <div class="upside-scenario" style="color:#10b981">Bull</div>
+        <div class="upside-bar-wrap"><div class="upside-bar bar-bull" style="width:74%"></div></div>
+        <div class="upside-pct c-green">+160%</div>
+        <div class="upside-price">$20.13</div>
+      </div>
+      <div class="upside-row">
+        <div class="upside-scenario" style="color:#a78bfa">Moon</div>
+        <div class="upside-bar-wrap"><div class="upside-bar bar-moon" style="width:100%"></div></div>
+        <div class="upside-pct c-purple">+352%</div>
+        <div class="upside-price">$35.00</div>
+      </div>
+      <div style="margin-top:8px; font-size:10px; color:#475569;">Bear = FY guide cut · Moon = $390M+ revenue re-rates at 10x</div>
+    </div>
+
+  </div>
+
+  <!-- CARD SUMMARY -->
+  <div class="card-summary">
+    <p>
+      <strong>ONDS</strong> อยู่ที่ <strong>$7.74</strong> — ลงมา <strong>-42%</strong> จากจุดสูง $13.36 เมื่อ Jun 4 แต่ thesis ยิ่งแข็งแกร่งกว่าเดิม: Q2-to-date orders <strong>$150M+</strong> (3x Q1 revenue ทั้งหมด), ล่าสุดจับมือ <strong>Lockheed Martin</strong> ผ่าน Sentrycs สำหรับ Counter-UAS และเพิ่งประกาศซื้อ <strong>Cyberhawk</strong> $125M ซึ่งขยาย platform ไปสู่ AI drone inspection — ทั้งหมดนี้คือ revenue driver ที่จับต้องได้สำหรับ FY2026 guide <strong>≥$390M</strong> ที่ Q1 เริ่มต้นด้วย $50.1M (+1,065% YoY) แล้ว
+      <br><br>
+      ⚠️ <strong>ระวัง:</strong> Net income $134.21M > revenue $96.61M TTM = ตัวเลขผิดปกติ (น่าจะมาจาก acquisition fair value gains ไม่ใช่ operating profit) · 507.6M shares = dilution สูงมากจากการซื้อกิจการต่อเนื่อง · Beta 2.62 = volatile มาก
+      <br><br>
+      <strong>Entry:</strong> ที่ $7.74 ราคา/analyst target ratio เป็น 1:2.6 — ดีที่สุดในรอบปี แนะนำ <strong>Scale In 2–4% max</strong> · เริ่ม 1% ที่ $7.50–$8.00, เพิ่ม 1% ถ้าย่อลง $6.50–$7.00 · รอ Q2 earnings Aug 11 เพื่อยืนยัน thesis ก่อน full size
+    </p>
+  </div>
+</div>
+
+<!-- RISKS -->
+<div class="section-title">⚠️ Key Risks</div>
+<div class="risk-list">
+  <div class="risk-item"><span class="risk-dot">▸</span><span>⚠️ Net income $134.21M &gt; revenue $96.61M TTM — ตัวเลขผิดปกติ น่าจะเป็น acquisition fair value gains หรือ goodwill write-up ไม่ใช่ operating profit จริง ต้องตรวจ Q2 earnings report</span></div>
+  <div class="risk-item"><span class="risk-dot">▸</span><span>507.6M shares outstanding — rapid acquisitions (Omnisys, World View, Sentrycs, Cyberhawk) dilute existing shareholders อย่างต่อเนื่อง</span></div>
+  <div class="risk-item"><span class="risk-dot">▸</span><span>Cyberhawk $125M (95% cash) — significant cash deployment; balance sheet debt load อาจกดดัน equity raise ในอนาคต</span></div>
+  <div class="risk-item"><span class="risk-dot">▸</span><span>Integration risk — 6+ acquisitions ใน 12 เดือน; execution ซับซ้อน; revenue synergies อาจใช้เวลา 12–18 เดือนกว่าจะเห็น</span></div>
+  <div class="risk-item"><span class="risk-dot">▸</span><span>US DoD budget sequestration risk — ถ้า Congress ตัด drone/defense AI budgets ผลกระทบโดยตรงต่อ backlog</span></div>
+  <div class="risk-item"><span class="risk-dot">▸</span><span>Stock meme behavior — Beta 2.62, 52W range $1.53–$15.28 (900% swing); retail speculation amplifies both upside and downside</span></div>
+</div>
+
+<!-- ANALYST TARGETS TABLE -->
+<div class="section-title">🎯 Analyst Price Targets</div>
+<div class="card" style="overflow:hidden;">
+  <table class="analyst-table">
+    <thead>
+      <tr>
+        <th>Firm</th>
+        <th>Target</th>
+        <th>Rating</th>
+        <th>vs Entry ($7.74)</th>
+        <th>Note</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="at-firm">H.C. Wainwright</td>
+        <td class="at-target">$25.00</td>
+        <td style="color:#10b981; font-weight:600">Buy</td>
+        <td class="at-up">+222.9%</td>
+        <td style="font-size:11px; color:#64748b">Highest target — LADOS + Lockheed catalyst</td>
+      </tr>
+      <tr>
+        <td class="at-firm">Needham</td>
+        <td class="at-target">$23.00</td>
+        <td style="color:#10b981; font-weight:600">Buy</td>
+        <td class="at-up">+197.2%</td>
+        <td style="font-size:11px; color:#64748b">Strong conviction on defense drone demand</td>
+      </tr>
+      <tr>
+        <td class="at-firm">Stifel Nicolaus</td>
+        <td class="at-target">$18.00</td>
+        <td style="color:#10b981; font-weight:600">Buy</td>
+        <td class="at-up">+132.6%</td>
+        <td style="font-size:11px; color:#64748b">Revenue ramp + Palantir software integration</td>
+      </tr>
+      <tr>
+        <td class="at-firm">Ladenburg Thalmann</td>
+        <td class="at-target">$13.00</td>
+        <td style="color:#10b981; font-weight:600">Buy</td>
+        <td class="at-up">+67.9%</td>
+        <td style="font-size:11px; color:#64748b">Most conservative — execution risk embedded</td>
+      </tr>
+      <tr>
+        <td class="at-firm" style="color:#64748b">Consensus (8 analysts)</td>
+        <td style="font-weight:700; color:#f59e0b">$20.13</td>
+        <td style="color:#10b981; font-weight:600">Strong Buy</td>
+        <td style="color:#10b981; font-weight:600">+160.1%</td>
+        <td style="font-size:11px; color:#64748b">All 8 analysts rated Buy or better</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- COMPARABLE CASES -->
+<div class="section-title">📋 Comparable Cases</div>
+<div class="card" style="overflow:hidden;">
+  <table class="comp-table">
+    <thead>
+      <tr>
+        <th>Ticker</th>
+        <th>Event</th>
+        <th>Date</th>
+        <th>Move</th>
+        <th>Days</th>
+        <th>Note</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="font-weight:600">KTOS</td>
+        <td>Kratos Defense — autonomous drone + hypersonics platform scale-up</td>
+        <td>Jan 2021</td>
+        <td class="outcome-good">+525%</td>
+        <td>360</td>
+        <td style="font-size:11px; color:#64748b">$4 → $25 as NDAA AI/autonomous defense funding surged. ONDS = similar platform play at earlier stage</td>
+      </tr>
+      <tr>
+        <td style="font-weight:600">AVAV</td>
+        <td>AeroVironment — small UAV + Counter-UAS contracts post-Ukraine surge</td>
+        <td>Mar 2022</td>
+        <td class="outcome-good">+180%</td>
+        <td>180</td>
+        <td style="font-size:11px; color:#64748b">$55 → $155 on NATO restocking + Switchblade loitering munition demand. ONDS' LMS product = same category</td>
+      </tr>
+      <tr>
+        <td style="font-weight:600">PLTR</td>
+        <td>Palantir — AI defense software re-rating as DoD AI contracts accelerated</td>
+        <td>Oct 2023</td>
+        <td class="outcome-good">+340%</td>
+        <td>270</td>
+        <td style="font-size:11px; color:#64748b">$8 → $35+ as government AI spending became structural. ONDS uses Palantir stack in LADOS C2 system = derivative play on same trend</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- SOURCES -->
+<div class="sources">
+  <h4>Sources</h4>
+  <a href="https://stockanalysis.com/stocks/onds/" target="_blank">stockanalysis.com/stocks/onds/ — Price, financials, analyst consensus</a>
+  <a href="https://www.tipranks.com/stocks/onds" target="_blank">tipranks.com — Analyst ratings and individual targets (H.C. Wainwright $25, Needham $23, Stifel $18, Ladenburg $13)</a>
+  <a href="https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/ondas-secures-over-40-million-in-new-orders-for-autonomous-defens-1180085" target="_blank">Ondas Secures $40M+ in June orders — Q2-to-date >$150M (Jun 23, 2026)</a>
+  <a href="https://www.tipranks.com/news/the-fly/ondas-announces-collaboration-between-sentrycs-lockheed-martin-thefly-news" target="_blank">Ondas Sentrycs x Lockheed Martin Sanctum collaboration (Jun 24, 2026)</a>
+  <a href="https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/ondas-to-acquire-cyberhawk-expanding-into-critical-infrastructure-1178450" target="_blank">Ondas to acquire Cyberhawk for $125M — AI drone inspection (Jun 19, 2026)</a>
+  <a href="https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/ondas-launches-new-autonomous-defense-systems-of-systems-at-euros-1177991" target="_blank">ONDS LADOS platform launch at Eurosatory 2026 (Jun 17, 2026)</a>
+  <a href="https://www.barrons.com/articles/palantir-backed-ondas-stock-jumps-autonomous-drone-company-sees-revenue-grow-1-065-da6b5e1d" target="_blank">Barron's: Palantir-backed Ondas Q1 revenue +1,065% YoY — $50.1M</a>
+  <a href="https://stockanalysis.com/stocks/onds/forecast/" target="_blank">stockanalysis.com/stocks/onds/forecast/ — Price targets</a>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  Not financial advice · XVARY Research · Jun 26, 2026 · ONDS analyzed at $7.74
+</div>
+
+</body>
+</html>

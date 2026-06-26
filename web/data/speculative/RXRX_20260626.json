@@ -1,0 +1,207 @@
+{
+  "ticker": "RXRX",
+  "companyName": "Recursion Pharmaceuticals, Inc.",
+  "companyDescription": "AI Drug Discovery Platform · OS for Biology · Sanofi/Roche/Genentech partnerships · 7 wholly-owned programs · $665M cash runway to 2028",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-26T00:00:00.000Z",
+  "price": 3.18,
+  "priceChange": -1.55,
+  "priceNote": "Jun 22 close. Down 67%+ from ATH. Q1 2026 revenue missed badly ($6.47M vs $16.28M est) — stock crushed. Cash $665M intact (runway to early 2028). JP Morgan $10 Buy = +215%. 5 pipeline inflection points expected next 12–18 months.",
+  "marketCap": "~$1.5B",
+  "sector": "Healthcare / Biotech / AI Drug Discovery",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 60,
+  "summary": "RXRX at $3.18 is a binary AI drug discovery platform bet. Built the 'OS for Biology' — mapping biology at scale using robotics + ML. Partners: Sanofi, Roche, Genentech. Cash $665M (runway 2028). Revenue missed Q1 ($6.47M vs $16M est) but cumulative partner inflows >$500M. 5 programs hit inflection in next 12–18 months. JP Morgan $10 Buy (+215%). Hold consensus (8 analysts) — pure contrarian moonshot.",
+  "catalysts": [
+    {
+      "icon": "🔬",
+      "name": "Pipeline Inflection Points — 5 Programs",
+      "description": "Management guided 5 wholly-owned programs to reach defined inflection points within 12–18 months from May 2026 (i.e., by Nov 2026 – Nov 2027). Any Phase 2 positive readout or major partnership deal = 100%+ re-rate in a single day.",
+      "urgencyLabel": "Q4 2026–Q3 2027",
+      "dateBadge": "Nov 2026–Nov 2027",
+      "catalystDate": "2026-11-30",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "💊",
+      "name": "Sanofi / Roche / Genentech Milestones",
+      "description": "Achieved 5th Sanofi milestone (Q1 2026, $4M) for oncology lead series. Cumulative partner inflows >$500M, 10+ milestones delivered. Next milestones from Sanofi/Roche/Genentech programs coming H2 2026. Each milestone announcement = stock catalyst.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings + Pipeline Data",
+      "description": "Q1 revenue miss ($6.47M vs $16.28M) reset the bar low. Q2 earnings ~Aug 7 — any pipeline data positive read or milestone payment could drive recovery. Cash position update will reaffirm or undermine 2028 runway thesis.",
+      "urgencyLabel": "~43 DAYS",
+      "dateBadge": "~Aug 7, 2026",
+      "catalystDate": "2026-08-07",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Q1 2026 revenue $6.47M missed $16.28M estimate by 60% — execution concern with milestone timing",
+    "Hold consensus: 5 of 8 analysts = Hold; only 1 Strong Buy, 2 Buy — low conviction from street",
+    "Revenue FY2026 guide $66.5M (avg) vs FY2025 $74.7M — declining revenue trend, milestone-dependent",
+    "AI drug discovery unproven at scale — no major approved drug from AI-native platforms yet",
+    "Stock at $3.18 with $1.37 cash per share — not much cash floor cushion vs pipeline risk"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "~Aug 7, 2026", "note": "Revenue + pipeline milestone progress — low bar after Q1 miss", "est": "est. $15–20M", "highlight": "yellow" },
+    { "event": "Pipeline Inflection Events", "dateRange": "Nov 2026–Nov 2027", "note": "5 programs expected to reach clinical inflection — Phase 2 readout = re-rate", "est": "TP2 trigger", "highlight": "blue" },
+    { "event": "Moon / Platform Validation", "dateRange": "2027–2028", "note": "First RXRX-discovered drug in Phase 3 or major new partnership deal", "est": "$15 target", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -55, "price": 1.43 },
+    { "label": "Base", "color": "yellow", "pct": 109, "price": 6.64 },
+    { "label": "Bull", "color": "green", "pct": 215, "price": 10.0 },
+    { "label": "Moon", "color": "purple", "pct": 372, "price": 15.0 }
+  ],
+  "analystTargets": [
+    { "firm": "J.P. Morgan", "target": 10.0, "rating": "Buy" },
+    { "firm": "Needham", "target": 8.0, "rating": "Buy" },
+    { "firm": "Consensus (8 analysts)", "target": 6.64, "rating": "Hold" },
+    { "firm": "Bank of America", "target": 6.0, "rating": "Hold" },
+    { "firm": "Morgan Stanley", "target": 5.5, "rating": "Hold" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Biotech/growth stock sensitive to rates. Cash $665M insulates for 2 years — no capital raise urgency. Fed cut = risk-on boost for speculative biotech.",
+    "inflationNote": "Drug development costs rising but RXRX's AI-native model reduces wet-lab costs vs traditional pharma",
+    "sectorImpact": "AI drug discovery secular — Sanofi/Roche/Genentech commitments insulate from rate cycle. Clinical readouts > macro.",
+    "summary": "Fed risk MEDIUM — RXRX's binary value driver is pipeline data, not rates. Fed cut helps sentiment but doesn't change the clinical binary. Main risk: pipeline timeline slippage."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 3.18, "note": "Current — at multi-year low post Q1 miss", "timing": "Now (tiny, ค่าขนม)" },
+      { "label": "Entry 2", "level": 2.40, "rangeMax": 2.70, "note": "Dip zone — Q2 revenue disappointment", "timing": "If Q2 misses again", "preferred": true },
+      { "label": "Entry 3", "level": 1.80, "note": "Near cash floor — only if thesis intact", "timing": "Deep dip / pipeline delay" }
+    ],
+    "tp1": { "price": 6.64, "pct": 108.8, "note": "Analyst consensus — pipeline milestone confirmed" },
+    "tp2": { "price": 10.0, "pct": 214.5, "note": "JP Morgan Buy target — Phase 2 readout positive" },
+    "tp3": { "price": 15.0, "pct": 371.7, "note": "Moon: First AI-discovered drug in Phase 3 + new mega-partnership — 2027–2028", "moon": true },
+    "stopLoss": {
+      "tight": 2.40, "tightPct": -24.5, "tightNote": "Second consecutive revenue miss = milestone model broken",
+      "hard": 1.50, "hardPct": -52.8, "hardNote": "Approaching cash-per-share floor — equity impairment risk",
+      "riskReward": "6:1", "rrNote": "vs TP2 from preferred entry $2.55", "rrWarning": "Asymmetric ✅"
+    },
+    "verdict": "Contrarian binary bet — AI drug discovery could re-rate 3–5x on first clinical win. เข้า 1–2% max ที่ $2.40–2.70 ถ้าดิปอีก TP2 $10 = 292% จาก preferred entry.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "RXRX มัก pre-run 20–40% ก่อน conference presentations และ partnership announcements เพราะ institutional positioning เข้าก่อน data release",
+    "preRunupTiming": "3–6 สัปดาห์ก่อน data / milestone announcement",
+    "preRunupPct": "+20–50%",
+    "postWin": {
+      "avgPct": 80,
+      "range": "+40% to +200%",
+      "note": "RXRX surged +45% in Nov 2024 on Genentech partnership expansion. Phase 2 positive readout for a wholly-owned program could drive 100%+ in a single day — CRISPR Therapeutics went +100% on first positive gene editing data (Jun 2020).",
+      "exampleDate": "Nov 2024 (Genentech partnership expansion)"
+    },
+    "postLose": {
+      "avgPct": -35,
+      "range": "-20% to -60%",
+      "note": "Q1 2026 revenue miss ($6.47M vs $16.28M) = stock fell from ~$5 to ~$3 (-40%). Any Phase 2 failure would add -30 to -50% on top of current depressed price.",
+      "exampleDate": "May 2026 (Q1 earnings miss)"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "ค่าขนม 2% — Hold consensus, revenue declining, pipeline binary. Small size justified by low conviction until pipeline data materializes. Add on positive inflection."
+    },
+    "stopPreCatalyst": { "pct": -20, "price": 2.54, "note": "ถ้าหลุด $2.54 ก่อนมีข่าว pipeline = sentiment แย่กว่าที่คิด" },
+    "stopPostCatalyst": { "pct": -25, "note": "ถ้า Q2 revenue miss อีกครั้ง และ cash runway ลดลงต่ำกว่า $500M = ออก" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "EXAS",
+      "event": "Exact Sciences — Cologuard platform FDA approval + CMS reimbursement",
+      "date": "Aug 2014",
+      "movePct": 400,
+      "days": 365,
+      "outcome": "good",
+      "note": "EXAS went from $4 to $20 (+400%) in 18 months post-FDA approval of Cologuard. AI-for-diagnostics platform thesis proved in the market. RXRX's 'OS for Biology' is analogous — waiting for first clinical validation. If it comes, multi-year run follows."
+    },
+    {
+      "ticker": "CRSP",
+      "event": "CRISPR Therapeutics — first positive gene editing clinical data",
+      "date": "Jun 2020",
+      "movePct": 200,
+      "days": 90,
+      "outcome": "good",
+      "note": "CRSP went from $30 to $90 (+200%) in 3 months when first positive gene editing data published. RXRX's first positive AI-discovered drug clinical data could trigger similar 'platform validation' re-rate. Cautionary: CRSP also fell 70% afterward on commercial uncertainty."
+    },
+    {
+      "ticker": "TWST",
+      "event": "Twist Bioscience — synthetic biology scale validation + partnership wave",
+      "date": "Jan 2021",
+      "movePct": 350,
+      "days": 120,
+      "outcome": "mixed",
+      "note": "TWST $20 → $88 (+340%) on synthetic biology platform thesis in early 2021. AI + biology platform stocks go through massive re-rates on narrative validation before revenue proves it. RXRX is at the same 'pre-validation' stage. Cautionary: TWST later fell 90% as revenue growth disappointed."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Recursion Q1 2026 — Revenue $6.47M Misses $16.28M Estimate by 60%; Pipeline Advances Noted",
+    "url": "https://www.investing.com/news/company-news/recursion-q1-2026-slides-pipeline-advances-amid-revenue-shortfall-93CH-4663980",
+    "date": "May 2026"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/rxrx/forecast/",
+    "https://www.investing.com/news/company-news/recursion-q1-2026-slides-pipeline-advances-amid-revenue-shortfall-93CH-4663980",
+    "https://www.investing.com/news/transcripts/earnings-call-transcript-recursion-pharmaceuticals-q1-2026-results-show-eps-beat-but-revenue-miss-93CH-4663689",
+    "https://www.chartmill.com/news/RXRX/Chartmill-47249-Recursion-Pharmaceuticals-RXRX-Q1-2026-Results-Revenue-Miss-Overshadows-Narrower-Net-Loss",
+    "https://stockanalysis.com/stocks/rxrx/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "RXRX ที่ $3.18 คือ binary bet ของ AI drug discovery — สร้าง 'OS for Biology' จับคู่ยาใหม่ผ่าน robot + ML ขนาดใหญ่ พาร์ทเนอร์: Sanofi, Roche, Genentech เงิน $665M ใช้ได้ถึง 2028 Q1 ผลแย่ ($6.47M vs $16M est) กดหุ้น แต่มี 5 โปรแกรมที่จะถึง inflection ใน 12–18 เดือนข้างหน้า JP Morgan target $10 (+215%) moon case $15 ถ้า AI platform ได้รับการ validate",
+      "priceNote": "ราคา Jun 22 — ลงมา 67%+ จาก ATH หลัง Q1 revenue miss ครั้งใหญ่",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "5 Pipeline Inflections", "description": "5 โปรแกรมถึง clinical inflection ใน 12–18 เดือน — Phase 2 data positive = re-rate 100%+" },
+        { "name": "Sanofi/Roche/Genentech Milestones", "description": "milestone สะสม >$500M — รอรอบต่อไป H2 2026" },
+        { "name": "Q2 Earnings", "description": "bar ต่ำมากหลัง Q1 miss — beat ได้ง่ายถ้า pipeline ขยับ" }
+      ],
+      "risks": [
+        "Q1 revenue miss 60% จาก estimate — milestone timing ไม่แน่นอน",
+        "8 analysts ส่วนใหญ่ Hold — street conviction ต่ำ",
+        "AI drug discovery ยังไม่มี drug สำเร็จจาก platform ที่เทียบได้"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Biotech sensitive กับ rate — cash $665M ช่วยลด capital raise risk",
+        "inflationNote": "AI model ลดต้นทุน wet-lab vs pharma ดั้งเดิม",
+        "sectorImpact": "AI drug discovery secular — ไม่ขึ้นกับ rate cycle",
+        "summary": "Fed risk ปานกลาง — binary ขึ้นกับ pipeline data ไม่ใช่ rate"
+      },
+      "entryStrategy": {
+        "verdict": "Contrarian binary ค่าขนม — เข้า 1–2% max ที่ $2.40–2.70 ถ้า Q2 ดิปอีก TP2 $10 = 292% จาก preferred",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน multi-year low", "timing": "เล็กมาก" },
+          { "note": "โซน Q2 miss — R/R ดีที่สุด", "timing": "ถ้า Q2 แย่อีก" },
+          { "note": "ใกล้ cash floor — เฉพาะถ้า thesis ยัง intact", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "analyst consensus — milestone ยืนยัน" },
+        "tp2": { "note": "JP Morgan target — Phase 2 readout บวก" },
+        "tp3": { "note": "Moon: first AI drug ใน Phase 3 + mega-partnership 2027–2028", "moon": true },
+        "stopLoss": {
+          "tightNote": "Q2 miss อีกครั้ง = milestone model แตก",
+          "hardNote": "ใกล้ cash floor — equity impairment",
+          "rrNote": "vs TP2 จาก preferred entry",
+          "rrWarning": "Asymmetric ✅"
+        }
+      },
+      "estimateDates": [
+        { "event": "Q2 Earnings", "note": "revenue + pipeline data — bar ต่ำมาก" },
+        { "event": "Pipeline Inflections", "note": "5 programs ถึง clinical data Nov 2026–2027" },
+        { "event": "Moon / Validation", "note": "first AI drug Phase 3 + new partnership" }
+      ]
+    }
+  }
+}

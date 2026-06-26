@@ -1,0 +1,205 @@
+{
+  "ticker": "SOUN",
+  "companyName": "SoundHound AI, Inc.",
+  "companyDescription": "Voice & Agentic AI · OASYS self-learning platform · Restaurant / Auto / Enterprise customer service AI",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-26T00:00:00.000Z",
+  "price": 6.34,
+  "priceChange": -1.55,
+  "priceNote": "Down 30% YTD, 71% off 52-week high $22.17. Q1 revenue +52% YoY to $44.2M. OASYS agentic AI platform launched May 2026. 39% short interest = squeeze potential.",
+  "marketCap": "$2.74B",
+  "sector": "Technology / Voice AI",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 67,
+  "summary": "SOUN is the most established voice AI pure-play: revenue $184M TTM (+80% YoY), OASYS agentic platform launched, LivePerson acquisition closed, named ISG Leader 2026. HC Wainwright $26 target (+310% from $6.34). Main risk: down 30% YTD due to insider fiduciary investigation + valuation concern (15x P/S). 39% short interest = short squeeze fuel. Moon case: EBITDA breakeven H2 2026 + auto sector AI contract wave.",
+  "catalysts": [
+    {
+      "icon": "🔊",
+      "name": "EBITDA Breakeven Q4 2026",
+      "description": "Management guided adjusted EBITDA breakeven by late 2026. This would be the inflection from growth-at-all-costs to profitable AI platform — massive re-rating trigger. Q2 earnings Aug 6 will show progress.",
+      "urgencyLabel": "41 DAYS",
+      "dateBadge": "Aug 6, 2026",
+      "catalystDate": "2026-08-06",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🤖",
+      "name": "OASYS Agentic AI Platform — Enterprise Adoption",
+      "description": "OASYS 'AI builds AI' self-learning platform launched May 2026 — world's first self-orchestrating agentic AI. If a major enterprise contract (Fortune 500 auto or QSR chain) is announced, stock can re-rate 40%+ instantly.",
+      "urgencyLabel": "NOW",
+      "dateBadge": "Ongoing",
+      "catalystDate": "2026-06-26",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "⚡",
+      "name": "Short Squeeze / Catalyst Combo",
+      "description": "39% short interest = 13 days to cover. Any positive catalyst (enterprise win + earnings beat + EBITDA breakeven progress) triggers a squeeze. SOUN went from $6 to $22 (+267%) in 2025 — can repeat.",
+      "urgencyLabel": "WATCH",
+      "dateBadge": "Any catalyst",
+      "catalystDate": "2026-08-06",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Insider fiduciary duty investigation (Kahn Swick & Foti + PRNewsWire) — lawsuit risk creating overhang",
+    "39% short interest = high volatility in both directions; shorts could press further before squeeze",
+    "LivePerson acquisition integration risk: weighed on Q1 earnings (acquisitions hurt profitability timeline)",
+    "Valuation still elevated at 15x P/S on $184M TTM revenue despite 30% YTD decline",
+    "Competition from OpenAI voice mode, Google Gemini Live, Amazon Alexa — voice AI becoming commoditized"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Aug 6, 2026", "note": "OASYS adoption + EBITDA progress", "est": "est. $47–50M revenue", "highlight": "yellow" },
+    { "event": "EBITDA Breakeven", "dateRange": "Q4 2026", "note": "Key inflection — profitable voice AI platform", "est": "TP2 trigger", "highlight": "blue" },
+    { "event": "TP3 / Auto Sector Win", "dateRange": "2027", "note": "Major auto OEM OASYS deployment", "est": "$26 HC Wainwright target", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -50, "price": 3.17 },
+    { "label": "Base", "color": "yellow", "pct": 120, "price": 14.0 },
+    { "label": "Bull", "color": "green", "pct": 215, "price": 20.0 },
+    { "label": "Moon", "color": "purple", "pct": 310, "price": 26.0 }
+  ],
+  "analystTargets": [
+    { "firm": "HC Wainwright", "target": 26.0, "rating": "Buy" },
+    { "firm": "Consensus (8 analysts)", "target": 14.0, "rating": "Strong Buy" },
+    { "firm": "Consensus range", "target": 8.0, "rating": "Hold (low)" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "High P/S growth stock sensitive to rate environment. Fed hold helps; any rate hike = -20% re-rating.",
+    "inflationNote": "Enterprise AI budgets growing despite inflation — customers willing to pay for proven ROI platforms",
+    "sectorImpact": "AI software sector re-rating ongoing — SOUN at 15x P/S is below PLTR (80x) which creates relative value argument",
+    "summary": "Fed risk MEDIUM. High P/S stock (15x) sensitive to rate outlook. FOMC Jul 29 is binary — hold = tailwind, hike signal = headwind. EBITDA breakeven would dramatically de-risk the valuation."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 6.34, "note": "Current — 71% off ATH, oversold territory", "timing": "Now (partial)" },
+      { "label": "Entry 2", "level": 5.50, "rangeMax": 6.00, "note": "Short squeeze reload zone", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 4.50, "note": "Near 52-week low $5.83 break", "timing": "Deep dip / lawsuit flush" }
+    ],
+    "tp1": { "price": 14.0, "pct": 120.8, "note": "Analyst consensus — EBITDA path confirmed" },
+    "tp2": { "price": 20.0, "pct": 215.5, "note": "Bull: OASYS enterprise adoption visible" },
+    "tp3": { "price": 26.0, "pct": 310.1, "note": "HC Wainwright target — Moon: auto + restaurant AI dominance", "moon": true },
+    "stopLoss": {
+      "tight": 5.50, "tightPct": -13.2, "tightNote": "Below 52-week low $5.83 would signal distribution breakdown",
+      "hard": 4.00, "hardPct": -36.9, "hardNote": "Lawsuit settlement + competitive pressure = thesis broken",
+      "riskReward": "7.5:1", "rrNote": "vs TP2 from preferred entry $5.75", "rrWarning": "Asymmetric ✅"
+    },
+    "verdict": "Voice AI down 30% YTD with 39% short interest — high risk/high reward. เข้า 2–3% ที่ $5.50–6.00. TP2 $20 คือ 215% upside.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "product_launch",
+    "preRunup": "SOUN ทำ pre-earnings run 15–25% ในช่วง 2–3 สัปดาห์ก่อน earnings มาหลายไตรมาส high short interest ทำให้ move แรงขึ้น",
+    "preRunupTiming": "2–3 สัปดาห์ก่อน earnings Aug 6",
+    "preRunupPct": "+15–30%",
+    "postWin": {
+      "avgPct": 35,
+      "range": "+20% to +80%",
+      "note": "Q4 2025: SOUN เด้งจาก $8 ไป $22 (+175%) ใน 8 สัปดาห์ on momentum + beat. Q1 2026 earnings beat drove +20% intraday แต่ fade.",
+      "exampleDate": "Q4 2025 · Oct–Dec 2025"
+    },
+    "postLose": {
+      "avgPct": -25,
+      "range": "-15% to -40%",
+      "note": "Q1 2026 earnings (May 7): beat revenue but LivePerson acquisition costs weighed — stock fell -15% aveafter initial pop. Lawsuit news Jun 2026 added -10%.",
+      "exampleDate": "May 2026"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "3% ค่าขนม — established revenue ($184M TTM) reduces zero-risk vs ACHR/SERV, but lawsuit + valuation risk justify smaller size"
+    },
+    "stopPreCatalyst": { "pct": -12, "price": 5.58, "note": "ถ้าหลุด $5.58 ก่อน Aug 6 = distribution breakdown" },
+    "stopPostCatalyst": { "pct": -18, "note": "ถ้า earnings miss revenue + EBITDA outlook ถอย = ออกทันที" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "SOUN",
+      "event": "SOUN own run — Q4 2025 momentum + OASYS rumors",
+      "date": "Oct 2025",
+      "movePct": 175,
+      "days": 56,
+      "outcome": "good",
+      "note": "SOUN went from $8 to $22 (+175%) in Q4 2025. Currently at $6.34 — lower than the start of that run. Same stock, similar setup. Next beat could repeat."
+    },
+    {
+      "ticker": "FIVE9",
+      "event": "FIVE9 enterprise AI call center adoption surge",
+      "date": "Mar 2021",
+      "movePct": 300,
+      "days": 180,
+      "outcome": "good",
+      "note": "FIVE9 cloud contact center went from $50 to $200 (+300%) as enterprises shifted to AI-powered customer service. SOUN's OASYS platform is targeting same market with voice-native AI."
+    },
+    {
+      "ticker": "C3AI",
+      "event": "C3.ai enterprise AI adoption wave",
+      "date": "Dec 2020",
+      "movePct": 1400,
+      "days": 90,
+      "outcome": "mixed",
+      "note": "C3.ai $9 → $135 (+1400%) on AI adoption narrative in Dec 2020. SOUN has actual revenue ($184M) vs C3AI at time ($157M) but with real recurring contracts. Cautionary: C3AI later fell 85%."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "SoundHound AI Named Overall Leader in ISG 2026 Buyers Guide for Conversational AI + OASYS agentic platform launch",
+    "url": "https://www.globenewswire.com/news-release/2026/06/10/3309767/0/en/SoundHound-AI-Named-As-Overall-Leader-in-The-2026-ISG-Buyers-Guide-for-Conversational-AI-Emerging-Providers.html",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/soun/",
+    "https://stockanalysis.com/stocks/soun/forecast/",
+    "https://www.globenewswire.com/news-release/2026/05/05/3287821/0/en/SoundHound-AI-Introduces-OASYS-The-World-s-First-Self-Learning-Orchestrated-Agentic-AI-Platform-Where-AI-Builds-AI.html",
+    "https://www.tipranks.com/news/bull-case-for-soun-stock-predicts-massive-250-upside-in-2026",
+    "https://www.globenewswire.com/news-release/2026/05/07/3290524/0/en/SoundHound-AI-Reports-Record-Q1-Revenue-of-44-2-Million-Up-52.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "SOUN เป็น voice AI ที่มีรายได้จริง $184M TTM (+80% YoY) ลงมา 30% YTD จาก peak $22.17 เหลือ $6.34 — oversold มาก OASYS platform ใหม่ + short interest 39% = squeeze potential HC Wainwright target $26 (+310%) moon case ถ้า EBITDA breakeven Q4 2026",
+      "priceNote": "ลงมา 71% จาก 52-week high $22.17 — oversold อย่างมาก revenue จริง $184M ยังเดิน",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "EBITDA Breakeven Q4 2026", "description": "inflection point จาก burn ไป profitable — trigger re-rate ใหญ่" },
+        { "name": "OASYS Enterprise Adoption", "description": "'AI builds AI' platform — ถ้าได้ Fortune 500 contract = +40%+ ทันที" },
+        { "name": "Short Squeeze Potential", "description": "39% short interest = 13 วัน to cover — catalyst ใดก็ตามอาจ trigger squeeze" }
+      ],
+      "risks": [
+        "Lawsuit insider fiduciary duty — overhang ต่อเนื่อง",
+        "39% short interest = volatile ทั้งขาขึ้นและขาลง",
+        "Competition OpenAI voice mode / Google Gemini — commoditization risk"
+      ],
+      "macroRisk": {
+        "rateOutlook": "High P/S stock sensitive กับ rate — Fed hold ช่วย, hike signal กดหนัก",
+        "inflationNote": "Enterprise AI budget โต — ลูกค้ายอมจ่ายถ้า ROI ชัด",
+        "sectorImpact": "15x P/S ถูกกว่า PLTR 80x — relative value argument ช่วย",
+        "summary": "Fed risk ปานกลาง FOMC Jul 29 คือ binary — hold = tailwind"
+      },
+      "entryStrategy": {
+        "verdict": "Voice AI ลง 30% YTD + 39% short interest — ค่าขนม 2–3% ที่ $5.50–6.00 TP2 $20 = 215%",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน oversold zone", "timing": "เข้าบางส่วน" },
+          { "note": "โซน short squeeze reload", "timing": "ถ้าย่อ" },
+          { "note": "52-week low break zone", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "analyst consensus — EBITDA path confirmed" },
+        "tp2": { "note": "OASYS enterprise adoption visible" },
+        "tp3": { "note": "HC Wainwright target — auto + restaurant AI dominance", "moon": true },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า 52-week low = distribution breakdown",
+          "hardNote": "lawsuit + competition กดให้ thesis แตก",
+          "rrNote": "vs TP2 จาก preferred entry",
+          "rrWarning": "Asymmetric ✅"
+        }
+      },
+      "estimateDates": [
+        { "event": "Q2 Earnings", "note": "OASYS adoption + EBITDA progress" },
+        { "event": "EBITDA Breakeven", "note": "inflection สำคัญ" },
+        { "event": "Auto Sector Win", "note": "moon catalyst 2027" }
+      ]
+    }
+  }
+}
