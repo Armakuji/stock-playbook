@@ -1,0 +1,205 @@
+{
+  "ticker": "LUNR",
+  "companyName": "Intuitive Machines, Inc.",
+  "companyDescription": "Lunar infrastructure & services · NASA Artemis program backbone + $1.1B backlog · Unique lunar surface access, data relay, and national security space ops",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-26T00:00:00.000Z",
+  "price": 18.65,
+  "priceChange": -2.51,
+  "priceNote": "Down 55-60% from $46.75 ATH — SpaceX IPO + profit-taking selloff. B. Riley says 'use the pullback as buying opportunity'.",
+  "marketCap": "$4.05B",
+  "sector": "Industrials / Aerospace & Defense",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 71,
+  "summary": "Intuitive Machines is the operating backbone of NASA's Artemis lunar program with a $1.1B backlog and record Q1 2026 revenue of $186.7M (beat consensus). The stock has been crushed 55% from ATH by SpaceX IPO capital rotation, creating a rare 118% upside opportunity. B. Riley reaffirmed Buy calling the selloff a buying opportunity. Q2 earnings Aug 6 and new lunar reconnaissance contracts are near-term catalysts.",
+  "catalysts": [
+    {
+      "icon": "🌙",
+      "name": "NASA Artemis Contract Pipeline",
+      "description": "Two new prime lunar reconnaissance contracts (LROC + ShadowCam) announced May 2026. $1.1B total backlog provides 3+ years revenue visibility. NASA CLPS contracts ongoing through 2030+.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "2026-2030",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "Earnings Aug 6, 2026. Q1 2026 was record quarter: $186.7M revenue (beat $200M est. on EBITDA, beat on revenue), first-ever positive Adjusted EBITDA $2.7M. Market expects continued improvement.",
+      "urgencyLabel": "6 WEEKS",
+      "dateBadge": "Aug 6, 2026",
+      "catalystDate": "2026-08-06",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🛰",
+      "name": "Goonhilly + COMSAT Acquisition Close",
+      "description": "LUNR acquiring Goonhilly Earth Station and COMSAT (announced May 2026) — expands space-to-Earth network capacity. Closes in H2 2026. Strategic: national security + commercial data relay.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Stock offering risk: LUNR filed to sell Class A common stock Jun 2026 — dilution overhang could cap near-term upside",
+    "SpaceX IPO (SPCX) continues to siphon institutional capital from LUNR — direct sector competition",
+    "Still unprofitable on net basis: Net income -$109.9M TTM despite record EBITDA; needs scale",
+    "Single-customer concentration: Heavy NASA dependence — any NASA budget cuts would materially affect revenue",
+    "Revenue declined in 2025 (-7.87% YoY) before recovering in 2026 — visibility risk"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Aug 6, 2026", "note": "Revenue trajectory + backlog execution + EBITDA trend", "est": "est. Rev $200M+", "highlight": "blue" },
+    { "event": "Goonhilly / COMSAT Acquisition Close", "dateRange": "H2 2026", "note": "Network expansion — strategic for national security positioning", "est": "Close H2 2026", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -40, "price": 11 },
+    { "label": "Base", "color": "yellow", "pct": 70, "price": 32 },
+    { "label": "Bull", "color": "green", "pct": 119, "price": 41 },
+    { "label": "Moon", "color": "purple", "pct": 202, "price": 56 }
+  ],
+  "analystTargets": [
+    { "firm": "Roth Capital (May 2026)", "target": 75, "rating": "Buy" },
+    { "firm": "B. Riley", "target": 50, "rating": "Buy (buying opp.)" },
+    { "firm": "Consensus (9 analysts)", "target": 41, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "FOMC July 29. Space infrastructure with multi-year government contracts is partially insulated from rate sensitivity. Beta 1.68 = volatile but less than pure-speculative names.",
+    "inflationNote": "NASA cost-plus contracts provide inflation protection. Gross margin expansion (record Q1 gross margin) suggests pricing power and operational leverage.",
+    "sectorImpact": "LOW-MEDIUM macro sensitivity. Government contract revenue is sticky. The bigger risk is sector sentiment rotation out of space stocks, which is SpaceX IPO-driven not macro-driven.",
+    "summary": "Fed risk MEDIUM-LOW for LUNR specifically. Government contract backbone insulates revenue. The bigger risk is continued SpaceX IPO capital rotation and dilution from the stock offering. Wait for early August after FOMC to accumulate."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 18.65, "note": "Current price — 60% below ATH, 118% analyst upside. Valid entry with ค่าขนม size.", "timing": "Now (small size)" },
+      { "label": "Entry 2", "level": 15, "rangeMax": 17, "note": "Post-FOMC dip / stock offering overhang resolves", "timing": "Early Aug", "preferred": true },
+      { "label": "Entry 3", "level": 11, "note": "Extreme bear — near 2025 lows, only if NASA budget risk materializes", "timing": "Extreme scenario" }
+    ],
+    "tp1": { "price": 32, "pct": 71.6, "note": "Base case — earnings recovery narrative builds" },
+    "tp2": { "price": 41, "pct": 119.8, "note": "Consensus analyst target" },
+    "tp3": { "price": 75, "pct": 302.1, "note": "Roth Capital bull case — full lunar infrastructure re-rate · 2027-28", "moon": true },
+    "stopLoss": {
+      "tight": 14, "tightPct": -24.9, "tightNote": "Below 2025 support levels — thesis weakening",
+      "hard": 10, "hardPct": -46.4, "hardNote": "Near cash value — if NASA contracts at risk",
+      "riskReward": "3.2 : 1", "rrNote": "Entry 2 ($15) vs TP1 ($32)", "rrWarning": "Excellent R/R — 118% analyst upside from current"
+    },
+    "verdict": "Speculative BUY at 55% discount from ATH — rare $1.1B backlog at $4B market cap. Size 4-6% of portfolio. Add at $15-17 post-FOMC.",
+    "approach": "DCA"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "LUNR ran +80% in the 4 weeks before SpaceX IPO on 'rising tide lifts all space boats' momentum. New contract awards from NASA historically trigger 10-20% moves. Q1 2026 beat beat expectations and LUNR ran +13.9% that session.",
+    "preRunupTiming": "1-2 สัปดาห์ก่อน contract award announcement หรือ earnings",
+    "preRunupPct": "+10-20%",
+    "postWin": {
+      "avgPct": 18,
+      "range": "+10% to +40%",
+      "note": "LUNR Q1 2026 beat (May 14, 2026) — record revenue + positive EBITDA beat → stock +13.9% same session. Roth Capital raised PT from $50 to $75 → stock +13.9% more. Shows NASA milestone beats drive 15-25% moves.",
+      "exampleDate": "May 2026"
+    },
+    "postLose": {
+      "avgPct": -16,
+      "range": "-10% to -30%",
+      "note": "LUNR IM-1 lander tipped over on lunar surface (Feb 2024) — partial mission success. Stock sold off -20% then recovered. IM-2 mission risk remains. Any mission failure would trigger -15-25% sector selloff.",
+      "exampleDate": "Feb 2024"
+    },
+    "spotSizing": {
+      "pct": 5,
+      "reason": "118% upside from consensus PT justifies meaningful position. But stock offering dilution risk and SpaceX rotation keeps size at 5%. Scale to 8-10% after stock offering resolves and earnings confirm trajectory."
+    },
+    "stopPreCatalyst": { "pct": -20, "price": 15, "note": "หลุด $15 = stock offering ดูด confidence ออก หรือ NASA contract ถูก cancel ออก" },
+    "stopPostCatalyst": { "pct": -15, "note": "ถ้า Q2 earnings miss + guidance ลด ออกทันที" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "LUNR",
+      "event": "IM-1 Lunar Landing Mission (Odysseus) Success",
+      "date": "Feb 2024",
+      "movePct": 40,
+      "days": 5,
+      "outcome": "good",
+      "note": "First US lunar landing since Apollo (partial success despite tipping) — stock tripled from $7 to $25 over 2 weeks. Shows that mission milestones are enormous re-rating events for LUNR."
+    },
+    {
+      "ticker": "SPCE",
+      "event": "Virgin Galactic First Commercial Flight",
+      "date": "Jun 2023",
+      "movePct": 35,
+      "days": 7,
+      "outcome": "good",
+      "note": "Space infrastructure companies re-rate 30-50% on first commercial milestones. LUNR has recurring NASA contracts — more durable than SPCE but similar milestone-driven pattern."
+    },
+    {
+      "ticker": "LUNR",
+      "event": "Q1 2026 Record Earnings Beat",
+      "date": "May 2026",
+      "movePct": 14,
+      "days": 1,
+      "outcome": "good",
+      "note": "Record Q1 revenue $186.7M + first positive Adjusted EBITDA → stock +13.9% same session. Q2 earnings Aug 6 is next potential 10-20% single-day move if trend continues."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "B. Riley: Intuitive Machines recent selloff a buying opportunity — stock has pulled back 55% from 52-week high",
+    "url": "https://www.tipranks.com/news/the-fly/intuitive-machines-recent-selloff-a-buying-opportunity-says-b-riley-thefly-news",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/lunr/",
+    "https://stockanalysis.com/stocks/lunr/forecast/",
+    "https://www.tipranks.com/news/the-fly/intuitive-machines-recent-selloff-a-buying-opportunity-says-b-riley-thefly-news",
+    "https://www.globenewswire.com/news-release/2026/05/14/3294812/0/en/Intuitive-Machines-Reports-First-Quarter-2026-Financial-Results-Posts-Record-Quarterly-Revenue-Gross-Margin-and-Positive-Adjusted-EBITDA-along-with-Record-Quarter-end-Backlog-of-1-.html",
+    "https://www.globenewswire.com/news-release/2026/05/18/3297067/0/en/Intuitive-Machines-Announces-Two-Prime-Lunar-Reconnaissance-Contracts.html",
+    "https://www.tipranks.com/news/the-fly/intuitive-machines-price-target-raised-to-75-from-50-at-roth-capital-thefly-news"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Intuitive Machines คือกระดูกสันหลังของโปรแกรม Artemis ของ NASA มี backlog $1.1B และ Q1 2026 เป็น record quarter หุ้นร่วง 55% จาก ATH จาก SpaceX IPO rotation สร้างโอกาส upside 118% ตาม consensus PT B. Riley ยืนยัน 'ซื้อตอนย่อ'",
+      "priceNote": "ร่วง 55-60% จาก ATH $46.75 จาก SpaceX IPO selloff B. Riley บอกเป็นโอกาสซื้อ",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "สัญญา NASA Artemis", "description": "สัญญา lunar reconnaissance ใหม่ 2 ฉบับ + backlog $1.1B คือ revenue มองเห็นได้ 3+ ปี" },
+        { "name": "Earnings Q2 2026", "description": "Earnings 6 ส.ค. — หลัง Q1 record ตลาดคาด Q2 ยังดี" },
+        { "name": "Goonhilly + COMSAT Acquisition", "description": "ขยาย network space-to-Earth — เสริมความแข็งแกร่งด้าน national security" }
+      ],
+      "risks": [
+        "ความเสี่ยงหุ้นใหม่: LUNR ยื่นขาย Class A stock — dilution",
+        "SpaceX ดูด capital ออกจาก space sector",
+        "ยังขาดทุน net basis แม้ EBITDA บวกแล้ว",
+        "พึ่งพา NASA มาก — งบ NASA ถูกตัด = กระทบหนัก"
+      ],
+      "macroRisk": {
+        "rateOutlook": "FOMC 29 ก.ค. — สัญญา gov cost-plus ป้องกัน inflation ได้ดี beta 1.68 ปานกลาง",
+        "inflationNote": "NASA cost-plus contracts ป้องกันเงินเฟ้อ gross margin ขยายตัวต่อเนื่อง",
+        "sectorImpact": "ต่ำ-ปานกลาง — สัญญา gov sticky แต่ sector sentiment เป็นความเสี่ยงหลัก",
+        "summary": "Fed risk ต่ำสำหรับ LUNR โดยเฉพาะ ความเสี่ยงใหญ่กว่าคือ dilution + SpaceX rotation"
+      },
+      "entryStrategy": {
+        "verdict": "Speculative BUY ที่ discount 55% จาก ATH — backlog $1.1B ที่ market cap $4B ถือ 4-6% เพิ่มที่ $15-17 หลัง FOMC",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ต่ำกว่า ATH 60% upside analyst 118%", "timing": "ตอนนี้ (size เล็ก)" },
+          { "note": "หลัง FOMC / หลุด stock offering overhang", "timing": "ต้นสิงหา" },
+          { "note": "extreme bear — ใกล้ cash value เฉพาะถ้า NASA ถูกตัด", "timing": "extreme scenario" }
+        ],
+        "tp1": { "note": "Base case — earnings recovery narrative สร้างขึ้น" },
+        "tp2": { "note": "เป้า consensus analyst" },
+        "tp3": { "note": "Roth Capital bull case — lunar infrastructure re-rate · 2027-28" },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า $15 = stock offering กด confidence",
+          "hardNote": "ใกล้ cash value — ถ้า NASA contracts เสี่ยง",
+          "rrNote": "Entry 2 ($15) vs TP1 ($32)",
+          "rrWarning": "R/R ดีมาก — upside 118% จากราคาปัจจุบัน"
+        }
+      },
+      "estimateDates": [
+        { "event": "Earnings Q2 2026", "note": "Revenue + backlog execution + EBITDA trend" },
+        { "event": "Goonhilly/COMSAT ปิดดีล", "note": "ขยาย network — positioning national security" }
+      ]
+    }
+  }
+}

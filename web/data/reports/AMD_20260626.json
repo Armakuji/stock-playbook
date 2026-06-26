@@ -1,0 +1,207 @@
+{
+  "ticker": "AMD",
+  "companyName": "Advanced Micro Devices, Inc.",
+  "companyDescription": "AI accelerator GPU + CPU powerhouse · MI300X AI GPU disrupting NVDA share · Rackspace 30MW deal + META/MSFT adoption · +140% YTD as AI diversification play",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-26T00:00:00.000Z",
+  "price": 532.57,
+  "priceChange": 2.47,
+  "priceNote": "Up +140% YTD — already above consensus PT $500. UBS raised to $670 (agentic AI CPU demand). Q2 earnings Aug 4 is the next major test.",
+  "marketCap": "$868B",
+  "sector": "Technology / Semiconductors",
+  "verdict": "HOLD",
+  "scoreLabel": "Core Holding",
+  "score": 68,
+  "summary": "AMD has surged +140% YTD and now trades above the $500 consensus analyst PT, creating a near-term overshoot risk. However UBS just raised to $670 citing agentic AI CPU demand, and AMD's MI300X AI GPU is gaining real hyperscaler traction (META, MSFT, Rackspace 30MW deal). Q2 earnings Aug 4 is critical — a beat would likely push toward $600-670. Already-in holders should HOLD; new entries should wait for post-FOMC dip to $460-490.",
+  "catalysts": [
+    {
+      "icon": "⚡",
+      "name": "Q2 2026 Earnings",
+      "description": "Earnings Aug 4, 2026. Market expects AMD MI300X AI GPU revenue ramp continuation. If data center revenue beats, could re-rate toward $600-670. Risk: any disappointment would cause sharp reversal since stock is extended.",
+      "urgencyLabel": "5 WEEKS",
+      "dateBadge": "Aug 4, 2026",
+      "catalystDate": "2026-08-04",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "🤖",
+      "name": "Agentic AI CPU Demand Surge",
+      "description": "UBS raised PT to $670 Jun 24 citing AMD CPU demand surge from agentic AI workloads. AMD Ryzen AI and EPYC server CPUs are benefiting from AI inference scaling. AMD is becoming 'more than a chip company'.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🏢",
+      "name": "Rackspace 30MW AMD AI Compute Deal",
+      "description": "AMD signed definitive agreement with Rackspace for phased deployment of 30MW AMD AI compute (Jun 16). Validates MI300X as enterprise-grade alternative to NVDA. Rackspace stock +16-21% on news.",
+      "urgencyLabel": "SIGNED",
+      "dateBadge": "Jun 16, 2026",
+      "catalystDate": "2026-06-16",
+      "badgeColor": "green",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Already above consensus PT $500 — stock is trading on bull case; no margin of safety at current levels",
+    "Nvidia CUDA moat remains intact; AMD ROCm software ecosystem still 2-3 years behind NVDA in AI training",
+    "FOMC July 29 — AMD +140% YTD makes it a sell target on risk-off days; beta 2.49 = heavy drawdowns",
+    "Forward PE 61x — premium valuation requires continued execution. Any AI capex slowdown = significant de-rate",
+    "Barrons called 'stop buying chip stocks' at current valuations (Jun 2026)"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Aug 4, 2026", "note": "MI300X data center revenue + Q3 guidance = critical read", "est": "est. Rev $9.5B+", "highlight": "blue" },
+    { "event": "FOMC / High Risk Week", "dateRange": "Jul 27-31, 2026", "note": "FOMC Jul 29 + MSFT/META earnings = AMD biggest risk event near-term", "est": "HIGH RISK", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -25, "price": 399 },
+    { "label": "Base", "color": "yellow", "pct": 6, "price": 564 },
+    { "label": "Bull", "color": "green", "pct": 26, "price": 670 },
+    { "label": "Moon", "color": "purple", "pct": 50, "price": 799 }
+  ],
+  "analystTargets": [
+    { "firm": "UBS (Jun 24, 2026)", "target": 670, "rating": "Buy (raised)" },
+    { "firm": "Consensus (51 analysts)", "target": 500, "rating": "Strong Buy" },
+    { "firm": "Invezz Bull Case", "target": 600, "rating": "Buy" },
+    { "firm": "Bernstein", "target": 520, "rating": "Outperform" }
+  ],
+  "macroRisk": {
+    "fedRisk": "HIGH",
+    "rateOutlook": "FOMC July 29 — AMD is +140% YTD at 61x forward PE. Any hike or hawkish language would trigger profit-taking in the most extended chip names. AMD is more vulnerable than NVDA given it's trading above consensus PT.",
+    "inflationNote": "AMD benefits from enterprise AI capex, which is secular. But at 61x forward PE, rate sensitivity is elevated. Inflation persistence hurts multiple expansion.",
+    "sectorImpact": "HIGH. AMD at $532 vs $500 consensus PT = running hot. A macro shock would likely take AMD back to $450-480 range (its pre-overshoot level). The AI thesis is intact but the valuation is stretched.",
+    "summary": "Fed risk HIGH for AMD specifically because it's already above consensus PT. Already-in holders HOLD to $670 (UBS). New entries should wait for $460-490 post-FOMC dip — that's the risk-reward sweet spot."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Add if already in", "level": 532, "note": "If you're already long, HOLD. Don't add more at current levels above consensus PT.", "timing": "Hold only" },
+      { "label": "New Entry", "level": 468, "rangeMax": 490, "note": "Post-FOMC dip zone — below consensus PT, better margin of safety", "timing": "Early Aug", "preferred": true },
+      { "label": "Deep Entry", "level": 400, "note": "Major correction — 200-day MA / pre-YTD-run level", "timing": "If market-wide selloff" }
+    ],
+    "tp1": { "price": 570, "pct": 7.0, "note": "Near-term resistance / consensus range" },
+    "tp2": { "price": 670, "pct": 25.8, "note": "UBS bull case — agentic AI CPU thesis plays out" },
+    "tp3": { "price": 800, "pct": 50.2, "note": "Full AI platform company re-rate · 2027", "moon": true },
+    "stopLoss": {
+      "tight": 460, "tightPct": -13.6, "tightNote": "Below 50-day MA — momentum lost",
+      "hard": 380, "hardPct": -28.6, "hardNote": "Below 200-day MA — AI thesis challenged",
+      "riskReward": "2.3 : 1", "rrNote": "Entry 2 ($480) vs TP2 ($670)", "rrWarning": "Only acceptable at dip entry — current price has poor R/R"
+    },
+    "verdict": "HOLD if in — wait for $460-490 for new entries. UBS $670 bull case valid but stock needs to correct first.",
+    "approach": "Lump Sum"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "AMD typically runs 5-15% in the 2-3 weeks before earnings on AI GPU demand anticipation. In Q1 2026, AMD ran +18% in 3 weeks pre-earnings. At $532, the runup may already be priced in unless MI300X data shows stronger-than-expected adoption.",
+    "preRunupTiming": "2-3 สัปดาห์ก่อน Q2 earnings (mid-July)",
+    "preRunupPct": "+5-15%",
+    "postWin": {
+      "avgPct": 12,
+      "range": "+8% to +22%",
+      "note": "AMD Q1 2026 beat (Apr 2026) — data center revenue exceeded $3.7B, stock +12% next session. Q4 2025 beat (Feb 2026) — MI300X ramp confirmed, +22% over 2 weeks. Pattern: MI300X upside surprises drive 10-20% moves.",
+      "exampleDate": "Apr 2026"
+    },
+    "postLose": {
+      "avgPct": -15,
+      "range": "-8% to -25%",
+      "note": "AMD Q3 2024 (Oct 2024) — data center guidance in-line but gaming/embedded weak → stock -10%. At current 61x PE, a miss on AI GPU guidance could trigger -15-25% re-rate since the stock is priced for perfection.",
+      "exampleDate": "Oct 2024"
+    },
+    "spotSizing": {
+      "pct": 6,
+      "reason": "Strong Buy consensus but already above PT = lower conviction for new money. 6% if already in (HOLD), 0% new entry until $460-490. Scale to 10% if dip materializes post-FOMC."
+    },
+    "stopPreCatalyst": { "pct": -12, "price": 469, "note": "หลุด $469 ก่อน earnings = กลับไปที่ consensus PT zone ออกบางส่วน" },
+    "stopPostCatalyst": { "pct": -10, "note": "ถ้า data center guidance miss ออกทันที อย่า wait" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "AMD",
+      "event": "MI300X Initial Hyperscaler Adoption (META, MSFT)",
+      "date": "Apr 2026",
+      "movePct": 22,
+      "days": 14,
+      "outcome": "good",
+      "note": "AMD confirmed META and MSFT deploying MI300X at scale → stock +22% over 2 weeks. Rackspace 30MW deal Jun 2026 is the same playbook — hyperscaler validation drives re-rating."
+    },
+    {
+      "ticker": "NVDA",
+      "event": "AI GPU Leader Re-rate 2023-2024",
+      "date": "May 2023",
+      "movePct": 180,
+      "days": 90,
+      "outcome": "good",
+      "note": "NVDA ran +180% in 90 days after first AI blowout. AMD is replicating this with a 12-18 month lag as MI300X establishes itself. AMD at 25% NVDA's market cap = more room to run if thesis plays."
+    },
+    {
+      "ticker": "AMD",
+      "event": "AMD +140% YTD 2026 — Above Consensus PT",
+      "date": "Jun 2026",
+      "movePct": -15,
+      "days": 30,
+      "outcome": "mixed",
+      "note": "AMD is now in similar territory to NVDA in Nov 2021 (above consensus). NVDA corrected -20% before resuming. Historical precedent suggests AMD needs digestion period before next leg. Wait for $460-490 entry."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "UBS raises AMD price target to $670 from $455, cites agentic AI-driven CPU demand surge",
+    "url": "https://www.tipranks.com/news/ubs-raises-amd-and-arm-stock-price-targets-amid-agentic-ai-driven-cpu-demand",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/amd/",
+    "https://stockanalysis.com/stocks/amd/forecast/",
+    "https://www.tipranks.com/news/ubs-raises-amd-and-arm-stock-price-targets-amid-agentic-ai-driven-cpu-demand",
+    "https://www.globenewswire.com/news-release/2026/06/16/3312408/0/en/AMD-and-Rackspace-Technology-Sign-Definitive-Agreement-for-Phased-Deployment-of-30-MW-of-AMD-AI-Compute.html",
+    "https://www.tipranks.com/news/amd-stock-surges-over-140-ytd-heres-who-owns-the-chipmaker",
+    "https://invezz.com/news/2026/06/23/three-ai-giants-bet-big-on-amd-is-this-the-most-underpriced-stock/",
+    "https://www.barrons.com/articles/ai-chip-stocks-prices-valuations-volatility-914f4804"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "AMD พุ่ง +140% YTD และตอนนี้เทรดเหนือ PT consensus $500 แล้ว สร้างความเสี่ยง overshoot UBS เพิ่ง raise เป็น $670 จาก CPU demand ของ agentic AI และ MI300X กำลัง gain traction จาก hyperscalers Earnings Q2 4 ส.ค. คือ test สำคัญ — ถ้าอยู่ใน HOLD ถ้ายังไม่ได้เข้า รอดิป $460-490 หลัง FOMC",
+      "priceNote": "ขึ้น +140% YTD เหนือ PT consensus แล้ว UBS raise เป้าใหม่ $670 Earnings 4 ส.ค. คือ test ถัดไป",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "Earnings Q2 2026", "description": "4 ส.ค. — MI300X data center revenue + Q3 guidance = critical ถ้า beat ดัน $600-670" },
+        { "name": "Agentic AI CPU Demand", "description": "UBS raise $670 จาก CPU demand ที่พุ่งจาก AI agentic workload AMD EPYC + Ryzen AI" },
+        { "name": "Rackspace 30MW Deal", "description": "Definitive agreement 30MW AMD compute signed — validate MI300X ระดับ enterprise" }
+      ],
+      "risks": [
+        "เหนือ PT consensus $500 แล้ว — ไม่มี margin of safety",
+        "NVDA CUDA moat ยังแข็งแกร่ง AMD ROCm ตามหลัง 2-3 ปี",
+        "FOMC 29 ก.ค. — +140% YTD = sell target วัน risk-off",
+        "Forward PE 61x ไวต่อ AI capex slowdown"
+      ],
+      "macroRisk": {
+        "rateOutlook": "FOMC 29 ก.ค. — AMD เหนือ PT แล้ว + PE 61x = ไว rate มาก หาก hike profit-taking จะแรง",
+        "inflationNote": "Enterprise AI capex secular แต่ PE 61x ไม่ tolerant ต่อ rate surprise",
+        "sectorImpact": "สูง — ถ้า macro shock AMD จะย้อนสู่ $450-480 ก่อน",
+        "summary": "Fed risk HIGH สำหรับ AMD ถ้าอยู่แล้ว HOLD ถ้ายังไม่เข้า รอ $460-490 หลัง FOMC"
+      },
+      "entryStrategy": {
+        "verdict": "HOLD ถ้าอยู่แล้ว รอ $460-490 ถ้าเป็น new entry UBS $670 bull case ใช้ได้ แต่หุ้นต้องย่อก่อน",
+        "entryLevels": [
+          { "note": "ถ้าอยู่แล้ว HOLD อย่าเพิ่มที่นี่เหนือ PT consensus", "timing": "Hold only" },
+          { "note": "New entry หลัง FOMC dip — ต่ำกว่า PT consensus margin of safety ดีกว่า", "timing": "ต้นสิงหา" },
+          { "note": "Major correction — 200-day MA", "timing": "Market-wide selloff" }
+        ],
+        "tp1": { "note": "แนวต้าน near-term / consensus range" },
+        "tp2": { "note": "UBS bull case — agentic AI CPU thesis" },
+        "tp3": { "note": "Full AI platform re-rate · 2027" },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า 50-day MA — momentum หาย",
+          "hardNote": "ต่ำกว่า 200-day MA — AI thesis ถูกตั้งคำถาม",
+          "rrNote": "Entry 2 ($480) vs TP2 ($670)",
+          "rrWarning": "R/R ดีเฉพาะที่ dip entry — ราคาปัจจุบัน R/R แย่"
+        }
+      },
+      "estimateDates": [
+        { "event": "Earnings Q2 2026", "note": "MI300X revenue + Q3 guidance = critical" },
+        { "event": "สัปดาห์ความเสี่ยง FOMC + Big Tech", "note": "29 ก.ค. FOMC + MSFT/META = risk window" }
+      ]
+    }
+  }
+}
