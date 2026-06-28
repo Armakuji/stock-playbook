@@ -1,10 +1,12 @@
 "use client";
 
 import { DcaCard } from "./DcaCard";
+import { RankingChangeTable } from "../RankingChangeTable";
 import { useLang } from "@/lib/LanguageContext";
 import type { RankedDca } from "@/lib/dca";
+import type { RankChange } from "@/lib/ranking-history";
 
-export function DcaContent({ ranked }: { ranked: RankedDca[] }) {
+export function DcaContent({ ranked, rankChanges = [] }: { ranked: RankedDca[]; rankChanges?: RankChange[] }) {
   const { lang } = useLang();
   const th = lang === "th";
 
@@ -179,6 +181,9 @@ export function DcaContent({ ranked }: { ranked: RankedDca[] }) {
             ))}
           </div>
         )}
+
+        {/* ── Ranking Change ────────────────────────────────────────────── */}
+        <RankingChangeTable rows={rankChanges} />
 
         {/* ── Strategy reminder ─────────────────────────────────────────── */}
         {ranked.length > 0 && (

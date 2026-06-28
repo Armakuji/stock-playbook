@@ -2,8 +2,15 @@ import fs from "fs";
 import path from "path";
 import { StockReport } from "./types";
 import { rankReports } from "./ranking";
+import { rankDcaReports } from "./dca";
+import { rankTurboReports } from "./speculative";
+import { computeScore } from "./scoring";
+import { computeDcaScore } from "./dca-scoring";
 
-const REPORTS_DIR = path.join(process.cwd(), "data", "reports");
+const DATA_ROOT = path.join(process.cwd(), "data");
+const REPORTS_DIR = path.join(DATA_ROOT, "reports");
+const DCA_DIR = path.join(DATA_ROOT, "dca");
+const SPECULATIVE_DIR = path.join(DATA_ROOT, "speculative");
 
 export interface RankChange {
   ticker: string;
@@ -71,10 +78,19 @@ function buildReason(
   return reasons.join(" · ");
 }
 
-export function getRankingChanges(): RankChange[] {
-  if (!fs.existsSync(REPORTS_DIR)) return [];
+/**
+ * Generic ranking-change builder — shared by catalyst / DCA / turbo dashboards.
+ * `rankFn` ranks a snapshot the same way its page does; `scoreOf` extracts the
+ * score that drives the confidence badge + drift for that dataset.
+ */
+function computeRankingChanges(
+  dir: string,
+  rankFn: (reports: StockReport[]) => (StockReport & { rank: number })[],
+  scoreOf: (r: StockReport & { rankScore?: number }) => number,
+): RankChange[] {
+  if (!fs.existsSync(dir)) return [];
 
-  const files = fs.readdirSync(REPORTS_DIR).filter((f) => f.endsWith(".json"));
+  const files = fs.readdirSync(dir).filter((f) => f.endsWith(".json"));
 
   // Group by ticker: { NVDA: [{date, report}, ...] }
   const byTicker: Record<string, Array<{ date: string; report: StockReport }>> = {};
@@ -83,28 +99,24 @@ export function getRankingChanges(): RankChange[] {
     const match = file.match(/^([A-Z]+)_(\d{8})\.json$/);
     if (!match) continue;
     const [, ticker, date] = match;
-    const content = fs.readFileSync(path.join(REPORTS_DIR, file), "utf-8");
+    const content = fs.readFileSync(path.join(dir, file), "utf-8");
     const report = JSON.parse(content) as StockReport;
     if (!byTicker[ticker]) byTicker[ticker] = [];
     byTicker[ticker].push({ date, report });
   }
 
-  // Sort each ticker's snapshots by date ascending
   for (const ticker in byTicker) {
     byTicker[ticker].sort((a, b) => a.date.localeCompare(b.date));
   }
 
-  // Current = latest per ticker
   const currentReports = Object.values(byTicker).map((arr) => arr[arr.length - 1].report);
 
-  // Find the most recent date in the entire report set ("today")
   const maxDate = Object.values(byTicker)
     .flatMap((arr) => arr.map((e) => e.date))
     .reduce((a, b) => (a > b ? a : b), "");
 
-  // Previous = each ticker's latest report STRICTLY BEFORE maxDate
-  // This way tickers not updated today (e.g. AVGO still on yesterday's file) are still
-  // ranked correctly in the previous snapshot instead of appearing as NEW.
+  // Previous = each ticker's latest report STRICTLY BEFORE maxDate, so tickers not
+  // refreshed in the latest run still rank correctly instead of showing as NEW.
   const prevReports = Object.values(byTicker)
     .map((arr) => {
       const older = arr.filter((e) => e.date < maxDate);
@@ -112,18 +124,13 @@ export function getRankingChanges(): RankChange[] {
     })
     .filter((r): r is StockReport => r !== null);
 
-  const currentRanked = rankReports(currentReports);
-  const prevRanked = rankReports(prevReports);
+  const currentRanked = rankFn(currentReports);
+  const prevRanked = rankFn(prevReports);
 
-  // prevRankMap: ticker -> rank in previous snapshot
   const prevRankMap: Record<string, number> = {};
-  for (const r of prevRanked) prevRankMap[r.ticker] = r.rank;
-
-  // prevReportMap: ticker -> previous report (for comparison)
   const prevReportMap: Record<string, StockReport> = {};
-  for (const r of prevRanked) prevReportMap[r.ticker] = r;
+  for (const r of prevRanked) { prevRankMap[r.ticker] = r.rank; prevReportMap[r.ticker] = r; }
 
-  // snapshot count = number of distinct date files per ticker
   const snapshotCount: Record<string, number> = {};
   for (const ticker in byTicker) snapshotCount[ticker] = byTicker[ticker].length;
 
@@ -136,8 +143,8 @@ export function getRankingChanges(): RankChange[] {
       ((r.entryStrategy.tp2.price - r.price) / r.price) * 100
     );
     const reason = buildReason(r, prev, delta);
-    const currScore = r.score ?? r.rankScore;
-    const prevScore = prev != null ? (prev.score ?? 0) : null;
+    const currScore = scoreOf(r);
+    const prevScore = prev != null ? scoreOf(prev) : null;
     const scoreDrift = prevScore != null ? currScore - prevScore : null;
     return {
       ticker: r.ticker,
@@ -158,4 +165,31 @@ export function getRankingChanges(): RankChange[] {
       source: r.rankChangeSource,
     };
   });
+}
+
+/** Catalyst dashboard ranking changes (web/data/reports). */
+export function getRankingChanges(): RankChange[] {
+  return computeRankingChanges(
+    REPORTS_DIR,
+    rankReports,
+    (r) => r.score ?? r.rankScore ?? 0,
+  );
+}
+
+/** DCA dashboard ranking changes (web/data/dca) — scored by the DCA model. */
+export function getDcaRankingChanges(): RankChange[] {
+  return computeRankingChanges(
+    DCA_DIR,
+    rankDcaReports,
+    (r) => computeDcaScore(r).score,
+  );
+}
+
+/** Turbo dashboard ranking changes (web/data/speculative). */
+export function getTurboRankingChanges(): RankChange[] {
+  return computeRankingChanges(
+    SPECULATIVE_DIR,
+    rankTurboReports,
+    (r) => computeScore(r).score,
+  );
 }

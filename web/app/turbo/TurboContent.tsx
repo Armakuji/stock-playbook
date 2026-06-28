@@ -1,12 +1,14 @@
 "use client";
 
 import { TurboCard } from "./TurboCard";
+import { RankingChangeTable } from "../RankingChangeTable";
 import { useLang } from "@/lib/LanguageContext";
 import type { rankTurboReports } from "@/lib/speculative";
+import type { RankChange } from "@/lib/ranking-history";
 
 type Ranked = ReturnType<typeof rankTurboReports>;
 
-export function TurboContent({ ranked }: { ranked: Ranked }) {
+export function TurboContent({ ranked, rankChanges = [] }: { ranked: Ranked; rankChanges?: RankChange[] }) {
   const { lang } = useLang();
   const th = lang === "th";
 
@@ -191,6 +193,9 @@ export function TurboContent({ ranked }: { ranked: Ranked }) {
             ))}
           </div>
         )}
+
+        {/* ── Ranking Change ────────────────────────────────────────────── */}
+        <RankingChangeTable rows={rankChanges} />
 
         {/* ── Risk reminder ─────────────────────────────────────────────── */}
         {ranked.length > 0 && (
