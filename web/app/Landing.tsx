@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useLang } from "@/lib/LanguageContext";
 
 interface ElementDef {
   href: string | null;
@@ -17,7 +18,7 @@ interface ElementDef {
   ghost?: boolean;       // coming-soon Earth tile
 }
 
-function ElementCard({ d }: { d: ElementDef }) {
+function ElementCard({ d, th }: { d: ElementDef; th: boolean }) {
   const inner = (
     <div
       style={{
@@ -94,7 +95,7 @@ function ElementCard({ d }: { d: ElementDef }) {
           color: d.ghost ? "var(--muted)" : d.c1,
           border: `1px solid ${d.ghost ? "var(--border)" : `${d.c1}3a`}`,
         }}>
-          {d.risk} RISK
+          {d.ghost ? "—" : th ? `เสี่ยง ${d.risk}` : `${d.risk} RISK`}
         </span>
         <span style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>
           ⏱ {d.horizon}
@@ -107,13 +108,17 @@ function ElementCard({ d }: { d: ElementDef }) {
         paddingTop: 12, borderTop: "1px solid var(--border)",
       }}>
         <span style={{ fontSize: 11, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>
-          {d.ghost ? "planned" : d.count != null ? `${d.count} ${d.count === 1 ? "pick" : "picks"}` : "—"}
+          {d.ghost
+            ? (th ? "วางแผนไว้" : "planned")
+            : d.count != null
+              ? (th ? `${d.count} ตัว` : `${d.count} ${d.count === 1 ? "pick" : "picks"}`)
+              : "—"}
         </span>
         <span style={{
           fontSize: 11, fontWeight: 800, fontFamily: "var(--font-mono, monospace)",
           color: d.ghost ? "var(--muted)" : d.c1,
         }}>
-          {d.ghost ? "soon" : "Enter →"}
+          {d.ghost ? (th ? "เร็วๆ นี้" : "soon") : (th ? "เข้า →" : "Enter →")}
         </span>
       </div>
     </div>
@@ -128,34 +133,43 @@ export function Landing({
   airCount,
   fireCount,
   lastUpdated,
+  isLocal = false,
 }: {
   waterCount: number;
   airCount: number;
   fireCount: number;
   lastUpdated: string;
+  isLocal?: boolean;
 }) {
+  const { lang } = useLang();
+  const th = lang === "th";
+
   const elements: ElementDef[] = [
     {
       href: "/dca", element: "WATER", glyph: "💧", feature: "DCA",
-      tagline: "Quality core · ถือยาว 3–5 ปี · ทยอยสะสมตาม valuation",
-      risk: "LOW", horizon: "3–5 ปี", count: waterCount,
+      tagline: th ? "Quality core · ถือยาว 3–5 ปี · ทยอยสะสมตาม valuation"
+                  : "Quality core · hold 3–5 yrs · accumulate on valuation",
+      risk: "LOW", horizon: th ? "3–5 ปี" : "3–5 yrs", count: waterCount,
       c1: "#38bdf8", c2: "#3b82f6", glow: "rgba(56,189,248,0.14)",
     },
     {
       href: "/catalyst", element: "AIR", glyph: "🌬️", feature: "Catalyst",
-      tagline: "Event-driven · ระยะสัปดาห์ · เล่นตาม catalyst ที่กำลังมา",
-      risk: "MED", horizon: "สัปดาห์", count: airCount,
+      tagline: th ? "Event-driven · ระยะสัปดาห์ · เล่นตาม catalyst ที่กำลังมา"
+                  : "Event-driven · weeks · trade upcoming catalysts",
+      risk: "MED", horizon: th ? "สัปดาห์" : "weeks", count: airCount,
       c1: "#10b981", c2: "#34d399", glow: "rgba(16,185,129,0.14)",
     },
     {
       href: "/turbo", element: "FIRE", glyph: "🔥", feature: "Turbo",
-      tagline: "Moonshot · 300%+ upside · เก็งกำไรเสี่ยงสูง 2–5% ต่อตัว",
+      tagline: th ? "Moonshot · 300%+ upside · เก็งกำไรเสี่ยงสูง 2–5% ต่อตัว"
+                  : "Moonshot · 300%+ upside · high-risk, 2–5% per name",
       risk: "HIGH", horizon: "binary", count: fireCount,
       c1: "#ff6d00", c2: "#d500f9", glow: "rgba(255,109,0,0.14)",
     },
     {
       href: null, element: "EARTH", glyph: "🌍", feature: "Earth",
-      tagline: "รากฐาน — พอร์ต / track record · วางแผนไว้ ยังไม่เปิด",
+      tagline: th ? "รากฐาน — พอร์ต / track record · วางแผนไว้ ยังไม่เปิด"
+                  : "Foundation — portfolio / track record · planned, not live",
       risk: "—", horizon: "—", count: null,
       c1: "#a16207", c2: "#84cc16", glow: "rgba(161,98,7,0.0)", ghost: true,
     },
@@ -176,7 +190,7 @@ export function Landing({
             background: "#10b981", animation: "livePulse 2s ease-in-out infinite",
           }} />
           <span style={{ fontSize: 11, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", letterSpacing: "0.5px" }}>
-            LIVE · updated {lastUpdated}
+            LIVE · {th ? "อัปเดต" : "updated"} {lastUpdated}
           </span>
         </div>
 
@@ -196,8 +210,13 @@ export function Landing({
           fontSize: "clamp(13px, 2.4vw, 16px)", color: "var(--muted)", margin: "0 auto",
           maxWidth: 560, lineHeight: 1.6,
         }}>
-          เลือก<strong style={{ color: "var(--text)" }}>ธาตุการลงทุน</strong>ของคุณ — แต่ละธาตุคือ thesis คนละแบบ
-          บนเรดาร์เดียวกัน · institutional-grade analysis
+          {th ? (
+            <>เลือก<strong style={{ color: "var(--text)" }}>ธาตุการลงทุน</strong>ของคุณ — แต่ละธาตุคือ thesis คนละแบบ
+            บนเรดาร์เดียวกัน · institutional-grade analysis</>
+          ) : (
+            <>Pick your <strong style={{ color: "var(--text)" }}>investment element</strong> — each is a different thesis
+            on one radar · institutional-grade analysis</>
+          )}
         </p>
 
         {/* element legend line */}
@@ -215,10 +234,10 @@ export function Landing({
           margin: "6px auto 0", maxWidth: 360,
           fontSize: 9, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", letterSpacing: "1px",
         }}>
-          <span style={{ flex: 1, textAlign: "center" }}>💧 น้ำ</span>
-          <span style={{ flex: 1, textAlign: "center" }}>🌬️ ลม</span>
-          <span style={{ flex: 1, textAlign: "center" }}>🔥 ไฟ</span>
-          <span style={{ flex: 1, textAlign: "center", opacity: 0.5 }}>🌍 ดิน</span>
+          <span style={{ flex: 1, textAlign: "center" }}>💧 {th ? "น้ำ" : "Water"}</span>
+          <span style={{ flex: 1, textAlign: "center" }}>🌬️ {th ? "ลม" : "Air"}</span>
+          <span style={{ flex: 1, textAlign: "center" }}>🔥 {th ? "ไฟ" : "Fire"}</span>
+          <span style={{ flex: 1, textAlign: "center", opacity: 0.5 }}>🌍 {th ? "ดิน" : "Earth"}</span>
         </div>
       </div>
 
@@ -228,7 +247,7 @@ export function Landing({
         gridTemplateColumns: "repeat(auto-fit, minmax(230px, 1fr))",
         gap: 16, marginBottom: 28,
       }}>
-        {elements.map((d) => <ElementCard key={d.element} d={d} />)}
+        {elements.map((d) => <ElementCard key={d.element} d={d} th={th} />)}
       </div>
 
       {/* ── Secondary tools ──────────────────────────────────────────── */}
@@ -236,7 +255,7 @@ export function Landing({
         display: "flex", alignItems: "center", justifyContent: "center", gap: 10, flexWrap: "wrap",
       }}>
         <span style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", letterSpacing: "1px", textTransform: "uppercase" }}>
-          Tools
+          {th ? "เครื่องมือ" : "Tools"}
         </span>
         <Link href="/backtest" style={{
           fontSize: 12, textDecoration: "none", padding: "7px 14px", borderRadius: 9,
@@ -245,13 +264,15 @@ export function Landing({
         }}>
           📊 Backtest
         </Link>
-        <Link href="/journal" style={{
-          fontSize: 12, textDecoration: "none", padding: "7px 14px", borderRadius: 9,
-          background: "var(--card)", border: "1px solid var(--border)", color: "#f59e0b",
-          fontFamily: "var(--font-mono, monospace)", fontWeight: 700,
-        }}>
-          📒 Journal
-        </Link>
+        {isLocal && (
+          <Link href="/journal" style={{
+            fontSize: 12, textDecoration: "none", padding: "7px 14px", borderRadius: 9,
+            background: "var(--card)", border: "1px solid var(--border)", color: "#f59e0b",
+            fontFamily: "var(--font-mono, monospace)", fontWeight: 700,
+          }}>
+            📒 Journal
+          </Link>
+        )}
       </div>
 
     </div>

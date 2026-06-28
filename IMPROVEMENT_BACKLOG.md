@@ -104,6 +104,16 @@ Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open N
 **ไฟล์:** `web/app/page.tsx` (landing — ปลดล็อก Earth tile จาก ghost→active) · `web/app/layout.tsx` (nav เพิ่ม tab ธาตุ 4) · แล้วแต่ทางเลือก: `web/app/journal/*` | หน้า `/macro` ใหม่ + `web/lib` อ่าน market-timing | `web/app/backtest/*`
 **เป้า:** 4 ธาตุครบ — landing มี 4 element card ที่กดเข้าได้จริงทั้งหมด, เอา ghost "coming soon" ออก · สี Earth = อำพัน-บรอนซ์/โอลีฟ (เลี่ยงชนเขียวของ Air)
 
+## 13. i18n เฟสถัดไป — panel/tool ที่ยังไม่ผูก global EN/TH
+
+**ปัญหา:** ทำ global LanguageContext + toggle EN/TH (default EN, persist localStorage `srw-lang`) แล้ว และผูกครบ: Header/nav, Landing, DCA (page+card), Turbo (page+card), Catalyst hero/stats/badges, report page + simulator. **แต่ยังเหลือ component ที่มี string ไทย/อังกฤษ baked อยู่และยังไม่อ่าน `useLang()`** → พอสลับภาษา ส่วนพวกนี้ไม่เปลี่ยน
+**ทำ:** เติม `const { lang } = useLang(); const th = lang === "th";` + ternary ในแต่ละตัว (ทุกตัวอยู่ใต้ `LanguageProvider` แล้ว เรียก hook ได้เลย):
+  - `web/app/FactorRiskPanel.tsx` · `web/app/MarketTimingPanel.tsx` · `web/app/RankingChangeTable.tsx` · `web/app/CatalystCalendar.tsx` · `web/app/ThemeGroups.tsx` · `web/app/StockCard.tsx`
+  - Tools: `web/app/backtest/BacktestContent.tsx` · `web/app/journal/JournalContent.tsx`
+  - การ์ด Turbo บางจุด (TurboBar "Price → Moon") + DcaCard quality labels (Moat/Margin/FCF/Balance) ถ้าอยากแปลด้วย
+**ไฟล์:** ตามรายการบน · pattern อ้างอิงจาก `web/app/Landing.tsx` / `web/app/dca/DcaContent.tsx`
+**เป้า:** สลับ EN/TH แล้วทั้งเว็บเปลี่ยนครบ 100% ไม่เหลือ string ค้างภาษาเดียว
+
 ---
 
 ## ยังไม่เลือกทำ (ไว้พิจารณาทีหลัง)

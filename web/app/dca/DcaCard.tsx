@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { StockReport } from "@/lib/types";
 import { marketCapTier } from "@/lib/market-cap";
+import { useLang } from "@/lib/LanguageContext";
 
 // ── Ice score ring — calm counterpart to the turbo flame ring ────────────────
 function IceRing({ score }: { score: number }) {
@@ -46,13 +47,13 @@ function IceRing({ score }: { score: number }) {
 }
 
 const ZONE = {
-  cheap:     { color: "#10b981", label: "ถูกกว่า fair · สะสมได้" },
-  fair:      { color: "#38bdf8", label: "ใกล้ fair · ทยอยเข้า" },
-  expensive: { color: "#f59e0b", label: "แพงกว่า fair · รอย่อ" },
+  cheap:     { color: "#10b981", labelTh: "ถูกกว่า fair · สะสมได้", labelEn: "below fair · accumulate" },
+  fair:      { color: "#38bdf8", labelTh: "ใกล้ fair · ทยอยเข้า",   labelEn: "near fair · scale in" },
+  expensive: { color: "#f59e0b", labelTh: "แพงกว่า fair · รอย่อ",   labelEn: "above fair · wait for dip" },
 } as const;
 
 // ── Valuation gauge — replaces catalyst countdown ────────────────────────────
-function ValuationGauge({ report }: { report: StockReport }) {
+function ValuationGauge({ report, th }: { report: StockReport; th: boolean }) {
   const vb = report.valuationBand;
   if (!vb) return null;
   const zone = ZONE[vb.zone] ?? ZONE.fair;
@@ -66,7 +67,7 @@ function ValuationGauge({ report }: { report: StockReport }) {
           fontSize: 9, color: "#4a6b78", textTransform: "uppercase",
           letterSpacing: "1px", fontFamily: "var(--font-mono, monospace)",
         }}>
-          Valuation vs Fair
+          {th ? "มูลค่า vs Fair" : "Valuation vs Fair"}
         </span>
         <span style={{
           fontSize: 10, fontWeight: 800, color: zone.color,
@@ -98,7 +99,7 @@ function ValuationGauge({ report }: { report: StockReport }) {
         <span style={{ fontSize: 8, color: "#f59e0b", fontFamily: "var(--font-mono, monospace)" }}>rich</span>
       </div>
       <div style={{ fontSize: 10, color: zone.color, marginTop: 6, fontWeight: 700 }}>
-        {zone.label}
+        {th ? zone.labelTh : zone.labelEn}
       </div>
     </div>
   );
@@ -154,6 +155,8 @@ function RankBadge({ rank }: { rank: number }) {
 }
 
 export function DcaCard({ report, rank }: { report: StockReport; rank: number }) {
+  const { lang } = useLang();
+  const th = lang === "th";
   const isPositive = report.priceChange >= 0;
   const cap = marketCapTier(report.marketCap);
   const score = report.dcaScore ?? report.score ?? 0;
@@ -266,7 +269,7 @@ export function DcaCard({ report, rank }: { report: StockReport; rank: number })
             </span>
             {weight && (
               <span style={{ fontSize: 10, fontWeight: 700, color: "#2dd4bf", fontFamily: "var(--font-mono, monospace)" }}>
-                🎯 {weight} of port
+                🎯 {weight} {th ? "ของพอร์ต" : "of port"}
               </span>
             )}
             {cadence && (
@@ -289,7 +292,7 @@ export function DcaCard({ report, rank }: { report: StockReport; rank: number })
         <QualityBars report={report} />
 
         {/* Row 6: valuation gauge */}
-        <ValuationGauge report={report} />
+        <ValuationGauge report={report} th={th} />
       </div>
     </Link>
   );

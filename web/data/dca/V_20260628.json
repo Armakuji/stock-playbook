@@ -1,0 +1,122 @@
+{
+  "ticker": "V",
+  "companyName": "Visa Inc.",
+  "companyDescription": "Payments network · toll-booth — Global card rails taking a tiny cut of trillions in spend. ~65% operating margins, asset-light, recession-resilient.",
+  "exchange": "NYSE",
+  "generatedAt": "2026-06-28T00:00:00.000Z",
+  "price": 336.23,
+  "priceChange": 1.73,
+  "priceNote": "fwd P/E ~22 — ใกล้ fair แต่เป็น compounder นิ่งสุดของลิสต์",
+  "marketCap": "$640B",
+  "sector": "Financials / Payments",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 90,
+  "dcaScore": 90,
+  "factorTags": ["mega_cap_quality", "payments", "consumer_spend"],
+  "summary": "Visa is the ultimate toll-booth: an asset-light payments duopoly clipping a small fee on global spend with ~65% operating margins and steady double-digit EPS growth. It is the lowest-volatility, best-diversifier in the list — valuation sits near fair (~22x forward) rather than cheap, so it scores just behind the discounted tech names but is a superb steady-DCA anchor.",
+  "catalysts": [
+    {
+      "icon": "🧱",
+      "name": "Secular cash-to-card + cross-border",
+      "description": "Ongoing shift from cash to digital payments and cross-border travel recovery compound volumes for years — structural, not event-driven.",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Regulatory pressure on interchange / network fees",
+    "Fintech & real-time-payment / stablecoin disintermediation risk",
+    "Consumer-spending slowdown in a recession"
+  ],
+  "estimateDates": [
+    { "event": "Earnings FQ3", "dateRange": "late Jul 2026", "note": "Payments volume + cross-border read", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -18, "price": 276 },
+    { "label": "Base", "color": "yellow", "pct": 10, "price": 370 },
+    { "label": "Bull", "color": "green", "pct": 18, "price": 396 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus average", "target": 391, "rating": "Buy" },
+    { "firm": "1-yr target estimate", "target": 399, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Asset-light, cash-generative model is largely rate-agnostic.",
+    "inflationNote": "Inflation can lift nominal payment volumes — a mild tailwind to fees.",
+    "sectorImpact": "Tied to consumer spend more than rates; resilient through most cycles.",
+    "summary": "Low Fed sensitivity and recession-resilient revenue — the steadiest core holding in the list."
+  },
+  "valuationBand": {
+    "fairLow": 350,
+    "fairBase": 370,
+    "fairHigh": 395,
+    "currentVsFair": -9,
+    "zone": "fair",
+    "basis": "fwd P/E ~22 vs quality/growth; consensus average target ~$391, 1-yr est ~$399"
+  },
+  "qualityScore": {
+    "moat": 5,
+    "marginTrend": 5,
+    "fcf": 5,
+    "balanceSheet": 4.5,
+    "composite": 4.9,
+    "note": "Network-effect duopoly, ~65% operating margin, asset-light gusher of FCF; modest leverage from buybacks."
+  },
+  "dcaPlan": {
+    "cadence": "Monthly",
+    "targetWeight": "8–12%",
+    "bands": [
+      { "label": "Accumulate", "low": 300, "high": 350, "action": "accumulate", "note": "below fair — add full lot" },
+      { "label": "Hold", "low": 350, "high": 375, "action": "hold", "note": "near fair — keep cadence" },
+      { "label": "Wait", "low": 375, "high": 9999, "action": "wait", "note": "above fair — pause adds" }
+    ],
+    "note": "DCA monthly; the diversifier and volatility-dampener of the basket — reliable through cycles."
+  },
+  "technicalNote": { "above200dma": true, "note": "Above a rising 200-DMA in mid-2026 — low-volatility uptrend; steady accumulation works." },
+  "thesisBreak": [
+    "Regulatory cap that structurally compresses network take-rate",
+    "Real-time payments / stablecoin rails materially disintermediate card volume",
+    "Sustained operating-margin decline below ~55%"
+  ],
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 336, "note": "DCA now — near fair", "timing": "Now" },
+      { "label": "Entry 2", "level": 310, "rangeMax": 325, "note": "Add zone on pullback", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 280, "note": "Spend-recession fear", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 370, "pct": 10.0, "note": "Fair value base case" },
+    "tp2": { "price": 396, "pct": 17.8, "note": "Bull case" },
+    "tp3": { "price": 430, "pct": 27.9, "note": "Multi-year compounding" },
+    "stopLoss": {
+      "tight": 310, "tightPct": -8, "tightNote": "Accumulate-band floor (add, don't sell)",
+      "hard": 276, "hardPct": -18, "hardNote": "Re-underwrite only if thesis breaks",
+      "riskReward": "n/a (DCA)", "rrNote": "DCA exits on thesis-break, not a daily stop", "rrWarning": "Lowest-volatility core"
+    },
+    "verdict": "The steady diversifier — toll-booth quality near fair value. DCA monthly, add on spend-fear dips.",
+    "approach": "DCA"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/v/forecast/",
+    "https://www.marketbeat.com/stocks/NYSE/V/forecast/",
+    "https://www.tipranks.com/stocks/v/forecast"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Visa คือ toll-booth ที่สุด: ดูโอโพลีระบบจ่ายเงินแบบ asset-light เก็บค่าธรรมเนียมนิดเดียวจากการใช้จ่ายทั่วโลก มาร์จิ้นดำเนินงาน ~65% และ EPS โตสองหลักสม่ำเสมอ. เป็นตัวนิ่งสุด/กระจายความเสี่ยงดีสุดในลิสต์ — valuation ใกล้ fair (~22 เท่า) ไม่ถูกเท่ากลุ่ม tech ที่ลดราคา เลยได้คะแนนรองลงมา แต่เป็น anchor DCA ที่ยอดเยี่ยม.",
+      "priceNote": "fwd P/E ~22 — ใกล้ fair แต่เป็น compounder นิ่งสุดของลิสต์",
+      "scoreLabel": "Core Holding",
+      "risks": [
+        "แรงกดดันกฎเกณฑ์ค่าธรรมเนียม interchange/network",
+        "ความเสี่ยง fintech / real-time payment / stablecoin แย่งวงจร",
+        "การใช้จ่ายผู้บริโภคชะลอช่วงเศรษฐกิจถดถอย"
+      ],
+      "macroRisk": {
+        "summary": "ไวต่อ Fed ต่ำ + รายได้ทนเศรษฐกิจถดถอย — core holding นิ่งที่สุดในลิสต์"
+      },
+      "entryStrategy": {
+        "verdict": "ตัวกระจายความเสี่ยงที่นิ่ง — คุณภาพ toll-booth ใกล้ fair DCA รายเดือน เติมตอนกลัวการใช้จ่ายหด"
+      }
+    }
+  }
+}

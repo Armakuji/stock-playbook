@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
 import type { StockReport } from "@/lib/types";
+import { useLang } from "@/lib/LanguageContext";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -833,7 +834,7 @@ function EVBlock({ ev, lang }: { ev: EV; lang: Lang }) {
 // ─── Main Export ──────────────────────────────────────────────────────────────
 
 export function SimulatorContent({ report }: { report: StockReport }) {
-  const [lang, setLang] = useState<Lang>("en");
+  const { lang } = useLang();
   const th = lang === "th";
 
   // ── Pre-fill from report ──────────────────────────────────────────────────
@@ -1000,20 +1001,6 @@ export function SimulatorContent({ report }: { report: StockReport }) {
         <Link href={`/report/${report.ticker.toLowerCase()}`} style={{ fontSize: 13, color: "var(--muted)", textDecoration: "none" }}>
           ← {report.ticker} Report
         </Link>
-        <div style={{ display: "flex", gap: 6, alignItems: "center" }}>
-          <div style={{ display: "flex", gap: 3, background: "#1a1a2e", borderRadius: 8, padding: 3 }}>
-            {(["en", "th"] as Lang[]).map((l) => (
-              <button key={l} onClick={() => setLang(l)} style={{
-                fontSize: 11, fontWeight: 800, padding: "4px 14px", borderRadius: 6, border: "none", cursor: "pointer",
-                background: lang === l ? "#3b82f6" : "transparent",
-                color: lang === l ? "#fff" : "var(--muted)",
-                transition: "background 0.15s, color 0.15s",
-                textTransform: "uppercase", letterSpacing: "1px",
-                fontFamily: "var(--font-mono, monospace)",
-              }}>{l}</button>
-            ))}
-          </div>
-        </div>
       </div>
 
       {/* ── Page hero ── */}

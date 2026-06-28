@@ -123,8 +123,18 @@ export function computeDcaScore(report: StockReport): DcaScoreResult {
   return { score, breakdown: b };
 }
 
-/** Attach the DCA score + breakdown (kept separate from the catalyst `score`). */
+/**
+ * Attach the DCA score + breakdown. Also mirrors them onto the generic
+ * `score` / `scoreBreakdown` fields so the shared report-detail UI
+ * ("How this score is built") renders the DCA derivation for DCA picks.
+ */
 export function withDcaScore<T extends StockReport>(report: T): T {
   const { score, breakdown } = computeDcaScore(report);
-  return { ...report, dcaScore: score, dcaScoreBreakdown: breakdown };
+  return {
+    ...report,
+    dcaScore: score,
+    dcaScoreBreakdown: breakdown,
+    score,
+    scoreBreakdown: breakdown,
+  };
 }

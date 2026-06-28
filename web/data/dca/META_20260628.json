@@ -1,0 +1,122 @@
+{
+  "ticker": "META",
+  "companyName": "Meta Platforms, Inc.",
+  "companyDescription": "Social + Ads · AI — Facebook/Instagram/WhatsApp ad engine with 3B+ daily users + Llama AI. Huge margins, deep ad-targeting moat.",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-28T00:00:00.000Z",
+  "price": 542.87,
+  "priceChange": -1.99,
+  "priceNote": "fwd P/E ~20 — โตสองหลักแต่เทรดราคาหุ้นคุณค่า",
+  "marketCap": "$1.4T",
+  "sector": "Communication Services / Internet",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 97,
+  "dcaScore": 97,
+  "factorTags": ["ai_semi", "mega_cap_quality", "ad_cycle"],
+  "summary": "Meta pairs an elite ad-targeting moat and best-in-class margins with a forward P/E (~20) that looks cheap versus its growth. Reels/AI monetization and disciplined cost control drive durable FCF — a high-conviction quality-core compounder at a reasonable price.",
+  "catalysts": [
+    {
+      "icon": "🧱",
+      "name": "AI-driven ad monetization",
+      "description": "Llama-powered ranking + Reels/Business Messaging lift ad pricing and engagement — a multi-year monetization ramp, not a single date.",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Reality Labs losses remain a large cash drain",
+    "Ad demand is cyclical — a recession dents revenue",
+    "Regulatory / privacy and AI-capex intensity"
+  ],
+  "estimateDates": [
+    { "event": "Earnings Q2", "dateRange": "late Jul 2026", "note": "Ad pricing + capex guide", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -22, "price": 425 },
+    { "label": "Base", "color": "yellow", "pct": 27, "price": 690 },
+    { "label": "Bull", "color": "green", "pct": 40, "price": 760 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus median (66 analysts)", "target": 825, "rating": "Buy" },
+    { "firm": "24/7 Wall St", "target": 801, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Strong FCF and net-cash position limit rate sensitivity.",
+    "inflationNote": "Ad auction pricing power offsets cost inflation.",
+    "sectorImpact": "Ad cycle is the bigger swing factor than rates for Meta.",
+    "summary": "Low direct Fed sensitivity; the real cyclical lever is ad demand — manageable for a long-term holder."
+  },
+  "valuationBand": {
+    "fairLow": 620,
+    "fairBase": 690,
+    "fairHigh": 760,
+    "currentVsFair": -21,
+    "zone": "cheap",
+    "basis": "fwd P/E ~20 vs double-digit growth; consensus median target $825 implies ~47% upside"
+  },
+  "qualityScore": {
+    "moat": 5,
+    "marginTrend": 5,
+    "fcf": 4.5,
+    "balanceSheet": 5,
+    "composite": 4.9,
+    "note": "3B+ DAU network effect, ~40% op margins, net cash; FCF dinged only by heavy AI capex."
+  },
+  "dcaPlan": {
+    "cadence": "Monthly",
+    "targetWeight": "8–12%",
+    "bands": [
+      { "label": "Accumulate", "low": 460, "high": 600, "action": "accumulate", "note": "below fair — add full lot" },
+      { "label": "Hold", "low": 600, "high": 700, "action": "hold", "note": "near fair — keep cadence" },
+      { "label": "Wait", "low": 700, "high": 9999, "action": "wait", "note": "above fair — pause adds" }
+    ],
+    "note": "DCA monthly; add hard on ad-cycle or capex-fear dips into the Accumulate band."
+  },
+  "technicalNote": { "above200dma": true, "note": "Above a rising 200-DMA in mid-2026 — trend intact; pullbacks are accumulation opportunities." },
+  "thesisBreak": [
+    "Sustained ad-revenue share loss or engagement decline across the family of apps",
+    "Reality Labs / AI capex runs structurally ahead of monetization with no path to returns",
+    "Operating margin falls below ~30% for multiple quarters"
+  ],
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 543, "note": "DCA now — below fair", "timing": "Now" },
+      { "label": "Entry 2", "level": 480, "rangeMax": 520, "note": "Add zone on pullback", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 430, "note": "Ad-recession fear", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 690, "pct": 27.1, "note": "Fair value base case" },
+    "tp2": { "price": 760, "pct": 40.0, "note": "Bull case" },
+    "tp3": { "price": 825, "pct": 52.0, "note": "Consensus 12-mo median" },
+    "stopLoss": {
+      "tight": 480, "tightPct": -12, "tightNote": "Accumulate-band floor (add, don't sell)",
+      "hard": 425, "hardPct": -22, "hardNote": "Re-underwrite only if thesis breaks",
+      "riskReward": "n/a (DCA)", "rrNote": "DCA exits on thesis-break, not a daily stop", "rrWarning": "Core hold"
+    },
+    "verdict": "Elite margins + moat at ~20x forward — accumulate monthly, lean in on ad-cycle fear.",
+    "approach": "DCA"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/meta/forecast/",
+    "https://www.marketbeat.com/stocks/NASDAQ/META/forecast/",
+    "https://247wallst.com/investing/2026/06/26/meta-stock-price-prediction-the-case-for-nearly-50-upside/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Meta จับคู่ moat การยิงโฆษณาระดับเทพ + มาร์จิ้นสูงสุดในกลุ่ม กับ fwd P/E ~20 ที่ดูถูกเมื่อเทียบการเติบโต. Reels/AI monetization + คุมต้นทุนเข้ม ดัน FCF ทนทาน — compounder คุณภาพราคาเหมาะ conviction สูง.",
+      "priceNote": "fwd P/E ~20 — โตสองหลักแต่ราคายังเหมือนหุ้นคุณค่า",
+      "scoreLabel": "Core Holding",
+      "risks": [
+        "ขาดทุน Reality Labs ยังเผาเงินสดเยอะ",
+        "ดีมานด์โฆษณาเป็น cyclical — เศรษฐกิจถดถอยกระทบรายได้",
+        "กฎหมาย/ความเป็นส่วนตัว + AI capex หนัก"
+      ],
+      "macroRisk": {
+        "summary": "ไวต่อ Fed ต่ำ ตัวแปรจริงคือวงจรโฆษณา — จัดการได้สำหรับคนถือยาว"
+      },
+      "entryStrategy": {
+        "verdict": "มาร์จิ้น+moat ระดับเทพที่ ~20 เท่า — DCA รายเดือน เติมหนักตอนตลาดกลัววงจรโฆษณา"
+      }
+    }
+  }
+}

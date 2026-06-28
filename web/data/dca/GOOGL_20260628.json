@@ -1,0 +1,122 @@
+{
+  "ticker": "GOOGL",
+  "companyName": "Alphabet Inc.",
+  "companyDescription": "Search · Cloud · AI — Google Search/YouTube cash engine + Gemini/TPU + fast-growing Google Cloud. Wide-moat data & distribution flywheel.",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-28T00:00:00.000Z",
+  "price": 337.39,
+  "priceChange": -1.84,
+  "priceNote": "fwd P/E ~24 — ถูกกว่า quality peers ทั้งที่ Cloud + AI โตเร่ง",
+  "marketCap": "$4.1T",
+  "sector": "Communication Services / Internet",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 97,
+  "dcaScore": 97,
+  "factorTags": ["ai_semi", "mega_cap_quality"],
+  "summary": "Alphabet is the highest-scoring quality-core DCA pick: a wide-moat cash machine (Search + YouTube) re-rating on Cloud and Gemini/TPU momentum, yet still trading at a forward P/E (~24) below its own history and below peer quality. Best combination of durable moat + reasonable valuation in the screen.",
+  "catalysts": [
+    {
+      "icon": "🧱",
+      "name": "Cloud margin expansion + AI compute",
+      "description": "Google Cloud profitability and AI product traction (Gemini, custom TPUs) are the multi-year compounding drivers — not a single-date event.",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Antitrust / regulatory overhang (search remedies, ad-tech case)",
+    "AI capex cycle pressures near-term free cash flow",
+    "Search disruption risk from AI chat competitors"
+  ],
+  "estimateDates": [
+    { "event": "Earnings Q2", "dateRange": "late Jul 2026", "note": "Cloud growth + margin read", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -20, "price": 270 },
+    { "label": "Base", "color": "yellow", "pct": 20, "price": 405 },
+    { "label": "Bull", "color": "green", "pct": 33, "price": 450 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus median (68 analysts)", "target": 430, "rating": "Buy" },
+    { "firm": "Simply Wall St (raised)", "target": 493, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Net-cash balance sheet + huge FCF make Alphabet resilient to rate moves.",
+    "inflationNote": "Ad pricing power and cost discipline offset input inflation.",
+    "sectorImpact": "Long-duration growth, but cash generation today cushions multiple compression.",
+    "summary": "Low Fed sensitivity for a mega-cap with fortress cash flow — a core holding can ride rate cycles."
+  },
+  "valuationBand": {
+    "fairLow": 370,
+    "fairBase": 405,
+    "fairHigh": 440,
+    "currentVsFair": -17,
+    "zone": "cheap",
+    "basis": "fwd P/E ~24 vs Alphabet's own ~30x history + consensus median target $430; fair-value studies $377–432"
+  },
+  "qualityScore": {
+    "moat": 5,
+    "marginTrend": 5,
+    "fcf": 5,
+    "balanceSheet": 5,
+    "composite": 5,
+    "note": "Search/YouTube distribution moat, expanding op margins, massive FCF, net cash."
+  },
+  "dcaPlan": {
+    "cadence": "Monthly",
+    "targetWeight": "10–15%",
+    "bands": [
+      { "label": "Accumulate", "low": 300, "high": 360, "action": "accumulate", "note": "below fair — add full lot" },
+      { "label": "Hold", "low": 360, "high": 410, "action": "hold", "note": "near fair — keep cadence" },
+      { "label": "Wait", "low": 410, "high": 999, "action": "wait", "note": "above fair — pause adds" }
+    ],
+    "note": "DCA monthly; double the lot on 8%+ dips into the Accumulate band."
+  },
+  "technicalNote": { "above200dma": true, "note": "Trades above a rising 200-DMA in mid-2026 — uptrend intact; entries fine on any pullback." },
+  "thesisBreak": [
+    "Structural Search query/share loss to AI competitors for 2+ quarters",
+    "Adverse antitrust remedy that forces material divestiture or changes default-search economics",
+    "Operating margin erosion as AI capex outruns monetization"
+  ],
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 337, "note": "DCA now — below fair", "timing": "Now" },
+      { "label": "Entry 2", "level": 300, "rangeMax": 320, "note": "Add zone on pullback", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 275, "note": "Deep value / fear", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 405, "pct": 20.0, "note": "Fair value base case" },
+    "tp2": { "price": 450, "pct": 33.4, "note": "Bull case re-rate" },
+    "tp3": { "price": 515, "pct": 52.6, "note": "Multi-year compounding (Street high)" },
+    "stopLoss": {
+      "tight": 300, "tightPct": -11, "tightNote": "Accumulate-band floor (add, don't sell)",
+      "hard": 270, "hardPct": -20, "hardNote": "Re-underwrite only if thesis breaks",
+      "riskReward": "n/a (DCA)", "rrNote": "DCA exits on thesis-break, not a daily stop", "rrWarning": "Core hold"
+    },
+    "verdict": "Top quality-core pick — wide moat at a fair price. DCA monthly, add hard on dips.",
+    "approach": "DCA"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/googl/forecast/",
+    "https://www.marketbeat.com/stocks/NASDAQ/GOOGL/forecast/",
+    "https://simplywall.st/stocks/us/media/nasdaq-googl/alphabet/valuation"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Alphabet ได้คะแนน DCA สูงสุดในรอบนี้ — เครื่องผลิตเงินสด moat กว้าง (Search + YouTube) กำลัง re-rate จาก Cloud และ Gemini/TPU แต่ยังเทรดที่ fwd P/E ~24 ต่ำกว่าค่าเฉลี่ยตัวเองและต่ำกว่า quality peer. ส่วนผสม moat + valuation ดีที่สุดในลิสต์.",
+      "priceNote": "fwd P/E ~24 — ถูกกว่ากลุ่ม quality ทั้งที่ Cloud + AI โตเร่ง",
+      "scoreLabel": "Core Holding",
+      "risks": [
+        "แรงกดดัน antitrust / กฎหมาย (search remedies, ad-tech)",
+        "วงจร AI capex กดดัน free cash flow ระยะสั้น",
+        "ความเสี่ยง Search ถูก AI chat แย่งส่วนแบ่ง"
+      ],
+      "macroRisk": {
+        "summary": "ความไวต่อ Fed ต่ำ — เงินสดล้นมือ ถือยาวผ่านวงจรดอกเบี้ยได้สบาย"
+      },
+      "entryStrategy": {
+        "verdict": "ตัว core คุณภาพอันดับ 1 — moat กว้างในราคาเหมาะ DCA รายเดือน ย่อแรงเติมหนัก"
+      }
+    }
+  }
+}
