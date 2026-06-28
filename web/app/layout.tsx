@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Bricolage_Grotesque, DM_Sans, JetBrains_Mono } from "next/font/google";
 import { getAllReports } from "@/lib/reports";
+import { Header } from "./Header";
 
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -96,30 +97,7 @@ export default function RootLayout({
           backgroundSize: "300% 100%",
           animation: "gradientShift 8s linear infinite",
         }} />
-        <header style={{ borderBottom: "1px solid var(--border)", backgroundColor: "var(--card)" }}>
-          <div style={{ maxWidth: 1200, margin: "0 auto", padding: "14px 16px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-            <a href="/" style={{ textDecoration: "none" }}>
-              <span style={{ fontSize: 20, fontWeight: 800, letterSpacing: "-0.5px", color: "var(--text)", fontFamily: "var(--font-display, sans-serif)" }}>
-                📡 Stock Radar Weekly
-              </span>
-            </a>
-            <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-              <a href="/backtest" style={{ fontSize: 11, color: "var(--muted)", textDecoration: "none", fontFamily: "var(--font-mono, monospace)", fontWeight: 700, letterSpacing: "0.3px" }}>
-                📊 Backtest
-              </a>
-              <a href="/turbo" style={{ fontSize: 11, textDecoration: "none", fontFamily: "var(--font-mono, monospace)", fontWeight: 700, letterSpacing: "0.3px", background: "linear-gradient(90deg, #ff6d00, #d500f9)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
-                🔥 Turbo
-              </a>
-              {isLocal && (
-                <a href="/journal" style={{ fontSize: 11, color: "#f59e0b", textDecoration: "none", fontFamily: "var(--font-mono, monospace)", fontWeight: 700, letterSpacing: "0.3px" }}>
-                  📒 Journal
-                </a>
-              )}
-              <span style={{ display: "inline-block", width: 7, height: 7, borderRadius: "50%", background: "#10b981", animation: "livePulse 2s ease-in-out infinite", flexShrink: 0 }} />
-              <span style={{ fontSize: 12, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>Updated {lastUpdated}</span>
-            </div>
-          </div>
-        </header>
+        <Header lastUpdated={lastUpdated} isLocal={isLocal} />
         <main style={{ flex: 1, maxWidth: 1200, width: "100%", margin: "0 auto", padding: "24px 16px" }}>
           {children}
         </main>

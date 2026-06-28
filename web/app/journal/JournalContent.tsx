@@ -928,7 +928,7 @@ export function JournalContent({ initialTrades, stats, reportOptions = [], price
       {/* Private badge + header */}
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 8, flexWrap: "wrap", gap: 10 }}>
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-          <Link href="/" style={{ fontSize: 13, color: "var(--muted)", textDecoration: "none" }}>← Dashboard</Link>
+          <Link href="/catalyst" style={{ fontSize: 13, color: "var(--muted)", textDecoration: "none" }}>← Catalyst</Link>
           <span style={{
             fontSize: 10, fontWeight: 800, padding: "3px 10px", borderRadius: 6,
             background: "#ef444418", color: "#ef4444", border: "1px solid #ef444430",

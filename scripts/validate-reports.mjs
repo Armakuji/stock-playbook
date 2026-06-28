@@ -12,21 +12,34 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const REPORTS_DIR = path.resolve(__dirname, "..", "web", "data", "reports");
+const DATA_ROOT = path.resolve(__dirname, "..", "web", "data");
+// All report buckets share the same sourcing guardrail.
+const DIRS = ["reports", "speculative", "dca"].map((d) => path.join(DATA_ROOT, d));
 
 const isUrl = (s) => typeof s === "string" && /^https?:\/\//.test(s);
 
 const argv = process.argv.slice(2);
-const files = (argv.length ? argv.map((a) => path.basename(a)) : fs.readdirSync(REPORTS_DIR))
-  .filter((f) => f.endsWith(".json"));
+const wanted = argv.map((a) => path.basename(a));
+
+// Build the work list: {dir, file} across every bucket that exists.
+const targets = [];
+for (const dir of DIRS) {
+  if (!fs.existsSync(dir)) continue;
+  for (const file of fs.readdirSync(dir)) {
+    if (!file.endsWith(".json")) continue;
+    if (wanted.length && !wanted.includes(file)) continue;
+    targets.push({ dir, file });
+  }
+}
 
 let hardFails = 0, warns = 0;
 const log = [];
 
-for (const f of files) {
+for (const { dir, file: f } of targets) {
+  const bucket = path.basename(dir);
   let r;
-  try { r = JSON.parse(fs.readFileSync(path.join(REPORTS_DIR, f), "utf-8")); }
-  catch { log.push(`❌ ${f}: invalid JSON`); hardFails++; continue; }
+  try { r = JSON.parse(fs.readFileSync(path.join(dir, f), "utf-8")); }
+  catch { log.push(`❌ ${bucket}/${f}: invalid JSON`); hardFails++; continue; }
 
   const errs = [], warnings = [];
   const sources = Array.isArray(r.sources) ? r.sources.filter(isUrl) : [];
@@ -53,13 +66,22 @@ for (const f of files) {
     }
   }
 
+  // DCA picks: valuation claim should cite a basis; thesis-break replaces stop loss
+  if (bucket === "dca") {
+    if (r.valuationBand && !r.valuationBand.basis)
+      warnings.push("valuationBand has no basis (fair-value claim w/o method/source)");
+    if (!Array.isArray(r.thesisBreak) || r.thesisBreak.length === 0)
+      warnings.push("no thesisBreak[] — a DCA pick should state what invalidates the long-term thesis");
+  }
+
   // rankChangeSource must carry a real url if present
   if (r.rankChangeSource && !isUrl(r.rankChangeSource.url))
     errs.push("rankChangeSource present but url missing/invalid");
 
-  if (errs.length) { hardFails += errs.length; log.push(`❌ ${f}\n   - ${errs.join("\n   - ")}`); }
-  if (warnings.length) { warns += warnings.length; log.push(`⚠️  ${f}\n   - ${warnings.join("\n   - ")}`); }
+  if (errs.length) { hardFails += errs.length; log.push(`❌ ${bucket}/${f}\n   - ${errs.join("\n   - ")}`); }
+  if (warnings.length) { warns += warnings.length; log.push(`⚠️  ${bucket}/${f}\n   - ${warnings.join("\n   - ")}`); }
 }
+const files = targets;
 
 if (log.length) console.log(log.join("\n"));
 console.log(`\nvalidate-reports: ${files.length} report(s) · ${hardFails} blocking · ${warns} warning(s)`);

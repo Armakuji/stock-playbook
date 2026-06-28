@@ -323,7 +323,7 @@ export function BacktestContent({ entries, stats, nearMisses, northStar }: { ent
     <div style={{ maxWidth: 1100, margin: "0 auto" }}>
       {/* Nav */}
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 20, flexWrap: "wrap", gap: 10 }}>
-        <Link href="/" style={{ fontSize: 13, color: "var(--muted)", textDecoration: "none" }}>← Dashboard</Link>
+        <Link href="/catalyst" style={{ fontSize: 13, color: "var(--muted)", textDecoration: "none" }}>← Catalyst</Link>
       </div>
 
       {/* Header */}
