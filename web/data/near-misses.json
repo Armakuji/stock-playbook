@@ -44,15 +44,15 @@
     {
       "date": "2026-06-26",
       "ticker": "ASTS",
-      "reason": "Disqualified: User already held position (SL hit Jun 25 @ $64.99, position closed). Thesis broken after Blue Origin explosion delayed key satellite launch catalyst. Barclays PT $60 below SL. Re-evaluate when Blue Origin timeline recovers.",
-      "priceAtScreen": 64.99,
-      "topAnalystTarget": null,
+      "reason": "Disqualified: Thesis broken after Blue Origin explosion delayed key satellite launch catalyst. Barclays PT $60 insufficient vs screen price. Re-evaluate when Blue Origin launch timeline recovers.",
+      "priceAtScreen": null,
+      "topAnalystTarget": 60,
       "impliedUpside": null
     },
     {
       "date": "2026-06-26",
       "ticker": "FLY",
-      "reason": "Disqualified: User already holds position (1 share @ $25.71, SL $16). Not added to dashboard to avoid double-counting existing exposure. Strong space play — analysts say SpaceX IPO selloff was unwarranted for FLY.",
+      "reason": "Disqualified: Excluded to avoid duplicate coverage with existing dashboard exposure. Strong space play — analysts say SpaceX IPO selloff was unwarranted; revisit on next dashboard run.",
       "priceAtScreen": null,
       "topAnalystTarget": null,
       "impliedUpside": 35

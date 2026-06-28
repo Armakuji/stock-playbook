@@ -220,6 +220,57 @@ export interface ComparableCase {
   note: string;
 }
 
+// ─── DCA / Quality-Core Mode ─────────────────────────────────────────────────
+// Optional fields used by the /dca page (quality long-term core holdings).
+// Interpreted by web/lib/dca-scoring.ts, rendered by DcaCard.
+// All optional → a normal catalyst/turbo report stays valid without them.
+
+/** Where price sits vs estimated fair value — drives the "ซื้อได้ตอนนี้" gauge */
+export interface ValuationBand {
+  fairLow: number;        // bottom of fair-value range
+  fairBase: number;       // central fair value estimate
+  fairHigh: number;       // top of fair-value range
+  /** % current price is above(+)/below(-) fairBase. e.g. -12 = 12% cheaper than fair */
+  currentVsFair: number;
+  zone: "cheap" | "fair" | "expensive";
+  /** basis, e.g. "DCF + 25x fwd P/E blend" — should trace to a source */
+  basis?: string;
+}
+
+/** One accumulation band on the DCA buy-zone bar */
+export interface DcaBand {
+  label: string;          // e.g. "Accumulate", "Hold", "Trim"
+  low: number;            // band lower price bound
+  high: number;           // band upper price bound
+  action: "accumulate" | "hold" | "wait";
+  note?: string;
+}
+
+/** The recurring-buy plan that replaces catalyst entry levels for DCA picks */
+export interface DcaPlan {
+  cadence: string;        // e.g. "Monthly", "Bi-weekly", "On 5%+ dips"
+  bands: DcaBand[];
+  targetWeight: string;   // intended weight in portfolio, e.g. "8–12%"
+  note?: string;
+}
+
+/** 0–5 quality sub-scores; composite is derived if omitted */
+export interface QualityScore {
+  moat: number;           // durability of competitive advantage
+  marginTrend: number;    // gross/operating margin stability or expansion
+  fcf: number;            // free-cash-flow strength
+  balanceSheet: number;   // debt / liquidity health
+  composite?: number;     // 0–5 average (derived in dca-scoring if omitted)
+  note?: string;
+}
+
+/** Light technical read for "is now a fine entry" — context, not a trade signal */
+export interface TechnicalNote {
+  above200dma?: boolean;
+  rsi?: number;
+  note?: string;          // e.g. "Above rising 200-DMA, RSI 54 — neutral"
+}
+
 // ─── Score breakdown ─────────────────────────────────────────────────────────
 // One line of the deterministic score derivation (see web/lib/scoring.ts).
 
@@ -263,6 +314,20 @@ export interface StockReport {
   earningsDate?: string;
   catalystSpot?: CatalystSpot;
   comparableCases?: ComparableCase[];
+  // ── DCA / quality-core fields (only populated for /dca picks) ──────────────
+  /** Fair-value band + where price sits — replaces catalyst countdown on DCA cards */
+  valuationBand?: ValuationBand;
+  /** Recurring accumulation plan — replaces entry levels for DCA */
+  dcaPlan?: DcaPlan;
+  /** 0–5 quality sub-scores driving the DCA score */
+  qualityScore?: QualityScore;
+  /** Conditions that invalidate the long-term thesis (DCA's "stop loss") */
+  thesisBreak?: string[];
+  /** Light technical context for entry timing */
+  technicalNote?: TechnicalNote;
+  /** Attached at load time by web/lib/dca-scoring.ts for the /dca page */
+  dcaScore?: number;
+  dcaScoreBreakdown?: ScoreComponent[];
   /** Optional news link explaining the latest rank/verdict change — stored in JSON at report time */
   rankChangeSource?: { headline: string; url: string; date: string };
   sources: string[];

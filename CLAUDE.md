@@ -22,6 +22,9 @@ Every analysis follows a strict research-first workflow before generating any ou
 - `/analyze <TICKER>` — full single-stock report → saves JSON to web + git push → Vercel deploys
 - `/preview <TICKER>` — full single-stock report → generates HTML only for local viewing · **no JSON save · no git push**
 - `/dashboard` — find 5 stocks with 30%+ upside (Tech/AI/Space/Semiconductors/Robotics first) → save JSON reports for each → **log runners-up to `web/data/near-misses.json`** (counterfactual) → **generate market timing and save to `web/data/market-timing.json`** → git push
+- `/analyze-turbo <TICKER>` — moonshot report (300%+ speculative) → saves JSON to `web/data/speculative/` → git push → visible at `/turbo` (uses `xvary-turbo-report` skill)
+- `/analyze-dca <TICKER>` — single quality-core report → saves JSON to `web/data/dca/` → git push → visible at `/dca` (uses `xvary-dca-report` skill)
+- `/dca-list` — find the **5 best quality-core holdings** (mega/large-cap quality, global) → save JSON to `web/data/dca/` for each → git push → visible at `/dca`. Ranked by quality + valuation (NOT catalyst). No market-timing step. (uses `xvary-dca-report` skill)
 - `/compare <TICKER1> <TICKER2>` — side-by-side comparison of two stocks
 - `/watchlist <TICKER1> <TICKER2> ...` — quick scorecard table for multiple tickers
 - `/macro` — standalone Fed/macro snapshot (FOMC, CPI, jobs, yield)
@@ -258,6 +261,30 @@ Confirm with one line:
 
 ---
 
+## CRITICAL: /dca-list and /analyze-dca — Save JSON to web/data/dca/
+
+DCA = **quality-core, long-term hold (3–5y)**. Logic is the OPPOSITE of catalyst: a good DCA
+pick needs NO catalyst — it's ranked by moat/quality + valuation, not event proximity. Full
+spec lives in the `xvary-dca-report` skill. Quick rules:
+
+1. **Research first** (per skill): price/cap, quality (moat/margin/FCF/balance → `qualityScore` 0–5),
+   fair value + where price sits (`valuationBand`, cite `basis`), 200-DMA/RSI (`technicalNote`),
+   thesis-break conditions (`thesisBreak[]` — this REPLACES stop loss), Fed/macro.
+2. **Save** to `web/data/dca/<TICKER>_<YYYYMMDD>.json` — NOT `reports/`, NOT `speculative/`.
+   Standard `StockReport` schema + DCA fields (`valuationBand`, `qualityScore`, `dcaPlan`,
+   `technicalNote`, `thesisBreak`). `verdict` = BUY/HOLD, `scoreLabel` = "Core Holding",
+   `approach` = "DCA". Skip `catalystSpot`.
+3. **Score is computed** by `web/lib/dca-scoring.ts` (quality 40 / valuation 25 / verdict 15 /
+   technical 10 / macro 10). Fill grounded fields accurately; don't hand-set `dcaScore`.
+4. **Validate + push:** `node scripts/validate-reports.mjs` (now covers `dca/` too) → 
+   `git add web/data/dca/` → commit → `git push origin main`. Visible at `/dca`.
+5. `/dca-list` returns the **5 best** only (token economy) → save all five → one push.
+   No market-timing step (that's a `/dashboard`-only construct).
+
+---
+
 ## File naming convention
 - JSON report: `web/data/reports/<TICKER>_<YYYYMMDD>.json`
+- Turbo report: `web/data/speculative/<TICKER>_<YYYYMMDD>.json`
+- DCA report: `web/data/dca/<TICKER>_<YYYYMMDD>.json`
 - If a report for the same ticker already exists for today, overwrite it.
