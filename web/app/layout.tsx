@@ -3,6 +3,7 @@ import "./globals.css";
 import { Bricolage_Grotesque, DM_Sans, JetBrains_Mono } from "next/font/google";
 import { getAllReports } from "@/lib/reports";
 import { Header } from "./Header";
+import { LanguageProvider } from "@/lib/LanguageContext";
 
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -97,15 +98,17 @@ export default function RootLayout({
           backgroundSize: "300% 100%",
           animation: "gradientShift 8s linear infinite",
         }} />
-        <Header lastUpdated={lastUpdated} isLocal={isLocal} />
-        <main style={{ flex: 1, maxWidth: 1200, width: "100%", margin: "0 auto", padding: "24px 16px" }}>
-          {children}
-        </main>
-        <footer style={{ borderTop: "1px solid var(--border)", padding: "16px 24px", textAlign: "center" }}>
-          <p style={{ fontSize: 12, color: "var(--muted)", margin: 0 }}>
-            Not financial advice · Auto-generated reports
-          </p>
-        </footer>
+        <LanguageProvider>
+          <Header lastUpdated={lastUpdated} isLocal={isLocal} />
+          <main style={{ flex: 1, maxWidth: 1200, width: "100%", margin: "0 auto", padding: "24px 16px" }}>
+            {children}
+          </main>
+          <footer style={{ borderTop: "1px solid var(--border)", padding: "16px 24px", textAlign: "center" }}>
+            <p style={{ fontSize: 12, color: "var(--muted)", margin: 0 }}>
+              Not financial advice · Auto-generated reports
+            </p>
+          </footer>
+        </LanguageProvider>
       </body>
     </html>
   );

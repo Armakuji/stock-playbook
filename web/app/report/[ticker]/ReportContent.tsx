@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { StockReport, Catalyst, EntryLevel, Scenario, EstimateDate, CatalystSpot, ComparableCase, ScoreComponent } from "@/lib/types";
 import { applyTranslation, Lang } from "@/lib/i18n";
+import { useLang } from "@/lib/LanguageContext";
 import { TimelinePoint } from "@/lib/timeline";
 import { StockTimeline } from "./StockTimeline";
 import { StalenessBanner } from "./StalenessBanner";
@@ -926,32 +927,6 @@ function MacroCard({ report, lang }: { report: StockReport; lang: Lang }) {
   );
 }
 
-// ─── Language Toggle ──────────────────────────────────────────────────────────
-
-function LangToggle({ lang, hasThai, onChange }: { lang: Lang; hasThai: boolean; onChange: (l: Lang) => void }) {
-  if (!hasThai) return null;
-  return (
-    <div style={{ display: "flex", gap: 4, background: "#1a1a2e", borderRadius: 8, padding: 3 }}>
-      {(["en", "th"] as Lang[]).map((l) => (
-        <button
-          key={l}
-          onClick={() => onChange(l)}
-          style={{
-            fontSize: 11, fontWeight: 800, padding: "4px 14px", borderRadius: 6, border: "none", cursor: "pointer",
-            background: lang === l ? "#3b82f6" : "transparent",
-            color: lang === l ? "#fff" : "var(--muted)",
-            transition: "background 0.15s, color 0.15s",
-            textTransform: "uppercase", letterSpacing: "1px",
-            fontFamily: "var(--font-mono, monospace)",
-          }}
-        >
-          {l}
-        </button>
-      ))}
-    </div>
-  );
-}
-
 // ─── Turbo theme constants ────────────────────────────────────────────────────
 
 const TURBO_COLORS = {
@@ -967,9 +942,8 @@ const TURBO_COLORS = {
 // ─── Main Export ──────────────────────────────────────────────────────────────
 
 export function ReportContent({ report: baseReport, timelinePoints = [], isTurbo = false }: { report: StockReport; timelinePoints?: TimelinePoint[]; isTurbo?: boolean }) {
-  const [lang, setLang] = useState<Lang>("en");
+  const { lang } = useLang();
   const report = applyTranslation(baseReport, lang);
-  const hasThai = !!baseReport.i18n?.th;
 
   // Turbo reports use fire accent instead of purple SPECULATIVE color
   const verdictColor = isTurbo ? TURBO_COLORS.primary : (VERDICT_COLORS[report.verdict] ?? "#64748b");
@@ -1022,7 +996,6 @@ export function ReportContent({ report: baseReport, timelinePoints = [], isTurbo
           >
             📐 Simulate Position
           </Link>
-          <LangToggle lang={lang} hasThai={hasThai} onChange={setLang} />
         </div>
       </div>
 

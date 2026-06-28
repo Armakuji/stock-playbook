@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { StockReport } from "@/lib/types";
 import { marketCapTier } from "@/lib/market-cap";
+import { useLang } from "@/lib/LanguageContext";
 
 // ── Flame ring — replaces green score ring ────────────────────────────────────
 function FlameRing({ moonPct }: { moonPct: number }) {
@@ -149,6 +150,8 @@ export function TurboCard({
   moonPct: number;
   bullPct: number;
 }) {
+  const { lang } = useLang();
+  const th = lang === "th";
   const isPositive = report.priceChange >= 0;
   const moonPrice = report.scenarios?.find((s) => s.label === "Moon")?.price
     ?? report.entryStrategy.tp3.price;
@@ -286,12 +289,12 @@ export function TurboCard({
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 6 }}>
           {[
             {
-              label: "Market Cap",
+              label: th ? "มาร์เก็ตแคป" : "Market Cap",
               value: report.marketCap ?? "—",
               color: "#ff6d00",
             },
             {
-              label: "Fed Risk",
+              label: th ? "ความเสี่ยง Fed" : "Fed Risk",
               value: report.macroRisk.fedRisk,
               color: report.macroRisk.fedRisk === "LOW"
                 ? "#10b981"
@@ -300,7 +303,7 @@ export function TurboCard({
                 : "#ef4444",
             },
             {
-              label: "Stop Loss",
+              label: th ? "จุดตัดขาดทุน" : "Stop Loss",
               value: report.entryStrategy.stopLoss.tight
                 ? `$${report.entryStrategy.stopLoss.tight}`
                 : "—",
