@@ -1,0 +1,121 @@
+{
+  "ticker": "MSFT",
+  "companyName": "Microsoft Corporation",
+  "companyDescription": "Cloud · Software · AI — Azure + Microsoft 365 + Copilot/OpenAI. Enterprise lock-in, recurring revenue, fortress balance sheet.",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-28T00:00:00.000Z",
+  "price": 372.73,
+  "priceChange": 0,
+  "priceNote": "fwd P/E ~22 — ต่ำกว่าค่าเฉลี่ย 5 ปี (~30x) อย่างมีนัย",
+  "marketCap": "$2.77T",
+  "sector": "Technology / Software",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 96,
+  "dcaScore": 96,
+  "factorTags": ["ai_semi", "mega_cap_quality", "enterprise_software"],
+  "summary": "Microsoft is the textbook quality-core compounder: Azure + recurring 365/Copilot revenue, ~70% gross margins, AAA-grade balance sheet and a dividend. Forward P/E has compressed to ~22 (well below its 5-year norm) while earnings growth stays strong — a rare chance to DCA a fortress at a reasonable multiple.",
+  "catalysts": [
+    {
+      "icon": "🧱",
+      "name": "Azure + Copilot monetization",
+      "description": "Cloud growth and AI seat monetization across the Microsoft stack compound over years — structural, not event-driven.",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Heavy AI/data-center capex pressures near-term margins & FCF",
+    "Azure growth deceleration vs lofty expectations",
+    "Big-tech antitrust / regulatory scrutiny"
+  ],
+  "estimateDates": [
+    { "event": "Earnings Q4 FY26", "dateRange": "late Jul 2026", "note": "Azure growth + capex read", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -19, "price": 302 },
+    { "label": "Base", "color": "yellow", "pct": 21, "price": 450 },
+    { "label": "Bull", "color": "green", "pct": 31, "price": 490 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus average (56 analysts)", "target": 561, "rating": "Strong Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "AAA balance sheet, dividend and huge FCF make MSFT highly rate-resilient.",
+    "inflationNote": "Recurring subscription pricing power offsets cost inflation.",
+    "sectorImpact": "Long-duration growth but cash-rich today — limited multiple-compression risk.",
+    "summary": "Among the lowest Fed sensitivities in mega-cap — a true all-weather core holding."
+  },
+  "valuationBand": {
+    "fairLow": 410,
+    "fairBase": 450,
+    "fairHigh": 490,
+    "currentVsFair": -17,
+    "zone": "cheap",
+    "basis": "fwd P/E ~22 vs ~30x 5-yr average; DCF + 27x FY27 EPS blend; consensus avg target $561"
+  },
+  "qualityScore": {
+    "moat": 5,
+    "marginTrend": 5,
+    "fcf": 5,
+    "balanceSheet": 5,
+    "composite": 5,
+    "note": "Enterprise lock-in, ~70% gross margin, prodigious FCF, AAA balance sheet + dividend."
+  },
+  "dcaPlan": {
+    "cadence": "Monthly",
+    "targetWeight": "10–15%",
+    "bands": [
+      { "label": "Accumulate", "low": 330, "high": 400, "action": "accumulate", "note": "below fair — add full lot" },
+      { "label": "Hold", "low": 400, "high": 455, "action": "hold", "note": "near fair — keep cadence" },
+      { "label": "Wait", "low": 455, "high": 9999, "action": "wait", "note": "above fair — pause adds" }
+    ],
+    "note": "DCA monthly; this is the lowest-volatility anchor of the list — size it largest."
+  },
+  "technicalNote": { "above200dma": true, "note": "Holding above a rising 200-DMA in mid-2026 — steady uptrend; any dip is a fine entry." },
+  "thesisBreak": [
+    "Azure growth structurally stalls / loses cloud share to AWS & Google",
+    "AI capex permanently impairs return on invested capital",
+    "Gross margin erodes below ~65% on a sustained basis"
+  ],
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 373, "note": "DCA now — below fair", "timing": "Now" },
+      { "label": "Entry 2", "level": 340, "rangeMax": 360, "note": "Add zone on pullback", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 310, "note": "Deep value", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 450, "pct": 20.7, "note": "Fair value base case" },
+    "tp2": { "price": 490, "pct": 31.5, "note": "Bull case" },
+    "tp3": { "price": 561, "pct": 50.5, "note": "Consensus average target" },
+    "stopLoss": {
+      "tight": 340, "tightPct": -9, "tightNote": "Accumulate-band floor (add, don't sell)",
+      "hard": 302, "hardPct": -19, "hardNote": "Re-underwrite only if thesis breaks",
+      "riskReward": "n/a (DCA)", "rrNote": "DCA exits on thesis-break, not a daily stop", "rrWarning": "Core hold"
+    },
+    "verdict": "The all-weather anchor — fortress quality at ~22x forward. Largest, steadiest DCA position.",
+    "approach": "DCA"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/msft/forecast/",
+    "https://www.marketbeat.com/stocks/NASDAQ/MSFT/forecast/",
+    "https://finance.yahoo.com/quote/MSFT/key-statistics/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Microsoft คือ compounder คุณภาพตำราเป๊ะ: Azure + รายได้ recurring 365/Copilot, มาร์จิ้นขั้นต้น ~70%, งบดุลระดับ AAA + ปันผล. fwd P/E หดเหลือ ~22 (ต่ำกว่าค่าเฉลี่ย 5 ปีมาก) ขณะกำไรยังโตแรง — โอกาสหายากที่จะ DCA ป้อมปราการในราคาเหมาะ.",
+      "priceNote": "fwd P/E ~22 — ต่ำกว่าค่าเฉลี่ย 5 ปี (~30x) ชัดเจน",
+      "scoreLabel": "Core Holding",
+      "risks": [
+        "AI/data-center capex หนัก กดมาร์จิ้น & FCF ระยะสั้น",
+        "การเติบโต Azure ชะลอเทียบความคาดหวังสูง",
+        "การกำกับ/antitrust ของ big tech"
+      ],
+      "macroRisk": {
+        "summary": "ไวต่อ Fed ต่ำสุดๆ ในกลุ่ม mega-cap — core holding all-weather ของจริง"
+      },
+      "entryStrategy": {
+        "verdict": "ตัวยึดพอร์ต all-weather — คุณภาพป้อมปราการที่ ~22 เท่า ตำแหน่ง DCA ใหญ่และนิ่งสุด"
+      }
+    }
+  }
+}

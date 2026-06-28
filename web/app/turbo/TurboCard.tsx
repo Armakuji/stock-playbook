@@ -33,7 +33,7 @@ function FlameRing({ moonPct }: { moonPct: number }) {
       <div style={{
         position: "absolute", inset: 0,
         display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center",
-        gap: 0,
+        gap: 3,
       }}>
         <span style={{
           fontSize: 9, fontWeight: 800, color: "#ff6d00",

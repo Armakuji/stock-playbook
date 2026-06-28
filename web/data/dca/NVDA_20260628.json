@@ -1,0 +1,122 @@
+{
+  "ticker": "NVDA",
+  "companyName": "NVIDIA Corporation",
+  "companyDescription": "AI GPUs · CUDA — Dominant data-center AI compute + CUDA software moat. The 'picks & shovels' of the AI build-out.",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-28T00:00:00.000Z",
+  "price": 192.53,
+  "priceChange": 0,
+  "priceNote": "fwd P/E ~19 — ต่ำผิดปกติเทียบการเติบโต หลังกำไรไล่ทันราคา",
+  "marketCap": "$4.66T",
+  "sector": "Technology / Semiconductors",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 93,
+  "dcaScore": 93,
+  "factorTags": ["ai_semi", "mega_cap_quality", "semis_cycle"],
+  "summary": "NVIDIA is the AI-compute monopoly with the CUDA software moat, ~70%+ gross margins and explosive FCF. After earnings caught up to the price, the forward P/E sits near ~19 — strikingly low for the growth — which the DCA model rewards. Slightly higher Fed/semis-cycle sensitivity keeps it just behind the mega-cap anchors, but it screens as a high-quality, attractively valued core add.",
+  "catalysts": [
+    {
+      "icon": "🧱",
+      "name": "Data-center AI compute cycle",
+      "description": "Successive GPU platform ramps + CUDA lock-in drive multi-year compute demand — structural build-out, not a single date.",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Semiconductor / AI-capex cyclicality — sharper drawdowns than peers",
+    "Customer concentration + custom-silicon (in-house ASIC) competition",
+    "Export controls / geopolitics on advanced chips"
+  ],
+  "estimateDates": [
+    { "event": "Earnings Q2 FY27", "dateRange": "late Aug 2026", "note": "Data-center revenue + margin read", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -28, "price": 139 },
+    { "label": "Base", "color": "yellow", "pct": 30, "price": 250 },
+    { "label": "Bull", "color": "green", "pct": 51, "price": 290 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus average (62 analysts, S&P Global)", "target": 299, "rating": "Strong Buy" },
+    { "firm": "Cantor Fitzgerald (Street high)", "target": 300, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Long-duration, high-beta growth — more rate- and risk-sentiment sensitive than software peers.",
+    "inflationNote": "Pricing power is strong, but the stock trades on liquidity/risk appetite.",
+    "sectorImpact": "Semis are cyclical; a capex pause hits NVDA harder and faster than the rest of the list.",
+    "summary": "Medium Fed sensitivity — quality is elite but expect deeper drawdowns; size accordingly within a DCA core."
+  },
+  "valuationBand": {
+    "fairLow": 220,
+    "fairBase": 250,
+    "fairHigh": 290,
+    "currentVsFair": -23,
+    "zone": "cheap",
+    "basis": "fwd P/E ~19 vs growth; consensus average target ~$299 (range $250–300)"
+  },
+  "qualityScore": {
+    "moat": 5,
+    "marginTrend": 5,
+    "fcf": 5,
+    "balanceSheet": 4.5,
+    "composite": 4.9,
+    "note": "CUDA + GPU dominance, ~70%+ gross margin, enormous FCF, net cash — only cyclicality dents the profile."
+  },
+  "dcaPlan": {
+    "cadence": "Monthly",
+    "targetWeight": "6–10%",
+    "bands": [
+      { "label": "Accumulate", "low": 150, "high": 200, "action": "accumulate", "note": "below fair — add lot" },
+      { "label": "Hold", "low": 200, "high": 255, "action": "hold", "note": "near fair — keep cadence" },
+      { "label": "Wait", "low": 255, "high": 9999, "action": "wait", "note": "above fair — pause adds" }
+    ],
+    "note": "DCA monthly but size smaller than the anchors — higher volatility; let cyclical dips do the work."
+  },
+  "technicalNote": { "above200dma": true, "note": "Above a rising 200-DMA in mid-2026, but high beta — expect larger swings around the trend." },
+  "thesisBreak": [
+    "CUDA moat erodes / hyperscalers shift decisively to in-house ASICs",
+    "Sustained gross-margin compression below ~60%",
+    "Structural data-center capex downturn rather than a pause"
+  ],
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 193, "note": "DCA now — below fair", "timing": "Now" },
+      { "label": "Entry 2", "level": 165, "rangeMax": 180, "note": "Add zone on pullback", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 140, "note": "Cyclical fear / reset", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 250, "pct": 29.8, "note": "Fair value base case" },
+    "tp2": { "price": 290, "pct": 50.6, "note": "Bull case" },
+    "tp3": { "price": 300, "pct": 55.8, "note": "Street-high target" },
+    "stopLoss": {
+      "tight": 165, "tightPct": -14, "tightNote": "Accumulate-band floor (add, don't sell)",
+      "hard": 139, "hardPct": -28, "hardNote": "Re-underwrite only if thesis breaks",
+      "riskReward": "n/a (DCA)", "rrNote": "DCA exits on thesis-break, not a daily stop", "rrWarning": "Higher volatility — smaller size"
+    },
+    "verdict": "Elite AI-compute monopoly at ~19x forward — DCA at a smaller weight; lean into cyclical dips.",
+    "approach": "DCA"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/nvda/forecast/",
+    "https://www.marketbeat.com/stocks/NASDAQ/NVDA/forecast/",
+    "https://public.com/stocks/nvda/forecast-price-target"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "NVIDIA คือผู้ผูกขาด AI compute ที่มี moat ซอฟต์แวร์ CUDA, มาร์จิ้นขั้นต้น ~70%+ และ FCF มหาศาล. หลังกำไรไล่ทันราคา fwd P/E เหลือ ~19 ซึ่งต่ำผิดปกติเทียบการเติบโต — DCA model ให้คะแนนสูง. ความไวต่อ Fed/วงจรเซมิสูงกว่าหน่อยเลยอยู่อันดับรองจากตัว anchor แต่ยังเป็น core คุณภาพราคาน่าสนใจ.",
+      "priceNote": "fwd P/E ~19 — ต่ำผิดปกติเทียบการเติบโต",
+      "scoreLabel": "Core Holding",
+      "risks": [
+        "วงจรเซมิ/AI-capex — ย่อแรงและเร็วกว่ากลุ่ม",
+        "ลูกค้ากระจุก + คู่แข่ง ASIC ภายในของ hyperscaler",
+        "export control / ภูมิรัฐศาสตร์ชิปขั้นสูง"
+      ],
+      "macroRisk": {
+        "summary": "ไวต่อ Fed ระดับกลาง — คุณภาพเทพแต่ย่อลึกกว่า ควรลดขนาดในพอร์ต DCA"
+      },
+      "entryStrategy": {
+        "verdict": "ผู้ผูกขาด AI compute ที่ ~19 เท่า — DCA น้ำหนักเล็กลง เติมตอนย่อตามวงจร"
+      }
+    }
+  }
+}

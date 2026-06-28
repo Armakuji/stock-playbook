@@ -939,14 +939,24 @@ const TURBO_COLORS = {
   deepBg:    "#13050a",
 };
 
+const DCA_COLORS = {
+  primary:   "#38bdf8",
+  secondary: "#7dd3fc",
+  accent:    "#2dd4bf",
+  card:      "#07111a",
+  border:    "#102530",
+  muted:     "#4a6b78",
+  deepBg:    "#0d1f29",
+};
+
 // ─── Main Export ──────────────────────────────────────────────────────────────
 
-export function ReportContent({ report: baseReport, timelinePoints = [], isTurbo = false }: { report: StockReport; timelinePoints?: TimelinePoint[]; isTurbo?: boolean }) {
+export function ReportContent({ report: baseReport, timelinePoints = [], isTurbo = false, isDca = false }: { report: StockReport; timelinePoints?: TimelinePoint[]; isTurbo?: boolean; isDca?: boolean }) {
   const { lang } = useLang();
   const report = applyTranslation(baseReport, lang);
 
-  // Turbo reports use fire accent instead of purple SPECULATIVE color
-  const verdictColor = isTurbo ? TURBO_COLORS.primary : (VERDICT_COLORS[report.verdict] ?? "#64748b");
+  // Per-source accent: turbo = fire, dca = ice-blue, else verdict color
+  const verdictColor = isTurbo ? TURBO_COLORS.primary : isDca ? DCA_COLORS.primary : (VERDICT_COLORS[report.verdict] ?? "#64748b");
   const isPositive = report.priceChange >= 0;
   const cap = marketCapTier(baseReport.marketCap);
   const th = lang === "th";
@@ -971,16 +981,34 @@ export function ReportContent({ report: baseReport, timelinePoints = [], isTurbo
         </>
       )}
 
-      <div className={isTurbo ? "turbo-report" : ""}>
+      {/* ── DCA ice theme override ── */}
+      {isDca && (
+        <>
+          <style>{`
+            .dca-report { --card: ${DCA_COLORS.card}; --border: ${DCA_COLORS.border}; --muted: ${DCA_COLORS.muted}; }
+            .dca-report .analyst-fill { background: linear-gradient(90deg, #2dd4bf, #38bdf8) !important; }
+          `}</style>
+          {/* Cool ambient layers */}
+          <div aria-hidden="true" style={{ position: "fixed", inset: 0, pointerEvents: "none", zIndex: -1, overflow: "hidden" }}>
+            <div style={{ position: "absolute", top: "-10%", left: "50%", transform: "translateX(-50%)", width: "min(900px, 130vw)", height: 600, background: "radial-gradient(ellipse at center, rgba(56,189,248,0.06) 0%, transparent 65%)" }} />
+            <div style={{ position: "absolute", bottom: "-10%", right: "-5%", width: 600, height: 500, background: "radial-gradient(ellipse at center, rgba(45,212,191,0.045) 0%, transparent 65%)" }} />
+            <div style={{ position: "absolute", top: "40%", left: "-8%", width: 400, height: 400, background: "radial-gradient(ellipse at center, rgba(16,185,129,0.035) 0%, transparent 65%)" }} />
+          </div>
+          {/* Ice gradient top bar */}
+          <div style={{ height: 3, borderRadius: 2, marginBottom: 16, background: "linear-gradient(90deg, #2dd4bf, #38bdf8, #7dd3fc)", backgroundSize: "200% 100%", animation: "gradientShift 4s linear infinite" }} />
+        </>
+      )}
+
+      <div className={isTurbo ? "turbo-report" : isDca ? "dca-report" : ""}>
       <StickySummaryBar report={report} verdictColor={verdictColor} />
 
       {/* Nav row */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 20, flexWrap: "wrap", gap: 10 }}>
         <Link
-          href={isTurbo ? "/turbo" : "/"}
-          style={{ fontSize: 13, color: isTurbo ? TURBO_COLORS.secondary : "var(--muted)", textDecoration: "none", display: "flex", alignItems: "center", gap: 6 }}
+          href={isTurbo ? "/turbo" : isDca ? "/dca" : "/catalyst"}
+          style={{ fontSize: 13, color: isTurbo ? TURBO_COLORS.secondary : isDca ? DCA_COLORS.secondary : "var(--muted)", textDecoration: "none", display: "flex", alignItems: "center", gap: 6 }}
         >
-          {isTurbo ? "← 🔥 Turbo" : "← All Reports"}
+          {isTurbo ? "← 🔥 Turbo" : isDca ? "← 💧 DCA" : "← ⚡ Catalyst"}
         </Link>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
           <Link
