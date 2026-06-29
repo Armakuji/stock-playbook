@@ -1,0 +1,110 @@
+{
+  "ticker": "VTI",
+  "companyName": "Vanguard Total Stock Market ETF",
+  "companyDescription": "Whole US market in one fund — ~3,600 large/mid/small caps. 0.03% cost, maximum diversification. The default DCA core.",
+  "exchange": "NYSE Arca",
+  "generatedAt": "2026-06-28T00:00:00.000Z",
+  "price": 362.70,
+  "priceChange": 0,
+  "priceNote": "กระจายสุด ~3,600 ตัว ค่าธรรมเนียม 0.03% — แกน DCA ดีฟอลต์",
+  "marketCap": "$661B",
+  "sector": "ETF / US Total Market",
+  "assetType": "fund",
+  "verdict": "BUY",
+  "scoreLabel": "ETF",
+  "score": 79,
+  "dcaScore": 79,
+  "summary": "VTI owns essentially the entire US stock market (~3,600 companies) at a rock-bottom 0.03% expense ratio — the broadest, most diversified single-fund DCA core you can buy. Slightly richer broad-market valuation keeps it just behind SCHD, but it is the textbook hands-off accumulation vehicle.",
+  "catalysts": [
+    { "icon": "🏦", "name": "Whole-market compounding", "description": "Captures the entire US market's long-run growth + dividends with near-zero cost drag.", "dotColor": "green" }
+  ],
+  "risks": [
+    "Cap-weighted — top mega-caps dominate, so concentration creeps in at the top",
+    "Falls with the broad market in any correction (no defense)",
+    "Broad-market valuation is somewhat elevated near highs"
+  ],
+  "fundInfo": {
+    "tracks": "CRSP US Total Market",
+    "expenseRatio": 0.03,
+    "yield": 1.16,
+    "cagr10y": 13,
+    "aum": "$661B",
+    "holdings": 3600,
+    "issuer": "Vanguard"
+  },
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Broad market is rate-sensitive at the margin but diversified across sectors.",
+    "inflationNote": "Equities broadly outpace inflation over long horizons.",
+    "sectorImpact": "Maximum diversification cushions single-sector shocks.",
+    "summary": "Low Fed sensitivity via full diversification — the all-weather market proxy."
+  },
+  "valuationBand": {
+    "fairLow": 345,
+    "fairBase": 350,
+    "fairHigh": 375,
+    "currentVsFair": 4,
+    "zone": "fair",
+    "basis": "Broad US-market forward P/E modestly above its long-run average; price near all-time highs"
+  },
+  "qualityScore": {
+    "moat": 5,
+    "marginTrend": 5,
+    "fcf": 3.2,
+    "balanceSheet": 5,
+    "composite": 4.55,
+    "note": "Total-market breadth (~3,600 names), 0.03% cost, modest yield, $661B AUM / Vanguard."
+  },
+  "dcaPlan": {
+    "cadence": "Monthly",
+    "targetWeight": "15–25%",
+    "bands": [
+      { "label": "Accumulate", "low": 0, "high": 350, "action": "accumulate", "note": "at/below fair — add full lot" },
+      { "label": "Hold", "low": 350, "high": 375, "action": "hold", "note": "near fair — keep cadence" },
+      { "label": "Wait", "low": 375, "high": 9999, "action": "wait", "note": "above fair — keep DCA, skip extra" }
+    ],
+    "note": "The default core — DCA monthly regardless of level; this is the 'set and forget' anchor."
+  },
+  "technicalNote": { "above200dma": true, "note": "Above a rising 200-DMA near all-time highs — long-term uptrend intact." },
+  "thesisBreak": [
+    "Expense ratio materially raised or fund wound down",
+    "Index methodology change away from total-market coverage",
+    "(Effectively the US equity market itself failing — not a fund-specific risk)"
+  ],
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 363, "note": "DCA now", "timing": "Now" },
+      { "label": "Entry 2", "level": 335, "rangeMax": 350, "note": "Add zone on pullback", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 300, "note": "Correction value", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 400, "pct": 10.3, "note": "Long-run base case" },
+    "tp2": { "price": 430, "pct": 18.6, "note": "Multi-year total return" },
+    "tp3": { "price": 490, "pct": 35.1, "note": "Long-run compounding + dividends" },
+    "stopLoss": {
+      "tight": 335, "tightPct": -8, "tightNote": "Accumulate-band floor (add, don't sell)",
+      "hard": 300, "hardPct": -17, "hardNote": "Only if thesis breaks (i.e. it won't)",
+      "riskReward": "n/a (DCA)", "rrNote": "DCA, not a daily stop", "rrWarning": "Set-and-forget core"
+    },
+    "verdict": "The whole-market default — broadest diversification at 0.03%. DCA monthly, forever.",
+    "approach": "DCA"
+  },
+  "sources": [
+    "https://stockanalysis.com/etf/vti/",
+    "https://investor.vanguard.com/investment-products/etfs/profile/vti",
+    "https://etfdb.com/etf/VTI/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "VTI ถือทั้งตลาดหุ้นสหรัฐ (~3,600 บริษัท) ที่ค่าธรรมเนียมต่ำมาก 0.03% — แกน DCA กองเดียวที่กระจายกว้างสุด. valuation ตลาดรวมแพงกว่านิดเลยรองจาก SCHD แต่เป็น vehicle สะสมแบบ set-and-forget ตำราเป๊ะ.",
+      "priceNote": "กระจายสุด ~3,600 ตัว ค่าธรรมเนียม 0.03% — แกน DCA ดีฟอลต์",
+      "scoreLabel": "ETF",
+      "risks": [
+        "ถ่วงน้ำหนักตามมาร์เก็ตแคป — mega-cap บนๆ ครองพอร์ต",
+        "ลงตามตลาดเวลาปรับฐาน (ไม่มีเชิงรับ)",
+        "valuation ตลาดรวมค่อนข้างสูงใกล้จุดสูงสุด"
+      ],
+      "macroRisk": { "summary": "ไวต่อ Fed ต่ำด้วยการกระจายเต็มที่ — ตัวแทนตลาด all-weather" },
+      "entryStrategy": { "verdict": "ดีฟอลต์ทั้งตลาด — กระจายกว้างสุดที่ 0.03% DCA รายเดือนตลอด" }
+    }
+  }
+}

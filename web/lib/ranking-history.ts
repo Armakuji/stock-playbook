@@ -87,6 +87,7 @@ function computeRankingChanges(
   dir: string,
   rankFn: (reports: StockReport[]) => (StockReport & { rank: number })[],
   scoreOf: (r: StockReport & { rankScore?: number }) => number,
+  filter?: (r: StockReport) => boolean,
 ): RankChange[] {
   if (!fs.existsSync(dir)) return [];
 
@@ -101,6 +102,7 @@ function computeRankingChanges(
     const [, ticker, date] = match;
     const content = fs.readFileSync(path.join(dir, file), "utf-8");
     const report = JSON.parse(content) as StockReport;
+    if (filter && !filter(report)) continue;
     if (!byTicker[ticker]) byTicker[ticker] = [];
     byTicker[ticker].push({ date, report });
   }
@@ -176,12 +178,18 @@ export function getRankingChanges(): RankChange[] {
   );
 }
 
-/** DCA dashboard ranking changes (web/data/dca) — scored by the DCA model. */
-export function getDcaRankingChanges(): RankChange[] {
+/** DCA dashboard ranking changes (web/data/dca) — scored by the DCA model.
+ *  Pass an assetType to scope to the "หุ้น" (stock) or "กองทุน" (fund) tab. */
+export function getDcaRankingChanges(assetType?: "stock" | "fund"): RankChange[] {
+  const filter = assetType
+    ? (r: StockReport) =>
+        assetType === "fund" ? r.assetType === "fund" : r.assetType !== "fund"
+    : undefined;
   return computeRankingChanges(
     DCA_DIR,
     rankDcaReports,
     (r) => computeDcaScore(r).score,
+    filter,
   );
 }
 

@@ -27,6 +27,16 @@ export function getAllDcaReports(): StockReport[] {
   });
 }
 
+/** Stocks only (assetType !== "fund") — the "หุ้น" tab. */
+export function getDcaStocks(): StockReport[] {
+  return getAllDcaReports().filter((r) => r.assetType !== "fund");
+}
+
+/** ETFs / funds only (assetType === "fund") — the "กองทุน" tab. */
+export function getDcaFunds(): StockReport[] {
+  return getAllDcaReports().filter((r) => r.assetType === "fund");
+}
+
 export function getDcaReport(ticker: string): StockReport | null {
   if (!fs.existsSync(DCA_DIR)) return null;
 

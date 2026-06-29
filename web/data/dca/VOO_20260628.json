@@ -1,0 +1,110 @@
+{
+  "ticker": "VOO",
+  "companyName": "Vanguard S&P 500 ETF",
+  "companyDescription": "The S&P 500 in one fund — 500 leading US companies. 0.03% cost, first ETF to cross $1T AUM. Classic DCA core.",
+  "exchange": "NYSE Arca",
+  "generatedAt": "2026-06-28T00:00:00.000Z",
+  "price": 672.60,
+  "priceChange": 0,
+  "priceNote": "S&P 500 ค่าธรรมเนียม 0.03% · AUM ~$1T — มาตรฐาน DCA",
+  "marketCap": "$996B",
+  "sector": "ETF / US Large Cap",
+  "assetType": "fund",
+  "verdict": "BUY",
+  "scoreLabel": "ETF",
+  "score": 78,
+  "dcaScore": 78,
+  "summary": "VOO tracks the S&P 500 — 500 leading US companies — at a 0.03% expense ratio, the benchmark DCA core that recently became the first ETF to top $1T in assets. Marginally less diversified than VTI and at a similar full-market valuation, but the gold-standard hands-off accumulation fund.",
+  "catalysts": [
+    { "icon": "🏦", "name": "S&P 500 compounding", "description": "Captures large-cap America's long-run earnings growth + dividends at near-zero cost.", "dotColor": "green" }
+  ],
+  "risks": [
+    "Top-heavy — mega-cap tech is a large share of the index",
+    "Falls with the broad market in corrections",
+    "Index P/E modestly above its long-run average"
+  ],
+  "fundInfo": {
+    "tracks": "S&P 500",
+    "expenseRatio": 0.03,
+    "yield": 1.02,
+    "cagr10y": 13.5,
+    "aum": "$996B",
+    "holdings": 503,
+    "issuer": "Vanguard"
+  },
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Large-cap index is diversified across sectors; rate impact is moderate.",
+    "inflationNote": "Large caps with pricing power outpace inflation over time.",
+    "sectorImpact": "Broad large-cap exposure cushions single-sector shocks.",
+    "summary": "Low Fed sensitivity — the benchmark all-weather US large-cap proxy."
+  },
+  "valuationBand": {
+    "fairLow": 640,
+    "fairBase": 650,
+    "fairHigh": 695,
+    "currentVsFair": 4,
+    "zone": "fair",
+    "basis": "S&P 500 forward P/E modestly above long-run average; price near all-time highs ($668–677 range)"
+  },
+  "qualityScore": {
+    "moat": 4.5,
+    "marginTrend": 5,
+    "fcf": 3,
+    "balanceSheet": 5,
+    "composite": 4.4,
+    "note": "500 large-cap leaders (broad but top-heavy), 0.03% cost, modest yield, ~$1T AUM / Vanguard."
+  },
+  "dcaPlan": {
+    "cadence": "Monthly",
+    "targetWeight": "15–25%",
+    "bands": [
+      { "label": "Accumulate", "low": 0, "high": 650, "action": "accumulate", "note": "at/below fair — add full lot" },
+      { "label": "Hold", "low": 650, "high": 695, "action": "hold", "note": "near fair — keep cadence" },
+      { "label": "Wait", "low": 695, "high": 99999, "action": "wait", "note": "above fair — keep DCA, skip extra" }
+    ],
+    "note": "Benchmark core — DCA monthly regardless of level; interchangeable with VTI (pick one)."
+  },
+  "technicalNote": { "above200dma": true, "note": "Above a rising 200-DMA near all-time highs — long-term uptrend intact." },
+  "thesisBreak": [
+    "Expense ratio materially raised or fund wound down",
+    "Index methodology change away from the S&P 500",
+    "(Effectively US large-cap equities failing — not a fund-specific risk)"
+  ],
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 673, "note": "DCA now", "timing": "Now" },
+      { "label": "Entry 2", "level": 620, "rangeMax": 650, "note": "Add zone on pullback", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 560, "note": "Correction value", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 740, "pct": 10.0, "note": "Long-run base case" },
+    "tp2": { "price": 795, "pct": 18.2, "note": "Multi-year total return" },
+    "tp3": { "price": 905, "pct": 34.6, "note": "Long-run compounding + dividends" },
+    "stopLoss": {
+      "tight": 620, "tightPct": -8, "tightNote": "Accumulate-band floor (add, don't sell)",
+      "hard": 560, "hardPct": -17, "hardNote": "Only if thesis breaks (i.e. it won't)",
+      "riskReward": "n/a (DCA)", "rrNote": "DCA, not a daily stop", "rrWarning": "Benchmark core"
+    },
+    "verdict": "The S&P 500 benchmark core at 0.03% — DCA monthly, forever. (VTI or VOO, not both.)",
+    "approach": "DCA"
+  },
+  "sources": [
+    "https://stockanalysis.com/etf/voo/",
+    "https://investor.vanguard.com/investment-products/etfs/profile/voo",
+    "https://etfdb.com/etf/VOO/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "VOO ตาม S&P 500 — 500 บริษัทชั้นนำสหรัฐ — ที่ค่าธรรมเนียม 0.03% เป็น DCA core มาตรฐาน และเพิ่งเป็น ETF แรกที่ AUM ทะลุ $1T. กระจายน้อยกว่า VTI นิดและ valuation พอๆ กัน แต่เป็นกองสะสม set-and-forget ระดับ gold standard.",
+      "priceNote": "S&P 500 ค่าธรรมเนียม 0.03% · AUM ~$1T — มาตรฐาน DCA",
+      "scoreLabel": "ETF",
+      "risks": [
+        "ถ่วงน้ำหนักบนๆ — tech mega-cap สัดส่วนสูงในดัชนี",
+        "ลงตามตลาดเวลาปรับฐาน",
+        "P/E ดัชนีสูงกว่าค่าเฉลี่ยระยะยาวเล็กน้อย"
+      ],
+      "macroRisk": { "summary": "ไวต่อ Fed ต่ำ — ตัวแทนหุ้นใหญ่สหรัฐแบบ all-weather มาตรฐาน" },
+      "entryStrategy": { "verdict": "แกน S&P 500 ที่ 0.03% — DCA รายเดือนตลอด (เลือก VTI หรือ VOO อย่างใดอย่างหนึ่ง)" }
+    }
+  }
+}

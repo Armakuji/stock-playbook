@@ -24,7 +24,7 @@ Every analysis follows a strict research-first workflow before generating any ou
 - `/dashboard` — find 5 stocks with 30%+ upside (Tech/AI/Space/Semiconductors/Robotics first) → save JSON reports for each → **log runners-up to `web/data/near-misses.json`** (counterfactual) → **generate market timing and save to `web/data/market-timing.json`** → git push
 - `/analyze-turbo <TICKER>` — moonshot report (300%+ speculative) → saves JSON to `web/data/speculative/` → git push → visible at `/turbo` (uses `xvary-turbo-report` skill)
 - `/analyze-dca <TICKER>` — single quality-core report → saves JSON to `web/data/dca/` → git push → visible at `/dca` (uses `xvary-dca-report` skill)
-- `/dca-list` — find the **5 best quality-core holdings** (mega/large-cap quality, global) → save JSON to `web/data/dca/` for each → git push → visible at `/dca`. Ranked by quality + valuation (NOT catalyst). No market-timing step. (uses `xvary-dca-report` skill)
+- `/dca-list` — find the **5 best funds (US/global ETFs, `assetType:"fund"` + `fundInfo`) AND the 5 best quality-core stocks** (mega/large-cap quality, global) → save JSON to `web/data/dca/` for each → git push → visible at `/dca` (2 tabs: กองทุน / หุ้น). Ranked by quality + valuation (NOT catalyst). No market-timing step. (uses `xvary-dca-report` skill)
 - `/compare <TICKER1> <TICKER2>` — side-by-side comparison of two stocks
 - `/watchlist <TICKER1> <TICKER2> ...` — quick scorecard table for multiple tickers
 - `/macro` — standalone Fed/macro snapshot (FOMC, CPI, jobs, yield)

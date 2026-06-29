@@ -1,0 +1,110 @@
+{
+  "ticker": "SCHD",
+  "companyName": "Schwab U.S. Dividend Equity ETF",
+  "companyDescription": "Dividend-quality ETF — tracks Dow Jones U.S. Dividend 100: 100 high-quality, high-yield US companies. Low cost, ~3.3% yield, value tilt.",
+  "exchange": "NYSE Arca",
+  "generatedAt": "2026-06-28T00:00:00.000Z",
+  "price": 32.09,
+  "priceChange": 0,
+  "priceNote": "Yield ~3.3% + ค่าธรรมเนียม 0.06% — value tilt ถูกกว่าตลาดรวม",
+  "marketCap": "$96B",
+  "sector": "ETF / US Dividend Equity",
+  "assetType": "fund",
+  "verdict": "BUY",
+  "scoreLabel": "ETF",
+  "score": 85,
+  "dcaScore": 85,
+  "summary": "SCHD is the top DCA fund pick: a low-cost (0.06%) dividend-quality ETF yielding ~3.3% with a value tilt that screens cheaper than the broad market. Built-in quality screens (profitability, cash flow, dividend growth) make it an ideal hands-off monthly accumulation vehicle.",
+  "catalysts": [
+    { "icon": "🏦", "name": "Quarterly dividend compounding", "description": "Reinvested ~3.3% yield + dividend growth compounds steadily over years.", "dotColor": "green" }
+  ],
+  "risks": [
+    "Value/dividend tilt can lag in a growth-led bull market",
+    "Sector reconstitution risk at annual index rebalance",
+    "Rising rates make the yield relatively less attractive"
+  ],
+  "fundInfo": {
+    "tracks": "Dow Jones U.S. Dividend 100",
+    "expenseRatio": 0.06,
+    "yield": 3.27,
+    "cagr10y": 11,
+    "aum": "$96B",
+    "holdings": 100,
+    "issuer": "Schwab"
+  },
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Dividend payers can wobble when rates spike, but quality screen limits damage.",
+    "inflationNote": "Dividend growers historically outpace inflation over time.",
+    "sectorImpact": "Value/quality tilt is defensive vs a tech-led drawdown.",
+    "summary": "Low Fed sensitivity and a defensive quality-value tilt — the steadiest DCA fund in the list."
+  },
+  "valuationBand": {
+    "fairLow": 30,
+    "fairBase": 33.5,
+    "fairHigh": 36,
+    "currentVsFair": -5,
+    "zone": "fair",
+    "basis": "Value/dividend tilt trades at a lower index P/E than the broad market; price near 52-wk midpoint ($26.2–32.9)"
+  },
+  "qualityScore": {
+    "moat": 4,
+    "marginTrend": 4.8,
+    "fcf": 5,
+    "balanceSheet": 4.5,
+    "composite": 4.6,
+    "note": "100 quality dividend names (diversification), 0.06% cost, reliable ~3.3% yield, $96B AUM / Schwab."
+  },
+  "dcaPlan": {
+    "cadence": "Monthly",
+    "targetWeight": "10–20%",
+    "bands": [
+      { "label": "Accumulate", "low": 0, "high": 31, "action": "accumulate", "note": "below fair — add full lot" },
+      { "label": "Hold", "low": 31, "high": 34, "action": "hold", "note": "near fair — keep cadence" },
+      { "label": "Wait", "low": 34, "high": 9999, "action": "wait", "note": "above fair — pause adds (still hold)" }
+    ],
+    "note": "DCA monthly and reinvest dividends (DRIP) — the income-compounding anchor of the basket."
+  },
+  "technicalNote": { "above200dma": true, "note": "Trading near the upper half of its 52-week range, above the 200-DMA — steady uptrend." },
+  "thesisBreak": [
+    "Expense ratio materially raised or fund wound down",
+    "Index methodology change that abandons the quality/dividend screen",
+    "Structural, multi-year underperformance vs the broad market beyond the normal value cycle"
+  ],
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 32, "note": "DCA now", "timing": "Now" },
+      { "label": "Entry 2", "level": 29, "rangeMax": 31, "note": "Add zone on pullback", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 26, "note": "Bear-market value", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 35, "pct": 9.1, "note": "Fair-value upper band" },
+    "tp2": { "price": 38, "pct": 18.4, "note": "Multi-year total return" },
+    "tp3": { "price": 44, "pct": 37.1, "note": "Long-run compounding + reinvested dividends" },
+    "stopLoss": {
+      "tight": 29, "tightPct": -10, "tightNote": "Accumulate-band floor (add, don't sell)",
+      "hard": 26, "hardPct": -19, "hardNote": "Only if thesis breaks",
+      "riskReward": "n/a (DCA)", "rrNote": "DCA + DRIP, not a daily stop", "rrWarning": "Steadiest fund"
+    },
+    "verdict": "Top DCA fund — low-cost dividend quality at a fair price. Accumulate monthly + DRIP.",
+    "approach": "DCA"
+  },
+  "sources": [
+    "https://stockanalysis.com/etf/schd/",
+    "https://www.schwabassetmanagement.com/products/schd",
+    "https://etfdb.com/etf/SCHD/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "SCHD เป็นกองทุน DCA อันดับ 1: ETF ปันผลคุณภาพ ต้นทุนต่ำ (0.06%) yield ~3.3% มี value tilt ที่ถูกกว่าตลาดรวม. มีตะแกรงคัดคุณภาพในตัว (กำไร/กระแสเงินสด/การเติบโตปันผล) เหมาะสะสมรายเดือนแบบไม่ต้องดูแล.",
+      "priceNote": "Yield ~3.3% + ค่าธรรมเนียม 0.06% — value tilt ถูกกว่าตลาดรวม",
+      "scoreLabel": "ETF",
+      "risks": [
+        "value/ปันผล อาจ lag ช่วงตลาดขาขึ้นนำโดย growth",
+        "ความเสี่ยงปรับพอร์ตตอน rebalance ดัชนีรายปี",
+        "ดอกเบี้ยขึ้นทำให้ yield น่าสนใจน้อยลงเชิงเทียบ"
+      ],
+      "macroRisk": { "summary": "ไวต่อ Fed ต่ำ + tilt เชิงรับ (value/quality) — กองทุน DCA ที่นิ่งสุดในลิสต์" },
+      "entryStrategy": { "verdict": "กองทุน DCA อันดับ 1 — ปันผลคุณภาพต้นทุนต่ำราคาเหมาะ สะสมรายเดือน + ทบปันผล" }
+    }
+  }
+}
