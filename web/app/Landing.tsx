@@ -5,25 +5,92 @@ import { useLang } from "@/lib/LanguageContext";
 
 interface ElementDef {
   href: string | null;
-  element: string;       // WATER / AIR / FIRE / EARTH
-  glyph: string;         // 💧 🌬️ 🔥 🌍
-  feature: string;       // DCA / Catalyst / Turbo / —
-  tagline: string;       // Thai one-liner
-  risk: string;          // LOW / MED / HIGH / —
-  horizon: string;       // 3–5y / weeks / event / —
-  count: number | null;  // live pick count
-  c1: string;            // gradient start
-  c2: string;            // gradient end
-  glow: string;          // glow rgba
-  ghost?: boolean;       // coming-soon Earth tile
+  element: string;
+  glyph: string;
+  feature: string;
+  tagline: string;
+  risk: string;
+  horizon: string;
+  count: number | null;
+  c1: string;
+  c2: string;
+  glow: string;
+  ghost?: boolean;
 }
 
-function ElementCard({ d, th }: { d: ElementDef; th: boolean }) {
+function ElementAmbient({ d }: { d: ElementDef }) {
+  if (d.ghost) return null;
+
+  if (d.element === "WATER") {
+    return (
+      <div
+        aria-hidden
+        style={{
+          position: "absolute",
+          bottom: 0, left: "-5%", right: "-5%",
+          height: 72,
+          background: `linear-gradient(to top, ${d.c1}44, ${d.c2}1a, transparent)`,
+          animation: "waterWave 3.8s ease-in-out infinite",
+          transformOrigin: "50% 100%",
+          zIndex: -1,
+          pointerEvents: "none",
+        }}
+      />
+    );
+  }
+
+  if (d.element === "AIR") {
+    return (
+      <>
+        {([0, 1, 2] as const).map((i) => (
+          <div
+            key={i}
+            aria-hidden
+            style={{
+              position: "absolute",
+              top: `${16 + i * 24}%`,
+              left: 0, right: 0,
+              height: i === 1 ? 2 : 1,
+              background: `linear-gradient(90deg, transparent 0%, ${d.c1}dd 25%, ${d.c1}99 60%, transparent 100%)`,
+              animation: `windStreak ${3.2 + i * 0.7}s ease-in-out infinite`,
+              animationDelay: `${i * 1.2}s`,
+              zIndex: -1,
+              pointerEvents: "none",
+              borderRadius: 1,
+            }}
+          />
+        ))}
+      </>
+    );
+  }
+
+  if (d.element === "FIRE") {
+    return (
+      <div
+        aria-hidden
+        style={{
+          position: "absolute",
+          bottom: 0, left: 0, right: 0,
+          height: 90,
+          background: `linear-gradient(to top, #ff6d0058 0%, #d500f92a 55%, transparent 100%)`,
+          animation: "flameLick 1.9s ease-in-out infinite",
+          zIndex: -1,
+          pointerEvents: "none",
+        }}
+      />
+    );
+  }
+
+  return null;
+}
+
+function ElementCard({ d, th, idx }: { d: ElementDef; th: boolean; idx: number }) {
   const inner = (
     <div
       style={{
         position: "relative",
         height: "100%",
+        isolation: "isolate",
         background: d.ghost ? "rgba(255,255,255,0.015)" : "var(--card)",
         border: "1px solid var(--border)",
         borderTop: `2px solid ${d.ghost ? "#3a3a2a" : d.c1}`,
@@ -33,6 +100,8 @@ function ElementCard({ d, th }: { d: ElementDef; th: boolean }) {
         overflow: "hidden",
         transition: "transform .22s, box-shadow .22s, border-color .22s",
         opacity: d.ghost ? 0.55 : 1,
+        animation: "cardEntrance 0.55s cubic-bezier(0.22,1,0.36,1) both",
+        animationDelay: `${idx * 80}ms`,
       }}
       onMouseEnter={(e) => {
         if (d.ghost) return;
@@ -48,7 +117,10 @@ function ElementCard({ d, th }: { d: ElementDef; th: boolean }) {
         el.style.borderColor = "var(--border)";
       }}
     >
-      {/* element glow wash */}
+      {/* Element-specific ambient atmosphere */}
+      <ElementAmbient d={d} />
+
+      {/* element glow wash — top right corner */}
       {!d.ghost && (
         <div style={{
           position: "absolute", top: -40, right: -40, width: 160, height: 160,
@@ -179,65 +251,120 @@ export function Landing({
     <div style={{ position: "relative" }}>
 
       {/* ── Hero ─────────────────────────────────────────────────────── */}
-      <div style={{ textAlign: "center", padding: "36px 0 30px" }}>
-        <div style={{
-          display: "inline-flex", alignItems: "center", gap: 9, marginBottom: 14,
-          padding: "5px 14px", borderRadius: 999,
-          background: "var(--card)", border: "1px solid var(--border)",
-        }}>
-          <span style={{
-            display: "inline-block", width: 7, height: 7, borderRadius: "50%",
-            background: "#10b981", animation: "livePulse 2s ease-in-out infinite",
+      <div style={{
+        textAlign: "center",
+        padding: "36px 0 30px",
+        position: "relative",
+        overflow: "hidden",
+        isolation: "isolate",
+      }}>
+        {/* Floating elemental orbs — behind all hero content */}
+        <div aria-hidden style={{ position: "absolute", inset: 0, pointerEvents: "none", zIndex: 0 }}>
+          {/* Water */}
+          <div style={{
+            position: "absolute", top: "8%", left: "4%",
+            width: 200, height: 200,
+            background: "radial-gradient(circle, rgba(56,189,248,0.22) 0%, transparent 70%)",
+            borderRadius: "50%", filter: "blur(30px)",
+            animation: "orbFloat 8s ease-in-out infinite",
           }} />
-          <span style={{ fontSize: 11, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", letterSpacing: "0.5px" }}>
-            LIVE · {th ? "อัปเดต" : "updated"} {lastUpdated}
-          </span>
+          {/* Fire */}
+          <div style={{
+            position: "absolute", top: "4%", right: "6%",
+            width: 180, height: 180,
+            background: "radial-gradient(circle, rgba(255,109,0,0.2) 0%, transparent 70%)",
+            borderRadius: "50%", filter: "blur(26px)",
+            animation: "orbFloat2 9s ease-in-out infinite",
+            animationDelay: "-3s",
+          }} />
+          {/* Air */}
+          <div style={{
+            position: "absolute", top: "38%", right: "1%",
+            width: 150, height: 150,
+            background: "radial-gradient(circle, rgba(16,185,129,0.16) 0%, transparent 70%)",
+            borderRadius: "50%", filter: "blur(22px)",
+            animation: "orbFloat 11s ease-in-out infinite",
+            animationDelay: "-6s",
+          }} />
+          {/* Earth */}
+          <div style={{
+            position: "absolute", bottom: "4%", left: "9%",
+            width: 130, height: 130,
+            background: "radial-gradient(circle, rgba(161,98,7,0.14) 0%, transparent 70%)",
+            borderRadius: "50%", filter: "blur(18px)",
+            animation: "orbFloat2 10s ease-in-out infinite",
+            animationDelay: "-2s",
+          }} />
         </div>
 
-        <h1 style={{
-          fontSize: "clamp(32px, 7vw, 60px)", fontWeight: 900, margin: "0 0 10px",
-          letterSpacing: "-1.5px", lineHeight: 1.02,
-          fontFamily: "var(--font-display, sans-serif)",
-          background: "linear-gradient(90deg, #38bdf8, #10b981, #ff6d00, #d500f9)",
-          backgroundSize: "200% 100%",
-          WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
-          animation: "gradientShift 9s linear infinite",
-        }}>
-          Stock Radar Weekly
-        </h1>
+        {/* Hero content — above orbs */}
+        <div style={{ position: "relative", zIndex: 1 }}>
+          <div style={{
+            display: "inline-flex", alignItems: "center", gap: 9, marginBottom: 14,
+            padding: "5px 14px", borderRadius: 999,
+            background: "var(--card)", border: "1px solid var(--border)",
+            animation: "fadeInUp 0.4s ease both",
+          }}>
+            <span style={{
+              display: "inline-block", width: 7, height: 7, borderRadius: "50%",
+              background: "#10b981", animation: "livePulse 2s ease-in-out infinite",
+            }} />
+            <span style={{ fontSize: 11, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", letterSpacing: "0.5px" }}>
+              LIVE · {th ? "อัปเดต" : "updated"} {lastUpdated}
+            </span>
+          </div>
 
-        <p style={{
-          fontSize: "clamp(13px, 2.4vw, 16px)", color: "var(--muted)", margin: "0 auto",
-          maxWidth: 560, lineHeight: 1.6,
-        }}>
-          {th ? (
-            <>เลือก<strong style={{ color: "var(--text)" }}>ธาตุการลงทุน</strong>ของคุณ — แต่ละธาตุคือ thesis คนละแบบ
-            บนเรดาร์เดียวกัน · institutional-grade analysis</>
-          ) : (
-            <>Pick your <strong style={{ color: "var(--text)" }}>investment element</strong> — each is a different thesis
-            on one radar · institutional-grade analysis</>
-          )}
-        </p>
+          <h1 style={{
+            fontSize: "clamp(32px, 7vw, 60px)", fontWeight: 900, margin: "0 0 10px",
+            letterSpacing: "-1.5px", lineHeight: 1.02,
+            fontFamily: "var(--font-display, sans-serif)",
+            background: "linear-gradient(90deg, #38bdf8, #10b981, #ff6d00, #d500f9)",
+            backgroundSize: "200% 100%",
+            WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
+            animation: "gradientShift 9s linear infinite",
+          }}>
+            Stock Radar Weekly
+          </h1>
 
-        {/* element legend line */}
-        <div style={{
-          display: "flex", alignItems: "center", justifyContent: "center", gap: 0,
-          margin: "20px auto 0", maxWidth: 360, height: 4, borderRadius: 4, overflow: "hidden",
-        }}>
-          <div style={{ flex: 1, background: "#38bdf8" }} />
-          <div style={{ flex: 1, background: "#10b981" }} />
-          <div style={{ flex: 1, background: "#ff6d00" }} />
-          <div style={{ flex: 1, background: "#a16207", opacity: 0.4 }} />
-        </div>
-        <div style={{
-          display: "flex", alignItems: "center", justifyContent: "center", gap: 0,
-          margin: "6px auto 0", maxWidth: 360,
-          fontSize: 9, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", letterSpacing: "1px",
-        }}>
-          <span style={{ flex: 1, textAlign: "center" }}>💧 {th ? "น้ำ" : "Water"}</span>
-          <span style={{ flex: 1, textAlign: "center" }}>🌬️ {th ? "ลม" : "Air"}</span>
-          <span style={{ flex: 1, textAlign: "center" }}>🔥 {th ? "ไฟ" : "Fire"}</span>
-          <span style={{ flex: 1, textAlign: "center", opacity: 0.5 }}>🌍 {th ? "ดิน" : "Earth"}</span>
+          <p style={{
+            fontSize: "clamp(13px, 2.4vw, 16px)", color: "var(--muted)", margin: "0 auto",
+            maxWidth: 560, lineHeight: 1.6,
+            animation: "fadeInUp 0.45s ease both",
+            animationDelay: "0.15s",
+          }}>
+            {th ? (
+              <>เลือก<strong style={{ color: "var(--text)" }}>ธาตุการลงทุน</strong>ของคุณ — แต่ละธาตุคือ thesis คนละแบบ
+              บนเรดาร์เดียวกัน · institutional-grade analysis</>
+            ) : (
+              <>Pick your <strong style={{ color: "var(--text)" }}>investment element</strong> — each is a different thesis
+              on one radar · institutional-grade analysis</>
+            )}
+          </p>
+
+          {/* element legend line */}
+          <div style={{
+            display: "flex", alignItems: "center", justifyContent: "center", gap: 0,
+            margin: "20px auto 0", maxWidth: 360, height: 4, borderRadius: 4, overflow: "hidden",
+            animation: "fadeInUp 0.45s ease both",
+            animationDelay: "0.25s",
+          }}>
+            <div style={{ flex: 1, background: "#38bdf8" }} />
+            <div style={{ flex: 1, background: "#10b981" }} />
+            <div style={{ flex: 1, background: "#ff6d00" }} />
+            <div style={{ flex: 1, background: "#a16207", opacity: 0.4 }} />
+          </div>
+          <div style={{
+            display: "flex", alignItems: "center", justifyContent: "center", gap: 0,
+            margin: "6px auto 0", maxWidth: 360,
+            fontSize: 9, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", letterSpacing: "1px",
+            animation: "fadeInUp 0.45s ease both",
+            animationDelay: "0.25s",
+          }}>
+            <span style={{ flex: 1, textAlign: "center" }}>💧 {th ? "น้ำ" : "Water"}</span>
+            <span style={{ flex: 1, textAlign: "center" }}>🌬️ {th ? "ลม" : "Air"}</span>
+            <span style={{ flex: 1, textAlign: "center" }}>🔥 {th ? "ไฟ" : "Fire"}</span>
+            <span style={{ flex: 1, textAlign: "center", opacity: 0.5 }}>🌍 {th ? "ดิน" : "Earth"}</span>
+          </div>
         </div>
       </div>
 
@@ -247,7 +374,7 @@ export function Landing({
         gridTemplateColumns: "repeat(auto-fit, minmax(230px, 1fr))",
         gap: 16, marginBottom: 28,
       }}>
-        {elements.map((d) => <ElementCard key={d.element} d={d} th={th} />)}
+        {elements.map((d, idx) => <ElementCard key={d.element} d={d} th={th} idx={idx} />)}
       </div>
 
       {/* ── Secondary tools ──────────────────────────────────────────── */}
