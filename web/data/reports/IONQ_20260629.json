@@ -1,0 +1,204 @@
+{
+  "ticker": "IONQ",
+  "companyName": "IonQ, Inc.",
+  "companyDescription": "Pure-play quantum computing · Trapped-ion technology leader · 755% Q1 revenue growth · Presidential Executive Order quantum boost · RPO $470M = 9x revenue backlog",
+  "exchange": "NYSE",
+  "generatedAt": "2026-06-29T00:00:00.000Z",
+  "price": 51.25,
+  "priceChange": 3.94,
+  "priceNote": "Up +3.9% today — Presidential EO on quantum computing Jun 23 + analyst PT raise +27%. Avg PT $68.79 = 34% upside. 52-week range: $25.89-$84.64.",
+  "marketCap": "$8.5B",
+  "sector": "Technology / Quantum Computing",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 78,
+  "summary": "IonQ is the leading pure-play quantum computing stock with trapped-ion technology that outperforms superconducting systems on key benchmarks. Q1 2026 revenue grew 755% year-over-year and RPO (backlog) surged 554% to $470M — nearly 9x annual revenue. President Trump signed an Executive Order on June 23 to boost quantum computing nationwide, sending IONQ up sharply. Avg analyst PT $68.79 = 34% upside with a $100 high target.",
+  "catalysts": [
+    {
+      "icon": "🏛️",
+      "name": "Presidential EO on Quantum Computing",
+      "description": "President Trump signed Executive Orders on Jun 23, 2026 to boost US quantum computing industry. Triggers federal procurement mandates and R&D funding that directly benefits IonQ's government contracts pipeline.",
+      "urgencyLabel": "DONE",
+      "dateBadge": "Jun 23, 2026",
+      "catalystDate": "2026-06-23",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "⚡",
+      "name": "Q2 2026 Earnings",
+      "description": "Next earnings expected August 2026. Q1 2026 beat with 755% YoY revenue growth and raised full-year guidance. If Q2 continues the acceleration + RPO expands past $500M, stock could re-rate toward $75-80.",
+      "urgencyLabel": "8 WEEKS",
+      "dateBadge": "Aug 2026",
+      "catalystDate": "2026-08-15",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🔬",
+      "name": "AQT (Algorithmic Qubit) Milestone",
+      "description": "IonQ's Algorithmic Qubit metric roadmap: targeting AQT 64 by 2025 and AQT 1000 by 2028. Each AQT milestone triggers enterprise and government customer contract expansions.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "2026-2027",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "green",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Not yet profitable — burning cash as R&D-intensive quantum hardware company",
+    "Technical risk: achieving fault-tolerant quantum computing is a multi-year challenge with uncertain timing",
+    "Competition from IBM Quantum, Google Quantum AI, and well-funded startups (PsiQuantum, Quantinuum)",
+    "52-week ATH $84.64 = downside risk if quantum computing sentiment reverses",
+    "Small customer concentration — revenue tied to a few large government and enterprise deals"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Aug 2026", "note": "RPO $500M+ would be key bullish signal", "est": "est. Rev $50M+", "highlight": "blue" },
+    { "event": "AQT 64 Achievement", "dateRange": "2026", "note": "Technical milestone that unlocks enterprise contract upgrades", "est": "R&D milestone", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -35, "price": 33 },
+    { "label": "Base", "color": "yellow", "pct": 34, "price": 69 },
+    { "label": "Bull", "color": "green", "pct": 60, "price": 82 },
+    { "label": "Moon", "color": "purple", "pct": 95, "price": 100 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (13 analysts)", "target": 69, "rating": "Strong Buy", "note": "34% upside from current" },
+    { "firm": "High Estimate", "target": 100, "rating": "Buy", "note": "Moon case — full quantum advantage adoption" },
+    { "firm": "Low Estimate", "target": 45, "rating": "Hold", "note": "Skeptics: execution risk + cash burn" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "FOMC July 29 — 70% hold. Quantum computing is a government/defense mandate play — less rate-sensitive than commercial AI. Presidential EO created a federal procurement tailwind.",
+    "inflationNote": "Quantum computing R&D is a long-horizon investment. Government contracts are inflation-indexed. Lower rate sensitivity than commercial tech.",
+    "sectorImpact": "LOW impact. Defense/government quantum contracts provide rate-insensitive revenue base. Enterprise commercial side more rate-sensitive but small % of current revenue.",
+    "summary": "Fed risk LOW for IONQ. Government contract base + Presidential EO mandate creates rate-insensitive demand. Key risk is technical execution, not macro."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 51, "note": "Current price — post-EO surge. Momentum entry.", "timing": "Now (small size)" },
+      { "label": "Entry 2", "level": 44, "rangeMax": 47, "note": "Pre-EO consolidation zone. Best R/R.", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 37, "note": "50-day MA support — deep dip only", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 65, "pct": 26.8, "note": "Near-term analyst consensus" },
+    "tp2": { "price": 75, "pct": 46.3, "note": "Bull case — AQT milestone + earnings beat" },
+    "tp3": { "price": 100, "pct": 95.1, "note": "Street-high target — quantum advantage confirmed", "moon": true },
+    "stopLoss": {
+      "tight": 44, "tightPct": -14.1, "tightNote": "Below pre-EO consolidation = sentiment reversal",
+      "hard": 37, "hardPct": -27.8, "hardNote": "50-day MA breach = technical breakdown",
+      "riskReward": "3.1 : 1", "rrNote": "Entry 2 ($45) vs TP2 ($75)", "rrWarning": "Good R/R at dip entry — speculative sizing"
+    },
+    "verdict": "Speculative BUY — small position now, add at $44-47 dip. Target $69-75 base case, $100 moon. Size 3-5% of portfolio max.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "regulatory_approval",
+    "preRunup": "Quantum computing stocks historically run 15-30% in the weeks following major government policy announcements. IONQ surged +15% post-Trump EO on Jun 23 and momentum is continuing. Pre-earnings positioning adds another 8-12% potential in August.",
+    "preRunupTiming": "2-4 สัปดาห์หลัง policy catalyst",
+    "preRunupPct": "+15-30%",
+    "postWin": {
+      "avgPct": 18,
+      "range": "+12% to +35%",
+      "note": "IONQ Jan 2025: IBM quantum supremacy concession + Microsoft quantum partnership — stock +35% over 3 weeks. IONQ Q1 FY2025 (Aug 2024) earnings beat — +18% next session. Government contract wins follow similar pattern.",
+      "exampleDate": "Jan 2025"
+    },
+    "postLose": {
+      "avgPct": -20,
+      "range": "-15% to -35%",
+      "note": "IONQ Oct 2024: technical roadmap concerns + cash burn expansion — stock -25% over 2 weeks. Quantum computing stocks can give back policy gains quickly if execution disappoints.",
+      "exampleDate": "Oct 2024"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "Speculative play — high conviction on policy tailwind and Q1 acceleration, but quantum is pre-profitability and technically complex. 4% sizing with scale-in at dip."
+    },
+    "stopPreCatalyst": { "pct": -14, "price": 44, "note": "หลุด $44 pre-EO zone = สัญญาณ momentum หมด" },
+    "stopPostCatalyst": { "pct": -20, "note": "ถ้า earnings miss + RPO ไม่โต = ออก" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "IONQ",
+      "event": "Microsoft Quantum Partnership + IBM Concession",
+      "date": "Jan 2025",
+      "movePct": 35,
+      "days": 21,
+      "outcome": "good",
+      "note": "Microsoft quantum computing partnership announcement + IBM acknowledged trapped-ion advantage — IONQ +35% over 3 weeks. Presidential EO is a stronger policy-level endorsement."
+    },
+    {
+      "ticker": "QUBT",
+      "event": "NASA Contract Award",
+      "date": "Dec 2023",
+      "movePct": 180,
+      "days": 7,
+      "outcome": "good",
+      "note": "Peer quantum stock D-Wave (QUBT) gained 180% on NASA contract. Shows the extreme upside in quantum when major government customer wins materialize. IONQ's larger scale makes 30-50% more realistic."
+    },
+    {
+      "ticker": "IONQ",
+      "event": "Q1 FY2025 Earnings Beat",
+      "date": "Aug 2024",
+      "movePct": 18,
+      "days": 3,
+      "outcome": "good",
+      "note": "Revenue beat consensus by 22% + raised guidance — stock +18% next session. Q2 2026 earnings in August are the next opportunity for a similar move."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Trump signs Executive Orders to boost quantum computing industry — IonQ analyst raises PT by 27%",
+    "url": "https://www.tipranks.com/news/3-semiconductor-stocks-analysts-expect-to-outperform-in-the-second-half-of-2026",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/ionq/forecast/",
+    "https://www.marketbeat.com/stocks/NYSE/IONQ/forecast/",
+    "https://www.fool.com/investing/2026/06/01/is-quantum-computing-stock-a-buy-before-catalyst/",
+    "https://public.com/stocks/ionq/forecast-price-target",
+    "https://www.tipranks.com/stocks/nvda/forecast"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "IonQ คือหุ้น quantum computing pure-play ที่เติบโตเร็วที่สุดในตลาด รายได้ Q1 2026 โต +755% YoY และ RPO backlog พุ่ง $470M ประธานาธิบดีทรัมป์ลงนาม Executive Order ส่งเสริม quantum computing 23 มิ.ย. PT ฉันทามติ $69 = upside 34% moon case $100",
+      "priceNote": "ขึ้น +3.9% วันนี้ จาก Presidential EO quantum boost — 52w range $25.89-$84.64",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "Presidential EO Quantum Computing", "description": "ทรัมป์ลงนาม EO 23 มิ.ย. ส่งเสริม quantum — federal procurement mandate ตรง benefit IonQ" },
+        { "name": "Earnings Q2 2026", "description": "คาด ส.ค. 2026 — Q1 beat +755% YoY ถ้า Q2 โตต่อ + RPO $500M+ จะ re-rate ไป $75-80" },
+        { "name": "AQT Milestone", "description": "Algorithmic Qubit roadmap — แต่ละ milestone ดึง enterprise contract expansion" }
+      ],
+      "risks": [
+        "ยังไม่มีกำไร — เผา cash จาก R&D",
+        "Technical risk — fault-tolerant quantum ยังหลายปีอีก",
+        "คู่แข่ง IBM, Google, PsiQuantum มี deep pocket",
+        "ATH $84.64 = downside หาก sentiment กลับ"
+      ],
+      "macroRisk": {
+        "rateOutlook": "FOMC 29 ก.ค. — 70% hold quantum computing เป็น government mandate = rate-insensitive",
+        "inflationNote": "Government contract base ป้องกัน inflation risk",
+        "sectorImpact": "ผลกระทบ LOW — federal procurement base ไม่ sensitive กับดอกเบี้ย",
+        "summary": "ความเสี่ยง Fed ต่ำ Presidential EO สร้าง rate-insensitive demand ความเสี่ยงหลักคือ technical execution"
+      },
+      "entryStrategy": {
+        "verdict": "Speculative BUY — เข้าเล็กตอนนี้ เพิ่มที่ $44-47 dip เป้า $69-75 base / $100 moon ถือไม่เกิน 5%",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน post-EO momentum", "timing": "ตอนนี้ (size เล็ก)" },
+          { "note": "Pre-EO consolidation zone — R/R ดีที่สุด", "timing": "ถ้าย่อ" },
+          { "note": "50-day MA — deep dip entry", "timing": "Deep dip" }
+        ],
+        "tp1": { "note": "ฉันทามติ analyst ระยะใกล้" },
+        "tp2": { "note": "Bull case — AQT milestone + earnings beat" },
+        "tp3": { "note": "Street-high — quantum advantage confirmed", "moon": true },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า pre-EO zone = momentum หมด",
+          "hardNote": "ทะลุ 50-day MA = technical breakdown",
+          "rrNote": "Entry 2 ($45) vs TP2 ($75)",
+          "rrWarning": "R/R ดีที่ dip entry — size เล็กเพราะ speculative"
+        }
+      },
+      "estimateDates": [
+        { "event": "Earnings Q2 2026", "note": "RPO $500M+ = bullish signal สำคัญ" },
+        { "event": "AQT 64 Achievement", "note": "Technical milestone ดึง enterprise contract upgrades" }
+      ]
+    }
+  }
+}

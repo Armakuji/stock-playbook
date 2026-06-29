@@ -1,0 +1,204 @@
+{
+  "ticker": "NVDA",
+  "companyName": "NVIDIA Corporation",
+  "companyDescription": "AI GPU king · Dominant H100/Blackwell AI training chips + CUDA ecosystem + data center Ethernet switch leader — picks & shovels of the AI era",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-29T00:00:00.000Z",
+  "price": 192.71,
+  "priceChange": -1.57,
+  "priceNote": "Dipped below $200 support — ATH $236.54 back in Feb. Avg analyst PT $309 implies 60% upside. Q2 FY27 earnings Aug 26 is the next re-rate catalyst.",
+  "marketCap": "$4.72T",
+  "sector": "Technology / Semiconductors",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 88,
+  "summary": "NVIDIA remains the undisputed AI infrastructure king at $4.72T market cap. The stock has pulled back ~18% from its $236 ATH, creating a compelling re-entry. 38 analysts hold a Strong Buy consensus with an average 12-month PT of $309.33 — implying 60.5% upside. Q2 FY2027 earnings (Aug 26) + Rubin GPU platform ramp in H2 2026 are the twin re-rate catalysts. July 27-31 (FOMC + Big Tech earnings) is the key risk window to watch.",
+  "catalysts": [
+    {
+      "icon": "⚡",
+      "name": "Q2 FY2027 Earnings",
+      "description": "NVIDIA reports Aug 26, 2026. Revenue consensus $91.7B, EPS $2.08. Another beat + Rubin guidance would push toward $230-250. Blackwell ramp remains demand-constrained.",
+      "urgencyLabel": "8 WEEKS",
+      "dateBadge": "Aug 26, 2026",
+      "catalystDate": "2026-08-26",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🚀",
+      "name": "Rubin GPU Platform Launch",
+      "description": "Next-gen Rubin GPU (successor to Blackwell) confirmed for H2 2026. Hyperscalers already pre-ordering — another platform upgrade cycle that cements NVDA's GPU monopoly for 2026-2027.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "⚠️",
+      "name": "FOMC Jul 29 + Big Tech Earnings",
+      "description": "FOMC July 29 — 70% hold probability. Big Tech earnings (MSFT/META/AMZN/GOOGL) July 27-31. These 5 days = highest volatility window of Q3. Could cause 10-15% swing either way.",
+      "urgencyLabel": "4 WEEKS",
+      "dateBadge": "Jul 27-31, 2026",
+      "catalystDate": "2026-07-29",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "China export restrictions cap ~$15-20B annual TAM; structural revenue ceiling remains",
+    "AMD MI400 (432GB HBM4, H2 2026) + Intel Gaudi 3 gaining hyperscaler attention as cost alternatives",
+    "FOMC Jul 29 — 30% hike probability keeps rate-sensitive semis under pressure",
+    "Stock is -18% from ATH — needs earnings beat to resume uptrend"
+  ],
+  "estimateDates": [
+    { "event": "Q2 FY2027 Earnings", "dateRange": "Aug 26, 2026", "note": "Blackwell ramp revenue + Rubin guidance key", "est": "est. Rev $91.7B", "highlight": "blue" },
+    { "event": "FOMC + Big Tech Risk Week", "dateRange": "Jul 27-31, 2026", "note": "Highest volatility window of Q3 — risk/opportunity", "est": "HIGH RISK", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -20, "price": 154 },
+    { "label": "Base", "color": "yellow", "pct": 30, "price": 250 },
+    { "label": "Bull", "color": "green", "pct": 60, "price": 308 },
+    { "label": "Moon", "color": "purple", "pct": 85, "price": 357 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (38 analysts)", "target": 309, "rating": "Strong Buy" },
+    { "firm": "Goldman Sachs", "target": 320, "rating": "Buy" },
+    { "firm": "Morgan Stanley", "target": 310, "rating": "Overweight" },
+    { "firm": "Bank of America", "target": 305, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "FOMC July 29 — market pricing 70% hold, 30% hike. Current rate 3.5-3.75%. Dot plot shows 9 members project at least 1 hike in 2026.",
+    "inflationNote": "Services inflation sticky. Fed needs 2-3 more months of softening data. No cuts in 2026 now base case.",
+    "sectorImpact": "MEDIUM impact. NVDA's locked-in hyperscaler capex commitments insulate earnings from rate hike vs pure-growth names. A hike causes correction but not thesis break.",
+    "summary": "Fed risk MEDIUM. NVDA structurally insulated by mandatory AI infrastructure capex. Key risk window Jul 27-31 (FOMC + Big Tech). Best entry is pre-earnings dip zone $178-185."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 193, "note": "Current price — near $200 support. Valid starter position.", "timing": "Now (small size)" },
+      { "label": "Entry 2", "level": 178, "rangeMax": 185, "note": "Post-FOMC dip zone — 50-day MA area. Best R/R.", "timing": "Early Aug", "preferred": true },
+      { "label": "Entry 3", "level": 155, "note": "200-day MA / deep correction — only if market-wide selloff", "timing": "If market corrects" }
+    ],
+    "tp1": { "price": 230, "pct": 19.4, "note": "Pre-earnings resistance" },
+    "tp2": { "price": 270, "pct": 40.1, "note": "Consensus mid-range" },
+    "tp3": { "price": 309, "pct": 60.3, "note": "12-month analyst consensus — full bull", "moon": true },
+    "stopLoss": {
+      "tight": 175, "tightPct": -9.2, "tightNote": "Below 50-day MA / $175 structural support",
+      "hard": 152, "hardPct": -21.1, "hardNote": "200-day MA breach = thesis change",
+      "riskReward": "3.7 : 1", "rrNote": "Entry 2 ($180) vs TP2 ($270)", "rrWarning": "Excellent R/R at dip entry"
+    },
+    "verdict": "Core Holding — small size now at $193, add aggressively at $178-185 post-FOMC. Target $270-309 by Q4 2026.",
+    "approach": "DCA"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "NVDA historically runs 10-18% in the 3-4 weeks pre-earnings on buy-the-rumor positioning. After Q1 FY2027 (May 2026) beat, stock ran to $236 before pulling back. Pre-Aug 26 earnings run-up likely starts early August.",
+    "preRunupTiming": "3-4 สัปดาห์ก่อน earnings (ต้น ส.ค.)",
+    "preRunupPct": "+10-18%",
+    "postWin": {
+      "avgPct": 12,
+      "range": "+8% to +24%",
+      "note": "Q3 FY2025 (Nov 2024): beat + Blackwell guide — stock +24% over 2 weeks. Q1 FY2026 (May 2025): beat — stock +5.2% next session. Pattern: revenue beat + raised guidance = 10-24% run.",
+      "exampleDate": "Nov 2024"
+    },
+    "postLose": {
+      "avgPct": -8,
+      "range": "-5% to -15%",
+      "note": "Q2 FY2024 (Aug 2023): beat but guidance disappointed vs high bar — stock -6% initially before recovering. Extended AI capex softness scenario = -12-15%.",
+      "exampleDate": "Aug 2023"
+    },
+    "spotSizing": {
+      "pct": 8,
+      "reason": "High conviction (60% upside to consensus PT), Strong Buy consensus from 38 analysts. 8% now; scale to 15% at $178-185 dip entry post-FOMC."
+    },
+    "stopPreCatalyst": { "pct": -9, "price": 175, "note": "หลุด $175 ก่อน earnings = pattern เปลี่ยน ออกก่อน" },
+    "stopPostCatalyst": { "pct": -8, "note": "ถ้า miss revenue guide หรือ data center demand ต่ำกว่าคาด — ออกทันที" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "NVDA",
+      "event": "Q3 FY2025 Earnings Beat + Blackwell Ramp Guide",
+      "date": "Nov 2024",
+      "movePct": 24,
+      "days": 14,
+      "outcome": "good",
+      "note": "Beat consensus by 10%, raised guidance on Blackwell ramp — stock +24% over 2 weeks. Direct template for Q2 FY2027 if Aug 26 beat + Rubin guide."
+    },
+    {
+      "ticker": "NVDA",
+      "event": "Q1 FY2025 H100 Guidance Triple",
+      "date": "May 2024",
+      "movePct": 25,
+      "days": 3,
+      "outcome": "good",
+      "note": "Tripled Q2 revenue guidance — stock +25% in 3 days. Rubin platform guide could trigger a similar re-rate at Aug 26 earnings."
+    },
+    {
+      "ticker": "AMD",
+      "event": "Q4 2024 Earnings + MI300X Ramp",
+      "date": "Feb 2025",
+      "movePct": 18,
+      "days": 7,
+      "outcome": "good",
+      "note": "Semi peers with AI GPU demand confirmation delivered +15-20% post-beat. Shows sector re-rates sharply on confirmed AI infrastructure demand."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "NVIDIA Q2 FY2027 earnings date confirmed Aug 26, 2026 — consensus revenue forecast $91.7B",
+    "url": "https://www.marketbeat.com/stocks/NASDAQ/NVDA/earnings/",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/nvda/forecast/",
+    "https://www.marketbeat.com/stocks/NASDAQ/NVDA/earnings/",
+    "https://www.tipranks.com/stocks/nvda/forecast",
+    "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+    "https://intellectia.ai/blog/chip-stocks-rebound-investment-strategy-june-2026"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "NVIDIA ยังเป็นราชา AI infrastructure โดยไม่มีคู่แข่งที่สูสี ราคาย่อลง 18% จาก ATH $236 เป็นจุดเข้าที่ดี PT ฉันทามติ $309 = upside 60.5% Rubin GPU H2 2026 + Earnings 26 ส.ค. คือตัว re-rate คู่แฝด",
+      "priceNote": "หลุด $200 floor — ATH $236 เมื่อ ก.พ. upside 60% ไปฉันทามติ $309",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "Earnings Q2 FY2027", "description": "คาด 26 ส.ค. 2026 — Revenue $91.7B (consensus) การ beat + guide Rubin จะดันไป $230-250" },
+        { "name": "Rubin GPU Platform Launch", "description": "GPU รุ่นต่อจาก Blackwell — confirmed H2 2026 hyperscalers pre-order แล้ว" },
+        { "name": "FOMC + Big Tech Risk Week", "description": "27-31 ก.ค. = high volatility window FOMC 29 ก.ค. + Big Tech earnings อาจแกว่ง ±10-15%" }
+      ],
+      "risks": [
+        "Export จีน cap $15-20B TAM",
+        "AMD MI400 HBM4 + Intel Gaudi 3 แย่ง share",
+        "FOMC 30% hike probability กดดัน semis",
+        "ต้องการ earnings beat เพื่อ resume uptrend"
+      ],
+      "macroRisk": {
+        "rateOutlook": "FOMC 29 ก.ค. — 70% hold / 30% hike ดอกเบี้ยปัจจุบัน 3.5-3.75%",
+        "inflationNote": "Inflation ยังเหนียว Fed ต้องการข้อมูล 2-3 เดือนก่อนจะ cut ไม่มี cut ในปี 2026",
+        "sectorImpact": "ผลกระทบ MEDIUM — NVDA ป้องกันตัวได้ด้วย locked hyperscaler capex",
+        "summary": "ความเสี่ยง Fed MEDIUM เข้าตอนนี้ขนาดเล็ก เพิ่มที่ $178-185 หลัง FOMC"
+      },
+      "entryStrategy": {
+        "verdict": "Core Holding — เข้าเล็กตอนนี้ ที่ $193 เพิ่มใหญ่ที่ $178-185 หลัง FOMC เป้า $270-309 ปลายปี",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน บน $200 support. Size เล็ก", "timing": "ตอนนี้ (size เล็ก)" },
+          { "note": "โซนย่อหลัง FOMC / 50-day MA — R/R ดีที่สุด", "timing": "ต้น ส.ค." },
+          { "note": "200-day MA / deep correction — เฉพาะ market crash", "timing": "ถ้าตลาดพัง" }
+        ],
+        "tp1": { "note": "แนวต้านก่อน earnings" },
+        "tp2": { "note": "กลางช่วง consensus" },
+        "tp3": { "note": "Bull case เต็ม 12 เดือน — หลัง Q3 earnings", "moon": true },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า 50-day MA / $175 support",
+          "hardNote": "ทะลุ 200-day MA = thesis เปลี่ยน",
+          "rrNote": "Entry 2 ($180) vs TP2 ($270)",
+          "rrWarning": "R/R ดีมากที่ dip entry"
+        }
+      },
+      "estimateDates": [
+        { "event": "Earnings Q2 FY2027", "note": "อ่าน Blackwell ramp revenue + Rubin guidance" },
+        { "event": "FOMC + Big Tech Risk Week", "note": "29 ก.ค. FOMC + MSFT/META/AMZN/GOOGL = risk window" }
+      ]
+    }
+  }
+}

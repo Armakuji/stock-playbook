@@ -1,0 +1,204 @@
+{
+  "ticker": "MRVL",
+  "companyName": "Marvell Technology, Inc.",
+  "companyDescription": "AI custom silicon + optical interconnect king · Jensen Huang called it 'next trillion-dollar company' · $2B NVIDIA equity stake + Celestial AI acquisition = picks-and-shovels of the AI hyperscaler era",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-29T00:00:00.000Z",
+  "price": 266.77,
+  "priceChange": -1.20,
+  "priceNote": "Pulled back from S&P 500 inclusion spike ($302 on Jun 22). $2B NVIDIA equity stake + $5B FY27 guide raise = fundamentals intact. KeyBanc PT $385 = 44% upside.",
+  "marketCap": "$228B",
+  "sector": "Technology / Semiconductors",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 85,
+  "summary": "Marvell is the AI infrastructure dark horse — custom silicon (XPUs) for Google, Amazon, Meta plus optical interconnects for every major data center. NVIDIA just took a $2B equity stake and Jensen Huang called MRVL 'the next trillion-dollar company.' The company raised FY27 revenue guidance by $5B to $11.5B and FY28 to $16.5B (+45% YoY). The stock pulled back 11% from its S&P 500 inclusion spike — a clean re-entry window. KeyBanc top target $385 = 44.3% upside from here.",
+  "catalysts": [
+    {
+      "icon": "🤝",
+      "name": "NVIDIA $2B Equity Stake + Jensen Endorsement",
+      "description": "NVIDIA took a $2 billion equity stake in MRVL and Jensen Huang publicly called Marvell 'the next trillion-dollar company.' NVDA partnership covers AI data center interconnect and custom silicon for hyperscalers. This is a structural endorsement, not just a supply deal.",
+      "urgencyLabel": "DONE",
+      "dateBadge": "Jun 2026",
+      "catalystDate": "2026-06-15",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "⚡",
+      "name": "Q2 FY2027 Earnings + Revenue Ramp",
+      "description": "Q2 FY27 guidance: $2.7B revenue at mid-point (+35% YoY). FY27 guidance $11.5B, FY28 $16.5B. Earnings expected late August 2026. Interconnect revenue guidance raised from +50% to +70% YoY.",
+      "urgencyLabel": "8 WEEKS",
+      "dateBadge": "Aug 26, 2026",
+      "catalystDate": "2026-08-26",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🔗",
+      "name": "Celestial AI + XConn Acquisitions",
+      "description": "MRVL acquired Celestial AI (on-chip optical compute) and XConn Technologies (CXL memory switching) to deepen AI data center connectivity capabilities. These are key enablers for trillion-parameter AI model training infrastructure.",
+      "urgencyLabel": "CLOSING",
+      "dateBadge": "Q3 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "green",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Stock pulled back 11% from S&P 500 inclusion spike — may consolidate further in near term",
+    "Qualcomm ByteDance ASIC deal (Jun 9) triggered -10% sector selloff in custom silicon stocks",
+    "Custom silicon concentration risk — MRVL revenue tied to 3-4 hyperscaler customers (Google, Amazon, Meta)",
+    "Average analyst consensus $242 is below current price — recent upgrades (Stifel $350, KeyBanc $385) not yet in consensus"
+  ],
+  "estimateDates": [
+    { "event": "Q2 FY2027 Earnings", "dateRange": "Late Aug 2026", "note": "+35% YoY guide — read interconnect and XPU ramp", "est": "est. Rev $2.7B", "highlight": "blue" },
+    { "event": "Celestial AI + XConn Closing", "dateRange": "Q3 2026", "note": "Optical compute + CXL switching add-ons fully integrated", "est": "Revenue accretive 2027", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -20, "price": 213 },
+    { "label": "Base", "color": "yellow", "pct": 31, "price": 350 },
+    { "label": "Bull", "color": "green", "pct": 44, "price": 385 },
+    { "label": "Moon", "color": "purple", "pct": 75, "price": 467 }
+  ],
+  "analystTargets": [
+    { "firm": "KeyBanc (Jun 15, 2026)", "target": 385, "rating": "Overweight", "note": "Street-high; optical networking as durable AI moat" },
+    { "firm": "Stifel (Jun 24, 2026)", "target": 350, "rating": "Buy", "note": "36% upside; custom silicon ramp FY28" },
+    { "firm": "Consensus (29 analysts)", "target": 242, "rating": "Strong Buy", "note": "Consensus lagging — recent upgrades not yet reflected" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "FOMC July 29 — 70% hold. Current rate 3.5-3.75%. Higher rates compress semiconductor multiples but MRVL's locked hyperscaler XPU contracts insulate earnings.",
+    "inflationNote": "Sticky services inflation. No cuts in 2026. MRVL's custom silicon pricing power (high-ASP chips) provides margin protection.",
+    "sectorImpact": "MEDIUM impact. Custom silicon names are rate-sensitive on valuation but structurally insulated by multi-year hyperscaler capex commitments. A hike = near-term multiple compression, not thesis change.",
+    "summary": "Fed risk MEDIUM for MRVL. NVIDIA $2B equity backing + hyperscaler XPU locked contracts = fundamental floor. Rate hike = entry opportunity, not thesis break."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 267, "note": "Current price — 11% off S&P inclusion spike. Valid entry.", "timing": "Now" },
+      { "label": "Entry 2", "level": 242, "rangeMax": 250, "note": "Old consensus PT = structural support zone. Best R/R.", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 215, "note": "Pre-NVIDIA deal price area — deep correction entry", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 315, "pct": 18.1, "note": "Near-term resistance — first target" },
+    "tp2": { "price": 350, "pct": 31.2, "note": "Stifel PT — base case 12 months" },
+    "tp3": { "price": 385, "pct": 44.3, "note": "KeyBanc street-high PT — full bull", "moon": true },
+    "stopLoss": {
+      "tight": 242, "tightPct": -9.3, "tightNote": "Below old consensus = negative re-rating",
+      "hard": 215, "hardPct": -19.3, "hardNote": "Pre-NVIDIA deal level breach = thesis broken",
+      "riskReward": "3.4 : 1", "rrNote": "Entry 2 ($245) vs TP2 ($350)", "rrWarning": "Strong R/R at dip entry"
+    },
+    "verdict": "Core Holding — entry now at $267 or add at $242-250 dip. Target $350-385 in 12 months.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "Custom silicon stocks with confirmed hyperscaler deals historically run 15-25% in the 4-6 weeks after major partnership announcements as the market prices in multi-year revenue commitments. MRVL previously surged +35% in May 2024 after Google custom chip confirmation.",
+    "preRunupTiming": "4-6 สัปดาห์หลัง partnership announcement",
+    "preRunupPct": "+15-25%",
+    "postWin": {
+      "avgPct": 20,
+      "range": "+15% to +35%",
+      "note": "MRVL May 2024: Google XPU custom chip confirmation — stock +35% over 3 weeks. Meta DPU deal Sep 2024 — +18% over 2 weeks. NVIDIA equity stake is a stronger endorsement than either previous deal.",
+      "exampleDate": "May 2024"
+    },
+    "postLose": {
+      "avgPct": -12,
+      "range": "-8% to -20%",
+      "note": "Jun 9, 2026 Qualcomm ByteDance ASIC deal news triggered -10% custom silicon selloff (Qualcomm disrupting hyperscaler custom silicon monopoly narrative). This is the key downside scenario.",
+      "exampleDate": "Jun 2026"
+    },
+    "spotSizing": {
+      "pct": 8,
+      "reason": "High conviction from NVIDIA's $2B equity validation + $5B guide raise. 8% now; scale to 12-15% at $242-250 dip entry. Custom silicon thesis intact."
+    },
+    "stopPreCatalyst": { "pct": -9, "price": 242, "note": "หลุด $242 old consensus PT = สัญญาณเตือน ลด size" },
+    "stopPostCatalyst": { "pct": -15, "note": "ถ้า earnings miss guide หรือ hyperscaler XPU ramp ช้ากว่าคาด — ออก" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "MRVL",
+      "event": "Google XPU Custom Chip Deal Confirmation",
+      "date": "May 2024",
+      "movePct": 35,
+      "days": 21,
+      "outcome": "good",
+      "note": "Google custom chip confirmation drove +35% over 3 weeks as market priced in multi-year XPU revenue. NVIDIA $2B equity stake is a stronger endorsement with larger revenue implications."
+    },
+    {
+      "ticker": "AVGO",
+      "event": "Apple Custom AI Chip Partnership",
+      "date": "Dec 2023",
+      "movePct": 22,
+      "days": 14,
+      "outcome": "good",
+      "note": "Broadcom's custom chip win for Apple Neural Engine — stock +22% over 2 weeks. Template for how market re-rates a hyperscaler custom silicon win."
+    },
+    {
+      "ticker": "MRVL",
+      "event": "Meta DPU (Data Processing Unit) Deal",
+      "date": "Sep 2024",
+      "movePct": 18,
+      "days": 14,
+      "outcome": "good",
+      "note": "Meta DPU win confirmed — stock +18% over 2 weeks. Shows MRVL's hyperscaler custom silicon wins are repeatable re-rate events."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "NVIDIA takes $2B equity stake in Marvell — Jensen Huang: 'next trillion-dollar company'",
+    "url": "https://finance.yahoo.com/technology/ai/articles/marvell-technology-nasdaqgs-mrvl-expands-230749069.html",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://finance.yahoo.com/technology/ai/articles/marvell-technology-nasdaqgs-mrvl-expands-230749069.html",
+    "https://stockanalysis.com/stocks/mrvl/forecast/",
+    "https://www.marketbeat.com/stocks/NASDAQ/MRVL/forecast/",
+    "https://www.benzinga.com/quote/MRVL/analyst-ratings",
+    "https://www.sec.gov/Archives/edgar/data/0001835632/000162828026045564/a20260625dividendpressrele.htm",
+    "https://247wallst.com/investing/2026/06/09/qualcomm-drops-8-on-bytedance-asic-deal-marvell-falls-10-as-custom-silicon-stocks-slide/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Marvell คือ AI infrastructure dark horse ที่ Jensen Huang ยกให้เป็น 'บริษัทล้านล้านดอลลาร์ลำดับถัดไป' NVIDIA เพิ่ง invest $2B + FY27 guide เพิ่ม $5B เป็น $11.5B ราคาย่อ 11% จาก S&P 500 inclusion = โอกาสเข้าที่ดี PT สูงสุด $385 = upside 44%",
+      "priceNote": "ย่อจาก S&P 500 spike $302 → $267 — fundamentals แข็งแกร่งกว่าราคา",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "NVIDIA เข้าถือหุ้น $2B + Jensen endorsement", "description": "NVIDIA invest $2B + Jensen เรียก MRVL ว่า 'next trillion-dollar co' — structural endorsement ไม่ใช่แค่ supply deal" },
+        { "name": "Earnings Q2 FY2027", "description": "คาด late ส.ค. 2026 — Guide $2.7B revenue (+35% YoY) + interconnect +70% YoY" },
+        { "name": "Celestial AI + XConn Acquisitions", "description": "optical compute + CXL memory switching = เสริมความสามารถ AI data center ครบวงจร" }
+      ],
+      "risks": [
+        "ย่อจาก S&P inclusion spike อาจแกว่งต่อ",
+        "Qualcomm ASIC deal เป็นความเสี่ยง custom silicon monopoly",
+        "Concentration risk — รายได้กระจุก 3-4 hyperscaler",
+        "Consensus $242 ต่ำกว่าราคาปัจจุบัน — upgrades ยังไม่สะท้อนใน consensus"
+      ],
+      "macroRisk": {
+        "rateOutlook": "FOMC 29 ก.ค. — 70% hold / 30% hike อัตราปัจจุบัน 3.5-3.75%",
+        "inflationNote": "Inflation เหนียว ไม่มี cut ปี 2026 custom silicon pricing power ช่วยปกป้อง margin",
+        "sectorImpact": "ผลกระทบ MEDIUM — locked hyperscaler XPU contracts ป้องกัน earnings",
+        "summary": "ความเสี่ยง Fed MEDIUM NVIDIA backing + hyperscaler locked contracts = fundamental floor"
+      },
+      "entryStrategy": {
+        "verdict": "Core Holding — เข้าตอนนี้ $267 หรือเพิ่มที่ $242-250 dip เป้า $350-385 ใน 12 เดือน",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน 11% จาก S&P spike — valid entry", "timing": "ตอนนี้" },
+          { "note": "Old consensus PT = แนวรับโครงสร้าง R/R ดีที่สุด", "timing": "ถ้าย่อ" },
+          { "note": "ก่อน NVIDIA deal area = deep correction only", "timing": "Deep dip เท่านั้น" }
+        ],
+        "tp1": { "note": "แนวต้านใกล้ — เป้าแรก" },
+        "tp2": { "note": "Stifel PT — base case 12 เดือน" },
+        "tp3": { "note": "KeyBanc street-high — full bull", "moon": true },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า old consensus $242 = negative re-rating",
+          "hardNote": "ต่ำกว่า ก่อน NVIDIA deal = thesis เปลี่ยน",
+          "rrNote": "Entry 2 ($245) vs TP2 ($350)",
+          "rrWarning": "R/R แข็งแกร่งที่ dip entry"
+        }
+      },
+      "estimateDates": [
+        { "event": "Earnings Q2 FY2027", "note": "อ่าน XPU + interconnect ramp revenue" },
+        { "event": "Celestial AI + XConn Closing", "note": "Optical compute + CXL เสริมรายได้ 2027" }
+      ]
+    }
+  }
+}

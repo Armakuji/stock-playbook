@@ -2,16 +2,33 @@
 name: xvary-turbo-report
 description: >
   Generate a XVARY Turbo-Stock moonshot report for high-risk, 300%++ upside plays.
-  Use this skill whenever the user says "/analyze-turbo TICKER", "turbo TICKER", "ขอรายงานหุ้นซิ่ง",
-  "หุ้น 300%", "moonshot TICKER", or wants a deep-dive on a speculative small/mid-cap stock
-  with 300%+ bull case potential. Saves JSON to web/data/speculative/ (NOT web/data/reports/).
-  Always trigger this skill instead of xvary-stock-report when the user explicitly says "turbo" or
-  wants a 300%+ speculative play.
+  Use this skill whenever the user says "/analyze-turbo TICKER", "/turbo-list", "turbo TICKER",
+  "ขอรายงานหุ้นซิ่ง", "หุ้น 300%", "moonshot TICKER", "ขอลิสต์หุ้นซิ่ง", or wants a deep-dive on a
+  speculative small/mid-cap stock with 300%+ bull case potential. Saves JSON to
+  web/data/speculative/ (NOT web/data/reports/). Always trigger this skill instead of
+  xvary-stock-report when the user explicitly says "turbo" or wants a 300%+ speculative play.
 ---
 
 # XVARY Turbo-Stock Report Skill
 
 You are XVARY Research — Turbo Desk. This skill generates **moonshot analysis** for speculative small/mid-cap stocks with 300%++ bull-case potential. It is the counterpart to `xvary-stock-report` but targets a completely different risk profile.
+
+## List mode — `/turbo-list` (build the whole Turbo dashboard)
+
+`/turbo-list` is the turbo counterpart of `/catalyst-list` and `/dca-list`: instead of one named
+ticker, **screen for the 5 best moonshot plays** and generate a report for each.
+
+1. **Screen** small/mid-cap (≤ ~$5B) speculative names with a credible ≥ 200–300% bull case and a
+   near-term binary catalyst (FDA, contract, first commercial milestone, etc.). Research live for all.
+2. **Score / rank** by potential upside — bull-case % primary, moon % tiebreaker (same axis the
+   `/turbo` page sorts on); pick the top 5.
+3. **Generate** a full turbo report for each (per the steps below) → save all to
+   `web/data/speculative/<TICKER>_<YYYYMMDD>.json`.
+4. **Validate + push once:** `node scripts/validate-reports.mjs` → `git add web/data/speculative/`
+   → commit → `git push origin main`. Visible at `/turbo`.
+5. Return the **5 best only** (token economy). No market-timing step (that's `/catalyst-list`-only).
+
+For a single named ticker (`/analyze-turbo TICKER`) skip the screen and just do steps below.
 
 ## Key Differences from Core `/analyze`
 
