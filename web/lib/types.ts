@@ -271,6 +271,17 @@ export interface TechnicalNote {
   note?: string;          // e.g. "Above rising 200-DMA, RSI 54 — neutral"
 }
 
+/** ETF / fund metadata for the DCA "กองทุน" tab */
+export interface FundInfo {
+  tracks: string;          // index/strategy tracked, e.g. "S&P 500" / "Nasdaq-100"
+  expenseRatio: number;    // annual %, e.g. 0.03
+  yield?: number;          // distribution yield %, e.g. 1.3
+  cagr10y?: number;        // ~10-yr annualized total return %, e.g. 13.5
+  aum?: string;            // assets under management, e.g. "$600B"
+  holdings?: number;       // number of holdings, e.g. 503
+  issuer?: string;         // e.g. "Vanguard"
+}
+
 // ─── Score breakdown ─────────────────────────────────────────────────────────
 // One line of the deterministic score derivation (see web/lib/scoring.ts).
 
@@ -319,6 +330,10 @@ export interface StockReport {
   valuationBand?: ValuationBand;
   /** Recurring accumulation plan — replaces entry levels for DCA */
   dcaPlan?: DcaPlan;
+  /** DCA asset class — "stock" (default) or "fund" (ETF), drives the /dca tab split */
+  assetType?: "stock" | "fund";
+  /** ETF/fund metadata (only for assetType "fund") */
+  fundInfo?: FundInfo;
   /** 0–5 quality sub-scores driving the DCA score */
   qualityScore?: QualityScore;
   /** Conditions that invalidate the long-term thesis (DCA's "stop loss") */

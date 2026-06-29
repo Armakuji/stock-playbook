@@ -44,6 +44,32 @@ free cash flow, healthy balance sheets (e.g. dominant platforms, toll-booth busi
 quality semis/software/consumer staples). For `/dca-list`, return the **5 best** — no more
 (token economy). Quality over quantity.
 
+## Fund (ETF) mode — the "กองทุน" tab
+
+`/dca-list` produces TWO baskets, both saved to `web/data/dca/`:
+1. **5 best stocks** (`assetType: "stock"` or omitted) — the "หุ้น" tab (logic above).
+2. **5 best funds** (`assetType: "fund"` + `fundInfo`) — the "กองทุน" tab.
+
+Fund universe = **US / global ETFs** (the classic DCA vehicle): broad index, sector, dividend,
+and total-market ETFs (e.g. VOO, VTI, QQQM, SCHD, VGT, VXUS). Pick the 5 best for long-term
+monthly accumulation — low cost + diversification + reasonable market valuation.
+
+For each ETF, research live: **price, expense ratio, distribution yield, ~10-yr CAGR, AUM,
+holdings count, issuer, what index it tracks**, plus a market-valuation read (index forward
+P/E vs history, or distance from the 200-DMA) for the `valuationBand`.
+
+Fund JSON = standard `StockReport` with these specifics:
+- `assetType: "fund"`, `verdict: "BUY"`, `scoreLabel: "ETF"`, `entryStrategy.approach: "DCA"`.
+- `fundInfo`: `{ tracks, expenseRatio, yield, cagr10y, aum, holdings, issuer }`.
+- `qualityScore` (0–5) **repurposed for funds**: `moat` = breadth/diversification,
+  `marginTrend` = cost efficiency (lower expense ratio → higher), `fcf` = distribution/yield
+  reliability, `balanceSheet` = AUM size + issuer track record. The same `dca-scoring.ts`
+  model then scores it (quality 40 / valuation 25 / verdict 15 / technical 10 / macro 10).
+- `valuationBand`: for a broad ETF, `currentVsFair` reflects the underlying index valuation
+  vs its own history (cheap / fair / expensive); cite the `basis`.
+- Skip `catalystSpot`. `thesisBreak` for a fund = "the index/strategy itself breaks" (rare) —
+  e.g. expense ratio hiked materially, fund closure, structural index change.
+
 ## Step 1 — Research before writing (fire BEFORE any JSON)
 
 For each candidate, search and verify:

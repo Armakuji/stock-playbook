@@ -1,0 +1,110 @@
+{
+  "ticker": "VGT",
+  "companyName": "Vanguard Information Technology ETF",
+  "companyDescription": "Pure US tech sector — semis, software, hardware (Apple/Microsoft/Nvidia heavy). Low 0.09% cost, highest growth + highest volatility.",
+  "exchange": "NYSE Arca",
+  "generatedAt": "2026-06-28T00:00:00.000Z",
+  "price": 113.86,
+  "priceChange": 0,
+  "priceNote": "Pure tech sector — growth สูงสุด แต่กระจุก+ผันผวนสูงสุดของลิสต์",
+  "marketCap": "$148B",
+  "sector": "ETF / US Technology Sector",
+  "assetType": "fund",
+  "verdict": "BUY",
+  "scoreLabel": "ETF",
+  "score": 61,
+  "dcaScore": 61,
+  "summary": "VGT is a pure US information-technology sector ETF (semis + software + hardware) at a low 0.09% cost — the highest long-run growth in the list, but also the most concentrated and volatile. Sector concentration plus a rich valuation give it the lowest DCA score; it's an aggressive growth satellite, sized small.",
+  "catalysts": [
+    { "icon": "🏦", "name": "Secular tech / AI growth", "description": "Concentrated bet on the long-run tech and AI build-out — highest growth, highest beta.", "dotColor": "green" }
+  ],
+  "risks": [
+    "Single-sector concentration — severe drawdowns in tech selloffs",
+    "Top names (Apple/Microsoft/Nvidia) dominate the fund",
+    "Rich sector valuation + rate sensitivity"
+  ],
+  "fundInfo": {
+    "tracks": "MSCI US IMI Information Technology 25/50",
+    "expenseRatio": 0.09,
+    "yield": 0.37,
+    "cagr10y": 20,
+    "aum": "$148B",
+    "holdings": 320,
+    "issuer": "Vanguard"
+  },
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Long-duration, high-beta tech — most rate-sensitive fund in the list.",
+    "inflationNote": "Strong secular growth, but multiples compress fastest when rates rise.",
+    "sectorImpact": "Pure tech — no diversification ballast at all.",
+    "summary": "Medium-to-high Fed sensitivity from single-sector tech concentration — smallest satellite weight."
+  },
+  "valuationBand": {
+    "fairLow": 100,
+    "fairBase": 102,
+    "fairHigh": 112,
+    "currentVsFair": 12,
+    "zone": "expensive",
+    "basis": "US tech-sector forward P/E well above the broad market and its own history"
+  },
+  "qualityScore": {
+    "moat": 3,
+    "marginTrend": 4.5,
+    "fcf": 1.5,
+    "balanceSheet": 4.5,
+    "composite": 3.4,
+    "note": "Single-sector (low diversification), 0.09% cost, very low ~0.4% yield, $148B AUM / Vanguard."
+  },
+  "dcaPlan": {
+    "cadence": "Monthly",
+    "targetWeight": "3–7%",
+    "bands": [
+      { "label": "Accumulate", "low": 0, "high": 102, "action": "accumulate", "note": "below fair — add small lot" },
+      { "label": "Hold", "low": 102, "high": 112, "action": "hold", "note": "near fair — keep cadence" },
+      { "label": "Wait", "low": 112, "high": 99999, "action": "wait", "note": "above fair — DCA only, no extra" }
+    ],
+    "note": "Most aggressive satellite — smallest weight; only add hard on real tech-sector drawdowns."
+  },
+  "technicalNote": { "above200dma": true, "note": "Above a rising 200-DMA but the highest-beta fund here — expect the largest swings." },
+  "thesisBreak": [
+    "Expense ratio materially raised or fund wound down",
+    "Index methodology change away from the US tech sector",
+    "Structural, multi-year breakdown of the tech-growth thesis"
+  ],
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 114, "note": "DCA now (small size)", "timing": "Now" },
+      { "label": "Entry 2", "level": 100, "rangeMax": 106, "note": "Add zone on pullback", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 85, "note": "Tech-correction value", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 125, "pct": 9.8, "note": "Long-run base case" },
+    "tp2": { "price": 138, "pct": 21.2, "note": "Multi-year growth" },
+    "tp3": { "price": 162, "pct": 42.3, "note": "Long-run compounding" },
+    "stopLoss": {
+      "tight": 100, "tightPct": -12, "tightNote": "Accumulate-band floor (add, don't sell)",
+      "hard": 85, "hardPct": -25, "hardNote": "Only if thesis breaks",
+      "riskReward": "n/a (DCA)", "rrNote": "DCA satellite, not a daily stop", "rrWarning": "Highest volatility — smallest size"
+    },
+    "verdict": "Aggressive tech satellite at 0.09% — DCA the smallest slice; add only on sector drawdowns.",
+    "approach": "DCA"
+  },
+  "sources": [
+    "https://stockanalysis.com/etf/vgt/",
+    "https://advisors.vanguard.com/investments/products/vgt/vanguard-information-technology-etf",
+    "https://etfdb.com/etf/VGT/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "VGT เป็น ETF เซกเตอร์เทคสหรัฐล้วน (เซมิ + ซอฟต์แวร์ + ฮาร์ดแวร์) ที่ต้นทุนต่ำ 0.09% — growth ระยะยาวสูงสุดในลิสต์ แต่กระจุกและผันผวนสุด. กระจุกเซกเตอร์ + valuation แพงทำให้คะแนน DCA ต่ำสุด เป็น satellite สาย growth เชิงรุก สัดส่วนเล็ก.",
+      "priceNote": "Pure tech sector — growth สูงสุด แต่กระจุก+ผันผวนสูงสุดของลิสต์",
+      "scoreLabel": "ETF",
+      "risks": [
+        "กระจุกเซกเตอร์เดียว — ย่อแรงมากตอน tech selloff",
+        "หุ้นบนๆ (Apple/Microsoft/Nvidia) ครองกอง",
+        "valuation เซกเตอร์แพง + ไวดอกเบี้ย"
+      ],
+      "macroRisk": { "summary": "ไวต่อ Fed กลาง-สูงจากการกระจุกเทคเซกเตอร์เดียว — น้ำหนัก satellite เล็กสุด" },
+      "entryStrategy": { "verdict": "satellite เทคเชิงรุกที่ 0.09% — DCA สัดส่วนเล็กสุด เติมเฉพาะตอนเซกเตอร์ย่อจริง" }
+    }
+  }
+}

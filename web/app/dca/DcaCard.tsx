@@ -139,6 +139,30 @@ function QualityBars({ report }: { report: StockReport }) {
   );
 }
 
+// ── Fund info chips (ETF "กองทุน" mode — replaces quality bars) ───────────────
+function FundChips({ report, th }: { report: StockReport; th: boolean }) {
+  const f = report.fundInfo;
+  if (!f) return null;
+  const chips: { label: string; value: string }[] = [
+    { label: th ? "ตามดัชนี" : "Tracks", value: f.tracks },
+    { label: th ? "ค่าธรรมเนียม" : "Expense", value: `${f.expenseRatio.toFixed(2)}%` },
+    ...(f.yield != null ? [{ label: th ? "ปันผล" : "Yield", value: `${f.yield.toFixed(1)}%` }] : []),
+    ...(f.cagr10y != null ? [{ label: th ? "CAGR 10y" : "10y CAGR", value: `${f.cagr10y.toFixed(0)}%` }] : []),
+  ];
+  return (
+    <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "6px 12px", marginTop: 12 }}>
+      {chips.map((c) => (
+        <div key={c.label}>
+          <div style={{ fontSize: 9, color: "#4a6b78", marginBottom: 2, fontFamily: "var(--font-mono, monospace)" }}>{c.label}</div>
+          <div style={{ fontSize: 12, color: "#7dd3fc", fontWeight: 700, fontFamily: "var(--font-mono, monospace)", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+            {c.value}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 // ── Rank badge ───────────────────────────────────────────────────────────────
 function RankBadge({ rank }: { rank: number }) {
   const medals = ["🥇", "🥈", "🥉"];
@@ -157,6 +181,7 @@ function RankBadge({ rank }: { rank: number }) {
 export function DcaCard({ report, rank }: { report: StockReport; rank: number }) {
   const { lang } = useLang();
   const th = lang === "th";
+  const isFund = report.assetType === "fund";
   const isPositive = report.priceChange >= 0;
   const cap = marketCapTier(report.marketCap);
   const score = report.dcaScore ?? report.score ?? 0;
@@ -220,7 +245,7 @@ export function DcaCard({ report, rank }: { report: StockReport; rank: number })
               background: "#38bdf81e", color: "#7dd3fc",
               border: "1px solid #38bdf83a", letterSpacing: "0.5px",
             }}>
-              {report.scoreLabel ?? "Core Holding"}
+              {report.scoreLabel ?? (isFund ? "ETF" : "Core Holding")}
             </span>
           </div>
           <div style={{ fontSize: 11, color: "#4a6b78" }}>{report.companyName}</div>
@@ -288,8 +313,8 @@ export function DcaCard({ report, rank }: { report: StockReport; rank: number })
           {report.summary}
         </p>
 
-        {/* Row 5: quality bars */}
-        <QualityBars report={report} />
+        {/* Row 5: quality bars (stock) or fund info chips (ETF) */}
+        {isFund ? <FundChips report={report} th={th} /> : <QualityBars report={report} />}
 
         {/* Row 6: valuation gauge */}
         <ValuationGauge report={report} th={th} />

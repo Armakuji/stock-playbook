@@ -1,0 +1,110 @@
+{
+  "ticker": "QQQM",
+  "companyName": "Invesco NASDAQ 100 ETF",
+  "companyDescription": "Nasdaq-100 in one fund — 100 largest non-financial Nasdaq names, tech/growth heavy. Low-cost 'mini-QQQ' built for buy-and-hold.",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-28T00:00:00.000Z",
+  "price": 290.95,
+  "priceChange": 0,
+  "priceNote": "Nasdaq-100 growth tilt — โตสูงแต่ valuation/กระจุก tech แพงกว่า",
+  "marketCap": "$97B",
+  "sector": "ETF / US Growth (Nasdaq-100)",
+  "assetType": "fund",
+  "verdict": "BUY",
+  "scoreLabel": "ETF",
+  "score": 62,
+  "dcaScore": 62,
+  "summary": "QQQM gives low-cost access to the Nasdaq-100 — the growth/tech engine of US large caps — at 0.15%, the buy-and-hold version of QQQ. Higher long-run growth, but tech concentration and a richer valuation lower its DCA score versus the broad/value funds. A strong growth satellite rather than the core.",
+  "catalysts": [
+    { "icon": "🏦", "name": "Mega-cap growth compounding", "description": "Concentrated exposure to the AI/tech leaders drives above-market long-run growth.", "dotColor": "green" }
+  ],
+  "risks": [
+    "Heavy tech / mega-cap concentration — bigger drawdowns",
+    "Higher valuation than the broad market",
+    "No financials/value ballast"
+  ],
+  "fundInfo": {
+    "tracks": "Nasdaq-100",
+    "expenseRatio": 0.15,
+    "yield": 0.48,
+    "cagr10y": 18,
+    "aum": "$97B",
+    "holdings": 100,
+    "issuer": "Invesco"
+  },
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Long-duration growth — more sensitive to rate moves than broad/value funds.",
+    "inflationNote": "Tech earnings can offset inflation, but multiples compress when rates rise.",
+    "sectorImpact": "Concentrated in tech — a sector drawdown hits harder.",
+    "summary": "Medium Fed sensitivity from growth/tech concentration — size as a satellite, not the core."
+  },
+  "valuationBand": {
+    "fairLow": 255,
+    "fairBase": 260,
+    "fairHigh": 285,
+    "currentVsFair": 12,
+    "zone": "expensive",
+    "basis": "Nasdaq-100 forward P/E well above the broad market and its own history"
+  },
+  "qualityScore": {
+    "moat": 3.5,
+    "marginTrend": 4,
+    "fcf": 2,
+    "balanceSheet": 4.5,
+    "composite": 3.5,
+    "note": "100 growth names (less diversified, tech-concentrated), 0.15% cost, low ~0.5% yield, $97B AUM."
+  },
+  "dcaPlan": {
+    "cadence": "Monthly",
+    "targetWeight": "5–10%",
+    "bands": [
+      { "label": "Accumulate", "low": 0, "high": 260, "action": "accumulate", "note": "below fair — add lot" },
+      { "label": "Hold", "low": 260, "high": 285, "action": "hold", "note": "near fair — keep cadence" },
+      { "label": "Wait", "low": 285, "high": 99999, "action": "wait", "note": "above fair — DCA only, no extra" }
+    ],
+    "note": "Growth satellite — DCA smaller; let tech drawdowns do the heavy lifting on adds."
+  },
+  "technicalNote": { "above200dma": true, "note": "Above a rising 200-DMA but high beta — expect larger swings than broad funds." },
+  "thesisBreak": [
+    "Expense ratio materially raised or fund wound down",
+    "Index methodology change away from the Nasdaq-100",
+    "Structural, multi-year breakdown of mega-cap tech leadership"
+  ],
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 291, "note": "DCA now (smaller size)", "timing": "Now" },
+      { "label": "Entry 2", "level": 255, "rangeMax": 270, "note": "Add zone on pullback", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 220, "note": "Tech-correction value", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 320, "pct": 10.0, "note": "Long-run base case" },
+    "tp2": { "price": 350, "pct": 20.3, "note": "Multi-year growth" },
+    "tp3": { "price": 410, "pct": 40.9, "note": "Long-run compounding" },
+    "stopLoss": {
+      "tight": 255, "tightPct": -12, "tightNote": "Accumulate-band floor (add, don't sell)",
+      "hard": 220, "hardPct": -24, "hardNote": "Only if thesis breaks",
+      "riskReward": "n/a (DCA)", "rrNote": "DCA satellite, not a daily stop", "rrWarning": "Higher volatility — smaller size"
+    },
+    "verdict": "Growth/tech satellite at 0.15% — DCA a smaller slice; lean in on tech drawdowns.",
+    "approach": "DCA"
+  },
+  "sources": [
+    "https://stockanalysis.com/etf/qqqm/",
+    "https://etfdb.com/etf/QQQM/",
+    "https://www.dividend.com/etfs/qqqm-invesco-nasdaq-100-etf/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "QQQM ให้เข้าถึง Nasdaq-100 — เครื่องยนต์ growth/tech ของหุ้นใหญ่สหรัฐ — ที่ต้นทุน 0.15% เป็นเวอร์ชัน buy-and-hold ของ QQQ. โตสูงกว่าแต่กระจุก tech + valuation แพง เลยได้คะแนน DCA ต่ำกว่ากองกระจาย/value เป็น satellite สาย growth มากกว่าจะเป็น core.",
+      "priceNote": "Nasdaq-100 growth tilt — โตสูงแต่ valuation/กระจุก tech แพงกว่า",
+      "scoreLabel": "ETF",
+      "risks": [
+        "กระจุก tech / mega-cap สูง — ย่อแรงกว่า",
+        "valuation แพงกว่าตลาดรวม",
+        "ไม่มี financials/value ถ่วงสมดุล"
+      ],
+      "macroRisk": { "summary": "ไวต่อ Fed ระดับกลางจากการกระจุก growth/tech — จัดเป็น satellite ไม่ใช่ core" },
+      "entryStrategy": { "verdict": "satellite สาย growth/tech ที่ 0.15% — DCA สัดส่วนเล็ก เติมตอน tech ย่อ" }
+    }
+  }
+}
