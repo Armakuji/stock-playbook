@@ -1,0 +1,206 @@
+{
+  "ticker": "LUNR",
+  "companyName": "Intuitive Machines, Inc.",
+  "companyDescription": "NASA lunar contractor & space infrastructure company · IM-3 South Pole mission H2 2026 · $1.1B backlog · Lunar Reconnaissance Orbiter prime contractor — the Lockheed Martin of the new Moon race",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-29T00:00:00.000Z",
+  "price": 19.79,
+  "priceChange": -1.05,
+  "priceNote": "Dipped on $500M equity offering announced Jun 2. Core thesis intact: $1.1B backlog + $180M South Pole NASA contract + IM-3 H2 2026. Roth Capital PT $75 = 279% upside.",
+  "marketCap": "$2.5B",
+  "sector": "Aerospace / Space Infrastructure",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 76,
+  "summary": "Intuitive Machines is becoming the primary commercial contractor for NASA's lunar program. The company won a $180M NASA lunar South Pole mission contract, acquired Lanteris Space Systems for up to $851M, and became prime contractor for two NASA lunar imaging instruments. Record Q1 2026 backlog hit $1.1B (+records). IM-3 Reiner Gamma mission is planned for H2 2026. Avg analyst PT $40.78 = 106% upside — Roth Capital's $75 street-high implies 279%.",
+  "catalysts": [
+    {
+      "icon": "🌙",
+      "name": "IM-3 Mission Launch (H2 2026)",
+      "description": "IM-3 will land at Reiner Gamma — a magnetic anomaly near the Moon's equator. Mission is contracted and funded. Successful landing would demonstrate operational repeatability beyond IM-1 and IM-2, unlocking commercial and government launch cadence.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-10-31",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🏛️",
+      "name": "NASA $180M South Pole Contract",
+      "description": "Intuitive Machines won a $180.4M NASA contract for a lunar South Pole mission. This is NASA's highest-priority landing zone — critical for Artemis base camp and water ice research. LUNR is the sole contractor.",
+      "urgencyLabel": "AWARDED",
+      "dateBadge": "2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "📡",
+      "name": "Lunar Reconnaissance Orbiter Prime Contractor",
+      "description": "LUNR was awarded prime contractor role for NASA's Lunar Reconnaissance Orbiter Camera and ShadowCam (Korea Pathfinder). Two 3-year cost-plus contracts totaling $20M — recurring government revenue that validates LUNR as NASA's trusted commercial partner.",
+      "urgencyLabel": "ACTIVE",
+      "dateBadge": "2026-2029",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "green",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "IM-1 (Feb 2024) landed sideways — execution risk on lunar missions is real and binary (success vs. mission failure)",
+    "$500M at-the-market equity raise announced Jun 2 = dilution risk; share count could increase 15-20%",
+    "NASA budget uncertainty — US government continuing resolution or spending cuts could delay contract payouts",
+    "Small market cap ($2.5B) with high volatility — 52-week range $8 to $46 shows extreme swings",
+    "Lanteris Space Systems acquisition up to $851M = significant integration and cost risk"
+  ],
+  "estimateDates": [
+    { "event": "IM-3 Mission Launch", "dateRange": "H2 2026", "note": "Reiner Gamma landing — operational repeatability proof point", "est": "Mission success", "highlight": "blue" },
+    { "event": "Q2 2026 Earnings", "dateRange": "Aug 2026", "note": "Backlog growth + Lanteris integration update key", "est": "est. Backlog $1.2B+", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -35, "price": 13 },
+    { "label": "Base", "color": "yellow", "pct": 106, "price": 41 },
+    { "label": "Bull", "color": "green", "pct": 160, "price": 52 },
+    { "label": "Moon", "color": "purple", "pct": 279, "price": 75 }
+  ],
+  "analystTargets": [
+    { "firm": "Roth Capital", "target": 75, "rating": "Buy", "note": "Street-high — full lunar program adoption scenario" },
+    { "firm": "B. Riley", "target": 45, "rating": "Buy", "note": "Base case — IM-3 success + NASA contract wins" },
+    { "firm": "Consensus (9 analysts)", "target": 41, "rating": "Buy", "note": "106% upside from current — broad conviction" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "FOMC July 29 — 70% hold. LUNR revenue is primarily NASA government contracts — fixed-price and cost-plus contracts are not rate-sensitive.",
+    "inflationNote": "Space hardware costs rising with materials inflation, but cost-plus contracts pass through cost increases to NASA. Fixed-price contracts have some margin compression risk.",
+    "sectorImpact": "LOW impact. Government contract base is rate-insensitive. Commercial launch revenue (smaller portion) is more macro-sensitive. Dilution from $500M equity raise is bigger risk than rates.",
+    "summary": "Fed risk LOW. NASA contract base provides rate-insensitive revenue. Key risks are execution (mission success) and dilution from $500M equity raise."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 20, "note": "Current price — post-dilution selloff. Valid entry for speculative position.", "timing": "Now (small size)" },
+      { "label": "Entry 2", "level": 16, "rangeMax": 17, "note": "Near 52-week support zone — best R/R for spec entry.", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 13, "note": "Bear case support — only if NASA budget concerns materialize", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 32, "pct": 61.7, "note": "Post-IM-3 success re-rate" },
+    "tp2": { "price": 45, "pct": 127.4, "note": "B. Riley base case target" },
+    "tp3": { "price": 75, "pct": 279.0, "note": "Roth Capital street-high — full commercial lunar platform", "moon": true },
+    "stopLoss": {
+      "tight": 16, "tightPct": -19.2, "tightNote": "Below post-dilution support = further selling pressure",
+      "hard": 12, "hardPct": -39.4, "hardNote": "Near 52-week lows = mission failure scenario",
+      "riskReward": "3.5 : 1", "rrNote": "Entry 2 ($16.50) vs TP1 ($32)", "rrWarning": "High R/R but speculative — size 3-5% max"
+    },
+    "verdict": "Speculative BUY — small position now, add at $16-17 dip. Target $41-75. Size 3-5% max — mission binary risk.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "Space infrastructure stocks typically run 20-50% in the 4-8 weeks leading up to a confirmed mission launch date. LUNR IM-2 (Feb 2024 attempt) ran +85% in 3 weeks before launch. IM-3 confirmation date will likely trigger a similar pre-launch run.",
+    "preRunupTiming": "4-8 สัปดาห์ก่อน mission launch announcement",
+    "preRunupPct": "+20-85%",
+    "postWin": {
+      "avgPct": 60,
+      "range": "+40% to +120%",
+      "note": "LUNR IM-1 success (Feb 2024): stock ran +120% over 2 weeks as it became first US commercial lunar lander. IM-3 success at South Pole (higher strategic value) could be similar.",
+      "exampleDate": "Feb 2024"
+    },
+    "postLose": {
+      "avgPct": -40,
+      "range": "-30% to -60%",
+      "note": "LUNR IM-1 landing failure (landed sideways) — stock dropped -35% over 1 week despite partial success. Full mission failure = -50-60% scenario.",
+      "exampleDate": "Feb 2024"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "Speculative with binary mission risk. 4% sizing — high upside but IM-1 showed execution can disappoint. Scale in at dip and add on launch confirmation."
+    },
+    "stopPreCatalyst": { "pct": -20, "price": 16, "note": "หลุด $16 ก่อน mission confirmation = ลดขนาดก่อน" },
+    "stopPostCatalyst": { "pct": -30, "note": "ถ้า mission fail หรือ NASA cancel contract — ออกทันที" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "LUNR",
+      "event": "IM-1 First Commercial US Lunar Landing",
+      "date": "Feb 2024",
+      "movePct": 120,
+      "days": 14,
+      "outcome": "mixed",
+      "note": "IM-1 landed sideways but still became first US commercial Moon lander. Stock +120% pre-landing, then -35% on partial failure. Shows the extreme binary nature — need full IM-3 success for sustained re-rate."
+    },
+    {
+      "ticker": "RKLB",
+      "event": "Neutron Rocket Defense Contract Win",
+      "date": "2026",
+      "movePct": 35,
+      "days": 10,
+      "outcome": "good",
+      "note": "Space infrastructure peers (RKLB) re-rated +35% on major government contract wins. LUNR's $180M NASA South Pole win is similarly large relative to market cap."
+    },
+    {
+      "ticker": "SPCE",
+      "event": "First Commercial Spaceflight",
+      "date": "Jul 2021",
+      "movePct": 45,
+      "days": 7,
+      "outcome": "good",
+      "note": "Virgin Galactic first commercial spaceflight triggered +45% re-rate. Space milestone events consistently deliver outsized near-term moves — the Moon is higher stakes."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Intuitive Machines wins $180M NASA lunar South Pole contract + prime contractor for Lunar Reconnaissance Orbiter Camera",
+    "url": "https://simplywall.st/stocks/us/capital-goods/nasdaq-lunr/intuitive-machines/news/new-nasa-lunar-south-pole-contract-could-be-a-game-changer-f",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://simplywall.st/stocks/us/capital-goods/nasdaq-lunr/intuitive-machines/news/new-nasa-lunar-south-pole-contract-could-be-a-game-changer-f",
+    "https://finance.yahoo.com/markets/stocks/articles/intuitive-machines-lunr-14-6-030609278.html",
+    "https://www.tipranks.com/stocks/lunr/forecast",
+    "https://www.marketbeat.com/stocks/NASDAQ/LUNR/forecast/",
+    "https://www.fxleaders.com/news/2026/06/01/intuitive-machines-lunr-stock-surges-2026-moon-missions-nasa-deals-drive-rally/",
+    "https://www.stocktitan.net/sec-filings/LUNR/8-k-intuitive-machines-inc-reports-material-event-fb6e3a1ad62f.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Intuitive Machines กำลังกลายเป็น prime contractor หลักของ NASA สำหรับโครงการ lunar ชนะ contract $180M South Pole mission + เป็น prime contractor LRO Camera backlog $1.1B IM-3 mission H2 2026 PT ฉันทามติ $41 = upside 106% / Roth Capital $75 = upside 279%",
+      "priceNote": "ย่อจาก equity raise $500M dilution — thesis ยังสมบูรณ์",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "IM-3 Mission Launch H2 2026", "description": "ลงจอด Reiner Gamma — ถ้า success = proof ว่า LUNR ทำ lunar landing ได้ repeatably" },
+        { "name": "NASA $180M South Pole Contract", "description": "NASA South Pole = ที่สำคัญที่สุดของ Moon (water ice + Artemis base camp) LUNR เป็น sole contractor" },
+        { "name": "Lunar Reconnaissance Orbiter Prime", "description": "prime contractor 2 NASA instruments = recurring government revenue 3 ปี" }
+      ],
+      "risks": [
+        "IM-1 ลงจอดเอียง — mission binary risk สูงมาก",
+        "$500M equity raise = dilution 15-20%",
+        "NASA budget cuts อาจกระทบ contract",
+        "Market cap $2.5B — volatility สูง 52w range $8-$46",
+        "Lanteris acquisition $851M = integration risk"
+      ],
+      "macroRisk": {
+        "rateOutlook": "FOMC 29 ก.ค. — 70% hold NASA contract base ไม่ sensitive กับดอกเบี้ย",
+        "inflationNote": "cost-plus contract ส่งผ่าน inflation ได้ fixed-price contract มี margin risk นิดหน่อย",
+        "sectorImpact": "ผลกระทบ LOW — government contract base rate-insensitive ความเสี่ยงหลักคือ dilution + mission execution",
+        "summary": "ความเสี่ยง Fed ต่ำ ความเสี่ยงหลักคือ mission success/failure และ dilution จาก equity raise"
+      },
+      "entryStrategy": {
+        "verdict": "Speculative BUY — size เล็ก เพิ่มที่ $16-17 dip เป้า $41-75 ถือไม่เกิน 5%",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน หลัง dilution selloff", "timing": "ตอนนี้ (size เล็ก)" },
+          { "note": "แนวรับ 52-week zone — R/R ดีที่สุด", "timing": "ถ้าย่อ" },
+          { "note": "Bear case support — NASA budget risk", "timing": "Deep dip เท่านั้น" }
+        ],
+        "tp1": { "note": "หลัง IM-3 success re-rate" },
+        "tp2": { "note": "B. Riley base case target" },
+        "tp3": { "note": "Roth Capital — full commercial lunar platform", "moon": true },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า post-dilution support = เพิ่ม selling pressure",
+          "hardNote": "ใกล้ 52w low = mission failure scenario",
+          "rrNote": "Entry 2 ($16.50) vs TP1 ($32)",
+          "rrWarning": "R/R ดีแต่ binary risk — size 3-5% max"
+        }
+      },
+      "estimateDates": [
+        { "event": "IM-3 Mission Launch", "note": "Reiner Gamma — proof of operational repeatability" },
+        { "event": "Earnings Q2 2026", "note": "backlog growth + Lanteris integration update" }
+      ]
+    }
+  }
+}
