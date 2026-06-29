@@ -9,6 +9,55 @@ import type { RankChange } from "@/lib/ranking-history";
 
 type Tab = "funds" | "stocks";
 
+// ── Ranking Change with its own Funds/Stocks toggle (independent of main tab) ──
+function RankingChangeSection({
+  fundChanges, stockChanges, initial, th,
+}: { fundChanges: RankChange[]; stockChanges: RankChange[]; initial: Tab; th: boolean }) {
+  const [t, setT] = useState<Tab>(initial);
+  const rows = t === "funds" ? fundChanges : stockChanges;
+  const tabs: { key: Tab; icon: string; label: string }[] = [
+    { key: "funds", icon: "🏦", label: th ? "กองทุน" : "Funds" },
+    { key: "stocks", icon: "📈", label: th ? "หุ้น" : "Stocks" },
+  ];
+  if (fundChanges.length === 0 && stockChanges.length === 0) return null;
+
+  return (
+    <div style={{ marginTop: 28 }}>
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-end", marginBottom: 10 }}>
+        <div style={{ display: "inline-flex", gap: 2, background: "#07111a", border: "1px solid #102530", borderRadius: 9, padding: 3 }}>
+          {tabs.map((x) => {
+            const active = t === x.key;
+            return (
+              <button key={x.key} onClick={() => setT(x.key)} style={{
+                display: "flex", alignItems: "center", gap: 5,
+                fontSize: 11, fontWeight: 800, padding: "5px 12px", borderRadius: 6,
+                border: "none", cursor: "pointer", fontFamily: "var(--font-mono, monospace)",
+                background: active ? "linear-gradient(90deg, #2dd4bf, #38bdf8)" : "transparent",
+                color: active ? "#04080a" : "#4a6b78", transition: "background .15s, color .15s",
+              }}>
+                <span>{x.icon}</span>{x.label}
+                <span style={{
+                  fontSize: 9, fontWeight: 800, padding: "1px 5px", borderRadius: 4,
+                  background: active ? "rgba(4,8,10,0.18)" : "#102530", color: active ? "#04080a" : "#4a6b78",
+                }}>
+                  {(x.key === "funds" ? fundChanges : stockChanges).length}
+                </span>
+              </button>
+            );
+          })}
+        </div>
+      </div>
+      {rows.length > 0 ? (
+        <RankingChangeTable rows={rows} />
+      ) : (
+        <div style={{ textAlign: "center", padding: "24px 0", color: "#3a5560", fontSize: 12, fontFamily: "var(--font-mono, monospace)" }}>
+          {th ? "ยังไม่มีการเปลี่ยนอันดับสำหรับกลุ่มนี้" : "No ranking changes yet for this group"}
+        </div>
+      )}
+    </div>
+  );
+}
+
 export function DcaContent({
   funds,
   stocks,
@@ -26,7 +75,6 @@ export function DcaContent({
 
   const isFund = tab === "funds";
   const ranked = isFund ? funds : stocks;
-  const changes = isFund ? fundChanges : stockChanges;
 
   const topPick = ranked[0];
   const cheap = ranked.filter((r) => r.valuationBand?.zone === "cheap").length;
@@ -197,8 +245,13 @@ export function DcaContent({
           </div>
         )}
 
-        {/* ── Ranking Change ────────────────────────────────────────────── */}
-        <RankingChangeTable rows={changes} />
+        {/* ── Ranking Change — both pools, own toggle ───────────────────── */}
+        <RankingChangeSection
+          fundChanges={fundChanges}
+          stockChanges={stockChanges}
+          initial={tab}
+          th={th}
+        />
 
         {/* ── Strategy reminder ─────────────────────────────────────────── */}
         {ranked.length > 0 && (
