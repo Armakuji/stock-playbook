@@ -182,6 +182,28 @@ body {
   -webkit-backdrop-filter: blur(14px) saturate(140%);
 }
 
+@media (max-width: 640px) {
+  .sticky-summary-row {
+    padding: 8px 12px !important;
+    gap: 8px !important;
+  }
+  .sticky-summary-left {
+    flex: 1 1 100%;
+  }
+  .sticky-summary-chip {
+    display: none;
+  }
+  .sticky-summary-metrics {
+    flex: 1 1 100%;
+    justify-content: space-between !important;
+    gap: 8px !important;
+  }
+  .sticky-summary-metric {
+    flex: 1 1 0;
+    text-align: left !important;
+  }
+}
+
 /* ─── Terminal depth: continuous atmosphere on the report surface ───────────── */
 
 .terminal-surface {

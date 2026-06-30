@@ -6,15 +6,16 @@
 // Must read private/journal.json on every request — never bake trades in at build time.
 export const dynamic = "force-dynamic";
 
-import { readJournal } from "@/lib/journal";
+import { readJournal, readValidation } from "@/lib/journal";
 import { computeStats } from "@/lib/journal-math";
 import { getAllReports, getAllReportsGrouped } from "@/lib/reports";
 import { JournalContent } from "./JournalContent";
 
 export default function JournalPage() {
-  const journal = readJournal();
-  const stats   = computeStats(journal.trades);
-  const reports = getAllReports();
+  const journal    = readJournal();
+  const stats      = computeStats(journal.trades);
+  const reports    = getAllReports();
+  const validation = readValidation();
 
   // Slim down to only what the form needs — avoids shipping full report JSONs to client
   const reportOptions = reports.map((r) => ({
@@ -54,5 +55,5 @@ export default function JournalPage() {
     }));
   }
 
-  return <JournalContent initialTrades={journal.trades} stats={stats} reportOptions={reportOptions} priceMap={priceMap} reportsByTicker={reportsByTicker} />;
+  return <JournalContent initialTrades={journal.trades} stats={stats} reportOptions={reportOptions} priceMap={priceMap} reportsByTicker={reportsByTicker} validation={validation} />;
 }

@@ -45,3 +45,21 @@ export interface JournalFile {
   _note: string;
   trades: Trade[];
 }
+
+export type ValidatorVerdict = "HOLD" | "CUT" | "WATCH";
+
+export interface ValidatorResult {
+  verdict: ValidatorVerdict;
+  thesisIntact: boolean;
+  stopBreached: boolean;
+  atRisk: boolean;
+  summary: string;
+  action: string;
+  color: "green" | "yellow" | "red";
+}
+
+export interface JournalValidation {
+  _note: string;
+  generatedAt: string; // ISO timestamp
+  results: Record<string, ValidatorResult>; // keyed by ticker
+}
