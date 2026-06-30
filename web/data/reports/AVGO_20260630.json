@@ -1,0 +1,212 @@
+{
+  "ticker": "AVGO",
+  "companyName": "Broadcom Inc.",
+  "companyDescription": "Custom AI ASIC · Google TPU + Apple + Meta + OpenAI 'Jalapeño' silicon design · VMware software + networking moats",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-30T00:00:00.000Z",
+  "price": 375.19,
+  "priceChange": 0.74,
+  "priceNote": "Down 24% from $495 ATH after Q2 miss — 48 analysts still Strong Buy, avg target $523",
+  "marketCap": "$1.78T",
+  "sector": "Technology / Semiconductors",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 78,
+  "summary": "Broadcom is the dominant custom AI ASIC designer for Google (TPU), Apple, Meta, and now OpenAI ('Jalapeño' chip). After a -15% post-Q2 drop on no guidance raise, AVGO trades 24% below ATH at a historically attractive re-entry zone. 48 analysts rate Strong Buy with avg target $523 (+39%). Q3 earnings Sep 3 is the next major catalyst — a guidance raise on the $100B AI revenue target would sharply reprice the stock.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 FY2026 Earnings",
+      "description": "Q3 earnings Sep 3 — market needs Hock Tan to raise $100B AI revenue target to re-rate. Q2 miss caused -15% drop; Q3 is the make-or-break re-rating event.",
+      "urgencyLabel": "65 DAYS",
+      "dateBadge": "Sep 3, 2026",
+      "catalystDate": "2026-09-03",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "🤝",
+      "name": "OpenAI 'Jalapeño' AI Chip",
+      "description": "Broadcom + OpenAI unveiled 'Jalapeño' custom AI inference chip (Jun 24) — adds a new hyperscaler to the ASIC pipeline, diversifying beyond Google/Apple/Meta.",
+      "urgencyLabel": "NEW",
+      "dateBadge": "Jun 24, 2026",
+      "catalystDate": "2026-06-24",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "⚠️",
+      "name": "Google TPU Share Risk",
+      "description": "Google diversifying TPU design to MediaTek. AVGO's share projected 95%→65% by 2028. 5-year contract through 2031 still intact — AVGO holds highest-margin training workloads.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Google TPU market share erosion: 95% → ~65% by 2028 as MediaTek gains supplier share",
+    "Co-founder Henry Samueli selling $720M+ in stock — significant insider selling pressure",
+    "Q2 FY2026 revenue miss ($22.19B vs $22.27B est) + no $100B AI guidance raise — high bar for Q3",
+    "Premium valuation at P/E 61.99 — vulnerable to Fed rate surprises or macro slowdown",
+    "Semiconductor sector at 19.7% of S&P 500 — crowded, outsized selloff risk on macro shock"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q3 FY2026 Earnings",
+      "dateRange": "Sep 3, 2026",
+      "note": "Key: will Hock Tan raise $100B AI revenue target? Q2 miss set high expectations bar.",
+      "est": "EPS ~$2.55 est.",
+      "highlight": "red"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -18, "price": 308 },
+    { "label": "Base", "color": "yellow", "pct": 23, "price": 461 },
+    { "label": "Bull", "color": "green", "pct": 39, "price": 522 },
+    { "label": "Moon", "color": "purple", "pct": 60, "price": 600 }
+  ],
+  "analystTargets": [
+    { "firm": "J.P. Morgan", "target": 580, "rating": "Buy" },
+    { "firm": "Jefferies", "target": 550, "rating": "Buy" },
+    { "firm": "Oppenheimer", "target": 535, "rating": "Buy" },
+    { "firm": "UBS", "target": 485, "rating": "Buy" },
+    { "firm": "Consensus (48 analysts)", "target": 524, "rating": "Strong Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed holding at 4.25–4.50%. No cut expected until Sep–Nov 2026.",
+    "inflationNote": "PCE elevated; delayed cuts compress AVGO's premium P/E of 62 — valuation headwind.",
+    "sectorImpact": "Semis at 19.7% of S&P 500 — crowded sector. Any macro shock triggers outsized AVGO selloff.",
+    "summary": "MEDIUM risk. Fed rate hold pressures 62x P/E. $75B+ TTM revenue and VMware cash flows provide fundamental cushion. Rate cuts (whenever they come) will be a significant re-rating catalyst."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 375, "note": "Current price — down 24% from ATH, near-term support zone", "timing": "Now", "preferred": true },
+      { "label": "Entry 2", "level": 350, "rangeMax": 360, "note": "Technical support below Q2 earnings drop", "timing": "If dips" },
+      { "label": "Entry 3", "level": 310, "note": "200-day MA area / max fear zone", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 460, "pct": 22.7, "note": "Pre-Q3 earnings recovery target" },
+    "tp2": { "price": 523, "pct": 39.5, "note": "Analyst consensus avg target" },
+    "tp3": { "price": 600, "pct": 60.0, "note": "JPM/Jefferies bull case · 2027", "moon": true },
+    "stopLoss": {
+      "tight": 342, "tightPct": -8.8, "tightNote": "Below post-Q2 support structure",
+      "hard": 305, "hardPct": -18.7, "hardNote": "200-day MA breach — thesis broken",
+      "riskReward": "2.6 : 1", "rrNote": "TP1 vs tight stop", "rrWarning": "Good R/R at dip-buy level"
+    },
+    "verdict": "Buy the post-Q2 dip — thesis intact, Q3 Sep 3 is the re-rating event",
+    "approach": "DCA"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "AVGO มักวิ่ง +5–10% ใน 1–2 สัปดาห์ก่อน earnings จาก institutional positioning และ options premium build-up ก่อน binary event",
+    "preRunupTiming": "1–2 สัปดาห์ก่อน Sep 3",
+    "preRunupPct": "+5–10%",
+    "postWin": {
+      "avgPct": 8,
+      "range": "+4.8% to +15%",
+      "note": "Q1 FY2026 (Mar 4, 2026) beat → +4.8% next day. Pattern: guidance raise triggers larger sustained move vs. simple EPS beat.",
+      "exampleDate": "Mar 2026"
+    },
+    "postLose": {
+      "avgPct": -13,
+      "range": "-10% to -18%",
+      "note": "Q2 FY2026 (Jun 3, 2026): Revenue miss -$80M + no $100B guidance raise → -15% gap down. High expectations = high downside on miss.",
+      "exampleDate": "Jun 2026"
+    },
+    "spotSizing": {
+      "pct": 15,
+      "reason": "Core holding conviction — Strong Buy consensus, 39% upside to avg target, binary Q3 catalyst. DCA approach ลดความเสี่ยง earnings binary outcome"
+    },
+    "stopPreCatalyst": { "pct": -8.8, "price": 342, "note": "หลุด $342 = post-Q2 support ล้มเหลว thesis เปลี่ยน ออก" },
+    "stopPostCatalyst": { "pct": -12, "note": "ถ้า Q3 miss ซ้ำ + ไม่ขึ้น guidance — ออกที่ -12% จาก pre-earnings level" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "AVGO",
+      "event": "Q1 FY2026 Earnings Beat",
+      "date": "Mar 2026",
+      "movePct": 4.8,
+      "days": 1,
+      "outcome": "good",
+      "note": "Beat consensus EPS → +4.8% next day. Guidance held steady. Pattern: beat without guidance raise = modest positive move only."
+    },
+    {
+      "ticker": "AVGO",
+      "event": "Q2 FY2026 Revenue Miss + No Guidance Raise",
+      "date": "Jun 2026",
+      "movePct": -15,
+      "days": 1,
+      "outcome": "bad",
+      "note": "EPS beat +$0.04 but revenue miss -$80M and Hock Tan didn't raise $100B AI target → -15% gap down. High expectations = high downside risk."
+    },
+    {
+      "ticker": "NVDA",
+      "event": "Q2 FY2025 Earnings + Guidance Raise",
+      "date": "Aug 2024",
+      "movePct": 9,
+      "days": 1,
+      "outcome": "good",
+      "note": "AI chip earnings beat with explicit guidance raise → sustained re-rating. If AVGO raises $100B target in Q3, similar dynamic expected."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Google selects MediaTek over Broadcom for next-generation TPU AI chip",
+    "url": "https://www.gurufocus.com/news/8929646/broadcom-avgo-faces-potential-competition-from-mediatek-for-googles-tpu-supply",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/avgo/",
+    "https://stockanalysis.com/stocks/avgo/forecast/",
+    "https://finance.yahoo.com/quote/AVGO/",
+    "https://www.gurufocus.com/news/8929646/broadcom-avgo-faces-potential-competition-from-mediatek-for-googles-tpu-supply",
+    "https://www.cnbc.com/2026/06/03/broadcom-avgo-earnings-report-q2-2026.html",
+    "https://oplexa.com/broadcom-google-tpu-deal-2026/",
+    "https://capacityglobal.com/news/broadcom-locks-in-long-term-google-tpu-deal/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Broadcom คือ custom AI ASIC designer อันดับ 1 ของโลก — Google TPU, Apple, Meta และ OpenAI ('Jalapeño') ล้วนพึ่ง AVGO ในการออกแบบ silicon. หลัง Q2 earnings miss ราคาย่อ 24% จาก ATH — โอกาส re-entry ก่อน Q3 Sep 3. นักวิเคราะห์ 48 คน Strong Buy avg target $523 (+39%).",
+      "priceNote": "ย่อ 24% จาก ATH $495 หลัง Q2 miss — นักวิเคราะห์ยังคง Strong Buy เป้าเฉลี่ย $523",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "Q3 FY2026 Earnings", "description": "Q3 earnings Sep 3 — ตลาดรอ Hock Tan ขึ้น guidance $100B AI revenue. Q2 ไม่ขึ้น ทำให้ร่วง -15%. Q3 คือ re-rating event สำคัญที่สุด." },
+        { "name": "OpenAI 'Jalapeño' Chip Partnership", "description": "AVGO + OpenAI เปิดตัว custom AI inference chip 'Jalapeño' (Jun 24) — เพิ่ม hyperscaler ลูกค้าใหม่นอกจาก Google, Apple, Meta." },
+        { "name": "Google TPU Market Share Risk", "description": "Google ดึง MediaTek เข้ามาแชร์ TPU design — AVGO share ลด 95%→65% ภายใน 2028 แต่ 5-year contract ถึง 2031 ยังมีผล." }
+      ],
+      "risks": [
+        "Google ลด dependency — MediaTek เข้ามาแชร์ TPU design share ลดเรื่อยๆ",
+        "Co-founder Samueli ขาย stock $720M+ — insider selling สัญญาณเตือน",
+        "Q2 miss + ไม่ขึ้น guidance ตั้งบาร์สูงมากสำหรับ Q3 Sep 3",
+        "P/E 62x สูง — เสี่ยงถ้า Fed ไม่ลด rate ตามคาด",
+        "Semis 19.7% ของ S&P 500 — crowded trade เสี่ยง selloff"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง rate 4.25-4.50% ไม่มีสัญญาณ cut ก่อน Sep-Nov 2026",
+        "inflationNote": "PCE ยังสูง delay cut กดดัน P/E 62x",
+        "sectorImpact": "Semis crowded — macro shock กระทบ AVGO รุนแรงกว่า sector อื่น",
+        "summary": "ความเสี่ยง MEDIUM — Fed hold กดดัน valuation แต่ VMware + AI chip FCF แข็งแกร่งเป็น cushion"
+      },
+      "entryStrategy": {
+        "verdict": "ซื้อ dip หลัง Q2 miss — thesis ยังครบ รอ Q3 Sep 3 เป็น catalyst re-rating",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน ย่อ 24% จาก ATH — zone support ระยะสั้น", "timing": "ตอนนี้" },
+          { "note": "Support zone ใต้แนว Q2 earnings drop", "timing": "ถ้าย่อ" },
+          { "note": "แถว 200-day MA — fear zone สูงสุด", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "เป้า recovery ก่อน Q3 earnings" },
+        "tp2": { "note": "Analyst consensus avg target" },
+        "tp3": { "note": "JPM/Jefferies bull case ปี 2027" },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า post-Q2 support — thesis เปลี่ยน",
+          "hardNote": "หลุด 200-day MA — ออก",
+          "rrNote": "TP1 vs tight stop",
+          "rrWarning": "R/R ดีที่จุด dip นี้"
+        }
+      },
+      "estimateDates": [
+        { "event": "Q3 FY2026 Earnings", "note": "Key: Hock Tan จะขึ้น $100B AI guidance ไหม? — นั่นคือ re-rating trigger" }
+      ]
+    }
+  }
+}
