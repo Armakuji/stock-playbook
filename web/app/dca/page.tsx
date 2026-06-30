@@ -2,6 +2,8 @@ import { getDcaStocks, getDcaFunds, rankDcaReports } from "@/lib/dca";
 import { getDcaRankingChanges } from "@/lib/ranking-history";
 import { DcaContent } from "./DcaContent";
 
+export const dynamic = "force-dynamic";
+
 export default function DcaPage() {
   const funds = rankDcaReports(getDcaFunds());
   const stocks = rankDcaReports(getDcaStocks());

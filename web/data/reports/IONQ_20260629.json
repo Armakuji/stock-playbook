@@ -53,19 +53,66 @@
     "Small customer concentration — revenue tied to a few large government and enterprise deals"
   ],
   "estimateDates": [
-    { "event": "Q2 2026 Earnings", "dateRange": "Aug 2026", "note": "RPO $500M+ would be key bullish signal", "est": "est. Rev $50M+", "highlight": "blue" },
-    { "event": "AQT 64 Achievement", "dateRange": "2026", "note": "Technical milestone that unlocks enterprise contract upgrades", "est": "R&D milestone", "highlight": "yellow" }
+    {
+      "event": "Q2 2026 Earnings",
+      "dateRange": "Aug 2026",
+      "note": "RPO $500M+ would be key bullish signal",
+      "est": "est. Rev $50M+",
+      "highlight": "blue"
+    },
+    {
+      "event": "AQT 64 Achievement",
+      "dateRange": "2026",
+      "note": "Technical milestone that unlocks enterprise contract upgrades",
+      "est": "R&D milestone",
+      "highlight": "yellow"
+    }
   ],
   "scenarios": [
-    { "label": "Bear", "color": "red", "pct": -35, "price": 33 },
-    { "label": "Base", "color": "yellow", "pct": 34, "price": 69 },
-    { "label": "Bull", "color": "green", "pct": 60, "price": 82 },
-    { "label": "Moon", "color": "purple", "pct": 95, "price": 100 }
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -35,
+      "price": 33
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 34,
+      "price": 69
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 60,
+      "price": 82
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 95,
+      "price": 100
+    }
   ],
   "analystTargets": [
-    { "firm": "Consensus (13 analysts)", "target": 69, "rating": "Strong Buy", "note": "34% upside from current" },
-    { "firm": "High Estimate", "target": 100, "rating": "Buy", "note": "Moon case — full quantum advantage adoption" },
-    { "firm": "Low Estimate", "target": 45, "rating": "Hold", "note": "Skeptics: execution risk + cash burn" }
+    {
+      "firm": "Consensus (13 analysts)",
+      "target": 69,
+      "rating": "Strong Buy",
+      "note": "34% upside from current"
+    },
+    {
+      "firm": "High Estimate",
+      "target": 100,
+      "rating": "Buy",
+      "note": "Moon case — full quantum advantage adoption"
+    },
+    {
+      "firm": "Low Estimate",
+      "target": 45,
+      "rating": "Hold",
+      "note": "Skeptics: execution risk + cash burn"
+    }
   ],
   "macroRisk": {
     "fedRisk": "LOW",
@@ -76,17 +123,53 @@
   },
   "entryStrategy": {
     "entryLevels": [
-      { "label": "Entry 1", "level": 51, "note": "Current price — post-EO surge. Momentum entry.", "timing": "Now (small size)" },
-      { "label": "Entry 2", "level": 44, "rangeMax": 47, "note": "Pre-EO consolidation zone. Best R/R.", "timing": "If dips", "preferred": true },
-      { "label": "Entry 3", "level": 37, "note": "50-day MA support — deep dip only", "timing": "Deep dip" }
+      {
+        "label": "Entry 1",
+        "level": 51,
+        "note": "Current price — post-EO surge. Momentum entry.",
+        "timing": "Now (small size)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 44,
+        "rangeMax": 47,
+        "note": "Pre-EO consolidation zone. Best R/R.",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 37,
+        "note": "50-day MA support — deep dip only",
+        "timing": "Deep dip"
+      }
     ],
-    "tp1": { "price": 65, "pct": 26.8, "note": "Near-term analyst consensus" },
-    "tp2": { "price": 75, "pct": 46.3, "note": "Bull case — AQT milestone + earnings beat" },
-    "tp3": { "price": 100, "pct": 95.1, "note": "Street-high target — quantum advantage confirmed", "moon": true },
+    "tp1": {
+      "price": 65,
+      "pct": 26.8,
+      "note": "Near-term analyst consensus"
+    },
+    "tp2": {
+      "price": 75,
+      "pct": 46.3,
+      "note": "Bull case — AQT milestone + earnings beat"
+    },
+    "tp3": {
+      "price": 100,
+      "pct": 95.1,
+      "note": "Street-high target — quantum advantage confirmed",
+      "moon": true
+    },
     "stopLoss": {
-      "tight": 44, "tightPct": -14.1, "tightNote": "Below pre-EO consolidation = sentiment reversal",
-      "hard": 37, "hardPct": -27.8, "hardNote": "50-day MA breach = technical breakdown",
-      "riskReward": "3.1 : 1", "rrNote": "Entry 2 ($45) vs TP2 ($75)", "rrWarning": "Good R/R at dip entry — speculative sizing"
+      "tight": 44,
+      "tightPct": -14.1,
+      "tightNote": "Below pre-EO consolidation = sentiment reversal",
+      "hard": 37,
+      "hardPct": -27.8,
+      "hardNote": "50-day MA breach = technical breakdown",
+      "riskReward": "3.1 : 1",
+      "rrNote": "Entry 2 ($45) vs TP2 ($75)",
+      "rrWarning": "Good R/R at dip entry — speculative sizing"
     },
     "verdict": "Speculative BUY — small position now, add at $44-47 dip. Target $69-75 base case, $100 moon. Size 3-5% of portfolio max.",
     "approach": "Scale In"
@@ -112,8 +195,15 @@
       "pct": 4,
       "reason": "Speculative play — high conviction on policy tailwind and Q1 acceleration, but quantum is pre-profitability and technically complex. 4% sizing with scale-in at dip."
     },
-    "stopPreCatalyst": { "pct": -14, "price": 44, "note": "หลุด $44 pre-EO zone = สัญญาณ momentum หมด" },
-    "stopPostCatalyst": { "pct": -20, "note": "ถ้า earnings miss + RPO ไม่โต = ออก" }
+    "stopPreCatalyst": {
+      "pct": -14,
+      "price": 44,
+      "note": "หลุด $44 pre-EO zone = สัญญาณ momentum หมด"
+    },
+    "stopPostCatalyst": {
+      "pct": -20,
+      "note": "ถ้า earnings miss + RPO ไม่โต = ออก"
+    }
   },
   "comparableCases": [
     {
@@ -162,9 +252,18 @@
       "priceNote": "ขึ้น +3.9% วันนี้ จาก Presidential EO quantum boost — 52w range $25.89-$84.64",
       "scoreLabel": "Speculative",
       "catalysts": [
-        { "name": "Presidential EO Quantum Computing", "description": "ทรัมป์ลงนาม EO 23 มิ.ย. ส่งเสริม quantum — federal procurement mandate ตรง benefit IonQ" },
-        { "name": "Earnings Q2 2026", "description": "คาด ส.ค. 2026 — Q1 beat +755% YoY ถ้า Q2 โตต่อ + RPO $500M+ จะ re-rate ไป $75-80" },
-        { "name": "AQT Milestone", "description": "Algorithmic Qubit roadmap — แต่ละ milestone ดึง enterprise contract expansion" }
+        {
+          "name": "Presidential EO Quantum Computing",
+          "description": "ทรัมป์ลงนาม EO 23 มิ.ย. ส่งเสริม quantum — federal procurement mandate ตรง benefit IonQ"
+        },
+        {
+          "name": "Earnings Q2 2026",
+          "description": "คาด ส.ค. 2026 — Q1 beat +755% YoY ถ้า Q2 โตต่อ + RPO $500M+ จะ re-rate ไป $75-80"
+        },
+        {
+          "name": "AQT Milestone",
+          "description": "Algorithmic Qubit roadmap — แต่ละ milestone ดึง enterprise contract expansion"
+        }
       ],
       "risks": [
         "ยังไม่มีกำไร — เผา cash จาก R&D",
@@ -181,13 +280,29 @@
       "entryStrategy": {
         "verdict": "Speculative BUY — เข้าเล็กตอนนี้ เพิ่มที่ $44-47 dip เป้า $69-75 base / $100 moon ถือไม่เกิน 5%",
         "entryLevels": [
-          { "note": "ราคาปัจจุบัน post-EO momentum", "timing": "ตอนนี้ (size เล็ก)" },
-          { "note": "Pre-EO consolidation zone — R/R ดีที่สุด", "timing": "ถ้าย่อ" },
-          { "note": "50-day MA — deep dip entry", "timing": "Deep dip" }
+          {
+            "note": "ราคาปัจจุบัน post-EO momentum",
+            "timing": "ตอนนี้ (size เล็ก)"
+          },
+          {
+            "note": "Pre-EO consolidation zone — R/R ดีที่สุด",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "50-day MA — deep dip entry",
+            "timing": "Deep dip"
+          }
         ],
-        "tp1": { "note": "ฉันทามติ analyst ระยะใกล้" },
-        "tp2": { "note": "Bull case — AQT milestone + earnings beat" },
-        "tp3": { "note": "Street-high — quantum advantage confirmed", "moon": true },
+        "tp1": {
+          "note": "ฉันทามติ analyst ระยะใกล้"
+        },
+        "tp2": {
+          "note": "Bull case — AQT milestone + earnings beat"
+        },
+        "tp3": {
+          "note": "Street-high — quantum advantage confirmed",
+          "moon": true
+        },
         "stopLoss": {
           "tightNote": "ต่ำกว่า pre-EO zone = momentum หมด",
           "hardNote": "ทะลุ 50-day MA = technical breakdown",
@@ -196,8 +311,14 @@
         }
       },
       "estimateDates": [
-        { "event": "Earnings Q2 2026", "note": "RPO $500M+ = bullish signal สำคัญ" },
-        { "event": "AQT 64 Achievement", "note": "Technical milestone ดึง enterprise contract upgrades" }
+        {
+          "event": "Earnings Q2 2026",
+          "note": "RPO $500M+ = bullish signal สำคัญ"
+        },
+        {
+          "event": "AQT 64 Achievement",
+          "note": "Technical milestone ดึง enterprise contract upgrades"
+        }
       ]
     }
   }

@@ -11,6 +11,9 @@ function formatDate(iso?: string): string {
   return `${dd}/${mm}/${d.getFullYear()}`;
 }
 
+// Always read fresh JSON on each request (no stale static cache locally)
+export const dynamic = "force-dynamic";
+
 export default function HomePage() {
   const catalyst = getAllReports();
   const turbo = getAllSpeculativeReports();
