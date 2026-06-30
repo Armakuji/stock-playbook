@@ -1,0 +1,211 @@
+{
+  "ticker": "POET",
+  "companyName": "POET Technologies Inc.",
+  "companyDescription": "AI Photonics · POET Optical Interposer™ platform integrates electronics + photonics on a single chip — enabling 800G optical engines for hyperscale data center AI infrastructure",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-30T00:00:00.000Z",
+  "price": 9.99,
+  "priceChange": -3.5,
+  "priceNote": "Down ~35% from $15.48 June 4 high on PFIC class action lawsuits; Malaysia 800G ramp Q3 is the recovery catalyst",
+  "marketCap": "~$350M",
+  "sector": "Technology / AI Photonics",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Speculative",
+  "score": 45,
+  "summary": "POET's Optical Interposer platform targets the 800G+ data center AI upgrade cycle — a structurally large opportunity. Near-term legal overhang (PFIC class action lawsuits filed June 2026) and Canadian domicile issues suppress US institutional buying, but Malaysia 800G engine ramp in Q3 2026 remains the key re-rating catalyst if execution delivers.",
+  "catalysts": [
+    {
+      "icon": "⚡",
+      "name": "Q2 Earnings + Malaysia 800G Ramp Confirmation",
+      "description": "August 19 earnings will reveal first 800G optical engine shipment data from Malaysia; company targets 30,000+ engines shipped in 2026. Q3 ramp is the bullish thesis inflection.",
+      "urgencyLabel": "50 DAYS",
+      "dateBadge": "Aug 19, 2026",
+      "catalystDate": "2026-08-19",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🏭",
+      "name": "Malaysia High-Volume Production Go-Live",
+      "description": "POET advancing manufacturing readiness in Malaysia for high-volume 800G optical engines in Q3 2026. Successful production validation = fundamental de-risking.",
+      "urgencyLabel": "Q3 2026",
+      "dateBadge": "~Aug 2026",
+      "catalystDate": "2026-08-01",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "⚖️",
+      "name": "PFIC Lawsuit Resolution",
+      "description": "Multiple class action suits allege POET misrepresented its PFIC tax status (April 1–27, 2026). Lead plaintiff deadline June 29. Overhang on US institutional buying until resolved.",
+      "urgencyLabel": "RISK",
+      "dateBadge": "Ongoing",
+      "catalystDate": "2026-09-01",
+      "badgeColor": "red",
+      "dotColor": "red"
+    }
+  ],
+  "risks": [
+    "PFIC class action lawsuits create legal overhang and suppress US institutional buying pressure",
+    "Canadian domicile means US investors face adverse PFIC tax treatment — structural demand headwind",
+    "Single analyst coverage (Northland $7 PT) — limited Wall Street visibility",
+    "Production ramp execution risk: any delays in Malaysia 800G shipments invalidate the bull thesis",
+    "CEO NDA violation allegations may jeopardize key business partnerships",
+    "Small-cap (~$350M) with minimal revenue — dependent on ramp materializing in H2 2026"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q2 2026 Earnings",
+      "dateRange": "Aug 19, 2026",
+      "note": "800G ramp confirmation read — KEY inflection",
+      "est": "EPS est. -$0.04",
+      "highlight": "yellow"
+    },
+    {
+      "event": "Malaysia 800G Ramp",
+      "dateRange": "Q3 2026",
+      "note": "30,000+ optical engines targeted FY2026",
+      "est": "Est. first large batch",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -40, "price": 6.0 },
+    { "label": "Base", "color": "yellow", "pct": 30, "price": 13.0 },
+    { "label": "Bull", "color": "green", "pct": 65, "price": 16.5 },
+    { "label": "Moon", "color": "purple", "pct": 120, "price": 22.0 }
+  ],
+  "analystTargets": [
+    { "firm": "Northland Capital", "target": 7, "rating": "Outperform", "note": "Dec 2024 — outdated; stock ran above PT then retraced on lawsuit" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held at 3.50–3.75% on June 17; dot plot now leans toward one 2026 hike. July 29 FOMC next.",
+    "inflationNote": "CPI next July 14; hot print could push hike probability higher and compress growth multiples.",
+    "sectorImpact": "AI photonics hardware benefits from capex spend even in higher-rate environment, but small-cap growth names compress on rate fears. POET's Canadian status adds FX risk.",
+    "summary": "MEDIUM macro risk: rate hike probability (30%) + small-cap multiple compression are headwinds, but AI data center capex remains structurally robust as direct demand driver."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 9.99, "note": "Current post-lawsuit level — aggressive/speculative", "timing": "Now (small starter)" },
+      { "label": "Entry 2", "level": 8.5, "rangeMax": 9.0, "note": "Dip toward support; watch for lawsuit updates", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 7.0, "note": "Near Northland PT — maximum value zone", "timing": "Deep dip / thesis intact" }
+    ],
+    "tp1": { "price": 12.0, "pct": 20.1, "note": "First resistance above lawsuit-level selloff" },
+    "tp2": { "price": 15.5, "pct": 55.2, "note": "Pre-lawsuit levels — reclaim if 800G ramp confirmed" },
+    "tp3": { "price": 20.0, "pct": 100.2, "note": "Bull case: 800G ramp + lawsuit resolved + hyperscaler customer win", "moon": true },
+    "stopLoss": {
+      "tight": 7.5, "tightPct": -24.9, "tightNote": "Below Northland target — thesis deteriorating",
+      "hard": 6.0, "hardPct": -39.9, "hardNote": "Bear case: production fails + lawsuit settlement",
+      "riskReward": "2.2 : 1", "rrNote": "TP2 vs tight stop", "rrWarning": "Acceptable for speculative size"
+    },
+    "verdict": "SPECULATIVE — 5% max position; await August earnings for 800G ramp confirmation before adding. PFIC cloud limits institutional support.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "product_launch",
+    "preRunup": "AI photonics names typically run 15-25% pre-production milestone announcements as spec buyers position ahead of ramp confirmations. POET ran from ~$5 to $15 in early 2026 on AI photonics hype before lawsuit reversal.",
+    "preRunupTiming": "4–8 weeks before earnings/ramp confirmation",
+    "preRunupPct": "+15–25%",
+    "postWin": {
+      "avgPct": 35,
+      "range": "+20% to +60%",
+      "note": "Comparable optical component ramp confirmations (e.g., II-VI/Coherent 400G volume in Dec 2021) drove +30-50% moves over 4-6 weeks. POET's 800G at smaller scale suggests similar % magnitude.",
+      "exampleDate": "Dec 2021"
+    },
+    "postLose": {
+      "avgPct": -30,
+      "range": "-20% to -45%",
+      "note": "When MACOM (MACOM) production delays hit in 2019, stock fell 35% over 2 months. POET ramp miss would likely trigger similar de-rating.",
+      "exampleDate": "Aug 2019"
+    },
+    "spotSizing": {
+      "pct": 5,
+      "reason": "High conviction on AI photonics thesis, but PFIC legal risk + limited coverage = 5% max. Binary ramp outcome warrants small starter position."
+    },
+    "stopPreCatalyst": { "pct": -25, "price": 7.49, "note": "Below $7.50 signals lawsuit settlement costs + ramp delay = thesis break" },
+    "stopPostCatalyst": { "pct": -20, "note": "If earnings miss on 800G shipments, exit immediately — don't wait for recovery" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "CIEN",
+      "event": "400G optical ramp volume confirmation",
+      "date": "Oct 2020",
+      "movePct": 28,
+      "days": 10,
+      "outcome": "good",
+      "note": "Ciena confirmed first high-volume 400G shipments to hyperscalers; stock ran +28% in 10 days. POET's 800G analog is structurally similar but smaller scale."
+    },
+    {
+      "ticker": "IIVI",
+      "event": "Datacom 400G optical component ramp announcement",
+      "date": "Dec 2021",
+      "movePct": 22,
+      "days": 15,
+      "outcome": "good",
+      "note": "II-VI (now Coherent) 400G volume delivery to hyperscalers drove re-rating. Direct comparable to POET's Malaysia 800G ramp."
+    },
+    {
+      "ticker": "MACOM",
+      "event": "Production ramp delay miss",
+      "date": "Aug 2019",
+      "movePct": -35,
+      "days": 5,
+      "outcome": "bad",
+      "note": "MACOM optical component production delays caused -35% selloff. This is the downside case if POET's Q3 Malaysia ramp slips."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "POET Technologies Stock Reels As Class Action Pressure Mounts — PFIC lawsuit alleges misrepresentation of US tax status",
+    "url": "https://www.timothysykes.com/news/poet-technologies-inc-poet-news-2026_06_23/",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://finance.yahoo.com/quote/POET/",
+    "https://www.timothysykes.com/news/poet-technologies-inc-poet-news-2026_06_23/",
+    "https://ts2.tech/en/poet-stock-jumps-as-ai-photonics-rally-meets-legal-risk-before-june-catalysts/",
+    "https://intellectia.ai/news/stock/poet-technologies-faces-commercial-challenges-amid-ai-photonics-push",
+    "https://www.marketbeat.com/stocks/NASDAQ/POET/earnings/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "POET เป็น AI Photonics play ที่น่าสนใจ — Optical Interposer platform ตอบโจทย์ความต้องการ 800G data center แต่ถูกกดดันจากคดี PFIC (ปัญหาภาษีสำหรับนักลงทุน US) ทำให้ราคาร่วงจาก $15 เหลือ $10. Catalyst หลักคือการยืนยัน production ramp ที่มาเลเซียใน Q3 2026.",
+      "priceNote": "ร่วง ~35% จากจุดสูง $15.48 เมื่อ 4 มิ.ย. เพราะคดีฟ้องร้อง PFIC",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "ผลประกอบการ Q2 + ยืนยัน 800G Ramp", "description": "งบ Q2 วันที่ 19 ส.ค. จะเป็นตัวชี้ว่า production ที่มาเลเซียเริ่มแล้วหรือยัง" },
+        { "name": "โรงงานมาเลเซียเริ่ม High-Volume", "description": "เป้าหมาย 30,000+ optical engines ปี 2026 โดย 800G เริ่ม Q3" },
+        { "name": "คดี PFIC ความเสี่ยงหลัก", "description": "คดีฟ้องร้องว่า POET ไม่แจ้ง PFIC status ถูกต้อง — ยังไม่แน่ใจว่าจะจบอย่างไร" }
+      ],
+      "risks": [
+        "คดีฟ้องร้อง PFIC กดดันสถาบัน US ซื้อไม่ได้",
+        "บริษัทจดทะเบียนในแคนาดา — นักลงทุน US มีปัญหาภาษี",
+        "Coverage จำกัด — มีแค่ Northland Capital PT $7",
+        "ความเสี่ยง execution ถ้า Malaysia ramp ล่าช้า",
+        "Small-cap ~$350M ยังมีรายได้น้อยมาก"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed ถือดอกเบี้ย 3.50-3.75% ประชุมถัดไป 29 ก.ค.",
+        "inflationNote": "CPI รายงาน 14 ก.ค. — ถ้าร้อนอาจกดดันหุ้น growth",
+        "sectorImpact": "AI data center capex ยังแข็งแกร่ง ช่วย demand แต่ดอกเบี้ยสูงกดดัน multiple หุ้น small-cap growth",
+        "summary": "Macro risk MEDIUM: ความเสี่ยงจาก rate hike + small-cap multiple compression แต่ AI capex ช่วยดึง demand"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — จัดสรรไม่เกิน 5% รอดูงบ ส.ค. ยืนยัน ramp ก่อนเพิ่ม position",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ซื้อ starter position เล็กๆ", "timing": "ตอนนี้ (เล็กๆ)" },
+          { "note": "ถ้าย่อลงมา รอดูข่าวคดีก่อน", "timing": "ถ้าย่อ" },
+          { "note": "ใกล้ Northland PT — zone ที่ดีที่สุด", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "แนวต้านแรกหลัง selloff" },
+        "tp2": { "note": "กลับสู่ระดับก่อนคดีฟ้องร้อง" },
+        "tp3": { "note": "Bull case: ramp สำเร็จ + ลูกค้า hyperscaler ใหม่", "moon": true },
+        "stopLoss": { "tightNote": "ต่ำกว่า PT ของ Northland", "hardNote": "Bear case: production ล้มเหลว + คดีแพง", "rrNote": "vs TP2", "rrWarning": "พอรับได้สำหรับ speculative" }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q2 2026", "note": "ตัวเลขยืนยัน 800G ramp — จุดเปลี่ยน" },
+        { "event": "Malaysia 800G Ramp", "note": "เป้าส่ง 30,000+ engines ปีนี้" }
+      ]
+    }
+  }
+}
