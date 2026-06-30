@@ -1,223 +1,204 @@
 {
   "ticker": "FLY",
   "companyName": "Firefly Aerospace Inc.",
-  "companyDescription": "Space Launch + Defense AI · Alpha rocket small/medium-lift platform + Blue Ghost lunar lander — serving commercial, defense, and NASA customers with $1.3B backlog",
+  "companyDescription": "Space launch + lunar lander · Alpha small-lift rocket, Blue Ghost lunar program, Elytra orbital vehicle — NASA CLPS + national security launch exposure",
   "exchange": "NASDAQ",
   "generatedAt": "2026-06-30T00:00:00.000Z",
-  "price": 26.9,
-  "priceChange": 2.1,
-  "priceNote": "Strong Q1 record revenue $80.9M; $1.3B backlog + 80% of 2026 sales already booked — Jefferies raised PT to $52",
-  "marketCap": "~$4.0B",
-  "sector": "Aerospace & Defense / Space",
-  "verdict": "BUY",
-  "scoreLabel": "Core Holding",
-  "score": 72,
-  "summary": "Firefly Aerospace has the strongest near-term visibility in the space sector: $1.3B backlog with 80% of 2026 revenue already contracted, Alpha rocket proven through Flight 7, and a dual defense + commercial flywheel. Blue Ghost Mission 2 (far-side Moon) is the next major price catalyst. Jefferies ($52) and KeyBanc ($50) are aligned on the thesis.",
+  "price": 27.88,
+  "priceChange": -1.8,
+  "priceNote": "ร่วงหนักจากระดับ offering $48 → $27.88 หลัง dilution overhang จาก secondary offering 12M shares; ยังไม่นับ Alpha Block 2 / Blue Ghost 2 catalysts ที่ยังไม่มาถึง",
+  "marketCap": "$4.1B",
+  "sector": "Industrials / Aerospace & Defense — Space Launch",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Speculative",
+  "score": 64,
+  "summary": "Firefly just took a ~40% dilution-driven haircut from its $48 follow-on offering price down to ~$28, even as fundamentals improved (Q1 2026 revenue +45% YoY to $80.9M, beat on EPS) and Wall Street stayed bullish (avg target $45.75, Jefferies/KeyBanc at $50–52). Two dated catalysts — Alpha Block 2 debut (~Sep 30, 2026) and Blue Ghost Mission 2 (H2 2026) — sit ahead, but net losses (-$96.7M Q1) and continued share overhang keep this a high-beta speculative play, not a core holding.",
   "catalysts": [
     {
-      "icon": "🌙",
-      "name": "Blue Ghost Mission 2 — Far Side Moon",
-      "description": "Second lunar mission will land on Moon's far side + deploy rover + operate 6 NASA payloads for 14 days. Validates Firefly as a repeat lunar delivery platform, unlocking further NASA CLPS task orders.",
-      "urgencyLabel": "2026–27",
-      "dateBadge": "H2 2026",
-      "catalystDate": "2026-09-01",
-      "badgeColor": "green",
-      "dotColor": "green"
-    },
-    {
-      "icon": "🛡️",
-      "name": "Defense AI Contract — SciTec Air Force C2",
-      "description": "Firefly subsidiary SciTec won Air Force contract to deliver data fusion system for Cloud-Based Command & Control (CBC2) supporting NORAD, USNORTHCOM and PACAF — defense AI revenue diversification.",
-      "urgencyLabel": "ACTIVE",
-      "dateBadge": "Ongoing",
-      "catalystDate": "2026-07-01",
-      "badgeColor": "blue",
-      "dotColor": "green"
-    },
-    {
       "icon": "🚀",
-      "name": "Alpha Flight 8 — Block II Upgrade",
-      "description": "Alpha Flight 8 will be first full Block II configuration with new in-house avionics + enhanced thermal protection. Successful launch = capacity ramp to support booked 2026 manifest.",
-      "urgencyLabel": "2026",
-      "dateBadge": "~H2 2026",
-      "catalystDate": "2026-08-15",
+      "name": "Alpha Block 2 debut (Flight 8 / VICTUS HAZE)",
+      "description": "First flight of the upgraded Alpha Block II rocket — longer airframe, stronger composites, in-house avionics. Targets national security responsive-launch demand (incl. Golden Dome).",
+      "urgencyLabel": "~3 MO",
+      "dateBadge": "Sep 30, 2026",
+      "catalystDate": "2026-09-30",
       "badgeColor": "yellow",
       "dotColor": "yellow"
+    },
+    {
+      "icon": "🌕",
+      "name": "Blue Ghost Mission 2",
+      "description": "Second NASA CLPS lunar lander mission, now a dual-spacecraft (lander + Elytra Dark orbital vehicle) architecture; assembly/testing accelerating, launch on a SpaceX Falcon 9.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "badgeColor": "blue",
+      "dotColor": "gray"
     },
     {
       "icon": "📊",
-      "name": "Q2 2026 Earnings — Revenue Ramp Read",
-      "description": "Q1 record $80.9M; full-year guidance $420–450M. Q2 earnings will validate ramp trajectory with 80% of sales already booked. Beat could drive re-rating toward analyst targets.",
-      "urgencyLabel": "~45 DAYS",
-      "dateBadge": "~Aug 2026",
-      "catalystDate": "2026-08-10",
-      "badgeColor": "yellow",
-      "dotColor": "yellow"
+      "name": "Q2 2026 earnings",
+      "description": "Next quarterly print — market will watch cash burn trajectory, backlog growth, and 2026 revenue guidance ($420–450M) progress after Q1's wide net loss.",
+      "urgencyLabel": "~2 MO",
+      "dateBadge": "~Sep 2026",
+      "badgeColor": "blue",
+      "dotColor": "gray"
     }
   ],
   "risks": [
-    "Launch schedule slippage: any Alpha rocket anomaly delays revenue recognition and damages confidence",
-    "Concentration risk: heavy reliance on government/NASA contracts; budget changes could impact backlog",
-    "SpaceX competition intensifying — Falcon 9 taking market share in small/medium lift",
-    "Execution risk on Block II Alpha upgrade — any Flight 8 issues would pressure stock",
-    "Negative EPS (-$0.46 Q1) — not yet profitable; needs 2027+ to hit profitability",
-    "Blue Ghost Mission 2 is far-side Moon — technically more complex than Mission 1"
+    "Share overhang: 12M-share secondary offering (4M new + 8M sold by holders) at $48 still digesting — further insider/lockup selling could cap rallies",
+    "Heavy net losses ($96.7M Q1 2026) and rising opex; execution risk on scaling Alpha cadence + Blue Ghost 2",
+    "Launch-vehicle binary risk — any Alpha Block 2 test/launch failure historically triggers high-single-digit % sector drawdowns (see Rocket Lab Neutron precedent)",
+    "Valuation still rich on a sales-multiple basis after the run from $16 to $73.80 52-week high; sector sentiment also wobbling on SpaceX IPO chatter"
   ],
   "estimateDates": [
-    {
-      "event": "Q2 2026 Earnings",
-      "dateRange": "~Aug 2026",
-      "note": "Revenue ramp toward $420-450M FY2026 guidance validation",
-      "est": "Rev guidance: $420–450M FY2026",
-      "highlight": "blue"
-    },
-    {
-      "event": "Alpha Flight 8 — Block II Launch",
-      "dateRange": "H2 2026",
-      "note": "Full Block II config — capacity unlock for 2027 manifest",
-      "est": "Success = re-rating catalyst",
-      "highlight": "yellow"
-    }
+    { "event": "Alpha Block 2 / Flight 8", "dateRange": "Sep 30, 2026", "note": "First Block II launch, national security demand read", "est": "binary pass/fail", "highlight": "yellow" },
+    { "event": "Q2 2026 Earnings", "dateRange": "~Sep 2026", "note": "Cash burn + backlog update", "est": "est. EPS -$0.50", "highlight": "blue" }
   ],
   "scenarios": [
-    { "label": "Bear", "color": "red", "pct": -25, "price": 20.18 },
-    { "label": "Base", "color": "yellow", "pct": 30, "price": 34.97 },
-    { "label": "Bull", "color": "green", "pct": 79, "price": 48.15 },
-    { "label": "Moon", "color": "purple", "pct": 104, "price": 54.87 }
+    { "label": "Bear", "color": "red", "pct": -28, "price": 20 },
+    { "label": "Base", "color": "yellow", "pct": 18, "price": 33 },
+    { "label": "Bull", "color": "green", "pct": 65, "price": 46 },
+    { "label": "Moon", "color": "purple", "pct": 90, "price": 53 }
   ],
   "analystTargets": [
-    { "firm": "Jefferies", "target": 52, "rating": "Buy", "note": "Raised from $45 on June 2, 2026 — defense AI flywheel" },
-    { "firm": "KeyBanc", "target": 50, "rating": "Overweight", "note": "Upgraded to Overweight — backlog + revenue visibility" },
-    { "firm": "Consensus (9 analysts)", "target": 48.22, "rating": "Buy", "note": "+72.5% upside from $26.90; strong analyst alignment" }
+    { "firm": "Jefferies", "target": 52, "rating": "Buy" },
+    { "firm": "KeyBanc", "target": 50, "rating": "Overweight" },
+    { "firm": "Wall St. Average (14 analysts)", "target": 45.75, "rating": "Buy" }
   ],
   "macroRisk": {
-    "fedRisk": "LOW",
-    "rateOutlook": "Fed held at 3.50–3.75%; next FOMC July 29. Defense/aerospace contractors have long-term contracts insulating revenue from rate environment.",
-    "inflationNote": "CPI July 14 — defense names historically outperform in inflationary environments as contract values adjust.",
-    "sectorImpact": "Aerospace & defense contractors are largely rate-insensitive — government backlog provides revenue floor. NASA budget is a bigger risk than Fed policy for FLY.",
-    "summary": "LOW macro risk: $1.3B booked backlog + defense contracts insulate FLY from rate volatility; NASA budget risk is the only macro headwind to watch."
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed holding 3.50–3.75% for 4 straight meetings; next FOMC decision Jul 29, 2026 — no cut priced in, limits multiple expansion for unprofitable growth names",
+    "inflationNote": "Inflation data has kept the Fed on hold; no near-term catalyst for lower discount rates",
+    "sectorImpact": "Space/defense capex names like FLY are rate-sensitive (still cash-burning) but partly insulated by government (NASA/DoD) contract backlog vs. pure consumer-discretionary growth",
+    "summary": "MEDIUM — no Fed catalyst either way before Alpha Block 2 launch; stock-specific dilution/execution risk matters far more than macro right now"
   },
   "entryStrategy": {
     "entryLevels": [
-      { "label": "Entry 1", "level": 26.9, "note": "Current price — solid entry with 72% upside to consensus", "timing": "Now" },
-      { "label": "Entry 2", "level": 24.0, "rangeMax": 25.0, "note": "Dip zone — add on any market weakness", "timing": "If dips", "preferred": true },
-      { "label": "Entry 3", "level": 20.0, "note": "Strong support — high-conviction add on deep selloff", "timing": "Deep dip" }
+      { "label": "Entry 1", "level": 27.88, "note": "Current price, post-dilution pullback", "timing": "Now" },
+      { "label": "Entry 2", "level": 23, "rangeMax": 25, "note": "Retest of post-offering reaction low", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 19, "note": "Toward 52-week range floor zone", "timing": "Deep dip" }
     ],
-    "tp1": { "price": 35.0, "pct": 30.1, "note": "Near-term target — trim 30-50%" },
-    "tp2": { "price": 48.22, "pct": 79.3, "note": "Consensus analyst target — trim to core" },
-    "tp3": { "price": 55.0, "pct": 104.5, "note": "Bull case: Blue Ghost 2 success + Block II launch cadence confirmed", "moon": true },
+    "tp1": { "price": 36, "pct": 29.1, "note": "Retrace toward pre-dilution $48 offering — partial gap-fill" },
+    "tp2": { "price": 46, "pct": 65.0, "note": "Near Street average target $45.75" },
+    "tp3": { "price": 53, "pct": 90.1, "note": "Jefferies/KeyBanc high targets · on Alpha Block 2 + Blue Ghost 2 success", "moon": true },
     "stopLoss": {
-      "tight": 22.0, "tightPct": -18.2, "tightNote": "Below recent support — thesis under pressure",
-      "hard": 18.0, "hardPct": -33.1, "hardNote": "Rocket anomaly or major NASA contract cancellation",
-      "riskReward": "3.4 : 1", "rrNote": "TP2 vs tight stop at $22", "rrWarning": "Excellent R/R for a BUY"
+      "tight": 24, "tightPct": -13.9, "tightNote": "Below recent reaction-low support",
+      "hard": 18, "hardPct": -35.4, "hardNote": "Near 52-week low ($16) — thesis-impairing breach",
+      "riskReward": "4.7 : 1", "rrNote": "Tight stop vs TP2", "rrWarning": "Good R/R given binary catalyst setup"
     },
-    "verdict": "BUY — DCA now; $1.3B backlog + Blue Ghost 2 + defense AI = 3 catalysts in one name. Add on dips to $24.",
-    "approach": "DCA"
+    "verdict": "High-beta speculative space play — dilution dip looks overdone given Buy-rated analyst coverage and two dated catalysts ahead; size small, scale in on weakness, don't chase pre-Alpha Block 2.",
+    "approach": "Scale In"
   },
   "catalystSpot": {
-    "catalystType": "delivery_beat",
-    "preRunup": "Space launch + lunar mission stocks typically run 10-20% in 2-4 weeks before a mission launch as media coverage and retail interest build. LUNR ran +40% pre-IM-1 in early 2024. FLY with Blue Ghost Mission 2 announcement could see similar pre-launch excitement.",
-    "preRunupTiming": "2–4 weeks pre-launch announcement",
-    "preRunupPct": "+10–20%",
+    "catalystType": "satellite_launch",
+    "preRunupTiming": "1–2 สัปดาห์ก่อน launch window",
+    "preRunup": "หุ้นกลุ่ม launch vehicle มักขยับขึ้นล่วงหน้าตาม news flow ของ readiness review/test milestones — เห็นชัดใน FLY ช่วงก่อน Alpha Flight 7 และ VICTUS DIEM",
+    "preRunupPct": "+5–15%",
     "postWin": {
-      "avgPct": 25,
-      "range": "+15% to +40%",
-      "note": "Rocket Lab (RKLB) successful launches drove +20-35% moves in 2023-2024 on combination of delivery confirmation + contract announcements. Blue Ghost Mission 1 (Mar 2025) validated FLY's lunar capability — Mission 2 success could drive similar 25-35% move.",
-      "exampleDate": "Mar 2025"
+      "avgPct": 18,
+      "range": "+13% to +39%",
+      "note": "FLY ขึ้น 13% วันถัดจาก Alpha Flight 7 launch สำเร็จ และ +38.9% จาก VICTUS DIEM rapid-response simulation success — อ้างอิงข่าวจริงปี 2026",
+      "exampleDate": "Alpha Flight 7 · 2026 / VICTUS DIEM · Mar 2026"
     },
     "postLose": {
-      "avgPct": -25,
-      "range": "-15% to -35%",
-      "note": "Virgin Orbit (VORB) launch failure Feb 2023 drove -30% immediately; ultimately led to bankruptcy. FLY has stronger financial position but Alpha rocket anomaly would be -20-30%.",
-      "exampleDate": "Feb 2023"
+      "avgPct": -7,
+      "range": "-5% to -14%",
+      "note": "ยังไม่มี launch failure ของ FLY เอง — อ้างอิง comparable จาก Rocket Lab (RKLB) ที่ -7.47% วันเดียวหลัง Neutron qualification tank rupture",
+      "exampleDate": "Rocket Lab Neutron tank failure · Apr 2026"
     },
     "spotSizing": {
-      "pct": 10,
-      "reason": "High conviction: $1.3B backlog + 9 analyst Buy consensus + proven launch track record = 10% position appropriate. Not speculative — this is a revenue-generating aerospace company."
+      "pct": 5,
+      "reason": "Conviction ปานกลาง — catalyst มีวันที่ชัดเจน (Sep 30) แต่ dilution overhang + binary launch risk ทำให้ size เล็กกว่าปกติ"
     },
-    "stopPreCatalyst": { "pct": -18, "price": 22.06, "note": "Below $22 = support break + sentiment shift — reassess thesis" },
-    "stopPostCatalyst": { "pct": -15, "note": "If Alpha Flight 8 fails or Blue Ghost 2 anomaly — cut 50%, reassess" }
+    "stopPreCatalyst": { "pct": -15, "price": 23.7, "note": "หลุดแนวรับ reaction-low แปลว่า thesis dilution-overhang ยังกดต่อ" },
+    "stopPostCatalyst": { "pct": -20, "note": "ถ้า Alpha Block 2 launch ล้มเหลว ออกทันทีในวันถัดไป — ไม่รอ bounce" }
   },
   "comparableCases": [
     {
+      "ticker": "FLY",
+      "event": "Alpha Flight 7 successful launch",
+      "date": "2026",
+      "movePct": 13,
+      "days": 1,
+      "outcome": "good",
+      "note": "Direct precedent: FLY's own launch-success reaction — same playbook expected for Alpha Block 2 debut"
+    },
+    {
+      "ticker": "FLY",
+      "event": "VICTUS DIEM rapid responsive-launch simulation success",
+      "date": "Mar 2026",
+      "movePct": 39,
+      "days": 2,
+      "outcome": "good",
+      "note": "Shows national-security/responsive-launch narrative can drive outsized moves — relevant to Alpha Block 2's Golden Dome angle"
+    },
+    {
       "ticker": "RKLB",
-      "event": "Electron launch + Photon spacecraft delivery — NASA contract",
-      "date": "May 2023",
-      "movePct": 28,
-      "days": 7,
-      "outcome": "good",
-      "note": "Rocket Lab +28% in 7 days after successful Electron delivery + NASA mission confirmation. Most direct comparable to Firefly's Alpha + Blue Ghost business model."
-    },
-    {
-      "ticker": "LUNR",
-      "event": "IM-1 successful lunar landing — first private Moon landing",
-      "date": "Feb 2024",
-      "movePct": 45,
-      "days": 5,
-      "outcome": "good",
-      "note": "Intuitive Machines surged +45% on IM-1 Moon landing validation. Blue Ghost Mission 1 success gave FLY a similar validation — Mission 2 (far side) could re-rate again."
-    },
-    {
-      "ticker": "VORB",
-      "event": "LauncherOne orbital failure — UK mission",
-      "date": "Jan 2023",
-      "movePct": -30,
-      "days": 3,
+      "event": "Neutron Stage 1 tank rupture in qualification testing",
+      "date": "Apr 2026",
+      "movePct": -7.47,
+      "days": 1,
       "outcome": "bad",
-      "note": "Virgin Orbit -30% on launch failure. Downside scenario for FLY if Alpha Block II has anomaly — though FLY has diversified revenue unlike VORB's single-product risk."
+      "note": "Sector comparable for launch-vehicle test/qual failure risk — relevant downside case for Alpha Block 2"
     }
   ],
   "rankChangeSource": {
-    "headline": "Firefly Aerospace Contract Win Highlights Growing Defense AI Investment Case — SciTec Air Force CBC2 contract",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/firefly-aerospace-contract-win-highlights-121153577.html",
+    "headline": "Firefly Aerospace shares slide as recent public offering and resale-related filings weigh on sentiment",
+    "url": "https://www.quiverquant.com/news/Firefly+Aerospace+shares+slide+as+recent+public+offering+and+resale-related+filings+weigh+on+sentiment",
     "date": "Jun 2026"
   },
   "sources": [
-    "https://finance.yahoo.com/quote/FLY/",
-    "https://stockanalysis.com/stocks/fly/forecast/",
-    "https://www.marketbeat.com/stocks/NASDAQ/FLY/",
-    "https://finance.yahoo.com/markets/stocks/articles/firefly-aerospace-contract-win-highlights-121153577.html",
-    "https://fireflyspace.com/missions/"
+    "https://www.stockanalysis.com/stocks/fly/",
+    "https://www.marketbeat.com/stocks/NASDAQ/FLY/forecast/",
+    "https://www.stocktitan.net/news/FLY/firefly-aerospace-announces-first-quarter-2026-financial-xyhq2qvdcifi.html",
+    "https://spacenews.com/firefly-plans-late-summer-launch-of-first-alpha-block-2-rocket/",
+    "https://satnews.com/2026/04/09/firefly-aerospace-prepares-for-blue-ghost-mission-2-following-historic-lunar-success/",
+    "https://www.quiverquant.com/news/Firefly+Aerospace+shares+slide+as+recent+public+offering+and+resale-related+filings+weigh+on+sentiment",
+    "https://finance.yahoo.com/news/look-rocket-lab-rklb-valuation-150812886.html",
+    "https://www.tikr.com/blog/firefly-aerospace-nasdaq-stock-surges-13-following-successful-alpha-flight-7-rocket-launch",
+    "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
   ],
   "i18n": {
     "th": {
-      "summary": "Firefly Aerospace มี visibility ที่ดีที่สุดใน space sector: backlog $1.3B โดย 80% ของรายได้ปี 2026 อยู่ใน pocket แล้ว. Alpha rocket ผ่าน Flight 7 สำเร็จ + Blue Ghost Mission 2 (ด้านหลังดวงจันทร์) กำลังจะมา. Jefferies ($52) และ KeyBanc ($50) ต่างเห็นด้วย.",
-      "priceNote": "Q1 record revenue $80.9M; Jefferies ขึ้น PT เป็น $52 วันที่ 2 มิ.ย.",
-      "scoreLabel": "Core Holding",
+      "summary": "FLY ร่วงจาก $48 (ราคา offering) ลงมา ~$28 จาก dilution overhang ของ secondary offering 12M หุ้น ทั้งที่ fundamental ดีขึ้น (Q1 2026 รายได้ +45% YoY เป็น $80.9M, beat EPS) และ Wall Street ยังให้ Buy เฉลี่ย target $45.75 (Jefferies/KeyBanc $50-52) ข้างหน้ามี catalyst ที่มีวันที่ชัด 2 ตัว — Alpha Block 2 debut (~30 ก.ย. 2026) และ Blue Ghost Mission 2 (H2 2026) — แต่ขาดทุนหนัก (-$96.7M ใน Q1) และ overhang หุ้นยังกดอยู่ ทำให้เป็น speculative play ความเสี่ยงสูง ไม่ใช่ core holding",
+      "priceNote": "ร่วงหนักจาก offering $48 → $27.88 จาก dilution overhang; ยังไม่รวม catalyst Alpha Block 2 / Blue Ghost 2 ที่ยังไม่มา",
+      "scoreLabel": "Speculative",
       "catalysts": [
-        { "name": "Blue Ghost Mission 2 — ด้านหลังดวงจันทร์", "description": "ภารกิจจันทร์ครั้งที่ 2 พร้อม rover + 6 NASA payloads — validate Firefly เป็น repeat lunar platform" },
-        { "name": "Defense AI Contract — SciTec Air Force", "description": "สัญญา Air Force CBC2 ผ่าน subsidiary SciTec — เพิ่ม defense revenue stream" },
-        { "name": "Alpha Flight 8 — Block II Upgrade", "description": "Flight 8 เป็น Block II เต็มรูปแบบ — ถ้าสำเร็จ = capacity unlock ปี 2027" },
-        { "name": "ผลประกอบการ Q2 2026", "description": "ยืนยัน ramp สู่ $420-450M FY guidance โดย 80% booked แล้ว" }
+        { "name": "Alpha Block 2 debut (Flight 8 / VICTUS HAZE)", "description": "เที่ยวบินแรกของจรวด Alpha Block II รุ่นอัพเกรด — ตัวยาวขึ้น โครงสร้าง composite แข็งแรงขึ้น เล็งตลาด national security responsive launch (รวม Golden Dome)" },
+        { "name": "Blue Ghost Mission 2", "description": "ภารกิจ lunar lander ลำที่ 2 ของ NASA CLPS แบบ dual-spacecraft (lander + Elytra Dark) กำลังเร่ง assembly/testing ปล่อยด้วย SpaceX Falcon 9" },
+        { "name": "Q2 2026 earnings", "description": "รายงานผลประกอบการรอบถัดไป ตลาดจะดู cash burn, backlog, และความคืบหน้า guidance รายได้ปี 2026 ($420-450M)" }
       ],
       "risks": [
-        "ความเสี่ยงด้าน launch schedule — anomaly กระทบรายได้ทันที",
-        "พึ่ง government/NASA เป็นหลัก — budget cut = risk",
-        "SpaceX แข่งขันหนัก small/medium lift",
-        "ยังไม่กำไร EPS ติดลบ",
-        "Blue Ghost 2 ด้านหลังดวงจันทร์ — ยากกว่า Mission 1"
+        "Overhang หุ้น: secondary offering 12M หุ้น (ใหม่ 4M + ผู้ถือเดิมขาย 8M) ที่ $48 ยังย่อยไม่หมด — อาจกดเพดาน rally ต่อ",
+        "ขาดทุนหนัก ($96.7M ใน Q1 2026) และ opex สูงขึ้น — ความเสี่ยง execution ในการขยาย cadence ของ Alpha + Blue Ghost 2",
+        "ความเสี่ยง binary จาก launch vehicle — ถ้า Alpha Block 2 test/launch ล้มเหลว ในอดีตหุ้นกลุ่มนี้ร่วง high-single-digit % (อ้างอิง Rocket Lab Neutron)",
+        "Valuation ยังตึงบน sales multiple หลังวิ่งจาก $16 ไป high 52-week ที่ $73.80; sentiment sector ก็สั่นจากข่าว SpaceX IPO"
       ],
       "macroRisk": {
-        "rateOutlook": "Fed ถือ 3.50-3.75% — aerospace contractor ไม่ sensitive กับ rate",
-        "inflationNote": "Defense names มักแข็งแกร่งในช่วง inflation — contract values ปรับตาม",
-        "sectorImpact": "Government backlog คือ revenue floor — NASA budget risk สำคัญกว่า Fed policy",
-        "summary": "Macro risk ต่ำ: $1.3B backlog ป้องกัน rate volatility ได้ดี"
+        "rateOutlook": "Fed คงดอกเบี้ย 3.50-3.75% ติดต่อกัน 4 ครั้ง FOMC ครั้งถัดไป 29 ก.ค. 2026 — ยังไม่มีการลดดอกเบี้ย จำกัด multiple expansion ของหุ้น growth ที่ยังขาดทุน",
+        "inflationNote": "เงินเฟ้อยังทำให้ Fed คงดอกเบี้ย ไม่มี catalyst ให้ลด discount rate ในเร็วๆนี้",
+        "sectorImpact": "หุ้น space/defense capex แบบ FLY sensitive ต่อดอกเบี้ย (ยังเผาเงินสด) แต่กันชนบางส่วนด้วย backlog สัญญารัฐบาล (NASA/DoD)",
+        "summary": "MEDIUM — ไม่มี catalyst จาก Fed ก่อน Alpha Block 2 launch; ความเสี่ยงเฉพาะตัว (dilution/execution) สำคัญกว่า macro มากตอนนี้"
       },
       "entryStrategy": {
-        "verdict": "BUY — DCA ตอนนี้; $1.3B backlog + Blue Ghost 2 + defense AI = 3 catalyst ในหุ้นเดียว เพิ่มที่ $24",
+        "verdict": "หุ้น speculative high-beta กลุ่ม space — dip จาก dilution ดู overdone เมื่อเทียบกับ analyst coverage ที่เป็น Buy และ catalyst ที่มีวันชัด 2 ตัวข้างหน้า แนะนำ size เล็ก ค่อยๆ scale in ตอนย่อ ไม่ไล่ราคาก่อน Alpha Block 2",
         "entryLevels": [
-          { "note": "ราคาปัจจุบัน — good entry 72% upside to consensus", "timing": "ตอนนี้" },
-          { "note": "เพิ่ม position ถ้า market ย่อ", "timing": "ถ้าย่อ" },
-          { "note": "High-conviction add ถ้าร่วงหนัก", "timing": "ถ้าร่วงหนัก" }
+          { "note": "ราคาปัจจุบัน หลัง dilution pullback", "timing": "ตอนนี้" },
+          { "note": "ย่อกลับไปแนวรับ reaction-low หลัง offering", "timing": "ถ้าย่อ" },
+          { "note": "ลงไปโซนล่างของ 52-week range", "timing": "ถ้าร่วงหนัก" }
         ],
-        "tp1": { "note": "Near-term target — ตัด 30-50%" },
-        "tp2": { "note": "Consensus PT — ตัดเหลือ core position" },
-        "tp3": { "note": "Bull: Blue Ghost 2 สำเร็จ + Block II cadence", "moon": true },
-        "stopLoss": { "tightNote": "ต่ำกว่า support — re-assess", "hardNote": "Rocket anomaly หรือ NASA contract cancel", "rrNote": "vs tight stop $22", "rrWarning": "R/R ดีมาก สำหรับ BUY" }
+        "tp1": { "note": "retrace กลับไปแถว offering price $48 — gap-fill บางส่วน" },
+        "tp2": { "note": "ใกล้ target เฉลี่ยของ Street ที่ $45.75" },
+        "tp3": { "note": "target สูงสุดของ Jefferies/KeyBanc · ถ้า Alpha Block 2 + Blue Ghost 2 สำเร็จ" },
+        "stopLoss": {
+          "tightNote": "หลุดแนวรับ reaction-low",
+          "hardNote": "ใกล้ 52-week low ($16) — thesis เสีย",
+          "rrNote": "stop แน่นเทียบ TP2",
+          "rrWarning": "R/R ดีสำหรับ setup ที่มี catalyst ชัด"
+        }
       },
       "estimateDates": [
-        { "event": "ผลประกอบการ Q2 2026", "note": "ยืนยัน ramp สู่ guidance $420-450M" },
-        { "event": "Alpha Flight 8 Block II", "note": "Capacity unlock ปี 2027" }
+        { "event": "Alpha Block 2 / Flight 8", "note": "เที่ยวบินแรกของ Block II อ่านสัญญาณดีมานด์ national security" },
+        { "event": "Q2 2026 Earnings", "note": "อัพเดต cash burn และ backlog" }
       ]
     }
   }
