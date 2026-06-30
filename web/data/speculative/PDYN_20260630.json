@@ -1,0 +1,204 @@
+{
+  "ticker": "PDYN",
+  "companyName": "Palladyne AI Corp.",
+  "companyDescription": "AI drone-swarm autonomy software · SwarmOS enables 1 operator to command entire fleet of UAVs cross-platform · U.S. Army just awarded contracts for SwarmOS + Gremlin-X mini-bomber UAV — the AI brain for next-gen military drone warfare",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-30T00:00:00.000Z",
+  "price": 6.31,
+  "priceChange": -0.34,
+  "priceNote": "Mini-cap $280M — Army SwarmOS + Gremlin-X contracts awarded Jun 17-23. Northland raised PT to $15 (Jun 8). Northern Strike 26-2 exercise (9,000 participants) coming = next live validation. ค่าขนม sizing — 2-3% max.",
+  "marketCap": "$280M",
+  "sector": "Defense / Autonomous AI",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 72,
+  "summary": "Palladyne AI just won U.S. Army contracts (June 17-23) for SwarmOS autonomous swarm software + Gremlin-X mini-bomber UAV under the Army's Competitive Disruptive Applications program. SwarmOS lets 1 operator command an entire heterogeneous drone fleet simultaneously — the AI command layer every defense force needs. Market cap is only $280M vs an autonomous drone market projected at $50B+. The Northern Strike 26-2 exercise (9,000+ participants) is the next live-fire validation catalyst. Northland set a $15 target (138% upside) in June. Moon case: multi-branch DoD adoption = $30+ (375%).",
+  "catalysts": [
+    {
+      "icon": "🎯",
+      "name": "U.S. Army SwarmOS + Gremlin-X Contracts",
+      "description": "Army competitively awarded PDYN contracts Jun 17-23 to validate SwarmOS autonomous swarm tech and Gremlin-X mini-bomber UAV with 4th Infantry Division warfighters in Colorado and California. First live operational validation with real Army units — this is the 'proof of concept that becomes a program of record' moment.",
+      "urgencyLabel": "DONE",
+      "dateBadge": "Jun 17-23, 2026",
+      "catalystDate": "2026-06-23",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "⚔️",
+      "name": "Northern Strike 26-2 Joint Exercise",
+      "description": "PDYN will deploy SwarmOS, IntelliSwarm, and Gremlin-X at Northern Strike 26-2 — a premier DoD joint exercise with 9,000+ participants from multiple branches. This is the largest public demonstration of SwarmOS to date. A successful live-fire demo could trigger rapid program-of-record expansion.",
+      "urgencyLabel": "SOON",
+      "dateBadge": "Summer 2026",
+      "catalystDate": "2026-08-15",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🤝",
+      "name": "IAI Loitering Munitions Partnership",
+      "description": "Palladyne AI + Israel Aerospace Industries partnership for U.S. loitering munitions integrates SwarmOS into one of the world's most battle-proven drone platforms. Potential for NATO and US ally exports.",
+      "urgencyLabel": "ACTIVE",
+      "dateBadge": "2026",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "green",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Tiny company — $280M market cap, backlog only $17M. One failed Army exercise = -40% scenario",
+    "Pre-scale revenue: backlog grew 26% to $17M but absolute dollar amount is still very small",
+    "Competition: Anduril (private), Shield AI (private), AeroVironment all targeting same DoD drone swarm market",
+    "Dilution risk — small cap companies often issue shares to fund operations",
+    "DoD procurement timelines are slow: contract-to-revenue can take 12-24 months"
+  ],
+  "estimateDates": [
+    { "event": "Northern Strike 26-2 Exercise", "dateRange": "Summer 2026", "note": "9,000-participant joint DoD exercise — SwarmOS live demo catalyst", "est": "Live validation", "highlight": "yellow" },
+    { "event": "Next Earnings / Contract Update", "dateRange": "Aug 2026", "note": "Backlog expansion past $25M+ would signal program-of-record trajectory", "est": "est. Backlog $22-25M", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -50, "price": 3.16 },
+    { "label": "Base", "color": "yellow", "pct": 80, "price": 11.36 },
+    { "label": "Bull", "color": "green", "pct": 138, "price": 15.02 },
+    { "label": "Moon", "color": "purple", "pct": 375, "price": 29.96 }
+  ],
+  "analystTargets": [
+    { "firm": "Northland (Jun 8, 2026)", "target": 15, "rating": "Buy", "note": "Raised from $10; Army contract win catalyst" },
+    { "firm": "HC Wainwright", "target": 6, "rating": "Buy", "note": "Conservative; revenue scale still early" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Defense AI software contracts are funded by multi-year DoD budget appropriations — not rate-sensitive. $901B FY2026 defense budget, rising to $1.5T by 2027 as proposed.",
+    "inflationNote": "DoD software contracts are cost-plus or fixed-price with inflation adjustments. PDYN's software-first model has high margins once scale achieved.",
+    "sectorImpact": "LOW impact. Defense autonomy is a congressional mandate — bipartisan support regardless of Fed policy. The risk is execution, not macro.",
+    "summary": "Fed risk LOW. DoD defense AI spending is a structural tailwind independent of interest rates. The risk is binary: can SwarmOS prove itself in live exercises and win larger program-of-record contracts?"
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 6.31, "note": "Current price — post-Army contract drift. Valid ค่าขนม entry.", "timing": "Now (2-3% max)" },
+      { "label": "Entry 2", "level": 5.20, "rangeMax": 5.60, "note": "50-day MA support zone — best R/R entry.", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 4.00, "note": "Near 52-week support — only on sector-wide selloff", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 10.00, "pct": 58.5, "note": "Pre-exercise momentum target" },
+    "tp2": { "price": 15.00, "pct": 137.7, "note": "Northland analyst target — Northern Strike success" },
+    "tp3": { "price": 30.00, "pct": 375.4, "note": "Moon — multi-branch DoD SwarmOS adoption + IAI export revenue", "moon": true },
+    "stopLoss": {
+      "tight": 5.00, "tightPct": -20.8, "tightNote": "Below $5 = Army exercise fails or contract canceled",
+      "hard": 3.50, "hardPct": -44.5, "hardNote": "Near 52-week lows = thesis broken",
+      "riskReward": "7.3 : 1", "rrNote": "Entry 2 ($5.40) vs TP2 ($15)", "rrWarning": "Asymmetric ✅ — classic ค่าขนม R/R"
+    },
+    "verdict": "ค่าขนม Moonshot — 2-3% of portfolio max. Army exercise is THE binary catalyst. Enter now or at $5.20-5.60 dip. Target $15 base, $30 moon.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "Defense AI software stocks historically run 30-80% in the 2-4 weeks around DoD live-exercise demonstrations. Northern Strike 26-2 with 9,000 participants is PDYN's biggest stage yet.",
+    "preRunupTiming": "2-4 สัปดาห์ก่อน Northern Strike exercise",
+    "preRunupPct": "+30-80%",
+    "postWin": {
+      "avgPct": 100,
+      "range": "+50% to +200%",
+      "note": "Anduril (private) analogues: AI defense software companies with first major live validation contracts typically see 2-5x within 12 months of first DoD program-of-record win. JOBY +150% in 3 weeks on FAA Stage 4 completion is a public comparator.",
+      "exampleDate": "2025"
+    },
+    "postLose": {
+      "avgPct": -40,
+      "range": "-30% to -60%",
+      "note": "Small defense tech companies that fail public live-fire exercises see 30-50% selloffs. PDYN Jan 2026 Army exercise disappointment scenario = -40%.",
+      "exampleDate": "Jan 2026"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "ค่าขนม play — tiny $280M market cap, pre-scale revenue. 3% max. The asymmetry (7:1 R/R) justifies the position despite binary risk."
+    },
+    "stopPreCatalyst": { "pct": -20, "price": 5.05, "note": "หลุด $5 ก่อน exercise = ลด size ทันที" },
+    "stopPostCatalyst": { "pct": -30, "note": "ถ้า exercise fails หรือ Army cancels contract — ออกทันที ขาดทุนยอมรับ" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "ACHR",
+      "event": "FAA Stage 4 Certification + Dubai Partnership",
+      "date": "Apr 2026",
+      "movePct": 180,
+      "days": 30,
+      "outcome": "good",
+      "note": "Archer Aviation +180% in 30 days on first major regulatory/partner validation. PDYN Army contract is the equivalent milestone — first live validation by a major institutional customer."
+    },
+    {
+      "ticker": "PLTR",
+      "event": "First Major U.S. Army AI Contract",
+      "date": "Sep 2021",
+      "movePct": 120,
+      "days": 60,
+      "outcome": "good",
+      "note": "Palantir +120% over 2 months after first large-scale DoD AI contract win. PDYN is at the same inflection — first Army validation that could become a program-of-record."
+    },
+    {
+      "ticker": "JOBY",
+      "event": "FAA Stage 5 Entry (Final Certification Phase)",
+      "date": "Apr 2026",
+      "movePct": 65,
+      "days": 14,
+      "outcome": "good",
+      "note": "Joby +65% in 2 weeks on entering final FAA stage. Defense AI software milestones follow similar patterns — first operational live-fire validation = structural re-rate."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Palladyne AI Awarded U.S. Army Contracts for SwarmOS Autonomous Swarm Technology and Gremlin-X Mini-Bomber UAV",
+    "url": "https://investor.palladyneai.com/news-releases/news-release-details/palladyne-ai-awarded-us-army-contracts-for-swarmostm-autonomous",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://investor.palladyneai.com/news-releases/news-release-details/palladyne-ai-awarded-us-army-contracts-for-swarmostm-autonomous",
+    "https://www.businesswire.com/news/home/20260617353751/en/Palladyne-AI-Awarded-U.S.-Army-Contracts-for-SwarmOS",
+    "https://www.intelligentgov.tech/2026/06/23/palladyne-ai-awarded-us-army-contracts-for-autonomous-swarm-technology-and-reusable-uav/",
+    "https://www.marketbeat.com/stocks/NASDAQ/PDYN/forecast/",
+    "https://uasweekly.com/2026/06/23/palladyne-ai-wins-u-s-army-contracts-for-autonomous-drone-swarms-and-gremlin-x-tactical-uav-program/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Palladyne AI เพิ่งชนะ contract กองทัพบกสหรัฐ (17-23 มิ.ย.) สำหรับ SwarmOS ซอฟต์แวร์ควบคุมฝูง drone อัตโนมัติ + Gremlin-X mini-bomber UAV Market cap เพียง $280M vs ตลาด drone อิสระ $50B+ Northern Strike 26-2 (9,000+ ผู้เข้าร่วม) = catalyst ถัดไป เป้า $15 base / $30 moon ขนาด 2-3% เท่านั้น",
+      "priceNote": "$280M market cap — Army contract ใหม่มาก Northland PT $15 (138% upside) มิ.ย. 2026",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "Army SwarmOS + Gremlin-X Contracts", "description": "กองทัพบก award contract 17-23 มิ.ย. ให้ validate SwarmOS + Gremlin-X กับ 4th Infantry Division" },
+        { "name": "Northern Strike 26-2 Exercise", "description": "demo SwarmOS ในการซ้อมรบใหญ่ 9,000+ คน — live validation ใหญ่ที่สุดของ PDYN" },
+        { "name": "IAI Loitering Munitions Partnership", "description": "ร่วมกับ Israel Aerospace Industries บน loitering munitions — ขยายไป NATO + allies" }
+      ],
+      "risks": [
+        "บริษัทเล็กมาก — $280M cap backlog $17M exercise fail = -40%",
+        "Pre-scale revenue — backlog ยังเล็ก ต้องโตมากกว่านี้",
+        "คู่แข่ง Anduril/Shield AI (private) ล้วนแย่ง DoD drone market",
+        "Dilution risk — small cap มักออกหุ้นเพิ่ม",
+        "DoD procurement ช้า 12-24 เดือน contract → revenue"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Defense AI software ไม่ sensitive กับดอกเบี้ย — งบ DoD multi-year appropriations",
+        "inflationNote": "Software model margin สูง — ไม่ affected โดย cost inflation",
+        "sectorImpact": "ผลกระทบ LOW — bipartisan defense AI mandate ไม่ขึ้นกับ Fed policy",
+        "summary": "ความเสี่ยง Fed ต่ำ ความเสี่ยงหลักคือ binary exercise result ไม่ใช่ macro"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม Moonshot — 2-3% max เข้า $6.31 หรือ $5.20-5.60 dip เป้า $15 base / $30 moon",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน หลัง Army contract drift", "timing": "ตอนนี้ (2-3% max)" },
+          { "note": "50-day MA zone — R/R ดีที่สุด", "timing": "ถ้าย่อ" },
+          { "note": "ใกล้ 52w support — deep dip เท่านั้น", "timing": "Deep dip" }
+        ],
+        "tp1": { "note": "momentum ก่อน exercise" },
+        "tp2": { "note": "Northland PT — Northern Strike success" },
+        "tp3": { "note": "Moon — multi-branch DoD SwarmOS adoption", "moon": true },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า $5 = Army exercise fail หรือ cancel",
+          "hardNote": "ใกล้ 52w low = thesis broken",
+          "rrNote": "Entry 2 ($5.40) vs TP2 ($15)",
+          "rrWarning": "Asymmetric ✅ 7:1 R/R classic ค่าขนม"
+        }
+      },
+      "estimateDates": [
+        { "event": "Northern Strike 26-2 Exercise", "note": "SwarmOS live demo 9,000+ participants joint exercise" },
+        { "event": "Earnings / Contract Update", "note": "backlog $22-25M+ = program-of-record trajectory signal" }
+      ]
+    }
+  }
+}

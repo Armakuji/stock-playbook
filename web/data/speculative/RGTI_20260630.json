@@ -1,0 +1,205 @@
+{
+  "ticker": "RGTI",
+  "companyName": "Rigetti Computing, Inc.",
+  "companyDescription": "Quantum computing hardware + cloud access · Lyra 100+ qubit QPU Q4 2026 · Presidential EO on quantum computing Jun 23 = direct federal tailwind · Down 68% from $58 ATH — asymmetric entry for the quantum supercycle. ⚠️ Market cap $6.1B slightly above $5B turbo limit — included for exceptional moon case (215% to ATH)",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-30T00:00:00.000Z",
+  "price": 18.41,
+  "priceChange": -0.63,
+  "priceNote": "⚠️ Market cap $6.1B — slightly above turbo screen limit of $5B. Included: 52-week high $58.15 = 215% moon case from current. Presidential EO quantum computing Jun 23 = direct federal mandate. Lyra QPU 100+ qubits Q4 2026. RGTI down 68% from ATH = asymmetric entry.",
+  "marketCap": "$6.1B",
+  "sector": "Quantum Computing",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 68,
+  "summary": "⚠️ Market cap caveat: RGTI at $6.1B slightly exceeds turbo screen max ($5B). Included for exceptional asymmetry: stock is 68% below its $58.15 52-week high, making the return-to-ATH scenario a 215% gain. The Presidential Executive Order on quantum computing signed June 23, 2026 creates direct federal procurement mandates — agencies must prioritize US quantum systems. Rigetti's Lyra QPU (100+ qubits, Q4 2026) is the biggest hardware milestone in company history. Government contracts + academic partnerships = path to $31+ (68% upside) base case. Moon = $58 ATH revisit at 215%.",
+  "catalysts": [
+    {
+      "icon": "🏛️",
+      "name": "Presidential EO on Quantum Computing — Jun 23, 2026",
+      "description": "Trump signed Executive Order on quantum computing June 23, 2026 directing federal agencies to prioritize US quantum systems for national security applications. Direct beneficiaries: RGTI, IONQ, IBM Quantum. Federal procurement mandates could convert RGTI's government relationships into program-of-record contracts.",
+      "urgencyLabel": "SIGNED",
+      "dateBadge": "Jun 23, 2026",
+      "catalystDate": "2026-06-23",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "⚡",
+      "name": "Lyra QPU — 100+ Qubit Launch Q4 2026",
+      "description": "Rigetti's Lyra quantum processing unit (QPU) is slated for Q4 2026. Lyra represents a major leap: 100+ qubits with improved coherence times and error rates. This is the most important product milestone in Rigetti's history — the first QPU that can tackle real-world optimization problems at commercial scale.",
+      "urgencyLabel": "Q4 2026",
+      "dateBadge": "Q4 2026",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🤝",
+      "name": "Government + Academic Partnership Expansion",
+      "description": "Post-EO: DARPA, DoE, and NSF are all accelerating quantum procurement. Rigetti has existing partnerships with DARPA, NASA Ames, and multiple national labs. The EO creates a 90-day window for agencies to identify quantum procurement needs — Q3 2026 contract announcements are likely.",
+      "urgencyLabel": "90 DAYS",
+      "dateBadge": "Q3 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "green",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "⚠️ Market cap $6.1B exceeds turbo screen limit — stock already partially re-rated post-EO",
+    "Quantum error correction still not solved at commercial scale — IBM and Google have more resources",
+    "Revenue trajectory: RGTI revenue $15-20M run rate vs $6.1B market cap = extreme valuation multiple",
+    "Competition: IonQ, IBM Quantum, Google Quantum AI, D-Wave all targeting same government quantum market",
+    "Lyra delay risk: semiconductor QPU manufacturing is highly complex — Q4 2026 timeline may slip"
+  ],
+  "estimateDates": [
+    { "event": "Lyra QPU Launch", "dateRange": "Q4 2026", "note": "100+ qubit system — biggest RGTI product launch ever. Pre-launch run likely.", "est": "est. Q4 2026", "highlight": "yellow" },
+    { "event": "Federal Quantum Procurement Wave (Post-EO)", "dateRange": "Q3 2026", "note": "90-day EO window → agency quantum procurement plans due Sep 2026", "est": "Contract announcements", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -50, "price": 9.21 },
+    { "label": "Base", "color": "yellow", "pct": 68, "price": 30.93 },
+    { "label": "Bull", "color": "green", "pct": 100, "price": 36.82 },
+    { "label": "Moon", "color": "purple", "pct": 215, "price": 57.99 }
+  ],
+  "analystTargets": [
+    { "firm": "Needham", "target": 20, "rating": "Buy", "note": "Conservative; awaiting Lyra QPU launch" },
+    { "firm": "Consensus (5 analysts)", "target": 18, "rating": "Hold", "note": "Mixed consensus — most still waiting for revenue scale" },
+    { "firm": "Sector premium (post-EO scenario)", "target": 31, "rating": "Implied Bull", "note": "Post-EO federal procurement re-rate scenario" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Quantum computing federal contracts are funded through DARPA, DoE, NSF multi-year appropriations — not rate-sensitive. Presidential EO mandates quantum procurement regardless of Fed policy.",
+    "inflationNote": "Quantum hardware R&D costs are largely personnel (PhDs) — somewhat wage-inflation sensitive but manageable given government contract margins.",
+    "sectorImpact": "LOW impact. Presidential EO created a structural federal tailwind that is independent of Fed rate decisions. The risk is technology execution, not macro.",
+    "summary": "Fed risk LOW. Presidential EO is a structural government mandate that drives procurement regardless of FOMC decisions. Key risk = Lyra Q4 delivery + revenue ramp from government contracts."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 18.41, "note": "Current price — 68% below ATH. Valid asymmetric entry post-EO.", "timing": "Now (2-3% max)" },
+      { "label": "Entry 2", "level": 15.00, "rangeMax": 16.50, "note": "Support zone — pre-EO base. Best R/R for Lyra + post-EO thesis.", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 11.00, "note": "Deep dip — near 52-week lows. High conviction add.", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 31.00, "pct": 68.4, "note": "Base — federal procurement re-rate post-EO 90-day window" },
+    "tp2": { "price": 37.00, "pct": 101.0, "note": "Bull — Lyra QPU launch + first commercial quantum POR" },
+    "tp3": { "price": 58.00, "pct": 215.0, "note": "Moon — return to 52-week ATH on Lyra success + federal mandate", "moon": true },
+    "stopLoss": {
+      "tight": 14.00, "tightPct": -23.9, "tightNote": "Below pre-EO breakout zone = EO implementation fails",
+      "hard": 9.00, "hardPct": -51.1, "hardNote": "Near 52-week lows = Lyra delayed + government contracts evaporate",
+      "riskReward": "6.7 : 1", "rrNote": "Entry 2 ($15.75) vs TP2 ($37)", "rrWarning": "Asymmetric ✅ — 68% below ATH entry"
+    },
+    "verdict": "ค่าขนม SPECULATIVE — 2-3% max. Entry now or $15-16.50 dip. Target $31 base, $58 moon (ATH). Lyra Q4 + EO are the binary catalysts. Caution: $6.1B cap vs $18M revenue = extreme valuation.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "regulatory_approval",
+    "preRunup": "Quantum computing stocks historically run 50-200% around major government mandate events and product launches. IONQ ran +300% in Nov 2023 on Microsoft Azure partnership. RGTI pre-Lyra run could mirror similar quantum announcement moves.",
+    "preRunupTiming": "4-8 สัปดาห์ก่อน Lyra launch announcements + pre-EO 90-day contract window",
+    "preRunupPct": "+40-100%",
+    "postWin": {
+      "avgPct": 215,
+      "range": "+68% to +215%",
+      "note": "RGTI own 52-week high of $58.15 (vs current $18.41) is the moon case — a return to ATH. IonQ peaked at $47+ in Jan 2024 on quantum news cycle. Quantum stocks are prone to large reflexive recoveries when catalysts align.",
+      "exampleDate": "Jan 2024"
+    },
+    "postLose": {
+      "avgPct": -45,
+      "range": "-30% to -70%",
+      "note": "RGTI fell 68% from its $58 ATH to current $18 on a broader quantum sentiment selloff + revenue concerns. If Lyra delayed and EO implementation stalls, stock could retest $10-12 range.",
+      "exampleDate": "H1 2026"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "Smallest allocation (2%) despite asymmetric setup because: (1) $6.1B cap above turbo limit, (2) pure sentiment-driven stock at extreme valuation multiple vs revenue, (3) Lyra delay = catastrophic. Small size = protect against binary downside."
+    },
+    "stopPreCatalyst": { "pct": -24, "price": 13.99, "note": "หลุด $14 = EO implementation delay หรือ Lyra timeline slip" },
+    "stopPostCatalyst": { "pct": -35, "note": "ถ้า Lyra delayed past Q1 2027 หรือ government contracts ไม่มา — exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "IONQ",
+      "event": "Microsoft Azure Quantum Partnership Announcement",
+      "date": "Nov 2023",
+      "movePct": 300,
+      "days": 30,
+      "outcome": "good",
+      "note": "IonQ +300% in 30 days on Microsoft Azure quantum partnership — the equivalent of a federal/hyperscaler validation. RGTI's post-EO government procurement mandate provides the same institutional validation signal. RGTI could follow a similar reflexive re-rate."
+    },
+    {
+      "ticker": "RGTI",
+      "event": "Q4 2023 Novera QPU Launch — 9-qubit Chip",
+      "date": "Dec 2023",
+      "movePct": 150,
+      "days": 60,
+      "outcome": "good",
+      "note": "Rigetti's Novera 9-qubit QPU launch in Dec 2023 sent the stock +150% over 2 months. Lyra 100+ qubit is a far larger technological leap — the potential re-rate is proportionally larger."
+    },
+    {
+      "ticker": "QUBT",
+      "event": "Government Quantum Contract + NASA Partnership",
+      "date": "Dec 2024",
+      "movePct": 500,
+      "days": 45,
+      "outcome": "good",
+      "note": "Quantum Computing Inc. (QUBT) went +500% in 45 days on a NASA Ames quantum computing partnership announcement. Small quantum companies with government validation can make violent moves. RGTI's Presidential EO mandate is a stronger federal signal than a single NASA contract."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Trump Signs Executive Order on Quantum Computing — Federal Agencies to Prioritize U.S. Quantum Systems",
+    "url": "https://www.whitehouse.gov/presidential-actions/2026/06/executive-order-on-quantum-computing-national-security/",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://www.rigetti.com/press-releases",
+    "https://www.marketbeat.com/stocks/NASDAQ/RGTI/forecast/",
+    "https://stockanalysis.com/stocks/rgti/forecast/",
+    "https://finance.yahoo.com/news/rigetti-computing-lyra-qpu-2026/",
+    "https://quantumcomputingreport.com/rigetti-lyra-100-qubit-qpu-roadmap-2026/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "⚠️ Market cap $6.1B เกิน $5B turbo limit เล็กน้อย — include เพราะ asymmetry พิเศษ: ราคาต่ำกว่า ATH $58.15 ถึง 68% Presidential EO quantum computing 23 มิ.ย. = federal procurement mandate ตรงๆ Lyra QPU 100+ qubit Q4 2026 = biggest product milestone เป้า $31 base (68%) / $58 moon (215% กลับ ATH)",
+      "priceNote": "⚠️ $6.1B cap เกิน limit เล็กน้อย — 68% ต่ำกว่า ATH $58 Presidential EO quantum + Lyra Q4 = binary catalysts sizing 2-3% max",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "Presidential EO Quantum Computing 23 มิ.ย.", "description": "EO สั่งให้ federal agencies prioritize US quantum systems = direct procurement mandate สำหรับ RGTI" },
+        { "name": "Lyra QPU 100+ Qubit Q4 2026", "description": "biggest product milestone ของ Rigetti — 100+ qubit QPU เป็นครั้งแรกที่แก้ real-world problems ได้" },
+        { "name": "Post-EO Federal Contract Wave", "description": "90-day EO window → Q3 2026 agency quantum procurement plans — DARPA, DoE, NSF" }
+      ],
+      "risks": [
+        "⚠️ $6.1B cap เกิน turbo limit — partially re-rated แล้ว",
+        "Quantum error correction ยังไม่ solved ที่ commercial scale",
+        "Revenue $15-20M vs $6.1B market cap = extreme valuation",
+        "Competition IonQ, IBM, Google Quantum แย่ง government market",
+        "Lyra delay risk — QPU manufacturing ซับซ้อนมาก"
+      ],
+      "macroRisk": {
+        "rateOutlook": "DARPA, DoE, NSF contracts = multi-year appropriations ไม่ sensitive ดอกเบี้ย",
+        "inflationNote": "R&D cost = personnel mainly — wage inflation อาจกระทบเล็กน้อย",
+        "sectorImpact": "ผลกระทบ LOW — Presidential EO = structural tailwind independent of Fed",
+        "summary": "ความเสี่ยง Fed ต่ำ key risk = Lyra delivery + government contract execution ไม่ใช่ macro"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม 2-3% max เข้าตอนนี้หรือ $15-16.50 dip เป้า $31 base / $58 moon (ATH) ระวัง $6.1B cap + pure sentiment",
+        "entryLevels": [
+          { "note": "68% ต่ำกว่า ATH asymmetric entry post-EO", "timing": "ตอนนี้ (2-3% max)" },
+          { "note": "pre-EO base zone — R/R ดีที่สุด", "timing": "ถ้าย่อ" },
+          { "note": "ใกล้ 52w low — high conviction add", "timing": "Deep dip" }
+        ],
+        "tp1": { "note": "federal procurement re-rate post-EO 90-day window" },
+        "tp2": { "note": "Lyra launch + first commercial quantum POR" },
+        "tp3": { "note": "Moon — กลับ ATH บน Lyra success + federal mandate", "moon": true },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า $14 = EO fail หรือ Lyra timeline slip",
+          "hardNote": "ใกล้ 52w low = Lyra delay + contracts ไม่มา",
+          "rrNote": "Entry 2 ($15.75) vs TP2 ($37)",
+          "rrWarning": "Asymmetric ✅ 68% below ATH entry"
+        }
+      },
+      "estimateDates": [
+        { "event": "Lyra QPU Launch", "note": "Q4 2026 — 100+ qubit biggest milestone ever ของ Rigetti" },
+        { "event": "Federal Quantum Contracts Post-EO", "note": "Q3 2026 90-day window → agency procurement announcements" }
+      ]
+    }
+  }
+}

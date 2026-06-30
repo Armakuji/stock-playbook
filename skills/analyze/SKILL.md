@@ -2,9 +2,10 @@
 name: analyze
 description: >
   Full institutional stock analysis report. Triggered by `/analyze <TICKER>`.
-  Researches live price, news, earnings catalyst, Fed/macro risk, and generates
-  a dark-theme HTML report with entry strategy saved to the workspace folder.
-  Use for any single-ticker deep dive.
+  Researches live price, news, earnings catalyst, Fed/macro risk, generates
+  a dark-theme HTML preview AND saves a StockReport JSON to
+  web/data/reports/<TICKER>_<YYYYMMDD>.json, then validates and git pushes so
+  the dashboard updates automatically. Use for any single-ticker deep dive.
 ---
 
 # /analyze Command — Stock Analysis Report
@@ -230,15 +231,95 @@ Do not fabricate prices, dates, or probabilities.
 
 ---
 
-## Step 3 — Save and present
+## Step 3 — Save HTML preview
 
 1. Fill all `{{PLACEHOLDER}}` values with real researched data
-2. Save the completed HTML to the workspace as `{{TICKER}}_report_{{YYYYMMDD}}.html`
+2. Save the completed HTML to the scratchpad as `{{TICKER}}_report_{{YYYYMMDD}}.html`
 3. Present the file to the user with `mcp__cowork__present_files`
-4. Print a 3-line summary in chat:
-   - Current price + % change
-   - Fed risk verdict (one line)
-   - Entry verdict (one line)
+
+---
+
+## Step 4 — Save JSON to dashboard + push
+
+After the HTML, build and save the **StockReport JSON** so the dashboard updates.
+
+### 4a — Write JSON
+
+Save to: `web/data/reports/<TICKER>_<YYYYMMDD>.json`
+
+Use the full `StockReport` schema from `web/lib/types.ts` (same schema as `/catalyst-list`).
+Key fields to populate from research:
+
+```json
+{
+  "ticker": "NVDA",
+  "companyName": "...",
+  "companyDescription": "...",
+  "exchange": "NASDAQ",
+  "generatedAt": "<ISO timestamp>",
+  "price": 134.20,
+  "priceChange": -3.2,
+  "priceNote": "...",
+  "marketCap": "...",
+  "sector": "...",
+  "verdict": "BUY | HOLD | SELL | SPECULATIVE",
+  "scoreLabel": "Core Holding | Speculative | ค่าขนม",
+  "score": 80,
+  "summary": "...",
+  "catalysts": [ { "icon":"⚡","name":"...","description":"...","urgencyLabel":"...","dateBadge":"...","catalystDate":"YYYY-MM-DD","badgeColor":"red|yellow|green|blue","dotColor":"red|yellow|green|gray" } ],
+  "risks": ["..."],
+  "estimateDates": [ { "event":"...","dateRange":"...","note":"...","est":"...","highlight":"blue|yellow" } ],
+  "scenarios": [
+    { "label":"Bear","color":"red","pct":-20,"price":0 },
+    { "label":"Base","color":"yellow","pct":15,"price":0 },
+    { "label":"Bull","color":"green","pct":30,"price":0 },
+    { "label":"Moon","color":"purple","pct":55,"price":0 }
+  ],
+  "analystTargets": [ { "firm":"...","target":0,"rating":"Buy","note":"..." } ],
+  "macroRisk": { "fedRisk":"LOW|MEDIUM|HIGH","rateOutlook":"...","inflationNote":"...","sectorImpact":"...","summary":"..." },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label":"Entry 1","level":0,"note":"...","timing":"Now" },
+      { "label":"Entry 2","level":0,"rangeMax":0,"note":"...","timing":"If dips","preferred":true },
+      { "label":"Entry 3","level":0,"note":"...","timing":"Deep dip" }
+    ],
+    "tp1": { "price":0,"pct":0,"note":"..." },
+    "tp2": { "price":0,"pct":0,"note":"..." },
+    "tp3": { "price":0,"pct":0,"note":"...","moon":true },
+    "stopLoss": { "tight":0,"tightPct":0,"tightNote":"...","hard":0,"hardPct":0,"hardNote":"...","riskReward":"X:1","rrNote":"...","rrWarning":"..." },
+    "verdict": "...",
+    "approach": "DCA | Lump Sum | Scale In"
+  },
+  "catalystSpot": { "catalystType":"earnings_beat|product_launch|...","preRunup":"...","preRunupTiming":"...","preRunupPct":"...","postWin":{"avgPct":0,"range":"...","note":"...","exampleDate":"..."},"postLose":{"avgPct":0,"range":"...","note":"...","exampleDate":"..."},"spotSizing":{"pct":0,"reason":"..."},"stopPreCatalyst":{"pct":0,"price":0,"note":"..."},"stopPostCatalyst":{"pct":0,"note":"..."} },
+  "comparableCases": [ { "ticker":"...","event":"...","date":"Mon YYYY","movePct":0,"days":0,"outcome":"good|mixed|bad","note":"..." } ],
+  "rankChangeSource": { "headline":"...","url":"https://...","date":"Mon YYYY" },
+  "sources": ["https://..."],
+  "i18n": { "th": { "summary":"...","priceNote":"...","scoreLabel":"...","catalysts":[{"name":"...","description":"..."}],"risks":["..."],"macroRisk":{"rateOutlook":"...","inflationNote":"...","sectorImpact":"...","summary":"..."},"entryStrategy":{"verdict":"...","entryLevels":[{"note":"...","timing":"..."},{"note":"...","timing":"..."},{"note":"...","timing":"..."}],"tp1":{"note":"..."},"tp2":{"note":"..."},"tp3":{"note":"..."},"stopLoss":{"tightNote":"...","hardNote":"...","rrNote":"...","rrWarning":"..."}},"estimateDates":[{"event":"...","note":"..."}] } }
+}
+```
+
+Rules:
+- `sources[]` must have ≥1 real URL (≥2 preferred)
+- `catalystDate` must be set on at least the nearest catalyst (ISO `YYYY-MM-DD`)
+- `score` is recomputed at load time by `web/lib/scoring.ts` — fill grounded fields accurately
+- If a report for the same ticker already exists for today, overwrite it
+
+### 4b — Validate and push
+
+```bash
+node scripts/validate-reports.mjs
+git add web/data/reports/
+git commit -m "report: add <TICKER> report <YYYYMMDD>"
+git push
+```
+
+### 4c — Confirm
+
+Print a 3-line summary in chat:
+- Current price + % change
+- Fed risk verdict (one line)
+- Entry verdict (one line)
+- `✅ <TICKER> report saved → pushed to GitHub → Vercel deploying`
 
 ---
 
