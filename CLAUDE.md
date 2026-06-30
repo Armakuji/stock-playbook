@@ -21,7 +21,7 @@ Every analysis follows a strict research-first workflow before generating any ou
 
 ## Available slash commands
 - `/analyze <TICKER>` — analyze **ONE specific stock** → full single-stock report → saves JSON to `web/data/reports/` + git push → Vercel deploys. This is single-ticker only; do NOT screen/build a dashboard here. (uses `xvary-stock-report` skill)
-- `/preview <TICKER>` — full single-stock report → generates HTML only for local viewing · **no JSON save · no git push**
+- `/preview <TICKER>` — dry-run single-stock analysis → research + assemble the report JSON in chat for review · **no JSON save · no git push** (the site is the presentation layer; run `/analyze` to publish). Does NOT generate HTML.
 - `/catalyst-list` *(formerly `/dashboard` / `/analyze-catalyst`; `/dashboard` still works as an alias)* — **generate the catalyst dashboard**: find 5 stocks with 30%+ upside (Tech/AI/Space/Semiconductors/Robotics first) → save JSON reports for each → **log runners-up to `web/data/near-misses.json`** (counterfactual) → **generate market timing and save to `web/data/market-timing.json`** → git push → visible at `/catalyst`
 - `/analyze-turbo <TICKER>` — single moonshot report (300%+ speculative) → saves JSON to `web/data/speculative/` → git push → visible at `/turbo` (uses `xvary-turbo-report` skill)
 - `/turbo-list` — find the **5 best moonshot plays** (small/mid-cap, ≥200–300% bull case, binary catalyst) → save JSON to `web/data/speculative/` for each → git push → visible at `/turbo`. Ranked by potential upside (bull/moon %), NOT catalyst proximity. No market-timing step. (uses `xvary-turbo-report` skill)

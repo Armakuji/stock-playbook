@@ -1,0 +1,213 @@
+{
+  "ticker": "RXRX",
+  "companyName": "Recursion Pharmaceuticals Inc.",
+  "companyDescription": "AI Drug Discovery · Combines machine learning + biology OS to decode disease at scale — partnered with Roche/Genentech and NVIDIA for AI-powered therapeutics pipeline",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-30T00:00:00.000Z",
+  "price": 3.52,
+  "priceChange": 0.28,
+  "priceNote": "ARK Invest bought 260K shares June 24; founder Chris Gibson stepping back — CEO Najat Khan refocusing on pipeline execution",
+  "marketCap": "$1.87B",
+  "sector": "Biotech / AI Drug Discovery",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 42,
+  "summary": "Recursion's AI-powered drug discovery OS is a genuine platform play with Roche/Genentech and NVIDIA partnerships providing validation. The stock is at multi-year lows near $3.52 with massive upside to analyst targets ($6-8). The binary event is REC-4881 Phase 2 data in 2H26 showing 43-53% polyp burden reduction — a potential registrational pathway.",
+  "catalysts": [
+    {
+      "icon": "🧬",
+      "name": "REC-4881 Phase 2 Data Readout 2H26",
+      "description": "FAP drug showed median 43% polyp reduction at Week 13, deepening to 53% at Week 25. FDA engagement initiated. 2H26 update could define registrational pathway — the primary re-rating event.",
+      "urgencyLabel": "2H 2026",
+      "dateBadge": "~Sep–Oct 2026",
+      "catalystDate": "2026-10-01",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🤖",
+      "name": "ARK Invest Accumulation Signal",
+      "description": "Cathie Wood's ARK bought 260K shares on June 24, 2026. ARK has deep AI conviction and typically accumulates multi-quarter. Their buy signals platform confidence at current depressed valuations.",
+      "urgencyLabel": "NOW",
+      "dateBadge": "Jun 24, 2026",
+      "catalystDate": "2026-06-24",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "💊",
+      "name": "REC-617 CDK7 Phase 1 Data",
+      "description": "Early Phase 1 data for REC-617 (CDK7 inhibitor) expected 1H27. Oncology pipeline that could be the next re-rating catalyst if safety profile confirms.",
+      "urgencyLabel": "1H 2027",
+      "dateBadge": "~H1 2027",
+      "catalystDate": "2027-03-01",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Binary clinical risk: REC-4881 2H26 data miss would likely push stock below $2",
+    "Founder Chris Gibson stepping back from board — leadership transition uncertainty",
+    "High cash burn rate with minimal revenue — Q1 2026 revenue miss vs estimates",
+    "Competitive risk from larger pharma AI platforms (BMS, Pfizer, AstraZeneca internal AI units)",
+    "REC-617 Phase 1 timeline pushed to 1H27 — pipeline delays eroding conviction",
+    "Dilution risk from equity raises to fund operations through clinical milestones"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q2 2026 Earnings",
+      "dateRange": "~Aug 6–12, 2026",
+      "note": "Revenue trend + cash runway update — key survival signal",
+      "est": "EPS est. improving +39% YoY",
+      "highlight": "blue"
+    },
+    {
+      "event": "REC-4881 Phase 2 Update",
+      "dateRange": "2H 2026",
+      "note": "FDA engagement on registrational pathway — the catalyst",
+      "est": "Pivotal readout",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -43, "price": 2.0 },
+    { "label": "Base", "color": "yellow", "pct": 56, "price": 5.5 },
+    { "label": "Bull", "color": "green", "pct": 127, "price": 8.0 },
+    { "label": "Moon", "color": "purple", "pct": 241, "price": 12.0 }
+  ],
+  "analystTargets": [
+    { "firm": "Morgan Stanley", "target": 5.5, "rating": "Hold", "note": "May 14, 2026 — later launch timeline for REC-617" },
+    { "firm": "Consensus (8 analysts)", "target": 6.64, "rating": "Hold/Buy", "note": "Average 12-month target; +112% upside from $3.52" },
+    { "firm": "Top Bull", "target": 8.0, "rating": "Buy", "note": "5-analyst buy consensus avg $8 — +127% upside" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Fed held at 3.50–3.75%; dot plot leans toward one hike in 2026. Next FOMC July 29.",
+    "inflationNote": "CPI print July 14 — hot data could hurt risk appetite broadly but biotech catalyst-driven names are less correlated.",
+    "sectorImpact": "Biotech is driven by clinical outcomes more than rate environment. Low rate sensitivity for RXRX specifically — pipeline data is the dominant factor.",
+    "summary": "LOW macro risk: clinical outcomes dominate RXRX price action; Fed hike scenario is a minor headwind vs. the binary REC-4881 data outcome in 2H26."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 3.52, "note": "Current — near multi-year lows, ARK accumulating", "timing": "Now (small starter)" },
+      { "label": "Entry 2", "level": 2.8, "rangeMax": 3.0, "note": "Dip zone — adds conviction if thesis intact", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 2.2, "note": "Maximum value zone — survival in question at this level", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 5.5, "pct": 56.3, "note": "Morgan Stanley target — trim 30-50%" },
+    "tp2": { "price": 7.0, "pct": 98.9, "note": "Consensus avg territory — let partial ride" },
+    "tp3": { "price": 12.0, "pct": 240.9, "note": "Bull case: REC-4881 FDA path + pipeline progress 2027", "moon": true },
+    "stopLoss": {
+      "tight": 2.5, "tightPct": -29.0, "tightNote": "Below $2.50 signals cash runway concerns",
+      "hard": 2.0, "hardPct": -43.2, "hardNote": "Existential — REC-4881 failure + cash crunch",
+      "riskReward": "2.0 : 1", "rrNote": "TP2 vs tight stop", "rrWarning": "Acceptable for biotech lottery sizing"
+    },
+    "verdict": "SPECULATIVE — ค่าขนม 3-5% max; ARK buying at these levels is the best near-term signal. Hold through 2H26 REC-4881 data — that is the only catalyst that matters.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "regulatory_approval",
+    "preRunup": "AI biotech names with clinical catalysts typically see 20-40% pre-announcement runs as informed money positions 4-6 weeks ahead. RXRX has been largely suppressed due to leadership transition, leaving potential for a sharp re-rating on positive signal.",
+    "preRunupTiming": "4–6 weeks before data readout announcement",
+    "preRunupPct": "+20–40%",
+    "postWin": {
+      "avgPct": 80,
+      "range": "+40% to +150%",
+      "note": "Small biotech Phase 2 successes with FDA engagement typically generate 60-120% moves. Relay Therapeutics (RLAY) gained +85% on Phase 2 tumor data in Jun 2023. RXRX at $3.52 with positive REC-4881 FDA path could see similar magnitude.",
+      "exampleDate": "Jun 2023"
+    },
+    "postLose": {
+      "avgPct": -50,
+      "range": "-35% to -65%",
+      "note": "Phase 2 efficacy misses in oncology/rare disease typically produce -40-60% selloffs. Kymera (KYMR) fell -52% on Phase 2 miss in Aug 2024. RXRX at $3.52 has less downside than from higher levels but risk remains severe.",
+      "exampleDate": "Aug 2024"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "High upside to analyst targets but binary clinical event = lottery ticket sizing. ARK accumulation provides conviction floor. Max 4% allocation."
+    },
+    "stopPreCatalyst": { "pct": -29, "price": 2.5, "note": "Below $2.50 = cash burn accelerating or pipeline setback — exit pre-data" },
+    "stopPostCatalyst": { "pct": -20, "note": "Data miss: cut immediately, don't average down on a failed thesis" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "RLAY",
+      "event": "Phase 2 tumor response data — RLY-2608",
+      "date": "Jun 2023",
+      "movePct": 85,
+      "days": 3,
+      "outcome": "good",
+      "note": "Relay Therapeutics Phase 2 efficacy data drove +85% in 3 days. Comparable to RXRX's REC-4881 if FDA path announced — same rare disease + platform story."
+    },
+    {
+      "ticker": "KYMR",
+      "event": "Phase 2 oncology miss",
+      "date": "Aug 2024",
+      "movePct": -52,
+      "days": 2,
+      "outcome": "bad",
+      "note": "Kymera Phase 2 failure drove -52% in 2 days. Downside scenario for RXRX if REC-4881 2H26 data disappoints."
+    },
+    {
+      "ticker": "RXRX",
+      "event": "Roche/Genentech partnership announcement",
+      "date": "Jan 2022",
+      "movePct": 35,
+      "days": 5,
+      "outcome": "good",
+      "note": "RXRX surged +35% when Roche/Genentech $150M collaboration announced, validating the AI platform. Partnership revenue milestones remain a secondary catalyst."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "RXRX Stock Climbs As Earnings Beat And AI Pipeline Advance — ARK buys 260K shares June 24 2026",
+    "url": "https://www.timothysykes.com/news/recursion-pharmaceuticals-inc-rxrx-news-2026_06_01/",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://finance.yahoo.com/quote/RXRX/",
+    "https://ir.recursion.com/news-releases/news-release-details/recursion-reports-first-quarter-financial-results-and-provides",
+    "https://stockanalysis.com/stocks/rxrx/forecast/",
+    "https://www.chartmill.com/news/RXRX/Chartmill-47249-Recursion-Pharmaceuticals-RXRX-Q1-2026-Results-Revenue-Miss-Overshadows-Narrower-Net-Loss",
+    "https://www.benzinga.com/quote/RXRX/analyst-ratings"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Recursion เป็น AI drug discovery platform ที่ได้รับการยืนยันจาก Roche/Genentech และ NVIDIA — ราคาอยู่ที่จุดต่ำสุดในรอบหลายปี $3.52 ในขณะที่ ARK กำลังสะสม. Catalyst หลักคือ REC-4881 data 2H26 ที่แสดงผล 43-53% ลดลง — ถ้า FDA เห็นด้วยจะเปิดทางสู่ระดับ $8-12.",
+      "priceNote": "ARK ซื้อ 260K หุ้นวันที่ 24 มิ.ย. — สัญญาณสะสมที่ระดับต่ำ",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "REC-4881 Phase 2 ผล 2H26", "description": "ยาลด polyp 43-53% ถ้า FDA เห็นทาง registrational จะ re-rate ใหญ่" },
+        { "name": "ARK สะสมหุ้น", "description": "ARK ซื้อ 260K หุ้น 24 มิ.ย. — สัญญาณ conviction ที่ระดับต่ำนี้" },
+        { "name": "REC-617 CDK7 Phase 1", "description": "ข้อมูล Phase 1 คาดว่า 1H27 — catalyst รองที่จะช่วย re-rate" }
+      ],
+      "risks": [
+        "Binary risk: ถ้า REC-4881 ล้มเหลวราคาอาจหลุด $2",
+        "Founder Chris Gibson ออกจาก Board — uncertainty ด้าน leadership",
+        "Cash burn สูง รายได้ Q1 ต่ำกว่าคาด",
+        "ความเสี่ยงจาก dilution เพื่อระดมทุน",
+        "REC-617 ล่าช้าออกไป 1H27"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed ถือดอกเบี้ย 3.50-3.75% ประชุมถัดไป 29 ก.ค.",
+        "inflationNote": "CPI รายงาน 14 ก.ค. — biotech ไม่ sensitive กับ macro มากนัก",
+        "sectorImpact": "Biotech ขับเคลื่อนด้วย clinical data ไม่ใช่ rate — macro risk ต่ำสำหรับ RXRX",
+        "summary": "Fed risk ต่ำ — data readout 2H26 เป็นตัวกำหนดราคาเกือบ 100%"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม 3-5% max — ARK กำลังสะสม ถือผ่าน REC-4881 data 2H26",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน ใกล้จุดต่ำสุด ARK สะสม", "timing": "ตอนนี้ (เล็กๆ)" },
+          { "note": "Zone ที่ดีกว่า ถ้า thesis ยังดี", "timing": "ถ้าย่อ" },
+          { "note": "Zone สูงสุดของ value แต่เสี่ยงด้าน survival", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Morgan Stanley target — ตัด 30-50%" },
+        "tp2": { "note": "Consensus avg territory" },
+        "tp3": { "note": "Bull: REC-4881 FDA path + pipeline 2027", "moon": true },
+        "stopLoss": { "tightNote": "ต่ำกว่า $2.50 = cash concerns", "hardNote": "Existential — data miss + cash crunch", "rrNote": "vs TP2", "rrWarning": "OK สำหรับ biotech lottery" }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q2 2026", "note": "Cash runway + รายได้ partnership milestone" },
+        { "event": "REC-4881 Phase 2 Update", "note": "FDA path — ตัวกำหนดราคาหลัก" }
+      ]
+    }
+  }
+}

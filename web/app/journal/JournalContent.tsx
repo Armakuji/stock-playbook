@@ -111,6 +111,21 @@ function newId(): string {
   return Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
 }
 
+function parseDecimalInput(raw: string): number {
+  const n = parseFloat(raw);
+  return Number.isNaN(n) ? 0 : n;
+}
+
+function fmtShares(n: number): string {
+  if (!Number.isFinite(n) || n === 0) return "0";
+  const rounded = parseFloat(n.toFixed(6));
+  return String(rounded);
+}
+
+function fmtTradeCount(n: number): string {
+  return n === 1 ? "1 trade" : `${n} trades`;
+}
+
 // ── API helpers ───────────────────────────────────────────────────────────────
 
 async function apiSave(trade: Trade) {
@@ -194,6 +209,9 @@ function TradeForm({ initial, reportOptions, reportsByTicker, onSave, onCancel }
   onCancel: () => void;
 }) {
   const [t, setT] = useState<Trade>(initial ?? { id: newId(), ...emptyTrade() });
+  const [sharesInput, setSharesInput] = useState(
+    initial && initial.shares > 0 ? String(initial.shares) : ""
+  );
   const [customTicker, setCustomTicker] = useState(
     initial ? !reportOptions.some((r) => r.ticker === initial.ticker) : false
   );
@@ -255,7 +273,12 @@ function TradeForm({ initial, reportOptions, reportsByTicker, onSave, onCancel }
 
   const tickerDates = t.ticker ? (reportsByTicker[t.ticker] ?? []) : [];
 
-  const cost = t.entryPrice * t.shares;
+  const shares = parseDecimalInput(sharesInput);
+  const cost = t.entryPrice * shares;
+
+  function handleSubmit() {
+    onSave({ ...t, shares: parseDecimalInput(sharesInput) });
+  }
   const tp1Pct = t.entryPrice > 0 && t.plannedTP[0] > 0
     ? ((t.plannedTP[0] - t.entryPrice) / t.entryPrice * 100) : null;
   const slPct = t.entryPrice > 0 && t.plannedSL > 0
@@ -323,7 +346,14 @@ function TradeForm({ initial, reportOptions, reportsByTicker, onSave, onCancel }
           <input style={inputStyle} type="number" step="0.01" value={t.entryPrice || ""} onChange={(e) => field("entryPrice", parseFloat(e.target.value) || 0)} />
         </Field>
         <Field label="Shares">
-          <input style={inputStyle} type="number" step="any" value={t.shares || ""} onChange={(e) => field("shares", parseFloat(e.target.value) || 0)} />
+          <input
+            style={inputStyle}
+            type="text"
+            inputMode="decimal"
+            value={sharesInput}
+            onChange={(e) => setSharesInput(e.target.value)}
+            placeholder="0"
+          />
         </Field>
         <Field label="Tight Stop $">
           <input style={inputStyle} type="number" step="0.01" value={t.plannedSL || ""} onChange={(e) => field("plannedSL", parseFloat(e.target.value) || 0)} />
@@ -385,7 +415,7 @@ function TradeForm({ initial, reportOptions, reportsByTicker, onSave, onCancel }
 
       <div style={{ display: "flex", gap: 10, marginTop: 16 }}>
         <button
-          onClick={() => onSave(t)}
+          onClick={handleSubmit}
           style={{ padding: "8px 18px", borderRadius: 8, border: "none", background: "#10b981", color: "#fff", fontWeight: 800, fontSize: 13, cursor: "pointer", fontFamily: "var(--font-mono, monospace)" }}
         >
           Save Trade
@@ -404,17 +434,26 @@ function TradeForm({ initial, reportOptions, reportsByTicker, onSave, onCancel }
 // ── Exit Form ─────────────────────────────────────────────────────────────────
 
 function ExitForm({ trade, onClose }: { trade: Trade; onClose: (updated: Trade) => void }) {
-  const [price, setPrice] = useState("");
-  const [shares, setShares] = useState("");
-  const [date, setDate] = useState(new Date().toISOString().slice(0, 10));
-  const [note, setNote] = useState("");
-
   const exitedSoFar = trade.exits.reduce((s, e) => s + e.shares, 0);
   const remaining = trade.shares - exitedSoFar;
 
+  const [price, setPrice] = useState("");
+  const [shares, setShares] = useState(remaining > 0 ? fmtShares(remaining) : "");
+  const [date, setDate] = useState(new Date().toISOString().slice(0, 10));
+  const [note, setNote] = useState("");
+
   function submit() {
+    const exitShares = parseDecimalInput(shares);
+    if (exitShares <= 0) {
+      alert("Please enter shares greater than 0.");
+      return;
+    }
+    if (exitShares > remaining + 1e-9) {
+      alert(`Cannot exit more than ${fmtShares(remaining)} shares remaining.`);
+      return;
+    }
     const exit: TradeExit = {
-      date, price: parseFloat(price), shares: parseInt(shares), note: note || undefined,
+      date, price: parseFloat(price), shares: exitShares, note: note || undefined,
     };
     const newExits = [...trade.exits, exit];
     const totalExited = newExits.reduce((s, e) => s + e.shares, 0);
@@ -430,7 +469,7 @@ function ExitForm({ trade, onClose }: { trade: Trade; onClose: (updated: Trade) 
   return (
     <div style={{ background: "var(--bg, #0f172a)", border: "1px solid #f59e0b40", borderRadius: 10, padding: "14px 16px", marginTop: 8 }}>
       <div style={{ fontSize: 11, fontWeight: 800, color: "#f59e0b", fontFamily: "var(--font-mono, monospace)", marginBottom: 10 }}>
-        LOG EXIT · {remaining} shares remaining
+        LOG EXIT · {fmtShares(remaining)} shares remaining
       </div>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(110px, 1fr))", gap: 10 }}>
         <Field label="Exit Date">
@@ -440,7 +479,7 @@ function ExitForm({ trade, onClose }: { trade: Trade; onClose: (updated: Trade) 
           <input style={inputStyle} type="number" step="0.01" value={price} onChange={(e) => setPrice(e.target.value)} />
         </Field>
         <Field label="Shares">
-          <input style={inputStyle} type="number" max={remaining} value={shares} onChange={(e) => setShares(e.target.value)} />
+          <input style={inputStyle} type="text" inputMode="decimal" value={shares} onChange={(e) => setShares(e.target.value)} placeholder="0" />
         </Field>
         <Field label="Note">
           <input style={inputStyle} value={note} onChange={(e) => setNote(e.target.value)} placeholder="TP1 hit, stop, etc." />
@@ -515,7 +554,7 @@ function TradeRow({ trade, priceInfo, onEdit, onDelete, onSaveExit }: {
             <span style={{ fontSize: 14, fontWeight: 900, color: "#10b981", fontFamily: "var(--font-mono, monospace)" }}>{trade.ticker}</span>
           </Link>
           <div style={{ fontSize: 9, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>
-            {trade.shares} sh
+            {fmtShares(trade.shares)} sh
           </div>
         </div>
 
@@ -548,26 +587,39 @@ function TradeRow({ trade, priceInfo, onEdit, onDelete, onSaveExit }: {
         </div>
 
         {/* Current price (open) or realized P&L (closed) */}
-        <div style={{ textAlign: "right", minWidth: 80 }}>
+        <div style={{ textAlign: "right" }}>
           {trade.status === "open" && currentPrice !== null ? (
-            <>
-              <div style={{ fontSize: 12, fontWeight: 800, color: "var(--text)", fontFamily: "var(--font-mono, monospace)" }}>${currentPrice.toFixed(2)}</div>
+            <div style={{ display: "flex", gap: 14, justifyContent: "flex-end" }}>
+              <div>
+                <div style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>now</div>
+                <div style={{ fontSize: 12, fontWeight: 800, color: "var(--text)", fontFamily: "var(--font-mono, monospace)" }}>${currentPrice.toFixed(2)}</div>
+              </div>
               {unrealizedPct !== null && (
-                <div style={{ fontSize: 10, fontWeight: 700, color: pnlColor(unrealizedPct), fontFamily: "var(--font-mono, monospace)" }}>
-                  {unrealizedPct >= 0 ? "+" : ""}{unrealizedPct.toFixed(1)}%
+                <div>
+                  <div style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>changes</div>
+                  <div style={{ fontSize: 12, fontWeight: 700, color: pnlColor(unrealizedPct), fontFamily: "var(--font-mono, monospace)" }}>
+                    {unrealizedPct >= 0 ? "+" : ""}{unrealizedPct.toFixed(1)}%
+                  </div>
                 </div>
               )}
-            </>
+            </div>
           ) : pnl !== null ? (
-            <div style={{ fontSize: 13, fontWeight: 800, color: pnlColor(pnl), fontFamily: "var(--font-mono, monospace)" }}>{fmt$(pnl)}</div>
+            <>
+              <div style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>P&L</div>
+              <div style={{ fontSize: 12, fontWeight: 800, color: pnlColor(pnl), fontFamily: "var(--font-mono, monospace)" }}>{fmt$(pnl)}</div>
+            </>
           ) : (
-            <span style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>—</span>
+            <>
+              <div style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>P&L</div>
+              <span style={{ fontSize: 12, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>—</span>
+            </>
           )}
         </div>
 
         {/* Days held */}
-        <div style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", minWidth: 28, textAlign: "right" }}>
-          {days}d
+        <div style={{ textAlign: "right", minWidth: 28 }}>
+          <div style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>hold</div>
+          <div style={{ fontSize: 12, fontWeight: 700, color: "var(--text)", fontFamily: "var(--font-mono, monospace)" }}>{days}d</div>
         </div>
 
         {/* Plan adherence (closed) */}
@@ -780,7 +832,7 @@ function TradeRow({ trade, priceInfo, onEdit, onDelete, onSaveExit }: {
                     <div key={i} style={{ display: "flex", gap: 12, fontSize: 11, fontFamily: "var(--font-mono, monospace)", flexWrap: "wrap", padding: "7px 11px", borderRadius: 7, alignItems: "center", background: exPnl >= 0 ? "#10b98108" : "#ef444408", border: `1px solid ${exPnl >= 0 ? "#10b98120" : "#ef444420"}` }}>
                       <span style={{ color: "#475569" }}>{ex.date}</span>
                       <span style={{ color: "#94a3b8", fontWeight: 700 }}>${ex.price.toFixed(2)}</span>
-                      <span style={{ color: "#475569" }}>{ex.shares} sh</span>
+                      <span style={{ color: "#475569" }}>{fmtShares(ex.shares)} sh</span>
                       <span style={{ color: pnlColor(exPnl), fontWeight: 800 }}>{fmt$(exPnl)}</span>
                       {ex.note && <span style={{ color: "#475569", fontStyle: "italic" }}>{ex.note}</span>}
                     </div>
@@ -906,6 +958,10 @@ export function JournalContent({ initialTrades, stats, reportOptions = [], price
       alert("Please enter a ticker before saving.");
       return;
     }
+    if (trade.shares <= 0) {
+      alert("Please enter a share amount greater than 0.");
+      return;
+    }
     try {
       await apiSave(trade);
       setTrades((prev) => {
@@ -1009,7 +1065,7 @@ export function JournalContent({ initialTrades, stats, reportOptions = [], price
               <div key={type} style={{ display: "flex", flexDirection: "column", gap: 4 }}>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
                   <span style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>{type.replace(/_/g, " ")}</span>
-                  <span style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>n={data.trades}</span>
+                  <span style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>{fmtTradeCount(data.trades)}</span>
                 </div>
                 <WinBar rate={data.trades > 0 ? data.wins / data.trades : 0} />
                 <span style={{ fontSize: 10, color: pnlColor(data.totalPnL), fontFamily: "var(--font-mono, monospace)" }}>{fmt$(data.totalPnL)}</span>
