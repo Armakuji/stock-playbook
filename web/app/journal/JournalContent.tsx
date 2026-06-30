@@ -114,17 +114,25 @@ function newId(): string {
 // ── API helpers ───────────────────────────────────────────────────────────────
 
 async function apiSave(trade: Trade) {
-  await fetch("/journal/api", {
+  const res = await fetch("/journal/api", {
     method: "POST", headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ action: "save", trade }),
   });
+  if (!res.ok) {
+    const body = await res.json().catch(() => ({})) as { error?: string };
+    throw new Error(body.error ?? `Save failed (${res.status})`);
+  }
 }
 
 async function apiDelete(id: string) {
-  await fetch("/journal/api", {
+  const res = await fetch("/journal/api", {
     method: "POST", headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ action: "delete", id }),
   });
+  if (!res.ok) {
+    const body = await res.json().catch(() => ({})) as { error?: string };
+    throw new Error(body.error ?? `Delete failed (${res.status})`);
+  }
 }
 
 // ── Sub-components ────────────────────────────────────────────────────────────
@@ -894,19 +902,31 @@ export function JournalContent({ initialTrades, stats, reportOptions = [], price
   })();
 
   const handleSave = useCallback(async (trade: Trade) => {
-    setTrades((prev) => {
-      const idx = prev.findIndex((t) => t.id === trade.id);
-      return idx >= 0 ? prev.map((t) => t.id === trade.id ? trade : t) : [...prev, trade];
-    });
-    await apiSave(trade);
-    setShowForm(false);
-    setEditTrade(null);
+    if (!trade.ticker.trim()) {
+      alert("Please enter a ticker before saving.");
+      return;
+    }
+    try {
+      await apiSave(trade);
+      setTrades((prev) => {
+        const idx = prev.findIndex((t) => t.id === trade.id);
+        return idx >= 0 ? prev.map((t) => t.id === trade.id ? trade : t) : [...prev, trade];
+      });
+      setShowForm(false);
+      setEditTrade(null);
+    } catch (err) {
+      alert(err instanceof Error ? err.message : "Failed to save trade");
+    }
   }, []);
 
   const handleDelete = useCallback(async (id: string) => {
     if (!confirm("Delete this trade?")) return;
-    setTrades((prev) => prev.filter((t) => t.id !== id));
-    await apiDelete(id);
+    try {
+      await apiDelete(id);
+      setTrades((prev) => prev.filter((t) => t.id !== id));
+    } catch (err) {
+      alert(err instanceof Error ? err.message : "Failed to delete trade");
+    }
   }, []);
 
   const filtered = trades.filter((t) => {

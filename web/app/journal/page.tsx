@@ -3,6 +3,9 @@
 // Access at http://localhost:3000/journal on the Mac Mini.
 // Vercel static export skips API routes, so writes will silently no-op there.
 
+// Must read private/journal.json on every request — never bake trades in at build time.
+export const dynamic = "force-dynamic";
+
 import { readJournal } from "@/lib/journal";
 import { computeStats } from "@/lib/journal-math";
 import { getAllReports, getAllReportsGrouped } from "@/lib/reports";

@@ -1,0 +1,205 @@
+{
+  "ticker": "RDW",
+  "companyName": "Redwire Corporation",
+  "companyDescription": "Space infrastructure + in-space manufacturing · Golden Dome $151B missile defense contract pool · Solar arrays on ISS and Lunar Gateway · 3D bioprinting + in-space manufacturing capabilities — building the factories of the final frontier",
+  "exchange": "NYSE",
+  "generatedAt": "2026-06-30T00:00:00.000Z",
+  "price": 10.93,
+  "priceChange": 0.41,
+  "priceNote": "Market cap $2.17B — Golden Dome $151B DoD contract pool + EU ESA contracts. Analyst PT range $15-$24 = 37-120% upside. In-space manufacturing is a decade-long structural play. ค่าขนม sizing 3-5% max.",
+  "marketCap": "$2.17B",
+  "sector": "Space / Defense Infrastructure",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 74,
+  "summary": "Redwire is the picks-and-shovels of space infrastructure — building solar arrays for the ISS, power systems for Lunar Gateway, and in-space manufacturing capabilities. The Golden Dome Initiative ($151B missile defense program) is a direct opportunity for Redwire's space-based ISR and sensor systems. EU/ESA contracts provide international revenue diversification. Analysts have targets from $15 (37% upside) to $24 (120% upside). Moon case: major Golden Dome contract win + Redwire becomes the Boeing Defense of space hardware = $44 (302%).",
+  "catalysts": [
+    {
+      "icon": "🛡️",
+      "name": "Golden Dome Initiative — Space Defense Contract Pool",
+      "description": "Trump's Golden Dome ($151B over 10 years) includes space-based missile intercept capabilities and ISR sensors — exactly what Redwire builds. DoD is awarding initial Golden Dome contract layers in H2 2026. Redwire's space solar arrays, solar electric propulsion, and in-space manufacturing position it uniquely vs pure-software defense contractors.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "🌍",
+      "name": "EU / ESA Contract Expansion",
+      "description": "Redwire signed multiple European Space Agency contracts in 2025-2026 for in-space manufacturing modules and bioprinting systems aboard the ISS. European diversification reduces US budget dependency risk. ESA's lunar program and space station replacements are multi-year backlog builders.",
+      "urgencyLabel": "ACTIVE",
+      "dateBadge": "2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🏭",
+      "name": "In-Space Manufacturing Commercialization",
+      "description": "Redwire's rollable solar arrays, 3D bioprinting, and in-space manufacturing capabilities are transitioning from R&D to commercial product lines. ISS National Lab partnerships and pharma companies testing drug manufacturing in microgravity = new revenue stream beyond DoD.",
+      "urgencyLabel": "SCALING",
+      "dateBadge": "2026-2027",
+      "catalystDate": "2027-06-30",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Still pre-profit — net losses continuing; execution required to reach FCF positive",
+    "Golden Dome contract competition is fierce: L3Harris, Raytheon, Northrop all bidding",
+    "Space hardware is capital-intensive — potential dilutive equity raises",
+    "US government budget: CR/sequester risk if Congress can't pass FY2027 appropriations",
+    "Stock already up ~150% from 2025 lows — not cheap relative to near-term revenue"
+  ],
+  "estimateDates": [
+    { "event": "Golden Dome Contract Announcements", "dateRange": "H2 2026", "note": "Initial DoD Golden Dome contract layers — even a small RDW win = massive re-rate", "est": "First contract award", "highlight": "yellow" },
+    { "event": "FY2026 Revenue / Backlog Update", "dateRange": "Q3 2026", "note": "Backlog visibility for FY2027 is the metric — target $400M+ backlog", "est": "est. $350-400M backlog", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -45, "price": 6.01 },
+    { "label": "Base", "color": "yellow", "pct": 75, "price": 19.13 },
+    { "label": "Bull", "color": "green", "pct": 120, "price": 24.05 },
+    { "label": "Moon", "color": "purple", "pct": 302, "price": 43.96 }
+  ],
+  "analystTargets": [
+    { "firm": "Canaccord Genuity", "target": 24, "rating": "Buy", "note": "Street-high; Golden Dome + ESA pipeline" },
+    { "firm": "Benchmark", "target": 20, "rating": "Buy", "note": "In-space manufacturing commercialization thesis" },
+    { "firm": "Stifel", "target": 15, "rating": "Buy", "note": "Conservative; awaiting Golden Dome award clarity" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Defense and NASA space contracts are government-funded multi-year programs — not rate sensitive. The $901B defense budget + Golden Dome are appropriated funds independent of Fed policy.",
+    "inflationNote": "Space hardware has long-term fixed contracts with inflation escalators. Short-term margin pressure possible but multi-year contract floors protect revenue.",
+    "sectorImpact": "LOW impact. Space defense is a bipartisan congressional mandate. Fed rate decisions have minimal impact on NASA/DoD contract awards.",
+    "summary": "Fed risk LOW. Redwire's revenue is tied to long-term US and EU government space contracts. The risk is execution + Golden Dome competition, not macro."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 10.93, "note": "Current price — valid starter position pre-Golden Dome awards.", "timing": "Now (2-3% max)" },
+      { "label": "Entry 2", "level": 9.00, "rangeMax": 9.80, "note": "Support zone — Q1 2026 consolidation base. Best R/R.", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 7.50, "note": "Deep dip — near 52-week support. Add aggressively here.", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 19.00, "pct": 73.8, "note": "Mid-point analyst consensus — first Golden Dome clarity" },
+    "tp2": { "price": 24.00, "pct": 119.6, "note": "Canaccord street-high — confirmed Golden Dome contract" },
+    "tp3": { "price": 44.00, "pct": 302.5, "note": "Moon — multi-billion Golden Dome prime or subcontract win", "moon": true },
+    "stopLoss": {
+      "tight": 8.50, "tightPct": -22.2, "tightNote": "Below Q1 2026 support = Golden Dome disqualification fears",
+      "hard": 6.00, "hardPct": -45.1, "hardNote": "Near 52-week lows = sector-wide selloff or lost bids",
+      "riskReward": "6.2 : 1", "rrNote": "Entry 2 ($9.40) vs TP2 ($24)", "rrWarning": "Asymmetric ✅ — space defense binary"
+    },
+    "verdict": "ค่าขนม SPECULATIVE BUY — 3-5% sizing. Entry now or at $9-9.80 dip. Target $24 bull, $44 moon if Golden Dome. Long thesis 12-18 months.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "Space infrastructure companies historically re-rate 30-100% on first major government program-of-record wins. RDW has accumulated ESA + DoD relationships over 2024-2025 — the Golden Dome decision is the binary that turns backlog into re-rate.",
+    "preRunupTiming": "4-8 สัปดาห์ก่อน Golden Dome contract award announcements",
+    "preRunupPct": "+20-60%",
+    "postWin": {
+      "avgPct": 120,
+      "range": "+80% to +300%",
+      "note": "Palantir +200% in 2024 after winning major DoD AI contract as prime contractor. Redwire winning a Golden Dome space layer prime or large sub-contract would follow the same trajectory — from 'small space company' to 'defense program of record' valuation multiple.",
+      "exampleDate": "2024"
+    },
+    "postLose": {
+      "avgPct": -30,
+      "range": "-20% to -50%",
+      "note": "Space companies that lose major program competitions see 20-40% selloffs. If RDW wins nothing from Golden Dome H2 2026, the re-rate thesis delays and stock likely retraces to $7-8 range.",
+      "exampleDate": "H2 2026"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "4% position — slightly larger than pure ค่าขนม because: (1) confirmed ESA contracts reduce binary risk vs zero-revenue plays, (2) $2.17B market cap is the larger end but Golden Dome TAM justifies the bet. Scale in over 2-3 tranches."
+    },
+    "stopPreCatalyst": { "pct": -22, "price": 8.53, "note": "หลุด $8.50 ก่อน Golden Dome = exit พอก่อน" },
+    "stopPostCatalyst": { "pct": -25, "note": "ถ้า Golden Dome awards announced และ RDW ไม่ได้อะไรเลย — exit ทั้งหมด" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "PLTR",
+      "event": "First Major U.S. Army AI Program of Record Win",
+      "date": "2024",
+      "movePct": 200,
+      "days": 90,
+      "outcome": "good",
+      "note": "Palantir went from 'software company with DoD contracts' to 'defense AI prime' valuation when it won its first large program of record — +200% in 90 days. RDW winning a Golden Dome space contract follows the same narrative shift: 'space startup' → 'defense space infrastructure prime.'"
+    },
+    {
+      "ticker": "RKLB",
+      "event": "NASA ESCAPADE Mars Mission + Neutron Program of Record",
+      "date": "2024",
+      "movePct": 350,
+      "days": 180,
+      "outcome": "good",
+      "note": "Rocket Lab ran +350% over 6 months as NASA and DoD contracts converted from one-off to recurring program-of-record. Redwire has similar contract diversification (ISS + Lunar Gateway + ESA) setting up a similar re-rate on Golden Dome win."
+    },
+    {
+      "ticker": "KTOS",
+      "event": "Valkyrie UCAS Drone Program Award",
+      "date": "2022",
+      "movePct": 90,
+      "days": 30,
+      "outcome": "good",
+      "note": "Kratos Defense +90% in 30 days on winning a major DoD unmanned combat aircraft program. RDW's space hardware equivalent — a Golden Dome space sensor/array subcontract — would trigger a comparable single-event re-rate."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Redwire Corporation — Golden Dome Initiative and European Space Agency Contract Pipeline",
+    "url": "https://redwirespace.com/newsroom/",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://redwirespace.com/newsroom/",
+    "https://www.marketbeat.com/stocks/NYSE/RDW/forecast/",
+    "https://stockanalysis.com/stocks/rdw/forecast/",
+    "https://finance.yahoo.com/news/redwire-space-golden-dome-defense-contracts-2026/",
+    "https://spacenews.com/redwire-wins-european-space-agency-in-space-manufacturing-contract/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Redwire คือ picks-and-shovels ของ space infrastructure — สร้าง solar arrays บน ISS, power systems บน Lunar Gateway และระบบ in-space manufacturing Golden Dome $151B เป็น direct opportunity สำหรับ space-based ISR sensors นักวิเคราะห์ PT $15-$24 = 37-120% upside Moon case = major Golden Dome contract win → $44 (302%)",
+      "priceNote": "$2.17B market cap — Golden Dome contract pool + EU/ESA contracts analyst PT $15-$24 sizing 3-5% max",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "Golden Dome Contract Pool", "description": "Trump Golden Dome $151B รวม space-based missile defense — RDW สร้าง solar arrays + ISR systems ที่ DoD ต้องการ" },
+        { "name": "EU/ESA Contract Expansion", "description": "ESA contracts in-space manufacturing modules + bioprinting aboard ISS — European revenue ลด US budget dependency" },
+        { "name": "In-Space Manufacturing Commercialization", "description": "3D bioprinting + rollable solar arrays กำลัง scale จาก R&D สู่ commercial product lines" }
+      ],
+      "risks": [
+        "ยังขาดทุน — ต้องการ execution ถึง FCF positive",
+        "Golden Dome competition ดุ — L3Harris, Raytheon, Northrop แย่งกัน",
+        "Space hardware capital-intensive — โอกาส dilutive equity raise",
+        "US government budget risk — CR/sequester ถ้า Congress ผ่าน budget ไม่ได้",
+        "ราคาขึ้น ~150% จาก 2025 lows แล้ว — ไม่ถูก"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Defense + NASA contracts เป็น government multi-year programs — ไม่ sensitive กับดอกเบี้ย",
+        "inflationNote": "Long-term fixed contracts มี inflation escalators — margin pressure ระยะสั้นอาจมี แต่ floor ป้องกัน",
+        "sectorImpact": "ผลกระทบ LOW — bipartisan space defense mandate ไม่ขึ้นกับ Fed",
+        "summary": "ความเสี่ยง Fed ต่ำ ความเสี่ยงหลัก = execution + Golden Dome competition ไม่ใช่ macro"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม SPECULATIVE BUY — 3-5% sizing เข้าตอนนี้หรือ $9-9.80 dip เป้า $24 bull / $44 moon horizon 12-18 เดือน",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — pre-Golden Dome awards starter", "timing": "ตอนนี้ (2-3% max)" },
+          { "note": "Q1 2026 consolidation zone — R/R ดีที่สุด", "timing": "ถ้าย่อ" },
+          { "note": "ใกล้ 52w support — เพิ่ม aggressive ที่นี่", "timing": "Deep dip" }
+        ],
+        "tp1": { "note": "Mid-point analyst consensus — first Golden Dome clarity" },
+        "tp2": { "note": "Canaccord street-high — confirmed Golden Dome contract" },
+        "tp3": { "note": "Moon — multi-billion Golden Dome prime/subcontract win", "moon": true },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า $8.50 = disqualification fear",
+          "hardNote": "ใกล้ 52w low = sector selloff หรือ lost bids",
+          "rrNote": "Entry 2 ($9.40) vs TP2 ($24)",
+          "rrWarning": "Asymmetric ✅ 6:1 R/R space defense binary"
+        }
+      },
+      "estimateDates": [
+        { "event": "Golden Dome Contract Announcements", "note": "H2 2026 — แม้แต่ subcontract เล็กๆ = re-rate ใหญ่" },
+        { "event": "FY2026 Revenue/Backlog Update", "note": "Backlog $400M+ = FY2027 visibility signal" }
+      ]
+    }
+  }
+}

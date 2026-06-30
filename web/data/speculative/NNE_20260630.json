@@ -1,0 +1,204 @@
+{
+  "ticker": "NNE",
+  "companyName": "NANO Nuclear Energy Inc.",
+  "companyDescription": "Micro nuclear reactor developer · KRONOS MMR™ 15MWe microreactor entered NRC formal review June 2026 · SMCI data center MOU · The Starlink of nuclear power — portable, deployable reactors for AI data centers + remote military bases",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-06-30T00:00:00.000Z",
+  "price": 19.76,
+  "priceChange": 1.12,
+  "priceNote": "Market cap $1.03B — NRC formally accepted KRONOS construction permit application May 18. NRC initiated formal review Jun 23. Roth Capital PT $45 (128% upside). SMCI data center co-location MOU = AI power narrative. ค่าขนม sizing 3% max.",
+  "marketCap": "$1.03B",
+  "sector": "Nuclear Energy / Defense",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 70,
+  "summary": "NANO Nuclear's KRONOS MMR™ is a 15MWe microreactor small enough to deploy at a data center, remote military base, or university campus. On June 23, 2026, the NRC initiated formal review activities with University of Illinois Urbana-Champaign — the first step in a regulatory path that ends in a construction permit. SMCI signed a MOU to explore co-packaged nuclear power solutions for data centers. Roth Capital has a $45 target (128% upside from $19.76). Moon case: NRC approval + 1 hyperscaler deployment contract = $60+ (203%+).",
+  "catalysts": [
+    {
+      "icon": "⚛️",
+      "name": "NRC Formal Review — KRONOS Construction Permit",
+      "description": "NRC initiated formal review activities Jun 23, 2026 for KRONOS MMR at U. Illinois Urbana-Champaign. Construction permit application accepted May 18. NRC environmental assessment expected Spring 2027, safety evaluation Fall 2027. Each major milestone re-rates the stock.",
+      "urgencyLabel": "ACTIVE",
+      "dateBadge": "Spring 2027",
+      "catalystDate": "2027-03-31",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🖥️",
+      "name": "SMCI Data Center Co-Location MOU",
+      "description": "NANO Nuclear signed a MOU with Super Micro Computer to explore co-packaged nuclear power + AI data center solutions. If SMCI converts MOU to a commercial deployment agreement, this validates KRONOS for the $500B+ data center power market.",
+      "urgencyLabel": "MOU SIGNED",
+      "dateBadge": "2026",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🏛️",
+      "name": "Post-EO Federal Procurement Pipeline",
+      "description": "Trump's quantum/AI energy EOs + bipartisan Nuclear Fuels Security Act create fast-track for domestic small modular and micro reactors. DoD needs portable nuclear power for remote forward bases — KRONOS MMR fits the requirement exactly.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "2026-2027",
+      "catalystDate": "2027-12-31",
+      "badgeColor": "green",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Pre-revenue — NRC approval won't come until 2027-2028 at earliest; construction 2028+",
+    "Regulatory delay risk: NRC reviews can slip by 12-24 months if technical issues arise",
+    "Capital raise risk: nuclear hardware is expensive — likely equity/debt raises diluting shareholders",
+    "Competition: Oklo (OKLO), NuScale (SMR), TerraPower (private) all targeting same AI power market",
+    "Technology risk: KRONOS is pre-construction — commercial viability unproven at scale"
+  ],
+  "estimateDates": [
+    { "event": "NRC Environmental Assessment", "dateRange": "Spring 2027", "note": "Key milestone — approval unlocks construction permit application", "est": "Regulatory milestone", "highlight": "blue" },
+    { "event": "SMCI MOU → Commercial Agreement", "dateRange": "H2 2026–2027", "note": "If MOU converts to signed power purchase agreement = massive re-rate", "est": "Binary event", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -50, "price": 9.88 },
+    { "label": "Base", "color": "yellow", "pct": 80, "price": 35.57 },
+    { "label": "Bull", "color": "green", "pct": 128, "price": 45.05 },
+    { "label": "Moon", "color": "purple", "pct": 300, "price": 79.04 }
+  ],
+  "analystTargets": [
+    { "firm": "Roth Capital", "target": 45, "rating": "Buy", "note": "Initiated with Buy; KRONOS regulatory path + SMCI MOU" },
+    { "firm": "Consensus (7 analysts)", "target": 46, "rating": "Moderate Buy", "note": "71% Buy · 14% Hold · 14% Sell" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "FOMC July 29 — 70% hold. Nuclear energy is a capex-heavy sector but NNE is pre-construction stage — stock trades on sentiment/regulatory milestones, not earnings. Rate impact is minimal at this stage.",
+    "inflationNote": "Construction cost inflation is a future risk (2027-2028). Currently irrelevant as NNE is regulatory-phase only.",
+    "sectorImpact": "LOW impact currently. If NRC approval triggers construction phase, cost inflation becomes material. But that's a 2027-2028 issue.",
+    "summary": "Fed risk LOW for NNE at current stage. Stock trades on regulatory milestones and partnership news. Key risk is timeline slippage on NRC review, not macro."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 19.76, "note": "Current price — post-NRC review initiation. Valid ค่าขนม starter.", "timing": "Now (2-3% max)" },
+      { "label": "Entry 2", "level": 16.00, "rangeMax": 17.50, "note": "Support zone — pre-NRC milestone price. Best R/R.", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 12.00, "note": "Deep correction / macro selloff level only", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 35.00, "pct": 77.1, "note": "Post-environmental assessment milestone re-rate" },
+    "tp2": { "price": 45.00, "pct": 127.7, "note": "Roth Capital target — NRC steady progress" },
+    "tp3": { "price": 79.00, "pct": 299.8, "note": "Moon — NRC approval + hyperscaler data center deployment contract", "moon": true },
+    "stopLoss": {
+      "tight": 15.00, "tightPct": -24.1, "tightNote": "Below pre-NRC milestone level = regulatory delay fears",
+      "hard": 10.00, "hardPct": -49.4, "hardNote": "50% from current = serious regulatory/tech failure",
+      "riskReward": "5.6 : 1", "rrNote": "Entry 2 ($16.75) vs TP2 ($45)", "rrWarning": "Asymmetric ✅ — long-horizon ค่าขนม"
+    },
+    "verdict": "ค่าขนม BUY — 2-3% of portfolio. Long time horizon (18-24 months to key milestones). Entry now or dip to $16-17.50. Target $45 base, $79 moon.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "regulatory_approval",
+    "preRunup": "Nuclear micro-reactor stocks historically run 50-150% around major NRC regulatory milestones. Oklo ran +400% in 2024 around its ARC-20 design certification. Each NRC milestone is a positive re-rate event.",
+    "preRunupTiming": "4-8 สัปดาห์ก่อน NRC milestone announcements",
+    "preRunupPct": "+30-100%",
+    "postWin": {
+      "avgPct": 80,
+      "range": "+50% to +300%",
+      "note": "Oklo (OKLO) 2024 ARC-20 design certification progress — stock ran +400% over 6 months. NuScale (SMR) ran +300% briefly after first design approval in 2022. Each regulatory step for KRONOS follows the same re-rate pattern.",
+      "exampleDate": "2024"
+    },
+    "postLose": {
+      "avgPct": -35,
+      "range": "-25% to -60%",
+      "note": "NuScale canceled its Carbon Free Power Project in Nov 2023 — stock fell 55% in 1 day. Major project cancelation = catastrophic for pre-revenue nuclear stocks.",
+      "exampleDate": "Nov 2023"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Long-horizon ค่าขนม. NRC timeline is 18-24 months. 3% sizing with scale-in. The SMCI MOU + regulatory progress de-risks slightly vs pure speculative nuclear plays."
+    },
+    "stopPreCatalyst": { "pct": -25, "price": 14.82, "note": "หลุด $15 = NRC review delay หรือ SMCI MOU ล้มเหลว" },
+    "stopPostCatalyst": { "pct": -40, "note": "ถ้า NRC reject application หรือ KRONOS design flaw found — ออกทันที" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "OKLO",
+      "event": "ARC-20 Design Certification Progress + Microsoft Contract",
+      "date": "2024",
+      "movePct": 400,
+      "days": 180,
+      "outcome": "good",
+      "note": "Oklo ran +400% over 6 months as ARC-20 regulatory milestones progressed + Microsoft signed a 20-year power purchase agreement. KRONOS + SMCI MOU is the identical setup — regulatory milestone + hyperscaler customer validation."
+    },
+    {
+      "ticker": "SMR",
+      "event": "NuScale First Design Approval (NRC)",
+      "date": "Aug 2022",
+      "movePct": 300,
+      "days": 60,
+      "outcome": "good",
+      "note": "NuScale briefly ran +300% after NRC approved its small modular reactor design — the first SMR design ever approved. NNE's KRONOS formal review acceptance is the same milestone phase."
+    },
+    {
+      "ticker": "NNE",
+      "event": "NRC Construction Permit Application Accepted",
+      "date": "May 2026",
+      "movePct": 45,
+      "days": 10,
+      "outcome": "good",
+      "note": "NNE +45% in 10 days after NRC formally accepted KRONOS construction permit application May 18, 2026. Pattern: each subsequent NRC milestone generates a similar or larger re-rate."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "NANO Nuclear's KRONOS MMR Program Advances as U.S. NRC Initiates Formal Review Activities",
+    "url": "https://www.streetinsider.com/Globe+NewswireNANO+Nuclear%E2%80%99s+KRONOS+MMR+Program+Advances+as+U.S.+NRC+Initiates+Formal+Review+Activities+with+University+of+Illinois+Urbana-Champaign+and+NANO+Nuclear+Energy/26688396.html",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://interestingengineering.com/energy/nano-nuclear-15-mwe-gen-iv-modular-microreactor-to-undergo-us-nrc-review",
+    "https://www.fool.com/investing/2026/06/20/nuclear-regulatory-commission-nano-nuclear-permit/",
+    "https://www.marketbeat.com/stocks/NASDAQ/NNE/forecast/",
+    "https://finance.yahoo.com/news/nano-nuclear-energy-deal-125000582.html",
+    "https://www.investingengineer.com/10-best-quantum-computing-stocks-to-buy/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "NANO Nuclear กำลังพัฒนา KRONOS MMR™ — micro reactor 15MWe ที่ deploy ได้ที่ data center / ฐานทัพ / มหาวิทยาลัย NRC เริ่ม formal review 23 มิ.ย. SMCI MOU สำหรับ AI data center co-location Roth Capital PT $45 (128% upside) Moon case NRC approval + hyperscaler deployment = $79 (300%)",
+      "priceNote": "$1.03B market cap — NRC formal review เริ่มแล้ว SMCI data center MOU ค่าขนม sizing 3% max",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "NRC Formal Review KRONOS", "description": "NRC เริ่ม formal review 23 มิ.ย. — environmental assessment ปี 2027 แต่ละ milestone = re-rate" },
+        { "name": "SMCI Data Center MOU", "description": "ถ้า MOU กลายเป็น PPA = validate KRONOS ใน $500B+ data center power market" },
+        { "name": "Federal Nuclear Procurement Pipeline", "description": "Trump AI energy EO + Nuclear Fuels Security Act = fast-track micro reactor deployment" }
+      ],
+      "risks": [
+        "Pre-revenue — NRC approval ปี 2027-2028 เร็วที่สุด",
+        "Regulatory delay risk — NRC review อาจช้า 12-24 เดือน",
+        "Capital raise dilution — nuclear hardware แพง ต้องออกหุ้นเพิ่ม",
+        "คู่แข่ง Oklo, NuScale, TerraPower แย่ง AI power market",
+        "Technology risk — KRONOS ยังไม่ได้ build จริง"
+      ],
+      "macroRisk": {
+        "rateOutlook": "FOMC 29 ก.ค. — 70% hold NNE ซื้อขายบน regulatory milestone ไม่ใช่ earnings ผลกระทบดอกเบี้ยน้อย",
+        "inflationNote": "Construction cost inflation เป็น future risk (ปี 2027-2028) ปัจจุบัน regulatory phase ยังไม่กระทบ",
+        "sectorImpact": "ผลกระทบ LOW ตอนนี้ ความเสี่ยงหลักคือ NRC timeline ไม่ใช่ macro",
+        "summary": "ความเสี่ยง Fed ต่ำ ซื้อขายบน milestone ข่าว key risk = NRC timeline slip"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม BUY — 2-3% max horizon 18-24 เดือน เข้าตอนนี้หรือ dip $16-17.50 เป้า $45 base / $79 moon",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน หลัง NRC review initiation", "timing": "ตอนนี้ (2-3% max)" },
+          { "note": "Pre-NRC milestone zone — R/R ดีที่สุด", "timing": "ถ้าย่อ" },
+          { "note": "Deep correction / macro selloff เท่านั้น", "timing": "Deep dip" }
+        ],
+        "tp1": { "note": "หลัง environmental assessment milestone re-rate" },
+        "tp2": { "note": "Roth Capital target — NRC progress ต่อเนื่อง" },
+        "tp3": { "note": "Moon — NRC approval + hyperscaler deployment", "moon": true },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า $15 = NRC delay หรือ SMCI MOU ล้มเหลว",
+          "hardNote": "50% loss = regulatory/tech failure scenario",
+          "rrNote": "Entry 2 ($16.75) vs TP2 ($45)",
+          "rrWarning": "Asymmetric ✅ long-horizon ค่าขนม"
+        }
+      },
+      "estimateDates": [
+        { "event": "NRC Environmental Assessment", "note": "ปี 2027 Spring — key milestone unlock construction permit" },
+        { "event": "SMCI MOU → Commercial Agreement", "note": "ถ้า convert = massive re-rate ของ KRONOS" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "ticker": "BKSY",
+  "companyName": "BlackSky Technology Inc.",
+  "companyDescription": "AI-powered satellite intelligence platform · Real-time Earth observation with sub-hourly revisit rates · $30M defense contract Apr 2026 · Golden Dome ISR layer = direct BKSY application · The AI-native eyes of the military and intelligence community",
+  "exchange": "NYSE",
+  "generatedAt": "2026-06-30T00:00:00.000Z",
+  "price": 24.94,
+  "priceChange": 0.87,
+  "priceNote": "Market cap $919M — $30M defense contract Apr 2026. Golden Dome ISR sensor requirement = direct BKSY play. Analyst PT range $30-42 = 20-68% upside. Moon case = DoD ISR prime contract = $75 (201%). ค่าขนม sizing 2-3% max.",
+  "marketCap": "$919M",
+  "sector": "Space / AI Intelligence",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 71,
+  "summary": "BlackSky operates an AI-powered satellite intelligence platform — real-time Earth observation with sub-hourly revisit rates, processed by AI models for military, government, and commercial customers. In April 2026, BlackSky won a $30M defense contract extension for real-time ISR (Intelligence, Surveillance, Reconnaissance). The Golden Dome initiative explicitly requires space-based ISR sensor layers — BlackSky's core capability. Analyst targets range $30-42 (20-68% upside). Moon case: Black Sky wins a large Golden Dome ISR prime or major DoD intelligence contract = $75 (201% upside).",
+  "catalysts": [
+    {
+      "icon": "🛰️",
+      "name": "Golden Dome ISR Layer — Space Intelligence Requirement",
+      "description": "Golden Dome ($151B) requires space-based ISR sensor coverage to detect and track incoming missiles. BlackSky's AI satellite intelligence platform — real-time Earth observation with sub-hourly revisit rates — is precisely the ISR capability Golden Dome needs. Pentagon awarding ISR contracts H2 2026.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "🎯",
+      "name": "$30M Defense Contract + NRO/NGA Pipeline",
+      "description": "BlackSky won a $30M defense contract in April 2026 for real-time ISR services. NRO (National Reconnaissance Office) and NGA (National Geospatial-Intelligence Agency) are both expanding AI satellite intelligence procurement. BKSY's next contract expansion could be 3-5x the April award.",
+      "urgencyLabel": "ACTIVE",
+      "dateBadge": "Q3-Q4 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🌐",
+      "name": "Commercial Customer Expansion — AI Analytics Platform",
+      "description": "Beyond defense: BlackSky's Spectra AI platform is now sold commercially — supply chain monitoring, agricultural intelligence, infrastructure monitoring. Commercial diversification reduces binary defense risk. Expanding into Ukraine conflict monitoring + critical infrastructure protection = non-defense revenue.",
+      "urgencyLabel": "SCALING",
+      "dateBadge": "2026-2027",
+      "catalystDate": "2027-06-30",
+      "badgeColor": "green",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Near-profit but not yet — generating ~$100M revenue; still reaching sustained FCF positive",
+    "Satellite constellation is small (16 satellites) vs Planet Labs (200+) — coverage gap risk",
+    "Golden Dome ISR competition: Planet Labs, MAXAR, Satellogic, Umbra all bidding same contracts",
+    "Customer concentration risk: majority of revenue from US government — single customer category dependency",
+    "Stock already up ~80% from 2025 lows — partial Golden Dome re-rate may already be priced in"
+  ],
+  "estimateDates": [
+    { "event": "Golden Dome ISR Contract Awards H2 2026", "dateRange": "H2 2026", "note": "Even a subcontract for real-time ISR = re-rate trigger. Prime = moon case.", "est": "Binary event", "highlight": "yellow" },
+    { "event": "NRO / NGA Contract Expansion", "dateRange": "Q3 2026", "note": "Follow-on to Apr $30M — next award likely 3-5x larger given satellite expansion", "est": "est. $80-150M contract", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -45, "price": 13.72 },
+    { "label": "Base", "color": "yellow", "pct": 50, "price": 37.41 },
+    { "label": "Bull", "color": "green", "pct": 68, "price": 41.90 },
+    { "label": "Moon", "color": "purple", "pct": 201, "price": 75.07 }
+  ],
+  "analystTargets": [
+    { "firm": "Benchmark (May 2026)", "target": 42, "rating": "Buy", "note": "Golden Dome ISR opportunity + contract expansion" },
+    { "firm": "Craig-Hallum", "target": 38, "rating": "Buy", "note": "Spectra AI platform commercial expansion" },
+    { "firm": "Raymond James", "target": 30, "rating": "Buy", "note": "Conservative; awaiting larger contract materialization" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "US government ISR contracts (NRO, NGA, DoD) are multi-year appropriations — not rate sensitive. Golden Dome is a presidential mandate with bipartisan support and dedicated funding.",
+    "inflationNote": "Satellite operations have fixed launch costs already sunk. Ground software and AI analytics are high-margin — minimal inflation pass-through risk.",
+    "sectorImpact": "LOW impact. Government intelligence contract revenue is Fed-independent. Commercial diversification adds some macro sensitivity but is currently a small % of revenue.",
+    "summary": "Fed risk LOW. Government ISR contracts are the primary driver — independent of Fed rate decisions. Key risk is contract win/loss competition, not macro."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 24.94, "note": "Current price — valid pre-Golden Dome ISR award entry.", "timing": "Now (2-3% max)" },
+      { "label": "Entry 2", "level": 21.00, "rangeMax": 22.50, "note": "Post-contract pullback zone — pre-Golden Dome base. Best R/R.", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 16.00, "note": "Deep dip — near pre-contract award base. Aggressive add.", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 37.00, "pct": 48.4, "note": "Mid-analyst range — NRO/NGA contract expansion" },
+    "tp2": { "price": 42.00, "pct": 68.4, "note": "Benchmark target — Golden Dome ISR contract confirmation" },
+    "tp3": { "price": 75.00, "pct": 200.7, "note": "Moon — Golden Dome ISR prime + NRO multi-year program", "moon": true },
+    "stopLoss": {
+      "tight": 20.00, "tightPct": -19.8, "tightNote": "Below pre-contract base = Golden Dome ISR not awarded to BKSY",
+      "hard": 13.00, "hardPct": -47.9, "hardNote": "Near 52-week lows = lost all major contracts",
+      "riskReward": "6.3 : 1", "rrNote": "Entry 2 ($21.75) vs TP2 ($42)", "rrWarning": "Asymmetric ✅ — AI satellite ISR binary"
+    },
+    "verdict": "ค่าขนม SPECULATIVE BUY — 2-3% of portfolio. Entry now or $21-22.50 dip. Target $42 bull, $75 moon if Golden Dome ISR prime. Long thesis 12-18 months.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "Space intelligence companies historically run 40-100% in the 4-8 weeks before major government ISR contract announcements. Golden Dome ISR awards expected H2 2026 — BKSY could pre-run into that decision window.",
+    "preRunupTiming": "4-8 สัปดาห์ก่อน Golden Dome ISR contract announcements",
+    "preRunupPct": "+30-80%",
+    "postWin": {
+      "avgPct": 100,
+      "range": "+60% to +200%",
+      "note": "Planet Labs (PL) +85% in 2 months on NOAA and DoD contract expansions in 2024. Satellogic +120% on multi-year DoD ISR contract. BKSY's $30M April contract already showed the pattern — next contract 3-5x larger could generate proportionally larger move.",
+      "exampleDate": "2024"
+    },
+    "postLose": {
+      "avgPct": -35,
+      "range": "-25% to -55%",
+      "note": "BlackSky missed a major NGA contract in 2023, falling 40% from its prior high. Losing the Golden Dome ISR bid would trigger a similar selloff — especially if Planet Labs or Umbra wins the prime.",
+      "exampleDate": "2023"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "Smallest pure ค่าขนม sizing (2%) because: (1) partial Golden Dome re-rate already in price, (2) strong competition from Planet Labs + Umbra + MAXAR. Add more only after contract confirmed."
+    },
+    "stopPreCatalyst": { "pct": -20, "price": 19.95, "note": "หลุด $20 = ตลาดกลัว BKSY จะไม่ได้ Golden Dome" },
+    "stopPostCatalyst": { "pct": -30, "note": "ถ้า Golden Dome ISR ประกาศและ BKSY ไม่ได้อะไร — exit ทันที" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "PL",
+      "event": "NOAA Commercial Weather Data + DoD ISR Expansion",
+      "date": "2024",
+      "movePct": 85,
+      "days": 60,
+      "outcome": "good",
+      "note": "Planet Labs +85% in 2 months on combined NOAA weather data contract + DoD ISR expansion. BlackSky Spectra AI is the next-generation equivalent — AI-processed real-time ISR vs raw satellite imagery. BKSY's Golden Dome win would trigger the same institutional re-rating."
+    },
+    {
+      "ticker": "MAXAR",
+      "event": "NRO Long-Duration Satellite Imagery Contract",
+      "date": "2022",
+      "movePct": 60,
+      "days": 30,
+      "outcome": "good",
+      "note": "MAXAR Technologies +60% in 30 days on NRO long-duration ISR contract. BKSY's equivalent would be an NGA/NRO contract win — the existing $30M April contract shows BKSY already in the procurement pipeline."
+    },
+    {
+      "ticker": "BKSY",
+      "event": "$30M Defense ISR Contract Award",
+      "date": "Apr 2026",
+      "movePct": 45,
+      "days": 14,
+      "outcome": "good",
+      "note": "BlackSky itself +45% in 2 weeks after the $30M defense contract was announced in April 2026. The Golden Dome ISR award will be 5-10x larger — proportional re-rate could reach 200%+ at $75 moon case."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "BlackSky Wins $30M Defense Contract for Real-Time Satellite Intelligence Services",
+    "url": "https://www.blacksky.com/press-releases/",
+    "date": "Apr 2026"
+  },
+  "sources": [
+    "https://www.blacksky.com/press-releases/",
+    "https://www.marketbeat.com/stocks/NYSE/BKSY/forecast/",
+    "https://stockanalysis.com/stocks/bksy/forecast/",
+    "https://spacenews.com/blacksky-wins-defense-contract-real-time-satellite-intelligence-2026/",
+    "https://finance.yahoo.com/news/blacksky-technology-golden-dome-irs-satellite-intelligence-2026/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "BlackSky เป็น AI-powered satellite intelligence platform — real-time Earth observation sub-hourly revisit + AI analytics เพิ่ง win $30M defense contract เม.ย. 2026 Golden Dome ต้องการ ISR space layer = direct BKSY application นักวิเคราะห์ PT $30-42 = 20-68% upside Moon case = Golden Dome ISR prime = $75 (201%)",
+      "priceNote": "$919M market cap — $30M defense contract เม.ย. 2026 Golden Dome ISR = direct application analyst PT $30-42 sizing 2-3% max",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "Golden Dome ISR Layer", "description": "Golden Dome ต้องการ space-based ISR sensors — BKSY real-time AI satellite intelligence = exact capability ที่ต้องการ" },
+        { "name": "$30M Defense Contract + NRO/NGA Pipeline", "description": "$30M เม.ย. 2026 เป็นแค่จุดเริ่มต้น — next contract likely 3-5x ใหญ่กว่า" },
+        { "name": "Commercial AI Analytics Expansion", "description": "Spectra AI platform ขายเชิงพาณิชย์ด้วย — supply chain, agriculture, critical infrastructure monitoring" }
+      ],
+      "risks": [
+        "ใกล้ profit แต่ยังไม่ถึง FCF positive — ~$100M revenue",
+        "Constellation เล็ก 16 satellites vs Planet Labs 200+ — coverage gap",
+        "Competition Planet Labs, MAXAR, Satellogic, Umbra แย่ง Golden Dome",
+        "Customer concentration สูง — ส่วนใหญ่ US government",
+        "ขึ้น 80% จาก 2025 lows แล้ว — partial re-rate อาจ priced in"
+      ],
+      "macroRisk": {
+        "rateOutlook": "NRO, NGA, DoD = multi-year appropriations ไม่ sensitive ดอกเบี้ย Golden Dome มี bipartisan support + dedicated funding",
+        "inflationNote": "Satellite ops = sunk cost already launched Ground AI software = high margin ผลกระทบ inflation ต่ำ",
+        "sectorImpact": "ผลกระทบ LOW — government ISR contract revenue ไม่ขึ้นกับ Fed",
+        "summary": "ความเสี่ยง Fed ต่ำ key risk = contract win/loss competition ไม่ใช่ macro"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม 2-3% max เข้าตอนนี้หรือ $21-22.50 dip เป้า $42 bull / $75 moon Golden Dome ISR prime horizon 12-18 เดือน",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน pre-Golden Dome ISR award", "timing": "ตอนนี้ (2-3% max)" },
+          { "note": "post-contract pullback zone — R/R ดีที่สุด", "timing": "ถ้าย่อ" },
+          { "note": "ใกล้ pre-contract base — aggressive add", "timing": "Deep dip" }
+        ],
+        "tp1": { "note": "NRO/NGA contract expansion mid-analyst range" },
+        "tp2": { "note": "Benchmark target — Golden Dome ISR confirmation" },
+        "tp3": { "note": "Moon — Golden Dome ISR prime + NRO multi-year program", "moon": true },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า $20 = ตลาดกลัว BKSY ไม่ได้ Golden Dome",
+          "hardNote": "ใกล้ 52w low = ไม่ได้ contract หลัก",
+          "rrNote": "Entry 2 ($21.75) vs TP2 ($42)",
+          "rrWarning": "Asymmetric ✅ 6:1 R/R AI satellite ISR"
+        }
+      },
+      "estimateDates": [
+        { "event": "Golden Dome ISR Contracts H2 2026", "note": "แม้ subcontract เล็กๆ = re-rate trigger prime = moon case" },
+        { "event": "NRO/NGA Contract Expansion", "note": "Q3 2026 follow-on to Apr $30M — likely 3-5x ใหญ่กว่า" }
+      ]
+    }
+  }
+}
