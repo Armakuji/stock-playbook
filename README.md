@@ -169,5 +169,3 @@ Open [http://localhost:3000](http://localhost:3000). Reports are read from `web/
 ---
 
 *Not financial advice · Research*
-
-test
