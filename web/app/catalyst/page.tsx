@@ -15,6 +15,8 @@ function loadMarketTiming() {
   }
 }
 
+export const dynamic = "force-dynamic";
+
 export default function CatalystPage() {
   const ranked = rankReports(getAllReports());
   const rankChanges = getRankingChanges();

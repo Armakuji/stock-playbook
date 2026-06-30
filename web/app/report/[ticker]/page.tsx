@@ -1,23 +1,14 @@
 import { notFound } from "next/navigation";
-import { getReport, getAllReports } from "@/lib/reports";
-import { getSpeculativeReport, getAllSpeculativeReports } from "@/lib/speculative";
-import { getDcaReport, getAllDcaReports } from "@/lib/dca";
+import { getReport } from "@/lib/reports";
+import { getSpeculativeReport } from "@/lib/speculative";
+import { getDcaReport } from "@/lib/dca";
 import { getTickerTimeline } from "@/lib/timeline";
 import { ReportContent } from "./ReportContent";
 import { StockTimeline } from "./StockTimeline";
 
-export async function generateStaticParams() {
-  const core = getAllReports().map((r) => ({ ticker: r.ticker.toLowerCase() }));
-  const turbo = getAllSpeculativeReports().map((r) => ({ ticker: r.ticker.toLowerCase() }));
-  const dca = getAllDcaReports().map((r) => ({ ticker: r.ticker.toLowerCase() }));
-  // deduplicate in case a ticker exists in multiple pools
-  const seen = new Set<string>();
-  return [...core, ...turbo, ...dca].filter((p) => {
-    if (seen.has(p.ticker)) return false;
-    seen.add(p.ticker);
-    return true;
-  });
-}
+// Render fresh on each request so newly added/updated JSON always shows (no stale cache).
+// Rendered on demand (no generateStaticParams) — unknown tickers fall through to notFound().
+export const dynamic = "force-dynamic";
 
 export default async function ReportPage({ params }: { params: Promise<{ ticker: string }> }) {
   const { ticker } = await params;

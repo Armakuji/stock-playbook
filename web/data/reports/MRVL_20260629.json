@@ -5,7 +5,7 @@
   "exchange": "NASDAQ",
   "generatedAt": "2026-06-29T00:00:00.000Z",
   "price": 266.77,
-  "priceChange": -1.20,
+  "priceChange": -1.2,
   "priceNote": "Pulled back from S&P 500 inclusion spike ($302 on Jun 22). $2B NVIDIA equity stake + $5B FY27 guide raise = fundamentals intact. KeyBanc PT $385 = 44% upside.",
   "marketCap": "$228B",
   "sector": "Technology / Semiconductors",
@@ -52,19 +52,66 @@
     "Average analyst consensus $242 is below current price — recent upgrades (Stifel $350, KeyBanc $385) not yet in consensus"
   ],
   "estimateDates": [
-    { "event": "Q2 FY2027 Earnings", "dateRange": "Late Aug 2026", "note": "+35% YoY guide — read interconnect and XPU ramp", "est": "est. Rev $2.7B", "highlight": "blue" },
-    { "event": "Celestial AI + XConn Closing", "dateRange": "Q3 2026", "note": "Optical compute + CXL switching add-ons fully integrated", "est": "Revenue accretive 2027", "highlight": "yellow" }
+    {
+      "event": "Q2 FY2027 Earnings",
+      "dateRange": "Late Aug 2026",
+      "note": "+35% YoY guide — read interconnect and XPU ramp",
+      "est": "est. Rev $2.7B",
+      "highlight": "blue"
+    },
+    {
+      "event": "Celestial AI + XConn Closing",
+      "dateRange": "Q3 2026",
+      "note": "Optical compute + CXL switching add-ons fully integrated",
+      "est": "Revenue accretive 2027",
+      "highlight": "yellow"
+    }
   ],
   "scenarios": [
-    { "label": "Bear", "color": "red", "pct": -20, "price": 213 },
-    { "label": "Base", "color": "yellow", "pct": 31, "price": 350 },
-    { "label": "Bull", "color": "green", "pct": 44, "price": 385 },
-    { "label": "Moon", "color": "purple", "pct": 75, "price": 467 }
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -20,
+      "price": 213
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 31,
+      "price": 350
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 44,
+      "price": 385
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 75,
+      "price": 467
+    }
   ],
   "analystTargets": [
-    { "firm": "KeyBanc (Jun 15, 2026)", "target": 385, "rating": "Overweight", "note": "Street-high; optical networking as durable AI moat" },
-    { "firm": "Stifel (Jun 24, 2026)", "target": 350, "rating": "Buy", "note": "36% upside; custom silicon ramp FY28" },
-    { "firm": "Consensus (29 analysts)", "target": 242, "rating": "Strong Buy", "note": "Consensus lagging — recent upgrades not yet reflected" }
+    {
+      "firm": "KeyBanc (Jun 15, 2026)",
+      "target": 385,
+      "rating": "Overweight",
+      "note": "Street-high; optical networking as durable AI moat"
+    },
+    {
+      "firm": "Stifel (Jun 24, 2026)",
+      "target": 350,
+      "rating": "Buy",
+      "note": "36% upside; custom silicon ramp FY28"
+    },
+    {
+      "firm": "Consensus (29 analysts)",
+      "target": 242,
+      "rating": "Strong Buy",
+      "note": "Consensus lagging — recent upgrades not yet reflected"
+    }
   ],
   "macroRisk": {
     "fedRisk": "MEDIUM",
@@ -75,17 +122,53 @@
   },
   "entryStrategy": {
     "entryLevels": [
-      { "label": "Entry 1", "level": 267, "note": "Current price — 11% off S&P inclusion spike. Valid entry.", "timing": "Now" },
-      { "label": "Entry 2", "level": 242, "rangeMax": 250, "note": "Old consensus PT = structural support zone. Best R/R.", "timing": "If dips", "preferred": true },
-      { "label": "Entry 3", "level": 215, "note": "Pre-NVIDIA deal price area — deep correction entry", "timing": "Deep dip only" }
+      {
+        "label": "Entry 1",
+        "level": 267,
+        "note": "Current price — 11% off S&P inclusion spike. Valid entry.",
+        "timing": "Now"
+      },
+      {
+        "label": "Entry 2",
+        "level": 242,
+        "rangeMax": 250,
+        "note": "Old consensus PT = structural support zone. Best R/R.",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 215,
+        "note": "Pre-NVIDIA deal price area — deep correction entry",
+        "timing": "Deep dip only"
+      }
     ],
-    "tp1": { "price": 315, "pct": 18.1, "note": "Near-term resistance — first target" },
-    "tp2": { "price": 350, "pct": 31.2, "note": "Stifel PT — base case 12 months" },
-    "tp3": { "price": 385, "pct": 44.3, "note": "KeyBanc street-high PT — full bull", "moon": true },
+    "tp1": {
+      "price": 315,
+      "pct": 18.1,
+      "note": "Near-term resistance — first target"
+    },
+    "tp2": {
+      "price": 350,
+      "pct": 31.2,
+      "note": "Stifel PT — base case 12 months"
+    },
+    "tp3": {
+      "price": 385,
+      "pct": 44.3,
+      "note": "KeyBanc street-high PT — full bull",
+      "moon": true
+    },
     "stopLoss": {
-      "tight": 242, "tightPct": -9.3, "tightNote": "Below old consensus = negative re-rating",
-      "hard": 215, "hardPct": -19.3, "hardNote": "Pre-NVIDIA deal level breach = thesis broken",
-      "riskReward": "3.4 : 1", "rrNote": "Entry 2 ($245) vs TP2 ($350)", "rrWarning": "Strong R/R at dip entry"
+      "tight": 242,
+      "tightPct": -9.3,
+      "tightNote": "Below old consensus = negative re-rating",
+      "hard": 215,
+      "hardPct": -19.3,
+      "hardNote": "Pre-NVIDIA deal level breach = thesis broken",
+      "riskReward": "3.4 : 1",
+      "rrNote": "Entry 2 ($245) vs TP2 ($350)",
+      "rrWarning": "Strong R/R at dip entry"
     },
     "verdict": "Core Holding — entry now at $267 or add at $242-250 dip. Target $350-385 in 12 months.",
     "approach": "Scale In"
@@ -111,8 +194,15 @@
       "pct": 8,
       "reason": "High conviction from NVIDIA's $2B equity validation + $5B guide raise. 8% now; scale to 12-15% at $242-250 dip entry. Custom silicon thesis intact."
     },
-    "stopPreCatalyst": { "pct": -9, "price": 242, "note": "หลุด $242 old consensus PT = สัญญาณเตือน ลด size" },
-    "stopPostCatalyst": { "pct": -15, "note": "ถ้า earnings miss guide หรือ hyperscaler XPU ramp ช้ากว่าคาด — ออก" }
+    "stopPreCatalyst": {
+      "pct": -9,
+      "price": 242,
+      "note": "หลุด $242 old consensus PT = สัญญาณเตือน ลด size"
+    },
+    "stopPostCatalyst": {
+      "pct": -15,
+      "note": "ถ้า earnings miss guide หรือ hyperscaler XPU ramp ช้ากว่าคาด — ออก"
+    }
   },
   "comparableCases": [
     {
@@ -162,9 +252,18 @@
       "priceNote": "ย่อจาก S&P 500 spike $302 → $267 — fundamentals แข็งแกร่งกว่าราคา",
       "scoreLabel": "Core Holding",
       "catalysts": [
-        { "name": "NVIDIA เข้าถือหุ้น $2B + Jensen endorsement", "description": "NVIDIA invest $2B + Jensen เรียก MRVL ว่า 'next trillion-dollar co' — structural endorsement ไม่ใช่แค่ supply deal" },
-        { "name": "Earnings Q2 FY2027", "description": "คาด late ส.ค. 2026 — Guide $2.7B revenue (+35% YoY) + interconnect +70% YoY" },
-        { "name": "Celestial AI + XConn Acquisitions", "description": "optical compute + CXL memory switching = เสริมความสามารถ AI data center ครบวงจร" }
+        {
+          "name": "NVIDIA เข้าถือหุ้น $2B + Jensen endorsement",
+          "description": "NVIDIA invest $2B + Jensen เรียก MRVL ว่า 'next trillion-dollar co' — structural endorsement ไม่ใช่แค่ supply deal"
+        },
+        {
+          "name": "Earnings Q2 FY2027",
+          "description": "คาด late ส.ค. 2026 — Guide $2.7B revenue (+35% YoY) + interconnect +70% YoY"
+        },
+        {
+          "name": "Celestial AI + XConn Acquisitions",
+          "description": "optical compute + CXL memory switching = เสริมความสามารถ AI data center ครบวงจร"
+        }
       ],
       "risks": [
         "ย่อจาก S&P inclusion spike อาจแกว่งต่อ",
@@ -181,13 +280,29 @@
       "entryStrategy": {
         "verdict": "Core Holding — เข้าตอนนี้ $267 หรือเพิ่มที่ $242-250 dip เป้า $350-385 ใน 12 เดือน",
         "entryLevels": [
-          { "note": "ราคาปัจจุบัน 11% จาก S&P spike — valid entry", "timing": "ตอนนี้" },
-          { "note": "Old consensus PT = แนวรับโครงสร้าง R/R ดีที่สุด", "timing": "ถ้าย่อ" },
-          { "note": "ก่อน NVIDIA deal area = deep correction only", "timing": "Deep dip เท่านั้น" }
+          {
+            "note": "ราคาปัจจุบัน 11% จาก S&P spike — valid entry",
+            "timing": "ตอนนี้"
+          },
+          {
+            "note": "Old consensus PT = แนวรับโครงสร้าง R/R ดีที่สุด",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ก่อน NVIDIA deal area = deep correction only",
+            "timing": "Deep dip เท่านั้น"
+          }
         ],
-        "tp1": { "note": "แนวต้านใกล้ — เป้าแรก" },
-        "tp2": { "note": "Stifel PT — base case 12 เดือน" },
-        "tp3": { "note": "KeyBanc street-high — full bull", "moon": true },
+        "tp1": {
+          "note": "แนวต้านใกล้ — เป้าแรก"
+        },
+        "tp2": {
+          "note": "Stifel PT — base case 12 เดือน"
+        },
+        "tp3": {
+          "note": "KeyBanc street-high — full bull",
+          "moon": true
+        },
         "stopLoss": {
           "tightNote": "ต่ำกว่า old consensus $242 = negative re-rating",
           "hardNote": "ต่ำกว่า ก่อน NVIDIA deal = thesis เปลี่ยน",
@@ -196,8 +311,14 @@
         }
       },
       "estimateDates": [
-        { "event": "Earnings Q2 FY2027", "note": "อ่าน XPU + interconnect ramp revenue" },
-        { "event": "Celestial AI + XConn Closing", "note": "Optical compute + CXL เสริมรายได้ 2027" }
+        {
+          "event": "Earnings Q2 FY2027",
+          "note": "อ่าน XPU + interconnect ramp revenue"
+        },
+        {
+          "event": "Celestial AI + XConn Closing",
+          "note": "Optical compute + CXL เสริมรายได้ 2027"
+        }
       ]
     }
   }

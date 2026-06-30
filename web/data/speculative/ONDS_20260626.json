@@ -5,7 +5,7 @@
   "exchange": "NASDAQ",
   "generatedAt": "2026-06-26T00:00:00.000Z",
   "price": 13.36,
-  "priceChange": 23.70,
+  "priceChange": 23.7,
   "priceNote": "⚠️ +23.7% surge Jun 4 on Q1 revenue +1,080% YoY to $50.1M. Price may have pulled back since — verify before entry. DO NOT chase the Jun 4 pump. Wait for $10–11 dip.",
   "marketCap": "~$600M",
   "sector": "Industrials / Defense Drones + Rail AI",
@@ -53,19 +53,65 @@
     "Drone sector has had boom-bust cycles (DJI competition, regulatory changes)"
   ],
   "estimateDates": [
-    { "event": "Q2 2026 Earnings", "dateRange": "~Aug 12, 2026", "note": "Backlog execution + $390M guide confirmation", "est": "est. $90–100M", "highlight": "yellow" },
-    { "event": "DoD Budget FY2027 Signed", "dateRange": "Oct 2026", "note": "$54B autonomous systems = contract wave", "est": "TP2 trigger", "highlight": "blue" },
-    { "event": "TP3 / Moon Case", "dateRange": "2027", "note": "DoD contract wave fully executing", "est": "$40–50 target", "highlight": "blue" }
+    {
+      "event": "Q2 2026 Earnings",
+      "dateRange": "~Aug 12, 2026",
+      "note": "Backlog execution + $390M guide confirmation",
+      "est": "est. $90–100M",
+      "highlight": "yellow"
+    },
+    {
+      "event": "DoD Budget FY2027 Signed",
+      "dateRange": "Oct 2026",
+      "note": "$54B autonomous systems = contract wave",
+      "est": "TP2 trigger",
+      "highlight": "blue"
+    },
+    {
+      "event": "TP3 / Moon Case",
+      "dateRange": "2027",
+      "note": "DoD contract wave fully executing",
+      "est": "$40–50 target",
+      "highlight": "blue"
+    }
   ],
   "scenarios": [
-    { "label": "Bear", "color": "red", "pct": -50, "price": 6.68 },
-    { "label": "Base", "color": "yellow", "pct": 51, "price": 20.17 },
-    { "label": "Bull", "color": "green", "pct": 125, "price": 30.06 },
-    { "label": "Moon", "color": "purple", "pct": 237, "price": 45.0 }
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -50,
+      "price": 6.68
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 51,
+      "price": 20.17
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 125,
+      "price": 30.06
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 237,
+      "price": 45.0
+    }
   ],
   "analystTargets": [
-    { "firm": "Consensus (8 analysts)", "target": 20.13, "rating": "Strong Buy" },
-    { "firm": "Analyst high (est.)", "target": 28.0, "rating": "Strong Buy" }
+    {
+      "firm": "Consensus (8 analysts)",
+      "target": 20.13,
+      "rating": "Strong Buy"
+    },
+    {
+      "firm": "Analyst high (est.)",
+      "target": 28.0,
+      "rating": "Strong Buy"
+    }
   ],
   "macroRisk": {
     "fedRisk": "LOW",
@@ -76,17 +122,54 @@
   },
   "entryStrategy": {
     "entryLevels": [
-      { "label": "Entry 1", "level": 10.50, "rangeMax": 11.50, "note": "Post-pump pullback zone — WAIT for dip", "timing": "After pullback from $13.36 pump", "preferred": true },
-      { "label": "Entry 2", "level": 8.50, "rangeMax": 9.50, "note": "Deeper dip zone if Q2 disappoints", "timing": "If Q2 guide miss" },
-      { "label": "Entry 3", "level": 7.00, "note": "Pre-surge baseline — thesis re-evaluation", "timing": "Only if backlog contracts slip" }
+      {
+        "label": "Entry 1",
+        "level": 10.5,
+        "rangeMax": 11.5,
+        "note": "Post-pump pullback zone — WAIT for dip",
+        "timing": "After pullback from $13.36 pump",
+        "preferred": true
+      },
+      {
+        "label": "Entry 2",
+        "level": 8.5,
+        "rangeMax": 9.5,
+        "note": "Deeper dip zone if Q2 disappoints",
+        "timing": "If Q2 guide miss"
+      },
+      {
+        "label": "Entry 3",
+        "level": 7.0,
+        "note": "Pre-surge baseline — thesis re-evaluation",
+        "timing": "Only if backlog contracts slip"
+      }
     ],
-    "tp1": { "price": 20.13, "pct": 50.7, "note": "Analyst consensus — Q2 execution confirmed" },
-    "tp2": { "price": 30.0, "pct": 124.5, "note": "DoD contract wave + backlog expansion" },
-    "tp3": { "price": 45.0, "pct": 236.8, "note": "Moon: $390M+ FY2026 hit + FY2027 $500M+ backlog win", "moon": true },
+    "tp1": {
+      "price": 20.13,
+      "pct": 50.7,
+      "note": "Analyst consensus — Q2 execution confirmed"
+    },
+    "tp2": {
+      "price": 30.0,
+      "pct": 124.5,
+      "note": "DoD contract wave + backlog expansion"
+    },
+    "tp3": {
+      "price": 45.0,
+      "pct": 236.8,
+      "note": "Moon: $390M+ FY2026 hit + FY2027 $500M+ backlog win",
+      "moon": true
+    },
     "stopLoss": {
-      "tight": 9.50, "tightPct": -28.9, "tightNote": "Below pre-surge level — momentum failed",
-      "hard": 7.00, "hardPct": -47.6, "hardNote": "Pre-catalyst baseline — contract delays confirmed",
-      "riskReward": "5.5:1", "rrNote": "vs TP2 from preferred entry $11", "rrWarning": "Asymmetric ✅"
+      "tight": 9.5,
+      "tightPct": -28.9,
+      "tightNote": "Below pre-surge level — momentum failed",
+      "hard": 7.0,
+      "hardPct": -47.6,
+      "hardNote": "Pre-catalyst baseline — contract delays confirmed",
+      "riskReward": "5.5:1",
+      "rrNote": "vs TP2 from preferred entry $11",
+      "rrWarning": "Asymmetric ✅"
     },
     "verdict": "⚠️ อย่าไล่ที่ $13.36 — รอดิปที่ $10–11.50 ก่อน. TP2 $30 = 172% จาก preferred entry $11. Moon $45 = 309% จาก preferred.",
     "approach": "Scale In"
@@ -112,8 +195,15 @@
       "pct": 2,
       "reason": "ค่าขนม 2% — wait for pullback first. Don't enter at $13.36 pump price. Preferred entry $10–11 gives better R/R."
     },
-    "stopPreCatalyst": { "pct": -20, "price": 10.69, "note": "ถ้าหลุด $10.69 = momentum หมด" },
-    "stopPostCatalyst": { "pct": -25, "note": "ถ้า Q2 revenue miss vs $390M guide = ออก" }
+    "stopPreCatalyst": {
+      "pct": -20,
+      "price": 10.69,
+      "note": "ถ้าหลุด $10.69 = momentum หมด"
+    },
+    "stopPostCatalyst": {
+      "pct": -25,
+      "note": "ถ้า Q2 revenue miss vs $390M guide = ออก"
+    }
   },
   "comparableCases": [
     {
@@ -162,9 +252,18 @@
       "priceNote": "⚠️ ราคาอาจสูงกว่าจริงหลัง pump +23.7% Jun 4 — ตรวจสอบราคาปัจจุบันก่อนเข้า รอดิปที่ $10–11",
       "scoreLabel": "ค่าขนม",
       "catalysts": [
-        { "name": "DoD $54B Autonomous Budget", "description": "งบ DoD FY2027 $54B สำหรับ autonomous systems — ONDS อยู่ตรงกลาง" },
-        { "name": "Q2 Earnings + Backlog $457M", "description": "ถ้า revenue execution ดี = run ต่อได้" },
-        { "name": "Counter-UAS Contract Win", "description": "NATO + Ukraine ต้องการ counter-drone — ONDS อยู่ในกลุ่มผู้จัดหาหลัก" }
+        {
+          "name": "DoD $54B Autonomous Budget",
+          "description": "งบ DoD FY2027 $54B สำหรับ autonomous systems — ONDS อยู่ตรงกลาง"
+        },
+        {
+          "name": "Q2 Earnings + Backlog $457M",
+          "description": "ถ้า revenue execution ดี = run ต่อได้"
+        },
+        {
+          "name": "Counter-UAS Contract Win",
+          "description": "NATO + Ukraine ต้องการ counter-drone — ONDS อยู่ในกลุ่มผู้จัดหาหลัก"
+        }
       ],
       "risks": [
         "⚠️ อย่าไล่หลัง pump +23.7% — รอดิป",
@@ -180,13 +279,29 @@
       "entryStrategy": {
         "verdict": "⚠️ อย่าไล่ที่ $13.36 — รอดิปที่ $10–11.50 ก่อน TP2 $30 = 172% จาก preferred entry",
         "entryLevels": [
-          { "note": "รอดิปหลัง pump — preferred zone", "timing": "หลัง pullback จาก $13.36" },
-          { "note": "ดิปลึก ถ้า Q2 guide miss", "timing": "ถ้า Q2 ไม่ดี" },
-          { "note": "ระดับก่อน surge — re-evaluate thesis", "timing": "เฉพาะถ้า thesis ยัง intact" }
+          {
+            "note": "รอดิปหลัง pump — preferred zone",
+            "timing": "หลัง pullback จาก $13.36"
+          },
+          {
+            "note": "ดิปลึก ถ้า Q2 guide miss",
+            "timing": "ถ้า Q2 ไม่ดี"
+          },
+          {
+            "note": "ระดับก่อน surge — re-evaluate thesis",
+            "timing": "เฉพาะถ้า thesis ยัง intact"
+          }
         ],
-        "tp1": { "note": "analyst consensus — Q2 execution confirmed" },
-        "tp2": { "note": "DoD contract wave + backlog expand" },
-        "tp3": { "note": "Moon: $390M+ FY2026 + $500M+ FY2027 backlog", "moon": true },
+        "tp1": {
+          "note": "analyst consensus — Q2 execution confirmed"
+        },
+        "tp2": {
+          "note": "DoD contract wave + backlog expand"
+        },
+        "tp3": {
+          "note": "Moon: $390M+ FY2026 + $500M+ FY2027 backlog",
+          "moon": true
+        },
         "stopLoss": {
           "tightNote": "ต่ำกว่า level ก่อน surge = momentum หมด",
           "hardNote": "contract delays confirmed = thesis broken",
@@ -195,9 +310,18 @@
         }
       },
       "estimateDates": [
-        { "event": "Q2 Earnings", "note": "backlog execution + $390M guide confirmation" },
-        { "event": "DoD Budget FY2027", "note": "$54B contract wave trigger" },
-        { "event": "Moon / DoD Wave", "note": "2027 full execution" }
+        {
+          "event": "Q2 Earnings",
+          "note": "backlog execution + $390M guide confirmation"
+        },
+        {
+          "event": "DoD Budget FY2027",
+          "note": "$54B contract wave trigger"
+        },
+        {
+          "event": "Moon / DoD Wave",
+          "note": "2027 full execution"
+        }
       ]
     }
   }
