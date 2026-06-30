@@ -4,7 +4,7 @@
 
 import fs from "fs";
 import path from "path";
-import { JournalFile, Trade } from "./journal-types";
+import { JournalFile, Trade, JournalValidation } from "./journal-types";
 
 // Re-export everything from journal-math so server code can use one import
 export { totalCost, realizedPnL, unrealizedPnL, holdDays, computeStats } from "./journal-math";
@@ -12,6 +12,10 @@ export type { JournalStats } from "./journal-math";
 
 const JOURNAL_PATH = path.resolve(
   path.join(process.cwd(), "..", "private", "journal.json")
+);
+
+const VALIDATION_PATH = path.resolve(
+  path.join(process.cwd(), "..", "private", "journal-validation.json")
 );
 
 const FALLBACK: JournalFile = {
@@ -54,6 +58,15 @@ export function saveTrade(trade: Trade): void {
     journal.trades.push(trade);
   }
   writeJournal(journal);
+}
+
+export function readValidation(): JournalValidation | null {
+  if (!fs.existsSync(VALIDATION_PATH)) return null;
+  try {
+    return JSON.parse(fs.readFileSync(VALIDATION_PATH, "utf-8")) as JournalValidation;
+  } catch {
+    return null;
+  }
 }
 
 export function deleteTrade(id: string): void {

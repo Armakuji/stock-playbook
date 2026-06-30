@@ -106,36 +106,36 @@ function StickySummaryBar({ report, verdictColor }: { report: StockReport; verdi
   const isPositive = report.priceChange >= 0;
 
   const metric = (label: string, value: string, color: string) => (
-    <div style={{ textAlign: "right" }}>
-      <div style={{ fontSize: 8, color: "var(--muted)", textTransform: "uppercase", letterSpacing: "1px", fontFamily: "var(--font-mono, monospace)" }}>{label}</div>
-      <div style={{ fontSize: 13, fontWeight: 800, color, fontFamily: "var(--font-mono, monospace)", lineHeight: 1.3 }}>{value}</div>
+    <div className="sticky-summary-metric" style={{ textAlign: "right" }}>
+      <div style={{ fontSize: 8, color: "var(--muted)", textTransform: "uppercase", letterSpacing: "1px", fontFamily: "var(--font-mono, monospace)", whiteSpace: "nowrap" }}>{label}</div>
+      <div style={{ fontSize: 13, fontWeight: 800, color, fontFamily: "var(--font-mono, monospace)", lineHeight: 1.3, whiteSpace: "nowrap" }}>{value}</div>
     </div>
   );
 
   return (
     <div className="sticky-summary" style={{ background: "rgba(8,8,14,0.82)", borderBottom: `1px solid var(--border-bright)` }}>
       <div style={{ height: 2, background: `linear-gradient(90deg, ${verdictColor}, transparent)` }} />
-      <div style={{
+      <div className="sticky-summary-row" style={{
         maxWidth: 1100, margin: "0 auto", padding: "9px 18px",
-        display: "flex", alignItems: "center", justifyContent: "space-between", gap: 16,
+        display: "flex", alignItems: "center", justifyContent: "space-between", gap: 16, flexWrap: "wrap",
       }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 10, minWidth: 0 }}>
+        <div className="sticky-summary-left" style={{ display: "flex", alignItems: "center", gap: 10, minWidth: 0 }}>
           <span style={{ fontSize: 18, fontWeight: 900, fontFamily: "var(--font-display, sans-serif)", letterSpacing: "-0.5px" }}>{report.ticker}</span>
-          <span style={{
+          <span className="sticky-summary-chip" style={{
             fontSize: 10, fontWeight: 800, padding: "3px 9px", borderRadius: 6,
             background: `${verdictColor}1f`, color: verdictColor, border: `1px solid ${verdictColor}40`,
             fontFamily: "var(--font-mono, monospace)", letterSpacing: "0.5px", whiteSpace: "nowrap",
           }}>
             {report.verdict} · {report.scoreLabel ?? "Core"}
           </span>
-          <span style={{ display: "flex", alignItems: "baseline", gap: 6 }}>
+          <span style={{ display: "flex", alignItems: "baseline", gap: 6, whiteSpace: "nowrap" }}>
             <span style={{ fontSize: 15, fontWeight: 900, fontFamily: "var(--font-mono, monospace)" }}>${report.price.toFixed(2)}</span>
             <span style={{ fontSize: 11, fontWeight: 700, color: isPositive ? "#10b981" : "#ef4444", fontFamily: "var(--font-mono, monospace)" }}>
               {isPositive ? "▲" : "▼"}{Math.abs(report.priceChange).toFixed(2)}%
             </span>
           </span>
         </div>
-        <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
+        <div className="sticky-summary-metrics" style={{ display: "flex", alignItems: "center", gap: 18 }}>
           {metric("Buy dip", preferred.rangeMax ? `$${preferred.level}–${preferred.rangeMax}` : `$${preferred.level}`, "#3b82f6")}
           {sl.tight !== undefined && metric("Core stop", `$${sl.tight}`, "#ef4444")}
           {metric("Target", `$${report.entryStrategy.tp2.price}`, "#10b981")}

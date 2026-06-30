@@ -3,7 +3,7 @@
 import { useState, useCallback, useEffect } from "react";
 import type { LivePrice } from "@/app/api/prices/route";
 import Link from "next/link";
-import { Trade, CatalystType, TradeExit } from "@/lib/journal-types";
+import { Trade, CatalystType, TradeExit, ValidatorResult, JournalValidation } from "@/lib/journal-types";
 import { JournalStats, realizedPnL as calcPnL, holdDays } from "@/lib/journal-math";
 
 // Passed from server page — slim subset of StockReport
@@ -499,9 +499,58 @@ function ExitForm({ trade, onClose }: { trade: Trade; onClose: (updated: Trade) 
 
 // ── Trade Row ─────────────────────────────────────────────────────────────────
 
-function TradeRow({ trade, priceInfo, onEdit, onDelete, onSaveExit }: {
+const VALIDATOR_COLORS: Record<string, { bg: string; border: string; text: string }> = {
+  green:  { bg: "#10b98112", border: "#10b98135", text: "#10b981" },
+  yellow: { bg: "#f59e0b12", border: "#f59e0b35", text: "#f59e0b" },
+  red:    { bg: "#ef444412", border: "#ef444435", text: "#ef4444" },
+};
+
+function ValidatorSection({ result, generatedAt }: { result: ValidatorResult; generatedAt: string }) {
+  const c = VALIDATOR_COLORS[result.color] ?? VALIDATOR_COLORS.yellow;
+  const d = new Date(generatedAt);
+  const dateStr = d.toLocaleDateString("en-US", { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" });
+  return (
+    <div style={{ marginBottom: 14, borderRadius: 9, border: `1px solid ${c.border}`, background: c.bg, padding: "11px 14px" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 7, flexWrap: "wrap" }}>
+        <span style={{ fontSize: 9, fontWeight: 800, color: "#1e3a5f", textTransform: "uppercase", letterSpacing: "1.2px", fontFamily: "var(--font-mono, monospace)" }}>
+          Validator
+        </span>
+        <span style={{
+          fontSize: 10, fontWeight: 900, padding: "2px 9px", borderRadius: 5,
+          background: c.bg, color: c.text, border: `1px solid ${c.border}`,
+          fontFamily: "var(--font-mono, monospace)", letterSpacing: "0.5px",
+        }}>
+          {result.verdict}
+        </span>
+        {result.stopBreached && (
+          <span style={{ fontSize: 9, fontWeight: 800, color: "#ef4444", fontFamily: "var(--font-mono, monospace)", background: "#ef444415", border: "1px solid #ef444330", borderRadius: 5, padding: "2px 7px" }}>
+            🚨 STOP BREACHED
+          </span>
+        )}
+        {result.atRisk && !result.stopBreached && (
+          <span style={{ fontSize: 9, fontWeight: 800, color: "#f59e0b", fontFamily: "var(--font-mono, monospace)", background: "#f59e0b12", border: "1px solid #f59e0b30", borderRadius: 5, padding: "2px 7px" }}>
+            ⚠ AT RISK
+          </span>
+        )}
+        <span style={{ fontSize: 9, color: "#334155", fontFamily: "var(--font-mono, monospace)", marginLeft: "auto" }}>
+          {dateStr}
+        </span>
+      </div>
+      <div style={{ fontSize: 12, color: "#94a3b8", fontFamily: "var(--font-body, sans-serif)", lineHeight: 1.6, marginBottom: 6 }}>
+        {result.summary}
+      </div>
+      <div style={{ fontSize: 11, fontWeight: 700, color: c.text, fontFamily: "var(--font-mono, monospace)" }}>
+        → {result.action}
+      </div>
+    </div>
+  );
+}
+
+function TradeRow({ trade, priceInfo, validatorResult, validationGeneratedAt, onEdit, onDelete, onSaveExit }: {
   trade: Trade;
   priceInfo: PriceInfo | null;
+  validatorResult?: ValidatorResult;
+  validationGeneratedAt?: string;
   onEdit: () => void;
   onDelete: () => void;
   onSaveExit: (updated: Trade) => void;
@@ -808,6 +857,18 @@ function TradeRow({ trade, priceInfo, onEdit, onDelete, onSaveExit }: {
             );
           })()}
 
+          {/* Validator section — open trades only */}
+          {trade.status === "open" && (
+            validatorResult && validationGeneratedAt
+              ? <ValidatorSection result={validatorResult} generatedAt={validationGeneratedAt} />
+              : (
+                <div style={{ marginBottom: 14, borderRadius: 9, border: "1px solid #1e293b", background: "#0d1424", padding: "10px 14px", display: "flex", alignItems: "center", gap: 8 }}>
+                  <span style={{ fontSize: 9, fontWeight: 800, color: "#1e3a5f", textTransform: "uppercase", letterSpacing: "1.2px", fontFamily: "var(--font-mono, monospace)" }}>Validator</span>
+                  <span style={{ fontSize: 11, color: "#334155", fontFamily: "var(--font-mono, monospace)" }}>No results yet — run <code style={{ color: "#64748b" }}>/analyze-journal</code> to validate</span>
+                </div>
+              )
+          )}
+
           {/* Entry date + report link */}
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 12, flexWrap: "wrap", gap: 8 }}>
             <div style={{ fontSize: 11, fontFamily: "var(--font-mono, monospace)" }}>
@@ -898,12 +959,13 @@ export interface ReportDateOption {
   catalystType: string | null;
 }
 
-export function JournalContent({ initialTrades, stats, reportOptions = [], priceMap = {}, reportsByTicker = {} }: {
+export function JournalContent({ initialTrades, stats, reportOptions = [], priceMap = {}, reportsByTicker = {}, validation = null }: {
   initialTrades: Trade[];
   stats: JournalStats;
   reportOptions?: ReportOption[];
   priceMap?: Record<string, PriceInfo>;
   reportsByTicker?: Record<string, ReportDateOption[]>;
+  validation?: JournalValidation | null;
 }) {
   const [trades, setTrades] = useState<Trade[]>(initialTrades);
   const [showForm, setShowForm] = useState(false);
@@ -1125,6 +1187,8 @@ export function JournalContent({ initialTrades, stats, reportOptions = [], price
               key={trade.id}
               trade={trade}
               priceInfo={livePriceMap[trade.ticker] ?? null}
+              validatorResult={validation?.results[trade.ticker]}
+              validationGeneratedAt={validation?.generatedAt}
               onEdit={() => { setEditTrade(trade); setShowForm(false); window.scrollTo({ top: 0, behavior: "smooth" }); }}
               onDelete={() => handleDelete(trade.id)}
               onSaveExit={(updated) => handleSave(updated)}
