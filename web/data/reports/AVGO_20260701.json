@@ -1,0 +1,230 @@
+{
+  "ticker": "AVGO",
+  "companyName": "Broadcom Inc.",
+  "companyDescription": "Custom AI Silicon leader · 6 hyperscaler XPU programs · $73B AI backlog · Tomahawk 6 networking · VMware Cloud Foundation",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-01T00:00:00.000Z",
+  "price": 392.13,
+  "priceChange": 1.8,
+  "priceNote": "Down 20% from Jun 3 ATH $495 — post-earnings selloff creates 34% upside window to analyst consensus $524",
+  "marketCap": "$1.80T",
+  "sector": "Technology / Semiconductors",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 80,
+  "summary": "Broadcom fell 20% from its June 3 ATH of $495 despite beating Q2 FY2026 (EPS $2.17, AI revenue +143% YoY) because Q3 AI chip guidance of $16B was below the whisper number. The pullback restores 34% upside to analyst consensus $524, with $73B in AI backlog across 6 hyperscalers (OpenAI confirmed as 6th) and Q3 FY2026 earnings on Sep 3 as the next catalyst.",
+  "catalysts": [
+    {
+      "icon": "🤖",
+      "name": "OpenAI 'Jalapeño' — 6th Hyperscaler XPU",
+      "description": "CEO Hock Tan confirmed OpenAI as 6th major XPU customer with a $10B+ custom inference ASIC entering mass production late 2026. Expands $73B AI backlog to a new customer tier.",
+      "urgencyLabel": "CONFIRMED",
+      "dateBadge": "Jun 3, 2026",
+      "catalystDate": "2026-06-03",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "📊",
+      "name": "Q3 FY2026 Earnings",
+      "description": "Company guided $29.4B total revenue (+84% YoY) / $16B AI chips (+200%+ YoY). Beat bar = AI chips >$17B or 7th hyperscaler announced. Options imply ±7.45% move.",
+      "urgencyLabel": "64 DAYS",
+      "dateBadge": "Sep 3, 2026",
+      "catalystDate": "2026-09-03",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🔗",
+      "name": "Tomahawk 6 / Jericho 4 — Volume Production",
+      "description": "Industry-first 102.4 Tbps Tomahawk 6 Ethernet switch in volume production. Jericho 4 connecting 1M+ XPU clusters. AI networking pricing power catalyst.",
+      "urgencyLabel": "RAMPING",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-07-01",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🎯",
+      "name": "FY2027 $100B Revenue Target",
+      "description": "Hock Tan targeting $100B+ FY2027 — would make Broadcom the first semiconductor company to reach that milestone. Each earnings is a checkpoint.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "FY2027",
+      "catalystDate": "2026-12-01",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Whisper number risk — Q3 guide is $16B AI chips; buy-side likely modeling $17–18B; miss-vs-whisper repeats Jun 3 -12.59% pattern",
+    "Valuation at 62x TTM PE — guidance must consistently raise the ceiling, not just meet it",
+    "Customer concentration — 6 hyperscalers = essentially all AI semiconductor revenue; one capex slowdown = direct hit",
+    "In-house chip competition — Google TPU, Amazon Trainium, Apple MTIA could reduce AVGO's TAM over time",
+    "Rate sensitivity — $1.8T market cap at 62x PE; highly sensitive to Fed hawkish surprise or long-end rate spike",
+    "US export controls — ByteDance/China exposure creates ongoing regulatory risk",
+    "Power grid bottleneck — US data center power constraints delay hyperscaler capex → delay AVGO orders"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q3 FY2026 Earnings",
+      "dateRange": "Sep 3, 2026",
+      "note": "Revenue guide $29.4B total / $16B AI chips — true beat bar is AI >$17B or 7th hyperscaler announcement",
+      "est": "est. $29.4B rev / $3.21 EPS",
+      "highlight": "yellow"
+    },
+    {
+      "event": "OpenAI XPU Mass Production",
+      "dateRange": "Late 2026",
+      "note": "$10B+ custom inference ASIC entering production — first direct OpenAI silicon revenue recognition",
+      "est": "$10B+ custom chip",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -25, "price": 294 },
+    { "label": "Base", "color": "yellow", "pct": 30, "price": 510 },
+    { "label": "Bull", "color": "green", "pct": 47, "price": 576 },
+    { "label": "Moon", "color": "purple", "pct": 60, "price": 627 }
+  ],
+  "analystTargets": [
+    { "firm": "JPMorgan", "target": 580, "rating": "Buy" },
+    { "firm": "Goldman Sachs", "target": 525, "rating": "Buy" },
+    { "firm": "Morgan Stanley", "target": 502, "rating": "Buy" },
+    { "firm": "TipRanks Consensus (57 analysts)", "target": 517, "rating": "Strong Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed at 3.50–3.75%; rate-sensitive at 62x TTM PE. Any hike signal at Jul 29 FOMC compresses multiples rapidly — Jun 3 -12.59% on a nominal beat shows the template.",
+    "inflationNote": "Core PCE 3.4% (3-yr high). Hyperscaler capex is driven by competitive AI positioning, not cyclical demand — partially insulated from inflation.",
+    "sectorImpact": "AI networking and custom silicon demand is structural. The near-term risk is investor expectations management, not fundamental demand slowdown.",
+    "summary": "MEDIUM — 62x PE and investor skittishness on guidance is the primary risk. Fundamental AI demand (6 hyperscaler XPU programs + $73B backlog) remains intact."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 392, "note": "Current — 20% off ATH post-earnings overreaction", "timing": "Now" },
+      { "label": "Entry 2", "level": 368, "rangeMax": 380, "note": "Add on any macro weakness or Fed scare", "timing": "On pullback", "preferred": true },
+      { "label": "Entry 3", "level": 330, "note": "52-wk low approach — deep dip extreme entry", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 510, "pct": 30.0, "note": "Base case — consensus target, retests Jun ATH" },
+    "tp2": { "price": 576, "pct": 47.0, "note": "Bull case — JPMorgan $580 target, 7th hyperscaler" },
+    "tp3": { "price": 627, "pct": 60.0, "note": "Moon — $100B FY2027 confirmed + street high $630", "moon": true },
+    "stopLoss": {
+      "tight": 353,
+      "tightPct": -10,
+      "tightNote": "Below Jun 3 gap support",
+      "hard": 300,
+      "hardPct": -23,
+      "hardNote": "AI capex slowdown + hyperscaler in-house chip pivot",
+      "riskReward": "3.1 : 1",
+      "rrNote": "Tight stop vs TP1 (30% base case)",
+      "rrWarning": "Strong R/R at 20% post-earnings discount"
+    },
+    "verdict": "Post-earnings overreaction buy — AVGO fell 20% despite confirming 6 hyperscaler XPU programs and $73B backlog. 34% to consensus $524, 47% to JPMorgan $580. Sep 3 earnings is the re-rating event.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Broadcom pre-earnings runs typically occur 3–6 weeks before the print on hyperscaler capex confirmation signals. Current -20% gap from ATH is the entry window.",
+    "preRunupTiming": "Jul 1 → Sep 3",
+    "preRunupPct": "+8–15%",
+    "postWin": {
+      "avgPct": 10,
+      "range": "+5% to +24%",
+      "note": "When guidance EXCEEDS the whisper number: Dec 2024 Q4 FY24 +24% on AI guidance step-change. Q3 FY26 beat bar = AI chips >$17B or 7th hyperscaler.",
+      "exampleDate": "Dec 2024"
+    },
+    "postLose": {
+      "avgPct": -12,
+      "range": "-8% to -15%",
+      "note": "Q2 FY2026 (Jun 3) beat but -12.59% because AI guide of $16B was below buy-side whisper of $17-18B. Pattern repeats if Q3 miss-vs-whisper.",
+      "exampleDate": "Jun 2026"
+    },
+    "spotSizing": {
+      "pct": 6,
+      "reason": "High conviction: 6 hyperscaler XPU programs + $73B backlog + $580 JPMorgan target = 47% upside. Limit to 6% given whisper number risk at Sep 3. Add on any Aug pullback."
+    },
+    "stopPreCatalyst": { "pct": -10, "price": 353, "note": "Below Jun 3 gap = market pricing in hyperscaler demand slowdown" },
+    "stopPostCatalyst": { "pct": -12, "note": "If Sep 3 AI chips <$15B or no 7th hyperscaler, exit on open next day" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "AVGO",
+      "event": "Q4 FY2024 earnings — AI revenue guidance step-change",
+      "date": "Dec 2024",
+      "movePct": 24,
+      "days": 5,
+      "outcome": "good",
+      "note": "AVGO +24% when AI revenue guidance shocked the street upward — directly comparable pattern to what a Q3 FY26 'above whisper' guide would produce."
+    },
+    {
+      "ticker": "AVGO",
+      "event": "Q1 FY2024 earnings beat — XPU program expansion confirmed",
+      "date": "Mar 2024",
+      "movePct": 8,
+      "days": 3,
+      "outcome": "good",
+      "note": "AVGO +7.8% when first multi-hyperscaler XPU program expansion was confirmed. Broadened customer base = exactly what OpenAI 6th hyperscaler news does today."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Broadcom Q2 FY2026: OpenAI Confirmed as 6th Hyperscaler XPU Customer — $10B+ Custom ASIC",
+    "url": "https://www.thestreet.com/investing/stocks/5-star-analyst-revamps-broadcom-stock-price-target-after-earnings",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000051/avgo-05032026x8kxex99.htm",
+    "https://www.thestreet.com/investing/stocks/5-star-analyst-revamps-broadcom-stock-price-target-after-earnings",
+    "https://www.marketbeat.com/stocks/NASDAQ/AVGO/forecast/",
+    "https://www.tipranks.com/stocks/avgo/forecast",
+    "https://finbold.com/why-broadcom-avgo-stock-plunged-13-despite-earnings-beat/",
+    "https://marketchameleon.com/Overview/AVGO/Earnings/Stock-Price-Moves-Around-Earnings/",
+    "https://247wallst.com/investing/2026/05/28/broadcom-nearing-52-week-high-buy-sell-or-hold/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Broadcom ร่วง 20% จาก ATH หลัง Q2 FY26 beat (AI revenue +143%) เพราะ Q3 guide $16B ต่ำกว่า whisper $17-18B การปรับฐานนี้สร้าง upside 34% ถึง consensus $524 พร้อม backlog AI $73B จาก 6 hyperscalers (OpenAI เพิ่งยืนยันเป็น customer ที่ 6) Q3 earnings 3 ก.ย. เป็น re-rating catalyst",
+      "priceNote": "ย่อ 20% จาก ATH $495 หลัง earnings overreaction — upside 34% ถึง consensus",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "OpenAI 'Jalapeño' — XPU ลูกค้ารายที่ 6", "description": "Hock Tan ยืนยัน OpenAI ลงทุนใน custom ASIC $10B+ — ขยาย backlog $73B ไปยัง customer ใหม่" },
+        { "name": "รายงานผล Q3 FY2026", "description": "Guide $29.4B revenue / $16B AI chips; bar จริง >$17B หรือ customer ที่ 7" },
+        { "name": "Tomahawk 6 / Jericho 4 Volume", "description": "Ethernet switch 102.4 Tbps เร็วสุดในอุตสาหกรรม; เชื่อมต่อ XPU clusters 1M+ units" },
+        { "name": "เป้า FY2027 $100B Revenue", "description": "Hock Tan target $100B — first semiconductor milestone; check progress ทุก earnings" }
+      ],
+      "risks": [
+        "Whisper number risk — buy-side คาด $17-18B แต่ guide $16B; miss-vs-whisper ซ้ำ -12%",
+        "PE 62x — ต้องยก ceiling ทุกไตรมาส ไม่ใช่แค่ hit target",
+        "Concentration — 6 hyperscalers คือรายได้เกือบทั้งหมด",
+        "In-house chip risk — Google TPU, Amazon Trainium อาจลด TAM ระยะยาว",
+        "Rate sensitive — $1.8T cap ที่ 62x PE กดดันจาก Fed hawkish"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed rate 3.5-3.75%; 62x PE ไวต่อ rate signal; Jun 3 -12.59% บน beat คือ template",
+        "inflationNote": "PCE core 3.4%; hyperscaler capex ขับเคลื่อนโดย AI competition ไม่ใช่ macro",
+        "sectorImpact": "AI networking demand structural; risk หลักคือ investor expectation management",
+        "summary": "MEDIUM — demand OK แต่ 62x PE อ่อนไหวต่อ guidance miss-vs-whisper"
+      },
+      "entryStrategy": {
+        "verdict": "ซื้อ post-earnings overreaction — ย่อ 20% ทั้งที่ confirm 6 hyperscaler + $73B backlog; upside 34% ถึง consensus, 47% ถึง JPMorgan; Sep 3 earnings เป็น re-rating",
+        "entryLevels": [
+          { "note": "ปัจจุบัน — ย่อ 20% จาก ATH", "timing": "ตอนนี้" },
+          { "note": "Add ถ้า macro กดหรือ Fed กลัว", "timing": "ถ้าราคาย่อ" },
+          { "note": "ใกล้ 52-wk low — extreme entry", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "กรณีฐาน — consensus target, retest Jun ATH" },
+        "tp2": { "note": "กรณีดี — JPMorgan $580 target" },
+        "tp3": { "note": "Moon — FY2027 $100B confirmed + street high $630" },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่าแนวรับ gap Jun 3",
+          "hardNote": "AI capex ชะลอ + in-house chip pivot",
+          "rrNote": "Stop แคบ vs TP1 base case 30%",
+          "rrWarning": "R/R ดีที่ discount 20% post-earnings"
+        }
+      },
+      "estimateDates": [
+        { "event": "รายงาน Q3 FY2026", "note": "Guide $29.4B / AI chips $16B; bar จริง >$17B หรือ 7th hyperscaler" },
+        { "event": "OpenAI XPU Mass Production", "note": "Custom ASIC $10B+ เข้า production ปลายปี 2026" }
+      ]
+    }
+  }
+}

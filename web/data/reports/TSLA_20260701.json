@@ -1,0 +1,242 @@
+{
+  "ticker": "TSLA",
+  "companyName": "Tesla, Inc.",
+  "companyDescription": "EV + Energy + AI/Robotics · Cybercab robotaxi live Austin · Optimus Gen 3 production Summer 2026 · FSD EU approval pending",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-01T00:00:00.000Z",
+  "price": 420.60,
+  "priceChange": 2.1,
+  "priceNote": "Q2 delivery report tomorrow (Jul 2) — stock pre-ran +8% this week to $420, now AT analyst avg PT $421",
+  "marketCap": "$1.58T",
+  "sector": "Electric Vehicles / AI / Robotics",
+  "verdict": "HOLD",
+  "scoreLabel": "Speculative",
+  "score": 58,
+  "summary": "Tesla reports Q2 2026 vehicle deliveries tomorrow (July 2) with a consensus of 406K vehicles. The stock has pre-run +8% this week to $420 — now essentially AT the analyst average price target of $421. With Hold consensus from 26 analysts and only +9% upside to the median $458 target, this is a hold-and-watch moment: a delivery beat >415K could pop 5–10%, but the upside story depends entirely on Cybercab robotaxi expansion and Optimus production confirmation in H2.",
+  "catalysts": [
+    {
+      "icon": "🚗",
+      "name": "Q2 2026 Delivery Report",
+      "description": "Consensus 406K vehicles. Beat bar >415K = +5–10% pop; miss <395K = -8–12% drop. Energy storage consensus 13.8 GWh (+36% QoQ). Stock pre-ran +8% into this report — sell-the-news risk if in-line.",
+      "urgencyLabel": "TOMORROW",
+      "dateBadge": "Jul 2, 2026",
+      "catalystDate": "2026-07-02",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "EPS est. $0.42; rev est. $24.58B. Key watch: auto gross margin recovery and energy storage contribution. Q1 beat but -3.56% on $5B capex raise — capex commentary will drive the reaction more than the headline.",
+      "urgencyLabel": "21 DAYS",
+      "dateBadge": "Jul 22, 2026",
+      "catalystDate": "2026-07-22",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🤖",
+      "name": "Optimus Gen 3 — Production Start",
+      "description": "Musk at 2026 Abundance Summit: 'final stages of completion — most advanced robot in world.' Production starts Summer 2026; high-volume 2027 ramp. Long-term: 2M units/year goal.",
+      "urgencyLabel": "SUMMER 2026",
+      "dateBadge": "~Aug 2026",
+      "catalystDate": "2026-08-01",
+      "badgeColor": "green",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🚕",
+      "name": "Cybercab Robotaxi — City Expansion",
+      "description": "Austin full metro live (Jun 8). H1 2026 deadline for 5 more cities (Las Vegas, Tampa, Orlando, Miami, Phoenix) MISSED. Engineering tests still running Jun 30. 7 cities targeted in 2026.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-09-01",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🇪🇺",
+      "name": "FSD EU Type Approval",
+      "description": "EU Technical Committee on Motor Vehicles (TCMV) held first formal review Jun 30. EU-wide FSD/Robotaxi type approval would unlock a major new market. H2 2026 timeline.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-10-01",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "BYD surpassed Tesla globally — 2.26M BEVs vs 1.63M in 2025; competitive gap widening in China and Europe",
+    "Operating margin collapsed from 20%+ peak to 5.8% — price war eroding profitability",
+    "Stock at analyst avg PT $421 — thin margin of safety; +9% to median $458 is not a compelling risk/reward",
+    "Robotaxi H1 2026 deadline missed — execution credibility risk for Musk-timeline promises",
+    "Q2 delivery pre-run (+8%) sets high bar — any in-line print likely 'sell the news'",
+    "Brand damage from Musk DOGE activity hurting sales in Europe and US",
+    "CapEx $25B+ 2026 with unclear Optimus/Cybercab ROI timeline",
+    "JPMorgan sees 60% downside — valuation debate ongoing",
+    "China market share lost to BYD, SAIC, XPeng, NIO"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q2 2026 Delivery Report",
+      "dateRange": "Jul 2, 2026",
+      "note": "Consensus 406K; beat bar >415K = +5-10%; miss <395K = -8-12%",
+      "est": "est. 406K vehicles",
+      "highlight": "yellow"
+    },
+    {
+      "event": "Q2 2026 Earnings",
+      "dateRange": "Jul 22, 2026",
+      "note": "EPS $0.42 est; key read on auto margin + energy storage + Optimus production timeline",
+      "est": "est. $0.42 EPS / $24.6B rev",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -25, "price": 315 },
+    { "label": "Base", "color": "yellow", "pct": 10, "price": 463 },
+    { "label": "Bull", "color": "green", "pct": 30, "price": 547 },
+    { "label": "Moon", "color": "purple", "pct": 60, "price": 673 }
+  ],
+  "analystTargets": [
+    { "firm": "Median (61 analysts)", "target": 458, "rating": "Hold" },
+    { "firm": "S&P Global Avg (47 analysts)", "target": 421, "rating": "Hold" },
+    { "firm": "Wedbush / ARK bull case", "target": 600, "rating": "Buy" },
+    { "firm": "JPMorgan (bear)", "target": 168, "rating": "Sell", "note": "Sees 60% downside" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed at 3.50–3.75%; Warsh removed easing bias Jun 17. EV demand is interest-rate sensitive (auto loans) but Tesla's AI/robotics narrative partially offsets — priced more as a tech stock.",
+    "inflationNote": "Core PCE 3.4% (3-yr high). EV input costs (lithium, steel) are inflation-exposed. Iran conflict = higher energy prices could accelerate EV adoption long-term but near-term hits consumer spending.",
+    "sectorImpact": "Higher rates hurt EV affordability at the consumer level. However, Tesla's FSD/Cybercab/Optimus narrative makes it a tech stock — FOMC risk is about multiple compression, not just auto demand.",
+    "summary": "MEDIUM — rate headwinds compress the AI premium multiple. Stock at analyst avg PT leaves little margin of safety for any macro or earnings disappointment."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 421, "note": "Current — at analyst avg PT; wait for delivery reaction tomorrow", "timing": "Wait for Jul 2 data" },
+      { "label": "Entry 2", "level": 385, "rangeMax": 395, "note": "Post-delivery pullback zone if in-line or miss", "timing": "On any post-delivery dip", "preferred": true },
+      { "label": "Entry 3", "level": 340, "note": "Q2 earnings miss + Optimus delay = deep entry", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 463, "pct": 10.1, "note": "Base — analyst median target" },
+    "tp2": { "price": 547, "pct": 30.0, "note": "Bull — delivery beat + margin recovery + Optimus production" },
+    "tp3": { "price": 673, "pct": 60.1, "note": "Moon — robotaxi revenue disclosed + FSD EU + Optimus 2M units/year visible", "moon": true },
+    "stopLoss": {
+      "tight": 375,
+      "tightPct": -11,
+      "tightNote": "Below Apr 2026 earnings gap level = sentiment broken",
+      "hard": 310,
+      "hardPct": -26,
+      "hardNote": "Delivery miss + margin compression + Optimus delayed to 2028",
+      "riskReward": "1.9 : 1",
+      "rrNote": "Tight stop vs TP2",
+      "rrWarning": "Thin R/R at current price — wait for post-delivery dip to improve entry"
+    },
+    "verdict": "HOLD at $420 — stock is AT analyst avg PT with only 9% upside to median. Wait for Q2 delivery reaction tomorrow: if miss sends stock to $380-390, that's the entry. Bull case requires Optimus/Cybercab execution that hasn't been delivered yet.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "delivery_beat",
+    "preRunup": "Tesla pre-runs 5-10% in the days before delivery reports — already happened (+8% this week). The pre-run creates sell-the-news risk for in-line deliveries. Post-delivery dip = better entry.",
+    "preRunupTiming": "Jun 28 → Jul 2 (ALREADY HAPPENED)",
+    "preRunupPct": "+8% (already in)",
+    "postWin": {
+      "avgPct": 8,
+      "range": "+5% to +15%",
+      "note": "Q2 2024 delivery beat: +10.2% next day. Q3 2023 beat: +6.1%. But stock already pre-ran 8% — incremental upside on beat is muted.",
+      "exampleDate": "Q2 2024"
+    },
+    "postLose": {
+      "avgPct": -10,
+      "range": "-8% to -15%",
+      "note": "Q2 2025 delivery miss (-14% consensus miss) caused ~-12% selloff over 3 days. Any print <395K would trigger similar reaction.",
+      "exampleDate": "Q2 2025"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "HOLD verdict at analyst avg PT. Wait for post-delivery dip to $385-395 for better R/R. Current entry has thin margin — size 3% max if initiating; 5% on dip."
+    },
+    "stopPreCatalyst": { "pct": -11, "price": 375, "note": "Below Apr 2026 earnings gap = delivery miss confirmed" },
+    "stopPostCatalyst": { "pct": -12, "note": "If Q2 delivery <395K vehicles AND earnings (Jul 22) miss EPS $0.40, exit; Optimus/Cybercab execution thesis is the only remaining bull case" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "TSLA",
+      "event": "Q2 2024 delivery beat — 443,956 vs 436K consensus",
+      "date": "Jul 2024",
+      "movePct": 10,
+      "days": 2,
+      "outcome": "good",
+      "note": "TSLA +10.2% in 2 days after Q2 2024 delivery beat. Directly comparable to tomorrow's Q2 2026 delivery report. Beat bar today is 406K vs 443K then — lower bar."
+    },
+    {
+      "ticker": "TSLA",
+      "event": "Q2 2025 delivery miss — 384K vs 437K consensus",
+      "date": "Jul 2025",
+      "movePct": -12,
+      "days": 3,
+      "outcome": "bad",
+      "note": "Q2 2025 miss by 12% caused -12% selloff over 3 days. The delivery-day risk is symmetric — miss = equivalent downside to beat upside."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Tesla Q2 2026 Delivery Consensus: 406,024 Vehicles — Report Due July 2",
+    "url": "https://electrek.co/2026/06/26/tesla-q2-2026-delivery-consensus-406000/",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://electrek.co/2026/06/26/tesla-q2-2026-delivery-consensus-406000/",
+    "https://www.techtimes.com/articles/319305/20260629/tesla-q2-2026-deliveries-wall-street-sets-406024-bar-july-2-report.htm",
+    "https://www.teslaoracle.com/2026/06/08/tesla-expands-unsupervised-robotaxi-service-to-the-entire-austin-metro-area-cybercabs-spotted-across-the-us/",
+    "https://electrek.co/2026/04/22/tesla-tsla-q1-2026-financial-results/",
+    "https://www.marketbeat.com/stocks/NASDAQ/TSLA/forecast/",
+    "https://fortune.com/2026/04/07/a-j-p-morgan-analyst-sees-60-downside-to-tesla-stock-and-he-may-be-too-optimistic/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Tesla รายงาน Q2 2026 deliveries พรุ่งนี้ (2 ก.ค.) consensus 406K คัน ราคาพุ่ง +8% สัปดาห์นี้ถึง $420 — ซึ่งตรงกับ analyst avg PT $421 พอดี HOLD: upside เหลือแค่ 9% ถึง median $458 bull case ขึ้นอยู่กับ Cybercab expansion และ Optimus Gen 3 ที่ยังไม่ confirm",
+      "priceNote": "Pre-ran +8% ก่อน delivery report 2 ก.ค. — ตอนนี้ที่ analyst avg PT $421; sell-the-news risk ถ้า in-line",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "รายงาน Q2 2026 Deliveries", "description": "Consensus 406K; beat >415K = +5-10%; miss <395K = -8-12%" },
+        { "name": "รายงาน Q2 2026 Earnings", "description": "EPS est. $0.42; ดู auto margin + capex commentary" },
+        { "name": "Optimus Gen 3 — เริ่ม Production", "description": "Musk: 'final stages' — production เริ่ม Summer 2026, volume ramp 2027" },
+        { "name": "Cybercab — ขยายไปเมืองใหม่", "description": "Austin full metro live แล้ว; H2 2026 อีก 4-5 เมือง (ล่าช้าจาก H1 target)" }
+      ],
+      "risks": [
+        "BYD แซงแล้ว — 2.26M vs 1.63M ในปี 2025; China market share หาย",
+        "Margin ลดจาก 20%+ เหลือ 5.8% จาก price war",
+        "ราคาที่ analyst avg PT — margin of safety น้อยมาก",
+        "Robotaxi H1 deadline miss — credibility ของ Musk timeline",
+        "Pre-run +8% แล้ว — sell-the-news risk ถ้า in-line",
+        "CapEx $25B+ ไม่มี clear ROI timeline"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed rate 3.5-3.75%; ดอกเบี้ยสูง hurt EV affordability แต่ Tesla trade เหมือน tech stock มากกว่า auto",
+        "inflationNote": "PCE 3.4%; ราคา lithium/steel ขึ้น; Iran oil พุ่งอาจเร่ง EV adoption ระยะยาว",
+        "sectorImpact": "Rate ขึ้น compress multiple ใน AI/robotics premium; FSD/Optimus narrative ป้องกันบางส่วน",
+        "summary": "MEDIUM — rate กดดัน AI premium multiple; ที่ avg PT มี margin of safety น้อย"
+      },
+      "entryStrategy": {
+        "verdict": "HOLD ที่ $420 — ราคาที่ analyst avg PT, upside แค่ 9% ถึง median รอดู delivery reaction พรุ่งนี้: ถ้า miss ส่งราคาไป $380-390 นั้นคือจุดเข้า bull case ต้องการ Optimus/Cybercab execution ที่ยังไม่เห็น",
+        "entryLevels": [
+          { "note": "ปัจจุบัน — ที่ analyst avg PT; รอดู delivery ก่อน", "timing": "รอ Jul 2 data" },
+          { "note": "โซน dip หลัง delivery ถ้า in-line หรือ miss", "timing": "หลัง delivery dip" },
+          { "note": "Q2 earnings miss + Optimus delay", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "กรณีฐาน — analyst median target" },
+        "tp2": { "note": "กรณีดี — delivery beat + margin recovery + Optimus confirm" },
+        "tp3": { "note": "Moon — robotaxi revenue + FSD EU + Optimus 2M/year" },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า Apr earnings gap",
+          "hardNote": "Delivery miss + margin compression + Optimus ล่าช้า",
+          "rrNote": "Thin R/R ที่ราคานี้",
+          "rrWarning": "รอ dip ก่อนเพิ่ม position"
+        }
+      },
+      "estimateDates": [
+        { "event": "Q2 2026 Delivery Report", "note": "Consensus 406K; beat >415K; miss <395K" },
+        { "event": "Q2 2026 Earnings", "note": "EPS $0.42 est; ดู auto margin + energy storage + Optimus" }
+      ]
+    }
+  }
+}

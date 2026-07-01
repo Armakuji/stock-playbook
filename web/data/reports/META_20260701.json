@@ -1,0 +1,230 @@
+{
+  "ticker": "META",
+  "companyName": "Meta Platforms, Inc.",
+  "companyDescription": "Social AI Megacap · 3.2B daily users · Meta Glasses $299 launched Jun 23 · Muse Spark closed AI model · $125–145B capex cycle",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-01T00:00:00.000Z",
+  "price": 562.30,
+  "priceChange": -1.4,
+  "priceNote": "Down 24% from $796 52-wk high — only $42 above 52-wk low; Q2 earnings Jul 29 = 28-day catalyst",
+  "marketCap": "$1.43T",
+  "sector": "Technology / Social Media / AI",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 82,
+  "summary": "Meta trades 24% below its $796 52-week high — a rare discount for a company still growing revenue +33% YoY with 3.2B daily users and an emerging AI hardware story (Meta Glasses launched June 23 at $299). Q2 earnings on July 29 is the pivotal event: 40 analysts average $829 price target implies +47% upside if capex commentary doesn't spook the market again.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "Revenue guide $58–61B. The single biggest catalyst: market will focus on capex ROI signals and whether Zuckerberg reins in or expands the $125–145B spend. Any capex reduction = significant re-rate higher.",
+      "urgencyLabel": "28 DAYS",
+      "dateBadge": "Jul 29, 2026",
+      "catalystDate": "2026-07-29",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "👓",
+      "name": "Meta Glasses ($299) — Commercial Launch",
+      "description": "Own-brand Meta AI glasses launched Jun 23 at $299 (Adventurer/Fury models). Bundled with Muse Spark AI. Q1 IDC data: META holds 69.2% of AI glasses market. Q2 sell-through data = next read.",
+      "urgencyLabel": "LAUNCHED",
+      "dateBadge": "Jun 23, 2026",
+      "catalystDate": "2026-06-23",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🤖",
+      "name": "Muse Spark — Closed AI Model Adoption",
+      "description": "Meta pivoted from open Llama to closed Muse Spark (Meta Superintelligence Labs). Claims 10x compute efficiency vs Llama 4. Enterprise + developer adoption metrics at Q2 call.",
+      "urgencyLabel": "GROWING",
+      "dateBadge": "Apr 2026",
+      "catalystDate": "2026-04-15",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "⚖️",
+      "name": "EU DSA Child Safety Ruling",
+      "description": "Preliminary breach finding April 29; fine ceiling $12B. Final ruling expected July–Sep 2026. Settlement/smaller fine = relief rally; max fine = negative overhang resolved either way.",
+      "urgencyLabel": "PENDING",
+      "dateBadge": "~Aug 2026",
+      "catalystDate": "2026-08-01",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "AI capex blowout — $125–145B 2026 spend; investors punished the Q1 beat with -8.55% on capex guide. FCF yield shrinks at 20x PE.",
+    "EU DSA child safety fine up to $12B — final ruling pending July–September 2026",
+    "EU antitrust — WhatsApp AI blocking rival tools; DMA violation possible",
+    "Technically weak — stock $42 above 52-wk low of $520; any Q2 miss breaks that support",
+    "Closed AI pivot risk — abandoning open-source Llama risks developer ecosystem backlash",
+    "AI glasses competition — Google + Samsung Android XR glasses arriving Fall 2026 threatens 69% market share",
+    "Capex ROI timeline — $145B annual spend; market questions monetization before 2027"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q2 2026 Earnings",
+      "dateRange": "Jul 29, 2026",
+      "note": "Revenue guide $58–61B; capex commentary is the single biggest catalyst. Any trim = relief rally.",
+      "est": "est. $59.5B revenue / $7.17 EPS",
+      "highlight": "yellow"
+    },
+    {
+      "event": "EU DSA Fine Resolution",
+      "dateRange": "~Aug–Sep 2026",
+      "note": "Final ruling on child safety breach; max fine $12B. Settlement = overhang removed.",
+      "est": "est. $12B max",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -20, "price": 450 },
+    { "label": "Base", "color": "yellow", "pct": 14, "price": 640 },
+    { "label": "Bull", "color": "green", "pct": 30, "price": 730 },
+    { "label": "Moon", "color": "purple", "pct": 49, "price": 840 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus Avg (40 analysts)", "target": 829, "rating": "Strong Buy" },
+    { "firm": "24/7 Wall St.", "target": 825, "rating": "Buy" },
+    { "firm": "High target", "target": 1015, "rating": "Buy" },
+    { "firm": "Low target", "target": 622, "rating": "Hold" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed at 3.50–3.75%; Warsh removed easing bias Jun 17. META's 20x PE is cheap for a mega-cap — more rate-resilient than high-multiple peers.",
+    "inflationNote": "Core PCE 3.4% (3-yr high). Digital advertising is partially resilient to inflation — brands shift online spend when costs rise. Iran conflict = energy inflation but minimal direct impact.",
+    "sectorImpact": "Digital advertising holds in mild recession. The real risk is enterprise AI capex ROI uncertainty slowing the narrative, not macro directly.",
+    "summary": "MEDIUM — 20x PE provides some macro cushion vs. high-multiple AI plays. Key risk is capex overreach optics rather than direct macro damage."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 562, "note": "Current — near 52-wk low zone entry", "timing": "Now" },
+      { "label": "Entry 2", "level": 530, "rangeMax": 545, "note": "Pre-earnings dip / near 52-wk low $520", "timing": "On any pre-earnings weakness", "preferred": true },
+      { "label": "Entry 3", "level": 500, "note": "52-wk low break / capitulation entry", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 640, "pct": 13.8, "note": "Base case — Q2 in-line + steady capex" },
+    "tp2": { "price": 730, "pct": 29.8, "note": "Bull case — capex trim + earnings beat" },
+    "tp3": { "price": 840, "pct": 49.4, "note": "Moon — analyst consensus target, near 52-wk high", "moon": true },
+    "stopLoss": {
+      "tight": 510,
+      "tightPct": -9,
+      "tightNote": "Below 52-wk low $520 = breakdown signal",
+      "hard": 475,
+      "hardPct": -16,
+      "hardNote": "EU $12B fine + capex raised further + Q2 miss",
+      "riskReward": "3.4 : 1",
+      "rrNote": "Tight stop vs TP2",
+      "rrWarning": "Excellent asymmetry near 52-wk low at 20x PE"
+    },
+    "verdict": "Buy the 52-wk low zone — 20x PE for a +33% YoY grower with 47% upside to analyst consensus is rare value for a mega-cap. Jul 29 earnings is the make-or-break event: capex commentary > headline beat.",
+    "approach": "DCA"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Mega-cap social platforms historically run 5–10% in the week before earnings when near 52-wk lows. Positioning is washed out — any positive pre-earnings catalyst (early sell-through data for glasses, analyst upgrades) can accelerate the move.",
+    "preRunupTiming": "Jul 1 → Jul 29",
+    "preRunupPct": "+5–10%",
+    "postWin": {
+      "avgPct": 12,
+      "range": "+5% to +25%",
+      "note": "META historically moves ±11.8% on earnings (median ±11%). Q4 2024 produced +10%. Sustainable upside requires capex steady or reduced + ad revenue acceleration.",
+      "exampleDate": "Q4 2024"
+    },
+    "postLose": {
+      "avgPct": -12,
+      "range": "-8% to -25%",
+      "note": "Q1 2026 beat -8.55% on capex shock. If Q2 capex raised to $150B+ or revenue misses low-end $58B, tests 52-wk low $520.",
+      "exampleDate": "Q1 2026"
+    },
+    "spotSizing": {
+      "pct": 6,
+      "reason": "Rare mega-cap at 20x PE with +47% consensus upside, near 52-wk low. Core holding sizing — add pre-earnings on any dip to $530–545."
+    },
+    "stopPreCatalyst": { "pct": -9, "price": 510, "note": "Break below 52-wk low = distribution phase confirmed" },
+    "stopPostCatalyst": { "pct": -12, "note": "If Q2 capex >$150B guide or revenue misses $58B floor, exit on the open next session" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "META",
+      "event": "Q4 2024 earnings — AI monetization first read",
+      "date": "Jan 2025",
+      "movePct": 10,
+      "days": 3,
+      "outcome": "good",
+      "note": "META +10% on Q4 2024 beat + AI ad targeting revenue acceleration — same pattern as today: near-low entry + AI monetization inflection earnings."
+    },
+    {
+      "ticker": "META",
+      "event": "Q2 2023 earnings — turnaround confirmed after 2022 capex fears",
+      "date": "Jul 2023",
+      "movePct": 15,
+      "days": 5,
+      "outcome": "good",
+      "note": "After $34B+ capex fears in 2022 drove META -77%, first earnings showing capex discipline + ad recovery produced +15% in 5 days. Directly comparable to today's capex overhang."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Meta Launches Own-Brand AI Glasses at $299 — 69% AI Glasses Market Share",
+    "url": "https://www.cnbc.com/2026/06/23/meta-glasses-are-new-smart-glasses-starting-at-299.html",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://www.cnbc.com/2026/06/23/meta-glasses-are-new-smart-glasses-starting-at-299.html",
+    "https://www.stocktitan.net/news/META/meta-reports-first-quarter-2026-q8s4s20oh4ah.html",
+    "https://www.tikr.com/blog/meta-beat-q1-2026-estimates-but-fell-8-55-heres-what-the-selloff-is-missing",
+    "https://247wallst.com/investing/2026/06/26/meta-stock-price-prediction-the-case-for-nearly-50-upside/",
+    "https://www.marketbeat.com/stocks/NASDAQ/META/forecast/",
+    "https://earnings-watcher.com/wiki/meta-earnings-options",
+    "https://stockanalysis.com/stocks/meta/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Meta ซื้อขายต่ำกว่า 52-wk high 24% — ราคาใกล้ low ของปีที่ PE 20x สำหรับบริษัทที่โต +33% YoY มี Meta Glasses $299 เพิ่งเปิดตัว 23 มิ.ย. Q2 earnings 29 ก.ค. เป็น catalyst ใหญ่ที่สุด ถ้า capex ไม่พุ่งอีก 40 นักวิเคราะห์ avg target $829 = upside +47%",
+      "priceNote": "ย่อ 24% จาก $796 — ห่าง 52-wk low แค่ $42; Q2 earnings 29 ก.ค. = 28 วัน",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "รายงานผล Q2 2026", "description": "Revenue guide $58–61B; ตลาดดูสัญญาณ capex — ถ้าลดหรือคง = ขึ้นแรง" },
+        { "name": "Meta Glasses $299 — เปิดตัวเชิงพาณิชย์", "description": "แว่น AI ราคา $299 เปิดตัว 23 มิ.ย. ส่วนแบ่งตลาด 69.2%; ยอดขาย Q2 = ตัวชี้วัดสำคัญ" },
+        { "name": "Muse Spark — AI model ปิด", "description": "เปลี่ยนจาก Llama open-source มา closed model ประสิทธิภาพ 10x" },
+        { "name": "EU DSA Fine — ผลคดีความปลอดภัยเด็ก", "description": "ค่าปรับสูงสุด $12B; ผลตัดสินสุดท้าย ก.ค.–ก.ย. 2026" }
+      ],
+      "risks": [
+        "AI capex $125–145B — ตลาดลงโทษ -8.55% แม้ Q1 beat เพราะ capex guide ช็อก",
+        "EU DSA fine สูงสุด $12B — pending July–Sep",
+        "Technical อ่อนแอ — ห่างจาก 52-wk low $520 แค่ $42",
+        "ปิดใช้ Llama — risk developer ecosystem backlash",
+        "AI glasses competition — Google + Samsung AR เข้าตลาด Fall 2026"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed rate 3.5-3.75%; PE 20x ทนทานกว่า high-multiple peers ต่อ rate ขึ้น",
+        "inflationNote": "Digital ads ทนต่อ inflation เล็กน้อย; ความเสี่ยงหลักคือ capex ROI ไม่ใช่ macro",
+        "sectorImpact": "Ads กดดันน้อยกว่า infrastructure; PE 20x ถูกมากสำหรับ mega-cap",
+        "summary": "MEDIUM — PE 20x ป้องกันบางส่วน; ความเสี่ยงจาก capex เกิน"
+      },
+      "entryStrategy": {
+        "verdict": "ซื้อใกล้ 52-wk low — PE 20x สำหรับบริษัทโต +33% upside 47% เป็น value หายากสำหรับ mega-cap earnings 29 ก.ค. = make-or-break; ดู capex commentary มากกว่า headline",
+        "entryLevels": [
+          { "note": "ปัจจุบัน — ใกล้โซน 52-wk low", "timing": "ตอนนี้" },
+          { "note": "ก่อน earnings / ใกล้ 52-wk low $520", "timing": "ถ้าราคาย่อ" },
+          { "note": "ทะลุ 52-wk low / capitulation", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "กรณีฐาน — Q2 in-line + capex คง" },
+        "tp2": { "note": "กรณีดี — capex trim + earnings beat" },
+        "tp3": { "note": "Moon — consensus target เต็ม ใกล้ 52-wk high เดิม" },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า 52-wk low $520 = breakdown",
+          "hardNote": "EU fine $12B + capex raise + Q2 miss",
+          "rrNote": "Stop แคบ vs TP2",
+          "rrWarning": "Asymmetry ดีมากที่ PE 20x ใกล้ low"
+        }
+      },
+      "estimateDates": [
+        { "event": "รายงาน Q2 2026", "note": "Revenue guide $58–61B; capex สำคัญกว่า headline" },
+        { "event": "EU DSA Fine Resolution", "note": "ผลตัดสินสุดท้าย ก.ค.–ก.ย.; max $12B" }
+      ]
+    }
+  }
+}

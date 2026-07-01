@@ -1,0 +1,217 @@
+{
+  "ticker": "MU",
+  "companyName": "Micron Technology, Inc.",
+  "companyDescription": "Memory & storage leader · HBM4 dominant AI memory supplier · $50B Q4 guide · Take-or-pay agreements $100B+ with 16 hyperscalers",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-01T00:00:00.000Z",
+  "price": 1145.50,
+  "priceChange": -0.8,
+  "priceNote": "Post-earnings consolidation from $1,199 AH spike; post-earnings consensus revised to $1,564 avg — now +37% upside",
+  "marketCap": "$1.3T",
+  "sector": "Technology / Memory Semiconductors",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 80,
+  "summary": "Micron's Q3 FY2026 blowout (Jun 25) delivered $41.5B revenue (+16% vs estimates) and $25.11 EPS (+23% vs estimates) — revenue quadrupled YoY. Post-earnings analyst consensus has revised sharply higher (Cantor $2,000, avg now ~$1,564). Q4 guidance of $50B revenue + $31 EPS establishes a new record. HBM4 fully booked through 2027, 16 take-or-pay strategic agreements. Q4 earnings Sep 29 is the next catalyst.",
+  "catalysts": [
+    {
+      "icon": "💾",
+      "name": "HBM4 Revenue Ramp — Vera Rubin Supply",
+      "description": "Micron is the primary HBM4 supplier for NVIDIA's Vera Rubin GPUs shipping NOW (Jul 2026). >$1B HBM4 already shipped in Q3; ramping 2x faster than HBM3E. Fully booked through 2027.",
+      "urgencyLabel": "NOW",
+      "dateBadge": "Jul 2026",
+      "catalystDate": "2026-07-01",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "📊",
+      "name": "Q4 FY2026 Earnings",
+      "description": "Company guided $50B revenue ± $1B and $31 EPS ± $1 (non-GAAP). Q4 FCF expected >$30B. Beat bar = $51B+ revenue or $32+ EPS.",
+      "urgencyLabel": "90 DAYS",
+      "dateBadge": "Sep 29, 2026",
+      "catalystDate": "2026-09-29",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🤝",
+      "name": "Take-or-Pay Strategic Agreements",
+      "description": "16 strategic customer agreements signed; 14 with minimum $100B+ contracted supply. $22B in strategic agreements including $18B in cash deposits. De-risks the AI memory cycle.",
+      "urgencyLabel": "MULTI-YEAR",
+      "dateBadge": "Multi-year",
+      "catalystDate": "2026-07-01",
+      "badgeColor": "green",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Oversupply shock 2027–2028 — Micron ($27B capex), Samsung, SK Hynix all building simultaneously; synchronized capacity could crash ASPs",
+    "China export controls — BIS enforcement surge; House Foreign Affairs advanced new Match Act controls in Apr 2026; China retaliation risk",
+    "Samsung HBM4 comeback — if Samsung qualifies for NVIDIA HBM4, Micron's exclusive positioning erodes",
+    "Peak margin trajectory — Q4 guidance notes 'meaningful moderation in rate of price increases'",
+    "Cyclical re-rating — semis are cyclical; market could compress multiple before FY2027 EPS materializes",
+    "Tariff crossfire — US-China chip tariff escalation + input cost impact"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q4 FY2026 Earnings",
+      "dateRange": "Sep 29, 2026",
+      "note": "Revenue $50B ± $1B / EPS $31 ± $1 — true beat bar is $51B+ or $32+ EPS",
+      "est": "est. $50B rev / $31 EPS",
+      "highlight": "yellow"
+    },
+    {
+      "event": "HBM4 Full-Year Ramp Completion",
+      "dateRange": "FY2026 (through Dec 2026)",
+      "note": "2026 HBM supply fully sold out; orders extending into 2028; demand > supply through full year",
+      "est": "Sold out 2026–2027",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -24, "price": 875 },
+    { "label": "Base", "color": "yellow", "pct": 16, "price": 1325 },
+    { "label": "Bull", "color": "green", "pct": 62, "price": 1850 },
+    { "label": "Moon", "color": "purple", "pct": 240, "price": 3900 }
+  ],
+  "analystTargets": [
+    { "firm": "Cantor Fitzgerald (Jun 29)", "target": 2000, "rating": "Buy" },
+    { "firm": "Post-earnings Consensus Avg", "target": 1564, "rating": "Buy" },
+    { "firm": "Consensus High", "target": 2200, "rating": "Buy" },
+    { "firm": "Motley Fool FY2027 DCF", "target": 3900, "rating": "Bull case" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed at 3.50–3.75%; Warsh removed easing bias Jun 17. Memory semiconductor demand is driven by hyperscaler AI capex, which is structural — partially insulated from rate moves.",
+    "inflationNote": "Core PCE 3.4% (3-yr high); DRAM/NAND pricing is driven by supply/demand dynamics, not inflation directly. Iran oil impact is minimal for Micron's cost structure.",
+    "sectorImpact": "AI memory demand is structural and contracted (take-or-pay). The near-term risk is oversupply timing 2027-2028 as all three major DRAM vendors ramp simultaneously.",
+    "summary": "MEDIUM — fundamental demand is strong (HBM4 sold out through 2027) but cyclical oversupply in standard DRAM markets + geopolitical chip restrictions are real tail risks."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 1145, "note": "Current — post-earnings consolidation from $1,199 AH", "timing": "Now" },
+      { "label": "Entry 2", "level": 1050, "rangeMax": 1080, "note": "Pre-earnings dip zone / macro fear", "timing": "On any pullback", "preferred": true },
+      { "label": "Entry 3", "level": 920, "note": "China export shock / oversupply fear capitulation", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 1325, "pct": 15.7, "note": "Base — Q4 in-line with $50B guide" },
+    "tp2": { "price": 1850, "pct": 61.5, "note": "Bull — Q4 blowout + FY2027 re-rate toward Cantor $2,000" },
+    "tp3": { "price": 3900, "pct": 240.5, "note": "Moon — FY2027 $149 EPS × 26.3x P/E per Motley Fool DCF", "moon": true },
+    "stopLoss": {
+      "tight": 1020,
+      "tightPct": -11,
+      "tightNote": "Below pre-earnings base = earnings exuberance fades",
+      "hard": 875,
+      "hardPct": -24,
+      "hardNote": "Oversupply shock confirmed + Samsung HBM4 qualification + China ban",
+      "riskReward": "4.1 : 1",
+      "rrNote": "Tight stop vs TP2",
+      "rrWarning": "Strong R/R — blowout earnings creates new support floor"
+    },
+    "verdict": "Buy post-earnings consolidation — Q3 blowout beat recalibrated analyst targets to $1,564+ avg. HBM4 supply to NVIDIA Vera Rubin happening NOW creates an active demand catalyst. Q4 $50B guide = next re-rating event Sep 29.",
+    "approach": "DCA"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "MU typically rallies 8-15% in the 2-4 weeks before earnings on AI demand data points (TSMC capacity reports, hyperscaler capex signals). Current consolidation at $1,145 is the pre-Q4 entry window.",
+    "preRunupTiming": "Jul 1 → Sep 29",
+    "preRunupPct": "+8–15%",
+    "postWin": {
+      "avgPct": 15,
+      "range": "+10% to +25%",
+      "note": "Q3 FY2026 (Jun 25): +14.55% AH on blowout beat. Prior cycle: Q3 FY2025 beat +20% AH. MU historically one of the biggest earnings movers in semiconductors on massive beats.",
+      "exampleDate": "Jun 2026"
+    },
+    "postLose": {
+      "avgPct": -10,
+      "range": "-5% to -20%",
+      "note": "Q2 FY2026 (Mar 2026): beat but -4%+ on guidance concerns. Any Q4 revenue miss vs $50B guide = significant de-rating given the run-up.",
+      "exampleDate": "Mar 2026"
+    },
+    "spotSizing": {
+      "pct": 6,
+      "reason": "High conviction: HBM4 fully booked 2026-2027, 16 take-or-pay agreements, +37% upside to post-earnings consensus, Vera Rubin supply happening NOW. Size 6% as Core Holding; reduce if China export risk escalates."
+    },
+    "stopPreCatalyst": { "pct": -11, "price": 1020, "note": "Below pre-earnings base = thesis changed on China restrictions or Samsung qualification" },
+    "stopPostCatalyst": { "pct": -12, "note": "If Q4 revenue <$49B or guidance cut below $50B for Q1 FY2027, exit within 2 sessions" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "MU",
+      "event": "Q3 FY2026 blowout earnings — revenue quadrupled YoY",
+      "date": "Jun 2026",
+      "movePct": 15,
+      "days": 1,
+      "outcome": "good",
+      "note": "Q3 FY2026 on Jun 25: $41.5B revenue vs $35.7B estimate (+16.2%), EPS $25.11 vs $20.49 (+22.6%). Stock +14.55% AH. Established new earnings baseline for Q4 $50B guide."
+    },
+    {
+      "ticker": "MU",
+      "event": "Prior AI memory supercycle — DRAM boom Q3-Q4 FY2025",
+      "date": "Q4 2025",
+      "movePct": 20,
+      "days": 5,
+      "outcome": "good",
+      "note": "Earlier in the AI memory supercycle, MU delivered +20% post-earnings moves when HBM3E supply-demand inflection became clear. HBM4 ramp today is the next step-change."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Micron Q3 FY2026 Record Results — Revenue $41.5B, Cantor Raises Target to $2,000",
+    "url": "https://investors.micron.com/news-releases/news-release-details/micron-technology-inc-reports-record-results-third-quarter",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://investors.micron.com/news-releases/news-release-details/micron-technology-inc-reports-record-results-third-quarter",
+    "https://finance.yahoo.com/news/micron-sold-2026-hbm-us-231248051.html",
+    "https://www.fool.com/investing/2026/06/29/prediction-micron-technology-stock-is-going-to-390/",
+    "https://www.benzinga.com/quote/MU/analyst-ratings",
+    "https://www.cnbc.com/2026/06/24/micron-mu-earnings-report-q3-2026.html",
+    "https://www.trefis.com/stock/mu/articles/600487/structural-risks-to-watch-for-mu-stock-over-the-next-6-months/2026-05-27"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Micron ทำ Q3 FY2026 blowout (25 มิ.ย.): revenue $41.5B (+16% vs estimate), EPS $25.11 (+23%) — revenue เพิ่ม 4x YoY consensus หลัง earnings ปรับขึ้นสู่ $1,564 avg → upside +37% Q4 guide $50B + $31 EPS; HBM4 ขายหมดถึงปี 2027 Q4 earnings 29 ก.ย. เป็น catalyst ถัดไป",
+      "priceNote": "Consolidate หลัง earnings spike $1,199 — post-earnings consensus $1,564 = upside +37%",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "HBM4 Revenue Ramp — Vera Rubin Supply", "description": "Micron เป็น HBM4 supplier หลักสำหรับ NVIDIA Vera Rubin ที่ ship อยู่ขณะนี้ >$1B HBM4 แล้วใน Q3" },
+        { "name": "รายงาน Q4 FY2026", "description": "Guide $50B ± $1B / $31 EPS ± $1; beat bar >$51B" },
+        { "name": "Take-or-Pay Strategic Agreements", "description": "16 agreements, 14 กับ minimum $100B+ contracted — de-risk AI memory cycle" }
+      ],
+      "risks": [
+        "Oversupply 2027-2028 — MU+Samsung+SK Hynix เพิ่ม capacity พร้อมกัน",
+        "Export controls จีน — BIS enforcement + Match Act",
+        "Samsung HBM4 comeback — ถ้า qualify ลด Micron exclusivity",
+        "Peak margin — Q4 guide บอก 'rate of price increase ชะลอ'",
+        "Cyclical re-rating — ก่อน FY2027 EPS จะ materialize"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed rate 3.5-3.75%; AI memory demand structural + contracted — ทนทานต่อ rate moves",
+        "inflationNote": "PCE 3.4%; DRAM/NAND pricing ขับเคลื่อนด้วย supply/demand ไม่ใช่ inflation",
+        "sectorImpact": "HBM4 sold out 2026-2027; ความเสี่ยงระยะยาวคือ oversupply cycle 2027-2028",
+        "summary": "MEDIUM — demand แข็งแกร่ง แต่ oversupply 2027 + geopolitical risk เป็น tail risk"
+      },
+      "entryStrategy": {
+        "verdict": "ซื้อ post-earnings consolidation — Q3 blowout recalibrate targets ขึ้น $1,564 avg HBM4 supply ให้ NVIDIA Vera Rubin เกิดขึ้น NOW; Q4 $50B guide = re-rating 29 ก.ย.",
+        "entryLevels": [
+          { "note": "ปัจจุบัน — consolidation จาก $1,199 spike", "timing": "ตอนนี้" },
+          { "note": "โซน dip ก่อน Q4 earnings", "timing": "ถ้าราคาย่อ" },
+          { "note": "China export shock / oversupply fear", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "กรณีฐาน — Q4 in-line $50B guide" },
+        "tp2": { "note": "กรณีดี — Q4 blowout + FY2027 re-rate" },
+        "tp3": { "note": "Moon — FY2027 $149 EPS DCF ตาม Motley Fool" },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า pre-earnings base",
+          "hardNote": "Oversupply shock + Samsung qualify + China ban",
+          "rrNote": "Stop แคบ vs TP2",
+          "rrWarning": "R/R ดี — earnings blowout สร้าง support floor ใหม่"
+        }
+      },
+      "estimateDates": [
+        { "event": "รายงาน Q4 FY2026", "note": "Guide $50B / $31 EPS; beat bar >$51B หรือ $32+ EPS" },
+        { "event": "HBM4 Full-Year Ramp", "note": "2026 HBM sold out ทั้งปี; orders extend ถึง 2028" }
+      ]
+    }
+  }
+}
