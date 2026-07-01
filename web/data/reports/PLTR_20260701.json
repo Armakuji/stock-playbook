@@ -1,0 +1,230 @@
+{
+  "ticker": "PLTR",
+  "companyName": "Palantir Technologies, Inc.",
+  "companyDescription": "AI Operating System for Government + Enterprise · AIP boot camps → 75% conversion · Pentagon + DHS + USDA AI contract dominance",
+  "exchange": "NYSE",
+  "generatedAt": "2026-07-01T00:00:00.000Z",
+  "price": 117.34,
+  "priceChange": 1.2,
+  "priceNote": "Down 43% from $207 52-wk high — recovering off $106 low after DHS $1B + NVIDIA partnership news",
+  "marketCap": "$278B",
+  "sector": "Technology / AI Software",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 76,
+  "summary": "Palantir posted its 11th consecutive quarter of accelerating revenue (+85% YoY Q1) backed by a DHS $1B blanket AI contract, Pentagon program-of-record status, and USDA $300M deal. Analyst consensus $182 implies +57% upside from a -43% drawdown low. Q2 earnings Aug 10 is the next catalyst — but the 3-consecutive sell-the-news pattern demands caution on sizing.",
+  "catalysts": [
+    {
+      "icon": "🏛️",
+      "name": "DHS $1B AI Blanket Purchase Agreement",
+      "description": "5-year DHS BPA covering CBP, FEMA, ICE and all sub-agencies. No separate competitive bids needed — revenue ramp begins now with each task order. Largest government AI contract in company history.",
+      "urgencyLabel": "NOW",
+      "dateBadge": "H1 2026",
+      "catalystDate": "2026-06-01",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "Guide: $1.797–1.801B revenue; consensus $1.81B. Watch US commercial >$650M (Q1=$595M) and FY guide raise above $7.65B for a sustained rally.",
+      "urgencyLabel": "40 DAYS",
+      "dateBadge": "Aug 10, 2026",
+      "catalystDate": "2026-08-10",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🤝",
+      "name": "NVIDIA Sovereign AI Partnership",
+      "description": "Joint initiative to deliver intelligent sovereign AI environments with NVIDIA AI + Nemotron models. Expands AIP addressable market to non-US government sovereign cloud buyers globally.",
+      "urgencyLabel": "RECENT",
+      "dateBadge": "Jun 2026",
+      "catalystDate": "2026-06-15",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🌾",
+      "name": "USDA $300M Blanket Purchase Agreement",
+      "description": "National Farm Security Action Plan — AIP across all USDA agencies. Revenue recognition begins Q2–Q3 2026.",
+      "urgencyLabel": "SIGNED",
+      "dateBadge": "Apr 22, 2026",
+      "catalystDate": "2026-04-22",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Sell-the-news pattern — 3 consecutive earnings beats produced -7% to -12% day-of reactions (most recent: Q1 -6.93%)",
+    "Extreme valuation — 260x forward PE, 102x P/S; bears argue fair value $40–70; any growth deceleration = violent compression",
+    "UK/EU regulatory risk — Metropolitan Police £50M contract blocked Jun 12; NHS under scrutiny; European market may close",
+    "Expectations bar sky-high — Polymarket had 94% beat odds for Q1; Q2 needs >$1.85B guide lift to get a positive reaction",
+    "Hyperscaler competition — Azure AI, AWS Bedrock, Databricks all building enterprise AI tools eroding PLTR's moat",
+    "Government budget risk — US contracts ~55% of revenue; DOGE reviews + CR uncertainty can delay new task orders",
+    "Michael Burry 'sand castle' call (June 4) went viral — elevated retail sentiment risk"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q2 2026 Earnings",
+      "dateRange": "Aug 10, 2026",
+      "note": "Guide $1.797–1.801B; consensus $1.81B — real beat bar is >$1.85B + FY guide raise",
+      "est": "est. $1.81B rev / $0.35 EPS",
+      "highlight": "yellow"
+    },
+    {
+      "event": "FY2026 Revenue Guidance",
+      "dateRange": "Current: $7.65–7.66B",
+      "note": "US Commercial ≥$3.224B (+120% YoY) — watch QoQ acceleration",
+      "est": "$7.65B FY guide",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -26, "price": 87 },
+    { "label": "Base", "color": "yellow", "pct": 18, "price": 138 },
+    { "label": "Bull", "color": "green", "pct": 41, "price": 165 },
+    { "label": "Moon", "color": "purple", "pct": 79, "price": 210 }
+  ],
+  "analystTargets": [
+    { "firm": "WallStreetZen 1Y Consensus", "target": 189, "rating": "Buy" },
+    { "firm": "S&P Global Consensus (34 analysts)", "target": 183, "rating": "Buy" },
+    { "firm": "Yahoo Finance Bullish", "target": 161, "rating": "Buy" },
+    { "firm": "Bear case", "target": 70, "rating": "Sell" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed at 3.50–3.75%; Warsh removed easing bias Jun 17. Rate-sensitive high-multiple software at risk from any hike signal at Jul 29 FOMC.",
+    "inflationNote": "Core PCE 3.4% (3-yr high). Government contracts (55% of revenue) are inflation-insulated. Commercial pipeline could slow if macro deteriorates.",
+    "sectorImpact": "High-multiple software most sensitive to rate moves. PLTR's 260x PE compresses rapidly on any Fed hawkishness. Government revenue is secular and less cyclical.",
+    "summary": "MEDIUM — Fed hawkish tilt pressures 260x PE. Government revenue anchor (~55%) provides partial insulation. Commercial pipeline depends on enterprise AI adoption continuing."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 117, "note": "Current — off $106 52-wk low support", "timing": "Now (small position)" },
+      { "label": "Entry 2", "level": 105, "rangeMax": 110, "note": "Prior 52-wk low zone — ideal pre-earnings add", "timing": "On any pre-earnings dip", "preferred": true },
+      { "label": "Entry 3", "level": 92, "note": "Deep macro selloff — extreme entry", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 138, "pct": 17.6, "note": "Base case — recover to pre-selloff level" },
+    "tp2": { "price": 165, "pct": 40.6, "note": "Bull case — Q2 blowout + commercial inflection" },
+    "tp3": { "price": 210, "pct": 79.0, "note": "Moon — AI OS infrastructure re-rating to prior ATH zone", "moon": true },
+    "stopLoss": {
+      "tight": 103,
+      "tightPct": -12,
+      "tightNote": "Below 52-wk low support = thesis challenged",
+      "hard": 88,
+      "hardPct": -25,
+      "hardNote": "UK/EU ban spreads + commercial deceleration",
+      "riskReward": "2.8 : 1",
+      "rrNote": "Tight stop vs TP2",
+      "rrWarning": "Keep sizing small (3–4%) given sell-the-news risk"
+    },
+    "verdict": "Small speculative position at $117 — DHS/USDA/Pentagon contracts de-risk the fundamental story. Size small and add pre-earnings dip. The sell-the-news pattern means Q2 beat ≠ stock goes up.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "PLTR historically builds 8–15% pre-earnings anticipation on government contract news flow. DHS + NVIDIA partnership already helped recover from $106 low.",
+    "preRunupTiming": "Now → Aug 10",
+    "preRunupPct": "+5–12%",
+    "postWin": {
+      "avgPct": 8,
+      "range": "+1% to +25%",
+      "note": "Historical 7-quarter avg +7.5% on beats, but last 3 quarters averaged -8.8% despite beats. Sustainable upside requires >$1.85B guidance lift or US commercial >$700M.",
+      "exampleDate": "Q3 2024"
+    },
+    "postLose": {
+      "avgPct": -9,
+      "range": "-7% to -15%",
+      "note": "Q4 2025 beat but -11.62%; Q1 2026 beat but -6.93%. Pattern = priced-to-perfection.",
+      "exampleDate": "Q4 2025"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "High upside potential (+57% consensus) but extreme valuation (260x PE) + sell-the-news pattern. Limit to 3–4% of portfolio. Scale in on dips, not a lump-sum play."
+    },
+    "stopPreCatalyst": { "pct": -12, "price": 103, "note": "Below prior 52-wk low = demand signal failed" },
+    "stopPostCatalyst": { "pct": -10, "note": "If Q2 guide <$1.8B or US commercial <$620M, exit within 2 sessions" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "PLTR",
+      "event": "Q3 2024 earnings — first $1B quarterly commercial milestone signal",
+      "date": "Nov 2024",
+      "movePct": 23,
+      "days": 5,
+      "outcome": "good",
+      "note": "Q3 2024 was one of the last sustained post-earnings rallies before the sell-the-news pattern emerged. Revenue acceleration + first large commercial contracts = +23% in 5 days."
+    },
+    {
+      "ticker": "SNOW",
+      "event": "FY2025 Q4 earnings — AI platform adoption inflection beat",
+      "date": "Mar 2025",
+      "movePct": 18,
+      "days": 3,
+      "outcome": "good",
+      "note": "Enterprise AI platform inflection beat — comparable to PLTR's AIP boot camp conversion flywheel. Beat + guided revenue acceleration produced sustained 3-day rally."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Palantir Secures $1B DHS Blanket Purchase Agreement — Largest Government AI Contract",
+    "url": "https://finance.yahoo.com/news/billion-dollar-palantir-contract-gives-213500997.html",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://finance.yahoo.com/news/billion-dollar-palantir-contract-gives-213500997.html",
+    "https://www.cnbc.com/2026/04/22/palantir-inks-300-million-deal-with-usda-to-safeguard-food-supply.html",
+    "https://www.military.com/feature/2026/03/22/pentagon-expands-palantirs-role-ai-contract.html",
+    "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000026/a2026q1ex991pressrelease.htm",
+    "https://www.marketbeat.com/stocks/NASDAQ/PLTR/forecast/",
+    "https://247wallst.com/investing/2026/05/07/palantir-just-beat-earnings-and-dropped-this-has-happened-before-heres-what-came-next/",
+    "https://stockanalysis.com/stocks/pltr/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Palantir ทำ revenue growth +85% YoY ไตรมาสที่ 11 ติดต่อกัน หนุนด้วยสัญญา DHS $1B (AI ทุกหน่วยงาน), Pentagon program-of-record, และ USDA $300M consensus นักวิเคราะห์ $182 = upside +57% จาก drawdown -43% Q2 earnings 10 ส.ค. เป็น catalyst ถัดไป",
+      "priceNote": "ย่อ 43% จาก high $207 — ฟื้นตัวจาก $106 หลัง DHS + NVIDIA partnership",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "DHS $1B AI Blanket Purchase Agreement", "description": "BPA 5 ปีครอบคลุมทุกหน่วยงาน DHS — revenue ramp เริ่มทันที" },
+        { "name": "รายงานผล Q2 2026", "description": "Guide $1.8B; ดู US Commercial >$650M สำหรับ bull signal" },
+        { "name": "NVIDIA Sovereign AI Partnership", "description": "ขยาย AIP ไปยังตลาด sovereign cloud ทั่วโลก" },
+        { "name": "USDA $300M Blanket Purchase", "description": "AIP ทั่วทุกหน่วยงาน USDA — revenue ใน Q2–Q3" }
+      ],
+      "risks": [
+        "Sell-the-news pattern — 3 ไตรมาสล่าสุด beat แต่ราคาปิดลง -7% ถึง -12%",
+        "Valuation สูงสุดใน software — 260x forward PE; bear case $40–70",
+        "UK/EU regulatory risk — Met Police contract ถูกบล็อก; NHS ถูกตรวจสอบ",
+        "Bar สูงเกิน — ต้องการ guide >$1.85B ถึงจะได้ผลตอบแทนบวก",
+        "Competition จาก Azure AI, AWS Bedrock, Databricks"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed rate 3.5-3.75%; Warsh ถอน easing bias — 260x PE ไวมากต่อ rate ขึ้น",
+        "inflationNote": "PCE core 3.4%; สัญญา government (55%) ทนต่อ inflation แต่ commercial อาจชะลอ",
+        "sectorImpact": "High-multiple software กดดันสูงจาก rate hawkish tilt",
+        "summary": "MEDIUM — government contracts ป้องกันบางส่วน แต่ valuation เสี่ยงถ้า Fed ส่งสัญญาณขึ้น"
+      },
+      "entryStrategy": {
+        "verdict": "Position เล็กที่ $117 — สัญญา DHS/USDA/Pentagon ลด fundamental risk DCA เพิ่มถ้าย่อก่อน earnings ระวัง sell-the-news",
+        "entryLevels": [
+          { "note": "ปัจจุบัน — ออกจาก 52-wk low", "timing": "ตอนนี้ (position เล็ก)" },
+          { "note": "โซน 52-wk low เดิม — จุด add ก่อน earnings", "timing": "ถ้าราคาย่อ" },
+          { "note": "Deep selloff เท่านั้น", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "กรณีฐาน — คืนสู่ระดับก่อน selloff" },
+        "tp2": { "note": "กรณีดี — Q2 blowout + commercial inflection" },
+        "tp3": { "note": "Moon — AI OS infrastructure re-rating ถึง ATH เดิม" },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า 52-wk low = thesis เปลี่ยน",
+          "hardNote": "UK/EU ban ขยาย + commercial ชะลอ",
+          "rrNote": "Stop แคบ vs TP2",
+          "rrWarning": "Keep sizing เล็ก 3-4% ระวัง sell-the-news"
+        }
+      },
+      "estimateDates": [
+        { "event": "รายงาน Q2 2026", "note": "Guide $1.797–1.801B; bar จริง >$1.85B + FY guide raise" },
+        { "event": "FY2026 Revenue Guide", "note": "US Commercial ≥$3.224B (+120% YoY) — ดู QoQ acceleration" }
+      ]
+    }
+  }
+}

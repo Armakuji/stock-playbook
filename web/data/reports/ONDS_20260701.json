@@ -1,0 +1,227 @@
+{
+  "ticker": "ONDS",
+  "companyName": "Ondas Inc.",
+  "companyDescription": "Multi-domain autonomous defense platform · Sentrycs C-UAS + Lockheed Sanctum · $390M FY2026 guidance · $457M backlog",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-01T00:00:00.000Z",
+  "price": 8.27,
+  "priceChange": 5.6,
+  "priceNote": "52% below 52-wk high $15.28 — Sentrycs+Lockheed integration ongoing; Cyberhawk acquisition closing Q3",
+  "marketCap": "$4.29B",
+  "sector": "Defense Technology / Autonomous Drones",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 74,
+  "summary": "Ondas transformed from a small SDR company into a multi-domain autonomous defense platform through 6 acquisitions in 2026. Q1 2026 revenue was $50.1M (+1,079% YoY), FY2026 guided at $390M. Sentrycs C-UAS is now integrated into Lockheed Martin's Sanctum platform and 8 analyst consensus targets average $19.83 — implying +140% upside. Q2 already has $150M+ in orders with Q2 earnings mid-August being the next major catalyst.",
+  "catalysts": [
+    {
+      "icon": "🛡️",
+      "name": "Sentrycs + Lockheed Martin Sanctum Integration",
+      "description": "Sentrycs' Cyber-over-RF C-UAS tech integrated into Lockheed's Sanctum C2 platform (announced Jun 23). Prime defense validator — now part of Lockheed's standard counter-drone architecture.",
+      "urgencyLabel": "ACTIVE",
+      "dateBadge": "Jun 23, 2026",
+      "catalystDate": "2026-06-23",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "✈️",
+      "name": "Cyberhawk Acquisition Close",
+      "description": "$125M acquisition of Cyberhawk — AI-enabled drone inspection for critical infrastructure (power lines, pipelines, telecom towers). Closes Q3 2026. Opens non-defense revenue stream.",
+      "urgencyLabel": "Q3 2026",
+      "dateBadge": "Q3 2026",
+      "catalystDate": "2026-09-01",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "Q2 orders already $150M+ (vs Q1 $50.1M). $390M FY guidance requires back-half ramp — Q2 report will show if revenue is converting from backlog. Watch gross margin (~49% in Q1).",
+      "urgencyLabel": "~45 DAYS",
+      "dateBadge": "~Aug 11, 2026",
+      "catalystDate": "2026-08-11",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🌍",
+      "name": "$4.3B DoD/NATO Pipeline",
+      "description": "45+ global program submissions; 1M active C-UAS programs in 2026 per company data. LADOS C2 debuted at Eurosatory 2026 — potential NATO contract anchor.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-12-01",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Severe share dilution — shares outstanding grew 352% in 12 months; ATM and acquisition stock payments ongoing",
+    "Negative operating cash flow — burned $38.7M in FY2025; Q1 2026 shows improvement but still pre-positive FCF",
+    "Acquisition integration risk — 6 acquisitions in 2026 (Sentrycs, Mistral, World View, Omnisys, Cyberhawk) creates cultural + systems complexity",
+    "Defense budget risk — DOGE + Congressional reconciliation could slow DoD procurement timelines",
+    "Revenue concentration — $390M guidance depends on handful of large contracts; program delays = guidance miss",
+    "Prospectus for resale of shares filed — overhang from recent acquisition-linked equity"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q2 2026 Earnings",
+      "dateRange": "~Aug 11, 2026",
+      "note": "Q2 orders already $150M+; key read on $390M FY guidance conversion and gross margin",
+      "est": "est. -$0.06 EPS",
+      "highlight": "yellow"
+    },
+    {
+      "event": "Cyberhawk Acquisition Close",
+      "dateRange": "Q3 2026",
+      "note": "$125M cash deal — adds AI drone inspection for critical infrastructure",
+      "est": "$125M deal",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -35, "price": 5 },
+    { "label": "Base", "color": "yellow", "pct": 60, "price": 13 },
+    { "label": "Bull", "color": "green", "pct": 140, "price": 20 },
+    { "label": "Moon", "color": "purple", "pct": 200, "price": 25 }
+  ],
+  "analystTargets": [
+    { "firm": "HC Wainwright", "target": 25, "rating": "Buy" },
+    { "firm": "Consensus (8 analysts)", "target": 20, "rating": "Strong Buy" },
+    { "firm": "Low target", "target": 18, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Fed at 3.50–3.75%; government defense contracts are rate-insensitive. ONDS revenue is DoD/NATO contract-driven — decoupled from rate cycle.",
+    "inflationNote": "Core PCE 3.4% (3-yr high); defense contract inflation adjustments protect margins. Input cost (electronics, components) is the primary inflation exposure.",
+    "sectorImpact": "Iran conflict + Ukraine + NATO C-UAS spending = secular tailwind for ONDS. Defense budgets are rising globally — DOGE risk is DoD-specific program delays, not sector contraction.",
+    "summary": "LOW — government contract base is rate/inflation-insulated. Primary risks are execution (6 acquisitions) and dilution, not macro."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 8.27, "note": "Current — 46% off 52-wk high, post-consolidation entry", "timing": "Now" },
+      { "label": "Entry 2", "level": 7.00, "rangeMax": 7.50, "note": "Pre-Q2 earnings dip zone", "timing": "On any pullback", "preferred": true },
+      { "label": "Entry 3", "level": 5.50, "note": "Guidance miss or dilution fear capitulation", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 13, "pct": 57.2, "note": "Base — Q2 beat confirms $390M trajectory" },
+    "tp2": { "price": 20, "pct": 141.8, "note": "Bull — analyst consensus target, Lockheed/DoD orders scale" },
+    "tp3": { "price": 25, "pct": 202.3, "note": "Moon — HC Wainwright $25, NATO mega-contract + $4.3B pipeline converts", "moon": true },
+    "stopLoss": {
+      "tight": 6.50,
+      "tightPct": -21,
+      "tightNote": "Below Jun support = dilution fear escalating",
+      "hard": 4.80,
+      "hardPct": -42,
+      "hardNote": "Guidance cut + acquisition integration failure",
+      "riskReward": "3.2 : 1",
+      "rrNote": "Tight stop vs TP2",
+      "rrWarning": "High upside but SPECULATIVE — size accordingly (3–5%)"
+    },
+    "verdict": "Buy the consolidation — Q1 +1,079% YoY revenue and $390M FY guide is transformative. Sentrycs-Lockheed integration validates the thesis. Q2 will prove if orders convert to revenue at scale. Size small (3–5%) given dilution risk.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "Defense contract announcements and partnership confirmations (Lockheed, Palantir, World View) historically drive 10-20% single-session moves in ONDS. The stock has been in consolidation post-$15 high — each new contract = re-rating pop.",
+    "preRunupTiming": "Now → Aug 11 earnings",
+    "preRunupPct": "+10–25%",
+    "postWin": {
+      "avgPct": 22,
+      "range": "+10% to +27%",
+      "note": "Q1 2026 earnings beat sent stock +26.5% next day. Lockheed partnership announcement: +15% near-term. Defense contract announcements: +10-20% on the day.",
+      "exampleDate": "May 2026"
+    },
+    "postLose": {
+      "avgPct": -20,
+      "range": "-15% to -35%",
+      "note": "Revenue miss vs $390M guidance or dilutive equity offering = significant de-rating. Stock already -46% from 52-wk high shows the downside pattern.",
+      "exampleDate": "Jun 2026 (pullback from $15.28)"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "High analyst consensus upside (+140%) but severe dilution risk (352% share count increase) + pre-FCF positive. Speculative sizing — 3-4% max; scale in on dips."
+    },
+    "stopPreCatalyst": { "pct": -21, "price": 6.50, "note": "Below Jun support = dilution announcement or contract delay" },
+    "stopPostCatalyst": { "pct": -20, "note": "If Q2 earnings show revenue below $80M or $390M FY guide cut, exit within 2 sessions" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "ONDS",
+      "event": "Q1 2026 Earnings — Revenue +1,079% YoY",
+      "date": "May 2026",
+      "movePct": 27,
+      "days": 1,
+      "outcome": "good",
+      "note": "Q1 2026 blowout sent stock +26.5% next day. Revenue of $50.1M matched all of FY2025 in a single quarter. Q2 2026 sets up similarly with $150M+ in orders already booked."
+    },
+    {
+      "ticker": "AXON",
+      "event": "Axon enterprise defense contract ramp — FY2023-2024",
+      "date": "Q3 2023",
+      "movePct": 35,
+      "days": 30,
+      "outcome": "good",
+      "note": "Axon's revenue tripling via law enforcement + DoD contract wins mirrors ONDS's ramp. Both are technology companies pivoting to government/defense with multi-year contract anchors."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Ondas Sentrycs Partners with Lockheed Martin to Counter Evolving Aerial Threats",
+    "url": "https://seekingalpha.com/news/4606057-ondass-sentrycs-partners-with-lockheed-martin-to-counter-evolving-aerial-threats",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://ir.ondas.com/press-releases/detail/306/ondas-reports-record-first-quarter-2026-financial-results",
+    "https://seekingalpha.com/news/4606057-ondass-sentrycs-partners-with-lockheed-martin-to-counter-evolving-aerial-threats",
+    "https://247wallst.com/investing/2026/03/09/ondas-just-unlocked-1-billion-in-prime-defense-contracts/",
+    "https://ir.ondas.com/press-releases/detail/312/ondas-to-acquire-cyberhawk-expanding-into-critical",
+    "https://www.marketbeat.com/stocks/NASDAQ/ONDS/forecast/",
+    "https://www.stocktitan.net/news/ONDS/ondas-secures-over-30-million-in-new-orders-in-may-bringing-q2-to-akja4fz4kjft.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Ondas เปลี่ยนจาก SDR เล็กๆ เป็น multi-domain autonomous defense platform ผ่านการซื้อกิจการ 6 บริษัทในปี 2026 Q1 2026 revenue +1,079% YoY ($50.1M); FY guide $390M Sentrycs integrate เข้า Lockheed Martin Sanctum แล้ว consensus นักวิเคราะห์ $20 = upside +141%",
+      "priceNote": "ต่ำกว่า 52-wk high 46% — Sentrycs+Lockheed integration ดำเนินอยู่; Cyberhawk acquisition ปิดดีล Q3",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "Sentrycs + Lockheed Martin Sanctum Integration", "description": "C-UAS tech ของ Sentrycs เข้าสู่ Lockheed Sanctum C2 platform — validator สำคัญจาก prime contractor" },
+        { "name": "Cyberhawk Acquisition ปิดดีล", "description": "$125M ดีล — AI drone inspection โครงสร้างพื้นฐาน ปิดดีล Q3 2026" },
+        { "name": "รายงาน Q2 2026", "description": "Q2 orders $150M+ แล้ว; ดูการ convert จาก backlog สู่ revenue" },
+        { "name": "$4.3B DoD/NATO Pipeline", "description": "45+ global submissions; LADOS C2 debut ที่ Eurosatory 2026" }
+      ],
+      "risks": [
+        "Dilution หนัก — shares เพิ่มขึ้น 352% ใน 12 เดือน; ATM + acquisition equity",
+        "ยังขาดทุน operating cash flow — ปรับตัวดีขึ้นแต่ยังติดลบ",
+        "Integration risk — 6 acquisitions ในปีเดียว",
+        "Defense budget ไม่แน่นอน — DOGE + CR ชะลอ procurement",
+        "Revenue concentration — $390M guide depend on ไม่กี่ contracts ใหญ่"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed rate 3.5-3.75%; สัญญา government ไม่ sensitive ต่อ rate",
+        "inflationNote": "PCE core 3.4%; defense contracts มี inflation adjustment; risk หลักคือ electronics cost",
+        "sectorImpact": "ความขัดแย้งอิหร่าน + Ukraine + NATO = tailwind C-UAS spending ระยะยาว",
+        "summary": "LOW — government contract base ป้องกัน rate/inflation risk; ความเสี่ยงหลักคือ execution"
+      },
+      "entryStrategy": {
+        "verdict": "ซื้อ consolidation — Q1 +1,079% YoY + $390M guide transformative Sentrycs-Lockheed validate thesis Q2 จะพิสูจน์ว่า orders convert เป็น revenue ได้ไหม Size เล็ก 3-5% เพราะ dilution risk",
+        "entryLevels": [
+          { "note": "ปัจจุบัน — ย่อ 46% จาก high", "timing": "ตอนนี้" },
+          { "note": "โซน dip ก่อน Q2 earnings", "timing": "ถ้าราคาย่อ" },
+          { "note": "Miss guidance หรือ dilution capitulation", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "กรณีฐาน — Q2 beat ยืนยัน $390M trajectory" },
+        "tp2": { "note": "กรณีดี — analyst consensus target, Lockheed/DoD scale" },
+        "tp3": { "note": "Moon — HC Wainwright $25, NATO mega-contract" },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า Jun support = dilution announcement",
+          "hardNote": "Guidance cut + integration failure",
+          "rrNote": "Stop แคบ vs TP2",
+          "rrWarning": "SPECULATIVE — size 3-4% max"
+        }
+      },
+      "estimateDates": [
+        { "event": "รายงาน Q2 2026", "note": "Q2 orders $150M+; ดู revenue conversion จาก backlog" },
+        { "event": "Cyberhawk ปิดดีล", "note": "$125M AI drone inspection acquisition Q3" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "ticker": "NVDA",
+  "companyName": "NVIDIA Corporation",
+  "companyDescription": "AI GPU leader · Vera Rubin product cycle · CUDA ecosystem moat · Picks & shovels of the AI era",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-01T00:00:00.000Z",
+  "price": 200.09,
+  "priceChange": -0.8,
+  "priceNote": "15% off May ATH $235 — Vera Rubin shipments rolling out to hyperscalers NOW",
+  "marketCap": "$4.85T",
+  "sector": "Technology / Semiconductors",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 87,
+  "summary": "NVIDIA is actively shipping Vera Rubin GPUs to Microsoft, Google, Meta, and Amazon this month (July 2026), resolving the product-cycle overhang. The 15% pullback from the May ATH creates a compelling DCA entry: analyst consensus $303–309 implies +53% upside with Q2 FY27 earnings (Aug 26) as the next re-rating event.",
+  "catalysts": [
+    {
+      "icon": "🚀",
+      "name": "Vera Rubin — First Customer Shipments",
+      "description": "First Vera Rubin GPUs shipping to North American hyperscalers in July 2026. GPU integrates 336B transistors on TSMC 3nm + HBM4. Full volume ramp Q4 2026. Resolves product-cycle execution overhang immediately.",
+      "urgencyLabel": "NOW",
+      "dateBadge": "Jul 1, 2026",
+      "catalystDate": "2026-07-01",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "📊",
+      "name": "Q2 FY2027 Earnings",
+      "description": "Management guided $91B revenue; street at $91.7B. Beat bar = >$93B + guidance ≥$100B for a positive reaction. Vera Rubin revenue recognition begins flowing.",
+      "urgencyLabel": "57 DAYS",
+      "dateBadge": "Aug 26, 2026",
+      "catalystDate": "2026-08-26",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🌐",
+      "name": "ISC High Performance 2026 (Hamburg)",
+      "description": "NVIDIA unveiling Vera Rubin platform for scientific HPC; 35 European supercomputer deployments announced. Sentiment catalyst this week.",
+      "urgencyLabel": "THIS WEEK",
+      "dateBadge": "Jul 4, 2026",
+      "catalystDate": "2026-07-04",
+      "badgeColor": "green",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "China export controls — $17B revenue at risk; JPMorgan models $5.5–16B revenue headwind this cycle",
+    "Sell-the-news exhaustion — 3 consecutive earnings beats produced flat/negative day-of reactions",
+    "High expectations bar — $91B Q2 guide already priced; miss = -8% to -15% asymmetric downside",
+    "Vera Rubin supply chain — TSMC 3nm + HBM4 yield is the critical gating factor for Q3/Q4 recognition",
+    "AMD competition — AMD up 138% YTD vs NVDA underperformance; rotation risk into semis alternatives",
+    "AI capex rationalization — any hyperscaler pause in H2 2026 = severe guidance disappointment"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q2 FY2027 Earnings",
+      "dateRange": "Aug 26, 2026",
+      "note": "Revenue guide $91B / consensus $91.7B — true beat bar is $93B+ or guidance ≥$100B",
+      "est": "est. $91.7B rev / $2.08 EPS",
+      "highlight": "yellow"
+    },
+    {
+      "event": "Vera Rubin Volume Ramp",
+      "dateRange": "Q4 2026 (Oct–Jan)",
+      "note": "Full mass production with Foxconn/Quanta/Wistron — sets FY2028 revenue cadence",
+      "est": "H2 ramp confirmed",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -22, "price": 156 },
+    { "label": "Base", "color": "yellow", "pct": 15, "price": 230 },
+    { "label": "Bull", "color": "green", "pct": 35, "price": 270 },
+    { "label": "Moon", "color": "purple", "pct": 55, "price": 310 }
+  ],
+  "analystTargets": [
+    { "firm": "Baird", "target": 500, "rating": "Buy" },
+    { "firm": "MarketBeat Consensus (36 analysts)", "target": 309, "rating": "Strong Buy" },
+    { "firm": "TipRanks Consensus", "target": 299, "rating": "Strong Buy" },
+    { "firm": "Deutsche Bank", "target": 215, "rating": "Hold" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed at 3.50–3.75%; Warsh removed easing bias Jun 17. No rate cuts in 2026; 11% hike risk at Jul 29 FOMC.",
+    "inflationNote": "Core PCE 3.4% (3-year high); Iran conflict driving energy/oil spike. June CPI due Jul 14 — critical inflation read.",
+    "sectorImpact": "AI capex cycle driven by hyperscaler ROI compulsion — partially insulated from rate moves. Data center demand still accelerating despite macro headwinds.",
+    "summary": "MEDIUM — rate headwinds exist but AI infrastructure spend is structural. Risk spikes if Fed signals hike at Jul 29 (11% probability); buy the dip if that happens."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 200, "note": "Current price — 15% off ATH entry zone", "timing": "Now" },
+      { "label": "Entry 2", "level": 185, "rangeMax": 190, "note": "Pre-earnings dip zone / macro fear spike", "timing": "On any pre-earnings dip", "preferred": true },
+      { "label": "Entry 3", "level": 165, "note": "200-DMA support — China export worst case", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 230, "pct": 15.0, "note": "Base case — re-test ATH" },
+    "tp2": { "price": 270, "pct": 35.0, "note": "Bull case — post-Q2 re-rate on strong guide" },
+    "tp3": { "price": 310, "pct": 55.0, "note": "Moon — Vera Rubin volume ramp + FY2028 visibility", "moon": true },
+    "stopLoss": {
+      "tight": 178,
+      "tightPct": -11,
+      "tightNote": "Below $180 support = thesis shift",
+      "hard": 155,
+      "hardPct": -22,
+      "hardNote": "China export escalation + Q2 guide cut",
+      "riskReward": "3.2 : 1",
+      "rrNote": "Tight stop vs TP2",
+      "rrWarning": "Excellent R/R at 15% pullback entry"
+    },
+    "verdict": "DCA into the 15% pullback — Vera Rubin shipping NOW resolves the biggest product-cycle overhang. Aug 26 earnings is the next re-rating event with 53% upside to analyst consensus.",
+    "approach": "DCA"
+  },
+  "catalystSpot": {
+    "catalystType": "product_launch",
+    "preRunup": "Product cycle confirmations (new GPU ramp to hyperscalers) historically drive 8–15% pre-catalyst moves in AI semis before the next earnings read. Current $200 price is the pre-runup entry window.",
+    "preRunupTiming": "Now → Aug 26",
+    "preRunupPct": "+8–15%",
+    "postWin": {
+      "avgPct": 5,
+      "range": "+2% to +15%",
+      "note": "Recent NVDA earnings beats produced muted/negative reactions (-3% to -5% last 3 quarters). True upside requires guidance >$95B or Vera Rubin demand exceeding supply.",
+      "exampleDate": "Dec 2023"
+    },
+    "postLose": {
+      "avgPct": -10,
+      "range": "-8% to -15%",
+      "note": "Q4 FY2026 (Feb 2026) beat produced -5%; Q2 guide miss vs $91B floor = asymmetric downside.",
+      "exampleDate": "Feb 2026"
+    },
+    "spotSizing": {
+      "pct": 7,
+      "reason": "High conviction: Vera Rubin shipping + 36 Buy analysts + 53% consensus upside. Limit to 7% given sell-the-news risk at Aug earnings. Add on dips toward $185."
+    },
+    "stopPreCatalyst": { "pct": -11, "price": 178, "note": "Below $180 = export escalation or demand collapse signal" },
+    "stopPostCatalyst": { "pct": -12, "note": "If Q2 guide <$91B or Vera Rubin ramp delayed, exit within 2 sessions" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "NVDA",
+      "event": "Blackwell production ramp confirmed — Q3 FY2025 earnings",
+      "date": "Nov 2024",
+      "movePct": 24,
+      "days": 30,
+      "outcome": "good",
+      "note": "NVDA ran +24% in the 4 weeks after Q3 FY25 earnings confirmed Blackwell production ramp — directly comparable to Vera Rubin shipments today confirming the next product cycle."
+    },
+    {
+      "ticker": "AMD",
+      "event": "MI300X first hyperscaler shipments confirmed",
+      "date": "Jan 2024",
+      "movePct": 18,
+      "days": 21,
+      "outcome": "good",
+      "note": "AMD ran +18% in 3 weeks when MI300X hyperscaler deliveries were confirmed — product cycle resolution catalyst in the AI semiconductor sector."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "NVIDIA Vera Rubin First Shipments Rolling Out in July to AI Customers",
+    "url": "https://wccftech.com/nvidia-squashes-vera-rubin-rumors-first-shipments-rolling-out-in-july-to-ai-customers/",
+    "date": "Jul 2026"
+  },
+  "sources": [
+    "https://wccftech.com/nvidia-squashes-vera-rubin-rumors-first-shipments-rolling-out-in-july-to-ai-customers/",
+    "https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory",
+    "https://www.marketbeat.com/stocks/NASDAQ/NVDA/forecast/",
+    "https://www.tipranks.com/stocks/nvda/forecast",
+    "https://www.benzinga.com/markets/tech/26/05/52699992/nvidia-earnings-impact-tracker-history-hidden-bull-trap-may-2026",
+    "https://www.gurufocus.com/news/8892851/new-us-export-controls-impact-nvidia-nvda-and-amd-amd-ai-chips",
+    "https://www.trendforce.com/news/2026/06/01/news-vera-rubin-buildout-nvidia-reportedly-pushes-tsmc-above-20-revenue-share-power-and-cooling-suppliers-benefit/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "NVIDIA กำลังส่งมอบ GPU Vera Rubin ให้ hyperscalers รายใหญ่ใน ก.ค. 2026 เป็นครั้งแรก แก้ไข overhang ด้าน product cycle ราคาย่อ 15% จาก ATH สร้างจุดซื้อที่น่าสนใจก่อน Q2 Earnings วันที่ 26 ส.ค. consensus นักวิเคราะห์ $303 = upside +53%",
+      "priceNote": "ย่อ 15% จาก ATH $235 หลัง Q1 sell-the-news — Vera Rubin เริ่มส่งมอบแล้ว",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "Vera Rubin — ส่งมอบให้ลูกค้ารายแรก", "description": "GPU Vera Rubin ส่งถึง Microsoft, Google, Meta, Amazon ใน ก.ค. 2026 ขจัดความเสี่ยง product cycle overhang" },
+        { "name": "รายงานผล Q2 FY2027", "description": "คาด revenue $91B; ดู guidance ≥$100B เป็น trigger re-rating" },
+        { "name": "ISC High Performance 2026 (Hamburg)", "description": "NVIDIA โชว์ Vera Rubin สำหรับ HPC และ AI วิทยาศาสตร์ สัปดาห์นี้" }
+      ],
+      "risks": [
+        "Export controls จีน — $17B revenue เสี่ยง; JPMorgan คาด headwind $5.5–16B",
+        "Sell-the-news pattern — 3 ไตรมาสล่าสุด beat แต่ราคาปิดลบ",
+        "Bar สูงมาก — $91B guide ถูก price in แล้ว; miss = -8 ถึง -15% asymmetric",
+        "Supply chain Vera Rubin — yield TSMC 3nm + HBM4 เป็น bottleneck",
+        "AMD แข่งขัน — AMD ขึ้น 138% YTD vs NVDA underperform"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed rate 3.5-3.75%; Warsh ถอน easing bias 17 มิ.ย. ไม่ลดดอกเบี้ยในปี 2026",
+        "inflationNote": "PCE core 3.4% สูงสุดใน 3 ปี; น้ำมันพุ่งจากความขัดแย้งอิหร่าน CPI มิ.ย. ประกาศ 14 ก.ค.",
+        "sectorImpact": "AI capex ยังเพิ่มขึ้นต่อเนื่องจาก hyperscalers — ทนทานต่ออัตราดอกเบี้ยสูง",
+        "summary": "MEDIUM — มีแรงกดดันดอกเบี้ย แต่ AI demand เป็น structural"
+      },
+      "entryStrategy": {
+        "verdict": "DCA เข้าช่วงย่อ 15% — Vera Rubin shipping แก้ไข overhang แล้ว Q2 earnings 26 ส.ค. เป็น re-rating event ถัดไป upside 53% ถึง consensus",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ย่อ 15% จาก ATH", "timing": "ตอนนี้" },
+          { "note": "โซน dip ก่อน earnings / macro shock", "timing": "ถ้าราคาย่อ" },
+          { "note": "แนวรับ 200-DMA / worst case export", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "กรณีฐาน — retest ATH" },
+        "tp2": { "note": "กรณีดี — หลัง Q2 guide สูง" },
+        "tp3": { "note": "Moon — Vera Rubin volume ramp + FY2028 visibility" },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่าแนวรับ $180",
+          "hardNote": "China export escalation + Q2 guide ลด",
+          "rrNote": "Stop แคบ vs TP2",
+          "rrWarning": "R/R ดีมากที่ระดับย่อ 15%"
+        }
+      },
+      "estimateDates": [
+        { "event": "รายงาน Q2 FY2027", "note": "Guide $91B / consensus $91.7B — beat ต้องผ่าน $93B" },
+        { "event": "Vera Rubin Volume Ramp", "note": "Full production Q4 2026 — กำหนดรายได้ FY2028" }
+      ]
+    }
+  }
+}

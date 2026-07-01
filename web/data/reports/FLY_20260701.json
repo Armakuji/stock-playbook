@@ -1,0 +1,237 @@
+{
+  "ticker": "FLY",
+  "companyName": "Firefly Aerospace",
+  "companyDescription": "Commercial + defense launch + lunar services · Alpha Block 2 / VICTUS HAZE Sep 30 · Blue Ghost Mission 2 late 2026 · SciTec Golden Dome SHIELD IDIQ",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-01T00:00:00.000Z",
+  "price": 29.23,
+  "priceChange": 1.3,
+  "priceNote": "Q2 earnings in 9 days (Jul 10) — most imminent catalyst on the dashboard; 14x EV/Sales vs RKLB 70x",
+  "marketCap": "$4.82B",
+  "sector": "Space / Launch Services",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Speculative",
+  "score": 63,
+  "summary": "Firefly Aerospace has Q2 2026 earnings in just 9 days (July 10) with $80.9M Q1 revenue (+45% YoY beat). Analyst avg $36.71 implies +26% upside to near-term; high target $60 = +105%. The stock trades at 14x 2026E revenue vs Rocket Lab at 70x — massive discount for comparable defense-launch exposure. Alpha Block 2 VICTUS HAZE launch September 30 is a mission-specific binary catalyst; Blue Ghost Mission 2 in late 2026 adds lunar services optionality.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "Q1 2026: $80.9M (+45% YoY beat) with FY2026 guidance $420-450M. Q2 watch: contract wins update, VICTUS HAZE launch prep timeline, Blue Ghost Mission 2 manifesting status, gross margin trajectory.",
+      "urgencyLabel": "9 DAYS",
+      "dateBadge": "Jul 10, 2026",
+      "catalystDate": "2026-07-10",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "🎤",
+      "name": "Needham Conference Presentation",
+      "description": "Firefly management presents at the Needham Space & Industrial Summit on July 9, 2026 (8 days away). Management commentary on VICTUS HAZE timeline, DoD pipeline, and FY2026 guidance confidence.",
+      "urgencyLabel": "8 DAYS",
+      "dateBadge": "Jul 9, 2026",
+      "catalystDate": "2026-07-09",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🚀",
+      "name": "Alpha Block 2 — VICTUS HAZE Launch",
+      "description": "Alpha Block 2 rocket debut launch with the VICTUS HAZE responsive space mission (US Space Force + DARPA). September 30, 2026. Success validates Block 2 reliability + repeat DoD launch cadence. Binary: success = reusability validation; failure = setback.",
+      "urgencyLabel": "91 DAYS",
+      "dateBadge": "Sep 30, 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🌕",
+      "name": "Blue Ghost Mission 2",
+      "description": "Follow-on NASA CLPS lunar mission following Blue Ghost Mission 1 success (Mar 22, 2026 — first successful commercial lunar landing). Mission 2 in late 2026; contract value undisclosed but follows proven flight heritage.",
+      "urgencyLabel": "LATE 2026",
+      "dateBadge": "Late 2026",
+      "catalystDate": "2026-11-01",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🛡️",
+      "name": "SciTec Golden Dome SHIELD IDIQ",
+      "description": "FLY-owned SciTec division won an IDIQ slot for Golden Dome SHIELD program (Space-based missile defense). Indefinite quantity contract with DoD — task orders become revenue as program matures.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "green",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Alpha Block 2 first-flight binary — VICTUS HAZE Sep 30 is a new rocket iteration; failure = 1-year setback + program reset",
+    "SpaceX IPO contagion — if SpaceX goes public, institutional capital rotates OUT of RKLB/FLY and INTO SpaceX directly",
+    "Cash burn pre-FCF positive — $420-450M FY guidance requires execution on schedule; delays = cash crunch",
+    "Q2 delivery vs Q1 momentum — Q1 +45% YoY sets a high bar; Q2 must show sequential progression",
+    "RKLB competitive overlap — Rocket Lab competes for same responsive launch + defense contracts",
+    "Management team relatively new — Abu Dhabi capital + IPO team still building institutional relationships"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q2 2026 Earnings",
+      "dateRange": "Jul 10, 2026",
+      "note": "Q1 revenue $80.9M (+45%); Q2 watch: contract wins, VICTUS HAZE prep, Blue Ghost 2 status",
+      "est": "est. $90-95M revenue",
+      "highlight": "yellow"
+    },
+    {
+      "event": "Alpha Block 2 VICTUS HAZE Launch",
+      "dateRange": "Sep 30, 2026",
+      "note": "US Space Force + DARPA responsive mission — Block 2 first flight binary",
+      "est": "Binary: success/failure",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -30, "price": 20 },
+    { "label": "Base", "color": "yellow", "pct": 25, "price": 37 },
+    { "label": "Bull", "color": "green", "pct": 65, "price": 48 },
+    { "label": "Moon", "color": "purple", "pct": 110, "price": 61 }
+  ],
+  "analystTargets": [
+    { "firm": "Canaccord Genuity", "target": 60, "rating": "Buy" },
+    { "firm": "Consensus Avg (7 analysts)", "target": 37, "rating": "Buy" },
+    { "firm": "Low Target", "target": 22, "rating": "Neutral" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Fed at 3.50–3.75%; defense and government space contracts are rate-insensitive. FLY revenue is NASA CLPS + DoD contracts — decoupled from consumer rate sensitivity.",
+    "inflationNote": "Core PCE 3.4%; launch costs (propellant, components) are inflation-exposed but DoD contracts include inflation adjustments. Iran oil risk = higher fuel costs but manageable.",
+    "sectorImpact": "Golden Dome + NATO + DARPA responsive launch spending = secular tailwind. Defense space spending is rising globally. Q2 earnings in 9 days = near-term trump card.",
+    "summary": "LOW — government/defense contract base insulates from rate/inflation. Primary risk is launch execution (Block 2) and SpaceX IPO contagion."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 29.23, "note": "Current — 9 days to earnings; Needham conf Jul 9 = near-term catalyst", "timing": "Now" },
+      { "label": "Entry 2", "level": 25.50, "rangeMax": 27.00, "note": "Post-earnings dip if Q2 in-line or slight miss", "timing": "Post-earnings dip", "preferred": true },
+      { "label": "Entry 3", "level": 21.00, "note": "Block 2 delay + Q2 miss combo", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 37, "pct": 26.6, "note": "Base — analyst avg target; Q2 beat + VICTUS HAZE on track" },
+    "tp2": { "price": 48, "pct": 64.2, "note": "Bull — VICTUS HAZE success + Blue Ghost 2 + Golden Dome task orders" },
+    "tp3": { "price": 61, "pct": 108.7, "note": "Moon — Canaccord $60; SpaceX IPO doesn't happen + full DoD cadence", "moon": true },
+    "stopLoss": {
+      "tight": 24.00,
+      "tightPct": -18,
+      "tightNote": "Below Apr support / Q2 revenue miss >15%",
+      "hard": 18.00,
+      "hardPct": -38,
+      "hardNote": "Block 2 failure + Q2 guidance cut = thesis break",
+      "riskReward": "2.6 : 1",
+      "rrNote": "Tight stop vs TP2",
+      "rrWarning": "Speculative — size 4-6%; Q2 in 9 days is the near-term verdict"
+    },
+    "verdict": "Buy ahead of Q2 (Jul 10) + Needham conference (Jul 9). Q1 +45% YoY at $80.9M sets a strong baseline; if Q2 extends momentum FLY re-rates toward analyst avg $37. VICTUS HAZE Sep 30 is the binary that drives the bull/moon scenarios.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "product_launch",
+    "preRunup": "Commercial launch companies typically rally 10-20% in the 2-3 weeks before a mission launch, especially for defense/DoD missions. Firefly has Needham conference Jul 9 + Q2 earnings Jul 10 as dual near-term catalysts creating a pre-run window NOW.",
+    "preRunupTiming": "Now → Jul 10",
+    "preRunupPct": "+8–15%",
+    "postWin": {
+      "avgPct": 18,
+      "range": "+10% to +30%",
+      "note": "Blue Ghost Mission 1 success (Mar 22, 2026) — first commercial lunar landing — drove +24% in 3 days. VICTUS HAZE would validate Block 2 reliability + responsive launch cadence for DoD, comparable to a major delivery beat in space launch sector.",
+      "exampleDate": "Mar 2026"
+    },
+    "postLose": {
+      "avgPct": -22,
+      "range": "-15% to -35%",
+      "note": "Alpha Vehicle 2 (Oct 2022 partial failure) sent stock -25% and delayed program 18 months. Block 2 failure in Sep 2026 would be similar magnitude selloff.",
+      "exampleDate": "Oct 2022"
+    },
+    "spotSizing": {
+      "pct": 5,
+      "reason": "Q2 earnings in 9 days is the immediate catalyst; 14x EV/Sales vs RKLB 70x = relative value. Moderate speculative sizing 4-6%; increase after Q2 beat confirmation."
+    },
+    "stopPreCatalyst": { "pct": -18, "price": 24.00, "note": "Below Apr support = Q2 miss or VICTUS HAZE delay signal" },
+    "stopPostCatalyst": { "pct": -20, "note": "If VICTUS HAZE Block 2 fails Sep 30, exit; launch execution is the entire thesis" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "FLY",
+      "event": "Blue Ghost Mission 1 — First Commercial Lunar Landing",
+      "date": "Mar 2026",
+      "movePct": 24,
+      "days": 3,
+      "outcome": "good",
+      "note": "Blue Ghost Mission 1 successfully landed on the Moon on March 22, 2026 — first-ever commercial lunar landing. Stock +24% in 3 days. Sets the template for Blue Ghost Mission 2 and validates Firefly's technical capability."
+    },
+    {
+      "ticker": "RKLB",
+      "event": "Rocket Lab Photon satellite bus validation — DoD contract ramp",
+      "date": "Q3 2023",
+      "movePct": 30,
+      "days": 10,
+      "outcome": "good",
+      "note": "RKLB's successful DoD missions and satellite bus validation drove re-rating from pure-play launch to multi-domain space infrastructure. FLY is on a similar trajectory — Blue Ghost (lunar) + VICTUS HAZE (DoD) = multi-domain validation."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Firefly Aerospace Q1 2026 Revenue $80.9M (+45% YoY) — FY Guidance $420-450M",
+    "url": "https://ir.fireflyspace.com/news-releases",
+    "date": "May 2026"
+  },
+  "sources": [
+    "https://ir.fireflyspace.com/news-releases",
+    "https://www.marketbeat.com/stocks/NASDAQ/FLY/forecast/",
+    "https://spacenews.com/firefly-aerospace-blue-ghost-lunar-lander-lands-on-the-moon/",
+    "https://www.defensenews.com/space/2026/06/01/firefly-scitec-golden-dome-shield-idiq/",
+    "https://spacenews.com/firefly-aerospace-alpha-block-2-victus-haze-launch-september/",
+    "https://www.needhamco.com/content/space-industrial-summit-july-2026"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Firefly มี Q2 2026 earnings ในอีก 9 วัน (10 ก.ค.) — Q1 revenue $80.9M (+45% YoY beat) Analyst avg $36.71 = +26% upside; high $60 = +105% หุ้นซื้อขายที่ 14x EV/Sales เทียบ RKLB ที่ 70x — ส่วนลดมหาศาล Alpha Block 2 VICTUS HAZE launch 30 ก.ย. = binary catalyst ที่สำคัญ",
+      "priceNote": "Q2 earnings อีก 9 วัน (10 ก.ค.); Needham conf 9 ก.ค.; 14x EV/Sales vs RKLB 70x",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "รายงาน Q2 2026", "description": "10 ก.ค. — Q1 $80.9M (+45%); Q2 ดู contract wins, VICTUS HAZE timeline, margin" },
+        { "name": "Needham Space Conference", "description": "9 ก.ค. — management แถลง VICTUS HAZE, DoD pipeline, FY2026 guidance confidence" },
+        { "name": "Alpha Block 2 — VICTUS HAZE Launch", "description": "30 ก.ย. — US Space Force + DARPA; Binary: success = DoD trust; failure = setback" },
+        { "name": "Blue Ghost Mission 2", "description": "ปลายปี 2026 — follow-on NASA CLPS lunar mission; ต่อจาก Mission 1 สำเร็จ" }
+      ],
+      "risks": [
+        "Block 2 first-flight binary — failure = 1 ปีถอยหลัง",
+        "SpaceX IPO contagion — capital ย้ายออกจาก RKLB/FLY ไป SpaceX",
+        "Cash burn pre-FCF — $420-450M guide ต้องการ execution ตรงเวลา",
+        "Q1 +45% ตั้งบาร์สูง — Q2 ต้องแสดง sequential progress",
+        "RKLB แข่ง responsive launch + defense contracts เหมือนกัน"
+      ],
+      "macroRisk": {
+        "rateOutlook": "NASA CLPS + DoD contracts ไม่ sensitive กับ Fed rate",
+        "inflationNote": "PCE 3.4%; launch cost (fuel) ขึ้นตาม inflation แต่ DoD contracts มี adjustments",
+        "sectorImpact": "Golden Dome + NATO responsive launch = secular tailwind; Q2 ใน 9 วัน คือ near-term verdict",
+        "summary": "LOW — government/defense contract base ป้องกัน rate risk; ความเสี่ยงหลักคือ Block 2 execution"
+      },
+      "entryStrategy": {
+        "verdict": "ซื้อก่อน Q2 (10 ก.ค.) + Needham conf (9 ก.ค.) Q1 +45% YoY; ถ้า Q2 extend momentum FLY re-rates ถึง analyst avg $37 VICTUS HAZE 30 ก.ย. คือ binary ที่ drive bull/moon scenarios",
+        "entryLevels": [
+          { "note": "ปัจจุบัน — 9 วันถึง earnings", "timing": "ตอนนี้" },
+          { "note": "Post-earnings dip ถ้า Q2 in-line", "timing": "หลัง Q2 dip" },
+          { "note": "Block 2 delay + Q2 miss รวมกัน", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "กรณีฐาน — analyst avg; Q2 beat + VICTUS HAZE on track" },
+        "tp2": { "note": "กรณีดี — VICTUS HAZE success + Blue Ghost 2 + Golden Dome orders" },
+        "tp3": { "note": "Moon — Canaccord $60; SpaceX IPO ไม่เกิด + DoD cadence เต็ม" },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า Apr support / Q2 revenue miss >15%",
+          "hardNote": "Block 2 failure + guidance cut = thesis break",
+          "rrNote": "Stop แคบ vs TP2",
+          "rrWarning": "Speculative — 4-6%; เพิ่ม position หลัง Q2 beat confirm"
+        }
+      },
+      "estimateDates": [
+        { "event": "รายงาน Q2 2026", "note": "Q1 $80.9M (+45%); Q2 ดู contract wins, VICTUS timeline, margin" },
+        { "event": "Alpha Block 2 VICTUS HAZE", "note": "30 ก.ย. — binary launch; success = DoD trust สำหรับ Block 2" }
+      ]
+    }
+  }
+}
