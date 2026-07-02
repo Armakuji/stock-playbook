@@ -1,0 +1,184 @@
+{
+  "ticker": "QUBT",
+  "companyName": "Quantum Computing Inc.",
+  "companyDescription": "Photonic quantum computing + defense AI · NHanced Semiconductors acquisition · NeuraWave commercial deployment ramp · $986M cash, no meaningful debt — funded through the government-quantum policy wave",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-02T00:00:00.000Z",
+  "price": 9.69,
+  "priceChange": -0.1,
+  "priceNote": "52-week range $6.18-$25.84. Down sharply from highs but riding the same federal quantum-policy tailwind that sent D-Wave/Rigetti/Infleqtion +30%+ in a single day in May.",
+  "marketCap": "$2.2B",
+  "sector": "Technology / Quantum Computing",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 65,
+  "summary": "QUBT is a photonic quantum computing + defense-AI play that just closed a $73.1M acquisition of NHanced Semiconductors, with an initial commercial commitment for up to 100 NeuraWave systems (potential value $10M+). The stock wasn't part of the May 2026 $2B federal quantum equity-stake program (which sent D-Wave, Rigetti, and Infleqtion up 30%+ in a single day), but the same policy tailwind — including June 22 White House executive orders on quantum leadership — is structural and sector-wide. Q2 earnings Aug 19 is the next hard date; a further government funding round or a NeuraWave contract win is the real moonshot trigger.",
+  "catalysts": [
+    {
+      "icon": "📈",
+      "name": "Q2 2026 Earnings",
+      "description": "Next quarterly report. Q1 2026 beat both revenue and EPS estimates. Watch for NHanced Semiconductors integration progress and NeuraWave system deployment/revenue recognition updates.",
+      "urgencyLabel": "7 WEEKS",
+      "dateBadge": "Aug 19, 2026",
+      "catalystDate": "2026-08-19",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🏛️",
+      "name": "Federal Quantum Policy Wave — Spillover Risk/Reward",
+      "description": "May 2026: US Commerce Dept awarded ~$2B across 9 quantum companies (equity stakes), sending D-Wave +33%, Rigetti +30%, Infleqtion +31% in one day. QUBT wasn't in that round. June 22 executive orders on quantum leadership + cryptographic security keep the door open for further rounds or a QUBT-specific award.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "H2 2026",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🤝",
+      "name": "NeuraWave Commercial Deployment Ramp",
+      "description": "Initial commercial commitment covers deployment of up to 100 NeuraWave systems, representing potential value over $10M. A large single customer order or defense-AI contract would be the clearest single-stock catalyst independent of sector-wide policy news.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "H2 2026",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Revenue is tiny relative to market cap — ~$3.7M quarterly revenue against a $2.2B market cap is an extreme valuation multiple, entirely dependent on the growth narrative continuing",
+    "Net loss ~$4M/quarter — no near-term path to profitability disclosed",
+    "Quantum hype-cycle deflation risk — if policy tailwinds fade or a major player (IBM, Google, IonQ) delivers a breakthrough that reframes the competitive landscape, small photonic-quantum names could de-rate hard",
+    "QUBT was excluded from the May 2026 federal equity-stake round that its peers received — no guarantee of inclusion in any future round",
+    "M&A integration risk from the NHanced Semiconductors acquisition ($73.1M cash-and-stock plus up to $72M earn-outs) — execution and dilution risk"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Aug 19, 2026", "note": "NHanced integration + NeuraWave deployment revenue update", "est": "Revenue growth expected to continue", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -50, "price": 4.84 },
+    { "label": "Base", "color": "yellow", "pct": 60, "price": 15.50 },
+    { "label": "Bull", "color": "green", "pct": 140, "price": 23.26 },
+    { "label": "Moon", "color": "purple", "pct": 250, "price": 33.91 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (6 analysts)", "target": 18.33, "rating": "Buy", "note": "+87% from current price" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Quantum federal funding flows through Commerce Dept / DARPA / DoE programs — multi-year appropriations largely independent of FOMC rate decisions.",
+    "inflationNote": "R&D cost base is mostly personnel (PhD-level engineers) — some wage-inflation sensitivity, manageable given government-adjacent contract margins.",
+    "sectorImpact": "MEDIUM. High-multiple, pre-profit growth names like QUBT are more rate-sensitive on the discount-rate side than policy-driven defense names — the current hawkish-Fed backdrop (hike priced by October) is a real headwind on the multiple even as the policy tailwind stays intact.",
+    "summary": "Fed risk LOW-MEDIUM. The federal quantum policy tailwind is structural and independent of Fed decisions, but QUBT's pre-profit, high-multiple valuation makes it more exposed to a hawkish-Fed-driven multiple compression than the underlying business catalysts alone would suggest."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 9.69, "note": "Current price — well off the 52-week high of $25.84", "timing": "Now (2-3% max)" },
+      { "label": "Entry 2", "level": 8.53, "rangeMax": 9.20, "note": "Recent support zone", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 6.78, "note": "Near 52-week low — high conviction add only", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 15.50, "pct": 60.0, "note": "Base — continued NeuraWave revenue ramp, no fresh government award" },
+    "tp2": { "price": 23.26, "pct": 140.0, "note": "Bull — return toward 52-week high on a NeuraWave contract win or Q2 beat" },
+    "tp3": { "price": 33.91, "pct": 250.0, "note": "Moon — QUBT included in a fresh federal quantum funding round (D-Wave/Rigetti-style spillover)", "moon": true },
+    "stopLoss": {
+      "tight": 7.95, "tightPct": -18.0, "tightNote": "Below recent support — sector sentiment souring",
+      "hard": 4.84, "hardPct": -50.0, "hardNote": "Near 52-week lows — quantum hype cycle deflating broadly, not just QUBT-specific",
+      "riskReward": "2.8 : 1", "rrNote": "Entry ($9.69) vs TP2 ($23.26)", "rrWarning": "Solid asymmetry ✅ — sector-wide catalyst optionality on top of company-specific NeuraWave ramp"
+    },
+    "verdict": "ค่าขนม SPECULATIVE — 2-3% max. Base case (NeuraWave ramp continues) → $15.50 (+60%), Bull (contract win or fresh gov funding) → $23.26 (+140%), Moon (federal award spillover) → $33.91 (+250%).",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "Quantum computing small-caps run hard in the days/weeks around any government policy news — even names not directly named in an award have historically caught a spillover bid (IonQ popped 12% in May despite not being on the direct-investment list).",
+    "preRunupTiming": "1-3 สัปดาห์ก่อน policy announcement",
+    "preRunupPct": "+10-30%",
+    "postWin": {
+      "avgPct": 31,
+      "range": "+30% to +33%",
+      "note": "May 21, 2026: US Commerce Dept quantum equity-stake announcement sent D-Wave +33%, Rigetti +30%, Infleqtion +31% — all in a single trading day. QUBT wasn't in that round but showed 39% market-cap growth in the 30 days around similar sector newsflow.",
+      "exampleDate": "May 2026"
+    },
+    "postLose": {
+      "avgPct": -45,
+      "range": "-35% to -60%",
+      "note": "QUBT itself has fallen from a 52-week high of $25.84 to $9.69 (-62%) as quantum sector enthusiasm cooled from its earlier 2026 peak — shows how fast sentiment-driven quantum names give back gains without a company-specific negative.",
+      "exampleDate": "H1 2026 quantum sector cooldown"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "3% given extreme valuation-to-revenue multiple and pure sentiment/policy dependence. Not a hard binary like an FDA date, but the range of outcomes is still very wide."
+    },
+    "stopPreCatalyst": { "pct": -18, "price": 7.95, "note": "หลุด $7.95 = sector sentiment แย่ลง แม้ยังไม่มีข่าวลบเฉพาะตัว" },
+    "stopPostCatalyst": { "pct": -50, "note": "ถ้า quantum hype cycle deflate ทั้ง sector และ Q2 earnings ผิดหวัง — exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "QBTS",
+      "event": "US Commerce Dept Quantum Equity-Stake Announcement",
+      "date": "May 2026",
+      "movePct": 33,
+      "days": 1,
+      "outcome": "good",
+      "note": "D-Wave (direct award recipient) +33% in a single day — shows the scale of reaction when a quantum name lands direct federal funding. QUBT's Moon case assumes similar inclusion in a future round."
+    },
+    {
+      "ticker": "RGTI",
+      "event": "Same Commerce Dept Announcement",
+      "date": "May 2026",
+      "movePct": 30,
+      "days": 1,
+      "outcome": "good",
+      "note": "Rigetti +30% same day, +31% for Infleqtion — confirms this was a sector-wide repricing event, not a single-company idiosyncratic move. Any quantum name added to a future round would likely see a similar-magnitude reaction."
+    }
+  ],
+  "sources": [
+    "https://stockstotrade.com/news/quantum-computing-inc-qubt-news-2026_06_29/",
+    "https://www.cnbc.com/2026/05/21/quantum-stocks--us-taking-equity-stakes.html",
+    "https://www.fool.com/investing/2026/05/27/the-us-government-just-invested-in-these-3-quantum/",
+    "https://public.com/stocks/qubt/market-cap"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "QUBT เป็นหุ้น photonic quantum computing + defense-AI ที่เพิ่งปิดดีล acquire NHanced Semiconductors มูลค่า $73.1M พร้อม commitment เริ่มต้นสำหรับ NeuraWave system สูงสุด 100 ระบบ (มูลค่าอาจเกิน $10M) หุ้นไม่ได้อยู่ในรอบ federal quantum equity-stake $2B ของเดือน พ.ค. 2026 (ที่ทำให้ D-Wave, Rigetti, Infleqtion วิ่ง 30%+ ในวันเดียว) แต่ tailwind เชิงนโยบายเดียวกัน — รวมถึง executive order 22 มิ.ย. เรื่อง quantum leadership — เป็นแรงหนุนทั้ง sector Q2 earnings 19 ส.ค. คือวันที่ชัดเจนถัดไป ส่วน trigger แบบ moonshot จริงๆ คือรอบทุนรัฐบาลใหม่หรือ contract ใหญ่ของ NeuraWave",
+      "priceNote": "52-week range $6.18-$25.84 ร่วงจาก high มาเยอะ แต่ยังอยู่ใน tailwind นโยบาย quantum เดียวกับที่ทำให้ D-Wave/Rigetti/Infleqtion วิ่ง 30%+ วันเดียว",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "Q2 2026 Earnings", "description": "รายงานผลประกอบการรายไตรมาสถัดไป Q1 2026 เกินคาดทั้ง revenue และ EPS จับตาความคืบหน้า NHanced integration และ revenue จาก NeuraWave deployment" },
+        { "name": "คลื่นนโยบาย Federal Quantum — โอกาส spillover", "description": "พ.ค. 2026: Commerce Dept ให้ทุน ~$2B แก่ 9 บริษัท quantum (equity stake) ทำให้ D-Wave +33%, Rigetti +30%, Infleqtion +31% ในวันเดียว QUBT ไม่ได้อยู่ในรอบนั้น executive order 22 มิ.ย. เปิดทางให้มีรอบใหม่หรือ QUBT ได้รับเฉพาะ" },
+        { "name": "NeuraWave Commercial Deployment Ramp", "description": "Commitment เริ่มต้นครอบคลุมการ deploy NeuraWave สูงสุด 100 ระบบ มูลค่าอาจเกิน $10M order ใหญ่จากลูกค้ารายเดียวหรือ defense-AI contract จะเป็น catalyst เฉพาะตัวที่ชัดเจนที่สุด"}
+      ],
+      "risks": [
+        "Revenue เล็กมากเทียบกับ market cap — ประมาณ $3.7M ต่อไตรมาสเทียบ market cap $2.2B เป็น valuation multiple ที่สูงมาก ขึ้นอยู่กับ growth narrative ล้วนๆ",
+        "ขาดทุนสุทธิ ~$4M ต่อไตรมาส — ยังไม่มี path ไปสู่กำไรที่ชัดเจน",
+        "ความเสี่ยง quantum hype cycle deflate — ถ้า tailwind นโยบายจางลง หรือผู้เล่นใหญ่ (IBM, Google, IonQ) มี breakthrough ที่เปลี่ยนภูมิทัศน์การแข่งขัน หุ้น photonic-quantum เล็กอาจ de-rate แรง",
+        "QUBT ไม่ได้อยู่ในรอบ federal equity-stake พ.ค. 2026 ที่คู่แข่งได้ — ไม่มีการันตีว่าจะได้รอบหน้า",
+        "ความเสี่ยงจากการ integrate M&A ของ NHanced Semiconductors ($73.1M cash-and-stock บวก earn-out สูงสุด $72M) — execution และ dilution risk"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ทุนรัฐบาลด้าน quantum ไหลผ่าน Commerce Dept / DARPA / DoE — appropriations หลายปี ไม่ค่อยขึ้นกับการตัดสินใจ FOMC",
+        "inflationNote": "ต้นทุน R&D ส่วนใหญ่คือ personnel (วิศวกรระดับ PhD) — sensitive กับ wage inflation บ้าง แต่จัดการได้จาก margin ของ government-adjacent contract",
+        "sectorImpact": "ปานกลาง หุ้น growth pre-profit multiple สูงแบบ QUBT sensitive กับฝั่ง discount rate มากกว่าหุ้น defense ที่ policy-driven — บรรยากาศ hawkish Fed ตอนนี้ (hike price ภายใน ต.ค.) เป็นแรงกดดันจริงต่อ multiple แม้ tailwind นโยบายยังอยู่",
+        "summary": "ความเสี่ยง Fed ต่ำถึงปานกลาง tailwind นโยบาย quantum เป็นเรื่อง structural ไม่ขึ้นกับ Fed แต่ valuation สูง pre-profit ของ QUBT ทำให้ sensitive กับ multiple compression จาก hawkish Fed มากกว่าที่ catalyst ธุรกิจอย่างเดียวจะบ่งชี้"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม 2-3% max Base (NeuraWave ramp ต่อเนื่อง) → $15.50 (+60%) Bull (ได้ contract หรือทุนรัฐใหม่) → $23.26 (+140%) Moon (ได้รับ federal award spillover) → $33.91 (+250%)",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน ต่ำกว่า 52-week high $25.84 มาก", "timing": "ตอนนี้ (2-3% max)" },
+          { "note": "โซนแนวรับล่าสุด", "timing": "ถ้าย่อ" },
+          { "note": "ใกล้ 52-week low — เข้าเฉพาะมั่นใจสูง", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Base — NeuraWave revenue ramp ต่อเนื่อง ไม่มีทุนรัฐใหม่" },
+        "tp2": { "note": "Bull — กลับไปใกล้ 52-week high จาก contract win หรือ Q2 beat" },
+        "tp3": { "note": "Moon — QUBT ได้อยู่ในรอบทุน quantum ใหม่ของรัฐบาล", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดแนวรับล่าสุด = sentiment sector แย่ลง",
+          "hardNote": "ใกล้ 52-week low = quantum hype cycle deflate ทั้ง sector ไม่ใช่แค่ QUBT",
+          "rrNote": "Entry ($9.69) เทียบ TP2 ($23.26)",
+          "rrWarning": "Asymmetry ดี ✅ — มี optionality ทั้งระดับ sector และเฉพาะตัวจาก NeuraWave"
+        }
+      },
+      "estimateDates": [
+        { "event": "Q2 2026 Earnings", "note": "อัปเดต NHanced integration + revenue จาก NeuraWave deployment" }
+      ]
+    }
+  }
+}
