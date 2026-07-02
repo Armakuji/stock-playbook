@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Bricolage_Grotesque, DM_Sans, JetBrains_Mono } from "next/font/google";
 import { getAllReports } from "@/lib/reports";
+import { loadMarketTiming } from "@/lib/market-timing";
 import { Header } from "./Header";
+import { MarketTicker } from "./MarketTicker";
 import { LanguageProvider } from "@/lib/LanguageContext";
 
 const bricolage = Bricolage_Grotesque({
@@ -47,6 +49,7 @@ export default function RootLayout({
 }>) {
   const lastUpdated = getLatestReportDate();
   const isLocal = !process.env.VERCEL;
+  const marketTiming = loadMarketTiming();
   return (
     <html lang="en" className={`h-full ${bricolage.variable} ${dmSans.variable} ${jetbrains.variable}`}>
       <body
@@ -100,6 +103,7 @@ export default function RootLayout({
         }} />
         <LanguageProvider>
           <Header lastUpdated={lastUpdated} isLocal={isLocal} />
+          <MarketTicker data={marketTiming as never} />
           <main style={{ flex: 1, maxWidth: 1200, width: "100%", margin: "0 auto", padding: "24px 16px" }}>
             {children}
           </main>

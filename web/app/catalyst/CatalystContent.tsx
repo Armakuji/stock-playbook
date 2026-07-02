@@ -10,7 +10,6 @@ import { RankingChangeTable } from "../RankingChangeTable";
 import { CatalystCalendar } from "../CatalystCalendar";
 import { ThemeGroups } from "../ThemeGroups";
 import { FactorRiskPanel } from "../FactorRiskPanel";
-import { MarketTimingPanel } from "../MarketTimingPanel";
 
 const TOP_N = 10;
 
@@ -22,12 +21,10 @@ export function CatalystContent({
   ranked,
   rankChanges,
   calendarEvents,
-  marketTiming,
 }: {
   ranked: Ranked;
   rankChanges: RankChanges;
   calendarEvents: CalendarEvents;
-  marketTiming: unknown;
 }) {
   const { lang } = useLang();
   const th = lang === "th";
@@ -142,9 +139,6 @@ export function CatalystContent({
 
       {/* ── Factor-correlation warning — collapsible ────────────── */}
       <FactorRiskPanel risks={factorRisk} />
-
-      {/* ── Market Timing Panel ───────────────────────────────────── */}
-      {marketTiming != null && <MarketTimingPanel data={marketTiming as never} />}
 
       {/* ── Catalyst-day clustering warning — compact inline strip ── */}
       {clusters.length > 0 && (

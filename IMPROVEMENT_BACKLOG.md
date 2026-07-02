@@ -99,7 +99,7 @@ Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open N
 **ปัญหา:** landing page + nav ทำ theme 4 ธาตุไว้ (💧 Water=DCA · 🌬️ Air=Catalyst · 🔥 Fire=Turbo) แต่ตอนนี้มีจริงแค่ 3 — ช่อง Earth ยังเป็น "coming soon" ทำให้ composition ไม่ครบวง ต้องตัดสินใจว่า Earth = อะไร แล้วทำให้เป็น feature จริง
 **ทำ:** เลือก 1 ใน 3 ทางที่ประเมินไว้ แล้ว build:
   - (ก) **Portfolio/Journal เป็น Earth** — rebrand `/journal` (ดิน = พอร์ตจริงที่ถืออยู่ = รากฐาน) · ต้องแก้ให้ดูได้บน prod (ตอนนี้ `isLocal`-gate ใน `web/app/layout.tsx`) หรือทำ read-only view
-  - (ข) **Macro/Market terrain เป็น Earth** — ทำหน้า `/macro` จาก `web/data/market-timing.json` + skill `xvary-market-timing` (ดิน = สภาพพื้นดินของตลาด Fed/CPI/VIX)
+  - (ข) **Macro/Market terrain เป็น Earth** — ทำหน้า `/macro` จาก `web/data/market-timing.json` + skill `analyze-market-situation` (ดิน = สภาพพื้นดินของตลาด Fed/CPI/VIX)
   - (ค) **Backtest/Track record เป็น Earth** — rebrand `/backtest` (ดิน = ชั้นหิน/รากฐานข้อมูลย้อนหลัง)
 **ไฟล์:** `web/app/page.tsx` (landing — ปลดล็อก Earth tile จาก ghost→active) · `web/app/layout.tsx` (nav เพิ่ม tab ธาตุ 4) · แล้วแต่ทางเลือก: `web/app/journal/*` | หน้า `/macro` ใหม่ + `web/lib` อ่าน market-timing | `web/app/backtest/*`
 **เป้า:** 4 ธาตุครบ — landing มี 4 element card ที่กดเข้าได้จริงทั้งหมด, เอา ghost "coming soon" ออก · สี Earth = อำพัน-บรอนซ์/โอลีฟ (เลี่ยงชนเขียวของ Air)
