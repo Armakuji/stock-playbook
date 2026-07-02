@@ -1,7 +1,7 @@
 ---
-name: xvary-market-timing
+name: analyze-market-situation
 description: >
-  Check current market conditions and give a clear BUY NOW / WAIT verdict with an event risk calendar and entry window recommendation. Use this skill whenever the user asks whether it's a good time to enter the market, buy stocks, or deploy capital. Trigger on phrases like: "ตลาดควรเข้าซื้อไหม", "ตอนนี้ซื้อได้ไหม", "รอก่อนไหม", "macro check", "market timing", "entry window", "ควรซื้อเลยไหม", "ช่วงนี้ตลาดเป็นยังไง", "check ตลาด", "should I buy now", "is it safe to enter", "/macro". Also trigger when the user asks about FOMC timing, Fed risk, or whether to wait before adding positions. Always generate the full HTML report — not just a text answer.
+  Check current market conditions and give a clear BUY NOW / WAIT verdict with an event risk calendar and entry window recommendation. Use this skill whenever the user asks whether it's a good time to enter the market, buy stocks, or deploy capital. Trigger on phrases like: "ตลาดควรเข้าซื้อไหม", "ตอนนี้ซื้อได้ไหม", "รอก่อนไหม", "macro check", "market timing", "entry window", "ควรซื้อเลยไหม", "ช่วงนี้ตลาดเป็นยังไง", "check ตลาด", "should I buy now", "is it safe to enter", "/macro", "/catalyst-list". Also trigger when the user asks about FOMC timing, Fed risk, or whether to wait before adding positions. Present the verdict as a chat response, then save the JSON that powers the site — do not generate a standalone HTML report.
 ---
 
 # XVARY Market Timing Check
@@ -100,7 +100,7 @@ If research returns conflicting signals (e.g., Fed speech hawkish but PCE data d
 3. **Voting member speeches** — moderate weight
 4. **Analyst/market commentary** — lowest weight; useful for direction but overridden by data
 
-When signals conflict, add a **Signal Conflicts** section to the HTML report flagging the contradiction and explaining which signal you weighted more heavily and why.
+When signals conflict, note it in your chat response and in the JSON's `signalConflicts` array, explaining which signal you weighted more heavily and why.
 
 ---
 
@@ -142,135 +142,27 @@ Always include:
 
 ---
 
-## Step 6: Generate the HTML Report
+## Step 6: Present the verdict in chat, then save market-timing.json
 
-Save as `market_timing_<YYYYMMDD>.html` in the workspace folder.
-Also save/update `web/data/market-timing.json` (see schema at bottom of this skill).
+This skill outputs a chat response only — **do not generate a standalone HTML report file.**
 
-### Visual System
+In your chat response, cover (concisely, no filler):
+1. **Verdict** — BUY/SELECTIVE/WAIT, conviction, score (e.g. "🟡 SELECTIVE (medium conviction) · 63/100")
+2. **Scope guard** — one line, every time, non-negotiable: this is for new cash / catalyst-pocket sizing only, not a signal to sell core holdings
+3. **Fragility snapshot** — VIX (level + trend + term structure), breadth, credit, trend, in one line
+4. **Event risk calendar** — the week-by-week list with risk level and action
+5. **Decision tree** — quantified if/then
+6. **Signal conflicts** — only if any were found (Step 3)
+7. **Earnings risk** — your holdings first (from journal.json), then Big Tech context
+8. **What to do now** — personalized per open position, plus a cash action
+9. **Sources** — the URLs you actually used
+10. Footer line: "Not financial advice · XVARY Research · Score: N/100"
 
-```
-Background:   #0f172a
-Card bg:      #1e293b
-Deep bg:      #0a111e
-Green:   #10b981  → BUY / safe window
-Yellow:  #f59e0b  → SELECTIVE / medium risk
-Red:     #ef4444  → WAIT / high risk
-Blue:    #38bdf8  → dates, brand
-Purple:  #a78bfa  → macro context / scoring
-Grey:    #94a3b8  → secondary text
-```
-
-### Required HTML Sections (in order)
-
-**1. Top Banner** — "XVARY MACRO · Market Timing Report" · date · verdict pill (BUY / SELECTIVE / WAIT)
-
-**2. Scope Guard Box** — prominent yellow info box at the top (always show this):
-```html
-<div class="scope-guard">
-  ⚠️ <strong>Scope:</strong> verdict นี้ใช้สำหรับ <strong>เงินสดใหม่ / catalyst-pocket</strong> เท่านั้น
-  ไม่ใช่สัญญาณขาย core holding — time-in-market ชนะ timing ในระยะยาว
-</div>
-```
-
-**3. Verdict Card** — big, clear, includes conviction level and score:
-```html
-<div class="verdict-card verdict-[buy|selective|wait]">
-  <div class="verdict-main">🟡 SELECTIVE</div>
-  <div class="verdict-conviction">conviction: MEDIUM · score: 58/100</div>
-  <div class="verdict-thai">2–3 ประโยคภาษาไทยอธิบาย reason</div>
-  <div class="verdict-window">Entry window: Aug 1–7 · Condition: Fed hold + PCE ≤ 2.8%</div>
-</div>
-```
-
-**4. Market Fragility Panel** — 5 signals as a horizontal scorecard:
-```
-VIX: 17.2 (↑ rising) | Term: Contango | Breadth: 58% | Credit: Neutral | Trend: Above 50/200DMA
-Fragility Score: MEDIUM — narrow breadth signals selective caution
-```
-
-**5. Event Risk Calendar** — week-by-week for next 4–6 weeks with base rates in the action column:
-
-```html
-<tr class="risk-high">
-  <td class="week-label">Jul 27–31</td>
-  <td class="events">
-    <span class="event-chip chip-red">FOMC Jul 29</span>
-    <span class="event-chip chip-red">PCE Jul 31</span>
-  </td>
-  <td class="risk-badge">🔴 HIGH</td>
-  <td class="action">Hold cash — FOMC implied ±1% SPY; PCE surprise historically -1.5%</td>
-</tr>
-```
-
-CSS for rows:
-```css
-.risk-high { background: rgba(239,68,68,0.06); border-left: 3px solid #ef4444; }
-.risk-med  { background: rgba(245,158,11,0.06); border-left: 3px solid #f59e0b; }
-.risk-entry{ background: rgba(16,185,129,0.06); border-left: 3px solid #10b981; }
-.risk-wait { background: rgba(148,163,184,0.06); border-left: 3px solid #94a3b8; }
-.event-chip { font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 4px; display: inline-block; margin: 2px; }
-.chip-red  { background: rgba(239,68,68,0.15); color: #ef4444; border: 1px solid rgba(239,68,68,0.3); }
-.chip-yel  { background: rgba(245,158,11,0.15); color: #f59e0b; border: 1px solid rgba(245,158,11,0.3); }
-.chip-grn  { background: rgba(16,185,129,0.15); color: #10b981; border: 1px solid rgba(16,185,129,0.3); }
-.chip-blu  { background: rgba(56,189,248,0.15); color: #38bdf8; border: 1px solid rgba(56,189,248,0.3); }
-```
-
-**6. Scoring Breakdown** — compact table:
-```
-event_density: 15/30 | vix_score: 15/25 | breadth_score: 15/25 | trend_score: 13/20
-Total: 58/100 → SELECTIVE
-```
-
-**7. Decision Tree** — quantified if/then:
-```
-IF Fed holds + PCE ≤ 2.8% → BUY Aug 1–7 (SPY expected +1–2%)
-IF Fed hike signal → WAIT until Aug mid (SPY implied -1.5% to -2.5%)
-IF PCE hot (+0.3% surprise) → WAIT (historically -1% to -2% intraday)
-```
-
-**8. Signal Conflicts** *(only if contradictions detected)*:
-```
-⚠️ Conflict: Fed member Waller hawkish (Jul 15) vs PCE Jun 2.6% (dovish)
-Resolution: Weighted actual PCE data > speech. Verdict unchanged.
-```
-
-**9. Fed/Macro Status** — compact snapshot table
-
-**10. Earnings Risk Table** — two sections:
-
-*Primary: Your Holdings* (from journal.json, highest priority):
-```
-AVGO | Aug 28 | Revenue + guidance | +8–12% stock | -6–10% stock
-ONDS | Aug 11 | Q2 orders read | +20–40% | -15–25%
-```
-
-*Context: Big Tech* (secondary, only if reporting in next 4 weeks):
-```
-NVDA | Aug 27 | Blackwell demand | +8–12% (SOX +4%) | -8–15% (SOX -6%)
-```
-
-**11. What to Do Now** — personalized per open positions:
-```
-AVGO (held) — earnings Aug 28: อย่าเพิ่ม position ก่อน report · ถือผ่าน · SL $185 ยังใช้
-ONDS (held) — earnings Aug 11: ไม่เพิ่มก่อน Q2 · SL $6.80
-Cash — entry window Aug 1–7 ถ้า FOMC hold: เริ่ม 1% AVGO
-```
-Fallback if no journal: 3 generic action items (รอ / เข้าเล็ก / SL plan).
-
-**12. Sources** — all URLs used
-
-**13. Footer** — "Not financial advice · XVARY Research · {date} · Score: {N}/100"
-
----
-
-## Step 7: Save market-timing.json
-
-Save/overwrite `web/data/market-timing.json`:
+Then save/overwrite `web/data/market-timing.json` — this is the only file this skill writes. It's read by the `MarketTicker` component and rendered site-wide, fused under the header.
 
 ```json
 {
-  "_note": "Market timing report — generated by /macro skill. Read by MarketTimingPanel. Overwrite each run.",
+  "_note": "Market timing report — generated by the analyze-market-situation skill (via /macro or /catalyst-list). Read by MarketTicker, rendered site-wide under the header. Overwrite each run.",
   "generatedAt": "<ISO timestamp>",
   "verdict": "BUY | SELECTIVE | WAIT",
   "verdictLabel": "เข้าได้ | เลือกเป็นตัว | รอก่อน",
@@ -282,12 +174,14 @@ Save/overwrite `web/data/market-timing.json`:
     "breadth_score": 15,
     "trend_score": 13
   },
-  "summary": "<Thai 2-3 sentence summary>",
+  "summary": "<English 2-3 sentence summary — this is NOT shown in the scrolling ticker, only in the click-to-expand drawer, so write it properly>",
+  "summaryTh": "<Thai translation of the same summary>",
   "entryWindow": {
     "start": "YYYY-MM-DD",
     "end": "YYYY-MM-DD",
     "label": "Aug 1–7",
-    "condition": "Fed hold + PCE ≤ 2.8% → BUY"
+    "condition": "Fed hold + PCE ≤ 2.8% → BUY",
+    "conditionTh": "<Thai translation of condition>"
   },
   "fragility": {
     "vixLevel": 17.2,
@@ -306,7 +200,8 @@ Save/overwrite `web/data/market-timing.json`:
         { "name": "PCE Jul 31", "chip": "red", "impliedMove": "±0.8% SPY" }
       ],
       "risk": "high | medium | entry | wait",
-      "action": "Thai action text"
+      "action": "<English, short — one clause, no filler>",
+      "actionTh": "<Thai translation of the same clause>"
     }
   ],
   "macroSnapshot": {
@@ -330,6 +225,10 @@ Save/overwrite `web/data/market-timing.json`:
 }
 ```
 
+Valid enum values (`weeks[].events[].chip` and `decisionTree[].color`): `red | yellow | green | blue | grey`. `weeks[].risk`: `high | medium | entry | wait`.
+
+**Bilingual fields** — `summary`/`summaryTh`, `entryWindow.condition`/`entryWindow.conditionTh`, and each `weeks[].action`/`weeks[].actionTh` are a matched pair: same meaning, one in English, one in Thai. The site's `MarketTicker` component picks whichever matches the user's EN/TH toggle (falls back to the English field if the Thai one is missing), so both must be filled every run — never leave `summaryTh` etc. blank.
+
 ---
 
 ## Always-on rules
@@ -338,24 +237,28 @@ Save/overwrite `web/data/market-timing.json`:
 - **Cover at least 4 weeks** of calendar, ideally 6.
 - **Concrete entry window** — specific dates, not "sometime in August."
 - **Decision tree must be quantified** — include expected magnitude (% move), not just direction.
-- **Scope guard always shown** — every report, every time. Non-negotiable.
+- **Scope guard always stated** — every response, every time. Non-negotiable.
 - **VIX rule upgraded** — never use VIX level alone. Always assess level + 5-day trend + term structure.
 - **Fragility override** — narrow breadth (<50%) + S&P near ATH = downgrade to SELECTIVE minimum.
 - **Conflict hierarchy** — actual data > Fed official speech > voting member comments > analyst opinion.
 - **Conviction is honest** — if signals conflict, say MEDIUM or LOW. Don't project false confidence.
 - **Journal positions personalized** — if journal.json exists, every "What to Do Now" item names a real ticker.
-- Thai language for verdict card and action items; English for dates, tickers, numbers.
-- Append "Not financial advice · XVARY Research · Score: N/100" in footer.
+- **JSON only, no HTML file** — the only file this skill writes is `web/data/market-timing.json`.
+- **Bilingual** — `summary`, `entryWindow.condition`, and every `weeks[].action` need both an English and a Thai version (see the `*Th` fields in the schema).
+- **`summary`/`summaryTh` never appears in the scrolling ticker marquee** — `MarketTicker`'s crawl is built only from `weeks[].events[]` and `macroSnapshot`; `summary` is rendered solely in the click-to-expand drawer. Because of that it does NOT need to be short — write a proper 2-3 sentence summary with real detail (S&P/breadth/VIX levels, the Fed narrative, what to watch). Do not compress it into a headline; that was a past mistake — leave it be an actual summary.
+- `entryWindow.condition`/`conditionTh` and `weeks[].action`/`actionTh` are also expand-only (not in the marquee) — a full short clause is fine, no artificial length limit.
+- Append "Not financial advice · XVARY Research · Score: N/100" as the last line of your response.
 
 ---
 
 ## Language style
 
-- Verdict: 🟢 เข้าได้ (high conviction) / 🟡 เลือกเป็นตัว / 🔴 รอก่อน
+- Every `*Th` field is a genuine translation of its English counterpart, not a paraphrase — same fact, same length budget, just Thai.
+- Verdict (Thai side): 🟢 เข้าได้ (high conviction) / 🟡 เลือกเป็นตัว / 🔴 รอก่อน. Verdict (English side): the `verdict` enum itself (BUY / SELECTIVE / WAIT) doubles as the English label — no separate field needed.
 - Conviction: สูง / ปานกลาง / ต่ำ
-- Calendar action: Thai shorthand ("ถือเงินสด", "เข้าเล็กได้", "Deploy ได้ — FOMC hold แล้ว")
-- Macro terms: mix Thai + English (FOMC, PCE, VIX, basis points, backwardation, breadth)
-- Tone: systematic analyst — confident about the process, honest about uncertainty in the outcome
+- Calendar action (Thai): shorthand ("ถือเงินสด", "เข้าเล็กได้", "Deploy ได้ — FOMC hold แล้ว"). Calendar action (English): matching shorthand ("Hold cash", "Small entries OK", "Deploy — Fed held").
+- Macro terms (both languages): keep FOMC, PCE, VIX, CPI, tickers, dates, and numbers in English/numerals — only the surrounding sentence changes language.
+- Tone: systematic analyst — confident about the process, honest about uncertainty in the outcome. Terse over complete: cut qualifiers before cutting facts.
 
 ---
 

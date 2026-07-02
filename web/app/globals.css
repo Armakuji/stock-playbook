@@ -287,6 +287,12 @@ body {
   to   { opacity: 1; transform: translateY(0); }
 }
 
+/* Market ticker crawl — content is duplicated once, so -50% is a seamless loop */
+@keyframes tickerCrawl {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
 }
