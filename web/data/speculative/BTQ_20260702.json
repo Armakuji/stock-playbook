@@ -1,0 +1,184 @@
+{
+  "ticker": "BTQ",
+  "companyName": "BTQ Technologies Corp.",
+  "companyDescription": "Post-quantum cryptography · QCIM quantum-secure compute-in-memory chip · QSSN quantum-safe stablecoin infrastructure · Direct beneficiary of June 22 White House quantum-security executive orders",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-02T00:00:00.000Z",
+  "price": 5.33,
+  "priceChange": -0.4,
+  "priceNote": "52-week range $2.09-$16.00; all-time high $22.00 CAD (Oct 2025). Down ~76% from ATH — small-cap post-quantum cryptography pure play riding the same policy wave as the hardware quantum names.",
+  "marketCap": "$900M",
+  "sector": "Technology / Quantum-Safe Cybersecurity",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 58,
+  "summary": "BTQ builds post-quantum cryptography infrastructure — QCIM (a quantum-secure compute-in-memory chip), QSSN (quantum-safe stablecoin infrastructure for banks/payment providers), and Bitcoin Quantum. The June 22, 2026 White House executive orders on quantum leadership and cryptographic security directly target BTQ's core business: moving federal systems to NIST-approved post-quantum cryptography, with CNSA 2.0 compliance deadlines running 2027-2035. The stock is down ~76% from its October 2025 all-time high of $22 CAD, and next earnings/corporate update (Aug 13) is the nearest hard catalyst for QCIM commercialization progress.",
+  "catalysts": [
+    {
+      "icon": "📈",
+      "name": "Q2 2026 Earnings / Shareholder Update",
+      "description": "Next scheduled corporate update. Watch for QCIM productization progress, QPerfect integration (acquisition finalized Jul 1, 2026), and QSSN pilot-to-commercial conversion signals.",
+      "urgencyLabel": "6 WEEKS",
+      "dateBadge": "Aug 13, 2026",
+      "catalystDate": "2026-08-13",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🏛️",
+      "name": "White House Quantum Security Executive Orders",
+      "description": "June 22, 2026: two executive orders — \"Ushering in the Next Frontier of Quantum Innovation\" and \"Securing the Nation Against Advanced Cryptographic Attacks\" — direct federal agencies to migrate high-value systems to NIST-approved post-quantum cryptography. CNSA 2.0 sets quantum-resistant requirements for new acquisitions starting 2027.",
+      "urgencyLabel": "SIGNED",
+      "dateBadge": "Jun 22, 2026",
+      "catalystDate": "2026-06-22",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "🤝",
+      "name": "QPerfect Acquisition + US Government Engagement",
+      "description": "Completed final approval for full acquisition of QPerfect (Jul 1, 2026), advancing digital-twin/emulation/control capabilities. BTQ also appointed a US Strategic Advisor to deepen engagement with government stakeholders and national security organizations.",
+      "urgencyLabel": "CLOSED",
+      "dateBadge": "Jul 1, 2026",
+      "catalystDate": "2026-07-01",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "No single clean binary event — unlike an FDA date, BTQ's catalysts (policy tailwind, product commercialization) are diffuse and could take longer than the market currently expects to convert into revenue",
+    "Pre-commercial-scale — QCIM is still moving \"toward productization\" per the company's own language; no confirmed large customer contract yet",
+    "Competitive post-quantum cryptography landscape is crowded — many players (including large incumbents) are building NIST-compliant solutions",
+    "Down ~76% from its October 2025 ATH — shows this name can also give back gains just as fast when policy-news enthusiasm fades",
+    "Micro-cap liquidity risk — thin trading can amplify both up and down moves beyond what the underlying news justifies"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings / Corporate Update", "dateRange": "Aug 13, 2026", "note": "QCIM productization + QPerfect integration + QSSN pilot progress", "est": "Commercial progress update expected", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -55, "price": 2.40 },
+    { "label": "Base", "color": "yellow", "pct": 70, "price": 9.06 },
+    { "label": "Bull", "color": "green", "pct": 160, "price": 13.86 },
+    { "label": "Moon", "color": "purple", "pct": 300, "price": 21.32 }
+  ],
+  "analystTargets": [],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "BTQ's federal/government-adjacent business is driven by national-security policy mandates (CNSA 2.0 compliance timelines), not FOMC rate decisions.",
+    "inflationNote": "Early-stage R&D cost base is mostly personnel — modest wage-inflation sensitivity, not a primary driver.",
+    "sectorImpact": "LOW-MEDIUM. The policy tailwind is structural, but as a pre-revenue-scale micro-cap, BTQ's trading multiple is more exposed to the current hawkish-Fed backdrop (hike priced by October) than the underlying government-security narrative alone would suggest.",
+    "summary": "Fed risk LOW for the policy catalyst itself, but this is a thin, pre-revenue-scale micro-cap — general risk-off sentiment from a hawkish Fed can move it as much as company news."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 5.33, "note": "Current price — 76% below the October 2025 ATH", "timing": "Now (2-3% max)" },
+      { "label": "Entry 2", "level": 4.69, "rangeMax": 5.10, "note": "Recent support zone", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 3.73, "note": "Deep dip — high conviction add only", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 9.06, "pct": 70.0, "note": "Base — steady QCIM/QSSN commercialization progress, no fresh government contract" },
+    "tp2": { "price": 13.86, "pct": 160.0, "note": "Bull — a named federal/enterprise contract or CNSA 2.0-driven customer win" },
+    "tp3": { "price": 21.32, "pct": 300.0, "note": "Moon — return toward the October 2025 ATH on a major government post-quantum security contract", "moon": true },
+    "stopLoss": {
+      "tight": 4.26, "tightPct": -20.0, "tightNote": "Below recent support — policy tailwind narrative losing steam",
+      "hard": 2.40, "hardPct": -55.0, "hardNote": "Near/below 52-week lows — quantum-security policy story stalls or QCIM commercialization slips materially",
+      "riskReward": "2.9 : 1", "rrNote": "Entry ($5.33) vs TP2 ($13.86)", "rrWarning": "Decent asymmetry ✅ — but no single dated binary event, this is a slower-burn policy/product story"
+    },
+    "verdict": "ค่าขนม SPECULATIVE — 2-3% max. Base (steady commercialization) → $9.06 (+70%), Bull (named contract win) → $13.86 (+160%), Moon (major gov security deal, ATH retest) → $21.32 (+300%). No hard catalyst date — size small and be patient.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "Quantum-policy-adjacent small-caps have run hard on White House/Commerce Dept announcements even without a company-specific award — the May 2026 quantum equity-stake news moved the entire sector, hardware and cryptography names alike.",
+    "preRunupTiming": "days-weeks ก่อน policy headline (unpredictable timing)",
+    "preRunupPct": "+15-40%",
+    "postWin": {
+      "avgPct": 31,
+      "range": "+30% to +33%",
+      "note": "May 21, 2026 quantum equity-stake announcement: D-Wave +33%, Rigetti +30%, Infleqtion +31% in a single day. BTQ is a different sub-sector (post-quantum cryptography vs. quantum hardware) but sits in the same policy-driven news cycle — a named federal cryptography contract would likely trigger a similar-scale reaction given BTQ's smaller float.",
+      "exampleDate": "May 2026"
+    },
+    "postLose": {
+      "avgPct": -60,
+      "range": "-40% to -76%",
+      "note": "BTQ itself has already fallen ~76% from its October 2025 all-time high of $22 CAD as early enthusiasm cooled without a hard commercial contract landing — direct evidence of how far this specific name can fall on narrative fade alone.",
+      "exampleDate": "Oct 2025 - Jul 2026"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "2% — no single dated binary catalyst (unlike the FDA plays on this list), thin micro-cap liquidity, and a company still describing its lead product as \"moving toward productization\" rather than commercially scaled."
+    },
+    "stopPreCatalyst": { "pct": -20, "price": 4.26, "note": "หลุด $4.26 = narrative policy tailwind อ่อนแรงลง" },
+    "stopPostCatalyst": { "pct": -55, "note": "ถ้า Q2 update ไม่มีความคืบหน้าเชิงพาณิชย์ชัดเจน — exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "QBTS",
+      "event": "US Commerce Dept Quantum Equity-Stake Announcement",
+      "date": "May 2026",
+      "movePct": 33,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same federal quantum-policy news cycle BTQ now sits in following the June 22 executive orders — shows the scale of reaction when a quantum-adjacent name gets direct government validation."
+    },
+    {
+      "ticker": "BTQ",
+      "event": "BTQ's own run to its October 2025 all-time high",
+      "date": "Oct 2025",
+      "movePct": 300,
+      "days": 90,
+      "outcome": "mixed",
+      "note": "BTQ itself ran to a $22 CAD ATH in late 2025 on early post-quantum cryptography enthusiasm, before fading ~76% as the story took longer than expected to convert into contracts — direct evidence this specific stock is capable of the kind of move the Moon case assumes, both up and back down."
+    }
+  ],
+  "sources": [
+    "https://www.stocktitan.net/overview/BTQ/",
+    "https://www.stocktitan.net/sec-filings/BTQ/6-k-btq-technologies-corp-current-report-foreign-issuer-e83fcb3fc0b7.html",
+    "https://www.prnewswire.com/news-releases/btq-technologies-appoints-brandt-pasco-as-us-strategic-advisor-for-us-post-quantum-cryptography-and-security-302807518.html",
+    "https://www.cnbc.com/2026/05/21/quantum-stocks--us-taking-equity-stakes.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "BTQ สร้าง infrastructure ด้าน post-quantum cryptography — QCIM (ชิป quantum-secure compute-in-memory), QSSN (infrastructure quantum-safe สำหรับ stablecoin ของธนาคาร/payment provider) และ Bitcoin Quantum executive order ของ White House วันที่ 22 มิ.ย. 2026 เรื่อง quantum leadership และ cryptographic security เล็งตรงมาที่ธุรกิจหลักของ BTQ — ย้ายระบบรัฐบาลไปใช้ post-quantum cryptography ที่ NIST รับรอง โดยมี deadline compliance CNSA 2.0 ตั้งแต่ปี 2027-2035 หุ้นร่วงมาแล้ว ~76% จาก all-time high ต.ค. 2025 ที่ $22 CAD ส่วนอัปเดตผลประกอบการ/corporate update ถัดไป (13 ส.ค.) คือ catalyst ที่ชัดเจนที่สุดสำหรับความคืบหน้า QCIM commercialization",
+      "priceNote": "52-week range $2.09-$16.00 all-time high $22.00 CAD (ต.ค. 2025) ร่วงมา ~76% จาก ATH — หุ้น post-quantum cryptography เล็กที่อยู่ใน policy wave เดียวกับกลุ่ม quantum hardware",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "Q2 2026 Earnings / Shareholder Update", "description": "อัปเดต corporate ถัดไปตามกำหนด จับตาความคืบหน้า QCIM productization, การ integrate QPerfect (ปิดดีล acquire 1 ก.ค. 2026) และสัญญาณ QSSN จาก pilot ไปสู่ commercial" },
+        { "name": "Executive Order ความมั่นคง Quantum จาก White House", "description": "22 มิ.ย. 2026: executive order สองฉบับ — เรื่อง quantum innovation และ cryptographic security — สั่งให้หน่วยงานรัฐย้ายระบบสำคัญไปใช้ post-quantum cryptography ที่ NIST รับรอง CNSA 2.0 กำหนดมาตรฐาน quantum-resistant สำหรับการจัดซื้อใหม่ตั้งแต่ปี 2027" },
+        { "name": "ปิดดีล QPerfect + engagement กับรัฐบาลสหรัฐฯ", "description": "ปิดดีล acquire QPerfect เต็มรูปแบบ (1 ก.ค. 2026) เสริมความสามารถด้าน digital-twin/emulation/control BTQ ยังแต่งตั้ง US Strategic Advisor เพื่อกระชับความสัมพันธ์กับหน่วยงานความมั่นคงของรัฐบาล" }
+      ],
+      "risks": [
+        "ไม่มี binary event เดี่ยวๆ ที่ชัดเจน — ต่างจากวัน FDA catalyst ของ BTQ (policy tailwind, product commercialization) เป็นเรื่องกระจาย อาจใช้เวลานานกว่าที่ตลาดคาดกว่าจะแปลงเป็น revenue",
+        "ยังไม่ถึงระดับ commercial scale — QCIM ยังอยู่ระหว่าง \"มุ่งสู่ productization\" ตามคำพูดของบริษัทเอง ยังไม่มี contract ลูกค้าใหญ่ที่ยืนยันชัดเจน",
+        "ตลาด post-quantum cryptography แข่งขันสูง — ผู้เล่นหลายรายรวมถึงบริษัทใหญ่กำลังสร้าง solution ที่ compliant กับ NIST เหมือนกัน",
+        "ร่วงมาแล้ว ~76% จาก ATH เดือน ต.ค. 2025 — แสดงว่าหุ้นตัวนี้คืนกำไรได้เร็วพอกันเมื่อความตื่นเต้นจากข่าว policy จางลง",
+        "ความเสี่ยงสภาพคล่อง micro-cap — ปริมาณซื้อขายบางทำให้ราคาแกว่งแรงเกินกว่าข่าวจริงทั้งขาขึ้นและขาลง"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ธุรกิจของ BTQ ที่เกี่ยวกับรัฐบาลขับเคลื่อนด้วย policy ความมั่นคงแห่งชาติ (deadline compliance CNSA 2.0) ไม่ใช่การตัดสินใจ FOMC",
+        "inflationNote": "ต้นทุน R&D ระยะแรกส่วนใหญ่คือ personnel — sensitive กับ wage inflation เล็กน้อย ไม่ใช่ตัวขับเคลื่อนหลัก",
+        "sectorImpact": "ต่ำถึงปานกลาง tailwind นโยบายเป็นเรื่อง structural แต่ในฐานะ micro-cap ก่อนถึง revenue scale จริง multiple การเทรดของ BTQ sensitive กับบรรยากาศ hawkish Fed ตอนนี้ (hike price ภายใน ต.ค.) มากกว่าที่ narrative ความมั่นคงรัฐบาลอย่างเดียวจะบ่งชี้",
+        "summary": "ความเสี่ยง Fed ต่ำสำหรับตัว policy catalyst เอง แต่นี่คือ micro-cap เทรดบางก่อนถึง revenue scale จริง — sentiment risk-off จาก hawkish Fed ขยับราคาได้พอๆ กับข่าวบริษัท"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม 2-3% max Base (commercialization คืบหน้าต่อเนื่อง) → $9.06 (+70%) Bull (ได้ contract รัฐ/enterprise ชัดเจน) → $13.86 (+160%) Moon (ดีลความมั่นคง quantum ใหญ่จากรัฐ กลับไปใกล้ ATH) → $21.32 (+300%) ไม่มีวัน catalyst ตายตัว — sizing เล็กและอดทนรอ",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน ต่ำกว่า ATH ต.ค. 2025 ถึง 76%", "timing": "ตอนนี้ (2-3% max)" },
+          { "note": "โซนแนวรับล่าสุด", "timing": "ถ้าย่อ" },
+          { "note": "โซนย่อลึก — เข้าเฉพาะมั่นใจสูง", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Base — QCIM/QSSN commercialization คืบหน้าต่อเนื่อง ไม่มี contract รัฐใหม่" },
+        "tp2": { "note": "Bull — ได้ contract รัฐบาล/enterprise หรือลูกค้าจาก CNSA 2.0 compliance" },
+        "tp3": { "note": "Moon — กลับไปใกล้ ATH ต.ค. 2025 จากดีลความมั่นคง quantum ใหญ่ของรัฐ", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดแนวรับล่าสุด = narrative policy tailwind อ่อนแรง",
+          "hardNote": "ใกล้/หลุด 52-week low = policy story ความมั่นคง quantum หยุดชะงัก หรือ QCIM commercialization ช้ากว่าคาดมาก",
+          "rrNote": "Entry ($5.33) เทียบ TP2 ($13.86)",
+          "rrWarning": "Asymmetry พอใช้ ✅ — แต่ไม่มี binary event เดี่ยวตายตัว เป็น policy/product story ที่ค่อยๆ สุก"
+        }
+      },
+      "estimateDates": [
+        { "event": "Q2 2026 Earnings / Corporate Update", "note": "ความคืบหน้า QCIM productization + QPerfect integration + QSSN pilot" }
+      ]
+    }
+  }
+}

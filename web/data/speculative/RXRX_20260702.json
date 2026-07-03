@@ -1,0 +1,184 @@
+{
+  "ticker": "RXRX",
+  "companyName": "Recursion Pharmaceuticals, Inc.",
+  "companyDescription": "AI Drug Discovery Platform · REC-4881 Phase 2 success in FAP with active FDA registrational-pathway engagement · Cash runway to early 2028 with reduced burn — de-risked balance sheet for a clinical-stage biotech",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-02T00:00:00.000Z",
+  "price": 3.87,
+  "priceChange": 5.31,
+  "priceNote": "Up +5.31% today, +6.4% over the past month. REC-4881 (FAP) Phase 2 data + FDA engagement on a registrational pathway is the clearest near-term catalyst since our Jun 26 report.",
+  "marketCap": "$2.05B",
+  "sector": "Healthcare / Biotechnology (AI Drug Discovery)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 68,
+  "summary": "Recursion's AI-driven drug discovery platform now has a real near-term regulatory storyline: REC-4881 showed strong Phase 2 efficacy in familial adenomatous polyposis (FAP), a rare genetic condition, and the FDA is actively engaged on a potential registrational pathway — an update is expected 2H26. REC-4539 (LSD1 inhibitor) just dosed its first Phase 1 patient. Q1 2026 beat estimates and cash burn came in \"significantly reduced,\" with guidance for under $390M burn supporting runway into early 2028 without new financing — a real de-risking versus the typical cash-burning clinical biotech. Morgan Stanley just raised its target to $5.50; other analysts cite a wider range up to $9.",
+  "catalysts": [
+    {
+      "icon": "🧬",
+      "name": "REC-4881 Registrational Pathway Update (FAP)",
+      "description": "REC-4881 (FAP inhibitor / MEK1/2) showed strong Phase 2 polyp-reduction efficacy in familial adenomatous polyposis. FDA engagement is underway to define a potential registrational pathway — since there's no regulatory precedent in FAP, Recursion is leaning on natural history data and its AI platform to support the plan. Update expected 2H26.",
+      "urgencyLabel": "2H 2026",
+      "dateBadge": "H2 2026",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "💊",
+      "name": "REC-4539 Phase 1 — First Patient Dosed",
+      "description": "REC-4539 (LSD1 inhibitor) is a platform-derived, selective, brain-penetrant molecule engineered for a reversible mechanism to reduce on-target platelet toxicity — a known class-wide problem for LSD1 inhibitors. First patient dosed marks the start of the Phase 1 readout clock.",
+      "urgencyLabel": "PHASE 1 STARTED",
+      "dateBadge": "2026",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "💰",
+      "name": "Cash Runway De-Risking",
+      "description": "2026 guidance reaffirmed at under $390M operational cash burn — described as \"significantly reduced\" — supporting runway into early 2028 without additional financing. Materially lowers dilution risk versus a typical clinical-stage biotech at this market cap.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "2026-2028",
+      "badgeColor": "green",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "No regulatory precedent exists for a FAP registrational pathway — the FDA engagement could still land on requiring a larger confirmatory trial rather than accelerated approval",
+    "Platform/pipeline company risk — RXRX runs many parallel AI-discovered programs; a registrational-pathway setback on the lead asset (REC-4881) would remove the single biggest near-term catalyst",
+    "Some analysts see the stock as already fairly/over-valued relative to near-term fundamentals (one model cited RXRX as up to 67% overvalued post pipeline updates) even as others see upside to $9",
+    "REC-4539 is only at first-patient-dosed stage in Phase 1 — years from any potential approval, not a near-term catalyst",
+    "AI drug discovery platform companies broadly trade on narrative/multiple as much as clinical data — sentiment swings can be large in either direction on unrelated sector news"
+  ],
+  "estimateDates": [
+    { "event": "REC-4881 Registrational Pathway Update", "dateRange": "2H 2026", "note": "FDA engagement outcome on accelerated vs. standard pathway for FAP", "est": "Update expected, outcome uncertain", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -45, "price": 2.13 },
+    { "label": "Base", "color": "yellow", "pct": 90, "price": 7.35 },
+    { "label": "Bull", "color": "green", "pct": 200, "price": 11.61 },
+    { "label": "Moon", "color": "purple", "pct": 380, "price": 18.58 }
+  ],
+  "analystTargets": [
+    { "firm": "Morgan Stanley", "target": 5.50, "rating": "Buy", "note": "Raised from $5.00 on pipeline progress" },
+    { "firm": "Consensus (4 analysts, 6-mo)", "target": 9.00, "rating": "Buy", "note": "Median target — wider range reflects REC-4881 registrational-pathway optionality" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "RXRX's de-risked cash runway (into early 2028 without new financing) makes it notably less rate-sensitive than a typical pre-revenue biotech that needs to raise capital soon.",
+    "inflationNote": "Clinical trial and platform R&D costs are largely personnel-driven — modest inflation exposure, not a primary risk factor.",
+    "sectorImpact": "LOW-MEDIUM. The extended cash runway is a genuine buffer against the current hawkish-Fed backdrop (hike priced by October); most of RXRX's near-term catalysts are clinical/regulatory, not financing-dependent.",
+    "summary": "Fed risk LOW relative to peers — the reduced-burn, extended-runway balance sheet is a real structural advantage that insulates RXRX from the hawkish-Fed multiple compression hitting less-funded biotech peers harder."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 3.87, "note": "Current price, up on today's momentum", "timing": "Now (2-3% max)" },
+      { "label": "Entry 2", "level": 3.41, "rangeMax": 3.70, "note": "Pullback from today's gain, still above recent base", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 2.71, "note": "Deep dip — high conviction add only", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 7.35, "pct": 90.0, "note": "Base — REC-4881 pathway update comes back constructive, no major setback" },
+    "tp2": { "price": 11.61, "pct": 200.0, "note": "Bull — clear accelerated-approval-eligible pathway confirmed for REC-4881" },
+    "tp3": { "price": 18.58, "pct": 380.0, "note": "Moon — REC-4881 pathway clarity plus a second pipeline asset (REC-4539 or other) inflects positively", "moon": true },
+    "stopLoss": {
+      "tight": 3.10, "tightPct": -20.0, "tightNote": "Below recent support — momentum fading ahead of the 2H26 pathway update",
+      "hard": 2.13, "hardPct": -45.0, "hardNote": "REC-4881 registrational pathway setback — FDA requires a large confirmatory trial instead",
+      "riskReward": "4.4 : 1", "rrNote": "Entry ($3.87) vs TP2 ($11.61)", "rrWarning": "Strong asymmetry ✅ — best R/R on this refresh batch, backed by a de-risked balance sheet"
+    },
+    "verdict": "ค่าขนม SPECULATIVE — 2-3% max. Base (constructive pathway update) → $7.35 (+90%), Bull (accelerated pathway confirmed) → $11.61 (+200%), Moon (pathway + second pipeline win) → $18.58 (+380%). Cash runway to 2028 is a real de-risking edge over typical clinical-biotech turbo picks.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "regulatory_approval",
+    "preRunup": "AI drug discovery stocks tend to run on conference presentations and pipeline data drops even ahead of hard regulatory readouts — RXRX's Goldman Sachs Healthcare Conference appearance on Jun 9 already generated fresh interest before this latest move.",
+    "preRunupTiming": "2-6 สัปดาห์ก่อน pathway update, ผ่าน conference/data drops",
+    "preRunupPct": "+10-25%",
+    "postWin": {
+      "avgPct": 90,
+      "range": "+90% to +380%",
+      "note": "A confirmed accelerated/registrational pathway for a rare-disease indication with no prior regulatory precedent would be a major re-rating event for a platform biotech — RXRX's own +6.4% one-month move on early pipeline optimism suggests real re-rating sensitivity to positive regulatory signals.",
+      "exampleDate": "Jun 2026 (pipeline optimism run)"
+    },
+    "postLose": {
+      "avgPct": -40,
+      "range": "-30% to -50%",
+      "note": "A setback requiring a large confirmatory trial instead of an accelerated pathway would remove the nearest-term catalyst and could trigger a re-rate back toward pure-platform valuation, though the extended cash runway limits the downside versus a cash-strapped peer.",
+      "exampleDate": "Typical pattern for platform biotech regulatory-pathway setbacks"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "3% — full turbo sizing given the de-risked cash runway (into 2028) reduces the financing-driven downside tail relative to peers, even though the FAP registrational pathway is itself unprecedented and uncertain."
+    },
+    "stopPreCatalyst": { "pct": -20, "price": 3.10, "note": "หลุด $3.10 = momentum ก่อน 2H26 update อ่อนแรงลง" },
+    "stopPostCatalyst": { "pct": -45, "note": "ถ้า FDA ต้องการ confirmatory trial ใหญ่แทน accelerated pathway — exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "RXRX",
+      "event": "Q1 2026 Earnings Beat + AI Pipeline Advance",
+      "date": "Jun 2026",
+      "movePct": 6,
+      "days": 30,
+      "outcome": "good",
+      "note": "RXRX's own one-month +6.4% run on Q1 beat and pipeline optimism, ahead of any hard regulatory readout — shows real market sensitivity to incremental positive pipeline newsflow, which should scale up materially on the actual 2H26 pathway decision."
+    },
+    {
+      "ticker": "RXRX",
+      "event": "REC-4881 Phase 2 FAP Data Release",
+      "date": "May 2026",
+      "movePct": -8,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "Shares initially pulled back even on positive Phase 2 efficacy data as investors digested the lack of regulatory precedent in FAP — shows the market wants pathway clarity, not just efficacy data, which is exactly what the 2H26 FDA update should provide."
+    }
+  ],
+  "sources": [
+    "https://www.timothysykes.com/news/recursion-pharmaceuticals-inc-rxrx-news-2026_06_01/",
+    "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52379571/recursion-eyes-breakthrough-with-rec-4881-drug-for-rare-genetic-condition-but-shares-pull-back",
+    "https://finance.yahoo.com/sectors/healthcare/articles/look-recursion-pharmaceuticals-rxrx-valuation-031942917.html",
+    "https://ir.recursion.com/news-events/press-releases"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "แพลตฟอร์ม AI drug discovery ของ Recursion ตอนนี้มี storyline ด้าน regulatory ระยะใกล้ที่ชัดเจนขึ้น: REC-4881 แสดง Phase 2 efficacy ที่แข็งแกร่งใน familial adenomatous polyposis (FAP) โรคทางพันธุกรรมหายาก และ FDA กำลัง engage เรื่อง registrational pathway ที่เป็นไปได้ — คาดมีอัปเดตช่วง 2H26 REC-4539 (LSD1 inhibitor) เพิ่ง dose ผู้ป่วยรายแรกใน Phase 1 Q1 2026 เกินคาด และ cash burn ลดลง \"อย่างมีนัยสำคัญ\" โดย guidance ต่ำกว่า $390M รองรับ runway ถึงต้นปี 2028 โดยไม่ต้องระดมทุนใหม่ — เป็นการลดความเสี่ยงจริงเทียบกับ biotech clinical ทั่วไปที่เผาเงินสด Morgan Stanley เพิ่งปรับเป้าเป็น $5.50 นักวิเคราะห์รายอื่นให้ช่วงกว้างถึง $9",
+      "priceNote": "วันนี้ขึ้น +5.31% เดือนที่ผ่านมา +6.4% ข้อมูล Phase 2 ของ REC-4881 (FAP) พร้อม FDA engagement เรื่อง registrational pathway คือ catalyst ระยะใกล้ที่ชัดเจนที่สุดตั้งแต่ report 26 มิ.ย. ของเรา",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "อัปเดต Registrational Pathway ของ REC-4881 (FAP)", "description": "REC-4881 (FAP inhibitor / MEK1/2) แสดง efficacy การลด polyp ที่แข็งแกร่งใน Phase 2 สำหรับ familial adenomatous polyposis FDA กำลัง engage เพื่อกำหนด registrational pathway ที่เป็นไปได้ — เนื่องจากไม่มี regulatory precedent ใน FAP มาก่อน Recursion ใช้ natural history data และแพลตฟอร์ม AI สนับสนุนแผน คาดอัปเดต 2H26" },
+        { "name": "REC-4539 Phase 1 — Dose ผู้ป่วยรายแรก", "description": "REC-4539 (LSD1 inhibitor) เป็นโมเลกุลจากแพลตฟอร์ม เลือกเฉพาะ ผ่าน brain-penetrant ออกแบบให้ mechanism reversible ลดปัญหา platelet toxicity ที่เป็นปัญหาทั่วทั้ง class ของ LSD1 inhibitor การ dose ผู้ป่วยรายแรกเริ่มนับเวลาสู่ผล Phase 1" },
+        { "name": "ลดความเสี่ยงด้าน Cash Runway", "description": "guidance ปี 2026 ยืนยันเผาเงินสดต่ำกว่า $390M — อธิบายว่า \"ลดลงอย่างมีนัยสำคัญ\" — รองรับ runway ถึงต้นปี 2028 โดยไม่ต้องระดมทุนเพิ่ม ลดความเสี่ยง dilution เทียบกับ biotech clinical ทั่วไปที่ market cap ระดับนี้" }
+      ],
+      "risks": [
+        "ไม่มี regulatory precedent สำหรับ registrational pathway ใน FAP มาก่อน — FDA engagement อาจลงเอยที่ต้องการ confirmatory trial ขนาดใหญ่แทน accelerated approval",
+        "ความเสี่ยงบริษัท platform/pipeline — RXRX มีหลายโปรแกรมคู่ขนานที่ค้นพบด้วย AI ถ้า registrational pathway ของ asset หลัก (REC-4881) สะดุด จะเสีย catalyst ระยะใกล้ที่ใหญ่ที่สุดไป",
+        "นักวิเคราะห์บางรายมองว่าหุ้นแพงเกินไปเทียบกับ fundamental ระยะใกล้ (โมเดลหนึ่งชี้ว่า overvalue ถึง 67% หลัง pipeline update) ขณะที่รายอื่นเห็น upside ถึง $9",
+        "REC-4539 เพิ่ง dose ผู้ป่วยรายแรกใน Phase 1 — ยังอีกหลายปีกว่าจะถึง approval ไม่ใช่ catalyst ระยะใกล้",
+        "บริษัท AI drug discovery platform มักเทรดตาม narrative/multiple พอๆ กับข้อมูล clinical — sentiment แกว่งได้แรงทั้งสองทางจากข่าว sector ที่ไม่เกี่ยวข้องโดยตรง"
+      ],
+      "macroRisk": {
+        "rateOutlook": "cash runway ที่ลดความเสี่ยงแล้วของ RXRX (ถึงต้นปี 2028 โดยไม่ต้องระดมทุนใหม่) ทำให้ sensitive กับดอกเบี้ยน้อยกว่า biotech pre-revenue ทั่วไปที่ต้องระดมทุนเร็วๆ นี้",
+        "inflationNote": "ต้นทุน clinical trial และ platform R&D ส่วนใหญ่คือ personnel — exposure ต่อ inflation ไม่มากไม่ใช่ปัจจัยเสี่ยงหลัก",
+        "sectorImpact": "ต่ำถึงปานกลาง runway ที่ยาวเป็นกันชนจริงต่อบรรยากาศ hawkish Fed ตอนนี้ (hike price ภายใน ต.ค.) catalyst ระยะใกล้ส่วนใหญ่ของ RXRX เป็นเรื่อง clinical/regulatory ไม่ใช่พึ่ง financing",
+        "summary": "ความเสี่ยง Fed ต่ำเทียบกับคู่แข่ง — งบดุลที่ burn ลดลงและ runway ยาวเป็นข้อได้เปรียบเชิงโครงสร้างจริงที่ป้องกัน RXRX จาก multiple compression ของ hawkish Fed ที่กระทบ biotech peer ที่ทุนน้อยกว่าหนักกว่า"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม 2-3% max Base (pathway update ออกมาเชิงบวก) → $7.35 (+90%) Bull (ยืนยัน accelerated pathway) → $11.61 (+200%) Moon (pathway ชัดเจน + pipeline อีกตัวinflect บวก) → $18.58 (+380%) cash runway ถึงปี 2028 คือข้อได้เปรียบจริงเทียบ biotech turbo ทั่วไป",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน กำลังขึ้นจาก momentum วันนี้", "timing": "ตอนนี้ (2-3% max)" },
+          { "note": "ย่อจากกำไรวันนี้ ยังอยู่เหนือฐานล่าสุด", "timing": "ถ้าย่อ" },
+          { "note": "โซนย่อลึก — เข้าเฉพาะมั่นใจสูง", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Base — อัปเดต REC-4881 pathway ออกมาเชิงบวก ไม่มี setback ใหญ่" },
+        "tp2": { "note": "Bull — ยืนยัน pathway ที่ eligible สำหรับ accelerated approval ของ REC-4881" },
+        "tp3": { "note": "Moon — pathway ชัดเจน บวกกับ pipeline asset ตัวที่สอง (REC-4539 หรืออื่น) inflect เชิงบวก", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดแนวรับล่าสุด = momentum อ่อนแรงก่อนอัปเดต 2H26",
+          "hardNote": "REC-4881 registrational pathway สะดุด — FDA ต้องการ confirmatory trial ใหญ่แทน",
+          "rrNote": "Entry ($3.87) เทียบ TP2 ($11.61)",
+          "rrWarning": "Asymmetry แข็งแกร่ง ✅ — R/R ดีที่สุดใน batch refresh นี้ หนุนด้วยงบดุลที่ลดความเสี่ยงแล้ว"
+        }
+      },
+      "estimateDates": [
+        { "event": "อัปเดต Registrational Pathway ของ REC-4881", "note": "ผล FDA engagement เรื่อง accelerated vs standard pathway สำหรับ FAP" }
+      ]
+    }
+  }
+}

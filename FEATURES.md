@@ -43,7 +43,7 @@
 - `scripts/fetch-backtest-prices.mjs` — ดึงราคา checkpoint (30/60/90) + path 14 วัน + near-miss outcomes → caches  (`npm run backtest:fetch`)
 - `scripts/validate-reports.mjs` — sourcing guardrail  (`npm run validate`)
 - `scripts/push-report.sh` — git add/commit/push + guardrail gate
-- `journal-validator` skill — validate open trades vs live price (hold/cut analysis)
+- `analyze-journal` skill — validate open trades vs live price (hold/cut analysis + add-more call), persists to `private/journal-validation.json`
 
 ---
 

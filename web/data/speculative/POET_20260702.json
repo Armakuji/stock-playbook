@@ -1,0 +1,181 @@
+{
+  "ticker": "POET",
+  "companyName": "POET Technologies Inc.",
+  "companyDescription": "Photonic Integrated Circuits (PICs) for AI optical networks · Thesis reset after Marvell/Celestial AI order cancellation — now diversifying via Lumilens ($50M+ PO), Lessengers (1.6T transceiver JV), and LITEON partnerships",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-02T00:00:00.000Z",
+  "price": 9.79,
+  "priceChange": -1.4,
+  "priceNote": "Down ~19% from the Jun 24 report ($12.15) after Marvell canceled all Celestial AI-sourced purchase orders (Apr 23) — thesis has shifted from single-hyperscaler speculation to a diversified multi-partner optical transceiver strategy",
+  "marketCap": "$1.7B",
+  "sector": "Technology / Semiconductors (Photonics)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 55,
+  "summary": "POET's thesis took a real hit: Marvell (which acquired Celestial AI) canceled all purchase orders sourced through that relationship on Apr 23, 2026, alleging a confidentiality breach — and POET now faces related legal action. The stock is down ~19% from our Jun 24 report as a result. But the company hasn't stood still: a Lumilens supply deal (initial $50M PO, framework up to $500M+ over 5 years), a Lessengers joint development for a 1.6T 2x DR4 transceiver (samples targeted Q2 2026), and a LITEON strategic collaboration all point to a more diversified — if less singular — optical interconnect story. This is now a real turnaround/re-proof bet, not a clean momentum play.",
+  "catalysts": [
+    {
+      "icon": "🤝",
+      "name": "Lumilens Supply Agreement Scale-Up",
+      "description": "Initial $50M purchase order for EOI-based engines, with a framework that could reach $500M+ over five years if volumes ramp as planned. The clearest concrete revenue catalyst remaining after the Marvell/Celestial AI cancellation.",
+      "urgencyLabel": "RAMPING",
+      "dateBadge": "2026",
+      "badgeColor": "green",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "⚡",
+      "name": "Lessengers 1.6T Transceiver Samples",
+      "description": "Joint development with Lessengers targeting a 1.6T 2x DR4 optical transceiver module for AI clusters and hyperscale data centers. Samples were targeted for Q2 2026 — watch for confirmation these shipped and initial customer feedback.",
+      "urgencyLabel": "Q2 2026 TARGET",
+      "dateBadge": "Q2 2026",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🏭",
+      "name": "LITEON Strategic Collaboration",
+      "description": "Co-development agreement with LITEON Technology for next-generation optical communication modules targeting AI and hyperscale data centers — a second major partner beyond Lumilens/Lessengers, evidence of the diversification strategy post-Marvell.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "2026",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Marvell/Celestial AI order cancellation (Apr 23, 2026) is a real, confirmed negative — not speculation — and has already triggered related legal action against the company",
+    "The \"new hyperscaler customer\" narrative from our prior report is dead; the current thesis relies on three newer, less-proven partnerships (Lumilens, Lessengers, LITEON) actually converting to revenue at scale",
+    "Heavy shareholder dilution — shares outstanding reportedly up ~74% over the past year, a real drag on per-share upside even if the business recovers",
+    "Analyst price targets found in research were inconsistent/conflicting with the current price — treat any single analyst number with caution until confirmed fresh",
+    "Reputational overhang — a confidentiality-breach allegation from a major customer can make other potential hyperscaler/OEM partners more cautious about engaging"
+  ],
+  "estimateDates": [
+    { "event": "Lessengers 1.6T Transceiver Samples", "dateRange": "Q2 2026 (target)", "note": "Confirmation of sample shipment + initial customer feedback would be the clearest proof point of the diversification thesis", "est": "Samples targeted, not yet confirmed shipped", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -45, "price": 5.38 },
+    { "label": "Base", "color": "yellow", "pct": 65, "price": 16.15 },
+    { "label": "Bull", "color": "green", "pct": 150, "price": 24.47 },
+    { "label": "Moon", "color": "purple", "pct": 270, "price": 36.22 }
+  ],
+  "analystTargets": [],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "POET is pre-profit and dilution-dependent — a higher-for-longer rate environment raises the cost of any future capital raise needed to fund the Lumilens/Lessengers ramp.",
+    "inflationNote": "Semiconductor/photonics manufacturing costs are exposed to input-cost inflation; not the primary driver of the stock but a real secondary cost pressure.",
+    "sectorImpact": "MEDIUM. The current hawkish-Fed backdrop (rate hike priced by October per this week's market read) pressures high-multiple, pre-profit tech names broadly — on top of POET's own company-specific overhang from the Marvell cancellation.",
+    "summary": "Fed risk MEDIUM — POET's dilution-dependent balance sheet makes it more macro-sensitive than a pure binary-catalyst play; the hawkish-Fed backdrop compounds the company-specific overhang rather than being independent of it."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 9.79, "note": "Current price — already down ~19% post-Marvell cancellation news", "timing": "Now (2% max — turnaround bet)" },
+      { "label": "Entry 2", "level": 8.62, "rangeMax": 9.20, "note": "Support zone if selling continues", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 6.85, "note": "Deep dip — only if Lumilens/Lessengers thesis stays intact", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 16.15, "pct": 65.0, "note": "Base — Lumilens ramp confirms, Lessengers samples ship on schedule" },
+    "tp2": { "price": 24.47, "pct": 150.0, "note": "Bull — a new large customer (replacing the lost Marvell/Celestial AI volume) is announced" },
+    "tp3": { "price": 36.22, "pct": 270.0, "note": "Moon — full re-proof of the AI optical interconnect thesis, diversified partner base scales fast", "moon": true },
+    "stopLoss": {
+      "tight": 7.83, "tightPct": -20.0, "tightNote": "Below post-cancellation support — diversification thesis losing credibility",
+      "hard": 5.38, "hardPct": -45.0, "hardNote": "Lumilens/Lessengers/LITEON fail to convert to real revenue — thesis broken",
+      "riskReward": "2.0 : 1", "rrNote": "Entry ($9.79) vs TP2 ($24.47)", "rrWarning": "Weaker asymmetry than the other picks on this list — this is a turnaround bet, not a clean binary ⚠️"
+    },
+    "verdict": "ค่าขนม SPECULATIVE — 2% max, smaller than typical turbo sizing given this is now a turnaround/re-proof story after a confirmed negative (Marvell cancellation), not a clean momentum or binary play.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "Photonics/optical-interconnect small-caps have run hard on hyperscaler partnership speculation before (POET itself ran +70% in late April 2026 on such speculation, before the Marvell cancellation reversed it) — the pattern can repeat on a confirmed new large customer.",
+    "preRunupTiming": "unpredictable — driven by speculation/leaks ahead of confirmed announcements",
+    "preRunupPct": "+30-70%",
+    "postWin": {
+      "avgPct": 70,
+      "range": "+30% to +70%",
+      "note": "POET's own April 2026 run (+70%+ on hyperscaler partner speculation) shows the scale of reaction a confirmed major customer win can trigger — the risk is that this exact pattern already partially reversed once this year.",
+      "exampleDate": "Apr 2026"
+    },
+    "postLose": {
+      "avgPct": -19,
+      "range": "-19% to -35%",
+      "note": "The Marvell/Celestial AI cancellation itself drove roughly a 19% decline from our prior report's price — a direct, real example of the downside when a major partnership relationship breaks down.",
+      "exampleDate": "Apr-Jul 2026"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "2% — reduced from a typical 3% turbo allocation given this is now a re-proof story following a confirmed negative event, not a clean forward-looking binary catalyst."
+    },
+    "stopPreCatalyst": { "pct": -20, "price": 7.83, "note": "หลุด $7.83 = diversification thesis (Lumilens/Lessengers/LITEON) เริ่มไม่น่าเชื่อถือ" },
+    "stopPostCatalyst": { "pct": -45, "note": "ถ้า partner ใหม่ทั้งสามรายไม่แปลงเป็น revenue จริง — exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "POET",
+      "event": "Hyperscaler Partnership Speculation Run",
+      "date": "Apr 2026",
+      "movePct": 70,
+      "days": 14,
+      "outcome": "mixed",
+      "note": "POET's own stock ran 70%+ on hyperscaler partner speculation before the Marvell/Celestial AI relationship it was tied to fell apart — direct evidence this name can move violently on partnership news in either direction."
+    },
+    {
+      "ticker": "POET",
+      "event": "Marvell/Celestial AI Order Cancellation",
+      "date": "Apr 2026",
+      "movePct": -19,
+      "days": 60,
+      "outcome": "bad",
+      "note": "The confirmed cancellation of all Celestial AI-sourced purchase orders drove the stock down from the $12.15 level in our prior report to the current $9.79 — the direct downside comp for what happens when a major partnership relationship fails."
+    }
+  ],
+  "sources": [
+    "https://stockstotrade.com/news/quantum-computing-inc-qubt-news-2026_06_29/",
+    "https://247wallst.com/investing/2026/06/25/price-prediction-poet-technologies-has-117-upside-as-ai-optical-interconnect-scales/",
+    "https://www.stocktitan.net/news/POET/",
+    "https://www.macrotrends.net/stocks/charts/POET/poet-technologies/market-cap"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Thesis ของ POET โดนกระทบจริง: Marvell (ที่ acquire Celestial AI) ยกเลิก purchase order ทั้งหมดที่มาจากความสัมพันธ์นี้เมื่อ 23 เม.ย. 2026 อ้างว่าละเมิด confidentiality — และ POET กำลังเจอ legal action ที่เกี่ยวข้อง หุ้นร่วงมาแล้ว ~19% จาก report 24 มิ.ย. ของเรา แต่บริษัทไม่ได้อยู่เฉย: ดีล Lumilens (PO เริ่มต้น $50M framework สูงสุด $500M+ ใน 5 ปี), joint development กับ Lessengers สำหรับ transceiver 1.6T (ตัวอย่างเป้า Q2 2026) และความร่วมมือเชิงกลยุทธ์กับ LITEON ล้วนชี้ไปที่ story optical interconnect ที่กระจายความเสี่ยงมากขึ้น — แม้จะไม่ single-story ชัดเจนเหมือนเดิม นี่คือ bet แบบ turnaround/re-proof จริงๆ ไม่ใช่ momentum play ที่สะอาด",
+      "priceNote": "ร่วง ~19% จาก report 24 มิ.ย. ($12.15) หลัง Marvell ยกเลิก PO ทั้งหมดที่มาจาก Celestial AI (23 เม.ย.) — thesis เปลี่ยนจากการเก็งกำไร hyperscaler รายเดียว เป็นกลยุทธ์ multi-partner optical transceiver",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "Lumilens Supply Agreement ขยายตัว", "description": "PO เริ่มต้น $50M สำหรับ EOI-based engine พร้อม framework ที่อาจถึง $500M+ ใน 5 ปีถ้า volume ไปตามแผน — catalyst revenue ที่ชัดเจนที่สุดที่เหลืออยู่หลัง Marvell/Celestial AI cancellation" },
+        { "name": "Lessengers ตัวอย่าง Transceiver 1.6T", "description": "Joint development กับ Lessengers เป้า transceiver module 1.6T 2x DR4 สำหรับ AI cluster และ hyperscale data center ตัวอย่างเป้า Q2 2026 — จับตายืนยันว่าส่งจริงและ feedback จากลูกค้าเบื้องต้น" },
+        { "name": "ความร่วมมือเชิงกลยุทธ์ LITEON", "description": "ข้อตกลง co-development กับ LITEON Technology สำหรับ optical communication module รุ่นใหม่เจาะ AI และ hyperscale data center — พันธมิตรใหญ่รายที่สองนอกเหนือจาก Lumilens/Lessengers หลักฐานของกลยุทธ์กระจายความเสี่ยงหลัง Marvell" }
+      ],
+      "risks": [
+        "การยกเลิก order ของ Marvell/Celestial AI (23 เม.ย. 2026) เป็นเรื่องจริงที่ยืนยันแล้ว ไม่ใช่การเก็งกำไร — และมี legal action ที่เกี่ยวข้องเกิดขึ้นแล้ว",
+        "narrative \"hyperscaler customer ใหม่\" จาก report ก่อนหน้าของเราตายแล้ว thesis ปัจจุบันขึ้นกับพันธมิตรใหม่สามรายที่ยังพิสูจน์ตัวไม่มาก (Lumilens, Lessengers, LITEON) ว่าจะแปลงเป็น revenue จริงระดับ scale ได้",
+        "dilution หนัก — shares outstanding รายงานว่าเพิ่มขึ้น ~74% ในปีที่ผ่านมา กดดัน upside ต่อหุ้นแม้ธุรกิจจะฟื้น",
+        "เป้าราคานักวิเคราะห์ที่หาเจอมีความขัดแย้งกับราคาปัจจุบัน — ต้องระวังตัวเลขใดๆ จนกว่าจะยืนยันข้อมูลใหม่",
+        "overhang ด้านชื่อเสียง — ข้อกล่าวหาละเมิด confidentiality จากลูกค้าใหญ่อาจทำให้ hyperscaler/OEM รายอื่นระวังตัวมากขึ้นในการร่วมงานด้วย"
+      ],
+      "macroRisk": {
+        "rateOutlook": "POET ยังไม่มีกำไรและพึ่ง dilution — ดอกเบี้ยสูงต่อเนื่องเพิ่มต้นทุนการระดมทุนในอนาคตที่ต้องใช้หนุน Lumilens/Lessengers ramp",
+        "inflationNote": "ต้นทุนการผลิต semiconductor/photonics exposed กับ input-cost inflation ไม่ใช่ตัวขับเคลื่อนหลักแต่เป็นแรงกดดันรอง",
+        "sectorImpact": "ปานกลาง บรรยากาศ hawkish Fed ตอนนี้ (hike price ภายใน ต.ค.) กดดันหุ้น tech pre-profit multiple สูงโดยรวม ซ้ำเติม overhang เฉพาะตัวจาก Marvell cancellation",
+        "summary": "ความเสี่ยง Fed ปานกลาง — งบดุลที่พึ่ง dilution ของ POET ทำให้ sensitive กับ macro มากกว่าหุ้น binary catalyst ล้วนๆ บรรยากาศ hawkish Fed ซ้ำเติม overhang เฉพาะตัว ไม่ใช่ปัจจัยแยกจากกัน"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม 2% max (น้อยกว่า turbo ทั่วไป) เพราะตอนนี้เป็น turnaround/re-proof story หลังเหตุการณ์ลบที่ยืนยันแล้ว (Marvell cancellation) ไม่ใช่ binary หรือ momentum play ที่สะอาด",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน ร่วงมาแล้ว ~19% หลังข่าว Marvell cancellation", "timing": "ตอนนี้ (2% max — turnaround bet)" },
+          { "note": "โซนแนวรับถ้ายังขายต่อ", "timing": "ถ้าย่อ" },
+          { "note": "โซนย่อลึก — เข้าเฉพาะถ้า thesis Lumilens/Lessengers ยังอยู่", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Base — Lumilens ramp ยืนยัน Lessengers ส่งตัวอย่างตามกำหนด" },
+        "tp2": { "note": "Bull — ได้ลูกค้าใหญ่รายใหม่ (แทน volume ที่เสียไปจาก Marvell/Celestial AI)" },
+        "tp3": { "note": "Moon — พิสูจน์ thesis AI optical interconnect ใหม่เต็มรูปแบบ พันธมิตรกระจายตัวขยายเร็ว", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดแนวรับหลัง cancellation = thesis กระจายความเสี่ยงเริ่มไม่น่าเชื่อถือ",
+          "hardNote": "Lumilens/Lessengers/LITEON ไม่แปลงเป็น revenue จริง — thesis พัง",
+          "rrNote": "Entry ($9.79) เทียบ TP2 ($24.47)",
+          "rrWarning": "Asymmetry อ่อนกว่าตัวอื่นใน list นี้ — นี่คือ turnaround bet ไม่ใช่ binary ที่สะอาด ⚠️"
+        }
+      },
+      "estimateDates": [
+        { "event": "Lessengers ตัวอย่าง Transceiver 1.6T", "note": "ยืนยันว่าส่งตัวอย่างจริงและ feedback ลูกค้าเบื้องต้น — จุดพิสูจน์ที่ชัดเจนที่สุดของ thesis กระจายความเสี่ยง" }
+      ]
+    }
+  }
+}

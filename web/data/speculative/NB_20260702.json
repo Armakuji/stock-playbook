@@ -1,0 +1,184 @@
+{
+  "ticker": "NB",
+  "companyName": "NioCorp Developments Ltd.",
+  "companyDescription": "Critical minerals · Elk Creek niobium/scandium/titanium project — 2nd-largest indicated US rare-earth resource · $800M EXIM Bank debt financing under review · Riding Project Vault's $12B critical-minerals stockpile push",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-02T00:00:00.000Z",
+  "price": 4.81,
+  "priceChange": -1.2,
+  "priceNote": "Elk Creek underground access construction has begun; EXIM Bank is in technical due diligence (TRC-2/TRC-3) on up to $800M in debt financing — the project-finance decision is the binary catalyst",
+  "marketCap": "$700M",
+  "sector": "Materials / Critical Minerals",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 62,
+  "summary": "NioCorp's Elk Creek project holds the second-largest indicated rare-earth resource in the US (niobium, scandium, titanium) and is exactly the kind of asset the government's $12B \"Project Vault\" critical-minerals stockpile initiative is designed to fund. The company already has a $10M DPA Title III award and a preliminary term sheet for up to $800M in EXIM Bank debt financing, now working through EXIM's technical due diligence (TRC-2/TRC-3). A finalized EXIM commitment — no confirmed date, but the process is actively advancing in 2026 — would fully de-risk construction financing and is the clear binary catalyst. China's rare-earth export restrictions and the Trump-Xi summit have made this a live policy theme all year.",
+  "catalysts": [
+    {
+      "icon": "🏦",
+      "name": "EXIM Bank $800M Debt Financing Decision",
+      "description": "NioCorp holds a preliminary, non-binding indicative term sheet from the US Export-Import Bank for up to $800M in debt financing for Elk Creek. The application is now in EXIM's technical review process (TRC-2, moving toward TRC-3) ahead of final Board of Directors consideration. No confirmed decision date has been announced.",
+      "urgencyLabel": "IN REVIEW",
+      "dateBadge": "H2 2026",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "⛏️",
+      "name": "Elk Creek Construction Progress",
+      "description": "Construction of the main access to the underground portion of the Elk Creek project has begun. Nebraska has also enacted legislation unlocking ~$200M in state tax benefits over 10 years for the project.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "2026",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "🇺🇸",
+      "name": "Project Vault — $12B Critical Minerals Stockpile",
+      "description": "Trump's Project Vault combines a $10B EXIM loan facility with ~$2B in private capital to build a US strategic critical-minerals reserve. Rare-earth/critical-minerals stocks (CRML, USAR, MP) have moved sharply on related headlines all year — NB is a direct beneficiary given its EXIM application is already in process.",
+      "urgencyLabel": "POLICY TAILWIND",
+      "dateBadge": "2026",
+      "badgeColor": "green",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "EXIM financing is NOT guaranteed — it's still in technical due diligence (TRC-2/TRC-3), with no confirmed decision date; a delay or rejection removes the central thesis",
+    "Heavy dilution risk — NioCorp just priced a $100M public offering at $5.00/share, essentially at the current price, and pre-revenue mining developers typically need repeated equity raises",
+    "Pre-revenue, pre-production — Elk Creek is still under construction; actual mine economics depend on commodity prices (niobium, scandium, titanium) years out",
+    "Execution/construction risk typical of large mining infrastructure projects — cost overruns and timeline slips are common in this sector",
+    "Policy dependency — the entire critical-minerals stockpile thesis (Project Vault, DPA awards) depends on continued government prioritization; a change in administration priorities is a multi-year risk"
+  ],
+  "estimateDates": [
+    { "event": "EXIM Bank Financing Decision", "dateRange": "H2 2026 (no confirmed date)", "note": "TRC-2 technical review advancing toward TRC-3 and Board consideration", "est": "Process ongoing, timeline not disclosed", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -50, "price": 2.41 },
+    { "label": "Base", "color": "yellow", "pct": 60, "price": 7.70 },
+    { "label": "Bull", "color": "green", "pct": 140, "price": 11.54 },
+    { "label": "Moon", "color": "purple", "pct": 250, "price": 16.84 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (5 analysts)", "target": 11.70, "rating": "Strong Buy", "note": "+143% from current price" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "As a pre-revenue project-finance story, NB is genuinely rate-sensitive — the EXIM debt package's cost and NioCorp's equity-raise capacity both get harder in a higher-for-longer rate environment. The current hawkish Fed pivot (hike priced by October) is a real headwind here, unlike a pure-catalyst biotech play.",
+    "inflationNote": "Construction and equipment costs for Elk Creek are exposed to input-cost inflation; a hot CPI print raises project capex risk directly.",
+    "sectorImpact": "MEDIUM-HIGH. Unlike defense/policy names insulated from Fed moves, NB's financing-dependent thesis makes it one of the more macro-sensitive picks on this list — both the EXIM debt terms and any future equity raise get more expensive if rates stay elevated.",
+    "summary": "Fed risk MEDIUM — this is the one pick on the list where the hawkish-Fed backdrop directly affects the catalyst itself (debt financing cost/availability), not just the trading multiple."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 4.81, "note": "Current price, roughly in line with the recent $5.00 offering price", "timing": "Now (2-3% max)" },
+      { "label": "Entry 2", "level": 4.23, "rangeMax": 4.60, "note": "Below the recent offering price — better entry if dilution jitters hit", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 3.37, "note": "Deep dip zone — high conviction add only", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 7.70, "pct": 60.0, "note": "Base — construction progress continues, EXIM review advances without a final decision yet" },
+    "tp2": { "price": 11.54, "pct": 140.0, "note": "Bull — matches Street consensus target, EXIM review reaches late-stage/positive signals" },
+    "tp3": { "price": 16.84, "pct": 250.0, "note": "Moon — EXIM finalizes the $800M debt commitment, fully de-risking construction financing", "moon": true },
+    "stopLoss": {
+      "tight": 3.94, "tightPct": -18.0, "tightNote": "Below the recent offering price zone — financing sentiment souring",
+      "hard": 2.41, "hardPct": -50.0, "hardNote": "EXIM financing delayed/rejected or a dilutive down-round raise — thesis materially impaired",
+      "riskReward": "2.8 : 1", "rrNote": "Entry ($4.81) vs TP2 ($11.54)", "rrWarning": "Solid asymmetry ✅ — but dilution risk is real and ongoing, not a one-time event"
+    },
+    "verdict": "ค่าขนม SPECULATIVE — 2-3% max. Base (construction/review progress) → $7.70 (+60%), Bull (positive EXIM signals) → $11.54 (+140%), Moon (EXIM $800M finalized) → $16.84 (+250%). No confirmed decision date — this is a multi-month, not multi-week, story.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "regulatory_approval",
+    "preRunup": "Critical-minerals small-caps have historically run hard on any Trump administration policy headline (Project Vault, tariff/export-control news, DPA awards) even without a company-specific announcement — sector sympathy moves are common.",
+    "preRunupTiming": "days ก่อน policy headline (unpredictable timing)",
+    "preRunupPct": "+10-35%",
+    "postWin": {
+      "avgPct": 20,
+      "range": "+4% to +35%",
+      "note": "Critical Metals Corp (CRML) surged 35% in a single session on the Feb 2026 Project Vault announcement; USA Rare Earth (USAR) rose ~11-13% on its Serra Verde acquisition; MP Materials gained ~4% on the same Project Vault news. A company-specific EXIM finalization for NB (not just sector sentiment) would likely be a larger, more direct move given it fully unlocks construction financing.",
+      "exampleDate": "Feb-Apr 2026"
+    },
+    "postLose": {
+      "avgPct": -40,
+      "range": "-25% to -55%",
+      "note": "A rejected or indefinitely delayed EXIM application would force NioCorp toward more dilutive equity financing, likely triggering a sharp de-rate given how central the $800M debt package is to the current bull case.",
+      "exampleDate": "Hypothetical — no direct comp found; based on typical project-finance-dependent small-cap miner reaction"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "2% — smallest sizing on this list. Unlike the dated FDA catalysts, NB's EXIM decision has no confirmed timeline, meaning capital could sit for an extended, uncertain period while also carrying real dilution risk from interim equity raises."
+    },
+    "stopPreCatalyst": { "pct": -18, "price": 3.94, "note": "หลุด $3.94 = financing sentiment แย่ลง แม้ EXIM ยังไม่ตัดสิน" },
+    "stopPostCatalyst": { "pct": -50, "note": "ถ้า EXIM ปฏิเสธหรือ delay ไม่มีกำหนด หรือมี down-round raise ใหม่ — exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "CRML",
+      "event": "Project Vault $12B Critical Minerals Stockpile Announcement",
+      "date": "Feb 2026",
+      "movePct": 35,
+      "days": 1,
+      "outcome": "good",
+      "note": "Single-session move purely on sector-wide policy news, no company-specific catalyst. NB's own EXIM finalization would be a much more direct, company-specific version of this same policy theme."
+    },
+    {
+      "ticker": "USAR",
+      "event": "$2.8B Serra Verde Group Acquisition",
+      "date": "Apr 2026",
+      "movePct": 13,
+      "days": 1,
+      "outcome": "good",
+      "note": "Rare-earth producer stock jumped on a scaling/consolidation announcement — shows the sector rewards concrete steps toward de-risked, financed production, which is exactly what an EXIM commitment would represent for NB."
+    }
+  ],
+  "sources": [
+    "https://www.niocorp.com/niocorp-receives_800-million-letter-of-interest-from-exim-bank/",
+    "https://www.niocorp.com/u-s-department-of-defense-awards-up-to-10-million-to-niocorps-subsidiary-elk-creek-resources-corp/",
+    "https://www.mining.com/niocorp-advances-on-exim-loan-due-diligence/",
+    "https://www.cnbc.com/2026/02/03/rare-earths-stocks-trump-critical-minerals-stockpile-project-vault.html",
+    "https://www.fool.com/investing/2026/04/27/usa-rare-earth-just-made-a-28-billion-strategic/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "โครงการ Elk Creek ของ NioCorp ถือครอง rare-earth resource ที่ indicated ใหญ่เป็นอันดับ 2 ของสหรัฐฯ (niobium, scandium, titanium) และตรงกับที่โครงการ Project Vault มูลค่า $12B ของรัฐบาลต้องการสนับสนุน บริษัทมี DPA Title III award $10M แล้ว และมี term sheet เบื้องต้นสำหรับ EXIM Bank debt financing สูงสุด $800M ซึ่งกำลังอยู่ในขั้น technical due diligence (TRC-2/TRC-3) การอนุมัติ EXIM final (ยังไม่มีวันที่ชัดเจน แต่ process กำลังเดินหน้าในปี 2026) จะปลดล็อก construction financing เต็มรูปแบบ — คือ binary catalyst ตัวจริง มาตรการจำกัด export rare earth ของจีนและ Trump-Xi summit ทำให้ theme นี้ยังร้อนแรงตลอดปี",
+      "priceNote": "เริ่ม construction main access ของ Elk Creek แล้ว EXIM Bank อยู่ใน technical due diligence (TRC-2/TRC-3) สำหรับ debt financing สูงสุด $800M — การตัดสิน project finance คือ binary catalyst",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "EXIM Bank ตัดสิน Debt Financing $800M", "description": "NioCorp มี term sheet เบื้องต้นแบบไม่ binding จาก US Export-Import Bank สำหรับ debt financing สูงสุด $800M ตอนนี้อยู่ในขั้น technical review (TRC-2 กำลังไปสู่ TRC-3) ก่อนเข้า Board of Directors พิจารณาขั้นสุดท้าย ยังไม่มีวันตัดสินที่ประกาศชัดเจน" },
+        { "name": "ความคืบหน้าก่อสร้าง Elk Creek", "description": "เริ่มก่อสร้าง main access เข้าส่วน underground ของโครงการ Elk Creek แล้ว รัฐ Nebraska ก็ออกกฎหมายปลดล็อค tax benefit ราว $200M ตลอด 10 ปีให้โครงการนี้" },
+        { "name": "Project Vault — คลังสำรอง Critical Minerals $12B", "description": "Project Vault ของ Trump รวม EXIM loan facility $10B กับเงินทุนเอกชนราว $2B เพื่อสร้างคลังสำรอง critical minerals เชิงยุทธศาสตร์ หุ้นกลุ่ม rare-earth (CRML, USAR, MP) วิ่งแรงจากข่าวนี้มาตลอดปี — NB ได้ประโยชน์ตรงเพราะ EXIM application อยู่ใน process แล้ว" }
+      ],
+      "risks": [
+        "EXIM financing ยังไม่การันตี — อยู่ใน technical due diligence (TRC-2/TRC-3) ไม่มีวันตัดสินชัดเจน delay หรือถูกปฏิเสธจะทำให้ thesis หลักหายไป",
+        "ความเสี่ยง dilution สูง — NioCorp เพิ่ง price public offering $100M ที่ $5.00/หุ้น ใกล้ราคาปัจจุบันมาก บริษัท mining pre-revenue มักต้อง raise ทุนซ้ำๆ",
+        "ยังไม่มี revenue ยังไม่ production — Elk Creek ยังอยู่ระหว่างก่อสร้าง เศรษฐศาสตร์ของเหมืองขึ้นกับราคาสินค้าโภคภัณฑ์ (niobium, scandium, titanium) ในอีกหลายปีข้างหน้า",
+        "ความเสี่ยง execution/construction ทั่วไปของโครงการ mining infrastructure ขนาดใหญ่ — cost overrun และ timeline slip เกิดขึ้นบ่อยในกลุ่มนี้",
+        "พึ่งพานโยบายรัฐ — thesis เรื่อง critical-minerals stockpile ทั้งหมด (Project Vault, DPA award) ขึ้นกับการให้ความสำคัญของรัฐบาลต่อเนื่อง หากเปลี่ยนรัฐบาลหรือ priority เปลี่ยนคือความเสี่ยงระยะยาว"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ในฐานะ story project-finance ก่อน revenue จริง NB sensitive กับดอกเบี้ยจริง — ต้นทุน EXIM debt package และความสามารถ raise ทุนของ NioCorp แพงขึ้นในโลกดอกเบี้ยสูงต่อเนื่อง Fed ที่พลิกเป็น hawkish ตอนนี้ (hike price ภายใน ต.ค.) เป็นแรงกดดันจริง ต่างจากหุ้น catalyst biotech ล้วนๆ",
+        "inflationNote": "ต้นทุนก่อสร้างและอุปกรณ์ของ Elk Creek exposed กับ input-cost inflation โดยตรง — ถ้า CPI ร้อน จะเพิ่มความเสี่ยง capex ของโครงการ",
+        "sectorImpact": "ปานกลางถึงสูง ต่างจากหุ้น defense/policy ที่ไม่ค่อยกระทบจาก Fed thesis ของ NB ที่พึ่ง financing ทำให้เป็นหนึ่งในตัวที่ sensitive กับ macro มากสุดใน list นี้ — ทั้งเงื่อนไข EXIM debt และการ raise ทุนในอนาคตแพงขึ้นถ้าดอกเบี้ยยังสูง",
+        "summary": "ความเสี่ยง Fed ปานกลาง — เป็นตัวเดียวใน list ที่บรรยากาศ hawkish Fed กระทบ catalyst โดยตรง (ต้นทุน/ความพร้อมของ debt financing) ไม่ใช่แค่ trading multiple"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม 2-3% max Base (ก่อสร้าง/review คืบหน้า) → $7.70 (+60%) Bull (สัญญาณบวกจาก EXIM) → $11.54 (+140%) Moon (EXIM อนุมัติ $800M) → $16.84 (+250%) ยังไม่มีวันตัดสินชัดเจน — เป็น story ระดับหลายเดือน ไม่ใช่หลายสัปดาห์",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน ใกล้เคียงราคา offering ล่าสุด", "timing": "ตอนนี้ (2-3% max)" },
+          { "note": "ต่ำกว่าราคา offering ล่าสุด — เข้าดีกว่าถ้ามีความกังวลเรื่อง dilution", "timing": "ถ้าย่อ" },
+          { "note": "โซนย่อลึก — เข้าเฉพาะมั่นใจสูง", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Base — ก่อสร้างคืบหน้า EXIM review เดินหน้าแต่ยังไม่ตัดสิน" },
+        "tp2": { "note": "Bull — ตรงเป้า consensus, EXIM review เข้าขั้นท้ายๆ/สัญญาณบวก" },
+        "tp3": { "note": "Moon — EXIM อนุมัติ debt commitment $800M ปลดล็อก construction financing เต็มรูปแบบ", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดต่ำกว่าโซนราคา offering ล่าสุด = sentiment financing แย่ลง",
+          "hardNote": "EXIM delay/ปฏิเสธ หรือมี down-round raise ใหม่ — thesis เสียหายจริง",
+          "rrNote": "Entry ($4.81) เทียบ TP2 ($11.54)",
+          "rrWarning": "Asymmetry ดี ✅ — แต่ dilution risk เป็นเรื่องต่อเนื่อง ไม่ใช่ one-time event"
+        }
+      },
+      "estimateDates": [
+        { "event": "EXIM Bank ตัดสิน Financing", "note": "TRC-2 technical review กำลังไปสู่ TRC-3 และ Board พิจารณา — ยังไม่มีกำหนดเวลาชัดเจน" }
+      ]
+    }
+  }
+}
