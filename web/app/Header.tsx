@@ -53,9 +53,10 @@ export function Header({ lastUpdated, isLocal }: { lastUpdated: string; isLocal:
   return (
     <header style={{ borderBottom: "1px solid var(--border)", backgroundColor: "var(--card)", position: "relative" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "14px 16px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12 }}>
-        <Link href="/" style={{ textDecoration: "none", flexShrink: 0 }}>
+        <Link href="/" style={{ textDecoration: "none", flexShrink: 0, display: "flex", alignItems: "center", gap: 8 }}>
+          <img src="/icon.svg" alt="Stock Radar Weekly" width={24} height={24} style={{ borderRadius: 6, flexShrink: 0 }} />
           <span className="srw-logo" style={{ fontSize: 20, fontWeight: 800, letterSpacing: "-0.5px", color: "var(--text)", fontFamily: "var(--font-display, sans-serif)", whiteSpace: "nowrap" }}>
-            📡 Stock Radar Weekly
+            Stock Radar Weekly
           </span>
         </Link>
 
