@@ -144,7 +144,9 @@ export function buildBacktestEntries(priceCache: PriceCache): BacktestEntry[] {
     });
   }
 
-  return entries;
+  // Latest report first — files.sort() above only groups by filename (ticker then date),
+  // it doesn't order the final list by recency across tickers.
+  return entries.sort((a, b) => b.reportDate.localeCompare(a.reportDate));
 }
 
 export function computeBacktestStats(entries: BacktestEntry[]): BacktestStats {

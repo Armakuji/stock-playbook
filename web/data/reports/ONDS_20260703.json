@@ -1,0 +1,206 @@
+{
+  "ticker": "ONDS",
+  "companyName": "Ondas Inc.",
+  "companyDescription": "Autonomous defense & drone platform · Sentrycs C-UAS integrated into Lockheed Martin's Sanctum C2 · Record Q1 revenue ($50.1M, +1,079% YoY), $390M FY26 guide · Near-term insider-selling/resale overhang weighing on price despite strengthening fundamentals",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-03T00:00:00.000Z",
+  "price": 7.92,
+  "priceChange": -3.88,
+  "priceNote": "Down from $8.27 (Jul 1) as insider/holder selling escalated — not a fundamentals problem. Record Q1, raised guidance, and new orders all landed over the same window.",
+  "marketCap": "$4.15B",
+  "sector": "Technology / Defense (Autonomous Systems)",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 72,
+  "summary": "Ondas has transformed from a small SDR company into a multi-domain autonomous defense platform via 6 acquisitions in 2026. Q1 revenue was $50.1M (+1,079% YoY), FY2026 is guided to at least $390M, and Sentrycs' counter-drone tech is now integrated into Lockheed Martin's Sanctum C2 platform. 6 analysts rate it Strong Buy with a $20.14 average target (+154%). The near-term overhang is real, though: CEO Eric Brock sold $31.9M in shares, a new prospectus registered 3.378M existing shares for resale (from the Omnisys/World View deals), and a Form 144 flags more potential insider selling — pure supply pressure, not a change in the business.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "Q2 orders already exceeded $110M (vs Q1's $50.1M). The $390M FY guide requires a back-half revenue ramp — this report shows whether backlog is actually converting. Watch gross margin trend (~49% in Q1).",
+      "urgencyLabel": "45 DAYS",
+      "dateBadge": "Aug 17, 2026",
+      "catalystDate": "2026-08-17",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "⚠️",
+      "name": "Insider / Resale Share Overhang — Watch for Clearing",
+      "description": "CEO sold 2,378,245 shares (~$31.9M); a new prospectus registered 3,378,084 existing shares for resale (Jun 26, from the Omnisys/World View acquisitions — no fresh cash to the company); a Form 144 flags additional shares potentially for sale. This is the actual driver of the recent decline, not a business problem.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "✈️",
+      "name": "Cyberhawk Acquisition Close",
+      "description": "$125M acquisition of Cyberhawk — AI-enabled drone inspection for critical infrastructure (power lines, pipelines, telecom towers). Closes Q3 2026. Opens a non-defense revenue stream.",
+      "urgencyLabel": "Q3 2026",
+      "dateBadge": "Q3 2026",
+      "catalystDate": "2026-09-01",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "🌍",
+      "name": "$4.3B DoD/NATO Pipeline",
+      "description": "45+ global program submissions; Sentrycs is now part of Lockheed's standard counter-drone architecture (Sanctum, announced Jun 23). LADOS C2 debuted at Eurosatory 2026 — a potential NATO contract anchor.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "H2 2026",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Insider-selling and resale-share overhang has escalated, not cleared — CEO's $31.9M sale, a 3.378M-share resale registration, and a Form 144 for more all point the same direction: more supply willing to sell at these prices",
+    "Severe share dilution — shares outstanding grew sharply over the past year from ATM issuance and acquisition stock payments; the resale registrations add tradable float without adding cash",
+    "Negative operating cash flow — burned $38.7M in FY2025; Q1 2026 improved but still pre-positive FCF, and sentiment has recently focused on widening quarterly losses/cash burn",
+    "Acquisition integration risk — 6 acquisitions in 2026 (Sentrycs, Mistral, World View, Omnisys, Cyberhawk) creates real cultural and systems complexity",
+    "Revenue concentration — the $390M guide depends on a handful of large defense contracts; program delays would mean a guidance miss",
+    "Defense budget risk — reconciliation/procurement timeline shifts at DoD could slow order conversion"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Aug 17, 2026", "note": "Tests whether $110M+ in Q2 orders converts to recognized revenue at the guided pace", "est": "est. rev $66.53M (range $60-73.75M)", "highlight": "blue" },
+    { "event": "Cyberhawk Acquisition Close", "dateRange": "Q3 2026", "note": "Opens non-defense (critical infrastructure inspection) revenue stream", "est": "Expected to close on schedule", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -35, "price": 5.15 },
+    { "label": "Base", "color": "yellow", "pct": 64, "price": 13.00 },
+    { "label": "Bull", "color": "green", "pct": 152, "price": 20.00 },
+    { "label": "Moon", "color": "purple", "pct": 216, "price": 25.00 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (6 analysts)", "target": 20.14, "rating": "Strong Buy", "note": "Range $16-25; unchanged even as the stock sold off on insider selling, not a fundamentals downgrade" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds held at 3.50-3.75% since a string of meetings; FedWatch prices an ~89% probability of another hold at the Jul 28-29 FOMC. As a pre-profit, financing-dependent small-cap, Ondas is more rate-sensitive than a self-funding business — a higher-for-longer path raises the cost of any future capital raise.",
+    "inflationNote": "Next CPI print (June data) is Jul 14, 2026, ahead of the FOMC meeting. A hot print would reinforce the Fed's already-hawkish lean and pressure high-beta growth names like ONDS further.",
+    "sectorImpact": "MEDIUM. Defense/homeland-security program spending itself is policy-driven and largely rate-insensitive, but ONDS's own equity financing and trading multiple are exposed to the broader hawkish-Fed backdrop (10yr yield ~4.48%) more than the underlying government-contract business is.",
+    "summary": "Fed risk MEDIUM — the Jul 29 FOMC decision itself is well-telegraphed as a hold, so it's not a near-term surprise risk. The bigger macro sensitivity is ONDS's rate-exposed, pre-profit balance sheet, not the FOMC meeting date itself."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 7.92, "note": "Current price — already reflecting the insider-selling overhang", "timing": "Now" },
+      { "label": "Entry 2", "level": 7.00, "rangeMax": 7.50, "note": "If resale-share selling pressure continues into the Q2 print", "timing": "On any pullback", "preferred": true },
+      { "label": "Entry 3", "level": 5.50, "note": "Guidance miss or dilution-fear capitulation only", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 13.00, "pct": 64.1, "note": "Base — Q2 beat confirms the $390M FY trajectory" },
+    "tp2": { "price": 20.00, "pct": 152.5, "note": "Bull — analyst consensus target, Lockheed/DoD orders keep scaling" },
+    "tp3": { "price": 25.00, "pct": 215.7, "note": "Moon — high analyst target, NATO mega-contract + $4.3B pipeline converts", "moon": true },
+    "stopLoss": {
+      "tight": 6.50, "tightPct": -17.9, "tightNote": "Below recent support — would suggest the selling isn't purely insider-driven",
+      "hard": 4.80, "hardPct": -39.4, "hardNote": "Guidance cut or acquisition-integration failure — thesis materially impaired",
+      "riskReward": "3.2 : 1", "rrNote": "Tight stop vs TP2", "rrWarning": "High upside but Speculative — size 3-5%, not more"
+    },
+    "verdict": "Buy the overhang, not the story breaking — Q1 revenue +1,079% YoY and the $390M FY guide are transformative, and the Lockheed/Sentrycs validation is real. The insider/resale selling is a supply problem, not a demand problem. Size small (3-5%) given real dilution and cash-burn risk.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Ondas has historically run hard into and after strong quarterly prints — the stock ran from roughly $7 to $13.36 in June 2026 on Q1 beat and backlog-growth momentum, before the current insider-selling pullback interrupted it.",
+    "preRunupTiming": "2-4 สัปดาห์ก่อน earnings, ตาม order-flow newsflow",
+    "preRunupPct": "+20-60%",
+    "postWin": {
+      "avgPct": 19,
+      "range": "+19% to +90%",
+      "note": "AeroVironment (AVAV), a comparable defense-drone name, jumped 19% on a strong earnings beat tied to the broader defense-spending surge (Jun 30, 2026). Ondas's own June 2026 run (~$7 to $13.36) on its Q1 beat and backlog growth is the more direct historical comp for this exact stock.",
+      "exampleDate": "Jun 2026"
+    },
+    "postLose": {
+      "avgPct": -35,
+      "range": "-25% to -45%",
+      "note": "A guidance cut or evidence that the $4.3B pipeline isn't converting would remove the core bull thesis and likely trigger a sharp re-rate, on top of the existing dilution overhang.",
+      "exampleDate": "Typical pattern for guidance-dependent small-cap defense names"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "4% — moderate speculative sizing. Fundamentals and analyst conviction are both strong, but real, ongoing share-supply overhang (insider sales, resale registrations, Form 144) and pre-profit cash burn keep this in speculative-sizing territory, not core-holding territory."
+    },
+    "stopPreCatalyst": { "pct": -18, "price": 6.50, "note": "หลุด $6.50 ก่อน Q2 earnings = แรงขาย insider ไม่ได้เป็นสาเหตุเดียวแล้ว" },
+    "stopPostCatalyst": { "pct": -39, "note": "ถ้า Q2 guidance ผิดหวังหรือ pipeline ไม่แปลงเป็น revenue จริง — exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "AVAV",
+      "event": "Strong Earnings Beat Amid Defense Spending Surge",
+      "date": "Jun 2026",
+      "movePct": 19,
+      "days": 1,
+      "outcome": "good",
+      "note": "Comparable defense-drone name jumped 19% same-day on an earnings beat tied to the same broader defense-spending tailwind Ondas is riding — shows the sector rewards execution proof points."
+    },
+    {
+      "ticker": "ONDS",
+      "event": "Q1 2026 Beat + Backlog Growth Run",
+      "date": "Jun 2026",
+      "movePct": 90,
+      "days": 30,
+      "outcome": "good",
+      "note": "Ondas's own run from roughly $7 to $13.36 over about a month on Q1 revenue beat and backlog momentum — the exact catalyst (order-flow proof) still in play for the Aug 17 Q2 print, at a lower starting price today."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "ONDS Stock Slides As Insider And Holder Selling Builds",
+    "url": "https://stockstotrade.com/news/ondas-inc-onds-news-2026_07_01/",
+    "date": "Jul 2026"
+  },
+  "sources": [
+    "https://stockstotrade.com/news/ondas-inc-onds-news-2026_07_01/",
+    "https://www.tipranks.com/news/company-announcements/ondas-registers-resale-shares-from-recent-acquisitions",
+    "https://www.tipranks.com/stocks/onds/forecast",
+    "https://www.tipranks.com/stocks/onds/earnings",
+    "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html",
+    "https://www.bls.gov/schedule/news_release/cpi.htm"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Ondas เปลี่ยนตัวเองจากบริษัท SDR เล็กๆ มาเป็นแพลตฟอร์ม autonomous defense หลาย domain ผ่านการเข้าซื้อกิจการ 6 ดีลในปี 2026 Q1 revenue $50.1M (+1,079% YoY) FY2026 guide อย่างน้อย $390M และ Sentrycs counter-drone tech ตอนนี้ integrate เข้า Sanctum C2 ของ Lockheed Martin แล้ว นักวิเคราะห์ 6 รายให้ Strong Buy เป้าเฉลี่ย $20.14 (+154%) แต่ overhang ระยะใกล้เป็นเรื่องจริง: CEO Eric Brock ขายหุ้น $31.9M, prospectus ใหม่ register หุ้น 3.378M เพื่อ resale (จากดีล Omnisys/World View) และ Form 144 บ่งชี้ insider อาจขายเพิ่ม — เป็นปัญหาด้าน supply ไม่ใช่การเปลี่ยนแปลงของธุรกิจ",
+      "priceNote": "ร่วงจาก $8.27 (1 ก.ค.) เพราะแรงขายจาก insider/ผู้ถือหุ้นที่เพิ่มขึ้น — ไม่ใช่ปัญหา fundamental Q1 สถิติใหม่ ปรับ guidance ขึ้น และ order ใหม่ ล้วนเกิดขึ้นในช่วงเดียวกัน",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "Q2 2026 Earnings", "description": "Order Q2 เกิน $110M แล้ว (เทียบ Q1 ที่ $50.1M) FY guide $390M ต้องการ ramp ช่วงครึ่งหลังปี — รายงานนี้จะพิสูจน์ว่า backlog แปลงเป็น revenue จริงไหม จับตา gross margin (~49% ใน Q1)" },
+        { "name": "Overhang จาก Insider / Resale Shares — จับตาการคลี่คลาย", "description": "CEO ขายหุ้น 2,378,245 หุ้น (~$31.9M) prospectus ใหม่ register หุ้น 3,378,084 หุ้นเพื่อ resale (26 มิ.ย. จากดีล Omnisys/World View — ไม่มีเงินสดใหม่เข้าบริษัท) Form 144 บ่งชี้อาจมีการขายเพิ่ม นี่คือตัวขับเคลื่อนจริงของการร่วงล่าสุด ไม่ใช่ปัญหาธุรกิจ" },
+        { "name": "ปิดดีล Cyberhawk Acquisition", "description": "ดีล acquire Cyberhawk มูลค่า $125M — AI-enabled drone inspection สำหรับ critical infrastructure (สายไฟ, ท่อ, เสาโทรคมนาคม) ปิดดีล Q3 2026 เปิด revenue stream นอกเหนือ defense" },
+        { "name": "$4.3B DoD/NATO Pipeline", "description": "program submission ทั่วโลกกว่า 45 โครงการ Sentrycs เป็นส่วนหนึ่งของ Lockheed counter-drone architecture มาตรฐาน (Sanctum, ประกาศ 23 มิ.ย.) LADOS C2 เปิดตัวที่ Eurosatory 2026 — อาจเป็น anchor ของ NATO contract" }
+      ],
+      "risks": [
+        "Overhang จากการขายของ insider และ resale share กำลังแย่ลง ไม่ใช่คลี่คลาย — CEO ขาย $31.9M, register resale 3.378M หุ้น, Form 144 อีก ล้วนชี้ทางเดียวกัน: มี supply พร้อมขายที่ราคานี้",
+        "dilution รุนแรง — shares outstanding โตมากในปีที่ผ่านมาจาก ATM issuance และการจ่ายด้วยหุ้นตอน acquisition resale registration เพิ่ม tradable float โดยไม่มีเงินสดเข้ามา",
+        "operating cash flow ติดลบ — burn $38.7M ใน FY2025 Q1 2026 ดีขึ้นแต่ยังไม่ถึง positive FCF และ sentiment ล่าสุดโฟกัสที่ขาดทุนขยายตัว/cash burn",
+        "ความเสี่ยง integration จากการเข้าซื้อกิจการ — 6 ดีลในปี 2026 (Sentrycs, Mistral, World View, Omnisys, Cyberhawk) สร้างความซับซ้อนด้าน culture และ system จริง",
+        "revenue กระจุกตัว — guide $390M ขึ้นกับ contract defense ขนาดใหญ่ไม่กี่ดีล ถ้าโปรแกรม delay จะพลาด guidance",
+        "ความเสี่ยงงบประมาณ defense — timeline การจัดซื้อของ DoD อาจช้าลงจาก reconciliation"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.50-3.75% มาหลายรอบ FedWatch ให้ความน่าจะเป็น hold ที่ FOMC 28-29 ก.ค. ราว 89% ในฐานะ small-cap pre-profit ที่พึ่ง financing Ondas sensitive กับดอกเบี้ยมากกว่าธุรกิจที่เลี้ยงตัวเองได้ — เส้นทางดอกเบี้ยสูงต่อเนื่องเพิ่มต้นทุนการระดมทุนในอนาคต",
+        "inflationNote": "CPI ถัดไป (ข้อมูล มิ.ย.) ออก 14 ก.ค. ก่อน FOMC ถ้าร้อนจะตอกย้ำท่าที hawkish ของ Fed และกดดันหุ้น growth high-beta อย่าง ONDS เพิ่ม",
+        "sectorImpact": "ปานกลาง งบประมาณ defense/homeland-security เองขับเคลื่อนด้วยนโยบายและไม่ค่อยกระทบจากดอกเบี้ย แต่การระดมทุนและ trading multiple ของ ONDS เอง exposed กับบรรยากาศ hawkish Fed (10yr yield ~4.48%) มากกว่าธุรกิจ government-contract ที่แท้จริง",
+        "summary": "ความเสี่ยง Fed ปานกลาง — FOMC 29 ก.ค. เองถูกคาดการณ์ไว้แล้วว่าจะ hold ไม่ใช่ความเสี่ยง surprise ระยะใกล้ ความ sensitive เชิง macro ที่ใหญ่กว่าคืองบดุลของ ONDS เองที่ expose กับดอกเบี้ย ไม่ใช่ตัววัน FOMC"
+      },
+      "entryStrategy": {
+        "verdict": "ซื้อที่ overhang ไม่ใช่ที่ story พัง — Q1 revenue +1,079% YoY และ FY guide $390M เปลี่ยนเกมจริง การ validate จาก Lockheed/Sentrycs ก็จริง แรงขายจาก insider/resale เป็นปัญหา supply ไม่ใช่ demand sizing เล็ก (3-5%) เพราะ dilution และ cash burn เป็นความเสี่ยงจริง",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน สะท้อน overhang จาก insider selling แล้ว", "timing": "ตอนนี้" },
+          { "note": "ถ้าแรงขายจาก resale share ยังกดดันต่อจนถึงรายงาน Q2", "timing": "ถ้าย่อ" },
+          { "note": "เฉพาะกรณี guidance miss หรือ dilution fear capitulation", "timing": "ถ้าร่วงหนักเท่านั้น" }
+        ],
+        "tp1": { "note": "Base — Q2 beat ยืนยัน trajectory FY $390M" },
+        "tp2": { "note": "Bull — ตรงเป้า consensus นักวิเคราะห์ order Lockheed/DoD ขยายต่อเนื่อง" },
+        "tp3": { "note": "Moon — เป้าสูงสุดนักวิเคราะห์ ได้ NATO mega-contract + $4.3B pipeline แปลงเป็นจริง", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดแนวรับล่าสุด = แรงขายไม่ได้มาจาก insider อย่างเดียวแล้ว",
+          "hardNote": "guidance cut หรือ acquisition integration ล้มเหลว — thesis เสียหายจริง",
+          "rrNote": "Tight stop เทียบ TP2",
+          "rrWarning": "Upside สูงแต่ยังเป็น Speculative — sizing 3-5% ไม่เกินนี้"
+        }
+      },
+      "estimateDates": [
+        { "event": "Q2 2026 Earnings", "note": "พิสูจน์ว่า order Q2 เกิน $110M แปลงเป็น revenue ตามจังหวะที่ guide ไว้ไหม" },
+        { "event": "ปิดดีล Cyberhawk Acquisition", "note": "เปิด revenue stream นอกเหนือ defense จาก critical infrastructure inspection" }
+      ]
+    }
+  }
+}

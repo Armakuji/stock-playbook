@@ -253,6 +253,14 @@ function NearMissSection({ nearMisses, pickAvg30 }: { nearMisses: NearMissOutcom
     : null;
   const edge = pickAvg30 !== null && nmAvg30 !== null ? pickAvg30 - nmAvg30 : null;
 
+  const NEAR_MISS_PAGE_SIZE = 5;
+  const [nearMissPage, setNearMissPage] = useState(1);
+  const nearMissTotalPages = Math.max(1, Math.ceil(nearMisses.length / NEAR_MISS_PAGE_SIZE));
+  const pagedNearMisses = nearMisses.slice(
+    (nearMissPage - 1) * NEAR_MISS_PAGE_SIZE,
+    nearMissPage * NEAR_MISS_PAGE_SIZE
+  );
+
   return (
     <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: 14, padding: "20px 22px", marginTop: 24 }}>
       <div style={{ fontSize: 10, fontWeight: 800, color: "var(--muted)", textTransform: "uppercase", letterSpacing: "1.5px", fontFamily: "var(--font-mono, monospace)", marginBottom: 6 }}>
@@ -285,8 +293,8 @@ function NearMissSection({ nearMisses, pickAvg30 }: { nearMisses: NearMissOutcom
                 </tr>
               </thead>
               <tbody>
-                {nearMisses.map((n, i) => (
-                  <tr key={`${n.ticker}-${n.screenDate}-${i}`} style={{ borderBottom: i < nearMisses.length - 1 ? "1px solid var(--border)" : "none" }}>
+                {pagedNearMisses.map((n, i) => (
+                  <tr key={`${n.ticker}-${n.screenDate}-${i}`} style={{ borderBottom: i < pagedNearMisses.length - 1 ? "1px solid var(--border)" : "none" }}>
                     <td style={{ padding: "8px 12px", textAlign: "center", color: "var(--muted)", fontSize: 11, whiteSpace: "nowrap" }}>{fmtDate(n.screenDate)}</td>
                     <td style={{ padding: "8px 12px", fontWeight: 800 }}>{n.ticker}</td>
                     <td style={{ padding: "8px 12px", color: "var(--muted)", fontSize: 11 }}>{n.reason}</td>
@@ -297,6 +305,43 @@ function NearMissSection({ nearMisses, pickAvg30 }: { nearMisses: NearMissOutcom
               </tbody>
             </table>
           </div>
+          {nearMisses.length > NEAR_MISS_PAGE_SIZE && (
+            <div style={{
+              display: "flex", alignItems: "center", justifyContent: "space-between",
+              paddingTop: 12, marginTop: 4,
+              fontFamily: "var(--font-mono, monospace)", fontSize: 11,
+            }}>
+              <button
+                onClick={() => setNearMissPage((p) => Math.max(1, p - 1))}
+                disabled={nearMissPage === 1}
+                style={{
+                  padding: "5px 12px", borderRadius: 7, border: "1px solid var(--border)",
+                  background: "transparent", color: nearMissPage === 1 ? "var(--muted)" : "var(--text)",
+                  fontFamily: "inherit", fontSize: 11, fontWeight: 700,
+                  cursor: nearMissPage === 1 ? "default" : "pointer",
+                  opacity: nearMissPage === 1 ? 0.4 : 1,
+                }}
+              >
+                ← Prev
+              </button>
+              <span style={{ color: "var(--muted)" }}>
+                Page {nearMissPage} of {nearMissTotalPages} · {nearMisses.length} total
+              </span>
+              <button
+                onClick={() => setNearMissPage((p) => Math.min(nearMissTotalPages, p + 1))}
+                disabled={nearMissPage === nearMissTotalPages}
+                style={{
+                  padding: "5px 12px", borderRadius: 7, border: "1px solid var(--border)",
+                  background: "transparent", color: nearMissPage === nearMissTotalPages ? "var(--muted)" : "var(--text)",
+                  fontFamily: "inherit", fontSize: 11, fontWeight: 700,
+                  cursor: nearMissPage === nearMissTotalPages ? "default" : "pointer",
+                  opacity: nearMissPage === nearMissTotalPages ? 0.4 : 1,
+                }}
+              >
+                Next →
+              </button>
+            </div>
+          )}
         </>
       )}
     </div>
@@ -318,6 +363,14 @@ export function BacktestContent({ entries, stats, nearMisses, northStar }: { ent
 
   const verdictOrder = ["BUY", "SPECULATIVE", "HOLD", "SELL"] as const;
   const allPending = stats.completedCheckpoints === 0;
+
+  const CHECKPOINTS_PAGE_SIZE = 5;
+  const [checkpointsPage, setCheckpointsPage] = useState(1);
+  const checkpointsTotalPages = Math.max(1, Math.ceil(entries.length / CHECKPOINTS_PAGE_SIZE));
+  const pagedEntries = entries.slice(
+    (checkpointsPage - 1) * CHECKPOINTS_PAGE_SIZE,
+    checkpointsPage * CHECKPOINTS_PAGE_SIZE
+  );
 
   return (
     <div style={{ maxWidth: 1100, margin: "0 auto" }}>
@@ -400,11 +453,11 @@ export function BacktestContent({ entries, stats, nearMisses, northStar }: { ent
               </tr>
             </thead>
             <tbody>
-              {entries.map((entry, idx) => {
+              {pagedEntries.map((entry, idx) => {
                 const vc = VERDICT_COLORS[entry.verdict] ?? "#64748b";
                 const baseBg = idx % 2 === 0 ? "transparent" : "#ffffff04";
                 return (
-                  <tr key={`${entry.ticker}-${entry.reportDate}`} style={{ background: baseBg, borderBottom: idx < entries.length - 1 ? "1px solid var(--border)" : "none" }}>
+                  <tr key={`${entry.ticker}-${entry.reportDate}`} style={{ background: baseBg, borderBottom: idx < pagedEntries.length - 1 ? "1px solid var(--border)" : "none" }}>
                     <td style={{ padding: "10px 12px", textAlign: "center", color: "var(--muted)", fontSize: 11, whiteSpace: "nowrap" }}>
                       {fmtDate(entry.reportDate)}
                     </td>
@@ -434,6 +487,43 @@ export function BacktestContent({ entries, stats, nearMisses, northStar }: { ent
             </tbody>
           </table>
         </div>
+        {entries.length > CHECKPOINTS_PAGE_SIZE && (
+          <div style={{
+            display: "flex", alignItems: "center", justifyContent: "space-between",
+            padding: "12px 20px", borderTop: "1px solid var(--border)",
+            fontFamily: "var(--font-mono, monospace)", fontSize: 11,
+          }}>
+            <button
+              onClick={() => setCheckpointsPage((p) => Math.max(1, p - 1))}
+              disabled={checkpointsPage === 1}
+              style={{
+                padding: "5px 12px", borderRadius: 7, border: "1px solid var(--border)",
+                background: "transparent", color: checkpointsPage === 1 ? "var(--muted)" : "var(--text)",
+                fontFamily: "inherit", fontSize: 11, fontWeight: 700,
+                cursor: checkpointsPage === 1 ? "default" : "pointer",
+                opacity: checkpointsPage === 1 ? 0.4 : 1,
+              }}
+            >
+              ← Prev
+            </button>
+            <span style={{ color: "var(--muted)" }}>
+              Page {checkpointsPage} of {checkpointsTotalPages} · {entries.length} total
+            </span>
+            <button
+              onClick={() => setCheckpointsPage((p) => Math.min(checkpointsTotalPages, p + 1))}
+              disabled={checkpointsPage === checkpointsTotalPages}
+              style={{
+                padding: "5px 12px", borderRadius: 7, border: "1px solid var(--border)",
+                background: "transparent", color: checkpointsPage === checkpointsTotalPages ? "var(--muted)" : "var(--text)",
+                fontFamily: "inherit", fontSize: 11, fontWeight: 700,
+                cursor: checkpointsPage === checkpointsTotalPages ? "default" : "pointer",
+                opacity: checkpointsPage === checkpointsTotalPages ? 0.4 : 1,
+              }}
+            >
+              Next →
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Near-miss counterfactual */}
