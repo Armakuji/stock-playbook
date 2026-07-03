@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { useLang } from "@/lib/LanguageContext";
 import type { Lang } from "@/lib/i18n";
 
@@ -52,11 +53,11 @@ export function Header({ lastUpdated, isLocal }: { lastUpdated: string; isLocal:
   return (
     <header style={{ borderBottom: "1px solid var(--border)", backgroundColor: "var(--card)", position: "relative" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "14px 16px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12 }}>
-        <a href="/" style={{ textDecoration: "none", flexShrink: 0 }}>
+        <Link href="/" style={{ textDecoration: "none", flexShrink: 0 }}>
           <span className="srw-logo" style={{ fontSize: 20, fontWeight: 800, letterSpacing: "-0.5px", color: "var(--text)", fontFamily: "var(--font-display, sans-serif)", whiteSpace: "nowrap" }}>
             📡 Stock Radar Weekly
           </span>
-        </a>
+        </Link>
 
         {/* ── Desktop nav ── */}
         <div className="srw-desktop" style={{ alignItems: "center", gap: 14 }}>
@@ -66,18 +67,18 @@ export function Header({ lastUpdated, isLocal }: { lastUpdated: string; isLocal:
             borderRadius: 10, padding: 3,
           }}>
             {STRATEGY.map((s) => (
-              <a key={s.href} href={s.href} title={th ? s.titleTh : s.titleEn} style={{ ...gradLink, backgroundImage: s.grad }}>
+              <Link key={s.href} href={s.href} title={th ? s.titleTh : s.titleEn} style={{ ...gradLink, backgroundImage: s.grad }}>
                 {s.label}
-              </a>
+              </Link>
             ))}
           </nav>
-          <a href="/backtest" title="Backtest" style={{ fontSize: 11, color: "var(--muted)", textDecoration: "none", fontFamily: "var(--font-mono, monospace)", fontWeight: 700, letterSpacing: "0.3px" }}>
+          <Link href="/backtest" title="Backtest" style={{ fontSize: 11, color: "var(--muted)", textDecoration: "none", fontFamily: "var(--font-mono, monospace)", fontWeight: 700, letterSpacing: "0.3px" }}>
             📊 Backtest
-          </a>
+          </Link>
           {isLocal && (
-            <a href="/journal" title="Journal" style={{ fontSize: 11, color: "#f59e0b", textDecoration: "none", fontFamily: "var(--font-mono, monospace)", fontWeight: 700, letterSpacing: "0.3px" }}>
+            <Link href="/journal" title="Journal" style={{ fontSize: 11, color: "#f59e0b", textDecoration: "none", fontFamily: "var(--font-mono, monospace)", fontWeight: 700, letterSpacing: "0.3px" }}>
               📒 Journal
-            </a>
+            </Link>
           )}
           <span style={{ display: "inline-block", width: 7, height: 7, borderRadius: "50%", background: "#10b981", animation: "livePulse 2s ease-in-out infinite", flexShrink: 0 }} />
           <span style={{ fontSize: 12, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>{th ? "อัปเดต" : "Updated"} {lastUpdated}</span>
@@ -118,23 +119,23 @@ export function Header({ lastUpdated, isLocal }: { lastUpdated: string; isLocal:
             {th ? "ธาตุการลงทุน" : "Investment elements"}
           </div>
           {STRATEGY.map((s) => (
-            <a key={s.href} href={s.href} onClick={() => setOpen(false)} style={{
+            <Link key={s.href} href={s.href} onClick={() => setOpen(false)} style={{
               ...gradLink, backgroundImage: s.grad, fontSize: 15, padding: "9px 6px",
             }}>
               {s.label}
-            </a>
+            </Link>
           ))}
           <div style={{ height: 1, background: "var(--border)", margin: "6px 0" }} />
           <div style={{ fontSize: 9, color: "var(--muted)", textTransform: "uppercase", letterSpacing: "1.5px", fontFamily: "var(--font-mono, monospace)", marginBottom: 2 }}>
             {th ? "เครื่องมือ" : "Tools"}
           </div>
-          <a href="/backtest" onClick={() => setOpen(false)} style={{ fontSize: 14, color: "var(--muted)", textDecoration: "none", fontFamily: "var(--font-mono, monospace)", fontWeight: 700, padding: "8px 6px" }}>
+          <Link href="/backtest" onClick={() => setOpen(false)} style={{ fontSize: 14, color: "var(--muted)", textDecoration: "none", fontFamily: "var(--font-mono, monospace)", fontWeight: 700, padding: "8px 6px" }}>
             📊 Backtest
-          </a>
+          </Link>
           {isLocal && (
-            <a href="/journal" onClick={() => setOpen(false)} style={{ fontSize: 14, color: "#f59e0b", textDecoration: "none", fontFamily: "var(--font-mono, monospace)", fontWeight: 700, padding: "8px 6px" }}>
+            <Link href="/journal" onClick={() => setOpen(false)} style={{ fontSize: 14, color: "#f59e0b", textDecoration: "none", fontFamily: "var(--font-mono, monospace)", fontWeight: 700, padding: "8px 6px" }}>
               📒 Journal
-            </a>
+            </Link>
           )}
           <div style={{ height: 1, background: "var(--border)", margin: "6px 0" }} />
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 8, marginTop: 4 }}>

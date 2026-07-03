@@ -1,0 +1,183 @@
+{
+  "ticker": "ONDS",
+  "companyName": "Ondas Inc.",
+  "companyDescription": "Autonomous drone systems + counter-drone + secure wireless · Record Q1 revenue $50.1M, $457M backlog, $4.3B pipeline · Stock down 41% on insider selling despite raised guidance — fundamentals/price divergence",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-02T00:00:00.000Z",
+  "price": 7.92,
+  "priceChange": -1.8,
+  "priceNote": "Down ~41% from our Jun 26 report ($13.36) — NOT on a business setback. Record Q1 revenue, raised FY26 guidance, and a new $40M+ defense order all landed since, but CEO and Omnisys-linked holders sold a combined ~5.8M shares, overwhelming the good news.",
+  "marketCap": "$355M",
+  "sector": "Technology / Defense (Autonomous Systems)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 71,
+  "summary": "This is a genuine fundamentals-vs-technicals divergence. Since our Jun 26 report, Ondas posted Q1 revenue of $50.1M (huge YoY growth), grew backlog to $457M, already booked over $110M in Q2 orders, raised FY26 guidance to at least $390M, disclosed a $4.3B pipeline across 45+ program submissions, and secured a new $40M+ defense order in late June — yet the stock is down ~41% because CEO Eric Brock sold $31.9M of shares and Omnisys-linked holders sold ~3.4M more. Wall Street's 6-analyst consensus target is $19.83 — 2.5x the current price. If the insider-selling overhang clears without new negative news, this looks like a better entry than our prior report at a much higher price.",
+  "catalysts": [
+    {
+      "icon": "💰",
+      "name": "Raised FY2026 Revenue Guidance",
+      "description": "Management raised full-year 2026 revenue guidance to at least $390 million, backed by Q1 revenue of $50.1M (large YoY increase), a pro forma backlog of ~$457M, and Q2-to-date orders already exceeding $110M.",
+      "urgencyLabel": "GUIDANCE RAISED",
+      "dateBadge": "Jun 2026",
+      "badgeColor": "green",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🛡️",
+      "name": "New $40M+ Autonomous Defense Order",
+      "description": "Secured over $40M in new orders for autonomous defense systems in late June 2026, on top of an already-large $4.3B global pipeline spanning more than 45 program submissions across defense and homeland security.",
+      "urgencyLabel": "BOOKED",
+      "dateBadge": "Jun 2026",
+      "catalystDate": "2026-06-26",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "⚠️",
+      "name": "Insider Selling Overhang — Watch for Clearing",
+      "description": "CEO Eric Brock sold 2,378,245 shares (~$31.9M) and Omnisys-linked holders sold ~3.4M shares. This is the actual driver of the recent decline, not a business problem. Watch for insider selling to taper off as a signal the overhang is clearing.",
+      "urgencyLabel": "MONITOR",
+      "dateBadge": "Jul 2026",
+      "badgeColor": "yellow",
+      "dotColor": "red"
+    }
+  ],
+  "risks": [
+    "Insider selling of this size ($31.9M CEO sale plus ~3.4M more shares from other holders) can sometimes signal something the market doesn't yet know — even though the disclosed fundamentals are strong, this is a real yellow flag worth monitoring, not dismissing",
+    "Execution risk on converting the $4.3B pipeline / 45+ program submissions into booked, delivered revenue — pipeline is not backlog, and backlog is not recognized revenue",
+    "Defense/homeland-security budget dependency — a change in government spending priorities or program delays could slow the order cadence",
+    "High historical volatility typical of small-cap defense-tech names — the stock could just as easily overshoot on the downside as it did on the way up",
+    "Dilution risk if the company raises capital to fund working capital for the growing backlog, even though it isn't guided as imminent"
+  ],
+  "estimateDates": [
+    { "event": "Insider Selling Pattern — Next Filing Window", "dateRange": "Ongoing", "note": "Watch subsequent Form 4 filings for whether CEO/holder selling continues or tapers off", "est": "Signal to watch, not a hard date", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -40, "price": 4.75 },
+    { "label": "Base", "color": "yellow", "pct": 80, "price": 14.26 },
+    { "label": "Bull", "color": "green", "pct": 170, "price": 21.38 },
+    { "label": "Moon", "color": "purple", "pct": 300, "price": 31.68 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (6 analysts)", "target": 19.83, "rating": "Strong Buy", "note": "+150% from current price — target unchanged even as the stock sold off on insider selling, not a fundamentals downgrade" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Defense/homeland-security program spending is driven by multi-year government budgets and program-of-record status, not FOMC rate decisions.",
+    "inflationNote": "Hardware/component costs for drone systems have some inflation exposure, but government contracts often include cost-adjustment provisions.",
+    "sectorImpact": "LOW-MEDIUM. The current hawkish-Fed backdrop (rate hike priced by October per this week's market read) is a secondary headwind on the trading multiple; the insider-selling overhang is a much larger near-term driver of price action than macro.",
+    "summary": "Fed risk LOW — this is a company-specific technical story (insider selling) layered on top of strong, policy-insulated defense-spending fundamentals, not a macro-driven setup."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 7.92, "note": "Current price — down 41% from our prior report despite better fundamentals", "timing": "Now (2-3% max)" },
+      { "label": "Entry 2", "level": 6.97, "rangeMax": 7.60, "note": "If insider selling continues to pressure the stock further", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 5.70, "note": "Deep dip — only if fundamentals remain intact and selling is confirmed insider-specific, not business-related", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 14.26, "pct": 80.0, "note": "Base — insider selling overhang clears, price reconnects with fundamentals" },
+    "tp2": { "price": 21.38, "pct": 170.0, "note": "Bull — continued order momentum + return toward the analyst consensus target ($19.83)" },
+    "tp3": { "price": 31.68, "pct": 300.0, "note": "Moon — pipeline conversion accelerates, multiple large defense contracts land in succession", "moon": true },
+    "stopLoss": {
+      "tight": 6.49, "tightPct": -18.0, "tightNote": "Below current support — would suggest the selling pressure isn't purely insider-driven",
+      "hard": 4.75, "hardPct": -40.0, "hardNote": "A confirmed business-specific negative emerges (contract loss, guidance cut) — very different from the current insider-selling-only narrative",
+      "riskReward": "3.6 : 1", "rrNote": "Entry ($7.92) vs TP2 ($21.38)", "rrWarning": "Strong asymmetry ✅ — analyst target ($19.83) alone implies +150%, above our own Base case"
+    },
+    "verdict": "ค่าขนม SPECULATIVE — 2-3% max. This looks like a fundamentals/technicals divergence: strong Q1, raised guidance, and a new $40M+ order all landed while the stock fell 41% purely on insider selling. Base (overhang clears) → $14.26 (+80%), Bull (order momentum continues) → $21.38 (+170%), Moon (pipeline conversion accelerates) → $31.68 (+300%).",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "delivery_beat",
+    "preRunup": "Defense-tech small-caps with strong order/backlog momentum tend to grind higher steadily on each new contract announcement, punctuated by sharp pops on large single orders — this pattern was visible in ONDS's run to $13.36+ before the insider-selling pullback.",
+    "preRunupTiming": "ongoing, ผูกกับจังหวะ order announcement",
+    "preRunupPct": "+5-20% per major order",
+    "postWin": {
+      "avgPct": 80,
+      "range": "+80% to +300%",
+      "note": "ONDS itself ran from much lower levels to $13.36+ (our Jun 26 report price) on the strength of the Q1 beat, backlog growth, and defense order flow — the current setup (same or better fundamentals, price 41% lower) is a more favorable entry than that prior run started from.",
+      "exampleDate": "Q1-Q2 2026 run"
+    },
+    "postLose": {
+      "avgPct": -41,
+      "range": "-35% to -45%",
+      "note": "The current insider-selling-driven decline is itself the direct comp: -41% from our prior report despite improving fundamentals. This is the downside case materializing WITHOUT a business setback — a genuine (if unusual) risk case to be aware of.",
+      "exampleDate": "Jun-Jul 2026 (this exact episode)"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "3% — full turbo sizing given the disconnect between strong disclosed fundamentals (raised guidance, new orders) and the price decline, which so far traces to insider selling rather than any business-specific negative."
+    },
+    "stopPreCatalyst": { "pct": -18, "price": 6.49, "note": "หลุด $6.49 = สัญญาณว่า selling ไม่ได้มาจาก insider อย่างเดียวแล้ว" },
+    "stopPostCatalyst": { "pct": -40, "note": "ถ้ามีข่าวลบเฉพาะธุรกิจจริง (เสีย contract, ปรับ guidance ลง) — exit ทันที ต่างจาก insider selling ล้วนๆ" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "ONDS",
+      "event": "Q1 2026 Revenue Beat + Backlog Growth Run",
+      "date": "Q1-Q2 2026",
+      "movePct": 80,
+      "days": 90,
+      "outcome": "good",
+      "note": "ONDS's own run to the $13.36 level in our Jun 26 report, driven by revenue/backlog momentum — the exact catalyst set (order flow, guidance raises) that's still intact today at a 41% lower price."
+    },
+    {
+      "ticker": "ONDS",
+      "event": "Insider Selling-Driven Pullback",
+      "date": "Jun-Jul 2026",
+      "movePct": -41,
+      "days": 14,
+      "outcome": "bad",
+      "note": "Direct, current example of a sharp decline driven by disclosed insider/holder selling (CEO $31.9M, Omnisys holders ~3.4M shares) rather than any business deterioration — the fundamentals (guidance, backlog, new orders) all improved over the same window."
+    }
+  ],
+  "sources": [
+    "https://stockstotrade.com/news/ondas-inc-onds-news-2026_07_01/",
+    "https://public.com/stocks/onds/forecast-price-target",
+    "https://stockanalysis.com/stocks/onds/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "นี่คือความแตกต่างจริงระหว่าง fundamentals กับ technicals ตั้งแต่ report 26 มิ.ย. ของเรา Ondas รายงาน revenue Q1 $50.1M (โตจาก YoY มาก) backlog โตเป็น $457M รับ order Q2 แล้วเกิน $110M ปรับ guidance ปี 2026 ขึ้นเป็นอย่างน้อย $390M เปิดเผย pipeline $4.3B ครอบคลุมกว่า 45 program submission และได้ order ป้องกันประเทศใหม่กว่า $40M ปลาย มิ.ย. — แต่หุ้นร่วง ~41% เพราะ CEO Eric Brock ขายหุ้น $31.9M และผู้ถือหุ้นที่เชื่อมกับ Omnisys ขายอีกราว 3.4M หุ้น เป้าราคา consensus จากนักวิเคราะห์ 6 รายอยู่ที่ $19.83 — 2.5 เท่าของราคาปัจจุบัน ถ้า overhang จากการขายของ insider คลี่คลายโดยไม่มีข่าวลบใหม่ นี่ดูเหมือนจุดเข้าที่ดีกว่า report ก่อนหน้าของเราที่ราคาสูงกว่ามาก",
+      "priceNote": "ร่วง ~41% จาก report 26 มิ.ย. ของเรา ($13.36) — ไม่ได้มาจากปัญหาธุรกิจ Q1 revenue สถิติใหม่ ปรับ guidance ขึ้น และ defense order $40M+ ใหม่ ล้วนเกิดขึ้นในช่วงเดียวกัน แต่ CEO และผู้ถือหุ้นที่เชื่อมกับ Omnisys ขายหุ้นรวมกันราว 5.8M หุ้น กลบข่าวดีทั้งหมด",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "ปรับ Guidance รายได้ปี 2026 ขึ้น", "description": "ผู้บริหารปรับ guidance รายได้เต็มปี 2026 ขึ้นเป็นอย่างน้อย $390 ล้าน หนุนด้วย Q1 revenue $50.1M (โต YoY มาก) backlog pro forma ~$457M และ order Q2 ที่รับแล้วเกิน $110M" },
+        { "name": "Order ป้องกันประเทศแบบ Autonomous ใหม่ $40M+", "description": "รับ order ใหม่กว่า $40M สำหรับระบบ autonomous defense ปลาย มิ.ย. 2026 เพิ่มเติมจาก pipeline ทั่วโลก $4.3B ที่ครอบคลุมกว่า 45 program submission ทั้งด้าน defense และ homeland security" },
+        { "name": "Overhang จากการขายของ Insider — จับตาการคลี่คลาย", "description": "CEO Eric Brock ขายหุ้น 2,378,245 หุ้น (~$31.9M) และผู้ถือหุ้นที่เชื่อมกับ Omnisys ขายอีกราว 3.4M หุ้น นี่คือตัวขับเคลื่อนจริงของการร่วงล่าสุด ไม่ใช่ปัญหาธุรกิจ จับตาว่าการขายของ insider จะเบาลงเป็นสัญญาณว่า overhang กำลังคลี่คลาย" }
+      ],
+      "risks": [
+        "การขายของ insider ขนาดนี้ (CEO $31.9M บวกอีกราว 3.4M หุ้นจากผู้ถือรายอื่น) บางครั้งอาจสะท้อนสิ่งที่ตลาดยังไม่รู้ — แม้ fundamental ที่เปิดเผยจะแข็งแรง นี่คือสัญญาณเหลืองที่ควรจับตาจริงจัง ไม่ควรมองข้าม",
+        "ความเสี่ยง execution ในการแปลง pipeline $4.3B / 45+ program submission ให้เป็น revenue ที่ booked และส่งมอบจริง — pipeline ไม่ใช่ backlog และ backlog ไม่ใช่ revenue ที่รับรู้แล้ว",
+        "พึ่งพางบประมาณ defense/homeland-security — ถ้า priority การใช้จ่ายของรัฐบาลเปลี่ยนหรือโปรแกรม delay อาจทำให้จังหวะ order ช้าลง",
+        "ความผันผวนสูงตามปกติของหุ้น defense-tech ขนาดเล็ก — หุ้นอาจ overshoot ขาลงได้พอๆ กับที่เคย overshoot ขาขึ้น",
+        "ความเสี่ยง dilution ถ้าบริษัทระดมทุนเพื่อ working capital รองรับ backlog ที่โตขึ้น แม้จะยังไม่มี guidance ว่าจะเกิดเร็วๆ นี้"
+      ],
+      "macroRisk": {
+        "rateOutlook": "งบประมาณ defense/homeland-security ขับเคลื่อนด้วยงบประมาณรัฐบาลหลายปีและสถานะ program-of-record ไม่ใช่การตัดสินใจ FOMC",
+        "inflationNote": "ต้นทุนฮาร์ดแวร์/ชิ้นส่วนของระบบ drone มี exposure ต่อ inflation บ้าง แต่ contract รัฐบาลมักมีเงื่อนไขปรับต้นทุนรองรับ",
+        "sectorImpact": "ต่ำถึงปานกลาง บรรยากาศ hawkish Fed ตอนนี้ (hike price ภายใน ต.ค.) เป็นแรงกดดันรองต่อ trading multiple overhang จากการขายของ insider เป็นตัวขับเคลื่อนราคาระยะใกล้ที่ใหญ่กว่า macro มาก",
+        "summary": "ความเสี่ยง Fed ต่ำ — นี่คือเรื่อง technical เฉพาะบริษัท (insider selling) ที่ซ้อนอยู่บน fundamental การใช้จ่ายด้าน defense ที่แข็งแรงและไม่ค่อยผูกกับ policy ไม่ใช่ setup ที่ขับเคลื่อนด้วย macro"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม 2-3% max ดูเหมือน divergence จริงระหว่าง fundamentals กับ technicals: Q1 แข็งแกร่ง guidance ปรับขึ้น และ order $40M+ ใหม่ เกิดขึ้นพร้อมหุ้นร่วง 41% Base (overhang คลี่คลาย) → $14.26 (+80%) Bull (order momentum ต่อเนื่อง) → $21.38 (+170%) Moon (แปลง pipeline เร่งตัว) → $31.68 (+300%)",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน ร่วง 41% จาก report ก่อนหน้าทั้งที่ fundamental ดีขึ้น", "timing": "ตอนนี้ (2-3% max)" },
+          { "note": "ถ้าการขายของ insider ยังกดดันราคาต่อ", "timing": "ถ้าย่อ" },
+          { "note": "โซนย่อลึก — เฉพาะถ้า fundamental ยังอยู่ครบและยืนยันว่าเป็นแค่ insider selling ไม่ใช่ปัญหาธุรกิจ", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Base — overhang จากการขายของ insider คลี่คลาย ราคากลับมาสอดคล้อง fundamental" },
+        "tp2": { "note": "Bull — order momentum ต่อเนื่อง กลับไปใกล้เป้า consensus ($19.83)" },
+        "tp3": { "note": "Moon — แปลง pipeline เร่งตัว ได้ contract defense ใหญ่ต่อเนื่องหลายดีล", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดแนวรับปัจจุบัน = สัญญาณว่าแรงขายไม่ได้มาจาก insider อย่างเดียวแล้ว",
+          "hardNote": "มีข่าวลบเฉพาะธุรกิจจริงเกิดขึ้น (เสีย contract, ปรับ guidance ลง) — ต่างจาก narrative insider selling ล้วนๆ ตอนนี้มาก",
+          "rrNote": "Entry ($7.92) เทียบ TP2 ($21.38)",
+          "rrWarning": "Asymmetry แข็งแกร่ง ✅ — เป้านักวิเคราะห์ ($19.83) เพียงอย่างเดียวก็ implied +150% สูงกว่า Base case ของเราเอง"
+        }
+      },
+      "estimateDates": [
+        { "event": "รูปแบบการขายของ Insider — filing window ถัดไป", "note": "จับตา Form 4 filing รอบถัดไปว่าการขายของ CEO/ผู้ถือหุ้นจะต่อเนื่องหรือเบาลง" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "ticker": "ACHR",
+  "companyName": "Archer Aviation Inc.",
+  "companyDescription": "eVTOL Air Taxi · First manufacturer to complete FAA Type Certification Phase 3 of 4 · Joined White House eVTOL Integration Pilot Program · Added to Russell 2000/2500/3000 Value indices (Jun 2026)",
+  "exchange": "NYSE",
+  "generatedAt": "2026-07-02T00:00:00.000Z",
+  "price": 4.97,
+  "priceChange": 4.02,
+  "priceNote": "Up 4.02% today on FAA certification milestone news. First eVTOL manufacturer to complete Phase 3 of 4 in the FAA Type Certification process; also newly added to Russell value indices.",
+  "marketCap": "$3.75B",
+  "sector": "Industrials / Aerospace (eVTOL)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 63,
+  "summary": "Archer just became the first eVTOL manufacturer to complete Phase 3 of 4 in the FAA Type Certification process and joined the White House eVTOL Integration Pilot Program — putting it on track to start US commercial operations later in 2026. Late-June addition to the Russell 2000/2500/3000 Value indices is driving passive-fund inflows on top of the certification news. The balance sheet is strong ($951M cash, $1.78B including short-term investments), but revenue is still nearly zero ($1.6M Q1) against a $217.7M quarterly net loss — this remains a binary bet on Phase 4 completion and the actual start of commercial flights, not a business generating cash today.",
+  "catalysts": [
+    {
+      "icon": "✈️",
+      "name": "FAA Type Certification — Phase 4 (Final Phase)",
+      "description": "Archer is the first eVTOL manufacturer to complete Phase 3 of 4 in FAA Type Certification. Phase 4 is the final phase before certification is granted, putting the company on track to begin US commercial air taxi operations later in 2026.",
+      "urgencyLabel": "FINAL PHASE",
+      "dateBadge": "H2 2026",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "🏛️",
+      "name": "White House eVTOL Integration Pilot Program",
+      "description": "Archer joined the federal pilot program aimed at accelerating eVTOL integration into US airspace — direct government validation and regulatory tailwind alongside the FAA certification process.",
+      "urgencyLabel": "JOINED",
+      "dateBadge": "Jun 2026",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📊",
+      "name": "Russell Index Inclusion — Passive Fund Inflows",
+      "description": "Added to Russell 2000 Value, 2500 Value, 3000 Value, Small Cap Comp Value, and 3000E Value indices in late June 2026. Forces passive index funds to buy shares, creating a real (if temporary) liquidity/demand tailwind independent of the operating business.",
+      "urgencyLabel": "RECENT",
+      "dateBadge": "Jun 2026",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Still essentially pre-revenue — $1.6M Q1 revenue against a $217.7M quarterly net loss; the entire thesis is certification/commercialization timing, not current fundamentals",
+    "A single public eVTOL safety incident — Archer's or a competitor's — could slow industry-wide regulatory and public adoption, a standing overhang on the whole sector",
+    "Stock is down 50.7% over the past year despite today's certification-news pop — shows how much sentiment has already cooled from earlier highs",
+    "Phase 4 (final FAA phase) still needs to complete — no guarantee of the timeline holding even after the Phase 3 milestone",
+    "Continued heavy cash burn means further dilutive capital raises remain likely even with the current $1.78B cash-plus-investments cushion"
+  ],
+  "estimateDates": [
+    { "event": "FAA Phase 4 Completion / Type Certification", "dateRange": "H2 2026 (targeted)", "note": "Final phase before certification — start of US commercial operations follows", "est": "On track per company guidance, not yet confirmed", "highlight": "red" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -45, "price": 2.73 },
+    { "label": "Base", "color": "yellow", "pct": 60, "price": 7.95 },
+    { "label": "Bull", "color": "green", "pct": 130, "price": 11.43 },
+    { "label": "Moon", "color": "purple", "pct": 240, "price": 16.90 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (9 analysts, S&P Global)", "target": 10.61, "rating": "Buy", "note": "3 Buy, 1 Hold this month" },
+    { "firm": "12-month average (broader sample)", "target": 12.33, "rating": "Buy", "note": "Range $11.00-$13.00" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Archer is pre-revenue and cash-burn-heavy — a higher-for-longer rate environment raises the cost of any future capital raise, even with the current strong cash position providing a multi-year buffer.",
+    "inflationNote": "Aircraft manufacturing/component costs are exposed to input-cost inflation; a secondary factor versus certification timing risk.",
+    "sectorImpact": "MEDIUM. The current hawkish-Fed backdrop (rate hike priced by October per this week's market read) pressures high-burn, pre-revenue growth names broadly, though the Russell index inclusion provides a partially offsetting technical bid.",
+    "summary": "Fed risk MEDIUM — Archer's strong cash position ($1.78B) buys real runway, but as a pre-revenue, high-burn name it's more exposed to a hawkish-Fed multiple compression than a self-funding business would be."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 4.97, "note": "Current price — up on today's Phase 3 certification news", "timing": "Now (2-3% max)" },
+      { "label": "Entry 2", "level": 4.37, "rangeMax": 4.70, "note": "Pullback zone if today's pop fades", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 3.48, "note": "Deep dip — high conviction add only", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 7.95, "pct": 60.0, "note": "Base — Phase 4 progresses on schedule, no safety incidents sector-wide" },
+    "tp2": { "price": 11.43, "pct": 130.0, "note": "Bull — FAA Type Certification granted, matches Street consensus range" },
+    "tp3": { "price": 16.90, "pct": 240.0, "note": "Moon — certification granted AND commercial flight operations launch ahead of schedule", "moon": true },
+    "stopLoss": {
+      "tight": 4.08, "tightPct": -18.0, "tightNote": "Below pre-Phase-3-news support — certification momentum stalling",
+      "hard": 2.73, "hardPct": -45.0, "hardNote": "A sector-wide safety incident or major Phase 4 delay — thesis materially impaired",
+      "riskReward": "2.9 : 1", "rrNote": "Entry ($4.97) vs TP2 ($11.43)", "rrWarning": "Decent asymmetry ✅ — but sector-wide safety-incident tail risk is real and outside company control"
+    },
+    "verdict": "ค่าขนม SPECULATIVE — 2-3% max. Base (Phase 4 on track) → $7.95 (+60%), Bull (certification granted) → $11.43 (+130%), Moon (certification + early commercial launch) → $16.90 (+240%). Strong cash position buys time, but this is still a pre-revenue certification bet.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "regulatory_approval",
+    "preRunup": "eVTOL stocks run hard on any FAA certification phase-completion news — today's +4% move on the Phase 3 milestone is a live example; index-inclusion news has compounded the effect this cycle.",
+    "preRunupTiming": "days ก่อน certification milestone news (often same-day reaction)",
+    "preRunupPct": "+4-15% per milestone",
+    "postWin": {
+      "avgPct": 60,
+      "range": "+30% to +100%+",
+      "note": "Full FAA Type Certification (completing Phase 4) would be the single biggest catalyst in company history — the actual start of revenue-generating commercial operations. No exact historical comp exists since no eVTOL company has completed this process yet; Archer being first mover into Phase 4 makes it the reference case.",
+      "exampleDate": "No direct historical comp — first mover"
+    },
+    "postLose": {
+      "avgPct": -35,
+      "range": "-25% to -50%",
+      "note": "A major Phase 4 delay or a sector-wide safety incident (at Archer or a competitor) would likely reset the commercialization timeline expectations and could trigger a sharp de-rate, given how much of the current valuation already prices in a 2026 commercial launch.",
+      "exampleDate": "Typical pattern for certification-delay-driven small-cap resets"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "3% — full turbo sizing given the strong cash cushion reduces near-term financing risk, though the certification timeline and sector-wide safety-incident tail risk keep this firmly speculative."
+    },
+    "stopPreCatalyst": { "pct": -18, "price": 4.08, "note": "หลุด $4.08 = momentum จาก Phase 3 milestone อ่อนแรงลง" },
+    "stopPostCatalyst": { "pct": -45, "note": "ถ้ามี safety incident ทั้ง sector หรือ Phase 4 delay ใหญ่ — exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "ACHR",
+      "event": "FAA Type Certification Phase 3 Completion",
+      "date": "Jul 2026",
+      "movePct": 4,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-day +4.02% reaction to becoming the first eVTOL manufacturer to complete Phase 3 — direct evidence of how the market reacts to certification-phase milestones; full Type Certification (Phase 4) should be a materially larger version of this same reaction."
+    },
+    {
+      "ticker": "ACHR",
+      "event": "Russell Value Index Additions",
+      "date": "Jun 2026",
+      "movePct": 15,
+      "days": 5,
+      "outcome": "good",
+      "note": "Passive index-fund buying following the Russell 2000/2500/3000 Value inclusion provided a real technical tailwind independent of the operating business — compounding on top of the certification newsflow this cycle."
+    }
+  ],
+  "sources": [
+    "https://stockstotrade.com/news/archer-aviation-inc-achr-news-2026_07_01/",
+    "https://www.timothysykes.com/news/archer-aviation-inc-achr-news-2026_07_01/",
+    "https://simplywall.st/stocks/us/capital-goods/nyse-achr/archer-aviation/news/is-archer-aviations-achr-russell-index-debut-quietly-reframi",
+    "https://www.tipranks.com/stocks/achr/forecast"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Archer เพิ่งเป็นผู้ผลิต eVTOL รายแรกที่ผ่าน Phase 3 จาก 4 phase ของ FAA Type Certification process และเข้าร่วม White House eVTOL Integration Pilot Program — ทำให้อยู่ในเส้นทางเริ่ม commercial operations ในสหรัฐฯ ช่วงครึ่งหลังปี 2026 การเพิ่มเข้า Russell 2000/2500/3000 Value indices ปลาย มิ.ย. กำลังดึง fund flow แบบ passive เพิ่มเติมนอกเหนือจากข่าว certification งบดุลแข็งแกร่ง ($951M cash, $1.78B รวม short-term investments) แต่ revenue ยังแทบเป็นศูนย์ ($1.6M ใน Q1) เทียบกับขาดทุนสุทธิรายไตรมาส $217.7M นี่ยังเป็น binary bet เรื่อง Phase 4 สำเร็จ และการเริ่มบินเชิงพาณิชย์จริง ไม่ใช่ธุรกิจที่สร้างเงินสดวันนี้",
+      "priceNote": "วันนี้ขึ้น 4.02% จากข่าว milestone FAA certification เป็นผู้ผลิต eVTOL รายแรกที่ผ่าน Phase 3 จาก 4 ของ FAA Type Certification process รวมถึงเพิ่งถูกเพิ่มเข้า Russell value indices",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "FAA Type Certification — Phase 4 (Phase สุดท้าย)", "description": "Archer เป็นผู้ผลิต eVTOL รายแรกที่ผ่าน Phase 3 จาก 4 ของ FAA Type Certification Phase 4 คือ phase สุดท้ายก่อนได้ certification ทำให้อยู่ในเส้นทางเริ่ม commercial air taxi operations ในสหรัฐฯ ช่วงครึ่งหลังปี 2026" },
+        { "name": "White House eVTOL Integration Pilot Program", "description": "Archer เข้าร่วมโปรแกรมนำร่องของรัฐบาลกลางที่มุ่งเร่ง integration ของ eVTOL เข้าน่านฟ้าสหรัฐฯ — การรับรองจากรัฐบาลโดยตรงและ tailwind ด้าน regulatory ควบคู่กับ FAA certification" },
+        { "name": "เข้า Russell Index — Fund Inflow แบบ Passive", "description": "ถูกเพิ่มเข้า Russell 2000 Value, 2500 Value, 3000 Value, Small Cap Comp Value และ 3000E Value indices ปลาย มิ.ย. 2026 บังคับให้ passive index fund ต้องซื้อหุ้น สร้าง demand/liquidity tailwind จริง (แม้ชั่วคราว) ที่ไม่เกี่ยวกับธุรกิจดำเนินงาน" }
+      ],
+      "risks": [
+        "ยังแทบไม่มี revenue จริง — $1.6M ใน Q1 เทียบขาดทุนสุทธิรายไตรมาส $217.7M thesis ทั้งหมดขึ้นกับ timing certification/commercialization ไม่ใช่ fundamental ปัจจุบัน",
+        "safety incident สาธารณะเพียงครั้งเดียวของ eVTOL — ไม่ว่าของ Archer หรือคู่แข่ง — อาจทำให้การยอมรับด้าน regulatory และสาธารณะทั้ง industry ช้าลง เป็น overhang ต่อเนื่องของทั้ง sector",
+        "หุ้นร่วง 50.7% ในปีที่ผ่านมา แม้วันนี้จะเด้งจากข่าว certification — แสดงว่า sentiment เย็นลงมากจาก high เดิม",
+        "Phase 4 (phase สุดท้ายของ FAA) ยังต้องสำเร็จ — ไม่การันตี timeline แม้ผ่าน milestone Phase 3 แล้ว",
+        "burn เงินสดหนักต่อเนื่องแปลว่ามีโอกาสต้อง raise ทุนแบบ dilutive เพิ่มอีก แม้จะมีเงินสด+investment $1.78B รองรับอยู่ตอนนี้"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Archer ยังไม่มี revenue และ burn เงินสดหนัก — ดอกเบี้ยสูงต่อเนื่องเพิ่มต้นทุนการระดมทุนในอนาคต แม้ตำแหน่งเงินสดตอนนี้จะให้ runway หลายปี",
+        "inflationNote": "ต้นทุนผลิตอากาศยาน/ชิ้นส่วน exposed กับ input-cost inflation เป็นปัจจัยรองเทียบกับความเสี่ยง timing certification",
+        "sectorImpact": "ปานกลาง บรรยากาศ hawkish Fed ตอนนี้ (hike price ภายใน ต.ค.) กดดันหุ้น growth burn สูง pre-revenue โดยรวม แม้การเข้า Russell index จะช่วยหนุนด้าน technical บางส่วน",
+        "summary": "ความเสี่ยง Fed ปานกลาง — ตำแหน่งเงินสดแข็งแกร่ง ($1.78B) ซื้อ runway จริง แต่ในฐานะหุ้น pre-revenue burn สูง sensitive กับ multiple compression จาก hawkish Fed มากกว่าธุรกิจที่เลี้ยงตัวเองได้"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม 2-3% max Base (Phase 4 คืบหน้าตามแผน) → $7.95 (+60%) Bull (ได้ FAA Type Certification) → $11.43 (+130%) Moon (certification + เริ่มบินเชิงพาณิชย์เร็วกว่าแผน) → $16.90 (+240%) เงินสดแข็งแกร่งซื้อเวลาได้ แต่นี่ยังเป็น bet เรื่อง certification ก่อน revenue จริง",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน ขึ้นจากข่าว Phase 3 certification วันนี้", "timing": "ตอนนี้ (2-3% max)" },
+          { "note": "โซนย่อถ้าแรงเด้งวันนี้จางลง", "timing": "ถ้าย่อ" },
+          { "note": "โซนย่อลึก — เข้าเฉพาะมั่นใจสูง", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Base — Phase 4 คืบหน้าตามกำหนด ไม่มี safety incident ทั้ง sector" },
+        "tp2": { "note": "Bull — ได้ FAA Type Certification ตรงช่วง consensus" },
+        "tp3": { "note": "Moon — ได้ certification พร้อมเริ่มบินเชิงพาณิชย์เร็วกว่าแผน", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดแนวรับก่อนข่าว Phase 3 = momentum certification เริ่มหยุดชะงัก",
+          "hardNote": "safety incident ทั้ง sector หรือ Phase 4 delay ใหญ่ — thesis เสียหายจริง",
+          "rrNote": "Entry ($4.97) เทียบ TP2 ($11.43)",
+          "rrWarning": "Asymmetry พอใช้ ✅ — แต่ความเสี่ยง safety incident ทั้ง sector เป็นเรื่องจริงและอยู่นอกเหนือการควบคุมบริษัท"
+        }
+      },
+      "estimateDates": [
+        { "event": "FAA Phase 4 สำเร็จ / Type Certification", "note": "Phase สุดท้ายก่อน certification — ตามด้วยเริ่ม commercial operations ในสหรัฐฯ" }
+      ]
+    }
+  }
+}
