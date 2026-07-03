@@ -60,5 +60,7 @@ export function computeNearMissOutcomes(): NearMissOutcome[] {
     const p = cache[cacheKey(nm.ticker, target)]?.price ?? null;
     return p != null && nm.screenPrice > 0 ? ((p - nm.screenPrice) / nm.screenPrice) * 100 : null;
   };
-  return readNearMisses().map((nm) => ({ ...nm, pct14: pct(nm, 14), pct30: pct(nm, 30) }));
+  return readNearMisses()
+    .map((nm) => ({ ...nm, pct14: pct(nm, 14), pct30: pct(nm, 30) }))
+    .sort((a, b) => (b.screenDate ?? "").localeCompare(a.screenDate ?? ""));
 }
