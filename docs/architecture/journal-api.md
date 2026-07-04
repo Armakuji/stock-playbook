@@ -26,6 +26,7 @@ later — see Phase 3).
 | Auth (humans) | **OIDC** code flow handled by NestJS → NestJS issues its own **httpOnly session cookie**. Multi-provider ready: `auth_identities` table keyed by `(provider, subject)` — Google now, Facebook/Twitter later = add a strategy, zero schema migration. Auto-link identities to an existing user by email **only when the provider asserts `email_verified: true`** (otherwise create a separate account — prevents email-spoof hijack) |
 | Auth (scripts) | **Personal access tokens** (PAT, hashed in DB) as `Authorization: Bearer` — Claude's backtest/validator scripts read the journal **from the API**, not local files |
 | Authorization | One rule: `trade.user_id === session.user.id`. Role `admin` (owner) gates token issuance + future report sync |
+| Access control | **Whitelist mode** (env flag `WHITELIST_MODE`): first OIDC login checks `whitelist` by email → in list = `users.status: active`, not in list = `pending` (waiting-for-invite page). **Subscription-ready:** `plans` (features jsonb) + `subscriptions` — seed only `free` plan at launch, every user auto-subscribed; guards read `plan.features` for gating. Stripe later = fill `external_ref` + webhook, no schema change |
 | Database | PostgreSQL. `journal-validation.json` also moves to DB (`trade_validations`) so validator verdicts live beside trades |
 | API framework | **NestJS** (owner's strongest stack), lives in `service/` in this repo (monorepo) |
 | ORM / migrations | **Prisma** — `schema.prisma` = source of truth · dev: `prisma migrate dev --name <x>` (commit migration files) · prod: Railway **Pre-Deploy Command** = `npx prisma migrate deploy` (deploy halts if migration fails). ⚠️ `prisma` must be in `dependencies`, not devDependencies |
@@ -69,7 +70,19 @@ Claude scripts (Mac) ── Bearer PAT ──► same API   (env: JOURNAL_API_UR
 
 ```sql
 users             (id uuid PK, email text, name text, avatar_url text,
-                   role text DEFAULT 'user', created_at timestamptz)
+                   role text DEFAULT 'user',
+                   status text DEFAULT 'active',  -- active | pending (not whitelisted) | blocked
+                   created_at timestamptz)
+whitelist         (id uuid PK, email text UNIQUE, note text,
+                   invited_by uuid FK→users NULL, created_at timestamptz)
+plans             (id text PK,  -- 'free' | 'pro' | ... (seed 'free' only at launch)
+                   name text, price_cents int, interval text,
+                   features jsonb)  -- e.g. {"maxTrades": 50} — change entitlements without migration
+subscriptions     (id uuid PK, user_id uuid FK→users, plan_id text FK→plans,
+                   status text,  -- active | trialing | past_due | canceled
+                   current_period_start timestamptz, current_period_end timestamptz,
+                   external_ref text,  -- Stripe subscription id (future)
+                   created_at timestamptz, updated_at timestamptz)
 auth_identities   (id uuid PK, user_id uuid FK→users,
                    provider text,   -- 'google' now; 'facebook' | 'twitter' | ... later, no migration needed
                    subject text,    -- OIDC `sub` claim from that provider
