@@ -167,6 +167,24 @@ api_tokens        (id uuid PK, user_id uuid FK→users, token_hash text, label t
 
 Maps 1:1 from `web/lib/journal-types.ts` (`Trade`, `TradeExit`, `ValidatorResult`).
 
+## 4.1 API surface
+
+| Group | Endpoint | Auth | Notes |
+|---|---|---|---|
+| Auth | `GET /auth/google` → `GET /auth/callback` | — | OIDC code flow, sets session cookie |
+| | `GET /auth/me` | cookie | user JSON: `{id, email, name, role, status, plan}` |
+| | `POST /auth/logout` | cookie | clear cookie |
+| Journal | `GET/POST /trades` · `GET/PATCH/DELETE /trades/:id` | cookie/PAT | ownership guard — own trades only |
+| | `POST/DELETE /trades/:id/exits` | cookie/PAT | close/partial-close |
+| Validator | `PUT /trades/:id/validation` | PAT | validator skill writes `trade_validations` |
+| Tokens | `POST /tokens` · `GET /tokens` · `DELETE /tokens/:id` | cookie (admin) | issue/list/revoke PATs |
+| Admin | `GET/POST/DELETE /admin/whitelist` | cookie (admin) | manage invite list |
+| | `GET /admin/users` · `PATCH /admin/users/:id` | cookie (admin) | list users, set status/role |
+| | `GET/POST/PATCH /admin/plans` · `/admin/features` · `/admin/plans/:id/features` | cookie (admin) | manage plans/features/plan_features (Phase 3+, admin UI optional — seed via migration first) |
+
+Feature gating is **not** an endpoint — it's a guard (`hasFeature` / `limitOf` per §2
+Access control) applied to Journal routes.
+
 ## 5. Phases
 
 **Phase 1 — API + my journal in prod**
@@ -175,7 +193,8 @@ CRUD + ownership guard · import `private/journal.json` as user #1 · point
 `web/app/journal/*` at the API (login gate; remove `fs` writes + `isLocal` gate).
 
 **Phase 2 — open to everyone + scripts on API**
-Public signup (any Google account) · PAT issuance + Bearer guard ·
+Signup with **whitelist mode** (`WHITELIST_MODE` env + `/admin/whitelist` endpoints) ·
+seed `free` plan + auto-subscribe on signup · PAT issuance + Bearer guard ·
 migrate `scripts/fetch-backtest-prices.mjs` + analyze-journal/validator skill to
 `JOURNAL_API_URL`/`JOURNAL_API_TOKEN` · validator PUTs results to `trade_validations` ·
 retire `private/journal.json` + `journal-validation.json` (keep as backup export).
