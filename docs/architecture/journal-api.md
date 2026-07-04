@@ -1,6 +1,7 @@
 # Journal API — Architecture Design
 
 > Status: **agreed, not started** · Designed 2026-07-04 · Backlog item #14
+> Ops runbook: **`journal-api-deployment.md`** (step-by-step Railway/Vercel/OAuth setup + migration workflow)
 > Goal: take the private local journal public (multi-user, Google login) and move journal
 > data to PostgreSQL behind a NestJS API — while leaving the report publish pipeline untouched.
 
