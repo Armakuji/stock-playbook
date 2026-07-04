@@ -28,7 +28,7 @@ later — see Phase 3).
 | Database | PostgreSQL. `journal-validation.json` also moves to DB (`trade_validations`) so validator verdicts live beside trades |
 | API framework | **NestJS** (owner's strongest stack), lives in `service/` in this repo (monorepo) |
 | Hosting | **Railway**: NestJS + Postgres in one project, private network, ~$5–10/mo (Root Directory = `service`). Next.js stays on Vercel (Root Directory = `web`) |
-| Domains | Same apex for web + API (`www.` / `api.`) so session cookies work without cross-domain pain |
+| Domains | **Start with Option B (no custom domain):** Next.js rewrites proxy `/api/journal/*` → Railway URL — browser sees one origin (vercel.app), no CORS, first-party cookies. **Option A (later, with custom domain):** `www.` + `api.` under one apex, `enableCors({origin, credentials: true})`, `SameSite=Lax`. Avoid `SameSite=None` cross-site cookies — Safari/iOS blocks them |
 | Reports | Unchanged (git → Vercel). Scripts keep reading `web/data/` locally; only journal I/O switches to HTTP |
 
 Alternatives considered: Supabase (Postgres + built-in auth + RLS — less NestJS work but
@@ -141,7 +141,16 @@ ever needed.
 
 ## 7. Risks / gotchas
 
-- **Cookies:** must be same apex domain; set `SameSite=Lax`, `Secure`, `HttpOnly`.
+- **Cookies:** never `SameSite=None` cross-site (Safari/iOS blocks) — use the rewrites proxy (Option B) or same apex domain (Option A); always `Secure` + `HttpOnly`. With Option B the proxy config is:
+
+  ```js
+  // web/next.config.js
+  async rewrites() {
+    return [{ source: "/api/journal/:path*",
+              destination: "https://<service>.up.railway.app/:path*" }];
+  }
+  ```
+- **CORS is not security** — it only limits which origins browsers will read responses from; anyone can curl the API. Real protection = auth guards on every route.
 - **PAT hygiene:** store only hashes; scripts read token from env, never committed.
 - **PII:** storing Google emails → add a minimal privacy note + delete-account endpoint (GDPR/PDPA-lite).
 - **Journal page i18n:** `JournalContent.tsx` is also on the i18n backlog (#13) — coordinate to avoid double rework.
