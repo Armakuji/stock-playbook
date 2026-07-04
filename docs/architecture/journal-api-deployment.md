@@ -23,6 +23,15 @@ npm run start:dev             # NestJS with hot-reload on :4000
 Frontend dev: `web/` already proxies `/api/journal/*` — point the rewrite destination at
 `http://localhost:4000` via env (`JOURNAL_API_ORIGIN`) so local web talks to local API.
 
+**Local login:** works with real Google — the OAuth client registers
+`http://localhost:4000/auth/callback` (§2), Google always allows localhost without HTTPS.
+`service/.env` (gitignored; commit `.env.example` as template) holds `DATABASE_URL`,
+`SESSION_SECRET` (dev value ≠ prod), `GOOGLE_CLIENT_ID/SECRET` (same as prod is fine),
+`WEB_ORIGIN=http://localhost:3000`. Cookies are host-scoped, **not port-scoped** — a
+cookie set by :4000 is sent on :3000 requests too, and `Secure` is fine because browsers
+treat localhost as a secure context. Optional DX: `POST /auth/dev-login` gated by
+`NODE_ENV=development` to skip Google round-trips while building UI.
+
 ## 2. Google OAuth client (one-time)
 
 Google Cloud Console → APIs & Services → Credentials → **Create OAuth client ID (Web)**:
