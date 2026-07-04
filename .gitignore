@@ -6,3 +6,6 @@ node_modules/
 # Lives on Mac Mini only. NEVER pushed to GitHub or Vercel.
 private/
 web/.render-tmp/
+
+# ── service (NestJS API) secrets ────────────────────────────────────────────
+service/.env
