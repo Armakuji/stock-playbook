@@ -7,7 +7,7 @@
 
 - [ ] Railway account (Hobby plan, $5/mo)
 - [ ] Google Cloud Console project → OAuth 2.0 Client ID (see §2)
-- [ ] `SESSION_SECRET` generated: `openssl rand -base64 32` (keep somewhere safe)
+- [ ] `SESSION_SECRET` generated: `openssl rand -base64 32` — stored in **Railway Variables** (prod) + `service/.env` gitignored (local, use a different value). No GitHub Secrets needed (no CI deploy — Railway injects its own vars). If lost: regenerate → all sessions invalid → users just re-login, nothing breaks.
 - [ ] Repo pushed to GitHub (Railway deploys from GitHub)
 
 ## 1. Local dev setup
