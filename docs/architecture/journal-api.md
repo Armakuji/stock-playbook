@@ -104,7 +104,33 @@ retire `private/journal.json` + `journal-validation.json` (keep as backup export
 admin sync endpoint called from `push-report.sh` after validation. Git stays source of
 truth. Do this only when journal↔report joins or data volume demand it.
 
-## 6. Risks / gotchas
+## 6. Dev & deploy mechanics
+
+**Local dev:** Postgres runs in Docker, NestJS runs on host (hot-reload). `service/docker-compose.yml`:
+
+```yaml
+services:
+  db:
+    image: postgres:16
+    ports: ["5432:5432"]
+    environment: { POSTGRES_USER: radar, POSTGRES_PASSWORD: radar, POSTGRES_DB: journal }
+    volumes: [pgdata:/var/lib/postgresql/data]
+volumes:
+  pgdata:
+```
+
+Loop: `docker compose up -d` once → `npm run start:dev` · `.env`:
+`DATABASE_URL=postgresql://radar:radar@localhost:5432/journal`
+
+**Railway deploy:** no Dockerfile needed — Railway's **Railpack** builder auto-detects Node
+from `package.json` (Root Directory = `service`), runs build + start scripts. Ensure a
+`start` script exists (`node dist/main`). Postgres is added as a managed service in the
+same Railway project ("+ New → Database → PostgreSQL"); Railway injects `DATABASE_URL`
+via reference variable over the private network — same env var name as local, code
+unchanged. A custom `Dockerfile` in `service/` overrides Railpack if image control is
+ever needed.
+
+## 7. Risks / gotchas
 
 - **Cookies:** must be same apex domain; set `SameSite=Lax`, `Secure`, `HttpOnly`.
 - **PAT hygiene:** store only hashes; scripts read token from env, never committed.
