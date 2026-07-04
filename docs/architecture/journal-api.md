@@ -66,6 +66,62 @@ NestJS API (api.<domain>, Railway)
 Claude scripts (Mac) ── Bearer PAT ──► same API   (env: JOURNAL_API_URL, JOURNAL_API_TOKEN)
 ```
 
+## 3.1 Auth flows (mermaid)
+
+**Login (OIDC → stateless JWT session cookie):**
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant B as Browser
+    participant V as Next.js (Vercel)<br/>rewrites proxy /api/journal/*
+    participant N as NestJS (Railway)
+    participant G as Google OIDC
+    participant DB as Postgres
+
+    B->>V: GET /api/journal/auth/google
+    V->>N: proxy
+    N-->>B: 302 redirect ไป Google (client_id, redirect_uri, scope)
+    B->>G: login + consent
+    G-->>B: 302 กลับ /auth/callback?code=...
+    B->>V: GET /api/journal/auth/callback?code
+    V->>N: proxy
+    N->>G: แลก code → id_token (JWT ของ Google)
+    N->>N: verify id_token → อ่าน sub, email, email_verified
+    N->>DB: หา auth_identities (provider='google', subject=sub)
+    alt ไม่เจอ identity
+        N->>DB: เช็ค whitelist(email) → สร้าง users (active/pending) + auth_identities<br/>+ subscription plan 'free'
+    end
+    N->>N: เซ็น session JWT ของเราเอง (userId, exp) ด้วย SESSION_SECRET<br/>(id_token ของ Google ทิ้ง ไม่ส่งต่อ)
+    N-->>B: Set-Cookie: session=<JWT> HttpOnly Secure + 302 กลับหน้าเว็บ
+    B->>V: GET /api/journal/auth/me (cookie แนบอัตโนมัติ)
+    V->>N: proxy
+    N-->>B: { id, email, name, role, plan }
+```
+
+**Authenticated requests (browser vs Claude scripts):**
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant B as Browser
+    participant S as Claude scripts (Mac)
+    participant N as NestJS (Railway)
+    participant DB as Postgres
+
+    Note over B,N: ผู้ใช้ปกติ — cookie
+    B->>N: CRUD /trades (Cookie: session=<JWT>, ผ่าน Vercel proxy)
+    N->>N: verify JWT signature + exp → userId
+    N->>DB: query WHERE user_id = userId (ownership guard)
+    N-->>B: trades ของตัวเองเท่านั้น
+
+    Note over S,N: scripts — PAT
+    S->>N: PUT /trades/:id/validation (Authorization: Bearer <PAT>)
+    N->>DB: hash(PAT) → หา api_tokens → userId
+    N->>DB: upsert trade_validations
+    N-->>S: 200
+```
+
 ## 4. Schema
 
 ```sql
