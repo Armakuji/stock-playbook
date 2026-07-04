@@ -23,7 +23,7 @@ later — see Phase 3).
 | Topic | Decision |
 |---|---|
 | Journal visibility | **Private per-user** — each user CRUDs only their own trades. No social features, no likes, no public feed. |
-| Auth (humans) | Google **OIDC** code flow handled by NestJS → NestJS issues its own **httpOnly session cookie** |
+| Auth (humans) | **OIDC** code flow handled by NestJS → NestJS issues its own **httpOnly session cookie**. Multi-provider ready: `auth_identities` table keyed by `(provider, subject)` — Google now, Facebook/Twitter later = add a strategy, zero schema migration. Auto-link identities to an existing user by email **only when the provider asserts `email_verified: true`** (otherwise create a separate account — prevents email-spoof hijack) |
 | Auth (scripts) | **Personal access tokens** (PAT, hashed in DB) as `Authorization: Bearer` — Claude's backtest/validator scripts read the journal **from the API**, not local files |
 | Authorization | One rule: `trade.user_id === session.user.id`. Role `admin` (owner) gates token issuance + future report sync |
 | Database | PostgreSQL. `journal-validation.json` also moves to DB (`trade_validations`) so validator verdicts live beside trades |
@@ -68,8 +68,13 @@ Claude scripts (Mac) ── Bearer PAT ──► same API   (env: JOURNAL_API_UR
 ## 4. Schema
 
 ```sql
-users             (id uuid PK, google_sub text UNIQUE, email text, name text,
-                   avatar_url text, role text DEFAULT 'user', created_at timestamptz)
+users             (id uuid PK, email text, name text, avatar_url text,
+                   role text DEFAULT 'user', created_at timestamptz)
+auth_identities   (id uuid PK, user_id uuid FK→users,
+                   provider text,   -- 'google' now; 'facebook' | 'twitter' | ... later, no migration needed
+                   subject text,    -- OIDC `sub` claim from that provider
+                   email text, created_at timestamptz,
+                   UNIQUE(provider, subject))
 trades            (id uuid PK, user_id uuid FK→users, ticker text, catalyst_type text,
                    linked_report_date text,          -- "YYYYMMDD" → web/data/reports/<TICKER>_<DATE>.json
                    entry_price numeric, shares numeric, entry_date date,
