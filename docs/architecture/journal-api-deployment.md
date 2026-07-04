@@ -29,8 +29,8 @@ Frontend dev: `web/` already proxies `/api/journal/*` — point the rewrite dest
 `SESSION_SECRET` (dev value ≠ prod), `GOOGLE_CLIENT_ID/SECRET` (same as prod is fine),
 `WEB_ORIGIN=http://localhost:3000`. Cookies are host-scoped, **not port-scoped** — a
 cookie set by :4000 is sent on :3000 requests too, and `Secure` is fine because browsers
-treat localhost as a secure context. Optional DX: `POST /auth/dev-login` gated by
-`NODE_ENV=development` to skip Google round-trips while building UI.
+treat localhost as a secure context. Dev uses **real Google login** (no dev-login bypass —
+decided against it so local always tests the true OIDC flow).
 
 ## 2. Google OAuth client (one-time)
 
