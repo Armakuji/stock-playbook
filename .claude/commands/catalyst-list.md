@@ -3,7 +3,7 @@ description: Generate the catalyst dashboard — screen 5 best 30%+ catalyst pla
 ---
 Run the `/catalyst-list` workflow from CLAUDE.md (the catalyst dashboard; formerly /dashboard).
 
-1. Screen for the 5 best stocks with 30%+ upside (Tech/AI/Space/Semiconductors/Robotics first). Research each live before writing (use `xvary-stock-report` per pick).
+1. Screen for the 5 best stocks with 30%+ upside (Tech/AI/Space/Semiconductors/Robotics first). Research each live before writing (use `stock-report` per pick).
 2. Save a JSON report per pick to `web/data/reports/`.
 3. Log runners-up to `web/data/near-misses.json` (counterfactual).
 4. Run the `analyze-market-situation` skill to research macro conditions and generate the BUY/SELECTIVE/WAIT verdict → it saves `web/data/market-timing.json` itself.

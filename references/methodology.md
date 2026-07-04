@@ -1,14 +1,14 @@
-# XVARY Methodology (Public Framework)
+# Stock Radar Methodology (Public Framework)
 
-This document is the **public framework** for XVARY Research.
+This document is the **public framework** for Stock Radar Research.
 
 It is intentionally the **menu, not the recipe**: stage names, logic flow, and decision philosophy are published; internal prompts, thresholds, and convergence algorithms are not.
 
-Full narrative: [xvary.com/methodology](https://xvary.com/methodology)
+Full narrative: [stock-radar-weekly.vercel.app/methodology](https://stock-radar-weekly.vercel.app/methodology)
 
 ## Research Philosophy
 
-XVARY is built around five principles:
+Stock Radar is built around five principles:
 
 1. **Variant perception first**: value comes from being directionally right where consensus is wrong.
 2. **Evidence before narrative**: facts constrain the story, not the other way around.

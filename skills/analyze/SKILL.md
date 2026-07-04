@@ -60,7 +60,7 @@ Do not fabricate prices, dates, or probabilities.
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{TICKER}} · XVARY Research</title>
+<title>{{TICKER}} · Stock Radar Research</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { background: #0f1117; color: #e2e8f0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 14px; line-height: 1.6; padding: 24px; max-width: 960px; margin: 0 auto; }
@@ -223,7 +223,7 @@ Do not fabricate prices, dates, or probabilities.
   {{SOURCES_LIST}}
 </div>
 
-<div class="footer">XVARY Research · {{REPORT_DATE}} · Not financial advice</div>
+<div class="footer">Stock Radar Research · {{REPORT_DATE}} · Not financial advice</div>
 
 </body>
 </html>

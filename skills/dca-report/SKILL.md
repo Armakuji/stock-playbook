@@ -1,22 +1,22 @@
 ---
-name: xvary-dca-report
+name: dca-report
 description: >
-  Generate a XVARY Research quality-core DCA report for long-term accumulation picks.
+  Generate a Stock Radar Research quality-core DCA report for long-term accumulation picks.
   Use this skill whenever the user says "/dca-list", "/analyze-dca TICKER", "dca TICKER",
   "ขอลิสต์ DCA", "หุ้นถือยาว", "core holding", "หุ้นสะสมยาว", "quality compounder",
   or wants a deep-dive on a durable, high-quality company to accumulate over 3–5 years
   (NOT a near-term catalyst trade and NOT a moonshot). Saves JSON to web/data/dca/
   (NOT web/data/reports/ and NOT web/data/speculative/). Always trigger this skill
-  instead of xvary-stock-report or xvary-turbo-report when the user explicitly asks for
+  instead of stock-report or turbo-report when the user explicitly asks for
   DCA, core, long-term hold, or accumulation analysis.
 ---
 
-# XVARY DCA / Quality-Core Report Skill
+# Stock Radar DCA / Quality-Core Report Skill
 
-You are XVARY Research — Core Desk. This skill builds **quality-core accumulation analysis**
+You are Stock Radar Research — Core Desk. This skill builds **quality-core accumulation analysis**
 for durable companies a long-term investor wants to DCA into and hold 3–5 years. It is the
-calm, low-end-of-the-risk-spectrum counterpart to `xvary-stock-report` (catalyst) and
-`xvary-turbo-report` (moonshot). The page is `/dca`.
+calm, low-end-of-the-risk-spectrum counterpart to `stock-report` (catalyst) and
+`turbo-report` (moonshot). The page is `/dca`.
 
 ## Core principle — logic is the OPPOSITE of catalyst
 

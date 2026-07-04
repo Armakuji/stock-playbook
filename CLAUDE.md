@@ -20,13 +20,13 @@ Every analysis follows a strict research-first workflow before generating any ou
 9. **`dateBadge` must match the real date precision** — the catalyst card shows `dateBadge` verbatim. When the exact day is known, write it exactly (e.g. `"Jun 30, 2026"`), matching `catalystDate` — do NOT write a vague month like `"Jun 2026"` for a dated event. Reserve fuzzy badges (`"H2 2026"`, `"~Aug 12"`, `"Ongoing"`) only for genuinely fuzzy/undated catalysts.
 
 ## Available slash commands
-- `/analyze <TICKER>` — analyze **ONE specific stock** → full single-stock report → saves JSON to `web/data/reports/` + git push → Vercel deploys. This is single-ticker only; do NOT screen/build a dashboard here. (uses `xvary-stock-report` skill)
+- `/analyze <TICKER>` — analyze **ONE specific stock** → full single-stock report → saves JSON to `web/data/reports/` + git push → Vercel deploys. This is single-ticker only; do NOT screen/build a dashboard here. (uses `stock-report` skill)
 - `/preview <TICKER>` — dry-run single-stock analysis → research + assemble the report JSON in chat for review · **no JSON save · no git push** (the site is the presentation layer; run `/analyze` to publish). Does NOT generate HTML.
 - `/catalyst-list` *(formerly `/dashboard` / `/analyze-catalyst`; `/dashboard` still works as an alias)* — **generate the catalyst dashboard**: find 5 stocks with 30%+ upside (Tech/AI/Space/Semiconductors/Robotics first) → save JSON reports for each → **log runners-up to `web/data/near-misses.json`** (counterfactual) → **run the `analyze-market-situation` skill** (writes `web/data/market-timing.json`) → git push → dashboard visible at `/catalyst`, market-timing ticker visible site-wide (fused under the header on every page)
-- `/analyze-turbo <TICKER>` — single moonshot report (300%+ speculative) → saves JSON to `web/data/speculative/` → git push → visible at `/turbo` (uses `xvary-turbo-report` skill)
-- `/turbo-list` — find the **5 best moonshot plays** (small/mid-cap, ≥200–300% bull case, binary catalyst) → save JSON to `web/data/speculative/` for each → git push → visible at `/turbo`. Ranked by potential upside (bull/moon %), NOT catalyst proximity. No market-timing step. (uses `xvary-turbo-report` skill)
-- `/analyze-dca <TICKER>` — single quality-core report → saves JSON to `web/data/dca/` → git push → visible at `/dca` (uses `xvary-dca-report` skill)
-- `/dca-list` — find the **5 best funds (US/global ETFs, `assetType:"fund"` + `fundInfo`) AND the 5 best quality-core stocks** (mega/large-cap quality, global) → save JSON to `web/data/dca/` for each → git push → visible at `/dca` (2 tabs: กองทุน / หุ้น). Ranked by quality + valuation (NOT catalyst). No market-timing step. (uses `xvary-dca-report` skill)
+- `/analyze-turbo <TICKER>` — single moonshot report (300%+ speculative) → saves JSON to `web/data/speculative/` → git push → visible at `/turbo` (uses `turbo-report` skill)
+- `/turbo-list` — find the **5 best moonshot plays** (small/mid-cap, ≥200–300% bull case, binary catalyst) → save JSON to `web/data/speculative/` for each → git push → visible at `/turbo`. Ranked by potential upside (bull/moon %), NOT catalyst proximity. No market-timing step. (uses `turbo-report` skill)
+- `/analyze-dca <TICKER>` — single quality-core report → saves JSON to `web/data/dca/` → git push → visible at `/dca` (uses `dca-report` skill)
+- `/dca-list` — find the **5 best funds (US/global ETFs, `assetType:"fund"` + `fundInfo`) AND the 5 best quality-core stocks** (mega/large-cap quality, global) → save JSON to `web/data/dca/` for each → git push → visible at `/dca` (2 tabs: กองทุน / หุ้น). Ranked by quality + valuation (NOT catalyst). No market-timing step. (uses `dca-report` skill)
 - `/compare <TICKER1> <TICKER2>` — side-by-side comparison of two stocks
 - `/watchlist <TICKER1> <TICKER2> ...` — quick scorecard table for multiple tickers
 - `/macro` — standalone Fed/macro snapshot (FOMC, CPI, jobs, yield) (uses `analyze-market-situation` skill)
@@ -254,7 +254,7 @@ Confirm with one line:
 
 DCA = **quality-core, long-term hold (3–5y)**. Logic is the OPPOSITE of catalyst: a good DCA
 pick needs NO catalyst — it's ranked by moat/quality + valuation, not event proximity. Full
-spec lives in the `xvary-dca-report` skill. Quick rules:
+spec lives in the `dca-report` skill. Quick rules:
 
 1. **Research first** (per skill): price/cap, quality (moat/margin/FCF/balance → `qualityScore` 0–5),
    fair value + where price sits (`valuationBand`, cite `basis`), 200-DMA/RSI (`technicalNote`),

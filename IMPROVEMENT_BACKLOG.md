@@ -132,4 +132,4 @@ Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open N
   - หมายเหตุ: ต้องตั้งบน account/เครื่องใหม่ (Mac mini) เพราะ schedule ผูกกับ session/เครื่อง
 - **รัน `npm run build` ครั้งแรกบน Mac** — ยืนยัน production build ผ่าน (แซนด์บ็อกซ์รันไม่ได้เพราะ SWC binary เป็น linux/arm64 ไม่ตรง platform) tsc ผ่านแล้วทุกไฟล์
 
-_Generated during code review · not financial advice · XVARY Research_
+_Generated during code review · not financial advice · Stock Radar Research_

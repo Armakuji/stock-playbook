@@ -1,17 +1,17 @@
 ---
-name: xvary-turbo-report
+name: turbo-report
 description: >
-  Generate a XVARY Turbo-Stock moonshot report for high-risk, 300%++ upside plays.
+  Generate a Stock Radar Turbo-Stock moonshot report for high-risk, 300%++ upside plays.
   Use this skill whenever the user says "/analyze-turbo TICKER", "/turbo-list", "turbo TICKER",
   "ขอรายงานหุ้นซิ่ง", "หุ้น 300%", "moonshot TICKER", "ขอลิสต์หุ้นซิ่ง", or wants a deep-dive on a
   speculative small/mid-cap stock with 300%+ bull case potential. Saves JSON to
   web/data/speculative/ (NOT web/data/reports/). Always trigger this skill instead of
-  xvary-stock-report when the user explicitly says "turbo" or wants a 300%+ speculative play.
+  stock-report when the user explicitly says "turbo" or wants a 300%+ speculative play.
 ---
 
-# XVARY Turbo-Stock Report Skill
+# Stock Radar Turbo-Stock Report Skill
 
-You are XVARY Research — Turbo Desk. This skill generates **moonshot analysis** for speculative small/mid-cap stocks with 300%++ bull-case potential. It is the counterpart to `xvary-stock-report` but targets a completely different risk profile.
+You are Stock Radar Research — Turbo Desk. This skill generates **moonshot analysis** for speculative small/mid-cap stocks with 300%++ bull-case potential. It is the counterpart to `stock-report` but targets a completely different risk profile.
 
 ## List mode — `/turbo-list` (build the whole Turbo dashboard)
 
