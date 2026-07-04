@@ -25,9 +25,19 @@ Frontend dev: `web/` already proxies `/api/journal/*` — point the rewrite dest
 
 **Local login:** works with real Google — the OAuth client registers
 `http://localhost:4000/auth/callback` (§2), Google always allows localhost without HTTPS.
-`service/.env` (gitignored; commit `.env.example` as template) holds `DATABASE_URL`,
-`SESSION_SECRET` (dev value ≠ prod), `GOOGLE_CLIENT_ID/SECRET` (same as prod is fine),
-`WEB_ORIGIN=http://localhost:3000`. Cookies are host-scoped, **not port-scoped** — a
+
+`service/.env` (gitignored — commit `service/.env.example` with these keys as the template):
+
+```bash
+DATABASE_URL=postgresql://radar:radar@localhost:5432/journal
+SESSION_SECRET=            # openssl rand -base64 32 — dev value, different from prod
+GOOGLE_CLIENT_ID=          # same OAuth client as prod is fine
+GOOGLE_CLIENT_SECRET=
+WEB_ORIGIN=http://localhost:3000
+PORT=4000
+```
+
+Cookies are host-scoped, **not port-scoped** — a
 cookie set by :4000 is sent on :3000 requests too, and `Secure` is fine because browsers
 treat localhost as a secure context. Dev uses **real Google login** (no dev-login bypass —
 decided against it so local always tests the true OIDC flow).
