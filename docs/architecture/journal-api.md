@@ -27,6 +27,7 @@ later — see Phase 3).
 | Authorization | One rule: `trade.user_id === session.user.id`. Role `admin` (owner) gates token issuance + future report sync |
 | Database | PostgreSQL. `journal-validation.json` also moves to DB (`trade_validations`) so validator verdicts live beside trades |
 | API framework | **NestJS** (owner's strongest stack), lives in `service/` in this repo (monorepo) |
+| ORM / migrations | **Prisma** — `schema.prisma` = source of truth · dev: `prisma migrate dev --name <x>` (commit migration files) · prod: Railway **Pre-Deploy Command** = `npx prisma migrate deploy` (deploy halts if migration fails). ⚠️ `prisma` must be in `dependencies`, not devDependencies |
 | Hosting | **Railway**: NestJS + Postgres in one project, private network, ~$5–10/mo (Root Directory = `service`). Next.js stays on Vercel (Root Directory = `web`) |
 | Domains | **Start with Option B (no custom domain):** Next.js rewrites proxy `/api/journal/*` → Railway URL — browser sees one origin (vercel.app), no CORS, first-party cookies. **Option A (later, with custom domain):** `www.` + `api.` under one apex, `enableCors({origin, credentials: true})`, `SameSite=Lax`. Avoid `SameSite=None` cross-site cookies — Safari/iOS blocks them |
 | Reports | Unchanged (git → Vercel). Scripts keep reading `web/data/` locally; only journal I/O switches to HTTP |
