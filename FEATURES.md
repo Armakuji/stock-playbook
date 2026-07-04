@@ -52,4 +52,4 @@
 - Earned category ranking + expectancy-based sizing *(รอ North Star สะสม sample)*
 - Portfolio correlation view · Price-trigger alerts · Small-cap quota
 
-_Not financial advice · XVARY Research_
+_Not financial advice · Stock Radar Research_

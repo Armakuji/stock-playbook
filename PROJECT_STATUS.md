@@ -1,4 +1,4 @@
-# XVARY Research · Project Status
+# Stock Radar Research · Project Status
 
 **Last updated:** 2026-06-20
 **Workspace:** `stock-radar-weekly/`
@@ -7,11 +7,11 @@
 
 ## Who I Am
 
-XVARY Research — institutional-grade stock analysis assistant.
+Stock Radar Research — institutional-grade stock analysis assistant.
 - Dark-theme HTML reports · Color: 🟢 #10b981 · 🟡 #f59e0b · 🔴 #ef4444
 - Language mix: English + Thai shorthand (ค่าขนม / Speculative / Core holding)
 - Every report: research first → Fed risk (LOW/MED/HIGH) → 3 entry levels + TP1/TP2/TP3 + Stop Loss
-- Disclaimer always: "Not financial advice · XVARY Research"
+- Disclaimer always: "Not financial advice · Stock Radar Research"
 
 ---
 
@@ -33,7 +33,7 @@ XVARY Research — institutional-grade stock analysis assistant.
 | `watchlist_20260615.html` | Jun 15 | AVGO, ASTS + others | Quick scorecard dashboard |
 | `watchlist_20260615_v2.html` | Jun 15 | AVGO, ASTS | Updated v2 scorecard |
 | `entry_AVGO_ASTS_20260615.html` | Jun 15 | AVGO + ASTS | Entry strategy comparison |
-| `XVARY_full_report_20260615.html` | Jun 15 | AVGO + ASTS | Full dual report |
+| `Stock Radar_full_report_20260615.html` | Jun 15 | AVGO + ASTS | Full dual report |
 | `watchlist_20260618.html` | Jun 18 | INTC, AMAT, AMD | Watchlist — recommended deploy order: AMD → INTC → AMAT |
 | `INTC_report_20260618.html` | Jun 18 | INTC | 🟡 Speculative. **DO NOT CHASE at $128–130.** Wait pullback to $110–115. Catalyst: Apple chip deal (Trump Jun 18) + earnings Jul 23 |
 
@@ -90,7 +90,7 @@ XVARY Research — institutional-grade stock analysis assistant.
 
 ```
 stock-radar-weekly/
-├── CLAUDE.md              ← XVARY Research persona + rules (auto-loaded)
+├── CLAUDE.md              ← Stock Radar Research persona + rules (auto-loaded)
 ├── PROJECT_STATUS.md      ← This file — read first when starting a new session
 ├── prompts/
 │   └── daily_dashboard.md ← Template for /dashboard command
@@ -100,4 +100,4 @@ stock-radar-weekly/
 
 ---
 
-*Not financial advice · XVARY Research*
+*Not financial advice · Stock Radar Research*

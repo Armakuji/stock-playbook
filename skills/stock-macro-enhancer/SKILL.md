@@ -121,7 +121,7 @@ Enhance the prompt to:
 >     TP1/TP2/TP3 take profit levels,
 >     stop loss guidance,
 >     and one-line entry verdict.
-> Output as HTML dark theme report matching XVARY Research style."
+> Output as HTML dark theme report matching Stock Radar Research style."
 
 ---
 

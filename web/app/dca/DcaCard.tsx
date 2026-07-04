@@ -7,34 +7,12 @@ import { useLang } from "@/lib/LanguageContext";
 
 // ── Ice score ring — calm counterpart to the turbo flame ring ────────────────
 function IceRing({ score }: { score: number }) {
-  const r = 22;
-  const circ = 2 * Math.PI * r;
-  const filled = (Math.min(score, 100) / 100) * circ;
   return (
-    <div style={{ position: "relative", width: 52, height: 52, flexShrink: 0 }}>
-      <svg width={52} height={52} style={{ transform: "rotate(-90deg)", display: "block" }}>
-        <circle cx={26} cy={26} r={r} fill="none" stroke="#0d1f29" strokeWidth={4} />
-        <circle
-          cx={26} cy={26} r={r} fill="none"
-          stroke="url(#iceGrad)" strokeWidth={4}
-          strokeDasharray={`${filled} ${circ}`} strokeLinecap="round"
-          style={{ filter: "drop-shadow(0 0 4px #38bdf8)" }}
-        />
-        <defs>
-          <linearGradient id="iceGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="#2dd4bf" />
-            <stop offset="100%" stopColor="#38bdf8" />
-          </linearGradient>
-        </defs>
-      </svg>
-      <div style={{
-        position: "absolute", inset: 0,
-        display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center",
-      }}>
+    <div className="radar-ring" style={{ "--p": Math.max(0, Math.min(score, 100)) } as React.CSSProperties}>
+      <div className="radar-ring-in">
         <span style={{
           fontSize: 15, fontWeight: 900, color: "#7dd3fc",
           fontFamily: "var(--font-mono, monospace)", lineHeight: 1, letterSpacing: "-0.5px",
-          filter: "drop-shadow(0 0 4px #38bdf855)",
         }}>
           {Math.round(score)}
         </span>
@@ -85,13 +63,7 @@ function ValuationGauge({ report, th }: { report: StockReport; th: boolean }) {
           <div style={{ flex: 1, background: "#f59e0b22" }} />
         </div>
         {/* current price marker */}
-        <div style={{
-          position: "absolute", left: `${marker}%`, top: "50%",
-          width: 10, height: 10, borderRadius: "50%",
-          background: zone.color, border: "2px solid #07111a",
-          transform: "translate(-50%, -50%)",
-          boxShadow: `0 0 8px ${zone.color}`,
-        }} />
+        <div className="radar-mk" style={{ left: `${marker}%`, background: zone.color, boxShadow: `0 0 8px ${zone.color}` }} />
       </div>
       <div style={{ display: "flex", justifyContent: "space-between", marginTop: 4 }}>
         <span style={{ fontSize: 8, color: "#10b981", fontFamily: "var(--font-mono, monospace)" }}>cheap</span>
@@ -189,42 +161,7 @@ export function DcaCard({ report, rank }: { report: StockReport; rank: number })
   const weight = report.dcaPlan?.targetWeight;
 
   return (
-    <Link href={`/report/${report.ticker}`} style={{ textDecoration: "none" }}>
-      <div
-        style={{
-          background: "#07111a",
-          border: "1px solid #102530",
-          borderTop: "2px solid #38bdf8",
-          borderRadius: 14,
-          padding: "18px 20px",
-          cursor: "pointer",
-          transition: "border-color 0.2s, transform 0.2s, box-shadow 0.2s",
-          position: "relative",
-          overflow: "hidden",
-          height: "100%",
-        }}
-        onMouseEnter={(e) => {
-          const el = e.currentTarget as HTMLDivElement;
-          el.style.borderTopColor = "#7dd3fc";
-          el.style.borderColor = "#38bdf860";
-          el.style.transform = "translateY(-3px)";
-          el.style.boxShadow = "0 8px 32px #38bdf822, 0 2px 8px rgba(0,0,0,0.7)";
-        }}
-        onMouseLeave={(e) => {
-          const el = e.currentTarget as HTMLDivElement;
-          el.style.borderColor = "#102530";
-          el.style.borderTopColor = "#38bdf8";
-          el.style.transform = "translateY(0)";
-          el.style.boxShadow = "none";
-        }}
-      >
-        {/* cool glow wash */}
-        <div style={{
-          position: "absolute", top: 0, left: 0, right: 0, height: 100,
-          background: "linear-gradient(180deg, #38bdf812 0%, transparent 100%)",
-          pointerEvents: "none",
-        }} />
-
+    <Link href={`/report/${report.ticker}`} className="radar-card">
         {/* Row 1: rank + score ring */}
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 14 }}>
           <RankBadge rank={rank} />
@@ -318,7 +255,6 @@ export function DcaCard({ report, rank }: { report: StockReport; rank: number })
 
         {/* Row 6: valuation gauge */}
         <ValuationGauge report={report} th={th} />
-      </div>
     </Link>
   );
 }

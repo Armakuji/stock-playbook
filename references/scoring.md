@@ -1,8 +1,8 @@
-# XVARY Scores (Public Definitions)
+# Stock Radar Scores (Public Definitions)
 
 This file defines the **public** score framework used by the skill.
 
-Important: production XVARY systems use proprietary calibrations. The equations below expose the logic shape, not private threshold tables.
+Important: production Stock Radar systems use proprietary calibrations. The equations below expose the logic shape, not private threshold tables.
 
 ## Score Scale
 

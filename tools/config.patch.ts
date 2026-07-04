@@ -7,8 +7,8 @@ export const config = {
     pluginDir:  '/path/to/plugin-dir',  // already in your config
     tickers:    [],                     // already in your config (keep for Mode B)
 
-    // ✅ ADD THIS — path to XVARY Research workspace
-    xvaryDir: '/Users/nitiponchingthongchai/Documents/cowork/xvary-stock-research',
+    // ✅ ADD THIS — path to Stock Radar Research workspace
+    radarDir: '/Users/nitiponchingthongchai/Documents/cowork/stock-radar-weekly',
   },
   cron: {
     schedule:  '0 7 * * 1-5',  // weekdays at 7 AM  (change to your timezone cron)

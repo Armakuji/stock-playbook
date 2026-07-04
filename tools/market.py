@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
-"""Standalone market data fetcher with no API key.
+"""Key-free market data fetcher — Stock Radar Research.
 
-Public functions:
-- get_quote(ticker)
-- get_ratios(ticker)
+Grabs live quote and valuation-ratio data from free public endpoints with a
+provider-fallback chain (Yahoo → Finviz → Stooq). No API key required.
 
-Fallback order: Yahoo -> Finviz -> Stooq
+Public functions (stable API — referenced by references/scoring.md):
+- get_quote(ticker)   -> price / market cap / volume / 52-week range
+- get_ratios(ticker)  -> P/E, dividend yield, beta
 
-Examples:
-    python tools/market.py AAPL
+CLI:
+    python3 tools/market.py AAPL
 """
 
 from __future__ import annotations
@@ -18,200 +19,148 @@ import csv
 import io
 import json
 import re
-from datetime import datetime, timezone
 import time
-from typing import Any, Optional
+from datetime import datetime, timezone
+from typing import Any, Callable, Optional
 
 import requests
 
-_TIMEOUT = 20
-_MAX_RETRIES = 3
-_INITIAL_BACKOFF_SECONDS = 1.0
-_RETRYABLE_STATUS_CODES = {429, 500, 502, 503, 504}
-_HEADERS = {
-    "User-Agent": "claude-code-stock-analysis-skill/1.0 (research@xvary.com)",
-    "Accept": "application/json,text/html;q=0.9,*/*;q=0.8",
-}
-_SUFFIX_MULTIPLIERS = {
-    "K": 1_000,
-    "M": 1_000_000,
-    "B": 1_000_000_000,
-    "T": 1_000_000_000_000,
-}
+# ── HTTP layer ───────────────────────────────────────────────────────────────
+
+USER_AGENT = "stock-radar-weekly/1.0 (nitipon.ching@gmail.com)"
+REQUEST_TIMEOUT = 20
+RETRY_ATTEMPTS = 3
+RETRY_STATUSES = frozenset({429, 500, 502, 503, 504})
 
 
-def _iso_now() -> str:
-    return datetime.now(timezone.utc).replace(microsecond=0).isoformat()
+def _http_get(url: str) -> requests.Response:
+    """GET with exponential backoff on transient failures."""
+    delay = 1.0
+    for attempt in range(RETRY_ATTEMPTS):
+        try:
+            resp = requests.get(
+                url,
+                headers={
+                    "User-Agent": USER_AGENT,
+                    "Accept": "application/json,text/html;q=0.9,*/*;q=0.8",
+                },
+                timeout=REQUEST_TIMEOUT,
+            )
+            if resp.status_code in RETRY_STATUSES:
+                raise requests.HTTPError(f"transient {resp.status_code}", response=resp)
+            resp.raise_for_status()
+            return resp
+        except requests.RequestException:
+            if attempt == RETRY_ATTEMPTS - 1:
+                raise
+            time.sleep(delay)
+            delay *= 2
+    raise RuntimeError("unreachable")
 
 
-def _to_float(value: Any) -> Optional[float]:
+# ── Parsing helpers ──────────────────────────────────────────────────────────
+
+_SCALE = {"K": 1e3, "M": 1e6, "B": 1e9, "T": 1e12}
+
+
+def _num(value: Any) -> Optional[float]:
     try:
-        if value is None:
-            return None
-        return float(value)
+        return None if value is None else float(value)
     except (TypeError, ValueError):
         return None
 
 
-def _parse_compact(raw: str) -> Optional[float]:
-    value = raw.strip().replace(",", "").replace("$", "").replace("~", "")
-    if not value or value.upper() == "N/A":
+def _num_compact(raw: str) -> Optional[float]:
+    """Parse Finviz-style compact numbers: '1.2B', '$45.30', '3,400', 'N/A'."""
+    text = raw.strip().replace(",", "").lstrip("$~")
+    if not text or text.upper() == "N/A":
         return None
-    suffix = value[-1].upper()
-    mult = _SUFFIX_MULTIPLIERS.get(suffix, 1.0)
-    if suffix in _SUFFIX_MULTIPLIERS:
-        value = value[:-1]
-    try:
-        return float(value) * mult
-    except ValueError:
-        return None
+    scale = _SCALE.get(text[-1].upper())
+    if scale:
+        text = text[:-1]
+    value = _num(text)
+    return value * scale if (value is not None and scale) else value
 
 
-def _parse_percent(raw: str) -> Optional[float]:
-    val = raw.strip().replace("%", "")
-    try:
-        if not val or val.upper() == "N/A":
-            return None
-        return float(val)
-    except ValueError:
-        return None
+def _num_percent(raw: str) -> Optional[float]:
+    return _num(raw.strip().rstrip("%")) if raw.strip().upper() != "N/A" else None
 
 
-def _http_get_json(url: str) -> dict[str, Any]:
-    last_error: Optional[Exception] = None
-    for attempt in range(1, _MAX_RETRIES + 1):
-        try:
-            response = requests.get(url, headers=_HEADERS, timeout=_TIMEOUT)
-            if response.status_code in _RETRYABLE_STATUS_CODES:
-                raise requests.HTTPError(
-                    f"Retryable status {response.status_code}",
-                    response=response,
-                )
-            response.raise_for_status()
-            return response.json()
-        except (requests.RequestException, ValueError) as exc:
-            last_error = exc
-            if attempt >= _MAX_RETRIES:
-                break
-            backoff = _INITIAL_BACKOFF_SECONDS * (2 ** (attempt - 1))
-            time.sleep(backoff)
-    assert last_error is not None
-    raise last_error
+def _utc_stamp() -> str:
+    return datetime.now(timezone.utc).replace(microsecond=0).isoformat()
 
 
-def _http_get_text(url: str) -> str:
-    last_error: Optional[Exception] = None
-    for attempt in range(1, _MAX_RETRIES + 1):
-        try:
-            response = requests.get(url, headers=_HEADERS, timeout=_TIMEOUT)
-            if response.status_code in _RETRYABLE_STATUS_CODES:
-                raise requests.HTTPError(
-                    f"Retryable status {response.status_code}",
-                    response=response,
-                )
-            response.raise_for_status()
-            return response.text
-        except requests.RequestException as exc:
-            last_error = exc
-            if attempt >= _MAX_RETRIES:
-                break
-            backoff = _INITIAL_BACKOFF_SECONDS * (2 ** (attempt - 1))
-            time.sleep(backoff)
-    assert last_error is not None
-    raise last_error
+# ── Providers ────────────────────────────────────────────────────────────────
+# Every provider returns the same shape (or None when it has no price):
+# {provider, price, currency, market_cap, volume, high_52w, low_52w,
+#  pe, dividend_yield_pct, beta}
 
 
-def _fetch_yahoo(ticker: str) -> Optional[dict[str, Any]]:
+def _from_yahoo(ticker: str) -> Optional[dict[str, Any]]:
     url = f"https://query1.finance.yahoo.com/v7/finance/quote?symbols={ticker}"
-    payload = _http_get_json(url)
-    rows = payload.get("quoteResponse", {}).get("result", [])
+    rows = _http_get(url).json().get("quoteResponse", {}).get("result", [])
     if not rows:
         return None
-
     q = rows[0]
-    price = _to_float(q.get("regularMarketPrice"))
+    price = _num(q.get("regularMarketPrice"))
     if price is None:
         return None
-
+    dividend_yield = _num(q.get("dividendYield"))
     return {
         "provider": "yahoo",
         "price": price,
         "currency": q.get("currency", "USD"),
-        "market_cap": _to_float(q.get("marketCap")),
-        "volume": _to_float(q.get("regularMarketVolume")),
-        "high_52w": _to_float(q.get("fiftyTwoWeekHigh")),
-        "low_52w": _to_float(q.get("fiftyTwoWeekLow")),
-        "pe": _to_float(q.get("trailingPE")),
-        "dividend_yield_pct": (
-            _to_float(q.get("dividendYield")) * 100.0
-            if _to_float(q.get("dividendYield")) is not None
-            else None
-        ),
-        "beta": _to_float(q.get("beta")),
+        "market_cap": _num(q.get("marketCap")),
+        "volume": _num(q.get("regularMarketVolume")),
+        "high_52w": _num(q.get("fiftyTwoWeekHigh")),
+        "low_52w": _num(q.get("fiftyTwoWeekLow")),
+        "pe": _num(q.get("trailingPE")),
+        "dividend_yield_pct": dividend_yield * 100 if dividend_yield is not None else None,
+        "beta": _num(q.get("beta")),
     }
 
 
-def _extract_finviz_map(html: str) -> dict[str, str]:
-    pairs = re.findall(r"<td[^>]*>([^<]+)</td><td[^>]*>(?:<b>)?([^<]+)", html)
-    out: dict[str, str] = {}
-    for key, value in pairs:
-        out[key.strip()] = value.strip()
-    return out
+_FINVIZ_CELL = re.compile(r"<td[^>]*>([^<]+)</td><td[^>]*>(?:<b>)?([^<]+)")
+_FINVIZ_RANGE = re.compile(r"([0-9]+\.?[0-9]*)\s*-\s*([0-9]+\.?[0-9]*)")
 
 
-def _fetch_finviz(ticker: str) -> Optional[dict[str, Any]]:
-    url = f"https://finviz.com/quote.ashx?t={ticker.upper()}"
-    html = _http_get_text(url)
-    data = _extract_finviz_map(html)
-
-    price = _parse_compact(data.get("Price", ""))
+def _from_finviz(ticker: str) -> Optional[dict[str, Any]]:
+    html = _http_get(f"https://finviz.com/quote.ashx?t={ticker.upper()}").text
+    table = {k.strip(): v.strip() for k, v in _FINVIZ_CELL.findall(html)}
+    price = _num_compact(table.get("Price", ""))
     if price is None:
         return None
-
-    low_52w = None
-    high_52w = None
-    range_raw = data.get("52W Range", "")
-    m = re.search(r"([0-9]+\.?[0-9]*)\s*-\s*([0-9]+\.?[0-9]*)", range_raw)
-    if m:
-        low_52w = _to_float(m.group(1))
-        high_52w = _to_float(m.group(2))
-
+    low_52w = high_52w = None
+    if m := _FINVIZ_RANGE.search(table.get("52W Range", "")):
+        low_52w, high_52w = _num(m.group(1)), _num(m.group(2))
     return {
         "provider": "finviz",
         "price": price,
         "currency": "USD",
-        "market_cap": _parse_compact(data.get("Market Cap", "")),
-        "volume": _parse_compact(data.get("Volume", "")),
+        "market_cap": _num_compact(table.get("Market Cap", "")),
+        "volume": _num_compact(table.get("Volume", "")),
         "high_52w": high_52w,
         "low_52w": low_52w,
-        "pe": _parse_compact(data.get("P/E", "")),
-        "dividend_yield_pct": _parse_percent(data.get("Dividend %", "")),
-        "beta": _to_float(data.get("Beta")),
+        "pe": _num_compact(table.get("P/E", "")),
+        "dividend_yield_pct": _num_percent(table.get("Dividend %", "")),
+        "beta": _num(table.get("Beta")),
     }
 
 
-def _fetch_stooq(ticker: str) -> Optional[dict[str, Any]]:
-    if "." in ticker:
+def _from_stooq(ticker: str) -> Optional[dict[str, Any]]:
+    if "." in ticker:  # Stooq's .us suffix scheme clashes with dotted tickers
         return None
-    symbol = f"{ticker.lower()}.us"
-    url = f"https://stooq.com/q/l/?s={symbol}&f=sd2t2ohlcv&h&e=csv"
-    text = _http_get_text(url)
-
-    reader = csv.DictReader(io.StringIO(text))
-    row = next(reader, None)
-    if not row:
+    url = f"https://stooq.com/q/l/?s={ticker.lower()}.us&f=sd2t2ohlcv&h&e=csv"
+    row = next(csv.DictReader(io.StringIO(_http_get(url).text)), None)
+    price = _num(row.get("Close")) if row else None
+    if price is None:
         return None
-
-    close = _to_float(row.get("Close"))
-    if close is None:
-        return None
-
     return {
         "provider": "stooq",
-        "price": close,
+        "price": price,
         "currency": "USD",
         "market_cap": None,
-        "volume": _to_float(row.get("Volume")),
+        "volume": _num(row.get("Volume")),
         "high_52w": None,
         "low_52w": None,
         "pe": None,
@@ -220,83 +169,86 @@ def _fetch_stooq(ticker: str) -> Optional[dict[str, Any]]:
     }
 
 
-def _collect_market_data(ticker: str) -> Optional[dict[str, Any]]:
-    for fetcher in (_fetch_yahoo, _fetch_finviz, _fetch_stooq):
+PROVIDER_CHAIN: tuple[Callable[[str], Optional[dict[str, Any]]], ...] = (
+    _from_yahoo,
+    _from_finviz,
+    _from_stooq,
+)
+
+_RATIO_KEYS = ("pe", "dividend_yield_pct", "beta")
+
+
+def _walk_providers(ticker: str, want_ratios: bool) -> Optional[dict[str, Any]]:
+    """First provider with a price wins; for ratios, keep walking until one
+    also carries ratio data (falling back to the first priced result)."""
+    priced: Optional[dict[str, Any]] = None
+    for provider in PROVIDER_CHAIN:
         try:
-            result = fetcher(ticker)
+            result = provider(ticker)
         except Exception:
-            result = None
-        if result and result.get("price") is not None:
+            continue
+        if not result:
+            continue
+        if not want_ratios:
             return result
-    return None
+        priced = priced or result
+        if any(result.get(k) is not None for k in _RATIO_KEYS):
+            return result
+    return priced
+
+
+# ── Public API ───────────────────────────────────────────────────────────────
 
 
 def get_quote(ticker: str) -> dict[str, Any]:
-    """Return quote-level market data (price/cap/volume/52w range)."""
-    normalized = ticker.strip().upper()
-    result = _collect_market_data(normalized)
-    if not result:
-        raise RuntimeError(f"No quote data available for {normalized}")
-
+    """Live quote: price, market cap, volume, 52-week range."""
+    symbol = ticker.strip().upper()
+    data = _walk_providers(symbol, want_ratios=False)
+    if not data:
+        raise RuntimeError(f"No quote data available for {symbol}")
     return {
-        "ticker": normalized,
-        "provider": result["provider"],
-        "price": result["price"],
-        "currency": result.get("currency", "USD"),
-        "market_cap": result.get("market_cap"),
-        "volume": result.get("volume"),
-        "high_52w": result.get("high_52w"),
-        "low_52w": result.get("low_52w"),
-        "as_of_utc": _iso_now(),
+        "ticker": symbol,
+        "provider": data["provider"],
+        "price": data["price"],
+        "currency": data.get("currency", "USD"),
+        "market_cap": data.get("market_cap"),
+        "volume": data.get("volume"),
+        "high_52w": data.get("high_52w"),
+        "low_52w": data.get("low_52w"),
+        "as_of_utc": _utc_stamp(),
     }
 
 
 def get_ratios(ticker: str) -> dict[str, Any]:
-    """Return ratio-level market data (P/E, dividend yield, beta)."""
-    normalized = ticker.strip().upper()
-
-    # Prefer Yahoo for ratios; short-circuit once we get usable ratio data.
-    fallback: Optional[dict[str, Any]] = None
-    for fetcher in (_fetch_yahoo, _fetch_finviz, _fetch_stooq):
-        try:
-            result = fetcher(normalized)
-        except Exception:
-            result = None
-        if not result or result.get("price") is None:
-            continue
-        if fallback is None:
-            fallback = result
-        if any(result.get(k) is not None for k in ("pe", "dividend_yield_pct", "beta")):
-            chosen = result
-            break
-    else:
-        chosen = fallback
-
-    if not chosen:
-        raise RuntimeError(f"No market data available for {normalized}")
-
+    """Valuation ratios: trailing P/E, dividend yield %, beta."""
+    symbol = ticker.strip().upper()
+    data = _walk_providers(symbol, want_ratios=True)
+    if not data:
+        raise RuntimeError(f"No market data available for {symbol}")
     return {
-        "ticker": normalized,
-        "provider": chosen["provider"],
-        "pe": chosen.get("pe"),
-        "dividend_yield_pct": chosen.get("dividend_yield_pct"),
-        "beta": chosen.get("beta"),
-        "as_of_utc": _iso_now(),
+        "ticker": symbol,
+        "provider": data["provider"],
+        "pe": data.get("pe"),
+        "dividend_yield_pct": data.get("dividend_yield_pct"),
+        "beta": data.get("beta"),
+        "as_of_utc": _utc_stamp(),
     }
 
 
-def _main() -> None:
-    parser = argparse.ArgumentParser(description="Standalone market data fetcher")
+# ── CLI ──────────────────────────────────────────────────────────────────────
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(
+        description="Stock Radar Research — key-free market data fetcher"
+    )
     parser.add_argument("ticker", help="Ticker symbol, e.g. AAPL")
     parser.add_argument("--indent", type=int, default=2, help="JSON indent")
     args = parser.parse_args()
 
-    payload = {
-        "quote": get_quote(args.ticker),
-        "ratios": get_ratios(args.ticker),
-    }
-    print(json.dumps(payload, indent=args.indent, sort_keys=False))
+    payload = {"quote": get_quote(args.ticker), "ratios": get_ratios(args.ticker)}
+    print(json.dumps(payload, indent=args.indent))
 
 
 if __name__ == "__main__":
-    _main()
+    main()

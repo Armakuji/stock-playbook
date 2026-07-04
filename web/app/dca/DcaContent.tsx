@@ -103,7 +103,7 @@ export function DcaContent({
   ];
 
   return (
-    <div style={{ position: "relative" }}>
+    <div className="theme-water" style={{ position: "relative" }}>
 
       {/* ── Ambient cool layer ────────────────────────────────────────── */}
       <div aria-hidden="true" style={{

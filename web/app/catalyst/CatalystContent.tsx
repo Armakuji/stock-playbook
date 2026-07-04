@@ -61,7 +61,7 @@ export function CatalystContent({
   ];
 
   return (
-    <div>
+    <div className="theme-air">
       {/* ── Hero header ───────────────────────────────────────── */}
       <div style={{ marginBottom: 24 }}>
         <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 4 }}>

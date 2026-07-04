@@ -13,9 +13,9 @@ export class CoworkService {
   private readonly logger = new Logger(CoworkService.name);
   private readonly logDir = path.join(process.cwd(), 'logs');
 
-  // Path to the XVARY Research workspace
-  private readonly xvaryDir = config.claude.xvaryDir ??
-    '/Users/nitiponchingthongchai/Documents/cowork/xvary-stock-research';
+  // Path to the Stock Radar Research workspace
+  private readonly radarDir = config.claude.radarDir ??
+    '/Users/nitiponchingthongchai/Documents/cowork/stock-radar-weekly';
 
   // ─────────────────────────────────────────────
   // MODE A: Auto-discover top 10 movers (dashboard)
@@ -26,7 +26,7 @@ export class CoworkService {
     this.logger.log('Starting daily top-10 dashboard run...');
 
     // Read the self-contained prompt from the workspace
-    const promptFile = path.join(this.xvaryDir, 'prompts', 'daily_dashboard.md');
+    const promptFile = path.join(this.radarDir, 'prompts', 'daily_dashboard.md');
     let prompt: string;
 
     try {
@@ -48,7 +48,7 @@ export class CoworkService {
       this.logger.log('Calling Claude — finding top 10 movers + generating dashboard...');
 
       const { stdout, stderr } = await execAsync(cmd, {
-        cwd: this.xvaryDir,            // run from workspace so file saves land correctly
+        cwd: this.radarDir,            // run from workspace so file saves land correctly
         timeout: config.cron.timeoutMs,
         env: { ...process.env },
         maxBuffer: 10 * 1024 * 1024,  // 10 MB — HTML output can be large
@@ -100,7 +100,7 @@ export class CoworkService {
 
     try {
       const { stdout, stderr } = await execAsync(cmd, {
-        cwd: this.xvaryDir,
+        cwd: this.radarDir,
         timeout: config.cron.timeoutMs,
         env: { ...process.env },
         maxBuffer: 10 * 1024 * 1024,

@@ -18,6 +18,50 @@ interface ElementDef {
   ghost?: boolean;
 }
 
+/* ── Radar mark: navy tile, rings, green sweep, four element blips ──────────── */
+function RadarMark({ size = 96 }: { size?: number }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 512 512"
+      aria-hidden
+      style={{ display: "block", filter: "drop-shadow(0 8px 30px rgba(16,185,129,0.28))" }}
+    >
+      <defs>
+        <linearGradient id="rmSg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stopColor="#8ef0a8" />
+          <stop offset="1" stopColor="#22b866" />
+        </linearGradient>
+        <radialGradient id="rmSwp" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stopColor="#3fd07f" stopOpacity="0.85" />
+          <stop offset="1" stopColor="#3fd07f" stopOpacity="0" />
+        </radialGradient>
+        <linearGradient id="rmBg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stopColor="#111a24" />
+          <stop offset="1" stopColor="#080c12" />
+        </linearGradient>
+      </defs>
+      <rect x="16" y="16" width="480" height="480" rx="112" fill="url(#rmBg)" />
+      <rect x="16.5" y="16.5" width="479" height="479" rx="111.5" fill="none" stroke="#28e07f" strokeOpacity="0.18" strokeWidth="3" />
+      <g fill="none" stroke="#2f8f5c" strokeOpacity="0.55" strokeWidth="8">
+        <circle cx="256" cy="256" r="56" />
+        <circle cx="256" cy="256" r="112" />
+        <circle cx="256" cy="256" r="168" />
+      </g>
+      <g transform="rotate(-38 256 256)">
+        <path d="M256 256 L256 76 A180 180 0 0 1 424 232 Z" fill="url(#rmSwp)" />
+        <line x1="256" y1="256" x2="256" y2="72" stroke="url(#rmSg)" strokeWidth="10" strokeLinecap="round" />
+      </g>
+      <circle cx="300" cy="140" r="16" fill="#4aa8f0" />
+      <circle cx="368" cy="232" r="16" fill="#3fd07f" />
+      <circle cx="216" cy="372" r="16" fill="#ff7a3c" />
+      <circle cx="140" cy="300" r="16" fill="#c08a4a" />
+      <circle cx="256" cy="256" r="16" fill="url(#rmSg)" />
+    </svg>
+  );
+}
+
 function ElementAmbient({ d }: { d: ElementDef }) {
   if (d.ghost) return null;
 
@@ -162,7 +206,7 @@ function ElementCard({ d, th, idx }: { d: ElementDef; th: boolean; idx: number }
       <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap", marginBottom: 14 }}>
         <span style={{
           fontSize: 9, fontWeight: 800, padding: "3px 8px", borderRadius: 6,
-          letterSpacing: "0.5px", fontFamily: "var(--font-mono, monospace)",
+          letterSpacing: "0.5px", fontFamily: "var(--font-mono, monospace)", whiteSpace: "nowrap",
           background: d.ghost ? "var(--border)" : `${d.c1}1e`,
           color: d.ghost ? "var(--muted)" : d.c1,
           border: `1px solid ${d.ghost ? "var(--border)" : `${d.c1}3a`}`,
@@ -250,57 +294,41 @@ export function Landing({
   return (
     <div style={{ position: "relative" }}>
 
-      {/* ── Hero ─────────────────────────────────────────────────────── */}
+      {/* ── Hero: radar centerpiece + calm title ─────────────────────── */}
       <div style={{
         textAlign: "center",
-        padding: "36px 0 30px",
+        padding: "52px 0 40px",
         position: "relative",
         overflow: "hidden",
         isolation: "isolate",
       }}>
-        {/* Floating elemental orbs — behind all hero content */}
-        <div aria-hidden style={{ position: "absolute", inset: 0, pointerEvents: "none", zIndex: 0 }}>
-          {/* Water */}
+        {/* Radar rings + rotating sweep — behind the mark */}
+        <div aria-hidden style={{
+          position: "absolute", top: "50%", left: "50%",
+          transform: "translate(-50%, -56%)",
+          width: 520, height: 520, opacity: 0.5, pointerEvents: "none", zIndex: 0,
+        }}>
+          {[180, 320, 460].map((s) => (
+            <div key={s} style={{
+              position: "absolute", top: "50%", left: "50%",
+              transform: "translate(-50%, -50%)",
+              width: s, height: s, borderRadius: "50%",
+              border: "1px solid rgba(47,143,92,0.32)",
+            }} />
+          ))}
           <div style={{
-            position: "absolute", top: "8%", left: "4%",
-            width: 200, height: 200,
-            background: "radial-gradient(circle, rgba(56,189,248,0.22) 0%, transparent 70%)",
-            borderRadius: "50%", filter: "blur(30px)",
-            animation: "orbFloat 8s ease-in-out infinite",
-          }} />
-          {/* Fire */}
-          <div style={{
-            position: "absolute", top: "4%", right: "6%",
-            width: 180, height: 180,
-            background: "radial-gradient(circle, rgba(255,109,0,0.2) 0%, transparent 70%)",
-            borderRadius: "50%", filter: "blur(26px)",
-            animation: "orbFloat2 9s ease-in-out infinite",
-            animationDelay: "-3s",
-          }} />
-          {/* Air */}
-          <div style={{
-            position: "absolute", top: "38%", right: "1%",
-            width: 150, height: 150,
-            background: "radial-gradient(circle, rgba(16,185,129,0.16) 0%, transparent 70%)",
-            borderRadius: "50%", filter: "blur(22px)",
-            animation: "orbFloat 11s ease-in-out infinite",
-            animationDelay: "-6s",
-          }} />
-          {/* Earth */}
-          <div style={{
-            position: "absolute", bottom: "4%", left: "9%",
-            width: 130, height: 130,
-            background: "radial-gradient(circle, rgba(161,98,7,0.14) 0%, transparent 70%)",
-            borderRadius: "50%", filter: "blur(18px)",
-            animation: "orbFloat2 10s ease-in-out infinite",
-            animationDelay: "-2s",
+            position: "absolute", top: "50%", left: "50%",
+            width: 260, height: 260, transform: "translate(-50%, -50%)",
+            borderRadius: "50%",
+            background: "conic-gradient(from 0deg, rgba(63,208,127,0.28), transparent 42%)",
+            animation: "radarSweep 7s linear infinite",
           }} />
         </div>
 
-        {/* Hero content — above orbs */}
+        {/* Hero content — above rings */}
         <div style={{ position: "relative", zIndex: 1 }}>
           <div style={{
-            display: "inline-flex", alignItems: "center", gap: 9, marginBottom: 14,
+            display: "inline-flex", alignItems: "center", gap: 9, marginBottom: 18,
             padding: "5px 14px", borderRadius: 999,
             background: "var(--card)", border: "1px solid var(--border)",
             animation: "fadeInUp 0.4s ease both",
@@ -314,21 +342,20 @@ export function Landing({
             </span>
           </div>
 
+          {/* Calm static element-spectrum title (no shimmer) */}
           <h1 style={{
-            fontSize: "clamp(32px, 7vw, 60px)", fontWeight: 900, margin: "0 0 10px",
-            letterSpacing: "-1.5px", lineHeight: 1.02,
+            fontSize: "clamp(34px, 6.5vw, 58px)", fontWeight: 800, margin: "0 0 12px",
+            letterSpacing: "-1.6px", lineHeight: 1.02,
             fontFamily: "var(--font-display, sans-serif)",
-            background: "linear-gradient(90deg, #38bdf8, #10b981, #ff6d00, #d500f9)",
-            backgroundSize: "200% 100%",
+            background: "linear-gradient(96deg, #7dd3fc, #34d399 42%, #fb923c 74%, #e879f9)",
             WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
-            animation: "gradientShift 9s linear infinite",
           }}>
             Stock Radar Weekly
           </h1>
 
           <p style={{
-            fontSize: "clamp(13px, 2.4vw, 16px)", color: "var(--muted)", margin: "0 auto",
-            maxWidth: 560, lineHeight: 1.6,
+            fontSize: "clamp(14px, 2.3vw, 16.5px)", color: "var(--muted)", margin: "0 auto",
+            maxWidth: 568, lineHeight: 1.62,
             animation: "fadeInUp 0.45s ease both",
             animationDelay: "0.15s",
           }}>
@@ -344,7 +371,7 @@ export function Landing({
           {/* element legend line */}
           <div style={{
             display: "flex", alignItems: "center", justifyContent: "center", gap: 0,
-            margin: "20px auto 0", maxWidth: 360, height: 4, borderRadius: 4, overflow: "hidden",
+            margin: "26px auto 0", maxWidth: 380, height: 5, borderRadius: 5, overflow: "hidden",
             animation: "fadeInUp 0.45s ease both",
             animationDelay: "0.25s",
           }}>
@@ -355,8 +382,8 @@ export function Landing({
           </div>
           <div style={{
             display: "flex", alignItems: "center", justifyContent: "center", gap: 0,
-            margin: "6px auto 0", maxWidth: 360,
-            fontSize: 9, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", letterSpacing: "1px",
+            margin: "8px auto 0", maxWidth: 380,
+            fontSize: 9.5, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", letterSpacing: "0.6px",
             animation: "fadeInUp 0.45s ease both",
             animationDelay: "0.25s",
           }}>

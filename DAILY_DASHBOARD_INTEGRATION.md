@@ -1,4 +1,4 @@
-# XVARY Research — Daily Top 10 Dashboard Integration
+# Stock Radar Research — Daily Top 10 Dashboard Integration
 
 Drop this into your NestJS cowork project as reference. Everything needed to run the auto-discover daily dashboard.
 
@@ -11,14 +11,14 @@ NestJS cron fires at 7 AM
   → reads prompts/daily_dashboard.md
   → calls claude CLI with the prompt
   → Claude finds top 10 movers, researches each
-  → saves watchlist_YYYYMMDD.html to xvary-stock-research folder
+  → saves watchlist_YYYYMMDD.html to stock-radar-weekly folder
 ```
 
 One Claude call. One combined HTML dashboard. No fixed tickers needed.
 
 ---
 
-## 1. Config — add `xvaryDir` and update `timeoutMs`
+## 1. Config — add `radarDir` and update `timeoutMs`
 
 ```typescript
 // shared/config.ts
@@ -29,7 +29,7 @@ export const config = {
     tickers:    [],                    // keep for manual mode
 
     // ADD THIS
-    xvaryDir: '/Users/nitiponchingthongchai/Documents/cowork/xvary-stock-research',
+    radarDir: '/Users/nitiponchingthongchai/Documents/cowork/stock-radar-weekly',
   },
   cron: {
     schedule:  '0 7 * * 1-5',   // weekdays 7 AM
@@ -58,14 +58,14 @@ const execAsync = promisify(exec);
 export class CoworkService {
   private readonly logger = new Logger(CoworkService.name);
   private readonly logDir = path.join(process.cwd(), 'logs');
-  private readonly xvaryDir = config.claude.xvaryDir;
+  private readonly radarDir = config.claude.radarDir;
 
   // AUTO-DISCOVER MODE — runs on cron, finds top 10 movers, generates dashboard
   @Cron(config.cron.schedule, { timeZone: config.cron.timeZone })
   async runDailyDashboard() {
     this.logger.log('Starting daily top-10 dashboard...');
 
-    const promptFile = path.join(this.xvaryDir, 'prompts', 'daily_dashboard.md');
+    const promptFile = path.join(this.radarDir, 'prompts', 'daily_dashboard.md');
     let prompt: string;
 
     try {
@@ -85,7 +85,7 @@ export class CoworkService {
 
     try {
       const { stdout, stderr } = await execAsync(cmd, {
-        cwd: this.xvaryDir,
+        cwd: this.radarDir,
         timeout: config.cron.timeoutMs,
         env: { ...process.env },
         maxBuffer: 10 * 1024 * 1024,
@@ -121,7 +121,7 @@ export class CoworkService {
 
     try {
       const { stdout, stderr } = await execAsync(cmd, {
-        cwd: this.xvaryDir,
+        cwd: this.radarDir,
         timeout: config.cron.timeoutMs,
         env: { ...process.env },
         maxBuffer: 10 * 1024 * 1024,
@@ -149,11 +149,11 @@ export class CoworkService {
 
 Save the content below as:
 ```
-/Users/nitiponchingthongchai/Documents/cowork/xvary-stock-research/prompts/daily_dashboard.md
+/Users/nitiponchingthongchai/Documents/cowork/stock-radar-weekly/prompts/daily_dashboard.md
 ```
 
 ```markdown
-You are XVARY Research, an institutional-grade stock analysis assistant.
+You are Stock Radar Research, an institutional-grade stock analysis assistant.
 
 ## Objective
 Find today's top 10 stocks worth watching, analyze each, and generate a single combined HTML dashboard.
@@ -184,23 +184,23 @@ Verdict:
 - 🔴 ค่าขนม — fun money only, short-term trade at best
 
 ## Step 5 — Generate Combined HTML Dashboard
-Save to: /Users/nitiponchingthongchai/Documents/cowork/xvary-stock-research/watchlist_YYYYMMDD.html
+Save to: /Users/nitiponchingthongchai/Documents/cowork/stock-radar-weekly/watchlist_YYYYMMDD.html
 
 Design: dark theme (#0f172a bg, #1e293b cards, #10b981 green, #f59e0b yellow, #ef4444 red).
 Layout:
-1. Header — "XVARY Research · Daily Top 10" + date
+1. Header — "Stock Radar Research · Daily Top 10" + date
 2. Macro summary box — Fed stance badge + context + key events this week
 3. Scorecard table — Ticker | Price | % Change | Sector | Catalyst | Fed Risk | Verdict
 4. Stock cards grid (2 columns) — one card per ticker with price, range, catalyst, analyst target, verdict
 5. Sources — all URLs used
-6. Footer — "Not financial advice · XVARY Research · [date]"
+6. Footer — "Not financial advice · Stock Radar Research · [date]"
 
 Add hover animation on cards (scale + border glow). Fully self-contained HTML.
 
 ## Constraints
 - Research FIRST, generate HTML AFTER
 - Never fabricate prices or news
-- Footer must always say: "Not financial advice · XVARY Research"
+- Footer must always say: "Not financial advice · Stock Radar Research"
 ```
 
 ---
@@ -209,7 +209,7 @@ Add hover animation on cards (scale + border glow). Fully self-contained HTML.
 
 Every weekday at 7 AM, a file is saved to:
 ```
-xvary-stock-research/watchlist_YYYYMMDD.html
+stock-radar-weekly/watchlist_YYYYMMDD.html
 ```
 
 Logs land in your NestJS project:

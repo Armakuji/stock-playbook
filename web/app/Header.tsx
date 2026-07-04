@@ -17,6 +17,24 @@ const gradLink: React.CSSProperties = {
   WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
 };
 
+/* ── Compact radar mark for the header (matches the favicon) ──────────────────── */
+function RadarBadge({ size = 24 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 512 512" aria-hidden style={{ borderRadius: 6, flexShrink: 0, display: "block" }}>
+      <rect x="16" y="16" width="480" height="480" rx="112" fill="#0b1118" />
+      <g fill="none" stroke="#2f8f5c" strokeOpacity="0.6" strokeWidth="10">
+        <circle cx="256" cy="256" r="70" />
+        <circle cx="256" cy="256" r="140" />
+      </g>
+      <g transform="rotate(-38 256 256)">
+        <line x1="256" y1="256" x2="256" y2="86" stroke="#3fd07f" strokeWidth="12" strokeLinecap="round" />
+      </g>
+      <circle cx="330" cy="176" r="18" fill="#8ef0a8" />
+      <circle cx="256" cy="256" r="16" fill="#3fd07f" />
+    </svg>
+  );
+}
+
 // ── EN/TH segmented toggle ───────────────────────────────────────────────────
 function LangToggle({ lang, setLang }: { lang: Lang; setLang: (l: Lang) => void }) {
   return (
@@ -54,7 +72,7 @@ export function Header({ lastUpdated, isLocal }: { lastUpdated: string; isLocal:
     <header style={{ borderBottom: "1px solid var(--border)", backgroundColor: "var(--card)", position: "relative" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "14px 16px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12 }}>
         <Link href="/" style={{ textDecoration: "none", flexShrink: 0, display: "flex", alignItems: "center", gap: 8 }}>
-          <img src="/icon.svg" alt="Stock Radar Weekly" width={24} height={24} style={{ borderRadius: 6, flexShrink: 0 }} />
+          <RadarBadge size={24} />
           <span className="srw-logo" style={{ fontSize: 20, fontWeight: 800, letterSpacing: "-0.5px", color: "var(--text)", fontFamily: "var(--font-display, sans-serif)", whiteSpace: "nowrap" }}>
             Stock Radar Weekly
           </span>

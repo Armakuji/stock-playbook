@@ -7,34 +7,11 @@ import { useLang } from "@/lib/LanguageContext";
 
 // ── Flame ring — replaces green score ring ────────────────────────────────────
 function FlameRing({ moonPct }: { moonPct: number }) {
-  const r = 22;
-  const circ = 2 * Math.PI * r;
   // cap at 500% for visual ring
-  const pct = Math.min(moonPct, 500) / 500;
-  const filled = pct * circ;
-
+  const p = Math.min(moonPct, 500) / 500 * 100;
   return (
-    <div style={{ position: "relative", width: 52, height: 52, flexShrink: 0 }}>
-      <svg width={52} height={52} style={{ transform: "rotate(-90deg)", display: "block" }}>
-        <circle cx={26} cy={26} r={r} fill="none" stroke="#1a0505" strokeWidth={4} />
-        <circle
-          cx={26} cy={26} r={r} fill="none"
-          stroke="url(#flameGrad)" strokeWidth={4}
-          strokeDasharray={`${filled} ${circ}`} strokeLinecap="round"
-          style={{ filter: "drop-shadow(0 0 4px #ff3d00)" }}
-        />
-        <defs>
-          <linearGradient id="flameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="#ff6d00" />
-            <stop offset="100%" stopColor="#d500f9" />
-          </linearGradient>
-        </defs>
-      </svg>
-      <div style={{
-        position: "absolute", inset: 0,
-        display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center",
-        gap: 3,
-      }}>
+    <div className="radar-ring" style={{ "--p": p } as React.CSSProperties}>
+      <div className="radar-ring-in" style={{ gap: 3 }}>
         <span style={{
           fontSize: 9, fontWeight: 800, color: "#ff6d00",
           fontFamily: "var(--font-mono, monospace)", lineHeight: 1, letterSpacing: "-0.5px",
@@ -44,7 +21,6 @@ function FlameRing({ moonPct }: { moonPct: number }) {
         <span style={{
           fontSize: 10, fontWeight: 900, color: "#ff6d00",
           fontFamily: "var(--font-mono, monospace)", lineHeight: 1, letterSpacing: "-0.5px",
-          filter: "drop-shadow(0 0 4px #ff6d0088)",
         }}>
           {moonPct > 999 ? "999+" : `${Math.round(moonPct)}%`}
         </span>
@@ -103,13 +79,7 @@ function TurboBar({ report, moonPct }: { report: StockReport; moonPct: number })
           filter: "drop-shadow(0 0 4px #d500f9)",
         }} />
         {/* current price dot */}
-        <div style={{
-          position: "absolute", left: `${curPct}%`, top: "50%",
-          width: 10, height: 10, borderRadius: "50%",
-          background: "#ff3d00", border: "2px solid #0e0508",
-          transform: "translate(-50%, -50%)",
-          boxShadow: "0 0 8px #ff3d00",
-        }} />
+        <div className="radar-mk" style={{ left: `${curPct}%`, background: "#ff3d00", boxShadow: "0 0 8px #ff3d00" }} />
       </div>
 
       <div style={{ position: "relative", height: 16, marginTop: 4 }}>
@@ -158,42 +128,7 @@ export function TurboCard({
   const cap = marketCapTier(report.marketCap);
 
   return (
-    <Link href={`/report/${report.ticker}`} style={{ textDecoration: "none" }}>
-      <div
-        style={{
-          background: "#0e0508",
-          border: "1px solid #2d1010",
-          borderTop: "2px solid #ff3d00",
-          borderRadius: 14,
-          padding: "18px 20px",
-          cursor: "pointer",
-          transition: "border-color 0.2s, transform 0.2s, box-shadow 0.2s",
-          position: "relative",
-          overflow: "hidden",
-          height: "100%",
-        }}
-        onMouseEnter={(e) => {
-          const el = e.currentTarget as HTMLDivElement;
-          el.style.borderTopColor = "#ff6d00";
-          el.style.borderColor = "#ff3d0060";
-          el.style.transform = "translateY(-3px)";
-          el.style.boxShadow = "0 8px 32px #ff3d0022, 0 2px 8px rgba(0,0,0,0.7)";
-        }}
-        onMouseLeave={(e) => {
-          const el = e.currentTarget as HTMLDivElement;
-          el.style.borderColor = "#2d1010";
-          el.style.borderTopColor = "#ff3d00";
-          el.style.transform = "translateY(0)";
-          el.style.boxShadow = "none";
-        }}
-      >
-        {/* Heat glow wash */}
-        <div style={{
-          position: "absolute", top: 0, left: 0, right: 0, height: 100,
-          background: "linear-gradient(180deg, #ff3d0012 0%, transparent 100%)",
-          pointerEvents: "none",
-        }} />
-
+    <Link href={`/report/${report.ticker}`} className="radar-card">
         {/* Row 1: rank + moon ring */}
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 14 }}>
           <RankBadge rank={rank} />
@@ -330,7 +265,6 @@ export function TurboCard({
 
         {/* Row 6: Turbo bar */}
         <TurboBar report={report} moonPct={moonPct} />
-      </div>
     </Link>
   );
 }
