@@ -26,8 +26,8 @@ later — see Phase 3).
 | Auth (scripts) | **Personal access tokens** (PAT, hashed in DB) as `Authorization: Bearer` — Claude's backtest/validator scripts read the journal **from the API**, not local files |
 | Authorization | One rule: `trade.user_id === session.user.id`. Role `admin` (owner) gates token issuance + future report sync |
 | Database | PostgreSQL. `journal-validation.json` also moves to DB (`trade_validations`) so validator verdicts live beside trades |
-| API framework | **NestJS** (owner's strongest stack) |
-| Hosting | **Railway**: NestJS + Postgres in one project, private network, ~$5–10/mo. Next.js stays on Vercel |
+| API framework | **NestJS** (owner's strongest stack), lives in `service/` in this repo (monorepo) |
+| Hosting | **Railway**: NestJS + Postgres in one project, private network, ~$5–10/mo (Root Directory = `service`). Next.js stays on Vercel (Root Directory = `web`) |
 | Domains | Same apex for web + API (`www.` / `api.`) so session cookies work without cross-domain pain |
 | Reports | Unchanged (git → Vercel). Scripts keep reading `web/data/` locally; only journal I/O switches to HTTP |
 
@@ -37,6 +37,15 @@ serverless Postgres, but cold starts → needs pooling), Render (free tier with 
 $7/mo warm).
 
 ## 3. Architecture
+
+Monorepo layout (both platforms deploy from a subdirectory of this repo):
+
+```
+stock-radar-weekly/
+├── web/        Next.js  → Vercel  (Root Directory = web)
+├── service/    NestJS   → Railway (Root Directory = service)  ← NEW
+└── skills/ scripts/ docs/ ...
+```
 
 ```
 Browser ──────────── Next.js on Vercel (public: reports, dashboards — unchanged, build-time JSON)
@@ -80,7 +89,7 @@ Maps 1:1 from `web/lib/journal-types.ts` (`Trade`, `TradeExit`, `ValidatorResult
 ## 5. Phases
 
 **Phase 1 — API + my journal in prod**
-NestJS skeleton (Railway) · Postgres + migrations · Google OIDC + sessions · trades/exits
+NestJS skeleton in `service/` (deployed on Railway) · Postgres + migrations · Google OIDC + sessions · trades/exits
 CRUD + ownership guard · import `private/journal.json` as user #1 · point
 `web/app/journal/*` at the API (login gate; remove `fs` writes + `isLocal` gate).
 

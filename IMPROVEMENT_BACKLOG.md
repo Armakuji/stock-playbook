@@ -118,7 +118,7 @@ Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open N
 
 **ปัญหา:** journal เป็น local-only (`fs` เขียน `private/journal.json`) — ใช้บน Vercel prod ไม่ได้เลย (filesystem read-only) และอยากเปิดให้คนอื่น login ด้วย Google แล้วมี journal ส่วนตัวของตัวเอง (private per-user, ไม่มี social/likes) · design คุยจบแล้ว 2026-07-04
 **ทำ:** ตาม design doc — Phase 1: NestJS + Postgres บน Railway + Google OIDC (httpOnly cookie, same apex domain) + CRUD trades/exits + import journal เดิมเป็น user #1 · Phase 2: เปิด signup + PAT (Bearer) ให้ Claude scripts อ่าน/เขียน journal ผ่าน API + validator เขียนผล `trade_validations` ลง DB · Phase 3 (optional): sync reports → jsonb · **reports ยังอยู่ใน git เหมือนเดิม ไม่แตะ publish pipeline**
-**ไฟล์:** `docs/architecture/journal-api.md` (spec เต็ม: schema, endpoints, hosting) · `web/lib/journal.ts` + `web/app/journal/*` (เลิก fs → เรียก API + login gate) · `web/lib/journal-types.ts` (map เป็น schema) · `scripts/fetch-backtest-prices.mjs` + analyze-journal skill (อ่านผ่าน `JOURNAL_API_URL`/`JOURNAL_API_TOKEN`) · repo ใหม่สำหรับ NestJS service
+**ไฟล์:** `docs/architecture/journal-api.md` (spec เต็ม: schema, endpoints, hosting) · `web/lib/journal.ts` + `web/app/journal/*` (เลิก fs → เรียก API + login gate) · `web/lib/journal-types.ts` (map เป็น schema) · `scripts/fetch-backtest-prices.mjs` + analyze-journal skill (อ่านผ่าน `JOURNAL_API_URL`/`JOURNAL_API_TOKEN`) · `service/` folder ใหม่ใน repo นี้ (monorepo — Railway ตั้ง Root Directory = `service`)
 **เป้า:** `/journal` ใช้ได้บน prod — login Google แล้วเห็น/แก้ trade ของตัวเองเท่านั้น · scripts ทำงานผ่าน API แทนไฟล์ local · ค่า hosting ~$5–10/เดือน (Railway) · เกี่ยวพัน: ทำก่อน #12(ก) ถ้าเลือก journal เป็นธาตุ Earth · ประสานกับ #13 (JournalContent i18n) กันแก้ซ้ำ
 
 ---
