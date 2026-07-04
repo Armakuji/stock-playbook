@@ -296,3 +296,63 @@ body {
 @media (prefers-reduced-motion: reduce) {
   * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
 }
+/* ============================================================
+   Stock Radar Weekly — restyle additions
+   Append this to app/globals.css (below the existing :root block).
+   Everything here is ADDITIVE — no existing rule is changed.
+   ============================================================ */
+
+/* ── 1. Per-element theme tokens ─────────────────────────────
+   Put class="theme-water | theme-air | theme-fire" on each
+   page's root <section>. Cards read var(--c1)/(--c2)/etc,
+   so a single wrapper class themes the whole grid.            */
+.theme-water { --c1:#38bdf8; --c2:#2dd4bf; --surface:#07111a; --brd:#102530; --track:#0d1f29; --glow:rgba(56,189,248,.16); --tx:#eaf6ff; --mut:#4a6b78; }
+.theme-air   { --c1:#10b981; --c2:#34d399; --surface:#08130f; --brd:#0f2a20; --track:#0c1f18; --glow:rgba(16,185,129,.16); --tx:#e8fff5; --mut:#4a7a67; }
+.theme-fire  { --c1:#ff6d00; --c2:#d500f9; --surface:#0e0508; --brd:#2d1010; --track:#1a0505; --glow:rgba(255,61,0,.16);  --tx:#fff1f1; --mut:#7f4040; }
+
+/* ── 2. Calmer landing title ─────────────────────────────────
+   Replaces the constantly-shimmering animated gradient with a
+   single static element-spectrum. Apply .radar-title to the h1
+   and DROP the animation:gradientShift utility from it.        */
+.radar-title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -1.6px;
+  line-height: 1.02;
+  background: linear-gradient(96deg, #7dd3fc, #34d399 42%, #fb923c 74%, #e879f9);
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ── 3. Radar hero centerpiece ───────────────────────────────
+   Wrap the hero <section> with position:relative; drop
+   <div class="radar-rings"> as its first child (before the logo),
+   and put <svg class="radar-hero-icon"> (your favicon.svg symbol)
+   as the centerpiece.                                          */
+.radar-rings { position:absolute; top:50%; left:50%; transform:translate(-50%,-56%); width:520px; height:520px; pointer-events:none; z-index:0; opacity:.5; }
+.radar-rings .rc { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); border:1px solid rgba(47,143,92,.32); border-radius:50%; }
+.radar-rings .rsweep { position:absolute; top:50%; left:50%; width:260px; height:260px; transform:translate(-50%,-50%); background:conic-gradient(from 0deg, rgba(63,208,127,.28), transparent 42%); border-radius:50%; animation:radarSweep 7s linear infinite; }
+.radar-hero-icon { position:relative; z-index:1; width:96px; height:96px; margin:0 auto 20px; display:block; filter:drop-shadow(0 8px 30px rgba(16,185,129,.28)); }
+
+/* ── 4. Themed ranking card ──────────────────────────────────
+   Base card for DCA / Catalyst / Turbo grids. Colour comes from
+   the parent .theme-* wrapper, so one card style serves all three. */
+.radar-card { position:relative; display:block; text-decoration:none; height:100%; background:var(--surface); border:1px solid var(--brd); border-top:2px solid var(--c1); border-radius:15px; padding:18px 20px; overflow:hidden; transition:transform .2s cubic-bezier(.22,1,.36,1), box-shadow .2s, border-color .2s; }
+.radar-card:hover { transform:translateY(-4px); border-color:color-mix(in srgb, var(--c1) 45%, transparent); box-shadow:0 12px 36px var(--glow), 0 2px 8px rgba(0,0,0,.7); }
+.radar-card::before { content:""; position:absolute; top:0; left:0; right:0; height:96px; background:linear-gradient(180deg, color-mix(in srgb, var(--c1) 9%, transparent), transparent); pointer-events:none; }
+
+/* Score / moon ring (conic progress). Set --p to the 0–100 value. */
+.radar-ring { position:relative; width:52px; height:52px; border-radius:50%; background:conic-gradient(var(--c1) calc(var(--p)*3.6deg), var(--track) 0); display:grid; place-items:center; }
+.radar-ring-in { width:42px; height:42px; border-radius:50%; background:var(--surface); display:flex; flex-direction:column; align-items:center; justify-content:center; line-height:1; }
+
+/* Valuation / price→moon track marker */
+.radar-mk { position:absolute; top:50%; width:10px; height:10px; border-radius:50%; border:2px solid var(--surface); transform:translate(-50%,-50%); z-index:2; }
+
+/* ── 5. Element view-switcher pills ──────────────────────────
+   Shared segmented control for jumping DCA ↔ Catalyst ↔ Turbo. */
+.radar-pills { display:inline-flex; gap:4px; background:#0a0a12; border:1px solid var(--border); border-radius:13px; padding:5px; }
+.radar-pill { display:flex; align-items:center; gap:7px; font-family:var(--font-mono); font-weight:800; font-size:12.5px; text-decoration:none; padding:9px 18px; border-radius:9px; border:none; background:transparent; color:var(--muted); cursor:pointer; transition:all .16s; }
+.radar-pill:hover { color:var(--text); }
+.radar-pill.on-water { background:linear-gradient(90deg,#2dd4bf,#38bdf8); color:#04080a; }
+.radar-pill.on-air   { background:linear-gradient(90deg,#10b981,#34d399); color:#04120c; }
+.radar-pill.on-fire  { background:linear-gradient(90deg,#ff6d00,#d500f9); color:#180204; }

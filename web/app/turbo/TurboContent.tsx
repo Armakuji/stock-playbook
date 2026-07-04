@@ -29,7 +29,7 @@ export function TurboContent({ ranked, rankChanges = [] }: { ranked: Ranked; ran
   ];
 
   return (
-    <div style={{ position: "relative" }}>
+    <div className="theme-fire" style={{ position: "relative" }}>
 
       {/* ── Ambient heat layer ────────────────────────────────────────── */}
       <div aria-hidden="true" style={{

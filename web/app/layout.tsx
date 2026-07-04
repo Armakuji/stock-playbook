@@ -30,6 +30,7 @@ const jetbrains = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Stock Radar Weekly",
   description: "Weekly stock analysis",
+  icons: { icon: "/favicon.svg" },
 };
 
 function getLatestReportDate(): string {
