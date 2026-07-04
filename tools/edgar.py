@@ -1,46 +1,73 @@
 #!/usr/bin/env python3
-"""Standalone SEC EDGAR fetcher for claude-code-stock-analysis-skill.
+"""SEC EDGAR fundamentals fetcher — Stock Radar Research.
 
-Public functions:
-- get_cik(ticker)
-- get_company_facts(ticker)
-- get_financials(ticker)
-- get_filings_metadata(ticker)
+Pulls company facts (XBRL) and filing metadata straight from the free SEC
+EDGAR API and normalizes them into the compact snapshot the Stock Radar
+report skills consume. No API key required.
 
-Examples:
-    python tools/edgar.py AAPL
-    python tools/edgar.py NVDA --mode filings
+Public functions (stable API — referenced by references/edgar-guide.md):
+- get_cik(ticker)               -> zero-padded CIK string or None
+- get_company_facts(ticker)     -> raw XBRL companyfacts payload + metadata
+- get_financials(ticker)        -> normalized annual + quarterly snapshots
+- get_filings_metadata(ticker)  -> recent 10-K/10-Q/20-F/6-K filings
+
+CLI:
+    python3 tools/edgar.py AAPL
+    python3 tools/edgar.py NVDA --mode filings
+    python3 tools/edgar.py ASML --mode facts
 """
 
 from __future__ import annotations
 
 import argparse
 import json
-from collections import Counter, defaultdict
-from datetime import datetime, timezone
 import time
-from typing import Any, Optional
+from dataclasses import dataclass
+from datetime import date, datetime, timezone
+from typing import Any, Callable, Iterator, Optional
 
 import requests
 
-_SEC_CIK_LOOKUP = "https://www.sec.gov/files/company_tickers.json"
-_SEC_COMPANY_FACTS = "https://data.sec.gov/api/xbrl/companyfacts/CIK{cik}.json"
-_SEC_SUBMISSIONS = "https://data.sec.gov/submissions/CIK{cik}.json"
-_TIMEOUT = 25
-_MAX_RETRIES = 3
-_INITIAL_BACKOFF_SECONDS = 1.0
-_RETRYABLE_STATUS_CODES = {429, 500, 502, 503, 504}
-_ACCEPTED_FORMS = {"10-K", "10-Q", "20-F", "6-K"}
-_ANNUAL_FORMS = {"10-K", "20-F"}
-_QUARTERLY_FORMS = {"10-Q", "6-K"}
-_HEADERS = {
-    "User-Agent": "claude-code-stock-analysis-skill/1.0 (nitipon.ching@gmail.com)",
-    "Accept": "application/json",
-    "Accept-Encoding": "gzip, deflate",
-}
+# ── HTTP layer ───────────────────────────────────────────────────────────────
 
-# statement -> field -> accepted concept labels (US-GAAP + IFRS aliases)
-_FIELD_CONCEPTS: dict[str, dict[str, tuple[str, ...]]] = {
+USER_AGENT = "stock-radar-weekly/1.0 (nitipon.ching@gmail.com)"
+
+CIK_LOOKUP_URL = "https://www.sec.gov/files/company_tickers.json"
+COMPANY_FACTS_URL = "https://data.sec.gov/api/xbrl/companyfacts/CIK{cik}.json"
+SUBMISSIONS_URL = "https://data.sec.gov/submissions/CIK{cik}.json"
+
+REQUEST_TIMEOUT = 25
+RETRY_ATTEMPTS = 3
+RETRY_STATUSES = frozenset({429, 500, 502, 503, 504})
+
+
+def _fetch_json(url: str) -> dict[str, Any]:
+    """GET a JSON document with exponential backoff on transient failures."""
+    delay = 1.0
+    for attempt in range(RETRY_ATTEMPTS):
+        try:
+            resp = requests.get(
+                url,
+                headers={"User-Agent": USER_AGENT, "Accept": "application/json"},
+                timeout=REQUEST_TIMEOUT,
+            )
+            if resp.status_code in RETRY_STATUSES:
+                raise requests.HTTPError(f"transient {resp.status_code}", response=resp)
+            resp.raise_for_status()
+            return resp.json()
+        except (requests.RequestException, ValueError):
+            if attempt == RETRY_ATTEMPTS - 1:
+                raise
+            time.sleep(delay)
+            delay *= 2
+    raise RuntimeError("unreachable")
+
+
+# ── Concept dictionary ───────────────────────────────────────────────────────
+# Each field lists accepted XBRL concept tags, best-first (US-GAAP then IFRS
+# aliases). The first alias that has data for the requested period wins.
+
+STATEMENT_FIELDS: dict[str, dict[str, tuple[str, ...]]] = {
     "income_statement": {
         "revenue": (
             "Revenues",
@@ -127,178 +154,153 @@ _FIELD_CONCEPTS: dict[str, dict[str, tuple[str, ...]]] = {
     },
 }
 
-
-def _concept_map() -> dict[str, tuple[str, str]]:
-    out: dict[str, tuple[str, str]] = {}
-    for statement, fields in _FIELD_CONCEPTS.items():
-        for field, concepts in fields.items():
-            for concept in concepts:
-                out[concept] = (statement, field)
-    return out
+XBRL_NAMESPACES = ("us-gaap", "ifrs-full")
+REPORT_FORMS = frozenset({"10-K", "10-Q", "20-F", "6-K"})
+ANNUAL_FORMS = frozenset({"10-K", "20-F"})
+QUARTERLY_FORMS = frozenset({"10-Q", "6-K"})
 
 
-_CONCEPT_MAP = _concept_map()
+# ── Data model ───────────────────────────────────────────────────────────────
 
 
-def _field_concept_priority() -> dict[tuple[str, str], dict[str, int]]:
-    priorities: dict[tuple[str, str], dict[str, int]] = {}
-    for statement, fields in _FIELD_CONCEPTS.items():
-        for field, concepts in fields.items():
-            priorities[(statement, field)] = {
-                concept: idx for idx, concept in enumerate(concepts)
-            }
-    return priorities
+@dataclass(frozen=True)
+class Fact:
+    """One reported XBRL value for a (statement, field)."""
 
+    statement: str
+    field: str
+    concept: str
+    namespace: str
+    alias_rank: int  # position of concept in the alias tuple (0 = best)
+    value: float
+    unit: str
+    form: str
+    period_start: Optional[str]
+    period_end: str
+    filed: Optional[str]
 
-_FIELD_CONCEPT_PRIORITY = _field_concept_priority()
-
-
-def _session() -> requests.Session:
-    s = requests.Session()
-    s.headers.update(_HEADERS)
-    return s
-
-
-def _request_json(url: str, session: requests.Session) -> dict[str, Any]:
-    last_error: Optional[Exception] = None
-    for attempt in range(1, _MAX_RETRIES + 1):
+    @property
+    def period_months(self) -> Optional[int]:
+        """Approximate covered period length: 0 = instant, 3/6/9/12 = duration."""
+        if not self.period_start:
+            return 0
         try:
-            response = session.get(url, timeout=_TIMEOUT)
-            if response.status_code in _RETRYABLE_STATUS_CODES:
-                raise requests.HTTPError(
-                    f"Retryable status {response.status_code}",
-                    response=response,
-                )
-            response.raise_for_status()
-            return response.json()
-        except (requests.RequestException, ValueError) as exc:
-            last_error = exc
-            if attempt >= _MAX_RETRIES:
-                break
-            backoff = _INITIAL_BACKOFF_SECONDS * (2 ** (attempt - 1))
-            time.sleep(backoff)
-    assert last_error is not None
-    raise last_error
-
-
-def _variants(ticker: str) -> list[str]:
-    t = ticker.strip().upper()
-    candidates = [
-        t,
-        t.replace(".", "-"),
-        t.replace("-", "."),
-        t.replace(".", ""),
-        t.split(".")[0],
-        t.split("-")[0],
-    ]
-    out: list[str] = []
-    for c in candidates:
-        if c and c not in out:
-            out.append(c)
-    return out
-
-
-def _parse_period_months(start: Optional[str], end: Optional[str]) -> Optional[int]:
-    if not end:
-        return None
-    if not start:
-        return 0
-    try:
-        s = datetime.strptime(start, "%Y-%m-%d")
-        e = datetime.strptime(end, "%Y-%m-%d")
-    except ValueError:
-        return None
-    days = (e - s).days
-    if days <= 0:
-        return 0
-    if days <= 120:
-        return 3
-    if days <= 210:
-        return 6
-    if days <= 310:
-        return 9
-    return 12
-
-
-def _is_quarterly(form: str, period_months: Optional[int]) -> bool:
-    if form in _QUARTERLY_FORMS:
-        return True
-    return period_months is not None and 1 <= period_months <= 4
-
-
-def _to_float(value: Any) -> Optional[float]:
-    try:
-        if value is None:
+            start = date.fromisoformat(self.period_start)
+            end = date.fromisoformat(self.period_end)
+        except ValueError:
             return None
-        return float(value)
+        span = (end - start).days
+        if span <= 0:
+            return 0
+        for months, ceiling in ((3, 120), (6, 210), (9, 310)):
+            if span <= ceiling:
+                return months
+        return 12
+
+    @property
+    def is_quarterly(self) -> bool:
+        if self.form in QUARTERLY_FORMS:
+            return True
+        months = self.period_months
+        return months is not None and 1 <= months <= 4
+
+
+def _utc_stamp() -> str:
+    return datetime.now(timezone.utc).replace(microsecond=0).isoformat()
+
+
+def _as_float(value: Any) -> Optional[float]:
+    try:
+        return None if value is None else float(value)
     except (TypeError, ValueError):
         return None
 
 
+# ── Ticker → CIK ─────────────────────────────────────────────────────────────
+
+
+def _ticker_spellings(ticker: str) -> Iterator[str]:
+    """Yield plausible SEC spellings of a ticker (BRK.B ↔ BRK-B ↔ BRKB …)."""
+    base = ticker.strip().upper()
+    seen: set[str] = set()
+    for candidate in (
+        base,
+        base.replace(".", "-"),
+        base.replace("-", "."),
+        base.replace(".", ""),
+        base.split(".")[0],
+        base.split("-")[0],
+    ):
+        if candidate and candidate not in seen:
+            seen.add(candidate)
+            yield candidate
+
+
 def get_cik(ticker: str) -> Optional[str]:
-    """Resolve ticker to zero-padded SEC CIK."""
-    with _session() as s:
-        data = _request_json(_SEC_CIK_LOOKUP, s)
-    lookup: dict[str, str] = {}
-    for entry in data.values():
-        if not isinstance(entry, dict):
-            continue
-        symbol = str(entry.get("ticker", "")).strip().upper()
-        cik_raw = entry.get("cik_str")
-        if symbol and cik_raw is not None:
-            lookup[symbol] = str(cik_raw).zfill(10)
-    for candidate in _variants(ticker):
-        if candidate in lookup:
-            return lookup[candidate]
-    return None
+    """Resolve a ticker symbol to its zero-padded 10-digit SEC CIK."""
+    table = _fetch_json(CIK_LOOKUP_URL)
+    by_symbol = {
+        str(row["ticker"]).upper(): str(row["cik_str"]).zfill(10)
+        for row in table.values()
+        if isinstance(row, dict) and row.get("ticker") and row.get("cik_str") is not None
+    }
+    return next(
+        (by_symbol[s] for s in _ticker_spellings(ticker) if s in by_symbol), None
+    )
+
+
+def _require_cik(ticker: str) -> tuple[str, str]:
+    symbol = ticker.strip().upper()
+    cik = get_cik(symbol)
+    if not cik:
+        raise ValueError(f"CIK not found for ticker: {symbol}")
+    return symbol, cik
+
+
+# ── Public fetchers ──────────────────────────────────────────────────────────
 
 
 def get_company_facts(ticker: str) -> dict[str, Any]:
-    """Fetch raw EDGAR companyfacts payload for a ticker."""
-    normalized = ticker.strip().upper()
-    cik = get_cik(normalized)
-    if not cik:
-        raise ValueError(f"CIK not found for ticker: {normalized}")
-    with _session() as s:
-        facts = _request_json(_SEC_COMPANY_FACTS.format(cik=cik), s)
+    """Fetch the raw EDGAR companyfacts (XBRL) payload for a ticker."""
+    symbol, cik = _require_cik(ticker)
+    payload = _fetch_json(COMPANY_FACTS_URL.format(cik=cik))
     return {
-        "ticker": normalized,
+        "ticker": symbol,
         "cik": cik,
-        "entity_name": facts.get("entityName", normalized),
-        "facts": facts.get("facts", {}),
-        "raw": facts,
-        "retrieved_utc": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
+        "entity_name": payload.get("entityName", symbol),
+        "facts": payload.get("facts", {}),
+        "raw": payload,
+        "retrieved_utc": _utc_stamp(),
     }
 
 
 def get_filings_metadata(ticker: str, limit: int = 10) -> list[dict[str, Any]]:
-    """Return recent SEC filing metadata for common report forms."""
-    normalized = ticker.strip().upper()
-    cik = get_cik(normalized)
-    if not cik:
-        raise ValueError(f"CIK not found for ticker: {normalized}")
+    """List recent periodic-report filings (10-K / 10-Q / 20-F / 6-K)."""
+    symbol, cik = _require_cik(ticker)
+    recent = _fetch_json(SUBMISSIONS_URL.format(cik=cik)).get("filings", {}).get(
+        "recent", {}
+    )
 
-    with _session() as s:
-        payload = _request_json(_SEC_SUBMISSIONS.format(cik=cik), s)
+    def column(name: str) -> list[Any]:
+        return recent.get(name, [])
 
-    recent = payload.get("filings", {}).get("recent", {})
-    forms = recent.get("form", [])
-    filing_dates = recent.get("filingDate", [])
-    report_dates = recent.get("reportDate", [])
-    accessions = recent.get("accessionNumber", [])
-    docs = recent.get("primaryDocument", [])
-
-    rows: list[dict[str, Any]] = []
-    for index, form in enumerate(forms):
-        if form not in _ACCEPTED_FORMS:
+    rows = []
+    for form, filed, report, accession, doc in zip(
+        column("form"),
+        column("filingDate"),
+        column("reportDate"),
+        column("accessionNumber"),
+        column("primaryDocument"),
+    ):
+        if form not in REPORT_FORMS:
             continue
         rows.append(
             {
                 "form": form,
-                "filing_date": filing_dates[index] if index < len(filing_dates) else None,
-                "report_date": report_dates[index] if index < len(report_dates) else None,
-                "accession_number": accessions[index] if index < len(accessions) else None,
-                "primary_document": docs[index] if index < len(docs) else None,
+                "filing_date": filed or None,
+                "report_date": report or None,
+                "accession_number": accession or None,
+                "primary_document": doc or None,
             }
         )
         if len(rows) >= limit:
@@ -306,190 +308,151 @@ def get_filings_metadata(ticker: str, limit: int = 10) -> list[dict[str, Any]]:
     return rows
 
 
-def _extract_line_items(company_facts: dict[str, Any]) -> dict[tuple[str, str], list[dict[str, Any]]]:
-    root = company_facts.get("facts", {})
-    items: dict[tuple[str, str], list[dict[str, Any]]] = defaultdict(list)
+# ── Snapshot builder ─────────────────────────────────────────────────────────
 
-    for namespace in ("us-gaap", "ifrs-full"):
-        ns = root.get(namespace, {})
-        if not isinstance(ns, dict):
+
+def _iter_facts(company_facts: dict[str, Any]) -> Iterator[Fact]:
+    """Walk the XBRL tree and yield every mapped, usable fact."""
+    tree = company_facts.get("facts", {})
+    for namespace in XBRL_NAMESPACES:
+        concepts = tree.get(namespace)
+        if not isinstance(concepts, dict):
             continue
-        for concept, concept_payload in ns.items():
-            mapped = _CONCEPT_MAP.get(concept)
-            if not mapped:
-                continue
-            statement, field = mapped
-            units = concept_payload.get("units", {})
-            if not isinstance(units, dict):
-                continue
-            for unit, entries in units.items():
-                for entry in entries:
-                    form = entry.get("form", "")
-                    if form not in _ACCEPTED_FORMS:
+        for statement, fields in STATEMENT_FIELDS.items():
+            for field, aliases in fields.items():
+                for rank, concept in enumerate(aliases):
+                    units = concepts.get(concept, {}).get("units", {})
+                    if not isinstance(units, dict):
                         continue
-                    value = _to_float(entry.get("val"))
-                    if value is None:
-                        continue
-                    end = entry.get("end")
-                    if not end:
-                        continue
-                    start = entry.get("start")
-                    items[(statement, field)].append(
-                        {
-                            "value": value,
-                            "unit": unit,
-                            "form": form,
-                            "period_end": end,
-                            "period_start": start,
-                            "period_months": _parse_period_months(start, end),
-                            "filed": entry.get("filed"),
-                            "concept": concept,
-                            "namespace": namespace,
-                        }
-                    )
-    return items
+                    for unit, entries in units.items():
+                        for entry in entries:
+                            if entry.get("form") not in REPORT_FORMS:
+                                continue
+                            value = _as_float(entry.get("val"))
+                            end = entry.get("end")
+                            if value is None or not end:
+                                continue
+                            yield Fact(
+                                statement=statement,
+                                field=field,
+                                concept=concept,
+                                namespace=namespace,
+                                alias_rank=rank,
+                                value=value,
+                                unit=unit,
+                                form=entry.get("form", ""),
+                                period_start=entry.get("start"),
+                                period_end=end,
+                                filed=entry.get("filed"),
+                            )
 
 
-def _best_entry(
-    records: list[dict[str, Any]],
-    quarterly: bool,
-    statement: str,
-    field: str,
-) -> Optional[dict[str, Any]]:
-    if not records:
+def _pick_latest(candidates: list[Fact]) -> Optional[Fact]:
+    """Best fact for one field: preferred alias first, then most recent."""
+    if not candidates:
         return None
-    scoped: list[dict[str, Any]] = []
-    for record in records:
-        is_q = _is_quarterly(record.get("form", ""), record.get("period_months"))
-        if quarterly and is_q:
-            scoped.append(record)
-        elif not quarterly and not is_q and record.get("form") in _ANNUAL_FORMS:
-            scoped.append(record)
-
-    if not scoped:
-        return None
-
-    concept_priority = _FIELD_CONCEPT_PRIORITY.get((statement, field), {})
-    if concept_priority:
-        default_rank = len(concept_priority) + 100
-        best_rank = min(concept_priority.get(r.get("concept", ""), default_rank) for r in scoped)
-        scoped = [
-            r
-            for r in scoped
-            if concept_priority.get(r.get("concept", ""), default_rank) == best_rank
-        ]
-
-    unit_counts = Counter(r.get("unit") for r in scoped)
-    preferred_unit = unit_counts.most_common(1)[0][0]
-    scoped = [r for r in scoped if r.get("unit") == preferred_unit]
-    scoped.sort(key=lambda r: (r.get("period_end", ""), r.get("filed", "")), reverse=True)
-    return scoped[0]
+    top_rank = min(f.alias_rank for f in candidates)
+    pool = [f for f in candidates if f.alias_rank == top_rank]
+    # Keep the dominant unit so mixed USD/share counts never blend.
+    unit_tally: dict[str, int] = {}
+    for f in pool:
+        unit_tally[f.unit] = unit_tally.get(f.unit, 0) + 1
+    dominant_unit = max(unit_tally, key=unit_tally.get)  # type: ignore[arg-type]
+    pool = [f for f in pool if f.unit == dominant_unit]
+    return max(pool, key=lambda f: (f.period_end, f.filed or ""))
 
 
-def _build_snapshot(
-    line_items: dict[tuple[str, str], list[dict[str, Any]]],
-    quarterly: bool,
-) -> tuple[dict[str, dict[str, float]], dict[str, dict[str, Any]], Optional[str]]:
-    snapshot: dict[str, dict[str, float]] = {
-        "income_statement": {},
-        "balance_sheet": {},
-        "cash_flow": {},
-    }
+def _snapshot(facts: list[Fact], quarterly: bool) -> dict[str, Any]:
+    """Assemble one period-scope snapshot (annual or quarterly)."""
+    statements: dict[str, dict[str, float]] = {s: {} for s in STATEMENT_FIELDS}
     sources: dict[str, dict[str, Any]] = {}
-    period_end: Optional[str] = None
+    latest_period: Optional[str] = None
 
-    for (statement, field), records in line_items.items():
-        best = _best_entry(
-            records,
-            quarterly=quarterly,
-            statement=statement,
-            field=field,
+    buckets: dict[tuple[str, str], list[Fact]] = {}
+    for f in facts:
+        in_scope = f.is_quarterly if quarterly else (
+            not f.is_quarterly and f.form in ANNUAL_FORMS
         )
+        if in_scope:
+            buckets.setdefault((f.statement, f.field), []).append(f)
+
+    for (statement, field), candidates in buckets.items():
+        best = _pick_latest(candidates)
         if not best:
             continue
-        snapshot[statement][field] = best["value"]
-        key = f"{statement}.{field}"
-        sources[key] = {
-            "form": best.get("form"),
-            "filed": best.get("filed"),
-            "period_end": best.get("period_end"),
-            "unit": best.get("unit"),
-            "concept": best.get("concept"),
-            "namespace": best.get("namespace"),
+        statements[statement][field] = best.value
+        sources[f"{statement}.{field}"] = {
+            "form": best.form,
+            "filed": best.filed,
+            "period_end": best.period_end,
+            "unit": best.unit,
+            "concept": best.concept,
+            "namespace": best.namespace,
         }
-        if best.get("period_end") and (not period_end or best["period_end"] > period_end):
-            period_end = best["period_end"]
+        if latest_period is None or best.period_end > latest_period:
+            latest_period = best.period_end
 
-    return snapshot, sources, period_end
+    return {"period_end": latest_period, "statements": statements, "sources": sources}
 
 
 def get_financials(ticker: str) -> dict[str, Any]:
-    """Return normalized annual + quarterly financial snapshots."""
+    """Return normalized annual + quarterly financial snapshots for a ticker."""
     company = get_company_facts(ticker)
-    line_items = _extract_line_items(company)
-
-    annual_snapshot, annual_sources, annual_period = _build_snapshot(
-        line_items, quarterly=False
-    )
-    quarterly_snapshot, quarterly_sources, quarterly_period = _build_snapshot(
-        line_items, quarterly=True
-    )
-
+    facts = list(_iter_facts(company))
     return {
         "ticker": company["ticker"],
         "cik": company["cik"],
         "entity_name": company["entity_name"],
-        "annual": {
-            "period_end": annual_period,
-            "statements": annual_snapshot,
-            "sources": annual_sources,
-        },
-        "quarterly": {
-            "period_end": quarterly_period,
-            "statements": quarterly_snapshot,
-            "sources": quarterly_sources,
-        },
-        "retrieved_utc": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
+        "annual": _snapshot(facts, quarterly=False),
+        "quarterly": _snapshot(facts, quarterly=True),
+        "retrieved_utc": _utc_stamp(),
     }
 
 
-def _main() -> None:
-    parser = argparse.ArgumentParser(description="Standalone EDGAR fetcher")
+# ── CLI ──────────────────────────────────────────────────────────────────────
+
+
+def _mode_financials(ticker: str) -> dict[str, Any]:
+    return get_financials(ticker)
+
+
+def _mode_facts(ticker: str) -> dict[str, Any]:
+    facts = get_company_facts(ticker)
+    return {
+        "ticker": facts["ticker"],
+        "cik": facts["cik"],
+        "entity_name": facts["entity_name"],
+        "namespaces": sorted(facts.get("facts", {}).keys()),
+        "retrieved_utc": facts["retrieved_utc"],
+    }
+
+
+def _mode_filings(ticker: str) -> dict[str, Any]:
+    return {
+        "ticker": ticker.strip().upper(),
+        "filings": get_filings_metadata(ticker),
+        "retrieved_utc": _utc_stamp(),
+    }
+
+
+MODES: dict[str, Callable[[str], dict[str, Any]]] = {
+    "financials": _mode_financials,
+    "facts": _mode_facts,
+    "filings": _mode_filings,
+}
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(
+        description="Stock Radar Research — SEC EDGAR fundamentals fetcher"
+    )
     parser.add_argument("ticker", help="Ticker symbol, e.g. AAPL")
-    parser.add_argument(
-        "--mode",
-        default="financials",
-        choices=("financials", "facts", "filings"),
-        help="Output mode",
-    )
-    parser.add_argument(
-        "--indent",
-        type=int,
-        default=2,
-        help="JSON indent",
-    )
+    parser.add_argument("--mode", default="financials", choices=sorted(MODES))
+    parser.add_argument("--indent", type=int, default=2, help="JSON indent")
     args = parser.parse_args()
 
-    if args.mode == "financials":
-        payload = get_financials(args.ticker)
-    elif args.mode == "facts":
-        payload = get_company_facts(args.ticker)
-        payload = {
-            "ticker": payload["ticker"],
-            "cik": payload["cik"],
-            "entity_name": payload["entity_name"],
-            "namespaces": list(payload.get("facts", {}).keys()),
-            "retrieved_utc": payload.get("retrieved_utc"),
-        }
-    else:
-        payload = {
-            "ticker": args.ticker.strip().upper(),
-            "filings": get_filings_metadata(args.ticker),
-            "retrieved_utc": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
-        }
-
-    print(json.dumps(payload, indent=args.indent, sort_keys=False))
+    print(json.dumps(MODES[args.mode](args.ticker), indent=args.indent))
 
 
 if __name__ == "__main__":
-    _main()
+    main()
