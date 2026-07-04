@@ -1,4 +1,4 @@
-import jwt from "jsonwebtoken";
+import * as jwt from "jsonwebtoken";
 
 export interface SessionPayload {
   userId: string;
