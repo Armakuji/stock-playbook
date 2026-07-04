@@ -128,26 +128,42 @@ function fmtTradeCount(n: number): string {
 
 // ── API helpers ───────────────────────────────────────────────────────────────
 
-async function apiSave(trade: Trade) {
-  const res = await fetch("/journal/api", {
-    method: "POST", headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ action: "save", trade }),
-  });
-  if (!res.ok) {
-    const body = await res.json().catch(() => ({})) as { error?: string };
-    throw new Error(body.error ?? `Save failed (${res.status})`);
-  }
+async function readError(res: Response, fallback: string): Promise<string> {
+  const body = (await res.json().catch(() => ({}))) as { message?: string | string[] };
+  if (Array.isArray(body.message)) return body.message.join(", ");
+  return body.message ?? fallback;
 }
 
-async function apiDelete(id: string) {
-  const res = await fetch("/journal/api", {
+async function apiCreate(trade: Trade): Promise<Trade> {
+  const res = await fetch("/api/journal/trades", {
     method: "POST", headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ action: "delete", id }),
+    body: JSON.stringify(trade),
   });
-  if (!res.ok) {
-    const body = await res.json().catch(() => ({})) as { error?: string };
-    throw new Error(body.error ?? `Delete failed (${res.status})`);
-  }
+  if (!res.ok) throw new Error(await readError(res, `Create failed (${res.status})`));
+  return res.json();
+}
+
+async function apiUpdate(trade: Trade): Promise<Trade> {
+  const res = await fetch(`/api/journal/trades/${trade.id}`, {
+    method: "PATCH", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(trade),
+  });
+  if (!res.ok) throw new Error(await readError(res, `Update failed (${res.status})`));
+  return res.json();
+}
+
+async function apiAddExit(tradeId: string, exit: TradeExit): Promise<Trade> {
+  const res = await fetch(`/api/journal/trades/${tradeId}/exits`, {
+    method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(exit),
+  });
+  if (!res.ok) throw new Error(await readError(res, `Exit failed (${res.status})`));
+  return res.json();
+}
+
+async function apiDelete(id: string): Promise<void> {
+  const res = await fetch(`/api/journal/trades/${id}`, { method: "DELETE" });
+  if (!res.ok) throw new Error(await readError(res, `Delete failed (${res.status})`));
 }
 
 // ── Sub-components ────────────────────────────────────────────────────────────
@@ -433,7 +449,11 @@ function TradeForm({ initial, reportOptions, reportsByTicker, onSave, onCancel }
 
 // ── Exit Form ─────────────────────────────────────────────────────────────────
 
-function ExitForm({ trade, onClose }: { trade: Trade; onClose: (updated: Trade) => void }) {
+function ExitForm({ trade, onSubmit, onCancel }: {
+  trade: Trade;
+  onSubmit: (exit: TradeExit) => void;
+  onCancel: () => void;
+}) {
   const exitedSoFar = trade.exits.reduce((s, e) => s + e.shares, 0);
   const remaining = trade.shares - exitedSoFar;
 
@@ -452,18 +472,7 @@ function ExitForm({ trade, onClose }: { trade: Trade; onClose: (updated: Trade) 
       alert(`Cannot exit more than ${fmtShares(remaining)} shares remaining.`);
       return;
     }
-    const exit: TradeExit = {
-      date, price: parseFloat(price), shares: exitShares, note: note || undefined,
-    };
-    const newExits = [...trade.exits, exit];
-    const totalExited = newExits.reduce((s, e) => s + e.shares, 0);
-    const updated: Trade = {
-      ...trade,
-      exits: newExits,
-      status: totalExited >= trade.shares ? "closed" : "open",
-      realizedPnL: newExits.reduce((s, e) => s + e.shares * (e.price - trade.entryPrice), 0),
-    };
-    onClose(updated);
+    onSubmit({ date, price: parseFloat(price), shares: exitShares, note: note || undefined });
   }
 
   return (
@@ -489,7 +498,7 @@ function ExitForm({ trade, onClose }: { trade: Trade; onClose: (updated: Trade) 
         <button onClick={submit} style={{ padding: "6px 14px", borderRadius: 7, border: "none", background: "#f59e0b", color: "#000", fontWeight: 800, fontSize: 12, cursor: "pointer", fontFamily: "var(--font-mono, monospace)" }}>
           Log Exit
         </button>
-        <button onClick={() => onClose(trade)} style={{ padding: "6px 14px", borderRadius: 7, border: "1px solid var(--border)", background: "transparent", color: "var(--muted)", fontSize: 12, cursor: "pointer", fontFamily: "var(--font-mono, monospace)" }}>
+        <button onClick={onCancel} style={{ padding: "6px 14px", borderRadius: 7, border: "1px solid var(--border)", background: "transparent", color: "var(--muted)", fontSize: 12, cursor: "pointer", fontFamily: "var(--font-mono, monospace)" }}>
           Cancel
         </button>
       </div>
@@ -546,14 +555,14 @@ function ValidatorSection({ result, generatedAt }: { result: ValidatorResult; ge
   );
 }
 
-function TradeRow({ trade, priceInfo, validatorResult, validationGeneratedAt, onEdit, onDelete, onSaveExit }: {
+function TradeRow({ trade, priceInfo, validatorResult, validationGeneratedAt, onEdit, onDelete, onAddExit }: {
   trade: Trade;
   priceInfo: PriceInfo | null;
   validatorResult?: ValidatorResult;
   validationGeneratedAt?: string;
   onEdit: () => void;
   onDelete: () => void;
-  onSaveExit: (updated: Trade) => void;
+  onAddExit: (exit: TradeExit) => void;
 }) {
   const [expanded, setExpanded] = useState(false);
   const [showExitForm, setShowExitForm] = useState(false);
@@ -914,7 +923,8 @@ function TradeRow({ trade, priceInfo, validatorResult, validationGeneratedAt, on
           {showExitForm && (
             <ExitForm
               trade={trade}
-              onClose={(updated) => { setShowExitForm(false); onSaveExit(updated); }}
+              onSubmit={(exit) => { setShowExitForm(false); onAddExit(exit); }}
+              onCancel={() => setShowExitForm(false)}
             />
           )}
 
@@ -1024,16 +1034,26 @@ export function JournalContent({ initialTrades, stats, reportOptions = [], price
       alert("Please enter a share amount greater than 0.");
       return;
     }
+    const isNew = !trades.some((t) => t.id === trade.id);
     try {
-      await apiSave(trade);
+      const saved = isNew ? await apiCreate(trade) : await apiUpdate(trade);
       setTrades((prev) => {
-        const idx = prev.findIndex((t) => t.id === trade.id);
-        return idx >= 0 ? prev.map((t) => t.id === trade.id ? trade : t) : [...prev, trade];
+        const idx = prev.findIndex((t) => t.id === saved.id);
+        return idx >= 0 ? prev.map((t) => (t.id === saved.id ? saved : t)) : [...prev, saved];
       });
       setShowForm(false);
       setEditTrade(null);
     } catch (err) {
       alert(err instanceof Error ? err.message : "Failed to save trade");
+    }
+  }, [trades]);
+
+  const handleAddExit = useCallback(async (tradeId: string, exit: TradeExit) => {
+    try {
+      const updated = await apiAddExit(tradeId, exit);
+      setTrades((prev) => prev.map((t) => (t.id === tradeId ? updated : t)));
+    } catch (err) {
+      alert(err instanceof Error ? err.message : "Failed to log exit");
     }
   }, []);
 
@@ -1191,7 +1211,7 @@ export function JournalContent({ initialTrades, stats, reportOptions = [], price
               validationGeneratedAt={validation?.generatedAt}
               onEdit={() => { setEditTrade(trade); setShowForm(false); window.scrollTo({ top: 0, behavior: "smooth" }); }}
               onDelete={() => handleDelete(trade.id)}
-              onSaveExit={(updated) => handleSave(updated)}
+              onAddExit={(exit) => handleAddExit(trade.id, exit)}
             />
           ))}
         </div>
