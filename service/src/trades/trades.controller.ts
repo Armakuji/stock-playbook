@@ -5,6 +5,7 @@ import { TradesService } from "./trades.service";
 import { CreateTradeDto } from "./dto/create-trade.dto";
 import { UpdateTradeDto } from "./dto/update-trade.dto";
 import { CreateExitDto } from "./dto/create-exit.dto";
+import { serializeTrade } from "./serialize-trade";
 
 @Controller("trades")
 @UseGuards(SessionGuard)
@@ -12,23 +13,24 @@ export class TradesController {
   constructor(private readonly trades: TradesService) {}
 
   @Get()
-  findAll(@CurrentUser() userId: string) {
-    return this.trades.findAll(userId);
+  async findAll(@CurrentUser() userId: string) {
+    const trades = await this.trades.findAll(userId);
+    return trades.map(serializeTrade);
   }
 
   @Get(":id")
-  findOne(@Param("id") id: string, @CurrentUser() userId: string) {
-    return this.trades.findOne(id, userId);
+  async findOne(@Param("id") id: string, @CurrentUser() userId: string) {
+    return serializeTrade(await this.trades.findOne(id, userId));
   }
 
   @Post()
-  create(@Body() dto: CreateTradeDto, @CurrentUser() userId: string) {
-    return this.trades.create(userId, dto);
+  async create(@Body() dto: CreateTradeDto, @CurrentUser() userId: string) {
+    return serializeTrade(await this.trades.create(userId, dto));
   }
 
   @Patch(":id")
-  update(@Param("id") id: string, @Body() dto: UpdateTradeDto, @CurrentUser() userId: string) {
-    return this.trades.update(id, userId, dto);
+  async update(@Param("id") id: string, @Body() dto: UpdateTradeDto, @CurrentUser() userId: string) {
+    return serializeTrade(await this.trades.update(id, userId, dto));
   }
 
   @Delete(":id")
@@ -38,7 +40,7 @@ export class TradesController {
   }
 
   @Post(":id/exits")
-  addExit(@Param("id") id: string, @Body() dto: CreateExitDto, @CurrentUser() userId: string) {
-    return this.trades.addExit(id, userId, dto);
+  async addExit(@Param("id") id: string, @Body() dto: CreateExitDto, @CurrentUser() userId: string) {
+    return serializeTrade(await this.trades.addExit(id, userId, dto));
   }
 }
