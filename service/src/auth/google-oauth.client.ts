@@ -9,7 +9,7 @@ export class GoogleOAuthClient {
     clientSecret: string,
     redirectUri: string,
   ) {
-    this.client = new OAuth2Client(clientId, clientSecret, redirectUri);
+    this.client = new OAuth2Client({ clientId, clientSecret, redirectUri });
   }
 
   generateAuthUrl(state: string): string {
