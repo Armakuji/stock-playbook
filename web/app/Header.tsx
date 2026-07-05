@@ -74,9 +74,79 @@ function initials(user: CurrentUser): string {
 
 const AVATAR_SIZE = 32;
 
-const avatarCircleStyle: React.CSSProperties = {
-  width: AVATAR_SIZE, height: AVATAR_SIZE, borderRadius: "50%", flexShrink: 0, display: "block",
-};
+function Avatar({ user, size, showImg, onError }: { user: CurrentUser; size: number; showImg: boolean; onError: () => void }) {
+  return showImg ? (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src={user.avatarUrl!}
+      alt=""
+      width={size}
+      height={size}
+      referrerPolicy="no-referrer"
+      onError={onError}
+      style={{ width: size, height: size, borderRadius: "50%", flexShrink: 0, display: "block", objectFit: "cover" }}
+    />
+  ) : (
+    <span style={{
+      width: size, height: size, borderRadius: "50%", display: "flex", background: "#3b82f6", color: "#fff",
+      alignItems: "center", justifyContent: "center", fontSize: Math.round(size * 0.4), fontWeight: 800, flexShrink: 0,
+    }}>
+      {initials(user)}
+    </span>
+  );
+}
+
+// Mobile drawer: avatar + name + email + Logout all visible immediately —
+// no click-through-a-dropdown once the hamburger is already open (that was
+// three taps deep: hamburger → avatar → Logout). Desktop keeps the
+// avatar-then-dropdown pattern in AuthWidget below.
+function MobileProfileSection({ user, th, pathname }: { user: AuthState; th: boolean; pathname: string }) {
+  const [imgError, setImgError] = useState(false);
+
+  if (user === "loading") return null;
+
+  if (user === null) {
+    return (
+      <a
+        href={loginUrl(pathname)}
+        style={{
+          display: "block", textAlign: "center", fontSize: 14, fontWeight: 800, padding: "10px 12px", borderRadius: 8,
+          background: "#10b981", color: "#fff", textDecoration: "none", fontFamily: "var(--font-mono, monospace)",
+        }}
+      >
+        {th ? "เข้าสู่ระบบ" : "Login"}
+      </a>
+    );
+  }
+
+  const showImg = !!user.avatarUrl && !imgError;
+
+  return (
+    <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+      <Avatar user={user} size={36} showImg={showImg} onError={() => setImgError(true)} />
+      <div style={{ flex: 1, minWidth: 0 }}>
+        {user.name && (
+          <div style={{ fontSize: 13, fontWeight: 800, color: "var(--text)", fontFamily: "var(--font-mono, monospace)", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+            {user.name}
+          </div>
+        )}
+        <div style={{ fontSize: 11, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+          {user.email}
+        </div>
+      </div>
+      <button
+        onClick={() => logout()}
+        style={{
+          flexShrink: 0, padding: "6px 12px", borderRadius: 7, border: "1px solid var(--border)",
+          background: "transparent", color: "var(--muted)", fontSize: 11, fontWeight: 700, cursor: "pointer",
+          fontFamily: "var(--font-mono, monospace)",
+        }}
+      >
+        {th ? "ออก" : "Logout"}
+      </button>
+    </div>
+  );
+}
 
 function AuthWidget({ user, th, pathname }: { user: AuthState; th: boolean; pathname: string }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -127,25 +197,7 @@ function AuthWidget({ user, th, pathname }: { user: AuthState; th: boolean; path
           border: "none", padding: 0, cursor: "pointer", borderRadius: "50%", lineHeight: 0,
         }}
       >
-        {showImg ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
-            src={user.avatarUrl!}
-            alt=""
-            width={AVATAR_SIZE}
-            height={AVATAR_SIZE}
-            referrerPolicy="no-referrer"
-            onError={() => setImgError(true)}
-            style={{ ...avatarCircleStyle, objectFit: "cover" }}
-          />
-        ) : (
-          <span style={{
-            ...avatarCircleStyle, display: "flex", background: "#3b82f6", color: "#fff",
-            alignItems: "center", justifyContent: "center", fontSize: 13, fontWeight: 800,
-          }}>
-            {initials(user)}
-          </span>
-        )}
+        <Avatar user={user} size={AVATAR_SIZE} showImg={showImg} onError={() => setImgError(true)} />
       </button>
       {menuOpen && (
         <div style={{
@@ -278,7 +330,7 @@ export function Header({ lastUpdated }: { lastUpdated: string }) {
           </Link>
           <div style={{ height: 1, background: "var(--border)", margin: "6px 0" }} />
           <div style={{ padding: "2px 6px" }}>
-            <AuthWidget user={user} th={th} pathname={pathname} />
+            <MobileProfileSection user={user} th={th} pathname={pathname} />
           </div>
           <div style={{ height: 1, background: "var(--border)", margin: "6px 0" }} />
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 8, marginTop: 4 }}>
