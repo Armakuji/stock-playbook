@@ -166,11 +166,6 @@ async function apiDelete(id: string): Promise<void> {
   if (!res.ok) throw new Error(await readError(res, `Delete failed (${res.status})`));
 }
 
-async function apiLogout(): Promise<void> {
-  await fetch("/api/journal/auth/logout", { method: "POST" });
-  window.location.href = "/journal";
-}
-
 // ── Sub-components ────────────────────────────────────────────────────────────
 
 function StatCard({ label, value, color, sub }: { label: string; value: string; color?: string; sub?: string }) {
@@ -1088,17 +1083,10 @@ export function JournalContent({ initialTrades, stats, reportOptions = [], price
           50%       { opacity: 0.6; transform: scale(1.2); }
         }
       `}</style>
-      {/* Private badge + header */}
+      {/* Header */}
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 8, flexWrap: "wrap", gap: 10 }}>
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
           <Link href="/catalyst" style={{ fontSize: 13, color: "var(--muted)", textDecoration: "none" }}>← Catalyst</Link>
-          <span style={{
-            fontSize: 10, fontWeight: 800, padding: "3px 10px", borderRadius: 6,
-            background: "#ef444418", color: "#ef4444", border: "1px solid #ef444430",
-            fontFamily: "var(--font-mono, monospace)", letterSpacing: "0.5px",
-          }}>
-            🔒 PRIVATE — local only
-          </span>
           {/* Live price status */}
           {priceStatus === "loading" && (
             <span style={{ fontSize: 10, color: "#f59e0b", fontFamily: "var(--font-mono, monospace)", fontWeight: 700 }}>
@@ -1123,12 +1111,6 @@ export function JournalContent({ initialTrades, stats, reportOptions = [], price
           >
             + Log Trade
           </button>
-          <button
-            onClick={() => apiLogout()}
-            style={{ padding: "8px 14px", borderRadius: 8, border: "1px solid var(--border)", background: "transparent", color: "var(--muted)", fontWeight: 700, fontSize: 13, cursor: "pointer", fontFamily: "var(--font-mono, monospace)" }}
-          >
-            Logout
-          </button>
         </div>
       </div>
 
@@ -1136,7 +1118,7 @@ export function JournalContent({ initialTrades, stats, reportOptions = [], price
         Trade Journal
       </h1>
       <p style={{ fontSize: 12, color: "var(--muted)", margin: "0 0 24px", fontFamily: "var(--font-mono, monospace)" }}>
-        {trades.length} trades · private/journal.json · never committed to git
+        {trades.length} trades
       </p>
 
       {/* Stats grid */}

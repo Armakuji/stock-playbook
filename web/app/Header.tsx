@@ -1,9 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useLang } from "@/lib/LanguageContext";
 import type { Lang } from "@/lib/i18n";
+import { fetchCurrentUser, logout, loginUrl, type CurrentUser } from "@/lib/auth-client";
 
 const STRATEGY = [
   { href: "/dca",      label: "💧 DCA",      grad: "linear-gradient(90deg, #38bdf8, #3b82f6)", titleEn: "Water · Quality-core · long-term accumulate", titleTh: "ธาตุน้ำ · Quality-core · ถือยาว สะสม" },
@@ -63,10 +65,131 @@ function LangToggle({ lang, setLang }: { lang: Lang; setLang: (l: Lang) => void 
   );
 }
 
+// ── Auth widget: avatar + logout dropdown, or a Login button ────────────────
+type AuthState = CurrentUser | null | "loading";
+
+function initials(user: CurrentUser): string {
+  return (user.name?.trim()?.[0] ?? user.email[0]).toUpperCase();
+}
+
+const AVATAR_SIZE = 32;
+
+const avatarCircleStyle: React.CSSProperties = {
+  width: AVATAR_SIZE, height: AVATAR_SIZE, borderRadius: "50%", flexShrink: 0, display: "block",
+};
+
+function AuthWidget({ user, th, pathname }: { user: AuthState; th: boolean; pathname: string }) {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [imgError, setImgError] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!menuOpen) return;
+    function handleClick(e: MouseEvent) {
+      if (ref.current && e.target instanceof Node && !ref.current.contains(e.target)) setMenuOpen(false);
+    }
+    document.addEventListener("mousedown", handleClick);
+    return () => document.removeEventListener("mousedown", handleClick);
+  }, [menuOpen]);
+
+  if (user === "loading") return null;
+
+  if (user === null) {
+    return (
+      // Plain <a>, not next/link's <Link> — this isn't an app route, it's a
+      // rewrite-proxied redirect straight into the OAuth flow. Link's client-side
+      // router tries to RSC-prefetch every href, which fails against this URL
+      // ("Failed to fetch RSC payload") before falling back to a full navigation
+      // anyway — skip the failed attempt and navigate directly.
+      <a
+        href={loginUrl(pathname)}
+        style={{
+          fontSize: 11, fontWeight: 800, padding: "5px 12px", borderRadius: 7,
+          background: "#10b981", color: "#fff", textDecoration: "none",
+          fontFamily: "var(--font-mono, monospace)", letterSpacing: "0.3px", whiteSpace: "nowrap",
+        }}
+      >
+        {th ? "เข้าสู่ระบบ" : "Login"}
+      </a>
+    );
+  }
+
+  const showImg = !!user.avatarUrl && !imgError;
+
+  return (
+    <div ref={ref} style={{ position: "relative" }}>
+      <button
+        onClick={() => setMenuOpen((o) => !o)}
+        aria-expanded={menuOpen}
+        aria-label={th ? "เมนูบัญชี" : "Account menu"}
+        style={{
+          display: "flex", alignItems: "center", background: "transparent",
+          border: "none", padding: 0, cursor: "pointer", borderRadius: "50%", lineHeight: 0,
+        }}
+      >
+        {showImg ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={user.avatarUrl!}
+            alt=""
+            width={AVATAR_SIZE}
+            height={AVATAR_SIZE}
+            referrerPolicy="no-referrer"
+            onError={() => setImgError(true)}
+            style={{ ...avatarCircleStyle, objectFit: "cover" }}
+          />
+        ) : (
+          <span style={{
+            ...avatarCircleStyle, display: "flex", background: "#3b82f6", color: "#fff",
+            alignItems: "center", justifyContent: "center", fontSize: 13, fontWeight: 800,
+          }}>
+            {initials(user)}
+          </span>
+        )}
+      </button>
+      {menuOpen && (
+        <div style={{
+          position: "absolute", top: "calc(100% + 8px)", right: 0, background: "var(--card)",
+          border: "1px solid var(--border)", borderRadius: 8, padding: 4, minWidth: 180, zIndex: 20,
+          boxShadow: "0 8px 24px rgba(0,0,0,0.25)",
+        }}>
+          <div style={{ padding: "8px 10px 6px" }}>
+            {user.name && (
+              <div style={{ fontSize: 13, fontWeight: 800, color: "var(--text)", fontFamily: "var(--font-mono, monospace)", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+                {user.name}
+              </div>
+            )}
+            <div style={{ fontSize: 11, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+              {user.email}
+            </div>
+          </div>
+          <div style={{ height: 1, background: "var(--border)", margin: "2px 0" }} />
+          <button
+            onClick={() => logout()}
+            style={{
+              display: "block", width: "100%", textAlign: "left", padding: "8px 10px", borderRadius: 6,
+              border: "none", background: "transparent", color: "var(--text)", cursor: "pointer",
+              fontSize: 12, fontFamily: "var(--font-mono, monospace)", fontWeight: 700,
+            }}
+          >
+            {th ? "ออกจากระบบ" : "Logout"}
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
+
 export function Header({ lastUpdated }: { lastUpdated: string }) {
   const [open, setOpen] = useState(false);
   const { lang, setLang } = useLang();
   const th = lang === "th";
+  const pathname = usePathname();
+  const [user, setUser] = useState<AuthState>("loading");
+
+  useEffect(() => {
+    fetchCurrentUser().then(setUser);
+  }, []);
 
   return (
     <header style={{ borderBottom: "1px solid var(--border)", backgroundColor: "var(--card)", position: "relative" }}>
@@ -100,6 +223,7 @@ export function Header({ lastUpdated }: { lastUpdated: string }) {
           <span style={{ display: "inline-block", width: 7, height: 7, borderRadius: "50%", background: "#10b981", animation: "livePulse 2s ease-in-out infinite", flexShrink: 0 }} />
           <span style={{ fontSize: 12, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>{th ? "อัปเดต" : "Updated"} {lastUpdated}</span>
           <LangToggle lang={lang} setLang={setLang} />
+          <AuthWidget user={user} th={th} pathname={pathname} />
         </div>
 
         {/* ── Mobile hamburger ── */}
@@ -152,6 +276,10 @@ export function Header({ lastUpdated }: { lastUpdated: string }) {
           <Link href="/journal" onClick={() => setOpen(false)} style={{ fontSize: 14, color: "#f59e0b", textDecoration: "none", fontFamily: "var(--font-mono, monospace)", fontWeight: 700, padding: "8px 6px" }}>
             📒 Journal
           </Link>
+          <div style={{ height: 1, background: "var(--border)", margin: "6px 0" }} />
+          <div style={{ padding: "2px 6px" }}>
+            <AuthWidget user={user} th={th} pathname={pathname} />
+          </div>
           <div style={{ height: 1, background: "var(--border)", margin: "6px 0" }} />
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 8, marginTop: 4 }}>
             <span style={{ display: "flex", alignItems: "center", gap: 8 }}>

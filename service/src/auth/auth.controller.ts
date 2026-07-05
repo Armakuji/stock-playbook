@@ -7,10 +7,13 @@ import { GoogleOAuthClient } from "./google-oauth.client";
 import { SessionGuard } from "./session.guard";
 import { CurrentUser } from "./current-user.decorator";
 import { signSession } from "./session.util";
+import { isSafeReturnPath } from "./safe-return-path";
 
 const OAUTH_STATE_COOKIE = "oauth_state";
+const OAUTH_RETURN_TO_COOKIE = "oauth_return_to";
 const SESSION_COOKIE = "session";
 const THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
+const DEFAULT_RETURN_PATH = "/journal";
 
 @Controller("auth")
 export class AuthController {
@@ -32,7 +35,7 @@ export class AuthController {
   }
 
   @Get("google")
-  google(@Res() res: Response) {
+  google(@Query("returnTo") returnTo: string | undefined, @Res() res: Response) {
     const state = randomUUID();
     res.cookie(OAUTH_STATE_COOKIE, state, {
       httpOnly: true,
@@ -40,6 +43,14 @@ export class AuthController {
       sameSite: "lax",
       maxAge: 5 * 60 * 1000,
     });
+    if (isSafeReturnPath(returnTo)) {
+      res.cookie(OAUTH_RETURN_TO_COOKIE, returnTo, {
+        httpOnly: true,
+        secure: true,
+        sameSite: "lax",
+        maxAge: 5 * 60 * 1000,
+      });
+    }
     res.redirect(this.googleClient().generateAuthUrl(state));
   }
 
@@ -52,21 +63,25 @@ export class AuthController {
     const user = await this.authService.findOrCreateUserFromGoogle(profile);
     const token = signSession({ userId: user.id }, this.config.get<string>("SESSION_SECRET")!);
 
+    const returnTo = req.cookies?.[OAUTH_RETURN_TO_COOKIE];
+    const returnPath = isSafeReturnPath(returnTo) ? returnTo : DEFAULT_RETURN_PATH;
+
     res.clearCookie(OAUTH_STATE_COOKIE);
+    res.clearCookie(OAUTH_RETURN_TO_COOKIE);
     res.cookie(SESSION_COOKIE, token, {
       httpOnly: true,
       secure: true,
       sameSite: "lax",
       maxAge: THIRTY_DAYS_MS,
     });
-    res.redirect(`${this.config.get<string>("WEB_ORIGIN")}/journal`);
+    res.redirect(`${this.config.get<string>("WEB_ORIGIN")}${returnPath}`);
   }
 
   @Get("me")
   @UseGuards(SessionGuard)
   async me(@CurrentUser() userId: string) {
     const user = await this.authService.getById(userId);
-    return { id: user.id, email: user.email, name: user.name, role: user.role, status: user.status };
+    return { id: user.id, email: user.email, name: user.name, avatarUrl: user.avatarUrl, role: user.role, status: user.status };
   }
 
   @Post("logout")
