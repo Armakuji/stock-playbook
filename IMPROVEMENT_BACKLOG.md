@@ -140,6 +140,13 @@ Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open N
 **ไฟล์:** `web/app/journal/JournalContent.tsx` · `service/src/trades/*` (exit guard, 409) · `web/lib/*` (apiLogout) · `service/src/auth/*` (backfill) — รายละเอียดเต็มใน `.worktrees/journal-api-phase1/.superpowers/sdd/progress.md`
 **เป้า:** เก็บครบ 5 จุด · จุดสำคัญสุดคือข้อ 2 (server ต้องไม่เชื่อ client) ควรทำก่อนเปิด public signup (Phase 2)
 
+## 17. Journal UI — auth-aware header (avatar/login/logout) + ลบ PRIVATE badge
+
+**ปัญหา:** login แล้วไม่มีอะไรบอกว่าใคร login อยู่ · ปุ่ม Logout ลอยอยู่ข้าง "+ Log Trade" ผิดที่ · ไม่มีปุ่ม Login บน header (ต้องเข้า /journal ก่อนถึงเจอ) · badge "🔒 PRIVATE — local only" + subtitle "private/journal.json · never committed to git" ยังโชว์อยู่ทั้งที่เป็น API/DB แล้ว (ทับกับ #16 ข้อ 1)
+**ทำ:** (1) Header แสดง avatar + name จาก `GET /auth/me` (fallback = ตัวอักษรแรกของ email — user ที่ seed ไว้อาจไม่มี name/avatarUrl จนกว่า #16 ข้อ 5 จะแก้ backfill) (2) กด avatar → dropdown → Logout (ย้ายจากปุ่มเดิม) (3) ยังไม่ login → ปุ่ม "Login" บน header ทุกหน้า → เริ่ม OAuth flow แล้ว redirect กลับหน้าเดิม (4) ลบ PRIVATE badge + แก้ subtitle เป็นจำนวน trades เฉย ๆ
+**ไฟล์:** `web/app/Header.tsx` (avatar/dropdown/login) · `web/app/journal/JournalContent.tsx` (ลบ badge บรรทัด ~1139 + ปุ่ม logout เดิม) · i18n EN/TH สำหรับ label ใหม่ (`web/lib/i18n.ts`)
+**เป้า:** เปิดหน้าไหนก็รู้สถานะ login · logout อยู่ใต้ avatar dropdown ตาม convention ปกติ · ไม่มีร่องรอย "local only" เหลือ
+
 ---
 
 ## ยังไม่เลือกทำ (ไว้พิจารณาทีหลัง)
