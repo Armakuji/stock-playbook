@@ -31,7 +31,6 @@ export default function HomePage() {
       airCount={catalyst.length}
       fireCount={turbo.length}
       lastUpdated={formatDate(latest)}
-      isLocal={!process.env.VERCEL}
     />
   );
 }
