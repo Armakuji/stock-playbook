@@ -3,6 +3,7 @@
 import { useState, useCallback, useEffect } from "react";
 import type { LivePrice } from "@/app/api/prices/route";
 import Link from "next/link";
+import { useLang } from "@/lib/LanguageContext";
 import { Trade, CatalystType, TradeExit, ValidatorResult, JournalValidation } from "@/lib/journal-types";
 import { JournalStats, realizedPnL as calcPnL, holdDays } from "@/lib/journal-math";
 
@@ -1027,6 +1028,8 @@ export function JournalContent({ initialTrades, stats, reportOptions = [], price
   reportsByTicker?: Record<string, ReportDateOption[]>;
   validation?: JournalValidation | null;
 }) {
+  const { lang } = useLang();
+  const th = lang === "th";
   const [trades, setTrades] = useState<Trade[]>(initialTrades);
   const [showForm, setShowForm] = useState(false);
   const [editTrade, setEditTrade] = useState<Trade | null>(null);
@@ -1157,7 +1160,7 @@ export function JournalContent({ initialTrades, stats, reportOptions = [], price
       {/* Header */}
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 8, flexWrap: "wrap", gap: 10 }}>
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-          <Link href="/catalyst" style={{ fontSize: 13, color: "var(--muted)", textDecoration: "none" }}>← Catalyst</Link>
+          <Link href="/" style={{ fontSize: 13, color: "var(--muted)", textDecoration: "none" }}>{th ? "← หน้าหลัก" : "← Home"}</Link>
           {/* Live price status */}
           {priceStatus === "loading" && (
             <span style={{ fontSize: 10, color: "#f59e0b", fontFamily: "var(--font-mono, monospace)", fontWeight: 700 }}>
