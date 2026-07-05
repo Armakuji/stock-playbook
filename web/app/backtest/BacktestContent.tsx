@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from "react";
 import Link from "next/link";
+import { useLang } from "@/lib/LanguageContext";
 import { BacktestEntry, BacktestStats, Checkpoint } from "@/lib/backtest";
 import { NearMissOutcome } from "@/lib/near-miss";
 import { NorthStar } from "@/lib/north-star";
@@ -351,6 +352,8 @@ function NearMissSection({ nearMisses, pickAvg30 }: { nearMisses: NearMissOutcom
 // ── Main ──────────────────────────────────────────────────────────────────────
 
 export function BacktestContent({ entries, stats, nearMisses, northStar }: { entries: BacktestEntry[]; stats: BacktestStats; nearMisses: NearMissOutcome[]; northStar: NorthStar }) {
+  const { lang } = useLang();
+  const th = lang === "th";
   const pick30 = entries.flatMap((e) => e.checkpoints.filter((c) => c.days === 30 && c.actualPct !== null).map((c) => c.actualPct as number));
   const pickAvg30 = pick30.length ? pick30.reduce((s, v) => s + v, 0) / pick30.length : null;
   // Items that are past due but have no cached price yet
@@ -376,7 +379,7 @@ export function BacktestContent({ entries, stats, nearMisses, northStar }: { ent
     <div style={{ maxWidth: 1100, margin: "0 auto" }}>
       {/* Nav */}
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 20, flexWrap: "wrap", gap: 10 }}>
-        <Link href="/catalyst" style={{ fontSize: 13, color: "var(--muted)", textDecoration: "none" }}>← Catalyst</Link>
+        <Link href="/" style={{ fontSize: 13, color: "var(--muted)", textDecoration: "none" }}>{th ? "← หน้าหลัก" : "← Home"}</Link>
       </div>
 
       {/* Header */}
