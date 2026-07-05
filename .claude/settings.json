@@ -1,0 +1,66 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Edit",
+      "Write",
+      "Glob",
+      "Grep",
+      "WebSearch",
+      "WebFetch",
+
+      "Bash(ls *)",
+      "Bash(cat *)",
+      "Bash(head *)",
+      "Bash(tail *)",
+      "Bash(wc *)",
+      "Bash(find *)",
+      "Bash(grep *)",
+      "Bash(rg *)",
+      "Bash(awk *)",
+      "Bash(diff *)",
+      "Bash(du *)",
+      "Bash(pwd)",
+      "Bash(which *)",
+      "Bash(echo *)",
+      "Bash(mkdir *)",
+      "Bash(cp *)",
+      "Bash(mv *)",
+      "Bash(cd *)",
+      "Bash(lsof *)",
+      "Bash(xargs *)",
+
+      "Bash(rtk *)",
+
+      "Bash(node *)",
+      "Bash(npm *)",
+      "Bash(npx *)",
+      "Bash(jest *)",
+      "Bash(python3 *)",
+      "Bash(openssl rand *)",
+      "Bash(docker *)",
+      "Bash(curl *)",
+
+      "Bash(git status *)",
+      "Bash(git log *)",
+      "Bash(git diff *)",
+      "Bash(git show *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(git pull *)",
+      "Bash(git checkout *)",
+      "Bash(git branch *)",
+      "Bash(git mv *)",
+      "Bash(git rm *)",
+      "Bash(git stash *)",
+      "Bash(git rev-parse *)",
+      "Bash(git worktree *)"
+    ],
+    "deny": [
+      "Bash(sudo *)",
+      "Read(./service/.env)",
+      "Read(./private/**)"
+    ]
+  }
+}
