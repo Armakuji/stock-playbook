@@ -1,5 +1,6 @@
 import { Injectable, NotFoundException } from "@nestjs/common";
 import { Trade } from "@prisma/client";
+import { InjectPinoLogger, PinoLogger } from "nestjs-pino";
 import { PrismaService } from "../prisma/prisma.service";
 import { CreateTradeDto } from "./dto/create-trade.dto";
 import { UpdateTradeDto } from "./dto/update-trade.dto";
@@ -7,7 +8,10 @@ import { CreateExitDto } from "./dto/create-exit.dto";
 
 @Injectable()
 export class TradesService {
-  constructor(private readonly prisma: PrismaService) {}
+  constructor(
+    private readonly prisma: PrismaService,
+    @InjectPinoLogger(TradesService.name) private readonly logger: PinoLogger,
+  ) {}
 
   findAll(userId: string) {
     return this.prisma.trade.findMany({
@@ -23,8 +27,8 @@ export class TradesService {
     return trade;
   }
 
-  create(userId: string, dto: CreateTradeDto) {
-    return this.prisma.trade.create({
+  async create(userId: string, dto: CreateTradeDto) {
+    const trade = await this.prisma.trade.create({
       data: {
         ...(dto.id ? { id: dto.id } : {}),
         userId,
@@ -41,11 +45,13 @@ export class TradesService {
       },
       include: { exits: true },
     });
+    this.logger.info({ userId, tradeId: trade.id, ticker: trade.ticker }, "trade created");
+    return trade;
   }
 
   async update(id: string, userId: string, dto: UpdateTradeDto) {
     await this.findOne(id, userId);
-    return this.prisma.trade.update({
+    const trade = await this.prisma.trade.update({
       where: { id },
       data: {
         ...(dto.ticker !== undefined && { ticker: dto.ticker.toUpperCase() }),
@@ -60,11 +66,14 @@ export class TradesService {
       },
       include: { exits: true },
     });
+    this.logger.info({ userId, tradeId: id, ticker: trade.ticker }, "trade updated");
+    return trade;
   }
 
   async remove(id: string, userId: string): Promise<void> {
-    await this.findOne(id, userId);
+    const trade = await this.findOne(id, userId);
     await this.prisma.trade.delete({ where: { id } });
+    this.logger.info({ userId, tradeId: id, ticker: trade.ticker }, "trade deleted");
   }
 
   async addExit(id: string, userId: string, dto: CreateExitDto) {

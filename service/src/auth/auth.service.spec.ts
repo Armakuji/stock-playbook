@@ -1,3 +1,4 @@
+import { PinoLogger } from "nestjs-pino";
 import { AuthService, GoogleProfile } from "./auth.service";
 import { PrismaService } from "../prisma/prisma.service";
 
@@ -6,6 +7,10 @@ function makePrismaMock() {
     authIdentity: { findUnique: jest.fn(), create: jest.fn() },
     user: { findUnique: jest.fn(), findUniqueOrThrow: jest.fn(), create: jest.fn(), update: jest.fn() },
   } as unknown as PrismaService;
+}
+
+function makeLoggerMock() {
+  return { info: jest.fn(), warn: jest.fn(), error: jest.fn() } as unknown as PinoLogger;
 }
 
 const profile: GoogleProfile = {
@@ -27,7 +32,7 @@ describe("AuthService.findOrCreateUserFromGoogle", () => {
       avatarUrl: "https://example.com/existing.jpg",
     });
 
-    const service = new AuthService(prisma);
+    const service = new AuthService(prisma, makeLoggerMock());
     const user = await service.findOrCreateUserFromGoogle(profile);
 
     expect(user.id).toBe("user-1");
@@ -45,7 +50,7 @@ describe("AuthService.findOrCreateUserFromGoogle", () => {
     });
     (prisma.authIdentity.create as jest.Mock).mockResolvedValue({});
 
-    const service = new AuthService(prisma);
+    const service = new AuthService(prisma, makeLoggerMock());
     const user = await service.findOrCreateUserFromGoogle(profile);
 
     expect(user.id).toBe("seeded-user");
@@ -62,7 +67,7 @@ describe("AuthService.findOrCreateUserFromGoogle", () => {
     (prisma.user.create as jest.Mock).mockResolvedValue({ id: "new-user", email: profile.email });
     (prisma.authIdentity.create as jest.Mock).mockResolvedValue({});
 
-    const service = new AuthService(prisma);
+    const service = new AuthService(prisma, makeLoggerMock());
     const user = await service.findOrCreateUserFromGoogle(profile);
 
     expect(user.id).toBe("new-user");
@@ -77,7 +82,7 @@ describe("AuthService.findOrCreateUserFromGoogle", () => {
     (prisma.user.create as jest.Mock).mockResolvedValue({ id: "new-user-2", email: profile.email });
     (prisma.authIdentity.create as jest.Mock).mockResolvedValue({});
 
-    const service = new AuthService(prisma);
+    const service = new AuthService(prisma, makeLoggerMock());
     await service.findOrCreateUserFromGoogle({ ...profile, emailVerified: false });
 
     expect(prisma.user.findUnique).not.toHaveBeenCalled();
@@ -100,7 +105,7 @@ describe("AuthService.findOrCreateUserFromGoogle", () => {
       avatarUrl: profile.picture,
     });
 
-    const service = new AuthService(prisma);
+    const service = new AuthService(prisma, makeLoggerMock());
     const user = await service.findOrCreateUserFromGoogle(profile);
 
     expect(prisma.user.update).toHaveBeenCalledWith({
@@ -121,7 +126,7 @@ describe("AuthService.findOrCreateUserFromGoogle", () => {
       avatarUrl: "https://example.com/existing.jpg",
     });
 
-    const service = new AuthService(prisma);
+    const service = new AuthService(prisma, makeLoggerMock());
     await service.findOrCreateUserFromGoogle(profile);
 
     expect(prisma.user.update).not.toHaveBeenCalled();
@@ -144,7 +149,7 @@ describe("AuthService.findOrCreateUserFromGoogle", () => {
     });
     (prisma.authIdentity.create as jest.Mock).mockResolvedValue({});
 
-    const service = new AuthService(prisma);
+    const service = new AuthService(prisma, makeLoggerMock());
     const user = await service.findOrCreateUserFromGoogle(profile);
 
     expect(prisma.user.update).toHaveBeenCalledWith({
@@ -153,5 +158,22 @@ describe("AuthService.findOrCreateUserFromGoogle", () => {
     });
     expect(user.name).toBe(profile.name);
     expect(user.avatarUrl).toBe(profile.picture);
+  });
+
+  it("logs 'login success' with userId and provider (no email/profile data)", async () => {
+    const prisma = makePrismaMock();
+    (prisma.authIdentity.findUnique as jest.Mock).mockResolvedValue({ userId: "user-1" });
+    (prisma.user.findUniqueOrThrow as jest.Mock).mockResolvedValue({
+      id: "user-1",
+      email: profile.email,
+      name: "Already Set",
+      avatarUrl: "https://example.com/existing.jpg",
+    });
+    const logger = makeLoggerMock();
+    const service = new AuthService(prisma, logger);
+
+    await service.findOrCreateUserFromGoogle(profile);
+
+    expect(logger.info).toHaveBeenCalledWith({ userId: "user-1", provider: "google" }, "login success");
   });
 });

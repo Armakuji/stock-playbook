@@ -1,4 +1,5 @@
 import { Injectable } from "@nestjs/common";
+import { InjectPinoLogger, PinoLogger } from "nestjs-pino";
 import { PrismaService } from "../prisma/prisma.service";
 import { User } from "@prisma/client";
 
@@ -12,33 +13,41 @@ export interface GoogleProfile {
 
 @Injectable()
 export class AuthService {
-  constructor(private readonly prisma: PrismaService) {}
+  constructor(
+    private readonly prisma: PrismaService,
+    @InjectPinoLogger(AuthService.name) private readonly logger: PinoLogger,
+  ) {}
 
   async findOrCreateUserFromGoogle(profile: GoogleProfile): Promise<User> {
     const identity = await this.prisma.authIdentity.findUnique({
       where: { provider_subject: { provider: "google", subject: profile.sub } },
     });
+
+    let user: User;
     if (identity) {
-      const user = await this.prisma.user.findUniqueOrThrow({ where: { id: identity.userId } });
-      return this.backfillProfile(user, profile);
-    }
-
-    // Auto-link to an existing user by email ONLY when Google asserts the email
-    // is verified — prevents an unverified email claim from hijacking an account.
-    let user = profile.emailVerified ? await this.prisma.user.findUnique({ where: { email: profile.email } }) : null;
-
-    if (!user) {
-      user = await this.prisma.user.create({
-        data: { email: profile.email, name: profile.name, avatarUrl: profile.picture },
-      });
+      const existing = await this.prisma.user.findUniqueOrThrow({ where: { id: identity.userId } });
+      user = await this.backfillProfile(existing, profile);
     } else {
-      user = await this.backfillProfile(user, profile);
+      // Auto-link to an existing user by email ONLY when Google asserts the email
+      // is verified — prevents an unverified email claim from hijacking an account.
+      let existing = profile.emailVerified ? await this.prisma.user.findUnique({ where: { email: profile.email } }) : null;
+
+      if (!existing) {
+        existing = await this.prisma.user.create({
+          data: { email: profile.email, name: profile.name, avatarUrl: profile.picture },
+        });
+      } else {
+        existing = await this.backfillProfile(existing, profile);
+      }
+
+      await this.prisma.authIdentity.create({
+        data: { userId: existing.id, provider: "google", subject: profile.sub, email: profile.email },
+      });
+
+      user = existing;
     }
 
-    await this.prisma.authIdentity.create({
-      data: { userId: user.id, provider: "google", subject: profile.sub, email: profile.email },
-    });
-
+    this.logger.info({ userId: user.id, provider: "google" }, "login success");
     return user;
   }
 
