@@ -72,8 +72,15 @@ function initials(user: CurrentUser): string {
   return (user.name?.trim()?.[0] ?? user.email[0]).toUpperCase();
 }
 
+const AVATAR_SIZE = 32;
+
+const avatarCircleStyle: React.CSSProperties = {
+  width: AVATAR_SIZE, height: AVATAR_SIZE, borderRadius: "50%", flexShrink: 0, display: "block",
+};
+
 function AuthWidget({ user, th, pathname }: { user: AuthState; th: boolean; pathname: string }) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [imgError, setImgError] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -102,40 +109,56 @@ function AuthWidget({ user, th, pathname }: { user: AuthState; th: boolean; path
     );
   }
 
-  const label = user.name ?? user.email;
+  const showImg = !!user.avatarUrl && !imgError;
 
   return (
     <div ref={ref} style={{ position: "relative" }}>
       <button
         onClick={() => setMenuOpen((o) => !o)}
         aria-expanded={menuOpen}
+        aria-label={th ? "เมนูบัญชี" : "Account menu"}
         style={{
-          display: "flex", alignItems: "center", gap: 6, background: "transparent",
-          border: "1px solid var(--border)", borderRadius: 20, padding: "3px 10px 3px 3px",
-          cursor: "pointer", color: "var(--text)", fontFamily: "var(--font-mono, monospace)",
+          display: "flex", alignItems: "center", background: "transparent",
+          border: "none", padding: 0, cursor: "pointer", borderRadius: "50%", lineHeight: 0,
         }}
       >
-        {user.avatarUrl ? (
+        {showImg ? (
           // eslint-disable-next-line @next/next/no-img-element
-          <img src={user.avatarUrl} alt="" width={22} height={22} style={{ borderRadius: "50%", display: "block" }} />
+          <img
+            src={user.avatarUrl!}
+            alt=""
+            width={AVATAR_SIZE}
+            height={AVATAR_SIZE}
+            referrerPolicy="no-referrer"
+            onError={() => setImgError(true)}
+            style={{ ...avatarCircleStyle, objectFit: "cover" }}
+          />
         ) : (
           <span style={{
-            width: 22, height: 22, borderRadius: "50%", background: "#3b82f6", color: "#fff",
-            display: "flex", alignItems: "center", justifyContent: "center", fontSize: 11, fontWeight: 800, flexShrink: 0,
+            ...avatarCircleStyle, display: "flex", background: "#3b82f6", color: "#fff",
+            alignItems: "center", justifyContent: "center", fontSize: 13, fontWeight: 800,
           }}>
             {initials(user)}
           </span>
         )}
-        <span style={{ fontSize: 11, fontWeight: 700, maxWidth: 120, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
-          {label}
-        </span>
       </button>
       {menuOpen && (
         <div style={{
-          position: "absolute", top: "calc(100% + 6px)", right: 0, background: "var(--card)",
-          border: "1px solid var(--border)", borderRadius: 8, padding: 4, minWidth: 130, zIndex: 20,
+          position: "absolute", top: "calc(100% + 8px)", right: 0, background: "var(--card)",
+          border: "1px solid var(--border)", borderRadius: 8, padding: 4, minWidth: 180, zIndex: 20,
           boxShadow: "0 8px 24px rgba(0,0,0,0.25)",
         }}>
+          <div style={{ padding: "8px 10px 6px" }}>
+            {user.name && (
+              <div style={{ fontSize: 13, fontWeight: 800, color: "var(--text)", fontFamily: "var(--font-mono, monospace)", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+                {user.name}
+              </div>
+            )}
+            <div style={{ fontSize: 11, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+              {user.email}
+            </div>
+          </div>
+          <div style={{ height: 1, background: "var(--border)", margin: "2px 0" }} />
           <button
             onClick={() => logout()}
             style={{
