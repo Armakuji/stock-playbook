@@ -1,0 +1,107 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  # Detects which top-level areas changed so the 4 real jobs below only run
+  # what's actually affected — a daily report JSON push shouldn't also spin
+  # up the NestJS test suite, Next.js typecheck, and Python tests.
+  changes:
+    runs-on: ubuntu-latest
+    outputs:
+      service: ${{ steps.filter.outputs.service }}
+      web: ${{ steps.filter.outputs.web }}
+      tools: ${{ steps.filter.outputs.tools }}
+      reports: ${{ steps.filter.outputs.reports }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            service:
+              - 'service/**'
+            web:
+              - 'web/**'
+              - '!web/data/**'
+            tools:
+              - 'tools/**'
+              - 'tests/**'
+            reports:
+              - 'web/data/**'
+
+  service:
+    needs: changes
+    if: needs.changes.outputs.service == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: service/package-lock.json
+      - run: npm ci
+        working-directory: service
+      # jest needs the generated @prisma/client to type-check/run the suite.
+      - run: npx prisma generate
+        working-directory: service
+      - run: npm run lint
+        working-directory: service
+      - run: npm test
+        working-directory: service
+      # Same build Railway runs on deploy — catches anything jest's ts-jest
+      # transform lets slide but `nest build`'s real tsc pass wouldn't.
+      - run: npm run build
+        working-directory: service
+
+  web:
+    needs: changes
+    if: needs.changes.outputs.web == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: npm ci
+        working-directory: web
+      # No `next build` here — Vercel already builds on every push; running
+      # it again here would just be a slower, redundant type-check.
+      - run: npx tsc --noEmit
+        working-directory: web
+
+  tools:
+    needs: changes
+    if: needs.changes.outputs.tools == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install requests
+      - run: python3 -m unittest discover -s tests -v
+
+  reports:
+    needs: changes
+    if: needs.changes.outputs.reports == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/validate-reports.mjs
