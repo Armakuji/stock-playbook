@@ -1,4 +1,11 @@
-import { IsArray, IsNumber, IsOptional, IsString, ArrayMinSize, ArrayMaxSize } from "class-validator";
+import {
+  IsArray,
+  IsNumber,
+  IsOptional,
+  IsString,
+  ArrayMinSize,
+  ArrayMaxSize,
+} from "class-validator";
 
 export class CreateTradeDto {
   @IsOptional()

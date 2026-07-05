@@ -35,7 +35,7 @@ async function main() {
 
   if (!email) {
     console.error(
-      "Usage: npm run seed:import -- <owner-email> [path-to-journal.json]"
+      "Usage: npm run seed:import -- <owner-email> [path-to-journal.json]",
     );
     process.exit(1);
   }
@@ -44,9 +44,9 @@ async function main() {
     ? resolve(journalPathArg)
     : resolve(__dirname, "../../private/journal.json");
 
-  const journal: LegacyJournalFile = JSON.parse(
-    readFileSync(journalPath, "utf-8")
-  );
+  const journal = JSON.parse(
+    readFileSync(journalPath, "utf-8"),
+  ) as LegacyJournalFile;
 
   const prisma = new PrismaClient();
   try {

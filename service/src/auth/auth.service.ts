@@ -25,23 +25,36 @@ export class AuthService {
 
     let user: User;
     if (identity) {
-      const existing = await this.prisma.user.findUniqueOrThrow({ where: { id: identity.userId } });
+      const existing = await this.prisma.user.findUniqueOrThrow({
+        where: { id: identity.userId },
+      });
       user = await this.backfillProfile(existing, profile);
     } else {
       // Auto-link to an existing user by email ONLY when Google asserts the email
       // is verified — prevents an unverified email claim from hijacking an account.
-      let existing = profile.emailVerified ? await this.prisma.user.findUnique({ where: { email: profile.email } }) : null;
+      let existing = profile.emailVerified
+        ? await this.prisma.user.findUnique({ where: { email: profile.email } })
+        : null;
 
       if (!existing) {
         existing = await this.prisma.user.create({
-          data: { email: profile.email, name: profile.name, avatarUrl: profile.picture },
+          data: {
+            email: profile.email,
+            name: profile.name,
+            avatarUrl: profile.picture,
+          },
         });
       } else {
         existing = await this.backfillProfile(existing, profile);
       }
 
       await this.prisma.authIdentity.create({
-        data: { userId: existing.id, provider: "google", subject: profile.sub, email: profile.email },
+        data: {
+          userId: existing.id,
+          provider: "google",
+          subject: profile.sub,
+          email: profile.email,
+        },
       });
 
       user = existing;
@@ -59,7 +72,10 @@ export class AuthService {
   // no name/avatarUrl until they actually log in — fill those in from the Google
   // profile the first time they're missing, without ever overwriting a value the
   // user (or a future profile-edit feature) already set.
-  private async backfillProfile(user: User, profile: GoogleProfile): Promise<User> {
+  private async backfillProfile(
+    user: User,
+    profile: GoogleProfile,
+  ): Promise<User> {
     const data: { name?: string; avatarUrl?: string } = {};
     if (!user.name && profile.name) data.name = profile.name;
     if (!user.avatarUrl && profile.picture) data.avatarUrl = profile.picture;

@@ -1,4 +1,13 @@
-import { Body, Controller, Delete, Get, Param, Patch, Post, UseGuards } from "@nestjs/common";
+import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  Param,
+  Patch,
+  Post,
+  UseGuards,
+} from "@nestjs/common";
 import { SessionGuard } from "../auth/session.guard";
 import { CurrentUser } from "../auth/current-user.decorator";
 import { TradesService } from "./trades.service";
@@ -29,7 +38,11 @@ export class TradesController {
   }
 
   @Patch(":id")
-  async update(@Param("id") id: string, @Body() dto: UpdateTradeDto, @CurrentUser() userId: string) {
+  async update(
+    @Param("id") id: string,
+    @Body() dto: UpdateTradeDto,
+    @CurrentUser() userId: string,
+  ) {
     return serializeTrade(await this.trades.update(id, userId, dto));
   }
 
@@ -40,7 +53,11 @@ export class TradesController {
   }
 
   @Post(":id/exits")
-  async addExit(@Param("id") id: string, @Body() dto: CreateExitDto, @CurrentUser() userId: string) {
+  async addExit(
+    @Param("id") id: string,
+    @Body() dto: CreateExitDto,
+    @CurrentUser() userId: string,
+  ) {
     return serializeTrade(await this.trades.addExit(id, userId, dto));
   }
 }

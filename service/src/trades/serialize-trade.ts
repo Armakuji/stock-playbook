@@ -8,12 +8,19 @@ function toDateStr(value: unknown): unknown {
   return value instanceof Date ? value.toISOString().slice(0, 10) : value;
 }
 
-export function serializeTrade<T extends { entryDate?: unknown; exits?: unknown }>(trade: T): T {
+function serializeExit(exit: unknown): unknown {
+  if (typeof exit !== "object" || exit === null) return exit;
+  return { ...exit, date: toDateStr((exit as { date?: unknown }).date) };
+}
+
+export function serializeTrade<
+  T extends { entryDate?: unknown; exits?: unknown },
+>(trade: T): T {
   return {
     ...trade,
     entryDate: toDateStr(trade.entryDate),
     exits: Array.isArray(trade.exits)
-      ? trade.exits.map((exit) => ({ ...exit, date: toDateStr((exit as { date?: unknown }).date) }))
+      ? (trade.exits as unknown[]).map(serializeExit)
       : trade.exits,
   };
 }
