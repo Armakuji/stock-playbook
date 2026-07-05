@@ -18,9 +18,11 @@ jobs:
   # up the NestJS test suite, Next.js typecheck, and Python tests.
   changes:
     runs-on: ubuntu-latest
-    # dorny/paths-filter calls the GitHub API's PR-files-list endpoint for
-    # pull_request events — needs this beyond the top-level contents: read.
+    # Job-level permissions REPLACE (not merge with) the workflow-level block,
+    # so contents: read must be repeated here for actions/checkout to work —
+    # pull-requests: read is what paths-filter needs for the PR-files-list API.
     permissions:
+      contents: read
       pull-requests: read
     outputs:
       service: ${{ steps.filter.outputs.service }}
