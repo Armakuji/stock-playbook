@@ -20,10 +20,14 @@ export class AuthController {
   ) {}
 
   private googleClient(): GoogleOAuthClient {
+    // redirect_uri must go through the Next.js rewrite proxy (WEB_ORIGIN), not the
+    // API's own origin directly — otherwise Google redirects the browser straight to
+    // Railway, the session cookie lands on the Railway host, and the browser never
+    // sends it back on subsequent requests to the Vercel-hosted app.
     return new GoogleOAuthClient(
       this.config.get<string>("GOOGLE_CLIENT_ID")!,
       this.config.get<string>("GOOGLE_CLIENT_SECRET")!,
-      `${this.config.get<string>("API_ORIGIN")}/auth/callback`,
+      `${this.config.get<string>("WEB_ORIGIN")}/api/journal/auth/callback`,
     );
   }
 

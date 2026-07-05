@@ -24,7 +24,9 @@ Frontend dev: `web/` already proxies `/api/journal/*` — point the rewrite dest
 `http://localhost:4000` via env (`JOURNAL_API_ORIGIN`) so local web talks to local API.
 
 **Local login:** works with real Google — the OAuth client registers
-`http://localhost:4000/auth/callback` (§2), Google always allows localhost without HTTPS.
+`http://localhost:3000/api/journal/auth/callback` (§2, routed through the `web/` rewrite proxy,
+**not** `:4000` directly — see the cookie-domain note below), Google always allows localhost
+without HTTPS.
 
 `service/.env` (gitignored — commit `service/.env.example` with these keys as the template):
 
@@ -37,18 +39,31 @@ WEB_ORIGIN=http://localhost:3000
 PORT=4000
 ```
 
-Cookies are host-scoped, **not port-scoped** — a
-cookie set by :4000 is sent on :3000 requests too, and `Secure` is fine because browsers
-treat localhost as a secure context. Dev uses **real Google login** (no dev-login bypass —
+**Why the redirect_uri must go through the proxy, not straight to `:4000`:** the OAuth
+`redirect_uri` NestJS registers with Google is built from `WEB_ORIGIN` (`${WEB_ORIGIN}/api/journal/auth/callback`),
+so Google always redirects the browser back to the **web app's own origin** first — the
+`web/` rewrite then forwards that request server-side to the API. This means the API's
+`Set-Cookie: session=...` response is relayed back to the browser as if it came from the web
+app's own host, so the cookie is first-party there. If `redirect_uri` pointed straight at the
+API's own origin instead (`:4000` locally, the raw Railway URL in prod), Google would redirect
+the browser directly to the API — the session cookie would then be scoped to the **API's**
+host, and the browser would never send it back on requests to the web app. This bit us for
+real in prod (Railway ≠ Vercel, two different hosts — no cookie-sharing quirk to save it);
+locally it's less visible because `localhost` cookies happen to be host-scoped but
+**not port-scoped**, so a cookie set by `:4000` directly would still (confusingly) show up on
+`:3000` — do not rely on that quirk, always route the callback through the proxy so local
+dev matches prod topology. `Secure` cookies are fine over local `http://` because browsers
+treat `localhost` as a secure context. Dev uses **real Google login** (no dev-login bypass —
 decided against it so local always tests the true OIDC flow).
 
 ## 2. Google OAuth client (one-time)
 
 Google Cloud Console → APIs & Services → Credentials → **Create OAuth client ID (Web)**:
 
-- Authorized redirect URIs:
-  - `https://<service>.up.railway.app/auth/callback` (prod)
-  - `http://localhost:4000/auth/callback` (dev)
+- Authorized redirect URIs (always the **web app's** origin + `/api/journal/auth/callback` —
+  routed through the rewrite proxy — never the Railway/`:4000` origin directly, see §1):
+  - `https://<your-vercel-domain>/api/journal/auth/callback` (prod)
+  - `http://localhost:3000/api/journal/auth/callback` (dev)
 - Copy **Client ID** + **Client Secret** → used in §3 and local `.env`.
 - OAuth consent screen: External, scopes = `openid email profile` only.
 
@@ -67,7 +82,7 @@ Google Cloud Console → APIs & Services → Credentials → **Create OAuth clie
    | `DATABASE_URL` | `${{Postgres.DATABASE_URL}}` (reference variable) |
    | `SESSION_SECRET` | from §0 |
    | `GOOGLE_CLIENT_ID` / `GOOGLE_CLIENT_SECRET` | from §2 |
-   | `WEB_ORIGIN` | `https://stock-radar-weekly.vercel.app` (for OAuth redirect-back) |
+   | `WEB_ORIGIN` | `https://stock-radar-weekly.vercel.app` (used to build the OAuth `redirect_uri` so it routes through the proxy, and for the post-login redirect-back) |
 
 5. **Networking** → Generate public domain → note `https://<service>.up.railway.app`.
 
