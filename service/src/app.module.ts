@@ -8,9 +8,9 @@ import { TradesModule } from "./trades/trades.module";
 
 const isProd = process.env.NODE_ENV === "production";
 // LOG_FORMAT=pretty (default, everywhere — Railway renders ANSI fine) for a
-// human-readable single-line log; LOG_FORMAT=json for structured JSON once
-// there's enough traffic that filtering by attribute in Railway matters more
-// than readability.
+// human-readable structured log; LOG_FORMAT=json for raw single-line JSON
+// once there's enough traffic that filtering by attribute in Railway matters
+// more than readability.
 const usePretty = (process.env.LOG_FORMAT ?? "pretty") !== "json";
 
 @Module({
@@ -24,14 +24,18 @@ const usePretty = (process.env.LOG_FORMAT ?? "pretty") !== "json";
               target: "pino-pretty",
               options: {
                 colorize: true,
-                singleLine: true,
                 translateTime: "HH:MM:ss",
-                messageFormat: "{req.method} {req.url} → {res.statusCode} {responseTime}ms user={userId}",
-                // Without this, pino-pretty still dumps the full (now-slimmed) log
-                // object after the formatted message — hide it for a single clean
-                // line matching the intended "HH:MM:ss METHOD /url → status Nms
-                // user=..." output.
-                hideObject: true,
+                // No messageFormat: it's a single template applied to every log
+                // line pino-http emits — not just the automatic req/res ones. The
+                // service-layer event logs (trade created/deleted, login success)
+                // don't have req/res/responseTime fields, so a req/res-shaped
+                // template renders them with blank placeholders. singleLine:false
+                // instead falls back to pino-pretty's default rendering: a
+                // "[HH:MM:ss] LEVEL: <msg>" header line, then every field
+                // (req/res/responseTime for request logs, or userId/tradeId/
+                // ticker for event logs) pretty-printed underneath it — correct
+                // for both shapes, and each log gets its own line block.
+                singleLine: false,
               },
             }
           : undefined,
