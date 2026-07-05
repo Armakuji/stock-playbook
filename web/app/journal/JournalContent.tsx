@@ -166,6 +166,11 @@ async function apiDelete(id: string): Promise<void> {
   if (!res.ok) throw new Error(await readError(res, `Delete failed (${res.status})`));
 }
 
+async function apiLogout(): Promise<void> {
+  await fetch("/api/journal/auth/logout", { method: "POST" });
+  window.location.href = "/journal";
+}
+
 // ── Sub-components ────────────────────────────────────────────────────────────
 
 function StatCard({ label, value, color, sub }: { label: string; value: string; color?: string; sub?: string }) {
@@ -1111,12 +1116,20 @@ export function JournalContent({ initialTrades, stats, reportOptions = [], price
             </span>
           )}
         </div>
-        <button
-          onClick={() => { setShowForm(true); setEditTrade(null); }}
-          style={{ padding: "8px 16px", borderRadius: 8, border: "none", background: "#10b981", color: "#fff", fontWeight: 800, fontSize: 13, cursor: "pointer", fontFamily: "var(--font-mono, monospace)" }}
-        >
-          + Log Trade
-        </button>
+        <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+          <button
+            onClick={() => { setShowForm(true); setEditTrade(null); }}
+            style={{ padding: "8px 16px", borderRadius: 8, border: "none", background: "#10b981", color: "#fff", fontWeight: 800, fontSize: 13, cursor: "pointer", fontFamily: "var(--font-mono, monospace)" }}
+          >
+            + Log Trade
+          </button>
+          <button
+            onClick={() => apiLogout()}
+            style={{ padding: "8px 14px", borderRadius: 8, border: "1px solid var(--border)", background: "transparent", color: "var(--muted)", fontWeight: 700, fontSize: 13, cursor: "pointer", fontFamily: "var(--font-mono, monospace)" }}
+          >
+            Logout
+          </button>
+        </div>
       </div>
 
       <h1 style={{ fontSize: "clamp(20px, 4vw, 28px)", fontWeight: 900, margin: "0 0 4px", letterSpacing: "-0.5px", fontFamily: "var(--font-display, sans-serif)" }}>
