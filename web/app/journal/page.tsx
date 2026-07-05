@@ -13,6 +13,18 @@ import { LoginGate } from "./LoginGate";
 
 const API_ORIGIN = process.env.JOURNAL_API_ORIGIN ?? "http://localhost:4000";
 
+function ErrorState({ title, message }: { title: string; message: string }) {
+  return (
+    <div style={{ maxWidth: 480, margin: "80px auto", textAlign: "center" }}>
+      <div style={{ fontSize: 32, marginBottom: 16 }}>⚠️</div>
+      <h1 style={{ fontSize: 22, fontWeight: 900, marginBottom: 8, fontFamily: "var(--font-display, sans-serif)" }}>
+        {title}
+      </h1>
+      <p style={{ fontSize: 13, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>{message}</p>
+    </div>
+  );
+}
+
 export default async function JournalPage() {
   const cookieStore = await cookies();
   const sessionCookie = cookieStore.get("session")?.value;
@@ -22,10 +34,32 @@ export default async function JournalPage() {
   }
 
   const headers = { Cookie: `session=${sessionCookie}` };
-  const tradesRes = await fetch(`${API_ORIGIN}/trades`, { headers, cache: "no-store" });
+
+  let tradesRes: Response;
+  try {
+    tradesRes = await fetch(`${API_ORIGIN}/trades`, { headers, cache: "no-store" });
+  } catch {
+    return (
+      <ErrorState
+        title="Can't reach the Journal API"
+        message="The API may be starting up or temporarily unavailable. Try refreshing in a moment."
+      />
+    );
+  }
+
+  // Only an actually-unauthenticated response should send a logged-in user back to
+  // the login screen — a 5xx from the API is a backend problem, not an expired session.
+  if (tradesRes.status === 401) {
+    return <LoginGate />;
+  }
 
   if (!tradesRes.ok) {
-    return <LoginGate />;
+    return (
+      <ErrorState
+        title="Something went wrong"
+        message={`The Journal API returned an error (${tradesRes.status}). Try refreshing in a moment.`}
+      />
+    );
   }
 
   const trades: Trade[] = await tradesRes.json();
