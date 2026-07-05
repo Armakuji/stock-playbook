@@ -82,7 +82,7 @@ Google Cloud Console → APIs & Services → Credentials → **Create OAuth clie
    | `DATABASE_URL` | `${{Postgres.DATABASE_URL}}` (reference variable) |
    | `SESSION_SECRET` | from §0 |
    | `GOOGLE_CLIENT_ID` / `GOOGLE_CLIENT_SECRET` | from §2 |
-   | `WEB_ORIGIN` | `https://stock-radar-weekly.vercel.app` (used to build the OAuth `redirect_uri` so it routes through the proxy, and for the post-login redirect-back) |
+   | `WEB_ORIGIN` | `https://stockplaybook.app` (used to build the OAuth `redirect_uri` so it routes through the proxy, and for the post-login redirect-back) |
 
 5. **Networking** → Generate public domain → note `https://<service>.up.railway.app`.
 

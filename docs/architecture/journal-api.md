@@ -44,7 +44,7 @@ $7/mo warm).
 Monorepo layout (both platforms deploy from a subdirectory of this repo):
 
 ```
-stock-radar-weekly/
+stock-playbook/
 ├── web/        Next.js  → Vercel  (Root Directory = web)
 ├── service/    NestJS   → Railway (Root Directory = service)  ← NEW
 └── skills/ scripts/ docs/ ...
