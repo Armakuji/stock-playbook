@@ -49,7 +49,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const lastUpdated = getLatestReportDate();
-  const isLocal = !process.env.VERCEL;
   const marketTiming = loadMarketTiming();
   return (
     <html lang="en" className={`h-full ${bricolage.variable} ${dmSans.variable} ${jetbrains.variable}`}>
@@ -103,7 +102,7 @@ export default function RootLayout({
           animation: "gradientShift 8s linear infinite",
         }} />
         <LanguageProvider>
-          <Header lastUpdated={lastUpdated} isLocal={isLocal} />
+          <Header lastUpdated={lastUpdated} />
           <MarketTicker data={marketTiming as never} />
           <main style={{ flex: 1, maxWidth: 1200, width: "100%", margin: "0 auto", padding: "24px 16px" }}>
             {children}
