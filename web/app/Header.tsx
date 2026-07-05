@@ -96,7 +96,12 @@ function AuthWidget({ user, th, pathname }: { user: AuthState; th: boolean; path
 
   if (user === null) {
     return (
-      <Link
+      // Plain <a>, not next/link's <Link> — this isn't an app route, it's a
+      // rewrite-proxied redirect straight into the OAuth flow. Link's client-side
+      // router tries to RSC-prefetch every href, which fails against this URL
+      // ("Failed to fetch RSC payload") before falling back to a full navigation
+      // anyway — skip the failed attempt and navigate directly.
+      <a
         href={loginUrl(pathname)}
         style={{
           fontSize: 11, fontWeight: 800, padding: "5px 12px", borderRadius: 7,
@@ -105,7 +110,7 @@ function AuthWidget({ user, th, pathname }: { user: AuthState; th: boolean; path
         }}
       >
         {th ? "เข้าสู่ระบบ" : "Login"}
-      </Link>
+      </a>
     );
   }
 
