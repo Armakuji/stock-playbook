@@ -132,20 +132,20 @@ Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open N
 
 **ปัญหา:** final review ของ Phase 1 พบ 5 จุด minor ที่ตั้งใจไม่ fix ตอนนั้น (ไม่ block การใช้งาน) — จดไว้ให้คนที่ทำ Phase 2 / polish รอบหน้าเก็บ
 **ทำ:**
-  1. subtitle เก่าอ้าง "private/journal.json" ค้างอยู่ — `web/app/journal/JournalContent.tsx:1139` (แก้ copy ให้ตรงยุค API)
+  1. ✅ DONE (ทำพร้อม #17) — subtitle เก่าอ้าง "private/journal.json" ค้างอยู่ — แก้เป็น "{n} trades" เฉย ๆ
   2. `addExit` ไม่มี server-side over-exit guard — client กันอยู่ฝั่งเดียว ยิง API ตรงขาย shares เกินที่ถือได้ (เพิ่ม validation ใน service)
   3. POST `/trades` ด้วย client-chosen id ที่ชนกัน → 500 ไม่ใช่ 409 (จับ Prisma P2002 → ConflictException)
-  4. `apiLogout` ไม่ใช้ shared `readError` convention (จัด error handling ให้เหมือน API call อื่น)
-  5. auto-link ตอน user ที่ seed ไว้ login ครั้งแรก ไม่ backfill `name`/`avatarUrl` จาก Google profile
-**ไฟล์:** `web/app/journal/JournalContent.tsx` · `service/src/trades/*` (exit guard, 409) · `web/lib/*` (apiLogout) · `service/src/auth/*` (backfill) — รายละเอียดเต็มใน `.worktrees/journal-api-phase1/.superpowers/sdd/progress.md`
-**เป้า:** เก็บครบ 5 จุด · จุดสำคัญสุดคือข้อ 2 (server ต้องไม่เชื่อ client) ควรทำก่อนเปิด public signup (Phase 2)
+  4. `apiLogout` ไม่ใช้ shared `readError` convention — ตอนนี้ logout อยู่ใน `web/lib/auth-client.ts` แล้ว (ย้ายจาก JournalContent เป็นส่วนหนึ่งของ #17) แต่ยังไม่ได้ปรับให้ใช้ readError convention
+  5. ✅ DONE (ทำพร้อม #17) — `AuthService.backfillProfile` เติม `name`/`avatarUrl` ให้ user ที่มีอยู่แล้ว (ทั้ง identity-linked และ email-linked) เมื่อค่ายังว่างและ Google profile มีให้ — ไม่ทับค่าที่มีอยู่แล้ว
+**ไฟล์:** `web/app/journal/JournalContent.tsx` · `service/src/trades/*` (exit guard, 409) · `web/lib/auth-client.ts` (apiLogout/readError) · `service/src/auth/auth.service.ts` (backfill, ✅ done)
+**เป้า:** เก็บครบ 5 จุด (2 เหลือ 3 ข้อ: #2, #3, #4) · จุดสำคัญสุดคือข้อ 2 (server ต้องไม่เชื่อ client) ควรทำก่อนเปิด public signup (Phase 2)
 
-## 17. Journal UI — auth-aware header (avatar/login/logout) + ลบ PRIVATE badge
+## 17. ✅ DONE — Journal UI — auth-aware header (avatar/login/logout) + ลบ PRIVATE badge
 
 **ปัญหา:** login แล้วไม่มีอะไรบอกว่าใคร login อยู่ · ปุ่ม Logout ลอยอยู่ข้าง "+ Log Trade" ผิดที่ · ไม่มีปุ่ม Login บน header (ต้องเข้า /journal ก่อนถึงเจอ) · badge "🔒 PRIVATE — local only" + subtitle "private/journal.json · never committed to git" ยังโชว์อยู่ทั้งที่เป็น API/DB แล้ว (ทับกับ #16 ข้อ 1)
-**ทำ:** (1) Header แสดง avatar + name จาก `GET /auth/me` (fallback = ตัวอักษรแรกของ email — user ที่ seed ไว้อาจไม่มี name/avatarUrl จนกว่า #16 ข้อ 5 จะแก้ backfill) (2) กด avatar → dropdown → Logout (ย้ายจากปุ่มเดิม) (3) ยังไม่ login → ปุ่ม "Login" บน header ทุกหน้า → เริ่ม OAuth flow แล้ว redirect กลับหน้าเดิม (4) ลบ PRIVATE badge + แก้ subtitle เป็นจำนวน trades เฉย ๆ
-**ไฟล์:** `web/app/Header.tsx` (avatar/dropdown/login) · `web/app/journal/JournalContent.tsx` (ลบ badge บรรทัด ~1139 + ปุ่ม logout เดิม) · i18n EN/TH สำหรับ label ใหม่ (`web/lib/i18n.ts`)
-**เป้า:** เปิดหน้าไหนก็รู้สถานะ login · logout อยู่ใต้ avatar dropdown ตาม convention ปกติ · ไม่มีร่องรอย "local only" เหลือ
+**ทำ:** (1) Header แสดง avatar + name จาก `GET /auth/me` (fallback = ตัวอักษรแรกของ email/name) — เพิ่ม `avatarUrl` ใน response ของ `/auth/me` (2) กด avatar → dropdown (click-outside ปิดเอง) → Logout ผ่าน `web/lib/auth-client.ts` (ย้ายจากปุ่มเดิมข้าง "+ Log Trade") (3) ยังไม่ login → ปุ่ม "Login" บน header ทุกหน้า (desktop + mobile) → `GET /auth/google?returnTo=<current path>` → เก็บใน cookie `oauth_return_to` (validate เป็น same-origin relative path เท่านั้น กัน open-redirect — มี unit test แยก `safe-return-path.spec.ts`) → callback redirect กลับหน้าเดิมแทนที่จะ hardcode `/journal` (4) ลบ PRIVATE badge + แก้ subtitle เป็น "{n} trades" เฉย ๆ · พ่วง backlog #16 ข้อ 5 (backfill name/avatarUrl) เพราะ header ต้องมีข้อมูลจริงให้แสดง
+**ไฟล์:** `web/app/Header.tsx` (AuthWidget: avatar/dropdown/login, desktop+mobile) · `web/lib/auth-client.ts` (ใหม่ — fetchCurrentUser/logout/loginUrl ใช้ร่วมกับ JournalContent) · `web/app/journal/JournalContent.tsx` (ลบ badge + ปุ่ม logout เดิม + apiLogout) · `service/src/auth/auth.controller.ts` (returnTo cookie flow, avatarUrl ใน /me) · `service/src/auth/safe-return-path.ts` (ใหม่) · `service/src/auth/auth.service.ts` (backfillProfile)
+**เป้า:** เปิดหน้าไหนก็รู้สถานะ login ✓ · logout อยู่ใต้ avatar dropdown ตาม convention ปกติ ✓ · ไม่มีร่องรอย "local only" เหลือ ✓ · login จากหน้าไหนก็กลับมาหน้านั้น ✓ · tests: 29/29 service unit tests ผ่าน (รวม 3 test ใหม่สำหรับ backfill + 6 test ใหม่สำหรับ safe-return-path) · tsc --noEmit ผ่านทั้ง service/web
 
 ---
 
