@@ -638,54 +638,57 @@ function TradeRow({ trade, priceInfo, validatorResult, validationGeneratedAt, on
           {trade.catalystType.replace(/_/g, " ")}
         </div>
 
-        {/* Entry price */}
-        <div style={{ textAlign: "right", minWidth: 64 }}>
-          <div style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>entry</div>
-          <div style={{ fontSize: 12, fontWeight: 700, fontFamily: "var(--font-mono, monospace)" }}>${trade.entryPrice.toFixed(2)}</div>
-        </div>
+        {/* Entry / now / hold / adherence — grouped so mobile can drop it to its own full-width row */}
+        <div className="trade-stats-row" style={{ display: "flex", alignItems: "center", gap: 14 }}>
+          {/* Entry price */}
+          <div style={{ textAlign: "right", minWidth: 64 }}>
+            <div style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>entry</div>
+            <div style={{ fontSize: 12, fontWeight: 700, fontFamily: "var(--font-mono, monospace)" }}>${trade.entryPrice.toFixed(2)}</div>
+          </div>
 
-        {/* Current price (open) or realized P&L (closed) */}
-        <div style={{ textAlign: "right" }}>
-          {trade.status === "open" && currentPrice !== null ? (
-            <div style={{ display: "flex", gap: 14, justifyContent: "flex-end" }}>
-              <div>
-                <div style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>now</div>
-                <div style={{ fontSize: 12, fontWeight: 800, color: "var(--text)", fontFamily: "var(--font-mono, monospace)" }}>${currentPrice.toFixed(2)}</div>
-              </div>
-              {unrealizedPct !== null && (
+          {/* Current price (open) or realized P&L (closed) */}
+          <div style={{ textAlign: "right" }}>
+            {trade.status === "open" && currentPrice !== null ? (
+              <div style={{ display: "flex", gap: 14, justifyContent: "flex-end" }}>
                 <div>
-                  <div style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>changes</div>
-                  <div style={{ fontSize: 12, fontWeight: 700, color: pnlColor(unrealizedPct), fontFamily: "var(--font-mono, monospace)" }}>
-                    {unrealizedPct >= 0 ? "+" : ""}{unrealizedPct.toFixed(1)}%
-                  </div>
+                  <div style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>now</div>
+                  <div style={{ fontSize: 12, fontWeight: 800, color: "var(--text)", fontFamily: "var(--font-mono, monospace)" }}>${currentPrice.toFixed(2)}</div>
                 </div>
-              )}
-            </div>
-          ) : pnl !== null ? (
-            <>
-              <div style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>P&L</div>
-              <div style={{ fontSize: 12, fontWeight: 800, color: pnlColor(pnl), fontFamily: "var(--font-mono, monospace)" }}>{fmt$(pnl)}</div>
-            </>
-          ) : (
-            <>
-              <div style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>P&L</div>
-              <span style={{ fontSize: 12, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>—</span>
-            </>
+                {unrealizedPct !== null && (
+                  <div>
+                    <div style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>changes</div>
+                    <div style={{ fontSize: 12, fontWeight: 700, color: pnlColor(unrealizedPct), fontFamily: "var(--font-mono, monospace)" }}>
+                      {unrealizedPct >= 0 ? "+" : ""}{unrealizedPct.toFixed(1)}%
+                    </div>
+                  </div>
+                )}
+              </div>
+            ) : pnl !== null ? (
+              <>
+                <div style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>P&L</div>
+                <div style={{ fontSize: 12, fontWeight: 800, color: pnlColor(pnl), fontFamily: "var(--font-mono, monospace)" }}>{fmt$(pnl)}</div>
+              </>
+            ) : (
+              <>
+                <div style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>P&L</div>
+                <span style={{ fontSize: 12, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>—</span>
+              </>
+            )}
+          </div>
+
+          {/* Days held */}
+          <div style={{ textAlign: "right", minWidth: 28 }}>
+            <div style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>hold</div>
+            <div style={{ fontSize: 12, fontWeight: 700, color: "var(--text)", fontFamily: "var(--font-mono, monospace)" }}>{days}d</div>
+          </div>
+
+          {/* Plan adherence (closed) */}
+          {adherent !== null && (
+            <span style={{ fontSize: 10, padding: "2px 7px", borderRadius: 5, background: adherent ? "#10b98118" : "#ef444418", color: adherent ? "#10b981" : "#ef4444", fontFamily: "var(--font-mono, monospace)", fontWeight: 700 }}>
+              {adherent ? "✓ plan" : "✗ plan"}
+            </span>
           )}
         </div>
-
-        {/* Days held */}
-        <div style={{ textAlign: "right", minWidth: 28 }}>
-          <div style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>hold</div>
-          <div style={{ fontSize: 12, fontWeight: 700, color: "var(--text)", fontFamily: "var(--font-mono, monospace)" }}>{days}d</div>
-        </div>
-
-        {/* Plan adherence (closed) */}
-        {adherent !== null && (
-          <span style={{ fontSize: 10, padding: "2px 7px", borderRadius: 5, background: adherent ? "#10b98118" : "#ef444418", color: adherent ? "#10b981" : "#ef4444", fontFamily: "var(--font-mono, monospace)", fontWeight: 700 }}>
-            {adherent ? "✓ plan" : "✗ plan"}
-          </span>
-        )}
 
         {/* Expand arrow */}
         <span style={{ fontSize: 11, color: "var(--muted)" }}>{expanded ? "▲" : "▼"}</span>
@@ -717,7 +720,7 @@ function TradeRow({ trade, priceInfo, validatorResult, validationGeneratedAt, on
                 const s = priceStaleness(priceInfo);
                 return (
                   <span style={{ fontSize: 10, color: s.color, fontFamily: "var(--font-mono, monospace)" }}>
-                    from report · {s.label}
+                    {s.label}
                   </span>
                 );
               })()}
@@ -741,9 +744,9 @@ function TradeRow({ trade, priceInfo, validatorResult, validationGeneratedAt, on
             ].filter(Boolean) as { label: string; value: string; color: string; accent: string }[];
             if (cards.length === 0) return null;
             return (
-              <div style={{ display: "grid", gridTemplateColumns: `repeat(${Math.min(cards.length, 4)}, minmax(0,1fr))`, gap: 8, marginBottom: 16 }}>
+              <div className="trade-stat-grid" style={{ display: "grid", gridTemplateColumns: `repeat(${Math.min(cards.length, 4)}, minmax(0,1fr))`, gap: 8, marginBottom: 16 }}>
                 {cards.map((c) => (
-                  <div key={c.label} style={{ background: `${c.accent}0d`, border: `1px solid ${c.accent}28`, borderRadius: 9, padding: "10px 13px" }}>
+                  <div key={c.label} style={{ background: `${c.accent}0d`, border: `1px solid ${c.accent}28`, borderRadius: 9, padding: "10px 13px", minWidth: 0 }}>
                     <div style={{ fontSize: 9, fontWeight: 700, color: "#334155", textTransform: "uppercase", letterSpacing: "1.2px", fontFamily: "var(--font-mono, monospace)", marginBottom: 5 }}>{c.label}</div>
                     <div style={{ fontSize: 17, fontWeight: 900, color: c.color, fontFamily: "var(--font-mono, monospace)", letterSpacing: "-0.5px" }}>{c.value}</div>
                   </div>
@@ -782,10 +785,57 @@ function TradeRow({ trade, priceInfo, validatorResult, validationGeneratedAt, on
             // fallback: above entry, no TPs set
             const aboveEpNoTP  = showNow && t1 === 0 && cp! >= ep;
 
+            // Mobile vertical ladder: same levels, sorted high-to-low by price,
+            // with NOW inserted at its actual position instead of computed via
+            // the "between X and Y" flags above (those only make sense for the
+            // horizontal rail's left-to-right layout).
+            type Level = { key: string; label: string; price: number; color: string; bg: string; border: string; isNow?: boolean };
+            const mobileLevels: Level[] = [];
+            if (t3 > 0) mobileLevels.push({ key: "tp3", label: "TP3", price: t3, color: "#6ee7b7", bg: "#10b98122", border: "#10b98145" });
+            if (t2 > 0) mobileLevels.push({ key: "tp2", label: "TP2", price: t2, color: "#34d399", bg: "#10b98118", border: "#10b98135" });
+            if (t1 > 0) mobileLevels.push({ key: "tp1", label: "TP1", price: t1, color: "#10b981", bg: "#10b98110", border: "#10b98128" });
+            mobileLevels.push({ key: "entry", label: "Entry", price: ep, color: "#94a3b8", bg: "#1e293b", border: "#2d3f55" });
+            if (sl > 0) mobileLevels.push({ key: "sl", label: "SL", price: sl, color: "#ef4444", bg: "#ef444412", border: "#ef444332" });
+            mobileLevels.sort((a, b) => b.price - a.price);
+            if (showNow) {
+              const nowLevel: Level = { key: "now", label: "NOW", price: cp!, color: sc, bg: `${sc}15`, border: `${sc}50`, isNow: true };
+              const idx = mobileLevels.findIndex((l) => l.price < cp!);
+              if (idx === -1) mobileLevels.push(nowLevel);
+              else mobileLevels.splice(idx, 0, nowLevel);
+            }
+
             return (
               <div style={{ marginBottom: 14 }}>
                 <div style={{ fontSize: 9, fontWeight: 700, color: "#1e3a5f", textTransform: "uppercase", letterSpacing: "1.2px", fontFamily: "var(--font-mono, monospace)", marginBottom: 8 }}>Price Levels</div>
-                <div style={{ display: "flex", alignItems: "center", gap: 6, flexWrap: "wrap" }}>
+
+                {/* Mobile: vertical ladder, high price to low, NOW highlighted in place */}
+                <div className="price-rail-mobile">
+                  {mobileLevels.map((lvl, i) => (
+                    <div key={lvl.key} style={{ display: "flex", alignItems: "center", gap: 8, position: "relative", padding: "5px 0" }}>
+                      {i > 0 && <div style={{ position: "absolute", left: 4, top: -3, width: 1, height: 11, background: "var(--border)" }} />}
+                      <div style={{
+                        width: 9, height: 9, borderRadius: "50%", background: lvl.color, flexShrink: 0,
+                        boxShadow: lvl.isNow ? `0 0 6px ${lvl.color}` : undefined,
+                      }} />
+                      <div style={{
+                        display: "flex", alignItems: "center", justifyContent: "space-between", flex: 1, minWidth: 0,
+                        background: lvl.isNow ? lvl.bg : "transparent",
+                        border: lvl.isNow ? `1px solid ${lvl.border}` : "1px solid transparent",
+                        borderRadius: 7, padding: "4px 9px",
+                      }}>
+                        <span style={{ fontSize: 10, fontWeight: 700, color: lvl.isNow ? lvl.color : "#64748b", fontFamily: "var(--font-mono, monospace)" }}>
+                          {lvl.isNow ? "● NOW" : lvl.label}
+                        </span>
+                        <span style={{ fontSize: 13, fontWeight: 800, color: lvl.color, fontFamily: "var(--font-mono, monospace)" }}>
+                          ${lvl.price.toFixed(2)}
+                        </span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Desktop: horizontal rail, unchanged */}
+                <div className="price-rail-desktop" style={{ display: "flex", alignItems: "center", gap: 6, flexWrap: "wrap" }}>
 
                   {/* NOW — below SL */}
                   {belowSL && <><NowNode /><Line g1={`${sc}60`} g2="#ef444450" /></>}
@@ -929,7 +979,7 @@ function TradeRow({ trade, priceInfo, validatorResult, validationGeneratedAt, on
           )}
 
           {/* Actions */}
-          <div style={{ display: "flex", gap: 8, flexWrap: "wrap", paddingTop: 4 }}>
+          <div className="trade-actions-row" style={{ display: "flex", gap: 8, flexWrap: "wrap", paddingTop: 4 }}>
             {trade.status === "open" && !showExitForm && (
               <button
                 onClick={() => setShowExitForm(true)}
@@ -1081,6 +1131,27 @@ export function JournalContent({ initialTrades, stats, reportOptions = [], price
         @keyframes pulse {
           0%, 100% { opacity: 1; transform: scale(1); }
           50%       { opacity: 0.6; transform: scale(1.2); }
+        }
+        .price-rail-mobile { display: none; }
+        @media (max-width: 640px) {
+          .trade-stats-row {
+            width: 100%;
+            justify-content: space-between;
+            margin-top: 6px;
+          }
+          .trade-stat-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+          }
+          .price-rail-desktop { display: none !important; }
+          .price-rail-mobile {
+            display: flex;
+            flex-direction: column;
+          }
+          .trade-actions-row {
+            display: grid !important;
+            grid-template-columns: repeat(3, 1fr);
+          }
+          .trade-actions-row > button { width: 100%; }
         }
       `}</style>
       {/* Header */}
