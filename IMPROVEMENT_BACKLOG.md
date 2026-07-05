@@ -121,6 +121,25 @@ Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open N
 **ไฟล์:** `docs/architecture/journal-api.md` (spec เต็ม: schema, endpoints, hosting) · `web/lib/journal.ts` + `web/app/journal/*` (เลิก fs → เรียก API + login gate) · `web/lib/journal-types.ts` (map เป็น schema) · `scripts/fetch-backtest-prices.mjs` + analyze-journal skill (อ่านผ่าน `JOURNAL_API_URL`/`JOURNAL_API_TOKEN`) · `service/` folder ใหม่ใน repo นี้ (monorepo — Railway ตั้ง Root Directory = `service`)
 **เป้า:** `/journal` ใช้ได้บน prod — login Google แล้วเห็น/แก้ trade ของตัวเองเท่านั้น · scripts ทำงานผ่าน API แทนไฟล์ local · ค่า hosting ~$5–10/เดือน (Railway) · เกี่ยวพัน: ทำก่อน #12(ก) ถ้าเลือก journal เป็นธาตุ Earth · ประสานกับ #13 (JournalContent i18n) กันแก้ซ้ำ
 
+## 15. Rebrand ชื่อโปรเจค — "Stock Radar" ชนกับ StockRadars (แอปหุ้นไทยดัง)
+
+**ปัญหา:** แบรนด์ปัจจุบัน "Stock Radar Research" ชนกับ **StockRadars** (stockradars.co ของ SiamSquared — แอปหุ้นไทยที่มี user เยอะ, พาร์ทเนอร์ AIS) รวมถึง stockradar.ai / traderadar.app ที่มีอยู่แล้ว — เสี่ยงสับสนมากโดยเฉพาะ user ไทย ต้องเปลี่ยนก่อนเปิด public (Phase 2 ของ journal API — ตอนคนอื่นเริ่ม login ได้)
+**ทำ:** เคาะชื่อใหม่แล้ว sweep ทั้ง repo (เหมือนรอบลบ xvary) — candidate ที่ search แล้ว (2026-07-04): **ThesisRadar** ว่าง (แนะนำ — ตรง identity thesis-driven/kill criteria/thesis-break) · ที่ชนแล้ว: TradeThesis (crypto AI), ThesisDesk (วิชาการ), Thesis AI (thesisai.app) · ก่อนใช้จริง: เช็คโดเมน (.com/.app) ที่ registrar + rename GitHub repo (`stock-radar-weekly` → ชื่อใหม่, GitHub redirect อัตโนมัติ) + rename Vercel project + อัป `WEB_ORIGIN`/rewrite ใน journal API ถ้าทำไปแล้ว
+**ไฟล์:** ทุกไฟล์ที่มี "Stock Radar" (CLAUDE.md, LICENSE, skills/*/SKILL.md, docs/, references/, tools/edgar.py+market.py User-Agent, web/ metadata/Header/Landing, private/journey.html) · ชื่อ repo/Vercel/Railway project
+**เป้า:** แบรนด์เดียวไม่ชนใคร ใช้ทั้ง repo + เว็บ + API + User-Agent · เปลี่ยน**ครั้งเดียวจบ**ก่อนเปิด public signup
+
+## 16. Journal API — 5 minor items ที่ defer จาก Phase 1 final review (PR #29)
+
+**ปัญหา:** final review ของ Phase 1 พบ 5 จุด minor ที่ตั้งใจไม่ fix ตอนนั้น (ไม่ block การใช้งาน) — จดไว้ให้คนที่ทำ Phase 2 / polish รอบหน้าเก็บ
+**ทำ:**
+  1. subtitle เก่าอ้าง "private/journal.json" ค้างอยู่ — `web/app/journal/JournalContent.tsx:1139` (แก้ copy ให้ตรงยุค API)
+  2. `addExit` ไม่มี server-side over-exit guard — client กันอยู่ฝั่งเดียว ยิง API ตรงขาย shares เกินที่ถือได้ (เพิ่ม validation ใน service)
+  3. POST `/trades` ด้วย client-chosen id ที่ชนกัน → 500 ไม่ใช่ 409 (จับ Prisma P2002 → ConflictException)
+  4. `apiLogout` ไม่ใช้ shared `readError` convention (จัด error handling ให้เหมือน API call อื่น)
+  5. auto-link ตอน user ที่ seed ไว้ login ครั้งแรก ไม่ backfill `name`/`avatarUrl` จาก Google profile
+**ไฟล์:** `web/app/journal/JournalContent.tsx` · `service/src/trades/*` (exit guard, 409) · `web/lib/*` (apiLogout) · `service/src/auth/*` (backfill) — รายละเอียดเต็มใน `.worktrees/journal-api-phase1/.superpowers/sdd/progress.md`
+**เป้า:** เก็บครบ 5 จุด · จุดสำคัญสุดคือข้อ 2 (server ต้องไม่เชื่อ client) ควรทำก่อนเปิด public signup (Phase 2)
+
 ---
 
 ## ยังไม่เลือกทำ (ไว้พิจารณาทีหลัง)

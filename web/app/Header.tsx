@@ -63,7 +63,7 @@ function LangToggle({ lang, setLang }: { lang: Lang; setLang: (l: Lang) => void 
   );
 }
 
-export function Header({ lastUpdated, isLocal }: { lastUpdated: string; isLocal: boolean }) {
+export function Header({ lastUpdated }: { lastUpdated: string }) {
   const [open, setOpen] = useState(false);
   const { lang, setLang } = useLang();
   const th = lang === "th";
@@ -94,11 +94,9 @@ export function Header({ lastUpdated, isLocal }: { lastUpdated: string; isLocal:
           <Link href="/backtest" title="Backtest" style={{ fontSize: 11, color: "var(--muted)", textDecoration: "none", fontFamily: "var(--font-mono, monospace)", fontWeight: 700, letterSpacing: "0.3px" }}>
             📊 Backtest
           </Link>
-          {isLocal && (
-            <Link href="/journal" title="Journal" style={{ fontSize: 11, color: "#f59e0b", textDecoration: "none", fontFamily: "var(--font-mono, monospace)", fontWeight: 700, letterSpacing: "0.3px" }}>
-              📒 Journal
-            </Link>
-          )}
+          <Link href="/journal" title="Journal" style={{ fontSize: 11, color: "#f59e0b", textDecoration: "none", fontFamily: "var(--font-mono, monospace)", fontWeight: 700, letterSpacing: "0.3px" }}>
+            📒 Journal
+          </Link>
           <span style={{ display: "inline-block", width: 7, height: 7, borderRadius: "50%", background: "#10b981", animation: "livePulse 2s ease-in-out infinite", flexShrink: 0 }} />
           <span style={{ fontSize: 12, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>{th ? "อัปเดต" : "Updated"} {lastUpdated}</span>
           <LangToggle lang={lang} setLang={setLang} />
@@ -151,11 +149,9 @@ export function Header({ lastUpdated, isLocal }: { lastUpdated: string; isLocal:
           <Link href="/backtest" onClick={() => setOpen(false)} style={{ fontSize: 14, color: "var(--muted)", textDecoration: "none", fontFamily: "var(--font-mono, monospace)", fontWeight: 700, padding: "8px 6px" }}>
             📊 Backtest
           </Link>
-          {isLocal && (
-            <Link href="/journal" onClick={() => setOpen(false)} style={{ fontSize: 14, color: "#f59e0b", textDecoration: "none", fontFamily: "var(--font-mono, monospace)", fontWeight: 700, padding: "8px 6px" }}>
-              📒 Journal
-            </Link>
-          )}
+          <Link href="/journal" onClick={() => setOpen(false)} style={{ fontSize: 14, color: "#f59e0b", textDecoration: "none", fontFamily: "var(--font-mono, monospace)", fontWeight: 700, padding: "8px 6px" }}>
+            📒 Journal
+          </Link>
           <div style={{ height: 1, background: "var(--border)", margin: "6px 0" }} />
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 8, marginTop: 4 }}>
             <span style={{ display: "flex", alignItems: "center", gap: 8 }}>
