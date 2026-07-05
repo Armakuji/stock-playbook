@@ -1,4 +1,13 @@
-import { Controller, Get, Post, Query, Req, Res, UnauthorizedException, UseGuards } from "@nestjs/common";
+import {
+  Controller,
+  Get,
+  Post,
+  Query,
+  Req,
+  Res,
+  UnauthorizedException,
+  UseGuards,
+} from "@nestjs/common";
 import { ConfigService } from "@nestjs/config";
 import { randomUUID } from "node:crypto";
 import type { Request, Response } from "express";
@@ -35,7 +44,10 @@ export class AuthController {
   }
 
   @Get("google")
-  google(@Query("returnTo") returnTo: string | undefined, @Res() res: Response) {
+  google(
+    @Query("returnTo") returnTo: string | undefined,
+    @Res() res: Response,
+  ) {
     const state = randomUUID();
     res.cookie(OAUTH_STATE_COOKIE, state, {
       httpOnly: true,
@@ -55,16 +67,27 @@ export class AuthController {
   }
 
   @Get("callback")
-  async callback(@Query("code") code: string, @Query("state") state: string, @Req() req: Request, @Res() res: Response) {
+  async callback(
+    @Query("code") code: string,
+    @Query("state") state: string,
+    @Req() req: Request,
+    @Res() res: Response,
+  ) {
     if (!code || !state || state !== req.cookies?.[OAUTH_STATE_COOKIE]) {
       throw new UnauthorizedException("Invalid OAuth state");
     }
     const profile = await this.googleClient().exchangeCodeForProfile(code);
     const user = await this.authService.findOrCreateUserFromGoogle(profile);
-    const token = signSession({ userId: user.id }, this.config.get<string>("SESSION_SECRET")!);
+    const token = signSession(
+      { userId: user.id },
+      this.config.get<string>("SESSION_SECRET")!,
+    );
 
-    const returnTo = req.cookies?.[OAUTH_RETURN_TO_COOKIE];
-    const returnPath = isSafeReturnPath(returnTo) ? returnTo : DEFAULT_RETURN_PATH;
+    const returnTo = req.cookies?.[OAUTH_RETURN_TO_COOKIE] as
+      string | undefined;
+    const returnPath = isSafeReturnPath(returnTo)
+      ? returnTo
+      : DEFAULT_RETURN_PATH;
 
     res.clearCookie(OAUTH_STATE_COOKIE);
     res.clearCookie(OAUTH_RETURN_TO_COOKIE);
@@ -81,7 +104,14 @@ export class AuthController {
   @UseGuards(SessionGuard)
   async me(@CurrentUser() userId: string) {
     const user = await this.authService.getById(userId);
-    return { id: user.id, email: user.email, name: user.name, avatarUrl: user.avatarUrl, role: user.role, status: user.status };
+    return {
+      id: user.id,
+      email: user.email,
+      name: user.name,
+      avatarUrl: user.avatarUrl,
+      role: user.role,
+      status: user.status,
+    };
   }
 
   @Post("logout")

@@ -1,5 +1,7 @@
 # ⬡ Stock Radar Weekly
 
+[![CI](https://github.com/Armakuji/stock-radar-weekly/actions/workflows/ci.yml/badge.svg)](https://github.com/Armakuji/stock-radar-weekly/actions/workflows/ci.yml)
+
 Automated institutional-grade stock analysis pipeline — Claude researches → writes JSON reports → git push → the site redeploys. Plus a multi-user trade journal backed by its own API.
 
 **Live:** [stock-radar-weekly.vercel.app](https://stock-radar-weekly.vercel.app)

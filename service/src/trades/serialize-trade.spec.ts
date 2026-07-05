@@ -19,7 +19,11 @@ describe("serializeTrade", () => {
   });
 
   it("leaves entryDate untouched when it's already a string (defensive, not expected from Prisma)", () => {
-    const trade = { id: "t1", entryDate: "2026-07-01", exits: [] as { date: unknown }[] };
+    const trade = {
+      id: "t1",
+      entryDate: "2026-07-01",
+      exits: [] as { date: unknown }[],
+    };
     expect(serializeTrade(trade).entryDate).toBe("2026-07-01");
   });
 

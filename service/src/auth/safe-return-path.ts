@@ -2,5 +2,10 @@
 // a caller-supplied returnTo value redirect off the web app's own origin
 // (open-redirect via "//evil.com", "http://evil.com", "https://evil.com", etc.).
 export function isSafeReturnPath(path: unknown): path is string {
-  return typeof path === "string" && path.startsWith("/") && !path.startsWith("//") && !path.includes("://");
+  return (
+    typeof path === "string" &&
+    path.startsWith("/") &&
+    !path.startsWith("//") &&
+    !path.includes("://")
+  );
 }

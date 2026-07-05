@@ -1,3 +1,4 @@
+import type { IncomingMessage, ServerResponse } from "http";
 import { Module } from "@nestjs/common";
 import { ConfigModule } from "@nestjs/config";
 import { LoggerModule } from "nestjs-pino";
@@ -5,6 +6,12 @@ import { HealthController } from "./health/health.controller";
 import { PrismaModule } from "./prisma/prisma.module";
 import { AuthModule } from "./auth/auth.module";
 import { TradesModule } from "./trades/trades.module";
+
+// SessionGuard attaches userId directly onto the request object (see
+// session.guard.ts) — not part of Node's IncomingMessage, so it needs its own type.
+interface RequestWithUserId extends IncomingMessage {
+  userId?: string;
+}
 
 const isProd = process.env.NODE_ENV === "production";
 // LOG_FORMAT=pretty (default, everywhere — Railway renders ANSI fine) for a
@@ -46,8 +53,8 @@ const usePretty = (process.env.LOG_FORMAT ?? "pretty") !== "json";
         // (Vercel's own multi-hop infra can alter the standard x-forwarded-for, so
         // it exposes this header specifically to carry the original browser IP) —
         // absent in local dev, where there's no Vercel hop in front of the API.
-        customProps: (req) => ({
-          userId: (req as unknown as { userId?: string }).userId,
+        customProps: (req: RequestWithUserId) => ({
+          userId: req.userId,
           ip: req.headers["x-vercel-forwarded-for"],
         }),
         // Never let a session cookie or bearer token leak into log output.
@@ -59,8 +66,8 @@ const usePretty = (process.env.LOG_FORMAT ?? "pretty") !== "json";
         // remoteAddress, response headers, ...) — method/url/statusCode plus the
         // customProps above are all that's actually useful day-to-day.
         serializers: {
-          req: (req) => ({ method: req.method, url: req.url }),
-          res: (res) => ({ statusCode: res.statusCode }),
+          req: (req: IncomingMessage) => ({ method: req.method, url: req.url }),
+          res: (res: ServerResponse) => ({ statusCode: res.statusCode }),
         },
       },
     }),
