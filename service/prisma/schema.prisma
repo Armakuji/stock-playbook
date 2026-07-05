@@ -1,0 +1,71 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id             String         @id @default(uuid())
+  email          String         @unique
+  name           String?
+  avatarUrl      String?        @map("avatar_url")
+  role           String         @default("user")
+  status         String         @default("active")
+  createdAt      DateTime       @default(now()) @map("created_at")
+  authIdentities AuthIdentity[]
+  trades         Trade[]
+
+  @@map("users")
+}
+
+model AuthIdentity {
+  id        String   @id @default(uuid())
+  userId    String   @map("user_id")
+  user      User     @relation(fields: [userId], references: [id])
+  provider  String
+  subject   String
+  email     String
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@unique([provider, subject])
+  @@map("auth_identities")
+}
+
+// id is a plain String (not @db.Uuid) so legacy non-UUID slugs imported
+// from private/journal.json (e.g. "mqo1lokf25w6") can be inserted verbatim.
+model Trade {
+  id               String      @id @default(uuid())
+  userId           String      @map("user_id")
+  user             User        @relation(fields: [userId], references: [id])
+  ticker           String
+  catalystType     String      @map("catalyst_type")
+  linkedReportDate String?     @map("linked_report_date")
+  entryPrice       Float       @map("entry_price")
+  shares           Float
+  entryDate        DateTime    @map("entry_date") @db.Date
+  plannedTP        Json        @map("planned_tp")
+  plannedSL        Float       @map("planned_sl")
+  status           String
+  realizedPnL      Float?      @map("realized_pnl")
+  notes            String?
+  createdAt        DateTime    @default(now()) @map("created_at")
+  updatedAt        DateTime    @updatedAt @map("updated_at")
+  exits            TradeExit[]
+
+  @@map("trades")
+}
+
+model TradeExit {
+  id      String   @id @default(uuid())
+  tradeId String   @map("trade_id")
+  trade   Trade    @relation(fields: [tradeId], references: [id], onDelete: Cascade)
+  date    DateTime @db.Date
+  price   Float
+  shares  Float
+  note    String?
+
+  @@map("trade_exits")
+}

@@ -249,13 +249,11 @@ export function Landing({
   airCount,
   fireCount,
   lastUpdated,
-  isLocal = false,
 }: {
   waterCount: number;
   airCount: number;
   fireCount: number;
   lastUpdated: string;
-  isLocal?: boolean;
 }) {
   const { lang } = useLang();
   const th = lang === "th";
@@ -418,15 +416,13 @@ export function Landing({
         }}>
           📊 Backtest
         </Link>
-        {isLocal && (
-          <Link href="/journal" style={{
-            fontSize: 12, textDecoration: "none", padding: "7px 14px", borderRadius: 9,
-            background: "var(--card)", border: "1px solid var(--border)", color: "#f59e0b",
-            fontFamily: "var(--font-mono, monospace)", fontWeight: 700,
-          }}>
-            📒 Journal
-          </Link>
-        )}
+        <Link href="/journal" style={{
+          fontSize: 12, textDecoration: "none", padding: "7px 14px", borderRadius: 9,
+          background: "var(--card)", border: "1px solid var(--border)", color: "#f59e0b",
+          fontFamily: "var(--font-mono, monospace)", fontWeight: 700,
+        }}>
+          📒 Journal
+        </Link>
       </div>
 
     </div>
