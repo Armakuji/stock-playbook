@@ -44,7 +44,7 @@ $7/mo warm).
 Monorepo layout (both platforms deploy from a subdirectory of this repo):
 
 ```
-stock-radar-weekly/
+stock-playbook/
 ├── web/        Next.js  → Vercel  (Root Directory = web)
 ├── service/    NestJS   → Railway (Root Directory = service)  ← NEW
 └── skills/ scripts/ docs/ ...
@@ -257,4 +257,4 @@ ever needed.
 - **Earth element (#12 option ก):** if `/journal` becomes the 🌍 Earth feature, this API is its prerequisite — sequence #14 before #12(ก).
 
 ---
-*Not financial advice · Stock Radar Research*
+*Not financial advice · StockPlaybook Research*

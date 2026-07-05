@@ -1,5 +1,5 @@
 #!/bin/bash
-# push.sh — safe one-command push for Stock Radar Weekly
+# push.sh — safe one-command push for StockPlaybook
 # Usage: bash push.sh "your commit message"
 #        bash push.sh  (uses "update" as default message)
 

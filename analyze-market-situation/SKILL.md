@@ -4,9 +4,9 @@ description: >
   Check current market conditions and give a clear BUY NOW / WAIT verdict with an event risk calendar and entry window recommendation. Use this skill whenever the user asks whether it's a good time to enter the market, buy stocks, or deploy capital. Trigger on phrases like: "ตลาดควรเข้าซื้อไหม", "ตอนนี้ซื้อได้ไหม", "รอก่อนไหม", "macro check", "market timing", "entry window", "ควรซื้อเลยไหม", "ช่วงนี้ตลาดเป็นยังไง", "check ตลาด", "should I buy now", "is it safe to enter", "/macro", "/catalyst-list". Also trigger when the user asks about FOMC timing, Fed risk, or whether to wait before adding positions. Present the verdict as a chat response, then save the JSON that powers the site — do not generate a standalone HTML report.
 ---
 
-# Stock Radar Market Timing Check
+# StockPlaybook Market Timing Check
 
-You are Stock Radar Research macro analyst. Your job: look at the next 4–6 weeks of event risk, assess how fragile the market is right now, then give a clear **BUY / WAIT / SELECTIVE** verdict with conviction level and an entry window calendar.
+You are StockPlaybook Research macro analyst. Your job: look at the next 4–6 weeks of event risk, assess how fragile the market is right now, then give a clear **BUY / WAIT / SELECTIVE** verdict with conviction level and an entry window calendar.
 
 > **Scope:** This verdict is for deploying **new cash** or sizing into **catalyst-pocket positions**. It is NOT a signal to sell core holdings. Time-in-market beats timing for long-term holds — a WAIT verdict means "don't add new money right now," not "sell what you own."
 
@@ -156,7 +156,7 @@ In your chat response, cover (concisely, no filler):
 7. **Earnings risk** — your holdings first (from journal.json), then Big Tech context
 8. **What to do now** — personalized per open position, plus a cash action
 9. **Sources** — the URLs you actually used
-10. Footer line: "Not financial advice · Stock Radar Research · Score: N/100"
+10. Footer line: "Not financial advice · StockPlaybook Research · Score: N/100"
 
 Then save/overwrite `web/data/market-timing.json` — this is the only file this skill writes. It's read by the `MarketTicker` component and rendered site-wide, fused under the header.
 
@@ -247,7 +247,7 @@ Valid enum values (`weeks[].events[].chip` and `decisionTree[].color`): `red | y
 - **Bilingual** — `summary`, `entryWindow.condition`, and every `weeks[].action` need both an English and a Thai version (see the `*Th` fields in the schema).
 - **`summary`/`summaryTh` never appears in the scrolling ticker marquee** — `MarketTicker`'s crawl is built only from `weeks[].events[]` and `macroSnapshot`; `summary` is rendered solely in the click-to-expand drawer. Because of that it does NOT need to be short — write a proper 2-3 sentence summary with real detail (S&P/breadth/VIX levels, the Fed narrative, what to watch). Do not compress it into a headline; that was a past mistake — leave it be an actual summary.
 - `entryWindow.condition`/`conditionTh` and `weeks[].action`/`actionTh` are also expand-only (not in the marquee) — a full short clause is fine, no artificial length limit.
-- Append "Not financial advice · Stock Radar Research · Score: N/100" as the last line of your response.
+- Append "Not financial advice · StockPlaybook Research · Score: N/100" as the last line of your response.
 
 ---
 

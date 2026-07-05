@@ -1,8 +1,8 @@
-# Stock Radar Scores (Public Definitions)
+# StockPlaybook Scores (Public Definitions)
 
 This file defines the **public** score framework used by the skill.
 
-Important: production Stock Radar systems use proprietary calibrations. The equations below expose the logic shape, not private threshold tables.
+Important: production StockPlaybook systems use proprietary calibrations. The equations below expose the logic shape, not private threshold tables.
 
 ## Score Scale
 

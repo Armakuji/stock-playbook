@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""SEC EDGAR fundamentals fetcher — Stock Radar Research.
+"""SEC EDGAR fundamentals fetcher — StockPlaybook Research.
 
 Pulls company facts (XBRL) and filing metadata straight from the free SEC
-EDGAR API and normalizes them into the compact snapshot the Stock Radar
+EDGAR API and normalizes them into the compact snapshot the StockPlaybook
 report skills consume. No API key required.
 
 Public functions (stable API — referenced by references/edgar-guide.md):
@@ -30,7 +30,7 @@ import requests
 
 # ── HTTP layer ───────────────────────────────────────────────────────────────
 
-USER_AGENT = "stock-radar-weekly/1.0 (nitipon.ching@gmail.com)"
+USER_AGENT = "stockplaybook/1.0 (nitipon.ching@gmail.com)"
 
 CIK_LOOKUP_URL = "https://www.sec.gov/files/company_tickers.json"
 COMPANY_FACTS_URL = "https://data.sec.gov/api/xbrl/companyfacts/CIK{cik}.json"
@@ -444,7 +444,7 @@ MODES: dict[str, Callable[[str], dict[str, Any]]] = {
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Stock Radar Research — SEC EDGAR fundamentals fetcher"
+        description="StockPlaybook Research — SEC EDGAR fundamentals fetcher"
     )
     parser.add_argument("ticker", help="Ticker symbol, e.g. AAPL")
     parser.add_argument("--mode", default="financials", choices=sorted(MODES))

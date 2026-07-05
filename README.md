@@ -1,10 +1,10 @@
-# ⬡ Stock Radar Weekly
+# ⬡ StockPlaybook
 
-[![CI](https://github.com/Armakuji/stock-radar-weekly/actions/workflows/ci.yml/badge.svg)](https://github.com/Armakuji/stock-radar-weekly/actions/workflows/ci.yml)
+[![CI](https://github.com/Armakuji/stock-playbook/actions/workflows/ci.yml/badge.svg)](https://github.com/Armakuji/stock-playbook/actions/workflows/ci.yml)
 
 Automated institutional-grade stock analysis pipeline — Claude researches → writes JSON reports → git push → the site redeploys. Plus a multi-user trade journal backed by its own API.
 
-**Live:** [stock-radar-weekly.vercel.app](https://stock-radar-weekly.vercel.app)
+**Live:** [stockplaybook.app](https://stockplaybook.app)
 
 ---
 
@@ -99,4 +99,4 @@ npm run start:dev             # http://localhost:4000
 
 ---
 
-*Not financial advice · Stock Radar Research*
+*Not financial advice · StockPlaybook Research*

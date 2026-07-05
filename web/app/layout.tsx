@@ -28,7 +28,7 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Stock Radar Weekly",
+  title: "StockPlaybook",
   description: "Weekly stock analysis",
   icons: { icon: "/favicon.svg" },
 };
