@@ -249,7 +249,7 @@ export function Header({ lastUpdated }: { lastUpdated: string }) {
         <Link href="/" style={{ textDecoration: "none", flexShrink: 0, display: "flex", alignItems: "center", gap: 8 }}>
           <RadarBadge size={24} />
           <span className="srw-logo" style={{ fontSize: 20, fontWeight: 800, letterSpacing: "-0.5px", color: "var(--text)", fontFamily: "var(--font-display, sans-serif)", whiteSpace: "nowrap" }}>
-            Stock Radar Weekly
+            StockPlaybook
           </span>
         </Link>
 

@@ -13,7 +13,7 @@ export class CoworkService {
   private readonly logger = new Logger(CoworkService.name);
   private readonly logDir = path.join(process.cwd(), 'logs');
 
-  // Path to the Stock Radar Research workspace
+  // Path to the StockPlaybook Research workspace
   private readonly radarDir = config.claude.radarDir ??
     '/Users/nitiponchingthongchai/Documents/cowork/stock-radar-weekly';
 

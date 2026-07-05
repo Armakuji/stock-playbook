@@ -121,12 +121,15 @@ Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open N
 **ไฟล์:** `docs/architecture/journal-api.md` (spec เต็ม: schema, endpoints, hosting) · `web/lib/journal.ts` + `web/app/journal/*` (เลิก fs → เรียก API + login gate) · `web/lib/journal-types.ts` (map เป็น schema) · `scripts/fetch-backtest-prices.mjs` + analyze-journal skill (อ่านผ่าน `JOURNAL_API_URL`/`JOURNAL_API_TOKEN`) · `service/` folder ใหม่ใน repo นี้ (monorepo — Railway ตั้ง Root Directory = `service`)
 **เป้า:** `/journal` ใช้ได้บน prod — login Google แล้วเห็น/แก้ trade ของตัวเองเท่านั้น · scripts ทำงานผ่าน API แทนไฟล์ local · ค่า hosting ~$5–10/เดือน (Railway) · เกี่ยวพัน: ทำก่อน #12(ก) ถ้าเลือก journal เป็นธาตุ Earth · ประสานกับ #13 (JournalContent i18n) กันแก้ซ้ำ
 
-## 15. Rebrand ชื่อโปรเจค — "Stock Radar" ชนกับ StockRadars (แอปหุ้นไทยดัง)
+## 15. Rebrand ชื่อโปรเจค — เดิม "Stock Radar" ชนกับ StockRadars (แอปหุ้นไทยดัง) → StockPlaybook
 
-**ปัญหา:** แบรนด์ปัจจุบัน "Stock Radar Research" ชนกับ **StockRadars** (stockradars.co ของ SiamSquared — แอปหุ้นไทยที่มี user เยอะ, พาร์ทเนอร์ AIS) รวมถึง stockradar.ai / traderadar.app ที่มีอยู่แล้ว — เสี่ยงสับสนมากโดยเฉพาะ user ไทย ต้องเปลี่ยนก่อนเปิด public (Phase 2 ของ journal API — ตอนคนอื่นเริ่ม login ได้)
-**ทำ:** ✅ เคาะชื่อแล้ว (2026-07-05): **StockPlaybook** — สื่อ product ตรงสุด (report = แผนการเล่น entry/TP/SL, journal มี Plan Adherence อยู่แล้ว) · search แล้วว่าง · ตัวที่ตกรอบ: ThesisRadar (ไม่สื่อ stock), Stockscope (แออัด), StockHunt (มีแอปแล้ว), StockAtlas/StockForge (รอง) · sweep ทั้ง repo (เหมือนรอบลบ xvary) + เช็คโดเมน stockplaybook.com/.app ที่ registrar + rename GitHub repo → `stock-playbook` (redirect อัตโนมัติ) + rename Vercel project + อัป Google redirect URI + `WEB_ORIGIN` บน Railway
-**ไฟล์:** ทุกไฟล์ที่มี "Stock Radar" (CLAUDE.md, LICENSE, skills/*/SKILL.md, docs/, references/, tools/edgar.py+market.py User-Agent, web/ metadata/Header/Landing, private/journey.html) · ชื่อ repo/Vercel/Railway project
-**เป้า:** แบรนด์เดียวไม่ชนใคร ใช้ทั้ง repo + เว็บ + API + User-Agent · เปลี่ยน**ครั้งเดียวจบ**ก่อนเปิด public signup
+**ปัญหา:** แบรนด์เดิม "Stock Radar Research" ชนกับ **StockRadars** (stockradars.co ของ SiamSquared — แอปหุ้นไทยที่มี user เยอะ, พาร์ทเนอร์ AIS) รวมถึง stockradar.ai / traderadar.app ที่มีอยู่แล้ว — เสี่ยงสับสนมากโดยเฉพาะ user ไทย ต้องเปลี่ยนก่อนเปิด public (Phase 2 ของ journal API — ตอนคนอื่นเริ่ม login ได้)
+**ทำ:** ✅ เคาะชื่อแล้ว (2026-07-05): **StockPlaybook** — สื่อ product ตรงสุด (report = แผนการเล่น entry/TP/SL, journal มี Plan Adherence อยู่แล้ว) · search แล้วว่าง · ตัวที่ตกรอบ: ThesisRadar (ไม่สื่อ stock), Stockscope (แออัด), StockHunt (มีแอปแล้ว), StockAtlas/StockForge (รอง)
+✅ **Code sweep เสร็จแล้ว (2026-07-05):** grep -ri "stock radar" ทั้ง repo (ยกเว้น .git/node_modules/.next/.worktrees) → แทนที่ "Stock Radar Research"/"Stock Radar Weekly"/"Stock Radar" → "StockPlaybook"/"StockPlaybook Research" ครบทุกไฟล์ (persona strings, LICENSE, CLAUDE.md, skills/*/SKILL.md, docs/, references/, web UI: Header/Landing/layout metadata/globals.css, private/journey.html) · User-Agent ใน tools/edgar.py + tools/market.py: `stock-radar-weekly/1.0` → `stockplaybook/1.0` · เช็ค icon.svg/favicon(-animated).svg แล้ว — ไม่มี text แบรนด์เก่า embed (เป็น path/shape ล้วน) ปลอดภัย ไม่ต้อง gen ใหม่ · **ข้อยกเว้นที่ตั้งใจไม่แตะ:** `PROJECT_STATUS.md` บรรทัด log ประวัติไฟล์ `Stock Radar_full_report_20260615.html` (ชื่อไฟล์จริงในอดีต เปลี่ยนจะผิดประวัติ), URL `stock-radar-weekly.vercel.app` และ path `stock-radar-weekly/` ทุกจุด (repo/Vercel ยังไม่ rename)
+⚠️ **พบระหว่างเช็ค asset (ไม่เกี่ยวกับ rebrand โดยตรง):** `assets/social-preview.png` เป็นไฟล์เสีย — มี 3 byte แปลกปลอม (`ef bf bd`, UTF-8 replacement char) ต่อหน้า PNG signature มาตั้งแต่ initial commit อ่าน/เปิดไม่ได้เลย ยังไม่รู้ว่ามี text แบรนด์เก่าอยู่ในรูปหรือไม่ — ต้องแก้ไฟล์ก่อนถึงจะเช็คได้ (แยกเป็นบั๊กคนละเรื่อง ไม่ block รอบนี้)
+**เหลือ manual (คนละ commit, หลัง sweep นี้):** เช็คโดเมน stockplaybook.com/.app ที่ registrar + rename GitHub repo → `stock-playbook` (redirect อัตโนมัติ) + rename Vercel project + อัป Google OAuth redirect URI + `WEB_ORIGIN` บน Railway + แก้ URL/badge ใน README + .env.example ให้ตรงโดเมนใหม่
+**ไฟล์:** ดู code sweep ด้านบน (ครบแล้ว) · ที่เหลือ: ชื่อ repo/Vercel/Railway project, `assets/social-preview.png` (คนละบั๊ก)
+**เป้า:** แบรนด์เดียวไม่ชนใคร ใช้ทั้ง repo + เว็บ + API + User-Agent ✅ code sweep เสร็จ · เหลือ manual steps (repo/Vercel/domain/OAuth) ก่อนเปิด public signup
 
 ## 16. Journal API — 5 minor items ที่ defer จาก Phase 1 final review (PR #29)
 
@@ -165,4 +168,4 @@ Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open N
   - หมายเหตุ: ต้องตั้งบน account/เครื่องใหม่ (Mac mini) เพราะ schedule ผูกกับ session/เครื่อง
 - **รัน `npm run build` ครั้งแรกบน Mac** — ยืนยัน production build ผ่าน (แซนด์บ็อกซ์รันไม่ได้เพราะ SWC binary เป็น linux/arm64 ไม่ตรง platform) tsc ผ่านแล้วทุกไฟล์
 
-_Generated during code review · not financial advice · Stock Radar Research_
+_Generated during code review · not financial advice · StockPlaybook Research_

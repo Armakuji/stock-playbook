@@ -1,4 +1,4 @@
-# ⬡ Stock Radar Weekly
+# ⬡ StockPlaybook
 
 [![CI](https://github.com/Armakuji/stock-radar-weekly/actions/workflows/ci.yml/badge.svg)](https://github.com/Armakuji/stock-radar-weekly/actions/workflows/ci.yml)
 
@@ -99,4 +99,4 @@ npm run start:dev             # http://localhost:4000
 
 ---
 
-*Not financial advice · Stock Radar Research*
+*Not financial advice · StockPlaybook Research*

@@ -1,4 +1,4 @@
-# Stock Radar Weekly — Features
+# StockPlaybook — Features
 
 ภาพรวมความสามารถทั้งหมด (อัปเดต 2026-06-23 · branch `feature/improve`)
 สถาปัตยกรรม: Next.js (App Router) + JSON reports ใน `web/data/reports/` · ดีไซน์ dark fintech · สองภาษา TH/EN
@@ -52,4 +52,4 @@
 - Earned category ranking + expectancy-based sizing *(รอ North Star สะสม sample)*
 - Portfolio correlation view · Price-trigger alerts · Small-cap quota
 
-_Not financial advice · Stock Radar Research_
+_Not financial advice · StockPlaybook Research_

@@ -257,4 +257,4 @@ ever needed.
 - **Earth element (#12 option ก):** if `/journal` becomes the 🌍 Earth feature, this API is its prerequisite — sequence #14 before #12(ก).
 
 ---
-*Not financial advice · Stock Radar Research*
+*Not financial advice · StockPlaybook Research*
