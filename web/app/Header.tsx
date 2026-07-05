@@ -1,9 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useLang } from "@/lib/LanguageContext";
 import type { Lang } from "@/lib/i18n";
+import { fetchCurrentUser, logout, loginUrl, type CurrentUser } from "@/lib/auth-client";
 
 const STRATEGY = [
   { href: "/dca",      label: "💧 DCA",      grad: "linear-gradient(90deg, #38bdf8, #3b82f6)", titleEn: "Water · Quality-core · long-term accumulate", titleTh: "ธาตุน้ำ · Quality-core · ถือยาว สะสม" },
@@ -63,10 +65,103 @@ function LangToggle({ lang, setLang }: { lang: Lang; setLang: (l: Lang) => void 
   );
 }
 
+// ── Auth widget: avatar + logout dropdown, or a Login button ────────────────
+type AuthState = CurrentUser | null | "loading";
+
+function initials(user: CurrentUser): string {
+  return (user.name?.trim()?.[0] ?? user.email[0]).toUpperCase();
+}
+
+function AuthWidget({ user, th, pathname }: { user: AuthState; th: boolean; pathname: string }) {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!menuOpen) return;
+    function handleClick(e: MouseEvent) {
+      if (ref.current && e.target instanceof Node && !ref.current.contains(e.target)) setMenuOpen(false);
+    }
+    document.addEventListener("mousedown", handleClick);
+    return () => document.removeEventListener("mousedown", handleClick);
+  }, [menuOpen]);
+
+  if (user === "loading") return null;
+
+  if (user === null) {
+    return (
+      <Link
+        href={loginUrl(pathname)}
+        style={{
+          fontSize: 11, fontWeight: 800, padding: "5px 12px", borderRadius: 7,
+          background: "#10b981", color: "#fff", textDecoration: "none",
+          fontFamily: "var(--font-mono, monospace)", letterSpacing: "0.3px", whiteSpace: "nowrap",
+        }}
+      >
+        {th ? "เข้าสู่ระบบ" : "Login"}
+      </Link>
+    );
+  }
+
+  const label = user.name ?? user.email;
+
+  return (
+    <div ref={ref} style={{ position: "relative" }}>
+      <button
+        onClick={() => setMenuOpen((o) => !o)}
+        aria-expanded={menuOpen}
+        style={{
+          display: "flex", alignItems: "center", gap: 6, background: "transparent",
+          border: "1px solid var(--border)", borderRadius: 20, padding: "3px 10px 3px 3px",
+          cursor: "pointer", color: "var(--text)", fontFamily: "var(--font-mono, monospace)",
+        }}
+      >
+        {user.avatarUrl ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={user.avatarUrl} alt="" width={22} height={22} style={{ borderRadius: "50%", display: "block" }} />
+        ) : (
+          <span style={{
+            width: 22, height: 22, borderRadius: "50%", background: "#3b82f6", color: "#fff",
+            display: "flex", alignItems: "center", justifyContent: "center", fontSize: 11, fontWeight: 800, flexShrink: 0,
+          }}>
+            {initials(user)}
+          </span>
+        )}
+        <span style={{ fontSize: 11, fontWeight: 700, maxWidth: 120, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+          {label}
+        </span>
+      </button>
+      {menuOpen && (
+        <div style={{
+          position: "absolute", top: "calc(100% + 6px)", right: 0, background: "var(--card)",
+          border: "1px solid var(--border)", borderRadius: 8, padding: 4, minWidth: 130, zIndex: 20,
+          boxShadow: "0 8px 24px rgba(0,0,0,0.25)",
+        }}>
+          <button
+            onClick={() => logout()}
+            style={{
+              display: "block", width: "100%", textAlign: "left", padding: "8px 10px", borderRadius: 6,
+              border: "none", background: "transparent", color: "var(--text)", cursor: "pointer",
+              fontSize: 12, fontFamily: "var(--font-mono, monospace)", fontWeight: 700,
+            }}
+          >
+            {th ? "ออกจากระบบ" : "Logout"}
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
+
 export function Header({ lastUpdated }: { lastUpdated: string }) {
   const [open, setOpen] = useState(false);
   const { lang, setLang } = useLang();
   const th = lang === "th";
+  const pathname = usePathname();
+  const [user, setUser] = useState<AuthState>("loading");
+
+  useEffect(() => {
+    fetchCurrentUser().then(setUser);
+  }, []);
 
   return (
     <header style={{ borderBottom: "1px solid var(--border)", backgroundColor: "var(--card)", position: "relative" }}>
@@ -100,6 +195,7 @@ export function Header({ lastUpdated }: { lastUpdated: string }) {
           <span style={{ display: "inline-block", width: 7, height: 7, borderRadius: "50%", background: "#10b981", animation: "livePulse 2s ease-in-out infinite", flexShrink: 0 }} />
           <span style={{ fontSize: 12, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>{th ? "อัปเดต" : "Updated"} {lastUpdated}</span>
           <LangToggle lang={lang} setLang={setLang} />
+          <AuthWidget user={user} th={th} pathname={pathname} />
         </div>
 
         {/* ── Mobile hamburger ── */}
@@ -152,6 +248,10 @@ export function Header({ lastUpdated }: { lastUpdated: string }) {
           <Link href="/journal" onClick={() => setOpen(false)} style={{ fontSize: 14, color: "#f59e0b", textDecoration: "none", fontFamily: "var(--font-mono, monospace)", fontWeight: 700, padding: "8px 6px" }}>
             📒 Journal
           </Link>
+          <div style={{ height: 1, background: "var(--border)", margin: "6px 0" }} />
+          <div style={{ padding: "2px 6px" }}>
+            <AuthWidget user={user} th={th} pathname={pathname} />
+          </div>
           <div style={{ height: 1, background: "var(--border)", margin: "6px 0" }} />
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 8, marginTop: 4 }}>
             <span style={{ display: "flex", alignItems: "center", gap: 8 }}>
