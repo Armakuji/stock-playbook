@@ -4,7 +4,7 @@ import { useState, useCallback, useEffect } from "react";
 import type { LivePrice } from "@/app/api/prices/route";
 import Link from "next/link";
 import { useLang } from "@/lib/LanguageContext";
-import { Trade, CatalystType, TradeExit, ValidatorResult, JournalValidation } from "@/lib/journal-types";
+import { Trade, CatalystType, TradeExit, ValidatorResult, AiValidateQuota } from "@/lib/journal-types";
 import { JournalStats, realizedPnL as calcPnL, holdDays } from "@/lib/journal-math";
 
 // Passed from server page — slim subset of StockReport
@@ -1020,13 +1020,13 @@ export interface ReportDateOption {
   catalystType: string | null;
 }
 
-export function JournalContent({ initialTrades, stats, reportOptions = [], priceMap = {}, reportsByTicker = {}, validation = null }: {
+export function JournalContent({ initialTrades, stats, reportOptions = [], priceMap = {}, reportsByTicker = {}, quota = null }: {
   initialTrades: Trade[];
   stats: JournalStats;
   reportOptions?: ReportOption[];
   priceMap?: Record<string, PriceInfo>;
   reportsByTicker?: Record<string, ReportDateOption[]>;
-  validation?: JournalValidation | null;
+  quota?: AiValidateQuota | null;
 }) {
   const { lang } = useLang();
   const th = lang === "th";
@@ -1037,6 +1037,8 @@ export function JournalContent({ initialTrades, stats, reportOptions = [], price
   const [filterType, setFilterType] = useState<string>("all");
   const [livePriceMap, setLivePriceMap] = useState<Record<string, PriceInfo>>(priceMap);
   const [priceStatus, setPriceStatus] = useState<"loading" | "live" | "error" | "idle">("idle");
+  const [quotaState, setQuotaState] = useState<AiValidateQuota | null>(quota);
+  const [validating, setValidating] = useState(false);
 
   // Fetch live prices from Yahoo Finance on mount
   useEffect(() => {
@@ -1110,6 +1112,35 @@ export function JournalContent({ initialTrades, stats, reportOptions = [], price
     }
   }, []);
 
+  const handleValidate = useCallback(async () => {
+    setValidating(true);
+    try {
+      const res = await fetch("/api/journal/journal/validate", { method: "POST" });
+      if (!res.ok) {
+        const body = await res.json().catch(() => ({}));
+        if (res.status === 403) {
+          setQuotaState((prev) => (prev ? { ...prev, remaining: 0 } : prev));
+          alert(th ? "ใช้ AI Validate ครบโควต้าแล้ว" : "AI Validate quota used up");
+          return;
+        }
+        throw new Error(body.message ?? `Validate failed (${res.status})`);
+      }
+      const data: { results: (ValidatorResult & { tradeId: string; validatedAt: string })[]; remaining: number } =
+        await res.json();
+      setTrades((prev) =>
+        prev.map((t) => {
+          const match = data.results.find((r) => r.tradeId === t.id);
+          return match ? { ...t, validation: match } : t;
+        }),
+      );
+      setQuotaState((prev) => (prev ? { ...prev, remaining: data.remaining, used: prev.limit - data.remaining } : prev));
+    } catch (err) {
+      alert(err instanceof Error ? err.message : "AI validate failed");
+    } finally {
+      setValidating(false);
+    }
+  }, [th]);
+
   const handleDelete = useCallback(async (id: string) => {
     if (!confirm("Delete this trade?")) return;
     try {
@@ -1179,6 +1210,24 @@ export function JournalContent({ initialTrades, stats, reportOptions = [], price
           )}
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+          {quotaState && (
+            <button
+              onClick={handleValidate}
+              disabled={validating || quotaState.remaining <= 0}
+              title={quotaState.remaining <= 0 ? (th ? "ใช้โควต้า AI Validate ครบแล้ว" : "AI Validate quota used up") : undefined}
+              style={{
+                padding: "8px 16px", borderRadius: 8, border: "1px solid #8b5cf645",
+                background: quotaState.remaining <= 0 ? "transparent" : "linear-gradient(135deg,#8b5cf618,#8b5cf630)",
+                color: quotaState.remaining <= 0 ? "var(--muted)" : "#8b5cf6",
+                fontWeight: 800, fontSize: 13,
+                cursor: validating || quotaState.remaining <= 0 ? "not-allowed" : "pointer",
+                fontFamily: "var(--font-mono, monospace)", opacity: validating ? 0.6 : 1,
+              }}
+            >
+              {validating ? (th ? "⟳ กำลังตรวจ…" : "⟳ Validating…") : "🤖 AI Validate Journal"}
+              {" "}<span style={{ fontSize: 10, opacity: 0.8 }}>({quotaState.remaining}/{quotaState.limit})</span>
+            </button>
+          )}
           <button
             onClick={() => { setShowForm(true); setEditTrade(null); }}
             style={{ padding: "8px 16px", borderRadius: 8, border: "none", background: "#10b981", color: "#fff", fontWeight: 800, fontSize: 13, cursor: "pointer", fontFamily: "var(--font-mono, monospace)" }}
@@ -1276,8 +1325,8 @@ export function JournalContent({ initialTrades, stats, reportOptions = [], price
               key={trade.id}
               trade={trade}
               priceInfo={livePriceMap[trade.ticker] ?? null}
-              validatorResult={validation?.results[trade.ticker]}
-              validationGeneratedAt={validation?.generatedAt}
+              validatorResult={trade.validation ?? undefined}
+              validationGeneratedAt={trade.validation?.validatedAt}
               onEdit={() => { setEditTrade(trade); setShowForm(false); window.scrollTo({ top: 0, behavior: "smooth" }); }}
               onDelete={() => handleDelete(trade.id)}
               onAddExit={(exit) => handleAddExit(trade.id, exit)}
