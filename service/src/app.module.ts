@@ -6,6 +6,7 @@ import { HealthController } from "./health/health.controller";
 import { PrismaModule } from "./prisma/prisma.module";
 import { AuthModule } from "./auth/auth.module";
 import { TradesModule } from "./trades/trades.module";
+import { ValidationModule } from "./validation/validation.module";
 
 // SessionGuard attaches userId directly onto the request object (see
 // session.guard.ts) — not part of Node's IncomingMessage, so it needs its own type.
@@ -74,6 +75,7 @@ const usePretty = (process.env.LOG_FORMAT ?? "pretty") !== "json";
     PrismaModule,
     AuthModule,
     TradesModule,
+    ValidationModule,
   ],
   controllers: [HealthController],
 })
