@@ -5,7 +5,7 @@
 export const dynamic = "force-dynamic";
 
 import { cookies } from "next/headers";
-import { Trade } from "@/lib/journal-types";
+import { Trade, AiValidateQuota } from "@/lib/journal-types";
 import { computeStats } from "@/lib/journal-math";
 import { getAllReports, getAllReportsGrouped } from "@/lib/reports";
 import { JournalContent } from "./JournalContent";
@@ -63,6 +63,14 @@ export default async function JournalPage() {
   }
 
   const trades: Trade[] = await tradesRes.json();
+
+  const quotaRes = await fetch(`${API_ORIGIN}/journal/validate/quota`, {
+    headers,
+    cache: "no-store",
+  }).catch(() => null);
+  const quota: AiValidateQuota | null =
+    quotaRes && quotaRes.ok ? await quotaRes.json() : null;
+
   const stats = computeStats(trades);
   const reports = getAllReports();
 
@@ -107,6 +115,7 @@ export default async function JournalPage() {
       reportOptions={reportOptions}
       priceMap={priceMap}
       reportsByTicker={reportsByTicker}
+      quota={quota}
     />
   );
 }

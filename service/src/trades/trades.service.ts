@@ -16,7 +16,7 @@ export class TradesService {
   findAll(userId: string) {
     return this.prisma.trade.findMany({
       where: { userId },
-      include: { exits: true },
+      include: { exits: true, validation: true },
       orderBy: { entryDate: "desc" },
     });
   }
@@ -44,7 +44,7 @@ export class TradesService {
         status: "open",
         notes: dto.notes,
       },
-      include: { exits: true },
+      include: { exits: true, validation: true },
     });
     this.logger.info(
       { userId, tradeId: trade.id, ticker: trade.ticker },
@@ -74,7 +74,7 @@ export class TradesService {
         ...(dto.plannedSL !== undefined && { plannedSL: dto.plannedSL }),
         ...(dto.notes !== undefined && { notes: dto.notes }),
       },
-      include: { exits: true },
+      include: { exits: true, validation: true },
     });
     this.logger.info(
       { userId, tradeId: id, ticker: trade.ticker },
@@ -121,7 +121,7 @@ export class TradesService {
     return this.prisma.trade.update({
       where: { id },
       data,
-      include: { exits: true },
+      include: { exits: true, validation: true },
     });
   }
 }

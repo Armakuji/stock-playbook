@@ -39,6 +39,7 @@ export interface Trade {
   exits: TradeExit[];
   realizedPnL?: number;             // computed on close; stored for speed
   notes?: string;
+  validation?: TradeValidationRecord | null;
 }
 
 export interface JournalFile {
@@ -58,8 +59,12 @@ export interface ValidatorResult {
   color: "green" | "yellow" | "red";
 }
 
-export interface JournalValidation {
-  _note: string;
-  generatedAt: string; // ISO timestamp
-  results: Record<string, ValidatorResult>; // keyed by ticker
+export interface TradeValidationRecord extends ValidatorResult {
+  validatedAt: string; // ISO timestamp
+}
+
+export interface AiValidateQuota {
+  used: number;
+  limit: number;
+  remaining: number;
 }

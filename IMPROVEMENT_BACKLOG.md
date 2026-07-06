@@ -150,6 +150,49 @@ Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open N
 **ไฟล์:** `web/app/Header.tsx` (AuthWidget: avatar/dropdown/login, desktop+mobile) · `web/lib/auth-client.ts` (ใหม่ — fetchCurrentUser/logout/loginUrl ใช้ร่วมกับ JournalContent) · `web/app/journal/JournalContent.tsx` (ลบ badge + ปุ่ม logout เดิม + apiLogout) · `service/src/auth/auth.controller.ts` (returnTo cookie flow, avatarUrl ใน /me) · `service/src/auth/safe-return-path.ts` (ใหม่) · `service/src/auth/auth.service.ts` (backfillProfile)
 **เป้า:** เปิดหน้าไหนก็รู้สถานะ login ✓ · logout อยู่ใต้ avatar dropdown ตาม convention ปกติ ✓ · ไม่มีร่องรอย "local only" เหลือ ✓ · login จากหน้าไหนก็กลับมาหน้านั้น ✓ · tests: 29/29 service unit tests ผ่าน (รวม 3 test ใหม่สำหรับ backfill + 6 test ใหม่สำหรับ safe-return-path) · tsc --noEmit ผ่านทั้ง service/web
 
+## 18. Playbook theme refresh — visual identity ยังเป็น radar อยู่
+
+**ปัญหา:** rebrand ชื่อเป็น StockPlaybook แล้ว (#15 ✅) แต่ visual ยังเป็น radar-era ทั้งหมด: logo ⬡, favicon/icon.svg, จุด pulse, dot grid background, social-preview.png (ไฟล์เสียด้วย — ไบต์เกินก่อน PNG signature) — แบรนด์กับหน้าตาไม่ตรงกัน
+**ทำ:** 2 เฟส — (1) รัน prompt ใน `docs/design/theme-refresh-prompt.md` กับ Claude Design (แนบ screenshot landing/catalyst/report/journal) → ได้ `docs/design/playbook-theme-handoff.md` (2) ส่ง handoff ให้ Claude CLI implement ทีละ section (มี prompt ต่อให้ CLI ในไฟล์เดียวกัน) · ห้าม rename component radar-era (MarketTicker ฯลฯ) ในรอบนี้ — แยก housekeeping ทีหลัง
+**ไฟล์:** `docs/design/theme-refresh-prompt.md` (prompt พร้อมใช้) · เป้าหมายแก้: `web/app/globals.css` (tokens), `web/app/icon.svg` + favicon, `web/app/Header.tsx`, `web/app/Landing.tsx`, `assets/social-preview.png` (gen ใหม่), layout OG metadata
+**เป้า:** identity "playbook" ครบทุกจุด (logo/motif/OG) · dark theme + สี verdict + ธีม 4 ธาตุคงเดิม · mobile 390px + EN/TH ไม่พัง
+
+## 19. Improve SEO — search Google แล้วหาเว็บไม่เจอ
+
+**ปัญหา:** stockplaybook.app ยังไม่ติด Google index เลย — ส่วนหนึ่งเพราะโดเมนใหม่มาก (เพิ่งซื้อ) แต่ฝั่งเว็บก็ยังไม่มีโครง SEO พื้นฐาน: ไม่มี sitemap/robots, metadata ต่อหน้าอาจไม่ครบ, ไม่มี structured data, ยังไม่ได้ submit Search Console
+**ทำ:** (1) **โค้ด** — App Router: เพิ่ม `web/app/sitemap.ts` (gen จากรายการ report/หน้า static ทั้งหมด) + `web/app/robots.ts` · เช็ค `generateMetadata` ทุกหน้า: title/description เฉพาะหน้า (โดยเฉพาะ `/report/[ticker]` — title แบบ "NVDA — StockPlaybook: entry, targets, catalyst"), canonical URL, OG/Twitter tags (รอ OG image จาก #18) · เพิ่ม JSON-LD structured data ที่เหมาะ (WebSite + Article ต่อ report) · ห้าม index หน้า auth-only (`/journal` → noindex) (2) **Manual (คนทำ)** — Google Search Console: verify domain (DNS TXT) → submit sitemap → ขอ index หน้าแรก · Bing Webmaster ด้วยก็ได้ฟรี (3) รอ — โดเมนใหม่ใช้เวลา index เป็นสัปดาห์ต่อให้ทำครบ อย่าตกใจ
+**ไฟล์:** `web/app/layout.tsx` (metadata กลาง) · `web/app/sitemap.ts` + `web/app/robots.ts` (ใหม่) · `web/app/report/[ticker]/page.tsx` + หน้า catalyst/dca/turbo/backtest (generateMetadata) · `web/lib/reports.ts` (list ticker สำหรับ sitemap)
+**เป้า:** search "StockPlaybook" / "stockplaybook.app" เจอเว็บใน Google · ทุก report page มี title/description/OG เฉพาะตัว · Search Console เห็น sitemap ครบ ไม่มี coverage error · เกี่ยวพัน: OG image รอ #18 (theme) — ทำ SEO โครงก่อนได้เลยไม่ต้องรอ
+
+## 20. AI Validate Journal — user กดปุ่มให้ Claude API วิเคราะห์พอร์ต (quota 3 ครั้ง/lifetime)
+
+**ปัญหา:** validator ปัจจุบันรันได้เฉพาะเจ้าของผ่าน Claude CLI (`/analyze-journal`) — user คนอื่นบน prod ไม่มีทางได้ AI validation เลย ทั้งที่ `trade_validations` table + VALIDATOR box ใน UI รอไว้แล้ว
+**ทำ (เคาะ design แล้ว 2026-07-05):**
+  1. **Schema เพิ่ม:** `validation_requests (id, user_id FK, requested_at, status(pending|done|failed), trades_count, model, input_tokens, output_tokens)` — นับ quota + audit cost · seed `features`: `ai_validation` + `plan_features(free, ai_validation, limit_value=3)` — **lifetime** (นับจาก count ทั้งหมดของ user ไม่มี reset)
+  2. **Endpoint:** `POST /journal/validate` (cookie auth) — เช็ค quota จาก count(validation_requests WHERE user_id AND status='done') vs limit_value → เกิน = 403 พร้อม `{remaining: 0}` · ดึง open trades ของ user จาก DB → ประกอบ prompt จาก **skill `skills/analyze-journal/SKILL.md` เดิม** (แปลง journal format DB → format ที่ prompt คาด) → เรียก Claude API (`ANTHROPIC_API_KEY` ใน Railway vars) **model Sonnet** ล่าสุด · **บังคับ output ด้วย tool-use JSON schema** (shape = ValidatorResult ต่อ trade) กัน parse พัง/prompt injection จาก trade notes · upsert `trade_validations` ต่อ trade → return ผล + `remaining`
+  3. **UX:** sync + spinner (~15–40 วิ) · ปุ่ม "AI Validate Journal" บนหัว journal พร้อม badge เหลือกี่ครั้ง (`GET /journal/validate/quota`) · quota หมด = **disable ปุ่ม** + tooltip อธิบาย · ผล validation แสดงใน VALIDATOR box ของแต่ละ OPEN trade (เขียว HOLD / เหลือง WATCH / แดง CUT) + validated_at · เปิด journal รอบหน้าเห็นผลเดิมจาก DB · กด validate ใหม่ = ทับผลเก่า + หัก quota
+  4. **Guard rails:** timeout Claude call 90s · max_tokens cap · ห้าม log prompt/response เต็ม (มีข้อมูลการเงิน) log แค่ token counts · validate อย่างน้อย 1 open trade ไม่งั้น 400 ไม่หัก quota · failed = ไม่หัก quota
+**ไฟล์:** `service/prisma/schema.prisma` (+validation_requests, seed features) · `service/src/validation/*` (module ใหม่: controller/service/claude.client/prompt.ts จาก analyze-journal skill) · `web/app/journal/JournalContent.tsx` (ปุ่ม+badge+VALIDATOR box) · `web/lib` (api client) · i18n EN/TH · Railway var `ANTHROPIC_API_KEY`
+**เป้า:** user login → กด AI Validate → เห็น verdict ต่อ trade ใน <1 นาที → refresh แล้วผลยังอยู่ → ครบ 3 ครั้งปุ่ม disable · cost ~฿2–3/ครั้ง ควบคุมด้วย quota ระดับ plan
+
+## 21. Monetization — subscription plan / buy more AI usage
+
+**ปัญหา:** quota AI validation 3 ครั้ง/lifetime (#20) หมดแล้วไม่มีทางได้เพิ่ม — อนาคตอยากขาย: subscription plan (pro) หรือซื้อ usage เพิ่มเป็นครั้ง ๆ
+**ทำ:** ยังไม่ออกแบบ — แต่โครงพร้อมแล้ว: `plans`/`plan_features` รองรับ plan ใหม่ (แค่ insert row limit_value สูงขึ้น), `subscriptions.external_ref` รอ Stripe · ตอนทำจริงค่อยเลือก: Stripe subscription vs one-time top-up (ต้องเพิ่มตาราง usage_credits ถ้าเป็น top-up)
+**ไฟล์:** `service/prisma/schema.prisma` · Stripe webhook module ใหม่ · หน้า pricing/upgrade ใน web
+**เป้า:** จ่ายแล้ว quota เพิ่มอัตโนมัติ — รอ #20 มีข้อมูลการใช้จริงก่อนค่อยตั้งราคา
+
+## 22. Soft delete — user action ลบข้อมูลใช้ `deleted_at` แทน hard delete
+
+**ปัญหา:** ตอนนี้ `DELETE /trades/:id` ลบ row ทิ้งจริงจาก DB — user กดพลาดแล้วข้อมูล trade (รวม exits + validation ที่เสีย quota AI ไป) หายถาวร กู้ไม่ได้ และเสีย audit trail
+**ทำ:** เปลี่ยนเป็น soft delete ทั้ง user-facing delete actions:
+  1. **Schema:** เพิ่ม `deleted_at timestamptz NULL` ใน `trades` (และ `trade_exits` ถ้ามี endpoint ลบ exit) — migration ใหม่ ไม่กระทบข้อมูลเดิม
+  2. **Service:** `DELETE /trades/:id` → `UPDATE SET deleted_at = now()` แทน `prisma.delete` · ทุก query อ่าน (list/get/stats/AI validate) เติม `WHERE deleted_at IS NULL` — ระวังให้ครบทุกจุด แนะนำรวม filter ไว้ที่เดียว (Prisma client extension หรือ helper ใน TradesService) กันลืมใน query ใหม่ ๆ · `trade_validations`/`trade_exits` ของ trade ที่ soft-deleted ไม่ต้องแตะ (ผูกด้วย FK อยู่แล้ว หายจากผลลัพธ์เองเมื่อ trade ถูก filter)
+  3. **Quota note:** trade ที่ถูก soft delete ไม่นับใน AI validate รอบใหม่ (query กรองแล้ว) แต่ validation_requests เดิมคงอยู่ (audit)
+  4. **อนาคต (ไม่ทำรอบนี้):** ปุ่ม "restore" / auto-purge ข้อมูลที่ deleted เกิน 90 วัน / GDPR delete-account จริง (hard delete ทั้ง user — คนละ flow)
+**ไฟล์:** `service/prisma/schema.prisma` (+deleted_at) · `service/src/trades/trades.service.ts` (delete → update + default filter) · tests: ลบแล้ว list ไม่เห็น/get 404/stats ไม่นับ + row ยังอยู่ใน DB
+**เป้า:** user กดลบ → หายจาก UI ทุกจุดเหมือนเดิม แต่ row ยังอยู่ใน DB พร้อม `deleted_at` · ไม่มี endpoint ไหน leak trade ที่ลบแล้ว (เขียน test คุม)
+
 ---
 
 ## ยังไม่เลือกทำ (ไว้พิจารณาทีหลัง)
