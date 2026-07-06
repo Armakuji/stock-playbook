@@ -282,8 +282,8 @@ export function Landing({
     },
     {
       href: null, element: "EARTH", glyph: "🌍", feature: "Earth",
-      tagline: th ? "รากฐาน — พอร์ต / track record · วางแผนไว้ ยังไม่เปิด"
-                  : "Foundation — portfolio / track record · planned, not live",
+      tagline: th ? "Rare Earth · โลหะมีค่า"
+                  : "Rare Earth Elements, Precious Metals",
       risk: "—", horizon: "—", count: null,
       c1: "#a16207", c2: "#84cc16", glow: "rgba(161,98,7,0.0)", ghost: true,
     },
@@ -365,31 +365,6 @@ export function Landing({
               on one radar · institutional-grade analysis</>
             )}
           </p>
-
-          {/* element legend line */}
-          <div style={{
-            display: "flex", alignItems: "center", justifyContent: "center", gap: 0,
-            margin: "26px auto 0", maxWidth: 380, height: 5, borderRadius: 5, overflow: "hidden",
-            animation: "fadeInUp 0.45s ease both",
-            animationDelay: "0.25s",
-          }}>
-            <div style={{ flex: 1, background: "#38bdf8" }} />
-            <div style={{ flex: 1, background: "#10b981" }} />
-            <div style={{ flex: 1, background: "#ff6d00" }} />
-            <div style={{ flex: 1, background: "#a16207", opacity: 0.4 }} />
-          </div>
-          <div style={{
-            display: "flex", alignItems: "center", justifyContent: "center", gap: 0,
-            margin: "8px auto 0", maxWidth: 380,
-            fontSize: 9.5, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", letterSpacing: "0.6px",
-            animation: "fadeInUp 0.45s ease both",
-            animationDelay: "0.25s",
-          }}>
-            <span style={{ flex: 1, textAlign: "center" }}>💧 {th ? "น้ำ" : "Water"}</span>
-            <span style={{ flex: 1, textAlign: "center" }}>🌬️ {th ? "ลม" : "Air"}</span>
-            <span style={{ flex: 1, textAlign: "center" }}>🔥 {th ? "ไฟ" : "Fire"}</span>
-            <span style={{ flex: 1, textAlign: "center", opacity: 0.5 }}>🌍 {th ? "ดิน" : "Earth"}</span>
-          </div>
         </div>
       </div>
 

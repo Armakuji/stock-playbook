@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "nest build",
+    "build": "prisma generate && nest build",
     "start": "node dist/main",
-    "start:dev": "nest start --watch",
+    "start:dev": "prisma generate && nest start --watch",
     "lint": "eslint \"{src,scripts}/**/*.ts\" --fix",
     "test": "jest",
-    "seed:import": "ts-node scripts/seed-import.ts"
+    "seed:import": "ts-node scripts/seed-import.ts",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.110.0",

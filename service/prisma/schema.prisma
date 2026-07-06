@@ -126,7 +126,9 @@ model TradeValidation {
   stopBreached Boolean  @map("stop_breached")
   atRisk       Boolean  @map("at_risk")
   summary      String
+  summaryTh    String   @default("") @map("summary_th")
   action       String
+  actionTh     String   @default("") @map("action_th")
   color        String   // green | yellow | red
   validatedAt  DateTime @default(now()) @map("validated_at")
 

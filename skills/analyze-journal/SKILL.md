@@ -200,8 +200,10 @@ Read existing `private/journal-validation.json` if it exists — **merge** the n
       "thesisIntact": true,
       "stopBreached": false,
       "atRisk": false,
-      "summary": "1-2 sentence status, including the Add More fact",
-      "action": "One-line HOLD/CUT recommendation, followed by the Add More call and its specific reason — e.g. 'Hold through Sep 3 earnings. Don't add — SL buffer thin (7.97%) on sector-wide selloff.'",
+      "summary": "1-2 sentence status in English, including the Add More fact",
+      "summaryTh": "สรุปภาษาไทย — ความหมายเดียวกับ summary",
+      "action": "One-line HOLD/CUT recommendation in English, plus add-more call and reason",
+      "actionTh": "คำแนะนำภาษาไทย — ความหมายเดียวกับ action",
       "color": "yellow"
     }
   }
@@ -235,7 +237,9 @@ Then remind which tickers remain if in single-ticker mode:
 - **This skill does NOT refresh `web/data/reports/` (or speculative/dca) research reports, and does NOT commit or push anything to git.** It is a read-only price/thesis check against the journal. If a report needs a fresh full re-analysis, that's a separate `/analyze` call, not part of this skill.
 - **Every open position gets an "Add more?" call** (Step 4) — never skip it, and never give it without a specific reason (a date, a %, a level). If you don't have enough information to pin down a reason, that itself is a reason to say "Wait."
 - **Always end by saving `private/journal-validation.json`** (Step 7) — this skill has no standalone "just talk, don't persist" mode. If the user only asked a quick question about one ticker, still update that ticker's entry in the file.
-- Output in Thai/English mix matching Stock Playbook style
+- **Bilingual validation copy** — every saved result needs `summary` + `summaryTh` and `action` + `actionTh` as matched pairs (same facts/numbers). English fields for EN UI; Thai fields for TH UI. Verdict badges (HOLD/WATCH/CUT) stay English in the UI.
+- **Bilingual validation copy** — every saved result needs `summary` + `summaryTh` and `action` + `actionTh` as matched pairs (same facts/numbers). English fields for EN UI; Thai fields for TH UI. Verdict badges (HOLD/WATCH/CUT) stay English in the UI.
+- Output in Thai/English mix matching Stock Playbook style **in chat cards only** — persisted JSON uses separate EN/TH fields, not mixed strings in `summary`. **in chat cards only** — persisted JSON uses separate EN/TH fields, not mixed strings in `summary`.
 - Append "Not financial advice" at the end
 
 ## Trigger phrases

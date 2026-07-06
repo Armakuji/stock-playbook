@@ -198,16 +198,19 @@ export function MarketTicker({ data }: { data: MarketTimingData | null | undefin
         <div style={{ borderBottom: `1px solid ${vs.border}20`, background: "var(--card)" }}>
           <div style={{ maxWidth: 1200, margin: "0 auto" }}>
 
-            {/* Summary + entry window */}
-            <div style={{ padding: "12px 16px", display: "flex", gap: 12, flexWrap: "wrap", alignItems: "flex-start" }}>
-              <div style={{ flex: 1, minWidth: 200 }}>
-                <div style={{ fontSize: 11, color: "var(--text)", lineHeight: 1.7 }}>
-                  {summaryText}
-                </div>
+            {/* Summary + entry window — always stacked (TH summary is long; side-by-side flex broke layout) */}
+            <div style={{ padding: "12px 16px", display: "flex", flexDirection: "column", gap: 12 }}>
+              <div style={{ fontSize: 11, color: "var(--text)", lineHeight: 1.7 }}>
+                {summaryText}
               </div>
               <div style={{
-                minWidth: 160, padding: "10px 14px", borderRadius: 8,
-                background: "rgba(16,185,129,0.08)", border: "1px solid rgba(16,185,129,0.25)",
+                alignSelf: "center",
+                width: "100%",
+                maxWidth: 360,
+                padding: "10px 14px",
+                borderRadius: 8,
+                background: "rgba(16,185,129,0.08)",
+                border: "1px solid rgba(16,185,129,0.25)",
                 textAlign: "center",
               }}>
                 <div style={{ fontSize: 9, color: "#10b981", fontWeight: 800, letterSpacing: "1px", marginBottom: 4 }}>

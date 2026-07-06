@@ -516,7 +516,11 @@ const VALIDATOR_COLORS: Record<string, { bg: string; border: string; text: strin
 };
 
 function ValidatorSection({ result, generatedAt }: { result: ValidatorResult; generatedAt: string }) {
+  const { lang } = useLang();
+  const th = lang === "th";
   const c = VALIDATOR_COLORS[result.color] ?? VALIDATOR_COLORS.yellow;
+  const summaryText = th ? (result.summaryTh || result.summary) : result.summary;
+  const actionText = th ? (result.actionTh || result.action) : result.action;
   const d = new Date(generatedAt);
   const dateStr = d.toLocaleDateString("en-US", { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" });
   return (
@@ -547,10 +551,10 @@ function ValidatorSection({ result, generatedAt }: { result: ValidatorResult; ge
         </span>
       </div>
       <div style={{ fontSize: 12, color: "#94a3b8", fontFamily: "var(--font-body, sans-serif)", lineHeight: 1.6, marginBottom: 6 }}>
-        {result.summary}
+        {summaryText}
       </div>
       <div style={{ fontSize: 11, fontWeight: 700, color: c.text, fontFamily: "var(--font-mono, monospace)" }}>
-        → {result.action}
+        → {actionText}
       </div>
     </div>
   );
@@ -928,8 +932,8 @@ function TradeRow({ trade, priceInfo, validatorResult, validationGeneratedAt, on
                   <span style={{ fontSize: 9, fontWeight: 800, color: "#1e3a5f", textTransform: "uppercase", letterSpacing: "1.2px", fontFamily: "var(--font-mono, monospace)" }}>Validator</span>
                   <span style={{ fontSize: 11, color: "#334155", fontFamily: "var(--font-mono, monospace)" }}>
                     {th
-                      ? "ยังไม่มีผลตรวจ — กด \"🤖 AI Validate Journal\" ด้านบนเพื่อตรวจเทรดนี้"
-                      : "No results yet — click \"🤖 AI Validate Journal\" above to check this trade"}
+                      ? "ยังไม่มีผลตรวจ — กด \"สแกนเทรด\" ด้านบนเพื่อให้ AI ตรวจแผน"
+                      : "No results yet — hit \"Scan Trades\" above for an AI plan check"}
                   </span>
                 </div>
               )
@@ -1014,6 +1018,655 @@ function TradeRow({ trade, priceInfo, validatorResult, validationGeneratedAt, on
   );
 }
 
+// ── No trades — scan blocked modal ────────────────────────────────────────────
+
+function NoTradesScanModal({
+  th,
+  reason,
+  onCancel,
+  onAddTrade,
+}: {
+  th: boolean;
+  reason: "empty" | "no-open";
+  onCancel: () => void;
+  onAddTrade: () => void;
+}) {
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onCancel();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [onCancel]);
+
+  return (
+    <div
+      role="alertdialog"
+      aria-modal="true"
+      aria-labelledby="no-trades-scan-title"
+      aria-describedby="no-trades-scan-desc"
+      onClick={onCancel}
+      style={{
+        position: "fixed", inset: 0, zIndex: 9998,
+        display: "flex", alignItems: "center", justifyContent: "center",
+        padding: 24,
+        background: "rgba(6, 10, 18, 0.72)",
+        backdropFilter: "blur(6px)",
+        WebkitBackdropFilter: "blur(6px)",
+      }}
+    >
+      <div
+        onClick={(e) => e.stopPropagation()}
+        style={{
+          width: "min(400px, 100%)",
+          borderRadius: 14,
+          padding: "22px 22px 18px",
+          background: "linear-gradient(160deg, rgba(30, 22, 46, 0.98), rgba(15, 17, 23, 0.99))",
+          border: "1px solid rgba(139, 92, 246, 0.35)",
+          boxShadow: "0 20px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(139,92,246,0.06) inset",
+        }}
+      >
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 14, marginBottom: 16 }}>
+          <div style={{
+            width: 44, height: 44, borderRadius: 10, flexShrink: 0,
+            display: "flex", alignItems: "center", justifyContent: "center",
+            background: "rgba(139, 92, 246, 0.12)", border: "1px solid rgba(139, 92, 246, 0.3)",
+            fontSize: 20,
+          }}>
+            📒
+          </div>
+          <div style={{ minWidth: 0 }}>
+            <div
+              id="no-trades-scan-title"
+              style={{
+                fontSize: 16, fontWeight: 800, color: "var(--text)", marginBottom: 4,
+                fontFamily: "var(--font-display, sans-serif)", letterSpacing: "-0.3px",
+              }}
+            >
+              {reason === "empty"
+                ? (th ? "เพิ่มเทรดก่อนสแกน" : "Add a trade first")
+                : (th ? "ไม่มีเทรดที่เปิดอยู่" : "No open trades to scan")}
+            </div>
+            <div
+              id="no-trades-scan-desc"
+              style={{ fontSize: 12, color: "var(--muted)", lineHeight: 1.55, fontFamily: "var(--font-mono, monospace)" }}
+            >
+              {reason === "empty"
+                ? (th
+                  ? "ยังไม่มีเทรดใน journal — กด Log Trade เพื่อบันทึกแผนก่อน แล้วค่อยใช้ Scan Trades ตรวจแผนด้วย AI"
+                  : "Your journal is empty — log a trade plan first, then use Scan Trades for an AI plan check.")
+                : (th
+                  ? "Scan Trades ตรวจเฉพาะเทรดที่ status เปิดอยู่ — ลอง Log Trade ใหม่หรือเปิด position ที่ปิดไปแล้ว"
+                  : "Scan Trades checks open positions only — log a new trade or reopen a closed position.")}
+            </div>
+          </div>
+        </div>
+
+        <div style={{ display: "flex", gap: 10, justifyContent: "flex-end" }}>
+          <button
+            type="button"
+            onClick={onCancel}
+            style={{
+              padding: "9px 18px", borderRadius: 8, cursor: "pointer",
+              border: "1px solid var(--border)", background: "transparent", color: "var(--muted)",
+              fontSize: 12, fontWeight: 700, fontFamily: "var(--font-mono, monospace)",
+            }}
+          >
+            {th ? "ปิด" : "Close"}
+          </button>
+          <button
+            type="button"
+            onClick={onAddTrade}
+            style={{
+              padding: "9px 18px", borderRadius: 8, border: "none",
+              background: "linear-gradient(135deg, #10b981, #059669)",
+              color: "#fff", fontSize: 12, fontWeight: 800,
+              cursor: "pointer", fontFamily: "var(--font-mono, monospace)",
+              boxShadow: "0 4px 14px rgba(16,185,129,0.35)",
+            }}
+          >
+            {th ? "+ บันทึกเทรด" : "+ Log Trade"}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ── Scan quota exhausted modal ────────────────────────────────────────────────
+
+const SCAN_QUOTA_ADMIN_EMAIL = "nitipon.ching@gmail.com";
+
+function ScanQuotaExhaustedModal({
+  th,
+  limit,
+  onDismiss,
+}: {
+  th: boolean;
+  limit: number;
+  onDismiss: () => void;
+}) {
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onDismiss();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [onDismiss]);
+
+  return (
+    <div
+      role="alertdialog"
+      aria-modal="true"
+      aria-labelledby="scan-quota-title"
+      aria-describedby="scan-quota-desc"
+      onClick={onDismiss}
+      style={{
+        position: "fixed", inset: 0, zIndex: 9998,
+        display: "flex", alignItems: "center", justifyContent: "center",
+        padding: 24,
+        background: "rgba(6, 10, 18, 0.72)",
+        backdropFilter: "blur(6px)",
+        WebkitBackdropFilter: "blur(6px)",
+      }}
+    >
+      <div
+        onClick={(e) => e.stopPropagation()}
+        style={{
+          width: "min(420px, 100%)",
+          borderRadius: 14,
+          padding: "22px 22px 18px",
+          background: "linear-gradient(160deg, rgba(40, 28, 20, 0.98), rgba(15, 17, 23, 0.99))",
+          border: "1px solid rgba(245, 158, 11, 0.4)",
+          boxShadow: "0 20px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(245,158,11,0.08) inset",
+        }}
+      >
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 14, marginBottom: 16 }}>
+          <div style={{
+            width: 44, height: 44, borderRadius: 10, flexShrink: 0,
+            display: "flex", alignItems: "center", justifyContent: "center",
+            background: "rgba(245, 158, 11, 0.12)", border: "1px solid rgba(245, 158, 11, 0.35)",
+            fontSize: 20,
+          }}>
+            ⏳
+          </div>
+          <div style={{ minWidth: 0 }}>
+            <div
+              id="scan-quota-title"
+              style={{
+                fontSize: 16, fontWeight: 800, color: "var(--text)", marginBottom: 4,
+                fontFamily: "var(--font-display, sans-serif)", letterSpacing: "-0.3px",
+              }}
+            >
+              {th ? "ใช้โควต้าสแกนครบแล้ว" : "Scan quota used up"}
+            </div>
+            <div
+              id="scan-quota-desc"
+              style={{ fontSize: 12, color: "var(--muted)", lineHeight: 1.55, fontFamily: "var(--font-mono, monospace)" }}
+            >
+              {th
+                ? `ใช้โควต้า AI Scan ครบ ${limit} ครั้งแล้ว — ติดต่อ admin เพื่อ reset Scan Trades`
+                : `You've used all ${limit} AI scans — contact the admin to reset your Scan Trades quota.`}
+            </div>
+          </div>
+        </div>
+
+        <div style={{
+          marginBottom: 18, padding: "12px 14px", borderRadius: 10,
+          background: "rgba(0,0,0,0.25)", border: "1px solid var(--border)",
+        }}>
+          <div style={{
+            fontSize: 9, fontWeight: 800, color: "var(--muted)", textTransform: "uppercase",
+            letterSpacing: "1px", fontFamily: "var(--font-mono, monospace)", marginBottom: 8,
+          }}>
+            {th ? "ติดต่อ admin" : "Contact admin"}
+          </div>
+          <a
+            href={`mailto:${SCAN_QUOTA_ADMIN_EMAIL}?subject=${encodeURIComponent("Stock Playbook — Reset Scan Trades quota")}`}
+            style={{
+              fontSize: 13, fontWeight: 700, color: "#fbbf24",
+              fontFamily: "var(--font-mono, monospace)", textDecoration: "none",
+              wordBreak: "break-all",
+            }}
+          >
+            {SCAN_QUOTA_ADMIN_EMAIL}
+          </a>
+        </div>
+
+        <div style={{ display: "flex", gap: 10, justifyContent: "flex-end" }}>
+          <button
+            type="button"
+            onClick={onDismiss}
+            style={{
+              padding: "9px 18px", borderRadius: 8, cursor: "pointer",
+              border: "1px solid var(--border)", background: "transparent", color: "var(--muted)",
+              fontSize: 12, fontWeight: 700, fontFamily: "var(--font-mono, monospace)",
+            }}
+          >
+            {th ? "ปิด" : "Close"}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ── Scan success modal ────────────────────────────────────────────────────────
+
+function ScanSuccessModal({
+  th,
+  scanned,
+  remaining,
+  onDismiss,
+}: {
+  th: boolean;
+  scanned: number;
+  remaining: number;
+  onDismiss: () => void;
+}) {
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onDismiss();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [onDismiss]);
+
+  return (
+    <div
+      role="alertdialog"
+      aria-modal="true"
+      aria-labelledby="scan-success-title"
+      aria-describedby="scan-success-desc"
+      onClick={onDismiss}
+      style={{
+        position: "fixed", inset: 0, zIndex: 9998,
+        display: "flex", alignItems: "center", justifyContent: "center",
+        padding: 24,
+        background: "rgba(6, 10, 18, 0.72)",
+        backdropFilter: "blur(6px)",
+        WebkitBackdropFilter: "blur(6px)",
+      }}
+    >
+      <div
+        onClick={(e) => e.stopPropagation()}
+        style={{
+          width: "min(420px, 100%)",
+          borderRadius: 14,
+          padding: "22px 22px 18px",
+          background: "linear-gradient(160deg, rgba(16, 40, 32, 0.98), rgba(15, 17, 23, 0.99))",
+          border: "1px solid rgba(16, 185, 129, 0.4)",
+          boxShadow: "0 20px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(16,185,129,0.08) inset",
+        }}
+      >
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 14, marginBottom: 16 }}>
+          <div style={{
+            width: 44, height: 44, borderRadius: 10, flexShrink: 0,
+            display: "flex", alignItems: "center", justifyContent: "center",
+            background: "rgba(16, 185, 129, 0.15)", border: "1px solid rgba(16, 185, 129, 0.35)",
+            fontSize: 20, color: "#6ee7b7",
+          }}>
+            ✓
+          </div>
+          <div style={{ minWidth: 0 }}>
+            <div
+              id="scan-success-title"
+              style={{
+                fontSize: 16, fontWeight: 800, color: "var(--text)", marginBottom: 4,
+                fontFamily: "var(--font-display, sans-serif)", letterSpacing: "-0.3px",
+              }}
+            >
+              {th ? "สแกนเสร็จแล้ว" : "Scan complete"}
+            </div>
+            <div
+              id="scan-success-desc"
+              style={{ fontSize: 12, color: "var(--muted)", lineHeight: 1.55, fontFamily: "var(--font-mono, monospace)" }}
+            >
+              {th
+                ? `AI ตรวจแผน ${scanned} เทรดที่เปิดอยู่แล้ว — กด expand แต่ละหุ้นด้านล่างเพื่อดูผล Validator (HOLD / WATCH / CUT)`
+                : `AI checked ${scanned} open ${scanned === 1 ? "trade" : "trades"} — expand each stock below to see the Validator verdict (HOLD / WATCH / CUT).`}
+            </div>
+          </div>
+        </div>
+
+        <div style={{
+          marginBottom: 18, padding: "10px 14px", borderRadius: 10,
+          background: "rgba(16, 185, 129, 0.08)", border: "1px solid rgba(16, 185, 129, 0.2)",
+          fontSize: 11, color: "#6ee7b7", fontFamily: "var(--font-mono, monospace)", fontWeight: 700,
+        }}>
+          {th
+            ? `เหลือสแกน AI อีก ${remaining} ครั้ง`
+            : `${remaining} AI scan${remaining === 1 ? "" : "s"} remaining`}
+        </div>
+
+        <div style={{ display: "flex", gap: 10, justifyContent: "flex-end" }}>
+          <button
+            type="button"
+            onClick={onDismiss}
+            style={{
+              padding: "9px 18px", borderRadius: 8, border: "none",
+              background: "linear-gradient(135deg, #10b981, #059669)",
+              color: "#fff", fontSize: 12, fontWeight: 800,
+              cursor: "pointer", fontFamily: "var(--font-mono, monospace)",
+              boxShadow: "0 4px 14px rgba(16,185,129,0.35)",
+            }}
+          >
+            {th ? "ดูผลลัพธ์" : "View results"}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ── Delete confirm modal ──────────────────────────────────────────────────────
+
+function DeleteConfirmModal({
+  trade,
+  th,
+  deleting,
+  onCancel,
+  onConfirm,
+}: {
+  trade: Trade;
+  th: boolean;
+  deleting: boolean;
+  onCancel: () => void;
+  onConfirm: () => void;
+}) {
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape" && !deleting) onCancel();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [deleting, onCancel]);
+
+  const entryStr = trade.entryDate.slice(0, 10);
+
+  return (
+    <div
+      role="alertdialog"
+      aria-modal="true"
+      aria-labelledby="delete-trade-title"
+      aria-describedby="delete-trade-desc"
+      onClick={() => { if (!deleting) onCancel(); }}
+      style={{
+        position: "fixed", inset: 0, zIndex: 9998,
+        display: "flex", alignItems: "center", justifyContent: "center",
+        padding: 24,
+        background: "rgba(6, 10, 18, 0.72)",
+        backdropFilter: "blur(6px)",
+        WebkitBackdropFilter: "blur(6px)",
+      }}
+    >
+      <div
+        onClick={(e) => e.stopPropagation()}
+        style={{
+          width: "min(400px, 100%)",
+          borderRadius: 14,
+          padding: "22px 22px 18px",
+          background: "linear-gradient(160deg, rgba(30, 22, 28, 0.98), rgba(15, 17, 23, 0.99))",
+          border: "1px solid rgba(239, 68, 68, 0.35)",
+          boxShadow: "0 20px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(239,68,68,0.06) inset",
+        }}
+      >
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 14, marginBottom: 16 }}>
+          <div style={{
+            width: 44, height: 44, borderRadius: 10, flexShrink: 0,
+            display: "flex", alignItems: "center", justifyContent: "center",
+            background: "rgba(239, 68, 68, 0.12)", border: "1px solid rgba(239, 68, 68, 0.3)",
+            fontSize: 20,
+          }}>
+            🗑
+          </div>
+          <div style={{ minWidth: 0 }}>
+            <div
+              id="delete-trade-title"
+              style={{
+                fontSize: 16, fontWeight: 800, color: "var(--text)", marginBottom: 4,
+                fontFamily: "var(--font-display, sans-serif)", letterSpacing: "-0.3px",
+              }}
+            >
+              {th ? "ลบเทรดนี้?" : "Delete this trade?"}
+            </div>
+            <div
+              id="delete-trade-desc"
+              style={{ fontSize: 12, color: "var(--muted)", lineHeight: 1.55, fontFamily: "var(--font-mono, monospace)" }}
+            >
+              {th
+                ? "การลบไม่สามารถย้อนกลับได้ — ข้อมูล exits และ AI validation ของเทรดนี้จะหายไป"
+                : "This cannot be undone — exits and AI validation for this trade will be removed."}
+            </div>
+          </div>
+        </div>
+
+        <div style={{
+          marginBottom: 18, padding: "12px 14px", borderRadius: 10,
+          background: "rgba(0,0,0,0.25)", border: "1px solid var(--border)",
+        }}>
+          <div style={{ fontSize: 18, fontWeight: 900, color: "#f87171", fontFamily: "var(--font-mono, monospace)", marginBottom: 6 }}>
+            {trade.ticker}
+          </div>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: "8px 16px", fontSize: 11, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>
+            <span>{th ? "เข้า" : "Entry"} ${trade.entryPrice.toFixed(2)}</span>
+            <span>{trade.shares} {th ? "หุ้น" : "shares"}</span>
+            <span>{entryStr}</span>
+            <span style={{
+              padding: "1px 7px", borderRadius: 4, fontSize: 10, fontWeight: 700,
+              background: trade.status === "open" ? "#f59e0b18" : "#64748b18",
+              color: trade.status === "open" ? "#f59e0b" : "#94a3b8",
+              border: `1px solid ${trade.status === "open" ? "#f59e0b35" : "#64748b35"}`,
+            }}>
+              {trade.status.toUpperCase()}
+            </span>
+          </div>
+        </div>
+
+        <div style={{ display: "flex", gap: 10, justifyContent: "flex-end" }}>
+          <button
+            type="button"
+            disabled={deleting}
+            onClick={onCancel}
+            style={{
+              padding: "9px 18px", borderRadius: 8, cursor: deleting ? "not-allowed" : "pointer",
+              border: "1px solid var(--border)", background: "transparent", color: "var(--muted)",
+              fontSize: 12, fontWeight: 700, fontFamily: "var(--font-mono, monospace)",
+              opacity: deleting ? 0.5 : 1,
+            }}
+          >
+            {th ? "ยกเลิก" : "Cancel"}
+          </button>
+          <button
+            type="button"
+            disabled={deleting}
+            onClick={onConfirm}
+            style={{
+              padding: "9px 18px", borderRadius: 8, border: "none",
+              background: deleting ? "#7f1d1d" : "linear-gradient(135deg, #ef4444, #dc2626)",
+              color: "#fff", fontSize: 12, fontWeight: 800,
+              cursor: deleting ? "wait" : "pointer",
+              fontFamily: "var(--font-mono, monospace)",
+              boxShadow: deleting ? "none" : "0 4px 14px rgba(239,68,68,0.35)",
+              minWidth: 100,
+            }}
+          >
+            {deleting ? (th ? "กำลังลบ…" : "Deleting…") : (th ? "ลบเทรด" : "Delete trade")}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ── AI Validate overlay ───────────────────────────────────────────────────────
+
+function ValidateJournalOverlay({ th, openCount }: { th: boolean; openCount: number }) {
+  const steps = th
+    ? ["ดึงราคาล่าสุด…", "วิเคราะห์แผนเทรด…", "AI กำลังตรวจ journal…"]
+    : ["Fetching live prices…", "Analyzing trade plans…", "AI validating journal…"];
+
+  const [stepIdx, setStepIdx] = useState(0);
+
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => { document.body.style.overflow = ""; };
+  }, []);
+
+  useEffect(() => {
+    const id = window.setInterval(() => {
+      setStepIdx((i) => (i + 1) % steps.length);
+    }, 3200);
+    return () => window.clearInterval(id);
+  }, [steps.length]);
+
+  return (
+    <div
+      role="alertdialog"
+      aria-modal="true"
+      aria-busy="true"
+      aria-label={th ? "กำลังตรวจ journal ด้วย AI" : "AI journal validation in progress"}
+      style={{
+        position: "fixed", inset: 0, zIndex: 9999,
+        display: "flex", alignItems: "center", justifyContent: "center",
+        padding: 24,
+        background: "rgba(6, 10, 18, 0.82)",
+        backdropFilter: "blur(10px)",
+        WebkitBackdropFilter: "blur(10px)",
+      }}
+    >
+      <div style={{
+        width: "min(420px, 100%)",
+        borderRadius: 16,
+        padding: "28px 24px 24px",
+        background: "linear-gradient(145deg, rgba(30, 27, 46, 0.95), rgba(15, 17, 23, 0.98))",
+        border: "1px solid rgba(139, 92, 246, 0.35)",
+        boxShadow: "0 24px 80px rgba(0,0,0,0.55), 0 0 0 1px rgba(139,92,246,0.08) inset",
+        textAlign: "center",
+      }}>
+        {/* Radar spinner */}
+        <div style={{ position: "relative", width: 88, height: 88, margin: "0 auto 20px" }}>
+          <div className="vj-radar-ring" aria-hidden />
+          <div className="vj-radar-ring vj-radar-ring-2" aria-hidden />
+          <svg width={88} height={88} viewBox="0 0 88 88" aria-hidden style={{ position: "relative", zIndex: 1 }}>
+            <circle cx="44" cy="44" r="32" fill="none" stroke="rgba(139,92,246,0.2)" strokeWidth="1.5" />
+            <circle cx="44" cy="44" r="20" fill="none" stroke="rgba(139,92,246,0.15)" strokeWidth="1" />
+            <g className="vj-radar-sweep" style={{ transformOrigin: "44px 44px" }}>
+              <line x1="44" y1="44" x2="44" y2="14" stroke="#a78bfa" strokeWidth="2.5" strokeLinecap="round" />
+            </g>
+            <circle cx="44" cy="44" r="4" fill="#8b5cf6" />
+            <circle cx="58" cy="30" r="3" fill="#c4b5fd" className="vj-radar-blip" />
+          </svg>
+        </div>
+
+        <div style={{
+          fontSize: 11, fontWeight: 800, letterSpacing: "1.5px", textTransform: "uppercase",
+          color: "#a78bfa", marginBottom: 8, fontFamily: "var(--font-mono, monospace)",
+        }}>
+          🤖 {th ? "สแกนเทรด · AI" : "Scan Trades · AI"}
+        </div>
+
+        <div style={{
+          fontSize: 15, fontWeight: 700, color: "var(--text)", marginBottom: 6,
+          fontFamily: "var(--font-display, sans-serif)",
+        }}>
+          {th ? "กำลังตรวจเทรดของคุณ…" : "Validating your trades…"}
+        </div>
+
+        <div style={{
+          fontSize: 12, color: "var(--muted)", marginBottom: 18, lineHeight: 1.5,
+          fontFamily: "var(--font-mono, monospace)", minHeight: 36,
+        }}>
+          {steps[stepIdx]}
+          <span className="vj-dots" aria-hidden />
+          <br />
+          <span style={{ fontSize: 10, opacity: 0.75 }}>
+            {openCount} {th ? "ตำแหน่งเปิด" : "open position"}{openCount !== 1 ? (th ? "" : "s") : ""}
+            {" · "}
+            {th ? "โปรดรอ 15–40 วินาที" : "usually 15–40 seconds"}
+          </span>
+        </div>
+
+        <div style={{
+          height: 3, borderRadius: 99, background: "rgba(139,92,246,0.15)", overflow: "hidden", marginBottom: 14,
+        }}>
+          <div className="vj-progress-bar" />
+        </div>
+
+        <div style={{ fontSize: 10, color: "#475569", fontFamily: "var(--font-mono, monospace)" }}>
+          {th ? "อย่ากดปุ่มอื่น — กำลังประมวลผล" : "Please wait — do not click other actions"}
+        </div>
+      </div>
+
+      <style>{`
+        .vj-radar-ring {
+          position: absolute; inset: 0; border-radius: 50%;
+          border: 1px solid rgba(139, 92, 246, 0.35);
+          animation: vjPulseRing 2.4s ease-out infinite;
+        }
+        .vj-radar-ring-2 { animation-delay: 1.2s; }
+        .vj-radar-sweep {
+          animation: vjRadarSweep 1.8s linear infinite;
+        }
+        .vj-radar-blip {
+          animation: vjBlip 1.8s ease-in-out infinite;
+        }
+        .vj-progress-bar {
+          height: 100%; width: 40%; border-radius: 99px;
+          background: linear-gradient(90deg, #8b5cf6, #c4b5fd, #8b5cf6);
+          background-size: 200% 100%;
+          animation: vjProgress 1.6s ease-in-out infinite;
+        }
+        .vj-dots::after {
+          content: "";
+          animation: vjDots 1.4s steps(4, end) infinite;
+        }
+        @keyframes vjRadarSweep {
+          from { transform: rotate(0deg); }
+          to { transform: rotate(360deg); }
+        }
+        @keyframes vjPulseRing {
+          0% { transform: scale(0.85); opacity: 0.9; }
+          100% { transform: scale(1.35); opacity: 0; }
+        }
+        @keyframes vjBlip {
+          0%, 100% { opacity: 0.35; }
+          50% { opacity: 1; }
+        }
+        @keyframes vjProgress {
+          0% { transform: translateX(-120%); background-position: 0% 50%; }
+          100% { transform: translateX(320%); background-position: 100% 50%; }
+        }
+        @keyframes vjDots {
+          0% { content: ""; }
+          25% { content: "."; }
+          50% { content: ".."; }
+          75% { content: "..."; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .vj-radar-sweep, .vj-radar-ring, .vj-radar-blip, .vj-progress-bar { animation: none !important; }
+        }
+      `}</style>
+    </div>
+  );
+}
+
 // ── Main Component ────────────────────────────────────────────────────────────
 
 export interface ReportDateOption {
@@ -1045,6 +1698,12 @@ export function JournalContent({ initialTrades, stats, reportOptions = [], price
   const [priceStatus, setPriceStatus] = useState<"loading" | "live" | "error" | "idle">("idle");
   const [quotaState, setQuotaState] = useState<AiValidateQuota | null>(quota);
   const [validating, setValidating] = useState(false);
+  const [deleteTarget, setDeleteTarget] = useState<Trade | null>(null);
+  const [deleting, setDeleting] = useState(false);
+  const [showNoTradesModal, setShowNoTradesModal] = useState(false);
+  const [scanBlockReason, setScanBlockReason] = useState<"empty" | "no-open">("empty");
+  const [scanSuccess, setScanSuccess] = useState<{ scanned: number; remaining: number } | null>(null);
+  const [showQuotaExhaustedModal, setShowQuotaExhaustedModal] = useState(false);
 
   // Fetch live prices from Yahoo Finance on mount
   useEffect(() => {
@@ -1126,7 +1785,12 @@ export function JournalContent({ initialTrades, stats, reportOptions = [], price
         const body = await res.json().catch(() => ({}));
         if (res.status === 403) {
           setQuotaState((prev) => (prev ? { ...prev, remaining: 0 } : prev));
-          alert(th ? "ใช้ AI Validate ครบโควต้าแล้ว" : "AI Validate quota used up");
+          setShowQuotaExhaustedModal(true);
+          return;
+        }
+        if (res.status === 400 && body.message === "No open trades to validate") {
+          setScanBlockReason("no-open");
+          setShowNoTradesModal(true);
           return;
         }
         throw new Error(body.message ?? `Validate failed (${res.status})`);
@@ -1140,6 +1804,7 @@ export function JournalContent({ initialTrades, stats, reportOptions = [], price
         }),
       );
       setQuotaState((prev) => (prev ? { ...prev, remaining: data.remaining, used: prev.limit - data.remaining } : prev));
+      setScanSuccess({ scanned: data.results.length, remaining: data.remaining });
     } catch (err) {
       alert(err instanceof Error ? err.message : "AI validate failed");
     } finally {
@@ -1147,15 +1812,62 @@ export function JournalContent({ initialTrades, stats, reportOptions = [], price
     }
   }, [th]);
 
-  const handleDelete = useCallback(async (id: string) => {
-    if (!confirm("Delete this trade?")) return;
-    try {
-      await apiDelete(id);
-      setTrades((prev) => prev.filter((t) => t.id !== id));
-    } catch (err) {
-      alert(err instanceof Error ? err.message : "Failed to delete trade");
+  const handleScanClick = useCallback(() => {
+    if (quotaState && quotaState.remaining <= 0) {
+      setShowQuotaExhaustedModal(true);
+      return;
+    }
+    const openCount = trades.filter((t) => t.status === "open").length;
+    if (trades.length === 0) {
+      setScanBlockReason("empty");
+      setShowNoTradesModal(true);
+      return;
+    }
+    if (openCount === 0) {
+      setScanBlockReason("no-open");
+      setShowNoTradesModal(true);
+      return;
+    }
+    void handleValidate();
+  }, [trades, handleValidate, quotaState]);
+
+  const dismissScanSuccess = useCallback(() => {
+    setScanSuccess(null);
+    const el = document.getElementById("journal-trade-list");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   }, []);
+
+  const openLogTradeForm = useCallback(() => {
+    setShowNoTradesModal(false);
+    setShowForm(true);
+    setEditTrade(null);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
+  const requestDelete = useCallback((trade: Trade) => {
+    setDeleteTarget(trade);
+  }, []);
+
+  const confirmDelete = useCallback(async () => {
+    if (!deleteTarget || deleting) return;
+    setDeleting(true);
+    try {
+      await apiDelete(deleteTarget.id);
+      setTrades((prev) => prev.filter((t) => t.id !== deleteTarget.id));
+      setDeleteTarget(null);
+    } catch (err) {
+      alert(err instanceof Error ? err.message : "Failed to delete trade");
+    } finally {
+      setDeleting(false);
+    }
+  }, [deleteTarget, deleting]);
+
+  const cancelDelete = useCallback(() => {
+    if (deleting) return;
+    setDeleteTarget(null);
+  }, [deleting]);
 
   const filtered = trades.filter((t) => {
     if (filterStatus !== "all" && t.status !== filterStatus) return false;
@@ -1167,6 +1879,44 @@ export function JournalContent({ initialTrades, stats, reportOptions = [], price
 
   return (
     <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+      {validating && (
+        <ValidateJournalOverlay
+          th={th}
+          openCount={trades.filter((t) => t.status === "open").length}
+        />
+      )}
+      {deleteTarget && (
+        <DeleteConfirmModal
+          trade={deleteTarget}
+          th={th}
+          deleting={deleting}
+          onCancel={cancelDelete}
+          onConfirm={confirmDelete}
+        />
+      )}
+      {showNoTradesModal && (
+        <NoTradesScanModal
+          th={th}
+          reason={scanBlockReason}
+          onCancel={() => setShowNoTradesModal(false)}
+          onAddTrade={openLogTradeForm}
+        />
+      )}
+      {scanSuccess && (
+        <ScanSuccessModal
+          th={th}
+          scanned={scanSuccess.scanned}
+          remaining={scanSuccess.remaining}
+          onDismiss={dismissScanSuccess}
+        />
+      )}
+      {showQuotaExhaustedModal && quotaState && (
+        <ScanQuotaExhaustedModal
+          th={th}
+          limit={quotaState.limit}
+          onDismiss={() => setShowQuotaExhaustedModal(false)}
+        />
+      )}
       <style>{`
         @keyframes pulse {
           0%, 100% { opacity: 1; transform: scale(1); }
@@ -1192,6 +1942,185 @@ export function JournalContent({ initialTrades, stats, reportOptions = [], price
             grid-template-columns: repeat(3, 1fr);
           }
           .trade-actions-row > button { width: 100%; }
+          .jv-validate-btn { padding: 8px 12px !important; }
+          .jv-validate-sub { display: none !important; }
+        }
+        .jv-validate-btn {
+          position: relative;
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          padding: 9px 14px 9px 12px;
+          border-radius: 10px;
+          border: 2px solid transparent;
+          background:
+            linear-gradient(135deg, rgba(36, 24, 58, 0.98), rgba(15, 17, 23, 0.99)) padding-box,
+            linear-gradient(
+              90deg,
+              #6d28d9,
+              #a78bfa,
+              #e9d5ff,
+              #6366f1,
+              #c084fc,
+              #7c3aed,
+              #6d28d9
+            ) border-box;
+          background-size: auto, 300% 100%;
+          color: #f3e8ff;
+          font-weight: 800;
+          font-size: 12px;
+          cursor: pointer;
+          user-select: none;
+          font-family: var(--font-mono, monospace);
+          box-shadow:
+            0 1px 0 rgba(255, 255, 255, 0.06) inset,
+            0 4px 16px rgba(139, 92, 246, 0.22);
+          transition:
+            transform 0.18s cubic-bezier(0.34, 1.4, 0.64, 1),
+            box-shadow 0.18s ease,
+            background 0.18s ease;
+          overflow: hidden;
+          isolation: isolate;
+        }
+        .jv-validate-btn:not(:disabled) {
+          animation: jvIdleGlow 3s ease-in-out infinite, jvBorderFlow 2.8s linear infinite;
+        }
+        .jv-validate-btn:not(:disabled)::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(
+            105deg,
+            transparent 38%,
+            rgba(255, 255, 255, 0.14) 50%,
+            transparent 62%
+          );
+          transform: translateX(-130%);
+          transition: transform 0.65s ease;
+          pointer-events: none;
+          z-index: 0;
+        }
+        .jv-validate-btn:not(:disabled):hover::before {
+          transform: translateX(130%);
+        }
+        .jv-validate-btn:not(:disabled):hover {
+          transform: translateY(-2px) scale(1.02);
+          background:
+            linear-gradient(135deg, rgba(55, 32, 88, 0.98), rgba(20, 18, 35, 0.99)) padding-box,
+            linear-gradient(
+              90deg,
+              #8b5cf6,
+              #ddd6fe,
+              #818cf8,
+              #e9d5ff,
+              #a78bfa,
+              #8b5cf6
+            ) border-box;
+          background-size: auto, 300% 100%;
+          box-shadow:
+            0 1px 0 rgba(255, 255, 255, 0.1) inset,
+            0 10px 32px rgba(139, 92, 246, 0.42),
+            0 0 28px rgba(139, 92, 246, 0.2);
+          animation: jvBorderFlow 1.4s linear infinite;
+        }
+        .jv-validate-btn:not(:disabled):active {
+          transform: translateY(0) scale(0.98);
+          box-shadow:
+            0 0 0 1px rgba(139, 92, 246, 0.15) inset,
+            0 2px 8px rgba(139, 92, 246, 0.25);
+          transition-duration: 0.08s;
+        }
+        .jv-validate-btn:focus-visible {
+          outline: 2px solid #c4b5fd;
+          outline-offset: 3px;
+        }
+        .jv-validate-btn:disabled {
+          cursor: not-allowed;
+          opacity: 0.45;
+          box-shadow: none;
+          animation: none;
+          border: 1px solid rgba(100, 116, 139, 0.25);
+          background: rgba(30, 41, 59, 0.3);
+        }
+        .jv-validate-btn:disabled::before {
+          display: none;
+        }
+        .jv-validate-btn > * {
+          position: relative;
+          z-index: 1;
+        }
+        @keyframes jvBorderFlow {
+          0% { background-position: 0 0, 0% 0; }
+          100% { background-position: 0 0, 300% 0; }
+        }
+        @keyframes jvIdleGlow {
+          0%, 100% {
+            box-shadow:
+              0 1px 0 rgba(255, 255, 255, 0.05) inset,
+              0 0 0 1px rgba(139, 92, 246, 0.08) inset,
+              0 4px 16px rgba(139, 92, 246, 0.2);
+          }
+          50% {
+            box-shadow:
+              0 1px 0 rgba(255, 255, 255, 0.07) inset,
+              0 0 0 1px rgba(167, 139, 250, 0.15) inset,
+              0 6px 22px rgba(139, 92, 246, 0.32);
+          }
+        }
+        .jv-validate-icon {
+          width: 26px;
+          height: 26px;
+          border-radius: 7px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 13px;
+          background: linear-gradient(145deg, #a78bfa, #7c3aed);
+          color: #fff;
+          box-shadow: 0 2px 10px rgba(139, 92, 246, 0.5);
+          flex-shrink: 0;
+          transition: transform 0.18s ease, box-shadow 0.18s ease;
+        }
+        .jv-validate-btn:not(:disabled):hover .jv-validate-icon {
+          transform: scale(1.08) rotate(-8deg);
+          box-shadow: 0 4px 14px rgba(167, 139, 250, 0.65);
+        }
+        .jv-validate-btn:not(:disabled):active .jv-validate-icon {
+          transform: scale(0.95);
+        }
+        .jv-validate-sub {
+          display: block;
+          font-size: 9px;
+          font-weight: 600;
+          letter-spacing: 0.4px;
+          color: rgba(196, 181, 253, 0.75);
+          margin-top: 1px;
+        }
+        .jv-quota-pill {
+          font-size: 10px;
+          font-weight: 800;
+          padding: 3px 8px;
+          border-radius: 999px;
+          background: rgba(15, 17, 23, 0.55);
+          border: 1px solid rgba(167, 139, 250, 0.25);
+          color: #c4b5fd;
+          letter-spacing: 0.3px;
+          transition: background 0.18s ease, border-color 0.18s ease;
+        }
+        .jv-quota-pill--empty {
+          background: rgba(245, 158, 11, 0.12);
+          border-color: rgba(245, 158, 11, 0.45);
+          color: #fbbf24;
+        }
+        .jv-validate-btn:not(:disabled):hover .jv-quota-pill {
+          background: rgba(15, 17, 23, 0.75);
+          border-color: rgba(196, 181, 253, 0.45);
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .jv-validate-btn:not(:disabled) {
+            animation: jvIdleGlow 3s ease-in-out infinite;
+          }
+          .jv-validate-btn:not(:disabled)::before { display: none; }
         }
       `}</style>
       {/* Header */}
@@ -1218,20 +2147,30 @@ export function JournalContent({ initialTrades, stats, reportOptions = [], price
         <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
           {quotaState && (
             <button
-              onClick={handleValidate}
-              disabled={validating || quotaState.remaining <= 0}
-              title={quotaState.remaining <= 0 ? (th ? "ใช้โควต้า AI Validate ครบแล้ว" : "AI Validate quota used up") : undefined}
-              style={{
-                padding: "8px 16px", borderRadius: 8, border: "1px solid #8b5cf645",
-                background: quotaState.remaining <= 0 ? "transparent" : "linear-gradient(135deg,#8b5cf618,#8b5cf630)",
-                color: quotaState.remaining <= 0 ? "var(--muted)" : "#8b5cf6",
-                fontWeight: 800, fontSize: 13,
-                cursor: validating || quotaState.remaining <= 0 ? "not-allowed" : "pointer",
-                fontFamily: "var(--font-mono, monospace)", opacity: validating ? 0.6 : 1,
-              }}
+              type="button"
+              className={`jv-validate-btn${quotaState.remaining <= 0 ? " jv-validate-btn--quota-empty" : ""}`}
+              onClick={handleScanClick}
+              disabled={validating}
+              title={
+                quotaState.remaining <= 0
+                  ? (th ? "โควต้าหมด — ติดต่อ admin เพื่อ reset" : "Quota used — contact admin to reset")
+                  : (th ? "AI ตรวจแผนเทรดที่เปิดอยู่ทั้งหมด" : "AI checks all open trade plans")
+              }
             >
-              {validating ? (th ? "⟳ กำลังตรวจ…" : "⟳ Validating…") : "🤖 AI Validate Journal"}
-              {" "}<span style={{ fontSize: 10, opacity: 0.8 }}>({quotaState.remaining}/{quotaState.limit})</span>
+              <span className="jv-validate-icon" aria-hidden>{validating ? "⟳" : "✦"}</span>
+              <span style={{ textAlign: "left", lineHeight: 1.2 }}>
+                <span style={{ display: "block", letterSpacing: "0.2px" }}>
+                  {validating
+                    ? (th ? "กำลังสแกน…" : "Scanning…")
+                    : (th ? "สแกนเทรด" : "Scan Trades")}
+                </span>
+                {!validating && (
+                  <span className="jv-validate-sub">
+                    {th ? "ตรวจแผน · AI" : "AI plan check"}
+                  </span>
+                )}
+              </span>
+              <span className={`jv-quota-pill${quotaState.remaining <= 0 ? " jv-quota-pill--empty" : ""}`}>{quotaState.remaining}/{quotaState.limit}</span>
             </button>
           )}
           <button
@@ -1319,6 +2258,7 @@ export function JournalContent({ initialTrades, stats, reportOptions = [], price
       </div>
 
       {/* Trade list */}
+      <div id="journal-trade-list">
       {filtered.length === 0 ? (
         <div style={{ textAlign: "center", padding: "60px 0", color: "var(--muted)" }}>
           <div style={{ fontSize: 28, marginBottom: 10 }}>📒</div>
@@ -1334,12 +2274,13 @@ export function JournalContent({ initialTrades, stats, reportOptions = [], price
               validatorResult={trade.validation ?? undefined}
               validationGeneratedAt={trade.validation?.validatedAt}
               onEdit={() => { setEditTrade(trade); setShowForm(false); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-              onDelete={() => handleDelete(trade.id)}
+              onDelete={() => requestDelete(trade)}
               onAddExit={(exit) => handleAddExit(trade.id, exit)}
             />
           ))}
         </div>
       )}
+      </div>
     </div>
   );
 }

@@ -94,15 +94,13 @@ Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open N
 
 **เป้า:** compare turbo portfolio ได้ถูก thesis — RXRX ขึ้น #1 เพราะ survival แข็ง + entry ใกล้โซน ไม่ใช่เพราะมีวัน catalyst ชัด
 
-## 12. ธาตุที่ 4 🌍 Earth — feature ที่ยังว่าง (เติมให้ครบ 4 ธาตุ)
+## 12. ธาตุที่ 4 🌍 Earth — Rare Earth Elements, Precious Metals
 
-**ปัญหา:** landing page + nav ทำ theme 4 ธาตุไว้ (💧 Water=DCA · 🌬️ Air=Catalyst · 🔥 Fire=Turbo) แต่ตอนนี้มีจริงแค่ 3 — ช่อง Earth ยังเป็น "coming soon" ทำให้ composition ไม่ครบวง ต้องตัดสินใจว่า Earth = อะไร แล้วทำให้เป็น feature จริง
-**ทำ:** เลือก 1 ใน 3 ทางที่ประเมินไว้ แล้ว build:
-  - (ก) **Portfolio/Journal เป็น Earth** — rebrand `/journal` (ดิน = พอร์ตจริงที่ถืออยู่ = รากฐาน) · ต้องแก้ให้ดูได้บน prod (ตอนนี้ `isLocal`-gate ใน `web/app/layout.tsx`) หรือทำ read-only view
-  - (ข) **Macro/Market terrain เป็น Earth** — ทำหน้า `/macro` จาก `web/data/market-timing.json` + skill `analyze-market-situation` (ดิน = สภาพพื้นดินของตลาด Fed/CPI/VIX)
-  - (ค) **Backtest/Track record เป็น Earth** — rebrand `/backtest` (ดิน = ชั้นหิน/รากฐานข้อมูลย้อนหลัง)
-**ไฟล์:** `web/app/page.tsx` (landing — ปลดล็อก Earth tile จาก ghost→active) · `web/app/layout.tsx` (nav เพิ่ม tab ธาตุ 4) · แล้วแต่ทางเลือก: `web/app/journal/*` | หน้า `/macro` ใหม่ + `web/lib` อ่าน market-timing | `web/app/backtest/*`
-**เป้า:** 4 ธาตุครบ — landing มี 4 element card ที่กดเข้าได้จริงทั้งหมด, เอา ghost "coming soon" ออก · สี Earth = อำพัน-บรอนซ์/โอลีฟ (เลี่ยงชนเขียวของ Air)
+**ปัญหา:** landing มี 4 ธาตุ (💧 DCA · 🌬️ Catalyst · 🔥 Turbo · 🌍 Earth) แต่ Earth ยังเป็น ghost card — ต้องตัดสิน thesis lane ให้ชัดก่อน build feature จริง
+**ทำ (เคาะแล้ว 2026-07-06):** **Earth = Rare Earth Elements, Precious Metals** — REE / critical minerals / gold-silver plays (เช่น MP, USAR, NB, CRML) · ไม่ใช่ journal / macro / backtest · ตอนนี้ card ปิด (ghost) บน landing พร้อม description แล้ว (`web/app/Landing.tsx` tagline EN/TH)
+  **รอ build:** screen criteria + หน้า dashboard ใหม่ (เช่น `/earth`) + data dir + skill/command (เทียบ `/catalyst`, `/turbo`, `/dca`) → ปลดล็อก tile จาก ghost→active
+**ไฟล์:** `web/app/Landing.tsx` (description ✅) · หน้าใหม่ `web/app/earth/*` · `web/data/earth/` (หรือชื่อที่เทียบเท่า) · skill ใหม่ · `web/app/layout.tsx` (nav ธาตุ 4 เมื่อเปิด)
+**เป้า:** Earth card กดเข้าได้ · โฟกัส REE + precious metals · สี Earth = อำพัน-บรอนซ์/โอลีฟ (เลี่ยงชนเขียวของ Air)
 
 ## 13. i18n เฟสถัดไป — panel/tool ที่ยังไม่ผูก global EN/TH
 
@@ -164,16 +162,16 @@ Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open N
 **ไฟล์:** `web/app/layout.tsx` (metadata กลาง) · `web/app/sitemap.ts` + `web/app/robots.ts` (ใหม่) · `web/app/report/[ticker]/page.tsx` + หน้า catalyst/dca/turbo/backtest (generateMetadata) · `web/lib/reports.ts` (list ticker สำหรับ sitemap)
 **เป้า:** search "StockPlaybook" / "stockplaybook.app" เจอเว็บใน Google · ทุก report page มี title/description/OG เฉพาะตัว · Search Console เห็น sitemap ครบ ไม่มี coverage error · เกี่ยวพัน: OG image รอ #18 (theme) — ทำ SEO โครงก่อนได้เลยไม่ต้องรอ
 
-## 20. AI Validate Journal — user กดปุ่มให้ Claude API วิเคราะห์พอร์ต (quota 3 ครั้ง/lifetime)
+## 20. ✅ DONE — AI Validate Journal — user กดปุ่มให้ Claude API วิเคราะห์พอร์ต (quota 3 ครั้ง/lifetime)
 
 **ปัญหา:** validator ปัจจุบันรันได้เฉพาะเจ้าของผ่าน Claude CLI (`/analyze-journal`) — user คนอื่นบน prod ไม่มีทางได้ AI validation เลย ทั้งที่ `trade_validations` table + VALIDATOR box ใน UI รอไว้แล้ว
-**ทำ (เคาะ design แล้ว 2026-07-05):**
-  1. **Schema เพิ่ม:** `validation_requests (id, user_id FK, requested_at, status(pending|done|failed), trades_count, model, input_tokens, output_tokens)` — นับ quota + audit cost · seed `features`: `ai_validation` + `plan_features(free, ai_validation, limit_value=3)` — **lifetime** (นับจาก count ทั้งหมดของ user ไม่มี reset)
-  2. **Endpoint:** `POST /journal/validate` (cookie auth) — เช็ค quota จาก count(validation_requests WHERE user_id AND status='done') vs limit_value → เกิน = 403 พร้อม `{remaining: 0}` · ดึง open trades ของ user จาก DB → ประกอบ prompt จาก **skill `skills/analyze-journal/SKILL.md` เดิม** (แปลง journal format DB → format ที่ prompt คาด) → เรียก Claude API (`ANTHROPIC_API_KEY` ใน Railway vars) **model Sonnet** ล่าสุด · **บังคับ output ด้วย tool-use JSON schema** (shape = ValidatorResult ต่อ trade) กัน parse พัง/prompt injection จาก trade notes · upsert `trade_validations` ต่อ trade → return ผล + `remaining`
-  3. **UX:** sync + spinner (~15–40 วิ) · ปุ่ม "AI Validate Journal" บนหัว journal พร้อม badge เหลือกี่ครั้ง (`GET /journal/validate/quota`) · quota หมด = **disable ปุ่ม** + tooltip อธิบาย · ผล validation แสดงใน VALIDATOR box ของแต่ละ OPEN trade (เขียว HOLD / เหลือง WATCH / แดง CUT) + validated_at · เปิด journal รอบหน้าเห็นผลเดิมจาก DB · กด validate ใหม่ = ทับผลเก่า + หัก quota
-  4. **Guard rails:** timeout Claude call 90s · max_tokens cap · ห้าม log prompt/response เต็ม (มีข้อมูลการเงิน) log แค่ token counts · validate อย่างน้อย 1 open trade ไม่งั้น 400 ไม่หัก quota · failed = ไม่หัก quota
-**ไฟล์:** `service/prisma/schema.prisma` (+validation_requests, seed features) · `service/src/validation/*` (module ใหม่: controller/service/claude.client/prompt.ts จาก analyze-journal skill) · `web/app/journal/JournalContent.tsx` (ปุ่ม+badge+VALIDATOR box) · `web/lib` (api client) · i18n EN/TH · Railway var `ANTHROPIC_API_KEY`
-**เป้า:** user login → กด AI Validate → เห็น verdict ต่อ trade ใน <1 นาที → refresh แล้วผลยังอยู่ → ครบ 3 ครั้งปุ่ม disable · cost ~฿2–3/ครั้ง ควบคุมด้วย quota ระดับ plan
+**ทำ (ครบ 2026-07-06):**
+  1. ✅ **Schema:** `validation_requests` + `plans`/`features`/`plan_features` (seed free/ai_validation limit=3) + `trade_validations` · migration `20260706035159_ai_validation_quota` · i18n `summary_th`/`action_th` migration `20260706143000_validation_i18n`
+  2. ✅ **API:** `POST /journal/validate` + `GET /journal/validate/quota` · quota lifetime จาก count(status=done) · 0 open trades → 400 ไม่หัก quota · Claude fail → status=failed ไม่หัก quota · tool-use strict schema · Yahoo live price · timeout 90s · log แค่ token counts
+  3. ✅ **UX:** ปุ่ม **Scan Trades** + quota pill · full-screen overlay ตอนสแกน · VALIDATOR box ต่อ OPEN trade (HOLD/WATCH/CUT + summary/action) · ผล persist ใน DB · refresh เห็นเดิม · quota หมด = disable + tooltip · modal เมื่อ journal ว่าง / ไม่มี open trades · i18n EN/TH (`summaryTh`/`actionTh`)
+  4. ✅ **Tests:** 23 tests ใน `service/src/validation/*` ผ่านครบ
+**ไฟล์:** `service/prisma/schema.prisma` · `service/src/validation/*` · `web/app/journal/JournalContent.tsx` · `web/app/journal/page.tsx` (quota fetch) · `web/lib/journal-types.ts` · `.claude/skills/analyze-journal/SKILL.md` · `service/.env.example` (`ANTHROPIC_API_KEY`)
+**เป้า:** user login → กด Scan Trades → เห็น verdict ต่อ trade ใน <1 นาที → refresh แล้วผลยังอยู่ → ครบ 3 ครั้งปุ่ม disable ✅ · **Ops:** ✅ `ANTHROPIC_API_KEY` ตั้งบน Railway prod แล้ว (2026-07-06)
 
 ## 21. Monetization — subscription plan / buy more AI usage
 
