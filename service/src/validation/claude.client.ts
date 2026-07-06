@@ -9,7 +9,7 @@ import {
   parseValidationToolUse,
 } from "./prompt";
 
-const MODEL = "claude-sonnet-5";
+const DEFAULT_MODEL = "claude-sonnet-5";
 const MAX_TOKENS = 4096;
 const TIMEOUT_MS = 90_000;
 
@@ -22,11 +22,15 @@ export interface ClaudeValidationResult {
 @Injectable()
 export class ClaudeClient {
   private readonly client: Anthropic;
+  // Overridable via ANTHROPIC_MODEL so the model can be swapped (e.g. a new
+  // Claude release) with just an env var change + restart — no redeploy.
+  private readonly model: string;
 
   constructor(config: ConfigService) {
     this.client = new Anthropic({
       apiKey: config.get<string>("ANTHROPIC_API_KEY"),
     });
+    this.model = config.get<string>("ANTHROPIC_MODEL") || DEFAULT_MODEL;
   }
 
   async validate(trades: TradeForPrompt[]): Promise<ClaudeValidationResult> {
@@ -34,7 +38,7 @@ export class ClaudeClient {
 
     const response = await this.client.messages.create(
       {
-        model: MODEL,
+        model: this.model,
         max_tokens: MAX_TOKENS,
         thinking: { type: "disabled" },
         output_config: { effort: "medium" },

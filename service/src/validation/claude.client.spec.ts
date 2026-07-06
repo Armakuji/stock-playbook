@@ -14,8 +14,9 @@ const trade: TradeForPrompt = {
   currentPrice: 396.3,
 };
 
-function makeConfig(): ConfigService {
-  return { get: () => "test-key" } as unknown as ConfigService;
+function makeConfig(overrides: Record<string, string | undefined> = {}): ConfigService {
+  const values: Record<string, string | undefined> = { ANTHROPIC_API_KEY: "test-key", ...overrides };
+  return { get: (key: string) => values[key] } as unknown as ConfigService;
 }
 
 describe("ClaudeClient", () => {
@@ -71,5 +72,53 @@ describe("ClaudeClient", () => {
     };
 
     await expect(client.validate([trade])).rejects.toThrow("timeout");
+  });
+
+  it("uses ANTHROPIC_MODEL from config when set, overriding the default", async () => {
+    const create = jest.fn().mockResolvedValue({
+      stop_reason: "tool_use",
+      usage: { input_tokens: 500, output_tokens: 120 },
+      content: [
+        {
+          type: "tool_use",
+          id: "toolu_1",
+          name: "submit_validation",
+          input: { results: [] },
+        },
+      ],
+    });
+    const client = new ClaudeClient(makeConfig({ ANTHROPIC_MODEL: "claude-opus-5" }));
+    (client as unknown as { client: { messages: { create: typeof create } } }).client = {
+      messages: { create },
+    };
+
+    await client.validate([trade]);
+
+    const [params] = create.mock.calls[0];
+    expect(params.model).toBe("claude-opus-5");
+  });
+
+  it("falls back to the default model when ANTHROPIC_MODEL is not set", async () => {
+    const create = jest.fn().mockResolvedValue({
+      stop_reason: "tool_use",
+      usage: { input_tokens: 500, output_tokens: 120 },
+      content: [
+        {
+          type: "tool_use",
+          id: "toolu_1",
+          name: "submit_validation",
+          input: { results: [] },
+        },
+      ],
+    });
+    const client = new ClaudeClient(makeConfig());
+    (client as unknown as { client: { messages: { create: typeof create } } }).client = {
+      messages: { create },
+    };
+
+    await client.validate([trade]);
+
+    const [params] = create.mock.calls[0];
+    expect(params.model).toBe("claude-sonnet-5");
   });
 });
