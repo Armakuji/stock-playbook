@@ -17,6 +17,7 @@ model User {
   createdAt      DateTime       @default(now()) @map("created_at")
   authIdentities AuthIdentity[]
   trades         Trade[]
+  validationRequests ValidationRequest[]
 
   @@map("users")
 }
@@ -54,6 +55,7 @@ model Trade {
   createdAt        DateTime    @default(now()) @map("created_at")
   updatedAt        DateTime    @updatedAt @map("updated_at")
   exits            TradeExit[]
+  validation       TradeValidation?
 
   @@map("trades")
 }
@@ -68,4 +70,64 @@ model TradeExit {
   note    String?
 
   @@map("trade_exits")
+}
+
+model Plan {
+  id          String        @id
+  name        String
+  priceCents  Int?          @map("price_cents")
+  interval    String?
+  planFeatures PlanFeature[]
+
+  @@map("plans")
+}
+
+model Feature {
+  id           String        @id
+  name         String
+  description  String?
+  planFeatures PlanFeature[]
+
+  @@map("features")
+}
+
+model PlanFeature {
+  planId     String  @map("plan_id")
+  featureId  String  @map("feature_id")
+  plan       Plan    @relation(fields: [planId], references: [id])
+  feature    Feature @relation(fields: [featureId], references: [id])
+  enabled    Boolean @default(true)
+  limitValue Int?    @map("limit_value")
+
+  @@id([planId, featureId])
+  @@map("plan_features")
+}
+
+model ValidationRequest {
+  id           String    @id @default(uuid())
+  userId       String    @map("user_id")
+  user         User      @relation(fields: [userId], references: [id])
+  requestedAt  DateTime  @default(now()) @map("requested_at")
+  status       String    // pending | done | failed
+  tradesCount  Int       @map("trades_count")
+  model        String
+  inputTokens  Int?      @map("input_tokens")
+  outputTokens Int?      @map("output_tokens")
+
+  @@map("validation_requests")
+}
+
+model TradeValidation {
+  tradeId      String   @id @map("trade_id")
+  trade        Trade    @relation(fields: [tradeId], references: [id], onDelete: Cascade)
+  verdict      String   // HOLD | CUT | WATCH
+  thesisIntact Boolean  @map("thesis_intact")
+  stopBreached Boolean  @map("stop_breached")
+  atRisk       Boolean  @map("at_risk")
+  summary      String
+  action       String
+  color        String   // green | yellow | red
+  validatedAt  DateTime @default(now()) @map("validated_at")
+
+  @@map("trade_validations")
 }
