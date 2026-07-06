@@ -49,7 +49,14 @@ describe("VALIDATION_TOOL", () => {
       properties: { results: { items: { required: string[] } } };
     };
     expect(schema.properties.results.items.required).toEqual(
-      expect.arrayContaining(["tradeId", "verdict", "summary", "action"]),
+      expect.arrayContaining([
+        "tradeId",
+        "verdict",
+        "summary",
+        "summaryTh",
+        "action",
+        "actionTh",
+      ]),
     );
   });
 });
@@ -75,7 +82,9 @@ describe("parseValidationToolUse", () => {
             stopBreached: false,
             atRisk: false,
             summary: "on track",
+            summaryTh: "ยังตามแผน",
             action: "hold",
+            actionTh: "ถือ",
             color: "green",
           },
         ],

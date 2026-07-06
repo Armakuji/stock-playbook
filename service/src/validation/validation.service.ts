@@ -8,6 +8,7 @@ import { InjectPinoLogger, PinoLogger } from "nestjs-pino";
 import { PrismaService } from "../prisma/prisma.service";
 import { ClaudeClient } from "./claude.client";
 import { TradeForPrompt, ValidationToolResult } from "./prompt";
+import { toTradeValidationWrite } from "./validation.mapper";
 import { fetchCurrentPrice } from "./yahoo-price";
 import { activeTradeWhere } from "../trades/trade-filters";
 
@@ -111,29 +112,11 @@ export class ValidationService {
 
     const validatedAt = new Date();
     for (const r of validResults) {
+      const data = toTradeValidationWrite(r, validatedAt);
       await this.prisma.tradeValidation.upsert({
         where: { tradeId: r.tradeId },
-        create: {
-          tradeId: r.tradeId,
-          verdict: r.verdict,
-          thesisIntact: r.thesisIntact,
-          stopBreached: r.stopBreached,
-          atRisk: r.atRisk,
-          summary: r.summary,
-          action: r.action,
-          color: r.color,
-          validatedAt,
-        },
-        update: {
-          verdict: r.verdict,
-          thesisIntact: r.thesisIntact,
-          stopBreached: r.stopBreached,
-          atRisk: r.atRisk,
-          summary: r.summary,
-          action: r.action,
-          color: r.color,
-          validatedAt,
-        },
+        create: { tradeId: r.tradeId, ...data },
+        update: data,
       });
     }
 

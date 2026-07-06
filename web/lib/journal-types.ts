@@ -55,7 +55,9 @@ export interface ValidatorResult {
   stopBreached: boolean;
   atRisk: boolean;
   summary: string;
+  summaryTh?: string;
   action: string;
+  actionTh?: string;
   color: "green" | "yellow" | "red";
 }
 

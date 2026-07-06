@@ -54,7 +54,9 @@ const SUCCESS_RESULT = {
   stopBreached: false,
   atRisk: false,
   summary: "on track",
+  summaryTh: "ยังตามแผน",
   action: "hold",
+  actionTh: "ถือ",
   color: "green" as const,
 };
 
