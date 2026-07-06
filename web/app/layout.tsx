@@ -27,10 +27,43 @@ const jetbrains = JetBrains_Mono({
   weight: ["400", "700", "800"],
 });
 
+const SITE_URL = "https://stockplaybook.app";
+
 export const metadata: Metadata = {
-  title: "Stock Playbook",
-  description: "Weekly stock analysis",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "Stock Playbook — Institutional-grade stock analysis",
+    template: "%s · Stock Playbook",
+  },
+  description:
+    "Stock Playbook (stockplaybook.app) — automated institutional-grade stock analysis: entry strategy, price targets, catalyst tracking, and a Fed/macro risk read for every pick.",
   icons: { icon: "/favicon.svg" },
+  openGraph: {
+    title: "Stock Playbook",
+    description:
+      "Automated institutional-grade stock analysis — entry strategy, targets, catalysts, and Fed/macro risk.",
+    url: SITE_URL,
+    siteName: "Stock Playbook",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Stock Playbook",
+    description:
+      "Automated institutional-grade stock analysis — entry strategy, targets, catalysts, and Fed/macro risk.",
+  },
+};
+
+// Ties the "Stock Playbook" wordmark (two words, human-facing copy) to the
+// "StockPlaybook" one-word domain/brand history via alternateName, so Google
+// treats "stockplaybook" and "stock playbook" search queries as the same
+// entity instead of two unrelated things.
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Stock Playbook",
+  alternateName: ["StockPlaybook", "Stock Playbook Research"],
+  url: SITE_URL,
 };
 
 function getLatestReportDate(): string {
@@ -56,6 +89,11 @@ export default function RootLayout({
         className="min-h-full flex flex-col"
         style={{ backgroundColor: "var(--bg)", color: "var(--text)", fontFamily: "var(--font-body, system-ui, sans-serif)" }}
       >
+        <script
+          type="application/ld+json"
+          // eslint-disable-next-line react/no-danger -- static, hardcoded JSON-LD, no user input
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         {/* ── Deep Space ambient layer (fixed, behind everything) ── */}
         <div aria-hidden="true" style={{
           position: "fixed", inset: 0, pointerEvents: "none", zIndex: -1, overflow: "hidden",
