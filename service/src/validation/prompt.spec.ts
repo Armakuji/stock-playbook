@@ -34,7 +34,9 @@ describe("buildValidationMessages", () => {
   });
 
   it("marks currentPrice as unavailable when null", () => {
-    const { user } = buildValidationMessages([{ ...trade, currentPrice: null }]);
+    const { user } = buildValidationMessages([
+      { ...trade, currentPrice: null },
+    ]);
     expect(user).toContain("unavailable");
   });
 });
@@ -85,7 +87,9 @@ describe("parseValidationToolUse", () => {
 
   it("throws when no submit_validation tool_use block is present", () => {
     expect(() =>
-      parseValidationToolUse([{ type: "text", text: "no tool call" } as Anthropic.ContentBlock]),
+      parseValidationToolUse([
+        { type: "text", text: "no tool call" } as Anthropic.ContentBlock,
+      ]),
     ).toThrow();
   });
 

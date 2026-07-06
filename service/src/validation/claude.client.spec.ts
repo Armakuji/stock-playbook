@@ -14,8 +14,19 @@ const trade: TradeForPrompt = {
   currentPrice: 396.3,
 };
 
-function makeConfig(overrides: Record<string, string | undefined> = {}): ConfigService {
-  const values: Record<string, string | undefined> = { ANTHROPIC_API_KEY: "test-key", ...overrides };
+interface ExpectedCreateParams {
+  model: string;
+  tool_choice: unknown;
+}
+type CreateCallArgs = [ExpectedCreateParams, { timeout: number }];
+
+function makeConfig(
+  overrides: Record<string, string | undefined> = {},
+): ConfigService {
+  const values: Record<string, string | undefined> = {
+    ANTHROPIC_API_KEY: "test-key",
+    ...overrides,
+  };
   return { get: (key: string) => values[key] } as unknown as ConfigService;
 }
 
@@ -47,16 +58,21 @@ describe("ClaudeClient", () => {
       ],
     });
     const client = new ClaudeClient(makeConfig());
-    (client as unknown as { client: { messages: { create: typeof create } } }).client = {
+    (
+      client as unknown as { client: { messages: { create: typeof create } } }
+    ).client = {
       messages: { create },
     };
 
     const result = await client.validate([trade]);
 
     expect(create).toHaveBeenCalledTimes(1);
-    const [params, options] = create.mock.calls[0];
+    const [params, options] = create.mock.calls[0] as CreateCallArgs;
     expect(params.model).toBe("claude-sonnet-5");
-    expect(params.tool_choice).toEqual({ type: "tool", name: "submit_validation" });
+    expect(params.tool_choice).toEqual({
+      type: "tool",
+      name: "submit_validation",
+    });
     expect(options).toEqual({ timeout: 90_000 });
 
     expect(result.results).toHaveLength(1);
@@ -67,7 +83,9 @@ describe("ClaudeClient", () => {
   it("propagates errors from the API call (caller decides how to record failure)", async () => {
     const create = jest.fn().mockRejectedValue(new Error("timeout"));
     const client = new ClaudeClient(makeConfig());
-    (client as unknown as { client: { messages: { create: typeof create } } }).client = {
+    (
+      client as unknown as { client: { messages: { create: typeof create } } }
+    ).client = {
       messages: { create },
     };
 
@@ -87,14 +105,18 @@ describe("ClaudeClient", () => {
         },
       ],
     });
-    const client = new ClaudeClient(makeConfig({ ANTHROPIC_MODEL: "claude-opus-5" }));
-    (client as unknown as { client: { messages: { create: typeof create } } }).client = {
+    const client = new ClaudeClient(
+      makeConfig({ ANTHROPIC_MODEL: "claude-opus-5" }),
+    );
+    (
+      client as unknown as { client: { messages: { create: typeof create } } }
+    ).client = {
       messages: { create },
     };
 
     await client.validate([trade]);
 
-    const [params] = create.mock.calls[0];
+    const [params] = create.mock.calls[0] as CreateCallArgs;
     expect(params.model).toBe("claude-opus-5");
   });
 
@@ -112,13 +134,15 @@ describe("ClaudeClient", () => {
       ],
     });
     const client = new ClaudeClient(makeConfig());
-    (client as unknown as { client: { messages: { create: typeof create } } }).client = {
+    (
+      client as unknown as { client: { messages: { create: typeof create } } }
+    ).client = {
       messages: { create },
     };
 
     await client.validate([trade]);
 
-    const [params] = create.mock.calls[0];
+    const [params] = create.mock.calls[0] as CreateCallArgs;
     expect(params.model).toBe("claude-sonnet-5");
   });
 });

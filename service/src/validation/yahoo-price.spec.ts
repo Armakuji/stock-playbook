@@ -10,14 +10,14 @@ describe("fetchCurrentPrice", () => {
   it("returns the regular market price from a successful Yahoo response", async () => {
     global.fetch = jest.fn().mockResolvedValue({
       ok: true,
-      json: async () => ({
+      json: () => ({
         chart: {
           result: [
             { meta: { regularMarketPrice: 131.38, chartPreviousClose: 128.4 } },
           ],
         },
       }),
-    }) as unknown as typeof fetch;
+    });
 
     const price = await fetchCurrentPrice("NVDA");
     expect(price).toBe(131.38);
@@ -26,17 +26,17 @@ describe("fetchCurrentPrice", () => {
   it("falls back to chartPreviousClose when regularMarketPrice is missing", async () => {
     global.fetch = jest.fn().mockResolvedValue({
       ok: true,
-      json: async () => ({
+      json: () => ({
         chart: { result: [{ meta: { chartPreviousClose: 128.4 } }] },
       }),
-    }) as unknown as typeof fetch;
+    });
 
     const price = await fetchCurrentPrice("NVDA");
     expect(price).toBe(128.4);
   });
 
   it("returns null when the fetch fails", async () => {
-    global.fetch = jest.fn().mockResolvedValue({ ok: false }) as unknown as typeof fetch;
+    global.fetch = jest.fn().mockResolvedValue({ ok: false });
     expect(await fetchCurrentPrice("NVDA")).toBeNull();
   });
 
@@ -48,8 +48,8 @@ describe("fetchCurrentPrice", () => {
   it("returns null when the response has no usable price", async () => {
     global.fetch = jest.fn().mockResolvedValue({
       ok: true,
-      json: async () => ({ chart: { result: [{ meta: {} }] } }),
-    }) as unknown as typeof fetch;
+      json: () => ({ chart: { result: [{ meta: {} }] } }),
+    });
     expect(await fetchCurrentPrice("NVDA")).toBeNull();
   });
 });

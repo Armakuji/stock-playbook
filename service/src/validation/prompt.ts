@@ -45,7 +45,8 @@ export const VALIDATION_TOOL: Anthropic.Tool & { strict: boolean } = {
             atRisk: { type: "boolean" },
             summary: {
               type: "string",
-              description: "1-2 sentence status, Thai/English mix, including the add-more call",
+              description:
+                "1-2 sentence status, Thai/English mix, including the add-more call",
             },
             action: {
               type: "string",
@@ -74,9 +75,10 @@ export const VALIDATION_TOOL: Anthropic.Tool & { strict: boolean } = {
   strict: true,
 };
 
-export function buildValidationMessages(
-  trades: TradeForPrompt[],
-): { system: string; user: string } {
+export function buildValidationMessages(trades: TradeForPrompt[]): {
+  system: string;
+  user: string;
+} {
   const system = `You are StockPlaybook Research's trade validator. For each open trade you are given:
 entry price, shares, entry date, planned take-profit levels, planned stop loss, current price, and a free-text "notes" field.
 
@@ -128,7 +130,9 @@ export function parseValidationToolUse(
       b.type === "tool_use" && b.name === "submit_validation",
   );
   if (!block) {
-    throw new Error("Claude response did not include a submit_validation tool call");
+    throw new Error(
+      "Claude response did not include a submit_validation tool call",
+    );
   }
   const input = block.input as { results?: unknown };
   if (!Array.isArray(input.results)) {

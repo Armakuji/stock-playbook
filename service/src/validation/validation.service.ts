@@ -25,14 +25,18 @@ export interface QuotaInfo {
 export class ValidationService {
   constructor(
     private readonly prisma: PrismaService,
-    @InjectPinoLogger(ValidationService.name) private readonly logger: PinoLogger,
+    @InjectPinoLogger(ValidationService.name)
+    private readonly logger: PinoLogger,
     private readonly claude: ClaudeClient,
   ) {}
 
   private async limitFor(): Promise<number> {
     const planFeature = await this.prisma.planFeature.findUnique({
       where: {
-        planId_featureId: { planId: FREE_PLAN_ID, featureId: AI_VALIDATION_FEATURE_ID },
+        planId_featureId: {
+          planId: FREE_PLAN_ID,
+          featureId: AI_VALIDATION_FEATURE_ID,
+        },
       },
     });
     return planFeature?.limitValue ?? 0;
@@ -46,7 +50,9 @@ export class ValidationService {
     return { used, limit, remaining: Math.max(0, limit - used) };
   }
 
-  async validate(userId: string): Promise<{ results: TradeValidationDto[]; remaining: number }> {
+  async validate(
+    userId: string,
+  ): Promise<{ results: TradeValidationDto[]; remaining: number }> {
     const limit = await this.limitFor();
     const usedBefore = await this.prisma.validationRequest.count({
       where: { userId, status: "done" },
@@ -88,7 +94,7 @@ export class ValidationService {
     let outcome;
     try {
       outcome = await this.claude.validate(tradesForPrompt);
-    } catch (err) {
+    } catch {
       await this.prisma.validationRequest.update({
         where: { id: request.id },
         data: { status: "failed" },
@@ -98,7 +104,9 @@ export class ValidationService {
     }
 
     const openTradeIds = new Set(openTrades.map((t) => t.id));
-    const validResults = outcome.results.filter((r) => openTradeIds.has(r.tradeId));
+    const validResults = outcome.results.filter((r) =>
+      openTradeIds.has(r.tradeId),
+    );
 
     const validatedAt = new Date();
     for (const r of validResults) {
@@ -137,13 +145,21 @@ export class ValidationService {
       },
     });
     this.logger.info(
-      { userId, status: "done", inputTokens: outcome.inputTokens, outputTokens: outcome.outputTokens },
+      {
+        userId,
+        status: "done",
+        inputTokens: outcome.inputTokens,
+        outputTokens: outcome.outputTokens,
+      },
       "AI validation done",
     );
 
     const usedAfter = usedBefore + 1;
     return {
-      results: validResults.map((r) => ({ ...r, validatedAt: validatedAt.toISOString() })),
+      results: validResults.map((r) => ({
+        ...r,
+        validatedAt: validatedAt.toISOString(),
+      })),
       remaining: Math.max(0, limit - usedAfter),
     };
   }

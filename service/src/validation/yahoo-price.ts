@@ -7,7 +7,9 @@ interface YahooMeta {
   chartPreviousClose?: number;
 }
 
-export async function fetchCurrentPrice(ticker: string): Promise<number | null> {
+export async function fetchCurrentPrice(
+  ticker: string,
+): Promise<number | null> {
   try {
     const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(ticker)}?interval=1d&range=1d`;
     const res = await fetch(url, {
