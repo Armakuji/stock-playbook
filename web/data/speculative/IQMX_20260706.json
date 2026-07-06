@@ -1,0 +1,235 @@
+{
+  "ticker": "IQMX",
+  "companyName": "IQM Quantum Computers Oyj",
+  "companyDescription": "Superconducting full-stack quantum computers · First European quantum company on a major US exchange (Nasdaq Jul 2, 2026) · 23 systems sold worldwide · €31M 2025 revenue · €67M+ backlog · €337M pro forma cash — Production Quantum on-premises model for research, government & enterprise",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-06T00:00:00.000Z",
+  "price": 12.50,
+  "priceChange": 1.8,
+  "priceNote": "Listed Jul 2 via RAAQ SPAC at ~$10 trust value; opened weak then recovered to $12–13 range. 4-day range $11.60–$13.78. Pre-money deal valuation ~$1.8B; at $12.50 implied market cap ~$3.2B — rich vs €31M revenue but funded + commercially proven vs most quantum peers.",
+  "marketCap": "$3.2B",
+  "sector": "Technology / Quantum Computing",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Moonshot",
+  "score": 72,
+  "summary": "IQMX is the first European quantum computing company on a major US exchange — listed Jul 2, 2026 via SPAC merger with Real Asset Acquisition Corp. (RAAQ) at a ~$1.8B pre-money valuation with €337M pro forma cash. Unlike most quantum peers, IQM has real commercial traction: €31M 2025 revenue, 23 quantum computers sold (claimed most of any manufacturer), and €67M+ backlog. The turbo thesis is a sector re-rating play: newly public quantum names with government validation have historically made 200–300%+ moves (IonQ post-SPAC 2021, RGTI/QBTS May 2026 federal quantum awards). IQMX was NOT in the May 2026 $2B CHIPS quantum equity round — inclusion or a major EU/US government contract win is the binary moonshot catalyst. First earnings as a public company (~Sep 2026) is the nearest hard date. Position size: 2–5% max only.",
+  "catalysts": [
+    {
+      "icon": "📈",
+      "name": "First Earnings as Public Company — Q3 2026",
+      "description": "First quarterly report post-Nasdaq listing. Investors will scrutinize €31M revenue run-rate, €67M backlog conversion, gross margins on full-stack system deliveries, and cash burn vs €337M runway. A beat-and-raise on system orders would validate the $3.2B market cap and could trigger a quantum-sector-style reflexive re-rate.",
+      "urgencyLabel": "9 WEEKS",
+      "dateBadge": "Sep 15, 2026",
+      "catalystDate": "2026-09-15",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🏛️",
+      "name": "US/EU Government Quantum Contract Wave — H2 2026",
+      "description": "May 2026: US Commerce Dept awarded ~$2B across 9 quantum companies (equity stakes), sending D-Wave +33%, Rigetti +30%, Infleqtion +31% in a single day. IQMX was excluded — but as the first European superconducting quantum name on Nasdaq with 23 deployed systems, it is a credible candidate for a future CHIPS/NATO/EU quantum procurement round. A named award = binary 30–50%+ single-day move.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "⚡",
+      "name": "Fault-Tolerant Roadmap Milestone",
+      "description": "IQM is deploying proceeds toward fault-tolerant quantum computing — the industry's holy grail. A demonstrated error-correction or qubit-scaling milestone (targeted H2 2026 per merger filings) would differentiate IQM from pre-revenue quantum SPACs and justify a peer-multiple re-rating toward IonQ/Rigetti levels.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🚀",
+      "name": "Nasdaq Listing Completed — Jul 2, 2026",
+      "description": "SPAC merger with RAAQ closed; ADSs trading under IQMX. €198.7M net proceeds from transaction + PIPE. Dual-listing on Helsinki Stock Exchange. First European quantum on a major US exchange — index inclusion and institutional discovery phase now underway.",
+      "urgencyLabel": "DONE",
+      "dateBadge": "Jul 2, 2026",
+      "catalystDate": "2026-07-02",
+      "badgeColor": "green",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Valuation stretch: ~$3.2B market cap vs €31M revenue (~100x sales) — entirely dependent on growth narrative continuing post-listing",
+    "IQMX excluded from May 2026 $2B US quantum equity-stake round that sent RGTI/QBTS/Infleqtion up 30%+ — no guarantee of future inclusion",
+    "SPAC PIPE selling pressure and warrant overhang (12.5M warrants at $11.50 exercise) — typical post-de-SPAC volatility in first 90 days",
+    "European HQ competing for US federal dollars — geopolitical friction vs US-native peers (Rigetti, IonQ, D-Wave)",
+    "Fault-tolerant quantum timeline risk — industry-wide; a slip pushes the moon thesis out 12–24 months",
+    "Quantum sector sentiment — newly listed names with no trading history can gap ±20% on sector newsflow alone"
+  ],
+  "estimateDates": [
+    { "event": "First Public Earnings (Q3 2026)", "dateRange": "Sep 2026", "note": "First report as Nasdaq-listed company — backlog conversion + system delivery cadence", "est": "est. €8–10M quarterly revenue", "highlight": "blue" },
+    { "event": "Fault-Tolerant Roadmap Update", "dateRange": "H2 2026", "note": "Key technical milestone per merger prospectus — error correction / qubit scaling", "highlight": "yellow" },
+    { "event": "Federal Quantum Procurement Window", "dateRange": "Q3–Q4 2026", "note": "Post-May 2026 CHIPS round — additional awards or EU/NATO parallel programs", "est": "Contract announcements", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -50, "price": 6.25 },
+    { "label": "Base", "color": "yellow", "pct": 60, "price": 20.00 },
+    { "label": "Bull", "color": "green", "pct": 124, "price": 28.00 },
+    { "label": "Moon", "color": "purple", "pct": 280, "price": 47.50 }
+  ],
+  "analystTargets": [
+    { "firm": "SPAC Deal Implied (pre-money)", "target": 10.00, "rating": "Reference", "note": "PIPE priced at $10/share — trust-value floor for SPAC structure" },
+    { "firm": "Peer Revenue Multiple (IonQ/RGTI implied)", "target": 22.00, "rating": "Implied Base", "note": "~15x forward revenue on €40M 2026E — sector peer re-rate without gov award" },
+    { "firm": "Government Validation Scenario", "target": 35.00, "rating": "Implied Bull", "note": "CHIPS/NATO contract win + earnings beat — comparable to RGTI post-May 2026 re-rate" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Quantum federal funding (CHIPS Act, DARPA, EU Quantum Flagship) flows through multi-year appropriations — largely independent of FOMC rate decisions. IQM's €337M cash runway insulates near-term operations from rate sensitivity.",
+    "inflationNote": "Hardware R&D and superconducting fab costs are personnel- and materials-heavy — moderate wage-inflation sensitivity, offset by government-adjacent contract pricing power.",
+    "sectorImpact": "MEDIUM. IQM's real revenue base is more resilient than pre-revenue quantum peers, but the $3.2B listing valuation is still a high-multiple growth name — hawkish Fed backdrop compresses sentiment-driven quantum multiples even when policy tailwinds stay intact.",
+    "summary": "Fed risk LOW for operations (cash-rich, gov-funded sector). Valuation risk MEDIUM — newly listed at ~100x sales means multiple compression is the bigger threat than macro, unless a government contract or earnings beat triggers sector re-rating."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 12.50, "note": "Current price — 4 days post-listing, above SPAC $10 floor. Valid for 2–3% starter.", "timing": "Now (2–3% max)" },
+      { "label": "Entry 2", "level": 11.00, "rangeMax": 11.80, "note": "Post-listing dip zone near day-1 lows ($11.60). Best R/R before first earnings.", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 9.50, "note": "SPAC trust-value area — high-conviction add only if sector sells off", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 20.00, "pct": 60.0, "note": "Base — revenue-scale re-rate to peer multiples on €40M+ 2026 revenue trajectory" },
+    "tp2": { "price": 28.00, "pct": 124.0, "note": "Bull — first earnings beat + backlog acceleration without gov award" },
+    "tp3": { "price": 47.50, "pct": 280.0, "note": "Moon — US/EU government quantum contract win + sector frenzy (IonQ/RGTI playbook)", "moon": true },
+    "stopLoss": {
+      "tight": 10.00, "tightPct": -20.0, "tightNote": "Below SPAC PIPE price ($10) — listing thesis broken, PIPE sellers dominate",
+      "hard": 6.25, "hardPct": -50.0, "hardNote": "Bear case — revenue miss + no gov contract + quantum sector de-rates",
+      "riskReward": "8.5 : 1", "rrNote": "Entry 2 ($11.40) vs TP2 ($28.00)", "rrWarning": "Asymmetric ✅ — real revenue + cash vs pre-revenue quantum peers"
+    },
+    "verdict": "Moonshot SPECULATIVE — 2–5% max. Scale in at $12.50 now or $11–11.80 dip. Base $20 (+60%), Bull $28 (+124%), Moon $47.50 (+280%) on gov contract + sector re-rating. First earnings ~Sep 2026 is the catalyst clock.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Newly listed quantum names run 15–40% in the 2–4 weeks before first earnings as institutions build positions and retail discovers the ticker. IonQ ran +25% in the month before its first post-SPAC earnings. IQMX's 4-day trading history means the pre-earnings run hasn't started yet.",
+    "preRunupTiming": "4–8 สัปดาห์ก่อน first public earnings (~Sep 2026)",
+    "preRunupPct": "+15–40%",
+    "postWin": {
+      "avgPct": 57,
+      "range": "+30% to +57%",
+      "note": "May 21–22, 2026: Rigetti +30.6% day-one and ~+57% over two sessions on $100M CHIPS Act LOI — the benchmark for what happens when a superconducting quantum name lands direct federal validation. IonQ post-SPAC Nov 2021: +193% in 45 days from $10.60 to $31.",
+      "exampleDate": "May 2026"
+    },
+    "postLose": {
+      "avgPct": -35,
+      "range": "-20% to -50%",
+      "note": "IonQ fell from $31 ATH (Nov 2021) back to ~$3 by Dec 2022 (-90%) when revenue missed SPAC projections. SPAC quantum names without follow-through de-rate violently. IQMX day-one dip to $11.60 (-14% from highs) shows early volatility.",
+      "exampleDate": "2022"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "4% max — higher than pure ค่าขนม (2–3%) because IQM has real €31M revenue + €337M cash (not pre-revenue hype), but still binary on gov contract inclusion and first earnings. Wider than core but below catalyst-list sizing."
+    },
+    "stopPreCatalyst": { "pct": -20, "price": 10.00, "note": "หลุด $10 (SPAC PIPE floor) = listing premium evaporates ก่อน earnings" },
+    "stopPostCatalyst": { "pct": -35, "note": "ถ้า first earnings miss + ไม่ได้ gov contract ใน H2 2026 — exit แม้ยังมี cash runway" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "IONQ",
+      "event": "Post-SPAC Listing Run — First Pure-Play Quantum IPO",
+      "date": "Nov 2021",
+      "movePct": 193,
+      "days": 45,
+      "outcome": "good",
+      "note": "IonQ listed via SPAC at $10.60 (Oct 2021) and surged to $31 by Nov 17 — +193% in 45 days as the first pure-play quantum public company. IQMX is the first European quantum on Nasdaq with stronger commercial metrics (€31M revenue vs IonQ's ~$2M at debut). The sector discovery re-rate playbook is directly comparable."
+    },
+    {
+      "ticker": "RGTI",
+      "event": "US Commerce Dept CHIPS Quantum Equity-Stake LOI ($100M)",
+      "date": "May 2026",
+      "movePct": 57,
+      "days": 2,
+      "outcome": "good",
+      "note": "Rigetti +30.6% on May 21 and ~+57% over two sessions on $100M CHIPS Act LOI with equity stake. Superconducting quantum peer to IQM. IQMX's moon case assumes similar federal validation — a named award would likely produce a comparable violent re-rate."
+    },
+    {
+      "ticker": "QBTS",
+      "event": "Same $2B Federal Quantum Equity Program",
+      "date": "May 2026",
+      "movePct": 33,
+      "days": 1,
+      "outcome": "good",
+      "note": "D-Wave Quantum +33% in a single day on May 21, 2026 CHIPS quantum award announcement. Confirms the sector-wide repricing magnitude when any quantum name lands direct US government equity investment. IQMX was not in this round — inclusion in a future tranche is the clearest moonshot trigger."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "IQM Quantum Computers Begins Trading on Nasdaq as First European Quantum Company on Major US Exchange",
+    "url": "https://thequantuminsider.com/2026/07/03/iqm-begins-trading-on-nasdaq/",
+    "date": "Jul 2026"
+  },
+  "sources": [
+    "https://thequantuminsider.com/2026/07/01/iqm-completes-raaq-business-combination/",
+    "https://thequantuminsider.com/2026/07/03/iqm-begins-trading-on-nasdaq/",
+    "https://thequantuminsider.com/2026/02/23/iqm-set-to-go-public-through-merger-with-real-asset-acquisition-corp/",
+    "https://techfundingnews.com/iqm-nasdaq-listing-finland-quantum-computing/",
+    "https://www.stocktitan.net/sec-filings/RGTI/8-k-rigetti-computing-inc-reports-material-event-32a2e1c8e136.html",
+    "https://www.ionq.com/news/october-01-2021-ionq-listed-on-nyse",
+    "https://finance.yahoo.com/technology/ai/articles/iqm-quantum-computers-becomes-first-144700814.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "IQMX คือบริษัท quantum computing ยุโรปแห่งแรกบน US exchange ใหญ่ — list Nasdaq 2 ก.ค. 2026 ผ่าน SPAC RAAQ มูลค่า pre-money ~$1.8B เงินสด pro forma €337M มีรายได้จริง €31M (2025) ขาย quantum computer 23 เครื่อง backlog €67M+ ไม่เหมือน quantum peer ส่วนใหญ่ที่ยัง pre-revenue thesis คือ sector re-rating: quantum ที่ได้ gov validation วิ่ง 200–300%+ (IonQ 2021, RGTI/QBTS พ.ค. 2026) IQMX ไม่ได้อยู่รอบ $2B CHIPS พ.ค. 2026 — การได้ award รอบใหม่ = binary moonshot earnings แรก ~ก.ย. 2026 sizing 2–5% max",
+      "priceNote": "List 2 ก.ค. ที่ ~$10 SPAC trust เปิดอ่อนแล้วฟื้น $12–13 range 4 วัน $11.60–$13.78 ที่ $12.50 market cap ~$3.2B แพงเทียบ €31M revenue แต่มี cash + commercial proof",
+      "scoreLabel": "Moonshot",
+      "catalysts": [
+        { "name": "Earnings แรกหลัง list — Q3 2026", "description": "รายงานไตรมาสแรกหลัง Nasdaq — นักลงทุนดู €31M revenue run-rate, backlog €67M conversion, margin การส่งมอบระบบ beat-and-raise = validate $3.2B cap" },
+        { "name": "คลื่น Government Quantum Contract H2 2026", "description": "พ.ค. 2026 Commerce Dept ให้ทุน ~$2B 9 บริษัท quantum IQMX ไม่อยู่ในรอบ แต่เป็น European superconducting quantum แรกบน Nasdaq มี 23 เครื่อง deployed — candidate สำหรับ CHIPS/NATO/EU รอบใหม่" },
+        { "name": "Fault-Tolerant Roadmap Milestone", "description": "IQM ใช้เงินจาก list พัฒนา fault-tolerant quantum — milestone error correction/qubit scaling H2 2026 จะ differentiate จาก pre-revenue SPAC" },
+        { "name": "Nasdaq Listing เสร็จ — 2 ก.ค. 2026", "description": "SPAC merger RAAQ ปิด ADS เทรด IQMX เงินสด net €198.7M + PIPE dual-list Helsinki — European quantum แรกบน US exchange ใหญ่" }
+      ],
+      "risks": [
+        "Valuation ~$3.2B เทียบ €31M revenue (~100x sales) — ขึ้นกับ growth narrative หลัง list",
+        "IQMX ไม่ได้อยู่รอบ $2B US quantum equity-stake พ.ค. 2026 ที่ทำให้ RGTI/QBTS วิ่ง 30%+",
+        "SPAC PIPE selling pressure + warrant overhang 12.5M ที่ $11.50 — volatility 90 วันแรก",
+        "HQ ยุโรปแข่ง US federal dollars — geopolitical friction กับ Rigetti/IonQ/D-Wave",
+        "Fault-tolerant timeline risk — slip = moon thesis เลื่อน 12–24 เดือน",
+        "Sentiment quantum sector — หุ้นใหม่ list ไม่มี history กระโดด ±20% จาก sector news"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ทุนรัฐ quantum (CHIPS, DARPA, EU Quantum Flagship) = multi-year appropriations ไม่ขึ้น FOMC เงินสด €337M ป้องกัน ops",
+        "inflationNote": "ต้นทุน R&D + superconducting fab = personnel/materials — wage inflation ปานกลาง offset ด้วย gov contract pricing",
+        "sectorImpact": "ปานกลาง มี revenue จริง resilient กว่า pre-revenue peer แต่ valuation $3.2B ~100x sales = sensitive ต่อ multiple compression จาก hawkish Fed",
+        "summary": "Fed risk ต่ำสำหรับ ops (cash-rich, gov-funded sector) valuation risk ปานกลาง — newly listed ~100x sales multiple compression ใหญ่กว่า macro เว้นแต่ gov contract/earnings beat trigger re-rate"
+      },
+      "entryStrategy": {
+        "verdict": "Moonshot 2–5% max scale in $12.50 หรือ dip $11–11.80 Base $20 (+60%) Bull $28 (+124%) Moon $47.50 (+280%) earnings แรก ~ก.ย. 2026 = catalyst clock",
+        "entryLevels": [
+          { "note": "4 วันหลัง list เหนือ SPAC $10 floor — starter 2–3%", "timing": "ตอนนี้ (2–3% max)" },
+          { "note": "dip zone ใกล้ day-1 low $11.60 — R/R ดีที่สุดก่อน earnings", "timing": "ถ้าย่อ" },
+          { "note": "SPAC trust-value — add เฉพาะมั่นใจสูงถ้า sector ขาย", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Base — revenue re-rate เป็น peer multiple บน €40M+ 2026E" },
+        "tp2": { "note": "Bull — earnings beat + backlog เร่งโดยไม่ต้องมี gov award" },
+        "tp3": { "note": "Moon — US/EU gov quantum contract + sector frenzy แบบ IonQ/RGTI", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุด $10 (PIPE price) = listing premium หาย PIPE sellers ครอง",
+          "hardNote": "Bear — revenue miss + ไม่มี gov contract + sector de-rate",
+          "rrNote": "Entry 2 ($11.40) vs TP2 ($28.00)",
+          "rrWarning": "Asymmetric ✅ — revenue จริง + cash vs pre-revenue peers"
+        }
+      },
+      "estimateDates": [
+        { "event": "Earnings สาธารณะแรก (Q3 2026)", "note": "รายงานแรกหลัง Nasdaq — backlog conversion + delivery cadence" },
+        { "event": "Fault-Tolerant Roadmap Update", "note": "milestone error correction/qubit scaling H2 2026" },
+        { "event": "Federal Quantum Procurement Window", "note": "หลังรอบ CHIPS พ.ค. 2026 — award เพิ่มหรือ EU/NATO parallel" }
+      ],
+      "catalystSpot": {
+        "preRunup": "quantum ใหม่ list วิ่ง 15–40% 2–4 สัปดาห์ก่อน earnings แรก IonQ +25% เดือนก่อน earnings แรก IQMX 4 วัน trading = pre-earnings run ยังไม่เริ่ม",
+        "preRunupTiming": "4–8 สัปดาห์ก่อน earnings แรก (~ก.ย. 2026)",
+        "postWin": { "note": "RGTI +57% 2 วัน พ.ค. 2026 บน CHIPS LOI IonQ +193% 45 วัน Nov 2021 จาก $10.60 → $31" },
+        "postLose": { "note": "IonQ จาก $31 (Nov 2021) ลง ~$3 (Dec 2022) -90% เมื่อ revenue miss SPAC projection IQMX dip วันแรก $11.60 (-14% จาก high)" },
+        "spotSizing": { "reason": "4% max — สูงกว่า ค่าขนม เพราะมี revenue €31M + cash €337M แต่ยัง binary เรื่อง gov contract + earnings แรก" },
+        "stopPreCatalyst": { "note": "หลุด $10 = listing premium หายก่อน earnings" },
+        "stopPostCatalyst": { "note": "earnings miss + ไม่มี gov contract H2 2026 = exit" }
+      },
+      "comparableCases": [
+        { "note": "IonQ list SPAC $10.60 แล้ววิ่ง $31 ใน 45 วัน (+193%) — IQMX มี revenue แข็งกว่า (€31M vs ~$2M) playbook เดียวกัน" },
+        { "note": "RGTI +57% 2 วัน พ.ค. 2026 บน CHIPS LOI — superconducting peer IQMX moon = federal validation แบบเดียวกัน" },
+        { "note": "D-Wave +33% วันเดียว พ.ค. 2026 บน quantum award — IQMX ไม่อยู่รอบนั้น inclusion รอบใหม่ = moonshot trigger ชัดสุด" }
+      ]
+    }
+  }
+}

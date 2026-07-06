@@ -8,24 +8,32 @@ import type { RankChange } from "@/lib/ranking-history";
 
 type Ranked = ReturnType<typeof rankTurboReports>;
 
+const TURBO_DISPLAY_LIMIT = 10;
+
 export function TurboContent({ ranked, rankChanges = [] }: { ranked: Ranked; rankChanges?: RankChange[] }) {
   const { lang } = useLang();
   const th = lang === "th";
 
+  const displayed = ranked.slice(0, TURBO_DISPLAY_LIMIT);
+
   const avgMoon =
-    ranked.length > 0
-      ? Math.round(ranked.reduce((s, r) => s + r.moonPct, 0) / ranked.length)
+    displayed.length > 0
+      ? Math.round(displayed.reduce((s, r) => s + r.moonPct, 0) / displayed.length)
       : 0;
-  const topPick = ranked[0];
-  const over300 = ranked.filter((r) => r.moonPct >= 300).length;
-  const over500 = ranked.filter((r) => r.moonPct >= 500).length;
+  const topPick = displayed[0];
+  const over300 = displayed.filter((r) => r.moonPct >= 300).length;
+  const over500 = displayed.filter((r) => r.moonPct >= 500).length;
 
   const statsItems = [
     { label: th ? "ตัวเด่น" : "Top Pick",       value: topPick?.ticker ?? "—", color: "#ff6d00" },
     { label: th ? "Moon % เฉลี่ย" : "Avg Moon %", value: `+${avgMoon}%`,        color: "#ff6d00" },
     { label: th ? "300%+ ตัว" : "300%+ Picks",   value: `${over300}`,           color: "#d500f9" },
     { label: th ? "500%+ ตัว" : "500%+ Picks",   value: `${over500}`,           color: "#d500f9" },
-    { label: th ? "ทั้งหมด" : "Total Turbo",     value: `${ranked.length}`,     color: "#7f4040" },
+    {
+      label: th ? "แสดง" : "Showing",
+      value: ranked.length > TURBO_DISPLAY_LIMIT ? `${displayed.length}/${ranked.length}` : `${displayed.length}`,
+      color: "#7f4040",
+    },
   ];
 
   return (
@@ -82,17 +90,17 @@ export function TurboContent({ ranked, rankChanges = [] }: { ranked: Ranked; ran
             fontSize: 12, color: "#7f3030", margin: "0 0 20px",
             fontFamily: "var(--font-mono, monospace)",
           }}>
-            {ranked.length > 0
+            {displayed.length > 0
               ? th
-                ? `${ranked.length} ตัว · เรียงตาม 🔥 upside มากสุด (bull case) · small/mid cap เด้ง 300%++`
-                : `${ranked.length} picks · ranked by 🔥 most potential upside (bull case) · small/mid cap 300%++ plays`
+                ? `Top ${displayed.length}${ranked.length > TURBO_DISPLAY_LIMIT ? ` จาก ${ranked.length}` : ""} · เรียงตาม 🔥 upside มากสุด (bull case) · small/mid cap เด้ง 300%++`
+                : `Top ${displayed.length}${ranked.length > TURBO_DISPLAY_LIMIT ? ` of ${ranked.length}` : ""} · ranked by 🔥 most potential upside (bull case) · small/mid cap 300%++ plays`
               : th
                 ? "ยังไม่มี turbo picks — รัน /analyze-turbo TICKER เพื่อสร้าง"
                 : "No turbo picks yet — run /analyze-turbo TICKER to generate one"}
           </p>
 
           {/* ── Stats strip ───────────────────────────────────────────── */}
-          {ranked.length > 0 && (
+          {displayed.length > 0 && (
             <div style={{
               display: "grid",
               gridTemplateColumns: "repeat(auto-fit, minmax(110px, 1fr))",
@@ -123,7 +131,7 @@ export function TurboContent({ ranked, rankChanges = [] }: { ranked: Ranked; ran
           )}
 
           {/* ── Moon tier badges ──────────────────────────────────────── */}
-          {ranked.length > 0 && (
+          {displayed.length > 0 && (
             <div style={{ display: "flex", gap: 8, flexWrap: "wrap", alignItems: "center" }}>
               {over500 > 0 && (
                 <span style={{
@@ -164,7 +172,7 @@ export function TurboContent({ ranked, rankChanges = [] }: { ranked: Ranked; ran
         }} />
 
         {/* ── Card grid ─────────────────────────────────────────────────── */}
-        {ranked.length === 0 ? (
+        {displayed.length === 0 ? (
           <div style={{
             textAlign: "center", padding: "80px 0", color: "#4d2020",
           }}>
@@ -182,7 +190,7 @@ export function TurboContent({ ranked, rankChanges = [] }: { ranked: Ranked; ran
             gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))",
             gap: 16,
           }}>
-            {ranked.map((r) => (
+            {displayed.map((r) => (
               <TurboCard
                 key={r.ticker}
                 report={r}

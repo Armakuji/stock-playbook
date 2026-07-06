@@ -1,0 +1,247 @@
+{
+  "ticker": "TSM",
+  "companyName": "Taiwan Semiconductor Manufacturing Co.",
+  "companyDescription": "Foundry · 70% global advanced-node market share — sole scalable manufacturer for NVIDIA Blackwell, AMD MI300, Apple A-series; N2/N3E pricing power on AI demand",
+  "exchange": "NYSE",
+  "generatedAt": "2026-07-06T00:00:00.000Z",
+  "price": 446.5,
+  "priceChange": 2.84,
+  "priceNote": "Pre-market Jul 6 ~$446.50 after Jul 2 close $434.16 — bid up ahead of Jul 16 Q2 earnings as Citi raised TW target to NT$3,800 (+32%) and Street expects ~$40B rev (+33% YoY) with a guide raise",
+  "marketCap": "$920B",
+  "sector": "Technology / Semiconductors",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 82,
+  "summary": "TSM is the irreplaceable foundry backbone of the AI cycle — 70% global foundry share, sole scalable source for NVIDIA Blackwell, AMD MI300, and Apple silicon. Q2 2026 earnings on Jul 16 is the primary catalyst: Wall Street expects ~$40B revenue (+33% YoY) and EPS ~$3.80, with consensus looking for a full-year 2026 revenue guide raise on sustained AI/HPC demand and N3/N2 pricing power. Citi just raised its TW price target to NT$3,800 from NT$2,875 (+32%) ahead of the print; TipRanks ADR consensus sits at $520 (+17% from Jul 2 close, Strong Buy). Pre-earnings drift is already underway — scale in now, add on any pre-event dip, and let the guide raise be the re-rating trigger.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings + FY Guide Raise",
+      "description": "Confirmed Jul 16 print. Street expects ~$40B revenue (+33% YoY) and EPS ~$3.80. Key read-through: whether management raises full-year 2026 revenue guidance on AI/HPC wafer demand, N3/N2 utilization, and CoWoS advanced-packaging capacity — Citi already pre-positioned with a +32% TW target raise to NT$3,800.",
+      "urgencyLabel": "10 DAYS",
+      "dateBadge": "Jul 16, 2026",
+      "catalystDate": "2026-07-16",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "🔬",
+      "name": "N2 (2nm) Risk Production Ramp",
+      "description": "N2 enters risk production H2 2026 with Apple and NVIDIA as anchor customers. Any confirmation of yield milestones or volume pull-ins at the Jul 16 call would extend the technology-leadership premium vs Samsung and Intel Foundry.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "📦",
+      "name": "CoWoS Advanced Packaging Capacity Expansion",
+      "description": "CoWoS remains the binding constraint for AI GPU output (NVIDIA Blackwell, AMD MI300). Management updates on new packaging fabs and 2026-2027 capacity targets are a direct read on hyperscaler AI capex durability.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🌏",
+      "name": "Arizona Fab 1 (N4) Production Milestone",
+      "description": "First U.S. advanced-node fab targeting high-volume production in 2025-2026. Progress updates reduce geopolitical discount and unlock CHIPS Act subsidy recognition — relevant for long-duration institutional holders.",
+      "urgencyLabel": "2026",
+      "dateBadge": "2026",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Geopolitical tail risk — Taiwan Strait tensions can trigger sudden ADR de-rating independent of fundamentals",
+    "Customer concentration — NVIDIA, Apple, and AMD represent outsized wafer revenue share; any one cutting orders moves the guide",
+    "Capex intensity rising ($30B+ annually) — free-cash-flow yield compresses if AI demand normalizes faster than expected",
+    "Samsung Foundry and Intel 18A competing for trailing-edge share could pressure pricing on mature nodes",
+    "Fed funds at 3.50-3.75% with hawkish dot plot keeps pressure on high-P/E semi multiples (~25-28x forward)",
+    "USD/TWD FX swings affect reported ADR earnings — strong dollar headwind on translated revenue",
+    "Pre-earnings run-up (+~3% pre-market Jul 6) prices in some beat-and-raise optimism — miss or inline guide risks sell-the-news"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q2 2026 Earnings",
+      "dateRange": "Jul 16, 2026",
+      "note": "Revenue guide raise is the key — Citi already raised TW target +32% ahead of print",
+      "est": "est. rev ~$40B · EPS ~$3.80",
+      "highlight": "blue"
+    },
+    {
+      "event": "N2 Risk Production Update",
+      "dateRange": "H2 2026",
+      "note": "Yield and customer pull-in commentary expected on earnings call or subsequent investor day",
+      "est": "Apple + NVIDIA anchor customers",
+      "highlight": "yellow"
+    },
+    {
+      "event": "Q3 2026 Earnings",
+      "dateRange": "Oct 2026",
+      "note": "Follow-through quarter — confirms whether Q2 guide raise was sandbagging or demand inflection",
+      "est": "est. rev ~$42B+",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -15, "price": 380 },
+    { "label": "Base", "color": "yellow", "pct": 17, "price": 522 },
+    { "label": "Bull", "color": "green", "pct": 32, "price": 590 },
+    { "label": "Moon", "color": "purple", "pct": 46, "price": 652 }
+  ],
+  "analystTargets": [
+    { "firm": "TipRanks Consensus (28 analysts)", "target": 520, "rating": "Strong Buy" },
+    { "firm": "Citigroup", "target": 580, "rating": "Buy" },
+    { "firm": "Goldman Sachs", "target": 550, "rating": "Buy" },
+    { "firm": "Morgan Stanley", "target": 540, "rating": "Overweight" },
+    { "firm": "Bernstein", "target": 600, "rating": "Outperform" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds held at 3.50-3.75% through Jun 2026 FOMC. Next meeting Jul 28-29. Dot plot still skews hawkish — median 2026 projection ~3.8% with several officials flagging additional hike risk under Chair Warsh.",
+    "inflationNote": "Core PCE running above 2% target; services inflation sticky. No near-term dovish pivot signaled — rate-cut expectations pushed to late 2026 at earliest.",
+    "sectorImpact": "Semis are moderately rate-sensitive: TSM trades ~25-28x forward earnings, less extreme than pure-play AI designers but still vulnerable to multiple compression on hawkish surprises. AI capex cycle provides an earnings offset that macro alone cannot derail near-term.",
+    "summary": "MEDIUM — rates are stable-not-easing, which caps multiple expansion, but TSM's earnings growth (+30% YoY rev) and irreplaceable foundry moat mean macro is a headwind to upside pace, not a thesis breaker ahead of Jul 16 earnings."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 446, "note": "Pre-market Jul 6 — pre-earnings drift on Citi target raise", "timing": "Now" },
+      { "label": "Entry 2", "level": 420, "rangeMax": 435, "note": "Pre-earnings dip zone — buy weakness 1-2 weeks before Jul 16", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 400, "note": "50-day MA area / macro-driven SOX selloff", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 520, "pct": 16.6, "note": "TipRanks consensus target — base case post-earnings re-rating" },
+    "tp2": { "price": 590, "pct": 32.1, "note": "Bull case — beat + FY26 guide raise, Citi/Bernstein high-target zone" },
+    "tp3": { "price": 652, "pct": 46.0, "note": "Moon — N2 ramp confirmed + CoWoS capacity doubled + AI supercycle re-rating", "moon": true },
+    "stopLoss": {
+      "tight": 405,
+      "tightPct": -9.3,
+      "tightNote": "Below pre-earnings support — would signal guide-raise thesis failing",
+      "hard": 375,
+      "hardPct": -16.0,
+      "hardNote": "200-day MA breach — AI foundry demand narrative materially weakening",
+      "riskReward": "3.4 : 1",
+      "rrNote": "TP2 ($590) vs tight stop ($405) from current entry",
+      "rrWarning": "Good R/R — 32% bull upside vs 9% tight stop with dated catalyst in 10 days"
+    },
+    "verdict": "BUY ahead of Jul 16 — TSM is the highest-conviction foundry play into earnings with Citi's +32% target raise and Street expecting a guide bump. Scale in at current levels, add on dip to $420-435, target $590 on beat-and-raise.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "TSM historically drifts +3-8% in the 1-2 weeks before earnings as AI foundry demand expectations build. Jul 6 pre-market (+2.8% from Jul 2 close) already reflects Citi's NT$3,800 target raise — typical pre-earnings pattern for this name.",
+    "preRunupTiming": "1-2 weeks pre-earnings",
+    "preRunupPct": "+3% to +8%",
+    "postWin": {
+      "avgPct": 7,
+      "range": "+5% to +10%",
+      "note": "TSM Q1 2024 earnings (Apr 18, 2024): beat on revenue and EPS, raised full-year revenue outlook on AI/HPC demand — ADR rallied ~6-7% over the following week. SOX index gained ~3-4% in sympathy. Pattern: foundry beat + guide raise = high-single-digit stock move.",
+      "exampleDate": "Apr 2024"
+    },
+    "postLose": {
+      "avgPct": -6,
+      "range": "-4% to -8%",
+      "note": "TSM Q3 2024 earnings (Oct 17, 2024): inline results but conservative Q4 guidance on smartphone softness offset AI strength — stock fell ~5% next session, SOX -2%. Shows downside when guide disappoints even on a beat.",
+      "exampleDate": "Oct 2024"
+    },
+    "spotSizing": {
+      "pct": 6,
+      "reason": "BUY verdict with high-clarity Jul 16 catalyst, +32% bull scenario, and irreplaceable foundry moat — but pre-earnings run-up and geopolitical tail risk warrant 6% initial sizing, not full position. Add on dip to $420-435 or post-earnings on confirmed guide raise."
+    },
+    "stopPreCatalyst": { "pct": -9, "price": 405, "note": "Below pre-earnings support — abort spot if thesis shifts before Jul 16" },
+    "stopPostCatalyst": { "pct": -12, "note": "If Q2 beats but FY26 guide is held flat or cut (not raised), exit — that would signal AI demand peaking earlier than the Street models" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "TSM",
+      "event": "Q1 2024 earnings — beat + raised full-year revenue outlook on AI/HPC",
+      "date": "Apr 2024",
+      "movePct": 7,
+      "days": 5,
+      "outcome": "good",
+      "note": "Revenue beat, EPS beat, and raised FY2024 revenue guidance citing strong AI accelerator and HPC demand. ADR rallied ~6-7% over the following week — direct template for a Jul 16 beat-and-raise scenario."
+    },
+    {
+      "ticker": "TSM",
+      "event": "Q4 2024 earnings — record revenue, strong AI outlook",
+      "date": "Jan 2025",
+      "movePct": 5,
+      "days": 3,
+      "outcome": "good",
+      "note": "TSM reported record Q4 revenue on sustained AI chip demand; stock gained ~4-5% as management guided for continued N3/N5 utilization strength. Shows the stock's positive sensitivity to AI-driven guide raises."
+    },
+    {
+      "ticker": "ASML",
+      "event": "Q3 2024 earnings — beat on EUV orders, raised outlook",
+      "date": "Oct 2024",
+      "movePct": 4,
+      "days": 2,
+      "outcome": "good",
+      "note": "ASML beat on EUV system orders tied to TSM and Intel capex; stock +4%, SOX +3-4% in sympathy. Foundry-equipment beat is a leading indicator for TSM wafer demand — relevant read-through for Jul 16."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Citigroup raises TSMC price target to NT$3,800 from NT$2,875 ahead of Q2 earnings",
+    "url": "https://www.invezz.com/news/2026/07/03/citi-raises-tsmc-price-target-ahead-of-q2-earnings/",
+    "date": "Jul 2026"
+  },
+  "sources": [
+    "https://www.invezz.com/news/2026/07/03/citi-raises-tsmc-price-target-ahead-of-q2-earnings/",
+    "https://www.tipranks.com/stocks/tsm/forecast",
+    "https://stockanalysis.com/stocks/tsm/forecast/",
+    "https://investor.tsmc.com/english/quarterly-results",
+    "https://www.cnbc.com/2024/04/18/tsmc-taiwan-semiconductor-q1-2024-earnings.html",
+    "https://www.reuters.com/technology/tsmc-posts-quarterly-revenue-record-2025-01-16/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "TSM คือ foundry หลักของวงจร AI — สัดส่วน 70% ตลาดโลก ผู้ผลิตชิป NVIDIA Blackwell, AMD MI300 และ Apple แทบไม่มีทางแทน Q2 2026 earnings วันที่ 16 ก.ค. คือ catalyst หลัก: ตลาดคาดรายได้ ~$40B (+33% YoY) และ EPS ~$3.80 พร้อม guide raise ปี 2026 Citi เพิ่งยก TW target เป็น NT$3,800 จาก NT$2,875 (+32%) TipRanks ADR consensus $520 (Strong Buy) หุ้น pre-market +2.8% แล้ว — ทยอยเข้าก่อน event แล้วให้ guide raise เป็นตัว re-rate",
+      "priceNote": "Pre-market 6 ก.ค. ~$446.50 จาก close 2 ก.ค. $434.16 — bid up ก่อน earnings 16 ก.ค. หลัง Citi ยก target และ Street คาด guide raise",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "Q2 2026 Earnings + Guide Raise ปี 2026", "description": "ยืนยัน 16 ก.ค. คาดรายได้ ~$40B (+33% YoY) EPS ~$3.80 จุดสำคัญคือ management จะยก revenue guide ปี 2026 จาก AI/HPC demand และ N3/N2 pricing power หรือไม่ — Citi ยก TW target +32% ไปแล้ว" },
+        { "name": "N2 (2nm) Risk Production Ramp", "description": "N2 เข้า risk production H2 2026 ลูกค้าหลัก Apple และ NVIDIA — ยืนยัน yield milestone ที่ earnings call จะต่ออายุ premium เทคโนโลยี" },
+        { "name": "CoWoS Advanced Packaging ขยายกำลังการผลิต", "description": "CoWoS ยังเป็น bottleneck ของ AI GPU (Blackwell, MI300) — update โรงงาน packaging ใหม่คือ direct read บน AI capex ของ hyperscaler" },
+        { "name": "Arizona Fab 1 (N4) Production Milestone", "description": "โรงงาน advanced-node แรกใน US กำลัง ramp volume — ลด geopolitical discount และ unlock CHIPS Act subsidy" }
+      ],
+      "risks": [
+        "ความเสี่ยง geopolitical — Taiwan Strait tension อาจ de-rate ADR ทันทีโดยไม่เกี่ยว fundamental",
+        "ลูกค้ากระจุกตัว — NVIDIA, Apple, AMD คิดสัดส่วน wafer revenue สูง ลด order ตัวใดตัวหนึ่งกระทบ guide",
+        "Capex สูง ($30B+/ปี) — FCF yield บีบถ้า AI demand normalize เร็วกว่าคาด",
+        "Samsung Foundry และ Intel 18A แข่ง mature node อาจกดราคา",
+        "Fed 3.50-3.75% + hawkish dot plot กด multiple semi ที่ P/E ~25-28x",
+        "USD/TWD FX swing กระทบ ADR earnings ที่แปลจาก TW",
+        "Pre-earnings run-up +2.8% แล้ว — miss หรือ inline guide เสี่ยง sell-the-news"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% ถึง FOMC มิ.ย. 2026 ครั้งถัดไป 28-29 ก.ค. dot plot ยัง hawkish — median 2026 ~3.8% หลายคน flag โอกาสขึ้นดอกเบี้ยเพิ่ม",
+        "inflationNote": "Core PCE ยังสูงกว่าเป้า 2% services inflation sticky ยังไม่มี dovish pivot — คาด cut ดอกเบี้ยช้าสุดปลาย 2026",
+        "sectorImpact": "Semi ไวต่อดอกเบี้ยปานกลาง TSM P/E ~25-28x ไม่สูงเท่า pure AI แต่ hawkish surprise ยังกด multiple ได้ earnings growth +30% YoY และ foundry moat ช่วย offset macro ระยะสั้น",
+        "summary": "MEDIUM — ดอกเบี้ย stable-not-easing จำกัด multiple expansion แต่ earnings growth และ foundry moat ที่แทนที่ไม่ได้ ทำให้ macro เป็น headwind ต่อจังหวะ upside ไม่ใช่ thesis breaker ก่อน earnings 16 ก.ค."
+      },
+      "entryStrategy": {
+        "verdict": "BUY ก่อน 16 ก.ค. — foundry conviction สูงสุดเข้า earnings พร้อม Citi target +32% และ Street คาด guide bump ทยอยเข้าตอนนี้ เพิ่มที่ $420-435 ถ้าย่อ target $590 เมื่อ beat-and-raise",
+        "entryLevels": [
+          { "note": "Pre-market 6 ก.ค. — pre-earnings drift หลัง Citi ยก target", "timing": "ตอนนี้" },
+          { "note": "โซนย่อก่อน earnings 1-2 สัปดาห์", "timing": "ถ้าย่อ" },
+          { "note": "50-day MA / SOX selloff จาก macro", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "TipRanks consensus — base case หลัง earnings re-rating" },
+        "tp2": { "note": "Bull case — beat + guide raise ปี 2026 โซน Citi/Bernstein high target" },
+        "tp3": { "note": "Moon — N2 ramp ยืนยัน + CoWoS capacity 2x + AI supercycle re-rating" },
+        "stopLoss": {
+          "tightNote": "หลุด pre-earnings support — guide-raise thesis เริ่มพัง",
+          "hardNote": "หลุด 200-day MA — AI foundry demand narrative อ่อนแรงจริง",
+          "rrNote": "TP2 ($590) เทียบ tight stop ($405) จากราคาปัจจุบัน",
+          "rrWarning": "R/R ดี — bull upside 32% vs tight stop 9% พร้อม catalyst ใน 10 วัน"
+        }
+      },
+      "estimateDates": [
+        { "event": "Q2 2026 Earnings", "note": "guide raise ปี 2026 คือ key — Citi ยก TW target +32% ไปแล้วก่อน print" },
+        { "event": "N2 Risk Production Update", "note": "yield และ customer pull-in คาดได้จาก earnings call" },
+        { "event": "Q3 2026 Earnings", "note": "ไตรมาส follow-through ยืนยันว่า Q2 guide raise เป็น sandbagging หรือ demand inflection จริง" }
+      ]
+    }
+  }
+}

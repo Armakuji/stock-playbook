@@ -1,0 +1,242 @@
+{
+  "ticker": "LUNR",
+  "companyName": "Intuitive Machines Inc.",
+  "companyDescription": "Lunar Infrastructure + NASA Services · Nova-C lunar lander + OMES/NSNS services — contracted $1.1B backlog with IM-3 mission 2026 and IM-4/IM-5 contracts secured",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-06T14:45:00.000Z",
+  "price": 20.20,
+  "priceChange": -5.6,
+  "priceNote": "Down ~57% from 52-week high $46.75 on SpaceX IPO rotation; Jul 1 NASA $148.3M Nova-C lander task order adds to backlog ahead of Aug 6 Q2 earnings",
+  "marketCap": "$4.29B",
+  "sector": "Space / Lunar Infrastructure",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 65,
+  "summary": "Intuitive Machines has the strongest revenue trajectory in space infrastructure: Q1 2026 record $186.7M (3x YoY), $1.1B backlog, and $900M-$1B FY2026 guidance with positive EBITDA. The current $20 level is an opportunity created by SpaceX IPO competitive fears, not fundamental deterioration. IM-3 mission 2026 and Q2 earnings Aug 6 are near-term catalysts.",
+  "catalysts": [
+    {
+      "icon": "🛰️",
+      "name": "NASA $148.3M Nova-C Lander Task Order",
+      "description": "Jul 1, 2026: NASA awarded up to $148.3M for a production-line-qualified Nova-C lander (Moon delivery by 2028). Sixth CLPS award — validates manufacturing scale-up thesis ahead of Q2 earnings.",
+      "urgencyLabel": "NEW",
+      "dateBadge": "Jul 1, 2026",
+      "catalystDate": "2026-07-01",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🌑",
+      "name": "IM-3 Lunar Mission 2026",
+      "description": "Third Nova-C lunar lander mission targeting 2026 — builds on IM-1 and IM-2 track record. Successful delivery validates Firefly as the go-to NASA CLPS contractor and de-risks IM-4/IM-5.",
+      "urgencyLabel": "2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-09-01",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings — $1B Revenue Run Rate",
+      "description": "Q2 earnings August 6 will show whether LUNR tracks toward $900M-$1B FY2026 guidance. Q1 was $186.7M (3x YoY). Beat + EBITDA positive = re-rating catalyst toward $40 analyst target.",
+      "urgencyLabel": "31 DAYS",
+      "dateBadge": "Aug 6, 2026",
+      "catalystDate": "2026-08-06",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📡",
+      "name": "NASA Lunar Reconnaissance Orbiter Camera Contract",
+      "description": "Prime contractor for NASA LRO Camera + ShadowCam — 3-year cost-plus-fixed-fee $20M. Adds recurring service revenue and validates LUNR's expansion beyond just lunar landers.",
+      "urgencyLabel": "ACTIVE",
+      "dateBadge": "May 2026",
+      "catalystDate": "2026-05-01",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🚀",
+      "name": "IM-5 Nova-D Contract — $180.4M NASA CLPS",
+      "description": "Largest LUNR contract yet: Nova-D lander (larger than Nova-C) carrying Australian rover + 7 payloads to lunar south polar region. Announced March 2026 — adds to backlog and validates upgrade path.",
+      "urgencyLabel": "2027+",
+      "dateBadge": "2027–2028",
+      "catalystDate": "2027-01-01",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Dilution risk: new equity programs to fund operations; shares outstanding increasing significantly",
+    "SpaceX IPO (planned, $1.75T valuation) could draw institutional capital away from LUNR",
+    "IM-2 mission had limited data transmission — technical execution risk on future missions",
+    "Valuation scrutiny: $4.29B market cap vs $186.7M Q1 revenue = high multiple for space infrastructure",
+    "Dependency on NASA budget stability — any sequester or delay impacts backlog conversion",
+    "Competition from ispace (Japan) and other international CLPS competitors for future contracts"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q2 2026 Earnings",
+      "dateRange": "Aug 6, 2026",
+      "note": "Track to $900M-$1B FY guidance; EBITDA positive target",
+      "est": "Rev: ~$200-220M est. Q2",
+      "highlight": "yellow"
+    },
+    {
+      "event": "IM-3 Lunar Mission",
+      "dateRange": "H2 2026",
+      "note": "Third Nova-C delivery — validates platform cadence",
+      "est": "Mission success = strong catalyst",
+      "highlight": "blue"
+    },
+    {
+      "event": "IM-4 Mission Preparation",
+      "dateRange": "2027",
+      "note": "South pole — 6 NASA payloads + ESA drill",
+      "est": "IM-4 $180M+ contract",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -30, "price": 14.18 },
+    { "label": "Base", "color": "yellow", "pct": 38, "price": 27.96 },
+    { "label": "Bull", "color": "green", "pct": 100, "price": 40.52 },
+    { "label": "Moon", "color": "purple", "pct": 172, "price": 55.11 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (7-8 analysts)", "target": 40.78, "rating": "Buy", "note": "7 Buy / 1 Sell; +101% upside from $20.26" },
+    { "firm": "Top Bull", "target": 75.0, "rating": "Buy", "note": "High estimate; lunar infrastructure long-term bull case" },
+    { "firm": "Bear", "target": 11.0, "rating": "Sell", "note": "Low estimate; dilution + valuation concerns" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Fed held 3.50–3.75%; next FOMC July 29. Government contract-backed revenue is insulated from rate changes.",
+    "inflationNote": "NASA contracts are cost-plus — inflation pass-through protects margins. CPI July 14 unlikely to impact LUNR directly.",
+    "sectorImpact": "Space infrastructure with government contracts is rate-insensitive. Main risk is NASA budget (Congressional), not Fed policy. SpaceX IPO is a bigger macro risk than rates.",
+    "summary": "LOW macro risk from Fed perspective: $1.1B government backlog provides revenue floor. SpaceX IPO timing and Congressional budget are bigger watchpoints than Fed rate path."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 20.26, "note": "Current — oversold on SpaceX IPO fear, not fundamentals", "timing": "Now" },
+      { "label": "Entry 2", "level": 17.0, "rangeMax": 19.0, "note": "Dip zone — add if market sells off broadly", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 14.0, "rangeMax": 15.0, "note": "52-week support zone — high-conviction add", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 28.0, "pct": 38.2, "note": "Near-term recovery toward pre-SpaceX-fear levels" },
+    "tp2": { "price": 40.78, "pct": 101.3, "note": "Consensus analyst target — let partial ride" },
+    "tp3": { "price": 55.0, "pct": 171.5, "note": "Bull case: IM-3 success + $1B revenue run rate + IM-5 execution", "moon": true },
+    "stopLoss": {
+      "tight": 15.0, "tightPct": -26.0, "tightNote": "Below 52-week support — sentiment deterioration",
+      "hard": 12.0, "hardPct": -40.8, "hardNote": "Mission failure + dilution cascade — thesis break",
+      "riskReward": "2.7 : 1", "rrNote": "TP2 vs tight stop at $15", "rrWarning": "Good R/R given +101% target"
+    },
+    "verdict": "BUY — current SpaceX IPO-driven weakness is a buying opportunity; Q2 earnings Aug 6 + IM-3 mission = 2 near-term catalysts. Scale In with dilution risk awareness.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "delivery_beat",
+    "preRunup": "LUNR historically runs 30-50% in weeks before lunar mission announcements as retail and institutional buyers front-run mission excitement. IM-1 (Feb 2024) was the first private Moon landing — massive pre-mission run. IM-3 in 2026 could see 20-30% pre-run.",
+    "preRunupTiming": "4–8 weeks before launch confirmation",
+    "preRunupPct": "+20–30%",
+    "postWin": {
+      "avgPct": 40,
+      "range": "+25% to +65%",
+      "note": "LUNR surged +14.6% just on the NASA LRO Camera contract in May 2026. Full IM-3 mission success (with data transmission) would be significantly larger. IM-1 landing validation drove multiple 20-40% sessions.",
+      "exampleDate": "Feb 2024"
+    },
+    "postLose": {
+      "avgPct": -35,
+      "range": "-20% to -55%",
+      "note": "IM-2 had limited communication issues — caused brief -15% selloff. A full mission failure (like partial IM-1 tip-over impact) would be -30-50% as it clouds entire backlog execution narrative.",
+      "exampleDate": "Mar 2025"
+    },
+    "spotSizing": {
+      "pct": 8,
+      "reason": "Strong backlog ($1.1B) and analyst conviction (7 Buys) support 8% sizing despite dilution risk. Not max because SpaceX IPO overhang is real and could pressure stock for several more quarters."
+    },
+    "stopPreCatalyst": { "pct": -26, "price": 15.0, "note": "Below $15 = SpaceX IPO fear + dilution concerns dominating — wait for re-entry signal" },
+    "stopPostCatalyst": { "pct": -20, "note": "If Q2 earnings miss + EBITDA negative, cut 50% and wait for IM-3 mission clarity" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "LUNR",
+      "event": "IM-1 first private Moon landing validation",
+      "date": "Feb 2024",
+      "movePct": 45,
+      "days": 3,
+      "outcome": "good",
+      "note": "LUNR's own IM-1 drove +45% in 3 days despite partial tip-over on landing — mission declared partially successful. IM-3 with clean landing = potential for larger move from lower base."
+    },
+    {
+      "ticker": "LUNR",
+      "event": "NASA LRO Camera contract win +14.6%",
+      "date": "May 2026",
+      "movePct": 14.6,
+      "days": 1,
+      "outcome": "good",
+      "note": "Even a $20M recurring services contract drove +14.6% — shows market sensitivity to NASA contract announcements at current suppressed levels."
+    },
+    {
+      "ticker": "RKLB",
+      "event": "Neutron reveal + Electron cadence beat",
+      "date": "Mar 2023",
+      "movePct": 32,
+      "days": 5,
+      "outcome": "good",
+      "note": "Rocket Lab +32% when Neutron timeline + launch cadence exceeded expectations. LUNR at 3x revenue growth with positive EBITDA target is a similar inflection narrative."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Intuitive Machines Is Selling Off Before the SpaceX IPO — Much-Needed Reset for LUNR Stock",
+    "url": "https://www.barchart.com/story/news/2339665/intuitive-machines-is-selling-off-before-the-spacex-ipo-its-a-much-needed-reset-for-lunr-stock",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://finance.yahoo.com/quote/LUNR/",
+    "https://www.stocktitan.net/news/LUNR/intuitive-machines-reports-first-quarter-2026-financial-results-zcbrjao1l7x0.html",
+    "https://investors.intuitivemachines.com/news-releases/news-release-details/intuitive-machines-selects-spacex-launch-its-fourth-lunar-lander",
+    "https://www.marketbeat.com/stocks/NASDAQ/LUNR/",
+    "https://finance.yahoo.com/markets/stocks/articles/intuitive-machines-lunr-36-9-031003118.html",
+    "https://www.barchart.com/story/news/2339665/intuitive-machines-is-selling-off-before-the-spacex-ipo-its-a-much-needed-reset-for-lunr-stock"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Intuitive Machines มี revenue trajectory ที่แข็งแกร่งที่สุดใน space: Q1 2026 record $186.7M (3x YoY), backlog $1.1B, และ guidance $900M-$1B ปีนี้ พร้อม EBITDA บวก. ราคาที่ $20 เป็นโอกาสที่เกิดจาก SpaceX IPO fear ไม่ใช่ fundamental แย่ลง. IM-3 ปี 2026 + งบ Q2 วันที่ 6 ส.ค. เป็น catalyst ใกล้ๆ.",
+      "priceNote": "ร่วง 57% จาก 52-week high $46.75 เพราะ SpaceX IPO pressure — fundamental ยังแข็งแกร่ง",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "IM-3 ภารกิจจันทร์ปี 2026", "description": "Nova-C lander ครั้งที่ 3 — ยืนยัน cadence และ de-risk IM-4/IM-5" },
+        { "name": "ผลประกอบการ Q2 — $1B Revenue Run Rate", "description": "งบ Q2 วันที่ 6 ส.ค. ยืนยัน $900M-$1B FY guidance + EBITDA บวก" },
+        { "name": "NASA LRO Camera Contract", "description": "Prime contractor สำหรับ NASA LRO Camera + ShadowCam — recurring service revenue 3 ปี" },
+        { "name": "IM-5 Nova-D $180.4M Contract", "description": "สัญญาใหญ่ที่สุด: Nova-D lander พร้อม Australian rover + 7 payloads" }
+      ],
+      "risks": [
+        "Dilution risk: หุ้นใหม่เพิ่มขึ้นเพื่อระดมทุน",
+        "SpaceX IPO ดึงเม็ดเงินออกจาก LUNR",
+        "IM-2 มีปัญหา data transmission — execution risk ยังมี",
+        "Valuation สูง $4.29B vs revenue",
+        "พึ่ง NASA budget stability"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed ถือ 3.50-3.75% — government contract insulated จาก rate",
+        "inflationNote": "NASA cost-plus contracts ป้องกัน inflation ได้ — CPI ไม่กระทบโดยตรง",
+        "sectorImpact": "Space infrastructure + government contract = rate-insensitive. SpaceX IPO timing สำคัญกว่า Fed",
+        "summary": "Macro risk ต่ำจาก Fed — $1.1B government backlog คือ revenue floor"
+      },
+      "entryStrategy": {
+        "verdict": "BUY — ความอ่อนแอจาก SpaceX IPO fear คือโอกาสซื้อ; งบ Q2 6 ส.ค. + IM-3 = 2 catalyst ใกล้ๆ",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — oversold จาก SpaceX fear", "timing": "ตอนนี้" },
+          { "note": "เพิ่มถ้า market selloff", "timing": "ถ้าย่อ" },
+          { "note": "52-week support zone — high-conviction", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "กลับสู่ระดับก่อน SpaceX fear" },
+        "tp2": { "note": "Consensus analyst target" },
+        "tp3": { "note": "Bull: IM-3 สำเร็จ + $1B revenue + IM-5 execution", "moon": true },
+        "stopLoss": { "tightNote": "ต่ำกว่า 52-week support", "hardNote": "Mission ล้มเหลว + dilution cascade", "rrNote": "vs tight stop $15", "rrWarning": "R/R ดีกับ +101% analyst target" }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q2 2026", "note": "ยืนยัน $900M-$1B guidance + EBITDA บวก" },
+        { "event": "IM-3 Lunar Mission", "note": "ยืนยัน cadence + de-risk IM-4/IM-5" }
+      ]
+    }
+  }
+}

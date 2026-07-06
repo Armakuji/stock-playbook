@@ -1,0 +1,230 @@
+{
+  "ticker": "RKLB",
+  "companyName": "Rocket Lab USA, Inc.",
+  "companyDescription": "Space launch + satellite systems · Iridium acquisition ($8B) transforms into vertically-integrated operator · Neutron maiden launch Q4 2026 · $2.2B backlog",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-06T14:45:00.000Z",
+  "price": 100.50,
+  "priceChange": -1.1,
+  "priceNote": "Consolidating ~$100 after Iridium $8B deal shock — down ~33% from May ATH $151; analysts raised targets (Citizens $130, New Street $150) into Aug 6 Q2 earnings",
+  "marketCap": "$57.5B",
+  "sector": "Space / Defense Technology",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 72,
+  "summary": "Rocket Lab announced an $8B acquisition of Iridium on June 29, transforming from a pure-play launch company into a vertically-integrated satellite operator with 66 LEO satellites, L-band spectrum, and 2.55M subscribers. Combined with the Q4 2026 Neutron maiden launch window (FAA permit filed Jul 1–Dec 31), this is the most structurally significant catalyst in company history. Q2 earnings Aug 6 is the near-term catalyst; KeyBanc $135 target = +33% upside from a 32% pullback.",
+  "catalysts": [
+    {
+      "icon": "🛰️",
+      "name": "Iridium $8B Acquisition — Space Operator Transformation",
+      "description": "Rocket Lab to acquire Iridium for $8B (cash + stock). Gains 66-satellite LEO network, L-band spectrum (only player globally), 2.55M subscribers. Transforms RKLB from launch company to full-stack space operator. Close expected mid-2027.",
+      "urgencyLabel": "ANNOUNCED",
+      "dateBadge": "Jun 29, 2026",
+      "catalystDate": "2026-06-29",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "🚀",
+      "name": "Neutron Maiden Launch",
+      "description": "FAA launch window filed: July 1 – December 31, 2026. Medium-lift partially-reusable rocket. Q4 2026 most likely timing. Binary event: success = +20–40% re-rate; failure = -25–35% drawdown.",
+      "urgencyLabel": "Q4 2026",
+      "dateBadge": "Q4 2026",
+      "catalystDate": "2026-10-01",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "Revenue guided $225–240M (+63% YoY midpoint). Q1 beat sent stock +34% on the day. Watch Neutron production update and Iridium deal timeline at the call.",
+      "urgencyLabel": "31 DAYS",
+      "dateBadge": "Aug 6, 2026",
+      "catalystDate": "2026-08-06",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🎖️",
+      "name": "$816M SDA Satellite Constellation",
+      "description": "Build 18 satellites for Space Development Agency missile-defense constellation. Multi-year revenue anchor through 2028.",
+      "urgencyLabel": "EXECUTING",
+      "dateBadge": "Dec 2025",
+      "catalystDate": "2025-12-01",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Neutron fail or delay — maiden launch failure = -25–35% drawdown; prior stage 1 tank test failure already caused one delay",
+    "Iridium integration + dilution — $8B deal adds $3.6B debt (Deutsche Bank + Wells Fargo bridge); stock component dilutes RKLB shareholders significantly",
+    "SpaceX competition — SpaceX IPO June 2026 drew capital; Falcon 9 dominates medium-heavy lift; Starlink directly competes with Iridium network",
+    "Cash burn — GAAP net-loss company taking on $8B acquisition debt; path to profitability requires Neutron ramp + Iridium FCF",
+    "Valuation at $57.5B — ~64x revenue; any growth deceleration or Neutron setback = violent multiple compression",
+    "Government budget risk — HASTE, SDA, Space Force = heavy DoD dependence; DOGE/CR uncertainty can delay task orders",
+    "Regulatory/shareholder approval — Iridium deal needs FCC + shareholder approval; any block = binary risk"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q2 2026 Earnings",
+      "dateRange": "Aug 6, 2026",
+      "note": "Revenue guide $225–240M; watch Neutron pad timeline + Iridium close update",
+      "est": "est. $230M rev",
+      "highlight": "yellow"
+    },
+    {
+      "event": "Neutron FAA Launch Window",
+      "dateRange": "Jul 1 – Dec 31, 2026",
+      "note": "FAA Part 450 review complete; Q4 2026 most likely for maiden flight",
+      "est": "Q4 2026",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -36, "price": 65 },
+    { "label": "Base", "color": "yellow", "pct": 23, "price": 125 },
+    { "label": "Bull", "color": "green", "pct": 53, "price": 155 },
+    { "label": "Moon", "color": "purple", "pct": 97, "price": 200 }
+  ],
+  "analystTargets": [
+    { "firm": "KeyBanc (Overweight)", "target": 135, "rating": "Overweight" },
+    { "firm": "Analyst Consensus (27 analysts)", "target": 104, "rating": "Buy" },
+    { "firm": "High target", "target": 150, "rating": "Buy" },
+    { "firm": "Low target", "target": 60, "rating": "Hold" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Fed at 3.50–3.75%; space/defense revenue (HASTE, SDA, Space Force) is government-contract backed — not rate sensitive. Iridium L-band is essential infrastructure.",
+    "inflationNote": "Core PCE 3.4%; defense contracts have inflation adjustment clauses. Rocket propellant and manufacturing costs are the primary inflation exposure.",
+    "sectorImpact": "Space sector driven by government spending and commercial demand — largely decoupled from Fed rate cycle. Iran conflict = accelerated DoD spending = net positive for RKLB defense book.",
+    "summary": "LOW — government contract base insulates from rate risk. Primary risks are execution (Neutron) and balance sheet (Iridium debt), not macro."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 102, "note": "Current — 32% off ATH, Iridium deal-shock entry", "timing": "Now (small)" },
+      { "label": "Entry 2", "level": 88, "rangeMax": 95, "note": "Add zone if Iridium dilution fear spikes or Neutron delay news", "timing": "On any dip", "preferred": true },
+      { "label": "Entry 3", "level": 72, "note": "Neutron delay + Iridium approval risk worst case", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 125, "pct": 23.0, "note": "Base — Q2 beat + Neutron prep on track" },
+    "tp2": { "price": 155, "pct": 53.0, "note": "Bull — Neutron success + Iridium close on track" },
+    "tp3": { "price": 200, "pct": 97.0, "note": "Moon — SpaceX competitor narrative + Neutron customer contracts + profitable path visible", "moon": true },
+    "stopLoss": {
+      "tight": 83,
+      "tightPct": -18,
+      "tightNote": "Below Jun lows = Iridium deal collapsing or Neutron indefinite delay",
+      "hard": 65,
+      "hardPct": -36,
+      "hardNote": "Neutron maiden failure + Iridium shareholder block",
+      "riskReward": "2.9 : 1",
+      "rrNote": "Tight stop vs TP2",
+      "rrWarning": "Size small 3–4% — binary Neutron risk demands smaller position"
+    },
+    "verdict": "Buy the Iridium transformation dip — the acquisition repositions RKLB from a launch play to a full-stack space operator with captive launch demand, L-band spectrum, and 2.55M subscribers. Neutron success in Q4 = moon case unlocked.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "satellite_launch",
+    "preRunup": "Rocket Lab historically rallies 15–30% in the 4–6 weeks before a confirmed launch window opens, driven by investor anticipation and contract announcement cadence. Iridium deal creates a new pre-catalyst entry narrative.",
+    "preRunupTiming": "Jul 1 → Aug 6 (earnings); then Oct–Dec (Neutron window)",
+    "preRunupPct": "+15–30%",
+    "postWin": {
+      "avgPct": 20,
+      "range": "+10% to +40%",
+      "note": "Q1 2026 earnings beat sent stock +34% in a single session. Neutron maiden success historically comparable to SpaceX Falcon 9 first reuse — sector re-rating catalyst (+20–40% in the week after).",
+      "exampleDate": "May 2026"
+    },
+    "postLose": {
+      "avgPct": -25,
+      "range": "-15% to -35%",
+      "note": "Neutron failure = -25–35% in the week after. Prior Neutron delay headlines caused -10–20% drawdowns. SpaceX IPO rotation caused -10%.",
+      "exampleDate": "Jun 2026"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "High conviction on Iridium transformation + Neutron binary upside, but execution risk is real. Limit to 3–4% of portfolio. Scale in on dips pre-Neutron window."
+    },
+    "stopPreCatalyst": { "pct": -18, "price": 83, "note": "Below Jun lows = Iridium deal collapsing or Neutron indefinitely delayed" },
+    "stopPostCatalyst": { "pct": -25, "note": "Neutron failure = exit all within 2 sessions; do not average down on vehicle loss" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "RKLB",
+      "event": "Q1 2026 Earnings Beat + $2.2B Backlog",
+      "date": "May 2026",
+      "movePct": 34,
+      "days": 1,
+      "outcome": "good",
+      "note": "Q1 2026 earnings produced a +34% single-session move on revenue +63.5% YoY + backlog doubling +108% YoY. Q2 2026 sets up a similar beat given $225–240M guidance with strong government contract flow."
+    },
+    {
+      "ticker": "SPCE",
+      "event": "First successful commercial spaceflight — July 2021",
+      "date": "Jul 2021",
+      "movePct": 30,
+      "days": 5,
+      "outcome": "good",
+      "note": "Virgin Galactic +30% in 5 days after first successful commercial spaceflight — comparable to Neutron maiden success re-rating thesis for RKLB as the second viable commercial medium-lift launch provider."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Rocket Lab to Acquire Iridium for $8B — Creating Vertically-Integrated Space Powerhouse",
+    "url": "https://investor.iridium.com/2026-06-29-Rocket-Lab-to-Acquire-Iridium-in-Historic-Deal,-Creating-A-Fully-Vertically-Integrated-Space-Powerhouse-Primed-for-Growth",
+    "date": "Jun 29, 2026"
+  },
+  "sources": [
+    "https://investor.iridium.com/2026-06-29-Rocket-Lab-to-Acquire-Iridium-in-Historic-Deal,-Creating-A-Fully-Vertically-Integrated-Space-Powerhouse-Primed-for-Growth",
+    "https://www.stocktitan.net/news/RKLB/rocket-lab-announces-first-quarter-2026-financial-results-surpasses-cznv7fzbueb0.html",
+    "https://rocketlabcorp.com/updates/rocket-lab-secures-190m-contract-for-20x-haste-launches-cements-hypersonics-leadership-with-department-of-war-partnership/",
+    "https://rocketlabcorp.com/updates/rocket-lab-awarded-816m-prime-contract-to-build-missile-defense-satellite-constellation-for-u-s-space-force/",
+    "https://www.globenewswire.com/news-release/2026/05/22/3299858/0/en/rocket-lab-awarded-90m-contract-to-build-geo-satellites-hosting-space-domain-awareness-payload-for-u-s-space-force.html",
+    "https://stockstotrade.com/news/rocket-lab-corporation-rklb-news-2026_06_29-2/",
+    "https://www.marketbeat.com/stocks/NASDAQ/RKLB/forecast/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Rocket Lab ประกาศซื้อ Iridium $8B วันที่ 29 มิ.ย. เปลี่ยน thesis จาก launch บริษัทเดียวเป็น full-stack space operator ที่มีดาวเทียม LEO 66 ดวง, L-band spectrum, และ subscribers 2.55M คน ประกอบกับ Neutron maiden launch Q4 2026 (FAA permit ยื่นแล้ว) นี่คือ catalyst ที่ใหญ่ที่สุดในประวัติบริษัท Q2 earnings 6 ส.ค. เป็น near-term catalyst; KeyBanc target $135 = upside +33%",
+      "priceNote": "ย่อ 32% จาก ATH $150 — Iridium acquisition $8B ประกาศ 29 มิ.ย. เปลี่ยน thesis",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "Iridium $8B — กลายเป็น Space Operator เต็มรูปแบบ", "description": "ซื้อ Iridium $8B: ดาวเทียม 66 ดวง, L-band spectrum เดียวในโลก, subscribers 2.55M; ปิดดีล mid-2027" },
+        { "name": "Neutron Maiden Launch", "description": "FAA window ก.ค.–ธ.ค. 2026; Q4 มีโอกาสมากที่สุด; binary event สำเร็จ = +20–40%" },
+        { "name": "รายงานผล Q2 2026", "description": "Guide $225–240M; ดู Neutron update + Iridium timeline ใน call" },
+        { "name": "$816M SDA Satellite Constellation", "description": "สร้างดาวเทียม 18 ดวงสำหรับ Space Development Agency — รายได้หลายปี" }
+      ],
+      "risks": [
+        "Neutron ล้มเหลวหรือล่าช้า — maiden failure = -25–35%; stage 1 tank test เคยพังแล้ว",
+        "Iridium dilution — หนี้ $3.6B + stock component dilute ผู้ถือหุ้น RKLB",
+        "SpaceX competition — Starlink แข่งโดยตรงกับ Iridium L-band",
+        "ยังขาดทุน GAAP — ซื้อกิจการ $8B โดยยังไม่มีกำไร",
+        "Valuation $57.5B ที่ 64x revenue — ไวมากต่อ growth ชะลอ"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed rate 3.5-3.75%; สัญญา government + L-band spectrum ไม่ sensitive ต่อ rate",
+        "inflationNote": "PCE core 3.4%; ค่าเชื้อเพลิงจรวดและ manufacturing เป็น inflation risk หลัก",
+        "sectorImpact": "Space/defense ขับเคลื่อนด้วย government spend; ความขัดแย้งอิหร่าน = DoD spend เพิ่ม = บวกกับ RKLB",
+        "summary": "LOW — รายได้ government ป้องกัน rate risk; ความเสี่ยงหลักคือ execution (Neutron) + balance sheet (Iridium)"
+      },
+      "entryStrategy": {
+        "verdict": "ซื้อช่วง Iridium deal-shock — acquisition เปลี่ยน thesis จาก launch เป็น full space operator; Neutron Q4 = bull case เปิด; Q2 earnings 6 ส.ค. เป็น near-term catalyst",
+        "entryLevels": [
+          { "note": "ปัจจุบัน — ย่อ 32% จาก ATH", "timing": "ตอนนี้ (เล็ก)" },
+          { "note": "Add ถ้า Iridium dilution fear หรือ Neutron ล่าช้า", "timing": "ถ้าราคาย่อ" },
+          { "note": "Worst case Neutron delay + approval block", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "กรณีฐาน — Q2 beat + Neutron pad on track" },
+        "tp2": { "note": "กรณีดี — Neutron สำเร็จ + Iridium ปิดดีล" },
+        "tp3": { "note": "Moon — SpaceX competitor + profitable path visible 2027" },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า Jun lows = Iridium collapse หรือ Neutron delayed indefinitely",
+          "hardNote": "Neutron failure + Iridium shareholder block",
+          "rrNote": "Stop แคบ vs TP2",
+          "rrWarning": "Size เล็ก 3-4% — binary Neutron risk"
+        }
+      },
+      "estimateDates": [
+        { "event": "รายงาน Q2 2026", "note": "Guide $225–240M; ดู Neutron pad update + Iridium close timeline" },
+        { "event": "Neutron FAA Launch Window", "note": "ก.ค.–ธ.ค. 2026; Q4 คาดว่ามีโอกาสมากที่สุด" }
+      ]
+    }
+  }
+}

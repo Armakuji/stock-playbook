@@ -1,0 +1,187 @@
+{
+  "ticker": "VERA",
+  "companyName": "Vera Therapeutics, Inc.",
+  "companyDescription": "IgA Nephropathy biotech · Atacicept BLA under FDA Priority Review · PDUFA Jul 7, 2026 — dual BAFF/APRIL inhibitor, first-in-class mechanism for kidney disease",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-06T14:50:00.000Z",
+  "price": 34.26,
+  "priceChange": 1.81,
+  "priceNote": "1 day from FDA PDUFA decision (Jul 7) — Phase 3 hit primary endpoint (46% proteinuria reduction vs baseline, 42% vs placebo). Priority Review + Accelerated Approval pathway.",
+  "marketCap": "$3.1B",
+  "sector": "Healthcare / Biotechnology",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 74,
+  "summary": "Vera's atacicept has an FDA PDUFA decision due July 7, 2026 — five days from today — for accelerated approval in IgA Nephropathy. Phase 3 ORIGIN data hit its primary endpoint clean (46% proteinuria reduction vs baseline). Goldman Sachs raised its target to $95 (+177%) citing favorable pricing precedent after Travere's Filspari won a broader-than-expected FSGS label in April. This is a true binary event: a clean approval likely re-rates VERA toward the Goldman target or beyond given pipeline optionality (PIONEER trial in membranous nephropathy/FSGS/MCD); a CRL would crash the stock 50%+ same day. Size for the binary, not the trend.",
+  "catalysts": [
+    {
+      "icon": "💊",
+      "name": "FDA PDUFA Decision — Atacicept in IgA Nephropathy",
+      "description": "FDA target action date for atacicept's Biologics License Application (accelerated approval pathway, Priority Review) in adults with IgA Nephropathy. Phase 3 ORIGIN trial hit its primary endpoint: 46% reduction in proteinuria vs baseline, 42% vs placebo at week 36.",
+      "urgencyLabel": "1 DAY",
+      "dateBadge": "Jul 7, 2026",
+      "catalystDate": "2026-07-07",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "📊",
+      "name": "ORIGIN Phase 3 eGFR Analysis (Full Approval Support)",
+      "description": "FDA aligned with Vera on an earlier eGFR analysis from the ORIGIN trial. Results expected Q3 2026, supporting a planned supplemental BLA in Q4 2026 for full (non-accelerated) approval — removes the overhang of a future confirmatory-trial requirement.",
+      "urgencyLabel": "Q3 2026",
+      "dateBadge": "Q3 2026",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🧬",
+      "name": "PIONEER Trial — Label Expansion Optionality",
+      "description": "Atacicept is also being evaluated in anti-PLA2R+ membranous nephropathy and anti-nephrin+ FSGS/MCD. If the BAFF/APRIL mechanism translates beyond IgAN, the addressable market is materially larger than the initial indication alone.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "2027+",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "True binary gap risk — a CRL on manufacturing, labeling, or REMS grounds (unrelated to efficacy) can happen even after clean Phase 3 data and Priority Review",
+    "Single-asset company — atacicept is essentially the entire investment thesis; no meaningful revenue diversification",
+    "Crowded competitive field: Travere's Filspari, Calliditas' Tarpeyo, and Novartis' Fabhalta are already approved in IgAN; Vertex's competing povetacicept has its own PDUFA Nov 30, 2026",
+    "Commercial launch execution risk — biologic autoinjector, payer/formulary negotiations, and real-world uptake all take time even post-approval",
+    "\"Sell the news\" risk — some approval optimism is likely already priced into the run-up; even a clean approval could see a muted or fade reaction if the label isn't as broad as hoped"
+  ],
+  "estimateDates": [
+    { "event": "FDA PDUFA Decision", "dateRange": "Jul 7, 2026", "note": "Accelerated approval decision for atacicept in IgAN — Priority Review, positive Phase 3", "est": "Approval favored, not guaranteed", "highlight": "blue" },
+    { "event": "ORIGIN eGFR Readout", "dateRange": "Q3 2026", "note": "Supports supplemental BLA for full approval + de-risks post-approval confirmatory requirement", "est": "Positive data expected", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -55, "price": 15.42 },
+    { "label": "Base", "color": "yellow", "pct": 80, "price": 61.67 },
+    { "label": "Bull", "color": "green", "pct": 180, "price": 95.93 },
+    { "label": "Moon", "color": "purple", "pct": 280, "price": 130.19 }
+  ],
+  "analystTargets": [
+    { "firm": "Goldman Sachs", "target": 95, "rating": "Buy", "note": "Raised on favorable IgAN pricing precedent post-Filspari FSGS approval; TAM expansion thesis" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "FDA regulatory decisions are event-driven, not rate-sensitive — the Jul 7 PDUFA outcome will move VERA independent of Fed policy.",
+    "inflationNote": "Healthcare/biotech is largely insulated from near-term inflation prints; commercial launch costs (sales force, manufacturing) are the bigger cost variable than macro inflation.",
+    "sectorImpact": "LOW direct impact from Fed policy, but the current market backdrop (Fed turned hawkish, a hike now priced by October per this week's market-timing read) compresses high-multiple growth/biotech valuations broadly — a clean approval would likely override that, a mixed one would not get the benefit of the doubt.",
+    "summary": "Fed risk is LOW for the PDUFA event itself — this is a pure regulatory binary. The broader hawkish-Fed backdrop is a secondary headwind on the multiple, not the catalyst."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 34.26, "note": "Current price — only 5 days to PDUFA, limited time to wait for a dip", "timing": "Now (2-3% max, pre-binary)" },
+      { "label": "Entry 2", "level": 29.12, "rangeMax": 31, "note": "Pre-catalyst de-risking dip, if the broader market wobbles into Jul 7", "timing": "If dips this week", "preferred": true },
+      { "label": "Entry 3", "level": 15.42, "note": "Post-CRL crash zone — only for high-conviction re-entry on a clear path to resubmission", "timing": "Only after a CRL" }
+    ],
+    "tp1": { "price": 61.67, "pct": 80.0, "note": "Base — approval with standard/expected label" },
+    "tp2": { "price": 95.93, "pct": 180.0, "note": "Bull — approval with broad label + premium pricing (Goldman target)" },
+    "tp3": { "price": 130.19, "pct": 280.0, "note": "Moon — approval + PIONEER pipeline optionality re-rate", "moon": true },
+    "stopLoss": {
+      "tight": 27.07, "tightPct": -21.0, "tightNote": "Pre-PDUFA break — sentiment souring ahead of the event, thesis still technically intact",
+      "hard": 15.42, "hardPct": -55.0, "hardNote": "CRL / rejection scenario — this is a gap, not a level; the tight stop will not fill on a CRL",
+      "riskReward": "3.3 : 1", "rrNote": "Entry ($34.26) vs TP2 ($95.93), risk sized to the hard-stop gap ($15.42), not the tight stop", "rrWarning": "Binary event — size the position for the hard-stop loss, not the tight stop ✅"
+    },
+    "verdict": "ค่าขนม SPECULATIVE — 2-3% max given true binary gap risk at the Jul 7 PDUFA. Approval → $61-96 (+80% to +177%), pipeline-optionality Moon → $130 (+280%). CRL crashes to ~$15 (-55%). Size for the loss, not the stop.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "Biotechs with strong Phase 3 data ahead of a PDUFA typically drift up modestly into the decision as institutional positioning builds, then gap violently on the actual readout — the pre-event drift is a small fraction of the post-decision move either direction.",
+    "preRunupTiming": "2-4 สัปดาห์ก่อน PDUFA",
+    "preRunupPct": "+5-15%",
+    "postWin": {
+      "avgPct": 34,
+      "range": "+34% to +46%",
+      "note": "Travere Therapeutics (TVTX) Filspari FSGS approval (Apr 13-14, 2026): +33.77% day-1, extending to +46.1% over the following 30 days as commercial details emerged. Closest direct comp — same kidney-disease biologic archetype, adjacent indication.",
+      "exampleDate": "Apr 2026"
+    },
+    "postLose": {
+      "avgPct": -50,
+      "range": "-40% to -60%",
+      "note": "Single-asset biotechs with priced-in approval optimism typically crash 40-60% same day on a CRL, as the market re-rates the entire near-term pipeline to a much lower approval probability.",
+      "exampleDate": "Historical CRL pattern, single-asset biotech"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "3% given genuine binary gap risk — even Priority Review + clean Phase 3 data doesn't rule out a CRL on manufacturing/labeling grounds. Size for the -55% hard-stop scenario, not the pre-event tight stop."
+    },
+    "stopPreCatalyst": { "pct": -21, "price": 27.07, "note": "หลุด $27 ก่อน PDUFA = conviction เปลี่ยนแม้ event ยังไม่เกิด" },
+    "stopPostCatalyst": { "pct": -55, "note": "ถ้า CRL ออกมา = exit ทันที ไม่ต้องรอ resubmission — อาจใช้เวลาเป็นปี" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "TVTX",
+      "event": "Filspari FDA Approval — Expanded FSGS Label",
+      "date": "Apr 2026",
+      "movePct": 34,
+      "days": 1,
+      "outcome": "good",
+      "note": "Day-1 move on a broader-than-expected label for a kidney-disease biologic. Direct comp for VERA's IgAN mechanism and the same regulatory pathway archetype."
+    },
+    {
+      "ticker": "TVTX",
+      "event": "Filspari 30-Day Post-Approval Momentum",
+      "date": "Apr-May 2026",
+      "movePct": 46,
+      "days": 30,
+      "outcome": "good",
+      "note": "Approval momentum kept building as commercial launch details emerged — VERA could see a similar extended drift if atacicept clears Jul 7, on top of the day-1 gap."
+    }
+  ],
+  "sources": [
+    "https://ir.veratx.com/news-releases/news-release-details/vera-therapeutics-submits-biologics-license-application-us-fda",
+    "https://www.investing.com/news/analyst-ratings/goldman-sachs-raises-vera-therapeutics-stock-price-target-to-95-on-igan-pricing-93CH-4416701",
+    "https://www.hcplive.com/view/fda-grants-priority-review-of-biologics-license-application-for-atacicept-in-iga-nephropathy",
+    "https://www.timothysykes.com/news/travere-therapeutics-inc-tvtx-news-2026_04_14/",
+    "https://ir.veratx.com/news-releases/news-release-details/vera-therapeutics-announces-alignment-us-fda-earlier-origin"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Atacicept ของ Vera มี FDA PDUFA decision วันที่ 7 ก.ค. 2026 — อีก 5 วัน — สำหรับ accelerated approval รักษา IgA Nephropathy ข้อมูล Phase 3 ORIGIN ผ่าน primary endpoint ชัดเจน (ลด proteinuria 46% จาก baseline) Goldman Sachs ปรับเป้าขึ้นเป็น $95 (+177%) จาก pricing precedent ของ Filspari ที่เพิ่งได้ label กว้างกว่าคาด นี่คือ binary event จริงๆ — approve แล้วมีโอกาสวิ่งไปที่เป้า Goldman หรือมากกว่า ถ้า CRL หุ้นร่วงทันที 50%+ วันเดียว sizing ต้องคิดจาก worst case ไม่ใช่ trend",
+      "priceNote": "เหลือ 5 วันก่อน FDA PDUFA (7 ก.ค.) — Phase 3 ผ่าน primary endpoint ชัดเจน accelerated approval pathway",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "FDA PDUFA Decision — Atacicept รักษา IgA Nephropathy", "description": "วันตัดสิน FDA สำหรับ BLA ของ atacicept (accelerated approval, Priority Review) Phase 3 ORIGIN ผ่าน primary endpoint: ลด proteinuria 46% จาก baseline, 42% เทียบ placebo ที่สัปดาห์ 36" },
+        { "name": "ORIGIN Phase 3 eGFR Analysis (สนับสนุน full approval)", "description": "FDA ตกลงกับ Vera ให้ทำ eGFR analysis เร็วขึ้น ผลคาด Q3 2026 สนับสนุน supplemental BLA สำหรับ full approval — ลด overhang เรื่อง confirmatory trial ในอนาคต" },
+        { "name": "PIONEER Trial — โอกาสขยาย label", "description": "Atacicept กำลังทดสอบใน membranous nephropathy และ FSGS/MCD ด้วย ถ้า mechanism ใช้ได้กว้างกว่า IgAN ตลาดที่ addressable จะใหญ่กว่านี้มาก" }
+      ],
+      "risks": [
+        "ความเสี่ยง gap แบบ binary จริงๆ — CRL จากเหตุผลด้าน manufacturing/labeling เกิดได้แม้ข้อมูล Phase 3 จะดีและได้ Priority Review",
+        "บริษัท single-asset — atacicept คือ thesis เกือบทั้งหมด ไม่มี revenue อื่นมา diversify",
+        "คู่แข่งเยอะ: Filspari, Tarpeyo, Fabhalta ได้ approve ใน IgAN แล้ว ส่วน Vertex povetacicept ก็มี PDUFA ของตัวเอง 30 พ.ย. 2026",
+        "ความเสี่ยงตอน commercial launch — negotiate payer/formulary และการยอมรับจริงในตลาดต้องใช้เวลา แม้จะ approve แล้ว",
+        "ความเสี่ยง \"sell the news\" — optimism บางส่วนอาจ price ไปแล้วในราคาปัจจุบัน แม้ approve ราคาอาจไม่วิ่งแรงถ้า label ไม่กว้างอย่างที่หวัง"
+      ],
+      "macroRisk": {
+        "rateOutlook": "การตัดสินของ FDA ขับเคลื่อนด้วย event ไม่ sensitive กับดอกเบี้ย — ผล PDUFA 7 ก.ค. จะขยับหุ้นโดยไม่ขึ้นกับนโยบาย Fed",
+        "inflationNote": "กลุ่ม biotech ไม่ค่อยกระทบจาก inflation ระยะสั้น ต้นทุน commercial launch (sales force, manufacturing) สำคัญกว่า macro inflation",
+        "sectorImpact": "ผลกระทบจาก Fed ต่ำโดยตรง แต่บรรยากาศตลาดตอนนี้ที่ Fed พลิกเป็น hawkish (ตลาด price hike ภายใน ต.ค.) กดดัน valuation ของหุ้น growth/biotech โดยรวม — ถ้า approve ชัดเจนน่าจะข้ามผ่านปัจจัยนี้ได้ แต่ถ้าผลไม่ชัดเจนจะไม่ได้ประโยชน์จากความสงสัย",
+        "summary": "ความเสี่ยง Fed ต่ำสำหรับ event PDUFA เอง — เป็น binary ด้าน regulatory ล้วนๆ บรรยากาศ hawkish Fed เป็นแรงกดดันรอง ไม่ใช่ตัว catalyst หลัก"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม 2-3% max เหลือ 5 วันก่อน PDUFA เป้า approve $61-96 (+80% ถึง +177%) Moon จาก pipeline optionality $130 (+280%) CRL ร่วงไป ~$15 (-55%) sizing ต้องคิดจาก worst case",
+        "entryLevels": [
+          { "note": "เหลือ 5 วันก่อน PDUFA เวลาไม่พอรอย่อ", "timing": "ตอนนี้ (2-3% max)" },
+          { "note": "โซนย่อก่อน event ถ้าตลาดรวมสั่นคลอน", "timing": "ถ้าย่อสัปดาห์นี้" },
+          { "note": "โซน crash หลัง CRL — เข้าเฉพาะถ้ามั่นใจทาง resubmission ชัดเจน", "timing": "เฉพาะหลัง CRL" }
+        ],
+        "tp1": { "note": "Base — approve ด้วย label มาตรฐาน" },
+        "tp2": { "note": "Bull — approve label กว้าง + ราคา premium (เป้า Goldman)" },
+        "tp3": { "note": "Moon — approve + โอกาสจาก PIONEER pipeline", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดก่อน PDUFA = sentiment แย่ลงแต่ thesis ยังไม่พัง",
+          "hardNote": "CRL / ไม่ผ่าน — นี่คือ gap ไม่ใช่ level ธรรมดา tight stop จะไม่ fill",
+          "rrNote": "Entry ($34.26) เทียบ TP2 ($95.93) risk คิดจาก hard stop ไม่ใช่ tight stop",
+          "rrWarning": "Binary event — sizing ต้องคิดจาก hard-stop loss ไม่ใช่ tight stop ✅"
+        }
+      },
+      "estimateDates": [
+        { "event": "FDA PDUFA Decision", "note": "Accelerated approval decision — Priority Review, Phase 3 ข้อมูลดี" },
+        { "event": "ORIGIN eGFR Readout", "note": "สนับสนุน supplemental BLA สำหรับ full approval" }
+      ]
+    }
+  }
+}

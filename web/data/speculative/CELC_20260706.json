@@ -1,0 +1,244 @@
+{
+  "ticker": "CELC",
+  "companyName": "Celcuity Inc.",
+  "companyDescription": "Oncology biotech · Gedatolisib pan-PI3K/mTOR inhibitor · FDA Priority Review NDA · PDUFA Jul 17, 2026 for HR+/HER2-/PIK3CA wild-type advanced breast cancer · VIKTORIA-1 mutant cohort doubled PFS vs alpelisib (Jun 2026)",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-06T00:00:00.000Z",
+  "price": 90,
+  "priceChange": 2.8,
+  "priceNote": "11 days to PDUFA (Jul 17) · up ~677% over 52 weeks — approval optimism largely priced in, but Jul 17 remains a true binary gap event · mutant-cohort data (Jun 2) adds label-expansion optionality not yet in the WT-only NDA",
+  "marketCap": "$4.3B",
+  "sector": "Healthcare / Biotechnology",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 72,
+  "summary": "Celcuity's gedatolisib faces an FDA PDUFA decision on July 17, 2026 — 11 days away — for HR+/HER2-/PIK3CA wild-type advanced breast cancer under Priority Review and Real-Time Oncology Review. Phase 3 VIKTORIA-1 WT data published in J Clin Oncol showed practice-changing PFS gains; the Jun 2, 2026 PIK3CA-mutant cohort readout doubled median PFS vs alpelisib (11.1 vs 5.6 months, HR 0.50), opening a second regulatory path via sNDA in 2027. The stock has already re-rated ~677% over 52 weeks, so a clean approval may see a muted day-1 gap but a path toward the ~$161 analyst consensus (+79%); a CRL would crash 50%+ overnight. This is a ค่าขนม binary — size 2–3% max, not a trend trade.",
+  "catalysts": [
+    {
+      "icon": "💊",
+      "name": "FDA PDUFA Decision — Gedatolisib (PIK3CA Wild-Type ABC)",
+      "description": "FDA target action date for gedatolisib NDA in HR+/HER2-/PIK3CA wild-type advanced breast cancer after CDK4/6 inhibitor + aromatase inhibitor progression. Priority Review, Breakthrough Therapy, Fast Track, and RTOR submission based on Phase 3 VIKTORIA-1 WT cohort data.",
+      "urgencyLabel": "11 DAYS",
+      "dateBadge": "Jul 17, 2026",
+      "catalystDate": "2026-07-17",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "🧬",
+      "name": "VIKTORIA-1 PIK3CA-Mutant Cohort — sNDA Filing",
+      "description": "Jun 2, 2026 detailed data: gedatolisib triplet median PFS 11.1 mo vs 5.6 mo for alpelisib + fulvestrant (HR 0.50, p<0.0001); ORR 48.9% vs 26.0%. Celcuity plans supplemental NDA filing Q3 2026 — regulatory decision expected ~2027, materially expanding addressable population beyond the Jul 17 WT label.",
+      "urgencyLabel": "Q3 2026",
+      "dateBadge": "Q3 2026",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🚀",
+      "name": "Commercial Launch — WT Indication",
+      "description": "Company preparing for potential U.S. commercial launch in Q3 2026 if Jul 17 PDUFA clears. First-in-class pan-PI3K/mTOR inhibitor vs single-target alpelisib (Piqray) — launch execution, payer access, and prescriber adoption become the next re-rate driver post-approval.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "Q3 2026",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "📊",
+      "name": "VIKTORIA-2 — First-Line Expansion Trial",
+      "description": "Phase 3 trial (n~1,180) evaluating gedatolisib + CDK4/6 inhibitor + fulvestrant as first-line treatment for endocrine-resistant HR+/HER2- ABC. Long-dated pipeline optionality beyond the post-CDK4/6 setting targeted by the Jul 17 NDA.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "2027+",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Heavy pre-PDUFA run-up (~677% over 52 weeks) — even a clean approval risks a \"sell the news\" fade if the label, pricing, or launch timeline disappoint vs elevated expectations",
+    "True binary gap risk on Jul 17 — a Complete Response Letter (CRL) on manufacturing, labeling, or REMS grounds can happen despite strong Phase 3 data and Priority Review",
+    "Single lead asset — gedatolisib is essentially the entire investment thesis; no meaningful revenue diversification today",
+    "Competitive landscape: Novartis' alpelisib (Piqray) already approved in PIK3CA-mutant HR+/HER2- ABC; AstraZeneca/capivasertib (Truqap) and other PAM-pathway agents compete for the same prescriber wallet",
+    "Balance sheet leverage — convertible notes and ~$339M long-term debt (per Mar 2026 filings) mean commercial launch must deliver; dilution or partnership risk if launch stumbles",
+    "Mutant-cohort sNDA is a 2027 event — the Jul 17 decision covers WT only; investors pricing full VIKTORIA-1 optionality into the stock ahead of PDUFA face disappointment if WT approval is narrow"
+  ],
+  "estimateDates": [
+    { "event": "FDA PDUFA Decision — Gedatolisib WT", "dateRange": "Jul 17, 2026", "note": "Priority Review NDA for HR+/HER2-/PIK3CA WT ABC post-CDK4/6 — RTOR submission", "est": "Approval favored, not guaranteed", "highlight": "blue" },
+    { "event": "Commercial Launch Planning", "dateRange": "Q3 2026", "note": "Company targeting U.S. launch readiness if Jul 17 clears", "est": "Contingent on approval", "highlight": "yellow" },
+    { "event": "PIK3CA-Mutant sNDA Submission", "dateRange": "Q3 2026", "note": "Based on VIKTORIA-1 MT cohort data (PFS HR 0.50 vs alpelisib)", "est": "Regulatory decision ~2027", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -55, "price": 40.5 },
+    { "label": "Base", "color": "yellow", "pct": 79, "price": 161 },
+    { "label": "Bull", "color": "green", "pct": 110, "price": 189 },
+    { "label": "Moon", "color": "purple", "pct": 200, "price": 270 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (12 analysts)", "target": 161, "rating": "Strong Buy", "note": "~+79% from $90 screen price; range $110–$189" },
+    { "firm": "Craig-Hallum", "target": 171, "rating": "Buy" },
+    { "firm": "H.C. Wainwright", "target": 185, "rating": "Buy" },
+    { "firm": "Wells Fargo", "target": 183, "rating": "Overweight" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "FDA PDUFA decisions are event-driven, not rate-sensitive — the Jul 17 outcome will move CELC independent of Fed policy.",
+    "inflationNote": "Oncology drug pricing is largely insulated from near-term CPI prints; payer/formulary negotiation and competitive positioning vs alpelisib/capivasertib matter more than macro inflation.",
+    "sectorImpact": "LOW direct Fed impact on the PDUFA event itself. The broader hawkish-Fed backdrop compresses high-multiple biotech valuations, but a clean Jul 17 approval with a commercially useful label would likely override sector headwinds; a CRL would not get the benefit of the doubt.",
+    "summary": "Fed risk is LOW for the Jul 17 binary itself — this is a pure regulatory catalyst. Sector-wide biotech multiple compression is a secondary headwind, not the driver of the PDUFA gap."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 90, "note": "Current screen price — 11 days to PDUFA, limited time to wait for a deep dip", "timing": "Now (2-3% max, pre-binary)" },
+      { "label": "Entry 2", "level": 76, "rangeMax": 80, "note": "Pre-PDUFA de-risking dip — preferred zone if broader market wobbles into Jul 17", "timing": "If dips this week", "preferred": true },
+      { "label": "Entry 3", "level": 40.5, "note": "Post-CRL crash zone — only for high-conviction re-entry on a clear resubmission path", "timing": "Only after a CRL" }
+    ],
+    "tp1": { "price": 135, "pct": 50.0, "note": "Base-minus — clean approval but sell-the-news fade given 677% 52-wk run" },
+    "tp2": { "price": 161, "pct": 78.9, "note": "Base — approval + drift toward ~$161 analyst consensus" },
+    "tp3": { "price": 270, "pct": 200.0, "note": "Moon — approval + Q3 launch execution + mutant-cohort sNDA re-rate toward peak-sales bull case", "moon": true },
+    "stopLoss": {
+      "tight": 73.8, "tightPct": -18.0, "tightNote": "Pre-PDUFA thesis breach — sentiment souring ahead of Jul 17, data unchanged",
+      "hard": 40.5, "hardPct": -55.0, "hardNote": "CRL / rejection scenario — this is a gap, not a level; tight stop will not fill on a CRL",
+      "riskReward": "6.2 : 1", "rrNote": "Preferred entry ($76) vs TP2 ($161), risk sized to tight stop ($62.32), not the CRL gap", "rrWarning": "Binary event — size for the hard-stop loss scenario, not the tight stop ✅"
+    },
+    "verdict": "ค่าขนม SPECULATIVE — 2-3% max given true binary gap risk at Jul 17 PDUFA. Approval path → $135-161 (+50% to +79%), full re-rate Moon → $270 (+200% on launch + mutant label optionality). CRL crashes to ~$40 (-55%). Size for the loss, not the stop.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "CELC has already captured an extreme pre-PDUFA run-up (~677% over 52 weeks) — far beyond the typical +5-15% drift biotechs see in the final 2-4 weeks before a decision. Further upside into Jul 17 is limited; the binary is increasingly about the gap on the readout itself, not additional run-up.",
+    "preRunupTiming": "Already largely priced — 11 days to PDUFA",
+    "preRunupPct": "+677% (52-wk, largely done)",
+    "postWin": {
+      "avgPct": 25,
+      "range": "+15% to +46%",
+      "note": "Travere (TVTX) Filspari FSGS approval (Apr 2026): +33.77% day-1, extending to +46% over 30 days. CELC's massive pre-run makes a muted day-1 (+15-25%) more likely even on approval, with extended drift toward analyst targets ($161, +79%) if launch details impress. Merus (MRUS) Bizengri approval (Dec 2024) rose only +1.8% day-1 — cautionary sell-the-news comp when optimism is pre-priced.",
+      "exampleDate": "Apr 2026 (TVTX); Dec 2024 (MRUS sell-the-news)"
+    },
+    "postLose": {
+      "avgPct": -52,
+      "range": "-40% to -60%",
+      "note": "Single-asset biotechs with priced-in approval optimism typically crash 40-60% same day on a CRL, as the market re-rates the entire near-term pipeline toward a much lower approval probability.",
+      "exampleDate": "Historical CRL pattern, single-asset oncology biotech"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "3% max — ค่าขนม play with genuine binary gap risk. Even Priority Review + clean Phase 3 data + Breakthrough Therapy designation does not rule out a CRL. Size for the -55% hard-stop scenario, not the pre-event tight stop."
+    },
+    "stopPreCatalyst": { "pct": -18, "price": 73.8, "note": "หลุด $73.80 ก่อน PDUFA = conviction เปลี่ยนแม้ event ยังไม่เกิด" },
+    "stopPostCatalyst": { "pct": -55, "note": "ถ้า CRL ออกมา = exit ทันที ไม่ต้องรอ resubmission — อาจใช้เวลาเป็นปี" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "TVTX",
+      "event": "Filspari FDA Approval — Expanded FSGS Label",
+      "date": "Apr 2026",
+      "movePct": 34,
+      "days": 1,
+      "outcome": "good",
+      "note": "Day-1 +33.77% on a rare-disease/oncology-adjacent biologic approval with a broader-than-expected label — closest direct FDA approval comp for a single-asset biotech re-rate post-PDUFA."
+    },
+    {
+      "ticker": "TVTX",
+      "event": "Filspari 30-Day Post-Approval Momentum",
+      "date": "Apr-May 2026",
+      "movePct": 46,
+      "days": 30,
+      "outcome": "good",
+      "note": "Approval momentum kept building as commercial launch details emerged — CELC could see a similar extended drift toward $161+ if gedatolisib clears Jul 17 with a commercially useful WT label, even if day-1 is muted."
+    },
+    {
+      "ticker": "MRUS",
+      "event": "Bizengri FDA Accelerated Approval — NRG1+ NSCLC/Pancreatic",
+      "date": "Dec 2024",
+      "movePct": 2,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "Cautionary sell-the-news comp: MRUS rose only +1.8% on its first FDA approval because optimism was largely pre-priced. Relevant for CELC given the 677% 52-week run — approval alone may not be enough; label breadth and launch clarity matter."
+    },
+    {
+      "ticker": "IMGN",
+      "event": "MIRASOL Phase 3 Confirmatory Win — Elahere Ovarian Cancer",
+      "date": "May 2023",
+      "movePct": 129,
+      "days": 1,
+      "outcome": "good",
+      "note": "Oncology binary upside comp: IMGN more than doubled (+129%) on landmark Phase 3 survival data — shows how much oncology names can re-rate when clinical data rewrites the commercial thesis. CELC's mutant-cohort beat of alpelisib (Jun 2026) is the analogous data catalyst; Jul 17 PDUFA is the regulatory binary on top."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Celcuity VIKTORIA-1 PIK3CA-mutant cohort doubles PFS vs alpelisib — analysts raise targets to $161-189",
+    "url": "https://ir.celcuity.com/news-releases/news-release-details/celcuitys-phase-3-viktoria-1-trial-achieves-primary-endpoint",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://ir.celcuity.com/news-releases/news-release-details/celcuity-announces-fda-acceptance-new-drug-application",
+    "https://ir.celcuity.com/news-releases/news-release-details/celcuitys-phase-3-viktoria-1-trial-achieves-primary-endpoint",
+    "https://theraradar.com/pdufa/celc-july-2026/",
+    "https://www.merlintrader.com/celc-celcuity-inc/",
+    "https://www.stocktitan.net/sec-filings/CELC/8-k-celcuity-inc-reports-material-event-96264a09072b.html",
+    "https://finance.yahoo.com/quote/CELC/",
+    "https://www.targetedonc.com/view/gedatolisib-combinations-double-pfs-in-pik3ca-mutant-breast-cancer"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Gedatolisib ของ Celcuity มี FDA PDUFA decision วันที่ 17 ก.ค. 2026 — อีก 11 วัน — สำหรับ HR+/HER2-/PIK3CA wild-type advanced breast cancer ภายใต้ Priority Review ข้อมูล VIKTORIA-1 WT ตีพิมพ์ใน J Clin Oncol แล้ว ส่วน cohort PIK3CA-mutant (2 มิ.ย.) ทำ median PFS 11.1 เดือน vs 5.6 เดือนของ alpelisib (HR 0.50) เปิดทาง sNDA ปี 2027 หุ้นวิ่ง ~677% ใน 52 สัปดาห์ — approve อาจ gap น้อยแต่ drift ไปเป้า ~$161 (+79%) ได้ ถ้า CRL ร่วง 50%+ ทันที นี่คือ binary ค่าขนม sizing 2-3% max",
+      "priceNote": "เหลือ 11 วันก่อน PDUFA (17 ก.ค.) · วิ่ง ~677% ใน 52 สัปดาห์ — optimism ส่วนใหญ่ price ไปแล้ว แต่ Jul 17 ยังเป็น gap risk จริง",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "FDA PDUFA Decision — Gedatolisib (PIK3CA Wild-Type ABC)", "description": "วันตัดสิน FDA สำหรับ NDA gedatolisib ใน HR+/HER2-/PIK3CA wild-type advanced breast cancer หลัง CDK4/6 + aromatase inhibitor Priority Review, Breakthrough Therapy, RTOR จากข้อมูล VIKTORIA-1 WT" },
+        { "name": "VIKTORIA-1 PIK3CA-Mutant Cohort — sNDA Filing", "description": "ข้อมูล 2 มิ.ย. 2026: gedatolisib triplet median PFS 11.1 เดือน vs 5.6 เดือน alpelisib (HR 0.50) ORR 48.9% vs 26.0% วางแผนยื่น sNDA Q3 2026 — ตัดสิน regulatory ~2027 ขยายตลาดได้มากกว่า WT label อย่างเดียว" },
+        { "name": "Commercial Launch — WT Indication", "description": "เตรียม launch สหรัฐ Q3 2026 ถ้า PDUFA 17 ก.ค. ผ่าน pan-PI3K/mTOR inhibitor ตัวแรก vs alpelisib (Piqray) — execution, payer access และการ adopt ของแพทย์จะเป็น driver re-rate ถัดไป" },
+        { "name": "VIKTORIA-2 — First-Line Expansion Trial", "description": "Phase 3 (n~1,180) ทดสอบ gedatolisib + CDK4/6 + fulvestrant เป็น first-line สำหรับ endocrine-resistant HR+/HER2- ABC — pipeline optionality ระยะยาว" }
+      ],
+      "risks": [
+        "Pre-PDUFA run-up หนักมาก (~677% ใน 52 สัปดาห์) — แม้ approve ชัดเจนอาจเจอ sell-the-news ถ้า label, pricing หรือ timeline launch ไม่ตรงความคาด",
+        "Gap risk แบบ binary จริงๆ วันที่ 17 ก.ค. — CRL จาก manufacturing/labeling/REMS เกิดได้แม้ Phase 3 จะดีและได้ Priority Review",
+        "Single-asset — gedatolisib คือ thesis เกือบทั้งหมด ยังไม่มี revenue diversify",
+        "คู่แข่ง: alpelisib (Piqray) approve แล้วใน PIK3CA-mutant, capivasertib (Truqap) และ PAM-pathway agents อื่นแย่ง prescriber wallet เดียวกัน",
+        "Leverage สูง — convertible notes และหนี้ระยะยาว ~$339M (Mar 2026) launch ต้อง deliver ไม่งั้นเสี่ยง dilution หรือ partnership",
+        "Mutant sNDA เป็นปี 2027 — PDUFA 17 ก.ค. ครอบคลุม WT เท่านั้น ถ้า approve แคบกว่าที่ market price ไว้ อาจ disappointed"
+      ],
+      "macroRisk": {
+        "rateOutlook": "PDUFA ขับเคลื่อนด้วย event ไม่ sensitive กับดอกเบี้ย — ผล 17 ก.ค. จะขยับหุ้นโดยไม่ขึ้นกับ Fed",
+        "inflationNote": "ราคายา oncology ไม่ค่อยกระทบจาก CPI ระยะสั้น — payer negotiation และ positioning vs alpelisib/capivasertib สำคัญกว่า",
+        "sectorImpact": "ผล Fed ต่ำโดยตรงต่อ event PDUFA เอง แต่ hawkish Fed กดดัน biotech multiple โดยรวม — approve ชัดเจนน่าจะข้ามผ่านได้ CRL จะไม่ได้ benefit",
+        "summary": "ความเสี่ยง Fed ต่ำสำหรับ binary 17 ก.ค. — เป็น regulatory catalyst ล้วนๆ sector compression เป็นแรงกดดันรอง"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม 2-3% max เหลือ 11 วันก่อน PDUFA เป้า approve $135-161 (+50% ถึง +79%) Moon จาก launch + mutant label $270 (+200%) CRL ร่วง ~$40 (-55%) sizing ต้องคิดจาก worst case",
+        "entryLevels": [
+          { "note": "เหลือ 11 วันก่อน PDUFA เวลาไม่พอรอย่อลึก", "timing": "ตอนนี้ (2-3% max)" },
+          { "note": "โซนย่อก่อน event ถ้าตลาดรวมสั่นคลอน — preferred", "timing": "ถ้าย่อสัปดาห์นี้" },
+          { "note": "โซน crash หลัง CRL — เข้าเฉพาะถ้ามั่นใจทาง resubmission ชัดเจน", "timing": "เฉพาะหลัง CRL" }
+        ],
+        "tp1": { "note": "Base-minus — approve แต่ sell-the-news เพราะวิ่ง 677% มาแล้ว" },
+        "tp2": { "note": "Base — approve + drift ไปเป้า analyst ~$161" },
+        "tp3": { "note": "Moon — approve + launch Q3 + mutant sNDA re-rate", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดก่อน PDUFA = sentiment แย่ลงแต่ข้อมูลยังไม่พัง",
+          "hardNote": "CRL = gap ไม่ใช่ level ธรรมดา tight stop จะไม่ fill",
+          "rrNote": "Preferred entry ($76) เทียบ TP2 ($161) risk คิดจาก tight stop ไม่ใช่ CRL gap",
+          "rrWarning": "Binary event — sizing ต้องคิดจาก hard-stop loss ไม่ใช่ tight stop ✅"
+        }
+      },
+      "estimateDates": [
+        { "event": "FDA PDUFA Decision — Gedatolisib WT", "note": "Priority Review NDA สำหรับ HR+/HER2-/PIK3CA WT ABC post-CDK4/6" },
+        { "event": "Commercial Launch Planning", "note": "เตรียม launch สหรัฐ Q3 2026 ถ้า 17 ก.ค. ผ่าน" },
+        { "event": "PIK3CA-Mutant sNDA Submission", "note": "จากข้อมูล VIKTORIA-1 MT (PFS HR 0.50 vs alpelisib)" }
+      ],
+      "catalystSpot": {
+        "preRunup": "CELC วิ่ง pre-PDUFA ไปแล้ว ~677% ใน 52 สัปดาห์ — เกิน pattern ปกติ +5-15% ก่อน event มาก upside เพิ่มก่อน 17 ก.ค. จำกัด binary คือ gap วันตัดสิน ไม่ใช่ run-up ต่อ",
+        "preRunupTiming": "Price ไปแล้วส่วนใหญ่ — เหลือ 11 วัน",
+        "postWin": { "note": "TVTX approve +34% day-1 ขยายเป็น +46% ใน 30 วัน CELC ที่ run-up หนักแล้ว day-1 อาจแค่ +15-25% แต่ drift ไป $161 ได้ถ้า launch ดี MRUS approve แค่ +1.8% เป็นคำเตือน sell-the-news" },
+        "postLose": { "note": "Single-asset biotech ที่ price approve ไว้แล้ว มัก crash 40-60% วันเดียวเมื่อ CRL" },
+        "spotSizing": { "reason": "3% max — binary gap risk จริง แม้ Priority Review + Phase 3 ดี + Breakthrough Therapy ก็ CRL ได้ sizing คิดจาก -55% hard stop" },
+        "stopPreCatalyst": { "note": "หลุด $73.80 ก่อน PDUFA = conviction เปลี่ยน" },
+        "stopPostCatalyst": { "note": "CRL = exit ทันที ไม่รอ resubmission" }
+      },
+      "comparableCases": [
+        { "note": "TVTX approve day-1 +34% — comp ใกล้สุดสำหรับ single-asset biotech re-rate หลัง PDUFA" },
+        { "note": "TVTX +46% ใน 30 วันหลัง approve — CELC อาจ drift ไป $161+ ถ้า label และ launch ดี แม้ day-1 จะเงียบ" },
+        { "note": "MRUS approve แค่ +1.8% — sell-the-news comp เมื่อ optimism price ไว้แล้ว ส relevant กับ CELC ที่วิ่ง 677%" },
+        { "note": "IMGN Phase 3 +129% — oncology data เปลี่ยน thesis ได้มาก mutant cohort beat alpelisib คือ data catalyst คู่กับ PDUFA 17 ก.ค." }
+      ]
+    }
+  }
+}

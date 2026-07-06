@@ -1,0 +1,177 @@
+{
+  "ticker": "CAPR",
+  "companyName": "Capricor Therapeutics, Inc.",
+  "companyDescription": "Duchenne Muscular Dystrophy cell therapy · Deramiocel BLA — FDA AdCom Jul 29, PDUFA Aug 22, 2026 · 52-week range $4.30-$40.37 already shows how violently this name moves on trial data",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-06T14:50:00.000Z",
+  "price": 24.84,
+  "priceChange": 0.6,
+  "priceNote": "FDA Advisory Committee meets Jul 29, 2026; PDUFA target action date Aug 22, 2026 for deramiocel (cardiosphere-derived cell therapy) in Duchenne Muscular Dystrophy",
+  "marketCap": "$1.4B",
+  "sector": "Healthcare / Biotechnology",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 70,
+  "summary": "Capricor's deramiocel — a cell therapy targeting cardiomyopathy in Duchenne Muscular Dystrophy, a fatal disease with no approved treatment for this specific complication — faces an FDA Advisory Committee vote Jul 29, 2026 followed by a PDUFA decision Aug 22. Analysts rate it Strong Buy with a $53.60 target (+116%). The stock's own 52-week range ($4.30 to $40.37) already shows this name can move 800%+ on trial readouts alone — a positive AdCom vote plus approval is a genuinely two-stage binary catalyst over the next 8 weeks.",
+  "catalysts": [
+    {
+      "icon": "🏛️",
+      "name": "FDA Advisory Committee Vote — Deramiocel",
+      "description": "FDA convenes outside experts to vote on deramiocel's safety/efficacy data for treating cardiomyopathy in DMD. Non-binding, but the FDA usually follows the panel — historically the single biggest catalyst day for a cell/gene therapy stock.",
+      "urgencyLabel": "23 DAYS",
+      "dateBadge": "Jul 29, 2026",
+      "catalystDate": "2026-07-29",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "💊",
+      "name": "FDA PDUFA Decision — Deramiocel BLA",
+      "description": "FDA target action date for the deramiocel Biologics License Application. Would be the first approved cell therapy specifically for DMD-related cardiomyopathy — an area of significant unmet need.",
+      "urgencyLabel": "47 DAYS",
+      "dateBadge": "Aug 22, 2026",
+      "catalystDate": "2026-08-22",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Two-stage binary — a negative AdCom vote on Jul 29 could crash the stock before the PDUFA even happens; a positive vote doesn't guarantee the Aug 22 approval follows",
+    "Accelerated-approval standards for cell/gene therapies have faced increased regulatory scrutiny industry-wide in 2025-2026",
+    "Single lead asset — deramiocel is essentially the entire company; no diversified revenue base",
+    "Extreme historical volatility (52-week range $4.30-$40.37) means the stock can also give back gains just as fast on any negative signal, including unrelated sector sentiment",
+    "Manufacturing/scale-up risk typical of cell therapies — even with approval, commercial-scale production of an allogeneic cell product is non-trivial"
+  ],
+  "estimateDates": [
+    { "event": "FDA Advisory Committee Vote", "dateRange": "Jul 29, 2026", "note": "Non-binding panel vote on deramiocel safety/efficacy — FDA usually follows it", "est": "Vote outcome unknown", "highlight": "blue" },
+    { "event": "FDA PDUFA Decision", "dateRange": "Aug 22, 2026", "note": "Target action date for deramiocel BLA in DMD cardiomyopathy", "est": "Approval favored if AdCom positive", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -60, "price": 9.94 },
+    { "label": "Base", "color": "yellow", "pct": 70, "price": 42.23 },
+    { "label": "Bull", "color": "green", "pct": 115, "price": 53.41 },
+    { "label": "Moon", "color": "purple", "pct": 230, "price": 81.97 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (10 analysts)", "target": 53.6, "rating": "Strong Buy", "note": "+116% from current price; 12-month target ahead of both binary events" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "FDA AdCom and PDUFA events are regulatory, not macro-driven — CAPR will trade on the panel vote and decision, not Fed policy.",
+    "inflationNote": "Rare-disease cell therapy pricing (typically $1M+ per course) is largely insulated from near-term inflation dynamics; payer negotiation matters more.",
+    "sectorImpact": "LOW direct impact. The current hawkish-Fed backdrop (rate hike priced by October per this week's market read) is a headwind on growth-biotech multiples broadly, but two dated binary events will dominate CAPR's price action through August regardless.",
+    "summary": "Fed risk LOW for both binary events. Broader hawkish-Fed sentiment is a secondary drag on the multiple, not the driver of the Jul 29 / Aug 22 moves."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 24.84, "note": "Current price — 4 weeks to AdCom, some time to scale in before the first binary", "timing": "Now (2-3% max)" },
+      { "label": "Entry 2", "level": 21.11, "rangeMax": 23, "note": "Pre-AdCom de-risking dip zone", "timing": "If dips into late Jul", "preferred": true },
+      { "label": "Entry 3", "level": 9.94, "note": "Post-negative-AdCom crash zone — only for high-conviction re-entry", "timing": "Only after a negative AdCom" }
+    ],
+    "tp1": { "price": 42.23, "pct": 70.0, "note": "Base — positive AdCom + approval, standard commercial ramp" },
+    "tp2": { "price": 53.41, "pct": 115.0, "note": "Bull — clean approval, matches Street consensus target" },
+    "tp3": { "price": 81.97, "pct": 230.0, "note": "Moon — approval + \"first DMD cardiomyopathy therapy ever\" re-rate, premium pricing", "moon": true },
+    "stopLoss": {
+      "tight": 19.87, "tightPct": -20.0, "tightNote": "Pre-AdCom break — sentiment souring ahead of Jul 29, thesis still technically intact",
+      "hard": 9.94, "hardPct": -60.0, "hardNote": "Negative AdCom vote — this is a gap, not a level; expect the stock to open there, not trade down to it",
+      "riskReward": "1.9 : 1", "rrNote": "Entry ($24.84) vs TP2 ($53.41), risk sized to the hard-stop gap ($9.94)", "rrWarning": "Two-stage binary — the Jul 29 AdCom is the first gap risk, Aug 22 PDUFA is the second ⚠️"
+    },
+    "verdict": "ค่าขนม SPECULATIVE — 2-3% max given a two-stage binary (AdCom Jul 29, PDUFA Aug 22). Approval path → $42-53 (+70% to +115%), full re-rate Moon → $82 (+230%). Negative AdCom crashes to ~$10 (-60%).",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "Cell/gene therapy stocks ahead of an AdCom typically see elevated volatility and mixed pre-positioning as the panel briefing documents are released 2-3 days before the vote — those documents themselves can move the stock sharply before the actual vote.",
+    "preRunupTiming": "1-2 สัปดาห์ก่อน AdCom (briefing docs release)",
+    "preRunupPct": "+/-10-30%",
+    "postWin": {
+      "avgPct": 34,
+      "range": "+34% to +100%+",
+      "note": "Travere (TVTX) Filspari FSGS approval: +33.77% day-1. Smaller-cap, less-liquid single-asset biotechs like CAPR (vs. TVTX's larger cap) have historically shown proportionally larger swings — CAPR's own 52-week range ($4.30 to $40.37, an ~840% span) on trial data alone shows this name specifically is prone to outsized moves.",
+      "exampleDate": "Apr 2026 (TVTX); CAPR's own 52-wk history"
+    },
+    "postLose": {
+      "avgPct": -55,
+      "range": "-40% to -70%",
+      "note": "A negative AdCom vote or CRL on a single-asset cell therapy company typically crashes 40-70% same day, as the market re-prices the entire near-term approval probability toward zero.",
+      "exampleDate": "Historical pattern, single-asset cell/gene therapy AdCom failures"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "3% given the two-stage binary structure (AdCom then PDUFA) — two separate gap-risk events in five weeks. Size for the worse of the two outcomes, not the average."
+    },
+    "stopPreCatalyst": { "pct": -20, "price": 19.87, "note": "หลุด $19.87 ก่อน AdCom = conviction เปลี่ยนแม้ event ยังไม่เกิด" },
+    "stopPostCatalyst": { "pct": -60, "note": "ถ้า AdCom vote ออกมาลบ = exit ทันที ไม่ต้องรอ PDUFA เดือนหลัง" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "TVTX",
+      "event": "Filspari FDA Approval — Expanded FSGS Label",
+      "date": "Apr 2026",
+      "movePct": 34,
+      "days": 1,
+      "outcome": "good",
+      "note": "Day-1 move on a rare-disease biologic approval with a broader-than-expected label — same FDA accelerated-approval archetype CAPR is pursuing."
+    },
+    {
+      "ticker": "CAPR",
+      "event": "CAPR's own 52-week trading range on trial data alone",
+      "date": "past 12 months",
+      "movePct": 838,
+      "days": 365,
+      "outcome": "mixed",
+      "note": "Stock has traded from a 52-week low of $4.30 to a high of $40.37 purely on trial-data newsflow — direct evidence this specific name is capable of the kind of violent moves a positive AdCom + approval could trigger."
+    }
+  ],
+  "sources": [
+    "https://www.capricor.com/investors/stock-data/quote",
+    "https://www.fda.gov/advisory-committees/cellular-tissue-and-gene-therapies-advisory-committee/roster-cellular-tissue-and-gene-therapies-advisory-committee",
+    "https://www.timothysykes.com/news/travere-therapeutics-inc-tvtx-news-2026_04_14/",
+    "https://stockanalysis.com/stocks/capr/market-cap/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Deramiocel ของ Capricor — cell therapy รักษา cardiomyopathy ใน Duchenne Muscular Dystrophy โรคร้ายแรงที่ยังไม่มีการรักษาสำหรับภาวะแทรกซ้อนนี้โดยเฉพาะ — มี FDA Advisory Committee vote วันที่ 29 ก.ค. 2026 ตามด้วย PDUFA decision 22 ส.ค. นักวิเคราะห์ให้ Strong Buy เป้า $53.60 (+116%) 52-week range ของหุ้นเอง ($4.30 ถึง $40.37) แสดงให้เห็นว่าหุ้นตัวนี้วิ่งได้ 800%+ จากข่าว trial data อย่างเดียว — AdCom บวก + approve คือ two-stage binary catalyst จริงๆ ใน 8 สัปดาห์ข้างหน้า",
+      "priceNote": "FDA Advisory Committee ประชุม 29 ก.ค. 2026 PDUFA target 22 ส.ค. สำหรับ deramiocel (cell therapy) รักษา DMD",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "FDA Advisory Committee Vote — Deramiocel", "description": "FDA เชิญผู้เชี่ยวชาญภายนอกมาโหวตข้อมูล safety/efficacy ของ deramiocel ไม่ binding แต่ FDA มักทำตาม panel — เป็นวัน catalyst ใหญ่สุดของหุ้น cell/gene therapy ตามประวัติ" },
+        { "name": "FDA PDUFA Decision — Deramiocel BLA", "description": "วันตัดสิน FDA สำหรับ BLA ของ deramiocel ถ้าผ่านจะเป็น cell therapy ตัวแรกที่ approve เฉพาะสำหรับ DMD cardiomyopathy — พื้นที่ที่ยังไม่มีการรักษา" }
+      ],
+      "risks": [
+        "Two-stage binary — AdCom โหวตลบวันที่ 29 ก.ค. อาจทำหุ้นร่วงก่อนถึง PDUFA เลย ส่วนโหวตบวกก็ไม่การันตี approve ตอน 22 ส.ค.",
+        "มาตรฐาน accelerated approval สำหรับ cell/gene therapy เข้มงวดขึ้นทั้งอุตสาหกรรมในปี 2025-2026",
+        "บริษัท single-asset — deramiocel คือเกือบทั้งหมดของบริษัท ไม่มี revenue อื่นมา diversify",
+        "ความผันผวนสูงมากในอดีต (52-week range $4.30-$40.37) แปลว่าหุ้นก็คืนกำไรได้เร็วพอกันถ้ามีสัญญาณลบ แม้ไม่เกี่ยวกับตัวยาโดยตรง",
+        "ความเสี่ยงด้าน manufacturing/scale-up ทั่วไปของ cell therapy — แม้ approve แล้วการผลิตระดับ commercial ของ allogeneic cell product ก็ไม่ง่าย"
+      ],
+      "macroRisk": {
+        "rateOutlook": "AdCom และ PDUFA เป็นเรื่อง regulatory ไม่ใช่ macro — CAPR จะขยับตาม panel vote และ decision ไม่ใช่นโยบาย Fed",
+        "inflationNote": "ราคา cell therapy สำหรับ rare disease (มักเกิน $1M ต่อคอร์ส) ไม่ค่อยกระทบจาก inflation ระยะสั้น การเจรจากับ payer สำคัญกว่า",
+        "sectorImpact": "ผลกระทบจาก Fed ต่ำโดยตรง บรรยากาศ hawkish Fed ตอนนี้ (ตลาด price hike ภายใน ต.ค.) เป็นแรงกดดัน valuation กลุ่ม growth-biotech โดยรวม แต่ binary event สองรอบจะเป็นตัวขับเคลื่อนหลักถึงเดือน ส.ค.",
+        "summary": "ความเสี่ยง Fed ต่ำสำหรับทั้งสอง event บรรยากาศ hawkish Fed เป็นแรงกดดันรอง ไม่ใช่ตัวขับเคลื่อนการเคลื่อนไหววันที่ 29 ก.ค. / 22 ส.ค."
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม 2-3% max มี two-stage binary (AdCom 29 ก.ค., PDUFA 22 ส.ค.) เป้า approve $42-53 (+70% ถึง +115%) Moon $82 (+230%) AdCom ลบร่วงไป ~$10 (-60%)",
+        "entryLevels": [
+          { "note": "เหลือ 4 สัปดาห์ก่อน AdCom พอมีเวลาทยอยเข้า", "timing": "ตอนนี้ (2-3% max)" },
+          { "note": "โซนย่อก่อน AdCom", "timing": "ถ้าย่อปลาย ก.ค." },
+          { "note": "โซน crash หลัง AdCom โหวตลบ — เข้าเฉพาะมั่นใจสูง", "timing": "เฉพาะหลัง AdCom ลบ" }
+        ],
+        "tp1": { "note": "Base — AdCom บวก + approve, commercial ramp ปกติ" },
+        "tp2": { "note": "Bull — approve ราบรื่น ตรงเป้า consensus" },
+        "tp3": { "note": "Moon — approve + re-rate เป็นยาตัวแรกของโรคนี้ ราคา premium", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดก่อน AdCom = sentiment แย่ลงแต่ thesis ยังไม่พัง",
+          "hardNote": "AdCom โหวตลบ — เป็น gap ไม่ใช่ level ธรรมดา คาดว่าเปิดตรงนั้นเลยไม่ไหลลงมาถึง",
+          "rrNote": "Entry ($24.84) เทียบ TP2 ($53.41) risk คิดจาก hard stop",
+          "rrWarning": "Two-stage binary — AdCom 29 ก.ค. คือ gap risk รอบแรก PDUFA 22 ส.ค. คือรอบสอง ⚠️"
+        }
+      },
+      "estimateDates": [
+        { "event": "FDA Advisory Committee Vote", "note": "โหวตไม่ binding เรื่อง safety/efficacy — FDA มักทำตาม panel" },
+        { "event": "FDA PDUFA Decision", "note": "วันตัดสินสำหรับ deramiocel BLA รักษา DMD cardiomyopathy" }
+      ]
+    }
+  }
+}
