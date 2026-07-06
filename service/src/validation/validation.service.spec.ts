@@ -189,6 +189,33 @@ describe("ValidationService.validate", () => {
     expect(prisma.tradeValidation.upsert).not.toHaveBeenCalled();
   });
 
+  it("queries open trades with deletedAt: null so soft-deleted trades are never sent to Claude", async () => {
+    const prisma = makePrismaMock();
+    (prisma.planFeature.findUnique as jest.Mock).mockResolvedValue({
+      limitValue: 3,
+    });
+    (prisma.validationRequest.count as jest.Mock).mockResolvedValue(0);
+    (prisma.trade.findMany as jest.Mock).mockResolvedValue([OPEN_TRADE]);
+    (prisma.validationRequest.create as jest.Mock).mockResolvedValue({
+      id: "vr-4",
+    });
+    (prisma.tradeValidation.upsert as jest.Mock).mockResolvedValue({});
+    (prisma.validationRequest.update as jest.Mock).mockResolvedValue({});
+    const claude = makeClaudeMock();
+    (claude.validate as jest.Mock).mockResolvedValue({
+      results: [SUCCESS_RESULT],
+      inputTokens: 500,
+      outputTokens: 120,
+    });
+    const service = new ValidationService(prisma, makeLoggerMock(), claude);
+
+    await service.validate(USER);
+
+    expect(prisma.trade.findMany).toHaveBeenCalledWith({
+      where: { userId: USER, status: "open", deletedAt: null },
+    });
+  });
+
   it("ignores any tradeId in the Claude response that isn't one of the user's fetched open trades", async () => {
     const prisma = makePrismaMock();
     (prisma.planFeature.findUnique as jest.Mock).mockResolvedValue({

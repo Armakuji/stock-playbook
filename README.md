@@ -1,4 +1,4 @@
-# ⬡ StockPlaybook
+# ⬡ Stock Playbook
 
 [![CI](https://github.com/Armakuji/stock-playbook/actions/workflows/ci.yml/badge.svg)](https://github.com/Armakuji/stock-playbook/actions/workflows/ci.yml)
 
@@ -99,4 +99,4 @@ npm run start:dev             # http://localhost:4000
 
 ---
 
-*Not financial advice · StockPlaybook Research*
+*Not financial advice · Stock Playbook Research*

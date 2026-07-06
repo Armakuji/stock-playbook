@@ -9,6 +9,7 @@ import { PrismaService } from "../prisma/prisma.service";
 import { ClaudeClient } from "./claude.client";
 import { TradeForPrompt, ValidationToolResult } from "./prompt";
 import { fetchCurrentPrice } from "./yahoo-price";
+import { activeTradeWhere } from "../trades/trade-filters";
 
 const FREE_PLAN_ID = "free";
 const AI_VALIDATION_FEATURE_ID = "ai_validation";
@@ -62,7 +63,7 @@ export class ValidationService {
     }
 
     const openTrades = await this.prisma.trade.findMany({
-      where: { userId, status: "open" },
+      where: activeTradeWhere({ userId, status: "open" }),
     });
     if (openTrades.length === 0) {
       throw new BadRequestException("No open trades to validate");

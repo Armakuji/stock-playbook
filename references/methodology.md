@@ -1,6 +1,6 @@
-# StockPlaybook Methodology (Public Framework)
+# Stock Playbook Methodology (Public Framework)
 
-This document is the **public framework** for StockPlaybook Research.
+This document is the **public framework** for Stock Playbook Research.
 
 It is intentionally the **menu, not the recipe**: stage names, logic flow, and decision philosophy are published; internal prompts, thresholds, and convergence algorithms are not.
 
@@ -8,7 +8,7 @@ Full narrative: [stock-radar-weekly.vercel.app/methodology](https://stock-radar-
 
 ## Research Philosophy
 
-StockPlaybook is built around five principles:
+Stock Playbook is built around five principles:
 
 1. **Variant perception first**: value comes from being directionally right where consensus is wrong.
 2. **Evidence before narrative**: facts constrain the story, not the other way around.

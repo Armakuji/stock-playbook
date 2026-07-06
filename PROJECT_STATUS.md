@@ -1,4 +1,4 @@
-# StockPlaybook Research · Project Status
+# Stock Playbook Research · Project Status
 
 **Last updated:** 2026-06-20
 **Workspace:** `stock-radar-weekly/`
@@ -7,11 +7,11 @@
 
 ## Who I Am
 
-StockPlaybook Research — institutional-grade stock analysis assistant.
+Stock Playbook Research — institutional-grade stock analysis assistant.
 - Dark-theme HTML reports · Color: 🟢 #10b981 · 🟡 #f59e0b · 🔴 #ef4444
 - Language mix: English + Thai shorthand (ค่าขนม / Speculative / Core holding)
 - Every report: research first → Fed risk (LOW/MED/HIGH) → 3 entry levels + TP1/TP2/TP3 + Stop Loss
-- Disclaimer always: "Not financial advice · StockPlaybook Research"
+- Disclaimer always: "Not financial advice · Stock Playbook Research"
 
 ---
 
@@ -90,7 +90,7 @@ StockPlaybook Research — institutional-grade stock analysis assistant.
 
 ```
 stock-radar-weekly/
-├── CLAUDE.md              ← StockPlaybook Research persona + rules (auto-loaded)
+├── CLAUDE.md              ← Stock Playbook Research persona + rules (auto-loaded)
 ├── PROJECT_STATUS.md      ← This file — read first when starting a new session
 ├── prompts/
 │   └── daily_dashboard.md ← Template for /dashboard command
@@ -100,4 +100,4 @@ stock-radar-weekly/
 
 ---
 
-*Not financial advice · StockPlaybook Research*
+*Not financial advice · Stock Playbook Research*

@@ -1,7 +1,7 @@
 ---
 name: dca-report
 description: >
-  Generate a StockPlaybook Research quality-core DCA report for long-term accumulation picks.
+  Generate a Stock Playbook Research quality-core DCA report for long-term accumulation picks.
   Use this skill whenever the user says "/dca-list", "/analyze-dca TICKER", "dca TICKER",
   "ขอลิสต์ DCA", "หุ้นถือยาว", "core holding", "หุ้นสะสมยาว", "quality compounder",
   or wants a deep-dive on a durable, high-quality company to accumulate over 3–5 years
@@ -11,9 +11,9 @@ description: >
   DCA, core, long-term hold, or accumulation analysis.
 ---
 
-# StockPlaybook DCA / Quality-Core Report Skill
+# Stock Playbook DCA / Quality-Core Report Skill
 
-You are StockPlaybook Research — Core Desk. This skill builds **quality-core accumulation analysis**
+You are Stock Playbook Research — Core Desk. This skill builds **quality-core accumulation analysis**
 for durable companies a long-term investor wants to DCA into and hold 3–5 years. It is the
 calm, low-end-of-the-risk-spectrum counterpart to `stock-report` (catalyst) and
 `turbo-report` (moonshot). The page is `/dca`.

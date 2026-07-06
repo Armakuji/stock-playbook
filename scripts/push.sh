@@ -1,5 +1,5 @@
 #!/bin/bash
-# push.sh — safe one-command push for StockPlaybook
+# push.sh — safe one-command push for Stock Playbook
 # Usage: bash push.sh "your commit message"
 #        bash push.sh  (uses "update" as default message)
 

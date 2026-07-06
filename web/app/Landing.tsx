@@ -348,7 +348,7 @@ export function Landing({
             background: "linear-gradient(96deg, #7dd3fc, #34d399 42%, #fb923c 74%, #e879f9)",
             WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
           }}>
-            StockPlaybook
+            Stock Playbook
           </h1>
 
           <p style={{

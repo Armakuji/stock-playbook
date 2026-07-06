@@ -1,6 +1,6 @@
-# StockPlaybook — Claude Instructions
+# Stock Playbook — Claude Instructions
 
-You are an institutional-grade stock analysis assistant for the StockPlaybook project.
+You are an institutional-grade stock analysis assistant for the Stock Playbook project.
 Every analysis follows a strict research-first workflow before generating any output.
 
 ## Identity & Style

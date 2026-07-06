@@ -155,7 +155,10 @@ trades            (id uuid PK, user_id uuid FK→users, ticker text, catalyst_ty
                    planned_tp jsonb,                 -- [tp1, tp2, tp3]
                    planned_sl numeric, status text,  -- open | closed
                    realized_pnl numeric, notes text,
-                   created_at timestamptz, updated_at timestamptz)
+                   created_at timestamptz, updated_at timestamptz,
+                   deleted_at timestamptz NULL)      -- soft delete (backlog #22); every read
+                                                      -- query filters WHERE deleted_at IS NULL
+                                                      -- via activeTradeWhere() in service/src/trades/trade-filters.ts
 trade_exits       (id uuid PK, trade_id uuid FK→trades, date date, price numeric,
                    shares numeric, note text)
 trade_validations (trade_id uuid PK FK→trades, verdict text,  -- HOLD | CUT | WATCH
@@ -174,7 +177,7 @@ Maps 1:1 from `web/lib/journal-types.ts` (`Trade`, `TradeExit`, `ValidatorResult
 | Auth | `GET /auth/google` → `GET /auth/callback` | — | OIDC code flow, sets session cookie |
 | | `GET /auth/me` | cookie | user JSON: `{id, email, name, role, status, plan}` |
 | | `POST /auth/logout` | cookie | clear cookie |
-| Journal | `GET/POST /trades` · `GET/PATCH/DELETE /trades/:id` | cookie/PAT | ownership guard — own trades only |
+| Journal | `GET/POST /trades` · `GET/PATCH/DELETE /trades/:id` | cookie/PAT | ownership guard — own trades only · `DELETE` is a **soft delete** (`deleted_at = now()`, backlog #22) — row stays in DB, just excluded from all reads |
 | | `POST/DELETE /trades/:id/exits` | cookie/PAT | close/partial-close |
 | Validator | `PUT /trades/:id/validation` | PAT | validator skill writes `trade_validations` |
 | AI Validate | `POST /journal/validate` · `GET /journal/validate/quota` | cookie | user-triggered Claude API validation (backlog #20) — Sonnet, quota 3/lifetime via `plan_features.ai_validation`, results → `trade_validations` |
@@ -258,4 +261,4 @@ ever needed.
 - **Earth element (#12 option ก):** if `/journal` becomes the 🌍 Earth feature, this API is its prerequisite — sequence #14 before #12(ก).
 
 ---
-*Not financial advice · StockPlaybook Research*
+*Not financial advice · Stock Playbook Research*

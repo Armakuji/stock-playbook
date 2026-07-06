@@ -1,8 +1,8 @@
-# StockPlaybook Scores (Public Definitions)
+# Stock Playbook Scores (Public Definitions)
 
 This file defines the **public** score framework used by the skill.
 
-Important: production StockPlaybook systems use proprietary calibrations. The equations below expose the logic shape, not private threshold tables.
+Important: production Stock Playbook systems use proprietary calibrations. The equations below expose the logic shape, not private threshold tables.
 
 ## Score Scale
 

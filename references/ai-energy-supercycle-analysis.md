@@ -1,5 +1,5 @@
 # AI Infrastructure + Energy Demand Supercycle
-## StockPlaybook Cross-Layer Investment Framework Analysis
+## Stock Playbook Cross-Layer Investment Framework Analysis
 
 > Research context only — not investment advice. Inputs derived from provided framework data and public market context as of May 2026. Cite kill criteria before acting.
 
@@ -18,7 +18,7 @@
 
 ---
 
-## StockPlaybook Scores — All Tickers
+## Stock Playbook Scores — All Tickers
 
 Scores normalized 0–100: **Strong** 80–100 | **Constructive** 60–79 | **Mixed** 40–59 | **Weak** 0–39
 
@@ -309,6 +309,6 @@ Layer 4 companies (AWS = AMZN, MSFT, GOOGL, META, ORCL) are not pure-play AI inf
 
 ---
 
-`Powered by StockPlaybook Research | Full deep dive: stock-radar-weekly.vercel.app/methodology`
+`Powered by Stock Playbook Research | Full deep dive: stock-radar-weekly.vercel.app/methodology`
 
-> *This analysis is research support only, not investment advice. Framework data sourced from provided inputs. All scores are qualitative estimates based on public market context; no proprietary StockPlaybook calibration weights are disclosed herein.*
+> *This analysis is research support only, not investment advice. Framework data sourced from provided inputs. All scores are qualitative estimates based on public market context; no proprietary Stock Playbook calibration weights are disclosed herein.*

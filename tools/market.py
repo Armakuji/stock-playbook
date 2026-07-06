@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Key-free market data fetcher — StockPlaybook Research.
+"""Key-free market data fetcher — Stock Playbook Research.
 
 Grabs live quote and valuation-ratio data from free public endpoints with a
 provider-fallback chain (Yahoo → Finviz → Stooq). No API key required.
@@ -240,7 +240,7 @@ def get_ratios(ticker: str) -> dict[str, Any]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="StockPlaybook Research — key-free market data fetcher"
+        description="Stock Playbook Research — key-free market data fetcher"
     )
     parser.add_argument("ticker", help="Ticker symbol, e.g. AAPL")
     parser.add_argument("--indent", type=int, default=2, help="JSON indent")

@@ -153,7 +153,7 @@ Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open N
 ## 18. Playbook theme refresh — visual identity ยังเป็น radar อยู่
 
 **ปัญหา:** rebrand ชื่อเป็น StockPlaybook แล้ว (#15 ✅) แต่ visual ยังเป็น radar-era ทั้งหมด: logo ⬡, favicon/icon.svg, จุด pulse, dot grid background, social-preview.png (ไฟล์เสียด้วย — ไบต์เกินก่อน PNG signature) — แบรนด์กับหน้าตาไม่ตรงกัน
-**ทำ:** 2 เฟส — (1) รัน prompt ใน `docs/design/theme-refresh-prompt.md` กับ Claude Design (แนบ screenshot landing/catalyst/report/journal) → ได้ `docs/design/playbook-theme-handoff.md` (2) ส่ง handoff ให้ Claude CLI implement ทีละ section (มี prompt ต่อให้ CLI ในไฟล์เดียวกัน) · ห้าม rename component radar-era (MarketTicker ฯลฯ) ในรอบนี้ — แยก housekeeping ทีหลัง
+**ทำ:** 2 เฟส — (1) รัน prompt ใน `docs/design/theme-refresh-prompt.md` กับ Claude Design (แนบ screenshot landing/catalyst/report/journal) → ได้ `docs/design/playbook-theme-handoff.md` (2) ส่ง handoff ให้ Claude CLI implement ทีละ section (มี prompt ต่อให้ CLI ในไฟล์เดียวกัน) · ห้าม rename component radar-era (MarketTicker ฯลฯ) ในรอบนี้ — แยก housekeeping ทีหลัง · **wordmark:** display copy คือ **"Stock Playbook"** สองคำ (มี space — เปลี่ยนจาก "StockPlaybook" ตัวติดกันเดิม 2026-07-06) ใน `web/app/Header.tsx` / `web/app/Landing.tsx` / `layout.tsx` title แล้ว — ให้ Claude Design ออกแบบโลโก้/OG image ตรงกับ wordmark สองคำนี้ (ส่วน domain `stockplaybook.app`, repo `stock-playbook`, User-Agent `stockplaybook/1.0` ยังคงเป็นตัวติดกันเหมือนเดิม — เป็น identifier ไม่ใช่ display copy)
 **ไฟล์:** `docs/design/theme-refresh-prompt.md` (prompt พร้อมใช้) · เป้าหมายแก้: `web/app/globals.css` (tokens), `web/app/icon.svg` + favicon, `web/app/Header.tsx`, `web/app/Landing.tsx`, `assets/social-preview.png` (gen ใหม่), layout OG metadata
 **เป้า:** identity "playbook" ครบทุกจุด (logo/motif/OG) · dark theme + สี verdict + ธีม 4 ธาตุคงเดิม · mobile 390px + EN/TH ไม่พัง
 
@@ -182,7 +182,7 @@ Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open N
 **ไฟล์:** `service/prisma/schema.prisma` · Stripe webhook module ใหม่ · หน้า pricing/upgrade ใน web
 **เป้า:** จ่ายแล้ว quota เพิ่มอัตโนมัติ — รอ #20 มีข้อมูลการใช้จริงก่อนค่อยตั้งราคา
 
-## 22. Soft delete — user action ลบข้อมูลใช้ `deleted_at` แทน hard delete
+## 22. ✅ DONE — Soft delete — user action ลบข้อมูลใช้ `deleted_at` แทน hard delete
 
 **ปัญหา:** ตอนนี้ `DELETE /trades/:id` ลบ row ทิ้งจริงจาก DB — user กดพลาดแล้วข้อมูล trade (รวม exits + validation ที่เสีย quota AI ไป) หายถาวร กู้ไม่ได้ และเสีย audit trail
 **ทำ:** เปลี่ยนเป็น soft delete ทั้ง user-facing delete actions:
@@ -190,8 +190,8 @@ Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open N
   2. **Service:** `DELETE /trades/:id` → `UPDATE SET deleted_at = now()` แทน `prisma.delete` · ทุก query อ่าน (list/get/stats/AI validate) เติม `WHERE deleted_at IS NULL` — ระวังให้ครบทุกจุด แนะนำรวม filter ไว้ที่เดียว (Prisma client extension หรือ helper ใน TradesService) กันลืมใน query ใหม่ ๆ · `trade_validations`/`trade_exits` ของ trade ที่ soft-deleted ไม่ต้องแตะ (ผูกด้วย FK อยู่แล้ว หายจากผลลัพธ์เองเมื่อ trade ถูก filter)
   3. **Quota note:** trade ที่ถูก soft delete ไม่นับใน AI validate รอบใหม่ (query กรองแล้ว) แต่ validation_requests เดิมคงอยู่ (audit)
   4. **อนาคต (ไม่ทำรอบนี้):** ปุ่ม "restore" / auto-purge ข้อมูลที่ deleted เกิน 90 วัน / GDPR delete-account จริง (hard delete ทั้ง user — คนละ flow)
-**ไฟล์:** `service/prisma/schema.prisma` (+deleted_at) · `service/src/trades/trades.service.ts` (delete → update + default filter) · tests: ลบแล้ว list ไม่เห็น/get 404/stats ไม่นับ + row ยังอยู่ใน DB
-**เป้า:** user กดลบ → หายจาก UI ทุกจุดเหมือนเดิม แต่ row ยังอยู่ใน DB พร้อม `deleted_at` · ไม่มี endpoint ไหน leak trade ที่ลบแล้ว (เขียน test คุม)
+**ไฟล์:** `service/prisma/schema.prisma` (+deleted_at, migration `20260706104508_soft_delete_trades`) · `service/src/trades/trade-filters.ts` (ใหม่ — `activeTradeWhere()` centralized filter) · `service/src/trades/trades.service.ts` (`findOne` → `findFirst` + filter, `remove` → `update({deletedAt})` แทน `delete`) · `service/src/validation/validation.service.ts` (open-trades query ใช้ `activeTradeWhere` เดียวกัน) · tests ใน `trades.service.spec.ts` + `validation.service.spec.ts` (ลบแล้ว list ไม่เห็น/get 404/ลบซ้ำ→404/ไม่ hard-delete/ไม่ถูกส่งเข้า AI validate) · `docs/architecture/journal-api.md` schema section
+**เป้า:** user กดลบ → หายจาก UI ทุกจุดเหมือนเดิม แต่ row ยังอยู่ใน DB พร้อม `deleted_at` · ไม่มี endpoint ไหน leak trade ที่ลบแล้ว ✅ · `trade_exits` ไม่มี endpoint ลบแยก จึงไม่ต้องเพิ่ม `deleted_at` ที่นั่นรอบนี้ (ตามเงื่อนไข "ถ้ามี endpoint ลบ exit แยก") · web ไม่ต้องแก้ (behavior เดิม) · 60/60 service tests ผ่าน, tsc/eslint สะอาด
 
 ---
 
@@ -211,4 +211,4 @@ Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open N
   - หมายเหตุ: ต้องตั้งบน account/เครื่องใหม่ (Mac mini) เพราะ schedule ผูกกับ session/เครื่อง
 - **รัน `npm run build` ครั้งแรกบน Mac** — ยืนยัน production build ผ่าน (แซนด์บ็อกซ์รันไม่ได้เพราะ SWC binary เป็น linux/arm64 ไม่ตรง platform) tsc ผ่านแล้วทุกไฟล์
 
-_Generated during code review · not financial advice · StockPlaybook Research_
+_Generated during code review · not financial advice · Stock Playbook Research_

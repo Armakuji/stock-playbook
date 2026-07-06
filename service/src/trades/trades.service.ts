@@ -5,6 +5,7 @@ import { PrismaService } from "../prisma/prisma.service";
 import { CreateTradeDto } from "./dto/create-trade.dto";
 import { UpdateTradeDto } from "./dto/update-trade.dto";
 import { CreateExitDto } from "./dto/create-exit.dto";
+import { activeTradeWhere } from "./trade-filters";
 
 @Injectable()
 export class TradesService {
@@ -15,14 +16,16 @@ export class TradesService {
 
   findAll(userId: string) {
     return this.prisma.trade.findMany({
-      where: { userId },
+      where: activeTradeWhere({ userId }),
       include: { exits: true, validation: true },
       orderBy: { entryDate: "desc" },
     });
   }
 
   async findOne(id: string, userId: string): Promise<Trade> {
-    const trade = await this.prisma.trade.findUnique({ where: { id } });
+    const trade = await this.prisma.trade.findFirst({
+      where: activeTradeWhere({ id }),
+    });
     if (!trade || trade.userId !== userId)
       throw new NotFoundException("Trade not found");
     return trade;
@@ -85,7 +88,10 @@ export class TradesService {
 
   async remove(id: string, userId: string): Promise<void> {
     const trade = await this.findOne(id, userId);
-    await this.prisma.trade.delete({ where: { id } });
+    await this.prisma.trade.update({
+      where: { id },
+      data: { deletedAt: new Date() },
+    });
     this.logger.info(
       { userId, tradeId: id, ticker: trade.ticker },
       "trade deleted",

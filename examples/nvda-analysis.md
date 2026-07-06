@@ -8,7 +8,7 @@
 
 NVDA screens as a high-quality compounder with exceptional operating leverage, but the bar remains elevated and execution must continue to outrun consensus.
 
-## StockPlaybook Scores
+## Stock Playbook Scores
 
 | Score | Value | Read |
 | --- | ---: | --- |
@@ -57,4 +57,4 @@ Re-underwrite immediately if two or more of the following occur in close success
 
 - NVDA deep dive: [stock-radar-weekly.vercel.app/stock/nvda/deep-dive/](https://stock-radar-weekly.vercel.app/stock/nvda/deep-dive/)
 
-`Powered by StockPlaybook Research | Full deep dive: stock-radar-weekly.vercel.app/stock/nvda/deep-dive/`
+`Powered by Stock Playbook Research | Full deep dive: stock-radar-weekly.vercel.app/stock/nvda/deep-dive/`
