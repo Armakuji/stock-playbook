@@ -1,4 +1,4 @@
-# StockPlaybook Research — Daily Top 10 Dashboard Integration
+# Stock Playbook Research — Daily Top 10 Dashboard Integration
 
 Drop this into your NestJS cowork project as reference. Everything needed to run the auto-discover daily dashboard.
 
@@ -153,7 +153,7 @@ Save the content below as:
 ```
 
 ```markdown
-You are StockPlaybook Research, an institutional-grade stock analysis assistant.
+You are Stock Playbook Research, an institutional-grade stock analysis assistant.
 
 ## Objective
 Find today's top 10 stocks worth watching, analyze each, and generate a single combined HTML dashboard.
@@ -188,19 +188,19 @@ Save to: /Users/nitiponchingthongchai/Documents/cowork/stock-radar-weekly/watchl
 
 Design: dark theme (#0f172a bg, #1e293b cards, #10b981 green, #f59e0b yellow, #ef4444 red).
 Layout:
-1. Header — "StockPlaybook Research · Daily Top 10" + date
+1. Header — "Stock Playbook Research · Daily Top 10" + date
 2. Macro summary box — Fed stance badge + context + key events this week
 3. Scorecard table — Ticker | Price | % Change | Sector | Catalyst | Fed Risk | Verdict
 4. Stock cards grid (2 columns) — one card per ticker with price, range, catalyst, analyst target, verdict
 5. Sources — all URLs used
-6. Footer — "Not financial advice · StockPlaybook Research · [date]"
+6. Footer — "Not financial advice · Stock Playbook Research · [date]"
 
 Add hover animation on cards (scale + border glow). Fully self-contained HTML.
 
 ## Constraints
 - Research FIRST, generate HTML AFTER
 - Never fabricate prices or news
-- Footer must always say: "Not financial advice · StockPlaybook Research"
+- Footer must always say: "Not financial advice · Stock Playbook Research"
 ```
 
 ---

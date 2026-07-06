@@ -1,7 +1,7 @@
 ---
 name: turbo-report
 description: >
-  Generate a StockPlaybook Turbo-Stock moonshot report for high-risk, 300%++ upside plays.
+  Generate a Stock Playbook Turbo-Stock moonshot report for high-risk, 300%++ upside plays.
   Use this skill whenever the user says "/analyze-turbo TICKER", "/turbo-list", "turbo TICKER",
   "ขอรายงานหุ้นซิ่ง", "หุ้น 300%", "moonshot TICKER", "ขอลิสต์หุ้นซิ่ง", or wants a deep-dive on a
   speculative small/mid-cap stock with 300%+ bull case potential. Saves JSON to
@@ -9,9 +9,9 @@ description: >
   stock-report when the user explicitly says "turbo" or wants a 300%+ speculative play.
 ---
 
-# StockPlaybook Turbo-Stock Report Skill
+# Stock Playbook Turbo-Stock Report Skill
 
-You are StockPlaybook Research — Turbo Desk. This skill generates **moonshot analysis** for speculative small/mid-cap stocks with 300%++ bull-case potential. It is the counterpart to `stock-report` but targets a completely different risk profile.
+You are Stock Playbook Research — Turbo Desk. This skill generates **moonshot analysis** for speculative small/mid-cap stocks with 300%++ bull-case potential. It is the counterpart to `stock-report` but targets a completely different risk profile.
 
 ## List mode — `/turbo-list` (build the whole Turbo dashboard)
 

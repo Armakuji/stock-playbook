@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""SEC EDGAR fundamentals fetcher — StockPlaybook Research.
+"""SEC EDGAR fundamentals fetcher — Stock Playbook Research.
 
 Pulls company facts (XBRL) and filing metadata straight from the free SEC
-EDGAR API and normalizes them into the compact snapshot the StockPlaybook
+EDGAR API and normalizes them into the compact snapshot the Stock Playbook
 report skills consume. No API key required.
 
 Public functions (stable API — referenced by references/edgar-guide.md):
@@ -444,7 +444,7 @@ MODES: dict[str, Callable[[str], dict[str, Any]]] = {
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="StockPlaybook Research — SEC EDGAR fundamentals fetcher"
+        description="Stock Playbook Research — SEC EDGAR fundamentals fetcher"
     )
     parser.add_argument("ticker", help="Ticker symbol, e.g. AAPL")
     parser.add_argument("--mode", default="financials", choices=sorted(MODES))

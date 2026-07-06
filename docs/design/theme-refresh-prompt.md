@@ -7,7 +7,7 @@
 ## Prompt (paste ให้ Claude Design)
 
 ```
-เราเพิ่ง rebrand จาก "Stock Radar Weekly" → "StockPlaybook" (stockplaybook.app)
+เราเพิ่ง rebrand จาก "Stock Radar Weekly" → "Stock Playbook" (stockplaybook.app)
 แต่ visual identity ยังเป็น "radar" อยู่ทั้งหมด — ช่วยออกแบบ theme refresh
 ให้เป็น "playbook" identity แล้วทำ design handoff spec เพราะคุณแก้โค้ดไม่ได้
 — ต้องส่ง handoff ให้ Claude CLI เป็นคน implement
@@ -20,7 +20,7 @@
   ชื่อ component อย่าง MarketTicker ยังสื่อ scanning
 
 ## สิ่งที่ต้องออกแบบ
-1. Logo/wordmark "StockPlaybook" + icon (ต้องได้เป็น SVG code ใน handoff
+1. Logo/wordmark "Stock Playbook" + icon (ต้องได้เป็น SVG code ใน handoff
    เพื่อให้ CLI วางแทน icon.svg/favicon ได้เลย) — คิด motif จาก playbook:
    play diagram (X-O-เส้นลูกศร tactical), สมุด, chalkboard lines ฯลฯ
 2. Design tokens: palette (พื้นหลัง dark คงไว้ + accent ใหม่ถ้าเหมาะ),

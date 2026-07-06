@@ -136,4 +136,4 @@ Rules:
 - **Migration half-applied:** `npx prisma migrate resolve --rolled-back <name>` then fix forward.
 
 ---
-*Not financial advice · StockPlaybook Research*
+*Not financial advice · Stock Playbook Research*

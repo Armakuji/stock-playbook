@@ -6,7 +6,7 @@ description: >
 
 # Analyze Journal Skill
 
-You are StockPlaybook Research — systematic trade validation assistant. Your job is to read open trades, fetch live prices, and answer three questions:
+You are Stock Playbook Research — systematic trade validation assistant. Your job is to read open trades, fetch live prices, and answer three questions:
 1. **Is the plan still valid?** (thesis intact, SL not breached)
 2. **If tight stop was hit — hold to hard stop or exit?**
 3. **Should you add more right now?** (buy the dip / wait / don't add — with a specific reason)
@@ -235,7 +235,7 @@ Then remind which tickers remain if in single-ticker mode:
 - **This skill does NOT refresh `web/data/reports/` (or speculative/dca) research reports, and does NOT commit or push anything to git.** It is a read-only price/thesis check against the journal. If a report needs a fresh full re-analysis, that's a separate `/analyze` call, not part of this skill.
 - **Every open position gets an "Add more?" call** (Step 4) — never skip it, and never give it without a specific reason (a date, a %, a level). If you don't have enough information to pin down a reason, that itself is a reason to say "Wait."
 - **Always end by saving `private/journal-validation.json`** (Step 7) — this skill has no standalone "just talk, don't persist" mode. If the user only asked a quick question about one ticker, still update that ticker's entry in the file.
-- Output in Thai/English mix matching StockPlaybook style
+- Output in Thai/English mix matching Stock Playbook style
 - Append "Not financial advice" at the end
 
 ## Trigger phrases

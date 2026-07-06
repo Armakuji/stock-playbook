@@ -7,7 +7,7 @@ export const config = {
     pluginDir:  '/path/to/plugin-dir',  // already in your config
     tickers:    [],                     // already in your config (keep for Mode B)
 
-    // ✅ ADD THIS — path to StockPlaybook Research workspace
+    // ✅ ADD THIS — path to Stock Playbook Research workspace
     radarDir: '/Users/nitiponchingthongchai/Documents/cowork/stock-radar-weekly',
   },
   cron: {

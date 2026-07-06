@@ -153,7 +153,7 @@ Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open N
 ## 18. Playbook theme refresh — visual identity ยังเป็น radar อยู่
 
 **ปัญหา:** rebrand ชื่อเป็น StockPlaybook แล้ว (#15 ✅) แต่ visual ยังเป็น radar-era ทั้งหมด: logo ⬡, favicon/icon.svg, จุด pulse, dot grid background, social-preview.png (ไฟล์เสียด้วย — ไบต์เกินก่อน PNG signature) — แบรนด์กับหน้าตาไม่ตรงกัน
-**ทำ:** 2 เฟส — (1) รัน prompt ใน `docs/design/theme-refresh-prompt.md` กับ Claude Design (แนบ screenshot landing/catalyst/report/journal) → ได้ `docs/design/playbook-theme-handoff.md` (2) ส่ง handoff ให้ Claude CLI implement ทีละ section (มี prompt ต่อให้ CLI ในไฟล์เดียวกัน) · ห้าม rename component radar-era (MarketTicker ฯลฯ) ในรอบนี้ — แยก housekeeping ทีหลัง
+**ทำ:** 2 เฟส — (1) รัน prompt ใน `docs/design/theme-refresh-prompt.md` กับ Claude Design (แนบ screenshot landing/catalyst/report/journal) → ได้ `docs/design/playbook-theme-handoff.md` (2) ส่ง handoff ให้ Claude CLI implement ทีละ section (มี prompt ต่อให้ CLI ในไฟล์เดียวกัน) · ห้าม rename component radar-era (MarketTicker ฯลฯ) ในรอบนี้ — แยก housekeeping ทีหลัง · **wordmark:** display copy คือ **"Stock Playbook"** สองคำ (มี space — เปลี่ยนจาก "StockPlaybook" ตัวติดกันเดิม 2026-07-06) ใน `web/app/Header.tsx` / `web/app/Landing.tsx` / `layout.tsx` title แล้ว — ให้ Claude Design ออกแบบโลโก้/OG image ตรงกับ wordmark สองคำนี้ (ส่วน domain `stockplaybook.app`, repo `stock-playbook`, User-Agent `stockplaybook/1.0` ยังคงเป็นตัวติดกันเหมือนเดิม — เป็น identifier ไม่ใช่ display copy)
 **ไฟล์:** `docs/design/theme-refresh-prompt.md` (prompt พร้อมใช้) · เป้าหมายแก้: `web/app/globals.css` (tokens), `web/app/icon.svg` + favicon, `web/app/Header.tsx`, `web/app/Landing.tsx`, `assets/social-preview.png` (gen ใหม่), layout OG metadata
 **เป้า:** identity "playbook" ครบทุกจุด (logo/motif/OG) · dark theme + สี verdict + ธีม 4 ธาตุคงเดิม · mobile 390px + EN/TH ไม่พัง
 
@@ -211,4 +211,4 @@ Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open N
   - หมายเหตุ: ต้องตั้งบน account/เครื่องใหม่ (Mac mini) เพราะ schedule ผูกกับ session/เครื่อง
 - **รัน `npm run build` ครั้งแรกบน Mac** — ยืนยัน production build ผ่าน (แซนด์บ็อกซ์รันไม่ได้เพราะ SWC binary เป็น linux/arm64 ไม่ตรง platform) tsc ผ่านแล้วทุกไฟล์
 
-_Generated during code review · not financial advice · StockPlaybook Research_
+_Generated during code review · not financial advice · Stock Playbook Research_
