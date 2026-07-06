@@ -164,6 +164,24 @@ Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open N
 **ไฟล์:** `web/app/layout.tsx` (metadata กลาง) · `web/app/sitemap.ts` + `web/app/robots.ts` (ใหม่) · `web/app/report/[ticker]/page.tsx` + หน้า catalyst/dca/turbo/backtest (generateMetadata) · `web/lib/reports.ts` (list ticker สำหรับ sitemap)
 **เป้า:** search "StockPlaybook" / "stockplaybook.app" เจอเว็บใน Google · ทุก report page มี title/description/OG เฉพาะตัว · Search Console เห็น sitemap ครบ ไม่มี coverage error · เกี่ยวพัน: OG image รอ #18 (theme) — ทำ SEO โครงก่อนได้เลยไม่ต้องรอ
 
+## 20. AI Validate Journal — user กดปุ่มให้ Claude API วิเคราะห์พอร์ต (quota 3 ครั้ง/lifetime)
+
+**ปัญหา:** validator ปัจจุบันรันได้เฉพาะเจ้าของผ่าน Claude CLI (`/analyze-journal`) — user คนอื่นบน prod ไม่มีทางได้ AI validation เลย ทั้งที่ `trade_validations` table + VALIDATOR box ใน UI รอไว้แล้ว
+**ทำ (เคาะ design แล้ว 2026-07-05):**
+  1. **Schema เพิ่ม:** `validation_requests (id, user_id FK, requested_at, status(pending|done|failed), trades_count, model, input_tokens, output_tokens)` — นับ quota + audit cost · seed `features`: `ai_validation` + `plan_features(free, ai_validation, limit_value=3)` — **lifetime** (นับจาก count ทั้งหมดของ user ไม่มี reset)
+  2. **Endpoint:** `POST /journal/validate` (cookie auth) — เช็ค quota จาก count(validation_requests WHERE user_id AND status='done') vs limit_value → เกิน = 403 พร้อม `{remaining: 0}` · ดึง open trades ของ user จาก DB → ประกอบ prompt จาก **skill `skills/analyze-journal/SKILL.md` เดิม** (แปลง journal format DB → format ที่ prompt คาด) → เรียก Claude API (`ANTHROPIC_API_KEY` ใน Railway vars) **model Sonnet** ล่าสุด · **บังคับ output ด้วย tool-use JSON schema** (shape = ValidatorResult ต่อ trade) กัน parse พัง/prompt injection จาก trade notes · upsert `trade_validations` ต่อ trade → return ผล + `remaining`
+  3. **UX:** sync + spinner (~15–40 วิ) · ปุ่ม "AI Validate Journal" บนหัว journal พร้อม badge เหลือกี่ครั้ง (`GET /journal/validate/quota`) · quota หมด = **disable ปุ่ม** + tooltip อธิบาย · ผล validation แสดงใน VALIDATOR box ของแต่ละ OPEN trade (เขียว HOLD / เหลือง WATCH / แดง CUT) + validated_at · เปิด journal รอบหน้าเห็นผลเดิมจาก DB · กด validate ใหม่ = ทับผลเก่า + หัก quota
+  4. **Guard rails:** timeout Claude call 90s · max_tokens cap · ห้าม log prompt/response เต็ม (มีข้อมูลการเงิน) log แค่ token counts · validate อย่างน้อย 1 open trade ไม่งั้น 400 ไม่หัก quota · failed = ไม่หัก quota
+**ไฟล์:** `service/prisma/schema.prisma` (+validation_requests, seed features) · `service/src/validation/*` (module ใหม่: controller/service/claude.client/prompt.ts จาก analyze-journal skill) · `web/app/journal/JournalContent.tsx` (ปุ่ม+badge+VALIDATOR box) · `web/lib` (api client) · i18n EN/TH · Railway var `ANTHROPIC_API_KEY`
+**เป้า:** user login → กด AI Validate → เห็น verdict ต่อ trade ใน <1 นาที → refresh แล้วผลยังอยู่ → ครบ 3 ครั้งปุ่ม disable · cost ~฿2–3/ครั้ง ควบคุมด้วย quota ระดับ plan
+
+## 21. Monetization — subscription plan / buy more AI usage
+
+**ปัญหา:** quota AI validation 3 ครั้ง/lifetime (#20) หมดแล้วไม่มีทางได้เพิ่ม — อนาคตอยากขาย: subscription plan (pro) หรือซื้อ usage เพิ่มเป็นครั้ง ๆ
+**ทำ:** ยังไม่ออกแบบ — แต่โครงพร้อมแล้ว: `plans`/`plan_features` รองรับ plan ใหม่ (แค่ insert row limit_value สูงขึ้น), `subscriptions.external_ref` รอ Stripe · ตอนทำจริงค่อยเลือก: Stripe subscription vs one-time top-up (ต้องเพิ่มตาราง usage_credits ถ้าเป็น top-up)
+**ไฟล์:** `service/prisma/schema.prisma` · Stripe webhook module ใหม่ · หน้า pricing/upgrade ใน web
+**เป้า:** จ่ายแล้ว quota เพิ่มอัตโนมัติ — รอ #20 มีข้อมูลการใช้จริงก่อนค่อยตั้งราคา
+
 ---
 
 ## ยังไม่เลือกทำ (ไว้พิจารณาทีหลัง)

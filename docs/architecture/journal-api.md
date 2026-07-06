@@ -177,6 +177,7 @@ Maps 1:1 from `web/lib/journal-types.ts` (`Trade`, `TradeExit`, `ValidatorResult
 | Journal | `GET/POST /trades` · `GET/PATCH/DELETE /trades/:id` | cookie/PAT | ownership guard — own trades only |
 | | `POST/DELETE /trades/:id/exits` | cookie/PAT | close/partial-close |
 | Validator | `PUT /trades/:id/validation` | PAT | validator skill writes `trade_validations` |
+| AI Validate | `POST /journal/validate` · `GET /journal/validate/quota` | cookie | user-triggered Claude API validation (backlog #20) — Sonnet, quota 3/lifetime via `plan_features.ai_validation`, results → `trade_validations` |
 | Tokens | `POST /tokens` · `GET /tokens` · `DELETE /tokens/:id` | cookie (admin) | issue/list/revoke PATs |
 | Admin | `GET/POST/DELETE /admin/whitelist` | cookie (admin) | manage invite list |
 | | `GET /admin/users` · `PATCH /admin/users/:id` | cookie (admin) | list users, set status/role |
