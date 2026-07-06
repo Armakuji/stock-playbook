@@ -565,6 +565,8 @@ function TradeRow({ trade, priceInfo, validatorResult, validationGeneratedAt, on
   onDelete: () => void;
   onAddExit: (exit: TradeExit) => void;
 }) {
+  const { lang } = useLang();
+  const th = lang === "th";
   const [expanded, setExpanded] = useState(false);
   const [showExitForm, setShowExitForm] = useState(false);
 
@@ -924,7 +926,11 @@ function TradeRow({ trade, priceInfo, validatorResult, validationGeneratedAt, on
               : (
                 <div style={{ marginBottom: 14, borderRadius: 9, border: "1px solid #1e293b", background: "#0d1424", padding: "10px 14px", display: "flex", alignItems: "center", gap: 8 }}>
                   <span style={{ fontSize: 9, fontWeight: 800, color: "#1e3a5f", textTransform: "uppercase", letterSpacing: "1.2px", fontFamily: "var(--font-mono, monospace)" }}>Validator</span>
-                  <span style={{ fontSize: 11, color: "#334155", fontFamily: "var(--font-mono, monospace)" }}>No results yet — run <code style={{ color: "#64748b" }}>/analyze-journal</code> to validate</span>
+                  <span style={{ fontSize: 11, color: "#334155", fontFamily: "var(--font-mono, monospace)" }}>
+                    {th
+                      ? "ยังไม่มีผลตรวจ — กด \"🤖 AI Validate Journal\" ด้านบนเพื่อตรวจเทรดนี้"
+                      : "No results yet — click \"🤖 AI Validate Journal\" above to check this trade"}
+                  </span>
                 </div>
               )
           )}
