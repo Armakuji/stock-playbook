@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Bricolage_Grotesque, DM_Sans, JetBrains_Mono } from "next/font/google";
-import { getAllReports } from "@/lib/reports";
 import { loadMarketTiming } from "@/lib/market-timing";
+import { getSiteLastUpdatedLabel } from "@/lib/site-meta";
 import { Header } from "./Header";
 import { MarketTicker } from "./MarketTicker";
 import { LanguageProvider } from "@/lib/LanguageContext";
@@ -66,22 +66,15 @@ const jsonLd = {
   url: SITE_URL,
 };
 
-function getLatestReportDate(): string {
-  const reports = getAllReports();
-  if (reports.length === 0) return "—";
-  const latest = new Date(reports[0].generatedAt);
-  const dd = String(latest.getDate()).padStart(2, "0");
-  const mm = String(latest.getMonth() + 1).padStart(2, "0");
-  const yyyy = latest.getFullYear();
-  return `${dd}/${mm}/${yyyy}`;
-}
+// Header "Updated" must reflect fresh JSON on disk (all report buckets + market-timing)
+export const dynamic = "force-dynamic";
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const lastUpdated = getLatestReportDate();
+  const lastUpdated = getSiteLastUpdatedLabel();
   const marketTiming = loadMarketTiming();
   return (
     <html lang="en" className={`h-full ${bricolage.variable} ${dmSans.variable} ${jetbrains.variable}`}>

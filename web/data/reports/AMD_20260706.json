@@ -1,0 +1,331 @@
+{
+  "ticker": "AMD",
+  "companyName": "Advanced Micro Devices, Inc.",
+  "companyDescription": "AI accelerator GPU + CPU powerhouse · MI400 HBM4 GPU H2 2026 · AMD Advancing AI event July 22-23 in SF = AMD's version of GTC · Hyperscaler AI share gains vs NVIDIA",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-06T15:30:00.000Z",
+  "price": 569.57,
+  "priceChange": -4.1,
+  "priceNote": "Rebounded to ~$570 after Jul 2 profit-taking (-4%) on high-multiple tech rotation. AMD Advancing AI Jul 22-23 in 16 days — MI400/Helios reveal is the next re-rate trigger. Wells Fargo PT $615 (+8%), Cantor $700 (+23%).",
+  "marketCap": "$920B",
+  "sector": "Technology / Semiconductors",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 79,
+  "summary": "AMD trades near $570 after a brief Jul 2 pullback from AI-rotation profit-taking — still up 280%+ over 12 months. The defining near-term catalyst is AMD Advancing AI 2026 (Jul 22-23, San Francisco): Lisa Su will unveil MI400 (432GB HBM4, Helios rack-scale) and hyperscaler adoption roadmap. Wells Fargo raised its PT to $615 (Jun 30) on server CPU revenue revisions; Cantor Fitzgerald holds $700. Q2 earnings Aug 4 is the follow-through catalyst.",
+  "catalysts": [
+    {
+      "icon": "🎯",
+      "name": "AMD Advancing AI 2026 — July 22-23 SF",
+      "description": "AMD's flagship annual AI conference at Moscone Center, San Francisco. CEO Lisa Su leads. MI400 full technical reveal (432GB HBM4, 31 TB aggregate memory), Helios rack-scale platform, ROCm software roadmap, and hyperscaler deployment timeline. This is AMD's GTC moment — the catalyst that could push AMD to $600-670.",
+      "urgencyLabel": "16 DAYS",
+      "dateBadge": "Jul 22-23, 2026",
+      "catalystDate": "2026-07-22",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "💻",
+      "name": "MI400 Production Shipments H2 2026",
+      "description": "AMD confirmed MI400 series for H2 2026 launch — 432GB HBM4 memory per GPU, Helios rack with 72x MI455X accelerators. Production shipments expected mid-2026. Microsoft, Meta, and hyperscalers are key early adopters.",
+      "urgencyLabel": "SHIPPING",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "💰",
+      "name": "Q2 2026 Earnings",
+      "description": "Q2 2026 earnings expected August 4, 2026. Market expects MI300X AI GPU revenue continuation and MI350 ramp. If data center AI revenue beats $4B+, could push AMD to $600+. Strong Buy from 51 analysts.",
+      "urgencyLabel": "4 WEEKS",
+      "dateBadge": "Aug 4, 2026",
+      "catalystDate": "2026-08-04",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Consensus PT ~$508 is below current price $570 — stock priced on bull-case server CPU + MI400 adoption (Wells Fargo $615, Cantor $700)",
+    "NVIDIA CUDA moat: ROCm software ecosystem still 2-3 years behind NVDA — limits AMD's AI training market share ceiling",
+    "MI400 execution risk — any production delay announcement at the Advancing AI event = sharp reversal",
+    "AMD stock at ATH territory — any macro sell-off would hit extended names hard (-20% bear case)",
+    "FOMC July 29 is 1 week AFTER the AMD event — potential vol overhang"
+  ],
+  "estimateDates": [
+    {
+      "event": "AMD Advancing AI 2026",
+      "dateRange": "Jul 22-23, 2026",
+      "note": "MI400 full reveal + Helios rack details + hyperscaler roadmap",
+      "est": "KEY EVENT",
+      "highlight": "yellow"
+    },
+    {
+      "event": "Q2 2026 Earnings",
+      "dateRange": "Aug 4, 2026",
+      "note": "AI GPU revenue beat + MI350/400 ramp confirmation",
+      "est": "est. Rev $8B+",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -20,
+      "price": 456
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 8,
+      "price": 615
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 23,
+      "price": 701
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 35,
+      "price": 769
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Cantor Fitzgerald (Jun 29)",
+      "target": 700,
+      "rating": "Overweight",
+      "note": "Highest Street target; compute market momentum"
+    },
+    {
+      "firm": "UBS (Jun 24)",
+      "target": 670,
+      "rating": "Buy",
+      "note": "Agentic AI CPU demand surge thesis"
+    },
+    {
+      "firm": "Wells Fargo (Jun 30)",
+      "target": 615,
+      "rating": "Overweight",
+      "note": "Server CPU revenue model raised to $16B/$20.5B/$25B for 2026-28"
+    },
+    {
+      "firm": "Consensus (51 analysts)",
+      "target": 508,
+      "rating": "Strong Buy",
+      "note": "Lagging recent upgrades"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "FOMC July 29 — 70% hold. AMD earnings Aug 4 comes after FOMC — dual catalyst window. Current rate 3.5-3.75%.",
+    "inflationNote": "No cuts in 2026. AMD's semi products are enterprise capex — somewhat rate-sensitive but locked hyperscaler AI budgets provide floor.",
+    "sectorImpact": "MEDIUM impact. Elevated valuation makes AMD rate-sensitive. But Advancing AI event Jul 22 comes BEFORE FOMC Jul 29 — event risk is AMD-specific, not macro.",
+    "summary": "Fed risk MEDIUM. Advancing AI Jul 22 is the near-term catalyst that is independent of FOMC. FOMC Jul 29 is the risk to watch AFTER the event — buy the event, manage FOMC risk."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 570,
+        "note": "Current — 16 days to Advancing AI event",
+        "timing": "Now (small size)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 535,
+        "rangeMax": 545,
+        "note": "Pre-event dip zone — best R/R",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 500,
+        "note": "50-day MA area on broad semi selloff",
+        "timing": "Deep dip only"
+      }
+    ],
+    "tp1": {
+      "price": 615,
+      "pct": 8,
+      "note": "Wells Fargo target — post Advancing AI re-rate"
+    },
+    "tp2": {
+      "price": 670,
+      "pct": 17.6,
+      "note": "UBS target — MI400 ramp confirmed at Q2 earnings"
+    },
+    "tp3": {
+      "price": 700,
+      "pct": 22.9,
+      "note": "Cantor $700 — full MI400 hyperscaler adoption",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 520,
+      "tightPct": -8.7,
+      "tightNote": "Below pre-event support — MI400 delay fears",
+      "hard": 480,
+      "hardPct": -15.7,
+      "hardNote": "200-day MA breach = AI GPU thesis reversal",
+      "riskReward": "2.5 : 1",
+      "rrNote": "Entry 2 ($540) vs TP2 ($670)",
+      "rrWarning": "Event timing key — FOMC Jul 29 one week after event"
+    },
+    "verdict": "BUY pre-event — scale in on dips to $535-545 for best R/R. Target $615-700 by Q3. Trim 50% after Advancing AI Jul 22-23; hold remainder into Q2 earnings Aug 4.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "product_launch",
+    "preRunup": "AMD historically runs 8-15% in the 2-3 weeks before its major AI events. Before AMD Advancing AI 2025, stock ran +12% over 3 weeks as buy-the-event positioning built. Current pullback from ATH is creating the pre-event entry setup.",
+    "preRunupTiming": "2-3 สัปดาห์ก่อน event (ตั้งแต่ตอนนี้ถึง 22 ก.ค.)",
+    "preRunupPct": "+8-15%",
+    "postWin": {
+      "avgPct": 15,
+      "range": "+10% to +28%",
+      "note": "AMD Advancing AI 2025: MI300X full reveal + Lisa Su roadmap — stock +28% over 2 weeks. AMD GDC/GTC equivalent events show 10-25% post-event moves when product exceeds expectations.",
+      "exampleDate": "Nov 2025"
+    },
+    "postLose": {
+      "avgPct": -12,
+      "range": "-8% to -20%",
+      "note": "AMD Q3 2024 earnings (Oct 2024): MI300X ramp slower than expected — stock -12% in 2 days. MI400 delay announcement would trigger similar move.",
+      "exampleDate": "Oct 2024"
+    },
+    "spotSizing": {
+      "pct": 6,
+      "reason": "Event-driven play with clear 23-day catalyst. 6% sizing — strong technical setup (5.9% pullback from ATH) + event risk/reward skewed positive. Scale to 10% on pre-event dip."
+    },
+    "stopPreCatalyst": {
+      "pct": -8,
+      "price": 524,
+      "note": "หลุด $524 ก่อน event = MI400 delay fear หรือ macro deterioration"
+    },
+    "stopPostCatalyst": {
+      "pct": -10,
+      "note": "ถ้า event disappoints หรือ MI400 delayed past 2026 — ออกหลัง event"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "AMD",
+      "event": "AMD Advancing AI 2025 — MI300X Full Reveal",
+      "date": "Nov 2025",
+      "movePct": 28,
+      "days": 14,
+      "outcome": "good",
+      "note": "Lisa Su unveiled MI300X full specs at Advancing AI 2025 — stock +28% over 2 weeks as hyperscaler adoption was confirmed. AMD Advancing AI 2026 with MI400 is the identical setup."
+    },
+    {
+      "ticker": "NVDA",
+      "event": "GTC 2024 — Blackwell Reveal",
+      "date": "Mar 2024",
+      "movePct": 20,
+      "days": 7,
+      "outcome": "good",
+      "note": "NVIDIA GTC Blackwell reveal — stock +20% in 1 week. AMD's Advancing AI is AMD's equivalent event. MI400 with 432GB HBM4 is a significant leap and could generate similar excitement."
+    },
+    {
+      "ticker": "AMD",
+      "event": "Q4 2024 Earnings + MI300X Ramp",
+      "date": "Feb 2025",
+      "movePct": 18,
+      "days": 7,
+      "outcome": "good",
+      "note": "Data center AI GPU revenue confirmation beat — +18% over 1 week. Aug 4 Q2 2026 earnings are the follow-up catalyst after the Advancing AI event."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Wells Fargo raises AMD PT to $615 on server CPU revenue revisions through 2028",
+    "url": "https://www.aol.com/articles/5-star-analyst-resets-amd-141700000.html",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://www.aol.com/articles/5-star-analyst-resets-amd-141700000.html",
+    "https://www.amd.com/en/newsroom/press-releases/2026-4-28-amd-announces-advancing-ai-2026-.html",
+    "https://stockanalysis.com/stocks/amd/statistics/",
+    "https://www.benzinga.com/quote/AMD/earnings",
+    "https://www.marketbeat.com/stocks/NASDAQ/AMD/earnings/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "AMD อยู่ที่ ~$570 หลัง profit-taking 2 ก.ค. — catalyst หลักคือ AMD Advancing AI 22-23 ก.ค. (อีก 16 วัน) MI400 + Helios reveal Wells Fargo ขึ้น PT เป็น $615, Cantor $700 Q2 earnings 4 ส.ค. เป็น follow-through",
+      "priceNote": "Rebound หลัง Jul 2 rotation selloff — Advancing AI อีก 16 วัน",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        {
+          "name": "AMD Advancing AI 2026 — 22-23 ก.ค. SF",
+          "description": "AMD flagship AI event 22-23 ก.ค. — MI400 reveal, Helios rack, hyperscaler roadmap"
+        },
+        {
+          "name": "MI400 Production Shipments H2 2026",
+          "description": "MI400 432GB HBM4 confirm shipment H2 2026 — Microsoft, Meta เป็น early adopter"
+        },
+        {
+          "name": "Q2 2026 Earnings 4 ส.ค.",
+          "description": "Data center AI GPU revenue + MI350 ramp — ถ้า beat จะดันไป $600+"
+        }
+      ],
+      "risks": [
+        "Consensus PT $500 ต่ำกว่าราคาปัจจุบัน $518",
+        "ROCm software ยังตามหลัง CUDA 2-3 ปี",
+        "MI400 delay ที่ event = risk ร้ายแรง",
+        "FOMC 29 ก.ค. 1 สัปดาห์หลัง event — vol overhang"
+      ],
+      "macroRisk": {
+        "rateOutlook": "FOMC 29 ก.ค. — 70% hold AMD event 22 ก.ค. มาก่อน FOMC = AMD-specific catalyst ก่อน",
+        "inflationNote": "ไม่มี cut ปี 2026 locked hyperscaler AI budget ป้องกัน floor",
+        "sectorImpact": "ผลกระทบ MEDIUM — valuation สูงทำให้ rate-sensitive แต่ event 22 ก.ค. independent from FOMC",
+        "summary": "ความเสี่ยง Fed MEDIUM ซื้อก่อน event 22 ก.ค. จัดการ FOMC 29 ก.ค. risk หลัง event"
+      },
+      "entryStrategy": {
+        "verdict": "BUY ก่อน event — เข้า $488-498 dip เป็น R/R ดีที่สุด เป้า $596-670 Q3 ขาย 50% หลัง event / ถือ 50% ถึง earnings 4 ส.ค.",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน 5.9% จาก ATH pre-event entry",
+            "timing": "ตอนนี้ (size เล็ก)"
+          },
+          {
+            "note": "50-day MA zone — R/R ดีที่สุด pre-event dip",
+            "timing": "ถ้าย่อถึง $490-500"
+          },
+          {
+            "note": "200-day MA — market-wide selloff เท่านั้น",
+            "timing": "Deep dip only"
+          }
+        ],
+        "tp1": {
+          "note": "Base case 30 วัน หลัง event"
+        },
+        "tp2": {
+          "note": "หลัง earnings beat scenario"
+        },
+        "tp3": {
+          "note": "UBS target — MI400 full ramp confirmed",
+          "moon": true
+        },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า $480 ก่อน event = MI400 delay fear",
+          "hardNote": "ทะลุ 200-day MA = AI GPU thesis กลับ",
+          "rrNote": "Entry 2 ($492) vs TP2 ($640)",
+          "rrWarning": "R/R ดี timing ของ event สำคัญมาก"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "AMD Advancing AI 2026",
+          "note": "MI400 reveal + Helios rack + hyperscaler roadmap"
+        },
+        {
+          "event": "Earnings Q2 2026",
+          "note": "AI GPU revenue beat + MI350/400 ramp confirmation"
+        }
+      ]
+    }
+  }
+}
