@@ -182,6 +182,17 @@ Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open N
 **ไฟล์:** `service/prisma/schema.prisma` · Stripe webhook module ใหม่ · หน้า pricing/upgrade ใน web
 **เป้า:** จ่ายแล้ว quota เพิ่มอัตโนมัติ — รอ #20 มีข้อมูลการใช้จริงก่อนค่อยตั้งราคา
 
+## 22. Soft delete — user action ลบข้อมูลใช้ `deleted_at` แทน hard delete
+
+**ปัญหา:** ตอนนี้ `DELETE /trades/:id` ลบ row ทิ้งจริงจาก DB — user กดพลาดแล้วข้อมูล trade (รวม exits + validation ที่เสีย quota AI ไป) หายถาวร กู้ไม่ได้ และเสีย audit trail
+**ทำ:** เปลี่ยนเป็น soft delete ทั้ง user-facing delete actions:
+  1. **Schema:** เพิ่ม `deleted_at timestamptz NULL` ใน `trades` (และ `trade_exits` ถ้ามี endpoint ลบ exit) — migration ใหม่ ไม่กระทบข้อมูลเดิม
+  2. **Service:** `DELETE /trades/:id` → `UPDATE SET deleted_at = now()` แทน `prisma.delete` · ทุก query อ่าน (list/get/stats/AI validate) เติม `WHERE deleted_at IS NULL` — ระวังให้ครบทุกจุด แนะนำรวม filter ไว้ที่เดียว (Prisma client extension หรือ helper ใน TradesService) กันลืมใน query ใหม่ ๆ · `trade_validations`/`trade_exits` ของ trade ที่ soft-deleted ไม่ต้องแตะ (ผูกด้วย FK อยู่แล้ว หายจากผลลัพธ์เองเมื่อ trade ถูก filter)
+  3. **Quota note:** trade ที่ถูก soft delete ไม่นับใน AI validate รอบใหม่ (query กรองแล้ว) แต่ validation_requests เดิมคงอยู่ (audit)
+  4. **อนาคต (ไม่ทำรอบนี้):** ปุ่ม "restore" / auto-purge ข้อมูลที่ deleted เกิน 90 วัน / GDPR delete-account จริง (hard delete ทั้ง user — คนละ flow)
+**ไฟล์:** `service/prisma/schema.prisma` (+deleted_at) · `service/src/trades/trades.service.ts` (delete → update + default filter) · tests: ลบแล้ว list ไม่เห็น/get 404/stats ไม่นับ + row ยังอยู่ใน DB
+**เป้า:** user กดลบ → หายจาก UI ทุกจุดเหมือนเดิม แต่ row ยังอยู่ใน DB พร้อม `deleted_at` · ไม่มี endpoint ไหน leak trade ที่ลบแล้ว (เขียน test คุม)
+
 ---
 
 ## ยังไม่เลือกทำ (ไว้พิจารณาทีหลัง)
