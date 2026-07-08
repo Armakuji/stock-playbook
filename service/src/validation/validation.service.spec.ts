@@ -244,3 +244,107 @@ describe("ValidationService.validate", () => {
     expect(outcome.results).toHaveLength(1);
   });
 });
+
+describe("ValidationService.validate — IP rate limit", () => {
+  const originalIpLimit = process.env.VALIDATE_IP_LIMIT;
+  const originalIpWindow = process.env.VALIDATE_IP_WINDOW_HOURS;
+
+  afterEach(() => {
+    process.env.VALIDATE_IP_LIMIT = originalIpLimit;
+    process.env.VALIDATE_IP_WINDOW_HOURS = originalIpWindow;
+  });
+
+  it("throws ForbiddenException with reason ip_limit when the IP has hit its rolling-window cap, before ever touching the per-user quota", async () => {
+    process.env.VALIDATE_IP_LIMIT = "10";
+    const prisma = makePrismaMock();
+    // First count() call is the IP-limit check — return 10 (== limit) to trip it.
+    (prisma.validationRequest.count as jest.Mock).mockResolvedValueOnce(10);
+    const service = new ValidationService(
+      prisma,
+      makeLoggerMock(),
+      makeClaudeMock(),
+    );
+
+    await expect(service.validate(USER, "203.0.113.5")).rejects.toMatchObject({
+      response: { remaining: 0, reason: "ip_limit" },
+    });
+    // Blocked before the per-user quota's planFeature lookup ever runs.
+    expect(prisma.planFeature.findUnique).not.toHaveBeenCalled();
+    expect(prisma.trade.findMany).not.toHaveBeenCalled();
+  });
+
+  it("allows the request through when under the IP cap, and still enforces the per-user quota afterwards", async () => {
+    process.env.VALIDATE_IP_LIMIT = "10";
+    const prisma = makePrismaMock();
+    (prisma.validationRequest.count as jest.Mock)
+      .mockResolvedValueOnce(2) // IP-limit check: under cap
+      .mockResolvedValueOnce(3); // per-user quota check: exhausted
+    (prisma.planFeature.findUnique as jest.Mock).mockResolvedValue({
+      limitValue: 3,
+    });
+    const service = new ValidationService(
+      prisma,
+      makeLoggerMock(),
+      makeClaudeMock(),
+    );
+
+    await expect(service.validate(USER, "203.0.113.5")).rejects.toThrow(
+      ForbiddenException,
+    );
+    expect(prisma.trade.findMany).not.toHaveBeenCalled();
+  });
+
+  it("skips the IP check entirely when no IP is available (e.g. local dev)", async () => {
+    const prisma = makePrismaMock();
+    (prisma.planFeature.findUnique as jest.Mock).mockResolvedValue({
+      limitValue: 3,
+    });
+    (prisma.validationRequest.count as jest.Mock).mockResolvedValue(0);
+    (prisma.trade.findMany as jest.Mock).mockResolvedValue([]);
+    const service = new ValidationService(
+      prisma,
+      makeLoggerMock(),
+      makeClaudeMock(),
+    );
+
+    await expect(service.validate(USER, null)).rejects.toThrow(
+      BadRequestException,
+    );
+    // Only the per-user quota count ran — no extra IP-keyed count() call.
+    expect(prisma.validationRequest.count).toHaveBeenCalledTimes(1);
+  });
+
+  it("stores the client IP on the created validation request row", async () => {
+    process.env.VALIDATE_IP_LIMIT = "10";
+    const prisma = makePrismaMock();
+    (prisma.validationRequest.count as jest.Mock)
+      .mockResolvedValueOnce(0) // IP-limit check
+      .mockResolvedValueOnce(0); // per-user quota check
+    (prisma.planFeature.findUnique as jest.Mock).mockResolvedValue({
+      limitValue: 3,
+    });
+    (prisma.trade.findMany as jest.Mock).mockResolvedValue([OPEN_TRADE]);
+    (prisma.validationRequest.create as jest.Mock).mockResolvedValue({
+      id: "vr-ip-1",
+    });
+    (prisma.tradeValidation.upsert as jest.Mock).mockResolvedValue({});
+    (prisma.validationRequest.update as jest.Mock).mockResolvedValue({});
+    const claude = makeClaudeMock();
+    (claude.validate as jest.Mock).mockResolvedValue({
+      results: [SUCCESS_RESULT],
+      inputTokens: 500,
+      outputTokens: 120,
+    });
+    const service = new ValidationService(prisma, makeLoggerMock(), claude);
+
+    await service.validate(USER, "203.0.113.5");
+
+    expect(prisma.validationRequest.create).toHaveBeenCalledWith(
+      expect.objectContaining({
+        data: expect.objectContaining({
+          ip: "203.0.113.5",
+        }) as Record<string, unknown>,
+      }),
+    );
+  });
+});
