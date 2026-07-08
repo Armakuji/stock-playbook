@@ -9,7 +9,7 @@ import { PrismaService } from "../prisma/prisma.service";
 import { ClaudeClient } from "./claude.client";
 import { TradeForPrompt, ValidationToolResult } from "./prompt";
 import { toTradeValidationWrite } from "./validation.mapper";
-import { fetchCurrentPrice } from "./yahoo-price";
+import { fetchCurrentPrices } from "./yahoo-price";
 import { activeTradeWhere } from "../trades/trade-filters";
 
 const FREE_PLAN_ID = "free";
@@ -70,19 +70,20 @@ export class ValidationService {
       throw new BadRequestException("No open trades to validate");
     }
 
-    const tradesForPrompt: TradeForPrompt[] = await Promise.all(
-      openTrades.map(async (t) => ({
-        id: t.id,
-        ticker: t.ticker,
-        entryPrice: t.entryPrice,
-        shares: t.shares,
-        entryDate: t.entryDate.toISOString().slice(0, 10),
-        plannedTP: t.plannedTP as number[],
-        plannedSL: t.plannedSL,
-        notes: t.notes,
-        currentPrice: await fetchCurrentPrice(t.ticker),
-      })),
+    const currentPrices = await fetchCurrentPrices(
+      openTrades.map((t) => t.ticker),
     );
+    const tradesForPrompt: TradeForPrompt[] = openTrades.map((t) => ({
+      id: t.id,
+      ticker: t.ticker,
+      entryPrice: t.entryPrice,
+      shares: t.shares,
+      entryDate: t.entryDate.toISOString().slice(0, 10),
+      plannedTP: t.plannedTP as number[],
+      plannedSL: t.plannedSL,
+      notes: t.notes,
+      currentPrice: currentPrices[t.ticker] ?? null,
+    }));
 
     const request = await this.prisma.validationRequest.create({
       data: {
