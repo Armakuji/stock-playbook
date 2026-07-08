@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback, useEffect, useRef } from "react";
 import type { LivePrice } from "@/app/api/prices/route";
 import Link from "next/link";
 import { useLang } from "@/lib/LanguageContext";
@@ -229,9 +229,18 @@ function TradeForm({ initial, reportOptions, reportsByTicker, onSave, onCancel }
   const [sharesInput, setSharesInput] = useState(
     initial && initial.shares > 0 ? String(initial.shares) : ""
   );
+  const [sharesInvalid, setSharesInvalid] = useState(false);
+  const sharesInputRef = useRef<HTMLInputElement>(null);
   const [customTicker, setCustomTicker] = useState(
     initial ? !reportOptions.some((r) => r.ticker === initial.ticker) : false
   );
+  // Progressive disclosure: a brand-new trade starts with only the Ticker
+  // field visible — the rest of the form (9 more fields) was overwhelming
+  // users into dropping off before ever picking a ticker, even though most
+  // of those fields auto-fill once a ticker with a report is chosen. Editing
+  // an existing trade always shows the full form immediately (ticker's
+  // already decided, nothing left to "reveal").
+  const [revealed, setRevealed] = useState(!!initial);
 
   function field<K extends keyof Trade>(k: K, v: Trade[K]) {
     setT((prev) => ({ ...prev, [k]: v }));
@@ -261,10 +270,12 @@ function TradeForm({ initial, reportOptions, reportsByTicker, onSave, onCancel }
   function handleTickerSelect(ticker: string) {
     if (ticker === "__other__") {
       setCustomTicker(true);
+      setRevealed(true);
       field("ticker", "");
       return;
     }
     setCustomTicker(false);
+    setRevealed(true);
     const dates = reportsByTicker[ticker];
     if (dates && dates.length > 0) {
       fillFromReportDate(ticker, dates[0].reportDate); // latest
@@ -284,6 +295,15 @@ function TradeForm({ initial, reportOptions, reportsByTicker, onSave, onCancel }
     }
   }
 
+  // Lets the user back out of a chosen ticker without cancelling the whole
+  // form — resets to the Step 1 ticker picker with a clean slate.
+  function changeTicker() {
+    setT((prev) => ({ ...emptyTrade(), id: prev.id }));
+    setSharesInput("");
+    setCustomTicker(false);
+    setRevealed(false);
+  }
+
   function handleReportDateSelect(reportDate: string) {
     fillFromReportDate(t.ticker, reportDate);
   }
@@ -294,7 +314,12 @@ function TradeForm({ initial, reportOptions, reportsByTicker, onSave, onCancel }
   const cost = t.entryPrice * shares;
 
   function handleSubmit() {
-    onSave({ ...t, shares: parseDecimalInput(sharesInput) });
+    if (shares <= 0) {
+      setSharesInvalid(true);
+      sharesInputRef.current?.focus();
+      return;
+    }
+    onSave({ ...t, shares });
   }
   const tp1Pct = t.entryPrice > 0 && t.plannedTP[0] > 0
     ? ((t.plannedTP[0] - t.entryPrice) / t.entryPrice * 100) : null;
@@ -309,6 +334,56 @@ function TradeForm({ initial, reportOptions, reportsByTicker, onSave, onCancel }
         {initial ? "✏️ Edit Trade" : "➕ Log Trade"}
       </div>
 
+      {/* Step 1 — ticker-only picker, shown until a ticker is chosen. Most of
+          the rest of the form auto-fills from the ticker's report, so making
+          this the one thing users see first (instead of 10 blank fields at
+          once) is the whole fix for the drop-off. */}
+      {!revealed && (
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 10, padding: "28px 16px" }}>
+          <span style={{ fontSize: 10, fontWeight: 800, color: "#10b981", fontFamily: "var(--font-mono, monospace)", textTransform: "uppercase", letterSpacing: "1.5px" }}>
+            Step 1 — Pick a ticker
+          </span>
+          <select
+            autoFocus
+            style={{
+              ...inputStyle,
+              cursor: "pointer",
+              maxWidth: 280,
+              width: "100%",
+              fontSize: 16,
+              fontWeight: 800,
+              textAlign: "center",
+              textAlignLast: "center",
+              padding: "12px 40px 12px 14px",
+              border: "1.5px solid #10b981",
+              boxShadow: "0 0 0 4px #10b98120, 0 0 18px #10b98125",
+              appearance: "none",
+              WebkitAppearance: "none",
+              MozAppearance: "none",
+              backgroundImage: "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%2310b981' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E\")",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "right 16px center",
+              backgroundSize: "14px",
+            }}
+            value=""
+            onChange={(e) => handleTickerSelect(e.target.value)}
+          >
+            <option value="" disabled>— Select ticker —</option>
+            {reportOptions.map((r) => (
+              <option key={r.ticker} value={r.ticker}>
+                {r.ticker}
+              </option>
+            ))}
+            <option value="__other__">Other ticker…</option>
+          </select>
+          <span style={{ fontSize: 11, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", textAlign: "center", maxWidth: 320 }}>
+            We&apos;ll auto-fill entry price, TP1–3 &amp; tight stop from the latest report — just confirm shares after.
+          </span>
+        </div>
+      )}
+
+      {revealed && (
+      <>
       {/* Auto-fill banner */}
       {!initial && t.ticker && reportOptions.some((r) => r.ticker === t.ticker) && (
         <div style={{ fontSize: 11, color: "#10b981", fontFamily: "var(--font-mono, monospace)", marginBottom: 12, padding: "6px 10px", borderRadius: 6, background: "#10b98112", border: "1px solid #10b98130" }}>
@@ -316,22 +391,34 @@ function TradeForm({ initial, reportOptions, reportsByTicker, onSave, onCancel }
         </div>
       )}
 
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))", gap: 12, marginBottom: 14 }}>
+      <div className="jv-field-reveal" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))", gap: 12, marginBottom: 14 }}>
         <Field label="Ticker">
           {!customTicker ? (
-            <select
-              style={{ ...inputStyle, cursor: "pointer" }}
-              value={t.ticker || ""}
-              onChange={(e) => handleTickerSelect(e.target.value)}
-            >
-              <option value="">— Select —</option>
-              {reportOptions.map((r) => (
-                <option key={r.ticker} value={r.ticker}>
-                  {r.ticker}
-                </option>
-              ))}
-              <option value="__other__">Other ticker…</option>
-            </select>
+            <div style={{ display: "flex", gap: 6 }}>
+              <select
+                style={{ ...inputStyle, flex: 1, cursor: "pointer" }}
+                value={t.ticker || ""}
+                onChange={(e) => handleTickerSelect(e.target.value)}
+              >
+                <option value="">— Select —</option>
+                {reportOptions.map((r) => (
+                  <option key={r.ticker} value={r.ticker}>
+                    {r.ticker}
+                  </option>
+                ))}
+                <option value="__other__">Other ticker…</option>
+              </select>
+              {!initial && (
+                <button
+                  type="button"
+                  onClick={changeTicker}
+                  title="Change ticker"
+                  style={{ padding: "0 8px", borderRadius: 6, border: "1px solid var(--border)", background: "transparent", color: "var(--muted)", cursor: "pointer", fontSize: 11 }}
+                >
+                  ↺
+                </button>
+              )}
+            </div>
           ) : (
             <div style={{ display: "flex", gap: 6 }}>
               <input
@@ -343,7 +430,14 @@ function TradeForm({ initial, reportOptions, reportsByTicker, onSave, onCancel }
               />
               <button
                 type="button"
-                onClick={() => { setCustomTicker(false); field("ticker", ""); }}
+                onClick={() => {
+                  if (initial) {
+                    setCustomTicker(false);
+                    field("ticker", "");
+                  } else {
+                    changeTicker();
+                  }
+                }}
                 style={{ padding: "0 8px", borderRadius: 6, border: "1px solid var(--border)", background: "transparent", color: "var(--muted)", cursor: "pointer", fontSize: 11 }}
               >
                 ←
@@ -364,13 +458,27 @@ function TradeForm({ initial, reportOptions, reportsByTicker, onSave, onCancel }
         </Field>
         <Field label="Shares">
           <input
-            style={inputStyle}
+            ref={sharesInputRef}
+            style={sharesInvalid ? {
+              ...inputStyle,
+              border: "1.5px solid #ef4444",
+              boxShadow: "0 0 0 3px #ef444425",
+            } : inputStyle}
             type="text"
             inputMode="decimal"
             value={sharesInput}
-            onChange={(e) => setSharesInput(e.target.value)}
+            onChange={(e) => {
+              setSharesInput(e.target.value);
+              if (sharesInvalid) setSharesInvalid(false);
+            }}
             placeholder="0"
+            aria-invalid={sharesInvalid || undefined}
           />
+          {sharesInvalid && (
+            <span style={{ display: "block", marginTop: 4, fontSize: 10, color: "#ef4444", fontFamily: "var(--font-mono, monospace)" }}>
+              Enter a share amount greater than 0
+            </span>
+          )}
         </Field>
         <Field label="Tight Stop $">
           <input style={inputStyle} type="number" step="0.01" value={t.plannedSL || ""} onChange={(e) => field("plannedSL", parseFloat(e.target.value) || 0)} />
@@ -429,14 +537,18 @@ function TradeForm({ initial, reportOptions, reportsByTicker, onSave, onCancel }
           {rr !== null && <span style={{ fontSize: 11, color: "#3b82f6", fontFamily: "var(--font-mono, monospace)" }}>R/R: <strong>{rr.toFixed(1)} : 1</strong></span>}
         </div>
       )}
+      </>
+      )}
 
       <div style={{ display: "flex", gap: 10, marginTop: 16 }}>
-        <button
-          onClick={handleSubmit}
-          style={{ padding: "8px 18px", borderRadius: 8, border: "none", background: "#10b981", color: "#fff", fontWeight: 800, fontSize: 13, cursor: "pointer", fontFamily: "var(--font-mono, monospace)" }}
-        >
-          Save Trade
-        </button>
+        {revealed && (
+          <button
+            onClick={handleSubmit}
+            style={{ padding: "8px 18px", borderRadius: 8, border: "none", background: "#10b981", color: "#fff", fontWeight: 800, fontSize: 13, cursor: "pointer", fontFamily: "var(--font-mono, monospace)" }}
+          >
+            Save Trade
+          </button>
+        )}
         <button
           onClick={onCancel}
           style={{ padding: "8px 18px", borderRadius: 8, border: "1px solid var(--border)", background: "transparent", color: "var(--muted)", fontWeight: 700, fontSize: 13, cursor: "pointer", fontFamily: "var(--font-mono, monospace)" }}
@@ -560,18 +672,19 @@ function ValidatorSection({ result, generatedAt }: { result: ValidatorResult; ge
   );
 }
 
-function TradeRow({ trade, priceInfo, validatorResult, validationGeneratedAt, onEdit, onDelete, onAddExit }: {
+function TradeRow({ trade, priceInfo, validatorResult, validationGeneratedAt, expanded, onToggleExpand, onEdit, onDelete, onAddExit }: {
   trade: Trade;
   priceInfo: PriceInfo | null;
   validatorResult?: ValidatorResult;
   validationGeneratedAt?: string;
+  expanded: boolean;
+  onToggleExpand: () => void;
   onEdit: () => void;
   onDelete: () => void;
   onAddExit: (exit: TradeExit) => void;
 }) {
   const { lang } = useLang();
   const th = lang === "th";
-  const [expanded, setExpanded] = useState(false);
   const [showExitForm, setShowExitForm] = useState(false);
 
   const currentPrice = priceInfo?.price ?? null;
@@ -606,7 +719,7 @@ function TradeRow({ trade, priceInfo, validatorResult, validationGeneratedAt, on
       {/* Summary row */}
       <div
         style={{ display: "flex", alignItems: "center", gap: 10, padding: "12px 14px", cursor: "pointer", background: isStopLoss ? "#ef44440d" : "var(--card)", flexWrap: "wrap" }}
-        onClick={() => setExpanded((v) => !v)}
+        onClick={onToggleExpand}
       >
         {/* Alert icon for stop loss */}
         {isStopLoss && (
@@ -1014,6 +1127,105 @@ function TradeRow({ trade, priceInfo, validatorResult, validationGeneratedAt, on
           </div>
         </div>
       )}
+    </div>
+  );
+}
+
+// ── Simple alert modal (replaces window.alert for in-app validation/errors) ──
+
+function SimpleAlertModal({
+  th,
+  title,
+  message,
+  onDismiss,
+}: {
+  th: boolean;
+  title?: string;
+  message: string;
+  onDismiss: () => void;
+}) {
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape" || e.key === "Enter") onDismiss();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [onDismiss]);
+
+  return (
+    <div
+      role="alertdialog"
+      aria-modal="true"
+      aria-labelledby="simple-alert-title"
+      aria-describedby="simple-alert-desc"
+      onClick={onDismiss}
+      style={{
+        position: "fixed", inset: 0, zIndex: 9999,
+        display: "flex", alignItems: "center", justifyContent: "center",
+        padding: 24,
+        background: "rgba(6, 10, 18, 0.72)",
+        backdropFilter: "blur(6px)",
+        WebkitBackdropFilter: "blur(6px)",
+      }}
+    >
+      <div
+        onClick={(e) => e.stopPropagation()}
+        style={{
+          width: "min(380px, 100%)",
+          borderRadius: 14,
+          padding: "20px 20px 16px",
+          background: "linear-gradient(160deg, rgba(46, 26, 26, 0.98), rgba(15, 17, 23, 0.99))",
+          border: "1px solid rgba(239, 68, 68, 0.35)",
+          boxShadow: "0 20px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(239,68,68,0.06) inset",
+        }}
+      >
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 12, marginBottom: 16 }}>
+          <div style={{
+            width: 38, height: 38, borderRadius: 10, flexShrink: 0,
+            display: "flex", alignItems: "center", justifyContent: "center",
+            background: "rgba(239, 68, 68, 0.12)", border: "1px solid rgba(239, 68, 68, 0.3)",
+            fontSize: 18,
+          }}>
+            ⚠️
+          </div>
+          <div style={{ minWidth: 0 }}>
+            <div
+              id="simple-alert-title"
+              style={{
+                fontSize: 14, fontWeight: 800, color: "var(--text)", marginBottom: 4,
+                fontFamily: "var(--font-display, sans-serif)", letterSpacing: "-0.2px",
+              }}
+            >
+              {title ?? (th ? "บันทึกเทรดไม่ได้" : "Can't save trade")}
+            </div>
+            <div
+              id="simple-alert-desc"
+              style={{ fontSize: 12, color: "var(--muted)", lineHeight: 1.55, fontFamily: "var(--font-mono, monospace)" }}
+            >
+              {message}
+            </div>
+          </div>
+        </div>
+
+        <div style={{ display: "flex", justifyContent: "flex-end" }}>
+          <button
+            type="button"
+            autoFocus
+            onClick={onDismiss}
+            style={{
+              padding: "8px 18px", borderRadius: 8, cursor: "pointer",
+              border: "1px solid var(--border)", background: "transparent", color: "var(--text)",
+              fontSize: 12, fontWeight: 700, fontFamily: "var(--font-mono, monospace)",
+            }}
+          >
+            {th ? "ปิด" : "Close"}
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
@@ -1702,8 +1914,18 @@ export function JournalContent({ initialTrades, stats, reportOptions = [], price
   const [deleting, setDeleting] = useState(false);
   const [showNoTradesModal, setShowNoTradesModal] = useState(false);
   const [scanBlockReason, setScanBlockReason] = useState<"empty" | "no-open">("empty");
-  const [scanSuccess, setScanSuccess] = useState<{ scanned: number; remaining: number } | null>(null);
+  const [scanSuccess, setScanSuccess] = useState<{ scanned: number; remaining: number; tradeIds: string[] } | null>(null);
+  const [expandedTradeIds, setExpandedTradeIds] = useState<Set<string>>(new Set());
   const [showQuotaExhaustedModal, setShowQuotaExhaustedModal] = useState(false);
+  const [saveError, setSaveError] = useState<string | null>(null);
+  const formRef = useRef<HTMLDivElement>(null);
+
+  // Scroll the Log/Edit Trade form into view whenever it opens.
+  useEffect(() => {
+    if ((showForm || editTrade) && formRef.current) {
+      formRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, [showForm, editTrade]);
 
   // Fetch live prices from Yahoo Finance on mount
   useEffect(() => {
@@ -1747,11 +1969,11 @@ export function JournalContent({ initialTrades, stats, reportOptions = [], price
 
   const handleSave = useCallback(async (trade: Trade) => {
     if (!trade.ticker.trim()) {
-      alert("Please enter a ticker before saving.");
+      setSaveError(th ? "กรุณาใส่ ticker ก่อนบันทึก" : "Please enter a ticker before saving.");
       return;
     }
     if (trade.shares <= 0) {
-      alert("Please enter a share amount greater than 0.");
+      setSaveError(th ? "กรุณาใส่จำนวนหุ้นให้มากกว่า 0" : "Please enter a share amount greater than 0.");
       return;
     }
     const isNew = !trades.some((t) => t.id === trade.id);
@@ -1764,9 +1986,9 @@ export function JournalContent({ initialTrades, stats, reportOptions = [], price
       setShowForm(false);
       setEditTrade(null);
     } catch (err) {
-      alert(err instanceof Error ? err.message : "Failed to save trade");
+      setSaveError(err instanceof Error ? err.message : (th ? "บันทึกเทรดไม่สำเร็จ" : "Failed to save trade"));
     }
-  }, [trades]);
+  }, [trades, th]);
 
   const handleAddExit = useCallback(async (tradeId: string, exit: TradeExit) => {
     try {
@@ -1804,7 +2026,7 @@ export function JournalContent({ initialTrades, stats, reportOptions = [], price
         }),
       );
       setQuotaState((prev) => (prev ? { ...prev, remaining: data.remaining, used: prev.limit - data.remaining } : prev));
-      setScanSuccess({ scanned: data.results.length, remaining: data.remaining });
+      setScanSuccess({ scanned: data.results.length, remaining: data.remaining, tradeIds: data.results.map((r) => r.tradeId) });
     } catch (err) {
       alert(err instanceof Error ? err.message : "AI validate failed");
     } finally {
@@ -1832,12 +2054,15 @@ export function JournalContent({ initialTrades, stats, reportOptions = [], price
   }, [trades, handleValidate, quotaState]);
 
   const dismissScanSuccess = useCallback(() => {
+    if (scanSuccess) {
+      setExpandedTradeIds((prev) => new Set([...prev, ...scanSuccess.tradeIds]));
+    }
     setScanSuccess(null);
     const el = document.getElementById("journal-trade-list");
     if (el) {
       el.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-  }, []);
+  }, [scanSuccess]);
 
   const openLogTradeForm = useCallback(() => {
     setShowNoTradesModal(false);
@@ -1917,11 +2142,23 @@ export function JournalContent({ initialTrades, stats, reportOptions = [], price
           onDismiss={() => setShowQuotaExhaustedModal(false)}
         />
       )}
+      {saveError && (
+        <SimpleAlertModal
+          th={th}
+          message={saveError}
+          onDismiss={() => setSaveError(null)}
+        />
+      )}
       <style>{`
         @keyframes pulse {
           0%, 100% { opacity: 1; transform: scale(1); }
           50%       { opacity: 0.6; transform: scale(1.2); }
         }
+        @keyframes jvFieldReveal {
+          from { opacity: 0; transform: translateY(-6px); }
+          to   { opacity: 1; transform: translateY(0); }
+        }
+        .jv-field-reveal { animation: jvFieldReveal 0.25s ease-out; }
         .price-rail-mobile { display: none; }
         @media (max-width: 640px) {
           .trade-stats-row {
@@ -2222,7 +2459,7 @@ export function JournalContent({ initialTrades, stats, reportOptions = [], price
 
       {/* Form */}
       {(showForm || editTrade) && (
-        <div style={{ marginBottom: 20 }}>
+        <div ref={formRef} style={{ marginBottom: 20, scrollMarginTop: 16 }}>
           <TradeForm
             initial={editTrade ?? undefined}
             reportOptions={reportOptions}
@@ -2273,7 +2510,13 @@ export function JournalContent({ initialTrades, stats, reportOptions = [], price
               priceInfo={livePriceMap[trade.ticker] ?? null}
               validatorResult={trade.validation ?? undefined}
               validationGeneratedAt={trade.validation?.validatedAt}
-              onEdit={() => { setEditTrade(trade); setShowForm(false); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+              expanded={expandedTradeIds.has(trade.id)}
+              onToggleExpand={() => setExpandedTradeIds((prev) => {
+                const next = new Set(prev);
+                if (next.has(trade.id)) next.delete(trade.id); else next.add(trade.id);
+                return next;
+              })}
+              onEdit={() => { setEditTrade(trade); setShowForm(false); }}
               onDelete={() => requestDelete(trade)}
               onAddExit={(exit) => handleAddExit(trade.id, exit)}
             />
