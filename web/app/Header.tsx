@@ -269,8 +269,16 @@ export function Header({ lastUpdated }: { lastUpdated: string }) {
           <Link href="/backtest" title="Backtest" style={{ fontSize: 11, color: "var(--muted)", textDecoration: "none", fontFamily: "var(--font-mono, monospace)", fontWeight: 700, letterSpacing: "0.3px" }}>
             📊 Backtest
           </Link>
-          <Link href="/journal" title="Journal" style={{ fontSize: 11, color: "#f59e0b", textDecoration: "none", fontFamily: "var(--font-mono, monospace)", fontWeight: 700, letterSpacing: "0.3px" }}>
-            📒 Journal
+          <Link
+            href="/journal"
+            title={th ? "Journal — AI ตรวจแผนเทรด" : "Journal — AI plan validation"}
+            style={{
+              fontSize: 11, color: "#f59e0b", textDecoration: "none",
+              fontFamily: "var(--font-mono, monospace)", fontWeight: 700, letterSpacing: "0.3px",
+              display: "inline-flex", alignItems: "center", gap: 4,
+            }}
+          >
+            📒 Journal <span className="srw-ai-spark" aria-hidden>✦</span>
           </Link>
           <span style={{ display: "inline-block", width: 7, height: 7, borderRadius: "50%", background: "#10b981", animation: "livePulse 2s ease-in-out infinite", flexShrink: 0 }} />
           <span style={{ fontSize: 12, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>{th ? "อัปเดต" : "Updated"} {lastUpdated}</span>
@@ -325,8 +333,17 @@ export function Header({ lastUpdated }: { lastUpdated: string }) {
           <Link href="/backtest" onClick={() => setOpen(false)} style={{ fontSize: 14, color: "var(--muted)", textDecoration: "none", fontFamily: "var(--font-mono, monospace)", fontWeight: 700, padding: "8px 6px" }}>
             📊 Backtest
           </Link>
-          <Link href="/journal" onClick={() => setOpen(false)} style={{ fontSize: 14, color: "#f59e0b", textDecoration: "none", fontFamily: "var(--font-mono, monospace)", fontWeight: 700, padding: "8px 6px" }}>
+          <Link
+            href="/journal"
+            onClick={() => setOpen(false)}
+            style={{
+              fontSize: 14, color: "#f59e0b", textDecoration: "none",
+              fontFamily: "var(--font-mono, monospace)", fontWeight: 700, padding: "8px 6px",
+              display: "flex", alignItems: "center", gap: 8,
+            }}
+          >
             📒 Journal
+            <span className="srw-ai-badge" aria-hidden>✦ AI</span>
           </Link>
           <div style={{ height: 1, background: "var(--border)", margin: "6px 0" }} />
           <div style={{ padding: "2px 6px" }}>
@@ -351,6 +368,35 @@ export function Header({ lastUpdated }: { lastUpdated: string }) {
           .srw-desktop { display: none; }
           .srw-burger  { display: flex; }
           .srw-logo    { font-size: 16px; }
+        }
+
+        /* Journal nav — a tiny spinning spark next to the plain text link
+           hints there's an AI feature behind it, without a heavy filled
+           button competing with the rest of the (mostly text-only) nav. */
+        .srw-ai-spark {
+          display: inline-block;
+          font-size: 9px;
+          color: #c4b5fd;
+          animation: srwSparkPulse 2.4s ease-in-out infinite;
+        }
+        .srw-ai-badge {
+          display: inline-flex;
+          align-items: center;
+          font-size: 9px;
+          font-weight: 800;
+          letter-spacing: 0.3px;
+          color: #c4b5fd;
+          background: rgba(139, 92, 246, 0.12);
+          border: 1px solid rgba(139, 92, 246, 0.3);
+          padding: 2px 6px;
+          border-radius: 999px;
+        }
+        @keyframes srwSparkPulse {
+          0%, 100% { transform: scale(1); opacity: 0.7; }
+          50%      { transform: scale(1.25); opacity: 1; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .srw-ai-spark { animation: none; }
         }
       `}</style>
     </header>

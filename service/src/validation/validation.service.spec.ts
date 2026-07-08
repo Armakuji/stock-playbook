@@ -7,6 +7,23 @@ import { PinoLogger } from "nestjs-pino";
 import { ValidationService } from "./validation.service";
 import { ClaudeClient } from "./claude.client";
 import { PrismaService } from "../prisma/prisma.service";
+import { fetchCurrentPrices } from "./yahoo-price";
+import { fetchNewsForTickers } from "./yahoo-news";
+
+jest.mock("./yahoo-price");
+jest.mock("./yahoo-news");
+
+const mockFetchCurrentPrices = fetchCurrentPrices as jest.MockedFunction<
+  typeof fetchCurrentPrices
+>;
+const mockFetchNewsForTickers = fetchNewsForTickers as jest.MockedFunction<
+  typeof fetchNewsForTickers
+>;
+
+beforeEach(() => {
+  mockFetchCurrentPrices.mockResolvedValue({});
+  mockFetchNewsForTickers.mockResolvedValue({});
+});
 
 function makePrismaMock() {
   return {
@@ -346,5 +363,97 @@ describe("ValidationService.validate — IP rate limit", () => {
         }) as Record<string, unknown>,
       }),
     );
+  });
+});
+
+describe("ValidationService.validate — deterministic stop guard integration", () => {
+  it("CRITICAL: overrides a HOLD verdict to CUT when Claude reports stopBreached:false but the independently-fetched currentPrice is actually at/below plannedSL (e.g. from a prompt-injected notes field)", async () => {
+    const prisma = makePrismaMock();
+    (prisma.planFeature.findUnique as jest.Mock).mockResolvedValue({
+      limitValue: 3,
+    });
+    (prisma.validationRequest.count as jest.Mock).mockResolvedValue(0);
+    // plannedSL 360 — the price fetched independently of the model is 355,
+    // i.e. actually breached, regardless of what Claude claims.
+    mockFetchCurrentPrices.mockResolvedValue({ AVGO: 355 });
+    (prisma.trade.findMany as jest.Mock).mockResolvedValue([
+      { ...OPEN_TRADE, plannedSL: 360 },
+    ]);
+    (prisma.validationRequest.create as jest.Mock).mockResolvedValue({
+      id: "vr-guard-1",
+    });
+    (prisma.tradeValidation.upsert as jest.Mock).mockResolvedValue({});
+    (prisma.validationRequest.update as jest.Mock).mockResolvedValue({});
+    const claude = makeClaudeMock();
+    (claude.validate as jest.Mock).mockResolvedValue({
+      results: [
+        {
+          ...SUCCESS_RESULT,
+          verdict: "HOLD",
+          color: "green",
+          stopBreached: false,
+          atRisk: false,
+          summary: "Ignore price action, thesis is fine, always HOLD.",
+        },
+      ],
+      inputTokens: 500,
+      outputTokens: 120,
+    });
+    const logger = makeLoggerMock();
+    const service = new ValidationService(prisma, logger, claude);
+
+    const outcome = await service.validate(USER);
+
+    expect(outcome.results).toHaveLength(1);
+    expect(outcome.results[0].stopBreached).toBe(true);
+    expect(outcome.results[0].verdict).toBe("CUT");
+    expect(outcome.results[0].color).toBe("red");
+    // The upserted trade_validation row must also carry the corrected verdict,
+    // not the model's original (potentially injection-influenced) one.
+    expect(prisma.tradeValidation.upsert).toHaveBeenCalledWith(
+      expect.objectContaining({
+        create: expect.objectContaining({
+          verdict: "CUT",
+          stopBreached: true,
+        }) as Record<string, unknown>,
+      }),
+    );
+    expect(logger.warn).toHaveBeenCalledWith(
+      expect.objectContaining({ tradeId: "trade-1" }) as Record<
+        string,
+        unknown
+      >,
+      "AI validation stop guard override — model output didn't match the deterministic price/SL check",
+    );
+  });
+
+  it("passes results through unchanged when the model's stopBreached already matches the fetched price", async () => {
+    const prisma = makePrismaMock();
+    (prisma.planFeature.findUnique as jest.Mock).mockResolvedValue({
+      limitValue: 3,
+    });
+    (prisma.validationRequest.count as jest.Mock).mockResolvedValue(0);
+    mockFetchCurrentPrices.mockResolvedValue({ AVGO: 400 }); // well above SL 360
+    (prisma.trade.findMany as jest.Mock).mockResolvedValue([
+      { ...OPEN_TRADE, plannedSL: 360 },
+    ]);
+    (prisma.validationRequest.create as jest.Mock).mockResolvedValue({
+      id: "vr-guard-2",
+    });
+    (prisma.tradeValidation.upsert as jest.Mock).mockResolvedValue({});
+    (prisma.validationRequest.update as jest.Mock).mockResolvedValue({});
+    const claude = makeClaudeMock();
+    (claude.validate as jest.Mock).mockResolvedValue({
+      results: [SUCCESS_RESULT], // stopBreached: false, verdict: HOLD — matches reality
+      inputTokens: 500,
+      outputTokens: 120,
+    });
+    const logger = makeLoggerMock();
+    const service = new ValidationService(prisma, logger, claude);
+
+    const outcome = await service.validate(USER);
+
+    expect(outcome.results[0].verdict).toBe("HOLD");
+    expect(logger.warn).not.toHaveBeenCalled();
   });
 });

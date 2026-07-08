@@ -11,6 +11,7 @@ import { TradeForPrompt, ValidationToolResult } from "./prompt";
 import { toTradeValidationWrite } from "./validation.mapper";
 import { fetchCurrentPrices } from "./yahoo-price";
 import { fetchNewsForTickers } from "./yahoo-news";
+import { applyStopGuard } from "./stop-guard";
 import { activeTradeWhere } from "../trades/trade-filters";
 
 const FREE_PLAN_ID = "free";
@@ -153,9 +154,29 @@ export class ValidationService {
     }
 
     const openTradeIds = new Set(openTrades.map((t) => t.id));
-    const validResults = outcome.results.filter((r) =>
-      openTradeIds.has(r.tradeId),
-    );
+    const promptByTradeId = new Map(tradesForPrompt.map((t) => [t.id, t]));
+    const validResults = outcome.results
+      .filter((r) => openTradeIds.has(r.tradeId))
+      .map((r) => {
+        const trade = promptByTradeId.get(r.tradeId);
+        if (!trade) return r;
+        const { result, overridden } = applyStopGuard(r, trade);
+        if (overridden) {
+          this.logger.warn(
+            {
+              userId,
+              tradeId: r.tradeId,
+              ticker: trade.ticker,
+              modelStopBreached: r.stopBreached,
+              modelAtRisk: r.atRisk,
+              actualStopBreached: result.stopBreached,
+              actualAtRisk: result.atRisk,
+            },
+            "AI validation stop guard override — model output didn't match the deterministic price/SL check",
+          );
+        }
+        return result;
+      });
 
     const validatedAt = new Date();
     for (const r of validResults) {
