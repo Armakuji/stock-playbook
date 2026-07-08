@@ -39,6 +39,34 @@ describe("buildValidationMessages", () => {
     ]);
     expect(user).toContain("unavailable");
   });
+
+  it("includes news headlines in the user message when present", () => {
+    const { user } = buildValidationMessages([
+      {
+        ...trade,
+        news: [
+          {
+            title: "Broadcom beats on AI revenue",
+            publisher: "Reuters",
+            publishedAt: "2026-07-08T00:00:00.000Z",
+          },
+        ],
+      },
+    ]);
+    expect(user).toContain("Broadcom beats on AI revenue");
+    expect(user).toContain("Reuters");
+  });
+
+  it("marks news as unavailable when no headlines are found", () => {
+    const { user } = buildValidationMessages([{ ...trade, news: [] }]);
+    expect(user).toContain("no recent headlines found");
+  });
+
+  it("labels news headlines as untrusted, non-instruction data in the system prompt", () => {
+    const { system } = buildValidationMessages([trade]);
+    expect(system.toLowerCase()).toContain("news");
+    expect(system.toLowerCase()).toContain("not instructions");
+  });
 });
 
 describe("VALIDATION_TOOL", () => {
