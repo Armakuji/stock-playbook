@@ -1,0 +1,234 @@
+{
+  "ticker": "MU",
+  "companyName": "Micron Technology, Inc.",
+  "companyDescription": "Memory & storage leader · HBM4 dominant AI memory supplier · New Ford long-term supply agreement · 16 take-or-pay SCAs worth $100B+ · Q4 FY26 guide $50B",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-08T15:00:00.000Z",
+  "price": 938.38,
+  "priceChange": -4.71,
+  "priceNote": "Fell 4.71% Jul 7 (premarket Jul 8 indicated further down near $902) in a sector-wide semiconductor de-rating — Samsung's blowout Q2 profit was read as 'AI memory euphoria priced in,' Morgan Stanley cut semi exposure, and DeepSeek's in-house AI chip report added to the selling. Now ~25% off the Jun 25 ATH of $1,255, despite signing a new long-term supply deal with Ford the same week.",
+  "marketCap": "$1.02T",
+  "sector": "Technology / Memory Semiconductors",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 78,
+  "summary": "Micron has fallen roughly 25% from its Jun 25 all-time high of $1,255 as a sector-wide AI-hardware de-rating swept through chip stocks — triggered by Samsung's 19x profit jump being read as a 'sell-the-news' peak signal, Morgan Stanley recommending reduced semiconductor exposure, and a Reuters report on DeepSeek's in-house AI chip. Michael Burry's disclosed short against Micron added to the bearish narrative. None of this reflects a Micron-specific problem: the company just signed a new long-term supply agreement with Ford (one of 16 SCAs worth $100B+ in customer commitments, ~40% of total sales), HBM4 remains sold out through 2027, and Wall Street targets have kept climbing (BofA to $1,500, UBS $1,625). Q4 FY2026 earnings (~Sep 22-23) is the next catalyst.",
+  "catalysts": [
+    {
+      "icon": "📉",
+      "name": "Sector-Wide AI-Chip De-Rating",
+      "description": "Jul 6-8, 2026: Samsung's record Q2 profit was read as 'AI memory euphoria priced in,' Morgan Stanley cut semiconductor weightings, and a Reuters report on DeepSeek's proprietary AI chip added to the selling. MU -4.71% Jul 7, PHLX Semiconductor Index -4.7%, Micron ~25% off its Jun 25 ATH. Not a Micron-specific issue — a valuation reset after a >250% YTD run.",
+      "urgencyLabel": "THIS WEEK",
+      "dateBadge": "Jul 7, 2026",
+      "catalystDate": "2026-07-07",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "🚗",
+      "name": "New Ford Motor Long-Term Supply Agreement",
+      "description": "Micron signed a new long-term supply agreement with Ford for next-generation vehicle memory and storage — one of 16 strategic customer agreements (SCAs) that together secure roughly $100B in revenue, about 40% of total sales, insulating Micron from the typical memory boom-bust cycle.",
+      "urgencyLabel": "NEW",
+      "dateBadge": "Jul 2026",
+      "catalystDate": "2026-07-06",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "📊",
+      "name": "Q4 FY2026 Earnings",
+      "description": "Estimated Sep 22-23, 2026 (unconfirmed). Company guided $50B ± $1B revenue and $31 ± $1 non-GAAP EPS. Beat bar is $51B+ revenue or $32+ EPS — the next major re-rating event after the sector selloff.",
+      "urgencyLabel": "~76 DAYS",
+      "dateBadge": "~Sep 22, 2026",
+      "catalystDate": "2026-09-22",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "💾",
+      "name": "HBM4 Revenue Ramp — Vera Rubin Supply",
+      "description": "Micron is the primary HBM4 supplier for NVIDIA's Vera Rubin GPUs, shipping now. Fully booked through 2027 — a structural demand floor that the sector selloff hasn't changed.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Through 2027",
+      "catalystDate": "2026-07-08",
+      "badgeColor": "green",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Sector-wide de-rating risk: Samsung and SK Hynix also fell sharply (up to 5.2%) — if this is the start of a broader AI-valuation unwind rather than a one-week reset, Micron falls with the group regardless of its own fundamentals",
+    "Michael Burry's disclosed short position against Micron adds a visible bearish voice to the narrative, even as bulls (Ross Gerber, several sell-side analysts) defend the fundamentals",
+    "DeepSeek reportedly developing its own AI inference chip — a long-term risk to AI-hardware demand assumptions across the memory/GPU supply chain if it ships and scales",
+    "Oversupply shock 2027-2028 — Micron ($27B+ capex), Samsung and SK Hynix are all building simultaneously; synchronized capacity could eventually crash ASPs",
+    "China export controls — BIS enforcement and the Match Act create geopolitical tail risk for a company with significant China exposure",
+    "Peak margin trajectory — Micron's own Q4 guidance notes 'meaningful moderation in rate of price increases'"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q4 FY2026 Earnings (est.)",
+      "dateRange": "~Sep 22-23, 2026",
+      "note": "Revenue $50B ± $1B / EPS $31 ± $1 — true beat bar is $51B+ or $32+ EPS",
+      "est": "est. $50B rev / $31 EPS",
+      "highlight": "yellow"
+    },
+    {
+      "event": "HBM4 Full-Year Ramp Completion",
+      "dateRange": "FY2026 (through Dec 2026)",
+      "note": "2026 HBM supply fully sold out; orders extending into 2028",
+      "est": "Sold out 2026-2027",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -20, "price": 751 },
+    { "label": "Base", "color": "yellow", "pct": 28, "price": 1200 },
+    { "label": "Bull", "color": "green", "pct": 60, "price": 1500 },
+    { "label": "Moon", "color": "purple", "pct": 73, "price": 1625 }
+  ],
+  "analystTargets": [
+    { "firm": "UBS (Nicolas Gaudois)", "target": 1625, "rating": "Buy", "note": "Kept target through the selloff, calls the dip a buying opportunity" },
+    { "firm": "Bank of America (Vivek Arya)", "target": 1500, "rating": "Buy", "note": "Raised from $950" },
+    { "firm": "Citigroup (Atif Malik)", "target": 1200, "rating": "Buy", "note": "Cited better-than-expected memory pricing + tight supply" },
+    { "firm": "Wall Street average", "target": 1564, "rating": "Buy", "note": "~71% implied upside from post-selloff price" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed on hold at 3.50-3.75%; next FOMC Jul 28-29. Memory demand is driven primarily by hyperscaler AI capex, which is structural and contracted — partially insulated from near-term rate moves.",
+    "inflationNote": "June CPI (Jul 14) is the next checkpoint. DRAM/NAND pricing is driven by supply/demand dynamics rather than inflation directly, but a hot CPI print would add to the broader tech/semi risk-off tone currently pressuring MU.",
+    "sectorImpact": "The Jul 6-8 selloff is a sector-wide AI-hardware valuation reset (Samsung, SK Hynix, Intel, AMD all fell alongside Micron), not a demand problem — AI memory demand remains structural and contracted via 16 take-or-pay SCAs.",
+    "summary": "MEDIUM — fundamental demand is strong and contracted (HBM4 sold out through 2027, new Ford SCA), but the current sector-wide de-rating plus 2027-2028 oversupply and geopolitical chip-restriction risk are real near/medium-term overhangs."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 938, "note": "Post-selloff, ~25% off the Jun 25 ATH", "timing": "Now" },
+      { "label": "Entry 2", "level": 860, "rangeMax": 890, "note": "Near the 50-day MA (~$871) — if the sector selloff extends", "timing": "On any pullback", "preferred": true },
+      { "label": "Entry 3", "level": 750, "note": "China export shock / oversupply fear capitulation", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 1200, "pct": 27.9, "note": "Citi target — Q4 in-line with the $50B guide" },
+    "tp2": { "price": 1500, "pct": 59.9, "note": "BofA target — Q4 beat + sector sentiment recovers" },
+    "tp3": { "price": 1625, "pct": 73.2, "note": "UBS target — HBM4/FY2027 re-rate confirmed", "moon": true },
+    "stopLoss": {
+      "tight": 860,
+      "tightPct": -8.3,
+      "tightNote": "Below the 50-day MA — sector selloff deepening beyond a normal reset",
+      "hard": 780,
+      "hardPct": -16.9,
+      "hardNote": "Oversupply shock confirmed + China export escalation + Samsung HBM4 qualification",
+      "riskReward": "4.1 : 1",
+      "rrNote": "Entry 2 (~$875) vs TP2 ($1,500)",
+      "rrWarning": "Strong R/R — the sector selloff has created a wider valuation gap vs. fundamentals, not a smaller one"
+    },
+    "verdict": "Buy the sector-wide AI-hardware de-rating — Micron's own fundamentals (new Ford SCA, HBM4 sold out through 2027, Q3 blowout) haven't changed; this is a valuation reset, not a demand break. Q4 earnings (~Sep 22) is the next re-rating event.",
+    "approach": "DCA"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "MU typically rallies 8-15% in the 2-4 weeks before earnings on AI demand data points (TSMC capacity reports, hyperscaler capex signals). The current post-selloff consolidation near $900-940 is the pre-Q4 entry window.",
+    "preRunupTiming": "Jul 8 → Sep 22",
+    "preRunupPct": "+8-15%",
+    "postWin": {
+      "avgPct": 15,
+      "range": "+10% to +25%",
+      "note": "Q3 FY2026 (Jun 25): +14.55% AH on a blowout beat. Prior cycle: Q3 FY2025 beat +20% AH. MU has historically been one of the biggest earnings movers in semiconductors on large beats.",
+      "exampleDate": "Jun 2026"
+    },
+    "postLose": {
+      "avgPct": -10,
+      "range": "-5% to -20%",
+      "note": "Q2 FY2026 (Mar 2026): beat but -4%+ on guidance concerns. Any Q4 revenue miss vs. the $50B guide, on top of the current sector caution, would risk a sharper de-rating than usual.",
+      "exampleDate": "Mar 2026"
+    },
+    "spotSizing": {
+      "pct": 6,
+      "reason": "High conviction: HBM4 fully booked 2026-2027, 16 take-or-pay SCAs including the new Ford deal, and Wall Street targets imply 60-73% upside from the post-selloff price. Size 6% as a Core Holding; the sector-wide selloff is a better entry, not a worse one, provided the demand thesis holds."
+    },
+    "stopPreCatalyst": {
+      "pct": -8,
+      "price": 860,
+      "note": "Below the pre-earnings/50-day base = thesis changing on China restrictions, Samsung HBM4 qualification, or a deeper AI-valuation unwind"
+    },
+    "stopPostCatalyst": {
+      "pct": -12,
+      "note": "If Q4 revenue comes in below $49B or guidance is cut below $50B for Q1 FY2027, exit within 2 sessions"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "MU",
+      "event": "Q3 FY2026 blowout earnings — revenue quadrupled YoY",
+      "date": "Jun 2026",
+      "movePct": 15,
+      "days": 1,
+      "outcome": "good",
+      "note": "Q3 FY2026 on Jun 25: $41.5B revenue vs $35.7B estimate (+16.2%), EPS $25.11 vs $20.49 (+22.6%). Stock +14.55% AH — established the new earnings baseline that the current sector selloff has temporarily overshadowed."
+    },
+    {
+      "ticker": "MU",
+      "event": "Sector-wide AI-hardware de-rating post-Samsung earnings",
+      "date": "Jul 2026",
+      "movePct": -25,
+      "days": 8,
+      "outcome": "mixed",
+      "note": "Samsung's blowout Q2 profit (19x jump) was read as 'AI memory euphoria fully priced in,' triggering a broad chip-sector selloff that took Micron down ~25% from its Jun 25 ATH despite no negative Micron-specific news — a valuation reset driven by sentiment, not fundamentals."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Micron Stock Drops as Asian Selloff 'Revived AI-Valuation Worries' Despite New Ford Deal",
+    "url": "https://www.tipranks.com/news/micron-stock-drops-as-asian-selloff-revived-ai-valuation-worries-despite-new-ford-deal",
+    "date": "Jul 2026"
+  },
+  "sources": [
+    "https://www.tipranks.com/news/micron-stock-drops-as-asian-selloff-revived-ai-valuation-worries-despite-new-ford-deal",
+    "https://ts2.tech/en/micron-technology-nasdaqmu-stock-analysis-memory-boom-now-faces-cycle-risk-test/",
+    "https://invezz.com/au/news/2026/07/07/micron-stock-crashes-22percent-is-this-ai-chip-selloff-a-rare-buying-chance/",
+    "https://www.perplexity.ai/finance/MU"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Micron ร่วง ~25% จาก ATH 25 มิ.ย. ($1,255) จาก sector-wide AI-hardware de-rating — Samsung กำไรทำสถิติแต่ตลาดตีความว่า AI memory euphoria priced-in แล้ว Morgan Stanley ลด semi exposure ข่าว DeepSeek ชิปของตัวเองซ้ำเติม Michael Burry short เพิ่ม sentiment ลบ แต่ Micron เพิ่งเซ็นสัญญาใหม่กับ Ford, HBM4 ขายหมดถึงปี 2027 นักวิเคราะห์ยังขึ้น PT (BofA $1,500, UBS $1,625) Q4 earnings (~22 ก.ย.) เป็น catalyst ถัดไป",
+      "priceNote": "ร่วง 4.71% จาก sector selloff กว้าง — ~25% จาก ATH 25 มิ.ย.",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "Sector-Wide AI-Chip De-Rating", "description": "6-8 ก.ค. — Samsung sell-the-news, Morgan Stanley ลด exposure, DeepSeek chip news" },
+        { "name": "สัญญาใหม่กับ Ford", "description": "หนึ่งใน 16 SCA มูลค่ารวม $100B+ ราว 40% ของยอดขาย" },
+        { "name": "รายงาน Q4 FY2026 (ประมาณ)", "description": "~22 ก.ย. — guide $50B / $31 EPS" },
+        { "name": "HBM4 Revenue Ramp — Vera Rubin", "description": "ขายหมดถึงปี 2027 — demand floor ที่ selloff ไม่เปลี่ยน" }
+      ],
+      "risks": [
+        "Sector de-rating กว้าง — Samsung, SK Hynix ร่วงด้วย ถ้าเป็นจุดเริ่มของ AI valuation unwind จริง Micron จะร่วงตามกลุ่ม",
+        "Michael Burry short position เพิ่มเสียง bearish",
+        "DeepSeek พัฒนาชิป AI ของตัวเอง — ความเสี่ยงระยะยาวต่อ demand ทั้ง supply chain",
+        "Oversupply 2027-2028 — MU+Samsung+SK Hynix เพิ่ม capacity พร้อมกัน",
+        "Export controls จีน — BIS enforcement + Match Act",
+        "Peak margin — Q4 guide บอก rate of price increase ชะลอ"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed hold 3.50-3.75%; AI memory demand structural + contracted — ทนทานต่อ rate moves ระยะสั้น",
+        "inflationNote": "CPI มิ.ย. ออก 14 ก.ค.; DRAM/NAND pricing ขับเคลื่อนด้วย supply/demand ไม่ใช่ inflation แต่ CPI ร้อนจะซ้ำเติม risk-off",
+        "sectorImpact": "Selloff 6-8 ก.ค. เป็น valuation reset ทั้ง sector ไม่ใช่ปัญหา demand — demand ยัง structural ผ่าน 16 SCA",
+        "summary": "MEDIUM — demand แข็งแกร่งและมีสัญญาผูกมัด แต่ sector selloff ปัจจุบัน + oversupply 2027 + geopolitical risk เป็น overhang จริง"
+      },
+      "entryStrategy": {
+        "verdict": "ซื้อช่วง sector de-rating — fundamentals ของ Micron เอง (Ford SCA ใหม่, HBM4 ขายหมดถึง 2027, Q3 blowout) ไม่เปลี่ยน นี่คือ valuation reset ไม่ใช่ demand break Q4 earnings (~22 ก.ย.) เป็น re-rating event ถัดไป",
+        "entryLevels": [
+          { "note": "หลัง selloff — ~25% จาก ATH", "timing": "ตอนนี้" },
+          { "note": "ใกล้ 50-day MA ถ้า sector selloff ยืดออก", "timing": "ถ้าย่อ" },
+          { "note": "China export shock / oversupply fear capitulation", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "เป้า Citi — Q4 ตรงตาม guide $50B" },
+        "tp2": { "note": "เป้า BofA — Q4 beat + sentiment ฟื้น" },
+        "tp3": { "note": "เป้า UBS — HBM4/FY2027 re-rate ยืนยัน", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุด 50-day MA = selloff ลึกกว่า normal reset",
+          "hardNote": "Oversupply shock + China escalation + Samsung qualify",
+          "rrNote": "Entry 2 เทียบ TP2",
+          "rrWarning": "R/R ดี — selloff สร้าง gap valuation กว้างขึ้น ไม่ใช่แคบลง"
+        }
+      },
+      "estimateDates": [
+        { "event": "รายงาน Q4 FY2026 (ประมาณ)", "note": "Guide $50B / $31 EPS; beat bar >$51B หรือ $32+ EPS" },
+        { "event": "HBM4 Full-Year Ramp", "note": "2026 HBM sold out ทั้งปี; orders extend ถึง 2028" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,231 @@
+{
+  "ticker": "FLY",
+  "companyName": "Firefly Aerospace",
+  "companyDescription": "Commercial + defense launch + lunar services · NASA $13M SkyFall Mars aeroshell subcontract Jul 7 · Alpha Block 2 / VICTUS HAZE Sep 30 · SciTec Golden Dome SHIELD IDIQ",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-08T15:00:00.000Z",
+  "price": 25.66,
+  "priceChange": -8.34,
+  "priceNote": "Fell 8.3% Jul 7 despite the positive SkyFall news — broad risk-off in speculative space names + profit-taking after the recent NASA CLPS run. Now ~14x FY26E revenue vs RKLB ~65-70x, a wider value gap than a week ago.",
+  "marketCap": "$4.3B",
+  "sector": "Space / Launch Services",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Speculative",
+  "score": 61,
+  "summary": "Firefly won a $13M NASA JPL subcontract (Jul 7, 2026) to build the aeroshell for the SkyFall Mars mission (three heritage Mars helicopters, targeted late-2028 launch) — another proof point for its multi-mission platform after the $144M Blue Ghost CLPS win on Jul 2. The stock still fell 8.3% on the day, part of a broader speculative/space-name pullback rather than a company-specific issue. 11 analysts hold a Moderate Buy with an average PT of $42.20 (+64% from here); Needham's Space & Industrial Summit (Jul 9) and Q2 earnings (est. mid-Aug, unconfirmed) are the next catalysts, with the VICTUS HAZE Block 2 launch (Sep 30) remaining the binary event.",
+  "catalysts": [
+    {
+      "icon": "🛰️",
+      "name": "NASA JPL $13M SkyFall Mars Aeroshell Subcontract",
+      "description": "Jul 7, 2026: NASA's Jet Propulsion Laboratory awarded Firefly a $13M subcontract to manufacture, test and deliver the aeroshell for the SkyFall mission — three heritage Mars helicopters performing science and subsurface mapping, targeted for launch in late 2028. Adds to the Jul 2 $144M Blue Ghost CLPS lunar win, extending Firefly's platform to Mars.",
+      "urgencyLabel": "TODAY",
+      "dateBadge": "Jul 7, 2026",
+      "catalystDate": "2026-07-07",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🎤",
+      "name": "Needham Space & Industrial Summit",
+      "description": "Management presents Jul 9 — commentary expected on VICTUS HAZE timeline, DoD pipeline, and FY2026 $420-450M guidance confidence.",
+      "urgencyLabel": "1 DAY",
+      "dateBadge": "Jul 9, 2026",
+      "catalystDate": "2026-07-09",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "Unconfirmed, calendar-estimated for mid-August 2026 (short reporting history post-IPO). Q1 was a record $80.9M (+45% YoY); watch for sequential progress, VICTUS HAZE prep updates, and FY guidance reaffirmation.",
+      "urgencyLabel": "~35 DAYS",
+      "dateBadge": "~Aug 12, 2026",
+      "catalystDate": "2026-08-12",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🚀",
+      "name": "Alpha Block 2 — VICTUS HAZE Launch",
+      "description": "Sep 30, 2026 — US Space Force + DARPA responsive-space mission. First flight of the Block 2 vehicle iteration; the binary event for the DoD-trust thesis.",
+      "urgencyLabel": "84 DAYS",
+      "dateBadge": "Sep 30, 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Stock fell 8.3% Jul 7 despite good news — signals fragile sentiment/positioning in speculative space names right now, not just company execution",
+    "Alpha Block 2 first-flight binary — VICTUS HAZE Sep 30 is a new rocket iteration; failure = ~1-year setback + program reset",
+    "Q2 earnings date is still unconfirmed/calendar-estimated — a short public reporting history means real surprise risk either way",
+    "SpaceX IPO contagion — if SpaceX goes public, institutional capital could rotate out of RKLB/FLY and into SpaceX directly",
+    "Cash burn pre-FCF positive — the $420-450M FY guide requires on-schedule execution across NASA, DoD and commercial contracts simultaneously",
+    "RKLB competitive overlap on responsive launch + defense contracts"
+  ],
+  "estimateDates": [
+    {
+      "event": "Needham Conference",
+      "dateRange": "Jul 9, 2026",
+      "note": "Management commentary on VICTUS HAZE + DoD pipeline",
+      "est": "Investor day",
+      "highlight": "yellow"
+    },
+    {
+      "event": "Q2 2026 Earnings (est.)",
+      "dateRange": "~Aug 12, 2026",
+      "note": "Unconfirmed — Q1 was $80.9M; watch sequential progress",
+      "est": "est. $90-100M rev",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -30, "price": 18 },
+    { "label": "Base", "color": "yellow", "pct": 29, "price": 33 },
+    { "label": "Bull", "color": "green", "pct": 64, "price": 42 },
+    { "label": "Moon", "color": "purple", "pct": 114, "price": 55 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (11 analysts)", "target": 42.2, "rating": "Moderate Buy", "note": "MarketBeat avg; high $60, low $28" },
+    { "firm": "High Target", "target": 60, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Fed on hold at 3.50-3.75%; next FOMC Jul 28-29. FLY's revenue base is NASA/DoD contracts, largely decoupled from consumer/corporate rate sensitivity — but as a pre-FCF small-cap, its cost of any future capital raise is rate-exposed.",
+    "inflationNote": "June CPI lands Jul 14, six days out — a hot print would reinforce the Fed's hawkish June dot plot and pressure high-beta speculative names like FLY more than it affects the underlying government contract base.",
+    "sectorImpact": "Golden Dome, NATO, and DARPA responsive-launch spending are secular tailwinds largely insulated from the rate cycle. Needham conf (Jul 9) and Q2 earnings are the near-term company-specific triggers.",
+    "summary": "LOW — the government/defense contract base insulates the underlying business from rates/inflation. The primary near-term risk is launch execution (Block 2) and broad speculative-sector sentiment, not macro."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 25.66, "note": "Post-selloff, post-SkyFall contract — Needham conf Jul 9 in 1 day", "timing": "Now" },
+      { "label": "Entry 2", "level": 22, "rangeMax": 23.5, "note": "Deeper pullback if speculative-sector selling continues", "timing": "On pullback", "preferred": true },
+      { "label": "Entry 3", "level": 18, "note": "Block 2 delay signal or broad space-sector capitulation", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 33, "pct": 28.6, "note": "Near-term analyst cluster" },
+    "tp2": { "price": 42, "pct": 63.7, "note": "Consensus avg — Q2 beat + VICTUS HAZE on track" },
+    "tp3": { "price": 55, "pct": 114.3, "note": "Moon — full DoD cadence + Mars/lunar pipeline converts", "moon": true },
+    "stopLoss": {
+      "tight": 21,
+      "tightPct": -18.2,
+      "tightNote": "Below Jul 7 low — would suggest more than routine profit-taking",
+      "hard": 16,
+      "hardPct": -37.6,
+      "hardNote": "Block 2 failure or Q2 guidance cut — thesis materially impaired",
+      "riskReward": "2.6 : 1",
+      "rrNote": "Tight stop vs TP2",
+      "rrWarning": "Speculative — size 4-6%; Needham conf Jul 9 is the near-term tell"
+    },
+    "verdict": "Buy the post-selloff dip on continued mission-win validation (SkyFall + Blue Ghost) — Needham conf Jul 9 and Q2 earnings are the next proof points. VICTUS HAZE Sep 30 remains the binary. Size 4-6% Speculative.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "delivery_beat",
+    "preRunup": "Commercial/defense launch names typically rally 10-20% in the 2-3 weeks before a mission milestone or major contract award. Firefly has strung together two NASA wins in a week (Blue Ghost Jul 2, SkyFall Jul 7) — normally a pre-run setup, though this time the market sold the news instead.",
+    "preRunupTiming": "2-3 สัปดาห์ก่อน mission/contract news",
+    "preRunupPct": "+8-15%",
+    "postWin": {
+      "avgPct": 18,
+      "range": "+10% to +30%",
+      "note": "Blue Ghost Mission 1's successful lunar landing (Mar 22, 2026) — first commercial lunar landing ever — drove Firefly +24% in 3 days. The SkyFall/Blue Ghost 2028 contract wins are smaller-dollar but reinforce the same platform-validation thesis.",
+      "exampleDate": "Mar 2026"
+    },
+    "postLose": {
+      "avgPct": -22,
+      "range": "-15% to -35%",
+      "note": "Firefly's Alpha Vehicle 2 partial failure (Oct 2022) sent the stock down roughly 25% and delayed the program about 18 months. A VICTUS HAZE Block 2 failure in Sep 2026 would likely be of similar magnitude.",
+      "exampleDate": "Oct 2022"
+    },
+    "spotSizing": {
+      "pct": 5,
+      "reason": "Two NASA contract wins in a week (Blue Ghost + SkyFall) reinforce the multi-mission platform thesis even though the stock sold off — moderate speculative sizing 4-6%, add after Needham conf/Q2 confirmation."
+    },
+    "stopPreCatalyst": {
+      "pct": -18,
+      "price": 21,
+      "note": "หลุด $21 ก่อน Needham/Q2 = แรงขายไม่ได้เป็นแค่ profit-taking แล้ว"
+    },
+    "stopPostCatalyst": {
+      "pct": -20,
+      "note": "ถ้า VICTUS HAZE Block 2 ล้มเหลว 30 ก.ย. — exit ทันที เพราะ launch execution คือ thesis ทั้งหมด"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "FLY",
+      "event": "Blue Ghost Mission 1 — First Commercial Lunar Landing",
+      "date": "Mar 2026",
+      "movePct": 24,
+      "days": 3,
+      "outcome": "good",
+      "note": "Blue Ghost Mission 1 successfully landed on the Moon on March 22, 2026 — first-ever commercial lunar landing. Stock +24% in 3 days, the template for how the market rewards a proven mission milestone."
+    },
+    {
+      "ticker": "FLY",
+      "event": "NASA $144M CLPS + $13M SkyFall contract wins",
+      "date": "Jul 2026",
+      "movePct": -8,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "Two positive NASA contract announcements in a week (Jul 2 Blue Ghost CLPS, Jul 7 SkyFall aeroshell) were both sold into — a reminder that in a risk-off tape, even genuine fundamental wins can be overwhelmed by sector-wide profit-taking."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Firefly Aerospace Receives $13 Million NASA JPL Subcontract to Build Aeroshell for SkyFall Mars Mission",
+    "url": "https://fireflyspace.com/news/firefly-aerospace-receives-13-million-nasa-jpl-subcontract-to-build-aeroshell-for-skyfall-mars-mission/",
+    "date": "Jul 2026"
+  },
+  "sources": [
+    "https://fireflyspace.com/news/firefly-aerospace-receives-13-million-nasa-jpl-subcontract-to-build-aeroshell-for-skyfall-mars-mission/",
+    "https://www.benzinga.com/trading-ideas/movers/26/07/60304373/firefly-aerospace-stock-rises-after-landing-13-million-nasa-subcontract-for-mars-mission",
+    "https://www.marketbeat.com/stocks/NASDAQ/FLY/forecast/",
+    "https://www.etfpedia.wiki/security/fly/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Firefly ได้ NASA JPL subcontract $13M (7 ก.ค.) สร้าง aeroshell สำหรับภารกิจ SkyFall ไปดาวอังคาร ต่อจาก Blue Ghost CLPS $144M (2 ก.ค.) แต่หุ้นยังร่วง 8.3% วันเดียวกัน — เป็นแรงขาย sector-wide ไม่ใช่ปัญหาเฉพาะบริษัท นักวิเคราะห์ 11 คน Moderate Buy PT เฉลี่ย $42.20 Needham conf 9 ก.ค. และ Q2 earnings (ประมาณกลาง ส.ค.) เป็น catalyst ถัดไป VICTUS HAZE 30 ก.ย. ยังเป็น binary หลัก",
+      "priceNote": "ร่วง 8.3% แม้มีข่าวดี SkyFall — แรงขาย sector-wide หุ้น space เก็งกำไร",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "NASA JPL SkyFall Mars Aeroshell $13M", "description": "7 ก.ค. — ต่อยอดจาก Blue Ghost CLPS $144M สู่ภารกิจดาวอังคาร" },
+        { "name": "Needham Space Conference", "description": "9 ก.ค. — VICTUS HAZE timeline + DoD pipeline" },
+        { "name": "Q2 2026 Earnings (ประมาณ)", "description": "~12 ส.ค. — ยังไม่ confirm วันที่แน่นอน" },
+        { "name": "VICTUS HAZE Launch", "description": "30 ก.ย. — Block 2 binary" }
+      ],
+      "risks": [
+        "หุ้นร่วง 8.3% แม้มีข่าวดี — sentiment เปราะบางในหุ้น space เก็งกำไรตอนนี้",
+        "Block 2 first-flight binary — ล้มเหลว = ถอยหลัง ~1 ปี",
+        "วันที่ Q2 earnings ยังไม่ confirm — ความเสี่ยง surprise ทั้งสองทาง",
+        "SpaceX IPO contagion — เงินอาจย้ายจาก RKLB/FLY ไป SpaceX",
+        "Cash burn pre-FCF — guide $420-450M ต้องการ execution ตรงเวลาในหลายสัญญาพร้อมกัน"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed hold 3.50-3.75%; ธุรกิจหลักเป็น NASA/DoD contract ไม่ sensitive กับดอกเบี้ยมาก แต่ cost ของการระดมทุนในอนาคตยัง exposed",
+        "inflationNote": "CPI มิ.ย. ออก 14 ก.ค. ถ้าร้อนจะกดดันหุ้นเก็งกำไร high-beta อย่าง FLY มากกว่าธุรกิจ contract จริง",
+        "sectorImpact": "Golden Dome + NATO + DARPA responsive launch เป็น tailwind ระยะยาว ไม่ sensitive กับ rate cycle",
+        "summary": "LOW — ธุรกิจ government/defense ป้องกัน rate risk ความเสี่ยงหลักคือ execution ของ Block 2 และ sentiment ของ sector เก็งกำไร"
+      },
+      "entryStrategy": {
+        "verdict": "ซื้อช่วงย่อหลังข่าวดีถูกขาย — Needham conf 9 ก.ค. และ Q2 earnings เป็น proof point ถัดไป VICTUS HAZE 30 ก.ย. ยังเป็น binary sizing 4-6% Speculative",
+        "entryLevels": [
+          { "note": "หลัง selloff + ข่าว SkyFall — Needham conf อีก 1 วัน", "timing": "ตอนนี้" },
+          { "note": "ถ้าแรงขาย sector เก็งกำไรยังต่อเนื่อง", "timing": "ถ้าย่อ" },
+          { "note": "สัญญาณ Block 2 delay หรือ capitulation ทั้ง sector", "timing": "ถ้าร่วงหนักเท่านั้น" }
+        ],
+        "tp1": { "note": "กลุ่มเป้าหมายนักวิเคราะห์ระยะใกล้" },
+        "tp2": { "note": "ค่าเฉลี่ย consensus — Q2 beat + VICTUS HAZE ตรงแผน" },
+        "tp3": { "note": "Moon — DoD cadence เต็ม + pipeline ดาวอังคาร/ดวงจันทร์แปลงเป็นจริง", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดจุดต่ำสุด 7 ก.ค. = ไม่ใช่แค่ profit-taking แล้ว",
+          "hardNote": "Block 2 ล้มเหลวหรือ Q2 guidance ถูกตัด = thesis เสียหายจริง",
+          "rrNote": "Stop แคบเทียบ TP2",
+          "rrWarning": "Speculative — sizing 4-6%; Needham conf 9 ก.ค. คือสัญญาณระยะใกล้"
+        }
+      },
+      "estimateDates": [
+        { "event": "Needham Conference", "note": "ความเห็นผู้บริหารเรื่อง VICTUS HAZE + DoD pipeline" },
+        { "event": "Q2 2026 Earnings (ประมาณ)", "note": "Q1 ทำได้ $80.9M — ดู sequential progress" }
+      ]
+    }
+  }
+}

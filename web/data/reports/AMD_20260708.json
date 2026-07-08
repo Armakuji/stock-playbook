@@ -1,0 +1,243 @@
+{
+  "ticker": "AMD",
+  "companyName": "Advanced Micro Devices, Inc.",
+  "companyDescription": "AI accelerator GPU + CPU powerhouse · MI400 HBM4 GPU H2 2026 · AMD Advancing AI event Jul 22-23 in SF · Meta 6GW Instinct deal + EPYC Venice hyperscaler ramp",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-08T15:00:00.000Z",
+  "price": 513.59,
+  "priceChange": -6.97,
+  "priceNote": "Fell 6.97% Jul 7 on a Reuters report that China's DeepSeek is developing its own AI inference chip — a sector-wide semiconductor selloff (PHLX -4.65%), not an AMD-specific setback. Comes one day after Goldman Sachs raised its PT to $640 from $450.",
+  "marketCap": "$832B",
+  "sector": "Technology / Semiconductors",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 76,
+  "summary": "AMD dropped nearly 7% on Jul 7 as a broad AI-chip selloff — triggered by a Reuters report that DeepSeek is building its own proprietary inference chip — outweighed a fresh Goldman Sachs price-target raise to $640 (from $450, Jul 5) on the agentic AI CPU thesis. Meta has committed to deploying up to 6GW of AMD Instinct GPUs and is a lead customer for 6th-gen EPYC Venice CPUs; AWS, Google Cloud, Azure and Tencent have all expanded EPYC-powered instances. AMD Advancing AI 2026 (Jul 22-23, San Francisco) — the MI400/Helios full reveal — is now 14 days out, with Q2 earnings following on Aug 4.",
+  "catalysts": [
+    {
+      "icon": "🎯",
+      "name": "AMD Advancing AI 2026 — July 22-23 SF",
+      "description": "AMD's flagship annual AI conference at Moscone Center. Lisa Su leads. MI400 full technical reveal (432GB HBM4), Helios rack-scale platform, ROCm roadmap, and hyperscaler deployment timeline — AMD's GTC moment, now more important given the post-selloff reset.",
+      "urgencyLabel": "14 DAYS",
+      "dateBadge": "Jul 22-23, 2026",
+      "catalystDate": "2026-07-22",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "⚠️",
+      "name": "DeepSeek Proprietary AI Chip Report",
+      "description": "Jul 7, 2026: Reuters reported China's DeepSeek is designing its own AI inference chip, potentially reducing dependence on third-party suppliers like AMD/NVIDIA. Triggered a sector-wide selloff; still early-stage and unconfirmed as a shipping product.",
+      "urgencyLabel": "MONITOR",
+      "dateBadge": "Jul 7, 2026",
+      "catalystDate": "2026-07-07",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "💻",
+      "name": "MI400 Production Shipments H2 2026",
+      "description": "432GB HBM4 memory per GPU, Helios rack with 72x MI455X accelerators. Production shipments expected mid-2026; Microsoft, Meta and other hyperscalers are key early adopters.",
+      "urgencyLabel": "SHIPPING",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "💰",
+      "name": "Q2 2026 Earnings",
+      "description": "Expected Aug 4, 2026. Market watches for AI GPU/data-center revenue continuation and MI350 ramp, plus any commentary responding to the DeepSeek chip headlines.",
+      "urgencyLabel": "27 DAYS",
+      "dateBadge": "Aug 4, 2026",
+      "catalystDate": "2026-08-04",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "DeepSeek reportedly developing a proprietary AI inference chip (Reuters, Jul 7) — a long-term competitive risk to third-party suppliers like AMD if it ships and gains traction, though development timelines for AI silicon are long and uncertain",
+    "Sector-wide de-rating risk: PHLX Semiconductor Index -4.65% same day, Micron -22% off its ATH — AMD's move looks more macro/sector-driven than company-specific, but that also means it can keep falling with the group",
+    "ROCm software ecosystem still 2-3 years behind NVIDIA's CUDA — limits AMD's AI training market-share ceiling",
+    "MI400 execution risk — any production delay announced at the Advancing AI event would be a sharp reversal catalyst",
+    "Consensus median PT ~$485 (29 analysts, 6-month trailing) is still below the post-selloff price — the newest bullish targets (Goldman $640, Cantor $700) haven't been matched by the broader Street yet",
+    "FOMC Jul 29 lands one week after the Advancing AI event — a second event-risk window"
+  ],
+  "estimateDates": [
+    {
+      "event": "AMD Advancing AI 2026",
+      "dateRange": "Jul 22-23, 2026",
+      "note": "MI400 full reveal + Helios rack details + hyperscaler roadmap",
+      "est": "KEY EVENT",
+      "highlight": "yellow"
+    },
+    {
+      "event": "Q2 2026 Earnings",
+      "dateRange": "Aug 4, 2026",
+      "note": "AI GPU/data-center revenue + MI350/400 ramp confirmation",
+      "est": "est. Rev $8B+",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -22, "price": 401 },
+    { "label": "Base", "color": "yellow", "pct": 20, "price": 616 },
+    { "label": "Bull", "color": "green", "pct": 30, "price": 668 },
+    { "label": "Moon", "color": "purple", "pct": 44, "price": 740 }
+  ],
+  "analystTargets": [
+    { "firm": "Cantor Fitzgerald (Jun 29)", "target": 700, "rating": "Overweight", "note": "Highest Street target" },
+    { "firm": "UBS (Jun 24)", "target": 670, "rating": "Buy", "note": "Agentic AI CPU demand surge thesis" },
+    { "firm": "Goldman Sachs (Jul 5)", "target": 640, "rating": "Buy", "note": "Raised from $450 on agentic AI CPU / EPYC Venice TAM" },
+    { "firm": "Wells Fargo (Jun 30)", "target": 615, "rating": "Overweight", "note": "Server CPU revenue model raised through 2028" },
+    { "firm": "Consensus median (29 analysts)", "target": 485, "rating": "Buy", "note": "Lagging the newest upgrades" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed on hold at 3.50-3.75%; next FOMC Jul 28-29, one week after the Advancing AI event. June CPI (Jul 14) is the next inflation checkpoint.",
+    "inflationNote": "No cuts priced for 2026. AMD's data-center products are enterprise capex — somewhat rate-sensitive, but locked-in hyperscaler AI budgets (Meta's 6GW commitment) provide a demand floor.",
+    "sectorImpact": "HIGH near-term impact from the Jul 7 sector-wide de-rating (semis led the tech selloff on DeepSeek + AI-valuation worries), but the Advancing AI event (Jul 22) is a company-specific catalyst independent of the macro calendar.",
+    "summary": "Fed risk MEDIUM — the immediate driver of the Jul 7 drop was sector sentiment (DeepSeek headlines, AI-valuation worries), not Fed policy. Advancing AI Jul 22 is the near-term re-rate trigger; FOMC Jul 29 is the risk to manage after it."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 513.59, "note": "Post-selloff — 14 days to Advancing AI event", "timing": "Now (small size)" },
+      { "label": "Entry 2", "level": 470, "rangeMax": 485, "note": "Near the 50-day MA (~$469.57) — best pre-event R/R", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 420, "note": "Deeper semi-sector selloff / DeepSeek fears escalate", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 615, "pct": 19.8, "note": "Wells Fargo target — post-Advancing AI re-rate" },
+    "tp2": { "price": 670, "pct": 30.5, "note": "UBS target — MI400 ramp confirmed at Q2 earnings" },
+    "tp3": { "price": 700, "pct": 36.3, "note": "Cantor $700 — full MI400 hyperscaler adoption", "moon": true },
+    "stopLoss": {
+      "tight": 470,
+      "tightPct": -8.5,
+      "tightNote": "Below the 50-day MA — DeepSeek fears or MI400 delay signal deepening",
+      "hard": 420,
+      "hardPct": -18.2,
+      "hardNote": "Sector-wide breakdown continues into event — AI GPU thesis under real pressure",
+      "riskReward": "2.5 : 1",
+      "rrNote": "Entry 2 (~$478) vs TP2 ($670)",
+      "rrWarning": "Event timing matters — FOMC Jul 29 lands one week after Advancing AI"
+    },
+    "verdict": "Buy the post-DeepSeek-headline dip pre-event — scale in near the 50-day MA ($470-485) for best R/R. Target $615-700 by Q3. Trim on strength around Advancing AI (Jul 22-23); hold remainder into Q2 earnings Aug 4.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "product_launch",
+    "preRunup": "AMD historically runs 8-15% in the 2-3 weeks before its major AI events. Ahead of Advancing AI 2025, the stock ran +12% over 3 weeks as buy-the-event positioning built. The current post-DeepSeek-headline pullback resets that setup at a lower starting price.",
+    "preRunupTiming": "2-3 สัปดาห์ก่อน event (ตั้งแต่ตอนนี้ถึง 22 ก.ค.)",
+    "preRunupPct": "+8-15%",
+    "postWin": {
+      "avgPct": 15,
+      "range": "+10% to +28%",
+      "note": "AMD Advancing AI 2025: MI300X full reveal + Lisa Su roadmap — stock +28% over 2 weeks. AMD's GTC-equivalent events historically show 10-25% post-event moves when the product exceeds expectations.",
+      "exampleDate": "Nov 2025"
+    },
+    "postLose": {
+      "avgPct": -12,
+      "range": "-8% to -20%",
+      "note": "AMD Q3 2024 earnings (Oct 2024): MI300X ramp slower than expected — stock -12% in 2 days. A DeepSeek chip confirmation or MI400 delay announcement would risk a similar move.",
+      "exampleDate": "Oct 2024"
+    },
+    "spotSizing": {
+      "pct": 6,
+      "reason": "Event-driven play with a clear 14-day catalyst. 6% sizing given the fresh ~7% pullback creates a better entry, but the DeepSeek headline is a real (if early-stage) long-term risk worth respecting — scale to 8-10% only after the event confirms the roadmap."
+    },
+    "stopPreCatalyst": {
+      "pct": -8,
+      "price": 472,
+      "note": "หลุด $472 ก่อน event = DeepSeek fear ลุกลามหรือ macro deterioration เพิ่ม"
+    },
+    "stopPostCatalyst": {
+      "pct": -10,
+      "note": "ถ้า event disappoints หรือ MI400 ล่าช้าเกิน 2026 — ออกหลัง event"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "AMD",
+      "event": "AMD Advancing AI 2025 — MI300X Full Reveal",
+      "date": "Nov 2025",
+      "movePct": 28,
+      "days": 14,
+      "outcome": "good",
+      "note": "Lisa Su unveiled MI300X full specs at Advancing AI 2025 — stock +28% over 2 weeks as hyperscaler adoption was confirmed. Advancing AI 2026 with MI400 is the identical setup."
+    },
+    {
+      "ticker": "NVDA",
+      "event": "GTC 2024 — Blackwell Reveal",
+      "date": "Mar 2024",
+      "movePct": 20,
+      "days": 7,
+      "outcome": "good",
+      "note": "NVIDIA's GTC Blackwell reveal drove the stock +20% in 1 week. AMD's Advancing AI is its equivalent event; MI400 with 432GB HBM4 is a significant leap that could generate similar excitement if delivered as promised."
+    },
+    {
+      "ticker": "AMD",
+      "event": "DeepSeek proprietary AI chip report — sector selloff",
+      "date": "Jul 2026",
+      "movePct": -7,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Reuters' Jul 7 report on DeepSeek's in-house inference chip triggered a same-day -6.97% drop and a -4.65% PHLX Semiconductor Index move — a reminder that AI-supplier-independence headlines can hit AMD/NVDA hard even without a confirmed shipping product."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "AMD sinks as semiconductor selloff and AI valuation worries pressure the stock",
+    "url": "https://www.fool.com/investing/2026/07/07/why-advanced-micro-devices-stock-tanked-on-tuesday/",
+    "date": "Jul 2026"
+  },
+  "sources": [
+    "https://www.fool.com/investing/2026/07/07/why-advanced-micro-devices-stock-tanked-on-tuesday/",
+    "https://ts2.tech/en/amd-nasdaqamd-stock-watch-goldman-ups-target-chip-index-faces-ai-premium-test/",
+    "https://www.aol.com/articles/goldman-sachs-resets-amd-stock-193300000.html",
+    "https://www.quiverquant.com/news/AMD+sinks+as+semiconductor+selloff+and+AI+valuation+worries+pressure+the+stock"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "AMD ร่วง 7% วันที่ 7 ก.ค. จากข่าว DeepSeek พัฒนาชิป AI ของตัวเอง — sector-wide selloff ไม่ใช่ปัญหาเฉพาะ AMD หนึ่งวันหลัง Goldman ขึ้น PT เป็น $640 จาก $450 Meta ผูกมัด 6GW Instinct GPU + EPYC Venice ที่ AWS/Google/Azure/Tencent ขยายใช้ Advancing AI 22-23 ก.ค. อีก 14 วัน Q2 earnings 4 ส.ค.",
+      "priceNote": "ร่วง 6.97% จากข่าว DeepSeek ชิป AI ของตัวเอง — sector selloff กว้าง",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "AMD Advancing AI 2026 — 22-23 ก.ค. SF", "description": "MI400 reveal เต็มรูปแบบ + Helios rack + hyperscaler roadmap" },
+        { "name": "ข่าว DeepSeek ชิป AI ของตัวเอง", "description": "7 ก.ค. — ความเสี่ยงระยะยาวต่อ third-party supplier เช่น AMD" },
+        { "name": "MI400 Production H2 2026", "description": "432GB HBM4 — Microsoft, Meta เป็น early adopter" },
+        { "name": "Q2 2026 Earnings 4 ส.ค.", "description": "Data center AI GPU revenue + MI350 ramp" }
+      ],
+      "risks": [
+        "DeepSeek พัฒนาชิป AI ของตัวเอง — ความเสี่ยงระยะยาวต่อ third-party supplier",
+        "Sector de-rating กว้าง — PHLX -4.65%, Micron -22% จาก ATH",
+        "ROCm ยังตามหลัง CUDA 2-3 ปี",
+        "MI400 delay ที่ event = risk ร้ายแรง",
+        "Consensus median PT $485 ยังต่ำกว่าราคาปัจจุบัน"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed hold 3.50-3.75%; FOMC 28-29 ก.ค. หนึ่งสัปดาห์หลัง event",
+        "inflationNote": "ไม่มี cut ปี 2026 — locked hyperscaler AI budget ป้องกัน floor",
+        "sectorImpact": "HIGH ระยะสั้นจาก sector de-rating 7 ก.ค. แต่ event 22 ก.ค. independent จาก macro",
+        "summary": "ความเสี่ยง Fed MEDIUM — แรงขาย 7 ก.ค. มาจาก sentiment ไม่ใช่ Fed policy ซื้อก่อน event จัดการ FOMC risk หลัง event"
+      },
+      "entryStrategy": {
+        "verdict": "ซื้อช่วงย่อหลังข่าว DeepSeek ก่อน event — เข้าใกล้ 50-day MA ($470-485) R/R ดีที่สุด เป้า $615-700 ขายทำกำไรช่วง Advancing AI แล้วถือส่วนที่เหลือถึง earnings 4 ส.ค.",
+        "entryLevels": [
+          { "note": "หลัง selloff — 14 วันถึง Advancing AI", "timing": "ตอนนี้ (size เล็ก)" },
+          { "note": "ใกล้ 50-day MA — R/R ดีที่สุดก่อน event", "timing": "ถ้าย่อ" },
+          { "note": "Sector selloff ลึกขึ้น / DeepSeek fear ลุกลาม", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "เป้า Wells Fargo — re-rate หลัง Advancing AI" },
+        "tp2": { "note": "เป้า UBS — MI400 ramp ยืนยันที่ earnings" },
+        "tp3": { "note": "เป้า Cantor — hyperscaler adoption เต็มรูปแบบ", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุด 50-day MA = DeepSeek fear ลุกลาม",
+          "hardNote": "Sector breakdown ต่อเนื่องเข้า event = thesis เสียหาย",
+          "rrNote": "Entry 2 เทียบ TP2",
+          "rrWarning": "จับจังหวะ event สำคัญ — FOMC 29 ก.ค. หลัง event 1 สัปดาห์"
+        }
+      },
+      "estimateDates": [
+        { "event": "AMD Advancing AI 2026", "note": "MI400 reveal + Helios rack + hyperscaler roadmap" },
+        { "event": "Q2 2026 Earnings", "note": "AI GPU revenue + MI350/400 ramp confirmation" }
+      ]
+    }
+  }
+}
