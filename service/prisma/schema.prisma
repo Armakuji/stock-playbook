@@ -114,7 +114,11 @@ model ValidationRequest {
   model        String
   inputTokens  Int?      @map("input_tokens")
   outputTokens Int?      @map("output_tokens")
+  // Real client IP (see common/client-ip.ts) — backs the IP-based rate limit
+  // that catches account-switching abuse the per-user quota alone can't.
+  ip           String?
 
+  @@index([ip, requestedAt])
   @@map("validation_requests")
 }
 

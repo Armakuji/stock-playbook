@@ -15,6 +15,16 @@ import { activeTradeWhere } from "../trades/trade-filters";
 const FREE_PLAN_ID = "free";
 const AI_VALIDATION_FEATURE_ID = "ai_validation";
 
+// IP-based rate limit — a safety net on top of the per-user quota. The
+// per-user quota alone doesn't stop someone from creating N throwaway Google
+// accounts on the same network to farm N × 3 free AI calls; this caps total
+// calls from one IP within a rolling window regardless of which account made
+// them. Configurable via env since "one IP" can mean a shared office/mobile
+// network — keep it loose enough to not false-positive on legitimate shared
+// connections while still blocking obvious account-cycling abuse.
+const DEFAULT_IP_LIMIT = 10;
+const DEFAULT_IP_WINDOW_HOURS = 24;
+
 export type TradeValidationDto = ValidationToolResult & { validatedAt: string };
 
 export interface QuotaInfo {
@@ -31,6 +41,34 @@ export class ValidationService {
     private readonly logger: PinoLogger,
     private readonly claude: ClaudeClient,
   ) {}
+
+  private ipLimit(): number {
+    const raw = Number(process.env.VALIDATE_IP_LIMIT);
+    return Number.isFinite(raw) && raw > 0 ? raw : DEFAULT_IP_LIMIT;
+  }
+
+  private ipWindowHours(): number {
+    const raw = Number(process.env.VALIDATE_IP_WINDOW_HOURS);
+    return Number.isFinite(raw) && raw > 0 ? raw : DEFAULT_IP_WINDOW_HOURS;
+  }
+
+  private async checkIpLimit(ip: string | null): Promise<void> {
+    if (!ip) return; // no proxy IP header (e.g. local dev) — nothing to key on
+    const limit = this.ipLimit();
+    const windowStart = new Date(
+      Date.now() - this.ipWindowHours() * 60 * 60 * 1000,
+    );
+    const usedByIp = await this.prisma.validationRequest.count({
+      where: { ip, requestedAt: { gte: windowStart } },
+    });
+    if (usedByIp >= limit) {
+      this.logger.warn(
+        { ip, usedByIp, limit },
+        "AI validation blocked — IP rate limit",
+      );
+      throw new ForbiddenException({ remaining: 0, reason: "ip_limit" });
+    }
+  }
 
   private async limitFor(): Promise<number> {
     const planFeature = await this.prisma.planFeature.findUnique({
@@ -54,7 +92,10 @@ export class ValidationService {
 
   async validate(
     userId: string,
+    ip: string | null = null,
   ): Promise<{ results: TradeValidationDto[]; remaining: number }> {
+    await this.checkIpLimit(ip);
+
     const limit = await this.limitFor();
     const usedBefore = await this.prisma.validationRequest.count({
       where: { userId, status: "done" },
@@ -91,6 +132,7 @@ export class ValidationService {
         status: "pending",
         tradesCount: tradesForPrompt.length,
         model: "claude-sonnet-5",
+        ip,
       },
     });
 
