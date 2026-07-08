@@ -1,0 +1,231 @@
+{
+  "ticker": "ONDS",
+  "companyName": "Ondas Inc.",
+  "companyDescription": "Autonomous defense platform · DZYNE acquired Jul 6 ($875.8M) · FY26 revenue guide raised to $525M · Needham cut PT to $19 (still Buy) on dilution concerns · Counter-UAS + ISR + kinetic effects",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-08T15:00:00.000Z",
+  "price": 7.23,
+  "priceChange": -1.6,
+  "priceNote": "Third straight down session since the DZYNE deal was announced (Jul 6: $7.82 high, down to $7.35 Jul 7, ~$7.23 Jul 8) — dilution/share-supply concerns are outweighing the raised FY26 guidance for now. Needham cut its PT to $19 from $23 (still Buy) citing the deal's equity-heavy structure.",
+  "marketCap": "$3.85B",
+  "sector": "Technology / Defense (Autonomous Systems)",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 68,
+  "summary": "Ondas closed its transformative DZYNE Technologies acquisition on Jul 6, 2026 ($875.8M cash+stock), raising FY2026 revenue guidance to at least $525M from $390M and adding a $1.5B three-year contract pipeline via the new Ondas Sentinel defense division. The stock has fallen three straight sessions since, though, as roughly 85M new shares (13.8% of pro-forma ownership to DZYNE holders) reignite the dilution/resale overhang that already weighs on the name — Needham cut its price target to $19 (from $23) on Jul 7 while keeping a Buy rating. Hedge funds have been net sellers of tech-hardware names for a fourth straight week per Goldman Sachs. Q2 earnings (est. Aug 11) is the next proof point for whether the $525M guide is credible.",
+  "catalysts": [
+    {
+      "icon": "🎯",
+      "name": "DZYNE Acquisition Closed — FY26 Guide $525M",
+      "description": "Jul 6, 2026: Ondas acquired DZYNE for $875.8M ($200M cash + ~85M shares, >50% of the stock locked up 6 months). FY2026 revenue target raised to at least $525M from $390M. DZYNE alone expected to contribute $191M in 2026 revenue.",
+      "urgencyLabel": "RECENT",
+      "dateBadge": "Jul 6, 2026",
+      "catalystDate": "2026-07-06",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "📉",
+      "name": "Needham Cuts PT to $19 (Buy Maintained)",
+      "description": "Jul 7, 2026: Needham analyst Austin Bohlig lowered his price target from $23 to $19, citing the DZYNE deal's equity-heavy structure (~85M new shares, ~13.8% of the company to DZYNE holders) as an overhang, while keeping a Buy rating and calling the strategic narrative compelling.",
+      "urgencyLabel": "NEW",
+      "dateBadge": "Jul 7, 2026",
+      "catalystDate": "2026-07-07",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "Estimated Aug 11, 2026 (unconfirmed). First report to include DZYNE/Omnisys pro-forma numbers — tests whether the $525M FY guide is credible and whether order backlog converts to booked revenue.",
+      "urgencyLabel": "~34 DAYS",
+      "dateBadge": "~Aug 11, 2026",
+      "catalystDate": "2026-08-11",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "⚠️",
+      "name": "Share Supply / Dilution Overhang",
+      "description": "~85M new DZYNE shares (13.8% of pro-forma ownership), prior insider sales, and resale registrations continue to weigh on the stock even as fundamentals improve. Short interest ~33% of float as of mid-June — two-way volatility likely.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "red",
+      "dotColor": "red"
+    }
+  ],
+  "risks": [
+    "Stock has fallen 3 straight sessions since the DZYNE announcement despite raised guidance — the market is pricing dilution ahead of the fundamentals upgrade",
+    "Needham cut its PT to $19 from $23 (Jul 7) even while maintaining Buy — a credible sell-side voice flagging the deal's equity-heavy structure as a real near-term drag",
+    "DZYNE integration risk — an $875.8M deal adds real operational complexity on top of the earlier Omnisys and Cyberhawk (pending) acquisitions",
+    "Broader tech-hardware headwind — hedge funds have been net sellers for a 4th consecutive week per Goldman Sachs, compounding stock-specific selling pressure",
+    "Q2 est. revenue (~$65-70M per Benzinga) vs. the $525M FY guide requires a massive H2 ramp — real execution risk",
+    "Short interest ~33% of float — volatile two-way trading"
+  ],
+  "estimateDates": [
+    {
+      "event": "DZYNE Integration Update",
+      "dateRange": "Q3 2026",
+      "note": "First combined operational metrics post-close",
+      "est": "DZYNE $191M 2026 contribution",
+      "highlight": "yellow"
+    },
+    {
+      "event": "Q2 2026 Earnings (est.)",
+      "dateRange": "~Aug 11, 2026",
+      "note": "Pro-forma revenue + $525M FY guide credibility test",
+      "est": "est. rev $65-70M",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -34, "price": 4.8 },
+    { "label": "Base", "color": "yellow", "pct": 80, "price": 13 },
+    { "label": "Bull", "color": "green", "pct": 163, "price": 19 },
+    { "label": "Moon", "color": "purple", "pct": 246, "price": 25 }
+  ],
+  "analystTargets": [
+    { "firm": "Needham (Jul 7, revised)", "target": 19, "rating": "Buy", "note": "Cut from $23 on dilution concerns; strategic thesis still intact" },
+    { "firm": "Consensus (prior, 9 analysts)", "target": 20.13, "rating": "Strong Buy", "note": "Pre-DZYNE-dilution-cut average; likely to compress toward Needham's revision" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds held at 3.50-3.75%; FedWatch prices a hold as the base case for the Jul 28-29 FOMC. As a pre-profit, financing-dependent small-cap that just issued ~85M new shares, Ondas is more rate- and equity-market-sensitive than a self-funding business.",
+    "inflationNote": "June CPI (Jul 14) is the next inflation checkpoint ahead of FOMC. A hot print would reinforce the Fed's hawkish lean and add further pressure to high-beta, dilution-sensitive small-caps like ONDS.",
+    "sectorImpact": "MEDIUM. Defense/homeland-security program spending is policy-driven and largely rate-insensitive, but ONDS's own equity financing, trading multiple, and the fresh DZYNE share issuance are all exposed to the broader risk-off tone in tech-hardware right now.",
+    "summary": "Fed risk MEDIUM — the FOMC decision itself is well-telegraphed as a hold. The bigger near-term risk is ONDS's own dilution/share-supply dynamics interacting with a broader tech-hardware selling wave, not the Fed calendar."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 7.23, "note": "Third down day post-DZYNE — guide raised to $525M", "timing": "Now (small size)" },
+      { "label": "Entry 2", "level": 6.3, "rangeMax": 6.8, "note": "If dilution-driven selling extends toward pre-deal support", "timing": "On pullback", "preferred": true },
+      { "label": "Entry 3", "level": 5, "note": "Guidance credibility questioned or integration stumble", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 13, "pct": 79.8, "note": "Base — Q2 confirms the $525M trajectory" },
+    "tp2": { "price": 19, "pct": 162.8, "note": "Needham's revised target — DZYNE revenue ramp visible" },
+    "tp3": { "price": 25, "pct": 245.8, "note": "Moon — NATO/DoD pipeline converts at scale", "moon": true },
+    "stopLoss": {
+      "tight": 6.3,
+      "tightPct": -12.9,
+      "tightNote": "Below the post-deal low — would suggest the selling isn't purely dilution-driven anymore",
+      "hard": 4.8,
+      "hardPct": -33.6,
+      "hardNote": "Guidance credibility fails or DZYNE integration stumbles — thesis materially impaired",
+      "riskReward": "3.0 : 1",
+      "rrNote": "Tight stop vs TP2",
+      "rrWarning": "High upside but Speculative — size 3-5%, not more, given the fresh dilution"
+    },
+    "verdict": "Buy the post-DZYNE dilution dip in small size — the $525M FY guide and $1.5B pipeline are real upgrades, but let the market digest the new share count. Q2 (~Aug 11) is the proof point; add on confirmation, not before.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Ondas has historically run hard into and after strong quarterly prints — the stock ran from roughly $7 to $13.36 in June 2026 on its Q1 beat and backlog-growth momentum. The DZYNE deal itself briefly popped the stock (+5.5% Jul 6 premarket) before dilution concerns took over.",
+    "preRunupTiming": "2-4 สัปดาห์ก่อน earnings, ตาม order-flow newsflow",
+    "preRunupPct": "+20-60%",
+    "postWin": {
+      "avgPct": 19,
+      "range": "+19% to +90%",
+      "note": "AeroVironment (AVAV), a comparable defense-drone name, jumped 19% on a strong earnings beat tied to the broader defense-spending surge (Jun 30, 2026). Ondas's own June 2026 run (~$7 to $13.36) on its Q1 beat and backlog growth is the more direct historical comp for this exact stock.",
+      "exampleDate": "Jun 2026"
+    },
+    "postLose": {
+      "avgPct": -35,
+      "range": "-25% to -45%",
+      "note": "A guidance cut or evidence that the newly-raised $525M target isn't tracking would remove the core bull thesis and likely trigger a sharp re-rate on top of the existing dilution overhang.",
+      "exampleDate": "Typical pattern for guidance-dependent small-cap defense names"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "3% — moderate-to-light speculative sizing. The DZYNE deal materially upgrades the revenue trajectory, but fresh dilution (85M new shares), a sell-side PT cut (Needham to $19), and pre-profit cash burn all argue for waiting on Q2 confirmation before sizing up further."
+    },
+    "stopPreCatalyst": {
+      "pct": -13,
+      "price": 6.3,
+      "note": "หลุด $6.30 ก่อน Q2 earnings = แรงขายไม่ได้เป็นแค่ dilution overhang แล้ว"
+    },
+    "stopPostCatalyst": {
+      "pct": -35,
+      "note": "ถ้า Q2 guidance ผิดหวังหรือ pipeline ไม่แปลงเป็น revenue จริง — exit"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "AVAV",
+      "event": "Strong Earnings Beat Amid Defense Spending Surge",
+      "date": "Jun 2026",
+      "movePct": 19,
+      "days": 1,
+      "outcome": "good",
+      "note": "Comparable defense-drone name jumped 19% same-day on an earnings beat tied to the same broader defense-spending tailwind Ondas is riding — shows the sector rewards execution proof points."
+    },
+    {
+      "ticker": "ONDS",
+      "event": "DZYNE Acquisition Announcement — Sold Into Guidance Raise",
+      "date": "Jul 2026",
+      "movePct": -9,
+      "days": 2,
+      "outcome": "mixed",
+      "note": "Despite raising FY26 revenue guidance +35% to $525M on the DZYNE deal, ONDS fell from a $7.82 post-announcement high to ~$7.23 within two sessions as ~85M new shares reignited dilution concerns — a reminder that even a genuine fundamental upgrade can be overwhelmed by supply/dilution fears in a stock with this share structure."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Ondas raises revenue forecast after DZYNE agreement, but stock supply still weighs; Needham cuts PT to $19",
+    "url": "https://ts2.tech/en/ondas-onds-raises-revenue-forecast-after-dzyne-agreement-but-stock-supply-still-weighs/",
+    "date": "Jul 2026"
+  },
+  "sources": [
+    "https://ts2.tech/en/ondas-onds-raises-revenue-forecast-after-dzyne-agreement-but-stock-supply-still-weighs/",
+    "https://www.perplexity.ai/finance/ONDS",
+    "https://ir.ondas.com/press-releases/detail/315/ondas-announces-transformative-acquisition-of-dzyne",
+    "https://robinhood.com/us/en/stocks/ONDS/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Ondas ปิดดีล DZYNE 6 ก.ค. ($875.8M) ยก FY2026 guide เป็น $525M จาก $390M เพิ่ม Ondas Sentinel division แต่หุ้นร่วง 3 วันติดจากความกังวล dilution (หุ้นใหม่ ~85M หุ้น) Needham ตัด PT เหลือ $19 จาก $23 (ยังคง Buy) Q2 earnings (~11 ส.ค.) เป็น proof point ถัดไป",
+      "priceNote": "ร่วง 3 วันติดหลังดีล DZYNE — ความกังวล dilution มากกว่า guide ที่ยกขึ้น",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "ปิดดีล DZYNE — Guide $525M", "description": "6 ก.ค. — acquire $875.8M, ยก FY guide +35%" },
+        { "name": "Needham ตัด PT เหลือ $19", "description": "7 ก.ค. — ยังคง Buy แต่กังวล dilution จากดีล" },
+        { "name": "Q2 2026 Earnings (ประมาณ)", "description": "~11 ส.ค. — pro-forma หลัง DZYNE/Omnisys" },
+        { "name": "Overhang หุ้นใหม่ / Dilution", "description": "หุ้นใหม่ ~85M กดดันราคาต่อเนื่อง" }
+      ],
+      "risks": [
+        "หุ้นร่วง 3 วันติดหลังข่าว DZYNE แม้ guide จะถูกยกขึ้น — ตลาดให้น้ำหนัก dilution มากกว่า upside",
+        "Needham ตัด PT เหลือ $19 แม้ยังคง Buy — สัญญาณจาก sell-side ที่น่าเชื่อถือ",
+        "ความเสี่ยง integration จาก DZYNE ($875.8M) ซ้อนทับ Omnisys และ Cyberhawk ที่รอปิดดีล",
+        "แรงขาย tech-hardware กว้างจาก hedge fund ต่อเนื่อง 4 สัปดาห์ตาม Goldman Sachs",
+        "Q2 ประมาณการ revenue ($65-70M) เทียบ FY guide $525M ต้องการ H2 ramp มหาศาล",
+        "Short interest ~33% ของ float — ผันผวนสองทาง"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed hold 3.50-3.75%; FedWatch คาด hold ที่ FOMC 28-29 ก.ค. ในฐานะ small-cap pre-profit ที่เพิ่งออกหุ้นใหม่ Ondas sensitive กับ equity market มากกว่าธุรกิจที่เลี้ยงตัวเองได้",
+        "inflationNote": "CPI มิ.ย. ออก 14 ก.ค. ถ้าร้อนจะกดดันหุ้น growth high-beta ที่ sensitive ต่อ dilution อย่าง ONDS เพิ่ม",
+        "sectorImpact": "ปานกลาง — งบ defense ขับเคลื่อนด้วยนโยบาย แต่การระดมทุนและหุ้นใหม่ของ ONDS เอง exposed กับบรรยากาศ risk-off ของ tech-hardware ตอนนี้",
+        "summary": "ความเสี่ยง Fed ปานกลาง — FOMC เองถูกคาดว่าจะ hold ความเสี่ยงใหญ่กว่าคือ dynamics ของ dilution/หุ้นใหม่ ONDS เอง ไม่ใช่ปฏิทิน Fed"
+      },
+      "entryStrategy": {
+        "verdict": "ซื้อช่วงย่อหลัง DZYNE ด้วย size เล็ก — guide $525M และ pipeline $1.5B เป็น upgrade จริง แต่รอตลาดย่อยหุ้นใหม่ก่อน Q2 (~11 ส.ค.) คือ proof point เพิ่มหลัง confirm เท่านั้น",
+        "entryLevels": [
+          { "note": "วันร่วงที่ 3 หลัง DZYNE — guide ถูกยกเป็น $525M", "timing": "ตอนนี้ (size เล็ก)" },
+          { "note": "ถ้าแรงขายจาก dilution ยืดไปถึงแนวรับก่อนดีล", "timing": "ถ้าย่อ" },
+          { "note": "guide ขาดความน่าเชื่อถือหรือ integration สะดุด", "timing": "ถ้าร่วงหนักเท่านั้น" }
+        ],
+        "tp1": { "note": "Base — Q2 beat ยืนยัน trajectory $525M" },
+        "tp2": { "note": "เป้าที่ Needham ปรับใหม่ — DZYNE revenue ramp ชัดเจน" },
+        "tp3": { "note": "Moon — NATO/DoD pipeline แปลงเป็นจริงเต็มสเกล", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดจุดต่ำสุดหลังดีล = แรงขายไม่ได้มาจาก dilution อย่างเดียวแล้ว",
+          "hardNote": "guide ขาดความน่าเชื่อถือหรือ integration ล้มเหลว — thesis เสียหายจริง",
+          "rrNote": "Tight stop เทียบ TP2",
+          "rrWarning": "Upside สูงแต่ยังเป็น Speculative — sizing 3-5% ไม่เกินนี้"
+        }
+      },
+      "estimateDates": [
+        { "event": "Q2 2026 Earnings (ประมาณ)", "note": "พิสูจน์ว่า pro-forma revenue แปลงตามที่ guide $525M ไหม" },
+        { "event": "DZYNE Integration Update", "note": "เปิด operational metrics ครั้งแรกหลังปิดดีล" }
+      ]
+    }
+  }
+}
