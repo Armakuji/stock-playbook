@@ -182,7 +182,7 @@ function ElementCard({ d, th, idx }: { d: ElementDef; th: boolean; idx: number }
         <span style={{ fontSize: 11, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", display: "inline-flex", alignItems: "center", gap: 6 }}>
           {!d.ghost && d.count != null && (
             <span style={{ display: "inline-flex", gap: 3 }}>
-              {Array.from({ length: d.count }).map((_, i) => (
+              {Array.from({ length: Math.min(d.count, 6) }).map((_, i) => (
                 <i key={i} style={{ width: 5, height: 5, borderRadius: "50%", background: d.c1, opacity: 0.9, display: "inline-block" }} />
               ))}
             </span>
