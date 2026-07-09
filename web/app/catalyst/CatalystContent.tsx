@@ -10,6 +10,7 @@ import { RankingChangeTable } from "../RankingChangeTable";
 import { CatalystCalendar } from "../CatalystCalendar";
 import { ThemeGroups } from "../ThemeGroups";
 import { FactorRiskPanel } from "../FactorRiskPanel";
+import { DashboardSwitcher } from "../DashboardSwitcher";
 
 const TOP_N = 10;
 
@@ -21,10 +22,14 @@ export function CatalystContent({
   ranked,
   rankChanges,
   calendarEvents,
+  dashboardCounts,
+  lastUpdated,
 }: {
   ranked: Ranked;
   rankChanges: RankChanges;
   calendarEvents: CalendarEvents;
+  dashboardCounts: { dca: number; catalyst: number; turbo: number };
+  lastUpdated: string;
 }) {
   const { lang } = useLang();
   const th = lang === "th";
@@ -62,6 +67,8 @@ export function CatalystContent({
 
   return (
     <div className="theme-air">
+      <DashboardSwitcher active="catalyst" counts={dashboardCounts} lastUpdated={lastUpdated} />
+
       {/* ── Hero header ───────────────────────────────────────── */}
       <div style={{ marginBottom: 24 }}>
         <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 4 }}>
@@ -95,7 +102,7 @@ export function CatalystContent({
         {ranked.length > 0 && (
           <div style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(110px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))",
             gap: 8, marginBottom: 20,
           }}>
             {statsItems.map(({ label, value, color }) => (
@@ -106,7 +113,7 @@ export function CatalystContent({
                 <div style={{ fontSize: 9, color: "var(--muted)", textTransform: "uppercase", letterSpacing: "1px", marginBottom: 4, fontFamily: "var(--font-mono, monospace)" }}>
                   {label}
                 </div>
-                <div style={{ fontSize: 17, fontWeight: 800, color, fontFamily: "var(--font-mono, monospace)", letterSpacing: "-0.5px" }}>
+                <div style={{ fontSize: 18, fontWeight: 800, color, fontFamily: "var(--font-mono, monospace)", letterSpacing: "-0.5px" }}>
                   {value}
                 </div>
               </div>
@@ -132,7 +139,7 @@ export function CatalystContent({
             </span>
           )}
           <span style={{ fontSize: 11, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>
-            {th ? "เรียงตาม: ความใกล้ catalyst · conviction" : "sorted: catalyst proximity · conviction"}
+            {th ? "เรียงตาม: ความใกล้ catalyst" : "sorted: catalyst proximity"}
           </span>
         </div>
       </div>
