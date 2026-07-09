@@ -1,6 +1,7 @@
 "use client";
 
 import { TurboCard } from "./TurboCard";
+import { DashboardSwitcher } from "../DashboardSwitcher";
 import { RankingChangeTable } from "../RankingChangeTable";
 import { useLang } from "@/lib/LanguageContext";
 import type { rankTurboReports } from "@/lib/speculative";
@@ -10,7 +11,17 @@ type Ranked = ReturnType<typeof rankTurboReports>;
 
 const TURBO_DISPLAY_LIMIT = 10;
 
-export function TurboContent({ ranked, rankChanges = [] }: { ranked: Ranked; rankChanges?: RankChange[] }) {
+export function TurboContent({
+  ranked,
+  rankChanges = [],
+  dashboardCounts,
+  lastUpdated,
+}: {
+  ranked: Ranked;
+  rankChanges?: RankChange[];
+  dashboardCounts: { dca: number; catalyst: number; turbo: number };
+  lastUpdated: string;
+}) {
   const { lang } = useLang();
   const th = lang === "th";
 
@@ -62,6 +73,8 @@ export function TurboContent({ ranked, rankChanges = [] }: { ranked: Ranked; ran
 
       <div style={{ position: "relative", zIndex: 1 }}>
 
+        <DashboardSwitcher active="turbo" counts={dashboardCounts} lastUpdated={lastUpdated} />
+
         {/* ── Hero header ───────────────────────────────────────────────── */}
         <div style={{ marginBottom: 24 }}>
           <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 6 }}>
@@ -103,7 +116,7 @@ export function TurboContent({ ranked, rankChanges = [] }: { ranked: Ranked; ran
           {displayed.length > 0 && (
             <div style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(110px, 1fr))",
+              gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))",
               gap: 8, marginBottom: 20,
             }}>
               {statsItems.map(({ label, value, color }) => (
@@ -120,7 +133,7 @@ export function TurboContent({ ranked, rankChanges = [] }: { ranked: Ranked; ran
                     {label}
                   </div>
                   <div style={{
-                    fontSize: 17, fontWeight: 800, color,
+                    fontSize: 18, fontWeight: 800, color,
                     fontFamily: "var(--font-mono, monospace)", letterSpacing: "-0.5px",
                   }}>
                     {value}
@@ -159,7 +172,7 @@ export function TurboContent({ ranked, rankChanges = [] }: { ranked: Ranked; ran
                 border: "1px solid #2d1010", fontWeight: 800,
                 fontFamily: "var(--font-mono, monospace)",
               }}>
-                {th ? "เรียงตาม: 🔥 upside มากสุด (bull %)" : "sorted: 🔥 most potential up (bull %)"}
+                {th ? "เรียงตาม: 🔥 upside มากสุด" : "sorted: 🔥 most upside"}
               </span>
             </div>
           )}
@@ -187,7 +200,7 @@ export function TurboContent({ ranked, rankChanges = [] }: { ranked: Ranked; ran
         ) : (
           <div style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
             gap: 16,
           }}>
             {displayed.map((r) => (
