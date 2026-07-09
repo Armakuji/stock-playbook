@@ -99,15 +99,15 @@ function ElementCard({ d, th, idx }: { d: ElementDef; th: boolean; idx: number }
         cursor: d.ghost ? "default" : "pointer",
         overflow: "hidden",
         transition: "transform .22s, box-shadow .22s, border-color .22s",
-        opacity: d.ghost ? 0.55 : 1,
+        opacity: d.ghost ? 0.5 : 1,
         animation: "cardEntrance 0.55s cubic-bezier(0.22,1,0.36,1) both",
         animationDelay: `${idx * 80}ms`,
       }}
       onMouseEnter={(e) => {
         if (d.ghost) return;
         const el = e.currentTarget as HTMLDivElement;
-        el.style.transform = "translateY(-4px)";
-        el.style.boxShadow = `0 10px 40px ${d.glow}, 0 2px 10px rgba(0,0,0,0.6)`;
+        el.style.transform = "translateY(-5px)";
+        el.style.boxShadow = `0 14px 44px ${d.glow}, 0 2px 10px rgba(0,0,0,0.6)`;
         el.style.borderColor = `${d.c1}66`;
       }}
       onMouseLeave={(e) => {
@@ -123,7 +123,7 @@ function ElementCard({ d, th, idx }: { d: ElementDef; th: boolean; idx: number }
       {/* element glow wash — top right corner */}
       {!d.ghost && (
         <div style={{
-          position: "absolute", top: -40, right: -40, width: 160, height: 160,
+          position: "absolute", top: -44, right: -44, width: 170, height: 170,
           background: `radial-gradient(circle, ${d.glow} 0%, transparent 70%)`,
           pointerEvents: "none",
         }} />
@@ -146,7 +146,7 @@ function ElementCard({ d, th, idx }: { d: ElementDef; th: boolean; idx: number }
 
       {/* feature name */}
       <div style={{
-        fontSize: 26, fontWeight: 900, letterSpacing: "-0.5px", marginBottom: 6,
+        fontSize: 25, fontWeight: 800, letterSpacing: "-0.5px", marginBottom: 6,
         fontFamily: "var(--font-display, sans-serif)",
         color: d.ghost ? "var(--muted)" : "var(--text)",
       }}>
@@ -179,7 +179,14 @@ function ElementCard({ d, th, idx }: { d: ElementDef; th: boolean; idx: number }
         display: "flex", alignItems: "center", justifyContent: "space-between",
         paddingTop: 12, borderTop: "1px solid var(--border)",
       }}>
-        <span style={{ fontSize: 11, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>
+        <span style={{ fontSize: 11, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", display: "inline-flex", alignItems: "center", gap: 6 }}>
+          {!d.ghost && d.count != null && (
+            <span style={{ display: "inline-flex", gap: 3 }}>
+              {Array.from({ length: d.count }).map((_, i) => (
+                <i key={i} style={{ width: 5, height: 5, borderRadius: "50%", background: d.c1, opacity: 0.9, display: "inline-block" }} />
+              ))}
+            </span>
+          )}
           {d.ghost
             ? (th ? "วางแผนไว้" : "planned")
             : d.count != null
@@ -317,7 +324,7 @@ export function Landing({
       {/* ── Element grid ─────────────────────────────────────────────── */}
       <div style={{
         display: "grid",
-        gridTemplateColumns: "repeat(auto-fit, minmax(230px, 1fr))",
+        gridTemplateColumns: "repeat(auto-fit, minmax(232px, 1fr))",
         gap: 16, marginBottom: 28,
       }}>
         {elements.map((d, idx) => <ElementCard key={d.element} d={d} th={th} idx={idx} />)}
