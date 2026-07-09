@@ -24,6 +24,16 @@ duplicated across all three `.dc.html` files.
   pill (green "ENTRY NOW" vs blue "Entry {label}"), chevron-toggled drawer containing
   summary + entry callout + Event Risk Calendar table + IF/THEN decision tree + Macro
   Snapshot grid.
+- `web/app/layout.tsx:128-134` — **the top accent bar already exists** and already matches
+  the spec exactly: same 5-stop gradient, `backgroundSize: "300% 100%"`, `gradientShift`
+  keyframe (defined in `globals.css:44-47`) animating over 8s linear infinite. It renders
+  as a sibling before `<Header>`, not inside it, matching the prototype's
+  `<div class="accentbar"></div><header class="hdr">` structure. **No change needed here.**
+- `web/app/globals.css:299-359` — a pre-staged "Stock Playbook — restyle additions" block
+  (theme tokens, `.radar-card`, `.radar-ring`, `.radar-pills`/`.radar-pill`, `.radar-title`,
+  `.radar-rings`/`.radar-hero-icon`) already exists but is **not yet consumed by any
+  component**. This is scaffolding for Phase 2 (Landing) and Phase 3 (Dashboard), not
+  Phase 1 — noted here for continuity, no action in this phase.
 
 So this phase is a **visual retune of working components**, not a rebuild.
 
@@ -47,34 +57,29 @@ So this phase is a **visual retune of working components**, not a rebuild.
 
 ### `web/app/Header.tsx`
 
-1. **New top accent bar**: a `<div>` rendered immediately before `<header>` (or as the
-   first child, `position: relative` isn't required — it's a normal block strip), 3px
-   tall, full width, `background: linear-gradient(90deg,#10b981,#3b82f6,#8b5cf6,#f59e0b,#10b981)`,
-   `background-size: 300% 100%`, animating `background-position` 0%→300% over 8s linear
-   infinite (`gradShift` keyframe). Respect `prefers-reduced-motion: reduce` (freeze).
-2. **Header container**: change from static `backgroundColor: var(--card)` to
+1. **Header container**: change from static `backgroundColor: var(--card)` to
    `position: sticky; top: 0; z-index: 30; background: rgba(12,12,20,.72); backdrop-filter: blur(12px)`
    (add `-webkit-backdrop-filter` too for Safari). Keep existing `borderBottom`.
-3. **Nav pill group**: `border-radius: 11px`, `padding: 4px`, background `#0a0a12`
+2. **Nav pill group**: `border-radius: 11px`, `padding: 4px`, background `#0a0a12`
    (currently `var(--card)`/radius 10/padding 3). Add a hover rule via the existing
    `<style>` block: `.srw-pill:hover { background: rgba(255,255,255,.04) !important }` —
    requires giving each pill link a `className="srw-pill"` alongside its inline style
    (inline styles can't express `:hover`).
-4. **Tool links** (`Backtest`, `Journal`): add hover brighten (`color` transitions to
+3. **Tool links** (`Backtest`, `Journal`): add hover brighten (`color` transitions to
    `var(--text)` on hover, Journal link stays amber but brightens) via a shared
    `.srw-tool:hover` CSS rule.
-5. **Avatar**: resize 32→30px; when falling back to initials (no photo / image error),
+4. **Avatar**: resize 32→30px; when falling back to initials (no photo / image error),
    background becomes `linear-gradient(135deg,#3b82f6,#8b5cf6)` instead of solid `#3b82f6`.
    The photo-avatar path (`<img>`) is unchanged — the prototype only models the
    initials case, but showing the user's real Google photo when available is strictly
    better UX and stays.
-6. **Login button**: `padding: 7px 16px`, `border-radius: 9px` (currently `5px 12px`/`7px`).
+5. **Login button**: `padding: 7px 16px`, `border-radius: 9px` (currently `5px 12px`/`7px`).
    Add hover lift (`translateY(-1px)` + shadow) consistent with other interactive
    elements' hover treatment.
-7. **Breakpoint**: `720px` → `760px` in the existing `.srw-desktop`/`.srw-burger` media
+6. **Breakpoint**: `720px` → `760px` in the existing `.srw-desktop`/`.srw-burger` media
    query. Mobile drawer keeps its current structure/content; only recolor to match new
    tokens (`#0a0a12` surfaces, updated border colors) where it visibly diverges.
-8. **LangToggle**: no functional change; already matches spec tokens exactly (`#3b82f6`
+7. **LangToggle**: no functional change; already matches spec tokens exactly (`#3b82f6`
    active pill).
 
 ### `web/app/MarketTicker.tsx`
@@ -107,12 +112,12 @@ So this phase is a **visual retune of working components**, not a rebuild.
 
 ## Testing
 
-- Manual: run dev server, verify accent bar animates, header sticks + blurs on scroll,
-  ticker bar recolors correctly for each verdict value (spot-check by temporarily editing
-  local `market-timing.json` fixture if available, or reasoning from code), drawer expands/
-  collapses, mobile hamburger still opens/closes and links work at <760px, hover states
-  fire on pills/links/buttons/avatar/login button, `prefers-reduced-motion` freezes the
-  accent bar and spark animations.
+- Manual: run dev server, verify header sticks + blurs on scroll (accent bar above it
+  already works, unaffected by this phase), ticker bar recolors correctly for each verdict
+  value (spot-check by temporarily editing local `market-timing.json` fixture if available,
+  or reasoning from code), drawer expands/collapses, mobile hamburger still opens/closes
+  and links work at <760px, hover states fire on pills/links/buttons/avatar/login button,
+  `prefers-reduced-motion` freezes the spark animation.
 - No automated test suite currently covers these components (visual/presentational); no
   new tests planned for this phase beyond manual verification via the `run`/`verify`
   workflow already used in this project.
