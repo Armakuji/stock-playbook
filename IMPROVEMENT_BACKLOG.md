@@ -148,18 +148,17 @@ Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open N
 **ไฟล์:** `web/app/Header.tsx` (AuthWidget: avatar/dropdown/login, desktop+mobile) · `web/lib/auth-client.ts` (ใหม่ — fetchCurrentUser/logout/loginUrl ใช้ร่วมกับ JournalContent) · `web/app/journal/JournalContent.tsx` (ลบ badge + ปุ่ม logout เดิม + apiLogout) · `service/src/auth/auth.controller.ts` (returnTo cookie flow, avatarUrl ใน /me) · `service/src/auth/safe-return-path.ts` (ใหม่) · `service/src/auth/auth.service.ts` (backfillProfile)
 **เป้า:** เปิดหน้าไหนก็รู้สถานะ login ✓ · logout อยู่ใต้ avatar dropdown ตาม convention ปกติ ✓ · ไม่มีร่องรอย "local only" เหลือ ✓ · login จากหน้าไหนก็กลับมาหน้านั้น ✓ · tests: 29/29 service unit tests ผ่าน (รวม 3 test ใหม่สำหรับ backfill + 6 test ใหม่สำหรับ safe-return-path) · tsc --noEmit ผ่านทั้ง service/web
 
-## 18. Playbook theme refresh — visual identity ยังเป็น radar อยู่ ⭐ ทำก่อนตัวอื่น
+## 18. ✅ DONE — Playbook theme refresh — visual identity ยังเป็น radar อยู่
 
-> **Priority note (2026-07-06):** เว็บติด Google อันดับ 1 แล้วแต่ favicon ยังไม่ขึ้น (Google
-> crawl favicon ตามหลัง 2–7 วัน) — ถ้าทำ #18 ให้เสร็จก่อน Google cache ตัว ⬡ เก่า
-> จะได้ icon ใหม่ของ Stock Playbook ขึ้นในผล search เลย ไม่ต้องรอ re-cache อีกรอบ
-> (cache favicon ของ Google อัปเดตช้ามาก) · ลำดับคุ้มสุด: **#18 → #19 (sitemap+JSON-LD)**
-> แล้วรอ Google เก็บภาพชุดใหม่ทีเดียว · สถานะ: รอ usage limit reset (พฤ.) แล้วเริ่ม
-
-**ปัญหา:** rebrand ชื่อเป็น StockPlaybook แล้ว (#15 ✅) แต่ visual ยังเป็น radar-era ทั้งหมด: logo ⬡, favicon/icon.svg, จุด pulse, dot grid background, social-preview.png (ไฟล์เสียด้วย — ไบต์เกินก่อน PNG signature) — แบรนด์กับหน้าตาไม่ตรงกัน
-**ทำ:** 2 เฟส — (1) รัน prompt ใน `docs/design/theme-refresh-prompt.md` กับ Claude Design (แนบ screenshot landing/catalyst/report/journal) → ได้ `docs/design/playbook-theme-handoff.md` (2) ส่ง handoff ให้ Claude CLI implement ทีละ section (มี prompt ต่อให้ CLI ในไฟล์เดียวกัน) · ห้าม rename component radar-era (MarketTicker ฯลฯ) ในรอบนี้ — แยก housekeeping ทีหลัง · **wordmark:** display copy คือ **"Stock Playbook"** สองคำ (มี space — เปลี่ยนจาก "StockPlaybook" ตัวติดกันเดิม 2026-07-06) ใน `web/app/Header.tsx` / `web/app/Landing.tsx` / `layout.tsx` title แล้ว — ให้ Claude Design ออกแบบโลโก้/OG image ตรงกับ wordmark สองคำนี้ (ส่วน domain `stockplaybook.app`, repo `stock-playbook`, User-Agent `stockplaybook/1.0` ยังคงเป็นตัวติดกันเหมือนเดิม — เป็น identifier ไม่ใช่ display copy)
-**ไฟล์:** `docs/design/theme-refresh-prompt.md` (prompt พร้อมใช้) · เป้าหมายแก้: `web/app/globals.css` (tokens), `web/app/icon.svg` + favicon, `web/app/Header.tsx`, `web/app/Landing.tsx`, `assets/social-preview.png` (gen ใหม่), layout OG metadata
-**เป้า:** identity "playbook" ครบทุกจุด (logo/motif/OG) · dark theme + สี verdict + ธีม 4 ธาตุคงเดิม · mobile 390px + EN/TH ไม่พัง
+**ปัญหา:** rebrand ชื่อเป็น StockPlaybook แล้ว (#15 ✅) แต่ visual ยังเป็น radar-era ทั้งหมด — แบรนด์กับหน้าตาไม่ตรงกัน
+**ทำ:** implement ทีละ phase จาก `design_handoff_stock_playbook/` (design handoff ที่ได้จาก Claude Design ตามแผนเดิม) ผ่าน superpowers spec→plan→subagent-driven-development, 4 phase:
+  1. **Header + Ticker** — sticky/glass header, retuned nav pills/avatar/login button, dynamic verdict/entry ticker colors (`docs/superpowers/specs/2026-07-09-header-ticker-restyle-design.md`)
+  2. **Landing page** — removed superseded radar-rings hero centerpiece (explicitly rejected in an earlier design pass) → ambient glow only, fixed "on one radar"→"in one playbook" copy bug, pip-dot pick counters (`docs/superpowers/specs/2026-07-09-landing-restyle-design.md`)
+  3. **Dashboard** — new shared `DashboardSwitcher` component (DCA↔Catalyst↔Turbo cross-route pills, previously missing entirely), stats/tier/grid value tuning across all 3 routes (`docs/superpowers/specs/2026-07-09-dashboard-restyle-design.md`)
+  4. **Journal login gate** — full rewrite: ambient bg, pulsing icon ring, gradient title, gradient/shine-sweep CTA, trust pips, feature-card accents, **and added full EN/TH i18n** (this page had zero Thai support before, unlike every other page in the app) (`docs/superpowers/specs/2026-07-09-journal-gate-restyle-design.md`)
+  Radar-era component names (`MarketTicker`, `RadarBadge`, etc.) kept as-is per constraint — not renamed. Logo/favicon (`icon.svg`) also kept unchanged — the final approved design handoff explicitly narrowed the original broader ask ("do not restyle it, this mark is unchanged from the original build").
+**ไฟล์:** `web/app/Header.tsx`, `MarketTicker.tsx`, `Landing.tsx`, `DashboardSwitcher.tsx` (new), `dca/`+`catalyst/`+`turbo/` page+Content files, `ThemeGroups.tsx`, `StockCard.tsx`, `journal/LoginGate.tsx` · specs/plans in `docs/superpowers/specs/` + `docs/superpowers/plans/` (4× each, dated 2026-07-09)
+**เป้า:** identity "playbook" ครบทุกจุด ✅ · dark theme + สี verdict + ธีม 4 ธาตุคงเดิม ✅ · ทุก phase ผ่าน task-level review + final whole-branch review (opus) — bugs ที่เจอระหว่างทางแก้หมดแล้ว (nav-pill hover ที่ทำ gradient text หาย, pip-dot overflow ที่ real pick count 10/20/21 เกิน mockup demo data 6/4/3, tools-row hover ที่ขาด `!important`) · **ยังไม่ทำ** (logged เป็น backlog แยก): #23 DcaCard/TurboCard chip/gauge/bar pixel-tuning ละเอียด
 
 ## 19. Improve SEO — search Google แล้วหาเว็บไม่เจอ
 
