@@ -337,21 +337,28 @@ export function Landing({
         <span style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", letterSpacing: "1px", textTransform: "uppercase" }}>
           {th ? "เครื่องมือ" : "Tools"}
         </span>
-        <Link href="/backtest" style={{
+        <Link href="/backtest" className="srw-tbtn" style={{
           fontSize: 12, textDecoration: "none", padding: "7px 14px", borderRadius: 9,
           background: "var(--card)", border: "1px solid var(--border)", color: "var(--muted)",
           fontFamily: "var(--font-mono, monospace)", fontWeight: 700,
+          display: "inline-block", transition: "border-color 0.16s, color 0.16s, transform 0.16s",
         }}>
           📊 Backtest
         </Link>
-        <Link href="/journal" style={{
+        <Link href="/journal" className="srw-tbtn srw-tbtn-journal" style={{
           fontSize: 12, textDecoration: "none", padding: "7px 14px", borderRadius: 9,
           background: "var(--card)", border: "1px solid var(--border)", color: "#f59e0b",
           fontFamily: "var(--font-mono, monospace)", fontWeight: 700,
+          display: "inline-block", transition: "border-color 0.16s, color 0.16s, transform 0.16s",
         }}>
           📒 Journal
         </Link>
       </div>
+
+      <style>{`
+        .srw-tbtn:hover { border-color: var(--border-bright); color: var(--text); transform: translateY(-1px); }
+        .srw-tbtn.srw-tbtn-journal:hover { color: #fbbf24; }
+      `}</style>
 
     </div>
   );
