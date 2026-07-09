@@ -382,7 +382,7 @@ export function Header({ lastUpdated }: { lastUpdated: string }) {
           .srw-logo    { font-size: 16px; }
         }
 
-        .srw-pill:hover { background: rgba(255,255,255,0.04) !important; }
+        .srw-pill:hover { filter: brightness(1.15); }
         .srw-tool { transition: color 0.15s; }
         .srw-tool:hover { color: var(--text) !important; }
         .srw-tool-journal:hover { color: #fbbf24 !important; }
