@@ -197,6 +197,21 @@ Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open N
 **ไฟล์:** `service/prisma/schema.prisma` (+deleted_at, migration `20260706104508_soft_delete_trades`) · `service/src/trades/trade-filters.ts` (ใหม่ — `activeTradeWhere()` centralized filter) · `service/src/trades/trades.service.ts` (`findOne` → `findFirst` + filter, `remove` → `update({deletedAt})` แทน `delete`) · `service/src/validation/validation.service.ts` (open-trades query ใช้ `activeTradeWhere` เดียวกัน) · tests ใน `trades.service.spec.ts` + `validation.service.spec.ts` (ลบแล้ว list ไม่เห็น/get 404/ลบซ้ำ→404/ไม่ hard-delete/ไม่ถูกส่งเข้า AI validate) · `docs/architecture/journal-api.md` schema section
 **เป้า:** user กดลบ → หายจาก UI ทุกจุดเหมือนเดิม แต่ row ยังอยู่ใน DB พร้อม `deleted_at` · ไม่มี endpoint ไหน leak trade ที่ลบแล้ว ✅ · `trade_exits` ไม่มี endpoint ลบแยก จึงไม่ต้องเพิ่ม `deleted_at` ที่นั่นรอบนี้ (ตามเงื่อนไข "ถ้ามี endpoint ลบ exit แยก") · web ไม่ต้องแก้ (behavior เดิม) · 60/60 service tests ผ่าน, tsc/eslint สะอาด
 
+## 23. Dashboard card pixel-tuning — DcaCard/TurboCard gauge/chip/bar vs. mockup
+
+**ปัญหา:** ระหว่างทำ #18 (Phase 3 — dashboard switcher/card restyle), พบว่า `DcaCard.tsx`
+และ `TurboCard.tsx` ใช้ `radar-card`/`radar-ring`/`radar-mk` ถูกต้องอยู่แล้ว (ไม่ต้องแก้
+โครงสร้าง) แต่รายละเอียดปลีกย่อยของ chip grid (`.chip2`), valuation gauge (`.gauge`/
+`.gbar`/`.gz1-3`), 3-up chip row (`.tchips`), price→moon bar (`.moon`/`.mbar`/`.mtick`)
+ยังเป็น inline-style ที่ประมาณค่าจาก mockup ไม่ตรง pixel — `globals.css` ยังไม่มี CSS
+class เหล่านี้ pre-stage ไว้เลย (มีแค่ `.radar-card`/`.radar-ring`/`.radar-mk`)
+**ทำ:** เทียบค่า inline-style ปัจจุบันกับ `Stock Playbook Dashboard.dc.html` ทีละ chip/
+gauge/bar แล้วเพิ่ม CSS class ใหม่ใน `globals.css` (`.chips`/`.chip2`/`.gauge`/`.gbar`/
+`.gz1-3`/`.tchips`/`.moon`/`.mbar`/`.mtick`) หรือปรับ inline values ให้ตรง — เลือกวิธีไหน
+ก็ได้ที่คงรูปแบบเดิมของไฟล์ (DcaCard/TurboCard ผสม global class + inline อยู่แล้ว)
+**ไฟล์:** `web/app/dca/DcaCard.tsx`, `web/app/turbo/TurboCard.tsx`, `web/app/globals.css`
+**เป้า:** gauge/chip/bar สีและขนาดตรงกับ `design_handoff_stock_playbook/Stock Playbook Dashboard.dc.html` แบบ pixel-level — ไม่กระทบ radar-card/radar-ring ที่ถูกต้องอยู่แล้ว
+
 ---
 
 ## ยังไม่เลือกทำ (ไว้พิจารณาทีหลัง)
