@@ -356,8 +356,8 @@ export function Landing({
       </div>
 
       <style>{`
-        .srw-tbtn:hover { border-color: var(--border-bright); color: var(--text); transform: translateY(-1px); }
-        .srw-tbtn.srw-tbtn-journal:hover { color: #fbbf24; }
+        .srw-tbtn:hover { border-color: var(--border-bright) !important; color: var(--text) !important; transform: translateY(-1px); }
+        .srw-tbtn.srw-tbtn-journal:hover { color: #fbbf24 !important; }
       `}</style>
 
     </div>
