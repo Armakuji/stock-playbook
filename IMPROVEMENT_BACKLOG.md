@@ -148,7 +148,13 @@ Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open N
 **ไฟล์:** `web/app/Header.tsx` (AuthWidget: avatar/dropdown/login, desktop+mobile) · `web/lib/auth-client.ts` (ใหม่ — fetchCurrentUser/logout/loginUrl ใช้ร่วมกับ JournalContent) · `web/app/journal/JournalContent.tsx` (ลบ badge + ปุ่ม logout เดิม + apiLogout) · `service/src/auth/auth.controller.ts` (returnTo cookie flow, avatarUrl ใน /me) · `service/src/auth/safe-return-path.ts` (ใหม่) · `service/src/auth/auth.service.ts` (backfillProfile)
 **เป้า:** เปิดหน้าไหนก็รู้สถานะ login ✓ · logout อยู่ใต้ avatar dropdown ตาม convention ปกติ ✓ · ไม่มีร่องรอย "local only" เหลือ ✓ · login จากหน้าไหนก็กลับมาหน้านั้น ✓ · tests: 29/29 service unit tests ผ่าน (รวม 3 test ใหม่สำหรับ backfill + 6 test ใหม่สำหรับ safe-return-path) · tsc --noEmit ผ่านทั้ง service/web
 
-## 18. Playbook theme refresh — visual identity ยังเป็น radar อยู่
+## 18. Playbook theme refresh — visual identity ยังเป็น radar อยู่ ⭐ ทำก่อนตัวอื่น
+
+> **Priority note (2026-07-06):** เว็บติด Google อันดับ 1 แล้วแต่ favicon ยังไม่ขึ้น (Google
+> crawl favicon ตามหลัง 2–7 วัน) — ถ้าทำ #18 ให้เสร็จก่อน Google cache ตัว ⬡ เก่า
+> จะได้ icon ใหม่ของ Stock Playbook ขึ้นในผล search เลย ไม่ต้องรอ re-cache อีกรอบ
+> (cache favicon ของ Google อัปเดตช้ามาก) · ลำดับคุ้มสุด: **#18 → #19 (sitemap+JSON-LD)**
+> แล้วรอ Google เก็บภาพชุดใหม่ทีเดียว · สถานะ: รอ usage limit reset (พฤ.) แล้วเริ่ม
 
 **ปัญหา:** rebrand ชื่อเป็น StockPlaybook แล้ว (#15 ✅) แต่ visual ยังเป็น radar-era ทั้งหมด: logo ⬡, favicon/icon.svg, จุด pulse, dot grid background, social-preview.png (ไฟล์เสียด้วย — ไบต์เกินก่อน PNG signature) — แบรนด์กับหน้าตาไม่ตรงกัน
 **ทำ:** 2 เฟส — (1) รัน prompt ใน `docs/design/theme-refresh-prompt.md` กับ Claude Design (แนบ screenshot landing/catalyst/report/journal) → ได้ `docs/design/playbook-theme-handoff.md` (2) ส่ง handoff ให้ Claude CLI implement ทีละ section (มี prompt ต่อให้ CLI ในไฟล์เดียวกัน) · ห้าม rename component radar-era (MarketTicker ฯลฯ) ในรอบนี้ — แยก housekeeping ทีหลัง · **wordmark:** display copy คือ **"Stock Playbook"** สองคำ (มี space — เปลี่ยนจาก "StockPlaybook" ตัวติดกันเดิม 2026-07-06) ใน `web/app/Header.tsx` / `web/app/Landing.tsx` / `layout.tsx` title แล้ว — ให้ Claude Design ออกแบบโลโก้/OG image ตรงกับ wordmark สองคำนี้ (ส่วน domain `stockplaybook.app`, repo `stock-playbook`, User-Agent `stockplaybook/1.0` ยังคงเป็นตัวติดกันเหมือนเดิม — เป็น identifier ไม่ใช่ display copy)
