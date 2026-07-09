@@ -72,7 +72,7 @@ function initials(user: CurrentUser): string {
   return (user.name?.trim()?.[0] ?? user.email[0]).toUpperCase();
 }
 
-const AVATAR_SIZE = 32;
+const AVATAR_SIZE = 30;
 
 function Avatar({ user, size, showImg, onError }: { user: CurrentUser; size: number; showImg: boolean; onError: () => void }) {
   return showImg ? (
@@ -88,7 +88,8 @@ function Avatar({ user, size, showImg, onError }: { user: CurrentUser; size: num
     />
   ) : (
     <span style={{
-      width: size, height: size, borderRadius: "50%", display: "flex", background: "#3b82f6", color: "#fff",
+      width: size, height: size, borderRadius: "50%", display: "flex",
+      background: "linear-gradient(135deg, #3b82f6, #8b5cf6)", color: "#fff",
       alignItems: "center", justifyContent: "center", fontSize: Math.round(size * 0.4), fontWeight: 800, flexShrink: 0,
     }}>
       {initials(user)}
@@ -173,10 +174,12 @@ function AuthWidget({ user, th, pathname }: { user: AuthState; th: boolean; path
       // anyway — skip the failed attempt and navigate directly.
       <a
         href={loginUrl(pathname)}
+        className="srw-loginbtn"
         style={{
-          fontSize: 11, fontWeight: 800, padding: "5px 12px", borderRadius: 7,
+          fontSize: 12, fontWeight: 800, padding: "7px 16px", borderRadius: 9,
           background: "#10b981", color: "#fff", textDecoration: "none",
           fontFamily: "var(--font-mono, monospace)", letterSpacing: "0.3px", whiteSpace: "nowrap",
+          display: "inline-block", transition: "transform 0.15s, box-shadow 0.15s",
         }}
       >
         {th ? "เข้าสู่ระบบ" : "Login"}
@@ -302,7 +305,7 @@ export function Header({ lastUpdated }: { lastUpdated: string }) {
           aria-expanded={open}
           onClick={() => setOpen((o) => !o)}
           style={{
-            background: "var(--card)", border: "1px solid var(--border)", borderRadius: 9,
+            background: "#0a0a12", border: "1px solid var(--border)", borderRadius: 9,
             width: 38, height: 34, cursor: "pointer", padding: 0,
             alignItems: "center", justifyContent: "center", color: "var(--text)",
           }}
@@ -383,6 +386,7 @@ export function Header({ lastUpdated }: { lastUpdated: string }) {
         .srw-tool { transition: color 0.15s; }
         .srw-tool:hover { color: var(--text) !important; }
         .srw-tool-journal:hover { color: #fbbf24 !important; }
+        .srw-loginbtn:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(16,185,129,0.35); }
 
         /* Journal nav — a tiny spinning spark next to the plain text link
            hints there's an AI feature behind it, without a heavy filled
