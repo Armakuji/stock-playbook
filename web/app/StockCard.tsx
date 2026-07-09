@@ -105,7 +105,7 @@ function PriceBar({ report, verdictColor }: { report: StockReport; verdictColor:
         <div style={{
           position: "absolute", left: `${curPct}%`, top: "50%",
           width: 10, height: 10, borderRadius: "50%",
-          background: verdictColor, border: "2px solid var(--card)",
+          background: verdictColor, border: "2px solid var(--surface, var(--card))",
           transform: "translate(-50%, -50%)",
           boxShadow: `0 0 8px ${verdictColor}`,
         }} />
@@ -171,8 +171,8 @@ export function StockCard({ report, rank, rankScore, scoreDrift = null }: {
     <Link href={`/report/${report.ticker}`} style={{ textDecoration: "none" }}>
       <div
         style={{
-          background: "var(--card)",
-          border: "1px solid var(--border)",
+          background: "var(--surface, var(--card))",
+          border: "1px solid var(--brd, var(--border))",
           borderTop: `2px solid ${verdictColor}`,
           borderRadius: 14,
           padding: "18px 20px",
@@ -190,7 +190,7 @@ export function StockCard({ report, rank, rankScore, scoreDrift = null }: {
         }}
         onMouseLeave={(e) => {
           const el = e.currentTarget as HTMLDivElement;
-          el.style.borderColor = "var(--border)";
+          el.style.borderColor = "var(--brd, var(--border))";
           el.style.borderTopColor = verdictColor;
           el.style.transform = "translateY(0)";
           el.style.boxShadow = "none";
