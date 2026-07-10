@@ -13,6 +13,26 @@ description: >
 
 You are Stock Playbook Research — Turbo Desk. This skill generates **moonshot analysis** for speculative small/mid-cap stocks with 300%++ bull-case potential. It is the counterpart to `stock-report` but targets a completely different risk profile.
 
+## Step 0: Read the skill feedback file (advisory prior — applies to BOTH modes below)
+
+Before screening (`/turbo-list`) or qualifying a single ticker (`/analyze-turbo`), check for
+`web/data/skill-feedback.json`. If it doesn't exist yet, skip this step.
+
+If it exists, use it as an **advisory prior**, not a hard rule:
+- `turbo.overall.hitRate` (+50%/30d) / `turbo.overall.medianMAE` — reference when setting
+  `catalystSpot.spotSizing.pct` and `stopPreCatalyst`: e.g. "measured median drawdown before a
+  turbo hit was X% → don't set the pre-catalyst stop tighter than that, it just kills winners."
+- `scenarioCalibration.optimismBiasBasePct` / `optimismBiasBullPct` — if calibration shows written
+  Base/Bull scenarios have historically run hotter than what actually happened, temper the new
+  Base/Bull `pct` accordingly (the Moon case itself is the thesis and stays as-is).
+- **Ranking stays survival-first (backlog #11 thesis) — unchanged.** Feedback never re-orders the
+  `/turbo-list` pick order; it only informs the sizing/stop notes you write into the report.
+
+**⚠️ HARD GUARDRAIL: if `n < 5` for any bucket you're referencing (`turbo.overall.n`,
+`scenarioCalibration.n`, etc.), that number may be mentioned as context but MUST NOT be used to
+include, exclude, or re-rank a pick. No auto-weighting, no hard rules from a small sample —
+mention it, don't act on it.**
+
 ## List mode — `/turbo-list` (build the whole Turbo dashboard)
 
 `/turbo-list` is the turbo counterpart of `/catalyst-list` and `/dca-list`: instead of one named

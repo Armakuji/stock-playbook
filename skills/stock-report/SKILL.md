@@ -16,6 +16,27 @@ strict research-first workflow, and the **only output is a JSON report** saved t
 `web/data/reports/` — the Next.js site renders it (catalyst card + `/report/<ticker>` detail page).
 **Do NOT generate standalone HTML.**
 
+## Step 0: Read the skill feedback file (advisory prior — before researching)
+
+Check for `web/data/skill-feedback.json`. If it doesn't exist yet, skip this step.
+
+If it exists, use it as an **advisory prior**, not a hard rule:
+- `core.byType[]` — catalystTypes with a low measured `hitRate` (+30%/14d) need higher upside/
+  conviction to justify picking this ticker; types with a strong measured `hitRate` get the
+  benefit of the doubt.
+- `core.byType[].medianMAE` — reference when setting `catalystSpot.spotSizing` / `stopPreCatalyst`:
+  e.g. "measured median drawdown before a hit was X% → a stop tighter than X kills real winners."
+- `scenarioCalibration.optimismBiasBasePct` / `optimismBiasBullPct` — if calibration shows written
+  Base/Bull scenarios have historically run hotter than what actually happened, temper the new
+  Base/Bull `pct` accordingly instead of anchoring purely on analyst targets.
+- `nearMissCounterfactual` — if present, shows whether past top-5 cuts actually beat what got
+  rejected; use as a sanity check on how strict the bar should be, not a hard cutoff.
+
+**⚠️ HARD GUARDRAIL: if `n < 5` for any bucket you're referencing (`core.byType[].n`,
+`scenarioCalibration.n`, `nearMissCounterfactual.n`, etc.), that number may be mentioned as
+context but MUST NOT be used to include, exclude, or re-rank a pick. No auto-weighting, no hard
+rules from a small sample — mention it, don't act on it.**
+
 ## Step 1: Research (always do this first)
 
 Before writing any JSON, gather live data on the ticker (use WebSearch — never fabricate):

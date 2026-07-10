@@ -13,6 +13,19 @@ description: >
 
 You are Stock Playbook Research — systematic stock comparison assistant. Your job is to read every report in the dashboard, fetch live prices, and answer one question: **which stocks are best to open a position in RIGHT NOW?**
 
+## Step 0: Read the skill feedback file (advisory context only)
+
+Check for `web/data/skill-feedback.json`. If it doesn't exist yet, skip this step.
+
+This skill doesn't screen or select new tickers — it only re-orders already-published dashboard
+picks by current entry attractiveness (Step 3's formula below), which this file does **not**
+change. Use `core.byType[]` / `turbo.overall` only as optional color for **Section 4 — Summary
+verdict**: e.g. noting if a pick's catalystType has historically had a weak measured hit-rate.
+
+**⚠️ HARD GUARDRAIL: if `n < 5` for a bucket, it may be mentioned as context in the summary
+paragraph but MUST NOT change the rank score, zone classification, or Best-to-Open-NOW list. No
+auto-weighting.**
+
 ## Step 1: Read all reports
 
 Scan `web/data/reports/` in the workspace folder for `*.json` files. If there are multiple reports for the same ticker, use the most recent one (highest date in filename).

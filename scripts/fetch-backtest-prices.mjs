@@ -109,13 +109,18 @@ export function collectNearMissTargets() {
   let nm;
   try { nm = JSON.parse(fs.readFileSync(NEAR_MISS_FILE, "utf-8")).nearMisses ?? []; } catch { return []; }
   const out = new Map();
-  for (const m of nm) {
-    if (!m.ticker || !m.screenDate) continue;
+  for (const raw of nm) {
+    // Bug fix: near-misses.json stores the legacy field "date" (e.g. "2026-06-23"),
+    // never "screenDate" — every entry was silently skipped (0 targets, always).
+    // Mirrors the same normalization web/lib/near-miss.ts's readNearMisses() does.
+    const ticker = raw.ticker;
+    const screenDate = raw.screenDate ?? (raw.date ? raw.date.replace(/-/g, "") : undefined);
+    if (!ticker || !screenDate) continue;
     for (const days of NEAR_MISS_CHECKPOINTS) {
-      const targetDate = addDays(m.screenDate, days);
+      const targetDate = addDays(screenDate, days);
       if (targetDate > today) continue;
-      const key = cacheKey(m.ticker, targetDate);
-      out.set(key, { key, ticker: m.ticker, date: targetDate });
+      const key = cacheKey(ticker, targetDate);
+      out.set(key, { key, ticker, date: targetDate });
     }
   }
   return [...out.values()];

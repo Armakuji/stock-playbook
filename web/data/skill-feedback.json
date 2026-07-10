@@ -1,0 +1,123 @@
+{
+  "generatedAt": "2026-07-10T04:44:27.973Z",
+  "windowNote": "core = +30% within 14 days of report price (catalyst plays) · turbo = +50% within 30 days (moonshot plays) · MAE = max adverse excursion (worst drawdown before target hit, or over the window if never hit) · GUARDRAIL: n < 5 in any bucket = context only, NEVER a reason to include/exclude/re-rank a pick.",
+  "core": {
+    "windowDays": 14,
+    "targetPct": 30,
+    "n": 62,
+    "totalComplete": 26,
+    "totalAccumulating": 36,
+    "overall": {
+      "n": 26,
+      "hitRate": 0,
+      "medianMAE": -10.7,
+      "avgMaxGain": 4.1,
+      "medianTimeToHitDays": null
+    },
+    "byType": [
+      {
+        "type": "product_launch",
+        "total": 10,
+        "n": 3,
+        "hitRate": 0,
+        "medianMAE": -17.5,
+        "avgMaxGain": 1.9,
+        "medianTimeToHitDays": null
+      },
+      {
+        "type": "earnings_beat",
+        "total": 26,
+        "n": 12,
+        "hitRate": 0,
+        "medianMAE": -8.8,
+        "avgMaxGain": 3.1,
+        "medianTimeToHitDays": null
+      },
+      {
+        "type": "satellite_launch",
+        "total": 7,
+        "n": 4,
+        "hitRate": 0,
+        "medianMAE": -17.8,
+        "avgMaxGain": 9.8,
+        "medianTimeToHitDays": null
+      },
+      {
+        "type": "delivery_beat",
+        "total": 5,
+        "n": 1,
+        "hitRate": 0,
+        "medianMAE": -6.3,
+        "avgMaxGain": 6.2,
+        "medianTimeToHitDays": null
+      },
+      {
+        "type": "foundry_validation",
+        "total": 2,
+        "n": 2,
+        "hitRate": 0,
+        "medianMAE": -16.1,
+        "avgMaxGain": 1.7,
+        "medianTimeToHitDays": null
+      },
+      {
+        "type": "regulatory_approval",
+        "total": 3,
+        "n": 1,
+        "hitRate": 0,
+        "medianMAE": -11.5,
+        "avgMaxGain": 6.6,
+        "medianTimeToHitDays": null
+      },
+      {
+        "type": "partnership_win",
+        "total": 8,
+        "n": 3,
+        "hitRate": 0,
+        "medianMAE": -13.8,
+        "avgMaxGain": 2.4,
+        "medianTimeToHitDays": null
+      },
+      {
+        "type": "fda_decision",
+        "total": 1,
+        "n": 0,
+        "hitRate": null,
+        "medianMAE": null,
+        "avgMaxGain": null,
+        "medianTimeToHitDays": null
+      }
+    ]
+  },
+  "turbo": {
+    "windowDays": 30,
+    "targetPct": 50,
+    "n": 36,
+    "totalComplete": 0,
+    "totalAccumulating": 36,
+    "overall": {
+      "n": 0,
+      "hitRate": null,
+      "medianMAE": null,
+      "avgMaxGain": null,
+      "medianTimeToHitDays": null
+    }
+  },
+  "scenarioCalibration": {
+    "n": 26,
+    "medianWrittenBasePct": 20.5,
+    "medianWrittenBullPct": 42.5,
+    "medianRealizedMaxGainPct": 2,
+    "optimismBiasBasePct": 18.5,
+    "optimismBiasBullPct": 40.5,
+    "note": "optimismBias = written scenario % − realized max gain % over the same completed window. Positive = we write more optimistic scenarios than what actually happened."
+  },
+  "nearMissCounterfactual": {
+    "n": 4,
+    "pickedN": 26,
+    "medianNearMissPct14": -20,
+    "medianPickedMaxGainPct14d": 2,
+    "selectionEdgePct": 22,
+    "note": "Not perfectly apples-to-apples: near-miss uses point-in-time +14d price; picks use max gain within the 14d window (structurally favors picks). Treat edge as an upper bound, not exact."
+  }
+}
