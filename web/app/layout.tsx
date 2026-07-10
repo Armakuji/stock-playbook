@@ -5,6 +5,7 @@ import { loadMarketTiming } from "@/lib/market-timing";
 import { getSiteLastUpdatedLabel, SITE_URL } from "@/lib/site-meta";
 import { Header } from "./Header";
 import { MarketTicker } from "./MarketTicker";
+import { Footer } from "./Footer";
 import { LanguageProvider } from "@/lib/LanguageContext";
 
 const bricolage = Bricolage_Grotesque({
@@ -136,11 +137,7 @@ export default function RootLayout({
           <main style={{ flex: 1, maxWidth: 1200, width: "100%", margin: "0 auto", padding: "24px 16px" }}>
             {children}
           </main>
-          <footer style={{ borderTop: "1px solid var(--border)", padding: "16px 24px", textAlign: "center" }}>
-            <p style={{ fontSize: 12, color: "var(--muted)", margin: 0 }}>
-              Not financial advice · Auto-generated reports
-            </p>
-          </footer>
+          <Footer />
         </LanguageProvider>
       </body>
     </html>

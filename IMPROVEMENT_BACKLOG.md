@@ -333,7 +333,7 @@ dev server) เห็น class ครบ ไม่มี error ใน server log
 **ไฟล์:** `scripts/fetch-backtest-prices.mjs` · `scripts/build-skill-feedback.mjs` · `web/data/skill-feedback.json` · (ถ้าทำข้อ 2) `.claude/commands/catalyst-list.md` + `web/lib/north-star.ts` (ประสาน v2.1)
 **เป้า:** รู้ว่า 0/12 คือ sector regime หรือ pick structure · ถ้าเป็นอย่างหลัง top-5 ต้องมีสัดส่วน pick ที่ +30%/14d เป็นไปได้จริงตามขนาด market cap · เกี่ยวพัน: North Star v2.1/v2.2 + Small-cap quota
 
-## 29. Contact links — เพิ่ม email + GitHub บนเว็บ
+## 29. ✅ DONE — Contact links — เพิ่ม email + GitHub บนเว็บ
 
 **ปัญหา:** เว็บไม่มีช่องทางติดต่อเลย — footer ใน `web/app/layout.tsx` (บรรทัด ~139) มีแค่ข้อความ ไม่มี link email/GitHub · คนเจอเว็บ (โดยเฉพาะหลัง #19 SEO เริ่มติด index และ #14 Phase 2 เปิด public signup) ไม่มีทาง report ปัญหา/ติดต่อ/ดู source
 **ทำ:**
@@ -342,6 +342,22 @@ dev server) เห็น class ครบ ไม่มี error ใน server log
   3. i18n EN/TH ตาม pattern `useLang()` (label เช่น "Contact" / "ติดต่อ")
 **ไฟล์:** `web/app/layout.tsx` (footer) · `web/app/Landing.tsx` (ถ้าจำเป็น) · แนวทาง i18n จากไฟล์ที่ทำใน #13
 **เป้า:** ทุกหน้ามี link email (armakuji@hotmail.com) + GitHub (github.com/Armakuji) มองเห็นได้ใน footer · กดแล้วเปิด mail client / profile จริง · สไตล์กลมกลืน theme เดิม
+**ผล (2026-07-10):** สร้าง `web/app/Footer.tsx` เป็น client component (`useLang()`) แยกจาก `layout.tsx` (server component) ตาม pattern เดียวกับ `MarketTicker`/`Header` — layout footer อยู่นอก `<main>` แต่ยังอยู่ใต้ `LanguageProvider` และ render ทุกหน้ารวมถึง landing (HomePage วาง `Landing` เป็น `children` ข้างใน `<main>` เดียวกัน) → **ไม่ต้องใส่ซ้ำใน `Landing.tsx`** (ข้อ 2 ไม่จำเป็น, ยืนยันด้วยการอ่านโครงสร้าง JSX) · verify: tsc/eslint clean (มี pre-existing warning ใน layout.tsx ไม่เกี่ยวกับงานนี้), curl ตรวจ `/`, `/catalyst`, `/report/AMD` เห็น link ครบ, สลับ default lang เป็น th ชั่วคราวยืนยัน "Contact"→"ติดต่อ" แล้ว revert กลับ
+
+## 30. Skill prompt hygiene sweep — 5 bugs + ตัดซาก radar-era ใน stock-report/turbo-report/list commands
+
+**ปัญหา:** review prompt ทั้ง 4 ตัว (2026-07-10: `catalyst-list.md`, `turbo-list.md`, `stock-report`, `turbo-report`) พบ 5 bug จริง + ซากเก่าที่ขัดกติกาปัจจุบัน — commands สดเพราะเพิ่งผ่าน #25–#27 แต่ SKILL.md หลุด sync:
+  1. **Stale push template ใน skills** — `stock-report` Step 4, `turbo-report` Step 5 (และ grep เจอใน `dca-report`, `analyze` skill ด้วย) ยัง hardcode `git push origin main` + confirm line "→ Vercel deploying" — กติกา honest push (#26) แก้เฉพาะ `.claude/commands/*` ไม่ได้แก้ skills → รัน `/analyze` เดี่ยวยัง claim เกินจริง
+  2. **turbo-report บอก "visible at `/sing`"** — route ไม่มีจริง (ยุคเก่า) ต้องเป็น `/turbo`
+  3. **turbo-list ขัดกันเอง** — Step 0 อ้าง "ranking stays survival-first per backlog #11" แต่ Step 1 สั่ง "rank by base-case % primary" · #11 ยังไม่ implement — แก้ Step 0 ให้พูดตรงความจริง ("ranking = upside-first ตามสเปคปัจจุบัน; survival-first คือ #11 ที่ยังไม่ทำ; feedback ไม่แตะ rank order")
+  4. **`scoreLabel: "Moonshot"`** — turbo-report สั่งใช้ แต่ CLAUDE.md enum มีแค่ `Core Holding | Speculative | ค่าขนม` · types.ts เป็น `string` เลยไม่ crash และมี report จริงใช้แล้ว (IQMX_20260706) → ต้องเคาะ: เพิ่ม "Moonshot" เข้า enum ใน CLAUDE.md (แนะนำ — ใช้จริงแล้ว + สื่อความ) หรือแก้ skill+report เลิกใช้ · เช็คด้วยว่า UI/scoring ไม่ switch ตาม label นี้
+  5. **stock-report ไม่มี list mode** — ถูกเรียกจาก `/catalyst-list` ต่อ 5 ตัวแล้ว Step 4 สั่ง commit+push ต่อ ticker ขัดกับ command ที่ push ครั้งเดียว → เพิ่มบรรทัด "list mode (called from /catalyst-list): skip Step 4 — the command validates/commits/pushes once at the end"
+  **ซาก/โครงสร้าง (ทำในรอบเดียวกัน):**
+  6. ตัด `turbo-report` Step 6 "HTML Preview" + Turbo Visual System block ทั้งก้อน — radar-era ขัดกับ "JSON only, site is presentation layer" ที่ประกาศต้นไฟล์ตัวเอง
+  7. ตรึงนิยาม "30%+ upside" ใน `catalyst-list.md` — ระบุวิธีวัดให้ชัด (เสนอ: consensus target เป็นหลัก, top target ประกอบ; ไม่ใช้ scenario-implied เป็น gate) กัน bar เลื่อนข้ามรอบ run — near-miss log ปัจจุบันใช้ปนกันแล้ว
+  8. (optional ถ้าไม่บาน) ลดสำเนา Step 0 tier rules ที่ตอนนี้ copy อยู่ 5 ที่ (2 commands + 3 skills, เนื้อเพี้ยนกันเล็กน้อยแล้ว) — ให้ skill เป็น canonical copy แล้ว command ชี้ไปหา · ถ้า scope ใหญ่เกินให้จดแยก item ใหม่
+**ไฟล์:** `skills/stock-report/SKILL.md` · `skills/turbo-report/SKILL.md` · `skills/dca-report/SKILL.md` · `skills/analyze/SKILL.md` (เช็ค stale template ข้อ 1) · `.claude/commands/catalyst-list.md` · `.claude/commands/turbo-list.md` · `CLAUDE.md` (ถ้าเพิ่ม Moonshot เข้า enum) · เช็ค symlink `.claude/skills/*` ว่าชี้ไฟล์เดียวกัน (ตาม #25 พบว่า dashboard-compare เป็น symlink)
+**เป้า:** ไม่มี prompt ไหน claim "Vercel deploying" / push main โดยไม่เช็ค branch · ไม่มี route/label/กติกาที่ตายแล้วเหลือใน skills · turbo-list พูดเสียงเดียวเรื่อง ranking · นิยาม 30% gate คงที่ข้ามรอบ run
 
 ---
 
