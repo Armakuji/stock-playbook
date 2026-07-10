@@ -249,6 +249,35 @@ dev server) เห็น class ครบ ไม่มี error ใน server log
 **ไฟล์:** `scripts/build-skill-feedback.mjs` (ใหม่) · `scripts/fetch-backtest-prices.mjs` (bug fix) · `web/data/skill-feedback.json` (ใหม่ — generated) · `skills/stock-report/SKILL.md` · `skills/turbo-report/SKILL.md` · `skills/dashboard-compare/SKILL.md` · `.claude/commands/catalyst-list.md` · `.claude/commands/turbo-list.md` · `web/package.json` (script entry)
 **เป้า:** ทุกครั้งที่รัน `/catalyst-list` หรือ `/turbo-list` Claude เห็นผลจริงของตัวเองก่อน screen → คำแนะนำ sizing/stop อ้างตัวเลขวัดได้ ไม่ใช่ vibes ✅ · guardrail กัน small-n overfit อยู่ครบทุกไฟล์ ✅ · **ปัจจุบัน:** core n=62 (26 complete, 8 catalyst type), turbo n=36 (0 complete — รอ window 30 วันครบ ~21 ก.ค.), scenario calibration n=26, near-miss counterfactual n=4 — ตัวเลขทั้งหมด n<5 หลายจุด ต้องรอสะสมข้อมูลเพิ่มก่อนเชื่อได้เต็มที่ (ตามคาด)
 
+## 26. Catalyst-list run hygiene — market-timing Write error + push status ไม่ตรงจริง
+
+**ปัญหา:** จาก run จริง `/catalyst-list` 2026-07-10 (รอบแรกหลัง #25) พบ 2 อาการ:
+  (a) **Write `web/data/market-timing.json` error** — `analyze-market-situation` skill research สดครบ (10+ search) แล้ว Write fail จากนั้น rationalize ว่า "ไฟล์เดิม fresh กว่า" แล้วทิ้ง research ที่เพิ่งทำ (ตรรกะกลับด้าน — research ใหม่ย่อมสดกว่าไฟล์เมื่อเช้า) · โชคดีไฟล์เดิมยังเป็นของวันเดียวกัน panel ไม่พัง แต่ถ้าเป็นวันอื่นคือ market-timing stale เงียบ ๆ · run เดียวกันมี "Invalid tool parameters" ตอน load skill ด้วย — อาจเป็นสาเหตุเดียวกัน (path/schema/tool-call ใน SKILL.md เพี้ยน)
+  (b) **รายงาน push status เกินจริง** — commit + push ไป branch `feature/improve` แต่สรุปว่า "✅ pushed → Vercel deploying → visible at /catalyst" ทั้งที่ Vercel production deploy จาก `main` เท่านั้น → user เข้าใจผิดว่าเว็บอัปเดตแล้ว
+**ทำ:**
+  1. ไล่สาเหตุ Write error ใน `analyze-market-situation` (ลอง reproduce: รัน `/macro` ดู) — เช็ค path ที่ skill ใช้เขียน (relative vs absolute, รันจาก cwd ไหน), แก้ให้เขียนสำเร็จหรือ retry · เพิ่มกติกาใน SKILL.md: ถ้า Write fail = **ต้อง fix แล้วเขียนให้สำเร็จ** ห้ามสรุปว่าไฟล์เดิมดีกว่า (fresh research ชนะเสมอ)
+  2. แก้ `.claude/commands/catalyst-list.md` (+ commands อื่นที่ push: `analyze.md`, `turbo-list.md`, `dca-list.md`, `analyze-turbo.md`, `analyze-dca.md`): step สุดท้ายต้องเช็ค branch ปัจจุบัน — ถ้าไม่ใช่ `main` ให้รายงานตามจริง "pushed to <branch> — merge to main to deploy" ห้าม claim "Vercel deploying"
+**ไฟล์:** `skills/analyze-market-situation/SKILL.md` · `.claude/commands/catalyst-list.md` · `.claude/commands/analyze.md` · `.claude/commands/turbo-list.md` · `.claude/commands/dca-list.md` · `.claude/commands/analyze-turbo.md` · `.claude/commands/analyze-dca.md`
+**เป้า:** market-timing.json ถูกเขียนใหม่ทุกครั้งที่ `/catalyst-list`/`/macro` รันสำเร็จ · ไม่มี run ไหน claim "deploying" ทั้งที่อยู่ feature branch
+
+**อัปเดต (2026-07-10, pre-turbo-list patch):**
+  - **(b) ✅ DONE สำหรับ `catalyst-list.md` + `turbo-list.md`** — ทั้งสองไฟล์ตอนนี้สั่งชัด: step สุดท้ายต้องรายงาน branch จริงที่ push ไป ("pushed to `<branch>` — merge to main to deploy" ถ้าไม่ใช่ `main`, ห้าม claim "Vercel deploying") · **ยังไม่ทำ:** `analyze.md`, `dca-list.md`, `analyze-turbo.md`, `analyze-dca.md` ตามที่ระบุไว้ในข้อ 2 เดิม
+  - **(a) scope เปลี่ยน, ยังเปิดอยู่** — ตัดสินใจ decouple market-timing ออกจาก `/catalyst-list` ทั้งหมดแล้ว (ดู CLAUDE.md "Market-timing refresh — /macro only" ใหม่) `/catalyst-list` เลยไม่เรียก `analyze-market-situation` อีกต่อไป → อาการ (a) จะไม่เกิดจาก `/catalyst-list` ได้อีก แต่ **root cause จริงใน `skills/analyze-market-situation/SKILL.md` (Write fail + fallback rationalize ผิดตรรกะ) ยังไม่ได้แก้เลย** — ยังกระทบตอนรัน `/macro` ตรง ๆ อยู่ ข้อ 1 เดิมยังต้องทำ
+
+## 27. Feedback prior v1.1 — n≥5 ต้องใช้จริง + regime note กัน hit-rate หลอก
+
+**ปัญหา:** run จริงรอบแรก (2026-07-10) เผย 2 ช่อง:
+  (a) **Guardrail ถูกตีความเข้มเกินสเปค** — กติกาคือ "n<5 = context only" แปลว่า **n≥5 ใช้ปรับ threshold ได้** แต่ run treat ทุก bucket เป็น context-only รวมทั้ง `earnings_beat (n=12, hitRate 0%)` แล้วเลือก earnings play ทั้ง 5 ตัวโดย prior ไม่มีผลอะไรเลย → loop เปิดแล้วแต่ยังไม่ bite
+  (b) **hit-rate ไม่มี regime context** — 0/12 ของ earnings_beat วัดช่วง SOX -10.8% selloff พอดี ตลาดทั้งกระดานไม่มีทางวิ่ง +30%/14d → ตัวเลขดิบหลอกว่า type ห่วยทั้งที่คือ regime (นี่คือปัญหาที่ North Star v2.2 benchmark-adjusted แก้เต็มรูปแบบ — แต่ทำ hotfix หยาบก่อนได้)
+**ทำ:**
+  1. **Clarify กติกาใน SKILL.md/commands ทั้ง 5 ไฟล์ (ชุดเดียวกับ #25):** เขียน 2 tier ชัด ๆ — `n<5` = context only (เดิม) · `n≥5` = **ต้อง**ใช้เป็น prior จริง: type ที่ hitRate ต่ำกว่า overall ชัดเจน → pick type นั้นต้องมี upside/conviction สูงกว่าปกติถึงติด top 5 (ระบุเป็นกติกา ไม่ใช่ให้เลือกเอง) + ต้องพ่วง regime note จากข้อ 2 เสมอตอนตีความ
+  2. **Regime context ใน `scripts/build-skill-feedback.mjs`:** ต่อ window ของแต่ละ complete entry เก็บ benchmark return หยาบ ๆ (SPY หรือ QQQ ช่วง 14d เดียวกัน — fetch เพิ่มใน `fetch-backtest-prices.mjs` เก็บลง path-cache key `bench:SPY_YYYYMMDD` แนว #24) → feedback file เพิ่ม per-type `avgBenchmarkPct` + `regimeNote` (เช่น "8/12 windows อยู่ในช่วงตลาดลง >3%") · ยังไม่ต้อง beta-adjust (นั่นคือ v2.2) แค่ให้ผู้อ่านเห็นว่า hit-rate วัดใน regime ไหน
+  3. **อัปเดต guardrail note:** hitRate ที่ benchmark ติดลบแรงทั้ง window = ตีความเป็น "unproven in bad regime" ไม่ใช่ "type นี้ใช้ไม่ได้"
+**ไฟล์:** `scripts/build-skill-feedback.mjs` · `scripts/fetch-backtest-prices.mjs` (benchmark path) · `web/data/skill-feedback.json` (shape ใหม่) · `skills/stock-report/SKILL.md` · `skills/turbo-report/SKILL.md` · `skills/dashboard-compare/SKILL.md` · `.claude/commands/catalyst-list.md` · `.claude/commands/turbo-list.md`
+**เป้า:** รอบหน้าที่ n≥5 prior มีผลจริงต่อ threshold (เห็นได้จาก reasoning ตอน screen) · ทุก hit-rate ใน feedback file อ่านคู่ regime ได้ ไม่มีเลขดิบลอย ๆ ให้ตีความผิด · ปูทาง North Star v2.2 (benchmark path เก็บไว้แล้ว ใช้ต่อได้เลย)
+
+**อัปเดต (2026-07-10, pre-turbo-list patch):** ทำ visible-output ของ step อ่าน feedback prior แล้ว (ใน `catalyst-list.md` + `turbo-list.md` ตอนนี้สั่งให้ print block `📊 Feedback prior (...)` ในแชทก่อน screen ทุกครั้ง กัน step โดนข้ามเงียบ ๆ ตามที่ #26 สังเกตเห็น) — แต่นี่แค่ทำให้เห็นว่า "อ่านจริง" **tier-2 (n≥5 ต้องใช้ปรับ threshold จริง) กับ regime note (ข้อ 1-3 ด้านบน) ยังไม่ได้ทำเลย** ยังต้องทำต่อ
+
 ---
 
 ## ยังไม่เลือกทำ (ไว้พิจารณาทีหลัง)

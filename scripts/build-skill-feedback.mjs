@@ -218,39 +218,55 @@ const scenarioCalibration = {
   note: "optimismBias = written scenario % − realized max gain % over the same completed window. Positive = we write more optimistic scenarios than what actually happened.",
 };
 
-// ── near-miss counterfactual (did the top-5 cut add alpha?) ─────────────────
-// near-miss side: point-in-time +14d actual % from backtest-cache.json.
-// picked side: max gain WITHIN the 14d window from North Star (more favorable
+// ── near-miss counterfactual (did the top-5 cut add alpha?) — per lane ──────
+// near-miss side: point-in-time actual % (checkpointDays out) from backtest-cache.json.
+// picked side: max gain WITHIN the same window from North Star (more favorable
 // to picks by construction — not a perfectly matched methodology, noted below).
+// lane "core" compares at 14d vs core picks; lane "turbo" compares at 30d vs
+// turbo picks. Entries with no `lane` field predate the split and default to "core".
 const backtestCache = readJSON(BACKTEST_CACHE_FILE, {});
 const nearMissRaw = readJSON(NEAR_MISS_FILE, { nearMisses: [] }).nearMisses ?? [];
-const nearMissPct14 = [];
-for (const raw of nearMissRaw) {
-  const ticker = raw.ticker;
-  const screenDate = raw.screenDate ?? (raw.date ? raw.date.replace(/-/g, "") : undefined);
-  const screenPrice = raw.screenPrice ?? raw.priceAtScreen ?? null;
-  if (!ticker || !screenDate || !screenPrice) continue;
-  const targetDate = addDaysISO(screenDate, NEAR_MISS_CHECKPOINT_DAYS);
-  if (targetDate > today) continue;
-  const cached = backtestCache[`${ticker}_${targetDate}`];
-  if (!cached?.price) continue;
-  nearMissPct14.push(((cached.price - screenPrice) / screenPrice) * 100);
+
+function nearMissPctsForLane(lane, checkpointDays) {
+  const out = [];
+  for (const raw of nearMissRaw) {
+    if ((raw.lane ?? "core") !== lane) continue;
+    const ticker = raw.ticker;
+    const screenDate = raw.screenDate ?? (raw.date ? raw.date.replace(/-/g, "") : undefined);
+    const screenPrice = raw.screenPrice ?? raw.priceAtScreen ?? null;
+    if (!ticker || !screenDate || !screenPrice) continue;
+    const targetDate = addDaysISO(screenDate, checkpointDays);
+    if (targetDate > today) continue;
+    const cached = backtestCache[`${ticker}_${targetDate}`];
+    if (!cached?.price) continue;
+    out.push(((cached.price - screenPrice) / screenPrice) * 100);
+  }
+  return out;
 }
 
-const pickedMaxGain14d = coreEntries.filter((e) => e.status === "complete" && e.maxGainPct !== null).map((e) => e.maxGainPct);
-const medianNearMiss = median(nearMissPct14);
-const medianPicked = median(pickedMaxGain14d);
+function buildCounterfactual(lane, checkpointDays, pickedPcts) {
+  const nmPcts = nearMissPctsForLane(lane, checkpointDays);
+  if (nmPcts.length === 0) return null;
+  const medianNM = median(nmPcts);
+  const medianPicked = median(pickedPcts);
+  return {
+    n: nmPcts.length,
+    pickedN: pickedPcts.length,
+    windowDays: checkpointDays,
+    medianNearMissPct: r1(medianNM),
+    medianPickedMaxGainPct: r1(medianPicked),
+    selectionEdgePct: (medianPicked != null && medianNM != null) ? r1(medianPicked - medianNM) : null,
+    note: `Not perfectly apples-to-apples: near-miss uses point-in-time +${checkpointDays}d price; picks use max gain within the ${checkpointDays}d window (structurally favors picks). Treat edge as an upper bound, not exact.`,
+  };
+}
 
-const nearMissCounterfactual = (nearMissPct14.length === 0)
-  ? null
-  : {
-      n: nearMissPct14.length,
-      pickedN: pickedMaxGain14d.length,
-      medianNearMissPct14: r1(medianNearMiss),
-      medianPickedMaxGainPct14d: r1(medianPicked),
-      selectionEdgePct: (medianPicked != null && medianNearMiss != null) ? r1(medianPicked - medianNearMiss) : null,
-      note: "Not perfectly apples-to-apples: near-miss uses point-in-time +14d price; picks use max gain within the 14d window (structurally favors picks). Treat edge as an upper bound, not exact.",
-    };
+const pickedMaxGain14dCore = coreEntries.filter((e) => e.status === "complete" && e.maxGainPct !== null).map((e) => e.maxGainPct);
+const pickedMaxGain30dTurbo = turboEntries.filter((e) => e.status === "complete" && e.maxGainPct !== null).map((e) => e.maxGainPct);
+
+const nearMissCounterfactual = {
+  core: buildCounterfactual("core", NEAR_MISS_CHECKPOINT_DAYS, pickedMaxGain14dCore),
+  turbo: buildCounterfactual("turbo", TURBO_WINDOW_DAYS, pickedMaxGain30dTurbo),
+};
 
 // ── write ─────────────────────────────────────────────────────────────────
 const feedback = {
@@ -272,5 +288,5 @@ fs.writeFileSync(OUT_FILE, JSON.stringify(feedback, null, 2));
 console.log(`📊 core: n=${core.n} (${core.totalComplete} complete, ${core.totalAccumulating} accumulating) · ${core.byType.length} catalyst type(s)`);
 console.log(`🎰 turbo: n=${turbo.n} (${turbo.totalComplete} complete, ${turbo.totalAccumulating} accumulating)`);
 console.log(`📐 scenario calibration: n=${scenarioCalibration.n}`);
-console.log(`🕵️ near-miss counterfactual: ${nearMissCounterfactual ? `n=${nearMissCounterfactual.n}` : "null (no data yet)"}`);
+console.log(`🕵️ near-miss counterfactual · core: ${nearMissCounterfactual.core ? `n=${nearMissCounterfactual.core.n}` : "null (no data yet)"} · turbo: ${nearMissCounterfactual.turbo ? `n=${nearMissCounterfactual.turbo.n}` : "null (no data yet)"}`);
 console.log(`✅ skill feedback written → web/data/skill-feedback.json`);

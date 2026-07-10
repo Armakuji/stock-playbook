@@ -1,5 +1,5 @@
 {
-  "_note": "Candidates that PASSED the /dashboard screen but did NOT make the top 5. Logged to fight survivorship bias — their real outcome is the counterfactual that tells us whether the top-5 cut actually adds alpha. Append one object per rejected candidate per dashboard run.",
+  "_note": "Candidates that PASSED the /dashboard (or /turbo-list) screen but did NOT make the top 5. Logged to fight survivorship bias — their real outcome is the counterfactual that tells us whether the top-5 cut actually adds alpha. Append one object per rejected candidate per dashboard run. `lane`: \"core\" (default /catalyst-list, +30%/14d) or \"turbo\" (/turbo-list, +50%/30d) — entries with no `lane` field predate this split and are treated as \"core\".",
   "nearMisses": [
     {
       "date": "2026-06-23",
