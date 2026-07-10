@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { DcaCard } from "./DcaCard";
-import { DashboardSwitcher } from "../DashboardSwitcher";
 import { RankingChangeTable } from "../RankingChangeTable";
 import { useLang } from "@/lib/LanguageContext";
 import type { RankedDca } from "@/lib/dca";
@@ -64,15 +63,11 @@ export function DcaContent({
   stocks,
   fundChanges = [],
   stockChanges = [],
-  dashboardCounts,
-  lastUpdated,
 }: {
   funds: RankedDca[];
   stocks: RankedDca[];
   fundChanges?: RankChange[];
   stockChanges?: RankChange[];
-  dashboardCounts: { dca: number; catalyst: number; turbo: number };
-  lastUpdated: string;
 }) {
   const { lang } = useLang();
   const th = lang === "th";
@@ -132,8 +127,6 @@ export function DcaContent({
       </div>
 
       <div style={{ position: "relative", zIndex: 1 }}>
-
-        <DashboardSwitcher active="dca" counts={dashboardCounts} lastUpdated={lastUpdated} />
 
         {/* ── Hero header ───────────────────────────────────────────────── */}
         <div style={{ marginBottom: 18 }}>

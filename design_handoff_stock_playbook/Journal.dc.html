@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Trade Journal · Stock Playbook</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#06060a;--card:#0c0c14;--border:#1a1a2e;--border2:#26264a;--text:#e2e8f0;--muted:#64748b;--mono:'JetBrains Mono',monospace;--disp:'Bricolage Grotesque',system-ui,sans-serif;--body:'DM Sans',system-ui,sans-serif;--water:#38bdf8;--air:#10b981;--fire:#ff6d00}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);background-image:radial-gradient(ellipse 120% 60% at 50% -8%,rgba(245,158,11,.06),transparent 60%),radial-gradient(circle,#17172b 1px,transparent 1px);background-size:100% 100%,26px 26px;background-repeat:no-repeat,repeat;color:var(--text);font-family:var(--body)}
+.mono{font-family:var(--mono)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.accentbar{height:3px;flex-shrink:0;background:linear-gradient(90deg,#10b981,#3b82f6,#8b5cf6,#f59e0b,#10b981);background-size:300% 100%;animation:gradShift 8s linear infinite}
+/* header (shared) */
+.hdr{border-bottom:1px solid var(--border);background:rgba(12,12,20,.72);backdrop-filter:blur(12px);position:sticky;top:0;z-index:30}
+.row{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:13px 20px;max-width:1120px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0}
+.brand .nm{font-family:var(--disp);font-weight:800;font-size:19px;letter-spacing:-.4px;color:var(--text);white-space:nowrap}
+.hnav{display:flex;align-items:center;gap:14px}
+.pills{display:flex;align-items:center;gap:3px;background:#0a0a12;border:1px solid var(--border);border-radius:11px;padding:4px}
+.pill{font-family:var(--mono);font-weight:700;font-size:11px;letter-spacing:.2px;text-decoration:none;padding:6px 11px;border-radius:8px;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.tool{font-family:var(--mono);font-weight:700;font-size:11px;color:var(--muted);text-decoration:none;display:inline-flex;align-items:center;gap:4px}
+.tool:hover{color:var(--text)}
+.tool.journal{color:#f59e0b}
+.tool.on{color:#f59e0b}
+.spark{font-size:9px;color:#c4b5fd;animation:sparkPulse 2.4s ease-in-out infinite}
+.live{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--air);animation:pulse 2s ease-in-out infinite}
+.upd{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.lang{display:inline-flex;gap:2px;background:#0a0a12;border:1px solid var(--border);border-radius:9px;padding:3px}
+.lbtn{font-family:var(--mono);font-weight:800;font-size:10px;letter-spacing:.5px;cursor:pointer;padding:4px 9px;border-radius:6px;border:none;background:transparent;color:var(--muted);transition:all .15s}
+.lbtn.on{background:#3b82f6;color:#fff}
+.avatar{width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#3b82f6,#8b5cf6);color:#fff;border:none;font-family:var(--mono);font-weight:800;font-size:11px;cursor:pointer;flex-shrink:0}
+.loginbtn{font-family:var(--mono);font-weight:800;font-size:12px;padding:7px 16px;border-radius:9px;background:#10b981;color:#fff;border:none;cursor:pointer;white-space:nowrap;flex-shrink:0}
+/* ticker */
+.tick{width:100%;background:rgba(245,158,11,.07);border-bottom:1px solid rgba(245,158,11,.22);font-family:var(--mono)}
+.tickbar{all:unset;box-sizing:border-box;display:flex;align-items:center;gap:12px;width:100%;max-width:1120px;margin:0 auto;padding:8px 20px;cursor:pointer}
+.verdict{font-weight:800;font-size:11px;padding:3px 10px;border-radius:6px;background:rgba(245,158,11,.12);color:#f59e0b;border:1px solid rgba(245,158,11,.4);flex-shrink:0;white-space:nowrap}
+.track{flex:1;overflow:hidden;min-width:0;position:relative;-webkit-mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent);mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent)}
+.crawl{display:inline-flex;white-space:nowrap;font-size:11.5px;animation:crawl 46s linear infinite}
+.tickbar:hover .crawl{animation-play-state:paused}
+.sep{color:var(--border2);margin:0 14px}
+.entry{font-size:10px;font-weight:700;padding:3px 9px;border-radius:5px;background:rgba(56,189,248,.1);color:var(--water);border:1px solid rgba(56,189,248,.28);flex-shrink:0;white-space:nowrap}
+.chev{font-size:9px;color:var(--muted);flex-shrink:0;transition:transform .2s;display:inline-block}
+.chev.open{transform:rotate(180deg)}
+/* ── gate ── */
+.gate{position:relative;max-width:900px;margin:0 auto;padding:60px 20px 60px;isolation:isolate}
+.gglow{position:absolute;top:-10%;left:50%;transform:translateX(-50%);width:640px;height:520px;pointer-events:none;z-index:-1;background:radial-gradient(ellipse at center,rgba(245,158,11,.16),transparent 60%),radial-gradient(ellipse 60% 60% at 30% 70%,rgba(139,92,246,.13),transparent 65%)}
+.grings{position:absolute;top:8%;left:50%;transform:translate(-50%,0);width:420px;height:420px;pointer-events:none;z-index:-1;opacity:.35}
+.grings .rc{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);border:1px solid rgba(245,158,11,.28);border-radius:50%}
+.ghero{text-align:center;margin-bottom:44px}
+.gicon-wrap{position:relative;width:84px;height:84px;margin:0 auto 20px}
+.gicon-ring{position:absolute;inset:-10px;border-radius:24px;border:1px solid rgba(245,158,11,.35);animation:ringPulse 2.6s ease-in-out infinite}
+.gicon{position:relative;width:84px;height:84px;border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:38px;background:linear-gradient(150deg,rgba(245,158,11,.24),rgba(139,92,246,.16));border:1px solid rgba(245,158,11,.4);box-shadow:0 16px 44px rgba(245,158,11,.18);animation:gfloat 3.6s ease-in-out infinite}
+.gbadge{display:inline-flex;align-items:center;gap:6px;margin-bottom:16px;font-size:10px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;color:#c4b5fd;background:rgba(139,92,246,.12);border:1px solid rgba(139,92,246,.32);padding:5px 12px;border-radius:999px;font-family:var(--mono);white-space:nowrap}
+.gtitle{font-family:var(--disp);font-weight:800;font-size:clamp(30px,5.5vw,46px);letter-spacing:-1px;margin:0 0 14px;background:linear-gradient(96deg,#fbbf24,#fb923c 55%,#c4b5fd);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.gsub{font-family:var(--mono);font-size:14px;color:var(--muted);max-width:500px;margin:0 auto 30px;line-height:1.65}
+.gcta{position:relative;display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:12px;background:linear-gradient(135deg,#10b981,#0ea86f);color:#04120c;font-weight:800;font-size:15px;text-decoration:none;font-family:var(--mono);box-shadow:0 10px 32px rgba(16,185,129,.4),inset 0 1px 0 rgba(255,255,255,.25);border:none;cursor:pointer;overflow:hidden;transition:transform .2s cubic-bezier(.34,1.6,.64,1),box-shadow .2s}
+.gcta:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 16px 44px rgba(16,185,129,.55),inset 0 1px 0 rgba(255,255,255,.3)}
+.gcta::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(115deg,transparent,rgba(255,255,255,.5),transparent);animation:shine 3s ease-in-out infinite}
+.gtrust{margin-top:14px;font-size:11px;color:var(--muted);font-family:var(--mono)}
+.gpips{display:flex;justify-content:center;gap:10px;margin-top:18px;flex-wrap:wrap}
+.gpip{font-family:var(--mono);font-size:10px;font-weight:700;color:var(--muted);background:var(--card);border:1px solid var(--border);padding:5px 12px;border-radius:999px;display:inline-flex;align-items:center;gap:6px}
+.gfeats{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.gcard{position:relative;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px 20px 22px;text-align:left;overflow:hidden;transition:transform .2s cubic-bezier(.22,1,.36,1),border-color .2s,box-shadow .2s}
+.gcard::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:var(--fc);opacity:.9}
+.gcard:hover{transform:translateY(-5px);border-color:color-mix(in srgb,var(--fc) 45%,var(--border));box-shadow:0 14px 34px color-mix(in srgb,var(--fc) 16%,transparent)}
+.gicon2{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:17px;margin-bottom:13px;background:color-mix(in srgb,var(--fc) 15%,transparent);border:1px solid color-mix(in srgb,var(--fc) 32%,transparent);color:var(--fc)}
+.gftitle{font-family:var(--disp);font-weight:800;font-size:14px;letter-spacing:-.2px;margin-bottom:6px;color:var(--text)}
+.gfdesc{font-size:12px;color:var(--muted);line-height:1.6;font-family:var(--mono)}
+.gfoot{text-align:center;margin-top:38px;font-size:10.5px;color:var(--muted);font-family:var(--mono);opacity:.8}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1);box-shadow:0 0 0 0 rgba(16,185,129,.4)}50%{opacity:.75;transform:scale(1.25);box-shadow:0 0 0 4px rgba(16,185,129,0)}}
+@keyframes gradShift{0%{background-position:0% 0}100%{background-position:300% 0}}
+@keyframes sparkPulse{0%,100%{transform:scale(1);opacity:.7}50%{transform:scale(1.25);opacity:1}}
+@keyframes crawl{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes gfloat{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-8px) rotate(-2deg)}}
+@keyframes ringPulse{0%,100%{transform:scale(1);opacity:.5}50%{transform:scale(1.08);opacity:.15}}
+@keyframes shine{0%,20%{left:-60%}60%,100%{left:130%}}
+@media(max-width:760px){.hnav .pills,.hnav .tool,.hnav .upd,.hnav .live{display:none}}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;animation-iteration-count:1!important}}
+</style>
+</helmet>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<linearGradient id="sg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8ef0a8"/><stop offset="1" stop-color="#22b866"/></linearGradient>
+<radialGradient id="swp" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#3fd07f" stop-opacity=".85"/><stop offset="1" stop-color="#3fd07f" stop-opacity="0"/></radialGradient>
+<linearGradient id="bgg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#111a24"/><stop offset="1" stop-color="#080c12"/></linearGradient>
+<symbol id="radar" viewBox="0 0 512 512">
+<rect x="16" y="16" width="480" height="480" rx="112" fill="url(#bgg)"/>
+<rect x="16.5" y="16.5" width="479" height="479" rx="111.5" fill="none" stroke="#28e07f" stroke-opacity=".18" stroke-width="3"/>
+<g fill="none" stroke="#2f8f5c" stroke-opacity=".55" stroke-width="8"><circle cx="256" cy="256" r="56"/><circle cx="256" cy="256" r="112"/><circle cx="256" cy="256" r="168"/></g>
+<g transform="rotate(-38 256 256)"><path d="M256 256 L256 76 A180 180 0 0 1 424 232 Z" fill="url(#swp)"/><line x1="256" y1="256" x2="256" y2="72" stroke="url(#sg)" stroke-width="10" stroke-linecap="round"/></g>
+<circle cx="300" cy="140" r="16" fill="#4aa8f0"/><circle cx="368" cy="232" r="16" fill="#3fd07f"/><circle cx="216" cy="372" r="16" fill="#ff7a3c"/><circle cx="140" cy="300" r="16" fill="#c08a4a"/><circle cx="256" cy="256" r="16" fill="url(#sg)"/>
+</symbol>
+</defs></svg>
+<div class="accentbar"></div>
+<header class="hdr">
+<div class="row">
+<a class="brand" href="Landing Restyled.dc.html"><svg width="26" height="26" style="border-radius:7px"><use href="#radar"/></svg><span class="nm">Stock Playbook</span></a>
+<div class="hnav">
+<nav class="pills">
+<a class="pill" href="Stock Playbook Dashboard.dc.html" style="background-image:linear-gradient(90deg,#38bdf8,#3b82f6)">💧 DCA</a>
+<a class="pill" href="Stock Playbook Dashboard.dc.html" style="background-image:linear-gradient(90deg,#10b981,#34d399)">🌬️ Catalyst</a>
+<a class="pill" href="Stock Playbook Dashboard.dc.html" style="background-image:linear-gradient(90deg,#ff6d00,#d500f9)">🔥 Turbo</a>
+</nav>
+<a class="tool" href="#">📊 Backtest</a>
+<a class="tool journal on" href="Journal.dc.html">📒 Journal <span class="spark">✦</span></a>
+<span class="live"></span>
+<span class="upd">{{ updLabel }} {{ lastUpdated }}</span>
+<div class="lang">
+<button class="lbtn {{ enOn }}" onClick="{{ setEn }}">EN</button>
+<button class="lbtn {{ thOn }}" onClick="{{ setTh }}">TH</button>
+</div>
+<sc-if value="{{ loggedIn }}" hint-placeholder-val="{{ false }}">
+<button class="avatar" onClick="{{ toggleAuth }}" title="Account">{{ initials }}</button>
+</sc-if>
+<sc-if value="{{ notLoggedIn }}" hint-placeholder-val="{{ true }}">
+<button class="loginbtn" onClick="{{ toggleAuth }}">{{ loginLbl }}</button>
+</sc-if>
+</div>
+</div>
+<div class="tick">
+<button class="tickbar" onClick="{{ toggleTick }}">
+<span class="verdict">🟡 {{ verdict }}</span>
+<div class="track"><div class="crawl">{{ crawlA }}<span class="sep">•</span>{{ crawlB }}</div></div>
+<span class="entry">🎯 {{ entryLabel }}</span>
+<span class="chev {{ chevOpen }}">▼</span>
+</button>
+</div>
+</header>
+<main class="wrap">
+<section class="gate">
+<div class="gglow"></div>
+<div class="grings"><div class="rc" style="width:200px;height:200px"></div><div class="rc" style="width:340px;height:340px"></div></div>
+<div class="ghero">
+<div class="gicon-wrap"><div class="gicon-ring"></div><div class="gicon">📒</div></div>
+<div class="gbadge"><span>✦</span> {{ aiPowered }}</div>
+<h1 class="gtitle">{{ journalTitle }}</h1>
+<p class="gsub">{{ journalSub }}</p>
+<button class="gcta" onClick="{{ toggleAuth }}"><svg width="17" height="17" viewBox="0 0 48 48" aria-hidden="true"><path fill="#04120c" d="M43.6 20.5H42V20.4H24v7.2h11.3c-1.6 4.6-6 7.9-11.3 7.9-6.9 0-12.5-5.6-12.5-12.5S17.1 10.5 24 10.5c3.2 0 6.1 1.2 8.3 3.2l5.4-5.4C34.5 5.1 29.5 3 24 3 12.4 3 3 12.4 3 24s9.4 21 21 21 21-9.4 21-21c0-1.4-.1-2.8-.4-4.5z"/></svg>{{ gLoginLbl }}</button>
+<div class="gtrust">{{ trustLine }}</div>
+<div class="gpips"><span class="gpip">🔒 {{ pipPrivate }}</span><span class="gpip">⚡ {{ pipInstant }}</span><span class="gpip">🤖 {{ pipAi }}</span></div>
+</div>
+<div class="gfeats">
+<sc-for list="{{ feats }}" as="f" hint-placeholder-count="4">
+<div class="gcard" style="--fc:{{ f.c }}">
+<div class="gicon2">{{ f.icon }}</div>
+<div class="gftitle">{{ f.title }}</div>
+<div class="gfdesc">{{ f.desc }}</div>
+</div>
+</sc-for>
+</div>
+<p class="gfoot">{{ footLine }}</p>
+</section>
+</main>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { lang: 'en', tickOpen: false, loggedIn: undefined };
+  crawl() {
+    const items = [
+      ['June NFP (Jul 2) — miss +57K vs +113K', '#f59e0b'],
+      ['June CPI (Jul 14)', '#ef4444'],
+      ['GOOGL Earnings (Jul 22)', '#38bdf8'],
+      ['FOMC Decision (Jul 29)', '#ef4444'],
+      ['MSFT + META Earnings (Jul 29)', '#ef4444'],
+      ['Fed 3.50–3.75%', '#64748b'], ['VIX 16.45', '#64748b'],
+    ];
+    const kids = [];
+    items.forEach(([t, c], i) => {
+      if (i > 0) kids.push(React.createElement('span', { key: 's' + i, className: 'sep' }, '•'));
+      kids.push(React.createElement('span', { key: 't' + i, style: { color: c } }, t));
+    });
+    return React.createElement('span', { style: { display: 'inline-flex', alignItems: 'center' } }, kids);
+  }
+  renderVals() {
+    const th = this.state.lang === 'th';
+    const loggedIn = this.state.loggedIn ?? (this.props.loggedIn ?? false);
+    const feats = [
+      { icon:'🎯', c:'#3b82f6', title: th?'บันทึกแผนก่อนเทรด':'Plan-first logging', desc: th?'ล็อก entry, TP1-3 และ stop-loss ทันทีที่เปิดโพซิชัน — ก่อนอารมณ์จะเปลี่ยนแผน':'Lock in entry, TP1–3 and stop-loss the moment you open a position — before emotion can rewrite the plan.' },
+      { icon:'✦', c:'#8b5cf6', title: th?'AI ตรวจสอบแผน':'AI plan validation', desc: th?'Claude ตรวจทุกโพซิชันเทียบราคาจริง + ข่าวล่าสุด แล้วให้คำตัดสิน BUY / WATCH / CUT':'Claude checks every open trade against live price + fresh news and gives a BUY / WATCH / CUT verdict on demand.' },
+      { icon:'🚨', c:'#ef4444', title: th?'แจ้งเตือน Stop-loss':'Stop-loss alerts', desc: th?'โพซิชันที่ราคาทะลุ stop จะถูกแจ้งเตือนทันที ไม่ต้องมารู้ทีหลังสามวัน':'Positions trading through your stop are flagged instantly — no more finding out three days late.' },
+      { icon:'📊', c:'#10b981', title: th?'Win-rate & Expectancy':'Win-rate & expectancy', desc: th?'P&L จริง ความมีวินัยตามแผน และ win-rate แยกตามประเภท catalyst':"Real P&L, plan adherence and win-rate broken down by catalyst type, so you know what's actually working." },
+    ];
+    return {
+      lastUpdated:'02/07/2026', updLabel: th?'อัปเดต':'Updated',
+      enOn: th?'':'on', thOn: th?'on':'', setEn:()=>this.setState({lang:'en'}), setTh:()=>this.setState({lang:'th'}),
+      verdict: th?'เลือกเป็นตัว':'SELECTIVE', entryLabel: th?'เข้า Jul 2–13':'Entry Jul 2–13',
+      crawlA:this.crawl(), crawlB:this.crawl(), tickOpen:this.state.tickOpen, chevOpen:this.state.tickOpen?'open':'',
+      toggleTick:()=>this.setState(s=>({tickOpen:!s.tickOpen})),
+      loggedIn, notLoggedIn: !loggedIn, initials:'JD',
+      loginLbl: th?'เข้าสู่ระบบ':'Login', toggleAuth:()=>this.setState({loggedIn:!loggedIn}),
+      aiPowered: th?'ขับเคลื่อนด้วย AI':'AI-powered',
+      journalTitle: th?'Trade Journal':'Trade Journal',
+      journalSub: th?'บันทึกทุกแผนเทรด ให้ราคาจริง + Claude คอยจับตา และดูด้วยตัวเลขจริงว่าคุณทำตามกฎของตัวเองแค่ไหน':'Log every trade plan, let live prices + Claude keep watch, and see — with real numbers — whether you actually stick to your own rules.',
+      gLoginLbl: th?'เข้าสู่ระบบด้วย Google':'Log in with Google',
+      trustLine: th?'ฟรี · เข้าสู่ระบบด้วย Google เท่านั้น ไม่ต้องจำรหัสผ่าน':'Free · Google login only, no password to manage',
+      pipPrivate: th?'ส่วนตัว':'Private', pipInstant: th?'เห็นผลทันที':'Instant', pipAi: th?'ตรวจโดย AI':'AI-checked',
+      feats,
+      footLine: th?'ไม่ใช่คำแนะนำการลงทุน · ข้อมูลเทรดของคุณเป็นส่วนตัวเฉพาะบัญชีคุณ':'Not financial advice · Your trades are private to your account',
+    };
+  }
+}
+</script>
+</body>
+</html>

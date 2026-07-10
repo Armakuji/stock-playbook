@@ -10,7 +10,6 @@ import { RankingChangeTable } from "../RankingChangeTable";
 import { CatalystCalendar } from "../CatalystCalendar";
 import { ThemeGroups } from "../ThemeGroups";
 import { FactorRiskPanel } from "../FactorRiskPanel";
-import { DashboardSwitcher } from "../DashboardSwitcher";
 
 const TOP_N = 10;
 
@@ -22,14 +21,10 @@ export function CatalystContent({
   ranked,
   rankChanges,
   calendarEvents,
-  dashboardCounts,
-  lastUpdated,
 }: {
   ranked: Ranked;
   rankChanges: RankChanges;
   calendarEvents: CalendarEvents;
-  dashboardCounts: { dca: number; catalyst: number; turbo: number };
-  lastUpdated: string;
 }) {
   const { lang } = useLang();
   const th = lang === "th";
@@ -67,8 +62,6 @@ export function CatalystContent({
 
   return (
     <div className="theme-air">
-      <DashboardSwitcher active="catalyst" counts={dashboardCounts} lastUpdated={lastUpdated} />
-
       {/* ── Hero header ───────────────────────────────────────── */}
       <div style={{ marginBottom: 24 }}>
         <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 4 }}>
