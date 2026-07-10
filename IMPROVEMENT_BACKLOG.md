@@ -119,15 +119,17 @@ Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open N
 **ไฟล์:** `web/app/Landing.tsx` (description ✅) · หน้าใหม่ `web/app/earth/*` · `web/data/earth/` (หรือชื่อที่เทียบเท่า) · skill ใหม่ · `web/app/layout.tsx` (nav ธาตุ 4 เมื่อเปิด)
 **เป้า:** Earth card กดเข้าได้ · โฟกัส REE + precious metals · สี Earth = อำพัน-บรอนซ์/โอลีฟ (เลี่ยงชนเขียวของ Air)
 
-## 13. i18n เฟสถัดไป — panel/tool ที่ยังไม่ผูก global EN/TH
+## 13. ✅ DONE — i18n เฟสถัดไป — panel/tool ที่ยังไม่ผูก global EN/TH
 
 **ปัญหา:** ทำ global LanguageContext + toggle EN/TH (default EN, persist localStorage `srw-lang`) แล้ว และผูกครบ: Header/nav, Landing, DCA (page+card), Turbo (page+card), Catalyst hero/stats/badges, report page + simulator. **แต่ยังเหลือ component ที่มี string ไทย/อังกฤษ baked อยู่และยังไม่อ่าน `useLang()`** → พอสลับภาษา ส่วนพวกนี้ไม่เปลี่ยน
-**ทำ:** เติม `const { lang } = useLang(); const th = lang === "th";` + ternary ในแต่ละตัว (ทุกตัวอยู่ใต้ `LanguageProvider` แล้ว เรียก hook ได้เลย):
-  - `web/app/FactorRiskPanel.tsx` · `web/app/MarketTimingPanel.tsx` · `web/app/RankingChangeTable.tsx` · `web/app/CatalystCalendar.tsx` · `web/app/ThemeGroups.tsx` · `web/app/StockCard.tsx`
-  - Tools: `web/app/backtest/BacktestContent.tsx` · `web/app/journal/JournalContent.tsx`
-  - การ์ด Turbo บางจุด (TurboBar "Price → Moon") + DcaCard quality labels (Moat/Margin/FCF/Balance) ถ้าอยากแปลด้วย
-**ไฟล์:** ตามรายการบน · pattern อ้างอิงจาก `web/app/Landing.tsx` / `web/app/dca/DcaContent.tsx`
-**เป้า:** สลับ EN/TH แล้วทั้งเว็บเปลี่ยนครบ 100% ไม่เหลือ string ค้างภาษาเดียว
+**ทำ (audited 2026-07-10 — scope จริงเหลือแค่ 5 ไฟล์):** ตรวจสอบสถานะปัจจุบันพบว่า `BacktestContent`, `JournalContent`, `TurboCard`, `DcaCard`, `CatalystContent`, `MarketTicker` (แทนที่ `MarketTimingPanel` เดิมที่ list ไว้ในนี้ — คอมโพเนนต์นั้นถูกยกเลิกไปแล้ว), `Header`, `Landing` ผูก `useLang()` ครบแล้วจากงาน #18/#24 — ไม่ต้องแตะ **scope จริงเหลือแค่ 5 ไฟล์ (`useLang: 0` ทุกตัว):**
+  - `web/app/FactorRiskPanel.tsx` — เติม `useLang` + แปล header "FACTOR RISK" และบรรทัดสรุป pick/book
+  - `web/app/RankingChangeTable.tsx` — แปล header, column headers, pagination, "NEW"/empty-source fallback, "View →"
+  - `web/app/CatalystCalendar.tsx` — แปล header, count, legend, TODAY/TOMORROW, cluster badge, "est."
+  - `web/app/ThemeGroups.tsx` — แปล stock count, "next Nd", "avg conviction", sort label, concentration warning
+  - `web/app/StockCard.tsx` (highest-traffic) — เติม `useLang` + เรียก `applyTranslation(report, lang)` จาก `lib/i18n.ts` เพื่อให้ `report.summary` อ่านจาก `i18n.th` จริง (เดิมโชว์ EN ตายตัว) · แปล stat-chip labels (Fed Risk/Approach/Sector), Price-bar labels (ENTRY/Price vs Targets), tooltip
+**ไฟล์:** ตามรายการบน · pattern อ้างอิงจาก `web/app/dca/DcaContent.tsx` (`useLang` + ternary) และ `web/app/report/[ticker]/ReportContent.tsx` (`applyTranslation` สำหรับข้อมูลจาก `i18n.th`)
+**เป้า:** สลับ EN/TH แล้วทั้งเว็บเปลี่ยนครบ 100% ไม่เหลือ string ค้างภาษาเดียว ✅ — verify: `tsc --noEmit` ผ่าน, SSR default-TH smoke test ยืนยันทุก string ขึ้น TH ครบ, revert กลับ default EN แล้ว
 
 ## 14. Journal API — public multi-user journal (NestJS + Postgres + Google OIDC)
 
@@ -330,6 +332,16 @@ dev server) เห็น class ครบ ไม่มี error ใน server log
   3. เช็ค hit-rate อีกครั้งเมื่อ n ต่อ type ≥ 20 จากหลายช่วงเวลา ก่อน commit การเปลี่ยน screen logic ใด ๆ
 **ไฟล์:** `scripts/fetch-backtest-prices.mjs` · `scripts/build-skill-feedback.mjs` · `web/data/skill-feedback.json` · (ถ้าทำข้อ 2) `.claude/commands/catalyst-list.md` + `web/lib/north-star.ts` (ประสาน v2.1)
 **เป้า:** รู้ว่า 0/12 คือ sector regime หรือ pick structure · ถ้าเป็นอย่างหลัง top-5 ต้องมีสัดส่วน pick ที่ +30%/14d เป็นไปได้จริงตามขนาด market cap · เกี่ยวพัน: North Star v2.1/v2.2 + Small-cap quota
+
+## 29. Contact links — เพิ่ม email + GitHub บนเว็บ
+
+**ปัญหา:** เว็บไม่มีช่องทางติดต่อเลย — footer ใน `web/app/layout.tsx` (บรรทัด ~139) มีแค่ข้อความ ไม่มี link email/GitHub · คนเจอเว็บ (โดยเฉพาะหลัง #19 SEO เริ่มติด index และ #14 Phase 2 เปิด public signup) ไม่มีทาง report ปัญหา/ติดต่อ/ดู source
+**ทำ:**
+  1. เพิ่ม contact links ใน footer กลาง (`web/app/layout.tsx` — โชว์ทุกหน้า): email **`mailto:armakuji@hotmail.com`** + GitHub profile **`https://github.com/Armakuji`** (เคาะแล้ว 2026-07-10 — ใช้ profile ไม่ใช่ repo link) — icon เล็ก ๆ + label สไตล์เดียวกับ theme (dark, muted)
+  2. พิจารณาใส่ซ้ำใน Landing footer (`web/app/Landing.tsx` บรรทัด ~177) ถ้า layout footer ไม่ปรากฏบนหน้า landing
+  3. i18n EN/TH ตาม pattern `useLang()` (label เช่น "Contact" / "ติดต่อ")
+**ไฟล์:** `web/app/layout.tsx` (footer) · `web/app/Landing.tsx` (ถ้าจำเป็น) · แนวทาง i18n จากไฟล์ที่ทำใน #13
+**เป้า:** ทุกหน้ามี link email (armakuji@hotmail.com) + GitHub (github.com/Armakuji) มองเห็นได้ใน footer · กดแล้วเปิด mail client / profile จริง · สไตล์กลมกลืน theme เดิม
 
 ---
 

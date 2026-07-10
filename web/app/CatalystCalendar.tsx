@@ -3,12 +3,13 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { CalendarEvent } from "@/lib/catalyst-calendar";
+import { useLang } from "@/lib/LanguageContext";
 
 const PAGE_SIZE = 5;
 
 function CalPagination({
-  page, totalPages, onPrev, onNext,
-}: { page: number; totalPages: number; onPrev: () => void; onNext: () => void }) {
+  page, totalPages, onPrev, onNext, th,
+}: { page: number; totalPages: number; onPrev: () => void; onNext: () => void; th: boolean }) {
   if (totalPages <= 1) return null;
   return (
     <div style={{
@@ -31,7 +32,7 @@ function CalPagination({
           transition: "opacity 0.15s",
         }}
       >
-        ← Prev
+        {th ? "← ก่อนหน้า" : "← Prev"}
       </button>
 
       <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
@@ -68,7 +69,7 @@ function CalPagination({
           transition: "opacity 0.15s",
         }}
       >
-        Next →
+        {th ? "ถัดไป →" : "Next →"}
       </button>
     </div>
   );
@@ -91,9 +92,9 @@ function countdownColor(days: number): string {
   return "#10b981";
 }
 
-function countdownLabel(days: number): string {
-  if (days === 0) return "TODAY";
-  if (days === 1) return "TOMORROW";
+function countdownLabel(days: number, th: boolean): string {
+  if (days === 0) return th ? "วันนี้" : "TODAY";
+  if (days === 1) return th ? "พรุ่งนี้" : "TOMORROW";
   return `${days}d`;
 }
 
@@ -111,13 +112,14 @@ interface RowProps {
   isFirst: boolean;
   isClusterHead: boolean;
   clusterSize: number;
+  th: boolean;
 }
 
-function EventRow({ event, days, isFirst, isClusterHead, clusterSize }: RowProps) {
+function EventRow({ event, days, isFirst, isClusterHead, clusterSize, th }: RowProps) {
   const [hovered, setHovered] = useState(false);
   const verdictColor = VERDICT_COLORS[event.verdict] ?? "#64748b";
   const cdColor = countdownColor(days);
-  const cdLabel = countdownLabel(days);
+  const cdLabel = countdownLabel(days, th);
 
   return (
     <div
@@ -143,7 +145,7 @@ function EventRow({ event, days, isFirst, isClusterHead, clusterSize }: RowProps
           background: "#f59e0b22", color: "#f59e0b", border: "1px solid #f59e0b40",
           fontFamily: "var(--font-mono, monospace)", letterSpacing: "0.5px",
         }}>
-          {clusterSize} events this week
+          {th ? `${clusterSize} events สัปดาห์นี้` : `${clusterSize} events this week`}
         </span>
       )}
 
@@ -195,7 +197,7 @@ function EventRow({ event, days, isFirst, isClusterHead, clusterSize }: RowProps
               background: "#3b82f618", color: "#3b82f6", border: "1px dashed #3b82f640",
               fontFamily: "var(--font-mono, monospace)", flexShrink: 0,
             }}>
-              est.
+              {th ? "ประมาณ" : "est."}
             </span>
           )}
         </div>
@@ -228,6 +230,8 @@ function EventRow({ event, days, isFirst, isClusterHead, clusterSize }: RowProps
 export function CatalystCalendar({ events }: { events: CalendarEvent[] }) {
   const [days, setDays] = useState<number[]>([]);
   const [page, setPage] = useState(0);
+  const { lang } = useLang();
+  const th = lang === "th";
 
   // Compute days remaining client-side so countdown is always fresh
   useEffect(() => {
@@ -268,7 +272,7 @@ export function CatalystCalendar({ events }: { events: CalendarEvent[] }) {
             fontSize: "clamp(16px, 3vw, 22px)", fontWeight: 900, margin: 0,
             letterSpacing: "-0.5px", fontFamily: "var(--font-display, sans-serif)",
           }}>
-            Catalyst Calendar
+            {th ? "ปฏิทิน Catalyst" : "Catalyst Calendar"}
           </h2>
         </div>
         <span style={{
@@ -276,11 +280,15 @@ export function CatalystCalendar({ events }: { events: CalendarEvent[] }) {
           fontWeight: 700, padding: "3px 9px", borderRadius: 6,
           border: "1px solid var(--border)", background: "var(--card)",
         }}>
-          {events.length} events
+          {th ? `${events.length} เหตุการณ์` : `${events.length} events`}
         </span>
       </div>
       <p style={{ fontSize: 12, color: "var(--muted)", margin: "0 0 16px", fontFamily: "var(--font-mono, monospace)" }}>
-        Upcoming events across all tracked stocks · <span style={{ color: "#ef4444" }}>red ≤ 2d</span> · <span style={{ color: "#f59e0b" }}>amber ≤ 7d</span> · dashed = estimated date
+        {th ? (
+          <>เหตุการณ์ที่จะมาถึงของหุ้นทั้งหมดที่ติดตาม · <span style={{ color: "#ef4444" }}>แดง ≤ 2 วัน</span> · <span style={{ color: "#f59e0b" }}>ส้ม ≤ 7 วัน</span> · เส้นประ = วันที่ประมาณ</>
+        ) : (
+          <>Upcoming events across all tracked stocks · <span style={{ color: "#ef4444" }}>red ≤ 2d</span> · <span style={{ color: "#f59e0b" }}>amber ≤ 7d</span> · dashed = estimated date</>
+        )}
       </p>
 
       <div style={{
@@ -298,6 +306,7 @@ export function CatalystCalendar({ events }: { events: CalendarEvent[] }) {
               isFirst={globalIdx === 0}
               isClusterHead={clusterInfo[globalIdx].isHead}
               clusterSize={clusterInfo[globalIdx].size}
+              th={th}
             />
           );
         })}
@@ -307,6 +316,7 @@ export function CatalystCalendar({ events }: { events: CalendarEvent[] }) {
           totalPages={totalPages}
           onPrev={() => setPage((p) => Math.max(0, p - 1))}
           onNext={() => setPage((p) => Math.min(totalPages - 1, p + 1))}
+          th={th}
         />
       </div>
     </div>

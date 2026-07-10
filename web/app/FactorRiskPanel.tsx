@@ -2,9 +2,12 @@
 
 import { useState } from "react";
 import { FactorExposure } from "@/lib/factors";
+import { useLang } from "@/lib/LanguageContext";
 
 export function FactorRiskPanel({ risks }: { risks: FactorExposure[] }) {
   const [open, setOpen] = useState(false);
+  const { lang } = useLang();
+  const th = lang === "th";
 
   if (risks.length === 0) return null;
 
@@ -39,7 +42,7 @@ export function FactorRiskPanel({ risks }: { risks: FactorExposure[] }) {
       >
         {/* Icon + label */}
         <span style={{ fontSize: 10, fontWeight: 800, color: accentColor, flexShrink: 0 }}>
-          ⚡ FACTOR RISK
+          ⚡ {th ? "ความเสี่ยง FACTOR" : "FACTOR RISK"}
         </span>
 
         {/* Factor chips */}
@@ -116,8 +119,13 @@ export function FactorRiskPanel({ risks }: { risks: FactorExposure[] }) {
                   {f.tickers.join(" · ")}
                 </span>
                 <span style={{ color: "var(--muted)", fontSize: 10 }}>
-                  {f.tickers.length} pick · {Math.round(f.ratio * 100)}% ของ book
-                  {f.ratio >= 0.5 && " — เคลื่อนไหวพร้อมกันบนข่าว factor เดียว"}
+                  {th
+                    ? `${f.tickers.length} ตัว · ${Math.round(f.ratio * 100)}% ของ book`
+                    : `${f.tickers.length} pick · ${Math.round(f.ratio * 100)}% of book`}
+                  {f.ratio >= 0.5 &&
+                    (th
+                      ? " — เคลื่อนไหวพร้อมกันบนข่าว factor เดียว"
+                      : " — moves together on a single factor's news")}
                 </span>
               </div>
             );
