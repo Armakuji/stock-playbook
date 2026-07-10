@@ -22,7 +22,7 @@ Every analysis follows a strict research-first workflow before generating any ou
 ## Available slash commands
 - `/analyze <TICKER>` — analyze **ONE specific stock** → full single-stock report → saves JSON to `web/data/reports/` + git push → Vercel deploys. This is single-ticker only; do NOT screen/build a dashboard here. (uses `stock-report` skill)
 - `/preview <TICKER>` — dry-run single-stock analysis → research + assemble the report JSON in chat for review · **no JSON save · no git push** (the site is the presentation layer; run `/analyze` to publish). Does NOT generate HTML.
-- `/catalyst-list` *(formerly `/dashboard` / `/analyze-catalyst`; `/dashboard` still works as an alias)* — **generate the catalyst dashboard**: find 5 stocks with 30%+ upside (Tech/AI/Space/Semiconductors/Robotics first) → save JSON reports for each → **log runners-up to `web/data/near-misses.json`** (counterfactual) → **run the `analyze-market-situation` skill** (writes `web/data/market-timing.json`) → git push → dashboard visible at `/catalyst`, market-timing ticker visible site-wide (fused under the header on every page)
+- `/catalyst-list` *(formerly `/dashboard` / `/analyze-catalyst`; `/dashboard` still works as an alias)* — **generate the catalyst dashboard**: find 5 stocks with 30%+ upside (Tech/AI/Space/Semiconductors/Robotics first) → save JSON reports for each → **log runners-up to `web/data/near-misses.json`** (counterfactual, `lane: "core"`) → git push → dashboard visible at `/catalyst`. Does NOT refresh market-timing — that's `/macro`-only now (see below).
 - `/analyze-turbo <TICKER>` — single moonshot report (300%+ speculative) → saves JSON to `web/data/speculative/` → git push → visible at `/turbo` (uses `turbo-report` skill)
 - `/turbo-list` — find the **5 best moonshot plays** (small/mid-cap, ≥200–300% bull case, binary catalyst) → save JSON to `web/data/speculative/` for each → git push → visible at `/turbo`. Ranked by potential upside (bull/moon %), NOT catalyst proximity. No market-timing step. (uses `turbo-report` skill)
 - `/analyze-dca <TICKER>` — single quality-core report → saves JSON to `web/data/dca/` → git push → visible at `/dca` (uses `dca-report` skill)
@@ -45,19 +45,18 @@ Rules:
 
 ---
 
-## CRITICAL: After every /catalyst-list — run analyze-market-situation
+## Market-timing refresh — `/macro` only
 
-(`/catalyst-list` is the renamed `/dashboard`; the alias still triggers this flow.)
+`web/data/market-timing.json` is refreshed **only** by `/macro` (via the `analyze-market-situation`
+skill). `/catalyst-list` and `/turbo-list` do NOT touch it — decoupled so a list run's failure/skip
+can't silently leave macro state stale under a false "handled" assumption. Run `/macro` on its own
+cadence to keep it current.
 
-After saving all stock JSON reports and near-misses.json, the `/catalyst-list` command MUST also
-invoke the **`analyze-market-situation`** skill (the same skill `/macro` uses — do not re-derive
-its research/scoring/schema here, see `analyze-market-situation/SKILL.md`). It researches Fed/macro
-conditions and writes `web/data/market-timing.json` itself. Then:
-
-- **Include `web/data/market-timing.json` in the git commit** — `git add web/data/reports/ web/data/market-timing.json`
-
-The `MarketTimingPanel` (rendered on the home page `/`) reads this file and renders the entry
-window calendar. Without this file, the panel is hidden.
+The `MarketTicker` component (`web/app/MarketTicker.tsx`, wired in `web/app/layout.tsx` — rendered
+site-wide under the header on every page, not just `/`) reads this file via `loadMarketTiming()`.
+It hides entirely when the file is missing or unreadable (`if (!data) return null`), but does
+**not** auto-hide when merely stale — it always displays `generatedAt` so staleness is visible to
+users rather than silently hidden.
 
 ---
 

@@ -1,5 +1,5 @@
 {
-  "_note": "Candidates that PASSED the /dashboard screen but did NOT make the top 5. Logged to fight survivorship bias — their real outcome is the counterfactual that tells us whether the top-5 cut actually adds alpha. Append one object per rejected candidate per dashboard run.",
+  "_note": "Candidates that PASSED the /dashboard (or /turbo-list) screen but did NOT make the top 5. Logged to fight survivorship bias — their real outcome is the counterfactual that tells us whether the top-5 cut actually adds alpha. Append one object per rejected candidate per dashboard run. `lane`: \"core\" (default /catalyst-list, +30%/14d) or \"turbo\" (/turbo-list, +50%/30d) — entries with no `lane` field predate this split and are treated as \"core\".",
   "nearMisses": [
     {
       "date": "2026-06-23",
@@ -144,6 +144,56 @@
       "priceAtScreen": 245,
       "topAnalystTarget": 385,
       "impliedUpside": 57
+    },
+    {
+      "date": "2026-07-10",
+      "ticker": "TSM",
+      "reason": "Disqualified: Q2 earnings Jul 16 is a strong near-term catalyst and Strong Buy consensus, but average analyst target implies only ~17% upside from $437.31 — below the 30% threshold. BofA's $590 target (+35%) is a single-firm outlier vs. a ~$520 consensus average, same reasoning that disqualified TSM on 2026-07-01. Revisit if Jul 16 beat + raised FY guidance pulls consensus targets up broadly.",
+      "priceAtScreen": 437.31,
+      "topAnalystTarget": 520,
+      "impliedUpside": 17
+    },
+    {
+      "date": "2026-07-10",
+      "ticker": "TER",
+      "reason": "Disqualified: Strong Buy consensus (11 buy, 1 hold) and a real Aug 5 2026 earnings catalyst, but the average analyst price target implies only ~11% upside from ~$381 — individual bullish targets (Susquehanna/Cantor $550) are outliers vs. the ~$423 consensus average. Stock already up 84% YTD, priced for a lot of good news.",
+      "priceAtScreen": 381,
+      "topAnalystTarget": 423,
+      "impliedUpside": 11.2
+    },
+    {
+      "date": "2026-07-10",
+      "ticker": "ASTS",
+      "reason": "Disqualified: Still Hold consensus (6-11 analysts) with average target $81.47-$88.53 vs. current $73.88 = only ~11-20% upside. BlueBird 11-13 satellite launch targeted for early August is a real dated catalyst, but analyst upside remains below the 30% threshold — same recurring reason as prior near-misses on this ticker (2026-06-26, 06-29, 07-01).",
+      "priceAtScreen": 73.88,
+      "topAnalystTarget": 88,
+      "impliedUpside": 19.8
+    },
+    {
+      "date": "2026-07-10",
+      "ticker": "OUST",
+      "reason": "Disqualified: Strong Buy consensus (5 analysts) and Aug 5 2026 earnings catalyst, but stock dropped 15.77% intraday to $50.60 same-day and aggregator price targets ($39-49 from some sources) are stale/inconsistent with the post-drop price. Best-effort estimate below uses the pre-drop 6-analyst average target ($49) against the new post-drop price — analysts hadn't had time to revise same-day — which reads as roughly flat, not a 30%+ setup. Too much data noise to screen confidently today; revisit once target data catches up to the post-drop price.",
+      "priceAtScreen": 50.6,
+      "topAnalystTarget": 49,
+      "impliedUpside": -3.2
+    },
+    {
+      "date": "2026-07-10",
+      "ticker": "QUBT",
+      "lane": "turbo",
+      "reason": "Disqualified from turbo top 5: Quantum Computing Inc. has real momentum (federal CHIPS/quantum program tailwind, sector index +69.3% YTD) and a 3-month forecast of $31.70 vs current $11.27, but that's ~181% implied upside — under the ≥200% moonshot floor. No single binary catalyst identified this week beyond broad quantum-sector strength. Revisit if a specific dated catalyst (contract, partnership) pushes the bull case past 200%.",
+      "priceAtScreen": 11.27,
+      "topAnalystTarget": 31.7,
+      "impliedUpside": 181.3
+    },
+    {
+      "date": "2026-07-10",
+      "ticker": "RGTI",
+      "lane": "turbo",
+      "reason": "Disqualified from turbo top 5: Rigetti Computing has a real technology roadmap (Fab-1 chip cycle advantage, 150Q FY26 / 1,000Q FY27 targets) but average analyst target implies only ~37% upside from ~$21.28 — nowhere near the ≥200% moonshot floor. Shares down 22.47% over the past month, Zacks Rank #4 (Sell) on valuation/cash-burn concerns. Not a turbo setup right now; a quantum-computing-sector name for the core/watchlist lens instead, not turbo.",
+      "priceAtScreen": 21.28,
+      "topAnalystTarget": 29.24,
+      "impliedUpside": 37.4
     }
   ]
 }

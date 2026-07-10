@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "backtest:fetch": "node ../scripts/fetch-backtest-prices.mjs",
+    "backtest:fetch": "node ../scripts/fetch-backtest-prices.mjs && npm run feedback:build",
+    "feedback:build": "node ../scripts/build-skill-feedback.mjs",
     "validate": "node ../scripts/validate-reports.mjs"
   },
   "dependencies": {

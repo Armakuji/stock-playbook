@@ -1,0 +1,218 @@
+{
+  "ticker": "AVGO",
+  "companyName": "Broadcom Inc.",
+  "companyDescription": "AI Semiconductors + Infrastructure Software · Custom AI XPUs for hyperscalers (Google TPU, Meta, OpenAI Jalapeño) + VMware enterprise software",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-10T00:00:00.000Z",
+  "price": 403.24,
+  "priceChange": 3.26,
+  "priceNote": "Trading $403.24 (+3.26%), extending the Jul 9 pop after Broadcom reaffirmed Q3 AI chip revenue guidance at $16B and extended its custom-chip deal with Apple through 2031 — the market's clearest guidance-confidence signal since the Jun 3 guide-miss selloff.",
+  "marketCap": "$1.85T",
+  "sector": "Technology / Semiconductors",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 80,
+  "summary": "Broadcom just reaffirmed (not raised, but held firm on) Q3 AI chip revenue guidance at $16B on Jul 9, 2026, and extended its Apple custom-chip deal through 2031 — the stock popped 3.26% to $403.24 on the reassurance after the Jun 3 guidance-miss selloff. Consensus target (45 analysts) sits ~34% above the prior close, with Jefferies at $550. Q3 FY2026 earnings land Sep 3 — the next hard confirmation point on whether the AI chip business (Google TPU co-design, Meta, OpenAI Jalapeño ramp) is accelerating as promised.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 FY2026 Earnings",
+      "description": "First full quarterly print since the Jun 3 guidance miss and the Jul 9 reaffirm. Market wants to see the $16B AI chip guide actually delivered, and whether management finally raises the flat full-year $100B AI semis target.",
+      "urgencyLabel": "55 DAYS",
+      "dateBadge": "Sep 3, 2026",
+      "catalystDate": "2026-09-03",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🍎",
+      "name": "Apple Custom-Chip Deal Extension",
+      "description": "Extended through 2031 (announced Jul 9, 2026) — a $30B+ multiyear deal to design and produce custom wireless connectivity chips for Apple products, diversifying AVGO's custom-silicon base beyond hyperscaler AI accelerators.",
+      "urgencyLabel": "ANNOUNCED",
+      "dateBadge": "Jul 9, 2026",
+      "catalystDate": "2026-07-09",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🌶️",
+      "name": "OpenAI Jalapeño Chip — Initial Deployment",
+      "description": "Custom LLM-inference ASIC unveiled Jun 24, 2026 as part of the multi-year OpenAI-Broadcom accelerator partnership. Initial deployment targeted for H2 2026 — a concrete proof point for the custom-silicon TAM story.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-09-15",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "AVGO's own history shows guidance sensitivity, not just beat/miss: the Jun 3, 2026 print beat EPS ($2.44 vs $2.39 est) and revenue, yet the stock still fell ~14-15% because next-quarter AI chip guidance ($16B) came in below the ~$17.2B some analysts wanted",
+    "The Jul 9 reaffirm was a hold, not a raise — if Sep 3 guidance disappoints a second time, the multiple (still ~62x P/E) would likely compress hard",
+    "SOX-wide 'buyer exhaustion' concern — the Jul 2026 selloff hit Intel, AMD, Micron alongside AVGO, suggesting sector-level re-rating risk, not just company-specific",
+    "Hawkish Fed dot-plot shift pressures long-duration AI-capex multiples independent of AVGO execution",
+    "Customer concentration — Google, Meta, Apple, and now OpenAI represent an outsized share of custom-silicon revenue; any one program delay moves the stock",
+    "VMware/software growth disappointed in the Jun 3 print — the highest-margin segment showing early softness that hasn't been resolved yet"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q3 FY2026 Earnings",
+      "dateRange": "Sep 3, 2026",
+      "note": "Key test: does AI chip revenue actually hit the reaffirmed $16B, and does management finally raise the flat $100B full-year AI semis target",
+      "est": "est. AI chip rev ~$16B",
+      "highlight": "blue"
+    },
+    {
+      "event": "Jalapeño Initial Deployment",
+      "dateRange": "H2 2026",
+      "note": "First racks of the OpenAI custom inference chip go live — proof point for the multi-year accelerator deal",
+      "est": "target: by year-end 2026",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -18, "price": 331 },
+    { "label": "Base", "color": "yellow", "pct": 18, "price": 476 },
+    { "label": "Bull", "color": "green", "pct": 34, "price": 540 },
+    { "label": "Moon", "color": "purple", "pct": 36, "price": 550 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (45 analysts)", "target": 540, "rating": "Buy", "note": "Average target ~34% above the Jul 8 close of $386" },
+    { "firm": "Jefferies (Blayne Curtis)", "target": 550, "rating": "Buy", "note": "Reiterated Jul 2026 citing improving AI chip outlook" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held 3.50–3.75% for a 4th straight meeting (Jun 17, 2026). Next FOMC Jul 28–29 — CME FedWatch prices ~89% probability of another hold, but the June dot plot raised the median 2026 rate projection, now leaning toward a hike rather than a cut.",
+    "inflationNote": "Inflation still running above the 2% target; the hawkish dot-plot shift removes a rate-cut tailwind AI/growth names had been pricing in.",
+    "sectorImpact": "High-multiple AI/semis names like AVGO (~62x P/E) are the most rate-sensitive part of the market — a hawkish surprise compresses long-duration growth multiples faster than it hits earnings, layering on top of the guidance-sensitivity risk already in this name.",
+    "summary": "MEDIUM — no imminent hike, but the FOMC decision (Jul 28-29) lands before AVGO's Sep 3 earnings, and a hawkish surprise would compound guidance-miss risk in a name that has already proven twitchy on guidance."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 403, "note": "Current price — post guide-reaffirm pop", "timing": "Now" },
+      { "label": "Entry 2", "level": 365, "rangeMax": 380, "note": "Pullback toward pre-pop levels", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 330, "note": "Deep macro selloff / retest Jun 3 gap zone", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 476, "pct": 18.1, "note": "Base — Sep 3 guidance holds at $16B" },
+    "tp2": { "price": 540, "pct": 33.9, "note": "Consensus target — Q3 beat + raise" },
+    "tp3": { "price": 550, "pct": 36.4, "note": "Jefferies target — AI target raised + Jalapeño deploys on schedule", "moon": true },
+    "stopLoss": {
+      "tight": 365, "tightPct": -9.5, "tightNote": "Below pre-pop consolidation zone",
+      "hard": 330, "hardPct": -18.2, "hardNote": "Retest of Jun 3 guidance-miss gap — thesis needs re-underwriting",
+      "riskReward": "3.5 : 1",
+      "rrNote": "TP2 vs tight stop from Entry 2",
+      "rrWarning": "Good R/R on a dip entry given the fresh guide-reaffirm"
+    },
+    "verdict": "BUY the guide-reaffirm confirmation — scale in at $403, add on any pullback to $365-380 ahead of Sep 3 earnings. Target $476-540 if the $16B AI chip guide holds.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "AVGO historically runs up 5-10% in the weeks before earnings on AI-cycle optimism, but the Jun 3, 2026 print broke that pattern with a guidance-driven selloff instead. The Jul 9 reaffirm shows the market is now rewarding guidance confidence itself, ahead of the actual Sep 3 print.",
+    "preRunupTiming": "1-2 weeks pre-earnings historically, though muted since the Jun 3 guide miss",
+    "preRunupPct": "+5% to +10% (historical norm, pre-Jun 2026)",
+    "postWin": {
+      "avgPct": 4,
+      "range": "+3% to +15%",
+      "note": "Jul 9, 2026: stock rose 3.26% to 4.69% (sources vary intraday) on the AI chip guidance reaffirm + Apple deal extension — a smaller but real positive reaction. The larger comparable is Dec 2024 (FY24 Q4), when AVGO jumped ~15% after-hours on a raised medium-term AI revenue guide.",
+      "exampleDate": "Jul 2026 (guidance reaffirm) / Dec 2024 (guidance raise)"
+    },
+    "postLose": {
+      "avgPct": -14,
+      "range": "-13% to -15%",
+      "note": "Jun 3, 2026 (Q2 FY26): stock fell ~13-15% intraday despite an EPS/revenue beat, purely because next-quarter AI chip guidance ($16B) missed the ~$17.2B Street hoped for and the full-year $100B AI target wasn't raised. This is the direct, most recent comparable and the reason for the current guidance-sensitivity risk.",
+      "exampleDate": "Jun 2026"
+    },
+    "spotSizing": {
+      "pct": 6,
+      "reason": "BUY verdict with a dated Sep 3 catalyst and ~34% consensus upside, but the Jun 2026 guidance miss proved this name has real event risk around print day — size at 6% initial, add on a pullback toward $365-380 rather than chasing the post-reaffirm pop."
+    },
+    "stopPreCatalyst": {
+      "pct": -9,
+      "price": 365,
+      "note": "Below the pre-Sep-3 consolidation zone — would suggest the Jul 9 reaffirm optimism is fading"
+    },
+    "stopPostCatalyst": {
+      "pct": -14,
+      "note": "If Sep 3 AI chip guidance misses again (a second consecutive disappointment), exit — that would signal a genuine demand air-pocket, not conservative guidance"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "AVGO",
+      "event": "Jul 9, 2026 — AI chip guidance reaffirmed at $16B, Apple deal extended through 2031",
+      "date": "Jul 2026",
+      "movePct": 3.3,
+      "days": 1,
+      "outcome": "good",
+      "note": "Most recent, most directly comparable case — shows the market rewarding guidance confidence itself after the Jun 3 scare, the same dynamic Sep 3 earnings will be tested against."
+    },
+    {
+      "ticker": "AVGO",
+      "event": "Q2 FY26 earnings — AI chip guidance miss, full-year target held flat",
+      "date": "Jun 2026",
+      "movePct": -14,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Direct precedent for the guidance-sensitivity risk in this name: EPS/revenue beat, but the stock fell ~14% purely on next-quarter AI chip guidance missing Street's number."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Broadcom Stock Rises on Apple Chip Deal and $16B AI Guide",
+    "url": "https://phemex.com/blogs/broadcom-stock-apple-chip-deal-ai-guide",
+    "date": "Jul 2026"
+  },
+  "sources": [
+    "https://phemex.com/blogs/broadcom-stock-apple-chip-deal-ai-guide",
+    "https://ca.finance.yahoo.com/news/broadcom-avgo-ai-chip-momentum-171843575.html",
+    "https://www.cnbc.com/2026/06/03/broadcom-avgo-earnings-report-q2-2026.html",
+    "https://www.forbes.com/sites/petercohan/2026/07/08/intel-stock-down-21-inside-the-july-2026-semiconductor-selloff/",
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Broadcom เพิ่งยืนยัน (ไม่ได้ยกขึ้น แต่คงไว้) guidance AI chip Q3 ที่ $16B วันที่ 9 ก.ค. 2026 พร้อมต่อดีล custom chip กับ Apple ถึงปี 2031 — หุ้นเด้ง +3.26% เป็น $403.24 หลัง selloff จาก guidance miss 3 มิ.ย. consensus target (45 analyst) สูงกว่าราคาปิดก่อนหน้า ~34% Jefferies ให้ $550 Q3 FY2026 earnings 3 ก.ย. เป็นจุดพิสูจน์ถัดไป",
+      "priceNote": "ราคา $403.24 (+3.26%) ต่อเนื่องจากการเด้งวันที่ 9 ก.ค. หลังยืนยัน guidance",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "รายงาน Q3 FY2026 Earnings", "description": "earnings เต็มไตรมาสแรกหลัง guidance miss 3 มิ.ย. และ reaffirm 9 ก.ค. — ตลาดต้องการเห็นว่า guide $16B ทำได้จริง" },
+        { "name": "ต่อดีล Custom Chip กับ Apple", "description": "ต่อถึงปี 2031 (ประกาศ 9 ก.ค. 2026) — ดีล custom wireless chip มูลค่า $30B+ กระจาย custom-silicon base นอกเหนือจาก hyperscaler AI" },
+        { "name": "OpenAI Jalapeño Chip — เริ่ม Deploy", "description": "ชิป custom inference เปิดตัว 24 มิ.ย. — target deploy ล็อตแรกใน H2 2026" }
+      ],
+      "risks": [
+        "ประวัติ AVGO ไวต่อ guidance มากกว่า beat/miss — 3 มิ.ย. EPS/revenue beat แต่หุ้นยังร่วง ~14-15% เพราะ guide AI chip ต่ำกว่าคาด",
+        "การ reaffirm 9 ก.ค. เป็นการคงไว้ ไม่ใช่ยกขึ้น — ถ้า 3 ก.ย. guide พลาดอีกรอบ multiple (~62x) จะโดนกดแรง",
+        "แรงขายกระจายทั้ง SOX (Intel, AMD, Micron) — ความกังวลระดับ sector ไม่ใช่แค่ AVGO",
+        "Fed hawkish กดดัน multiple หุ้น AI duration ยาว",
+        "ลูกค้ากระจุกตัว — Google, Meta, Apple, OpenAI คิดเป็นสัดส่วนใหญ่ของ custom silicon revenue",
+        "VMware/software เติบโตต่ำกว่าคาดใน 3 มิ.ย. ยังไม่แก้ไข"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.50-3.75% เป็นครั้งที่ 4 ติด FOMC ถัดไป 28-29 ก.ค. — dot plot เอียง hawkish มากกว่า cut",
+        "inflationNote": "เงินเฟ้อยังสูงกว่าเป้า 2% — ลบ tailwind rate-cut ที่หุ้น AI เคย price-in",
+        "sectorImpact": "หุ้น AI/semis P/E สูงอย่าง AVGO (~62x) ไวต่อดอกเบี้ยที่สุด ซ้อนทับความเสี่ยง guidance-sensitivity ที่มีอยู่แล้ว",
+        "summary": "MEDIUM — FOMC 28-29 ก.ค. มาก่อน earnings 3 ก.ย. hawkish surprise จะซ้ำเติมความเสี่ยง guidance miss รอบสอง"
+      },
+      "entryStrategy": {
+        "verdict": "BUY จุดยืนยัน guidance — ทยอยเข้าที่ $403 เพิ่มเมื่อย่อ $365-380 ก่อน earnings 3 ก.ย. เป้า $476-540 ถ้า guide $16B ทำได้จริง",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — หลังเด้งจาก guidance reaffirm", "timing": "ตอนนี้" },
+          { "note": "โซนย่อกลับสู่ระดับก่อนเด้ง", "timing": "ถ้าย่อ" },
+          { "note": "selloff ลึกลง / retest gap 3 มิ.ย.", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "กรณีฐาน — guide 3 ก.ย. ยังคงที่ $16B" },
+        "tp2": { "note": "กรณีดี — consensus target, Q3 beat + ยกเป้า" },
+        "tp3": { "note": "Moon — ยกเป้าเต็มปี + Jalapeño deploy ตามแผน" },
+        "stopLoss": {
+          "tightNote": "หลุดโซน consolidation ก่อนเด้ง",
+          "hardNote": "retest gap guidance miss 3 มิ.ย. — thesis ต้องทบทวนใหม่",
+          "rrNote": "TP2 เทียบ tight stop จาก Entry 2",
+          "rrWarning": "R/R ดีถ้าเข้าตอนย่อหลัง guide reaffirm สด ๆ"
+        }
+      },
+      "estimateDates": [
+        { "event": "รายงาน Q3 FY2026 Earnings", "note": "จุดพิสูจน์ว่า AI chip revenue แตะ $16B จริงหรือไม่ และจะยกเป้าเต็มปี $100B หรือไม่" },
+        { "event": "Jalapeño เริ่ม Deploy ล็อตแรก", "note": "racks แรกของชิป custom inference กับ OpenAI ไปใช้งานจริง" }
+      ]
+    }
+  }
+}
