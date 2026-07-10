@@ -4,12 +4,21 @@
 
 export const dynamic = "force-dynamic";
 
+import type { Metadata } from "next";
 import { cookies } from "next/headers";
 import { Trade, AiValidateQuota } from "@/lib/journal-types";
 import { computeStats } from "@/lib/journal-math";
 import { getAllReports, getAllReportsGrouped } from "@/lib/reports";
 import { JournalContent } from "./JournalContent";
 import { LoginGate } from "./LoginGate";
+
+// Login-gated, per-user trade data — belt-and-suspenders with the /journal
+// disallow in robots.ts (this metadata-level noindex also covers crawlers
+// that ignore robots.txt but do respect the meta tag).
+export const metadata: Metadata = {
+  title: "Journal",
+  robots: { index: false, follow: false },
+};
 
 const API_ORIGIN = process.env.JOURNAL_API_ORIGIN ?? "http://localhost:4000";
 
