@@ -28,11 +28,17 @@ Run the `/catalyst-list` workflow from CLAUDE.md (the catalyst dashboard; former
    ```
    If the file doesn't exist, print `📊 Feedback prior: skill-feedback.json not found — skipping` instead.
 1. Screen for the 5 best stocks with 30%+ upside (Tech/AI/Space/Semiconductors/Robotics first). Research each live before writing (use `stock-report` per pick).
+   **30%+ upside gate — pinned definition:** measure against **consensus analyst price target vs.
+   current price** (the primary, required gate). The single highest named-firm target is supporting
+   color only — cite it, don't gate on it. Scenario-implied upside (Bull/Moon `scenarios[].pct`) is
+   NOT a substitute for the gate — a stock without real analyst-target coverage doesn't clear 30%+
+   just because its own Bull case says so.
 2. Save a JSON report per pick to `web/data/reports/`.
 3. Log runners-up to `web/data/near-misses.json` (counterfactual) — same shape as existing entries
    (`date`, `ticker`, `reason`, `priceAtScreen`, `topAnalystTarget`, `impliedUpside`) plus
-   `"lane": "core"`. `impliedUpside` must be a real number — if target data is noisy, log a
-   best-effort estimate and say so in `reason`; never write `null`, it breaks the counterfactual math.
+   `"lane": "core"`. `impliedUpside` uses the same consensus-target-vs-price definition as the gate
+   above, and must be a real number — if target data is noisy, log a best-effort estimate and say so
+   in `reason`; never write `null`, it breaks the counterfactual math.
 4. Validate (`node scripts/validate-reports.mjs`), `git add web/data/reports/ web/data/near-misses.json`,
    commit, push.
 5. Report the actual branch pushed. If it's not `main`, say "pushed to `<branch>` — merge to main

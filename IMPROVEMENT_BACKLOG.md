@@ -344,7 +344,7 @@ dev server) เห็น class ครบ ไม่มี error ใน server log
 **เป้า:** ทุกหน้ามี link email (armakuji@hotmail.com) + GitHub (github.com/Armakuji) มองเห็นได้ใน footer · กดแล้วเปิด mail client / profile จริง · สไตล์กลมกลืน theme เดิม
 **ผล (2026-07-10):** สร้าง `web/app/Footer.tsx` เป็น client component (`useLang()`) แยกจาก `layout.tsx` (server component) ตาม pattern เดียวกับ `MarketTicker`/`Header` — layout footer อยู่นอก `<main>` แต่ยังอยู่ใต้ `LanguageProvider` และ render ทุกหน้ารวมถึง landing (HomePage วาง `Landing` เป็น `children` ข้างใน `<main>` เดียวกัน) → **ไม่ต้องใส่ซ้ำใน `Landing.tsx`** (ข้อ 2 ไม่จำเป็น, ยืนยันด้วยการอ่านโครงสร้าง JSX) · verify: tsc/eslint clean (มี pre-existing warning ใน layout.tsx ไม่เกี่ยวกับงานนี้), curl ตรวจ `/`, `/catalyst`, `/report/AMD` เห็น link ครบ, สลับ default lang เป็น th ชั่วคราวยืนยัน "Contact"→"ติดต่อ" แล้ว revert กลับ
 
-## 30. Skill prompt hygiene sweep — 5 bugs + ตัดซาก radar-era ใน stock-report/turbo-report/list commands
+## 30. ✅ DONE — Skill prompt hygiene sweep — 5 bugs + ตัดซาก radar-era ใน stock-report/turbo-report/list commands
 
 **ปัญหา:** review prompt ทั้ง 4 ตัว (2026-07-10: `catalyst-list.md`, `turbo-list.md`, `stock-report`, `turbo-report`) พบ 5 bug จริง + ซากเก่าที่ขัดกติกาปัจจุบัน — commands สดเพราะเพิ่งผ่าน #25–#27 แต่ SKILL.md หลุด sync:
   1. **Stale push template ใน skills** — `stock-report` Step 4, `turbo-report` Step 5 (และ grep เจอใน `dca-report`, `analyze` skill ด้วย) ยัง hardcode `git push origin main` + confirm line "→ Vercel deploying" — กติกา honest push (#26) แก้เฉพาะ `.claude/commands/*` ไม่ได้แก้ skills → รัน `/analyze` เดี่ยวยัง claim เกินจริง
@@ -358,6 +358,27 @@ dev server) เห็น class ครบ ไม่มี error ใน server log
   8. (optional ถ้าไม่บาน) ลดสำเนา Step 0 tier rules ที่ตอนนี้ copy อยู่ 5 ที่ (2 commands + 3 skills, เนื้อเพี้ยนกันเล็กน้อยแล้ว) — ให้ skill เป็น canonical copy แล้ว command ชี้ไปหา · ถ้า scope ใหญ่เกินให้จดแยก item ใหม่
 **ไฟล์:** `skills/stock-report/SKILL.md` · `skills/turbo-report/SKILL.md` · `skills/dca-report/SKILL.md` · `skills/analyze/SKILL.md` (เช็ค stale template ข้อ 1) · `.claude/commands/catalyst-list.md` · `.claude/commands/turbo-list.md` · `CLAUDE.md` (ถ้าเพิ่ม Moonshot เข้า enum) · เช็ค symlink `.claude/skills/*` ว่าชี้ไฟล์เดียวกัน (ตาม #25 พบว่า dashboard-compare เป็น symlink)
 **เป้า:** ไม่มี prompt ไหน claim "Vercel deploying" / push main โดยไม่เช็ค branch · ไม่มี route/label/กติกาที่ตายแล้วเหลือใน skills · turbo-list พูดเสียงเดียวเรื่อง ranking · นิยาม 30% gate คงที่ข้ามรอบ run
+**ผล (2026-07-10):** ทำครบทั้ง 7 bug + จุด optional (#8) → **เคาะแล้ว: ทำ 1–7, ไม่ consolidate #8** (รายละเอียด + เหตุผลอยู่ #31):
+  1. แก้ push template ครบ 4 ไฟล์ (`stock-report` Step 4, `turbo-report` Step 5 **+ List mode point 4** ที่เจอเพิ่มระหว่างทำ, `dca-report` Step 3, `analyze` Step 4c) — `git push origin main` → `git push` + honest branch-report phrasing ตรงกับ `.claude/commands/*` ที่ทำใน #26
+  2. `/sing` → `/turbo` (แก้พร้อม push-template ข้อ 1 เพราะอยู่บรรทัดเดียวกัน)
+  3. `turbo-list.md` Step 0 sync กับ Step 1 แล้ว — "ranking is upside-first per the current spec... survival-first ranking is backlog #11 and not yet implemented" — sync คำเดียวกันใน `turbo-report/SKILL.md` Step 0 ด้วย (เดิมพูดคนละเสียงกับ command)
+  4. **เคาะ: เพิ่ม `"Moonshot"` เข้า enum ใน CLAUDE.md** — grep `web/lib/` + `web/app/` ยืนยันแล้วว่า `scoreLabel` เป็น `string` เฉยๆ ไม่มี switch/style logic ผูกกับค่านี้เลย (ทุกจุด render ตรงๆ ด้วย `??` fallback, ไม่แตะ scoring) → ปลอดภัย 100%
+  5. เพิ่ม "list mode: skip this step" ใน `stock-report` Step 4
+  6. ตัด `turbo-report` Step 6 "HTML Preview" + Turbo Visual System ทั้งก้อนแล้ว
+  7. ตรึงนิยาม 30%+ ใน `catalyst-list.md`: consensus analyst target vs current price = primary gate, top target = supporting color, scenario-implied ไม่ใช่ gate substitute — sync คำเดียวกันไปที่ near-miss `impliedUpside` note ด้วย
+  8. **ไม่ consolidate** — assessment เต็มอยู่ใน #31 ใหม่ (นับ drift จริง + เหตุผลที่ไม่ทำตอนนี้ + พบ broken symlink `.claude/skills/xvary-*` ระหว่างเช็ค)
+  **Verify:** `grep -rn "Vercel deploying"` เหลือเฉพาะใน "never say" rule text ✅ · `grep -rn "/sing"` ไม่มี ✅ · `node scripts/validate-reports.mjs` ผ่าน (113 reports, 0 blocking) ✅
+
+## 31. Step 0 feedback-prior dedup — assessed 2026-07-10, NOT consolidated (logged per #30 point 8)
+
+**ปัญหา:** #30 point 8 ขอให้นับ drift ของสำเนา Step 0 (skill-feedback.json advisory-prior block) ที่ตอนนี้อยู่ 5 ที่ — `.claude/commands/catalyst-list.md`, `.claude/commands/turbo-list.md`, `skills/stock-report/SKILL.md`, `skills/turbo-report/SKILL.md`, `skills/dashboard-compare/SKILL.md` — แล้วเคาะว่า consolidate ได้ไหม
+**สิ่งที่พบ:**
+  - **4 สำเนาจริงๆ ซ้ำกัน (2 คู่):** `catalyst-list.md` ↔ `stock-report/SKILL.md` และ `turbo-list.md` ↔ `turbo-report/SKILL.md` — command แต่ละตัวเขียน Step 0 แบบย่อ (ไม่มี `medianMAE` bullet, `scenarioCalibration` bullet, `nearMissCounterfactual` bullet ที่ skill เต็มมี) ก่อนแก้รอบนี้ `turbo-list.md` ยังมี ranking claim ขัดกับ `turbo-report` เอง (แก้แล้วใน #30 point 3 — sync คำเดียวกันทั้งคู่)
+  - **`dashboard-compare/SKILL.md` ไม่ใช่สำเนาซ้ำจริง** — ตั้งใจให้ semantics ต่างจาก 4 ที่บน: ผลจาก feedback ที่นี่เป็น **commentary-only** ห้าม re-rank/เปลี่ยน zone/เปลี่ยน Best-to-Open-NOW list เด็ดขาด (เขียนไว้ชัดเป็น "HARD GUARDRAIL" ในไฟล์) ต่างจาก `stock-report`/`turbo-report` ที่ tier-2 **ต้อง** บังคับปรับ upside/conviction/sizing จริง — อันนี้คือ scope ที่ต่างกันโดยตั้งใจ ไม่ใช่ bug ไม่ควรรวม
+  - **เคาะ: ไม่ consolidate ตอนนี้** — การให้ command ชี้ไปหา skill's Step 0 แทนที่จะ copy เนื้อมา เป็นการเปลี่ยน prompt ที่ agent ใช้จริงตอน run `/catalyst-list`/`/turbo-list` — ไม่มีทาง verify ว่า "behavior เหมือนเดิม" ได้ในแซนด์บ็อกซ์ (ต้องรัน live command จริงเทียบผลลัพธ์) ต่างจาก code refactor ที่ tsc/test ยืนยันได้ → ความเสี่ยงสูงกว่าประโยชน์ของการลด duplication ตอนนี้ ทำตามกติกา #30 point 8 ("ถ้าเสี่ยง behavior change อย่าทำ — จดไว้")
+  - **พบเพิ่ม (แยกเรื่อง ไม่ใช่ dedup แต่เกี่ยวกับ symlink check ที่ #30 ขอ):** `.claude/skills/xvary-stock-report`, `.claude/skills/xvary-turbo-report`, `.claude/skills/xvary-dca-report` เป็น **broken symlinks** ชี้ไปที่ `skills/xvary-*` ที่ไม่มีจริง (ของจริงคือ `skills/stock-report`, `skills/turbo-report`, `skills/dca-report` — ไม่มี `xvary-` prefix) — เช็คแล้วว่าไม่กระทบงาน #30 (ไม่มี "สำเนาที่สอง" ที่จะลืมแก้ เพราะ symlink เสียไม่ได้ชี้ไปไฟล์จริงไหนเลย) แต่เป็น repo hygiene issue แยกที่ควรมีคนดู — ไม่รู้ว่าเป็นความตั้งใจ (ปิดใช้งานชั่วคราว) หรือ typo ตกค้าง
+**ไฟล์:** อ่านอย่างเดียว ไม่แก้: `.claude/commands/catalyst-list.md` · `.claude/commands/turbo-list.md` · `skills/stock-report/SKILL.md` · `skills/turbo-report/SKILL.md` · `skills/dashboard-compare/SKILL.md` · `.claude/skills/xvary-*` (พบ broken symlink)
+**เป้า:** ถ้าจะทำจริง — consolidate `catalyst-list.md`/`turbo-list.md` ให้ชี้ไปหา skill's Step 0 แทน copy เนื้อ (ทำทีละคู่ + รัน live `/catalyst-list` และ `/turbo-list` จริงเทียบ output ก่อน-หลัง) และเคาะว่า `.claude/skills/xvary-*` ตั้งใจ broken หรือควรแก้เป็นชื่อจริง
 
 ---
 

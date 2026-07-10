@@ -90,16 +90,20 @@ Rules that matter:
 
 ## Step 4: Validate, save, push
 
+**List mode (called from `/catalyst-list`): skip this step** — the command validates/commits/pushes
+once at the end, after all 5 picks are saved. Only run the steps below for a standalone `/analyze`.
+
 ```bash
 cd /path/to/stock-radar-weekly
 node scripts/validate-reports.mjs            # anti-fabrication guardrail (must pass)
 git add web/data/reports/
 git commit -m "report: add <TICKER> report <YYYYMMDD>"
-git push origin main
+git push
 ```
 
-Then confirm in one line:
-> ✅ <TICKER> report saved → pushed → Vercel deploying → view at /report/<ticker>
+Report the actual branch pushed. If it's not `main`, say "pushed to `<branch>` — merge to main to
+deploy", never "Vercel deploying". Confirm in one line:
+> ✅ <TICKER> report saved → pushed → view at /report/<ticker>
 
 (No HTML file, no `present_files` — the website is the presentation layer. To view locally, open `/report/<ticker>` on the running site.)
 

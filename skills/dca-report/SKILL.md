@@ -153,12 +153,13 @@ cd /path/to/stock-radar-weekly
 node scripts/validate-reports.mjs            # checks reports/ + speculative/ + dca/
 git add web/data/dca/
 git commit -m "dca: add <TICKER> core report <YYYYMMDD>"   # or "dca: refresh list <YYYYMMDD>" for /dca-list
-git push origin main
+git push
 ```
 
 For `/dca-list` (5 picks), save all five JSON files then push once.
 
-Confirm: `✅ <TICKER> DCA report saved → pushed → Vercel deploying → visible at /dca`
+Report the actual branch pushed. If it's not `main`, say "pushed to `<branch>` — merge to main to
+deploy", never "Vercel deploying". Confirm: `✅ <TICKER> DCA report saved → pushed → visible at /dca`
 
 ## Visual system (the /dca page already uses this — for reference)
 
