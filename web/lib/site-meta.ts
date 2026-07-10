@@ -4,6 +4,19 @@ import { getAllReports } from "./reports";
 import { getAllSpeculativeReports } from "./speculative";
 import { getAllDcaReports } from "./dca";
 
+/** Single source of truth for the production origin — used for metadataBase,
+ *  canonical URLs, sitemap/robots, and JSON-LD across the app. */
+export const SITE_URL = "https://stockplaybook.app";
+
+/** Trim to ~maxLen chars on a word boundary, for meta descriptions (Google
+ *  truncates around 155-160 chars anyway — this just avoids a mid-word cut). */
+export function truncateDescription(text: string, maxLen = 155): string {
+  if (text.length <= maxLen) return text;
+  const cut = text.slice(0, maxLen);
+  const lastSpace = cut.lastIndexOf(" ");
+  return `${cut.slice(0, lastSpace > 0 ? lastSpace : maxLen)}…`;
+}
+
 /** Latest generatedAt across catalyst, turbo, DCA reports + market-timing.json */
 export function getSiteLastUpdatedIso(): string | null {
   const timestamps = [

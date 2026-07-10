@@ -161,12 +161,27 @@ Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open N
 **ไฟล์:** `web/app/Header.tsx`, `MarketTicker.tsx`, `Landing.tsx`, `DashboardSwitcher.tsx` (new), `dca/`+`catalyst/`+`turbo/` page+Content files, `ThemeGroups.tsx`, `StockCard.tsx`, `journal/LoginGate.tsx` · specs/plans in `docs/superpowers/specs/` + `docs/superpowers/plans/` (4× each, dated 2026-07-09)
 **เป้า:** identity "playbook" ครบทุกจุด ✅ · dark theme + สี verdict + ธีม 4 ธาตุคงเดิม ✅ · ทุก phase ผ่าน task-level review + final whole-branch review (opus) — bugs ที่เจอระหว่างทางแก้หมดแล้ว (nav-pill hover ที่ทำ gradient text หาย, pip-dot overflow ที่ real pick count 10/20/21 เกิน mockup demo data 6/4/3, tools-row hover ที่ขาด `!important`) · **ยังไม่ทำ** (logged เป็น backlog แยก): #23 DcaCard/TurboCard chip/gauge/bar pixel-tuning ละเอียด
 
-## 19. Improve SEO — search Google แล้วหาเว็บไม่เจอ
+## 19. ✅ โค้ดเสร็จแล้ว (manual ยังเหลือ) — Improve SEO — search Google แล้วหาเว็บไม่เจอ
 
 **ปัญหา:** stockplaybook.app ยังไม่ติด Google index เลย — ส่วนหนึ่งเพราะโดเมนใหม่มาก (เพิ่งซื้อ) แต่ฝั่งเว็บก็ยังไม่มีโครง SEO พื้นฐาน: ไม่มี sitemap/robots, metadata ต่อหน้าอาจไม่ครบ, ไม่มี structured data, ยังไม่ได้ submit Search Console
 **ทำ:** (1) **โค้ด** — App Router: เพิ่ม `web/app/sitemap.ts` (gen จากรายการ report/หน้า static ทั้งหมด) + `web/app/robots.ts` · เช็ค `generateMetadata` ทุกหน้า: title/description เฉพาะหน้า (โดยเฉพาะ `/report/[ticker]` — title แบบ "NVDA — StockPlaybook: entry, targets, catalyst"), canonical URL, OG/Twitter tags (รอ OG image จาก #18) · เพิ่ม JSON-LD structured data ที่เหมาะ (WebSite + Article ต่อ report) · ห้าม index หน้า auth-only (`/journal` → noindex) (2) **Manual (คนทำ)** — Google Search Console: verify domain (DNS TXT) → submit sitemap → ขอ index หน้าแรก · Bing Webmaster ด้วยก็ได้ฟรี (3) รอ — โดเมนใหม่ใช้เวลา index เป็นสัปดาห์ต่อให้ทำครบ อย่าตกใจ
 **ไฟล์:** `web/app/layout.tsx` (metadata กลาง) · `web/app/sitemap.ts` + `web/app/robots.ts` (ใหม่) · `web/app/report/[ticker]/page.tsx` + หน้า catalyst/dca/turbo/backtest (generateMetadata) · `web/lib/reports.ts` (list ticker สำหรับ sitemap)
 **เป้า:** search "StockPlaybook" / "stockplaybook.app" เจอเว็บใน Google · ทุก report page มี title/description/OG เฉพาะตัว · Search Console เห็น sitemap ครบ ไม่มี coverage error · เกี่ยวพัน: OG image รอ #18 (theme) — ทำ SEO โครงก่อนได้เลยไม่ต้องรอ
+
+**✅ โค้ดเสร็จ (2026-07-10):**
+  - `web/app/sitemap.ts` + `web/app/robots.ts` มีอยู่แล้วจากรอบก่อน (commit `1f89d10`, merge ไป `main` แล้ว) — รอบนี้เพิ่ม `disallow: "/api/"` (เดิมกัน `/journal` อย่างเดียว) และย้าย `SITE_URL` มา share จุดเดียวที่ `web/lib/site-meta.ts` (เดิมประกาศซ้ำ 3 จุด: layout/sitemap/robots)
+  - **`generateMetadata`/`metadata` ครบทุกหน้า** (เดิมไม่มีเลยสักหน้า นอกจาก root layout default): `/` , `/catalyst`, `/turbo`, `/dca`, `/backtest` — title+description+canonical เฉพาะหน้า · `/journal` — `robots:{index:false,follow:false}` (ซ้อนกับ robots.ts) · `/report/[ticker]` — dynamic ตาม ticker จริง (title `"TICKER — entry, targets, catalyst"` ต่อท้ายด้วย template `· Stock Playbook`, description จาก `report.summary` ตัดที่ ~155 ตัวอักษรแบบไม่ตัดกลางคำ, canonical, OG/Twitter) · `/report/[ticker]/simulator` — เพิ่มใหม่ (เดิมไม่มี) ตั้งใจใส่ `noindex` เพราะเป็นหน้า tool ซ้ำ ticker เดียวกับ report หลัก กันแย่ง relevance กันเอง
+  - **JSON-LD:** `WebSite` มีอยู่แล้วใน root layout (ของรอบก่อน) ไม่แตะ · เพิ่ม `AnalysisNewsArticle` ต่อ `/report/[ticker]` (headline, description, datePublished/dateModified จาก `generatedAt`, author+publisher Stock Playbook Research) — เลือก type นี้เจตนา เพราะไม่ใช่ financial-product/advice schema
+  - **OG image:** ตามที่ #19 บอกไว้ว่า "รอ #18" แต่ #18 เสร็จแล้วไม่ได้สร้าง asset รูปมา — รอบนี้เลย **ไม่ generate รูป**, ใช้ metadata-only OG (title/description) และเขียน `TODO(#18 follow-up)` ไว้ในโค้ด `/report/[ticker]/page.tsx` ตรงจุดที่จะใส่ `openGraph.images` ทีหลัง
+  - **Verify แล้ว:** `tsc --noEmit` + eslint สะอาด (คำเตือนที่เจอ 2 จุดเป็นของเดิมอยู่แล้วก่อนแก้ ยืนยันด้วย `git stash`) · dev server จริง: `/sitemap.xml` valid XML มี 54 URL (5 static + 49 ticker), `/robots.txt` ถูกต้อง (`disallow: /journal`, `/api/`), `/report/nvda` มี title/description/canonical เฉพาะตัว + JSON-LD 2 บล็อก (WebSite + AnalysisNewsArticle) parse ผ่านทั้งคู่, `/journal` มี `<meta name="robots" content="noindex, nofollow">`, `/report/nvda/simulator` มี `noindex, follow` · `npm run build` (production, SWC จริง) ผ่านสะอาด — sitemap.xml/robots.txt ขึ้นเป็น static (○) ตามคาด
+**ไฟล์ (รอบนี้):** `web/app/sitemap.ts`, `web/app/robots.ts` (เพิ่ม /api/), `web/app/layout.tsx` (ใช้ shared SITE_URL), `web/lib/site-meta.ts` (เพิ่ม `SITE_URL` + `truncateDescription`), `web/app/page.tsx`, `web/app/catalyst/page.tsx`, `web/app/turbo/page.tsx`, `web/app/dca/page.tsx`, `web/app/backtest/page.tsx`, `web/app/journal/page.tsx`, `web/app/report/[ticker]/page.tsx`, `web/app/report/[ticker]/simulator/page.tsx`
+
+**เหลือ — Manual (คนทำ, ทำได้หลัง merge `feature/improve` → `main` เท่านั้น เพราะ sitemap ต้อง live บน production ก่อน):**
+  1. Google Search Console (search.google.com/search-console) → Add Property → Domain → verify ผ่าน DNS TXT record (ที่ registrar ของโดเมน stockplaybook.app)
+  2. Submit sitemap: `https://stockplaybook.app/sitemap.xml`
+  3. Request indexing สำหรับหน้าแรก (`/`) และ `/catalyst` ผ่าน URL Inspection tool
+  4. (ทางเลือก, ฟรี) Bing Webmaster Tools (bing.com/webmasters) — ทำ 3 ข้อข้างบนซ้ำ
+  5. รอ — โดเมนใหม่ใช้เวลาเป็นสัปดาห์กว่าจะเริ่มติด index ต่อให้ทำครบทุกข้อ ไม่ต้องทำอะไรเพิ่มระหว่างรอ
 
 ## 20. ✅ DONE — AI Validate Journal — user กดปุ่มให้ Claude API วิเคราะห์พอร์ต (quota 3 ครั้ง/lifetime)
 
@@ -290,6 +305,19 @@ dev server) เห็น class ครบ ไม่มี error ใน server log
   - **⚠️ พบระหว่างทำ (สำคัญ):** ข้อมูลจริงตอนนี้ (26 complete core entries) ไม่ตรงกับสมมติฐานเดิมที่ว่า "earnings_beat 0/12 เพราะ SOX selloff" — `regimeNote` จริงอ่านว่า `"0/26 windows had SPY down >2%"` (median SPY **+2.4%**) เพราะ window ของ entry ที่ complete แล้ว (report date ~Jun 21-26) ปิดก่อนที่ SOX selloff ตัวจริงจะเกิดในต้น-กลาง ก.ค. — แปลว่า hit-rate 0% **ไม่ได้ถูก excuse ด้วย regime กว้าง** เลย (SPY นิ่ง/ขึ้นด้วยซ้ำ) นี่คือจุดสำคัญที่ prompt เขียนไว้ให้เช็ค `regimeNote` จริงทุกรอบ ห้ามสมมติเรื่องเดิมซ้ำ — ตัวอย่างนี้เอง (real, ไม่ใช่สมมติ) ถูกเขียนเป็น example ในทั้ง 5 ไฟล์แล้ว
   - **North Star v2.2:** benchmark path พร้อมใช้แล้ว (ดูหมายเหตุใน "North Star v2" ด้านบน)
 **เป้า (อัปเดต):** ✅ ครบทุกข้อ — verify แล้วจริง: `npm run backtest:fetch` end-to-end บนเครื่องจริง (network จริง) → bench keys ปรากฏใน path-cache (13 keys), feedback file มี `avgBenchmarkPct`/`regimeNote`/`regime` ครบ ไม่มี NaN/Infinity, ทุก aggregate มี `n`, `node scripts/validate-reports.mjs` ผ่าน (113 reports, 0 blocking), `tsc --noEmit` สะอาด
+
+## 28. ⏸️ WAIT-FOR-DATA — Mega-cap ครอง top-5 แต่ North Star วัดแบบ small-cap: SMH benchmark + small-cap quota
+
+**สถานะ: รอ data — อย่าเพิ่งทำ** จนกว่า (a) turbo windows แรก complete (~2026-07-21 เป็นต้นไป) และ (b) มี catalyst screen เพิ่มอีกอย่างน้อย 2–3 รอบที่ไม่ใช่ช่วงเดียวกัน — n=12 ปัจจุบันมาจาก screen แค่ ~3 วันติดกัน (Jun 21–26) ไม่ independent พอจะสรุป
+**ปัญหา (ข้อสังเกตจาก data จริงรอบแรก 2026-07-10):** earnings_beat hit-rate **0/12** ทั้งที่ regime กว้างปกติ (`regimeNote: "0/26 windows had SPY down >2%"`, median SPY +2.4% — ดู #27) → ข้อแก้ตัวเรื่อง market drawdown ตกไป เหลือ 2 สมมติฐาน:
+  (a) **Sector ≠ market** — SPY ไม่ใช่ benchmark ที่ถูกสำหรับ pick กลุ่ม semi-heavy · semis อาจอ่อนก่อน SOX selloff จริงทั้งที่ SPY ยังบวก → ต้องมี SMH เทียบถึงตัดสินได้
+  (b) **โครงสร้าง pick เอง (น่าจะใช่กว่า)** — top-5 catalyst ออกมาเป็น mega-cap ซ้ำ ๆ (NVDA/AVGO/MU/META) ซึ่งโอกาสวิ่ง +30%/14d แทบเป็นศูนย์โดยธรรมชาติของ market cap ต่อให้ thesis ถูก · สอดคล้อง counterfactual: picked median max-gain แค่ +2% ใน 14d — ทายทิศถูกแต่ target/horizon ไม่ match ขนาดหุ้น
+**ทำ (เมื่อ data พอ):**
+  1. **SMH benchmark เพิ่มเป็นตัวที่สอง** — งานเล็ก: `scripts/fetch-backtest-prices.mjs` ดึง `bench:SMH_YYYYMMDD` เพิ่ม (โครง `bench:` จาก #27 รองรับแล้ว, dedupe ต่อ unique date เหมือน SPY) → `build-skill-feedback.mjs` เพิ่ม `avgSectorBenchmarkPct` ใน regimeNote → ตัดสินสมมติฐาน (a) ได้ทันที
+  2. **ถ้า (b) ยืนยัน:** ยก "Small-cap quota ใน /dashboard" (อยู่ใน "ยังไม่เลือกทำ" ด้านล่าง) ขึ้นมาทำจริง — บังคับ ≥1-2 pick <$10B ใน top-5 · และ/หรือพิจารณา per-cap-tier target (mega-cap วัด +15%/14d?) ซึ่งชนกับ North Star v2.1 per-type window — ควรออกแบบพร้อมกันจะได้ไม่แก้ metric สองรอบ
+  3. เช็ค hit-rate อีกครั้งเมื่อ n ต่อ type ≥ 20 จากหลายช่วงเวลา ก่อน commit การเปลี่ยน screen logic ใด ๆ
+**ไฟล์:** `scripts/fetch-backtest-prices.mjs` · `scripts/build-skill-feedback.mjs` · `web/data/skill-feedback.json` · (ถ้าทำข้อ 2) `.claude/commands/catalyst-list.md` + `web/lib/north-star.ts` (ประสาน v2.1)
+**เป้า:** รู้ว่า 0/12 คือ sector regime หรือ pick structure · ถ้าเป็นอย่างหลัง top-5 ต้องมีสัดส่วน pick ที่ +30%/14d เป็นไปได้จริงตามขนาด market cap · เกี่ยวพัน: North Star v2.1/v2.2 + Small-cap quota
 
 ---
 

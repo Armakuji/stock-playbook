@@ -2,8 +2,7 @@ import type { MetadataRoute } from "next";
 import { getAllReports } from "@/lib/reports";
 import { getAllDcaReports } from "@/lib/dca";
 import { getAllSpeculativeReports } from "@/lib/speculative";
-
-const SITE_URL = "https://stockplaybook.app";
+import { SITE_URL } from "@/lib/site-meta";
 
 // /journal is login-gated (nothing to index) and intentionally excluded —
 // see robots.ts, which also disallows it.

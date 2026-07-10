@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Bricolage_Grotesque, DM_Sans, JetBrains_Mono } from "next/font/google";
 import { loadMarketTiming } from "@/lib/market-timing";
-import { getSiteLastUpdatedLabel } from "@/lib/site-meta";
+import { getSiteLastUpdatedLabel, SITE_URL } from "@/lib/site-meta";
 import { Header } from "./Header";
 import { MarketTicker } from "./MarketTicker";
 import { LanguageProvider } from "@/lib/LanguageContext";
@@ -26,8 +26,6 @@ const jetbrains = JetBrains_Mono({
   display: "swap",
   weight: ["400", "700", "800"],
 });
-
-const SITE_URL = "https://stockplaybook.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
