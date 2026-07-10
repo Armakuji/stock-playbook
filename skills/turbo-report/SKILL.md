@@ -124,6 +124,7 @@ Before writing JSON, decide these values explicitly:
 | `entryStrategy.approach` | `"Scale In"` or `"DCA"` — never lump sum for turbo |
 | Position size in summary | **2–5% max** — always state this |
 | `catalystSpot.spotSizing.pct` | 2–5 only |
+| `factorTags` | set explicitly from `ai_semi` / `ai_software` / `space_launch` / `quantum` / `ev_auto` / `long_duration_rate` / `single_customer` only when auto-derive (`web/lib/factors.ts`) would miss or mislabel this pick; otherwise omit and let it derive |
 
 ---
 

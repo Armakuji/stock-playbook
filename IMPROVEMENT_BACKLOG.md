@@ -64,7 +64,7 @@
 
 **✅ Audit ยืนยันแล้ว (2026-07-10):** `web/lib/north-star.ts` ครบสเปค — `NS_WINDOW_DAYS=14`, `NS_TARGET_PCT=30`, price path จาก `path-cache.json`, `medianMAE`/`avgMaxGain`/`hitRate` แยกต่อ `byType[]` (catalystType) + overall, render บน `/backtest` ผ่าน `NorthStarSection` · **ต่อยอดไปไกลกว่าสเปคเดิมแล้วผ่าน #24/#25/#27:** turbo North Star แยก lane (+50%/30d), `medianTimeToHitDays`, regime context (`avgBenchmarkPct`/`regimeNote` เทียบ SPY), near-miss counterfactual ต่อ lane — ไม่เหลืออะไรค้างจากสเปคเดิม
 
-## 10. ⚠️ เปิดอยู่บางส่วน (audit พบว่าทำไปแล้วเกินคาด) — Factor-correlation concentration (tag-based) แทน bucket-share
+## 10. ✅ DONE — Factor-correlation concentration (tag-based) แทน bucket-share
 *(idea 6 — ทำขนานได้)*
 **ปัญหา:** concentration warning ปัจจุบันนับ % ใน bucket ที่ label มั่ว/overlap ความเสี่ยงจริงคือ "factor เดียวกัน" — NVDA+AVGO+MRVL ลงพร้อมกันบนข่าว semis ตัวเดียว
 **ทำ:** เพิ่ม factor tags มือ/กึ่งอัตโนมัติ (`ai_semi`, `long_duration_rate`, `single_customer`, `space_launch`...) → warn เมื่อ tag ซ้อนเกิน threshold (จับ NVDA+RKLB ที่ long-duration เหมือนกันแม้คนละ bucket)
@@ -74,6 +74,12 @@
 **เหลือ:** (1) `single_customer` tag ยังไม่มี logic derive (ตัวอย่างในสเปคเดิม แต่ยังไม่ implement — ต้องมี field บอก customer concentration ใน report ก่อนถึง derive ได้) (2) `factorTags` explicit ยังตั้งเองแบบ manual ไม่มี validate/enum บังคับใน `scripts/validate-reports.mjs` (3) ยังไม่มีเอกสารสั่งให้ skill (`stock-report`/`turbo-report`) ตั้ง `factorTags` ตอน generate report — ตอนนี้พึ่ง auto-derive ล้วน ซึ่งพอใช้ได้แต่ไม่ครอบคลุมเท่า manual tag ที่แม่นกว่า
 **สถานะ:** เปลี่ยนจาก "field staged, unbuilt" → **build ไปแล้ว ~80%** เหลือ polish เล็กน้อยตามข้างบน ไม่ใช่งานใหญ่
 **เป้า:** เตือนความเสี่ยง factor จริง ไม่ใช่แค่ป้าย bucket
+**ผล (2026-07-10):** ปิด 3 gap ที่เหลือครบ:
+  1. Export `FACTOR_TAGS` (7 ค่า: 6 เดิม + `single_customer`) จาก `web/lib/factors.ts` เป็น canonical source — `scripts/validate-reports.mjs` (plain `.mjs`, import TS ไม่ได้) duplicate list เดียวกันพร้อม comment ชี้กลับมา ตาม convention ของ `build-skill-feedback.mjs` · เพิ่ม WARN (ไม่ block) เมื่อ `factorTags` มีค่านอก enum — เทสจริงด้วยการใส่ typo `ai-semi` ใน NVDA report แล้ว revert, WARN ขึ้นถูกต้องไม่ block push
+  2. เพิ่ม `single_customer` derive ใน `deriveFactorTags()` — heuristic จับข้อความใน `companyDescription` + `risks[]` (ไม่ใช่ทั้ง report เพื่อไม่ให้ false-positive จาก catalyst description ที่พูดถึง "customer" แบบ upside ไม่ใช่ risk) เทสกับ report จริง: AVGO/LUNR (มี "customer concentration" ใน risks) → true ถูกต้อง, QUBT (มีคำว่า "single customer order" แต่อยู่ใน `catalysts[].description` ไม่ใช่ risks) → false ถูกต้องตามสเปค, AMD (ไม่มี signal) → false
+  3. เพิ่มแถว `factorTags` ใน "Plan the values" ของ `skills/stock-report/SKILL.md` + `skills/turbo-report/SKILL.md` — ประโยคเดียวเหมือนกันทั้งคู่: ตั้งเองจาก enum เมื่อ auto-derive จะพลาด/ป้ายผิด ไม่งั้นปล่อยให้ derive
+  **พบระหว่างทำ (ไม่ใช่ bug ของงานนี้ แยกไว้พิจารณา):** `node scripts/validate-reports.mjs` เจอ WARN จริง 5 ไฟล์ใน `web/data/dca/` (GOOGL/META/MSFT/NVDA/V) ที่ตั้ง `factorTags` เป็นคำนอก enum (`mega_cap_quality`, `ad_cycle`, `enterprise_software`, `semis_cycle`, `payments`, `consumer_spend`) — เช็คแล้วว่า **ไม่กระทบอะไรตอนนี้** เพราะ `factorConcentration`/`FactorRiskPanel` ต่อสายแค่ `CatalystContent.tsx` (`/catalyst`) เท่านั้น ไม่ได้ใช้กับ `/dca` เลย — เป็น tag แบบอิสระที่คนเขียน DCA report ใส่ไว้ล่วงหน้าก่อนมี canonical enum ตัวนี้ ปล่อยไว้ตามเดิมไม่แก้ (ไม่อยู่ใน scope "polish 3 gap" ของ item นี้) — ถ้าจะเอา factor-concentration ไปใช้กับ `/dca` ในอนาคตต้องคุย vocabulary ใหม่ก่อน (DCA เป็นเรื่อง business-model quality ไม่ใช่ catalyst-timing correlation)
+  **Verify:** `tsc --noEmit` + eslint clean · `validate-reports.mjs` ผ่าน (113 reports, 0 blocking, 5 warnings จากของเดิมที่เจอ) · dev server `/catalyst` เรนเดอร์ปกติไม่มี error
 
 ---
 
@@ -384,7 +390,7 @@ dev server) เห็น class ครบ ไม่มี error ใน server log
 
 ## ยังไม่เลือกทำ (ไว้พิจารณาทีหลัง)
 - **Earned category ranking + expectancy-based sizing** *(idea 5+9)* — ลบ sector priority (Tech→AI→Space) ให้ category ลอยขึ้น top ตาม hit-rate จริง + size ตาม expectancy (`hitRate × upside ÷ MAE`) **⚠️ ขึ้นกับ #9 มี sample พอก่อน** ไม่งั้น optimize บน noise — ต้องใส่ shrinkage/prior + cap อิทธิพลตอน N น้อย
-- **Portfolio-level correlation view** — holding (AVGO/NVDA/MRVL/INTC/PLTR/ASTS) correlate สูง เด้งพร้อมกันตาม AI sentiment; view exposure/concentration/powder *(ทับซ้อนกับ #10 — อาจรวม)*
+- **Portfolio-level correlation view** — holding (AVGO/NVDA/MRVL/INTC/PLTR/ASTS) correlate สูง เด้งพร้อมกันตาม AI sentiment; view exposure/concentration/powder *(#10 ปิดแล้ว — เป็น report-level warning ใน `/catalyst` เท่านั้น ไอเดียนี้ยังแยกเป็นคนละเรื่อง: cross-holding exposure view ต่อ user's actual portfolio/journal ไม่ใช่ต่อ dashboard picks — ไม่ทับซ้อนแล้ว เป็น idea ที่ใหญ่กว่า ทำทีหลังได้)*
 - **Price-trigger alerts** — ต่อ scheduled task + live price → alert "แตะ Entry 2 zone" / "ใกล้ stop" (pairs กับ analyze-journal skill)
 - **Small-cap quota ใน /dashboard** — บังคับ ≥1 pick ที่ <$10B + แก้ scoring ให้ตอนไม่มี analyst target ใช้ scenario-implied upside แทนการให้ 0 (เลิกกดหุ้น coverage บาง)
 

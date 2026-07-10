@@ -74,6 +74,7 @@ Decide these explicitly before writing JSON:
 | `verdict` / `scoreLabel` | BUY/HOLD/SELL/SPECULATIVE · Core Holding / Speculative / ค่าขนม |
 | `macroRisk` | LOW/MEDIUM/HIGH + rate/inflation/sector notes |
 | `i18n.th` | Thai overrides (summary, risks, notes, entry verdict, …) |
+| `factorTags` | set explicitly from `ai_semi` / `ai_software` / `space_launch` / `quantum` / `ev_auto` / `long_duration_rate` / `single_customer` only when auto-derive (`web/lib/factors.ts`) would miss or mislabel this pick; otherwise omit and let it derive |
 
 ## Step 3: Generate the JSON report
 
