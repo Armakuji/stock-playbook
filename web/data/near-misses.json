@@ -172,10 +172,28 @@
     {
       "date": "2026-07-10",
       "ticker": "OUST",
-      "reason": "Disqualified: Strong Buy consensus (5 analysts) and Aug 5 2026 earnings catalyst, but stock dropped 15.77% intraday to $50.60 same-day and aggregator price targets ($39-49 from some sources) are stale/inconsistent with the post-drop price, producing conflicting or even negative implied upside depending on source. Too much data noise to screen confidently today — revisit once price/target data stabilizes post-drop.",
+      "reason": "Disqualified: Strong Buy consensus (5 analysts) and Aug 5 2026 earnings catalyst, but stock dropped 15.77% intraday to $50.60 same-day and aggregator price targets ($39-49 from some sources) are stale/inconsistent with the post-drop price. Best-effort estimate below uses the pre-drop 6-analyst average target ($49) against the new post-drop price — analysts hadn't had time to revise same-day — which reads as roughly flat, not a 30%+ setup. Too much data noise to screen confidently today; revisit once target data catches up to the post-drop price.",
       "priceAtScreen": 50.6,
-      "topAnalystTarget": null,
-      "impliedUpside": null
+      "topAnalystTarget": 49,
+      "impliedUpside": -3.2
+    },
+    {
+      "date": "2026-07-10",
+      "ticker": "QUBT",
+      "lane": "turbo",
+      "reason": "Disqualified from turbo top 5: Quantum Computing Inc. has real momentum (federal CHIPS/quantum program tailwind, sector index +69.3% YTD) and a 3-month forecast of $31.70 vs current $11.27, but that's ~181% implied upside — under the ≥200% moonshot floor. No single binary catalyst identified this week beyond broad quantum-sector strength. Revisit if a specific dated catalyst (contract, partnership) pushes the bull case past 200%.",
+      "priceAtScreen": 11.27,
+      "topAnalystTarget": 31.7,
+      "impliedUpside": 181.3
+    },
+    {
+      "date": "2026-07-10",
+      "ticker": "RGTI",
+      "lane": "turbo",
+      "reason": "Disqualified from turbo top 5: Rigetti Computing has a real technology roadmap (Fab-1 chip cycle advantage, 150Q FY26 / 1,000Q FY27 targets) but average analyst target implies only ~37% upside from ~$21.28 — nowhere near the ≥200% moonshot floor. Shares down 22.47% over the past month, Zacks Rank #4 (Sell) on valuation/cash-burn concerns. Not a turbo setup right now; a quantum-computing-sector name for the core/watchlist lens instead, not turbo.",
+      "priceAtScreen": 21.28,
+      "topAnalystTarget": 29.24,
+      "impliedUpside": 37.4
     }
   ]
 }
