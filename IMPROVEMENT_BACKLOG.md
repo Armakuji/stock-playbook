@@ -76,6 +76,7 @@
   **ทำ:** fetch benchmark path (SPY/QQQ + SMH) ช่วง window เดียวกัน → คำนวณ excess return หัก market+sector beta (เริ่มจาก benchmark-relative ดิบก่อน แล้วค่อย full beta-adjusted) · ⚠️ n น้อย = noisy + beta หุ้นพวกนี้ไม่นิ่ง ทำเมื่อ sample พอ
   **ไฟล์:** `scripts/fetch-backtest-prices.mjs` (ดึง benchmark) · `web/lib/north-star.ts` · `web/app/backtest/BacktestContent.tsx`
   **เป้า:** isolate selection edge จริง — pick ชนะ expected move ของมันไหม
+  **✅ Groundwork done (#27, 2026-07-10):** `scripts/fetch-backtest-prices.mjs` ดึง SPY path ต่อ unique report date แล้ว เก็บที่ `path-cache.json` key `bench:SPY_YYYYMMDD` (dedupe ต่อวันที่ ไม่ใช่ต่อ ticker, เก็บ window กว้างสุดถ้าวันเดียวกันมีทั้ง core 14d/turbo 30d) · `scripts/build-skill-feedback.mjs` ใช้ path นี้คำนวณ `avgBenchmarkPct`/`regimeNote` ต่อ type + `regime` top-level แล้ว (raw benchmark-relative, ยังไม่ beta-adjust) — v2.2 ที่แท้จริง (excess return หัก beta ใน `web/lib/north-star.ts` + แสดงบน `/backtest`) ยังไม่ทำ แต่ path data พร้อมใช้ต่อได้เลย ไม่ต้อง fetch ใหม่
 
 ## 11. Turbo-compare: moonshot ranking criteria แยกจาก core dashboard
 
@@ -249,7 +250,7 @@ dev server) เห็น class ครบ ไม่มี error ใน server log
 **ไฟล์:** `scripts/build-skill-feedback.mjs` (ใหม่) · `scripts/fetch-backtest-prices.mjs` (bug fix) · `web/data/skill-feedback.json` (ใหม่ — generated) · `skills/stock-report/SKILL.md` · `skills/turbo-report/SKILL.md` · `skills/dashboard-compare/SKILL.md` · `.claude/commands/catalyst-list.md` · `.claude/commands/turbo-list.md` · `web/package.json` (script entry)
 **เป้า:** ทุกครั้งที่รัน `/catalyst-list` หรือ `/turbo-list` Claude เห็นผลจริงของตัวเองก่อน screen → คำแนะนำ sizing/stop อ้างตัวเลขวัดได้ ไม่ใช่ vibes ✅ · guardrail กัน small-n overfit อยู่ครบทุกไฟล์ ✅ · **ปัจจุบัน:** core n=62 (26 complete, 8 catalyst type), turbo n=36 (0 complete — รอ window 30 วันครบ ~21 ก.ค.), scenario calibration n=26, near-miss counterfactual n=4 — ตัวเลขทั้งหมด n<5 หลายจุด ต้องรอสะสมข้อมูลเพิ่มก่อนเชื่อได้เต็มที่ (ตามคาด)
 
-## 26. Catalyst-list run hygiene — market-timing Write error + push status ไม่ตรงจริง
+## 26. ✅ DONE — Catalyst-list run hygiene — market-timing Write error + push status ไม่ตรงจริง
 
 **ปัญหา:** จาก run จริง `/catalyst-list` 2026-07-10 (รอบแรกหลัง #25) พบ 2 อาการ:
   (a) **Write `web/data/market-timing.json` error** — `analyze-market-situation` skill research สดครบ (10+ search) แล้ว Write fail จากนั้น rationalize ว่า "ไฟล์เดิม fresh กว่า" แล้วทิ้ง research ที่เพิ่งทำ (ตรรกะกลับด้าน — research ใหม่ย่อมสดกว่าไฟล์เมื่อเช้า) · โชคดีไฟล์เดิมยังเป็นของวันเดียวกัน panel ไม่พัง แต่ถ้าเป็นวันอื่นคือ market-timing stale เงียบ ๆ · run เดียวกันมี "Invalid tool parameters" ตอน load skill ด้วย — อาจเป็นสาเหตุเดียวกัน (path/schema/tool-call ใน SKILL.md เพี้ยน)
@@ -264,7 +265,12 @@ dev server) เห็น class ครบ ไม่มี error ใน server log
   - **(b) ✅ DONE สำหรับ `catalyst-list.md` + `turbo-list.md`** — ทั้งสองไฟล์ตอนนี้สั่งชัด: step สุดท้ายต้องรายงาน branch จริงที่ push ไป ("pushed to `<branch>` — merge to main to deploy" ถ้าไม่ใช่ `main`, ห้าม claim "Vercel deploying") · **ยังไม่ทำ:** `analyze.md`, `dca-list.md`, `analyze-turbo.md`, `analyze-dca.md` ตามที่ระบุไว้ในข้อ 2 เดิม
   - **(a) scope เปลี่ยน, ยังเปิดอยู่** — ตัดสินใจ decouple market-timing ออกจาก `/catalyst-list` ทั้งหมดแล้ว (ดู CLAUDE.md "Market-timing refresh — /macro only" ใหม่) `/catalyst-list` เลยไม่เรียก `analyze-market-situation` อีกต่อไป → อาการ (a) จะไม่เกิดจาก `/catalyst-list` ได้อีก แต่ **root cause จริงใน `skills/analyze-market-situation/SKILL.md` (Write fail + fallback rationalize ผิดตรรกะ) ยังไม่ได้แก้เลย** — ยังกระทบตอนรัน `/macro` ตรง ๆ อยู่ ข้อ 1 เดิมยังต้องทำ
 
-## 27. Feedback prior v1.1 — n≥5 ต้องใช้จริง + regime note กัน hit-rate หลอก
+**✅ ปิดครบ (2026-07-10, backlog #26+#27 task):**
+  - **(a) root cause พบแล้ว:** `analyze-market-situation/SKILL.md` (อยู่ที่ repo root ไม่ใช่ใต้ `skills/` — จุดสังเกตที่ทำให้งงตอนแรก) สั่งให้ save ที่ path สัมพัทธ์ `web/data/market-timing.json` เฉย ๆ โดยไม่บอกให้ resolve เป็น absolute path ก่อน — เครื่องมือ write ต้องการ absolute path เท่านั้น ตรงกับอาการ "Invalid tool parameters" ที่เจอ แก้แล้ว: เพิ่มคำเตือน ⚠️ ชัดเจนก่อน JSON schema block ให้ resolve absolute path ก่อนเขียนเสมอ + กติกา "Write fail → retry จนสำเร็จ ห้ามสรุปว่าไฟล์เดิมดีกว่า ห้ามถือว่า run สำเร็จถ้ายังไม่ได้เขียนไฟล์จริง" (ทั้งใน Step 6 และ Always-on rules) · **verify แล้วจริง:** รัน `/macro` ผ่าน Write tool ด้วย absolute path เขียนสำเร็จรอบเดียว ไม่มี error, `generatedAt` เป็นเวลาปัจจุบัน, JSON valid
+  - **(b) ครบทุกไฟล์แล้ว:** เพิ่ม push-status rule ให้ `analyze.md`, `dca-list.md`, `analyze-turbo.md`, `analyze-dca.md` ด้วย (เดิมมีแค่ `catalyst-list.md`/`turbo-list.md`) — ครบ 6 ไฟล์ที่ push ทั้งหมดแล้ว
+**เป้า (อัปเดต):** ✅ ครบทั้ง (a) และ (b) — `/macro` เขียน `market-timing.json` สำเร็จแบบ verify แล้ว · ทุก command ที่ push รายงาน branch จริง
+
+## 27. ✅ DONE — Feedback prior v1.1 — n≥5 ต้องใช้จริง + regime note กัน hit-rate หลอก
 
 **ปัญหา:** run จริงรอบแรก (2026-07-10) เผย 2 ช่อง:
   (a) **Guardrail ถูกตีความเข้มเกินสเปค** — กติกาคือ "n<5 = context only" แปลว่า **n≥5 ใช้ปรับ threshold ได้** แต่ run treat ทุก bucket เป็น context-only รวมทั้ง `earnings_beat (n=12, hitRate 0%)` แล้วเลือก earnings play ทั้ง 5 ตัวโดย prior ไม่มีผลอะไรเลย → loop เปิดแล้วแต่ยังไม่ bite
@@ -277,6 +283,13 @@ dev server) เห็น class ครบ ไม่มี error ใน server log
 **เป้า:** รอบหน้าที่ n≥5 prior มีผลจริงต่อ threshold (เห็นได้จาก reasoning ตอน screen) · ทุก hit-rate ใน feedback file อ่านคู่ regime ได้ ไม่มีเลขดิบลอย ๆ ให้ตีความผิด · ปูทาง North Star v2.2 (benchmark path เก็บไว้แล้ว ใช้ต่อได้เลย)
 
 **อัปเดต (2026-07-10, pre-turbo-list patch):** ทำ visible-output ของ step อ่าน feedback prior แล้ว (ใน `catalyst-list.md` + `turbo-list.md` ตอนนี้สั่งให้ print block `📊 Feedback prior (...)` ในแชทก่อน screen ทุกครั้ง กัน step โดนข้ามเงียบ ๆ ตามที่ #26 สังเกตเห็น) — แต่นี่แค่ทำให้เห็นว่า "อ่านจริง" **tier-2 (n≥5 ต้องใช้ปรับ threshold จริง) กับ regime note (ข้อ 1-3 ด้านบน) ยังไม่ได้ทำเลย** ยังต้องทำต่อ
+
+**✅ ปิดครบ (2026-07-10, backlog #26+#27 task) — feedback file shape v1.1:**
+  - **ข้อ 2 (regime context):** `scripts/fetch-backtest-prices.mjs` ดึง SPY path ต่อ **unique report date** (ไม่ใช่ต่อ ticker — dedupe จาก 67 core + 36 turbo path snapshot เหลือแค่ 13 SPY fetch จริง) เก็บที่ `path-cache.json` key `bench:SPY_YYYYMMDD`, ถ้าวันเดียวกันมีทั้ง core (14d) และ turbo (30d) จะดึง window กว้างสุด (30d) ไว้ — อ่าน 14d ได้จาก prefix ของ series เดียวกัน · `scripts/build-skill-feedback.mjs` เพิ่ม `avgBenchmarkPct` + `regimeNote` (เช่น `"0/12 windows had SPY down >2%"`) ต่อ `core.byType[]` + `core.overall` + `turbo.overall` และ top-level `regime` (n + median SPY return ข้าม core+turbo) — graceful ตอนไม่มี bench data (null ไม่ crash, ทดสอบแล้วตอน turbo n=0)
+  - **ข้อ 1+3 (2-tier rule + guardrail note):** เขียนกติกา 2 tier ชัดใน SKILL.md/commands ครบ 5 ไฟล์เดิม (`stock-report`, `turbo-report`, `dashboard-compare`, `catalyst-list.md`, `turbo-list.md`) — n<5 = context only (เดิม), n≥5 = **ต้อง**ใช้จริง (ระบุ bucket/type ที่ divergence ชัดใน reasoning ตอน screen หรือบอกว่า "ไม่มี bucket ไหนผ่านเกณฑ์") + regime caveat คู่กันเสมอ (dashboard-compare ยังคง scope แคบ — ทั้ง 2 tier กระทบแค่ commentary ไม่กระทบ rank) · print block `📊 Feedback prior` ใน 2 command ไฟล์ เพิ่ม `regime:` line + `tier-2:` status line ตามสเปค
+  - **⚠️ พบระหว่างทำ (สำคัญ):** ข้อมูลจริงตอนนี้ (26 complete core entries) ไม่ตรงกับสมมติฐานเดิมที่ว่า "earnings_beat 0/12 เพราะ SOX selloff" — `regimeNote` จริงอ่านว่า `"0/26 windows had SPY down >2%"` (median SPY **+2.4%**) เพราะ window ของ entry ที่ complete แล้ว (report date ~Jun 21-26) ปิดก่อนที่ SOX selloff ตัวจริงจะเกิดในต้น-กลาง ก.ค. — แปลว่า hit-rate 0% **ไม่ได้ถูก excuse ด้วย regime กว้าง** เลย (SPY นิ่ง/ขึ้นด้วยซ้ำ) นี่คือจุดสำคัญที่ prompt เขียนไว้ให้เช็ค `regimeNote` จริงทุกรอบ ห้ามสมมติเรื่องเดิมซ้ำ — ตัวอย่างนี้เอง (real, ไม่ใช่สมมติ) ถูกเขียนเป็น example ในทั้ง 5 ไฟล์แล้ว
+  - **North Star v2.2:** benchmark path พร้อมใช้แล้ว (ดูหมายเหตุใน "North Star v2" ด้านบน)
+**เป้า (อัปเดต):** ✅ ครบทุกข้อ — verify แล้วจริง: `npm run backtest:fetch` end-to-end บนเครื่องจริง (network จริง) → bench keys ปรากฏใน path-cache (13 keys), feedback file มี `avgBenchmarkPct`/`regimeNote`/`regime` ครบ ไม่มี NaN/Infinity, ทุก aggregate มี `n`, `node scripts/validate-reports.mjs` ผ่าน (113 reports, 0 blocking), `tsc --noEmit` สะอาด
 
 ---
 

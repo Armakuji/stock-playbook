@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-10T09:06:06.028Z",
-  "windowNote": "core = +30% within 14 days of report price (catalyst plays) · turbo = +50% within 30 days (moonshot plays) · MAE = max adverse excursion (worst drawdown before target hit, or over the window if never hit) · GUARDRAIL: n < 5 in any bucket = context only, NEVER a reason to include/exclude/re-rank a pick.",
+  "generatedAt": "2026-07-10T09:33:45.864Z",
+  "windowNote": "core = +30% within 14 days of report price (catalyst plays) · turbo = +50% within 30 days (moonshot plays) · MAE = max adverse excursion (worst drawdown before target hit, or over the window if never hit) · GUARDRAIL (2-tier, backlog #27): n < 5 in a bucket = context only, NEVER a reason to include/exclude/re-rank a pick. n >= 5 = MUST be applied — if that bucket's hitRate is clearly below the overall rate, picks of that type need visibly higher upside/conviction to make top 5, and screening output must say when this rule fired (or that no bucket met the n>=5+divergence bar). REGIME CAVEAT (both tiers): always read hitRate next to avgBenchmarkPct/regimeNote — a 0% hit-rate measured in a deeply negative SPY window means \"unproven in a bad regime\", not \"this type doesn't work\" (e.g. earnings_beat 0/12 measured during the Jul 2026 SOX selloff).",
   "core": {
     "windowDays": 14,
     "targetPct": 30,
@@ -12,7 +12,9 @@
       "hitRate": 0,
       "medianMAE": -10.7,
       "avgMaxGain": 4.1,
-      "medianTimeToHitDays": null
+      "medianTimeToHitDays": null,
+      "avgBenchmarkPct": 1.5,
+      "regimeNote": "0/26 windows had SPY down >2%"
     },
     "byType": [
       {
@@ -22,7 +24,9 @@
         "hitRate": 0,
         "medianMAE": -17.5,
         "avgMaxGain": 1.9,
-        "medianTimeToHitDays": null
+        "medianTimeToHitDays": null,
+        "avgBenchmarkPct": 1.9,
+        "regimeNote": "0/3 windows had SPY down >2%"
       },
       {
         "type": "earnings_beat",
@@ -31,7 +35,9 @@
         "hitRate": 0,
         "medianMAE": -8.8,
         "avgMaxGain": 3.1,
-        "medianTimeToHitDays": null
+        "medianTimeToHitDays": null,
+        "avgBenchmarkPct": 1.6,
+        "regimeNote": "0/12 windows had SPY down >2%"
       },
       {
         "type": "satellite_launch",
@@ -40,7 +46,9 @@
         "hitRate": 0,
         "medianMAE": -17.8,
         "avgMaxGain": 9.8,
-        "medianTimeToHitDays": null
+        "medianTimeToHitDays": null,
+        "avgBenchmarkPct": 0.6,
+        "regimeNote": "0/4 windows had SPY down >2%"
       },
       {
         "type": "delivery_beat",
@@ -49,7 +57,9 @@
         "hitRate": 0,
         "medianMAE": -6.3,
         "avgMaxGain": 6.2,
-        "medianTimeToHitDays": null
+        "medianTimeToHitDays": null,
+        "avgBenchmarkPct": 0.1,
+        "regimeNote": "0/1 windows had SPY down >2%"
       },
       {
         "type": "foundry_validation",
@@ -58,7 +68,9 @@
         "hitRate": 0,
         "medianMAE": -16.1,
         "avgMaxGain": 1.7,
-        "medianTimeToHitDays": null
+        "medianTimeToHitDays": null,
+        "avgBenchmarkPct": 0.1,
+        "regimeNote": "0/2 windows had SPY down >2%"
       },
       {
         "type": "regulatory_approval",
@@ -67,7 +79,9 @@
         "hitRate": 0,
         "medianMAE": -11.5,
         "avgMaxGain": 6.6,
-        "medianTimeToHitDays": null
+        "medianTimeToHitDays": null,
+        "avgBenchmarkPct": 3.1,
+        "regimeNote": "0/1 windows had SPY down >2%"
       },
       {
         "type": "partnership_win",
@@ -76,7 +90,9 @@
         "hitRate": 0,
         "medianMAE": -13.8,
         "avgMaxGain": 2.4,
-        "medianTimeToHitDays": null
+        "medianTimeToHitDays": null,
+        "avgBenchmarkPct": 2.6,
+        "regimeNote": "0/3 windows had SPY down >2%"
       },
       {
         "type": "fda_decision",
@@ -85,7 +101,9 @@
         "hitRate": null,
         "medianMAE": null,
         "avgMaxGain": null,
-        "medianTimeToHitDays": null
+        "medianTimeToHitDays": null,
+        "avgBenchmarkPct": null,
+        "regimeNote": null
       }
     ]
   },
@@ -100,8 +118,15 @@
       "hitRate": null,
       "medianMAE": null,
       "avgMaxGain": null,
-      "medianTimeToHitDays": null
+      "medianTimeToHitDays": null,
+      "avgBenchmarkPct": null,
+      "regimeNote": null
     }
+  },
+  "regime": {
+    "n": 26,
+    "medianBenchmarkPct": 2.4,
+    "note": "SPY return over the same window as each complete entry (core+turbo combined). Pair with core.overall.regimeNote / core.byType[].regimeNote / turbo.overall.regimeNote before judging a hitRate — a low hitRate in a down-tape window is unproven, not disproven."
   },
   "scenarioCalibration": {
     "n": 26,

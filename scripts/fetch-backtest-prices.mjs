@@ -14,6 +14,14 @@
 // read). Turbo also gets its own 30-day price path (vs. core's 14) to feed
 // web/lib/turbo-north-star.ts ("+50% within 30 days").
 //
+// Also fetches a SPY benchmark path per unique report date (not per ticker —
+// every report/turbo snapshot from the same date shares one SPY fetch),
+// stored under "bench:SPY_YYYYMMDD" in path-cache.json. When a date has both
+// a core (14d) and turbo (30d) window, the wider 30d path is fetched — a 14d
+// read is just a prefix slice of it. Feeds regime context (backlog #27) in
+// scripts/build-skill-feedback.mjs, e.g. "0/12 hits, but SPY was down >2% in
+// 9 of those windows" instead of a bare, regime-blind hit-rate.
+//
 //   Run:  node scripts/fetch-backtest-prices.mjs
 //   Safe to re-run — already-cached keys are skipped.
 //   Schedule it (e.g. daily) to keep the loop closed automatically.
@@ -34,6 +42,8 @@ const NEAR_MISS_CHECKPOINTS = [14, 30];
 const NS_WINDOW = 14;          // core North Star: +30% within 14 days
 const TURBO_NS_WINDOW = 30;    // turbo North Star: +50% within 30 days
 const TURBO_KEY_PREFIX = "turbo:";
+const BENCH_TICKER = "SPY";
+const BENCH_KEY_PREFIX = "bench:";
 
 // ── must produce IDENTICAL keys to web/lib/backtest.ts ──────────────────────
 export function addDays(dateStr, days) {              // dateStr "YYYYMMDD" → "YYYY-MM-DD"
@@ -168,6 +178,23 @@ export function collectPathSnapshots(dir, windowDays, keyFn) {
   }).filter(Boolean);
 }
 
+/** Dedupe report dates across `pathSnapshotLists` (core + turbo) into one SPY
+ *  benchmark fetch job per unique date, windowed to the WIDEST window any
+ *  snapshot on that date needs (so a date with both a 14d core and 30d turbo
+ *  entry fetches the 30d SPY path once — the 14d read is a prefix of it). */
+export function collectBenchmarkDates(...pathSnapshotLists) {
+  const widest = new Map(); // reportDate → windowDays
+  for (const snapshots of pathSnapshotLists) {
+    for (const { reportDate, windowDays } of snapshots) {
+      widest.set(reportDate, Math.max(widest.get(reportDate) ?? 0, windowDays));
+    }
+  }
+  return [...widest.entries()].map(([reportDate, windowDays]) => ({
+    ticker: BENCH_TICKER, reportDate, windowDays,
+    key: `${BENCH_KEY_PREFIX}${BENCH_TICKER}_${reportDate}`,
+  }));
+}
+
 async function main() {
   const cache = readCache();
   const coreTargets = collectCheckpointTargets(REPORTS_DIR, cacheKey);
@@ -201,9 +228,10 @@ async function main() {
 
   const corePaths = collectPathSnapshots(REPORTS_DIR, NS_WINDOW, (ticker, reportDate) => `${ticker}_${reportDate}`);
   const turboPaths = collectPathSnapshots(SPECULATIVE_DIR, TURBO_NS_WINDOW, (ticker, reportDate) => turboCacheKey(ticker, reportDate));
-  console.log(`⌁ core: ${corePaths.length} snapshot(s) (${NS_WINDOW}d window) · turbo: ${turboPaths.length} snapshot(s) (${TURBO_NS_WINDOW}d window)`);
+  const benchPaths = collectBenchmarkDates(corePaths, turboPaths);
+  console.log(`⌁ core: ${corePaths.length} snapshot(s) (${NS_WINDOW}d window) · turbo: ${turboPaths.length} snapshot(s) (${TURBO_NS_WINDOW}d window) · bench: ${benchPaths.length} unique date(s)`);
 
-  for (const { ticker, reportDate, windowDays, key } of [...corePaths, ...turboPaths]) {
+  for (const { ticker, reportDate, windowDays, key } of [...corePaths, ...turboPaths, ...benchPaths]) {
     const startISO = ymdToISO(reportDate);
     const endISO = addDays(reportDate, windowDays);
     if (startISO > today) continue;                         // window not started
@@ -226,4 +254,4 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   await main();
 }
 
-export { REPORTS_DIR, SPECULATIVE_DIR, TURBO_KEY_PREFIX, NS_WINDOW, TURBO_NS_WINDOW, CHECKPOINTS };
+export { REPORTS_DIR, SPECULATIVE_DIR, TURBO_KEY_PREFIX, NS_WINDOW, TURBO_NS_WINDOW, CHECKPOINTS, BENCH_TICKER, BENCH_KEY_PREFIX };

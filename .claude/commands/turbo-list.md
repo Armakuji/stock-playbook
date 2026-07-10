@@ -4,15 +4,25 @@ description: Find the 5 best moonshot plays (≥200–300% bull case) → /turbo
 Run `/turbo-list`: load `turbo-report` and use its "Step 0" + "List mode" sections.
 
 0. Read `web/data/skill-feedback.json` if it exists (skip if missing) — use `turbo.overall`
-   hitRate/medianMAE as an advisory prior for sizing/stop notes only; ranking stays survival-first
-   (backlog #11), unchanged by feedback. **⚠️ HARD GUARDRAIL: `n < 5` for any bucket = mention as
-   context only, NEVER a reason to include/exclude/re-rank a pick. No auto-weighting.**
+   hitRate/medianMAE as an advisory prior, two tiers (ranking stays survival-first per backlog #11
+   — both tiers affect sizing/conviction language only, never rank order):
+   - **Tier 1 — `n < 5`:** context only. Mention it, never a reason to include/exclude/re-rank.
+   - **Tier 2 — `n ≥ 5`: MUST be applied.** Turbo has no per-type breakdown, so this applies at the
+     whole-lane level: if `turbo.overall.n ≥ 5` and `hitRate` is low, that MUST visibly tighten
+     sizing/conviction guidance across all picks this run (smaller `spotSizing.pct`, tighter stop
+     language) — say so explicitly when it fires. If `n < 5`, say "prior read, n<5 — context only."
+   - **Regime caveat (both tiers):** read `hitRate` next to `avgBenchmarkPct`/`regimeNote` — a low
+     hitRate during a window where `regimeNote` shows SPY broadly down is "unproven in a bad
+     regime," not "turbo doesn't work." Check the actual `regimeNote` text every run, don't assume
+     it (SPY won't catch a sector-only selloff — a known gap in this rough v1 signal).
    **Print this block in chat before screening — a step with no visible output is a step that
    silently gets skipped:**
    ```
    📊 Feedback prior (skill-feedback.json, generated <date>):
      turbo: n=<n> complete=<k> · hitRate <x%|no data yet> · <one-line takeaway>
-     guardrail: buckets with n<5 = context only
+     regime: SPY median <x>% over windows (n=<n>)
+     tier-2: <fired — sizing tightened this run | not fired — n<5, context only>
+     guardrail: n<5 = context only · n≥5 = MUST apply (see tier-2 line)
    ```
    If the file doesn't exist, print `📊 Feedback prior: skill-feedback.json not found — skipping` instead.
 1. Screen for the 5 best small/mid-cap moonshots (≥200–300% bull case + binary catalyst), rank by

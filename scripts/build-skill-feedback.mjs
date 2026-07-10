@@ -40,6 +40,9 @@ const TURBO_WINDOW_DAYS = 30;
 const TURBO_TARGET_PCT = 50;
 const TURBO_KEY_PREFIX = "turbo:";
 const NEAR_MISS_CHECKPOINT_DAYS = 14;
+const BENCH_TICKER = "SPY";
+const BENCH_KEY_PREFIX = "bench:";
+const DRAWDOWN_THRESHOLD_PCT = -2; // a window counts as "down" for regime notes below this
 
 const today = new Date().toISOString().slice(0, 10);
 
@@ -102,6 +105,19 @@ function readReportSnapshots(dir) {
   return out;
 }
 
+/** SPY return over [startISO, endISO], from the shared "bench:SPY_<reportDate>"
+ *  path fetched by fetch-backtest-prices.mjs (backlog #27). null if the bench
+ *  path hasn't been fetched yet (e.g. before the first post-#27 backtest:fetch
+ *  run) or doesn't cover the window — callers must handle that gracefully. */
+function computeBenchmarkPct(pathCache, reportDate, startISO, endISO) {
+  const series = (pathCache[`${BENCH_KEY_PREFIX}${BENCH_TICKER}_${reportDate}`] ?? [])
+    .filter((pt) => pt.d >= startISO && pt.d <= endISO && typeof pt.c === "number")
+    .sort((a, b) => a.d.localeCompare(b.d));
+  if (series.length < 2) return null;
+  const first = series[0].c, last = series[series.length - 1].c;
+  return ((last - first) / first) * 100;
+}
+
 /** One North Star pass (shared math for core 14d/+30% and turbo 30d/+50%). */
 function computeEntry({ ticker, price: p0, reportDate, pathCache, key, windowDays, targetPct }) {
   const startISO = ymdToISO(reportDate);
@@ -111,7 +127,7 @@ function computeEntry({ ticker, price: p0, reportDate, pathCache, key, windowDay
     .filter((pt) => pt.d >= startISO && pt.d <= endISO && typeof pt.c === "number")
     .sort((a, b) => a.d.localeCompare(b.d));
 
-  let maxGainPct = null, maePct = null, hit = null, timeToHitDays = null;
+  let maxGainPct = null, maePct = null, hit = null, timeToHitDays = null, benchmarkPct = null;
   let status;
 
   if (series.length === 0) {
@@ -126,20 +142,36 @@ function computeEntry({ ticker, price: p0, reportDate, pathCache, key, windowDay
       const firstHit = series.find((pt) => ((pt.c - p0) / p0) * 100 >= targetPct);
       if (firstHit) timeToHitDays = daysBetweenISO(startISO, firstHit.d);
     }
+    if (status === "complete") benchmarkPct = computeBenchmarkPct(pathCache, reportDate, startISO, endISO);
   }
 
-  return { ticker, reportDate, maxGainPct, maePct, hit, timeToHitDays, status };
+  return { ticker, reportDate, maxGainPct, maePct, hit, timeToHitDays, benchmarkPct, status };
+}
+
+/** Regime note for a group of (already-complete) entries: how many windows
+ *  were a down-tape for the broad market, so a low hitRate can be read as
+ *  "unproven in a bad regime" instead of "this type/lane doesn't work". */
+function regimeNote(completeEntries) {
+  const withBench = completeEntries.filter((e) => e.benchmarkPct !== null);
+  if (!withBench.length) return null;
+  const down = withBench.filter((e) => e.benchmarkPct <= DRAWDOWN_THRESHOLD_PCT).length;
+  const majorityDown = down / withBench.length >= 0.5;
+  return `${down}/${withBench.length} windows had SPY down >${Math.abs(DRAWDOWN_THRESHOLD_PCT)}%` +
+    (majorityDown ? " — hit-rate measured in a drawdown regime" : "");
 }
 
 function summarize(entries) {
   const complete = entries.filter((e) => e.status === "complete");
   const hits = complete.filter((e) => e.hit);
+  const withBench = complete.filter((e) => e.benchmarkPct !== null);
   return {
     n: complete.length,
     hitRate: complete.length ? r1((hits.length / complete.length) * 100) : null,
     medianMAE: r1(median(complete.map((e) => e.maePct).filter((v) => v !== null))),
     avgMaxGain: r1(mean(complete.map((e) => e.maxGainPct).filter((v) => v !== null))),
     medianTimeToHitDays: median(hits.map((e) => e.timeToHitDays).filter((v) => v !== null)),
+    avgBenchmarkPct: withBench.length ? r1(mean(withBench.map((e) => e.benchmarkPct))) : null,
+    regimeNote: regimeNote(complete),
   };
 }
 
@@ -190,6 +222,21 @@ const turbo = {
   totalComplete: turboEntries.filter((e) => e.status === "complete").length,
   totalAccumulating: turboEntries.filter((e) => e.status === "accumulating").length,
   overall: summarize(turboEntries),
+};
+
+// ── regime (top-level, backlog #27) ──────────────────────────────────────────
+// Median SPY return across every complete window (core + turbo combined) —
+// read alongside hitRate: a 0% hit-rate during a deeply negative benchmark
+// stretch means "unproven in a bad regime", not "this type/lane is bad".
+// null (not 0) when no complete entry has bench data yet — e.g. right after
+// this feature ships, before the first backtest:fetch populates bench: keys.
+const allCompleteForRegime = [...coreEntries, ...turboEntries].filter(
+  (e) => e.status === "complete" && e.benchmarkPct !== null,
+);
+const regime = {
+  n: allCompleteForRegime.length,
+  medianBenchmarkPct: allCompleteForRegime.length ? r1(median(allCompleteForRegime.map((e) => e.benchmarkPct))) : null,
+  note: "SPY return over the same window as each complete entry (core+turbo combined). Pair with core.overall.regimeNote / core.byType[].regimeNote / turbo.overall.regimeNote before judging a hitRate — a low hitRate in a down-tape window is unproven, not disproven.",
 };
 
 // ── scenario calibration (written Base/Bull vs realized maxGainPct) ─────────
@@ -275,9 +322,16 @@ const feedback = {
     `core = +${CORE_TARGET_PCT}% within ${CORE_WINDOW_DAYS} days of report price (catalyst plays) · ` +
     `turbo = +${TURBO_TARGET_PCT}% within ${TURBO_WINDOW_DAYS} days (moonshot plays) · ` +
     `MAE = max adverse excursion (worst drawdown before target hit, or over the window if never hit) · ` +
-    `GUARDRAIL: n < 5 in any bucket = context only, NEVER a reason to include/exclude/re-rank a pick.`,
+    `GUARDRAIL (2-tier, backlog #27): n < 5 in a bucket = context only, NEVER a reason to include/` +
+    `exclude/re-rank a pick. n >= 5 = MUST be applied — if that bucket's hitRate is clearly below ` +
+    `the overall rate, picks of that type need visibly higher upside/conviction to make top 5, and ` +
+    `screening output must say when this rule fired (or that no bucket met the n>=5+divergence bar). ` +
+    `REGIME CAVEAT (both tiers): always read hitRate next to avgBenchmarkPct/regimeNote — a 0% ` +
+    `hit-rate measured in a deeply negative SPY window means "unproven in a bad regime", not "this ` +
+    `type doesn't work" (e.g. earnings_beat 0/12 measured during the Jul 2026 SOX selloff).`,
   core,
   turbo,
+  regime,
   scenarioCalibration,
   nearMissCounterfactual,
 };
@@ -285,8 +339,9 @@ const feedback = {
 fs.mkdirSync(path.dirname(OUT_FILE), { recursive: true });
 fs.writeFileSync(OUT_FILE, JSON.stringify(feedback, null, 2));
 
-console.log(`📊 core: n=${core.n} (${core.totalComplete} complete, ${core.totalAccumulating} accumulating) · ${core.byType.length} catalyst type(s)`);
-console.log(`🎰 turbo: n=${turbo.n} (${turbo.totalComplete} complete, ${turbo.totalAccumulating} accumulating)`);
+console.log(`📊 core: n=${core.n} (${core.totalComplete} complete, ${core.totalAccumulating} accumulating) · ${core.byType.length} catalyst type(s) · regimeNote: ${core.overall.regimeNote ?? "no bench data yet"}`);
+console.log(`🎰 turbo: n=${turbo.n} (${turbo.totalComplete} complete, ${turbo.totalAccumulating} accumulating) · regimeNote: ${turbo.overall.regimeNote ?? "no bench data yet"}`);
+console.log(`🌐 regime: n=${regime.n} · median SPY over completed windows: ${regime.medianBenchmarkPct ?? "no data yet"}${regime.medianBenchmarkPct != null ? "%" : ""}`);
 console.log(`📐 scenario calibration: n=${scenarioCalibration.n}`);
 console.log(`🕵️ near-miss counterfactual · core: ${nearMissCounterfactual.core ? `n=${nearMissCounterfactual.core.n}` : "null (no data yet)"} · turbo: ${nearMissCounterfactual.turbo ? `n=${nearMissCounterfactual.turbo.n}` : "null (no data yet)"}`);
 console.log(`✅ skill feedback written → web/data/skill-feedback.json`);

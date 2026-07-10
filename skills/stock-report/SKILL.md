@@ -20,22 +20,31 @@ strict research-first workflow, and the **only output is a JSON report** saved t
 
 Check for `web/data/skill-feedback.json`. If it doesn't exist yet, skip this step.
 
-If it exists, use it as an **advisory prior**, not a hard rule:
-- `core.byType[]` — catalystTypes with a low measured `hitRate` (+30%/14d) need higher upside/
-  conviction to justify picking this ticker; types with a strong measured `hitRate` get the
-  benefit of the doubt.
+If it exists, use it as an **advisory prior** — two tiers, both apply to every bucket you touch:
+
+- **Tier 1 — `n < 5`: context only.** Mention it in your reasoning if relevant, but NEVER use it
+  to include, exclude, or re-rank a pick. No auto-weighting.
+- **Tier 2 — `n ≥ 5`: MUST be applied.** If a `core.byType[]` bucket's `hitRate` is clearly below
+  `core.overall.hitRate`, that catalystType needs visibly higher upside/conviction to justify
+  picking this ticker — and you must say so in your reasoning (name the type, its hitRate vs.
+  overall). If no `n ≥ 5` bucket diverges from the overall rate, say that too: "prior read, no
+  bucket met the n≥5 + divergence bar."
+- **Regime caveat (both tiers) — read `hitRate` next to `avgBenchmarkPct`/`regimeNote`, never
+  alone.** A low hitRate measured while `regimeNote` shows a genuinely bad market stretch (many
+  windows with SPY down) is "unproven in a bad regime," not "this type doesn't work." But don't
+  *assume* a bad regime by default — check the actual `regimeNote` text every run. Real example:
+  `earnings_beat` once showed 0/12 hitRate while its `regimeNote` read "0/12 windows had SPY down
+  >2%" — i.e. the broad market was calm/up over those windows, so the poor hit-rate was NOT
+  excused by regime (SPY doesn't see sector-only stress like a semiconductor-specific selloff —
+  a known gap in this rough v1 signal; full sector-adjustment is a later phase). Read the number
+  each time, don't assume the story repeats.
 - `core.byType[].medianMAE` — reference when setting `catalystSpot.spotSizing` / `stopPreCatalyst`:
   e.g. "measured median drawdown before a hit was X% → a stop tighter than X kills real winners."
 - `scenarioCalibration.optimismBiasBasePct` / `optimismBiasBullPct` — if calibration shows written
   Base/Bull scenarios have historically run hotter than what actually happened, temper the new
   Base/Bull `pct` accordingly instead of anchoring purely on analyst targets.
-- `nearMissCounterfactual` — if present, shows whether past top-5 cuts actually beat what got
+- `nearMissCounterfactual.core` — if present, shows whether past top-5 cuts actually beat what got
   rejected; use as a sanity check on how strict the bar should be, not a hard cutoff.
-
-**⚠️ HARD GUARDRAIL: if `n < 5` for any bucket you're referencing (`core.byType[].n`,
-`scenarioCalibration.n`, `nearMissCounterfactual.n`, etc.), that number may be mentioned as
-context but MUST NOT be used to include, exclude, or re-rank a pick. No auto-weighting, no hard
-rules from a small sample — mention it, don't act on it.**
 
 ## Step 1: Research (always do this first)
 
