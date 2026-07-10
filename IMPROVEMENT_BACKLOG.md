@@ -100,7 +100,7 @@
   **เป้า:** isolate selection edge จริง — pick ชนะ expected move ของมันไหม
   **✅ Groundwork done (#27, 2026-07-10):** `scripts/fetch-backtest-prices.mjs` ดึง SPY path ต่อ unique report date แล้ว เก็บที่ `path-cache.json` key `bench:SPY_YYYYMMDD` (dedupe ต่อวันที่ ไม่ใช่ต่อ ticker, เก็บ window กว้างสุดถ้าวันเดียวกันมีทั้ง core 14d/turbo 30d) · `scripts/build-skill-feedback.mjs` ใช้ path นี้คำนวณ `avgBenchmarkPct`/`regimeNote` ต่อ type + `regime` top-level แล้ว (raw benchmark-relative, ยังไม่ beta-adjust) — v2.2 ที่แท้จริง (excess return หัก beta ใน `web/lib/north-star.ts` + แสดงบน `/backtest`) ยังไม่ทำ แต่ path data พร้อมใช้ต่อได้เลย ไม่ต้อง fetch ใหม่
 
-## 11. Turbo-compare: moonshot ranking criteria แยกจาก core dashboard
+## 11. ✅ DONE — Turbo-compare: moonshot ranking criteria แยกจาก core dashboard *(implement ผ่าน #32, 2026-07-10)*
 
 **ปัญหา:** `dashboard-compare` skill v2 ใช้ catalyst proximity เป็น primary gate — ถูกต้องสำหรับ core portfolio (event-driven 30% plays) แต่ turbo stocks มี thesis คนละแบบ: "lottery ticket ค่าขนม ถือรอเด้ง 300%+" ซึ่งไม่ต้องการ catalyst วันชัด แต่ต้องการ (1) survival / dilution risk ต่ำ (2) upside path เป็นจริงได้ (3) entry ถูกพอให้ % วิ่ง การนำ catalyst-gate มาใช้กับ turbo ทำให้ RXRX ถูก demote เพราะไม่มีวันที่ ทั้งที่มันคือ moonshot ที่ดีที่สุดในกลุ่ม
 
@@ -116,6 +116,7 @@ Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open N
 **ไฟล์:** `skills/dashboard-compare/SKILL.md` (เพิ่ม turbo mode section) · อาจแยกเป็น `skills/turbo-compare/SKILL.md` ใหม่เลย
 
 **เป้า:** compare turbo portfolio ได้ถูก thesis — RXRX ขึ้น #1 เพราะ survival แข็ง + entry ใกล้โซน ไม่ใช่เพราะมีวัน catalyst ชัด
+**ผล:** implement ผ่าน `skills/turbo-compare/SKILL.md` (ใหม่) — criteria ทั้ง 5 ตัว (Survival/Upside/Entry/Headwind/Bull%) ตรงตามสเปคข้างบนคำต่อคำ ไม่มีการปรับ ดูรายละเอียดการปิดงานที่ #32
 
 ## 12. ธาตุที่ 4 🌍 Earth — Rare Earth Elements, Precious Metals
 
@@ -385,6 +386,33 @@ dev server) เห็น class ครบ ไม่มี error ใน server log
   - **พบเพิ่ม (แยกเรื่อง ไม่ใช่ dedup แต่เกี่ยวกับ symlink check ที่ #30 ขอ):** `.claude/skills/xvary-stock-report`, `.claude/skills/xvary-turbo-report`, `.claude/skills/xvary-dca-report` เป็น **broken symlinks** ชี้ไปที่ `skills/xvary-*` ที่ไม่มีจริง (ของจริงคือ `skills/stock-report`, `skills/turbo-report`, `skills/dca-report` — ไม่มี `xvary-` prefix) — เช็คแล้วว่าไม่กระทบงาน #30 (ไม่มี "สำเนาที่สอง" ที่จะลืมแก้ เพราะ symlink เสียไม่ได้ชี้ไปไฟล์จริงไหนเลย) แต่เป็น repo hygiene issue แยกที่ควรมีคนดู — ไม่รู้ว่าเป็นความตั้งใจ (ปิดใช้งานชั่วคราว) หรือ typo ตกค้าง
 **ไฟล์:** อ่านอย่างเดียว ไม่แก้: `.claude/commands/catalyst-list.md` · `.claude/commands/turbo-list.md` · `skills/stock-report/SKILL.md` · `skills/turbo-report/SKILL.md` · `skills/dashboard-compare/SKILL.md` · `.claude/skills/xvary-*` (พบ broken symlink)
 **เป้า:** ถ้าจะทำจริง — consolidate `catalyst-list.md`/`turbo-list.md` ให้ชี้ไปหา skill's Step 0 แทน copy เนื้อ (ทำทีละคู่ + รัน live `/catalyst-list` และ `/turbo-list` จริงเทียบ output ก่อน-หลัง) และเคาะว่า `.claude/skills/xvary-*` ตั้งใจ broken หรือควรแก้เป็นชื่อจริง
+
+## 32. ✅ DONE — Compare v3 — rename `dashboard-compare`→`catalyst-compare` + stage/proximity-aware + แยก turbo-compare (implement #11)
+
+**ปัญหา:** review `skills/dashboard-compare/SKILL.md` (2026-07-10) พบ 4 ช่อง — 2 อันแรกเกิดจาก #8 เพิ่ง landing (skill เขียนก่อน):
+  1. **ไม่รู้จัก post-catalyst stage** — pick ที่ event ผ่านแล้ว (dashboard ย้ายเข้า Realized section แล้วโดย #8) ยังติด "🎯 Best to Open NOW" ได้เต็ม ๆ เพราะ formula ไม่ดู `catalystDate`
+  2. **ไม่มี catalyst proximity ใน rank score** — event อีก 5 วัน vs 80 วัน คะแนนเท่ากัน ทั้งที่ thesis ทั้งระบบคือ timing (pre-runup 1–2 สัปดาห์)
+  3. **Compare ได้แค่ core lane** — อ่านเฉพาะ `web/data/reports/` → turbo เทียบไม่ได้ = #11 ที่เปิดรออยู่
+  4. **จุกจิก:** ราคาสดใช้ stockanalysis.com ขณะที่ backtest stack ใช้ Yahoo (source เพี้ยนกันได้) · `score` อ่านดิบจาก JSON ทั้งที่เป็น advisory (ของจริง recompute โดย `scoring.ts` — CLAUDE.md ข้อ 6)
+**ทำ:**
+  A. **Catalyst mode — rename skill เดิมเป็น `catalyst-compare`** (สื่อ lane ตรงกว่า "dashboard" ที่กำกวมหลังมี 3 lane · ย้าย dir `skills/dashboard-compare/`→`skills/catalyst-compare/` + สร้าง symlink `.claude/skills/catalyst-compare` ใหม่แทนอันเดิม · เช็คแล้ว: ไม่มีไฟล์อื่นใน repo อ้าง dashboard-compare นอกจาก backlog):
+     - **Stage-aware:** derive stage แบบเดียวกับ `reportStage()` ใน `web/lib/catalyst-timing.ts` (nearest `catalystDate` < today = post) → pick ที่ post ตัดออกจาก Best to Open NOW ไปอยู่ section "⏳ Realized — ไม่ใช่ entry ใหม่" พร้อมเหตุผลสั้น
+     - **Proximity points ใน rank score:** soft (ห้าม hard filter — pre-runup คือ edge): `daysToCatalyst ≤ 14` = +10 · `15–45` = +5 · `>45` หรือไม่มีวัน = 0
+     - **Consistency:** เปลี่ยน live price source เป็น Yahoo (endpoint เดียวกับ `scripts/fetch-backtest-prices.mjs`, stockanalysis เป็น fallback) · เพิ่ม note ใน prompt ว่า `score` ใน JSON เป็น advisory — ใช้ได้แต่ให้รู้ว่าค่าจริง recompute ตอน load
+  B. **Turbo-compare แยก (implement #11):** สร้าง `skills/turbo-compare/SKILL.md` ใหม่ อ่าน `web/data/speculative/` — เกณฑ์ตาม #11 ที่ spec ไว้แล้ว: Survival (0–30, runway/burn/dilution) · Upside reality (0–25) · Entry (0–25, ใช้ zone logic เดียวกับ catalyst mode) · Headwind penalty (−30–0) · Bull% bonus (0–10, tiebreaker) · Output = "🎰 Moonshot Leaderboard" (ห้ามใช้ชื่อ "Best to Open NOW" — framing ต่างกัน) · stage-aware เหมือนกัน (binary event ผ่านแล้ว = realized) · Step 0 feedback prior ใช้ semantics ของ turbo lane (`turbo.overall`, commentary + sizing language)
+     - trigger: "compare turbo", "หุ้นซิ่งตัวไหนเข้าได้", "moonshot ตัวไหนน่าเปิด" ฯลฯ · dashboard-compare เดิมเพิ่มบรรทัด: ถ้า user ถามถึง turbo → ชี้ไป turbo-compare
+**ไฟล์:** `skills/dashboard-compare/SKILL.md` · `skills/turbo-compare/SKILL.md` (ใหม่) · เช็ค `.claude/skills/` ว่าต้องมี symlink/สำเนาไหม (dashboard-compare เดิมเป็น symlink — ทำแบบเดียวกัน) · อ้างอิง logic: `web/lib/catalyst-timing.ts` (`reportStage`, `daysToCatalyst`)
+**เป้า:** compare ไม่เชียร์เข้า pick ที่ event จบแล้ว · pick ใกล้ event ลอยขึ้นเหมาะกับ timing thesis · turbo มี leaderboard ของตัวเองด้วยเกณฑ์ survival-first ตาม #11 (RXRX-type ขึ้น top เพราะ survival แข็ง ไม่ใช่เพราะมีวันชัด) · ราคา source เดียวกับ backtest
+**เกี่ยวพัน:** ปิด item นี้ = ปิด #11 ด้วย (จดใน #11 ว่า implement ผ่าน #32)
+**ผล (2026-07-10):** ทำครบทั้ง A+B — prompt-only, ไม่แตะ app code:
+  - **Rename:** `git mv skills/dashboard-compare skills/catalyst-compare` · ลบ symlink เก่า สร้าง `.claude/skills/catalyst-compare -> ../../skills/catalyst-compare` ใหม่ · `name:` frontmatter → `catalyst-compare` · เก็บ trigger เดิมครบ + เพิ่ม "compare catalyst"/"catalyst ตัวไหนเข้าได้" · grep ยืนยันไม่มีไฟล์อื่นอ้าง `dashboard-compare` อีก (เจอแค่ audit log ใน `.claude/settings.local.json` จาก `rm` command ที่รันตอน rename — ไม่ใช่ reference จริง)
+  - **Stage-aware:** Step 1 derive stage ตามกฎเดียวกับ `reportStage()` เป๊ะ (parseable date ทุกตัวใน `catalysts[]`+`estimateDates[]`, ไม่มี=undated, มีอนาคต=pre, ทั้งหมดอดีต=post) · post ตัดออกจาก rank score/Best-to-Open-NOW/Wait-Skip ไปอยู่ section ใหม่ "⏳ Realized — event ผ่านแล้ว ไม่ใช่ entry ใหม่"
+  - **Proximity points:** เพิ่มใน final formula เป็น `+ prox_pts` (≤14d=+10, 15–45d=+5, >45/undated=0) — soft signal ไม่ hard filter
+  - **Price source:** Yahoo chart endpoint (`query1.finance.yahoo.com/v8/finance/chart/<TICKER>`, host เดียวกับ `fetch-backtest-prices.mjs`) เป็น primary, stockanalysis.com เป็น fallback
+  - **Score note:** เพิ่ม footnote ใต้ตารางว่า `score` เป็น advisory, ของจริง recompute โดย `scoring.ts`
+  - **Turbo pointer:** เพิ่มทั้งใน description และท้าย trigger phrases — ถ้าถามเรื่อง turbo ให้ชี้ไป `turbo-compare`
+  - **`skills/turbo-compare/SKILL.md` ใหม่** — mirror โครงสร้างเดียวกัน (Step 0→1→2→3→4) แต่ criteria ตาม #11 คำต่อคำ (Survival/Upside/Entry/Headwind/Bull%) · output header "🎰 Moonshot Leaderboard" (มีบรรทัดห้ามใช้ "Best to Open NOW" ชัดเจน) · stage-aware แบบเดียวกัน · Step 0 feedback ใช้ `turbo.overall` semantics (commentary+sizing only) · symlink `.claude/skills/turbo-compare` สร้างแล้ว
+  **Verify:** `ls -la .claude/skills/` → ทั้งสอง symlink valid, ไม่มี dangling dashboard-compare ✅ · `grep -rn "dashboard-compare"` เหลือแค่ audit log ใน settings.local.json (ไม่ใช่ wiring reference) ✅ · dry-read ทั้งสองไฟล์: "Best to Open NOW" ไม่โผล่ใน turbo-compare (นอกจาก negative-example rule), Survival/Headwind/Bull% ไม่โผล่ใน catalyst-compare, stage rule คำเดียวกันทั้งคู่ ✅ · **Sanity vs current data:** KTOS (nearest catalyst Aug 5, 26 วันจากวันนี้ 10 Jul) ตกช่วง 15–45d → +5 prox ตรงตามคาด ✅ · ไม่มี ticker ไหนใน `web/data/reports/` (core lane) เป็น "post" stage ตอนนี้จริง ๆ (ทุกตัวมีวันอนาคตอย่างน้อย 1 วัน) เลยไม่มีตัวอย่างจริงให้เช็ค Realized section บน core lane ได้ — แต่เจอตัวอย่างจริงบน turbo lane แทน: **POET** (`web/data/speculative/POET_20260702.json`) มีวันที่ parse ได้แค่ "Q2 2026" (≈พ.ค. 2026) ซึ่งผ่านมาแล้ว ไม่มีวันอนาคตเลย → เข้าเงื่อนไข post/Realized ตรงตามตรรกะที่เขียนไว้
 
 ---
 
