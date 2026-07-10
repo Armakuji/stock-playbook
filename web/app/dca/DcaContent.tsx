@@ -207,7 +207,7 @@ export function DcaContent({
 
         {ranked.length > 0 && (
           <div style={{
-            display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(110px, 1fr))",
+            display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))",
             gap: 8, marginBottom: 20,
           }}>
             {statsItems.map(({ label, value, color }) => (
@@ -215,7 +215,7 @@ export function DcaContent({
                 <div style={{ fontSize: 9, color: "#3a5560", textTransform: "uppercase", letterSpacing: "1px", marginBottom: 4, fontFamily: "var(--font-mono, monospace)" }}>
                   {label}
                 </div>
-                <div style={{ fontSize: 17, fontWeight: 800, color, fontFamily: "var(--font-mono, monospace)", letterSpacing: "-0.5px" }}>
+                <div style={{ fontSize: 18, fontWeight: 800, color, fontFamily: "var(--font-mono, monospace)", letterSpacing: "-0.5px" }}>
                   {value}
                 </div>
               </div>
@@ -238,7 +238,7 @@ export function DcaContent({
             </p>
           </div>
         ) : (
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 16 }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: 16 }}>
             {ranked.map((r) => (
               <DcaCard key={r.ticker} report={r} rank={r.rank} />
             ))}

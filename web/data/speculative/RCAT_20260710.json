@@ -1,0 +1,205 @@
+{
+  "ticker": "RCAT",
+  "companyName": "Red Cat Holdings, Inc.",
+  "companyDescription": "Small tactical drone (UAS) maker — BLACK WIDOW / TEAL 2 short-range reconnaissance systems, winner of the U.S. Army's Short Range Reconnaissance Program of Record",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-10T00:00:00.000Z",
+  "price": 9.39,
+  "priceChange": 0,
+  "priceNote": "Down ~50% from its 52-week high of $18.78 after a $225M dilutive equity offering in June 2026, even as Army order backlog keeps growing",
+  "marketCap": "$1.4B",
+  "sector": "Industrials / Defense & Aerospace",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 58,
+  "summary": "Red Cat is the Army's chosen small-drone supplier (SRR Program of Record winner) riding a Pentagon push for ~$75B in unmanned/counter-drone FY2027 spending, but the stock is a binary, dilution-prone name — size at 2-5% of portfolio max. A Full-Rate Production decision or new Army order could re-rate shares toward the $20+ analyst consensus, while a delayed decision or another equity raise could cut it in half.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q1 FY2027 Earnings",
+      "description": "First quarter fully reflecting the new $9.5M Teal delivery order and $35M TD3/LRIP Black Widow ramp; management will update FY2027 revenue guidance and backlog",
+      "urgencyLabel": "34 DAYS",
+      "dateBadge": "Aug 13, 2026",
+      "catalystDate": "2026-08-13",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "⚡",
+      "name": "Army SRR Full-Rate Production Decision",
+      "description": "Follow-on decision to the $35M TD3/LRIP Black Widow contract that would convert Red Cat from low-rate initial production into a multi-year, full-rate Army program of record",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Dilution overhang — a $225M equity offering in June 2026 followed a $150M raise in Sept 2025; company has under a year of cash runway at current burn and a $300M shelf registration means more dilutive raises are likely",
+    "Program concentration — the bulk of near-term revenue backlog is tied to the single Army SRR/Black Widow program; any Pentagon budget delay or de-scoping hits revenue directly",
+    "Extreme volatility / sentiment risk — RCAT fell ~48% from its $18.78 high purely on dilution/execution concerns even as the underlying Army contract backlog kept growing, showing price can diverge sharply from fundamentals",
+    "Competitive displacement risk — Skydio, AeroVironment, and Anduril are all bidding for adjacent small-drone and counter-UAS Pentagon programs; losing a follow-on award to a rival would remove the core thesis"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q1 FY2027 Earnings",
+      "dateRange": "Aug 13, 2026",
+      "note": "First quarter reflecting Teal/Black Widow delivery ramp + updated FY2027 guidance",
+      "est": "Revenue est. ~$50-60M",
+      "highlight": "blue"
+    },
+    {
+      "event": "Army SRR Full-Rate Production Decision",
+      "dateRange": "H2 2026 (est.)",
+      "note": "Binary re-rate event if Army converts LRIP into full-rate multi-year orders",
+      "est": "n/a — qualitative catalyst",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -55, "price": 4.23 },
+    { "label": "Base", "color": "yellow", "pct": 30, "price": 12.21 },
+    { "label": "Bull", "color": "green", "pct": 120, "price": 20.66 },
+    { "label": "Moon", "color": "purple", "pct": 280, "price": 35.68 }
+  ],
+  "analystTargets": [
+    { "firm": "Wall Street Consensus (11 analysts)", "target": 20.55, "rating": "Strong Buy" },
+    { "firm": "Street High", "target": 25, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Defense/Pentagon procurement spending is largely insulated from Fed rate moves — it's driven by Congressional appropriations, not consumer credit conditions, so a Fed pause or cut has little direct read-through to RCAT's order book",
+    "inflationNote": "Input costs (electronics, batteries, composites) face modest inflation pressure, but Army contracts are typically fixed-price-with-options, so cost overruns are Red Cat's risk to absorb, not a pass-through",
+    "sectorImpact": "The bigger macro risk is fiscal/political — a government shutdown, continuing resolution, or FY2027 defense budget delay (the ~$75B unmanned-systems request still needs Congressional approval) would push out Red Cat's award timeline more than any rate move would",
+    "summary": "Fed policy itself is a non-factor for this name; the real macro risk is Congressional budget/appropriations timing for the FY2027 defense budget that funds RCAT's Army program."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 9.39, "note": "Current price — post-dilution reset", "timing": "Now" },
+      { "label": "Entry 2", "level": 7.5, "rangeMax": 8.0, "note": "Dip zone toward post-offering support", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 5.77, "note": "52-week low — deep capitulation zone", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 12.21, "pct": 30, "note": "Base case — Army production ramp priced in gradually" },
+    "tp2": { "price": 20.66, "pct": 120, "note": "Bull case — roughly matches $20-21 analyst consensus on FRP decision + new Army orders" },
+    "tp3": { "price": 35.68, "pct": 280, "note": "Moon case — RCAT re-rates like UMAC/ONDS did on multi-year Army program scale-up", "moon": true },
+    "stopLoss": {
+      "tight": 7.7, "tightPct": -18, "tightNote": "Below near-term consolidation support",
+      "hard": 5.45, "hardPct": -42, "hardNote": "Breach of 52-week low — thesis unwind (lost program or major dilution shock)",
+      "riskReward": "6.7:1", "rrNote": "18% risk vs 120% reward to TP2", "rrWarning": "Asymmetric ✅"
+    },
+    "verdict": "Binary Army program-of-record play — size at 2-5% of portfolio max, scale in on dips toward $7.5-8.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "Small-cap defense/drone names typically front-run named Army milestone decisions (LRIP orders, FRP decisions) by 1-3 weeks as trade press and Army contracting notices leak ahead of the formal 8-K — RCAT itself ran up into its Nov 2024 SRR win day on speculation",
+    "preRunupTiming": "1-3 weeks before formal award",
+    "preRunupPct": "+10-20%",
+    "postWin": {
+      "avgPct": 45,
+      "range": "+15% to +100%",
+      "note": "RCAT jumped +36.4% the day it was announced as SRR Program of Record winner, then continued rallying to its 52-week high of $18.78 over the following months as follow-on orders landed",
+      "exampleDate": "Nov 2024"
+    },
+    "postLose": {
+      "avgPct": -35,
+      "range": "-20% to -48%",
+      "note": "RCAT fell ~48% from its $18.78 high purely on a dilutive $225M equity offering (no contract loss involved) — showing how fast sentiment reverses on financing risk; comparably, AeroVironment's stock was hit hard after a contract cancellation cut $1.7B from its long-term outlook",
+      "exampleDate": "Jun 2026"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Clear, dated near-term catalyst (Aug 13 earnings) plus a binary FRP decision in H2 2026 support a moonshot allocation, but the active dilution overhang and single-program revenue concentration cap sizing at 3%"
+    },
+    "stopPreCatalyst": { "pct": -18, "price": 7.7, "note": "Loss of near-term support ahead of earnings/FRP news would signal the thesis is breaking before the binary event even hits" },
+    "stopPostCatalyst": { "pct": -45, "note": "If the FRP decision is delayed/lost to a competitor, or another large dilutive raise hits, exit at the 52-week-low breach" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "UMAC",
+      "event": "Pentagon funding-stake report (WSJ) + U.S. Army drone-motor contract award",
+      "date": "Oct 2025 - May 2026",
+      "movePct": 900,
+      "days": 270,
+      "outcome": "good",
+      "note": "Unusual Machines is up over 900% since its 2024 IPO, driven by a US Army motor-supply contract (Oct 2025) and a May 2026 Pentagon funding-stake report — the clearest recent example of a small-cap drone name re-rating multiples higher on real Army contract flow"
+    },
+    {
+      "ticker": "ONDS",
+      "event": "Optimus / Iron Drone military and counter-drone contract wins",
+      "date": "2025",
+      "movePct": 350,
+      "days": 365,
+      "outcome": "good",
+      "note": "Ondas Holdings rallied over 350% in the trailing year as its Optimus and Iron Drone Raider systems landed a string of defense and airport counter-drone orders — a close comparable to RCAT's Army program-of-record trajectory"
+    },
+    {
+      "ticker": "RCAT",
+      "event": "U.S. Army Short Range Reconnaissance (SRR) Program of Record win",
+      "date": "Nov 2024",
+      "movePct": 36,
+      "days": 1,
+      "outcome": "good",
+      "note": "Red Cat's own precedent: shares jumped +36.4% the day Teal was announced as the SRR Program of Record winner, then kept climbing to a 52-week high of $18.78 as follow-on LRIP orders were awarded"
+    }
+  ],
+  "sources": [
+    "https://www.stocktitan.net/sec-filings/RCAT/8-k-red-cat-holdings-inc-reports-material-event-4e5f10f5e02c.html",
+    "https://ir.redcatholdings.com/news-events/press-releases/detail/160/red-cat-announces-production-selection-for-u-s-army-short-range-reconnaissance-program",
+    "https://www.streetwisereports.com/article/2026/07/06/rcat-stock-teal-drones-advances-in-army-program-amid-sector-boom.html",
+    "https://seekingalpha.com/news/4311991-red-cat-rises-after-winning-selection-for-us-army-short-range-reconnaissance-program",
+    "https://www.wallstreetzen.com/stocks/us/nasdaq/rcat/stock-forecast",
+    "https://simplywall.st/stocks/us/capital-goods/nasdaq-rcat/red-cat-holdings/future",
+    "https://stockstotrade.com/news/red-cat-holdings-inc-rcat-news-2026_06_12/",
+    "https://www.ainvest.com/news/red-cat-faces-dilution-overhang-earnings-beat-trigger-sharp-reversal-2605/",
+    "https://www.theglobeandmail.com/investing/markets/stocks/RCAT/pressreleases/3202313/drone-stocks-are-down-but-defense-backlogs-tell-a-different-story/",
+    "https://www.cnbc.com/2026/05/28/drone-stocks-unusual-machines-donald-trump-equity-stake.html",
+    "https://seekingalpha.com/article/4919339-unusual-machines-riding-the-pentagons-multi-billion-dollar-drone-push",
+    "https://stocktwits.com/news-articles/markets/equity/ondas-stock-rally-after-new-order/cL7BB1nREzx",
+    "https://www.tipranks.com/stocks/rcat/earnings"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Red Cat คือผู้ผลิตโดรนขนาดเล็กที่กองทัพบกสหรัฐฯ เลือกใช้ (ผู้ชนะโปรแกรม SRR) ท่ามกลางงบ Pentagon ปี FY2027 ราว 7.5 หมื่นล้านดอลลาร์สำหรับระบบไร้คนขับ/ต่อต้านโดรน แต่หุ้นตัวนี้เป็น binary bet ที่มีความเสี่ยง dilution สูง — ควรลงทุนแค่ 2-5% ของ portfolio เท่านั้น หากมีคำตัดสิน Full-Rate Production หรือออร์เดอร์ใหม่จากกองทัพ หุ้นอาจวิ่งไปแตะ consensus นักวิเคราะห์ที่ $20+ แต่ถ้าล่าช้าหรือมีการเพิ่มทุนอีกรอบ หุ้นอาจร่วงลงครึ่งหนึ่ง",
+      "priceNote": "ราคาลดลงราว 50% จากจุดสูงสุด 52 สัปดาห์ที่ $18.78 หลังการเพิ่มทุน $225 ล้านในเดือนมิ.ย. 2026 แม้ backlog ออร์เดอร์กองทัพจะยังเติบโตต่อเนื่อง",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "ผลประกอบการไตรมาส Q1 FY2027", "description": "ไตรมาสแรกที่สะท้อนออร์เดอร์ Teal มูลค่า $9.5 ล้าน และการเร่งผลิต Black Widow ภายใต้สัญญา $35 ล้าน พร้อมอัปเดต guidance ปี FY2027" },
+        { "name": "คำตัดสิน Full-Rate Production ของกองทัพบก", "description": "ขั้นถัดไปจากสัญญา TD3/LRIP มูลค่า $35 ล้าน ที่จะเปลี่ยน Red Cat จากการผลิตอัตราต่ำ (LRIP) ไปสู่โปรแกรมผลิตเต็มรูปแบบระยะยาวกับกองทัพบก" }
+      ],
+      "risks": [
+        "ความเสี่ยง dilution — เพิ่งเพิ่มทุน $225 ล้านในเดือนมิ.ย. 2026 ต่อจากการเพิ่มทุน $150 ล้านในเดือนก.ย. 2025 บริษัทมีเงินสดพอใช้ไม่ถึงปี และมี shelf registration $300 ล้านที่พร้อมเพิ่มทุนได้อีก",
+        "ความเสี่ยงกระจุกตัวในโปรแกรมเดียว — รายได้หลักผูกกับโปรแกรม Army SRR/Black Widow โปรแกรมเดียว หากงบ Pentagon ล่าช้าจะกระทบรายได้โดยตรง",
+        "ความผันผวนสูงมาก — หุ้นร่วง ~48% จากจุดสูงสุด $18.78 เพียงเพราะความกังวลเรื่อง dilution ทั้งที่ backlog สัญญายังโตต่อเนื่อง สะท้อนว่าราคาอาจสวนทางพื้นฐานได้รุนแรง",
+        "ความเสี่ยงถูกแย่งชิงจากคู่แข่ง — Skydio, AeroVironment และ Anduril ต่างแข่งขันในโปรแกรมโดรนขนาดเล็กและต่อต้านโดรนใกล้เคียงกัน หากแพ้ประมูลรอบถัดไปจะกระทบ thesis โดยตรง"
+      ],
+      "macroRisk": {
+        "rateOutlook": "การใช้จ่ายด้านกลาโหม/จัดซื้อของ Pentagon แทบไม่ผูกกับทิศทางดอกเบี้ย Fed เพราะขับเคลื่อนด้วยงบประมาณที่รัฐสภาอนุมัติ ไม่ใช่ภาวะสินเชื่อผู้บริโภค",
+        "inflationNote": "ต้นทุนชิ้นส่วน (อิเล็กทรอนิกส์ แบตเตอรี่ วัสดุคอมโพสิต) มีแรงกดดันเงินเฟ้อบ้าง แต่สัญญากองทัพส่วนใหญ่เป็นแบบราคาคงที่ ทำให้ต้นทุนที่บานปลายเป็นความเสี่ยงของ Red Cat เอง",
+        "sectorImpact": "ความเสี่ยง macro ที่แท้จริงคือเรื่องงบประมาณ/การเมือง — การ shutdown รัฐบาล หรือความล่าช้าของงบกลาโหม FY2027 (งบ 7.5 หมื่นล้านดอลลาร์สำหรับระบบไร้คนขับยังต้องรอสภาอนุมัติ) จะกระทบ timeline ของ Red Cat มากกว่าการขยับดอกเบี้ยใดๆ",
+        "summary": "นโยบาย Fed แทบไม่มีผลกับหุ้นตัวนี้โดยตรง ความเสี่ยง macro หลักคือจังหวะงบประมาณกลาโหม FY2027 ของรัฐสภาที่จะสนับสนุนโปรแกรมกองทัพของ RCAT"
+      },
+      "entryStrategy": {
+        "verdict": "หุ้นเดิมพัน binary กับโปรแกรมกองทัพบก — ควรลงทุนแค่ 2-5% ของ portfolio เท่านั้น ทยอยซื้อเมื่อราคาย่อลงมาโซน $7.5-8",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — หลังรีเซ็ตจาก dilution", "timing": "ตอนนี้" },
+          { "note": "โซนย่อตัวใกล้แนวรับหลังเพิ่มทุน", "timing": "ถ้าย่อ" },
+          { "note": "จุดต่ำสุด 52 สัปดาห์ — โซน capitulation ลึก", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "กรณีฐาน — ตลาดค่อยๆ ให้ราคากับการเร่งผลิตของกองทัพ" },
+        "tp2": { "note": "กรณี bull — ใกล้เคียง consensus นักวิเคราะห์ $20-21 จากคำตัดสิน FRP และออร์เดอร์ใหม่" },
+        "tp3": { "note": "กรณี moon — RCAT re-rate แบบเดียวกับ UMAC/ONDS จากการขยายโปรแกรมกองทัพระยะยาว" },
+        "stopLoss": {
+          "tightNote": "หลุดแนวรับ consolidation ระยะสั้น",
+          "hardNote": "หลุดจุดต่ำสุด 52 สัปดาห์ — thesis พัง (แพ้โปรแกรมหรือช็อกจากการเพิ่มทุนใหญ่)",
+          "rrNote": "ความเสี่ยง 18% เทียบผลตอบแทน 120% ไปยัง TP2",
+          "rrWarning": "อัตราส่วนไม่สมมาตรดี ✅"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการไตรมาส Q1 FY2027", "note": "ไตรมาสแรกที่สะท้อนการเร่งส่งมอบ Teal/Black Widow พร้อม guidance ปี FY2027 ใหม่" },
+        { "event": "คำตัดสิน Full-Rate Production ของกองทัพบก", "note": "เหตุการณ์ re-rate แบบ binary หากกองทัพเปลี่ยนจาก LRIP เป็นการผลิตเต็มรูปแบบระยะยาว" }
+      ]
+    }
+  }
+}

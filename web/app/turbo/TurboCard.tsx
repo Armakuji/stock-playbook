@@ -43,51 +43,28 @@ function TurboBar({ report, moonPct }: { report: StockReport; moonPct: number })
   const tp3Pct = pos(report.entryStrategy.tp3.price);
 
   return (
-    <div style={{ marginTop: 14, paddingTop: 12, borderTop: "1px solid #2d1010" }}>
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8 }}>
-        <span style={{
-          fontSize: 9, color: "#7f3030", textTransform: "uppercase",
-          letterSpacing: "1px", fontFamily: "var(--font-mono, monospace)",
-        }}>
-          Price → Moon
-        </span>
-        <span style={{
-          fontSize: 10, fontWeight: 800, fontFamily: "var(--font-mono, monospace)",
-          background: "linear-gradient(90deg, #ff6d00, #d500f9)",
-          WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
-        }}>
-          🌙 +{Math.round(moonPct)}%
-        </span>
+    <div className="moon">
+      <div className="mrow">
+        <span className="mlab">Price → Moon</span>
+        <span className="mval">🌙 +{Math.round(moonPct)}%</span>
       </div>
 
-      <div style={{ position: "relative", height: 5, background: "#1a0505", borderRadius: 6 }}>
+      <div className="mbar">
         {/* filled zone */}
-        <div style={{
-          position: "absolute", left: 0, width: `${curPct}%`, height: "100%",
-          background: "linear-gradient(90deg, #ff3d0030, #ff6d0080)",
-          borderRadius: 6,
-        }} />
+        <span className="mfill" style={{ width: `${curPct}%` }} />
         {/* TP1 tick */}
         <div style={{
           position: "absolute", left: `${tp1Pct}%`, top: -3, width: 1, height: 11,
           background: "#ff6d0060", borderRadius: 2, transform: "translateX(-50%)",
         }} />
         {/* TP3 / moon tick */}
-        <div style={{
-          position: "absolute", left: `${tp3Pct}%`, top: -3, width: 2, height: 11,
-          background: "#d500f9", borderRadius: 2, transform: "translateX(-50%)",
-          filter: "drop-shadow(0 0 4px #d500f9)",
-        }} />
+        <span className="mtick" style={{ left: `${tp3Pct}%` }} />
         {/* current price dot */}
         <div className="radar-mk" style={{ left: `${curPct}%`, background: "#ff3d00", boxShadow: "0 0 8px #ff3d00" }} />
       </div>
 
-      <div style={{ position: "relative", height: 16, marginTop: 4 }}>
-        <span style={{
-          position: "absolute", left: `${tp3Pct}%`, fontSize: 8,
-          color: "#d500f9", transform: "translateX(-50%)",
-          fontFamily: "var(--font-mono, monospace)", whiteSpace: "nowrap",
-        }}>🌙 MOON</span>
+      <div className="mend">
+        <span className="mmoon" style={{ left: `${tp3Pct}%` }}>🌙 MOON</span>
       </div>
     </div>
   );
@@ -221,7 +198,7 @@ export function TurboCard({
         </p>
 
         {/* Row 5: stat chips */}
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 6 }}>
+        <div className="tchips">
           {[
             {
               label: th ? "มาร์เก็ตแคป" : "Market Cap",
@@ -245,20 +222,9 @@ export function TurboCard({
               color: "#ef4444",
             },
           ].map(({ label, value, color }) => (
-            <div key={label} style={{
-              background: "#13050a", borderRadius: 8, padding: "7px 9px",
-              border: "1px solid #2d1010",
-            }}>
-              <div style={{ fontSize: 9, color: "#4d2020", marginBottom: 3, textTransform: "uppercase", letterSpacing: "0.5px" }}>
-                {label}
-              </div>
-              <div style={{
-                fontSize: 11, fontWeight: 800, color,
-                fontFamily: "var(--font-mono, monospace)",
-                whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis",
-              }}>
-                {value}
-              </div>
+            <div key={label} className="tchip">
+              <div className="cl">{label}</div>
+              <div className="cv" style={{ color }}>{value}</div>
             </div>
           ))}
         </div>

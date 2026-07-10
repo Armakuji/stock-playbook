@@ -72,7 +72,7 @@ function initials(user: CurrentUser): string {
   return (user.name?.trim()?.[0] ?? user.email[0]).toUpperCase();
 }
 
-const AVATAR_SIZE = 32;
+const AVATAR_SIZE = 30;
 
 function Avatar({ user, size, showImg, onError }: { user: CurrentUser; size: number; showImg: boolean; onError: () => void }) {
   return showImg ? (
@@ -88,7 +88,8 @@ function Avatar({ user, size, showImg, onError }: { user: CurrentUser; size: num
     />
   ) : (
     <span style={{
-      width: size, height: size, borderRadius: "50%", display: "flex", background: "#3b82f6", color: "#fff",
+      width: size, height: size, borderRadius: "50%", display: "flex",
+      background: "linear-gradient(135deg, #3b82f6, #8b5cf6)", color: "#fff",
       alignItems: "center", justifyContent: "center", fontSize: Math.round(size * 0.4), fontWeight: 800, flexShrink: 0,
     }}>
       {initials(user)}
@@ -135,7 +136,7 @@ function MobileProfileSection({ user, th, pathname }: { user: AuthState; th: boo
         </div>
       </div>
       <button
-        onClick={() => logout()}
+        onClick={() => logout().catch((err) => console.error("logout failed", err))}
         style={{
           flexShrink: 0, padding: "6px 12px", borderRadius: 7, border: "1px solid var(--border)",
           background: "transparent", color: "var(--muted)", fontSize: 11, fontWeight: 700, cursor: "pointer",
@@ -173,10 +174,12 @@ function AuthWidget({ user, th, pathname }: { user: AuthState; th: boolean; path
       // anyway — skip the failed attempt and navigate directly.
       <a
         href={loginUrl(pathname)}
+        className="srw-loginbtn"
         style={{
-          fontSize: 11, fontWeight: 800, padding: "5px 12px", borderRadius: 7,
+          fontSize: 12, fontWeight: 800, padding: "7px 16px", borderRadius: 9,
           background: "#10b981", color: "#fff", textDecoration: "none",
           fontFamily: "var(--font-mono, monospace)", letterSpacing: "0.3px", whiteSpace: "nowrap",
+          display: "inline-block", transition: "transform 0.15s, box-shadow 0.15s",
         }}
       >
         {th ? "เข้าสู่ระบบ" : "Login"}
@@ -217,7 +220,7 @@ function AuthWidget({ user, th, pathname }: { user: AuthState; th: boolean; path
           </div>
           <div style={{ height: 1, background: "var(--border)", margin: "2px 0" }} />
           <button
-            onClick={() => logout()}
+            onClick={() => logout().catch((err) => console.error("logout failed", err))}
             style={{
               display: "block", width: "100%", textAlign: "left", padding: "8px 10px", borderRadius: 6,
               border: "none", background: "transparent", color: "var(--text)", cursor: "pointer",
@@ -244,7 +247,15 @@ export function Header({ lastUpdated }: { lastUpdated: string }) {
   }, []);
 
   return (
-    <header style={{ borderBottom: "1px solid var(--border)", backgroundColor: "var(--card)", position: "relative" }}>
+    <header style={{
+      borderBottom: "1px solid var(--border)",
+      background: "rgba(12,12,20,0.72)",
+      backdropFilter: "blur(12px)",
+      WebkitBackdropFilter: "blur(12px)",
+      position: "sticky",
+      top: 0,
+      zIndex: 30,
+    }}>
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "14px 16px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12 }}>
         <Link href="/" style={{ textDecoration: "none", flexShrink: 0, display: "flex", alignItems: "center", gap: 8 }}>
           <RadarBadge size={24} />
@@ -257,21 +268,31 @@ export function Header({ lastUpdated }: { lastUpdated: string }) {
         <div className="srw-desktop" style={{ alignItems: "center", gap: 14 }}>
           <nav style={{
             display: "flex", alignItems: "center", gap: 2,
-            background: "var(--card)", border: "1px solid var(--border)",
-            borderRadius: 10, padding: 3,
+            background: "#0a0a12", border: "1px solid var(--border)",
+            borderRadius: 11, padding: 4,
           }}>
             {STRATEGY.map((s) => (
-              <Link key={s.href} href={s.href} title={th ? s.titleTh : s.titleEn} style={{ ...gradLink, backgroundImage: s.grad }}>
+              <Link
+                key={s.href}
+                href={s.href}
+                title={th ? s.titleTh : s.titleEn}
+                className="srw-pill"
+                style={{
+                  ...gradLink, backgroundImage: s.grad,
+                  boxShadow: pathname === s.href ? "inset 0 0 0 999px rgba(255,255,255,0.06)" : "none",
+                }}
+              >
                 {s.label}
               </Link>
             ))}
           </nav>
-          <Link href="/backtest" title="Backtest" style={{ fontSize: 11, color: "var(--muted)", textDecoration: "none", fontFamily: "var(--font-mono, monospace)", fontWeight: 700, letterSpacing: "0.3px" }}>
+          <Link href="/backtest" title="Backtest" className="srw-tool" style={{ fontSize: 11, color: "var(--muted)", textDecoration: "none", fontFamily: "var(--font-mono, monospace)", fontWeight: 700, letterSpacing: "0.3px" }}>
             📊 Backtest
           </Link>
           <Link
             href="/journal"
             title={th ? "Journal — AI ตรวจแผนเทรด" : "Journal — AI plan validation"}
+            className="srw-tool srw-tool-journal"
             style={{
               fontSize: 11, color: "#f59e0b", textDecoration: "none",
               fontFamily: "var(--font-mono, monospace)", fontWeight: 700, letterSpacing: "0.3px",
@@ -293,7 +314,7 @@ export function Header({ lastUpdated }: { lastUpdated: string }) {
           aria-expanded={open}
           onClick={() => setOpen((o) => !o)}
           style={{
-            background: "var(--card)", border: "1px solid var(--border)", borderRadius: 9,
+            background: "#0a0a12", border: "1px solid var(--border)", borderRadius: 9,
             width: 38, height: 34, cursor: "pointer", padding: 0,
             alignItems: "center", justifyContent: "center", color: "var(--text)",
           }}
@@ -320,9 +341,15 @@ export function Header({ lastUpdated }: { lastUpdated: string }) {
             {th ? "ธาตุการลงทุน" : "Investment elements"}
           </div>
           {STRATEGY.map((s) => (
-            <Link key={s.href} href={s.href} onClick={() => setOpen(false)} style={{
-              ...gradLink, backgroundImage: s.grad, fontSize: 15, padding: "9px 6px",
-            }}>
+            <Link
+              key={s.href}
+              href={s.href}
+              onClick={() => setOpen(false)}
+              style={{
+                ...gradLink, backgroundImage: s.grad, fontSize: 15, padding: "9px 6px",
+                boxShadow: pathname === s.href ? "inset 0 0 0 999px rgba(255,255,255,0.06)" : "none",
+              }}
+            >
               {s.label}
             </Link>
           ))}
@@ -364,11 +391,17 @@ export function Header({ lastUpdated }: { lastUpdated: string }) {
       <style>{`
         .srw-desktop { display: flex; }
         .srw-burger  { display: none; }
-        @media (max-width: 720px) {
+        @media (max-width: 760px) {
           .srw-desktop { display: none; }
           .srw-burger  { display: flex; }
           .srw-logo    { font-size: 16px; }
         }
+
+        .srw-pill:hover { filter: brightness(1.15); }
+        .srw-tool { transition: color 0.15s; }
+        .srw-tool:hover { color: var(--text) !important; }
+        .srw-tool-journal:hover { color: #fbbf24 !important; }
+        .srw-loginbtn:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(16,185,129,0.35); }
 
         /* Journal nav — a tiny spinning spark next to the plain text link
            hints there's an AI feature behind it, without a heavy filled

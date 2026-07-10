@@ -1,4 +1,4 @@
-import { IsNumber, IsOptional, IsString } from "class-validator";
+import { IsNumber, IsOptional, IsPositive, IsString } from "class-validator";
 
 export class CreateExitDto {
   @IsString()
@@ -8,6 +8,7 @@ export class CreateExitDto {
   price!: number;
 
   @IsNumber()
+  @IsPositive()
   shares!: number;
 
   @IsOptional()

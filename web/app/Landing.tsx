@@ -18,50 +18,6 @@ interface ElementDef {
   ghost?: boolean;
 }
 
-/* ── Radar mark: navy tile, rings, green sweep, four element blips ──────────── */
-function RadarMark({ size = 96 }: { size?: number }) {
-  return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 512 512"
-      aria-hidden
-      style={{ display: "block", filter: "drop-shadow(0 8px 30px rgba(16,185,129,0.28))" }}
-    >
-      <defs>
-        <linearGradient id="rmSg" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stopColor="#8ef0a8" />
-          <stop offset="1" stopColor="#22b866" />
-        </linearGradient>
-        <radialGradient id="rmSwp" cx="50%" cy="50%" r="50%">
-          <stop offset="0" stopColor="#3fd07f" stopOpacity="0.85" />
-          <stop offset="1" stopColor="#3fd07f" stopOpacity="0" />
-        </radialGradient>
-        <linearGradient id="rmBg" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stopColor="#111a24" />
-          <stop offset="1" stopColor="#080c12" />
-        </linearGradient>
-      </defs>
-      <rect x="16" y="16" width="480" height="480" rx="112" fill="url(#rmBg)" />
-      <rect x="16.5" y="16.5" width="479" height="479" rx="111.5" fill="none" stroke="#28e07f" strokeOpacity="0.18" strokeWidth="3" />
-      <g fill="none" stroke="#2f8f5c" strokeOpacity="0.55" strokeWidth="8">
-        <circle cx="256" cy="256" r="56" />
-        <circle cx="256" cy="256" r="112" />
-        <circle cx="256" cy="256" r="168" />
-      </g>
-      <g transform="rotate(-38 256 256)">
-        <path d="M256 256 L256 76 A180 180 0 0 1 424 232 Z" fill="url(#rmSwp)" />
-        <line x1="256" y1="256" x2="256" y2="72" stroke="url(#rmSg)" strokeWidth="10" strokeLinecap="round" />
-      </g>
-      <circle cx="300" cy="140" r="16" fill="#4aa8f0" />
-      <circle cx="368" cy="232" r="16" fill="#3fd07f" />
-      <circle cx="216" cy="372" r="16" fill="#ff7a3c" />
-      <circle cx="140" cy="300" r="16" fill="#c08a4a" />
-      <circle cx="256" cy="256" r="16" fill="url(#rmSg)" />
-    </svg>
-  );
-}
-
 function ElementAmbient({ d }: { d: ElementDef }) {
   if (d.ghost) return null;
 
@@ -143,15 +99,15 @@ function ElementCard({ d, th, idx }: { d: ElementDef; th: boolean; idx: number }
         cursor: d.ghost ? "default" : "pointer",
         overflow: "hidden",
         transition: "transform .22s, box-shadow .22s, border-color .22s",
-        opacity: d.ghost ? 0.55 : 1,
+        opacity: d.ghost ? 0.5 : 1,
         animation: "cardEntrance 0.55s cubic-bezier(0.22,1,0.36,1) both",
         animationDelay: `${idx * 80}ms`,
       }}
       onMouseEnter={(e) => {
         if (d.ghost) return;
         const el = e.currentTarget as HTMLDivElement;
-        el.style.transform = "translateY(-4px)";
-        el.style.boxShadow = `0 10px 40px ${d.glow}, 0 2px 10px rgba(0,0,0,0.6)`;
+        el.style.transform = "translateY(-5px)";
+        el.style.boxShadow = `0 14px 44px ${d.glow}, 0 2px 10px rgba(0,0,0,0.6)`;
         el.style.borderColor = `${d.c1}66`;
       }}
       onMouseLeave={(e) => {
@@ -167,7 +123,7 @@ function ElementCard({ d, th, idx }: { d: ElementDef; th: boolean; idx: number }
       {/* element glow wash — top right corner */}
       {!d.ghost && (
         <div style={{
-          position: "absolute", top: -40, right: -40, width: 160, height: 160,
+          position: "absolute", top: -44, right: -44, width: 170, height: 170,
           background: `radial-gradient(circle, ${d.glow} 0%, transparent 70%)`,
           pointerEvents: "none",
         }} />
@@ -190,7 +146,7 @@ function ElementCard({ d, th, idx }: { d: ElementDef; th: boolean; idx: number }
 
       {/* feature name */}
       <div style={{
-        fontSize: 26, fontWeight: 900, letterSpacing: "-0.5px", marginBottom: 6,
+        fontSize: 25, fontWeight: 800, letterSpacing: "-0.5px", marginBottom: 6,
         fontFamily: "var(--font-display, sans-serif)",
         color: d.ghost ? "var(--muted)" : "var(--text)",
       }}>
@@ -223,7 +179,14 @@ function ElementCard({ d, th, idx }: { d: ElementDef; th: boolean; idx: number }
         display: "flex", alignItems: "center", justifyContent: "space-between",
         paddingTop: 12, borderTop: "1px solid var(--border)",
       }}>
-        <span style={{ fontSize: 11, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>
+        <span style={{ fontSize: 11, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", display: "inline-flex", alignItems: "center", gap: 6 }}>
+          {!d.ghost && d.count != null && (
+            <span style={{ display: "inline-flex", gap: 3 }}>
+              {Array.from({ length: Math.min(d.count, 6) }).map((_, i) => (
+                <i key={i} style={{ width: 5, height: 5, borderRadius: "50%", background: d.c1, opacity: 0.9, display: "inline-block" }} />
+              ))}
+            </span>
+          )}
           {d.ghost
             ? (th ? "วางแผนไว้" : "planned")
             : d.count != null
@@ -292,7 +255,7 @@ export function Landing({
   return (
     <div style={{ position: "relative" }}>
 
-      {/* ── Hero: radar centerpiece + calm title ─────────────────────── */}
+      {/* ── Hero: ambient glow + calm title ─────────────────────────── */}
       <div style={{
         textAlign: "center",
         padding: "52px 0 40px",
@@ -300,36 +263,26 @@ export function Landing({
         overflow: "hidden",
         isolation: "isolate",
       }}>
-        {/* Radar rings + rotating sweep — behind the mark */}
+        {/* Ambient glow — three soft radial gradients, no icon or animation */}
         <div aria-hidden style={{
-          position: "absolute", top: "50%", left: "50%",
-          transform: "translate(-50%, -56%)",
-          width: 520, height: 520, opacity: 0.5, pointerEvents: "none", zIndex: 0,
-        }}>
-          {[180, 320, 460].map((s) => (
-            <div key={s} style={{
-              position: "absolute", top: "50%", left: "50%",
-              transform: "translate(-50%, -50%)",
-              width: s, height: s, borderRadius: "50%",
-              border: "1px solid rgba(47,143,92,0.32)",
-            }} />
-          ))}
-          <div style={{
-            position: "absolute", top: "50%", left: "50%",
-            width: 260, height: 260, transform: "translate(-50%, -50%)",
-            borderRadius: "50%",
-            background: "conic-gradient(from 0deg, rgba(63,208,127,0.28), transparent 42%)",
-            animation: "radarSweep 7s linear infinite",
-          }} />
-        </div>
+          position: "absolute", top: "-8%", left: "50%",
+          transform: "translateX(-50%)",
+          width: 900, height: 520, pointerEvents: "none", zIndex: -1,
+          background: [
+            "radial-gradient(ellipse 55% 60% at 30% 40%, rgba(16,185,129,0.10), transparent 65%)",
+            "radial-gradient(ellipse 55% 60% at 70% 55%, rgba(56,189,248,0.08), transparent 65%)",
+            "radial-gradient(ellipse 40% 50% at 50% 70%, rgba(251,146,60,0.07), transparent 65%)",
+          ].join(", "),
+        }} />
 
-        {/* Hero content — above rings */}
+        {/* Hero content */}
         <div style={{ position: "relative", zIndex: 1 }}>
           <div style={{
             display: "inline-flex", alignItems: "center", gap: 9, marginBottom: 18,
             padding: "5px 14px", borderRadius: 999,
             background: "var(--card)", border: "1px solid var(--border)",
             animation: "fadeInUp 0.4s ease both",
+            whiteSpace: "nowrap",
           }}>
             <span style={{
               display: "inline-block", width: 7, height: 7, borderRadius: "50%",
@@ -359,10 +312,10 @@ export function Landing({
           }}>
             {th ? (
               <>เลือก<strong style={{ color: "var(--text)" }}>ธาตุการลงทุน</strong>ของคุณ — แต่ละธาตุคือ thesis คนละแบบ
-              บนเรดาร์เดียวกัน · institutional-grade analysis</>
+              ในเพลย์บุ๊กเดียวกัน · institutional-grade analysis</>
             ) : (
               <>Pick your <strong style={{ color: "var(--text)" }}>investment element</strong> — each is a different thesis
-              on one radar · institutional-grade analysis</>
+              in one playbook · institutional-grade analysis</>
             )}
           </p>
         </div>
@@ -371,7 +324,7 @@ export function Landing({
       {/* ── Element grid ─────────────────────────────────────────────── */}
       <div style={{
         display: "grid",
-        gridTemplateColumns: "repeat(auto-fit, minmax(230px, 1fr))",
+        gridTemplateColumns: "repeat(auto-fit, minmax(232px, 1fr))",
         gap: 16, marginBottom: 28,
       }}>
         {elements.map((d, idx) => <ElementCard key={d.element} d={d} th={th} idx={idx} />)}
@@ -384,21 +337,28 @@ export function Landing({
         <span style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", letterSpacing: "1px", textTransform: "uppercase" }}>
           {th ? "เครื่องมือ" : "Tools"}
         </span>
-        <Link href="/backtest" style={{
+        <Link href="/backtest" className="srw-tbtn" style={{
           fontSize: 12, textDecoration: "none", padding: "7px 14px", borderRadius: 9,
           background: "var(--card)", border: "1px solid var(--border)", color: "var(--muted)",
           fontFamily: "var(--font-mono, monospace)", fontWeight: 700,
+          display: "inline-block", transition: "border-color 0.16s, color 0.16s, transform 0.16s",
         }}>
           📊 Backtest
         </Link>
-        <Link href="/journal" style={{
+        <Link href="/journal" className="srw-tbtn srw-tbtn-journal" style={{
           fontSize: 12, textDecoration: "none", padding: "7px 14px", borderRadius: 9,
           background: "var(--card)", border: "1px solid var(--border)", color: "#f59e0b",
           fontFamily: "var(--font-mono, monospace)", fontWeight: 700,
+          display: "inline-block", transition: "border-color 0.16s, color 0.16s, transform 0.16s",
         }}>
           📒 Journal
         </Link>
       </div>
+
+      <style>{`
+        .srw-tbtn:hover { border-color: var(--border-bright) !important; color: var(--text) !important; transform: translateY(-1px); }
+        .srw-tbtn.srw-tbtn-journal:hover { color: #fbbf24 !important; }
+      `}</style>
 
     </div>
   );

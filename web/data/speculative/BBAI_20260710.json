@@ -1,0 +1,213 @@
+{
+  "ticker": "BBAI",
+  "companyName": "BigBear.ai Holdings, Inc.",
+  "companyDescription": "Defense AI · National-security & DoD data-analytics software — Ask Sage GenAI platform, classified intelligence contracts, Army/Air Force AI programs",
+  "exchange": "NYSE",
+  "generatedAt": "2026-07-10T00:00:00.000Z",
+  "price": 3.32,
+  "priceChange": 0,
+  "priceNote": "Trading well off the 52-week high of $9.39 despite backlog growth; stock remains extremely volatile with a history of hype-driven 300%+ swings",
+  "marketCap": "$1.6B",
+  "sector": "Technology / Defense AI & Analytics",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 55,
+  "summary": "BigBear.ai grew its contract backlog 14% QoQ to $281.9M in Q1 2026, anchored by a $53M classified sole-source military award and exposure to a potential $900M Air Force AI contract vehicle, but the company is still deeply unprofitable and has diluted shareholders heavily (shares outstanding nearly doubled in a year, with authorization just approved to double the share cap again to 1 billion). This is a binary, hype-prone small-cap defense-AI name — position size at 2-5% of portfolio max, sized for a moonshot, not a core holding.",
+  "catalysts": [
+    {
+      "icon": "⚡",
+      "name": "Q2 2026 earnings + contract backlog conversion",
+      "description": "First real read on whether the $281.9M backlog (incl. $53M classified award) starts converting into recognized revenue against the $135-165M FY26 guide",
+      "urgencyLabel": "~1 MONTH",
+      "dateBadge": "Aug 11, 2026",
+      "catalystDate": "2026-08-11",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🛰️",
+      "name": "Air Force $900M AI contract vehicle task orders",
+      "description": "BBAI was selected onto a long-term USAF contract vehicle worth up to $900M; first task-order awards under it would be a binary re-rating catalyst",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🔒",
+      "name": "Classified sole-source award ceiling expansion",
+      "description": "The $53M classified prime award runs over 2 years; any ceiling increase, follow-on task order, or additional classified sole-source win would be a fresh binary trigger",
+      "urgencyLabel": "Ongoing",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Heavy share dilution — shares outstanding nearly doubled to 437M in 2025, and shareholders just approved doubling the authorized share cap to 1B, setting up further capital raises",
+    "Deeply unprofitable with rising net losses and cash burn; not forecast to reach profitability in 2026",
+    "History of boom-and-bust hype cycles (420%+ 12-month surges followed by giveback on earnings misses) — momentum can reverse violently on any guidance miss or contract delay",
+    "Federal budget/appropriations risk — a government shutdown or continuing-resolution gridlock can freeze DoD contract awards and task-order funding"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q2 FY26 earnings",
+      "dateRange": "Aug 11, 2026",
+      "note": "Backlog-to-revenue conversion + updated FY26 guidance re-affirmation",
+      "est": "Revenue $135-165M FY26 guide",
+      "highlight": "blue"
+    },
+    {
+      "event": "Air Force $900M vehicle task orders",
+      "dateRange": "H2 2026",
+      "note": "First task-order flow under the AI contract vehicle would validate the bull case",
+      "est": "n/a - binary",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -50, "price": 1.66 },
+    { "label": "Base", "color": "yellow", "pct": 40, "price": 4.65 },
+    { "label": "Bull", "color": "green", "pct": 130, "price": 7.64 },
+    { "label": "Moon", "color": "purple", "pct": 250, "price": 11.62 }
+  ],
+  "analystTargets": [
+    { "firm": "Wall Street consensus (median)", "target": 5.0, "rating": "Hold" },
+    { "firm": "Street high (24/7 Wall St.)", "target": 6.18, "rating": "Buy" },
+    { "firm": "Street low", "target": 5.0, "rating": "Hold" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Defense/gov-contracting revenue is largely insulated from Fed rate policy since it's driven by federal appropriations, not consumer credit or corporate borrowing costs",
+    "inflationNote": "Inflation has minimal direct effect on contract economics, though it modestly raises BBAI's own cash operating costs given the company is not yet profitable",
+    "sectorImpact": "The real macro risk is fiscal/political, not monetary: a government shutdown, continuing-resolution gridlock, or DoD budget delay can freeze task-order awards and stall the backlog-to-revenue conversion this stock depends on",
+    "summary": "Fed rate risk is low for this name, but appropriations/shutdown risk is the real macro swing factor — a funding lapse around the Sept 30, 2026 fiscal year-end is worth watching"
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 3.32, "note": "Current price", "timing": "Now" },
+      { "label": "Entry 2", "level": 2.9, "rangeMax": 3.1, "note": "Pullback/dip zone near recent consolidation support", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 2.2, "note": "Deep capitulation dip, near thesis-break zone", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 4.65, "pct": 40, "note": "Base case - backlog starts converting to recognized revenue on guidance" },
+    "tp2": { "price": 7.64, "pct": 130, "note": "Bull case - Air Force $900M vehicle task orders begin flowing" },
+    "tp3": { "price": 11.62, "pct": 250, "note": "Moon case - major program-of-record win + repeat of prior AI-hype short-squeeze cycle", "moon": true },
+    "stopLoss": {
+      "tight": 2.72, "tightPct": -18, "tightNote": "Below recent consolidation low - loss of near-term support",
+      "hard": 1.83, "hardPct": -45, "hardNote": "Thesis-break: backlog conversion stalls, dilution accelerates, or a major contract is lost to a competitor",
+      "riskReward": "7:1", "rrNote": "Tight stop vs TP2 bull case", "rrWarning": "Asymmetric ✅"
+    },
+    "verdict": "Speculative contract-catalyst play - size at 2-5% of portfolio max, scale in on dips, exit fast if the Aug 11 print shows backlog isn't converting",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "Defense-AI small caps typically run up in the 1-3 weeks before a classified/DoD contract confirmation or earnings print as speculative positioning builds on leaked award chatter and options flow",
+    "preRunupTiming": "1-3 weeks before event",
+    "preRunupPct": "+10-25%",
+    "postWin": {
+      "avgPct": 20,
+      "range": "+15% to +35%",
+      "note": "BBAI itself surged 420% over the trailing 12 months into mid-2025 on a string of contract-award and AI-partnership headlines before giving back much of the move on a subsequent earnings miss",
+      "exampleDate": "trailing 12mo into mid-2025"
+    },
+    "postLose": {
+      "avgPct": -18,
+      "range": "-12% to -30%",
+      "note": "BBAI's 2024 print where revenue grew only ~2% and missed the low end of guidance erased most of the prior AI-hype rally within days",
+      "exampleDate": "2024 earnings miss"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Binary contract catalyst with real but unproven revenue conversion, heavy dilution risk, and a history of violent round-trips - 3% keeps the moonshot upside intact without portfolio-threatening downside"
+    },
+    "stopPreCatalyst": { "pct": -18, "price": 2.72, "note": "If price breaks the current consolidation low before the Aug 11 print, the setup is broken" },
+    "stopPostCatalyst": { "pct": -45, "note": "Exit on any signal the $53M classified award or Air Force vehiche task orders are delayed/cancelled, or if dilution accelerates beyond the recently approved share-cap doubling" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "PLTR",
+      "event": "Army NGC2 program + expanding DoD/intelligence contract wins",
+      "date": "2025-2026 (18mo)",
+      "movePct": 300,
+      "days": 540,
+      "outcome": "good",
+      "note": "Palantir shares are up 300%+ over 18 months as recurring DoD/intelligence contract wins (including the Army's Next Generation Command and Control program) compounded into an accelerating growth story - the template bull case for defense-AI software re-rating on contract proof points"
+    },
+    {
+      "ticker": "BBAI",
+      "event": "Own prior AI-hype + contract-news driven run",
+      "date": "mid-2024 to mid-2025",
+      "movePct": 420,
+      "days": 365,
+      "outcome": "mixed",
+      "note": "BBAI itself surged as much as 420% over a trailing 12-month stretch on AI hype and contract headlines, only to give back a large chunk of the gains after a 2024 earnings report missed the low end of guidance - shows both the moonshot upside and the round-trip risk baked into this exact ticker"
+    }
+  ],
+  "sources": [
+    "https://ir.bigbear.ai/news-events/press-releases/detail/141/bigbear-ai-announces-first-quarter-2026-results-increases",
+    "https://www.foreignpolicyjournal.com/2026/05/26/bigbear-ai-nyse-bbai-stock-climbs-as-defense-contract-backlog-swells-to-282-million/",
+    "https://finance.yahoo.com/markets/stocks/articles/bigbear-ai-aims-pentagon-ai-090613132.html",
+    "https://www.marketbeat.com/stocks/NYSE/BBAI/forecast/",
+    "https://247wallst.com/investing/2026/05/07/prediction-bigbear-ai-could-jump-over-40-this-year/",
+    "https://simplywall.st/stocks/us/software/nyse-bbai/bigbearai-holdings/news/backlog-fueled-2026-outlook-and-share-expansion-might-change",
+    "https://www.fool.com/investing/2026/07/07/did-bigbear-ai-investors-just-shoot-themselves-in/",
+    "https://www.ainvest.com/news/bigbear-ai-rally-sustained-breakout-classic-short-squeeze-trap-2508/",
+    "https://www.tipranks.com/stocks/bbai/earnings"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "BigBear.ai backlog สัญญาโตขึ้น 14% QoQ เป็น $281.9M ในไตรมาส 1 ปี 2026 มีสัญญาลับ (classified) มูลค่า $53M แบบ sole-source และมีสิทธิ์แข่งงานภายใต้สัญญากองทัพอากาศมูลค่าสูงสุด $900M แต่บริษัทยังขาดทุนหนักและเจือจางหุ้นผู้ถือหุ้นอย่างมาก (จำนวนหุ้นเพิ่มเกือบเท่าตัวในปีเดียว และเพิ่งอนุมัติเพิ่มเพดานหุ้นเป็น 1 พันล้านหุ้น) นี่คือหุ้น defense-AI ขนาดเล็กที่มี catalyst แบบ binary และผันผวนสูง ควรลงทุนแค่ 2-5% ของ portfolio เท่านั้น ไม่ใช่ core holding",
+      "priceNote": "ราคาต่ำกว่าจุดสูงสุด 52 สัปดาห์ที่ $9.39 มาก แม้ backlog จะโตต่อเนื่อง หุ้นตัวนี้ผันผวนสูงมากและเคยวิ่ง 300%+ จาก hype มาแล้วหลายรอบ",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "ผลประกอบการ Q2 2026 + การแปลง backlog เป็นรายได้",
+          "description": "จุดพิสูจน์แรกว่า backlog $281.9M (รวมสัญญาลับ $53M) จะแปลงเป็นรายได้จริงตามเป้า FY26 ที่ $135-165M หรือไม่"
+        },
+        {
+          "name": "งานย่อยภายใต้สัญญากองทัพอากาศ $900M",
+          "description": "BBAI ได้รับเลือกเข้าสัญญาระยะยาวของกองทัพอากาศมูลค่าสูงสุด $900M การได้งานย่อยชิ้นแรกจะเป็น catalyst แบบ binary ที่ทำให้ re-rate หุ้น"
+        },
+        {
+          "name": "การขยายเพดานสัญญาลับ (classified)",
+          "description": "สัญญาลับ sole-source มูลค่า $53M มีระยะเวลา 2 ปี การเพิ่มเพดานหรือได้งานลับเพิ่มเติมจะเป็น trigger ใหม่"
+        }
+      ],
+      "risks": [
+        "เจือจางหุ้นหนัก — จำนวนหุ้นเพิ่มเกือบเท่าตัวเป็น 437 ล้านหุ้นในปี 2025 และผู้ถือหุ้นเพิ่งอนุมัติเพิ่มเพดานเป็น 1 พันล้านหุ้น เปิดทางให้ระดมทุนเพิ่มอีก",
+        "ขาดทุนหนักต่อเนื่องและเผาเงินสดมากขึ้น ยังไม่คาดว่าจะกำไรในปี 2026",
+        "มีประวัติ boom-and-bust วิ่งแรงจาก hype (บวก 420%+ ใน 12 เดือน) แล้วร่วงกลับหลังผลประกอบการพลาดเป้า — โมเมนตัมพลิกกลับได้รุนแรงมาก",
+        "ความเสี่ยงงบประมาณรัฐบาลกลาง — government shutdown หรือความขัดแย้งเรื่องงบสามารถหยุดการอนุมัติสัญญา DoD ได้"
+      ],
+      "macroRisk": {
+        "rateOutlook": "รายได้จากสัญญากลาโหม/รัฐบาลแทบไม่ผูกกับนโยบายดอกเบี้ยของ Fed เพราะขับเคลื่อนด้วยงบประมาณรัฐบาลกลาง ไม่ใช่สินเชื่อผู้บริโภคหรือต้นทุนกู้ยืมบริษัท",
+        "inflationNote": "เงินเฟ้อมีผลทางตรงน้อยต่อเศรษฐศาสตร์ของสัญญา แต่เพิ่มต้นทุนดำเนินงานของ BBAI เองเล็กน้อยเนื่องจากยังไม่ทำกำไร",
+        "sectorImpact": "ความเสี่ยง macro ที่แท้จริงคือด้านการคลัง/การเมือง ไม่ใช่นโยบายการเงิน — government shutdown หรือความล่าช้าของงบ DoD อาจหยุดการอนุมัติงานย่อยและชะลอการแปลง backlog เป็นรายได้",
+        "summary": "ความเสี่ยงจาก Fed ต่ำ แต่ความเสี่ยงเรื่องงบประมาณ/shutdown เป็นตัวแปร macro ที่แท้จริง — ควรจับตาช่วงสิ้นปีงบประมาณรัฐบาล 30 ก.ย. 2026"
+      },
+      "entryStrategy": {
+        "verdict": "หุ้น catalyst แบบเก็งกำไร — ลงทุนแค่ 2-5% ของ portfolio เท่านั้น ทยอยเข้าตอนย่อ และรีบออกถ้าผลประกอบการ 11 ส.ค. แสดงว่า backlog ไม่แปลงเป็นรายได้จริง",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน", "timing": "ตอนนี้" },
+          { "note": "โซนย่อใกล้แนวรับล่าสุด", "timing": "ถ้าย่อ" },
+          { "note": "ย่อลึกใกล้จุดที่ thesis เปลี่ยน", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "กรณีฐาน - backlog เริ่มแปลงเป็นรายได้ตามเป้า" },
+        "tp2": { "note": "กรณี bull - งานย่อยภายใต้สัญญากองทัพอากาศ $900M เริ่มไหลเข้า" },
+        "tp3": { "note": "กรณี moon - ได้ program-of-record ใหญ่ + ประวัติ short-squeeze จาก AI hype ซ้ำรอย" },
+        "stopLoss": {
+          "tightNote": "หลุดแนวรับล่าสุด - เสียโมเมนตัมระยะสั้น",
+          "hardNote": "thesis เปลี่ยน: backlog ไม่แปลงเป็นรายได้ เจือจางหุ้นเร่งขึ้น หรือเสียสัญญาใหญ่ให้คู่แข่ง",
+          "rrNote": "stop แคบเทียบกับเป้า bull case",
+          "rrWarning": "อัตราส่วนดีมาก ✅"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q2 FY26", "note": "การแปลง backlog เป็นรายได้ + ยืนยันเป้า FY26" },
+        { "event": "งานย่อยสัญญากองทัพอากาศ $900M", "note": "งานย่อยชิ้นแรกจะยืนยัน bull case" }
+      ]
+    }
+  }
+}

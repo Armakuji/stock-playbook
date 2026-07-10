@@ -63,10 +63,30 @@ const CHIP_COLORS: Record<WeekEvent["chip"], { bg: string; text: string; border:
   grey:   { bg: "rgba(148,163,184,0.10)", text: "#94a3b8", border: "rgba(148,163,184,0.25)" },
 };
 
-const VERDICT_STYLE: Record<MarketTimingData["verdict"], { color: string; bg: string; border: string; emoji: string }> = {
-  BUY:       { color: "#10b981", bg: "rgba(16,185,129,0.10)",  border: "#10b981", emoji: "🟢" },
-  SELECTIVE: { color: "#f59e0b", bg: "rgba(245,158,11,0.10)",  border: "#f59e0b", emoji: "🟡" },
-  WAIT:      { color: "#ef4444", bg: "rgba(239,68,68,0.10)",   border: "#ef4444", emoji: "🔴" },
+const VERDICT_STYLE: Record<MarketTimingData["verdict"], {
+  color: string; emoji: string;
+  barBg: string; barBorder: string;
+  pillBg: string; pillBorder: string;
+  drawerBorder: string;
+}> = {
+  BUY: {
+    color: "#10b981", emoji: "🟢",
+    barBg: "rgba(16,185,129,0.07)", barBorder: "rgba(16,185,129,0.22)",
+    pillBg: "rgba(16,185,129,0.12)", pillBorder: "rgba(16,185,129,0.4)",
+    drawerBorder: "rgba(16,185,129,0.18)",
+  },
+  SELECTIVE: {
+    color: "#f59e0b", emoji: "🟡",
+    barBg: "rgba(245,158,11,0.07)", barBorder: "rgba(245,158,11,0.22)",
+    pillBg: "rgba(245,158,11,0.12)", pillBorder: "rgba(245,158,11,0.4)",
+    drawerBorder: "rgba(245,158,11,0.18)",
+  },
+  WAIT: {
+    color: "#ef4444", emoji: "🔴",
+    barBg: "rgba(239,68,68,0.07)", barBorder: "rgba(239,68,68,0.22)",
+    pillBg: "rgba(239,68,68,0.12)", pillBorder: "rgba(239,68,68,0.4)",
+    drawerBorder: "rgba(239,68,68,0.18)",
+  },
 };
 
 const DECISION_COLOR: Record<DecisionItem["color"], string> = {
@@ -131,7 +151,7 @@ export function MarketTicker({ data }: { data: MarketTimingData | null | undefin
     <span style={{ display: "inline-flex", alignItems: "center" }}>
       {crawlItems.map((item, i) => (
         <span key={i} style={{ display: "inline-flex", alignItems: "center" }}>
-          {i > 0 && <span style={{ color: "var(--border)", margin: "0 14px" }}>•</span>}
+          {i > 0 && <span style={{ color: "var(--border-bright)", margin: "0 14px" }}>•</span>}
           <span style={{ color: item.color }}>{item.text}</span>
         </span>
       ))}
@@ -148,7 +168,7 @@ export function MarketTicker({ data }: { data: MarketTimingData | null | undefin
         className="srw-ticker-bar"
         style={{
           display: "flex", alignItems: "center", width: "100%",
-          background: vs.bg, borderBottom: `1px solid ${vs.border}35`,
+          background: vs.barBg, borderBottom: `1px solid ${vs.barBorder}`,
           border: "none", borderBottomWidth: 1, cursor: "pointer", textAlign: "left", padding: 0,
         }}
       >
@@ -157,7 +177,7 @@ export function MarketTicker({ data }: { data: MarketTimingData | null | undefin
           {/* Verdict pill — the one fixed, non-scrolling fact */}
           <span style={{
             fontSize: 11, fontWeight: 800, padding: "3px 10px", borderRadius: 6,
-            background: vs.bg, color: vs.color, border: `1px solid ${vs.border}50`,
+            background: vs.pillBg, color: vs.color, border: `1px solid ${vs.pillBorder}`,
             flexShrink: 0, whiteSpace: "nowrap",
           }}>
             {vs.emoji} {verdictLabelText.toUpperCase()}
@@ -166,19 +186,19 @@ export function MarketTicker({ data }: { data: MarketTimingData | null | undefin
           {/* Scrolling news crawl */}
           <div className="srw-ticker-track" style={{ flex: 1, overflow: "hidden", position: "relative", minWidth: 0 }}>
             <div ref={crawlRef} className={`srw-ticker-crawl${open ? " is-open" : ""}`} style={{
-              display: "inline-flex", whiteSpace: "nowrap", fontSize: 11,
+              display: "inline-flex", whiteSpace: "nowrap", fontSize: 11.5,
               animationDuration: `${duration}s`,
             }}>
-              <Crawl /><span style={{ color: "var(--border)", margin: "0 14px" }}>•</span><Crawl />
+              <Crawl /><span style={{ color: "var(--border-bright)", margin: "0 14px" }}>•</span><Crawl />
             </div>
           </div>
 
           {/* Entry window — fixed right bookend */}
           <span className="srw-ticker-entry" style={{
-            fontSize: 10, fontWeight: 700, padding: "2px 8px", borderRadius: 4,
+            fontSize: 10, fontWeight: 700, padding: "3px 9px", borderRadius: 5,
             background: inEntryWindow ? "rgba(16,185,129,0.15)" : "rgba(56,189,248,0.10)",
             color: inEntryWindow ? "#10b981" : "#38bdf8",
-            border: `1px solid ${inEntryWindow ? "rgba(16,185,129,0.35)" : "rgba(56,189,248,0.25)"}`,
+            border: `1px solid ${inEntryWindow ? "rgba(16,185,129,0.35)" : "rgba(56,189,248,0.28)"}`,
             flexShrink: 0, whiteSpace: "nowrap",
           }}>
             {inEntryWindow ? "🎯 ENTRY NOW" : "Entry"} {data.entryWindow.label}
@@ -195,7 +215,7 @@ export function MarketTicker({ data }: { data: MarketTimingData | null | undefin
 
       {/* ── Expanded drawer ─────────────────────────────────────── */}
       {open && (
-        <div style={{ borderBottom: `1px solid ${vs.border}20`, background: "var(--card)" }}>
+        <div style={{ borderBottom: `1px solid ${vs.drawerBorder}`, background: "var(--card)" }}>
           <div style={{ maxWidth: 1200, margin: "0 auto" }}>
 
             {/* Summary + entry window — always stacked (TH summary is long; side-by-side flex broke layout) */}
@@ -207,8 +227,8 @@ export function MarketTicker({ data }: { data: MarketTimingData | null | undefin
                 alignSelf: "center",
                 width: "100%",
                 maxWidth: 360,
-                padding: "10px 14px",
-                borderRadius: 8,
+                padding: "9px 16px",
+                borderRadius: 9,
                 background: "rgba(16,185,129,0.08)",
                 border: "1px solid rgba(16,185,129,0.25)",
                 textAlign: "center",

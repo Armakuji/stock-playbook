@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Stock Playbook</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#06060a;--card:#0c0c14;--card2:#111120;--border:#1a1a2e;--border2:#26264a;--text:#e2e8f0;--muted:#64748b;--mono:'JetBrains Mono',monospace;--disp:'Bricolage Grotesque',system-ui,sans-serif;--body:'DM Sans',system-ui,sans-serif;--water:#38bdf8;--air:#10b981;--fire:#ff6d00;--fire2:#d500f9;--earth:#a16207}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);background-image:radial-gradient(ellipse 120% 60% at 50% -8%,rgba(16,185,129,.06),transparent 60%),radial-gradient(circle,#17172b 1px,transparent 1px);background-size:100% 100%,26px 26px;background-repeat:no-repeat,repeat;color:var(--text);font-family:var(--body)}
+.mono{font-family:var(--mono)}.disp{font-family:var(--disp)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+/* accent bar */
+.accentbar{height:3px;flex-shrink:0;background:linear-gradient(90deg,#10b981,#3b82f6,#8b5cf6,#f59e0b,#10b981);background-size:300% 100%;animation:gradShift 8s linear infinite}
+/* header */
+.hdr{border-bottom:1px solid var(--border);background:rgba(12,12,20,.72);backdrop-filter:blur(12px);position:sticky;top:0;z-index:30}
+.hdr .row{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:13px 20px;max-width:1120px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0}
+.brand .nm{font-family:var(--disp);font-weight:800;font-size:19px;letter-spacing:-.4px;color:var(--text);white-space:nowrap}
+.hnav{display:flex;align-items:center;gap:14px}
+.pills{display:flex;align-items:center;gap:3px;background:#0a0a12;border:1px solid var(--border);border-radius:11px;padding:4px}
+.pill{font-family:var(--mono);font-weight:700;font-size:11px;letter-spacing:.2px;text-decoration:none;padding:6px 11px;border-radius:8px;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;transition:background .16s}
+.pill:hover{background:rgba(255,255,255,.04)!important;-webkit-text-fill-color:transparent}
+.tool{font-family:var(--mono);font-weight:700;font-size:11px;color:var(--muted);text-decoration:none;display:inline-flex;align-items:center;gap:4px}
+.tool:hover{color:var(--text)}
+.tool.journal{color:#f59e0b}
+.spark{font-size:9px;color:#c4b5fd;animation:sparkPulse 2.4s ease-in-out infinite}
+.live{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--air);animation:pulse 2s ease-in-out infinite}
+.upd{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.lang{display:inline-flex;gap:2px;background:#0a0a12;border:1px solid var(--border);border-radius:9px;padding:3px}
+.lbtn{font-family:var(--mono);font-weight:800;font-size:10px;letter-spacing:.5px;cursor:pointer;padding:4px 9px;border-radius:6px;border:none;background:transparent;color:var(--muted);transition:all .15s}
+.lbtn.on{background:#3b82f6;color:#fff}
+.avatar{width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#3b82f6,#8b5cf6);color:#fff;border:none;font-family:var(--mono);font-weight:800;font-size:11px;cursor:pointer;flex-shrink:0}
+.loginbtn{font-family:var(--mono);font-weight:800;font-size:12px;padding:7px 16px;border-radius:9px;background:#10b981;color:#fff;border:none;cursor:pointer;white-space:nowrap;flex-shrink:0}
+/* ticker */
+.tick{width:100%;background:rgba(245,158,11,.07);border-bottom:1px solid rgba(245,158,11,.22);font-family:var(--mono)}
+.tickbar{all:unset;box-sizing:border-box;display:flex;align-items:center;gap:12px;width:100%;max-width:1120px;margin:0 auto;padding:8px 20px;cursor:pointer}
+.verdict{font-weight:800;font-size:11px;padding:3px 10px;border-radius:6px;background:rgba(245,158,11,.12);color:var(--yellow,#f59e0b);border:1px solid rgba(245,158,11,.4);flex-shrink:0;white-space:nowrap}
+.track{flex:1;overflow:hidden;min-width:0;position:relative;-webkit-mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent);mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent)}
+.crawl{display:inline-flex;white-space:nowrap;font-size:11.5px;animation:crawl 46s linear infinite}
+.tickbar:hover .crawl{animation-play-state:paused}
+.sep{color:var(--border2);margin:0 14px}
+.entry{font-size:10px;font-weight:700;padding:3px 9px;border-radius:5px;background:rgba(56,189,248,.1);color:var(--water);border:1px solid rgba(56,189,248,.28);flex-shrink:0;white-space:nowrap}
+.chev{font-size:9px;color:var(--muted);flex-shrink:0;transition:transform .2s;display:inline-block}
+.chev.open{transform:rotate(180deg)}
+.tickdrawer{border-bottom:1px solid rgba(245,158,11,.18);background:var(--card)}
+.tdinner{max-width:1120px;margin:0 auto;padding:14px 20px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
+.dsumm{flex:1;min-width:220px;font-size:12px;color:var(--text);line-height:1.6}
+.dentry{padding:9px 16px;border-radius:9px;background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.25);text-align:center;flex-shrink:0}
+.del{font-size:9px;color:#10b981;font-weight:800;letter-spacing:1px;margin-bottom:3px}
+.dev{font-size:14px;font-weight:800;color:#10b981}
+/* hero */
+.hero{position:relative;text-align:center;padding:64px 0 44px;overflow:hidden;isolation:isolate}
+.hglow{position:absolute;top:-8%;left:50%;transform:translateX(-50%);width:900px;height:520px;pointer-events:none;z-index:-1;background:radial-gradient(ellipse 55% 60% at 30% 40%,rgba(16,185,129,.10),transparent 65%),radial-gradient(ellipse 55% 60% at 70% 55%,rgba(56,189,248,.08),transparent 65%),radial-gradient(ellipse 40% 50% at 50% 70%,rgba(251,146,60,.07),transparent 65%)}
+.hbadge{display:inline-flex;align-items:center;gap:8px;padding:6px 15px;border-radius:999px;background:var(--card);border:1px solid var(--border);margin-bottom:18px;white-space:nowrap}
+.hbadge span{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.4px}
+.htitle{font-family:var(--disp);font-weight:800;font-size:clamp(34px,6.5vw,58px);letter-spacing:-1.6px;line-height:1.02;margin:0 0 12px;background:linear-gradient(96deg,#7dd3fc,#34d399 42%,#fb923c 74%,#e879f9);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hsub{font-size:clamp(14px,2.3vw,16.5px);color:var(--muted);max-width:568px;margin:0 auto;line-height:1.62}
+.hsub b{color:var(--text);font-weight:600}
+/* grid */
+.egrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(232px,1fr));gap:16px;margin:16px 0 30px}
+.ecard{position:relative;display:block;height:100%;text-decoration:none;isolation:isolate;background:var(--card);border:1px solid var(--border);border-top:2px solid var(--c1);border-radius:16px;padding:22px 20px 18px;overflow:hidden;transition:transform .22s cubic-bezier(.22,1,.36,1),box-shadow .22s,border-color .22s}
+.ecard:hover{transform:translateY(-5px);border-color:color-mix(in srgb,var(--c1) 45%,transparent);box-shadow:0 14px 44px var(--glow),0 2px 10px rgba(0,0,0,.6)}
+.ecard.ghost{opacity:.5;cursor:default}
+.ecard.ghost:hover{transform:none;box-shadow:none;border-color:var(--border)}
+.wash{position:absolute;top:-44px;right:-44px;width:170px;height:170px;background:radial-gradient(circle,var(--glow),transparent 70%);pointer-events:none;z-index:-1}
+.amb{position:absolute;left:0;right:0;pointer-events:none;z-index:-1}
+.amb-water{bottom:0;height:64px;background:linear-gradient(to top,color-mix(in srgb,var(--c1) 30%,transparent),transparent);animation:wave 3.8s ease-in-out infinite;transform-origin:50% 100%}
+.amb-fire{bottom:0;height:82px;background:linear-gradient(to top,rgba(255,109,0,.32),rgba(213,0,249,.14) 55%,transparent);animation:flame 2s ease-in-out infinite}
+.streak{position:absolute;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,color-mix(in srgb,var(--c1) 85%,transparent) 30%,transparent);animation:streak 3.4s ease-in-out infinite;z-index:-1}
+.ehead{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.glyph{font-size:32px;line-height:1}
+.ghost .glyph{filter:grayscale(1)}
+.elabel{font-family:var(--mono);font-weight:800;font-size:9px;letter-spacing:2px;background:linear-gradient(90deg,var(--c1),var(--c2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.ghost .elabel{background:none;-webkit-text-fill-color:var(--muted)}
+.efeat{font-family:var(--disp);font-weight:800;font-size:25px;letter-spacing:-.5px;margin-bottom:6px;color:var(--text)}
+.ghost .efeat{color:var(--muted)}
+.etag{font-size:12px;color:var(--muted);line-height:1.6;margin:0 0 16px;min-height:38px}
+.emeta{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.rbadge{font-family:var(--mono);font-weight:800;font-size:9px;letter-spacing:.5px;padding:3px 8px;border-radius:6px;white-space:nowrap;background:color-mix(in srgb,var(--c1) 12%,transparent);color:var(--c1);border:1px solid color-mix(in srgb,var(--c1) 34%,transparent)}
+.ghost .rbadge{background:var(--border);color:var(--muted);border-color:var(--border)}
+.hz{font-family:var(--mono);font-size:10px;color:var(--muted)}
+.pips{display:inline-flex;gap:3px;vertical-align:middle}
+.pips i{width:5px;height:5px;border-radius:50%;background:var(--c1);opacity:.9}
+.efoot{display:flex;align-items:center;justify-content:space-between;padding-top:12px;border-top:1px solid var(--border)}
+.cnt{font-family:var(--mono);font-size:11px;color:var(--muted);display:flex;align-items:center;gap:7px}
+.enter{font-family:var(--mono);font-weight:800;font-size:11px;color:var(--c1)}
+.ghost .enter,.ghost .cnt{color:var(--muted)}
+/* tools */
+.tools{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;padding-bottom:40px}
+.tlabel{font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:1px;text-transform:uppercase}
+.tbtn{font-family:var(--mono);font-weight:700;font-size:12px;text-decoration:none;padding:8px 15px;border-radius:9px;background:var(--card);border:1px solid var(--border);color:var(--muted);transition:all .16s}
+.tbtn:hover{border-color:var(--border2);color:var(--text);transform:translateY(-1px)}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1);box-shadow:0 0 0 0 rgba(16,185,129,.4)}50%{opacity:.75;transform:scale(1.25);box-shadow:0 0 0 4px rgba(16,185,129,0)}}
+@keyframes gradShift{0%{background-position:0% 0}100%{background-position:300% 0}}
+@keyframes sparkPulse{0%,100%{transform:scale(1);opacity:.7}50%{transform:scale(1.25);opacity:1}}
+@keyframes crawl{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes wave{0%,100%{border-radius:65% 35% 60% 40%/100% 100% 0 0;transform:translateY(0) scaleX(1.06)}50%{border-radius:35% 65% 40% 60%/100% 100% 0 0;transform:translateY(-9px) scaleX(1)}}
+@keyframes flame{0%,100%{clip-path:polygon(0 100%,10% 58%,24% 76%,40% 28%,54% 68%,68% 26%,83% 55%,100% 100%)}33%{clip-path:polygon(0 100%,7% 44%,28% 68%,36% 16%,58% 60%,74% 18%,90% 48%,100% 100%)}66%{clip-path:polygon(0 100%,15% 62%,26% 46%,44% 34%,52% 72%,66% 30%,80% 56%,100% 100%)}}
+@keyframes streak{0%{transform:translateX(-130%);opacity:0}12%{opacity:1}85%{opacity:.6}100%{transform:translateX(220%);opacity:0}}
+@media(max-width:760px){.hnav .pills,.hnav .tool,.hnav .upd,.hnav .live{display:none}}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;animation-iteration-count:1!important}}
+</style>
+</helmet>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<linearGradient id="sg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8ef0a8"/><stop offset="1" stop-color="#22b866"/></linearGradient>
+<radialGradient id="swp" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#3fd07f" stop-opacity=".85"/><stop offset="1" stop-color="#3fd07f" stop-opacity="0"/></radialGradient>
+<linearGradient id="bgg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#111a24"/><stop offset="1" stop-color="#080c12"/></linearGradient>
+<symbol id="radar" viewBox="0 0 512 512">
+<rect x="16" y="16" width="480" height="480" rx="112" fill="url(#bgg)"/>
+<rect x="16.5" y="16.5" width="479" height="479" rx="111.5" fill="none" stroke="#28e07f" stroke-opacity=".18" stroke-width="3"/>
+<g fill="none" stroke="#2f8f5c" stroke-opacity=".55" stroke-width="8"><circle cx="256" cy="256" r="56"/><circle cx="256" cy="256" r="112"/><circle cx="256" cy="256" r="168"/></g>
+<g transform="rotate(-38 256 256)"><path d="M256 256 L256 76 A180 180 0 0 1 424 232 Z" fill="url(#swp)"/><line x1="256" y1="256" x2="256" y2="72" stroke="url(#sg)" stroke-width="10" stroke-linecap="round"/></g>
+<g><circle cx="300" cy="140" r="16" fill="#4aa8f0"/><circle cx="300" cy="140" r="16" fill="none" stroke="#4aa8f0" stroke-opacity=".35" stroke-width="8"/></g>
+<g><circle cx="368" cy="232" r="16" fill="#3fd07f"/><circle cx="368" cy="232" r="16" fill="none" stroke="#3fd07f" stroke-opacity=".35" stroke-width="8"/></g>
+<g><circle cx="216" cy="372" r="16" fill="#ff7a3c"/><circle cx="216" cy="372" r="16" fill="none" stroke="#ff7a3c" stroke-opacity=".35" stroke-width="8"/></g>
+<g><circle cx="140" cy="300" r="16" fill="#c08a4a"/><circle cx="140" cy="300" r="16" fill="none" stroke="#c08a4a" stroke-opacity=".35" stroke-width="8"/></g>
+<circle cx="256" cy="256" r="16" fill="url(#sg)"/>
+</symbol>
+</defs></svg>
+<div class="accentbar"></div>
+<header class="hdr">
+<div class="row">
+<a class="brand" href="#"><svg width="26" height="26" style="border-radius:7px"><use href="#radar"/></svg><span class="nm">Stock Playbook</span></a>
+<div class="hnav">
+<nav class="pills">
+<a class="pill" href="Stock Playbook Dashboard.dc.html" style="background-image:linear-gradient(90deg,#38bdf8,#3b82f6)">💧 DCA</a>
+<a class="pill" href="Stock Playbook Dashboard.dc.html" style="background-image:linear-gradient(90deg,#10b981,#34d399)">🌬️ Catalyst</a>
+<a class="pill" href="Stock Playbook Dashboard.dc.html" style="background-image:linear-gradient(90deg,#ff6d00,#d500f9)">🔥 Turbo</a>
+</nav>
+<a class="tool" href="#">📊 Backtest</a>
+<a class="tool journal" href="Journal.dc.html">📒 Journal <span class="spark">✦</span></a>
+<span class="live"></span>
+<span class="upd">{{ updLabel }} {{ lastUpdated }}</span>
+<div class="lang">
+<button class="lbtn {{ enOn }}" onClick="{{ setEn }}">EN</button>
+<button class="lbtn {{ thOn }}" onClick="{{ setTh }}">TH</button>
+</div>
+<sc-if value="{{ loggedIn }}" hint-placeholder-val="{{ true }}">
+<button class="avatar" onClick="{{ toggleAuth }}" title="{{ acctTitle }}">{{ initials }}</button>
+</sc-if>
+<sc-if value="{{ notLoggedIn }}" hint-placeholder-val="{{ false }}">
+<button class="loginbtn" onClick="{{ toggleAuth }}">{{ loginLbl }}</button>
+</sc-if>
+</div>
+</div>
+<div class="tick">
+<button class="tickbar" onClick="{{ toggleTick }}" aria-expanded="{{ tickOpen }}">
+<span class="verdict">🟡 {{ verdict }}</span>
+<div class="track"><div class="crawl">{{ crawlA }}<span class="sep">•</span>{{ crawlB }}</div></div>
+<span class="entry">🎯 {{ entryLabel }}</span>
+<span class="chev {{ chevOpen }}">▼</span>
+</button>
+</div>
+<sc-if value="{{ tickOpen }}" hint-placeholder-val="{{ false }}">
+<div class="tickdrawer"><div class="tdinner"><p class="dsumm">{{ tickSummary }}</p><div class="dentry"><div class="del">🎯 {{ l_bestentry }}</div><div class="dev">{{ entryLabel }}</div></div></div></div>
+</sc-if>
+</header>
+<main class="wrap">
+<section class="hero">
+<div class="hglow"></div>
+<div class="hbadge"><span class="live"></span><span>LIVE · {{ updLabel }} {{ lastUpdated }}</span></div>
+<h1 class="htitle">Stock Playbook</h1>
+<p class="hsub">{{ subText }}</p>
+</section>
+<section class="egrid">
+<a class="ecard" href="Stock Playbook Dashboard.dc.html" style="--c1:#38bdf8;--c2:#3b82f6;--glow:rgba(56,189,248,.16)">
+<div class="amb amb-water"></div><div class="wash"></div>
+<div class="ehead"><span class="glyph">💧</span><span class="elabel">WATER</span></div>
+<div class="efeat">DCA</div>
+<p class="etag">{{ tagWater }}</p>
+<div class="emeta"><span class="rbadge">{{ riskLow }}</span><span class="hz">⏱ {{ hzWater }}</span></div>
+<div class="efoot"><span class="cnt"><span class="pips"><i></i><i></i><i></i><i></i><i></i><i></i></span>{{ cWater }}</span><span class="enter">{{ enter }}</span></div>
+</a>
+<a class="ecard" href="Stock Playbook Dashboard.dc.html" style="--c1:#10b981;--c2:#34d399;--glow:rgba(16,185,129,.16)">
+<div class="streak" style="top:18%"></div><div class="streak" style="top:42%;height:2px;animation-delay:1.2s"></div><div class="streak" style="top:66%;animation-delay:2.4s"></div><div class="wash"></div>
+<div class="ehead"><span class="glyph">🌬️</span><span class="elabel">AIR</span></div>
+<div class="efeat">Catalyst</div>
+<p class="etag">{{ tagAir }}</p>
+<div class="emeta"><span class="rbadge">{{ riskMed }}</span><span class="hz">⏱ {{ hzAir }}</span></div>
+<div class="efoot"><span class="cnt"><span class="pips"><i></i><i></i><i></i><i></i></span>{{ cAir }}</span><span class="enter">{{ enter }}</span></div>
+</a>
+<a class="ecard" href="Stock Playbook Dashboard.dc.html" style="--c1:#ff6d00;--c2:#d500f9;--glow:rgba(255,109,0,.16)">
+<div class="amb amb-fire"></div><div class="wash"></div>
+<div class="ehead"><span class="glyph">🔥</span><span class="elabel">FIRE</span></div>
+<div class="efeat">Turbo</div>
+<p class="etag">{{ tagFire }}</p>
+<div class="emeta"><span class="rbadge">{{ riskHigh }}</span><span class="hz">⏱ binary</span></div>
+<div class="efoot"><span class="cnt"><span class="pips"><i></i><i></i><i></i></span>{{ cFire }}</span><span class="enter">{{ enter }}</span></div>
+</a>
+<div class="ecard ghost" style="--c1:#3a3a2a;--glow:transparent">
+<div class="wash"></div>
+<div class="ehead"><span class="glyph">🌍</span><span class="elabel">EARTH</span></div>
+<div class="efeat">Earth</div>
+<p class="etag">{{ tagEarth }}</p>
+<div class="emeta"><span class="rbadge">—</span><span class="hz">⏱ —</span></div>
+<div class="efoot"><span class="cnt">{{ planned }}</span><span class="enter">{{ soon }}</span></div>
+</div>
+</section>
+<section class="tools">
+<span class="tlabel">{{ toolsLabel }}</span>
+<a class="tbtn" href="#">📊 Backtest</a>
+<a class="tbtn" href="Journal.dc.html" style="color:#f59e0b">📒 Journal</a>
+</section>
+</main>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;loggedIn&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Header&quot;}}">
+class Component extends DCLogic {
+  state = { lang: 'en', tickOpen: false, loggedIn: undefined };
+  renderVals() {
+    const th = this.state.lang === 'th';
+    const set = (l) => () => this.setState({ lang: l });
+    const loggedIn = this.state.loggedIn ?? (this.props.loggedIn ?? true);
+    return {
+      lastUpdated: '02/07/2026',
+      updLabel: th ? 'อัปเดต' : 'Updated',
+      enOn: th ? '' : 'on', thOn: th ? 'on' : '',
+      setEn: set('en'), setTh: set('th'),
+      verdict: th ? 'เลือกเป็นตัว' : 'SELECTIVE',
+      entryLabel: th ? 'เข้า Jul 2–13' : 'Entry Jul 2–13',
+      crawlA: this.crawl(), crawlB: this.crawl(),
+      tickOpen: this.state.tickOpen, chevOpen: this.state.tickOpen ? 'open' : '',
+      toggleTick: () => this.setState(s => ({ tickOpen: !s.tickOpen })),
+      tickSummary: th ? 'ตลาดยังอยู่ในโหมดเลือกเป็นตัว รอ CPI และ FOMC ก่อนเพิ่มความเสี่ยง — เข้าเป็นช่วงตามหน้าต่างด้านล่าง' : 'Market stays selective into CPI and the FOMC decision — scale in around the window below rather than all at once.',
+      l_bestentry: th ? 'ช่วงเข้าที่ดีที่สุด' : 'BEST ENTRY WINDOW',
+      loggedIn, notLoggedIn: !loggedIn,
+      initials: 'JD', acctTitle: th ? 'บัญชี' : 'Account',
+      loginLbl: th ? 'เข้าสู่ระบบ' : 'Login',
+      toggleAuth: () => this.setState({ loggedIn: !loggedIn }),
+      subText: th
+        ? React.createElement(React.Fragment, null, 'เลือก', React.createElement('b', null, 'ธาตุการลงทุน'), 'ของคุณ — แต่ละธาตุคือ thesis คนละแบบในเพลย์บุ๊กเดียวกัน · institutional-grade analysis')
+        : React.createElement(React.Fragment, null, 'Pick your ', React.createElement('b', null, 'investment element'), ' — each is a different thesis in one playbook · institutional-grade analysis'),
+      tagWater: th ? 'Quality core · ถือยาว 3–5 ปี · ทยอยสะสมตาม valuation' : 'Quality core · hold 3–5 yrs · accumulate on valuation',
+      tagAir: th ? 'Event-driven · ระยะสัปดาห์ · เล่นตาม catalyst ที่กำลังมา' : 'Event-driven · weeks · trade upcoming catalysts',
+      tagFire: th ? 'Moonshot · 300%+ upside · เก็งกำไรเสี่ยงสูง 2–5% ต่อตัว' : 'Moonshot · 300%+ upside · high-risk, 2–5% per name',
+      tagEarth: th ? 'รากฐาน — พอร์ต / track record · วางแผนไว้ ยังไม่เปิด' : 'Foundation — portfolio / track record · planned, not live',
+      riskLow: th ? 'เสี่ยง LOW' : 'LOW RISK', riskMed: th ? 'เสี่ยง MED' : 'MED RISK', riskHigh: th ? 'เสี่ยง HIGH' : 'HIGH RISK',
+      hzWater: th ? '3–5 ปี' : '3–5 yrs', hzAir: th ? 'สัปดาห์' : 'weeks',
+      cWater: th ? '6 ตัว' : '6 picks', cAir: th ? '4 ตัว' : '4 picks', cFire: th ? '3 ตัว' : '3 picks',
+      enter: th ? 'เข้า →' : 'Enter →', planned: th ? 'วางแผนไว้' : 'planned', soon: th ? 'เร็วๆ นี้' : 'soon',
+      toolsLabel: th ? 'เครื่องมือ' : 'Tools',
+    };
+  }
+  crawl() {
+    const items = [
+      ['June NFP (Jul 2) — miss +57K vs +113K', '#f59e0b'],
+      ['June CPI (Jul 14)', '#ef4444'],
+      ['GOOGL Earnings (Jul 22)', '#38bdf8'],
+      ['FOMC Decision (Jul 29)', '#ef4444'],
+      ['MSFT + META Earnings (Jul 29)', '#ef4444'],
+      ['June PCE (Jul 30)', '#ef4444'],
+      ['Fed 3.50–3.75%', '#64748b'], ['PCE 4.07% YoY', '#64748b'], ['VIX 16.45', '#64748b'],
+    ];
+    const kids = [];
+    items.forEach(([t, c], i) => {
+      if (i > 0) kids.push(React.createElement('span', { key: 's' + i, className: 'sep' }, '•'));
+      kids.push(React.createElement('span', { key: 't' + i, style: { color: c } }, t));
+    });
+    return React.createElement('span', { style: { display: 'inline-flex', alignItems: 'center' } }, kids);
+  }
+}
+</script>
+</body>
+</html>

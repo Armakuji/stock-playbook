@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Stock Playbook</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#06060a;--card:#0c0c14;--border:#1a1a2e;--border2:#26264a;--text:#e2e8f0;--muted:#64748b;--mono:'JetBrains Mono',monospace;--disp:'Bricolage Grotesque',system-ui,sans-serif;--body:'DM Sans',system-ui,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);background-image:radial-gradient(ellipse 120% 60% at 50% -8%,rgba(16,185,129,.05),transparent 60%),radial-gradient(circle,#17172b 1px,transparent 1px);background-size:100% 100%,26px 26px;background-repeat:no-repeat,repeat;color:var(--text);font-family:var(--body)}
+.mono{font-family:var(--mono)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+/* header */
+.hdr{border-bottom:1px solid var(--border);background:rgba(12,12,20,.72);backdrop-filter:blur(12px);position:sticky;top:0;z-index:30}
+.hrow{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 20px;max-width:1120px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0}
+.brand .nm{font-family:var(--disp);font-weight:800;font-size:18px;letter-spacing:-.4px;color:var(--text);white-space:nowrap}
+.hright{display:flex;align-items:center;gap:14px}
+.pills2{display:flex;align-items:center;gap:3px;background:#0a0a12;border:1px solid var(--border);border-radius:11px;padding:4px}
+.pill2{font-family:var(--mono);font-weight:700;font-size:11px;letter-spacing:.2px;text-decoration:none;padding:6px 11px;border-radius:8px;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.tool{font-family:var(--mono);font-weight:700;font-size:11px;color:var(--muted);text-decoration:none;display:inline-flex;align-items:center;gap:4px}
+.tool:hover{color:var(--text)}
+.tool.journal{color:#f59e0b}
+.spark{font-size:9px;color:#c4b5fd;animation:sparkPulse 2.4s ease-in-out infinite}
+.home{font-family:var(--mono);font-size:11px;color:var(--muted);text-decoration:none;font-weight:700}
+.home:hover{color:var(--text)}
+.live{display:inline-block;width:7px;height:7px;border-radius:50%;background:#10b981;animation:pulse 2s ease-in-out infinite}
+.upd{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.lang{display:inline-flex;gap:2px;background:#0a0a12;border:1px solid var(--border);border-radius:9px;padding:3px}
+.lbtn{font-family:var(--mono);font-weight:800;font-size:10px;letter-spacing:.5px;cursor:pointer;padding:4px 9px;border-radius:6px;border:none;background:transparent;color:var(--muted);transition:all .15s}
+.lbtn.on{background:#3b82f6;color:#fff}
+.avatar{width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#3b82f6,#8b5cf6);color:#fff;border:none;font-family:var(--mono);font-weight:800;font-size:11px;cursor:pointer;flex-shrink:0}
+.loginbtn{font-family:var(--mono);font-weight:800;font-size:12px;padding:7px 16px;border-radius:9px;background:#10b981;color:#fff;border:none;cursor:pointer;white-space:nowrap;flex-shrink:0}
+/* ticker */
+.tick{width:100%;background:rgba(245,158,11,.07);border-bottom:1px solid rgba(245,158,11,.22);font-family:var(--mono)}
+.tickbar{all:unset;box-sizing:border-box;display:flex;align-items:center;gap:12px;width:100%;max-width:1120px;margin:0 auto;padding:8px 20px;cursor:pointer}
+.verdict{font-weight:800;font-size:11px;padding:3px 10px;border-radius:6px;background:rgba(245,158,11,.12);color:#f59e0b;border:1px solid rgba(245,158,11,.4);flex-shrink:0;white-space:nowrap}
+.track{flex:1;overflow:hidden;min-width:0;position:relative;-webkit-mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent);mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent)}
+.crawl2{display:inline-flex;white-space:nowrap;font-size:11.5px;animation:crawl 46s linear infinite}
+.tickbar:hover .crawl2{animation-play-state:paused}
+.sep{color:var(--border2);margin:0 14px}
+.entry{font-size:10px;font-weight:700;padding:3px 9px;border-radius:5px;background:rgba(56,189,248,.1);color:#38bdf8;border:1px solid rgba(56,189,248,.28);flex-shrink:0;white-space:nowrap}
+.chev{font-size:9px;color:var(--muted);flex-shrink:0;transition:transform .2s;display:inline-block}
+.chev.open{transform:rotate(180deg)}
+.dhero{text-align:center;padding:30px 0 6px}
+.hbadge{display:inline-flex;align-items:center;gap:8px;padding:6px 15px;border-radius:999px;background:#0c0c14;border:1px solid #1a1a2e;margin-bottom:14px}
+.hbadge span:last-child{font-family:var(--mono);font-size:11px;color:var(--mut,#64748b);letter-spacing:.4px}
+.dtag{font-family:var(--mono);font-size:13px;color:#8a94a8;max-width:520px;margin:0 auto;line-height:1.6}
+.accentbar{height:3px;flex-shrink:0;background:linear-gradient(90deg,#10b981,#3b82f6,#8b5cf6,#f59e0b,#10b981);background-size:300% 100%;animation:gradShift 8s linear infinite}
+.tickdrawer{border-bottom:1px solid rgba(245,158,11,.18);background:var(--card)}
+.tdinner{max-width:1120px;margin:0 auto;padding:14px 20px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
+.dsumm{flex:1;min-width:220px;font-size:12px;color:var(--text);line-height:1.6}
+.dentry{padding:9px 16px;border-radius:9px;background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.25);text-align:center;flex-shrink:0}
+.del{font-size:9px;color:#10b981;font-weight:800;letter-spacing:1px;margin-bottom:3px}
+.dev{font-size:14px;font-weight:800;color:#10b981}
+/* view switcher */
+.switch{display:flex;justify-content:center;padding:22px 20px 4px}
+.pills{display:inline-flex;gap:4px;background:#0a0a12;border:1px solid var(--border);border-radius:13px;padding:5px}
+.pill{display:flex;align-items:center;gap:7px;font-family:var(--mono);font-weight:800;font-size:12.5px;letter-spacing:.2px;text-decoration:none;padding:9px 18px;border-radius:9px;border:none;background:transparent;color:var(--muted);cursor:pointer;transition:all .16s}
+.pill:hover{color:var(--text)}
+.pill .ct{font-size:10px;font-weight:800;padding:1px 6px;border-radius:5px;background:#141422;color:var(--muted)}
+.pill.on.w{background:linear-gradient(90deg,#2dd4bf,#38bdf8);color:#04080a}
+.pill.on.a{background:linear-gradient(90deg,#10b981,#34d399);color:#04120c}
+.pill.on.f{background:linear-gradient(90deg,#ff6d00,#d500f9);color:#180204}
+.pill.on .ct{background:rgba(0,0,0,.2);color:inherit}
+/* page */
+.page{padding:20px 0 52px}
+.phead{margin-bottom:20px}
+.ptop{display:flex;align-items:center;gap:11px;margin-bottom:7px}
+.pdot{position:relative;width:18px;height:18px;flex-shrink:0}
+.pdot i{position:absolute;inset:0;border-radius:50%;border:2px solid var(--c1);animation:ping 2.2s ease-in-out infinite}
+.pdot b{position:absolute;inset:4px;border-radius:50%;background:linear-gradient(135deg,var(--c1),var(--c2))}
+.ptitle{font-family:var(--disp);font-weight:800;font-size:clamp(22px,4vw,30px);letter-spacing:-.6px;margin:0;background:linear-gradient(90deg,var(--c2),var(--c1));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.psub{font-family:var(--mono);font-size:12px;color:var(--muted);margin:0}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:9px;margin:18px 0 20px}
+.stat{background:var(--surface);border:1px solid var(--brd);border-radius:11px;padding:11px 13px}
+.stat .sl{font-family:var(--mono);font-size:9px;color:var(--mut);text-transform:uppercase;letter-spacing:1px;margin-bottom:5px}
+.stat .sv{font-family:var(--mono);font-weight:800;font-size:18px;letter-spacing:-.5px}
+.tierrow{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:20px}
+.tier{font-family:var(--mono);font-weight:800;font-size:11px;padding:4px 12px;border-radius:8px}
+.tier.sort{background:var(--surface);color:var(--mut);border:1px solid var(--brd)}
+.divider{height:1px;margin-bottom:20px;background:linear-gradient(90deg,transparent,var(--c1),var(--c2),transparent)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+/* card */
+.rcard{position:relative;display:block;text-decoration:none;height:100%;background:var(--surface);border:1px solid var(--brd);border-top:2px solid var(--c1);border-radius:15px;padding:18px 20px;overflow:hidden;transition:transform .2s cubic-bezier(.22,1,.36,1),box-shadow .2s,border-color .2s}
+.rcard:hover{transform:translateY(-4px);border-color:color-mix(in srgb,var(--c1) 45%,transparent);box-shadow:0 12px 36px var(--glow),0 2px 8px rgba(0,0,0,.7)}
+.rcard::before{content:"";position:absolute;top:0;left:0;right:0;height:96px;background:linear-gradient(180deg,color-mix(in srgb,var(--c1) 9%,transparent),transparent);pointer-events:none}
+.crow{position:relative;display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+.rank{font-family:var(--mono);font-weight:800;font-size:12px;padding:3px 9px;border-radius:6px;background:color-mix(in srgb,var(--c1) 12%,transparent);color:var(--c1);border:1px solid color-mix(in srgb,var(--c1) 25%,transparent)}
+.ring{position:relative;width:52px;height:52px;border-radius:50%;background:conic-gradient(var(--c1) calc(var(--p)*3.6deg),var(--track) 0);display:grid;place-items:center;flex-shrink:0}
+.ring-in{width:42px;height:42px;border-radius:50%;background:var(--surface);display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1}
+.rnum{font-family:var(--mono);font-weight:800;font-size:15px;color:var(--c1);letter-spacing:-.5px}
+.rlbl{font-family:var(--mono);font-size:7px;color:var(--mut);margin-top:1px}
+.thead{position:relative;margin-bottom:10px}
+.tkrow{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:3px}
+.tk{font-family:var(--disp);font-weight:800;font-size:21px;color:var(--tx);letter-spacing:-.5px}
+.tag{font-family:var(--mono);font-weight:800;font-size:10px;padding:2px 8px;border-radius:5px;letter-spacing:.5px;background:color-mix(in srgb,var(--c1) 12%,transparent);color:var(--c1);border:1px solid color-mix(in srgb,var(--c1) 22%,transparent)}
+.cname{font-size:11px;color:var(--mut)}
+.cdesc{font-size:10px;color:color-mix(in srgb,var(--mut) 78%,transparent);margin-top:4px;font-style:italic;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.prow{position:relative;display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-top:1px solid var(--brd);border-bottom:1px solid var(--brd);margin-bottom:12px}
+.price{font-family:var(--mono);font-weight:800;font-size:21px;color:var(--tx);letter-spacing:-.5px}
+.pmeta{display:flex;flex-direction:column;align-items:flex-end;gap:3px}
+.chg{font-family:var(--mono);font-weight:700;font-size:11px;padding:2px 8px;border-radius:6px}
+.up{color:#10b981;background:#10b98118}.dn{color:#ef4444;background:#ef444418}
+.pnote{font-family:var(--mono);font-weight:700;font-size:10px;color:var(--c1)}
+.summ{position:relative;font-size:12px;color:color-mix(in srgb,var(--mut) 85%,var(--text));line-height:1.6;margin:0 0 12px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+/* dca gauge + chips */
+.chips{display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;margin-bottom:2px}
+.chip2 .cl{font-family:var(--mono);font-size:9px;color:var(--mut);margin-bottom:2px}
+.chip2 .cv{font-family:var(--mono);font-weight:700;font-size:12px;color:var(--c1);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gauge{margin-top:12px;padding-top:12px;border-top:1px solid var(--brd)}
+.grow{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.glab{font-family:var(--mono);font-size:9px;color:var(--mut);text-transform:uppercase;letter-spacing:1px}
+.gval{font-family:var(--mono);font-weight:800;font-size:10px}
+.gbar{position:relative;height:6px;border-radius:6px;overflow:hidden;background:var(--track);display:flex}
+.gbar i{flex:1}.gz1{background:#10b98122}.gz2{background:#38bdf822}.gz3{background:#f59e0b22}
+.gmk{position:absolute;top:50%;width:10px;height:10px;border-radius:50%;border:2px solid var(--surface);transform:translate(-50%,-50%);z-index:2}
+.gends{display:flex;justify-content:space-between;margin-top:4px;font-family:var(--mono);font-size:8px}
+.zline{font-size:10px;font-weight:700;margin-top:6px}
+/* catalyst */
+.cat{margin-top:12px;padding-top:12px;border-top:1px solid var(--brd)}
+.catrow{display:flex;align-items:center;gap:8px;margin-bottom:9px}
+.urg{font-family:var(--mono);font-weight:800;font-size:8px;letter-spacing:.5px;padding:2px 7px;border-radius:5px;white-space:nowrap;flex-shrink:0}
+.u-now{background:#ef444420;color:#ef4444;border:1px solid #ef444440}
+.u-soon{background:#f59e0b20;color:#f59e0b;border:1px solid #f59e0b40}
+.u-win{background:#38bdf820;color:#38bdf8;border:1px solid #38bdf840}
+.catnm{font-size:11px;color:var(--tx);font-weight:600;line-height:1.35}
+.next{font-family:var(--mono);font-size:10px;color:var(--mut);margin-bottom:9px}
+.upbar-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.upbar{height:6px;border-radius:6px;background:var(--track);overflow:hidden}
+.upbar i{display:block;height:100%;border-radius:6px;background:linear-gradient(90deg,var(--c1),var(--c2))}
+/* turbo moon */
+.moon{margin-top:12px;padding-top:12px;border-top:1px solid var(--brd)}
+.mrow{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.mlab{font-family:var(--mono);font-size:9px;color:var(--mut);text-transform:uppercase;letter-spacing:1px}
+.mval{font-family:var(--mono);font-weight:800;font-size:11px;background:linear-gradient(90deg,var(--c1),var(--c2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.mbar{position:relative;height:5px;border-radius:6px;background:var(--track)}
+.mfill{position:absolute;left:0;height:100%;border-radius:6px;background:linear-gradient(90deg,#ff3d0040,#ff6d0090)}
+.mdot{position:absolute;top:50%;width:10px;height:10px;border-radius:50%;background:#ff3d00;border:2px solid var(--surface);transform:translate(-50%,-50%);box-shadow:0 0 8px #ff3d00;z-index:2}
+.mtick{position:absolute;top:-3px;width:2px;height:11px;border-radius:2px;background:var(--c2);transform:translateX(-50%);box-shadow:0 0 5px var(--c2)}
+.mend{position:relative;height:14px;margin-top:5px}
+.mmoon{position:absolute;font-family:var(--mono);font-size:8px;color:var(--c2);transform:translateX(-50%)}
+.tchips{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-bottom:2px}
+.tchip{background:color-mix(in srgb,var(--track) 60%,#000);border:1px solid var(--brd);border-radius:8px;padding:7px 9px}
+.tchip .cl{font-family:var(--mono);font-size:8px;color:var(--mut);text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px}
+.tchip .cv{font-family:var(--mono);font-weight:800;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.note{margin-top:26px;padding:12px 16px;background:var(--surface);border:1px solid var(--brd);border-left:3px solid var(--c1);border-radius:9px;font-size:12px;color:color-mix(in srgb,var(--mut) 85%,var(--text));line-height:1.6}
+.note b{color:var(--c1)}
+/* themes */
+.theme-water{--c1:#38bdf8;--c2:#2dd4bf;--surface:#07111a;--brd:#102530;--track:#0d1f29;--glow:rgba(56,189,248,.16);--tx:#eaf6ff;--mut:#4a6b78}
+.theme-air{--c1:#10b981;--c2:#34d399;--surface:#08130f;--brd:#0f2a20;--track:#0c1f18;--glow:rgba(16,185,129,.16);--tx:#e8fff5;--mut:#4a7a67}
+.theme-fire{--c1:#ff6d00;--c2:#d500f9;--surface:#0e0508;--brd:#2d1010;--track:#1a0505;--glow:rgba(255,61,0,.16);--tx:#fff1f1;--mut:#7f4040}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1);box-shadow:0 0 0 0 rgba(16,185,129,.4)}50%{opacity:.75;transform:scale(1.25);box-shadow:0 0 0 4px rgba(16,185,129,0)}}
+@keyframes gradShift{0%{background-position:0% 0}100%{background-position:300% 0}}
+@keyframes sparkPulse{0%,100%{transform:scale(1);opacity:.7}50%{transform:scale(1.25);opacity:1}}
+@keyframes crawl{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes ping{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.25);opacity:.5}}
+@media(max-width:680px){.hright .home,.hright .upd,.hright .live{display:none}.tchips{grid-template-columns:1fr 1fr}}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;animation-iteration-count:1!important}}
+</style>
+</helmet>
+<div class="accentbar"></div>
+<header class="hdr">
+<div class="hrow">
+<a class="brand" href="Landing Restyled.dc.html"><svg width="26" height="26" viewBox="0 0 512 512" style="border-radius:7px"><rect x="16" y="16" width="480" height="480" rx="112" fill="#0b1118"/><g fill="none" stroke="#2f8f5c" stroke-opacity=".6" stroke-width="10"><circle cx="256" cy="256" r="70"/><circle cx="256" cy="256" r="140"/></g><g transform="rotate(-38 256 256)"><line x1="256" y1="256" x2="256" y2="86" stroke="#3fd07f" stroke-width="12" stroke-linecap="round"/></g><circle cx="330" cy="176" r="18" fill="#8ef0a8"/><circle cx="256" cy="256" r="16" fill="#3fd07f"/></svg><span class="nm">Stock Playbook</span></a>
+<div class="hright">
+<nav class="pills2">
+<a class="pill2" href="Stock Playbook Dashboard.dc.html" style="background-image:linear-gradient(90deg,#38bdf8,#3b82f6)">💧 DCA</a>
+<a class="pill2" href="Stock Playbook Dashboard.dc.html" style="background-image:linear-gradient(90deg,#10b981,#34d399)">🌬️ Catalyst</a>
+<a class="pill2" href="Stock Playbook Dashboard.dc.html" style="background-image:linear-gradient(90deg,#ff6d00,#d500f9)">🔥 Turbo</a>
+</nav>
+<a class="tool" href="#">📊 Backtest</a>
+<a class="tool journal" href="Journal.dc.html">📒 Journal <span class="spark">✦</span></a>
+<span class="live"></span>
+<span class="upd">{{ updLabel }} {{ lastUpdated }}</span>
+<div class="lang"><button class="lbtn {{ enOn }}" onClick="{{ setEn }}">EN</button><button class="lbtn {{ thOn }}" onClick="{{ setTh }}">TH</button></div>
+<button class="avatar" onClick="{{ noop }}" title="Account">JD</button>
+</div>
+</div>
+<div class="tick">
+<button class="tickbar" onClick="{{ toggleTick }}">
+<span class="verdict">🟡 {{ verdict }}</span>
+<div class="track"><div class="crawl2">{{ crawlA }}<span class="sep">•</span>{{ crawlB }}</div></div>
+<span class="entry">🎯 {{ entryLabel }}</span>
+<span class="chev {{ chevOpen }}">▼</span>
+</button>
+</div>
+<sc-if value="{{ tickOpen }}" hint-placeholder-val="{{ false }}">
+<div class="tickdrawer"><div class="tdinner"><p class="dsumm">{{ tickSummary }}</p><div class="dentry"><div class="del">🎯 {{ l_bestentry }}</div><div class="dev">{{ entryLabel }}</div></div></div></div>
+</sc-if>
+</header>
+<section class="dhero"><div class="hbadge"><span class="live"></span><span>LIVE · {{ updLabel }} {{ lastUpdated }}</span></div><p class="dtag">{{ heroTag }}</p></section>
+<div class="switch">
+<div class="pills">
+<button class="pill w {{ dcaOn }}" onClick="{{ goDca }}">💧 DCA<span class="ct">5</span></button>
+<button class="pill a {{ catOn }}" onClick="{{ goCat }}">🌬️ Catalyst<span class="ct">5</span></button>
+<button class="pill f {{ turboOn }}" onClick="{{ goTurbo }}">🔥 Turbo<span class="ct">5</span></button>
+</div>
+</div>
+<main class="wrap">
+<sc-if value="{{ isDca }}" hint-placeholder-val="{{ true }}">
+<section class="page theme-water">
+<div class="phead">
+<div class="ptop"><span class="pdot"><i></i><b></b></span><h1 class="ptitle">💧 DCA · {{ dcaTitle }}</h1></div>
+<p class="psub">{{ dcaSub }}</p>
+</div>
+<div class="stats">
+<div class="stat"><div class="sl">{{ l_top }}</div><div class="sv" style="color:#7dd3fc">VOO</div></div>
+<div class="stat"><div class="sl">{{ l_avg }}</div><div class="sv" style="color:#38bdf8">75</div></div>
+<div class="stat"><div class="sl">{{ l_acc }}</div><div class="sv" style="color:#2dd4bf">3</div></div>
+<div class="stat"><div class="sl">{{ l_below }}</div><div class="sv" style="color:#10b981">1</div></div>
+<div class="stat"><div class="sl">{{ l_totetf }}</div><div class="sv" style="color:#4a6b78">5</div></div>
+</div>
+<div class="divider"></div>
+<div class="cards">
+<sc-for list="{{ dca }}" as="d" hint-placeholder-count="5">
+<a class="rcard" href="#">
+<div class="crow"><span class="rank">{{ d.medal }}</span><div class="ring" style="--p:{{ d.score }}"><div class="ring-in"><span class="rnum">{{ d.score }}</span><span class="rlbl">DCA</span></div></div></div>
+<div class="thead">
+<div class="tkrow"><span class="tk">{{ d.tk }}</span><span class="tag">ETF</span></div>
+<div class="cname">{{ d.name }}</div>
+<div class="cdesc">{{ d.desc }}</div>
+</div>
+<div class="prow">
+<span class="price">{{ d.price }}</span>
+<div class="pmeta"><span class="chg {{ d.chgCls }}">{{ d.chg }}</span><span class="pnote">🔁 {{ d.cadence }} · {{ d.weight }}</span></div>
+</div>
+<div class="chips"><sc-for list="{{ d.chips }}" as="c" hint-placeholder-count="4"><div class="chip2"><div class="cl">{{ c.l }}</div><div class="cv">{{ c.v }}</div></div></sc-for></div>
+<div class="gauge">
+<div class="grow"><span class="glab">{{ dcaVsFair }}</span><span class="gval" style="color:{{ d.zoneColor }}">{{ d.vsFair }}</span></div>
+<div class="gbar"><i class="gz1"></i><i class="gz2"></i><i class="gz3"></i><span class="gmk" style="left:{{ d.mk }};background:{{ d.zoneColor }};box-shadow:0 0 8px {{ d.zoneColor }}"></span></div>
+<div class="gends"><span style="color:#10b981">cheap</span><span style="color:#38bdf8">fair</span><span style="color:#f59e0b">rich</span></div>
+<div class="zline" style="color:{{ d.zoneColor }}">{{ d.zoneLbl }}</div>
+</div>
+</a>
+</sc-for>
+</div>
+<div class="note">💧 <b>{{ dcaNoteHead }}</b> — {{ dcaNote }}</div>
+</section>
+</sc-if>
+<sc-if value="{{ isCat }}" hint-placeholder-val="{{ false }}">
+<section class="page theme-air">
+<div class="phead">
+<div class="ptop"><span class="pdot"><i></i><b></b></span><h1 class="ptitle">🌬️ Catalyst · {{ catTitle }}</h1></div>
+<p class="psub">{{ catSub }}</p>
+</div>
+<div class="stats">
+<div class="stat"><div class="sl">{{ l_top }}</div><div class="sv" style="color:#10b981">NVDA</div></div>
+<div class="stat"><div class="sl">{{ l_avgup }}</div><div class="sv" style="color:#10b981">+30%</div></div>
+<div class="stat"><div class="sl">{{ l_avg }}</div><div class="sv" style="color:#e2e8f0">80</div></div>
+<div class="stat"><div class="sl">{{ l_lowfed }}</div><div class="sv" style="color:#10b981">2/5</div></div>
+<div class="stat"><div class="sl">{{ l_buy }}</div><div class="sv" style="color:#10b981">3</div></div>
+</div>
+<div class="tierrow">
+<span class="tier" style="background:#10b98118;color:#10b981;border:1px solid #10b98130">BUY ×3</span>
+<span class="tier" style="background:#f59e0b18;color:#f59e0b;border:1px solid #f59e0b30">HOLD ×1</span>
+<span class="tier" style="background:#8b5cf618;color:#8b5cf6;border:1px solid #8b5cf630">SPEC ×1</span>
+<span class="tier sort">{{ catSort }}</span>
+</div>
+<div class="divider"></div>
+<div class="cards">
+<sc-for list="{{ cat }}" as="d" hint-placeholder-count="5">
+<a class="rcard" href="#">
+<div class="crow"><span class="rank">{{ d.medal }}</span><div class="ring" style="--p:{{ d.score }}"><div class="ring-in"><span class="rnum">{{ d.score }}</span><span class="rlbl">SCORE</span></div></div></div>
+<div class="thead">
+<div class="tkrow"><span class="tk">{{ d.tk }}</span><span class="tag" style="background:{{ d.vBg }};color:{{ d.vColor }};border-color:{{ d.vBrd }}">{{ d.verdict }}</span></div>
+<div class="cname">{{ d.name }} · {{ d.cap }}</div>
+</div>
+<div class="prow">
+<span class="price">{{ d.price }}</span>
+<div class="pmeta"><span class="chg {{ d.chgCls }}">{{ d.chg }}</span><span class="pnote">Fed {{ d.fed }}</span></div>
+</div>
+<p class="summ">{{ d.summ }}</p>
+<div class="cat">
+<div class="catrow"><span class="urg {{ d.urgCls }}">{{ d.urg }}</span><span class="catnm">{{ d.catnm }}</span></div>
+<div class="next">↗ {{ nextLbl }}: {{ d.next }}</div>
+<div class="upbar-h"><span class="glab">{{ upsideLbl }}</span><span class="gval" style="color:#34d399">{{ d.up }}</span></div>
+<div class="upbar"><i style="width:{{ d.upFill }}"></i></div>
+</div>
+</a>
+</sc-for>
+</div>
+<div class="note">🌬️ <b>{{ catNoteHead }}</b> — {{ catNote }}</div>
+</section>
+</sc-if>
+<sc-if value="{{ isTurbo }}" hint-placeholder-val="{{ false }}">
+<section class="page theme-fire">
+<div class="phead">
+<div class="ptop"><span class="pdot"><i></i><b></b></span><h1 class="ptitle">🔥 Turbo · {{ turboTitle }}</h1></div>
+<p class="psub">{{ turboSub }}</p>
+</div>
+<div class="stats">
+<div class="stat"><div class="sl">{{ l_top }}</div><div class="sv" style="color:#ff6d00">RXRX</div></div>
+<div class="stat"><div class="sl">{{ l_avgmoon }}</div><div class="sv" style="color:#ff6d00">+422%</div></div>
+<div class="stat"><div class="sl">300%+</div><div class="sv" style="color:#d500f9">5</div></div>
+<div class="stat"><div class="sl">500%+</div><div class="sv" style="color:#d500f9">1</div></div>
+<div class="stat"><div class="sl">{{ l_tottur }}</div><div class="sv" style="color:#7f4040">5</div></div>
+</div>
+<div class="tierrow">
+<span class="tier" style="background:#d500f918;color:#d500f9;border:1px solid #d500f930">🌙 500%+ ×1</span>
+<span class="tier" style="background:#ff3d0018;color:#ff6d00;border:1px solid #ff3d0030">🔥 300%+ ×5</span>
+<span class="tier sort">{{ turboSort }}</span>
+</div>
+<div class="divider"></div>
+<div class="cards">
+<sc-for list="{{ turbo }}" as="d" hint-placeholder-count="5">
+<a class="rcard" href="#">
+<div class="crow"><span class="rank">{{ d.medal }}</span><div class="ring" style="--p:{{ d.ringP }}"><div class="ring-in"><span class="rnum" style="font-size:9px">🌙</span><span class="rnum" style="font-size:11px">{{ d.moon }}</span></div></div></div>
+<div class="thead">
+<div class="tkrow"><span class="tk">{{ d.tk }}</span><span class="tag">{{ d.cap }}</span></div>
+<div class="cname">{{ d.name }}</div>
+</div>
+<div class="prow">
+<span class="price">{{ d.price }}</span>
+<div class="pmeta"><span class="chg {{ d.chgCls }}">{{ d.chg }}</span><span class="pnote">🔥 {{ d.bull }} bull</span><span class="pnote" style="color:#d500f9">🌙 {{ d.moonPrice }}</span></div>
+</div>
+<div class="tchips">
+<div class="tchip"><div class="cl">{{ l_cap }}</div><div class="cv" style="color:#ff6d00">{{ d.cap }}</div></div>
+<div class="tchip"><div class="cl">{{ l_fedrisk }}</div><div class="cv" style="color:{{ d.fedColor }}">{{ d.fed }}</div></div>
+<div class="tchip"><div class="cl">{{ l_stop }}</div><div class="cv" style="color:#ef4444">{{ d.sl }}</div></div>
+</div>
+<div class="moon">
+<div class="mrow"><span class="mlab">{{ priceToMoon }}</span><span class="mval">🌙 {{ d.moon }}</span></div>
+<div class="mbar"><span class="mfill" style="width:{{ d.cur }}"></span><span class="mtick" style="left:{{ d.tp }}"></span><span class="mdot" style="left:{{ d.cur }}"></span></div>
+<div class="mend"><span class="mmoon" style="left:96%">🌙 MOON</span></div>
+</div>
+</a>
+</sc-for>
+</div>
+<div class="note">⚠️ <b>{{ turboNoteHead }}</b> — {{ turboNote }}</div>
+</section>
+</sc-if>
+</main>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { lang: 'en', view: 'dca', tickOpen: false };
+  medal(r){ return ['🥇','🥈','🥉'][r-1] || '#'+r; }
+  crawl() {
+    const items = [
+      ['June NFP (Jul 2) — miss +57K vs +113K', '#f59e0b'],
+      ['June CPI (Jul 14)', '#ef4444'],
+      ['GOOGL Earnings (Jul 22)', '#38bdf8'],
+      ['FOMC Decision (Jul 29)', '#ef4444'],
+      ['MSFT + META Earnings (Jul 29)', '#ef4444'],
+      ['Fed 3.50–3.75%', '#64748b'], ['VIX 16.45', '#64748b'],
+    ];
+    const kids = [];
+    items.forEach(([t, c], i) => {
+      if (i > 0) kids.push(React.createElement('span', { key: 's' + i, className: 'sep' }, '•'));
+      kids.push(React.createElement('span', { key: 't' + i, style: { color: c } }, t));
+    });
+    return React.createElement('span', { style: { display: 'inline-flex', alignItems: 'center' } }, kids);
+  }
+  renderVals() {
+    const th = this.state.lang === 'th';
+    const v = this.state.view;
+    const setV = (x)=>()=>this.setState({view:x});
+    const chg = (n)=>({ chg:(n>=0?'▲ ':'▼ ')+Math.abs(n).toFixed(2)+'%', chgCls:n>=0?'up':'dn' });
+
+    const dcaRaw = [
+      { tk:'VOO', name:'Vanguard S&P 500 ETF', desc:'The S&P 500 in one fund — 500 leading US companies, 0.03% cost, first ETF past $1T AUM.', price:'$672.60', pc:0, score:78, cadence:'Monthly', weight:'15–25%', vsFairN:4, zone:'fair', chips:[['Tracks','S&P 500'],['Expense','0.03%'],['Yield','1.02%'],['10y CAGR','13.5%']] },
+      { tk:'VTI', name:'Vanguard Total Stock Market', desc:'Entire US market — 3,600+ stocks, large to small cap, at 0.03%. The one-fund core.', price:'$305.40', pc:0.12, score:77, cadence:'Monthly', weight:'15–25%', vsFairN:3, zone:'fair', chips:[['Tracks','CRSP US Total'],['Expense','0.03%'],['Yield','1.20%'],['10y CAGR','12.9%']] },
+      { tk:'QQQM', name:'Invesco NASDAQ-100 ETF', desc:'The 100 largest non-financial Nasdaq names — tech-tilted growth core at a lower fee than QQQ.', price:'$214.80', pc:0.34, score:75, cadence:'Monthly', weight:'10–15%', vsFairN:9, zone:'rich', chips:[['Tracks','Nasdaq-100'],['Expense','0.15%'],['Yield','0.55%'],['10y CAGR','18.2%']] },
+      { tk:'SCHD', name:'Schwab US Dividend Equity', desc:'100 quality high-yield dividend payers — the income ballast to a growth-heavy core.', price:'$27.90', pc:-0.10, score:74, cadence:'Monthly', weight:'8–12%', vsFairN:-3, zone:'cheap', chips:[['Tracks','Dow US Div 100'],['Expense','0.06%'],['Yield','3.60%'],['10y CAGR','11.0%']] },
+      { tk:'VGT', name:'Vanguard Information Technology', desc:'Pure US tech sector exposure — highest growth, highest volatility of the DCA set.', price:'$655.20', pc:0.28, score:72, cadence:'Monthly', weight:'5–10%', vsFairN:11, zone:'rich', chips:[['Tracks','MSCI US IT'],['Expense','0.09%'],['Yield','0.60%'],['10y CAGR','20.4%']] },
+    ];
+    const zoneMap = { cheap:{c:'#10b981',en:'below fair · accumulate',th:'ถูกกว่า fair · สะสมได้'}, fair:{c:'#38bdf8',en:'near fair · scale in',th:'ใกล้ fair · ทยอยเข้า'}, rich:{c:'#f59e0b',en:'above fair · wait for dip',th:'แพงกว่า fair · รอย่อ'} };
+    const dca = dcaRaw.map((d,i)=>{ const z=zoneMap[d.zone]; const mk=Math.max(3,Math.min(97,((d.vsFairN+25)/50)*100));
+      return { ...d, ...chg(d.pc), medal:this.medal(i+1), chips:d.chips.map(([l,val])=>({l,v:val})),
+        vsFair:(d.vsFairN>=0?'+':'')+d.vsFairN+'%', mk:mk.toFixed(0)+'%', zoneColor:z.c, zoneLbl:th?z.th:z.en }; });
+
+    const verdictMap = { BUY:{bg:'#10b98118',c:'#10b981',b:'#10b98140'}, HOLD:{bg:'#f59e0b18',c:'#f59e0b',b:'#f59e0b40'}, SPEC:{bg:'#8b5cf618',c:'#8b5cf6',b:'#8b5cf640'} };
+    const fedColor = (f)=> f==='LOW'?'#10b981':f==='MED'?'#f59e0b':'#ef4444';
+    const catRaw = [
+      { tk:'NVDA', name:'NVIDIA', cap:'$4.85T', price:'$200.09', pc:-0.80, score:87, verdict:'BUY', fed:'MED', urg:'NOW', urgCls:'u-now', catnm:'Vera Rubin — first customer shipments', next:'Q2 FY27 Earnings · Aug 26 (57d)', up:35, summ:th?'ส่งมอบ Vera Rubin ให้ hyperscalers ก.ค. นี้ — แก้ overhang product cycle ราคาย่อ 15% จาก ATH':'Vera Rubin GPUs shipping to hyperscalers now — resolves the product-cycle overhang; 15% off ATH.' },
+      { tk:'AVGO', name:'Broadcom', cap:'$820B', price:'$1,742.00', pc:1.20, score:84, verdict:'BUY', fed:'LOW', urg:'RAMP', urgCls:'u-soon', catnm:'Custom AI ASIC ramp — hyperscaler demand', next:'Q3 Earnings · Sep 4', up:28, summ:th?'ASIC AI คัสตอมเร่งตัว ดีมานด์ hyperscaler แข็งแรง':'Custom AI ASIC ramp accelerating on strong hyperscaler demand.' },
+      { tk:'PLTR', name:'Palantir', cap:'$370B', price:'$158.30', pc:2.10, score:79, verdict:'BUY', fed:'MED', urg:'PRE-EARN', urgCls:'u-soon', catnm:'Gov + commercial AIP expansion', next:'Q2 Earnings · Aug 4', up:24, summ:th?'AIP ขยายทั้งภาครัฐและเอกชน โมเมนตัมแข็ง':'Gov and commercial AIP adoption expanding into Q2 print.' },
+      { tk:'RKLB', name:'Rocket Lab', cap:'$22B', price:'$46.20', pc:3.40, score:76, verdict:'SPEC', fed:'MED', urg:'WINDOW', urgCls:'u-win', catnm:'Neutron first launch window', next:'Neutron debut · Q3 window', up:40, summ:th?'หน้าต่างเปิดตัว Neutron ครั้งแรก — catalyst ใหญ่':'Maiden Neutron launch window opens — the pivotal catalyst.' },
+      { tk:'MRVL', name:'Marvell', cap:'$77B', price:'$88.90', pc:0.90, score:73, verdict:'HOLD', fed:'MED', urg:'PRE-EARN', urgCls:'u-soon', catnm:'Custom silicon guide update', next:'Q2 Earnings · Aug 28', up:22, summ:th?'อัปเดต guide custom silicon เป็นตัวขับหลัก':'Custom-silicon guidance is the swing factor into Aug 28.' },
+    ];
+    const cat = catRaw.map((d,i)=>{ const vm=verdictMap[d.verdict];
+      return { ...d, ...chg(d.pc), medal:this.medal(i+1), vBg:vm.bg, vColor:vm.c, vBrd:vm.b, fedColor:fedColor(d.fed),
+        up:'+'+d.up+'%', upFill:Math.min(100,(d.up/50)*100).toFixed(0)+'%' }; });
+
+    const turboRaw = [
+      { tk:'RXRX', name:'Recursion Pharmaceuticals', cap:'$2.05B', price:'$3.87', pc:5.31, moonN:380, moonPrice:'$18.58', bull:200, fed:'LOW', sl:'$2.13', slN:2.13, priceN:3.87, moonPN:18.58, tpN:11.61 },
+      { tk:'IONQ', name:'IonQ', cap:'$10B', price:'$42.10', pc:4.20, moonN:420, moonPrice:'$175', bull:180, fed:'MED', sl:'$28.00', slN:28, priceN:42.1, moonPN:175, tpN:120 },
+      { tk:'ACHR', name:'Archer Aviation', cap:'$6B', price:'$11.30', pc:6.80, moonN:350, moonPrice:'$42', bull:160, fed:'MED', sl:'$7.00', slN:7, priceN:11.3, moonPN:42, tpN:26 },
+      { tk:'POET', name:'POET Technologies', cap:'$0.5B', price:'$7.80', pc:3.10, moonN:500, moonPrice:'$38', bull:230, fed:'HIGH', sl:'$4.50', slN:4.5, priceN:7.8, moonPN:38, tpN:24 },
+      { tk:'ONDS', name:'Ondas Holdings', cap:'$0.3B', price:'$2.40', pc:8.00, moonN:460, moonPrice:'$12', bull:210, fed:'HIGH', sl:'$1.40', slN:1.4, priceN:2.4, moonPN:12, tpN:7.5 },
+    ];
+    const turbo = turboRaw.map((d,i)=>{ const range=d.moonPN-d.slN; const cur=Math.max(4,Math.min(96,((d.priceN-d.slN)/range)*100)); const tp=Math.max(4,Math.min(96,((d.tpN-d.slN)/range)*100));
+      return { ...d, ...chg(d.pc), medal:this.medal(i+1), moon:'+'+d.moonN+'%', bull:'+'+d.bull+'%', ringP:Math.min(100,(d.moonN/500)*100).toFixed(0), fedColor:fedColor(d.fed), cur:cur.toFixed(0)+'%', tp:tp.toFixed(0)+'%' }; });
+
+    return {
+      lastUpdated:'02/07/2026', updLabel: th?'อัปเดต':'Updated',
+      enOn: th?'':'on', thOn: th?'on':'', setEn:()=>this.setState({lang:'en'}), setTh:()=>this.setState({lang:'th'}),
+      noop:()=>{}, verdict: th?'เลือกเป็นตัว':'SELECTIVE', entryLabel: th?'เข้า Jul 2–13':'Entry Jul 2–13',
+      crawlA:this.crawl(), crawlB:this.crawl(), tickOpen:this.state.tickOpen, chevOpen: this.state.tickOpen?'open':'',
+      toggleTick:()=>this.setState(s=>({tickOpen:!s.tickOpen})),
+      tickSummary: th ? 'ตลาดยังอยู่ในโหมดเลือกเป็นตัว รอ CPI และ FOMC ก่อนเพิ่มความเสี่ยง — เข้าเป็นช่วงตามหน้าต่างด้านล่าง' : 'Market stays selective into CPI and the FOMC decision — scale in around the window below rather than all at once.',
+      l_bestentry: th ? 'ช่วงเข้าที่ดีที่สุด' : 'BEST ENTRY WINDOW',
+      heroTag: th ? 'เลือกธาตุการลงทุนของคุณด้านล่าง — จัดอันดับใหม่ทุกสัปดาห์' : 'Pick your investment element below — re-ranked automatically every week.',
+      isDca: v==='dca', isCat: v==='catalyst', isTurbo: v==='turbo',
+      dcaOn: v==='dca'?'on':'', catOn: v==='catalyst'?'on':'', turboOn: v==='turbo'?'on':'',
+      goDca:setV('dca'), goCat:setV('catalyst'), goTurbo:setV('turbo'),
+      dca, cat, turbo,
+      dcaTitle: th?'สะสมระยะยาว':'Long-term Core', catTitle: th?'หุ้นเด่นประจำสัปดาห์':'Weekly Watchlist', turboTitle: th?'Moonshot':'Moonshots',
+      dcaSub: th?'5 ETF · เรียงตามต้นทุนต่ำ + กระจายความเสี่ยง + valuation · DCA อัตโนมัติ':'5 ETFs · ranked by low cost + diversification + valuation · auto-DCA core',
+      catSub: th?'5 จาก 24 ตัว · เรียงตามความใกล้ catalyst · 02/07/2026':'Top 5 of 24 stocks · ranked by catalyst proximity · 02/07/2026',
+      turboSub: th?'5 ตัว · เรียงตาม 🔥 upside มากสุด (bull case) · small/mid cap เด้ง 300%++':'5 picks · ranked by 🔥 most upside (bull case) · small/mid-cap 300%++ plays',
+      l_top: th?'ตัวเด่น':'Top Pick', l_avg: th?'คะแนนเฉลี่ย':'Avg Score', l_acc: th?'สะสมได้':'Accumulate', l_below: th?'ต่ำกว่า fair':'Below Fair', l_totetf: th?'ทั้งหมด':'Total ETF',
+      l_avgup: th?'Upside TP2 เฉลี่ย':'Avg TP2 Upside', l_lowfed: th?'Fed Risk ต่ำ':'Low Fed Risk', l_buy: th?'สัญญาณ BUY':'BUY Signals',
+      l_avgmoon: th?'Moon % เฉลี่ย':'Avg Moon %', l_tottur: th?'ทั้งหมด':'Total Turbo', l_cap: th?'มาร์เก็ตแคป':'Market Cap', l_fedrisk: th?'ความเสี่ยง Fed':'Fed Risk', l_stop: th?'จุดตัดขาดทุน':'Stop Loss',
+      dcaVsFair: th?'มูลค่า vs Fair':'Valuation vs Fair', catSort: th?'เรียงตาม: ความใกล้ catalyst':'sorted: catalyst proximity', turboSort: th?'เรียงตาม: 🔥 upside มากสุด':'sorted: 🔥 most upside',
+      nextLbl: th?'ถัดไป':'Next', upsideLbl: th?'Upside → TP2':'Upside → TP2', priceToMoon: th?'ราคา → Moon':'Price → Moon',
+      dcaNoteHead: th?'DCA = core ถือยาว คุณภาพสูง':'DCA = quality long-term core', dcaNote: th?'ทยอยสะสมตาม cadence ไม่ต้องรอ catalyst · ออกเมื่อ thesis พัง · Not financial advice':'accumulate on a cadence, no catalyst needed · exit on thesis-break, not a daily stop · Not financial advice',
+      catNoteHead: th?'Catalyst = event-driven ระยะสัปดาห์':'Catalyst = event-driven, weeks', catNote: th?'เข้าตาม catalyst ที่กำลังมา · กระจาย entry รอบ event cluster · Not financial advice':'trade into upcoming catalysts · stagger entries around event clusters · Not financial advice',
+      turboNoteHead: th?'Turbo คือ high-risk zone':'Turbo is a high-risk zone', turboNote: th?'size 2–5% ต่อตัว · ตั้ง stop ทุกตัวก่อนเข้า · moon case เป็น speculative · Not financial advice':'size 2–5% per name · always set a stop before entry · the moon case is speculative, not a guarantee · Not financial advice',
+    };
+  }
+}
+</script>
+</body>
+</html>

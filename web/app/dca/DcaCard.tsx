@@ -39,38 +39,30 @@ function ValuationGauge({ report, th }: { report: StockReport; th: boolean }) {
   const marker = Math.max(3, Math.min(97, ((vb.currentVsFair + 25) / 50) * 100));
 
   return (
-    <div style={{ marginTop: 14, paddingTop: 12, borderTop: "1px solid #102530" }}>
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8 }}>
-        <span style={{
-          fontSize: 9, color: "#4a6b78", textTransform: "uppercase",
-          letterSpacing: "1px", fontFamily: "var(--font-mono, monospace)",
-        }}>
+    <div className="gauge">
+      <div className="grow">
+        <span className="glab">
           {th ? "มูลค่า vs Fair" : "Valuation vs Fair"}
         </span>
-        <span style={{
-          fontSize: 10, fontWeight: 800, color: zone.color,
-          fontFamily: "var(--font-mono, monospace)",
-        }}>
+        <span className="gval" style={{ color: zone.color }}>
           {vb.currentVsFair >= 0 ? "+" : ""}{vb.currentVsFair.toFixed(0)}%
         </span>
       </div>
 
-      <div style={{ position: "relative", height: 6, borderRadius: 6, overflow: "hidden", background: "#0d1f29" }}>
+      <div className="gbar">
         {/* cheap | fair | expensive zones */}
-        <div style={{ position: "absolute", inset: 0, display: "flex" }}>
-          <div style={{ flex: 1, background: "#10b98122" }} />
-          <div style={{ flex: 1, background: "#38bdf822" }} />
-          <div style={{ flex: 1, background: "#f59e0b22" }} />
-        </div>
+        <i className="gz1" />
+        <i className="gz2" />
+        <i className="gz3" />
         {/* current price marker */}
         <div className="radar-mk" style={{ left: `${marker}%`, background: zone.color, boxShadow: `0 0 8px ${zone.color}` }} />
       </div>
-      <div style={{ display: "flex", justifyContent: "space-between", marginTop: 4 }}>
-        <span style={{ fontSize: 8, color: "#10b981", fontFamily: "var(--font-mono, monospace)" }}>cheap</span>
-        <span style={{ fontSize: 8, color: "#38bdf8", fontFamily: "var(--font-mono, monospace)" }}>fair</span>
-        <span style={{ fontSize: 8, color: "#f59e0b", fontFamily: "var(--font-mono, monospace)" }}>rich</span>
+      <div className="gends">
+        <span style={{ color: "#10b981" }}>cheap</span>
+        <span style={{ color: "#38bdf8" }}>fair</span>
+        <span style={{ color: "#f59e0b" }}>rich</span>
       </div>
-      <div style={{ fontSize: 10, color: zone.color, marginTop: 6, fontWeight: 700 }}>
+      <div className="zline" style={{ color: zone.color }}>
         {th ? zone.labelTh : zone.labelEn}
       </div>
     </div>
@@ -122,13 +114,11 @@ function FundChips({ report, th }: { report: StockReport; th: boolean }) {
     ...(f.cagr10y != null ? [{ label: th ? "CAGR 10y" : "10y CAGR", value: `${f.cagr10y.toFixed(0)}%` }] : []),
   ];
   return (
-    <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "6px 12px", marginTop: 12 }}>
+    <div className="chips" style={{ marginTop: 12 }}>
       {chips.map((c) => (
-        <div key={c.label}>
-          <div style={{ fontSize: 9, color: "#4a6b78", marginBottom: 2, fontFamily: "var(--font-mono, monospace)" }}>{c.label}</div>
-          <div style={{ fontSize: 12, color: "#7dd3fc", fontWeight: 700, fontFamily: "var(--font-mono, monospace)", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
-            {c.value}
-          </div>
+        <div key={c.label} className="chip2">
+          <div className="cl">{c.label}</div>
+          <div className="cv">{c.value}</div>
         </div>
       ))}
     </div>

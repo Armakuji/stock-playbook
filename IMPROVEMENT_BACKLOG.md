@@ -129,17 +129,17 @@ Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open N
 **ไฟล์:** ครบทุกไฟล์ตาม code sweep + README.md + docs/architecture/journal-api.md + docs/architecture/journal-api-deployment.md · ที่เหลือ (คนละเรื่อง): `assets/social-preview.png`
 **เป้า:** แบรนด์เดียวไม่ชนใคร ใช้ทั้ง repo + เว็บ + API + User-Agent ✅ · repo/Vercel/domain/OAuth rename ✅ · README/docs URL ตรงโดเมนใหม่ ✅ — **ปิด item นี้**
 
-## 16. Journal API — 5 minor items ที่ defer จาก Phase 1 final review (PR #29)
+## 16. ✅ DONE — Journal API — 5 minor items ที่ defer จาก Phase 1 final review (PR #29)
 
 **ปัญหา:** final review ของ Phase 1 พบ 5 จุด minor ที่ตั้งใจไม่ fix ตอนนั้น (ไม่ block การใช้งาน) — จดไว้ให้คนที่ทำ Phase 2 / polish รอบหน้าเก็บ
 **ทำ:**
   1. ✅ DONE (ทำพร้อม #17) — subtitle เก่าอ้าง "private/journal.json" ค้างอยู่ — แก้เป็น "{n} trades" เฉย ๆ
-  2. `addExit` ไม่มี server-side over-exit guard — client กันอยู่ฝั่งเดียว ยิง API ตรงขาย shares เกินที่ถือได้ (เพิ่ม validation ใน service)
-  3. POST `/trades` ด้วย client-chosen id ที่ชนกัน → 500 ไม่ใช่ 409 (จับ Prisma P2002 → ConflictException)
-  4. `apiLogout` ไม่ใช้ shared `readError` convention — ตอนนี้ logout อยู่ใน `web/lib/auth-client.ts` แล้ว (ย้ายจาก JournalContent เป็นส่วนหนึ่งของ #17) แต่ยังไม่ได้ปรับให้ใช้ readError convention
+  2. ✅ DONE — `addExit` เพิ่ม server-side over-exit guard: sum existing exits ก่อน insert → reject ด้วย `BadRequestException` ถ้า `existing + dto.shares > trade.shares` (message บอก remaining) · เพิ่ม `@IsPositive()` ใน `CreateExitDto.shares`
+  3. ✅ DONE — POST `/trades` จับ Prisma `P2002` (duplicate id) → `ConflictException` (409) แทนที่จะปล่อยให้ 500 · error อื่นยัง rethrow เหมือนเดิม
+  4. ✅ DONE — ย้าย `readError` จาก `JournalContent.tsx` เข้า `web/lib/auth-client.ts` (export) · `logout()` เช็ค `res.ok` แล้ว throw ผ่าน `readError` ก่อน reload · เรียก `logout()` ทั้ง 2 จุดใน `Header.tsx` (desktop dropdown + mobile) เพิ่ม `.catch(console.error)` กันค้าง UI
   5. ✅ DONE (ทำพร้อม #17) — `AuthService.backfillProfile` เติม `name`/`avatarUrl` ให้ user ที่มีอยู่แล้ว (ทั้ง identity-linked และ email-linked) เมื่อค่ายังว่างและ Google profile มีให้ — ไม่ทับค่าที่มีอยู่แล้ว
-**ไฟล์:** `web/app/journal/JournalContent.tsx` · `service/src/trades/*` (exit guard, 409) · `web/lib/auth-client.ts` (apiLogout/readError) · `service/src/auth/auth.service.ts` (backfill, ✅ done)
-**เป้า:** เก็บครบ 5 จุด (2 เหลือ 3 ข้อ: #2, #3, #4) · จุดสำคัญสุดคือข้อ 2 (server ต้องไม่เชื่อ client) ควรทำก่อนเปิด public signup (Phase 2)
+**ไฟล์:** `service/src/trades/trades.service.ts` (`addExit` guard, `create` 409) · `service/src/trades/dto/create-exit.dto.ts` (+`@IsPositive()`) · `service/src/trades/trades.service.spec.ts` + `create-exit.dto.spec.ts` (new tests) · `web/lib/auth-client.ts` (`readError` export, `logout()`) · `web/app/journal/JournalContent.tsx` (import shared `readError`) · `web/app/Header.tsx` (logout call sites) · `service/src/auth/auth.service.ts` (backfill, ✅ done)
+**เป้า:** เก็บครบ 5/5 จุด ✅ — จุดสำคัญสุดคือข้อ 2 (server ต้องไม่เชื่อ client) ปิดก่อนเปิด public signup (Phase 2) แล้ว · 99/99 service tests ผ่าน (รวม test ใหม่สำหรับ over-exit/exact-remaining/duplicate-id/DTO validation) · tsc --noEmit สะอาดทั้ง service/web
 
 ## 17. ✅ DONE — Journal UI — auth-aware header (avatar/login/logout) + ลบ PRIVATE badge
 
@@ -148,12 +148,17 @@ Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open N
 **ไฟล์:** `web/app/Header.tsx` (AuthWidget: avatar/dropdown/login, desktop+mobile) · `web/lib/auth-client.ts` (ใหม่ — fetchCurrentUser/logout/loginUrl ใช้ร่วมกับ JournalContent) · `web/app/journal/JournalContent.tsx` (ลบ badge + ปุ่ม logout เดิม + apiLogout) · `service/src/auth/auth.controller.ts` (returnTo cookie flow, avatarUrl ใน /me) · `service/src/auth/safe-return-path.ts` (ใหม่) · `service/src/auth/auth.service.ts` (backfillProfile)
 **เป้า:** เปิดหน้าไหนก็รู้สถานะ login ✓ · logout อยู่ใต้ avatar dropdown ตาม convention ปกติ ✓ · ไม่มีร่องรอย "local only" เหลือ ✓ · login จากหน้าไหนก็กลับมาหน้านั้น ✓ · tests: 29/29 service unit tests ผ่าน (รวม 3 test ใหม่สำหรับ backfill + 6 test ใหม่สำหรับ safe-return-path) · tsc --noEmit ผ่านทั้ง service/web
 
-## 18. Playbook theme refresh — visual identity ยังเป็น radar อยู่
+## 18. ✅ DONE — Playbook theme refresh — visual identity ยังเป็น radar อยู่
 
-**ปัญหา:** rebrand ชื่อเป็น StockPlaybook แล้ว (#15 ✅) แต่ visual ยังเป็น radar-era ทั้งหมด: logo ⬡, favicon/icon.svg, จุด pulse, dot grid background, social-preview.png (ไฟล์เสียด้วย — ไบต์เกินก่อน PNG signature) — แบรนด์กับหน้าตาไม่ตรงกัน
-**ทำ:** 2 เฟส — (1) รัน prompt ใน `docs/design/theme-refresh-prompt.md` กับ Claude Design (แนบ screenshot landing/catalyst/report/journal) → ได้ `docs/design/playbook-theme-handoff.md` (2) ส่ง handoff ให้ Claude CLI implement ทีละ section (มี prompt ต่อให้ CLI ในไฟล์เดียวกัน) · ห้าม rename component radar-era (MarketTicker ฯลฯ) ในรอบนี้ — แยก housekeeping ทีหลัง · **wordmark:** display copy คือ **"Stock Playbook"** สองคำ (มี space — เปลี่ยนจาก "StockPlaybook" ตัวติดกันเดิม 2026-07-06) ใน `web/app/Header.tsx` / `web/app/Landing.tsx` / `layout.tsx` title แล้ว — ให้ Claude Design ออกแบบโลโก้/OG image ตรงกับ wordmark สองคำนี้ (ส่วน domain `stockplaybook.app`, repo `stock-playbook`, User-Agent `stockplaybook/1.0` ยังคงเป็นตัวติดกันเหมือนเดิม — เป็น identifier ไม่ใช่ display copy)
-**ไฟล์:** `docs/design/theme-refresh-prompt.md` (prompt พร้อมใช้) · เป้าหมายแก้: `web/app/globals.css` (tokens), `web/app/icon.svg` + favicon, `web/app/Header.tsx`, `web/app/Landing.tsx`, `assets/social-preview.png` (gen ใหม่), layout OG metadata
-**เป้า:** identity "playbook" ครบทุกจุด (logo/motif/OG) · dark theme + สี verdict + ธีม 4 ธาตุคงเดิม · mobile 390px + EN/TH ไม่พัง
+**ปัญหา:** rebrand ชื่อเป็น StockPlaybook แล้ว (#15 ✅) แต่ visual ยังเป็น radar-era ทั้งหมด — แบรนด์กับหน้าตาไม่ตรงกัน
+**ทำ:** implement ทีละ phase จาก `design_handoff_stock_playbook/` (design handoff ที่ได้จาก Claude Design ตามแผนเดิม) ผ่าน superpowers spec→plan→subagent-driven-development, 4 phase:
+  1. **Header + Ticker** — sticky/glass header, retuned nav pills/avatar/login button, dynamic verdict/entry ticker colors (`docs/superpowers/specs/2026-07-09-header-ticker-restyle-design.md`)
+  2. **Landing page** — removed superseded radar-rings hero centerpiece (explicitly rejected in an earlier design pass) → ambient glow only, fixed "on one radar"→"in one playbook" copy bug, pip-dot pick counters (`docs/superpowers/specs/2026-07-09-landing-restyle-design.md`)
+  3. **Dashboard** — new shared `DashboardSwitcher` component (DCA↔Catalyst↔Turbo cross-route pills, previously missing entirely), stats/tier/grid value tuning across all 3 routes (`docs/superpowers/specs/2026-07-09-dashboard-restyle-design.md`)
+  4. **Journal login gate** — full rewrite: ambient bg, pulsing icon ring, gradient title, gradient/shine-sweep CTA, trust pips, feature-card accents, **and added full EN/TH i18n** (this page had zero Thai support before, unlike every other page in the app) (`docs/superpowers/specs/2026-07-09-journal-gate-restyle-design.md`)
+  Radar-era component names (`MarketTicker`, `RadarBadge`, etc.) kept as-is per constraint — not renamed. Logo/favicon (`icon.svg`) also kept unchanged — the final approved design handoff explicitly narrowed the original broader ask ("do not restyle it, this mark is unchanged from the original build").
+**ไฟล์:** `web/app/Header.tsx`, `MarketTicker.tsx`, `Landing.tsx`, `DashboardSwitcher.tsx` (new), `dca/`+`catalyst/`+`turbo/` page+Content files, `ThemeGroups.tsx`, `StockCard.tsx`, `journal/LoginGate.tsx` · specs/plans in `docs/superpowers/specs/` + `docs/superpowers/plans/` (4× each, dated 2026-07-09)
+**เป้า:** identity "playbook" ครบทุกจุด ✅ · dark theme + สี verdict + ธีม 4 ธาตุคงเดิม ✅ · ทุก phase ผ่าน task-level review + final whole-branch review (opus) — bugs ที่เจอระหว่างทางแก้หมดแล้ว (nav-pill hover ที่ทำ gradient text หาย, pip-dot overflow ที่ real pick count 10/20/21 เกิน mockup demo data 6/4/3, tools-row hover ที่ขาด `!important`) · **ยังไม่ทำ** (logged เป็น backlog แยก): #23 DcaCard/TurboCard chip/gauge/bar pixel-tuning ละเอียด
 
 ## 19. Improve SEO — search Google แล้วหาเว็บไม่เจอ
 
@@ -190,6 +195,54 @@ Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open N
   4. **อนาคต (ไม่ทำรอบนี้):** ปุ่ม "restore" / auto-purge ข้อมูลที่ deleted เกิน 90 วัน / GDPR delete-account จริง (hard delete ทั้ง user — คนละ flow)
 **ไฟล์:** `service/prisma/schema.prisma` (+deleted_at, migration `20260706104508_soft_delete_trades`) · `service/src/trades/trade-filters.ts` (ใหม่ — `activeTradeWhere()` centralized filter) · `service/src/trades/trades.service.ts` (`findOne` → `findFirst` + filter, `remove` → `update({deletedAt})` แทน `delete`) · `service/src/validation/validation.service.ts` (open-trades query ใช้ `activeTradeWhere` เดียวกัน) · tests ใน `trades.service.spec.ts` + `validation.service.spec.ts` (ลบแล้ว list ไม่เห็น/get 404/ลบซ้ำ→404/ไม่ hard-delete/ไม่ถูกส่งเข้า AI validate) · `docs/architecture/journal-api.md` schema section
 **เป้า:** user กดลบ → หายจาก UI ทุกจุดเหมือนเดิม แต่ row ยังอยู่ใน DB พร้อม `deleted_at` · ไม่มี endpoint ไหน leak trade ที่ลบแล้ว ✅ · `trade_exits` ไม่มี endpoint ลบแยก จึงไม่ต้องเพิ่ม `deleted_at` ที่นั่นรอบนี้ (ตามเงื่อนไข "ถ้ามี endpoint ลบ exit แยก") · web ไม่ต้องแก้ (behavior เดิม) · 60/60 service tests ผ่าน, tsc/eslint สะอาด
+
+## 23. ✅ DONE — Dashboard card pixel-tuning — DcaCard/TurboCard gauge/chip/bar vs. mockup
+
+**ปัญหา:** ระหว่างทำ #18 (Phase 3 — dashboard switcher/card restyle), พบว่า `DcaCard.tsx`
+และ `TurboCard.tsx` ใช้ `radar-card`/`radar-ring`/`radar-mk` ถูกต้องอยู่แล้ว (ไม่ต้องแก้
+โครงสร้าง) แต่รายละเอียดปลีกย่อยของ chip grid (`.chip2`), valuation gauge (`.gauge`/
+`.gbar`/`.gz1-3`), 3-up chip row (`.tchips`), price→moon bar (`.moon`/`.mbar`/`.mtick`)
+ยังเป็น inline-style ที่ประมาณค่าจาก mockup ไม่ตรง pixel — `globals.css` ยังไม่มี CSS
+class เหล่านี้ pre-stage ไว้เลย (มีแค่ `.radar-card`/`.radar-ring`/`.radar-mk`)
+**ทำ:** เทียบค่า inline-style ปัจจุบันกับ `Stock Playbook Dashboard.dc.html` ทีละ chip/
+gauge/bar แล้วเพิ่ม CSS class ใหม่ใน `globals.css` (`.chips`/`.chip2`/`.gauge`/`.gbar`/
+`.gz1-3`/`.tchips`/`.moon`/`.mbar`/`.mtick`) หรือปรับ inline values ให้ตรง — เลือกวิธีไหน
+ก็ได้ที่คงรูปแบบเดิมของไฟล์ (DcaCard/TurboCard ผสม global class + inline อยู่แล้ว)
+**เลือกวิธี CSS classes** (ไม่ใช่ inline values) — เพิ่ม section 6 ใหม่ใน `globals.css`
+(`.chips`/`.chip2`, `.gauge`/`.grow`/`.glab`/`.gval`/`.gbar`/`.gz1-3`/`.gends`/`.zline`,
+`.tchips`/`.tchip`, `.moon`/`.mrow`/`.mlab`/`.mval`/`.mbar`/`.mfill`/`.mtick`/`.mend`/
+`.mmoon`) แล้วสลับ `FundChips`/`ValuationGauge` (DcaCard) และ stat-chip row/`TurboBar`
+(TurboCard) มาใช้ class เหล่านี้ ค่าที่แก้จริง: gauge/moon `margin-top` 14→12px ให้ตรง
+`.gauge`/`.moon`, สี label/value หลายจุดที่เพี้ยนจาก theme token (`--mut`/`--c1`) เช่น
+FundChips value `#7dd3fc`→`#38bdf8`, tchip label `#4d2020`→`#7f4040` + 9px→8px, moon-bar
+label `#7f3030`→`#7f4040`, `.mval` 10px→11px, `.mfill` gradient alpha `30/80`→`40/90`,
+`.mtick` `filter:drop-shadow(4px)`→`box-shadow:0 0 5px` ตาม spec, `.mend` 16px/4px→14px/5px
+· `QualityBars` (stock/non-fund mode) ไม่แตะ — mockup demo data มีแต่ ETF ไม่มี pattern
+ให้เทียบ
+**ไฟล์:** `web/app/dca/DcaCard.tsx`, `web/app/turbo/TurboCard.tsx`, `web/app/globals.css`
+**เป้า:** gauge/chip/bar สีและขนาดตรงกับ `design_handoff_stock_playbook/Stock Playbook Dashboard.dc.html` แบบ pixel-level — ไม่กระทบ radar-card/radar-ring ที่ถูกต้องอยู่แล้ว ✅ ·
+tsc --noEmit + eslint สะอาดทั้ง 2 ไฟล์ที่แก้ · เช็ค render จริงผ่าน curl (`/dca`, `/turbo`
+dev server) เห็น class ครบ ไม่มี error ใน server log
+
+## 24. Turbo backtest coverage — `speculative/` ไม่ถูกวัดเลย + metric ของตัวเอง
+
+**ปัญหา:** backtest ทั้งระบบ (`web/lib/backtest.ts`, `web/lib/north-star.ts`, `scripts/fetch-backtest-prices.mjs`) อ่านแค่ `web/data/reports/` — turbo reports ใน `web/data/speculative/` (36 ไฟล์ ณ 2026-07-10) ไม่ถูก backtest เลยสักตัว = `/turbo-list` ไม่มีทางรู้ว่าตัวเองแม่นไหม · และ North Star "+30%/14d" ไม่ตรง thesis moonshot (lottery ticket ถือรอเด้ง 300%+ ไม่ใช่ event 2 สัปดาห์) เอา metric เดิมมาใช้ตรง ๆ จะตัดสิน turbo ผิด
+**ทำ:**
+  1. ขยาย `scripts/fetch-backtest-prices.mjs` ให้ scan `web/data/speculative/` ด้วย → เก็บ path ลง `path-cache.json` (key เดิม `TICKER_YYYYMMDD` ใช้ร่วมได้ แต่ระวัง ticker ชนกันข้าม dir — อาจ prefix key หรือเก็บ dir ใน entry)
+  2. เพิ่ม turbo North Star metric แยก — เสนอเริ่มที่ **"+50% ภายใน 30 วัน"** + median MAE (เคาะตัวเลขตอน implement ได้ แต่ต้อง fix ก่อนดูข้อมูลกัน hindsight bias) · เก็บ time-to-hit distribution ด้วยตามแนว North Star v2.1
+  3. แสดงผลแยก section บนหน้า backtest (`web/app/backtest/BacktestContent.tsx`) — "🎰 Turbo" ไม่ปนกับ catalyst core กัน framing ผิด
+**ไฟล์:** `scripts/fetch-backtest-prices.mjs` · `web/lib/north-star.ts` (หรือแยก `turbo-north-star.ts`) · `web/lib/backtest.ts` · `web/app/backtest/BacktestContent.tsx` · `web/data/path-cache.json`
+**เป้า:** turbo pick ทุกตัวถูกวัดด้วย metric ที่ตรง thesis ตัวเอง · หน้า backtest ตอบได้ว่า hit-rate "+50%/30d" ของ turbo จริงเท่าไหร่ · เป็น input ให้ #25 · **prerequisite:** ต้องรัน `backtest:fetch` บนเครื่องจริงก่อน (Ops item ท้ายไฟล์ — path-cache ตอนนี้ว่างเปล่า)
+
+## 25. Skill feedback loop — เอาผล backtest จริงมาเป็น prior ให้ catalyst-list / turbo-list / analyze
+
+**ปัญหา:** skills (`stock-report`, `turbo-report`, commands `/catalyst-list` `/turbo-list`) screen ด้วยความเชื่อล้วน ๆ — ไม่เคยเห็นผลจริงของ pick ที่ผ่านมา ทั้งที่ระบบมี north-star (hit-rate/MAE ต่อ catalystType), near-misses (counterfactual), scenario ที่เขียนไว้เทียบผลจริงได้ · slogan "แม่นขึ้นเรื่อย ๆ" ไม่มีทางเกิดถ้า loop ไม่ปิด
+**ทำ:**
+  1. **Lessons file:** script ใหม่ (เช่น `scripts/build-skill-feedback.mjs` ต่อท้าย `backtest:fetch` หรือรวมเป็น step เดียว) สรุปจาก north-star + backtest + near-misses → เขียน `web/data/skill-feedback.json` แบบกะทัดรัด: hit-rate/median MAE ต่อ catalystType · scenario calibration (base/bull ที่เขียน vs realized — optimism bias กี่ %) · near-miss counterfactual (ตัวที่ตัดทิ้ง outperform top-5 ไหม) · n ต่อ bucket เสมอ
+  2. **แก้ SKILL.md:** `skills/stock-report/SKILL.md`, `skills/turbo-report/SKILL.md`, commands `.claude/commands/catalyst-list.md`, `.claude/commands/turbo-list.md` (+ `dashboard-compare` ถ้าเกี่ยว) เพิ่ม step แรกก่อน screen: อ่าน `skill-feedback.json` → ใช้เป็น **advisory prior**: catalystType ที่ hit-rate ต่ำต้องการ upside/conviction สูงขึ้นถึงติด top 5 · `spotSizing`/stop ผูกกับ median MAE จริง · `preRunupPct` cross-check กับ path จริงของ pick เก่า type เดียวกัน
+  3. **Guardrail สำคัญ:** n น้อยมาก (~15 unique picks ณ 2026-07-10) — ทุกตัวเลขใน feedback file ต้องพก `n` และ SKILL.md ต้องสั่งชัด: **n < 5 ต่อ type = ห้ามใช้เป็นเหตุผลตัด/เลือก pick** ใช้ได้แค่ประกอบ · ห้าม auto-weight/hard rule จนกว่า sample พอ (สอดคล้อง ⚠️ ของ "Earned category ranking" ด้านล่าง — item นั้นคือเฟสถัดไปของอันนี้)
+**ไฟล์:** `scripts/build-skill-feedback.mjs` (ใหม่) · `web/data/skill-feedback.json` (ใหม่) · `skills/stock-report/SKILL.md` · `skills/turbo-report/SKILL.md` · `.claude/commands/catalyst-list.md` · `.claude/commands/turbo-list.md` · `package.json` (script entry)
+**เป้า:** ทุกครั้งที่รัน `/catalyst-list` หรือ `/turbo-list` Claude เห็นผลจริงของตัวเองก่อน screen → คำแนะนำ sizing/stop อ้างตัวเลขวัดได้ ไม่ใช่ vibes · **dependency:** ต้องมี #24 + `backtest:fetch` รันสม่ำเสมอ (Ops) ก่อน ไม่งั้น feedback file ว่าง
 
 ---
 

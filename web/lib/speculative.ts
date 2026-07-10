@@ -44,28 +44,34 @@ export function getSpeculativeReport(ticker: string): StockReport | null {
   return withComputedScore(JSON.parse(content) as StockReport);
 }
 
-/** Rank turbo stocks by most potential upside — bull scenario % primary, moon % tiebreaker */
+/** Rank turbo stocks by most possible upside — base-case scenario % primary, moon % tiebreaker */
 export function rankTurboReports(
   reports: StockReport[]
-): (StockReport & { rank: number; moonPct: number; bullPct: number })[] {
+): (StockReport & { rank: number; moonPct: number; bullPct: number; basePct: number })[] {
   return reports
     .map((r) => {
       const moon = r.scenarios?.find((s) => s.label === "Moon");
       const bull = r.scenarios?.find((s) => s.label === "Bull");
+      const base = r.scenarios?.find((s) => s.label === "Base");
 
       const moonPct = moon
         ? moon.pct
         : ((r.entryStrategy.tp3.price - r.price) / r.price) * 100;
 
-      // Bull % = primary sort key — most realistic "potential up"
-      // Fallback: TP2 upside if no bull scenario in JSON
+      // Bull % retained for card display / secondary reference
       const bullPct = bull
         ? bull.pct
         : ((r.entryStrategy.tp2.price - r.price) / r.price) * 100;
 
-      return { ...r, moonPct, bullPct };
+      // Base % = primary sort key — most realistic / achievable "possible up"
+      // Fallback: TP1 upside if no Base scenario in JSON
+      const basePct = base
+        ? base.pct
+        : ((r.entryStrategy.tp1.price - r.price) / r.price) * 100;
+
+      return { ...r, moonPct, bullPct, basePct };
     })
-    .sort((a, b) => b.bullPct - a.bullPct || b.moonPct - a.moonPct)
+    .sort((a, b) => b.basePct - a.basePct || b.moonPct - a.moonPct)
     .map((r, i) => ({ ...r, rank: i + 1 }));
 }
 

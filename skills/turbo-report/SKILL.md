@@ -20,7 +20,7 @@ ticker, **screen for the 5 best moonshot plays** and generate a report for each.
 
 1. **Screen** small/mid-cap (≤ ~$5B) speculative names with a credible ≥ 200–300% bull case and a
    near-term binary catalyst (FDA, contract, first commercial milestone, etc.). Research live for all.
-2. **Score / rank** by potential upside — bull-case % primary, moon % tiebreaker (same axis the
+2. **Score / rank** by most possible upside — base-case % primary, moon % tiebreaker (same axis the
    `/turbo` page sorts on); pick the top 5.
 3. **Generate** a full turbo report for each (per the steps below) → save all to
    `web/data/speculative/<TICKER>_<YYYYMMDD>.json`.
@@ -36,7 +36,7 @@ For a single named ticker (`/analyze-turbo TICKER`) skip the screen and just do 
 |---|---|---|
 | Universe | Any stock | Small/mid cap ≤ $5B market cap preferred |
 | Moon case min | No minimum | **≥ 200% to qualify as a Turbo pick** |
-| Rank priority | Catalyst proximity | Moon % upside (highest first on /sing page) |
+| Rank priority | Catalyst proximity | Base-case % (most possible upside), moon % tiebreaker |
 | Save path | `web/data/reports/` | **`web/data/speculative/`** |
 | scoreLabel | Core / Spec / ค่าขนม | **ค่าขนม** or **Moonshot** only |
 | Position size | 10–30% | **2–5% strict max** |

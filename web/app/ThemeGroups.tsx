@@ -130,7 +130,7 @@ export function ThemeGroups({
             </div>
 
             {/* Cards */}
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 16 }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: 16 }}>
               {cards.map((r) => {
                 const delay = cardIdx++ * 0.07;
                 return (

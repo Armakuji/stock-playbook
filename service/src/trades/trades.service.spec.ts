@@ -1,4 +1,9 @@
-import { NotFoundException } from "@nestjs/common";
+import {
+  BadRequestException,
+  ConflictException,
+  NotFoundException,
+} from "@nestjs/common";
+import { Prisma } from "@prisma/client";
 import { PinoLogger } from "nestjs-pino";
 import { TradesService } from "./trades.service";
 import { PrismaService } from "../prisma/prisma.service";
@@ -56,9 +61,8 @@ describe("TradesService", () => {
     const trade = { id: "t1", userId: OWNER, shares: 2, entryPrice: 100 };
     (prisma.trade.findFirst as jest.Mock).mockResolvedValue(trade);
     (prisma.tradeExit.create as jest.Mock).mockResolvedValue({});
-    (prisma.tradeExit.findMany as jest.Mock).mockResolvedValue([
-      { shares: 2, price: 120 },
-    ]);
+    // no prior exits — this single 2-share exit fully closes the 2-share trade
+    (prisma.tradeExit.findMany as jest.Mock).mockResolvedValue([]);
     (prisma.trade.update as jest.Mock).mockImplementation(
       ({ data }: { data: Record<string, unknown> }) => ({
         ...trade,
@@ -86,7 +90,6 @@ describe("TradesService", () => {
     (prisma.tradeExit.findMany as jest.Mock).mockResolvedValue([
       { shares: 2, price: 110 },
       { shares: 1, price: 115 },
-      { shares: 2, price: 120 },
     ]);
     (prisma.trade.update as jest.Mock).mockImplementation(
       ({ data }: { data: Record<string, unknown> }) => ({
@@ -112,9 +115,8 @@ describe("TradesService", () => {
     const trade = { id: "t1", userId: OWNER, shares: 5, entryPrice: 100 };
     (prisma.trade.findFirst as jest.Mock).mockResolvedValue(trade);
     (prisma.tradeExit.create as jest.Mock).mockResolvedValue({});
-    (prisma.tradeExit.findMany as jest.Mock).mockResolvedValue([
-      { shares: 2, price: 120 },
-    ]);
+    // no prior exits — this single 2-share exit leaves 3 shares open on a 5-share trade
+    (prisma.tradeExit.findMany as jest.Mock).mockResolvedValue([]);
     (prisma.trade.update as jest.Mock).mockImplementation(
       ({ data }: { data: Record<string, unknown> }) => ({
         ...trade,
@@ -130,6 +132,56 @@ describe("TradesService", () => {
     });
 
     expect(updated.status).toBeUndefined(); // no status/realizedPnL update applied
+  });
+
+  it("addExit rejects an over-exit beyond remaining shares with 400, no tradeExit row created", async () => {
+    const prisma = makePrismaMock();
+    const trade = { id: "t1", userId: OWNER, shares: 5, entryPrice: 100 };
+    (prisma.trade.findFirst as jest.Mock).mockResolvedValue(trade);
+    // 4 shares already exited — only 1 remains
+    (prisma.tradeExit.findMany as jest.Mock).mockResolvedValue([
+      { shares: 4, price: 110 },
+    ]);
+
+    const service = new TradesService(prisma, makeLoggerMock());
+
+    await expect(
+      service.addExit("t1", OWNER, {
+        date: "2026-07-01",
+        price: 120,
+        shares: 2,
+      }),
+    ).rejects.toThrow(BadRequestException);
+    expect(prisma.tradeExit.create).not.toHaveBeenCalled();
+    expect(prisma.trade.update).not.toHaveBeenCalled();
+  });
+
+  it("addExit allows exiting exactly the remaining shares (closes trade, realizedPnL computed)", async () => {
+    const prisma = makePrismaMock();
+    const trade = { id: "t1", userId: OWNER, shares: 5, entryPrice: 100 };
+    (prisma.trade.findFirst as jest.Mock).mockResolvedValue(trade);
+    (prisma.tradeExit.create as jest.Mock).mockResolvedValue({});
+    // 3 shares already exited — exiting the remaining 2 should be allowed exactly
+    (prisma.tradeExit.findMany as jest.Mock).mockResolvedValue([
+      { shares: 3, price: 110 },
+    ]);
+    (prisma.trade.update as jest.Mock).mockImplementation(
+      ({ data }: { data: Record<string, unknown> }) => ({
+        ...trade,
+        ...data,
+      }),
+    );
+
+    const service = new TradesService(prisma, makeLoggerMock());
+    const updated = await service.addExit("t1", OWNER, {
+      date: "2026-07-01",
+      price: 120,
+      shares: 2,
+    });
+
+    expect(updated.status).toBe("closed");
+    // realizedPnL = 3*(110-100) + 2*(120-100) = 30 + 40 = 70
+    expect(updated.realizedPnL).toBe(70);
   });
 
   it("update rejects a trade owned by a different user", async () => {
@@ -172,6 +224,55 @@ describe("TradesService", () => {
       { userId: OWNER, tradeId: "t1", ticker: "NVDA" },
       "trade created",
     );
+  });
+
+  it("create throws ConflictException when the chosen id collides (Prisma P2002)", async () => {
+    const prisma = makePrismaMock();
+    (prisma.trade.create as jest.Mock).mockRejectedValue(
+      new Prisma.PrismaClientKnownRequestError("Unique constraint failed", {
+        code: "P2002",
+        clientVersion: "6.0.0",
+      }),
+    );
+    const service = new TradesService(prisma, makeLoggerMock());
+
+    await expect(
+      service.create(OWNER, {
+        id: "dup-id",
+        ticker: "nvda",
+        catalystType: "earnings_beat",
+        entryPrice: 131.38,
+        shares: 10,
+        entryDate: "2026-07-01",
+        plannedTP: [150, 165, 185],
+        plannedSL: 118,
+      }),
+    ).rejects.toThrow(ConflictException);
+  });
+
+  it("create rethrows non-P2002 Prisma errors unchanged", async () => {
+    const prisma = makePrismaMock();
+    const otherError = new Prisma.PrismaClientKnownRequestError(
+      "Some other error",
+      {
+        code: "P2025",
+        clientVersion: "6.0.0",
+      },
+    );
+    (prisma.trade.create as jest.Mock).mockRejectedValue(otherError);
+    const service = new TradesService(prisma, makeLoggerMock());
+
+    await expect(
+      service.create(OWNER, {
+        ticker: "nvda",
+        catalystType: "earnings_beat",
+        entryPrice: 131.38,
+        shares: 10,
+        entryDate: "2026-07-01",
+        plannedTP: [150, 165, 185],
+        plannedSL: 118,
+      }),
+    ).rejects.toBe(otherError);
   });
 
   it("logs 'trade updated' with userId, tradeId, and ticker", async () => {

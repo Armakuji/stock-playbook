@@ -92,8 +92,8 @@ export function TurboContent({ ranked, rankChanges = [] }: { ranked: Ranked; ran
           }}>
             {displayed.length > 0
               ? th
-                ? `Top ${displayed.length}${ranked.length > TURBO_DISPLAY_LIMIT ? ` จาก ${ranked.length}` : ""} · เรียงตาม 🔥 upside มากสุด (bull case) · small/mid cap เด้ง 300%++`
-                : `Top ${displayed.length}${ranked.length > TURBO_DISPLAY_LIMIT ? ` of ${ranked.length}` : ""} · ranked by 🔥 most potential upside (bull case) · small/mid cap 300%++ plays`
+                ? `Top ${displayed.length}${ranked.length > TURBO_DISPLAY_LIMIT ? ` จาก ${ranked.length}` : ""} · เรียงตาม 🎯 upside ที่เป็นไปได้มากสุด (base case) · small/mid cap เด้ง 300%++`
+                : `Top ${displayed.length}${ranked.length > TURBO_DISPLAY_LIMIT ? ` of ${ranked.length}` : ""} · ranked by 🎯 most possible upside (base case) · small/mid cap 300%++ plays`
               : th
                 ? "ยังไม่มี turbo picks — รัน /analyze-turbo TICKER เพื่อสร้าง"
                 : "No turbo picks yet — run /analyze-turbo TICKER to generate one"}
@@ -103,7 +103,7 @@ export function TurboContent({ ranked, rankChanges = [] }: { ranked: Ranked; ran
           {displayed.length > 0 && (
             <div style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(110px, 1fr))",
+              gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))",
               gap: 8, marginBottom: 20,
             }}>
               {statsItems.map(({ label, value, color }) => (
@@ -120,7 +120,7 @@ export function TurboContent({ ranked, rankChanges = [] }: { ranked: Ranked; ran
                     {label}
                   </div>
                   <div style={{
-                    fontSize: 17, fontWeight: 800, color,
+                    fontSize: 18, fontWeight: 800, color,
                     fontFamily: "var(--font-mono, monospace)", letterSpacing: "-0.5px",
                   }}>
                     {value}
@@ -159,7 +159,7 @@ export function TurboContent({ ranked, rankChanges = [] }: { ranked: Ranked; ran
                 border: "1px solid #2d1010", fontWeight: 800,
                 fontFamily: "var(--font-mono, monospace)",
               }}>
-                {th ? "เรียงตาม: 🔥 upside มากสุด (bull %)" : "sorted: 🔥 most potential up (bull %)"}
+                {th ? "เรียงตาม: 🎯 upside ที่เป็นไปได้" : "sorted: 🎯 most possible upside"}
               </span>
             </div>
           )}
@@ -187,7 +187,7 @@ export function TurboContent({ ranked, rankChanges = [] }: { ranked: Ranked; ran
         ) : (
           <div style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
             gap: 16,
           }}>
             {displayed.map((r) => (
