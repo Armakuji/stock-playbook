@@ -196,7 +196,7 @@ Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open N
 **ไฟล์:** `service/prisma/schema.prisma` (+deleted_at, migration `20260706104508_soft_delete_trades`) · `service/src/trades/trade-filters.ts` (ใหม่ — `activeTradeWhere()` centralized filter) · `service/src/trades/trades.service.ts` (`findOne` → `findFirst` + filter, `remove` → `update({deletedAt})` แทน `delete`) · `service/src/validation/validation.service.ts` (open-trades query ใช้ `activeTradeWhere` เดียวกัน) · tests ใน `trades.service.spec.ts` + `validation.service.spec.ts` (ลบแล้ว list ไม่เห็น/get 404/ลบซ้ำ→404/ไม่ hard-delete/ไม่ถูกส่งเข้า AI validate) · `docs/architecture/journal-api.md` schema section
 **เป้า:** user กดลบ → หายจาก UI ทุกจุดเหมือนเดิม แต่ row ยังอยู่ใน DB พร้อม `deleted_at` · ไม่มี endpoint ไหน leak trade ที่ลบแล้ว ✅ · `trade_exits` ไม่มี endpoint ลบแยก จึงไม่ต้องเพิ่ม `deleted_at` ที่นั่นรอบนี้ (ตามเงื่อนไข "ถ้ามี endpoint ลบ exit แยก") · web ไม่ต้องแก้ (behavior เดิม) · 60/60 service tests ผ่าน, tsc/eslint สะอาด
 
-## 23. Dashboard card pixel-tuning — DcaCard/TurboCard gauge/chip/bar vs. mockup
+## 23. ✅ DONE — Dashboard card pixel-tuning — DcaCard/TurboCard gauge/chip/bar vs. mockup
 
 **ปัญหา:** ระหว่างทำ #18 (Phase 3 — dashboard switcher/card restyle), พบว่า `DcaCard.tsx`
 และ `TurboCard.tsx` ใช้ `radar-card`/`radar-ring`/`radar-mk` ถูกต้องอยู่แล้ว (ไม่ต้องแก้
@@ -208,8 +208,41 @@ class เหล่านี้ pre-stage ไว้เลย (มีแค่ `.r
 gauge/bar แล้วเพิ่ม CSS class ใหม่ใน `globals.css` (`.chips`/`.chip2`/`.gauge`/`.gbar`/
 `.gz1-3`/`.tchips`/`.moon`/`.mbar`/`.mtick`) หรือปรับ inline values ให้ตรง — เลือกวิธีไหน
 ก็ได้ที่คงรูปแบบเดิมของไฟล์ (DcaCard/TurboCard ผสม global class + inline อยู่แล้ว)
+**เลือกวิธี CSS classes** (ไม่ใช่ inline values) — เพิ่ม section 6 ใหม่ใน `globals.css`
+(`.chips`/`.chip2`, `.gauge`/`.grow`/`.glab`/`.gval`/`.gbar`/`.gz1-3`/`.gends`/`.zline`,
+`.tchips`/`.tchip`, `.moon`/`.mrow`/`.mlab`/`.mval`/`.mbar`/`.mfill`/`.mtick`/`.mend`/
+`.mmoon`) แล้วสลับ `FundChips`/`ValuationGauge` (DcaCard) และ stat-chip row/`TurboBar`
+(TurboCard) มาใช้ class เหล่านี้ ค่าที่แก้จริง: gauge/moon `margin-top` 14→12px ให้ตรง
+`.gauge`/`.moon`, สี label/value หลายจุดที่เพี้ยนจาก theme token (`--mut`/`--c1`) เช่น
+FundChips value `#7dd3fc`→`#38bdf8`, tchip label `#4d2020`→`#7f4040` + 9px→8px, moon-bar
+label `#7f3030`→`#7f4040`, `.mval` 10px→11px, `.mfill` gradient alpha `30/80`→`40/90`,
+`.mtick` `filter:drop-shadow(4px)`→`box-shadow:0 0 5px` ตาม spec, `.mend` 16px/4px→14px/5px
+· `QualityBars` (stock/non-fund mode) ไม่แตะ — mockup demo data มีแต่ ETF ไม่มี pattern
+ให้เทียบ
 **ไฟล์:** `web/app/dca/DcaCard.tsx`, `web/app/turbo/TurboCard.tsx`, `web/app/globals.css`
-**เป้า:** gauge/chip/bar สีและขนาดตรงกับ `design_handoff_stock_playbook/Stock Playbook Dashboard.dc.html` แบบ pixel-level — ไม่กระทบ radar-card/radar-ring ที่ถูกต้องอยู่แล้ว
+**เป้า:** gauge/chip/bar สีและขนาดตรงกับ `design_handoff_stock_playbook/Stock Playbook Dashboard.dc.html` แบบ pixel-level — ไม่กระทบ radar-card/radar-ring ที่ถูกต้องอยู่แล้ว ✅ ·
+tsc --noEmit + eslint สะอาดทั้ง 2 ไฟล์ที่แก้ · เช็ค render จริงผ่าน curl (`/dca`, `/turbo`
+dev server) เห็น class ครบ ไม่มี error ใน server log
+
+## 24. Turbo backtest coverage — `speculative/` ไม่ถูกวัดเลย + metric ของตัวเอง
+
+**ปัญหา:** backtest ทั้งระบบ (`web/lib/backtest.ts`, `web/lib/north-star.ts`, `scripts/fetch-backtest-prices.mjs`) อ่านแค่ `web/data/reports/` — turbo reports ใน `web/data/speculative/` (36 ไฟล์ ณ 2026-07-10) ไม่ถูก backtest เลยสักตัว = `/turbo-list` ไม่มีทางรู้ว่าตัวเองแม่นไหม · และ North Star "+30%/14d" ไม่ตรง thesis moonshot (lottery ticket ถือรอเด้ง 300%+ ไม่ใช่ event 2 สัปดาห์) เอา metric เดิมมาใช้ตรง ๆ จะตัดสิน turbo ผิด
+**ทำ:**
+  1. ขยาย `scripts/fetch-backtest-prices.mjs` ให้ scan `web/data/speculative/` ด้วย → เก็บ path ลง `path-cache.json` (key เดิม `TICKER_YYYYMMDD` ใช้ร่วมได้ แต่ระวัง ticker ชนกันข้าม dir — อาจ prefix key หรือเก็บ dir ใน entry)
+  2. เพิ่ม turbo North Star metric แยก — เสนอเริ่มที่ **"+50% ภายใน 30 วัน"** + median MAE (เคาะตัวเลขตอน implement ได้ แต่ต้อง fix ก่อนดูข้อมูลกัน hindsight bias) · เก็บ time-to-hit distribution ด้วยตามแนว North Star v2.1
+  3. แสดงผลแยก section บนหน้า backtest (`web/app/backtest/BacktestContent.tsx`) — "🎰 Turbo" ไม่ปนกับ catalyst core กัน framing ผิด
+**ไฟล์:** `scripts/fetch-backtest-prices.mjs` · `web/lib/north-star.ts` (หรือแยก `turbo-north-star.ts`) · `web/lib/backtest.ts` · `web/app/backtest/BacktestContent.tsx` · `web/data/path-cache.json`
+**เป้า:** turbo pick ทุกตัวถูกวัดด้วย metric ที่ตรง thesis ตัวเอง · หน้า backtest ตอบได้ว่า hit-rate "+50%/30d" ของ turbo จริงเท่าไหร่ · เป็น input ให้ #25 · **prerequisite:** ต้องรัน `backtest:fetch` บนเครื่องจริงก่อน (Ops item ท้ายไฟล์ — path-cache ตอนนี้ว่างเปล่า)
+
+## 25. Skill feedback loop — เอาผล backtest จริงมาเป็น prior ให้ catalyst-list / turbo-list / analyze
+
+**ปัญหา:** skills (`stock-report`, `turbo-report`, commands `/catalyst-list` `/turbo-list`) screen ด้วยความเชื่อล้วน ๆ — ไม่เคยเห็นผลจริงของ pick ที่ผ่านมา ทั้งที่ระบบมี north-star (hit-rate/MAE ต่อ catalystType), near-misses (counterfactual), scenario ที่เขียนไว้เทียบผลจริงได้ · slogan "แม่นขึ้นเรื่อย ๆ" ไม่มีทางเกิดถ้า loop ไม่ปิด
+**ทำ:**
+  1. **Lessons file:** script ใหม่ (เช่น `scripts/build-skill-feedback.mjs` ต่อท้าย `backtest:fetch` หรือรวมเป็น step เดียว) สรุปจาก north-star + backtest + near-misses → เขียน `web/data/skill-feedback.json` แบบกะทัดรัด: hit-rate/median MAE ต่อ catalystType · scenario calibration (base/bull ที่เขียน vs realized — optimism bias กี่ %) · near-miss counterfactual (ตัวที่ตัดทิ้ง outperform top-5 ไหม) · n ต่อ bucket เสมอ
+  2. **แก้ SKILL.md:** `skills/stock-report/SKILL.md`, `skills/turbo-report/SKILL.md`, commands `.claude/commands/catalyst-list.md`, `.claude/commands/turbo-list.md` (+ `dashboard-compare` ถ้าเกี่ยว) เพิ่ม step แรกก่อน screen: อ่าน `skill-feedback.json` → ใช้เป็น **advisory prior**: catalystType ที่ hit-rate ต่ำต้องการ upside/conviction สูงขึ้นถึงติด top 5 · `spotSizing`/stop ผูกกับ median MAE จริง · `preRunupPct` cross-check กับ path จริงของ pick เก่า type เดียวกัน
+  3. **Guardrail สำคัญ:** n น้อยมาก (~15 unique picks ณ 2026-07-10) — ทุกตัวเลขใน feedback file ต้องพก `n` และ SKILL.md ต้องสั่งชัด: **n < 5 ต่อ type = ห้ามใช้เป็นเหตุผลตัด/เลือก pick** ใช้ได้แค่ประกอบ · ห้าม auto-weight/hard rule จนกว่า sample พอ (สอดคล้อง ⚠️ ของ "Earned category ranking" ด้านล่าง — item นั้นคือเฟสถัดไปของอันนี้)
+**ไฟล์:** `scripts/build-skill-feedback.mjs` (ใหม่) · `web/data/skill-feedback.json` (ใหม่) · `skills/stock-report/SKILL.md` · `skills/turbo-report/SKILL.md` · `.claude/commands/catalyst-list.md` · `.claude/commands/turbo-list.md` · `package.json` (script entry)
+**เป้า:** ทุกครั้งที่รัน `/catalyst-list` หรือ `/turbo-list` Claude เห็นผลจริงของตัวเองก่อน screen → คำแนะนำ sizing/stop อ้างตัวเลขวัดได้ ไม่ใช่ vibes · **dependency:** ต้องมี #24 + `backtest:fetch` รันสม่ำเสมอ (Ops) ก่อน ไม่งั้น feedback file ว่าง
 
 ---
 
