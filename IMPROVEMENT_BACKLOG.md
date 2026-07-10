@@ -24,39 +24,55 @@
 แกนคิด: ถ้าจะเป็น 30% catalyst hunter จริง ระบบต้องจัดระเบียบรอบ *อีเวนต์* และวัดด้วย *hit-rate จริง* ไม่ใช่ความเชื่อเรื่อง sector
 **Dependency order:** 6 → 7 → 8 → 9 → (แล้วค่อยปลดล็อก deferred) · ข้อ 10 ทำขนานได้ตลอด
 
-## 6. Structured catalyst date → timing sort + event-clustering warning
+## 6. ✅ DONE — Structured catalyst date → timing sort + event-clustering warning
 *(รวม idea 1+3+7)*
 **ปัญหา:** ไม่มี structured catalyst date เลย — `Catalyst.dateBadge` เป็น string โชว์เฉย ๆ เทียบ/sort ด้วยเครื่องไม่ได้ เครื่องเดิมพัน timing 1–2 สัปดาห์ แต่ระบบไม่รู้ว่าอีเวนต์ห่างกี่วัน
 **ทำ:** เพิ่ม field `catalystDate` (ISO) ใน `Catalyst` → คำนวณ `daysToCatalyst` → ใช้เป็น **sort หลัก** ของ dashboard + **soft penalty** ตามระยะ (ห้าม hard filter ≤10 วัน เพราะ pre-run-up เริ่ม 1–2 สัปดาห์ก่อน = ส่วนหนึ่งของ edge) + เตือนเมื่อ ≥3 pick มีอีเวนต์ภายใน 3 วันเดียวกัน (วันพังพร้อมกัน)
 **ไฟล์:** `web/lib/types.ts` (Catalyst) · `web/lib/ranking.ts` · `web/app/page.tsx` · `web/app/CatalystCalendar.tsx` · `CLAUDE.md` (บังคับ /dashboard·/analyze ใส่ catalystDate) · `web/data/reports/*.json`
 **เป้า:** dashboard เรียงตามความใกล้อีเวนต์ + เตือนวันกระจุก · pick ที่ไม่มี catalystDate = ไม่ใช่ catalyst play (เตะ mega-cap นอกรอบงบออกเอง)
 
-## 7. Group dashboard ตาม catalystType (ไม่ใช่ ticker/sector)
+**✅ Audit ยืนยันแล้ว (2026-07-10):** ครบทุก sub-feature — `Catalyst.catalystDate` (ISO) ใน types.ts · `web/lib/catalyst-timing.ts` มี `daysToCatalyst`/`nextCatalyst`/`timingTier` (soft tier 0/1/2/3 ตาม spec ≤3d/≤10d/≤21d/far, ไม่ hard filter) · `web/lib/ranking.ts` `rankReports()` sort หลักด้วย `timingTier` แล้วค่อย secondary ด้วย conviction score จริง · `detectCatalystClusters()` เตือนเมื่อ ≥3 pick ภายใน 3 วัน render อยู่ใน `CatalystContent.tsx` (compact inline strip) · CLAUDE.md rule 8 บังคับ catalystDate อยู่แล้ว · ไม่เหลืออะไรค้าง
+
+## 7. ✅ DONE — Group dashboard ตาม catalystType (ไม่ใช่ ticker/sector)
 *(idea 2)*
 **ปัญหา:** `ThemeGroups.tsx` group ด้วย `TICKER_THEME` map มือ — แย่กว่า sector ด้วยซ้ำ + label มั่ว ("Small-cap AI" มี TSLA/PLTR ที่เป็น MEGA) ตัวตัดสิน +30% คือ "ประเภทอีเวนต์" ไม่ใช่ value chain
 **ทำ:** normalize `catalystType` เป็น primary type เดียว (journal ตอนนี้เก็บ free-text ต่อกัน เช่น `"satellite_launch + carrier_activation + contract_win"`) → group dashboard ตาม `catalystType` ที่แชร์ enum กับ journal
 **ไฟล์:** `web/app/ThemeGroups.tsx` · `web/lib/types.ts` · `web/lib/journal-types.ts` (CatalystType enum) · `web/data/reports/*.json`
 **เป้า:** dashboard ตอบได้ว่า earnings / FDA / contract กระจุกตรงไหน — ปูทางวัด hit-rate ต่อ type (#9)
 
-## 8. Backtest ให้ซื่อสัตย์: auto-archive post-catalyst + near-miss log
+**✅ Audit ยืนยันแล้ว (2026-07-10):** `ThemeGroups.tsx` group ด้วย `primaryCatalystType()` จริง (`web/lib/catalyst-timing.ts`) — `grep -rn "TICKER_THEME" web/` ว่างเปล่า ไม่เหลือ map มือเลย · group sort ตาม soonest catalyst ในกลุ่ม + avg conviction, มี concentration warning ในตัว (≥50%/70% ของ watchlist บน event type เดียว) ไม่เหลืออะไรค้าง
+
+## 8. ✅ DONE — Backtest ให้ซื่อสัตย์: auto-archive post-catalyst + near-miss log
 *(รวม idea 4+10)*
 **ปัญหา:** หลังอีเวนต์ผ่าน pick ยังโชว์ active → หลอกตัวเอง + backtest เพี้ยน · และ log แค่ตัวที่เลือก = survivorship bias ดูเก่งเกินจริง
 **ทำ:** (a) เพิ่ม `stage` (pre/post) — เมื่อ `catalystDate` ผ่าน auto-ย้ายเป็น "realized/monitoring" **ไม่ลบ record** (เก็บไว้ backtest) (b) near-miss log: ตัวที่เข้าเกณฑ์ screen แต่ไม่ติด top 5 + ผลจริง → counterfactual
 **ไฟล์:** `web/lib/backtest.ts` · `web/lib/reports.ts` · `prompts/daily_dashboard.md` (สั่งให้ log near-miss) · `web/data/` (near-miss store)
 **เป้า:** backtest นับเฉพาะ active ถูกต้อง + วัดได้ว่า ranking top-5 เพิ่ม alpha จริงไหมเทียบ near-miss
 
-## 9. North Star: "+30% ใน 14 วัน" hit-rate + median MAE แยกตาม catalystType
+**✅ ปิดครบทั้ง 2 ครึ่ง (2026-07-10):**
+  - **(b) near-miss log:** เสร็จผ่าน #25/#27 — `web/data/near-misses.json` (`lane: "core"|"turbo"`), counterfactual ต่อ lane ใน `skill-feedback.json` (`nearMissCounterfactual.core`/`.turbo`), `/catalyst-list`+`/turbo-list` สั่ง log ทุกรอบ
+  - **(a) auto-archive post-catalyst — ทำรอบนี้:** derive (ไม่ persist) `reportStage(report)` → `"pre"|"post"|"undated"` ใน `web/lib/catalyst-timing.ts` — `"post"` เมื่อ catalyst date ทั้งหมด (catalysts[] + estimateDates[]) ผ่านไปแล้ว, ไม่ลบ record ไฟล์ JSON เดิม · `CatalystContent.tsx` แยก `allActive`/`realized` แล้ว (มีอยู่แล้วก่อนหน้านี้จริง ๆ — เจอระหว่าง audit) รอบนี้เพิ่ม: (1) section ยุบ/ขยายได้จริง (`RealizedSection`, collapsed by default, ไม่ใช่โชว์ตลอด) (2) badge "days since event" ต่อ ticker (`daysSinceCatalyst()`/`lastCatalyst()` ใหม่ใน catalyst-timing.ts) (3) label ปรับเป็น `⏳ Realized` ตาม spec · `allActive`/clustering warning (`detectCatalystClusters`) คำนวณจาก active เท่านั้นอยู่แล้ว ไม่รวม post-stage
+  - **Verify:** ทดสอบด้วย fixture ชั่วคราว (`ZZTEST`, catalystDate ทั้งหมดในอดีต) ผ่าน dev server จริง → ขึ้นใน realized section (collapsed by default, count badge ถูกต้อง) ไม่ขึ้นใน active grid — ลบ fixture ออกหลังทดสอบ, `validate-reports.mjs` ยืนยัน 113 reports เท่าเดิม (ไม่เหลือ fixture ค้าง)
+**ไฟล์ (รอบนี้):** `web/lib/catalyst-timing.ts` (`lastCatalyst`/`daysSinceCatalyst` ใหม่) · `web/app/catalyst/CatalystContent.tsx` (`RealizedSection` component ใหม่, collapse/expand + days-since badge)
+
+## 9. ✅ DONE — North Star: "+30% ใน 14 วัน" hit-rate + median MAE แยกตาม catalystType
 *(idea 8 — keystone)*
 **ปัญหา:** "30% Hunter" เป็น slogan ที่ยังไม่ถูกวัด · checkpoint ปัจจุบันเป็น 30/60/90 วัน ไม่ใช่ 14 และเก็บราคาจุดเดียว → วัด drawdown ไม่ได้
 **ทำ:** เพิ่ม checkpoint **14 วัน** + เก็บ **price path** (ไม่ใช่จุดเดียว) เพื่อคำนวณ **median MAE** (max adverse excursion) ต่อ `catalystType` → แสดงบนหน้า backtest
 **ไฟล์:** `web/lib/backtest.ts` · `web/app/backtest/api/route.ts` · `scripts/fetch-backtest-prices.mjs` (ดึง path) · `web/app/backtest/BacktestContent.tsx`
 **เป้า:** รู้ว่า hit-rate "+30%/14d" จริงเท่าไหร่ และต้องทน drawdown แค่ไหนก่อนเป้ามา — แยกตามประเภทอีเวนต์ (เปลี่ยน slogan เป็นตัวเลข)
 
-## 10. Factor-correlation concentration (tag-based) แทน bucket-share
+**✅ Audit ยืนยันแล้ว (2026-07-10):** `web/lib/north-star.ts` ครบสเปค — `NS_WINDOW_DAYS=14`, `NS_TARGET_PCT=30`, price path จาก `path-cache.json`, `medianMAE`/`avgMaxGain`/`hitRate` แยกต่อ `byType[]` (catalystType) + overall, render บน `/backtest` ผ่าน `NorthStarSection` · **ต่อยอดไปไกลกว่าสเปคเดิมแล้วผ่าน #24/#25/#27:** turbo North Star แยก lane (+50%/30d), `medianTimeToHitDays`, regime context (`avgBenchmarkPct`/`regimeNote` เทียบ SPY), near-miss counterfactual ต่อ lane — ไม่เหลืออะไรค้างจากสเปคเดิม
+
+## 10. ⚠️ เปิดอยู่บางส่วน (audit พบว่าทำไปแล้วเกินคาด) — Factor-correlation concentration (tag-based) แทน bucket-share
 *(idea 6 — ทำขนานได้)*
 **ปัญหา:** concentration warning ปัจจุบันนับ % ใน bucket ที่ label มั่ว/overlap ความเสี่ยงจริงคือ "factor เดียวกัน" — NVDA+AVGO+MRVL ลงพร้อมกันบนข่าว semis ตัวเดียว
 **ทำ:** เพิ่ม factor tags มือ/กึ่งอัตโนมัติ (`ai_semi`, `long_duration_rate`, `single_customer`, `space_launch`...) → warn เมื่อ tag ซ้อนเกิน threshold (จับ NVDA+RKLB ที่ long-duration เหมือนกันแม้คนละ bucket)
 **ไฟล์:** `web/app/ThemeGroups.tsx` · `web/lib/types.ts` (factorTags) · `web/data/reports/*.json`
+
+**Audit (2026-07-10):** เกินคาดจากที่ prompt สมมติไว้ว่า "field staged, feature unbuilt" — จริง ๆ **build ไปเกือบครบแล้ว**: `web/lib/factors.ts` มี `deriveFactorTags()` (auto-derive จาก sector/companyDescription/catalystType + เก็บ `report.factorTags` ที่ตั้งเองไว้ด้วยถ้ามี — 5 ไฟล์ report ตั้ง `factorTags` เองแล้ว) + `factorConcentration()` (warn เมื่อ ≥3 ticker หรือ ≥40% ของ book ถือ factor เดียวกัน) · `web/app/FactorRiskPanel.tsx` render เป็น collapsible panel ต่อ factor พร้อม threshold สี (เหลือง ≥50%, แดง ≥70%) ต่อสายกับ `CatalystContent.tsx` แล้วจริง (`factorConcentration(allActive)`) · tag ที่มี: `ai_semi`, `ai_software`, `space_launch`, `quantum`, `ev_auto`, `long_duration_rate` — ตรงตามตัวอย่างในสเปค (ขาดแค่ `single_customer` ที่ระบุไว้เป็นตัวอย่าง)
+**เหลือ:** (1) `single_customer` tag ยังไม่มี logic derive (ตัวอย่างในสเปคเดิม แต่ยังไม่ implement — ต้องมี field บอก customer concentration ใน report ก่อนถึง derive ได้) (2) `factorTags` explicit ยังตั้งเองแบบ manual ไม่มี validate/enum บังคับใน `scripts/validate-reports.mjs` (3) ยังไม่มีเอกสารสั่งให้ skill (`stock-report`/`turbo-report`) ตั้ง `factorTags` ตอน generate report — ตอนนี้พึ่ง auto-derive ล้วน ซึ่งพอใช้ได้แต่ไม่ครอบคลุมเท่า manual tag ที่แม่นกว่า
+**สถานะ:** เปลี่ยนจาก "field staged, unbuilt" → **build ไปแล้ว ~80%** เหลือ polish เล็กน้อยตามข้างบน ไม่ใช่งานใหญ่
 **เป้า:** เตือนความเสี่ยง factor จริง ไม่ใช่แค่ป้าย bucket
 
 ---
@@ -161,7 +177,7 @@ Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open N
 **ไฟล์:** `web/app/Header.tsx`, `MarketTicker.tsx`, `Landing.tsx`, `DashboardSwitcher.tsx` (new), `dca/`+`catalyst/`+`turbo/` page+Content files, `ThemeGroups.tsx`, `StockCard.tsx`, `journal/LoginGate.tsx` · specs/plans in `docs/superpowers/specs/` + `docs/superpowers/plans/` (4× each, dated 2026-07-09)
 **เป้า:** identity "playbook" ครบทุกจุด ✅ · dark theme + สี verdict + ธีม 4 ธาตุคงเดิม ✅ · ทุก phase ผ่าน task-level review + final whole-branch review (opus) — bugs ที่เจอระหว่างทางแก้หมดแล้ว (nav-pill hover ที่ทำ gradient text หาย, pip-dot overflow ที่ real pick count 10/20/21 เกิน mockup demo data 6/4/3, tools-row hover ที่ขาด `!important`) · **ยังไม่ทำ** (logged เป็น backlog แยก): #23 DcaCard/TurboCard chip/gauge/bar pixel-tuning ละเอียด
 
-## 19. ✅ โค้ดเสร็จแล้ว (manual ยังเหลือ) — Improve SEO — search Google แล้วหาเว็บไม่เจอ
+## 19. ✅ DONE — Improve SEO — search Google แล้วหาเว็บไม่เจอ
 
 **ปัญหา:** stockplaybook.app ยังไม่ติด Google index เลย — ส่วนหนึ่งเพราะโดเมนใหม่มาก (เพิ่งซื้อ) แต่ฝั่งเว็บก็ยังไม่มีโครง SEO พื้นฐาน: ไม่มี sitemap/robots, metadata ต่อหน้าอาจไม่ครบ, ไม่มี structured data, ยังไม่ได้ submit Search Console
 **ทำ:** (1) **โค้ด** — App Router: เพิ่ม `web/app/sitemap.ts` (gen จากรายการ report/หน้า static ทั้งหมด) + `web/app/robots.ts` · เช็ค `generateMetadata` ทุกหน้า: title/description เฉพาะหน้า (โดยเฉพาะ `/report/[ticker]` — title แบบ "NVDA — StockPlaybook: entry, targets, catalyst"), canonical URL, OG/Twitter tags (รอ OG image จาก #18) · เพิ่ม JSON-LD structured data ที่เหมาะ (WebSite + Article ต่อ report) · ห้าม index หน้า auth-only (`/journal` → noindex) (2) **Manual (คนทำ)** — Google Search Console: verify domain (DNS TXT) → submit sitemap → ขอ index หน้าแรก · Bing Webmaster ด้วยก็ได้ฟรี (3) รอ — โดเมนใหม่ใช้เวลา index เป็นสัปดาห์ต่อให้ทำครบ อย่าตกใจ
@@ -176,12 +192,8 @@ Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open N
   - **Verify แล้ว:** `tsc --noEmit` + eslint สะอาด (คำเตือนที่เจอ 2 จุดเป็นของเดิมอยู่แล้วก่อนแก้ ยืนยันด้วย `git stash`) · dev server จริง: `/sitemap.xml` valid XML มี 54 URL (5 static + 49 ticker), `/robots.txt` ถูกต้อง (`disallow: /journal`, `/api/`), `/report/nvda` มี title/description/canonical เฉพาะตัว + JSON-LD 2 บล็อก (WebSite + AnalysisNewsArticle) parse ผ่านทั้งคู่, `/journal` มี `<meta name="robots" content="noindex, nofollow">`, `/report/nvda/simulator` มี `noindex, follow` · `npm run build` (production, SWC จริง) ผ่านสะอาด — sitemap.xml/robots.txt ขึ้นเป็น static (○) ตามคาด
 **ไฟล์ (รอบนี้):** `web/app/sitemap.ts`, `web/app/robots.ts` (เพิ่ม /api/), `web/app/layout.tsx` (ใช้ shared SITE_URL), `web/lib/site-meta.ts` (เพิ่ม `SITE_URL` + `truncateDescription`), `web/app/page.tsx`, `web/app/catalyst/page.tsx`, `web/app/turbo/page.tsx`, `web/app/dca/page.tsx`, `web/app/backtest/page.tsx`, `web/app/journal/page.tsx`, `web/app/report/[ticker]/page.tsx`, `web/app/report/[ticker]/simulator/page.tsx`
 
-**เหลือ — Manual (คนทำ, ทำได้หลัง merge `feature/improve` → `main` เท่านั้น เพราะ sitemap ต้อง live บน production ก่อน):**
-  1. Google Search Console (search.google.com/search-console) → Add Property → Domain → verify ผ่าน DNS TXT record (ที่ registrar ของโดเมน stockplaybook.app)
-  2. Submit sitemap: `https://stockplaybook.app/sitemap.xml`
-  3. Request indexing สำหรับหน้าแรก (`/`) และ `/catalyst` ผ่าน URL Inspection tool
-  4. (ทางเลือก, ฟรี) Bing Webmaster Tools (bing.com/webmasters) — ทำ 3 ข้อข้างบนซ้ำ
-  5. รอ — โดเมนใหม่ใช้เวลาเป็นสัปดาห์กว่าจะเริ่มติด index ต่อให้ทำครบทุกข้อ ไม่ต้องทำอะไรเพิ่มระหว่างรอ
+**✅ Manual เสร็จ (2026-07-10):** Search Console property verify ผ่านแล้ว (แบบ URL prefix — ไม่ได้ใช้ DNS TXT ซึ่งจำเป็นเฉพาะ property แบบ Domain · อัปเกรดเป็น Domain property ทีหลังได้ถ้าต้องการคุม subdomain ทั้งหมด ไม่กระทบของที่ submit ไว้) · submit sitemap ✅ · request indexing `/` + `/catalyst` ✅ · แถม: แก้ favicon — ลบ/แทน `web/app/favicon.ico` default ของ create-next-app (โลโก้ Vercel) ที่ทับ brand icon อยู่ verify บน production แล้ว
+**เหลืออย่างเดียว: รอ** — โดเมนใหม่ใช้เวลา 1–3 สัปดาห์กว่าจะติด index · แวะดู Coverage report ใน Search Console ~สัปดาห์หน้า (17 ก.ค. เป็นต้นไป) ถ้ามี coverage error ค่อยเปิด item ใหม่ · (ทางเลือก ยังไม่ทำ: Bing Webmaster Tools — มีปุ่ม Import from Google Search Console ทำได้ใน 2 นาทีถ้าอยากได้)
 
 ## 20. ✅ DONE — AI Validate Journal — user กดปุ่มให้ Claude API วิเคราะห์พอร์ต (quota 3 ครั้ง/lifetime)
 

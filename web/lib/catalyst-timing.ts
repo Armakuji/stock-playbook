@@ -70,6 +70,26 @@ export function daysToCatalyst(report: StockReport, ref?: string): number | null
   return nextCatalyst(report, ref)?.days ?? null;
 }
 
+export interface LastCatalyst { iso: string; name: string; daysAgo: number; }
+
+/** Most recently PASSED catalyst (catalysts[] first, then estimateDates[]) —
+ *  the date closest to today among all past dates, so "days since event"
+ *  reflects whichever catalyst actually just resolved. null if none passed.
+ *  Powers the "post" stage badge (see reportStage below). */
+export function lastCatalyst(report: StockReport, ref?: string): LastCatalyst | null {
+  const base = ref ?? todayISO();
+  const cands: { iso: string; name: string }[] = [];
+  for (const c of report.catalysts ?? []) { const d = catalystISO(c); if (d) cands.push({ iso: d, name: c.name }); }
+  for (const e of report.estimateDates ?? []) { const d = parseDateStr(e.dateRange); if (d) cands.push({ iso: d, name: e.event }); }
+  const past = cands.filter((c) => c.iso < base).sort((a, b) => b.iso.localeCompare(a.iso));
+  if (!past.length) return null;
+  return { iso: past[0].iso, name: past[0].name, daysAgo: daysBetweenISO(past[0].iso, base) };
+}
+
+export function daysSinceCatalyst(report: StockReport, ref?: string): number | null {
+  return lastCatalyst(report, ref)?.daysAgo ?? null;
+}
+
 export type ReportStage = "pre" | "post" | "undated";
 
 /**

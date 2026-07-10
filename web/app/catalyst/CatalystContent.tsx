@@ -1,9 +1,10 @@
 "use client";
 
+import { useState } from "react";
 import { rankReports } from "@/lib/ranking";
 import { getRankingChanges } from "@/lib/ranking-history";
 import { getCatalystCalendar } from "@/lib/catalyst-calendar";
-import { detectCatalystClusters, reportStage } from "@/lib/catalyst-timing";
+import { detectCatalystClusters, reportStage, daysSinceCatalyst } from "@/lib/catalyst-timing";
 import { factorConcentration } from "@/lib/factors";
 import { useLang } from "@/lib/LanguageContext";
 import { RankingChangeTable } from "../RankingChangeTable";
@@ -12,6 +13,77 @@ import { ThemeGroups } from "../ThemeGroups";
 import { FactorRiskPanel } from "../FactorRiskPanel";
 
 const TOP_N = 10;
+
+type RealizedReport = ReturnType<typeof rankReports>[number];
+
+// ── Realized / post-catalyst — collapsed by default (backlog #8) ────────────
+// Picks whose catalystDate already passed move here so the active board stays
+// an honest "upcoming events" view, not a mix of hunt + hindsight. Records are
+// never deleted (backtest reads them) — just moved and de-emphasized.
+function RealizedSection({ reports, th }: { reports: RealizedReport[]; th: boolean }) {
+  const [open, setOpen] = useState(false);
+  if (reports.length === 0) return null;
+
+  return (
+    <div style={{ marginTop: 28, borderRadius: 10, border: "1px solid var(--border)", overflow: "hidden" }}>
+      <button
+        onClick={() => setOpen((v) => !v)}
+        style={{
+          display: "flex", alignItems: "center", gap: 8, width: "100%",
+          padding: "9px 14px", background: "var(--card)", border: "none", cursor: "pointer",
+          textAlign: "left", fontFamily: "var(--font-mono, monospace)",
+        }}
+      >
+        <span style={{ fontSize: 10, fontWeight: 800, color: "var(--muted)", textTransform: "uppercase", letterSpacing: "1.5px" }}>
+          {th ? "⏳ Realized · catalyst ผ่านแล้ว — ติดตามเฉยๆ" : "⏳ Realized · catalyst passed — monitoring only"}
+        </span>
+        <span style={{
+          fontSize: 9, color: "var(--muted)", padding: "1px 7px", borderRadius: 5,
+          background: "#ffffff08", border: "1px solid var(--border)",
+        }}>
+          {reports.length}
+        </span>
+        <span style={{
+          marginLeft: "auto", fontSize: 10, color: "var(--muted)", flexShrink: 0,
+          transform: open ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.2s ease",
+        }}>
+          ▼
+        </span>
+      </button>
+
+      {open && (
+        <div style={{ padding: "10px 14px", display: "flex", flexWrap: "wrap", gap: 8, borderTop: "1px solid var(--border)" }}>
+          {reports.map((r) => {
+            const daysAgo = daysSinceCatalyst(r);
+            return (
+              <a key={`${r.ticker}-${r.generatedAt}`} href={`/report/${r.ticker.toLowerCase()}`}
+                style={{
+                  display: "flex", alignItems: "center", gap: 8, textDecoration: "none",
+                  padding: "6px 12px", borderRadius: 8, background: "var(--card)",
+                  border: "1px solid var(--border)", opacity: 0.75,
+                  fontFamily: "var(--font-mono, monospace)", fontSize: 12,
+                }}>
+                <span style={{ fontWeight: 800, color: "var(--text)" }}>{r.ticker}</span>
+                <span style={{ fontSize: 10, color: "var(--muted)" }}>{r.verdict}</span>
+                {daysAgo !== null && (
+                  <span
+                    title={th ? "วันที่ผ่านมาแล้วนับจาก catalyst ล่าสุด" : "Days since the last catalyst"}
+                    style={{
+                      fontSize: 9, fontWeight: 800, padding: "1px 6px", borderRadius: 5,
+                      background: "#64748b18", color: "#94a3b8", border: "1px solid #64748b30",
+                    }}
+                  >
+                    {daysAgo <= 0 ? (th ? "วันนี้" : "today") : th ? `${daysAgo}วันก่อน` : `${daysAgo}d ago`}
+                  </span>
+                )}
+              </a>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
+}
 
 type Ranked = ReturnType<typeof rankReports>;
 type RankChanges = ReturnType<typeof getRankingChanges>;
@@ -185,30 +257,7 @@ export function CatalystContent({
       )}
 
       {/* ── Realized / post-catalyst ── */}
-      {realized.length > 0 && (
-        <div style={{ marginTop: 28 }}>
-          <div style={{
-            fontSize: 10, fontWeight: 800, color: "var(--muted)", textTransform: "uppercase",
-            letterSpacing: "1.5px", fontFamily: "var(--font-mono, monospace)", marginBottom: 10,
-          }}>
-            {th ? "✅ Realized · catalyst ผ่านแล้ว — ติดตามเฉยๆ" : "✅ Realized · catalyst passed — monitoring only"}
-          </div>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
-            {realized.map((r) => (
-              <a key={`${r.ticker}-${r.generatedAt}`} href={`/report/${r.ticker.toLowerCase()}`}
-                style={{
-                  display: "flex", alignItems: "center", gap: 8, textDecoration: "none",
-                  padding: "6px 12px", borderRadius: 8, background: "var(--card)",
-                  border: "1px solid var(--border)", opacity: 0.7,
-                  fontFamily: "var(--font-mono, monospace)", fontSize: 12,
-                }}>
-                <span style={{ fontWeight: 800, color: "var(--text)" }}>{r.ticker}</span>
-                <span style={{ fontSize: 10, color: "var(--muted)" }}>{r.verdict}</span>
-              </a>
-            ))}
-          </div>
-        </div>
-      )}
+      <RealizedSection reports={realized} th={th} />
 
       {/* ── Ranking Change section ── */}
       <RankingChangeTable rows={rankChanges} />
