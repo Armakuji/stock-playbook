@@ -1,7 +1,6 @@
 "use client";
 
 import { TurboCard } from "./TurboCard";
-import { DashboardSwitcher } from "../DashboardSwitcher";
 import { RankingChangeTable } from "../RankingChangeTable";
 import { useLang } from "@/lib/LanguageContext";
 import type { rankTurboReports } from "@/lib/speculative";
@@ -11,17 +10,7 @@ type Ranked = ReturnType<typeof rankTurboReports>;
 
 const TURBO_DISPLAY_LIMIT = 10;
 
-export function TurboContent({
-  ranked,
-  rankChanges = [],
-  dashboardCounts,
-  lastUpdated,
-}: {
-  ranked: Ranked;
-  rankChanges?: RankChange[];
-  dashboardCounts: { dca: number; catalyst: number; turbo: number };
-  lastUpdated: string;
-}) {
+export function TurboContent({ ranked, rankChanges = [] }: { ranked: Ranked; rankChanges?: RankChange[] }) {
   const { lang } = useLang();
   const th = lang === "th";
 
@@ -73,8 +62,6 @@ export function TurboContent({
 
       <div style={{ position: "relative", zIndex: 1 }}>
 
-        <DashboardSwitcher active="turbo" counts={dashboardCounts} lastUpdated={lastUpdated} />
-
         {/* ── Hero header ───────────────────────────────────────────────── */}
         <div style={{ marginBottom: 24 }}>
           <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 6 }}>
@@ -105,8 +92,8 @@ export function TurboContent({
           }}>
             {displayed.length > 0
               ? th
-                ? `Top ${displayed.length}${ranked.length > TURBO_DISPLAY_LIMIT ? ` จาก ${ranked.length}` : ""} · เรียงตาม 🔥 upside มากสุด (bull case) · small/mid cap เด้ง 300%++`
-                : `Top ${displayed.length}${ranked.length > TURBO_DISPLAY_LIMIT ? ` of ${ranked.length}` : ""} · ranked by 🔥 most potential upside (bull case) · small/mid cap 300%++ plays`
+                ? `Top ${displayed.length}${ranked.length > TURBO_DISPLAY_LIMIT ? ` จาก ${ranked.length}` : ""} · เรียงตาม 🎯 upside ที่เป็นไปได้มากสุด (base case) · small/mid cap เด้ง 300%++`
+                : `Top ${displayed.length}${ranked.length > TURBO_DISPLAY_LIMIT ? ` of ${ranked.length}` : ""} · ranked by 🎯 most possible upside (base case) · small/mid cap 300%++ plays`
               : th
                 ? "ยังไม่มี turbo picks — รัน /analyze-turbo TICKER เพื่อสร้าง"
                 : "No turbo picks yet — run /analyze-turbo TICKER to generate one"}
@@ -172,7 +159,7 @@ export function TurboContent({
                 border: "1px solid #2d1010", fontWeight: 800,
                 fontFamily: "var(--font-mono, monospace)",
               }}>
-                {th ? "เรียงตาม: 🔥 upside มากสุด" : "sorted: 🔥 most upside"}
+                {th ? "เรียงตาม: 🎯 upside ที่เป็นไปได้" : "sorted: 🎯 most possible upside"}
               </span>
             </div>
           )}
