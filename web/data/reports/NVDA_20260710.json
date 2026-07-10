@@ -1,0 +1,218 @@
+{
+  "ticker": "NVDA",
+  "companyName": "NVIDIA Corporation",
+  "companyDescription": "AI GPU · Dominant Blackwell/Vera Rubin AI training + inference chips + CUDA ecosystem — picks & shovels of the AI buildout",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-10T00:00:00.000Z",
+  "price": 202.78,
+  "priceChange": -0.66,
+  "priceNote": "Trading $202.78, down from $204.12 prior close — caught in the broader semiconductor selloff (SOX -10.8%, $1.3T sector value erased on AI-capex-sustainability fears) despite 21-of-23-quarter beat streak intact.",
+  "marketCap": "$4.9T",
+  "sector": "Technology / Semiconductors",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 82,
+  "summary": "NVDA sold off alongside the broader AI-semis complex on capex-sustainability fears even though nothing company-specific broke — consensus target $263-274 now implies ~32% upside from $202.78, near the widest re-rating gap of the past year. Vera Rubin (HBM4, 3nm) ships to hyperscalers in H2 2026, and fiscal Q2 FY27 earnings land Aug 26. The company has beaten estimates in 21 of the last 23 quarters; the real swing factor is how much it beats by, not whether it beats.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Fiscal Q2 FY27 Earnings",
+      "description": "First earnings since the July 2026 AI-capex-fear selloff. Market wants confirmation that hyperscaler orders (Jensen Huang cited ~$1T in cumulative Blackwell/Vera Rubin purchase orders through 2027 at GTC) are holding, not just guidance language.",
+      "urgencyLabel": "47 DAYS",
+      "dateBadge": "Aug 26, 2026",
+      "catalystDate": "2026-08-26",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "⚡",
+      "name": "Vera Rubin H2 2026 Shipments",
+      "description": "HBM4 + 3nm architecture begins shipping to early-access hyperscaler customers in H2 2026 — the generational efficiency leap analysts are watching for roadmap-execution proof.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🌍",
+      "name": "Mag-7 Capex Read-Through (GOOGL/MSFT/META earnings)",
+      "description": "Hyperscaler Q2 earnings in late July are the nearest concrete data point on whether AI capex guidance holds — a direct read on NVDA's largest customer cohort ahead of its own Aug 26 print.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Late Jul 2026",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "AI-capex-sustainability debate is sector-wide, not NVDA-specific — BofA's Bubble Risk Indicator at 0.91 and comparisons to dot-com valuations could keep multiples compressed even if fundamentals hold",
+    "Hawkish Fed dot-plot shift (median 2026 projection raised, 9 of 19 officials see another hike) pressures long-duration AI multiples independent of NVDA execution",
+    "Vera Rubin ramp timing risk — any slip in H2 2026 hyperscaler shipments would remove the next roadmap-execution catalyst",
+    "China export-control precedent (H20 restrictions triggered a $4.5B charge and ~4% single-day drop in the prior cycle) — policy risk remains binary and outside company control",
+    "Post-earnings moves have historically been modest (median +0.3% day-1, +3.3% week-1) — don't expect a single print to close the 32% valuation gap quickly",
+    "Enterprise AI budget pushback and hyperscaler capacity resale (e.g., Meta selling spare AI compute) could signal early demand softening"
+  ],
+  "estimateDates": [
+    {
+      "event": "Fiscal Q2 FY27 Earnings",
+      "dateRange": "Aug 26, 2026",
+      "note": "Key test: do hyperscaler orders and Vera Rubin commentary confirm the $1T cumulative purchase-order figure from GTC",
+      "est": "est. revenue growth intact",
+      "highlight": "blue"
+    },
+    {
+      "event": "Vera Rubin Early-Access Shipments",
+      "dateRange": "H2 2026",
+      "note": "First hyperscaler shipments of HBM4/3nm Vera Rubin platform — roadmap-execution proof point",
+      "est": "target: H2 2026",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -18, "price": 166 },
+    { "label": "Base", "color": "yellow", "pct": 14, "price": 231 },
+    { "label": "Bull", "color": "green", "pct": 32, "price": 268 },
+    { "label": "Moon", "color": "purple", "pct": 48, "price": 300 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus", "target": 268, "rating": "Strong Buy", "note": "Range $263-274 across major desks" },
+    { "firm": "UBS (Timothy Arcuri)", "target": 245, "rating": "Buy" },
+    { "firm": "Recent bull upgrade", "target": 360, "rating": "Buy", "note": "Single-firm outlier — cited as moon-case reference only, not consensus" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held 3.50–3.75% for a 4th straight meeting (Jun 17, 2026). Next FOMC Jul 28–29 — CME FedWatch prices ~89% probability of another hold, but the June dot plot shifted the median 2026 projection higher, now leaning toward a hike rather than a cut.",
+    "inflationNote": "Inflation still running above the 2% target; the hawkish dot-plot shift removes a rate-cut tailwind AI/growth stocks had been pricing in.",
+    "sectorImpact": "High-multiple AI/semis names are the most rate-sensitive corner of the market — a hawkish surprise compresses long-duration growth multiples faster than it shows up in earnings, compounding the current capex-fear selloff.",
+    "summary": "MEDIUM — no imminent hike, but the FOMC Jul 28-29 decision lands just before NVDA's Aug 26 earnings, and a hawkish surprise would add multiple-compression risk on top of the sector-wide capex debate."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 203, "note": "Current price — mid-selloff", "timing": "Now" },
+      { "label": "Entry 2", "level": 185, "rangeMax": 190, "note": "Near recent selloff lows, still above 52wk floor", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 165, "note": "Near 52-week low $162.02", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 231, "pct": 13.9, "note": "Base — capex fears fade, multiple stabilizes" },
+    "tp2": { "price": 268, "pct": 32.2, "note": "Consensus target — Aug 26 earnings confirms demand" },
+    "tp3": { "price": 300, "pct": 48.0, "note": "Vera Rubin ramp exceeds expectations, capex debate resolves bullish", "moon": true },
+    "stopLoss": {
+      "tight": 182, "tightPct": -10.2, "tightNote": "Below recent selloff support",
+      "hard": 162, "hardPct": -20.1, "hardNote": "52-week low breach — capex thesis genuinely broken",
+      "riskReward": "3.2 : 1",
+      "rrNote": "TP2 vs tight stop from current price",
+      "rrWarning": "Good R/R given re-rating gap is macro-driven, not fundamental"
+    },
+    "verdict": "BUY the capex-fear reset — scale in at $203, add on dip to $185-190. Target $231-268 as Aug 26 earnings confirm hyperscaler demand is intact.",
+    "approach": "DCA"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "NVDA's post-earnings moves have historically been modest and not correlated with beat magnitude — the stock's real driver has been the medium-term trend (median +11.1% over the following quarter, +87.6% over the following year) rather than the print itself.",
+    "preRunupTiming": "Muted in the days immediately pre-earnings; the multi-month trend matters more",
+    "preRunupPct": "+0.3% (day 1) to +3.3% (week 1) historically",
+    "postWin": {
+      "avgPct": 3.3,
+      "range": "+0.3% to +11.1% (1 day to 1 quarter)",
+      "note": "NVDA has beaten consensus in 21 of the last 23 quarters. Post-print moves are typically modest short-term (median +0.3% day-1) but compound over the following quarter (+11.1% median) as guidance gets digested — the print itself rarely closes a valuation gap in one session.",
+      "exampleDate": "May 2026 (Q1 FY27)"
+    },
+    "postLose": {
+      "avgPct": -4,
+      "range": "-4% to -8%",
+      "note": "NVDA fell ~4% in a single session on H200/China shipment-delay concerns ahead of Q1 FY26 results, and separately took a $4.5B charge tied to H20 export-license requirements — the closest comparable 'bad news' reactions, both policy-driven rather than demand-driven.",
+      "exampleDate": "May 2025 (China H20 export curbs)"
+    },
+    "spotSizing": {
+      "pct": 8,
+      "reason": "BUY verdict, Strong Buy consensus, and a re-rating gap driven by sector-wide macro fear rather than company-specific deterioration — size at 8% initial given the mega-cap liquidity and dated Aug 26 catalyst, add on dip rather than chasing."
+    },
+    "stopPreCatalyst": {
+      "pct": -10,
+      "price": 182,
+      "note": "Below recent selloff support — would suggest the capex-fear narrative is deepening, not just a sentiment air-pocket"
+    },
+    "stopPostCatalyst": {
+      "pct": -15,
+      "note": "If Aug 26 guidance disappoints AND management can't confirm Vera Rubin hyperscaler orders, exit — that would be a genuine demand signal, not macro noise"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "AVGO",
+      "event": "Jul 9, 2026 — AI chip guidance reaffirmed at $16B, Apple deal extended through 2031",
+      "date": "Jul 2026",
+      "movePct": 4.7,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same AI-semis complex, same week — shows the market rewarding guidance confirmation (not even a raise) after the sector-wide capex scare, the same dynamic NVDA's Aug 26 print will be tested against."
+    },
+    {
+      "ticker": "NVDA",
+      "event": "H200/China shipment delays ahead of Q1 FY26 earnings",
+      "date": "May 2025",
+      "movePct": -4,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Policy/export-control risk is NVDA's main tail risk — this is the clearest recent example of a negative single-day reaction, and it was policy-driven rather than a demand miss."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Semiconductor Selloff Deepens As AI Spending Fears Hit Intel",
+    "url": "https://www.forbes.com/sites/petercohan/2026/07/08/intel-stock-down-21-inside-the-july-2026-semiconductor-selloff/",
+    "date": "Jul 2026"
+  },
+  "sources": [
+    "https://www.forbes.com/sites/petercohan/2026/07/08/intel-stock-down-21-inside-the-july-2026-semiconductor-selloff/",
+    "https://www.fool.com/investing/2026/07/09/3-genius-ai-stocks-to-buy-amidst-the-selloff/",
+    "https://finance.yahoo.com/markets/stocks/article/heres-how-nvidia-stock-has-historically-performed-after-earnings-090000788.html",
+    "https://calendarial.com/nvidia-fiscal-q2-earnings/",
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm",
+    "https://www.fxleaders.com/news/2026/05/18/nvidia-earnings-preview-nvda-stock-dips-to-220-on-china-export-concerns/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "NVDA ร่วงตาม AI-semis ทั้งกลุ่มจากความกังวลเรื่อง capex sustainability ทั้งที่พื้นฐานบริษัทยังไม่มีอะไรพัง — consensus target $263-274 ให้ upside ~32% จาก $202.78 ถือเป็นช่องว่าง re-rating ที่กว้างสุดในรอบปี Vera Rubin (HBM4, 3nm) จะ ship ให้ hyperscaler ใน H2 2026 และ earnings Q2 FY27 วันที่ 26 ส.ค. บริษัท beat estimate มาแล้ว 21 จาก 23 ไตรมาสล่าสุด",
+      "priceNote": "ราคา $202.78 ลงมาจาก $204.12 — โดนลากลงตาม semiconductor selloff ทั้งกลุ่ม (SOX -10.8%) ทั้งที่ไม่มีข่าวร้ายเฉพาะตัว",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "รายงาน Fiscal Q2 FY27 Earnings", "description": "earnings แรกหลัง AI-capex-fear selloff ก.ค. 2026 — ตลาดต้องการยืนยันว่า order จาก hyperscaler ($1T cumulative ที่ Jensen พูดใน GTC) ยังอยู่ครบ" },
+        { "name": "Vera Rubin H2 2026 Shipments", "description": "สถาปัตยกรรม HBM4 + 3nm เริ่ม ship ให้ลูกค้า early-access ใน H2 2026 — พิสูจน์ roadmap execution" },
+        { "name": "Mag-7 Capex Read-Through", "description": "earnings ของ GOOGL/MSFT/META ปลาย ก.ค. เป็นข้อมูล capex ล่าสุดก่อนที่ NVDA จะรายงานเอง 26 ส.ค." }
+      ],
+      "risks": [
+        "ประเด็น AI-capex sustainability เป็นเรื่องทั้ง sector ไม่ใช่แค่ NVDA — Bubble Risk Indicator ของ BofA อยู่ที่ 0.91",
+        "Fed dot plot เอียง hawkish กดดัน multiple หุ้น AI duration ยาวไม่ว่าบริษัทจะทำได้ดีแค่ไหน",
+        "ความเสี่ยง timing ของ Vera Rubin ramp — ถ้า H2 2026 ship ช้าจะเสีย catalyst หลัก",
+        "ความเสี่ยง China export control (เคยมีชาร์จ $4.5B + ราคาร่วง ~4% รอบก่อน) เป็นความเสี่ยงเชิงนโยบายที่คุมไม่ได้",
+        "post-earnings move ในอดีตค่อนข้างน้อย (median +0.3% วันแรก) — อย่าคาดหวังว่า earnings ครั้งเดียวจะปิดช่องว่าง valuation 32% ได้ทันที"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.50-3.75% เป็นครั้งที่ 4 ติด FOMC ถัดไป 28-29 ก.ค. — dot plot ใหม่เอียงไปทาง hike มากกว่า cut",
+        "inflationNote": "เงินเฟ้อยังสูงกว่าเป้า 2% — dot plot hawkish ลบ tailwind ที่หุ้นเติบโตเคย price-in",
+        "sectorImpact": "หุ้น AI/semis P/E สูงไวต่อดอกเบี้ยที่สุด hawkish surprise กด multiple เร็วกว่ากระทบกำไรจริง",
+        "summary": "MEDIUM — ยังไม่ขึ้นดอกเบี้ยทันที แต่ FOMC 28-29 ก.ค. มาก่อน earnings NVDA 26 ส.ค. เพียงไม่กี่สัปดาห์ ความเสี่ยง hawkish surprise ซ้อนทับความกังวล capex ทั้ง sector"
+      },
+      "entryStrategy": {
+        "verdict": "BUY จุด reset จากความกลัว capex — ทยอยเข้าที่ $203 เพิ่มเมื่อย่อ $185-190 เป้า $231-268 เมื่อ earnings 26 ส.ค. ยืนยัน demand จาก hyperscaler ยังแข็งแรง",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — กลาง selloff", "timing": "ตอนนี้" },
+          { "note": "ใกล้จุดต่ำสุดของ selloff รอบนี้ ยังเหนือ floor 52 สัปดาห์", "timing": "ถ้าย่อ" },
+          { "note": "ใกล้ 52-week low $162.02", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "กรณีฐาน — ความกลัว capex คลาย multiple นิ่งขึ้น" },
+        "tp2": { "note": "กรณีดี — consensus target, earnings 26 ส.ค. ยืนยัน demand" },
+        "tp3": { "note": "Moon — Vera Rubin ramp เกินคาด ประเด็น capex คลี่คลายเชิงบวก" },
+        "stopLoss": {
+          "tightNote": "หลุด support ของ selloff รอบนี้",
+          "hardNote": "หลุด 52-week low — thesis capex เสียหายจริง",
+          "rrNote": "TP2 เทียบ tight stop จากราคาปัจจุบัน",
+          "rrWarning": "R/R ดี เพราะช่องว่าง re-rating มาจาก macro ไม่ใช่พื้นฐานบริษัท"
+        }
+      },
+      "estimateDates": [
+        { "event": "รายงาน Fiscal Q2 FY27 Earnings", "note": "จุดพิสูจน์ว่า order hyperscaler และ Vera Rubin commentary ยืนยันตัวเลข $1T cumulative หรือไม่" },
+        { "event": "Vera Rubin Early-Access Shipments", "note": "ล็อตแรกของ HBM4/3nm ส่งให้ hyperscaler — พิสูจน์ roadmap execution" }
+      ]
+    }
+  }
+}

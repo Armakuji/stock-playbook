@@ -144,6 +144,38 @@
       "priceAtScreen": 245,
       "topAnalystTarget": 385,
       "impliedUpside": 57
+    },
+    {
+      "date": "2026-07-10",
+      "ticker": "TSM",
+      "reason": "Disqualified: Q2 earnings Jul 16 is a strong near-term catalyst and Strong Buy consensus, but average analyst target implies only ~17% upside from $437.31 — below the 30% threshold. BofA's $590 target (+35%) is a single-firm outlier vs. a ~$520 consensus average, same reasoning that disqualified TSM on 2026-07-01. Revisit if Jul 16 beat + raised FY guidance pulls consensus targets up broadly.",
+      "priceAtScreen": 437.31,
+      "topAnalystTarget": 520,
+      "impliedUpside": 17
+    },
+    {
+      "date": "2026-07-10",
+      "ticker": "TER",
+      "reason": "Disqualified: Strong Buy consensus (11 buy, 1 hold) and a real Aug 5 2026 earnings catalyst, but the average analyst price target implies only ~11% upside from ~$381 — individual bullish targets (Susquehanna/Cantor $550) are outliers vs. the ~$423 consensus average. Stock already up 84% YTD, priced for a lot of good news.",
+      "priceAtScreen": 381,
+      "topAnalystTarget": 423,
+      "impliedUpside": 11.2
+    },
+    {
+      "date": "2026-07-10",
+      "ticker": "ASTS",
+      "reason": "Disqualified: Still Hold consensus (6-11 analysts) with average target $81.47-$88.53 vs. current $73.88 = only ~11-20% upside. BlueBird 11-13 satellite launch targeted for early August is a real dated catalyst, but analyst upside remains below the 30% threshold — same recurring reason as prior near-misses on this ticker (2026-06-26, 06-29, 07-01).",
+      "priceAtScreen": 73.88,
+      "topAnalystTarget": 88,
+      "impliedUpside": 19.8
+    },
+    {
+      "date": "2026-07-10",
+      "ticker": "OUST",
+      "reason": "Disqualified: Strong Buy consensus (5 analysts) and Aug 5 2026 earnings catalyst, but stock dropped 15.77% intraday to $50.60 same-day and aggregator price targets ($39-49 from some sources) are stale/inconsistent with the post-drop price, producing conflicting or even negative implied upside depending on source. Too much data noise to screen confidently today — revisit once price/target data stabilizes post-drop.",
+      "priceAtScreen": 50.6,
+      "topAnalystTarget": null,
+      "impliedUpside": null
     }
   ]
 }

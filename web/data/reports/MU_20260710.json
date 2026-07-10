@@ -1,0 +1,217 @@
+{
+  "ticker": "MU",
+  "companyName": "Micron Technology, Inc.",
+  "companyDescription": "AI Memory · HBM4/HBM3E leader with sold-out capacity through 2026 — the picks-and-shovels memory play behind every AI accelerator",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-10T00:00:00.000Z",
+  "price": 1021.28,
+  "priceChange": 6.91,
+  "priceNote": "Trading $1,021.28 (+6.91%), rebounding within a $976-$1,213 range after pulling back from the Jun 25 all-time high of $1,213.37. Up over 250% YTD on sold-out HBM capacity and the Anthropic AI partnership.",
+  "marketCap": "$1.15T",
+  "sector": "Technology / Semiconductors",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 79,
+  "summary": "Micron's Jun 24, 2026 Q3 FY26 print was a blowout — EPS $25.11 vs $20.20 est (+24%), revenue $41.46B vs $35.84B est, and FQ4 guidance of ~$50B revenue vs $43.2B consensus — yet the stock has pulled back ~16% from its Jun 25 all-time high on profit-taking and the broader AI-semis selloff. Consensus target ~$1,486 (45 analysts) implies ~46% upside from the current $1,021.28. HBM capacity is sold out through 2026 with long-term supply agreements locking in ~40% of revenue through 2028-2030. Next earnings (Q4 FY26) land Sep 29, 2026.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q4 FY2026 Earnings",
+      "description": "Tests whether the ~$50B FQ4 revenue guide (vs $43.2B Street consensus at the time) actually lands, and whether HBM4 volume ramp (already exceeding $1B revenue) continues accelerating into fiscal 2027.",
+      "urgencyLabel": "81 DAYS",
+      "dateBadge": "Sep 29, 2026",
+      "catalystDate": "2026-09-29",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🧠",
+      "name": "HBM4 Volume Ramp for NVIDIA Vera Rubin",
+      "description": "Micron has begun volume shipment of HBM4 12-Hi designed for NVIDIA's Vera Rubin platform — directly tied to NVDA's H2 2026 shipment timeline, with HBM4E volume production targeted for calendar 2027.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🤝",
+      "name": "Anthropic Strategic AI Partnership",
+      "description": "Long-term supply agreement supporting the AI memory demand story — part of 16 long-term agreements totaling $22B in locked-in revenue.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Stock is up over 250% YTD and ~16% off its all-time high — even after the pullback, a lot of good news is already priced in, raising the bar for the Sep 29 print",
+    "Micron itself said it can only fulfill 50-66% of some key customers' HBM demand in the medium term — a supply constraint that caps near-term upside even as it validates pricing power",
+    "SOX-wide 'buyer exhaustion' concern — the Jul 2026 selloff hit Intel, AMD, and Micron alongside AVGO, suggesting sector-level de-rating risk independent of MU's own results",
+    "Memory is historically the most cyclical semis sub-sector; the current HBM supercycle narrative assumes sustained AI capex that some analysts (BofA Bubble Risk Indicator 0.91) view skeptically",
+    "Hawkish Fed dot-plot shift pressures long-duration AI-capex multiples independent of MU execution",
+    "Next earnings (Sep 29) is the furthest out of any near-term semis catalyst in this dashboard — more time for sentiment to swing before the next hard data point"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q4 FY2026 Earnings",
+      "dateRange": "Sep 29, 2026",
+      "note": "Key test: does FQ4 revenue hit the ~$50B guide, and does HBM4 ramp momentum continue into fiscal 2027",
+      "est": "est. revenue ~$50B",
+      "highlight": "blue"
+    },
+    {
+      "event": "HBM4E Volume Production",
+      "dateRange": "Calendar 2027",
+      "note": "Next-gen HBM4E ramp — the follow-on act to the current HBM4 sold-out cycle",
+      "est": "target: calendar 2027",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -22, "price": 797 },
+    { "label": "Base", "color": "yellow", "pct": 20, "price": 1225 },
+    { "label": "Bull", "color": "green", "pct": 46, "price": 1490 },
+    { "label": "Moon", "color": "purple", "pct": 71, "price": 1750 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (45 analysts)", "target": 1486, "rating": "Strong Buy", "note": "Implies ~46% upside from $1,021.28" },
+    { "firm": "Barclays", "target": 2000, "rating": "Buy", "note": "Cited as a bullish outlier, not the base case" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held 3.50–3.75% for a 4th straight meeting (Jun 17, 2026). Next FOMC Jul 28–29 — CME FedWatch prices ~89% probability of another hold, but the June dot plot raised the median 2026 rate projection, now leaning toward a hike rather than a cut.",
+    "inflationNote": "Inflation still running above the 2% target; the hawkish dot-plot shift removes a rate-cut tailwind AI/growth names had been pricing in.",
+    "sectorImpact": "High-multiple AI/semis names are the most rate-sensitive part of the market — a hawkish surprise compresses long-duration growth multiples faster than it hits earnings, adding to the cyclicality risk already inherent in memory stocks.",
+    "summary": "MEDIUM — no imminent hike, but a hawkish surprise at the Jul 28-29 FOMC would compound both the sector-wide capex-fear selloff and memory's structurally higher cyclicality risk."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 1021, "note": "Current price — post-earnings pullback zone", "timing": "Now" },
+      { "label": "Entry 2", "level": 900, "rangeMax": 950, "note": "Retest of post-ATH pullback support", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 800, "note": "Deep macro selloff only", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 1225, "pct": 19.9, "note": "Base — sentiment stabilizes, no fresh catalyst needed" },
+    "tp2": { "price": 1486, "pct": 45.5, "note": "Consensus target — Sep 29 earnings confirms FQ4 guide" },
+    "tp3": { "price": 1750, "pct": 71.4, "note": "HBM4E ramp exceeds expectations, memory supercycle thesis fully re-rates", "moon": true },
+    "stopLoss": {
+      "tight": 900, "tightPct": -11.9, "tightNote": "Below the post-ATH pullback support zone",
+      "hard": 797, "hardPct": -21.9, "hardNote": "Deep retracement — HBM supercycle thesis needs re-underwriting",
+      "riskReward": "3.8 : 1",
+      "rrNote": "TP2 vs tight stop from Entry 2",
+      "rrWarning": "Good R/R on a dip entry given the sold-out order book"
+    },
+    "verdict": "BUY on the post-ATH pullback — scale in at $1,021, add on dip to $900-950. Target $1,225-1,486 as Sep 29 earnings confirm the ~$50B FQ4 guide.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Micron has run up sharply into recent prints on HBM sold-out commentary — the stock reached its all-time high just one trading day after the Jun 24 beat before profit-taking set in.",
+    "preRunupTiming": "1-2 weeks pre-earnings, amplified by HBM supply-constraint headlines",
+    "preRunupPct": "+8% to +15% (based on the run into the Jun 24 print)",
+    "postWin": {
+      "avgPct": 15,
+      "range": "+9% to +15%",
+      "note": "Jun 24, 2026 (Q3 FY26): stock rose 15% in extended trading after EPS beat consensus by 24.3% ($25.11 vs $20.20) and FQ4 revenue guidance ($50B) blew past the $43.2B Street estimate — the clearest, most recent comparable for this exact catalyst type.",
+      "exampleDate": "Jun 2026"
+    },
+    "postLose": {
+      "avgPct": -12,
+      "range": "-8% to -16%",
+      "note": "No recent MU-specific miss on record this cycle — the closest analog is the current ~16% pullback from the Jun 25 all-time high, which was profit-taking and sector rotation rather than a company miss, but shows how fast sentiment can reverse even after a blowout print.",
+      "exampleDate": "Jun-Jul 2026 (post-ATH pullback)"
+    },
+    "spotSizing": {
+      "pct": 6,
+      "reason": "BUY verdict with Strong Buy consensus and ~46% upside after a genuine ~16% pullback from all-time highs following a beat-and-raise quarter — size at 6% initial, add on further dip toward $900-950 given memory's higher cyclicality than logic semis."
+    },
+    "stopPreCatalyst": {
+      "pct": -12,
+      "price": 900,
+      "note": "Below the post-ATH pullback support zone — would suggest sentiment deterioration beyond normal profit-taking"
+    },
+    "stopPostCatalyst": {
+      "pct": -16,
+      "note": "If Sep 29 FQ4 results miss the ~$50B revenue guide, exit — that would break the sold-out-capacity thesis that underpins the current valuation"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "MU",
+      "event": "Q3 FY26 earnings — EPS beat by 24%, FQ4 revenue guide blows past consensus",
+      "date": "Jun 2026",
+      "movePct": 15,
+      "days": 1,
+      "outcome": "good",
+      "note": "Direct, most recent comparable: extended-trading pop of 15% on a blowout beat-and-raise, with data center revenue growing more than sevenfold YoY to $11.5B."
+    },
+    {
+      "ticker": "AVGO",
+      "event": "Q2 FY26 earnings — beat on EPS/revenue but guidance disappointed",
+      "date": "Jun 2026",
+      "movePct": -14,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Same AI-semis complex, same month — a reminder that even a beat can sell off hard if forward guidance underwhelms, which is the key risk into MU's Sep 29 print."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Micron Sales Forecast Tops Estimates on Insatiable Memory Demand",
+    "url": "https://www.bloomberg.com/news/articles/2026-06-24/micron-sales-forecast-tops-estimates-on-insatiable-memory-demand",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://www.bloomberg.com/news/articles/2026-06-24/micron-sales-forecast-tops-estimates-on-insatiable-memory-demand",
+    "https://www.cnbc.com/2026/06/24/micron-mu-earnings-report-q3-2026.html",
+    "https://seekingalpha.com/article/4921058-micron-its-hbm4-crucial-catalyst-is-still-being-ignored",
+    "https://www.forbes.com/sites/petercohan/2026/07/08/intel-stock-down-21-inside-the-july-2026-semiconductor-selloff/",
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "ผลประกอบการ MU 24 มิ.ย. 2026 (Q3 FY26) เกินคาดมาก — EPS $25.11 vs คาด $20.20 (+24%) รายได้ $41.46B vs คาด $35.84B และ guide FQ4 ~$50B vs consensus $43.2B แต่หุ้นย่อลงมา ~16% จาก all-time high 25 มิ.ย. จากการขายทำกำไรและ selloff ทั้งกลุ่ม semis consensus target ~$1,486 (45 analyst) ให้ upside ~46% จากราคาปัจจุบัน $1,021.28 HBM capacity ขายหมดถึงปี 2026 แล้ว earnings ถัดไป Q4 FY26 วันที่ 29 ก.ย.",
+      "priceNote": "ราคา $1,021.28 (+6.91%) ฟื้นตัวในกรอบ $976-$1,213 หลังย่อจาก all-time high",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "รายงาน Q4 FY2026 Earnings", "description": "พิสูจน์ว่า revenue guide ~$50B ทำได้จริงหรือไม่ และ HBM4 ramp ยังเร่งต่อเนื่องเข้าปี fiscal 2027" },
+        { "name": "HBM4 Volume Ramp สำหรับ NVIDIA Vera Rubin", "description": "เริ่ม ship HBM4 12-Hi สำหรับ Vera Rubin แล้ว — ผูกตรงกับ timeline ship ของ NVDA ใน H2 2026" },
+        { "name": "ดีล Anthropic AI Partnership", "description": "ส่วนหนึ่งของ 16 สัญญาระยะยาวมูลค่ารวม $22B ที่ล็อกรายได้ไว้แล้ว" }
+      ],
+      "risks": [
+        "หุ้นขึ้นมาแล้วกว่า 250% YTD และยังห่างจาก all-time high แค่ ~16% — ข่าวดีถูก price-in ไปเยอะแล้ว เพิ่มมาตรฐานให้ earnings 29 ก.ย.",
+        "Micron เองบอกว่าส่งของให้ลูกค้าหลักได้แค่ 50-66% ของ demand — ข้อจำกัด supply ที่กด upside ระยะสั้นแม้จะยืนยัน pricing power",
+        "แรงขายกระจายทั้ง SOX (Intel, AMD, Micron) ไม่ใช่แค่ปัญหาเฉพาะตัว",
+        "หน่วยความจำเป็น sub-sector ที่ cyclical ที่สุดใน semis ในอดีต — narrative HBM supercycle ต้องพึ่ง AI capex ที่ยั่งยืน",
+        "Fed hawkish กดดัน multiple หุ้น AI duration ยาว",
+        "earnings ถัดไป (29 ก.ย.) ไกลที่สุดในบรรดา catalyst semis ของ dashboard นี้"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.50-3.75% เป็นครั้งที่ 4 ติด FOMC ถัดไป 28-29 ก.ค. — dot plot เอียง hawkish มากกว่า cut",
+        "inflationNote": "เงินเฟ้อยังสูงกว่าเป้า 2% — ลบ tailwind rate-cut ที่หุ้น AI เคย price-in",
+        "sectorImpact": "หุ้น AI/semis P/E สูงไวต่อดอกเบี้ยที่สุด ซ้ำเติมความเสี่ยง cyclical ของหุ้น memory ที่มีอยู่แล้ว",
+        "summary": "MEDIUM — hawkish surprise ที่ FOMC 28-29 ก.ค. จะซ้ำเติมทั้ง capex-fear selloff และความเสี่ยง cyclical ของ memory"
+      },
+      "entryStrategy": {
+        "verdict": "BUY จุดย่อหลัง all-time high — ทยอยเข้าที่ $1,021 เพิ่มเมื่อย่อ $900-950 เป้า $1,225-1,486 เมื่อ earnings 29 ก.ย. ยืนยัน guide FQ4",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — โซนย่อหลัง earnings", "timing": "ตอนนี้" },
+          { "note": "retest โซน support หลังย่อจาก ATH", "timing": "ถ้าย่อ" },
+          { "note": "selloff ลึกจาก macro เท่านั้น", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "กรณีฐาน — sentiment นิ่งขึ้นโดยไม่ต้องมี catalyst ใหม่" },
+        "tp2": { "note": "กรณีดี — consensus target, earnings 29 ก.ย. ยืนยัน guide" },
+        "tp3": { "note": "Moon — HBM4E ramp เกินคาด thesis memory supercycle re-rate เต็มที่" },
+        "stopLoss": {
+          "tightNote": "หลุดโซน support หลังย่อจาก ATH",
+          "hardNote": "ย่อลึก — thesis HBM supercycle ต้องทบทวนใหม่",
+          "rrNote": "TP2 เทียบ tight stop จาก Entry 2",
+          "rrWarning": "R/R ดีเมื่อเข้าตอนย่อ เพราะ order book ขายหมดแล้ว"
+        }
+      },
+      "estimateDates": [
+        { "event": "รายงาน Q4 FY2026 Earnings", "note": "จุดพิสูจน์ว่า revenue แตะ guide ~$50B จริงหรือไม่" },
+        { "event": "HBM4E Volume Production", "note": "การ ramp รุ่นถัดไปของ HBM — ต่อยอดจาก cycle HBM4 ที่ขายหมดแล้ว" }
+      ]
+    }
+  }
+}

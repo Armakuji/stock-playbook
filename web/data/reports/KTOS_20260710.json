@@ -1,0 +1,219 @@
+{
+  "ticker": "KTOS",
+  "companyName": "Kratos Defense & Security Solutions, Inc.",
+  "companyDescription": "Autonomous Defense Systems · Unmanned drones (Valkyrie), hypersonic testbeds, and Space Force missile-tracking systems — a next-gen defense prime riding the autonomy/drone spending wave",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-10T00:00:00.000Z",
+  "price": 50.89,
+  "priceChange": -1.8,
+  "priceNote": "Trading $50.89, within a $49.66-$51.81 recent range. Cathie Wood's Ark Invest bought $9.1M of KTOS shares so far in July 2026, and JPMorgan just upgraded to Overweight on contract-win momentum.",
+  "marketCap": "$9.45B",
+  "sector": "Industrials / Defense & Robotics",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 73,
+  "summary": "Kratos has beaten estimates four straight quarters, raised FY26 guidance to $1.70-1.76B revenue, and grown its backlog to a record $2.01B — yet the stock's own last earnings reaction was actually -4.23% despite the beat, showing the market is pricing execution/cash-flow risk alongside the growth story. JPMorgan just upgraded to Overweight ($82 PT) and Wedbush initiated Outperform ($85 PT) on contract-win momentum: a $446.8M Space Force missile-tracking award, a $231.5M Valkyrie drone contract with Northrop Grumman, and a $36M air-defense contract in July alone. Consensus targets cluster $80-$112, implying 57-120%+ upside from $50.89. Next earnings Aug 5, 2026.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "Fifth-straight-beat test. Kratos has guided up every quarter this year; the market will be watching whether free cash flow (still negative on growth capex) shows any inflection, since that — not the beat itself — drove the negative reaction to the last print.",
+      "urgencyLabel": "26 DAYS",
+      "dateBadge": "Aug 5, 2026 (est.)",
+      "catalystDate": "2026-08-05",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🚀",
+      "name": "Valkyrie Drone Program (with Northrop Grumman)",
+      "description": "$231.5M Marine Corps contract to build XQ-58 Valkyrie unmanned drones that fly alongside crewed fighters — a marquee proof point for Kratos's affordable-autonomy thesis.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🛰️",
+      "name": "Space Force Missile-Tracking Contract",
+      "description": "$446.8M Space Systems Command award (Apr 8, 2026) for missile warning and tracking systems — the single largest disclosed contract in the current backlog build.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Kratos's OWN last earnings reaction was -4.23% despite an EPS beat and raised FY26 guidance — the market is penalizing negative free cash flow and growth-capex spending, not rewarding the beat itself, which caps how much a repeat beat on Aug 5 might move the stock",
+    "Wide dispersion in analyst price targets ($80 Jefferies/JPMorgan-conservative vs $109.86 aggregate high-end) signals real disagreement on valuation, not a tight consensus",
+    "Small/mid-cap defense name — thinner liquidity and higher volatility than the mega-cap semis names in this dashboard",
+    "Guides up every quarter this year — a high bar for the streak to continue; any guidance pause would be read negatively given the run-up",
+    "Government-contract concentration means budget/appropriations timing risk (continuing resolutions, program delays) outside company control",
+    "Defense-tech valuations broadly have re-rated up in 2026 (Kratos itself, AVAV +18.76% on its own recent beat) — sector-wide profit-taking risk if sentiment cools"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q2 2026 Earnings",
+      "dateRange": "Aug 5, 2026 (est.)",
+      "note": "Key test: does free cash flow show any inflection, not just another revenue/EPS beat",
+      "est": "est. continued beat-and-raise",
+      "highlight": "blue"
+    },
+    {
+      "event": "Valkyrie / Space Force Program Milestones",
+      "dateRange": "H2 2026",
+      "note": "Contract execution milestones on the two largest disclosed 2026 awards",
+      "est": "target: ongoing through 2026",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -20, "price": 41 },
+    { "label": "Base", "color": "yellow", "pct": 35, "price": 69 },
+    { "label": "Bull", "color": "green", "pct": 63, "price": 83 },
+    { "label": "Moon", "color": "purple", "pct": 116, "price": 110 }
+  ],
+  "analystTargets": [
+    { "firm": "Jefferies", "target": 80, "rating": "Buy" },
+    { "firm": "JPMorgan", "target": 82, "rating": "Overweight", "note": "Upgraded from Neutral, Jul 2026" },
+    { "firm": "Wedbush", "target": 85, "rating": "Outperform", "note": "New coverage initiation" },
+    { "firm": "Aggregate consensus (20 analysts)", "target": 110, "rating": "Buy", "note": "Wide dispersion — cited as bull-case reference, not tight consensus" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held 3.50–3.75% for a 4th straight meeting (Jun 17, 2026). Next FOMC Jul 28–29 — CME FedWatch prices ~89% probability of another hold, but the June dot plot raised the median 2026 rate projection, now leaning toward a hike rather than a cut.",
+    "inflationNote": "Inflation still running above the 2% target; the hawkish dot-plot shift removes a rate-cut tailwind that negative-FCF growth names like KTOS depend on more than profitable mega-caps.",
+    "sectorImpact": "Defense spending itself is largely rate-insensitive (government appropriations-driven), but KTOS's negative-FCF growth profile makes its equity valuation duration-sensitive — a hawkish surprise would compress the multiple independent of the underlying defense-spending tailwind.",
+    "summary": "MEDIUM — defense demand is macro-resilient, but KTOS's own negative free cash flow makes the stock's valuation multiple more rate-sensitive than the underlying business."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 51, "note": "Current price — pre-earnings", "timing": "Now" },
+      { "label": "Entry 2", "level": 45, "rangeMax": 48, "note": "Pullback into the Aug 5 print", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 41, "note": "Deep pullback / repeat of the last post-earnings reaction", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 69, "pct": 35.6, "note": "Base — beat-and-raise continues, FCF concern persists but doesn't worsen" },
+    "tp2": { "price": 83, "pct": 63.1, "note": "Bull — FCF inflection shows on Aug 5, JPMorgan/Wedbush targets validated" },
+    "tp3": { "price": 110, "pct": 116.1, "note": "Moon — aggregate high-end consensus, Valkyrie/Space Force programs scale faster than modeled", "moon": true },
+    "stopLoss": {
+      "tight": 45, "tightPct": -11.6, "tightNote": "Below the pre-earnings consolidation zone",
+      "hard": 41, "hardPct": -19.4, "hardNote": "Repeat of the last earnings-day drawdown magnitude — thesis needs re-underwriting",
+      "riskReward": "3.1 : 1",
+      "rrNote": "TP1 vs tight stop from Entry 2",
+      "rrWarning": "Reasonable R/R given the name's own history of selling off even on beats"
+    },
+    "verdict": "Speculative BUY into Aug 5 earnings — scale in small at $51, add on dip to $45-48. Own history shows beats alone don't guarantee a pop here, so size for volatility.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "KTOS has been trending up sharply on contract-win news independent of the earnings calendar — up 8.71% and separately 10.35% on defense-contract-momentum days in 2026, showing the stock reacts more to individual contract announcements than to earnings-date anticipation specifically.",
+    "preRunupTiming": "Event-driven on contract news, not a consistent pre-earnings pattern",
+    "preRunupPct": "+8% to +10% on individual contract-win days (not earnings-specific)",
+    "postWin": {
+      "avgPct": -4.2,
+      "range": "-4.2% to +19%",
+      "note": "KTOS's own last earnings (May 6, 2026, Q1 2026): EPS beat ($0.16 vs $0.12) and raised FY26 guidance, but the stock still fell -4.23% — the market focused on negative free cash flow despite the beat. Contrast: AeroVironment (AVAV), a close defense-drone comparable, popped +18.76% on its own Jun 30, 2026 beat because it showed a cleaner cash/backlog story.",
+      "exampleDate": "May 2026 (KTOS) / Jun 2026 (AVAV comparable)"
+    },
+    "postLose": {
+      "avgPct": -8,
+      "range": "-5% to -10%",
+      "note": "No clean recent KTOS-specific miss on record given the 4-quarter beat streak — the -4.23% post-beat reaction in May 2026 functioned like a miss reaction on the FCF/valuation dimension even though headline numbers beat, which is the closest available analog.",
+      "exampleDate": "May 2026"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "Speculative BUY — real contract-win momentum (Space Force, Valkyrie, air-defense awards) and fresh analyst upgrades, but KTOS's own history of selling off even on beats (negative FCF concern) means size small and expect volatility around the Aug 5 print."
+    },
+    "stopPreCatalyst": {
+      "pct": -12,
+      "price": 45,
+      "note": "Below the pre-earnings consolidation zone — would suggest contract-win momentum is fading ahead of the print"
+    },
+    "stopPostCatalyst": {
+      "pct": -19,
+      "note": "If Aug 5 results show FCF deteriorating further with no path to improvement, exit — that's the specific risk this name has already shown it will punish"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "AVAV",
+      "event": "Q4 2026 earnings — revenue more than doubled, backlog +65% YoY",
+      "date": "Jun 2026",
+      "movePct": 18.76,
+      "days": 1,
+      "outcome": "good",
+      "note": "Closest defense-drone comparable — shows the magnitude of pop possible in this sub-sector when a beat comes with a clean cash/backlog story, the upside case for KTOS's Aug 5 print."
+    },
+    {
+      "ticker": "KTOS",
+      "event": "Q1 2026 earnings — EPS beat, FY26 guidance raised, record backlog",
+      "date": "May 2026",
+      "movePct": -4.23,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "KTOS's own most recent earnings reaction — the direct precedent for the FCF-driven risk into the Aug 5 print, and why sizing is kept conservative despite the strong headline numbers."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Cathie Wood's Ark Invest Has Bought $9.1 Million of Kratos Defense Stock So Far in July",
+    "url": "https://www.fool.com/investing/2026/07/09/cathie-woods-ark-invest-bought-91-million-kratos/",
+    "date": "Jul 2026"
+  },
+  "sources": [
+    "https://www.fool.com/investing/2026/07/09/cathie-woods-ark-invest-bought-91-million-kratos/",
+    "https://simplywall.st/stocks/us/capital-goods/nasdaq-ktos/kratos-defense-security-solutions/news/why-kratos-ktos-is-down-96-after-raising-its-2026-outlook-an",
+    "https://www.stocktitan.net/news/KTOS/kratos-reports-first-quarter-2026-financial-results-and-increases-3zw7uhykyoqy.html",
+    "https://finance.yahoo.com/markets/stocks/articles/aerovironment-q4-2026-earnings-beat-140312207.html",
+    "https://www.tipranks.com/news/3-best-stocks-with-70-upside-to-buy-in-july-2026-according-to-analysts",
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Kratos beat estimate มา 4 ไตรมาสติดกัน ยกเป้า FY26 เป็น $1.70-1.76B backlog ทำสถิติ $2.01B แต่ earnings ล่าสุด (6 พ.ค.) หุ้นกลับร่วง -4.23% ทั้งที่ beat เพราะตลาดกังวลเรื่อง free cash flow ติดลบ JPMorgan เพิ่งอัปเกรดเป็น Overweight ($82) Wedbush เริ่ม cover ที่ Outperform ($85) จากโมเมนตัมสัญญา — $446.8M Space Force, $231.5M Valkyrie drone กับ Northrop Grumman, $36M air-defense ในเดือนก.ค.เดียว consensus target $80-$112 ให้ upside 57-120%+ จาก $50.89 earnings ถัดไป 5 ส.ค.",
+      "priceNote": "ราคา $50.89 ในกรอบ $49.66-$51.81 — Cathie Wood's Ark ซื้อเพิ่ม $9.1M เดือนนี้",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "รายงาน Q2 2026 Earnings", "description": "ทดสอบ beat ครั้งที่ 5 ติดกัน — ตลาดจะดู free cash flow ว่ามีสัญญาณดีขึ้นไหม เพราะนี่คือสิ่งที่ทำให้ earnings รอบก่อนร่วงทั้งที่ beat" },
+        { "name": "โครงการ Valkyrie Drone (กับ Northrop Grumman)", "description": "สัญญา $231.5M กับ Marine Corps สร้างโดรน XQ-58 Valkyrie บินคู่กับเครื่องบินขับไล่มีคนขับ" },
+        { "name": "สัญญา Space Force Missile-Tracking", "description": "สัญญา $446.8M (8 เม.ย. 2026) สำหรับระบบเตือนภัยและติดตามขีปนาวุธ — สัญญาใหญ่สุดใน backlog ปัจจุบัน" }
+      ],
+      "risks": [
+        "earnings ล่าสุดของ KTOS เองร่วง -4.23% ทั้งที่ beat และยกเป้า — ตลาดลงโทษ FCF ติดลบ ไม่ใช่รางวัลจาก beat",
+        "price target นักวิเคราะห์กระจายกว้างมาก ($80 vs $109.86) สะท้อนความเห็นไม่ตรงกันเรื่อง valuation",
+        "หุ้น small/mid-cap defense — สภาพคล่องบางกว่าและ volatile กว่าหุ้น mega-cap semis ใน dashboard นี้",
+        "ยกเป้าทุกไตรมาสในปีนี้ — มาตรฐานสูงสำหรับ streak ต่อเนื่อง",
+        "รายได้กระจุกตัวที่สัญญาภาครัฐ — ความเสี่ยง budget/appropriations timing",
+        "หุ้น defense-tech re-rate ขึ้นทั้ง sector ในปี 2026 — ความเสี่ยงขายทำกำไรทั้ง sector ถ้า sentiment เย็นลง"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.50-3.75% เป็นครั้งที่ 4 ติด FOMC ถัดไป 28-29 ก.ค. — dot plot เอียง hawkish มากกว่า cut",
+        "inflationNote": "เงินเฟ้อยังสูงกว่าเป้า 2% — ลบ tailwind rate-cut ที่หุ้น FCF ติดลบอย่าง KTOS ต้องพึ่ง",
+        "sectorImpact": "งบกลาโหมไม่ค่อยไวต่อดอกเบี้ย (มาจากงบประมาณรัฐ) แต่ valuation ของ KTOS ที่ FCF ติดลบไวต่อ discount rate มากกว่า",
+        "summary": "MEDIUM — ดีมานด์กลาโหมทนทานต่อ macro แต่ FCF ติดลบของ KTOS เองทำให้ multiple หุ้นไวต่อดอกเบี้ยมากกว่าธุรกิจจริง"
+      },
+      "entryStrategy": {
+        "verdict": "Speculative BUY ก่อน earnings 5 ส.ค. — ทยอยเข้า size เล็กที่ $51 เพิ่มเมื่อย่อ $45-48 ประวัติหุ้นเองแสดงว่า beat อย่างเดียวไม่การันตีขึ้น ต้อง size ให้เหมาะกับ volatility",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ก่อน earnings", "timing": "ตอนนี้" },
+          { "note": "ย่อก่อนเข้า earnings 5 ส.ค.", "timing": "ถ้าย่อ" },
+          { "note": "ย่อลึก / ซ้ำรอย reaction ครั้งก่อน", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "กรณีฐาน — beat-and-raise ต่อเนื่อง ความกังวล FCF ยังอยู่แต่ไม่แย่ลง" },
+        "tp2": { "note": "กรณีดี — FCF มีสัญญาณดีขึ้นวันที่ 5 ส.ค. target JPMorgan/Wedbush ยืนยัน" },
+        "tp3": { "note": "Moon — consensus สูงสุด โครงการ Valkyrie/Space Force ขยายเร็วกว่าคาด" },
+        "stopLoss": {
+          "tightNote": "หลุดโซน consolidation ก่อน earnings",
+          "hardNote": "ซ้ำรอยขนาดการร่วงของ earnings ครั้งก่อน — thesis ต้องทบทวนใหม่",
+          "rrNote": "TP1 เทียบ tight stop จาก Entry 2",
+          "rrWarning": "R/R รับได้ พิจารณาจากประวัติที่หุ้นเคยร่วงแม้ beat"
+        }
+      },
+      "estimateDates": [
+        { "event": "รายงาน Q2 2026 Earnings", "note": "จุดพิสูจน์ว่า free cash flow มีสัญญาณดีขึ้นหรือไม่ ไม่ใช่แค่ beat อีกรอบ" },
+        { "event": "Milestone โครงการ Valkyrie / Space Force", "note": "จุดตรวจ execution ของสัญญาใหญ่สุด 2 สัญญาในปี 2026" }
+      ]
+    }
+  }
+}

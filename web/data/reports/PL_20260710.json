@@ -1,0 +1,217 @@
+{
+  "ticker": "PL",
+  "companyName": "Planet Labs PBC",
+  "companyDescription": "Earth Observation Satellites · One of the largest commercial Earth-imaging fleets — daily global imaging for government, agriculture, and defense customers",
+  "exchange": "NYSE",
+  "generatedAt": "2026-07-10T00:00:00.000Z",
+  "price": 26.51,
+  "priceChange": -1.8,
+  "priceNote": "Trading $26.51, down 37% from its all-time high just over a month ago (~$51 in early June) despite a genuine Q1 FY27 earnings beat — the market punished the print on continued net losses, negative free cash flow, and a dilutive equity raise rather than the revenue growth itself.",
+  "marketCap": "$5.4B",
+  "sector": "Technology / Space",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 71,
+  "summary": "Planet Labs reported record Q1 FY27 revenue of $94M (+42% YoY) on Jun 4, 2026, beating on both revenue and EPS — yet the stock fell and kept falling, now down 37% from its ATH on profit-taking, continued net losses, and a dilutive equity raise. That overreaction has opened a real gap: median analyst target $38 implies ~43% upside from $26.51, with 80% of analysts at Buy or Strong Buy. The Transporter-17 rideshare mission (Jul 8, 2026) already delivered the Pelican-11 tech-demo satellite; the next hard catalyst is Q2 FY27 earnings on Sep 8, where the market will be watching path-to-profitability commentary as closely as growth.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q2 FY2027 Earnings",
+      "description": "Next earnings after a Q1 beat that the market still sold off on — this print needs to show either a credible path to profitability or continued net-loss narrowing, not just revenue growth, to reverse the post-earnings de-rating.",
+      "urgencyLabel": "60 DAYS",
+      "dateBadge": "Sep 8, 2026",
+      "catalystDate": "2026-09-08",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🛰️",
+      "name": "Pelican-11 Tech-Demo Launch (completed)",
+      "description": "Successfully launched Jul 8, 2026 aboard SpaceX's Transporter-17 rideshare — the technology demonstrator for the second-generation, higher-resolution Pelican satellite fleet.",
+      "urgencyLabel": "LAUNCHED",
+      "dateBadge": "Jul 8, 2026",
+      "catalystDate": "2026-07-08",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🏛️",
+      "name": "US Government + Defense Contract Momentum",
+      "description": "Earth-observation demand from government and defense customers is the steadiest part of the revenue base — any new multi-year government award would help offset the market's profitability concerns.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "The market has now sold off TWICE on genuinely good news (Q1 beat) — shows sentiment is currently anchored to profitability/cash-burn concerns, not growth headlines, so a Sep 8 beat alone may not be enough",
+    "Continued net losses and negative free cash flow remain unresolved — the equity raise that triggered part of the selloff signals capital needs that could recur",
+    "Down 37% from ATH in just over a month — high realized volatility means position sizing needs to be conservative even with a Buy-heavy analyst base",
+    "Small-cap ($5.4B) with thinner analyst coverage (5-10 analysts) than mega-cap semis names — price targets are less consensus-tested and can move more on single-firm revisions",
+    "Hawkish Fed dot-plot shift disproportionately hits small/mid-cap growth names with negative FCF, since they're the most duration-sensitive to discount-rate changes",
+    "Earth-observation is a competitive, capital-intensive business (Maxar, BlackSky, and government-owned constellations) — pricing power is not guaranteed even with fleet scale"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q2 FY2027 Earnings",
+      "dateRange": "Sep 8, 2026",
+      "note": "Key test: does management show a credible path to profitability, not just revenue growth",
+      "est": "est. continued double-digit YoY growth",
+      "highlight": "blue"
+    },
+    {
+      "event": "Pelican Gen-2 Fleet Buildout",
+      "dateRange": "H2 2026 - 2027",
+      "note": "Follow-on launches building out the higher-resolution Pelican constellation after the Jul 8 tech-demo",
+      "est": "target: ongoing through 2027",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -25, "price": 20 },
+    { "label": "Base", "color": "yellow", "pct": 21, "price": 32 },
+    { "label": "Bull", "color": "green", "pct": 43, "price": 38 },
+    { "label": "Moon", "color": "purple", "pct": 100, "price": 53 }
+  ],
+  "analystTargets": [
+    { "firm": "Median (5 analysts)", "target": 38, "rating": "Buy", "note": "80% of analysts rate Buy or Strong Buy; range $22-$53" },
+    { "firm": "Needham (Ryan Koontz)", "target": 53, "rating": "Buy", "note": "Most bullish target — cited as moon-case reference, not base case" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held 3.50–3.75% for a 4th straight meeting (Jun 17, 2026). Next FOMC Jul 28–29 — CME FedWatch prices ~89% probability of another hold, but the June dot plot raised the median 2026 rate projection, now leaning toward a hike rather than a cut.",
+    "inflationNote": "Inflation still running above the 2% target; the hawkish dot-plot shift removes a rate-cut tailwind that negative-FCF growth names like PL depend on more than profitable mega-caps.",
+    "sectorImpact": "Small-cap, negative-free-cash-flow names are the most duration-sensitive to discount-rate assumptions — a hawkish surprise would compress PL's valuation multiple faster than it would a profitable mega-cap, compounding the existing profitability-concern overhang.",
+    "summary": "MEDIUM-HIGH for this name specifically — the hawkish dot-plot shift is a bigger relative risk for PL than for the profitable mega-caps in this dashboard, given its negative FCF profile."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 26.5, "note": "Current price — 37% off ATH", "timing": "Now" },
+      { "label": "Entry 2", "level": 22, "rangeMax": 24, "note": "Toward the lower end of the recent selloff range", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 20, "note": "Near 3-month range low", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 32, "pct": 20.7, "note": "Base — sentiment stabilizes, no fresh catalyst needed" },
+    "tp2": { "price": 38, "pct": 43.4, "note": "Median analyst target — Sep 8 earnings shows profitability progress" },
+    "tp3": { "price": 53, "pct": 100.0, "note": "Needham bull case — Pelican Gen-2 fully re-rates the growth story", "moon": true },
+    "stopLoss": {
+      "tight": 22, "tightPct": -17.0, "tightNote": "Below the recent selloff range",
+      "hard": 18, "hardPct": -32.1, "hardNote": "New multi-month low — profitability thesis needs re-underwriting",
+      "riskReward": "2.6 : 1",
+      "rrNote": "TP2 vs tight stop from Entry 2",
+      "rrWarning": "Acceptable R/R for a small-cap speculative name — size accordingly"
+    },
+    "verdict": "BUY the post-beat overreaction — scale in small at $26.5, add on further dip to $22-24. Target $32-38 if Sep 8 earnings show real path-to-profitability progress.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "PL ran up sharply into its Jun 4 print (over 162% YTD coming into June, above $51/share) on momentum — the stock has NOT shown a consistent pre-earnings-runup pattern independent of broader momentum swings, given its short public trading history and small float.",
+    "preRunupTiming": "Momentum-driven, not consistently tied to the earnings date specifically",
+    "preRunupPct": "Highly variable — was +162% YTD coming into the Jun 4 print",
+    "postWin": {
+      "avgPct": -9,
+      "range": "-9% to -37% (1 day to 1 month)",
+      "note": "Jun 4, 2026 (Q1 FY27): revenue beat at $94M (+42% YoY) with an EPS beat too, yet shares slipped in after-hours trading and the stock is now down 37% over the following month — the market punished continued net losses and a dilutive equity raise despite the top-line beat. This is the critical nuance for PL: a beat alone does not guarantee a positive reaction here.",
+      "exampleDate": "Jun 2026"
+    },
+    "postLose": {
+      "avgPct": -20,
+      "range": "-15% to -25%",
+      "note": "No clean recent EPS/revenue miss on record — the closest analog is the post-beat selloff itself (-37% over a month), which functioned like a miss reaction despite beating on paper because guidance/cash-burn concerns dominated the market's read.",
+      "exampleDate": "Jun-Jul 2026 (post-beat selloff)"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Speculative BUY — real 43% median-target upside and a Buy-heavy analyst base, but PL's own history shows beats don't guarantee a positive reaction here, and negative FCF adds real risk. Size at 3% initial, small-cap speculative sizing, add only on confirmed stabilization."
+    },
+    "stopPreCatalyst": {
+      "pct": -17,
+      "price": 22,
+      "note": "Below the recent selloff range — would suggest the de-rating is continuing, not stabilizing"
+    },
+    "stopPostCatalyst": {
+      "pct": -25,
+      "note": "If Sep 8 earnings show no progress on path-to-profitability (net losses widening, another dilutive raise), exit — the market has shown it will punish that even with revenue growth"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "PL",
+      "event": "Q1 FY27 earnings — revenue +42% YoY beat, but stock fell on profitability concerns",
+      "date": "Jun 2026",
+      "movePct": -37,
+      "days": 30,
+      "outcome": "bad",
+      "note": "Direct, most recent comparable and the core risk for this name: a real beat that still triggered a 37% one-month drawdown because the market prioritized net losses and a dilutive equity raise over top-line growth."
+    },
+    {
+      "ticker": "MU",
+      "event": "Q3 FY26 earnings — beat-and-raise on EPS and revenue guide",
+      "date": "Jun 2026",
+      "movePct": 15,
+      "days": 1,
+      "outcome": "good",
+      "note": "Contrast case from the same earnings season: a profitable, cash-generative company (MU) got rewarded immediately for a beat-and-raise, underscoring that PL's profitability profile — not the beat itself — is what the market is pricing."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Planet Labs Stock Is Down 37% Over the Past Month. Here's What's Sending the Stock Lower.",
+    "url": "https://www.fool.com/investing/2026/07/03/planet-labs-stock-is-down-37-over-the-past-month-h/",
+    "date": "Jul 2026"
+  },
+  "sources": [
+    "https://www.fool.com/investing/2026/07/03/planet-labs-stock-is-down-37-over-the-past-month-h/",
+    "https://www.fool.com/investing/2026/06/13/planet-labs-stock-plunged-following-earnings-call/",
+    "https://www.tradingkey.com/news/market-movers/261965095-market-movers-pl-20260612",
+    "https://coincentral.com/best-space-stocks-to-watch-in-july-2026-ast-spacemobile-and-rocket-lab-lead/",
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Planet Labs รายงาน Q1 FY27 วันที่ 4 มิ.ย. 2026 รายได้ $94M (+42% YoY) beat ทั้ง revenue และ EPS แต่หุ้นกลับร่วงและร่วงต่อเนื่อง ตอนนี้ลงมา 37% จาก all-time high จากการขายทำกำไร ขาดทุนสุทธิต่อเนื่อง และการเพิ่มทุนที่ dilute ผู้ถือหุ้นเดิม median analyst target $38 ให้ upside ~43% จาก $26.51 นักวิเคราะห์ 80% ให้ Buy หรือ Strong Buy ดาวเทียม Pelican-11 launch สำเร็จแล้ว 8 ก.ค. earnings ถัดไป Q2 FY27 วันที่ 8 ก.ย.",
+      "priceNote": "ราคา $26.51 ลงมา 37% จาก all-time high เดือนที่แล้ว (~$51) ทั้งที่ earnings ล่าสุด beat จริง",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "รายงาน Q2 FY2027 Earnings", "description": "earnings ถัดไปหลังจาก Q1 beat แต่ตลาดยังขายทำกำไร — ครั้งนี้ต้องโชว์ path สู่กำไรที่ชัดเจน ไม่ใช่แค่ revenue โต" },
+        { "name": "Pelican-11 Tech-Demo Launch (สำเร็จแล้ว)", "description": "launch สำเร็จ 8 ก.ค. 2026 บน Transporter-17 — ดาวเทียมทดสอบเทคโนโลยีสำหรับ Pelican gen 2 ความละเอียดสูงขึ้น" },
+        { "name": "โมเมนตัมสัญญาภาครัฐ/กลาโหมสหรัฐ", "description": "ดีมานด์ earth-observation จากภาครัฐ/กลาโหมเป็นฐานรายได้ที่มั่นคงที่สุด" }
+      ],
+      "risks": [
+        "ตลาดขายหุ้นตอบสนองข่าวดี 2 รอบแล้ว (Q1 beat) — สะท้อนว่า sentiment ตอนนี้ผูกกับความกังวลเรื่องกำไร/cash-burn ไม่ใช่ growth headline",
+        "ขาดทุนสุทธิและ FCF ติดลบยังไม่แก้ — การเพิ่มทุนที่ทำให้ selloff ส่วนหนึ่งอาจเกิดซ้ำได้",
+        "ลงมา 37% จาก ATH ภายในเดือนเดียว — volatility สูง ต้อง size ให้ระมัดระวัง",
+        "small-cap ($5.4B) นักวิเคราะห์ cover น้อย (5-10 คน) — price target ผันผวนง่ายกว่า",
+        "Fed hawkish กระทบหุ้น small-cap FCF ติดลบหนักกว่าหุ้น mega-cap ที่มีกำไร",
+        "ธุรกิจ earth-observation แข่งขันสูง (Maxar, BlackSky, ดาวเทียมภาครัฐ) — pricing power ไม่การันตี"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.50-3.75% เป็นครั้งที่ 4 ติด FOMC ถัดไป 28-29 ก.ค. — dot plot เอียง hawkish มากกว่า cut",
+        "inflationNote": "เงินเฟ้อยังสูงกว่าเป้า 2% — ลบ tailwind rate-cut ที่หุ้น FCF ติดลบอย่าง PL ต้องพึ่งมากกว่าหุ้นกำไรดี",
+        "sectorImpact": "หุ้น small-cap FCF ติดลบไวต่อ discount rate ที่สุด — hawkish surprise กด multiple PL เร็วกว่าหุ้น mega-cap ที่มีกำไร",
+        "summary": "MEDIUM-HIGH สำหรับตัวนี้โดยเฉพาะ — ความเสี่ยง hawkish dot-plot กระทบ PL มากกว่าหุ้น mega-cap ที่มีกำไรในกลุ่มนี้"
+      },
+      "entryStrategy": {
+        "verdict": "BUY จุด overreaction หลัง beat — ทยอยเข้า size เล็กที่ $26.5 เพิ่มเมื่อย่อ $22-24 เป้า $32-38 ถ้า earnings 8 ก.ย. โชว์ progress เรื่องกำไรจริง",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ลงมา 37% จาก ATH", "timing": "ตอนนี้" },
+          { "note": "โซนล่างของ selloff รอบนี้", "timing": "ถ้าย่อ" },
+          { "note": "ใกล้จุดต่ำสุดรอบ 3 เดือน", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "กรณีฐาน — sentiment นิ่งขึ้นโดยไม่ต้องมี catalyst ใหม่" },
+        "tp2": { "note": "กรณีดี — median analyst target, earnings 8 ก.ย. โชว์ progress กำไร" },
+        "tp3": { "note": "Moon — Pelican gen 2 re-rate story การเติบโตเต็มที่" },
+        "stopLoss": {
+          "tightNote": "หลุดโซน selloff รอบนี้",
+          "hardNote": "จุดต่ำสุดรอบใหม่หลายเดือน — thesis กำไรต้องทบทวนใหม่",
+          "rrNote": "TP2 เทียบ tight stop จาก Entry 2",
+          "rrWarning": "R/R รับได้สำหรับหุ้น small-cap speculative — size ให้เหมาะสม"
+        }
+      },
+      "estimateDates": [
+        { "event": "รายงาน Q2 FY2027 Earnings", "note": "จุดพิสูจน์ว่ามี path สู่กำไรชัดเจนหรือไม่ ไม่ใช่แค่ revenue โต" },
+        { "event": "Pelican Gen-2 Fleet Buildout", "note": "launch ต่อเนื่องขยาย constellation Pelican ความละเอียดสูงหลัง tech-demo 8 ก.ค." }
+      ]
+    }
+  }
+}
