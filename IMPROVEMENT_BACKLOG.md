@@ -129,17 +129,17 @@ Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open N
 **ไฟล์:** ครบทุกไฟล์ตาม code sweep + README.md + docs/architecture/journal-api.md + docs/architecture/journal-api-deployment.md · ที่เหลือ (คนละเรื่อง): `assets/social-preview.png`
 **เป้า:** แบรนด์เดียวไม่ชนใคร ใช้ทั้ง repo + เว็บ + API + User-Agent ✅ · repo/Vercel/domain/OAuth rename ✅ · README/docs URL ตรงโดเมนใหม่ ✅ — **ปิด item นี้**
 
-## 16. Journal API — 5 minor items ที่ defer จาก Phase 1 final review (PR #29)
+## 16. ✅ DONE — Journal API — 5 minor items ที่ defer จาก Phase 1 final review (PR #29)
 
 **ปัญหา:** final review ของ Phase 1 พบ 5 จุด minor ที่ตั้งใจไม่ fix ตอนนั้น (ไม่ block การใช้งาน) — จดไว้ให้คนที่ทำ Phase 2 / polish รอบหน้าเก็บ
 **ทำ:**
   1. ✅ DONE (ทำพร้อม #17) — subtitle เก่าอ้าง "private/journal.json" ค้างอยู่ — แก้เป็น "{n} trades" เฉย ๆ
-  2. `addExit` ไม่มี server-side over-exit guard — client กันอยู่ฝั่งเดียว ยิง API ตรงขาย shares เกินที่ถือได้ (เพิ่ม validation ใน service)
-  3. POST `/trades` ด้วย client-chosen id ที่ชนกัน → 500 ไม่ใช่ 409 (จับ Prisma P2002 → ConflictException)
-  4. `apiLogout` ไม่ใช้ shared `readError` convention — ตอนนี้ logout อยู่ใน `web/lib/auth-client.ts` แล้ว (ย้ายจาก JournalContent เป็นส่วนหนึ่งของ #17) แต่ยังไม่ได้ปรับให้ใช้ readError convention
+  2. ✅ DONE — `addExit` เพิ่ม server-side over-exit guard: sum existing exits ก่อน insert → reject ด้วย `BadRequestException` ถ้า `existing + dto.shares > trade.shares` (message บอก remaining) · เพิ่ม `@IsPositive()` ใน `CreateExitDto.shares`
+  3. ✅ DONE — POST `/trades` จับ Prisma `P2002` (duplicate id) → `ConflictException` (409) แทนที่จะปล่อยให้ 500 · error อื่นยัง rethrow เหมือนเดิม
+  4. ✅ DONE — ย้าย `readError` จาก `JournalContent.tsx` เข้า `web/lib/auth-client.ts` (export) · `logout()` เช็ค `res.ok` แล้ว throw ผ่าน `readError` ก่อน reload · เรียก `logout()` ทั้ง 2 จุดใน `Header.tsx` (desktop dropdown + mobile) เพิ่ม `.catch(console.error)` กันค้าง UI
   5. ✅ DONE (ทำพร้อม #17) — `AuthService.backfillProfile` เติม `name`/`avatarUrl` ให้ user ที่มีอยู่แล้ว (ทั้ง identity-linked และ email-linked) เมื่อค่ายังว่างและ Google profile มีให้ — ไม่ทับค่าที่มีอยู่แล้ว
-**ไฟล์:** `web/app/journal/JournalContent.tsx` · `service/src/trades/*` (exit guard, 409) · `web/lib/auth-client.ts` (apiLogout/readError) · `service/src/auth/auth.service.ts` (backfill, ✅ done)
-**เป้า:** เก็บครบ 5 จุด (2 เหลือ 3 ข้อ: #2, #3, #4) · จุดสำคัญสุดคือข้อ 2 (server ต้องไม่เชื่อ client) ควรทำก่อนเปิด public signup (Phase 2)
+**ไฟล์:** `service/src/trades/trades.service.ts` (`addExit` guard, `create` 409) · `service/src/trades/dto/create-exit.dto.ts` (+`@IsPositive()`) · `service/src/trades/trades.service.spec.ts` + `create-exit.dto.spec.ts` (new tests) · `web/lib/auth-client.ts` (`readError` export, `logout()`) · `web/app/journal/JournalContent.tsx` (import shared `readError`) · `web/app/Header.tsx` (logout call sites) · `service/src/auth/auth.service.ts` (backfill, ✅ done)
+**เป้า:** เก็บครบ 5/5 จุด ✅ — จุดสำคัญสุดคือข้อ 2 (server ต้องไม่เชื่อ client) ปิดก่อนเปิด public signup (Phase 2) แล้ว · 99/99 service tests ผ่าน (รวม test ใหม่สำหรับ over-exit/exact-remaining/duplicate-id/DTO validation) · tsc --noEmit สะอาดทั้ง service/web
 
 ## 17. ✅ DONE — Journal UI — auth-aware header (avatar/login/logout) + ลบ PRIVATE badge
 

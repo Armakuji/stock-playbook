@@ -136,7 +136,7 @@ function MobileProfileSection({ user, th, pathname }: { user: AuthState; th: boo
         </div>
       </div>
       <button
-        onClick={() => logout()}
+        onClick={() => logout().catch((err) => console.error("logout failed", err))}
         style={{
           flexShrink: 0, padding: "6px 12px", borderRadius: 7, border: "1px solid var(--border)",
           background: "transparent", color: "var(--muted)", fontSize: 11, fontWeight: 700, cursor: "pointer",
@@ -220,7 +220,7 @@ function AuthWidget({ user, th, pathname }: { user: AuthState; th: boolean; path
           </div>
           <div style={{ height: 1, background: "var(--border)", margin: "2px 0" }} />
           <button
-            onClick={() => logout()}
+            onClick={() => logout().catch((err) => console.error("logout failed", err))}
             style={{
               display: "block", width: "100%", textAlign: "left", padding: "8px 10px", borderRadius: 6,
               border: "none", background: "transparent", color: "var(--text)", cursor: "pointer",
@@ -272,7 +272,16 @@ export function Header({ lastUpdated }: { lastUpdated: string }) {
             borderRadius: 11, padding: 4,
           }}>
             {STRATEGY.map((s) => (
-              <Link key={s.href} href={s.href} title={th ? s.titleTh : s.titleEn} className="srw-pill" style={{ ...gradLink, backgroundImage: s.grad }}>
+              <Link
+                key={s.href}
+                href={s.href}
+                title={th ? s.titleTh : s.titleEn}
+                className="srw-pill"
+                style={{
+                  ...gradLink, backgroundImage: s.grad,
+                  boxShadow: pathname === s.href ? "inset 0 0 0 999px rgba(255,255,255,0.06)" : "none",
+                }}
+              >
                 {s.label}
               </Link>
             ))}
@@ -332,9 +341,15 @@ export function Header({ lastUpdated }: { lastUpdated: string }) {
             {th ? "ธาตุการลงทุน" : "Investment elements"}
           </div>
           {STRATEGY.map((s) => (
-            <Link key={s.href} href={s.href} onClick={() => setOpen(false)} style={{
-              ...gradLink, backgroundImage: s.grad, fontSize: 15, padding: "9px 6px",
-            }}>
+            <Link
+              key={s.href}
+              href={s.href}
+              onClick={() => setOpen(false)}
+              style={{
+                ...gradLink, backgroundImage: s.grad, fontSize: 15, padding: "9px 6px",
+                boxShadow: pathname === s.href ? "inset 0 0 0 999px rgba(255,255,255,0.06)" : "none",
+              }}
+            >
               {s.label}
             </Link>
           ))}

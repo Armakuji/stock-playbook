@@ -17,8 +17,15 @@ export async function fetchCurrentUser(): Promise<CurrentUser | null> {
   return res.json();
 }
 
+export async function readError(res: Response, fallback: string): Promise<string> {
+  const body = (await res.json().catch(() => ({}))) as { message?: string | string[] };
+  if (Array.isArray(body.message)) return body.message.join(", ");
+  return body.message ?? fallback;
+}
+
 export async function logout(): Promise<void> {
-  await fetch("/api/journal/auth/logout", { method: "POST" });
+  const res = await fetch("/api/journal/auth/logout", { method: "POST" });
+  if (!res.ok) throw new Error(await readError(res, `Logout failed (${res.status})`));
   window.location.reload();
 }
 

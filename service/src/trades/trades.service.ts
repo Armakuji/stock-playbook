@@ -1,5 +1,10 @@
-import { Injectable, NotFoundException } from "@nestjs/common";
-import { Trade } from "@prisma/client";
+import {
+  Injectable,
+  NotFoundException,
+  BadRequestException,
+  ConflictException,
+} from "@nestjs/common";
+import { Trade, Prisma } from "@prisma/client";
 import { InjectPinoLogger, PinoLogger } from "nestjs-pino";
 import { PrismaService } from "../prisma/prisma.service";
 import { CreateTradeDto } from "./dto/create-trade.dto";
@@ -32,28 +37,38 @@ export class TradesService {
   }
 
   async create(userId: string, dto: CreateTradeDto) {
-    const trade = await this.prisma.trade.create({
-      data: {
-        ...(dto.id ? { id: dto.id } : {}),
-        userId,
-        ticker: dto.ticker.toUpperCase(),
-        catalystType: dto.catalystType,
-        linkedReportDate: dto.linkedReportDate,
-        entryPrice: dto.entryPrice,
-        shares: dto.shares,
-        entryDate: new Date(dto.entryDate),
-        plannedTP: dto.plannedTP,
-        plannedSL: dto.plannedSL,
-        status: "open",
-        notes: dto.notes,
-      },
-      include: { exits: true, validation: true },
-    });
-    this.logger.info(
-      { userId, tradeId: trade.id, ticker: trade.ticker },
-      "trade created",
-    );
-    return trade;
+    try {
+      const trade = await this.prisma.trade.create({
+        data: {
+          ...(dto.id ? { id: dto.id } : {}),
+          userId,
+          ticker: dto.ticker.toUpperCase(),
+          catalystType: dto.catalystType,
+          linkedReportDate: dto.linkedReportDate,
+          entryPrice: dto.entryPrice,
+          shares: dto.shares,
+          entryDate: new Date(dto.entryDate),
+          plannedTP: dto.plannedTP,
+          plannedSL: dto.plannedSL,
+          status: "open",
+          notes: dto.notes,
+        },
+        include: { exits: true, validation: true },
+      });
+      this.logger.info(
+        { userId, tradeId: trade.id, ticker: trade.ticker },
+        "trade created",
+      );
+      return trade;
+    } catch (err) {
+      if (
+        err instanceof Prisma.PrismaClientKnownRequestError &&
+        err.code === "P2002"
+      ) {
+        throw new ConflictException("Trade id already exists");
+      }
+      throw err;
+    }
   }
 
   async update(id: string, userId: string, dto: UpdateTradeDto) {
@@ -100,6 +115,21 @@ export class TradesService {
 
   async addExit(id: string, userId: string, dto: CreateExitDto) {
     const trade = await this.findOne(id, userId);
+
+    const existingExits = await this.prisma.tradeExit.findMany({
+      where: { tradeId: id },
+    });
+    const existingExitedShares = existingExits.reduce(
+      (sum, e) => sum + e.shares,
+      0,
+    );
+    if (existingExitedShares + dto.shares > trade.shares) {
+      const remaining = trade.shares - existingExitedShares;
+      throw new BadRequestException(
+        `Cannot exit ${dto.shares} shares — only ${remaining} remaining`,
+      );
+    }
+
     await this.prisma.tradeExit.create({
       data: {
         tradeId: id,
@@ -110,18 +140,17 @@ export class TradesService {
       },
     });
 
-    const exits = await this.prisma.tradeExit.findMany({
-      where: { tradeId: id },
-    });
-    const exitedShares = exits.reduce((sum, e) => sum + e.shares, 0);
+    const exitedShares = existingExitedShares + dto.shares;
 
     const data: { status?: string; realizedPnL?: number } = {};
     if (exitedShares >= trade.shares) {
       data.status = "closed";
-      data.realizedPnL = exits.reduce(
-        (sum, e) => sum + e.shares * (e.price - trade.entryPrice),
-        0,
-      );
+      data.realizedPnL =
+        existingExits.reduce(
+          (sum, e) => sum + e.shares * (e.price - trade.entryPrice),
+          0,
+        ) +
+        dto.shares * (dto.price - trade.entryPrice);
     }
 
     return this.prisma.trade.update({

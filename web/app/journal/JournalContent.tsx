@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useLang } from "@/lib/LanguageContext";
 import { Trade, CatalystType, TradeExit, ValidatorResult, AiValidateQuota } from "@/lib/journal-types";
 import { JournalStats, realizedPnL as calcPnL, holdDays } from "@/lib/journal-math";
+import { readError } from "@/lib/auth-client";
 
 // Passed from server page — slim subset of StockReport
 export interface ReportOption {
@@ -128,12 +129,6 @@ function fmtTradeCount(n: number): string {
 }
 
 // ── API helpers ───────────────────────────────────────────────────────────────
-
-async function readError(res: Response, fallback: string): Promise<string> {
-  const body = (await res.json().catch(() => ({}))) as { message?: string | string[] };
-  if (Array.isArray(body.message)) return body.message.join(", ");
-  return body.message ?? fallback;
-}
 
 async function apiCreate(trade: Trade): Promise<Trade> {
   const res = await fetch("/api/journal/trades", {
@@ -662,10 +657,10 @@ function ValidatorSection({ result, generatedAt }: { result: ValidatorResult; ge
           {dateStr}
         </span>
       </div>
-      <div style={{ fontSize: 12, color: "#94a3b8", fontFamily: "var(--font-body, sans-serif)", lineHeight: 1.6, marginBottom: 6 }}>
+      <div style={{ fontSize: 12, color: "#94a3b8", fontFamily: "var(--font-body, sans-serif)", lineHeight: 1.6, marginBottom: 6, maxWidth: "62ch" }}>
         {summaryText}
       </div>
-      <div style={{ fontSize: 11, fontWeight: 700, color: c.text, fontFamily: "var(--font-mono, monospace)" }}>
+      <div style={{ fontSize: 11, fontWeight: 700, color: c.text, fontFamily: "var(--font-mono, monospace)", maxWidth: "62ch" }}>
         → {actionText}
       </div>
     </div>
