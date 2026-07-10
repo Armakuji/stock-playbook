@@ -1,0 +1,199 @@
+{
+  "ticker": "CAPR",
+  "companyName": "Capricor Therapeutics, Inc.",
+  "companyDescription": "Clinical-stage cell therapy biotech · Deramiocel BLA for Duchenne muscular dystrophy cardiomyopathy · Resubmitted BLA after 2025 CRL, FDA Adcom Jul 29 → PDUFA Aug 22, 2026 — true binary approval event",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-10T00:00:00.000Z",
+  "price": 21.96,
+  "priceChange": 0,
+  "priceNote": "6 weeks from PDUFA (Aug 22) and ~3 weeks from the FDA Adcom review (Jul 29). Trading well below the $41-63 analyst target range as the market still prices meaningful CRL risk after the company's prior 2025 rejection on the same BLA.",
+  "marketCap": "$1.3B",
+  "sector": "Healthcare / Biotechnology",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 58,
+  "summary": "Capricor's deramiocel — a cell therapy for Duchenne muscular dystrophy cardiomyopathy — has an FDA Adcom review on July 29, 2026 and a PDUFA decision on August 22, 2026, after the company resubmitted its BLA following a September 2025 Complete Response Letter that asked for additional HOPE-3 pivotal data. HOPE-3 later delivered a 54% reduction in upper-limb disease severity and a 91% slowing of cardiomyopathy progression (LVEF), which analysts (Roth Capital $43, B.Riley $63) argue clears the bar this time. This is a genuine binary event with a real precedent: the same asset already crashed -41% on a CRL once. Size at 2-5% of portfolio max — this is a ค่าขนม bet on a second regulatory swing, not a core position.",
+  "catalysts": [
+    {
+      "icon": "⚡",
+      "name": "FDA PDUFA Decision — Deramiocel BLA (Resubmission)",
+      "description": "FDA target action date for the resubmitted deramiocel Biologics License Application in Duchenne muscular dystrophy cardiomyopathy. This is the second regulatory attempt after a September 2025 CRL requested additional pivotal data — HOPE-3 has since read out positively.",
+      "urgencyLabel": "6 WEEKS",
+      "dateBadge": "Aug 22, 2026",
+      "catalystDate": "2026-08-22",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🗓️",
+      "name": "FDA Cellular, Tissue and Gene Therapies Advisory Committee",
+      "description": "FDA Adcom meets to review the deramiocel BLA ahead of the PDUFA date. A clearly positive panel vote (or lack of major new safety/manufacturing concerns) materially de-risks the Aug 22 decision; a split or negative panel signals fresh CRL risk.",
+      "urgencyLabel": "3 WEEKS",
+      "dateBadge": "Jul 29, 2026",
+      "catalystDate": "2026-07-29",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🧬",
+      "name": "HOPE-3 Confirmatory Data Already Positive",
+      "description": "HOPE-3 Phase 3 data showed a 54% reduction in upper-limb disease severity (p=0.029) and a 91% slowing of cardiomyopathy progression by LVEF — the exact data package the 2025 CRL asked for, now in front of the FDA.",
+      "urgencyLabel": "READ OUT",
+      "dateBadge": "Reported 2026",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Second CRL / rejection risk — CAPR already received one CRL on this exact BLA in September 2025 (stock fell -41% that day); the FDA has shown it is willing to say no once already",
+    "Cash runway / dilution risk — single-asset clinical biotechs commonly raise capital via equity offerings around binary catalysts, especially if a delay or CRL forces another resubmission cycle",
+    "Thin float, high volatility — small-cap biotech with elevated short interest and options-driven flow means moves can overshoot the fundamental news in both directions",
+    "Even on approval, commercial launch execution (payer coverage, cell-therapy logistics, manufacturing scale-up) determines whether the stock holds gains or fades post-pop",
+    "Adcom on Jul 29 is itself a mini binary ahead of the Aug 22 PDUFA — a rough panel session can crush the stock weeks before the official decision"
+  ],
+  "estimateDates": [
+    { "event": "FDA Advisory Committee Meeting", "dateRange": "Jul 29, 2026", "note": "Cellular, Tissue and Gene Therapies Adcom reviews deramiocel BLA", "est": "Panel sentiment expected to lean favorable on HOPE-3 data", "highlight": "yellow" },
+    { "event": "FDA PDUFA Decision", "dateRange": "Aug 22, 2026", "note": "Second review cycle after 2025 CRL requested more pivotal data — now supplied via HOPE-3", "est": "Approval favored by sell-side, not guaranteed", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -65, "price": 7.69 },
+    { "label": "Base", "color": "yellow", "pct": 45, "price": 31.84 },
+    { "label": "Bull", "color": "green", "pct": 130, "price": 50.51 },
+    { "label": "Moon", "color": "purple", "pct": 260, "price": 79.06 }
+  ],
+  "analystTargets": [
+    { "firm": "B.Riley", "target": 63, "rating": "Buy", "note": "Reiterated ahead of Adcom/PDUFA, citing FDA progress" },
+    { "firm": "Roth Capital", "target": 43, "rating": "Buy", "note": "Raised from $41, expects Adcom in Q2/Q3 and approval by the Aug 22 PDUFA" },
+    { "firm": "Cantor Fitzgerald", "target": 60, "rating": "Overweight", "note": "Reiterated Overweight ahead of FDA decision" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Deramiocel's fate is decided by an FDA regulatory panel and PDUFA letter, not by rates — this is a pure event-driven binary that trades independently of Fed policy.",
+    "inflationNote": "CAPR has no near-term commercial revenue to be squeezed by input-cost inflation; the only real cost sensitivity is future capital-raise terms, which are driven by biotech risk appetite more than CPI prints.",
+    "sectorImpact": "Biotech is one of the sectors least sensitive to Fed policy in the near term — the market backdrop (hawkish Fed, compressed growth multiples) is a secondary drag on high-multiple names generally, but a clean deramiocel approval would likely override that entirely, same as it would a rejection.",
+    "summary": "Fed risk is explicitly LOW here — CAPR is a single-asset regulatory binary. Note this plainly: whatever the Fed does between now and Aug 22 is a rounding error next to the PDUFA outcome itself."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 21.96, "note": "Current price — six weeks to PDUFA, plenty of room for pre-event volatility on both sides", "timing": "Now (small starter, 1-2%)" },
+      { "label": "Entry 2", "level": 17.5, "rangeMax": 19.5, "note": "Pre-Adcom nerves dip zone — common for biotech to sell off into the panel date on uncertainty alone", "timing": "If dips into Adcom", "preferred": true },
+      { "label": "Entry 3", "level": 7.69, "note": "Post-CRL crash zone — only for high-conviction re-entry once a clear resubmission path is confirmed, same playbook as Sept 2025", "timing": "Only after a second CRL" }
+    ],
+    "tp1": { "price": 31.84, "pct": 45.0, "note": "Base — approval with a standard label for the cardiomyopathy indication" },
+    "tp2": { "price": 50.51, "pct": 130.0, "note": "Bull — clean approval near the top of the $41-63 analyst range with strong commercial framing" },
+    "tp3": { "price": 79.06, "pct": 260.0, "note": "Moon — approval + re-rate toward broader DMD-franchise optionality, echoing Sarepta's post-eteplirsen re-rate", "moon": true },
+    "stopLoss": {
+      "tight": 18.0, "tightPct": -18.0, "tightNote": "Pre-catalyst break — sentiment souring into Adcom, thesis still technically intact",
+      "hard": 12.5, "hardPct": -43.0, "hardNote": "Second CRL / rejection scenario — this is a gap like the -41% move on the Sept 2025 CRL, not a level that fills cleanly",
+      "riskReward": "7.2 : 1", "rrNote": "Entry ($21.96) vs TP2 ($50.51), risk sized to the hard-stop gap ($12.50), not the tight stop", "rrWarning": "Asymmetric ✅ — size for the hard-stop loss, not the tight stop"
+    },
+    "verdict": "ค่าขนม SPECULATIVE — 2-5% of portfolio max given real second-CRL gap risk (this exact BLA already got one CRL in Sept 2025). Approval → $32-51 (+45% to +130%), franchise re-rate Moon → $79 (+260%). A second CRL likely re-tests the ~-41% single-day crash pattern from Sept 2025. Size for the loss, not the stop.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "Biotechs heading into a second-cycle PDUFA after a data-driven CRL (not a safety CRL) tend to drift up modestly as the resubmission date nears and sell-side reiterates targets, then gap sharply on the Adcom and PDUFA readouts themselves — most of the move is concentrated in the two event windows, not the drift.",
+    "preRunupTiming": "2-4 weeks before Adcom/PDUFA",
+    "preRunupPct": "+5-15%",
+    "postWin": {
+      "avgPct": 74,
+      "range": "+65% to +90%",
+      "note": "Sarepta Therapeutics (SRPT) jumped as much as +90% intraday and closed +74% on Sep 19, 2016 when the FDA granted accelerated approval to eteplirsen, the first-ever approved DMD drug — the closest direct historical comp for a first/renewed DMD approval re-rating a small-cap biotech.",
+      "exampleDate": "Sep 2016"
+    },
+    "postLose": {
+      "avgPct": -41,
+      "range": "-30% to -75%",
+      "note": "CAPR itself fell -41% intraday (from $11.40 close to a $6.74 low) on Sep 25, 2025 when the FDA issued a CRL on this same deramiocel BLA, citing the need for additional HOPE-3 pivotal data. Wider biotech CRL comps range from Fortress Biotech's -30% (Oct 2025, CUTX-101) to Aldeyra Therapeutics' -75% (Mar 2026, reproxalap third CRL).",
+      "exampleDate": "Sep 2025 (CAPR's own prior CRL)"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "3% given a genuine repeat-binary risk — the FDA has already issued one CRL on this exact BLA, so a second rejection is not a tail risk to dismiss, it's a documented precedent. HOPE-3 data addresses the stated deficiency, which supports the bull case, but sizing must respect that this company has already missed once."
+    },
+    "stopPreCatalyst": { "pct": -18, "price": 18.0, "note": "หลุด $18 ก่อน Adcom/PDUFA = conviction เปลี่ยนแม้ event ยังไม่เกิด" },
+    "stopPostCatalyst": { "pct": -43, "note": "ถ้า CRL รอบสองออกมา = exit ทันที ไม่ต้องรอ resubmission รอบสาม — อาจใช้เวลาเป็นปี" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "SRPT",
+      "event": "Eteplirsen (Exondys 51) FDA Accelerated Approval — First DMD Drug",
+      "date": "Sep 2016",
+      "movePct": 74,
+      "days": 1,
+      "outcome": "good",
+      "note": "Sarepta closed +74% (briefly +90% intraday) when the FDA approved the first-ever DMD treatment after a contentious review. Direct comp for deramiocel: same indication (DMD), same small/mid-cap biotech single-asset setup, similar binary-approval structure."
+    },
+    {
+      "ticker": "CAPR",
+      "event": "Deramiocel BLA — First Complete Response Letter",
+      "date": "Sep 2025",
+      "movePct": -41,
+      "days": 1,
+      "outcome": "bad",
+      "note": "CAPR's own prior CRL on this exact BLA, requesting more HOPE-3 pivotal data. The single most relevant precedent for the Aug 22, 2026 decision — shows precisely how the stock reacts to bad news on this asset, and is the reason the current 2-5% sizing discipline matters."
+    },
+    {
+      "ticker": "ALDX",
+      "event": "Reproxalap Third Complete Response Letter",
+      "date": "Mar 2026",
+      "movePct": -75,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Aldeyra fell -75% (from $4.23 to a $1.07 52-week low) on a third consecutive CRL for reproxalap in dry eye disease — illustrates the downside tail when a company's core asset repeatedly fails to clear the FDA bar, the scenario CAPR must avoid on this second attempt."
+    }
+  ],
+  "sources": [
+    "https://www.cnbc.com/2016/09/19/sarepta-therapeutics-shares-briefly-leap-80-after-fda-approves-eteplirsen-drug.html",
+    "https://www.investing.com/news/analyst-ratings/cantor-fitzgerald-reiterates-overweight-on-capricor-stock-ahead-of-fda-decision-93CH-4779117",
+    "https://simplywall.st/stocks/us/pharmaceuticals-biotech/nasdaq-capr/capricor-therapeutics/news/capricor-therapeutics-capr-is-down-58-after-fda-adcom-set-ru/amp",
+    "https://www.capricor.com/investors/news-events/press-releases/detail/348/capricor-therapeutics-announces-fda-advisory-committee",
+    "https://www.biospace.com/duchenne-muscular-dystrophy-drugs-market-size-to-reach-usd-5-5-billion-by-2032-impelled-by-innovations-in-treatment-surgeries"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Deramiocel ของ Capricor — cell therapy รักษา cardiomyopathy จาก Duchenne muscular dystrophy — มี FDA Adcom วันที่ 29 ก.ค. 2026 และ PDUFA decision วันที่ 22 ส.ค. 2026 หลังบริษัท resubmit BLA ใหม่หลังโดน CRL รอบแรกเดือน ก.ย. 2025 ที่ขอข้อมูล pivotal เพิ่มจาก HOPE-3 ต่อมา HOPE-3 ออกมาดี ลด upper-limb disease severity 54% และ ชะลอ cardiomyopathy (LVEF) 91% ทำให้ analyst (Roth Capital $43, B.Riley $63) เชื่อว่ารอบนี้น่าจะผ่าน นี่คือ binary event จริงๆ ที่มี precedent ชัดเจน — asset ตัวนี้เคยร่วง -41% ตอนโดน CRL มาแล้วครั้งหนึ่ง ควร sizing ที่ 2-5% ของ portfolio เท่านั้น — นี่คือเดิมพัน ค่าขนม บน regulatory รอบสอง ไม่ใช่ core position",
+      "priceNote": "เหลือ 6 สัปดาห์ก่อน PDUFA (22 ส.ค.) และราว 3 สัปดาห์ก่อน FDA Adcom (29 ก.ค.) ราคายังต่ำกว่าเป้า analyst ($41-63) มาก เพราะตลาดยัง price ความเสี่ยง CRL รอบสองจากประวัติที่เคยโดนปฏิเสธมาแล้ว",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "FDA PDUFA Decision — Deramiocel BLA (Resubmission)", "description": "วันตัดสิน FDA รอบสองสำหรับ BLA ของ deramiocel รักษา DMD cardiomyopathy หลังโดน CRL เดือน ก.ย. 2025 ที่ขอข้อมูล pivotal เพิ่ม ซึ่ง HOPE-3 ได้ผลบวกมาแล้ว" },
+        { "name": "FDA Cellular, Tissue and Gene Therapies Advisory Committee", "description": "FDA Adcom ประชุมพิจารณา BLA ของ deramiocel ก่อนวัน PDUFA ถ้า panel vote เป็นบวกชัดเจนจะช่วยลดความเสี่ยงของผลวันที่ 22 ส.ค. มาก แต่ถ้า panel มีความเห็นแตกแยกหรือเป็นลบ จะเป็นสัญญาณเสี่ยง CRL รอบใหม่" },
+        { "name": "ข้อมูล HOPE-3 ที่ออกมาดีแล้ว", "description": "HOPE-3 Phase 3 แสดงผลลด upper-limb disease severity 54% (p=0.029) และชะลอ cardiomyopathy progression วัดจาก LVEF ได้ 91% ซึ่งตรงกับข้อมูลที่ CRL ปี 2025 ขอเพิ่มพอดี" }
+      ],
+      "risks": [
+        "ความเสี่ยง CRL รอบสอง — CAPR เคยโดน CRL กับ BLA ตัวนี้มาแล้วเดือน ก.ย. 2025 (หุ้นร่วง -41% วันนั้น) FDA เคยแสดงให้เห็นแล้วว่าปฏิเสธได้",
+        "ความเสี่ยงเรื่อง cash runway / dilution — บริษัท biotech single-asset มักระดมทุนผ่าน equity offering รอบ binary event โดยเฉพาะถ้าล่าช้าหรือโดน CRL อีกรอบ",
+        "Float บาง ความผันผวนสูง — small-cap biotech ที่มี short interest และ options flow เยอะ ทำให้ราคาวิ่งเกินกว่าข่าวจริงได้ทั้งสองทาง",
+        "แม้ approve ก็ยังต้องดู execution ตอน commercial launch (payer coverage, cell-therapy logistics, manufacturing scale-up) ว่าจะรักษา gain ไว้ได้ไหม",
+        "Adcom วันที่ 29 ก.ค. เป็น mini binary ก่อน PDUFA อีกที — panel ที่ออกมาไม่ดีอาจทุบหุ้นก่อนวันตัดสินจริงหลายสัปดาห์"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ชะตากรรมของ deramiocel ขึ้นกับ FDA panel และ PDUFA letter ไม่ใช่ดอกเบี้ย — นี่คือ event-driven binary ล้วนๆ ที่ไม่ขึ้นกับนโยบาย Fed",
+        "inflationNote": "CAPR ยังไม่มีรายได้ commercial ให้ inflation กระทบ ความอ่อนไหวด้านต้นทุนอยู่ที่เงื่อนไขการระดมทุนในอนาคต ซึ่งขึ้นกับ risk appetite ของตลาด biotech มากกว่าตัวเลข CPI",
+        "sectorImpact": "Biotech เป็นกลุ่มที่ sensitivity ต่อ Fed ต่ำที่สุดกลุ่มหนึ่งในระยะสั้น บรรยากาศตลาดตอนนี้ (Fed hawkish, valuation growth ถูกกด) เป็นแรงกดดันรองสำหรับหุ้น multiple สูงทั่วไป แต่ถ้า deramiocel approve ชัดเจนน่าจะข้ามปัจจัยนี้ไปได้เลย เช่นเดียวกับถ้าถูกปฏิเสธก็จะร่วงโดยไม่สนใจ Fed เหมือนกัน",
+        "summary": "ความเสี่ยง Fed ต่ำชัดเจน — CAPR เป็น single-asset regulatory binary ไม่ว่า Fed จะทำอะไรก่อนวันที่ 22 ส.ค. ก็เป็นเรื่องเล็กเทียบกับผล PDUFA เอง"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม SPECULATIVE — 2-5% ของ portfolio เท่านั้น เพราะความเสี่ยง CRL รอบสองเป็นเรื่องจริง (BLA ตัวนี้เคยโดนมาแล้วครั้งหนึ่ง) Approve → $32-51 (+45% ถึง +130%) Moon จาก franchise re-rate → $79 (+260%) ถ้าโดน CRL รอบสองมีโอกาสร่วงซ้ำแบบ -41% เหมือนเดือน ก.ย. 2025 sizing ต้องคิดจาก worst case",
+        "entryLevels": [
+          { "note": "เหลือ 6 สัปดาห์ก่อน PDUFA ยังมีเวลาผันผวนได้ทั้งสองทาง", "timing": "ตอนนี้ (starter เล็ก 1-2%)" },
+          { "note": "โซนย่อก่อน Adcom — biotech มักร่วงก่อน panel จากความไม่แน่ใจล้วนๆ", "timing": "ถ้าย่อก่อน Adcom" },
+          { "note": "โซน crash หลัง CRL รอบสอง — เข้าเฉพาะถ้ามั่นใจทาง resubmission ชัดเจน เหมือนแพทเทิร์นเดือน ก.ย. 2025", "timing": "เฉพาะหลัง CRL รอบสอง" }
+        ],
+        "tp1": { "note": "Base — approve ด้วย label มาตรฐานสำหรับ cardiomyopathy indication" },
+        "tp2": { "note": "Bull — approve ชัดเจนใกล้เพดานเป้า analyst ($41-63) พร้อม framing เชิงพาณิชย์ที่แข็งแรง" },
+        "tp3": { "note": "Moon — approve พร้อม re-rate จาก DMD franchise optionality คล้ายที่ Sarepta เคยได้หลัง eteplirsen", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดก่อน Adcom = sentiment แย่ลงแต่ thesis ยังไม่พัง",
+          "hardNote": "CRL รอบสอง — เป็น gap แบบเดียวกับที่ร่วง -41% ตอน ก.ย. 2025 ไม่ใช่ level ที่ fill ได้เนียนๆ",
+          "rrNote": "Entry ($21.96) เทียบ TP2 ($50.51) risk คิดจาก hard stop ($12.50) ไม่ใช่ tight stop",
+          "rrWarning": "Asymmetric ✅ — sizing ต้องคิดจาก hard-stop loss ไม่ใช่ tight stop"
+        }
+      },
+      "estimateDates": [
+        { "event": "FDA Advisory Committee Meeting", "note": "Adcom พิจารณา BLA ของ deramiocel ก่อน PDUFA" },
+        { "event": "FDA PDUFA Decision", "note": "รอบสองหลัง CRL ปี 2025 ที่ขอข้อมูล pivotal เพิ่ม ซึ่งตอนนี้มี HOPE-3 มาสนับสนุนแล้ว" }
+      ]
+    }
+  }
+}

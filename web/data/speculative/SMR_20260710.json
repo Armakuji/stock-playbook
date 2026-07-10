@@ -1,0 +1,201 @@
+{
+  "ticker": "SMR",
+  "companyName": "NuScale Power Corporation",
+  "companyDescription": "SMR technology · The only NRC-certified small modular reactor design on the market — powering the AI-driven nuclear/data-center demand wave",
+  "exchange": "NYSE",
+  "generatedAt": "2026-07-10T00:00:00.000Z",
+  "price": 8.755,
+  "priceChange": 0,
+  "priceNote": "Trading near its 52-week low, ~85% below the Oct 2025 ATH of $57.42, after a 95.5% YoY revenue collapse in Q1 2026 project-completion lull",
+  "marketCap": "$3.27B",
+  "sector": "Utilities / Nuclear & SMR Technology",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Moonshot",
+  "score": 52,
+  "summary": "NuScale is the only NRC-certified SMR design, already de-risked by Romania's RoPower Final Investment Decision (approved Feb 2026) and now racing toward a year-end 2026 ENTRA1/TVA 6GW power-purchase agreement — both binary catalysts that echo the contract-driven 2000%+ re-ratings seen in OKLO and NNE during the 2024-2025 AI-power supercycle. Near-zero revenue (95.5% YoY decline) and dilution risk make this a pure binary bet, not a core holding. Position size: 2-5% of portfolio max.",
+  "catalysts": [
+    {
+      "icon": "⚡",
+      "name": "ENTRA1/TVA 6GW Power Purchase Agreement",
+      "description": "NuScale's Q1 2026 earnings call flagged the ENTRA1-Tennessee Valley Authority PPA talks advancing toward a year-end 2026 signing target for a potential 6GW SMR deployment — the next major binary catalyst after RoPower's FID.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "Target: Year-End 2026",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🏗️",
+      "name": "RoPower Romania Pre-EPC Financing Close",
+      "description": "Romania approved the Final Investment Decision for six NuScale 77MWe modules (462MWe Doicești plant) in Feb 2026. RoPower is now in the ~15-month pre-EPC phase; securing pre-EPC financing and a contractual structure with Fluor is the next de-risking milestone.",
+      "urgencyLabel": "IN PROGRESS",
+      "dateBadge": "Pre-EPC phase · through ~2027",
+      "catalystDate": "2027-05-01",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "📉",
+      "name": "Q2 2026 Earnings — Cash Burn Check",
+      "description": "Next quarterly print will confirm whether the ~$1.2B liquidity cushion (as of May 2026) is holding up against near-zero revenue, and whether management signals a capital raise / dilution risk.",
+      "urgencyLabel": "~6 WEEKS",
+      "dateBadge": "~Aug 2026",
+      "catalystDate": "2026-08-15",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Revenue collapsed 95.5% YoY in Q1 2026 (project-completion lull) — any delay in TVA PPA or RoPower financing extends the zero-revenue runway and raises dilution/capital-raise risk despite the ~$1.2B cash cushion",
+    "RoPower FID approval came 'with caveats' — pre-EPC financing and EPC contracting could still stall or be repriced given Romania's fiscal constraints, delaying the read-through catalyst",
+    "Extreme historical volatility: SMR itself round-tripped from ~$2 (early 2024) to $57.42 ATH (Oct 2025) back to ~$8.55 lows (mid-2026) — a stock that re-rates just as violently on the way down as up",
+    "First-of-a-kind SMR construction execution risk (cost overruns, licensing delays) is a persistent overhang across the entire sector, not just NuScale"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "~Aug 2026", "note": "Cash burn / liquidity update", "est": "Rev est. <$2M", "highlight": "yellow" },
+    { "event": "ENTRA1/TVA PPA target", "dateRange": "By Dec 2026", "note": "6GW power purchase agreement signing target", "est": "Binary go/no-go", "highlight": "blue" },
+    { "event": "RoPower pre-EPC financing close", "dateRange": "H2 2026 – H1 2027", "note": "Unlocks EPC phase with Fluor as prime contractor", "est": "Binary go/no-go", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -55, "price": 3.94 },
+    { "label": "Base", "color": "yellow", "pct": 30, "price": 11.38 },
+    { "label": "Bull", "color": "green", "pct": 130, "price": 20.14 },
+    { "label": "Moon", "color": "purple", "pct": 300, "price": 35.02 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (14 analysts)", "target": 15.36, "rating": "Hold" },
+    { "firm": "Cantor Fitzgerald", "target": 20, "rating": "Buy" },
+    { "firm": "Canaccord Genuity", "target": 25, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Rates are expected to stay higher-for-longer through 2026, which raises the cost of capital for a pre-revenue, capital-intensive SMR build-out — RoPower's pre-EPC financing and any future NuScale capital raise both get more expensive and harder to close in a tight-rate environment.",
+    "inflationNote": "Construction-input inflation (steel, specialized nuclear-grade components, skilled labor) is a bigger near-term risk to project economics than headline CPI — first-of-a-kind nuclear builds have a history of cost overruns that compound under inflationary pressure.",
+    "sectorImpact": "Nuclear/SMR policy support is bipartisan and largely rate-cycle-insensitive (AI data-center power demand + national energy security are the drivers), but equity-market risk appetite for pre-revenue speculative names like SMR is highly sensitive to the broader rate/liquidity backdrop — a risk-off shift in rates would hit the stock's multiple hard even if the RoPower/TVA fundamentals are unchanged.",
+    "summary": "Nuclear/SMR sector demand is largely Fed-cycle-insensitive, but SMR's ability to finance RoPower's pre-EPC phase and avoid dilutive capital raises is directly exposed to the rate environment — MEDIUM risk, financing-cost driven rather than demand driven."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 8.76, "note": "Current price — near 52-week low, both binary catalysts still ahead", "timing": "Now" },
+      { "label": "Entry 2", "level": 7.0, "rangeMax": 7.5, "note": "Dip zone if cash-burn headlines or RoPower financing delay hit sentiment", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 5.5, "note": "Capitulation/dilution-scare level — new 52-week low territory", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 11.38, "pct": 30, "note": "Base case — sector sentiment recovery + TVA PPA progress confirmed without full signing" },
+    "tp2": { "price": 20.14, "pct": 130, "note": "Bull case — TVA PPA signed and/or RoPower pre-EPC financing closes cleanly" },
+    "tp3": { "price": 35.02, "pct": 300, "note": "Moon case — both catalysts land plus a broader AI-power-demand sector re-rating (echoes the 2024-2025 OKLO/NNE supercycle)", "moon": true },
+    "stopLoss": {
+      "tight": 7.27,
+      "tightPct": -17,
+      "tightNote": "Breaks below the 52-week low ($8.55) — market pricing in catalyst delay",
+      "hard": 5.08,
+      "hardPct": -42,
+      "hardNote": "Dilution/cash-crunch scenario — RoPower financing stalls with no fresh capital buffer",
+      "riskReward": "7.5:1",
+      "rrNote": "Tight stop (-17%) vs TP2 (+130%)",
+      "rrWarning": "Asymmetric ✅"
+    },
+    "verdict": "Binary catalyst stack (TVA PPA + RoPower financing) with 7.5:1 asymmetric risk/reward — scale in at 2-5% of portfolio max, never lump sum.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "Small-cap SMR/nuclear names historically run up on rumor/leak flow ahead of confirmed contract or PPA signings, as seen with OKLO ahead of its Switch data-center agreement and NNE ahead of its 2024-2025 sector re-rating",
+    "preRunupTiming": "2-4 weeks before signing/confirmation",
+    "preRunupPct": "+10-20%",
+    "postWin": {
+      "avgPct": 45,
+      "range": "+25% to +80%",
+      "note": "OKLO shares surged 125%+ in the months after the Sept 2024 Microsoft-Constellation nuclear power agreement re-rated the whole sector, then continued climbing on its own Switch 12GW data-center deal in Dec 2024",
+      "exampleDate": "Sept–Dec 2024"
+    },
+    "postLose": {
+      "avgPct": -30,
+      "range": "-20% to -45%",
+      "note": "SMR's own history is the clearest precedent: the stock fell from its $57.42 Oct 2025 ATH to ~$8.55 by mid-2026 as catalysts stalled and a 95.5% YoY revenue collapse fed dilution/cash-burn fears",
+      "exampleDate": "Oct 2025 – Jul 2026"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Binary financing/PPA catalysts plus a 95.5% YoY revenue collapse mean a failed catalyst can produce a 40%+ drawdown — cap exposure at a survivable 3% of portfolio"
+    },
+    "stopPreCatalyst": { "pct": -17, "price": 7.27, "note": "Loss of the 52-week low signals the market is pricing in TVA/RoPower delay risk before any news confirms it" },
+    "stopPostCatalyst": { "pct": -42, "note": "Exit if the TVA PPA falls through or RoPower pre-EPC financing fails to close by early 2027" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "OKLO",
+      "event": "SPAC listing (May 2024) through 2025 AI-power-demand re-rating on DOE regulatory milestones + Switch/data-center power agreements",
+      "date": "May 2024 – 2025",
+      "movePct": 2094,
+      "days": 500,
+      "outcome": "good",
+      "note": "Oklo debuted at $8.45 on NYSE after its AltC SPAC merger (May 10, 2024) and reached a 52-week high of $193.84, driven by a stack of DOE regulatory approvals and multi-GW data-center power deals — the same contract/regulatory catalyst pattern SMR is chasing with RoPower/TVA"
+    },
+    {
+      "ticker": "NNE",
+      "event": "IPO (May 2024) through 2025 nuclear/SMR sector re-rating on AI power-demand catalysts (Microsoft-Constellation restart, Amazon/Google SMR commitments)",
+      "date": "May 2024 – Oct 2025",
+      "movePct": 1773,
+      "days": 520,
+      "outcome": "good",
+      "note": "Nano Nuclear Energy IPO'd on Nasdaq May 8, 2024 at an all-time low of $3.25 and hit an all-time high of $60.87 on Oct 15, 2025 as the broader nuclear/SMR sector re-rated on AI data-center power demand — illustrates how binding contracts/PPAs can compound small-cap nuclear moves well past 300%"
+    }
+  ],
+  "sources": [
+    "https://neutronbytes.com/2026/02/13/final-investment-decision-approved-for-six-nuscale-smrs-in-romania/",
+    "https://www.powermag.com/romanias-coal-to-nuscale-smr-conversion-secures-fid-moves-into-implementation-with-caveats/",
+    "https://finance.biggo.com/news/US_SMR_2026-05-07",
+    "https://www.fool.com/earnings/call-transcripts/2026/05/08/nuscale-smr-q1-2026-earnings-transcript/",
+    "https://www.marketbeat.com/stocks/NYSE/SMR/forecast/",
+    "https://www.bloomberg.com/news/articles/2024-05-10/altman-backed-oklo-s-shares-slump-in-debut-after-hot-spac-deal",
+    "https://finbold.com/heres-whats-happening-with-sam-altman-backed-oklo-stock/",
+    "https://stockanalysis.com/stocks/nne/",
+    "https://www.tipranks.com/news/oklo-stock-soars-on-nuclear-power-plant-agreement-with-data-center-operator-switch"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "NuScale เป็น SMR รายเดียวที่ผ่านการรับรองจาก NRC โครงการ RoPower ในโรมาเนียผ่าน FID แล้ว (ก.พ. 2026) และกำลังลุ้น deal ENTRA1/TVA 6GW ที่ตั้งเป้าเซ็นภายในสิ้นปี 2026 — catalyst ทั้งสองตัวมีลักษณะเดียวกับที่เคยทำให้ OKLO และ NNE วิ่งกว่า 2000% ในช่วง supercycle พลังงานนิวเคลียร์ปี 2024-2025 แต่รายได้หายไป 95.5% YoY ทำให้เสี่ยง dilution สูง เหมาะเป็น bet แบบ binary เท่านั้น ไม่ใช่ core holding ตำแหน่ง: 2-5% ของ portfolio เท่านั้น",
+      "priceNote": "ราคาใกล้จุดต่ำสุดรอบ 52 สัปดาห์ ลดลงราว 85% จาก ATH $57.42 (ต.ค. 2025) หลังรายได้ Q1 2026 หายไป 95.5% YoY",
+      "scoreLabel": "Moonshot",
+      "catalysts": [
+        { "name": "ข้อตกลงซื้อขายไฟฟ้า ENTRA1/TVA 6GW", "description": "จากการประชุมผลประกอบการ Q1 2026 ฝ่ายบริหารระบุว่าการเจรจา PPA กับ TVA คืบหน้าไปสู่เป้าหมายเซ็นสัญญาภายในสิ้นปี 2026 — catalyst binary ตัวถัดไปหลัง RoPower ผ่าน FID" },
+        { "name": "ปิดดีลไฟแนนซ์ pre-EPC ของ RoPower โรมาเนีย", "description": "โรมาเนียอนุมัติ FID สำหรับโมดูล NuScale 6 หน่วย (462MWe) เมื่อ ก.พ. 2026 ตอนนี้อยู่ในเฟส pre-EPC ~15 เดือน การปิดไฟแนนซ์และตกลงโครงสร้างสัญญากับ Fluor คือ milestone ถัดไป" },
+        { "name": "ผลประกอบการ Q2 2026 — เช็คเงินสด", "description": "งวดถัดไปจะยืนยันว่าเงินสดราว 1.2 พันล้านดอลลาร์ (พ.ค. 2026) เพียงพอรองรับรายได้ที่แทบเป็นศูนย์หรือไม่ และมีสัญญาณ dilution หรือไม่" }
+      ],
+      "risks": [
+        "รายได้ลดลง 95.5% YoY ใน Q1 2026 — หาก TVA PPA หรือไฟแนนซ์ RoPower ล่าช้า จะยืดระยะเวลาไม่มีรายได้และเพิ่มความเสี่ยง dilution แม้จะมีเงินสดสำรอง 1.2 พันล้านดอลลาร์",
+        "FID ของ RoPower ผ่านแบบ 'มีเงื่อนไข' — การปิดไฟแนนซ์ pre-EPC และสัญญา EPC อาจสะดุดหรือถูกต่อรองราคาใหม่จากข้อจำกัดการคลังของโรมาเนีย",
+        "หุ้นผันผวนสุดขั้ว: SMR เองเคยวิ่งจาก ~$2 (ต้นปี 2024) ไปแตะ ATH $57.42 (ต.ค. 2025) แล้วร่วงกลับมา ~$8.55 (กลางปี 2026) — หุ้นที่ปรับขึ้นแรงเท่าไหร่ก็ร่วงแรงได้เท่านั้น",
+        "ความเสี่ยงด้านการก่อสร้าง SMR แบบ first-of-a-kind (ต้นทุนบานปลาย ใบอนุญาตล่าช้า) เป็นความเสี่ยงต่อเนื่องของทั้งเซกเตอร์ ไม่ใช่แค่ NuScale"
+      ],
+      "macroRisk": {
+        "rateOutlook": "อัตราดอกเบี้ยมีแนวโน้มค้างระดับสูงต่อเนื่องตลอดปี 2026 ทำให้ต้นทุนเงินทุนของโครงการ SMR ที่ยังไม่มีรายได้และใช้เงินลงทุนสูงแพงขึ้น ทั้งไฟแนนซ์ pre-EPC ของ RoPower และการระดมทุนในอนาคตของ NuScale จะปิดดีลยากขึ้นในภาวะดอกเบี้ยตึงตัว",
+        "inflationNote": "เงินเฟ้อด้านต้นทุนก่อสร้าง (เหล็ก ชิ้นส่วนเกรดนิวเคลียร์ แรงงานเฉพาะทาง) เป็นความเสี่ยงระยะสั้นต่อ economics ของโครงการมากกว่า CPI ทั่วไป — โครงการนิวเคลียร์ first-of-a-kind มีประวัติต้นทุนบานปลายซึ่งยิ่งแย่ลงในภาวะเงินเฟ้อ",
+        "sectorImpact": "แรงหนุนเชิงนโยบายต่อนิวเคลียร์/SMR ได้รับการสนับสนุนจากทั้งสองพรรคและค่อนข้างไม่อิงวัฏจักรดอกเบี้ย (ความต้องการไฟฟ้าจาก AI data center + ความมั่นคงพลังงานเป็นตัวขับเคลื่อนหลัก) แต่ความอยากเสี่ยงของตลาดต่อหุ้นเก็งกำไรที่ยังไม่มีรายได้อย่าง SMR ไวต่อบรรยากาศดอกเบี้ย/สภาพคล่องโดยรวมมาก",
+        "summary": "ความต้องการเซกเตอร์นิวเคลียร์/SMR ค่อนข้างไม่อิงวัฏจักร Fed แต่ความสามารถของ SMR ในการหาไฟแนนซ์ RoPower โดยไม่ต้อง dilute หุ้นเพิ่มนั้นผูกกับภาวะดอกเบี้ยโดยตรง — ความเสี่ยงระดับ MEDIUM จากต้นทุนไฟแนนซ์ ไม่ใช่จากดีมานด์"
+      },
+      "entryStrategy": {
+        "verdict": "Catalyst แบบ binary สองชั้น (TVA PPA + ไฟแนนซ์ RoPower) ให้ risk/reward ไม่สมมาตร 7.5:1 — ทยอยเข้าที่ 2-5% ของ portfolio เท่านั้น ห้ามลงทีเดียวทั้งก้อน",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ใกล้จุดต่ำสุดรอบ 52 สัปดาห์ catalyst ทั้งสองยังไม่เกิด", "timing": "ตอนนี้" },
+          { "note": "โซนย่อ หากข่าวเงินสดหรือความล่าช้าของ RoPower กดดัน sentiment", "timing": "ถ้าย่อ" },
+          { "note": "ระดับ panic/กลัว dilution — เข้าสู่จุดต่ำสุดใหม่รอบ 52 สัปดาห์", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "กรณีฐาน — sentiment เซกเตอร์ฟื้นตัว + ความคืบหน้า TVA PPA แม้ยังไม่เซ็นเต็มรูปแบบ" },
+        "tp2": { "note": "กรณี Bull — เซ็น TVA PPA และ/หรือปิดไฟแนนซ์ pre-EPC ของ RoPower ได้สำเร็จ" },
+        "tp3": { "note": "กรณี Moon — catalyst ทั้งสองสำเร็จ พร้อม sector re-rating รอบใหม่จากดีมานด์พลังงาน AI (คล้าย supercycle OKLO/NNE ปี 2024-2025)" },
+        "stopLoss": {
+          "tightNote": "หลุดจุดต่ำสุดรอบ 52 สัปดาห์ ($8.55) — ตลาดเริ่ม price in ความเสี่ยง catalyst ล่าช้า",
+          "hardNote": "สถานการณ์ dilution/ขาดเงินสด — ไฟแนนซ์ RoPower สะดุดโดยไม่มีเงินทุนสำรองใหม่",
+          "rrNote": "stop แคบ (-17%) เทียบกับ TP2 (+130%)",
+          "rrWarning": "ไม่สมมาตรในทางที่ดี ✅"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q2 2026", "note": "อัปเดตสถานะเงินสด/การเผาผลาญเงินสด" },
+        { "event": "เป้าหมาย PPA ENTRA1/TVA", "note": "เป้าเซ็นสัญญาซื้อขายไฟฟ้า 6GW ภายในสิ้นปี" },
+        { "event": "ปิดไฟแนนซ์ pre-EPC ของ RoPower", "note": "ปลดล็อกเฟส EPC โดยมี Fluor เป็นผู้รับเหมาหลัก" }
+      ]
+    }
+  }
+}
