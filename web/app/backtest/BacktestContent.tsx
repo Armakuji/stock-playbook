@@ -6,6 +6,7 @@ import { useLang } from "@/lib/LanguageContext";
 import { BacktestEntry, BacktestStats, Checkpoint } from "@/lib/backtest";
 import { NearMissOutcome } from "@/lib/near-miss";
 import { NorthStar } from "@/lib/north-star";
+import { TurboNorthStar } from "@/lib/turbo-north-star";
 
 // ── Constants ─────────────────────────────────────────────────────────────────
 
@@ -245,6 +246,119 @@ function NorthStarSection({ ns }: { ns: NorthStar }) {
   );
 }
 
+// ── Turbo North Star ──────────────────────────────────────────────────────
+
+function TurboNorthStarSection({ ns }: { ns: TurboNorthStar }) {
+  const rate = (v: number | null) => (v == null ? "—" : `${Math.round(v * 100)}%`);
+  const rateColor = (v: number | null) => (v == null ? "#64748b" : v >= 0.5 ? "#10b981" : v >= 0.3 ? "#f59e0b" : "#ef4444");
+  const small = ns.totalComplete > 0 && ns.totalComplete < 5;
+
+  return (
+    <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: 14, padding: "20px 22px", marginBottom: 24 }}>
+      <div style={{ fontSize: 10, fontWeight: 800, color: "#ff6d00", textTransform: "uppercase", letterSpacing: "1.5px", fontFamily: "var(--font-mono, monospace)", marginBottom: 6 }}>
+        🎰 Turbo — +{ns.targetPct}% within {ns.windowDays} days
+      </div>
+      <p style={{ fontSize: 11.5, color: "var(--muted)", margin: "0 0 12px", lineHeight: 1.6 }}>
+        Moonshot picks (web/data/speculative/) are lottery tickets, not 2-week catalyst events — measured on their own thesis, kept out of the core stats/table above.
+      </p>
+
+      <div style={{ fontSize: 11, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", marginBottom: 16 }}>
+        n = {ns.n} turbo snapshot{ns.n !== 1 ? "s" : ""} total · {ns.totalComplete} complete · {ns.totalAccumulating} accumulating{ns.totalNoData > 0 ? ` · ${ns.totalNoData} no-data` : ""}
+      </div>
+
+      {small && (
+        <div style={{
+          padding: "8px 12px", borderRadius: 8, marginBottom: 16,
+          background: "#f59e0b18", border: "1px solid #f59e0b30",
+          fontSize: 11.5, color: "#f59e0b", fontFamily: "var(--font-mono, monospace)",
+        }}>
+          ⚠️ Sample too small (n={ns.totalComplete}) — directional only, not a real hit rate yet.
+        </div>
+      )}
+
+      {ns.totalComplete === 0 ? (
+        <div style={{ textAlign: "center", padding: "24px 0", color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", fontSize: 12 }}>
+          <div style={{ fontSize: 22, marginBottom: 8 }}>⏳</div>
+          {ns.totalAccumulating} window{ns.totalAccumulating === 1 ? "" : "s"} still filling — run <code>npm run backtest:fetch</code> as the 30-day windows complete.
+        </div>
+      ) : (
+        <>
+          {/* Hero stats */}
+          <div style={{ display: "flex", gap: 28, flexWrap: "wrap", marginBottom: 18 }}>
+            <div>
+              <div style={{ fontSize: 34, fontWeight: 900, color: rateColor(ns.hitRate), fontFamily: "var(--font-mono, monospace)", lineHeight: 1 }}>{rate(ns.hitRate)}</div>
+              <div style={{ fontSize: 9, color: "var(--muted)", textTransform: "uppercase", letterSpacing: "1px", fontFamily: "var(--font-mono, monospace)", marginTop: 3 }}>hit rate · n={ns.totalComplete}</div>
+            </div>
+            <div>
+              <div style={{ fontSize: 34, fontWeight: 900, color: ns.medianMAE != null && ns.medianMAE > -30 ? "#10b981" : "#f59e0b", fontFamily: "var(--font-mono, monospace)", lineHeight: 1 }}>{fmtPct(ns.medianMAE)}</div>
+              <div style={{ fontSize: 9, color: "var(--muted)", textTransform: "uppercase", letterSpacing: "1px", fontFamily: "var(--font-mono, monospace)", marginTop: 3 }}>median MAE</div>
+            </div>
+            <div>
+              <div style={{ fontSize: 34, fontWeight: 900, color: "#d500f9", fontFamily: "var(--font-mono, monospace)", lineHeight: 1 }}>{ns.medianTimeToHit != null ? `${ns.medianTimeToHit}d` : "—"}</div>
+              <div style={{ fontSize: 9, color: "var(--muted)", textTransform: "uppercase", letterSpacing: "1px", fontFamily: "var(--font-mono, monospace)", marginTop: 3 }}>median time-to-hit</div>
+            </div>
+          </div>
+
+          {/* Time-to-hit distribution */}
+          {ns.timeToHitDistribution.length > 0 && (
+            <div style={{ marginBottom: 18 }}>
+              <div style={{ fontSize: 9, color: "var(--muted)", textTransform: "uppercase", letterSpacing: "1px", fontFamily: "var(--font-mono, monospace)", marginBottom: 6 }}>
+                Time-to-hit distribution (days)
+              </div>
+              <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
+                {ns.timeToHitDistribution.map((d, i) => (
+                  <span key={i} style={{
+                    fontSize: 11, fontWeight: 800, padding: "3px 9px", borderRadius: 6,
+                    background: "#d500f918", color: "#d500f9", border: "1px solid #d500f930",
+                    fontFamily: "var(--font-mono, monospace)",
+                  }}>
+                    Day {d}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Entries table */}
+          <div style={{ overflowX: "auto" }}>
+            <table style={{ width: "100%", borderCollapse: "collapse", minWidth: 520, fontFamily: "var(--font-mono, monospace)", fontSize: 12 }}>
+              <thead>
+                <tr style={{ borderBottom: "1px solid var(--border)" }}>
+                  {["Ticker", "Report Date", "Status", "Max Gain", "MAE", "Hit +50%", "Time-to-hit"].map((h) => (
+                    <th key={h} style={{ padding: "8px 12px", textAlign: h === "Ticker" ? "left" : "center", fontSize: 9, fontWeight: 800, color: "var(--muted)", textTransform: "uppercase", letterSpacing: "1px", whiteSpace: "nowrap" }}>{h}</th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {ns.entries.map((e, i) => (
+                  <tr key={`${e.ticker}-${e.reportDate}`} style={{ borderBottom: i < ns.entries.length - 1 ? "1px solid var(--border)" : "none" }}>
+                    <td style={{ padding: "8px 12px", fontWeight: 800 }}>{e.ticker}</td>
+                    <td style={{ padding: "8px 12px", textAlign: "center", color: "var(--muted)" }}>{fmtDate(e.reportDate)}</td>
+                    <td style={{ padding: "8px 12px", textAlign: "center" }}>
+                      <span style={{
+                        fontSize: 9, fontWeight: 800, padding: "2px 7px", borderRadius: 5,
+                        background: e.status === "complete" ? "#10b98118" : e.status === "accumulating" ? "#3b82f618" : "#64748b18",
+                        color: e.status === "complete" ? "#10b981" : e.status === "accumulating" ? "#3b82f6" : "#64748b",
+                        border: `1px solid ${e.status === "complete" ? "#10b98130" : e.status === "accumulating" ? "#3b82f630" : "#64748b30"}`,
+                      }}>
+                        {e.status}
+                      </span>
+                    </td>
+                    <td style={{ padding: "8px 12px", textAlign: "center", fontWeight: 700, color: e.maxGainPct != null && e.maxGainPct >= 0 ? "#10b981" : "#64748b" }}>{fmtPct(e.maxGainPct)}</td>
+                    <td style={{ padding: "8px 12px", textAlign: "center", fontWeight: 700, color: "#f59e0b" }}>{fmtPct(e.maePct)}</td>
+                    <td style={{ padding: "8px 12px", textAlign: "center", fontWeight: 800, color: e.hit ? "#10b981" : e.hit === false ? "#ef4444" : "#64748b" }}>{e.hit == null ? "—" : e.hit ? "✓" : "✗"}</td>
+                    <td style={{ padding: "8px 12px", textAlign: "center", color: "var(--muted)" }}>{e.timeToHitDays != null ? `${e.timeToHitDays}d` : "—"}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
+
 // ── Near-miss log ───────────────────────────────────────────────────────────
 
 function NearMissSection({ nearMisses, pickAvg30 }: { nearMisses: NearMissOutcome[]; pickAvg30: number | null }) {
@@ -351,7 +465,7 @@ function NearMissSection({ nearMisses, pickAvg30 }: { nearMisses: NearMissOutcom
 
 // ── Main ──────────────────────────────────────────────────────────────────────
 
-export function BacktestContent({ entries, stats, nearMisses, northStar }: { entries: BacktestEntry[]; stats: BacktestStats; nearMisses: NearMissOutcome[]; northStar: NorthStar }) {
+export function BacktestContent({ entries, stats, nearMisses, northStar, turboNorthStar }: { entries: BacktestEntry[]; stats: BacktestStats; nearMisses: NearMissOutcome[]; northStar: NorthStar; turboNorthStar: TurboNorthStar }) {
   const { lang } = useLang();
   const th = lang === "th";
   const pick30 = entries.flatMap((e) => e.checkpoints.filter((c) => c.days === 30 && c.actualPct !== null).map((c) => c.actualPct as number));
@@ -396,6 +510,9 @@ export function BacktestContent({ entries, stats, nearMisses, northStar }: { ent
 
       {/* North Star — the headline metric */}
       <NorthStarSection ns={northStar} />
+
+      {/* Turbo North Star — separate thesis, separate section (never mixed into core stats/table) */}
+      <TurboNorthStarSection ns={turboNorthStar} />
 
       {/* Calibration chart */}
       <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: 14, padding: "20px 22px", marginBottom: 24 }}>

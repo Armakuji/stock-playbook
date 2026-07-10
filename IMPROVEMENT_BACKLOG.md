@@ -224,15 +224,16 @@ label `#7f3030`→`#7f4040`, `.mval` 10px→11px, `.mfill` gradient alpha `30/80
 tsc --noEmit + eslint สะอาดทั้ง 2 ไฟล์ที่แก้ · เช็ค render จริงผ่าน curl (`/dca`, `/turbo`
 dev server) เห็น class ครบ ไม่มี error ใน server log
 
-## 24. Turbo backtest coverage — `speculative/` ไม่ถูกวัดเลย + metric ของตัวเอง
+## 24. ✅ DONE — Turbo backtest coverage — `speculative/` ไม่ถูกวัดเลย + metric ของตัวเอง
 
 **ปัญหา:** backtest ทั้งระบบ (`web/lib/backtest.ts`, `web/lib/north-star.ts`, `scripts/fetch-backtest-prices.mjs`) อ่านแค่ `web/data/reports/` — turbo reports ใน `web/data/speculative/` (36 ไฟล์ ณ 2026-07-10) ไม่ถูก backtest เลยสักตัว = `/turbo-list` ไม่มีทางรู้ว่าตัวเองแม่นไหม · และ North Star "+30%/14d" ไม่ตรง thesis moonshot (lottery ticket ถือรอเด้ง 300%+ ไม่ใช่ event 2 สัปดาห์) เอา metric เดิมมาใช้ตรง ๆ จะตัดสิน turbo ผิด
 **ทำ:**
   1. ขยาย `scripts/fetch-backtest-prices.mjs` ให้ scan `web/data/speculative/` ด้วย → เก็บ path ลง `path-cache.json` (key เดิม `TICKER_YYYYMMDD` ใช้ร่วมได้ แต่ระวัง ticker ชนกันข้าม dir — อาจ prefix key หรือเก็บ dir ใน entry)
   2. เพิ่ม turbo North Star metric แยก — เสนอเริ่มที่ **"+50% ภายใน 30 วัน"** + median MAE (เคาะตัวเลขตอน implement ได้ แต่ต้อง fix ก่อนดูข้อมูลกัน hindsight bias) · เก็บ time-to-hit distribution ด้วยตามแนว North Star v2.1
   3. แสดงผลแยก section บนหน้า backtest (`web/app/backtest/BacktestContent.tsx`) — "🎰 Turbo" ไม่ปนกับ catalyst core กัน framing ผิด
-**ไฟล์:** `scripts/fetch-backtest-prices.mjs` · `web/lib/north-star.ts` (หรือแยก `turbo-north-star.ts`) · `web/lib/backtest.ts` · `web/app/backtest/BacktestContent.tsx` · `web/data/path-cache.json`
-**เป้า:** turbo pick ทุกตัวถูกวัดด้วย metric ที่ตรง thesis ตัวเอง · หน้า backtest ตอบได้ว่า hit-rate "+50%/30d" ของ turbo จริงเท่าไหร่ · เป็น input ให้ #25 · **prerequisite:** ต้องรัน `backtest:fetch` บนเครื่องจริงก่อน (Ops item ท้ายไฟล์ — path-cache ตอนนี้ว่างเปล่า)
+**Key namespace:** turbo keys = `turbo:TICKER_YYYYMMDD` ในทั้ง `backtest-cache.json` และ `path-cache.json` (core keys `TICKER_YYYYMMDD` เดิมไม่เปลี่ยน — verify แล้วว่าไม่มี key ชนกัน) · **Metric:** `web/lib/turbo-north-star.ts` (ไฟล์ใหม่ แยกจาก `north-star.ts` ไม่แตะ core exports) — `TURBO_WINDOW_DAYS=30`, `TURBO_TARGET_PCT=50`, per-entry `maxGainPct`/`maePct`/`hit`/`timeToHitDays`/`status`, aggregate `hitRate`/`medianMAE`/`medianTimeToHit`/`timeToHitDistribution`/`n` เสมอ · `scripts/fetch-backtest-prices.mjs` รีแฟกเตอร์เป็น pure exported functions (`collectCheckpointTargets`/`collectPathSnapshots`/`cacheKey`/`turboCacheKey`) + guard `if (import.meta.url === ...)` กัน side-effect ตอน import เพื่อ unit-test ได้โดยไม่ยิง network · รันจริงบนเครื่อง (มี network) แล้ว: 62 core + 36 turbo path snapshots fetch สำเร็จ, ไม่มี key ชนกัน, core keys ตรงเดิมทุกตัว · หน้า `/backtest` render section "🎰 Turbo — +50% within 30 days" แยกจาก core section จริง (curl ยืนยัน: n=36, 0 complete, 36 accumulating — ตรงตามคาด เพราะ turbo report เก่าสุด 2026-06-21 window 30 วันจะครบ ~21 ก.ค.)
+**ไฟล์:** `scripts/fetch-backtest-prices.mjs` · `web/lib/turbo-north-star.ts` (ใหม่) · `web/app/backtest/page.tsx` · `web/app/backtest/BacktestContent.tsx` · `web/data/path-cache.json`
+**เป้า:** turbo pick ทุกตัวถูกวัดด้วย metric ที่ตรง thesis ตัวเอง ✅ · หน้า backtest ตอบได้ว่า hit-rate "+50%/30d" ของ turbo จริงเท่าไหร่ (ตอนนี้ n=36 ยังไม่มีตัว complete — รอ window ครบ) · เป็น input ให้ #25 · tsc --noEmit + eslint สะอาด · `npm run backtest:fetch` รันจริงผ่านแล้ว (ไม่ต้องรอ Ops อีก — path-cache มีข้อมูลแล้ว)
 
 ## 25. Skill feedback loop — เอาผล backtest จริงมาเป็น prior ให้ catalyst-list / turbo-list / analyze
 
