@@ -4,6 +4,8 @@ import Link from "next/link";
 import { StockReport } from "@/lib/types";
 import { marketCapTier } from "@/lib/market-cap";
 import { daysToCatalyst, timingTier } from "@/lib/catalyst-timing";
+import { useLang } from "@/lib/LanguageContext";
+import { applyTranslation } from "@/lib/i18n";
 
 const TIER_COLOR = ["#ef4444", "#f59e0b", "#3b82f6", "#64748b"];
 
@@ -44,7 +46,7 @@ function ScoreRing({ score, color }: { score: number; color: string }) {
 }
 
 // ── Price-to-target bar ───────────────────────────────────────────────────────
-function PriceBar({ report, verdictColor }: { report: StockReport; verdictColor: string }) {
+function PriceBar({ report, verdictColor, th }: { report: StockReport; verdictColor: string; th: boolean }) {
   const sl = report.entryStrategy.stopLoss.tight ?? (report.price * 0.85);
   const tp3 = report.entryStrategy.tp3.price;
   const range = tp3 - sl;
@@ -67,7 +69,7 @@ function PriceBar({ report, verdictColor }: { report: StockReport; verdictColor:
     <div style={{ marginTop: 14, paddingTop: 12, borderTop: "1px solid var(--border)" }}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8 }}>
         <span style={{ fontSize: 9, color: "var(--muted)", textTransform: "uppercase", letterSpacing: "1px", fontFamily: "var(--font-mono, monospace)" }}>
-          Price vs Targets
+          {th ? "ราคา vs เป้าหมาย" : "Price vs Targets"}
         </span>
         <span style={{ fontSize: 10, fontWeight: 800, color: "#10b981", fontFamily: "var(--font-mono, monospace)" }}>
           TP2 +{tp2Upside}%
@@ -118,7 +120,7 @@ function PriceBar({ report, verdictColor }: { report: StockReport; verdictColor:
           color: "#3b82f6", transform: "translateX(-50%)",
           fontFamily: "var(--font-mono, monospace)", whiteSpace: "nowrap",
         }}>
-          ENTRY
+          {th ? "เข้า" : "ENTRY"}
         </span>
         <span style={{
           position: "absolute", left: `${tp2Pct}%`, fontSize: 8,
@@ -153,12 +155,15 @@ function DriftIndicator({ drift }: { drift: number | null }) {
 }
 
 // ── Main card ─────────────────────────────────────────────────────────────────
-export function StockCard({ report, rank, rankScore, scoreDrift = null }: {
+export function StockCard({ report: rawReport, rank, rankScore, scoreDrift = null }: {
   report: StockReport;
   rank: number;
   rankScore: number;
   scoreDrift?: number | null;
 }) {
+  const { lang } = useLang();
+  const th = lang === "th";
+  const report = applyTranslation(rawReport, lang);
   const verdictColor = VERDICT_COLORS[report.verdict] ?? "#64748b";
   const riskColor    = RISK_COLORS[report.macroRisk.fedRisk] ?? "#64748b";
   const isPositive   = report.priceChange >= 0;
@@ -255,14 +260,14 @@ export function StockCard({ report, rank, rankScore, scoreDrift = null }: {
               )}
               {dToc !== null && (
                 <span
-                  title="Days to next catalyst"
+                  title={th ? "จำนวนวันถึง catalyst ถัดไป" : "Days to next catalyst"}
                   style={{
                     fontSize: 9, fontWeight: 800, padding: "2px 7px", borderRadius: 5,
                     background: `${tocColor}1c`, color: tocColor, border: `1px solid ${tocColor}3a`,
                     letterSpacing: "0.5px", whiteSpace: "nowrap", fontFamily: "var(--font-mono, monospace)",
                   }}
                 >
-                  ⏱ {dToc <= 0 ? "today" : `${dToc}d`}
+                  ⏱ {dToc <= 0 ? (th ? "วันนี้" : "today") : `${dToc}d`}
                 </span>
               )}
             </div>
@@ -302,9 +307,9 @@ export function StockCard({ report, rank, rankScore, scoreDrift = null }: {
         {/* Row 5: stat chips */}
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 6 }}>
           {[
-            { label: "Fed Risk",  value: report.macroRisk.fedRisk,         color: riskColor        },
-            { label: "Approach",  value: report.entryStrategy.approach,     color: "var(--text)"    },
-            { label: "Sector",    value: report.sector?.split("/")[0]?.trim() ?? "—", color: "var(--muted)" },
+            { label: th ? "ความเสี่ยง Fed" : "Fed Risk",  value: report.macroRisk.fedRisk,         color: riskColor        },
+            { label: th ? "แนวทาง" : "Approach",  value: report.entryStrategy.approach,     color: "var(--text)"    },
+            { label: th ? "กลุ่มธุรกิจ" : "Sector",    value: report.sector?.split("/")[0]?.trim() ?? "—", color: "var(--muted)" },
           ].map(({ label, value, color }) => (
             <div key={label} style={{
               background: "#ffffff07", borderRadius: 8, padding: "7px 9px",
@@ -317,7 +322,7 @@ export function StockCard({ report, rank, rankScore, scoreDrift = null }: {
         </div>
 
         {/* Row 6: Price-to-target bar */}
-        <PriceBar report={report} verdictColor={verdictColor} />
+        <PriceBar report={report} verdictColor={verdictColor} th={th} />
       </div>
     </Link>
   );

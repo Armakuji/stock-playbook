@@ -222,7 +222,7 @@ The JSON must follow this exact TypeScript type (StockReport in web/lib/types.ts
 ```
 
 **verdict values:** `"BUY"` | `"HOLD"` | `"SELL"` | `"SPECULATIVE"`
-**scoreLabel values:** `"Core Holding"` | `"Speculative"` | `"ค่าขนม"`
+**scoreLabel values:** `"Core Holding"` | `"Speculative"` | `"ค่าขนม"` | `"Moonshot"` (turbo-report only — larger-conviction speculative pick, see `skills/turbo-report/SKILL.md`)
 **dotColor values:** `"red"` | `"yellow"` | `"green"` | `"gray"`
 **badgeColor values:** `"red"` | `"yellow"` | `"green"` | `"blue"`
 **highlight values:** `"blue"` | `"yellow"`

@@ -41,9 +41,10 @@ If it exists, use it as an **advisory prior** — two tiers, both apply:
   Base/Bull `pct` accordingly (the Moon case itself is the thesis and stays as-is).
 - `nearMissCounterfactual.turbo` — if present, shows whether past turbo top-5 cuts actually beat
   what got rejected; use as a sanity check on how strict the bar should be, not a hard cutoff.
-- **Ranking stays survival-first (backlog #11 thesis) — unchanged.** Feedback never re-orders the
-  `/turbo-list` pick order (Tier 2 above affects sizing/conviction language, not rank); it only
-  informs the sizing/stop notes you write into the report.
+- **Ranking is upside-first per the current spec** — base-case % primary, moon % tiebreaker (see
+  List mode Step 2 below). Survival-first ranking is backlog #11 and not yet implemented. Feedback
+  never re-orders the `/turbo-list` pick order (Tier 2 above affects sizing/conviction language,
+  not rank); it only informs the sizing/stop notes you write into the report.
 
 ## List mode — `/turbo-list` (build the whole Turbo dashboard)
 
@@ -57,7 +58,8 @@ ticker, **screen for the 5 best moonshot plays** and generate a report for each.
 3. **Generate** a full turbo report for each (per the steps below) → save all to
    `web/data/speculative/<TICKER>_<YYYYMMDD>.json`.
 4. **Validate + push once:** `node scripts/validate-reports.mjs` → `git add web/data/speculative/`
-   → commit → `git push origin main`. Visible at `/turbo`.
+   → commit → `git push`. Report the actual branch pushed — if it's not `main`, say "pushed to
+   `<branch>` — merge to main to deploy", never "Vercel deploying". Visible at `/turbo` once on `main`.
 5. Return the **5 best only** (token economy). No market-timing step (that's `/catalyst-list`-only).
 
 For a single named ticker (`/analyze-turbo TICKER`) skip the screen and just do steps below.
@@ -122,6 +124,7 @@ Before writing JSON, decide these values explicitly:
 | `entryStrategy.approach` | `"Scale In"` or `"DCA"` — never lump sum for turbo |
 | Position size in summary | **2–5% max** — always state this |
 | `catalystSpot.spotSizing.pct` | 2–5 only |
+| `factorTags` | set explicitly from `ai_semi` / `ai_software` / `space_launch` / `quantum` / `ev_auto` / `long_duration_rate` / `single_customer` only when auto-derive (`web/lib/factors.ts`) would miss or mislabel this pick; otherwise omit and let it derive |
 
 ---
 
@@ -166,37 +169,11 @@ The JSON schema is **identical** to `StockReport` in `web/lib/types.ts`. All fie
 cd /path/to/stock-radar-weekly
 git add web/data/speculative/
 git commit -m "turbo: add [TICKER] moonshot report [YYYYMMDD]"
-git push origin main
+git push
 ```
 
-Confirm: `✅ [TICKER] Turbo report saved → pushed → Vercel deploying → visible at /sing`
-
----
-
-## Step 6: HTML Preview (optional)
-
-If the user also wants `/preview` style HTML for Turbo, generate using the **Turbo visual system**:
-
-### Turbo Visual System (DIFFERENT from core)
-
-```
-Background:  #050205  (near-black, red-tinted)
-Card bg:     #0e0508
-Border:      #2d1010
-Deep bg:     #13050a
-
-Fire-red:   #ff3d00  → primary accent, borders, dots
-Orange:     #ff6d00  → secondary accent, text highlights
-Magenta:    #d500f9  → moon targets, extreme upside
-Amber:      #ff6d00  → ratings, labels
-
-Accent bar on card top (3px):
-  Turbo → linear-gradient(90deg, #ff6d00, #d500f9)
-
-Stats bar bg:    #0e0508
-Muted text:      #7f4040
-Very muted:      #4d2020
-```
+Report the actual branch pushed. If it's not `main`, say "pushed to `<branch>` — merge to main to
+deploy", never "Vercel deploying". Confirm: `✅ [TICKER] Turbo report saved → pushed → visible at /turbo`
 
 ---
 

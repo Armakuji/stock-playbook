@@ -18,6 +18,19 @@ const DIRS = ["reports", "speculative", "dca"].map((d) => path.join(DATA_ROOT, d
 
 const isUrl = (s) => typeof s === "string" && /^https?:\/\//.test(s);
 
+// Plain .mjs can't import the TS const, so this list is DUPLICATED from
+// web/lib/factors.ts's FACTOR_TAGS — the source of truth. Update BOTH places
+// when adding a tag.
+const FACTOR_TAGS = [
+  "ai_semi",
+  "ai_software",
+  "space_launch",
+  "quantum",
+  "ev_auto",
+  "long_duration_rate",
+  "single_customer",
+];
+
 const argv = process.argv.slice(2);
 const wanted = argv.map((a) => path.basename(a));
 
@@ -77,6 +90,13 @@ for (const { dir, file: f } of targets) {
   // rankChangeSource must carry a real url if present
   if (r.rankChangeSource && !isUrl(r.rankChangeSource.url))
     errs.push("rankChangeSource present but url missing/invalid");
+
+  // factorTags typos (e.g. "ai-semi", "AI_semi") silently split a factor into two
+  // buckets in the concentration warning — WARN, don't block (advisory field).
+  if (Array.isArray(r.factorTags)) {
+    const bogus = r.factorTags.filter((t) => !FACTOR_TAGS.includes(t));
+    if (bogus.length) warnings.push(`factorTags has unknown value(s): ${bogus.join(", ")} (see FACTOR_TAGS in web/lib/factors.ts)`);
+  }
 
   if (errs.length) { hardFails += errs.length; log.push(`❌ ${bucket}/${f}\n   - ${errs.join("\n   - ")}`); }
   if (warnings.length) { warns += warnings.length; log.push(`⚠️  ${bucket}/${f}\n   - ${warnings.join("\n   - ")}`); }

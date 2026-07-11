@@ -7,6 +7,21 @@
 import { StockReport } from "./types";
 import { primaryCatalystType } from "./catalyst-timing";
 
+// Canonical tag list — source of truth for scripts/validate-reports.mjs, which
+// can't import this (.mjs, no TS build step) and duplicates it with a comment
+// pointing back here. Update BOTH places when adding a tag.
+export const FACTOR_TAGS = [
+  "ai_semi",
+  "ai_software",
+  "space_launch",
+  "quantum",
+  "ev_auto",
+  "long_duration_rate",
+  "single_customer",
+] as const;
+
+export type FactorTag = (typeof FACTOR_TAGS)[number];
+
 export const FACTOR_META: Record<string, { label: string; icon: string }> = {
   ai_semi:            { label: "AI Semiconductors",           icon: "🔩" },
   ai_software:        { label: "AI Software",                 icon: "🧠" },
@@ -14,6 +29,7 @@ export const FACTOR_META: Record<string, { label: string; icon: string }> = {
   quantum:            { label: "Quantum",                     icon: "⚛️" },
   ev_auto:            { label: "EV / Autonomy",               icon: "🚗" },
   long_duration_rate: { label: "Long-duration (rate-sensitive)", icon: "📈" },
+  single_customer:    { label: "Single-Customer Risk",        icon: "🎯" },
 };
 
 export function factorMeta(f: string): { label: string; icon: string } {
@@ -37,6 +53,13 @@ export function deriveFactorTags(report: StockReport): string[] {
   // which all sell off together on a rate / CPI surprise.
   if (report.verdict === "SPECULATIVE" || tags.has("quantum") || tags.has("space_launch") || tags.has("ai_software"))
     tags.add("long_duration_rate");
+
+  // Single-customer / customer-concentration: cheap text heuristic over description +
+  // risks — conservative isn't required here, false positives on a risk warning are
+  // fine since this only feeds an advisory panel.
+  const customerHay = `${report.companyDescription ?? ""} ${(report.risks ?? []).join(" ")}`.toLowerCase();
+  if (/single[- ]customer|customer concentration|one customer|largest customer|depends? (heavily |primarily )?on .{0,30}customer/.test(customerHay))
+    tags.add("single_customer");
 
   return [...tags];
 }

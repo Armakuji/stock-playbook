@@ -5,6 +5,7 @@ import { StockCard } from "./StockCard";
 import {
   primaryCatalystType, catalystTypeMeta, daysToCatalyst,
 } from "@/lib/catalyst-timing";
+import { useLang } from "@/lib/LanguageContext";
 
 // ── Concentration warning thresholds ────────────────────────────────────────
 // % of total stocks whose primary catalyst is the SAME event type.
@@ -20,6 +21,8 @@ export function ThemeGroups({
   ranked: RankedReport[];
   driftMap: Record<string, number | null>;
 }) {
+  const { lang } = useLang();
+  const th = lang === "th";
   const total = ranked.length;
 
   // Group by PRIMARY catalyst type — the thing that actually decides the +30%,
@@ -57,10 +60,13 @@ export function ThemeGroups({
           ratio >= WARN_RED    ? "#ef4444" :
           ratio >= WARN_YELLOW ? "#f59e0b" :
           "var(--border-bright)";
-        const concentrationWarning =
-          ratio >= WARN_RED    ? `⚠️ ${Math.round(ratio * 100)}% of watchlist on one event type — correlated risk` :
-          ratio >= WARN_YELLOW ? `⚡ ${Math.round(ratio * 100)}% on this event type` :
-          null;
+        const concentrationWarning = th
+          ? (ratio >= WARN_RED    ? `⚠️ ${Math.round(ratio * 100)}% ของ watchlist อยู่ใน event เดียวกัน — correlated risk` :
+             ratio >= WARN_YELLOW ? `⚡ ${Math.round(ratio * 100)}% อยู่ใน event ประเภทนี้` :
+             null)
+          : (ratio >= WARN_RED    ? `⚠️ ${Math.round(ratio * 100)}% of watchlist on one event type — correlated risk` :
+             ratio >= WARN_YELLOW ? `⚡ ${Math.round(ratio * 100)}% on this event type` :
+             null);
 
         return (
           <div key={type}>
@@ -89,7 +95,7 @@ export function ThemeGroups({
                   border: "1px solid var(--border)",
                   fontFamily: "var(--font-mono, monospace)",
                 }}>
-                  {cards.length} stock{cards.length > 1 ? "s" : ""}
+                  {th ? `${cards.length} หุ้น` : `${cards.length} stock${cards.length > 1 ? "s" : ""}`}
                 </span>
                 {Number.isFinite(soonest) && (
                   <span style={{
@@ -97,7 +103,7 @@ export function ThemeGroups({
                     background: "#3b82f618", color: "#3b82f6", border: "1px solid #3b82f630",
                     fontFamily: "var(--font-mono, monospace)",
                   }}>
-                    ⏱ next {soonest <= 0 ? "today" : `${soonest}d`}
+                    ⏱ {th ? "ถัดไป " : "next "}{soonest <= 0 ? (th ? "วันนี้" : "today") : `${soonest}d`}
                   </span>
                 )}
                 <span style={{
@@ -108,14 +114,14 @@ export function ThemeGroups({
                   border: `1px solid ${avgScore >= 75 ? "#10b98130" : avgScore >= 55 ? "#f59e0b30" : "#ef444430"}`,
                   fontFamily: "var(--font-mono, monospace)",
                 }}>
-                  avg conviction {avgScore}
+                  {th ? `conviction เฉลี่ย ${avgScore}` : `avg conviction ${avgScore}`}
                 </span>
                 <span style={{
                   fontSize: 9, color: "var(--muted)",
                   fontFamily: "var(--font-mono, monospace)",
                   letterSpacing: "0.2px",
                 }}>
-                  sorted: catalyst proximity → conviction
+                  {th ? "เรียงตาม: ความใกล้ catalyst → conviction" : "sorted: catalyst proximity → conviction"}
                 </span>
               </div>
               {concentrationWarning && (

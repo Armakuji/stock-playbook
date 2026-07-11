@@ -74,6 +74,7 @@ Decide these explicitly before writing JSON:
 | `verdict` / `scoreLabel` | BUY/HOLD/SELL/SPECULATIVE · Core Holding / Speculative / ค่าขนม |
 | `macroRisk` | LOW/MEDIUM/HIGH + rate/inflation/sector notes |
 | `i18n.th` | Thai overrides (summary, risks, notes, entry verdict, …) |
+| `factorTags` | set explicitly from `ai_semi` / `ai_software` / `space_launch` / `quantum` / `ev_auto` / `long_duration_rate` / `single_customer` only when auto-derive (`web/lib/factors.ts`) would miss or mislabel this pick; otherwise omit and let it derive |
 
 ## Step 3: Generate the JSON report
 
@@ -90,16 +91,20 @@ Rules that matter:
 
 ## Step 4: Validate, save, push
 
+**List mode (called from `/catalyst-list`): skip this step** — the command validates/commits/pushes
+once at the end, after all 5 picks are saved. Only run the steps below for a standalone `/analyze`.
+
 ```bash
 cd /path/to/stock-radar-weekly
 node scripts/validate-reports.mjs            # anti-fabrication guardrail (must pass)
 git add web/data/reports/
 git commit -m "report: add <TICKER> report <YYYYMMDD>"
-git push origin main
+git push
 ```
 
-Then confirm in one line:
-> ✅ <TICKER> report saved → pushed → Vercel deploying → view at /report/<ticker>
+Report the actual branch pushed. If it's not `main`, say "pushed to `<branch>` — merge to main to
+deploy", never "Vercel deploying". Confirm in one line:
+> ✅ <TICKER> report saved → pushed → view at /report/<ticker>
 
 (No HTML file, no `present_files` — the website is the presentation layer. To view locally, open `/report/<ticker>` on the running site.)
 

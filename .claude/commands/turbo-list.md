@@ -4,8 +4,9 @@ description: Find the 5 best moonshot plays (≥200–300% bull case) → /turbo
 Run `/turbo-list`: load `turbo-report` and use its "Step 0" + "List mode" sections.
 
 0. Read `web/data/skill-feedback.json` if it exists (skip if missing) — use `turbo.overall`
-   hitRate/medianMAE as an advisory prior, two tiers (ranking stays survival-first per backlog #11
-   — both tiers affect sizing/conviction language only, never rank order):
+   hitRate/medianMAE as an advisory prior, two tiers (ranking is upside-first per the current spec
+   — base-case % primary, moon % tiebreaker, per Step 1 below; survival-first ranking is backlog
+   #11 and not yet implemented. Both tiers affect sizing/conviction language only, never rank order):
    - **Tier 1 — `n < 5`:** context only. Mention it, never a reason to include/exclude/re-rank.
    - **Tier 2 — `n ≥ 5`: MUST be applied.** Turbo has no per-type breakdown, so this applies at the
      whole-lane level: if `turbo.overall.n ≥ 5` and `hitRate` is low, that MUST visibly tighten

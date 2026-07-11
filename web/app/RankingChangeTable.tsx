@@ -4,12 +4,13 @@ import { useState } from "react";
 import Link from "next/link";
 import { RankChange } from "@/lib/ranking-history";
 import { StockReport } from "@/lib/types";
+import { useLang } from "@/lib/LanguageContext";
 
 const PAGE_SIZE = 5;
 
 function Pagination({
-  page, totalPages, onPrev, onNext,
-}: { page: number; totalPages: number; onPrev: () => void; onNext: () => void }) {
+  page, totalPages, onPrev, onNext, th,
+}: { page: number; totalPages: number; onPrev: () => void; onNext: () => void; th: boolean }) {
   if (totalPages <= 1) return null;
   return (
     <div style={{
@@ -34,7 +35,7 @@ function Pagination({
           transition: "opacity 0.15s",
         }}
       >
-        ← Prev
+        {th ? "← ก่อนหน้า" : "← Prev"}
       </button>
 
       <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
@@ -72,7 +73,7 @@ function Pagination({
           transition: "opacity 0.15s",
         }}
       >
-        Next →
+        {th ? "ถัดไป →" : "Next →"}
       </button>
     </div>
   );
@@ -85,14 +86,14 @@ const CONFIDENCE_COLORS: Record<string, string> = {
   High: "#10b981", Medium: "#f59e0b", Low: "#ef4444",
 };
 
-function DeltaBadge({ delta }: { delta: number | null }) {
+function DeltaBadge({ delta, th }: { delta: number | null; th: boolean }) {
   if (delta === null) {
     return (
       <span style={{
         fontSize: 10, fontWeight: 800, padding: "2px 7px", borderRadius: 5,
         background: "#3b82f618", color: "#3b82f6", border: "1px solid #3b82f630",
         fontFamily: "var(--font-mono, monospace)",
-      }}>NEW</span>
+      }}>{th ? "ใหม่" : "NEW"}</span>
     );
   }
   if (delta === 0) {
@@ -114,6 +115,8 @@ function DeltaBadge({ delta }: { delta: number | null }) {
 
 export function RankingChangeTable({ rows }: { rows: RankChange[] }) {
   const [page, setPage] = useState(0);
+  const { lang } = useLang();
+  const th = lang === "th";
 
   if (rows.length === 0) return null;
 
@@ -129,7 +132,7 @@ export function RankingChangeTable({ rows }: { rows: RankChange[] }) {
             fontSize: "clamp(16px, 3vw, 22px)", fontWeight: 900, margin: 0,
             letterSpacing: "-0.5px", fontFamily: "var(--font-display, sans-serif)",
           }}>
-            Ranking Change
+            {th ? "การเปลี่ยนอันดับ" : "Ranking Change"}
           </h2>
         </div>
         <span style={{
@@ -137,11 +140,13 @@ export function RankingChangeTable({ rows }: { rows: RankChange[] }) {
           fontWeight: 700, padding: "3px 9px", borderRadius: 6,
           border: "1px solid var(--border)", background: "var(--card)",
         }}>
-          {rows.length} stocks
+          {th ? `${rows.length} หุ้น` : `${rows.length} stocks`}
         </span>
       </div>
       <p style={{ fontSize: 12, color: "var(--muted)", margin: "0 0 16px", fontFamily: "var(--font-mono, monospace)" }}>
-        vs. previous report snapshot · ↑ moved up · ↓ moved down · NEW = first appearance
+        {th
+          ? "เทียบกับรายงานครั้งก่อน · ↑ ขึ้นอันดับ · ↓ ลงอันดับ · NEW = ปรากฏครั้งแรก"
+          : "vs. previous report snapshot · ↑ moved up · ↓ moved down · NEW = first appearance"}
       </p>
 
       <div style={{ borderRadius: 14, border: "1px solid var(--border)", overflow: "hidden" }}>
@@ -152,7 +157,10 @@ export function RankingChangeTable({ rows }: { rows: RankChange[] }) {
           }}>
             <thead>
               <tr style={{ background: "var(--card)", borderBottom: "1px solid var(--border)" }}>
-                {["Rank", "Δ Rank", "Stock", "Score", "Confidence", "Weeks Listed", "TP2 Upside", "Reason", "Source", ""].map((h) => (
+                {(th
+                  ? ["อันดับ", "Δ อันดับ", "หุ้น", "คะแนน", "ความมั่นใจ", "จำนวนสัปดาห์", "TP2 Upside", "เหตุผล", "แหล่งข่าว", ""]
+                  : ["Rank", "Δ Rank", "Stock", "Score", "Confidence", "Weeks Listed", "TP2 Upside", "Reason", "Source", ""]
+                ).map((h) => (
                   <th key={h} style={{
                     padding: "10px 14px", textAlign: "left",
                     fontSize: 9, fontWeight: 800, color: "var(--muted)",
@@ -175,7 +183,7 @@ export function RankingChangeTable({ rows }: { rows: RankChange[] }) {
                     onMouseLeave={(e) => { (e.currentTarget as HTMLTableRowElement).style.background = baseBg; }}
                   >
                     <td style={{ padding: "12px 14px", fontWeight: 800, fontSize: 13, color: "var(--text)" }}>#{row.currentRank}</td>
-                    <td style={{ padding: "12px 14px" }}><DeltaBadge delta={row.delta} /></td>
+                    <td style={{ padding: "12px 14px" }}><DeltaBadge delta={row.delta} th={th} /></td>
                     <td style={{ padding: "12px 14px" }}>
                       <Link href={`/report/${row.ticker.toLowerCase()}`} style={{ textDecoration: "none" }}>
                         <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
@@ -225,7 +233,7 @@ export function RankingChangeTable({ rows }: { rows: RankChange[] }) {
                         </div>
                       ) : (
                         <span style={{ fontSize: 10, color: "#374151", fontFamily: "var(--font-mono, monospace)", fontStyle: "italic" }}>
-                          ไม่พบข่าวเฉพาะ — อาจเป็น sector-wide move
+                          {th ? "ไม่พบข่าวเฉพาะ — อาจเป็น sector-wide move" : "No specific news found — may be a sector-wide move"}
                         </span>
                       )}
                     </td>
@@ -245,7 +253,7 @@ export function RankingChangeTable({ rows }: { rows: RankChange[] }) {
                           transition: "background 0.15s",
                         }}
                       >
-                        View →
+                        {th ? "ดู →" : "View →"}
                       </Link>
                     </td>
                   </tr>
@@ -260,6 +268,7 @@ export function RankingChangeTable({ rows }: { rows: RankChange[] }) {
           totalPages={totalPages}
           onPrev={() => setPage((p) => Math.max(0, p - 1))}
           onNext={() => setPage((p) => Math.min(totalPages - 1, p + 1))}
+          th={th}
         />
       </div>
     </div>

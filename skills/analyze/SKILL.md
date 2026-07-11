@@ -315,11 +315,12 @@ git push
 
 ### 4c — Confirm
 
-Print a 3-line summary in chat:
+Report the actual branch pushed. If it's not `main`, say "pushed to `<branch>` — merge to main to
+deploy", never "Vercel deploying". Print a 3-line summary in chat:
 - Current price + % change
 - Fed risk verdict (one line)
 - Entry verdict (one line)
-- `✅ <TICKER> report saved → pushed to GitHub → Vercel deploying`
+- `✅ <TICKER> report saved → pushed to GitHub`
 
 ---
 

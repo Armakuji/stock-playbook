@@ -64,7 +64,7 @@
 
 **✅ Audit ยืนยันแล้ว (2026-07-10):** `web/lib/north-star.ts` ครบสเปค — `NS_WINDOW_DAYS=14`, `NS_TARGET_PCT=30`, price path จาก `path-cache.json`, `medianMAE`/`avgMaxGain`/`hitRate` แยกต่อ `byType[]` (catalystType) + overall, render บน `/backtest` ผ่าน `NorthStarSection` · **ต่อยอดไปไกลกว่าสเปคเดิมแล้วผ่าน #24/#25/#27:** turbo North Star แยก lane (+50%/30d), `medianTimeToHitDays`, regime context (`avgBenchmarkPct`/`regimeNote` เทียบ SPY), near-miss counterfactual ต่อ lane — ไม่เหลืออะไรค้างจากสเปคเดิม
 
-## 10. ⚠️ เปิดอยู่บางส่วน (audit พบว่าทำไปแล้วเกินคาด) — Factor-correlation concentration (tag-based) แทน bucket-share
+## 10. ✅ DONE — Factor-correlation concentration (tag-based) แทน bucket-share
 *(idea 6 — ทำขนานได้)*
 **ปัญหา:** concentration warning ปัจจุบันนับ % ใน bucket ที่ label มั่ว/overlap ความเสี่ยงจริงคือ "factor เดียวกัน" — NVDA+AVGO+MRVL ลงพร้อมกันบนข่าว semis ตัวเดียว
 **ทำ:** เพิ่ม factor tags มือ/กึ่งอัตโนมัติ (`ai_semi`, `long_duration_rate`, `single_customer`, `space_launch`...) → warn เมื่อ tag ซ้อนเกิน threshold (จับ NVDA+RKLB ที่ long-duration เหมือนกันแม้คนละ bucket)
@@ -74,6 +74,12 @@
 **เหลือ:** (1) `single_customer` tag ยังไม่มี logic derive (ตัวอย่างในสเปคเดิม แต่ยังไม่ implement — ต้องมี field บอก customer concentration ใน report ก่อนถึง derive ได้) (2) `factorTags` explicit ยังตั้งเองแบบ manual ไม่มี validate/enum บังคับใน `scripts/validate-reports.mjs` (3) ยังไม่มีเอกสารสั่งให้ skill (`stock-report`/`turbo-report`) ตั้ง `factorTags` ตอน generate report — ตอนนี้พึ่ง auto-derive ล้วน ซึ่งพอใช้ได้แต่ไม่ครอบคลุมเท่า manual tag ที่แม่นกว่า
 **สถานะ:** เปลี่ยนจาก "field staged, unbuilt" → **build ไปแล้ว ~80%** เหลือ polish เล็กน้อยตามข้างบน ไม่ใช่งานใหญ่
 **เป้า:** เตือนความเสี่ยง factor จริง ไม่ใช่แค่ป้าย bucket
+**ผล (2026-07-10):** ปิด 3 gap ที่เหลือครบ:
+  1. Export `FACTOR_TAGS` (7 ค่า: 6 เดิม + `single_customer`) จาก `web/lib/factors.ts` เป็น canonical source — `scripts/validate-reports.mjs` (plain `.mjs`, import TS ไม่ได้) duplicate list เดียวกันพร้อม comment ชี้กลับมา ตาม convention ของ `build-skill-feedback.mjs` · เพิ่ม WARN (ไม่ block) เมื่อ `factorTags` มีค่านอก enum — เทสจริงด้วยการใส่ typo `ai-semi` ใน NVDA report แล้ว revert, WARN ขึ้นถูกต้องไม่ block push
+  2. เพิ่ม `single_customer` derive ใน `deriveFactorTags()` — heuristic จับข้อความใน `companyDescription` + `risks[]` (ไม่ใช่ทั้ง report เพื่อไม่ให้ false-positive จาก catalyst description ที่พูดถึง "customer" แบบ upside ไม่ใช่ risk) เทสกับ report จริง: AVGO/LUNR (มี "customer concentration" ใน risks) → true ถูกต้อง, QUBT (มีคำว่า "single customer order" แต่อยู่ใน `catalysts[].description` ไม่ใช่ risks) → false ถูกต้องตามสเปค, AMD (ไม่มี signal) → false
+  3. เพิ่มแถว `factorTags` ใน "Plan the values" ของ `skills/stock-report/SKILL.md` + `skills/turbo-report/SKILL.md` — ประโยคเดียวเหมือนกันทั้งคู่: ตั้งเองจาก enum เมื่อ auto-derive จะพลาด/ป้ายผิด ไม่งั้นปล่อยให้ derive
+  **พบระหว่างทำ (ไม่ใช่ bug ของงานนี้ แยกไว้พิจารณา):** `node scripts/validate-reports.mjs` เจอ WARN จริง 5 ไฟล์ใน `web/data/dca/` (GOOGL/META/MSFT/NVDA/V) ที่ตั้ง `factorTags` เป็นคำนอก enum (`mega_cap_quality`, `ad_cycle`, `enterprise_software`, `semis_cycle`, `payments`, `consumer_spend`) — เช็คแล้วว่า **ไม่กระทบอะไรตอนนี้** เพราะ `factorConcentration`/`FactorRiskPanel` ต่อสายแค่ `CatalystContent.tsx` (`/catalyst`) เท่านั้น ไม่ได้ใช้กับ `/dca` เลย — เป็น tag แบบอิสระที่คนเขียน DCA report ใส่ไว้ล่วงหน้าก่อนมี canonical enum ตัวนี้ ปล่อยไว้ตามเดิมไม่แก้ (ไม่อยู่ใน scope "polish 3 gap" ของ item นี้) — ถ้าจะเอา factor-concentration ไปใช้กับ `/dca` ในอนาคตต้องคุย vocabulary ใหม่ก่อน (DCA เป็นเรื่อง business-model quality ไม่ใช่ catalyst-timing correlation)
+  **Verify:** `tsc --noEmit` + eslint clean · `validate-reports.mjs` ผ่าน (113 reports, 0 blocking, 5 warnings จากของเดิมที่เจอ) · dev server `/catalyst` เรนเดอร์ปกติไม่มี error
 
 ---
 
@@ -94,7 +100,7 @@
   **เป้า:** isolate selection edge จริง — pick ชนะ expected move ของมันไหม
   **✅ Groundwork done (#27, 2026-07-10):** `scripts/fetch-backtest-prices.mjs` ดึง SPY path ต่อ unique report date แล้ว เก็บที่ `path-cache.json` key `bench:SPY_YYYYMMDD` (dedupe ต่อวันที่ ไม่ใช่ต่อ ticker, เก็บ window กว้างสุดถ้าวันเดียวกันมีทั้ง core 14d/turbo 30d) · `scripts/build-skill-feedback.mjs` ใช้ path นี้คำนวณ `avgBenchmarkPct`/`regimeNote` ต่อ type + `regime` top-level แล้ว (raw benchmark-relative, ยังไม่ beta-adjust) — v2.2 ที่แท้จริง (excess return หัก beta ใน `web/lib/north-star.ts` + แสดงบน `/backtest`) ยังไม่ทำ แต่ path data พร้อมใช้ต่อได้เลย ไม่ต้อง fetch ใหม่
 
-## 11. Turbo-compare: moonshot ranking criteria แยกจาก core dashboard
+## 11. ✅ DONE — Turbo-compare: moonshot ranking criteria แยกจาก core dashboard *(implement ผ่าน #32, 2026-07-10)*
 
 **ปัญหา:** `dashboard-compare` skill v2 ใช้ catalyst proximity เป็น primary gate — ถูกต้องสำหรับ core portfolio (event-driven 30% plays) แต่ turbo stocks มี thesis คนละแบบ: "lottery ticket ค่าขนม ถือรอเด้ง 300%+" ซึ่งไม่ต้องการ catalyst วันชัด แต่ต้องการ (1) survival / dilution risk ต่ำ (2) upside path เป็นจริงได้ (3) entry ถูกพอให้ % วิ่ง การนำ catalyst-gate มาใช้กับ turbo ทำให้ RXRX ถูก demote เพราะไม่มีวันที่ ทั้งที่มันคือ moonshot ที่ดีที่สุดในกลุ่ม
 
@@ -110,6 +116,7 @@ Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open N
 **ไฟล์:** `skills/dashboard-compare/SKILL.md` (เพิ่ม turbo mode section) · อาจแยกเป็น `skills/turbo-compare/SKILL.md` ใหม่เลย
 
 **เป้า:** compare turbo portfolio ได้ถูก thesis — RXRX ขึ้น #1 เพราะ survival แข็ง + entry ใกล้โซน ไม่ใช่เพราะมีวัน catalyst ชัด
+**ผล:** implement ผ่าน `skills/turbo-compare/SKILL.md` (ใหม่) — criteria ทั้ง 5 ตัว (Survival/Upside/Entry/Headwind/Bull%) ตรงตามสเปคข้างบนคำต่อคำ ไม่มีการปรับ ดูรายละเอียดการปิดงานที่ #32
 
 ## 12. ธาตุที่ 4 🌍 Earth — Rare Earth Elements, Precious Metals
 
@@ -119,15 +126,17 @@ Output แยก: "🎰 Moonshot Leaderboard" ไม่ใช่ "Best to Open N
 **ไฟล์:** `web/app/Landing.tsx` (description ✅) · หน้าใหม่ `web/app/earth/*` · `web/data/earth/` (หรือชื่อที่เทียบเท่า) · skill ใหม่ · `web/app/layout.tsx` (nav ธาตุ 4 เมื่อเปิด)
 **เป้า:** Earth card กดเข้าได้ · โฟกัส REE + precious metals · สี Earth = อำพัน-บรอนซ์/โอลีฟ (เลี่ยงชนเขียวของ Air)
 
-## 13. i18n เฟสถัดไป — panel/tool ที่ยังไม่ผูก global EN/TH
+## 13. ✅ DONE — i18n เฟสถัดไป — panel/tool ที่ยังไม่ผูก global EN/TH
 
 **ปัญหา:** ทำ global LanguageContext + toggle EN/TH (default EN, persist localStorage `srw-lang`) แล้ว และผูกครบ: Header/nav, Landing, DCA (page+card), Turbo (page+card), Catalyst hero/stats/badges, report page + simulator. **แต่ยังเหลือ component ที่มี string ไทย/อังกฤษ baked อยู่และยังไม่อ่าน `useLang()`** → พอสลับภาษา ส่วนพวกนี้ไม่เปลี่ยน
-**ทำ:** เติม `const { lang } = useLang(); const th = lang === "th";` + ternary ในแต่ละตัว (ทุกตัวอยู่ใต้ `LanguageProvider` แล้ว เรียก hook ได้เลย):
-  - `web/app/FactorRiskPanel.tsx` · `web/app/MarketTimingPanel.tsx` · `web/app/RankingChangeTable.tsx` · `web/app/CatalystCalendar.tsx` · `web/app/ThemeGroups.tsx` · `web/app/StockCard.tsx`
-  - Tools: `web/app/backtest/BacktestContent.tsx` · `web/app/journal/JournalContent.tsx`
-  - การ์ด Turbo บางจุด (TurboBar "Price → Moon") + DcaCard quality labels (Moat/Margin/FCF/Balance) ถ้าอยากแปลด้วย
-**ไฟล์:** ตามรายการบน · pattern อ้างอิงจาก `web/app/Landing.tsx` / `web/app/dca/DcaContent.tsx`
-**เป้า:** สลับ EN/TH แล้วทั้งเว็บเปลี่ยนครบ 100% ไม่เหลือ string ค้างภาษาเดียว
+**ทำ (audited 2026-07-10 — scope จริงเหลือแค่ 5 ไฟล์):** ตรวจสอบสถานะปัจจุบันพบว่า `BacktestContent`, `JournalContent`, `TurboCard`, `DcaCard`, `CatalystContent`, `MarketTicker` (แทนที่ `MarketTimingPanel` เดิมที่ list ไว้ในนี้ — คอมโพเนนต์นั้นถูกยกเลิกไปแล้ว), `Header`, `Landing` ผูก `useLang()` ครบแล้วจากงาน #18/#24 — ไม่ต้องแตะ **scope จริงเหลือแค่ 5 ไฟล์ (`useLang: 0` ทุกตัว):**
+  - `web/app/FactorRiskPanel.tsx` — เติม `useLang` + แปล header "FACTOR RISK" และบรรทัดสรุป pick/book
+  - `web/app/RankingChangeTable.tsx` — แปล header, column headers, pagination, "NEW"/empty-source fallback, "View →"
+  - `web/app/CatalystCalendar.tsx` — แปล header, count, legend, TODAY/TOMORROW, cluster badge, "est."
+  - `web/app/ThemeGroups.tsx` — แปล stock count, "next Nd", "avg conviction", sort label, concentration warning
+  - `web/app/StockCard.tsx` (highest-traffic) — เติม `useLang` + เรียก `applyTranslation(report, lang)` จาก `lib/i18n.ts` เพื่อให้ `report.summary` อ่านจาก `i18n.th` จริง (เดิมโชว์ EN ตายตัว) · แปล stat-chip labels (Fed Risk/Approach/Sector), Price-bar labels (ENTRY/Price vs Targets), tooltip
+**ไฟล์:** ตามรายการบน · pattern อ้างอิงจาก `web/app/dca/DcaContent.tsx` (`useLang` + ternary) และ `web/app/report/[ticker]/ReportContent.tsx` (`applyTranslation` สำหรับข้อมูลจาก `i18n.th`)
+**เป้า:** สลับ EN/TH แล้วทั้งเว็บเปลี่ยนครบ 100% ไม่เหลือ string ค้างภาษาเดียว ✅ — verify: `tsc --noEmit` ผ่าน, SSR default-TH smoke test ยืนยันทุก string ขึ้น TH ครบ, revert กลับ default EN แล้ว
 
 ## 14. Journal API — public multi-user journal (NestJS + Postgres + Google OIDC)
 
@@ -331,11 +340,94 @@ dev server) เห็น class ครบ ไม่มี error ใน server log
 **ไฟล์:** `scripts/fetch-backtest-prices.mjs` · `scripts/build-skill-feedback.mjs` · `web/data/skill-feedback.json` · (ถ้าทำข้อ 2) `.claude/commands/catalyst-list.md` + `web/lib/north-star.ts` (ประสาน v2.1)
 **เป้า:** รู้ว่า 0/12 คือ sector regime หรือ pick structure · ถ้าเป็นอย่างหลัง top-5 ต้องมีสัดส่วน pick ที่ +30%/14d เป็นไปได้จริงตามขนาด market cap · เกี่ยวพัน: North Star v2.1/v2.2 + Small-cap quota
 
+## 29. ✅ DONE — Contact links — เพิ่ม email + GitHub บนเว็บ
+
+**ปัญหา:** เว็บไม่มีช่องทางติดต่อเลย — footer ใน `web/app/layout.tsx` (บรรทัด ~139) มีแค่ข้อความ ไม่มี link email/GitHub · คนเจอเว็บ (โดยเฉพาะหลัง #19 SEO เริ่มติด index และ #14 Phase 2 เปิด public signup) ไม่มีทาง report ปัญหา/ติดต่อ/ดู source
+**ทำ:**
+  1. เพิ่ม contact links ใน footer กลาง (`web/app/layout.tsx` — โชว์ทุกหน้า): email **`mailto:armakuji@hotmail.com`** + GitHub profile **`https://github.com/Armakuji`** (เคาะแล้ว 2026-07-10 — ใช้ profile ไม่ใช่ repo link) — icon เล็ก ๆ + label สไตล์เดียวกับ theme (dark, muted)
+  2. พิจารณาใส่ซ้ำใน Landing footer (`web/app/Landing.tsx` บรรทัด ~177) ถ้า layout footer ไม่ปรากฏบนหน้า landing
+  3. i18n EN/TH ตาม pattern `useLang()` (label เช่น "Contact" / "ติดต่อ")
+**ไฟล์:** `web/app/layout.tsx` (footer) · `web/app/Landing.tsx` (ถ้าจำเป็น) · แนวทาง i18n จากไฟล์ที่ทำใน #13
+**เป้า:** ทุกหน้ามี link email (armakuji@hotmail.com) + GitHub (github.com/Armakuji) มองเห็นได้ใน footer · กดแล้วเปิด mail client / profile จริง · สไตล์กลมกลืน theme เดิม
+**ผล (2026-07-10):** สร้าง `web/app/Footer.tsx` เป็น client component (`useLang()`) แยกจาก `layout.tsx` (server component) ตาม pattern เดียวกับ `MarketTicker`/`Header` — layout footer อยู่นอก `<main>` แต่ยังอยู่ใต้ `LanguageProvider` และ render ทุกหน้ารวมถึง landing (HomePage วาง `Landing` เป็น `children` ข้างใน `<main>` เดียวกัน) → **ไม่ต้องใส่ซ้ำใน `Landing.tsx`** (ข้อ 2 ไม่จำเป็น, ยืนยันด้วยการอ่านโครงสร้าง JSX) · verify: tsc/eslint clean (มี pre-existing warning ใน layout.tsx ไม่เกี่ยวกับงานนี้), curl ตรวจ `/`, `/catalyst`, `/report/AMD` เห็น link ครบ, สลับ default lang เป็น th ชั่วคราวยืนยัน "Contact"→"ติดต่อ" แล้ว revert กลับ
+
+## 30. ✅ DONE — Skill prompt hygiene sweep — 5 bugs + ตัดซาก radar-era ใน stock-report/turbo-report/list commands
+
+**ปัญหา:** review prompt ทั้ง 4 ตัว (2026-07-10: `catalyst-list.md`, `turbo-list.md`, `stock-report`, `turbo-report`) พบ 5 bug จริง + ซากเก่าที่ขัดกติกาปัจจุบัน — commands สดเพราะเพิ่งผ่าน #25–#27 แต่ SKILL.md หลุด sync:
+  1. **Stale push template ใน skills** — `stock-report` Step 4, `turbo-report` Step 5 (และ grep เจอใน `dca-report`, `analyze` skill ด้วย) ยัง hardcode `git push origin main` + confirm line "→ Vercel deploying" — กติกา honest push (#26) แก้เฉพาะ `.claude/commands/*` ไม่ได้แก้ skills → รัน `/analyze` เดี่ยวยัง claim เกินจริง
+  2. **turbo-report บอก "visible at `/sing`"** — route ไม่มีจริง (ยุคเก่า) ต้องเป็น `/turbo`
+  3. **turbo-list ขัดกันเอง** — Step 0 อ้าง "ranking stays survival-first per backlog #11" แต่ Step 1 สั่ง "rank by base-case % primary" · #11 ยังไม่ implement — แก้ Step 0 ให้พูดตรงความจริง ("ranking = upside-first ตามสเปคปัจจุบัน; survival-first คือ #11 ที่ยังไม่ทำ; feedback ไม่แตะ rank order")
+  4. **`scoreLabel: "Moonshot"`** — turbo-report สั่งใช้ แต่ CLAUDE.md enum มีแค่ `Core Holding | Speculative | ค่าขนม` · types.ts เป็น `string` เลยไม่ crash และมี report จริงใช้แล้ว (IQMX_20260706) → ต้องเคาะ: เพิ่ม "Moonshot" เข้า enum ใน CLAUDE.md (แนะนำ — ใช้จริงแล้ว + สื่อความ) หรือแก้ skill+report เลิกใช้ · เช็คด้วยว่า UI/scoring ไม่ switch ตาม label นี้
+  5. **stock-report ไม่มี list mode** — ถูกเรียกจาก `/catalyst-list` ต่อ 5 ตัวแล้ว Step 4 สั่ง commit+push ต่อ ticker ขัดกับ command ที่ push ครั้งเดียว → เพิ่มบรรทัด "list mode (called from /catalyst-list): skip Step 4 — the command validates/commits/pushes once at the end"
+  **ซาก/โครงสร้าง (ทำในรอบเดียวกัน):**
+  6. ตัด `turbo-report` Step 6 "HTML Preview" + Turbo Visual System block ทั้งก้อน — radar-era ขัดกับ "JSON only, site is presentation layer" ที่ประกาศต้นไฟล์ตัวเอง
+  7. ตรึงนิยาม "30%+ upside" ใน `catalyst-list.md` — ระบุวิธีวัดให้ชัด (เสนอ: consensus target เป็นหลัก, top target ประกอบ; ไม่ใช้ scenario-implied เป็น gate) กัน bar เลื่อนข้ามรอบ run — near-miss log ปัจจุบันใช้ปนกันแล้ว
+  8. (optional ถ้าไม่บาน) ลดสำเนา Step 0 tier rules ที่ตอนนี้ copy อยู่ 5 ที่ (2 commands + 3 skills, เนื้อเพี้ยนกันเล็กน้อยแล้ว) — ให้ skill เป็น canonical copy แล้ว command ชี้ไปหา · ถ้า scope ใหญ่เกินให้จดแยก item ใหม่
+**ไฟล์:** `skills/stock-report/SKILL.md` · `skills/turbo-report/SKILL.md` · `skills/dca-report/SKILL.md` · `skills/analyze/SKILL.md` (เช็ค stale template ข้อ 1) · `.claude/commands/catalyst-list.md` · `.claude/commands/turbo-list.md` · `CLAUDE.md` (ถ้าเพิ่ม Moonshot เข้า enum) · เช็ค symlink `.claude/skills/*` ว่าชี้ไฟล์เดียวกัน (ตาม #25 พบว่า dashboard-compare เป็น symlink)
+**เป้า:** ไม่มี prompt ไหน claim "Vercel deploying" / push main โดยไม่เช็ค branch · ไม่มี route/label/กติกาที่ตายแล้วเหลือใน skills · turbo-list พูดเสียงเดียวเรื่อง ranking · นิยาม 30% gate คงที่ข้ามรอบ run
+**ผล (2026-07-10):** ทำครบทั้ง 7 bug + จุด optional (#8) → **เคาะแล้ว: ทำ 1–7, ไม่ consolidate #8** (รายละเอียด + เหตุผลอยู่ #31):
+  1. แก้ push template ครบ 4 ไฟล์ (`stock-report` Step 4, `turbo-report` Step 5 **+ List mode point 4** ที่เจอเพิ่มระหว่างทำ, `dca-report` Step 3, `analyze` Step 4c) — `git push origin main` → `git push` + honest branch-report phrasing ตรงกับ `.claude/commands/*` ที่ทำใน #26
+  2. `/sing` → `/turbo` (แก้พร้อม push-template ข้อ 1 เพราะอยู่บรรทัดเดียวกัน)
+  3. `turbo-list.md` Step 0 sync กับ Step 1 แล้ว — "ranking is upside-first per the current spec... survival-first ranking is backlog #11 and not yet implemented" — sync คำเดียวกันใน `turbo-report/SKILL.md` Step 0 ด้วย (เดิมพูดคนละเสียงกับ command)
+  4. **เคาะ: เพิ่ม `"Moonshot"` เข้า enum ใน CLAUDE.md** — grep `web/lib/` + `web/app/` ยืนยันแล้วว่า `scoreLabel` เป็น `string` เฉยๆ ไม่มี switch/style logic ผูกกับค่านี้เลย (ทุกจุด render ตรงๆ ด้วย `??` fallback, ไม่แตะ scoring) → ปลอดภัย 100%
+  5. เพิ่ม "list mode: skip this step" ใน `stock-report` Step 4
+  6. ตัด `turbo-report` Step 6 "HTML Preview" + Turbo Visual System ทั้งก้อนแล้ว
+  7. ตรึงนิยาม 30%+ ใน `catalyst-list.md`: consensus analyst target vs current price = primary gate, top target = supporting color, scenario-implied ไม่ใช่ gate substitute — sync คำเดียวกันไปที่ near-miss `impliedUpside` note ด้วย
+  8. **ไม่ consolidate** — assessment เต็มอยู่ใน #31 ใหม่ (นับ drift จริง + เหตุผลที่ไม่ทำตอนนี้ + พบ broken symlink `.claude/skills/xvary-*` ระหว่างเช็ค)
+  **Verify:** `grep -rn "Vercel deploying"` เหลือเฉพาะใน "never say" rule text ✅ · `grep -rn "/sing"` ไม่มี ✅ · `node scripts/validate-reports.mjs` ผ่าน (113 reports, 0 blocking) ✅
+
+## 31. Step 0 feedback-prior dedup — assessed 2026-07-10, NOT consolidated (logged per #30 point 8)
+
+**ปัญหา:** #30 point 8 ขอให้นับ drift ของสำเนา Step 0 (skill-feedback.json advisory-prior block) ที่ตอนนี้อยู่ 5 ที่ — `.claude/commands/catalyst-list.md`, `.claude/commands/turbo-list.md`, `skills/stock-report/SKILL.md`, `skills/turbo-report/SKILL.md`, `skills/dashboard-compare/SKILL.md` — แล้วเคาะว่า consolidate ได้ไหม
+**สิ่งที่พบ:**
+  - **4 สำเนาจริงๆ ซ้ำกัน (2 คู่):** `catalyst-list.md` ↔ `stock-report/SKILL.md` และ `turbo-list.md` ↔ `turbo-report/SKILL.md` — command แต่ละตัวเขียน Step 0 แบบย่อ (ไม่มี `medianMAE` bullet, `scenarioCalibration` bullet, `nearMissCounterfactual` bullet ที่ skill เต็มมี) ก่อนแก้รอบนี้ `turbo-list.md` ยังมี ranking claim ขัดกับ `turbo-report` เอง (แก้แล้วใน #30 point 3 — sync คำเดียวกันทั้งคู่)
+  - **`dashboard-compare/SKILL.md` ไม่ใช่สำเนาซ้ำจริง** — ตั้งใจให้ semantics ต่างจาก 4 ที่บน: ผลจาก feedback ที่นี่เป็น **commentary-only** ห้าม re-rank/เปลี่ยน zone/เปลี่ยน Best-to-Open-NOW list เด็ดขาด (เขียนไว้ชัดเป็น "HARD GUARDRAIL" ในไฟล์) ต่างจาก `stock-report`/`turbo-report` ที่ tier-2 **ต้อง** บังคับปรับ upside/conviction/sizing จริง — อันนี้คือ scope ที่ต่างกันโดยตั้งใจ ไม่ใช่ bug ไม่ควรรวม
+  - **เคาะ: ไม่ consolidate ตอนนี้** — การให้ command ชี้ไปหา skill's Step 0 แทนที่จะ copy เนื้อมา เป็นการเปลี่ยน prompt ที่ agent ใช้จริงตอน run `/catalyst-list`/`/turbo-list` — ไม่มีทาง verify ว่า "behavior เหมือนเดิม" ได้ในแซนด์บ็อกซ์ (ต้องรัน live command จริงเทียบผลลัพธ์) ต่างจาก code refactor ที่ tsc/test ยืนยันได้ → ความเสี่ยงสูงกว่าประโยชน์ของการลด duplication ตอนนี้ ทำตามกติกา #30 point 8 ("ถ้าเสี่ยง behavior change อย่าทำ — จดไว้")
+  - **พบเพิ่ม (แยกเรื่อง ไม่ใช่ dedup แต่เกี่ยวกับ symlink check ที่ #30 ขอ):** `.claude/skills/xvary-stock-report`, `.claude/skills/xvary-turbo-report`, `.claude/skills/xvary-dca-report` เป็น **broken symlinks** ชี้ไปที่ `skills/xvary-*` ที่ไม่มีจริง (ของจริงคือ `skills/stock-report`, `skills/turbo-report`, `skills/dca-report` — ไม่มี `xvary-` prefix) — เช็คแล้วว่าไม่กระทบงาน #30 (ไม่มี "สำเนาที่สอง" ที่จะลืมแก้ เพราะ symlink เสียไม่ได้ชี้ไปไฟล์จริงไหนเลย) แต่เป็น repo hygiene issue แยกที่ควรมีคนดู — ไม่รู้ว่าเป็นความตั้งใจ (ปิดใช้งานชั่วคราว) หรือ typo ตกค้าง
+**ไฟล์:** อ่านอย่างเดียว ไม่แก้: `.claude/commands/catalyst-list.md` · `.claude/commands/turbo-list.md` · `skills/stock-report/SKILL.md` · `skills/turbo-report/SKILL.md` · `skills/dashboard-compare/SKILL.md` · `.claude/skills/xvary-*` (พบ broken symlink)
+**เป้า:** ถ้าจะทำจริง — consolidate `catalyst-list.md`/`turbo-list.md` ให้ชี้ไปหา skill's Step 0 แทน copy เนื้อ (ทำทีละคู่ + รัน live `/catalyst-list` และ `/turbo-list` จริงเทียบ output ก่อน-หลัง) และเคาะว่า `.claude/skills/xvary-*` ตั้งใจ broken หรือควรแก้เป็นชื่อจริง
+
+## 32. ✅ DONE — Compare v3 — rename `dashboard-compare`→`catalyst-compare` + stage/proximity-aware + แยก turbo-compare (implement #11)
+
+**ปัญหา:** review `skills/dashboard-compare/SKILL.md` (2026-07-10) พบ 4 ช่อง — 2 อันแรกเกิดจาก #8 เพิ่ง landing (skill เขียนก่อน):
+  1. **ไม่รู้จัก post-catalyst stage** — pick ที่ event ผ่านแล้ว (dashboard ย้ายเข้า Realized section แล้วโดย #8) ยังติด "🎯 Best to Open NOW" ได้เต็ม ๆ เพราะ formula ไม่ดู `catalystDate`
+  2. **ไม่มี catalyst proximity ใน rank score** — event อีก 5 วัน vs 80 วัน คะแนนเท่ากัน ทั้งที่ thesis ทั้งระบบคือ timing (pre-runup 1–2 สัปดาห์)
+  3. **Compare ได้แค่ core lane** — อ่านเฉพาะ `web/data/reports/` → turbo เทียบไม่ได้ = #11 ที่เปิดรออยู่
+  4. **จุกจิก:** ราคาสดใช้ stockanalysis.com ขณะที่ backtest stack ใช้ Yahoo (source เพี้ยนกันได้) · `score` อ่านดิบจาก JSON ทั้งที่เป็น advisory (ของจริง recompute โดย `scoring.ts` — CLAUDE.md ข้อ 6)
+**ทำ:**
+  A. **Catalyst mode — rename skill เดิมเป็น `catalyst-compare`** (สื่อ lane ตรงกว่า "dashboard" ที่กำกวมหลังมี 3 lane · ย้าย dir `skills/dashboard-compare/`→`skills/catalyst-compare/` + สร้าง symlink `.claude/skills/catalyst-compare` ใหม่แทนอันเดิม · เช็คแล้ว: ไม่มีไฟล์อื่นใน repo อ้าง dashboard-compare นอกจาก backlog):
+     - **Stage-aware:** derive stage แบบเดียวกับ `reportStage()` ใน `web/lib/catalyst-timing.ts` (nearest `catalystDate` < today = post) → pick ที่ post ตัดออกจาก Best to Open NOW ไปอยู่ section "⏳ Realized — ไม่ใช่ entry ใหม่" พร้อมเหตุผลสั้น
+     - **Proximity points ใน rank score:** soft (ห้าม hard filter — pre-runup คือ edge): `daysToCatalyst ≤ 14` = +10 · `15–45` = +5 · `>45` หรือไม่มีวัน = 0
+     - **Consistency:** เปลี่ยน live price source เป็น Yahoo (endpoint เดียวกับ `scripts/fetch-backtest-prices.mjs`, stockanalysis เป็น fallback) · เพิ่ม note ใน prompt ว่า `score` ใน JSON เป็น advisory — ใช้ได้แต่ให้รู้ว่าค่าจริง recompute ตอน load
+  B. **Turbo-compare แยก (implement #11):** สร้าง `skills/turbo-compare/SKILL.md` ใหม่ อ่าน `web/data/speculative/` — เกณฑ์ตาม #11 ที่ spec ไว้แล้ว: Survival (0–30, runway/burn/dilution) · Upside reality (0–25) · Entry (0–25, ใช้ zone logic เดียวกับ catalyst mode) · Headwind penalty (−30–0) · Bull% bonus (0–10, tiebreaker) · Output = "🎰 Moonshot Leaderboard" (ห้ามใช้ชื่อ "Best to Open NOW" — framing ต่างกัน) · stage-aware เหมือนกัน (binary event ผ่านแล้ว = realized) · Step 0 feedback prior ใช้ semantics ของ turbo lane (`turbo.overall`, commentary + sizing language)
+     - trigger: "compare turbo", "หุ้นซิ่งตัวไหนเข้าได้", "moonshot ตัวไหนน่าเปิด" ฯลฯ · dashboard-compare เดิมเพิ่มบรรทัด: ถ้า user ถามถึง turbo → ชี้ไป turbo-compare
+**ไฟล์:** `skills/dashboard-compare/SKILL.md` · `skills/turbo-compare/SKILL.md` (ใหม่) · เช็ค `.claude/skills/` ว่าต้องมี symlink/สำเนาไหม (dashboard-compare เดิมเป็น symlink — ทำแบบเดียวกัน) · อ้างอิง logic: `web/lib/catalyst-timing.ts` (`reportStage`, `daysToCatalyst`)
+**เป้า:** compare ไม่เชียร์เข้า pick ที่ event จบแล้ว · pick ใกล้ event ลอยขึ้นเหมาะกับ timing thesis · turbo มี leaderboard ของตัวเองด้วยเกณฑ์ survival-first ตาม #11 (RXRX-type ขึ้น top เพราะ survival แข็ง ไม่ใช่เพราะมีวันชัด) · ราคา source เดียวกับ backtest
+**เกี่ยวพัน:** ปิด item นี้ = ปิด #11 ด้วย (จดใน #11 ว่า implement ผ่าน #32)
+**ผล (2026-07-10):** ทำครบทั้ง A+B — prompt-only, ไม่แตะ app code:
+  - **Rename:** `git mv skills/dashboard-compare skills/catalyst-compare` · ลบ symlink เก่า สร้าง `.claude/skills/catalyst-compare -> ../../skills/catalyst-compare` ใหม่ · `name:` frontmatter → `catalyst-compare` · เก็บ trigger เดิมครบ + เพิ่ม "compare catalyst"/"catalyst ตัวไหนเข้าได้" · grep ยืนยันไม่มีไฟล์อื่นอ้าง `dashboard-compare` อีก (เจอแค่ audit log ใน `.claude/settings.local.json` จาก `rm` command ที่รันตอน rename — ไม่ใช่ reference จริง)
+  - **Stage-aware:** Step 1 derive stage ตามกฎเดียวกับ `reportStage()` เป๊ะ (parseable date ทุกตัวใน `catalysts[]`+`estimateDates[]`, ไม่มี=undated, มีอนาคต=pre, ทั้งหมดอดีต=post) · post ตัดออกจาก rank score/Best-to-Open-NOW/Wait-Skip ไปอยู่ section ใหม่ "⏳ Realized — event ผ่านแล้ว ไม่ใช่ entry ใหม่"
+  - **Proximity points:** เพิ่มใน final formula เป็น `+ prox_pts` (≤14d=+10, 15–45d=+5, >45/undated=0) — soft signal ไม่ hard filter
+  - **Price source:** Yahoo chart endpoint (`query1.finance.yahoo.com/v8/finance/chart/<TICKER>`, host เดียวกับ `fetch-backtest-prices.mjs`) เป็น primary, stockanalysis.com เป็น fallback
+  - **Score note:** เพิ่ม footnote ใต้ตารางว่า `score` เป็น advisory, ของจริง recompute โดย `scoring.ts`
+  - **Turbo pointer:** เพิ่มทั้งใน description และท้าย trigger phrases — ถ้าถามเรื่อง turbo ให้ชี้ไป `turbo-compare`
+  - **`skills/turbo-compare/SKILL.md` ใหม่** — mirror โครงสร้างเดียวกัน (Step 0→1→2→3→4) แต่ criteria ตาม #11 คำต่อคำ (Survival/Upside/Entry/Headwind/Bull%) · output header "🎰 Moonshot Leaderboard" (มีบรรทัดห้ามใช้ "Best to Open NOW" ชัดเจน) · stage-aware แบบเดียวกัน · Step 0 feedback ใช้ `turbo.overall` semantics (commentary+sizing only) · symlink `.claude/skills/turbo-compare` สร้างแล้ว
+  **Verify:** `ls -la .claude/skills/` → ทั้งสอง symlink valid, ไม่มี dangling dashboard-compare ✅ · `grep -rn "dashboard-compare"` เหลือแค่ audit log ใน settings.local.json (ไม่ใช่ wiring reference) ✅ · dry-read ทั้งสองไฟล์: "Best to Open NOW" ไม่โผล่ใน turbo-compare (นอกจาก negative-example rule), Survival/Headwind/Bull% ไม่โผล่ใน catalyst-compare, stage rule คำเดียวกันทั้งคู่ ✅ · **Sanity vs current data:** KTOS (nearest catalyst Aug 5, 26 วันจากวันนี้ 10 Jul) ตกช่วง 15–45d → +5 prox ตรงตามคาด ✅ · ไม่มี ticker ไหนใน `web/data/reports/` (core lane) เป็น "post" stage ตอนนี้จริง ๆ (ทุกตัวมีวันอนาคตอย่างน้อย 1 วัน) เลยไม่มีตัวอย่างจริงให้เช็ค Realized section บน core lane ได้ — แต่เจอตัวอย่างจริงบน turbo lane แทน: **POET** (`web/data/speculative/POET_20260702.json`) มีวันที่ parse ได้แค่ "Q2 2026" (≈พ.ค. 2026) ซึ่งผ่านมาแล้ว ไม่มีวันอนาคตเลย → เข้าเงื่อนไข post/Realized ตรงตามตรรกะที่เขียนไว้
+
+## 33. Findings จากการ test-run catalyst-compare / turbo-compare จริงครั้งแรก (2026-07-10)
+
+**ปัญหา:** ลองรัน compare ทั้งสองตัวกับ data จริง (22 core + 24 turbo tickers) เจอ 3 เรื่อง:
+  1. **Tension ระหว่าง turbo-list กับ turbo-compare** — RCAT ที่ `/turbo-list` เพิ่งเลือกเป็น top-5 เมื่อเช้า (upside-first) ได้คะแนน survival-first แค่ ~5/100 บน turbo-compare (runway <1 ปี + shelf $300M = Survival 0, dilution headwind −15) — สอง skill ให้คำตอบตรงข้ามกับหุ้นตัวเดียวกันในวันเดียวกัน · ไม่ใช่ bug (คนละ thesis โดยตั้งใจตาม #11) แต่ user เห็นสองหน้าจอขัดกันโดยไม่มีคำอธิบาย → ควรเพิ่ม **survival sanity-check ใน `/turbo-list` screen**: ตัวที่ Survival score ต่ำมาก (runway <12m + active shelf) ต้องมีเหตุผลพิเศษถึงติด top 5 หรืออย่างน้อย report ต้องระบุ "survival flag" ให้ compare อ้างต่อได้ — ไม่ถึงกับเปลี่ยน ranking axis (นั่นคือการตัดสินใจใหญ่ แยกไปคุยก่อน)
+  2. **Live price คือคอขวดจริงของ compare ทั้งคู่** — ราคาจาก report เก่าได้ถึง 2 สัปดาห์ (SOUN Jun 26 ขึ้น #1 ทั้งที่ราคาไม่ยืนยัน) และการ fetch หน้าเว็บ 22–24 ticker ต่อรอบหนักเกิน → ทำ **`scripts/fetch-live-prices.mjs`**: batch ดึงราคาปัจจุบันทุก ticker ใน reports/+speculative/ (Yahoo endpoint เดียวกับ backtest, ~2-3 batch calls) เขียน `web/data/live-prices.json` (ticker → {price, changePct, asOf}) → compare skills อ่านไฟล์นี้ก่อน ถ้า asOf เก่าเกิน X ชม. ค่อย fallback fetch เอง · รันก่อนใช้ compare หรือผูกเข้า cron เดียวกับ backtest:fetch
+  3. **Realized pick ไม่มี follow-up loop** — VERA PDUFA ผ่านมา 3 วันแล้วไม่มีอะไรในระบบบอกว่าผลออกเป็นยังไง (ต้องไปเช็คข่าวเอง) → เพิ่มกติกาใน compare ทั้งสอง: pick ใน Realized section ให้ WebSearch ผล event สั้น ๆ (1 query ต่อตัว) แล้วรายงาน outcome ✅/❌ พร้อม % move — ปิด loop "แล้วมันเกิดอะไรขึ้น" โดยไม่ต้องรอ backtest 30 วัน
+**ไฟล์:** `.claude/commands/turbo-list.md` + `skills/turbo-report/SKILL.md` (survival flag ข้อ 1) · `scripts/fetch-live-prices.mjs` (ใหม่, ข้อ 2) · `web/data/live-prices.json` (generated) · `skills/catalyst-compare/SKILL.md` + `skills/turbo-compare/SKILL.md` (อ่าน live-prices + realized outcome check, ข้อ 2+3) · `package.json` (script entry)
+**เป้า:** turbo-list กับ turbo-compare ไม่ให้คำตอบขัดกันเงียบ ๆ (survival flag อธิบายได้) · compare ใช้ราคาสดจริงทุก ticker ใน 1-2 นาที · Realized section บอก outcome ไม่ใช่แค่ "event ผ่านแล้ว"
+
 ---
 
 ## ยังไม่เลือกทำ (ไว้พิจารณาทีหลัง)
 - **Earned category ranking + expectancy-based sizing** *(idea 5+9)* — ลบ sector priority (Tech→AI→Space) ให้ category ลอยขึ้น top ตาม hit-rate จริง + size ตาม expectancy (`hitRate × upside ÷ MAE`) **⚠️ ขึ้นกับ #9 มี sample พอก่อน** ไม่งั้น optimize บน noise — ต้องใส่ shrinkage/prior + cap อิทธิพลตอน N น้อย
-- **Portfolio-level correlation view** — holding (AVGO/NVDA/MRVL/INTC/PLTR/ASTS) correlate สูง เด้งพร้อมกันตาม AI sentiment; view exposure/concentration/powder *(ทับซ้อนกับ #10 — อาจรวม)*
+- **Portfolio-level correlation view** — holding (AVGO/NVDA/MRVL/INTC/PLTR/ASTS) correlate สูง เด้งพร้อมกันตาม AI sentiment; view exposure/concentration/powder *(#10 ปิดแล้ว — เป็น report-level warning ใน `/catalyst` เท่านั้น ไอเดียนี้ยังแยกเป็นคนละเรื่อง: cross-holding exposure view ต่อ user's actual portfolio/journal ไม่ใช่ต่อ dashboard picks — ไม่ทับซ้อนแล้ว เป็น idea ที่ใหญ่กว่า ทำทีหลังได้)*
 - **Price-trigger alerts** — ต่อ scheduled task + live price → alert "แตะ Entry 2 zone" / "ใกล้ stop" (pairs กับ analyze-journal skill)
 - **Small-cap quota ใน /dashboard** — บังคับ ≥1 pick ที่ <$10B + แก้ scoring ให้ตอนไม่มี analyst target ใช้ scenario-implied upside แทนการให้ 0 (เลิกกดหุ้น coverage บาง)
 
