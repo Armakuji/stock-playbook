@@ -1,0 +1,196 @@
+{
+  "ticker": "IONQ",
+  "companyName": "IonQ, Inc.",
+  "companyDescription": "Trapped-ion quantum computing · $470M remaining performance obligations (+554% YoY) · first 256-qubit Tempo system sale to University of Cambridge · September Investor Day targets 'Broad Quantum Advantage'",
+  "exchange": "NYSE",
+  "generatedAt": "2026-07-14T22:00:00.000Z",
+  "price": 39.38,
+  "priceChange": 1.30,
+  "priceNote": "Live-prices.json cache (just refreshed, <1h old). Up modestly today after a brutal stretch — down ~36% over the past month on Strait of Hormuz-driven risk-off selling across quantum names plus a short-seller report questioning Pentagon-contract exposure.",
+  "marketCap": "$16.8B",
+  "sector": "Technology / Quantum Computing",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Speculative",
+  "score": 60,
+  "summary": "IonQ has fallen ~36% over the past month — a combination of broad quantum-sector risk-off (Strait of Hormuz tensions, oil spike) and a short-seller report specifically alleging Pentagon-contract funding risk and valuation disconnection from current business performance. The fundamentals tell a more constructive story: remaining performance obligations exploded to $470M (+554% YoY), and IonQ booked its first 256-qubit Tempo system sale to the University of Cambridge — a real shift from R&D-grade testing toward commercial-scale systems. Northland Securities raised its target to $70 (from $55) citing confidence in the September Investor Day, where management aims to demonstrate 'Broad Quantum Advantage.' Analyst consensus average ~$69, implying real upside from the beaten-down price — but this remains a name with genuine, disclosed headwinds (short-seller allegations, contract-funding uncertainty) that shouldn't be waved away just because the stock looks cheap relative to target.",
+  "catalysts": [
+    {
+      "icon": "🔬",
+      "name": "September Investor Day — 'Broad Quantum Advantage'",
+      "description": "Management's stated goal is to demonstrate leadership toward Broad Quantum Advantage at this event. Northland Securities cited this specifically when raising its target to $70. This is the nearest scheduled catalyst, though ~2 months out.",
+      "urgencyLabel": "~8 WEEKS",
+      "dateBadge": "Sep 2026",
+      "catalystDate": "2026-09-08",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🖥️",
+      "name": "First Commercial-Scale System Sale (Tempo, 256-qubit)",
+      "description": "Sold to the University of Cambridge — signals a genuine shift from R&D-grade testing toward commercial-scale systems, a real proof point beyond the backlog-growth narrative alone.",
+      "urgencyLabel": "RECENT",
+      "dateBadge": "Jul 2026",
+      "catalystDate": "2026-07-01",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "⚠️",
+      "name": "Short-Seller Report / Pentagon Contract Funding Scrutiny",
+      "description": "A short-seller report specifically alleges risks around Pentagon-related contract funding and argues the valuation has disconnected from current business performance — this is an active, unresolved overhang, not settled news, and is driving real near-term price action.",
+      "urgencyLabel": "ACTIVE",
+      "dateBadge": "Ongoing",
+      "badgeColor": "red",
+      "dotColor": "red"
+    }
+  ],
+  "risks": [
+    "A short-seller report has specifically alleged Pentagon-related contract funding risk — this is an active, contested claim, not resolved fact, but it's a real driver of the recent selloff and needs to be watched, not dismissed",
+    "Down ~36% over the past month in a 'nearly seven-week losing streak' — some of this is sector-wide risk-off (Strait of Hormuz/oil spike hit all quantum names, QBTS/RGTI/QUBT included), but the magnitude and duration suggest company-specific concerns are compounding the macro effect",
+    "Quantum computing remains a pre-mainstream-revenue technology broadly — even with $470M in remaining performance obligations, converting backlog to recognized, durable revenue at scale is still an execution risk",
+    "High-multiple, high-beta name — even a modest broad risk-off shock (like today's dense macro calendar) tends to hit speculative tech disproportionately",
+    "September Investor Day is ~8 weeks out — a long wait during which sentiment (and the unresolved short-seller allegations) could continue to weigh on the stock before the next real catalyst arrives"
+  ],
+  "estimateDates": [
+    { "event": "September Investor Day", "dateRange": "Sep 2026", "note": "Management targets demonstrating 'Broad Quantum Advantage' — the key scheduled catalyst", "est": "Qualitative milestone, not earnings", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -35, "price": 25.60 },
+    { "label": "Base", "color": "yellow", "pct": 40, "price": 55.13 },
+    { "label": "Bull", "color": "green", "pct": 76, "price": 69.31 },
+    { "label": "Moon", "color": "purple", "pct": 145, "price": 96.48 }
+  ],
+  "analystTargets": [
+    { "firm": "Northland Securities", "target": 70, "rating": "Buy", "note": "Raised from $55, citing confidence in the Sep Investor Day" },
+    { "firm": "Consensus (Strong Buy)", "target": 69.31, "rating": "Strong Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "HIGH",
+    "rateOutlook": "Fed holds at 3.50-3.75%, but Chair Warsh's hawkish Jun debut FOMC plus today's CPI/testimony double-header keeps high-multiple, pre-mainstream-profitability names like IONQ especially exposed to a higher-for-longer repricing.",
+    "inflationNote": "Core PCE accelerated to 3.4% YoY (May) — reinforces the hawkish setup into the Jul 28-29 FOMC.",
+    "sectorImpact": "HIGH. Quantum-computing names have already shown they trade as a basket on macro/geopolitical risk-off (the recent Hormuz-driven selloff hit IONQ, QBTS, RGTI, and QUBT together) — this stock is structurally more exposed than most to the dense Jul 27-Aug 1 FOMC/earnings/PCE week.",
+    "summary": "Fed risk HIGH — IONQ has already demonstrated real, recent sensitivity to both macro risk-off and company-specific overhangs simultaneously; the combination makes this a genuinely higher-risk hold into a dense macro calendar than the underlying business fundamentals alone would suggest."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 39.38, "note": "Current — down ~36% over the past month, small starter size given active short-seller overhang", "timing": "Now (small)" },
+      { "label": "Entry 2", "level": 33, "rangeMax": 36, "note": "Further dip zone — better R/R if the sector selloff or short-seller pressure continues", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 28, "note": "Deep dip — near recent lows, verify short-seller allegations haven't escalated before adding", "timing": "Deep dip (verify news first)" }
+    ],
+    "tp1": { "price": 55.13, "pct": 40, "note": "Base — short-seller overhang fades without confirmation, sector sentiment stabilizes" },
+    "tp2": { "price": 69.31, "pct": 76, "note": "Bull — clean Investor Day, consensus target reached" },
+    "tp3": { "price": 96.48, "pct": 145, "note": "Moon — Broad Quantum Advantage milestone validated + Pentagon contract concerns resolved favorably", "moon": true },
+    "stopLoss": {
+      "tight": 33, "tightPct": -16.2, "tightNote": "Below Entry 2 zone — short-seller allegations gaining traction or sector selloff deepening",
+      "hard": 25, "hardPct": -36.5, "hardNote": "Deep breach — Pentagon contract concerns confirmed material or Investor Day disappoints",
+      "riskReward": "3.4 : 1", "rrNote": "From Entry 2 ($34.50 mid) tight stop vs TP2", "rrWarning": "Real, active overhang (short-seller report) — size smaller than the backlog growth story alone would justify"
+    },
+    "verdict": "SPECULATIVE — small position given the active, unresolved short-seller overhang alongside genuinely strong backlog growth ($470M RPO, +554% YoY) and a real commercial-scale proof point (Cambridge Tempo sale). Wait for either the overhang to clear or the September Investor Day for confirmation before sizing up.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "product_launch",
+    "preRunup": "Quantum-computing names as a group have shown they move together on both sector-wide sentiment (Hormuz selloff) and individual news — IONQ specifically has been more volatile than peers recently given the active short-seller allegations layered on top.",
+    "preRunupTiming": "no clean pre-event pattern currently — the stock is in an active drawdown driven by unresolved negative news, not a positive pre-run",
+    "preRunupPct": "currently negative (-36% over the past month) rather than a typical positive pre-catalyst drift",
+    "postWin": {
+      "avgPct": 25,
+      "range": "+10% to +40%",
+      "note": "No exact same-company precedent exists yet for the September Investor Day specifically. Sized using the standard pattern for quantum-computing names reversing a sentiment-driven selloff on a clean positive technical/business milestone — the Cambridge Tempo sale itself is a real recent positive data point suggesting the market can react well to concrete commercial progress.",
+      "exampleDate": "sector pattern — no exact same-event precedent yet"
+    },
+    "postLose": {
+      "avgPct": -20,
+      "range": "-10% to -30%",
+      "note": "IonQ's own recent month (-36% cumulative on Hormuz risk-off + short-seller report) shows real, demonstrated downside sensitivity — sized using that recent, same-company pattern as the closest available precedent.",
+      "exampleDate": "Jul 2026 (ongoing)"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "Speculative sizing — genuinely strong backlog/commercial-proof-point fundamentals, but an active, unresolved short-seller allegation is a real, current risk factor that argues against over-sizing until it either resolves or the September Investor Day provides confirmation."
+    },
+    "stopPreCatalyst": { "pct": -16, "price": 33, "note": "Below Entry 2 zone = short-seller allegations gaining market credibility" },
+    "stopPostCatalyst": { "pct": -25, "note": "If Pentagon contract funding concerns are confirmed material or the Investor Day disappoints, exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "IONQ",
+      "event": "Strait of Hormuz Risk-Off Selloff Across Quantum Stocks",
+      "date": "Jul 2026",
+      "movePct": -8,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Same-company, very recent precedent for macro/geopolitical-driven downside — directly relevant to the sector-beta risk still present given the ongoing dense macro calendar."
+    },
+    {
+      "ticker": "IONQ",
+      "event": "Short-Seller Report Alleging Pentagon Contract Funding Risk",
+      "date": "Jul 2026",
+      "movePct": -15,
+      "days": 5,
+      "outcome": "bad",
+      "note": "Same-company precedent for company-specific negative news — the active, unresolved overhang most directly relevant to sizing this position appropriately."
+    },
+    {
+      "ticker": "RGTI",
+      "event": "Quantum-sector risk-off sympathy move",
+      "date": "Jul 2026",
+      "movePct": -6,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Comparable quantum-sector name's reaction to the same macro trigger — confirms this trades as a basket, not purely on IONQ-specific news."
+    }
+  ],
+  "sources": [
+    "https://www.fxleaders.com/news/2026/07/13/ionq-stock-plunges-below-40-on-pentagon-contract-loss-rumors-30-support-comes-into-focus/",
+    "https://247wallst.com/investing/2026/07/13/ionq-tumbles-8-d-wave-rigetti-quantum-computing-drop-6-as-risk-off-ripple-effects-hit-speculative-quantum-stocks/",
+    "https://eciks.org/13456-93768-ionq-stock-valuation-decline-quantum",
+    "https://www.tipranks.com/news/3-quantum-computing-stocks-to-consider-in-july-2026-according-to-analysts",
+    "https://www.fool.com/investing/2026/07/09/1-incredible-quantum-computing-stock-that-could-ma/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "IonQ ร่วง ~36% ใน 1 เดือน — ผสมระหว่าง risk-off ทั้ง sector quantum (ความตึงเครียด Strait of Hormuz, oil spike) และ short-seller report ที่กล่าวหาความเสี่ยง Pentagon contract funding โดยเฉพาะ Fundamentals บอกเรื่องราวที่ดีกว่า — remaining performance obligations พุ่งเป็น $470M (+554% YoY) และ IonQ ขายระบบ Tempo 256-qubit เชิงพาณิชย์ตัวแรกให้ University of Cambridge — เปลี่ยนจาก R&D-grade เป็น commercial-scale จริง Northland Securities ยก target เป็น $70 (จาก $55) อ้างความมั่นใจ September Investor Day ที่จะโชว์ 'Broad Quantum Advantage' Consensus เฉลี่ย ~$69 = upside จริงจากราคาที่ร่วงมาก แต่ยังมี headwind ที่เปิดเผยจริง (short-seller allegation, ความไม่แน่นอน contract funding) ที่ไม่ควรมองข้ามแค่เพราะหุ้นดูถูกเทียบ target",
+      "priceNote": "บวกเล็กน้อยวันนี้ หลังร่วงหนัก ~36% ใน 1 เดือนจาก risk-off Strait of Hormuz + short-seller report เรื่อง Pentagon contract",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "September Investor Day — 'Broad Quantum Advantage'", "description": "เป้าหมาย management โชว์ความเป็นผู้นำสู่ Broad Quantum Advantage — Northland อ้างเหตุผลนี้ตอนยก target เป็น $70" },
+        { "name": "ขายระบบ Commercial-Scale ตัวแรก (Tempo 256-qubit)", "description": "ขายให้ University of Cambridge — เปลี่ยนจาก R&D-grade testing เป็น commercial-scale จริง" },
+        { "name": "Short-Seller Report / Pentagon Contract Scrutiny", "description": "short-seller กล่าวหาความเสี่ยง Pentagon contract funding — overhang ที่ยังไม่จบ ไม่ใช่ข่าวที่ยุติแล้ว ขับเคลื่อน price action จริงตอนนี้" }
+      ],
+      "risks": [
+        "Short-seller report กล่าวหาความเสี่ยง Pentagon contract funding โดยเฉพาะ — เป็น claim ที่ยังโต้แย้งอยู่ ไม่ใช่ fact ที่ยุติแล้ว แต่เป็น driver จริงของการร่วงล่าสุด",
+        "ร่วง ~36% ใน 1 เดือน (losing streak เกือบ 7 สัปดาห์) — บางส่วนเป็น sector-wide risk-off แต่ขนาดและระยะเวลาชี้ว่ามีความกังวลเฉพาะบริษัทซ้อนอยู่",
+        "Quantum computing ยังเป็นเทคโนโลยี pre-mainstream-revenue โดยรวม — แม้มี RPO $470M การแปลงเป็นรายได้จริงระดับ scale ยังเป็น execution risk",
+        "หุ้น high-multiple high-beta — แม้ risk-off เล็กน้อยก็กระทบ speculative tech หนักกว่าปกติ",
+        "September Investor Day ยังอีก ~8 สัปดาห์ — รอนานระหว่างที่ sentiment (และ short-seller allegation ที่ยังไม่จบ) อาจกดดันหุ้นต่อไปก่อนถึง catalyst จริงถัดไป"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed hold 3.50-3.75% แต่ Warsh เอียง hawkish + CPI/testimony วันนี้ — หุ้น multiple สูง pre-mainstream-profitability แบบ IONQ เสี่ยง repricing สูงเป็นพิเศษ",
+        "inflationNote": "Core PCE เร่งเป็น 3.4% YoY (พ.ค.) หนุนภาพ hawkish ก่อน FOMC 28-29 ก.ค.",
+        "sectorImpact": "สูง หุ้น quantum computing เทรดเป็น basket ต่อ risk-off macro/ภูมิรัฐศาสตร์แล้วจริง (Hormuz selloff กระทบ IONQ, QBTS, RGTI, QUBT พร้อมกัน) — expose กับสัปดาห์ FOMC/earnings/PCE หนาแน่นมากกว่าปกติ",
+        "summary": "ความเสี่ยง Fed ปานกลาง-สูง — IONQ แสดง sensitivity จริงทั้งต่อ macro risk-off และ overhang เฉพาะบริษัทพร้อมกันแล้ว ทำให้เป็น hold ที่เสี่ยงกว่า fundamental ธุรกิจล้วนๆ จะบ่งชี้เข้าสัปดาห์ macro หนาแน่น"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — size เล็กเพราะมี short-seller overhang ที่ยังไม่จบซ้อนกับ backlog growth ที่แข็งแกร่งจริง ($470M RPO +554% YoY) และ proof point commercial-scale จริง (ขาย Tempo ให้ Cambridge) รอ overhang คลี่คลายหรือ September Investor Day ยืนยันก่อนเพิ่ม size",
+        "entryLevels": [
+          { "note": "ปัจจุบัน — ร่วง ~36% ใน 1 เดือน size เล็กเพราะ overhang short-seller ยังอยู่", "timing": "ตอนนี้ (เล็ก)" },
+          { "note": "โซนย่อเพิ่ม — R/R ดีกว่าถ้า sector selloff หรือแรงกดจาก short-seller ต่อเนื่อง", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงลึก — ใกล้ low ล่าสุด ตรวจข่าว short-seller ก่อนเพิ่ม", "timing": "Deep dip (ตรวจข่าวก่อน)" }
+        ],
+        "tp1": { "note": "Base — overhang short-seller จางหายไปโดยไม่ได้รับการยืนยัน sentiment sector นิ่งขึ้น" },
+        "tp2": { "note": "Bull — Investor Day ราบรื่น แตะ consensus target" },
+        "tp3": { "note": "Moon — milestone Broad Quantum Advantage ยืนยัน + ความกังวล Pentagon contract คลี่คลายทางบวก", "moon": true },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่าโซน Entry 2 = short-seller allegation ได้รับความเชื่อถือมากขึ้นหรือ sector selloff ลึกขึ้น",
+          "hardNote": "หลุดลึก = Pentagon contract concern ยืนยันจริงหรือ Investor Day ผิดหวัง",
+          "rrNote": "จาก Entry 2 ($34.50 กลาง) stop แคบ vs TP2",
+          "rrWarning": "Overhang จริงที่ยังไม่จบ (short-seller report) — size เล็กกว่าที่ backlog growth story เพียงอย่างเดียวจะบ่งชี้"
+        }
+      },
+      "estimateDates": [
+        { "event": "September Investor Day", "note": "management เป้าโชว์ 'Broad Quantum Advantage' — catalyst ที่กำหนดไว้จุดหลัก" }
+      ]
+    }
+  }
+}

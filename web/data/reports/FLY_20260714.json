@@ -3,10 +3,10 @@
   "companyName": "Firefly Aerospace Inc.",
   "companyDescription": "Launch + lunar + defense · Alpha rocket + Blue Ghost lunar lander + SciTec (space domain awareness) · $1.3B backlog, 80% of FY26 revenue already booked · Q2 earnings ~Aug 12",
   "exchange": "NASDAQ",
-  "generatedAt": "2026-07-14T20:00:00.000Z",
-  "price": 22.27,
-  "priceChange": -7.56,
-  "priceNote": "Down 7.56% today per live-prices.json cache (1.4h old) — a further slide from the $25.66 level 6 days ago, deepening the discount to consensus targets. Refreshing this pick given the widened gap.",
+  "generatedAt": "2026-07-14T22:00:00.000Z",
+  "price": 22.57,
+  "priceChange": 1.35,
+  "priceNote": "Live-prices.json cache (just refreshed, <1h old) — up 1.35% today, a partial recovery from the intraday low reached earlier this morning ($22.27, -7.56%) after yesterday's slide from $25.66. Still well below consensus targets even after the bounce.",
   "marketCap": "$2.1B",
   "sector": "Industrials / Aerospace & Space Launch",
   "verdict": "SPECULATIVE",
@@ -57,10 +57,10 @@
     { "event": "Alpha Block 2 Debut", "dateRange": "Late Summer 2026", "note": "De-risks the core launch business post prior-year mishaps", "est": "Targeted late summer", "highlight": "blue" }
   ],
   "scenarios": [
-    { "label": "Bear", "color": "red", "pct": -30, "price": 15.59 },
-    { "label": "Base", "color": "yellow", "pct": 50, "price": 33.41 },
-    { "label": "Bull", "color": "green", "pct": 90, "price": 42.31 },
-    { "label": "Moon", "color": "purple", "pct": 170, "price": 60.13 }
+    { "label": "Bear", "color": "red", "pct": -30, "price": 15.80 },
+    { "label": "Base", "color": "yellow", "pct": 50, "price": 33.86 },
+    { "label": "Bull", "color": "green", "pct": 90, "price": 42.88 },
+    { "label": "Moon", "color": "purple", "pct": 170, "price": 60.94 }
   ],
   "analystTargets": [
     { "firm": "Consensus (11 analysts)", "target": 42.20, "rating": "Moderate Buy", "note": "MarketBeat avg; high $60, low $28" },
@@ -75,16 +75,16 @@
   },
   "entryStrategy": {
     "entryLevels": [
-      { "label": "Entry 1", "level": 22.27, "note": "Current price — down further today, widening gap to consensus target", "timing": "Now (small)" },
+      { "label": "Entry 1", "level": 22.57, "note": "Current price — bounced off this morning's intraday low, still well below consensus target", "timing": "Now (small)" },
       { "label": "Entry 2", "level": 19, "rangeMax": 20.5, "note": "Further sector-driven dip zone — best R/R ahead of Aug 12 earnings", "timing": "If dips", "preferred": true },
       { "label": "Entry 3", "level": 16, "note": "Deep dip — broad small-cap/space-sector selloff", "timing": "Deep dip only" }
     ],
-    "tp1": { "price": 33.41, "pct": 50, "note": "Base — clean Q2 execution on already-booked guidance" },
-    "tp2": { "price": 42.31, "pct": 90, "note": "Bull — Q2 beat + clean Alpha Block 2 debut, consensus target reached" },
-    "tp3": { "price": 60.13, "pct": 170, "note": "Moon — Alpha Block 2 success + Blue Ghost 2 launched on schedule, full re-rate", "moon": true },
+    "tp1": { "price": 33.86, "pct": 50, "note": "Base — clean Q2 execution on already-booked guidance" },
+    "tp2": { "price": 42.88, "pct": 90, "note": "Bull — Q2 beat + clean Alpha Block 2 debut, consensus target reached" },
+    "tp3": { "price": 60.94, "pct": 170, "note": "Moon — Alpha Block 2 success + Blue Ghost 2 launched on schedule, full re-rate", "moon": true },
     "stopLoss": {
-      "tight": 19, "tightPct": -14.7, "tightNote": "Below Entry 2 zone — momentum still deteriorating",
-      "hard": 15, "hardPct": -32.6, "hardNote": "Deep breach — an Alpha Block 2 failure or guidance cut would justify this",
+      "tight": 19.25, "tightPct": -14.7, "tightNote": "Below Entry 2 zone — momentum still deteriorating",
+      "hard": 15.21, "hardPct": -32.6, "hardNote": "Deep breach — an Alpha Block 2 failure or guidance cut would justify this",
       "riskReward": "3.7 : 1", "rrNote": "From Entry 2 ($19.75 mid) tight stop vs TP2", "rrWarning": "Good R/R but small-cap high-beta — size accordingly"
     },
     "verdict": "SPECULATIVE — buy small into continued weakness given the backlog visibility (80% of FY26 already booked), size up on further dips. Alpha Block 2's debut is the real de-risking event to watch given last year's mishap history.",
@@ -153,7 +153,7 @@
   "i18n": {
     "th": {
       "summary": "Firefly ทำสถิติ Q1 2026 revenue ใหม่ ($80.9M) และยืนยัน FY26 guide $420-450M โดย 80% จองแล้วผ่าน backlog $1.3B — เป็น growth story ที่มี visibility จริง ไม่ใช่แค่สัญญา แต่หุ้นยังร่วงต่อ (วันนี้ -7.56% ต่ำกว่า $25.66 เมื่อ 6 วันก่อนอีก ~13%) ทำให้ gap กับ consensus target $42.20 (11 analysts) กว้างขึ้น = upside ~90% Q2 earnings ~12 ส.ค. บวก Alpha Block 2 debut ปลายฤดูร้อนและ Blue Ghost 2 ปลายปีเป็น catalyst จริงแม้วันที่ไม่ชัดเจน",
-      "priceNote": "ร่วง 7.56% วันนี้ ต่อเนื่องจาก $25.66 เมื่อ 6 วันก่อน — refresh pick นี้เพราะ gap กว้างขึ้น",
+      "priceNote": "บวก 1.35% วันนี้ ฟื้นบางส่วนจากจุดต่ำสุดเช้านี้ ($22.27, -7.56%) หลังร่วงจาก $25.66 เมื่อวาน ยังต่ำกว่า consensus target มากแม้ฟื้นแล้ว",
       "scoreLabel": "ค่าขนม",
       "catalysts": [
         { "name": "Q2 2026 Earnings", "description": "~12 ส.ค. — FY26 guide จองแล้ว 80% print เน้นเรื่อง execution ไม่ใช่ demand" },

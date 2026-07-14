@@ -1,0 +1,178 @@
+{
+  "ticker": "TSM",
+  "companyName": "Taiwan Semiconductor Manufacturing Company Limited",
+  "companyDescription": "World's dominant advanced-node foundry · manufactures for NVDA/AMD/AAPL/AVGO and virtually every leading-edge chip designer · Q2 2026 earnings Jul 16",
+  "exchange": "NYSE",
+  "generatedAt": "2026-07-14T22:00:00.000Z",
+  "price": 419.73,
+  "priceChange": -0.44,
+  "priceNote": "Live-prices.json cache (just refreshed, <1h old). Roughly flat today heading into Thursday's Q2 print — the real action is expected around the earnings date, not before it.",
+  "marketCap": "$2.2T",
+  "sector": "Technology / Semiconductors (Foundry)",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 78,
+  "summary": "TSMC reports Q2 2026 earnings Thursday, Jul 16 — Wall Street expects EPS of $3.81/ADR (up from $2.47 a year ago) on revenue of $40.04B (up from $30.07B), with gross margin guided 65.5-67.5%. Analysts have been raising targets aggressively into the print: Barclays to $625, BofA to $590, Goldman to $600, all citing AI-chip demand and TSMC's advanced-node leadership. Consensus average implies ~12% near-term upside, with the highest targets suggesting up to ~38%. This is the dominant foundry for essentially every leading-edge AI chip on the market — a genuine picks-and-shovels core holding, not a speculative bet.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "Reports Thursday, Jul 16, 2026. Consensus expects EPS $3.81/ADR vs $2.47 a year ago, revenue $40.04B vs $30.07B, gross margin guided 65.5-67.5%. Capex plans toward the high end of the $52-56B 2026 range signal continued aggressive capacity investment for AI demand.",
+      "urgencyLabel": "2 DAYS",
+      "dateBadge": "Jul 16, 2026",
+      "catalystDate": "2026-07-16",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "🏭",
+      "name": "2026 Capex Guidance ($52-56B range)",
+      "description": "Company has signaled capex toward the high end of its range — a proxy for how confident management is in sustained AI-chip demand through 2026-2027. Watch for any revision at the Jul 16 print.",
+      "urgencyLabel": "AT EARNINGS",
+      "dateBadge": "Jul 16, 2026",
+      "catalystDate": "2026-07-16",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Rich analyst-target dispersion — the highest targets ($625-630) assume very strong forward guidance; a merely in-line print without a guidance raise could disappoint given how much optimism is already priced into recent target hikes",
+    "Geopolitical/Taiwan-specific risk is structural and permanent for this name — not a new development, but always worth remembering it's not priced at zero",
+    "Extremely capital-intensive business — capex toward the high end of $52-56B means FCF conversion lags revenue growth; margin guidance (65.5-67.5%) needs to hold as the company scales advanced nodes",
+    "Currency/ADR mechanics — TSM trades as an ADR, and NTD/USD moves can affect reported results independent of underlying business performance",
+    "Earnings land 2 days before the dense Jul 27-Aug 1 FOMC/Big-Tech-earnings/PCE week — a strong TSM beat could be partially overshadowed or amplified depending on how the broader AI-capex narrative trades into that window"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Jul 16, 2026", "note": "EPS $3.81/ADR, revenue $40.04B expected; margin guide 65.5-67.5%", "est": "est. $40.04B rev", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -15, "price": 356.77 },
+    { "label": "Base", "color": "yellow", "pct": 12, "price": 470.10 },
+    { "label": "Bull", "color": "green", "pct": 25, "price": 524.66 },
+    { "label": "Moon", "color": "purple", "pct": 42, "price": 596.02 }
+  ],
+  "analystTargets": [
+    { "firm": "Barclays", "target": 625, "rating": "Buy" },
+    { "firm": "Goldman Sachs", "target": 600, "rating": "Buy", "note": "Projects 39% 2026 revenue growth, 32% 2027" },
+    { "firm": "BofA", "target": 590, "rating": "Buy" },
+    { "firm": "Consensus (average)", "target": 470, "rating": "Strong Buy", "note": "~12% implied upside — 6 Buy, 1 Hold in last 3 months" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed holds at 3.50-3.75%, but Chair Warsh's hawkish Jun debut FOMC (9/18 officials projecting a 2026 hike) plus today's CPI/testimony double-header keeps mega-cap tech valuations exposed to a higher-for-longer repricing.",
+    "inflationNote": "Core PCE accelerated to 3.4% YoY (May, highest since Oct 2023) — reinforces the hawkish setup into the Jul 28-29 FOMC, which lands 12 days after TSM's own print.",
+    "sectorImpact": "MEDIUM. TSM's own catalyst (Jul 16 earnings) is company-specific and largely insulated from the macro calendar timing, but the stock's rich multiple (already re-rated significantly on AI optimism) makes it sensitive to any broad de-rating of AI-capex names into the dense Jul 27-Aug 1 week.",
+    "summary": "Fed risk MEDIUM — the Jul 16 earnings catalyst is well ahead of the FOMC/Big-Tech/PCE cluster, giving some breathing room, but a mega-cap name this large and this reliant on the AI-capex narrative isn't immune to a broader risk-off shock later in the month."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 419.73, "note": "Current price — 2 days before earnings", "timing": "Now" },
+      { "label": "Entry 2", "level": 385, "rangeMax": 400, "note": "Pre-earnings or post-earnings dip zone — better R/R if there's any pullback", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 350, "note": "Deep dip — broad semis or macro selloff only", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 470.10, "pct": 12, "note": "Base — clean beat, consensus average target reached" },
+    "tp2": { "price": 524.66, "pct": 25, "note": "Bull — strong beat + raised guidance, BofA target territory" },
+    "tp3": { "price": 596.02, "pct": 42, "note": "Moon — blowout print + capex raise, Barclays/Goldman high-target territory", "moon": true },
+    "stopLoss": {
+      "tight": 385, "tightPct": -8.3, "tightNote": "Below Entry 2 zone — earnings reaction turning negative",
+      "hard": 340, "hardPct": -19.0, "hardNote": "Deep breach — thesis-level AI-capex demand concern",
+      "riskReward": "3.1 : 1", "rrNote": "From Entry 2 ($392.50 mid) tight stop vs TP2", "rrWarning": "Solid R/R for a mega-cap core holding into a real, dated catalyst"
+    },
+    "verdict": "BUY ahead of the Jul 16 print — dominant foundry position, aggressive capex signaling confidence in sustained AI demand, and analyst targets still raising into earnings. DCA now, add on any post-print dip.",
+    "approach": "DCA"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "TSM has typically drifted modestly higher into earnings on AI-capex optimism, though the stock is roughly flat in the 2 days immediately before this print, suggesting the market is waiting for the actual number rather than pre-positioning aggressively.",
+    "preRunupTiming": "1-2 weeks before earnings via analyst target hikes, though price action itself has been muted right before the print",
+    "preRunupPct": "target hikes have been the main pre-earnings signal this cycle rather than price drift",
+    "postWin": {
+      "avgPct": 5,
+      "range": "+2% to +8%",
+      "note": "Large-cap foundry/semiconductor earnings beats on strong AI demand have typically driven mid-single-digit pops for a stock this size — using the standard mega-cap semis pattern given TSM's own most recent comparable quarterly reactions weren't available in this research pass.",
+      "exampleDate": "2026 sector pattern"
+    },
+    "postLose": {
+      "avgPct": -6,
+      "range": "-4% to -10%",
+      "note": "A guidance miss or margin disappointment for a stock with this much optimism already priced into recent target hikes would likely see a sharper-than-typical reaction — sized toward the higher end of standard mega-cap semis miss reactions given the elevated expectations bar.",
+      "exampleDate": "sector pattern"
+    },
+    "spotSizing": {
+      "pct": 15,
+      "reason": "Core Holding — dominant, structurally advantaged foundry position with real, near-term earnings catalyst. Sized as a meaningful core position, not a speculative trade."
+    },
+    "stopPreCatalyst": { "pct": -8, "price": 385, "note": "Below Entry 2 zone before Jul 16 = market pricing in a weaker print" },
+    "stopPostCatalyst": { "pct": -12, "note": "If Q2 misses guidance or margin comes in below 65.5%, reassess position size" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "AVGO",
+      "event": "Q2 2026 Earnings — AI Networking Beat",
+      "date": "2026",
+      "movePct": 6,
+      "days": 1,
+      "outcome": "good",
+      "note": "Comparable mega-cap AI-infrastructure earnings reaction — useful proxy for the magnitude a clean AI-demand-driven beat can produce in this sector."
+    },
+    {
+      "ticker": "AMD",
+      "event": "Q1 2026 Earnings + Guidance Raise",
+      "date": "2026",
+      "movePct": 8,
+      "days": 1,
+      "outcome": "good",
+      "note": "Comparable semiconductor earnings reaction on AI-driven demand strength, useful as a sanity check on the postWin range."
+    }
+  ],
+  "sources": [
+    "https://www.tipranks.com/news/tsmc-will-report-q2-earnings-on-july-16-should-investors-buy-the-stock-before-results",
+    "https://www.tipranks.com/news/tsmc-stock-price-forecast-top-analysts-raise-targets-ahead-of-q2-earnings",
+    "https://www.tipranks.com/news/citi-raises-tsmc-stock-price-target-ahead-of-q2-earnings-sees-higher-2026-revenue-guidance",
+    "https://www.tipranks.com/news/ubs-raises-tsmc-stock-price-target-ahead-of-q2-earnings-on-strong-ai-demand"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "TSMC รายงาน Q2 2026 พฤหัสฯ 16 ก.ค. — Wall Street คาด EPS $3.81/ADR (จาก $2.47 ปีก่อน) revenue $40.04B (จาก $30.07B) margin guide 65.5-67.5% นักวิเคราะห์ปรับ target ขึ้นต่อเนื่องก่อน earnings: Barclays $625, BofA $590, Goldman $600 อ้าง AI-chip demand + ความเป็นผู้นำ advanced-node Consensus เฉลี่ย upside ~12% เป้าสูงสุดถึง ~38% นี่คือ foundry ที่ครองตลาดสำหรับ AI chip แทบทุกตัวในตลาด — core holding จริง ไม่ใช่เก็งกำไร",
+      "priceNote": "แทบทรงตัววันนี้ก่อน print พฤหัสฯ — ตลาดรอตัวเลขจริงมากกว่า pre-position ล่วงหน้า",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "Q2 2026 Earnings", "description": "16 ก.ค. 2026 — คาด EPS $3.81/ADR revenue $40.04B margin 65.5-67.5% capex เป้าบนของช่วง $52-56B" },
+        { "name": "2026 Capex Guidance ($52-56B)", "description": "capex เป้าบนของช่วง — proxy ความมั่นใจ demand AI ต่อเนื่องถึง 2026-2027" }
+      ],
+      "risks": [
+        "Target กระจาย — เป้าสูงสุด ($625-630) ตั้งอยู่บน guidance แข็งแกร่งมาก print ธรรมดาไม่ยก guidance อาจผิดหวังได้",
+        "ความเสี่ยงภูมิรัฐศาสตร์ไต้หวันเป็นโครงสร้างถาวร — ไม่ใช่เรื่องใหม่ แต่ไม่ได้ price ที่ศูนย์เสมอ",
+        "ธุรกิจ capital-intensive มาก — capex เป้าบนทำให้ FCF ตามหลัง revenue growth margin guide ต้องรักษาให้ได้",
+        "ADR mechanics — ความเคลื่อนไหว NTD/USD กระทบผลรายงานได้อิสระจากธุรกิจจริง",
+        "Earnings มาก่อนสัปดาห์ FOMC/Big-Tech/PCE หนาแน่น 2 วัน — beat แข็งแกร่งอาจถูกกลบหรือขยายผลขึ้นกับ narrative AI-capex ตอนนั้น"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed hold 3.50-3.75% แต่ Warsh เอียง hawkish + CPI/testimony วันนี้ — mega-cap tech valuation เสี่ยง repricing สูงต่อเนื่อง",
+        "inflationNote": "Core PCE เร่งเป็น 3.4% YoY (พ.ค.) หนุนภาพ hawkish ก่อน FOMC 28-29 ก.ค. ซึ่งมาหลัง print TSM 12 วัน",
+        "sectorImpact": "ปานกลาง catalyst 16 ก.ค. เฉพาะบริษัทจริง ห่างจาก FOMC cluster พอสมควร แต่ valuation สูงจาก AI optimism ทำให้ sensitive กับ de-rating กว้างได้",
+        "summary": "ความเสี่ยง Fed ปานกลาง — earnings 16 ก.ค. มาก่อน FOMC/Big Tech/PCE cluster ให้พื้นที่หายใจ แต่ mega-cap ขนาดนี้ที่พึ่ง AI-capex narrative ไม่รอดพ้น risk-off กว้างได้เสมอ"
+      },
+      "entryStrategy": {
+        "verdict": "BUY ก่อน print 16 ก.ค. — ตำแหน่ง foundry ครองตลาด capex แข็งแกร่งสะท้อนความมั่นใจ demand AI ต่อเนื่อง target ยังปรับขึ้นก่อน earnings DCA ตอนนี้ เพิ่มถ้าย่อหลัง print",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — 2 วันก่อน earnings", "timing": "ตอนนี้" },
+          { "note": "โซนย่อก่อน/หลัง earnings — R/R ดีกว่าถ้ามีย่อ", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงลึก — semis หรือ macro selloff กว้างเท่านั้น", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — beat สะอาด แตะ consensus เฉลี่ย" },
+        "tp2": { "note": "Bull — beat แข็งแกร่ง + guidance ยกขึ้น แตะโซน BofA" },
+        "tp3": { "note": "Moon — print เกินคาดมาก + capex ยกขึ้น แตะโซน Barclays/Goldman", "moon": true },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่าโซน Entry 2 = reaction earnings เริ่มลบ",
+          "hardNote": "หลุดลึก = กังวล demand AI-capex เชิง thesis",
+          "rrNote": "จาก Entry 2 ($392.50 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R ดีสำหรับ core holding mega-cap ที่มี catalyst จริงใกล้"
+        }
+      },
+      "estimateDates": [
+        { "event": "Q2 2026 Earnings", "note": "คาด EPS $3.81/ADR revenue $40.04B margin guide 65.5-67.5%" }
+      ]
+    }
+  }
+}

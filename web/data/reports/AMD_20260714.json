@@ -1,0 +1,200 @@
+{
+  "ticker": "AMD",
+  "companyName": "Advanced Micro Devices, Inc.",
+  "companyDescription": "AI accelerator GPU + CPU powerhouse · MI400 HBM4 GPU H2 2026 · AMD Advancing AI 2026 event Jul 22-23 in SF = AMD's version of NVIDIA GTC · Zen 6 EPYC Venice on TSMC 2nm",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-14T22:00:00.000Z",
+  "price": 554.56,
+  "priceChange": 3.77,
+  "priceNote": "Live-prices.json cache (just refreshed, <1h old). Up 3.77% today, up 160% YTD in 2026, trading near record highs 8 days ahead of the Advancing AI event.",
+  "marketCap": "$898B",
+  "sector": "Technology / Semiconductors",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 81,
+  "summary": "AMD trades near record highs (+160% YTD) just over a week ahead of Advancing AI 2026 (Jul 22-23, San Francisco) — AMD's answer to NVIDIA's GTC and the single most market-moving event for the stock this year. The market will be watching for Zen 6 EPYC 'Venice' server CPU details (built on TSMC's 2nm node), Helios rack-scale platform specifics, and any major cloud-provider commitments. Analysts have been raising targets aggressively into the event: Goldman Sachs to $640 (from $450), Wells Fargo to $615, Bernstein to $600 — all still Buy/Overweight. Wall Street expects Q2 EPS to climb 400% YoY to $1.35, with FY2026 EPS projected up 88.1% to $6.15.",
+  "catalysts": [
+    {
+      "icon": "🎯",
+      "name": "AMD Advancing AI 2026",
+      "description": "AMD's flagship annual AI conference at Moscone Center, San Francisco, Jul 22-23, 2026. CEO Lisa Su leads. Market watching for Zen 6 EPYC 'Venice' server CPU details (TSMC 2nm), Helios rack-scale platform specifics, and any major cloud-provider AI commitments. This is AMD's GTC moment.",
+      "urgencyLabel": "8 DAYS",
+      "dateBadge": "Jul 22-23, 2026",
+      "catalystDate": "2026-07-22",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "💻",
+      "name": "Zen 6 EPYC 'Venice' Server CPU Launch",
+      "description": "Built on TSMC's 2nm process node — full technical reveal expected at Advancing AI. Directly competes with Intel and drives AMD's data-center CPU share gains alongside the GPU story.",
+      "urgencyLabel": "AT ADVANCING AI",
+      "dateBadge": "Jul 22-23, 2026",
+      "catalystDate": "2026-07-22",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "💰",
+      "name": "Q2 2026 Earnings",
+      "description": "Expected shortly after Advancing AI. Consensus expects EPS to climb 400% YoY to $1.35 — watch for data-center AI GPU revenue confirmation and MI350/MI400 ramp commentary.",
+      "urgencyLabel": "~3-4 WEEKS",
+      "dateBadge": "~Early Aug 2026",
+      "catalystDate": "2026-08-05",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Stock is up 160% YTD and trading near record highs going into the event — a huge amount of good news (Zen 6, Helios, MI400) is already priced in, raising the bar for what counts as a positive surprise",
+    "Analyst target hikes have been aggressive and recent (Goldman from $450 to $640 in a single revision) — this kind of rapid re-rating can reverse quickly if the actual event underwhelms relative to the built-up expectations",
+    "NVIDIA CUDA moat remains real — ROCm software ecosystem is still meaningfully behind CUDA, which caps how much AI-training market share AMD can realistically take even with strong hardware",
+    "MI400 execution risk — any production delay signal at the event, even a minor one, would likely trigger a sharp reversal given how much the stock has already run",
+    "FOMC (Jul 28-29) lands 1 week after the Advancing AI event — a clean post-event rally could face a macro-driven pullback into the dense Jul 27-Aug 1 event week"
+  ],
+  "estimateDates": [
+    { "event": "AMD Advancing AI 2026", "dateRange": "Jul 22-23, 2026", "note": "Zen 6 Venice + Helios rack details + hyperscaler roadmap — the key event", "est": "KEY EVENT", "highlight": "yellow" },
+    { "event": "Q2 2026 Earnings", "dateRange": "~Early Aug 2026", "note": "AI GPU revenue confirmation + MI350/400 ramp update, EPS est. $1.35 (+400% YoY)", "est": "est. EPS $1.35", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -18, "price": 454.74 },
+    { "label": "Base", "color": "yellow", "pct": 8, "price": 598.92 },
+    { "label": "Bull", "color": "green", "pct": 15, "price": 637.74 },
+    { "label": "Moon", "color": "purple", "pct": 27, "price": 704.29 }
+  ],
+  "analystTargets": [
+    { "firm": "Goldman Sachs (James Schneider, Jul 2026)", "target": 640, "rating": "Buy", "note": "Raised from $450 in one revision" },
+    { "firm": "Wells Fargo", "target": 615, "rating": "Overweight", "note": "Raised from $505" },
+    { "firm": "Bernstein (Stacy Rasgon)", "target": 600, "rating": "Buy", "note": "Raised from $525" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed holds at 3.50-3.75%, but Chair Warsh's hawkish Jun debut FOMC plus today's CPI/testimony double-header keeps high-multiple AI names like AMD exposed to a higher-for-longer repricing.",
+    "inflationNote": "Core PCE accelerated to 3.4% YoY (May) — reinforces the hawkish setup into the Jul 28-29 FOMC, which lands just 1 week after Advancing AI.",
+    "sectorImpact": "MEDIUM-HIGH. AMD's own catalyst (Jul 22-23) sits before the FOMC, but at 160% YTD and record highs, this is exactly the kind of stretched AI-momentum name that would see outsized moves — in either direction — if the macro tape turns risk-off right after.",
+    "summary": "Fed risk MEDIUM — Advancing AI is a genuine, near-term, company-specific catalyst that can work independent of the macro calendar, but the stock's already-extended run into the event means the Jul 28-29 FOMC one week later is a real risk to watch for giving back post-event gains."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 554.56, "note": "Current price — near record highs, 8 days before Advancing AI", "timing": "Now (small)" },
+      { "label": "Entry 2", "level": 500, "rangeMax": 520, "note": "Pre-event or post-event dip zone — best R/R if there's any pullback into the event", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 450, "note": "Deep dip — broad AI/semis or macro selloff only", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 598.92, "pct": 8, "note": "Base — solid Advancing AI event, no major surprises either way" },
+    "tp2": { "price": 637.74, "pct": 15, "note": "Bull — Zen 6/Helios reveal impresses, Goldman target territory" },
+    "tp3": { "price": 704.29, "pct": 27, "note": "Moon — blowout event + major hyperscaler commitment announced", "moon": true },
+    "stopLoss": {
+      "tight": 500, "tightPct": -9.8, "tightNote": "Below Entry 2 zone — pre-event sentiment souring",
+      "hard": 445, "hardPct": -19.8, "hardNote": "Deep breach — MI400 delay or event disappointment",
+      "riskReward": "2.9 : 1", "rrNote": "From Entry 2 ($510 mid) tight stop vs TP2", "rrWarning": "Reasonable R/R but stock is extended — size for a real event-day swing either way"
+    },
+    "verdict": "BUY small ahead of Advancing AI — the event is real and near-term, but the stock's 160% YTD run means a lot is already priced in. Size modestly now, add on any pre- or post-event dip rather than chasing at highs.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "product_launch",
+    "preRunup": "AMD historically runs 8-15% in the 2-3 weeks before its major AI events as buy-the-event positioning builds — this cycle the stock is already up sharply into the event, suggesting some of that positioning has already happened.",
+    "preRunupTiming": "2-3 weeks before the event (now through Jul 22)",
+    "preRunupPct": "+8% to +15%, though this cycle's run started earlier and has been larger than typical given the 160% YTD move",
+    "postWin": {
+      "avgPct": 15,
+      "range": "+10% to +28%",
+      "note": "AMD Advancing AI 2025 (MI300X full reveal + Lisa Su roadmap) drove the stock +28% over 2 weeks. AMD's GTC-equivalent events have historically produced 10-25% post-event moves when the product reveal exceeds expectations.",
+      "exampleDate": "Nov 2025"
+    },
+    "postLose": {
+      "avgPct": -12,
+      "range": "-8% to -20%",
+      "note": "AMD's Q3 2024 earnings (Oct 2024) saw MI300X ramp come in slower than expected, driving a -12% move over 2 days — a comparable precedent for how the market reacts to a disappointing AI-roadmap update. Given the stock is far more extended this cycle, a real disappointment could see a sharper move.",
+      "exampleDate": "Oct 2024"
+    },
+    "spotSizing": {
+      "pct": 12,
+      "reason": "Speculative-leaning core position — real, dated catalyst with strong fundamentals, but the stock's extended run (+160% YTD) into the event argues for a smaller starting size than a typical core holding, adding on confirmation rather than front-loading."
+    },
+    "stopPreCatalyst": { "pct": -10, "price": 500, "note": "Below Entry 2 zone before Jul 22 = pre-event sentiment souring" },
+    "stopPostCatalyst": { "pct": -15, "note": "If the event disappoints (MI400 delay, weak Zen 6 reveal), exit — don't hold through a broken thesis" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "AMD",
+      "event": "AMD Advancing AI 2025 — MI300X Full Reveal",
+      "date": "Nov 2025",
+      "movePct": 28,
+      "days": 14,
+      "outcome": "good",
+      "note": "Same-company precedent for the prior year's equivalent event — Lisa Su unveiled MI300X full specs, stock +28% over 2 weeks as hyperscaler adoption was confirmed. This year's MI400/Zen 6 setup is structurally similar."
+    },
+    {
+      "ticker": "NVDA",
+      "event": "GTC 2024 — Blackwell Reveal",
+      "date": "Mar 2024",
+      "movePct": 20,
+      "days": 7,
+      "outcome": "good",
+      "note": "NVIDIA's equivalent flagship event — stock +20% in 1 week on the Blackwell architecture reveal. AMD's Advancing AI is structurally the same kind of event for AMD."
+    },
+    {
+      "ticker": "AMD",
+      "event": "Q3 2024 Earnings — MI300X Ramp Disappointment",
+      "date": "Oct 2024",
+      "movePct": -12,
+      "days": 2,
+      "outcome": "bad",
+      "note": "Real precedent for how the market punishes a disappointing AI-roadmap update from this specific company — relevant downside-case reference."
+    }
+  ],
+  "sources": [
+    "https://www.tradingkey.com/analysis/stocks/us-stocks/262025935-amd-stock-forecast-july-2026-zen-6-venice-advancing-ai-helios-tradingkey",
+    "https://247wallst.com/investing/2026/07/10/analysts-think-ai-demand-has-no-ceiling-and-raised-amds-price-target-again/",
+    "https://www.thestreet.com/investing/stocks/amd-advanced-micro-devices-inc-stock-price-target-goldman-sachs-july-2026",
+    "https://www.fool.com/investing/2026/07/05/is-amd-stock-a-buy-before-july-22/",
+    "https://247wallst.com/investing/2026/07/01/amd-stock-price-prediction-strong-analyst-consensus-lifts-the-target/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "AMD เทรดใกล้ record high (+160% YTD) ก่อน Advancing AI 2026 (22-23 ก.ค. San Francisco) — งาน GTC เวอร์ชัน AMD และ catalyst สำคัญที่สุดของปีนี้ ตลาดจับตา Zen 6 EPYC 'Venice' (TSMC 2nm), Helios rack-scale platform และดีล cloud provider ใหญ่ นักวิเคราะห์ปรับ target ขึ้นต่อเนื่อง: Goldman $640 (จาก $450), Wells Fargo $615, Bernstein $600 ยัง Buy/Overweight ทั้งหมด Wall Street คาด Q2 EPS โต 400% YoY เป็น $1.35 FY2026 EPS คาดโต 88.1% เป็น $6.15",
+      "priceNote": "บวก 3.77% วันนี้ บวก 160% YTD เทรดใกล้ record high 8 วันก่อนงาน Advancing AI",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "AMD Advancing AI 2026", "description": "งาน AI ประจำปีของ AMD ที่ Moscone Center 22-23 ก.ค. — Lisa Su นำ ตลาดจับตา Zen 6 Venice + Helios rack + hyperscaler roadmap" },
+        { "name": "เปิดตัว Zen 6 EPYC 'Venice'", "description": "สร้างบน TSMC 2nm — reveal เต็มรูปแบบคาดที่งาน Advancing AI แข่งกับ Intel โดยตรง" },
+        { "name": "Q2 2026 Earnings", "description": "คาดหลัง Advancing AI ไม่นาน — EPS คาดโต 400% YoY เป็น $1.35 จับตา AI GPU revenue + MI350/400 ramp" }
+      ],
+      "risks": [
+        "หุ้นบวก 160% YTD ใกล้ record high ก่อนงาน — ข่าวดีถูก price in ไปมากแล้ว บาร์สำหรับ surprise บวกสูงขึ้น",
+        "Target ถูกปรับขึ้นเร็วและเมื่อไม่นานนี้ (Goldman จาก $450 เป็น $640 รอบเดียว) — re-rate เร็วแบบนี้กลับตัวเร็วได้ถ้างานจริงไม่เข้าเป้า",
+        "NVIDIA CUDA moat ยังจริง — ROCm ยังตามหลัง CUDA จำกัด market share AI training ที่ AMD จะแย่งได้จริง",
+        "ความเสี่ยง execution MI400 — สัญญาณเลื่อนแม้เล็กน้อยที่งานอาจทำให้หุ้นกลับตัวแรงเพราะวิ่งมาเยอะแล้ว",
+        "FOMC (28-29 ก.ค.) มาหลังงาน Advancing AI 1 สัปดาห์ — rally หลังงานอาจเจอ macro pullback ช่วงสัปดาห์ event หนาแน่น"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed hold 3.50-3.75% แต่ Warsh เอียง hawkish + CPI/testimony วันนี้ — หุ้น AI valuation สูงเสี่ยง repricing ต่อเนื่อง",
+        "inflationNote": "Core PCE เร่งเป็น 3.4% YoY (พ.ค.) หนุนภาพ hawkish ก่อน FOMC 28-29 ก.ค. ซึ่งมาหลัง Advancing AI แค่ 1 สัปดาห์",
+        "sectorImpact": "ปานกลาง-สูง catalyst 22-23 ก.ค. มาก่อน FOMC แต่หุ้นวิ่งมาเยอะแล้ว (+160% YTD, record high) เป็นชื่อที่ swing แรงได้ทั้งสองทางถ้า macro พลิกเป็น risk-off ทันทีหลังงาน",
+        "summary": "ความเสี่ยง Fed ปานกลาง — Advancing AI เป็น catalyst เฉพาะบริษัทจริงทำงานได้อิสระจาก macro calendar แต่หุ้นวิ่งมาไกลก่อนงานทำให้ FOMC 1 สัปดาห์ถัดไปเป็นความเสี่ยงจริงต่อกำไรหลังงาน"
+      },
+      "entryStrategy": {
+        "verdict": "BUY size เล็กก่อน Advancing AI — งานจริงและใกล้ แต่หุ้นวิ่งมา 160% YTD แล้วราคาดีจำนวนมาก price in แล้ว size พอประมาณตอนนี้ เพิ่มถ้าย่อก่อน/หลังงาน ไม่ไล่ราคาที่ high",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ใกล้ record high 8 วันก่อนงาน", "timing": "ตอนนี้ (เล็ก)" },
+          { "note": "โซนย่อก่อน/หลังงาน — R/R ดีที่สุดถ้ามีย่อ", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงลึก — AI/semis หรือ macro selloff กว้างเท่านั้น", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — งาน Advancing AI ราบรื่น ไม่มี surprise ใหญ่ทั้งสองทาง" },
+        "tp2": { "note": "Bull — Zen 6/Helios reveal ประทับใจ แตะโซน Goldman" },
+        "tp3": { "note": "Moon — งานเกินคาดมาก + ดีล hyperscaler ใหญ่ประกาศ", "moon": true },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่าโซน Entry 2 = sentiment ก่อนงานเริ่มแย่",
+          "hardNote": "หลุดลึก = MI400 delay หรืองานผิดหวัง",
+          "rrNote": "จาก Entry 2 ($510 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R พอใช้ได้แต่หุ้นวิ่งมาไกล — size ให้รับ swing วันงานได้ทั้งสองทาง"
+        }
+      },
+      "estimateDates": [
+        { "event": "AMD Advancing AI 2026", "note": "Zen 6 Venice reveal + Helios rack + hyperscaler roadmap — งานสำคัญที่สุด" },
+        { "event": "Q2 2026 Earnings", "note": "ยืนยัน AI GPU revenue + MI350/400 ramp คาด EPS $1.35 (+400% YoY)" }
+      ]
+    }
+  }
+}

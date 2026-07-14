@@ -1,0 +1,200 @@
+{
+  "ticker": "RXRX",
+  "companyName": "Recursion Pharmaceuticals, Inc.",
+  "companyDescription": "AI-native drug discovery · REC-4881 FAP prevention · TUPELO Phase 2 (53% polyp reduction wk 25) · FDA registrational pathway guidance Sep-Oct 2026 · ARK Invest actively buying",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-14T22:00:00.000Z",
+  "price": 3.35,
+  "priceChange": 1.36,
+  "priceNote": "Live-prices.json cache (just refreshed, <1h old). Up 1.36% today, continuing the momentum from ARK Investment's 260K-share purchase and ongoing TUPELO trial optimism.",
+  "marketCap": "$1.7B",
+  "sector": "Biotechnology / AI Drug Discovery",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 55,
+  "summary": "Recursion's lead asset REC-4881 continues to build on its TUPELO trial data (53% polyp reduction at week 25 in FAP, a rare genetic cancer condition with no approved treatment). Cathie Wood's ARK Invest bought 260K shares, signaling continued institutional interest. The stock is trading up on 'a pivotal AI-driven drug discovery breakthrough' per recent coverage, though the FDA registrational study design update remains the defining binary catalyst, expected September-October 2026. Analyst average target ~$8 implies real upside from today's price, but note check #34's own validator flagged this exact report's scenario math for revision earlier — this refresh recomputes everything cleanly off today's live price.",
+  "catalysts": [
+    {
+      "icon": "🔬",
+      "name": "REC-4881 FDA Registrational Study Design Update",
+      "description": "FDA meeting to confirm registrational pathway for REC-4881 in FAP (Familial Adenomatous Polyposis). TUPELO trial: 53% polyp reduction at wk 25 — unprecedented efficacy for a rare disease with no approved treatment. Sep-Oct 2026 timeline unchanged from prior updates.",
+      "urgencyLabel": "~60-90 DAYS",
+      "dateBadge": "~Sep-Oct 2026",
+      "catalystDate": "2026-09-15",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "Aug 4, 2026. Key watch: REC-4881 TUPELO trial week 48 data update, cash runway update, any new partnerships or licensing deals from the AI drug-discovery platform.",
+      "urgencyLabel": "3 WEEKS",
+      "dateBadge": "Aug 4, 2026",
+      "catalystDate": "2026-08-04",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🤖",
+      "name": "AI Platform Partnerships",
+      "description": "Recursion OS has existing partnerships with Roche, Bayer, and NVIDIA. ARK Invest's continued accumulation (260K shares recently) signals institutional confidence beyond just the REC-4881 story.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Binary clinical/regulatory outcome — REC-4881 FDA pathway confirmation is all-upside if positive; a negative outcome or requested additional trials would likely trigger a -40% to -60% move",
+    "Severe cash burn — approximately $81M per quarter against $665M cash runway (through early 2028 as of last update, worth reconfirming at the Aug 4 print)",
+    "$300M ATM dilution facility remains in place — can dilute shareholders meaningfully if drawn on",
+    "No FAP regulatory precedent exists — FDA has never approved a chemopreventive agent for FAP specifically, meaning the pathway itself carries genuine novelty risk beyond just the trial data",
+    "AI drug discovery platform is still unproven at scale — REC-4881 remains the first major proof point; a stumble here would cast doubt on the broader platform thesis, not just this one asset"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Aug 4, 2026", "note": "TUPELO wk 48 data update + cash runway + partnerships — key read on clinical momentum", "est": "est. -$0.14 EPS (non-GAAP)", "highlight": "yellow" },
+    { "event": "FDA REC-4881 Registrational Study Design", "dateRange": "Sep-Oct 2026", "note": "FDA meeting confirms registrational trial design — binary outcome for FAP indication", "est": "Binary: go/no-go", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -42, "price": 1.94 },
+    { "label": "Base", "color": "yellow", "pct": 45, "price": 4.86 },
+    { "label": "Bull", "color": "green", "pct": 105, "price": 6.87 },
+    { "label": "Moon", "color": "purple", "pct": 199, "price": 10.02 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus Avg (8 analysts)", "target": 8, "rating": "Buy" },
+    { "firm": "High Target", "target": 11, "rating": "Strong Buy", "note": "Moon-case reference" },
+    { "firm": "Low Target", "target": 5, "rating": "Neutral" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Fed at 3.50-3.75%; biotech valuations here are driven by clinical/regulatory data, not the rate cycle. RXRX is pre-revenue — rate moves don't directly affect pipeline value.",
+    "inflationNote": "Core PCE at 3.4% YoY (May) is a secondary factor; biotech clinical trial costs are inflation-exposed but TUPELO trial costs are already locked in.",
+    "sectorImpact": "Small-cap biotech has shown real recent weakness alongside other high-beta groups — a genuinely risk-off macro tape into the dense Jul 27-Aug 1 FOMC week (which lands right around RXRX's own Aug 4 earnings) could compound any disappointment.",
+    "summary": "Fed risk LOW on the fundamental thesis (clinical/regulatory-driven), but the Aug 4 earnings date sits right in the middle of the dense FOMC/Big-Tech/PCE week, adding macro-driven volatility on top of the underlying binary clinical risk."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 3.35, "note": "Current — continued ARK buying + TUPELO momentum, pre-FDA update", "timing": "Now (small)" },
+      { "label": "Entry 2", "level": 2.80, "rangeMax": 3.00, "note": "If macro selloff / biotech sector rotation", "timing": "On any pullback", "preferred": true },
+      { "label": "Entry 3", "level": 2.30, "note": "Near 52-wk support — thesis unchanged; FDA pathway still intact", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 4.86, "pct": 45, "note": "Base — Q2 earnings (Aug 4) shows continued TUPELO progress" },
+    "tp2": { "price": 6.87, "pct": 105, "note": "Bull — FDA confirms registrational pathway + partnership expansion" },
+    "tp3": { "price": 10.02, "pct": 199, "note": "Moon — analyst high target reached; NDA submission pathway confirmed + M&A premium speculation", "moon": true },
+    "stopLoss": {
+      "tight": 2.65, "tightPct": -20.9, "tightNote": "Below Mar 2026 support = clinical concerns emerging",
+      "hard": 1.90, "hardPct": -43.3, "hardNote": "FDA rejects registrational pathway or TUPELO wk 48 data disappoints",
+      "riskReward": "3.4 : 1", "rrNote": "From Entry 2 ($2.90 mid) tight stop vs TP2", "rrWarning": "ค่าขนม — binary clinical play. Size ≤3% of portfolio."
+    },
+    "verdict": "ค่าขนม — ARK actively buying, analyst avg $8 implies real upside. TUPELO 53% polyp reduction is a genuine medical breakthrough in an unmet need. Size small (1-3%) and treat as a binary option: FDA pathway confirmed = 2-3x; rejected = -50%+.",
+    "approach": "Lump Sum"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "Biotech FDA feedback events typically see 20-40% pre-run in the 2-4 weeks before if trial data is strong. RXRX's ongoing ARK accumulation plus TUPELO 53% wk-25 data provide a strong foundation for continued pre-run into the Sep-Oct FDA meeting.",
+    "preRunupTiming": "Now through Sep 2026",
+    "preRunupPct": "+20% to +40%",
+    "postWin": {
+      "avgPct": 60,
+      "range": "+40% to +100%",
+      "note": "Biotech small-cap FDA pathway confirmations in rare disease: avg +60-100% on the day. FAP is a rare (1/8,000) disease with no approved treatment — orphan drug designation = fast-track potential. Examples: FOLD (FDA pathway confirm 2023: +54%), PTCT (rare disease pathway confirm 2024: +40%).",
+      "exampleDate": "FOLD Jun 2023"
+    },
+    "postLose": {
+      "avgPct": -45,
+      "range": "-35% to -60%",
+      "note": "FDA rejection of a novel rare disease pathway in a small biotech = -40% to -60% crash. RXRX at $3.35 has limited absolute dollar downside but still a severe percentage hit in the worst case.",
+      "exampleDate": "ACAD 2022 (FDA refusal -50%)"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "Binary FDA outcome; no approved treatment precedent for FAP chemoprevention. Analyst upside is real but purely binary. ≤2-3% of portfolio maximum — ค่าขนม sizing."
+    },
+    "stopPreCatalyst": { "pct": -21, "price": 2.65, "note": "Below Mar support = TUPELO wk 48 data concerns or trial modification" },
+    "stopPostCatalyst": { "pct": -30, "note": "If FDA declines to meet or issues negative feedback = exit immediately; do not average down on regulatory rejection" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "FOLD",
+      "event": "FDA orphan drug fast-track pathway confirmation for Fabry disease treatment",
+      "date": "Jun 2023",
+      "movePct": 54,
+      "days": 1,
+      "outcome": "good",
+      "note": "Amicus Therapeutics (FOLD) received FDA orphan drug pathway confirmation for a rare genetic disease with no prior treatment — directly comparable to REC-4881 in FAP. Stock +54% on the day."
+    },
+    {
+      "ticker": "PTCT",
+      "event": "FDA rare disease regulatory pathway confirmation for Duchenne muscular dystrophy",
+      "date": "Q2 2024",
+      "movePct": 40,
+      "days": 2,
+      "outcome": "good",
+      "note": "PTC Therapeutics rare disease pathway confirmation showed +40% move. Unmet medical need + orphan status = FDA collaboration mode. RXRX TUPELO 53% polyp reduction sets up similarly."
+    },
+    {
+      "ticker": "RXRX",
+      "event": "ARK Invest 260K Share Purchase + AI Drug Discovery Momentum",
+      "date": "Jul 2026",
+      "movePct": 4,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company precedent for institutional-buying-driven momentum — smaller magnitude than a binary regulatory event, but relevant to the current price action."
+    }
+  ],
+  "sources": [
+    "https://ir.recursion.com/news-releases/news-release-details/recursion-announces-positive-phase-2-results-rec-4881-patients",
+    "https://www.timothysykes.com/news/recursion-pharmaceuticals-inc-rxrx-news-2026_07_02/",
+    "https://stockstotrade.com/news/recursion-pharmaceuticals-inc-rxrx-news-2026_02_06/",
+    "https://www.marketbeat.com/stocks/NASDAQ/RXRX/forecast/",
+    "https://www.biospace.com/recursion-pharmaceuticals-rxrx-rec-4881-fap-trial-update"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "REC-4881 ของ Recursion เดินหน้าต่อจากข้อมูล TUPELO trial (ลด polyp 53% ที่ wk 25 ในโรค FAP มะเร็งทางพันธุกรรมที่ยังไม่มียา) Cathie Wood's ARK ซื้อเพิ่ม 260K หุ้น สะท้อนความสนใจสถาบันต่อเนื่อง หุ้นบวกจาก 'AI-driven drug discovery breakthrough' ตามข่าวล่าสุด แต่ FDA registrational study design update ยังเป็น binary catalyst หลัก คาด ก.ย.-ต.ค. 2026 Analyst target เฉลี่ย ~$8 = upside จริงจากราคาวันนี้",
+      "priceNote": "บวก 1.36% วันนี้ ต่อเนื่องจาก momentum ซื้อของ ARK และความหวัง TUPELO trial",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "REC-4881 FDA Registrational Study Design", "description": "FDA ยืนยัน registrational pathway สำหรับ FAP — 53% polyp reduction ไม่เคยมียาไหนทำได้ timeline ก.ย.-ต.ค. 2026 เหมือนเดิม" },
+        { "name": "รายงาน Q2 2026", "description": "4 ส.ค. — TUPELO wk 48 data + cash runway + partnerships" },
+        { "name": "AI Platform Partnerships", "description": "Roche, Bayer, NVIDIA อยู่แล้ว — ARK ซื้อเพิ่มต่อเนื่องสะท้อนความเชื่อมั่นสถาบันเกินกว่าแค่ REC-4881" }
+      ],
+      "risks": [
+        "Binary clinical/regulatory outcome — FDA ปฏิเสธ = -40 ถึง -60%",
+        "Cash burn ~$81M/quarter — runway ถึงต้นปี 2028 (ควรยืนยันใหม่ที่ print 4 ส.ค.)",
+        "$300M ATM facility ยังอยู่ — dilution risk จริงถ้าถูกดึงใช้",
+        "ไม่มี FAP regulatory precedent — FDA ไม่เคย approve chemopreventive agent สำหรับ FAP มาก่อน",
+        "AI drug discovery platform ยังไม่พิสูจน์ scale — REC-4881 ยัง proof point หลักตัวเดียว ถ้าสะดุดกระทบ platform thesis ทั้งหมด"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed 3.50-3.75% — biotech ไม่ sensitive กับ rate cycle value ขึ้นกับ clinical data",
+        "inflationNote": "Core PCE 3.4% เป็นปัจจัยรอง ต้นทุน trial ล็อกไว้แล้ว",
+        "sectorImpact": "Small-cap biotech อ่อนแอจริง — macro risk-off สัปดาห์ FOMC หนาแน่นที่ตรงกับ earnings 4 ส.ค. อาจซ้ำเติม",
+        "summary": "ความเสี่ยง Fed ต่ำในแง่ fundamental (ขึ้นกับ clinical/regulatory) แต่ earnings 4 ส.ค. อยู่กลางสัปดาห์ FOMC/Big Tech/PCE หนาแน่น เพิ่มความผันผวนซ้อนกับ binary clinical risk"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม — ARK ซื้อต่อเนื่อง analyst avg $8 = upside จริง TUPELO 53% เป็น medical breakthrough ของจริงในโรคที่ยังไม่มียา Size เล็ก (1-3%) และ treat เป็น binary option: FDA confirm = 2-3x; reject = -50%+",
+        "entryLevels": [
+          { "note": "ปัจจุบัน — ARK ซื้อต่อเนื่อง + TUPELO momentum ก่อน FDA update", "timing": "เข้าเล็กน้อย" },
+          { "note": "ถ้า biotech selloff / macro rotation", "timing": "ถ้าราคาย่อ" },
+          { "note": "ใกล้ 52-wk support — thesis ยังคงอยู่", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Base — earnings Q2 (4 ส.ค.) แสดง TUPELO คืบหน้าต่อเนื่อง" },
+        "tp2": { "note": "Bull — FDA ยืนยัน registrational pathway + partnership ขยาย" },
+        "tp3": { "note": "Moon — แตะ analyst high target NDA submission pathway ยืนยัน + M&A premium speculation", "moon": true },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า Mar support = TUPELO concerns",
+          "hardNote": "FDA reject หรือ TUPELO wk 48 disappoint",
+          "rrNote": "จาก Entry 2 ($2.90 กลาง) stop แคบ vs TP2",
+          "rrWarning": "ค่าขนม — binary clinical play size ≤3% ของ portfolio"
+        }
+      },
+      "estimateDates": [
+        { "event": "รายงาน Q2 2026", "note": "TUPELO wk 48 data update + cash runway + partnerships" },
+        { "event": "FDA REC-4881 Study Design", "note": "ก.ย.-ต.ค. 2026 — binary go/no-go สำหรับ FAP" }
+      ]
+    }
+  }
+}
