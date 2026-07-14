@@ -28,7 +28,11 @@ Run `/turbo-list`: load `turbo-report` and use its "Step 0" + "List mode" sectio
    If the file doesn't exist, print `📊 Feedback prior: skill-feedback.json not found — skipping` instead.
 1. Screen for the 5 best small/mid-cap moonshots (≥200–300% bull case + binary catalyst), rank by
    most possible upside (base-case % primary, moon % tiebreaker), generate a turbo report for each
-   → save to `web/data/speculative/`.
+   → save to `web/data/speculative/`. A pick that trips `turbo-report`'s survival check (runway <12
+   months + active shelf/ATM → `risks[]` gets a `"⚠️ SURVIVAL:"` prefix, see Step 2/3 of that skill)
+   is not a hard ban from the top 5, but its `summary` must name the survival risk and give an
+   explicit special justification for including it anyway — silence is not acceptable. Ranking axis
+   stays upside-first (unchanged) — this is a disclosure rule, not a re-rank.
 2. Log runners-up (passed the moonshot screen but missed top 5) to `web/data/near-misses.json` —
    same shape as `/catalyst-list`'s near-miss entries (`date`, `ticker`, `reason`, `priceAtScreen`,
    `topAnalystTarget`, `impliedUpside`) plus `"lane": "turbo"`. `impliedUpside` must be a real
