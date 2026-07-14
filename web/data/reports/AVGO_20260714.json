@@ -1,0 +1,195 @@
+{
+  "ticker": "AVGO",
+  "companyName": "Broadcom Inc.",
+  "companyDescription": "AI networking + custom ASIC (TPU-class compute) leader · Apple deal extended through 2031 · Q3 2026 earnings Jul 29 · Q3 guide $29.4B (from Q2's $22.2B)",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-14T22:00:00.000Z",
+  "price": 393.10,
+  "priceChange": 2.36,
+  "priceNote": "Live-prices.json cache (just refreshed, <1h old). Up 2.36% today. Morgan Stanley reiterated Buy with a $502 target this same day (Jul 14), citing continued confidence in Broadcom's AI/custom-chip leadership.",
+  "marketCap": "$1.85T",
+  "sector": "Technology / Semiconductors (AI Networking + Custom Silicon)",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 76,
+  "summary": "Broadcom reports Q3 2026 earnings Jul 29 — landing directly in the dense FOMC/Big-Tech-earnings/PCE week, one of the most consequential single days of the quarter. Management already guided Q3 revenue to $29.4B, up sharply from Q2's $22.2B, reflecting continued AI-networking and custom-ASIC (TPU-class compute) momentum. The extended Apple partnership through 2031 underpins long-duration revenue visibility beyond the near-term AI cycle. 48-analyst consensus average $523.73 implies real upside from today's price, with Morgan Stanley reiterating Buy at $502 the same day as this report. Consensus remains strongly bullish despite a recent earnings miss earlier this year — worth watching whether Jul 29 breaks that pattern.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 2026 Earnings",
+      "description": "Reports Jul 29, 2026 — the same day as the FOMC decision. Company already guided Q3 revenue to $29.4B (from Q2's $22.2B), a sharp sequential jump reflecting AI networking and custom-ASIC demand. Watch for any update to full-year guidance and commentary on the TPU-based compute partnership pipeline.",
+      "urgencyLabel": "15 DAYS",
+      "dateBadge": "Jul 29, 2026",
+      "catalystDate": "2026-07-29",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "🍎",
+      "name": "Apple Partnership Extension Through 2031",
+      "description": "Recently extended strategic partnership with Apple — long-duration revenue visibility that reduces reliance on any single AI-cycle year. A structural positive distinct from the quarter-to-quarter AI-capex narrative.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Through 2031",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🖧",
+      "name": "AI Networking + Custom ASIC (TPU-Class) Pipeline",
+      "description": "Extensive customer roadmap for TPU-based compute and AI networking, with significant purchase orders already signaling forward growth. This is the core growth engine behind the Q3 guidance jump.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Earnings land the SAME DAY as the FOMC decision (Jul 29) — even a clean beat could be overshadowed or amplified by the Fed's simultaneous announcement, adding a layer of noise to the pure stock-specific reaction",
+    "Consensus remains strongly bullish 'despite recent earnings misses' per current coverage — worth explicitly checking whether Jul 29 continues that miss pattern or breaks it, rather than assuming a clean beat by default",
+    "The jump from $22.2B (Q2) to $29.4B (Q3 guide) is a large sequential step — any signal that this pace isn't sustainable into Q4 would be read negatively even if Q3 itself is in-line",
+    "At a $1.85T market cap, AVGO needs genuinely large absolute dollar moves in AI/networking demand to move the needle — law-of-large-numbers effects apply",
+    "Analyst target range is fairly tight ($390-630) relative to some of today's other AI names, suggesting less room for a dramatic re-rate surprise in either direction compared to earlier-stage AI plays"
+  ],
+  "estimateDates": [
+    { "event": "Q3 2026 Earnings", "dateRange": "Jul 29, 2026", "note": "Guided $29.4B revenue (from Q2's $22.2B) — lands same day as FOMC decision", "est": "est. $29.4B rev", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -14, "price": 338.07 },
+    { "label": "Base", "color": "yellow", "pct": 12, "price": 440.27 },
+    { "label": "Bull", "color": "green", "pct": 24, "price": 487.44 },
+    { "label": "Moon", "color": "purple", "pct": 40, "price": 550.34 }
+  ],
+  "analystTargets": [
+    { "firm": "Morgan Stanley (Joseph Moore, Jul 14, 2026)", "target": 502, "rating": "Buy" },
+    { "firm": "Consensus (48 analysts)", "target": 523.73, "rating": "Strong Buy" },
+    { "firm": "Alt. average (broader sample)", "target": 513.29, "rating": "Strong Buy", "note": "High $630, low $390" }
+  ],
+  "macroRisk": {
+    "fedRisk": "HIGH",
+    "rateOutlook": "Fed holds at 3.50-3.75%, but Chair Warsh's hawkish Jun debut FOMC (9/18 officials projecting a 2026 hike) makes the Jul 28-29 decision itself a live risk — and AVGO's earnings land the exact same day as that decision.",
+    "inflationNote": "Core PCE accelerated to 3.4% YoY (May) — reinforces the hawkish setup into the Jul 28-29 FOMC, which is one part of the same-day double-header AVGO faces.",
+    "sectorImpact": "HIGH. This is a rare case where the macro event risk (FOMC) and the company-specific catalyst (earnings) land on the literal same day — whatever AVGO reports could be partially drowned out or amplified by the market's simultaneous reaction to the Fed decision.",
+    "summary": "Fed risk HIGH specifically because of the calendar collision — Jul 29 is both AVGO's earnings day AND the FOMC decision day, a genuinely unusual and elevated-volatility setup that deserves more caution than a typical earnings date would."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 393.10, "note": "Current price — 15 days before the Jul 29 FOMC/earnings collision", "timing": "Now" },
+      { "label": "Entry 2", "level": 355, "rangeMax": 370, "note": "Pre-earnings dip zone — better R/R given the elevated same-day FOMC risk", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 320, "note": "Deep dip — broad macro selloff or hawkish FOMC surprise", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 440.27, "pct": 12, "note": "Base — clean beat, Fed holds without a hawkish surprise" },
+    "tp2": { "price": 487.44, "pct": 24, "note": "Bull — strong beat + raised guidance, Fed holds cleanly, Morgan Stanley target territory" },
+    "tp3": { "price": 550.34, "pct": 40, "note": "Moon — blowout beat + Fed relief rally stack together, consensus high-target territory", "moon": true },
+    "stopLoss": {
+      "tight": 355, "tightPct": -9.7, "tightNote": "Below Entry 2 zone — pre-event sentiment souring",
+      "hard": 315, "hardPct": -19.9, "hardNote": "Deep breach — earnings miss + hawkish Fed surprise stacked together",
+      "riskReward": "3.5 : 1", "rrNote": "From Entry 2 ($362.50 mid) tight stop vs TP2", "rrWarning": "Solid R/R but the same-day FOMC/earnings collision genuinely raises the volatility bar — size accordingly"
+    },
+    "verdict": "BUY ahead of the Jul 29 double-header — dominant AI-networking/custom-silicon position with real guided growth, but the literal same-day FOMC collision means this earnings date carries more macro-driven volatility risk than usual. DCA now, keep some dry powder for the event itself.",
+    "approach": "DCA"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "AVGO has typically drifted higher into earnings on AI-networking optimism, consistent with the broader AI-capex-name pattern this cycle.",
+    "preRunupTiming": "1-2 weeks before earnings",
+    "preRunupPct": "+5% to +10% typical pre-earnings drift for this name this cycle",
+    "postWin": {
+      "avgPct": 6,
+      "range": "+3% to +9%",
+      "note": "Broadcom's own recent Q2 2026 AI-networking beat drove a real positive reaction — used here as the closest same-company precedent, tempered by the added same-day FOMC uncertainty this specific print carries.",
+      "exampleDate": "2026 (Q2 print)"
+    },
+    "postLose": {
+      "avgPct": -8,
+      "range": "-5% to -12%",
+      "note": "Coverage explicitly notes the bullish consensus has persisted 'despite recent earnings misses' — meaning AVGO does have a real, recent pattern of disappointing prints without permanently breaking the thesis, but each miss has still triggered a real near-term drawdown worth respecting.",
+      "exampleDate": "2026 (recent miss pattern)"
+    },
+    "spotSizing": {
+      "pct": 12,
+      "reason": "Core holding sizing — dominant, structurally advantaged AI-networking/custom-silicon position with genuine guided growth and long-duration Apple revenue visibility. The same-day FOMC collision argues for slightly more caution than a typical mega-cap earnings date, hence sizing at the lower end of a core-holding range rather than maximal."
+    },
+    "stopPreCatalyst": { "pct": -10, "price": 355, "note": "Below Entry 2 zone before Jul 29 = market pricing in a weaker setup" },
+    "stopPostCatalyst": { "pct": -15, "note": "If Q3 misses the $29.4B guide or the Fed delivers a hawkish surprise the same day, reassess position size" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "TSM",
+      "event": "Q2 2026 Earnings — AI Demand Beat",
+      "date": "Jul 2026",
+      "movePct": 5,
+      "days": 1,
+      "outcome": "good",
+      "note": "Comparable mega-cap AI-infrastructure earnings reaction — useful proxy for the magnitude a clean AI-demand-driven beat can produce in this sector."
+    },
+    {
+      "ticker": "AVGO",
+      "event": "Recent Earnings Miss (bullish consensus persisted)",
+      "date": "2026",
+      "movePct": -8,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Same-company precedent for a recent disappointing print — analysts stayed bullish afterward, but the stock still took a real near-term hit, directly relevant to sizing the downside case for Jul 29."
+    },
+    {
+      "ticker": "AMD",
+      "event": "Q1 2026 Earnings + Guidance Raise",
+      "date": "2026",
+      "movePct": 8,
+      "days": 1,
+      "outcome": "good",
+      "note": "Comparable semiconductor earnings reaction on AI-driven demand strength, useful as a sanity check on the postWin range."
+    }
+  ],
+  "sources": [
+    "https://www.tradingkey.com/analysis/stocks/us-stocks/262018100-broadcom-avgo-stock-forecast-july-2026-apple-deal-2031-tradingkey",
+    "https://www.tipranks.com/news/analysts/broadcom-stock-forecast-trending-strong-buy-among-analysts-2",
+    "https://www.marketbeat.com/stocks/NASDAQ/AVGO/forecast/",
+    "https://stockanalysis.com/stocks/avgo/forecast/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Broadcom รายงาน Q3 2026 earnings 29 ก.ค. — ตรงวัน FOMC decision พอดี หนึ่งในวันสำคัญที่สุดของไตรมาส Management guide Q3 revenue ไว้แล้วที่ $29.4B เพิ่มขึ้นชัดเจนจาก Q2 ที่ $22.2B สะท้อน momentum AI-networking และ custom-ASIC (TPU-class compute) ต่อเนื่อง ดีล Apple ขยายถึง 2031 หนุน revenue visibility ระยะยาวเกินกว่า AI cycle ระยะสั้น Consensus เฉลี่ย 48 คน $523.73 = upside จริงจากราคาวันนี้ Morgan Stanley ย้ำ Buy ที่ $502 วันเดียวกับรายงานนี้ (14 ก.ค.) Consensus ยัง bullish มากแม้เคย miss earnings ก่อนหน้านี้ในปี — น่าจับตาว่า 29 ก.ค. จะทำลาย pattern นั้นได้ไหม",
+      "priceNote": "บวก 2.36% วันนี้ Morgan Stanley ย้ำ Buy target $502 วันเดียวกัน (14 ก.ค.) มั่นใจความเป็นผู้นำ AI/custom-chip ต่อเนื่อง",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "Q3 2026 Earnings", "description": "29 ก.ค. 2026 — ตรงวัน FOMC decision พอดี guide ไว้แล้ว $29.4B (จาก $22.2B) จับตา guidance เต็มปีและ TPU compute partnership pipeline" },
+        { "name": "ดีล Apple ขยายถึง 2031", "description": "ขยาย partnership เชิงกลยุทธ์กับ Apple — revenue visibility ระยะยาวลดการพึ่งพา AI cycle ปีเดียว" },
+        { "name": "AI Networking + Custom ASIC (TPU-Class) Pipeline", "description": "roadmap ลูกค้ากว้างสำหรับ TPU-based compute + AI networking พร้อม purchase order ใหญ่หนุน growth engine หลักของ Q3 guide" }
+      ],
+      "risks": [
+        "Earnings ตรงวันเดียวกับ FOMC decision (29 ก.ค.) — แม้ beat สะอาดก็อาจถูกกลบหรือขยายผลจากปฏิกิริยา Fed พร้อมกัน",
+        "Consensus ยัง bullish มาก 'แม้เคย miss earnings' ตามข่าวล่าสุด — ควรเช็คว่า 29 ก.ค. จะ miss ต่อหรือทำลาย pattern นั้น ไม่ควรสมมติว่า beat สะอาดแน่นอน",
+        "การกระโดดจาก $22.2B (Q2) เป็น $29.4B (Q3 guide) เป็น step ใหญ่ — สัญญาณว่าจังหวะนี้ไม่ยั่งยืนถึง Q4 จะถูกมองลบแม้ Q3 เองจะตรงเป้า",
+        "Market cap $1.85T ต้องการ demand AI/networking ขยับมูลค่าดอลลาร์ใหญ่จริงถึงจะขยับหุ้นได้ — law of large numbers",
+        "Target กระจายค่อนข้างแคบ ($390-630) เทียบหุ้น AI อื่นวันนี้ — โอกาส re-rate surprise ทั้งสองทางน้อยกว่าหุ้น AI ระยะแรกอื่นๆ"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed hold 3.50-3.75% แต่ Warsh เอียง hawkish — FOMC 28-29 ก.ค. เป็นความเสี่ยงจริง และ earnings AVGO ตรงวันเดียวกันพอดี",
+        "inflationNote": "Core PCE เร่งเป็น 3.4% YoY (พ.ค.) หนุนภาพ hawkish ก่อน FOMC ที่เป็นส่วนหนึ่งของวัน double-header เดียวกับ AVGO",
+        "sectorImpact": "สูง กรณีหายากที่ macro event risk (FOMC) กับ catalyst เฉพาะบริษัท (earnings) ตรงวันเดียวกันพอดี — ผลรายงาน AVGO อาจถูกกลบหรือขยายผลจากปฏิกิริยาตลาดต่อ Fed พร้อมกัน",
+        "summary": "ความเสี่ยง Fed สูงเฉพาะเพราะ calendar ชนกัน — 29 ก.ค. คือทั้งวัน earnings ของ AVGO และวัน FOMC decision setup ผันผวนสูงผิดปกติที่ควรระวังมากกว่า earnings date ทั่วไป"
+      },
+      "entryStrategy": {
+        "verdict": "BUY ก่อน double-header 29 ก.ค. — ตำแหน่ง AI-networking/custom-silicon ครองตลาด growth guide ไว้แล้วจริง แต่ FOMC ชนวันเดียวกันจริงทำให้ earnings date นี้ผันผวนจาก macro มากกว่าปกติ DCA ตอนนี้ เก็บกระสุนไว้บ้างสำหรับวัน event",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — 15 วันก่อน FOMC/earnings ชนกัน", "timing": "ตอนนี้" },
+          { "note": "โซนย่อก่อน earnings — R/R ดีกว่าเพราะความเสี่ยง FOMC วันเดียวกันสูงขึ้น", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงลึก — macro selloff กว้างหรือ FOMC surprise hawkish", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — beat สะอาด Fed hold ไม่ surprise hawkish" },
+        "tp2": { "note": "Bull — beat แข็งแกร่ง + guidance ยกขึ้น Fed hold สะอาด แตะโซน Morgan Stanley" },
+        "tp3": { "note": "Moon — beat เกินคาดมาก + Fed relief rally รวมกัน แตะโซน consensus สูงสุด", "moon": true },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่าโซน Entry 2 = sentiment ก่อน event เริ่มแย่",
+          "hardNote": "หลุดลึก = earnings miss + Fed surprise hawkish รวมกัน",
+          "rrNote": "จาก Entry 2 ($362.50 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R ดีแต่ FOMC/earnings ชนวันเดียวกันจริงเพิ่มความผันผวน — size ให้เหมาะสม"
+        }
+      },
+      "estimateDates": [
+        { "event": "Q3 2026 Earnings", "note": "guide ไว้แล้ว $29.4B (จาก $22.2B) ตรงวันเดียวกับ FOMC decision" }
+      ]
+    }
+  }
+}
