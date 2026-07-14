@@ -1,0 +1,233 @@
+{
+  "ticker": "LUNR",
+  "companyName": "Intuitive Machines Inc.",
+  "companyDescription": "Lunar Infrastructure + NASA CLPS Services · Nova-C/Nova-D landers, $1.1B+ backlog across IM-3/IM-4/IM-5 — lost the NASA Lunar Terrain Vehicle rover contract in May 2026, now a lander/services pure-play rather than a multi-program mobility platform",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-15T00:00:00.000Z",
+  "price": 15.14,
+  "priceChange": -0.07,
+  "priceNote": "$15.14, down ~68% from the May 29 all-time high of $46.75. Two real negatives since the last report: NASA awarded the Lunar Terrain Vehicle contract to Astrolab/Lunar Outpost (not LUNR) in May, and a $500M ATM equity program launched Jun 2 is an ongoing dilution overhang — the primary driver of a 7-day, -24.5% losing streak into mid-Jul. IM-3 (H2 2026) has NOT launched yet.",
+  "marketCap": "~$3.3B (est. — ATM issuance ongoing, share count in flux)",
+  "sector": "Space / Lunar Infrastructure",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Speculative",
+  "score": 55,
+  "summary": "Intuitive Machines lost the NASA Lunar Terrain Vehicle award to Astrolab ($219M) and Lunar Outpost ($220M) in May 2026, ending its bid to be a multi-program Artemis mobility prime, and launched a $500M ATM equity program on Jun 2 that's created a real, ongoing dilution overhang — together explaining most of the -68% drawdown from May's ATH. These are realized setbacks, not just sentiment. Against that: backlog is still $1.1B+, a fresh $148.3M NASA lander contract landed Jul 1, IM-3 (targeting Reiner Gamma, H2 2026) has not launched yet and remains a live catalyst, and Craig-Hallum reiterated Buy through the decline. This is a wide-dispersion, binary-catalyst speculative name, not a clean buy-the-dip.",
+  "catalysts": [
+    {
+      "icon": "🌑",
+      "name": "IM-3 Lunar Mission — Reiner Gamma",
+      "description": "Third Nova-C lander mission, targeting the Reiner Gamma region — has NOT launched as of mid-Jul despite some stale coverage implying otherwise. Redundant altimeters + lighting-independent navigation sensors target the upright-landing failures that hit IM-1 and IM-2. Exact launch date not yet set; NASA/company guidance says second half 2026.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "Consensus-estimated date, not yet officially confirmed by IR. Key reads: revenue trajectory off Q1's $186.7M, commentary on ATM pace/dilution, and any guidance revision following the LTV contract loss.",
+      "urgencyLabel": "~34 DAYS",
+      "dateBadge": "~Aug 18, 2026",
+      "catalystDate": "2026-08-18",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🛰️",
+      "name": "NASA $148.3M Nova-C Production Lander Contract",
+      "description": "Jul 1, 2026: NASA awarded up to $148.3M for a production-line-qualified Nova-C lander (Moon delivery by 2028). Extends backlog and partially offsets the narrative damage from May's LTV-contract miss.",
+      "urgencyLabel": "RECENT",
+      "dateBadge": "Jul 1, 2026",
+      "catalystDate": "2026-07-01",
+      "badgeColor": "green",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "REALIZED: NASA awarded the Lunar Terrain Vehicle contract to Astrolab ($219M) and Lunar Outpost ($220M) in May 2026 — LUNR was not selected despite winning an earlier $30M Phase 1 feasibility award; no longer positioned as an Artemis rover prime",
+    "REALIZED: $500M at-the-market equity program launched Jun 2, 2026 — an ongoing dilution overhang (not a one-time event) that is the primary driver of the stock's decline and will keep pressuring shares until the program is exhausted or capped",
+    "Track record: IM-1 tipped on landing (Feb 2024), IM-2 landed on its side with limited data transmission (Mar 2025) — IM-3's upright landing is not guaranteed despite hardware fixes",
+    "Technical damage: 7 consecutive down days into mid-Jul, trading well below its 200-day moving average",
+    "Customer/NASA budget concentration — Congressional funding risk to the CLPS program this backlog depends on"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q2 2026 Earnings",
+      "dateRange": "~Aug 18, 2026",
+      "note": "Est. date pending official confirmation — watch ATM pace + guidance post-LTV loss",
+      "est": "Rev: ~$200-230M est.",
+      "highlight": "yellow"
+    },
+    {
+      "event": "IM-3 Lunar Mission",
+      "dateRange": "H2 2026",
+      "note": "Not yet launched — third Nova-C delivery, upright landing is the key open question",
+      "est": "Mission success = re-rating catalyst",
+      "highlight": "blue"
+    },
+    {
+      "event": "IM-4 Mission Preparation",
+      "dateRange": "2027",
+      "note": "South pole — 6 NASA CLPS payloads, $116.9M award",
+      "est": "IM-4 2027",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -49, "price": 7.78 },
+    { "label": "Base", "color": "yellow", "pct": 39, "price": 21 },
+    { "label": "Bull", "color": "green", "pct": 91, "price": 29 },
+    { "label": "Moon", "color": "purple", "pct": 171, "price": 41 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (9 analysts)", "target": 40.78, "rating": "Buy", "note": "Buy consensus; implies well over 100% upside from current level" },
+    { "firm": "Craig-Hallum", "target": 45.0, "rating": "Buy", "note": "Reiterated Buy despite the ~40% one-month decline" },
+    { "firm": "Top Bull", "target": 75.0, "rating": "Buy", "note": "High estimate; long-term lunar infrastructure bull case" },
+    { "firm": "Low estimate", "target": 22.0, "rating": "Hold", "note": "Reflects dilution + LTV-loss concerns" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Fed held 3.50–3.75%. Government contract-backed revenue is largely insulated from rate changes.",
+    "inflationNote": "NASA CLPS contracts are cost-plus in parts — inflation pass-through partially protects margins.",
+    "sectorImpact": "Space infrastructure with government contracts is rate-insensitive. NASA budget stability and LUNR's own equity issuance pace are bigger watchpoints than Fed policy.",
+    "summary": "LOW macro risk from a Fed perspective — the $1.1B+ government backlog is a revenue floor. The dominant risks here are company-specific (dilution, contract losses, landing execution), not macro."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 15.14, "note": "Current — post 7-day losing streak, ATM overhang unresolved", "timing": "Now" },
+      { "label": "Entry 2", "level": 11, "rangeMax": 13, "note": "If ATM-driven selling pushes toward a 52-week low retest", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 8, "note": "Deep dip — 52-week low retest zone, high risk/high reward only", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 21, "pct": 38.7, "note": "Recovery toward pre-ATM-announcement level" },
+    "tp2": { "price": 29, "pct": 91.5, "note": "IM-3 success + Q2 beat re-rating" },
+    "tp3": { "price": 41, "pct": 170.7, "note": "Full re-rating to consensus analyst target ($40.78) — requires IM-3 success + ATM overhang resolution", "moon": true },
+    "stopLoss": {
+      "tight": 11, "tightPct": -27.3, "tightNote": "Below near-term support — ATM overhang dominating sentiment",
+      "hard": 7.78, "hardPct": -48.6, "hardNote": "52-week low breach — thesis break (IM-3 failure or dilution cascade)",
+      "riskReward": "3.3 : 1", "rrNote": "Entry vs TP2", "rrWarning": "Wide R/R reflects high volatility + a binary IM-3 catalyst — size for speculative risk, not core conviction"
+    },
+    "verdict": "Two real negatives (LTV contract loss, $500M ATM) have materialized since the last report — not just sentiment. Speculative sizing only; scale in below $13, avoid the current level unless comfortable holding through IM-3 as a binary event.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "delivery_beat",
+    "preRunup": "LUNR has historically run 20-30% in the weeks before a confirmed lunar mission launch window as retail/institutional buyers front-run mission excitement. That pattern is likely muted this cycle given the active $500M ATM program can absorb/cap any pre-launch rally.",
+    "preRunupTiming": "4–8 weeks before confirmed launch window",
+    "preRunupPct": "+15% to +30% (likely dampened by ATM overhang)",
+    "postWin": {
+      "avgPct": 40,
+      "range": "+25% to +65%",
+      "note": "IM-1 (Feb 2024), the first private Moon landing, drove +45% in 3 days despite a partial tip-over. Even the smaller NASA LRO Camera contract win drove +14.6% in May 2026 — shows sensitivity to positive NASA news at these suppressed levels.",
+      "exampleDate": "Feb 2024"
+    },
+    "postLose": {
+      "avgPct": -30,
+      "range": "-18% to -55%",
+      "note": "The Jun 2 ATM announcement itself triggered persistent selling (part of the subsequent 7-day, -24.5% losing streak) — a genuine dilution overhang, not short-lived fear. A failed IM-3 landing would likely compound this.",
+      "exampleDate": "Jun 2026"
+    },
+    "spotSizing": {
+      "pct": 5,
+      "reason": "Two real negative catalysts (LTV loss, $500M ATM) have realized since the prior report — smaller sizing than before is warranted despite the backlog/analyst-target upside. Treat as a small speculative allocation pending IM-3 clarity or ATM resolution. Max 5% of portfolio."
+    },
+    "stopPreCatalyst": {
+      "pct": -27,
+      "price": 11,
+      "note": "ถ้าหลุด $11 ก่อน IM-3 launch = ATM dilution ครอบงำ sentiment เต็มที่ รอสัญญาณกลับตัวก่อนเข้าเพิ่ม"
+    },
+    "stopPostCatalyst": {
+      "pct": -30,
+      "note": "ถ้า IM-3 landing ล้มเหลว หรือ Q2 earnings miss พร้อม guidance cut ออก 50%+ ทันที"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "LUNR",
+      "event": "IM-1 first private Moon landing validation",
+      "date": "Feb 2024",
+      "movePct": 45,
+      "days": 3,
+      "outcome": "good",
+      "note": "LUNR's own IM-1 drove +45% in 3 days despite a partial tip-over on landing — mission declared partially successful. A clean IM-3 landing could produce a larger move from today's much lower base."
+    },
+    {
+      "ticker": "LUNR",
+      "event": "NASA LRO Camera contract win +14.6%",
+      "date": "May 2026",
+      "movePct": 14.6,
+      "days": 1,
+      "outcome": "good",
+      "note": "Even a $20M recurring services contract drove +14.6% — the market is sensitive to positive NASA news at current suppressed levels, which argues the $148.3M Jul 1 contract is a real (if partial) offset to the LTV loss."
+    },
+    {
+      "ticker": "LUNR",
+      "event": "$500M ATM equity program announcement",
+      "date": "Jun 2026",
+      "movePct": -18,
+      "days": 5,
+      "outcome": "bad",
+      "note": "Stock kept falling after the ATM launch as investors priced in ongoing share issuance — a genuine, still-unresolved dilution overhang, and the direct precursor to the 7-day losing streak that followed into mid-Jul."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "7-day losing streak drags LUNR down 24.5% as $500M ATM dilution overhang persists after May's Lunar Terrain Vehicle contract loss",
+    "url": "https://www.trefis.com/stock/lunr/articles/606829/a-7-day-losing-streak-has-intuitive-machines-stock-down-25/2026-07-13",
+    "date": "Jul 2026"
+  },
+  "sources": [
+    "https://www.trefis.com/stock/lunr/articles/606829/a-7-day-losing-streak-has-intuitive-machines-stock-down-25/2026-07-13",
+    "https://finance.yahoo.com/markets/stocks/articles/craig-hallum-maintains-buy-intuitive-100112026.html",
+    "https://www.khou.com/article/money/business/houston-business-journal/nasa-contract-venturi-astrolab-lunar-outpost-moon-vehicle/285-d5bc72dc-ee9e-4d72-a71d-e2af919e60f5",
+    "https://www.quiverquant.com/news/Intuitive+Machines+falls+as+dilution+worries+linger+after+$500M+at-the-market+equity+program",
+    "https://www.stocktitan.net/news/LUNR/intuitive-machines-expands-lunar-surface-operations-with-180-4-ymdahg3o432h.html",
+    "https://investors.intuitivemachines.com/news-releases/news-release-details/intuitive-machines-selects-spacex-launch-its-fourth-lunar-lander"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Intuitive Machines เสียสัญญา Lunar Terrain Vehicle ให้ Astrolab กับ Lunar Outpost (พ.ค. 2026) ทำให้หมดสิทธิ์เป็น rover prime และเปิด ATM equity program $500M (2 มิ.ย.) ซึ่งเป็น dilution overhang จริงที่ยังไม่จบ — 2 อย่างนี้อธิบายการร่วง -68% จาก ATH ได้เกือบทั้งหมด ในทางกลับกัน backlog ยังอยู่ที่ $1.1B+ ได้สัญญาใหม่ $148.3M วันที่ 1 ก.ค. และ IM-3 (เป้า Reiner Gamma, H2 2026) ยังไม่ปล่อยยาน ยังเป็น catalyst จริงอยู่ Craig-Hallum ยังคง Buy",
+      "priceNote": "ร่วง ~68% จาก ATH $46.75 — เสีย LTV contract + เปิด ATM $500M เป็นสาเหตุจริง ไม่ใช่แค่ sentiment IM-3 ยังไม่ปล่อยยาน",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "IM-3 ภารกิจจันทร์ — Reiner Gamma", "description": "Nova-C lander ครั้งที่ 3 ยังไม่ปล่อยยาน ณ กลาง ก.ค. เป้า H2 2026 ระบบ altimeter/navigation ใหม่แก้ปัญหาจาก IM-1/IM-2" },
+        { "name": "ผลประกอบการ Q2 2026", "description": "วันที่ยังไม่ยืนยันอย่างเป็นทางการ (est. ~18 ส.ค.) — จับตา ATM pace และ guidance หลังเสีย LTV" },
+        { "name": "สัญญา NASA Nova-C $148.3M", "description": "1 ก.ค. — เพิ่ม backlog ช่วยลดผลกระทบจากการเสีย LTV บางส่วน" }
+      ],
+      "risks": [
+        "เกิดขึ้นจริง: เสียสัญญา Lunar Terrain Vehicle ให้ Astrolab และ Lunar Outpost พ.ค. 2026 — ไม่ได้เป็น rover prime อีกต่อไป",
+        "เกิดขึ้นจริง: เปิด ATM equity program $500M มิ.ย. — dilution overhang ต่อเนื่อง ไม่ใช่เหตุการณ์ครั้งเดียว",
+        "ประวัติ: IM-1 ล้ม IM-2 เอียงข้าง — IM-3 landing ตั้งตรงไม่การันตี",
+        "ความเสียหายทาง technical: ร่วงติดต่อกัน 7 วัน ต่ำกว่า 200-day MA",
+        "พึ่ง NASA budget — ความเสี่ยงด้าน Congressional funding"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed ถือ 3.50-3.75% — government contract insulated จาก rate",
+        "inflationNote": "NASA cost-plus บางส่วนป้องกัน inflation ได้",
+        "sectorImpact": "Space infrastructure + government contract = rate-insensitive ความเสี่ยงหลักคือ company-specific ไม่ใช่ Fed",
+        "summary": "Macro risk ต่ำจาก Fed — backlog $1.1B+ คือ revenue floor ความเสี่ยงหลักคือ dilution, การเสีย contract, และ execution risk ของภารกิจ"
+      },
+      "entryStrategy": {
+        "verdict": "2 ข่าวลบจริงเกิดขึ้นแล้ว (เสีย LTV, เปิด ATM $500M) ไม่ใช่แค่ sentiment — เข้าแบบ speculative เท่านั้น ทยอยเข้าต่ำกว่า $13 หลีกเลี่ยงราคาปัจจุบันถ้าไม่พร้อมถือผ่าน IM-3 ซึ่งเป็น binary event",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน หลังร่วง 7 วันติด ATM overhang ยังไม่คลี่คลาย", "timing": "ตอนนี้" },
+          { "note": "ถ้า ATM selling ดันราคาไปทดสอบ 52-week low", "timing": "ถ้าย่อ" },
+          { "note": "โซน 52-week low — high risk/high reward เท่านั้น", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "กลับสู่ระดับก่อนประกาศ ATM" },
+        "tp2": { "note": "IM-3 สำเร็จ + Q2 beat re-rating" },
+        "tp3": { "note": "Re-rate เต็มที่สู่ consensus target ($40.78) ต้องมี IM-3 สำเร็จ + ATM overhang คลี่คลาย", "moon": true },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่า support ใกล้ — ATM overhang ครอบงำ sentiment",
+          "hardNote": "หลุด 52-week low — thesis break (IM-3 ล้มเหลว หรือ dilution cascade)",
+          "rrNote": "Entry เทียบ TP2",
+          "rrWarning": "R/R กว้างเพราะ volatility สูง + IM-3 เป็น binary event — size แบบ speculative ไม่ใช่ core conviction"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q2 2026", "note": "วันที่ est. — จับตา ATM pace และ guidance" },
+        { "event": "IM-3 Lunar Mission", "note": "ยังไม่ปล่อยยาน — upright landing คือคำถามหลัก" }
+      ]
+    }
+  }
+}

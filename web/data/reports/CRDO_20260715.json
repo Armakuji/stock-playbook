@@ -1,0 +1,230 @@
+{
+  "ticker": "CRDO",
+  "companyName": "Credo Technology Group Holding Ltd",
+  "companyDescription": "AI Data Center Networking · High-speed connectivity silicon (AEC cables, SerDes, line card chips) enabling hyperscaler AI clusters — the bandwidth backbone of AI infrastructure",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-15T00:00:00.000Z",
+  "price": 238.90,
+  "priceChange": 0.85,
+  "priceNote": "$238.90, down ~14% from Jul 6's $276 as guidance-disappointment overhang + broader semi pullback + CFO/CTO routine 10b5-1 selling weighed on shares. Still well below Stifel $350 / BofA $340 targets. Q1 FY27 earnings Sep 9 — guided $465-475M revenue.",
+  "marketCap": "$44.5B",
+  "sector": "Technology / Semiconductors",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 79,
+  "summary": "Credo has pulled back ~14% since its Q4 FY26 beat (Jun 1) to $238.90, driven by a guidance-disappointment overhang and pre-arranged CFO/CTO 10b5-1 stock sales rather than any change in the underlying thesis. Q4 FY26 revenue hit $437M (+157% YoY), guiding Q1 FY27 to $465-475M, and analyst targets (Stifel $350, BofA/Evercore $340) are unchanged. The AI networking AEC/optical demand cycle remains structurally intact; the pullback looks like sentiment/technical, not fundamental, with Sep 9 earnings the next real test.",
+  "catalysts": [
+    {
+      "icon": "🔌",
+      "name": "Hyperscaler AI Fabric Expansion",
+      "description": "Microsoft, Google, Amazon are building 100GbE+ AI cluster interconnects — Credo's Active Electrical Cables (AEC) and line card chips are the key enabling technology. AI capex cycle drives sticky multi-year revenue.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    },
+    {
+      "icon": "📊",
+      "name": "Q1 FY27 Earnings",
+      "description": "Sep 9, 2026. Guided revenue $465-475M (+6-9% QoQ). Street watches whether 157% YoY growth continues and whether the post-beat pullback reverses on a fresh beat-and-raise.",
+      "urgencyLabel": "56 DAYS",
+      "dateBadge": "Sep 9, 2026",
+      "catalystDate": "2026-09-09",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📉",
+      "name": "Post-Selloff Stabilization Watch",
+      "description": "Stock down ~14% since Jun 1 high on guidance overhang + CFO/CTO 10b5-1 selling (pre-arranged, not opportunistic). Analyst targets unchanged (Stifel $350, BofA/Evercore $340) — a hold above the $215-225 support zone would confirm this is sentiment, not thesis break.",
+      "urgencyLabel": "WATCH",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Customer concentration risk — single hyperscaler (believed Microsoft) represents large portion of revenue; any contract pause = revenue cliff",
+    "Competition from Marvell Technology (MRVL) and Broadcom (AVGO) in AI networking silicon",
+    "~90x P/E valuation — priced for perfection; any slowdown in hyperscaler AI capex triggers sharp derating",
+    "CFO and CTO both sold shares in July under 10b5-1 plans (pre-arranged, not opportunistic, large remaining stakes) — benign but adds to sentiment overhang during a technical pullback"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q1 FY27 Earnings",
+      "dateRange": "Sep 9, 2026",
+      "note": "Guide $465-475M rev — next beat-and-raise test, also the catalyst that resolves whether the Jul pullback was sentiment or thesis",
+      "est": "est. EPS $1.20+",
+      "highlight": "blue"
+    },
+    {
+      "event": "TP1 Target",
+      "dateRange": "Sep 2026",
+      "note": "Consensus analyst target zone",
+      "est": "$270",
+      "highlight": "yellow"
+    },
+    {
+      "event": "TP2 Target",
+      "dateRange": "Q4 2026",
+      "note": "Stifel/BofA bull case",
+      "est": "$340",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -25, "price": 179 },
+    { "label": "Base", "color": "yellow", "pct": 13, "price": 270 },
+    { "label": "Bull", "color": "green", "pct": 42, "price": 340 },
+    { "label": "Moon", "color": "purple", "pct": 74, "price": 415 }
+  ],
+  "analystTargets": [
+    { "firm": "Stifel", "target": 350, "rating": "Buy" },
+    { "firm": "Evercore ISI", "target": 340, "rating": "Buy" },
+    { "firm": "Mizuho", "target": 290, "rating": "Outperform" },
+    { "firm": "Consensus (~19 analysts)", "target": 270, "rating": "Strong Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed hawkish tilt pressures high-P/E semis; CRDO ~90x P/E is rate-sensitive despite structural AI demand.",
+    "inflationNote": "Semiconductor components face some cost inflation but CRDO's custom silicon pricing power absorbs this",
+    "sectorImpact": "AI networking demand is structural and multi-year — independent of Fed rate decisions. Hyperscaler AI capex is the dominant driver.",
+    "summary": "MEDIUM — AI networking demand is structural, but CRDO's premium multiple makes it vulnerable to hawkish macro surprises and broader semi-sector rotation, which is the more likely explanation for the recent pullback than any thesis change."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 238.90, "note": "Current — post-selloff, pre Sep 9 earnings", "timing": "Now" },
+      { "label": "Entry 2", "level": 215, "rangeMax": 225, "note": "Support test zone after 14% pullback", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 195, "note": "Deep dip — matches pre-Q4-earnings support", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 270, "pct": 13, "note": "Consensus analyst target zone" },
+    "tp2": { "price": 340, "pct": 42.3, "note": "Stifel/BofA bull case" },
+    "tp3": { "price": 415, "pct": 73.7, "note": "Moon — multi-hyperscaler expansion · 2027", "moon": true },
+    "stopLoss": {
+      "tight": 205, "tightPct": -14.2, "tightNote": "Below Jul pullback low / support test",
+      "hard": 179, "hardPct": -25.1, "hardNote": "Bear case — hyperscaler pause / thesis break",
+      "riskReward": "3.0 : 1", "rrNote": "Entry vs TP2", "rrWarning": "Good R/R — thesis intact, pullback reads as sentiment not fundamentals"
+    },
+    "verdict": "Post-beat pullback (-14% since Jun 1) on guidance overhang + routine insider selling — not a thesis break. Add on further dips toward $215-225; Sep 9 earnings is the next binary. Avoid chasing above $260 without a new catalyst.",
+    "approach": "DCA"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "CRDO has historically run hard into earnings prints as hyperscaler AI capex checks come in strong, then consolidates or pulls back post-print even on a beat if guidance doesn't clear the bar.",
+    "preRunupTiming": "2-3 สัปดาห์ก่อน earnings print",
+    "preRunupPct": "+15% to +35%",
+    "postWin": {
+      "avgPct": 18,
+      "range": "+10% to +30%",
+      "note": "CRDO Q3 FY26 beat (Feb 2026) drove +22% single session on 157% revenue growth surprise. Q4 FY26 (Jun 1) gained only +1.3% day-of, then reversed into a 14% pullback by mid-Jul on guidance-disappointment overhang despite the headline beat.",
+      "exampleDate": "Feb 2026"
+    },
+    "postLose": {
+      "avgPct": -20,
+      "range": "-15% to -30%",
+      "note": "CRDO Q1 FY26 softer guidance (Aug 2025) dropped -18% as customer ramp timing uncertainty. Any hyperscaler pause in AI capex = severe de-rating at this multiple.",
+      "exampleDate": "Aug 2025"
+    },
+    "spotSizing": {
+      "pct": 7,
+      "reason": "Core Holding — high conviction on AI networking structural demand, but the fresh pullback + no new catalyst until Sep 9 argues for a slightly smaller near-term size than prior runs. Max 7% of portfolio."
+    },
+    "stopPreCatalyst": {
+      "pct": -14,
+      "price": 205,
+      "note": "ถ้าหลุด $205 ก่อน Sep 9 earnings = sentiment เปลี่ยนจริง ไม่ใช่แค่ technical pullback"
+    },
+    "stopPostCatalyst": {
+      "pct": -18,
+      "note": "ถ้า Q1 FY27 revenue growth ชะลอ < 100% YoY ออกทันที"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "CRDO",
+      "event": "Q3 FY26 Earnings Beat — 157% YoY revenue growth",
+      "date": "Feb 2026",
+      "movePct": 22,
+      "days": 1,
+      "outcome": "good",
+      "note": "Credo beat Q3 FY26 consensus by 18% on EPS — driven by AI data center AEC cable and line card chip demand from single hyperscaler. Pattern: AI networking TAM expanding faster than expected."
+    },
+    {
+      "ticker": "MRVL",
+      "event": "AI data center revenue 76% YoY growth announcement",
+      "date": "Mar 2026",
+      "movePct": 25,
+      "days": 5,
+      "outcome": "good",
+      "note": "Marvell re-rated as AI networking play similar to CRDO — both benefiting from hyperscaler inference fabric build-out. CRDO has smaller float so moves larger on similar catalysts."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "CRDO -14% since Jun 1 high on guidance-disappointment overhang + CFO/CTO 10b5-1 selling",
+    "url": "https://www.themarketsdaily.com/2026/07/07/credo-technology-group-nasdaqcrdo-stock-price-down-7-2-heres-what-happened.html",
+    "date": "Jul 2026"
+  },
+  "sources": [
+    "https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Technology-Group-Holding-Ltd-Reports-Fourth-Quarter-and-Fiscal-Year-2026-Financial-Results/default.aspx",
+    "https://www.themarketsdaily.com/2026/07/07/credo-technology-group-nasdaqcrdo-stock-price-down-7-2-heres-what-happened.html",
+    "https://www.fool.com/coverage/filings/2026/07/09/credo-s-cto-sold-31-290-shares-his-remaining-usd1-6-billion-stake-tells-the-real-story/",
+    "https://www.stocktitan.net/sec-filings/CRDO/form-4-credo-technology-group-holding-ltd-insider-trading-activity-bd91c7d7a655.html",
+    "https://stockanalysis.com/stocks/crdo/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "CRDO ร่วง ~14% จากจุดสูงหลัง Q4 FY26 beat (1 มิ.ย.) มาอยู่ที่ $238.90 จาก guidance overhang + CFO/CTO ขายหุ้นตามแผน 10b5-1 ไม่ใช่การเปลี่ยน thesis Q4 FY26 revenue $437M (+157%) guide Q1 FY27 $465-475M เป้า analyst ยังไม่เปลี่ยน (Stifel $350, BofA/Evercore $340) earnings ถัดไป 9 ก.ย.",
+      "priceNote": "ร่วง ~14% จาก $276 (1 มิ.ย.) จาก guidance overhang + insider selling ตามแผน — ยังต่ำกว่า analyst bull targets",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        {
+          "name": "Hyperscaler AI Fabric Expansion",
+          "description": "Microsoft, Google, Amazon สร้าง 100GbE+ AI cluster — CRDO's AEC cables และ line card chips เป็น enabling technology สำคัญ"
+        },
+        {
+          "name": "Q1 FY27 Earnings",
+          "description": "9 ก.ย. — guide $465-475M rev ตัวชี้วัดว่าการร่วงนี้เป็นแค่ sentiment หรือ thesis เปลี่ยนจริง"
+        },
+        {
+          "name": "จับตาการทรงตัวหลัง Selloff",
+          "description": "ร่วง ~14% จาก guidance overhang + CFO/CTO ขายหุ้นตามแผน 10b5-1 — analyst target ยังไม่เปลี่ยน ถ้ายืนเหนือ $215-225 ได้ = สัญญาณ sentiment ไม่ใช่ thesis break"
+        }
+      ],
+      "risks": [
+        "Customer concentration — hyperscaler เดียวเป็น revenue ส่วนใหญ่ ถ้า pause = ร่วงหนัก",
+        "แข่งกับ Marvell (MRVL) และ Broadcom (AVGO) ใน AI networking silicon",
+        "P/E ~90x — priced for perfection ทุก quarter ต้อง beat",
+        "CFO และ CTO ขายหุ้นเดือน ก.ค. ตามแผน 10b5-1 (ไม่ใช่ opportunistic ยังถือหุ้นจำนวนมาก) — ไม่ใช่สัญญาณลบจริง แต่เพิ่ม sentiment overhang ช่วง pullback"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed hawkish tilt กดดัน high-P/E semiconductor",
+        "inflationNote": "Custom silicon pricing power ดูดซับ cost inflation ได้",
+        "sectorImpact": "AI networking demand structural multi-year — ไม่ sensitive กับ Fed rate โดยตรง",
+        "summary": "Fed risk ปานกลาง — AI infrastructure demand เป็น structural แต่ premium multiple ทำให้ sensitive กับ macro surprise และ sector rotation ซึ่งน่าจะเป็นสาเหตุการร่วงล่าสุดมากกว่า thesis เปลี่ยน"
+      },
+      "entryStrategy": {
+        "verdict": "การร่วง 14% หลัง beat มาจาก guidance overhang + insider selling ตามแผน ไม่ใช่ thesis break — ทยอยซื้อเพิ่มถ้าย่อไปโซน $215-225 earnings 9 ก.ย. คือจุดพิสูจน์ถัดไป อย่าไล่ราคาเกิน $260 โดยไม่มี catalyst ใหม่",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน หลัง selloff ก่อน earnings 9 ก.ย.", "timing": "ตอนนี้" },
+          { "note": "โซน support หลังร่วง 14%", "timing": "ถ้าย่อ" },
+          { "note": "Support แข็งแกร่ง ระดับก่อน Q4 earnings", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Consensus analyst target zone" },
+        "tp2": { "note": "Stifel/BofA bull case" },
+        "tp3": { "note": "Moon case · 2027 ถ้า CRDO ขยายไป 3+ hyperscaler customers", "moon": true },
+        "stopLoss": {
+          "tightNote": "Below จุดต่ำสุดหลัง pullback",
+          "hardNote": "Thesis เปลี่ยน — hyperscaler pause จริง",
+          "rrNote": "Entry เทียบ TP2",
+          "rrWarning": "R/R ดี — thesis ยังไม่เปลี่ยน pullback อ่านเป็น sentiment ไม่ใช่ fundamentals"
+        }
+      },
+      "estimateDates": [
+        { "event": "Q1 FY27 Earnings", "note": "โอกาส beat-and-raise ครั้งถัดไป และจุดพิสูจน์ pullback" },
+        { "event": "เป้า TP1", "note": "Consensus analyst target" },
+        { "event": "เป้า TP2", "note": "Stifel/BofA bull case" }
+      ]
+    }
+  }
+}
