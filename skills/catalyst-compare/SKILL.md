@@ -74,18 +74,26 @@ goes to the new Realized section in Step 4 instead.
 
 ## Step 2: Fetch live prices
 
-Primary source: the Yahoo chart endpoint (same host the backtest price-fetcher uses —
-`scripts/fetch-backtest-prices.mjs`) — `https://query1.finance.yahoo.com/v8/finance/chart/<TICKER>`.
-Read `chart.result[0].meta.regularMarketPrice` for current price and derive today's % change from
-`meta.regularMarketPrice` vs `meta.previousClose` (or `chartPreviousClose`). Keeping the same source
-as the backtest stack means live comparisons and historical path data don't disagree on price.
+Read `web/data/live-prices.json` **first** — don't self-fetch by default:
 
-Fallback (if Yahoo fails or is rate-limited): `https://stockanalysis.com/stocks/<ticker>/`
-(lowercase ticker) — extract current price and today's % change the same way.
+1. If the file exists and its top-level `generatedAt` is **≤ 12 hours old**, use `prices[TICKER]`
+   (`price`, `changePct`, `asOf`) for every ticker found there. No self-fetching needed.
+2. If the file is missing, unreadable, or `generatedAt` is older than 12 hours, run
+   `npm run prices:fetch` from `web/` (this calls `scripts/fetch-live-prices.mjs`, which batches the
+   whole reports/+speculative/+dca/ universe through Yahoo in ~2-3 rounds), then re-read the file.
+3. If that script can't run (network blocked in this environment), fall back to fetching each
+   ticker yourself: the Yahoo chart endpoint (same host `scripts/fetch-backtest-prices.mjs` uses) —
+   `https://query1.finance.yahoo.com/v8/finance/chart/<TICKER>`. Read
+   `chart.result[0].meta.regularMarketPrice` for current price and derive today's % change from
+   `meta.regularMarketPrice` vs `meta.previousClose` (or `chartPreviousClose`). Fallback if Yahoo
+   fails or is rate-limited: `https://stockanalysis.com/stocks/<ticker>/` (lowercase ticker) —
+   extract current price and today's % change the same way. **State in the output that prices are
+   stale/self-fetched** when this path is taken.
+4. Any ticker missing from `live-prices.json` after step 1/2 (e.g. added after the last fetch run) —
+   fetch it individually via step 3's method rather than falling back for the whole run.
 
-Note if data is stale (>2 days old) — if stale, do a WebSearch for `"<TICKER> stock price today <MonthYear>"`.
-
-Fetch all tickers in parallel where possible.
+Note if data is stale (>2 days old, or the self-fetch fallback path was used) — if stale, do a
+WebSearch for `"<TICKER> stock price today <MonthYear>"`.
 
 ## Step 3: Compute entry attractiveness
 
@@ -149,8 +157,17 @@ List **pre/undated** stocks that are not good to enter now, with one-line reason
 ### Section 4 — ⏳ Realized — event ผ่านแล้ว ไม่ใช่ entry ใหม่
 
 List every **post**-stage pick (from Step 1) — these had a dated catalyst that has already passed,
-so they're excluded from the rank score, Best-to-Open-NOW, and Wait/Skip above. One line each:
-- **TICKER** — event [name], [date] (X days ago) — monitoring only, not a fresh entry signal
+so they're excluded from the rank score, Best-to-Open-NOW, and Wait/Skip above.
+
+For each, WebSearch the event outcome — **1 query per ticker** (e.g. `"VERA PDUFA result July
+2026"`), capped at **~5 queries total per compare run**. If more than 5 post-stage picks exist,
+prioritize the most recently passed catalystDate first and mark the rest "outcome not checked this
+run (query cap)" instead of skipping silently.
+
+One line each:
+- **TICKER** — event [name], [date] (X days ago) — outcome ✅/❌/⚠️ mixed (or "not announced yet") ·
+  [±X]% move (report price $A → live price $B via `live-prices.json`) — [one-line summary of what
+  actually happened]
 
 If there are no post-stage picks, omit this section entirely (don't print an empty header).
 

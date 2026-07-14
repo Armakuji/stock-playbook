@@ -1,5 +1,5 @@
 {
-  "_note": "Candidates that PASSED the /dashboard (or /turbo-list) screen but did NOT make the top 5. Logged to fight survivorship bias — their real outcome is the counterfactual that tells us whether the top-5 cut actually adds alpha. Append one object per rejected candidate per dashboard run. `lane`: \"core\" (default /catalyst-list, +30%/14d) or \"turbo\" (/turbo-list, +50%/30d) — entries with no `lane` field predate this split and are treated as \"core\".",
+  "_note": "Candidates that PASSED the /dashboard (or /turbo-list) screen but did NOT make the top 5. Logged to fight survivorship bias — their real outcome is the counterfactual that tells us whether the top-5 cut actually adds alpha. Append one object per rejected candidate per dashboard run. `lane`: \"core\" (default /catalyst-list, +30%/14d) or \"turbo\" (/turbo-list, +50%/30d) — entries with no `lane` field predate this split and are treated as \"core\". Since backlog #34 (core) and #35 (turbo), `/catalyst-list` and `/turbo-list` both also log candidates cut from their mandatory ≥12-ticker longlist BEFORE deep research — those entries have `reason` prefixed `\"longlist-cut: \"`, extending the counterfactual to cover candidate generation, not just the final top-5 cut.",
   "nearMisses": [
     {
       "date": "2026-06-23",
@@ -194,6 +194,195 @@
       "priceAtScreen": 21.28,
       "topAnalystTarget": 29.24,
       "impliedUpside": 37.4
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "PL",
+      "lane": "core",
+      "reason": "Cleared the 30%+ gate (46% upside, 5-analyst median target $38 vs price $25.96) but proximity weaker than the 5 picks that made top 5 this run — next dated catalyst is Q2 FY27 earnings Sep 8 (56 days out, vs 15-29 days for OKLO/CAPR/RKLB/KTOS/FLY). Strong backup, not a flaw in the thesis — revisit as the Sep 8 window approaches.",
+      "priceAtScreen": 25.96,
+      "topAnalystTarget": 38,
+      "impliedUpside": 46.4
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "ASTS",
+      "lane": "core",
+      "reason": "longlist-cut: Hold consensus target $81.47 (11 analysts) vs price $67.58 = only ~21% upside — doesn't clear the 30% gate despite a real near-term catalyst (Block 2 BlueBird launch, early Aug). Consistent with prior disqualifications (Jun 26, Jul 1, Jul 10) — price has recovered enough that the gap to target has closed.",
+      "priceAtScreen": 67.58,
+      "topAnalystTarget": 81.47,
+      "impliedUpside": 20.6
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "GOOGL",
+      "lane": "core",
+      "reason": "longlist-cut: Consensus target ~$430 vs price $352.51 = ~22% upside — still short of the 30% gate despite a real Jul 22 earnings catalyst. Consistent with the Jul 6 disqualification (~20% then) — the gap hasn't meaningfully closed in a month.",
+      "priceAtScreen": 352.51,
+      "topAnalystTarget": 430,
+      "impliedUpside": 22.0
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "TER",
+      "lane": "core",
+      "reason": "longlist-cut: Consensus target $398.71 vs price sources conflicted between $321-369 this run — best case (using the lower $321 price) only gives ~24% upside, worst case ~8%. Doesn't clear the 30% gate either way despite a real Aug 5 earnings catalyst. Consistent with Jul 10 disqualification.",
+      "priceAtScreen": 369.05,
+      "topAnalystTarget": 398.71,
+      "impliedUpside": 8.0
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "OUST",
+      "lane": "core",
+      "reason": "longlist-cut: Price has run past consensus targets — average target ~$40.8-46.86 across sources vs current ~$49.94 = negative implied upside. No clean near-term dated catalyst found either. Stock is up 114%+ YTD; the easy money looks taken.",
+      "priceAtScreen": 49.94,
+      "topAnalystTarget": 45,
+      "impliedUpside": -9.9
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "ACMR",
+      "lane": "core",
+      "reason": "longlist-cut: Average analyst target $72.01 vs price $59.85 = ~20% upside — doesn't clear the 30% gate despite a real Aug 4 earnings catalyst and strong recent target raises (to $70 from $40, to $68 from $58) citing backlog visibility.",
+      "priceAtScreen": 59.85,
+      "topAnalystTarget": 72.01,
+      "impliedUpside": 20.3
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "AVAV",
+      "lane": "core",
+      "reason": "longlist-cut: Data was unusually inconsistent across sources this run (current price cited anywhere from $191-207, average target $284-319) — best-effort implied upside would clear the gate (~54%), but confidence in the underlying price is too low to include without a cleaner re-check. Also has no clean forward-dated catalyst (the $500M Army contract driving the thesis was already announced Jul 1). Revisit with a clean price/target pull next run.",
+      "priceAtScreen": 207.07,
+      "topAnalystTarget": 318.96,
+      "impliedUpside": 54.1
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "IONQ",
+      "lane": "core",
+      "reason": "longlist-cut: Clears the 30% gate easily (78% upside, $69.31 consensus vs $38.88) — but this is the third consecutive screen citing the same weak-proximity objection (next catalyst is Sep 8 Investor Day, 56 days out). Cutting again on timing grounds rather than upside, consistent with Jul 6's disqualification, to avoid re-picking a name purely on salience.",
+      "priceAtScreen": 38.88,
+      "topAnalystTarget": 69.31,
+      "impliedUpside": 78.3
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "QUBT",
+      "lane": "core",
+      "reason": "longlist-cut: Huge implied upside (119%, $17.50 target vs $8.00) but no single dated catalyst — ongoing contract/acquisition momentum rather than a scheduled event. Already cut from turbo top-5 this same week (Jul 10) on similar grounds; better fit for turbo lane than catalyst lane given the lack of a clean date.",
+      "priceAtScreen": 8.00,
+      "topAnalystTarget": 17.50,
+      "impliedUpside": 118.75
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "NNE",
+      "lane": "core",
+      "reason": "longlist-cut: Enormous implied upside (157%, $46.25 avg target vs $18.02) but pre-revenue and no confirmed near-term dated catalyst — NRC construction permit application was submitted but has no decision date yet. Too early-stage for core-lane confidence this run; worth another look once a dated regulatory milestone exists.",
+      "priceAtScreen": 18.02,
+      "topAnalystTarget": 46.25,
+      "impliedUpside": 156.7
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "RCAT",
+      "lane": "turbo",
+      "reason": "longlist-cut: Median analyst target $21 (highest $25, lowest $20) vs price $10.13 = only ~107% upside — well under the 200-300% moonshot floor. This is the same ticker central to backlog #33 (turbo-list picked it upside-first on Jun 26 while turbo-compare scored it near-zero survival-first) — today it's cut on upside alone, not survival, since the analyst-target gap has closed since Jun. Also carries a real survival profile (under 1yr runway + $300M shelf) that would need the ⚠️ SURVIVAL: disclosure if ever re-included.",
+      "priceAtScreen": 10.13,
+      "topAnalystTarget": 21,
+      "impliedUpside": 107.3
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "ACHR",
+      "lane": "turbo",
+      "reason": "longlist-cut: Consensus average target $10.61 (9 analysts) vs price $4.55 = ~133% upside — real but under the 200% floor. High target ($18, +271%) exists but is a single outlier, not a credible base for the gate.",
+      "priceAtScreen": 4.55,
+      "topAnalystTarget": 10.61,
+      "impliedUpside": 133.2
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "RDW",
+      "lane": "turbo",
+      "reason": "longlist-cut: Consensus average target $15.71-17.60 vs price $9.59 = only ~64-84% upside, and analyst dispersion is bearish-skewed (BofA $6, Cantor $9 — both at or below current price). Jefferies' $24 high target alone would clear 200%+ territory but isn't representative of the broader coverage.",
+      "priceAtScreen": 9.59,
+      "topAnalystTarget": 15.71,
+      "impliedUpside": 63.8
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "BKSY",
+      "lane": "turbo",
+      "reason": "longlist-cut: 10-analyst median target $26.00 vs price $26.07 = essentially 0% implied upside — the stock has already run to consensus. A separately-cited $36.50 'current price target' figure would clear the gate but isn't corroborated by the broader analyst median.",
+      "priceAtScreen": 26.07,
+      "topAnalystTarget": 26,
+      "impliedUpside": -0.3
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "POET",
+      "lane": "turbo",
+      "reason": "longlist-cut: 4-analyst median target $17.50 vs price $8.00 = ~119% upside — real but under the 200% floor. Also carries real headwinds (PFIC class-action litigation, Celestial AI NDA-breach suit, $8.8M/quarter cash burn) that would need disclosure if ever re-included.",
+      "priceAtScreen": 8.00,
+      "topAnalystTarget": 17.50,
+      "impliedUpside": 118.75
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "QUBT",
+      "lane": "turbo",
+      "reason": "longlist-cut: Target ~$17.50 vs price $8.00 = ~119% upside — still short of the moonshot floor, consistent with the Jul 10 disqualification (then ~181% on a 3-month forecast basis, also under the floor). No single dated catalyst identified this run either — ongoing contract/acquisition momentum rather than a scheduled event.",
+      "priceAtScreen": 8.00,
+      "topAnalystTarget": 17.50,
+      "impliedUpside": 118.75
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "RGTI",
+      "lane": "turbo",
+      "reason": "longlist-cut: No material change found since the Jul 10 disqualification (~37% upside then) — not re-researched in full this run given the gap to the 200% floor was already wide and no news suggested a shift. Carrying forward the prior figures.",
+      "priceAtScreen": 21.28,
+      "topAnalystTarget": 29.24,
+      "impliedUpside": 37.4
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "NNE",
+      "lane": "turbo",
+      "reason": "longlist-cut: Same ticker cut from the core lane today on timing grounds (no dated catalyst) — for turbo specifically, avg target $46.25 vs price $18.02 = ~157% upside, which doesn't clear the 200-300% moonshot floor either. Pre-revenue nuclear-fuel-logistics name; worth revisiting once a dated regulatory milestone exists.",
+      "priceAtScreen": 18.02,
+      "topAnalystTarget": 46.25,
+      "impliedUpside": 156.7
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "SLI",
+      "lane": "turbo",
+      "reason": "longlist-cut: Consensus target ~$5.16-5.25 vs price $2.46 = ~76-113% upside — real (DOE $225M grant finalized, FID targeted 2026) but well under the 200% floor. A credible longer-dated re-rate story, not a near-term moonshot.",
+      "priceAtScreen": 2.46,
+      "topAnalystTarget": 5.16,
+      "impliedUpside": 109.8
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "LUNR",
+      "lane": "turbo",
+      "reason": "longlist-cut: Considered for turbo despite already being an active core-lane pick — 16-analyst average target $41.92 vs price $15.15 = ~169% upside, under the 200% floor on a broad-consensus basis (a single Roth Capital target of $75, +303%, is an outlier not representative of the wider 9-16 analyst coverage). Already has a core-lane thesis; not duplicated into turbo this run.",
+      "priceAtScreen": 15.15,
+      "topAnalystTarget": 41.92,
+      "impliedUpside": 169.2
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "BTQ",
+      "lane": "turbo",
+      "reason": "longlist-cut: Only 1 analyst covers this name, target $10 vs price $3.53 = ~183% upside — close to the floor but a single-analyst target is too thin a sample to treat as a real consensus gate-clear. Real quantum-safe-blockchain narrative (South Korea stablecoin pilot validation) but insufficient coverage depth this run.",
+      "priceAtScreen": 3.53,
+      "topAnalystTarget": 10,
+      "impliedUpside": 183.3
     }
   ]
 }

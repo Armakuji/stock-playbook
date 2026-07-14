@@ -73,7 +73,13 @@ Fund JSON = standard `StockReport` with these specifics:
 ## Step 1 — Research before writing (fire BEFORE any JSON)
 
 For each candidate, search and verify:
-1. **Price + market cap + 52-week range**
+1. **Price + market cap + 52-week range** — read `web/data/live-prices.json` **first**: if the
+   ticker is present and its `asOf` is **≤ 12 hours old**, use `prices[TICKER].price`/`changePct`
+   as the authoritative current price/today's change % — no self-fetch needed (same convention
+   `catalyst-compare/SKILL.md` and `stock-report/SKILL.md` use for their live-price step). If the
+   ticker is missing from the cache or `asOf` is older than 12h, fetch it fresh via WebSearch as
+   today and note in your reasoning that the price was self-fetched. Either way, still search live
+   for market cap and the 52-week range — the cache only covers current price/change%.
 2. **Quality** — moat durability, gross/operating margin trend, free-cash-flow strength,
    debt / balance-sheet health. These drive `qualityScore` (0–5 each).
 3. **Valuation** — fair-value estimate (DCF and/or forward P/E vs its own history and peers).

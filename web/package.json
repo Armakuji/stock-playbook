@@ -9,7 +9,8 @@
     "lint": "eslint",
     "backtest:fetch": "node ../scripts/fetch-backtest-prices.mjs && npm run feedback:build",
     "feedback:build": "node ../scripts/build-skill-feedback.mjs",
-    "validate": "node ../scripts/validate-reports.mjs"
+    "validate": "node ../scripts/validate-reports.mjs",
+    "prices:fetch": "node ../scripts/fetch-live-prices.mjs"
   },
   "dependencies": {
     "next": "16.2.9",

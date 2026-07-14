@@ -1,0 +1,200 @@
+{
+  "ticker": "OKLO",
+  "companyName": "Oklo Inc.",
+  "companyDescription": "Advanced fission / SMR developer · Aurora powerhouse + Groves isotope test reactor · DOE Reactor Pilot Program fast-track · pre-revenue, targeting first criticality July 2026",
+  "exchange": "NYSE",
+  "generatedAt": "2026-07-14T20:00:00.000Z",
+  "price": 48.96,
+  "priceChange": 0.35,
+  "priceNote": "Self-fetched today — not yet in live-prices.json cache (new pick this run). Trading near its 52-week low ($44.88) after a 31% YTD slide, largely on DOE's $17.5B large-reactor loan program spooking SMR investors, not on Oklo-specific news.",
+  "marketCap": "$8.5B",
+  "sector": "Energy / Advanced Nuclear (SMR)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Speculative",
+  "score": 68,
+  "summary": "Oklo's Groves isotope test reactor cleared its final DOE safety review (Documented Safety Analysis approved Jul 1, 2026) and is targeting first criticality — the reactor's first self-sustaining nuclear chain reaction — sometime this month. That's a genuine, near-term, company-specific binary milestone, distinct from the sector-wide DOE large-reactor loan news that dragged the stock down 31% YTD and put it right at its 52-week low. Consensus analyst target ~$86 implies ~76% upside from here, though Guggenheim's Hold-rated $54 target is a real, more conservative counterpoint worth weighing. Pre-revenue and volatile — this is a speculative binary-catalyst play, not a core holding.",
+  "catalysts": [
+    {
+      "icon": "⚛️",
+      "name": "Groves Reactor First Criticality",
+      "description": "Oklo's Groves isotope test reactor in Texas cleared DOE's Documented Safety Analysis on Jul 1, 2026 — the last major documentation gate before startup. Remaining steps are DOE's readiness review and startup approval, then fuel load and first criticality (the reactor achieving a controlled, self-sustaining chain reaction for the first time). Company has stated an internal target of achieving this within July 2026, though the exact day is not yet public.",
+      "urgencyLabel": "~2 WEEKS (target)",
+      "dateBadge": "~Jul 2026",
+      "catalystDate": "2026-07-31",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📄",
+      "name": "DOE Readiness Review + Startup Approval",
+      "description": "The remaining procedural gates between the Jul 1 DSA approval and actual criticality — DOE readiness review, then formal startup approval to load fuel. Fast-tracked under the Trump administration's Energy Reactor Pilot Program.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🏗️",
+      "name": "Aurora Powerhouse — Commercial Power Target",
+      "description": "Oklo's actual revenue-generating reactor (Idaho National Laboratory) is targeting commercial power by late 2027. Groves is a smaller isotope test reactor, not Aurora — investors conflating the two is a real risk (see risks).",
+      "urgencyLabel": "LATE 2027",
+      "dateBadge": "Late 2027",
+      "catalystDate": "2027-11-15",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Groves is a smaller isotope TEST reactor, not the revenue-generating Aurora powerhouse — the market may not re-rate the stock as much as bulls hope if 'first criticality' reads as a smaller symbolic step rather than a commercial inflection",
+    "DOE's new $17.5B loan program tilts toward large traditional reactors, not SMRs — this sector-wide sentiment shock (not an Oklo-specific problem) already cost the stock ~22% in June and is the main reason it's down 31% YTD near 52-week lows",
+    "Pre-revenue with real cash burn (~$73.6M FY2024 net loss) — Guggenheim's Jun 2026 Hold initiation puts a $54 target on the stock (near current price) citing EBITDA-positive not expected until 2030",
+    "High short interest — ~19.29% of float ($1.65B) — cuts both ways: a clean criticality win could trigger a squeeze, but it also signals real, funded bear conviction",
+    "Any slippage on the 'within July' criticality target (a self-imposed internal goal, not a hard regulatory deadline) would be read as a delay even without new bad news"
+  ],
+  "estimateDates": [
+    { "event": "Groves First Criticality", "dateRange": "~Jul 2026", "note": "Internal target, not a hard regulatory deadline — could slip into August", "est": "Binary: achieved / delayed", "highlight": "yellow" },
+    { "event": "Aurora Commercial Power", "dateRange": "Late 2027", "note": "The real revenue inflection point — much further out", "est": "Target: late 2027", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -25, "price": 36.72 },
+    { "label": "Base", "color": "yellow", "pct": 40, "price": 68.54 },
+    { "label": "Bull", "color": "green", "pct": 76, "price": 86.17 },
+    { "label": "Moon", "color": "purple", "pct": 120, "price": 107.71 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (24 analysts)", "target": 88.63, "rating": "Buy" },
+    { "firm": "Consensus (16 analysts, alt. source)", "target": 84.10, "rating": "Buy" },
+    { "firm": "Guggenheim (Jun 2026 initiation)", "target": 54.06, "rating": "Hold", "note": "Real bearish counterpoint — EBITDA-positive not expected until 2030" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed holds at 3.50–3.75%, but new Chair Warsh's Jun debut FOMC stripped easing-bias language and 9/18 officials now project a 2026 hike — a pre-revenue, capital-intensive name like Oklo is more exposed to a higher-for-longer path than most.",
+    "inflationNote": "Core PCE just accelerated to 3.4% YoY (May, highest since Oct 2023) — reinforces the hawkish Fed backdrop into the Jul 28-29 FOMC, which sits one week after Oklo's criticality target window.",
+    "sectorImpact": "HIGH sensitivity to risk appetite specifically — Oklo is high-beta, pre-revenue, and already down 31% YTD on rate/loan-program sentiment rather than fundamentals. A risk-off shock around FOMC week would hit this name harder than the market.",
+    "summary": "Fed risk MEDIUM-HIGH for this name specifically — the criticality catalyst is company-specific and can work regardless of the macro tape, but Oklo's pre-revenue balance sheet and recent DOE-loan-program-driven selloff show it's unusually exposed to broad risk-off sentiment into the dense Jul 28-30 FOMC/earnings/PCE week."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 48.96, "note": "Current price — already near the 52-week low ($44.88), pre-criticality setup", "timing": "Now (small)" },
+      { "label": "Entry 2", "level": 42, "rangeMax": 45, "note": "At/below 52-week low zone — best pre-catalyst R/R if the sector sentiment shock deepens further", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 38, "note": "Deep capitulation — only on a broader nuclear-sector or macro selloff", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 68.54, "pct": 40, "note": "Base — criticality achieved on schedule, modest re-rate" },
+    "tp2": { "price": 86.17, "pct": 76, "note": "Bull — clean criticality win + consensus target reached" },
+    "tp3": { "price": 107.71, "pct": 120, "note": "Moon — criticality win + DOE loan-program overhang clears + broad SMR re-rate", "moon": true },
+    "stopLoss": {
+      "tight": 42, "tightPct": -14.2, "tightNote": "Below near-term support / Entry 2 zone — thesis-neutral but tightening",
+      "hard": 36, "hardPct": -26.5, "hardNote": "Below 52-week low breach — criticality delay or fresh negative catalyst",
+      "riskReward": "5.4 : 1", "rrNote": "From Entry 2 ($43.5 mid) tight stop vs TP2", "rrWarning": "High R/R but pre-revenue and binary — small size mandatory"
+    },
+    "verdict": "SPECULATIVE — buy small ahead of the July criticality target, size up only on a dip toward the 52-week low. This is a genuine binary catalyst distinct from the sector-wide DOE loan-program overhang that crushed the stock in June.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "regulatory_approval",
+    "preRunup": "SMR-sector names typically pop on safety/regulatory milestones rather than grinding up beforehand — Oklo's own Jul 1 DSA approval and NuScale's Jun 18 Paragon safety-system contract both triggered same-day jumps rather than sustained pre-event runups.",
+    "preRunupTiming": "reaction is same-day on the news, not a multi-week runup",
+    "preRunupPct": "+5% to +13% same-day pop pattern (see comparables)",
+    "postWin": {
+      "avgPct": 20,
+      "range": "+5% to +35%",
+      "note": "Oklo's own Jul 1, 2026 DSA approval (a smaller precursor step) triggered a modest +4.92% same-day pop; NuScale's comparable Jun 18, 2026 safety-milestone contract triggered +12.67%. Actual first criticality is a bigger, more novel milestone than either precursor — no exact same-company precedent exists yet for 'first ever criticality,' so this range leans on the sector pattern plus some allowance for the larger symbolic weight of the event.",
+      "exampleDate": "Jul 2026 (Oklo) / Jun 2026 (NuScale)"
+    },
+    "postLose": {
+      "avgPct": -22,
+      "range": "-15% to -25%",
+      "note": "Oklo itself fell ~22% in June 2026 on the DOE large-reactor loan-program news — the closest real precedent for how hard this stock can drop on an adverse sector/company signal, even without an outright criticality failure.",
+      "exampleDate": "Jun 2026"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "Speculative sizing — pre-revenue, high-beta, binary near-term catalyst. 4% keeps meaningful upside exposure without over-concentrating in a name that's already demonstrated 30%+ drawdowns on sentiment alone."
+    },
+    "stopPreCatalyst": { "pct": -14, "price": 42, "note": "Below Entry 2 zone before criticality news = thesis-neutral but momentum turning" },
+    "stopPostCatalyst": { "pct": -20, "note": "If criticality is delayed past July with no new date, or DOE signals further large-reactor favoritism, exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "OKLO",
+      "event": "DOE Documented Safety Analysis Approval (Groves precursor step)",
+      "date": "Jul 2026",
+      "movePct": 5,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company precedent for a smaller regulatory milestone one step before criticality — modest same-day pop, showing the market treats incremental DOE approvals as good-but-not-explosive news."
+    },
+    {
+      "ticker": "SMR",
+      "event": "NuScale Power — Paragon safety-system contract (HIPS milestone)",
+      "date": "Jun 2026",
+      "movePct": 13,
+      "days": 1,
+      "outcome": "good",
+      "note": "Comparable SMR-sector reaction to a safety/technical milestone — real precedent for how the sector responds to derisking news, useful proxy since Oklo has never achieved criticality before."
+    },
+    {
+      "ticker": "OKLO",
+      "event": "DOE $17.5B large-reactor loan program announcement",
+      "date": "Jun 2026",
+      "movePct": -22,
+      "days": 30,
+      "outcome": "bad",
+      "note": "The main risk case realized already this cycle — shows the stock's downside sensitivity to adverse DOE/policy signals even with no change to Oklo's own technical progress."
+    }
+  ],
+  "sources": [
+    "https://www.businesswire.com/news/home/20260701843499/en/U.S.-Department-of-Energy-Approves-Final-Safety-Analysis-for-Oklo-s-Grove-Isotope-Test-Reactor-Advancing-the-Project-Toward-Operational-Authorization",
+    "https://www.benzinga.com/trading-ideas/movers/26/07/60213419/oklo-stock-rises-as-groves-reactor-clears-key-doe-safety-milestone-targeting-criticality-in-july",
+    "https://www.foreignpolicyjournal.com/2026/07/07/oklo-nyse-oklo-stock-price-tumbles-22-in-june-as-doe-loan-program-rattles-smr-investors/",
+    "https://www.fool.com/investing/2026/07/05/why-oklo-stock-slumped-22-in-june-despite-a-month/",
+    "https://247wallst.com/investing/2026/07/10/one-nuclear-energy-stock-with-a-100-upside-potential/",
+    "https://www.timothysykes.com/news/nuscale-power-corporation-smr-news-2026_06_18/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Groves isotope test reactor ของ Oklo ผ่าน DOE safety review รอบสุดท้ายแล้ว (Documented Safety Analysis อนุมัติ 1 ก.ค. 2026) และตั้งเป้า first criticality (ปฏิกิริยาลูกโซ่นิวเคลียร์ครั้งแรก) ภายในเดือนนี้ — เป็น binary catalyst เฉพาะตัวบริษัทจริง ต่างจากข่าว DOE loan program ที่ฉุดหุ้นลง 31% YTD จนใกล้ 52-week low Consensus target ~$86 = upside ~76% แต่ Guggenheim ให้ Hold ที่ $54 เป็นมุมมองระมัดระวังที่ควรฟังไว้ด้วย Pre-revenue และผันผวนสูง — เป็น speculative binary play ไม่ใช่ core holding",
+      "priceNote": "ราคาใกล้ 52-week low ($44.88) หลังร่วง 31% YTD ส่วนใหญ่จากข่าว DOE loan program ไม่ใช่ปัญหาเฉพาะตัว Oklo",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "Groves Reactor First Criticality", "description": "เป้าหมายภายในเดือนนี้ — ปฏิกิริยาลูกโซ่นิวเคลียร์ครั้งแรกของเตาปฏิกรณ์ Groves หลังผ่าน DOE safety review แล้ว" },
+        { "name": "DOE Readiness Review + Startup Approval", "description": "ขั้นตอนที่เหลือก่อนถึง criticality — fast-track ภายใต้ Energy Reactor Pilot Program" },
+        { "name": "Aurora Powerhouse — เป้า Commercial Power", "description": "เตาปฏิกรณ์ที่สร้างรายได้จริงของ Oklo ตั้งเป้าปลายปี 2027 — คนละตัวกับ Groves" }
+      ],
+      "risks": [
+        "Groves เป็นแค่ test reactor เล็ก ไม่ใช่ Aurora ที่สร้างรายได้จริง — ตลาดอาจไม่ re-rate มากเท่าที่ bull หวัง",
+        "DOE loan program $17.5B เอียงไปทาง large reactor ไม่ใช่ SMR — sentiment shock ทั้ง sector ที่ทำให้หุ้นร่วง 22% มิ.ย.",
+        "Pre-revenue เผาเงินจริง (~$73.6M ขาดทุน FY2024) — Guggenheim ให้ Hold ที่ $54 ใกล้ราคาปัจจุบัน",
+        "Short interest สูง ~19.29% ของ float — เป็นได้ทั้ง squeeze risk และสัญญาณ bear conviction จริง",
+        "เป้า 'ภายในเดือนก.ค.' เป็นเป้าภายในบริษัท ไม่ใช่ deadline ทางการ — เลื่อนไปส.ค.ได้โดยไม่มีข่าวร้ายใหม่"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed hold 3.50-3.75% แต่ Warsh เอียง hawkish — หุ้น pre-revenue แบบนี้ sensitive กับ rate สูงต่อเนื่องมากกว่าตลาดทั่วไป",
+        "inflationNote": "Core PCE เร่งเป็น 3.4% YoY (พ.ค.) หนุนภาพ hawkish ก่อน FOMC 28-29 ก.ค. ซึ่งมาหลัง window criticality แค่สัปดาห์เดียว",
+        "sectorImpact": "Sensitivity สูงต่อ risk appetite — Oklo high-beta pre-revenue ร่วงมาแล้ว 31% YTD จาก sentiment ไม่ใช่ fundamental",
+        "summary": "ความเสี่ยง Fed ปานกลาง-สูงเฉพาะตัวหุ้นนี้ — catalyst เฉพาะบริษัททำงานได้ไม่ว่า macro จะเป็นอย่างไร แต่ balance sheet pre-revenue ทำให้ expose กับ risk-off สูงกว่าปกติเข้าสัปดาห์ FOMC ที่แน่นมาก"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — เข้าเล็กก่อน criticality เดือนนี้ เพิ่ม size เฉพาะตอนย่อใกล้ 52-week low นี่คือ binary catalyst เฉพาะตัวบริษัท ต่างจาก DOE loan overhang ที่ทุบหุ้นมิ.ย.",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ใกล้ 52-week low แล้ว pre-criticality setup", "timing": "ตอนนี้ (เล็ก)" },
+          { "note": "โซน 52-week low หรือต่ำกว่า — R/R ดีที่สุดถ้า sentiment shock ลึกกว่านี้", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงหนัก — เฉพาะ sector หรือ macro selloff ใหญ่", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — criticality สำเร็จตามกำหนด re-rate ปานกลาง" },
+        "tp2": { "note": "Bull — criticality สำเร็จชัดเจน + แตะ consensus target" },
+        "tp3": { "note": "Moon — criticality สำเร็จ + DOE loan overhang คลี่คลาย + SMR sector re-rate", "moon": true },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่าโซน Entry 2 — thesis ยังไม่พัง แต่ momentum เปลี่ยน",
+          "hardNote": "หลุด 52-week low = criticality delay หรือข่าวลบใหม่",
+          "rrNote": "จาก Entry 2 ($43.5 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R สูงแต่ pre-revenue และ binary — size เล็กเท่านั้น"
+        }
+      },
+      "estimateDates": [
+        { "event": "Groves First Criticality", "note": "เป้าภายในบริษัท ไม่ใช่ deadline ทางการ — เลื่อนไปส.ค.ได้" },
+        { "event": "Aurora Commercial Power", "note": "จุดเปลี่ยนรายได้จริง — ไกลกว่ามาก ปลายปี 2027" }
+      ]
+    }
+  }
+}

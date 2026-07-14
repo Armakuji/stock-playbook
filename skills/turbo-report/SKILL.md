@@ -94,12 +94,21 @@ If the stock fails all 3, say: *"[TICKER] doesn't fit the Turbo profile — try 
 ## Step 2: Research (fire this before writing anything)
 
 Search for:
-1. **Price + market cap** — current price, 52-week range, market cap
+1. **Price + market cap** — read `web/data/live-prices.json` **first**: if the ticker is present and
+   its `asOf` is **≤ 12 hours old**, use `prices[TICKER].price`/`changePct` as the authoritative
+   current price/today's change % — no self-fetch needed (same convention `catalyst-compare/SKILL.md`
+   and `stock-report/SKILL.md` use for their live-price step). If the ticker is missing from the
+   cache or `asOf` is older than 12h, fetch it fresh via WebSearch as today and note in your
+   reasoning that the price was self-fetched. Either way, still search live for the 52-week range
+   and market cap — the cache only covers current price/change%.
 2. **Moon scenario research** — search `"[TICKER] bull case 2026 analyst target"` and `"[TICKER] 5-year upside potential"`
 3. **Binary catalyst** — exact date/event that triggers the 300%+ move
 4. **Comparable 10x cases** — find 2–3 real stocks that made 300–1000%+ moves on a similar catalyst (mandatory — the `comparableCases[]` array needs real examples)
 5. **TAM / addressable market** — how big is the market if the company wins?
 6. **Risk of zero** — what is the realistic downside scenario?
+7. **Survival check (cash runway + shelf/ATM)** — search `"[TICKER] cash runway burn rate 2026"` and
+   `"[TICKER] shelf registration ATM offering"` (recent 10-Q / press release). If runway **< 12
+   months** AND an active shelf/ATM exists → the report must carry a survival flag (see Step 3).
 
 Use WebSearch queries like:
 - `"[TICKER] stock 2026 analyst price target moonshot"`
@@ -125,6 +134,7 @@ Before writing JSON, decide these values explicitly:
 | Position size in summary | **2–5% max** — always state this |
 | `catalystSpot.spotSizing.pct` | 2–5 only |
 | `factorTags` | set explicitly from `ai_semi` / `ai_software` / `space_launch` / `quantum` / `ev_auto` / `long_duration_rate` / `single_customer` only when auto-derive (`web/lib/factors.ts`) would miss or mislabel this pick; otherwise omit and let it derive |
+| `risks[0]` (survival flag) | If the Step 2 survival check trips (runway < 12 months **and** an active shelf/ATM), prepend a risk to `risks[]` starting with `"⚠️ SURVIVAL:"` followed by the runway/shelf findings (mirror it in `i18n.th.risks[0]`). This prefix is a convention `turbo-compare` greps for — do NOT add a new schema field to `web/lib/types.ts`. |
 
 ---
 

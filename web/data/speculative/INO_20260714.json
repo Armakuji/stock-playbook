@@ -1,0 +1,185 @@
+{
+  "ticker": "INO",
+  "companyName": "Inovio Pharmaceuticals, Inc.",
+  "companyDescription": "DNA medicine biotech · INO-3107 for HPV-related recurrent respiratory papillomatosis (RRP) · PDUFA Oct 2026, FDA review progressing with no new issues raised · deep penny-stock-territory valuation",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-14T22:00:00.000Z",
+  "price": 1.37,
+  "priceChange": -2.84,
+  "priceNote": "Down 2.84% today (self-fetched — not yet in live-prices.json cache, new pick this run). Down 44.44% over the past 3 months and trading near the 52-week low of $1.04. Tiny market cap ($97.49M) — genuinely deep speculative territory.",
+  "marketCap": "$0.1B",
+  "sector": "Healthcare / Biotechnology (DNA Medicine)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 55,
+  "summary": "Inovio's lead candidate INO-3107 (DNA medicine for HPV-related recurrent respiratory papillomatosis, a rare and debilitating throat condition with no approved systemic treatment) remains on track for an October 2026 PDUFA date, with FDA review progressing and no new issues raised as of the latest update. Analyst targets show real dispersion — a 5-analyst Buy-consensus average of $8.80 (542% upside from today's crashed price) alongside a more conservative 2-analyst Hold view at $4.50 (228% upside). ⚠️ SURVIVAL: cash runway extends only into Q1 2027 (roughly 6-9 months from today) and the company holds an effective $300M shelf registration it has already drawn on this year (a $17.5M underwritten offering in April 2026). Included in top 5 despite the flag because the PDUFA date is an unusually close, real binary regulatory event for a stock this cheap — see justification below.",
+  "catalysts": [
+    {
+      "icon": "💊",
+      "name": "INO-3107 PDUFA Decision",
+      "description": "FDA target action date for INO-3107 in RRP. Review has progressed with no new issues raised as of the latest company update — a genuinely de-risked-relative-to-typical-biotech regulatory setup, though nothing is final until the decision itself.",
+      "urgencyLabel": "~11 WEEKS",
+      "dateBadge": "Oct 2026",
+      "catalystDate": "2026-10-15",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "🧪",
+      "name": "Pipeline Data Presentations (ASGCT/ASCO)",
+      "description": "R&D data presentations for INO-5401 and VGX-3100 rejuvenation efforts add secondary, less-binary catalysts alongside the main PDUFA story.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "⚠️ SURVIVAL: cash runway extends only into Q1 2027 (~6-9 months from today) after a $16M equity raise, and the company holds an effective $300M shelf registration that it already drew on in April 2026 ($17.5M underwritten offering with warrants at $1.40/share). Note: the company's specific ATM sales-agreement prospectus was separately suspended — the dilution risk here is via the broader shelf/underwritten-offering route, not an active daily ATM.",
+    "This is a genuinely tiny, deep-penny-stock-territory name ($97.49M market cap, $1.37 share price) — extreme volatility is structural, not incidental; the stock is already down 44.44% over 3 months",
+    "Analyst target dispersion is stark — 5 analysts average $8.80 (Buy) vs. 2 analysts at $4.50 (Hold) — the Hold view exists for real reasons (financing overhang, execution history) and shouldn't be dismissed just because the Buy average is more exciting",
+    "Even a clean PDUFA approval doesn't automatically solve the financing problem — Inovio would still need a commercial launch partner or additional capital to actually monetize INO-3107, and the market may discount this at the moment of approval",
+    "RRP is a rare condition — even with approval, peak sales estimates are modest in absolute dollar terms, meaning the re-rate ceiling is real but not unlimited the way a broader-indication drug's would be"
+  ],
+  "estimateDates": [
+    { "event": "INO-3107 PDUFA Decision", "dateRange": "Oct 2026", "note": "FDA review progressing with no new issues raised as of latest update — the defining near-term catalyst", "est": "Binary: approval / CRL / extension", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -60, "price": 0.55 },
+    { "label": "Base", "color": "yellow", "pct": 130, "price": 3.15 },
+    { "label": "Bull", "color": "green", "pct": 228, "price": 4.49 },
+    { "label": "Moon", "color": "purple", "pct": 542, "price": 8.80 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (5 analysts, Buy)", "target": 8.80, "rating": "Buy", "note": "Moon-case reference — real dispersion from the more conservative Hold view below" },
+    { "firm": "Consensus (2 analysts, Hold)", "target": 4.50, "rating": "Hold", "note": "More conservative counterpoint, as of mid-May 2026 — worth weighing seriously" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Fed at 3.50-3.75%; a binary FDA-decision biotech valuation is driven by regulatory outcome, not the rate cycle. INO's thesis is entirely PDUFA-driven.",
+    "inflationNote": "Core PCE at 3.4% YoY doesn't materially affect a pre-commercial biotech's near-term trajectory.",
+    "sectorImpact": "Small-cap/micro-cap biotech has shown real recent weakness — a genuinely risk-off macro tape could compound the existing financing overhang by making any future capital raise more expensive or dilutive.",
+    "summary": "Fed risk LOW on the fundamental thesis (PDUFA-outcome-driven), but the macro backdrop matters more than usual here because of the live financing need — a hawkish, risk-off tape raises the cost of the capital this company will likely need regardless of the PDUFA outcome."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 1.37, "note": "ค่าขนม starter position — tiny size only, survival risk is real and the PDUFA is 11 weeks out", "timing": "Now (small)" },
+      { "label": "Entry 2", "level": 1.10, "rangeMax": 1.20, "note": "Near 52-week low zone — better R/R, but only add if financing news is stable", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 0.90, "note": "Deep dip — verify no financing crisis before touching", "timing": "Deep dip (verify financing news first)" }
+    ],
+    "tp1": { "price": 3.15, "pct": 130, "note": "Base — PDUFA approaches with no new issues, market re-prices approval odds up" },
+    "tp2": { "price": 4.49, "pct": 228, "note": "Bull — clean approval, conservative Hold-analyst target reached" },
+    "tp3": { "price": 8.80, "pct": 542, "note": "Moon — clean approval + partnership/financing resolved, bullish consensus target reached", "moon": true },
+    "stopLoss": {
+      "tight": 1.10, "tightPct": -19.7, "tightNote": "Below Entry 2 zone — financing or regulatory concerns building",
+      "hard": 0.80, "hardPct": -41.6, "hardNote": "Near-crisis pricing — thesis-level breach",
+      "riskReward": "8.5 : 1", "rrNote": "From Entry 2 ($1.15 mid) tight stop vs TP2", "rrWarning": "ค่าขนม — genuine binary FDA + financing risk stacked together. Size ≤2-3% of portfolio."
+    },
+    "verdict": "ค่าขนม — a real, close binary FDA decision (Oct 2026 PDUFA, no new issues raised) on a genuinely cheap, tiny-cap stock, but stacked with a real financing overhang. Size very small and treat as a lottery ticket, not a core speculative holding.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "Biotech names heading into a PDUFA with a clean review history (no new issues raised) sometimes see accumulation in the weeks before, though INO's own recent pattern has been a steady decline rather than a runup, reflecting the financing overhang dominating sentiment.",
+    "preRunupTiming": "typically 2-4 weeks before a PDUFA, though INO's financing overhang has suppressed this pattern so far",
+    "preRunupPct": "muted so far given the financing overhang — no clean same-company precedent yet for this specific PDUFA cycle",
+    "postWin": {
+      "avgPct": 60,
+      "range": "+30% to +100%+",
+      "note": "A clean FDA approval for a company this cheap, with a real (if narrow) commercial indication and no other approved systemic treatment, would likely trigger a large re-rate — sized using the standard small/micro-cap biotech approval pattern given no exact same-company PDUFA precedent exists yet.",
+      "exampleDate": "sector pattern — no same-company PDUFA precedent yet"
+    },
+    "postLose": {
+      "avgPct": -50,
+      "range": "-35% to -65%",
+      "note": "A CRL for a company already this capital-constrained would likely trigger a severe reaction, compounding the existing financing overhang — sized toward the higher end of typical small-cap biotech CRL reactions given the stacked risk.",
+      "exampleDate": "sector pattern"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "ค่าขนม sizing at the low end — genuinely binary FDA decision stacked with a real, disclosed financing overhang. 2% keeps meaningful lottery-ticket upside exposure without over-risking on a name this fragile."
+    },
+    "stopPreCatalyst": { "pct": -20, "price": 1.10, "note": "หลุด $1.10 = ตลาดเริ่มกังวล financing หรือ PDUFA มากขึ้น" },
+    "stopPostCatalyst": { "pct": -35, "note": "ถ้า FDA ออก CRL หรือ delay PDUFA — ออกทันที ไม่เฉลี่ยลง" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "CAPR",
+      "event": "First Complete Response Letter for Deramiocel",
+      "date": "Jul 2025",
+      "movePct": -30,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Comparable small-cap biotech reaction to an FDA rejection — relevant downside-magnitude proxy given INO has no same-company PDUFA precedent yet."
+    },
+    {
+      "ticker": "SRPT",
+      "event": "Elevidys FDA Approval — First DMD Gene Therapy",
+      "date": "Jun 2023",
+      "movePct": 30,
+      "days": 1,
+      "outcome": "good",
+      "note": "A rare-disease-indication approval-day comp — useful as a conservative floor for what a clean INO-3107 approval reaction could look like, before accounting for INO's much smaller starting valuation amplifying the percentage move."
+    },
+    {
+      "ticker": "FOLD",
+      "event": "FDA Orphan Drug Pathway Confirmation for Fabry Disease",
+      "date": "Jun 2023",
+      "movePct": 54,
+      "days": 1,
+      "outcome": "good",
+      "note": "Comparable rare-disease orphan-pathway reaction — another real data point for the range of outcomes a positive regulatory surprise can produce in this space."
+    }
+  ],
+  "sources": [
+    "https://ir.inovio.com/news-releases/news-releases-details/2026/INOVIO-Announces-Proposed-Public-Offering/default.aspx",
+    "https://www.stocktitan.net/news/INO/inovio-announces-pricing-of-17-5-million-public-126t69md0v57.html",
+    "https://www.stocktitan.net/sec-filings/INO/s-3-inovio-pharmaceuticals-inc-shelf-registration-statement-a2029312aedf.html",
+    "https://www.timothysykes.com/news/inoviopharmaceuticalsinc-ino-news-2026_05_09/",
+    "https://www.investing.com/news/sec-filings/inovio-pharmaceuticals-suspends-atthemarket-offering-prospectus-93CH-4595044"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "INO-3107 (DNA medicine สำหรับ HPV-related recurrent respiratory papillomatosis — โรคคอหายากไม่มี systemic treatment อนุมัติแล้ว) ยังอยู่ track PDUFA ต.ค. 2026 FDA review คืบหน้าไม่มีปัญหาใหม่ Target นักวิเคราะห์กระจายจริง — 5 คน Buy เฉลี่ย $8.80 (upside 542%) กับ 2 คน Hold ระมัดระวังกว่าที่ $4.50 (upside 228%) ⚠️ SURVIVAL: cash runway ถึงแค่ Q1 2027 (~6-9 เดือน) มี shelf $300M ที่ effective แล้วและเคยดึงใช้ปีนี้ ($17.5M เม.ย. 2026) ติด top 5 ทั้งที่มี flag เพราะ PDUFA เป็น binary event ทางกฎหมายที่ใกล้และจริงสำหรับหุ้นราคาถูกขนาดนี้",
+      "priceNote": "ร่วง 2.84% วันนี้ (self-fetched — ไม่อยู่ใน live-prices cache ตัวใหม่รอบนี้) ร่วง 44.44% ใน 3 เดือน ใกล้ 52-week low $1.04 market cap เล็กจริง ($97.49M)",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "INO-3107 PDUFA Decision", "description": "FDA target action date สำหรับ INO-3107 ใน RRP — review คืบหน้าไม่มีปัญหาใหม่ ณ อัปเดตล่าสุด" },
+        { "name": "Pipeline Data Presentations (ASGCT/ASCO)", "description": "ข้อมูล INO-5401 และ VGX-3100 rejuvenation — catalyst รองเสริมนอกเหนือ PDUFA หลัก" }
+      ],
+      "risks": [
+        "⚠️ SURVIVAL: cash runway ถึงแค่ Q1 2027 (~6-9 เดือน) หลัง equity raise $16M มี shelf $300M ที่ effective และเคยดึงใช้ปีนี้ ($17.5M เม.ย. 2026 ที่ $1.40/หุ้น) — ATM prospectus เฉพาะทางถูกระงับแยกต่างหาก dilution risk มาทาง shelf/underwritten offering ไม่ใช่ ATM รายวัน",
+        "เป็น micro-cap ราคาต่ำมากจริง ($97.49M market cap, $1.37/หุ้น) — ผันผวนสุดขั้วเป็นธรรมชาติของหุ้น ไม่ใช่เรื่องบังเอิญ ร่วงมาแล้ว 44.44% ใน 3 เดือน",
+        "Target กระจายชัดเจน — 5 คน Buy เฉลี่ย $8.80 vs 2 คน Hold $4.50 — มุมมอง Hold มีเหตุผลจริง (financing overhang, ประวัติ execution) ไม่ควรมองข้าม",
+        "แม้ approve สะอาดก็ไม่แก้ปัญหา financing อัตโนมัติ — ยังต้องหา commercial partner หรือทุนเพิ่มจริงเพื่อ monetize INO-3107",
+        "RRP เป็นโรคหายาก — แม้ approve peak sales estimate ยังไม่ใหญ่มากในมูลค่าสัมบูรณ์ ceiling ของ re-rate มีจริงแต่ไม่ไร้ขีดจำกัด"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed 3.50-3.75% — thesis ขึ้นกับผล FDA ไม่ใช่ rate cycle",
+        "inflationNote": "Core PCE 3.4% ไม่กระทบ trajectory ระยะสั้นของ biotech pre-commercial แบบนี้",
+        "sectorImpact": "Small/micro-cap biotech อ่อนแอจริง — macro risk-off อาจซ้ำเติม financing overhang ที่มีอยู่แล้ว",
+        "summary": "ความเสี่ยง Fed ต่ำในแง่ fundamental (ขึ้นกับ PDUFA) แต่ macro สำคัญกว่าปกติเพราะมี financing need จริง — tape hawkish/risk-off เพิ่มต้นทุนทุนที่บริษัทน่าจะต้องการไม่ว่า PDUFA จะออกทางไหน"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม — binary FDA decision ที่ใกล้และจริง (PDUFA ต.ค. 2026 ไม่มีปัญหาใหม่) บนหุ้นราคาถูกจริง แต่ซ้อนกับ financing overhang จริง size เล็กมากและมองเป็น lottery ticket ไม่ใช่ core speculative holding",
+        "entryLevels": [
+          { "note": "ค่าขนม starter position เล็กมาก — survival risk จริง PDUFA อีก 11 สัปดาห์", "timing": "ตอนนี้ (เล็ก)" },
+          { "note": "โซนใกล้ 52-week low — R/R ดีกว่า แต่เพิ่มเฉพาะถ้าข่าว financing นิ่ง", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงลึก — ตรวจว่าไม่มีวิกฤต financing ก่อน", "timing": "Deep dip (ตรวจข่าว financing ก่อน)" }
+        ],
+        "tp1": { "note": "Base — ใกล้ PDUFA ไม่มีปัญหาใหม่ ตลาด re-price โอกาส approve ขึ้น" },
+        "tp2": { "note": "Bull — approve สะอาด แตะ target ฝั่ง Hold ที่ระมัดระวัง" },
+        "tp3": { "note": "Moon — approve สะอาด + financing/partnership คลี่คลาย แตะ consensus ฝั่ง bullish", "moon": true },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่าโซน Entry 2 = ความกังวล financing หรือ PDUFA เพิ่มขึ้น",
+          "hardNote": "ใกล้ราคาวิกฤต = thesis พัง",
+          "rrNote": "จาก Entry 2 ($1.15 กลาง) stop แคบ vs TP2",
+          "rrWarning": "ค่าขนม — binary FDA + financing risk ซ้อนกันจริง size ≤2-3%"
+        }
+      },
+      "estimateDates": [
+        { "event": "INO-3107 PDUFA Decision", "note": "FDA review คืบหน้าไม่มีปัญหาใหม่ ณ อัปเดตล่าสุด — catalyst ใกล้สุดที่กำหนด thesis" }
+      ]
+    }
+  }
+}
