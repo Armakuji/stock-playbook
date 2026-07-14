@@ -1,0 +1,198 @@
+{
+  "ticker": "CRML",
+  "companyName": "Critical Metals Corp.",
+  "companyDescription": "Rare earth + lithium developer · 92.5% owner of Tanbreez (one of the largest known rare-earth resources globally, Greenland) + Wolfsberg Lithium Project (Austria, BMW offtake) · 10,000m Tanbreez drill campaign underway",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-14T22:00:00.000Z",
+  "price": 7.32,
+  "priceChange": -6.14,
+  "priceNote": "Down 6.14% today (self-fetched — not yet in live-prices.json cache, new pick this run). Down sharply from the 52-week high of $32.15 to near the 52-week low of $2.83 — an 11x range in one year shows how violently this name can move in either direction.",
+  "marketCap": "$1.1B",
+  "sector": "Materials / Rare Earth & Critical Minerals Mining",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 57,
+  "summary": "Critical Metals raised its ownership of the Tanbreez rare-earth project in Greenland — one of the largest known rare-earth resources globally — to 92.5%, and already has a 15-year offtake agreement with REalloys for 15% of Phase 1 production. A 10,000-meter diamond drilling campaign is underway (launched Jun 17, 2026), with assay results the near-term catalyst. Consensus analyst targets ($13.50-$20, avg $18.33) imply 146-169% upside from the crashed price — below the traditional 200% floor on a strict consensus basis, but the stock's own demonstrated 52-week range ($2.83-$32.15) shows a credible path to 200%+ if drilling results are strong, which is the basis for including it here. ⚠️ SURVIVAL: cash burn is real (pre-raise runway estimated at just 4 months on free-cash-flow terms) and the company has filed three separate shelf registrations in 2026 (Feb, Mar, May) — genuine, active dilution machinery, even after large recent capital raises.",
+  "catalysts": [
+    {
+      "icon": "⛏️",
+      "name": "Tanbreez 10,000m Drilling Campaign — Assay Results",
+      "description": "Diamond drilling campaign launched Jun 17, 2026 at the wholly-controlled Tanbreez Heavy REE Project. Prior assay results in Feb 2026 were already the strongest to date from the Hill Deposit — further strong results would reinforce the resource-scale thesis ahead of a late-2026 production target.",
+      "urgencyLabel": "ONGOING — RESULTS PENDING",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-09-15",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📜",
+      "name": "REalloys 15-Year Offtake Agreement Execution",
+      "description": "Definitive 15-year agreement for 15% of Tanbreez Phase 1 rare-earth concentrate production, announced alongside the May 2026 shelf filing — a real commercial validation, not just a resource story.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🏭",
+      "name": "Targeted Late-2026 Production Start",
+      "description": "Company still has a complex build to deliver in a remote Greenland location before targeted late-2026 production — the ultimate proof point for the whole thesis.",
+      "urgencyLabel": "LATE 2026",
+      "dateBadge": "Late 2026",
+      "catalystDate": "2026-11-15",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "⚠️ SURVIVAL: cash burn is genuinely high — one estimate put pre-raise runway at just 4 months on a free-cash-flow basis. The company has raised significant capital since (a $60M private placement in Apr 2026, plus $83.1M and $32.06M from share sales in Jan/Feb 2026), but has also filed THREE separate shelf registrations in 2026 alone (Feb $25.17M, Mar $25.16M, May $221.99M) — active, recurring dilution machinery is a real, ongoing feature of this stock, not a one-off event.",
+    "Consensus analyst upside (146-169%) is below the traditional 200% turbo floor on a strict basis — inclusion here rests on the stock's own demonstrated capacity to move far beyond analyst targets (its 52-week high was $32.15, more than 4x today's price), not on the current consensus number itself",
+    "Pre-revenue in any meaningful sense — still has to deliver a complex mine/refining build in a remote Greenland location before the targeted late-2026 production date",
+    "Insider share sales alongside the recent shelf filings have raised real questions about alignment, even as the underlying rare-earth assay results have been genuinely strong",
+    "Extreme historical volatility (52-week range $2.83-$32.15, an 11x spread) means both the upside and downside cases are real and can happen fast — this is not a stock for anyone uncomfortable with severe drawdowns"
+  ],
+  "estimateDates": [
+    { "event": "Tanbreez Drilling Assay Results", "dateRange": "H2 2026", "note": "10,000m campaign underway — results are the near-term re-rate catalyst", "est": "Binary: strong / in-line / weak assays", "highlight": "yellow" },
+    { "event": "Targeted Production Start", "dateRange": "Late 2026", "note": "The ultimate proof point — a complex remote-location build still has to be delivered", "est": "Target: late 2026", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -60, "price": 2.93 },
+    { "label": "Base", "color": "yellow", "pct": 70, "price": 12.44 },
+    { "label": "Bull", "color": "green", "pct": 150, "price": 18.30 },
+    { "label": "Moon", "color": "purple", "pct": 339, "price": 32.15 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (avg)", "target": 18.33, "rating": "Buy" },
+    { "firm": "Texas Capital", "target": 20, "rating": "Buy", "note": "Highest named target — supporting color only" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Fed at 3.50-3.75%; CRML's thesis is resource/geopolitics-driven (China rare-earth supply concerns, Project Vault-style federal critical-minerals policy), largely decoupled from the rate cycle.",
+    "inflationNote": "Core PCE at 3.4% YoY doesn't materially change the rare-earth supply-security narrative driving this stock.",
+    "sectorImpact": "MEDIUM-HIGH. As a genuinely small, pre-revenue, high-beta resource name with active dilution machinery, CRML is more exposed than most to a risk-off macro tape that raises the cost of its next capital raise.",
+    "summary": "Fed risk LOW-MEDIUM on the core thesis (geopolitics/resource-driven, not rate-driven), but the active, recurring shelf-filing pattern means a hawkish, risk-off macro week could make the company's ongoing capital needs more expensive or dilutive right when it needs flexibility most."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 7.32, "note": "Current — well off the 52-week high, pre-assay-results setup", "timing": "Now (small)" },
+      { "label": "Entry 2", "level": 5.5, "rangeMax": 6.5, "note": "Further dip zone — better R/R ahead of drilling assay results", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 4, "note": "Deep dip — near 52-week low territory, verify no dilutive-raise news first", "timing": "Deep dip (verify financing news first)" }
+    ],
+    "tp1": { "price": 12.44, "pct": 70, "note": "Base — assay results in-line, offtake/production narrative intact" },
+    "tp2": { "price": 18.30, "pct": 150, "note": "Bull — strong assay results, consensus target reached" },
+    "tp3": { "price": 32.15, "pct": 339, "note": "Moon — production narrative validated, stock revisits its own 52-week high", "moon": true },
+    "stopLoss": {
+      "tight": 5.5, "tightPct": -24.9, "tightNote": "Below Entry 2 zone — assay results disappointing or fresh dilutive raise",
+      "hard": 3.5, "hardPct": -52.2, "hardNote": "Near 52-week low breach — thesis-level breach",
+      "riskReward": "3.5 : 1", "rrNote": "From Entry 2 ($6 mid) tight stop vs TP2", "rrWarning": "ค่าขนม — real dilution machinery active. Size ≤3% of portfolio."
+    },
+    "verdict": "ค่าขนม — genuine scale rare-earth resource (92.5% of Tanbreez) with a real offtake deal already signed, but active recurring dilution and pre-revenue status make this a real lottery-ticket setup. Size small and expect volatility.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "regulatory_approval",
+    "preRunup": "CRML has shown it can move 15-20%+ same-day on major commercial/resource validation news — the offtake deal announcement and strong assay results have both triggered sharp pops this year.",
+    "preRunupTiming": "reacts same-day to assay/offtake/financing news, not a sustained pre-event drift",
+    "preRunupPct": "+15% to +20% same-day pop pattern on major validation news",
+    "postWin": {
+      "avgPct": 17,
+      "range": "+15% to +20%",
+      "note": "CRML's own 15-year Tanbreez offtake deal announcement drove a +19.8% same-day pop — the most directly relevant same-company precedent for how the market reacts to major positive validation, though strong assay results specifically could plausibly move it further given the stock's demonstrated volatility.",
+      "exampleDate": "2026"
+    },
+    "postLose": {
+      "avgPct": -25,
+      "range": "-15% to -35%",
+      "note": "No exact same-company precedent for a bad assay result exists yet; sized using the stock's own demonstrated volatility pattern and general small-cap mining sector reactions to disappointing drill results.",
+      "exampleDate": "sector pattern — no exact same-company precedent yet"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "ค่าขนม sizing — genuine scale resource asset with real offtake validation, but active recurring dilution and pre-revenue execution risk argue for small, speculative-tier sizing only."
+    },
+    "stopPreCatalyst": { "pct": -25, "price": 5.5, "note": "Below Entry 2 zone before assay results = fresh dilution or sentiment concerns building" },
+    "stopPostCatalyst": { "pct": -35, "note": "If assay results disappoint or another large dilutive shelf offering is announced, exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "CRML",
+      "event": "15-Year Tanbreez Rare Earth Offtake Deal Announcement",
+      "date": "2026",
+      "movePct": 19.8,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company precedent for a major commercial validation event — the closest available comp for how the market reacts to CRML executing on the Tanbreez thesis."
+    },
+    {
+      "ticker": "NB",
+      "event": "NioCorp Elk Creek Mine Portal Project Board Approval",
+      "date": "2026",
+      "movePct": 12,
+      "days": 1,
+      "outcome": "good",
+      "note": "Comparable US/critical-minerals-project milestone reaction — a more modest same-sector comp useful as a sanity check on the postWin range."
+    },
+    {
+      "ticker": "CRML",
+      "event": "Stock decline from 52-week high ($32.15) to current levels",
+      "date": "2026",
+      "movePct": -77,
+      "days": 180,
+      "outcome": "bad",
+      "note": "Same-company precedent for the scale of drawdown this stock has already demonstrated — directly relevant context for sizing the downside risk honestly."
+    }
+  ],
+  "sources": [
+    "https://www.tipranks.com/news/company-announcements/critical-metals-corp-lifts-tanbreez-stake-to-92-5-in-greenland-rare-earths-deal",
+    "https://simplywall.st/stocks/us/materials/nasdaq-crml/critical-metals/news/critical-metals-crml-is-up-198-after-15-year-tanbreez-rare-e",
+    "https://finance.yahoo.com/news/critical-metals-crml-15-0-043804986.html",
+    "https://www.stocktitan.net/sec-filings/CRML/f-3-critical-metals-corp-foreign-issuer-shelf-registration-71105aca6d29.html",
+    "https://stockstotrade.com/news/critical-metals-corp-crml-news-2026_04_17/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Critical Metals เพิ่มสัดส่วนถือ Tanbreez rare-earth project ในกรีนแลนด์ (หนึ่งใน rare-earth resource ใหญ่ที่สุดในโลก) เป็น 92.5% พร้อม offtake agreement 15 ปีกับ REalloys สำหรับ 15% ของ Phase 1 production แล้ว กำลัง drilling campaign 10,000 เมตร (เริ่ม 17 มิ.ย. 2026) ผล assay คือ catalyst ใกล้สุด Consensus target ($13.50-20 เฉลี่ย $18.33) = upside 146-169% ต่ำกว่าเกณฑ์ 200% แบบ consensus ตรงๆ แต่ 52-week range ของหุ้นเอง ($2.83-$32.15) แสดง path ที่น่าเชื่อถือสู่ 200%+ ถ้าผล drilling ดี ⚠️ SURVIVAL: cash burn สูงจริง (pre-raise runway แค่ 4 เดือนตาม free cash flow) และยื่น shelf registration 3 ครั้งในปี 2026 (ก.พ./มี.ค./พ.ค.) — dilution machinery ทำงานจริงแม้ระดมทุนก้อนใหญ่มาแล้ว",
+      "priceNote": "ร่วง 6.14% วันนี้ (self-fetched — ไม่อยู่ใน live-prices cache ตัวใหม่รอบนี้) ร่วงหนักจาก 52-week high $32.15 ใกล้ 52-week low $2.83 — range 11 เท่าใน 1 ปี แสดงว่าหุ้นนี้ขยับรุนแรงได้ทั้งสองทาง",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "ผล Assay Drilling Tanbreez 10,000m", "description": "campaign เริ่ม 17 มิ.ย. 2026 — ผล assay ก่อนหน้า (ก.พ. 2026) แข็งแกร่งที่สุดที่เคยมี ผลรอบนี้เป็น catalyst ใกล้สุด" },
+        { "name": "REalloys Offtake Agreement 15 ปี", "description": "สัญญา 15% ของ Phase 1 production — validation เชิงพาณิชย์จริง ไม่ใช่แค่ resource story" },
+        { "name": "เป้า Production เริ่มปลายปี 2026", "description": "ยังต้องส่งมอบ build ซับซ้อนในพื้นที่ห่างไกลกรีนแลนด์ — จุดพิสูจน์สุดท้ายของ thesis" }
+      ],
+      "risks": [
+        "⚠️ SURVIVAL: cash burn สูงจริง — ประมาณการ pre-raise runway แค่ 4 เดือนตาม free cash flow ระดมทุนมาแล้ว (private placement $60M เม.ย., ขายหุ้น $83.1M+$32.06M ม.ค./ก.พ.) แต่ยื่น shelf 3 ครั้งปี 2026 (ก.พ. $25.17M, มี.ค. $25.16M, พ.ค. $221.99M) — dilution machinery ทำงานต่อเนื่องจริง ไม่ใช่ครั้งเดียวจบ",
+        "Upside consensus (146-169%) ต่ำกว่าเกณฑ์ turbo 200% แบบเข้มงวด — การรวมไว้ในนี้อิงจากที่หุ้นเคยขึ้นเกิน target มาแล้วเอง (52-week high $32.15 = เกิน 4 เท่าราคาวันนี้) ไม่ใช่จาก consensus ปัจจุบัน",
+        "Pre-revenue จริง — ยังต้องส่งมอบ mine/refining build ซับซ้อนในพื้นที่ห่างไกลกรีนแลนด์ก่อนถึงเป้า production ปลายปี 2026",
+        "Insider ขายหุ้นพร้อมๆ กับ shelf filing ล่าสุด สร้างคำถามเรื่อง alignment จริง แม้ผล assay จะแข็งแกร่งจริง",
+        "ผันผวนสูงมากตามประวัติ (52-week range $2.83-$32.15 ห่างกัน 11 เท่า) — ทั้ง upside และ downside เกิดเร็วได้จริง ไม่เหมาะกับคนรับ drawdown รุนแรงไม่ได้"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed 3.50-3.75% — thesis ขึ้นกับ resource/ภูมิรัฐศาสตร์ ไม่ใช่ rate cycle",
+        "inflationNote": "Core PCE 3.4% ไม่กระทบ narrative rare-earth supply-security ที่ขับเคลื่อนหุ้นนี้",
+        "sectorImpact": "ปานกลาง-สูง หุ้น resource pre-revenue high-beta ที่มี dilution machinery ทำงานอยู่ expose กับ risk-off มากกว่าปกติ",
+        "summary": "ความเสี่ยง Fed ต่ำ-ปานกลางในแง่ thesis หลัก (ภูมิรัฐศาสตร์/resource) แต่ pattern การยื่น shelf ต่อเนื่องทำให้ macro risk-off เพิ่มต้นทุนทุนที่บริษัทต้องการอยู่แล้วให้แพงขึ้นหรือ dilutive มากขึ้น"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม — resource rare-earth ระดับใหญ่จริง (ถือ Tanbreez 92.5%) พร้อม offtake deal เซ็นแล้วจริง แต่ dilution ต่อเนื่องและ pre-revenue ทำให้เป็น lottery-ticket setup จริง size เล็กและเตรียมรับความผันผวน",
+        "entryLevels": [
+          { "note": "ปัจจุบัน — ไกลจาก 52-week high ก่อนผล assay", "timing": "ตอนนี้ (เล็ก)" },
+          { "note": "โซนย่อเพิ่ม — R/R ดีกว่าก่อนผล drilling", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงลึก — ใกล้ 52-week low ตรวจข่าว financing ก่อน", "timing": "Deep dip (ตรวจข่าว financing ก่อน)" }
+        ],
+        "tp1": { "note": "Base — ผล assay ตามคาด offtake/production narrative ยังอยู่" },
+        "tp2": { "note": "Bull — ผล assay แข็งแกร่ง แตะ consensus target" },
+        "tp3": { "note": "Moon — production narrative validate หุ้นกลับไปแตะ 52-week high เดิม", "moon": true },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่าโซน Entry 2 = ผล assay ผิดหวังหรือ dilutive raise ใหม่",
+          "hardNote": "ใกล้หลุด 52-week low = thesis พัง",
+          "rrNote": "จาก Entry 2 ($6 กลาง) stop แคบ vs TP2",
+          "rrWarning": "ค่าขนม — dilution machinery ทำงานจริง size ≤3%"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผล Assay Drilling Tanbreez", "note": "campaign 10,000m กำลังดำเนินอยู่ — ผลคือ catalyst re-rate ใกล้สุด" },
+        { "event": "เป้า Production เริ่ม", "note": "จุดพิสูจน์สุดท้าย — ยังต้องส่งมอบ build ซับซ้อนในพื้นที่ห่างไกล" }
+      ]
+    }
+  }
+}

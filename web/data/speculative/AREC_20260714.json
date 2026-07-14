@@ -1,0 +1,198 @@
+{
+  "ticker": "AREC",
+  "companyName": "American Resources Corporation",
+  "companyDescription": "Critical minerals refining platform · ReElement Technologies subsidiary — rare earth/battery metals refining · $1.4B DoD deal + $200M equity facility · germanium production targeted Q3 2026",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-14T22:00:00.000Z",
+  "price": 1.82,
+  "priceChange": 0.0,
+  "priceNote": "Self-fetched — not yet in live-prices.json cache (new pick this run), last confirmed print $1.819 on Jul 10, 2026. Recently added to the Russell 3000 and Russell Microcap Indexes (Jun 26, 2026), which can drive passive-flow volatility.",
+  "marketCap": "$0.2B",
+  "sector": "Materials / Critical Minerals Refining",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 62,
+  "summary": "American Resources has transformed its balance sheet — cash position of $72.5M with no immediate fundraising need, the going-concern qualification removed, and shareholder equity flipped from -$80M to +$93M — while its ReElement Technologies subsidiary builds out a rare-earth/battery-metals refining platform backed by a $1.4B DoD Office of Strategic Capital deal and a fresh $200M equity facility. Germanium production (defense/tech-critical material) is targeted for Q3 2026. Analyst coverage is thin (2-3 analysts) with targets $5.00-6.50, implying 175-257% upside — genuinely credible given the DoD-backed capital and Project Vault tailwind (the $12B U.S. critical-mineral reserve initiative), but coverage this sparse means real estimation uncertainty.",
+  "catalysts": [
+    {
+      "icon": "⚗️",
+      "name": "ReElement Germanium Production Start",
+      "description": "First germanium-focused refining line on-site and being assembled, targeted for commercial operations in Q3 2026 — serving defense and tech sectors. Real, near-term operational milestone, not a multi-year promise.",
+      "urgencyLabel": "~Q3 2026",
+      "dateBadge": "Q3 2026",
+      "catalystDate": "2026-08-15",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🏛️",
+      "name": "Project Vault / U.S. Critical Mineral Reserve Tailwind",
+      "description": "The $12B U.S. Strategic Critical Minerals Reserve (Project Vault) creates federal price support and demand certainty for rare-earth refiners — a genuine sector tailwind AREC is directly positioned for via ReElement.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🏗️",
+      "name": "Additional Refining Lines Ramp",
+      "description": "Specialty hard products, recycled rare earths, and primary rare-earth feedstock lines scheduled to ramp through Q1 2027, funded by the $200M Transition Equity Partners facility secured Jan 2026.",
+      "urgencyLabel": "THROUGH Q1 2027",
+      "dateBadge": "Q1 2027",
+      "catalystDate": "2027-02-15",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Thin analyst coverage (2-3 analysts) means the $5.00-6.50 target range carries real estimation uncertainty — this isn't a broadly-vetted consensus the way a 15-analyst mega-cap target is",
+    "Pre-commercial-scale refining — germanium line is still being assembled, not yet producing; any delay past Q3 2026 removes the nearest dated catalyst",
+    "Recently added to Russell 3000/Microcap indexes (Jun 26, 2026) — passive-flow-driven volatility can move the stock independent of fundamentals in either direction",
+    "Critical-minerals/rare-earth sentiment is geopolitically sensitive — a China trade détente or a shift in DoD Office of Strategic Capital priorities would remove a real part of the tailwind",
+    "Company has a checkered financial history (legacy coal assets only recently divested, negative equity as recently as prior periods) — the balance-sheet turnaround is recent and not yet multi-year proven"
+  ],
+  "estimateDates": [
+    { "event": "ReElement Germanium Production Start", "dateRange": "Q3 2026", "note": "First commercial line targeted online — key operational proof point", "est": "Target: Q3 2026", "highlight": "yellow" },
+    { "event": "Additional Refining Lines", "dateRange": "Through Q1 2027", "note": "Specialty/recycled/primary rare-earth lines ramping, DoD + equity-facility funded", "est": "Ramp through Q1 2027", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -50, "price": 0.91 },
+    { "label": "Base", "color": "yellow", "pct": 100, "price": 3.64 },
+    { "label": "Bull", "color": "green", "pct": 175, "price": 5.01 },
+    { "label": "Moon", "color": "purple", "pct": 257, "price": 6.50 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (2 analysts)", "target": 6.50, "rating": "Strong Buy", "note": "Small sample — real estimation uncertainty" },
+    { "firm": "Median (3 analysts)", "target": 5.00, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Fed at 3.50-3.75%; AREC's near-term thesis is DoD/federal-program-driven (Project Vault, Office of Strategic Capital financing), largely decoupled from the rate cycle.",
+    "inflationNote": "Core PCE at 3.4% YoY doesn't materially change federal critical-minerals policy, which is set through separate national-security/industrial-policy channels.",
+    "sectorImpact": "LOW-MEDIUM. Critical-minerals/rare-earth names are more policy-driven than rate-driven, though as a genuine micro-cap (Russell Microcap constituent) AREC still carries real small-cap-beta exposure to a risk-off macro tape.",
+    "summary": "Fed risk LOW-MEDIUM — the core catalyst (germanium production, DoD-backed capital) is policy/execution-driven, but micro-cap beta means a genuine risk-off shock in the dense Jul 27-Aug 1 FOMC/earnings/PCE week would still pressure the stock alongside the broader small-cap complex."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 1.82, "note": "Current — post-turnaround, pre-germanium-production setup", "timing": "Now (small)" },
+      { "label": "Entry 2", "level": 1.45, "rangeMax": 1.60, "note": "Dip zone — better R/R ahead of the Q3 germanium milestone", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 1.10, "note": "Deep dip — broad small-cap or critical-minerals-sector selloff", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 3.64, "pct": 100, "note": "Base — germanium line comes online on schedule" },
+    "tp2": { "price": 5.01, "pct": 175, "note": "Bull — clean production start, DoD tailwind sustains, median target reached" },
+    "tp3": { "price": 6.50, "pct": 257, "note": "Moon — production ramp validated + Project Vault tailwind accelerates, consensus high reached", "moon": true },
+    "stopLoss": {
+      "tight": 1.45, "tightPct": -20.3, "tightNote": "Below Entry 2 zone — germanium timeline slipping or DoD tailwind fading",
+      "hard": 1.00, "hardPct": -45.1, "hardNote": "Deep breach — production delay or balance-sheet reversal",
+      "riskReward": "8.6 : 1", "rrNote": "From Entry 2 ($1.53 mid) tight stop vs TP2", "rrWarning": "ค่าขนม — thin analyst coverage, size accordingly"
+    },
+    "verdict": "ค่าขนม — genuine balance-sheet turnaround + DoD-backed critical-minerals platform with a real Q3 2026 production catalyst. Thin analyst coverage means real estimation uncertainty; size small.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "product_launch",
+    "preRunup": "AREC popped 21% on securing the $200M ReElement equity facility in January 2026 — critical-minerals names tend to react sharply to funding/capacity news given how capital-constrained the sector has historically been.",
+    "preRunupTiming": "reacts same-day to funding and capacity announcements",
+    "preRunupPct": "+21% same-day pop pattern on major funding news (see comparable)",
+    "postWin": {
+      "avgPct": 21,
+      "range": "+15% to +25%",
+      "note": "AREC's own Jan 2026 reaction to securing the $200M ReElement equity facility is the most directly relevant same-company precedent for how this stock responds to positive capital/capacity news — the germanium production start would be a similar-magnitude operational proof point.",
+      "exampleDate": "Jan 2026"
+    },
+    "postLose": {
+      "avgPct": -30,
+      "range": "-20% to -40%",
+      "note": "No exact same-company production-delay precedent exists yet (this would be ReElement's first commercial line); sized toward typical small-cap materials-sector reactions to a missed operational milestone.",
+      "exampleDate": "sector pattern — no exact same-company precedent yet"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "ค่าขนม sizing — real balance-sheet turnaround and DoD-backed thesis, but thin analyst coverage (2-3 analysts) and pre-commercial-scale operations argue for small, speculative-tier sizing."
+    },
+    "stopPreCatalyst": { "pct": -20, "price": 1.45, "note": "Below Entry 2 zone before Q3 = germanium timeline concerns building" },
+    "stopPostCatalyst": { "pct": -30, "note": "If germanium production is delayed past Q3 2026 or DoD relationship sours, exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "AREC",
+      "event": "$200M ReElement Equity Facility Secured",
+      "date": "Jan 2026",
+      "movePct": 21,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company precedent for a major funding/capacity announcement — the closest available comp for how the market reacts to AREC executing on its critical-minerals platform build-out."
+    },
+    {
+      "ticker": "CRML",
+      "event": "15-Year Tanbreez Rare Earth Offtake Deal Announcement",
+      "date": "2026",
+      "movePct": 19.8,
+      "days": 1,
+      "outcome": "good",
+      "note": "Comparable critical-minerals-sector reaction to a major commercial validation event — useful proxy given AREC's own production start hasn't happened yet."
+    },
+    {
+      "ticker": "NB",
+      "event": "NioCorp Elk Creek Mine Portal Project board approval",
+      "date": "2026",
+      "movePct": 12,
+      "days": 1,
+      "outcome": "good",
+      "note": "Comparable US critical-minerals-project milestone reaction — modest but real, useful sanity check on the range for AREC's own upcoming production milestone."
+    }
+  ],
+  "sources": [
+    "https://finance.yahoo.com/markets/stocks/articles/american-resources-arec-repositions-critical-053541877.html",
+    "https://www.stocktitan.net/news/AREC/american-resources-affiliated-holding-re-element-technologies-ppnw6dxudoie.html",
+    "https://finance.yahoo.com/news/american-resources-arec-21-0-050805839.html",
+    "https://www.insidermonkey.com/blog/american-resources-arec-repositions-as-critical-minerals-platform-eyes-global-mine-stakes-1776689/",
+    "https://guildhallpreciousmetals.com/goldmans-small-cap-biotech-universe-the-2026-catalyst-playbook-for-investors/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "American Resources ปรับ balance sheet ใหม่ทั้งหมด — เงินสด $72.5M ไม่ต้องระดมทุนเร่งด่วน, ยกเลิก going-concern qualification, equity พลิกจาก -$80M เป็น +$93M ขณะที่ ReElement Technologies (บริษัทลูก) สร้าง critical-minerals refining platform หนุนโดยดีล DoD $1.4B และ equity facility ใหม่ $200M Germanium production เป้า Q3 2026 Analyst coverage บาง (2-3 คน) target $5.00-6.50 = upside 175-257% — น่าเชื่อถือจาก DoD-backed capital + Project Vault tailwind แต่ coverage บางทำให้มี estimation uncertainty จริง",
+      "priceNote": "Self-fetched — ไม่อยู่ใน live-prices cache (ตัวใหม่รอบนี้) ราคายืนยันล่าสุด $1.819 (10 ก.ค.) เพิ่งเข้า Russell 3000/Microcap Index (26 มิ.ย.)",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "ReElement เริ่ม Germanium Production", "description": "line แรกกำลังประกอบ เป้า commercial operation Q3 2026 — milestone จริงไม่ใช่สัญญาระยะยาว" },
+        { "name": "Project Vault / U.S. Critical Mineral Reserve Tailwind", "description": "reserve $12B ของรัฐบาลสหรัฐฯ สร้าง price support + demand certainty ให้ refiner แบบ AREC" },
+        { "name": "ขยาย Refining Lines เพิ่ม", "description": "specialty/recycled/primary rare-earth lines ramp ถึง Q1 2027 หนุนด้วย equity facility $200M" }
+      ],
+      "risks": [
+        "Analyst coverage บาง (2-3 คน) — target $5.00-6.50 มี estimation uncertainty จริง ไม่ใช่ consensus ที่ผ่านการกลั่นกรองกว้าง",
+        "ยังไม่ commercial scale — germanium line ยังประกอบอยู่ เลื่อนจาก Q3 2026 = catalyst ใกล้สุดหายไป",
+        "เพิ่งเข้า Russell 3000/Microcap (26 มิ.ย.) — passive flow ทำให้ผันผวนได้อิสระจาก fundamental",
+        "Sentiment critical-minerals ไวต่อภูมิรัฐศาสตร์ — ถ้าจีนผ่อนคลาย trade หรือ DoD เปลี่ยนโฟกัส tailwind หายไปจริง",
+        "ประวัติการเงินไม่ราบรื่น — เพิ่งขายสินทรัพย์ถ่านหินเก่า equity ติดลบมาก่อนหน้า turnaround ยังใหม่ไม่ผ่านการพิสูจน์หลายปี"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed 3.50-3.75% — thesis ขึ้นกับ DoD/federal program ไม่ใช่ rate cycle",
+        "inflationNote": "Core PCE 3.4% ไม่กระทบนโยบาย critical-minerals ที่มาจากช่องทาง national-security แยกต่างหาก",
+        "sectorImpact": "ต่ำ-ปานกลาง critical-minerals ขับเคลื่อนด้วย policy มากกว่า rate แต่ micro-cap beta ยัง expose กับ risk-off",
+        "summary": "ความเสี่ยง Fed ต่ำ-ปานกลาง — catalyst หลักขึ้นกับ policy/execution แต่ micro-cap beta ยังกดดันได้ถ้า risk-off จริงสัปดาห์ FOMC หนาแน่น"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม — balance sheet turnaround จริง + platform critical-minerals หนุน DoD พร้อม catalyst production Q3 2026 จริง coverage บางมี uncertainty size เล็ก",
+        "entryLevels": [
+          { "note": "ปัจจุบัน — หลัง turnaround ก่อน germanium production", "timing": "ตอนนี้ (เล็ก)" },
+          { "note": "โซนย่อ — R/R ดีกว่าก่อน milestone Q3", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงลึก — small-cap หรือ critical-minerals sector selloff", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — germanium line online ตามกำหนด" },
+        "tp2": { "note": "Bull — production เริ่มสะอาด DoD tailwind ต่อเนื่อง แตะ median target" },
+        "tp3": { "note": "Moon — production ramp validate + Project Vault เร่งตัว แตะ consensus สูงสุด", "moon": true },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่าโซน Entry 2 = timeline germanium เลื่อนหรือ DoD tailwind จาง",
+          "hardNote": "หลุดลึก = production delay หรือ balance sheet กลับแย่",
+          "rrNote": "จาก Entry 2 ($1.53 กลาง) stop แคบ vs TP2",
+          "rrWarning": "ค่าขนม — analyst coverage บาง size ให้เหมาะสม"
+        }
+      },
+      "estimateDates": [
+        { "event": "ReElement เริ่ม Germanium Production", "note": "line แรกเป้าออนไลน์ — จุดพิสูจน์ operation สำคัญ" },
+        { "event": "ขยาย Refining Lines", "note": "specialty/recycled/primary rare-earth ramp ถึง Q1 2027 หนุนด้วย DoD + equity facility" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "ticker": "SLN",
+  "companyName": "Silence Therapeutics plc",
+  "companyDescription": "RNAi (siRNA) biotech · divesiran for polycythemia vera · Phase 2 SANRECO topline results Aug 2026 · Phase 1 data already showed sustained phlebotomy reduction",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-14T22:00:00.000Z",
+  "price": 10.14,
+  "priceChange": 0.0,
+  "priceNote": "Self-fetched — not yet in live-prices.json cache (new pick this run), last confirmed close $10.14. Volatile heading into the Aug 2026 Phase 2 readout.",
+  "marketCap": "$0.3B",
+  "sector": "Healthcare / Biotechnology (RNAi Therapeutics)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 64,
+  "summary": "Silence Therapeutics' divesiran (an siRNA candidate for polycythemia vera, a blood cancer requiring frequent phlebotomy) already showed sustained reduction in phlebotomies and symptom improvement in Phase 1 SANRECO data. Phase 2 topline results are expected in August 2026 — a real, near-term binary readout, not a distant promise. Analyst targets show real dispersion: an 8-analyst median of $25 (146% upside) alongside a more specific $34.75 'consensus' figure (243% upside) cited by a separate source — both real data points, presented transparently below. Cash position was $70.1M as of Mar 31, 2026, and the company launched a new $100M ATM facility in May 2026; runway estimates conflict across sources (12 months to potentially into 2028), so this is disclosed as a genuine uncertainty rather than a confirmed survival flag.",
+  "catalysts": [
+    {
+      "icon": "🧬",
+      "name": "Phase 2 SANRECO Topline Results (Divesiran)",
+      "description": "Pivotal Phase 2 readout for divesiran in polycythemia vera, expected August 2026. Phase 1 data already showed promising phlebotomy reduction and symptom improvement — Phase 2 needs to confirm both safety and efficacy at pivotal scale. This is the binary event that defines the near-term stock story.",
+      "urgencyLabel": "~2-4 WEEKS",
+      "dateBadge": "Aug 2026",
+      "catalystDate": "2026-08-15",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "💊",
+      "name": "Zerlasiran Program Shift",
+      "description": "Company has been repositioning its zerlasiran (lipoprotein(a)-targeting siRNA) program — watch for partnership or pipeline-prioritization news alongside the divesiran readout.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Runway data genuinely conflicts across sources — one report says cash runway is 'limited to 12 months' (Jun 2026) with a new $100M ATM launched that same month; another says runway extends 'into 2028' (May 2026). This is disclosed as a real, unresolved uncertainty rather than a confirmed <12-month survival flag — but the fact that the company launched a fresh ATM right around the more conservative estimate is itself worth weighing.",
+    "Phase 1 data, while promising, is not Phase 2 — pivotal-scale trials regularly fail to replicate early-phase efficacy signals, especially on the safety side at larger patient numbers",
+    "Analyst target dispersion is unusually wide even by biotech standards ($4 to $75 range cited) — treat any single number, including the ones used for this report's gate, as a soft estimate, not a precise consensus",
+    "Small market cap (~$0.3B) with real dilution risk via the newly-launched $100M ATM — a disappointing Phase 2 readout combined with active ATM usage could compound downside",
+    "Polycythemia vera has existing standard-of-care options (therapeutic phlebotomy, hydroxyurea) — divesiran needs to show a meaningfully better risk/benefit profile to change treatment paradigms, not just statistical significance"
+  ],
+  "estimateDates": [
+    { "event": "Phase 2 SANRECO Topline (Divesiran)", "dateRange": "Aug 2026", "note": "Pivotal readout — confirms or refutes the promising Phase 1 signal at pivotal scale", "est": "Binary: positive / negative / mixed", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -55, "price": 4.56 },
+    { "label": "Base", "color": "yellow", "pct": 80, "price": 18.25 },
+    { "label": "Bull", "color": "green", "pct": 146, "price": 24.94 },
+    { "label": "Moon", "color": "purple", "pct": 243, "price": 34.78 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (cited, source-specific)", "target": 34.75, "rating": "Buy", "note": "Explicitly labeled 'analyst consensus' by one source — moon-case reference" },
+    { "firm": "Median (8 analysts)", "target": 25, "rating": "Buy", "note": "More conservative median across 8 analysts (5 Buy, 0 Hold, 1 Sell)" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Fed at 3.50-3.75%; binary clinical-catalyst biotech valuations are driven by trial data, not the rate cycle. SLN's thesis is entirely readout-driven.",
+    "inflationNote": "Core PCE at 3.4% YoY doesn't materially affect a pre-revenue RNAi biotech's near-term trajectory.",
+    "sectorImpact": "Small-cap biotech has shown real recent weakness alongside other high-beta groups even against a resilient broad tape — a genuinely risk-off macro week could compound a negative Phase 2 reaction rather than offset it.",
+    "summary": "Fed risk LOW on the fundamental thesis (trial-data-driven, not rate-driven), but small-cap biotech beta means a risk-off macro tape around the Aug readout window could amplify any negative surprise."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 10.14, "note": "Current — pre-Phase-2-readout, small starter size only", "timing": "Now (small)" },
+      { "label": "Entry 2", "level": 8, "rangeMax": 9, "note": "Pre-readout dip zone — better R/R heading into the August data", "timing": "If dips into readout", "preferred": true },
+      { "label": "Entry 3", "level": 6, "note": "Deep dip — broad biotech-sector pullback or negative pre-positioning", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 18.25, "pct": 80, "note": "Base — Phase 2 positive but modest, market prices in a favorable path forward" },
+    "tp2": { "price": 24.94, "pct": 146, "note": "Bull — clean Phase 2 win, median analyst target reached" },
+    "tp3": { "price": 34.78, "pct": 243, "note": "Moon — Phase 2 confirms Phase 1 signal strongly, partnership interest emerges", "moon": true },
+    "stopLoss": {
+      "tight": 8, "tightPct": -21.1, "tightNote": "Below Entry 2 zone — pre-readout nerves building",
+      "hard": 5, "hardPct": -50.7, "hardNote": "Phase 2 disappoints on safety or efficacy — thesis breach",
+      "riskReward": "7.1 : 1", "rrNote": "From Entry 2 ($8.50 mid) tight stop vs TP2", "rrWarning": "ค่าขนม — binary Phase 2 readout, genuinely could go either way despite promising Phase 1. Size small."
+    },
+    "verdict": "ค่าขนม — small position ahead of the August Phase 2 readout. Phase 1 data was genuinely promising, but pivotal trials fail to replicate early signals often enough that this remains a real coin-flip-adjacent bet, not a high-confidence call.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "phase3_readout",
+    "preRunup": "Biotech names with promising Phase 1 data heading into a pivotal readout typically see accumulation in the weeks before the data, though SLN's own recent volatility suggests this pattern isn't playing out cleanly yet.",
+    "preRunupTiming": "2-4 weeks before the Aug 2026 readout",
+    "preRunupPct": "+10% to +25% typical pre-readout drift for a promising Phase 1→2 story",
+    "postWin": {
+      "avgPct": 60,
+      "range": "+30% to +100%",
+      "note": "Small-cap biotech pivotal readouts confirming a promising Phase 1 signal in a rare/underserved indication (polycythemia vera has real unmet need beyond phlebotomy) typically see 30-100%+ single-day moves — sized using the standard small-biotech-pivotal-win pattern given no exact same-company precedent exists yet for this specific readout.",
+      "exampleDate": "sector pattern — SLN has no same-company Phase 2 precedent yet"
+    },
+    "postLose": {
+      "avgPct": -45,
+      "range": "-35% to -60%",
+      "note": "A failed or ambiguous Phase 2 readout for a company this thinly capitalized, with an active ATM in place, would likely see a severe reaction — sized toward the higher end of typical small-cap biotech pivotal-failure moves given the added financing overhang.",
+      "exampleDate": "sector pattern"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "ค่าขนม sizing — genuinely binary Phase 2 readout with real financing-runway uncertainty layered on top. 2-3% keeps meaningful upside exposure without over-risking on an unresolved coin-flip-adjacent event."
+    },
+    "stopPreCatalyst": { "pct": -21, "price": 8, "note": "หลุด $8 ก่อน readout = ตลาดเริ่ม price in ผลลบ" },
+    "stopPostCatalyst": { "pct": -40, "note": "ถ้า Phase 2 ไม่ผ่าน primary endpoint หรือมี safety signal ใหม่ — ออกทันที ไม่เฉลี่ยลง" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "CAPR",
+      "event": "Phase 3 HOPE-3 Positive Topline Data",
+      "date": "Jun 2026",
+      "movePct": 371,
+      "days": 1,
+      "outcome": "good",
+      "note": "Comparable small-cap biotech reaction to a strong pivotal data readout — an extreme outlier, but shows the ceiling for how violently these stocks can move on genuinely surprising positive data."
+    },
+    {
+      "ticker": "RXRX",
+      "event": "FDA Registrational Pathway Confirmation Comp (FOLD precedent)",
+      "date": "Jun 2023",
+      "movePct": 54,
+      "days": 1,
+      "outcome": "good",
+      "note": "Amicus Therapeutics' orphan-pathway confirmation for a rare genetic disease — a more 'typical' magnitude comp for a positive rare-disease biotech catalyst, used here as the moderate case against CAPR's extreme outlier."
+    },
+    {
+      "ticker": "CAPR",
+      "event": "First Complete Response Letter for Deramiocel",
+      "date": "Jul 2025",
+      "movePct": -30,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Comparable small-cap biotech reaction to a negative regulatory/clinical surprise — useful proxy for the downside case magnitude given SLN has no same-company Phase 2 failure precedent."
+    }
+  ],
+  "sources": [
+    "https://seekingalpha.com/article/4914656-silence-buy-zerlasiran-program-shift-and-divesiran-results-august-2026",
+    "https://seekingalpha.com/article/4921447-silence-therapeutics-stock-pv-data-could-wake-stock-initiating-buy",
+    "https://www.biospace.com/press-releases/silence-therapeutics-highlights-recent-business-achievements-and-reports-first-quarter-2026-financial-results",
+    "https://www.stocktitan.net/sec-filings/SLN/424b5-silence-therapeutics-plc-prospectus-supplement-debt-securities-c84e92471dae.html",
+    "https://www.sahmcapital.com/news/content/heres-why-were-watching-silence-therapeutics-nasdaqsln-cash-burn-situation-2026-01-31"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Divesiran (siRNA) ของ Silence Therapeutics สำหรับ polycythemia vera (มะเร็งเลือดที่ต้อง phlebotomy บ่อย) แสดงผล Phase 1 ลด phlebotomy และอาการดีขึ้นแล้ว Phase 2 topline คาด ส.ค. 2026 — binary readout จริงใกล้แล้ว ไม่ใช่สัญญาไกล Target นักวิเคราะห์กระจาย: median 8 คน $25 (upside 146%) กับตัวเลข 'consensus' เฉพาะแหล่ง $34.75 (upside 243%) — นำเสนอทั้งคู่อย่างโปร่งใส เงินสด $70.1M ณ 31 มี.ค. 2026 เปิด ATM ใหม่ $100M พ.ค. 2026 runway ข้อมูลขัดแย้งกัน (12 เดือน ถึงอาจถึง 2028) — เปิดเผยเป็นความไม่แน่นอนจริง ไม่ใช่ flag ที่ยืนยันแล้ว",
+      "priceNote": "Self-fetched — ไม่อยู่ใน live-prices cache (ตัวใหม่รอบนี้) ราคาปิดล่าสุดยืนยัน $10.14 ผันผวนก่อน readout ส.ค.",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "Phase 2 SANRECO Topline (Divesiran)", "description": "readout สำคัญ ส.ค. 2026 — Phase 1 มีสัญญาณดีแล้ว Phase 2 ต้องยืนยันทั้ง safety และ efficacy ระดับ pivotal" },
+        { "name": "Zerlasiran Program Shift", "description": "การปรับ program zerlasiran (siRNA เป้า lipoprotein(a)) — จับตาข่าว partnership หรือ pipeline priority" }
+      ],
+      "risks": [
+        "ข้อมูล runway ขัดแย้งกันจริงข้ามแหล่ง — บางแหล่งว่า 'จำกัดแค่ 12 เดือน' (มิ.ย. 2026) พร้อม ATM ใหม่ $100M เดือนเดียวกัน อีกแหล่งว่า 'ถึงปี 2028' (พ.ค. 2026) — เปิดเผยเป็นความไม่แน่นอนจริง ไม่ใช่ flag ยืนยัน <12 เดือน",
+        "Phase 1 ดี แต่ไม่ใช่ Phase 2 — trial ระดับ pivotal มักไม่ replicate สัญญาณจาก early-phase โดยเฉพาะด้าน safety ที่ sample ใหญ่ขึ้น",
+        "Target กระจายกว้างผิดปกติแม้เทียบ biotech ($4-75) — ควรมองเลขไหนก็ตามเป็นประมาณการ ไม่ใช่ consensus แม่นยำ",
+        "Market cap เล็ก (~$0.3B) มี dilution risk จริงจาก ATM $100M ที่เพิ่งเปิด — ถ้า Phase 2 ผิดหวังพร้อม ATM ใช้งานจริงจะซ้ำเติม downside",
+        "Polycythemia vera มี standard-of-care อยู่แล้ว (phlebotomy, hydroxyurea) — divesiran ต้องแสดง risk/benefit ดีกว่าชัดเจน ไม่ใช่แค่มีนัยสำคัญทางสถิติ"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed 3.50-3.75% — thesis ขึ้นกับข้อมูล trial ไม่ใช่ rate cycle",
+        "inflationNote": "Core PCE 3.4% ไม่กระทบ trajectory ระยะสั้นของ biotech pre-revenue แบบนี้",
+        "sectorImpact": "Small-cap biotech อ่อนแอจริงแม้ตลาดรวมยืนได้ — macro risk-off อาจซ้ำเติม Phase 2 ลบ",
+        "summary": "ความเสี่ยง Fed ต่ำในแง่ fundamental (ขึ้นกับ trial data) แต่ beta biotech เล็กอาจขยาย reaction ถ้า readout ตรงกับสัปดาห์ risk-off"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม — เข้า size เล็กก่อน Phase 2 readout ส.ค. Phase 1 ดีจริงแต่ pivotal trial มักไม่ replicate สัญญาณ early-phase บ่อยพอที่จะยังเป็น coin-flip-adjacent bet ไม่ใช่ high-confidence call",
+        "entryLevels": [
+          { "note": "ปัจจุบัน — ก่อน Phase 2 readout size เล็กเท่านั้น", "timing": "ตอนนี้ (เล็ก)" },
+          { "note": "โซนย่อก่อน readout — R/R ดีกว่า", "timing": "ถ้าย่อก่อน readout" },
+          { "note": "ร่วงลึก — sector selloff หรือ pre-position ลบ", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — Phase 2 บวกแต่ปานกลาง ตลาด price in ทางบวก" },
+        "tp2": { "note": "Bull — Phase 2 win สะอาด แตะ median target" },
+        "tp3": { "note": "Moon — Phase 2 ยืนยันสัญญาณ Phase 1 ชัดเจน + partnership interest", "moon": true },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่าโซน Entry 2 = ความกังวลก่อน readout เพิ่มขึ้น",
+          "hardNote": "Phase 2 ผิดหวังด้าน safety หรือ efficacy = thesis พัง",
+          "rrNote": "จาก Entry 2 ($8.50 กลาง) stop แคบ vs TP2",
+          "rrWarning": "ค่าขนม — binary readout จริง อาจไปทางไหนก็ได้แม้ Phase 1 ดี size เล็ก"
+        }
+      },
+      "estimateDates": [
+        { "event": "Phase 2 SANRECO Topline (Divesiran)", "note": "readout pivotal — ยืนยันหรือหักล้างสัญญาณ Phase 1 ที่ระดับ pivotal" }
+      ]
+    }
+  }
+}

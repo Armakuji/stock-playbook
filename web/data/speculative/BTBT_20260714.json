@@ -1,0 +1,194 @@
+{
+  "ticker": "BTBT",
+  "companyName": "Bit Digital, Inc.",
+  "companyDescription": "Crypto miner pivoting to Ethereum treasury/staking + AI/HPC infrastructure (WhiteFiber) · 158,462 ETH held · real, revenue-generating pivot, not a concept stage story",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-14T22:00:00.000Z",
+  "price": 1.64,
+  "priceChange": -2.96,
+  "priceNote": "Live-prices.json cache (1.4h old). Down further from the ~$1.83-1.87 range cited in recent news coverage — widening the gap to consensus targets.",
+  "marketCap": "$0.6B",
+  "sector": "Technology / Digital Assets + AI Infrastructure",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 58,
+  "summary": "Bit Digital is mid-pivot from pure Bitcoin mining to an Ethereum treasury/staking + AI/HPC infrastructure model through majority-owned WhiteFiber — a real, executing business (Q1 2026 revenue $27.9M), not a concept-stage story. 5 analysts rate it Strong Buy with a consensus target ~$5.70-7.00, implying 248-327% upside from the current price. ⚠️ SURVIVAL: cash burn is real — Q1 2026 net loss was $57.7M against $79.5M cash on hand, and the company has been actively raising capital (25M+ new shares issued since year-end 2025, a proposed $100M convertible note offering). Included in top 5 despite the flag because the pivot is funding an actual, growing revenue business, not a going-concern rescue — see justification below.",
+  "catalysts": [
+    {
+      "icon": "🔷",
+      "name": "Ethereum Treasury + Staking Scale-Up",
+      "description": "Management is accelerating the ETH treasury/staking build — total holdings at ~158,462 ETH after adding 8,568 ETH for $20M. Ongoing accumulation, not a single dated event, but the core driver of the 'Strategic Asset Company' re-rate thesis.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🖥️",
+      "name": "WhiteFiber AI/HPC Infrastructure Scaling",
+      "description": "Majority-owned WhiteFiber is Bit Digital's AI/HPC infrastructure arm — the growth engine behind the pivot away from pure Bitcoin mining. Revenue contribution here is the metric to watch each quarter.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "💰",
+      "name": "$100M Convertible Notes Offering",
+      "description": "Proposed registered underwritten offering of $100M aggregate principal convertible senior notes due 2030 (announced Sep 2025, still working through). Directly addresses the cash-runway risk flagged below — successful pricing would meaningfully extend runway without near-term equity dilution at today's depressed price.",
+      "urgencyLabel": "PENDING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "⚠️ SURVIVAL: cash runway is genuinely tight — Q1 2026 net loss ($57.7M) exceeded 70% of the quarter-start cash balance ($79.5M→$79.5M end-of-quarter reported, down from $118.4M at YE2025); the company has an active $100M convertible note offering in progress plus ongoing ATM activity ($14.3M raised recently) and has already diluted shares outstanding from 324M to 349M since year-end. This is a real, live financing need, not a hypothetical.",
+    "Q1 2026 results were mixed — higher reported revenue but a wider net loss, and revenue fell 13.6% sequentially, landing right as investors were focused on the ETH/AI pivot narrative",
+    "Analyst target dispersion matters here — the $5.70 consensus and $7.00 HC Wainwright high both assume successful execution of the pivot; a stumble in either ETH treasury economics or WhiteFiber's AI/HPC ramp would remove the re-rate case entirely",
+    "Ethereum price exposure — a meaningful chunk of the thesis rides on ETH's own price and staking yield, an additional variable beyond company execution",
+    "Highly dilutive capital structure risk — if the convertible note offering doesn't price well, the company may need to lean harder on ATM equity sales at depressed prices, compounding dilution"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "~Aug 2026", "note": "Watch WhiteFiber revenue contribution and cash burn trajectory — the key data points for the survival thesis", "est": "TBD", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -55, "price": 0.74 },
+    { "label": "Base", "color": "yellow", "pct": 90, "price": 3.12 },
+    { "label": "Bull", "color": "green", "pct": 190, "price": 4.76 },
+    { "label": "Moon", "color": "purple", "pct": 327, "price": 7.01 }
+  ],
+  "analystTargets": [
+    { "firm": "HC Wainwright (Kevin Dede)", "target": 7.00, "rating": "Buy", "note": "Highest named target — moon-case reference" },
+    { "firm": "Consensus (5 analysts)", "target": 5.70, "rating": "Strong Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed holds at 3.50-3.75%, but Chair Warsh's hawkish Jun debut FOMC keeps small-cap, capital-hungry names like BTBT exposed to a higher-for-longer path that raises the cost of the very capital raise this company needs.",
+    "inflationNote": "Core PCE at 3.4% YoY (May) reinforces the hawkish setup into Jul 28-29 FOMC — timing matters for BTBT's convertible note pricing.",
+    "sectorImpact": "HIGH — crypto-adjacent names are both high-beta to risk appetite and directly exposed to ETH price action; a risk-off macro tape would hit both the equity and the treasury asset simultaneously.",
+    "summary": "Fed risk MEDIUM-HIGH — a genuinely capital-constrained small-cap raising money into a hawkish-leaning, event-dense macro week (Jul 27-Aug 1 FOMC/earnings/PCE) faces real execution risk on financing terms, on top of the underlying business risk."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 1.64, "note": "ค่าขนม starter position — tiny size only, survival risk is real", "timing": "Now (small)" },
+      { "label": "Entry 2", "level": 1.30, "rangeMax": 1.45, "note": "Dip zone — better R/R, but only add if the convertible note offering shows signs of pricing successfully", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 1.00, "note": "Deep dip — near cash-crisis pricing, verify financing progress before touching", "timing": "Deep dip (verify financing news first)" }
+    ],
+    "tp1": { "price": 3.12, "pct": 90, "note": "Base — convertible notes price successfully, WhiteFiber revenue keeps growing" },
+    "tp2": { "price": 4.76, "pct": 190, "note": "Bull — pivot executing cleanly, ETH treasury re-rate gains traction" },
+    "tp3": { "price": 7.01, "pct": 327, "note": "Moon — HC Wainwright target reached, full 'Strategic Asset Company' re-rate", "moon": true },
+    "stopLoss": {
+      "tight": 1.30, "tightPct": -20.7, "tightNote": "Below Entry 2 zone — financing concerns escalating",
+      "hard": 0.90, "hardPct": -45.1, "hardNote": "Near cash-crisis pricing — thesis-level breach",
+      "riskReward": "9.2 : 1", "rrNote": "From Entry 2 ($1.37 mid) tight stop vs TP2", "rrWarning": "ค่าขนม — binary financing risk. Size ≤3% of portfolio."
+    },
+    "verdict": "ค่าขนม — real revenue-generating pivot with huge analyst-target upside, but genuine near-term financing risk. Size very small (2-3%) and watch the convertible note offering closely; it's the single most important near-term signal.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "Crypto-treasury/AI-infra pivot names move on ETH price action and financing news more than on a single scheduled event — BTBT itself popped in mid-June 2026 as the Ethereum/AI lending strategy scaled up.",
+    "preRunupTiming": "reacts to ETH price moves and financing/partnership news on an ongoing basis, not a single pre-event window",
+    "preRunupPct": "+10% to +20% on positive ETH/AI-pivot news days historically",
+    "postWin": {
+      "avgPct": 15,
+      "range": "+10% to +20%",
+      "note": "BTBT's own mid-June 2026 pop on the ETH/AI lending strategy scaling up is the closest same-company precedent — a real, if modest, positive reaction pattern.",
+      "exampleDate": "Jun 2026"
+    },
+    "postLose": {
+      "avgPct": -25,
+      "range": "-15% to -35%",
+      "note": "The stock's own Q1 2026 print (revenue down 13.6% sequentially, wider losses) drove weakness — a real precedent for how the market punishes execution stumbles in the pivot narrative, compounded by the underlying survival risk.",
+      "exampleDate": "May 2026"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "ค่าขนม 58/100 — real revenue-generating business but genuine near-term financing risk flagged above. 2-3% of portfolio maximum, treat as a binary-financing lottery ticket on top of the execution thesis."
+    },
+    "stopPreCatalyst": { "pct": -21, "price": 1.30, "note": "หลุด $1.30 = ตลาดเริ่มกังวลเรื่อง financing มากขึ้น" },
+    "stopPostCatalyst": { "pct": -30, "note": "ถ้า convertible note offering ล้มเหลวหรือต้องพึ่ง ATM ราคาต่ำหนักขึ้น — ออก" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "BTBT",
+      "event": "Ethereum + AI Lending Strategy Scale-Up",
+      "date": "Jun 2026",
+      "movePct": 15,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company precedent for a positive pivot-execution reaction — the most directly relevant comp available."
+    },
+    {
+      "ticker": "BTBT",
+      "event": "Q1 2026 Earnings — Revenue Down Sequentially, Wider Loss",
+      "date": "May 2026",
+      "movePct": -20,
+      "days": 3,
+      "outcome": "bad",
+      "note": "Same-company precedent for how the market reacts to execution stumbles — directly relevant given the ongoing financing overhang."
+    },
+    {
+      "ticker": "CIFR",
+      "event": "Crypto mining sector selloff on Bitcoin price move",
+      "date": "Mar 2026",
+      "movePct": -9,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Comparable crypto-treasury-adjacent name's reaction to sector-wide risk-off — shows this whole group trades as a basket on crypto price action, not just company news."
+    }
+  ],
+  "sources": [
+    "https://finance.yahoo.com/markets/stocks/articles/assessing-bit-digital-btbt-valuation-231908208.html",
+    "https://stockstotrade.com/news/bit-digital-inc-btbt-news-2026_05_21/",
+    "https://www.timothysykes.com/news/bit-digital-inc-btbt-news-2026_06_16/",
+    "https://www.minichart.com.sg/2026/05/15/bit-digital-inc-2026-q1-financial-report-unaudited-condensed-consolidated-statements-and-management-analysis/",
+    "https://www.prnewswire.com/news-releases/bit-digital-inc-announces-first-quarter-2026-financial-results-302772946.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Bit Digital กำลัง pivot จาก Bitcoin mining ล้วนๆ เป็น Ethereum treasury/staking + AI/HPC infrastructure ผ่าน WhiteFiber (ถือหุ้นใหญ่) — เป็นธุรกิจจริงมีรายได้ (Q1 2026 $27.9M) ไม่ใช่แค่ concept นักวิเคราะห์ 5 คนให้ Strong Buy target เฉลี่ย $5.70-7.00 = upside 248-327% ⚠️ SURVIVAL: cash burn จริง — Q1 2026 ขาดทุน $57.7M เทียบเงินสด $79.5M บริษัทระดมทุนต่อเนื่อง (หุ้นเพิ่ม 25M+ ตั้งแต่ปลายปี, เสนอออก convertible note $100M) ติด top 5 ทั้งที่มี flag เพราะ pivot นี้หนุนธุรกิจรายได้จริงที่กำลังโต ไม่ใช่ going-concern rescue",
+      "priceNote": "ร่วงต่อจากช่วง $1.83-1.87 ที่ข่าวล่าสุดอ้างถึง — gap กับ consensus target กว้างขึ้น",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "ขยาย Ethereum Treasury + Staking", "description": "ถือ ETH ~158,462 เหรียญแล้ว เพิ่มต่อเนื่อง — driver หลักของ thesis 'Strategic Asset Company'" },
+        { "name": "ขยาย WhiteFiber AI/HPC Infrastructure", "description": "แขน AI/HPC ที่ถือหุ้นใหญ่ — engine การเติบโตหลังเลิก pure Bitcoin mining" },
+        { "name": "เสนอออก Convertible Notes $100M", "description": "แก้ปัญหา cash runway โดยตรง — ถ้าขายได้สำเร็จช่วยยืด runway โดยไม่ dilute ที่ราคาต่ำแบบนี้" }
+      ],
+      "risks": [
+        "⚠️ SURVIVAL: cash runway ตึงจริง — Q1 2026 ขาดทุน $57.7M เกิน 70% ของเงินสดต้นไตรมาส มี convertible note $100M กำลังดำเนินการ + ATM ระดมทุนต่อเนื่อง หุ้นเพิ่มจาก 324M เป็น 349M แล้ว",
+        "Q1 2026 ผลงานผสม — revenue เพิ่มแต่ขาดทุนกว้างขึ้น รายได้ลดลง 13.6% QoQ",
+        "Target กระจาย $5.70-7.00 ขึ้นกับ pivot สำเร็จ — ถ้า ETH treasury หรือ WhiteFiber สะดุด thesis หายไปเลย",
+        "Exposure ราคา Ethereum โดยตรง — เพิ่มตัวแปรนอกเหนือ execution บริษัท",
+        "โครงสร้างทุน dilutive สูง — ถ้า convertible note ขายไม่ดี ต้องพึ่ง ATM ที่ราคาต่ำมากขึ้น"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed hold 3.50-3.75% แต่ Warsh เอียง hawkish — เพิ่มต้นทุนการระดมทุนที่บริษัทต้องการจริง",
+        "inflationNote": "Core PCE 3.4% หนุนภาพ hawkish ก่อน FOMC 28-29 ก.ค. — จังหวะสำคัญต่อการขาย convertible note",
+        "sectorImpact": "สูง — หุ้น crypto-adjacent high-beta ทั้งต่อ risk appetite และราคา ETH โดยตรง",
+        "summary": "ความเสี่ยง Fed ปานกลาง-สูง — small-cap ที่ต้องการเงินทุนจริงเข้าสู่สัปดาห์ macro หนาแน่นที่เอียง hawkish เพิ่มความเสี่ยง execution ด้าน financing"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม — ธุรกิจรายได้จริงที่มี upside ใหญ่จาก analyst target แต่มีความเสี่ยง financing ระยะสั้นจริง size เล็กมาก (2-3%) จับตา convertible note offering ใกล้ชิด",
+        "entryLevels": [
+          { "note": "ค่าขนม starter position เล็กมาก — survival risk จริง", "timing": "ตอนนี้ (เล็ก)" },
+          { "note": "โซนย่อ — R/R ดีกว่า แต่เพิ่มเฉพาะถ้า convertible note มีสัญญาณขายได้ดี", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงลึก — ใกล้ราคาวิกฤต ตรวจข่าว financing ก่อน", "timing": "Deep dip (ตรวจข่าว financing ก่อน)" }
+        ],
+        "tp1": { "note": "Base — convertible notes ขายสำเร็จ WhiteFiber revenue โตต่อ" },
+        "tp2": { "note": "Bull — pivot สำเร็จ ETH treasury re-rate" },
+        "tp3": { "note": "Moon — แตะ HC Wainwright target re-rate เต็มที่", "moon": true },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่าโซน Entry 2 = ความกังวล financing เพิ่มขึ้น",
+          "hardNote": "ใกล้ราคาวิกฤตเงินสด = thesis พัง",
+          "rrNote": "จาก Entry 2 ($1.37 กลาง) stop แคบ vs TP2",
+          "rrWarning": "ค่าขนม — binary financing risk size ≤3% เท่านั้น"
+        }
+      },
+      "estimateDates": [
+        { "event": "Q2 2026 Earnings", "note": "จับตา WhiteFiber revenue + cash burn — จุดข้อมูลสำคัญของ survival thesis" }
+      ]
+    }
+  }
+}
