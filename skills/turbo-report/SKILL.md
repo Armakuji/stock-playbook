@@ -94,7 +94,13 @@ If the stock fails all 3, say: *"[TICKER] doesn't fit the Turbo profile — try 
 ## Step 2: Research (fire this before writing anything)
 
 Search for:
-1. **Price + market cap** — current price, 52-week range, market cap
+1. **Price + market cap** — read `web/data/live-prices.json` **first**: if the ticker is present and
+   its `asOf` is **≤ 12 hours old**, use `prices[TICKER].price`/`changePct` as the authoritative
+   current price/today's change % — no self-fetch needed (same convention `catalyst-compare/SKILL.md`
+   and `stock-report/SKILL.md` use for their live-price step). If the ticker is missing from the
+   cache or `asOf` is older than 12h, fetch it fresh via WebSearch as today and note in your
+   reasoning that the price was self-fetched. Either way, still search live for the 52-week range
+   and market cap — the cache only covers current price/change%.
 2. **Moon scenario research** — search `"[TICKER] bull case 2026 analyst target"` and `"[TICKER] 5-year upside potential"`
 3. **Binary catalyst** — exact date/event that triggers the 300%+ move
 4. **Comparable 10x cases** — find 2–3 real stocks that made 300–1000%+ moves on a similar catalyst (mandatory — the `comparableCases[]` array needs real examples)
