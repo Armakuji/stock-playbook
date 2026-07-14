@@ -50,7 +50,13 @@ If it exists, use it as an **advisory prior** — two tiers, both apply to every
 
 Before writing any JSON, gather live data on the ticker (use WebSearch — never fabricate):
 
-1. **Price & technicals** — current price, today's change %, 52-week high/low, market cap
+1. **Price & technicals** — read `web/data/live-prices.json` **first**: if the ticker is present and
+   its `asOf` is **≤ 12 hours old**, use `prices[TICKER].price`/`changePct` as the authoritative
+   current price/today's change % — no self-fetch needed (same convention `catalyst-compare/SKILL.md`
+   uses for its live-price step). If the ticker is missing from the cache or `asOf` is older than
+   12h, fetch it fresh via WebSearch as today and note in your reasoning that the price was
+   self-fetched. Either way, still search live for 52-week high/low and market cap — the cache only
+   covers current price/change%.
 2. **Analyst targets** — consensus avg/low/high, # of analysts, key named firm targets + ratings
 3. **Next earnings date** — exact date or quarter
 4. **Catalysts** — upcoming events, launches, partnerships, macro tailwinds, news from the past 2–4 weeks. Get the **exact event date** where it's genuinely known.
