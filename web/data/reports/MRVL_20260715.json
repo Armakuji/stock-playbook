@@ -1,0 +1,198 @@
+{
+  "ticker": "MRVL",
+  "companyName": "Marvell Technology, Inc.",
+  "companyDescription": "AI custom silicon (XPU/ASIC) + data center interconnect · $2B NVIDIA strategic investment + NVLink partnership · 18 XPU design wins, >$75B lifetime revenue funnel · joined S&P 500 Jun 22, 2026",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-15T15:00:00.000Z",
+  "price": 222.93,
+  "priceChange": 2.48,
+  "priceNote": "Live-prices.json cache (freshly refreshed). Up 2.48% today, but still well off the post-S&P-500-inclusion peak — the stock has traded in a wide $212.93-$231.10 range recently and remains down roughly 22-28% from its late-June high depending on the exact peak reference used.",
+  "marketCap": "$190B",
+  "sector": "Technology / Semiconductors (AI Custom Silicon)",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 79,
+  "summary": "Marvell has real, executing AI-infrastructure momentum: a $2B strategic investment and deepened NVLink partnership from NVIDIA, 18 XPU/XPU-attach design wins (many already in volume production) feeding a >$75B lifetime revenue funnel, data center revenue at 76% of total sales, and S&P 500 inclusion on Jun 22, 2026. But the stock has sold off hard since that inclusion date — a classic sell-the-news reversal after passive-fund buying was finalized, compounded by outgoing CFO Willem Meintjes liquidating nearly half his direct equity holdings near the peak (a scheduled, amicable transition — he cited wanting to spend more time with family, not a disagreement with the company — but the sale timing is still worth flagging) and by genuine valuation concerns at ~74-80x forward earnings. 44-analyst consensus average $252.26 implies ~13% near-term upside, with RBC's $360 (Jul 7) the highest recent named target. Q2 FY27 earnings land ~Aug 20-27 (sources disagree on the exact date).",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q2 FY2027 Earnings",
+      "description": "Company guided Q2 FY27 revenue to $2.7B (±5%), implying ~12% sequential and ~35% YoY growth, with EPS guided around $0.91. Sources disagree on the exact date (TipRanks says Aug 20, another source says Aug 27) — treat late August as the window, verify the precise date closer to the event.",
+      "urgencyLabel": "~5-6 WEEKS",
+      "dateBadge": "~Aug 20-27, 2026",
+      "catalystDate": "2026-08-20",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🤝",
+      "name": "NVIDIA $2B Strategic Investment + NVLink Integration",
+      "description": "Expanded AI infrastructure partnership with NVIDIA announced late June 2026, including NVLink ecosystem integration and a $2.0B strategic investment. Jensen Huang has reportedly endorsed Marvell as a 'next trillion-dollar company' candidate — a real, substantive validation of the custom-silicon thesis, not just a symbolic gesture.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🏗️",
+      "name": "XPU Design-Win Pipeline Ramp",
+      "description": "18 XPU and XPU-attach socket design wins unveiled, many already in volume production, feeding a pipeline worth over 10% of a $75B lifetime revenue funnel. Data center segment revenue was $1.52B in the most recent reported quarter (+37.8% YoY) — this is the structural growth engine behind the stock's re-rating.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Outgoing CFO Willem Meintjes sold nearly half his direct equity holdings near the stock's post-S&P-inclusion peak — the transition itself looks clean and amicable (stated family reasons, no disagreement with the company, and he's staying on as an advisor through Apr 2027), but the timing of the liquidation is a real data point that dampened institutional sentiment and shouldn't be waved away just because the stated reason is benign",
+    "Steep valuation — trading at roughly 74-80x forward earnings, a significant premium to historical average and semiconductor peers, leaving very little margin for error if growth decelerates even modestly",
+    "Severe customer concentration — 45% of revenue flows through a single distributor, and 82% comes from the top 10 customers. A loss or slowdown at any one major hyperscaler customer would hit results disproportionately",
+    "Post-index-inclusion sell-the-news dynamic already played out once (the Jun 22 S&P 500 inclusion pump-and-dump pattern) — the stock has shown it can move sharply on positioning/flow effects independent of the underlying business",
+    "Removed from several Russell value indexes (Jun 27, 2026) as it shifts to a growth-oriented profile — not itself a red flag (it's a natural reclassification given the AI re-rating), but it does mean a different, growth-oriented investor base now holds the stock, which can behave differently in a risk-off tape"
+  ],
+  "estimateDates": [
+    { "event": "Q2 FY2027 Earnings", "dateRange": "~Aug 20-27, 2026", "note": "Guided $2.7B revenue (±5%), EPS ~$0.91 — sources disagree on the exact date, verify closer to the event", "est": "est. $2.7B rev", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -22, "price": 173.88 },
+    { "label": "Base", "color": "yellow", "pct": 13, "price": 251.91 },
+    { "label": "Bull", "color": "green", "pct": 30, "price": 289.81 },
+    { "label": "Moon", "color": "purple", "pct": 61, "price": 358.92 }
+  ],
+  "analystTargets": [
+    { "firm": "RBC Capital (Jul 7, 2026)", "target": 360, "rating": "Buy", "note": "Highest recent named target — supporting color only" },
+    { "firm": "Stifel (Jun 24, 2026)", "target": 350, "rating": "Buy", "note": "Raised from $321" },
+    { "firm": "Cantor Fitzgerald (Jun 29, 2026)", "target": 300, "rating": "Buy", "note": "Raised from $220" },
+    { "firm": "Consensus (44 analysts)", "target": 252.26, "rating": "Strong Buy", "note": "Range $110-$385 — real dispersion" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed holds at 3.50-3.75%, but Chair Warsh's hawkish Jun debut FOMC plus this week's CPI/testimony backdrop keeps high-multiple AI names like MRVL (74-80x forward earnings) exposed to a higher-for-longer repricing more than the broad market.",
+    "inflationNote": "Core PCE at 3.4% YoY (May, highest since Oct 2023) reinforces the hawkish setup into the Jul 28-29 FOMC.",
+    "sectorImpact": "MEDIUM-HIGH. MRVL's own recent history (sharp post-index-inclusion selloff, insider-selling optics, steep valuation) shows it's already sensitive to sentiment shifts independent of fundamentals — a genuine risk-off macro shock would likely compound that existing fragility rather than be absorbed cleanly.",
+    "summary": "Fed risk MEDIUM — the AI-infrastructure fundamentals (NVIDIA partnership, design-win pipeline) are real and largely macro-independent, but the stock's rich valuation and recent demonstrated volatility around index/insider-selling dynamics mean it's more exposed than a typical core semis holding to a broader risk-off tape into the dense Jul 27-Aug 1 FOMC/earnings/PCE week."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 222.93, "note": "Current — well off the post-S&P-inclusion peak, post-selloff setup", "timing": "Now" },
+      { "label": "Entry 2", "level": 200, "rangeMax": 210, "note": "Further dip zone — near the recent intraday low, better R/R", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 180, "note": "Deep dip — broad semis or macro selloff, or fresh insider-selling news", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 251.91, "pct": 13, "note": "Base — stock stabilizes, consensus average target reached" },
+    "tp2": { "price": 289.81, "pct": 30, "note": "Bull — clean Q2 FY27 beat, Cantor Fitzgerald target territory" },
+    "tp3": { "price": 358.92, "pct": 61, "note": "Moon — design-win pipeline accelerates, RBC/Stifel high-target territory reached", "moon": true },
+    "stopLoss": {
+      "tight": 200, "tightPct": -10.3, "tightNote": "Below Entry 2 zone — selloff resuming or fresh insider-selling headline",
+      "hard": 175, "hardPct": -21.5, "hardNote": "Deep breach — customer concentration event or valuation de-rating accelerates",
+      "riskReward": "3.3 : 1", "rrNote": "From Entry 2 ($205 mid) tight stop vs TP2", "rrWarning": "Solid R/R but recent volatility argues for patience on sizing"
+    },
+    "verdict": "BUY the post-index-inclusion pullback — the AI-infrastructure fundamentals (NVIDIA $2B investment, 18 XPU design wins, >$75B funnel) are real and haven't changed; the selloff is largely a sell-the-news/valuation-digestion event, not a thesis break. DCA now, add on further weakness toward the preferred zone.",
+    "approach": "DCA"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "MRVL ran hard into and through its S&P 500 inclusion (Jun 22, 2026) on passive-fund-buying anticipation, then gave back a large portion of those gains once the mandatory index buying was finalized — a textbook sell-the-news pattern rather than a typical earnings pre-run.",
+    "preRunupTiming": "the S&P inclusion event itself was the main recent pre-run driver, not the upcoming Aug earnings specifically",
+    "preRunupPct": "ran to a historic high into Jun 22 inclusion, then gave back ~22-28% in the reversal",
+    "postWin": {
+      "avgPct": 8,
+      "range": "+4% to +12%",
+      "note": "AVGO's Q2 2026 AI-networking beat drove a real positive reaction, and TSM/AMD have both shown mid-to-high single-digit pops on clean AI-demand beats this cycle — used as the closest available sector proxy since MRVL's own most recent print predates this research pass.",
+      "exampleDate": "2026 sector pattern"
+    },
+    "postLose": {
+      "avgPct": -22,
+      "range": "-15% to -28%",
+      "note": "MRVL's own post-S&P-500-inclusion reversal (sell-the-news + insider-selling optics + valuation concerns) is the most directly relevant recent precedent for how sharply this specific stock can give back gains — a genuine, already-realized downside case rather than a hypothetical.",
+      "exampleDate": "Jun-Jul 2026"
+    },
+    "spotSizing": {
+      "pct": 8,
+      "reason": "Core holding sizing — genuinely strong AI-infrastructure fundamentals and a real NVIDIA-validated design-win pipeline, but the recent demonstrated volatility (sell-the-news reversal, insider-selling optics, steep valuation) argues for sizing at the lower end of a core-holding range rather than maximal until the stock finds a stable base."
+    },
+    "stopPreCatalyst": { "pct": -10, "price": 200, "note": "Below Entry 2 zone before earnings = selloff resuming beyond normal digestion" },
+    "stopPostCatalyst": { "pct": -15, "note": "If Q2 FY27 misses the $2.7B guide or customer-concentration risk materializes (a top-10 customer pulling back), reassess position size" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "MRVL",
+      "event": "S&P 500 Inclusion Sell-the-News Reversal",
+      "date": "Jun-Jul 2026",
+      "movePct": -22,
+      "days": 14,
+      "outcome": "bad",
+      "note": "Same-company, very recent precedent — the stock ran to a historic high into its Jun 22 S&P 500 inclusion, then gave back ~22% once passive-fund buying finalized, compounded by insider-selling optics. Directly relevant to how much of the current price already reflects this digestion."
+    },
+    {
+      "ticker": "AVGO",
+      "event": "Q2 2026 Earnings — AI Networking Beat",
+      "date": "2026",
+      "movePct": 6,
+      "days": 1,
+      "outcome": "good",
+      "note": "Comparable mega-cap AI custom-silicon/networking earnings reaction — useful proxy for the magnitude a clean AI-demand-driven beat can produce in this specific sub-sector."
+    },
+    {
+      "ticker": "MRVL",
+      "event": "Q4/FY2026 Results — Record Full-Year Revenue",
+      "date": "Mar 2026",
+      "movePct": 5,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company precedent for a clean, in-line-to-strong quarterly result — FY26 net revenue $8.195B (+42% YoY), a new company record, with BofA upgrading to Buy shortly after."
+    }
+  ],
+  "sources": [
+    "https://finance.yahoo.com/markets/stocks/articles/marvell-mrvl-down-22-6-171116041.html",
+    "https://www.tradingview.com/news/tradingview:b5be26cee2aad:0-daniel-durn-named-marvell-chief-financial-officer-willem-meintjes-to-resign/",
+    "https://www.businesswire.com/news/home/20260611364455/en/Marvell-Announces-CFO-Transition",
+    "https://tech-insider.org/marvell-technology-stock-surge-custom-ai-chip-2026/",
+    "https://247wallst.com/investing/2026/07/06/marvell-is-quietly-chasing-broadcoms-ai-jackpot-and-wall-street-is-finally-waking-up/",
+    "https://investor.marvell.com/news-events/press-releases/detail/1023/marvell-technology-inc-reports-first-quarter-of-fiscal-year-2027-financial-results"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Marvell มี AI-infrastructure momentum จริง — NVIDIA ลงทุน $2B + NVLink partnership ขยาย, XPU design win 18 ตัว (หลายตัว volume production แล้ว) หนุน funnel รายได้ตลอดอายุ >$75B, data center revenue 76% ของยอดขาย, เข้า S&P 500 22 มิ.ย. 2026 แต่หุ้นร่วงหนักหลังเข้า index — sell-the-news reversal คลาสสิกหลัง passive fund ซื้อครบแล้ว ซ้ำด้วย CFO ที่กำลังจะออก Willem Meintjes ขายหุ้นเกือบครึ่งใกล้จุดสูงสุด (การเปลี่ยนผ่านดูราบรื่น อ้างเหตุผลครอบครัว ไม่มีข้อขัดแย้งกับบริษัท แต่จังหวะขายยังน่าจับตา) บวกความกังวล valuation ที่ ~74-80x forward earnings Consensus เฉลี่ย 44 คน $252.26 = upside ~13% RBC ให้ target สูงสุดล่าสุด $360 (7 ก.ค.) Q2 FY27 earnings ~20-27 ส.ค. (แหล่งข่าวให้วันไม่ตรงกัน)",
+      "priceNote": "บวก 2.48% วันนี้ แต่ยังห่างจากจุดสูงสุดหลังเข้า S&P 500 มาก — เทรดในกรอบกว้าง $212.93-$231.10 ล่าสุด ยังต่ำกว่า high ปลายมิ.ย. ราว 22-28%",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "Q2 FY2027 Earnings", "description": "guide ไว้แล้ว revenue $2.7B (±5%) EPS ~$0.91 — แหล่งข่าวให้วันไม่ตรงกัน (20 หรือ 27 ส.ค.) ตรวจสอบใหม่ใกล้วันจริง" },
+        { "name": "NVIDIA ลงทุน $2B + NVLink Integration", "description": "ขยาย partnership AI infrastructure กับ NVIDIA ปลายมิ.ย. 2026 — Jensen Huang เอ่ยถึง Marvell ว่าอาจเป็น 'next trillion-dollar company'" },
+        { "name": "Pipeline XPU Design-Win Ramp", "description": "18 design win XPU/XPU-attach หลายตัว volume production แล้ว หนุน funnel >$75B — data center revenue $1.52B ไตรมาสล่าสุด (+37.8% YoY)" }
+      ],
+      "risks": [
+        "CFO ที่กำลังออก Willem Meintjes ขายหุ้นเกือบครึ่งใกล้จุดสูงสุดหลังเข้า S&P 500 — การเปลี่ยนผ่านดูราบรื่นจริง (เหตุผลครอบครัว ไม่มีข้อขัดแย้ง ยังเป็นที่ปรึกษาถึง เม.ย. 2027) แต่จังหวะขายเป็นข้อมูลจริงที่กระทบ sentiment สถาบัน ไม่ควรมองข้าม",
+        "Valuation สูงชัน — ~74-80x forward earnings พรีเมียมสูงเทียบประวัติศาสตร์และคู่แข่ง semis เหลือ margin for error น้อยมาก",
+        "Customer concentration รุนแรง — 45% revenue ผ่าน distributor รายเดียว 82% จาก top 10 ลูกค้า เสีย hyperscaler รายใหญ่รายเดียวกระทบหนัก",
+        "Sell-the-news pattern หลังเข้า index เกิดขึ้นแล้วจริงครั้งหนึ่ง (22 มิ.ย.) — หุ้นแสดงว่าขยับแรงจาก positioning/flow ได้อิสระจากธุรกิจจริง",
+        "ถูกถอดจาก Russell value index (27 มิ.ย. 2026) จากการปรับเป็น growth profile — ไม่ใช่สัญญาณลบในตัวเอง แต่หมายความว่า investor base เปลี่ยนเป็น growth-focused ซึ่งพฤติกรรมต่างออกไปช่วง risk-off"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed hold 3.50-3.75% แต่ Warsh เอียง hawkish — หุ้น AI valuation สูง (74-80x) เสี่ยง repricing มากกว่าตลาดรวม",
+        "inflationNote": "Core PCE 3.4% YoY (พ.ค. สูงสุดตั้งแต่ต.ค. 2023) หนุนภาพ hawkish ก่อน FOMC 28-29 ก.ค.",
+        "sectorImpact": "ปานกลาง-สูง ประวัติล่าสุดของ MRVL เอง (selloff แรงหลังเข้า index, insider-selling optics, valuation สูงชัน) แสดงว่า sensitive กับ sentiment อยู่แล้วอิสระจาก fundamental",
+        "summary": "ความเสี่ยง Fed ปานกลาง — fundamental AI-infrastructure จริงและ macro-independent ส่วนใหญ่ แต่ valuation สูงและความผันผวนล่าสุดรอบ index/insider-selling ทำให้ expose กับ risk-off กว้างมากกว่าหุ้น semis core ทั่วไปเข้าสัปดาห์ FOMC/earnings/PCE หนาแน่น"
+      },
+      "entryStrategy": {
+        "verdict": "BUY ช่วงย่อหลังเข้า S&P 500 — fundamental AI-infrastructure (NVIDIA ลงทุน $2B, design win 18 ตัว, funnel >$75B) จริงและไม่เปลี่ยน selloff ส่วนใหญ่เป็น sell-the-news/valuation digestion ไม่ใช่ thesis พัง DCA ตอนนี้ เพิ่มถ้าย่อต่อถึงโซน preferred",
+        "entryLevels": [
+          { "note": "ปัจจุบัน — ห่างจาก high หลังเข้า S&P 500 มาก", "timing": "ตอนนี้" },
+          { "note": "โซนย่อเพิ่ม — ใกล้ intraday low ล่าสุด R/R ดีกว่า", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงลึก — semis หรือ macro selloff กว้าง หรือข่าว insider-selling ใหม่", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — หุ้นนิ่งขึ้น แตะ consensus เฉลี่ย" },
+        "tp2": { "note": "Bull — Q2 FY27 beat สะอาด แตะโซน Cantor Fitzgerald" },
+        "tp3": { "note": "Moon — pipeline design-win เร่งตัว แตะโซน RBC/Stifel สูงสุด", "moon": true },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่าโซน Entry 2 = selloff กลับมาต่อหรือข่าว insider-selling ใหม่",
+          "hardNote": "หลุดลึก = customer concentration event หรือ valuation de-rate เร่งตัว",
+          "rrNote": "จาก Entry 2 ($205 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R ดีแต่ความผันผวนล่าสุดควร size อย่างอดทน"
+        }
+      },
+      "estimateDates": [
+        { "event": "Q2 FY2027 Earnings", "note": "guide $2.7B revenue (±5%) EPS ~$0.91 — วันที่แหล่งข่าวไม่ตรงกัน" }
+      ]
+    }
+  }
+}
