@@ -1,0 +1,199 @@
+{
+  "ticker": "RKLB",
+  "companyName": "Rocket Lab Corporation",
+  "companyDescription": "Launch + space systems · Electron/HASTE operational, Neutron debut targeted Q4 2026 · $2.2B backlog · Q2 2026 earnings Aug 6",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-14T20:00:00.000Z",
+  "price": 76.73,
+  "priceChange": -5.32,
+  "priceNote": "Down 5.32% today per live-prices.json cache (1.4h old). Stock has pulled back roughly 30-34% from its late-May peak (~$151) amid Blue Origin test-failure spillover and SpaceX-IPO-driven sector rotation — not company-specific bad news.",
+  "marketCap": "$48B",
+  "sector": "Industrials / Aerospace & Space Launch",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 76,
+  "summary": "Rocket Lab posted a record Q1 2026 (revenue $200.3M, beat consensus, backlog surged to $2.2B on 31 new Electron/HASTE contracts plus 5 Neutron launch agreements) and the stock briefly broke $100 for the first time on the print before giving back gains over following weeks amid broader high-beta/space-sector volatility unrelated to Rocket Lab's own execution. Q2 2026 earnings land Aug 6 — management has guided another record quarter. Consensus target ~$108 implies ~41% upside from the current pulled-back price. Neutron's first launch (Q4 2026) is the bigger structural catalyst but sits further out.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "Reports Aug 6, 2026. Management guided Q2 revenue of $225-240M (33-35% GAAP gross margin) — another record quarter if delivered. Q1's beat briefly sent the stock through $100 for the first time; a repeat clean beat plus reiterated/raised guidance is the near-term catalyst.",
+      "urgencyLabel": "23 DAYS",
+      "dateBadge": "Aug 6, 2026",
+      "catalystDate": "2026-08-06",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🚀",
+      "name": "Neutron First Launch",
+      "description": "Rocket Lab's medium-lift, partially reusable Neutron rocket — the real structural catalyst that would validate RKLB as a genuine alternative in a thinning medium-lift market. 5 commercial launch contracts already signed before first flight. Target: Q4 2026, watch for 'items on test stands' progress updates per CEO Peter Beck.",
+      "urgencyLabel": "Q4 2026",
+      "dateBadge": "Q4 2026",
+      "catalystDate": "2026-11-15",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🤝",
+      "name": "Ongoing Contract Momentum",
+      "description": "Recent partnerships with Anduril and Raytheon, plus a new robotics acquisition, add to the $2.2B backlog outside the earnings/Neutron calendar.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Rich valuation — ~40x estimated 2028 EV/revenue means a lot of good news is already priced in even after the pullback; a lot has to keep going right",
+    "Neutron has already slipped once (originally targeted earlier in 2026, now Q4) — further slippage is a real, repeatable pattern risk in the launch industry, not a one-off",
+    "High-beta and sentiment-driven — the ~30-34% pullback from the May peak was driven mostly by sector-wide factors (Blue Origin test failure, SpaceX IPO speculation pulling capital), showing this stock trades on more than its own fundamentals",
+    "Earnings reactions cut both ways — the Q1 2026 beat triggered a sharp pop, but a Q2 miss or guidance disappointment after such a strong setup could trigger a comparably severe drawdown",
+    "Dense macro event week (FOMC + 4 Mag-7 earnings + PCE, Jul 27-Aug 1) sits between now and the Aug 6 print — high-beta names are the most exposed to a risk-off shock in that window"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Aug 6, 2026", "note": "Guided $225-240M revenue, 33-35% GAAP gross margin — another record quarter if delivered", "est": "est. $225-240M rev", "highlight": "yellow" },
+    { "event": "Neutron First Launch", "dateRange": "Q4 2026", "note": "5 commercial contracts already signed pre-flight — the structural re-rate catalyst", "est": "Target: Q4 2026", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -20, "price": 61.38 },
+    { "label": "Base", "color": "yellow", "pct": 25, "price": 95.91 },
+    { "label": "Bull", "color": "green", "pct": 41, "price": 108.19 },
+    { "label": "Moon", "color": "purple", "pct": 65, "price": 126.60 }
+  ],
+  "analystTargets": [
+    { "firm": "B of A Securities (Jun 30, 2026)", "target": 115, "rating": "Buy" },
+    { "firm": "KeyBanc (Jun 15, 2026)", "target": 135, "rating": "Overweight", "note": "Highest named target — supporting color only" },
+    { "firm": "Consensus (average)", "target": 108, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed holds at 3.50-3.75%, but Chair Warsh's hawkish Jun debut FOMC (9/18 officials projecting a 2026 hike) keeps high-beta, high-multiple growth names like RKLB exposed to a higher-for-longer repricing.",
+    "inflationNote": "Core PCE accelerated to 3.4% YoY (May) — reinforces the hawkish setup into the Jul 28-29 FOMC, which lands one week before RKLB's own Aug 6 earnings.",
+    "sectorImpact": "HIGH — RKLB already demonstrated ~30%+ sensitivity to sector sentiment shocks unrelated to its own fundamentals (Blue Origin failure, SpaceX IPO chatter). A genuine risk-off tape would likely hit this name harder than the market.",
+    "summary": "Fed risk MEDIUM — the Aug 6 earnings catalyst is company-specific, but RKLB's demonstrated high-beta behavior and rich valuation make it unusually exposed to the dense Jul 28-Aug 1 FOMC/earnings/PCE week that lands just before its own print."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 76.73, "note": "Current price — already ~30% off the May peak", "timing": "Now" },
+      { "label": "Entry 2", "level": 68, "rangeMax": 72, "note": "Further sector-driven dip zone — best R/R ahead of Aug 6 earnings", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 60, "note": "Deep dip — broad macro selloff into FOMC week", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 95.91, "pct": 25, "note": "Base — clean Q2 beat, guidance reiterated" },
+    "tp2": { "price": 108.19, "pct": 41, "note": "Bull — Q2 beat + raised guidance, consensus target reached" },
+    "tp3": { "price": 126.60, "pct": 65, "note": "Moon — Q2 beat + de-risked Neutron progress stacked together", "moon": true },
+    "stopLoss": {
+      "tight": 68, "tightPct": -11.4, "tightNote": "Below Entry 2 zone — momentum turning negative pre-earnings",
+      "hard": 58, "hardPct": -24.4, "hardNote": "Deep macro-driven breach — thesis intact but tolerance exceeded",
+      "riskReward": "3.4 : 1", "rrNote": "From Entry 2 ($70 mid) tight stop vs TP2", "rrWarning": "Good R/R but high-beta name — size for volatility"
+    },
+    "verdict": "BUY the pullback into Q2 earnings — Rocket Lab's fundamentals (record backlog, guided another record quarter) haven't changed, the ~30% drawdown from the May peak is mostly sector sentiment. Aug 6 is the near-term proof point.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Space-launch names with strong backlogs tend to run into earnings on guidance optimism, though RKLB's own recent pattern shows gains can evaporate quickly on unrelated sector news even after a strong print.",
+    "preRunupTiming": "1-2 weeks before the Aug 6 print",
+    "preRunupPct": "+5% to +15% typical pre-earnings drift, though sector volatility can override this",
+    "postWin": {
+      "avgPct": 25,
+      "range": "+15% to +34%",
+      "note": "RKLB's own Q1 2026 beat sent the stock up 34% the same day, breaking $100 for the first time — a real, same-company, same-year precedent for how sharply this stock can react to a clean beat.",
+      "exampleDate": "May 2026"
+    },
+    "postLose": {
+      "avgPct": -7,
+      "range": "-4% to -8%",
+      "note": "RKLB's own May 2026 print (a different quarter within the same cycle) also showed a case of the stock trading down ~7% on earnings despite record revenue — guidance quality matters more than the headline beat/miss for this name.",
+      "exampleDate": "2026"
+    },
+    "spotSizing": {
+      "pct": 5,
+      "reason": "Speculative sizing — real backlog and revenue growth support the thesis, but rich valuation (~40x 2028 EV/revenue) and demonstrated high-beta sector sensitivity argue against a larger core-holding-style position."
+    },
+    "stopPreCatalyst": { "pct": -11, "price": 68, "note": "Below Entry 2 zone before earnings = momentum turning" },
+    "stopPostCatalyst": { "pct": -15, "note": "If Q2 misses guidance or Neutron timeline slips further, exit within 2 sessions" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "RKLB",
+      "event": "Q1 2026 Earnings Beat — Record Revenue, Broke $100",
+      "date": "May 2026",
+      "movePct": 34,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company precedent for how RKLB reacts to a clean beat — the closest possible comp for the Aug 6 Q2 print."
+    },
+    {
+      "ticker": "RKLB",
+      "event": "Post-earnings sector-driven pullback",
+      "date": "2026",
+      "movePct": -30,
+      "days": 30,
+      "outcome": "mixed",
+      "note": "Even after the record Q1 print, RKLB gave back ~30% over following weeks on Blue Origin test-failure spillover and SpaceX IPO chatter — shows fundamentals alone don't guarantee the stock holds its earnings-day gains."
+    },
+    {
+      "ticker": "AVAV",
+      "event": "Strong Earnings Beat Amid Defense Spending Surge",
+      "date": "Jun 2026",
+      "movePct": 19,
+      "days": 1,
+      "outcome": "good",
+      "note": "Comparable high-growth aerospace/defense name's earnings-day reaction — useful proxy for the magnitude a clean beat can produce in this sector even outside RKLB's own history."
+    }
+  ],
+  "sources": [
+    "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-first-quarter-2026-financial-results",
+    "https://finance.yahoo.com/news/rklb-q1-deep-dive-space-004455955.html",
+    "https://www.tradingkey.com/analysis/stocks/us-stocks/261948979-rocket-lab-1-1-billion-backlog-50-successful-launches-neutron-2026-is-rklb-a-buy-at-117-tradingkey",
+    "https://spaceflightnow.com/2026/05/07/rocket-lab-announces-five-launch-neutron-deal-as-it-continues-aiming-for-late-2026-debut/",
+    "https://www.marketbeat.com/instant-alerts/rocket-lab-nasdaqrklb-trading-down-72-on-disappointing-earnings-2026-05-07/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Rocket Lab รายงาน Q1 2026 สถิติใหม่ (revenue $200.3M เกิน consensus, backlog พุ่งเป็น $2.2B จาก Electron/HASTE 31 สัญญาใหม่ + Neutron 5 สัญญา) หุ้นเคยทะลุ $100 ครั้งแรกวันประกาศงบก่อนคืนกำไรไปหลายสัปดาห์จากความผันผวนของ sector ไม่เกี่ยวกับผลงานบริษัทเอง Q2 2026 earnings 6 ส.ค. — management guide สถิติใหม่อีกรอบ Consensus target ~$108 = upside ~41% จากราคาที่ย่อแล้ว Neutron first launch (Q4 2026) เป็น catalyst โครงสร้างใหญ่กว่าแต่ไกลกว่า",
+      "priceNote": "ร่วง 5.32% วันนี้ ย่อจากจุดสูงสุดปลายพ.ค. (~$151) ราว 30-34% จากปัจจัย sector ไม่ใช่ปัญหาบริษัท",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "Q2 2026 Earnings", "description": "6 ส.ค. — guide revenue $225-240M สถิติใหม่อีกรอบถ้าทำได้" },
+        { "name": "Neutron First Launch", "description": "จรวด Neutron แบบ reusable ครึ่งหนึ่ง — catalyst โครงสร้างจริง เป้า Q4 2026" },
+        { "name": "Contract Momentum ต่อเนื่อง", "description": "Anduril, Raytheon partnership + robotics acquisition ใหม่ หนุน backlog" }
+      ],
+      "risks": [
+        "Valuation สูง ~40x 2028 EV/revenue — ข่าวดีถูก price in ไปมากแล้วแม้ย่อแล้ว",
+        "Neutron เลื่อนมาแล้วครั้งหนึ่ง — เลื่อนอีกเป็นความเสี่ยงที่เกิดซ้ำได้ใน launch industry",
+        "High-beta ขึ้นกับ sentiment — ย่อ 30-34% จาก sector factor ไม่ใช่ fundamental แสดงว่าหุ้นเทรดเกิน fundamental เอง",
+        "Earnings reaction ได้ทั้งสองทาง — Q1 beat หุ้นพุ่งแรง แต่ Q2 miss หลัง setup แบบนี้อาจร่วงแรงเท่ากัน",
+        "สัปดาห์ macro หนาแน่น (FOMC + Big Tech 4 + PCE 27ก.ค.-1ส.ค.) มาก่อน earnings 6 ส.ค. — high-beta เสี่ยงสุดถ้า risk-off"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed hold 3.50-3.75% แต่ Warsh เอียง hawkish — หุ้น growth high-beta valuation สูงแบบนี้ sensitive กับ rate สูงต่อเนื่อง",
+        "inflationNote": "Core PCE เร่งเป็น 3.4% YoY (พ.ค.) หนุนภาพ hawkish ก่อน FOMC 28-29 ก.ค. ซึ่งมาก่อน earnings ของ RKLB เอง 1 สัปดาห์",
+        "sectorImpact": "สูง — RKLB แสดง sensitivity ต่อ sector sentiment shock มาแล้ว (Blue Origin, SpaceX IPO) ไม่เกี่ยวกับ fundamental ตัวเอง",
+        "summary": "ความเสี่ยง Fed ปานกลาง — catalyst earnings เฉพาะบริษัทจริง แต่ high-beta + valuation สูงทำให้ expose กับสัปดาห์ FOMC/earnings/PCE ที่แน่นมาก่อน print ตัวเอง"
+      },
+      "entryStrategy": {
+        "verdict": "BUY ช่วงย่อก่อน Q2 earnings — fundamental (backlog สถิติใหม่, guide สถิติใหม่อีกรอบ) ไม่เปลี่ยน ย่อ ~30% จาก sentiment sector ไม่ใช่ปัญหาบริษัท 6 ส.ค. คือจุดพิสูจน์ระยะสั้น",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ย่อจากจุดสูงสุดพ.ค.แล้ว ~30%", "timing": "ตอนนี้" },
+          { "note": "โซนย่อเพิ่มจาก sector — R/R ดีที่สุดก่อน earnings 6 ส.ค.", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงลึก — macro selloff ใหญ่ก่อน FOMC", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — Q2 beat สะอาด guidance ยืนยันเดิม" },
+        "tp2": { "note": "Bull — Q2 beat + guide ขึ้น แตะ consensus target" },
+        "tp3": { "note": "Moon — Q2 beat + Neutron progress de-risk พร้อมกัน", "moon": true },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่าโซน Entry 2 = momentum เปลี่ยนลบก่อน earnings",
+          "hardNote": "หลุดลึกจาก macro = thesis ยังอยู่แต่เกิน tolerance",
+          "rrNote": "จาก Entry 2 ($70 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R ดีแต่ high-beta — size ให้เหมาะกับความผันผวน"
+        }
+      },
+      "estimateDates": [
+        { "event": "Q2 2026 Earnings", "note": "Guide $225-240M revenue สถิติใหม่ถ้าทำได้" },
+        { "event": "Neutron First Launch", "note": "5 สัญญา commercial เซ็นแล้วก่อนบิน — catalyst re-rate โครงสร้าง" }
+      ]
+    }
+  }
+}

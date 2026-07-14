@@ -1,0 +1,200 @@
+{
+  "ticker": "KTOS",
+  "companyName": "Kratos Defense & Security Solutions, Inc.",
+  "companyDescription": "Affordable jet-drone + C-UAS + space domain awareness · Valkyrie CCA (USMC program of record) · $100M+ in fresh contract wins this month alone · Q2 earnings Aug 5",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-14T20:00:00.000Z",
+  "price": 46.96,
+  "priceChange": -2.55,
+  "priceNote": "Down 2.55% today per live-prices.json cache (1.4h old), continuing a pullback from the $50.89 level 4 days ago and well off the 52-week high of $134. Refreshing this pick — thesis strengthened on new contract wins since the last update.",
+  "marketCap": "$8.8B",
+  "sector": "Aerospace & Defense / Unmanned Systems",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 74,
+  "summary": "Kratos just landed two fresh contracts this month — a ~$100M sole-source space domain awareness award (Jul 13) and a ~$36M air defense system award (Jul 2) — on top of a manufacturing-capacity expansion for Valkyrie (the USMC's Collaborative Combat Aircraft program of record). Q1 2026 EPS beat by 33% but the stock still fell on the print — Kratos has an unusual, real pattern of the market reacting negatively to earnings days even on strong beats, while rewarding contract-win news instead (+8.71% on late-June contract news). Named-firm targets (Jefferies $80, JPMorgan $82, Wedbush $85) average ~$82, implying ~75% upside from the pulled-back price. The Aug 5 earnings date is on the calendar, but the more reliable near-term driver here is the contract cadence, not the print itself.",
+  "catalysts": [
+    {
+      "icon": "🛰️",
+      "name": "$100M Space Domain Awareness Contract",
+      "description": "Sole-source prime contract awarded Jul 13, 2026 for a ground-based modular space domain awareness system — puts a Kratos system into production. Real, already-announced news feeding the near-term backlog, not a forward-looking estimate.",
+      "urgencyLabel": "JUST ANNOUNCED",
+      "dateBadge": "Jul 13, 2026",
+      "catalystDate": "2026-07-13",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "Reports Aug 5, 2026. Kratos has a real, documented pattern of negative-to-mixed stock reactions on earnings days even after beats (Q1 2026: EPS beat by 33%, stock still fell 4.2-7.4% that day) — the print itself is a lower-conviction catalyst than the ongoing contract cadence, but it's the nearest dated event on the calendar.",
+      "urgencyLabel": "22 DAYS",
+      "dateBadge": "Aug 5, 2026",
+      "catalystDate": "2026-08-05",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "✈️",
+      "name": "Valkyrie CCA — Manufacturing Expansion",
+      "description": "Oklahoma City campus expanded by 100,000+ sq ft (announced Jul 6) to accelerate production of Valkyrie — the USMC's Collaborative Combat Aircraft program of record — plus Firejet/Mighty Hornet IV. Signals real ramping demand, not just a design win.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Kratos has an unusual, real pattern of NEGATIVE earnings-day reactions even on beats — Q1 2026 EPS beat estimates by 33% and the stock still fell 4.2-7.4% that day; the last 5 quarters averaged a -1.96% earnings-headline reaction despite consistent double-digit growth and repeated guidance raises. The Aug 5 date should not be treated as a high-conviction 'buy the beat' setup the way it would be for a typical grower",
+    "The 'aggregate consensus (20 analysts) $110' target cited in some sources is explicitly flagged as wide-dispersion, not a tight consensus — the more credible near-term number is the named-firm average (~$82) used for this report's gate",
+    "Contract-driven upside is lumpy and hard to time precisely — good for the thesis, bad for predicting exactly when the next mover hits",
+    "Stock is down sharply from its 52-week high ($134) — a level that reflected some genuine excitement that has since cooled; further multiple compression is possible if defense-budget sentiment sours",
+    "Dense macro event week (FOMC + Big Tech earnings + PCE, Jul 27-Aug 1) sits directly before the Aug 5 print, adding macro-driven volatility on top of KTOS's own idiosyncratic earnings-day pattern"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Aug 5, 2026", "note": "Nearest dated event, but historically a lower-conviction catalyst than contract news for this specific stock", "est": "Consensus EPS ~$0.14-0.16", "highlight": "yellow" },
+    { "event": "Next Contract Award (unscheduled)", "dateRange": "Ongoing", "note": "The real near-term driver — 2 awards totaling ~$136M already landed this month alone", "est": "Unscheduled, recurring", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -25, "price": 35.22 },
+    { "label": "Base", "color": "yellow", "pct": 45, "price": 68.09 },
+    { "label": "Bull", "color": "green", "pct": 75, "price": 82.18 },
+    { "label": "Moon", "color": "purple", "pct": 134, "price": 109.89 }
+  ],
+  "analystTargets": [
+    { "firm": "Wedbush", "target": 85, "rating": "Outperform", "note": "New coverage initiation" },
+    { "firm": "JPMorgan", "target": 82, "rating": "Overweight", "note": "Upgraded from Neutral, Jul 2026" },
+    { "firm": "Jefferies", "target": 80, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Fed at 3.50-3.75%; defense/DoD program spending is policy-driven and largely rate-insensitive. Kratos's near-term drivers (contract cadence, Valkyrie ramp) are decoupled from the rate cycle.",
+    "inflationNote": "Core PCE at 3.4% YoY (May) doesn't materially change defense procurement budgets, which are set through the appropriations process, not monetary policy.",
+    "sectorImpact": "LOW-MEDIUM. Defense names are typically more insulated from a hawkish-Fed macro tape than high-multiple tech, though the stock's own valuation (already well off its 52-week high) carries some multiple-compression risk in a genuine risk-off week.",
+    "summary": "Fed risk LOW — the contract-cadence thesis and Valkyrie ramp are policy/program-driven, not rate-driven. The Aug 5 earnings date sits right after the dense Jul 27-Aug 1 FOMC/earnings/PCE week, but Kratos's own earnings-day behavior (often negative even on beats) is a bigger idiosyncratic risk than the macro backdrop here."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 46.96, "note": "Current price — well off the 52-week high, post fresh contract wins", "timing": "Now" },
+      { "label": "Entry 2", "level": 41, "rangeMax": 44, "note": "Further pullback zone — best R/R given the stock's pattern of not popping on earnings", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 36, "note": "Deep dip — broad defense-sector or macro selloff", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 68.09, "pct": 45, "note": "Base — contract cadence continues, no earnings-day catalyst needed" },
+    "tp2": { "price": 82.18, "pct": 75, "note": "Bull — named-firm consensus reached on sustained contract momentum" },
+    "tp3": { "price": 109.89, "pct": 134, "note": "Moon — Valkyrie program scales + wide-consensus $110 target reached", "moon": true },
+    "stopLoss": {
+      "tight": 41, "tightPct": -12.7, "tightNote": "Below Entry 2 zone — contract cadence stalling",
+      "hard": 34, "hardPct": -27.6, "hardNote": "Deep breach — Valkyrie program or major contract setback",
+      "riskReward": "4.1 : 1", "rrNote": "From Entry 2 ($42.5 mid) tight stop vs TP2", "rrWarning": "Good R/R — thesis rests on contract cadence, not the Aug 5 print"
+    },
+    "verdict": "BUY the pullback — the thesis here is the contract cadence (2 awards, ~$136M, in the first two weeks of July alone) and the Valkyrie ramp, not the Aug 5 earnings date, which has a real history of disappointing even on beats.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "Kratos moves more on contract-award news than on scheduled earnings — the late-June 2026 contract-win news drove an +8.71% single-day pop, a cleaner and more reliable pattern than its earnings-day history.",
+    "preRunupTiming": "reacts same-day to contract news, unscheduled and recurring rather than a pre-event drift",
+    "preRunupPct": "+5% to +9% same-day pop pattern on contract announcements",
+    "postWin": {
+      "avgPct": 9,
+      "range": "+5% to +9%",
+      "note": "Late Jun 2026 defense-contract-win news drove KTOS up 8.71% same day — the cleanest, most recent same-company precedent for how this stock reacts to contract (not earnings) catalysts, which is the actual thesis driver here.",
+      "exampleDate": "Jun 2026"
+    },
+    "postLose": {
+      "avgPct": -6,
+      "range": "-4% to -7%",
+      "note": "KTOS's own Q1 2026 earnings reaction: stock fell 4.2-7.4% THE SAME DAY despite a 33% EPS beat and raised FY26 guidance — an unusual, real, documented pattern for this specific stock that argues for tempered expectations on the Aug 5 date itself.",
+      "exampleDate": "May 2026"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "Speculative sizing — real, funded contract momentum supports the thesis, but the demonstrated earnings-day quirk (negative reactions even on beats) argues against over-sizing into the Aug 5 date specifically."
+    },
+    "stopPreCatalyst": { "pct": -13, "price": 41, "note": "Below Entry 2 zone = contract cadence stalling, not just earnings-day noise" },
+    "stopPostCatalyst": { "pct": -18, "note": "If Q2 shows a real guidance cut (not just a habitual negative earnings-day reaction) or Valkyrie program setback, exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "KTOS",
+      "event": "Q1 2026 Earnings — 33% EPS Beat, Stock Fell Anyway",
+      "date": "May 2026",
+      "movePct": -6,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "Same-company precedent showing this stock's unusual negative-leaning earnings-day pattern despite genuinely strong results — directly relevant to calibrating expectations for Aug 5."
+    },
+    {
+      "ticker": "KTOS",
+      "event": "Late June 2026 Defense Contract Win",
+      "date": "Jun 2026",
+      "movePct": 9,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company precedent for the actual thesis driver — contract news, not earnings, is what reliably moves this stock higher."
+    },
+    {
+      "ticker": "AVAV",
+      "event": "$500M Army Counter-Drone Contract Award",
+      "date": "Jul 2026",
+      "movePct": 3,
+      "days": 1,
+      "outcome": "good",
+      "note": "Comparable defense-sector contract-award reaction — a smaller pop than KTOS's own June example, useful as a sanity check on the range."
+    }
+  ],
+  "sources": [
+    "https://www.stocktitan.net/news/KTOS/kratos-receives-approximate-100-million-sole-source-prime-space-jqyb2fp8nt9k.html",
+    "https://www.globenewswire.com/news-release/2026/07/02/3321280/0/en/kratos-receives-approximate-36-million-air-defense-system-single-award-contract.html",
+    "https://www.globenewswire.com/news-release/2026/07/06/3322365/224/en/Kratos-Expands-Oklahoma-City-Manufacturing-Facility-to-Accelerate-Production-of-Valkyrie-Firejet-and-Other-Jet-Drone-Systems.html",
+    "https://www.optionslam.com/earnings/stocks/KTOS",
+    "https://www.stocktitan.net/news/KTOS/kratos-reports-first-quarter-2026-financial-results-and-increases-3zw7uhykyoqy.html",
+    "https://stockstotrade.com/news/kratos-defense-security-solutions-inc-ktos-news-2026_06_30/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Kratos เพิ่งได้สัญญาใหม่ 2 ตัวเดือนนี้ — space domain awareness sole-source ~$100M (13 ก.ค.) และ air defense system ~$36M (2 ก.ค.) บวกขยายกำลังผลิต Valkyrie (โครงการ CCA ของ USMC) Q1 2026 EPS beat 33% แต่หุ้นยังร่วงวันประกาศงบ — Kratos มี pattern แปลกจริงที่ตลาดตอบสนองลบต่อวัน earnings แม้ beat แต่ตอบสนองบวกต่อข่าวสัญญาใหม่ (+8.71% ปลายมิ.ย.) Named-firm target เฉลี่ย (Jefferies $80, JPM $82, Wedbush $85) ~$82 = upside ~75% จากราคาที่ย่อแล้ว วันที่ earnings 5 ส.ค. อยู่ใน calendar แต่ driver ที่เชื่อถือได้กว่าคือจังหวะสัญญาใหม่ ไม่ใช่ตัว print เอง",
+      "priceNote": "ร่วง 2.55% วันนี้ ต่อเนื่องจากย่อจาก $50.89 เมื่อ 4 วันก่อน ไกลจาก 52-week high $134 — refresh pick นี้เพราะ thesis แข็งขึ้นจากสัญญาใหม่",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "สัญญา Space Domain Awareness $100M", "description": "sole-source prime contract 13 ก.ค. 2026 — ระบบ Kratos เข้าสู่ production จริง" },
+        { "name": "Q2 2026 Earnings", "description": "5 ส.ค. — Kratos มี pattern ตอบสนองลบวัน earnings แม้ beat จริง เป็น catalyst ความมั่นใจต่ำกว่าสัญญาใหม่" },
+        { "name": "Valkyrie CCA — ขยายกำลังผลิต", "description": "ขยายโรงงาน Oklahoma City 100,000+ ตร.ฟุต หนุน Valkyrie โครงการ CCA ของ USMC" }
+      ],
+      "risks": [
+        "Kratos มี pattern ตอบสนองลบวัน earnings แม้ beat จริง — Q1 2026 beat 33% หุ้นยังร่วง 4.2-7.4% วันนั้น 5 ไตรมาสหลังเฉลี่ย -1.96% แม้โตต่อเนื่อง",
+        "'Aggregate consensus 20 analysts $110' เป็น wide-dispersion ไม่ใช่ consensus แน่น — เลขที่น่าเชื่อกว่าคือ named-firm average (~$82) ที่ใช้เป็น gate ของรายงานนี้",
+        "Upside จากสัญญาใหม่ไม่สม่ำเสมอ — ดีต่อ thesis แต่ทำนายเวลาแน่นอนยาก",
+        "หุ้นร่วงมากจาก 52-week high ($134) — บางส่วนเป็นความตื่นเต้นที่เย็นลงแล้ว valuation อาจบีบต่อได้",
+        "สัปดาห์ macro หนาแน่น (FOMC+Big Tech+PCE 27ก.ค.-1ส.ค.) มาก่อน earnings 5 ส.ค. ซ้อนกับ pattern earnings ลบของหุ้นเอง"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed 3.50-3.75% — งบ defense/DoD ขับเคลื่อนด้วยนโยบายไม่ใช่ rate cycle",
+        "inflationNote": "Core PCE 3.4% ไม่กระทบงบ procurement defense ที่กำหนดผ่าน appropriations ไม่ใช่ monetary policy",
+        "sectorImpact": "ต่ำ-ปานกลาง หุ้น defense กันความเสี่ยงจาก hawkish Fed ได้ดีกว่า tech valuation สูง แต่ valuation ตัวเองที่ห่างจาก high มี compression risk ได้ถ้า risk-off จริง",
+        "summary": "ความเสี่ยง Fed ต่ำ — thesis สัญญาใหม่ + Valkyrie ramp ขับเคลื่อนด้วย policy ไม่ใช่ rate earnings 5 ส.ค. อยู่หลังสัปดาห์ FOMC หนาแน่น แต่ pattern earnings ลบของ Kratos เองเป็นความเสี่ยงเฉพาะตัวที่ใหญ่กว่า macro"
+      },
+      "entryStrategy": {
+        "verdict": "BUY ช่วงย่อ — thesis คือจังหวะสัญญาใหม่ (2 สัญญา ~$136M ใน 2 สัปดาห์แรกก.ค.) และ Valkyrie ramp ไม่ใช่วัน earnings 5 ส.ค. ที่มีประวัติผิดหวังแม้ beat จริง",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ไกลจาก 52-week high หลังได้สัญญาใหม่", "timing": "ตอนนี้" },
+          { "note": "โซนย่อเพิ่ม — R/R ดีที่สุดเพราะหุ้นไม่ค่อยพุ่งวัน earnings", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงลึก — sector defense หรือ macro selloff ใหญ่", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — จังหวะสัญญาใหม่ต่อเนื่อง ไม่ต้องรอ earnings" },
+        "tp2": { "note": "Bull — แตะ named-firm consensus จาก momentum สัญญาต่อเนื่อง" },
+        "tp3": { "note": "Moon — Valkyrie scale ขึ้น + แตะ wide-consensus $110", "moon": true },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่าโซน Entry 2 = จังหวะสัญญาใหม่ชะลอ",
+          "hardNote": "หลุดลึก = Valkyrie หรือสัญญาใหญ่มีปัญหา",
+          "rrNote": "จาก Entry 2 ($42.5 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R ดี — thesis อยู่ที่จังหวะสัญญาใหม่ ไม่ใช่ print 5 ส.ค."
+        }
+      },
+      "estimateDates": [
+        { "event": "Q2 2026 Earnings", "note": "วันที่ใกล้สุดใน calendar แต่ประวัติเป็น catalyst ความมั่นใจต่ำกว่าข่าวสัญญาใหม่" },
+        { "event": "สัญญาใหม่ถัดไป (ไม่มีกำหนด)", "note": "driver จริงระยะสั้น — 2 สัญญา ~$136M ได้แล้วแค่ 2 สัปดาห์แรกก.ค." }
+      ]
+    }
+  }
+}

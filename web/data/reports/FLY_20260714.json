@@ -1,0 +1,199 @@
+{
+  "ticker": "FLY",
+  "companyName": "Firefly Aerospace Inc.",
+  "companyDescription": "Launch + lunar + defense · Alpha rocket + Blue Ghost lunar lander + SciTec (space domain awareness) · $1.3B backlog, 80% of FY26 revenue already booked · Q2 earnings ~Aug 12",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-14T20:00:00.000Z",
+  "price": 22.27,
+  "priceChange": -7.56,
+  "priceNote": "Down 7.56% today per live-prices.json cache (1.4h old) — a further slide from the $25.66 level 6 days ago, deepening the discount to consensus targets. Refreshing this pick given the widened gap.",
+  "marketCap": "$2.1B",
+  "sector": "Industrials / Aerospace & Space Launch",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 70,
+  "summary": "Firefly delivered record Q1 2026 revenue ($80.9M) and reaffirmed FY26 guidance of $420-450M with 80% of that already booked and a $1.3B backlog — a well-covered growth story, not a speculative promise. The stock has kept sliding anyway (down another 7.6% today, ~13% below the $25.66 level from 6 days ago), widening the gap to an 11-analyst consensus target of $42.20 (~90% upside). Q2 earnings land ~Aug 12, with the upgraded Alpha Block 2 rocket debut targeted for late summer and Blue Ghost 2 later this year adding real, if imprecisely dated, forward catalysts.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "Reports ~Aug 12, 2026. FY26 guidance ($420-450M revenue) is 80% pre-booked via backlog, giving genuine visibility — the print is mainly about execution/margin trajectory rather than a demand question.",
+      "urgencyLabel": "29 DAYS",
+      "dateBadge": "~Aug 12, 2026",
+      "catalystDate": "2026-08-12",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🚀",
+      "name": "Alpha Block 2 Debut",
+      "description": "Upgraded Alpha rocket configuration — enhanced reliability, increased height, expanded capabilities — targeted for late summer 2026. This is the vehicle upgrade that de-risks Firefly's core launch business after prior Alpha mishaps.",
+      "urgencyLabel": "~LATE SUMMER",
+      "dateBadge": "Late Summer 2026",
+      "catalystDate": "2026-08-25",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🌙",
+      "name": "Blue Ghost 2 Lunar Mission",
+      "description": "Follow-up to Blue Ghost 1's successful Mar 2025 Moon landing (first commercial firm to do so). Blue Ghost 2 targeted for launch as soon as late this year.",
+      "urgencyLabel": "LATE 2026",
+      "dateBadge": "Late 2026",
+      "catalystDate": "2026-11-15",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Alpha has a real prior mishap history — the upcoming Block 2 debut is explicitly framed as improving reliability after 'explosive mishaps last year,' meaning a repeat failure would hit the stock hard and delay the de-risking narrative",
+    "Neither Alpha Block 2 nor Blue Ghost 2 has a precise date ('late summer' / 'late this year') — both can slip, and the dashboard's proximity read on them is necessarily soft",
+    "Recent $860M SciTec acquisition (Oct 2025, partly stock-funded at $50/share — well above today's price) adds integration risk and diluted the share count at a much higher valuation than today's",
+    "Small-cap, high-beta space name — has fallen further even without new negative company-specific news, suggesting sector-wide risk appetite (not Firefly execution) is currently the dominant driver",
+    "Analyst target dispersion is real: consensus $42.20 (11 analysts, high $60/low $28) vs. a separately-cited $48.22 figure — different vintages/methodologies give meaningfully different upside math, worth treating the gate number as approximate"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "~Aug 12, 2026", "note": "80% of FY26 guide already booked — print is about execution, not demand", "est": "FY26 guide $420-450M", "highlight": "yellow" },
+    { "event": "Alpha Block 2 Debut", "dateRange": "Late Summer 2026", "note": "De-risks the core launch business post prior-year mishaps", "est": "Targeted late summer", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -30, "price": 15.59 },
+    { "label": "Base", "color": "yellow", "pct": 50, "price": 33.41 },
+    { "label": "Bull", "color": "green", "pct": 90, "price": 42.31 },
+    { "label": "Moon", "color": "purple", "pct": 170, "price": 60.13 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (11 analysts)", "target": 42.20, "rating": "Moderate Buy", "note": "MarketBeat avg; high $60, low $28" },
+    { "firm": "KeyBanc", "target": 50, "rating": "Overweight", "note": "Upgraded from Sector Weight" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed holds at 3.50-3.75%, but Chair Warsh's hawkish Jun debut FOMC keeps small-cap, high-beta growth names like FLY exposed to a higher-for-longer repricing more than the broad market.",
+    "inflationNote": "Core PCE accelerated to 3.4% YoY (May) — reinforces the hawkish backdrop into the Jul 28-29 FOMC.",
+    "sectorImpact": "HIGH — small-cap space/high-beta names have shown real weakness recently even against a resilient broad tape (small caps, speculative growth broadly declined Jul 10 even as the S&P advanced). FLY's continued slide despite in-line fundamentals fits this pattern.",
+    "summary": "Fed risk MEDIUM-HIGH for this name specifically — the backlog/guidance thesis is fundamentals-driven, but FLY's demonstrated small-cap high-beta sensitivity means it's more exposed than most to a risk-off shock around the dense Jul 28-Aug 1 FOMC/earnings/PCE week."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 22.27, "note": "Current price — down further today, widening gap to consensus target", "timing": "Now (small)" },
+      { "label": "Entry 2", "level": 19, "rangeMax": 20.5, "note": "Further sector-driven dip zone — best R/R ahead of Aug 12 earnings", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 16, "note": "Deep dip — broad small-cap/space-sector selloff", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 33.41, "pct": 50, "note": "Base — clean Q2 execution on already-booked guidance" },
+    "tp2": { "price": 42.31, "pct": 90, "note": "Bull — Q2 beat + clean Alpha Block 2 debut, consensus target reached" },
+    "tp3": { "price": 60.13, "pct": 170, "note": "Moon — Alpha Block 2 success + Blue Ghost 2 launched on schedule, full re-rate", "moon": true },
+    "stopLoss": {
+      "tight": 19, "tightPct": -14.7, "tightNote": "Below Entry 2 zone — momentum still deteriorating",
+      "hard": 15, "hardPct": -32.6, "hardNote": "Deep breach — an Alpha Block 2 failure or guidance cut would justify this",
+      "riskReward": "3.7 : 1", "rrNote": "From Entry 2 ($19.75 mid) tight stop vs TP2", "rrWarning": "Good R/R but small-cap high-beta — size accordingly"
+    },
+    "verdict": "SPECULATIVE — buy small into continued weakness given the backlog visibility (80% of FY26 already booked), size up on further dips. Alpha Block 2's debut is the real de-risking event to watch given last year's mishap history.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "delivery_beat",
+    "preRunup": "Firefly's stock has moved on both contract wins (NASA JPL SkyFall subcontract, Jul 7) and conference appearances (Needham Space & Industrial Summit, Jul 9) in the run-up to earnings, though the net effect recently has been a continued slide rather than a runup.",
+    "preRunupTiming": "2-4 weeks before the Aug 12 print, though currently working against sector-wide sentiment headwinds",
+    "preRunupPct": "mixed — recent contract news hasn't been enough to offset broader small-cap/high-beta selling",
+    "postWin": {
+      "avgPct": 15,
+      "range": "+5% to +25%",
+      "note": "No large single-session same-company earnings-day precedent is available yet (Firefly IPO'd in 2025), so this leans on the broader small-cap space-launch pattern (e.g. RKLB's post-beat pops) tempered for FLY's own recent tendency to sell off even on decent news.",
+      "exampleDate": "2026 (sector pattern)"
+    },
+    "postLose": {
+      "avgPct": -20,
+      "range": "-15% to -30%",
+      "note": "Given Alpha's real prior mishap history, a failed or delayed Block 2 debut would likely trigger a sharper reaction than a typical earnings miss — sized toward the higher end of typical small-cap space-sector selloffs.",
+      "exampleDate": "sector pattern — no exact same-company precedent yet for Block 2 specifically"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "ค่าขนม-adjacent sizing — real backlog/revenue visibility supports the thesis, but small market cap, imprecise catalyst dates, and Alpha's mishap history argue for a smaller, speculative-tier position rather than a core one."
+    },
+    "stopPreCatalyst": { "pct": -15, "price": 19, "note": "Below Entry 2 zone = sector weakness deepening beyond normal noise" },
+    "stopPostCatalyst": { "pct": -25, "note": "If Q2 guidance is cut or Alpha Block 2 has another mishap, exit — don't average into a broken thesis" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "RKLB",
+      "event": "Q1 2026 Earnings Beat — Record Revenue",
+      "date": "May 2026",
+      "movePct": 34,
+      "days": 1,
+      "outcome": "good",
+      "note": "Closest available same-sector comp for a clean space-launch earnings beat, given FLY has no long same-company earnings history of its own yet."
+    },
+    {
+      "ticker": "FLY",
+      "event": "NASA JPL $13M SkyFall Mars Aeroshell Subcontract",
+      "date": "Jul 2026",
+      "movePct": 5,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "Same-company recent contract win — a modest positive that wasn't enough to offset broader sector selling, illustrating the current macro headwind this stock faces."
+    },
+    {
+      "ticker": "RKLB",
+      "event": "Post-earnings sector-driven pullback",
+      "date": "2026",
+      "movePct": -30,
+      "days": 30,
+      "outcome": "bad",
+      "note": "Same-sector precedent for how quickly space-launch gains can evaporate on sector-wide sentiment even after strong fundamentals — directly relevant given FLY's own recent slide."
+    }
+  ],
+  "sources": [
+    "https://seekingalpha.com/news/4566832-firefly-aerospace-outlines-420m-450m-2026-revenue-target-as-company-scales-lunar-and-defense",
+    "https://spacenews.com/firefly-plans-late-summer-launch-of-first-alpha-block-2-rocket/",
+    "https://www.stocktitan.net/news/FLY/firefly-aerospace-receives-13-million-nasa-jpl-subcontract-to-build-2723h7stve6h.html",
+    "https://www.flyingmag.com/firefly-debut-upgraded-rocket-next-test-flight/",
+    "https://www.marketscreener.com/quote/stock/FIREFLY-AEROSPACE-INC-193155926/consensus/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Firefly ทำสถิติ Q1 2026 revenue ใหม่ ($80.9M) และยืนยัน FY26 guide $420-450M โดย 80% จองแล้วผ่าน backlog $1.3B — เป็น growth story ที่มี visibility จริง ไม่ใช่แค่สัญญา แต่หุ้นยังร่วงต่อ (วันนี้ -7.56% ต่ำกว่า $25.66 เมื่อ 6 วันก่อนอีก ~13%) ทำให้ gap กับ consensus target $42.20 (11 analysts) กว้างขึ้น = upside ~90% Q2 earnings ~12 ส.ค. บวก Alpha Block 2 debut ปลายฤดูร้อนและ Blue Ghost 2 ปลายปีเป็น catalyst จริงแม้วันที่ไม่ชัดเจน",
+      "priceNote": "ร่วง 7.56% วันนี้ ต่อเนื่องจาก $25.66 เมื่อ 6 วันก่อน — refresh pick นี้เพราะ gap กว้างขึ้น",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "Q2 2026 Earnings", "description": "~12 ส.ค. — FY26 guide จองแล้ว 80% print เน้นเรื่อง execution ไม่ใช่ demand" },
+        { "name": "Alpha Block 2 Debut", "description": "จรวด Alpha รุ่นอัพเกรด — ความน่าเชื่อถือดีขึ้นหลัง mishap ปีก่อน เป้าปลายฤดูร้อน" },
+        { "name": "ภารกิจ Blue Ghost 2 บนดวงจันทร์", "description": "ต่อจาก Blue Ghost 1 ที่ลงจอดสำเร็จมี.ค. 2025 เป้าปลายปีนี้" }
+      ],
+      "risks": [
+        "Alpha มีประวัติ mishap จริง — Block 2 debut ต้องพิสูจน์ความน่าเชื่อถือ ถ้าล้มเหลวซ้ำหุ้นจะโดนหนัก",
+        "ทั้ง Alpha Block 2 และ Blue Ghost 2 ไม่มีวันที่แน่นอน ('ปลายฤดูร้อน'/'ปลายปีนี้') เลื่อนได้ทั้งคู่",
+        "ดีล SciTec $860M (ต.ค. 2025) จ่ายด้วยหุ้นบางส่วนที่ $50 — สูงกว่าราคาวันนี้มาก เพิ่มความเสี่ยง integration + dilution",
+        "Small-cap high-beta space — ร่วงต่อแม้ไม่มีข่าวลบเฉพาะบริษัทใหม่ ชี้ว่า sector sentiment คือ driver หลักตอนนี้ ไม่ใช่ execution",
+        "Target กระจาย — consensus $42.20 (11 analysts) vs ตัวเลขอื่น $48.22 จาก vintage/วิธีคิดต่างกัน ควรมองเป็นตัวเลขประมาณ"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed hold 3.50-3.75% แต่ Warsh เอียง hawkish — small-cap high-beta แบบนี้ sensitive กับ rate สูงต่อเนื่องมากกว่าตลาดรวม",
+        "inflationNote": "Core PCE เร่งเป็น 3.4% YoY (พ.ค.) หนุนภาพ hawkish ก่อน FOMC 28-29 ก.ค.",
+        "sectorImpact": "สูง — small-cap space/high-beta อ่อนแอจริงแม้ตลาดรวมยืนได้ (10 ก.ค. small cap ร่วงแม้ S&P บวก) FLY ร่วงต่อแม้ fundamental ปกติ ตรงกับ pattern นี้",
+        "summary": "ความเสี่ยง Fed ปานกลาง-สูงเฉพาะตัวหุ้นนี้ — thesis backlog/guidance เป็น fundamental แต่ high-beta small-cap expose กับ risk-off สัปดาห์ FOMC/earnings/PCE ที่แน่นมากกว่าตลาดทั่วไป"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — เข้าเล็กช่วงอ่อนแอต่อเนื่อง เพิ่ม size ตอนย่อลึกกว่านี้ backlog visibility (80% จองแล้ว) หนุน thesis Alpha Block 2 debut คือจุดพิสูจน์จริงหลัง mishap ปีก่อน",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ร่วงต่อวันนี้ gap กับ consensus กว้างขึ้น", "timing": "ตอนนี้ (เล็ก)" },
+          { "note": "โซนย่อเพิ่มจาก sector — R/R ดีที่สุดก่อน earnings 12 ส.ค.", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงลึก — small-cap/space sector selloff ใหญ่", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — execution สะอาดบน guidance ที่จองแล้ว" },
+        "tp2": { "note": "Bull — Q2 beat + Alpha Block 2 debut สำเร็จ แตะ consensus" },
+        "tp3": { "note": "Moon — Alpha Block 2 สำเร็จ + Blue Ghost 2 บินตามกำหนด re-rate เต็มที่", "moon": true },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่าโซน Entry 2 = momentum ยังแย่ลงต่อ",
+          "hardNote": "หลุดลึก = Alpha Block 2 ล้มเหลวหรือ guidance ถูกตัด",
+          "rrNote": "จาก Entry 2 ($19.75 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R ดีแต่ small-cap high-beta — size ให้เหมาะสม"
+        }
+      },
+      "estimateDates": [
+        { "event": "Q2 2026 Earnings", "note": "80% ของ FY26 guide จองแล้ว — print เน้น execution ไม่ใช่ demand" },
+        { "event": "Alpha Block 2 Debut", "note": "จุดพิสูจน์ de-risk ธุรกิจ launch หลัง mishap ปีก่อน" }
+      ]
+    }
+  }
+}

@@ -194,6 +194,96 @@
       "priceAtScreen": 21.28,
       "topAnalystTarget": 29.24,
       "impliedUpside": 37.4
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "PL",
+      "lane": "core",
+      "reason": "Cleared the 30%+ gate (46% upside, 5-analyst median target $38 vs price $25.96) but proximity weaker than the 5 picks that made top 5 this run — next dated catalyst is Q2 FY27 earnings Sep 8 (56 days out, vs 15-29 days for OKLO/CAPR/RKLB/KTOS/FLY). Strong backup, not a flaw in the thesis — revisit as the Sep 8 window approaches.",
+      "priceAtScreen": 25.96,
+      "topAnalystTarget": 38,
+      "impliedUpside": 46.4
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "ASTS",
+      "lane": "core",
+      "reason": "longlist-cut: Hold consensus target $81.47 (11 analysts) vs price $67.58 = only ~21% upside — doesn't clear the 30% gate despite a real near-term catalyst (Block 2 BlueBird launch, early Aug). Consistent with prior disqualifications (Jun 26, Jul 1, Jul 10) — price has recovered enough that the gap to target has closed.",
+      "priceAtScreen": 67.58,
+      "topAnalystTarget": 81.47,
+      "impliedUpside": 20.6
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "GOOGL",
+      "lane": "core",
+      "reason": "longlist-cut: Consensus target ~$430 vs price $352.51 = ~22% upside — still short of the 30% gate despite a real Jul 22 earnings catalyst. Consistent with the Jul 6 disqualification (~20% then) — the gap hasn't meaningfully closed in a month.",
+      "priceAtScreen": 352.51,
+      "topAnalystTarget": 430,
+      "impliedUpside": 22.0
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "TER",
+      "lane": "core",
+      "reason": "longlist-cut: Consensus target $398.71 vs price sources conflicted between $321-369 this run — best case (using the lower $321 price) only gives ~24% upside, worst case ~8%. Doesn't clear the 30% gate either way despite a real Aug 5 earnings catalyst. Consistent with Jul 10 disqualification.",
+      "priceAtScreen": 369.05,
+      "topAnalystTarget": 398.71,
+      "impliedUpside": 8.0
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "OUST",
+      "lane": "core",
+      "reason": "longlist-cut: Price has run past consensus targets — average target ~$40.8-46.86 across sources vs current ~$49.94 = negative implied upside. No clean near-term dated catalyst found either. Stock is up 114%+ YTD; the easy money looks taken.",
+      "priceAtScreen": 49.94,
+      "topAnalystTarget": 45,
+      "impliedUpside": -9.9
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "ACMR",
+      "lane": "core",
+      "reason": "longlist-cut: Average analyst target $72.01 vs price $59.85 = ~20% upside — doesn't clear the 30% gate despite a real Aug 4 earnings catalyst and strong recent target raises (to $70 from $40, to $68 from $58) citing backlog visibility.",
+      "priceAtScreen": 59.85,
+      "topAnalystTarget": 72.01,
+      "impliedUpside": 20.3
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "AVAV",
+      "lane": "core",
+      "reason": "longlist-cut: Data was unusually inconsistent across sources this run (current price cited anywhere from $191-207, average target $284-319) — best-effort implied upside would clear the gate (~54%), but confidence in the underlying price is too low to include without a cleaner re-check. Also has no clean forward-dated catalyst (the $500M Army contract driving the thesis was already announced Jul 1). Revisit with a clean price/target pull next run.",
+      "priceAtScreen": 207.07,
+      "topAnalystTarget": 318.96,
+      "impliedUpside": 54.1
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "IONQ",
+      "lane": "core",
+      "reason": "longlist-cut: Clears the 30% gate easily (78% upside, $69.31 consensus vs $38.88) — but this is the third consecutive screen citing the same weak-proximity objection (next catalyst is Sep 8 Investor Day, 56 days out). Cutting again on timing grounds rather than upside, consistent with Jul 6's disqualification, to avoid re-picking a name purely on salience.",
+      "priceAtScreen": 38.88,
+      "topAnalystTarget": 69.31,
+      "impliedUpside": 78.3
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "QUBT",
+      "lane": "core",
+      "reason": "longlist-cut: Huge implied upside (119%, $17.50 target vs $8.00) but no single dated catalyst — ongoing contract/acquisition momentum rather than a scheduled event. Already cut from turbo top-5 this same week (Jul 10) on similar grounds; better fit for turbo lane than catalyst lane given the lack of a clean date.",
+      "priceAtScreen": 8.00,
+      "topAnalystTarget": 17.50,
+      "impliedUpside": 118.75
+    },
+    {
+      "date": "2026-07-14",
+      "ticker": "NNE",
+      "lane": "core",
+      "reason": "longlist-cut: Enormous implied upside (157%, $46.25 avg target vs $18.02) but pre-revenue and no confirmed near-term dated catalyst — NRC construction permit application was submitted but has no decision date yet. Too early-stage for core-lane confidence this run; worth another look once a dated regulatory milestone exists.",
+      "priceAtScreen": 18.02,
+      "topAnalystTarget": 46.25,
+      "impliedUpside": 156.7
     }
   ]
 }
