@@ -383,6 +383,87 @@
       "priceAtScreen": 3.53,
       "topAnalystTarget": 10,
       "impliedUpside": 183.3
+    },
+    {
+      "date": "2026-07-22",
+      "ticker": "REPL",
+      "lane": "core",
+      "reason": "Cleared the initial screen on stale Jul 15 pricing ($9.69 vs $12.86 target = ~33% upside), but by Jul 21 the stock had run to $11.00 and the real 8-analyst S&P Global consensus is $10.67 (-3%) — Wedbush Hold ($9) and an H.C. Wainwright Sell drag the average below JPMorgan/BMO's bullish $16-17 targets. Real Aug 2, 2026 PDUFA (melanoma, RP1) just 10 days out with a late-July adcom, but fails the consensus gate at the current price.",
+      "priceAtScreen": 11.00,
+      "topAnalystTarget": 10.67,
+      "impliedUpside": -3.0
+    },
+    {
+      "date": "2026-07-22",
+      "ticker": "SVRA",
+      "lane": "core",
+      "reason": "Comfortably clears the 30%+ gate (8-analyst consensus ~$9.72 vs $5.84 = ~66% upside; Jefferies cites 90% approval odds) but the PDUFA date was quietly extended from Aug 22 to Nov 22, 2026 back in April 2026 (FDA classified a data response as a major amendment, no safety/efficacy concerns cited) — the Aug 22 figure still widely cited by aggregator sites is stale. At 4 months out this sinks too far down the catalyst-proximity sort for this run.",
+      "priceAtScreen": 5.84,
+      "topAnalystTarget": 9.72,
+      "impliedUpside": 66.4
+    },
+    {
+      "date": "2026-07-22",
+      "ticker": "MU",
+      "lane": "core",
+      "reason": "longlist-cut: Clears the 30%+ gate easily (45-analyst consensus $1,492 vs $970.82 = ~54% upside, AI memory supercycle + Anthropic deal) but next earnings isn't until Sept 21-29, 2026 — over a month out. Also earnings_beat type, the one catalystType bucket with n>=5 track record in skill-feedback.json (12 completed, 0% hitRate, calm-regime not excused) — passed over for tighter-dated, smaller-cap picks this run.",
+      "priceAtScreen": 970.82,
+      "topAnalystTarget": 1492,
+      "impliedUpside": 53.7
+    },
+    {
+      "date": "2026-07-22",
+      "ticker": "JOBY",
+      "lane": "core",
+      "reason": "longlist-cut: Real upside (11-analyst avg $11.01 vs $7.23 = ~52% upside) and a genuine catalyst (FAA Stage 5 compliance flight testing underway, Toyota manufacturing JV) but no hard near-term date — type certificate is only guided to 'late 2026,' too fuzzy to rank on catalyst proximity this run.",
+      "priceAtScreen": 7.23,
+      "topAnalystTarget": 11.01,
+      "impliedUpside": 52.3
+    },
+    {
+      "date": "2026-07-22",
+      "ticker": "JAZZ",
+      "lane": "core",
+      "reason": "longlist-cut: FDA sNDA decision dated Aug 25, 2026 (Ziihera) but 20-analyst consensus $263.1 vs $254.22 price is only ~3.5% upside — large-cap pharma, most of the good news already priced in.",
+      "priceAtScreen": 254.22,
+      "topAnalystTarget": 263.1,
+      "impliedUpside": 3.5
+    },
+    {
+      "date": "2026-07-22",
+      "ticker": "ON",
+      "lane": "core",
+      "reason": "longlist-cut: Price data conflicted between $93-117 across sources during screening; once reconciled to $91.06, the 24/7 Wall St target of $141.68 implies ~56% upside — a real GaN/SiC design-win story — but the dated catalyst (Analyst Day) isn't until September, more diffuse than this round's picks, and $50B+ sizing needs a tighter date to justify a slot over smaller, more binary names.",
+      "priceAtScreen": 91.06,
+      "topAnalystTarget": 141.68,
+      "impliedUpside": 55.6
+    },
+    {
+      "date": "2026-07-22",
+      "ticker": "AMD",
+      "lane": "core",
+      "reason": "longlist-cut: Q2 earnings dated Aug 4, 2026 but 51-analyst consensus $541.66 is essentially flat to slightly below the $544.43 price (-0.5%) — mega-cap, most of the AI upside already priced in after a large YTD run. Also earnings_beat type, the one catalystType bucket with n>=5 track record and a 0% hitRate per skill-feedback.json.",
+      "priceAtScreen": 544.43,
+      "topAnalystTarget": 541.66,
+      "impliedUpside": -0.5
+    },
+    {
+      "date": "2026-07-22",
+      "ticker": "LNTH",
+      "lane": "core",
+      "reason": "longlist-cut: FDA NDA decision dated Aug 13, 2026 (MK-6240) but 11-analyst consensus $105.23 is below the $109.01 price (-3.5%) — market has already priced in an approval.",
+      "priceAtScreen": 109.01,
+      "topAnalystTarget": 105.23,
+      "impliedUpside": -3.5
+    },
+    {
+      "date": "2026-07-22",
+      "ticker": "SYM",
+      "lane": "core",
+      "reason": "longlist-cut: Found during REPL/SVRA replacement research (not in the original 12-ticker longlist). 19-analyst consensus $65.67 vs $42.86 = ~53% upside and an Aug 5, 2026 earnings date clear the gate, but Goldman Sachs carries a Sell rating and $45 target on the name. Chose SERV instead for the robotics slot given SERV's unanimous-bullish 8-analyst set and a much wider margin (243% upside) at a similar cap size.",
+      "priceAtScreen": 42.86,
+      "topAnalystTarget": 65.67,
+      "impliedUpside": 53.2
     }
   ]
 }

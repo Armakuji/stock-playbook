@@ -1,0 +1,197 @@
+{
+  "ticker": "IREN",
+  "companyName": "IREN Limited",
+  "companyDescription": "AI cloud / GPU infrastructure (pivoted from Bitcoin mining) · Microsoft + Nvidia partnerships, $4B+ ARR target · down 46% from its 52-week high on neocloud-demand fears despite a fresh $2.8B contract win",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-22T00:00:00.000Z",
+  "price": 41.29,
+  "priceChange": 2.71,
+  "priceNote": "Self-fetched today (no live-prices.json cache yet). Up 2.71% Jul 21, but still down ~46% from the 52-week high ($76.87) after a month-long neocloud selloff (IREN, Nebius, CoreWeave all fell 13-37% in mid-July on Meta-compute-competition fears) that has now started to reverse on fresh contract news.",
+  "marketCap": "$14.76B",
+  "sector": "Technology / AI Cloud Infrastructure",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Speculative",
+  "score": 74,
+  "summary": "IREN just signed $2.8B in new multi-year AI cloud contracts (Jul 20, 2026), raising its year-end AI Cloud ARR target to $4B+ (from $3.7B) with ~85% of that now under contract — the stock popped 21% on the news but is still down ~46% from its 52-week high after the broader neocloud sector (IREN, Nebius, CoreWeave) sold off 13-37% in mid-July on fears that Meta reselling excess compute capacity threatens the AI-cloud business model. Next earnings is Aug 27, 2026. 13-16 analysts average $76-81 (+84-96% from here), with Bernstein at $100 (+142%). The bear case is real too: an $800M founder equity package raises dilution concerns, and short interest sits at 21%+. This is a volatile, contract-driven AI-infrastructure name — buy the demand story, size for the volatility.",
+  "catalysts": [
+    {
+      "icon": "🤝",
+      "name": "$2.8B AI Cloud Contract Signing",
+      "description": "IREN signed $2.8B in new multi-year cloud services contracts (announced Jul 20, 2026), lifting its year-end AI Cloud ARR target to $4B+ from $3.7B, with customers now including Microsoft, Nvidia, Perplexity, Figure AI, Together AI, and others — ~85% of the new ARR target is already under contract.",
+      "urgencyLabel": "JUST HAPPENED",
+      "dateBadge": "Jul 20, 2026",
+      "catalystDate": "2026-07-20",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "📊",
+      "name": "Q4 FY26 Earnings",
+      "description": "Next scheduled earnings report, where the market will look for the new $2.8B in contracts to start showing up in guidance and for management to address the $800M founder equity dilution concern that's been weighing on the stock.",
+      "urgencyLabel": "~5 WEEKS",
+      "dateBadge": "Aug 27, 2026",
+      "catalystDate": "2026-08-27",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🖥️",
+      "name": "Nvidia/Microsoft Blackwell Deployment Ramp",
+      "description": "Continued buildout of the 5-gigawatt strategic partnership with Nvidia (originally a $3.4B contract for a five-year Blackwell GPU deployment) — ongoing capacity coming online is the underlying driver behind the ARR targets.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "The $800M founder equity compensation package approved by the board carries real dilution risk for existing shareholders — a genuine overhang, not just noise",
+    "Sector-wide neocloud fear is real: Meta's push to resell excess AI computing capacity triggered a 13-37% selloff across IREN, Nebius, and CoreWeave in mid-July, and that structural competitive risk hasn't gone away just because IREN posted a strong contract week",
+    "High short interest (21%+) signals real, funded bear conviction about the neocloud business model's durability, not just momentum trading",
+    "Debt load is rising across the sector to fund GPU buildouts — IREN's own debt has climbed to over $3.6B, a capital-intensity risk if AI-cloud demand growth disappoints",
+    "Customer concentration: a handful of large AI-lab contracts (Microsoft, Nvidia, Perplexity, Figure AI) drive the ARR target — losing or not renewing even one is a bigger swing factor than for a diversified cloud provider"
+  ],
+  "estimateDates": [
+    { "event": "Q4 FY26 Earnings", "dateRange": "Aug 27, 2026", "note": "Market wants to see the $2.8B in new contracts flow into guidance and clarity on the dilution overhang", "est": "ARR trajectory toward $4B+ target is the key metric", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -30, "price": 28.90 },
+    { "label": "Base", "color": "yellow", "pct": 45, "price": 59.87 },
+    { "label": "Bull", "color": "green", "pct": 90, "price": 78.45 },
+    { "label": "Moon", "color": "purple", "pct": 142, "price": 100.00 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (13-16 analysts)", "target": 78.45, "rating": "Buy" },
+    { "firm": "Bernstein", "target": 100.00, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "HIGH",
+    "rateOutlook": "Fed holds at 3.50–3.75%, but new Chair Warsh's hawkish tone has 9 of 18 officials projecting a further 2026 hike, with the next FOMC decision Jul 28–29, 2026 — just days after this report.",
+    "inflationNote": "Core inflation remains above target and the 10-year yield sits near 4.48%; the early-July AI-chip valuation selloff (Micron -13%, Intel -9%, AMD -7% at points) shows how quickly rate/valuation fears can hit the whole AI-infrastructure complex.",
+    "sectorImpact": "IREN is capital-intensive, debt-funded, and pre-durable-profitability — among the most rate-sensitive names in this screen. Higher-for-longer directly raises the cost of the GPU buildout funding its ARR growth.",
+    "summary": "HIGH — this is the most macro-sensitive pick in this screen: a capital-intensive, debt-funded AI-infrastructure buildout is exactly the kind of name a hawkish Jul 28-29 FOMC surprise or a renewed AI-valuation selloff would hit hardest, on top of the sector's own neocloud-competition overhang."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 41.29, "note": "Current price — up 2.7% today, still 46% below the 52-week high after the mid-July neocloud selloff", "timing": "Now (small)" },
+      { "label": "Entry 2", "level": 33.00, "rangeMax": 36.00, "note": "Mid-July selloff zone — best R/R if neocloud-competition fears flare up again before Aug 27", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 24.00, "note": "Deep capitulation — only on a broad AI-valuation selloff or a specific contract loss", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 59.87, "pct": 45.0, "note": "Base — $2.8B contracts confirmed in Aug 27 guidance, neocloud fears ease" },
+    "tp2": { "price": 78.45, "pct": 90.0, "note": "Bull — clean Aug 27 beat, ARR trajectory toward $4B+ confirmed, hits consensus target" },
+    "tp3": { "price": 100.00, "pct": 142.2, "note": "Moon — beat + additional major AI-lab contract signed + dilution overhang resolved, hits Bernstein's target", "moon": true },
+    "stopLoss": {
+      "tight": 30.00, "tightPct": -12.9, "tightNote": "Below the mid-July selloff low — thesis-neutral but momentum breaking down again",
+      "hard": 22.00, "hardPct": -36.1, "hardNote": "Deep breach — a major customer loss or a sector-wide neocloud-model repricing would validate the bear case",
+      "riskReward": "13.6 : 1", "rrNote": "From Entry 2 ($34.5 mid) tight stop vs TP2", "rrWarning": "High R/R but this is the most macro- and debt-sensitive pick in this screen — size accordingly"
+    },
+    "verdict": "SPECULATIVE — small position now on the contract-win momentum, add on a dip back toward $33-36 if neocloud-competition fears resurface before Aug 27 earnings.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "AI-cloud/neocloud names in this cohort move sharply and immediately on contract-signing headlines, with limited multi-day pre-announcement drift — the moves are news-driven, not technically anticipated.",
+    "preRunupTiming": "same-day on contract-signing news, not a multi-week runup",
+    "preRunupPct": "0% to +5% pre-announcement drift",
+    "postWin": {
+      "avgPct": 18,
+      "range": "+8% to +21%",
+      "note": "IREN's own $2.8B multi-year contract signing drove a +21% pop on Jul 20, 2026; Nebius jumped 16% on Nvidia's 9.3% stake disclosure and another 8% on a separate $775M GPU-backed debt deal easing dilution fears (Jul 2026).",
+      "exampleDate": "Jul 2026 (IREN/NBIS)"
+    },
+    "postLose": {
+      "avgPct": -25,
+      "range": "-13% to -37%",
+      "note": "IREN itself fell as much as 37% over one month in mid-July 2026 alongside Nebius (-13%) and CoreWeave (-28%) on fears that Meta reselling excess AI compute capacity threatens the neocloud business model — the clearest same-sector bad-case precedent.",
+      "exampleDate": "Jul 2026"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "Large-cap-adjacent ($14.76B) but debt-funded and highly volatile on sector sentiment — 4% keeps real upside exposure without over-concentrating in the most macro-sensitive name in this screen."
+    },
+    "stopPreCatalyst": { "pct": -13, "price": 30.00, "note": "Below the mid-July selloff low ahead of Aug 27 earnings — thesis-neutral but momentum breaking down again" },
+    "stopPostCatalyst": { "pct": -20, "note": "If Aug 27 guidance doesn't reflect the new $2.8B in contracts, or a major customer is lost, exit — mirrors the mid-July neocloud-fear drawdown" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "IREN",
+      "event": "$2.8B multi-year AI cloud contract signing, ARR target raised to $4B+",
+      "date": "Jul 2026",
+      "movePct": 21,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company precedent for this exact catalyst type — directly relevant to how the stock reacts to fresh contract news."
+    },
+    {
+      "ticker": "NBIS",
+      "event": "Nvidia 9.3% stake disclosure",
+      "date": "Jul 2026",
+      "movePct": 16,
+      "days": 1,
+      "outcome": "good",
+      "note": "Closest same-sector comparable for how a major partner validation event moves a neocloud/AI-infrastructure name."
+    },
+    {
+      "ticker": "IREN",
+      "event": "Neocloud-competition selloff on Meta excess-compute-reselling fears",
+      "date": "Jul 2026",
+      "movePct": -37,
+      "days": 30,
+      "outcome": "bad",
+      "note": "The exact reason IREN trades 46% below its 52-week high despite this week's good news — the clearest same-company risk case for the sector's structural competitive overhang."
+    }
+  ],
+  "sources": [
+    "https://finance.yahoo.com/technology/ai/articles/ai-infrastructure-stock-surges-landing-024700734.html",
+    "https://www.thestreet.com/investing/stocks/iren-limited-stock-surges-2-billion-deal-microsoft-nvidia-perplexity-figure-ai",
+    "https://247wallst.com/investing/2026/07/16/nebius-sinks-13-as-the-neocloud-trade-unravels-how-coreweave-iren-and-the-ai-data-center-stocks-stack-up/",
+    "https://en.cryptonomist.ch/2026/07/03/iren-stock-at-38-while-bernstein-targets-100-whos-right/",
+    "https://stockanalysis.com/stocks/iren/",
+    "https://stockanalysis.com/stocks/iren/market-cap/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "IREN เพิ่งเซ็นสัญญา AI cloud มูลค่า $2.8B (20 ก.ค. 2026) ปรับเป้า ARR สิ้นปีของ AI Cloud เป็น $4B+ (จาก $3.7B) โดย ~85% ของเป้าใหม่มีสัญญารองรับแล้ว หุ้นเด้งขึ้น 21% จากข่าวนี้ แต่ยังต่ำกว่า 52-week high ถึง ~46% หลัง sector neocloud ทั้งกลุ่ม (IREN, Nebius, CoreWeave) ร่วง 13-37% กลางเดือนก.ค. จากความกังวลว่า Meta จะขาย compute ส่วนเกินแข่งกับโมเดล AI cloud ผลประกอบการถัดไปคือ 27 ส.ค. 2026 นักวิเคราะห์ 13-16 คนให้เป้าเฉลี่ย $76-81 (+84-96%) Bernstein ให้ $100 (+142%) bear case ก็จริงเช่นกัน — แผนหุ้นผู้ก่อตั้งมูลค่า $800M สร้างความกังวล dilution และ short interest สูงกว่า 21% เป็นหุ้น AI infrastructure ผันผวนสูงตามสัญญา — ซื้อ demand story แต่ size ให้เหมาะกับความผันผวน",
+      "priceNote": "ขึ้น 2.71% (21 ก.ค.) แต่ยังต่ำกว่า 52-week high ($76.87) ถึง ~46% หลัง sector neocloud ร่วงยาวเดือนก.ค. (IREN, Nebius, CoreWeave ร่วง 13-37% จากความกังวล Meta) ก่อนเริ่มฟื้นจากข่าวสัญญาใหม่",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "เซ็นสัญญา AI Cloud มูลค่า $2.8B", "description": "เซ็นสัญญาหลายปีมูลค่า $2.8B (ประกาศ 20 ก.ค. 2026) ปรับเป้า ARR สิ้นปีเป็น $4B+ จาก $3.7B ลูกค้ารวม Microsoft, Nvidia, Perplexity, Figure AI และอื่น ๆ" },
+        { "name": "ผลประกอบการ Q4 FY26", "description": "ตลาดต้องการเห็นสัญญาใหม่ $2.8B สะท้อนใน guidance และความชัดเจนเรื่อง dilution จากแผนหุ้นผู้ก่อตั้ง" },
+        { "name": "ขยาย deployment Blackwell กับ Nvidia/Microsoft", "description": "การขยาย partnership 5-gigawatt กับ Nvidia (สัญญา Blackwell 5 ปีมูลค่า $3.4B) ต่อเนื่อง — ตัวขับเคลื่อนหลักของเป้า ARR" }
+      ],
+      "risks": [
+        "แผนหุ้นผู้ก่อตั้งมูลค่า $800M ที่บอร์ดอนุมัติมีความเสี่ยง dilution จริงต่อผู้ถือหุ้นเดิม ไม่ใช่แค่ noise",
+        "ความกังวล neocloud ทั้ง sector เป็นจริง — Meta ผลักดันขาย compute ส่วนเกินทำให้ IREN, Nebius, CoreWeave ร่วง 13-37% กลางเดือนก.ค. และความเสี่ยงเชิงโครงสร้างนี้ยังไม่หายไปแม้สัปดาห์นี้จะมีข่าวดี",
+        "Short interest สูง (21%+) สะท้อน bear conviction จริงที่มีทุนหนุน ไม่ใช่แค่ momentum trading",
+        "หนี้สินทั้ง sector เพิ่มขึ้นเพื่อสร้าง GPU — หนี้ของ IREN เองขึ้นไปกว่า $3.6B เป็นความเสี่ยงถ้าดีมานด์ AI cloud โตช้ากว่าคาด",
+        "ความเสี่ยงกระจุกตัวลูกค้า — สัญญากับ AI lab รายใหญ่ไม่กี่ราย (Microsoft, Nvidia, Perplexity, Figure AI) ขับเคลื่อนเป้า ARR การเสียลูกค้ารายใดรายหนึ่งกระทบแรงกว่า cloud provider ที่กระจายตัว"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% แต่ประธาน Warsh สายเหยี่ยว 9/18 คนมองขึ้นดอกเบี้ยอีกในปี 2026 ประชุม FOMC ถัดไป 28-29 ก.ค. 2026",
+        "inflationNote": "เงินเฟ้อ core ยังสูงกว่าเป้า yield 10 ปีใกล้ 4.48% การเทขายหุ้นชิป AI ต้นเดือนก.ค. (Micron -13%, Intel -9%, AMD -7% บางช่วง) แสดงว่าความกังวลดอกเบี้ย/valuation กระทบทั้งกลุ่ม AI infrastructure ได้เร็ว",
+        "sectorImpact": "IREN ใช้ทุนหนัก พึ่งหนี้ ยังไม่ทำกำไรยั่งยืน — เป็นหนึ่งในหุ้นที่ sensitive ต่อดอกเบี้ยที่สุดในการคัดรอบนี้ higher-for-longer เพิ่มต้นทุนการสร้าง GPU ที่ขับเคลื่อนการเติบโต ARR โดยตรง",
+        "summary": "ความเสี่ยง Fed สูง — เป็นหุ้นที่ sensitive ต่อ macro มากที่สุดในการคัดรอบนี้ การสร้าง AI infrastructure ที่ใช้ทุนหนักและพึ่งหนี้แบบนี้จะโดนหนักที่สุดถ้า FOMC 28-29 ก.ค. ออกมา hawkish หรือมีการเทขายหุ้น AI valuation รอบใหม่ ซ้ำกับความกังวล neocloud competition ที่มีอยู่แล้ว"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — เข้าไม้เล็กตอนนี้ตาม momentum ข่าวสัญญา เพิ่ม size ถ้าย่อกลับมาโซน $33-36 หากความกังวล neocloud competition กลับมาก่อนประกาศผล 27 ส.ค.",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ขึ้น 2.7% วันนี้ ยังต่ำกว่า 52-week high 46% หลังการเทขาย neocloud กลางเดือนก.ค.", "timing": "ตอนนี้ (เล็ก)" },
+          { "note": "โซนเทขายกลางเดือนก.ค. — R/R ดีที่สุดถ้าความกังวล neocloud กลับมาก่อน 27 ส.ค.", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงหนัก — เฉพาะกรณีเทขาย AI valuation ทั้งตลาดหรือเสียสัญญาลูกค้ารายใหญ่", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — สัญญา $2.8B ยืนยันใน guidance 27 ส.ค. ความกังวล neocloud คลี่คลาย" },
+        "tp2": { "note": "Bull — beat ชัดเจน 27 ส.ค. ยืนยันเส้นทาง ARR สู่ $4B+ แตะเป้า consensus" },
+        "tp3": { "note": "Moon — beat + เซ็นสัญญา AI lab รายใหญ่เพิ่ม + คลี่คลายความกังวล dilution แตะเป้า Bernstein", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดจุดต่ำสุดช่วงเทขายกลางเดือนก.ค. — thesis ยังไม่พัง แต่ momentum กลับมาอ่อนอีกครั้ง",
+          "hardNote": "หลุดลึก — เสียลูกค้ารายใหญ่หรือ sector neocloud ถูก re-price ใหม่ทั้งกลุ่มจะยืนยัน bear case",
+          "rrNote": "จาก Entry 2 ($34.5 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R สูงแต่เป็นหุ้นที่ sensitive ต่อ macro และหนี้มากที่สุดในการคัดรอบนี้ — size ให้เหมาะสม"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q4 FY26", "note": "ตลาดต้องการเห็นสัญญาใหม่ $2.8B สะท้อนใน guidance และความชัดเจนเรื่อง dilution" }
+      ]
+    }
+  }
+}
