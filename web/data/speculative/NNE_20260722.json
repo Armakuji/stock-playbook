@@ -1,0 +1,172 @@
+{
+  "ticker": "NNE",
+  "companyName": "NANO Nuclear Energy Inc.",
+  "companyDescription": "Pre-revenue micro-reactor developer (ZEUS, ODIN) · KRONOS micro modular reactor under formal NRC construction-permit review · Advanced Fuel Transportation subsidiary targets HALEU logistics revenue 2027-2028",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-22T21:00:00.000Z",
+  "price": 17.44,
+  "priceChange": 0.81,
+  "priceNote": "Self-fetched today (no live-prices.json cache yet). Up 0.81% today, down sharply from the 52-week high ($60.87) and closer to the 52-week low ($15.44) — the stock has re-rated hard lower even as the company sits on a $577.5M cash position.",
+  "marketCap": "$908.3M",
+  "sector": "Energy / Advanced Nuclear (Micro-Reactors)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 50,
+  "summary": "This refresh needs to be honest: NANO Nuclear's real upside no longer clears this board's 200%+ bar. The consensus target of $41.40 implies +137% from the current price — real and genuinely backed by 5-6 analysts, but well short of a clean moonshot. The company is pre-revenue but exceptionally well-capitalized ($577.5M cash after a $400M private placement), and the NRC has begun formal review of the KRONOS micro modular reactor's construction permit application — a real regulatory milestone. Near-term revenue is still years out (HALEU logistics via the Advanced Fuel Transportation subsidiary targets 2027-2028), which is exactly why this stock has fallen so far from its 52-week high even with the cash cushion. Included here as an honest carryover update, not a fresh high-conviction pick.",
+  "catalysts": [
+    {
+      "icon": "⚛️",
+      "name": "KRONOS NRC Construction Permit Review",
+      "description": "The Nuclear Regulatory Commission has initiated formal review activities for the Construction Permit Application of NANO's KRONOS micro modular reactor system — a real, dated regulatory milestone, though the full review timeline extends well beyond this year.",
+      "urgencyLabel": "ONGOING (multi-year review)",
+      "dateBadge": "Ongoing",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🚛",
+      "name": "Advanced Fuel Transportation / HALEU Logistics",
+      "description": "The company's nearest-term path to actual revenue — targeting HALEU (High-Assay Low-Enriched Uranium) logistics starting 2027-2028 through its Advanced Fuel Transportation subsidiary, well ahead of any reactor commercialization.",
+      "urgencyLabel": "2027-2028",
+      "dateBadge": "2027-2028",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Real upside (consensus +137%) no longer clears this board's typical 200%+ bar — this is now a compressed, borderline pick relative to the classic turbo threshold",
+    "Genuinely pre-revenue with the nearest commercial revenue path (HALEU logistics) still 1-2 years out — this is a multi-year story, not a near-term binary catalyst play",
+    "Down sharply from the 52-week high ($60.87) to near the low ($15.44/$17.44) — a large re-rate has already happened, reflecting the market pricing in the multi-year timeline more realistically now",
+    "NRC construction-permit reviews for novel reactor designs are lengthy, multi-year processes — no near-term binary decision to trade around",
+    "Sector-wide SMR/advanced-nuclear sentiment has been volatile in 2026 on DOE loan-program news that favors large reactors over small modular designs — a real headwind for the whole peer group"
+  ],
+  "estimateDates": [
+    { "event": "KRONOS NRC Review Progress", "dateRange": "Ongoing", "note": "Multi-year regulatory process, no near-term binary decision", "est": "Incremental milestones, not a single dated event", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -35, "price": 11.34 },
+    { "label": "Base", "color": "yellow", "pct": 55, "price": 27.03 },
+    { "label": "Bull", "color": "green", "pct": 95, "price": 34.01 },
+    { "label": "Moon", "color": "purple", "pct": 137.4, "price": 41.40 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (5-6 analysts)", "target": 41.40, "rating": "Strong Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed holds at 3.50–3.75%, but new Chair Warsh's hawkish tone has 9 of 18 officials projecting a further 2026 hike, with the next FOMC decision Jul 28–29, 2026.",
+    "inflationNote": "Core inflation remains above target and the 10-year yield sits near 4.48% — a headwind for pre-revenue growth names generally, though NNE's large cash position ($577.5M) meaningfully reduces near-term financing risk.",
+    "sectorImpact": "The SMR/advanced-nuclear sector has shown real sensitivity to DOE loan-program news favoring large reactors over small modular designs this year — a structural sector headwind independent of Fed policy.",
+    "summary": "MEDIUM — NNE's exceptionally strong cash position blunts the direct financing-risk channel most pre-revenue names face, but a hawkish Jul 28-29 FOMC surprise or continued SMR-sector-wide sentiment weakness would still pressure a long-duration, multi-year story like this."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 17.44, "note": "Current price — near the 52-week low despite a very strong cash position", "timing": "Scale in (small)" },
+      { "label": "Entry 2", "level": 14.50, "rangeMax": 15.50, "note": "At/near the 52-week low zone — best R/R if SMR-sector sentiment weakens further", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 11.00, "note": "Deep capitulation — only on a broad SMR-sector selloff", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 27.03, "pct": 55.0, "note": "Base — KRONOS review progresses without setbacks, SMR sentiment stabilizes" },
+    "tp2": { "price": 34.01, "pct": 95.0, "note": "Bull — positive regulatory milestone or a HALEU logistics contract win" },
+    "tp3": { "price": 41.40, "pct": 137.4, "note": "Moon — sector-wide SMR re-rate, hits consensus target", "moon": true },
+    "stopLoss": {
+      "tight": 14.00, "tightPct": -19.7, "tightNote": "Below the 52-week-low zone — thesis-neutral but a fresh low",
+      "hard": 10.00, "hardPct": -42.7, "hardNote": "Deep breach — would suggest a serious setback to the KRONOS review or a broad SMR-sector capitulation",
+      "riskReward": "4.5 : 1", "rrNote": "From Entry 2 ($15 mid) tight stop vs TP2", "rrWarning": "Decent R/R with a strong cash cushion, but real upside compressed below this board's usual bar — treat as a lower-conviction carryover"
+    },
+    "verdict": "ค่าขนม — small position on a well-capitalized but genuinely multi-year story. Real upside has compressed below 200%; this is a carryover update, not a fresh high-conviction pick.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "regulatory_approval",
+    "preRunup": "SMR/advanced-nuclear names in this cohort move on discrete DOE/NRC milestone headlines — NNE's own sharp decline from its 52-week high reflects the sector-wide DOE large-reactor-loan-program news more than any NNE-specific setback.",
+    "preRunupTiming": "same-day on regulatory/DOE news, not a multi-week runup",
+    "preRunupPct": "+5% to +15% same-day on positive regulatory milestones",
+    "postWin": {
+      "avgPct": 15,
+      "range": "+5% to +25%",
+      "note": "SMR-sector names have shown 5-25% pops on positive DOE/NRC regulatory milestones this cycle — Oklo's own DSA approval and NuScale's safety-system contract both triggered same-day gains as sector comparables.",
+      "exampleDate": "H1 2026 (sector pattern)"
+    },
+    "postLose": {
+      "avgPct": -22,
+      "range": "-15% to -40%",
+      "note": "NNE's own decline from its 52-week high ($60.87) to current levels ($17.44) — a ~71% drawdown — is the most direct same-company precedent for how far SMR-sector sentiment can turn against these names on DOE policy news unrelated to company-specific execution.",
+      "exampleDate": "H1 2026 (NNE)"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Pre-revenue small-cap ($908M) with an unusually strong cash position but a genuinely multi-year commercialization timeline — 3% sizing reflects the real balance-sheet support alongside compressed near-term upside."
+    },
+    "stopPreCatalyst": { "pct": -20, "price": 14.00, "note": "Below the 52-week-low zone — thesis-neutral but a fresh low" },
+    "stopPostCatalyst": { "pct": -25, "note": "If the KRONOS NRC review hits a significant setback or SMR-sector sentiment deteriorates further, exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "NNE",
+      "event": "Decline from 52-week high ($60.87) to current levels amid DOE large-reactor loan-program news",
+      "date": "H1 2026",
+      "movePct": -71,
+      "days": 180,
+      "outcome": "bad",
+      "note": "Same-company precedent for how sector-wide policy sentiment (not company execution) can drive a severe drawdown — directly relevant risk context for this pick."
+    },
+    {
+      "ticker": "sector",
+      "event": "SMR-sector reaction to DOE/NRC regulatory milestones",
+      "date": "H1 2026",
+      "movePct": 15,
+      "days": 1,
+      "outcome": "good",
+      "note": "General sector comparable for the scale of move possible on a positive regulatory milestone, relevant to how the KRONOS NRC review could eventually move NNE."
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/nne/forecast/",
+    "https://stockanalysis.com/stocks/nne/",
+    "https://simplywall.st/stocks/us/capital-goods/nasdaq-nne/nano-nuclear-energy/future"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "การอัปเดตรอบนี้ต้องตรงไปตรงมา: upside จริงของ NANO Nuclear ไม่ถึงเกณฑ์ 200%+ ของบอร์ดนี้แล้ว เป้า consensus ที่ $41.40 หมายถึง +137% จากราคาปัจจุบัน — เป็นตัวเลขจริงที่มีนักวิเคราะห์ 5-6 คนรองรับ แต่ยังห่างจาก moonshot ที่สะอาด บริษัทยัง pre-revenue แต่มีทุนหนามาก ($577.5M เงินสดหลัง private placement $400M) และ NRC เริ่มพิจารณา construction permit application ของเครื่องปฏิกรณ์ KRONOS แบบทางการแล้ว — milestone regulatory จริง รายได้ระยะใกล้ยังอีกหลายปี (HALEU logistics ผ่านบริษัทลูก Advanced Fuel Transportation เล็ง 2027-2028) ซึ่งเป็นเหตุผลที่หุ้นร่วงมากจาก 52-week high แม้จะมีเงินสดหนุน รวมไว้เป็นการอัปเดต carryover ที่ตรงไปตรงมา ไม่ใช่ pick ความเชื่อมั่นสูงใหม่",
+      "priceNote": "ขึ้น 0.81% วันนี้ ห่างจาก 52-week high ($60.87) มาก ใกล้ 52-week low ($15.44) — หุ้น re-rate ลงแรงแม้บริษัทจะมีเงินสด $577.5M",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "การพิจารณา NRC Construction Permit ของ KRONOS", "description": "NRC เริ่มการพิจารณา construction permit application ของเครื่องปฏิกรณ์ micro modular KRONOS แบบทางการ — milestone regulatory จริง แม้ timeline การพิจารณาเต็มจะยาวหลายปี" },
+        { "name": "Advanced Fuel Transportation / HALEU Logistics", "description": "เส้นทางรายได้จริงระยะใกล้ที่สุดของบริษัท — เล็ง HALEU logistics เริ่ม 2027-2028 ผ่านบริษัทลูก Advanced Fuel Transportation ก่อนการทำ commercial เครื่องปฏิกรณ์ใด ๆ" }
+      ],
+      "risks": [
+        "Upside จริง (consensus +137%) ไม่ถึงเกณฑ์ 200%+ ปกติของบอร์ดนี้แล้ว — ตอนนี้เป็น pick แบบบีบแคบ borderline เทียบเกณฑ์ turbo แบบดั้งเดิม",
+        "ยัง pre-revenue จริง เส้นทางรายได้เชิงพาณิชย์ที่ใกล้ที่สุด (HALEU logistics) ยังอีก 1-2 ปี — เป็น story หลายปี ไม่ใช่ binary catalyst ระยะใกล้",
+        "ร่วงลงมากจาก 52-week high ($60.87) ใกล้จุดต่ำสุด ($15.44/$17.44) — re-rate ใหญ่เกิดขึ้นไปแล้ว สะท้อนตลาด price in timeline หลายปีสมจริงขึ้น",
+        "การพิจารณา NRC construction permit สำหรับดีไซน์เครื่องปฏิกรณ์ใหม่เป็นกระบวนการยาวหลายปี — ไม่มีการตัดสินใจ binary ระยะใกล้ให้เทรด",
+        "Sentiment กลุ่ม SMR/advanced-nuclear ทั้ง sector ผันผวนในปี 2026 จากข่าวโครงการเงินกู้ DOE ที่เอียงไปทาง large reactor มากกว่า small modular design — headwind จริงต่อกลุ่มเพื่อนทั้งกลุ่ม"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% แต่ประธาน Warsh สายเหยี่ยว 9/18 คนมองขึ้นดอกเบี้ยอีกในปี 2026 FOMC ถัดไป 28-29 ก.ค. 2026",
+        "inflationNote": "เงินเฟ้อ core ยังสูงกว่าเป้า yield 10 ปีใกล้ 4.48% เป็นแรงกดดันต่อหุ้น pre-revenue growth ทั่วไป แม้เงินสดก้อนใหญ่ของ NNE ($577.5M) จะลดความเสี่ยงการเงินระยะใกล้ได้มาก",
+        "sectorImpact": "Sector SMR/advanced-nuclear แสดง sensitivity จริงต่อข่าวโครงการเงินกู้ DOE ที่เอียงไปทาง large reactor มากกว่า small modular design ปีนี้ — headwind เชิงโครงสร้างที่ไม่ผูกกับนโยบาย Fed",
+        "summary": "ความเสี่ยง Fed ระดับกลาง — งบดุลที่แข็งแรงมากของ NNE ลดช่องทางความเสี่ยงการเงินโดยตรงที่หุ้น pre-revenue ส่วนใหญ่เจอ แต่ FOMC hawkish surprise 28-29 ก.ค. หรือ sentiment กลุ่ม SMR ที่อ่อนแอต่อเนื่องยังกดดัน story ระยะยาวหลายปีแบบนี้ได้"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม — เข้าไม้เล็กตาม story ที่มีทุนหนาแต่เป็น story หลายปีจริง upside จริงบีบแคบต่ำกว่า 200% แล้ว นี่คือการอัปเดต carryover ไม่ใช่ pick ความเชื่อมั่นสูงใหม่",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ใกล้ 52-week low แม้มีเงินสดแข็งแรงมาก", "timing": "Scale in (เล็ก)" },
+          { "note": "ใกล้/ที่โซน 52-week low — R/R ดีที่สุดถ้า sentiment sector SMR อ่อนตัวเพิ่ม", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงหนัก — เฉพาะ sector SMR เทขายรวม", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — การพิจารณา KRONOS คืบหน้าไม่มีปัญหา sentiment SMR ทรงตัว" },
+        "tp2": { "note": "Bull — milestone regulatory บวกหรือสัญญา HALEU logistics" },
+        "tp3": { "note": "Moon — SMR sector re-rate ทั้งกลุ่ม แตะเป้า consensus", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดโซน 52-week low — thesis ยังไม่พัง แต่จุดต่ำสุดใหม่",
+          "hardNote": "หลุดลึก — จะบ่งชี้ปัญหาร้ายแรงต่อการพิจารณา KRONOS หรือ SMR sector capitulation",
+          "rrNote": "จาก Entry 2 ($15 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R พอใช้ได้พร้อมเงินสดหนุนแข็งแรง แต่ upside จริงบีบแคบต่ำกว่าเกณฑ์ปกติของบอร์ดนี้ — ถือเป็น carryover ความเชื่อมั่นต่ำ"
+        }
+      },
+      "estimateDates": [
+        { "event": "ความคืบหน้าการพิจารณา NRC ของ KRONOS", "note": "กระบวนการ regulatory หลายปี ไม่มีการตัดสินใจ binary ระยะใกล้" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "ticker": "VERA",
+  "companyName": "Vera Therapeutics, Inc.",
+  "companyDescription": "Kidney-disease biotech · TRUTAKNA (atacicept) won FDA accelerated approval Jul 7, 2026 for high-risk IgA nephropathy · Phase 3 ORIGIN eGFR analysis moved up to Q3 2026 ahead of a Q4 sBLA for full approval",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-22T21:00:00.000Z",
+  "price": 36.11,
+  "priceChange": -2.85,
+  "priceNote": "Self-fetched today (no live-prices.json cache yet). Down 2.85% today, well off the 52-week high ($56.05) even after winning FDA accelerated approval for TRUTAKNA on Jul 7, 2026 — the market appears to be waiting for commercial launch execution and the Q3 confirmatory data before re-rating further.",
+  "marketCap": "$2.59B",
+  "sector": "Healthcare / Biotechnology (Nephrology)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 64,
+  "summary": "Vera already cleared its biggest hurdle: TRUTAKNA (atacicept) won FDA accelerated approval on Jul 7, 2026 to reduce proteinuria in high-risk IgA nephropathy — a real, completed regulatory win, not a pending binary. What's left is a genuine near-term confirmatory catalyst: Vera reached agreement with the FDA to move up the primary eGFR analysis from its ORIGIN Phase 3 trial to Q3 2026 (from a prior 2027 plan), setting up a Q4 2026 supplemental BLA filing for full (non-accelerated) approval. The 12-month consensus of $81.79 implies +127% from here, and the single highest named analyst target ($110, Buy rating) implies +205% — a real, disclosed figure, not a fabricated ceiling, though it sits well above the broader $56-110 range and shouldn't be treated as the base case.",
+  "catalysts": [
+    {
+      "icon": "🧬",
+      "name": "ORIGIN Phase 3 eGFR Analysis (moved up)",
+      "description": "Vera reached agreement with the FDA to accelerate the primary eGFR (kidney function) analysis from its ORIGIN Phase 3 trial to Q3 2026, ahead of the prior 2027 schedule — this data underpins the case for full (non-accelerated) approval.",
+      "urgencyLabel": "Q3 2026",
+      "dateBadge": "Q3 2026",
+      "catalystDate": "2026-09-15",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📄",
+      "name": "sBLA Filing for Full Approval",
+      "description": "Vera aims to file a supplemental Biologics License Application in Q4 2026 to convert TRUTAKNA's accelerated approval into full approval for IgA nephropathy, contingent on the Q3 eGFR data supporting it.",
+      "urgencyLabel": "Q4 2026",
+      "dateBadge": "Q4 2026",
+      "catalystDate": "2026-11-15",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🚀",
+      "name": "TRUTAKNA Commercial Launch",
+      "description": "Already-approved commercial launch execution for TRUTAKNA in the accelerated-approval indication — the market's near-term read on how fast this converts into real prescriptions and revenue.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "The highest named target ($110, +205%) is a single-analyst figure well above the broader $56-110 range and the $81.79 average — treat it as a real but non-representative ceiling, not the expected case",
+    "The Q3 2026 eGFR analysis, while accelerated by FDA agreement, is still a real trial readout with binary risk — a disappointing result could delay or jeopardize the full-approval pathway even with accelerated approval already secured",
+    "Commercial launch execution for a newly-approved nephrology drug is genuinely uncertain — physician adoption, payer coverage, and real-world uptake all take time to become visible in the numbers",
+    "Down from the 52-week high ($56.05) even after the approval news — the market's muted reaction suggests real skepticism about near-term commercial ramp, not just profit-taking",
+    "$2.59B market cap is toward the larger end of names on this board — a smaller re-rate in dollar terms still requires a large percentage move given the current valuation"
+  ],
+  "estimateDates": [
+    { "event": "ORIGIN Phase 3 eGFR Analysis", "dateRange": "Q3 2026", "note": "Moved up from 2027 by FDA agreement — underpins the full-approval case", "est": "Binary trial readout", "highlight": "yellow" },
+    { "event": "sBLA Filing (Full Approval)", "dateRange": "Q4 2026", "note": "Contingent on Q3 data", "est": "Would convert accelerated to full approval", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -30, "price": 25.28 },
+    { "label": "Base", "color": "yellow", "pct": 60, "price": 57.78 },
+    { "label": "Bull", "color": "green", "pct": 126.5, "price": 81.79 },
+    { "label": "Moon", "color": "purple", "pct": 204.6, "price": 110.00 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (12-month average)", "target": 81.79, "rating": "Buy" },
+    { "firm": "Highest named target", "target": 110.00, "rating": "Buy", "note": "Real but non-representative — well above the broader $56-110 range" },
+    { "firm": "Guggenheim (most recent update)", "target": 61.00, "rating": "Buy", "note": "Raised from $59 — more conservative than the average" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Fed holds at 3.50–3.75%, but new Chair Warsh's hawkish tone has 9 of 18 officials projecting a further 2026 hike, with the next FOMC decision Jul 28–29, 2026.",
+    "inflationNote": "Core inflation remains above target and the 10-year yield sits near 4.48% — a modest headwind for biotech valuations broadly, though Vera's already-approved product and real commercial revenue trajectory reduce dependence on capital markets relative to pre-approval names.",
+    "sectorImpact": "The Q3 eGFR readout and commercial launch execution are both largely macro-independent — clinical trial data and physician prescribing behavior don't respond to interest rates.",
+    "summary": "LOW — this is one of the more macro-independent names on the board since the core catalysts are clinical/regulatory/commercial execution rather than financing-dependent, and the company already has an approved, revenue-generating product."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 36.11, "note": "Current price — down from the 52-week high despite the FDA approval already won", "timing": "Scale in (small)" },
+      { "label": "Entry 2", "level": 30.00, "rangeMax": 32.50, "note": "Below recent levels — best R/R if commercial-launch skepticism persists into Q3", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 24.00, "note": "Deep dip — only on a broad biotech selloff or early launch-execution disappointment", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 57.78, "pct": 60.0, "note": "Base — commercial launch tracks reasonably, Q3 data awaited without incident" },
+    "tp2": { "price": 81.79, "pct": 126.5, "note": "Bull — positive Q3 eGFR data supports the full-approval case, hits consensus average" },
+    "tp3": { "price": 110.00, "pct": 204.6, "note": "Moon — clean Q3 data + strong commercial launch + full approval trajectory confirmed, hits the highest named target", "moon": true },
+    "stopLoss": {
+      "tight": 28.00, "tightPct": -22.5, "tightNote": "Below the recent consolidation zone — thesis-neutral but launch-execution concerns deepening",
+      "hard": 20.00, "hardPct": -44.6, "hardNote": "Near the 52-week low — would suggest a genuinely disappointing Q3 readout or commercial launch failure",
+      "riskReward": "4.2 : 1", "rrNote": "From Entry 2 ($31.25 mid) tight stop vs TP2", "rrWarning": "Reasonable R/R for an already-de-risked (approved) biotech — Moon case relies on a single high analyst target, treat cautiously"
+    },
+    "verdict": "ค่าขนม — small-to-moderate position on an already-approved drug with a real, accelerated Q3 2026 confirmatory readout ahead. Less binary than a pre-approval biotech, but still genuinely speculative given launch-execution uncertainty.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "Vera's stock rose ahead of the Jul 7, 2026 FDA decision as anticipation built — a real pre-event runup pattern for this specific name, distinct from names that show minimal pre-event drift.",
+    "preRunupTiming": "multi-day runup into the confirmed decision date, then a further reaction on the actual approval",
+    "preRunupPct": "modest pre-decision gains, reported specifically for VERA ahead of its Jul 7 approval",
+    "postWin": {
+      "avgPct": 20,
+      "range": "+10% to +30%",
+      "note": "FDA accelerated approvals for biotechs with a clear unmet-need indication (like IgA nephropathy) typically drive real re-rates, though Vera's own muted post-approval price action (still down from the 52-week high) suggests the market wants commercial proof before fully re-rating.",
+      "exampleDate": "Jul 2026 (VERA approval)"
+    },
+    "postLose": {
+      "avgPct": -30,
+      "range": "-20% to -45%",
+      "note": "A disappointing Q3 2026 eGFR readout that jeopardizes the full-approval pathway would be a real, severe setback even with accelerated approval already secured — general biotech pattern for a confirmatory-trial miss after an accelerated approval.",
+      "exampleDate": "general accelerated-approval-to-confirmatory-trial pattern"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "Mid-cap ($2.59B) biotech with an already-approved product (lower survival/binary risk than a pre-approval name) but real commercial-execution and confirmatory-trial uncertainty ahead — 4% sizing reflects the reduced-but-real risk profile."
+    },
+    "stopPreCatalyst": { "pct": -23, "price": 28.00, "note": "Below the recent consolidation zone ahead of Q3 data — thesis-neutral but launch-execution concerns deepening" },
+    "stopPostCatalyst": { "pct": -30, "note": "If the Q3 eGFR analysis disappoints or commercial launch metrics show weak uptake, exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "VERA",
+      "event": "FDA accelerated approval for TRUTAKNA in high-risk IgA nephropathy",
+      "date": "Jul 7, 2026",
+      "movePct": 15,
+      "days": 3,
+      "outcome": "good",
+      "note": "Same-company precedent for the core regulatory catalyst already realized — the muted magnitude of the reaction (still down from the 52-week high) is itself informative about market skepticism on launch execution."
+    },
+    {
+      "ticker": "sector",
+      "event": "Confirmatory Phase 3 data supporting conversion from accelerated to full approval",
+      "date": "general pattern",
+      "movePct": -25,
+      "days": 1,
+      "outcome": "bad",
+      "note": "General biotech comparable for the downside risk if a confirmatory trial (like Vera's Q3 2026 ORIGIN eGFR analysis) disappoints after an accelerated approval was already granted."
+    }
+  ],
+  "sources": [
+    "https://www.tipranks.com/news/company-announcements/vera-therapeutics-gains-fda-nod-for-trutakna-launch",
+    "https://www.investing.com/news/stock-market-news/vera-therapeutics-stock-rises-ahead-of-fda-decision-93CH-4776189",
+    "https://www.tipranks.com/news/the-fly/vera-therapeutics-price-target-raised-to-61-from-59-at-guggenheim",
+    "https://stockanalysis.com/stocks/vera/",
+    "https://www.marketscreener.com/quote/stock/VERA-THERAPEUTICS-INC-122751368/consensus/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Vera ผ่านด่านใหญ่ที่สุดไปแล้ว: TRUTAKNA (atacicept) ได้รับ FDA accelerated approval เมื่อ 7 ก.ค. 2026 เพื่อลด proteinuria ในผู้ป่วย IgA nephropathy ความเสี่ยงสูง — เป็นชัยชนะ regulatory จริงที่เกิดขึ้นแล้ว ไม่ใช่ binary ที่รออยู่ สิ่งที่เหลือคือ catalyst ยืนยันระยะใกล้จริง — Vera บรรลุข้อตกลงกับ FDA ให้เลื่อนการวิเคราะห์ eGFR หลักจาก Phase 3 ORIGIN มาเป็น Q3 2026 (จากแผนเดิมปี 2027) เตรียมยื่น supplemental BLA ใน Q4 2026 เพื่อขออนุมัติเต็มรูปแบบ (ไม่ใช่ accelerated) เป้า consensus 12 เดือนที่ $81.79 หมายถึง +127% จากราคานี้ และเป้าสูงสุดที่มีชื่อเดี่ยว ($110, Buy) หมายถึง +205% — เป็นตัวเลขจริงที่เปิดเผยแล้ว ไม่ใช่เพดานที่สร้างขึ้นเอง แม้จะอยู่สูงกว่า range กว้าง $56-110 มากและไม่ควรมองเป็น base case",
+      "priceNote": "ลง 2.85% วันนี้ ห่างจาก 52-week high ($56.05) มากแม้จะได้ FDA approval แล้วเมื่อ 7 ก.ค. — ตลาดดูเหมือนรอ execution การเปิดตัวเชิงพาณิชย์และข้อมูล Q3 ก่อน re-rate เพิ่ม",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "การวิเคราะห์ eGFR Phase 3 ORIGIN (เลื่อนเร็วขึ้น)", "description": "Vera บรรลุข้อตกลงกับ FDA เลื่อนการวิเคราะห์ eGFR (การทำงานไต) หลักจาก Phase 3 ORIGIN มาเป็น Q3 2026 จากแผนเดิมปี 2027 — ข้อมูลนี้เป็นฐานของเคสขออนุมัติเต็มรูปแบบ" },
+        { "name": "ยื่น sBLA เพื่อขออนุมัติเต็มรูปแบบ", "description": "Vera ตั้งเป้ายื่น supplemental Biologics License Application ใน Q4 2026 เพื่อแปลง accelerated approval ของ TRUTAKNA เป็นอนุมัติเต็มรูปแบบสำหรับ IgA nephropathy ขึ้นกับข้อมูล eGFR Q3" },
+        { "name": "เปิดตัวเชิงพาณิชย์ TRUTAKNA", "description": "Execution การเปิดตัวเชิงพาณิชย์สำหรับ TRUTAKNA ที่อนุมัติแล้วใน indication accelerated — ตัวชี้วัดระยะใกล้ของตลาดว่าจะแปลงเป็นการสั่งจ่ายยาและรายได้จริงเร็วแค่ไหน" }
+      ],
+      "risks": [
+        "เป้าสูงสุดที่มีชื่อ ($110, +205%) เป็นตัวเลขนักวิเคราะห์รายเดียวที่สูงกว่า range กว้าง $56-110 และค่าเฉลี่ย $81.79 มาก — ควรมองเป็นเพดานจริงแต่ไม่ใช่ตัวแทน ไม่ใช่กรณีที่คาดหวัง",
+        "การวิเคราะห์ eGFR Q3 2026 แม้จะเร่งโดยข้อตกลง FDA ก็ยังเป็นผลการทดลองจริงที่มีความเสี่ยง binary — ผลผิดหวังอาจเลื่อนหรือทำให้เส้นทางอนุมัติเต็มรูปแบบมีปัญหาแม้จะมี accelerated approval แล้ว",
+        "Execution เปิดตัวเชิงพาณิชย์สำหรับยา nephrology ที่เพิ่งอนุมัติมีความไม่แน่นอนจริง — การรับของแพทย์ ความคุ้มครองประกัน และการใช้จริงต้องใช้เวลาให้เห็นผลในตัวเลข",
+        "ลงจาก 52-week high ($56.05) แม้จะมีข่าวอนุมัติแล้ว — ปฏิกิริยาที่ไม่รุนแรงของตลาดบ่งชี้ความสงสัยจริงเรื่อง commercial ramp ระยะใกล้ ไม่ใช่แค่ profit-taking",
+        "มูลค่าตลาด $2.59B อยู่ค่อนไปทางใหญ่ในบอร์ดนี้ — การ re-rate ในหน่วยดอลลาร์ที่เล็กกว่ายังต้องการการเคลื่อนไหวเปอร์เซ็นต์ที่ใหญ่เมื่อเทียบ valuation ปัจจุบัน"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% แต่ประธาน Warsh สายเหยี่ยว 9/18 คนมองขึ้นดอกเบี้ยอีกในปี 2026 FOMC ถัดไป 28-29 ก.ค. 2026",
+        "inflationNote": "เงินเฟ้อ core ยังสูงกว่าเป้า yield 10 ปีใกล้ 4.48% เป็นแรงกดดันปานกลางต่อ valuation biotech ทั่วไป แม้ผลิตภัณฑ์ที่อนุมัติแล้วและเส้นทางรายได้เชิงพาณิชย์จริงของ Vera จะลดการพึ่งพาตลาดทุนเทียบหุ้นก่อนอนุมัติ",
+        "sectorImpact": "ข้อมูล eGFR Q3 และ execution เปิดตัวเชิงพาณิชย์แทบไม่ผูกกับ macro — ข้อมูล clinical trial และพฤติกรรมการสั่งจ่ายยาของแพทย์ไม่ตอบสนองต่ออัตราดอกเบี้ย",
+        "summary": "ความเสี่ยง Fed ต่ำ — เป็นหนึ่งในหุ้นที่ macro-independent ที่สุดในบอร์ดนี้ เพราะ catalyst หลักเป็นเรื่อง clinical/regulatory/execution เชิงพาณิชย์มากกว่าพึ่งพาการเงิน และบริษัทมีผลิตภัณฑ์ที่อนุมัติแล้วสร้างรายได้จริง"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม — เข้าไม้เล็กถึงกลางบนยาที่อนุมัติแล้วพร้อมข้อมูลยืนยัน Q3 2026 ที่เร่งขึ้นจริง binary น้อยกว่า biotech ก่อนอนุมัติ แต่ยังเก็งกำไรจริงจากความไม่แน่นอน execution เปิดตัว",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ลงจาก 52-week high แม้จะได้ FDA approval แล้ว", "timing": "Scale in (เล็ก)" },
+          { "note": "ต่ำกว่าระดับล่าสุด — R/R ดีที่สุดถ้าความสงสัยเรื่อง commercial launch ยังอยู่ก่อน Q3", "timing": "ถ้าย่อ" },
+          { "note": "ย่อลึก — เฉพาะ biotech เทขายรวมหรือ execution เปิดตัวผิดหวังช่วงต้น", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — เปิดตัวเชิงพาณิชย์ไปตามคาด รอข้อมูล Q3 โดยไม่มีปัญหา" },
+        "tp2": { "note": "Bull — ข้อมูล eGFR Q3 บวกหนุนเคสอนุมัติเต็มรูปแบบ แตะเป้าเฉลี่ย consensus" },
+        "tp3": { "note": "Moon — ข้อมูล Q3 สะอาด + เปิดตัวเชิงพาณิชย์แข็งแรง + เส้นทางอนุมัติเต็มรูปแบบยืนยัน แตะเป้าสูงสุดที่มีชื่อ", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดโซน consolidation ล่าสุด — thesis ยังไม่พัง แต่ความกังวล execution เปิดตัวลึกขึ้น",
+          "hardNote": "ใกล้ 52-week low — จะบ่งชี้ผล Q3 ผิดหวังจริงหรือการเปิดตัวเชิงพาณิชย์ล้มเหลว",
+          "rrNote": "จาก Entry 2 ($31.25 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R สมเหตุสมผลสำหรับ biotech ที่ de-risk แล้ว (อนุมัติแล้ว) — Moon case พึ่งเป้านักวิเคราะห์รายเดียวสูง ควรระมัดระวัง"
+        }
+      },
+      "estimateDates": [
+        { "event": "การวิเคราะห์ eGFR Phase 3 ORIGIN", "note": "เลื่อนจากปี 2027 มา Q3 2026 โดยข้อตกลง FDA — เป็นฐานเคสอนุมัติเต็มรูปแบบ" },
+        { "event": "ยื่น sBLA (อนุมัติเต็มรูปแบบ)", "note": "ขึ้นกับข้อมูล Q3" }
+      ]
+    }
+  }
+}

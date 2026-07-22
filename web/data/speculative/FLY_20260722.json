@@ -1,0 +1,177 @@
+{
+  "ticker": "FLY",
+  "companyName": "Firefly Aerospace Inc.",
+  "companyDescription": "Rockets, spacecraft & lunar landers · first commercial firm to complete a successful Moon landing (Blue Ghost) · real NASA contract wins landing even as the stock declines on them — a genuine sentiment/fundamentals divergence",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-22T21:00:00.000Z",
+  "price": 20.65,
+  "priceChange": -2.18,
+  "priceNote": "Self-fetched today (no live-prices.json cache yet). Down 2.18% today and down sharply from the 52-week high ($73.80) despite a string of fresh NASA contract wins this month — one of the clearer fundamentals-vs-sentiment divergences on the board right now.",
+  "marketCap": "$3.39B",
+  "sector": "Industrials / Space Launch & Lunar Landers",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Speculative",
+  "score": 60,
+  "summary": "This report updates an honest read: Firefly's real upside has compressed since the last board refresh. The 9-analyst consensus of $48.11 (+133% from here) is real and broad, and Roth Capital's $60 target (+191%) is the highest named figure — both fall short of the classic 200%+ turbo floor on a strict basis, though Roth's target comes close. What hasn't changed is the underlying story: Firefly keeps landing real NASA contracts ($144M Blue Ghost lunar mission, $13M JPL SkyFall subcontract in July alone) even as the stock declines and short interest rises (13.19M shares, up from 11.84M) — a genuine disconnect between fundamentals and price. Balance sheet is strong ($392M cash, 3+ years of runway, low debt), removing near-term survival risk. Q2 2026 earnings Aug 11 is the next real catalyst to test whether the contract wins start changing sentiment.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "Reports Aug 11, 2026. Q1 2026 revenue was $80.9M (+45% YoY) with 21.6% gross margin but -$78.9M free cash flow — the market wants to see the recent NASA contract wins ($144M Blue Ghost, $13M JPL SkyFall) reflected in forward guidance.",
+      "urgencyLabel": "~3 WEEKS",
+      "dateBadge": "Aug 11, 2026",
+      "catalystDate": "2026-08-11",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🌙",
+      "name": "NASA Contract Momentum",
+      "description": "$144M NASA contract for a Blue Ghost lunar mission (2028) plus a $13M JPL SkyFall Mars-mission subcontract landed within weeks of each other in July — real, ongoing revenue-visibility wins even though the stock hasn't rewarded them yet.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Real upside has compressed below this board's typical 200%+ bar — 9-analyst consensus is +133%, and even the highest named target (Roth Capital $60) is +191%, not quite 200%. This is now a borderline, not a clean turbo pick",
+    "The stock has fallen despite a string of fresh NASA contract wins in July — a genuine, persistent sentiment/fundamentals divergence that hasn't resolved itself yet, and there's no guarantee it resolves before Aug 11",
+    "Short interest rose to 13.19M shares from 11.84M — real, funded bear conviction, not just weak sentiment",
+    "Both major NASA contracts ($144M Blue Ghost, $13M SkyFall) target 2028 missions — the cash doesn't flow immediately, and the market may be discounting the multi-year lag",
+    "Free cash flow of -$78.9M in Q1 shows real ongoing cash burn even with a strong balance sheet — the 3+ year runway is a buffer, not a sign the business is near self-funding"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Aug 11, 2026", "note": "Market wants to see NASA contract wins reflected in forward guidance", "est": "Revenue growth expected to continue; the price/news divergence is the real question", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -35, "price": 13.42 },
+    { "label": "Base", "color": "yellow", "pct": 60, "price": 33.04 },
+    { "label": "Bull", "color": "green", "pct": 133.0, "price": 48.11 },
+    { "label": "Moon", "color": "purple", "pct": 190.6, "price": 60.00 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (9 analysts)", "target": 48.11, "rating": "Buy" },
+    { "firm": "Roth Capital (Suji Desilva, highest named)", "target": 60.00, "rating": "Buy" },
+    { "firm": "Goldman Sachs (most conservative named)", "target": 32.00, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed holds at 3.50–3.75%, but new Chair Warsh's hawkish tone has 9 of 18 officials projecting a further 2026 hike, with the next FOMC decision Jul 28–29, 2026.",
+    "inflationNote": "Core inflation remains above target and the 10-year yield sits near 4.48% — a headwind for high-multiple, cash-burning growth names generally.",
+    "sectorImpact": "The space sector has already shown real risk-off sensitivity in 2026 (capital rotating to SpaceX's IPO pulled money from names like Firefly) — a hawkish FOMC surprise the same week as this report would compound that.",
+    "summary": "MEDIUM — Firefly's own contract wins are macro-independent, but the sector-wide sentiment weakness already pulling this stock down (partly SpaceX-IPO-driven capital rotation) means a hawkish Jul 28-29 FOMC surprise would add another headwind on top."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 20.65, "note": "Current price — down despite fresh NASA contract wins", "timing": "Scale in (small)" },
+      { "label": "Entry 2", "level": 17.00, "rangeMax": 18.50, "note": "Near the 52-week low zone — best R/R if the sentiment/fundamentals gap widens further before earnings", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 14.00, "note": "Deep capitulation — only on a broad space-sector selloff", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 33.04, "pct": 60.0, "note": "Base — Aug 11 earnings start closing the sentiment/fundamentals gap" },
+    "tp2": { "price": 48.11, "pct": 133.0, "note": "Bull — market fully credits the NASA contract momentum, hits consensus target" },
+    "tp3": { "price": 60.00, "pct": 190.6, "note": "Moon — additional contract wins + short-covering rally, hits Roth's target", "moon": true },
+    "stopLoss": {
+      "tight": 16.00, "tightPct": -22.5, "tightNote": "Near the 52-week low — thesis-neutral but confirms the sentiment gap isn't closing",
+      "hard": 12.00, "hardPct": -41.9, "hardNote": "Below the 52-week low — would suggest a real fundamentals deterioration, not just sentiment",
+      "riskReward": "5.9 : 1", "rrNote": "From Entry 2 ($17.75 mid) tight stop vs TP2", "rrWarning": "Decent R/R but real upside here is now below the typical 200% turbo bar — treat as borderline, not a clean pick"
+    },
+    "verdict": "SPECULATIVE, borderline — real contract wins the market hasn't rewarded yet, but consensus upside (133%, or 191% at the high end) no longer clears this board's usual bar. Add on a dip toward $17-18.50 ahead of Aug 11 earnings.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Space-launch names in this cohort react to contract-award headlines same-day, but Firefly specifically has shown the opposite this cycle — declining even on good news, which is itself the notable pattern to watch heading into Aug 11.",
+    "preRunupTiming": "same-day reaction expected on contract news, though FLY's recent pattern has been muted-to-negative even on good news",
+    "preRunupPct": "variable; recent pattern has underperformed the news",
+    "postWin": {
+      "avgPct": 12,
+      "range": "+5% to +20%",
+      "note": "Comparable space-sector names have shown 5-20% pops on major contract confirmations; Firefly's own recent contract wins ($144M Blue Ghost, $13M SkyFall) have NOT produced this pattern, which is the central risk/opportunity question for Aug 11.",
+      "exampleDate": "general sector pattern vs. FLY's own muted 2026 reaction"
+    },
+    "postLose": {
+      "avgPct": -18,
+      "range": "-10% to -28%",
+      "note": "Firefly's own stock is down 27.9% over the trailing 30 days despite the fresh NASA contract wins — the direct, same-company precedent for how much this stock can fall even without a negative catalyst, purely on sentiment and rising short interest.",
+      "exampleDate": "H2 Jul 2026 (FLY)"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "Mid-cap ($3.39B) with a strong balance sheet (low survival risk) but real upside compression below the typical turbo floor — 4% sizing reflects the borderline nature of this pick rather than a clean high-conviction moonshot."
+    },
+    "stopPreCatalyst": { "pct": -23, "price": 16.00, "note": "Near the 52-week low ahead of Aug 11 — thesis-neutral but confirms the sentiment gap isn't closing" },
+    "stopPostCatalyst": { "pct": -20, "note": "If Aug 11 guidance doesn't show the NASA contracts starting to matter, or free cash flow burn worsens materially, exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "FLY",
+      "event": "$13M JPL SkyFall subcontract + $144M NASA Blue Ghost lunar mission contract, stock declines anyway",
+      "date": "Jul 2026",
+      "movePct": -28,
+      "days": 30,
+      "outcome": "bad",
+      "note": "Same-company precedent for the exact fundamentals/sentiment divergence at the heart of this pick — the stock fell 27.9% over the trailing 30 days despite genuinely positive contract news."
+    },
+    {
+      "ticker": "FLY",
+      "event": "Short interest rises to 13.19M shares from 11.84M",
+      "date": "Jul 2026",
+      "movePct": 0,
+      "days": 30,
+      "outcome": "bad",
+      "note": "Not a price move but a real, quantified signal of building bear conviction relevant to how the Aug 11 print could go either way."
+    }
+  ],
+  "sources": [
+    "https://www.stocktitan.net/news/FLY/firefly-aerospace-receives-13-million-nasa-jpl-subcontract-to-build-2723h7stve6h.html",
+    "https://www.benzinga.com/trading-ideas/movers/26/07/60507512/firefly-aerospace-stock-slides-despite-string-of-fresh-nasa-awards",
+    "https://finance.yahoo.com/markets/stocks/articles/firefly-aerospace-announces-first-quarter-201000745.html",
+    "https://stockanalysis.com/stocks/fly/forecast/",
+    "https://stockanalysis.com/stocks/fly/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "รายงานนี้อัปเดตอย่างตรงไปตรงมา: upside จริงของ Firefly ลดลงตั้งแต่รอบก่อน เป้าเฉลี่ยนักวิเคราะห์ 9 คนที่ $48.11 (+133% จากราคานี้) เป็นตัวเลขกว้างจริง และเป้า Roth Capital $60 (+191%) เป็นตัวเลขสูงสุดที่มีชื่อ — ทั้งคู่ไม่ถึงเกณฑ์ turbo 200%+ แบบเคร่งครัด แม้ Roth จะใกล้มาก สิ่งที่ไม่เปลี่ยนคือ story พื้นฐาน — Firefly ยังได้สัญญา NASA จริงต่อเนื่อง ($144M ภารกิจดวงจันทร์ Blue Ghost, $13M subcontract JPL SkyFall แค่เดือนก.ค.เดียว) แม้หุ้นจะร่วงและ short interest เพิ่มขึ้น (13.19M หุ้น จาก 11.84M) — ความต่างจริงระหว่างพื้นฐานกับราคา งบดุลแข็งแรง ($392M เงินสด runway 3+ ปี หนี้ต่ำ) ตัดความเสี่ยง survival ระยะใกล้ออกไป ผลประกอบการ Q2 2026 วันที่ 11 ส.ค. คือ catalyst จริงถัดไปที่จะทดสอบว่าสัญญาที่ได้จะเริ่มเปลี่ยน sentiment หรือไม่",
+      "priceNote": "ลง 2.18% วันนี้ ห่างจาก 52-week high ($73.80) มากแม้จะมีสัญญา NASA ใหม่ต่อเนื่องเดือนนี้ — เป็นความต่างระหว่าง sentiment กับพื้นฐานที่ชัดเจนที่สุดตัวหนึ่งในบอร์ดตอนนี้",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "ผลประกอบการ Q2 2026", "description": "รายงาน 11 ส.ค. 2026 รายได้ Q1 2026 อยู่ที่ $80.9M (+45% YoY) margin 21.6% แต่ free cash flow -$78.9M ตลาดต้องการเห็นสัญญา NASA ล่าสุดสะท้อนใน guidance ล่วงหน้า" },
+        { "name": "Momentum สัญญา NASA", "description": "สัญญาภารกิจดวงจันทร์ Blue Ghost มูลค่า $144M (2028) บวก subcontract JPL SkyFall มูลค่า $13M ได้มาใกล้กันในเดือนก.ค. — ชัยชนะเรื่องการมองเห็นรายได้จริงต่อเนื่องแม้หุ้นจะยังไม่ตอบรับ" }
+      ],
+      "risks": [
+        "Upside จริงลดลงต่ำกว่าเกณฑ์ 200%+ ปกติของบอร์ดนี้ — เป้าเฉลี่ยนักวิเคราะห์ 9 คนอยู่ที่ +133% และแม้เป้าสูงสุดที่มีชื่อ (Roth Capital $60) ก็ +191% ไม่ถึง 200% พอดี ตอนนี้เป็น pick แบบ borderline ไม่ใช่ turbo ที่สะอาด",
+        "หุ้นร่วงแม้จะมีสัญญา NASA ใหม่ต่อเนื่องในเดือนก.ค. — ความต่างจริงและต่อเนื่องระหว่าง sentiment กับพื้นฐานที่ยังไม่คลี่คลาย และไม่รับประกันว่าจะคลี่คลายก่อน 11 ส.ค.",
+        "Short interest เพิ่มเป็น 13.19M หุ้นจาก 11.84M — เป็น bear conviction จริงที่มีทุนหนุน ไม่ใช่แค่ sentiment อ่อนแอ",
+        "สัญญา NASA ทั้งสอง ($144M Blue Ghost, $13M SkyFall) เล็งภารกิจปี 2028 — เงินสดไม่เข้าทันที ตลาดอาจกำลัง discount ความล่าช้าหลายปีนี้",
+        "Free cash flow -$78.9M ใน Q1 แสดง cash burn ต่อเนื่องจริงแม้งบดุลจะแข็งแรง — runway 3+ ปีเป็นกันชน ไม่ใช่สัญญาณว่าธุรกิจใกล้ self-funding"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% แต่ประธาน Warsh สายเหยี่ยว 9/18 คนมองขึ้นดอกเบี้ยอีกในปี 2026 FOMC ถัดไป 28-29 ก.ค. 2026",
+        "inflationNote": "เงินเฟ้อ core ยังสูงกว่าเป้า yield 10 ปีใกล้ 4.48% เป็นแรงกดดันต่อหุ้น growth multiple สูงที่ cash burn ทั่วไป",
+        "sectorImpact": "Sector อวกาศแสดง risk-off sensitivity จริงแล้วในปี 2026 (เงินทุนไหลไป SpaceX IPO ดึงเงินจากหุ้นแบบ Firefly) — FOMC hawkish surprise สัปดาห์เดียวกับรายงานนี้จะซ้ำเติม",
+        "summary": "ความเสี่ยง Fed ระดับกลาง — สัญญาที่ Firefly ได้เองไม่ผูกกับ macro แต่ sentiment sector ที่อ่อนแออยู่แล้ว (บางส่วนจากการหมุนทุนไป SpaceX IPO) หมายความว่า FOMC hawkish surprise 28-29 ก.ค. จะเพิ่มแรงกดดันซ้อนทับ"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE แบบ borderline — สัญญาจริงที่ตลาดยังไม่ให้เครดิต แต่ upside consensus (133% หรือ 191% ขอบบน) ไม่ถึงเกณฑ์ปกติของบอร์ดนี้แล้ว เพิ่มถ้าย่อมาโซน $17-18.50 ก่อนผลประกอบการ 11 ส.ค.",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ลงแม้มีสัญญา NASA ใหม่", "timing": "Scale in (เล็ก)" },
+          { "note": "ใกล้โซน 52-week low — R/R ดีที่สุดถ้าช่องว่าง sentiment/พื้นฐานกว้างขึ้นก่อนประกาศผล", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงหนัก — เฉพาะ sector อวกาศเทขายรวม", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — ผลประกอบการ 11 ส.ค. เริ่มปิดช่องว่าง sentiment/พื้นฐาน" },
+        "tp2": { "note": "Bull — ตลาดให้เครดิต momentum สัญญา NASA เต็มที่ แตะเป้า consensus" },
+        "tp3": { "note": "Moon — ได้สัญญาเพิ่ม + short-covering rally แตะเป้า Roth", "moon": true },
+        "stopLoss": {
+          "tightNote": "ใกล้ 52-week low — thesis ยังไม่พัง แต่ยืนยันว่าช่องว่าง sentiment ยังไม่ปิด",
+          "hardNote": "หลุด 52-week low — จะบ่งชี้ปัญหาพื้นฐานจริง ไม่ใช่แค่ sentiment",
+          "rrNote": "จาก Entry 2 ($17.75 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R พอใช้ได้แต่ upside จริงตอนนี้ต่ำกว่าเกณฑ์ turbo 200% ปกติ — ถือเป็น borderline ไม่ใช่ pick ที่สะอาด"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q2 2026", "note": "ตลาดต้องการเห็นสัญญา NASA สะท้อนใน guidance ล่วงหน้า" }
+      ]
+    }
+  }
+}

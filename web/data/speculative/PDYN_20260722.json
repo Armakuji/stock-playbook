@@ -1,0 +1,176 @@
+{
+  "ticker": "PDYN",
+  "companyName": "Palladyne AI Corp.",
+  "companyDescription": "Defense autonomy/robotics software · exclusive US manufacturing & distribution partnership with Israel Aerospace Industries for 'battle-proven' loitering munitions · FY26 revenue guided to grow 357-415% YoY",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-22T21:00:00.000Z",
+  "price": 5.33,
+  "priceChange": 1.43,
+  "priceNote": "Self-fetched today (no live-prices.json cache yet). Up 1.43% today, roughly mid-range within its 52-week band ($4.14-$10.80) as the market weighs genuinely fast revenue growth against real execution/timing risk on the IAI partnership's biggest contract opportunity.",
+  "marketCap": "$251.6M",
+  "sector": "Industrials / Defense Robotics & Autonomy Software",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 56,
+  "summary": "Palladyne AI has an exclusive US manufacturing and distribution partnership with Israel Aerospace Industries for 'battle-proven' loitering munitions — Northland specifically flagged this as a potential catalyst for a significant Department of War contract opportunity, and raised its target from $10 to $15 on the news. FY26 revenue guidance of $24-27M implies 357-415% YoY growth from 2025's $5.2M base, with a $17M backlog (most expected to convert over the next 12-18 months) providing real visibility. That said, real upside here has compressed: the 4-analyst average is $11.25 (+111%), and even Northland's raised $15 target is +181% — both fall short of this board's classic 200%+ bar, and Jefferies/Alliance Global have separately cut their targets, reflecting genuine analyst disagreement on execution timing.",
+  "catalysts": [
+    {
+      "icon": "🚀",
+      "name": "IAI Loitering Munitions Partnership — DoW Contract Potential",
+      "description": "Exclusive US manufacturing/distribution partnership with Israel Aerospace Industries for 'battle-proven' loitering munitions. Northland views this as a potential catalyst for a significant Department of War contract — the single biggest swing factor for the stock, though timing and scale remain unconfirmed.",
+      "urgencyLabel": "ONGOING (contract TBD)",
+      "dateBadge": "H2 2026",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📈",
+      "name": "FY26 Revenue Ramp",
+      "description": "Guidance of $24-27M in FY26 revenue (357-415% YoY growth from $5.2M in 2025), backed by a $17M backlog as of Q1 2026, with most expected to convert to revenue over the next 12-18 months.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Real upside has compressed below this board's typical 200%+ bar — the 4-analyst consensus is $11.25 (+111%), and even Northland's raised target ($15, +181%) doesn't quite clear it",
+    "Jefferies and Alliance Global have both cut their price targets, reflecting genuine, disclosed analyst disagreement on execution and contract-timing risk, not just conservative estimate variance",
+    "The DoW contract opportunity Northland flagged is still speculative — no confirmed award, size, or timeline yet",
+    "357-415% revenue growth guidance is off a very small base ($5.2M in 2025) — the percentage looks dramatic but the absolute dollar scale is still small relative to the market cap",
+    "Quarterly cash usage of $8-9M against a still-small revenue base means continued dependence on the backlog converting on schedule; a shelf registration remains in place for future capital needs"
+  ],
+  "estimateDates": [
+    { "event": "DoW Contract Decision (potential)", "dateRange": "H2 2026", "note": "Speculative — no confirmed award, size, or date yet", "est": "Northland's bull case, not yet confirmed", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -35, "price": 3.46 },
+    { "label": "Base", "color": "yellow", "pct": 65, "price": 8.79 },
+    { "label": "Bull", "color": "green", "pct": 111.1, "price": 11.25 },
+    { "label": "Moon", "color": "purple", "pct": 181.4, "price": 15.00 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (4 analysts)", "target": 11.25, "rating": "Buy" },
+    { "firm": "Northland (raised on IAI news)", "target": 15.00, "rating": "Outperform", "note": "Raised from $10 — cites the DoW contract opportunity specifically" },
+    { "firm": "Range low", "target": 7.00, "rating": "n/a" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed holds at 3.50–3.75%, but new Chair Warsh's hawkish tone has 9 of 18 officials projecting a further 2026 hike, with the next FOMC decision Jul 28–29, 2026.",
+    "inflationNote": "Core inflation remains above target and the 10-year yield sits near 4.48% — a headwind for a small-cap growth name still burning $8-9M/quarter against a small revenue base.",
+    "sectorImpact": "Defense-contract revenue is less directly rate-sensitive than pure-growth tech, but PDYN's small size and ongoing cash burn mean it's still exposed to the cost-of-capital channel via its standing shelf registration.",
+    "summary": "MEDIUM — the IAI partnership and any eventual DoW contract are policy/defense-budget driven and largely macro-independent, but PDYN's continued cash burn against a still-small revenue base means the financing environment still matters."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 5.33, "note": "Current price — mid-range within the 52-week band", "timing": "Scale in (small)" },
+      { "label": "Entry 2", "level": 4.50, "rangeMax": 4.80, "note": "Near the 52-week low zone — best R/R if the DoW contract news takes longer to materialize", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 3.70, "note": "Deep capitulation — only on a broad small-cap defense-tech selloff", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 8.79, "pct": 65.0, "note": "Base — backlog continues converting to revenue on the guided pace" },
+    "tp2": { "price": 11.25, "pct": 111.1, "note": "Bull — IAI partnership shows early contract traction, hits consensus target" },
+    "tp3": { "price": 15.00, "pct": 181.4, "note": "Moon — a significant DoW contract materializes, hits Northland's raised target", "moon": true },
+    "stopLoss": {
+      "tight": 4.30, "tightPct": -19.3, "tightNote": "Below the 52-week-low zone — thesis-neutral but a fresh low",
+      "hard": 3.30, "hardPct": -38.1, "hardNote": "Deep breach — would suggest the backlog isn't converting or the IAI partnership is stalling",
+      "riskReward": "5.9 : 1", "rrNote": "From Entry 2 ($4.65 mid) tight stop vs TP2", "rrWarning": "Reasonable R/R but real analyst disagreement (Jefferies/Alliance Global cuts vs Northland's raise) and compressed consensus upside argue for smaller sizing"
+    },
+    "verdict": "ค่าขนม — small position on real, fast revenue growth and a genuine defense-partnership catalyst, but the DoW contract opportunity is still speculative and consensus upside no longer clears 200%.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "PDYN moved sharply on its most recent guidance-hike/product-launch news (+17.2% same-day) — this cohort reacts on discrete contract/guidance headlines rather than a sustained pre-announcement runup.",
+    "preRunupTiming": "same-day on guidance/contract news, not a multi-week runup",
+    "preRunupPct": "+10% to +20% same-day on positive guidance/contract news",
+    "postWin": {
+      "avgPct": 17.2,
+      "range": "+10% to +20%",
+      "note": "PDYN's own stock jumped 17.2% after hiking 2026 guidance and launching IQ 2.0 — a real, same-company precedent for how the market rewards concrete operational milestones.",
+      "exampleDate": "2026 (PDYN)"
+    },
+    "postLose": {
+      "avgPct": -15,
+      "range": "-10% to -20%",
+      "note": "Small-cap defense-tech names with ongoing cash burn can see real drawdowns if backlog conversion slows or a flagship partnership's contract timeline slips — general sector pattern relevant given the DoW contract opportunity is still unconfirmed.",
+      "exampleDate": "general sector pattern"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Small-cap ($252M) with genuinely fast revenue growth but real analyst disagreement (target cuts alongside Northland's raise) and a still-speculative flagship contract opportunity — 3% sizing reflects real but not fully resolved upside."
+    },
+    "stopPreCatalyst": { "pct": -19, "price": 4.30, "note": "Below the 52-week-low zone — thesis-neutral but a fresh low" },
+    "stopPostCatalyst": { "pct": -20, "note": "If backlog conversion slows materially or the IAI partnership shows no contract progress by year-end, exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "PDYN",
+      "event": "2026 guidance hike + IQ 2.0 product launch",
+      "date": "2026",
+      "movePct": 17.2,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company precedent for how the market rewards concrete operational/guidance milestones — relevant to how a future DoW contract announcement could move the stock."
+    },
+    {
+      "ticker": "PDYN",
+      "event": "Exclusive IAI loitering-munitions partnership announced",
+      "date": "2026",
+      "movePct": 10,
+      "days": 3,
+      "outcome": "good",
+      "note": "Same-company precedent for the market's reaction to the core catalyst behind this pick, though the eventual DoW contract (the bigger prize) remains unconfirmed."
+    }
+  ],
+  "sources": [
+    "https://finance.yahoo.com/markets/stocks/articles/palladyne-ai-pdyn-stock-sees-220656474.html",
+    "https://finance.yahoo.com/news/why-palladyne-ai-pdyn-17-080823940.html",
+    "https://www.tipranks.com/news/the-fly/palladyne-ai-reaffirms-fy26-revenue-view-24m-27m-consensus-25-08m-thefly-news",
+    "https://stockanalysis.com/stocks/pdyn/forecast/",
+    "https://stockanalysis.com/stocks/pdyn/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Palladyne AI มี partnership แบบ exclusive กับ Israel Aerospace Industries ในการผลิตและจัดจำหน่ายในสหรัฐฯ สำหรับ loitering munitions ระดับ 'battle-proven' — Northland ระบุชัดว่าเป็น catalyst ที่อาจนำไปสู่สัญญา Department of War ขนาดใหญ่ และปรับเป้าขึ้นจาก $10 เป็น $15 จากข่าวนี้ guidance รายได้ FY26 ที่ $24-27M หมายถึงการเติบโต 357-415% YoY จากฐาน $5.2M ปี 2025 พร้อม backlog $17M (ส่วนใหญ่คาดแปลงเป็นรายได้ใน 12-18 เดือนข้างหน้า) ให้การมองเห็นรายได้จริง อย่างไรก็ตาม upside จริงตอนนี้ลดลง — เป้าเฉลี่ยนักวิเคราะห์ 4 คนอยู่ที่ $11.25 (+111%) และแม้เป้าที่ Northland ปรับขึ้น ($15, +181%) ก็ยังไม่ถึงเกณฑ์ 200%+ ปกติของบอร์ดนี้ และ Jefferies/Alliance Global ต่างลดเป้าแยกกัน สะท้อนความเห็นต่างจริงของนักวิเคราะห์เรื่อง timing การ execute",
+      "priceNote": "ขึ้น 1.43% วันนี้ อยู่กลาง 52-week range ($4.14-$10.80) ตลาดกำลังชั่งน้ำหนักการเติบโตรายได้ที่เร็วจริงกับความเสี่ยง execution/timing จริงของโอกาสสัญญาที่ใหญ่ที่สุดของ partnership IAI",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "Partnership IAI Loitering Munitions — โอกาสสัญญา DoW", "description": "Partnership แบบ exclusive กับ Israel Aerospace Industries สำหรับผลิต/จัดจำหน่าย loitering munitions ระดับ battle-proven ในสหรัฐฯ Northland มองว่าอาจนำไปสู่สัญญา Department of War ขนาดใหญ่ — ตัวแปรใหญ่สุดของหุ้น แม้ timing และขนาดยังไม่ยืนยัน" },
+        { "name": "การเติบโตรายได้ FY26", "description": "Guidance รายได้ FY26 ที่ $24-27M (โต 357-415% YoY จาก $5.2M ปี 2025) หนุนด้วย backlog $17M ณ Q1 2026 ส่วนใหญ่คาดแปลงเป็นรายได้ใน 12-18 เดือนข้างหน้า" }
+      ],
+      "risks": [
+        "Upside จริงลดลงต่ำกว่าเกณฑ์ 200%+ ปกติของบอร์ดนี้ — เป้าเฉลี่ยนักวิเคราะห์ 4 คนอยู่ที่ $11.25 (+111%) และแม้เป้าที่ Northland ปรับขึ้น ($15, +181%) ก็ยังไม่ถึง",
+        "Jefferies และ Alliance Global ต่างลดเป้าราคาแยกกัน สะท้อนความเห็นต่างจริงที่เปิดเผยแล้วเรื่องความเสี่ยง execution และ timing สัญญา ไม่ใช่แค่ noise การประมาณแบบระมัดระวัง",
+        "โอกาสสัญญา DoW ที่ Northland ระบุยังเป็นการคาดการณ์ — ยังไม่มีการมอบสัญญา ขนาด หรือ timeline ที่ยืนยัน",
+        "Guidance การเติบโตรายได้ 357-415% มาจากฐานที่เล็กมาก ($5.2M ปี 2025) — เปอร์เซ็นต์ดูน่าตื่นเต้นแต่ขนาดดอลลาร์แท้จริงยังเล็กเทียบมูลค่าตลาด",
+        "การใช้เงินสดรายไตรมาส $8-9M เทียบฐานรายได้ที่ยังเล็ก หมายถึงยังต้องพึ่ง backlog แปลงตามกำหนด shelf registration ยังคงมีไว้สำหรับความต้องการทุนในอนาคต"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% แต่ประธาน Warsh สายเหยี่ยว 9/18 คนมองขึ้นดอกเบี้ยอีกในปี 2026 FOMC ถัดไป 28-29 ก.ค. 2026",
+        "inflationNote": "เงินเฟ้อ core ยังสูงกว่าเป้า yield 10 ปีใกล้ 4.48% เป็นแรงกดดันต่อหุ้น growth เล็กที่ยังเผาเงินสด $8-9M/ไตรมาสเทียบฐานรายได้ที่เล็ก",
+        "sectorImpact": "รายได้จากสัญญากลาโหม sensitive ต่อดอกเบี้ยน้อยกว่าหุ้น growth ล้วน แต่ PDYN ขนาดเล็กและยังเผาเงินสดต่อเนื่อง ทำให้ยัง expose ต่อช่องทางต้นทุนทุนผ่าน shelf registration ที่มีอยู่",
+        "summary": "ความเสี่ยง Fed ระดับกลาง — partnership IAI และสัญญา DoW ที่อาจเกิดขึ้นขับเคลื่อนด้วยนโยบาย/งบกลาโหมและ macro-independent ส่วนใหญ่ แต่การเผาเงินสดต่อเนื่องของ PDYN เทียบฐานรายได้ที่ยังเล็กหมายความว่าสภาพแวดล้อมการเงินยังสำคัญ"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม — เข้าไม้เล็กตามการเติบโตรายได้ที่เร็วจริงและ catalyst partnership กลาโหมจริง แต่โอกาสสัญญา DoW ยังเป็นการคาดการณ์ และ upside consensus ไม่ถึง 200% แล้ว",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — กลาง 52-week band", "timing": "Scale in (เล็ก)" },
+          { "note": "ใกล้โซน 52-week low — R/R ดีที่สุดถ้าข่าวสัญญา DoW ใช้เวลานานกว่าคาด", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงหนัก — เฉพาะ defense-tech เล็กเทขายรวม", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — backlog แปลงเป็นรายได้ตามจังหวะที่ guide ไว้ต่อเนื่อง" },
+        "tp2": { "note": "Bull — partnership IAI เริ่มมี contract traction แตะเป้า consensus" },
+        "tp3": { "note": "Moon — สัญญา DoW ขนาดใหญ่เกิดขึ้นจริง แตะเป้าที่ Northland ปรับขึ้น", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดโซน 52-week low — thesis ยังไม่พัง แต่จุดต่ำสุดใหม่",
+          "hardNote": "หลุดลึก — จะบ่งชี้ backlog ไม่แปลงตามแผนหรือ partnership IAI สะดุด",
+          "rrNote": "จาก Entry 2 ($4.65 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R พอใช้ได้แต่ความเห็นต่างนักวิเคราะห์จริง (Jefferies/Alliance Global ลดเป้า vs Northland ปรับขึ้น) และ upside consensus บีบแคบ — size ให้เล็กกว่า"
+        }
+      },
+      "estimateDates": [
+        { "event": "การตัดสินใจสัญญา DoW (ถ้ามี)", "note": "เป็นการคาดการณ์ — ยังไม่มีการมอบสัญญา ขนาด หรือวันที่ยืนยัน" }
+      ]
+    }
+  }
+}
