@@ -1,0 +1,178 @@
+{
+  "ticker": "INTC",
+  "companyName": "Intel Corporation",
+  "companyDescription": "Legacy CPU maker + 18A foundry turnaround bet · foundry sales up 461% even as the stock craters on 18A yield-delay reports · Q2 2026 earnings tomorrow",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-22T18:00:00.000Z",
+  "price": 105.70,
+  "priceChange": 0.24,
+  "priceNote": "Self-fetched today (no live-prices.json cache yet). Roughly flat today after an extraordinary run: Intel stock soared ~278% in H1 2026 on foundry-turnaround optimism, then fell over 20% in the past week/month on reports that its 18A process may not hit profitable yields until late 2026 or 2027, plus AMD's first-ever data-center revenue lead. Q2 2026 earnings report tomorrow (Jul 23) is a critical, immediate catalyst.",
+  "marketCap": "$531.3B",
+  "sector": "Technology / Semiconductors (Foundry & Legacy CPU)",
+  "verdict": "HOLD",
+  "scoreLabel": "Speculative",
+  "score": 54,
+  "summary": "Intel is genuinely two stories fighting for control of the stock right now. The bull case: the stock soared ~278% in H1 2026 on foundry-turnaround hopes, and foundry sales are reportedly up 461% even as the share price falls — a real divergence between one business metric and sentiment. The bear case: reports say the critical 18A process may not achieve profitable yields until late 2026 or 2027 (a real timeline slip), and AMD just took the data-center revenue lead from Intel for the first time ever. The stock has fallen 20%+ in the past week alone. Analyst consensus clusters $96-107 (Hold) — essentially AT the current price, meaning the 'easy' re-rate from the H1 rally has already happened and the crowd is now split on what's next. Q2 2026 earnings tomorrow (Jul 23) is the most immediate, highest-stakes catalyst in this entire batch.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings (TOMORROW)",
+      "description": "Reports tomorrow, Jul 23, 2026 — described as 'critical' for determining the stock's direction given the ongoing 18A yield-delay concerns and the AMD data-center-revenue-lead news. The market needs clarity on the actual 18A timeline, not just headline revenue.",
+      "urgencyLabel": "TOMORROW",
+      "dateBadge": "Jul 23, 2026",
+      "catalystDate": "2026-07-23",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "🏭",
+      "name": "18A Process Yield Timeline",
+      "description": "Reports say Intel's critical 18A manufacturing process may not achieve profitable yields until late 2026 at best, possibly 2027 — a real slip from earlier expectations and the central reason for the stock's 20%+ weekly decline. This is the single biggest swing factor for the foundry turnaround thesis.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "The 18A yield-delay reports are a real, disclosed manufacturing risk, not analyst speculation — if profitable yields genuinely don't arrive until 2027, the foundry-turnaround thesis that drove the 278% H1 rally is significantly weaker than priced",
+    "AMD's first-ever data-center revenue lead over Intel is a real competitive-share-loss signal in Intel's traditionally strongest segment",
+    "Consensus target ($96-107) sits essentially AT the current price ($105.70) — unlike most names in this screen, there isn't a broad analyst vote of confidence for meaningful further upside from here",
+    "Extreme target dispersion ($25 to $200) reflects genuine, unresolved disagreement about whether the foundry bet pays off at all, not just normal estimate variance",
+    "The stock already gave back a meaningful chunk of its 278% H1 gain in a single week — shows real fragility in the rally, not a stock that grinds higher steadily"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Jul 23, 2026 (tomorrow)", "note": "Market needs clarity on the actual 18A yield timeline, not just revenue", "est": "Foundry commentary is the swing factor, more than the headline print", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -35, "price": 68.71 },
+    { "label": "Base", "color": "yellow", "pct": 0, "price": 105.70 },
+    { "label": "Bull", "color": "green", "pct": 34.5, "price": 142.35 },
+    { "label": "Moon", "color": "purple", "pct": 89.2, "price": 200.00 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (28-55 analysts, varies by source)", "target": 100.00, "rating": "Hold" },
+    { "firm": "HSBC (bull case)", "target": 200.00, "rating": "Buy", "note": "Cites long-term foundry potential despite current challenges — a real bull outlier" },
+    { "firm": "Bear range floor", "target": 25.00, "rating": "n/a", "note": "The low end of the analyst dispersion, reflecting genuine doubt about the foundry turnaround" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed holds at 3.50–3.75%, but new Chair Warsh's hawkish tone has 9 of 18 officials projecting a further 2026 hike, with the next FOMC decision Jul 28–29, 2026.",
+    "inflationNote": "Core inflation remains above target and the 10-year yield sits near 4.48% — a headwind for a capital-intensive foundry buildout that depends on continued access to capital.",
+    "sectorImpact": "Intel's foundry turnaround requires years of heavy capex — a high-rate environment raises the cost of that buildout directly, on top of the company-specific execution risk already in the stock.",
+    "summary": "MEDIUM — tomorrow's earnings and the 18A yield timeline are company-specific catalysts, but Intel's capital-intensive foundry bet makes it more exposed than most to a sustained high-rate environment, and a hawkish Jul 28-29 FOMC would compound an already-fragile week for the stock."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 105.70, "note": "Current price — right at the consensus target after a 20%+ weekly decline", "timing": "Now (small, pre-earnings)" },
+      { "label": "Entry 2", "level": 85.00, "rangeMax": 95.00, "note": "Below the recent decline zone — best R/R if tomorrow's print disappoints further on 18A timeline", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 60.00, "note": "Deep capitulation — only if the 18A delay is confirmed as extending to 2027 with no offsetting news", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 105.70, "pct": 0.0, "note": "Base — Q2 print is a non-event, stock holds around consensus" },
+    "tp2": { "price": 142.35, "pct": 34.5, "note": "Bull — 18A timeline concerns ease, foundry sales momentum (461% growth) is validated, hits the 52-week high" },
+    "tp3": { "price": 200.00, "pct": 89.2, "note": "Moon — foundry turnaround thesis fully re-validated, hits HSBC's target", "moon": true },
+    "stopLoss": {
+      "tight": 80.00, "tightPct": -24.3, "tightNote": "Below the post-decline consolidation zone — thesis-neutral but confirms the sharp downtrend continuing",
+      "hard": 55.00, "hardPct": -48.0, "hardNote": "Deep breach — would confirm the 18A delay extends materially and the foundry bet is failing",
+      "riskReward": "1.6 : 1", "rrNote": "From Entry 2 ($90 mid) tight stop vs TP2", "rrWarning": "Weak R/R relative to other names in this batch — this is a genuinely contested turnaround story with real bear-case risk, not a clean asymmetric setup"
+    },
+    "verdict": "HOLD ahead of tomorrow's critical earnings print. This is the most binary, least analyst-validated name in this batch right now — the 18A yield timeline is the whole thesis, and it's genuinely unresolved.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Intel has shown extreme, sustained volatility rather than a clean pre-earnings pattern — the stock ran up 278% over H1 2026 on foundry optimism, then fell over 20% in the trailing week on yield-delay reports ahead of tomorrow's print.",
+    "preRunupTiming": "no clean pattern — extreme volatility in both directions over the trailing weeks",
+    "preRunupPct": "highly variable; the stock has moved 20%+ in a single week recently",
+    "postWin": {
+      "avgPct": 15,
+      "range": "+5% to +25%",
+      "note": "Intel's own H1 2026 run (+278%) shows how explosively this stock can move on foundry-turnaround optimism when the narrative is working — a clean 18A-timeline reassurance tomorrow could reignite that.",
+      "exampleDate": "H1 2026 (INTC)"
+    },
+    "postLose": {
+      "avgPct": -21,
+      "range": "-15% to -25%",
+      "note": "Intel's own stock fell 21% in the trailing week on 18A yield-delay reports and AMD's data-center-lead news — the direct, same-company, same-thesis precedent for what a confirmation of that bad news tomorrow could look like.",
+      "exampleDate": "Jul 2026 (INTC)"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Mega-cap ($531B) but the most contested, least-consensus-validated thesis in this batch (target range $25-200, consensus essentially at the current price) — 3% sizing respects the genuine binary uncertainty into tomorrow's print."
+    },
+    "stopPreCatalyst": { "pct": -24, "price": 80.00, "note": "Below the post-decline consolidation zone ahead of tomorrow — thesis-neutral but confirms the downtrend" },
+    "stopPostCatalyst": { "pct": -25, "note": "If tomorrow confirms the 18A delay extends to 2027 with no offsetting foundry-customer news, exit — mirrors the trailing week's reaction" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "INTC",
+      "event": "H1 2026 foundry-turnaround rally",
+      "date": "H1 2026",
+      "movePct": 278,
+      "days": 180,
+      "outcome": "good",
+      "note": "Same-company precedent for how explosively this stock can move when the foundry narrative is working — the upside case tomorrow's earnings could reignite."
+    },
+    {
+      "ticker": "INTC",
+      "event": "18A yield-delay reports + AMD data-center revenue lead",
+      "date": "Jul 2026",
+      "movePct": -21,
+      "days": 7,
+      "outcome": "bad",
+      "note": "The direct, most-recent same-company precedent — exactly the risk tomorrow's earnings could confirm or ease."
+    }
+  ],
+  "sources": [
+    "https://www.tradingkey.com/analysis/stocks/us-stocks/262017058-intel-intc-stock-prediction-july-2026-hsbc-200-bubble-risk-tradingkey",
+    "https://www.indmoney.com/blog/us-stocks/intel-stock-crash-explained-intc-fall-analysis",
+    "https://phemex.com/blogs/intel-stock-crash-18a-delay-amd-data-center-surge",
+    "https://www.fool.com/investing/2026/07/19/intel-stock-soared-about-278-in-the-first-half-of/",
+    "https://ts2.tech/en/intel-nasdaqintc-stock-falls-even-as-foundry-sales-jump-461/",
+    "https://stockanalysis.com/stocks/intc/forecast/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Intel มีสองเรื่องราวจริงที่กำลังต่อสู้กันเพื่อควบคุมทิศทางหุ้นตอนนี้ ฝั่ง bull: หุ้นพุ่ง ~278% ใน H1 2026 จากความหวัง foundry turnaround และยอดขาย foundry รายงานว่าโตถึง 461% แม้ราคาหุ้นจะร่วง — ความต่างจริงระหว่างตัวเลขธุรกิจกับ sentiment ฝั่ง bear: รายงานระบุว่ากระบวนการ 18A ที่สำคัญอาจไม่ได้ yield ที่ทำกำไรจนถึงปลายปี 2026 หรือ 2027 (เลื่อน timeline จริง) และ AMD เพิ่งแซง Intel ขึ้นเป็นผู้นำรายได้ data center เป็นครั้งแรกในประวัติศาสตร์ หุ้นร่วงมากกว่า 20% ในสัปดาห์เดียว เป้า consensus นักวิเคราะห์อยู่ที่ $96-107 (Hold) — แทบเท่าราคาปัจจุบันพอดี หมายความว่าการ re-rate ง่าย ๆ จากการรีบาวด์ H1 เกิดขึ้นไปแล้ว และตอนนี้ตลาดแบ่งฝ่ายกันจริงว่าต่อไปจะเป็นอย่างไร ผลประกอบการ Q2 2026 พรุ่งนี้ (23 ก.ค.) คือ catalyst ที่เดิมพันสูงและใกล้ที่สุดในชุดนี้ทั้งหมด",
+      "priceNote": "ค่อนข้างทรงตัววันนี้ หลังการเคลื่อนไหวที่สุดโต่ง — หุ้นพุ่ง ~278% ใน H1 2026 จากความหวัง foundry turnaround แล้วร่วงกว่า 20% ในสัปดาห์/เดือนที่ผ่านมาจากรายงาน 18A yield ล่าช้าบวก AMD แซงเป็นผู้นำ data center revenue ผลประกอบการ Q2 2026 พรุ่งนี้ (23 ก.ค.) เป็น catalyst วิกฤตที่ใกล้มาก",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "ผลประกอบการ Q2 2026 (พรุ่งนี้)", "description": "รายงานพรุ่งนี้ 23 ก.ค. 2026 — 'วิกฤต' ต่อทิศทางหุ้นเมื่อพิจารณาความกังวล 18A yield ล่าช้าและข่าว AMD แซงเป็นผู้นำ data center ตลาดต้องการความชัดเจนเรื่อง timeline 18A จริง ไม่ใช่แค่รายได้ headline" },
+        { "name": "Timeline Yield กระบวนการ 18A", "description": "รายงานระบุว่ากระบวนการผลิต 18A ที่สำคัญของ Intel อาจไม่ได้ yield ที่ทำกำไรจนถึงปลายปี 2026 อย่างเร็วที่สุด อาจถึงปี 2027 — เลื่อนจริงจากที่คาดไว้ก่อนหน้า และเป็นเหตุผลหลักที่หุ้นร่วง 20%+ ในสัปดาห์" }
+      ],
+      "risks": [
+        "รายงาน 18A yield ล่าช้าเป็นความเสี่ยงด้านการผลิตจริงที่เปิดเผยแล้ว ไม่ใช่การคาดเดาของนักวิเคราะห์ — ถ้า yield ที่ทำกำไรจริงไม่มาจนถึงปี 2027 thesis foundry turnaround ที่ดันหุ้นขึ้น 278% ใน H1 จะอ่อนกว่าที่ price in ไว้มาก",
+        "AMD แซง Intel เป็นผู้นำรายได้ data center ครั้งแรกในประวัติศาสตร์ เป็นสัญญาณเสียส่วนแบ่งตลาดจริงในกลุ่มที่ Intel เคยแข็งแกร่งที่สุด",
+        "เป้า consensus ($96-107) อยู่ใกล้ราคาปัจจุบัน ($105.70) พอดี — ต่างจากหุ้นส่วนใหญ่ในชุดนี้ ไม่มีการโหวตความเชื่อมั่นกว้างจากนักวิเคราะห์ว่าจะมี upside ที่มีนัยสำคัญจากตรงนี้",
+        "Dispersion เป้าราคาสุดโต่ง ($25 ถึง $200) สะท้อนความเห็นต่างจริงที่ยังไม่คลี่คลายว่าการเดิมพัน foundry จะสำเร็จหรือไม่ ไม่ใช่แค่ noise การประมาณปกติ",
+        "หุ้นคืนกำไรจากการพุ่ง 278% ใน H1 ไปมากแล้วในสัปดาห์เดียว — แสดงความเปราะบางจริงของการรีบาวด์ ไม่ใช่หุ้นที่ไต่ขึ้นอย่างมั่นคง"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% แต่ประธาน Warsh สายเหยี่ยว 9/18 คนมองขึ้นดอกเบี้ยอีกในปี 2026 FOMC ถัดไป 28-29 ก.ค. 2026",
+        "inflationNote": "เงินเฟ้อ core ยังสูงกว่าเป้า yield 10 ปีใกล้ 4.48% เป็นแรงกดดันต่อการสร้าง foundry ที่ใช้ทุนหนักและต้องพึ่งการเข้าถึงทุนต่อเนื่อง",
+        "sectorImpact": "การพลิกฟื้น foundry ของ Intel ต้องใช้ capex หนักหลายปี — สภาพแวดล้อมดอกเบี้ยสูงเพิ่มต้นทุนการสร้างนี้โดยตรง ซ้อนทับความเสี่ยง execution เฉพาะบริษัทที่มีอยู่แล้ว",
+        "summary": "ความเสี่ยง Fed ระดับกลาง — ผลประกอบการพรุ่งนี้และ timeline 18A เป็น catalyst เฉพาะบริษัท แต่การเดิมพัน foundry ที่ใช้ทุนหนักของ Intel ทำให้ expose ต่อสภาพแวดล้อมดอกเบี้ยสูงต่อเนื่องมากกว่าปกติ และ FOMC hawkish surprise 28-29 ก.ค. จะซ้ำเติมสัปดาห์ที่เปราะบางอยู่แล้วของหุ้นนี้"
+      },
+      "entryStrategy": {
+        "verdict": "HOLD ก่อนผลประกอบการวิกฤตพรุ่งนี้ นี่คือหุ้นที่ binary และมีนักวิเคราะห์รองรับน้อยที่สุดในชุดนี้ตอนนี้ — timeline 18A คือ thesis ทั้งหมด และยังไม่คลี่คลายจริง",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — อยู่ที่เป้า consensus พอดีหลังร่วง 20%+ ในสัปดาห์", "timing": "ตอนนี้ (เล็ก ก่อนประกาศผล)" },
+          { "note": "ต่ำกว่าโซนร่วงล่าสุด — R/R ดีที่สุดถ้าผลพรุ่งนี้ผิดหวังเรื่อง timeline 18A เพิ่ม", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงหนัก — เฉพาะกรณียืนยันว่า 18A เลื่อนไปถึงปี 2027 โดยไม่มีข่าวชดเชย", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — ผล Q2 เป็น non-event หุ้นทรงตัวใกล้ consensus" },
+        "tp2": { "note": "Bull — ความกังวล timeline 18A คลี่คลาย momentum ยอดขาย foundry (+461%) ได้รับการยืนยัน แตะ 52-week high" },
+        "tp3": { "note": "Moon — thesis foundry turnaround ได้รับการยืนยันเต็มที่ แตะเป้า HSBC", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดโซน consolidation หลังร่วง — thesis ยังไม่พัง แต่ยืนยันขาลงแรงต่อเนื่อง",
+          "hardNote": "หลุดลึก — จะยืนยันว่า 18A เลื่อนจริงและการเดิมพัน foundry กำลังล้มเหลว",
+          "rrNote": "จาก Entry 2 ($90 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R อ่อนเทียบหุ้นอื่นในชุดนี้ — เป็นเรื่อง turnaround ที่มีข้อโต้แย้งจริง ไม่ใช่ setup แบบ asymmetric ที่สะอาด"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q2 2026", "note": "ตลาดต้องการความชัดเจนเรื่อง timeline yield 18A จริง มากกว่าแค่ผลประกอบการ" }
+      ]
+    }
+  }
+}

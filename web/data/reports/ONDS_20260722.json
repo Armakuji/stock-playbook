@@ -1,0 +1,195 @@
+{
+  "ticker": "ONDS",
+  "companyName": "Ondas Holdings Inc.",
+  "companyDescription": "Multi-domain autonomous defense platform · drone/counter-UAS systems + Sentrycs subsidiary · Q2 orders above $150M, FY26 revenue guide raised to $390M+",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-22T18:00:00.000Z",
+  "price": 8.50,
+  "priceChange": 11.5,
+  "priceNote": "Self-fetched today (no live-prices.json cache yet). Up sharply today, tracking a broader drone-defense sector rally alongside real company-specific momentum — Q2 orders surged more than 10x YoY to $50.1M and management raised the FY26 revenue target.",
+  "marketCap": "$4.84B",
+  "sector": "Industrials / Defense Drones & Counter-UAS",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 71,
+  "summary": "Ondas is in the middle of a genuine growth inflection: Q2 2026 orders surged more than 10x YoY to $50.1M, the company raised its FY26 revenue target to at least $390M, and it secured drone-defense contracts tied to 2026 World Cup host-city security through its Sentrycs subsidiary plus a showcase at the Eurosatory 2026 defense exhibition for its 'system-of-systems' platform. Analysts average a $20.12 target (12-month, 100%+ implied upside), Strong Buy. Q2 2026 earnings are estimated for Aug 11-14 but not yet confirmed by the company — a real near-term catalyst once the date firms up. Today's pop tracks a sector-wide drone-defense rally, not just company news, so some of this move isn't Ondas-specific.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings (est.)",
+      "description": "Company hasn't confirmed the exact date yet — estimated Aug 11-14, 2026 based on the prior quarter's reporting cadence. The market will look for the $150M+ in Q2 orders and the raised $390M+ FY26 revenue guide to show up in reported numbers.",
+      "urgencyLabel": "~3 WEEKS (est.)",
+      "dateBadge": "Aug 11-14, 2026 (est.)",
+      "catalystDate": "2026-08-12",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "⚽",
+      "name": "2026 World Cup Security Contracts (Sentrycs)",
+      "description": "Ondas' Sentrycs subsidiary secured drone-defense contracts tied to airspace security around 2026 World Cup host cities — a real, dated commercial application of the counter-UAS platform ahead of the tournament.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "🛡️",
+      "name": "Eurosatory 2026 Platform Showcase",
+      "description": "Ondas introduced its unified 'system-of-systems' platform — bridging aerial defense, counter-UAS, ground robotics, and AI command structures — at the Eurosatory 2026 defense exhibition, a high-profile showcase for its integrated defense-tech story.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Q2 earnings date is still unconfirmed by the company (estimated Aug 11-14) — real date uncertainty adds to the binary-event risk rather than reducing it",
+    "Today's pop is partly a sector-wide drone-defense rally (similar moves seen in RCAT, AVAV, KTOS) — not purely Ondas-specific news, so some of this gain could reverse if the broader sector cools",
+    "Market cap has grown over 1,100% in the trailing period per market-cap tracking — a re-rate this large raises real questions about how much future growth is already priced in",
+    "Defense-contract revenue timing (World Cup security, government orders) can slip on procurement cycles even when the underlying demand story is real",
+    "10x YoY order growth is an extraordinary comp — sustaining that growth rate gets mechanically harder each subsequent quarter"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Aug 11-14, 2026 (est.)", "note": "Company hasn't confirmed exact date yet", "est": "Market wants $150M+ Q2 orders + $390M+ FY26 guide confirmed in reported results", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -30, "price": 5.95 },
+    { "label": "Base", "color": "yellow", "pct": 50, "price": 12.75 },
+    { "label": "Bull", "color": "green", "pct": 100.5, "price": 17.04 },
+    { "label": "Moon", "color": "purple", "pct": 137, "price": 20.13 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus average", "target": 20.12, "rating": "Strong Buy" },
+    { "firm": "Median target", "target": 19.50, "rating": "Strong Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed holds at 3.50–3.75%, but new Chair Warsh's hawkish tone has 9 of 18 officials projecting a further 2026 hike, with the next FOMC decision Jul 28–29, 2026.",
+    "inflationNote": "Core inflation remains above target and the 10-year yield sits near 4.48% — a headwind for high-beta small/mid caps like Ondas even with real fundamental momentum.",
+    "sectorImpact": "Defense/government-contract revenue is less directly rate-sensitive than pure-growth tech, but Ondas' recent 1,100%+ market-cap re-rate means it's still a high-beta name that would get hit in a broad risk-off move.",
+    "summary": "MEDIUM — the defense-contract demand story is largely macro-independent, but a stock that has re-rated this dramatically is more exposed than a steadier name to a broad risk-off shock around the dense Jul 28-29 FOMC week."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 8.50, "note": "Current price — up sharply today on sector + company momentum", "timing": "Now (small)" },
+      { "label": "Entry 2", "level": 7.00, "rangeMax": 7.50, "note": "Pre-pop consolidation zone from earlier this week", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 5.50, "note": "Deep dip — only on a broad drone-defense sector selloff", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 12.75, "pct": 50.0, "note": "Base — Q2 earnings confirm the growth trajectory, sector momentum sustains" },
+    "tp2": { "price": 17.04, "pct": 100.5, "note": "Bull — clean beat-and-raise, World Cup contracts show up in guidance, hits consensus target" },
+    "tp3": { "price": 20.13, "pct": 137.0, "note": "Moon — 10x order growth continues + new defense contracts announced", "moon": true },
+    "stopLoss": {
+      "tight": 6.50, "tightPct": -23.5, "tightNote": "Below the pre-pop consolidation zone — thesis-neutral but momentum stalling",
+      "hard": 5.00, "hardPct": -41.2, "hardNote": "Deep breach — order growth stalling or a lost defense contract",
+      "riskReward": "8.7 : 1", "rrNote": "From Entry 2 ($7.25 mid) tight stop vs TP2", "rrWarning": "High R/R but the stock already re-rated 1,100%+ — size for volatility, not a slow-mover"
+    },
+    "verdict": "BUY — real order growth and contract wins driving this, not just narrative. Add on a dip toward $7.00-7.50 ahead of the (still unconfirmed) Aug 11-14 earnings window.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Drone-defense names in this cohort move on same-day contract/tailwind headlines with limited sustained pre-event runup — today's pop tracks a broader sector rally (RCAT, AVAV, KTOS all up this week) rather than a single Ondas-specific announcement.",
+    "preRunupTiming": "same-day on sector/contract news, not a multi-week grind",
+    "preRunupPct": "+5% to +15% same-day on sector-wide catalysts",
+    "postWin": {
+      "avgPct": 20,
+      "range": "+10% to +30%",
+      "note": "Ondas' own Q2 2026 order surge (10x YoY to $50.1M) and raised FY26 revenue guide drove sustained momentum; peer AeroVironment's Jun 30 2026 record quarter + Pentagon contract drove a 19-32% pop as the closest sector comparable.",
+      "exampleDate": "Jul 2026 (ONDS) / Jun 2026 (AVAV sector comp)"
+    },
+    "postLose": {
+      "avgPct": -18,
+      "range": "-10% to -25%",
+      "note": "Sector comparable AeroVironment fell ~18% over a month despite a record quarter after guiding to a much larger loss on a lost $1.7B contract and goodwill impairment — shows this sector's downside sensitivity even on otherwise-strong prints.",
+      "exampleDate": "Jun 2026 (AVAV, sector comparable)"
+    },
+    "spotSizing": {
+      "pct": 5,
+      "reason": "Small/mid-cap ($4.84B, up 1,100%+) with real order growth but an unconfirmed earnings date and a re-rate that's already run hard — 5% keeps meaningful upside exposure while respecting the binary/date uncertainty."
+    },
+    "stopPreCatalyst": { "pct": -24, "price": 6.50, "note": "Below the pre-pop consolidation zone ahead of the (unconfirmed) Aug 11-14 window — thesis-neutral but momentum stalling" },
+    "stopPostCatalyst": { "pct": -25, "note": "If Q2 results don't confirm the $150M+ order pace or FY26 guidance is walked back, exit — mirrors the sector's guidance-cut drawdown pattern" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "ONDS",
+      "event": "Q2 2026 orders surge 10x YoY to $50.1M, FY26 revenue guide raised to $390M+",
+      "date": "Jul 2026",
+      "movePct": 11.5,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company precedent for how the market rewards confirmed order growth — directly relevant to the upcoming (unconfirmed-date) earnings print."
+    },
+    {
+      "ticker": "AVAV",
+      "event": "Record Q4 FY26 print + $500M DoD counter-drone contract",
+      "date": "Jun 2026",
+      "movePct": 19,
+      "days": 1,
+      "outcome": "good",
+      "note": "Closest sector comparable for how a beat-and-contract-win combination moves a drone-defense name."
+    },
+    {
+      "ticker": "AVAV",
+      "event": "FY26 guidance cut to a much larger loss after a $1.7B contract termination + goodwill impairment, despite a record quarter",
+      "date": "Jun 2026",
+      "movePct": -18,
+      "days": 30,
+      "outcome": "bad",
+      "note": "Sector risk case — shows even a strong headline print doesn't protect against a lost-contract shock in this space."
+    }
+  ],
+  "sources": [
+    "https://www.top1markets.com/news/ondas-onds-stock-defense-tech-catalysts-2026",
+    "https://ts2.tech/en/ondas-stock-just-got-a-navy-catalyst-why-onds-traders-are-watching-the-next-move/",
+    "https://www.timothysykes.com/news/ondas-inc-onds-news-2026_05_11/",
+    "https://stockanalysis.com/stocks/onds/",
+    "https://www.benzinga.com/trading-ideas/movers/26/06/53116227/3-under-the-radar-defense-tech-stocks-small-caps-with-real-pentagon-contracts"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Ondas อยู่ในช่วง inflection การเติบโตจริง — ยอดสั่งซื้อ Q2 2026 พุ่งกว่า 10 เท่า YoY เป็น $50.1M บริษัทปรับเป้ารายได้ปี 2026 เป็นอย่างน้อย $390M และได้สัญญาป้องกันโดรนผูกกับความปลอดภัยเมืองเจ้าภาพฟุตบอลโลก 2026 ผ่านบริษัทลูก Sentrycs บวกโชว์แพลตฟอร์ม 'system-of-systems' ที่งาน Eurosatory 2026 นักวิเคราะห์ให้เป้าเฉลี่ย $20.12 (12 เดือน upside 100%+) Strong Buy ผลประกอบการ Q2 2026 คาดอยู่ระหว่าง 11-14 ส.ค. แต่ยังไม่ยืนยันจากบริษัท — catalyst จริงระยะใกล้เมื่อวันที่ยืนยันแล้ว การขึ้นวันนี้ตามการรีบาวด์ของกลุ่มโดรนกลาโหมทั้งกลุ่ม ไม่ใช่แค่ข่าวเฉพาะบริษัท",
+      "priceNote": "ขึ้นแรงวันนี้ ตามการรีบาวด์ของกลุ่มโดรนกลาโหมทั้งกลุ่มบวก momentum เฉพาะบริษัทจริง — ยอดสั่งซื้อ Q2 พุ่งกว่า 10 เท่า YoY เป็น $50.1M และปรับเป้ารายได้ปี 2026 ขึ้น",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "ผลประกอบการ Q2 2026 (คาดการณ์)", "description": "บริษัทยังไม่ยืนยันวันที่แน่นอน คาดอยู่ระหว่าง 11-14 ส.ค. 2026 ตลาดต้องการเห็นยอดสั่งซื้อ Q2 กว่า $150M และเป้ารายได้ปี 2026 $390M+ สะท้อนในตัวเลขจริง" },
+        { "name": "สัญญาความปลอดภัยฟุตบอลโลก 2026 (Sentrycs)", "description": "บริษัทลูก Sentrycs ได้สัญญาป้องกันโดรนผูกกับความปลอดภัยน่านฟ้าเมืองเจ้าภาพฟุตบอลโลก 2026 — การใช้งานเชิงพาณิชย์จริงของแพลตฟอร์ม counter-UAS ก่อนทัวร์นาเมนต์" },
+        { "name": "โชว์แพลตฟอร์มที่งาน Eurosatory 2026", "description": "Ondas เปิดตัวแพลตฟอร์ม 'system-of-systems' รวม — เชื่อมป้องกันทางอากาศ counter-UAS หุ่นยนต์ภาคพื้นดิน และโครงสร้างคำสั่ง AI — ที่งานกลาโหม Eurosatory 2026" }
+      ],
+      "risks": [
+        "วันที่ผลประกอบการ Q2 ยังไม่ยืนยันจากบริษัท (คาด 11-14 ส.ค.) — ความไม่แน่นอนด้านวันที่จริงเพิ่มความเสี่ยง binary event แทนที่จะลดลง",
+        "การขึ้นวันนี้ส่วนหนึ่งมาจากการรีบาวด์ของกลุ่มโดรนกลาโหมทั้งกลุ่ม (คล้ายกับ RCAT, AVAV, KTOS) — ไม่ใช่ข่าวเฉพาะ Ondas ล้วน ๆ กำไรบางส่วนอาจกลับตัวถ้ากลุ่มเย็นลง",
+        "มูลค่าตลาดโตกว่า 1,100% ในช่วงที่ผ่านมา — การ re-rate ขนาดนี้ทำให้เกิดคำถามจริงว่าการเติบโตในอนาคต price in ไปแล้วมากแค่ไหน",
+        "รายได้จากสัญญากลาโหม (ความปลอดภัยฟุตบอลโลก คำสั่งซื้อรัฐบาล) เลื่อนได้ตามรอบจัดซื้อแม้ดีมานด์พื้นฐานจะจริง",
+        "การเติบโตยอดสั่งซื้อ 10 เท่า YoY เป็นฐานเปรียบเทียบที่สุดโต่ง — การรักษาอัตราการเติบโตนี้ยากขึ้นเชิงกลไกทุกไตรมาสถัดไป"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% แต่ประธาน Warsh สายเหยี่ยว 9/18 คนมองขึ้นดอกเบี้ยอีกในปี 2026 FOMC ถัดไป 28-29 ก.ค. 2026",
+        "inflationNote": "เงินเฟ้อ core ยังสูงกว่าเป้า yield 10 ปีใกล้ 4.48% เป็นแรงกดดันต่อหุ้นกลาง/เล็ก high-beta แบบ Ondas แม้พื้นฐานจะดีจริง",
+        "sectorImpact": "รายได้จากสัญญารัฐบาล/กลาโหม sensitive ต่อดอกเบี้ยน้อยกว่าหุ้น growth ล้วน แต่การ re-rate 1,100%+ ล่าสุดทำให้ Ondas ยังเป็นหุ้น high-beta ที่จะโดนหนักถ้า risk-off มาแรง",
+        "summary": "ความเสี่ยง Fed ระดับกลาง — ดีมานด์สัญญากลาโหมแทบไม่ผูกกับ macro แต่หุ้นที่ re-rate มาแรงขนาดนี้ expose ต่อ risk-off กว้างมากกว่าหุ้นที่นิ่งกว่ารอบ FOMC 28-29 ก.ค. ที่แน่นมาก"
+      },
+      "entryStrategy": {
+        "verdict": "BUY — การเติบโตยอดสั่งซื้อและสัญญาจริง ไม่ใช่แค่ narrative เพิ่ม size ถ้าย่อมาโซน $7.00-7.50 ก่อนช่วงผลประกอบการ 11-14 ส.ค. (ยังไม่ยืนยัน)",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ขึ้นแรงวันนี้จาก momentum sector + บริษัท", "timing": "ตอนนี้ (เล็ก)" },
+          { "note": "โซน consolidation ก่อนขึ้นสัปดาห์นี้", "timing": "ถ้าย่อ" },
+          { "note": "ย่อลึก — เฉพาะกรณี sector โดรนกลาโหมเทขายรวม", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — ผลประกอบการ Q2 ยืนยันเส้นทางเติบโต momentum sector หนุนต่อ" },
+        "tp2": { "note": "Bull — beat-and-raise ชัดเจน สัญญาฟุตบอลโลกสะท้อนใน guidance แตะเป้า consensus" },
+        "tp3": { "note": "Moon — ยอดสั่งซื้อโต 10 เท่าต่อเนื่อง + สัญญากลาโหมใหม่ประกาศเพิ่ม", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดโซน consolidation ก่อนหน้า — thesis ยังไม่พัง แต่ momentum ชะลอ",
+          "hardNote": "หลุดลึก — ยอดสั่งซื้อชะลอหรือเสียสัญญากลาโหม",
+          "rrNote": "จาก Entry 2 ($7.25 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R สูงแต่หุ้น re-rate มาแล้ว 1,100%+ — size ให้เหมาะกับความผันผวน ไม่ใช่หุ้นนิ่ง"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q2 2026", "note": "บริษัทยังไม่ยืนยันวันที่แน่นอน" }
+      ]
+    }
+  }
+}

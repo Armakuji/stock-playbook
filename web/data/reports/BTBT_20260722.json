@@ -1,0 +1,174 @@
+{
+  "ticker": "BTBT",
+  "companyName": "Bit Digital, Inc.",
+  "companyDescription": "Pivoting from Bitcoin mining to an Ethereum treasury/staking + AI/HPC infrastructure model · majority-owns AI/HPC subsidiary WhiteFiber (separately listed as WYFI) · holds 158,462+ ETH",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-22T18:00:00.000Z",
+  "price": 1.59,
+  "priceChange": 0.63,
+  "priceNote": "Self-fetched today (no live-prices.json cache yet). Roughly flat today, well off the 52-week high ($4.55) and near the lower half of its range ($1.25-$4.55) — the market hasn't yet fully credited the Ethereum/AI pivot story with a re-rate.",
+  "marketCap": "$561.9M",
+  "sector": "Technology / Crypto Treasury & AI Infrastructure",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 60,
+  "summary": "Bit Digital has rebranded itself a 'Strategic Asset Company,' accelerating a pivot away from Bitcoin mining toward an integrated Ethereum treasury/staking model plus AI/HPC infrastructure through majority-owned subsidiary WhiteFiber (separately listed as WYFI). The company holds roughly 158,462 ETH (adding ~8,568 ETH for $20M just recently) worth well over $300M — a real, verifiable balance-sheet asset. Q1 2026 revenue fell 13.6% sequentially to $27.9M with a $9.4M adjusted EBITDA loss, as weaker staking/mining/cloud activity offset the strategic shift. A new $100M (expandable to $150M) Ethereum-backed term loan funds WhiteFiber's AI/HPC buildout. 5 analysts average a $4.60 target (Strong Buy, +189% from here), though B. Riley's most recent cut to $4 (still +152%) shows some tempering of enthusiasm.",
+  "catalysts": [
+    {
+      "icon": "💎",
+      "name": "Ethereum Treasury Accumulation",
+      "description": "Bit Digital continues actively adding to its ETH holdings (158,462+ ETH, adding ~8,568 ETH for ~$20M in a recent purchase) — a real, ongoing balance-sheet story as the company positions itself as a public Ethereum treasury vehicle.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "🖥️",
+      "name": "WhiteFiber AI/HPC Buildout",
+      "description": "Majority-owned subsidiary WhiteFiber (separately listed as WYFI) is building out AI/HPC infrastructure, funded partly by a new $100M (expandable to $150M) Ethereum-backed term loan targeting yields above standard staking returns.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Q1 2026 revenue fell 13.6% sequentially with a $9.4M adjusted EBITDA loss — the pivot is real but not yet cash-flow positive, and the transition period itself is weighing on near-term financials",
+    "Heavy exposure to ETH price — the ~$300M+ treasury value is a real asset, but it moves with a notoriously volatile crypto asset, not a stable balance-sheet item",
+    "The Ethereum-backed term loan (up to $150M) adds leverage against a volatile collateral asset — a sharp ETH drawdown could pressure this facility",
+    "B. Riley's recent price target cut (to $4 from $5) shows even a bullish-rated analyst is tempering expectations somewhat, despite maintaining a Buy",
+    "The WhiteFiber relationship (majority-owned but separately listed as WYFI) adds structural complexity — investors need to understand which entity captures which economics"
+  ],
+  "estimateDates": [
+    { "event": "Next Quarterly Update", "dateRange": "TBD", "note": "Market wants to see the Ethereum/AI pivot showing improved revenue trajectory after the Q1 dip", "est": "No confirmed date found this run", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -40, "price": 0.95 },
+    { "label": "Base", "color": "yellow", "pct": 90, "price": 3.02 },
+    { "label": "Bull", "color": "green", "pct": 151.6, "price": 4.00 },
+    { "label": "Moon", "color": "purple", "pct": 189.3, "price": 4.60 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (5 analysts)", "target": 4.60, "rating": "Strong Buy" },
+    { "firm": "B. Riley (most recent, cut)", "target": 4.00, "rating": "Buy", "note": "Cut from $5 — still bullish but tempering expectations" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed holds at 3.50–3.75%, but new Chair Warsh's hawkish tone has 9 of 18 officials projecting a further 2026 hike, with the next FOMC decision Jul 28–29, 2026.",
+    "inflationNote": "Core inflation remains above target and the 10-year yield sits near 4.48% — a headwind for both crypto-treasury names (risk-asset sensitivity) and the AI/HPC buildout (capital-intensive, debt-funded).",
+    "sectorImpact": "This name carries a double macro exposure: crypto-asset (ETH) sensitivity to risk appetite/liquidity conditions, plus the AI/HPC infrastructure buildout's sensitivity to financing costs via the Ethereum-backed term loan.",
+    "summary": "MEDIUM — a hawkish Jul 28-29 FOMC surprise or broader risk-off move would pressure both halves of this story simultaneously: ETH as a risk asset, and the debt-funded AI/HPC buildout's cost of capital."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 1.59, "note": "Current price — near the lower half of the 52-week range", "timing": "Now (small)" },
+      { "label": "Entry 2", "level": 1.30, "rangeMax": 1.40, "note": "Near the 52-week low zone — best R/R if ETH or broader crypto sentiment weakens further", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 1.00, "note": "Deep capitulation — only on a sharp ETH selloff or a credit event on the term loan", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 3.02, "pct": 90.0, "note": "Base — Ethereum/AI pivot narrative gains traction, ETH holds current levels" },
+    "tp2": { "price": 4.00, "pct": 151.6, "note": "Bull — WhiteFiber AI/HPC buildout shows revenue traction, hits B. Riley's target" },
+    "tp3": { "price": 4.60, "pct": 189.3, "note": "Moon — Ethereum treasury value appreciates + AI/HPC story fully re-rates, hits full consensus", "moon": true },
+    "stopLoss": {
+      "tight": 1.25, "tightPct": -21.4, "tightNote": "Below the 52-week low — thesis-neutral but a fresh low is a real warning sign",
+      "hard": 0.90, "hardPct": -43.4, "hardNote": "Deep breach — would suggest a serious ETH drawdown or term-loan stress",
+      "riskReward": "7.1 : 1", "rrNote": "From Entry 2 ($1.35 mid) tight stop vs TP2", "rrWarning": "High R/R but this is a leveraged, ETH-price-linked story with real transition-period cash burn — size for genuine volatility"
+    },
+    "verdict": "SPECULATIVE — small position on the Ethereum-treasury-plus-AI-infrastructure pivot story, add on further weakness toward the 52-week low. Real assets on the balance sheet, but genuinely levered to ETH and still cash-flow negative during the transition.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "product_launch",
+    "preRunup": "Bit Digital and similar crypto-treasury/AI-pivot names tend to move on ETH price action and incremental treasury-accumulation or financing news rather than a scheduled pre-event runup — the story develops continuously rather than around a single dated catalyst.",
+    "preRunupTiming": "continuous, news-driven rather than event-driven",
+    "preRunupPct": "highly correlated with ETH price moves",
+    "postWin": {
+      "avgPct": 12,
+      "range": "+5% to +20%",
+      "note": "BTBT has shown support-holding and modest upside moves as the Ethereum/AI pivot narrative develops, tracking both ETH price strength and positive news on the WhiteFiber buildout.",
+      "exampleDate": "H1 2026 (BTBT)"
+    },
+    "postLose": {
+      "avgPct": -15,
+      "range": "-10% to -25%",
+      "note": "BTBT tested lows multiple times in 2026 as the Q1 revenue miss and broader crypto-sector weakness weighed on the stock, even as the strategic pivot continued — shows real downside sensitivity to both company-specific misses and crypto-sector sentiment.",
+      "exampleDate": "H1 2026 (BTBT)"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Small/mid-cap ($562M) with real balance-sheet assets (158,462+ ETH) but genuine leverage and crypto-price sensitivity — 3% sizing respects the double exposure (crypto + debt-funded AI buildout)."
+    },
+    "stopPreCatalyst": { "pct": -21, "price": 1.25, "note": "Below the 52-week low — thesis-neutral but a fresh low is a real warning sign" },
+    "stopPostCatalyst": { "pct": -25, "note": "If ETH suffers a sharp drawdown that pressures the term-loan collateral, or WhiteFiber's buildout stalls, exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "BTBT",
+      "event": "Ethereum treasury accumulation continues (158,462+ ETH) despite Q1 revenue miss",
+      "date": "2026",
+      "movePct": 12,
+      "days": 30,
+      "outcome": "good",
+      "note": "Same-company precedent for how the market has responded to continued treasury-building even amid weaker operating results."
+    },
+    {
+      "ticker": "BTBT",
+      "event": "Q1 2026 revenue fell 13.6% sequentially, adjusted EBITDA loss of $9.4M",
+      "date": "May 2026",
+      "movePct": -15,
+      "days": 5,
+      "outcome": "bad",
+      "note": "Same-company precedent for the transition-period cash-burn risk — directly relevant to how the market may react to future quarterly updates until the pivot shows clear profitability."
+    }
+  ],
+  "sources": [
+    "https://www.timothysykes.com/news/bit-digital-inc-btbt-news-2026_05_22/",
+    "https://stockstotrade.com/news/bit-digital-inc-btbt-news-2026_05_21/",
+    "https://stockanalysis.com/stocks/btbt/",
+    "https://tickernerd.com/stock/btbt-forecast/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Bit Digital รีแบรนด์ตัวเองเป็น 'Strategic Asset Company' เร่งการเปลี่ยนผ่านจากการขุด Bitcoin ไปสู่โมเดล Ethereum treasury/staking บวก AI/HPC infrastructure ผ่านบริษัทลูกที่ถือหุ้นใหญ่ WhiteFiber (จดทะเบียนแยกเป็น WYFI) บริษัทถือ ETH ราว 158,462 เหรียญ (เพิ่งซื้อเพิ่ม ~8,568 ETH มูลค่า $20M) มูลค่ารวมกว่า $300M — สินทรัพย์ในงบดุลที่ตรวจสอบได้จริง รายได้ Q1 2026 ลดลง 13.6% QoQ เหลือ $27.9M ขาดทุน adjusted EBITDA $9.4M จากกิจกรรม staking/mining/cloud ที่อ่อนแอชดเชยการเปลี่ยนผ่านเชิงกลยุทธ์ วงเงินกู้ Ethereum-backed ใหม่ $100M (ขยายได้ถึง $150M) ให้ทุน WhiteFiber สร้าง AI/HPC นักวิเคราะห์ 5 คนให้เป้าเฉลี่ย $4.60 (Strong Buy +189% จากราคานี้) แม้ B. Riley จะเพิ่งลดเป้าเป็น $4 (ยัง +152%) แสดงว่าความกระตือรือร้นเริ่มลดลงบ้าง",
+      "priceNote": "ค่อนข้างทรงตัววันนี้ ห่างจาก 52-week high ($4.55) มาก อยู่ใกล้ครึ่งล่างของ range ($1.25-$4.55) — ตลาดยังไม่ให้เครดิต re-rate เต็มที่กับ story การเปลี่ยนผ่าน Ethereum/AI",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "การสะสม Ethereum Treasury", "description": "Bit Digital ยังเพิ่มการถือครอง ETH ต่อเนื่อง (158,462+ เหรียญ เพิ่งซื้อเพิ่ม ~8,568 ETH มูลค่า ~$20M) — story งบดุลจริงต่อเนื่องขณะวางตำแหน่งเป็น public Ethereum treasury vehicle" },
+        { "name": "การสร้าง AI/HPC ของ WhiteFiber", "description": "บริษัทลูกที่ถือหุ้นใหญ่ WhiteFiber (จดทะเบียนแยก WYFI) กำลังสร้าง AI/HPC infrastructure ให้ทุนบางส่วนจากวงเงินกู้ Ethereum-backed ใหม่ $100M (ขยายได้ถึง $150M)" }
+      ],
+      "risks": [
+        "รายได้ Q1 2026 ลดลง 13.6% QoQ ขาดทุน adjusted EBITDA $9.4M — การเปลี่ยนผ่านเป็นเรื่องจริงแต่ยังไม่เป็นบวกด้าน cash flow ช่วงเปลี่ยนผ่านเองกำลังกดดันการเงินระยะใกล้",
+        "Expose หนักต่อราคา ETH — มูลค่า treasury ~$300M+ เป็นสินทรัพย์จริง แต่เคลื่อนไหวตามสินทรัพย์คริปโตที่ผันผวนโด่งดัง ไม่ใช่รายการงบดุลที่นิ่ง",
+        "วงเงินกู้ Ethereum-backed (สูงสุด $150M) เพิ่ม leverage ต่อ collateral ที่ผันผวน — ETH ร่วงแรงอาจกดดันวงเงินนี้",
+        "B. Riley เพิ่งลดเป้าราคา (จาก $5 เป็น $4) แสดงว่าแม้นักวิเคราะห์ที่ให้เรตติ้งบวกก็เริ่มลดความคาดหวังลงบ้าง แม้จะยังคง Buy",
+        "ความสัมพันธ์กับ WhiteFiber (ถือหุ้นใหญ่แต่จดทะเบียนแยก WYFI) เพิ่มความซับซ้อนเชิงโครงสร้าง — นักลงทุนต้องเข้าใจว่านิติบุคคลใดรับ economics ส่วนไหน"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% แต่ประธาน Warsh สายเหยี่ยว 9/18 คนมองขึ้นดอกเบี้ยอีกในปี 2026 FOMC ถัดไป 28-29 ก.ค. 2026",
+        "inflationNote": "เงินเฟ้อ core ยังสูงกว่าเป้า yield 10 ปีใกล้ 4.48% เป็นแรงกดดันทั้งหุ้น crypto-treasury (sensitive ต่อ risk asset) และการสร้าง AI/HPC (ใช้ทุนหนัก พึ่งหนี้)",
+        "sectorImpact": "หุ้นนี้มี macro exposure สองชั้น — ความ sensitive ของ ETH ต่อ risk appetite/สภาพคล่อง บวกความ sensitive ของการสร้าง AI/HPC infrastructure ต่อต้นทุนการเงินผ่านวงเงินกู้ Ethereum-backed",
+        "summary": "ความเสี่ยง Fed ระดับกลาง — FOMC hawkish surprise 28-29 ก.ค. หรือ risk-off กว้างจะกดดันทั้งสองด้านของ story นี้พร้อมกัน — ETH ในฐานะ risk asset และการสร้าง AI/HPC ที่พึ่งหนี้ในแง่ต้นทุนทุน"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — เข้าไม้เล็กตาม story Ethereum treasury บวก AI infrastructure pivot เพิ่มถ้าอ่อนตัวต่อใกล้ 52-week low มีสินทรัพย์จริงในงบดุล แต่ expose ต่อ ETH จริงและยัง cash flow ติดลบช่วงเปลี่ยนผ่าน",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ใกล้ครึ่งล่างของ 52-week range", "timing": "ตอนนี้ (เล็ก)" },
+          { "note": "ใกล้โซน 52-week low — R/R ดีที่สุดถ้า ETH หรือ sentiment คริปโตกว้างอ่อนตัวเพิ่ม", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงหนัก — เฉพาะ ETH เทขายแรงหรือปัญหา credit ของวงเงินกู้", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — narrative Ethereum/AI pivot ได้รับความสนใจ ETH ทรงตัวระดับปัจจุบัน" },
+        "tp2": { "note": "Bull — การสร้าง AI/HPC ของ WhiteFiber โชว์รายได้จริง แตะเป้า B. Riley" },
+        "tp3": { "note": "Moon — มูลค่า Ethereum treasury เพิ่มขึ้น + story AI/HPC re-rate เต็มที่ แตะเป้า consensus เต็ม", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุด 52-week low — thesis ยังไม่พัง แต่จุดต่ำสุดใหม่เป็นสัญญาณเตือนจริง",
+          "hardNote": "หลุดลึก — จะบ่งชี้ ETH ร่วงแรงจริงหรือปัญหา term loan",
+          "rrNote": "จาก Entry 2 ($1.35 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R สูงแต่เป็น story ที่ leverage และผูกราคา ETH จริง บวกยัง cash burn ช่วงเปลี่ยนผ่าน — size ให้เหมาะกับความผันผวนจริง"
+        }
+      },
+      "estimateDates": [
+        { "event": "อัปเดตรายไตรมาสถัดไป", "note": "ยังไม่พบวันที่ยืนยันรอบนี้ ตลาดต้องการเห็นการเปลี่ยนผ่าน Ethereum/AI ปรับปรุงเส้นทางรายได้หลัง Q1 อ่อนตัว" }
+      ]
+    }
+  }
+}

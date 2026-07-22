@@ -1,0 +1,176 @@
+{
+  "ticker": "AVGO",
+  "companyName": "Broadcom Inc.",
+  "companyDescription": "AI networking/ASIC + VMware software · custom AI chip (XPU) designer for Google and other hyperscalers · still recovering from a historic single-day selloff on AI-forecast disappointment",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-22T18:00:00.000Z",
+  "price": 386.50,
+  "priceChange": 0.0,
+  "priceNote": "Self-fetched today (no live-prices.json cache yet). Roughly flat, still well off the 52-week high ($495) after closing down 12.6% on Jun 4, 2026 — one of the largest single-day megacap selloffs on record — when AI chip revenue beat estimates but forward AI guidance disappointed and management flagged Google diversifying its custom-ASIC sourcing.",
+  "marketCap": "$1.84T",
+  "sector": "Technology / Semiconductors (AI Networking & Custom Silicon)",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 74,
+  "summary": "Broadcom's Q2 FY26 numbers were genuinely excellent — record revenue of $22.19B (+48% YoY), AI semiconductor revenue up 143% to $10.8B — yet the stock still closed down 12.6% on Jun 4, 2026 after management acknowledged Google (a major custom-ASIC customer) is diversifying its chip sourcing, and forward AI guidance came in below the market's very high bar. The stock fell further through June (-15% for the month) and traded near $370 in July before stabilizing. 48 analysts average a $523.73 target (+35.5% from here), Strong Buy, zero Sell ratings — a real vote of confidence that the fundamentals-vs-price disconnect is a buying opportunity, not a broken thesis. Next earnings Sep 3, 2026 is the test of whether the Google-diversification narrative was overblown.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 FY26 Earnings",
+      "description": "Broadcom's next earnings report, where the market will look for confirmation that AI semiconductor revenue growth continues despite the Google ASIC-diversification concern that triggered the Jun 4 selloff.",
+      "urgencyLabel": "~6 WEEKS",
+      "dateBadge": "Sep 3, 2026",
+      "catalystDate": "2026-09-03",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🤖",
+      "name": "Google TPU/Custom Silicon Demand Trajectory",
+      "description": "The core swing factor behind Jun 4's selloff — whether Google's custom-ASIC diversification meaningfully dents Broadcom's share of that business, or whether Broadcom's other hyperscaler custom-silicon relationships (and overall AI networking demand) offset it.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "The Jun 4, 2026 selloff (-12.6% in a single day, ~$280B in market value erased) happened despite a genuine beat-and-raise quarter — shows this stock can move violently on forward-guidance nuance even when the headline numbers are excellent",
+    "Google's custom-ASIC diversification is a real, disclosed risk, not analyst speculation — management confirmed it on the Jun 4 call. The magnitude of the eventual revenue impact is still unknown",
+    "Stock fell further through June (-15% for the month) after the initial crash, showing the selloff wasn't a one-day overreaction that immediately reversed",
+    "High valuation ($1.84T market cap) means even modest guidance disappointments get amplified — this is a stock priced for continued AI hyperscaler capex growth",
+    "6 weeks to the next earnings report — a long stretch for sentiment to swing on secondhand AI-capex commentary from other companies before Broadcom reports its own numbers"
+  ],
+  "estimateDates": [
+    { "event": "Q3 FY26 Earnings", "dateRange": "Sep 3, 2026", "note": "Key test of whether Google ASIC diversification is denting growth", "est": "Beat expected on AI networking demand, guidance is the swing factor", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -25, "price": 289.88 },
+    { "label": "Base", "color": "yellow", "pct": 20, "price": 463.80 },
+    { "label": "Bull", "color": "green", "pct": 35.5, "price": 523.73 },
+    { "label": "Moon", "color": "purple", "pct": 60, "price": 618.40 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (48 analysts)", "target": 523.73, "rating": "Strong Buy" },
+    { "firm": "JPMorgan (Jun 22, post-selloff)", "target": 507.00, "rating": "Buy", "note": "'Aggressive buyer' call on the beaten-down AI stock" }
+  ],
+  "macroRisk": {
+    "fedRisk": "HIGH",
+    "rateOutlook": "Fed holds at 3.50–3.75%, but new Chair Warsh's hawkish tone has 9 of 18 officials projecting a further 2026 hike, with the next FOMC decision Jul 28–29, 2026 — days after this report.",
+    "inflationNote": "Core inflation remains above target and the 10-year yield sits near 4.48% — a real headwind for a $1.84T high-multiple AI name.",
+    "sectorImpact": "AVGO has already shown it can crash 12.6% in a day on guidance nuance alone — layering a hawkish FOMC surprise or renewed AI-capex-sustainability doubts (echoing the same fears that hit the stock in June) on top of that is a real, demonstrated risk.",
+    "summary": "HIGH — this stock has already proven it's exceptionally sensitive to any sign that AI-infrastructure demand is decelerating, and the Jul 28-29 FOMC plus this week's mega-cap earnings cluster (which will shape the broader AI-capex narrative) both land before Broadcom's own Sep 3 report."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 386.50, "note": "Current price — well off the 52-week high, still digesting the Jun 4 selloff", "timing": "Now (moderate)" },
+      { "label": "Entry 2", "level": 355.00, "rangeMax": 370.00, "note": "July consolidation zone — best R/R if AI-capex sentiment wobbles again before Sep 3", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 300.00, "note": "Near the post-crash lows — only on a broader AI-valuation selloff", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 463.80, "pct": 20.0, "note": "Base — Sep 3 earnings confirm AI demand growth continuing" },
+    "tp2": { "price": 523.73, "pct": 35.5, "note": "Bull — clean beat, Google diversification concern proves overblown, hits consensus target" },
+    "tp3": { "price": 618.40, "pct": 60.0, "note": "Moon — AI networking demand reaccelerates broadly, new highs", "moon": true },
+    "stopLoss": {
+      "tight": 340.00, "tightPct": -12.0, "tightNote": "Below the July consolidation zone — thesis-neutral but momentum breaking down again",
+      "hard": 275.00, "hardPct": -28.8, "hardNote": "Near the 52-week low — would confirm the Google diversification thesis is worse than expected",
+      "riskReward": "5.7 : 1", "rrNote": "From Entry 2 ($362.50 mid) tight stop vs TP2", "rrWarning": "Good R/R but this stock has proven it can gap down hard on guidance nuance — size for that volatility"
+    },
+    "verdict": "BUY — genuine beat-and-raise fundamentals trading at a real discount after an overreaction-prone selloff. Add on a dip toward $355-370 ahead of the Sep 3 earnings test.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "AVGO shows limited pre-earnings runup and instead reacts sharply and immediately to the actual guidance tone on the call itself — the Jun 4 selloff happened same-day despite a genuine beat, showing this stock trades on forward commentary nuance, not the headline print.",
+    "preRunupTiming": "minimal pre-event runup; the move happens on guidance tone during the earnings call",
+    "preRunupPct": "0% to +5% pre-print drift",
+    "postWin": {
+      "avgPct": 10,
+      "range": "+5% to +15%",
+      "note": "Broadcom's historical pattern on a clean beat-and-raise (pre-2026, before the Google diversification concern emerged) typically drove double-digit single-day gains — the bar now is proving the AI-networking growth story is intact despite the customer-concentration risk.",
+      "exampleDate": "historical AVGO pattern"
+    },
+    "postLose": {
+      "avgPct": -12.6,
+      "range": "-10% to -15%",
+      "note": "Broadcom's own Jun 4, 2026 reaction is the direct precedent: closed down 12.6% (erasing ~$280B in market value) despite beating on revenue and AI semiconductor growth, purely on forward-guidance disappointment and the Google ASIC-diversification disclosure.",
+      "exampleDate": "Jun 2026 (AVGO)"
+    },
+    "spotSizing": {
+      "pct": 8,
+      "reason": "Mega-cap ($1.84T) with real fundamentals but demonstrated single-day crash risk on guidance nuance — sized as a core-lane holding, moderate rather than maximum given the proven volatility."
+    },
+    "stopPreCatalyst": { "pct": -12, "price": 340.00, "note": "Below the July consolidation zone ahead of Sep 3 — thesis-neutral but momentum breaking down again" },
+    "stopPostCatalyst": { "pct": -15, "note": "If Sep 3 guidance shows the Google diversification is accelerating or broader AI-capex demand is decelerating, exit — mirrors the Jun 4 reaction pattern" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "AVGO",
+      "event": "Q2 FY26 earnings — record revenue/AI growth beat, but guidance disappoints + Google ASIC diversification disclosed",
+      "date": "Jun 2026",
+      "movePct": -12.6,
+      "days": 1,
+      "outcome": "bad",
+      "note": "The single most important same-company precedent for this stock — shows genuinely strong fundamentals are not sufficient protection against a guidance-tone reaction. Directly relevant to how the Sep 3 print could go either way."
+    },
+    {
+      "ticker": "AVGO",
+      "event": "Continued decline through June following the Jun 4 crash",
+      "date": "Jun 2026",
+      "movePct": -15,
+      "days": 26,
+      "outcome": "bad",
+      "note": "Shows the initial crash wasn't a one-day overreaction that snapped back — sentiment stayed negative for weeks, relevant context for how long a negative reaction could persist if Sep 3 disappoints again."
+    }
+  ],
+  "sources": [
+    "https://finance.yahoo.com/markets/article/broadcom-stock-sinks-12-as-ai-chip-forecast-disappoints-165602082.html",
+    "https://www.fool.com/investing/2026/07/08/why-broadcom-stock-fell-15-in-june/",
+    "https://247wallst.com/investing/2026/06/22/jpmorgan-says-be-an-aggressive-buyer-of-this-beaten-down-ai-stock/",
+    "https://www.trefis.com/stock/avgo/articles/604929/broadcom-stocks-ai-calm-hides-its-crash-history/2026-06-28",
+    "https://stockanalysis.com/stocks/avgo/forecast/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "ผลประกอบการ Q2 FY26 ของ Broadcom ดีจริง — รายได้สถิติ $22.19B (+48% YoY) รายได้ AI semiconductor โต 143% เป็น $10.8B — แต่หุ้นยังปิดร่วง 12.6% เมื่อ 4 มิ.ย. 2026 หลังผู้บริหารยอมรับว่า Google (ลูกค้า custom-ASIC รายใหญ่) กำลังกระจายแหล่งชิป และ guidance AI ล่วงหน้าต่ำกว่าที่ตลาดคาดหวังสูงมาก หุ้นร่วงต่อตลอดเดือนมิ.ย. (-15% ทั้งเดือน) และเทรดใกล้ $370 ในก.ค. ก่อนทรงตัว นักวิเคราะห์ 48 คนให้เป้าเฉลี่ย $523.73 (+35.5% จากราคานี้) Strong Buy ไม่มี Sell แม้แต่รายเดียว — เป็นสัญญาณความเชื่อมั่นจริงว่าความต่างระหว่างพื้นฐานกับราคาคือโอกาสซื้อ ไม่ใช่ thesis ที่พัง ผลประกอบการถัดไป 3 ก.ย. 2026 คือบททดสอบว่าเรื่อง Google diversification ถูกมองเกินจริงหรือไม่",
+      "priceNote": "ค่อนข้างทรงตัว ยังห่างจาก 52-week high ($495) มากหลังปิดร่วง 12.6% เมื่อ 4 มิ.ย. 2026 — เป็นการร่วงเดี่ยววันเดียวครั้งใหญ่ที่สุดครั้งหนึ่งของ megacap ทั้งที่ AI chip revenue เกินคาด แต่ guidance ล่วงหน้าผิดหวังและผู้บริหารยอมรับว่า Google กำลังกระจายแหล่ง custom-ASIC",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "ผลประกอบการ Q3 FY26", "description": "รายงานถัดไป ตลาดต้องการเห็นการยืนยันว่ารายได้ AI semiconductor ยังโตต่อแม้มีความกังวลเรื่อง Google diversification" },
+        { "name": "ทิศทางดีมานด์ TPU/Custom Silicon ของ Google", "description": "ตัวแปรหลักที่ทำให้หุ้นร่วง 4 มิ.ย. — Google กระจายแหล่ง custom-ASIC จะกระทบส่วนแบ่งธุรกิจ Broadcom มากแค่ไหน หรือความสัมพันธ์ custom-silicon กับ hyperscaler รายอื่นจะชดเชยได้" }
+      ],
+      "risks": [
+        "การร่วง 4 มิ.ย. 2026 (-12.6% วันเดียว มูลค่าตลาดหายไป ~$280B) เกิดขึ้นทั้งที่ผลประกอบการดีจริง — แสดงว่าหุ้นตัวนี้ขยับแรงได้จาก tone ของ guidance แม้ตัวเลขหลักจะดีเยี่ยม",
+        "การกระจายแหล่ง custom-ASIC ของ Google เป็นความเสี่ยงจริงที่เปิดเผยแล้ว ไม่ใช่การคาดเดาของนักวิเคราะห์ — ผู้บริหารยืนยันเองในคอลวันที่ 4 มิ.ย. ขนาดผลกระทบต่อรายได้จริงยังไม่ทราบ",
+        "หุ้นร่วงต่อตลอดเดือนมิ.ย. (-15% ทั้งเดือน) หลังการร่วงครั้งแรก แสดงว่าไม่ใช่การ overreact ระยะสั้นที่ดีดกลับทันที",
+        "Valuation สูง ($1.84T) ทำให้แม้ guidance ผิดหวังเล็กน้อยก็ถูกขยายผลแรง — เป็นหุ้นที่ราคาสะท้อนการเติบโต AI capex ต่อเนื่องอยู่แล้ว",
+        "อีก 6 สัปดาห์กว่าจะถึงผลประกอบการถัดไป — ช่วงเวลานานที่ sentiment อาจแกว่งจากความเห็นเรื่อง AI capex ของบริษัทอื่นก่อนที่ Broadcom จะรายงานตัวเลขจริง"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% แต่ประธาน Warsh สายเหยี่ยว 9/18 คนมองขึ้นดอกเบี้ยอีกในปี 2026 FOMC ถัดไป 28-29 ก.ค. 2026",
+        "inflationNote": "เงินเฟ้อ core ยังสูงกว่าเป้า yield 10 ปีใกล้ 4.48% เป็นแรงกดดันจริงต่อหุ้น AI multiple สูงมูลค่า $1.84T",
+        "sectorImpact": "AVGO เคยพิสูจน์แล้วว่าร่วงได้ 12.6% ในวันเดียวจาก tone guidance เพียงอย่างเดียว — การซ้อนทับ FOMC hawkish surprise หรือความกังวลเรื่องความยั่งยืนของ AI capex ซ้ำ (เหมือนที่เคยกระทบหุ้นมิ.ย.) เป็นความเสี่ยงจริงที่พิสูจน์แล้ว",
+        "summary": "ความเสี่ยง Fed สูง — หุ้นตัวนี้พิสูจน์แล้วว่า sensitive มากต่อสัญญาณใด ๆ ว่าดีมานด์ AI infrastructure ชะลอตัว และ FOMC 28-29 ก.ค. บวกกลุ่มผลประกอบการ mega-cap สัปดาห์นี้ (ที่จะกำหนด narrative AI capex กว้าง) ทั้งคู่มาก่อนผลประกอบการ 3 ก.ย. ของ Broadcom เอง"
+      },
+      "entryStrategy": {
+        "verdict": "BUY — พื้นฐาน beat-and-raise จริงเทรดในราคาส่วนลดจริงหลังการเทขายที่มักเกินจริง เพิ่ม size ถ้าย่อมาโซน $355-370 ก่อนบททดสอบผลประกอบการ 3 ก.ย.",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ห่างจาก 52-week high มาก ยังย่อยข่าวร่วง 4 มิ.ย.", "timing": "ตอนนี้ (ปานกลาง)" },
+          { "note": "โซน consolidation เดือนก.ค. — R/R ดีที่สุดถ้า sentiment AI capex สั่นคลอนอีกก่อน 3 ก.ย.", "timing": "ถ้าย่อ" },
+          { "note": "ใกล้จุดต่ำสุดหลังการร่วง — เฉพาะกรณีเทขาย AI valuation ทั้งกลุ่มใหญ่", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — ผลประกอบการ 3 ก.ย. ยืนยันการเติบโตดีมานด์ AI ต่อเนื่อง" },
+        "tp2": { "note": "Bull — beat ชัดเจน ความกังวล Google diversification พิสูจน์ว่าเกินจริง แตะเป้า consensus" },
+        "tp3": { "note": "Moon — ดีมานด์ AI networking เร่งตัวกว้างทั้งกลุ่ม ทำจุดสูงสุดใหม่", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดโซน consolidation ก.ค. — thesis ยังไม่พัง แต่ momentum เสียอีกครั้ง",
+          "hardNote": "ใกล้ 52-week low — จะยืนยันว่า thesis Google diversification แย่กว่าคาด",
+          "rrNote": "จาก Entry 2 ($362.50 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R ดีแต่หุ้นนี้พิสูจน์แล้วว่า gap ลงแรงได้จาก tone guidance — size ให้เหมาะกับความผันผวนนี้"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q3 FY26", "note": "บททดสอบสำคัญว่าการกระจายแหล่ง ASIC ของ Google กำลังฉุดการเติบโตหรือไม่" }
+      ]
+    }
+  }
+}
