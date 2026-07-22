@@ -1,0 +1,185 @@
+{
+  "ticker": "UMAC",
+  "companyName": "Unusual Machines, Inc.",
+  "companyDescription": "NDAA-compliant US drone components manufacturer · the only publicly-traded company directly named in WSJ reporting on Trump-administration talks to take equity/debt stakes in domestic drone makers · Russell 2000 constituent",
+  "exchange": "NYSE American",
+  "generatedAt": "2026-07-22T00:00:00.000Z",
+  "price": 19.53,
+  "priceChange": 12.37,
+  "priceNote": "Self-fetched today (no live-prices.json cache yet). Up 12.37% Jul 21 — the stock has been on a run this week and sits well off its 52-week low ($7.25) but also well below the 52-week high ($34.36), reflecting the market still digesting how real the government-funding story is.",
+  "marketCap": "$933M",
+  "sector": "Industrials / Defense Drone Components",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 56,
+  "summary": "UMAC is the only publicly-traded company the WSJ specifically named when reporting that the Trump administration is in talks to take equity or debt positions in domestic drone manufacturers — a real, exclusive, and unusual catalyst that already drove a 65% pop on the initial report. The 6-analyst average target of $33.67 (+72%) and the highest named target of $42 (+115%) are both real, but they were largely set before this specific funding-talks development fully played out, and neither clears this screen's 200% floor on its own. The Moon case here is constructed, not purely consensus-derived: Intel's stock moved as much as +491% over a year on a comparable federal-equity-stake catalyst in semiconductors — if a real government stake or the $1.1B Drone Dominance Program materializes at scale for a company UMAC's size, a re-rate well beyond current analyst targets is credible, though not guaranteed. This is the most speculative, least analyst-validated pick in this batch — size accordingly.",
+  "catalysts": [
+    {
+      "icon": "🏛️",
+      "name": "Trump Administration Equity/Debt Stake Talks",
+      "description": "WSJ reported the administration is in talks to fund a small group of American drone manufacturers via equity or debt positions, as part of a push to build a domestic drone supply chain independent of China. UMAC was the only publicly-traded company directly named — a real, undated-but-live catalyst.",
+      "urgencyLabel": "DEVELOPING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🎯",
+      "name": "$1.1B Drone Dominance Program",
+      "description": "The Department of Defense's Drone Dominance Program is a $1.1B initiative to buy small, lethal drones, flagged as a 'presidential priority' in the FY2027 defense budget targeting 300,000 affordable attack drones by end of 2027. UMAC, as a components supplier, is positioned to benefit from any award activity under this program.",
+      "urgencyLabel": "H2 2026 / FY2027",
+      "dateBadge": "H2 2026",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "The core catalyst — a government equity/debt stake — is still at the 'in talks' stage per WSJ reporting, not confirmed or dated. It could stall, shrink in scope, or not materialize at all, which would remove the primary reason the Moon case exceeds analyst consensus",
+    "Even the highest named analyst target ($42, +115%) doesn't independently clear this screen's 200% floor — the Moon case here relies on a constructed, TAM-based scenario (comparable to Intel's government-stake re-rate), not pure consensus, and carries more estimation risk than the other picks in this batch",
+    "The stock has already run hard (+183% market cap growth per recent data, +12.4% today alone) — a lot of the funding-talks optimism may already be priced in at $19.53 vs the ~$11-12 level before the news broke",
+    "As a components supplier (not a prime drone integrator), UMAC's direct benefit from any government stake or Drone Dominance awards is less certain than for a company like Red Cat that builds complete systems",
+    "Small/mid-cap ($933M) drone-sector name — high beta and volatility cut both ways; the same mechanics that drove the run-up can drive an equally sharp reversal on any negative headline about the funding talks"
+  ],
+  "estimateDates": [
+    { "event": "Government Funding Talks Resolution", "dateRange": "Ongoing", "note": "Still at 'in talks' stage per WSJ — no confirmed date or structure yet", "est": "Binary: materializes at scale / stalls / shrinks in scope", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -35, "price": 12.70 },
+    { "label": "Base", "color": "yellow", "pct": 40, "price": 27.34 },
+    { "label": "Bull", "color": "green", "pct": 115, "price": 42.00 },
+    { "label": "Moon", "color": "purple", "pct": 220, "price": 62.50 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (6 analysts)", "target": 33.67, "rating": "Strong Buy" },
+    { "firm": "Highest named target", "target": 42.00, "rating": "Buy" },
+    { "firm": "Constructed Moon case (not analyst-sourced)", "target": 62.50, "rating": "n/a", "note": "TAM-based scenario if a government equity/debt stake materializes at meaningful scale — modeled loosely on Intel's ~491% government-stake precedent, not an analyst figure" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed holds at 3.50–3.75%, but new Chair Warsh's hawkish tone has 9 of 18 officials projecting a further 2026 hike, with the next FOMC decision Jul 28–29, 2026.",
+    "inflationNote": "Core inflation remains above target and the 10-year yield sits near 4.48%, a headwind for high-beta small caps generally.",
+    "sectorImpact": "This catalyst is fundamentally a fiscal/industrial-policy story, not a rate story — a government equity stake decision is largely independent of Fed policy, though a broad risk-off move around the Jul 28-29 FOMC would still hit a high-beta name like this disproportionately.",
+    "summary": "MEDIUM — the core catalyst (government funding talks) is macro-independent in direction, but UMAC's high beta and recent sharp run-up mean it's more exposed than most to a broad risk-off shock around the dense FOMC week."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 19.53, "note": "Current price — up 12.4% today, already reflecting some funding-talks optimism", "timing": "Scale in (small)" },
+      { "label": "Entry 2", "level": 14.00, "rangeMax": 16.00, "note": "Pre-this-week consolidation zone — best R/R if the funding story cools before firming up", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 10.00, "note": "Deep dip toward the post-initial-pop base — only on a broad drone-sector selloff or a funding-talks setback", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 27.34, "pct": 40.0, "note": "Base — funding talks continue without a concrete decision, sector momentum sustains the stock" },
+    "tp2": { "price": 42.00, "pct": 115.0, "note": "Bull — some form of government backing (equity, debt, or a major Drone Dominance award) is confirmed, hits the highest named analyst target" },
+    "tp3": { "price": 62.50, "pct": 220.0, "note": "Moon — meaningful government equity stake or large-scale Drone Dominance contract materializes, TAM-based re-rate", "moon": true },
+    "stopLoss": {
+      "tight": 13.00, "tightPct": -33.4, "tightNote": "Below the pre-pop consolidation zone — thesis-neutral but funding-talks momentum stalling",
+      "hard": 8.50, "hardPct": -56.5, "hardNote": "Deep breach — the funding talks are reported as having stalled or fallen through entirely",
+      "riskReward": "6.9 : 1", "rrNote": "From Entry 2 ($15 mid) tight stop vs TP2", "rrWarning": "Asymmetric ✅ but the Moon case here is constructed, not consensus-backed — treat as the highest-uncertainty pick in this batch"
+    },
+    "verdict": "ค่าขนม — small position on the exclusive government-funding-talks story, add only on a real pullback. The upside case here leans more on real-but-unconfirmed news than on analyst math — size and expectations accordingly.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "This specific catalyst type (government equity/debt stake reporting) moves the stock immediately and sharply on the initial report, then continues to drift with the news cycle as more details emerge — UMAC's own +65% pop on the initial WSJ report and this week's further +12.4% both fit this pattern.",
+    "preRunupTiming": "same-day sharp move on initial reporting, continued drift on follow-up news",
+    "preRunupPct": "+10% to +65% on report-driven news, in either direction",
+    "postWin": {
+      "avgPct": 65,
+      "range": "+20% to +491%",
+      "note": "UMAC's own stock jumped more than 65% on the initial WSJ report that the Pentagon was in talks to take equity or debt positions in domestic drone makers. Intel's stock moved as much as +491% over a year on a comparable federal-government-equity-stake catalyst in semiconductors — the upper end of what's credible if this materializes at real scale for UMAC.",
+      "exampleDate": "2026 (UMAC) / trailing year (Intel)"
+    },
+    "postLose": {
+      "avgPct": -25,
+      "range": "-15% to -35%",
+      "note": "Drone-sector names have shown real downside sensitivity when defense-tailwind news disappoints — comparable-sector peer AeroVironment fell ~18% over a month on a guidance cut and lost contract despite a record quarter, illustrating how fast sentiment can reverse in this group.",
+      "exampleDate": "Jun 2026 (AVAV, sector comparable)"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "The most speculative, least analyst-validated pick in this batch — the Moon case relies on a constructed TAM scenario rather than analyst consensus, so 3% sizing keeps exposure meaningful without over-weighting the highest-uncertainty name in the screen."
+    },
+    "stopPreCatalyst": { "pct": -19, "price": 13.00, "note": "Below the pre-pop consolidation zone — thesis-neutral but funding-talks momentum stalling" },
+    "stopPostCatalyst": { "pct": -25, "note": "If the funding talks are reported as stalled or abandoned, or a competitor is chosen instead, exit — mirrors the sector's guidance-cut drawdown pattern" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "UMAC",
+      "event": "WSJ report: Pentagon in talks to take equity/debt positions in domestic drone makers, UMAC named",
+      "date": "2026",
+      "movePct": 65,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company precedent for exactly this catalyst type — the strongest available comparable, since UMAC has already demonstrated how it reacts to this specific news category."
+    },
+    {
+      "ticker": "INTC",
+      "event": "Federal government equity stake in a US semiconductor manufacturer",
+      "date": "trailing year",
+      "movePct": 491,
+      "days": 365,
+      "outcome": "good",
+      "note": "Cross-sector precedent for the scale of re-rate possible when a federal government equity stake in a strategically important US manufacturer is confirmed — the upper anchor for UMAC's constructed Moon case."
+    },
+    {
+      "ticker": "AVAV",
+      "event": "FY26 guidance cut after $1.7B contract termination + goodwill impairment, despite a record quarter",
+      "date": "Jun 2026",
+      "movePct": -18,
+      "days": 30,
+      "outcome": "bad",
+      "note": "Sector comparable showing the downside risk if a defense-tailwind story reverses even briefly — relevant context for UMAC's own funding-talks dependency."
+    }
+  ],
+  "sources": [
+    "https://www.benzinga.com/trading-ideas/movers/26/05/52838936/trump-jr-s-drone-stock-just-got-a-pentagon-catalyst",
+    "https://finance.yahoo.com/markets/stocks/articles/unusual-machines-stock-looks-winner-205728091.html",
+    "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN42416M:0-trump-administration-in-talks-to-fund-us-drone-companies-wsj-reports/",
+    "https://stockanalysis.com/stocks/umac/",
+    "https://www.marketbeat.com/stocks/NYSEAMERICAN/UMAC/forecast/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "UMAC เป็นบริษัทมหาชนเพียงรายเดียวที่ WSJ ระบุชื่อโดยตรงในรายงานว่ารัฐบาล Trump กำลังเจรจาเข้าถือหุ้นหรือให้กู้ยืมกับผู้ผลิตโดรนในประเทศ — catalyst จริง เฉพาะตัว และหาไม่ได้ง่าย ที่เคยดันหุ้นขึ้น 65% ตอนข่าวแรกออก เป้าเฉลี่ยนักวิเคราะห์ 6 คน $33.67 (+72%) และเป้าสูงสุดที่มีชื่อ $42 (+115%) เป็นตัวเลขจริง แต่ส่วนใหญ่ตั้งก่อนที่ข่าวเจรจาทุนนี้จะพัฒนาเต็มที่ และไม่มีตัวไหนแตะ 200% เองได้ Moon case ที่นี่สร้างขึ้น ไม่ใช่มาจาก consensus ล้วน — หุ้น Intel เคยวิ่งขึ้นถึง +491% ในหนึ่งปีจาก catalyst การถือหุ้นรัฐบาลกลางที่คล้ายกันในกลุ่มเซมิคอนดักเตอร์ — ถ้าการถือหุ้นรัฐบาลจริงหรือโครงการ Drone Dominance $1.1B เกิดขึ้นจริงในระดับใหญ่สำหรับบริษัทขนาด UMAC การ re-rate เกินเป้านักวิเคราะห์ปัจจุบันมีความน่าเชื่อถือ แม้ไม่รับประกัน เป็นตัวที่เก็งกำไรที่สุดและมีนักวิเคราะห์รองรับน้อยที่สุดในชุดนี้ — size ให้เหมาะสม",
+      "priceNote": "ขึ้น 12.37% (21 ก.ค.) หุ้นวิ่งแรงสัปดาห์นี้ ห่างจาก 52-week low ($7.25) มากแต่ยังต่ำกว่า 52-week high ($34.36) มาก สะท้อนตลาดยังย่อยข่าวเรื่องความจริงของ funding story นี้",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "การเจรจาถือหุ้น/ให้กู้จากรัฐบาล Trump", "description": "WSJ รายงานว่ารัฐบาลกำลังเจรจาให้ทุนกับผู้ผลิตโดรนอเมริกันกลุ่มเล็กผ่านการถือหุ้นหรือให้กู้ UMAC เป็นบริษัทมหาชนเพียงรายเดียวที่ถูกระบุชื่อตรง — catalyst จริงที่กำลังพัฒนา ยังไม่มีวันที่ชัดเจน" },
+        { "name": "โครงการ Drone Dominance $1.1B", "description": "โครงการกระทรวงกลาโหมมูลค่า $1.1B ซื้อโดรนโจมตีขนาดเล็ก เป็น 'presidential priority' เป้า 300,000 ลำภายในสิ้นปี 2027 UMAC ในฐานะผู้ผลิตชิ้นส่วนมีโอกาสได้ประโยชน์จากการมอบสัญญาใด ๆ" }
+      ],
+      "risks": [
+        "Catalyst หลัก — การถือหุ้นรัฐบาล — ยังอยู่ขั้น 'กำลังเจรจา' ตาม WSJ ยังไม่ยืนยันหรือมีวันที่ อาจชะงัก ลดขนาด หรือไม่เกิดขึ้นเลย ซึ่งจะทำให้ Moon case ที่เกินเป้านักวิเคราะห์หายไป",
+        "แม้เป้านักวิเคราะห์สูงสุดที่มีชื่อ ($42, +115%) ก็ไม่แตะ 200% ของ screen นี้เอง — Moon case พึ่ง scenario ที่สร้างจาก TAM ไม่ใช่ consensus ล้วน มีความเสี่ยงด้านการประมาณมากกว่าตัวอื่นในชุดนี้",
+        "หุ้นวิ่งขึ้นมาแรงแล้ว (มูลค่าตลาดโต +183% ล่าสุด ขึ้น 12.4% วันนี้เดียว) — ความหวังจาก funding talks อาจ price in ไปมากแล้วที่ $19.53 เทียบระดับ ~$11-12 ก่อนข่าวออก",
+        "ในฐานะผู้ผลิตชิ้นส่วน (ไม่ใช่ prime ผู้ประกอบระบบโดรนสมบูรณ์) ประโยชน์ทางตรงของ UMAC จากการถือหุ้นรัฐบาลหรือสัญญา Drone Dominance ไม่แน่นอนเท่าบริษัทแบบ Red Cat ที่สร้างระบบครบวงจร",
+        "หุ้นกลุ่มโดรนขนาดกลาง/เล็ก ($933M) high-beta ผันผวนสูงทั้งสองทาง — กลไกเดียวกับที่ดันขึ้นก็ทำให้กลับตัวแรงได้จากข่าวลบเรื่อง funding talks"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% แต่ประธาน Warsh สายเหยี่ยว 9/18 คนมองขึ้นดอกเบี้ยอีกในปี 2026 FOMC ถัดไป 28-29 ก.ค. 2026",
+        "inflationNote": "เงินเฟ้อ core ยังสูงกว่าเป้า yield 10 ปีใกล้ 4.48% กดดันหุ้นเล็ก high-beta ทั่วไป",
+        "sectorImpact": "Catalyst นี้เป็นเรื่อง fiscal/industrial policy โดยพื้นฐาน ไม่ใช่เรื่องดอกเบี้ย — การตัดสินใจถือหุ้นรัฐบาลแทบไม่ผูกกับนโยบาย Fed แม้ risk-off กว้างรอบ FOMC 28-29 ก.ค. จะกระทบหุ้น high-beta แบบนี้แรงกว่าปกติ",
+        "summary": "ความเสี่ยง Fed ระดับกลาง — catalyst หลัก (การเจรจาทุนจากรัฐบาล) แทบไม่ผูกทิศทางกับ macro แต่ UMAC high-beta และเพิ่งวิ่งขึ้นแรงทำให้ expose ต่อ risk-off กว้างรอบ FOMC มากกว่าปกติ"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม — เข้าไม้เล็กตามเรื่อง funding talks เฉพาะตัว เพิ่มเฉพาะตอนย่อจริง upside case ที่นี่พึ่งข่าวจริงแต่ยังไม่ยืนยันมากกว่าคณิตศาสตร์นักวิเคราะห์ — size และความคาดหวังให้เหมาะสม",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ขึ้น 12.4% วันนี้ สะท้อนความหวัง funding talks ไปบางส่วนแล้ว", "timing": "Scale in (เล็ก)" },
+          { "note": "โซน consolidation ก่อนสัปดาห์นี้ — R/R ดีที่สุดถ้าเรื่อง funding เย็นลงก่อนชัดเจน", "timing": "ถ้าย่อ" },
+          { "note": "ย่อลึกกลับสู่ฐานหลังเด้งครั้งแรก — เฉพาะ sector โดรนเทขายรวมหรือ funding talks สะดุด", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — funding talks ดำเนินต่อโดยไม่มีข้อสรุปชัดเจน momentum sector หนุนหุ้นต่อ" },
+        "tp2": { "note": "Bull — มีรูปแบบการหนุนจากรัฐบาลยืนยัน (ถือหุ้น ให้กู้ หรือสัญญา Drone Dominance ใหญ่) แตะเป้านักวิเคราะห์สูงสุดที่มีชื่อ" },
+        "tp3": { "note": "Moon — ถือหุ้นรัฐบาลระดับมีนัยสำคัญหรือสัญญา Drone Dominance ขนาดใหญ่เกิดขึ้นจริง re-rate ตาม TAM", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดโซน consolidation ก่อนหน้า — thesis ยังไม่พัง แต่ momentum funding talks ชะลอ",
+          "hardNote": "หลุดลึก — มีรายงานว่า funding talks ชะงักหรือล้มเลิกไปแล้ว",
+          "rrNote": "จาก Entry 2 ($15 กลาง) stop แคบ vs TP2",
+          "rrWarning": "Asymmetric ✅ แต่ Moon case ที่นี่สร้างขึ้น ไม่ใช่ consensus รองรับ — ถือเป็นตัวที่มีความไม่แน่นอนสูงสุดในชุดนี้"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลการเจรจาทุนจากรัฐบาล", "note": "ยังอยู่ขั้น 'กำลังเจรจา' ตาม WSJ ยังไม่มีวันที่หรือโครงสร้างยืนยัน" }
+      ]
+    }
+  }
+}
