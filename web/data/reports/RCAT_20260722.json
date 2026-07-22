@@ -1,0 +1,202 @@
+{
+  "ticker": "RCAT",
+  "companyName": "Red Cat Holdings, Inc.",
+  "companyDescription": "US drone/robotics defense manufacturer · Black Widow SRR systems + Teal 2 · direct beneficiary of the FY25 NDAA foreign-drone restriction · small-float, pre-scale defense play",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-22T00:00:00.000Z",
+  "price": 8.59,
+  "priceChange": 10.70,
+  "priceNote": "Self-fetched today (no live-prices.json cache yet). Up 10.7% Jul 21 on continued Section 1709 tailwind — the FCC's implementation of the FY25 NDAA foreign-made-drone-component restriction, which structurally reduces DJI-class competition for US manufacturers like Red Cat. Stock is +60%+ YTD but still well off its 52-week high ($18.78).",
+  "marketCap": "$1.31B",
+  "sector": "Industrials / Defense Drones & Robotics",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Speculative",
+  "score": 72,
+  "summary": "Red Cat reports Q2 2026 earnings on Aug 6, 2026, with management already guiding to positive EPS ($0.01) and $28.97M revenue — a real, dated, near-term catalyst just two weeks out. The bigger swing factor is a potential FRIP (Full Rate Initial Production) Army contract that could shift Black Widow orders from hundreds to thousands of units; that's not dated yet, so it's upside optionality on top of the earnings print. All 6 covering analysts rate it Buy with a $22 consensus target (+156% from here) — a wide, single-direction spread ($19–25) that reflects genuine conviction in the Section 1709 tailwind, not just hope. Small float and binary risk on both the print and the contract timing mean this is a speculative sizing, not a core holding.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "Red Cat reports after market close Thursday, Aug 6, 2026. Management has already guided to positive EPS ($0.01) and $28.97M revenue — the first guided-positive quarter in the company's recent history. A beat-and-raise would validate the Section 1709 tailwind converting into real orders.",
+      "urgencyLabel": "~2 WEEKS",
+      "dateBadge": "Aug 6, 2026",
+      "catalystDate": "2026-08-06",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🎖️",
+      "name": "FRIP Army Contract Potential",
+      "description": "A Full Rate Initial Production decision on the Black Widow SRR program could shift Army orders from hundreds to thousands of units — the single biggest re-rating lever for the stock, but not yet dated.",
+      "urgencyLabel": "H2 2026 (undated)",
+      "dateBadge": "H2 2026",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🛡️",
+      "name": "Section 1709 Foreign-Drone Restriction Tailwind",
+      "description": "FCC's implementation of the FY25 NDAA provision restricting foreign-made (DJI-class) drone components is a structural, ongoing tailwind reducing competition for US manufacturers — already driving the stock's 2026 re-rate.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Small float, high-beta stock (+60%+ YTD) — single-session moves of 10%+ in either direction are now the norm, not the exception",
+    "FRIP contract timing is entirely undated and subject to Pentagon budget/appropriations cycles — could slip well into 2027 with no change to the underlying thesis",
+    "Peer AVAV shows how fast defense-drone sentiment can reverse: despite a record Q4 print, AeroVironment cut FY26 guidance to a $201–218M net loss (from $30–38M) after a $151.3M goodwill impairment and the termination of a $1.7B SCAR contract, and fell ~18% over the following month",
+    "Execution risk scaling Black Widow production to FRIP-level volumes from a still-small ~$29M/quarter revenue base",
+    "Consensus target ($22) implies the stock more than doubles — a lot of good news is already required just to reach the low end of the analyst range"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Aug 6, 2026", "note": "Management guided EPS $0.01 / revenue $28.97M", "est": "In-line to slight beat expected", "highlight": "blue" },
+    { "event": "FRIP Contract Decision", "dateRange": "H2 2026 (undated)", "note": "Biggest re-rating catalyst but no confirmed date yet", "est": "Binary: awarded / delayed", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -25, "price": 6.44 },
+    { "label": "Base", "color": "yellow", "pct": 50, "price": 12.89 },
+    { "label": "Bull", "color": "green", "pct": 121, "price": 19.00 },
+    { "label": "Moon", "color": "purple", "pct": 191, "price": 25.00 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (6 analysts)", "target": 22.00, "rating": "Strong Buy" },
+    { "firm": "Roth MKM", "target": 25.00, "rating": "Buy" },
+    { "firm": "Northland Securities", "target": 22.00, "rating": "Buy" },
+    { "firm": "H.C. Wainwright", "target": 20.00, "rating": "Buy" },
+    { "firm": "Needham", "target": 20.00, "rating": "Buy" },
+    { "firm": "Clear Street", "target": 19.00, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed holds at 3.50–3.75%, but new Chair Warsh's hawkish tone has 9 of 18 officials projecting a further 2026 hike, with the next FOMC decision Jul 28–29, 2026 — just days after this report.",
+    "inflationNote": "Core inflation remains above target and the 10-year yield sits near 4.48%, pressuring high-beta small caps more than the broad market.",
+    "sectorImpact": "Defense/government-spending names are less directly rate-sensitive than growth-duration tech, but RCAT's small float and high beta mean it still swings hard in a broad risk-off move.",
+    "summary": "MEDIUM — the Pentagon-budget tailwind driving this stock is largely macro-independent, but a small-float, high-beta name like this will still get hit disproportionately if the Jul 28–29 FOMC or a broader risk-off shock hits right around the Aug 6 earnings date."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 8.59, "note": "Current price — already up 10.7% this week on the Section 1709 tailwind", "timing": "Now (small)" },
+      { "label": "Entry 2", "level": 7.00, "rangeMax": 7.50, "note": "Prior consolidation zone before this week's pop", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 6.00, "note": "Near the 52-week low ($5.77) — deep capitulation only", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 12.89, "pct": 50.1, "note": "Base — steady Q2 print, FRIP still pending" },
+    "tp2": { "price": 19.00, "pct": 121.2, "note": "Bull — Q2 beat + FRIP contract signals emerge, hits low end of analyst range" },
+    "tp3": { "price": 25.00, "pct": 191.0, "note": "Moon — FRIP awarded at scale + high end of Roth MKM target", "moon": true },
+    "stopLoss": {
+      "tight": 6.30, "tightPct": -13.1, "tightNote": "Below the pre-pop consolidation zone — thesis-neutral but momentum stalling",
+      "hard": 5.50, "hardPct": -24.1, "hardNote": "Below the 52-week low — Section 1709 tailwind thesis breaking down",
+      "riskReward": "12.4 : 1", "rrNote": "From Entry 2 ($7.25 mid) tight stop vs TP2", "rrWarning": "High R/R but pre-earnings binary + small float — size small ahead of Aug 6"
+    },
+    "verdict": "SPECULATIVE — small position ahead of the Aug 6 print, add on a dip toward the $7.00–7.50 consolidation zone. The FRIP contract is real optionality, not the base case.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "Drone-defense names typically move on same-day contract/tailwind headlines rather than a sustained multi-week pre-event runup — this sector reacts to news, not calendar anticipation.",
+    "preRunupTiming": "same-day on contract/regulatory news, not a multi-week grind",
+    "preRunupPct": "+5% to +20% same-day",
+    "postWin": {
+      "avgPct": 22,
+      "range": "+10% to +32%",
+      "note": "AeroVironment's Jun 30, 2026 record Q4 print plus a $500M DoD counter-drone contract drove a 19-32% pop across pre-market and close; Red Cat's own Section 1709 tailwind news drove a +10.7% single-day pop on Jul 21, 2026.",
+      "exampleDate": "Jun 2026 (AVAV) / Jul 2026 (RCAT)"
+    },
+    "postLose": {
+      "avgPct": -18,
+      "range": "-10% to -25%",
+      "note": "Despite a record quarter, AeroVironment cut FY26 guidance to a $201-218M net loss (from $30-38M) after a $151.3M Space-segment goodwill impairment and the termination of a $1.7B SCAR contract — shares fell ~18% over the following month.",
+      "exampleDate": "Jun 2026 (AVAV)"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "Small-float ($1.31B), pre-earnings, contract-timing binary — 4% keeps real upside exposure without over-sizing into a name that's already run +60%+ YTD."
+    },
+    "stopPreCatalyst": { "pct": -13, "price": 6.30, "note": "Below the pre-pop consolidation zone — thesis-neutral but momentum stalling ahead of Aug 6" },
+    "stopPostCatalyst": { "pct": -18, "note": "If Q2 misses the $28.97M guide or FRIP signals slip toward 2027, exit — mirrors AVAV's post-guidance-cut drawdown" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "AVAV",
+      "event": "Record Q4 FY26 print ($641.6M rev, $1.84 EPS) + $500M DoD counter-drone contract",
+      "date": "Jun 2026",
+      "movePct": 19,
+      "days": 1,
+      "outcome": "good",
+      "note": "Closest sector comparable for how a beat-and-raise plus a fresh DoD contract moves a drone-defense name — directly relevant to RCAT's Aug 6 setup."
+    },
+    {
+      "ticker": "AVAV",
+      "event": "FY26 guidance cut to $201-218M net loss after $1.7B SCAR contract termination + goodwill impairment",
+      "date": "Jun 2026",
+      "movePct": -18,
+      "days": 30,
+      "outcome": "bad",
+      "note": "Shows the sector's downside risk even after a strong headline quarter — a lost contract or impairment can outweigh a beat. Relevant risk case for RCAT's FRIP dependency."
+    },
+    {
+      "ticker": "RCAT",
+      "event": "Section 1709 (FY25 NDAA foreign-drone restriction) tailwind news",
+      "date": "Jul 2026",
+      "movePct": 10.7,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company precedent for how RCAT itself reacts to regulatory-tailwind headlines — supports the preRunup/postWin range used above."
+    }
+  ],
+  "sources": [
+    "https://www.stocktitan.net/news/RCAT/red-cat-announces-second-quarter-2026-earnings-release-date-and-1w1arrw34gc2.html",
+    "https://www.globenewswire.com/news-release/2026/07/20/3330110/0/en/Red-Cat-Announces-Second-Quarter-2026-Earnings-Release-Date-and-Participation-in-Upcoming-Investor-Conferences.html",
+    "https://www.benzinga.com/trading-ideas/movers/26/07/60234941/aerovironment-stock-rises-on-500-million-counter-drone-contract",
+    "https://www.cnbc.com/2026/06/30/aerovironment-avav-stock-earnings-defense.html",
+    "https://finance.yahoo.com/news/army-contract-fueled-red-cat-200646775.html",
+    "https://stockanalysis.com/stocks/rcat/forecast/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Red Cat รายงานผล Q2 2026 วันที่ 6 ส.ค. 2026 — บริษัท guide ไว้แล้วว่า EPS จะเป็นบวก ($0.01) รายได้ $28.97M เป็น catalyst จริงที่มีวันที่ชัดเจนอีกแค่ 2 สัปดาห์ ตัวแปรใหญ่กว่านั้นคือสัญญา FRIP กับกองทัพบกที่อาจดันยอดสั่ง Black Widow จากหลักร้อยเป็นหลักพันเครื่อง — ยังไม่มีวันที่ชัดเจน แต่เป็น upside เสริม นักวิเคราะห์ทั้ง 6 คน Buy หมด เป้าเฉลี่ย $22 (+156% จากราคานี้) เป็นสัญญาณความมั่นใจจริงจาก Section 1709 tailwind แต่ float เล็กและมีความเสี่ยง binary ทั้งฝั่งผลประกอบการและ timing สัญญา — เหมาะเป็น speculative size ไม่ใช่ core holding",
+      "priceNote": "ขึ้น 10.7% (21 ก.ค.) จาก Section 1709 tailwind ต่อเนื่อง — FCC บังคับใช้กฎ NDAA ปี 2025 จำกัดชิ้นส่วนโดรนต่างชาติ (DJI-class) ลดคู่แข่งให้ผู้ผลิตสหรัฐฯ หุ้น +60%+ YTD แต่ยังห่างจาก 52-week high ($18.78)",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "ผลประกอบการ Q2 2026", "description": "รายงานหลังตลาดปิดวันพฤหัสที่ 6 ส.ค. 2026 — บริษัท guide EPS บวก $0.01 รายได้ $28.97M ไตรมาสแรกที่ guide เป็นบวก" },
+        { "name": "สัญญา FRIP กับกองทัพบก", "description": "อาจดันยอดสั่ง Black Widow SRR จากหลักร้อยเป็นหลักพันเครื่อง — ตัวแปรใหญ่สุดแต่ยังไม่มีวันที่ชัดเจน" },
+        { "name": "Section 1709 tailwind", "description": "กฎ NDAA ปี 2025 จำกัดชิ้นส่วนโดรนต่างชาติ — tailwind เชิงโครงสร้างต่อเนื่อง หนุนการ re-rate ของหุ้นปีนี้" }
+      ],
+      "risks": [
+        "Float เล็ก หุ้น high-beta (+60%+ YTD) — วิ่ง 10%+ ต่อวันเป็นเรื่องปกติแล้ว ไม่ใช่ข้อยกเว้น",
+        "Timing สัญญา FRIP ยังไม่ชัดเจน ขึ้นกับรอบงบประมาณเพนตากอน อาจเลื่อนไปถึงปี 2027 โดยที่ thesis หลักไม่เปลี่ยน",
+        "AVAV เป็นตัวอย่างว่า sentiment กลุ่ม drone-defense พลิกเร็วแค่ไหน — แม้ Q4 ทำสถิติ แต่ปรับ guide FY26 ลงเป็นขาดทุน $201-218M หลัง goodwill impairment $151.3M และสัญญา SCAR มูลค่า $1.7B ถูกยกเลิก หุ้นร่วง ~18% ในเดือนถัดมา",
+        "ความเสี่ยงด้าน execution ในการขยายกำลังผลิต Black Widow ให้ทันระดับ FRIP จากฐานรายได้ปัจจุบันที่ยังเล็ก (~$29M/ไตรมาส)",
+        "เป้า consensus ($22) หมายถึงหุ้นต้องวิ่งขึ้นกว่าเท่าตัว — ต้องมีข่าวดีเพิ่มอีกมากแค่จะแตะขอบล่างของ range นักวิเคราะห์"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% แต่ประธาน Warsh สายเหยี่ยว 9/18 คนมองขึ้นดอกเบี้ยอีกในปี 2026 ประชุม FOMC ถัดไป 28-29 ก.ค. 2026",
+        "inflationNote": "เงินเฟ้อ core ยังสูงกว่าเป้า yield 10 ปีใกล้ 4.48% กดดันหุ้นเล็ก high-beta มากกว่าตลาดรวม",
+        "sectorImpact": "หุ้นกลุ่มกลาโหม/งบรัฐ sensitive ต่อดอกเบี้ยน้อยกว่าหุ้น growth แต่ RCAT float เล็ก high-beta ยังโดน risk-off ได้แรง",
+        "summary": "ความเสี่ยง Fed ระดับกลาง — tailwind งบเพนตากอนแทบไม่ผูกกับ macro แต่หุ้น float เล็ก high-beta แบบนี้จะโดนหนักถ้า FOMC 28-29 ก.ค. หรือ risk-off ใหญ่มาชนช่วงประกาศผล 6 ส.ค. พอดี"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — เข้าไม้เล็กก่อนประกาศผล 6 ส.ค. เพิ่ม size ถ้าย่อมาโซน $7.00-7.50 ส่วน FRIP เป็น upside เสริม ไม่ใช่ base case",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ขึ้นมาแล้ว 10.7% สัปดาห์นี้จาก Section 1709 tailwind", "timing": "ตอนนี้ (เล็ก)" },
+          { "note": "โซน consolidation ก่อนหน้าที่จะขึ้นสัปดาห์นี้", "timing": "ถ้าย่อ" },
+          { "note": "ใกล้ 52-week low ($5.77) — เฉพาะกรณี capitulation ลึก", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — ผลประกอบการนิ่ง ๆ ตามคาด FRIP ยังไม่เกิด" },
+        "tp2": { "note": "Bull — Q2 beat + เริ่มมีสัญญาณ FRIP แตะขอบล่าง range นักวิเคราะห์" },
+        "tp3": { "note": "Moon — FRIP ได้รับอนุมัติระดับ scale + แตะเป้าสูงสุด Roth MKM", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดโซน consolidation ก่อนหน้า — thesis ยังไม่พัง แต่ momentum ชะลอ",
+          "hardNote": "หลุด 52-week low — thesis Section 1709 เริ่มพัง",
+          "rrNote": "จาก Entry 2 ($7.25 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R สูงแต่เป็น binary ก่อนประกาศผล + float เล็ก — size เล็กก่อน 6 ส.ค."
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q2 2026", "note": "บริษัท guide EPS บวก $0.01 / รายได้ $28.97M" },
+        { "event": "สัญญา FRIP", "note": "Catalyst ใหญ่สุดแต่ยังไม่มีวันที่ยืนยัน" }
+      ]
+    }
+  }
+}

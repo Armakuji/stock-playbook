@@ -1,0 +1,177 @@
+{
+  "ticker": "BIVI",
+  "companyName": "BioVie Inc.",
+  "companyDescription": "Clinical-stage neuro biotech · bezisterim (NE3107) in Phase 2 for Long COVID (ADDRESS-LC) and Parkinson's (SUNRISE-PD) · nano-cap trading near its 52-week low into two binary readouts",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-22T00:00:00.000Z",
+  "price": 1.29,
+  "priceChange": -9.47,
+  "priceNote": "Self-fetched today (no live-prices.json cache yet). Down 9.47% Jul 21, near the 52-week low ($1.06) and down ~85% from the 52-week high ($8.84) — the market is pricing in real doubt ahead of two Phase 2 readouts rather than anticipating a win.",
+  "marketCap": "$9.7M",
+  "sector": "Healthcare / Biotechnology (Neurology)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 55,
+  "summary": "BioVie has two binary Phase 2 readouts converging in the same window: SUNRISE-PD (Parkinson's) already completed, and ADDRESS-LC (Long COVID) topline data anticipated late summer 2026 after full enrollment in May. Four analysts average a $5.75 target (+346% from here) — real, broad-consensus upside, not a single outlier. The catch: BioVie has explicitly disclosed substantial doubt about its ability to continue as a going concern, with roughly $20-25M cash against a burn rate near $11M per half-year, and a $300M shelf registration on file that could dilute hard if a raise is needed before data reads out. ⚠️ SURVIVAL: this is a real risk, not boilerplate — a delayed or negative readout combined with a forced dilutive raise is a genuine path to a much lower stock, not just a paper loss. Included here specifically because the binary catalyst (data, not financing) is what will move the stock first, and the upside asymmetry is real and analyst-backed, not constructed. Max 2-3% position size only.",
+  "catalysts": [
+    {
+      "icon": "🧠",
+      "name": "ADDRESS-LC Phase 2 Topline (Long COVID)",
+      "description": "Topline results for bezisterim in Long COVID neurological symptoms, following full trial enrollment announced May 26, 2026. A positive readout on this indication plus the completed Parkinson's data would give BioVie two shots on goal in the same catalyst window.",
+      "urgencyLabel": "LATE SUMMER 2026",
+      "dateBadge": "Late Summer 2026",
+      "catalystDate": "2026-08-31",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🧬",
+      "name": "SUNRISE-PD Phase 2 (Parkinson's Disease)",
+      "description": "Bezisterim's early-stage Parkinson's disease trial has completed — full data readout and analysis expected around the same window as ADDRESS-LC, giving investors two binary neurology catalysts to trade off the same drug.",
+      "urgencyLabel": "NEAR-TERM",
+      "dateBadge": "H2 2026",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "⚠️ SURVIVAL: BioVie has disclosed substantial doubt about its ability to continue as a going concern — cash of roughly $20-25M against a burn rate near $11M per six months, with a $300M shelf registration on file. A delayed readout or the need for a dilutive raise before data lands is a real, near-term risk to the share count and price, not a distant tail case.",
+    "Both catalysts are genuinely binary — a negative or ambiguous readout on either ADDRESS-LC or SUNRISE-PD could send the stock toward its 52-week low ($1.06) or lower, especially combined with the going-concern overhang",
+    "Nano-cap ($9.7M market cap) with extreme volatility and thin liquidity — position sizing and execution risk (slippage) are real at this size",
+    "Long COVID as an indication has no FDA-approved precedent — even a positive Phase 2 doesn't guarantee a clear regulatory pathway the way an established indication would",
+    "4-analyst coverage is thin relative to larger biotechs — the $5.75 average target has less statistical robustness than a 10+ analyst consensus"
+  ],
+  "estimateDates": [
+    { "event": "ADDRESS-LC Topline (Long COVID)", "dateRange": "Late Summer 2026", "note": "Binary readout — the primary near-term catalyst", "est": "Positive/negative on primary endpoint", "highlight": "yellow" },
+    { "event": "SUNRISE-PD Data (Parkinson's)", "dateRange": "H2 2026", "note": "Trial completed, data analysis underway", "est": "Second binary shot in the same window", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -60, "price": 0.52 },
+    { "label": "Base", "color": "yellow", "pct": 80, "price": 2.32 },
+    { "label": "Bull", "color": "green", "pct": 200, "price": 3.87 },
+    { "label": "Moon", "color": "purple", "pct": 346, "price": 5.75 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (4 analysts)", "target": 5.75, "rating": "Buy" },
+    { "firm": "High-end estimate", "target": 6.75, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed holds at 3.50–3.75%, but new Chair Warsh's hawkish tone has 9 of 18 officials projecting a further 2026 hike, with the next FOMC decision Jul 28–29, 2026.",
+    "inflationNote": "Core inflation remains above target and the 10-year yield sits near 4.48% — a real headwind for a going-concern nano-cap that will likely need to raise capital regardless of the data outcome.",
+    "sectorImpact": "Binary FDA/clinical-data catalysts are largely macro-independent in direction, but the survival risk here is directly worsened by a high-rate environment that makes any dilutive raise more expensive and more dilutive.",
+    "summary": "MEDIUM for the catalyst itself, HIGH for the financing risk — a hawkish Jul 28-29 FOMC wouldn't change whether the Phase 2 data reads out positive or negative, but it would make a forced capital raise (a real possibility given the going-concern disclosure) more punishing for existing shareholders."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 1.29, "note": "Current price — near the 52-week low, thesis is entirely pre-data", "timing": "Scale in (small)" },
+      { "label": "Entry 2", "level": 1.10, "rangeMax": 1.20, "note": "Near the 52-week low ($1.06) — best R/R if weakness continues into the data window", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 0.85, "note": "Deep capitulation — only on a financing scare or broad biotech selloff, still ahead of data", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 2.32, "pct": 80.0, "note": "Base — mixed/inconclusive data, market gives partial credit" },
+    "tp2": { "price": 3.87, "pct": 200.0, "note": "Bull — one of the two readouts (ADDRESS-LC or SUNRISE-PD) is clearly positive" },
+    "tp3": { "price": 5.75, "pct": 346.0, "note": "Moon — both readouts positive, hits full analyst consensus target", "moon": true },
+    "stopLoss": {
+      "tight": 1.00, "tightPct": -22.5, "tightNote": "Below the 52-week low — thesis-neutral pre-data but a real warning sign",
+      "hard": 0.70, "hardPct": -45.7, "hardNote": "Risk-of-zero territory — a going-concern financing crisis or a clearly negative readout",
+      "riskReward": "8.9 : 1", "rrNote": "From Entry 2 ($1.15 mid) tight stop vs TP2", "rrWarning": "Asymmetric ✅ but this is a going-concern nano-cap — 2-3% max position, no exceptions"
+    },
+    "verdict": "ค่าขนม — tiny position only, sized for total loss. Real binary upside from two Phase 2 readouts in the same window, but the going-concern disclosure means dilution or failure can both end the thesis independent of each other.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "regulatory_approval",
+    "preRunup": "Clinical-stage nano-caps with binary Phase 2 data typically see limited pre-readout runup and instead trade sideways-to-down into the event as uncertainty peaks, then move sharply on the actual data — consistent with BIVI's current position near its 52-week low heading into the readout window.",
+    "preRunupTiming": "minimal pre-event runup; the move happens on the data itself",
+    "preRunupPct": "0% to +10% pre-event drift, occasionally down into the event",
+    "postWin": {
+      "avgPct": 150,
+      "range": "+50% to +349%",
+      "note": "Small-cap biotechs on positive mid-stage cancer/neuro data have posted moves in this range — Five Prime Therapeutics jumped as much as 349% on positive mid-stage combination-therapy data as the closest same-genre precedent for a nano-cap binary Phase 2 win.",
+      "exampleDate": "historical small-cap Phase 2 precedent"
+    },
+    "postLose": {
+      "avgPct": -50,
+      "range": "-30% to -70%",
+      "note": "Nano-cap biotechs with going-concern disclosures typically see 30-70%+ drawdowns on a negative or ambiguous Phase 2 readout, compounded by the near-certain forced dilutive raise that follows — BIVI's own 85% decline from its 52-week high already shows this stock's downside sensitivity to negative sentiment.",
+      "exampleDate": "general small-cap biotech pattern"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "Going-concern nano-cap with two binary catalysts and real risk of zero — 2% caps the loss to a tolerable level while keeping meaningful exposure to the 346% consensus upside if either readout hits."
+    },
+    "stopPreCatalyst": { "pct": -22, "price": 1.00, "note": "Below the 52-week low ahead of data — thesis-neutral but a real warning sign of financing stress" },
+    "stopPostCatalyst": { "pct": -45, "note": "A clearly negative readout on both trials, or a forced dilutive raise at a much lower price, ends the thesis — exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "FPRX",
+      "event": "Five Prime Therapeutics — positive mid-stage combination cancer therapy data",
+      "date": "historical",
+      "movePct": 349,
+      "days": 1,
+      "outcome": "good",
+      "note": "Closest same-genre precedent for a small-cap binary Phase 2 win driving an outsized single-day move — directly relevant to BIVI's ADDRESS-LC/SUNRISE-PD setup."
+    },
+    {
+      "ticker": "BIVI",
+      "event": "Stock decline from 52-week high to current level amid going-concern disclosure",
+      "date": "2026",
+      "movePct": -85,
+      "days": 180,
+      "outcome": "bad",
+      "note": "Same-company precedent for the downside — shows how far this stock can fall on financing/sentiment risk even before a clear negative data readout."
+    }
+  ],
+  "sources": [
+    "https://www.trefis.com/data/companies/BIVI",
+    "https://stockanalysis.com/stocks/bivi/",
+    "https://www.stocktitan.net/sec-filings/BIVI/s-3-biovie-inc-shelf-registration-statement-cdcd9e753700.html",
+    "https://finance.yahoo.com/news/biovie-nasdaq-bivi-good-position-113120334.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "BioVie มี binary readout จาก Phase 2 สองตัวมาบรรจบกันในช่วงเวลาใกล้กัน — SUNRISE-PD (Parkinson's) เก็บข้อมูลเสร็จแล้ว และ ADDRESS-LC (Long COVID) คาดมีผล topline ปลายฤดูร้อน 2026 หลัง enroll ครบเดือนพ.ค. นักวิเคราะห์ 4 คนให้เป้าเฉลี่ย $5.75 (+346% จากราคานี้) เป็นฉันทามติกว้างจริง ไม่ใช่ outlier เดี่ยว จุดที่ต้องระวัง: BioVie เปิดเผยชัดเจนว่ามีข้อสงสัยจริงเรื่อง going concern เงินสดเหลือประมาณ $20-25M เทียบ burn rate ~$11M ต่อครึ่งปี และมี shelf registration $300M ที่อาจ dilute หนักถ้าต้องระดมทุนก่อนผลออก ⚠️ SURVIVAL: นี่คือความเสี่ยงจริง ไม่ใช่ boilerplate — ผลลบพร้อม dilution บังคับคือเส้นทางจริงสู่ราคาต่ำกว่านี้มาก ไม่ใช่แค่ paper loss รวมไว้เพราะ catalyst (ผลข้อมูล ไม่ใช่การเงิน) จะขยับหุ้นก่อน และ upside asymmetry จริงมีนักวิเคราะห์รองรับ ไม่ใช่สร้างขึ้นเอง size สูงสุด 2-3% เท่านั้น",
+      "priceNote": "ร่วง 9.47% (21 ก.ค.) ใกล้ 52-week low ($1.06) ห่างจาก 52-week high ($8.84) ถึง ~85% — ตลาด price in ความสงสัยจริงก่อนผล ไม่ใช่คาดหวังชนะ",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "ผล Topline ADDRESS-LC Phase 2 (Long COVID)", "description": "ผล bezisterim ต่ออาการทางระบบประสาทจาก Long COVID หลัง enroll ครบเดือนพ.ค. 2026" },
+        { "name": "ข้อมูล SUNRISE-PD Phase 2 (Parkinson's)", "description": "trial ระยะแรกของ Parkinson's เก็บข้อมูลเสร็จแล้ว คาดผลช่วงเวลาใกล้กับ ADDRESS-LC" }
+      ],
+      "risks": [
+        "⚠️ SURVIVAL: BioVie เปิดเผยข้อสงสัยจริงเรื่อง going concern เงินสด ~$20-25M เทียบ burn ~$11M ต่อครึ่งปี มี shelf $300M — ผลล่าช้าหรือต้องระดมทุนก่อนผลออกเป็นความเสี่ยงจริงต่อจำนวนหุ้นและราคา ไม่ใช่ tail case ไกล",
+        "Catalyst ทั้งสองเป็น binary จริง — ผลลบหรือไม่ชัดเจนจาก ADDRESS-LC หรือ SUNRISE-PD อาจทำให้หุ้นร่วงสู่ 52-week low ($1.06) หรือต่ำกว่า โดยเฉพาะรวมกับความเสี่ยง going concern",
+        "Nano-cap ($9.7M) ผันผวนสูงสภาพคล่องบาง — ความเสี่ยงด้าน sizing และ slippage มีจริงในขนาดนี้",
+        "Long COVID เป็น indication ที่ไม่เคยมี FDA approve มาก่อน — Phase 2 บวกก็ไม่รับประกันเส้นทาง regulatory ชัดเจนแบบ indication ที่มีมาตรฐานแล้ว",
+        "นักวิเคราะห์คุม 4 คนถือว่าบางเทียบ biotech ใหญ่กว่า — เป้าเฉลี่ย $5.75 มีความน่าเชื่อถือทางสถิติน้อยกว่า consensus 10+ คน"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% แต่ประธาน Warsh สายเหยี่ยว 9/18 คนมองขึ้นดอกเบี้ยอีกในปี 2026 FOMC ถัดไป 28-29 ก.ค. 2026",
+        "inflationNote": "เงินเฟ้อ core ยังสูงกว่าเป้า yield 10 ปีใกล้ 4.48% เป็นแรงกดดันจริงสำหรับ nano-cap going-concern ที่น่าจะต้องระดมทุนไม่ว่าผลข้อมูลจะเป็นอย่างไร",
+        "sectorImpact": "Catalyst ด้าน FDA/clinical data แทบไม่ผูกทิศทางกับ macro แต่ความเสี่ยง survival ตรงนี้แย่ลงจริงในสภาพแวดล้อมดอกเบี้ยสูงที่ทำให้การระดมทุนแบบ dilutive แพงและเจ็บกว่าเดิม",
+        "summary": "ความเสี่ยง Fed ระดับกลางสำหรับตัว catalyst เอง แต่สูงสำหรับความเสี่ยงด้านการเงิน — FOMC 28-29 ก.ค. ที่ hawkish ไม่เปลี่ยนผล Phase 2 แต่จะทำให้การระดมทุนบังคับ (ความเสี่ยงจริงจาก going-concern) เจ็บกว่าเดิมสำหรับผู้ถือหุ้นเดิม"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม — size เล็กมากเท่านั้น เตรียมใจขาดทุนได้เต็มจำนวน upside จริงจาก binary readout สองตัวในช่วงเวลาเดียวกัน แต่ going-concern หมายความว่า dilution หรือความล้มเหลวจบ thesis ได้อิสระจากกัน",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ใกล้ 52-week low thesis ทั้งหมดอยู่ก่อนผลข้อมูล", "timing": "Scale in (เล็ก)" },
+          { "note": "ใกล้ 52-week low ($1.06) — R/R ดีที่สุดถ้าอ่อนตัวต่อเนื่องเข้าสู่ช่วงผลข้อมูล", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงหนัก — เฉพาะกรณีตื่นตระหนกเรื่องการเงินหรือ biotech เทขายรวม ยังก่อนผลข้อมูล", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — ผลข้อมูลกำกวม/ผสม ตลาดให้เครดิตบางส่วน" },
+        "tp2": { "note": "Bull — หนึ่งในสองผล (ADDRESS-LC หรือ SUNRISE-PD) ชัดเจนเป็นบวก" },
+        "tp3": { "note": "Moon — ผลทั้งสองเป็นบวก แตะเป้า consensus เต็ม", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุด 52-week low — thesis ยังไม่พังก่อนผลข้อมูล แต่เป็นสัญญาณเตือนจริง",
+          "hardNote": "เข้าเขต risk-of-zero — วิกฤตการเงินจาก going-concern หรือผลลบชัดเจน",
+          "rrNote": "จาก Entry 2 ($1.15 กลาง) stop แคบ vs TP2",
+          "rrWarning": "Asymmetric ✅ แต่เป็น nano-cap going-concern — size สูงสุด 2-3% ไม่มีข้อยกเว้น"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผล Topline ADDRESS-LC (Long COVID)", "note": "Binary readout — catalyst หลักระยะใกล้" },
+        { "event": "ข้อมูล SUNRISE-PD (Parkinson's)", "note": "trial เสร็จแล้ว วิเคราะห์ข้อมูลอยู่" }
+      ]
+    }
+  }
+}

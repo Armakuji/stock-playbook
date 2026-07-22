@@ -1,0 +1,197 @@
+{
+  "ticker": "RDW",
+  "companyName": "Redwire Corporation",
+  "companyDescription": "Space infrastructure + tactical UAS · Penguin/Stalker drones for NATO/US military + on-orbit space components · $498M backlog, still working through prior earnings-miss overhang",
+  "exchange": "NYSE",
+  "generatedAt": "2026-07-22T00:00:00.000Z",
+  "price": 9.42,
+  "priceChange": 9.53,
+  "priceNote": "Self-fetched today (no live-prices.json cache yet). Up 9.53% Jul 21 on $21.5M in Q2 follow-on Stalker UAS orders from the US military — the fourth straight quarter of steady defense demand. Still well off the 52-week high ($26.64) after two earlier earnings misses and dilution weighed on the stock earlier in 2026.",
+  "marketCap": "$2.24B",
+  "sector": "Industrials / Space Infrastructure & Defense Drones",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Speculative",
+  "score": 70,
+  "summary": "Redwire reports Q2 2026 earnings on Aug 6, 2026, coming off back-to-back earnings misses and dilution that dragged the stock from a $26.64 high down near $8.74 before this week's contract-driven bounce. The setup has real substance behind it: $21.5M in follow-on Stalker UAS orders this quarter (plus ~$20M in Q1), a new high-eight-figure NATO Penguin Mk3 contract, and a $498M backlog — real revenue visibility, not just narrative. 10 analysts average a $15.67 target (+66% from here) on a Buy consensus. The risk is real too: this name has already missed twice and diluted shareholders this year, so the Aug 6 print needs to show the backlog converting into results, not just more contract headlines.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "Redwire reports Thursday, Aug 6, 2026. After two consecutive earnings misses earlier in 2026, this print needs to show the $498M backlog and this quarter's contract wins converting into revenue and positive adjusted EBITDA trajectory, not just more headline contracts.",
+      "urgencyLabel": "~2 WEEKS",
+      "dateBadge": "Aug 6, 2026",
+      "catalystDate": "2026-08-06",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🛰️",
+      "name": "NATO Penguin Mk3 Follow-On Orders",
+      "description": "Redwire won a high-eight-figure multi-year contract from an undisclosed NATO ally to deliver Penguin Mk3 UAS through a competitive tender — a follow-on order or additional NATO country adopting the platform would extend the backlog further.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🇺🇸",
+      "name": "US Army/Navy/Marine Corps Stalker Orders",
+      "description": "$21.5M in Q2 follow-on Stalker UAS orders (after ~$20M in Q1) shows a steady cadence of US military demand — continuation of this pattern into Q3 would reinforce the revenue-visibility thesis ahead of earnings.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Two consecutive earnings misses earlier in 2026 plus share dilution are the reason this stock is down from $26.64 to under $10 — the Aug 6 print carries real credibility risk, not a clean slate",
+    "Redwire's own history is the clearest bear case: shares pulled back specifically on 'investor disappointment following two consecutive earnings misses coupled with...share dilution and government contract delays'",
+    "Government contract delays remain a live risk even with a large backlog — award and delivery timing can slip on either side of a fiscal year",
+    "Broader 2026 space-sector selloff (ASTS -13%, SPCX -23% YTD at points this year) as capital rotated into SpaceX's IPO — sector-wide risk-off can drag RDW down even without company-specific bad news",
+    "Reworked credit lines ($50M outstanding term loan, $50M revolver) mean the balance sheet still needs the backlog to convert into cash, not just bookings"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Aug 6, 2026", "note": "First print since April credit-line rework; needs to show backlog converting to revenue/EBITDA", "est": "Consensus in-line expected, beat needed to confirm turnaround", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -25, "price": 7.07 },
+    { "label": "Base", "color": "yellow", "pct": 35, "price": 12.72 },
+    { "label": "Bull", "color": "green", "pct": 66, "price": 15.67 },
+    { "label": "Moon", "color": "purple", "pct": 155, "price": 24.00 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (10 analysts)", "target": 15.67, "rating": "Buy" },
+    { "firm": "Alliance Global Partners", "target": 15.00, "rating": "Buy" },
+    { "firm": "Most bullish target (implied by bull-case range)", "target": 24.00, "rating": "Buy", "note": "Top of the analyst range cited if NATO follow-ons + disciplined H2 execution both land" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed holds at 3.50–3.75%, but new Chair Warsh's hawkish tone has 9 of 18 officials projecting a further 2026 hike, with the next FOMC decision Jul 28–29, 2026 — just days after this report.",
+    "inflationNote": "Core inflation remains above target and the 10-year yield sits near 4.48%, a headwind for small/mid-cap growth names with still-thin profitability like Redwire.",
+    "sectorImpact": "Government/defense contract revenue is less rate-sensitive than pure-growth tech, but RDW's balance sheet (credit-line dependence, recent dilution) makes it more exposed to a risk-off shock than a self-funded defense prime.",
+    "summary": "MEDIUM — the NATO/US military demand backdrop is largely macro-independent, but a small-cap name that just reworked its credit lines and diluted shareholders this year is more exposed than most to a broad risk-off move around the Jul 28-29 FOMC."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 9.42, "note": "Current price — up 9.5% this week on Stalker follow-on orders", "timing": "Now (small)" },
+      { "label": "Entry 2", "level": 7.50, "rangeMax": 8.00, "note": "Pre-pop consolidation zone from earlier this month", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 6.00, "note": "Deep dip toward 2026 lows — only on a broader space-sector or macro selloff", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 12.72, "pct": 35.0, "note": "Base — Aug 6 print in-line, backlog conversion on track" },
+    "tp2": { "price": 15.67, "pct": 66.4, "note": "Bull — clean beat-and-raise confirms turnaround, hits consensus target" },
+    "tp3": { "price": 24.00, "pct": 154.8, "note": "Moon — beat + additional NATO country signs on + broad space-sector re-rate", "moon": true },
+    "stopLoss": {
+      "tight": 6.90, "tightPct": -11.0, "tightNote": "Below the pre-pop consolidation zone — thesis-neutral but momentum stalling",
+      "hard": 5.50, "hardPct": -29.0, "hardNote": "New 2026 low — a third consecutive earnings miss would break the turnaround thesis",
+      "riskReward": "9.9 : 1", "rrNote": "From Entry 2 ($7.75 mid) tight stop vs TP2", "rrWarning": "High R/R but this stock has missed twice already this year — small size until Aug 6 confirms the turnaround"
+    },
+    "verdict": "SPECULATIVE — small position ahead of Aug 6, add on a dip toward $7.50-8.00. This is a real backlog/contract story, but the two prior misses mean it needs to prove execution, not just win more headlines.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "satellite_launch",
+    "preRunup": "Space/defense-infrastructure names in this cohort move on same-day contract-award headlines rather than a sustained pre-event grind — RDW's own Jul 21 pop and the sector's response to the Golden Dome/Iridium news both fired same-day.",
+    "preRunupTiming": "same-day on contract-award news, not a multi-week runup",
+    "preRunupPct": "+5% to +12% same-day",
+    "postWin": {
+      "avgPct": 10,
+      "range": "+5% to +12%",
+      "note": "Rocket Lab jumped 12% on its $8B Iridium takeover (Jun 29, 2026); AST SpaceMobile jumped 12% on Trump's $1.2T Golden Dome estimates (Jul 22, 2026); Redwire's own Stalker follow-on order news drove a +9.5% pop on Jul 21, 2026.",
+      "exampleDate": "Jun-Jul 2026 (RKLB/ASTS/RDW)"
+    },
+    "postLose": {
+      "avgPct": -15,
+      "range": "-10% to -23%",
+      "note": "Redwire's own stock pulled back specifically on 'investor disappointment following two consecutive earnings misses coupled with...share dilution and government contract delays' earlier in 2026; SpaceX's IPO also pulled sector capital away, with names like SPCX down as much as 23% YTD at points.",
+      "exampleDate": "H1 2026 (RDW)"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "Small/mid-cap ($2.24B), pre-earnings, with two prior misses on the record — 4% keeps real upside exposure without over-sizing into a name still proving out its turnaround."
+    },
+    "stopPreCatalyst": { "pct": -11, "price": 6.90, "note": "Below the pre-pop consolidation zone — thesis-neutral but momentum stalling ahead of Aug 6" },
+    "stopPostCatalyst": { "pct": -15, "note": "A third consecutive earnings miss or fresh dilution announcement breaks the turnaround thesis — exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "RKLB",
+      "event": "$8 billion Iridium takeover announcement",
+      "date": "Jun 2026",
+      "movePct": 12,
+      "days": 1,
+      "outcome": "good",
+      "note": "Closest same-sector precedent for how a major contract/M&A headline moves a space-infrastructure name — directly comparable to RDW's NATO Penguin win pattern."
+    },
+    {
+      "ticker": "RDW",
+      "event": "Two consecutive earnings misses + share dilution + government contract delays",
+      "date": "H1 2026",
+      "movePct": -18,
+      "days": 60,
+      "outcome": "bad",
+      "note": "The exact reason RDW trades at $9.42 instead of near its $26.64 high — the clearest same-company risk case for why the Aug 6 print matters more than another contract headline."
+    },
+    {
+      "ticker": "RDW",
+      "event": "$21.5M Q2 follow-on Stalker UAS orders from US military",
+      "date": "Jul 2026",
+      "movePct": 9.5,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company precedent for this week's setup — shows the market still rewards fresh contract confirmation even with the earnings-miss overhang."
+    }
+  ],
+  "sources": [
+    "https://bingx.com/en/learn/article/redwire-corporation-rdw-forecast-and-price-prediction-is-rdw-a-good-investment",
+    "https://stockstotrade.com/news/redwire-corporation-rdw-news-2026_07_21/",
+    "https://www.investing.com/news/company-news/redwire-wins-high-eightfigure-nato-contract-for-penguin-drones-93CH-4698172",
+    "https://www.fool.com/coverage/better-buy/2026/06/17/redwire-vs-rocket-lab-which-space-stock-is-a-better-buy-in-2026/",
+    "https://stockanalysis.com/stocks/rdw/statistics/",
+    "https://finance.yahoo.com/markets/stocks/articles/rocket-lab-soars-12-8-134628966.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Redwire รายงานผล Q2 2026 วันที่ 6 ส.ค. 2026 หลังพลาดเป้า 2 ไตรมาสติดและ dilution ฉุดหุ้นจากจุดสูงสุด $26.64 ลงมาใกล้ $8.74 ก่อนจะเด้งขึ้นสัปดาห์นี้จากข่าวสัญญา เนื้อในมีของจริง: ยอดสั่ง Stalker UAS ต่อเนื่อง $21.5M ไตรมาสนี้ (บวก ~$20M ใน Q1) สัญญา NATO Penguin Mk3 มูลค่าหลักสิบล้านดอลลาร์ และ backlog $498M — เป็นรายได้ที่มองเห็นได้จริง ไม่ใช่แค่ narrative นักวิเคราะห์ 10 คนให้เป้าเฉลี่ย $15.67 (+66% จากราคานี้) เรตติ้ง Buy แต่ความเสี่ยงก็จริงเช่นกัน — หุ้นตัวนี้เคยพลาดเป้ามาแล้ว 2 ครั้งและเคย dilute ผู้ถือหุ้นปีนี้ ผลประกอบการ 6 ส.ค. ต้องพิสูจน์ว่า backlog แปลงเป็นผลจริง ไม่ใช่แค่ข่าวสัญญาเพิ่ม",
+      "priceNote": "ขึ้น 9.53% (21 ก.ค.) จากยอดสั่ง Stalker UAS เพิ่มเติม $21.5M ในไตรมาสนี้จากกองทัพสหรัฐฯ ยังห่างจาก 52-week high ($26.64) มากหลังพลาดเป้าผลประกอบการ 2 ครั้งและ dilution ต้นปี",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "ผลประกอบการ Q2 2026", "description": "รายงานวันพฤหัสที่ 6 ส.ค. 2026 หลังพลาดเป้า 2 ไตรมาสติด ต้องโชว์ว่า backlog $498M แปลงเป็นรายได้และ EBITDA เป็นบวกได้จริง" },
+        { "name": "สัญญา NATO Penguin Mk3 ต่อเนื่อง", "description": "สัญญามูลค่าหลักสิบล้านดอลลาร์จากพันธมิตร NATO — ถ้ามีประเทศอื่นสั่งเพิ่มจะขยาย backlog ต่อ" },
+        { "name": "ยอดสั่ง Stalker จากกองทัพสหรัฐฯ", "description": "$21.5M ในไตรมาสนี้ (ต่อจาก ~$20M ใน Q1) แสดงดีมานด์ต่อเนื่อง หนุน thesis รายได้มองเห็นได้ก่อนประกาศผล" }
+      ],
+      "risks": [
+        "พลาดเป้าผลประกอบการ 2 ไตรมาสติดบวก dilution คือสาเหตุที่หุ้นร่วงจาก $26.64 เหลือต่ำกว่า $10 — ผลประกอบการ 6 ส.ค. มีความเสี่ยงด้าน credibility จริง ไม่ใช่เริ่มต้นใหม่",
+        "ประวัติของ RDW เองคือ bear case ที่ชัดที่สุด — หุ้นร่วงเพราะ 'พลาดเป้า 2 ไตรมาสติดบวก dilution และสัญญารัฐบาลล่าช้า'",
+        "ความเสี่ยงสัญญารัฐบาลล่าช้ายังมีอยู่แม้ backlog ใหญ่ — timing อนุมัติและส่งมอบเลื่อนได้",
+        "การเทขายกลุ่มอวกาศทั้ง sector ปีนี้ (ASTS -13%, SPCX -23% YTD บางช่วง) จากเงินทุนไหลไป SpaceX IPO — risk-off ทั้ง sector ฉุด RDW ได้แม้ไม่มีข่าวลบเฉพาะตัว",
+        "ปรับโครงสร้างวงเงินสินเชื่อ (term loan คงเหลือ $50M, revolver $50M) หมายความว่างบดุลยังต้องพึ่ง backlog แปลงเป็นเงินสดจริง ไม่ใช่แค่ยอดสั่ง"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% แต่ประธาน Warsh สายเหยี่ยว 9/18 คนมองขึ้นดอกเบี้ยอีกในปี 2026 ประชุม FOMC ถัดไป 28-29 ก.ค. 2026",
+        "inflationNote": "เงินเฟ้อ core ยังสูงกว่าเป้า yield 10 ปีใกล้ 4.48% เป็นแรงกดดันต่อหุ้นกลาง/เล็กที่กำไรยังบางแบบ Redwire",
+        "sectorImpact": "รายได้จากสัญญารัฐบาล/กลาโหม sensitive ต่อดอกเบี้ยน้อยกว่าหุ้น growth แต่งบดุล RDW ที่เพิ่งปรับสินเชื่อและ dilute ทำให้ expose ต่อ risk-off มากกว่าปกติ",
+        "summary": "ความเสี่ยง Fed ระดับกลาง — ดีมานด์ NATO/กองทัพสหรัฐฯ แทบไม่ผูกกับ macro แต่หุ้นเล็กที่เพิ่งปรับโครงสร้างหนี้และ dilute ปีนี้ expose ต่อ risk-off รอบ FOMC 28-29 ก.ค. มากกว่าปกติ"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — เข้าไม้เล็กก่อน 6 ส.ค. เพิ่ม size ถ้าย่อมาโซน $7.50-8.00 เป็น backlog/สัญญาจริง แต่เคยพลาดเป้ามาแล้ว 2 ครั้ง ต้องพิสูจน์ execution ไม่ใช่แค่ข่าวสัญญาเพิ่ม",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ขึ้น 9.5% สัปดาห์นี้จากยอดสั่ง Stalker", "timing": "ตอนนี้ (เล็ก)" },
+          { "note": "โซน consolidation ก่อนหน้าต้นเดือนนี้", "timing": "ถ้าย่อ" },
+          { "note": "ย่อลึกใกล้จุดต่ำสุดปี 2026 — เฉพาะ sector หรือ macro selloff ใหญ่", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — ผลประกอบการ 6 ส.ค. ตามคาด backlog แปลงเป็นรายได้ตามแผน" },
+        "tp2": { "note": "Bull — beat-and-raise ชัดเจน ยืนยัน turnaround แตะเป้า consensus" },
+        "tp3": { "note": "Moon — beat + NATO ประเทศใหม่เซ็นสัญญาเพิ่ม + sector อวกาศ re-rate ทั้งกลุ่ม", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดโซน consolidation ก่อนหน้า — thesis ยังไม่พัง แต่ momentum ชะลอ",
+          "hardNote": "จุดต่ำสุดใหม่ปี 2026 — พลาดเป้าไตรมาสที่ 3 ติดจะทำลาย thesis turnaround",
+          "rrNote": "จาก Entry 2 ($7.75 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R สูงแต่หุ้นตัวนี้เคยพลาดเป้ามาแล้ว 2 ครั้ง — size เล็กจนกว่า 6 ส.ค. จะยืนยัน turnaround"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q2 2026", "note": "ครั้งแรกหลังปรับโครงสร้างสินเชื่อเดือนเม.ย. ต้องโชว์ backlog แปลงเป็นรายได้/EBITDA" }
+      ]
+    }
+  }
+}

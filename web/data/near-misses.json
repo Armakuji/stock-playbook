@@ -383,6 +383,204 @@
       "priceAtScreen": 3.53,
       "topAnalystTarget": 10,
       "impliedUpside": 183.3
+    },
+    {
+      "date": "2026-07-22",
+      "ticker": "REPL",
+      "lane": "core",
+      "reason": "Cleared the initial screen on stale Jul 15 pricing ($9.69 vs $12.86 target = ~33% upside), but by Jul 21 the stock had run to $11.00 and the real 8-analyst S&P Global consensus is $10.67 (-3%) — Wedbush Hold ($9) and an H.C. Wainwright Sell drag the average below JPMorgan/BMO's bullish $16-17 targets. Real Aug 2, 2026 PDUFA (melanoma, RP1) just 10 days out with a late-July adcom, but fails the consensus gate at the current price.",
+      "priceAtScreen": 11.00,
+      "topAnalystTarget": 10.67,
+      "impliedUpside": -3.0
+    },
+    {
+      "date": "2026-07-22",
+      "ticker": "SVRA",
+      "lane": "core",
+      "reason": "Comfortably clears the 30%+ gate (8-analyst consensus ~$9.72 vs $5.84 = ~66% upside; Jefferies cites 90% approval odds) but the PDUFA date was quietly extended from Aug 22 to Nov 22, 2026 back in April 2026 (FDA classified a data response as a major amendment, no safety/efficacy concerns cited) — the Aug 22 figure still widely cited by aggregator sites is stale. At 4 months out this sinks too far down the catalyst-proximity sort for this run.",
+      "priceAtScreen": 5.84,
+      "topAnalystTarget": 9.72,
+      "impliedUpside": 66.4
+    },
+    {
+      "date": "2026-07-22",
+      "ticker": "MU",
+      "lane": "core",
+      "reason": "longlist-cut: Clears the 30%+ gate easily (45-analyst consensus $1,492 vs $970.82 = ~54% upside, AI memory supercycle + Anthropic deal) but next earnings isn't until Sept 21-29, 2026 — over a month out. Also earnings_beat type, the one catalystType bucket with n>=5 track record in skill-feedback.json (12 completed, 0% hitRate, calm-regime not excused) — passed over for tighter-dated, smaller-cap picks this run.",
+      "priceAtScreen": 970.82,
+      "topAnalystTarget": 1492,
+      "impliedUpside": 53.7
+    },
+    {
+      "date": "2026-07-22",
+      "ticker": "JOBY",
+      "lane": "core",
+      "reason": "longlist-cut: Real upside (11-analyst avg $11.01 vs $7.23 = ~52% upside) and a genuine catalyst (FAA Stage 5 compliance flight testing underway, Toyota manufacturing JV) but no hard near-term date — type certificate is only guided to 'late 2026,' too fuzzy to rank on catalyst proximity this run.",
+      "priceAtScreen": 7.23,
+      "topAnalystTarget": 11.01,
+      "impliedUpside": 52.3
+    },
+    {
+      "date": "2026-07-22",
+      "ticker": "JAZZ",
+      "lane": "core",
+      "reason": "longlist-cut: FDA sNDA decision dated Aug 25, 2026 (Ziihera) but 20-analyst consensus $263.1 vs $254.22 price is only ~3.5% upside — large-cap pharma, most of the good news already priced in.",
+      "priceAtScreen": 254.22,
+      "topAnalystTarget": 263.1,
+      "impliedUpside": 3.5
+    },
+    {
+      "date": "2026-07-22",
+      "ticker": "ON",
+      "lane": "core",
+      "reason": "longlist-cut: Price data conflicted between $93-117 across sources during screening; once reconciled to $91.06, the 24/7 Wall St target of $141.68 implies ~56% upside — a real GaN/SiC design-win story — but the dated catalyst (Analyst Day) isn't until September, more diffuse than this round's picks, and $50B+ sizing needs a tighter date to justify a slot over smaller, more binary names.",
+      "priceAtScreen": 91.06,
+      "topAnalystTarget": 141.68,
+      "impliedUpside": 55.6
+    },
+    {
+      "date": "2026-07-22",
+      "ticker": "AMD",
+      "lane": "core",
+      "reason": "longlist-cut: Q2 earnings dated Aug 4, 2026 but 51-analyst consensus $541.66 is essentially flat to slightly below the $544.43 price (-0.5%) — mega-cap, most of the AI upside already priced in after a large YTD run. Also earnings_beat type, the one catalystType bucket with n>=5 track record and a 0% hitRate per skill-feedback.json.",
+      "priceAtScreen": 544.43,
+      "topAnalystTarget": 541.66,
+      "impliedUpside": -0.5
+    },
+    {
+      "date": "2026-07-22",
+      "ticker": "LNTH",
+      "lane": "core",
+      "reason": "longlist-cut: FDA NDA decision dated Aug 13, 2026 (MK-6240) but 11-analyst consensus $105.23 is below the $109.01 price (-3.5%) — market has already priced in an approval.",
+      "priceAtScreen": 109.01,
+      "topAnalystTarget": 105.23,
+      "impliedUpside": -3.5
+    },
+    {
+      "date": "2026-07-22",
+      "ticker": "SYM",
+      "lane": "core",
+      "reason": "longlist-cut: Found during REPL/SVRA replacement research (not in the original 12-ticker longlist). 19-analyst consensus $65.67 vs $42.86 = ~53% upside and an Aug 5, 2026 earnings date clear the gate, but Goldman Sachs carries a Sell rating and $45 target on the name. Chose SERV instead for the robotics slot given SERV's unanimous-bullish 8-analyst set and a much wider margin (243% upside) at a similar cap size.",
+      "priceAtScreen": 42.86,
+      "topAnalystTarget": 65.67,
+      "impliedUpside": 53.2
+    },
+    {
+      "date": "2026-07-22",
+      "ticker": "SLN",
+      "lane": "turbo",
+      "reason": "Was the strongest turbo pick as recently as Jul 14 (then ~400%+ upside on a ~$6-7 price) but the stock already ran to $10.85 since then — 7-analyst consensus is now $29.17 (+169%), under the 200% floor. Real Aug 2026 Phase 2 SANRECO topline still coming, but the easy re-rate already happened.",
+      "priceAtScreen": 10.85,
+      "topAnalystTarget": 29.17,
+      "impliedUpside": 168.8
+    },
+    {
+      "date": "2026-07-22",
+      "ticker": "PUSA",
+      "lane": "turbo",
+      "reason": "longlist-cut: Aureus Greenway/Powerus is the only other name (besides UMAC) tied to the same Trump-admin $1.1B Drone Dominance funding talks, and at a $79M cap the re-rate math is even more extreme than UMAC's. Cut on data-quality grounds — this is a pre-merger SPAC shell (Powerus merger into Aureus Greenway targeted to close 'summer 2026') with no analyst coverage and share price quoted inconsistently across sources ($3.41-$5.33 within the same week) — too unreliable to write a confident report on today.",
+      "priceAtScreen": 4.37,
+      "topAnalystTarget": 13.11,
+      "impliedUpside": 200.0
+    },
+    {
+      "date": "2026-07-22",
+      "ticker": "CAPR",
+      "lane": "turbo",
+      "reason": "longlist-cut: Aug 22, 2026 PDUFA (deramiocel, DMD) is a real near-term binary catalyst and already a core-lane pick (Jul 14), but the real 6-analyst consensus has compressed to just $22.17 (+14% from $19.50) post-run-up — headline $48-50 targets circulating online are stale pre-CRL figures. Doesn't clear even the core 30% bar, let alone turbo's 200% floor.",
+      "priceAtScreen": 19.50,
+      "topAnalystTarget": 22.17,
+      "impliedUpside": 13.7
+    },
+    {
+      "date": "2026-07-22",
+      "ticker": "VSTM",
+      "lane": "turbo",
+      "reason": "longlist-cut: Real Aug 6, 2026 earnings date and an already-approved drug (avutometinib+defactinib, low-grade serous ovarian cancer) reduce binary risk, but 9-analyst consensus $15.25 vs $6.03 = only 179% upside — just under the 200% floor.",
+      "priceAtScreen": 6.03,
+      "topAnalystTarget": 15.25,
+      "impliedUpside": 179.3
+    },
+    {
+      "date": "2026-07-22",
+      "ticker": "USAR",
+      "lane": "turbo",
+      "reason": "longlist-cut: Real $2.8B Serra Verde rare-earth mine acquisition catalyst (backed by a $1.6B DOE funding LOI) but 8-analyst consensus $39.50 vs $20.47 = 93% upside and $4.35B market cap — insufficient upside for the turbo floor.",
+      "priceAtScreen": 20.47,
+      "topAnalystTarget": 39.50,
+      "impliedUpside": 93.0
+    },
+    {
+      "date": "2026-07-22",
+      "ticker": "LEU",
+      "lane": "turbo",
+      "reason": "longlist-cut: Real $900M DOE HALEU contract and S&P SmallCap 600 inclusion, but 14-analyst consensus $271.86 vs $171.24 = only 59% upside — well under the 200% floor despite the genuine catalyst.",
+      "priceAtScreen": 171.24,
+      "topAnalystTarget": 271.86,
+      "impliedUpside": 58.7
+    },
+    {
+      "date": "2026-07-22",
+      "ticker": "APLD",
+      "lane": "turbo",
+      "reason": "longlist-cut: Real hyperscaler AI-datacenter demand story (1.7GW capacity, 88% YTD) with a highest named target of $106 (+281%), but 10-analyst consensus is $76.70 (+176%) and market cap is $7.96B — exceeds the $5B cap ceiling without a clean 300%+ consensus path to justify the exception.",
+      "priceAtScreen": 27.83,
+      "topAnalystTarget": 76.70,
+      "impliedUpside": 175.6
+    },
+    {
+      "date": "2026-07-22",
+      "ticker": "FBIO",
+      "lane": "turbo",
+      "reason": "longlist-cut: Genuinely cash-rich for its size ($256M cash vs $117M market cap after a $205M PRV sale) but sources conflicted badly on the FDA timeline for its lead drug CUTX-101 (approved Jan 2026 per some sources, hit with a CRL for manufacturing deficiencies in May 2026 per others) — too muddled to write a reliable report on this round.",
+      "priceAtScreen": 3.53,
+      "topAnalystTarget": 17.00,
+      "impliedUpside": 381.6
+    },
+    {
+      "date": "2026-07-22",
+      "ticker": "QBTS",
+      "lane": "turbo",
+      "reason": "longlist-cut: Real federal quantum funding tailwind ($2B executive order + $100M CHIPS grant) but 15-analyst consensus $37.39 vs $18.66 = ~100% upside and $9.57B market cap — exceeds the cap ceiling with insufficient upside to justify it.",
+      "priceAtScreen": 18.66,
+      "topAnalystTarget": 37.39,
+      "impliedUpside": 100.3
+    },
+    {
+      "date": "2026-07-22",
+      "ticker": "KRMN",
+      "lane": "turbo",
+      "reason": "longlist-cut: Real aerospace/defense name (Walker Precision acquisition) but $6.19B market cap exceeds the ceiling and consensus upside is only 122% ($103.50 vs $46.67) — doesn't clear the >$5B exception bar.",
+      "priceAtScreen": 46.67,
+      "topAnalystTarget": 103.50,
+      "impliedUpside": 121.8
+    },
+    {
+      "date": "2026-07-22",
+      "ticker": "CRSP",
+      "lane": "turbo",
+      "reason": "longlist-cut: A '437% upside' headline circulating for this name is stale/outlier-driven — the real 25-29 analyst consensus is $72-82.60 vs the current $50-52 price, only ~52% upside. $4.74B market cap and insufficient upside.",
+      "priceAtScreen": 51.00,
+      "topAnalystTarget": 77.30,
+      "impliedUpside": 51.6
+    },
+    {
+      "date": "2026-07-22",
+      "ticker": "HIVE",
+      "lane": "turbo",
+      "reason": "longlist-cut: Real dual bitcoin-mining/AI-infrastructure story (320MW AI Gigafactory planned) but the Gigafactory doesn't come online until H2 2027 — too far out for a near-term catalyst — and the real 7-analyst consensus is only $7.07 (+122%), under the floor.",
+      "priceAtScreen": 3.18,
+      "topAnalystTarget": 7.07,
+      "impliedUpside": 122.3
+    },
+    {
+      "date": "2026-07-22",
+      "ticker": "NUVL",
+      "lane": "turbo",
+      "reason": "longlist-cut: Real Sept 18, 2026 PDUFA (zidesamtinib) but the company agreed to be acquired by GSK for $124/share cash on Jun 9, 2026 — upside is now capped near the deal price by merger arbitrage, not a real speculative play anymore.",
+      "priceAtScreen": 110.39,
+      "topAnalystTarget": 124.00,
+      "impliedUpside": 12.3
     }
   ]
 }

@@ -1,0 +1,190 @@
+{
+  "ticker": "SERV",
+  "companyName": "Serve Robotics Inc.",
+  "companyDescription": "Sidewalk delivery robotics · ~2,000-robot fleet across 20 cities · Uber Eats/DoorDash/Nvidia/White Castle partnerships + Diligent Robotics healthcare acquisition · trading near its 52-week low",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-22T00:00:00.000Z",
+  "price": 5.38,
+  "priceChange": 3.66,
+  "priceNote": "Self-fetched today (no live-prices.json cache yet). Trading at $5.38, barely above the 52-week low ($5.02) and down sharply from the $18.64 high — the stock is down ~16% YTD despite the fleet more than doubling this year, a disconnect between operating progress and price the Aug 6 print will have to address.",
+  "marketCap": "$416M",
+  "sector": "Technology / Robotics (Autonomous Delivery)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Speculative",
+  "score": 71,
+  "summary": "Serve Robotics reports Q2 2026 earnings on Aug 6, 2026, sitting just above its 52-week low even as the fleet scaled to ~2,000 robots across 20 cities and 6 metro areas, with 2026 revenue guidance raised to ~$26M. This is a real growth story trading at a depressed multiple: Q1 2026 revenue was up 578% YoY, but a GAAP miss and expansion-investment spend drove a post-earnings selloff, and the stock's own earnings-day history is genuinely mixed (+12.3% last beat, -3% last miss). All 8 covering analysts rate it Strong Buy with an $18.45 average target (+243% from here) — one of the widest upside gaps in this screen, backed by real partnerships (Uber Eats, DoorDash, Nvidia, White Castle) and the Diligent Robotics healthcare diversification. Small-cap, pre-profitability, and genuinely volatile around earnings — speculative sizing only.",
+  "catalysts": [
+    {
+      "icon": "🤖",
+      "name": "Q2 2026 Earnings",
+      "description": "Serve reports Aug 6, 2026. The company's own earnings-day history is a coin flip — Q4 2025 results drove a +12.3% pop, but the May 2026 Q1 print fell over 3% on a GAAP net loss miss despite 578% YoY revenue growth. The market needs to see expansion spend translating into narrowing losses, not just faster top-line growth.",
+      "urgencyLabel": "~2 WEEKS",
+      "dateBadge": "Aug 6, 2026",
+      "catalystDate": "2026-08-06",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🚚",
+      "name": "Fleet Scale-Up to 2,000+ Robots",
+      "description": "Fleet has reached ~2,000 robots across 20 cities and 6 metro areas (44 cities/14 states including Diligent's footprint), with 2026 revenue guidance raised to ~$26M — an ongoing operational proof point ahead of the Q2 print.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "🏥",
+      "name": "Diligent Robotics Healthcare Diversification",
+      "description": "The Diligent Robotics acquisition pushes Serve beyond food delivery into hospital service robotics — a diversification story that could re-rate the stock if it starts showing up materially in the revenue mix this year.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Stock is near its 52-week low despite the fleet more than doubling this year — the market is discounting execution/cash-burn risk over growth, and Aug 6 needs to change that narrative",
+    "Own earnings-day history is genuinely mixed: +12.3% on the last beat (Mar 2026) but -3%+ on the last miss (May 2026), with a historical average earnings-day move of roughly -4%",
+    "Pre-profitability with a GAAP net loss that missed consensus last quarter — expansion spend (new markets, Diligent integration) needs to show a path to narrowing losses, not just faster revenue growth",
+    "Consensus target ($18.45) implies more than a 3x move — even the low end of the analyst range ($13, +142%) requires a lot of good news to materialize",
+    "Competition from well-capitalized players (DoorDash's own robotics efforts) in the same delivery-robotics space"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Aug 6, 2026", "note": "Market wants to see expansion spend narrowing losses, not just top-line growth", "est": "Revenue growth expected to continue; profitability trajectory is the swing factor", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -20, "price": 4.30 },
+    { "label": "Base", "color": "yellow", "pct": 60, "price": 8.61 },
+    { "label": "Bull", "color": "green", "pct": 143, "price": 13.07 },
+    { "label": "Moon", "color": "purple", "pct": 243, "price": 18.45 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (8 analysts)", "target": 18.45, "rating": "Strong Buy" },
+    { "firm": "Northland Securities", "target": 26.00, "rating": "Buy" },
+    { "firm": "Wedbush", "target": 22.00, "rating": "Buy" },
+    { "firm": "Oppenheimer", "target": 20.00, "rating": "Buy" },
+    { "firm": "Freedom Capital Markets", "target": 18.00, "rating": "Buy" },
+    { "firm": "Ladenburg Thalmann", "target": 17.00, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed holds at 3.50–3.75%, but new Chair Warsh's hawkish tone has 9 of 18 officials projecting a further 2026 hike, with the next FOMC decision Jul 28–29, 2026 — just days after this report.",
+    "inflationNote": "Core inflation remains above target and the 10-year yield sits near 4.48% — a real headwind for a pre-profitability small-cap that needs continued access to capital to fund fleet expansion.",
+    "sectorImpact": "As an unprofitable small-cap growth name, SERV is among the more rate-sensitive picks in this screen — higher-for-longer compresses the valuation multiple the market is willing to pay for its growth, on top of the existing execution-risk discount.",
+    "summary": "MEDIUM-HIGH — this is one of the more macro-sensitive names in this screen given its pre-profitability status and reliance on continued capital access; a hawkish surprise at the Jul 28-29 FOMC would compound the stock's existing near-52-week-low weakness."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 5.38, "note": "Current price — already just above the 52-week low ($5.02)", "timing": "Now (small)" },
+      { "label": "Entry 2", "level": 4.70, "rangeMax": 5.00, "note": "At/near the 52-week low — best pre-earnings R/R if weakness continues into Aug 6", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 4.00, "note": "Deep capitulation — only on a broad small-cap growth selloff or a guidance cut", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 8.61, "pct": 60.0, "note": "Base — Q2 shows continued growth with narrowing losses" },
+    "tp2": { "price": 13.07, "pct": 143.0, "note": "Bull — clean beat-and-raise, losses narrow faster than expected" },
+    "tp3": { "price": 18.45, "pct": 243.0, "note": "Moon — beat + Diligent healthcare diversification starts showing up materially, hits full consensus target", "moon": true },
+    "stopLoss": {
+      "tight": 4.35, "tightPct": -10.3, "tightNote": "Below the 52-week-low zone — thesis-neutral but a fresh low breaking down",
+      "hard": 3.75, "hardPct": -22.7, "hardNote": "Well below the 52-week low — Aug 6 miss with a widening loss would break the thesis",
+      "riskReward": "18.5 : 1", "rrNote": "From Entry 2 ($4.85 mid) tight stop vs TP2", "rrWarning": "Very high R/R but this is a pre-profitability micro-cap with a genuinely mixed earnings-day history — small size mandatory"
+    },
+    "verdict": "SPECULATIVE — small position now near the 52-week low, add if it dips further into the $4.70-5.00 zone ahead of Aug 6. Real growth story, but the market wants to see losses narrow, not just revenue scale.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "SERV shows limited pre-earnings runup historically — the stock tends to sit flat or drift into the print and then react sharply on the actual numbers, particularly the GAAP loss line rather than revenue growth alone.",
+    "preRunupTiming": "minimal pre-event runup; the move happens on the print itself",
+    "preRunupPct": "0% to +3% pre-print drift",
+    "postWin": {
+      "avgPct": 12.3,
+      "range": "+8% to +16%",
+      "note": "SERV's Q4 2025 results (reported Mar 11, 2026) drove a +12.31% pop — notable given the company's historical average earnings-day move is close to -4%, showing the market rewards a clean beat disproportionately for this name.",
+      "exampleDate": "Mar 2026"
+    },
+    "postLose": {
+      "avgPct": -3.5,
+      "range": "-3% to -5%",
+      "note": "SERV's Q1 2026 results (reported May 7, 2026) fell over 3% despite 578% YoY revenue growth, because the GAAP net loss missed consensus and expansion spend raised cash-burn concerns — shows the market cares about the loss line, not just growth.",
+      "exampleDate": "May 2026"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Pre-profitability micro-cap ($416M) trading near its 52-week low with a genuinely mixed earnings-day track record — 3% sizing keeps real upside exposure while respecting the binary loss-line risk."
+    },
+    "stopPreCatalyst": { "pct": -10, "price": 4.35, "note": "Below the 52-week-low zone before Aug 6 — thesis-neutral but a fresh low is a real warning sign" },
+    "stopPostCatalyst": { "pct": -15, "note": "If the GAAP loss widens again or cash-burn guidance worsens, exit — mirrors the May 2026 post-earnings reaction pattern" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "SERV",
+      "event": "Q4 2025 earnings beat",
+      "date": "Mar 2026",
+      "movePct": 12.3,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company precedent for how SERV reacts to a clean beat — directly relevant to the Aug 6 setup."
+    },
+    {
+      "ticker": "SERV",
+      "event": "Q1 2026 earnings — 578% YoY revenue growth but GAAP net loss missed consensus",
+      "date": "May 2026",
+      "movePct": -3,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Shows growth alone isn't enough for this name — the market is watching the loss line specifically, which is the key swing factor for the Aug 6 print."
+    }
+  ],
+  "sources": [
+    "https://www.stocktitan.net/news/SERV/serve-robotics-announces-first-quarter-2026-results-with-3x-3jokz86uimr4.html",
+    "https://finance.yahoo.com/markets/stocks/articles/serve-robotics-slips-16-ytd-161400249.html",
+    "https://tickeron.com/ticker/SERV/forecasts-predictions/",
+    "https://stockanalysis.com/stocks/serv/forecast/",
+    "https://stockanalysis.com/stocks/serv/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Serve Robotics รายงานผล Q2 2026 วันที่ 6 ส.ค. 2026 ราคาหุ้นตอนนี้ใกล้ 52-week low แม้ fleet จะขยายเป็น ~2,000 คันใน 20 เมือง 6 metro area นี่คือ growth story จริงที่เทรดในราคาต่ำผิดปกติ — รายได้ Q1 2026 โต 578% YoY แต่ GAAP ขาดทุนพลาดคาดและ spend ขยายธุรกิจทำให้หุ้นร่วงหลังประกาศผล และประวัติวันประกาศผลของหุ้นตัวนี้ก็ผสมกันจริง (+12.3% ครั้งที่ beat ล่าสุด, -3% ครั้งที่ miss ล่าสุด) นักวิเคราะห์ทั้ง 8 คน Strong Buy เป้าเฉลี่ย $18.45 (+243% จากราคานี้) — ช่องว่าง upside กว้างที่สุดในการคัดรอบนี้ หนุนด้วยพาร์ทเนอร์จริง (Uber Eats, DoorDash, Nvidia, White Castle) และการขยายไปกลุ่มโรงพยาบาลผ่าน Diligent Robotics เป็นหุ้นเล็ก pre-profitability ผันผวนจริงรอบประกาศผล — เหมาะ speculative size เท่านั้น",
+      "priceNote": "ราคา $5.38 เหนือ 52-week low ($5.02) เล็กน้อย ห่างจากจุดสูงสุด $18.64 มาก หุ้นติดลบ ~16% YTD แม้ fleet โตกว่าเท่าตัวปีนี้ — ความต่างระหว่างผลดำเนินงานกับราคาที่ผลประกอบการ 6 ส.ค. ต้องพิสูจน์",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "ผลประกอบการ Q2 2026", "description": "รายงาน 6 ส.ค. 2026 — ประวัติวันประกาศผลผสมกันจริง ตลาดต้องการเห็น spend ขยายธุรกิจแปลงเป็นขาดทุนที่แคบลง ไม่ใช่แค่รายได้โตเร็ว" },
+        { "name": "ขยาย fleet เป็น 2,000+ คัน", "description": "Fleet ถึง ~2,000 คันใน 20 เมือง (รวม Diligent 44 เมือง 14 รัฐ) ปรับเป้ารายได้ปี 2026 เป็น ~$26M — proof point ต่อเนื่องก่อนประกาศผล" },
+        { "name": "ขยายสู่กลุ่มโรงพยาบาลผ่าน Diligent Robotics", "description": "การซื้อ Diligent Robotics ขยายจาก food delivery ไปหุ่นยนต์บริการโรงพยาบาล — อาจ re-rate หุ้นถ้าเริ่มโชว์ในรายได้ปีนี้" }
+      ],
+      "risks": [
+        "ราคาหุ้นใกล้ 52-week low แม้ fleet โตกว่าเท่าตัวปีนี้ — ตลาดยัง discount ความเสี่ยง execution/cash-burn มากกว่าการเติบโต ผลประกอบการ 6 ส.ค. ต้องเปลี่ยน narrative นี้",
+        "ประวัติวันประกาศผลผสมกันจริง — beat ครั้งล่าสุด (มี.ค. 2026) +12.3% แต่ miss ครั้งล่าสุด (พ.ค. 2026) -3%+ ค่าเฉลี่ยวันประกาศผลในอดีตประมาณ -4%",
+        "ยังขาดทุนตามเกณฑ์ GAAP และพลาดคาดไตรมาสที่แล้ว — การขยาย market ใหม่และการรวม Diligent ต้องโชว์แนวทางขาดทุนแคบลง ไม่ใช่แค่รายได้โตเร็ว",
+        "เป้า consensus ($18.45) หมายถึงหุ้นต้องวิ่งขึ้นกว่า 3 เท่า — แม้ขอบล่างของ range นักวิเคราะห์ ($13, +142%) ก็ต้องมีข่าวดีอีกมาก",
+        "คู่แข่งทุนหนา (DoorDash เองก็ทำ robotics) ในตลาด delivery robotics เดียวกัน"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% แต่ประธาน Warsh สายเหยี่ยว 9/18 คนมองขึ้นดอกเบี้ยอีกในปี 2026 ประชุม FOMC ถัดไป 28-29 ก.ค. 2026",
+        "inflationNote": "เงินเฟ้อ core ยังสูงกว่าเป้า yield 10 ปีใกล้ 4.48% เป็นแรงกดดันจริงสำหรับหุ้นเล็ก pre-profitability ที่ต้องพึ่งการเข้าถึงทุนต่อเนื่องเพื่อขยาย fleet",
+        "sectorImpact": "ในฐานะหุ้น growth เล็กที่ยังไม่กำไร SERV sensitive ต่อดอกเบี้ยมากกว่าหุ้นอื่นในการคัดรอบนี้ — higher-for-longer กด multiple ที่ตลาดยอมจ่ายซ้ำเข้าไปกับ discount ด้าน execution ที่มีอยู่แล้ว",
+        "summary": "ความเสี่ยง Fed ระดับกลาง-สูง — เป็นหนึ่งในหุ้นที่ sensitive ต่อ macro มากที่สุดในการคัดรอบนี้ เพราะยัง pre-profitability และต้องพึ่งทุน หาก FOMC 28-29 ก.ค. ออกมา hawkish จะซ้ำเติมความอ่อนแอที่ราคาใกล้ 52-week low อยู่แล้ว"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — เข้าไม้เล็กตอนนี้ที่ใกล้ 52-week low เพิ่ม size ถ้าย่อลึกลงไปโซน $4.70-5.00 ก่อน 6 ส.ค. เป็น growth story จริง แต่ตลาดต้องการเห็นขาดทุนแคบลง ไม่ใช่แค่รายได้โต",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ใกล้ 52-week low ($5.02) แล้ว", "timing": "ตอนนี้ (เล็ก)" },
+          { "note": "ใกล้/ที่ 52-week low — R/R ดีที่สุดก่อนประกาศผลถ้ายังอ่อนตัวต่อ", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงหนัก — เฉพาะกรณี sector หุ้นเล็ก growth เทขายรวมหรือปรับลด guidance", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — Q2 โตต่อเนื่อง ขาดทุนเริ่มแคบลง" },
+        "tp2": { "note": "Bull — beat-and-raise ชัดเจน ขาดทุนแคบเร็วกว่าคาด" },
+        "tp3": { "note": "Moon — beat + Diligent เริ่มโชว์ผลจริงในรายได้ แตะเป้า consensus เต็ม", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดโซน 52-week low — thesis ยังไม่พัง แต่จุดต่ำสุดใหม่เป็นสัญญาณเตือน",
+          "hardNote": "ต่ำกว่า 52-week low มาก — พลาดเป้า 6 ส.ค. พร้อมขาดทุนขยายจะทำลาย thesis",
+          "rrNote": "จาก Entry 2 ($4.85 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R สูงมากแต่เป็น micro-cap pre-profitability ประวัติวันประกาศผลผสมกันจริง — size เล็กเท่านั้น"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q2 2026", "note": "ตลาดต้องการเห็น spend ขยายธุรกิจแปลงเป็นขาดทุนแคบลง ไม่ใช่แค่รายได้โต" }
+      ]
+    }
+  }
+}

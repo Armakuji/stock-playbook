@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import Link from "next/link";
 import { useLang } from "@/lib/LanguageContext";
 import { BacktestEntry, BacktestStats, Checkpoint } from "@/lib/backtest";
@@ -135,6 +135,14 @@ function FetchButton({ pendingItems }: {
 }) {
   const [status, setStatus] = useState<"idle" | "loading" | "done" | "error">("idle");
   const [fetched, setFetched] = useState(0);
+  // The /backtest/api price fetcher is a Next.js API route that only exists in
+  // local dev — the site ships to Vercel as a static export with no API routes.
+  // Detect after mount (avoids SSR/hydration mismatch) so PROD never shows a
+  // button that would just fail with "only works locally".
+  const [isLocal, setIsLocal] = useState(false);
+  useEffect(() => {
+    setIsLocal(/^(localhost|127\.0\.0\.1|\[?::1\]?)$/.test(window.location.hostname));
+  }, []);
 
   const run = useCallback(async () => {
     setStatus("loading");
@@ -157,6 +165,21 @@ function FetchButton({ pendingItems }: {
   }, [pendingItems]);
 
   if (pendingItems.length === 0) return null;
+
+  // PROD (static export): no API route to hit — show the count as a read-only
+  // note so the queue is still visible, but don't render a button that fails.
+  if (!isLocal) {
+    return (
+      <div style={{ display: "flex", alignItems: "center", flexWrap: "wrap", gap: 8, padding: "12px 16px", borderRadius: 10, background: "#64748b14", border: "1px solid #64748b30" }}>
+        <div style={{ fontSize: 12, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>
+          {pendingItems.length} past checkpoint{pendingItems.length !== 1 ? "s" : ""} pending price lookup
+        </div>
+        <div style={{ fontSize: 11, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", opacity: 0.8 }}>
+          — run <code>npm run backtest:fetch</code> locally to fill
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div style={{ display: "flex", alignItems: "center", gap: 12, padding: "12px 16px", borderRadius: 10, background: "#3b82f618", border: "1px solid #3b82f630" }}>

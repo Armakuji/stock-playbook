@@ -1,0 +1,179 @@
+{
+  "ticker": "TSLA",
+  "companyName": "Tesla, Inc.",
+  "companyDescription": "EV + energy storage + robotaxi/FSD ambitions · Q2 2026 earnings report tonight after market close · record delivery quarter but robotaxi fleet still tiny next to Waymo",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-22T18:00:00.000Z",
+  "price": 378.31,
+  "priceChange": -0.16,
+  "priceNote": "Self-fetched today (no live-prices.json cache yet). Roughly flat heading into tonight's Q2 earnings report — options markets are pricing a ±7.6% move on the print, well off the 52-week high ($498.83).",
+  "marketCap": "$1.42T",
+  "sector": "Consumer Discretionary / EV, Energy & Robotics",
+  "verdict": "HOLD",
+  "scoreLabel": "Speculative",
+  "score": 59,
+  "summary": "Tesla reports Q2 2026 earnings tonight (Jul 22) after market close — Wall Street expects ~$26.4B revenue and $0.53 EPS off a record delivery quarter, with options pricing a ±7.6% move either way. The real debate isn't the delivery number, it's robotaxi: Tesla's entire Texas robotaxi fleet numbers around 42 vehicles versus Waymo's 577 registered in the same state, and Musk himself has said robotaxi revenue won't be material in 2026, while expressing hope for operations in a 'baker's dozen' states by year-end. Analyst targets span an extraordinary $25-600 range (consensus near $410, +8.4% from here) — reflecting genuine, unresolved disagreement on whether Tesla is a car company or an AI/robotics story. This is a binary event happening literally tonight.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings (TONIGHT)",
+      "description": "Reports after market close today, Jul 22, 2026. Consensus expects ~$26.4B revenue and $0.53 EPS following a record delivery quarter. Options markets are pricing a ±7.6% move on the print. Margin trajectory and robotaxi commentary matter more than the delivery number itself.",
+      "urgencyLabel": "TONIGHT",
+      "dateBadge": "Jul 22, 2026",
+      "catalystDate": "2026-07-22",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "🚕",
+      "name": "Robotaxi Fleet Expansion",
+      "description": "Tesla's Texas robotaxi fleet is around 42 vehicles versus Waymo's 577 registered in the same state (Waymo already delivers 500,000 paid rides/week across 10 US cities). Musk has said robotaxi revenue won't be material in 2026 but hopes for operations in a 'baker's dozen' states by New Year's Eve 2026.",
+      "urgencyLabel": "ONGOING / H2 2026",
+      "dateBadge": "H2 2026",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "This is a binary event TONIGHT — options pricing ±7.6% reflects genuine two-sided uncertainty, not a clean setup either direction",
+    "Robotaxi reality check: 42 vehicles in Texas vs. Waymo's 577 in the same market, with Waymo already at 500,000 paid rides/week across 10 cities — the growth-story premium in Tesla's valuation depends on closing a gap that is currently enormous",
+    "Musk's own admission that robotaxi revenue 'will not be material in 2026' undercuts near-term bull cases built on autonomous-ride revenue showing up in the model soon",
+    "Analyst target dispersion ($25-600) is extreme even by Tesla's historical standards — reflects real, unresolved disagreement rather than converging views, meaning any single price target should be treated with caution",
+    "Record delivery quarter still needs to translate to margin — 'strong deliveries, murky profits' is how one preview characterized the setup"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Jul 22, 2026 (tonight)", "note": "Consensus $26.4B revenue, $0.53 EPS; options pricing ±7.6%", "est": "Margin trajectory + robotaxi commentary are the real swing factors", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -25, "price": 283.73 },
+    { "label": "Base", "color": "yellow", "pct": 8.4, "price": 410.00 },
+    { "label": "Bull", "color": "green", "pct": 34.3, "price": 508.00 },
+    { "label": "Moon", "color": "purple", "pct": 58.6, "price": 600.00 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (wide dispersion)", "target": 410.00, "rating": "Hold" },
+    { "firm": "Stifel", "target": 508.00, "rating": "Buy" },
+    { "firm": "Morgan Stanley", "target": 415.00, "rating": "Equal Weight" },
+    { "firm": "Goldman Sachs", "target": 375.00, "rating": "Neutral" },
+    { "firm": "UBS", "target": 364.00, "rating": "Neutral" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed holds at 3.50–3.75%, but new Chair Warsh's hawkish tone has 9 of 18 officials projecting a further 2026 hike, with the next FOMC decision Jul 28–29, 2026 — a week after tonight's print.",
+    "inflationNote": "Core inflation remains above target and the 10-year yield sits near 4.48% — a headwind for a high-multiple growth/AI-story name.",
+    "sectorImpact": "Auto demand is genuinely rate-sensitive (financing costs), and Tesla's premium valuation as an AI/robotics story rather than 'just' an automaker means it's also exposed to the same high-multiple-compression risk hitting AI names into the Jul 28-29 FOMC.",
+    "summary": "MEDIUM — tonight's print is company-specific and macro-independent in the short run, but the stock's premium multiple depends partly on the same growth/AI narrative that a hawkish FOMC surprise next week would pressure across the board."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 378.31, "note": "Current price — flat heading into tonight's binary print", "timing": "Now (small, pre-earnings)" },
+      { "label": "Entry 2", "level": 330.00, "rangeMax": 350.00, "note": "Post-earnings dip zone if the print disappoints on margins/robotaxi commentary", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 290.00, "note": "Near the 52-week low — only on a broad miss or guidance cut", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 410.00, "pct": 8.4, "note": "Base — in-line print, market treats it as a non-event" },
+    "tp2": { "price": 508.00, "pct": 34.3, "note": "Bull — clean beat + constructive robotaxi commentary, hits Stifel's target" },
+    "tp3": { "price": 600.00, "pct": 58.6, "note": "Moon — robotaxi expansion accelerates meaningfully faster than Musk's own 2026 framing suggests", "moon": true },
+    "stopLoss": {
+      "tight": 340.00, "tightPct": -10.1, "tightNote": "Below the post-earnings dip zone — thesis-neutral but a weak reaction to tonight's print",
+      "hard": 280.00, "hardPct": -26.0, "hardNote": "Near/below the 52-week low — would confirm the bear case on margins and robotaxi timeline",
+      "riskReward": "3.8 : 1", "rrNote": "From Entry 2 ($340 mid) tight stop vs TP2", "rrWarning": "Reasonable R/R but you're buying into or right after a binary event tonight with a ±7.6% options-priced swing — size for that"
+    },
+    "verdict": "HOLD ahead of tonight's print — this is not a clean pre-earnings add given the ±7.6% priced swing and genuinely unresolved robotaxi debate. Reassess after the numbers and call commentary land.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Tesla shows minimal pre-earnings runup and instead reacts sharply on the print itself and, more specifically, on Musk's commentary during the call — the stock has a well-established pattern of reacting more to forward narrative (robotaxi, FSD, Optimus) than to the trailing quarter's numbers.",
+    "preRunupTiming": "minimal pre-event drift; the move happens on the print and call commentary",
+    "preRunupPct": "0% to ±3% pre-print drift",
+    "postWin": {
+      "avgPct": 8,
+      "range": "+5% to +15%",
+      "note": "Options markets are pricing a ±7.6% move on tonight's print specifically — historically Tesla earnings beats paired with constructive robotaxi/FSD commentary have driven double-digit single-session gains.",
+      "exampleDate": "historical TSLA earnings pattern"
+    },
+    "postLose": {
+      "avgPct": -8,
+      "range": "-5% to -15%",
+      "note": "Tesla has a real history of selling off on margin disappointment or cautious forward commentary even alongside solid delivery numbers — the 'strong deliveries, murky profits' framing going into tonight is exactly this setup.",
+      "exampleDate": "historical TSLA earnings pattern"
+    },
+    "spotSizing": {
+      "pct": 5,
+      "reason": "Mega-cap ($1.42T) but with genuine binary-event risk tonight and an unusually wide analyst target dispersion ($25-600) — 5% sizing respects the real uncertainty rather than treating this as a stable core holding tonight specifically."
+    },
+    "stopPreCatalyst": { "pct": -10, "price": 340.00, "note": "Below the post-earnings dip zone — thesis-neutral but a weak reaction to tonight's print" },
+    "stopPostCatalyst": { "pct": -15, "note": "If margins disappoint badly or Musk's robotaxi commentary reads as a further delay, exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "TSLA",
+      "event": "Record delivery quarter set up for tonight's Q2 2026 earnings",
+      "date": "Jul 2026",
+      "movePct": 0,
+      "days": 0,
+      "outcome": "mixed",
+      "note": "This report is generated ahead of tonight's print — options market itself is the best real-time comparable, pricing a ±7.6% two-sided move."
+    },
+    {
+      "ticker": "TSLA",
+      "event": "Waymo's paid-ride scale (500,000/week, 10 cities) vs. Tesla's ~42-vehicle Texas robotaxi fleet",
+      "date": "2026",
+      "movePct": 0,
+      "days": 0,
+      "outcome": "bad",
+      "note": "Not a price-move comparable but a real, quantified competitive gap directly relevant to how much credit the market should give Tesla's robotaxi narrative right now."
+    }
+  ],
+  "sources": [
+    "https://www.tradingkey.com/analysis/stocks/us-stocks/262039494-tesla-tsla-q2-2026-earnings-preview-july-22-480k-deliveries-tradingkey",
+    "https://electrek.co/2026/07/21/tesla-tsla-q2-2026-earnings-preview/",
+    "https://fxopen.com/blog/en/analysts-tesla-tsla-price-predictions/",
+    "https://capital.com/en-int/market-updates/tesla-stock-forecast-09-06-2026",
+    "https://stockanalysis.com/stocks/tsla/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Tesla รายงานผลประกอบการ Q2 2026 คืนนี้ (22 ก.ค.) หลังตลาดปิด — Wall Street คาดรายได้ ~$26.4B EPS $0.53 จากไตรมาสที่ส่งมอบสถิติ options market price ความเคลื่อนไหว ±7.6% ทั้งสองทาง ประเด็นถกเถียงจริงไม่ใช่ตัวเลขส่งมอบ แต่คือ robotaxi — fleet robotaxi ของ Tesla ในเท็กซัสมีแค่ ~42 คัน เทียบ Waymo ที่จดทะเบียน 577 คันในรัฐเดียวกัน และ Musk เองพูดว่ารายได้ robotaxi จะไม่มีนัยสำคัญในปี 2026 แม้จะหวังขยายไปหลายรัฐปลายปี เป้านักวิเคราะห์กว้างมากถึง $25-600 (consensus ใกล้ $410 +8.4% จากราคานี้) — สะท้อนความเห็นต่างจริงที่ยังไม่คลี่คลายว่า Tesla เป็นบริษัทรถยนต์หรือเรื่อง AI/robotics เป็น binary event ที่เกิดขึ้นจริงคืนนี้",
+      "priceNote": "ค่อนข้างทรงตัวก่อนรายงานผลคืนนี้ — options market price ความเคลื่อนไหว ±7.6% ห่างจาก 52-week high ($498.83) มาก",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "ผลประกอบการ Q2 2026 (คืนนี้)", "description": "รายงานหลังตลาดปิดวันนี้ 22 ก.ค. 2026 consensus คาดรายได้ ~$26.4B EPS $0.53 หลังไตรมาสส่งมอบสถิติ options price ความเคลื่อนไหว ±7.6%" },
+        { "name": "ขยาย Fleet Robotaxi", "description": "Fleet robotaxi เท็กซัสของ Tesla ~42 คัน เทียบ Waymo 577 คันในรัฐเดียวกัน (Waymo ส่งผู้โดยสารจ่ายเงิน 500,000 เที่ยว/สัปดาห์ 10 เมือง) Musk บอกรายได้ robotaxi จะไม่มีนัยสำคัญปี 2026 แต่หวังขยายหลายรัฐปลายปี" }
+      ],
+      "risks": [
+        "เป็น binary event คืนนี้จริง — options price ±7.6% สะท้อนความไม่แน่นอนสองทางจริง ไม่ใช่ setup ที่ชัดเจนทางใดทางหนึ่ง",
+        "ความจริงเรื่อง robotaxi: 42 คันในเท็กซัสเทียบ Waymo 577 คันในตลาดเดียวกัน โดย Waymo ทำ 500,000 เที่ยว/สัปดาห์ 10 เมืองแล้ว — premium ใน valuation ของ Tesla ที่มาจาก growth story ขึ้นกับการปิดช่องว่างที่ใหญ่มากตอนนี้",
+        "Musk เองยอมรับว่ารายได้ robotaxi 'จะไม่มีนัยสำคัญในปี 2026' บั่นทอน bull case ระยะใกล้ที่สร้างจากรายได้ autonomous ride ที่จะเข้าโมเดลเร็ว ๆ นี้",
+        "เป้านักวิเคราะห์กระจายกว้างมาก ($25-600) แม้เทียบมาตรฐานในอดีตของ Tesla เอง — สะท้อนความเห็นต่างจริงที่ยังไม่บรรจบ ไม่ใช่มุมมองที่กำลังรวมกัน",
+        "ไตรมาสส่งมอบสถิติยังต้องแปลงเป็น margin — 'ส่งมอบแข็งแกร่ง กำไรไม่ชัดเจน' คือลักษณะ setup ที่หนึ่งในบทวิเคราะห์ระบุไว้"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% แต่ประธาน Warsh สายเหยี่ยว 9/18 คนมองขึ้นดอกเบี้ยอีกในปี 2026 FOMC ถัดไป 28-29 ก.ค. 2026 — สัปดาห์หลังรายงานผลคืนนี้",
+        "inflationNote": "เงินเฟ้อ core ยังสูงกว่าเป้า yield 10 ปีใกล้ 4.48% เป็นแรงกดดันต่อหุ้น growth/AI story multiple สูง",
+        "sectorImpact": "ดีมานด์รถยนต์ sensitive ต่อดอกเบี้ยจริง (ต้นทุนไฟแนนซ์) และ valuation premium ของ Tesla ในฐานะเรื่อง AI/robotics มากกว่าแค่ค่ายรถ ทำให้ expose ต่อความเสี่ยง multiple compression เดียวกับหุ้น AI รอบ FOMC 28-29 ก.ค.",
+        "summary": "ความเสี่ยง Fed ระดับกลาง — รายงานผลคืนนี้เป็นเรื่องเฉพาะบริษัทและไม่ผูกกับ macro ระยะสั้น แต่ multiple พรีเมียมของหุ้นขึ้นกับ narrative growth/AI เดียวกันที่ FOMC hawkish surprise สัปดาห์หน้าจะกดดันในวงกว้าง"
+      },
+      "entryStrategy": {
+        "verdict": "HOLD ก่อนรายงานผลคืนนี้ — ไม่ใช่จังหวะเพิ่มก่อนประกาศผลที่สะอาดเมื่อ options price swing ±7.6% และประเด็น robotaxi ยังไม่คลี่คลายจริง ประเมินใหม่หลังตัวเลขและ call ออกมา",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ทรงตัวก่อนรายงานผลแบบ binary คืนนี้", "timing": "ตอนนี้ (เล็ก ก่อนประกาศผล)" },
+          { "note": "โซนย่อหลังประกาศผลถ้าผิดหวังเรื่อง margin/robotaxi commentary", "timing": "ถ้าย่อ" },
+          { "note": "ใกล้ 52-week low — เฉพาะกรณีพลาดเป้ากว้างหรือหั่น guidance", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — ผลตามคาด ตลาดมองเป็น non-event" },
+        "tp2": { "note": "Bull — beat ชัดเจน + commentary robotaxi เชิงบวก แตะเป้า Stifel" },
+        "tp3": { "note": "Moon — ขยาย robotaxi เร็วกว่าที่ Musk วางกรอบปี 2026 ไว้มาก", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดโซนย่อหลังประกาศผล — thesis ยังไม่พัง แต่ปฏิกิริยาอ่อนต่อผลคืนนี้",
+          "hardNote": "ใกล้/หลุด 52-week low — จะยืนยัน bear case เรื่อง margin และ timeline robotaxi",
+          "rrNote": "จาก Entry 2 ($340 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R สมเหตุสมผลแต่กำลังซื้อเข้าหรือหลัง binary event คืนนี้ที่ options price swing ±7.6% — size ให้เหมาะสม"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q2 2026", "note": "consensus $26.4B รายได้ EPS $0.53 options price ±7.6%" }
+      ]
+    }
+  }
+}

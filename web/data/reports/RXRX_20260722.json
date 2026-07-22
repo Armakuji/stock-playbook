@@ -1,0 +1,178 @@
+{
+  "ticker": "RXRX",
+  "companyName": "Recursion Pharmaceuticals, Inc.",
+  "companyDescription": "AI-driven drug discovery (TechBio) · REC-4881 posted positive Phase 2 data in familial adenomatous polyposis (FAP) · partnered with Sanofi/Roche ($500M+ milestones delivered) and Citeline for AI-enhanced trials",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-22T18:00:00.000Z",
+  "price": 3.01,
+  "priceChange": 3.8,
+  "priceNote": "Self-fetched today (no live-prices.json cache yet). Near the lower end of its 52-week range ($2.77-$7.18) despite genuinely positive pipeline news — a real disconnect between fundamentals and price that one bearish analyst attributes to the stock still being up to 67% overvalued on a different basis.",
+  "marketCap": "$1.59B",
+  "sector": "Healthcare / AI Drug Discovery (TechBio)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 57,
+  "summary": "Recursion's REC-4881 posted positive Phase 2 data in familial adenomatous polyposis (FAP), a rare disease with no approved therapies — genuinely good news for a company whose AI-driven drug discovery model has been more promise than proof to date. The company's partnered pipeline with Sanofi and Roche has delivered over $500M in milestone payments, and a new Citeline partnership targets $100M in AI-enhanced-trial inflows by year-end. Despite this, the stock trades near its 52-week low, and one analyst has flagged it as up to 67% overvalued on a separate valuation basis post-update — a real bear case, not just noise. 5-9 analysts cluster around a $6.57-7.00 consensus target (+118-133% from here), with a wider $10.75 outlier. Q2 earnings Aug 11, 2026 is the next real catalyst.",
+  "catalysts": [
+    {
+      "icon": "🧬",
+      "name": "REC-4881 Phase 2 Data (FAP)",
+      "description": "Positive Phase 2 data for REC-4881 in familial adenomatous polyposis, a rare disease with no FDA-approved therapies — a real proof point for Recursion's AI-driven discovery platform, though the regulatory pathway from here is still early.",
+      "urgencyLabel": "JUST REPORTED",
+      "dateBadge": "Jul 2026",
+      "catalystDate": "2026-07-15",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "Next earnings report — the market will look for continued milestone realization from the Sanofi/Roche partnerships and progress updates on the Citeline AI-trials collaboration.",
+      "urgencyLabel": "~3 WEEKS",
+      "dateBadge": "Aug 11, 2026",
+      "catalystDate": "2026-08-11",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "One analyst has flagged the stock as up to 67% overvalued post-pipeline-update on a separate valuation methodology — a real, disclosed bear case, not just short-term noise",
+    "Trading near the 52-week low despite genuinely positive Phase 2 data shows the market remains skeptical of the AI-drug-discovery thesis converting into real regulatory/commercial outcomes",
+    "Analyst coverage is thin and inconsistent across sources (5-9 analysts, targets ranging $6.57-$10.75) — real disagreement on valuation methodology, not just normal estimate noise",
+    "FAP is a rare disease with a small commercial market even with approval — the read-through to Recursion's broader pipeline value matters more than this indication's standalone economics",
+    "Pre-profitability biotech dependent on partnered-pipeline milestones for near-term cash — any slowdown in Sanofi/Roche program progress would remove a key funding source"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Aug 11, 2026", "note": "Market wants continued milestone realization + Citeline progress update", "est": "In-line expected, pipeline commentary is the swing factor", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -35, "price": 1.96 },
+    { "label": "Base", "color": "yellow", "pct": 60, "price": 4.82 },
+    { "label": "Bull", "color": "green", "pct": 128, "price": 6.87 },
+    { "label": "Moon", "color": "purple", "pct": 257, "price": 10.75 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (5-9 analysts, varies by source)", "target": 6.87, "rating": "Buy" },
+    { "firm": "Bull outlier (9-analyst basis)", "target": 10.75, "rating": "Buy" },
+    { "firm": "Bear counterpoint (separate valuation basis)", "target": 1.87, "rating": "n/a", "note": "One analyst flagged the stock as up to 67% overvalued post-update — real disagreement on methodology" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Fed holds at 3.50–3.75%, but new Chair Warsh's hawkish tone has 9 of 18 officials projecting a further 2026 hike, with the next FOMC decision Jul 28–29, 2026.",
+    "inflationNote": "Core inflation remains above target and the 10-year yield sits near 4.48% — a headwind for pre-profitability biotechs generally, though Recursion's partnered-milestone cash flow reduces reliance on capital markets somewhat.",
+    "sectorImpact": "Clinical-stage biotech catalysts (Phase 2 data, partnership milestones) are largely macro-independent in direction — an FDA/clinical outcome doesn't care about interest rates.",
+    "summary": "LOW — this is one of the more macro-independent names in this batch since the near-term catalysts are clinical/partnership-driven rather than rate-sensitive, though the broader pre-profitability biotech sector still trades with some sensitivity to risk appetite."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 3.01, "note": "Current price — near the 52-week low despite positive Phase 2 data", "timing": "Now (small)" },
+      { "label": "Entry 2", "level": 2.60, "rangeMax": 2.80, "note": "Near the 52-week low zone — best R/R if the overvaluation bear case pressures the stock further", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 2.20, "note": "Deep capitulation — only on a broad biotech selloff or a partnership setback", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 4.82, "pct": 60.0, "note": "Base — Aug 11 earnings confirm continued milestone realization" },
+    "tp2": { "price": 6.87, "pct": 128.2, "note": "Bull — market re-rates the AI-drug-discovery thesis on FAP data follow-through, hits consensus target" },
+    "tp3": { "price": 10.75, "pct": 257.1, "note": "Moon — pipeline broadly re-rates, hits the bull-outlier target", "moon": true },
+    "stopLoss": {
+      "tight": 2.50, "tightPct": -16.9, "tightNote": "Below the 52-week-low zone — thesis-neutral but a fresh low is a real warning sign",
+      "hard": 1.90, "hardPct": -36.9, "hardNote": "Deep breach — would confirm the overvaluation bear case is winning out",
+      "riskReward": "6.0 : 1", "rrNote": "From Entry 2 ($2.70 mid) tight stop vs TP2", "rrWarning": "Good R/R but real, disclosed analyst disagreement on valuation — size for genuine uncertainty"
+    },
+    "verdict": "SPECULATIVE — small position near the 52-week low on genuinely positive Phase 2 data, add on further weakness ahead of the Aug 11 print. Real bear case exists alongside the bull case here.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "regulatory_approval",
+    "preRunup": "AI-drug-discovery names like RXRX tend to react on the actual data readout day rather than a sustained pre-announcement runup — the stock's muted reaction to the REC-4881 news (still near 52-week lows) shows the market wants more confirmation before re-rating.",
+    "preRunupTiming": "minimal pre-event runup; muted reaction even on the actual positive data this time",
+    "preRunupPct": "0% to +10%, though this cycle's reaction has been muted despite genuinely positive data",
+    "postWin": {
+      "avgPct": 15,
+      "range": "+5% to +30%",
+      "note": "Positive Phase 2 data in a rare disease with no approved therapies would typically drive a stronger re-rate than RXRX has shown so far — the muted reaction here reflects the competing overvaluation narrative rather than the news itself being weak.",
+      "exampleDate": "Jul 2026 (RXRX REC-4881)"
+    },
+    "postLose": {
+      "avgPct": -20,
+      "range": "-10% to -35%",
+      "note": "Pre-profitability biotechs dependent on partnered-pipeline milestones can see sharp drawdowns if a major partner (Sanofi/Roche) pauses or de-prioritizes a program — a real risk given Recursion's reliance on this milestone cash flow.",
+      "exampleDate": "general sector pattern"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Small-cap ($1.59B) with real, disclosed analyst disagreement on valuation (bull consensus vs a specific 67%-overvalued bear call) — 3% sizing respects the genuine uncertainty on both sides."
+    },
+    "stopPreCatalyst": { "pct": -17, "price": 2.50, "note": "Below the 52-week-low zone ahead of Aug 11 — thesis-neutral but a fresh low is a real warning sign" },
+    "stopPostCatalyst": { "pct": -25, "note": "If Aug 11 earnings show partnership milestone cash flow slowing or the pipeline narrative weakening, exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "RXRX",
+      "event": "REC-4881 positive Phase 2 data in FAP (rare disease, no approved therapies)",
+      "date": "Jul 2026",
+      "movePct": 5,
+      "days": 3,
+      "outcome": "mixed",
+      "note": "Same-company precedent showing a muted reaction to genuinely positive clinical news — reflects the competing bear-case valuation narrative rather than the data itself."
+    },
+    {
+      "ticker": "RXRX",
+      "event": "Sanofi/Roche partnered-pipeline milestone payments delivered ($500M+ cumulative)",
+      "date": "2026",
+      "movePct": 8,
+      "days": 30,
+      "outcome": "good",
+      "note": "Shows the real, tangible value of the partnered pipeline as a funding source independent of the wholly-owned pipeline's regulatory risk."
+    }
+  ],
+  "sources": [
+    "https://ir.recursion.com/news-events/press-releases",
+    "https://finance.yahoo.com/sectors/healthcare/articles/recursion-ai-drug-pipeline-progress-070832635.html",
+    "https://simplywall.st/stocks/us/pharmaceuticals-biotech/nasdaq-rxrx/recursion-pharmaceuticals/news/recursion-pharmaceuticals-rxrx-stock-could-be-67-overvalued",
+    "https://stockanalysis.com/stocks/rxrx/forecast/",
+    "https://stockanalysis.com/stocks/rxrx/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "REC-4881 ของ Recursion มีข้อมูล Phase 2 บวกใน familial adenomatous polyposis (FAP) โรคหายากที่ยังไม่มีการรักษาที่ FDA อนุมัติ — ข่าวดีจริงสำหรับบริษัทที่โมเดล AI drug discovery ยังเป็น promise มากกว่า proof มาโดยตลอด pipeline ที่ partner กับ Sanofi และ Roche ส่งมอบ milestone แล้วกว่า $500M และ partnership ใหม่กับ Citeline ตั้งเป้า inflow $100M จาก AI-enhanced trials ภายในสิ้นปี แม้จะมีข่าวดีนี้ หุ้นยังเทรดใกล้ 52-week low และมีนักวิเคราะห์รายหนึ่งมองว่าแพงเกินไปถึง 67% บนฐานการประเมินมูลค่าอีกแบบ — เป็น bear case จริง ไม่ใช่แค่ noise นักวิเคราะห์ 5-9 คนให้เป้าเฉลี่ยกลุ่ม $6.57-7.00 (+118-133% จากราคานี้) มี outlier กว้างที่ $10.75 ผลประกอบการ Q2 วันที่ 11 ส.ค. 2026 คือ catalyst จริงถัดไป",
+      "priceNote": "ใกล้ขอบล่างของ 52-week range ($2.77-$7.18) แม้จะมีข่าว pipeline บวกจริง — ความต่างจริงระหว่างพื้นฐานกับราคาที่นักวิเคราะห์รายหนึ่งมองว่าหุ้นแพงเกินไปถึง 67% บนฐานอื่น",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "ข้อมูล Phase 2 REC-4881 (FAP)", "description": "ข้อมูล Phase 2 บวกของ REC-4881 ใน FAP โรคหายากไม่มีการรักษาที่ FDA อนุมัติ — proof point จริงของแพลตฟอร์ม AI drug discovery แม้เส้นทาง regulatory จากนี้ยังเร็วเกินไป" },
+        { "name": "ผลประกอบการ Q2 2026", "description": "รายงานถัดไป ตลาดต้องการเห็น milestone จาก Sanofi/Roche ต่อเนื่องและอัปเดตความคืบหน้า Citeline" }
+      ],
+      "risks": [
+        "นักวิเคราะห์รายหนึ่งมองว่าหุ้นแพงเกินไปถึง 67% หลังข่าว pipeline บนฐานการประเมินมูลค่าอีกแบบ — เป็น bear case จริงที่เปิดเผยแล้ว ไม่ใช่แค่ noise ระยะสั้น",
+        "เทรดใกล้ 52-week low แม้ข้อมูล Phase 2 จะบวกจริง แสดงว่าตลาดยังสงสัย thesis AI drug discovery ว่าจะแปลงเป็นผล regulatory/commercial จริงได้หรือไม่",
+        "การคุมนักวิเคราะห์บางและไม่สอดคล้องกันข้ามแหล่งข้อมูล (5-9 คน เป้า $6.57-$10.75) — ความเห็นต่างจริงเรื่องวิธีประเมินมูลค่า ไม่ใช่แค่ noise การประมาณปกติ",
+        "FAP เป็นโรคหายากตลาดเชิงพาณิชย์เล็กแม้จะอนุมัติ — การอ่านผลไปยัง pipeline ที่กว้างกว่าของ Recursion สำคัญกว่า economics ของ indication นี้เดี่ยว ๆ",
+        "Biotech pre-profitability ที่พึ่งพา milestone จาก partnered pipeline สำหรับเงินสดระยะใกล้ — ความคืบหน้าโปรแกรม Sanofi/Roche ที่ชะลอตัวจะตัดแหล่งเงินทุนสำคัญ"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% แต่ประธาน Warsh สายเหยี่ยว 9/18 คนมองขึ้นดอกเบี้ยอีกในปี 2026 FOMC ถัดไป 28-29 ก.ค. 2026",
+        "inflationNote": "เงินเฟ้อ core ยังสูงกว่าเป้า yield 10 ปีใกล้ 4.48% เป็นแรงกดดันต่อ biotech pre-profitability ทั่วไป แม้กระแสเงินสด milestone ของ Recursion จะลดการพึ่งพาตลาดทุนลงบ้าง",
+        "sectorImpact": "Catalyst biotech ระยะใกล้ (ข้อมูล Phase 2, milestone partnership) แทบไม่ผูกทิศทางกับ macro — ผล FDA/clinical ไม่สนใจอัตราดอกเบี้ย",
+        "summary": "ความเสี่ยง Fed ต่ำ — เป็นหนึ่งในหุ้นที่ macro-independent ที่สุดในชุดนี้เพราะ catalyst ระยะใกล้ขับเคลื่อนด้วย clinical/partnership ไม่ใช่ดอกเบี้ย แม้ sector biotech pre-profitability กว้างจะยัง sensitive ต่อ risk appetite บ้าง"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — เข้าไม้เล็กใกล้ 52-week low จากข้อมูล Phase 2 บวกจริง เพิ่มถ้าอ่อนตัวต่อก่อนประกาศผล 11 ส.ค. มี bear case จริงคู่กับ bull case ที่นี่",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ใกล้ 52-week low แม้ข้อมูล Phase 2 บวกจริง", "timing": "ตอนนี้ (เล็ก)" },
+          { "note": "ใกล้โซน 52-week low — R/R ดีที่สุดถ้า bear case เรื่อง overvaluation กดดันเพิ่ม", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงหนัก — เฉพาะ biotech เทขายรวมหรือปัญหา partnership", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — ผลประกอบการ 11 ส.ค. ยืนยัน milestone ต่อเนื่อง" },
+        "tp2": { "note": "Bull — ตลาด re-rate thesis AI drug discovery จากข้อมูล FAP ตามมา แตะเป้า consensus" },
+        "tp3": { "note": "Moon — pipeline re-rate กว้าง แตะเป้า bull outlier", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดโซน 52-week low — thesis ยังไม่พัง แต่จุดต่ำสุดใหม่เป็นสัญญาณเตือนจริง",
+          "hardNote": "หลุดลึก — จะยืนยันว่า bear case เรื่อง overvaluation ชนะ",
+          "rrNote": "จาก Entry 2 ($2.70 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R ดีแต่มีความเห็นต่างจริงจากนักวิเคราะห์เรื่อง valuation — size ให้เหมาะกับความไม่แน่นอนจริง"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q2 2026", "note": "ตลาดต้องการ milestone ต่อเนื่องและอัปเดตความคืบหน้า Citeline" }
+      ]
+    }
+  }
+}

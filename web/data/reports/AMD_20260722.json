@@ -1,0 +1,191 @@
+{
+  "ticker": "AMD",
+  "companyName": "Advanced Micro Devices, Inc.",
+  "companyDescription": "AI GPU / CPU challenger to Nvidia · Instinct MI-series accelerators + EPYC server CPUs · just landed Microsoft Azure as a marquee Helios rack-scale customer",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-22T18:00:00.000Z",
+  "price": 554.10,
+  "priceChange": 1.78,
+  "priceNote": "Self-fetched today (no live-prices.json cache yet). Up 1.78% today, on top of an 8.04% pop Jul 20-21 when Microsoft confirmed it will deploy AMD's new Helios rack-scale AI platform on Azure — one of the largest customer wins of AMD's AI story to date. Near the 52-week high ($584.73).",
+  "marketCap": "$903.5B",
+  "sector": "Technology / Semiconductors (AI Accelerators)",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 78,
+  "summary": "AMD's Advancing AI 2026 event runs today and tomorrow (Jul 22-23) in San Francisco — CEO Lisa Su is expected to unveil the Zen 6 'Venice' EPYC roadmap (TSMC 2nm) and update MI455X accelerator plans, just two days after Microsoft confirmed it will deploy AMD's Helios rack-scale platform on Azure for AI inference. That news alone drove an 8% single-day pop. Rosenblatt and UBS raised targets to $655 and $700 respectively in direct response — both well ahead of the broader 51-analyst consensus of $541.66, which likely hasn't caught up yet. Real, live momentum into a real binary event this week, but AMD has also shown it can drop 7%+ in a single sector-wide AI-valuation scare (early July) — this is a name riding genuine catalysts, not risk-free.",
+  "catalysts": [
+    {
+      "icon": "🎤",
+      "name": "Advancing AI 2026 Conference",
+      "description": "AMD's flagship annual AI event, running Jul 22-23 in San Francisco. Expected to reveal the Zen 6 'Venice' EPYC server CPU roadmap (built on TSMC's 2nm process) and an updated MI455X AI accelerator roadmap — positioned by the company as one of its most significant catalysts of the year.",
+      "urgencyLabel": "TODAY/TOMORROW",
+      "dateBadge": "Jul 22-23, 2026",
+      "catalystDate": "2026-07-22",
+      "badgeColor": "red",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🤝",
+      "name": "Microsoft Azure Helios Deployment",
+      "description": "Microsoft confirmed it will deploy AMD's new Helios rack-scale AI system (MI455X GPUs + Zen 6 EPYC 'Venice' CPUs + Pensando networking + ROCm software) on Azure for AI inference workloads, plus two new AMD EPYC-powered Azure VM series — a marquee hyperscaler win.",
+      "urgencyLabel": "JUST HAPPENED",
+      "dateBadge": "Jul 20, 2026",
+      "catalystDate": "2026-07-20",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "Next scheduled earnings report — the market will look for the Microsoft Helios deal and broader AI-accelerator demand to start showing up in guidance.",
+      "urgencyLabel": "~2 WEEKS",
+      "dateBadge": "Aug 4, 2026",
+      "catalystDate": "2026-08-04",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Broad 51-analyst consensus ($541.66) sits essentially at the current price — most of this week's good news is arguably already priced in, and the Rosenblatt/UBS upgrades ($655/$700) are still outliers relative to the wider analyst base",
+    "AMD itself fell as part of a broader AI-valuation selloff in early July 2026 (alongside Micron -13%, Intel -9%) — shows this mega-cap can drop hard on sentiment alone, not just company-specific news",
+    "Near the 52-week high ($584.73) — a 'sell the news' reaction to the Advancing AI event is a real risk if the roadmap reveal doesn't exceed already-high expectations",
+    "Microsoft's Helios deployment timeline and revenue contribution aren't fully disclosed yet — the market is pricing a strategic win before the financial details are known",
+    "Nvidia remains the dominant AI-accelerator player by a wide margin — AMD's gains are real but still a share-taking story against an incumbent with far greater scale"
+  ],
+  "estimateDates": [
+    { "event": "Advancing AI 2026", "dateRange": "Jul 22-23, 2026", "note": "Zen 6 Venice EPYC + MI455X roadmap reveal", "est": "Product roadmap detail is the swing factor", "highlight": "blue" },
+    { "event": "Q2 2026 Earnings", "dateRange": "Aug 4, 2026", "note": "First read on Microsoft Helios deal converting to guidance", "est": "Beat expected given recent momentum", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -20, "price": 443.28 },
+    { "label": "Base", "color": "yellow", "pct": 10, "price": 609.51 },
+    { "label": "Bull", "color": "green", "pct": 18.2, "price": 655.00 },
+    { "label": "Moon", "color": "purple", "pct": 26.3, "price": 700.00 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (51 analysts, pre-Microsoft-deal)", "target": 541.66, "rating": "Strong Buy" },
+    { "firm": "Rosenblatt (post-deal, Jul 20)", "target": 655.00, "rating": "Buy", "note": "Top semiconductor pick per analyst Kevin Cassidy, raised from $490" },
+    { "firm": "UBS (post-deal, Jul 20)", "target": 700.00, "rating": "Buy", "note": "Raised from $670" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed holds at 3.50–3.75%, but new Chair Warsh's hawkish tone has 9 of 18 officials projecting a further 2026 hike, with the next FOMC decision Jul 28–29, 2026 — days after this report.",
+    "inflationNote": "Core inflation remains above target and the 10-year yield sits near 4.48% — high-multiple AI names are among the most rate-sensitive in the market.",
+    "sectorImpact": "AMD is a high-beta AI-semis name that already showed real downside sensitivity to a broad AI-valuation selloff in early July (alongside Micron and Intel) — a hawkish surprise at the Jul 28-29 FOMC would hit this group disproportionately.",
+    "summary": "MEDIUM — the Microsoft deal and Advancing AI event are company-specific and macro-independent, but AMD's high valuation multiple and recent history of AI-sector-wide drawdowns mean a hawkish FOMC surprise this week is a real risk on top of the event-specific one."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 554.10, "note": "Current price — up on Microsoft news, ahead of the Advancing AI event", "timing": "Now (small)" },
+      { "label": "Entry 2", "level": 490.00, "rangeMax": 510.00, "note": "Pre-Microsoft-deal consolidation zone", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 420.00, "note": "Near the early-July AI-valuation-selloff lows", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 609.51, "pct": 10.0, "note": "Base — Advancing AI event lands in-line, no major surprise" },
+    "tp2": { "price": 655.00, "pct": 18.2, "note": "Bull — roadmap exceeds expectations, hits Rosenblatt's target" },
+    "tp3": { "price": 700.00, "pct": 26.3, "note": "Moon — Microsoft deal scales + Aug 4 earnings confirm the ramp, hits UBS's target", "moon": true },
+    "stopLoss": {
+      "tight": 500.00, "tightPct": -9.8, "tightNote": "Below the pre-Microsoft-deal consolidation zone",
+      "hard": 420.00, "hardPct": -24.2, "hardNote": "Near the early-July AI-valuation-selloff lows — thesis-breaking if revisited",
+      "riskReward": "2.6 : 1", "rrNote": "From Entry 2 ($500 mid) tight stop vs TP2", "rrWarning": "Reasonable R/R but near 52-week highs into a binary event — size accordingly"
+    },
+    "verdict": "BUY — core AI-semis holding with genuine near-term momentum (Microsoft deal, Advancing AI event this week). Add on a dip toward $490-510 rather than chasing at the highs.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "AMD moves sharply and immediately on hyperscaler partnership confirmations rather than a sustained pre-announcement runup — the Microsoft Helios news drove an 8% same-day pop with no meaningful multi-day anticipation beforehand.",
+    "preRunupTiming": "same-day on partnership confirmation, not a multi-week runup",
+    "preRunupPct": "minimal pre-announcement drift",
+    "postWin": {
+      "avgPct": 8,
+      "range": "+5% to +10%",
+      "note": "AMD's own Microsoft Azure Helios deployment news drove an 8.04% single-day pop on Jul 20-21, 2026 — the direct, same-company precedent for this exact catalyst type.",
+      "exampleDate": "Jul 2026 (AMD)"
+    },
+    "postLose": {
+      "avgPct": -7,
+      "range": "-5% to -13%",
+      "note": "AMD fell alongside Micron (-13%) and Intel (-9%) in an early-July 2026 AI-valuation selloff, even without AMD-specific bad news — shows the stock's real downside sensitivity to sector-wide sentiment shifts.",
+      "exampleDate": "Jul 2026 (sector selloff)"
+    },
+    "spotSizing": {
+      "pct": 10,
+      "reason": "Mega-cap ($903B), real fundamentals and hyperscaler traction — sized as a core-lane holding rather than a speculative position, though near 52-week highs argues against overloading right before the Advancing AI event."
+    },
+    "stopPreCatalyst": { "pct": -10, "price": 500.00, "note": "Below the pre-Microsoft-deal consolidation zone — thesis-neutral but momentum stalling" },
+    "stopPostCatalyst": { "pct": -15, "note": "If the Advancing AI roadmap disappoints or Aug 4 earnings show the Microsoft deal isn't converting to revenue, exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "AMD",
+      "event": "Microsoft confirms Azure Helios rack-scale AI deployment",
+      "date": "Jul 2026",
+      "movePct": 8.04,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company, same-catalyst-type precedent for exactly this news — the direct baseline for how AMD reacts to hyperscaler partnership confirmations."
+    },
+    {
+      "ticker": "AMD",
+      "event": "Broad AI-valuation selloff alongside Micron (-13%) and Intel (-9%)",
+      "date": "Jul 2026",
+      "movePct": -7,
+      "days": 5,
+      "outcome": "bad",
+      "note": "Same-company precedent for sector-wide risk-off sensitivity — relevant given the Jul 28-29 FOMC week follows shortly after this report."
+    }
+  ],
+  "sources": [
+    "https://www.gurufocus.com/news/8971552/amd-partners-with-microsoft-to-accelerate-ai-deployments",
+    "https://www.fxleaders.com/news/2026/07/21/amd-stock-forecast-microsoft-azure-ai-deal-july-22-2026/",
+    "https://finance.yahoo.com/technology/article/amd-stock-rises-on-price-target-bumps-microsoft-deal-170106894.html",
+    "https://www.tradingkey.com/analysis/stocks/us-stocks/262037492-amd-stock-forecast-week-july-20-2026-advancing-ai-july-22-tradingkey",
+    "https://stockanalysis.com/stocks/amd/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "งาน Advancing AI 2026 ของ AMD จัดวันนี้ถึงพรุ่งนี้ (22-23 ก.ค.) ที่ซานฟรานซิสโก — CEO Lisa Su คาดเปิดตัว roadmap Zen 6 'Venice' EPYC (TSMC 2nm) และอัปเดตแผน MI455X แค่ 2 วันหลัง Microsoft ยืนยันจะใช้แพลตฟอร์ม Helios rack-scale ของ AMD บน Azure สำหรับ AI inference ข่าวนี้เพียงอย่างเดียวดันหุ้นขึ้น 8% วันเดียว Rosenblatt และ UBS ปรับเป้าขึ้นเป็น $655 และ $700 ทันที ทั้งคู่สูงกว่าเป้าเฉลี่ย consensus 51 นักวิเคราะห์ที่ $541.66 มาก ซึ่งน่าจะยังปรับไม่ทันข่าวนี้ momentum จริงเข้าสู่ event จริงสัปดาห์นี้ แต่ AMD เองก็เคยร่วง 7%+ จากความกังวล valuation AI ทั้ง sector มาแล้ว (ต้นก.ค.) — เป็นหุ้นที่ขี่ catalyst จริง ไม่ใช่ไร้ความเสี่ยง",
+      "priceNote": "ขึ้น 1.78% วันนี้ ต่อจากที่พุ่ง 8.04% เมื่อ 20-21 ก.ค. หลัง Microsoft ยืนยันใช้แพลตฟอร์ม Helios ของ AMD บน Azure — หนึ่งใน customer win ที่ใหญ่ที่สุดของ AI story ของ AMD ใกล้ 52-week high ($584.73)",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "งาน Advancing AI 2026", "description": "งาน AI ประจำปีหลักของ AMD วันที่ 22-23 ก.ค. ที่ซานฟรานซิสโก คาดเปิด roadmap Zen 6 Venice EPYC (TSMC 2nm) และ MI455X" },
+        { "name": "Microsoft Azure ใช้ Helios", "description": "Microsoft ยืนยันใช้ระบบ Helios rack-scale ของ AMD (MI455X GPU + Zen 6 EPYC Venice + Pensando + ROCm) บน Azure สำหรับ AI inference — customer win ระดับ hyperscaler" },
+        { "name": "ผลประกอบการ Q2 2026", "description": "รายงานถัดไป ตลาดต้องการเห็นดีล Microsoft Helios เริ่มสะท้อนใน guidance" }
+      ],
+      "risks": [
+        "เป้า consensus กว้าง 51 นักวิเคราะห์ ($541.66) อยู่ใกล้ราคาปัจจุบันมาก — ข่าวดีสัปดาห์นี้อาจ price in ไปมากแล้ว และเป้า Rosenblatt/UBS ($655/$700) ยังเป็น outlier เทียบฐานนักวิเคราะห์กว้างกว่า",
+        "AMD เองเคยร่วงจากการเทขาย AI valuation ทั้ง sector ต้นก.ค. 2026 (พร้อม Micron -13%, Intel -9%) — แสดงว่าหุ้น mega-cap นี้ร่วงแรงได้จาก sentiment ล้วน ๆ ไม่ใช่แค่ข่าวลบเฉพาะตัว",
+        "ใกล้ 52-week high ($584.73) — ความเสี่ยง 'sell the news' จริงถ้า roadmap ไม่เกินความคาดหวังที่สูงอยู่แล้ว",
+        "ยังไม่เปิดเผยรายละเอียด timeline และรายได้จากดีล Microsoft Helios ชัดเจน — ตลาด price in ชัยชนะเชิงกลยุทธ์ก่อนรู้รายละเอียดการเงิน",
+        "Nvidia ยังครองตลาด AI accelerator ด้วยส่วนแบ่งที่ทิ้งห่างมาก — การเติบโตของ AMD เป็นเรื่องแย่งส่วนแบ่งจริง แต่ยังเทียบ scale ไม่ได้"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% แต่ประธาน Warsh สายเหยี่ยว 9/18 คนมองขึ้นดอกเบี้ยอีกในปี 2026 FOMC ถัดไป 28-29 ก.ค. 2026",
+        "inflationNote": "เงินเฟ้อ core ยังสูงกว่าเป้า yield 10 ปีใกล้ 4.48% หุ้น AI multiple สูงเป็นกลุ่มที่ sensitive ต่อดอกเบี้ยที่สุด",
+        "sectorImpact": "AMD เป็นหุ้น AI-semis high-beta ที่เคยแสดง downside sensitivity จริงต่อการเทขาย AI valuation ทั้ง sector ต้นก.ค. (พร้อม Micron, Intel) — FOMC hawkish surprise จะกระทบกลุ่มนี้แรงกว่าปกติ",
+        "summary": "ความเสี่ยง Fed ระดับกลาง — ดีล Microsoft และงาน Advancing AI เป็นเรื่องเฉพาะบริษัทไม่ผูกกับ macro แต่ multiple สูงและประวัติการร่วงทั้ง AI sector ทำให้ FOMC hawkish surprise สัปดาห์นี้เป็นความเสี่ยงจริงซ้อนทับ"
+      },
+      "entryStrategy": {
+        "verdict": "BUY — core holding กลุ่ม AI-semis ที่มี momentum จริงระยะใกล้ (ดีล Microsoft งาน Advancing AI สัปดาห์นี้) เพิ่ม size ถ้าย่อมาโซน $490-510 ไม่ไล่ราคาที่จุดสูงสุด",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ขึ้นจากข่าว Microsoft ก่อนงาน Advancing AI", "timing": "ตอนนี้ (เล็ก)" },
+          { "note": "โซน consolidation ก่อนดีล Microsoft", "timing": "ถ้าย่อ" },
+          { "note": "ใกล้จุดต่ำสุดช่วงเทขาย AI valuation ต้นก.ค.", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — งาน Advancing AI ผ่านไปตามคาด ไม่มี surprise ใหญ่" },
+        "tp2": { "note": "Bull — roadmap เกินคาด แตะเป้า Rosenblatt" },
+        "tp3": { "note": "Moon — ดีล Microsoft ขยายตัว + ผลประกอบการ 4 ส.ค. ยืนยันการเติบโต แตะเป้า UBS", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดโซน consolidation ก่อนดีล Microsoft",
+          "hardNote": "ใกล้จุดต่ำสุดช่วงเทขาย AI valuation ต้นก.ค. — thesis พังถ้ากลับไปแตะอีก",
+          "rrNote": "จาก Entry 2 ($500 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R สมเหตุสมผลแต่ใกล้ 52-week high เข้าสู่ event แบบ binary — size ให้เหมาะสม"
+        }
+      },
+      "estimateDates": [
+        { "event": "งาน Advancing AI 2026", "note": "เปิด roadmap Zen 6 Venice EPYC + MI455X" },
+        { "event": "ผลประกอบการ Q2 2026", "note": "อ่านครั้งแรกว่าดีล Microsoft Helios แปลงเป็น guidance หรือไม่" }
+      ]
+    }
+  }
+}

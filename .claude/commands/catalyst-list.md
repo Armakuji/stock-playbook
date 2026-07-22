@@ -58,6 +58,20 @@ Run the `/catalyst-list` workflow from CLAUDE.md (the catalyst dashboard; former
    estimate for these, but still a real number, never `null`.
 4. Validate (`node scripts/validate-reports.mjs`), `git add web/data/reports/ web/data/near-misses.json`,
    commit, push.
-5. Report the actual branch pushed. If it's not `main`, say "pushed to `<branch>` — merge to main
+5. **Refresh STALE carryovers still on the visible board.** The `/catalyst` route shows the
+   **top-10** (`TOP_N` in `web/app/catalyst/CatalystContent.tsx`) of ALL tickers, ranked by
+   catalyst proximity — not just the 5 you screened this run. So older picks that are still near
+   their catalyst stay on the board and rot: their report ages past 7 days and shows STALE
+   (`ageDays >= 7` in `web/app/report/[ticker]/StalenessBanner.tsx`). A run that refreshes only
+   the new 5 leaves ~half the visible board stale.
+   After Step 4, compute the visible board the same way the page does — `rankReports(getAllReports())`,
+   filter `reportStage(r) !== "post"`, take the top 10 — and for **every ticker in that top-10 that
+   is NOT one of the 5 you just wrote AND whose latest report is >=7 days old**, re-run the single-ticker
+   `/analyze` flow (`stock-report` skill: fresh research -> new `web/data/reports/<TICKER>_<today>.json`).
+   Print the list of carryovers you're refreshing first (e.g. `refreshing STALE top-10 carryovers:
+   CAPR OKLO POET KTOS`). Validate + commit + push these together with (or right after) the 5.
+   Goal: the entire visible top-10 is fresh, not just the new picks. If none is stale, print
+   `top-10 carryovers all fresh - none to refresh`.
+6. Report the actual branch pushed. If it's not `main`, say "pushed to `<branch>` — merge to main
    to deploy", never "Vercel deploying". Visible at `/catalyst` once on `main`. End with: "market-timing
    not refreshed in this run — run `/macro` to update."

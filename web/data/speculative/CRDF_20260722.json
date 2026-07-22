@@ -1,0 +1,179 @@
+{
+  "ticker": "CRDF",
+  "companyName": "Cardiff Oncology, Inc.",
+  "companyDescription": "Clinical-stage oncology · onvansertib (PLK1 inhibitor) just posted positive Phase 2 data in first-line RAS-mutated colorectal cancer · nano-cap fighting a license-termination threat from its own drug's originator",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-22T00:00:00.000Z",
+  "price": 0.84,
+  "priceChange": -20.0,
+  "priceNote": "Self-fetched today (no live-prices.json cache yet). Trading at $0.84, just above the 52-week low ($0.82) and down from a $4.52 high — the stock has been crushed by a recent dilutive $10M raise (priced at $1.05, already underwater) and a license dispute, even as the underlying clinical data has been genuinely positive.",
+  "marketCap": "$57.4M",
+  "sector": "Healthcare / Biotechnology (Oncology)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 52,
+  "summary": "Cardiff Oncology just reported real, positive Phase 2 data: onvansertib + FOLFIRI/bevacizumab hit a confirmed 72.2% objective response rate vs 42.1% for standard-of-care alone in first-line RAS-mutated colorectal cancer, meeting the trial's primary endpoint, and the company completed a successful End-of-Phase 2 FDA meeting to select the Phase 3 dose/regimen. Despite this, the stock trades near its 52-week low because of two very real problems: a going-concern disclosure (cash funds operations only into Q1 2027) that forced a dilutive $10M raise on Jul 15, and — the bigger issue — Nerviano Medical Sciences, the company that originated onvansertib and licenses it to Cardiff, is actively trying to terminate that license over an alleged breach. ⚠️ SURVIVAL: this is not just a cash problem — if Nerviano succeeds, Cardiff loses its only real asset regardless of how good the Phase 2 data is. TD Cowen downgraded specifically on this dispute. The 8-analyst $5.21 average target (+520%) reflects the clinical data; it does not resolve the license risk. Extreme position sizing only.",
+  "catalysts": [
+    {
+      "icon": "⚖️",
+      "name": "Nerviano License Dispute Resolution",
+      "description": "Nerviano Medical Sciences, onvansertib's originator, alleges Cardiff breached its license terms and is moving to terminate the license. Cardiff disagrees and has filed suit. Resolution of this dispute — in either direction — is now arguably the single biggest swing factor for the stock, bigger than the clinical data itself.",
+      "urgencyLabel": "ONGOING (litigation)",
+      "dateBadge": "Ongoing",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🧬",
+      "name": "Phase 3 Trial Initiation",
+      "description": "Following the positive Phase 2 data (72.2% vs 42.1% ORR) and a completed End-of-Phase 2 FDA meeting that selected the dose/regimen, Cardiff is planning to initiate a Phase 3 trial in first-line RAS-mutated mCRC — contingent on resolving the license dispute and securing further financing.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "⚠️ SURVIVAL: Cardiff has disclosed substantial doubt about its ability to continue as a going concern — $46.1M cash as of Q1 2026, burning ~$12.3M/quarter, funding operations only into Q1 2027 even after the Jul 15 raise. This is a real, near-term financing risk, not boilerplate.",
+    "The Nerviano license termination effort is the single largest risk to this stock — if Nerviano prevails, Cardiff loses rights to onvansertib, its only clinical asset, regardless of how strong the Phase 2 data is. TD Cowen downgraded specifically citing this dispute.",
+    "The Jul 15, 2026 registered direct offering priced at $1.05 — the stock now trades below that raise price ($0.84), meaning the most recent institutional buyers are already underwater, a real signal of weak sentiment",
+    "Nano-cap ($57.4M) with extreme volatility (52-week range $0.82-$4.52, a 5.5x spread) — thin liquidity and wide spreads are a real execution risk",
+    "A Phase 3 trial requires significant capital Cardiff doesn't currently have secured — even a favorable license resolution doesn't guarantee the funding to run the confirmatory trial"
+  ],
+  "estimateDates": [
+    { "event": "Nerviano License Dispute", "dateRange": "Ongoing", "note": "Litigation in progress — outcome is binary and existential for the company", "est": "Resolution timeline uncertain", "highlight": "yellow" },
+    { "event": "Phase 3 Trial Initiation", "dateRange": "H2 2026", "note": "Dose/regimen selected via End-of-Phase 2 FDA meeting", "est": "Contingent on license resolution + financing", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -70, "price": 0.25 },
+    { "label": "Base", "color": "yellow", "pct": 100, "price": 1.68 },
+    { "label": "Bull", "color": "green", "pct": 280, "price": 3.19 },
+    { "label": "Moon", "color": "purple", "pct": 520, "price": 5.21 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (8 analysts)", "target": 5.21, "rating": "Buy" },
+    { "firm": "Lucid Capital", "target": 4.00, "rating": "Buy" },
+    { "firm": "Craig-Hallum", "target": 2.00, "rating": "Hold", "note": "Downgraded — real bearish counterpoint reflecting the license dispute risk" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed holds at 3.50–3.75%, but new Chair Warsh's hawkish tone has 9 of 18 officials projecting a further 2026 hike, with the next FOMC decision Jul 28–29, 2026.",
+    "inflationNote": "Core inflation remains above target and the 10-year yield sits near 4.48% — a real headwind for a going-concern nano-cap that will need more capital to fund a Phase 3 trial even in the good scenario.",
+    "sectorImpact": "The license dispute and clinical catalysts are entirely idiosyncratic and macro-independent, but the financing risk compounds in a high-rate environment — any future raise gets more dilutive, not less.",
+    "summary": "MEDIUM for the core catalysts (litigation outcome, clinical data), HIGH for the financing overlay — a hawkish Jul 28-29 FOMC doesn't change the license dispute outcome, but it worsens the terms of any capital raise this company will likely need regardless of how the dispute resolves."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 0.84, "note": "Current price — near the 52-week low, already below the Jul 15 raise price", "timing": "Scale in (tiny)" },
+      { "label": "Entry 2", "level": 0.65, "rangeMax": 0.75, "note": "Below the 52-week low — best R/R if litigation headlines drive further weakness", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 0.45, "note": "Deep capitulation — only on adverse litigation news or a financing crisis", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 1.68, "pct": 100.0, "note": "Base — license dispute resolves neutrally or drags on without resolution, clinical data narrative regains some credit" },
+    "tp2": { "price": 3.19, "pct": 280.0, "note": "Bull — license dispute resolves in Cardiff's favor, Phase 3 funding path becomes clearer" },
+    "tp3": { "price": 5.21, "pct": 520.0, "note": "Moon — clean license win + Phase 3 initiated + full analyst consensus reached", "moon": true },
+    "stopLoss": {
+      "tight": 0.60, "tightPct": -28.6, "tightNote": "Below the 52-week low — thesis-neutral but momentum breaking down on litigation risk",
+      "hard": 0.35, "hardPct": -58.3, "hardNote": "Risk-of-zero territory — adverse license ruling or bankruptcy-adjacent financing event",
+      "riskReward": "6.8 : 1", "rrNote": "From Entry 2 ($0.70 mid) tight stop vs TP2", "rrWarning": "Asymmetric ✅ but the Nerviano dispute is existential, not routine biotech risk — 2% max position"
+    },
+    "verdict": "ค่าขนม — tiny position only. The clinical data is genuinely strong, but the license-termination threat means this stock's fate hinges on litigation, not just trial results. Position for total loss.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "regulatory_approval",
+    "preRunup": "Clinical-stage nano-caps with pending litigation or license risk typically trade heavy and range-bound rather than running up ahead of resolution — CRDF's post-ASCO-data decline (despite genuinely positive results) reflects the license overhang dominating sentiment over the science.",
+    "preRunupTiming": "minimal pre-event runup; litigation and data catalysts both move the stock discretely on news",
+    "preRunupPct": "0% to +10% pre-event drift; frequently negative into binary events given the license overhang",
+    "postWin": {
+      "avgPct": 200,
+      "range": "+50% to +349%",
+      "note": "Small-cap oncology names on positive Phase 2 combination-therapy data have posted moves as large as +349% (Five Prime Therapeutics on mid-stage cancer data) — directly comparable to CRDF's own ASCO 2026 readout genre, though CRDF's own stock has not yet captured this upside due to the license overhang.",
+      "exampleDate": "historical small-cap Phase 2 precedent"
+    },
+    "postLose": {
+      "avgPct": -55,
+      "range": "-30% to -80%",
+      "note": "A biotech losing its core licensed asset in litigation is one of the most severe outcomes in the sector — comparable to a Complete Response Letter in severity (typically -40% to -80% for small caps), since it removes the entire investment thesis rather than delaying it.",
+      "exampleDate": "general small-cap biotech litigation/CRL pattern"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "Going-concern nano-cap with an existential license dispute layered on top of standard binary clinical risk — 2% caps the downside to a tolerable level given the real possibility of the stock going to near-zero."
+    },
+    "stopPreCatalyst": { "pct": -29, "price": 0.60, "note": "Below the 52-week low — thesis-neutral but a real warning sign of litigation-driven capitulation" },
+    "stopPostCatalyst": { "pct": -50, "note": "An adverse ruling in the Nerviano dispute, or a forced bankruptcy-adjacent financing, ends the thesis entirely — exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "FPRX",
+      "event": "Five Prime Therapeutics — positive mid-stage combination cancer therapy data",
+      "date": "historical",
+      "movePct": 349,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-genre precedent for the scale of move possible on strong Phase 2 combination-therapy oncology data — directly relevant to CRDF's own recent onvansertib readout, though the license risk has so far suppressed a similar re-rate here."
+    },
+    {
+      "ticker": "CRDF",
+      "event": "Jul 15, 2026 dilutive $10M registered direct offering at $1.05, priced below the stock's prior levels",
+      "date": "Jul 2026",
+      "movePct": -20,
+      "days": 7,
+      "outcome": "bad",
+      "note": "Same-company precedent showing how the going-concern/financing overhang compounds the license-dispute risk — the stock is now trading below the raise price."
+    }
+  ],
+  "sources": [
+    "https://www.globenewswire.com/news-release/2026/06/02/3305287/0/en/cardiff-oncology-announces-presentation-of-positive-results-from-its-randomized-controlled-phase-2-trial-of-onvansertib-in-first-line-ras-mutated-mcrc-at-the-2026-asco-annual-meeti.html",
+    "https://www.globenewswire.com/news-release/2026/07/15/3327673/0/en/Cardiff-Oncology-Announces-10-Million-Registered-Direct-Offering.html",
+    "https://www.investing.com/news/analyst-ratings/td-cowen-downgrades-cardiff-oncology-stock-rating-on-license-dispute-93CH-4718706",
+    "https://www.stocktitan.net/news/CRDF/cardiff-oncology-reports-first-quarter-2026-results-and-provides-9bl1kkgz5tci.html",
+    "https://stockanalysis.com/stocks/crdf/",
+    "https://stockanalysis.com/stocks/crdf/forecast/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Cardiff Oncology เพิ่งรายงานข้อมูล Phase 2 บวกจริง — onvansertib + FOLFIRI/bevacizumab ได้ confirmed ORR 72.2% เทียบ 42.1% ของ standard-of-care ในมะเร็งลำไส้ใหญ่ RAS-mutated แบบ first-line บรรลุ primary endpoint และผ่านประชุม End-of-Phase 2 กับ FDA เลือก dose/regimen สำหรับ Phase 3 แล้ว แต่หุ้นยังเทรดใกล้ 52-week low เพราะปัญหาจริงสองอย่าง — going-concern disclosure (เงินสดพอถึง Q1 2027 เท่านั้น) ที่บังคับให้ต้องระดมทุน $10M เมื่อ 15 ก.ค. และปัญหาใหญ่กว่าคือ Nerviano Medical Sciences เจ้าของสิทธิ์เดิมของ onvansertib กำลังพยายามยกเลิกสัญญา license ⚠️ SURVIVAL: นี่ไม่ใช่แค่ปัญหาเงินสด — ถ้า Nerviano ชนะ Cardiff จะเสียทรัพย์สินหลักเพียงหนึ่งเดียวไม่ว่าข้อมูล Phase 2 จะดีแค่ไหน TD Cowen downgrade เพราะเหตุผลนี้โดยเฉพาะ เป้าเฉลี่ยนักวิเคราะห์ 8 คน $5.21 (+520%) สะท้อนข้อมูล clinical แต่ไม่ได้แก้ปัญหา license risk ควร size แบบ extreme เท่านั้น",
+      "priceNote": "ราคา $0.84 เหนือ 52-week low ($0.82) เล็กน้อย ห่างจากจุดสูงสุด $4.52 มาก — ถูกกดจากการระดมทุน dilutive $10M ล่าสุด (ราคา $1.05 ตอนนี้ต่ำกว่านั้นแล้ว) และข้อพิพาท license แม้ข้อมูล clinical จะดีจริง",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "ผลข้อพิพาท License กับ Nerviano", "description": "Nerviano ผู้คิดค้น onvansertib กล่าวหา Cardiff ผิดสัญญา license และพยายามยกเลิก Cardiff ไม่เห็นด้วยและฟ้องกลับ — ผลจะเป็นตัวแปรใหญ่สุดของหุ้นตอนนี้ ใหญ่กว่าข้อมูล clinical ด้วยซ้ำ" },
+        { "name": "เริ่ม Phase 3 Trial", "description": "หลังข้อมูล Phase 2 บวก (72.2% vs 42.1% ORR) และเลือก dose/regimen ผ่านประชุม FDA แล้ว วางแผนเริ่ม Phase 3 — ขึ้นกับการแก้ปัญหา license และเงินทุนเพิ่ม" }
+      ],
+      "risks": [
+        "⚠️ SURVIVAL: Cardiff เปิดเผยข้อสงสัยจริงเรื่อง going concern เงินสด $46.1M ณ Q1 2026 burn ~$12.3M/ไตรมาส พอถึง Q1 2027 เท่านั้นแม้หลังระดมทุน 15 ก.ค. เป็นความเสี่ยงการเงินจริงระยะใกล้ ไม่ใช่ boilerplate",
+        "ข้อพิพาท license กับ Nerviano คือความเสี่ยงใหญ่สุดของหุ้นนี้ — ถ้า Nerviano ชนะ Cardiff เสียสิทธิ์ onvansertib ทรัพย์สิน clinical เดียวที่มี ไม่ว่าข้อมูล Phase 2 จะดีแค่ไหน TD Cowen downgrade เพราะเหตุผลนี้โดยเฉพาะ",
+        "การระดมทุน $10M วันที่ 15 ก.ค. 2026 ราคา $1.05 — ตอนนี้หุ้นเทรดต่ำกว่าราคาระดมทุนแล้ว ($0.84) สะท้อน sentiment อ่อนแอจริงจากนักลงทุนสถาบันที่เพิ่งเข้าซื้อ",
+        "Nano-cap ($57.4M) ผันผวนสูงมาก (52-week range $0.82-$4.52 ห่างกัน 5.5 เท่า) สภาพคล่องบาง spread กว้าง เป็นความเสี่ยงด้าน execution จริง",
+        "Phase 3 trial ต้องใช้ทุนจำนวนมากที่ Cardiff ยังไม่มี แม้ผล license จะออกมาดีก็ไม่รับประกันว่าจะมีทุนพอทำ confirmatory trial"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% แต่ประธาน Warsh สายเหยี่ยว 9/18 คนมองขึ้นดอกเบี้ยอีกในปี 2026 FOMC ถัดไป 28-29 ก.ค. 2026",
+        "inflationNote": "เงินเฟ้อ core ยังสูงกว่าเป้า yield 10 ปีใกล้ 4.48% เป็นแรงกดดันจริงสำหรับ nano-cap going-concern ที่ต้องการทุนเพิ่มสำหรับ Phase 3 แม้ในกรณีดี",
+        "sectorImpact": "Catalyst หลัก (ผลคดีความ ข้อมูล clinical) เป็นเรื่องเฉพาะตัวไม่ผูกกับ macro แต่ความเสี่ยงการเงินซ้อนทับหนักขึ้นในสภาพแวดล้อมดอกเบี้ยสูง — การระดมทุนครั้งต่อไปจะ dilute หนักกว่าเดิม",
+        "summary": "ความเสี่ยง Fed ระดับกลางสำหรับ catalyst หลัก (ผลคดีความ ข้อมูล clinical) แต่สูงสำหรับภาพรวมการเงิน — FOMC 28-29 ก.ค. ที่ hawkish ไม่เปลี่ยนผลคดี Nerviano แต่ทำให้เงื่อนไขการระดมทุนที่บริษัทนี้น่าจะต้องทำไม่ว่าผลคดีจะเป็นอย่างไรแย่ลง"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม — size เล็กมากที่สุดเท่านั้น ข้อมูล clinical ดีจริง แต่ภัยคุกคามยกเลิก license หมายความว่าชะตาหุ้นนี้ขึ้นกับผลคดีความ ไม่ใช่แค่ผลการทดลอง เตรียมใจขาดทุนเต็มจำนวน",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ใกล้ 52-week low ต่ำกว่าราคาระดมทุน 15 ก.ค. แล้ว", "timing": "Scale in (เล็กมาก)" },
+          { "note": "ต่ำกว่า 52-week low — R/R ดีที่สุดถ้าข่าวคดีความกดดันเพิ่ม", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงหนัก — เฉพาะข่าวคดีความแย่หรือวิกฤตการเงิน", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — คดีความยังไม่จบหรือจบแบบกลาง ๆ narrative ข้อมูล clinical กลับมาได้เครดิตบางส่วน" },
+        "tp2": { "note": "Bull — คดีความจบแบบ Cardiff ชนะ เส้นทางทุน Phase 3 ชัดเจนขึ้น" },
+        "tp3": { "note": "Moon — ชนะคดีชัดเจน + เริ่ม Phase 3 + แตะเป้า consensus เต็ม", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุด 52-week low — thesis ยังไม่พัง แต่ momentum เสียจากความเสี่ยงคดีความ",
+          "hardNote": "เข้าเขต risk-of-zero — ผลคดีแพ้หรือเหตุการณ์การเงินใกล้ bankruptcy",
+          "rrNote": "จาก Entry 2 ($0.70 กลาง) stop แคบ vs TP2",
+          "rrWarning": "Asymmetric ✅ แต่ข้อพิพาท Nerviano เป็นความเสี่ยง existential ไม่ใช่ความเสี่ยง biotech ปกติ — size สูงสุด 2%"
+        }
+      },
+      "estimateDates": [
+        { "event": "ข้อพิพาท License Nerviano", "note": "คดีความอยู่ระหว่างดำเนินการ ผลเป็น binary และ existential ต่อบริษัท" },
+        { "event": "เริ่ม Phase 3 Trial", "note": "เลือก dose/regimen ผ่านประชุม End-of-Phase 2 กับ FDA แล้ว ขึ้นกับผลคดีและเงินทุน" }
+      ]
+    }
+  }
+}

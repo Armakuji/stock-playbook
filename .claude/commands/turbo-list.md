@@ -59,7 +59,24 @@ Run `/turbo-list`: load `turbo-report` and use its "Step 0" + "List mode" sectio
    flagged with no offsetting story) — `topAnalystTarget`/`impliedUpside` may be a best-effort
    estimate for these, but still a real number, never `null`.
 3. Validate, `git add web/data/speculative/ web/data/near-misses.json`, commit, push once.
-4. Report the actual branch pushed. If it's not `main`, say "pushed to `<branch>` — merge to main
+4. **Refresh STALE carryovers still on the visible board.** Same pain as `/catalyst-list` Step 5:
+   the `/turbo` route shows the **top-10** (`TURBO_DISPLAY_LIMIT` in
+   `web/app/turbo/TurboContent.tsx`) of ALL speculative reports, ranked by upside — base-case %
+   primary, moon % tiebreaker (`rankTurboReports` in `web/lib/speculative.ts`) — not just the 5 you
+   screened this run. Older moonshots keep ranking high on their frozen upside numbers while their
+   report ages past 7 days and shows STALE (`ageDays >= 7` in
+   `web/app/report/[ticker]/StalenessBanner.tsx`). Because turbo ranks on upside (not catalyst
+   proximity, which naturally ages picks off the board), stale carryovers pile up worse here — a
+   run refreshing only 5 can leave most of the top-10 stale.
+   After Step 3, compute the visible board the same way the page does —
+   `rankTurboReports(getAllSpeculativeReports())`, take the top 10 — and for **every ticker in that
+   top-10 that is NOT one of the 5 you just wrote AND whose latest report is >=7 days old**, re-run
+   the single-ticker `/analyze-turbo` flow (`turbo-report` skill: fresh research -> new
+   `web/data/speculative/<TICKER>_<today>.json`). Print the list first (e.g. `refreshing STALE turbo
+   top-10 carryovers: INO SOUN AREC FLY BTBT SERV PDYN`). Validate + commit + push these together
+   with (or right after) the 5. Goal: the entire visible top-10 is fresh. If none is stale, print
+   `turbo top-10 carryovers all fresh - none to refresh`.
+5. Report the actual branch pushed. If it's not `main`, say "pushed to `<branch>` — merge to main
    to deploy", never "Vercel deploying". Visible at `/turbo` once on `main`.
 
 No market-timing step — that's `/macro`-only.

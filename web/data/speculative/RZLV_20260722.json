@@ -1,0 +1,190 @@
+{
+  "ticker": "RZLV",
+  "companyName": "Rezolve AI PLC",
+  "companyDescription": "Agentic AI commerce platform · TCS global reseller partnership · guiding to $360M 2026 revenue (~2x prior Street expectations) · fully funded, trading 72% below its 52-week high",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-22T00:00:00.000Z",
+  "price": 2.39,
+  "priceChange": 4.37,
+  "priceNote": "Self-fetched today (no live-prices.json cache yet). Up 4.37% Jul 21, but still down roughly 72% from the 52-week high ($8.45) after a sharp drawdown earlier in 2026 — the stock is a self-described 'short-squeeze setup' where operational execution, not the growth story itself, has been the market's main doubt.",
+  "marketCap": "$953M",
+  "sector": "Technology / AI Software (Agentic Commerce)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Moonshot",
+  "score": 61,
+  "summary": "Rezolve AI is guiding to $360M in 2026 revenue — roughly double what the Street was modeling before the raise — and targeting a $500M+ ARR exit rate by December, backed by a global reseller partnership with Tata Consultancy Services and 950+ enterprise customers. Unlike most names in this screen, the company says it's fully funded with $750M+ in total capital raised and 'zero requirement for additional operational equity' — a real, unusual survival advantage for a speculative small-cap. 5 analysts unanimously rate it Buy/Strong Buy with a $10.50 average target (+339% from here), with no Hold or Sell dragging the number down. The catch: the stock has already fallen ~72% from its high on execution doubts even as the growth guidance kept rising — this is a name where the market needs to see the guided numbers actually show up in reported results, starting with the Oct 7, 2026 earnings report.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3/FY26 Earnings Report",
+      "description": "Rezolve's next scheduled earnings report, where the market will look for confirmation that the $360M 2026 revenue guide and the TCS partnership ramp are translating into actual reported numbers, not just forward guidance.",
+      "urgencyLabel": "~2.5 MONTHS",
+      "dateBadge": "Oct 7, 2026",
+      "catalystDate": "2026-10-07",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🤝",
+      "name": "TCS Global Reseller Partnership Ramp",
+      "description": "Tata Consultancy Services will resell Rezolve's AI-powered commerce platform to its enterprise client base worldwide — an ongoing distribution catalyst that could materially accelerate the path to the $500M+ ARR exit target if early deal flow shows up.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "💰",
+      "name": "$300M Buyback Authorization",
+      "description": "Shareholders approved a capital reduction and share repurchase authority for a buyback program of up to $300M — a real, board-approved catalyst that could provide a technical floor under the stock if management begins executing it at current depressed levels.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "The stock has already fallen ~72% from its 52-week high despite the growth guidance rising, not falling — this is a real credibility gap the market has priced in, and Oct 7 earnings need to close it, not just repeat the guidance",
+    "Aggressive growth guidance ($360M revenue, nearly 10x prior year) from a company with a history of large swings carries real execution risk — a miss or even an in-line-but-unconvincing print could extend the drawdown",
+    "5-analyst coverage, while unanimously bullish, is thin relative to larger-cap software names — the $10.50 average has less statistical robustness than broader coverage would provide",
+    "Foreign private issuer (UK-domiciled, PLC structure) files 6-Ks rather than standard 10-Qs, which can mean less frequent and less granular US-style quarterly disclosure",
+    "Even with the balance sheet fully funded, a stock that's already fallen 72% from its highs can keep falling further on pure sentiment if the market doesn't believe the guidance regardless of the cash position"
+  ],
+  "estimateDates": [
+    { "event": "Q3/FY26 Earnings", "dateRange": "Oct 7, 2026", "note": "Needs to show the $360M revenue guide converting into reported results, not just forward targets", "est": "Guidance reaffirmation expected; beat needed to rebuild credibility", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -40, "price": 1.43 },
+    { "label": "Base", "color": "yellow", "pct": 100, "price": 4.78 },
+    { "label": "Bull", "color": "green", "pct": 235, "price": 8.00 },
+    { "label": "Moon", "color": "purple", "pct": 339, "price": 10.50 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (5 analysts)", "target": 10.50, "rating": "Strong Buy" },
+    { "firm": "Maxim Group", "target": 15.00, "rating": "Buy" },
+    { "firm": "H.C. Wainwright", "target": 12.00, "rating": "Buy" },
+    { "firm": "Roth MKM", "target": 9.50, "rating": "Buy" },
+    { "firm": "Cantor Fitzgerald", "target": 8.00, "rating": "Buy" },
+    { "firm": "Northland Securities", "target": 7.00, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed holds at 3.50–3.75%, but new Chair Warsh's hawkish tone has 9 of 18 officials projecting a further 2026 hike, with the next FOMC decision Jul 28–29, 2026.",
+    "inflationNote": "Core inflation remains above target and the 10-year yield sits near 4.48% — a headwind for unprofitable growth software names generally, though Rezolve's fully-funded balance sheet blunts the financing-risk channel that hits most names in this screen.",
+    "sectorImpact": "As a high-growth, pre-durable-profitability software name, RZLV is rate-sensitive on the valuation-multiple side even without a financing overhang — higher-for-longer compresses what the market will pay for the growth story regardless of cash position.",
+    "summary": "MEDIUM — the balance sheet strength ($750M+ raised, no near-term financing need) meaningfully reduces this name's macro fragility relative to the other picks in this screen, but a hawkish Jul 28-29 FOMC surprise would still compress the multiple the market assigns to the growth guidance."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 2.39, "note": "Current price — up 4.4% today, still 72% below the 52-week high", "timing": "Scale in (small)" },
+      { "label": "Entry 2", "level": 2.05, "rangeMax": 2.20, "note": "Near the 52-week low ($2.05) — best R/R if execution doubts persist into earnings", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 1.60, "note": "Deep capitulation — only on a broad small-cap AI-software selloff or a specific guidance miss", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 4.78, "pct": 100.0, "note": "Base — Oct 7 print in-line, market gives back some of the credibility discount" },
+    "tp2": { "price": 8.00, "pct": 235.0, "note": "Bull — clean beat confirms the $360M guide is real, TCS partnership shows early traction" },
+    "tp3": { "price": 10.50, "pct": 339.0, "note": "Moon — beat + ARR trajectory toward $500M+ confirmed, hits full analyst consensus", "moon": true },
+    "stopLoss": {
+      "tight": 1.85, "tightPct": -22.6, "tightNote": "Below the 52-week low — thesis-neutral but momentum breaking down further",
+      "hard": 1.30, "hardPct": -45.6, "hardNote": "Deep breach — a guidance cut or credibility-destroying miss at the Oct 7 print",
+      "riskReward": "13.6 : 1", "rrNote": "From Entry 2 ($2.13 mid) tight stop vs TP2", "rrWarning": "High R/R but real execution-credibility risk given the prior 72% drawdown — size for volatility"
+    },
+    "verdict": "ค่าขนม / Moonshot — small position now on the balance-sheet-strength and TCS-partnership story, add on a dip toward $2.05-2.20 ahead of the Oct 7 earnings credibility test.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Small-cap AI-software names with a credibility gap (guidance rising while the stock falls) tend to stay range-bound into the confirming earnings print rather than running up beforehand — consistent with RZLV's current position near its 52-week low ahead of the Oct 7 report.",
+    "preRunupTiming": "minimal pre-earnings runup; the move is expected to happen on the print itself",
+    "preRunupPct": "0% to +10% pre-event drift",
+    "postWin": {
+      "avgPct": 60,
+      "range": "+20% to +150%",
+      "note": "Agentic-AI/commerce software names with confirmed partnership-driven revenue beats have posted Wall Street targets implying up to +107% in the broader sector; a company-specific credibility-rebuilding beat after a 72% drawdown (as RZLV would represent) tends to produce an outsized relief-rally reaction on top of that baseline.",
+      "exampleDate": "2026 sector pattern"
+    },
+    "postLose": {
+      "avgPct": -35,
+      "range": "-20% to -67%",
+      "note": "RZLV's own stock has already fallen as much as 67% from its highs in 2026 on execution/credibility doubts even without a confirmed guidance miss — a real, same-company precedent for how far this stock can fall if the Oct 7 print disappoints.",
+      "exampleDate": "H1 2026 (RZLV)"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "Fully-funded balance sheet meaningfully reduces the survival risk relative to other picks in this screen, but the real execution-credibility gap justifies keeping sizing at the moonshot ceiling rather than a core-lane allocation."
+    },
+    "stopPreCatalyst": { "pct": -23, "price": 1.85, "note": "Below the 52-week low ahead of the Oct 7 print — thesis-neutral but momentum breaking down further" },
+    "stopPostCatalyst": { "pct": -35, "note": "A guidance cut or a miss that reads as confirming the market's execution doubts would break the thesis — exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "RZLV",
+      "event": "Stock's ~67-72% drawdown from 52-week high despite rising revenue guidance",
+      "date": "H1 2026",
+      "movePct": -70,
+      "days": 180,
+      "outcome": "bad",
+      "note": "Same-company precedent for the credibility gap this stock carries into the Oct 7 print — the market has punished the stock even as the underlying growth numbers improved."
+    },
+    {
+      "ticker": "sector",
+      "event": "Agentic AI/commerce software — Wall Street target upside on confirmed partnership-driven growth",
+      "date": "2026",
+      "movePct": 107,
+      "days": 365,
+      "outcome": "good",
+      "note": "Broader agentic-AI software sector comparable showing real analyst-backed upside potential when partnership-driven revenue growth is confirmed — a baseline for RZLV's Bull case, though RZLV's own analyst targets go further given the TCS-specific catalyst."
+    }
+  ],
+  "sources": [
+    "https://www.globenewswire.com/news-release/2026/03/30/3264574/0/en/Rezolve-Ai-Delivers-543-H2-Growth-Raises-2026-Revenue-Guidance-to-360M-as-Platform-Achieves-Global-Infrastructure-Scale.html",
+    "https://www.investing.com/news/company-news/rezolve-ai-reaffirms-360m-revenue-guidance-for-fy26-93CH-4719243",
+    "https://blog.mexc.com/finance/rzlv-stock-forecast-2026-rezolve-ai-recover-67-drawdown-360m-revenue-guide/",
+    "https://stockanalysis.com/stocks/rzlv/",
+    "https://stockanalysis.com/stocks/rzlv/forecast/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Rezolve AI guide รายได้ปี 2026 ที่ $360M — เกือบเท่าตัวของที่ Street เคยประเมินไว้ก่อนหน้า และตั้งเป้า ARR exit rate $500M+ ภายในธ.ค. หนุนด้วยพาร์ทเนอร์ reseller ระดับโลกกับ Tata Consultancy Services และลูกค้า enterprise 950+ ราย ต่างจากหุ้นส่วนใหญ่ในการคัดรอบนี้ บริษัทบอกว่า fully funded ด้วยทุนรวม $750M+ และ 'ไม่ต้องการทุนดำเนินงานเพิ่ม' — เป็นข้อได้เปรียบด้าน survival ที่แท้จริงและหาไม่ได้ง่ายสำหรับ small-cap เก็งกำไร นักวิเคราะห์ 5 คน Buy/Strong Buy เป็นเอกฉันท์ เป้าเฉลี่ย $10.50 (+339% จากราคานี้) ไม่มี Hold หรือ Sell ฉุดตัวเลขลง จุดที่ต้องระวัง: หุ้นร่วงมาแล้ว ~72% จากจุดสูงสุดจากความสงสัยด้าน execution แม้ guidance การเติบโตจะปรับขึ้นต่อเนื่อง — เป็นหุ้นที่ตลาดต้องเห็นตัวเลขที่ guide ไว้ปรากฏจริงในผลประกอบการ เริ่มจากรายงานผล 7 ต.ค. 2026",
+      "priceNote": "ขึ้น 4.37% (21 ก.ค.) แต่ยังห่างจาก 52-week high ($8.45) ถึง ~72% หลังร่วงหนักต้นปี 2026 — เป็นหุ้นที่ถูกมองว่ามี short-squeeze setup โดยที่ execution ไม่ใช่ตัว growth story เองคือข้อกังขาหลักของตลาด",
+      "scoreLabel": "Moonshot",
+      "catalysts": [
+        { "name": "รายงานผลประกอบการ Q3/FY26", "description": "ตลาดต้องการเห็น guide รายได้ $360M ปี 2026 และการขยาย partnership TCS แปลงเป็นตัวเลขจริง ไม่ใช่แค่ guidance ล่วงหน้า" },
+        { "name": "ขยาย Partnership Reseller กับ TCS", "description": "Tata Consultancy Services จะขาย platform AI commerce ของ Rezolve ให้ลูกค้า enterprise ทั่วโลก — catalyst ต่อเนื่องที่อาจเร่งเส้นทางสู่เป้า ARR $500M+" },
+        { "name": "อนุมัติ Buyback $300M", "description": "ผู้ถือหุ้นอนุมัติโปรแกรม buyback สูงสุด $300M — catalyst จริงที่บอร์ดอนุมัติแล้ว อาจสร้างพื้นราคาทางเทคนิคถ้าเริ่มดำเนินการที่ราคาต่ำตอนนี้" }
+      ],
+      "risks": [
+        "หุ้นร่วงมาแล้ว ~72% จาก 52-week high แม้ growth guidance จะปรับขึ้น ไม่ใช่ลง — เป็นช่องว่างด้าน credibility จริงที่ตลาด price in ไว้ ผลประกอบการ 7 ต.ค. ต้องปิดช่องว่างนี้ ไม่ใช่แค่พูด guidance ซ้ำ",
+        "Guidance การเติบโตที่ aggressive ($360M รายได้ เกือบ 10 เท่าปีก่อน) จากบริษัทที่มีประวัติแกว่งตัวแรง มีความเสี่ยง execution จริง — พลาดเป้าหรือแม้แต่ตัวเลขตามคาดแต่ไม่น่าเชื่อถือพออาจยืดการร่วงต่อ",
+        "นักวิเคราะห์คุม 5 คน แม้ bullish เป็นเอกฉันท์ แต่ถือว่าบางเทียบหุ้น software cap ใหญ่กว่า — เป้าเฉลี่ย $10.50 มีความน่าเชื่อถือทางสถิติน้อยกว่า coverage กว้างกว่า",
+        "เป็น foreign private issuer (จดทะเบียนสหราชอาณาจักร โครงสร้าง PLC) ยื่น 6-K แทน 10-Q มาตรฐานสหรัฐฯ อาจหมายถึงการเปิดเผยข้อมูลรายไตรมาสที่ถี่และละเอียดน้อยกว่า",
+        "แม้งบดุล fully funded หุ้นที่ร่วงมาแล้ว 72% จากจุดสูงสุดยังร่วงต่อได้จาก sentiment ล้วน ๆ ถ้าตลาดไม่เชื่อ guidance ไม่ว่าสถานะเงินสดจะเป็นอย่างไร"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% แต่ประธาน Warsh สายเหยี่ยว 9/18 คนมองขึ้นดอกเบี้ยอีกในปี 2026 FOMC ถัดไป 28-29 ก.ค. 2026",
+        "inflationNote": "เงินเฟ้อ core ยังสูงกว่าเป้า yield 10 ปีใกล้ 4.48% เป็นแรงกดดันต่อหุ้น software growth ที่ยังไม่กำไรทั่วไป แม้งบดุลของ Rezolve ที่แข็งแรงจะลดความเสี่ยงด้านการเงินลง",
+        "sectorImpact": "ในฐานะหุ้น software growth สูงที่ยังไม่ทำกำไรยั่งยืน RZLV sensitive ต่อดอกเบี้ยด้าน valuation multiple แม้ไม่มีความเสี่ยงด้านการเงิน — higher-for-longer กด multiple ที่ตลาดยอมจ่ายให้ growth story ไม่ว่าสถานะเงินสดจะเป็นอย่างไร",
+        "summary": "ความเสี่ยง Fed ระดับกลาง — งบดุลที่แข็งแรง ($750M+ ระดมทุนแล้ว ไม่ต้องการทุนเพิ่มระยะใกล้) ลดความเปราะบางด้าน macro เทียบหุ้นอื่นในการคัดรอบนี้ได้จริง แต่ FOMC 28-29 ก.ค. ที่ hawkish ยังกด multiple ที่ตลาดให้กับ growth guidance ได้"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม / Moonshot — เข้าไม้เล็กตอนนี้ตามเรื่องงบดุลแข็งแรงและ partnership TCS เพิ่ม size ถ้าย่อมาโซน $2.05-2.20 ก่อนการทดสอบ credibility ที่ผลประกอบการ 7 ต.ค.",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ขึ้น 4.4% วันนี้ ยังห่างจาก 52-week high 72%", "timing": "Scale in (เล็ก)" },
+          { "note": "ใกล้ 52-week low ($2.05) — R/R ดีที่สุดถ้าความสงสัย execution ยังอยู่ก่อนประกาศผล", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงหนัก — เฉพาะกรณี small-cap AI software เทขายรวมหรือพลาด guidance เฉพาะตัว", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — ผลประกอบการ 7 ต.ค. ตามคาด ตลาดคืน credibility discount บางส่วน" },
+        "tp2": { "note": "Bull — beat ชัดเจนยืนยัน guide $360M จริง TCS partnership เริ่มเห็นผล" },
+        "tp3": { "note": "Moon — beat + เส้นทาง ARR สู่ $500M+ ยืนยัน แตะเป้า consensus เต็ม", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุด 52-week low — thesis ยังไม่พัง แต่ momentum เสียเพิ่ม",
+          "hardNote": "หลุดลึก — ปรับลด guidance หรือพลาดเป้าแบบทำลาย credibility ที่ผลประกอบการ 7 ต.ค.",
+          "rrNote": "จาก Entry 2 ($2.13 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R สูงแต่มีความเสี่ยง execution-credibility จริงจากการร่วง 72% ก่อนหน้า — size ให้เหมาะกับความผันผวน"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q3/FY26", "note": "ต้องโชว์ guide รายได้ $360M แปลงเป็นผลจริง ไม่ใช่แค่เป้าล่วงหน้า" }
+      ]
+    }
+  }
+}

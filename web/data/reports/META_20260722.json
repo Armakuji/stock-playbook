@@ -1,0 +1,178 @@
+{
+  "ticker": "META",
+  "companyName": "Meta Platforms, Inc.",
+  "companyDescription": "Social media + AI infrastructure buildout · $125-145B 2026 AI capex guide · stock has shown it can fall on a beat if capex spooks the market",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-22T18:00:00.000Z",
+  "price": 629.01,
+  "priceChange": -2.30,
+  "priceNote": "Self-fetched today (no live-prices.json cache yet). Down 2.30% today, roughly 21% below the 52-week high ($796.25), heading into next Wednesday's (Jul 29) Q2 earnings — the same day as the FOMC decision.",
+  "marketCap": "$1.60T",
+  "sector": "Technology / Social Media & AI Infrastructure",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 77,
+  "summary": "Meta reports Q2 2026 earnings next Wednesday, Jul 29 — the same day as the FOMC decision, guiding to $58-61B revenue with consensus at $60.18B and $7.18 EPS. The pattern investors need to know: Meta's Q1 2026 print beat EPS estimates by 57% ($10.44 vs. $6.66 consensus) and revenue grew 33% YoY, yet the stock fell 9-10% because management raised 2026 AI capex to $125-145B and announced ~8,000 job cuts to fund it. By contrast, the Q4 2025 beat (clean, no capex surprise) drove a 10%+ pop. 63-72 analysts average $822-843 (+31-34% from here), Strong Buy — real broad conviction that the AI-capex spend eventually pays off, but the stock's own recent history proves a beat alone is not enough if the capex number spooks the market again.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "Reports Wednesday, Jul 29, 2026 after market close — the same day as the FOMC decision. Guidance is $58-61B revenue (consensus $60.18B), EPS consensus $7.18. The capex commentary matters more than the headline beat given the Q1 2026 precedent.",
+      "urgencyLabel": "~1 WEEK",
+      "dateBadge": "Jul 29, 2026",
+      "catalystDate": "2026-07-29",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "🤖",
+      "name": "2026 AI Capex Trajectory",
+      "description": "Meta already raised its 2026 capex guide to $125-145B (from $115-135B) at the Q1 2026 print. The market will be watching whether this number moves again on Jul 29 — a further raise without a clearer ROI story is the single biggest risk to the stock's reaction, based on the Q1 precedent.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Meta's own Q1 2026 print is the clearest possible warning: a 57% EPS beat and 33% revenue growth still produced a 9-10% single-day decline because of the capex raise + layoff announcement — a strong Jul 29 headline beat alone does not guarantee a positive reaction",
+    "The FOMC decision lands the same day as this earnings report — a hawkish Fed surprise could compound with any capex-driven selloff rather than trading independently",
+    "$125-145B in annual capex is an enormous sum even for a company Meta's size — the market's patience for 'trust the ROI eventually shows up' is not unlimited, as Q1's reaction demonstrated",
+    "Down ~21% from the 52-week high already — some of the market's capex skepticism from Q1 appears to still be reflected in the stock",
+    "63-72 analyst consensus of $822-843 implies a large gap to close — a lot of AI-monetization progress needs to show up in the numbers to justify that move"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Jul 29, 2026", "note": "Same day as FOMC decision — capex commentary is the key risk given the Q1 2026 precedent", "est": "Revenue $58-61B guided, consensus $60.18B / $7.18 EPS", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -20, "price": 503.21 },
+    { "label": "Base", "color": "yellow", "pct": 15, "price": 723.36 },
+    { "label": "Bull", "color": "green", "pct": 30.8, "price": 822.69 },
+    { "label": "Moon", "color": "purple", "pct": 46, "price": 918.35 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (63 analysts, S&P Global)", "target": 822.69, "rating": "Strong Buy" },
+    { "firm": "Consensus (72 analysts, alt. source)", "target": 842.85, "rating": "Strong Buy" },
+    { "firm": "24/7 Wall St.", "target": 892.70, "rating": "Buy" },
+    { "firm": "Conservative counterpoint", "target": 700.00, "rating": "n/a", "note": "A more cautious 24/7 Wall St target reflecting capex-ROI skepticism, still implies real upside" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed holds at 3.50–3.75%, but new Chair Warsh's hawkish tone has 9 of 18 officials projecting a further 2026 hike, with the next FOMC decision landing Jul 29, 2026 — the SAME DAY as Meta's earnings.",
+    "inflationNote": "Core inflation remains above target and the 10-year yield sits near 4.48% — a headwind for high-multiple AI-capex-heavy names.",
+    "sectorImpact": "Meta's massive capex program makes it sensitive to the cost-of-capital environment on top of the pure sentiment/valuation-multiple channel most AI names face — a hawkish Fed surprise the same day as earnings would compound both risks simultaneously.",
+    "summary": "MEDIUM-HIGH specifically because of the same-day timing — the FOMC decision and Meta's own capex-sensitive earnings report landing Jul 29 together means either one going wrong amplifies the other, a genuinely unusual and elevated risk concentration."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 629.01, "note": "Current price — ~21% below the 52-week high heading into next week's earnings/FOMC combo", "timing": "Now (moderate)" },
+      { "label": "Entry 2", "level": 560.00, "rangeMax": 590.00, "note": "Post-earnings dip zone if capex commentary spooks the market again (Q1 2026 playbook)", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 500.00, "note": "Near the Bear scenario — only on a genuinely bad combined earnings/FOMC week", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 723.36, "pct": 15.0, "note": "Base — clean beat, capex guide holds steady rather than raising again" },
+    "tp2": { "price": 822.69, "pct": 30.8, "note": "Bull — beat + capex story gains credibility (AI monetization showing through), hits consensus target" },
+    "tp3": { "price": 918.35, "pct": 46.0, "note": "Moon — AI/cloud compute offering emerges as a real new revenue line, re-rate toward the high end", "moon": true },
+    "stopLoss": {
+      "tight": 550.00, "tightPct": -12.6, "tightNote": "Below the post-earnings dip zone — thesis-neutral but a Q1-style capex-driven selloff repeating",
+      "hard": 480.00, "hardPct": -23.7, "hardNote": "Deep breach — would confirm the market has genuinely lost patience with the capex story",
+      "riskReward": "4.6 : 1", "rrNote": "From Entry 2 ($575 mid) tight stop vs TP2", "rrWarning": "Good R/R but the same-day FOMC+earnings stacking Jul 29 is a real, elevated risk concentration — size accordingly"
+    },
+    "verdict": "BUY — genuine AI-infrastructure leader with broad analyst conviction, but Meta's own Q1 2026 history proves a beat isn't enough if capex spooks the market. Add on a post-earnings dip rather than chasing into Jul 29.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Meta shows limited pre-earnings runup and instead reacts sharply and immediately to the capex/guidance commentary during the call — the stock's own history shows the headline beat number is often secondary to the capex narrative.",
+    "preRunupTiming": "minimal pre-event drift; the move happens on the earnings call itself",
+    "preRunupPct": "0% to +5% pre-print drift",
+    "postWin": {
+      "avgPct": 10,
+      "range": "+5% to +12%",
+      "note": "Meta's Q4 2025 earnings (Jan 29, 2026) — a clean beat with no capex surprise — drove a 10%+ after-hours pop, the clearest same-company precedent for what a 'good' reaction looks like.",
+      "exampleDate": "Jan 2026 (META)"
+    },
+    "postLose": {
+      "avgPct": -9.5,
+      "range": "-8% to -10%",
+      "note": "Meta's Q1 2026 earnings (Apr 30, 2026) beat EPS estimates by 57% and grew revenue 33% YoY, yet the stock fell 9-10% after-hours purely on the capex raise to $125-145B and ~8,000 planned job cuts — the single most important same-company precedent for Jul 29's risk.",
+      "exampleDate": "Apr 2026 (META)"
+    },
+    "spotSizing": {
+      "pct": 8,
+      "reason": "Mega-cap ($1.60T) with broad analyst conviction, but the demonstrated capex-driven volatility plus the same-day FOMC stacking on Jul 29 argue for a moderate, not maximum, core-lane position size."
+    },
+    "stopPreCatalyst": { "pct": -13, "price": 550.00, "note": "Below the post-earnings dip zone ahead of Jul 29 — thesis-neutral but a repeat of the Q1 pattern" },
+    "stopPostCatalyst": { "pct": -15, "note": "If Jul 29 shows another capex raise without a clearer monetization story, or the FOMC delivers a hawkish surprise the same day, exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "META",
+      "event": "Q1 2026 earnings — 57% EPS beat, 33% revenue growth, but capex raised to $125-145B + ~8,000 job cuts announced",
+      "date": "Apr 2026",
+      "movePct": -9.5,
+      "days": 1,
+      "outcome": "bad",
+      "note": "The single most important same-company precedent — proves a strong beat is not sufficient protection if capex guidance spooks the market. Directly relevant to Jul 29's setup."
+    },
+    {
+      "ticker": "META",
+      "event": "Q4 2025 earnings — clean beat, no capex surprise",
+      "date": "Jan 2026",
+      "movePct": 10,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company precedent for the 'good' outcome — shows the stock does reward a clean print when capex commentary doesn't overshadow it."
+    }
+  ],
+  "sources": [
+    "https://finance.yahoo.com/technology/ai/articles/meta-platforms-spend-135-billion-215500767.html",
+    "https://www.tikr.com/blog/meta-beat-q1-2026-estimates-but-fell-8-55-heres-what-the-selloff-is-missing",
+    "https://fortune.com/2026/04/29/meta-zuckerberg-145-billion-ai-spending-roi/",
+    "https://www.financecalendar.com/event/meta-earnings-july-2026/",
+    "https://stockanalysis.com/stocks/meta/forecast/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Meta รายงานผลประกอบการ Q2 2026 พุธหน้า (29 ก.ค.) — วันเดียวกับการตัดสินใจ FOMC guide รายได้ $58-61B consensus $60.18B EPS $7.18 สิ่งที่นักลงทุนต้องรู้: ผล Q1 2026 ของ Meta beat EPS ถึง 57% ($10.44 เทียบ consensus $6.66) และรายได้โต 33% YoY แต่หุ้นร่วง 9-10% เพราะผู้บริหารปรับ capex AI ปี 2026 ขึ้นเป็น $125-145B และประกาศตัดงาน ~8,000 ตำแหน่งเพื่อหาทุน ตรงข้ามกับผล Q4 2025 (beat สะอาด ไม่มี capex surprise) ที่ดันหุ้นขึ้น 10%+ นักวิเคราะห์ 63-72 คนให้เป้าเฉลี่ย $822-843 (+31-34% จากราคานี้) Strong Buy — ความเชื่อมั่นกว้างจริงว่า AI capex spend จะคุ้มค่าในที่สุด แต่ประวัติของหุ้นเองพิสูจน์ว่า beat อย่างเดียวไม่พอถ้าตัวเลข capex ทำตลาดตกใจอีกครั้ง",
+      "priceNote": "ลง 2.30% วันนี้ ห่างจาก 52-week high ($796.25) ~21% ก่อนผลประกอบการพุธหน้า (29 ก.ค.) ซึ่งตรงกับวันตัดสินใจ FOMC พอดี",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "ผลประกอบการ Q2 2026", "description": "รายงานพุธที่ 29 ก.ค. 2026 หลังตลาดปิด — วันเดียวกับ FOMC guide รายได้ $58-61B (consensus $60.18B) EPS consensus $7.18 commentary เรื่อง capex สำคัญกว่า beat headline ตามบทเรียนจาก Q1 2026" },
+        { "name": "ทิศทาง AI Capex ปี 2026", "description": "Meta ปรับ capex ปี 2026 ขึ้นเป็น $125-145B แล้ว (จาก $115-135B) ที่ผล Q1 2026 ตลาดจะจับตาว่าตัวเลขนี้จะขยับอีกไหมวันที่ 29 ก.ค. — การปรับขึ้นอีกโดยไม่มี ROI story ชัดเจนคือความเสี่ยงใหญ่สุด" }
+      ],
+      "risks": [
+        "ผล Q1 2026 ของ Meta เองคือคำเตือนที่ชัดที่สุด — beat EPS 57% รายได้โต 33% แต่หุ้นยังร่วง 9-10% วันเดียวจากการปรับ capex ขึ้นพร้อมประกาศตัดงาน — beat แรงอย่างเดียวไม่รับประกันปฏิกิริยาบวก",
+        "การตัดสินใจ FOMC ตรงกับวันรายงานผลประกอบการนี้พอดี — Fed hawkish surprise อาจซ้อนทับกับการเทขายจาก capex แทนที่จะแยกกัน",
+        "Capex ปีละ $125-145B เป็นตัวเลขมหาศาลแม้สำหรับบริษัทขนาด Meta — ความอดทนของตลาดต่อ 'เชื่อว่า ROI จะมาในที่สุด' ไม่ไม่มีขีดจำกัด ตามที่ปฏิกิริยา Q1 แสดงให้เห็น",
+        "ห่างจาก 52-week high ไปแล้ว ~21% — ความสงสัยเรื่อง capex จาก Q1 ดูเหมือนยังสะท้อนอยู่ในราคาหุ้นบางส่วน",
+        "เป้า consensus นักวิเคราะห์ 63-72 คนที่ $822-843 หมายถึงช่องว่างใหญ่ที่ต้องปิด — ต้องมีความคืบหน้า AI monetization มากในตัวเลขจริงเพื่อพิสูจน์การเคลื่อนไหวนี้"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% แต่ประธาน Warsh สายเหยี่ยว 9/18 คนมองขึ้นดอกเบี้ยอีกในปี 2026 การตัดสินใจ FOMC ถัดไปตรงกับ 29 ก.ค. 2026 — วันเดียวกับผลประกอบการ Meta",
+        "inflationNote": "เงินเฟ้อ core ยังสูงกว่าเป้า yield 10 ปีใกล้ 4.48% เป็นแรงกดดันต่อหุ้น AI capex หนัก multiple สูง",
+        "sectorImpact": "โปรแกรม capex มหาศาลของ Meta ทำให้ sensitive ต่อสภาพแวดล้อมต้นทุนทุนซ้อนทับกับความเสี่ยง valuation multiple ที่หุ้น AI ทั่วไปเจอ — Fed hawkish surprise วันเดียวกับผลประกอบการจะซ้อนทับความเสี่ยงทั้งสองพร้อมกัน",
+        "summary": "ความเสี่ยง Fed ระดับกลาง-สูงโดยเฉพาะเพราะ timing ตรงกัน — การตัดสินใจ FOMC และผลประกอบการที่ sensitive ต่อ capex ของ Meta มาวันเดียวกัน 29 ก.ค. หมายความว่าถ้าฝั่งใดฝั่งหนึ่งออกมาแย่จะขยายผลอีกฝั่ง เป็นความเสี่ยงกระจุกตัวที่สูงผิดปกติจริง"
+      },
+      "entryStrategy": {
+        "verdict": "BUY — ผู้นำ AI infrastructure จริงที่มีความเชื่อมั่นนักวิเคราะห์กว้าง แต่ประวัติ Q1 2026 ของ Meta เองพิสูจน์ว่า beat ไม่พอถ้า capex ทำตลาดตกใจ เพิ่มหลังย่อจากผลประกอบการ ไม่ไล่ราคาก่อน 29 ก.ค.",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ห่างจาก 52-week high ~21% ก่อน earnings/FOMC สัปดาห์หน้า", "timing": "ตอนนี้ (ปานกลาง)" },
+          { "note": "โซนย่อหลังประกาศผลถ้า capex commentary ทำตลาดตกใจอีก (แบบ Q1 2026)", "timing": "ถ้าย่อ" },
+          { "note": "ใกล้ Bear scenario — เฉพาะสัปดาห์ earnings/FOMC ที่แย่จริงพร้อมกัน", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — beat ชัดเจน guide capex ทรงตัว ไม่ปรับขึ้นอีก" },
+        "tp2": { "note": "Bull — beat + story capex น่าเชื่อถือขึ้น (AI monetization เริ่มเห็นผล) แตะเป้า consensus" },
+        "tp3": { "note": "Moon — บริการ AI/cloud compute กลายเป็นสายรายได้ใหม่จริง re-rate สู่ขอบบน", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดโซนย่อหลังประกาศผล — thesis ยังไม่พัง แต่ pattern แบบ Q1 ที่ capex ทำตลาดเทขายซ้ำ",
+          "hardNote": "หลุดลึก — จะยืนยันว่าตลาดหมดความอดทนกับ story capex จริง",
+          "rrNote": "จาก Entry 2 ($575 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R ดีแต่การซ้อนทับ FOMC+earnings วันเดียวกัน 29 ก.ค. เป็นความเสี่ยงกระจุกตัวจริงที่สูง — size ให้เหมาะสม"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q2 2026", "note": "วันเดียวกับ FOMC — commentary เรื่อง capex คือความเสี่ยงหลักตามบทเรียน Q1 2026" }
+      ]
+    }
+  }
+}
