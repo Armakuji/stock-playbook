@@ -1,0 +1,166 @@
+{
+  "ticker": "INO",
+  "companyName": "Inovio Pharmaceuticals, Inc.",
+  "companyDescription": "DNA-medicines biotech · INO-3107 under FDA accelerated-approval review for recurrent respiratory papillomatosis (RRP) · PDUFA Oct 30, 2026 · cash runway extends past the catalyst",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-22T21:00:00.000Z",
+  "price": 1.07,
+  "priceChange": -2.73,
+  "priceNote": "Self-fetched today (no live-prices.json cache yet). Near the 52-week low ($1.03), down sharply from the 52-week high ($2.98), heading into the Oct 30, 2026 PDUFA decision for INO-3107.",
+  "marketCap": "$88.0M",
+  "sector": "Healthcare / Biotechnology (Rare Disease)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 58,
+  "summary": "Inovio's INO-3107 is under FDA accelerated-approval review for recurrent respiratory papillomatosis (RRP), a rare disease affecting an estimated 14,000-27,000 US patients with no approved therapy beyond surgical debulking. The FDA completed its mid-cycle review with no new significant issues raised, and a late-cycle review is set for Q3 — both real de-risking signals ahead of the Oct 30, 2026 PDUFA date. The 12-month consensus target of $5.83 implies +445% from here — this is genuinely broad, not a single-analyst outlier. Critically, the company beat Q1 EPS estimates and, after an April 2026 equity raise, has cash runway into Q1 2027 — meaning it can fund operations past the PDUFA date without an emergency raise. That's a real survival advantage most nano-cap binary biotechs don't have.",
+  "catalysts": [
+    {
+      "icon": "🧬",
+      "name": "INO-3107 PDUFA Decision",
+      "description": "FDA accelerated-approval decision for INO-3107 in recurrent respiratory papillomatosis (RRP). Mid-cycle review completed with no new significant issues; late-cycle review set for Q3 2026 ahead of the final decision.",
+      "urgencyLabel": "~14 WEEKS",
+      "dateBadge": "Oct 30, 2026",
+      "catalystDate": "2026-10-30",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "This is a real binary FDA decision — a Complete Response Letter would remove the entire near-term thesis, and RRP's small patient population means there's little room for a partial/label-restricted approval to still satisfy the market",
+    "INO-3107 is a second entrant into this indication — differentiation on efficacy/tolerability/simplicity is the company's own framing, and the market's willingness to pay a premium for that differentiation is untested",
+    "Q1 2026 net loss was $19.7M — even with runway into Q1 2027, the company will likely need further capital (the April 2026 raise being one example) before or shortly after the PDUFA date, which is real dilution risk",
+    "Nano-cap ($88M) with a 52-week range spanning $1.03-$2.98 — extreme volatility and thin liquidity are real execution risks",
+    "The Oct 30 date is still over 3 months out — a long stretch for sentiment to drift on secondhand biotech-sector news before the actual event"
+  ],
+  "estimateDates": [
+    { "event": "INO-3107 Late-Cycle Review", "dateRange": "Q3 2026", "note": "Precursor milestone ahead of the PDUFA date", "est": "No new issues expected given the clean mid-cycle review", "highlight": "yellow" },
+    { "event": "INO-3107 PDUFA Decision", "dateRange": "Oct 30, 2026", "note": "Accelerated approval decision for RRP", "est": "Binary: approval / CRL", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -50, "price": 0.54 },
+    { "label": "Base", "color": "yellow", "pct": 150, "price": 2.68 },
+    { "label": "Bull", "color": "green", "pct": 300, "price": 4.28 },
+    { "label": "Moon", "color": "purple", "pct": 445, "price": 5.83 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (12-month target)", "target": 5.83, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Fed holds at 3.50–3.75%, but new Chair Warsh's hawkish tone has 9 of 18 officials projecting a further 2026 hike, with the next FOMC decision Jul 28–29, 2026.",
+    "inflationNote": "Core inflation remains above target and the 10-year yield sits near 4.48% — a headwind for nano-cap biotechs that periodically need to raise capital, though Inovio's runway into Q1 2027 buys some insulation.",
+    "sectorImpact": "The PDUFA decision itself is entirely macro-independent — an FDA accelerated-approval ruling doesn't respond to interest rates.",
+    "summary": "LOW — this is one of the more macro-independent names on the board since the near-term catalyst is a pure regulatory decision, though the broader financing environment still matters for any capital raise around the PDUFA date."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 1.07, "note": "Current price — near the 52-week low ahead of the Oct 30 PDUFA", "timing": "Scale in (small)" },
+      { "label": "Entry 2", "level": 0.90, "rangeMax": 1.00, "note": "Below the 52-week low — best R/R if biotech-sector sentiment weakens further before October", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 0.70, "note": "Deep capitulation — only on a financing scare or adverse late-cycle-review signal", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 2.68, "pct": 150.0, "note": "Base — approval with a modest label, market gives partial credit" },
+    "tp2": { "price": 4.28, "pct": 300.0, "note": "Bull — clean accelerated approval, market prices in the full addressable RRP population" },
+    "tp3": { "price": 5.83, "pct": 445.0, "note": "Moon — clean approval + fast commercial ramp, hits full consensus target", "moon": true },
+    "stopLoss": {
+      "tight": 0.85, "tightPct": -20.6, "tightNote": "Below the 52-week low — thesis-neutral but a fresh low ahead of the decision",
+      "hard": 0.55, "hardPct": -48.6, "hardNote": "Risk-of-zero territory — an adverse late-cycle-review signal or financing crisis",
+      "riskReward": "16.8 : 1", "rrNote": "From Entry 2 ($0.95 mid) tight stop vs TP2", "rrWarning": "Very high R/R but this is a binary FDA outcome still ~3 months out — 2-3% max position only"
+    },
+    "verdict": "ค่าขนม — tiny position ahead of the Oct 30 PDUFA. Real de-risking signals (clean mid-cycle review, runway past the catalyst) support the thesis, but this remains a binary regulatory outcome.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "Nano-cap biotechs with a binary PDUFA date typically trade heavy and range-bound into the event as uncertainty peaks, then move sharply on the actual decision — expect limited pre-event runup between now and late October.",
+    "preRunupTiming": "minimal pre-event runup; the move happens on the decision itself",
+    "preRunupPct": "0% to +10% pre-event drift, with volatility increasing in the final weeks",
+    "postWin": {
+      "avgPct": 100,
+      "range": "+50% to +200%+",
+      "note": "Small-cap biotechs on an FDA approval for a rare disease with no approved competing therapy typically see 50-100%+ single-day moves, sometimes far larger given how much of the current price already reflects rejection risk.",
+      "exampleDate": "general small-cap biotech PDUFA pattern"
+    },
+    "postLose": {
+      "avgPct": -50,
+      "range": "-40% to -70%",
+      "note": "A Complete Response Letter for a nano-cap's lead (and effectively only near-term) program typically produces a 40-70%+ single-day drop, reflecting how concentrated the investment thesis is in one binary outcome.",
+      "exampleDate": "general small-cap biotech CRL pattern"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "Nano-cap ($88M) binary regulatory outcome still ~3 months out — 2% caps the downside while keeping meaningful exposure to the 445% consensus upside if approved."
+    },
+    "stopPreCatalyst": { "pct": -21, "price": 0.85, "note": "Below the 52-week low ahead of the PDUFA date — thesis-neutral but a real warning sign" },
+    "stopPostCatalyst": { "pct": -40, "note": "A Complete Response Letter or a materially restrictive label would break the thesis — exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "INO",
+      "event": "Q1 2026 earnings beat + clean mid-cycle FDA review with no new issues",
+      "date": "May 2026",
+      "movePct": 5,
+      "days": 3,
+      "outcome": "good",
+      "note": "Same-company precedent showing the market rewards clean regulatory-process signals, even modestly, ahead of the binary PDUFA event."
+    },
+    {
+      "ticker": "sector",
+      "event": "Rare-disease FDA approvals with no approved competing therapy",
+      "date": "general pattern",
+      "movePct": 75,
+      "days": 1,
+      "outcome": "good",
+      "note": "General small-cap biotech comparable for the scale of move possible on an approval in an indication with no existing treatment option, directly relevant to INO-3107's RRP setup."
+    }
+  ],
+  "sources": [
+    "https://seekingalpha.com/news/4592618-inovio-outlines-cash-runway-into-q1-2027-as-inominus-3107-targets-october-30-2026-pdufa-date",
+    "https://www.prnewswire.com/news-releases/inovio-reports-first-quarter-2026-financial-results-and-recent-business-highlights-302771410.html",
+    "https://www.tipranks.com/news/company-announcements/inovios-earnings-call-ino-3107-drives-2026-focus",
+    "https://stockanalysis.com/stocks/ino/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "INO-3107 ของ Inovio อยู่ระหว่างการพิจารณา FDA accelerated approval สำหรับ recurrent respiratory papillomatosis (RRP) โรคหายากที่กระทบผู้ป่วยสหรัฐฯ ประมาณ 14,000-27,000 คน ไม่มีการรักษาที่ FDA อนุมัติเลยนอกจากการผ่าตัด FDA ผ่าน mid-cycle review แล้วไม่มีประเด็นใหม่ที่สำคัญ และมี late-cycle review กำหนด Q3 — สัญญาณ de-risk จริงก่อนวันตัดสินใจ PDUFA 30 ต.ค. 2026 เป้า consensus 12 เดือนที่ $5.83 หมายถึง +445% จากราคานี้ — เป็นตัวเลขกว้างจริง ไม่ใช่ outlier เดี่ยว สำคัญคือบริษัท beat EPS Q1 และหลังระดมทุนเม.ย. 2026 มีเงินสดพอถึง Q1 2027 — หมายความว่าสามารถดำเนินธุรกิจผ่านวัน PDUFA ได้โดยไม่ต้องระดมทุนฉุกเฉิน เป็นข้อได้เปรียบด้าน survival จริงที่ nano-cap biotech แบบ binary ส่วนใหญ่ไม่มี",
+      "priceNote": "ใกล้ 52-week low ($1.03) ห่างจาก 52-week high ($2.98) มาก ก่อนวันตัดสินใจ PDUFA 30 ต.ค. 2026 สำหรับ INO-3107",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "วันตัดสินใจ PDUFA INO-3107", "description": "การตัดสินใจ FDA accelerated approval สำหรับ INO-3107 ใน RRP mid-cycle review ผ่านแล้วไม่มีประเด็นใหม่ที่สำคัญ late-cycle review กำหนด Q3 2026 ก่อนการตัดสินใจสุดท้าย" }
+      ],
+      "risks": [
+        "นี่คือการตัดสินใจ FDA แบบ binary จริง — CRL จะตัด thesis ระยะใกล้ทั้งหมด และประชากรผู้ป่วย RRP ที่เล็กหมายความว่ามีพื้นที่น้อยสำหรับการอนุมัติแบบจำกัด label ที่ยังพอใจตลาดได้",
+        "INO-3107 เป็นผู้เข้าตลาดรายที่สองใน indication นี้ — ความแตกต่างด้าน efficacy/tolerability/ความง่ายเป็นมุมมองของบริษัทเอง ความยินดีจ่ายพรีเมียมของตลาดยังไม่ผ่านการทดสอบ",
+        "ขาดทุนสุทธิ Q1 2026 อยู่ที่ $19.7M — แม้เงินสดพอถึง Q1 2027 บริษัทน่าจะต้องระดมทุนเพิ่มก่อนหรือหลัง PDUFA ไม่นาน เป็นความเสี่ยง dilution จริง",
+        "Nano-cap ($88M) ที่ 52-week range กว้าง $1.03-$2.98 — ความผันผวนสุดโต่งและสภาพคล่องบางเป็นความเสี่ยง execution จริง",
+        "วันที่ 30 ต.ค. ยังอีกกว่า 3 เดือน — ช่วงเวลานานที่ sentiment อาจแกว่งจากข่าว biotech sector อื่นก่อนถึง event จริง"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% แต่ประธาน Warsh สายเหยี่ยว 9/18 คนมองขึ้นดอกเบี้ยอีกในปี 2026 FOMC ถัดไป 28-29 ก.ค. 2026",
+        "inflationNote": "เงินเฟ้อ core ยังสูงกว่าเป้า yield 10 ปีใกล้ 4.48% เป็นแรงกดดันต่อ biotech nano-cap ที่ต้องระดมทุนเป็นระยะ แม้ runway ถึง Q1 2027 ของ Inovio จะช่วยกันกระแทกได้บ้าง",
+        "sectorImpact": "การตัดสินใจ PDUFA เองแทบไม่ผูกกับ macro เลย — คำตัดสิน FDA accelerated approval ไม่ตอบสนองต่ออัตราดอกเบี้ย",
+        "summary": "ความเสี่ยง Fed ต่ำ — เป็นหนึ่งในหุ้นที่ macro-independent ที่สุดในบอร์ดเพราะ catalyst ระยะใกล้เป็นการตัดสินใจ regulatory ล้วน ๆ แม้สภาพแวดล้อมการเงินกว้างจะยังสำคัญสำหรับการระดมทุนใด ๆ รอบวัน PDUFA"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม — size เล็กมากก่อน PDUFA 30 ต.ค. สัญญาณ de-risk จริง (mid-cycle review สะอาด runway ผ่านวัน catalyst) หนุน thesis แต่ยังเป็นผลตัดสินใจ FDA แบบ binary",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ใกล้ 52-week low ก่อน PDUFA 30 ต.ค.", "timing": "Scale in (เล็ก)" },
+          { "note": "ต่ำกว่า 52-week low — R/R ดีที่สุดถ้า sentiment biotech sector อ่อนตัวเพิ่มก่อนต.ค.", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงหนัก — เฉพาะกรณีตื่นตระหนกเรื่องการเงินหรือสัญญาณ late-cycle review แย่", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — อนุมัติพร้อม label จำกัด ตลาดให้เครดิตบางส่วน" },
+        "tp2": { "note": "Bull — accelerated approval สะอาด ตลาด price in ประชากร RRP เต็มที่" },
+        "tp3": { "note": "Moon — อนุมัติสะอาด + ramp เชิงพาณิชย์เร็ว แตะเป้า consensus เต็ม", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุด 52-week low — thesis ยังไม่พัง แต่จุดต่ำสุดใหม่ก่อนการตัดสินใจ",
+          "hardNote": "เข้าเขต risk-of-zero — สัญญาณ late-cycle review แย่หรือวิกฤตการเงิน",
+          "rrNote": "จาก Entry 2 ($0.95 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R สูงมากแต่เป็นผล FDA แบบ binary ที่ยังอีก ~3 เดือน — size สูงสุด 2-3% เท่านั้น"
+        }
+      },
+      "estimateDates": [
+        { "event": "Late-Cycle Review INO-3107", "note": "milestone ก่อนวัน PDUFA" },
+        { "event": "วันตัดสินใจ PDUFA INO-3107", "note": "binary: อนุมัติ / CRL" }
+      ]
+    }
+  }
+}

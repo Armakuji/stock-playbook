@@ -1,0 +1,177 @@
+{
+  "ticker": "AREC",
+  "companyName": "American Resources Corporation",
+  "companyDescription": "Former coal company repositioning as a critical-minerals/rare-earth supply chain player · DOE-selected for a coal-byproduct rare-earth recovery grant · going-concern qualification removed in the 2025 10-K",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-22T21:00:00.000Z",
+  "price": 1.81,
+  "priceChange": 4.02,
+  "priceNote": "Self-fetched today (no live-prices.json cache yet). Up 4.02% today, well off the 52-week high ($7.11) after a broad re-rate lower this year despite genuine strategic progress on the critical-minerals pivot.",
+  "marketCap": "$193.6M",
+  "sector": "Materials / Critical Minerals & Rare Earth Elements",
+  "marketCapCheck": true,
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 62,
+  "summary": "American Resources has genuinely repositioned itself from a legacy coal company to a critical-minerals supply-chain play: it was selected by the DOE for award negotiations under the Mines & Metals Capacity Expansion program to recover rare earth elements from domestic coal byproducts, and its minority-held ReElement Technologies subsidiary was accepted into the Defense Industrial Base Consortium, opening access to national-security supply-chain contracts. Financially, the company removed its going-concern qualification in the 2025 10-K, now holds over $72.5M in cash with no immediate fundraising need, and swung to positive shareholder equity (~$93M, from -$80M) after divesting legacy coal assets. 4 analysts average a $6.50 target (Buy, +259% from here) — real, broad, and grounded in a genuine strategic pivot, not just hype.",
+  "catalysts": [
+    {
+      "icon": "⛏️",
+      "name": "DOE Critical Minerals Grant (Coal Byproducts)",
+      "description": "Selected by the DOE for award negotiations under the Mines & Metals Capacity Expansion – Piloting Byproduct Critical Minerals project, to develop an integrated processing strategy recovering rare earth elements from domestic coal byproducts — a real, dated federal validation of the strategic pivot.",
+      "urgencyLabel": "ONGOING (negotiations)",
+      "dateBadge": "H2 2026",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🛡️",
+      "name": "ReElement Defense Industrial Base Consortium",
+      "description": "ReElement Technologies (AREC minority holding) accepted as a member of the Defense Industrial Base Consortium, granting access to national-security critical-materials contracts. Currently testing Zirconium and Niobium products for defense contractors.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "The DOE grant is still in the 'award negotiations' stage — not yet a signed, finalized contract, so the exact dollar figure and timeline remain uncertain",
+    "The critical-minerals pivot is real but early-stage — proof of repeatable commercial revenue from the new business lines (rather than legacy coal divestiture accounting effects) is still the key unresolved question",
+    "ReElement Technologies is only a minority holding — AREC doesn't capture 100% of the economics from the Defense Industrial Base Consortium access",
+    "4-analyst coverage is thin relative to larger names — the $6.50 median target has less statistical robustness than broader coverage would provide",
+    "Down sharply from the 52-week high ($7.11) despite the going-concern removal and DOE selection — the market has been slow to credit the balance-sheet improvement so far this year"
+  ],
+  "estimateDates": [
+    { "event": "DOE Grant Award Finalization", "dateRange": "H2 2026", "note": "Currently in award negotiations, not yet finalized", "est": "Binary: finalized at meaningful scale / delayed or scaled back", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -40, "price": 1.09 },
+    { "label": "Base", "color": "yellow", "pct": 100, "price": 3.62 },
+    { "label": "Bull", "color": "green", "pct": 180, "price": 5.07 },
+    { "label": "Moon", "color": "purple", "pct": 259, "price": 6.50 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus median (4 analysts, all Buy)", "target": 6.50, "rating": "Buy" },
+    { "firm": "Range low", "target": 5.00, "rating": "Buy" },
+    { "firm": "Range high", "target": 9.00, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed holds at 3.50–3.75%, but new Chair Warsh's hawkish tone has 9 of 18 officials projecting a further 2026 hike, with the next FOMC decision Jul 28–29, 2026.",
+    "inflationNote": "Core inflation remains above target and the 10-year yield sits near 4.48% — a headwind for small-cap industrial names generally, though AREC's improved balance sheet (positive equity, $72.5M cash) reduces reliance on capital markets somewhat.",
+    "sectorImpact": "Critical-minerals policy support (DOE grants, Defense Industrial Base Consortium access) is largely bipartisan and macro-independent, tied more to national-security supply-chain priorities than to the Fed cycle.",
+    "summary": "MEDIUM — the DOE grant and defense-supply-chain access are policy-driven and macro-independent, but AREC remains a small-cap industrial name that would still get hit in a broad risk-off move around the dense Jul 28-29 FOMC week."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 1.81, "note": "Current price — well off the 52-week high despite real balance-sheet improvement", "timing": "Scale in (small)" },
+      { "label": "Entry 2", "level": 1.40, "rangeMax": 1.55, "note": "Recent consolidation zone — best R/R if the DOE grant negotiation takes longer than expected", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 1.10, "note": "Near the 52-week low — only on a broad small-cap materials selloff", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 3.62, "pct": 100.0, "note": "Base — DOE grant negotiations advance, market credits the balance-sheet turnaround" },
+    "tp2": { "price": 5.07, "pct": 180.0, "note": "Bull — DOE grant finalized at meaningful scale, ReElement defense contracts materialize" },
+    "tp3": { "price": 6.50, "pct": 259.0, "note": "Moon — critical-minerals pivot fully re-rates, hits consensus median target", "moon": true },
+    "stopLoss": {
+      "tight": 1.30, "tightPct": -28.2, "tightNote": "Below the recent consolidation zone — thesis-neutral but momentum breaking down",
+      "hard": 0.95, "hardPct": -47.5, "hardNote": "Near the 52-week low — would suggest the DOE grant negotiation is stalling badly",
+      "riskReward": "7.6 : 1", "rrNote": "From Entry 2 ($1.48 mid) tight stop vs TP2", "rrWarning": "Good R/R and a real balance-sheet-backed thesis, but the DOE grant isn't finalized yet — size for that uncertainty"
+    },
+    "verdict": "ค่าขนม — small position on a genuine critical-minerals repositioning story with real balance-sheet improvement (going-concern removed, positive equity). Add on a dip toward $1.40-1.55 while the DOE grant negotiation plays out.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "Critical-minerals microcaps in this cohort tend to move on discrete DOE/defense-contract headlines rather than a sustained pre-announcement runup — AREC's own history shows sharp single-day moves on specific news (e.g. the ReElement $200M funding announcement).",
+    "preRunupTiming": "same-day on contract/grant news, not a multi-week runup",
+    "preRunupPct": "+5% to +20% same-day on grant/contract news",
+    "postWin": {
+      "avgPct": 20,
+      "range": "+15% to +21%",
+      "note": "AREC's own stock jumped 21.0% after securing US$200 million for the ReElement rollout, and 19.4% after swinging to profit — real, same-company precedent for how the market rewards concrete financial/strategic milestones.",
+      "exampleDate": "2026 (AREC)"
+    },
+    "postLose": {
+      "avgPct": -15,
+      "range": "-10% to -20%",
+      "note": "Small-cap critical-minerals names can see real drawdowns if a DOE grant negotiation stalls or a strategic pivot's commercial timeline slips — general sector pattern given how thesis-dependent these stocks are on policy-driven catalysts.",
+      "exampleDate": "general sector pattern"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "Small-cap ($194M) with a genuinely improved balance sheet (going-concern removed, positive equity) but a DOE grant still in negotiation — 4% sizing reflects real fundamental support with real timing uncertainty."
+    },
+    "stopPreCatalyst": { "pct": -28, "price": 1.30, "note": "Below the recent consolidation zone — thesis-neutral but momentum breaking down" },
+    "stopPostCatalyst": { "pct": -20, "note": "If the DOE grant negotiation stalls or is scaled back significantly, exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "AREC",
+      "event": "ReElement Technologies secures $200M funding for rollout",
+      "date": "2026",
+      "movePct": 21.0,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company precedent for how the market rewards concrete financial milestones supporting the critical-minerals pivot."
+    },
+    {
+      "ticker": "AREC",
+      "event": "Swung to profit, going-concern qualification removed in 2025 10-K",
+      "date": "2026",
+      "movePct": 19.4,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company precedent for the market's reaction to the balance-sheet turnaround, directly relevant to the ongoing re-rate thesis."
+    }
+  ],
+  "sources": [
+    "https://www.stocktitan.net/news/AREC/american-resources-corporation-advances-rare-earth-and-critical-i1m0b0p3g9bh.html",
+    "https://finance.yahoo.com/markets/stocks/articles/american-resources-arec-repositions-critical-053541877.html",
+    "https://finance.yahoo.com/news/american-resources-arec-21-0-050805839.html",
+    "https://stockanalysis.com/stocks/arec/forecast/",
+    "https://stockanalysis.com/stocks/arec/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "American Resources ปรับตำแหน่งตัวเองจากบริษัทถ่านหินเดิมมาเป็นผู้เล่นใน supply chain แร่ธาตุวิกฤต/rare earth จริง — ได้รับเลือกจาก DOE เข้าสู่การเจรจา award ภายใต้โครงการ Mines & Metals Capacity Expansion เพื่อสกัด rare earth elements จาก byproduct ถ่านหินในประเทศ และบริษัทลูกที่ถือหุ้นส่วนน้อย ReElement Technologies ได้รับการยอมรับเข้า Defense Industrial Base Consortium เปิดทางเข้าถึงสัญญา supply chain ความมั่นคงแห่งชาติ ด้านการเงิน บริษัทถอด going-concern qualification ออกใน 10-K ปี 2025 แล้ว ตอนนี้ถือเงินสดกว่า $72.5M ไม่ต้องการทุนเพิ่มด่วน และพลิกเป็น shareholder equity บวก (~$93M จาก -$80M) หลังขายสินทรัพย์ถ่านหินเดิม นักวิเคราะห์ 4 คนให้เป้าเฉลี่ย $6.50 (Buy +259% จากราคานี้) — เป็นตัวเลขกว้างจริงมีฐานจาก strategic pivot จริง ไม่ใช่แค่กระแส",
+      "priceNote": "ขึ้น 4.02% วันนี้ ห่างจาก 52-week high ($7.11) มากหลัง re-rate ลงทั้งปีแม้จะมีความคืบหน้าเชิงกลยุทธ์จริงในการปรับตัวสู่ critical minerals",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "ทุน DOE Critical Minerals (Coal Byproducts)", "description": "ได้รับเลือกจาก DOE เข้าสู่การเจรจา award ภายใต้โครงการ Mines & Metals Capacity Expansion เพื่อพัฒนากลยุทธ์สกัด rare earth จาก byproduct ถ่านหินในประเทศ — การรับรองระดับรัฐบาลกลางจริงต่อ strategic pivot" },
+        { "name": "ReElement เข้า Defense Industrial Base Consortium", "description": "ReElement Technologies (ถือหุ้นส่วนน้อยโดย AREC) ได้รับการยอมรับเข้า Defense Industrial Base Consortium เปิดทางเข้าถึงสัญญาวัสดุวิกฤตด้านความมั่นคงแห่งชาติ กำลังทดสอบผลิตภัณฑ์ Zirconium และ Niobium ให้ผู้รับเหมากลาโหม" }
+      ],
+      "risks": [
+        "ทุน DOE ยังอยู่ขั้น 'เจรจา award' — ยังไม่ใช่สัญญาที่ลงนามสรุปแล้ว ตัวเลขและ timeline ที่แน่นอนยังไม่ชัดเจน",
+        "การปรับตัวสู่ critical minerals เป็นเรื่องจริงแต่ยังระยะแรก — การพิสูจน์รายได้เชิงพาณิชย์ที่ทำซ้ำได้จากธุรกิจใหม่ (ไม่ใช่แค่ผลบัญชีจากการขายถ่านหินเดิม) ยังเป็นคำถามหลักที่ยังไม่คลี่คลาย",
+        "ReElement Technologies เป็นแค่การถือหุ้นส่วนน้อย — AREC ไม่ได้รับ economics เต็ม 100% จากการเข้าถึง Defense Industrial Base Consortium",
+        "การคุมนักวิเคราะห์ 4 คนถือว่าบางเทียบหุ้นใหญ่กว่า — เป้ามัธยฐาน $6.50 มีความน่าเชื่อถือทางสถิติน้อยกว่า coverage ที่กว้างกว่า",
+        "ร่วงลงมากจาก 52-week high ($7.11) แม้จะถอด going-concern และได้รับเลือกจาก DOE แล้ว — ตลาดยังตอบรับการปรับปรุงงบดุลช้าปีนี้"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% แต่ประธาน Warsh สายเหยี่ยว 9/18 คนมองขึ้นดอกเบี้ยอีกในปี 2026 FOMC ถัดไป 28-29 ก.ค. 2026",
+        "inflationNote": "เงินเฟ้อ core ยังสูงกว่าเป้า yield 10 ปีใกล้ 4.48% เป็นแรงกดดันต่อหุ้นอุตสาหกรรมเล็กทั่วไป แม้งบดุลที่ดีขึ้นของ AREC (equity บวก เงินสด $72.5M) จะลดการพึ่งพาตลาดทุนลงบ้าง",
+        "sectorImpact": "การสนับสนุนนโยบายแร่ธาตุวิกฤต (ทุน DOE การเข้าถึง Defense Industrial Base Consortium) เป็น bipartisan และ macro-independent ส่วนใหญ่ ผูกกับความสำคัญ supply chain ความมั่นคงแห่งชาติมากกว่าวงจร Fed",
+        "summary": "ความเสี่ยง Fed ระดับกลาง — ทุน DOE และการเข้าถึง supply chain กลาโหมขับเคลื่อนด้วยนโยบายและ macro-independent แต่ AREC ยังเป็นหุ้นอุตสาหกรรมเล็กที่จะโดนกระทบใน risk-off กว้างรอบ FOMC 28-29 ก.ค. ที่แน่นมาก"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม — เข้าไม้เล็กตาม story การปรับตำแหน่งสู่ critical minerals จริง พร้อมงบดุลที่ดีขึ้นจริง (ถอด going-concern equity บวก) เพิ่มถ้าย่อมาโซน $1.40-1.55 ระหว่างรอผลเจรจาทุน DOE",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ห่างจาก 52-week high มากแม้งบดุลจะดีขึ้นจริง", "timing": "Scale in (เล็ก)" },
+          { "note": "โซน consolidation ล่าสุด — R/R ดีที่สุดถ้าการเจรจาทุน DOE ใช้เวลานานกว่าคาด", "timing": "ถ้าย่อ" },
+          { "note": "ใกล้ 52-week low — เฉพาะกรณี materials เล็กเทขายรวม", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — การเจรจาทุน DOE คืบหน้า ตลาดให้เครดิตการพลิกฟื้นงบดุล" },
+        "tp2": { "note": "Bull — ทุน DOE สรุประดับมีนัยสำคัญ สัญญากลาโหมของ ReElement เกิดขึ้นจริง" },
+        "tp3": { "note": "Moon — การปรับตัวสู่ critical minerals re-rate เต็มที่ แตะเป้ามัธยฐาน consensus", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดโซน consolidation ล่าสุด — thesis ยังไม่พัง แต่ momentum เสีย",
+          "hardNote": "ใกล้ 52-week low — จะบ่งชี้ว่าการเจรจาทุน DOE สะดุดหนัก",
+          "rrNote": "จาก Entry 2 ($1.48 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R ดีและมี thesis หนุนด้วยงบดุลจริง แต่ทุน DOE ยังไม่สรุป — size ให้เหมาะกับความไม่แน่นอนนี้"
+        }
+      },
+      "estimateDates": [
+        { "event": "การสรุปทุน DOE", "note": "ตอนนี้อยู่ขั้นเจรจา ยังไม่สรุป" }
+      ]
+    }
+  }
+}

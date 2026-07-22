@@ -1,0 +1,175 @@
+{
+  "ticker": "SOUN",
+  "companyName": "SoundHound AI, Inc.",
+  "companyDescription": "Enterprise conversational/voice AI · Casey's, OpenTable partnerships · 2026 Gartner Magic Quadrant Leader for Conversational AI · real $300M ATM dilution overhang",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-22T21:00:00.000Z",
+  "price": 6.43,
+  "priceChange": -1.91,
+  "priceNote": "Self-fetched today (no live-prices.json cache yet). Down 1.91% today, down ~71% from the 52-week high ($22.17) after a $300M at-the-market offering announcement and legal-scrutiny headlines both weighed on the stock this year.",
+  "marketCap": "$2.78B",
+  "sector": "Technology / AI Software (Conversational/Voice AI)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 48,
+  "summary": "This refresh needs to be honest: SoundHound's real upside has compressed well below the typical turbo bar. The 7-analyst consensus is $13.14 (+104% from here) — real and broad, but not close to 200%. The underlying business has genuine momentum (Casey's AI-ordering deployment expanded to 2,600+ locations handling 21M+ guest interactions, a 2026 Gartner Magic Quadrant Leader ranking, a new 'Sales Assist' AI agent), but the stock fell to under $7 specifically because management launched a $300M at-the-market offering to fund ongoing losses and M&A — a real, disclosed dilution overhang, not analyst speculation. ⚠️ SURVIVAL: this isn't a going-concern situation (2026 revenue is guided $225-260M), but the active $300M ATM is exactly the kind of overhang this skill's survival check exists to flag. Included here as an honest carryover update, not a fresh high-conviction pick — real story, compressed math.",
+  "catalysts": [
+    {
+      "icon": "🤝",
+      "name": "Casey's Partnership Expansion",
+      "description": "SoundHound's AI-powered ordering agents now handle 21M+ guest interactions across 2,600+ Casey's locations — a real, scaled enterprise deployment showing the technology works at volume.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "💰",
+      "name": "$300M ATM Offering",
+      "description": "A $300M at-the-market equity program (plus a broad shelf registration) launched in early May 2026 to fund OASYS development and M&A — real dilution risk if fully tapped, and the direct cause of a Jul selloff.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "⚠️ SURVIVAL: the $300M ATM is a real, active dilution mechanism launched specifically to fund ongoing losses and M&A — every share issued under it dilutes existing holders, and the company has already tapped equity markets aggressively this cycle",
+    "Real upside (7-analyst consensus +104%) no longer clears the ~200% floor this board typically screens for — this is now a compressed, borderline pick, not a clean moonshot",
+    "Legal scrutiny headlines (referenced in recent coverage) add a real, if unquantified, tail risk on top of the dilution overhang",
+    "Revenue growth is decelerating and Q1 gross margin fell to 31% — real fundamental softening, not just a sentiment problem",
+    "Down ~71% from the 52-week high — a large re-rate has already happened; the easy multiple-compression move may be mostly behind rather than ahead"
+  ],
+  "estimateDates": [
+    { "event": "Next Quarterly Update", "dateRange": "TBD", "note": "Market wants to see the ATM's actual dilution pace and progress on the LivePerson integration", "est": "No confirmed date found this run", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -45, "price": 3.54 },
+    { "label": "Base", "color": "yellow", "pct": 40, "price": 9.00 },
+    { "label": "Bull", "color": "green", "pct": 75, "price": 11.25 },
+    { "label": "Moon", "color": "purple", "pct": 104.4, "price": 13.14 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (7 analysts)", "target": 13.14, "rating": "Strong Buy" },
+    { "firm": "H.C. Wainwright", "target": 14.00, "rating": "Buy", "note": "Cited 'material outperformance' potential, though this target predates the ATM announcement" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed holds at 3.50–3.75%, but new Chair Warsh's hawkish tone has 9 of 18 officials projecting a further 2026 hike, with the next FOMC decision Jul 28–29, 2026.",
+    "inflationNote": "Core inflation remains above target and the 10-year yield sits near 4.48% — a real headwind for an unprofitable growth-software name that just launched a large equity program.",
+    "sectorImpact": "As a pre-profitability AI-software name actively raising capital via ATM, SOUN is directly exposed to the cost-of-capital channel on top of the usual growth-multiple-compression risk hitting AI names broadly.",
+    "summary": "MEDIUM-HIGH — the $300M ATM makes this name unusually sensitive to the rate/financing environment right now; a hawkish Jul 28-29 FOMC surprise would make every dollar raised under that program more dilutive."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 6.43, "note": "Current price — down ~71% from the 52-week high on the ATM/dilution overhang", "timing": "Scale in (small)" },
+      { "label": "Entry 2", "level": 5.50, "rangeMax": 6.00, "note": "Near the 52-week low zone — best R/R if the ATM overhang weighs further", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 4.50, "note": "Deep capitulation — only on aggressive ATM issuance or a legal-scrutiny escalation", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 9.00, "pct": 40.0, "note": "Base — Casey's/enterprise momentum continues, ATM issuance pace moderates" },
+    "tp2": { "price": 11.25, "pct": 75.0, "note": "Bull — dilution overhang eases as revenue growth outpaces share issuance" },
+    "tp3": { "price": 13.14, "pct": 104.4, "note": "Moon — enterprise AI story fully re-rates, hits full analyst consensus", "moon": true },
+    "stopLoss": {
+      "tight": 5.20, "tightPct": -19.1, "tightNote": "Below the 52-week-low zone — thesis-neutral but a fresh low on continued dilution pressure",
+      "hard": 4.00, "hardPct": -37.8, "hardNote": "Deep breach — would suggest the market has genuinely lost patience with the dilution story",
+      "riskReward": "4.0 : 1", "rrNote": "From Entry 2 ($5.75 mid) tight stop vs TP2", "rrWarning": "Below-average R/R for this board — real dilution overhang plus compressed upside make this a lower-conviction carryover, not a fresh high-conviction pick"
+    },
+    "verdict": "ค่าขนม — small position only, and only if you understand this is now a compressed-upside carryover, not a fresh 200%+ moonshot. The $300M ATM overhang is real and ongoing.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "SOUN reacts sharply to financing announcements (the ATM launch itself drove an immediate decline) more than it runs up ahead of partnership news — the dilution overhang currently dominates the stock's reaction function.",
+    "preRunupTiming": "immediate reaction to financing/dilution news; partnership wins have been comparatively muted this cycle",
+    "preRunupPct": "variable; financing news has recently mattered more than partnership news",
+    "postWin": {
+      "avgPct": 8,
+      "range": "+3% to +15%",
+      "note": "Enterprise partnership expansions (Casey's, OpenTable) have driven modest positive reactions, but have been overshadowed this cycle by the larger dilution/financing narrative.",
+      "exampleDate": "2026 (SOUN)"
+    },
+    "postLose": {
+      "avgPct": -20,
+      "range": "-5% to -30%",
+      "note": "SOUN fell 20% in June despite a $100M acquisition, and separately declined 5.3% specifically on the $300M ATM announcement — real, same-company precedent for how financing/dilution news dominates the stock's reaction even against otherwise-positive strategic moves.",
+      "exampleDate": "Jun 2026 (SOUN)"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "Real dilution overhang ($300M ATM) plus compressed upside (104% consensus, below this board's typical bar) — 2% sizing reflects this as a lower-conviction carryover rather than a fresh high-conviction pick."
+    },
+    "stopPreCatalyst": { "pct": -19, "price": 5.20, "note": "Below the 52-week-low zone — thesis-neutral but a fresh low on continued dilution pressure" },
+    "stopPostCatalyst": { "pct": -25, "note": "If ATM issuance accelerates materially or legal scrutiny escalates into a formal action, exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "SOUN",
+      "event": "$300M at-the-market offering announced to fund losses and M&A",
+      "date": "May 2026",
+      "movePct": -5.3,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Same-company precedent for how directly the market has punished the dilution overhang — the central risk factor for this stock right now."
+    },
+    {
+      "ticker": "SOUN",
+      "event": "$100M acquisition announced, stock still fell 20% in the same month",
+      "date": "Jun 2026",
+      "movePct": -20,
+      "days": 30,
+      "outcome": "bad",
+      "note": "Shows a genuinely positive strategic move (M&A) was overshadowed by the broader dilution/valuation-compression narrative — relevant context for how much good news this stock currently needs to overcome the overhang."
+    }
+  ],
+  "sources": [
+    "https://finance.yahoo.com/markets/stocks/articles/soundhound-ai-soun-down-5-101208307.html",
+    "https://247wallst.com/investing/2026/06/16/buy-hold-or-sell-soundhound-ai-slid-20-in-june-despite-a-massive-100-million-acquisition-is-soun-a-buy-at-7-35/",
+    "https://stockstotrade.com/news/soundhound-ai-inc-soun-news-2026_07_14/",
+    "https://stockanalysis.com/stocks/soun/forecast/",
+    "https://stockanalysis.com/stocks/soun/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "การอัปเดตรอบนี้ต้องตรงไปตรงมา: upside จริงของ SoundHound ลดลงต่ำกว่าเกณฑ์ turbo ปกติมาก เป้าเฉลี่ยนักวิเคราะห์ 7 คนอยู่ที่ $13.14 (+104% จากราคานี้) — เป็นตัวเลขกว้างจริง แต่ไม่ใกล้ 200% ธุรกิจพื้นฐานมี momentum จริง (การขยาย AI ordering ของ Casey's ไป 2,600+ สาขา รองรับ 21M+ guest interaction อันดับ Gartner Magic Quadrant Leader ปี 2026 AI agent ใหม่ 'Sales Assist') แต่หุ้นร่วงต่ำกว่า $7 เพราะผู้บริหารเปิดตัว at-the-market offering $300M เพื่อหาทุนขาดทุนต่อเนื่องและ M&A — เป็น dilution overhang จริงที่เปิดเผยแล้ว ไม่ใช่การคาดเดาของนักวิเคราะห์ ⚠️ SURVIVAL: นี่ไม่ใช่สถานการณ์ going-concern (รายได้ปี 2026 guide $225-260M) แต่ ATM $300M ที่ยัง active คือสิ่งที่ survival check ของ skill นี้มีไว้เพื่อ flag พอดี รวมไว้เป็นการอัปเดต carryover ที่ตรงไปตรงมา ไม่ใช่ pick ความเชื่อมั่นสูงใหม่ — story จริง แต่คณิตศาสตร์บีบแคบลง",
+      "priceNote": "ลง 1.91% วันนี้ ห่างจาก 52-week high ($22.17) ~71% หลังการเปิดตัว at-the-market offering $300M และข่าว legal scrutiny กดดันหุ้นปีนี้",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "ขยาย Partnership กับ Casey's", "description": "AI ordering agent ของ SoundHound รองรับ guest interaction กว่า 21M ครั้งใน 2,600+ สาขา Casey's — deployment enterprise ระดับใหญ่จริงที่แสดงว่าเทคโนโลยีทำงานได้จริงในปริมาณมาก" },
+        { "name": "ATM Offering $300M", "description": "โปรแกรม at-the-market equity $300M (บวก shelf registration กว้าง) เปิดตัวต้นพ.ค. 2026 เพื่อหาทุนพัฒนา OASYS และ M&A — ความเสี่ยง dilution จริงถ้าใช้เต็มวงเงิน และเป็นสาเหตุตรงของการเทขายก.ค." }
+      ],
+      "risks": [
+        "⚠️ SURVIVAL: ATM $300M เป็นกลไก dilution จริงที่ active เปิดตัวเพื่อหาทุนขาดทุนต่อเนื่องและ M&A โดยเฉพาะ — ทุกหุ้นที่ออกภายใต้โปรแกรมนี้ dilute ผู้ถือหุ้นเดิม และบริษัทดึงทุนจากตลาดหุ้นแล้วอย่างจริงจังรอบนี้",
+        "Upside จริง (เป้าเฉลี่ยนักวิเคราะห์ 7 คน +104%) ไม่ถึงเกณฑ์ ~200% ที่บอร์ดนี้มักคัดกรองแล้ว — ตอนนี้เป็น pick แบบบีบแคบ borderline ไม่ใช่ moonshot ที่สะอาด",
+        "ข่าว legal scrutiny (อ้างอิงในรายงานล่าสุด) เพิ่มความเสี่ยงจริงแม้ยังประเมินมูลค่าไม่ได้ ซ้อนทับ dilution overhang",
+        "การเติบโตรายได้ชะลอตัวและ gross margin Q1 ลดเหลือ 31% — เป็นความอ่อนแอเชิงพื้นฐานจริง ไม่ใช่แค่ปัญหา sentiment",
+        "ร่วงจาก 52-week high ไปแล้ว ~71% — re-rate ใหญ่เกิดขึ้นไปแล้ว การบีบ multiple ที่ง่ายอาจผ่านไปมากแล้วมากกว่าที่ยังจะเกิดขึ้น"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% แต่ประธาน Warsh สายเหยี่ยว 9/18 คนมองขึ้นดอกเบี้ยอีกในปี 2026 FOMC ถัดไป 28-29 ก.ค. 2026",
+        "inflationNote": "เงินเฟ้อ core ยังสูงกว่าเป้า yield 10 ปีใกล้ 4.48% เป็นแรงกดดันจริงต่อหุ้น software growth ที่ยังไม่กำไรและเพิ่งเปิดตัวโปรแกรม equity ขนาดใหญ่",
+        "sectorImpact": "ในฐานะหุ้น AI software pre-profitability ที่กำลังระดมทุนผ่าน ATM active SOUN expose ต่อช่องทางต้นทุนทุนโดยตรงซ้อนทับความเสี่ยง multiple compression ปกติที่หุ้น AI เจอทั่วไป",
+        "summary": "ความเสี่ยง Fed ระดับกลาง-สูง — ATM $300M ทำให้หุ้นนี้ sensitive ต่อสภาพแวดล้อมดอกเบี้ย/การเงินผิดปกติตอนนี้ FOMC hawkish surprise 28-29 ก.ค. จะทำให้ทุกดอลลาร์ที่ระดมภายใต้โปรแกรมนั้น dilute หนักกว่าเดิม"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม — size เล็กเท่านั้น และเฉพาะถ้าเข้าใจว่านี่คือ carryover ที่ upside บีบแคบแล้ว ไม่ใช่ moonshot 200%+ ใหม่ ATM overhang $300M เป็นเรื่องจริงและยัง active",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ห่างจาก 52-week high ~71% จาก overhang ATM/dilution", "timing": "Scale in (เล็ก)" },
+          { "note": "ใกล้โซน 52-week low — R/R ดีที่สุดถ้า ATM overhang กดดันเพิ่ม", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงหนัก — เฉพาะการออกหุ้น ATM แรงหรือ legal scrutiny ทวีความรุนแรง", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — momentum Casey's/enterprise ต่อเนื่อง จังหวะออกหุ้น ATM ชะลอลง" },
+        "tp2": { "note": "Bull — overhang dilution คลี่คลายเมื่อรายได้โตเร็วกว่าการออกหุ้น" },
+        "tp3": { "note": "Moon — story enterprise AI re-rate เต็มที่ แตะเป้า consensus เต็ม", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดโซน 52-week low — thesis ยังไม่พัง แต่จุดต่ำสุดใหม่จาก dilution ต่อเนื่อง",
+          "hardNote": "หลุดลึก — จะบ่งชี้ว่าตลาดหมดความอดทนกับ story dilution จริง",
+          "rrNote": "จาก Entry 2 ($5.75 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R ต่ำกว่าค่าเฉลี่ยของบอร์ดนี้ — overhang dilution จริงบวก upside บีบแคบทำให้เป็น carryover ความเชื่อมั่นต่ำ ไม่ใช่ pick ความเชื่อมั่นสูงใหม่"
+        }
+      },
+      "estimateDates": [
+        { "event": "อัปเดตรายไตรมาสถัดไป", "note": "ยังไม่พบวันที่ยืนยันรอบนี้ ตลาดต้องการเห็นจังหวะ dilution จริงของ ATM และความคืบหน้า LivePerson" }
+      ]
+    }
+  }
+}

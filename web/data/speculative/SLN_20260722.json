@@ -1,0 +1,155 @@
+{
+  "ticker": "SLN",
+  "companyName": "Silence Therapeutics plc",
+  "companyDescription": "RNAi therapeutics · divesiran (SANRECO Phase 2) in polycythemia vera · topline data due August 2026",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-07-22T21:00:00.000Z",
+  "price": 11.50,
+  "priceChange": 5.99,
+  "priceNote": "Self-fetched today (no live-prices.json cache yet). Up 5.99% today and near the 52-week high, continuing a sustained run-up ahead of the August 2026 Phase 2 SANRECO topline data for divesiran in polycythemia vera.",
+  "marketCap": "$545M",
+  "sector": "Healthcare / Biotechnology (RNAi Therapeutics)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 55,
+  "summary": "This refresh needs to be honest: Silence Therapeutics has already run hard ahead of its own catalyst, and real upside has compressed well below this board's 200%+ bar. The stock has roughly doubled since this name was first picked two weeks ago (from ~$6-7 to $11.50), and the 7-analyst consensus of $29.17 now implies only +154% from here — real and broad, but no longer a clean moonshot on a strict basis. What hasn't changed: the SANRECO Phase 2 topline data for divesiran in polycythemia vera is genuinely due in August 2026, and this remains a real binary readout. The market has simply already priced in a meaningful chunk of the optimism ahead of the actual data.",
+  "catalysts": [
+    {
+      "icon": "🧬",
+      "name": "SANRECO Phase 2 Topline (Divesiran)",
+      "description": "Topline data for the Phase 2 SANRECO study of divesiran 6mg in phlebotomy-dependent polycythemia vera patients, due August 2026 — a real, near-term binary readout that the stock has been running up into.",
+      "urgencyLabel": "~2-6 WEEKS",
+      "dateBadge": "Aug 2026",
+      "catalystDate": "2026-08-15",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Real upside has compressed to +154% (7-analyst consensus) — the stock has already run hard (roughly doubled over two weeks) ahead of the actual data, meaning much of the optimism may already be priced in",
+    "This remains a genuinely binary Phase 2 readout — a disappointing result would likely reverse a meaningful chunk of the recent run-up",
+    "Near the 52-week high heading into the catalyst — less margin for error than when this name was trading near its lows",
+    "H.C. Wainwright's $75 target is a real outlier well above the broader consensus — treating it as the base case would be a mistake",
+    "Small-cap biotech volatility cuts both ways — the same mechanics driving the recent run-up can reverse sharply on any pre-data sentiment shift"
+  ],
+  "estimateDates": [
+    { "event": "SANRECO Phase 2 Topline", "dateRange": "Aug 2026", "note": "Binary readout the stock has already run up into", "est": "Positive/negative on the primary endpoint", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -35, "price": 7.48 },
+    { "label": "Base", "color": "yellow", "pct": 45, "price": 16.68 },
+    { "label": "Bull", "color": "green", "pct": 95, "price": 22.43 },
+    { "label": "Moon", "color": "purple", "pct": 153.7, "price": 29.17 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (7 analysts)", "target": 29.17, "rating": "Buy" },
+    { "firm": "H.C. Wainwright (outlier)", "target": 75.00, "rating": "Buy", "note": "Well above the broader consensus — real but not representative" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Fed holds at 3.50–3.75%, but new Chair Warsh's hawkish tone has 9 of 18 officials projecting a further 2026 hike, with the next FOMC decision Jul 28–29, 2026.",
+    "inflationNote": "Core inflation remains above target and the 10-year yield sits near 4.48% — a modest headwind for small-cap biotechs generally.",
+    "sectorImpact": "The SANRECO Phase 2 data readout is entirely macro-independent — clinical trial results don't respond to interest rates.",
+    "summary": "LOW — this is one of the more macro-independent names on the board since the near-term catalyst is a pure clinical data readout."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 11.50, "note": "Current price — near the 52-week high after a sustained run-up into the August catalyst", "timing": "Scale in (small)" },
+      { "label": "Entry 2", "level": 9.00, "rangeMax": 9.75, "note": "Below the recent run-up — best R/R if some pre-data profit-taking occurs", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 7.00, "note": "Deep dip — only on a broad biotech selloff before the data", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 16.68, "pct": 45.0, "note": "Base — data reads modestly positive or mixed" },
+    "tp2": { "price": 22.43, "pct": 95.0, "note": "Bull — clean positive SANRECO data, hits toward the consensus range" },
+    "tp3": { "price": 29.17, "pct": 153.7, "note": "Moon — strong positive data confirms best-in-class potential, hits full consensus target", "moon": true },
+    "stopLoss": {
+      "tight": 8.50, "tightPct": -26.1, "tightNote": "Below the recent run-up base — thesis-neutral but pre-data momentum reversing",
+      "hard": 6.00, "hardPct": -47.8, "hardNote": "Deep breach — would suggest a negative pre-data signal or broad biotech capitulation",
+      "riskReward": "4.5 : 1", "rrNote": "From Entry 2 ($9.38 mid) tight stop vs TP2", "rrWarning": "Reasonable R/R but the easy re-rate has already happened once — this is a smaller second bite, not a fresh discovery"
+    },
+    "verdict": "ค่าขนม — small position only. Real catalyst still ahead (August SANRECO data), but the stock already ran hard into it and upside has compressed accordingly.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "regulatory_approval",
+    "preRunup": "SLN has shown a real, sustained pre-data runup this cycle — roughly doubling over the two weeks since it was first picked, in anticipation of the August SANRECO readout, a different pattern from names that show minimal pre-event drift.",
+    "preRunupTiming": "sustained multi-week runup into the data readout, atypical for this cohort",
+    "preRunupPct": "roughly +90% to +100% over the two weeks prior to this report",
+    "postWin": {
+      "avgPct": 40,
+      "range": "+20% to +60%",
+      "note": "Given the stock has already priced in significant optimism ahead of the data, a positive readout would likely still drive a real move but proportionally smaller than if the stock were still at its prior lows.",
+      "exampleDate": "estimate given the pre-data runup already observed"
+    },
+    "postLose": {
+      "avgPct": -40,
+      "range": "-30% to -55%",
+      "note": "A disappointing Phase 2 readout after this much pre-data run-up would likely produce an outsized reversal, giving back a large portion of the recent gains on top of the standard negative-data reaction.",
+      "exampleDate": "general small-cap biotech pattern, amplified by the pre-data runup"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "Small-cap ($545M) that has already run hard into its own binary catalyst — 2% sizing reflects the reduced margin of safety compared to when this name was first picked near its lows."
+    },
+    "stopPreCatalyst": { "pct": -26, "price": 8.50, "note": "Below the recent run-up base — thesis-neutral but pre-data momentum reversing" },
+    "stopPostCatalyst": { "pct": -40, "note": "A negative or ambiguous SANRECO readout would likely reverse much of the recent run-up — exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "SLN",
+      "event": "Sustained run-up from ~$6-7 to $11.50 ahead of the August SANRECO data",
+      "date": "Jul 2026",
+      "movePct": 90,
+      "days": 8,
+      "outcome": "good",
+      "note": "Same-company precedent showing this stock has already captured significant pre-data optimism, the key context for sizing this refresh."
+    }
+  ],
+  "sources": [
+    "https://www.stocktitan.net/news/SLN/silence-therapeutics-completes-enrollment-in-sanreco-phase-2-study-qffui6nthphl.html",
+    "https://stockanalysis.com/stocks/sln/",
+    "https://stockanalysis.com/stocks/sln/forecast/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "การอัปเดตรอบนี้ต้องตรงไปตรงมา: Silence Therapeutics วิ่งขึ้นมาแรงแล้วก่อนถึง catalyst ของตัวเอง upside จริงบีบแคบลงต่ำกว่าเกณฑ์ 200%+ ของบอร์ดนี้มาก หุ้นขึ้นเกือบเท่าตัวตั้งแต่ถูกเลือกครั้งแรกเมื่อสองสัปดาห์ก่อน (จาก ~$6-7 เป็น $11.50) และเป้าเฉลี่ยนักวิเคราะห์ 7 คนที่ $29.17 ตอนนี้หมายถึง +154% เท่านั้น — เป็นตัวเลขกว้างจริง แต่ไม่ใช่ moonshot ที่สะอาดแบบเคร่งครัดแล้ว สิ่งที่ไม่เปลี่ยน: ข้อมูล topline Phase 2 SANRECO ของ divesiran ใน polycythemia vera มีกำหนดจริงในเดือนส.ค. 2026 และยังเป็น binary readout จริง ตลาดแค่ price in ความหวังไปมากแล้วก่อนข้อมูลจริงจะออก",
+      "priceNote": "ขึ้น 5.99% วันนี้ ใกล้ 52-week high ต่อเนื่องวิ่งขึ้นก่อนข้อมูล topline Phase 2 SANRECO เดือนส.ค. 2026",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "ข้อมูล Topline Phase 2 SANRECO (Divesiran)", "description": "ข้อมูล topline Phase 2 SANRECO ของ divesiran 6mg ในผู้ป่วย polycythemia vera ที่ต้อง phlebotomy กำหนดเดือนส.ค. 2026 — binary readout จริงระยะใกล้ที่หุ้นวิ่งขึ้นรับก่อนแล้ว" }
+      ],
+      "risks": [
+        "Upside จริงบีบแคบเหลือ +154% (เป้าเฉลี่ยนักวิเคราะห์ 7 คน) — หุ้นวิ่งขึ้นมาแรงแล้ว (เกือบเท่าตัวใน 2 สัปดาห์) ก่อนข้อมูลจริงจะออก หมายความว่าความหวังจำนวนมากอาจ price in ไปแล้ว",
+        "ยังเป็น Phase 2 readout แบบ binary จริง — ผลผิดหวังน่าจะย้อนกลับส่วนใหญ่ของการวิ่งขึ้นล่าสุด",
+        "ใกล้ 52-week high เข้าสู่ catalyst — margin of error น้อยกว่าตอนหุ้นเทรดใกล้จุดต่ำสุด",
+        "เป้า H.C. Wainwright ที่ $75 เป็น outlier จริงที่สูงกว่า consensus กว้างมาก — มองเป็น base case จะผิดพลาด",
+        "ความผันผวนหุ้นเล็ก biotech มีสองด้าน — กลไกเดียวกับที่ดันการวิ่งขึ้นล่าสุดก็กลับตัวแรงได้จาก sentiment ก่อนข้อมูลออก"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% แต่ประธาน Warsh สายเหยี่ยว 9/18 คนมองขึ้นดอกเบี้ยอีกในปี 2026 FOMC ถัดไป 28-29 ก.ค. 2026",
+        "inflationNote": "เงินเฟ้อ core ยังสูงกว่าเป้า yield 10 ปีใกล้ 4.48% เป็นแรงกดดันปานกลางต่อ biotech เล็กทั่วไป",
+        "sectorImpact": "ข้อมูล readout Phase 2 SANRECO แทบไม่ผูกกับ macro เลย — ผลการทดลอง clinical ไม่ตอบสนองต่ออัตราดอกเบี้ย",
+        "summary": "ความเสี่ยง Fed ต่ำ — เป็นหนึ่งในหุ้นที่ macro-independent ที่สุดในบอร์ดนี้เพราะ catalyst ระยะใกล้เป็นข้อมูล clinical data ล้วน ๆ"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม — size เล็กเท่านั้น catalyst จริงยังรออยู่ (ข้อมูล SANRECO ส.ค.) แต่หุ้นวิ่งขึ้นมาแรงแล้วก่อนถึง upside จึงบีบแคบตาม",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ใกล้ 52-week high หลังวิ่งขึ้นต่อเนื่องก่อนข้อมูลส.ค.", "timing": "Scale in (เล็ก)" },
+          { "note": "ต่ำกว่าการวิ่งขึ้นล่าสุด — R/R ดีที่สุดถ้ามี profit-taking ก่อนข้อมูลออก", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงหนัก — เฉพาะ biotech เทขายรวมก่อนข้อมูลออก", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — ข้อมูลออกมาบวกปานกลางหรือผสม" },
+        "tp2": { "note": "Bull — ข้อมูล SANRECO บวกชัดเจน แตะช่วง consensus" },
+        "tp3": { "note": "Moon — ข้อมูลบวกแรงยืนยันศักยภาพ best-in-class แตะเป้า consensus เต็ม", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดฐานการวิ่งขึ้นล่าสุด — thesis ยังไม่พัง แต่ momentum ก่อนข้อมูลกลับตัว",
+          "hardNote": "หลุดลึก — จะบ่งชี้สัญญาณลบก่อนข้อมูลออกหรือ biotech capitulation กว้าง",
+          "rrNote": "จาก Entry 2 ($9.38 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R สมเหตุสมผลแต่ re-rate ง่ายเกิดขึ้นไปแล้วครั้งหนึ่ง — นี่คือรอบที่สองที่เล็กกว่า ไม่ใช่การค้นพบใหม่"
+        }
+      },
+      "estimateDates": [
+        { "event": "ข้อมูล Topline Phase 2 SANRECO", "note": "Binary readout ที่หุ้นวิ่งขึ้นรับก่อนแล้ว" }
+      ]
+    }
+  }
+}
