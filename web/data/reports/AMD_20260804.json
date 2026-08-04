@@ -1,0 +1,204 @@
+{
+  "ticker": "AMD",
+  "companyName": "Advanced Micro Devices, Inc.",
+  "companyDescription": "AI GPU / CPU challenger to Nvidia · Instinct MI-series accelerators + EPYC server CPUs · $5B Anthropic investment + up to 2GW MI450/Helios deployment deal signed Jul 22, 2026",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-04T18:00:00.000Z",
+  "price": 484.64,
+  "priceChange": 1.78,
+  "priceNote": "Closed $484.64 (+1.78%) Aug 3, up further ~2% in after-hours ahead of tonight's Q2 2026 earnings (after close, Aug 4). Stock has pulled back ~13% from its Jul 22 high near $554 (set the day of the Anthropic deal + Advancing AI event) as a broader AI-capex-sustainability selloff hit chip names through late July (AMD -5% Jul 16, -5.7% Jul 30). Still well above the 52-week low ($149.22), below the 52-week high ($584.73).",
+  "marketCap": "$790.3B",
+  "sector": "Technology / Semiconductors (AI Accelerators)",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 80,
+  "summary": "AMD reports Q2 2026 results tonight (Aug 4) after market close — guidance called for ~$11.2B revenue (+46% YoY) and consensus sits at $1.61 EPS (+235% YoY); options price a ~12.3% move either direction. This is the first earnings print since the Jul 22 Anthropic deal (up to 2GW MI450/Helios deployment + up to $5B AMD investment in Anthropic), which pushed AMD's total disclosed AI deployment pipeline to ~20GW across Anthropic, OpenAI, Meta, Microsoft Azure and Oracle. The stock has actually given back most of that news pop, falling from ~$554 to ~$485 amid a broader AI-capex-sustainability selloff (Samsung's weak print, financing-structure worries) that hit AMD, Intel and Marvell alike — not AMD-specific bad news. That pullback plus a still wide analyst target range ($530 consensus to $700 Cantor/UBS bull case) sets up a real binary event tonight: MI450/Helios ramp commentary and whether the Anthropic/Microsoft/OpenAI deployment pipeline is converting into near-term guidance.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "Reports today after market close, call at 5:00pm ET. Guidance called for ~$11.2B revenue (+46% YoY, +9% QoQ); consensus EPS $1.61 (+235% YoY). First print since the Jul 22 Anthropic deal — market wants MI450/Helios ramp commentary and evidence the ~20GW deployment pipeline is converting to near-term revenue. Options price a ~12.3% move.",
+      "urgencyLabel": "TODAY (after close)",
+      "dateBadge": "Aug 4, 2026",
+      "catalystDate": "2026-08-04",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🚀",
+      "name": "MI450 / Helios Shipment Ramp",
+      "description": "MI450 Series accelerators begin shipping in H2 2026; first gigawatt of the Anthropic Helios rack-scale deployment is slated for H1 2027. Lisa Su has said customer engagement around MI450/Helios is 'strengthening, with leading customer forecasts exceeding our initial expectations' — tonight's guidance is the first real test of that claim.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📅",
+      "name": "Q3 2026 Earnings",
+      "description": "Next scheduled report after tonight's print — based on AMD's historical cadence (Q3 2025 reported early Nov 2025), expected early November 2026. Will show the first full-quarter read on Anthropic/Microsoft Azure Helios revenue contribution.",
+      "urgencyLabel": "~3 MONTHS",
+      "dateBadge": "Nov 2026",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Tonight's Q2 earnings is a genuine binary event — options price a ~12.3% move; AMD's own history shows both extremes are live (May 2026 +25.9% beat, Feb 2026 -20.3% miss)",
+    "Broader AI-capex-sustainability selloff (Samsung's weak print, worries over circular AI financing/debt structures) erased ~$1.3T across the chip sector in July and dragged AMD down ~13% from its post-Anthropic-deal high — this is sector sentiment risk, not just an AMD-specific catalyst risk",
+    "Analyst target range is wide ($530.36 consensus/36 analysts vs $640-700 bull case from Goldman/Cantor/UBS) — a lot of the bull case still assumes MI450/Helios execution that tonight's guidance will be the first real test of",
+    "Anthropic deal's $5B AMD investment is contingent on Anthropic hitting milestones, and the first GW of Helios deployment isn't slated until H1 2027 — near-term revenue conversion is still mostly a promise, not booked revenue",
+    "Nvidia remains the dominant AI-accelerator player by a wide margin; AMD's ~20GW disclosed pipeline is real share-taking progress but still small relative to Nvidia's installed base and forward bookings"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Aug 4, 2026 (after close)", "note": "Revenue guide $11.2B ±$300M (+46% YoY); EPS consensus $1.61; MI450/Helios ramp commentary is the swing factor", "est": "Consensus $1.61 EPS / $11.2B rev", "highlight": "blue" },
+    { "event": "Q3 2026 Earnings", "dateRange": "~Early Nov 2026 (est.)", "note": "First full-quarter read on Anthropic/Azure Helios revenue contribution", "est": "Not yet guided", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -18, "price": 397.41 },
+    { "label": "Base", "color": "yellow", "pct": 9.4, "price": 530.36 },
+    { "label": "Bull", "color": "green", "pct": 32.1, "price": 640.00 },
+    { "label": "Moon", "color": "purple", "pct": 44.4, "price": 700.00 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (36 analysts, as of Aug 3)", "target": 530.36, "rating": "Buy" },
+    { "firm": "Cantor Fitzgerald", "target": 700.00, "rating": "Buy", "note": "Lifted on server CPU share gains" },
+    { "firm": "Goldman Sachs", "target": 640.00, "rating": "Buy", "note": "Raised from $450 on Jul 5, citing agentic-AI-driven CPU demand" },
+    { "firm": "Bank of America", "target": 620.00, "rating": "Buy", "note": "Raised from $560 after the Jul 23 Advancing AI event" },
+    { "firm": "UBS", "target": 670.00, "rating": "Buy", "note": "Raised Jun 29 on server CPU share gains" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held at 3.50-3.75% at the Jul 28-29 FOMC (3 dissents in favor of a hike — the most since Sept 2016). No FOMC meeting in August; next decision is Sept 15-16, 2026, after markets see July and August CPI.",
+    "inflationNote": "Core inflation still running above target; hawkish dissent signals real risk of a rate move at the September meeting if CPI doesn't cool further.",
+    "sectorImpact": "AMD and high-multiple AI-semis names are the most rate-sensitive corner of the market, but the July selloff that pulled AMD down from $554 to $485 was driven more by AI-capex-sustainability and financing-structure worries (Samsung's weak print, debt concerns) than by Fed policy directly.",
+    "summary": "MEDIUM — tonight's earnings catalyst is macro-independent, and the Fed is on hold with no August meeting, but hawkish dissents raise real September tail risk, and AMD has already shown this quarter that AI-sector sentiment (not just Fed policy) can drive double-digit swings independent of company fundamentals."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 484.64, "note": "Current price — ahead of tonight's earnings; options price a ~12% move so this is a genuinely volatile entry point", "timing": "Now (small, pre-earnings)" },
+      { "label": "Entry 2", "level": 430.00, "rangeMax": 450.00, "note": "Late-July AI-capex-selloff support zone (Jul 27-30 lows)", "timing": "If dips post-earnings", "preferred": true },
+      { "label": "Entry 3", "level": 390.00, "note": "Magnitude of AMD's worst historical earnings-miss drawdown (Feb 2026: -20.3%) applied from current price", "timing": "Deep dip only, post-bad-print" }
+    ],
+    "tp1": { "price": 530.36, "pct": 9.4, "note": "Base — Q2 print in-line, hits current analyst consensus" },
+    "tp2": { "price": 640.00, "pct": 32.1, "note": "Bull — MI450/Helios guidance beats, hits Goldman Sachs target" },
+    "tp3": { "price": 700.00, "pct": 44.4, "note": "Moon — Anthropic 2GW deal scales faster than guided, ~20GW pipeline converts, hits Cantor/UBS target", "moon": true },
+    "stopLoss": {
+      "tight": 430.00, "tightPct": -11.3, "tightNote": "Below the late-July AI-selloff support zone",
+      "hard": 390.00, "hardPct": -19.5, "hardNote": "Matches AMD's worst historical earnings-miss drawdown magnitude (Feb 2026 -20.3%) — thesis-breaking if guidance disappoints and holds",
+      "riskReward": "2.8 : 1", "rrNote": "From current price, tight stop ($430) vs TP2 ($640)", "rrWarning": "Earnings tonight is a binary event (options price ~12% move) — decent R/R on paper but size for the volatility, not just the ratio"
+    },
+    "verdict": "BUY — core AI-semis holding; the July pullback from post-Anthropic-deal highs is a better entry than chasing $554, but tonight's earnings is a real coin-flip event (options price ~12% swing). Scale in rather than lump sum around the print.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "AMD showed no meaningful multi-week pre-earnings runup this cycle — if anything the stock has drifted down into tonight's print (-13% from the Jul 22 Anthropic-deal high) as the broader AI-capex-sustainability selloff overshadowed company-specific momentum.",
+    "preRunupTiming": "no sustained pre-earnings runup this cycle — sector-wide pullback dominated instead",
+    "preRunupPct": "-13% into the print (from Jul 22 high, sector-driven, not AMD-specific)",
+    "postWin": {
+      "avgPct": 15,
+      "range": "+4% to +26%",
+      "note": "AMD's last two 'beat' prints: May 5, 2026 saw shares surge +25.9% (vs a 7.0% implied move) on a blowout quarter; May 2025 produced a milder +4.1% gain. AMD has closed up the day after earnings ~55% of the time across 40+ reports since 2016, averaging roughly +1.4% with a ~7.5% standard deviation.",
+      "exampleDate": "May 2026 (AMD Q1 2026 print)"
+    },
+    "postLose": {
+      "avgPct": -8,
+      "range": "-1% to -20%",
+      "note": "AMD's worst recent miss: Feb 3, 2026 shares fell -20.3% (vs a 6.1% implied move) on soft guidance. Other soft prints were milder — Aug 2025 -6.1%, Nov 2025 -1.3%, Feb 2025 -2.6%.",
+      "exampleDate": "Feb 2026 (AMD Q4 2025 print)"
+    },
+    "spotSizing": {
+      "pct": 8,
+      "reason": "Mega-cap ($790B), real hyperscaler deployment pipeline (~20GW disclosed), but tonight's earnings is a genuine binary event with a ~12% implied move and AMD's own history shows both a +26% and a -20% outcome are live — size as a core-lane holding, not a full-conviction add going into the print."
+    },
+    "stopPreCatalyst": { "pct": -11.3, "price": 430.00, "note": "Below the late-July AI-selloff support zone — thesis-neutral but momentum stalling" },
+    "stopPostCatalyst": { "pct": -19.5, "note": "If Q2 guidance shows the Anthropic/Azure Helios pipeline isn't converting, or MI450 commentary disappoints, exit near the historical worst-case drawdown level ($390)" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "AMD",
+      "event": "Q1 2026 earnings blowout beat",
+      "date": "May 2026",
+      "movePct": 25.9,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company precedent for how AMD reacts when a print clearly beats and options-implied move (7.0%) undershoots the real reaction — the closest historical analog for tonight's ~12.3%-implied print if guidance beats."
+    },
+    {
+      "ticker": "AMD",
+      "event": "Q4 2025 earnings miss on soft guidance",
+      "date": "Feb 2026",
+      "movePct": -20.3,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Same-company precedent for the downside case — shows AMD can drop double-digits on disappointing forward guidance even without any external shock, directly relevant to tonight's MI450/Helios guidance risk."
+    },
+    {
+      "ticker": "AMD",
+      "event": "Anthropic $5B investment + up to 2GW MI450/Helios deployment deal",
+      "date": "Jul 2026",
+      "movePct": 8.04,
+      "days": 1,
+      "outcome": "good",
+      "note": "The prior dated catalyst (Jul 22 Advancing AI event + Anthropic deal same-day) — drove an 8% pop that has since fully round-tripped in the broader AI-capex selloff, showing gains from deal announcements alone can be fragile without earnings confirmation."
+    }
+  ],
+  "sources": [
+    "https://www.tikr.com/blog/amd-reports-q2-2026-earnings-august-4-what-the-stock-needs-to-show-after-its-anthropic-deal",
+    "https://www.tipranks.com/news/amd-stock-price-forecast-amd-braces-for-a-12-28-move-as-q2-earnings-near",
+    "https://stockanalysis.com/stocks/amd/",
+    "https://www.benzinga.com/markets/tech/26/08/60872788/amd-options-price-9-percent-earnings-move-history",
+    "https://ir.amd.com/news-events/press-releases/detail/1292/amd-and-anthropic-announce-strategic-partnership-to-deploy-up-to-2-gigawatts-of-amd-instinct-mi450-series-gpus",
+    "https://sg.finance.yahoo.com/news/goldman-sachs-resets-amd-stock-223300747.html",
+    "https://www.thestreet.com/investing/stocks/amd-advanced-micro-devices-inc-stock-price-target-goldman-sachs-july-2026",
+    "https://www.cnbc.com/2026/07/29/fed-meeting-today-live-updates.html",
+    "https://eciks.org/17130-amd-stock-semiconductor-selloff-ai"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "AMD รายงานผลประกอบการ Q2 2026 คืนนี้ (4 ส.ค.) หลังตลาดปิด — บริษัทเคยให้ guidance รายได้ราว $11.2B (+46% YoY) และ consensus EPS อยู่ที่ $1.61 (+235% YoY) ตลาด options ราคาการเคลื่อนไหวไว้ที่ราว 12.3% ทั้งสองทาง นี่คือรายงานแรกหลังดีล Anthropic เมื่อ 22 ก.ค. (ลงทุนสูงสุด $5B ใน Anthropic + deploy MI450/Helios สูงสุด 2GW) ที่ดัน pipeline การ deploy AI รวมของ AMD ขึ้นไปราว 20GW ครอบคลุม Anthropic, OpenAI, Meta, Microsoft Azure และ Oracle แต่หุ้นกลับคืนกำไรเกือบทั้งหมดจากข่าวนั้น ร่วงจาก ~$554 มาที่ ~$485 จากการเทขายกลุ่ม AI-capex ทั้ง sector (ผลประกอบการอ่อนของ Samsung + ความกังวลโครงสร้างการเงิน) ที่กระทบ AMD, Intel, Marvell เหมือนกันหมด ไม่ใช่ข่าวลบเฉพาะตัว AMD การร่วงนี้บวกกับช่วงเป้าราคานักวิเคราะห์ที่กว้าง ($530 consensus ถึง $700 bull case จาก Cantor/UBS) ทำให้คืนนี้เป็น event แบบ binary จริง ๆ — คอมเมนต์เรื่อง MI450/Helios ramp และว่า pipeline การ deploy จาก Anthropic/Microsoft/OpenAI กำลังแปลงเป็น guidance ระยะใกล้หรือไม่",
+      "priceNote": "ปิดที่ $484.64 (+1.78%) เมื่อ 3 ส.ค. ขึ้นต่ออีกราว 2% ใน after-hours ก่อนผลประกอบการ Q2 2026 คืนนี้ (หลังตลาดปิด 4 ส.ค.) หุ้นร่วงมาแล้วราว 13% จากจุดสูงสุด 22 ก.ค. ที่ ~$554 (วันเดียวกับดีล Anthropic + งาน Advancing AI) จากการเทขายกลุ่ม AI-capex ทั้ง sector ช่วงปลายก.ค. (AMD -5% เมื่อ 16 ก.ค., -5.7% เมื่อ 30 ก.ค.) ยังสูงกว่า 52-week low ($149.22) มาก แต่ต่ำกว่า 52-week high ($584.73)",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "ผลประกอบการ Q2 2026", "description": "รายงานวันนี้หลังตลาดปิด ประชุมสาย 5 โมงเย็น ET เคยให้ guidance รายได้ ~$11.2B (+46% YoY) EPS consensus $1.61 (+235% YoY) นี่คือรายงานแรกหลังดีล Anthropic 22 ก.ค. — ตลาดต้องการคอมเมนต์เรื่อง MI450/Helios ramp และหลักฐานว่า pipeline การ deploy ~20GW กำลังแปลงเป็นรายได้ระยะใกล้ ตลาด options ราคาการเคลื่อนไหวไว้ราว 12.3%" },
+        { "name": "MI450 / Helios เริ่มส่งมอบ", "description": "MI450 Series เริ่มส่งมอบครึ่งหลังปี 2026 GW แรกของดีล Helios กับ Anthropic คาด H1 2027 Lisa Su บอกว่า customer engagement รอบ MI450/Helios แข็งแกร่งขึ้นเรื่อย ๆ เกินคาดการณ์เดิม — guidance คืนนี้คือบททดสอบแรกจริง ๆ" },
+        { "name": "ผลประกอบการ Q3 2026", "description": "รายงานถัดไปหลังคืนนี้ อิงจากรอบปกติของ AMD (Q3 2025 รายงานต้นพ.ย. 2025) คาดต้นพ.ย. 2026 จะเป็นการอ่านรายได้จาก Anthropic/Azure Helios เต็มไตรมาสแรก" }
+      ],
+      "risks": [
+        "ผลประกอบการคืนนี้เป็น event แบบ binary จริง ๆ — ตลาด options ราคาการเคลื่อนไหวไว้ราว 12.3% ประวัติของ AMD เองก็แสดงทั้งสองขั้ว (พ.ค. 2026 +25.9% ตอน beat, ก.พ. 2026 -20.3% ตอน miss)",
+        "การเทขายกลุ่ม AI-capex sustainability ทั้ง sector (ผลประกอบการอ่อนของ Samsung ความกังวลโครงสร้างหนี้/การเงิน AI) ทำมูลค่าตลาดกลุ่มชิปหายไปราว $1.3 ล้านล้านดอลลาร์ในเดือนก.ค. และดึง AMD ลงมาราว 13% จากจุดสูงสุดหลังดีล Anthropic — เป็นความเสี่ยง sentiment ทั้ง sector ไม่ใช่แค่ความเสี่ยงเฉพาะ catalyst ของ AMD",
+        "ช่วงเป้าราคานักวิเคราะห์กว้างมาก ($530.36 consensus จาก 36 นักวิเคราะห์ เทียบกับ bull case $640-700 จาก Goldman/Cantor/UBS) — bull case ส่วนใหญ่ยังอิงกับการ execute MI450/Helios ที่ guidance คืนนี้คือบททดสอบแรกจริง ๆ",
+        "การลงทุน $5B ของ AMD ใน Anthropic มีเงื่อนไข milestone และ GW แรกของ Helios ยังไม่ deploy จนถึง H1 2027 — การแปลงเป็นรายได้ระยะใกล้ยังเป็นแค่คำสัญญา ไม่ใช่รายได้ที่ book แล้ว",
+        "Nvidia ยังครองตลาด AI accelerator ด้วยส่วนแบ่งทิ้งห่างมาก pipeline ~20GW ที่เปิดเผยของ AMD เป็นความคืบหน้าจริงในการแย่งส่วนแบ่ง แต่ยังเล็กเทียบกับฐานลูกค้าและ backlog ของ Nvidia"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% ในการประชุม FOMC 28-29 ก.ค. (มีเสียงค้าน 3 เสียงให้ขึ้นดอกเบี้ย มากที่สุดตั้งแต่ก.ย. 2016) ไม่มีประชุม FOMC เดือนส.ค. ครั้งถัดไปคือ 15-16 ก.ย. 2026 หลังเห็นตัวเลข CPI ก.ค.-ส.ค.",
+        "inflationNote": "เงินเฟ้อ core ยังสูงกว่าเป้า เสียงค้านสายเหยี่ยวส่งสัญญาณความเสี่ยงจริงที่จะขึ้นดอกเบี้ยในเดือนก.ย. ถ้า CPI ไม่ชะลอลงอีก",
+        "sectorImpact": "AMD และหุ้น AI-semis multiple สูงเป็นกลุ่มที่ sensitive ต่อดอกเบี้ยที่สุด แต่การเทขายเดือนก.ค. ที่ดึง AMD จาก $554 มาที่ $485 มาจากความกังวล AI-capex sustainability และโครงสร้างการเงิน (ผลประกอบการอ่อนของ Samsung ความกังวลหนี้) มากกว่านโยบาย Fed โดยตรง",
+        "summary": "ความเสี่ยง Fed ระดับกลาง — catalyst คืนนี้ไม่ผูกกับ macro และ Fed หยุดขึ้นดอกเบี้ยไม่มีประชุมเดือนส.ค. แต่เสียงค้านสายเหยี่ยวสร้างความเสี่ยงจริงในเดือนก.ย. และ AMD เองก็เพิ่งแสดงให้เห็นแล้วว่า sentiment กลุ่ม AI (ไม่ใช่แค่นโยบาย Fed) ทำให้หุ้นแกว่งสองหลักได้โดยไม่ต้องมีปัจจัยพื้นฐานเฉพาะบริษัท"
+      },
+      "entryStrategy": {
+        "verdict": "BUY — core holding กลุ่ม AI-semis การย่อตัวเดือนก.ค. จากจุดสูงสุดหลังดีล Anthropic เป็นจุดเข้าที่ดีกว่าไล่ราคาที่ $554 แต่ผลประกอบการคืนนี้เป็น event แบบเสี่ยง 50/50 จริง (options ราคาการแกว่งไว้ราว 12%) ทยอยเข้าดีกว่าลงทีเดียวรอบผลประกอบการ",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ก่อนผลประกอบการคืนนี้ ตลาด options ราคาการเคลื่อนไหวไว้ราว 12% เป็นจุดเข้าที่ผันผวนจริง", "timing": "ตอนนี้ (เล็ก ก่อนผลประกอบการ)" },
+          { "note": "โซนแนวรับช่วงเทขาย AI-capex ปลายก.ค. (จุดต่ำสุด 27-30 ก.ค.)", "timing": "ถ้าย่อหลังผลประกอบการ" },
+          { "note": "เทียบเท่าขนาดการร่วงจากผลประกอบการแย่ที่สุดในอดีตของ AMD (ก.พ. 2026: -20.3%) จากราคาปัจจุบัน", "timing": "Deep dip only หลังผลประกอบการแย่" }
+        ],
+        "tp1": { "note": "Base — ผลประกอบการ Q2 ตามคาด แตะเป้า consensus นักวิเคราะห์ปัจจุบัน" },
+        "tp2": { "note": "Bull — guidance MI450/Helios เกินคาด แตะเป้า Goldman Sachs" },
+        "tp3": { "note": "Moon — ดีล Anthropic 2GW ขยายตัวเร็วกว่าที่ guide ไว้ pipeline ~20GW แปลงเป็นรายได้ แตะเป้า Cantor/UBS", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดโซนแนวรับช่วงเทขาย AI-capex ปลายก.ค.",
+          "hardNote": "เทียบเท่าขนาดการร่วงจากผลประกอบการแย่ที่สุดในอดีตของ AMD (ก.พ. 2026 -20.3%) — thesis พังถ้า guidance ผิดหวังและราคาทรงตัวต่ำ",
+          "rrNote": "จากราคาปัจจุบัน stop แคบ ($430) vs TP2 ($640)",
+          "rrWarning": "ผลประกอบการคืนนี้เป็น event แบบ binary (options ราคาการแกว่งไว้ราว 12%) — R/R ดูดีในกระดาษ แต่ต้อง size ตามความผันผวนจริง ไม่ใช่แค่ตัวเลขอัตราส่วน"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q2 2026", "note": "Guidance รายได้ $11.2B ±$300M (+46% YoY) EPS consensus $1.61 คอมเมนต์ MI450/Helios ramp คือตัวแปรชี้ขาด" },
+        { "event": "ผลประกอบการ Q3 2026", "note": "อ่านรายได้จาก Anthropic/Azure Helios เต็มไตรมาสแรก" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "ticker": "SERV",
+  "companyName": "Serve Robotics Inc.",
+  "companyDescription": "Sidewalk delivery robotics · ~2,000-robot fleet across 20 cities (44 cities/14 states incl. Diligent healthcare footprint) · Uber Eats/DoorDash/Nvidia/White Castle partnerships + Diligent Robotics healthcare acquisition · Q2 2026 earnings due Aug 6, 2026",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-04T00:00:00.000Z",
+  "price": 5.65,
+  "priceChange": 18.2,
+  "priceNote": "Self-fetched today (no live-prices.json cache yet). Closed Aug 3, 2026 at $5.65, up ~18% in the session as robotics names rallied broadly (Ouster +6%, Symbotic +4%) into Serve's Q2 print on Thursday Aug 6 — driven by options positioning and pre-earnings momentum, not new fundamental news. Still well below the $18.64 52-week high and now a step above the $4.32 low, but the sharp 2-day pump raises sell-the-news risk into a binary event just 2 days away.",
+  "marketCap": "$437M",
+  "sector": "Technology / Robotics (Autonomous Delivery)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Speculative",
+  "score": 70,
+  "summary": "Serve Robotics reports Q2 2026 earnings after the close on Aug 6, 2026 — just 2 days out — with the stock up ~18% into the print on options positioning and a broad robotics-sector risk-on tape rather than fresh fundamentals. Consensus expects a $0.69/share GAAP loss (92% wider YoY) against ~$28M FY2026 revenue guidance (10x 2025), so the market is betting the ~2,000-robot fleet across 44 cities/14 states (with Diligent's hospital-robotics footprint) keeps scaling faster than losses widen. SERV's own earnings-day history stays genuinely mixed (+12.3% on the last beat, -3% on the last GAAP miss), and this cycle's unusually large pre-print rally adds a fresh sell-the-news risk on top of that. All 8 covering analysts still see meaningful upside (consensus $18.45, +226% from here, though Freedom Capital moved to Hold), anchored by real partnerships (Uber Eats, DoorDash, Nvidia, White Castle) and the Diligent healthcare diversification. Small-cap, pre-profitability, binary event in 48 hours — speculative sizing only, and chasing the current pump is not the preferred entry.",
+  "catalysts": [
+    {
+      "icon": "🤖",
+      "name": "Q2 2026 Earnings",
+      "description": "Serve reports after market close Aug 6, 2026. Consensus expects a $0.69/share GAAP loss (92% wider YoY) against ~$28M FY2026 revenue guidance (10x 2025). The stock's own earnings-day history is a coin flip — Q4 2025 results drove a +12.3% pop, but the May 2026 Q1 print fell over 3% on a GAAP net loss miss despite 578% YoY revenue growth. With the stock already up ~18% into the print, the market needs to see losses narrowing, not just faster top-line growth, or risk a sell-the-news reversal.",
+      "urgencyLabel": "2 DAYS",
+      "dateBadge": "Aug 6, 2026",
+      "catalystDate": "2026-08-06",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "🚚",
+      "name": "Fleet at 2,000+ Robots, 44 Cities",
+      "description": "Fleet holds at ~2,000 robots across 20 core delivery cities, with the combined Serve + Diligent footprint spanning 44 cities in 14 states and nearing 2M cumulative deliveries. Focus has shifted from pure fleet growth to increasing revenue per robot — an operational proof point the market will scrutinize on the Aug 6 call.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "🏥",
+      "name": "Diligent Robotics Healthcare Diversification",
+      "description": "The Diligent Robotics acquisition pushes Serve beyond food delivery into hospital service robotics — a diversification story that could re-rate the stock if it starts showing up materially in the revenue mix, alongside newer pilots like NoScrubs laundry delivery in LA.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Stock is up ~18% in the two sessions into Aug 6 on options positioning and sector-wide risk-on tape (not new company news) — elevated sell-the-news risk if the print merely meets expectations",
+    "Consensus expects a $0.69/share GAAP loss, 92% wider YoY — the market is pricing 10x revenue growth to ~$28M, but May 2026's -3% reaction shows the loss line, not revenue growth, drives the stock",
+    "Own earnings-day history is genuinely mixed: +12.3% on the last beat (Mar 2026) but -3%+ on the last miss (May 2026)",
+    "Consensus target ($18.45) implies a ~226% move — even the low end of the analyst range ($13, +130%) requires a lot of good news; Freedom Capital Markets already moved to Hold ($18) from Buy",
+    "Competition from well-capitalized players (DoorDash's own robotics efforts) and volatile small-cap robotics peers (e.g., Richtech Robotics fell ~35% in H1 2026 on financial-restatement concerns) show how fast sentiment can turn in this niche"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Aug 6, 2026 (after close)", "note": "Consensus wants losses narrowing on a 10x revenue ramp, not just faster top-line growth — the swing factor after May's GAAP-miss selloff", "est": "Consensus: -$0.69 EPS (loss widens 92% YoY); FY2026 revenue guide ~$28M", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -20, "price": 4.52 },
+    { "label": "Base", "color": "yellow", "pct": 30, "price": 7.35 },
+    { "label": "Bull", "color": "green", "pct": 130, "price": 13.00 },
+    { "label": "Moon", "color": "purple", "pct": 226, "price": 18.45 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (8 analysts)", "target": 18.45, "rating": "Strong Buy" },
+    { "firm": "Northland Securities", "target": 26.00, "rating": "Buy" },
+    { "firm": "Wedbush", "target": 22.00, "rating": "Buy" },
+    { "firm": "Oppenheimer", "target": 20.00, "rating": "Buy" },
+    { "firm": "Freedom Capital Markets", "target": 18.00, "rating": "Hold" },
+    { "firm": "Ladenburg Thalmann", "target": 17.00, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "The Fed held at 3.50–3.75% at the Jul 28–29, 2026 FOMC, though 3 members dissented in favor of a hike. The next decision is Sep 15–16, 2026, and remains a live meeting — the hawkish June dot plot put the median year-end 2026 projection at 3.8%, implying little room for cuts and a real chance of a hike depending on incoming CPI prints.",
+    "inflationNote": "Core inflation remains above target and long-end yields stay elevated — a real headwind for a pre-profitability small-cap that needs continued capital-market access to fund fleet expansion and integrate Diligent.",
+    "sectorImpact": "As an unprofitable small-cap growth name, SERV is among the more rate-sensitive picks in this screen — higher-for-longer compresses the multiple the market pays for growth, compounding the existing execution-risk discount and the binary risk of Thursday's print.",
+    "summary": "MEDIUM — Fed held steady in July with hawkish dissents and a live September meeting; for a pre-profitability micro-cap like SERV, a hawkish September surprise would compound any post-earnings weakness from Aug 6."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 5.65, "note": "Current price — up ~18% in 2 sessions into the Aug 6 print on options positioning/sector risk-on tape, not new fundamentals; chasing here into a binary event is not preferred", "timing": "Now (very small only)" },
+      { "label": "Entry 2", "level": 4.70, "rangeMax": 5.00, "note": "Near the pre-rally base (~$4.78 close before the pump) — best pre/post-earnings R/R if the run-up partially unwinds", "timing": "If pulls back", "preferred": true },
+      { "label": "Entry 3", "level": 4.32, "note": "52-week low — only on a broad small-cap growth selloff or a GAAP miss echoing the May 2026 reaction", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 7.35, "pct": 30.1, "note": "Base — Q2 shows continued 10x-pace revenue growth with losses in line, no fresh sell-the-news unwind" },
+    "tp2": { "price": 13.00, "pct": 130.1, "note": "Bull — clean beat-and-raise, losses narrow faster than the -$0.69 consensus" },
+    "tp3": { "price": 18.45, "pct": 226.5, "note": "Moon — beat + Diligent healthcare diversification starts showing up materially, hits full consensus target", "moon": true },
+    "stopLoss": {
+      "tight": 4.35, "tightPct": -10.3, "tightNote": "Below the pre-rally base (from a ~$4.85 Entry-2 cost basis) — would mean this week's options-driven pump has fully round-tripped",
+      "hard": 3.75, "hardPct": -22.7, "hardNote": "Well below the 52-week low — an Aug 6 miss with a widening loss beyond consensus would break the thesis",
+      "riskReward": "16.3 : 1", "rrNote": "From Entry 2 ($4.85 mid) tight stop vs TP2", "rrWarning": "Wide R/R on paper, but the stock is currently trading well above this entry zone (+16-18% pump) — wait for a pullback rather than chasing at $5.65 into a binary 2-day event"
+    },
+    "verdict": "SPECULATIVE — do not chase the pre-earnings pump at $5.65; small position now only if already positioned, add on a pullback to $4.70-5.00 or post-earnings weakness. Real growth story, but the market needs to see losses narrowing, not just revenue scaling, and this cycle's unusually large run-up raises sell-the-news risk on Aug 6.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "SERV has historically shown limited pre-earnings drift, sitting flat into the print and reacting sharply on the actual numbers (especially the GAAP loss line). This cycle breaks that pattern: the stock rallied as much as 18% in the two sessions before Aug 6, alongside a broader robotics-sector risk-on move (Ouster +6%, Symbotic +4%) and options positioning — a materially bigger pre-event move than prior quarters, which raises sell-the-news risk if the print merely meets expectations.",
+    "preRunupTiming": "2 trading days before the print (Aug 3-4, 2026), vs. minimal historical drift",
+    "preRunupPct": "+13% to +18% this cycle (vs. 0% to +3% typical)",
+    "postWin": {
+      "avgPct": 12.3,
+      "range": "+8% to +16%",
+      "note": "SERV's Q4 2025 results (reported Mar 11, 2026) drove a +12.31% pop — notable given the company's historical average earnings-day move is close to -4%, showing the market rewards a clean beat disproportionately for this name.",
+      "exampleDate": "Mar 2026"
+    },
+    "postLose": {
+      "avgPct": -3.5,
+      "range": "-3% to -5%",
+      "note": "SERV's Q1 2026 results (reported May 7, 2026) fell over 3% despite 578% YoY revenue growth, because the GAAP net loss missed consensus and expansion spend raised cash-burn concerns — shows the market cares about the loss line, not just growth. With the stock already up ~18% pre-print this cycle, a repeat miss could see a sharper give-back than -3%.",
+      "exampleDate": "May 2026"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Pre-profitability micro-cap ($437M) with a genuinely mixed earnings-day track record, now compounded by an unusually large pre-earnings run-up — 3% sizing keeps real upside exposure while respecting both the binary loss-line risk and elevated sell-the-news risk."
+    },
+    "stopPreCatalyst": { "pct": -10, "price": 4.35, "note": "Below the pre-rally base ahead of Aug 6 — would mean this week's options-driven pump has fully round-tripped, a warning sign independent of the print itself" },
+    "stopPostCatalyst": { "pct": -15, "note": "If the GAAP loss widens beyond the -$0.69 consensus or cash-burn guidance worsens, exit — mirrors the May 2026 post-earnings reaction pattern, likely amplified given this cycle's larger run-up" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "SERV",
+      "event": "Q4 2025 earnings beat",
+      "date": "Mar 2026",
+      "movePct": 12.3,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company precedent for how SERV reacts to a clean beat — directly relevant to the Aug 6 setup."
+    },
+    {
+      "ticker": "SERV",
+      "event": "Q1 2026 earnings — 578% YoY revenue growth but GAAP net loss missed consensus",
+      "date": "May 2026",
+      "movePct": -3,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Shows growth alone isn't enough for this name — the market watches the loss line specifically, the key swing factor for Aug 6."
+    },
+    {
+      "ticker": "SYM",
+      "event": "Symbotic (warehouse automation robotics peer) Q4 earnings beat estimates with a strong outlook",
+      "date": "Nov 2025",
+      "movePct": 14.51,
+      "days": 1,
+      "outcome": "good",
+      "note": "Comparable automation/robotics peer showing that a clean beat-and-raise from a growth-stage robotics name can drive a double-digit single-day pop — the upside analog for SERV if Aug 6 lands well."
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/serv/",
+    "https://stockanalysis.com/stocks/serv/forecast/",
+    "https://www.globenewswire.com/news-release/2026/07/23/3332059/0/en/serve-robotics-to-report-second-quarter-2026-financial-results-host-conference-call-and-webcast-on-august-6.html",
+    "https://finance.yahoo.com/markets/stocks/articles/serve-robotics-surges-13-ouster-153512086.html",
+    "https://invezz.com/news/2026/08/03/why-are-investors-loading-up-on-serve-robotics-stock-ahead-of-q2-earnings/",
+    "https://www.itiger.com/hans/news/1127721957"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Serve Robotics รายงานผล Q2 2026 หลังตลาดปิดวันที่ 6 ส.ค. 2026 อีกแค่ 2 วัน — ราคาหุ้นวิ่งขึ้น ~18% ก่อนประกาศผลจาก options positioning และกระแส risk-on ทั้ง sector robotics ไม่ใช่ข่าวพื้นฐานใหม่ ตลาดคาด GAAP ขาดทุน $0.69/หุ้น (แย่ลง 92% YoY) เทียบกับเป้ารายได้ปี 2026 ~$28M (โต 10 เท่าจากปี 2025) ตลาดกำลังเดิมพันว่า fleet ~2,000 คันใน 44 เมือง 14 รัฐ (รวม Diligent) จะโตเร็วกว่าขาดทุนที่ขยายตัว ประวัติวันประกาศผลของ SERV ยังผสมกันจริง (+12.3% ครั้ง beat ล่าสุด, -3% ครั้ง miss ล่าสุด) และรอบนี้ราคาที่วิ่งขึ้นมากผิดปกติก่อนประกาศผลเพิ่มความเสี่ยง sell-the-news นักวิเคราะห์ทั้ง 8 คนยังเห็น upside มาก (เป้าเฉลี่ย $18.45 +226% จากราคานี้ แม้ Freedom Capital ปรับเป็น Hold) หนุนด้วยพาร์ทเนอร์จริง (Uber Eats, DoorDash, Nvidia, White Castle) และการขยายสู่กลุ่มโรงพยาบาลผ่าน Diligent เป็นหุ้นเล็ก pre-profitability ที่กำลังจะเจอ event สำคัญใน 48 ชม. — เหมาะ speculative size เท่านั้น และไม่ควรไล่ราคาที่วิ่งขึ้นมาแล้วตอนนี้",
+      "priceNote": "ปิดตลาด 3 ส.ค. 2026 ที่ $5.65 บวก ~18% ในวันเดียว จากกระแส robotics sector รวม (Ouster +6%, Symbotic +4%) ก่อนผลประกอบการ 6 ส.ค. — มาจาก options positioning ไม่ใช่ข่าวใหม่ ยังต่ำกว่าจุดสูงสุด 52 สัปดาห์ ($18.64) มาก แต่ราคาที่วิ่งแรงใน 2 วันเพิ่มความเสี่ยง sell-the-news ก่อนเข้า event สำคัญ",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "ผลประกอบการ Q2 2026", "description": "รายงานหลังตลาดปิด 6 ส.ค. 2026 ตลาดคาด GAAP ขาดทุน $0.69/หุ้น (แย่ลง 92% YoY) เทียบเป้ารายได้ปี 2026 ~$28M — ประวัติวันประกาศผลผสมกันจริง ราคาที่วิ่งขึ้นมาก่อนแล้วเพิ่มความเสี่ยง sell-the-news" },
+        { "name": "Fleet คงที่ 2,000+ คัน 44 เมือง", "description": "Fleet คงที่ ~2,000 คันใน 20 เมืองหลัก รวม Diligent เป็น 44 เมือง 14 รัฐ ยอดส่งสะสมใกล้ 2 ล้านครั้ง — โฟกัสเปลี่ยนจากขยาย fleet เป็นเพิ่มรายได้ต่อคัน" },
+        { "name": "ขยายสู่กลุ่มโรงพยาบาลผ่าน Diligent Robotics", "description": "การซื้อ Diligent ขยายจาก food delivery ไปหุ่นยนต์บริการโรงพยาบาล พร้อม pilot ใหม่อย่างส่งผ้าซักผ่าน NoScrubs — อาจ re-rate หุ้นถ้าเริ่มโชว์ในรายได้" }
+      ],
+      "risks": [
+        "ราคาหุ้นวิ่งขึ้น ~18% ใน 2 วันก่อนประกาศผลจาก options positioning และกระแส sector ไม่ใช่ข่าวใหม่ — เสี่ยง sell-the-news ถ้าผลออกมาแค่ตามคาด",
+        "ตลาดคาด GAAP ขาดทุน $0.69/หุ้น แย่ลง 92% YoY — ตลาดให้น้ำหนักรายได้โต 10 เท่า แต่ปฏิกิริยา -3% ในเดือน พ.ค. แสดงว่าตลาดสนใจเส้นขาดทุนมากกว่า",
+        "ประวัติวันประกาศผลผสมกันจริง — beat ล่าสุด (มี.ค. 2026) +12.3% แต่ miss ล่าสุด (พ.ค. 2026) -3%+",
+        "เป้า consensus ($18.45) หมายถึงหุ้นต้องวิ่งขึ้น ~226% — แม้ขอบล่าง ($13, +130%) ก็ต้องมีข่าวดีอีกมาก และ Freedom Capital ปรับเป็น Hold แล้ว",
+        "คู่แข่งทุนหนา (DoorDash เองก็ทำ robotics) และหุ้น robotics เล็กในกลุ่มเดียวกันผันผวนสูง (Richtech Robotics ร่วง ~35% ครึ่งปีแรก 2026 จากปัญหาการปรับปรุงงบการเงิน)"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% ในการประชุม 28-29 ก.ค. 2026 แม้มี 3 เสียงค้านอยากขึ้นดอกเบี้ย ประชุมถัดไป 15-16 ก.ย. 2026 ยังเป็น live meeting โดย dot plot เดือน มิ.ย. มองปลายปี 2026 ที่ 3.8%",
+        "inflationNote": "เงินเฟ้อ core ยังสูงกว่าเป้า yield ระยะยาวยังสูง เป็นแรงกดดันจริงสำหรับหุ้นเล็ก pre-profitability ที่ต้องพึ่งทุนขยาย fleet และรวม Diligent",
+        "sectorImpact": "ในฐานะหุ้น growth เล็กที่ยังไม่กำไร SERV sensitive ต่อดอกเบี้ยมากกว่าหุ้นอื่นในกลุ่มนี้ — higher-for-longer กด multiple ซ้ำเข้ากับความเสี่ยง event 6 ส.ค.",
+        "summary": "ความเสี่ยง Fed ระดับกลาง — Fed คงดอกเบี้ยเดือน ก.ค. แต่มีเสียงค้าน และประชุม ก.ย. ยังเปิดกว้าง หากออกมา hawkish จะซ้ำเติมความอ่อนแอถ้าผลประกอบการ 6 ส.ค. ออกมาไม่ดี"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — อย่าไล่ราคาที่วิ่งขึ้นมาที่ $5.65 เข้าไม้เล็กเฉพาะถ้าถืออยู่แล้ว เพิ่ม size เมื่อย่อลงโซน $4.70-5.00 หรือหลังประกาศผลถ้าอ่อนตัว เป็น growth story จริง แต่ตลาดต้องการเห็นขาดทุนแคบลง และรอบนี้ราคาที่วิ่งขึ้นมากผิดปกติเพิ่มความเสี่ยง sell-the-news",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — วิ่งขึ้น ~18% ใน 2 วันจาก options positioning ไม่ใช่ข่าวใหม่ ไม่ควรไล่ราคาก่อน event ใหญ่", "timing": "ตอนนี้ (เล็กมาก)" },
+          { "note": "ใกล้ระดับก่อนวิ่งขึ้น (~$4.78) — R/R ดีที่สุดถ้าราคาย่อกลับ", "timing": "ถ้าย่อ" },
+          { "note": "52-week low — เฉพาะกรณี sector หุ้นเล็ก growth เทขายรวมหรือ GAAP miss ซ้ำแบบเดือน พ.ค.", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — Q2 โตต่อเนื่องตามเป้า 10 เท่า ขาดทุนตามคาด ไม่มีแรงเทขายซ้ำ" },
+        "tp2": { "note": "Bull — beat-and-raise ชัดเจน ขาดทุนแคบกว่าคาดที่ -$0.69" },
+        "tp3": { "note": "Moon — beat + Diligent เริ่มโชว์ผลจริงในรายได้ แตะเป้า consensus เต็ม", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดระดับก่อนวิ่งขึ้น (จากต้นทุน Entry 2 ~$4.85) — แปลว่าการวิ่งขึ้นรอบนี้ย้อนกลับหมดแล้ว",
+          "hardNote": "ต่ำกว่า 52-week low มาก — พลาดเป้า 6 ส.ค. พร้อมขาดทุนขยายเกินคาดจะทำลาย thesis",
+          "rrNote": "จาก Entry 2 ($4.85 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R สูงในทางทฤษฎี แต่ราคาปัจจุบันสูงกว่าโซนเข้าซื้อมาก (+16-18%) — รอย่อก่อนดีกว่าไล่ราคาก่อน event สำคัญ"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q2 2026", "note": "ตลาดต้องการเห็นขาดทุนแคบลงบนฐานรายได้โต 10 เท่า ไม่ใช่แค่รายได้โตเร็ว — ตัวแปรสำคัญหลังปฏิกิริยาลบเดือน พ.ค." }
+      ]
+    }
+  }
+}

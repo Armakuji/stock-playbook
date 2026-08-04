@@ -1,0 +1,218 @@
+{
+  "ticker": "RKLB",
+  "companyName": "Rocket Lab Corporation",
+  "companyDescription": "Launch + space systems · Electron/HASTE operational, Neutron debut re-targeted Q4 2026 after a Jan 2026 tank-test failure · pending $8B Iridium acquisition (cash+stock, closing ~mid-2027) · Q2 2026 earnings Aug 10",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-04T12:00:00.000Z",
+  "price": 70.43,
+  "priceChange": 8.44,
+  "priceNote": "Closed $70.43 on Aug 3, 2026, +8.44% in a single session — a sharp bounce after the stock had traded as low as the $60-63 range days earlier amid a broad space-sector selloff (SpaceX IPO lockup expiry ~Aug 6, sector-wide profit-taking). Still down more than 50% from the May 27 all-time-high close of $151.00, and now just 6 days before the Aug 10 Q2 print.",
+  "marketCap": "$42.1B",
+  "sector": "Industrials / Aerospace & Space Launch",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 74,
+  "summary": "Rocket Lab has been whipsawed since mid-July — down as much as 61% from its May peak on a sector-wide selloff (SpaceX IPO lockup, profit-taking) unrelated to its own execution, then +8.4% in a single Aug 3 session as the stock found footing ahead of Q2 earnings (Aug 10, guided $225-240M revenue, +16% QoQ). The bigger structural story since the last update is the Jun 29 announcement of an $8B cash-and-stock acquisition of Iridium Communications — a genuine vertical-integration move (launch + owned satellite constellation) that popped shares 16% on the news — plus a record $266M U.S. Space Force suborbital contract (Jul 27) and a new iQPS multi-launch deal. Neutron remains delayed to Q4 2026 after a January tank-test failure. Consensus analyst target ~$111 implies ~58% upside from the current price.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "Reports after close Aug 10, 2026. Guided $225-240M revenue (+16% QoQ), consensus EPS -$0.06. RKLB's Q1 2026 beat sent shares +34% intraday, but its Q4 2025 beat still dropped -9.5% days later on a Neutron-delay announcement — both the print AND any Neutron-timeline commentary will move the stock this time.",
+      "urgencyLabel": "6 DAYS",
+      "dateBadge": "Aug 10, 2026",
+      "catalystDate": "2026-08-10",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🚀",
+      "name": "Neutron First Launch",
+      "description": "Medium-lift, partially reusable rocket — delayed twice, most recently pushed from Q1 to Q4 2026 after a January 2026 hydrostatic tank-test failure. The structural re-rate catalyst if it flies on schedule; a third slip would hit sentiment hard given how much is already priced in.",
+      "urgencyLabel": "Q4 2026",
+      "dateBadge": "Q4 2026",
+      "catalystDate": "2026-11-15",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🤝",
+      "name": "Iridium Acquisition ($8B)",
+      "description": "Announced Jun 29, 2026 — cash-and-stock deal to acquire Iridium Communications (Iridium holders get $27 cash + RKLB stock, ~$54/share combined value), creating a vertically integrated launch-plus-constellation operator. Shares popped 16% on the news. Deal expected to close mid-2027 pending approvals.",
+      "urgencyLabel": "MID-2027 CLOSE",
+      "dateBadge": "Mid-2027",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "📡",
+      "name": "Contract Momentum",
+      "description": "Record $266M U.S. Space Force suborbital launch contract (Jul 27, 2026, RKLB's largest ever, up to 18 launches from Kodiak, Alaska) plus a new multi-launch agreement with Japan's iQPS on Electron. Backlog keeps growing outside the earnings/Neutron calendar.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Rich, pre-profit valuation — even after the >50% pullback from the May peak, RKLB is still priced for years of flawless execution (Q2 EPS estimate remains negative at -$0.06)",
+    "Neutron has now slipped twice (originally early 2026, then Q1, now Q4 2026 after a Jan tank-test failure) — a real, repeatable pattern risk, not a one-off",
+    "Extreme high-beta/sentiment-driven — the stock round-tripped roughly -61% then +8.4% in a matter of weeks on sector-wide factors (SpaceX IPO lockup, profit-taking), not company-specific news, showing how disconnected price action can be from fundamentals",
+    "Iridium deal adds integration and dilution risk — $8B cash+stock transaction, new share issuance, and a long ~mid-2027 close mean execution risk stacks on top of the core launch business",
+    "Earnings reactions cut both ways — a clean Q1 2026 beat sent RKLB +34%, but a Q4 2025 beat still triggered a -9.5% drop days later purely on Neutron-timeline news, so a Q2 beat alone may not be enough on Aug 10"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Aug 10, 2026", "note": "Guided $225-240M revenue (+16% QoQ), consensus EPS -$0.06 — watch for a firmer Neutron timeline as much as the top line", "est": "est. $225-240M rev", "highlight": "yellow" },
+    { "event": "Neutron First Launch", "dateRange": "Q4 2026", "note": "Second delay this cycle after Jan 2026 tank-test failure — the structural re-rate catalyst", "est": "Target: Q4 2026", "highlight": "blue" },
+    { "event": "Iridium Deal Close", "dateRange": "Mid-2027", "note": "Regulatory/shareholder approvals for the $8B cash+stock acquisition — long-dated but de-risks the vertical-integration thesis as it progresses", "est": "Target: mid-2027", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -20, "price": 56.34 },
+    { "label": "Base", "color": "yellow", "pct": 25, "price": 88.04 },
+    { "label": "Bull", "color": "green", "pct": 58, "price": 111.28 },
+    { "label": "Moon", "color": "purple", "pct": 85, "price": 130.30 }
+  ],
+  "analystTargets": [
+    { "firm": "Deutsche Bank (May 12, 2026)", "target": 120, "rating": "Buy", "note": "Raised from $73 following Q1 2026 beat" },
+    { "firm": "B of A Securities (Jun 30, 2026)", "target": 115, "rating": "Buy" },
+    { "firm": "Consensus (~17-21 analysts, Aug 3, 2026)", "target": 111, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held at 3.50-3.75% at the Jul 28-29 FOMC, with three regional presidents (Hammack, Kashkari, Logan) dissenting in favor of a hike — the most hawkish dissent since 2016. Next meeting is Sep 15-16; base case is the Fed stays on hold through Q3, but the hawkish tilt keeps pressure on high-multiple, pre-profit growth names like RKLB.",
+    "inflationNote": "Markets are now pricing meaningful odds of a 2026 hike rather than cuts, a reversal from earlier-year expectations — keeping rate-sensitive, still-unprofitable growth stocks like RKLB (Q2 EPS est. -$0.06) exposed to further multiple compression if the data stays hot into Sep.",
+    "sectorImpact": "HIGH — RKLB fell as much as 61% from its May peak amid a broad space-sector de-rating tied to the SpaceX IPO lockup expiry (~Aug 6) and profit-taking, then bounced 8.4% in a single session on Aug 3. That round-trip shows sentiment, not fundamentals, is currently driving the tape.",
+    "summary": "Fed risk MEDIUM — Aug 10 earnings and the Neutron timeline are company-specific catalysts, but RKLB's demonstrated extreme beta (roughly a -61%/+8% round-trip within weeks) means any hawkish macro surprise around the Sep FOMC would likely amplify moves in either direction."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 70.43, "note": "Current price — already bounced +8.4% off the recent selloff low, 6 days before Aug 10 earnings", "timing": "Now" },
+      { "label": "Entry 2", "level": 60, "rangeMax": 65, "note": "Retest of last week's selloff floor — best R/R heading into the Aug 10 print", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 48, "note": "Deep panic dip — approaching multi-month lows, only on a broad macro/sector shock", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 88.04, "pct": 25, "note": "Base — clean Q2 beat, Neutron timeline holds at Q4 2026" },
+    "tp2": { "price": 111.28, "pct": 58, "note": "Bull — Q2 beat + raised guidance, stock reaches the ~$111 consensus target" },
+    "tp3": { "price": 130.30, "pct": 85, "note": "Moon — Q2 beat + de-risked Neutron progress + Iridium-deal re-rate stacked together", "moon": true },
+    "stopLoss": {
+      "tight": 58, "tightPct": -17.7, "tightNote": "Below the $58-60 support shelf — momentum turning negative into earnings",
+      "hard": 50, "hardPct": -29.0, "hardNote": "Deep macro-driven breach — backlog/Iridium thesis intact but tolerance exceeded",
+      "riskReward": "3.3 : 1", "rrNote": "From current price, tight stop vs TP2", "rrWarning": "Good R/R but extreme high-beta name — size for volatility"
+    },
+    "verdict": "BUY the dip into Q2 earnings — backlog, the $266M Space Force win, and the Iridium tie-up all strengthen the fundamental case even as the stock has been thrown around by sector-wide, not company-specific, selling. Aug 10 is the near-term proof point.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Space-launch names see pre-earnings volatility driven more by sector-wide rotation than a dedicated run-up; RKLB itself posted an 8.4% single-day pop on Aug 3 heading into the Aug 10 print, largely a bounce from oversold territory after the sector-wide selloff rather than a clean drift pattern.",
+    "preRunupTiming": "3-7 days before the Aug 10 print",
+    "preRunupPct": "Noisy — recent example: +8.4% single-day (Aug 3), but no reliable one-directional drift historically",
+    "postWin": {
+      "avgPct": 34,
+      "range": "+16% to +34%",
+      "note": "RKLB's Q1 2026 beat (record $200.3M revenue) sent the stock up 34% intraday, the strongest same-company precedent. Its Feb 2026 Q4 2025 beat ($180M revenue, EPS beat) initially closed green before Neutron-delay news days later erased the gains — the beat alone doesn't guarantee the pop holds.",
+      "exampleDate": "May 2026"
+    },
+    "postLose": {
+      "avgPct": -9.5,
+      "range": "-7% to -10%",
+      "note": "Q4 2025 results (Feb 26, 2026) beat on both revenue ($180M) and EPS, but the accompanying Neutron delay to Q4 2026 drove a 9.5% single-day drop within days — for RKLB, roadmap/guidance risk has hurt the stock more than headline beat/miss outcomes.",
+      "exampleDate": "Feb 2026"
+    },
+    "spotSizing": {
+      "pct": 5,
+      "reason": "Speculative sizing — record backlog, the $266M Space Force deal, and the $8B Iridium tie-up support the thesis, but a demonstrated ~60% round-trip drawdown from the May peak plus binary Aug 10 earnings/Neutron-update risk argue against a larger core-holding-style position."
+    },
+    "stopPreCatalyst": { "pct": -15, "price": 58, "note": "Below the $58-60 support shelf before Aug 10 earnings = momentum turning bearish ahead of the print" },
+    "stopPostCatalyst": { "pct": -15, "note": "If Q2 misses guidance or Neutron slips again past Q4 2026, exit within 2 sessions" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "RKLB",
+      "event": "Q1 2026 Earnings Beat — Record Revenue, Broke $100",
+      "date": "May 2026",
+      "movePct": 34,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company precedent for how RKLB reacts to a clean beat — the closest possible comp for the Aug 10 Q2 print."
+    },
+    {
+      "ticker": "RKLB",
+      "event": "Q4 2025 Earnings Beat Overshadowed by Neutron Delay",
+      "date": "Feb 2026",
+      "movePct": -9.5,
+      "days": 2,
+      "outcome": "bad",
+      "note": "A clean revenue/EPS beat still led to a 9.5% drop days later once the Neutron delay to Q4 2026 was digested — shows guidance/roadmap risk can override a good print for this name."
+    },
+    {
+      "ticker": "ASTS",
+      "event": "Q1 2026 Earnings Miss, Stock Rose on Reaffirmed Guidance",
+      "date": "May 2026",
+      "movePct": 4,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "Comparable pre-revenue space name missed on both lines but still traded up on reaffirmed guidance — reinforces that for early-stage space stocks, forward commentary often matters more than the headline beat/miss, directly relevant to how RKLB's Aug 10 guidance will be read."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Rocket Lab to Acquire Iridium in Historic Deal, Creating a Fully Vertically Integrated Space Powerhouse",
+    "url": "https://rocketlabcorp.com/updates/rocket-lab-to-acquire-iridium-in-historic-deal-creating-a-fully-vertically-integrated-space-powerhouse-primed-for-growth/",
+    "date": "Jun 2026"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/rklb/",
+    "https://rocketlabcorp.com/updates/record-contract-rslp-kodiak/",
+    "https://rocketlabcorp.com/updates/rocket-lab-to-acquire-iridium-in-historic-deal-creating-a-fully-vertically-integrated-space-powerhouse-primed-for-growth/",
+    "https://www.cnbc.com/2026/06/29/rocket-lab-buys-iridium.html",
+    "https://www.stocktitan.net/news/RKLB/rocket-lab-announces-date-of-second-quarter-2026-financial-rmgj339cu2wx.html",
+    "https://www.space.com/space-exploration/rocket-lab-delays-debut-of-powerful-partially-reusable-neutron-rocket-to-2026",
+    "https://trendspider.com/blog/rklb-stock-slides-9-after-neutron-launch-delay-to-late-2026/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Rocket Lab ผันผวนหนักตั้งแต่กลางก.ค. — ร่วงสูงสุด 61% จากจุดสูงสุดพ.ค. จาก sector selloff (SpaceX IPO lockup, profit-taking) ไม่เกี่ยวกับผลงานบริษัท ก่อนเด้งแรง +8.4% วันเดียว (3 ส.ค.) รับ Q2 earnings 10 ส.ค. (guide revenue $225-240M, +16% QoQ) ข่าวใหญ่สุดตั้งแต่รายงานล่าสุดคือดีล acquisition Iridium มูลค่า $8B (cash+stock) ประกาศ 29 มิ.ย. — vertical integration จริง (launch + constellation ของตัวเอง) หุ้นพุ่ง 16% วันประกาศ บวกสัญญา Space Force $266M (27 ก.ค.) และดีล iQPS ใหม่ Neutron ยังเลื่อนเป็น Q4 2026 จาก tank test fail ม.ค. Consensus target ~$111 = upside ~58% จากราคาปัจจุบัน",
+      "priceNote": "ปิด $70.43 วันที่ 3 ส.ค. 2026 +8.44% วันเดียว เด้งแรงหลังเคยลงไปแตะ $60-63 จาก sector selloff ยังต่ำกว่าจุดสูงสุด all-time $151 (27 พ.ค.) กว่า 50% และเหลืออีกแค่ 6 วันก่อน earnings 10 ส.ค.",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "Q2 2026 Earnings", "description": "รายงาน 10 ส.ค. — guide revenue $225-240M, EPS -$0.06 ต้องดูทั้งตัวเลขและอัพเดต timeline Neutron" },
+        { "name": "Neutron First Launch", "description": "เลื่อนแล้ว 2 ครั้ง ล่าสุดจาก tank test fail ม.ค. 2026 เป้าใหม่ Q4 2026 — catalyst โครงสร้างจริง" },
+        { "name": "ดีล Iridium ($8B)", "description": "ประกาศ 29 มิ.ย. — cash+stock ซื้อ Iridium สร้าง vertical integration หุ้นพุ่ง 16% วันประกาศ ปิดดีลเป้ากลางปี 2027" },
+        { "name": "Contract Momentum ต่อเนื่อง", "description": "สัญญา Space Force $266M (ใหญ่สุดเท่าที่เคยได้) + ดีล iQPS ใหม่ หนุน backlog นอกรอบ earnings" }
+      ],
+      "risks": [
+        "Valuation สูงยังไม่ทำกำไร — แม้ย่อ 50%+ จากจุดสูงสุด EPS Q2 ยังติดลบ (-$0.06 est)",
+        "Neutron เลื่อนมาแล้ว 2 ครั้ง — เลื่อนอีกเป็นความเสี่ยงที่เกิดซ้ำได้จริง",
+        "High-beta สุดขั้ว — ร่วง 61% แล้วเด้ง 8.4% ในไม่กี่สัปดาห์จาก sector factor ไม่ใช่ fundamental บริษัท",
+        "ดีล Iridium เพิ่มความเสี่ยง integration + dilution — ออกหุ้นใหม่ ปิดดีลช้าถึงกลางปี 2027",
+        "Earnings reaction ได้ทั้งสองทาง — Q1 beat หุ้น +34% แต่ Q4 beat ก็ยังร่วง -9.5% จากข่าว Neutron delay อย่างเดียว"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed hold 3.50-3.75% ที่ FOMC 28-29 ก.ค. แต่มี 3 เสียง dissent อยากขึ้นดอกเบี้ย — hawkish สุดตั้งแต่ 2016 ประชุมถัดไป 15-16 ก.ย.",
+        "inflationNote": "ตลาดเริ่ม price โอกาสขึ้นดอกเบี้ยปี 2026 แทนที่จะลด — กดดันหุ้น growth ที่ยังขาดทุนอย่าง RKLB ต่อเนื่อง",
+        "sectorImpact": "สูง — RKLB ร่วงสูงสุด 61% จาก sector de-rating (SpaceX IPO lockup, profit-taking) แล้วเด้ง 8.4% วันเดียว แสดงว่า sentiment ไม่ใช่ fundamental กำลังขับราคาอยู่ตอนนี้",
+        "summary": "ความเสี่ยง Fed ปานกลาง — catalyst earnings/Neutron เฉพาะบริษัทจริง แต่ high-beta สุดขั้วทำให้ macro surprise รอบ FOMC ก.ย. ขยายแรงขึ้นได้ทั้งสองทาง"
+      },
+      "entryStrategy": {
+        "verdict": "BUY ช่วงย่อก่อน Q2 earnings — backlog, สัญญา Space Force $266M และดีล Iridium หนุน fundamental แม้หุ้นจะถูกเหวี่ยงจาก sector ไม่ใช่ปัญหาบริษัท 10 ส.ค. คือจุดพิสูจน์ระยะสั้น",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — เด้งจากจุดต่ำสุดแล้ว +8.4% เหลือ 6 วันก่อน earnings", "timing": "ตอนนี้" },
+          { "note": "โซนย่อกลับไปแตะพื้นสัปดาห์ก่อน — R/R ดีที่สุดก่อน earnings 10 ส.ค.", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงลึกใกล้จุดต่ำหลายเดือน — เฉพาะ macro shock ใหญ่", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — Q2 beat สะอาด Neutron timeline ยังยืน Q4 2026" },
+        "tp2": { "note": "Bull — Q2 beat + guide ขึ้น แตะ consensus target ~$111" },
+        "tp3": { "note": "Moon — Q2 beat + Neutron progress + ดีล Iridium re-rate พร้อมกัน", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดโซนแนวรับ $58-60 = momentum เปลี่ยนลบก่อน earnings",
+          "hardNote": "หลุดลึกจาก macro = thesis backlog/Iridium ยังอยู่แต่เกิน tolerance",
+          "rrNote": "จากราคาปัจจุบัน stop แคบ vs TP2",
+          "rrWarning": "R/R ดีแต่ high-beta สุดขั้ว — size ให้เหมาะกับความผันผวน"
+        }
+      },
+      "estimateDates": [
+        { "event": "Q2 2026 Earnings", "note": "Guide $225-240M revenue — ต้องดู Neutron timeline ด้วยไม่ใช่แค่ยอดขาย" },
+        { "event": "Neutron First Launch", "note": "เลื่อนรอบ 2 จาก tank test fail ม.ค. — catalyst re-rate โครงสร้าง" },
+        { "event": "ปิดดีล Iridium", "note": "รอ approval ดีล $8B — long-dated แต่ de-risk thesis vertical integration" }
+      ]
+    }
+  }
+}

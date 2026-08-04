@@ -1,0 +1,198 @@
+{
+  "ticker": "RXRX",
+  "companyName": "Recursion Pharmaceuticals, Inc.",
+  "companyDescription": "AI-driven drug discovery (TechBio) · REC-4881 in FDA registrational-pathway discussions for familial adenomatous polyposis (FAP) · partnered with Sanofi/Roche ($500M+ milestones delivered) · Q2 2026 earnings due Aug 5, 2026",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-04T18:00:00.000Z",
+  "price": 3.18,
+  "priceChange": 6.0,
+  "priceNote": "Near the bottom of its 52-week range ($2.77-$7.18) and below its 200-day moving average heading into Q2 2026 earnings (tomorrow, Aug 5, before market open). Stock fell 16.89% in the past month on a mid-July trial-data scare + insider Form 144 filing, but Morgan Stanley just raised its target to $5.50 (from $5.00) and ARK Invest bought 260,000 shares — real disagreement between bears and bulls right into the print.",
+  "marketCap": "$1.69B",
+  "sector": "Healthcare / AI Drug Discovery (TechBio)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 55,
+  "summary": "Recursion reports Q2 2026 results tomorrow (Aug 5, before the open) — a binary near-term event for a stock that swung +7.6% to +13.3% on its last earnings beat (May 6) and -7.9% on a mid-July trial-data scare plus an insider Form 144 filing. The core thesis is unchanged: REC-4881 has FDA engagement underway on a registrational pathway for FAP (update expected 2H26), the Sanofi/Roche partnered pipeline has delivered $500M+ in milestones, and cash runway is guided into early 2028. But short interest sits at ~35% and the stock trades near its 52-week low despite Morgan Stanley just lifting its target to $5.50 and ARK Invest adding 260,000 shares. Analyst consensus is $7.25 (+128% from here), with a wide $3-$11 range reflecting real disagreement, not noise.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "Business updates and financial results before market open. Analysts model EPS of -$0.24. Market will watch for cash-runway confirmation, Sanofi/Roche milestone updates, and any commentary on the FDA registrational-pathway discussions for REC-4881.",
+      "urgencyLabel": "TOMORROW",
+      "dateBadge": "Aug 5, 2026",
+      "catalystDate": "2026-08-05",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "🧬",
+      "name": "REC-4881 FDA Registrational Pathway Update",
+      "description": "Recursion has guided to an FDA update on the potential registrational study design/pathway for REC-4881 in FAP, following the positive TUPELO Phase 1b/2 data (75% of evaluable patients with reduced polyp burden, 43% median reduction at 12 weeks).",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-10-15",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Binary earnings event tomorrow (Aug 5) for a stock with a track record of double-digit single-day swings in both directions on its last two prints",
+    "Short interest near 35% and a former director's Form 144 filing (early July) signal real bearish positioning and a potential share-supply overhang",
+    "Mid-July 2026 saw an unspecified 'unfavorable trial data' headline drive a -7.9% day — the exact program/readout was not detailed in coverage, adding an unresolved overhang into earnings",
+    "Pre-profitability biotech burning ~$81M/quarter in free cash flow with -840% profit margins; P/S near 27x despite the depressed share price",
+    "Wide analyst target dispersion ($3-$11) shows genuine disagreement on valuation methodology, not just normal estimate noise",
+    "FAP is a rare disease with a small standalone commercial market — the read-through to Recursion's broader AI-discovery platform matters more than this indication's own economics"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Aug 5, 2026", "note": "Cash runway confirmation + Sanofi/Roche milestone update is the swing factor", "est": "EPS est. -$0.24", "highlight": "blue" },
+    { "event": "REC-4881 FDA Pathway Update", "dateRange": "H2 2026", "note": "Registrational study design guidance for FAP", "est": "Guidance only, no fixed date yet", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -28, "price": 2.30 },
+    { "label": "Base", "color": "yellow", "pct": 21, "price": 3.85 },
+    { "label": "Bull", "color": "green", "pct": 73, "price": 5.50 },
+    { "label": "Moon", "color": "purple", "pct": 128, "price": 7.25 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (5-6 analysts)", "target": 7.25, "rating": "Buy" },
+    { "firm": "Morgan Stanley", "target": 5.50, "rating": "Buy", "note": "Raised from $5.00" },
+    { "firm": "LSEG high-end outlier", "target": 11.00, "rating": "n/a" },
+    { "firm": "LSEG low-end", "target": 3.00, "rating": "n/a", "note": "Wide $3-$11 dispersion shows real methodology disagreement" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Fed holds at 3.50-3.75% under Chair Warsh; next FOMC decision is Sep 15-16, 2026, with the committee split between a pause and a further 2026 hike.",
+    "inflationNote": "Core inflation remains sticky above target and the 10-year yield is elevated — a general headwind for pre-profitability biotech capital costs, though Recursion's Sanofi/Roche milestone cash flow reduces reliance on capital markets somewhat.",
+    "sectorImpact": "Clinical-stage biotech catalysts (earnings, FDA pathway updates) are largely macro-independent in direction — tomorrow's print and the FDA update will move the stock far more than any Fed signal between now and September.",
+    "summary": "LOW — the near-term catalyst calendar (earnings tomorrow, FDA update in H2) is clinical/financial-results-driven rather than rate-sensitive, though the broader pre-profitability biotech sector still carries some risk-appetite sensitivity heading into the Sep 15-16 FOMC."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 3.18, "note": "Current price — binary earnings event is tomorrow morning; only size small pre-print", "timing": "Now (small, pre-earnings)" },
+      { "label": "Entry 2", "level": 2.80, "rangeMax": 2.95, "note": "Near the 52-week-low zone — best R/R if earnings/trial-data overhang pressures the stock post-print", "timing": "If dips post-earnings", "preferred": true },
+      { "label": "Entry 3", "level": 2.30, "note": "Deep capitulation — only on an earnings miss + cash-runway scare or broad biotech selloff", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 3.85, "pct": 21.1, "note": "Base — in-line Q2 print, cash runway to 2028 reaffirmed" },
+    "tp2": { "price": 5.50, "pct": 73.0, "note": "Bull — hits the Morgan Stanley target on a clean earnings beat + FDA pathway clarity" },
+    "tp3": { "price": 7.25, "pct": 128.0, "note": "Moon — hits analyst consensus as the AI-drug-discovery thesis broadly re-rates", "moon": true },
+    "stopLoss": {
+      "tight": 2.65, "tightPct": -16.7, "tightNote": "Below the 52-week-low zone — a fresh low post-earnings would confirm the bear case is winning",
+      "hard": 2.00, "hardPct": -37.1, "hardNote": "Deep breach — cash-runway concerns or a failed FDA pathway update materializing",
+      "riskReward": "4.4 : 1", "rrNote": "From current price ($3.18), tight stop vs TP2 ($5.50)", "rrWarning": "Good R/R on paper, but tomorrow's earnings is a real binary event with ~35% short interest — size for genuine two-sided volatility, not just the bull case"
+    },
+    "verdict": "SPECULATIVE — hold sizing small ahead of tomorrow's binary earnings print; add on post-earnings weakness rather than chasing a beat. Real bear case (short interest, insider selling, unresolved July trial-data question) sits alongside a real bull case (MS target hike, ARK buying, FDA pathway progress).",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "RXRX shows minimal sustained pre-earnings runup historically — the stock tends to sit flat-to-weak into the print and then react sharply on the actual numbers, consistent with its muted reaction to the positive REC-4881 data earlier in the summer.",
+    "preRunupTiming": "minimal; the stock has drifted down into this print (-16.9% over the past month)",
+    "preRunupPct": "-5% to 0% (drifting into the event rather than running up)",
+    "postWin": {
+      "avgPct": 10,
+      "range": "+7.6% to +13.3%",
+      "note": "On its last earnings beat (Q1 2026, May 6), RXRX jumped 7.6-13.3% intraday/multi-day on a smaller-than-expected loss, stronger revenue, and reaffirmed cash runway to early 2028 — the template for tomorrow's setup.",
+      "exampleDate": "May 2026 (RXRX Q1 2026 earnings beat)"
+    },
+    "postLose": {
+      "avgPct": -8,
+      "range": "-5% to -8%",
+      "note": "In mid-July 2026, RXRX fell 7.9% in a session on an unfavorable-trial-data headline compounded by an insider Form 144 filing — shows how sharply sentiment can flip on negative news even without a full earnings miss.",
+      "exampleDate": "Jul 2026 (RXRX trial-data + Form 144 selloff)"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Small-cap ($1.69B), ~35% short interest, and a binary earnings event tomorrow — 3% sizing respects genuine two-sided risk into a print with a real track record of double-digit swings either way."
+    },
+    "stopPreCatalyst": { "pct": -16.7, "price": 2.65, "note": "Below the 52-week-low zone ahead of tomorrow's print — a fresh low pre-earnings would be a real warning sign independent of the results" },
+    "stopPostCatalyst": { "pct": -20, "note": "If Q2 results show a wider-than-expected loss, cash-runway guidance walked back, or Sanofi/Roche milestone flow slowing, exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "ABSI",
+      "event": "Eli Lilly-backed $100M equity offering following positive ABS-201 alopecia proof-of-concept data",
+      "date": "Jun 2026",
+      "movePct": 36,
+      "days": 1,
+      "outcome": "good",
+      "note": "Direct AI-drug-discovery peer — shows how sharply the sector re-rates when a major pharma partner puts real capital behind a platform's clinical data, the same dynamic Recursion's Sanofi/Roche relationship could trigger."
+    },
+    {
+      "ticker": "RXRX",
+      "event": "Q1 2026 earnings beat — smaller loss, stronger revenue, cash runway reaffirmed to early 2028",
+      "date": "May 2026",
+      "movePct": 10,
+      "days": 2,
+      "outcome": "good",
+      "note": "Same-company precedent for tomorrow's setup: RXRX rewards clean beats with double-digit moves when cash-runway concerns are addressed directly."
+    },
+    {
+      "ticker": "RXRX",
+      "event": "Unfavorable trial-data headline + insider Form 144 filing",
+      "date": "Jul 2026",
+      "movePct": -7.9,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Shows the downside template if tomorrow's print reopens the same cash-burn/insider-selling narrative rather than resolving it."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Recursion Pharmaceuticals stock hits 52-week low amid short interest and insider Form 144 filing",
+    "url": "https://www.investing.com/news/company-news/recursion-pharmaceuticals-stock-hits-52week-low-at-279-93CH-4699102",
+    "date": "Jul 2026"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/rxrx/",
+    "https://www.globenewswire.com/news-release/2026/07/29/3335222/0/en/Recursion-to-Report-Second-Quarter-2026-Business-Updates-and-Financial-Results-on-August-5th.html",
+    "https://www.gurufocus.com/news/8941215/recursion-pharmaceuticals-rxrx-faces-high-short-interest-amid-market-caution",
+    "https://www.timothysykes.com/news/recursion-pharmaceuticals-inc-rxrx-news-2026_07_16/",
+    "https://ir.recursion.com/news-releases/news-release-details/positive-phase-1b2-results-ongoing-rec-4881-tupelo-trial-0",
+    "https://www.globenewswire.com/news-release/2026/06/24/3316686/0/en/Absci-Announces-Pricing-of-100-Million-Underwritten-Offering-with-Leading-Strategic-and-Financial-Investors.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Recursion จะรายงานผลประกอบการ Q2 2026 พรุ่งนี้ (5 ส.ค. ก่อนตลาดเปิด) — event แบบ binary ระยะใกล้สำหรับหุ้นที่เคยแกว่ง +7.6% ถึง +13.3% ตอนผลบวก (6 พ.ค.) และ -7.9% ตอนมีข่าว trial data ลบกลางเดือน ก.ค. thesis หลักยังเหมือนเดิม: REC-4881 อยู่ระหว่างคุย FDA เรื่อง registrational pathway สำหรับ FAP (อัปเดตคาด H2 2026) pipeline ที่ partner กับ Sanofi/Roche ส่งมอบ milestone แล้วกว่า $500M และ cash runway การันตีถึงต้นปี 2028 แต่ short interest อยู่ที่ ~35% และหุ้นยังเทรดใกล้ 52-week low แม้ Morgan Stanley เพิ่งปรับเป้าขึ้นเป็น $5.50 และ ARK Invest ซื้อเพิ่ม 260,000 หุ้น นักวิเคราะห์ consensus ให้เป้า $7.25 (+128% จากราคานี้) แต่ช่วงกว้าง $3-$11 สะท้อนความเห็นต่างจริง ไม่ใช่แค่ noise",
+      "priceNote": "ใกล้ขอบล่างของ 52-week range ($2.77-$7.18) และต่ำกว่าเส้นค่าเฉลี่ย 200 วัน ก่อนผลประกอบการ Q2 2026 พรุ่งนี้ (5 ส.ค. ก่อนตลาดเปิด) หุ้นร่วง 16.89% ในเดือนที่ผ่านมาจากข่าว trial data ลบกลางเดือน ก.ค. + insider ยื่น Form 144 แต่ Morgan Stanley เพิ่งปรับเป้าขึ้นเป็น $5.50 (จาก $5.00) และ ARK Invest ซื้อเพิ่ม 260,000 หุ้น — ฝั่ง bear และ bull เห็นต่างจริงก่อนประกาศผล",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "ผลประกอบการ Q2 2026", "description": "อัปเดตธุรกิจและผลการเงินก่อนตลาดเปิด นักวิเคราะห์คาด EPS -$0.24 ตลาดจับตา cash runway, อัปเดต milestone Sanofi/Roche และความคืบหน้า FDA pathway ของ REC-4881" },
+        { "name": "อัปเดต FDA Registrational Pathway ของ REC-4881", "description": "Recursion การันตีจะอัปเดต FDA เรื่อง registrational pathway ของ REC-4881 ใน FAP หลังข้อมูล TUPELO Phase 1b/2 เป็นบวก (75% ของผู้ป่วยลด polyp burden ลด 43% median ที่ 12 สัปดาห์)" }
+      ],
+      "risks": [
+        "Event แบบ binary พรุ่งนี้ (5 ส.ค.) สำหรับหุ้นที่เคยแกว่งสองหลักทั้งขึ้นและลงในสองครั้งล่าสุด",
+        "Short interest ใกล้ 35% และอดีตกรรมการยื่น Form 144 (ต้นเดือน ก.ค.) ส่งสัญญาณ bearish จริงและความเสี่ยง supply หุ้นเพิ่ม",
+        "กลางเดือน ก.ค. 2026 มีข่าว 'trial data ลบ' ที่ไม่ระบุรายละเอียดชัดเจน ทำให้ราคาร่วง -7.9% ในวันเดียว — โปรแกรม/ผลที่แท้จริงยังไม่ชัด เป็นความไม่แน่นอนค้างก่อนผลประกอบการ",
+        "Biotech pre-profitability เผาเงินสด ~$81M/ไตรมาส margin กำไร -840% ราคาต่อยอดขาย (P/S) เกือบ 27 เท่าแม้ราคาหุ้นจะต่ำ",
+        "เป้านักวิเคราะห์กระจายกว้าง ($3-$11) สะท้อนความเห็นต่างจริงเรื่องวิธีประเมินมูลค่า ไม่ใช่แค่ noise การประมาณปกติ",
+        "FAP เป็นโรคหายากตลาดเชิงพาณิชย์เล็กเดี่ยว ๆ — การอ่านผลไปยังแพลตฟอร์ม AI drug discovery ที่กว้างกว่าสำคัญกว่า economics ของ indication นี้"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% ภายใต้ประธาน Warsh FOMC ถัดไป 15-16 ก.ย. 2026 คณะกรรมการแบ่งเป็นฝั่งคงดอกเบี้ยกับฝั่งขึ้นเพิ่มในปีนี้",
+        "inflationNote": "เงินเฟ้อ core ยังสูงเหนียวแน่นเหนือเป้า yield 10 ปีสูง เป็นแรงกดดันต่อต้นทุนทุนของ biotech pre-profitability ทั่วไป แม้กระแสเงินสด milestone จาก Sanofi/Roche จะลดการพึ่งพาตลาดทุนบ้าง",
+        "sectorImpact": "Catalyst biotech ระยะใกล้ (ผลประกอบการ, อัปเดต FDA pathway) แทบไม่ผูกทิศทางกับ macro — ผลพรุ่งนี้และอัปเดต FDA จะขยับราคามากกว่าสัญญาณ Fed ใด ๆ ก่อนเดือน ก.ย.",
+        "summary": "ความเสี่ยง Fed ต่ำ — ปฏิทิน catalyst ระยะใกล้ (ผลประกอบการพรุ่งนี้, อัปเดต FDA ใน H2) ขับเคลื่อนด้วยผล clinical/การเงินไม่ใช่ดอกเบี้ย แม้ sector biotech pre-profitability กว้างจะยัง sensitive ต่อ risk appetite ก่อน FOMC 15-16 ก.ย. บ้าง"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — คุมขนาดไม้เล็กก่อน event แบบ binary พรุ่งนี้ เพิ่มถ้าอ่อนตัวหลังประกาศผลมากกว่าไล่ราคาตอนบวก มี bear case จริง (short interest, insider ขาย, คำถาม trial data ก.ค. ที่ยังไม่คลี่คลาย) คู่กับ bull case จริง (MS ปรับเป้าขึ้น, ARK ซื้อเพิ่ม, ความคืบหน้า FDA pathway)",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — event แบบ binary พรุ่งนี้เช้า เข้าไม้เล็กก่อนประกาศผลเท่านั้น", "timing": "ตอนนี้ (เล็ก, ก่อนผลประกอบการ)" },
+          { "note": "ใกล้โซน 52-week low — R/R ดีที่สุดถ้าราคาอ่อนตัวหลังประกาศผล/ปัญหา trial data กดดันต่อ", "timing": "ถ้าย่อหลังผลประกอบการ" },
+          { "note": "ร่วงหนัก — เฉพาะกรณีพลาดเป้า + คำถาม cash runway หรือ biotech เทขายรวม", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — ผลประกอบการ Q2 ตามคาด cash runway ถึงปี 2028 ยืนยันอีกครั้ง" },
+        "tp2": { "note": "Bull — แตะเป้า Morgan Stanley จากผลบวกชัดเจน + ความชัดเจน FDA pathway" },
+        "tp3": { "note": "Moon — แตะเป้า consensus นักวิเคราะห์ จาก thesis AI drug discovery re-rate กว้าง", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดโซน 52-week low — จุดต่ำสุดใหม่หลังผลประกอบการจะยืนยันฝั่ง bear",
+          "hardNote": "หลุดลึก — เกิดจากความกังวล cash runway หรืออัปเดต FDA pathway ล้มเหลว",
+          "rrNote": "จากราคาปัจจุบัน ($3.18) stop แคบ vs TP2 ($5.50)",
+          "rrWarning": "R/R ดีในทางทฤษฎี แต่ผลประกอบการพรุ่งนี้เป็น binary event จริงกับ short interest ~35% — size ให้เหมาะกับความผันผวนสองทาง ไม่ใช่แค่มอง bull case"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q2 2026", "note": "cash runway + อัปเดต milestone Sanofi/Roche คือตัวชี้วัดสำคัญ" },
+        { "event": "อัปเดต FDA Pathway ของ REC-4881", "note": "แนวทางการออกแบบ registrational study สำหรับ FAP" }
+      ]
+    }
+  }
+}

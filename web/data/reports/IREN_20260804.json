@@ -1,0 +1,197 @@
+{
+  "ticker": "IREN",
+  "companyName": "IREN Limited",
+  "companyDescription": "Bitcoin miner turned AI cloud infrastructure operator — vertically-integrated renewable-powered data centers in Texas/Canada now hosting Microsoft, NVIDIA, Perplexity, Figure AI GPU workloads",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-04T00:00:00.000Z",
+  "price": 39.75,
+  "priceChange": 8.02,
+  "priceNote": "Closed Aug 3, 2026 at $39.75 (+8.02%), extending a rally that began with the $2.8B AI-contract announcement on Jul 20 — stock is up from a ~$20s base in June but still well off its 52-week high of $76.87",
+  "marketCap": "$14.21B",
+  "sector": "Technology / AI Infrastructure & Data Centers (ex-Bitcoin Mining)",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 78,
+  "summary": "IREN has pivoted from a pure bitcoin miner into a contracted AI cloud infrastructure operator, signing $2.8B in new multi-year deals with Microsoft, NVIDIA, Perplexity and others in July 2026 and lifting its 2026 AI Cloud ARR target above $4B (~85% now under contract, ~4yr weighted average term). With $7.6B cash on hand and 16 analysts at an average $81.73 target (11 Buy/4 Hold/1 Sell) against a $39.75 price, the risk/reward skews bullish into Q4 FY26 earnings — but execution risk on GPU buildout, capex funding, and residual bitcoin-price sensitivity keep this a speculative, not core, holding.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q4 FY2026 Earnings",
+      "description": "First full quarter reflecting the $2.8B Microsoft/NVIDIA/Perplexity contract wins and the raised >$4B AI Cloud ARR target; market will scrutinize GPU deployment pace, capex funding, and gross margin on the new AI Cloud segment vs. the legacy mining P&L",
+      "urgencyLabel": "~3 WEEKS",
+      "dateBadge": "~Aug 27, 2026",
+      "catalystDate": "2026-08-27",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🤝",
+      "name": "Additional Hyperscaler / AI-Developer Contracts",
+      "description": "IREN has signed a wave of deals in 2026 (Microsoft, NVIDIA, Perplexity, Figure AI, Together AI, Fluidstack, Fireworks AI, Fal AI, Hume AI); further contract announcements before earnings are a plausible near-term re-rating trigger, similar to peers CIFR/WULF/HUT",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Execution risk on GPU procurement/deployment at the pace needed to convert the $4B ARR target into realized revenue",
+    "Capex funding gap — despite $7.6B cash (incl. $1.7B restricted for Microsoft GPU financing), further large builds may require additional debt or equity raises, diluting shareholders",
+    "Residual bitcoin-mining exposure — BTC price weakness (dropped below $63k in early Aug 2026) still drags on the legacy mining P&L and quarterly EPS misses",
+    "Valuation is rich (P/E ~73x) after the 2026 rally, leaving the stock vulnerable to any AI-infrastructure sentiment pullback (AI/semis cooled in late July 2026)",
+    "Hawkish Fed backdrop (rates held at 3.50–3.75%, hawkish dot plot) pressures long-duration growth-stock multiples broadly"
+  ],
+  "estimateDates": [
+    { "event": "Q4 FY2026 Earnings", "dateRange": "~Aug 27, 2026", "note": "Estimated date per multiple earnings-calendar trackers; not yet confirmed by IREN IR — first quarter to show contracted AI Cloud revenue ramp", "est": "EPS est. -$0.46", "highlight": "yellow" },
+    { "event": "AI Cloud ARR checkpoint", "dateRange": "Q4 2026 / year-end", "note": "Company target: >$4B annualized run-rate revenue by year-end 2026, ~85% already under contract", "est": ">$4B ARR target", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -35, "price": 26 },
+    { "label": "Base", "color": "yellow", "pct": 25, "price": 50 },
+    { "label": "Bull", "color": "green", "pct": 100, "price": 80 },
+    { "label": "Moon", "color": "purple", "pct": 165, "price": 105 }
+  ],
+  "analystTargets": [
+    { "firm": "Bernstein", "target": 100, "rating": "Buy" },
+    { "firm": "H.C. Wainwright", "target": 90, "rating": "Buy" },
+    { "firm": "Canaccord Genuity", "target": 79, "rating": "Buy" },
+    { "firm": "Needham", "target": 55, "rating": "Hold" },
+    { "firm": "Goldman Sachs", "target": 50, "rating": "Hold" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held the funds rate at 3.50–3.75% at the June 2026 meeting under new Chair Kevin Warsh; the dot plot shifted hawkish (year-end median ~3.8%), and markets currently price essentially zero chance of a September cut, with some tail risk of a hike on resurgent energy-driven inflation.",
+    "inflationNote": "Inflation re-acceleration tied to energy prices has pushed out rate-cut expectations that existed at the start of 2026, reducing the near-term multiple-expansion tailwind for high-growth, pre-full-profitability names like IREN.",
+    "sectorImpact": "AI-infrastructure capex spending remains the dominant driver for IREN (largely insulated from short-term rate moves given multi-year contracted revenue), but the stock's valuation multiple and residual bitcoin-mining P&L are both sensitive to a higher-for-longer rate regime and any AI-capex sentiment cooling (AI/semis stocks and BTC both pulled back in late July/early Aug 2026).",
+    "summary": "Macro backdrop is a moderate headwind, not a thesis-breaker — hawkish Fed caps multiple expansion and adds volatility, but IREN's revenue growth is now driven by contracted AI infrastructure demand rather than rate-sensitive end markets."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 39.75, "note": "Current price, post-rally", "timing": "Now (small starter)" },
+      { "label": "Entry 2", "level": 32, "rangeMax": 35, "note": "Pullback toward post-contract-news consolidation zone", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 24, "note": "Retest of pre-$2.8B-contract-news base", "timing": "Deep dip / risk-off flush" }
+    ],
+    "tp1": { "price": 50, "pct": 25.8, "note": "Base case — re-rating toward low end of analyst range" },
+    "tp2": { "price": 80, "pct": 101.3, "note": "Bull case — approaches consensus target of $81.73" },
+    "tp3": { "price": 105, "pct": 164.2, "note": "Moon case · full AI Cloud ARR execution + multiple hyperscaler follow-on deals", "moon": true },
+    "stopLoss": {
+      "tight": 30, "tightPct": -24.5, "tightNote": "Below the post-contract-news breakout base",
+      "hard": 22, "hardPct": -44.7, "hardNote": "Below pre-catalyst 2026 range low",
+      "riskReward": "3.1 : 1", "rrNote": "Tight stop vs TP2 ($80)", "rrWarning": "Favorable R/R given contracted revenue backstop, but position size small given volatility"
+    },
+    "verdict": "Speculative buy with a small starter position now, adding on a pullback into the $32-35 zone ahead of the ~Aug 27 Q4 FY26 print — size for bitcoin-miner-level volatility despite the AI-infra re-rating story.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "IREN's stock has historically run up sharply on contract/partnership news ahead of earnings rather than on earnings itself — e.g. the Jul 20, 2026 $2.8B Microsoft/NVIDIA contract announcement alone drove a ~20-30% single-day surge. Pure pre-earnings drift has been more muted and inconsistent given the mining-heavy P&L still swinging EPS around consensus.",
+    "preRunupTiming": "Spikes are event-driven (contract news) rather than a steady multi-week pre-earnings drift; expect elevated volatility in the 1-2 weeks before the ~Aug 27 print as options markets price in an outsized move",
+    "preRunupPct": "+10% to +30% on contract news catalysts; flatter drift ahead of pure earnings",
+    "postWin": {
+      "avgPct": 11,
+      "range": "+2% to +33%",
+      "note": "Positive reactions from IREN's last four earnings prints with EPS beats/inline results: Mar 31, 2026 +6.3%, Sep 30, 2025 +2.2%, Jun 30, 2025 +4.1%, and a standout +33.0% move on Mar 31, 2025 when the company beat and signaled the AI-pivot strategy",
+      "exampleDate": "Mar 31, 2026"
+    },
+    "postLose": {
+      "avgPct": -3.6,
+      "range": "-1.4% to -6.8%",
+      "note": "Negative reactions on EPS misses tied to the mining-heavy legacy P&L: May 7, 2026 -6.8% (Q3 FY26 miss, -$0.33 vs -$0.24 est., no new hyperscaler news to offset), Dec 31, 2025 -1.4%, and May 13, 2026 -2.5%",
+      "exampleDate": "May 7, 2026"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "High conviction on the AI-infra pivot thesis (contracted revenue, named hyperscaler customers) but real EPS volatility and valuation risk (P/E ~73x) argue for a small speculative-lane sizing rather than a core-holding allocation"
+    },
+    "stopPreCatalyst": { "pct": -24, "price": 30, "note": "Breach of the post-$2.8B-contract-news breakout base would signal the AI-infra re-rating thesis is stalling ahead of earnings" },
+    "stopPostCatalyst": { "pct": -15, "note": "If Q4 FY26 misses on both EPS and AI Cloud ARR contracted-revenue progress, exit — that would suggest the mining P&L is still dominating results despite the pivot narrative" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "WULF",
+      "event": "TeraWulf's $9.5B Google-backed Fluidstack AI compute joint-venture expansion",
+      "date": "Oct 2025",
+      "movePct": 22,
+      "days": 1,
+      "outcome": "good",
+      "note": "Direct peer case of a bitcoin miner re-rating on a large, multi-year, hyperscaler-backed AI infrastructure contract — same playbook IREN is running with Microsoft/NVIDIA; WULF stock also rallied 70% over the prior week on the initial Aug 2025 Fluidstack deal announcement"
+    },
+    {
+      "ticker": "CIFR",
+      "event": "Cipher Mining's $5.5B, 15-year AWS AI infrastructure lease",
+      "date": "Nov 2025",
+      "movePct": 19,
+      "days": 1,
+      "outcome": "good",
+      "note": "Another miner-to-AI-infra pivot comparable — large hyperscaler lease (AWS) drove an immediate double-digit surge and helped CIFR run to +53% YTD 2026, reinforcing that contracted, named-hyperscaler AI deals are the dominant re-rating catalyst in this peer group, more than earnings prints themselves"
+    },
+    {
+      "ticker": "IREN",
+      "event": "IREN's own $2.8B Microsoft/NVIDIA/Perplexity AI cloud contract wins",
+      "date": "Jul 2026",
+      "movePct": 20,
+      "days": 1,
+      "outcome": "good",
+      "note": "Most directly comparable case is IREN's own most recent catalyst: the Jul 20, 2026 contract announcement drove a ~20% single-day jump (some reports cite up to ~30% over the following session), confirming the market rewards contracted AI revenue disclosures more than it currently prices in quarterly EPS results"
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "IREN Signs $2.8bn in New Customer Contracts with Leading AI Developers, Raises 2026 ARR Target to over $4bn",
+    "url": "https://iren.gcs-web.com/news-releases/news-release-details/iren-signs-28bn-new-customer-contracts-leading-ai-developers",
+    "date": "Jul 2026"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/iren/",
+    "https://stockanalysis.com/stocks/iren/forecast/",
+    "https://iren.gcs-web.com/news-releases/news-release-details/iren-signs-28bn-new-customer-contracts-leading-ai-developers",
+    "https://thetaowl.com/options/IREN/earnings-history",
+    "https://www.coindesk.com/business/2025/11/03/cipher-mining-surges-19-usd5-5b-amazon-web-services-deal",
+    "https://www.coindesk.com/business/2025/10/28/terawulf-stock-surges-22-after-usd9-5b-google-backed-ai-compute-deal-with-fluidstack",
+    "https://247wallst.com/investing/2026/07/30/terawulf-and-cipher-digital-are-up-50-in-2026-while-iren-lags-behind-is-it-time-to-buy-iren-for-a-catch-up-trade/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "IREN เปลี่ยนตัวเองจากเหมืองบิตคอยน์ล้วนๆ มาเป็นผู้ให้บริการ AI cloud infrastructure ที่มีสัญญาระยะยาวจริง — เซ็นสัญญามูลค่า 2.8 พันล้านดอลลาร์กับ Microsoft, NVIDIA, Perplexity ในเดือน ก.ค. 2026 และปรับเป้า ARR ปี 2026 ขึ้นเป็นกว่า 4 พันล้านดอลลาร์ (ราว 85% มีสัญญารองรับแล้ว) ด้วยเงินสด 7.6 พันล้านดอลลาร์ในมือ และนักวิเคราะห์ 16 รายให้เป้าเฉลี่ย $81.73 (Buy 11 / Hold 4 / Sell 1) เทียบราคาปัจจุบัน $39.75 ความเสี่ยง/ผลตอบแทนเอียงไปทางบวก แต่ยังมีความเสี่ยงด้าน execution และราคาบิตคอยน์ ทำให้ยังเป็นหุ้น Speculative ไม่ใช่ Core holding",
+      "priceNote": "ปิดที่ $39.75 วันที่ 3 ส.ค. 2026 (+8.02%) ต่อเนื่องจากข่าวสัญญา AI มูลค่า 2.8 พันล้านดอลลาร์เมื่อ 20 ก.ค. — ยังห่างจากจุดสูงสุด 52 สัปดาห์ที่ $76.87 พอสมควร",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "งบ Q4 ปีงบประมาณ 2026", "description": "ไตรมาสแรกที่จะสะท้อนสัญญา AI มูลค่า 2.8 พันล้านดอลลาร์กับ Microsoft/NVIDIA/Perplexity เต็มไตรมาส ตลาดจะจับตาความเร็วในการติดตั้ง GPU, การหาแหล่งทุน capex และ margin ของธุรกิจ AI Cloud เทียบกับธุรกิจขุดเดิม" },
+        { "name": "สัญญา Hyperscaler / AI Developer เพิ่มเติม", "description": "IREN เซ็นสัญญาต่อเนื่องตลอดปี 2026 กับหลายราย การประกาศสัญญาใหม่ก่อนงบมีโอกาสเป็นตัวกระตุ้น re-rating เช่นเดียวกับคู่แข่ง CIFR/WULF/HUT" }
+      ],
+      "risks": [
+        "ความเสี่ยงด้าน execution ในการจัดหาและติดตั้ง GPU ให้ทันเป้า ARR 4 พันล้านดอลลาร์",
+        "ช่องว่างเงินทุน capex — แม้มีเงินสด 7.6 พันล้านดอลลาร์ (รวม restricted cash 1.7 พันล้านสำหรับ Microsoft) การขยายเพิ่มอาจต้องกู้หรือเพิ่มทุนซึ่งจะเจือจางผู้ถือหุ้น",
+        "ยังมีความเสี่ยงจากธุรกิจขุดบิตคอยน์เดิม — ราคา BTC อ่อนตัว (หลุด $63,000 ต้น ส.ค. 2026) ยังฉุด P&L ธุรกิจขุด",
+        "valuation ค่อนข้างสูง (P/E ~73 เท่า) หลังหุ้นวิ่งแรงในปี 2026 เสี่ยงต่อการปรับฐานหาก sentiment กลุ่ม AI infrastructure อ่อนลง",
+        "Fed สายเหยี่ยว (คงดอกเบี้ย 3.50-3.75% พร้อม dot plot เชิงเหยี่ยว) กดดัน multiple ของหุ้นเติบโตโดยรวม"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงอัตราดอกเบี้ยที่ 3.50-3.75% ในการประชุม มิ.ย. 2026 ภายใต้ประธานคนใหม่ Kevin Warsh, dot plot เปลี่ยนไปทางเหยี่ยว (ค่ากลางปลายปีราว 3.8%) ตลาดแทบไม่ให้น้ำหนักการลดดอกเบี้ยใน ก.ย. และมีความเสี่ยงขึ้นดอกเบี้ยอยู่บ้าง",
+        "inflationNote": "เงินเฟ้อที่กลับมาสูงขึ้นจากราคาพลังงานทำให้ตลาดเลื่อนคาดการณ์การลดดอกเบี้ยออกไป ลดแรงหนุนด้าน multiple expansion สำหรับหุ้นเติบโตอย่าง IREN",
+        "sectorImpact": "การลงทุน AI infrastructure capex ยังเป็นตัวขับเคลื่อนหลักของ IREN (ได้รับการปกป้องระดับหนึ่งจากรายได้ตามสัญญาหลายปี) แต่ multiple ของหุ้นและธุรกิจขุดเดิมยังอ่อนไหวต่อดอกเบี้ยสูงและ sentiment กลุ่ม AI ที่เริ่มอ่อนลงปลาย ก.ค. 2026",
+        "summary": "บริบทมหภาคเป็นแรงต้านระดับปานกลาง ไม่ถึงกับทำลาย thesis — Fed สายเหยี่ยวจำกัดการขยาย multiple และเพิ่มความผันผวน แต่รายได้ของ IREN ตอนนี้ขับเคลื่อนด้วยดีมานด์ AI infrastructure ที่มีสัญญารองรับ ไม่ใช่ปัจจัยดอกเบี้ยโดยตรง"
+      },
+      "entryStrategy": {
+        "verdict": "ซื้อเก็งกำไรจำนวนน้อยตอนนี้ แล้วเพิ่มเมื่อราคาย่อลงมาโซน $32-35 ก่อนงบ Q4 ปีงบ 2026 ราวปลาย ส.ค. — คุมขนาดโพซิชันให้เหมาะกับความผันผวนระดับหุ้นเหมืองบิตคอยน์ แม้เรื่องราว AI infra จะน่าตื่นเต้น",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบันหลังหุ้นวิ่งแรง", "timing": "ตอนนี้ (เริ่มน้อยๆ)" },
+          { "note": "โซนย่อตัวหลังข่าวสัญญา AI", "timing": "ถ้าย่อ" },
+          { "note": "จุด retest ฐานราคาก่อนข่าวสัญญา 2.8 พันล้าน", "timing": "ถ้าร่วงหนัก / risk-off" }
+        ],
+        "tp1": { "note": "เคส base — re-rating ไปยังขอบล่างของเป้านักวิเคราะห์" },
+        "tp2": { "note": "เคส bull — เข้าใกล้เป้าเฉลี่ยนักวิเคราะห์ $81.73" },
+        "tp3": { "note": "เคส moon · ทำ AI Cloud ARR ได้ตามเป้าเต็มที่ พร้อมสัญญา hyperscaler เพิ่มเติม" },
+        "stopLoss": {
+          "tightNote": "หลุดฐาน breakout หลังข่าวสัญญา 2.8 พันล้าน",
+          "hardNote": "หลุดจุดต่ำสุดของกรอบราคาปี 2026 ก่อนข่าวสัญญา",
+          "rrNote": "stop แคบเทียบ TP2 ($80)",
+          "rrWarning": "R/R ดีเมื่อเทียบรายได้ตามสัญญาที่รองรับอยู่ แต่ควรคุมขนาดโพซิชันให้เล็กเพราะความผันผวนสูง"
+        }
+      },
+      "estimateDates": [
+        { "event": "งบ Q4 ปีงบประมาณ 2026", "note": "วันที่ประมาณจากหลายแหล่งติดตามปฏิทินงบ ยังไม่ยืนยันจาก IR ของ IREN โดยตรง — ไตรมาสแรกที่จะเห็นรายได้ AI Cloud ตามสัญญาเต็มที่" },
+        { "event": "จุดตรวจ AI Cloud ARR", "note": "เป้าบริษัท: ARR รายปีกว่า 4 พันล้านดอลลาร์ ณ สิ้นปี 2026 ราว 85% มีสัญญารองรับแล้ว" }
+      ]
+    }
+  }
+}
