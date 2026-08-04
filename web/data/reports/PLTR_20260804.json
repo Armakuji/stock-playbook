@@ -1,0 +1,249 @@
+{
+  "ticker": "PLTR",
+  "companyName": "Palantir Technologies, Inc.",
+  "companyDescription": "AI Operating System for Government + Enterprise · AIP boot camps → high conversion · Pentagon/Army/DHS/USDA AI contract dominance + fast-growing US commercial book",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-04T00:00:00.000Z",
+  "price": 144.45,
+  "priceChange": 15.0,
+  "priceNote": "Q2 2026 blowout — revenue $1.94B (+93% YoY) vs $1.81B est., EPS $0.41 vs $0.35 est., US commercial +149% YoY — sent shares +15% after-hours from the $125.65 close as FY26 guide was raised to $8.15–8.16B (from $7.65–7.66B). Watch premarket follow-through into the Aug 4 regular session.",
+  "marketCap": "$346B",
+  "sector": "Technology / AI Software",
+  "verdict": "HOLD",
+  "scoreLabel": "Speculative",
+  "score": 70,
+  "summary": "Palantir just posted its strongest quarter yet — 93% YoY revenue growth, a 155% Rule-of-40 score, and a ~$500M FY guidance raise — breaking the prior 3-quarter sell-the-news pattern with a +15% after-hours pop. But that pop compresses upside to the $182 Street consensus to roughly +26%, under our 30% conviction bar, while the stock still trades near 70x forward earnings. Fundamentals are excellent; the entry price is no longer cheap.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings — Beat & Raise",
+      "description": "Revenue $1.94B (+93% YoY) vs $1.81B consensus; adj. EPS $0.41 vs $0.35 est.; US commercial revenue +149% YoY. FY26 guide raised to $8.15–8.16B from $7.65–7.66B. Rule of 40 = 155%. Shares +15% after-hours.",
+      "urgencyLabel": "JUST REPORTED",
+      "dateBadge": "Aug 3, 2026",
+      "catalystDate": "2026-08-03",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "📊",
+      "name": "Q3 2026 Earnings (next print)",
+      "description": "Next scheduled report. Watch for whether the guide-raise momentum holds, US commercial growth stays >100% YoY, and if the post-Q2 pop gets faded or extended.",
+      "urgencyLabel": "~90 DAYS",
+      "dateBadge": "Nov 2, 2026",
+      "catalystDate": "2026-11-02",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🪖",
+      "name": "US Army NGC2 — Foundry as Core Data Layer",
+      "description": "Army selected Palantir Foundry as the cloud data layer for its top-priority Next Generation Command & Control modernization program, moving from prototype to Army-wide deployment. Validated at Project Convergence-Capstone 6 (Fort Irwin, Jul 20–29).",
+      "urgencyLabel": "RECENT",
+      "dateBadge": "Jul 2026",
+      "catalystDate": "2026-07-29",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🤝",
+      "name": "NVIDIA Sovereign AI Partnership",
+      "description": "Joint initiative running NVIDIA AI + Nemotron models inside Palantir's secure environments for sovereign government and critical-infrastructure workloads — expands AIP's addressable market beyond the US.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Jun 2026",
+      "catalystDate": "2026-06-15",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Post-pop chase risk — the +15% after-hours move can fade fast if the Aug 4 regular session doesn't hold the gap; 1 of the last 4 quarters (Q1 2026, May) still fell -6.93% despite a beat",
+    "Upside to consensus has compressed to ~26% (below the 30% conviction gate) — no longer a fresh-entry 'cheap' setup even with blowout fundamentals",
+    "Still-rich valuation — ~70x forward earnings even after the growth re-acceleration; any deceleration triggers violent multiple compression",
+    "UK/EU regulatory friction — Metropolitan Police contract was blocked in mid-2026 and NHS remains under scrutiny, even as the UK MOD relationship (£750M contract) deepens elsewhere",
+    "Hyperscaler competition — Azure AI, AWS Bedrock, Databricks all building competing enterprise AI tooling",
+    "Government budget/appropriations risk — US public sector still a large share of revenue; DOGE reviews and CR uncertainty can delay task orders despite the NGC2 win",
+    "Hawkish Fed dot plot (only 1 cut projected in 2026) keeps discount rates elevated for long-duration, high-multiple software names"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q2 2026 Earnings (reported)",
+      "dateRange": "Aug 3, 2026",
+      "note": "Beat: $1.94B rev (+93% YoY) vs $1.81B est.; EPS $0.41 vs $0.35 est.; US commercial +149% YoY",
+      "est": "actual: $1.94B rev / $0.41 EPS",
+      "highlight": "blue"
+    },
+    {
+      "event": "FY2026 Revenue Guidance (raised)",
+      "dateRange": "Current: $8.15–8.16B",
+      "note": "Raised from prior $7.65–7.66B guide; US commercial now guided >$3.42B, up from prior >$3.22B",
+      "est": "$8.15B FY guide",
+      "highlight": "blue"
+    },
+    {
+      "event": "Q3 2026 Earnings (est.)",
+      "dateRange": "~Nov 2, 2026",
+      "note": "Watch whether guide-raise momentum holds and US commercial growth stays >100% YoY",
+      "est": "consensus ~$2.0–2.1B rev (est.)",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -18, "price": 118 },
+    { "label": "Base", "color": "yellow", "pct": 11, "price": 160 },
+    { "label": "Bull", "color": "green", "pct": 26, "price": 182 },
+    { "label": "Moon", "color": "purple", "pct": 56, "price": 225 }
+  ],
+  "analystTargets": [
+    { "firm": "S&P Global Consensus (32 analysts)", "target": 182, "rating": "Buy" },
+    { "firm": "Rosenblatt Securities (John McPeake)", "target": 225, "rating": "Buy" },
+    { "firm": "Oppenheimer (Martin Yang)", "target": 200, "rating": "Buy" },
+    { "firm": "DA Davidson (Gil Luria) — upgraded Hold→Buy", "target": 175, "rating": "Buy" },
+    { "firm": "RBC Capital (Rishi Jaluria)", "target": 90, "rating": "Sell" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed has held 3.50–3.75% through mid-2026; the latest FOMC dot plot shows just one cut in 2026 (to ~3.44%) and one more in 2027 — a more hawkish path than markets had hoped, keeping pressure on long-duration, high-multiple software names.",
+    "inflationNote": "Core inflation still running above target. Government contracts (a large share of PLTR revenue) are largely inflation-insulated, but continued Fed hawkishness raises the effective discount rate applied to PLTR's 70x+ forward earnings.",
+    "sectorImpact": "AI-software valuations are broadly under scrutiny for being stretched relative to an elevated cost of capital. PLTR's blowout Q2 print bucks that narrative on hard fundamentals, but the whole group remains rate-sensitive to any further hawkish repricing.",
+    "summary": "MEDIUM — a hawkish Fed dot plot (only one cut projected in 2026) pressures high-multiple AI software broadly. PLTR's Q2 beat-and-raise provides a fundamental offset, but doesn't eliminate multiple-compression risk if rate expectations shift further hawkish."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 144, "note": "Current — right after the +15% post-earnings pop; chasing risk", "timing": "Now (small/no add)" },
+      { "label": "Entry 2", "level": 125, "rangeMax": 130, "note": "Pre-earnings close zone — ideal pullback/gap-fill entry", "timing": "If it fades back", "preferred": true },
+      { "label": "Entry 3", "level": 108, "note": "Near 52-week low support ($106.37) — deep dip only", "timing": "Deep macro selloff" }
+    ],
+    "tp1": { "price": 160, "pct": 10.8, "note": "Near-term continuation above the post-earnings gap" },
+    "tp2": { "price": 182, "pct": 26.0, "note": "Hits Street consensus target" },
+    "tp3": { "price": 225, "pct": 55.7, "note": "Bull re-rating toward high-end analyst targets ($200–255)", "moon": true },
+    "stopLoss": {
+      "tight": 125,
+      "tightPct": -13.5,
+      "tightNote": "Below pre-earnings close = the post-earnings pop has fully faded",
+      "hard": 106,
+      "hardPct": -26.6,
+      "hardNote": "52-week low breach = thesis broken",
+      "riskReward": "1.9 : 1",
+      "rrNote": "Tight stop vs TP2, measured from the preferred Entry 2 zone",
+      "rrWarning": "Upside to consensus is now under the 30% bar — don't chase the gap; R/R only works from a pullback entry"
+    },
+    "verdict": "PLTR just delivered its best quarter yet (93% rev growth, guide raised ~$500M) and popped +15% after-hours — but upside to the $182 consensus has compressed to ~26%, under our conviction bar. HOLD at $144: let the post-earnings dust settle and add on a pullback toward $125–130 rather than chasing the gap.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "PLTR typically drifts flat-to-slightly-up into earnings on elevated expectations rather than building a large pre-print run; the actual print — not positioning — drives the move. Q2 2026 saw only a modest pre-announcement pop before the real +15% move came after the beat itself.",
+    "preRunupTiming": "1–2 weeks before earnings, muted",
+    "preRunupPct": "+2% to +5%",
+    "postWin": {
+      "avgPct": 10,
+      "range": "+6.9% to +15%",
+      "note": "3 of the last 4 quarters produced day-of/after-hours gains (Q2 2025 +7.85%, Q4 2025 +6.85%, Q2 2026 +15%), breaking the earlier 'sell-the-news' pattern. Q2 2026 (Aug 3, 2026) was the strongest: 93% YoY revenue growth + a ~$500M FY guide raise.",
+      "exampleDate": "Aug 2026"
+    },
+    "postLose": {
+      "avgPct": -6.9,
+      "range": "-6.9% to -6.9%",
+      "note": "Q1 2026 (May 4, 2026) beat on revenue but shares still fell -6.93% as the guidance raise was seen as too modest relative to sky-high expectations — the lone miss-reaction in an otherwise strong run.",
+      "exampleDate": "May 2026"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "Even after the Q2 blowout, upside to the $182 Street consensus has compressed to ~26% — below the 30% margin-of-safety bar — while the stock still trades near 70x forward earnings. Execution quality (93% rev growth, Rule of 40 = 155%) supports holding, not chasing an aggressive new entry at post-pop prices. Keep to 3–4% of portfolio."
+    },
+    "stopPreCatalyst": { "pct": -13, "price": 125, "note": "Below pre-earnings close = the post-pop momentum has fully faded and the thesis needs review" },
+    "stopPostCatalyst": { "pct": -15, "note": "If the Q3 guide disappoints or US commercial growth decelerates meaningfully below 100% YoY, exit within 2–3 sessions" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "PLTR",
+      "event": "Q2 2026 earnings — 93% YoY revenue growth, Rule of 40 = 155%, ~$500M FY guide raise",
+      "date": "Aug 2026",
+      "movePct": 15,
+      "days": 1,
+      "outcome": "good",
+      "note": "Broke the prior 3-quarter sell-the-news pattern with the strongest post-earnings pop of PLTR's current cycle — the print itself (not just the beat) drove the move via the sharp FY26 guidance raise."
+    },
+    {
+      "ticker": "PLTR",
+      "event": "Q1 2026 earnings — beat on revenue but guide raise seen as too modest",
+      "date": "May 2026",
+      "movePct": -6.93,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "A cautionary comparable in the same name: even a genuine beat can sell off when expectations are priced to perfection and the raise doesn't clear an elevated bar."
+    },
+    {
+      "ticker": "SNOW",
+      "event": "FY2025 Q4 earnings — AI platform adoption inflection beat",
+      "date": "Mar 2025",
+      "movePct": 18,
+      "days": 3,
+      "outcome": "good",
+      "note": "Enterprise AI platform inflection beat comparable to PLTR's AIP flywheel — beat + guided revenue acceleration produced a sustained multi-day rally, similar to the pattern PLTR just showed in Q2 2026."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Palantir Surges 15% After Q2 Results Beat Estimates; Full-Year Guidance Raised on Strong AI Demand",
+    "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262072328-palantir-q2-earnings-sweep-expectations-stock-surges-15-tradingkey",
+    "date": "Aug 2026"
+  },
+  "sources": [
+    "https://www.tradingkey.com/analysis/stocks/us-stocks/262072328-palantir-q2-earnings-sweep-expectations-stock-surges-15-tradingkey",
+    "https://stockanalysis.com/stocks/pltr/",
+    "https://stockanalysis.com/stocks/pltr/forecast/",
+    "https://finance.yahoo.com/markets/stocks/article/palantir-stock-jumps-as-us-commercial-business-booms-122817775.html",
+    "https://www.fxleaders.com/news/2026/08/03/palantir-technologies-q2-earnings-beat-sends-pltr-stock-above-144-as-revenue-growth-accelerates/",
+    "https://www.streetinsider.com/Corporate+News/Palantir+selected+as+cloud+data+layer+for+U.S.+Army+NGC2+program/26672975.html",
+    "https://www.army.mil/article/293409/army_and_industry_align_on_common_data_baseline_as_next_generation_command_and_control_moves_from_prototyping_to_delivery"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Palantir เพิ่งรายงานไตรมาสที่แข็งแกร่งที่สุด — revenue +93% YoY, Rule of 40 = 155%, ปรับ guide FY ขึ้น ~$500M — ทำลาย pattern sell-the-news 3 ไตรมาสก่อนหน้าด้วยการพุ่ง +15% after-hours แต่การพุ่งนี้ทำให้ upside เหลือ consensus $182 เพียง ~26% ต่ำกว่าเกณฑ์ 30% ของเรา ขณะที่หุ้นยังเทรดที่ ~70x forward earnings พื้นฐานดีมาก แต่ราคาเข้าตอนนี้ไม่ถูกแล้ว",
+      "priceNote": "Q2 2026 blowout — revenue $1.94B (+93% YoY) vs คาด $1.81B, EPS $0.41 vs คาด $0.35, US commercial +149% YoY — ทำให้หุ้นพุ่ง +15% after-hours จากปิด $125.65 หลังปรับ guide FY26 ขึ้นเป็น $8.15–8.16B (จาก $7.65–7.66B)",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "Q2 2026 Earnings — Beat & Raise", "description": "Revenue +93% YoY, EPS beat, US commercial +149% YoY, ปรับ FY guide ขึ้น ~$500M หุ้นพุ่ง +15% after-hours" },
+        { "name": "รายงานผล Q3 2026 (ครั้งถัดไป)", "description": "ดูว่า momentum จาก guide raise จะต่อเนื่องไหม และ US commercial โตเกิน 100% YoY ต่อเนื่องหรือไม่" },
+        { "name": "US Army NGC2 — Foundry เป็น core data layer", "description": "กองทัพเลือก Palantir Foundry เป็น cloud data layer หลักของโครงการ NGC2 เข้าสู่ deployment ทั่วกองทัพ" },
+        { "name": "NVIDIA Sovereign AI Partnership", "description": "ขยาย AIP ไปยังตลาด sovereign cloud ทั่วโลกร่วมกับ NVIDIA" }
+      ],
+      "risks": [
+        "ความเสี่ยงไล่ราคา — การพุ่ง +15% after-hours อาจหายไปเร็วถ้า session จริงไม่ยืนราคาได้",
+        "Upside เหลือแค่ ~26% ต่ำกว่าเกณฑ์ 30% ที่เราตั้งไว้ — ไม่ใช่จุดเข้าถูกแล้วแม้พื้นฐานดี",
+        "Valuation ยังสูง — ~70x forward PE แม้ growth เร่งขึ้น",
+        "UK/EU regulatory risk — Met Police contract ถูกบล็อก, NHS ถูกตรวจสอบ",
+        "Competition จาก Azure AI, AWS Bedrock, Databricks",
+        "Fed dot plot hawkish (ลดดอกเบี้ยแค่ 1 ครั้งใน 2026) กดดัน high-multiple software"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.50–3.75%; dot plot ล่าสุดชี้ลดแค่ 1 ครั้งใน 2026 — hawkish กว่าตลาดคาด กดดันหุ้น software ที่ multiple สูง",
+        "inflationNote": "Inflation core ยังสูงกว่าเป้า; สัญญา government ทนต่อ inflation แต่ discount rate ที่สูงขึ้นกดดัน valuation 70x+",
+        "sectorImpact": "AI-software valuation ทั้ง sector ถูกจับตาเรื่อง multiple สูงเทียบกับ cost of capital ที่สูงขึ้น PLTR หักล้างด้วยพื้นฐานจริงใน Q2 แต่ risk ยังอยู่",
+        "summary": "MEDIUM — Fed hawkish dot plot กดดัน AI software ทั้งกลุ่ม ผลประกอบการ Q2 ที่ดีช่วย offset บางส่วน แต่ยังเสี่ยงถ้า rate expectation แย่ลงอีก"
+      },
+      "entryStrategy": {
+        "verdict": "PLTR เพิ่งทำไตรมาสที่ดีที่สุด (revenue +93%, ปรับ guide ขึ้น ~$500M) และพุ่ง +15% after-hours — แต่ upside เหลือแค่ ~26% ต่ำกว่าเกณฑ์ที่เราตั้ง HOLD ที่ $144 รอให้ฝุ่นจางแล้วค่อยเพิ่มถ้าย่อกลับมาโซน $125–130 อย่าไล่ราคา",
+        "entryLevels": [
+          { "note": "ปัจจุบัน — หลังพุ่ง +15% after-hours ระวังไล่ราคา", "timing": "ตอนนี้ (position เล็ก/ไม่เพิ่ม)" },
+          { "note": "โซนปิดก่อน earnings — จุด pullback ที่ดี", "timing": "ถ้าราคาย่อกลับ" },
+          { "note": "ใกล้ 52-wk low — deep dip เท่านั้น", "timing": "ถ้า macro ร่วงหนัก" }
+        ],
+        "tp1": { "note": "ต่อเนื่องเหนือ gap หลัง earnings" },
+        "tp2": { "note": "ถึง consensus target ของนักวิเคราะห์" },
+        "tp3": { "note": "Re-rating สู่ target สูงสุดของนักวิเคราะห์" },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่าราคาปิดก่อน earnings = การพุ่งจางหายหมด",
+          "hardNote": "หลุด 52-wk low = thesis เสีย",
+          "rrNote": "Stop แคบเทียบ TP2 วัดจากโซน Entry 2",
+          "rrWarning": "Upside ต่ำกว่าเกณฑ์ 30% แล้ว อย่าไล่ราคา รอ pullback ก่อน"
+        }
+      },
+      "estimateDates": [
+        { "event": "Q2 2026 Earnings (รายงานแล้ว)", "note": "Beat: revenue $1.94B (+93% YoY), EPS $0.41 vs คาด $0.35, US commercial +149% YoY" },
+        { "event": "FY2026 Revenue Guidance (ปรับขึ้น)", "note": "ปรับขึ้นจาก $7.65–7.66B เป็น $8.15–8.16B; US commercial guide ใหม่ >$3.42B" },
+        { "event": "Q3 2026 Earnings (คาดการณ์)", "note": "ดู momentum ต่อเนื่องและ US commercial growth ว่ายืน >100% YoY ได้ไหม" }
+      ]
+    }
+  }
+}

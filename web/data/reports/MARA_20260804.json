@@ -1,0 +1,198 @@
+{
+  "ticker": "MARA",
+  "companyName": "MARA Holdings, Inc.",
+  "companyDescription": "Bitcoin mining + digital energy infrastructure — one of the largest publicly-traded BTC miners, pivoting excess power capacity into AI compute/data-center leases (HIF USA Texas site)",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-04T00:00:00.000Z",
+  "price": 11.31,
+  "priceChange": -4.28,
+  "priceNote": "Down 4.3% today, day range $11.08–$12.07, into a Q2 print in 2 days — sector-wide de-risking ahead of earnings",
+  "marketCap": "$4.31B",
+  "sector": "Technology / Digital Assets — Bitcoin Mining",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Speculative",
+  "score": 68,
+  "summary": "MARA reports Q2 2026 earnings on Aug 6 with analysts modeling a 30.9% EPS improvement despite a 12.6% revenue decline — a classic 'cost discipline vs. shrinking topline' setup for a bitcoin miner. Consensus is Buy (13 analysts, avg target $18.13, +54% upside) but the target spread is extreme ($5.50 to $30), reflecting genuine disagreement about whether MARA's AI-pivot (HIF USA site) re-rates the stock or the BTC-correlated mining business keeps dragging on GAAP losses. High-beta, binary, sizeable position risk into the print.",
+  "catalysts": [
+    {
+      "icon": "⚡",
+      "name": "Q2 2026 Earnings",
+      "description": "Reports Thursday Aug 6, 2026 after market close (5:00pm ET webcast). Analysts model EPS improving 30.9% YoY despite revenue falling 12.6% YoY — hinges on hash-cost discipline, BTC held on balance sheet, and any AI/data-center lease updates.",
+      "urgencyLabel": "2 DAYS",
+      "dateBadge": "Aug 6, 2026",
+      "catalystDate": "2026-08-06",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🏦",
+      "name": "Fed September FOMC + BTC macro path",
+      "description": "BTC trading $63–65k, well off its ATH near $126k. Fed funds futures are split on a September move; a dovish surprise (lower CPI print) would be a tailwind for BTC and miner equities, a hawkish hold keeps miners range-bound.",
+      "urgencyLabel": "6 WEEKS",
+      "dateBadge": "Sep 2026",
+      "catalystDate": "2026-09-17",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Bitcoin-price correlation — MARA's equity and mining economics move almost 1:1 with BTC; a break below the $55–58k zone would pressure both revenue and the stock directly",
+    "Shareholder dilution — MARA has repeatedly used ATM equity offerings and convertible notes to fund BTC accumulation and site expansion, diluting existing holders",
+    "Widening GAAP losses — Q1 2026 loss widened to $3.31/share (vs $1.55 loss a year earlier) on higher power costs and impairments; near-term EPS estimates carry wide error bars",
+    "Rising network difficulty & post-halving economics compress margin per BTC mined, independent of BTC price",
+    "AI-pivot execution risk — the HIF USA / AI data-center diversification is early-stage; delays or cost overruns could disappoint investors pricing in a faster re-rate away from pure BTC mining"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Aug 6, 2026", "note": "Revenue est. -12.6% YoY, EPS est. +30.9% YoY improvement", "est": "EPS improving despite revenue miss", "highlight": "blue" },
+    { "event": "Fed FOMC Decision", "dateRange": "Sep 17, 2026", "note": "Rate path decision — key swing factor for BTC risk appetite and miner valuations", "est": "Market split on hold vs cut", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -30, "price": 7.92 },
+    { "label": "Base", "color": "yellow", "pct": 15, "price": 13.01 },
+    { "label": "Bull", "color": "green", "pct": 55, "price": 17.53 },
+    { "label": "Moon", "color": "purple", "pct": 108, "price": 23.52 }
+  ],
+  "analystTargets": [
+    { "firm": "Bernstein", "target": 17, "rating": "Hold" },
+    { "firm": "Piper Sandler", "target": 13, "rating": "Buy" },
+    { "firm": "Cantor Fitzgerald", "target": 14, "rating": "Buy" },
+    { "firm": "Morgan Stanley", "target": 5.5, "rating": "Sell" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds futures are split on a September move — probabilities have swung between a modest hike and no-change scenario in recent weeks, with markets not yet confidently pricing a cut. No imminent shock into the Aug 6 print, but the Sep 17 FOMC is the next real inflection point for risk assets.",
+    "inflationNote": "August CPI is the key swing data point — a soft core CPI print would revive rate-cut odds and tends to be BTC/miner-supportive; a hot print does the opposite.",
+    "sectorImpact": "Bitcoin miners are high-beta proxies on both BTC price and real-rate expectations; MARA's stock has been sliding for two weeks (down from ~$12.07 to ~$11.08 intraday) as Wall Street turned cautious ahead of earnings, consistent with typical pre-print de-risking in the sector.",
+    "summary": "Macro backdrop is neutral-to-cautious: no acute Fed risk into Aug 6, but BTC's pullback from its ATH (~$126k) to $63–65k caps near-term upside until either a dovish Fed pivot or BTC re-acceleration provides a clearer tailwind."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 11.31, "note": "Current price, 2 days pre-earnings — small starter size only given binary event risk", "timing": "Now" },
+      { "label": "Entry 2", "level": 10.00, "rangeMax": 10.50, "note": "Recent range-low support zone; add if it dips pre- or post-print", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 8.50, "note": "Deeper capitulation level if earnings miss badly or BTC breaks lower", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 14.00, "pct": 23.8, "note": "Short-term technical target on an earnings beat / guidance pop" },
+    "tp2": { "price": 18.00, "pct": 59.2, "note": "Near average analyst consensus target ($18.13)" },
+    "tp3": { "price": 27.00, "pct": 138.7, "note": "Bull case if BTC re-tests highs + AI-pivot re-rate takes hold · 2026–2027", "moon": true },
+    "stopLoss": {
+      "tight": 10.00, "tightPct": -11.6, "tightNote": "Below the recent intraday range low ($10.96)",
+      "hard": 8.50, "hardPct": -24.8, "hardNote": "Thesis-break level — signals BTC has broken down materially or mining economics have deteriorated further",
+      "riskReward": "5.1 : 1", "rrNote": "Tight stop vs TP2 (consensus target)", "rrWarning": "Favorable R/R on paper, but the Aug 6 print is a binary event — size small and expect wide swings either direction"
+    },
+    "verdict": "Small speculative starter position pre-earnings; add on confirmed strength or the $10–10.50 dip zone, not before",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Bitcoin miners typically see two-way, choppy pre-earnings action rather than a clean run-up — MARA has drifted lower (from ~$12.07 to ~$11.08 intraday) over the two weeks into this print as Wall Street turned cautious, consistent with sector-wide de-risking ahead of Q2 2026 reports across RIOT and CORZ as well.",
+    "preRunupTiming": "1–2 weeks before event",
+    "preRunupPct": "-5% to -10%",
+    "postWin": {
+      "avgPct": 9,
+      "range": "+3% to +18%",
+      "note": "MARA rallied 9.78% on an upbeat earnings/guidance reaction in June 2026; the pattern for the sector is that a genuine beat + confident guidance can produce a fast double-digit pop given the high short interest and options positioning typical of BTC miners",
+      "exampleDate": "Jun 2026"
+    },
+    "postLose": {
+      "avgPct": -9,
+      "range": "-3% to -13%",
+      "note": "MARA fell 3.5% on its Q1 2026 miss (May 2026); peers show the downside can be sharper — Core Scientific (CORZ) dropped 9.2% on its Q1 2026 miss and 12.65% even after beating EPS estimates on Q2 2026 guidance concerns, and Riot Platforms slid 9.56% on weak forward guidance ahead of its Q2 2026 print",
+      "exampleDate": "Jul 2026"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Wide analyst target dispersion ($5.50–$30), GAAP losses widening, and a binary catalyst in 2 days argue for a small speculative sizing (2–4% of a speculative sleeve) rather than a core-conviction size"
+    },
+    "stopPreCatalyst": { "pct": -11.6, "price": 10.00, "note": "If MARA breaks the recent range low before the print, the pre-earnings de-risking thesis is already playing out worse than expected — reduce or wait for confirmation" },
+    "stopPostCatalyst": { "pct": -15, "note": "If Q2 results confirm a bigger loss or negative BTC/AI-pivot commentary, exit on the earnings reaction day rather than averaging down into a broken thesis" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "CORZ",
+      "event": "Q1 2026 earnings miss",
+      "date": "May 2026",
+      "movePct": -9.22,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Fellow digital-infrastructure/BTC-adjacent miner fell 9.2% on a Q1 2026 miss — shows how quickly sentiment flips negative on a weak print even amid an AI-pivot narrative, the same dynamic MARA is exposed to on Aug 6."
+    },
+    {
+      "ticker": "CORZ",
+      "event": "Q2 2026 results — beat EPS but stock fell on guidance",
+      "date": "Jul 2026",
+      "movePct": -12.65,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Even beating the Zacks consensus EPS estimate wasn't enough — the stock still dropped 12.65% on guidance/cost concerns, a reminder that a MARA EPS 'beat' on Aug 6 doesn't guarantee a positive reaction if revenue guidance disappoints."
+    },
+    {
+      "ticker": "RIOT",
+      "event": "Pre-Q2 2026 earnings de-risking on weak EPS forecast",
+      "date": "Jul 2026",
+      "movePct": -9.56,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Riot slid 9.56% ahead of its own Q2 2026 print as analysts modeled a wider loss — direct evidence of sector-wide caution into BTC-miner earnings season that is also weighing on MARA right now."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "MARA Stock Slips As Wall Street And Insiders Turn Cautious",
+    "url": "https://stockstotrade.com/news/mara-holdings-inc-mara-news-2026_07_28/",
+    "date": "Jul 2026"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/mara/",
+    "https://stockanalysis.com/stocks/mara/forecast/",
+    "https://www.stocktitan.net/news/MARA/mara-schedules-conference-call-for-second-quarter-2026-financial-3otwuubth07g.html",
+    "https://www.tradersunion.com/news/stocks/show/2836338-riot-platforms-slides-9-56percent-to/",
+    "https://www.sahmcapital.com/news/content/core-scientific-corz-stock-price-drops-as-ai-pivot-meets-108b-loss-2026-07-30",
+    "https://uk.finance.yahoo.com/news/bitcoin-price-federal-reserve-interest-rates-094013406.html",
+    "https://www.timothysykes.com/news/mara-holdings-inc-mara-news-2026_06_22/",
+    "https://stockstotrade.com/news/mara-holdings-inc-mara-news-2026_07_28/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "MARA รายงานผลประกอบการ Q2 2026 วันที่ 6 ส.ค. นักวิเคราะห์คาด EPS ดีขึ้น 30.9% แม้รายได้จะลดลง 12.6% — เป็นโจทย์คลาสสิกของหุ้นขุด Bitcoin ที่คุมต้นทุนได้ดีขึ้นแต่รายได้หดตัว ฉันทามตินักวิเคราะห์ยังเป็น Buy (13 คน เป้าเฉลี่ย $18.13 อัพไซด์ +54%) แต่ช่วงเป้าราคากว้างมาก ($5.50–$30) สะท้อนความเห็นต่างว่าธุรกิจ AI/data center ใหม่จะพลิกโฉมหุ้นได้จริงหรือไม่ ความเสี่ยงสูง ผันผวนแรง เหมาะเป็นของเล่นเก็งกำไรมากกว่า core holding",
+      "priceNote": "ราคาลง 4.3% วันนี้ กรอบวัน $11.08–$12.07 อีก 2 วันจะประกาศงบ — ทั้งกลุ่มขุด BTC กำลังลดความเสี่ยงก่อนงบออก",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "งบ Q2 2026", "description": "ประกาศวันพฤหัสที่ 6 ส.ค. 2026 หลังตลาดปิด (webcast 5 โมงเย็น ET) นักวิเคราะห์คาด EPS ดีขึ้น 30.9% YoY แม้รายได้จะลด 12.6% YoY — ขึ้นอยู่กับวินัยต้นทุนขุด, ปริมาณ BTC ที่ถือ และอัพเดตดีล AI/data center" },
+        { "name": "FOMC เดือนกันยายน + ทิศทาง Bitcoin", "description": "BTC อยู่แถว $63-65k ห่างจาก ATH ราว $126k ตลาดยังแบ่งฝ่ายว่าเฟดจะขึ้น/คงดอกเบี้ยเดือนก.ย. ถ้าเฟดออกมา dovish จะหนุน BTC และหุ้นเหมืองขุด" }
+      ],
+      "risks": [
+        "ความสัมพันธ์กับราคา Bitcoin — มูลค่าหุ้นและเศรษฐศาสตร์การขุดของ MARA เคลื่อนไหวเกือบ 1:1 กับ BTC ถ้าหลุด $55-58k จะกดดันทั้งรายได้และราคาหุ้น",
+        "ความเสี่ยง dilution — MARA ออกหุ้นเพิ่มทุน (ATM) และหุ้นกู้แปลงสภาพซ้ำๆ เพื่อซื้อ BTC และขยายไซต์ ทำให้ผู้ถือหุ้นเดิมเจือจาง",
+        "ขาดทุนตามบัญชี GAAP ขยายตัว — Q1 2026 ขาดทุนเพิ่มเป็น $3.31/หุ้น จาก $1.55 ปีก่อน จากต้นทุนไฟฟ้าและการด้อยค่าสินทรัพย์",
+        "ความยากในการขุด (network difficulty) ที่เพิ่มขึ้นหลัง halving บีบมาร์จิ้นต่อ BTC ที่ขุดได้ ไม่ว่าราคา BTC จะเป็นอย่างไร",
+        "ความเสี่ยงด้านการทำ AI pivot — โครงการ HIF USA / data center ยังเป็นช่วงเริ่มต้น หากล่าช้าหรือต้นทุนบานปลาย อาจทำให้นักลงทุนที่คาดหวัง re-rate เร็วผิดหวัง"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ตลาดยังแบ่งฝ่ายเรื่องทิศทางเฟดเดือนก.ย. ไม่มีความเสี่ยงเฉพาะหน้าก่อนงบ 6 ส.ค. แต่ FOMC 17 ก.ย. จะเป็นจุดเปลี่ยนสำคัญของสินทรัพย์เสี่ยง",
+        "inflationNote": "ตัวเลข CPI เดือนสิงหาคมคือจุดชี้วัดสำคัญ — ถ้าออกมาต่ำจะหนุนโอกาสลดดอกเบี้ยและมักดีต่อ BTC/หุ้นเหมืองขุด",
+        "sectorImpact": "หุ้นเหมืองขุด Bitcoin เป็น high-beta ต่อทั้งราคา BTC และการคาดการณ์ดอกเบี้ยจริง ราคา MARA ไหลลงมา 2 สัปดาห์ก่อนงบ สอดคล้องกับ pattern การลดความเสี่ยงก่อนประกาศผลของกลุ่มนี้",
+        "summary": "บรรยากาศ macro เป็นกลางค่อนไปทางระมัดระวัง ไม่มีความเสี่ยงเฟดเฉียบพลันก่อนวันที่ 6 ส.ค. แต่ BTC ที่ร่วงจาก ATH มาที่ $63-65k จำกัด upside ระยะสั้นจนกว่าจะมีตัวเร่งใหม่"
+      },
+      "entryStrategy": {
+        "verdict": "เปิดสถานะเก็งกำไรขนาดเล็กก่อนงบ; เพิ่มเมื่อยืนยันแรงซื้อชัดเจน หรือรอโซนย่อ $10-10.50 อย่ารีบเข้าหนักก่อนงบออก",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน อีก 2 วันจะประกาศงบ — เข้าไซส์เล็กเท่านั้นเพราะเป็นเหตุการณ์ผลลัพธ์สองทาง", "timing": "ตอนนี้" },
+          { "note": "โซนแนวรับล่าสุด เพิ่มสถานะถ้าย่อมาแถวนี้ก่อนหรือหลังงบ", "timing": "ถ้าย่อ" },
+          { "note": "ระดับ capitulation ลึก หากงบพลาดหนักหรือ BTC หลุดแนวรับ", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "เป้าเทคนิคระยะสั้นหากงบดีหรือ guidance เด้งแรง" },
+        "tp2": { "note": "ใกล้เคียงเป้าเฉลี่ยนักวิเคราะห์ ($18.13)" },
+        "tp3": { "note": "เคส bull หาก BTC ทำ new high อีกครั้ง + ธุรกิจ AI pivot ติดตลาด · 2026-2027" },
+        "stopLoss": {
+          "tightNote": "หลุดแนวรับช่วงล่างล่าสุด ($10.96 intraday)",
+          "hardNote": "จุดเปลี่ยน thesis — สะท้อนว่า BTC หลุดแนวรับสำคัญ หรือเศรษฐศาสตร์การขุดแย่ลงกว่าที่คาด",
+          "rrNote": "Stop แบบ tight เทียบกับ TP2 (เป้าฉันทามติ)",
+          "rrWarning": "R/R ดูดีในตัวเลข แต่งบ 6 ส.ค. เป็นเหตุการณ์ผลลัพธ์สองทาง ควรไซส์เล็กและเตรียมรับความผันผวนสูง"
+        }
+      },
+      "estimateDates": [
+        { "event": "งบ Q2 2026", "note": "คาดรายได้ลด 12.6% YoY, EPS ดีขึ้น 30.9% YoY" },
+        { "event": "มติ FOMC", "note": "จุดชี้วัดทิศทางดอกเบี้ยที่กระทบ risk appetite ของ BTC และมูลค่าหุ้นเหมืองขุด" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "ticker": "ASTS",
+  "companyName": "AST SpaceMobile, Inc.",
+  "companyDescription": "Satellite broadband · Direct-to-cell 4G/5G via LEO satellites — smartphones connect without towers",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-04T00:00:00.000Z",
+  "price": 63.52,
+  "priceChange": 7.7,
+  "priceNote": "Aug 3 close · ↑7.7% pre-launch rally — market pricing in Aug 5 BlueBird 11/12/13 launch (3:42am EDT, Falcon 9, Cape Canaveral); down from $133 ATH (May 28) but well off the $55.74 Aug 3 intraday low",
+  "marketCap": "$24.65B",
+  "sector": "Technology / Space / Telecom",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 55,
+  "summary": "ASTS rallied +7.7% into the Aug 5 launch of next-gen BlueBird 11/12/13 (nearly 2x peak download speed vs Block 1), the next binary catalyst after the Jun 17 BB8/9/10 success. Wall Street has turned more constructive: Piper Sandler initiated Overweight ($100 PT, calling ASTS the best risk/reward of the space names), B. Riley upgraded to Buy ($85), even Scotiabank flipped from Underperform to Sector Perform ($50.80). Q2 2026 revenue guidance reaffirmed at $150-200M with $1.2B+ contracted backlog from ~60 MNOs including AT&T/Verizon, targeting ~45 satellites and ~$1B revenue run rate by 2027. Offsetting: a $1.15B convertible note (due 2034, priced Jul 21) raised near-term dilution/leverage questions even as the capped call caps effective dilution under 2%, and the Fed's hawkish June dot plot (rates on hold, hike risk flagged) keeps growth-stock valuations under pressure. Q2 earnings (~Aug 10-14) is the next dated catalyst after launch. Still binary, still pre-profit — size as ค่าขนม only.",
+  "catalysts": [
+    {
+      "icon": "🛰️",
+      "name": "BlueBird 11/12/13 Launch",
+      "description": "SpaceX Falcon 9 from Cape Canaveral, liftoff targeted 3:42am EDT (backup 5:10am). Next-gen stackable architecture, nearly 2x peak download speed vs Block 1 (which hit 98.9 Mbps). Pushes constellation toward the ~45-satellite year-end target.",
+      "urgencyLabel": "1 DAY",
+      "dotColor": "yellow",
+      "dateBadge": "Aug 5, 2026",
+      "badgeColor": "yellow",
+      "catalystDate": "2026-08-05"
+    },
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "Expected ~Aug 10-14 (date not yet confirmed by company). Market watching: commercial activation progress with AT&T/Verizon, revenue trajectory toward the $150-200M FY26 guide, and constellation build-out update post-launch.",
+      "urgencyLabel": "~7 DAYS",
+      "dotColor": "yellow",
+      "dateBadge": "~Aug 12, 2026",
+      "badgeColor": "yellow",
+      "catalystDate": "2026-08-12"
+    },
+    {
+      "icon": "🇯🇵",
+      "name": "Japan J-LEO Award — Binary Event",
+      "description": "Multi-billion JPY contract with Rakuten/NTT Docomo, decision still expected Q3 2026. Win = re-rate higher, miss = sharp drawdown. Remains the biggest single binary swing factor for H2 2026.",
+      "dotColor": "yellow",
+      "dateBadge": "Q3 2026",
+      "badgeColor": "blue",
+      "catalystDate": "2026-09-15"
+    }
+  ],
+  "risks": [
+    "Still binary/pre-profit — $150-200M FY26 revenue guide vs $24.65B market cap; execution risk on scaling from ~10 to 45 satellites remains untested at this pace",
+    "$1.15B convertible notes due 2034 (closed Jul 21) — stock fell as much as 13% after-hours on the initial offering announcement (Jul 15) before recovering; leverage now on the balance sheet even with capped-call dilution protection (<2% effective)",
+    "Analyst split remains wide — targets range from Scotiabank's $50.80 (Sector Perform, still below spot at times) to Piper Sandler's $100 (Overweight); consensus rating is still net Hold/Neutral, not broad Buy",
+    "Fed dot plot turned hawkish in June (rates held 3.50-3.75%, some members flagging hike risk) — pressures long-duration/pre-profit growth names broadly",
+    "SpaceX Starlink Direct-to-Cell (T-Mobile) competition — head start on satellite count and a much larger balance sheet",
+    "Japan J-LEO binary risk still unresolved — a miss would remove the main H2 2026 re-rate catalyst",
+    "Launch-day execution risk — any anomaly on Aug 5 (weather scrub, vehicle issue, deployment failure) would hit sentiment hard given the stock already ran +7.7% into it"
+  ],
+  "estimateDates": [
+    {
+      "event": "BlueBird 11/12/13 Launch",
+      "dateRange": "Aug 5, 2026",
+      "note": "Falcon 9 from Cape Canaveral — next-gen satellites, ~2x peak speed vs Block 1",
+      "highlight": "yellow"
+    },
+    {
+      "event": "Q2 2026 Earnings",
+      "dateRange": "~Aug 10-14, 2026",
+      "note": "Commercial activation + AT&T/Verizon ramp read; FY26 $150-200M guide check-in",
+      "highlight": "yellow"
+    },
+    {
+      "event": "Japan J-LEO Award Decision",
+      "dateRange": "Q3 2026",
+      "note": "Binary event — Rakuten/NTT Docomo multi-billion JPY contract decision",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -35, "price": 41 },
+    { "label": "Base", "color": "yellow", "pct": 26, "price": 80 },
+    { "label": "Bull", "color": "green", "pct": 57, "price": 100 },
+    { "label": "Moon", "color": "purple", "pct": 111, "price": 134 }
+  ],
+  "analystTargets": [
+    { "firm": "Piper Sandler", "target": 100, "rating": "Overweight" },
+    { "firm": "B. Riley", "target": 85, "rating": "Buy" },
+    { "firm": "Consensus (10-18 analysts)", "target": 85, "rating": "Hold" },
+    { "firm": "Scotiabank", "target": 51, "rating": "Sector Perform" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "June FOMC held rates at 3.50-3.75% with a hawkish dot-plot shift — median 2026 year-end projection rose to 3.8%, and roughly half the committee flagged possible hikes rather than cuts. Markets that entered 2026 pricing cuts are now pricing higher-for-longer, or even tightening.",
+    "inflationNote": "A higher-for-longer rate path raises the discount rate on ASTS's long-dated 2027+ revenue ramp and makes the newly issued $1.15B convertible debt costlier to refinance/service down the line, even at a low 1.625% coupon.",
+    "sectorImpact": "Space/satellite names are more sensitive to risk-appetite and rate-driven multiple compression than to Fed policy directly — FCC spectrum decisions and launch-vehicle cadence (SpaceX/Falcon 9 availability) matter more day-to-day, but a hawkish macro backdrop caps how far pre-profit growth names can re-rate on good news.",
+    "summary": "Macro risk MEDIUM (upgraded from LOW) — the June hawkish dot-plot shift matters more for a name that just raised $1.15B in convertible debt and won't be FCF-positive for years. Catalyst outcomes (launch, Japan) still dominate near-term price action, but macro is no longer a pure tailwind. Size accordingly: ค่าขนม only."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 63,
+        "note": "Current price — already up 7.7% into tomorrow's launch; chasing here means eating launch-day risk at an elevated cost basis",
+        "timing": "Now / small only"
+      },
+      {
+        "label": "Entry 2",
+        "level": 52,
+        "rangeMax": 56,
+        "note": "Preferred zone — near Scotiabank's $50.80 bear-case target and the pre-rally base; better R/R, avoids paying up for launch-hype premium",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 42,
+        "note": "Deep capitulation zone — near 52-week-adjacent bear scenario; would follow a launch failure or a soft Q2 print",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": { "price": 80, "pct": 26.0, "note": "Base case — successful launch + inline Q2 print, re-rate toward consensus target" },
+    "tp2": { "price": 100, "pct": 57.5, "note": "Bull case — Piper Sandler PT, clean launch + Japan J-LEO tailwind building" },
+    "tp3": { "price": 134, "pct": 111.0, "note": "Moon case — Japan J-LEO win + 45-satellite constellation on track · 2027 ATH retest", "moon": true },
+    "stopLoss": {
+      "tight": 52,
+      "tightPct": -18.1,
+      "tightNote": "Below the preferred Entry 2 zone — launch-day disappointment or scrub cascade would break this level fast",
+      "hard": 41,
+      "hardPct": -35.4,
+      "hardNote": "Bear-scenario capitulation — launch failure or Japan miss stacked on a weak Q2 print",
+      "riskReward": "3.2 : 1",
+      "rrNote": "From preferred Entry 2 ($54 mid) tight stop vs TP2 $100",
+      "rrWarning": "Decent R/R from the preferred zone, but chasing at today's post-rally price compresses it significantly"
+    },
+    "verdict": "SPECULATIVE — ค่าขนม only (max 3% of portfolio). Stock already ran +7.7% ahead of the Aug 5 launch; better to let the event pass and buy any post-launch pullback into $52-56 than chase here. Q2 earnings (~Aug 12) and Japan J-LEO (Q3) are the next two binary checkpoints — reassess sizing after each.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "satellite_launch",
+    "preRunup": "ASTS consistently runs up into scheduled launches — BB8/9/10 (Jun 17) saw the stock up ~5% on launch day itself after a volatile pre-launch drawdown; this cycle the stock is up +7.7% in the single session before the Aug 5 BB11/12/13 launch, on top of a string of analyst upgrades (Piper Sandler, B. Riley, Scotiabank) landing in the two weeks prior.",
+    "preRunupTiming": "1-2 days immediately before a confirmed launch date, amplified by any analyst upgrades landing in the same window",
+    "preRunupPct": "+5-10%",
+    "postWin": {
+      "avgPct": 45,
+      "range": "+5% to +200%",
+      "note": "BB1 (Apr 2024) ran +200%+ over the following 2 weeks after first direct-to-cell call confirmed. BB8/9/10 (Jun 17, 2026) added +5% same-day on successful deployment alone, before fading into July on macro/dilution news. Sector-wide consolidation news (Rocket Lab-Iridium deal, Jun 29 2026) also lifted ASTS +10% same-day purely on space-sector re-rating sentiment.",
+      "exampleDate": "Jun 2026"
+    },
+    "postLose": {
+      "avgPct": -14,
+      "range": "-13% to -18%",
+      "note": "Blue Origin New Glenn hotfire explosion (May 29, 2026, a separate launch-partner risk) knocked ASTS -18% in a day. The $1B convertible note announcement (Jul 15, 2026) — dilution fear, not a launch failure — dropped shares -13% after-hours before recovering on completion.",
+      "exampleDate": "Jul 2026"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "SPECULATIVE / ค่าขนม — binary Japan J-LEO still pending, stock already up +7.7% pre-launch so most of the immediate catalyst is priced in, wide analyst target dispersion ($51-$100). Max 3% of portfolio; do not add on launch-day spikes."
+    },
+    "stopPreCatalyst": {
+      "pct": -15,
+      "price": 54,
+      "note": "Break back below $54 before/around the Aug 5 launch would erase the pre-launch rally and signal the market doesn't believe the setup — reduce."
+    },
+    "stopPostCatalyst": {
+      "pct": -15,
+      "note": "If the Aug 5 launch has any anomaly (scrub cascade, deployment issue) or Q2 earnings disappoint on commercial ramp, exit within 1-2 trading sessions — no revenue cushion yet to average through a thesis break."
+    }
+  },
+  "comparableCases": [
+    { "ticker": "IRDM", "event": "Rocket Lab $8B acquisition announcement — space-sector consolidation", "date": "Jun 2026", "movePct": 22, "days": 1, "outcome": "good", "note": "Iridium jumped ~20-25% in a day purely on being acquired at a premium; ASTS and Planet Labs also rose ~10% same-day on read-through consolidation/scarcity-value sentiment across the sector — shows how binary sector news can move ASTS even without a company-specific catalyst." },
+    { "ticker": "ASTS", "event": "BlueBird 1 launch success + first direct-to-cell call", "date": "Apr 2024", "movePct": 100, "days": 14, "outcome": "good", "note": "ASTS itself ran +100%+ over 2 weeks after BB1 confirmed the core direct-to-cell tech worked — the template bull case for what a flawless BB11/12/13 launch plus strong commercial ramp data could still do." },
+    { "ticker": "ASTS", "event": "$1B convertible senior notes offering announcement", "date": "Jul 2026", "movePct": -13, "days": 1, "outcome": "bad", "note": "Shares fell 13% after-hours purely on dilution/leverage fear when the note offering was announced, even though the eventual terms (capped call, <2% effective dilution) were investor-friendly — shows the stock's sensitivity to financing headlines independent of operational news." }
+  ],
+  "rankChangeSource": {
+    "headline": "Piper Sandler initiates AST SpaceMobile at Overweight with $100 price target, picks ASTS over Rocket Lab and SpaceX",
+    "url": "https://za.investing.com/news/stock-market-news/piper-sandler-initiates-ast-spacemobile-stock-at-overweight-100-target-93CH-4372668",
+    "date": "Jul 2026"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/asts/",
+    "https://finance.yahoo.com/technology/articles/ast-spacemobile-announces-launch-date-110500570.html",
+    "https://za.investing.com/news/stock-market-news/piper-sandler-initiates-ast-spacemobile-stock-at-overweight-100-target-93CH-4372668",
+    "https://www.businesswire.com/news/home/20260721294685/en/AST-SpaceMobile-Announces-Completion-of-Private-Offering-of-$1.15-Billion-of-Convertible-Senior-Notes-Due-2034",
+    "https://www.businesswire.com/news/home/20260511685431/en/AST-SpaceMobile-Provides-Business-Update-and-First-Quarter-2026-Results",
+    "https://www.cnbc.com/2026/06/29/rocket-lab-buys-iridium.html",
+    "https://seekingalpha.com/news/4614246-ast-spacemobile-announces-1b-convertible-notes-offering-shares-fall-13-after-hours"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "ASTS พุ่งขึ้น +7.7% ก่อนวันปล่อยดาวเทียม BlueBird 11/12/13 รุ่นใหม่ (5 ส.ค.) ซึ่งมีความเร็ว peak เกือบ 2 เท่าของ Block 1 — เป็น catalyst ถัดไปหลังจาก BB8/9/10 สำเร็จเมื่อ 17 มิ.ย. นักวิเคราะห์เริ่ม bullish มากขึ้น: Piper Sandler เริ่มให้ Overweight PT $100 (บอกว่า ASTS คือ risk/reward ดีสุดในกลุ่ม space), B. Riley อัพเกรดเป็น Buy PT $85, แม้แต่ Scotiabank ก็เปลี่ยนจาก Underperform เป็น Sector Perform PT $50.80 บริษัทยืนยัน guidance รายได้ปี 2026 ที่ $150-200M มี backlog สัญญากว่า $1.2B จาก MNO เกือบ 60 ราย รวม AT&T/Verizon เป้าหมาย ~45 ดาวเทียมและรายได้ใกล้ $1B ในปี 2027 แต่มีความเสี่ยงจาก convertible notes $1.15B (ครบกำหนด 2034 ปิดดีล 21 ก.ค.) ที่สร้างความกังวลเรื่อง dilution/leverage แม้ capped call จะจำกัด dilution จริงไว้ต่ำกว่า 2% และ Fed dot plot เดือนมิ.ย.ที่ hawkish ขึ้นก็กดดันหุ้น growth กลุ่มนี้ ผลประกอบการ Q2 (~10-14 ส.ค.) คือ catalyst ถัดไปหลัง launch ยังคงเป็นหุ้น binary ยังไม่มีกำไร — ลงทุนแค่ค่าขนม",
+      "priceNote": "ปิด 3 ส.ค. · ↑7.7% กระแส pre-launch rally ก่อนปล่อย BlueBird 11/12/13 (5 ส.ค. 3:42am EDT, Falcon 9, Cape Canaveral) — ยังต่ำกว่า ATH $133 (28 พ.ค.) แต่ห่างจาก low $55.74 ของวันที่ 3 ส.ค. พอสมควร",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "🛰️ ปล่อย BlueBird 11/12/13", "description": "SpaceX Falcon 9 จาก Cape Canaveral เป้าหมาย 3:42am EDT (สำรอง 5:10am) ดาวเทียมรุ่นใหม่ stackable architecture ความเร็ว peak เกือบ 2 เท่าของ Block 1 (ที่เคยทำได้ 98.9 Mbps) ดันไปสู่เป้าหมาย ~45 ดวงสิ้นปี" },
+        { "name": "📊 ผลประกอบการ Q2 2026", "description": "คาดประกาศ ~10-14 ส.ค. (บริษัทยังไม่ยืนยันวันที่แน่นอน) ตลาดจับตา progress การ activate เชิงพาณิชย์กับ AT&T/Verizon และความคืบหน้ารายได้เทียบ guidance $150-200M" },
+        { "name": "🇯🇵 รางวัล Japan J-LEO — ผลแบบ Binary", "description": "สัญญา JPY หลายพันล้านกับ Rakuten/NTT Docomo คาดตัดสินใจ Q3 2026 ยังเป็นตัวแปร binary ที่ใหญ่ที่สุดของช่วงครึ่งปีหลัง" }
+      ],
+      "risks": [
+        "ยังเป็นหุ้น binary/ไม่มีกำไร — guidance รายได้ปี 2026 แค่ $150-200M เทียบ market cap $24.65B ความเสี่ยง execution การ scale จาก ~10 ไป 45 ดวงยังไม่เคยพิสูจน์",
+        "Convertible notes $1.15B ครบกำหนด 2034 (ปิดดีล 21 ก.ค.) — หุ้นเคยร่วงถึง 13% after-hours ตอนประกาศดีลก่อนจะฟื้น แม้ capped call จะช่วยจำกัด dilution ไว้ต่ำกว่า 2%",
+        "นักวิเคราะห์ยังเห็นต่างกันมาก — ตั้งแต่ Scotiabank $50.80 (Sector Perform) ถึง Piper Sandler $100 (Overweight) consensus โดยรวมยังเป็น Hold/Neutral ไม่ใช่ Buy ทั้งกระดาน",
+        "Fed dot plot เดือนมิ.ย. hawkish ขึ้น (คงดอกเบี้ย 3.50-3.75% บางคนเริ่มพูดถึงขึ้นดอกเบี้ย) กดดันหุ้น growth/pre-profit ระยะยาวโดยรวม",
+        "คู่แข่งตรง SpaceX Starlink Direct-to-Cell (ร่วมกับ T-Mobile) — มีดาวเทียมนำหน้าและงบดุลใหญ่กว่ามาก",
+        "Japan J-LEO ยังไม่มีผลชัดเจน — ถ้าพลาดจะเสีย catalyst หลักของครึ่งปีหลังไป",
+        "ความเสี่ยงวันปล่อยจรวด — ถ้ามีปัญหาใดๆ ในวันที่ 5 ส.ค. (เลื่อน, ปัญหายานพาหนะ, deploy ไม่สำเร็จ) จะกระทบ sentiment แรงเพราะหุ้นวิ่งขึ้นมาก่อนแล้ว +7.7%"
+      ],
+      "macroRisk": {
+        "rateOutlook": "FOMC เดือนมิ.ย.คงดอกเบี้ยที่ 3.50-3.75% พร้อม dot-plot ที่ hawkish ขึ้น — ค่ากลางเป้าหมายสิ้นปี 2026 ขยับขึ้นเป็น 3.8% และเกือบครึ่งของกรรมการเริ่มพูดถึงการขึ้นดอกเบี้ยแทนที่จะลด ตลาดที่เคยคาดว่าจะลดดอกเบี้ยตอนต้นปีตอนนี้เริ่มคาด higher-for-longer",
+        "inflationNote": "ดอกเบี้ยที่สูงต่อเนื่องเพิ่ม discount rate ต่อรายได้ระยะยาวปี 2027+ ของ ASTS และทำให้หนี้ convertible $1.15B ที่เพิ่งออกมีต้นทุนในการ refinance สูงขึ้นในอนาคต แม้ coupon ปัจจุบันจะต่ำที่ 1.625%",
+        "sectorImpact": "หุ้น space/satellite ไวต่อ risk appetite และการบีบ multiple จากดอกเบี้ยมากกว่าจะไวต่อนโยบาย Fed โดยตรง — การอนุมัติ spectrum ของ FCC และความพร้อมของ launch vehicle (SpaceX/Falcon 9) ยังสำคัญกว่าในแต่ละวัน แต่บรรยากาศ macro ที่ hawkish จำกัดว่าหุ้น growth ที่ยังไม่มีกำไรจะ re-rate ได้ไกลแค่ไหนแม้ข่าวดี",
+        "summary": "Macro risk ระดับ MEDIUM (ปรับขึ้นจาก LOW) — dot-plot ที่ hawkish ขึ้นในมิ.ย.มีนัยสำคัญมากขึ้นสำหรับหุ้นที่เพิ่งออกหนี้ convertible $1.15B และยังไม่ FCF-positive อีกหลายปี ผลลัพธ์ catalyst (launch, Japan) ยังเป็นตัวขับเคลื่อนราคาหลักในระยะสั้น แต่ macro ไม่ใช่ tailwind บริสุทธิ์อีกต่อไป จัดสัดส่วนให้เล็กตาม"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — ค่าขนม เท่านั้น (max 3% ของ port) หุ้นวิ่งขึ้นมาแล้ว +7.7% ก่อนวันปล่อยจรวด 5 ส.ค. ควรปล่อยให้ event ผ่านไปก่อนแล้วรอซื้อตอนย่อกลับมาที่ $52-56 ดีกว่าไล่ราคาตอนนี้ ผลประกอบการ Q2 (~12 ส.ค.) และ Japan J-LEO (Q3) คือ checkpoint แบบ binary ถัดไป ต้องประเมินสัดส่วนใหม่หลังแต่ละ event",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — วิ่งขึ้นมาแล้ว +7.7% ก่อน launch การไล่ซื้อตรงนี้เท่ากับรับความเสี่ยงวันปล่อยจรวดที่ต้นทุนสูง", "timing": "ตอนนี้ / เล็กๆ เท่านั้น" },
+          { "note": "โซน preferred — ใกล้ PT ของ Scotiabank ที่ $50.80 และฐานราคาก่อน rally R/R ดีกว่า ไม่ต้องจ่ายพรีเมียม hype", "timing": "ถ้าย่อ" },
+          { "note": "โซน capitulation ลึก — ตามหลังกรณี launch ล้มเหลวหรือผลประกอบการ Q2 อ่อนแอ", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Base case — ปล่อยจรวดสำเร็จ + ผล Q2 ตามคาด re-rate ไปที่ consensus target" },
+        "tp2": { "note": "Bull case — ตาม PT ของ Piper Sandler ปล่อยจรวดราบรื่น + กระแส Japan J-LEO" },
+        "tp3": { "note": "Moon case — ชนะ Japan J-LEO + constellation 45 ดวงตามแผน · retest ATH ปี 2027" },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่าโซน preferred Entry 2 — ถ้าวันปล่อยจรวดหรือหลังจากนั้นผิดหวังจะหลุดระดับนี้เร็ว",
+          "hardNote": "Capitulation ตาม bear scenario — launch ล้มเหลวหรือ Japan พลาดซ้อนกับผล Q2 ที่อ่อนแอ",
+          "rrNote": "จาก Entry 2 preferred ($54 mid) tight stop เทียบ TP2 $100",
+          "rrWarning": "R/R ยังโอเคจากโซน preferred แต่ถ้าไล่ราคาวันนี้หลัง rally R/R จะแคบลงมาก"
+        }
+      },
+      "estimateDates": [
+        { "event": "ปล่อยดาวเทียม BlueBird 11/12/13", "note": "Falcon 9 จาก Cape Canaveral — ดาวเทียมรุ่นใหม่ ความเร็วเกือบ 2 เท่าของ Block 1" },
+        { "event": "ผลประกอบการ Q2 2026", "note": "ตัวชี้วัด commercial activation กับ AT&T/Verizon และ progress เทียบ guidance $150-200M" },
+        { "event": "ผลรางวัล Japan J-LEO", "note": "ผลลัพธ์ binary — สัญญา Rakuten/NTT Docomo หลายพันล้าน JPY" }
+      ],
+      "companyDescription": "Satellite broadband · สร้าง constellation ดาวเทียม LEO ให้ smartphone ทั่วโลก connect 4G/5G ได้โดยตรง ไม่ต้องมี cell tower"
+    }
+  }
+}

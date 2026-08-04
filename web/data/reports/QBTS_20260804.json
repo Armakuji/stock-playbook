@@ -1,0 +1,211 @@
+{
+  "ticker": "QBTS",
+  "companyName": "D-Wave Quantum Inc.",
+  "companyDescription": "Quantum annealing pioneer · Commercial QCaaS + on-prem Advantage2 systems, expanding into gate-model computing via the Quantum Circuits acquisition — AT&T and Nasdaq Verafin enterprise wins signal early real-world commercial traction",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-04T00:00:00.000Z",
+  "price": 19.98,
+  "priceChange": 10.51,
+  "priceNote": "Closed $19.98 on Aug 3, 2026 (+10.51%), riding the July 27 AT&T-deal/Nasdaq-uplisting rally into the Aug 6 Q2 print — 52-week range $12.75–$46.75",
+  "marketCap": "$7.40B",
+  "sector": "Technology / Quantum Computing",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Speculative",
+  "score": 62,
+  "summary": "D-Wave is the highest-momentum name in the quantum-computing trio (QBTS/IONQ/RGTI) heading into an earnings-dense week, fresh off a 20% pop on an expanded AT&T network-optimization deal and a July 27 NYSE-to-Nasdaq uplisting. Q2 2026 results on Aug 6 are a binary catalyst: the stock has shown it can rally hard even on a revenue miss (May 2026, +62% over the following week on record bookings) or sell off the next session on a clean miss (Feb 2026, -6.75%). At ~600x TTM sales with a -$368M TTM net loss, this is a sizing-disciplined speculative trade on commercial-traction momentum, not a valuation call.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q2 FY2026 Earnings",
+      "description": "Pre-market report + 8am ET call with CEO Alan Baratz and CFO John Markovich. Consensus EPS -$0.08 (vs -$0.55 YoY), revenue +23.3% YoY. Company guided revenue 'modestly higher' than Q1's $2.9M, with most of FY2026's $43.9M consensus revenue weighted to H2 — bookings trajectory and H2 guidance will matter more than the headline print.",
+      "urgencyLabel": "2 DAYS",
+      "dateBadge": "Aug 6, 2026",
+      "catalystDate": "2026-08-06",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🤝",
+      "name": "AT&T Network-Operations Expansion",
+      "description": "AT&T signed an agreement to expand D-Wave's annealing quantum tech into agentic-AI network tools — a workload that cut processing time from ~1 hour to <15 seconds (240x). Stock closed +20.36% same day, coinciding with the Nasdaq listing debut.",
+      "urgencyLabel": "RECENT",
+      "dateBadge": "Jul 27, 2026",
+      "catalystDate": "2026-07-27",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🏦",
+      "name": "Nasdaq Verafin Partnership",
+      "description": "Financial-crime detection unit Nasdaq Verafin partnership adds a second named enterprise logo alongside AT&T, reinforcing the commercial-adoption thesis ahead of Q2 bookings disclosure.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Jul 2026",
+      "catalystDate": "2026-07-20",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Binary Q2 2026 earnings on Aug 6 — D-Wave has missed revenue estimates in recent quarters (Q4 2025 missed by 33%, Q1 2026 by 30%); guidance leans on lumpy, large one-off system sales concentrated in H2 2026",
+    "Extreme valuation — $7.4B market cap vs $12.4M TTM revenue (~600x sales) and -$368M TTM net loss; any narrative re-rating lower would be swift and violent for a story stock like this",
+    "Dilution risk — D-Wave has historically funded cash burn via ATM equity issuance; a weak Q2 print or soft guidance could force further raises that pressure share count",
+    "Competitive/technology risk — IonQ, Rigetti, IBM and Google are racing on rival gate-model architectures; D-Wave's annealing-based commercial edge in optimization use cases isn't guaranteed to persist as the field matures",
+    "Macro/rate risk — September FOMC hike odds sit near 60% (down from ~79% mid-week) on sticky inflation; a hawkish surprise would disproportionately hit unprofitable, high-multiple speculative tech like QBTS"
+  ],
+  "estimateDates": [
+    { "event": "Q2 FY2026 Earnings", "dateRange": "Aug 6, 2026 (pre-market)", "note": "Watch bookings run-rate + H2 revenue guidance more than the EPS/revenue print itself", "est": "EPS est. -$0.08, Rev +23% YoY", "highlight": "blue" },
+    { "event": "FY2026 Full Year", "dateRange": "Consensus", "note": "Revenue consensus raised $43.0M→$43.9M; EPS estimate cut -$0.251→-$0.394 over past 60 days", "est": "Rev ~$43.9M, EPS -$0.39", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -35, "price": 13.0 },
+    { "label": "Base", "color": "yellow", "pct": 15, "price": 23.0 },
+    { "label": "Bull", "color": "green", "pct": 88, "price": 37.5 },
+    { "label": "Moon", "color": "purple", "pct": 130, "price": 46.0 }
+  ],
+  "analystTargets": [
+    { "firm": "Cantor Fitzgerald", "target": 40, "rating": "Strong Buy" },
+    { "firm": "Evercore ISI", "target": 37, "rating": "Outperform" },
+    { "firm": "Benchmark", "target": 35, "rating": "Strong Buy" },
+    { "firm": "Street Consensus (15 analysts)", "target": 37, "rating": "Strong Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "HIGH",
+    "rateOutlook": "Fed held in July; September FOMC is now a near coin-flip with hike odds near 60% (down from ~79% mid-week) as inflation concerns linger — a hawkish surprise would hit unprofitable, high-multiple names like QBTS hardest.",
+    "inflationNote": "Persistent inflation is keeping hike risk on the table for 2026 rather than the cuts many expected earlier in the year; 9 of 18 FOMC officials have penciled in at least one hike this year per the June dot plot discussion.",
+    "sectorImpact": "Speculative, pre-profit quantum-computing names (QBTS, IONQ, RGTI) are high-beta, negative-FCF, and trade on forward-narrative multiples — the group shed roughly 30% of market cap over the month before this AT&T-driven bounce, illustrating how fast sentiment can reverse.",
+    "summary": "Fed risk skews HIGH for QBTS specifically: a hawkish September FOMC signal could compound any Aug 6 earnings disappointment, while a dovish surprise would amplify the AT&T/Nasdaq-driven momentum already priced into the stock."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 19.98, "note": "Current price — entering 2 days ahead of a binary earnings catalyst; high volatility risk either direction", "timing": "Now" },
+      { "label": "Entry 2", "level": 15.5, "rangeMax": 17.0, "note": "Post-earnings dip zone if Q2 repeats a revenue-miss reaction (Q4 2025 precedent: -6.75% next session)", "timing": "If post-earnings dip", "preferred": true },
+      { "label": "Entry 3", "level": 13.0, "note": "Deep retest near 52-week low $12.75 — only if AT&T/Nasdaq momentum thesis breaks down entirely", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 25.0, "pct": 25.1, "note": "Near-term re-rate if Q2 bookings/guidance echo Q1's strength" },
+    "tp2": { "price": 37.0, "pct": 85.2, "note": "Street consensus target zone (Cantor/Evercore/Benchmark cluster $35-40)" },
+    "tp3": { "price": 45.0, "pct": 125.3, "note": "Moon case near 52-week high $46.75 and Street high target $45", "moon": true },
+    "stopLoss": {
+      "tight": 16.5, "tightPct": -17.4, "tightNote": "Below the AT&T-rally consolidation base",
+      "hard": 12.75, "hardPct": -36.2, "hardNote": "52-week low breach — AT&T/Nasdaq momentum thesis invalidated",
+      "riskReward": "2.1 : 1", "rrNote": "Tight stop vs TP2 consensus target", "rrWarning": "Acceptable R/R given binary catalyst — size small"
+    },
+    "verdict": "High-conviction momentum story into a binary Aug 6 catalyst — size small (3-5%), let the AT&T/Nasdaq halo run into consensus targets, but respect the tight stop given QBTS has produced both +62% weekly rallies AND next-day -6.75% drops off Q4/Q1 2026 prints.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "QBTS and quantum-computing peers have shown strong pre-earnings run-ups on momentum/partnership news; QBTS itself rallied +20.4% on July 27 (AT&T deal + Nasdaq uplisting), and IONQ/RGTI/QBTS each gained 7-10% in the session ahead of their Aug 5-6 earnings week amid a broader quantum-sector bounce.",
+    "preRunupTiming": "1–2 weeks before event",
+    "preRunupPct": "+10% to +20%",
+    "postWin": {
+      "avgPct": 26,
+      "range": "+15% to +62%",
+      "note": "QBTS's Q1 2026 print (May 12, 2026) initially fell -10.8% pre-market on a revenue miss, but the stock rallied +61.6% over the following week as investors focused on record $33.4M bookings (+1,994% YoY) and a Fortune 100 QCaaS win — sentiment flipped fast on forward bookings even after a headline miss.",
+      "exampleDate": "May 12-19, 2026"
+    },
+    "postLose": {
+      "avgPct": -8,
+      "range": "-7% to -11%",
+      "note": "QBTS's Q4 2025 print (Feb 26, 2026) missed both EPS (-$0.12 vs -$0.05 est) and revenue (-33% miss); shares initially popped +2.5% to $20.14 on guidance optimism, then reversed to close -6.75% at $18.78 the next session as the miss sank in.",
+      "exampleDate": "Feb 26-27, 2026"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Binary earnings catalyst in 2 days on a high-beta small-cap with -$1.08 TTM EPS and thin $12.4M TTM revenue — size small given the historical post-earnings whipsaw seen in both directions across QBTS's 2026 prints"
+    },
+    "stopPreCatalyst": { "pct": -12, "price": 17.6, "note": "Below the AT&T-rally consolidation base — would suggest the AT&T/Nasdaq momentum thesis is stalling ahead of the print" },
+    "stopPostCatalyst": { "pct": -15, "note": "If Q2 revenue misses without offsetting bookings/guidance strength, exit within 1-2 sessions rather than waiting for a Q1-style rebound" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "QBTS",
+      "event": "Q1 2026 earnings — EPS beat, revenue miss, but record $33.4M bookings",
+      "date": "May 2026",
+      "movePct": 62,
+      "days": 5,
+      "outcome": "good",
+      "note": "Direct precedent from the same company: an initial -10.8% pre-market drop on a revenue miss fully reversed into a +61.6% weekly rally once bookings strength registered — the closest analog for how Aug 6 could play out even if headline revenue disappoints."
+    },
+    {
+      "ticker": "QBTS",
+      "event": "Q4 2025 earnings — EPS and revenue miss",
+      "date": "Feb 2026",
+      "movePct": -7,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Initial +2.5% pop on guidance optimism reversed to -6.75% the next session once the size of the miss was digested — shows the market can take a day to properly price a clean miss."
+    },
+    {
+      "ticker": "RGTI",
+      "event": "HPE/PSC 'TangleLab' quantum-computing partnership announcement",
+      "date": "Jul 2026",
+      "movePct": 12,
+      "days": 1,
+      "outcome": "good",
+      "note": "Comparable partnership-driven catalyst in the same quantum-computing peer group — confirms partnership news alone can move the group double-digits in a single day, supporting the read-through from QBTS's own AT&T deal into sector sentiment ahead of earnings."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "AT&T Signs Agreement to Expand Use of D-Wave's Quantum Computing Technology Across Network Operations",
+    "url": "https://www.businesswire.com/news/home/20260727804891/en/ATT-Signs-Agreement-to-Expand-Use-of-D-Waves-Quantum-Computing-Technology-Across-Network-Operations",
+    "date": "Jul 2026"
+  },
+  "sources": [
+    "https://www.businesswire.com/news/home/20260727804891/en/ATT-Signs-Agreement-to-Expand-Use-of-D-Waves-Quantum-Computing-Technology-Across-Network-Operations",
+    "https://thequantuminsider.com/2026/07/23/d-wave-quantum-to-report-second-quarter-2026-financial-results-on-august-6-2026/",
+    "https://stockanalysis.com/stocks/qbts/",
+    "https://www.insidermonkey.com/blog/evercore-isi-lowers-its-price-target-on-d-wave-quantum-inc-qbts-to-42-and-maintains-an-outperform-rating-1709927/",
+    "https://finance.yahoo.com/markets/stocks/articles/d-wave-stock-skyrockets-62-190000077.html",
+    "https://www.gurufocus.com/news/8980165/dwave-quantum-qbts-shares-jump-13-on-att-partnership-announcement?mobile=true",
+    "https://www.dwavequantum.com/company/newsroom/press-release/d-wave-announces-transfer-of-stock-exchange-listing-to-nasdaq/",
+    "https://coincentral.com/rigetti-computing-rgti-stock-jumps-12-on-hpe-quantum-partnership-and-nsf-grant/",
+    "https://www.tipranks.com/news/ionq-vs-rgti-vs-qbts-which-quantum-computing-stock-does-analysts-like-most-ahead-of-earnings",
+    "https://www.kavout.com/market-lens/why-did-d-wave-quantum-s-q4-miss-fail-to-spook-investors"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "D-Wave เป็นหุ้นที่มีโมเมนตัมแรงสุดในกลุ่มควอนตัม (QBTS/IONQ/RGTI) ก่อนเข้าสู่สัปดาห์ประกาศผลประกอบการ หลังพุ่ง 20% จากดีล AT&T ที่ขยายและการย้ายไปจดทะเบียนที่ Nasdaq เมื่อ 27 ก.ค. ผลประกอบการ Q2 2026 วันที่ 6 ส.ค. เป็น catalyst แบบ binary — หุ้นเคยพุ่ง +62% ใน 1 สัปดาห์แม้ revenue พลาดเป้า (พ.ค. 2026) แต่ก็เคยร่วง -6.75% วันถัดไปหลังพลาดเป้าชัดเจน (ก.พ. 2026) ด้วย valuation ที่ ~600 เท่าของ TTM sales และขาดทุนสุทธิ TTM -$368M นี่คือเทรดเก็งกำไรที่ต้องคุม sizing เข้มงวด ไม่ใช่การเข้าซื้อจาก valuation",
+      "priceNote": "ปิดที่ $19.98 เมื่อ 3 ส.ค. 2026 (+10.51%) รับแรงส่งจากดีล AT&T และการย้ายตลาดไป Nasdaq ก่อนประกาศงบ Q2 วันที่ 6 ส.ค. — กรอบ 52 สัปดาห์ $12.75–$46.75",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "ผลประกอบการ Q2 ปีงบ 2026", "description": "ประกาศก่อนตลาดเปิด พร้อม call เวลา 8 โมงเช้า ET — ตลาดคาด EPS -$0.08 รายได้โต 23.3% YoY บริษัทให้ guidance ว่ารายได้ปีนี้ส่วนใหญ่จะอยู่ครึ่งปีหลัง ต้องจับตา bookings และ guidance H2 มากกว่าตัวเลขหลัก" },
+        { "name": "ดีลขยายกับ AT&T ด้านเครือข่าย", "description": "AT&T เซ็นสัญญาขยายใช้เทคโนโลยีควอนตัมของ D-Wave ในเครื่องมือ AI เชิงระบบ ลดเวลาประมวลผลจาก ~1 ชม. เหลือ <15 วินาที หุ้นปิด +20.36% วันเดียวกับที่ย้ายไปจดทะเบียน Nasdaq" },
+        { "name": "พาร์ทเนอร์ Nasdaq Verafin", "description": "ดีลกับหน่วยตรวจจับอาชญากรรมทางการเงิน Nasdaq Verafin เพิ่มลูกค้าองค์กรชื่อดังอีกราย ตอกย้ำ thesis การใช้งานเชิงพาณิชย์ก่อนเปิดเผย bookings ไตรมาสนี้" }
+      ],
+      "risks": [
+        "ผลประกอบการ Q2 วันที่ 6 ส.ค. เป็น catalyst แบบ binary — D-Wave เคยพลาดเป้ารายได้ในไตรมาสก่อนหน้า (Q4 2025 พลาด 33%, Q1 2026 พลาด 30%) และ guidance พึ่งพา system sale ก้อนใหญ่ที่จะมาช่วงครึ่งปีหลัง",
+        "Valuation สูงมาก — market cap $7.4B เทียบรายได้ TTM แค่ $12.4M (~600 เท่าของ sales) และขาดทุนสุทธิ TTM -$368M หากเรื่องราวเปลี่ยน การปรับฐานลงจะรวดเร็วและรุนแรง",
+        "ความเสี่ยง dilution — D-Wave ระดมทุนผ่าน ATM equity ในอดีตเพื่อชดเชยการขาดทุน หากผลประกอบการ Q2 อ่อนอาจต้องระดมทุนเพิ่มอีก",
+        "ความเสี่ยงด้านการแข่งขัน/เทคโนโลยี — IonQ, Rigetti, IBM และ Google กำลังแข่งกันด้วยสถาปัตยกรรม gate-model คู่แข่ง ข้อได้เปรียบของ D-Wave ในงาน optimization ไม่ได้การันตีว่าจะรักษาไว้ได้ตลอด",
+        "ความเสี่ยงมหภาค/อัตราดอกเบี้ย — โอกาส Fed ขึ้นดอกเบี้ยในเดือนก.ย. อยู่ที่ราว 60% (ลดจาก ~79% กลางสัปดาห์) จากเงินเฟ้อที่ยังสูง หาก Fed hawkish เกินคาด หุ้นเก็งกำไร valuation สูงแบบ QBTS จะโดนหนักสุด"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ยในเดือนก.ค. ส่วนการประชุม FOMC เดือนก.ย. ยังก้ำกึ่งมาก โอกาสขึ้นดอกเบี้ยอยู่ที่ราว 60% จากความกังวลเงินเฟ้อที่ยังไม่คลี่คลาย หาก hawkish เกินคาดจะกระทบหุ้นกลุ่ม valuation สูงกำไรติดลบอย่าง QBTS หนักที่สุด",
+        "inflationNote": "เงินเฟ้อที่ยังสูงต่อเนื่องทำให้ความเสี่ยงขึ้นดอกเบี้ยยังคงอยู่ในปี 2026 แทนที่จะเป็นการลดดอกเบี้ยตามที่หลายฝ่ายเคยคาดไว้ต้นปี กรรมการ FOMC 9 จาก 18 คนส่งสัญญาณขึ้นดอกเบี้ยอย่างน้อย 1 ครั้งปีนี้",
+        "sectorImpact": "หุ้นควอนตัมคอมพิวติ้งเก็งกำไร (QBTS, IONQ, RGTI) เป็นหุ้น beta สูง กระแสเงินสดติดลบ ซื้อขายบน narrative multiple ล่วงหน้า — กลุ่มนี้เพิ่งเสีย market cap ไปราว 30% ในเดือนก่อนที่จะเด้งจากข่าว AT&T สะท้อนว่า sentiment กลับตัวเร็วแค่ไหน",
+        "summary": "ความเสี่ยง Fed สำหรับ QBTS อยู่ในระดับสูง — สัญญาณ hawkish จาก FOMC เดือนก.ย. อาจซ้ำเติมความผิดหวังจากงบ 6 ส.ค. ได้ ขณะที่สัญญาณ dovish จะยิ่งขยายโมเมนตัมจากดีล AT&T/Nasdaq ที่มีอยู่แล้ว"
+      },
+      "entryStrategy": {
+        "verdict": "เป็นสตอรี่โมเมนตัมความเชื่อมั่นสูงก่อนเข้าสู่ catalyst แบบ binary วันที่ 6 ส.ค. — คุม sizing เล็ก (3-5%) ปล่อยให้แรงส่งจากดีล AT&T/Nasdaq วิ่งไปสู่เป้า consensus แต่ต้องเคารพ stop loss ที่ตั้งไว้แน่น เพราะ QBTS เคยทั้งพุ่ง +62% ใน 1 สัปดาห์ และร่วง -6.75% วันถัดไปหลังงบ Q4/Q1 2026",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — เข้าก่อน catalyst แบบ binary 2 วัน ความผันผวนสูงทั้งสองทาง", "timing": "ตอนนี้" },
+          { "note": "โซนย่อหลังงบ หากผลประกอบการ Q2 ซ้ำรอยปฏิกิริยาแบบพลาดเป้า (อ้างอิง Q4 2025 ที่ร่วง -6.75% วันถัดมา)", "timing": "ถ้าย่อหลังงบ" },
+          { "note": "จุดทดสอบลึกใกล้จุดต่ำสุด 52 สัปดาห์ $12.75 — เฉพาะกรณี thesis AT&T/Nasdaq พังทั้งหมด", "timing": "ถ้าร่วงหนักเท่านั้น" }
+        ],
+        "tp1": { "note": "เป้าระยะสั้นหาก bookings/guidance ไตรมาส 2 แข็งแรงเหมือน Q1" },
+        "tp2": { "note": "โซนเป้าหมาย consensus นักวิเคราะห์ (Cantor/Evercore/Benchmark กลุ่ม $35-40)" },
+        "tp3": { "note": "เคส Moon ใกล้จุดสูงสุด 52 สัปดาห์ $46.75 และเป้าสูงสุดของนักวิเคราะห์ $45" },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่าฐาน consolidation หลังการพุ่งจากดีล AT&T",
+          "hardNote": "หลุดจุดต่ำสุด 52 สัปดาห์ — thesis โมเมนตัม AT&T/Nasdaq ถือว่าพังแล้ว",
+          "rrNote": "stop แน่นเทียบเป้า TP2 ที่ consensus",
+          "rrWarning": "R/R ยอมรับได้สำหรับ catalyst แบบ binary — คุม sizing ให้เล็ก"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q2 ปีงบ 2026", "note": "จับตา bookings และ guidance ครึ่งปีหลังมากกว่าตัวเลข EPS/revenue หลัก" },
+        { "event": "ปีงบ 2026 เต็มปี", "note": "consensus รายได้ปรับขึ้น $43.0M→$43.9M ส่วน EPS ปรับแย่ลง -$0.251→-$0.394 ในช่วง 60 วันที่ผ่านมา" }
+      ]
+    }
+  }
+}

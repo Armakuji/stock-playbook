@@ -1,0 +1,195 @@
+{
+  "ticker": "SYM",
+  "companyName": "Symbotic Inc.",
+  "companyDescription": "AI-powered warehouse robotics · Automates fulfillment centers for Walmart, Target, C&S Wholesale — end-to-end robotic pallet/case handling systems replacing manual warehouse labor",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-04T00:00:00.000Z",
+  "price": 45.85,
+  "priceChange": 6.5,
+  "priceNote": "Jumped 6.5% on Aug 3 into earnings, extending gains after-hours to $46.00 ahead of Q3 FY26 report on Aug 5",
+  "marketCap": "$27.6B",
+  "sector": "Industrials / Warehouse Automation & Robotics",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 70,
+  "summary": "Symbotic reports Q3 FY2026 results Aug 5 (after close) with consensus expecting EPS +340% YoY to $0.12 and revenue +20.7% YoY to $714.76M — a steep growth inflection off its Walmart/GreenBox backlog. Analyst views are unusually split (Barclays $44 Sell vs KeyBanc/DA Davidson $70 Buy vs consensus $66.32), and SYM's own earnings history is extremely volatile — the stock has moved as much as +40% and as much as -8% on a single earnings print, so this is a binary, high-variance event.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 FY2026 Earnings",
+      "description": "Reports after market close Aug 5, 2026 with webcast at 5:00pm ET. Consensus: EPS $0.12 (+340% YoY), revenue $714.76M (+20.7% YoY), company guided revenue $700-720M and adj. EBITDA $80-85M. Key watch items: deployment cadence on Walmart backlog, GreenBox JV progress, and gross margin trajectory.",
+      "urgencyLabel": "1 DAY",
+      "dateBadge": "Aug 5, 2026",
+      "catalystDate": "2026-08-05",
+      "badgeColor": "red",
+      "dotColor": "red"
+    }
+  ],
+  "risks": [
+    "Extreme post-earnings volatility — implied weekly move ~14.4%, and SYM has moved -8% to +40% on single earnings prints historically, including a -7.7% drop after its most recent (May 2026) report despite 23% revenue growth",
+    "Analyst target spread is unusually wide ($44 Barclays Sell to $70 KeyBanc/DA Davidson Buy) signaling genuine disagreement on deployment pace and margin durability, not just noise",
+    "Customer concentration risk — Walmart remains the dominant revenue driver; any slowdown in deployment cadence or contract renegotiation would hit growth disproportionately",
+    "Valuation still rich relative to current profitability (early-stage EBITDA margins) even after the pullback from the 52-week high of $87.88",
+    "Capex-sensitive business model — warehouse automation deployments are large, multi-year capital commitments by customers, exposed to any pullback in retail/logistics capital spending"
+  ],
+  "estimateDates": [
+    { "event": "Q3 FY2026 Earnings", "dateRange": "Aug 5, 2026", "note": "After market close, webcast 5:00pm ET", "est": "EPS est. $0.12 · Rev est. $714.76M", "highlight": "blue" },
+    { "event": "Q4 FY2026 Earnings", "dateRange": "~Nov 2026", "note": "Next print after Q3; full FY26 guide likely refreshed", "est": "TBD", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -22, "price": 36 },
+    { "label": "Base", "color": "yellow", "pct": 16, "price": 53 },
+    { "label": "Bull", "color": "green", "pct": 45, "price": 66 },
+    { "label": "Moon", "color": "purple", "pct": 75, "price": 80 }
+  ],
+  "analystTargets": [
+    { "firm": "KeyBanc", "target": 70, "rating": "Overweight" },
+    { "firm": "DA Davidson", "target": 70, "rating": "Buy" },
+    { "firm": "Goldman Sachs", "target": 45, "rating": "Neutral" },
+    { "firm": "Barclays", "target": 44, "rating": "Underweight" },
+    { "firm": "Consensus (18 analysts)", "target": 66, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed cut to 3.5%-3.75% but signaled only one more quarter-point cut through 2026 — a cautious, data-dependent path rather than aggressive easing, keeping the cost of capital for large multi-year warehouse-automation capex commitments relatively elevated.",
+    "inflationNote": "Inflation running near target has kept the Fed's cutting cycle slow rather than urgent, reducing the odds of a near-term capex tailwind from sharply lower rates.",
+    "sectorImpact": "Robotics/automation is a policy tailwind sector (White House robotics initiative, OBBBA capex incentives support reshoring and automation capex), but SYM's own growth is customer-deployment-paced (Walmart, GreenBox) rather than macro-rate-paced, so Fed risk is a secondary factor versus execution risk.",
+    "summary": "MEDIUM Fed risk: policy is a modest tailwind for automation capex broadly, but SYM's near-term stock move is dominated by the Aug 5 earnings print and deployment cadence, not by the rate path."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 45.85, "note": "Current price, pre-earnings", "timing": "Now (high risk — binary event in 1 day)" },
+      { "label": "Entry 2", "level": 38, "rangeMax": 42, "note": "Near 52-week low zone / post-bad-earnings dip", "timing": "If earnings miss and stock sells off", "preferred": true },
+      { "label": "Entry 3", "level": 34, "note": "Deep capitulation zone below 52-week low", "timing": "Only on thesis-breaking news" }
+    ],
+    "tp1": { "price": 53, "pct": 15.6, "note": "Near-term bounce toward base case" },
+    "tp2": { "price": 66, "pct": 43.9, "note": "Consensus analyst target / bull case" },
+    "tp3": { "price": 80, "pct": 74.5, "note": "Moon case if deployment beats accelerate · re-approach 52-wk high", "moon": true },
+    "stopLoss": {
+      "tight": 38,
+      "tightPct": -17.1,
+      "tightNote": "Below 52-week low support",
+      "hard": 34,
+      "hardPct": -25.8,
+      "hardNote": "Deep breakdown, thesis-questioning level",
+      "riskReward": "1.9 : 1",
+      "rrNote": "Tight stop vs TP2 consensus target",
+      "rrWarning": "Acceptable R/R only for sized-down, catalyst-aware positions given single-day 40%/-8% earnings-move history"
+    },
+    "verdict": "High-conviction long-term thesis (Walmart/GreenBox backlog, AI robotics moat) but the Aug 5 print is a coin-flip binary event — size small and pre-position, don't chase into the print.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "SYM has shown pre-earnings run-ups into prints when momentum is positive (e.g. the stock jumped ~13% ahead of a prior earnings report on anticipation alone), consistent with the +6.5% single-day move into this Aug 5 print.",
+    "preRunupTiming": "1-3 days before event",
+    "preRunupPct": "+5% to +13%",
+    "postWin": {
+      "avgPct": 15,
+      "range": "+4% to +40%",
+      "note": "SYM's best post-earnings reaction was +40% on Nov 21, 2023 (Q4 FY2023: revenue +60% YoY to $391.9M, first adj. EBITDA profitability, Walmart partnership expansion). Across the last 5 reports the average move was ~3.35%, but with extreme dispersion — this is a genuinely binary, high-variance event, not a mild drifter.",
+      "exampleDate": "Nov 21, 2023"
+    },
+    "postLose": {
+      "avgPct": -7,
+      "range": "-5% to -8%",
+      "note": "Most recent report (Q2 FY2026, May 6, 2026) saw the stock drop 7.73% even though revenue grew 23% YoY to $676M and net income turned positive ($9M) — a reminder that SYM sells off on guidance/margin nuance even when headline growth is strong.",
+      "exampleDate": "May 6, 2026"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Given the implied weekly move of ~14.4% and single-print history ranging from -8% to +40%, size this as a small speculative sleeve (2-4% of portfolio) rather than a core position, despite the long-term thesis strength."
+    },
+    "stopPreCatalyst": { "pct": -12, "price": 40, "note": "If SYM breaks below $40 before the print, momentum has already turned negative into earnings — reassess sizing" },
+    "stopPostCatalyst": { "pct": -15, "note": "If earnings miss on both revenue and margin guidance, exit within 1-2 sessions rather than averaging down into a fresh downtrend" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "SYM",
+      "event": "Q4 FY2023 earnings beat — first adjusted EBITDA profitability + Walmart partnership expansion",
+      "date": "Nov 2023",
+      "movePct": 40,
+      "days": 1,
+      "outcome": "good",
+      "note": "Symbotic's own best-case earnings reaction: revenue +60% YoY beat estimates by $85M and the company hit EBITDA profitability for the first time. Shows the stock's upside skew when growth inflects and margin proof-points land — directly relevant to this quarter's 340% EPS growth expectation."
+    },
+    {
+      "ticker": "ZBRA",
+      "event": "Q2 2024 earnings beat — EPS $3.18 vs $2.80 est, raised full-year guidance",
+      "date": "Jul 2024",
+      "movePct": 11,
+      "days": 1,
+      "outcome": "good",
+      "note": "Zebra Technologies, a warehouse/supply-chain tech peer, jumped as much as 11% intraday on a clean EPS beat plus raised guidance — a comparable playbook to what SYM needs (beat + credible forward guide) to see a similar pop rather than a guidance-driven selloff."
+    },
+    {
+      "ticker": "GXO",
+      "event": "Q1 2025 earnings beat — EPS $0.29 vs $0.25 est, revenue $3.0B vs $2.93B est",
+      "date": "May 2025",
+      "movePct": 4.2,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "GXO Logistics, a warehouse/logistics automation peer, only rose 4.2% after-hours despite beating on both lines — illustrates that a clean beat doesn't guarantee a large move if the market judges the beat as already priced in, a real risk given SYM's own +6.5% pre-earnings run-up this week."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "DA Davidson upgrades Symbotic to Buy, price target raised to $70 from $57, citing 'unparalleled AI-enabled technology moat'",
+    "url": "https://www.moomoo.com/news/post/68354687/da-davidson-upgrades-symbotic-symus-to-buy-rating-announces-target",
+    "date": "Apr 2026"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/sym/",
+    "https://www.stocktitan.net/news/SYM/symbotic-announces-date-for-reporting-third-quarter-fiscal-year-2026-3jakyk0fswwz.html",
+    "https://ir.symbotic.com/news-releases/news-release-details/symbotic-announces-date-reporting-third-quarter-fiscal-year-2026",
+    "https://www.optionslam.com/earnings/stocks/SYM",
+    "https://coincentral.com/symbotic-inc-sym-stock-jumps-over-13-despite-weak-market-ahead-of-earnings/",
+    "https://www.moomoo.com/news/post/68354687/da-davidson-upgrades-symbotic-symus-to-buy-rating-announces-target",
+    "https://www.theglobeandmail.com/investing/markets/stocks/SYM/pressreleases/786578/barclays-reaffirms-their-sell-rating-on-symbotic-sym/",
+    "https://www.investing.com/news/analyst-ratings/keybanc-upgrades-symbotic-stock-rating-on-deployment-outlook-93CH-4512639",
+    "https://www.jmco.com/articles/manufacturing/federal-reserve-cuts-main-rate-to-3-5-3-75-range-signals-cautious-2026-outlook/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Symbotic รายงานผลประกอบการ Q3 FY2026 วันที่ 5 ส.ค. หลังตลาดปิด นักวิเคราะห์คาด EPS โต +340% YoY เป็น $0.12 และรายได้โต +20.7% YoY เป็น $714.76M — เป็นจุดเปลี่ยนการเติบโตสำคัญจาก backlog ของ Walmart/GreenBox แต่มุมมองนักวิเคราะห์แตกต่างกันมาก (Barclays $44 Sell vs KeyBanc/DA Davidson $70 Buy vs consensus $66.32) และประวัติการเคลื่อนไหวหลังประกาศผลของ SYM ผันผวนสูงมาก เคยขึ้นถึง +40% และเคยลงถึง -8% ในวันเดียว ถือเป็น event แบบ binary ความเสี่ยงสูง",
+      "priceNote": "หุ้นพุ่ง 6.5% ในวันที่ 3 ส.ค. และไปต่อใน after-hours สู่ $46.00 ก่อนรายงานผล Q3 FY26 วันที่ 5 ส.ค.",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "ผลประกอบการ Q3 FY2026", "description": "รายงานหลังตลาดปิดวันที่ 5 ส.ค. 2026 พร้อม webcast เวลา 17:00 ET นักวิเคราะห์คาด EPS $0.12 (+340% YoY) รายได้ $714.76M (+20.7% YoY) บริษัทให้ guidance รายได้ $700-720M และ adj. EBITDA $80-85M จุดที่ต้องจับตา: จังหวะการติดตั้งระบบให้ Walmart, ความคืบหน้า GreenBox JV และทิศทาง gross margin" }
+      ],
+      "risks": [
+        "ความผันผวนหลังประกาศผลสูงมาก — implied weekly move ~14.4% และเคยเคลื่อนไหว -8% ถึง +40% ในวันเดียว รวมถึงร่วง -7.7% หลังผลประกอบการล่าสุด (พ.ค. 2026) ทั้งที่รายได้โต 23%",
+        "ช่วงราคาเป้าหมายนักวิเคราะห์กว้างผิดปกติ ($44 Barclays Sell ถึง $70 KeyBanc/DA Davidson Buy) สะท้อนความเห็นต่างจริงเรื่องจังหวะการติดตั้งระบบและความยั่งยืนของ margin",
+        "ความเสี่ยงจากการพึ่งพาลูกค้ารายใหญ่ — Walmart ยังเป็นตัวขับเคลื่อนรายได้หลัก หากชะลอการติดตั้งหรือเจรจาสัญญาใหม่จะกระทบการเติบโตอย่างมาก",
+        "Valuation ยังสูงเทียบกับความสามารถทำกำไรปัจจุบัน (margin ยังช่วงต้น) แม้ราคาจะปรับลงจาก 52-week high ที่ $87.88 แล้ว",
+        "โมเดลธุรกิจอ่อนไหวต่อ capex — การติดตั้งระบบคลังสินค้าอัตโนมัติเป็นการลงทุนก้อนใหญ่หลายปีของลูกค้า เสี่ยงหากลูกค้าลด capex ด้าน retail/logistics"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed ลดดอกเบี้ยมาที่ 3.5%-3.75% แต่ส่งสัญญาณว่าจะลดอีกแค่ 0.25% ตลอดปี 2026 — เป็นแนวทางระมัดระวัง ไม่ใช่การผ่อนคลายรวดเร็ว ทำให้ต้นทุนเงินทุนสำหรับ capex ระบบอัตโนมัติคลังสินค้าขนาดใหญ่หลายปียังค่อนข้างสูง",
+        "inflationNote": "เงินเฟ้อใกล้เป้าหมายทำให้ Fed ลดดอกเบี้ยแบบช้าๆ ไม่รีบเร่ง ลดโอกาสที่จะมี capex tailwind จากดอกเบี้ยลดแรงในระยะสั้น",
+        "sectorImpact": "กลุ่มหุ่นยนต์/ระบบอัตโนมัติได้แรงหนุนเชิงนโยบาย (โครงการหุ่นยนต์ White House, สิทธิประโยชน์ capex จาก OBBBA) แต่การเติบโตของ SYM เองขึ้นกับจังหวะการติดตั้งของลูกค้า (Walmart, GreenBox) มากกว่าดอกเบี้ย ดังนั้นความเสี่ยง Fed เป็นปัจจัยรอง",
+        "summary": "ความเสี่ยง Fed ระดับ MEDIUM: นโยบายเป็น tailwind อ่อนๆ ต่อ capex กลุ่มระบบอัตโนมัติโดยรวม แต่การเคลื่อนไหวราคาหุ้น SYM ระยะสั้นถูกกำหนดโดยผลประกอบการ 5 ส.ค. และจังหวะการติดตั้งระบบ ไม่ใช่ทิศทางดอกเบี้ย"
+      },
+      "entryStrategy": {
+        "verdict": "แนวคิดระยะยาวแข็งแรง (backlog Walmart/GreenBox, technology moat ด้าน AI robotics) แต่ผลประกอบการ 5 ส.ค. เป็น event แบบ binary เสี่ยงสูง — ควรถือขนาดเล็กและเข้าก่อนล่วงหน้า ไม่ควรไล่ราคาก่อนประกาศผล",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน ก่อนประกาศผล", "timing": "ตอนนี้ (เสี่ยงสูง — event แบบ binary อีก 1 วัน)" },
+          { "note": "โซนใกล้ 52-week low / หลังราคาร่วงจากผลประกอบการแย่", "timing": "ถ้าผลประกอบการพลาดและราคาร่วง" },
+          { "note": "โซน capitulation ลึกต่ำกว่า 52-week low", "timing": "เฉพาะกรณีมีข่าวที่ทำลาย thesis" }
+        ],
+        "tp1": { "note": "เป้าหมายระยะสั้น ดีดกลับสู่ base case" },
+        "tp2": { "note": "เป้าหมายเฉลี่ยนักวิเคราะห์ / bull case" },
+        "tp3": { "note": "กรณี moon หากการติดตั้งระบบเร่งตัวเกินคาด · กลับไปใกล้ 52-week high" },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่าแนวรับ 52-week low",
+          "hardNote": "หลุดแนวรับลึก จุดที่ต้องทบทวน thesis",
+          "rrNote": "stop แบบ tight เทียบกับ TP2 เป้าหมาย consensus",
+          "rrWarning": "R/R พอรับได้เฉพาะการเข้าไม้ขนาดเล็กที่ตระหนักความเสี่ยง event เนื่องจากประวัติเคลื่อนไหว +40%/-8% ในวันเดียว"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q3 FY2026", "note": "หลังตลาดปิด webcast เวลา 17:00 ET" },
+        { "event": "ผลประกอบการ Q4 FY2026", "note": "รอบถัดไปหลัง Q3 คาดปรับ guidance ทั้งปี FY26 ใหม่" }
+      ]
+    }
+  }
+}

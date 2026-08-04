@@ -1,0 +1,183 @@
+{
+  "ticker": "RGTI",
+  "companyName": "Rigetti Computing, Inc.",
+  "companyDescription": "Full-stack superconducting quantum computing pure-play — builds proprietary chips, multi-chip systems (Ankaa-3, Novera QPU) and cloud QCaaS access; one of the smallest-revenue, most volatile names in the quantum sector",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-04T00:00:00.000Z",
+  "price": 16.22,
+  "priceChange": 8.68,
+  "priceNote": "+8.68% today (prev close $14.93), day range $14.71–$16.29 — pre-earnings anticipation rally two trading days ahead of the Aug 6 Q2 print",
+  "marketCap": "$5.38B",
+  "sector": "Technology / Quantum Computing",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Speculative",
+  "score": 60,
+  "summary": "RGTI is a binary, catalyst-driven trade heading into its Q2 2026 print after market close on Aug 6 — Street consensus (12-13 analysts, Buy) sits near $29-30, ~80-90% above spot, but RGTI's own earnings history (May 2025: +9.17% Day 0 reversing to -14.59% Day +1) shows the initial pop is not the reliable trade. Pre-revenue-scale commercials ($4.4M Q1 2026 revenue) trading at a multi-billion valuation means any guidance disappointment can trigger an outsized drawdown regardless of the headline beat/miss.",
+  "catalysts": [
+    {
+      "icon": "⚡",
+      "name": "Q2 2026 Earnings",
+      "description": "Rigetti reports Q2 2026 financial results after market close Thursday, with a conference call at 5:00 p.m. ET the same day. Focus: system deliveries, QCaaS bookings, cash runway, and any update to full-year guidance.",
+      "urgencyLabel": "2 DAYS",
+      "dateBadge": "Aug 6, 2026",
+      "catalystDate": "2026-08-06",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Binary earnings catalyst Aug 6 — RGTI's own history shows Day-0 pops often reverse hard on Day+1 (May 2025: +9.17% then -14.59%; Mar 2026: +4.72% then -4.45%)",
+    "Pre-commercial revenue base (~$4.4M in Q1 2026) against a $5.4B market cap means any guidance miss can trigger an outsized valuation reset",
+    "Dilution risk — quantum computing peers frequently tap ATM equity offerings to fund cash burn, pressuring share count",
+    "Sector-wide correlation — a weak IonQ or D-Wave print can drag RGTI down regardless of Rigetti's own results",
+    "High retail/short-interest driven volatility amplifies moves well beyond what fundamentals justify"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Aug 6, 2026", "note": "After close; call 5:00pm ET — watch QCaaS bookings + FY26 guidance", "est": "Rev est. ~$5-6M", "highlight": "blue" },
+    { "event": "Q3 2026 Earnings", "dateRange": "~Nov 2026", "note": "Next scheduled print, date TBD", "est": "TBD", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -35, "price": 10.54 },
+    { "label": "Base", "color": "yellow", "pct": 12, "price": 18.17 },
+    { "label": "Bull", "color": "green", "pct": 85, "price": 30.01 },
+    { "label": "Moon", "color": "purple", "pct": 147, "price": 40.06 }
+  ],
+  "analystTargets": [
+    { "firm": "Needham", "target": 31, "rating": "Buy" },
+    { "firm": "Cantor Fitzgerald", "target": 30, "rating": "Overweight" },
+    { "firm": "Benchmark", "target": 25, "rating": "Buy" },
+    { "firm": "Street Consensus (12-13 analysts)", "target": 30, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds held at 3.5%-3.75% through summer 2026; September FOMC is the next real decision point, with the committee split between holding on sticky inflation and eventual cuts — no clear near-term tailwind for risk appetite either way",
+    "inflationNote": "Inflation has cooled from 2025 peaks but remains above target, keeping the Fed cautious and limiting the multiple-expansion tailwind speculative/unprofitable tech enjoyed in prior cut cycles",
+    "sectorImpact": "Pre-revenue/early-commercial quantum names like RGTI trade almost entirely on multi-year growth narrative and are highly rate-sensitive — a hawkish September surprise would compress sector multiples (RGTI, IONQ, QBTS) faster than fundamentals would justify",
+    "summary": "Macro is a mild headwind, not a dealbreaker — rates on hold keeps speculative-tech risk appetite capped just as RGTI heads into a binary Aug 6 earnings print"
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 16.22, "note": "Current price, post pre-earnings pop", "timing": "Now" },
+      { "label": "Entry 2", "level": 14.00, "rangeMax": 14.71, "note": "Today's pre-rally support / day low zone", "timing": "If pulls back pre-earnings", "preferred": true },
+      { "label": "Entry 3", "level": 11.50, "note": "Deep dip — only if thesis-break support fails to hold", "timing": "If earnings disappoint hard" }
+    ],
+    "tp1": { "price": 18.65, "pct": 15.0, "note": "Near-term base-case, modest post-earnings continuation" },
+    "tp2": { "price": 25.00, "pct": 54.1, "note": "Benchmark target zone" },
+    "tp3": { "price": 40.00, "pct": 146.6, "note": "High analyst target · requires sustained commercial ramp · 2027", "moon": true },
+    "stopLoss": {
+      "tight": 13.80, "tightPct": -14.9, "tightNote": "Below today's pre-rally support base",
+      "hard": 11.00, "hardPct": -32.2, "hardNote": "Below 200-day MA / thesis-break level",
+      "riskReward": "3.6 : 1", "rrNote": "Tight stop vs TP2 gives favorable R/R heading into the binary print", "rrWarning": "Good R/R, but historically the Day+1 reversal risk is the real danger, not the stop level"
+    },
+    "verdict": "High-risk, binary-catalyst speculative trade into Aug 6 earnings — size small, expect a violent move in either direction, and don't chase the Day-0 pop",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "RGTI has a pattern of running up 5-15% in the 1-3 trading days ahead of earnings on anticipation alone — today's +8.68% move two days before the Aug 6 print fits that pattern, consistent with pre-earnings anticipation rallies seen across the quantum-computing peer group (IonQ, D-Wave) ahead of their own prints",
+    "preRunupTiming": "1-3 trading days before earnings",
+    "preRunupPct": "+5% to +15%",
+    "postWin": {
+      "avgPct": 9,
+      "range": "+5% to +21.7%",
+      "note": "RGTI's own May 2025 print saw a +9.17% Day-0 pop on a beat; IonQ's Q4 2025 beat + guidance raise drove a +21.7% rally, and D-Wave's Q1 2026 beat with record bookings drove a +62% multi-day move — real beats have historically been rewarded, but the Day-0 pop alone (RGTI's own pattern) has often reversed the next session",
+      "exampleDate": "May 2025"
+    },
+    "postLose": {
+      "avgPct": -10,
+      "range": "-4.5% to -14.6%",
+      "note": "RGTI's May 2025 print reversed -14.59% on Day+1 despite a +9.17% Day-0 pop; the Mar 2026 print saw a smaller -4.45% Day+1 fade after a +4.72% Day-0 gain — the pattern shows initial enthusiasm frequently unwinds within 24 hours regardless of the headline number. IonQ's Q1 2026 beat also saw the stock fall -9.3% the next session despite record growth",
+      "exampleDate": "May 2025"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "Two days out from a binary, historically whipsaw-prone catalyst (large Day-0 gains have repeatedly reversed hard on Day+1) — small speculative sizing keeps the position survivable through either outcome"
+    },
+    "stopPreCatalyst": { "pct": -12, "price": 14.27, "note": "If RGTI breaks below ~$14.27 (today's pre-rally support) before Thursday's print, the anticipatory-momentum thesis is broken and the position should be cut ahead of earnings" },
+    "stopPostCatalyst": { "pct": -15, "note": "If the reaction rhymes with May 2025 (Day-0 pop reversing into a Day+1 double-digit decline), exit into the reversal rather than holding for a round-trip" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "IONQ",
+      "event": "Q4 2025 earnings beat + FY2026 revenue guidance raise ($225-245M)",
+      "date": "Feb 2026",
+      "movePct": 21.7,
+      "days": 1,
+      "outcome": "good",
+      "note": "Clean beat-and-raise on guidance drove a straightforward rally — the template case for what a strong RGTI print with a guidance raise could do"
+    },
+    {
+      "ticker": "IONQ",
+      "event": "Q1 2026 earnings — record quarter, 30% revenue beat, raised full-year guidance",
+      "date": "May 2026",
+      "movePct": -9.3,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "Despite a record beat and raised guidance, the stock fell the next session — cautionary case showing that even strong fundamentals can be sold if expectations were priced in beforehand, directly relevant to RGTI's pre-earnings pop today"
+    },
+    {
+      "ticker": "QBTS",
+      "event": "Q1 2026 earnings — record bookings (+1,994% YoY), backlog expansion, new commercial contracts",
+      "date": "May 2026",
+      "movePct": 62,
+      "days": 5,
+      "outcome": "good",
+      "note": "Bookings/backlog growth (not just the EPS beat) drove the sustained multi-day rally — the read-through for RGTI is that QCaaS bookings and system-sale commentary matter more than the headline revenue number"
+    }
+  ],
+  "sources": [
+    "https://www.marketbeat.com/stocks/NASDAQ/RGTI/forecast/",
+    "https://thequantuminsider.com/2026/07/24/rigetti-computing-to-report-second-quarter-2026-financial-results-and-host-conference-call-on-august-6-2026/",
+    "https://www.globenewswire.com/news-release/2026/07/23/3332553/0/en/Rigetti-Computing-to-Report-Second-Quarter-2026-Financial-Results-and-Host-Conference-Call-on-August-6-2026.html",
+    "https://www.wallstreetzen.com/stocks/us/nasdaq/rgti/stock-forecast",
+    "https://ca.investing.com/news/stock-market-news/benchmark-initiates-rigetti-computing-stock-coverage-with-buy-rating-93CH-4754801",
+    "https://www.investing.com/news/analyst-ratings/cantor-fitzgerald-reiterates-rigetti-stock-overweight-rating-at-30-93CH-4681064",
+    "https://finance.yahoo.com/news/ionq-buy-2026-stock-stacks-200000011.html",
+    "https://finance.yahoo.com/markets/stocks/articles/d-wave-stock-skyrockets-62-190000077.html",
+    "https://www.tikr.com/blog/ionq-stock-fell-9-after-a-record-earnings-beat-heres-what-the-market-missed",
+    "https://www.barchart.com/story/news/1839041/rigetti-s-revenue-recognition-timeline-still-not-aligned-with-its-valuation-multiple"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "RGTI คือเทรดเก็งกำไรที่ผูกกับ event เดี่ยว ก่อนประกาศงบ Q2 2026 หลังตลาดปิดวันที่ 6 ส.ค. — เป้าหมายนักวิเคราะห์เฉลี่ย (12-13 สำนัก, Buy) อยู่ที่ราว $29-30 สูงกว่าราคาปัจจุบัน ~80-90% แต่ประวัติงบของ RGTI เอง (พ.ค. 2025: +9.17% วันแรกแล้วร่วง -14.59% วันถัดไป) แสดงว่าการพุ่งวันแรกไม่ใช่จุดเข้าที่น่าเชื่อถือ รายได้ยังน้อยมาก ($4.4M ใน Q1 2026) เทียบกับมูลค่าบริษัทหลักพันล้าน ทำให้ถ้า guidance ผิดหวังจะร่วงแรงได้แม้ตัวเลขจะ beat",
+      "priceNote": "+8.68% วันนี้ (ปิดก่อนหน้า $14.93) กรอบวัน $14.71–$16.29 — รีบาวด์ก่อนงบ 2 วันก่อนประกาศ 6 ส.ค.",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "งบ Q2 2026", "description": "Rigetti ประกาศผลประกอบการ Q2 2026 หลังตลาดปิดวันพฤหัสฯ พร้อม conference call เวลา 17:00 ET วันเดียวกัน — จับตา system deliveries, QCaaS bookings, cash runway และการปรับ guidance ทั้งปี" }
+      ],
+      "risks": [
+        "Event เดี่ยวก่อนงบ 6 ส.ค. — ประวัติ RGTI แสดงว่าวันแรกมักพุ่งแล้วย่อแรงวันถัดไป (พ.ค. 2025: +9.17% แล้ว -14.59%; มี.ค. 2026: +4.72% แล้ว -4.45%)",
+        "รายได้ยังน้อยมาก (~$4.4M ใน Q1 2026) เทียบมูลค่าบริษัท $5.4B ถ้า guidance พลาดจะโดน re-rate แรง",
+        "ความเสี่ยง dilution — บริษัทกลุ่ม quantum มักออกหุ้นเพิ่มทุนผ่าน ATM เพื่อ fund cash burn",
+        "ความสัมพันธ์กับกลุ่ม — ถ้า IonQ หรือ D-Wave งบออกมาแย่ RGTI ก็ร่วงตามได้แม้ผลของตัวเองจะดี",
+        "แรงเก็งกำไรจากรายย่อย/short interest สูง ทำให้ราคาผันผวนเกินปัจจัยพื้นฐาน"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ยที่ 3.5%-3.75% มาตลอดฤดูร้อน 2026 การประชุม FOMC ก.ย. คือจุดตัดสินใจถัดไป คณะกรรมการยังแบ่งฝ่ายระหว่างคงดอกเบี้ยกับตัดสินใจลด — ยังไม่มีแรงหนุนความเสี่ยงชัดเจนทั้งสองทาง",
+        "inflationNote": "เงินเฟ้อชะลอจากจุดสูงสุดปี 2025 แต่ยังสูงกว่าเป้า ทำให้ Fed ยังระมัดระวัง จำกัด multiple expansion ที่หุ้นเทคเก็งกำไรเคยได้รับในรอบลดดอกเบี้ยก่อนหน้า",
+        "sectorImpact": "หุ้น quantum ที่ยังไม่ทำกำไรอย่าง RGTI เทรดจาก growth narrative ระยะยาวเป็นหลัก อ่อนไหวต่อดอกเบี้ยสูง ถ้า FOMC ก.ย. hawkish เกินคาด จะกดมูลค่าทั้งกลุ่ม (RGTI, IONQ, QBTS) เร็วกว่าพื้นฐานจริง",
+        "summary": "Macro เป็นแรงกดดันเบาๆ ไม่ใช่ตัวล้มดีล — ดอกเบี้ยที่คงไว้จำกัด risk appetite ของหุ้นเทคเก็งกำไร ในจังหวะที่ RGTI กำลังเข้าสู่งบ 6 ส.ค. ซึ่งเป็น event เดี่ยว"
+      },
+      "entryStrategy": {
+        "verdict": "เทรดเก็งกำไรความเสี่ยงสูงผูกกับงบ 6 ส.ค. — ไซส์เล็ก เตรียมรับความผันผวนแรงได้ทั้งสองทาง อย่าไล่ราคาช่วงพุ่งวันแรก",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน หลังรีบาวด์ก่อนงบ", "timing": "ตอนนี้" },
+          { "note": "โซนแนวรับก่อนรีบาวด์วันนี้ / low ของวัน", "timing": "ถ้าย่อก่อนงบ" },
+          { "note": "จุดย่อลึก เฉพาะถ้าแนวรับหลักหลุด", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "เป้าใกล้ กรณี base-case ไปต่อหลังงบเล็กน้อย" },
+        "tp2": { "note": "โซนเป้า Benchmark" },
+        "tp3": { "note": "เป้าสูงสุดจากนักวิเคราะห์ ต้องมี commercial ramp ต่อเนื่อง · ปี 2027" },
+        "stopLoss": {
+          "tightNote": "หลุดแนวรับก่อนรีบาวด์วันนี้",
+          "hardNote": "หลุด 200-day MA / thesis เปลี่ยน",
+          "rrNote": "stop แน่นเทียบ TP2 ให้ R/R ดีก่อนเข้างบ event เดี่ยว",
+          "rrWarning": "R/R ดี แต่ความเสี่ยงจริงคือแรงย่อวันถัดไปจากประวัติ ไม่ใช่จุด stop"
+        }
+      },
+      "estimateDates": [
+        { "event": "งบ Q2 2026", "note": "หลังตลาดปิด · call 17:00 ET — จับตา QCaaS bookings + guidance ทั้งปี" }
+      ]
+    }
+  }
+}
