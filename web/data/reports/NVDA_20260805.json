@@ -1,0 +1,198 @@
+{
+  "ticker": "NVDA",
+  "companyName": "NVIDIA Corporation",
+  "companyDescription": "AI GPU · Dominant Blackwell/Vera Rubin AI training + inference chips + CUDA ecosystem — picks & shovels of the AI buildout",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-05T21:00:00.000Z",
+  "price": 211.94,
+  "priceChange": 2.56,
+  "priceNote": "Trading $211.94, +2.56% today — NVDA has clawed back nearly all of the July capex-fear selloff, riding a broad AI-semis rally (AMD +7%, MU +7.6%, MRVL +12.8%) on upbeat memory-pricing data and confirmation that hyperscaler AI capex is holding, not cracking.",
+  "marketCap": "$5.13T",
+  "sector": "Technology / Semiconductors",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 84,
+  "summary": "NVDA has recovered from the July capex-fear lows ($202.78) to $211.94, just below its 52-week high of $236.54, as sector-wide memory-pricing strength and fresh deal flow (SpaceX AI-hardware exclusivity, Anthropic's $10B Volta Infra compute deal) reinforce that hyperscaler demand is intact. 53 analysts carry a Strong Buy-leaning consensus with an average target of $304 (43% upside) and a low of $218 — meaning even the most conservative Street target sits above today's price. Fiscal Q2 FY27 earnings land Aug 26, 2026, the next real test of whether the ~$1T cumulative Blackwell/Vera Rubin order book is converting to guidance.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Fiscal Q2 FY27 Earnings",
+      "description": "First earnings since the rally back from July's AI-capex-fear selloff. Market wants confirmation that hyperscaler orders (Jensen Huang cited ~$1T in cumulative Blackwell/Vera Rubin purchase orders through 2027 at GTC) are converting to guidance, not just backlog language.",
+      "urgencyLabel": "21 DAYS",
+      "dateBadge": "Aug 26, 2026",
+      "catalystDate": "2026-08-26",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "⚡",
+      "name": "Vera Rubin H2 2026 Shipments",
+      "description": "HBM4 + 3nm architecture begins shipping to early-access hyperscaler customers in H2 2026 — the generational efficiency leap analysts are watching for roadmap-execution proof, and a direct read on whether the current re-rating has legs.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🏦",
+      "name": "Next FOMC Decision",
+      "description": "Fed held 3.50-3.75% at the Jul 28-29 meeting but with 3 dissents (Hammack, Kashkari, Logan) favoring an immediate hike — the most hawkish vote split of this cycle. The Sep 16-17 meeting lands three weeks after NVDA's own earnings and is the next test of whether that hawkish tilt hardens.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Sep 16-17, 2026",
+      "catalystDate": "2026-09-16",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Valuation has re-inflated with the rally — P/E ~32.5x and market cap back to $5.13T means less room for error than at the July lows; a soft Aug 26 print has further to fall from here",
+    "Hawkish Fed dissent (3 of 12 voters wanted a hike at the Jul 29 meeting) is the most hawkish vote split this cycle — a genuine hike or hawkish Sep guidance would compress long-duration AI multiples independent of NVDA execution",
+    "Vera Rubin ramp timing risk — any slip in H2 2026 hyperscaler shipments removes the next roadmap-execution catalyst just as expectations reset higher",
+    "China export-control precedent (H20 restrictions triggered a $4.5B charge and a ~4% single-day drop in the prior cycle) — policy risk remains binary and outside company control",
+    "Today's sector-wide rally (AMD, MU, MRVL all up 7-13%) means some of NVDA's move is a rising-tide effect, not NVDA-specific news — a reversal in memory-pricing sentiment could pull NVDA down with peers even without company-specific bad news",
+    "AMD is leaning on open-source ROCm partnerships with OpenAI and Anthropic to chip away at CUDA lock-in — a slow-moving but real competitive risk to NVDA's software moat"
+  ],
+  "estimateDates": [
+    {
+      "event": "Fiscal Q2 FY27 Earnings",
+      "dateRange": "Aug 26, 2026",
+      "note": "Key test: do hyperscaler orders and Vera Rubin commentary confirm the $1T cumulative purchase-order figure from GTC, now that the stock has already re-rated back toward highs",
+      "est": "est. revenue growth intact, watch gross margin + guidance",
+      "highlight": "blue"
+    },
+    {
+      "event": "Next FOMC Meeting",
+      "dateRange": "Sep 16-17, 2026",
+      "note": "First Fed decision after NVDA's earnings; Jul 29 meeting saw 3 hawkish dissents favoring a hike — watch for whether that tilt hardens into an actual move",
+      "est": "hold most likely, hawkish-surprise risk elevated",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -19, "price": 172 },
+    { "label": "Base", "color": "yellow", "pct": 20, "price": 254 },
+    { "label": "Bull", "color": "green", "pct": 44, "price": 305 },
+    { "label": "Moon", "color": "purple", "pct": 98, "price": 420 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (53 analysts)", "target": 304, "rating": "Buy", "note": "Range $218-$500; 48 Buy, 3 Strong Buy, 2 Hold, 0 Sell" },
+    { "firm": "Robert W. Baird", "target": 500, "rating": "Buy", "note": "Street-high outlier" },
+    { "firm": "Tigress Financial", "target": 425, "rating": "Buy" },
+    { "firm": "Evercore", "target": 413, "rating": "Buy" },
+    { "firm": "KeyBanc", "target": 330, "rating": "Buy", "note": "Raised from $310" },
+    { "firm": "Deutsche Bank", "target": 255, "rating": "Hold" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "FOMC held 3.50-3.75% for a 5th straight meeting (Jul 29, 2026), but the 9-3 vote was the most hawkish split of this cycle — Hammack, Kashkari and Logan dissented in favor of an immediate quarter-point hike. Next decision is Sep 16-17, 2026.",
+    "inflationNote": "The Committee explicitly stated inflation 'remains elevated relative to the 2 percent goal,' partly tied to supply shocks in energy — the dissent votes show real appetite on the Committee to act on that rather than wait.",
+    "sectorImpact": "High-multiple AI/semis names are the most rate-sensitive corner of the market. NVDA's valuation has already re-inflated toward $5.13T/32.5x P/E on the recent rally, so a hawkish Sep surprise would hit from a richer starting point than it did in July.",
+    "summary": "MEDIUM — no hike delivered, but 3 of 12 voters wanted one now, the most hawkish dissent count this cycle. That tilt plus a Sep 16-17 meeting three weeks after NVDA's own earnings keeps macro as a real overhang even as the stock has re-rated back near highs."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 212, "note": "Current price — near 52-wk highs after the sector-wide rally", "timing": "Now" },
+      { "label": "Entry 2", "level": 195, "rangeMax": 200, "note": "Pullback to pre-rally support, still well above the July capex-fear lows", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 175, "note": "Deep dip — approaches the 52-week low $164.07 floor", "timing": "If sector selloff" }
+    ],
+    "tp1": { "price": 254, "pct": 19.9, "note": "Base — roughly the Deutsche Bank Hold-level target, capex fears stay resolved but multiple stays disciplined" },
+    "tp2": { "price": 305, "pct": 43.9, "note": "Consensus target — Aug 26 earnings confirm hyperscaler demand and Vera Rubin trajectory" },
+    "tp3": { "price": 420, "pct": 98.2, "note": "Vera Rubin ramp exceeds expectations, re-rates toward the Evercore/Tigress high-conviction cluster", "moon": true },
+    "stopLoss": {
+      "tight": 190, "tightPct": -10.3, "tightNote": "Below the Entry 2 pullback support zone",
+      "hard": 164, "hardPct": -22.6, "hardNote": "52-week low breach — capex/demand thesis genuinely broken",
+      "riskReward": "4.2 : 1",
+      "rrNote": "Consensus target (TP2) vs tight stop, measured from current price",
+      "rrWarning": "Good R/R, but entry is now richer than mid-July — size accordingly rather than chasing the rally"
+    },
+    "verdict": "BUY, but chase less — NVDA already recovered most of the July selloff. Start a smaller initial position now, add the bulk on any pullback to $195-200 ahead of the Aug 26 confirmation print.",
+    "approach": "DCA"
+  },
+  "comparableCases": [
+    {
+      "ticker": "AVGO",
+      "event": "Jul 9, 2026 — AI chip guidance reaffirmed at $16B, Apple deal extended through 2031",
+      "date": "Jul 2026",
+      "movePct": 4.7,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same AI-semis complex, same broader selloff window as NVDA's July capex-fear reset — shows the market rewarding guidance confirmation (not even a raise) once fear peaked. NVDA's Aug 26 print will be tested against the same bar."
+    },
+    {
+      "ticker": "MU",
+      "event": "Late-June 2026 earnings — initial soft reaction followed by a sharp re-rate as memory pricing power was confirmed intact",
+      "date": "Jun-Jul 2026",
+      "movePct": 20,
+      "days": 4,
+      "outcome": "good",
+      "note": "Micron fell initially on the print, then rallied roughly 20% over the next four sessions as commentary from Apple and Amazon on rising memory costs confirmed pricing power — the same 'AI infra pricing/demand strength' narrative now lifting NVDA and the broader semis complex today."
+    },
+    {
+      "ticker": "NVDA",
+      "event": "H200/China shipment delays ahead of Q1 FY26 earnings",
+      "date": "May 2025",
+      "movePct": -4,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Policy/export-control risk is NVDA's main tail risk — this remains the clearest recent example of a negative single-day reaction, and it was policy-driven rather than a demand miss."
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/NVDA/",
+    "https://www.marketbeat.com/stocks/NASDAQ/NVDA/price-target/",
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+    "https://finance.yahoo.com/quote/NVDA/",
+    "https://stockanalysis.com/stocks/MU/",
+    "https://stockanalysis.com/stocks/AVGO/",
+    "https://www.fool.com/investing/2026/07/09/3-genius-ai-stocks-to-buy-amidst-the-selloff/",
+    "https://www.fxleaders.com/news/2026/05/18/nvidia-earnings-preview-nvda-stock-dips-to-220-on-china-export-concerns/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "NVDA ฟื้นตัวจากจุดต่ำสุดช่วงกลัว capex ในเดือน ก.ค. ($202.78) ขึ้นมาที่ $211.94 ใกล้ 52-week high ที่ $236.54 หลัง memory pricing แข็งแรงทั้ง sector และมีดีลใหม่ (SpaceX ใช้ NVDA hardware แบบ exclusive, Anthropic เซ็นดีล compute $10B กับ Volta Infra) ยืนยันว่า demand จาก hyperscaler ยังแข็งแรง นักวิเคราะห์ 53 คนให้ consensus เอียง Strong Buy เป้าเฉลี่ย $304 (upside 43%) และเป้าต่ำสุดยังอยู่เหนือราคาปัจจุบัน earnings Q2 FY27 วันที่ 26 ส.ค. 2026 จะเป็นบททดสอบว่า order backlog ประมาณ $1T แปลงเป็น guidance จริงหรือไม่",
+      "priceNote": "ราคา $211.94 บวก 2.56% วันนี้ — NVDA ดึงกลับมาได้เกือบเท่าช่วงก่อน selloff เดือน ก.ค. ตามแรงส่งของกลุ่ม AI-semis ทั้งกลุ่ม (AMD +7%, MU +7.6%, MRVL +12.8%) จากข้อมูล memory pricing ที่ดีและสัญญาณว่า capex ของ hyperscaler ยังไม่สะดุด",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "รายงาน Fiscal Q2 FY27 Earnings", "description": "earnings แรกหลังหุ้นฟื้นจาก selloff เดือน ก.ค. — ตลาดต้องการยืนยันว่า order จาก hyperscaler ($1T cumulative ที่ Jensen พูดใน GTC) แปลงเป็น guidance จริง ไม่ใช่แค่ backlog" },
+        { "name": "Vera Rubin H2 2026 Shipments", "description": "สถาปัตยกรรม HBM4 + 3nm เริ่ม ship ให้ลูกค้า early-access ใน H2 2026 — พิสูจน์ roadmap execution และเป็นตัวชี้วัดว่าการ re-rate รอบนี้มีของจริงรองรับ" },
+        { "name": "การประชุม FOMC ครั้งถัดไป", "description": "Fed คงดอกเบี้ย 3.50-3.75% วันที่ 28-29 ก.ค. แต่มี 3 เสียง dissent (Hammack, Kashkari, Logan) อยากขึ้นดอกเบี้ยทันที — เป็น vote split ที่ hawkish สุดในรอบนี้ ประชุมถัดไป 16-17 ก.ย. ห่างจาก earnings NVDA แค่ 3 สัปดาห์" }
+      ],
+      "risks": [
+        "Valuation กลับมาสูงขึ้นตามการรีบาวด์ — P/E ~32.5x, market cap กลับไป $5.13T ทำให้พื้นที่ผิดพลาดน้อยลงกว่าตอนราคาต่ำสุด ก.ค.",
+        "Fed dissent ที่ hawkish ที่สุดในรอบนี้ (3 จาก 12 เสียงอยากขึ้นดอกเบี้ยทันที) — ถ้าขึ้นจริงหรือ guidance ก.ย. เอียง hawkish จะกด multiple หุ้น AI duration ยาว",
+        "ความเสี่ยง timing ของ Vera Rubin ramp — ถ้า H2 2026 ship ช้าจะเสีย catalyst หลักตอนที่ expectation รีเซ็ตสูงขึ้นแล้ว",
+        "ความเสี่ยง China export control (เคยมีชาร์จ $4.5B + ราคาร่วง ~4% รอบก่อน) เป็นความเสี่ยงเชิงนโยบายที่คุมไม่ได้",
+        "การรีบาวด์วันนี้เป็นแรงส่งทั้ง sector (AMD, MU, MRVL ขึ้น 7-13%) ไม่ใช่ข่าวเฉพาะตัว NVDA ทั้งหมด — ถ้า sentiment memory pricing กลับตัวหุ้นอาจร่วงตามกลุ่มได้",
+        "AMD ใช้กลยุทธ์ open-source ROCm ร่วมกับ OpenAI และ Anthropic เพื่อลดการพึ่งพา CUDA — เป็นความเสี่ยงต่อ software moat ของ NVDA ในระยะยาว"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.50-3.75% เป็นครั้งที่ 5 ติด (29 ก.ค.) แต่ vote 9-3 เป็น split ที่ hawkish สุดในรอบนี้ — 3 เสียง dissent อยากขึ้นดอกเบี้ยทันที ประชุมถัดไป 16-17 ก.ย.",
+        "inflationNote": "คณะกรรมการระบุชัดว่าเงินเฟ้อ 'ยังสูงกว่าเป้า 2%' ส่วนหนึ่งจาก supply shock ด้านพลังงาน — dissent vote สะท้อนว่ามีแรงอยากขึ้นดอกเบี้ยจริงในคณะกรรมการ",
+        "sectorImpact": "หุ้น AI/semis P/E สูงไวต่อดอกเบี้ยที่สุด ตอนนี้ valuation NVDA กลับมาสูง ($5.13T, P/E ~32.5x) ทำให้ hawkish surprise ใน ก.ย. จะกระทบจากจุดเริ่มต้นที่แพงกว่าเดือน ก.ค.",
+        "summary": "MEDIUM — ยังไม่ขึ้นดอกเบี้ย แต่ 3 จาก 12 เสียงอยากขึ้นทันที เป็น dissent ที่ hawkish สุดในรอบนี้ บวกกับประชุม 16-17 ก.ย. ที่ตามหลัง earnings NVDA แค่ 3 สัปดาห์ ทำให้ macro ยังเป็นความเสี่ยงจริงแม้หุ้นจะรีบาวด์กลับมาใกล้จุดสูงสุดแล้ว"
+      },
+      "entryStrategy": {
+        "verdict": "BUY แต่ไล่ราคาน้อยลง — NVDA ฟื้นจาก selloff ก.ค. มาเกือบหมดแล้ว เข้าไม้แรกเล็กๆ ตอนนี้ ที่เหลือรอเพิ่มตอนย่อ $195-200 ก่อน earnings 26 ส.ค.",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ใกล้ 52-week high หลังรีบาวด์ทั้ง sector", "timing": "ตอนนี้" },
+          { "note": "ย่อกลับมาที่แนวรับก่อนรีบาวด์ ยังสูงกว่าจุดต่ำสุด ก.ค. มาก", "timing": "ถ้าย่อ" },
+          { "note": "ใกล้ 52-week low $164.07", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "กรณีฐาน — ใกล้เป้า Hold ของ Deutsche Bank ความกลัว capex คลี่คลายแต่ multiple ยังมีวินัย" },
+        "tp2": { "note": "กรณีดี — consensus target, earnings 26 ส.ค. ยืนยัน demand hyperscaler และ roadmap Vera Rubin" },
+        "tp3": { "note": "Moon — Vera Rubin ramp เกินคาด รีเรทไปทางกลุ่มเป้าสูงของ Evercore/Tigress" },
+        "stopLoss": {
+          "tightNote": "หลุดโซนแนวรับ Entry 2",
+          "hardNote": "หลุด 52-week low — thesis demand/capex เสียหายจริง",
+          "rrNote": "เทียบ consensus target (TP2) กับ tight stop จากราคาปัจจุบัน",
+          "rrWarning": "R/R ยังดี แต่ราคาเข้าตอนนี้แพงกว่ากลาง ก.ค. มาก อย่าไล่ราคา"
+        }
+      },
+      "estimateDates": [
+        { "event": "รายงาน Fiscal Q2 FY27 Earnings", "note": "จุดพิสูจน์ว่า order hyperscaler และ Vera Rubin commentary ยืนยันตัวเลข $1T cumulative หรือไม่ ตอนที่ราคารีเรทกลับมาสูงแล้ว" },
+        { "event": "การประชุม FOMC ครั้งถัดไป", "note": "การตัดสินใจ Fed ครั้งแรกหลัง earnings NVDA — 29 ก.ค. มี 3 เสียง dissent อยาก hike ต้องดูว่าจุดยืนนี้แข็งขึ้นหรือไม่" }
+      ]
+    }
+  }
+}
