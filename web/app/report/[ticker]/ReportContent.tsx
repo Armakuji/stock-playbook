@@ -69,12 +69,14 @@ function SectionTitle({ children, accent }: { children: React.ReactNode; accent?
   );
 }
 
-function Chip({ label, color = "gray" }: { label: string; color?: string }) {
+function Chip({ label, color = "gray", wrap = false }: { label: string; color?: string; wrap?: boolean }) {
   const c = BADGE_COLORS[color] ?? BADGE_COLORS.blue;
   return (
     <span style={{
       fontSize: 10, fontWeight: 800, padding: "2px 8px", borderRadius: 5,
-      background: c.bg, color: c.color, letterSpacing: "0.5px", whiteSpace: "nowrap",
+      background: c.bg, color: c.color, letterSpacing: "0.5px",
+      whiteSpace: wrap ? "normal" : "nowrap",
+      display: "inline-block", maxWidth: wrap ? "100%" : undefined,
       border: `1px solid ${c.color}30`,
     }}>
       {label}
@@ -438,14 +440,14 @@ function StopLossCard({ report }: { report: StockReport }) {
         {sl.riskReward && (
           <>
             <Divider />
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-              <div>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 10 }}>
+              <div style={{ flexShrink: 0 }}>
                 <span style={{ fontSize: 12, color: "var(--muted)" }}>Risk / Reward</span>
                 {sl.rrNote && <div style={{ fontSize: 11, color: "#475569", marginTop: 2 }}>{sl.rrNote}</div>}
               </div>
-              <div style={{ textAlign: "right" }}>
+              <div style={{ textAlign: "right", minWidth: 0 }}>
                 <div style={{ fontSize: 18, fontWeight: 800, color: "var(--text)", fontFamily: "var(--font-mono, monospace)" }}>{sl.riskReward}</div>
-                {sl.rrWarning && <Chip label={`⚠ ${sl.rrWarning}`} color="yellow" />}
+                {sl.rrWarning && <Chip label={`⚠ ${sl.rrWarning}`} color="yellow" wrap />}
               </div>
             </div>
           </>
