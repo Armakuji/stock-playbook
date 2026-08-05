@@ -1,0 +1,207 @@
+{
+  "ticker": "BIVI",
+  "companyName": "BioVie Inc.",
+  "companyDescription": "Clinical-stage neuro biotech · bezisterim (NE3107) Phase 2 topline data due imminently for Long COVID (ADDRESS-LC) and Parkinson's (SUNRISE-PD) — nano-cap now racing a going-concern cash crunch AND an active 56M-share best-efforts offering set to resolve in the same window as the data",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-04T21:30:00.000Z",
+  "price": 1.62,
+  "priceChange": 6.58,
+  "priceNote": "Self-fetched Aug 3, 2026 close: $1.62, +6.58% on the day. 52-week range $1.06–$6.15 (updated range vs the Jul 22 report's $8.84 high). Up from $1.29 on Jul 21, but the move looks like pre-catalyst positioning, not a fundamental re-rate — a much larger dilution event than last time is actively pending.",
+  "marketCap": "$12.2M",
+  "sector": "Healthcare / Biotechnology (Neurology)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Moonshot",
+  "score": 50,
+  "summary": "Neither binary readout has happened yet — ADDRESS-LC (Long COVID) and SUNRISE-PD (Parkinson's) topline data are both still pending, targeted for Q3 2026 (ADDRESS-LC 'late summer'), so the core catalyst thesis from the Jul 22 report is intact and now closer. But the financial picture has deteriorated materially: cash fell from $20.5M (Dec 31, 2025) to $13.1M (Mar 31, 2026) — a burn of ~$7.4M in one quarter, faster than previously modeled — and BioVie filed a best-efforts S-1 on Jul 17, 2026 (amended Jul 31) registering up to 56,390,977 new shares (roughly 7-8x the current ~7.5M shares outstanding) that must complete or lapse by Sep 30, 2026 — the SAME window as the data. ⚠️ SURVIVAL: this is a materially bigger dilution risk than 13 days ago, not a smaller one — BioVie's own stock fell 43% in a single day (Aug 8, 2025) on a much smaller $12M offering, and this new one dwarfs it. Still included because the binary data catalyst is real, near, and analyst-backed (2-analyst average target $5.26, +225%), and because a survival flag is disclosure, not an automatic cut — but position sizing must assume the share count could balloon before the data even reads out. Max 2% position, no exceptions.",
+  "catalysts": [
+    {
+      "icon": "🧠",
+      "name": "ADDRESS-LC Phase 2 Topline (Long COVID)",
+      "description": "Topline results for bezisterim in Long COVID neurological symptoms (~200 patients, DoW-funded), following full enrollment announced May 26, 2026. Still pending as of Aug 4, 2026.",
+      "urgencyLabel": "~4 WEEKS",
+      "dateBadge": "Late Summer 2026",
+      "catalystDate": "2026-08-31",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🧬",
+      "name": "SUNRISE-PD Phase 2 Topline (Parkinson's Disease)",
+      "description": "Bezisterim's early-stage Parkinson's trial completed its last patient visit May 18, 2026. Topline data still pending, targeted for Q3 2026 (by Sep 30).",
+      "urgencyLabel": "BY SEP 30",
+      "dateBadge": "Q3 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "💰",
+      "name": "Active Best-Efforts Offering Resolution (up to 56.4M shares)",
+      "description": "BioVie filed a best-efforts S-1 (Jul 17, 2026; amended Jul 31) to sell up to 56,390,977 shares (or equivalent pre-funded warrants) at an assumed $1.33/share — vs ~7.5M shares outstanding today. No minimum required; terminates Sep 30, 2026 if not completed sooner. This is a live, unresolved dilution overhang set to land in the same window as both data readouts.",
+      "urgencyLabel": "ACTIVE NOW",
+      "dateBadge": "By Sep 30, 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "red",
+      "dotColor": "red"
+    }
+  ],
+  "risks": [
+    "⚠️ SURVIVAL: Cash fell from $20.5M (Dec 31, 2025) to $13.1M (Mar 31, 2026) — a ~$7.4M quarterly burn, faster than the ~$5.5M/quarter implied by the prior report. Going-concern doubt remains explicitly disclosed.",
+    "⚠️ SURVIVAL: An active best-efforts S-1 offering (filed Jul 17, amended Jul 31, 2026) registers up to 56,390,977 new shares — roughly 7-8x the current share count — terminating Sep 30, 2026. This can price at any time, at any discount, with no minimum raise required.",
+    "⚠️ SURVIVAL: BioVie's own stock fell 43% in a single day (Aug 8, 2025) when it priced a much smaller $12M offering. A raise of this new offering's potential size lands into the same window as the data catalysts and could crush the share price independent of trial outcomes.",
+    "Both catalysts remain genuinely binary — a negative or ambiguous readout on either ADDRESS-LC or SUNRISE-PD could send the stock toward or through its 52-week low ($1.06)",
+    "Nano-cap ($12.2M market cap) with extreme volatility and thin liquidity — slippage and execution risk are real at this size, compounded by the pending share-count uncertainty",
+    "Analyst coverage is thin and inconsistent across data providers (targets seen range from $5.26 to $12.00 across sources) — treat any single target with caution until it's confirmed post-split-adjustment"
+  ],
+  "estimateDates": [
+    { "event": "FY2026 Annual Report / Cash Update", "dateRange": "Aug 14, 2026", "note": "First real-time read on cash since Mar 31 ($13.1M) and on the status of the pending 56.4M-share offering", "est": "Cash burn + offering status", "highlight": "blue" },
+    { "event": "ADDRESS-LC Topline (Long COVID)", "dateRange": "Late Summer 2026", "note": "Binary readout — the primary near-term catalyst", "est": "Positive/negative on primary endpoint", "highlight": "yellow" },
+    { "event": "SUNRISE-PD Data (Parkinson's)", "dateRange": "Q3 2026 (by Sep 30)", "note": "Trial completed May 2026, data analysis underway", "est": "Second binary shot in the same window", "highlight": "yellow" },
+    { "event": "Best-Efforts Offering Deadline", "dateRange": "Sep 30, 2026", "note": "Up to 56.39M shares must price/complete or the registration lapses", "est": "Dilution event or lapse", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -55, "price": 0.73 },
+    { "label": "Base", "color": "yellow", "pct": 40, "price": 2.27 },
+    { "label": "Bull", "color": "green", "pct": 150, "price": 4.05 },
+    { "label": "Moon", "color": "purple", "pct": 225, "price": 5.26 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (2 analysts, Strong Buy)", "target": 5.26, "rating": "Buy" },
+    { "firm": "Brookline Capital Markets (high-end)", "target": 12.00, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held at 3.50-3.75% on Jul 29, 2026 with 3 hawkish dissents favoring a hike — rate-hike tail risk into year-end hasn't gone away.",
+    "inflationNote": "Core PCE still 3.3% YoY, well above the 2% target — the 10-year yield remaining elevated makes any dilutive equity raise from a going-concern nano-cap more expensive.",
+    "sectorImpact": "Binary Phase 2 data outcomes are largely macro-independent in direction, but BIVI's active 56.4M-share offering will price worse into a high-rate, risk-off tape than into a rally — macro conditions directly affect how much dilution existing holders eat.",
+    "summary": "MEDIUM for the catalyst itself, HIGH for the financing risk — nothing about the Jul 29 FOMC changes whether the Phase 2 data reads out positive or negative, but a hawkish macro backdrop makes the pending best-efforts offering more punishing for existing shareholders."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 1.62, "note": "Current price — pre-data AND pre-offering-resolution, both unresolved", "timing": "Now (small)" },
+      { "label": "Entry 2", "level": 1.10, "rangeMax": 1.30, "note": "Likely zone if the pending offering prices at/near its $1.33 assumed level — best R/R if the raise clears before data", "timing": "If dips on offering news", "preferred": true },
+      { "label": "Entry 3", "level": 0.75, "note": "Deep capitulation — offering prices at a steep discount or broad biotech selloff, still ahead of data", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 2.27, "pct": 40.1, "note": "Base — mixed/inconclusive data, market gives partial credit net of dilution" },
+    "tp2": { "price": 4.05, "pct": 150.0, "note": "Bull — one of the two readouts (ADDRESS-LC or SUNRISE-PD) is clearly positive" },
+    "tp3": { "price": 5.26, "pct": 225.0, "note": "Moon — both readouts positive, hits 2-analyst consensus target", "moon": true },
+    "stopLoss": {
+      "tight": 1.00, "tightPct": -38.3, "tightNote": "Below the 52-week low ($1.06) — thesis-neutral pre-data but a real warning sign given the active offering",
+      "hard": 0.60, "hardPct": -63.0, "hardNote": "Post-offering-crash / clearly negative readout / going-concern crisis territory",
+      "riskReward": "14.3 : 1", "rrNote": "From Entry 2 mid ($1.20) tight stop vs TP2", "rrWarning": "Asymmetric ✅ on paper, but this is a going-concern nano-cap with an active 7-8x dilution offering pending — 2% max position, no exceptions"
+    },
+    "verdict": "Moonshot — tiny position only, sized for total loss. The binary data catalyst is real and closer than 13 days ago, but an active best-efforts offering for up to 56.4M shares (vs ~7.5M outstanding) is the dominant near-term risk and could move the stock before the data does.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "Clinical-stage nano-caps with binary Phase 2 data typically see limited pre-readout runup and trade sideways-to-down into the event — and BIVI's setup is worse than the norm because an active dilutive offering is competing for the stock's direction ahead of the data.",
+    "preRunupTiming": "minimal to negative pre-event drift; further suppressed by the pending 56.4M-share offering",
+    "preRunupPct": "-10% to +5% pre-event, with added downside risk from the offering resolving before data does",
+    "postWin": {
+      "avgPct": 150,
+      "range": "+50% to +349%",
+      "note": "Small-cap biotechs on positive mid-stage data have posted moves in this range — Five Prime Therapeutics (FPRX) jumped as much as 349% on positive mid-stage combination-therapy data, the closest same-genre precedent for a nano-cap binary Phase 2 win.",
+      "exampleDate": "historical small-cap Phase 2 precedent (FPRX)"
+    },
+    "postLose": {
+      "avgPct": -45,
+      "range": "-30% to -70%",
+      "note": "BIVI's own stock fell 43% in a single day (Aug 8, 2025) after pricing a $12M public offering — direct, same-company precedent for how hard a dilutive raise hits this stock, now amplified by a much larger pending offering (up to 56.4M shares) landing in the same window as the data.",
+      "exampleDate": "Aug 8, 2025 (BIVI's own dilutive-offering crash)"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "Going-concern nano-cap with two binary catalysts plus an active 7-8x dilution offering pending before either readout — 2% caps the loss to a tolerable level while keeping exposure to the +225% consensus upside if a readout hits before or despite the raise."
+    },
+    "stopPreCatalyst": { "pct": -35, "price": 1.05, "note": "Below the 52-week low ahead of data — thesis-neutral but a real warning sign of financing stress or a poorly-received offering" },
+    "stopPostCatalyst": { "pct": -50, "note": "A clearly negative readout on both trials, or the offering pricing at a severe discount with a large raise, ends the thesis — exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "FPRX",
+      "event": "Five Prime Therapeutics — positive mid-stage combination cancer therapy data",
+      "date": "historical",
+      "movePct": 349,
+      "days": 1,
+      "outcome": "good",
+      "note": "Closest same-genre precedent for a small-cap binary Phase 2 win driving an outsized single-day move — directly relevant to BIVI's ADDRESS-LC/SUNRISE-PD setup."
+    },
+    {
+      "ticker": "BIVI",
+      "event": "BioVie priced a $12M public offering of units at $2.00/share",
+      "date": "Aug 2025",
+      "movePct": -43,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Same-company, same-mechanism precedent for dilution risk — a much smaller offering than the current one already crushed the stock in a single session."
+    },
+    {
+      "ticker": "BIVI",
+      "event": "52-week high-to-low decline amid going-concern disclosure and repeated capital raises",
+      "date": "2025-2026",
+      "movePct": -83,
+      "days": 365,
+      "outcome": "bad",
+      "note": "Shows the full downside this stock has already realized on financing/sentiment risk even before either current Phase 2 readout has landed."
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/bivi/",
+    "https://www.globenewswire.com/news-release/2026/05/26/3300996/0/en/BioVie-Announces-Full-Enrollment-of-the-ADDRESS-LC-Trial-of-Bezisterim-for-the-Treatment-of-Neurological-Symptoms-Associated-with-Long-COVID.html",
+    "https://www.globenewswire.com/news-release/2026/05/18/3296537/0/en/biovie-announces-completion-of-phase-2-sunrise-pd-trial-in-early-stage-parkinson-s-disease.html",
+    "https://www.stocktitan.net/sec-filings/BIVI/",
+    "https://www.stocktitan.net/sec-filings/BIVI/s-3-biovie-inc-shelf-registration-statement-cdcd9e753700.html",
+    "https://www.investing.com/news/stock-market-news/biovie-stock-plunges-after-pricing-12-million-public-offering-93CH-4181356",
+    "https://www.tipranks.com/news/the-fly/biovie-price-target-adjusted-to-12-from-6-at-brookline-thefly"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "ทั้งสอง binary readout ยังไม่ออกผล — ADDRESS-LC (Long COVID) และ SUNRISE-PD (Parkinson's) ยังรอผล topline คาดช่วง Q3 2026 (ADDRESS-LC 'ปลายฤดูร้อน') ดังนั้น thesis หลักจากรายงาน 22 ก.ค. ยังอยู่และใกล้ขึ้น แต่ภาพการเงินแย่ลงชัดเจน: เงินสดลดจาก $20.5M (31 ธ.ค. 2025) เหลือ $13.1M (31 มี.ค. 2026) — burn ~$7.4M ในไตรมาสเดียว เร็วกว่าที่เคยประเมิน และ BioVie ยื่น best-efforts S-1 เมื่อ 17 ก.ค. 2026 (แก้ไข 31 ก.ค.) จดทะเบียนหุ้นใหม่สูงสุด 56,390,977 หุ้น (ประมาณ 7-8 เท่าของหุ้นหมุนเวียนปัจจุบัน ~7.5M) ต้องเสร็จหรือหมดอายุภายใน 30 ก.ย. 2026 — ช่วงเวลาเดียวกับผลข้อมูล ⚠️ SURVIVAL: นี่คือความเสี่ยง dilution ที่ใหญ่กว่าเมื่อ 13 วันก่อนมาก ไม่ใช่เล็กลง — หุ้น BioVie เองเคยร่วง 43% ในวันเดียว (8 ส.ค. 2025) จากการระดมทุนที่เล็กกว่านี้มาก และครั้งนี้ใหญ่กว่านั้นมาก ยังรวมไว้เพราะ catalyst ข้อมูล binary จริง ใกล้ และมีนักวิเคราะห์รองรับ (เป้าเฉลี่ย 2 คน $5.26 +225%) และเพราะ survival flag คือการเปิดเผยข้อมูล ไม่ใช่การตัดออกอัตโนมัติ — แต่ size ต้องคำนึงว่าจำนวนหุ้นอาจพุ่งก่อนผลข้อมูลออกด้วยซ้ำ size สูงสุด 2% ไม่มีข้อยกเว้น",
+      "priceNote": "ราคาปิด 3 ส.ค. 2026: $1.62 (+6.58%) 52-week range $1.06–$6.15 (ปรับจาก high $8.84 ในรายงาน 22 ก.ค.) ขึ้นจาก $1.29 เมื่อ 21 ก.ค. แต่ดูเหมือนการเก็งกำไรก่อน catalyst มากกว่าการ re-rate จริง เพราะมี dilution event ใหญ่กว่าเดิมมากรออยู่",
+      "scoreLabel": "Moonshot",
+      "catalysts": [
+        { "name": "ผล Topline ADDRESS-LC Phase 2 (Long COVID)", "description": "ผล bezisterim ต่ออาการทางระบบประสาทจาก Long COVID (~200 คน ทุน DoW) หลัง enroll ครบ 26 พ.ค. 2026 ยังไม่ออกผล ณ 4 ส.ค. 2026" },
+        { "name": "ผล Topline SUNRISE-PD Phase 2 (Parkinson's)", "description": "trial Parkinson's ระยะแรกเก็บข้อมูลผู้ป่วยรอบสุดท้ายเสร็จ 18 พ.ค. 2026 ผล topline ยังรอ คาด Q3 2026 (ภายใน 30 ก.ย.)" },
+        { "name": "การระดมทุน Best-Efforts ที่กำลังดำเนินอยู่ (สูงสุด 56.4M หุ้น)", "description": "BioVie ยื่น S-1 แบบ best-efforts (17 ก.ค. 2026 แก้ไข 31 ก.ค.) ขายหุ้นสูงสุด 56,390,977 หุ้น (หรือ pre-funded warrants เทียบเท่า) ที่ราคาสมมติ $1.33/หุ้น เทียบหุ้นหมุนเวียนปัจจุบัน ~7.5M ไม่มีขั้นต่ำ หมดอายุ 30 ก.ย. 2026 เป็นความเสี่ยง dilution ที่ยังไม่คลี่คลาย ตรงกับช่วงเวลาผลข้อมูลทั้งสอง" }
+      ],
+      "risks": [
+        "⚠️ SURVIVAL: เงินสดลดจาก $20.5M (31 ธ.ค. 2025) เหลือ $13.1M (31 มี.ค. 2026) — burn ~$7.4M ต่อไตรมาส เร็วกว่า ~$5.5M/ไตรมาสที่รายงานก่อนหน้าประเมินไว้ ยังคงเปิดเผยข้อสงสัย going concern ชัดเจน",
+        "⚠️ SURVIVAL: มี best-efforts S-1 ที่กำลังดำเนินอยู่ (ยื่น 17 ก.ค. แก้ไข 31 ก.ค. 2026) จดทะเบียนหุ้นใหม่สูงสุด 56,390,977 หุ้น — ประมาณ 7-8 เท่าของหุ้นหมุนเวียนปัจจุบัน หมดอายุ 30 ก.ย. 2026 อาจ price เมื่อไหร่ก็ได้ ที่ discount เท่าไหร่ก็ได้ ไม่มีขั้นต่ำ",
+        "⚠️ SURVIVAL: หุ้น BioVie เองเคยร่วง 43% ในวันเดียว (8 ส.ค. 2025) ตอน price การระดมทุน $12M ที่เล็กกว่านี้มาก การระดมทุนรอบใหม่ที่อาจใหญ่กว่านี้มากตรงกับช่วงเวลาผลข้อมูล อาจกดราคาหุ้นได้ไม่ว่าผล trial จะเป็นอย่างไร",
+        "Catalyst ทั้งสองยังเป็น binary จริง — ผลลบหรือไม่ชัดเจนจาก ADDRESS-LC หรือ SUNRISE-PD อาจทำให้หุ้นร่วงสู่หรือหลุด 52-week low ($1.06)",
+        "Nano-cap ($12.2M) ผันผวนสูงสภาพคล่องบาง — ความเสี่ยง slippage มีจริง ยิ่งซับซ้อนขึ้นจากความไม่แน่นอนของจำนวนหุ้นที่รออยู่",
+        "ข้อมูลนักวิเคราะห์ไม่สอดคล้องกันระหว่างแหล่งข้อมูล (เป้าที่พบมีตั้งแต่ $5.26 ถึง $12.00) — ควรระวังการใช้ตัวเลขเดี่ยวจนกว่าจะยืนยันฐานหลัง reverse split"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% เมื่อ 29 ก.ค. 2026 มี 3 เสียง hawkish หนุนขึ้นดอกเบี้ย — ความเสี่ยงขึ้นดอกเบี้ยปลายปียังไม่หายไป",
+        "inflationNote": "Core PCE ยังอยู่ที่ 3.3% YoY สูงกว่าเป้า yield 10 ปีที่ยังสูงทำให้การระดมทุนแบบ dilutive จาก going-concern nano-cap แพงขึ้น",
+        "sectorImpact": "ผลข้อมูล Phase 2 แบบ binary แทบไม่ผูกทิศทางกับ macro แต่การระดมทุน 56.4M หุ้นที่กำลังดำเนินอยู่จะ price แย่กว่าในภาวะดอกเบี้ยสูง risk-off — สภาพ macro กระทบโดยตรงต่อ dilution ที่ผู้ถือหุ้นเดิมต้องรับ",
+        "summary": "ความเสี่ยง Fed ระดับกลางสำหรับตัว catalyst เอง แต่สูงสำหรับความเสี่ยงด้านการเงิน — FOMC 29 ก.ค. ไม่เปลี่ยนผล Phase 2 แต่ macro ที่ hawkish ทำให้การระดมทุนที่กำลังดำเนินอยู่เจ็บกว่าเดิมสำหรับผู้ถือหุ้นเดิม"
+      },
+      "entryStrategy": {
+        "verdict": "Moonshot — size เล็กมากเท่านั้น เตรียมใจขาดทุนได้เต็มจำนวน catalyst ข้อมูล binary จริงและใกล้กว่าเมื่อ 13 วันก่อน แต่การระดมทุน best-efforts สูงสุด 56.4M หุ้น (เทียบหุ้นหมุนเวียน ~7.5M) เป็นความเสี่ยงหลักระยะใกล้ และอาจขยับหุ้นก่อนผลข้อมูลเสียอีก",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ยังไม่คลี่คลายทั้งผลข้อมูลและการระดมทุน", "timing": "Now (เล็ก)" },
+          { "note": "โซนที่น่าจะเป็นถ้าการระดมทุน price ใกล้ระดับสมมติ $1.33 — R/R ดีที่สุดถ้าปิดรอบระดมทุนก่อนผลข้อมูล", "timing": "ถ้าย่อจากข่าวระดมทุน" },
+          { "note": "ร่วงหนัก — การระดมทุน price ที่ discount มากหรือ biotech เทขายรวม ยังก่อนผลข้อมูล", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — ผลข้อมูลกำกวม/ผสม ตลาดให้เครดิตบางส่วนหลังหัก dilution" },
+        "tp2": { "note": "Bull — หนึ่งในสองผล (ADDRESS-LC หรือ SUNRISE-PD) ชัดเจนเป็นบวก" },
+        "tp3": { "note": "Moon — ผลทั้งสองเป็นบวก แตะเป้า consensus นักวิเคราะห์ 2 คน", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุด 52-week low ($1.06) — thesis ยังไม่พังก่อนผลข้อมูล แต่เป็นสัญญาณเตือนจริงเมื่อมีการระดมทุนที่กำลังดำเนินอยู่",
+          "hardNote": "เข้าเขตหลัง offering ร่วงหนัก / ผลลบชัดเจน / วิกฤต going-concern",
+          "rrNote": "จาก Entry 2 กลาง ($1.20) stop แคบ vs TP2",
+          "rrWarning": "Asymmetric ✅ ในทางทฤษฎี แต่เป็น nano-cap going-concern ที่มีการระดมทุน dilution 7-8 เท่ากำลังดำเนินอยู่ — size สูงสุด 2% ไม่มีข้อยกเว้น"
+        }
+      },
+      "estimateDates": [
+        { "event": "รายงานประจำปี FY2026 / อัปเดตเงินสด", "note": "อ่านค่าเงินสดครั้งแรกหลัง 31 มี.ค. ($13.1M) และสถานะการระดมทุน 56.4M หุ้น" },
+        { "event": "ผล Topline ADDRESS-LC (Long COVID)", "note": "Binary readout — catalyst หลักระยะใกล้" },
+        { "event": "ข้อมูล SUNRISE-PD (Parkinson's)", "note": "trial เสร็จแล้ว วิเคราะห์ข้อมูลอยู่ คาด Q3 2026" },
+        { "event": "กำหนดหมดอายุการระดมทุน", "note": "หุ้นสูงสุด 56.39M ต้อง price/เสร็จสิ้น หรือหมดอายุ" }
+      ]
+    }
+  }
+}

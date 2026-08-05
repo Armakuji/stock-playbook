@@ -1,0 +1,183 @@
+{
+  "ticker": "RXRX",
+  "companyName": "Recursion Pharmaceuticals, Inc.",
+  "companyDescription": "AI-enabled drug discovery platform — phenomics + generative chemistry pipeline, partnered with Sanofi, Roche/Genentech, and Citeline",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-05T11:00:00.000Z",
+  "price": 3.31,
+  "priceChange": 4.09,
+  "priceNote": "Up 4.09% today (Aug 5) — the same day Recursion reported Q2 2026 business updates and financial results before market open; the muted, positive reaction suggests no major surprise either way, though specific quantitative Q2 results weren't independently confirmed in sources available this session.",
+  "marketCap": "$1.75B",
+  "sector": "Healthcare / AI Drug Discovery Biotechnology",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 58,
+  "summary": "Recursion's risk profile has quietly improved since the last check: REC-1245's Phase 1 safety cohort (n=16) reported no dose-limiting toxicities, resolving the early safety-signal concern that was this pipeline's biggest near-term worry, and REC-4881 posted real Phase 2 efficacy (43% polyp reduction at Week 13, 53% at Week 25) ahead of its FDA registrational-pathway conversation. Q2 2026 earnings landed today (Aug 5, before market open) with only a modest +4.09% reaction — no apparent shock. Cash of $665.2M as of Mar 31, 2026 still funds a runway into early 2028. The core binary — FDA feedback on a registrational path for REC-4881 in FAP, expected H2 2026 — remains the single biggest value driver, and analyst sentiment is still split (Morgan Stanley Hold at $5.50 vs. a Street average of $7.83), so this stays a genuine moonshot sleeve, not a de-risked position.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings & Business Update",
+      "description": "Reported today (Aug 5, before market open) — REC-4881 FDA engagement, REC-1245 dose-escalation progress, and Sanofi/Roche milestone cadence were the key items on the call; muted +4.09% reaction so far",
+      "urgencyLabel": "TODAY",
+      "dateBadge": "Aug 5, 2026",
+      "catalystDate": "2026-08-05",
+      "badgeColor": "yellow",
+      "dotColor": "green"
+    },
+    {
+      "icon": "⚖️",
+      "name": "REC-4881 FDA Pathway Update (FAP)",
+      "description": "FDA feedback on a registrational study design for REC-4881 in familial adenomatous polyposis — the single biggest near-term value driver, now backed by real Phase 2 efficacy data (43%/53% polyp reduction)",
+      "urgencyLabel": "2H 2026",
+      "dateBadge": "H2 2026",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "🧬",
+      "name": "REC-1245 Continued Dose-Escalation Data",
+      "description": "Phase 1 safety cohort (n=16) reported no dose-limiting toxicities — the previously-flagged safety concern is resolved for now; continued dose-escalation and early efficacy data still to come",
+      "urgencyLabel": "2H 2026",
+      "dateBadge": "H2 2026",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "🤝",
+      "name": "Citeline AI-Clinical-Trials Partnership Scale-Up",
+      "description": "Expanded partnership targeting $100M in inflows by end-2026, plus continued Sanofi and Roche/Genentech phenomap milestones",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "End 2026",
+      "badgeColor": "green",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Heavy cash burn continues (guided <$390M FY26) — even with $665.2M cash as of Mar 31, 2026 and runway into early 2028, dilution risk resurfaces if milestones slip or additional financing is needed",
+    "Today's Q2 2026 earnings reaction (+4.09%) is muted and its specific quantitative results weren't independently confirmed in sources available this session — worth re-checking once fuller coverage lands",
+    "Sanofi/Roche/Genentech partnership milestones are lumpy and non-guaranteed — a wind-down or deprioritization of any program would remove a key revenue and validation source",
+    "Analyst sentiment remains split and skeptical of platform value: consensus skews Hold, with Morgan Stanley's target still just $5.50 vs. legacy highs near $33",
+    "The REC-4881 FDA pathway conversation is still just a conversation — positive Phase 2 efficacy data improves the odds but doesn't guarantee a favorable registrational-pathway outcome"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Aug 5, 2026", "note": "Reported today — REC-4881 FDA pathway commentary and REC-1245 safety update", "est": "Muted +4.09% reaction so far", "highlight": "blue" },
+    { "event": "REC-4881 FDA Pathway Update", "dateRange": "H2 2026", "note": "Registrational study design feedback, now backed by real Phase 2 efficacy data", "est": "Biggest near-term value driver", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -50, "price": 1.66 },
+    { "label": "Base", "color": "yellow", "pct": 35, "price": 4.47 },
+    { "label": "Bull", "color": "green", "pct": 135, "price": 7.78 },
+    { "label": "Moon", "color": "purple", "pct": 265, "price": 12.08 }
+  ],
+  "analystTargets": [
+    { "firm": "Morgan Stanley", "target": 5.50, "rating": "Hold" },
+    { "firm": "Street Avg (MS/Needham/JPM)", "target": 7.83, "rating": "Mixed" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Fed held at 3.50-3.75% on Jul 29 with 3 hawkish dissents favoring a hike, but pre-revenue clinical-stage biotech valuation is driven far more by binary data/regulatory readouts than by Fed policy",
+    "inflationNote": "Core PCE still 3.3% YoY; minimal direct read-through to RXRX's cost structure beyond general R&D/compute cost inflation",
+    "sectorImpact": "Biotech risk appetite and small-cap financing conditions do correlate with the rate cycle — cheaper capital markets make it easier for pre-revenue names like RXRX to raise without excessive dilution",
+    "summary": "Fed risk is a secondary factor here; the primary driver of RXRX's price is idiosyncratic pipeline/partnership catalyst risk, not macro"
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 3.31, "note": "Current price, post-earnings-day", "timing": "Now" },
+      { "label": "Entry 2", "level": 2.85, "rangeMax": 3.00, "note": "Dip zone / recent support, ahead of the H2 2026 FDA pathway update", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 2.60, "note": "Near 52-week low / deep dip", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 4.47, "pct": 35.0, "note": "Base — steady progress, no major surprises either way" },
+    "tp2": { "price": 7.78, "pct": 135, "note": "Bull case — REC-4881 FDA pathway clarity is positive + REC-1245 data continues clean" },
+    "tp3": { "price": 12.08, "pct": 265, "note": "Moon case · platform-validation re-rating, 2027 horizon", "moon": true },
+    "stopLoss": {
+      "tight": 2.71, "tightPct": -18.1, "tightNote": "Below recent consolidation support",
+      "hard": 1.82, "hardPct": -45.0, "hardNote": "Breach of 52-week low zone — thesis-level warning",
+      "riskReward": "7.5 : 1", "rrNote": "Tight stop vs TP2 bull case", "rrWarning": "Asymmetric ✅"
+    },
+    "verdict": "Speculative moonshot sleeve only — size 2-5% of portfolio max. Risk profile improved since last check (REC-1245 no-DLT safety data), but the FDA pathway conversation for REC-4881 is still the real binary ahead.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "Micro/small-cap platform biotechs with a dated FDA-pathway or pivotal-data event typically see speculative positioning build 2-4 weeks pre-event, though magnitude is smaller than a full Phase 3 readout since pathway feedback is directional, not efficacy-confirming",
+    "preRunupTiming": "2-4 weeks before disclosure",
+    "preRunupPct": "+10% to +20%",
+    "postWin": {
+      "avgPct": 45,
+      "range": "+25% to +90%",
+      "note": "Scaled down from full Phase 3 readout comparables (ABVX +586%, SLS +210%) since an FDA pathway-clarity update is a smaller, less binary catalyst than confirmed efficacy data",
+      "exampleDate": "Jul 2025 (ABVX ABTECT Phase 3) / Aug 2025 (SLS Phase 3 melanoma)"
+    },
+    "postLose": {
+      "avgPct": -35,
+      "range": "-20% to -64%",
+      "note": "Negative FDA feedback or a failed readout in this space has produced severe drawdowns — REPL fell ~64% on its original Complete Response Letter (before its Jul 2026 resubmission later won a favorable AdCom vote), IOBT fell ~77% when FDA required an additional trial",
+      "exampleDate": "May 2026 (REPL original CRL) / Aug 2025 (IOBT additional-trial requirement)"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "The REC-1245 safety signal has resolved positively (no DLTs) and REC-4881 has real efficacy data now, but the FDA pathway conversation itself is still unresolved — 3% reflects real, improved upside optionality without overexposure to a single regulatory outcome"
+    },
+    "stopPreCatalyst": { "pct": -18, "price": 2.71, "note": "If support breaks before the H2 2026 FDA pathway update lands, thesis (platform momentum) is weakening" },
+    "stopPostCatalyst": { "pct": -45, "note": "If the REC-4881 FDA pathway update disappoints, exit on confirmation — do not average down into a broken thesis" }
+  },
+  "comparableCases": [
+    { "ticker": "ABVX", "event": "Phase 3 ABTECT topline data (obefazimod, ulcerative colitis)", "date": "Jul 2025", "movePct": 586, "days": 1, "outcome": "good", "note": "Small/mid-cap biotech re-rated overnight on a clean Phase 3 win — illustrates the scale of upside a validating data readout can unlock for a platform/pipeline biotech" },
+    { "ticker": "SLS", "event": "Pivotal Phase 3 melanoma vaccine data (IO102-IO103 + Keytruda combo)", "date": "Aug 2025", "movePct": 210, "days": 30, "outcome": "good", "note": "Partnership-adjacent (Merck's Keytruda) pivotal data win — comparable structure to RXRX's Sanofi/Roche-backed pipeline being validated by clinical or regulatory data" },
+    { "ticker": "REPL", "event": "Original Complete Response Letter for RP1 in melanoma", "date": "May 2026", "movePct": -64, "days": 1, "outcome": "bad", "note": "Shows the real downside if an FDA interaction goes badly — though REPL's own story later turned around: a Jul 30, 2026 AdCom voted 10-3 in favor on resubmission, and the stock is now +107% off that low, a reminder that a bad FDA outcome isn't always terminal for the thesis." }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/RXRX/",
+    "https://www.stocktitan.net/news/RXRX/",
+    "https://www.marketbeat.com/stocks/NASDAQ/RXRX/forecast/",
+    "https://ir.abivax.com/news-releases/news-release-details/abivax-announces-positive-phase-3-results-both-abtect-8-week/",
+    "https://stockstotrade.com/news/replimune-group-inc-repl-news-2026_05_05/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "โปรไฟล์ความเสี่ยงของ Recursion ดีขึ้นเงียบๆ ตั้งแต่เช็คครั้งก่อน — กลุ่ม safety cohort Phase 1 ของ REC-1245 (n=16) ไม่พบ dose-limiting toxicity แก้ความกังวลเรื่องสัญญาณความปลอดภัยที่เคยเป็นความเสี่ยงใหญ่ที่สุดของ pipeline นี้ และ REC-4881 มีข้อมูล Phase 2 ประสิทธิภาพจริง (ลด polyp 43% ที่สัปดาห์ 13, 53% ที่สัปดาห์ 25) ก่อนการเจรจา FDA pathway แบบ registrational ผลประกอบการ Q2 2026 ออกมาวันนี้ (5 ส.ค. ก่อนตลาดเปิด) ด้วยปฏิกิริยาไม่รุนแรง +4.09% — ไม่มีสัญญาณช็อก เงินสด $665.2M ณ 31 มี.ค. 2026 ยังพอ runway ถึงต้นปี 2028 catalyst หลักที่ยังรออยู่คือ FDA feedback เรื่อง registrational pathway ของ REC-4881 ใน FAP คาด H2 2026 ยังเป็นตัวขับเคลื่อนมูลค่าที่ใหญ่ที่สุด และมุมมองนักวิเคราะห์ยังแตกแยก (Morgan Stanley Hold $5.50 เทียบ Street average $7.83) จึงยังเป็น moonshot sleeve จริง ไม่ใช่โพซิชันที่ de-risk แล้ว",
+      "priceNote": "ขึ้น 4.09% วันนี้ (5 ส.ค.) วันเดียวกับที่ Recursion รายงานผลประกอบการ Q2 2026 ก่อนตลาดเปิด — ปฏิกิริยาที่ไม่รุนแรงและเป็นบวกบ่งชี้ว่าไม่มี surprise ใหญ่ทั้งสองทาง แม้ผลตัวเลขที่ชัดเจนจะยังไม่ได้ยืนยันอิสระจากแหล่งข้อมูลที่มีในเซสชันนี้",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "ผลประกอบการ Q2 2026 และอัปเดตธุรกิจ", "description": "รายงานวันนี้ (5 ส.ค. ก่อนตลาดเปิด) — ประเด็นหลักคือ FDA engagement ของ REC-4881, ความคืบหน้า REC-1245 และจังหวะ milestone จาก Sanofi/Roche ปฏิกิริยาไม่รุนแรง +4.09%" },
+        { "name": "อัปเดต FDA pathway ของ REC-4881 (FAP)", "description": "ฟีดแบ็กจาก FDA เรื่องแนวทางการศึกษาแบบ registrational สำหรับ REC-4881 ใน familial adenomatous polyposis — ตัวขับเคลื่อนมูลค่าที่ใหญ่ที่สุด ตอนนี้มีข้อมูลประสิทธิภาพ Phase 2 จริงรองรับแล้ว" },
+        { "name": "ข้อมูล dose-escalation ต่อเนื่องของ REC-1245", "description": "กลุ่ม safety cohort Phase 1 (n=16) ไม่พบ dose-limiting toxicity — ความกังวลเรื่อง safety ที่เคยมีคลี่คลายไปในทางบวกแล้วตอนนี้ ยังรอข้อมูล dose-escalation และประสิทธิภาพเบื้องต้นเพิ่มเติม" },
+        { "name": "การขยายพาร์ทเนอร์ชิป Citeline ด้าน AI-clinical-trials", "description": "เป้าหมายรายรับ $100M ภายในสิ้นปี 2026 บวกกับ milestone จาก Sanofi และ Roche/Genentech ที่ยังเดินหน้าต่อเนื่อง" }
+      ],
+      "risks": [
+        "เผาเงินสดต่อเนื่อง (guide <$390M FY26) — แม้มีเงินสด $665.2M ณ 31 มี.ค. 2026 รันเวย์ถึงต้นปี 2028 แต่ความเสี่ยง dilution จะกลับมาถ้า milestone ล่าช้าหรือต้องระดมทุนเพิ่ม",
+        "ปฏิกิริยาต่อผลประกอบการ Q2 2026 วันนี้ (+4.09%) ไม่รุนแรงและตัวเลขที่ชัดเจนยังไม่ได้ยืนยันอิสระจากแหล่งข้อมูลที่มีในเซสชันนี้ — ควรเช็คซ้ำเมื่อมีรายงานครบถ้วนขึ้น",
+        "Milestone จาก Sanofi/Roche/Genentech ไม่สม่ำเสมอและไม่รับประกัน หากมีการยุติหรือลดความสำคัญโปรแกรมใดจะเสียทั้งรายได้และการยืนยัน thesis",
+        "มุมมองนักวิเคราะห์ยังแตกแยกและค่อนข้างสงสัยมูลค่าแพลตฟอร์ม — consensus โน้มเอียงไปทาง Hold โดย Morgan Stanley ให้เป้าเพียง $5.50 เทียบกับจุดสูงสุดเดิมใกล้ $33",
+        "การเจรจา FDA pathway ของ REC-4881 ยังเป็นแค่การเจรจา — ข้อมูล Phase 2 ที่ดีช่วยเพิ่มโอกาสแต่ไม่ได้การันตีผลลัพธ์ registrational pathway ที่เป็นบวก"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% แต่มี hawkish dissent 3 เสียง — แต่มูลค่าของ biotech ระยะ clinical-stage ที่ยังไม่มีรายได้ขับเคลื่อนด้วยผลข้อมูล/การอนุมัติมากกว่านโยบาย Fed",
+        "inflationNote": "Core PCE ยังอยู่ที่ 3.3% YoY มีผลทางตรงต่อโครงสร้างต้นทุนของ RXRX น้อย นอกจากต้นทุน R&D/compute ที่อาจเพิ่มขึ้นตามภาวะทั่วไป",
+        "sectorImpact": "risk appetite ของ biotech และเงื่อนไขการระดมทุนของหุ้นขนาดเล็กสัมพันธ์กับวัฏจักรดอกเบี้ย — ทุนที่ถูกลงช่วยให้ RXRX ระดมทุนได้โดย dilution น้อยลง",
+        "summary": "ความเสี่ยงจาก Fed เป็นปัจจัยรอง ตัวขับเคลื่อนราคาหลักของ RXRX คือความเสี่ยงเฉพาะตัวจาก pipeline/พาร์ทเนอร์ชิป ไม่ใช่ macro"
+      },
+      "entryStrategy": {
+        "verdict": "Speculative moonshot sleeve เท่านั้น — จำกัด 2-5% ของ portfolio โปรไฟล์ความเสี่ยงดีขึ้นตั้งแต่เช็คครั้งก่อน (ข้อมูล safety ของ REC-1245 ไม่พบ DLT) แต่การเจรจา FDA pathway ของ REC-4881 ยังเป็น binary จริงที่รออยู่",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน หลังวันประกาศผลประกอบการ", "timing": "ตอนนี้" },
+          { "note": "โซนย่อ / แนวรับล่าสุด ก่อนอัปเดต FDA pathway H2 2026", "timing": "ถ้าย่อ" },
+          { "note": "ใกล้จุดต่ำสุดรอบ 52 สัปดาห์ / ร่วงหนัก", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Base — คืบหน้าต่อเนื่อง ไม่มี surprise ใหญ่ทั้งสองทาง" },
+        "tp2": { "note": "กรณี Bull — FDA pathway ของ REC-4881 ชัดเจนเป็นบวก + ข้อมูล REC-1245 ยังสะอาดต่อเนื่อง" },
+        "tp3": { "note": "กรณี Moon — แพลตฟอร์มได้รับการยืนยันมูลค่า มองไปถึงปี 2027" },
+        "stopLoss": {
+          "tightNote": "หลุดแนวรับ consolidation ล่าสุด",
+          "hardNote": "หลุดโซนจุดต่ำสุดรอบ 52 สัปดาห์ — สัญญาณเตือนระดับ thesis",
+          "rrNote": "stop แคบเทียบกับเป้า TP2 กรณี Bull",
+          "rrWarning": "ความเสี่ยงต่อผลตอบแทนไม่สมมาตรในทางบวก ✅"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q2 2026", "note": "รายงานวันนี้ — จับตาความเห็น FDA pathway ของ REC-4881 และอัปเดต safety ของ REC-1245" },
+        { "event": "อัปเดต FDA pathway ของ REC-4881", "note": "คาด H2 2026 — ตัวขับเคลื่อนมูลค่าที่ใหญ่ที่สุด" }
+      ]
+    }
+  }
+}

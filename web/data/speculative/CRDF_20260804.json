@@ -1,0 +1,182 @@
+{
+  "ticker": "CRDF",
+  "companyName": "Cardiff Oncology, Inc.",
+  "companyDescription": "Clinical-stage oncology · onvansertib (PLK1 inhibitor) has strong Phase 2 data (72.2% vs 42.1% ORR), but the Nerviano license fight is still unresolved 10+ weeks in, and the newly-detailed Phase 3 ($128–192M) now needs more capital than Cardiff's entire market cap",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-04T21:30:00.000Z",
+  "price": 0.93,
+  "priceChange": 9.19,
+  "priceNote": "Closed Aug 3, 2026 at $0.93 (+9.19% on the day), still below the Jul 15 $1.05 raise price. The 52-week range has widened further since the Jul 22 report — a new low of $0.7566 was set (vs $0.82 previously), against a $3.31 high. No Q2 2026 earnings/cash update has been published yet as of this writing; the last confirmed cash figure is the Q1 10-Q's $46.1M (plus the ~$9M net from the Jul raise).",
+  "marketCap": "$63.9M",
+  "sector": "Healthcare / Biotechnology (Oncology)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Moonshot",
+  "score": 38,
+  "summary": "Nothing has resolved since the Jul 22 report — if anything the picture got harder. The Nerviano license dispute (Cardiff sued May 19, 2026; Nerviano issued a termination notice May 27, 2026) is still unresolved 10+ weeks later with no ruling or settlement reported. Worse, a follow-up research note detailing the planned CRDF-005 Phase 3 trial revealed it needs $128–192M to fund — more than double Cardiff's entire ~$64M market cap — and pushed initiation guidance out to 2027, a full year later than the 'H2 2026' language cited in the last report; analysts have already cut probability-of-success from 60% to 50% on the licensing overhang. ⚠️ SURVIVAL: cash is guided only into Q1 2027 (~8 months away) even after the dilutive Jul 15 $10M raise, and that Phase 3 funding gap all but guarantees another, likely much larger, dilutive raise — this is a real near-term survival question layered on top of the litigation risk, not boilerplate. It stays on the speculative radar only because the underlying Phase 2 efficacy data (72.2% vs 42.1% ORR) is genuinely strong and the analyst target spread ($2–$12, avg $5.21–$7.50) prices in real optionality if the litigation breaks Cardiff's way — but the Base case here now assumes continued overhang, not resolution, which is why the upside numbers are sharply lower than the last report's. Extreme, minimal position sizing only.",
+  "catalysts": [
+    {
+      "icon": "⚖️",
+      "name": "Nerviano License Dispute — still unresolved",
+      "description": "Cardiff sued Nerviano Medical Sciences on May 19, 2026 seeking a ruling it did not breach the onvansertib license; Nerviano issued a termination notice on May 27, 2026 which Cardiff disputes as ineffective. As of Aug 2026, 10+ weeks later, no court ruling or settlement has been reported — this remains the single biggest swing factor for the stock.",
+      "urgencyLabel": "UNRESOLVED (10+ wks, no ruling)",
+      "dateBadge": "Ongoing",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "🧬",
+      "name": "Phase 3 (CRDF-005) Initiation — pushed to 2027",
+      "description": "A ~640-patient Phase 3 trial (dual ORR/PFS endpoints) is planned following the positive Phase 2 readout, but a follow-up research note now guides initiation to 2027 (not H2 2026) and pegs the funding need at $128–192M — capital Cardiff does not currently have and has not announced a plan to secure.",
+      "urgencyLabel": "2027 (pushed back a year)",
+      "dateBadge": "2027",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "⚠️ SURVIVAL: Cash is guided to fund operations only into Q1 2027 (~8 months of runway from Aug 2026) even after the Jul 2026 $10M raise, and the newly-detailed CRDF-005 Phase 3 trial will require $128–192M — more than double Cardiff's entire ~$64M market cap. Another dilutive raise is all but certain, and it will likely need to be far larger than July's.",
+      "⚠️ SURVIVAL: The Jul 15, 2026 registered direct offering priced at $1.05 triggered a -32.1% single-day decline, and the stock (now $0.93) still trades below that raise price — recent institutional buyers are underwater, a real signal of weak capital-markets access ahead of the next, larger raise this company will need.",
+    "The Nerviano license dispute remains unresolved 10+ weeks after Cardiff sued (May 19, 2026) and Nerviano issued its termination notice (May 27, 2026) — no court ruling or settlement has been reported as of Aug 2026; if Nerviano ultimately prevails, Cardiff loses its only clinical asset outright, regardless of trial data quality.",
+    "Phase 3 initiation guidance has slipped from 'H2 2026' (as of the Jul 22 report) to 2027 — a full year+ push-out — and analysts have already cut probability-of-success assumptions from 60% to 50%, specifically citing the licensing overhang.",
+    "Nano-cap ($63.9M) with extreme volatility (52-week range $0.7566–$3.31, a 4.4x spread) and a fresh 52-week low set since the last report — thin liquidity and wide spreads are a real execution risk on top of the fundamental risks above."
+  ],
+  "estimateDates": [
+    { "event": "Nerviano License Dispute Ruling/Settlement", "dateRange": "Ongoing — no ruling as of Aug 2026", "note": "10+ weeks since Cardiff's suit and Nerviano's termination notice with no resolution reported; binary and existential for the company", "est": "Timeline unknown", "highlight": "yellow" },
+    { "event": "Phase 3 (CRDF-005) Initiation", "dateRange": "2027", "note": "~640-patient trial, dual ORR/PFS endpoints; needs $128–192M not yet secured — pushed back a full year from the H2 2026 guidance cited in the Jul 22 report", "est": "Financing plan not yet announced", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -75, "price": 0.23 },
+    { "label": "Base", "color": "yellow", "pct": 45, "price": 1.35 },
+    { "label": "Bull", "color": "green", "pct": 150, "price": 2.34 },
+    { "label": "Moon", "color": "purple", "pct": 450, "price": 5.12 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (8 analysts, stockanalysis.com)", "target": 5.21, "rating": "Buy" },
+    { "firm": "Follow-up research note (post Phase 3 detail)", "target": 7.50, "rating": "Buy", "note": "Reflects updated CRDF-005 detail; probability-of-success assumption cut from 60% to 50% citing the licensing overhang" },
+    { "firm": "Craig-Hallum", "target": 2.00, "rating": "Hold", "note": "Downgraded — bearish counterpoint reflecting the license dispute and financing risk" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held at 3.50-3.75% on Jul 29, 2026 with 3 hawkish dissents favoring a hike — rate-hike tail risk into year-end hasn't gone away",
+    "inflationNote": "Core PCE still 3.3% YoY, well above the 2% target",
+    "sectorImpact": "CRDF's litigation and clinical catalysts are idiosyncratic and macro-independent, but the financing overlay compounds directly in a high-rate environment — with a $128-192M Phase 3 funding need against a $64M market cap, every basis point of rate matters to how dilutive the next raise (likely equity, given the going-concern flag) will be.",
+    "summary": "Macro risk is secondary here — CRDF's own litigation and financing situation dominates the stock's direction far more than the Fed does, but a hawkish rate backdrop makes the unavoidable next capital raise even more dilutive than it would otherwise be."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 0.93, "note": "Current price — already reflects the litigation/dilution overhang", "timing": "Scale in (tiny)" },
+      { "label": "Entry 2", "level": 0.70, "rangeMax": 0.80, "note": "Below the fresh 52-week low — best R/R if litigation or financing headlines drive further weakness", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 0.45, "note": "Deep capitulation — only on adverse litigation ruling or a financing crisis", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 1.35, "pct": 45.0, "note": "Base — litigation drags on unresolved, Phase 2 data narrative gets some credit but the 2027 Phase 3 + $128-192M funding gap caps upside" },
+    "tp2": { "price": 2.34, "pct": 150.0, "note": "Bull — license dispute resolves in Cardiff's favor and a non-dilutive or partnership-based Phase 3 funding path emerges" },
+    "tp3": { "price": 5.12, "pct": 450.0, "note": "Moon — clean license win + Phase 3 funded and initiated + full analyst consensus reached", "moon": true },
+    "stopLoss": {
+      "tight": 0.70, "tightPct": -24.7, "tightNote": "Below the fresh 52-week low — thesis-neutral but momentum breaking down on litigation/financing risk",
+      "hard": 0.35, "hardPct": -62.4, "hardNote": "Risk-of-zero territory — adverse license ruling or a bankruptcy-adjacent financing event",
+      "riskReward": "6.1 : 1", "rrNote": "From current price ($0.93) tight stop vs TP2", "rrWarning": "Asymmetric ✅ on paper, but the Nerviano dispute plus the newly-quantified $128-192M funding gap are both existential, not routine biotech risk — 1-2% max position"
+    },
+    "verdict": "ค่าขนม — tiny position only, smaller than the Jul 22 call. Clinical data is still genuinely strong, but the license fight remains unresolved 10+ weeks in and the Phase 3 funding gap ($128-192M vs a $64M market cap) is now an explicit, quantified overhang that wasn't priced in before. Position for total loss.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "regulatory_approval",
+    "preRunup": "Clinical-stage nano-caps with pending litigation or license risk typically trade heavy and range-bound rather than running up ahead of resolution — CRDF's own muted +2.03% reaction to genuinely strong Phase 2 data (Jun 2, 2026) shows the license overhang dominating sentiment over the science, and that pattern has persisted through Aug 2026 with no resolution.",
+    "preRunupTiming": "minimal pre-event runup; litigation and financing news move the stock discretely rather than via anticipatory drift",
+    "preRunupPct": "0% to +10% pre-event drift; frequently flat-to-negative given the license overhang and now-quantified financing gap",
+    "postWin": {
+      "avgPct": 2,
+      "range": "0% to +5% observed on CRDF's own recent win",
+      "note": "CRDF's own Jun 2, 2026 ASCO data (72.2% vs 42.1% confirmed ORR, primary endpoint met) only moved the stock +2.03% on the day — a muted reaction for data this strong, directly illustrating how much the license overhang is suppressing any re-rate even on good news.",
+      "exampleDate": "Jun 2, 2026"
+    },
+    "postLose": {
+      "avgPct": -32,
+      "range": "-30% to -35%",
+      "note": "CRDF's own Jul 15-16, 2026 dilutive $10M registered direct offering at $1.05 triggered a -32.11% single-day decline — a direct, sourced example of how the market punishes financing-driven negative catalysts on this stock specifically, and the template for how a bad litigation ruling or forced next raise would likely trade.",
+      "exampleDate": "Jul 15-16, 2026"
+    },
+    "spotSizing": {
+      "pct": 1,
+      "reason": "Going-concern nano-cap with an existential, still-unresolved license dispute AND a newly-quantified $128-192M Phase 3 funding gap against a $64M market cap — 1% caps downside to a tolerable level given the real possibility of the stock going to near-zero or being diluted into irrelevance."
+    },
+    "stopPreCatalyst": { "pct": -25, "price": 0.70, "note": "Below the fresh 52-week low — thesis-neutral but a real warning sign of litigation- or financing-driven capitulation" },
+    "stopPostCatalyst": { "pct": -50, "note": "An adverse ruling in the Nerviano dispute, or a forced bankruptcy-adjacent financing, ends the thesis entirely — exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "CRDF",
+      "event": "Jul 15-16, 2026 dilutive $10M registered direct offering at $1.05, priced below prior levels",
+      "date": "Jul 2026",
+      "movePct": -32,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Direct, sourced same-company precedent for how badly the market punishes financing-driven news here — the stock is still trading below this raise price three weeks later, and the far larger raise implied by the $128-192M Phase 3 funding gap would likely be worse."
+    },
+    {
+      "ticker": "CRDF",
+      "event": "Jun 2, 2026 ASCO presentation of positive Phase 2 data (72.2% vs 42.1% confirmed ORR, primary endpoint met)",
+      "date": "Jun 2026",
+      "movePct": 2,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "Same-company precedent showing that even genuinely strong clinical data barely moved the stock — the license overhang has suppressed the normal biotech re-rate pattern, and this dynamic has persisted unchanged through Aug 2026."
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/crdf/",
+    "https://stockanalysis.com/stocks/crdf/forecast/",
+    "https://www.investing.com/news/analyst-ratings/hc-wainwright-cuts-cardiff-oncology-stock-rating-on-license-termination-93CH-4718897",
+    "https://www.investing.com/news/company-news/cardiff-oncology-prices-10m-registered-direct-offering-93CH-4793172",
+    "https://www.stocktitan.net/news/CRDF/",
+    "https://www.stocktitan.net/news/CRDF/cardiff-oncology-reports-first-quarter-2026-results-and-provides-9bl1kkgz5tci.html",
+    "https://finance.yahoo.com/healthcare/articles/crdf-phase-ii-survival-advantage-114100522.html",
+    "https://investors.cardiffoncology.com/static-files/188be984-8b21-4eb2-a0d7-7750b2d4cb4a",
+    "https://www.dailypolitical.com/2026/07/30/cardiff-oncology-inc-nasdaqcrdf-receives-consensus-rating-of-hold-from-brokerages.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "ตั้งแต่รายงานฉบับ 22 ก.ค. ยังไม่มีอะไรคลี่คลาย — สถานการณ์กลับหนักขึ้นด้วยซ้ำ ข้อพิพาท license กับ Nerviano (Cardiff ฟ้อง 19 พ.ค. 2026, Nerviano แจ้งยกเลิกสัญญา 27 พ.ค. 2026) ยังไม่จบหลังผ่านมากว่า 10 สัปดาห์ ไม่มีคำตัดสินหรือข้อตกลงใด ๆ ที่รายงานเข้ามา ที่แย่กว่านั้นคือรายงานวิจัยล่าสุดที่ให้รายละเอียด Phase 3 (CRDF-005) เผยว่าต้องใช้เงินทุน $128-192 ล้าน — มากกว่า market cap ทั้งบริษัท ($64 ล้าน) กว่าเท่าตัว และเลื่อนกำหนดเริ่ม trial ไปเป็นปี 2027 ช้ากว่าที่เคยบอกว่า 'H2 2026' เต็มปี นักวิเคราะห์ปรับลด probability-of-success จาก 60% เหลือ 50% เพราะปัญหา license นี้โดยเฉพาะ ⚠️ SURVIVAL: เงินสดยังพอแค่ถึง Q1 2027 (~8 เดือนจากนี้) แม้หลังระดมทุน dilutive $10M เมื่อ 15 ก.ค. และช่องว่างเงินทุน Phase 3 นี้แทบจะการันตีว่าต้องระดมทุนรอบใหม่ที่ dilutive กว่าเดิมมาก — นี่คือคำถามเรื่อง survival จริงในระยะใกล้ ซ้อนทับกับความเสี่ยงคดีความ ไม่ใช่ boilerplate ที่ยังอยู่ใน radar เพราะข้อมูล Phase 2 (72.2% vs 42.1% ORR) ยังดีจริง และช่วงเป้าราคานักวิเคราะห์ ($2-$12, เฉลี่ย $5.21-$7.50) สะท้อน optionality จริงถ้าคดีความจบดี แต่ Base case ตอนนี้สมมติว่าปัญหายังคาราคาซัง ไม่ใช่คลี่คลาย จึงทำให้ตัวเลข upside ต่ำกว่ารายงานก่อนมาก ควร size แบบ extreme และเล็กที่สุดเท่านั้น",
+      "priceNote": "ปิด 3 ส.ค. 2026 ที่ $0.93 (+9.19% วันนั้น) ยังต่ำกว่าราคาระดมทุน $1.05 เมื่อ 15 ก.ค. 52-week range กว้างขึ้นอีกตั้งแต่รายงานก่อน — ทำ low ใหม่ที่ $0.7566 (จากเดิม $0.82) เทียบกับ high $3.31 ยังไม่มีรายงานผล Q2 2026 หรืออัพเดตเงินสดออกมา ตัวเลขล่าสุดที่ยืนยันได้คือ $46.1M จาก 10-Q ไตรมาส 1 บวกเงินสุทธิ ~$9M จากการระดมทุน ก.ค.",
+      "scoreLabel": "Moonshot",
+      "catalysts": [
+        { "name": "ข้อพิพาท License Nerviano — ยังไม่จบ", "description": "Cardiff ฟ้อง Nerviano 19 พ.ค. 2026 ขอคำตัดสินว่าไม่ผิดสัญญา Nerviano แจ้งยกเลิกสัญญา 27 พ.ค. 2026 ซึ่ง Cardiff โต้แย้งว่าไม่มีผล ผ่านมากว่า 10 สัปดาห์ยังไม่มีคำตัดสินหรือข้อตกลง — ยังเป็นตัวแปรใหญ่สุดของหุ้นนี้" },
+        { "name": "เริ่ม Phase 3 (CRDF-005) — เลื่อนเป็นปี 2027", "description": "trial ผู้ป่วย ~640 คน วางแผนหลังข้อมูล Phase 2 บวก แต่รายงานวิจัยล่าสุดเลื่อนกำหนดเป็นปี 2027 (จาก H2 2026) และระบุต้องใช้ทุน $128-192 ล้านที่ Cardiff ยังไม่มีและยังไม่ประกาศแผนหาทุน" }
+      ],
+      "risks": [
+        "⚠️ SURVIVAL: เงินสดพอถึง Q1 2027 เท่านั้น (~8 เดือนจากนี้) แม้หลังระดมทุน $10M ก.ค. 2026 และ Phase 3 CRDF-005 ที่เพิ่งรู้รายละเอียดต้องใช้ทุน $128-192 ล้าน มากกว่า market cap ทั้งบริษัท ($64M) กว่าเท่าตัว การระดมทุนรอบใหม่ที่ dilutive กว่าเดิมมากแทบจะหลีกเลี่ยงไม่ได้",
+        "⚠️ SURVIVAL: การระดมทุน $10M วันที่ 15 ก.ค. 2026 ราคา $1.05 ทำให้หุ้นร่วง -32.1% วันเดียว และตอนนี้ยังเทรดต่ำกว่าราคาระดมทุน สะท้อนว่าตลาดทุนเข้าถึงยากสำหรับรอบระดมทุนถัดไปที่จะใหญ่กว่านี้",
+        "ข้อพิพาท license กับ Nerviano ยังไม่จบหลังผ่านมากว่า 10 สัปดาห์นับจาก Cardiff ฟ้อง (19 พ.ค.) และ Nerviano แจ้งยกเลิก (27 พ.ค.) — ยังไม่มีคำตัดสินหรือข้อตกลง ถ้า Nerviano ชนะ Cardiff เสียทรัพย์สิน clinical เดียวที่มีทันที ไม่ว่าข้อมูล trial จะดีแค่ไหน",
+        "กำหนดเริ่ม Phase 3 เลื่อนจาก 'H2 2026' (ตามรายงานก่อน) เป็นปี 2027 — เลื่อนเต็มปี — นักวิเคราะห์ปรับลด probability-of-success จาก 60% เหลือ 50% เพราะปัญหา license โดยเฉพาะ",
+        "Nano-cap ($63.9M) ผันผวนสูงมาก (52-week range $0.7566-$3.31 ห่างกัน 4.4 เท่า) ทำ low ใหม่ตั้งแต่รายงานก่อน สภาพคล่องบาง เป็นความเสี่ยงด้าน execution ซ้อนทับความเสี่ยงพื้นฐานข้างต้น"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.50-3.75% วันที่ 29 ก.ค. 2026 มี 3 เสียงค้านแบบ hawkish ที่อยากขึ้นดอกเบี้ย — ความเสี่ยงขึ้นดอกเบี้ยปลายปียังไม่หมดไป",
+        "inflationNote": "Core PCE ยังอยู่ที่ 3.3% YoY สูงกว่าเป้า 2% มาก",
+        "sectorImpact": "Catalyst หลักของ CRDF (คดีความ ข้อมูล clinical) เป็นเรื่องเฉพาะตัวไม่ผูกกับ macro แต่ภาระการเงินซ้อนทับหนักขึ้นในสภาพดอกเบี้ยสูง — ด้วยช่องว่างทุน Phase 3 ที่ $128-192M เทียบ market cap $64M ทุก basis point ของดอกเบี้ยมีผลต่อความ dilutive ของการระดมทุนรอบถัดไป",
+        "summary": "ความเสี่ยง Fed เป็นรองในเคสนี้ — สถานการณ์คดีความและการเงินของ CRDF เองเป็นตัวกำหนดทิศทางหุ้นมากกว่า Fed มาก แต่สภาพดอกเบี้ยสูงทำให้การระดมทุนรอบถัดไปที่หลีกเลี่ยงไม่ได้ dilutive กว่าที่ควรจะเป็น"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม — size เล็กมากกว่าคำแนะนำเดิมวันที่ 22 ก.ค. ข้อมูล clinical ยังดีจริง แต่คดีความยังไม่จบหลังผ่านมากว่า 10 สัปดาห์ และช่องว่างทุน Phase 3 ($128-192M เทียบ market cap $64M) เป็นภาระที่ชัดเจนขึ้นและยังไม่เคยถูกสะท้อนในรายงานก่อน เตรียมใจขาดทุนเต็มจำนวน",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — สะท้อนภาระคดีความ/dilution แล้ว", "timing": "Scale in (เล็กมาก)" },
+          { "note": "ต่ำกว่า 52-week low ใหม่ — R/R ดีที่สุดถ้าข่าวคดีความหรือการเงินกดดันเพิ่ม", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงหนัก — เฉพาะผลคดีความแย่หรือวิกฤตการเงิน", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — คดีความยังคาราคาซังไม่จบ narrative ข้อมูล Phase 2 ได้เครดิตบ้าง แต่ Phase 3 ปี 2027 + ช่องว่างทุน $128-192M กดเพดาน upside" },
+        "tp2": { "note": "Bull — คดีความจบแบบ Cardiff ชนะ และเจอทางออกทุน Phase 3 แบบไม่ dilute มากหรือผ่าน partnership" },
+        "tp3": { "note": "Moon — ชนะคดีชัดเจน + Phase 3 มีทุนพร้อมเริ่ม + แตะเป้า consensus เต็ม", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุด 52-week low ใหม่ — thesis ยังไม่พัง แต่ momentum เสียจากความเสี่ยงคดีความ/การเงิน",
+          "hardNote": "เข้าเขต risk-of-zero — ผลคดีแพ้หรือเหตุการณ์การเงินใกล้ bankruptcy",
+          "rrNote": "จากราคาปัจจุบัน ($0.93) stop แคบ vs TP2",
+          "rrWarning": "Asymmetric ✅ ในทางทฤษฎี แต่ข้อพิพาท Nerviano บวกช่องว่างทุน $128-192M ที่เพิ่งชัดเจน เป็นความเสี่ยง existential ไม่ใช่ความเสี่ยง biotech ปกติ — size สูงสุด 1-2%"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลข้อพิพาท License Nerviano", "note": "ผ่านมากว่า 10 สัปดาห์นับจาก Cardiff ฟ้องและ Nerviano แจ้งยกเลิก ยังไม่มีคำตัดสิน ผลเป็น binary และ existential ต่อบริษัท" },
+        { "event": "เริ่ม Phase 3 (CRDF-005)", "note": "trial ผู้ป่วย ~640 คน ต้องใช้ทุน $128-192M ที่ยังไม่มี — เลื่อนเต็มปีจากที่เคยบอก H2 2026" }
+      ]
+    }
+  }
+}

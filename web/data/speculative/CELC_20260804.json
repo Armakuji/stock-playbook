@@ -1,0 +1,221 @@
+{
+  "ticker": "CELC",
+  "companyName": "Celcuity Inc.",
+  "companyDescription": "Oncology biotech · REVTORPYK (gedatolisib) — first FDA-approved pan-PI3K/mTOR inhibitor for HR+/HER2-/PIK3CA wild-type advanced breast cancer (approved Jul 14, 2026) · Commercial launch guided to late Q3 2026 · PIK3CA-mutant label-expansion sNDA targeted Q3 2026",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-04T21:30:00.000Z",
+  "price": 87.72,
+  "priceChange": 1.55,
+  "priceNote": "Approved Jul 14, 2026 — 3 days ahead of the Jul 17 PDUFA date — but the stock round-tripped: a +7% approval-day pop was erased by a -15% to -17.6% single-session slide when management guided commercial launch to \"late Q3 2026\" instead of sooner. Now roughly flat vs the pre-approval $90 screen price and down ~42% from the May 2026 all-time high of $151.02",
+  "marketCap": "$4.28B",
+  "sector": "Healthcare / Biotechnology",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Moonshot",
+  "score": 58,
+  "summary": "Celcuity's gedatolisib (branded REVTORPYK) won FDA approval on July 14, 2026 for HR+/HER2-/PIK3CA wild-type advanced breast cancer, becoming the company's first commercial product — the binary regulatory catalyst that anchored the original thesis has resolved cleanly. But the stock round-tripped violently: a same-day +7% pop was erased by a -15% to -17.6% slide when management guided commercial launch to \"late Q3 2026\" (delayed vs prior expectations, citing drug-supply readiness), which also triggered active securities-fraud investigations by multiple law firms (no lawsuit filed yet). With Q2 earnings due Aug 6, 2026 and a PIK3CA-mutant sNDA targeted for Q3 2026 to expand the label, the thesis has shifted from \"will it get approved\" to \"can it execute a clean commercial launch without further stumbles.\" Still a ค่าขนม binary — size 2-3% max — but the swing factor is now execution and litigation overhang, not regulatory risk.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "First quarterly print since the Jul 14 approval. Investors want commentary on Q3 launch readiness, drug supply timeline, payer/formulary access progress, and cash runway following the $500M convertible note raise.",
+      "urgencyLabel": "2 DAYS",
+      "dateBadge": "Aug 6, 2026",
+      "catalystDate": "2026-08-06",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "🚀",
+      "name": "Commercial Launch — REVTORPYK (WT Indication)",
+      "description": "Management now guides U.S. commercial launch to late Q3 2026 (delayed vs earlier expectations) to ensure adequate product supply. This guidance shift already cost the stock ~15-18% in one session on Jul 15 — a clean, on-time launch is now the key re-rate trigger.",
+      "urgencyLabel": "LATE Q3 2026",
+      "dateBadge": "Late Q3 2026",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🧬",
+      "name": "PIK3CA-Mutant Cohort — sNDA Filing",
+      "description": "Celcuity plans to submit a supplemental NDA in Q3 2026 for the PIK3CA-mutant population, based on VIKTORIA-1 mutant-cohort data (PFS HR 0.50 vs alpelisib + fulvestrant). This is the larger addressable population beyond the WT-only label just approved; regulatory decision expected ~2027.",
+      "urgencyLabel": "Q3 2026",
+      "dateBadge": "Q3 2026",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "🔬",
+      "name": "VIKTORIA-2 — First-Line Expansion Trial",
+      "description": "Phase 3 trial (n~1,180) evaluating gedatolisib + CDK4/6 inhibitor + fulvestrant as first-line treatment for endocrine-resistant HR+/HER2- ABC. Long-dated pipeline optionality beyond the two indications already in motion.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "2027+",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Launch-execution risk has replaced regulatory risk — management already missed once on timeline (guided \"late Q3 2026\" instead of sooner), triggering a -15% to -17.6% single-day drop on Jul 15, 2026 despite a clean FDA approval",
+    "Active securities-fraud investigations from multiple law firms (Kirby McInerney, Pomerantz, Kessler Topaz Meltzer & Check, Schall Brown & Schwartz) into whether Celcuity misled investors about launch readiness ahead of the Jul 14 approval — no lawsuit filed yet, but a real overhang into Q3",
+    "Heavy new debt load — $500M (upsized, ~$557M net proceeds) 0.25% convertible senior notes due 2032 layered onto the balance sheet mid-2026 to fund commercialization; dilution risk if notes convert, refinancing risk if launch underperforms",
+    "PIK3CA-mutant label expansion — the larger addressable population — is not yet filed; sNDA targeted Q3 2026 with a ~2027 regulatory decision, and today's price already assumes this succeeds",
+    "Competitive landscape unchanged — Novartis' alpelisib (Piqray) and AstraZeneca's capivasertib (Truqap) remain entrenched in the same PIK3CA-pathway prescriber base REVTORPYK must win share from",
+    "Analyst commentary flags tolerability/label concerns that could slow physician adoption speed even once launch begins"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Aug 6, 2026", "note": "First commentary on Q3 launch readiness, drug supply, payer access, and cash position post-approval", "est": "Launch readiness update", "highlight": "blue" },
+    { "event": "Commercial Launch — REVTORPYK", "dateRange": "Late Q3 2026", "note": "Delayed from earlier expectations — company cites need for adequate drug supply", "est": "Contingent on supply ramp executing on time", "highlight": "yellow" },
+    { "event": "PIK3CA-Mutant sNDA Submission", "dateRange": "Q3 2026", "note": "Based on VIKTORIA-1 mutant cohort (PFS HR 0.50 vs alpelisib) — expands label beyond WT-only approval", "est": "Regulatory decision ~2027", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -30, "price": 61.4 },
+    { "label": "Base", "color": "yellow", "pct": 25, "price": 109.65 },
+    { "label": "Bull", "color": "green", "pct": 65, "price": 144.74 },
+    { "label": "Moon", "color": "purple", "pct": 115, "price": 188.6 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (12 analysts)", "target": 163.45, "rating": "Strong Buy", "note": "+86% from $87.72 screen price; 8 of 9 recent-rating analysts Buy, 1 Hold" },
+    { "firm": "Craig-Hallum", "target": 178, "rating": "Buy" },
+    { "firm": "H.C. Wainwright", "target": 155, "rating": "Buy" },
+    { "firm": "Wells Fargo", "target": 166, "rating": "Overweight" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Fed held at 3.50-3.75% on Jul 29, 2026 with 3 hawkish dissents favoring a hike — rate-hike tail risk into year-end hasn't gone away, but CELC's own approval-and-launch news flow dominates the stock's direction far more than Fed policy.",
+    "inflationNote": "Core PCE still 3.3% YoY, well above the 2% target. Oncology drug pricing is largely insulated from near-term CPI prints; payer/formulary negotiation and launch execution matter more.",
+    "sectorImpact": "LOW direct Fed impact on CELC's launch-execution catalyst. The hawkish-Fed backdrop compresses high-multiple biotech valuations broadly, but a clean Q3 launch plus a strong Aug 6 print would likely override sector headwinds; a second guidance disappointment would not get the benefit of the doubt.",
+    "summary": "Fed risk is LOW for CELC specifically — the regulatory binary has already resolved and the next catalysts (Aug 6 earnings, Q3 launch) are company-specific execution events. Sector-wide biotech multiple compression is a secondary headwind, not the driver of CELC's price action."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 87.72, "note": "Current price — post-approval, pre-launch, litigation overhang not yet resolved", "timing": "Now (2-3% max)" },
+      { "label": "Entry 2", "level": 75, "rangeMax": 80, "note": "Pre-earnings dip zone into the Aug 6 Q2 print — preferred if broader market wobbles", "timing": "If dips into earnings", "preferred": true },
+      { "label": "Entry 3", "level": 61.4, "note": "Post-selloff / litigation-headline crash zone — only for high-conviction re-entry if launch guidance still intact", "timing": "If sector selloff or lawsuit-filing headline" }
+    ],
+    "tp1": { "price": 109.65, "pct": 25.0, "note": "Base — launch executes on the late-Q3 timeline, market regains confidence" },
+    "tp2": { "price": 144.74, "pct": 65.0, "note": "Bull — commercial ramp proves out, stock approaches analyst consensus (~$163)" },
+    "tp3": { "price": 188.6, "pct": 115.0, "note": "Moon — mutant-cohort sNDA path derisks + beat-and-raise launch, stock revisits/exceeds the $151 52-wk high", "moon": true },
+    "stopLoss": {
+      "tight": 68, "tightPct": -22.5, "tightNote": "Breach of post-selloff support without new bad news — thesis souring on launch-execution doubt",
+      "hard": 61.4, "hardPct": -30.0, "hardNote": "Litigation materializes into an actually-filed suit, or Q3 launch slips again — thesis-changing, not just sentiment",
+      "riskReward": "7.1 : 1", "rrNote": "Preferred entry ($75-80) vs TP2 ($144.74), risk sized to the tight stop ($68), not the litigation/relaunch-delay tail risk", "rrWarning": "Regulatory binary has resolved — this is now execution + litigation-overhang risk, size accordingly ✅"
+    },
+    "verdict": "ค่าขนม SPECULATIVE — the Jul 17 PDUFA binary already resolved (approved Jul 14), but the stock round-tripped on delayed Q3 launch guidance + a fraud-investigation overhang. Aug 6 Q2 earnings is the next tell. Base ~$110 (+25%) on steady launch execution, Bull ~$145 (+65%) toward analyst consensus, Moon ~$189 (+115%) on mutant-label progress + a clean beat. Size 2-3% max — the risk driver has moved from regulatory to execution/litigation, not away.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "product_launch",
+    "preRunup": "Post-approval, CELC has already booked both directions in real time — a same-day +7% pop on the Jul 14 approval headline, erased by a -15% to -17.6% slide the next day when management guided commercial launch to \"late Q3 2026\" instead of sooner. Into the Aug 6 earnings print and the Q3 launch window, expect continued headline sensitivity rather than a steady pre-event drift.",
+    "preRunupTiming": "Ongoing — Aug 6 earnings is the next scheduled data point; the launch itself is the Q3 event",
+    "preRunupPct": "+7% (approval day) / -15% to -17.6% (guidance day) — already realized, not still to come",
+    "postWin": {
+      "avgPct": 34,
+      "range": "+15% to +46%",
+      "note": "Reference case: Travere's Filspari FSGS approval (Apr 2026) rose +34% day-1, extending to +46% over 30 days as launch execution matched or beat expectations — the playbook CELC needs to replicate with its own Q3 launch to re-rate back toward the ~$163 analyst consensus.",
+      "exampleDate": "Apr 2026 (TVTX)"
+    },
+    "postLose": {
+      "avgPct": -16,
+      "range": "-15% to -18%",
+      "note": "CELC's own Jul 15, 2026 reaction is the direct precedent: shares fell ~15-17.6% in a single session purely on a delayed launch timeline (late Q3 vs expected sooner), even with a clean FDA approval already in hand — proof this stock punishes execution/timeline slips as hard as clinical failures.",
+      "exampleDate": "Jul 15, 2026 (CELC guidance-driven selloff)"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "3% max — the regulatory binary has resolved (approved), but the stock is now trading on commercial-execution risk, active securities-fraud investigations (unfiled, but a real overhang), and a Q3 launch timeline that already disappointed once. Not a clean de-risked story yet."
+    },
+    "stopPreCatalyst": { "pct": -22.5, "price": 68, "note": "หลุด $68 ก่อน Aug 6 earnings / Q3 launch = conviction เปลี่ยน แม้ approval จะผ่านไปแล้ว" },
+    "stopPostCatalyst": { "pct": -30, "note": "ถ้า Q3 launch เลื่อนอีกรอบ หรือมี lawsuit ยื่นจริง (ไม่ใช่แค่ investigation) = exit ทันที" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "CELC",
+      "event": "Own Jul 14-15, 2026 approval-then-guidance round trip",
+      "date": "Jul 2026",
+      "movePct": -18,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "The most directly relevant precedent for the Aug 6 / Q3 launch catalyst is CELC's own recent history: +7% on the approval headline, then -15% to -17.6% the next session purely on a delayed launch timeline. This stock has already shown it will punish execution guidance as hard as a clinical miss."
+    },
+    {
+      "ticker": "TVTX",
+      "event": "Filspari FDA Approval — Expanded FSGS Label",
+      "date": "Apr 2026",
+      "movePct": 34,
+      "days": 1,
+      "outcome": "good",
+      "note": "Day-1 +34% on a rare-disease/oncology-adjacent biologic approval with a clean, on-schedule launch story — the outcome CELC needs from its own Q3 launch to re-rate toward the ~$163 analyst consensus."
+    },
+    {
+      "ticker": "MRUS",
+      "event": "Bizengri FDA Accelerated Approval — NRG1+ NSCLC/Pancreatic",
+      "date": "Dec 2024",
+      "movePct": 2,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "Cautionary sell-the-news comp: MRUS rose only +1.8% on its first FDA approval because optimism was largely pre-priced — the same dynamic that made CELC's own approval-day pop fragile against any bad guidance."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Celcuity shares fall as delayed breast cancer drug launch eclipses first US FDA approval",
+    "url": "https://money.usnews.com/investing/news/articles/2026-07-15/celcuity-shares-fall-as-delayed-breast-cancer-drug-launch-eclipses-first-us-fda-approval",
+    "date": "Jul 2026"
+  },
+  "sources": [
+    "https://ir.celcuity.com/news-releases/news-release-details/celcuity-announces-fda-approval-revtorpyktm-gedatolisib",
+    "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-gedatolisib-fulvestrant-or-without-palbociclib-hr-positive-her2-negative-locally",
+    "https://stockanalysis.com/stocks/celc/",
+    "https://money.usnews.com/investing/news/articles/2026-07-15/celcuity-shares-fall-as-delayed-breast-cancer-drug-launch-eclipses-first-us-fda-approval",
+    "https://www.globenewswire.com/news-release/2026/07/21/3330168/0/en/CELC-INVESTOR-ALERT-Kirby-McInerney-LLP-Announces-Investigation-Into-Potential-Securities-Fraud.html",
+    "https://finance.yahoo.com/sectors/healthcare/articles/celcuity-celc-weighs-dilution-against-191120548.html",
+    "https://www.investing.com/news/analyst-ratings/celcuity-stock-price-target-raised-to-155-by-hc-wainwright-on-fda-approval-93CH-4793281",
+    "https://seekingalpha.com/news/4614082-celcuity-falls-despite-fda-nod-breast-cancer-drug"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Gedatolisib ของ Celcuity (แบรนด์ REVTORPYK) ได้ FDA approve เมื่อ 14 ก.ค. 2026 สำหรับ HR+/HER2-/PIK3CA wild-type advanced breast cancer เป็นสินค้าแรกของบริษัท — binary catalyst เดิมจบไปแล้ว แต่หุ้น round-trip แรงมาก: pop +7% วัน approve แต่ร่วง -15% ถึง -17.6% วันถัดมาเพราะบริษัท guide launch เป็น \"late Q3 2026\" ช้ากว่าที่คาด จนเกิด securities-fraud investigation จากหลายสำนักกฎหมาย (ยังไม่มีคดีฟ้องจริง) ตอนนี้มี Q2 earnings 6 ส.ค. 2026 และแผนยื่น sNDA สำหรับ PIK3CA-mutant cohort ใน Q3 2026 เพื่อขยาย label thesis เปลี่ยนจาก \"จะ approve ไหม\" เป็น \"จะ launch ได้เรียบร้อยไหม\" ยังเป็น ค่าขนม binary sizing 2-3% max แต่ความเสี่ยงย้ายจาก regulatory ไปเป็น execution + คดีความ",
+      "priceNote": "Approve 14 ก.ค. 2026 — ก่อน PDUFA 17 ก.ค. — แต่หุ้น round-trip: pop +7% วัน approve ถูกลบด้วยการร่วง -15% ถึง -17.6% วันถัดมาเพราะ guide launch เป็น \"late Q3 2026\" ตอนนี้ราคาใกล้เคียงกับก่อน approve ที่ $90 และต่ำกว่า all-time high $151.02 (พ.ค. 2026) ประมาณ 42%",
+      "scoreLabel": "Moonshot",
+      "catalysts": [
+        { "name": "Q2 2026 Earnings", "description": "งบไตรมาสแรกหลัง approve 14 ก.ค. ตลาดรอฟัง commentary เรื่องความพร้อม launch Q3, supply ของยา, payer access และสถานะเงินสดหลังระดมทุน convertible note $500M" },
+        { "name": "Commercial Launch — REVTORPYK (WT Indication)", "description": "บริษัท guide launch สหรัฐเป็น late Q3 2026 (ช้ากว่าที่คาดไว้เดิม) เพื่อให้ supply ยาพร้อม — guidance นี้ทำหุ้นร่วง ~15-18% ไปแล้ววันเดียว launch ที่เรียบร้อยคือ trigger re-rate ถัดไป" },
+        { "name": "PIK3CA-Mutant Cohort — sNDA Filing", "description": "แผนยื่น sNDA ใน Q3 2026 สำหรับกลุ่ม PIK3CA-mutant จากข้อมูล VIKTORIA-1 mutant cohort (PFS HR 0.50 vs alpelisib) เป็นตลาดที่ใหญ่กว่า WT label ที่เพิ่ง approve ตัดสิน regulatory คาด ~2027" },
+        { "name": "VIKTORIA-2 — First-Line Expansion Trial", "description": "Phase 3 (n~1,180) ทดสอบ gedatolisib + CDK4/6 + fulvestrant เป็น first-line สำหรับ endocrine-resistant HR+/HER2- ABC — pipeline optionality ระยะยาว" }
+      ],
+      "risks": [
+        "ความเสี่ยง execution แทนที่ regulatory แล้ว — บริษัทพลาด guide timeline ไปแล้วรอบหนึ่ง (guide \"late Q3 2026\") ทำหุ้นร่วง -15% ถึง -17.6% วันเดียวแม้ approve ผ่านชัดเจน",
+        "มี securities-fraud investigation จากหลายสำนักกฎหมาย (Kirby McInerney, Pomerantz, Kessler Topaz, Schall) เรื่องบริษัทอาจไม่เปิดเผยความพร้อม launch ก่อน approve — ยังไม่มีคดีฟ้องจริงแต่เป็น overhang เข้า Q3",
+        "หนี้ใหม่ก้อนใหญ่ — convertible senior notes $500M (net proceeds ~$557M) ดอกเบี้ย 0.25% ครบปี 2032 เพิ่มเข้ามากลางปี 2026 เพื่อ fund commercialization เสี่ยง dilution ถ้า convert หรือ refinance ถ้า launch ไม่ดี",
+        "PIK3CA-mutant label expansion (ตลาดใหญ่กว่า) ยังไม่ได้ยื่น — sNDA เป้า Q3 2026 ตัดสิน ~2027 ราคาปัจจุบัน price ไว้แล้วว่าจะสำเร็จ",
+        "คู่แข่งยังเหมือนเดิม — alpelisib (Piqray) ของ Novartis และ capivasertib (Truqap) ของ AstraZeneca ครองฐานแพทย์ PIK3CA-pathway อยู่แล้ว REVTORPYK ต้องแย่งส่วนแบ่งมา",
+        "นักวิเคราะห์เตือนเรื่อง tolerability/label ที่อาจทำให้แพทย์ adopt ช้าแม้ launch เริ่มแล้ว"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.50-3.75% วันที่ 29 ก.ค. 2026 มี 3 เสียง dissent ฝั่ง hawkish อยากขึ้นดอกเบี้ย — ความเสี่ยงขึ้นดอกเบี้ยปลายปียังไม่หมด แต่ข่าว approve/launch ของ CELC เองมีผลต่อราคามากกว่า Fed",
+        "inflationNote": "Core PCE ยังอยู่ 3.3% YoY สูงกว่าเป้า 2% ราคายา oncology ไม่ค่อยกระทบจาก CPI ระยะสั้น — payer negotiation และ execution launch สำคัญกว่า",
+        "sectorImpact": "ผล Fed ต่ำโดยตรงต่อ catalyst execution ของ CELC hawkish Fed กดดัน biotech multiple โดยรวม แต่ launch Q3 ที่ดี + งบ 6 ส.ค. ที่แข็งแรงน่าจะข้ามผ่านได้ ถ้า guide พลาดอีกรอบจะไม่ได้ benefit",
+        "summary": "ความเสี่ยง Fed ต่ำสำหรับ CELC โดยเฉพาะ — binary regulatory จบไปแล้ว catalyst ถัดไป (งบ 6 ส.ค., launch Q3) เป็นเรื่องเฉพาะบริษัท sector compression เป็นแรงกดดันรอง"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม 2-3% max — PDUFA binary จบแล้ว (approve 14 ก.ค.) แต่หุ้น round-trip จาก guide launch ช้า + คดีความ overhang งบ 6 ส.ค. คือจุดสำคัญถัดไป Base ~$110 (+25%) จาก execution เรียบร้อย Bull ~$145 (+65%) ใกล้ analyst consensus Moon ~$189 (+115%) จาก mutant label คืบหน้า + beat sizing ต้องคิดจาก execution/คดีความ ไม่ใช่ regulatory แล้ว",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — หลัง approve ก่อน launch คดีความยังไม่จบ", "timing": "ตอนนี้ (2-3% max)" },
+          { "note": "โซนย่อก่อนงบ 6 ส.ค. — preferred ถ้าตลาดรวมสั่นคลอน", "timing": "ถ้าย่อก่อนงบ" },
+          { "note": "โซน crash หลัง selloff หรือข่าวฟ้องจริง — เข้าเฉพาะถ้า guidance launch ยังไม่เปลี่ยน", "timing": "เฉพาะ selloff หรือข่าวฟ้อง" }
+        ],
+        "tp1": { "note": "Base — launch สำเร็จตาม timeline late Q3 ตลาดเชื่อมั่นกลับมา" },
+        "tp2": { "note": "Bull — commercial ramp พิสูจน์ตัวเอง ใกล้ analyst consensus" },
+        "tp3": { "note": "Moon — mutant sNDA คืบหน้า + launch beat-and-raise กลับไปแตะ/เกิน high เดิม", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุด support หลัง selloff โดยไม่มีข่าวใหม่ = ความเชื่อมั่น execution แย่ลง",
+          "hardNote": "คดีความฟ้องจริง หรือ launch เลื่อนอีกรอบ = thesis เปลี่ยนจริง",
+          "rrNote": "Preferred entry ($75-80) เทียบ TP2 ($144.74) risk คิดจาก tight stop ($68) ไม่ใช่ tail risk คดีความ/เลื่อน launch",
+          "rrWarning": "Regulatory binary จบแล้ว — นี่คือ execution + คดีความ risk sizing ตามนั้น ✅"
+        }
+      },
+      "estimateDates": [
+        { "event": "Q2 2026 Earnings", "note": "commentary แรกเรื่องความพร้อม launch Q3, supply, payer access, เงินสด" },
+        { "event": "Commercial Launch — REVTORPYK", "note": "เลื่อนจากที่คาดไว้เดิม — บริษัทอ้าง supply ยาต้องพร้อมก่อน" },
+        { "event": "PIK3CA-Mutant sNDA Submission", "note": "จากข้อมูล VIKTORIA-1 mutant cohort (PFS HR 0.50 vs alpelisib)" }
+      ]
+    }
+  }
+}
