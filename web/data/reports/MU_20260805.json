@@ -1,0 +1,194 @@
+{
+  "ticker": "MU",
+  "companyName": "Micron Technology, Inc.",
+  "companyDescription": "AI Memory · HBM4/HBM3E leader with capacity sold out through 2026-2028 — the picks-and-shovels memory play riding (and getting whipsawed by) the AI capex cycle",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-05T12:00:00.000Z",
+  "price": 892.67,
+  "priceChange": 7.62,
+  "priceNote": "Trading $892.67 (+7.62%), rebounding off an early-Aug low near $829 after MU's worst month in over a decade — down ~13% from the Jul 10 level of $1,021.28 and ~29% off the $1,255 all-time high on AI-capex-sustainability fears, before today's relief rally.",
+  "marketCap": "$1.01T",
+  "sector": "Technology / Semiconductors",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 81,
+  "summary": "Micron shares round-tripped hard since the Jul 10 report — down ~29% from the $1,255 all-time high and ~13% from the prior $1,021.28 level as AI-capex-sustainability fears drove MU's worst month in over a decade, before a +7.62% relief rally today on Bank of America's 'no real change in fundamentals' call. Consensus targets now cluster around $1,270-$1,508 (38-46 analysts, Strong Buy), implying roughly 42-69% upside from $892.67, while HBM capacity remains sold out through 2026-2028 and Q4 FY26 earnings (est. ~Sep 22, 2026) is the first hard data point since the correction began. The pullback widens the discount to consensus versus the Jul 10 report, but a hawkish Fed (3-way FOMC dissent favoring a hike) and rising Chinese (CXMT) memory competition keep this a scale-in, not an all-in.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q4 FY2026 Earnings",
+      "description": "First hard data point since the July AI-capex-fear selloff — tests whether the ~$50B+ FQ4 revenue trajectory and HBM4 volume ramp held through the correction, and whether the sold-out capacity narrative into fiscal 2027 is intact.",
+      "urgencyLabel": "~48 DAYS",
+      "dateBadge": "~Sep 22, 2026",
+      "catalystDate": "2026-09-22",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🧠",
+      "name": "HBM4 Volume Ramp for NVIDIA Vera Rubin",
+      "description": "Micron continues volume shipment of HBM4 12-Hi for NVIDIA's Vera Rubin platform — directly tied to NVDA's H2 2026 shipment timeline, with HBM4E volume production still targeted for calendar 2027.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🛡️",
+      "name": "Potential US Tariffs on Chinese Memory Chips",
+      "description": "Reports of possible US tariffs targeting Chinese memory imports (aimed at CXMT) could tighten non-Micron supply and reinforce MU's pricing power just as the market digests China capacity-expansion fears — no confirmed timeline yet.",
+      "urgencyLabel": "PENDING",
+      "dateBadge": "H2 2026",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "AI-capex-sustainability fears triggered MU's worst month in over a decade in July 2026 — even after today's rebound, the stock is still ~29% off its $1,255 all-time high, showing how fast sentiment can swing with no fundamental change at the company.",
+    "CXMT (China) is aggressively expanding memory capacity — a structural supply-side risk to Micron's pricing power, partially offset by reported potential US tariffs on Chinese memory imports.",
+    "Fed held at 3.50-3.75% on Jul 29, 2026 (9-3 vote) but three members (Hammack, Kashkari, Logan) dissented in favor of a hike — a more hawkish signal than the June meeting, pressuring long-duration AI-capex multiples independent of MU's own execution.",
+    "Memory remains the most historically cyclical semis sub-sector; the HBM supercycle thesis still assumes AI capex sustains through 2027-2028, a view some analysts continue to question even with MU's forward P/E near 5x looking historically cheap.",
+    "Next confirmed hard data point (Q4 FY26 earnings, est. ~Sep 22) is roughly 7 weeks out and lands right after the Sep 15-16 FOMC — plenty of runway for the AI-capex narrative to swing again before either event."
+  ],
+  "estimateDates": [
+    {
+      "event": "Q4 FY2026 Earnings",
+      "dateRange": "~Sep 22, 2026",
+      "note": "First hard data point since the July selloff — tests whether HBM4 ramp and the sold-out capacity narrative held",
+      "est": "est. revenue ~$50B+",
+      "highlight": "blue"
+    },
+    {
+      "event": "FOMC Meeting",
+      "dateRange": "Sep 15-16, 2026",
+      "note": "Next Fed decision, one week before MU's expected earnings — a hawkish surprise would compound AI-multiple compression risk on top of memory's own cyclicality",
+      "est": "Fed funds 3.50-3.75% (hold expected)",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -21.6, "price": 700 },
+    { "label": "Base", "color": "yellow", "pct": 23.2, "price": 1100 },
+    { "label": "Bull", "color": "green", "pct": 66.9, "price": 1490 },
+    { "label": "Moon", "color": "purple", "pct": 124.1, "price": 2000 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (46 analysts, StockAnalysis)", "target": 1508, "rating": "Strong Buy", "note": "Implies ~69% upside from $892.67" },
+    { "firm": "Consensus (38 analysts, MarketBeat)", "target": 1269, "rating": "Buy", "note": "35 Buy / 4 Strong Buy / 3 Hold — implies ~42% upside" },
+    { "firm": "DA Davidson / Barclays / Susquehanna", "target": 2000, "rating": "Buy", "note": "All three raised to $2,000 in Jun 2026" },
+    { "firm": "KeyBanc (Overweight)", "target": 1750, "rating": "Overweight", "note": "Raised from $1,600 on Jul 14, 2026" },
+    { "firm": "Bank of America (Vivek Arya)", "target": 1550, "rating": "Buy", "note": "'No real change in fundamentals' call accompanying the Aug 4 rebound" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held 3.50-3.75% for a 5th straight meeting on Jul 29, 2026 (9-3 vote) — three members (Beth Hammack, Neel Kashkari, Lorie Logan) dissented in favor of a hike, a more hawkish signal than the June meeting. Next FOMC is Sep 15-16, 2026, one week before MU's expected earnings.",
+    "inflationNote": "Inflation remains above the 2% target; the Fed cited it as 'elevated' with supply-side (energy) pressure, removing any near-term rate-cut tailwind for high-multiple AI names.",
+    "sectorImpact": "AI/semis names are the most rate-sensitive part of the market; the Jul 2026 sector-wide selloff — MU's worst month in over a decade — shows how quickly capex-sustainability fears plus a hawkish Fed can compress long-duration multiples with no company-specific miss involved.",
+    "summary": "MEDIUM — no imminent hike, but three FOMC dissents now favor one, and the Sep 15-16 meeting lands right before MU's earnings. A hawkish surprise there would compound both AI-capex-fear sentiment and memory's structurally higher cyclicality."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 893, "note": "Current price — post-selloff rebound day, still ~29% below the all-time high", "timing": "Now" },
+      { "label": "Entry 2", "level": 780, "rangeMax": 820, "note": "Retest of the early-Aug 2026 pullback low", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 700, "note": "Deep macro/AI-capex-fear selloff — matches the bear case", "timing": "If sector selloff" }
+    ],
+    "tp1": { "price": 1100, "pct": 23.2, "note": "Base — retrace back toward pre-selloff levels as AI-capex fears cool, no fresh catalyst needed" },
+    "tp2": { "price": 1490, "pct": 66.9, "note": "Bull — consensus target confirmed as the ~Sep 22 earnings validates the ~$50B+ FQ4 trajectory and sold-out HBM book" },
+    "tp3": { "price": 2000, "pct": 124.1, "note": "Moon — HBM4E/Vera Rubin ramp exceeds expectations and the memory supercycle thesis re-rates toward the Street's $2,000 outlier targets", "moon": true },
+    "stopLoss": {
+      "tight": 780, "tightPct": -12.6, "tightNote": "Below the early-Aug 2026 pullback low (~$829 pre-rally close)",
+      "hard": 700, "hardPct": -21.6, "hardNote": "Matches the bear case — HBM supercycle thesis needs re-underwriting if breached",
+      "riskReward": "5.3 : 1",
+      "rrNote": "TP2 vs tight stop from the current $893 entry",
+      "rrWarning": "Strong R/R given the post-selloff discount to consensus, but the tight stop sits only ~13% below — size for volatility, not comfort"
+    },
+    "verdict": "BUY on the post-selloff rebound — MU is still ~29% off its ATH and ~13% cheaper than the Jul 10 report despite an unchanged (arguably strengthened) HBM sold-out thesis; scale in at $893, add on any retest of $780-820.",
+    "approach": "Scale In"
+  },
+  "comparableCases": [
+    {
+      "ticker": "MU",
+      "event": "Q3 FY26 earnings — EPS beat by 24%, FQ4 revenue guide blows past consensus",
+      "date": "Jun 2026",
+      "movePct": 15,
+      "days": 1,
+      "outcome": "good",
+      "note": "Direct comparable for the ~Sep 22 print: extended-trading pop of 15% on a blowout beat-and-raise, with data center revenue growing more than sevenfold YoY to $11.5B."
+    },
+    {
+      "ticker": "MU",
+      "event": "AI-capex-sustainability fear selloff (worst month in over a decade) followed by relief rally on BofA 'no real change in fundamentals' note",
+      "date": "Jul-Aug 2026",
+      "movePct": 7.62,
+      "days": 1,
+      "outcome": "good",
+      "note": "Shows how fast sentiment reverses on no company-specific news: stock fell as much as ~29% from its $1,255 ATH on macro/AI-spending fear, then popped 7.62% in a single session once analysts reaffirmed fundamentals were unchanged."
+    },
+    {
+      "ticker": "AVGO",
+      "event": "Q2 FY26 earnings — beat on EPS/revenue but guidance disappointed",
+      "date": "Jun 2026",
+      "movePct": -14,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Same AI-semis complex, same quarter — a reminder that even a beat can sell off hard if forward guidance underwhelms, the key risk into MU's ~Sep 22 print."
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/mu/",
+    "https://www.marketbeat.com/stocks/NASDAQ/MU/price-target/",
+    "https://www.marketbeat.com/stocks/NASDAQ/MU/",
+    "https://finance.yahoo.com/quote/MU/",
+    "https://www.barchart.com/stocks/quotes/MU",
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+    "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+    "https://www.fool.com/quote/nasdaq/mu/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "หุ้น MU เหวี่ยงแรงตั้งแต่รายงานฉบับ 10 ก.ค. — ร่วงลงมา ~29% จาก all-time high $1,255 และ ~13% จากระดับเดิม $1,021.28 จากความกังวลเรื่องความยั่งยืนของ AI capex ที่ทำให้เดือน ก.ค. เป็นเดือนที่แย่ที่สุดในรอบกว่าทศวรรษ ก่อนจะรีบาวด์ +7.62% วันนี้หลัง Bank of America ยืนยันว่า 'fundamentals ไม่เปลี่ยน' consensus target ตอนนี้อยู่ที่ราว $1,270-1,508 (38-46 analyst, Strong Buy) ให้ upside ราว 42-69% จากราคา $892.67 ขณะที่ HBM capacity ยังขายหมดถึงปี 2026-2028 earnings Q4 FY26 (ประมาณ 22 ก.ย. 2026) จะเป็น hard data point แรกหลัง correction รอบนี้ ส่วนลดจาก consensus กว้างขึ้นกว่ารายงานฉบับก่อน แต่ Fed hawkish (dissent 3 เสียงอยากขึ้นดอกเบี้ย) และคู่แข่งจีน CXMT ที่ขยายกำลังผลิต ทำให้ยังควรทยอยเข้า ไม่ใช่ all-in",
+      "priceNote": "ราคา $892.67 (+7.62%) รีบาวด์จากจุดต่ำสุดต้นเดือน ส.ค. ที่ราว $829 หลังเดือน ก.ค. ที่แย่ที่สุดในรอบกว่าทศวรรษ — ต่ำกว่าระดับ 10 ก.ค. ที่ $1,021.28 ราว 13% และต่ำกว่า all-time high $1,255 ราว 29%",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "รายงาน Q4 FY2026 Earnings", "description": "hard data point แรกหลัง selloff เดือน ก.ค. — พิสูจน์ว่า revenue trajectory ~$50B+ และ HBM4 ramp ยังไปต่อได้หรือไม่ และ sold-out capacity narrative เข้าปี fiscal 2027 ยังอยู่หรือไม่" },
+        { "name": "HBM4 Volume Ramp สำหรับ NVIDIA Vera Rubin", "description": "ยังคง ship HBM4 12-Hi ให้ Vera Rubin ต่อเนื่อง — ผูกกับ timeline ship ของ NVDA ใน H2 2026 ส่วน HBM4E volume production ยังตั้งเป้าปี 2027" },
+        { "name": "มาตรการภาษีสหรัฐฯ ต่อ chip หน่วยความจำจีน (เล็ง CXMT)", "description": "ข่าวสหรัฐฯ อาจออกมาตรการภาษีต่อ memory chip นำเข้าจากจีน (เล็งเป้า CXMT) อาจช่วยหนุน pricing power ของ Micron ท่ามกลางความกังวลเรื่อง capacity ที่ขยายตัวของจีน — ยังไม่มี timeline ชัดเจน" }
+      ],
+      "risks": [
+        "ความกังวลเรื่องความยั่งยืนของ AI capex ทำให้เดือน ก.ค. 2026 เป็นเดือนที่แย่ที่สุดของ MU ในรอบกว่าทศวรรษ — แม้จะรีบาวด์วันนี้ หุ้นยังต่ำกว่า all-time high $1,255 อยู่ ~29% สะท้อนว่า sentiment เหวี่ยงเร็วมากโดยที่ fundamentals ของบริษัทไม่เปลี่ยน",
+        "CXMT (จีน) กำลังขยายกำลังผลิตหน่วยความจำอย่างรวดเร็ว — ความเสี่ยงเชิงโครงสร้างต่อ pricing power ของ Micron แม้จะมีข่าวมาตรการภาษีสหรัฐฯ มาช่วย offset บางส่วน",
+        "Fed คงดอกเบี้ย 3.50-3.75% เมื่อ 29 ก.ค. 2026 (โหวต 9-3) แต่มี 3 เสียง (Hammack, Kashkari, Logan) dissent อยากขึ้นดอกเบี้ย — hawkish กว่าการประชุมเดือน มิ.ย. กดดัน multiple ของหุ้น AI duration ยาว",
+        "หน่วยความจำยังเป็น sub-sector ที่ cyclical ที่สุดใน semis ในอดีต — thesis HBM supercycle ยังต้องพึ่ง AI capex ที่ยั่งยืนถึงปี 2027-2028 ซึ่งบาง analyst ยังตั้งคำถาม แม้ forward P/E ของ MU จะอยู่ที่ราว 5 เท่าซึ่งถูกมากเทียบในอดีต",
+        "hard data point ถัดไป (earnings Q4 FY26 ประมาณ 22 ก.ย.) ยังอีกราว 7 สัปดาห์ และอยู่หลัง FOMC 15-16 ก.ย. พอดี — มีเวลาเหลือให้ narrative AI capex เหวี่ยงได้อีกก่อนถึงทั้งสอง event"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.50-3.75% เป็นครั้งที่ 5 ติดเมื่อ 29 ก.ค. 2026 (โหวต 9-3) — มี 3 เสียง dissent (Hammack, Kashkari, Logan) อยากขึ้นดอกเบี้ย hawkish กว่าการประชุม มิ.ย. FOMC ถัดไป 15-16 ก.ย. 2026 ก่อน earnings ของ MU หนึ่งสัปดาห์",
+        "inflationNote": "เงินเฟ้อยังสูงกว่าเป้า 2% — Fed ระบุว่า 'elevated' จากแรงกดดันฝั่ง supply (พลังงาน) ลบ tailwind rate-cut ที่หุ้น AI multiple สูงเคยหวังพึ่ง",
+        "sectorImpact": "หุ้น AI/semis ไวต่อดอกเบี้ยที่สุดในตลาด — selloff ทั้งกลุ่มเดือน ก.ค. 2026 (เดือนแย่ที่สุดของ MU ในรอบกว่าทศวรรษ) แสดงให้เห็นว่าความกังวล capex บวกกับ Fed hawkish กด multiple duration ยาวได้เร็วแค่ไหนโดยไม่ต้องมี miss เฉพาะตัว",
+        "summary": "MEDIUM — ยังไม่มีการขึ้นดอกเบี้ยทันที แต่มี 3 เสียง dissent อยากขึ้นแล้ว และการประชุม 15-16 ก.ย. อยู่ก่อน earnings ของ MU พอดี hawkish surprise ตรงนั้นจะซ้ำเติมทั้งความกังวล AI-capex และความเสี่ยง cyclical ของ memory"
+      },
+      "entryStrategy": {
+        "verdict": "BUY จุดรีบาวด์หลัง selloff — MU ยังห่างจาก ATH ~29% และถูกกว่ารายงานฉบับ 10 ก.ค. ~13% ทั้งที่ thesis HBM sold-out ไม่เปลี่ยน (หรือแข็งแรงขึ้น) ทยอยเข้าที่ $893 เพิ่มเมื่อย่อ $780-820",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — วันรีบาวด์หลัง selloff ยังห่างจาก all-time high ~29%", "timing": "ตอนนี้" },
+          { "note": "retest จุดต่ำสุดต้นเดือน ส.ค. 2026", "timing": "ถ้าย่อ" },
+          { "note": "selloff ลึกจากความกังวล AI-capex/macro — ตรงกับ bear case", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "กรณีฐาน — ราคากลับไปแถวระดับก่อน selloff โดยไม่ต้องมี catalyst ใหม่" },
+        "tp2": { "note": "กรณีดี — consensus target ยืนยันเมื่อ earnings ประมาณ 22 ก.ย. confirm guide FQ4 ~$50B+ และ order book ที่ขายหมดแล้ว" },
+        "tp3": { "note": "Moon — HBM4E/Vera Rubin ramp เกินคาด thesis memory supercycle re-rate ไปแตะ target สูงสุดของ Street ที่ $2,000" },
+        "stopLoss": {
+          "tightNote": "หลุดจุดต่ำสุดต้นเดือน ส.ค. 2026 (ราคาปิดก่อนรีบาวด์ ~$829)",
+          "hardNote": "ตรงกับ bear case — thesis HBM supercycle ต้องทบทวนใหม่ถ้าหลุด",
+          "rrNote": "TP2 เทียบ tight stop จากราคาเข้าปัจจุบัน $893",
+          "rrWarning": "R/R ดีมากจากส่วนลดหลัง selloff แต่ tight stop ใกล้แค่ ~13% — คุมขนาดโพซิชันให้เหมาะกับความผันผวน"
+        }
+      },
+      "estimateDates": [
+        { "event": "รายงาน Q4 FY2026 Earnings", "note": "hard data point แรกหลัง selloff เดือน ก.ค. — พิสูจน์ว่า HBM4 ramp และ sold-out capacity narrative ยังอยู่หรือไม่" },
+        { "event": "การประชุม FOMC", "note": "Fed decision ก่อน earnings ของ MU หนึ่งสัปดาห์ — hawkish surprise จะซ้ำเติมความเสี่ยง multiple compression บวกกับ cyclicality ของ memory" }
+      ]
+    }
+  }
+}

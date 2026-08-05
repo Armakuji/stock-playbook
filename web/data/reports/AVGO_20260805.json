@@ -1,0 +1,177 @@
+{
+  "ticker": "AVGO",
+  "companyName": "Broadcom Inc.",
+  "companyDescription": "AI networking/ASIC + VMware software · custom AI chip (XPU) designer for Google and other hyperscalers · rallying hard alongside the broader semis complex as AI-demand fears from June's guidance scare get repriced",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-05T12:00:00.000Z",
+  "price": 418.16,
+  "priceChange": 6.61,
+  "priceNote": "Live-price feed, Aug 4, 2026 close. Broadcom joined a broad, sector-wide semiconductor rally — Intel +10.8%, AMD +7.0%, Micron +7.6%, Marvell +12.8% all rallied the same session — triggered by Palantir's blowout quarter (revenue +93% YoY, US commercial +149%) which the market read as fresh confirmation that AI infrastructure demand remains unrelenting, exactly the narrative Broadcom's own Jun 4 guidance scare had thrown into doubt. Stock is now ~13% off its July lows (~$370) and back within ~15% of its 52-week high ($495).",
+  "marketCap": "$1.99T",
+  "sector": "Technology / Semiconductors (AI Networking & Custom Silicon)",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 76,
+  "summary": "Broadcom is riding a broad AI-demand relief rally — Palantir's beat-and-raise quarter on Aug 4 reassured the market that enterprise/hyperscaler AI spend is intact, lifting the entire chip complex and pushing AVGO up 6.6% in a single session, its best day since the post-Jun 4 recovery began. The move is sentiment-driven, not company-specific: Broadcom hasn't reported since the Jun 4 selloff that erased ~$280B on a Google ASIC-diversification disclosure, so today's rally is the market pre-pricing that the Sep 3, 2026 Q3 print will confirm AI networking demand is still growing, not that it already has. 48 analysts average a $527.88 target (Strong Buy, zero Sell), but the margin of safety has compressed from +35.5% two weeks ago to +26.2% today purely on price appreciation — the fundamental question (is the Google diversification concern overblown?) is unchanged and won't be answered until Sep 3.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 FY26 Earnings",
+      "description": "Broadcom's next earnings report — the actual test of whether AI networking/custom-silicon demand growth continues despite the Google ASIC-diversification concern that triggered the Jun 4 crash. Today's rally raised the bar: the market has pre-priced a good outcome via proxy (Palantir), so a merely-in-line print risks a 'sell the news' reaction.",
+      "urgencyLabel": "~4 WEEKS",
+      "dateBadge": "Sep 3, 2026",
+      "catalystDate": "2026-09-03",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🚀",
+      "name": "AI-Demand Proxy Rally (Palantir earnings spillover)",
+      "description": "Aug 4's sector-wide semiconductor surge was triggered by Palantir's blowout quarter, not by any Broadcom-specific news. Whether this AI-demand reassurance holds through the next few weeks — or fades if the next AI-adjacent earnings print disappoints — will set the tone heading into AVGO's own Sep 3 report.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "🤖",
+      "name": "Google TPU/Custom Silicon Demand Trajectory",
+      "description": "The core swing factor behind the Jun 4 selloff remains unresolved — whether Google's custom-ASIC diversification meaningfully dents Broadcom's share of that business, or whether other hyperscaler custom-silicon relationships and overall AI networking demand offset it. Sep 3 guidance is the first hard data point since the disclosure.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Today's +6.6% rally is a sentiment/proxy move (driven by Palantir's earnings, not Broadcom's own numbers) — if the next few weeks of AI-adjacent earnings disappoint before Sep 3, the same repricing can reverse just as fast",
+    "The Google custom-ASIC diversification disclosed on Jun 4, 2026 is still an open, unresolved risk — the market has now pre-priced a favorable resolution via proxy, raising the bar for what counts as a 'good' Sep 3 print",
+    "AVGO has proven it can move violently on guidance tone alone — the Jun 4 crash (-12.6% in a day, ~$280B erased) happened despite a genuine beat-and-raise quarter, and that same binary risk sits directly ahead of Sep 3",
+    "10-year Treasury yield near 4.75% (up from ~4.48% in July) keeps rate pressure on a $1.99T high-multiple AI name even with the Fed on hold",
+    "Valuation has re-rated up ~13% off July lows in under a month with no new company-specific confirmation yet — chasing here means paying up before the actual data (Sep 3) arrives"
+  ],
+  "estimateDates": [
+    { "event": "Q3 FY26 Earnings", "dateRange": "Sep 3, 2026 (est., not yet formally confirmed by the company)", "note": "Key test of whether the AI-demand reassurance rally is validated by Broadcom's own numbers, and whether Google ASIC diversification is denting growth", "est": "Guidance tone is the swing factor, as it was on Jun 4", "highlight": "blue" },
+    { "event": "Next FOMC Decision", "dateRange": "Sep 15-16, 2026", "note": "Lands 2 weeks AFTER AVGO's earnings this cycle — less direct event-overlap risk than the Jul 28-29 FOMC did last quarter", "est": "Fed on hold at 3.50-3.75% as of Jul 29", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -18, "price": 342.89 },
+    { "label": "Base", "color": "yellow", "pct": 26.2, "price": 527.88 },
+    { "label": "Bull", "color": "green", "pct": 38.7, "price": 580.00 },
+    { "label": "Moon", "color": "purple", "pct": 61.4, "price": 675.00 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (48 analysts)", "target": 527.88, "rating": "Strong Buy" },
+    { "firm": "J.P. Morgan (Harlan Sur)", "target": 580.00, "rating": "Buy" },
+    { "firm": "Bernstein (Stacy Rasgon)", "target": 550.00, "rating": "Buy" },
+    { "firm": "Morgan Stanley (Joseph Moore)", "target": 502.00, "rating": "Buy" },
+    { "firm": "Barclays (Thomas O'Malley)", "target": 500.00, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held at 3.50-3.75% on Jul 29, 2026 in a split 9-3 vote under new Chair Warsh. The next FOMC decision is Sep 15-16, 2026 — two weeks AFTER Broadcom's own Sep 3 earnings, so unlike last quarter, there's no direct Fed-meeting overlap with the earnings catalyst itself.",
+    "inflationNote": "Core inflation remains elevated (described as a 3-year high by CNBC in June) and the 10-year Treasury yield has climbed to ~4.75% (from ~4.48% in July) — a real, worsening headwind for a $1.99T high-multiple AI name even with rates on hold.",
+    "sectorImpact": "AVGO has already demonstrated it can crash 12.6% in a day on guidance nuance alone (Jun 4, 2026), and today's rally shows the reverse is equally true — the stock swings hard on AI-demand sentiment regardless of direction. With the FOMC now landing after Sep 3 rather than before it, the more immediate risk into earnings is company-specific (Google ASIC diversification) rather than a Fed surprise.",
+    "summary": "MEDIUM — downgraded from HIGH two weeks ago because the Sep 15-16 FOMC no longer overlaps directly with AVGO's Sep 3 earnings catalyst, removing one layer of compounding event risk. Elevated yields (~4.75%) and still-hot inflation remain a real headwind for the multiple, but the dominant near-term risk is company-specific: whether Sep 3 guidance confirms today's AI-demand relief rally was warranted."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 418.16, "note": "Current price — chasing a 6.6% single-day sentiment rally ahead of any confirming data from AVGO itself", "timing": "Now (aggressive)" },
+      { "label": "Entry 2", "level": 390.00, "rangeMax": 400.00, "note": "Pullback toward the pre-rally consolidation zone if today's AI-demand relief fades before Sep 3", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 345.00, "note": "Deep dip back toward the July post-crash lows — only on a broader AI-valuation selloff or a Sep 3 disappointment", "timing": "If sector selloff" }
+    ],
+    "tp1": { "price": 527.88, "pct": 26.2, "note": "Base — Sep 3 earnings confirm AI networking demand growth continuing, stock reaches consensus target" },
+    "tp2": { "price": 580.00, "pct": 38.7, "note": "Bull — clean beat, Google diversification concern proves overblown, hits JPMorgan's top Street target" },
+    "tp3": { "price": 675.00, "pct": 61.4, "note": "Moon — AI networking demand reaccelerates broadly, stock reaches the Street-high target", "moon": true },
+    "stopLoss": {
+      "tight": 385.00, "tightPct": -7.9, "tightNote": "Below today's rally and the pre-rally consolidation zone — would suggest the Palantir-driven AI reassurance is fading before AVGO's own Sep 3 print",
+      "hard": 340.00, "hardPct": -18.7, "hardNote": "Near the July post-crash lows — would confirm today's rally was a head-fake and the Google diversification concern is resurfacing",
+      "riskReward": "4.9 : 1", "rrNote": "From current price, tight stop vs TP2 (Bull case)", "rrWarning": "Good R/R on paper, but AVGO has proven it can gap down >10% on guidance nuance alone (Jun 4, 2026) — size for that binary risk into Sep 3, don't treat the stop as a guarantee"
+    },
+    "verdict": "BUY — the AI-demand fears that crushed the stock in June are being actively repriced by the market via proxy (Palantir), and the fundamentals (Strong Buy consensus, zero Sell ratings, $527.88 average target) still support upside. But today's pop is sentiment, not confirmation — scale in rather than chase, and let Sep 3 do the real work.",
+    "approach": "Scale In"
+  },
+  "comparableCases": [
+    {
+      "ticker": "NVDA",
+      "event": "Q1 FY24 earnings beat + AI-demand guidance surprise (revenue guided to $11B vs $7.15B consensus) triggers broad semiconductor sector rally",
+      "date": "May 2023",
+      "movePct": 24,
+      "days": 1,
+      "outcome": "good",
+      "note": "The direct precedent for today's mechanism: one company's blowout AI-demand print (then Nvidia, now Palantir) reassured the market broadly and lifted the whole chip complex, with AMD benefiting most among the AI-favored names while non-AI chipmakers like Intel lagged — same pattern as today's AVGO/AMD/Micron rally vs. mixed reaction elsewhere."
+    },
+    {
+      "ticker": "AVGO",
+      "event": "Q2 FY26 earnings — record revenue/AI growth beat, but guidance disappoints + Google ASIC diversification disclosed",
+      "date": "Jun 2026",
+      "movePct": -12.6,
+      "days": 1,
+      "outcome": "bad",
+      "note": "The most important same-company precedent — shows genuinely strong fundamentals were not sufficient protection against a guidance-tone reaction. Directly relevant: today's rally is the market betting this concern was overblown, but only the actual Sep 3 print resolves it."
+    },
+    {
+      "ticker": "AVGO",
+      "event": "Recovery from post-crash July lows into the Aug 4 AI-demand relief rally",
+      "date": "Jul-Aug 2026",
+      "movePct": 13,
+      "days": 20,
+      "outcome": "good",
+      "note": "From the ~$370 July consolidation zone to $418.16 today — shows sentiment was already healing before today's catalyst, consistent with the market gradually deciding the Jun 4 selloff was an overreaction rather than a broken thesis."
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/avgo/",
+    "https://stockanalysis.com/stocks/avgo/forecast/",
+    "https://www.fool.com/quote/nasdaq/avgo/",
+    "https://www.fool.com/investing/2026/08/04/why-broadcom-stock-rallied-today/",
+    "https://www.marketbeat.com/stocks/NASDAQ/AVGO/earnings/",
+    "https://www.cnbc.com/2023/05/25/nvidia-earnings-lift-amd-while-other-chipmakers-like-intel-fall.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Broadcom กำลังได้อานิสงส์จาก AI-demand relief rally ทั้งกลุ่ม — ผลประกอบการเกินคาดของ Palantir เมื่อ 4 ส.ค. ทำให้ตลาดมั่นใจว่าดีมานด์ AI ของ enterprise/hyperscaler ยังแข็งแกร่ง ดันหุ้นทั้งกลุ่มชิปขึ้นยกแผง รวมถึง AVGO ที่บวก 6.6% วันเดียว ดีที่สุดนับตั้งแต่เริ่มฟื้นตัวหลังการร่วง 4 มิ.ย. การขึ้นครั้งนี้มาจาก sentiment ไม่ใช่ตัวเลขของ Broadcom เอง — บริษัทยังไม่รายงานผลตั้งแต่การร่วง 4 มิ.ย. ที่มูลค่าตลาดหายไป ~$280B จากความกังวลเรื่อง Google กระจายแหล่ง ASIC ดังนั้นการขึ้นวันนี้คือตลาด pre-price ว่าผลประกอบการ 3 ก.ย. 2026 จะยืนยันดีมานด์ AI networking ยังโต ไม่ใช่ว่ายืนยันไปแล้ว นักวิเคราะห์ 48 คนให้เป้าเฉลี่ย $527.88 (Strong Buy ไม่มี Sell) แต่ margin of safety แคบลงจาก +35.5% เมื่อ 2 สัปดาห์ก่อนเหลือ +26.2% วันนี้ เพียงเพราะราคาขึ้นมาก่อน คำถามพื้นฐาน (Google diversification เกินจริงหรือไม่) ยังไม่มีคำตอบจนกว่าจะถึง 3 ก.ย.",
+      "priceNote": "ราคาปิด 4 ส.ค. 2026 บวก 6.61% — Broadcom ขึ้นพร้อมกลุ่มเซมิคอนดักเตอร์ทั้งกลุ่ม (Intel +10.8%, AMD +7.0%, Micron +7.6%, Marvell +12.8% วันเดียวกัน) จากผลประกอบการยอดเยี่ยมของ Palantir (รายได้ +93% YoY, ธุรกิจ US commercial +149%) ที่ตลาดตีความว่าเป็นการยืนยันดีมานด์ AI infrastructure ยังแข็งแกร่ง — narrative เดียวกับที่การ์ดการ์ด guidance วันที่ 4 มิ.ย. เคยทำให้เกิดข้อสงสัย ตอนนี้หุ้นห่างจากจุดต่ำเดือนก.ค. (~$370) ประมาณ 13% และกลับมาใกล้ 52-week high ($495) ในระยะ ~15%",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "ผลประกอบการ Q3 FY26", "description": "รายงานถัดไปของ Broadcom — บททดสอบจริงว่าดีมานด์ AI networking/custom-silicon ยังโตต่อแม้มีความกังวลเรื่อง Google ASIC diversification หรือไม่ วันนี้ที่หุ้นขึ้นแรงทำให้มาตรฐานสูงขึ้น เพราะตลาด pre-price ผลดีไปแล้วผ่าน proxy (Palantir) ถ้าผลออกมาแค่ในระดับคาดอาจเจอ sell the news" },
+        { "name": "AI-Demand Proxy Rally (ผลพวงจากผลประกอบการ Palantir)", "description": "การพุ่งขึ้นทั้งกลุ่มเซมิคอนดักเตอร์เมื่อ 4 ส.ค. มาจากผลประกอบการยอดเยี่ยมของ Palantir ไม่ใช่ข่าวเฉพาะของ Broadcom เอง ความมั่นใจนี้จะอยู่ได้นานแค่ไหนก่อนถึงรายงาน 3 ก.ย. ของ AVGO เองเป็นตัวกำหนดทิศทางต่อไป" },
+        { "name": "ทิศทางดีมานด์ TPU/Custom Silicon ของ Google", "description": "ตัวแปรหลักที่ทำให้หุ้นร่วง 4 มิ.ย. ยังไม่มีคำตอบ — Google กระจายแหล่ง custom-ASIC จะกระทบส่วนแบ่งธุรกิจ Broadcom มากแค่ไหน guidance วันที่ 3 ก.ย. คือข้อมูลจริงชุดแรกนับตั้งแต่เปิดเผยเรื่องนี้" }
+      ],
+      "risks": [
+        "การขึ้น 6.6% วันนี้เป็นการเคลื่อนไหวจาก sentiment/proxy (มาจากผลประกอบการ Palantir ไม่ใช่ตัวเลขของ Broadcom เอง) — ถ้าผลประกอบการ AI-adjacent ช่วงอีกไม่กี่สัปดาห์ก่อน 3 ก.ย. ผิดหวัง การ repricing นี้อาจย้อนกลับได้เร็วเท่าที่ขึ้นมา",
+        "ความกังวลเรื่อง Google กระจายแหล่ง custom-ASIC ที่เปิดเผยเมื่อ 4 มิ.ย. 2026 ยังเป็นความเสี่ยงที่ไม่มีคำตอบ — ตลาด pre-price ผลลัพธ์ที่ดีไปแล้วผ่าน proxy ทำให้มาตรฐานของผลประกอบการ 3 ก.ย. ที่จะถือว่า 'ดี' สูงขึ้น",
+        "AVGO พิสูจน์แล้วว่าขยับแรงได้จาก tone ของ guidance เพียงอย่างเดียว — การร่วง 4 มิ.ย. (-12.6% วันเดียว มูลค่าตลาดหายไป ~$280B) เกิดขึ้นทั้งที่ผลประกอบการดีจริง ความเสี่ยงแบบเดียวกันนี้รออยู่ก่อนวันที่ 3 ก.ย.",
+        "10-year Treasury yield ใกล้ 4.75% (ขึ้นจาก ~4.48% ในเดือนก.ค.) ยังเป็นแรงกดดันจริงต่อหุ้น AI multiple สูงมูลค่า $1.99T แม้ Fed จะคงดอกเบี้ย",
+        "Valuation รีเรทขึ้นมา ~13% จากจุดต่ำเดือนก.ค. ในเวลาไม่ถึงเดือน โดยยังไม่มีการยืนยันเฉพาะบริษัท — การไล่ซื้อตอนนี้คือการจ่ายแพงขึ้นก่อนที่ข้อมูลจริง (3 ก.ย.) จะมาถึง"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% เมื่อ 29 ก.ค. 2026 ด้วยมติ 9-3 ภายใต้ประธาน Warsh คนใหม่ FOMC ถัดไปคือ 15-16 ก.ย. 2026 — มาหลังผลประกอบการ 3 ก.ย. ของ Broadcom เอง 2 สัปดาห์ ต่างจากไตรมาสก่อนที่ FOMC ทับซ้อนกับผลประกอบการโดยตรง",
+        "inflationNote": "เงินเฟ้อ core ยังสูง (CNBC ระบุว่าสูงสุดในรอบ 3 ปีเมื่อมิ.ย.) และ yield พันธบัตร 10 ปีขึ้นมาที่ ~4.75% (จาก ~4.48% ในก.ค.) เป็นแรงกดดันจริงและแย่ลงต่อหุ้น AI multiple สูงมูลค่า $1.99T แม้ดอกเบี้ยจะคงที่",
+        "sectorImpact": "AVGO พิสูจน์แล้วว่าร่วงได้ 12.6% วันเดียวจาก tone guidance เพียงอย่างเดียว (4 มิ.ย. 2026) และวันนี้ก็แสดงให้เห็นทิศตรงข้ามเช่นกัน — หุ้นแกว่งแรงตาม AI-demand sentiment ไม่ว่าทิศทางไหน เมื่อ FOMC ย้ายมาอยู่หลัง 3 ก.ย. แทนที่จะอยู่ก่อน ความเสี่ยงระยะใกล้หลักจึงเป็นเรื่องเฉพาะบริษัท (Google ASIC diversification) มากกว่า Fed surprise",
+        "summary": "ความเสี่ยง Fed ระดับกลาง — ลดจากระดับสูงเมื่อ 2 สัปดาห์ก่อน เพราะ FOMC 15-16 ก.ย. ไม่ทับซ้อนกับผลประกอบการ 3 ก.ย. ของ AVGO อีกต่อไป ตัดความเสี่ยงซ้อนทับออกไปชั้นหนึ่ง yield ที่สูงขึ้น (~4.75%) และเงินเฟ้อที่ยังร้อนแรงยังเป็นแรงกดดันจริงต่อ multiple แต่ความเสี่ยงระยะใกล้หลักคือเฉพาะบริษัท — guidance วันที่ 3 ก.ย. จะยืนยันหรือไม่ว่าการ rally วันนี้สมเหตุสมผล"
+      },
+      "entryStrategy": {
+        "verdict": "BUY — ความกังวลเรื่องดีมานด์ AI ที่เคยทุบหุ้นเดือนมิ.ย. กำลังถูก repriced จริงผ่าน proxy (Palantir) และพื้นฐาน (Strong Buy consensus ไม่มี Sell เป้าเฉลี่ย $527.88) ยังสนับสนุน upside แต่การขึ้นวันนี้คือ sentiment ไม่ใช่การยืนยัน — scale in แทนการไล่ซื้อ แล้วให้ผลประกอบการ 3 ก.ย. เป็นตัวตัดสินจริง",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ไล่ซื้อการ rally 6.6% วันเดียวก่อนมีข้อมูลยืนยันจาก AVGO เอง", "timing": "ตอนนี้ (aggressive)" },
+          { "note": "ย่อกลับไปโซน consolidation ก่อน rally ถ้าความมั่นใจ AI-demand วันนี้จางลงก่อน 3 ก.ย.", "timing": "ถ้าย่อ" },
+          { "note": "ย่อลึกกลับไปใกล้จุดต่ำหลังการร่วงเดือนก.ค. — เฉพาะกรณีเทขาย AI valuation ทั้งกลุ่มหรือผลประกอบการ 3 ก.ย. ผิดหวัง", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Base — ผลประกอบการ 3 ก.ย. ยืนยันการเติบโตดีมานด์ AI networking ต่อเนื่อง ถึงเป้า consensus" },
+        "tp2": { "note": "Bull — beat ชัดเจน ความกังวล Google diversification พิสูจน์ว่าเกินจริง แตะเป้าสูงสุดของ JPMorgan" },
+        "tp3": { "note": "Moon — ดีมานด์ AI networking เร่งตัวกว้างทั้งกลุ่ม ถึงเป้าสูงสุดของ Street", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดจากการ rally วันนี้และโซน consolidation ก่อนหน้า — ส่งสัญญาณว่าความมั่นใจ AI-demand จากผลประกอบการ Palantir กำลังจางลงก่อน 3 ก.ย.",
+          "hardNote": "ใกล้จุดต่ำหลังการร่วงเดือนก.ค. — จะยืนยันว่าการ rally วันนี้เป็น head-fake และความกังวล Google diversification กำลังกลับมา",
+          "rrNote": "จากราคาปัจจุบัน stop แคบ vs TP2 (Bull case)",
+          "rrWarning": "R/R ดีในทางทฤษฎี แต่ AVGO พิสูจน์แล้วว่า gap ลงเกิน 10% ได้จาก tone guidance เพียงอย่างเดียว (4 มิ.ย. 2026) — size ให้เหมาะกับความเสี่ยงแบบ binary นี้ก่อน 3 ก.ย. อย่าคิดว่า stop คือการรับประกัน"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q3 FY26", "note": "บททดสอบสำคัญว่าการ rally จาก AI-demand relief วันนี้สมเหตุสมผลหรือไม่ และการกระจายแหล่ง ASIC ของ Google กำลังฉุดการเติบโตหรือไม่" },
+        { "event": "การประชุม FOMC ถัดไป", "note": "มาหลังผลประกอบการของ AVGO 2 สัปดาห์ — ความเสี่ยงทับซ้อนกับ Fed น้อยกว่ารอบก่อน" }
+      ]
+    }
+  }
+}
