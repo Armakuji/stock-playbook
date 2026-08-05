@@ -1,0 +1,187 @@
+{
+  "ticker": "MRVL",
+  "companyName": "Marvell Technology, Inc.",
+  "companyDescription": "AI custom silicon (XPU/ASIC) + data center interconnect · $2B NVIDIA strategic investment + NVLink partnership · new CXL/optical AI-memory portfolio unveiled at FMS 2026",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-05T20:00:00.000Z",
+  "price": 218.59,
+  "priceChange": 12.81,
+  "priceNote": "Surging +12.81% today on a real, dated catalyst — new AI memory infrastructure announcements (Structera CXL portfolio, Bravera SC6 SSD controller, Photonic Fabric optical interconnect) unveiled at the FMS 2026 conference (Aug 3-4), plus semis-wide relief on reports of eased China data-center component restrictions and a broad sector rally (NVDA, MU, AMD, AVGO all up alongside it).",
+  "marketCap": "$191.4B",
+  "sector": "Technology / Semiconductors (AI Custom Silicon)",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 80,
+  "summary": "Marvell just had its best day in weeks on real news, not just a rebound: a new AI-memory infrastructure portfolio (CXL, optical interconnect, next-gen SSD controllers) unveiled at FMS 2026, layered on top of the already-real $2B NVIDIA strategic investment, NVLink integration, and 18 XPU design wins feeding a >$75B lifetime revenue funnel. The stock is still well below its 52-week high ($329.88) after the post-S&P-500-inclusion selloff, so today's +12.81% pop is a partial re-rate, not a fresh top. Q2 FY27 earnings land Aug 27, 2026, with an Investor Day following Oct 6 — two real near-term catalysts. 37-analyst consensus of $245.45 (Moderate Buy: 3 Strong Buy/27 Buy/7 Hold/0 Sell) implies modest further upside from here, but several named firms (BofA $365, UBS $340, Stifel $350, B.Riley $345) sit well above that average.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q2 FY2027 Earnings",
+      "description": "Confirmed for Aug 27, 2026. Prior guide was $2.7B revenue (±5%), EPS ~$0.91 — watch for confirmation the AI/data-center growth rate is holding after today's product-launch enthusiasm.",
+      "urgencyLabel": "~3 WEEKS",
+      "dateBadge": "Aug 27, 2026",
+      "catalystDate": "2026-08-27",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🧠",
+      "name": "FMS 2026 AI Memory Portfolio Launch",
+      "description": "Unveiled Aug 3-4, 2026: Structera X/A/S CXL portfolio, Bravera SC6 PCIe Gen6 SSD controller, and Photonic Fabric optical connectivity for AI infrastructure — real, dated product news driving today's rally, not speculation.",
+      "urgencyLabel": "JUST LANDED",
+      "dateBadge": "Aug 3-4, 2026",
+      "catalystDate": "2026-08-04",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🗓️",
+      "name": "Investor Day",
+      "description": "Marvell has scheduled an Investor Day for Oct 6, 2026 — typically a venue for updated multi-year guidance and TAM framing, relevant to how the design-win funnel gets re-rated.",
+      "urgencyLabel": "~9 WEEKS",
+      "dateBadge": "Oct 6, 2026",
+      "catalystDate": "2026-10-06",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "🤝",
+      "name": "NVIDIA $2B Strategic Investment + NVLink Integration",
+      "description": "Expanded AI infrastructure partnership with NVIDIA (late Jun 2026), including NVLink ecosystem integration — the structural validation behind the custom-silicon thesis.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Today's +12.81% move is itself a risk if the drivers don't hold — the China import-ban relief is based on reports, not a confirmed policy change, and a broad semis-sector rally can reverse as fast as it built",
+    "Sell-the-news pattern has already played out once on this exact stock (the Jun 22 S&P 500 inclusion pump-and-dump, -22% to -28% reversal) — a second sharp reversal after today's pop is a real, demonstrated risk, not hypothetical",
+    "Valuation remains rich after today's rally — was already 74-80x forward earnings before the move; today's pop pushes that multiple higher with no corresponding earnings update yet (that comes Aug 27)",
+    "Severe customer concentration — 45% of revenue flows through a single distributor, and 82% comes from the top 10 customers",
+    "Outgoing CFO Willem Meintjes sold nearly half his direct equity holdings near the stock's post-S&P-inclusion peak in June — an amicable, disclosed transition, but the sale timing dampened institutional sentiment once already and is worth remembering"
+  ],
+  "estimateDates": [
+    { "event": "Q2 FY2027 Earnings", "dateRange": "Aug 27, 2026", "note": "Confirmed date — prior guide $2.7B revenue (±5%), EPS ~$0.91", "est": "est. $2.7B rev", "highlight": "yellow" },
+    { "event": "Investor Day", "dateRange": "Oct 6, 2026", "note": "Multi-year guidance / TAM update venue", "est": "n/a", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -20, "price": 174.87 },
+    { "label": "Base", "color": "yellow", "pct": 12.3, "price": 245.45 },
+    { "label": "Bull", "color": "green", "pct": 60.1, "price": 350.00 },
+    { "label": "Moon", "color": "purple", "pct": 83.0, "price": 400.00 }
+  ],
+  "analystTargets": [
+    { "firm": "KeyCorp (John Vinh)", "target": 400, "rating": "Buy", "note": "Raised from $385 — highest named target" },
+    { "firm": "Bank of America (Vivek Arya)", "target": 365, "rating": "Buy", "note": "Raised from $240" },
+    { "firm": "Stifel Nicolaus (Tore Svanberg)", "target": 350, "rating": "Buy", "note": "Raised from $321" },
+    { "firm": "B. Riley Financial (Craig Ellis)", "target": 345, "rating": "Buy", "note": "Raised from $240" },
+    { "firm": "UBS Group (Timothy Arcuri)", "target": 340, "rating": "Buy", "note": "Raised from $230" },
+    { "firm": "Consensus (37 analysts)", "target": 245.45, "rating": "Moderate Buy", "note": "3 Strong Buy / 27 Buy / 7 Hold / 0 Sell; range $105-$400" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held at 3.50-3.75% on Jul 29, 2026 (majority vote) but 3 of 12 officials dissented in favor of a hike — a genuinely more hawkish split than the prior meeting. Next FOMC is Sep 15-16, 2026, after MRVL's Aug 27 earnings, so no direct overlap this cycle. 10-year Treasury yield sits elevated near 4.7-4.8%.",
+    "inflationNote": "Core PCE still 3.3% YoY, well above the 2% target — CPI prints Aug 12 and jobs data Aug 7 are the next data points that could move the hawkish-dissent narrative before MRVL's own earnings.",
+    "sectorImpact": "High-multiple AI-infrastructure names like MRVL (still ~75-85x+ forward earnings even after some digestion) are more exposed to a higher-for-longer repricing than the broad market if the Fed's hawkish tilt hardens.",
+    "summary": "MEDIUM — the AI-infrastructure fundamentals (NVIDIA partnership, new AI-memory portfolio, design-win pipeline) are real and largely macro-independent, but MRVL's demonstrated sensitivity to sentiment/flow shifts (the Jun-Jul reversal) means a genuine hawkish surprise before Aug 27 would likely hit this name harder than a typical core semis holding."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 218.59, "note": "Current price, post-FMS-2026 rally", "timing": "Now" },
+      { "label": "Entry 2", "level": 195, "rangeMax": 205, "note": "Pullback zone if today's rally partially reverses (sell-the-news pattern precedent)", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 175, "note": "Deep dip — broad semis selloff or a hawkish Fed surprise before Aug 27", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 245.45, "pct": 12.3, "note": "Base — consensus average, stock holds most of today's gain into earnings" },
+    "tp2": { "price": 350.00, "pct": 60.1, "note": "Bull — clean Aug 27 beat + AI-memory portfolio traction confirmed, hits the BofA/Stifel/UBS/B.Riley cluster" },
+    "tp3": { "price": 400.00, "pct": 83.0, "note": "Moon — Investor Day raises multi-year guidance + design-win funnel accelerates, hits KeyCorp's high target", "moon": true },
+    "stopLoss": {
+      "tight": 196.73, "tightPct": -10.0, "tightNote": "Below Entry 2 zone — today's rally reversing beyond normal digestion",
+      "hard": 174.87, "hardPct": -20.0, "hardNote": "Deep breach — a genuine thesis warning (customer concentration event, hawkish Fed shock, or the China relief story unwinding)",
+      "riskReward": "6.0 : 1", "rrNote": "From Entry 2 ($200 mid) tight stop vs TP2", "rrWarning": "Strong R/R, but this exact stock has already shown it can give back a big single-day/week pop fast — size with that precedent in mind"
+    },
+    "verdict": "BUY — today's rally is grounded in real product news (FMS 2026 AI-memory portfolio) layered on an already-intact NVIDIA/XPU thesis, not pure multiple expansion. DCA now given the demonstrated volatility, add on any pullback toward the preferred zone ahead of Aug 27 earnings.",
+    "approach": "DCA"
+  },
+  "comparableCases": [
+    {
+      "ticker": "MRVL",
+      "event": "S&P 500 Inclusion Sell-the-News Reversal",
+      "date": "Jun-Jul 2026",
+      "movePct": -22,
+      "days": 14,
+      "outcome": "bad",
+      "note": "Same-company, most directly relevant precedent for how sharply this stock can give back a big pop once the news is fully priced in — worth remembering after today's +12.81% move."
+    },
+    {
+      "ticker": "MRVL",
+      "event": "FMS 2026 AI memory portfolio launch (Structera CXL, Bravera SSD controller, Photonic Fabric)",
+      "date": "Aug 2026",
+      "movePct": 12.81,
+      "days": 1,
+      "outcome": "good",
+      "note": "The catalyst driving this report — a real, dated product announcement plus a semis-sector-wide relief rally on China import-restriction reports."
+    },
+    {
+      "ticker": "AVGO",
+      "event": "Broad semis-sector AI-demand relief rally (same Aug 2026 session)",
+      "date": "Aug 2026",
+      "movePct": 6.6,
+      "days": 1,
+      "outcome": "good",
+      "note": "AVGO, NVDA, MU, AMD all rallied alongside MRVL the same session — confirms today's move has a genuine sector-wide component, not just MRVL-specific news."
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/MRVL/",
+    "https://www.marketbeat.com/stocks/NASDAQ/MRVL/price-target/",
+    "https://www.marvell.com/company/newsroom.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Marvell มีวันที่ดีที่สุดในรอบหลายสัปดาห์จากข่าวจริง ไม่ใช่แค่การรีบาวด์ — เปิดตัว AI memory portfolio ใหม่ (CXL, optical interconnect, SSD controller รุ่นใหม่) ที่งาน FMS 2026 ซ้อนทับกับ thesis NVIDIA $2B + NVLink + 18 XPU design win ที่มีอยู่แล้ว หุ้นยังต่ำกว่า 52-week high ($329.88) มากหลัง selloff จากการเข้า S&P 500 ดังนั้นการบวก 12.81% วันนี้คือการ re-rate บางส่วน ไม่ใช่จุดสูงสุดใหม่ Q2 FY27 earnings มา 27 ส.ค. 2026 ตามด้วย Investor Day 6 ต.ค. — catalyst จริง 2 ตัวที่รออยู่ Consensus นักวิเคราะห์ 37 คนที่ $245.45 (Moderate Buy) บ่งชี้ upside เพิ่มเติมพอประมาณจากตรงนี้ แต่หลายบริษัทให้เป้าสูงกว่าเฉลี่ยมาก (BofA $365, UBS $340, Stifel $350, B.Riley $345)",
+      "priceNote": "บวกแรง 12.81% วันนี้จาก catalyst จริงที่มีวันที่ชัดเจน — ข่าว AI memory infrastructure ใหม่ (Structera CXL portfolio, Bravera SC6 SSD controller, Photonic Fabric optical interconnect) เปิดตัวที่งาน FMS 2026 (3-4 ส.ค.) บวกกับ semis ทั้งกลุ่มโล่งใจจากรายงานผ่อนคลายข้อจำกัดชิ้นส่วน data center ต่อจีน และกลุ่ม semis รีบาวด์กว้าง (NVDA, MU, AMD, AVGO ขึ้นพร้อมกัน)",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "ผลประกอบการ Q2 FY2027", "description": "ยืนยันวันที่ 27 ส.ค. 2026 guide เดิม revenue $2.7B (±5%) EPS ~$0.91 — จับตาว่าการเติบโต AI/data center ยังแข็งแรงหลังกระแสบวกจากงานเปิดตัวผลิตภัณฑ์วันนี้" },
+        { "name": "เปิดตัว AI Memory Portfolio ที่งาน FMS 2026", "description": "เปิดตัว 3-4 ส.ค. 2026: Structera X/A/S CXL portfolio, Bravera SC6 PCIe Gen6 SSD controller, และ Photonic Fabric optical connectivity — ข่าวผลิตภัณฑ์จริงที่มีวันที่ชัดเจน เป็นตัวขับเคลื่อนการบวกวันนี้" },
+        { "name": "Investor Day", "description": "กำหนดจัด Investor Day 6 ต.ค. 2026 — มักเป็นเวทีอัปเดต guidance หลายปีและกรอบ TAM ใหม่" },
+        { "name": "NVIDIA ลงทุน $2B + NVLink Integration", "description": "ขยาย partnership AI infrastructure กับ NVIDIA (ปลายมิ.ย. 2026) รวม NVLink ecosystem integration — การยืนยัน thesis custom-silicon เชิงโครงสร้าง" }
+      ],
+      "risks": [
+        "การบวก 12.81% วันนี้เองก็เป็นความเสี่ยงถ้าปัจจัยขับเคลื่อนไม่ยั่งยืน — ข่าวผ่อนคลายข้อจำกัดต่อจีนยังเป็นแค่รายงาน ไม่ใช่นโยบายที่ยืนยันแล้ว และการรีบาวด์ทั้งกลุ่ม semis กลับตัวได้เร็วพอๆ กับที่ขึ้นมา",
+          "รูปแบบ sell-the-news เคยเกิดขึ้นแล้วจริงกับหุ้นตัวนี้ (การเข้า S&P 500 22 มิ.ย. ร่วง -22% ถึง -28%) — การกลับตัวแรงรอบสองหลังบวกวันนี้เป็นความเสี่ยงจริงที่เคยเกิดแล้ว ไม่ใช่สมมติฐาน",
+        "Valuation ยังสูงชันหลังบวกวันนี้ — ก่อนหน้านี้ก็อยู่ที่ 74-80x forward earnings แล้ว การบวกวันนี้ดัน multiple ขึ้นไปอีกโดยยังไม่มีการอัปเดตผลประกอบการรองรับ (ต้องรอ 27 ส.ค.)",
+        "Customer concentration รุนแรง — 45% revenue ผ่าน distributor รายเดียว 82% จาก top 10 ลูกค้า",
+        "CFO ที่กำลังออก Willem Meintjes ขายหุ้นเกือบครึ่งใกล้จุดสูงสุดหลังเข้า S&P 500 เมื่อมิ.ย. — การเปลี่ยนผ่านราบรื่นและเปิดเผยแล้ว แต่จังหวะขายเคยกระทบ sentiment สถาบันมาแล้วครั้งหนึ่ง ควรจำไว้"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% เมื่อ 29 ก.ค. 2026 (เสียงข้างมาก) แต่กรรมการ 3 ใน 12 คน dissent อยากขึ้นดอกเบี้ย — hawkish กว่าการประชุมก่อนหน้าจริง FOMC ถัดไป 15-16 ก.ย. 2026 มาหลังผลประกอบการ MRVL 27 ส.ค. จึงไม่ทับซ้อนรอบนี้ yield พันธบัตร 10 ปีอยู่สูงใกล้ 4.7-4.8%",
+        "inflationNote": "Core PCE ยังอยู่ที่ 3.3% YoY สูงกว่าเป้าหมาย 2% มาก — CPI 12 ส.ค. และ jobs 7 ส.ค. เป็นข้อมูลถัดไปที่อาจขยับกระแส hawkish dissent ก่อนผลประกอบการ MRVL เอง",
+        "sectorImpact": "หุ้น AI-infrastructure valuation สูง (ยัง ~75-85x+ forward earnings แม้จะย่อยข่าวไปบ้าง) เสี่ยง repricing มากกว่าตลาดรวมถ้า Fed เอียง hawkish มากขึ้น",
+        "summary": "ปานกลาง — fundamental AI-infrastructure จริงและ macro-independent ส่วนใหญ่ แต่ MRVL แสดงความ sensitive ต่อ sentiment/flow มาแล้ว (การกลับตัวมิ.ย.-ก.ค.) hawkish surprise จริงก่อน 27 ส.ค. น่าจะกระทบหุ้นนี้แรงกว่าหุ้น semis core ทั่วไป"
+      },
+      "entryStrategy": {
+        "verdict": "BUY — การบวกวันนี้มีฐานจากข่าวผลิตภัณฑ์จริง (AI-memory portfolio งาน FMS 2026) ซ้อนทับ thesis NVIDIA/XPU ที่แข็งแรงอยู่แล้ว ไม่ใช่แค่ multiple ขยายตัว DCA ตอนนี้ตามความผันผวนที่เคยเกิด เพิ่มถ้าย่อถึงโซน preferred ก่อนผลประกอบการ 27 ส.ค.",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน หลังบวกจากข่าว FMS 2026", "timing": "ตอนนี้" },
+          { "note": "โซนย่อถ้าการบวกวันนี้กลับตัวบางส่วน (ตามรูปแบบ sell-the-news เดิม)", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงลึก — semis selloff กว้าง หรือ Fed hawkish surprise ก่อน 27 ส.ค.", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — แตะเป้าเฉลี่ย consensus หุ้นรักษากำไรวันนี้ไว้ได้ส่วนใหญ่เข้าสู่ผลประกอบการ" },
+        "tp2": { "note": "Bull — บีทผลประกอบการ 27 ส.ค. สะอาด + AI-memory portfolio มี traction จริง แตะกลุ่มเป้า BofA/Stifel/UBS/B.Riley" },
+        "tp3": { "note": "Moon — Investor Day ปรับ guidance หลายปีขึ้น + pipeline design-win เร่งตัว แตะเป้าสูงสุดของ KeyCorp", "moon": true },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่าโซน Entry 2 = การบวกวันนี้กลับตัวเกินการย่อยข่าวปกติ",
+          "hardNote": "หลุดลึก = สัญญาณเตือนระดับ thesis จริง (customer concentration event, Fed hawkish shock, หรือข่าวผ่อนคลายจีนพลิกกลับ)",
+          "rrNote": "จาก Entry 2 ($200 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R ดีมาก แต่หุ้นตัวนี้เคยคืนกำไรก้อนใหญ่เร็วมาแล้ว ควร size ตามประวัตินี้"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q2 FY2027", "note": "ยืนยันวันที่ 27 ส.ค. 2026" },
+        { "event": "Investor Day", "note": "6 ต.ค. 2026" }
+      ]
+    }
+  }
+}

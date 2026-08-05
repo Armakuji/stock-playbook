@@ -1,0 +1,166 @@
+{
+  "ticker": "IQMX",
+  "companyName": "IQM Quantum Computers Oyj",
+  "companyDescription": "Superconducting full-stack quantum computers · First European quantum company on a major US exchange (Nasdaq Jul 2, 2026) · 26 systems sold worldwide · €102M+ order backlog · Production Quantum on-premises model for research, government & enterprise",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-05T22:00:00.000Z",
+  "price": 9.65,
+  "priceChange": -3.45,
+  "priceNote": "Trading near its 52-week low ($9.18), down from the $12.50 level of the last check — now below the SPAC's own $10 PIPE-floor stop level, a threshold the prior report itself called 'listing thesis broken.' Genuinely good Q2 2026 results landed yesterday (Aug 4) and the stock still fell — a real, persistent distrust pattern, not a fundamentals problem.",
+  "marketCap": "$2.3B",
+  "sector": "Technology / Quantum Computing",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Moonshot",
+  "score": 58,
+  "summary": "IQM reported its first results as a US-listed public company yesterday (Aug 4): H1 2026 revenue of €8.9M at a 46% gross margin, order backlog up sharply to €102.1M (from €69.1M at Jun 30, from €67M at the last check), and a new government-linked contract — Finland's LUMI AI Factory selected IQM to deploy a Halocene H4 quantum system by 2027, worth roughly a full year of 2025 revenue. FY26 guidance calls for €65-75M in new order intake and €42-47M revenue. Despite all of that, the stock fell -3.45% on the news and now sits at its 52-week low, already below the $10 SPAC PIPE-floor level the last report flagged as a thesis-break threshold — the market's skepticism about post-SPAC quantum names is outweighing genuinely improving fundamentals for now. The real remaining binary — a US/EU government quantum-equity award, the kind that sent RGTI/QBTS/Infleqtion up 30%+ in May 2026 — is still unconfirmed and undated.",
+  "catalysts": [
+    {
+      "icon": "🏛️",
+      "name": "US/EU Government Quantum Contract Wave",
+      "description": "IQMX was excluded from the May 2026 $2B US Commerce Dept quantum equity round that sent RGTI/QBTS/Infleqtion up 30%+ in a single day. The LUMI AI Factory deal (Finland, by 2027) is a real government-adjacent win but smaller and EU-based — a genuine US CHIPS/NATO-style award is still the binary moonshot catalyst, still unconfirmed.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "⚡",
+      "name": "Fault-Tolerant Roadmap Milestone",
+      "description": "IQM is deploying proceeds toward fault-tolerant quantum computing. A demonstrated error-correction or qubit-scaling milestone would differentiate IQM from pre-revenue quantum SPACs and justify a peer-multiple re-rating.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "📈",
+      "name": "FY2026 Guidance Delivery",
+      "description": "Management guided €65-75M new order intake and €42-47M FY26 revenue at the Aug 4 print — the next checkpoint is whether Q3/H2 results track toward that range, which would test whether yesterday's negative price reaction was overdone.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "H2 2026",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "The stock fell -3.45% on Aug 4 despite genuinely good Q2 results (backlog +48% to €102M, 46% gross margin, new LUMI government-linked contract) — a real, persistent negative-sentiment pattern that isn't fixed by fundamentals alone",
+    "Already trading below the $10 SPAC PIPE-floor level that the prior report's own framework called 'listing thesis broken' — this isn't a hypothetical technical stop anymore, it's the current price, meaning the stock is now trading on pure sentiment/momentum rather than a clean technical support",
+    "Continued warrant/dilution overhang — Kreos Capital exercised 577,237 new shares on Jul 16, 2026, and further warrant exercises remain a live dilution risk",
+    "The US government quantum-equity round (the real binary moonshot catalyst) already passed IQMX over once in May 2026 — no guarantee of inclusion in any future round",
+    "Net loss is deepening (-$63.86M TTM) — cash burn is real even though the ~€270M+ remaining balance implies a long runway"
+  ],
+  "estimateDates": [
+    { "event": "FY2026 guidance delivery", "dateRange": "H2 2026", "note": "€65-75M new order intake / €42-47M revenue guided Aug 4 — watch for tracking vs guide", "est": "€42-47M FY rev", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -30, "price": 6.75 },
+    { "label": "Base", "color": "yellow", "pct": 55, "price": 14.96 },
+    { "label": "Bull", "color": "green", "pct": 140, "price": 23.16 },
+    { "label": "Moon", "color": "purple", "pct": 270, "price": 35.71 }
+  ],
+  "analystTargets": [
+    { "firm": "Limited coverage", "target": 22, "rating": "n/a", "note": "Analyst coverage remains thin post-SPAC; treat any single target with caution" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held at 3.50-3.75% on Jul 29 with 3 hawkish dissents favoring a hike — rate-hike tail risk into year-end hasn't gone away",
+    "inflationNote": "Core PCE still 3.3% YoY, well above the 2% target",
+    "sectorImpact": "Growth/speculative tech like quantum computing is rate-sensitive, but IQMX's own post-earnings price action and the government-contract binary dominate the near-term stock story far more than macro",
+    "summary": "Macro risk is secondary here — sentiment toward this specific post-SPAC name and the government-contract binary are what move this stock"
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 9.65, "note": "Current price, near the 52-week low", "timing": "Now" },
+      { "label": "Entry 2", "level": 9.00, "rangeMax": 9.30, "note": "Retest of the 52-week low ($9.18) — the last identifiable support given the SPAC floor is already broken", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 7.50, "note": "Deep dip if quantum-sector sentiment de-rates further", "timing": "If sector selloff" }
+    ],
+    "tp1": { "price": 14.96, "pct": 55, "note": "Base — backlog conversion tracks the FY26 guide, no fresh catalyst needed" },
+    "tp2": { "price": 23.16, "pct": 140, "note": "Bull — a real US/EU government quantum-contract win lands" },
+    "tp3": { "price": 35.71, "pct": 270, "note": "Moon · US CHIPS-style equity-stake inclusion + backlog conversion accelerates", "moon": true },
+    "stopLoss": {
+      "tight": 8.75, "tightPct": -9.3, "tightNote": "Below the 52-week low — the last remaining technical reference point",
+      "hard": 7.00, "hardPct": -27.5, "hardNote": "Deep breach — backlog conversion stalling or a failed government-contract bid confirmed",
+      "riskReward": "15 : 1 (vs TP2)", "rrNote": "From Entry 2 ($9.15 mid) tight stop vs TP2", "rrWarning": "Convex on paper, but this name has shown good news doesn't stop the slide — treat the stop as real, not theoretical"
+    },
+    "verdict": "SPECULATIVE — genuinely improving fundamentals (backlog, margin, a real government-linked contract) but the market isn't rewarding them yet. Very small starter only, and only near the 52-week low, not chasing any bounce.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "Post-SPAC quantum names have generally NOT shown a reliable pre-earnings runup pattern — sentiment here has been consistently negative regardless of the news, unlike a typical binary-catalyst setup",
+    "preRunupTiming": "n/a — this name has not shown a positive pre-event pattern",
+    "preRunupPct": "n/a",
+    "postWin": {
+      "avgPct": 31,
+      "range": "+30% to +33%",
+      "note": "The May 2026 US government quantum equity round sent D-Wave +33%, Rigetti +30%, Infleqtion +31% in a single day — the direct precedent for what a real US government contract win would do for IQMX, since it was excluded from that exact round",
+      "exampleDate": "May 2026 (DWAV/RGTI/QUBT sector round)"
+    },
+    "postLose": {
+      "avgPct": -20,
+      "range": "-3% to -30%",
+      "note": "IQMX's own pattern is the relevant downside case: even genuinely good Q2 2026 results (backlog +48%, new contract) produced a -3.45% decline on Aug 4 — a persistent sentiment discount that could deepen further on any actual bad news",
+      "exampleDate": "Aug 2026 (IQMX's own Q2 reaction)"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "Genuinely improving fundamentals are not being rewarded by the market, and the stock is already trading through its own prior thesis-break level — size very small until sentiment shows any sign of turning"
+    },
+    "stopPreCatalyst": { "pct": -9, "price": 8.75, "note": "Below the 52-week low — the last remaining technical reference, since the SPAC PIPE-floor level is already broken" },
+    "stopPostCatalyst": { "pct": -20, "note": "If backlog conversion stalls or a government-contract bid is confirmed lost, exit — don't wait for sentiment to turn on its own" }
+  },
+  "comparableCases": [
+    { "ticker": "DWAV", "event": "May 2026 US Commerce Dept quantum equity round inclusion", "date": "May 2026", "movePct": 33, "days": 1, "outcome": "good", "note": "The direct precedent for what a real US government quantum award does for a stock in this group — IQMX was excluded from this exact round and remains a candidate for a future one." },
+    { "ticker": "IQMX", "event": "Q2 2026 earnings (first as a public company): backlog +48%, 46% gross margin, new LUMI government-linked contract", "date": "Aug 4, 2026", "movePct": -3.45, "days": 1, "outcome": "bad", "note": "Same-company, most current precedent — proves good news alone isn't enough to move this stock right now; sentiment is the binding constraint, not fundamentals." },
+    { "ticker": "RGTI", "event": "May 2026 US Commerce Dept quantum equity round inclusion", "date": "May 2026", "movePct": 30, "days": 1, "outcome": "good", "note": "A second name from the same May 2026 government round, reinforcing the size of move a real US award produces in this sector." }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/IQMX/",
+    "https://www.stocktitan.net/news/IQMX/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "IQM รายงานผลครั้งแรกในฐานะบริษัทมหาชนในสหรัฐฯ เมื่อวานนี้ (4 ส.ค.) — รายได้ H1 2026 €8.9M กำไรขั้นต้น 46% backlog พุ่งขึ้นเป็น €102.1M (จาก €69.1M ณ 30 มิ.ย. จาก €67M ในเช็คครั้งก่อน) และมีสัญญาใหม่เชื่อมโยงภาครัฐ — LUMI AI Factory ของฟินแลนด์เลือก IQM ติดตั้งระบบควอนตัม Halocene H4 ภายในปี 2027 มูลค่าราวเท่ารายได้ทั้งปี 2025 FY26 guide คือ order intake €65-75M รายได้ €42-47M แม้จะมีข่าวดีทั้งหมดนี้ หุ้นกลับลง -3.45% และตอนนี้อยู่ที่ 52-week low แล้ว ต่ำกว่าระดับ $10 SPAC PIPE-floor ที่รายงานครั้งก่อนเรียกว่า 'thesis พัง' ไปแล้ว — ความสงสัยของตลาดต่อหุ้น quantum หลัง SPAC ยังมีน้ำหนักมากกว่าพื้นฐานที่ดีขึ้นจริงตอนนี้ catalyst ตัวจริงที่เหลืออยู่ — สัญญาภาครัฐสหรัฐ/EU แบบที่เคยส่ง RGTI/QBTS/Infleqtion ขึ้น 30%+ ในเดือนพ.ค. 2026 — ยังไม่ยืนยันและไม่มีวันที่แน่นอน",
+      "priceNote": "เทรดใกล้ 52-week low ($9.18) ลงจากระดับ $12.50 ในเช็คครั้งก่อน ตอนนี้ต่ำกว่าระดับ stop $10 SPAC PIPE-floor ที่รายงานก่อนหน้าเรียกว่า 'listing thesis พัง' แล้ว ผล Q2 2026 ที่ออกมาดีจริงเมื่อวาน (4 ส.ค.) หุ้นก็ยังลง — เป็นสัญญาณความไม่ไว้วางใจที่เกิดขึ้นจริงต่อเนื่อง ไม่ใช่ปัญหาพื้นฐาน",
+      "scoreLabel": "Moonshot",
+      "catalysts": [
+        { "name": "สัญญาภาครัฐสหรัฐ/EU ด้าน Quantum", "description": "IQMX ถูกตัดออกจากรอบทุนภาครัฐสหรัฐ $2B พ.ค. 2026 ที่ส่ง RGTI/QBTS/Infleqtion ขึ้น 30%+ ในวันเดียว ดีล LUMI (ฟินแลนด์ ภายในปี 2027) เป็นชัยชนะเชื่อมโยงภาครัฐจริงแต่เล็กกว่าและอยู่ใน EU — สัญญาภาครัฐสหรัฐแบบ CHIPS/NATO ยังเป็น catalyst moonshot ตัวจริงที่ยังไม่ยืนยัน" },
+        { "name": "Fault-Tolerant Roadmap Milestone", "description": "IQM ทุ่มเงินไปที่ fault-tolerant quantum computing ความคืบหน้าด้าน error-correction หรือ qubit-scaling จะแยก IQM จาก quantum SPAC ที่ยังไม่มีรายได้" },
+        { "name": "การส่งมอบ FY2026 Guidance", "description": "guide order intake €65-75M รายได้ FY26 €42-47M ที่ประกาศ 4 ส.ค. — จุดถัดไปคือผล Q3/H2 จะตามเป้าไหม" }
+      ],
+      "risks": [
+        "หุ้นลง -3.45% วันที่ 4 ส.ค. แม้ผล Q2 จะดีจริง (backlog +48% เป็น €102M กำไรขั้นต้น 46% สัญญาใหม่เชื่อมภาครัฐ LUMI) — สัญญาณความไม่ไว้วางใจที่เกิดขึ้นจริงต่อเนื่อง ไม่ใช่แก้ได้ด้วยพื้นฐานอย่างเดียว",
+        "เทรดต่ำกว่าระดับ $10 SPAC PIPE-floor ที่รายงานก่อนหน้าเรียกว่า 'listing thesis พัง' แล้ว — ไม่ใช่ stop สมมติอีกต่อไป แต่เป็นราคาปัจจุบัน หมายความว่าหุ้นเทรดตาม sentiment/momentum ล้วนๆ ไม่ใช่แนวรับทางเทคนิคที่ชัดเจน",
+        "ยัง dilution overhang จาก warrant ต่อเนื่อง — Kreos Capital ใช้สิทธิ warrant 577,237 หุ้นใหม่เมื่อ 16 ก.ค. 2026 และยังมี warrant ค้างอยู่",
+        "รอบทุนภาครัฐสหรัฐด้าน quantum (catalyst moonshot ตัวจริง) เคยข้าม IQMX ไปแล้วครั้งหนึ่งในพ.ค. 2026 — ไม่รับประกันว่าจะได้เข้ารอบถัดไป",
+        "ขาดทุนสุทธิลึกขึ้น (-$63.86M TTM) — เผาเงินสดจริงแม้เงินคงเหลือ ~€270M+ จะบ่งบอก runway ยาว"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% แต่มี hawkish dissent 3 เสียง — ความเสี่ยงขึ้นดอกเบี้ยช่วงปลายปียังไม่หมด",
+        "inflationNote": "Core PCE ยังอยู่ที่ 3.3% YoY สูงกว่าเป้าหมาย 2% มาก",
+        "sectorImpact": "หุ้น growth/speculative tech อย่าง quantum computing ไวต่อดอกเบี้ย แต่ปฏิกิริยาต่อผลประกอบการของ IQMX เองและ catalyst สัญญาภาครัฐมีน้ำหนักมากกว่า macro",
+        "summary": "ความเสี่ยง macro เป็นเรื่องรอง — sentiment ต่อหุ้นตัวนี้เฉพาะเจาะจงและ catalyst สัญญาภาครัฐคือตัวกำหนดทิศทางหุ้นจริง"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — พื้นฐานดีขึ้นจริง (backlog, margin, สัญญาภาครัฐจริง) แต่ตลาดยังไม่ให้รางวัล เข้าไม้เล็กมากเท่านั้น และเฉพาะใกล้ 52-week low ไม่ไล่ราคาตอนเด้ง",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน ใกล้ 52-week low", "timing": "ตอนนี้" },
+          { "note": "ทดสอบ 52-week low ($9.18) — แนวรับสุดท้ายที่ระบุได้เพราะ SPAC floor หลุดไปแล้ว", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงลึกถ้า sentiment กลุ่ม quantum แย่ลงอีก", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Base — backlog แปลงตามเป้า FY26 ไม่ต้องมี catalyst ใหม่" },
+        "tp2": { "note": "Bull — ได้สัญญาภาครัฐสหรัฐ/EU จริง" },
+        "tp3": { "note": "Moon · ได้เข้ารอบทุนภาครัฐสหรัฐแบบ CHIPS + backlog แปลงเร็วขึ้น", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุด 52-week low — จุดอ้างอิงทางเทคนิคสุดท้ายที่เหลืออยู่",
+          "hardNote": "หลุดลึก = backlog แปลงสะดุดหรือแพ้ประมูลสัญญาภาครัฐยืนยันแล้ว",
+          "rrNote": "จาก Entry 2 ($9.15 กลาง) stop แคบ vs TP2",
+          "rrWarning": "Convex ในทางทฤษฎี แต่หุ้นตัวนี้แสดงแล้วว่าข่าวดีไม่ทำให้หยุดร่วง ควรมอง stop เป็นเรื่องจริง ไม่ใช่ทฤษฎี"
+        }
+      },
+      "estimateDates": [
+        { "event": "การส่งมอบ FY2026 Guidance", "note": "guide 4 ส.ค. — จับตาผล H2 เทียบเป้า" }
+      ]
+    }
+  }
+}

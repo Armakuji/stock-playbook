@@ -1,0 +1,209 @@
+{
+  "ticker": "CRDO",
+  "companyName": "Credo Technology Group Holding Ltd",
+  "companyDescription": "AI Data Center Networking · High-speed connectivity silicon (AEC cables, SerDes, optical/silicon-photonics via DustPhotonics, line card chips) enabling hyperscaler AI clusters — the bandwidth backbone of AI infrastructure",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-05T21:00:00.000Z",
+  "price": 237.92,
+  "priceChange": 8.96,
+  "priceNote": "$237.92, +8.96% today in a broad semiconductor 'risk-on' rally (MRVL +12.8%, INTC +10.8%, AMD +7%, AVGO +6.6%, MU +7.6%) as the S&P 500 hits record highs on its best 4-day stretch in over a year — not CRDO-specific news. Stock had dipped to ~$218 just before today's pop, right inside the prior report's $215-225 preferred dip zone. Credo is also showcasing new AI memory-interconnect silicon at the FMS 2026 conference (Aug 4-6) this week.",
+  "marketCap": "$44.4B",
+  "sector": "Technology / Semiconductors",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 81,
+  "summary": "CRDO rallied 8.96% today as part of a sector-wide semiconductor risk-on move (SOX-linked names all up 6-13%) rather than a company-specific catalyst, recovering most of the July guidance-overhang pullback — the stock briefly touched ~$218 (inside the prior report's preferred entry zone) before today's pop. Fundamentals remain intact: FY26 revenue grew 205.7% YoY to $1.34B, Q1 FY27 is guided to $465-475M, the DustPhotonics acquisition (closed May 28) adds a >$500M FY27 optical-revenue growth vector, and Credo is showcasing new AI-memory interconnect silicon at FMS 2026 this week. Analyst consensus stays bullish (19 analysts, avg target $266, high $350) with the next earnings print (est. Sep 2, unconfirmed) the key forward catalyst.",
+  "catalysts": [
+    {
+      "icon": "💾",
+      "name": "FMS 2026 Product Showcase",
+      "description": "Aug 4-6, 2026 (Future of Memory and Storage conference). Credo is showcasing its OmniConnect Weaver AI memory interconnect (claimed up to 25x memory density vs HBM4) and PCIe 6.0 Toucan retimer, and is a finalist for two FMS Best of Show Awards — a near-term proof point for diversification beyond AEC cables into AI memory connectivity.",
+      "urgencyLabel": "THIS WEEK",
+      "dateBadge": "Aug 4-6, 2026",
+      "catalystDate": "2026-08-04",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "📊",
+      "name": "Q1 FY27 Earnings",
+      "description": "Date not yet officially confirmed by the company — analyst-estimated Sep 2, 2026 based on prior-year cadence (last report cited Sep 9; treat as unconfirmed until Credo announces). Guided revenue $465-475M (+6-9% QoQ). Key test of whether today's sector rally has fundamental legs for CRDO specifically.",
+      "urgencyLabel": "~28 DAYS (est.)",
+      "dateBadge": "~Sep 2, 2026 (est.)",
+      "catalystDate": "2026-09-02",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🔌",
+      "name": "DustPhotonics Optical Ramp + Hyperscaler AI Fabric Expansion",
+      "description": "DustPhotonics acquisition (closed May 28, 2026) adds silicon-photonics/optical connectivity, expected to generate >$500M in FY2027 optical revenue — diversifying beyond AEC cables as hyperscalers (Microsoft, Google, Amazon) scale 800G/1.6T optical AI cluster interconnects. Structural, multi-year revenue driver.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "FY2027",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Valuation ~95x P/E — priced for perfection; any growth deceleration or guide-down triggers sharp derating",
+    "Customer concentration — a small number of hyperscaler customers represent an outsized share of revenue; any capex pause is a revenue cliff",
+    "Competition from Marvell (MRVL) and Broadcom (AVGO), both scaling AI networking/optical silicon aggressively — MRVL outgained CRDO today (+12.8% vs +8.96%), a reminder of relative share-of-voice risk",
+    "Today's move is macro/sector-driven (broad semis risk-on, S&P record highs), not CRDO-specific fundamental news — a reversal in risk sentiment could hit the high-beta stock disproportionately"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q1 FY27 Earnings",
+      "dateRange": "~Sep 2, 2026 (est., unconfirmed)",
+      "note": "Guide $465-475M rev — next beat-and-raise test; date is analyst-estimated, not yet confirmed by Credo",
+      "est": "est. EPS $0.39",
+      "highlight": "blue"
+    },
+    {
+      "event": "TP1 Target",
+      "dateRange": "Q3-Q4 2026",
+      "note": "Consensus analyst target (19 analysts)",
+      "est": "$266",
+      "highlight": "yellow"
+    },
+    {
+      "event": "TP2 Target",
+      "dateRange": "H2 2026 / FY2027",
+      "note": "Stifel/BofA bull case",
+      "est": "$340",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -25, "price": 179 },
+    { "label": "Base", "color": "yellow", "pct": 12, "price": 266 },
+    { "label": "Bull", "color": "green", "pct": 43, "price": 340 },
+    { "label": "Moon", "color": "purple", "pct": 74, "price": 415 }
+  ],
+  "analystTargets": [
+    { "firm": "Stifel Nicolaus", "target": 350, "rating": "Buy" },
+    { "firm": "Bank of America", "target": 340, "rating": "Buy" },
+    { "firm": "Barclays", "target": 300, "rating": "Buy" },
+    { "firm": "Susquehanna", "target": 250, "rating": "Buy" },
+    { "firm": "Consensus (19 analysts)", "target": 266, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds at 3.75%; next FOMC decision Sep 16, 2026 with only ~43% market-implied odds of a 25bp cut per CME FedWatch — meaningful two-sided uncertainty for a richly-valued growth semi like CRDO.",
+    "inflationNote": "Semiconductor component costs face some inflation pressure, but CRDO's custom silicon and premium AEC/optical pricing power largely absorb it.",
+    "sectorImpact": "AI datacenter capex remains the dominant structural driver, largely independent of near-term Fed moves — but today's broad 'risk-on' rally (SOX-linked names +6-13%, S&P 500 record highs) shows the sector is still highly sensitive to macro sentiment swings, not just fundamentals.",
+    "summary": "MEDIUM — AI networking/optical demand is structural and multi-year, but CRDO's ~95x P/E multiple makes it vulnerable to hawkish surprises or a reversal of today's risk-on sentiment; the Sep FOMC (only ~43% cut odds priced) is the next macro checkpoint."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 237.92, "note": "Current — chasing today's sector-wide risk-on pop (+8.96%); not an ideal add point", "timing": "Now" },
+      { "label": "Entry 2", "level": 210, "rangeMax": 222, "note": "Tested support — stock touched ~$218 just before today's rally, validating this as the real dip zone", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 185, "note": "Deep dip — matches bear-case / broader semi-sector selloff level", "timing": "If sector selloff" }
+    ],
+    "tp1": { "price": 266, "pct": 11.8, "note": "Consensus analyst target (19 analysts)" },
+    "tp2": { "price": 340, "pct": 42.9, "note": "Stifel/BofA bull case" },
+    "tp3": { "price": 415, "pct": 74.4, "note": "Moon — multi-hyperscaler + optical ramp · FY2027", "moon": true },
+    "stopLoss": {
+      "tight": 205, "tightPct": -13.8, "tightNote": "Below the pre-rally support test (~$205-210)",
+      "hard": 179, "hardPct": -24.8, "hardNote": "Bear case — hyperscaler capex pause / thesis break",
+      "riskReward": "3.1 : 1", "rrNote": "Entry at tight-stop dip zone vs TP2", "rrWarning": "Good R/R — thesis intact; today's move is macro/sector-driven, not a fundamental re-rate, so dips remain the better entry than chasing"
+    },
+    "verdict": "Today's +8.96% is a broad semis risk-on rally (MRVL +12.8%, INTC +10.8%, AMD +7%), not CRDO-specific news — the stock had dipped to ~$218 (right in the prior preferred zone) just before it. FMS 2026 (Aug 4-6) is a real near-term proof point; earnings (est. Sep 2, unconfirmed) is the next binary. Scale in on dips toward $210-222 rather than chasing today's pop above $235.",
+    "approach": "DCA"
+  },
+  "comparableCases": [
+    {
+      "ticker": "CRDO",
+      "event": "Q3 FY26 Earnings Beat — 157% YoY revenue growth",
+      "date": "Feb 2026",
+      "movePct": 22,
+      "days": 1,
+      "outcome": "good",
+      "note": "Credo beat Q3 FY26 consensus by 18% on EPS, driven by AI data center AEC cable and line card chip demand from hyperscaler customers. Shows CRDO's own history of outsized single-day re-rates on AI-networking demand surprises."
+    },
+    {
+      "ticker": "MRVL",
+      "event": "AI data center revenue 76% YoY growth announcement",
+      "date": "Mar 2026",
+      "movePct": 25,
+      "days": 5,
+      "outcome": "good",
+      "note": "Marvell re-rated as an AI networking play alongside CRDO — both benefit from hyperscaler inference fabric build-out. Relevant precedent for how the sector re-rates on AI capex confirmation, and today MRVL again outgained CRDO (+12.8% vs +8.96%) on the same broad rally."
+    },
+    {
+      "ticker": "AVGO",
+      "event": "Q4 FY24 earnings — AI revenue TAM guidance ($60-90B by FY27)",
+      "date": "Dec 2024",
+      "movePct": 24,
+      "days": 1,
+      "outcome": "good",
+      "note": "Broadcom surged ~24% in a single session after guiding to a massive AI networking/XPU TAM — a comparable pattern of AI-infrastructure guidance driving outsized re-rates. CRDO's DustPhotonics optical ramp (>$500M FY27 revenue guide) is a similar TAM-expansion story to watch for at the next print."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Chip stocks ride broad risk-on rally as S&P 500 hits record highs — Intel +10%, AMD +8%, Broadcom +6%, Marvell leads",
+    "url": "https://stockanalysis.com/stocks/CRDO/",
+    "date": "Aug 2026"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/CRDO/",
+    "https://www.marketbeat.com/stocks/NASDAQ/CRDO/price-target/",
+    "https://www.marketbeat.com/stocks/NASDAQ/CRDO/earnings/",
+    "https://www.stocktitan.net/news/CRDO/",
+    "https://www.investing.com/central-banks/fed-rate-monitor"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "CRDO บวก 8.96% วันนี้จากแรง risk-on rally ทั้ง sector semiconductor (ไม่ใช่ข่าวเฉพาะตัวบริษัท) หลังจากที่ร่วงไปแตะ ~$218 ก่อนหน้านี้ (อยู่ในโซน entry ที่แนะนำไว้รอบก่อน) พื้นฐานยังแข็งแรง — FY26 revenue โต 205.7% YoY เป็น $1.34B, guide Q1 FY27 ที่ $465-475M, ดีล DustPhotonics เสร็จแล้ว (คาด optical revenue >$500M ใน FY27) และ Credo กำลังโชว์ชิป AI memory ใหม่ที่งาน FMS 2026 สัปดาห์นี้ นักวิเคราะห์ยังมองบวก (เฉลี่ย $266, สูงสุด $350) earnings ถัดไปคาด 2 ก.ย. (ยังไม่ยืนยันอย่างเป็นทางการ)",
+      "priceNote": "บวก 8.96% วันนี้จาก sector-wide risk-on rally (MRVL, INTC, AMD, AVGO, MU บวกแรงเหมือนกัน) S&P 500 ทำ record high — ไม่ใช่ข่าวเฉพาะ CRDO เมื่อวานหุ้นเพิ่งแตะ ~$218 ก่อนดีดกลับ",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        {
+          "name": "โชว์ผลิตภัณฑ์งาน FMS 2026",
+          "description": "4-6 ส.ค. — Credo โชว์ชิป AI memory interconnect OmniConnect Weaver และ PCIe 6.0 Toucan retimer เข้ารอบสุดท้าย FMS Best of Show 2 รางวัล"
+        },
+        {
+          "name": "Q1 FY27 Earnings",
+          "description": "คาด 2 ก.ย. (ยังไม่ยืนยันอย่างเป็นทางการ) — guide $465-475M rev ตัวชี้วัดว่า rally วันนี้มีพื้นฐานรองรับสำหรับ CRDO จริงหรือไม่"
+        },
+        {
+          "name": "DustPhotonics Optical Ramp + Hyperscaler AI Fabric Expansion",
+          "description": "ดีล DustPhotonics ปิดแล้ว (28 พ.ค.) คาด optical revenue >$500M ใน FY2027 — กระจายธุรกิจนอกเหนือจาก AEC cables รับการขยาย AI fabric ของ hyperscaler"
+        }
+      ],
+      "risks": [
+        "P/E ~95x — priced for perfection ทุก quarter ต้อง beat",
+        "Customer concentration — hyperscaler ไม่กี่รายเป็น revenue ส่วนใหญ่ ถ้า pause = ร่วงหนัก",
+        "แข่งกับ Marvell (MRVL) และ Broadcom (AVGO) ที่ขยาย AI networking silicon เร็ว — วันนี้ MRVL บวกแรงกว่า CRDO (+12.8% vs +8.96%)",
+        "การบวกวันนี้มาจาก macro/sector risk-on ไม่ใช่ข่าวพื้นฐานเฉพาะตัว — ถ้า sentiment กลับตัว หุ้น beta สูงแบบนี้จะโดนแรงกว่าตลาด"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed funds 3.75% FOMC ถัดไป 16 ก.ย. ตลาดให้โอกาสลดดอกเบี้ยแค่ ~43% — ยังไม่แน่นอนสำหรับหุ้น growth P/E สูงแบบ CRDO",
+        "inflationNote": "Custom silicon pricing power ดูดซับ cost inflation ได้",
+        "sectorImpact": "AI networking demand ยัง structural แต่ rally วันนี้แสดงว่า sector ยัง sensitive กับ macro sentiment ไม่ใช่แค่ fundamentals",
+        "summary": "Fed risk ปานกลาง — demand โครงสร้างยังดี แต่ multiple สูงทำให้ sensitive กับ FOMC 16 ก.ย. ที่ยังไม่แน่ชัดเรื่องการลดดอกเบี้ย"
+      },
+      "entryStrategy": {
+        "verdict": "การบวก 8.96% วันนี้มาจาก sector risk-on ไม่ใช่ข่าว CRDO โดยตรง เมื่อวานหุ้นเพิ่งแตะ ~$218 ซึ่งอยู่ในโซนที่แนะนำไว้ก่อนหน้า FMS 2026 เป็นจุดพิสูจน์ระยะสั้น ส่วน earnings (คาด 2 ก.ย. ยังไม่ยืนยัน) คือจุดพิสูจน์ถัดไป ทยอยซื้อโซน $210-222 ดีกว่าไล่ราคาวันนี้",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน หลัง rally ทั้ง sector วันนี้ ไม่ใช่จุดเข้าที่ดีที่สุด", "timing": "ตอนนี้" },
+          { "note": "โซน support ที่เพิ่งถูกทดสอบจริงเมื่อวาน (~$218)", "timing": "ถ้าย่อ" },
+          { "note": "Deep dip ตรงกับ bear case / sector selloff", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Consensus analyst target (19 นักวิเคราะห์)" },
+        "tp2": { "note": "Stifel/BofA bull case" },
+        "tp3": { "note": "Moon case · FY2027 ถ้าขยาย hyperscaler + optical ramp สำเร็จ", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดโซน support ที่เพิ่งทดสอบ (~$205-210)",
+          "hardNote": "Thesis เปลี่ยน — hyperscaler pause จริง",
+          "rrNote": "Entry โซนย่อ เทียบ TP2",
+          "rrWarning": "R/R ดี — thesis ยังไม่เปลี่ยน การบวกวันนี้เป็น macro ไม่ใช่ fundamental re-rate ดังนั้นย่อซื้อดีกว่าไล่"
+        }
+      },
+      "estimateDates": [
+        { "event": "Q1 FY27 Earnings", "note": "คาด 2 ก.ย. ยังไม่ยืนยัน — จุดพิสูจน์ว่า rally มีพื้นฐานรองรับหรือไม่" },
+        { "event": "เป้า TP1", "note": "Consensus analyst target" },
+        { "event": "เป้า TP2", "note": "Stifel/BofA bull case" }
+      ]
+    }
+  }
+}

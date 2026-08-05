@@ -1,0 +1,232 @@
+{
+  "ticker": "PL",
+  "companyName": "Planet Labs PBC",
+  "companyDescription": "Earth Observation Satellites · One of the largest commercial Earth-imaging fleets — daily global imaging for government, agriculture, and defense customers",
+  "exchange": "NYSE",
+  "generatedAt": "2026-08-05T21:00:00.000Z",
+  "price": 22.83,
+  "priceChange": 6.04,
+  "priceNote": "Trading $22.83, up 6.0% today as space-sector stocks broadly rallied (RKLB +5.8%, BKSY +6.3%, LUNR +6.6%, FLY +6.6% all moved together) on SpaceX-adjacent momentum, plus PL-specific tailwinds: Wedbush initiated coverage at Outperform with a $50 target, and Planet Labs Germany won a seven-figure AI-enabled agricultural monitoring contract from Scotland's government (Jul 30). Still down ~56% from its all-time high (~$51.76, early June) and down further from the $26.51 level of the last report — the market remains unconvinced on profitability despite growth.",
+  "marketCap": "$8.14B",
+  "sector": "Technology / Space",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 76,
+  "summary": "Planet Labs is bouncing 6% today in a broad space-sector rally, but the bigger story since the last report (Jul 10, $26.51) is that shares kept sliding to the low-$20s before this bounce — even as backlog grew 72% YoY to over $906M and operating cash flow turned solidly positive (~$132M TTM). Analyst sentiment has genuinely bifurcated: Needham, Craig Hallum and newly-initiating Wedbush all raised or set targets at $49-53, while Goldman Sachs sits Neutral at just $22-25 and MarketBeat's blended consensus across 12 analysts is now technically a 'Hold' (6 Buy / 4 Hold / 2 Sell) — a more contested picture than the prior report's near-unanimous Buy read. The next hard catalyst remains Q2 FY2027 earnings on Sep 8, 2026, one week before the Sep 15-16 FOMC meeting, where management again needs to show real profitability progress, not just revenue growth, to hold this bounce.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q2 FY2027 Earnings",
+      "description": "The next real test of the profitability narrative — Q1 FY27 beat on revenue (+42% YoY) and EPS in June but the stock still fell 37% over the following month on continued net losses. This print needs credible path-to-profitability commentary, not just growth, to hold today's bounce.",
+      "urgencyLabel": "34 DAYS",
+      "dateBadge": "Sep 8, 2026",
+      "catalystDate": "2026-09-08",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🛰️",
+      "name": "Pelican Gen-2 Fleet Buildout",
+      "description": "Follow-on launches building out the higher-resolution (30cm-class) Pelican constellation after the Jul 7 Pelican-11 tech-demo satellite validated the design — the next-gen fleet is the medium-term growth driver beyond the current SkySat/SuperDove base.",
+      "urgencyLabel": "H2 2026-2027",
+      "dateBadge": "Ongoing",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "📈",
+      "name": "New Bullish Analyst Coverage + Government Contract Momentum",
+      "description": "Wedbush initiated Outperform ($50 target) in recent weeks; Needham raised to $53 and Craig Hallum to $49. Government demand keeps landing too — Scotland's government awarded a seven-figure AI ag-monitoring contract (Jul 30) on top of the NGA's eight-figure maritime/crisis-response extension from June.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Aug 2026",
+      "badgeColor": "green",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Analyst sentiment has genuinely bifurcated, not just softened — MarketBeat's blended 12-analyst consensus is now a 'Hold' (6 Buy / 4 Hold / 2 Sell) with Goldman Sachs Neutral at $22-25, essentially calling the stock fair-valued right where it sits, even as Needham/Wedbush/Craig Hallum sit at $49-53",
+      "Insider selling has been persistent through the recent rally — CFO Ashley Johnson sold ~$2.4M of stock (Aug 2), a board director sold shares (Jul 23), and a co-founder sold ~$2.3M (Jul 14) — worth watching even though insider sales alone aren't disqualifying",
+    "The market has now sold off on genuinely good news once already (the Jun 4 beat) — shows sentiment is anchored to profitability/cash-burn concerns, not growth headlines, so a Sep 8 beat alone may not hold this bounce",
+    "Today's 6% pop is largely a sector-wide rally (RKLB, BKSY, LUNR, FLY all up in sympathy) rather than a PL-specific catalyst — gains from broad space-sector momentum can reverse as fast as they arrived",
+    "Hawkish Fed tilt persists — the Jul 29 FOMC held rates but drew 3 dissents wanting a hike; negative-duration-sensitive growth names like PL are more exposed to a higher-for-longer path than profitable mega-caps",
+    "Earth-observation remains a competitive, capital-intensive business (Maxar, BlackSky, government-owned constellations) — pricing power isn't guaranteed even with fleet scale and 72% YoY backlog growth"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q2 FY2027 Earnings",
+      "dateRange": "Sep 8, 2026",
+      "note": "Key test: credible path to profitability, not just revenue growth — one week ahead of the Sep 15-16 FOMC meeting",
+      "est": "est. continued double-digit YoY growth",
+      "highlight": "blue"
+    },
+    {
+      "event": "Pelican Gen-2 Fleet Buildout",
+      "dateRange": "H2 2026 - 2027",
+      "note": "Follow-on launches building the higher-resolution Pelican constellation after the Jul 7 tech-demo",
+      "est": "target: ongoing through 2027",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -30, "price": 16 },
+    { "label": "Base", "color": "yellow", "pct": 18, "price": 27 },
+    { "label": "Bull", "color": "green", "pct": 62, "price": 37 },
+    { "label": "Moon", "color": "purple", "pct": 128, "price": 52 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (12 analysts)", "target": 35, "rating": "Hold", "note": "MarketBeat blended: 6 Buy / 4 Hold / 2 Sell, avg $35.36 — a more contested read than the prior report's near-unanimous Buy" },
+    { "firm": "Needham (Ryan Koontz)", "target": 53, "rating": "Buy", "note": "Raised from $40 → $53 in recent weeks" },
+    { "firm": "Wedbush (Dan Ives)", "target": 50, "rating": "Buy", "note": "New coverage initiated at Outperform" },
+    { "firm": "Craig Hallum (Jeff Van Rhee)", "target": 49, "rating": "Buy", "note": "Raised from $36 → $49" },
+    { "firm": "Goldman Sachs (Anthony Valentini)", "target": 25, "rating": "Hold", "note": "Raised from $22 → $25 but stayed Neutral — essentially calls the stock fair-valued near current price" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held 3.50-3.75% at the Jul 28-29, 2026 FOMC meeting for a 5th straight hold — but 3 members dissented, preferring a quarter-point hike, and the statement gave no explicit forward guidance. Next FOMC is Sep 15-16, 2026, one week after PL's own Sep 8 earnings.",
+    "inflationNote": "Inflation remains above the 2% target per the FOMC statement; the hawkish dissents remove a rate-cut tailwind that negative-FCF-adjacent growth names like PL depend on more than profitable mega-caps.",
+    "sectorImpact": "Small/mid-cap growth names with thin-to-negative free cash flow remain the most duration-sensitive to discount-rate assumptions — a hawkish surprise would compress PL's valuation multiple faster than a profitable mega-cap, compounding the existing profitability-concern overhang the stock has traded on since June.",
+    "summary": "MEDIUM — the hawkish 3-dissent tilt at the Jul 29 FOMC is a bigger relative risk for PL than for profitable mega-caps, though PL's improving operating cash flow (~$132M TTM) is a genuine offsetting positive versus the pure-cash-burn profile it had earlier this year."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 22.83, "note": "Current price — up 6% today on a sector-wide rally", "timing": "Now" },
+      { "label": "Entry 2", "level": 19, "rangeMax": 21, "note": "If today's rally fades back toward pre-rally levels (yesterday's close was $21.53) and below", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 16, "note": "Deep-dip zone matching the bear case — would suggest broad de-rating has resumed", "timing": "If sector selloff" }
+    ],
+    "tp1": { "price": 27, "pct": 18.3, "note": "Base — sentiment stabilizes, no fresh catalyst needed" },
+    "tp2": { "price": 37, "pct": 62.1, "note": "Bull — Sep 8 earnings shows real profitability progress, Needham/Wedbush/Craig Hallum targets validated" },
+    "tp3": { "price": 52, "pct": 127.8, "note": "Moon — Needham's $53 bull case, Pelican Gen-2 fully re-rates the growth story", "moon": true },
+    "stopLoss": {
+      "tight": 18, "tightPct": -21.2, "tightNote": "Below yesterday's close and recent support — would suggest today's rally was a sector-wide head-fake",
+      "hard": 14, "hardPct": -38.7, "hardNote": "New multi-month low — profitability thesis needs re-underwriting",
+      "riskReward": "2.9 : 1",
+      "rrNote": "TP2 vs tight stop from current price",
+      "rrWarning": "Decent R/R on paper given the wide gap to bull-case analyst targets, but today's pop is sector-wide, not PL-specific — size small and confirm the move holds before adding"
+    },
+    "verdict": "BUY the dip with small size — today's bounce is real but sector-wide, not PL-specific. Scale in now, add on a pullback to $19-21. Target $27-37 if Sep 8 earnings show real path-to-profitability progress; the $49-53 bull targets need the growth story to fully re-rate.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "PL does not show a consistent pre-earnings-runup pattern independent of broader momentum — today's move is a sector-wide space-stock rally (RKLB, BKSY, LUNR, FLY all up together) roughly a month ahead of the Sep 8 print, not an earnings-specific runup.",
+    "preRunupTiming": "Momentum/sector-driven, not consistently tied to the earnings date specifically",
+    "preRunupPct": "Highly variable — today's sector-wide pop is +6%, unrelated to the Sep 8 print itself",
+    "postWin": {
+      "avgPct": -9,
+      "range": "-9% to -37% (1 day to 1 month)",
+      "note": "Jun 4, 2026 (Q1 FY27): revenue beat at $94M (+42% YoY) with an EPS beat too, yet shares slipped and the stock fell 37% over the following month as the market punished continued net losses and a dilutive-feeling capital raise despite the top-line beat. A beat alone does not guarantee a positive reaction here.",
+      "exampleDate": "Jun 2026"
+    },
+    "postLose": {
+      "avgPct": -20,
+      "range": "-15% to -25%",
+      "note": "No clean recent EPS/revenue miss on record — the closest analog remains the post-beat selloff itself (-37% over a month), which functioned like a miss reaction despite beating on paper because profitability/cash-burn concerns dominated the market's read.",
+      "exampleDate": "Jun-Jul 2026 (post-beat selloff)"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Speculative BUY — real 62% upside to the bull-case analyst target and continued backlog/cash-flow improvement, but the consensus rating is now technically a Hold (2 Sell ratings) and today's pop is sector-wide, not company-specific. Size at 3% initial, add only on confirmed stabilization above $21."
+    },
+    "stopPreCatalyst": {
+      "pct": -21.2,
+      "price": 18,
+      "note": "Below yesterday's close and recent support — would suggest today's sector rally is fading, not holding"
+    },
+    "stopPostCatalyst": {
+      "pct": -25,
+      "note": "If Sep 8 earnings show no progress on path-to-profitability (net losses widening again), exit — the market has shown it will punish that even with revenue growth"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "PL",
+      "event": "Q1 FY27 earnings — revenue +42% YoY beat, but stock fell on profitability concerns",
+      "date": "Jun 2026",
+      "movePct": -37,
+      "days": 30,
+      "outcome": "bad",
+      "note": "Direct, most relevant comparable and the core risk for this name: a real beat that still triggered a 37% one-month drawdown because the market prioritized net losses over top-line growth. Sep 8 needs to break this pattern."
+    },
+    {
+      "ticker": "MU",
+      "event": "Q3 FY26 earnings — beat-and-raise on EPS and revenue guide",
+      "date": "Jun 2026",
+      "movePct": 15,
+      "days": 1,
+      "outcome": "good",
+      "note": "Contrast case from the same earnings season: a profitable, cash-generative company got rewarded immediately for a beat-and-raise, underscoring that PL's profitability profile — not the beat itself — is what the market has been pricing since June."
+    },
+    {
+      "ticker": "RKLB",
+      "event": "Sector-wide space-stock rally alongside SpaceX-adjacent news and fresh government contract wins ($266M missile-defense award Jul 27, $397M SBI-MTI award Aug 4)",
+      "date": "Aug 2026",
+      "movePct": 6,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-day comparable for interpreting PL's Aug 5 pop: RKLB, BKSY, LUNR and FLY all moved together with PL, confirming today's gain is largely a sector-wide, not PL-specific, rally — a signal to size cautiously until PL prints its own confirming catalyst."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Planet Labs, Rocket Lab and other space stocks rise as sector rallies on SpaceX-adjacent momentum; Wedbush initiates PL at Outperform",
+    "url": "https://stockanalysis.com/stocks/PL/",
+    "date": "Aug 2026"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/PL/",
+    "https://stockanalysis.com/stocks/PL/statistics/",
+    "https://www.marketbeat.com/stocks/NYSE/PL/price-target/",
+    "https://www.stocktitan.net/news/PL/",
+    "https://www.fool.com/quote/nyse/pl/",
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+    "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+    "https://stockanalysis.com/stocks/rklb/",
+    "https://www.benzinga.com/quote/PL"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Planet Labs หุ้นเด้งขึ้น 6% วันนี้ตาม sector หุ้นอวกาศที่รีบาวด์ยกกลุ่ม แต่ภาพใหญ่ตั้งแต่รายงานฉบับก่อน (10 ก.ค. ที่ $26.51) คือหุ้นยังไหลลงมาโซน low-$20s ก่อนจะเด้งวันนี้ — ทั้งที่ backlog โต 72% YoY แตะ $906M+ และ operating cash flow เป็นบวกแล้ว (~$132M TTM) มุมมองนักวิเคราะห์แตกกันชัดเจนขึ้น: Needham, Craig Hallum และ Wedbush (initiate ใหม่) ให้ target $49-53 ขณะที่ Goldman Sachs ให้ Neutral ที่ $22-25 เท่านั้น และ consensus รวม 12 คนจาก MarketBeat ตอนนี้เป็น 'Hold' (Buy 6 / Hold 4 / Sell 2) ต่างจากรายงานก่อนที่เกือบ Buy ทั้งหมด catalyst หลักถัดไปคือ earnings Q2 FY2027 วันที่ 8 ก.ย. 2026 ก่อน FOMC 15-16 ก.ย. หนึ่งสัปดาห์ ซึ่งต้องโชว์ progress เรื่องกำไรจริง ไม่ใช่แค่ revenue โต",
+      "priceNote": "ราคา $22.83 ขึ้น 6.0% วันนี้ตามหุ้นกลุ่มอวกาศที่รีบาวด์ยกกลุ่ม (RKLB, BKSY, LUNR, FLY ขึ้นพร้อมกัน) บวกกับข่าวเฉพาะตัว: Wedbush initiate coverage ที่ Outperform target $50 และ Planet Labs Germany ได้สัญญา AI monitoring การเกษตรจากรัฐบาลสกอตแลนด์ (30 ก.ค.) ยังลงมา ~56% จาก all-time high (~$51.76 ต้นเดือนมิ.ย.) และต่ำกว่าระดับ $26.51 ของรายงานก่อนหน้าด้วย",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "รายงาน Q2 FY2027 Earnings", "description": "บททดสอบ profitability ครั้งถัดไป — Q1 FY27 beat ทั้ง revenue (+42% YoY) และ EPS แต่หุ้นยังร่วง 37% ใน 1 เดือน ครั้งนี้ต้องโชว์ path สู่กำไรที่ชัดเจน ไม่ใช่แค่ revenue โต" },
+        { "name": "Pelican Gen-2 Fleet Buildout", "description": "launch ต่อเนื่องขยาย constellation Pelican ความละเอียดสูง (30cm-class) หลัง tech-demo สำเร็จ 7 ก.ค." },
+        { "name": "Analyst Coverage ใหม่ + โมเมนตัมสัญญาภาครัฐ", "description": "Wedbush initiate ที่ Outperform target $50, Needham ขึ้น target เป็น $53, Craig Hallum ขึ้นเป็น $49 พร้อมสัญญาภาครัฐใหม่จากสกอตแลนด์และ NGA" }
+      ],
+      "risks": [
+        "มุมมองนักวิเคราะห์แตกกันจริงจัง ไม่ใช่แค่นิ่มลง — consensus รวม 12 คนจาก MarketBeat ตอนนี้เป็น 'Hold' (Buy 6/Hold 4/Sell 2) และ Goldman Sachs ให้ Neutral ที่ $22-25 ซึ่งบอกว่าราคาปัจจุบันแฟร์แล้วในมุมมองเขา ขณะที่ Needham/Wedbush/Craig Hallum อยู่ที่ $49-53",
+        "insider ขายหุ้นต่อเนื่องแม้ระหว่างที่หุ้นรีบาวด์ — CFO ขายไป ~$2.4M (2 ส.ค.), กรรมการบริษัทขาย (23 ก.ค.), co-founder ขาย ~$2.3M (14 ก.ค.)",
+        "ตลาดเคยขายหุ้นตอบสนองข่าวดีมาแล้วครั้งหนึ่ง (Q1 beat 4 มิ.ย.) — sentiment ผูกกับความกังวลเรื่องกำไร/cash-burn ไม่ใช่ growth headline ดังนั้น beat 8 ก.ย. อย่างเดียวอาจไม่พอ",
+        "การขึ้น 6% วันนี้ส่วนใหญ่เป็น sector-wide rally (RKLB, BKSY, LUNR, FLY ขึ้นพร้อมกัน) ไม่ใช่ catalyst เฉพาะตัว PL — กำไรจาก momentum กลุ่มอาจหายเร็วพอๆ กับที่มา",
+        "Fed ยัง hawkish — FOMC 29 ก.ค. คงดอกเบี้ยแต่มี 3 เสียง dissent อยากขึ้นดอกเบี้ย หุ้น growth ที่ FCF ยังไม่แข็งแรงอย่าง PL เสี่ยงกว่าหุ้น mega-cap ที่มีกำไร",
+        "ธุรกิจ earth-observation แข่งขันสูงและใช้เงินทุนมาก (Maxar, BlackSky, ดาวเทียมภาครัฐ) — pricing power ไม่การันตีแม้ backlog โต 72% YoY"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.50-3.75% ในการประชุม FOMC 28-29 ก.ค. 2026 เป็นครั้งที่ 5 ติด แต่มี 3 เสียง dissent อยากขึ้นดอกเบี้ย 0.25% FOMC ถัดไป 15-16 ก.ย. 2026 ห่างจาก earnings PL แค่สัปดาห์เดียว",
+        "inflationNote": "เงินเฟ้อยังสูงกว่าเป้า 2% — เสียง dissent ที่ hawkish ลบ tailwind rate-cut ที่หุ้น growth อย่าง PL ต้องพึ่งมากกว่าหุ้นกำไรดี",
+        "sectorImpact": "หุ้น small/mid-cap ที่ FCF ยังบางหรือติดลบไวต่อ discount rate ที่สุด — hawkish surprise กด multiple PL เร็วกว่าหุ้น mega-cap ที่มีกำไร ซ้ำเติมความกังวลเรื่องกำไรที่มีอยู่แล้วตั้งแต่มิ.ย.",
+        "summary": "MEDIUM — ความเสี่ยง hawkish จาก FOMC 29 ก.ค. กระทบ PL มากกว่าหุ้น mega-cap ที่มีกำไร แต่ operating cash flow ที่เป็นบวกแล้ว (~$132M TTM) เป็นจุดบวกที่ช่วยลดความเสี่ยงเทียบกับช่วงต้นปีที่ cash-burn หนักกว่านี้"
+      },
+      "entryStrategy": {
+        "verdict": "BUY จุดย่อด้วย size เล็ก — การเด้งวันนี้จริงแต่เป็น sector-wide ไม่ใช่ catalyst เฉพาะตัว ทยอยเข้าตอนนี้ เพิ่มเมื่อย่อ $19-21 เป้า $27-37 ถ้า earnings 8 ก.ย. โชว์ progress เรื่องกำไรจริง ส่วน target $49-53 ต้องรอ growth story re-rate เต็มที่",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ขึ้น 6% วันนี้ตาม sector rally", "timing": "ตอนนี้" },
+          { "note": "ถ้าการเด้งวันนี้จางลงกลับไปโซนก่อนหน้า (ปิดเมื่อวาน $21.53) และต่ำกว่านั้น", "timing": "ถ้าย่อ" },
+          { "note": "โซน deep-dip ตรงกับ bear case — สะท้อนว่า de-rating รอบใหม่กลับมา", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "กรณีฐาน — sentiment นิ่งขึ้นโดยไม่ต้องมี catalyst ใหม่" },
+        "tp2": { "note": "กรณีดี — earnings 8 ก.ย. โชว์ progress กำไรจริง, target Needham/Wedbush/Craig Hallum ถูกต้อง" },
+        "tp3": { "note": "Moon — bull case Needham $53, Pelican Gen-2 re-rate story การเติบโตเต็มที่" },
+        "stopLoss": {
+          "tightNote": "หลุดราคาปิดเมื่อวานและแนวรับใกล้เคียง — สะท้อนว่าการเด้งวันนี้เป็นแค่ sector head-fake",
+          "hardNote": "จุดต่ำสุดรอบใหม่หลายเดือน — thesis กำไรต้องทบทวนใหม่",
+          "rrNote": "TP2 เทียบ tight stop จากราคาปัจจุบัน",
+          "rrWarning": "R/R ดูดีในทางทฤษฎีเพราะช่องว่างถึง bull-case target ยังกว้าง แต่การเด้งวันนี้เป็น sector-wide ไม่ใช่เฉพาะ PL — size ให้เล็กและรอยืนยันก่อนเพิ่ม"
+        }
+      },
+      "estimateDates": [
+        { "event": "รายงาน Q2 FY2027 Earnings", "note": "จุดพิสูจน์ path สู่กำไรที่ชัดเจน ไม่ใช่แค่ revenue โต — ก่อน FOMC 15-16 ก.ย. หนึ่งสัปดาห์" },
+        { "event": "Pelican Gen-2 Fleet Buildout", "note": "launch ต่อเนื่องขยาย constellation Pelican ความละเอียดสูงหลัง tech-demo สำเร็จ 7 ก.ค." }
+      ]
+    }
+  }
+}
