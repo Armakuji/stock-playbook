@@ -1,0 +1,188 @@
+{
+  "ticker": "BTBT",
+  "companyName": "Bit Digital, Inc.",
+  "companyDescription": "Ethereum treasury (~158,461 ETH) + AI/HPC infrastructure via majority-owned WhiteFiber (WYFI) — Q2 earnings due Aug 13, 2026, against a <12-month cash runway and an active shelf registration",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-04T21:30:00.000Z",
+  "price": 1.38,
+  "priceChange": 5.34,
+  "priceNote": "Closed $1.38 on Aug 3, 2026 (+5.34%), but down from $1.59 two weeks ago and hovering just above the new 52-week low of $1.18 (range: $1.18-$4.55). Market cap fell to ~$487.7M from ~$561.9M as the stock has not recovered from the -15.3% post-Q1-earnings drop on May 14-15.",
+  "marketCap": "$487.7M",
+  "sector": "Technology / Crypto Treasury & AI Infrastructure",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Moonshot",
+  "score": 58,
+  "summary": "Bit Digital's Ethereum-treasury-plus-AI/HPC pivot is still real: the company holds ~158,461 ETH (~$280M) plus a 27.04M-share stake in majority-owned WhiteFiber (WYFI, ~$322M as of Q1) funding an AI/HPC buildout via a $100M (expandable to $150M) Ethereum-backed loan. But the setup has deteriorated since our last look — shares fell from $1.59 to $1.38 after the May 14, 2026 Q1 print sent the stock down -15.3% on a revenue miss (-13.7% QoQ) and a $146.7M net loss driven by ETH mark-to-market. Cash fell to $79.5M (from $118.4M at 2025 year-end), the company itself has flagged less than 12 months of runway, and an effective omnibus shelf registration (filed Oct 31, 2025) sits behind a track record of tapping equity markets twice in the past year — meaning further dilution is a live, near-term risk, not a hypothetical one. We keep BTBT on the list but explicitly flag the survival risk: it's still included because the ETH treasury and WhiteFiber stake are real, verifiable balance-sheet assets and the Aug 13, 2026 Q2 print is a genuine binary catalyst with 4 analysts still seeing $4.13 consensus (+199% from here) — but sizing should reflect a cash-constrained story, not a clean catalyst one.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "Bit Digital reports Q2 2026 results on Aug 13, 2026 (consensus EPS est. -$0.05). The last print (May 14, 2026) triggered a -15.3% single-session drop on a revenue miss and a large ETH mark-to-market net loss — this print carries similar binary risk, and will also update the market on cash runway and whether the shelf registration has been tapped again.",
+      "urgencyLabel": "9 DAYS",
+      "dateBadge": "Aug 13, 2026",
+      "catalystDate": "2026-08-13",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "🖥️",
+      "name": "WhiteFiber AI/HPC Buildout",
+      "description": "Majority-owned WhiteFiber (WYFI) continues building AI/HPC infrastructure, funded partly by the $100M (expandable to $150M) Ethereum-backed term loan Bit Digital originated as lender in May 2026. Bit Digital holds 27.04M WYFI shares (~$322M as of Q1) as a separately-tradable equity stake in the buildout.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "⚠️ SURVIVAL: Cash fell to $79.5M at Q1-end (from $118.4M at 2025 year-end) and the company has itself flagged less than 12 months of cash runway at the current burn trend — combined with an effective omnibus shelf registration (filed Oct 31, 2025, covering ordinary shares, debt, warrants and units), a dilutive capital raise could be announced at any time, including around the Aug 13 earnings date.",
+    "⚠️ SURVIVAL: Bit Digital has already diluted shareholders twice in the past year to fund ETH purchases — a 75M-share underwritten offering at $2.00 (June 2025, $150M gross) and a $67.3M registered direct raise at $3.06 — so tapping the shelf again is a real, repeatable playbook, not a remote tail risk.",
+    "Stock fell -15.3% the session after the May 14, 2026 Q1 print (revenue -13.7% QoQ, $146.7M net loss on ETH mark-to-market, versus BTBT's own historical average earnings-day move of about ±3.67%) — the Aug 13 Q2 print carries comparable binary risk given cloud/staking/mining revenue has declined sequentially for two straight quarters.",
+    "ETH price is the dominant swing factor: digital asset balance fell from $415.7M to $295M in a single quarter (Q4 2025 to Q1 2026) purely on ETH price decline, not operations — a further ETH drawdown pressures both treasury value and the term-loan collateral backing WhiteFiber's buildout.",
+    "$334M in convertible notes outstanding (largely WhiteFiber-related debt consolidated onto BTBT's balance sheet) adds leverage on top of the equity dilution risk, and the WhiteFiber relationship (majority-owned but separately listed as WYFI) adds structural complexity over which entity captures which economics."
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Aug 13, 2026", "note": "Market wants to see the revenue decline stabilize, no fresh ETH mark-to-market shock, and clarity on cash runway/dilution plans", "est": "Consensus EPS -$0.05", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -32, "price": 0.94 },
+    { "label": "Base", "color": "yellow", "pct": 60.1, "price": 2.21 },
+    { "label": "Bull", "color": "green", "pct": 153.6, "price": 3.50 },
+    { "label": "Moon", "color": "purple", "pct": 199.3, "price": 4.13 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (4 analysts)", "target": 4.13, "rating": "Strong Buy" },
+    { "firm": "Craig-Hallum", "target": 3.50, "rating": "Buy", "note": "Raised from $3.00 in May 2026, still well below the current price's implied dilution/runway discount" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held at 3.50-3.75% on Jul 29, 2026 with 3 hawkish dissents favoring a hike — rate-hike tail risk into year-end hasn't gone away",
+    "inflationNote": "Core PCE still 3.3% YoY, well above the 2% target",
+    "sectorImpact": "BTBT carries double macro exposure: ETH as a risk asset is sensitive to rate-hike tail risk and liquidity conditions, while WhiteFiber's debt-funded AI/HPC buildout (the $100M-$150M term loan) is sensitive to financing costs — a hawkish surprise pressures both halves of the story at once, layered on top of BTBT's own cash-runway/dilution risk.",
+    "summary": "MEDIUM — macro is secondary to BTBT's own survival/dilution setup and the Aug 13 earnings catalyst, but a hawkish surprise or broader risk-off move would compound an already fragile position (thin cash runway, active shelf, ETH-price-linked treasury)."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 1.38, "note": "Current price — up 5.34% on Aug 3 close but still well off the $4.55 52-week high", "timing": "Now (small)" },
+      { "label": "Entry 2", "level": 1.15, "rangeMax": 1.25, "note": "Near/below the new 52-week low ($1.18) — best R/R if the market pre-prices dilution/cash-runway risk further ahead of Aug 13", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 0.90, "note": "Deep capitulation — only on a surprise dilutive raise announcement or a sharp ETH drawdown", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 2.21, "pct": 60.1, "note": "Base — Q2 print avoids another mark-to-market shock, ETH holds current levels, no near-term dilution announcement" },
+    "tp2": { "price": 3.50, "pct": 153.6, "note": "Bull — hits Craig-Hallum's raised target as WhiteFiber shows AI/HPC revenue traction" },
+    "tp3": { "price": 4.13, "pct": 199.3, "note": "Moon — hits full 4-analyst consensus as the ETH treasury re-rates and WhiteFiber scales", "moon": true },
+    "stopLoss": {
+      "tight": 1.10, "tightPct": -20.3, "tightNote": "Below the new 52-week low ($1.18) — signals the market pricing in dilution/cash-runway risk around Aug 13 earnings",
+      "hard": 0.85, "hardPct": -38.4, "hardNote": "Deep breach — would suggest a surprise dilutive raise or a sharp ETH drawdown hitting both treasury value and term-loan collateral",
+      "riskReward": "7.6 : 1", "rrNote": "From current price, tight stop vs TP2", "rrWarning": "High headline R/R, but this is a cash-constrained, ETH-price-linked story sitting on an active shelf registration — size small and respect the survival risk, not just the R/R math"
+    },
+    "verdict": "Moonshot — small, sized-down position given cash runway under 12 months and an active shelf registration; real ETH treasury and WhiteFiber AI/HPC stake underpin the bull case, but Aug 13 earnings is a binary near-term catalyst and dilution risk is live, not theoretical.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Crypto-treasury pivot stocks like BTBT don't show a clean pre-earnings runup pattern — price action is dominated by ETH spot moves and, in BTBT's case, dilution/cash-runway overhang right up to the print.",
+    "preRunupTiming": "no consistent pre-earnings pattern — ETH-price and dilution-news driven",
+    "preRunupPct": "highly variable, tracks ETH spot moves more than the calendar",
+    "postWin": {
+      "avgPct": 10,
+      "range": "+5% to +11%",
+      "note": "Sector peers SharpLink (SBET, Ethereum treasury) and Bitmine Immersion (BMNR, Ethereum treasury) both posted roughly +10-11% single-session gains in July 2026 on strong ETH-treasury/earnings updates — the scale of move BTBT would need to repeat on Aug 13 to be read as a genuine win.",
+      "exampleDate": "Jul 14-20, 2026 (SBET +10.15% Jul 20; BMNR +10.71% Jul 14)"
+    },
+    "postLose": {
+      "avgPct": -15,
+      "range": "-15% to -25%",
+      "note": "BTBT itself fell -15.3% the session after its May 14, 2026 Q1 print on a revenue miss and a large mark-to-market net loss — well outside its own historical average earnings-day move of about ±3.67%.",
+      "exampleDate": "May 14-15, 2026 (BTBT Q1 print)"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "Cash runway under 12 months plus an active shelf registration materially raises dilution risk on top of ordinary ETH-price sensitivity — sizing trimmed below a typical moonshot allocation to reflect the added survival risk, despite the real underlying ETH and WhiteFiber assets."
+    },
+    "stopPreCatalyst": { "pct": -20, "price": 1.10, "note": "Below the 52-week low ($1.18) — a fresh low heading into Aug 13 earnings signals the market pricing in dilution/cash risk ahead of the print" },
+    "stopPostCatalyst": { "pct": -25, "note": "If Q2 repeats the Q1 pattern (revenue miss + large mark-to-market loss) or management announces a dilutive raise off the shelf, exit — thesis becomes survival-driven rather than growth-driven" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "BTBT",
+      "event": "Q1 2026 earnings: revenue -13.7% QoQ to $27.9M, $146.7M net loss on ETH mark-to-market",
+      "date": "May 2026",
+      "movePct": -15.3,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Same-company precedent for the size of move a weak print can cause — directly relevant to the Aug 13, 2026 Q2 report given two consecutive quarters of declining segment revenue."
+    },
+    {
+      "ticker": "SBET",
+      "event": "SharpLink Gaming (Ethereum treasury peer) beat earnings + growth guidance",
+      "date": "Jul 2026",
+      "movePct": 10.15,
+      "days": 1,
+      "outcome": "good",
+      "note": "Comparable Ethereum-treasury business model; shows the magnitude of upside move a strong ETH-treasury update/earnings beat can generate for this peer group."
+    },
+    {
+      "ticker": "BMNR",
+      "event": "Bitmine Immersion (Ethereum treasury peer) disclosed cash/crypto reserves and staking scale-up",
+      "date": "Jul 2026",
+      "movePct": 10.71,
+      "days": 1,
+      "outcome": "good",
+      "note": "Another direct Ethereum-treasury comparable; reinforces that ETH-treasury disclosure days (which BTBT's Aug 13 earnings will include) are the key volatility events for this whole peer group."
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/btbt/",
+    "https://www.stocktitan.net/news/BTBT/bit-digital-inc-announces-first-quarter-2026-financial-b6gco6hox2oq.html",
+    "https://stockstotrade.com/news/bit-digital-inc-btbt-news-2026_05_21/",
+    "https://simplywall.st/stocks/us/software/nasdaq-btbt/bit-digital/news/could-bit-digitals-btbt-expanded-shelf-registration-reshape/amp",
+    "https://www.investing.com/news/company-news/bit-digital-provides-100m-loan-facility-to-whitefiber-unit-93CH-4713309",
+    "https://stockstotrade.com/news/sharplink-inc-sbet-news-2026_07_20/",
+    "https://www.timothysykes.com/news/bitmine-immersion-technologies-inc-bmnr-news-2026_07_14/",
+    "https://www.tipranks.com/stocks/btbt/earnings"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "การเปลี่ยนผ่านสู่ Ethereum treasury บวก AI/HPC infrastructure ของ Bit Digital ยังเป็นเรื่องจริง — บริษัทถือ ETH ราว 158,461 เหรียญ (~$280M) บวกหุ้น WhiteFiber (WYFI) 27.04 ล้านหุ้น (~$322M ณ Q1) ให้ทุนการสร้าง AI/HPC ผ่านวงเงินกู้ Ethereum-backed $100M (ขยายได้ถึง $150M) แต่สถานการณ์แย่ลงจากรอบก่อน — ราคาร่วงจาก $1.59 เหลือ $1.38 หลังผลประกอบการ Q1 วันที่ 14 พ.ค. 2026 ทำให้หุ้นร่วง -15.3% จากรายได้พลาดเป้า (-13.7% QoQ) และขาดทุนสุทธิ $146.7M จาก ETH mark-to-market เงินสดลดลงเหลือ $79.5M (จาก $118.4M ปลายปี 2025) บริษัทเองยอมรับว่ามี runway ต่ำกว่า 12 เดือน และมี shelf registration ที่มีผลบังคับใช้ (ยื่น 31 ต.ค. 2025) อยู่เบื้องหลังประวัติการระดมทุนผ่านตลาดหุ้น 2 ครั้งในปีที่ผ่านมา — หมายความว่าความเสี่ยง dilution เป็นเรื่องจริงระยะใกล้ ไม่ใช่สมมติฐาน เรายังคง BTBT ไว้ในลิสต์แต่ระบุความเสี่ยงด้าน survival อย่างชัดเจน — ที่ยังใส่ไว้เพราะ ETH treasury และหุ้น WhiteFiber เป็นสินทรัพย์จริงในงบดุลที่ตรวจสอบได้ และผลประกอบการ Q2 วันที่ 13 ส.ค. 2026 เป็น catalyst แบบ binary จริง นักวิเคราะห์ 4 คนยังให้เป้าเฉลี่ย $4.13 (+199% จากราคานี้) — แต่ควร size เล็กลงสะท้อนสถานะเงินสดที่ตึงตัว ไม่ใช่ story catalyst สะอาดเหมือนเดิม",
+      "priceNote": "ปิดที่ $1.38 วันที่ 3 ส.ค. 2026 (+5.34%) แต่ลดลงจาก $1.59 เมื่อสองสัปดาห์ก่อน และอยู่ใกล้ 52-week low ใหม่ที่ $1.18 (range: $1.18-$4.55) มูลค่าตลาดลดลงเหลือ ~$487.7M จาก ~$561.9M เพราะหุ้นยังไม่ฟื้นจากการร่วง -15.3% หลังผลประกอบการ Q1",
+      "scoreLabel": "Moonshot",
+      "catalysts": [
+        { "name": "ผลประกอบการ Q2 2026", "description": "Bit Digital รายงานผล Q2 2026 วันที่ 13 ส.ค. 2026 (consensus EPS est. -$0.05) ผลรอบก่อน (14 พ.ค. 2026) ทำให้หุ้นร่วง -15.3% ในวันเดียวจากรายได้พลาดเป้าและขาดทุน mark-to-market ก้อนใหญ่ — รอบนี้มีความเสี่ยงแบบ binary คล้ายกัน และจะอัปเดตตลาดเรื่อง cash runway และการใช้ shelf registration เพิ่มเติมด้วย" },
+        { "name": "การสร้าง AI/HPC ของ WhiteFiber", "description": "WhiteFiber (WYFI) ที่ถือหุ้นใหญ่ยังสร้าง AI/HPC infrastructure ต่อเนื่อง ให้ทุนบางส่วนจากวงเงินกู้ Ethereum-backed $100M (ขยายได้ถึง $150M) ที่ Bit Digital เป็นผู้ปล่อยกู้ตั้งแต่ พ.ค. 2026 บริษัทถือหุ้น WYFI 27.04 ล้านหุ้น (~$322M ณ Q1) เป็นสัดส่วนทุนแยกที่ซื้อขายได้" }
+      ],
+      "risks": [
+        "⚠️ SURVIVAL: เงินสดลดลงเหลือ $79.5M ณ สิ้น Q1 (จาก $118.4M ปลายปี 2025) และบริษัทเองยอมรับว่ามี cash runway ต่ำกว่า 12 เดือนตาม burn trend ปัจจุบัน — บวกกับ shelf registration ที่มีผลบังคับใช้ (ยื่น 31 ต.ค. 2025 ครอบคลุมหุ้นสามัญ หนี้ warrant และ unit) การระดมทุนแบบ dilutive อาจประกาศได้ทุกเมื่อ รวมถึงช่วงผลประกอบการ 13 ส.ค.",
+        "⚠️ SURVIVAL: Bit Digital เคย dilute ผู้ถือหุ้นไปแล้ว 2 ครั้งในปีที่ผ่านมาเพื่อซื้อ ETH — ออกหุ้น underwritten 75 ล้านหุ้นที่ $2.00 (มิ.ย. 2025, ระดมได้ $150M) และ registered direct offering $67.3M ที่ $3.06 — ดังนั้นการใช้ shelf อีกครั้งเป็นความเสี่ยงจริงที่เคยเกิดซ้ำ ไม่ใช่ tail risk ห่างไกล",
+        "หุ้นร่วง -15.3% ในวันถัดจากผลประกอบการ Q1 วันที่ 14 พ.ค. 2026 (รายได้ -13.7% QoQ ขาดทุนสุทธิ $146.7M จาก ETH mark-to-market เทียบกับค่าเฉลี่ยการเคลื่อนไหววันประกาศผลของ BTBT เองที่ราว ±3.67%) — ผลประกอบการ Q2 วันที่ 13 ส.ค. มีความเสี่ยงแบบ binary คล้ายกัน เพราะรายได้ cloud/staking/mining ลดลงต่อเนื่อง 2 ไตรมาสติด",
+        "ราคา ETH เป็นตัวแปรหลักที่กำหนดทิศทาง — มูลค่าสินทรัพย์ดิจิทัลลดลงจาก $415.7M เหลือ $295M ในไตรมาสเดียว (Q4 2025 ถึง Q1 2026) จากราคา ETH ล้วนๆ ไม่ใช่จากการดำเนินงาน — ETH ร่วงเพิ่มจะกดดันทั้งมูลค่า treasury และ collateral ของวงเงินกู้ที่หนุนการสร้าง WhiteFiber",
+        "หนี้แปลงสภาพ $334M (ส่วนใหญ่เกี่ยวกับ WhiteFiber ที่รวมงบเข้ามาใน BTBT) เพิ่ม leverage ซ้อนทับความเสี่ยง dilution และความสัมพันธ์กับ WhiteFiber (ถือหุ้นใหญ่แต่จดทะเบียนแยก WYFI) เพิ่มความซับซ้อนเชิงโครงสร้างว่านิติบุคคลใดรับ economics ส่วนไหน"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% เมื่อ 29 ก.ค. 2026 โดยมี 3 เสียงคัดค้านแบบ hawkish ที่โน้มไปทางขึ้นดอกเบี้ย — ความเสี่ยงขึ้นดอกเบี้ยช่วงปลายปียังไม่หายไป",
+        "inflationNote": "Core PCE ยังอยู่ที่ 3.3% YoY สูงกว่าเป้า 2% มาก",
+        "sectorImpact": "BTBT มี macro exposure สองชั้น — ETH ในฐานะ risk asset sensitive ต่อความเสี่ยงขึ้นดอกเบี้ยและสภาพคล่อง ขณะที่การสร้าง AI/HPC ของ WhiteFiber (วงเงินกู้ $100M-$150M) sensitive ต่อต้นทุนการเงิน — hawkish surprise จะกดดันทั้งสองด้านพร้อมกัน ซ้อนทับความเสี่ยง cash runway/dilution ของ BTBT เอง",
+        "summary": "ความเสี่ยง Fed ระดับกลาง — macro เป็นปัจจัยรองจากความเสี่ยง survival/dilution ของ BTBT เองและ catalyst ผลประกอบการ 13 ส.ค. แต่ hawkish surprise หรือ risk-off กว้างจะซ้ำเติมสถานะที่เปราะบางอยู่แล้ว (cash runway บาง, shelf ที่ใช้งานได้, treasury ที่ผูกราคา ETH)"
+      },
+      "entryStrategy": {
+        "verdict": "Moonshot — เข้าไม้เล็กสะท้อน cash runway ต่ำกว่า 12 เดือนและ shelf registration ที่ใช้งานได้ ETH treasury จริงและหุ้น WhiteFiber หนุน bull case แต่ผลประกอบการ 13 ส.ค. เป็น catalyst แบบ binary ระยะใกล้ และความเสี่ยง dilution เป็นเรื่องจริง ไม่ใช่ทฤษฎี",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ขึ้น 5.34% วันที่ 3 ส.ค. แต่ยังห่างจาก 52-week high $4.55 มาก", "timing": "ตอนนี้ (ไม้เล็ก)" },
+          { "note": "ใกล้/ต่ำกว่า 52-week low ใหม่ ($1.18) — R/R ดีที่สุดถ้าตลาด price-in ความเสี่ยง dilution/cash runway เพิ่มก่อน 13 ส.ค.", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงหนัก — เฉพาะกรณีประกาศระดมทุนแบบ dilutive หรือ ETH ร่วงแรง", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — ผลประกอบการ Q2 ไม่มี mark-to-market shock ซ้ำ ETH ทรงตัว ไม่มีประกาศ dilution ระยะใกล้" },
+        "tp2": { "note": "Bull — แตะเป้าที่ Craig-Hallum ปรับขึ้น ขณะ WhiteFiber โชว์รายได้ AI/HPC จริง" },
+        "tp3": { "note": "Moon — แตะ consensus เต็มของนักวิเคราะห์ 4 คน ขณะ ETH treasury re-rate และ WhiteFiber ขยายตัว", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุด 52-week low ใหม่ ($1.18) — สัญญาณตลาด price-in ความเสี่ยง dilution/cash runway รอบผลประกอบการ 13 ส.ค.",
+          "hardNote": "หลุดลึก — บ่งชี้การระดมทุนแบบ dilutive กะทันหันหรือ ETH ร่วงแรงกระทบทั้ง treasury และ collateral ของวงเงินกู้",
+          "rrNote": "จากราคาปัจจุบัน stop แคบ vs TP2",
+          "rrWarning": "R/R ตัวเลขสูง แต่เป็น story ที่เงินสดตึงตัวและผูกราคา ETH บน shelf registration ที่ใช้งานได้ — size เล็กและเคารพความเสี่ยง survival ไม่ใช่แค่ดูตัวเลข R/R"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q2 2026", "note": "ตลาดต้องการเห็นรายได้หยุดลดลง ไม่มี ETH mark-to-market shock ใหม่ และความชัดเจนเรื่อง cash runway/แผน dilution" }
+      ]
+    }
+  }
+}

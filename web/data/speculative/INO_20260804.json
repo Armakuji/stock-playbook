@@ -1,0 +1,191 @@
+{
+  "ticker": "INO",
+  "companyName": "Inovio Pharmaceuticals, Inc.",
+  "companyDescription": "DNA-medicines biotech · INO-3107 under FDA standard review for recurrent respiratory papillomatosis (RRP) · PDUFA Oct 30, 2026 · just took a dilutive $20M raise that crashed the stock ~30%",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-04T21:30:00.000Z",
+  "price": 0.70,
+  "priceChange": 2.92,
+  "priceNote": "Down from $1.07 on Jul 22 to ~$0.70 now — the stock fell ~30% over Jul 29-30 after Inovio priced a dilutive $20M public offering at $0.95/share. Sits just above the 52-week low ($0.56), far below the 52-week high ($2.98), heading into the Oct 30, 2026 PDUFA decision for INO-3107.",
+  "marketCap": "$57.3M",
+  "sector": "Healthcare / Biotechnology (Rare Disease)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Moonshot",
+  "score": 46,
+  "summary": "Inovio remains a binary bet on the Oct 30, 2026 PDUFA decision for INO-3107 in recurrent respiratory papillomatosis (RRP), but the setup has deteriorated materially since our Jul 22 report. The stock has been cut roughly in half (from $1.07 to ~$0.70) after a dilutive $20M offering (21.05M new shares plus warrants for up to 42.1M more) priced at $0.95 crashed shares ~30% on Jul 29-30, and the FDA's acceptance letter separately flagged that Inovio has not yet justified INO-3107's eligibility for the accelerated-approval pathway it filed under. ⚠️ SURVIVAL: even after the fresh raise, cash runway is thin — roughly 8-9 months at the current ~$18M/quarter burn rate — and the company is clearly still reliant on its active $300M shelf for serial financing; we keep INO on the board despite this because the core regulatory review is still on schedule (mid-cycle review clean, no new significant issues, no advisory committee planned) and RRP still has zero approved competing therapies, so a real approval remains a large binary re-rating catalyst even if the label ends up narrower than the accelerated pathway would have implied. Position size must now reflect a stacked risk profile — dilution, an unresolved approval-pathway question, and active securities litigation — not just the FDA binary alone.",
+  "catalysts": [
+    {
+      "icon": "🧬",
+      "name": "INO-3107 PDUFA Decision",
+      "description": "FDA decision on the BLA for INO-3107 in recurrent respiratory papillomatosis, filed under the accelerated-approval pathway but accepted for standard review. Mid-cycle review completed with no new significant issues; no advisory committee planned.",
+      "urgencyLabel": "~12 WEEKS",
+      "dateBadge": "Oct 30, 2026",
+      "catalystDate": "2026-10-30",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "⚠️",
+      "name": "Accelerated-Approval Eligibility Meeting",
+      "description": "FDA's BLA acceptance letter flagged a preliminary conclusion that Inovio has not submitted adequate information to justify INO-3107's eligibility for accelerated approval. Inovio plans to request a meeting with the FDA to resolve this ahead of the PDUFA date — no confirmed meeting date yet.",
+      "urgencyLabel": "PENDING",
+      "dateBadge": "Ahead of Oct 30 PDUFA",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "⚠️ SURVIVAL: On Jul 29, 2026 Inovio priced a $20M dilutive public offering (21.05M new shares + warrants for up to 42.1M more at a $1.10 strike) that crashed the stock ~30% over two sessions — the company is clearly still reliant on serial equity raises via its active $300M shelf, and further dilution before or after the Oct 30 PDUFA is a real possibility given the burn rate.",
+    "⚠️ SURVIVAL: Even after the July raise, estimated cash runway is roughly 8-9 months from today against an ~$18M/quarter burn rate — a thin buffer relative to the Oct 30 catalyst and the commercial-launch spend that would follow an approval, meaning another capital raise (dilutive or otherwise) is likely regardless of the PDUFA outcome.",
+    "FDA's acceptance letter flagged a preliminary concern that Inovio has not submitted adequate information to justify INO-3107's eligibility for the accelerated-approval pathway — the company must now request a separate meeting to resolve this before the Oct 30 standard-review PDUFA, adding real uncertainty about the ultimate approval basis and label even though the underlying clinical data hasn't changed.",
+    "An active securities-fraud class action (Carlson v. Inovio, filed Feb 2026, E.D. Pa.) plus two shareholder derivative suits allege the company made misleading statements about the FDA submission and review timeline for INO-3107 — an adverse ruling or a settlement requiring cash would compound the dilution problem.",
+    "Nano-cap (~$57M) with a 52-week range of $0.56-$2.98 and extreme volatility/thin liquidity — a Complete Response Letter or continued adverse accelerated-approval-pathway news would likely produce a drawdown at least as sharp as the recent ~30% dilution-driven crash."
+  ],
+  "estimateDates": [
+    { "event": "Accelerated-Approval Eligibility Meeting", "dateRange": "Ahead of Oct 2026", "note": "Inovio-requested meeting to resolve FDA's preliminary eligibility concern", "est": "No confirmed date yet", "highlight": "yellow" },
+    { "event": "INO-3107 PDUFA Decision", "dateRange": "Oct 30, 2026", "note": "Standard-review decision for RRP; accelerated-approval basis still unresolved", "est": "Binary: approval (accelerated or standard) / CRL", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -60, "price": 0.28 },
+    { "label": "Base", "color": "yellow", "pct": 100, "price": 1.40 },
+    { "label": "Bull", "color": "green", "pct": 250, "price": 2.45 },
+    { "label": "Moon", "color": "purple", "pct": 471, "price": 4.00 }
+  ],
+  "analystTargets": [
+    { "firm": "Piper Sandler", "target": 4.0, "rating": "Buy" },
+    { "firm": "H.C. Wainwright", "target": 2.5, "rating": "Hold" },
+    { "firm": "Street consensus (3 analysts)", "target": 2.77, "rating": "Hold" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Fed held at 3.50-3.75% on Jul 29, 2026 with 3 hawkish dissents favoring a hike — rate-hike tail risk into year-end hasn't gone away",
+    "inflationNote": "Core PCE still 3.3% YoY, well above the 2% target — a real headwind for nano-cap biotechs that periodically need to raise capital, as INO just demonstrated",
+    "sectorImpact": "The PDUFA decision itself is macro-independent — an FDA approval/CRL ruling doesn't respond to interest rates — but the financing environment directly affects how dilutive INO's next raise will be",
+    "summary": "LOW-to-MEDIUM — the near-term catalyst is a pure regulatory decision that doesn't respond to Fed policy, but INO's demonstrated reliance on equity financing means a weaker risk-appetite backdrop makes the next raise (which is likely) more dilutive"
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 0.70, "note": "Current price — just above the 52-week low, post dilution-driven crash", "timing": "Now (tiny starter only)" },
+      { "label": "Entry 2", "level": 0.55, "rangeMax": 0.60, "note": "Near/at the 52-week low — best R/R if sentiment weakens further before October", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 0.40, "note": "Deep capitulation — only on a negative accelerated-approval-eligibility meeting outcome or a fresh financing scare", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 1.40, "pct": 100.0, "note": "Base — standard-pathway approval with a modest/restricted label, market gives partial credit" },
+    "tp2": { "price": 2.45, "pct": 250.0, "note": "Bull — clean approval, market prices in most of the addressable RRP population, near Street consensus" },
+    "tp3": { "price": 4.00, "pct": 471.0, "note": "Moon — accelerated-approval eligibility resolved favorably + fast commercial ramp, matches Piper Sandler's high target", "moon": true },
+    "stopLoss": {
+      "tight": 0.50, "tightPct": -28.6, "tightNote": "Below the 52-week low — thesis-neutral but a fresh low ahead of the decision",
+      "hard": 0.30, "hardPct": -57.1, "hardNote": "Risk-of-zero territory — a negative eligibility-meeting outcome, a further dilutive crisis raise, or an early adverse signal",
+      "riskReward": "~25 : 1", "rrNote": "From Entry 2 ($0.575 mid) tight stop vs TP2", "rrWarning": "Very high R/R on paper but this is a binary FDA outcome with an unresolved approval-pathway question and active litigation stacked on top — 1-2% max position only"
+    },
+    "verdict": "Moonshot — very small position ahead of the Oct 30 PDUFA. The regulatory review is still on track, but fresh dilution, an unresolved accelerated-approval eligibility question, and securities litigation have materially raised the risk stack since July.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "Nano-cap biotechs with a binary PDUFA date typically trade heavy and range-bound into the event as uncertainty peaks, then move sharply on the actual decision. INO's setup is complicated further by the unresolved accelerated-approval eligibility meeting, which could itself move the stock before the PDUFA date.",
+    "preRunupTiming": "minimal pre-event drift; the eligibility-meeting outcome and the PDUFA decision itself are the real moves",
+    "preRunupPct": "0% to +10% pre-event drift, with volatility increasing sharply once the eligibility meeting is scheduled",
+    "postWin": {
+      "avgPct": 60,
+      "range": "-12% to +199%",
+      "note": "Range is genuinely wide and depends heavily on label breadth: Reata's Skyclarys (Friedreich's ataxia, first-in-class, Feb 2023) jumped +199% the day after approval since there was zero prior approved therapy — the closest direct parallel to INO-3107's RRP setup. But Sarepta's Elevidys (accelerated approval after a narrow 8-6 AdCom vote and eligibility questions, Jun 2023) actually fell ~11-12% on approval day because the label came out more restricted than hoped — directly relevant given INO's own unresolved accelerated-approval-eligibility issue.",
+      "exampleDate": "Feb 2023 (RETA) / Jun 2023 (SRPT)"
+    },
+    "postLose": {
+      "avgPct": -35,
+      "range": "-30% to -70%",
+      "note": "INO's own Jul 29-30, 2026 reaction to the dilutive offering (-30% over two sessions, on financing news alone, no clinical read) is a live precedent for how thin the market's patience is for this name. A CRL, or a rejection of the accelerated-approval-eligibility request that forces a resubmission, would likely be materially worse given the stock is already near its 52-week low.",
+      "exampleDate": "Jul 29-30, 2026 (INO dilutive offering reaction)"
+    },
+    "spotSizing": {
+      "pct": 1.5,
+      "reason": "Nano-cap (~$57M) with confirmed active dilution, an unresolved accelerated-approval-eligibility question, and active securities litigation — cut position size versus the Jul 22 report (was 2%) given the larger stacked risk, even though the binary upside (Street consensus $2.77, Piper Sandler $4) is still real."
+    },
+    "stopPreCatalyst": { "pct": -25, "price": 0.52, "note": "Below the 52-week low of $0.56 — signals the market is pricing in a negative accelerated-approval-eligibility resolution or a further financing crisis ahead of Oct 30" },
+    "stopPostCatalyst": { "pct": -40, "note": "A Complete Response Letter, or an eligibility rejection that forces a full resubmission, breaks the thesis — exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "RETA",
+      "event": "Skyclarys (Friedreich's ataxia) FDA approval — first-in-class, zero prior approved therapy",
+      "date": "Feb 2023",
+      "movePct": 199,
+      "days": 1,
+      "outcome": "good",
+      "note": "Directly comparable setup to INO-3107's RRP niche — a rare disease with no approved competing therapy. The stock nearly tripled overnight once the binary regulatory risk cleared, showing the scale of re-rating possible for INO if INO-3107 gets a clean approval."
+    },
+    {
+      "ticker": "SRPT",
+      "event": "Elevidys (DMD gene therapy) accelerated approval after narrow 8-6 AdCom vote and eligibility questions",
+      "date": "Jun 2023",
+      "movePct": -11,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "Directly relevant to INO's current situation: even a genuine FDA approval fell short of expectations and the stock dropped ~11-12% because the label came out more restricted than the market wanted — a real risk if INO-3107's own accelerated-approval-eligibility question resolves narrowly."
+    },
+    {
+      "ticker": "INO",
+      "event": "$20M dilutive public offering priced at $0.95/share (21.05M new shares + warrants)",
+      "date": "Jul 2026",
+      "movePct": -30,
+      "days": 2,
+      "outcome": "bad",
+      "note": "Same-company precedent — pure financing/dilution news with zero clinical data involved still triggered a ~30% two-day drawdown, underscoring how fragile sentiment is around this stock heading into the Oct 30 PDUFA."
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/ino/",
+    "https://www.biospace.com/press-releases/inovio-announces-pricing-of-20-0-million-public-offering",
+    "https://uk.investing.com/news/stock-market-news/inovio-stock-tumbles-30-on-dilutive-20m-stock-offering-93CH-4799308",
+    "https://www.gurufocus.com/news/4088107/inovio-ino-seeks-accelerated-approval-for-ino3107-from-fda",
+    "https://www.prnewswire.com/news-releases/inovio-reports-first-quarter-2026-financial-results-and-recent-business-highlights-302771410.html",
+    "https://zlk.com/cases/inovio-pharmaceuticals-inc-class-action-lawsuit-ino",
+    "https://finance.yahoo.com/news/reata-reta-stock-jumps-fda-114311805.html",
+    "https://www.investing.com/news/analyst-ratings/sarepta-stock-downgraded-by-td-cowen-on-elevidys-approval-concerns-93CH-4100357"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Inovio ยังคงเป็น binary bet ต่อวันตัดสิน PDUFA 30 ต.ค. 2026 ของ INO-3107 ใน RRP แต่สถานการณ์แย่ลงมากตั้งแต่รายงาน 22 ก.ค. — ราคาหุ้นลดลงเกือบครึ่งจาก $1.07 เหลือ ~$0.70 หลังการระดมทุนแบบ dilutive $20M (หุ้นใหม่ 21.05 ล้านหุ้น + warrant สูงสุด 42.1 ล้านหุ้น) ที่ราคา $0.95 ทำให้หุ้นร่วง ~30% ช่วง 29-30 ก.ค. และจดหมายตอบรับ BLA ของ FDA ยังระบุด้วยว่า Inovio ยังไม่ได้ยื่นข้อมูลเพียงพอที่จะพิสูจน์สิทธิ์ accelerated approval ของ INO-3107 ⚠️ SURVIVAL: แม้จะระดมทุนรอบใหม่แล้ว เงินสดคงเหลือพอใช้ได้อีกประมาณ 8-9 เดือนเท่านั้น เทียบกับอัตราการเผาเงินสด ~$18M ต่อไตรมาส และบริษัทยังพึ่งพา shelf $300M ที่ยัง active อยู่สำหรับการระดมทุนต่อเนื่อง — แต่เรายังคง INO ไว้ในบอร์ดเพราะกระบวนการพิจารณา regulatory หลักยังเป็นไปตามกำหนด (mid-cycle review สะอาด ไม่มีประเด็นใหม่ ไม่มี advisory committee) และ RRP ยังไม่มีการรักษาที่ได้รับอนุมัติเลย ทำให้การอนุมัติจริงยังเป็น catalyst การ re-rate ขนาดใหญ่ได้ แม้ label สุดท้ายอาจแคบกว่าที่ accelerated pathway บ่งบอก ขนาด position ต้องสะท้อนความเสี่ยงที่ซ้อนกันมากขึ้นแล้ว (dilution + ความไม่แน่นอนเรื่อง pathway + คดีความ) ไม่ใช่แค่ FDA binary อย่างเดียว",
+      "priceNote": "ราคาลดจาก $1.07 (22 ก.ค.) เหลือ ~$0.70 หลังหุ้นร่วง ~30% ช่วง 29-30 ก.ค. จากการระดมทุน dilutive $20M ที่ราคา $0.95 อยู่เหนือ 52-week low ($0.56) เล็กน้อย ห่างจาก 52-week high ($2.98) มาก ก่อนวันตัดสิน PDUFA 30 ต.ค. 2026",
+      "scoreLabel": "Moonshot",
+      "catalysts": [
+        { "name": "วันตัดสินใจ PDUFA INO-3107", "description": "การตัดสินใจของ FDA ต่อ BLA ของ INO-3107 ใน RRP ที่ยื่นภายใต้ accelerated approval pathway แต่ถูกรับพิจารณาแบบ standard review mid-cycle review ผ่านแล้วไม่มีประเด็นใหม่ที่สำคัญ ไม่มี advisory committee" },
+        { "name": "การประชุมเรื่องสิทธิ์ Accelerated Approval", "description": "จดหมายตอบรับ BLA ของ FDA ระบุว่า Inovio ยังไม่ได้ยื่นข้อมูลเพียงพอพิสูจน์สิทธิ์ accelerated approval ของ INO-3107 บริษัทวางแผนขอประชุมกับ FDA เพื่อแก้ไขประเด็นนี้ก่อนวัน PDUFA ยังไม่มีวันที่ยืนยัน" }
+      ],
+      "risks": [
+        "⚠️ SURVIVAL: วันที่ 29 ก.ค. 2026 Inovio ระดมทุน $20M แบบ dilutive (หุ้นใหม่ 21.05 ล้านหุ้น + warrant สูงสุด 42.1 ล้านหุ้นที่ strike $1.10) ทำให้หุ้นร่วง ~30% ใน 2 วันทำการ บริษัทยังพึ่งพาการระดมทุนต่อเนื่องผ่าน shelf $300M ที่ active อยู่ และมีโอกาสจริงที่จะ dilute เพิ่มก่อนหรือหลัง PDUFA 30 ต.ค.",
+        "⚠️ SURVIVAL: แม้ระดมทุนรอบใหม่แล้ว เงินสดคงเหลือประมาณ 8-9 เดือนเท่านั้นเทียบกับอัตราเผาเงินสด ~$18M ต่อไตรมาส เป็น buffer ที่บางมากเทียบกับ catalyst 30 ต.ค. และค่าใช้จ่าย launch เชิงพาณิชย์ที่จะตามมาหากอนุมัติ หมายความว่าการระดมทุนรอบใหม่ (แบบ dilutive หรือไม่ก็ตาม) มีโอกาสเกิดขึ้นจริงไม่ว่าผล PDUFA จะเป็นอย่างไร",
+        "จดหมายตอบรับ BLA ของ FDA ระบุความกังวลเบื้องต้นว่า Inovio ยังไม่ได้ยื่นข้อมูลเพียงพอพิสูจน์สิทธิ์ accelerated approval ของ INO-3107 — บริษัทต้องขอประชุมแยกต่างหากเพื่อแก้ไขประเด็นนี้ก่อนวัน PDUFA แบบ standard review 30 ต.ค. เพิ่มความไม่แน่นอนเรื่องพื้นฐานการอนุมัติและ label แม้ข้อมูลทางคลินิกจะไม่เปลี่ยน",
+        "คดีความ securities fraud แบบ class action ที่ active อยู่ (Carlson v. Inovio ยื่นก.พ. 2026) บวกคดี derivative อีก 2 คดี กล่าวหาว่าบริษัทให้ข้อมูลเข้าใจผิดเรื่องการยื่นและ timeline การพิจารณาของ FDA สำหรับ INO-3107 — คำตัดสินที่ไม่เป็นผลดีหรือการยอมความที่ต้องใช้เงินสดจะซ้ำเติมปัญหา dilution",
+        "Nano-cap (~$57M) ที่ 52-week range กว้าง $0.56-$2.98 ความผันผวนสุดโต่งและสภาพคล่องบางมาก CRL หรือข่าวลบต่อเนื่องเรื่อง accelerated approval pathway น่าจะทำให้ราคาร่วงหนักอย่างน้อยเท่ากับที่ร่วงจากข่าว dilution ล่าสุด"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% เมื่อ 29 ก.ค. 2026 แต่มี hawkish dissent 3 เสียง — ความเสี่ยงขึ้นดอกเบี้ยช่วงปลายปียังไม่หมด",
+        "inflationNote": "Core PCE ยังอยู่ที่ 3.3% YoY สูงกว่าเป้าหมาย 2% มาก เป็นแรงกดดันจริงต่อ biotech nano-cap ที่ต้องระดมทุนเป็นระยะ ตามที่ INO เพิ่งแสดงให้เห็น",
+        "sectorImpact": "การตัดสินใจ PDUFA เองไม่ผูกกับ macro — คำตัดสิน FDA ไม่ตอบสนองต่ออัตราดอกเบี้ย แต่สภาพแวดล้อมการระดมทุนมีผลโดยตรงต่อความ dilutive ของการระดมทุนรอบถัดไป",
+        "summary": "ความเสี่ยง Fed ต่ำถึงปานกลาง — catalyst ระยะใกล้เป็นการตัดสินใจ regulatory ล้วนๆ ที่ไม่ตอบสนองต่อนโยบาย Fed แต่การที่ INO พึ่งพาการระดมทุนหุ้นซ้ำๆ หมายความว่าบรรยากาศ risk appetite ที่อ่อนแอจะทำให้การระดมทุนรอบถัดไป (ที่มีโอกาสเกิดขึ้นจริง) dilutive มากขึ้น"
+      },
+      "entryStrategy": {
+        "verdict": "Moonshot — size เล็กมากก่อน PDUFA 30 ต.ค. กระบวนการ regulatory หลักยังเป็นไปตามกำหนด แต่ dilution ล่าสุด ความไม่แน่นอนเรื่องสิทธิ์ accelerated approval และคดีความ ทำให้ความเสี่ยงโดยรวมสูงขึ้นมากตั้งแต่ก.ค.",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — เหนือ 52-week low เล็กน้อยหลังหุ้นร่วงจากข่าว dilution", "timing": "ตอนนี้ (size เล็กมากเท่านั้น)" },
+          { "note": "ใกล้/ที่ 52-week low — R/R ดีที่สุดถ้า sentiment อ่อนตัวเพิ่มก่อนต.ค.", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงหนัก — เฉพาะกรณีผลประชุม accelerated approval ออกมาลบ หรือมีข่าว financing scare ใหม่", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Base — อนุมัติแบบ standard pathway พร้อม label จำกัด/แคบ ตลาดให้เครดิตบางส่วน" },
+        "tp2": { "note": "Bull — อนุมัติสะอาด ตลาด price in ประชากร RRP ส่วนใหญ่ ใกล้เป้า consensus" },
+        "tp3": { "note": "Moon — ปัญหาสิทธิ์ accelerated approval คลี่คลายในทางบวก + ramp เชิงพาณิชย์เร็ว ตามเป้าสูงสุดของ Piper Sandler", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุด 52-week low — thesis ยังไม่พัง แต่จุดต่ำสุดใหม่ก่อนการตัดสินใจ",
+          "hardNote": "เข้าเขต risk-of-zero — ผลประชุมสิทธิ์ accelerated approval เป็นลบ ระดมทุนวิกฤตเพิ่ม หรือสัญญาณลบก่อนกำหนด",
+          "rrNote": "จาก Entry 2 ($0.575 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R สูงมากในทางทฤษฎีแต่เป็นผล FDA แบบ binary ที่มีทั้งความไม่แน่นอนเรื่อง pathway และคดีความซ้อนอยู่ — size สูงสุด 1-2% เท่านั้น"
+        }
+      },
+      "estimateDates": [
+        { "event": "การประชุมสิทธิ์ Accelerated Approval", "note": "ประชุมที่ Inovio ขอเพื่อแก้ไขข้อกังวลของ FDA ยังไม่มีวันที่ยืนยัน" },
+        { "event": "วันตัดสินใจ PDUFA INO-3107", "note": "binary: อนุมัติ (accelerated หรือ standard) / CRL" }
+      ]
+    }
+  }
+}

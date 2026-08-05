@@ -1,0 +1,189 @@
+{
+  "ticker": "AREC",
+  "companyName": "American Resources Corporation",
+  "companyDescription": "Former coal company repositioning as a critical-minerals/rare-earth supply chain player · ReElement Technologies subsidiary now has a landed $25M Dept. of War investment + an NSF-backed $160M innovation-engine pathway · declared its first-ever special dividend Aug 2026",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-04T21:00:00.000Z",
+  "price": 2.21,
+  "priceChange": 6.01,
+  "priceNote": "Self-fetched today amid a volatile multi-day catalyst rally: closed $2.03 on Aug 3 (+13.4%) after a $25M Dept. of War investment (Jul 17) and NSF $160M Innovation Engine selection (Jul 21) landed, then a first-ever special dividend was declared Aug 3 (ex-date Aug 13); trading ~$2.21 today (+6.0%), still well off the 52-week high of $7.11.",
+  "marketCap": "$236.4M",
+  "sector": "Materials / Critical Minerals & Rare Earth Elements",
+  "marketCapCheck": true,
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Moonshot",
+  "score": 65,
+  "summary": "Since our Jul 22 report, AREC has converted two of its pending catalysts into landed wins: ReElement Technologies received a $25M Dept. of War investment for its Marion, Indiana refining campus (Jul 17, 2026), and the Critical Materials Crossroads consortium — with ReElement as industry partner — was selected as an NSF Regional Innovation Engine eligible for up to $160M over 10 years (Jul 21, 2026). On Aug 3, 2026 the company declared its first-ever special cash dividend ($0.0431/share) — real evidence the prior survival/dilution concern has eased; we found no active AREC-level ATM or shelf offering (only a $9.5M private placement at the EMCO subsidiary level, Jul 27). The original DOE coal-byproduct rare-earth grant — still the single largest catalyst — remains stuck in 'award negotiations' with no new news since Jul 12, and the stock has already rallied over 20% this week on the DoD/NSF/dividend news, so a real chunk of the good news may already be priced in near-term.",
+  "catalysts": [
+    {
+      "icon": "⛏️",
+      "name": "DOE Critical Minerals Grant (Coal Byproducts) — Still Pending",
+      "description": "Selected for DOE award negotiations under the Mines & Metals Capacity Expansion program (Jul 12, 2026) to recover rare earth elements from domestic coal byproducts. Unchanged status vs our last report — still not a signed, finalized contract. This is the biggest remaining catalyst and the main reason the moonshot thesis is still alive.",
+      "urgencyLabel": "ONGOING (negotiations)",
+      "dateBadge": "H2 2026",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🇺🇸",
+      "name": "NSF Critical Materials Crossroads Engine — $160M Pathway",
+      "description": "NSF selected the Critical Materials Crossroads consortium (led by UMKC) as a Regional Innovation Engine, with ReElement Technologies named industry partner, unlocking up to $160M in funding over 10 years for critical-minerals commercialization. Already selected — the catalyst now is the funding rollout and ReElement's role scaling up.",
+      "urgencyLabel": "AWARDED — rollout ongoing",
+      "dateBadge": "Ongoing (10-yr program)",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "The DOE coal-byproduct grant — the largest remaining catalyst — is still only in 'award negotiations' with zero progress reported since Jul 12, 2026; the DOE separately canceled over $700M of earlier clean-manufacturing/critical-minerals grants in Oct 2025 (including cases where funds had already been disbursed), a real precedent for negotiation-stage federal awards falling through",
+      "American Resources received a Nasdaq notice for a late Form 10-Q (quarter ended Mar 31, 2026) under Listing Rule 5250(c)(1); as of our last confirmed check (early Jun 2026) it had not yet been filed — an open compliance overhang with unclear resolution status entering August",
+      "Analyst coverage is thin and has actually shrunk since our last report (now ~2 analysts with a $5.00 average target vs 4 analysts/$6.50 previously) — and the stock has already rallied >20% this week on landed DoD/NSF/dividend news, so chasing here risks buying after the easy re-rate",
+      "The EMCO subsidiary raised $9.5M via a preferred-stock private placement (Jul 27, 2026) and the stock fell -12.6% that day — shows the market is still sensitive to capital-raise/dilution optics even at the subsidiary level despite AREC's improved balance sheet"
+  ],
+  "estimateDates": [
+    { "event": "DOE Grant Award Finalization", "dateRange": "H2 2026", "note": "Still in award negotiations as of Jul 12, 2026 — no update since", "est": "Binary: finalized at meaningful scale / delayed or scaled back", "highlight": "yellow" },
+    { "event": "Special Cash Dividend ($0.0431/share)", "dateRange": "Ex-date Aug 13, 2026 · Pays Aug 25, 2026", "note": "First-ever dividend — signals real cash strength, though stock actually dipped slightly (-1.7%) on the announcement", "est": "Confirmed / declared", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -35, "price": 1.44 },
+    { "label": "Base", "color": "yellow", "pct": 90, "price": 4.20 },
+    { "label": "Bull", "color": "green", "pct": 150, "price": 5.53 },
+    { "label": "Moon", "color": "purple", "pct": 220, "price": 7.07 }
+  ],
+  "analystTargets": [
+    { "firm": "William Blair (Neal Dingmann)", "target": 5.00, "rating": "Buy" },
+    { "firm": "Consensus average (2 analysts, Strong Buy)", "target": 5.00, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held at 3.50-3.75% on Jul 29, 2026 with 3 hawkish dissents favoring a hike — rate-hike tail risk into year-end hasn't gone away",
+    "inflationNote": "Core PCE still 3.3% YoY, well above the 2% target",
+    "sectorImpact": "Critical-minerals/rare-earth policy support (DOE grants, Dept. of War investment, NSF innovation-engine funding) is bipartisan and largely macro-independent, but AREC remains a thinly-traded small-cap that would still sell off hard in a broad risk-off move tied to a Fed policy surprise.",
+    "summary": "MEDIUM — macro risk is secondary here; AREC's own catalyst calendar (DOE grant outcome, NSF funding rollout) dominates the stock's direction far more than the Fed does, but it would still get dragged down in a broad small-cap selloff."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 2.21, "note": "Current price — up over 20% this week on landed DoD/NSF/dividend news", "timing": "Now (small starter only)" },
+      { "label": "Entry 2", "level": 1.75, "rangeMax": 1.90, "note": "Pullback zone from this week's rally — better R/R if momentum cools before the DOE grant news", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 1.30, "note": "Near pre-rally support / 52-week-low zone", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 4.20, "pct": 90.0, "note": "Base — DOE grant advances, NSF $160M pathway + DoD-backed refining capacity continue to scale" },
+    "tp2": { "price": 5.53, "pct": 150.0, "note": "Bull — DOE grant finalized at meaningful scale, Mitsubishi collaboration commercializes" },
+    "tp3": { "price": 7.07, "pct": 220.0, "note": "Moon — full re-rate back toward the 52-week high as the critical-minerals pivot fully plays out", "moon": true },
+    "stopLoss": {
+      "tight": 1.75, "tightPct": -20.8, "tightNote": "Below this week's rally base — would suggest the DoD/NSF momentum has fully faded",
+      "hard": 1.30, "hardPct": -41.2, "hardNote": "Near pre-rally lows — would suggest the DOE grant negotiation is stalling badly or broader sector risk-off",
+      "riskReward": "7.2 : 1", "rrNote": "From current price ($2.21), tight stop vs TP2", "rrWarning": "Good R/R on paper, but much of this week's positive catalyst news is already reflected in the +20% rally — chase risk is real, prefer waiting for the dip entry"
+    },
+    "verdict": "Moonshot — real catalysts have started landing (DoD $25M investment, NSF $160M pathway, first-ever dividend) but the market has already re-rated the stock up over 20% this week; wait for a pullback toward $1.75-1.90 before adding, and treat the still-pending DOE grant as the next binary catalyst.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "regulatory_approval",
+    "preRunup": "AREC/ReElement news tends to move the stock same-day on discrete DOE/DoD/NSF headlines rather than in a sustained multi-week runup.",
+    "preRunupTiming": "same-day on grant/investment news, not a multi-week runup",
+    "preRunupPct": "+3% to +14% same-day on landed government funding/investment news",
+    "postWin": {
+      "avgPct": 25,
+      "range": "+3% to +50%",
+      "note": "AREC's own stock rose 3.35% same-day on the landed $25M Dept. of War investment (Jul 17, 2026) — a modest pop since the deal was partly anticipated. For scale of what's still possible: MP Materials jumped 50% same-day when its $400M DoD preferred-equity investment was FINALIZED (Jul 10, 2025) — AREC's own DOE coal-byproduct grant is still pre-finalization, so this is the size of re-rate still ahead if/when it closes.",
+      "exampleDate": "Jul 2026 (AREC) / Jul 2025 (MP Materials)"
+    },
+    "postLose": {
+      "avgPct": -15,
+      "range": "-10% to -20%",
+      "note": "No AREC-specific losing case yet, but the sector risk is real: the DOE canceled over $700M of earlier clean-manufacturing/critical-minerals grants in Oct 2025 (including Anovion's and Ascend's — the latter after $200M+ had already been disbursed) — a genuine precedent for how a still-under-negotiation federal grant can be pulled or scaled back.",
+      "exampleDate": "Oct 2025 (DOE grant cancellations, sector-wide)"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "Small-cap (~$236M) that has already de-risked meaningfully — the $25M DoD investment and NSF $160M pathway are both landed, and a first-ever dividend signals real cash strength — but the DOE coal-byproduct grant (the largest single catalyst) is still only in negotiation, and the stock has already run up over 20% this week pricing in some of the good news. 4% sizing reflects improved fundamentals against real timing/chase risk."
+    },
+    "stopPreCatalyst": { "pct": -21, "price": 1.75, "note": "Below this week's rally base — thesis-neutral but momentum breaking down" },
+    "stopPostCatalyst": { "pct": -20, "note": "If the DOE grant negotiation stalls or is scaled back significantly, or Nasdaq escalates the late 10-Q compliance issue, exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "AREC",
+      "event": "ReElement Technologies secures $25M Dept. of War investment for refining expansion",
+      "date": "Jul 2026",
+      "movePct": 3.35,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company precedent for how the market reacts to a LANDED (vs. negotiated) government investment — a modest same-day pop since the deal was already partly anticipated."
+    },
+    {
+      "ticker": "MP",
+      "event": "MP Materials: $400M DoD preferred-equity investment + 10-year magnet offtake agreement",
+      "date": "Jul 2025",
+      "movePct": 50.0,
+      "days": 1,
+      "outcome": "good",
+      "note": "External sector comparable — shows how dramatically a FINALIZED (not merely negotiated) government-backed critical-minerals investment can re-rate a stock. AREC's own DOE coal-byproduct grant is still pre-finalization, so this is roughly the scale of catalyst still ahead if/when it closes."
+    },
+    {
+      "ticker": "AREC",
+      "event": "First-ever special cash dividend declared ($0.0431/share) following strategic transformation",
+      "date": "Aug 2026",
+      "movePct": -1.69,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "Stock actually dipped slightly on the dividend announcement — the market read it as a small per-share amount rather than a re-rating catalyst, despite the genuinely positive signal about cash strength."
+    }
+  ],
+  "sources": [
+    "https://www.stocktitan.net/overview/AREC/",
+    "https://stockanalysis.com/stocks/arec/",
+    "https://stockanalysis.com/stocks/arec/forecast/",
+    "https://investingnews.com/reelement-technologies-announces-25-million-department-of-war-investment-to-expand-u-s-critical-mineral-refining-capacity/",
+    "https://investingnews.com/u-s-national-science-foundation-selects-critical-materials-crossroads-engine-for-up-to-160-million-reelement-technologies-named-industry-partner/",
+    "https://www.gurufocus.com/news/8977677/american-resources-arec-announces-special-dividend-of-00431-per-share",
+    "https://www.cnbc.com/2025/07/10/pentagon-to-become-largest-shareholder-in-rare-earth-magnet-maker-mp-materials.html",
+    "https://www.stocktitan.net/news/AREC/american-resources-receives-nasdaq-notice-regarding-late-form-10-q-3llib0jfrmx1.html",
+    "https://investingnews.com/american-resources-corporation-selected-by-u-s-department-of-energy-for-award-negotiations-to-advance-critical-mineral-recovery-from-coal-based-feedstocks/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "หลังรายงานฉบับ 22 ก.ค. AREC เปลี่ยน catalyst ที่ค้างอยู่ให้กลายเป็นข่าวดีจริงแล้ว 2 เรื่อง: ReElement Technologies ได้รับเงินลงทุน $25 ล้านจากกระทรวงกลาโหม (Dept. of War) สำหรับโรงกลั่นที่ Marion รัฐ Indiana (17 ก.ค. 2026) และ consortium Critical Materials Crossroads ที่มี ReElement เป็น industry partner ได้รับเลือกเป็น NSF Regional Innovation Engine เปิดทางทุนสูงสุด $160 ล้านตลอด 10 ปี (21 ก.ค. 2026) วันที่ 3 ส.ค. 2026 บริษัทประกาศจ่ายเงินปันผลพิเศษครั้งแรกในประวัติศาสตร์ ($0.0431/หุ้น) ซึ่งเป็นหลักฐานจริงว่าความกังวลเรื่อง survival/dilution จากรายงานก่อนหน้าคลี่คลายลงแล้ว — ไม่พบ ATM หรือ shelf offering ที่ระดับ AREC เอง (มีแค่ private placement $9.5M ที่ระดับบริษัทลูก EMCO) ส่วนทุน DOE จาก coal byproduct ซึ่งยังเป็น catalyst ใหญ่ที่สุด ยังคงติดอยู่ที่ขั้น 'เจรจา award' ไม่มีความคืบหน้าใหม่ตั้งแต่ 12 ก.ค. และหุ้นวิ่งขึ้นแล้วกว่า 20% สัปดาห์นี้จากข่าว DoD/NSF/เงินปันผล ทำให้ข่าวดีส่วนใหญ่อาจถูกสะท้อนในราคาไปแล้วในระยะสั้น",
+      "priceNote": "ข้อมูลดึงเองวันนี้ระหว่างช่วง rally ผันผวนหลายวัน: ปิด $2.03 วันที่ 3 ส.ค. (+13.4%) หลังข่าวเงินลงทุน $25M จาก Dept. of War (17 ก.ค.) และการได้รับเลือกเป็น NSF Innovation Engine มูลค่า $160M (21 ก.ค.) ตามด้วยประกาศเงินปันผลพิเศษครั้งแรกวันที่ 3 ส.ค. (ex-date 13 ส.ค.) วันนี้เทรดอยู่ราว $2.21 (+6.0%) ยังห่างจาก 52-week high ที่ $7.11 มาก",
+      "scoreLabel": "Moonshot",
+      "catalysts": [
+        { "name": "ทุน DOE Critical Minerals (Coal Byproducts) — ยังค้างอยู่", "description": "ได้รับเลือกเข้าสู่การเจรจา award ของ DOE ภายใต้โครงการ Mines & Metals Capacity Expansion (12 ก.ค. 2026) เพื่อสกัด rare earth จาก byproduct ถ่านหินในประเทศ สถานะยังไม่เปลี่ยนจากรายงานก่อนหน้า — ยังไม่ใช่สัญญาที่ลงนามสรุปแล้ว นี่คือ catalyst ใหญ่ที่สุดที่เหลืออยู่และเป็นเหตุผลหลักที่ moonshot thesis ยังมีชีวิต" },
+        { "name": "NSF Critical Materials Crossroads Engine — เส้นทางทุน $160M", "description": "NSF เลือก consortium Critical Materials Crossroads (นำโดย UMKC) เป็น Regional Innovation Engine โดยมี ReElement Technologies เป็น industry partner เปิดทางทุนสูงสุด $160 ล้านตลอด 10 ปีเพื่อ commercialize critical minerals ได้รับเลือกแล้ว — catalyst ต่อไปคือการเบิกใช้ทุนและบทบาทของ ReElement ที่จะขยายตัว" }
+      ],
+      "risks": [
+        "ทุน DOE จาก coal byproduct ซึ่งเป็น catalyst ใหญ่ที่สุดที่เหลืออยู่ ยังอยู่ขั้น 'เจรจา award' ไม่มีความคืบหน้าใหม่ตั้งแต่ 12 ก.ค. 2026 — DOE เคยยกเลิกทุน clean-manufacturing/critical-minerals เดิมกว่า $700M ในเดือน ต.ค. 2025 (รวมถึงกรณีที่เบิกจ่ายไปแล้วบางส่วน) เป็นตัวอย่างจริงว่าทุนที่ยังอยู่ขั้นเจรจาสามารถล้มได้",
+        "American Resources ได้รับหนังสือแจ้งจาก Nasdaq เรื่องยื่น Form 10-Q ล่าช้า (ไตรมาสสิ้นสุด 31 มี.ค. 2026) ตาม Listing Rule 5250(c)(1) — ณ ครั้งล่าสุดที่ตรวจสอบได้ (ต้น มิ.ย. 2026) ยังไม่ได้ยื่น เป็นประเด็น compliance ที่ยังค้างอยู่และสถานะการแก้ไขยังไม่ชัดเจนเมื่อเข้าสู่เดือน ส.ค.",
+        "การคุมนักวิเคราะห์บางลงเมื่อเทียบกับรายงานก่อนหน้า (ตอนนี้เหลือราว 2 คน เป้าเฉลี่ย $5.00 จากเดิม 4 คน/$6.50) และหุ้นวิ่งขึ้นแล้วกว่า 20% สัปดาห์นี้จากข่าว DoD/NSF/เงินปันผลที่ landed แล้ว — ไล่ซื้อตอนนี้เสี่ยงซื้อหลัง re-rate ที่ง่ายที่สุดผ่านไปแล้ว",
+        "บริษัทลูก EMCO ระดมทุน $9.5M ผ่าน private placement หุ้นบุริมสิทธิ (27 ก.ค. 2026) และหุ้นร่วง -12.6% วันนั้น — สะท้อนว่าตลาดยังไวต่อประเด็น capital-raise/dilution แม้จะเป็นระดับบริษัทลูกและงบดุล AREC จะดีขึ้นแล้วก็ตาม"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% เมื่อ 29 ก.ค. 2026 โดยมี 3 เสียงคัดค้านแบบ hawkish ที่อยากขึ้นดอกเบี้ย — ความเสี่ยงขึ้นดอกเบี้ยช่วงปลายปียังไม่หายไป",
+        "inflationNote": "Core PCE ยังอยู่ที่ 3.3% YoY สูงกว่าเป้า 2% มาก",
+        "sectorImpact": "การสนับสนุนนโยบายแร่ธาตุวิกฤต/rare earth (ทุน DOE, เงินลงทุน Dept. of War, ทุน NSF innovation-engine) เป็น bipartisan และ macro-independent เป็นส่วนใหญ่ แต่ AREC ยังเป็นหุ้นเล็กที่เทรดบางที่จะโดนกระทบหนักถ้าตลาดเทขายรวมจากข่าว Fed ที่เหนือความคาดหมาย",
+        "summary": "ความเสี่ยง Fed ระดับกลาง — เป็นปัจจัยรองเมื่อเทียบกับ catalyst ของ AREC เอง (ผลทุน DOE, การเบิกใช้ทุน NSF) ที่มีผลต่อทิศทางหุ้นมากกว่า Fed มาก แต่ก็ยังจะโดนลากลงถ้าตลาดหุ้นเล็กเทขายรวม"
+      },
+      "entryStrategy": {
+        "verdict": "Moonshot — catalyst จริงเริ่ม landed แล้ว (เงินลงทุน DoD $25M, เส้นทางทุน NSF $160M, เงินปันผลครั้งแรก) แต่ตลาด re-rate ราคาขึ้นไปแล้วกว่า 20% สัปดาห์นี้ รอย่อมาโซน $1.75-1.90 ก่อนเพิ่ม และมองทุน DOE ที่ยังค้างอยู่เป็น catalyst binary ตัวถัดไป",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — วิ่งขึ้นกว่า 20% สัปดาห์นี้จากข่าว DoD/NSF/เงินปันผลที่ landed แล้ว", "timing": "ตอนนี้ (ไม้เล็กเท่านั้น)" },
+          { "note": "โซนย่อจาก rally สัปดาห์นี้ — R/R ดีกว่าถ้าโมเมนตัมชะลอก่อนข่าวทุน DOE", "timing": "ถ้าย่อ" },
+          { "note": "ใกล้แนวรับก่อน rally / โซน 52-week low", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — ทุน DOE คืบหน้า เส้นทางทุน NSF $160M และกำลังการกลั่นที่หนุนโดย DoD ขยายตัวต่อเนื่อง" },
+        "tp2": { "note": "Bull — ทุน DOE สรุประดับมีนัยสำคัญ ความร่วมมือ Mitsubishi เริ่ม commercialize" },
+        "tp3": { "note": "Moon — re-rate เต็มที่กลับไปใกล้ 52-week high ตามที่การปรับตัวสู่ critical minerals สำเร็จเต็มรูปแบบ", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดฐานของ rally สัปดาห์นี้ — บ่งชี้ว่าโมเมนตัม DoD/NSF จางหายไปแล้ว",
+          "hardNote": "ใกล้ระดับก่อน rally — บ่งชี้ว่าการเจรจาทุน DOE สะดุดหนักหรือ sector risk-off กว้าง",
+          "rrNote": "จากราคาปัจจุบัน ($2.21) stop แคบ vs TP2",
+          "rrWarning": "R/R ดีในทางทฤษฎี แต่ข่าวดีสัปดาห์นี้ส่วนใหญ่สะท้อนใน rally +20% ไปแล้ว — เสี่ยงไล่ราคา แนะนำรอย่อก่อน"
+        }
+      },
+      "estimateDates": [
+        { "event": "การสรุปทุน DOE", "note": "ยังอยู่ขั้นเจรจา ไม่มีความคืบหน้าใหม่ตั้งแต่ 12 ก.ค." },
+        { "event": "เงินปันผลพิเศษ ($0.0431/หุ้น)", "note": "ครั้งแรกในประวัติศาสตร์บริษัท — สะท้อนฐานะเงินสดที่แข็งแรงจริง แม้หุ้นจะย่อเล็กน้อยตอนประกาศ" }
+      ]
+    }
+  }
+}
