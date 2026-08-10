@@ -1,0 +1,177 @@
+{
+  "ticker": "KOD",
+  "companyName": "Kodiak Sciences Inc.",
+  "companyDescription": "Retinal biotech · Zenkuda (tarcocimab tedromer) — positive Phase 3 GLOW2 in diabetic retinopathy (BLA expected late 2026) — now running DAYBREAK, a Phase 3 wet-AMD study combining Zenkuda with KSI-501, topline due Sept 2026",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-10T20:00:00.000Z",
+  "price": 45.37,
+  "priceChange": 0.5,
+  "priceNote": "Trading near the upper half of its recent range after the Zenkuda GLOW2 Phase 3 win (+66.3% same-day reaction, May 2026) re-rated the stock. DAYBREAK topline data (Sept 2026) is the next binary — a third pipeline readout that would extend the already-validated Zenkuda platform into wet AMD, the largest retinal-disease market.",
+  "marketCap": "$2.839B",
+  "sector": "Healthcare / Biotechnology (Retinal Disease)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Moonshot",
+  "score": 61,
+  "summary": "Kodiak has already de-risked its core platform once — Zenkuda's positive Phase 3 GLOW2 data in diabetic retinopathy drove a +66.3% same-day pop and a BLA submission is expected late 2026. DAYBREAK, a Phase 3 wet-AMD study testing both Zenkuda and the newer KSI-501 combination against aflibercept, reads out topline in Sept 2026 — the next real catalyst, and one that would extend the platform into the largest retinal-disease indication if positive. Cash runway extends into 2027 (post a $184M Dec 2025 raise), so this isn't a pure survival bet like some names in this cohort. The single-print Base/Bull cases lean on the GLOW2 precedent (+66%); the Moon case requires DAYBREAK success PLUS an accelerated regulatory/commercial trajectory across the full retinal pipeline, not the print alone.",
+  "catalysts": [
+    {
+      "icon": "🧬",
+      "name": "DAYBREAK Phase 3 Topline (Wet AMD)",
+      "description": "One-year primary endpoint data for the DAYBREAK study (Zenkuda + KSI-501 vs aflibercept, ~690 subjects enrolled) expected September 2026 — no exact date confirmed yet. A positive readout would extend the already-validated Zenkuda platform into wet AMD, the largest chronic retinal-disease market.",
+      "urgencyLabel": "~1 MONTH (est.)",
+      "dateBadge": "~Sept 2026",
+      "catalystDate": "2026-09-15",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📄",
+      "name": "Zenkuda BLA Submission (Diabetic Retinopathy)",
+      "description": "Following the positive Phase 3 GLOW2 data, a formal FDA submission for Zenkuda in diabetic retinopathy is expected in late 2026 — Kodiak's first path to a commercial product in a large chronic eye-disease market.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "Late 2026",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "The company has less than $1M in current revenue and a documented history of near-collapse (a prior 'going concern' phase before Zenkuda's Phase 3 wins) — the platform is validated now, but this is not a company with a long track record of stable execution",
+    "A dilutive equity raise before commercial revenue commences is described as 'probable' by outside analysts even with runway into 2027 — the DAYBREAK/BLA timeline and any financing needs are linked",
+    "DAYBREAK is a non-inferiority study against an active comparator (aflibercept), not a placebo-controlled superiority trial — the bar for a clean 'win' headline is different and could produce a more ambiguous readout than GLOW2's",
+    "Analyst targets ($56-80, avg ~$62.67) already price in a good amount of the Zenkuda/DAYBREAK optimism — the stock isn't a cheap, unnoticed name",
+    "Kodiak's own history includes a catastrophic prior drawdown before its recent recovery — this is a name that has proven it can go both ways violently"
+  ],
+  "estimateDates": [
+    { "event": "DAYBREAK Phase 3 Topline", "dateRange": "Sept 2026", "note": "One-year primary endpoint, exact date not yet confirmed", "est": "n/a", "highlight": "yellow" },
+    { "event": "Zenkuda BLA Submission", "dateRange": "Late 2026", "note": "Following positive Phase 3 GLOW2 data in diabetic retinopathy", "est": "n/a", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -45, "price": 24.95 },
+    { "label": "Base", "color": "yellow", "pct": 38.1, "price": 62.67 },
+    { "label": "Bull", "color": "green", "pct": 76.4, "price": 80.0 },
+    { "label": "Moon", "color": "purple", "pct": 210, "price": 140.65 }
+  ],
+  "analystTargets": [
+    { "firm": "JPMorgan", "target": 66, "rating": "Buy", "note": "Raised from $56" },
+    { "firm": "Wall Street Consensus (6 analysts)", "target": 62.67, "rating": "Strong Buy", "note": "High estimate $80, low estimate $56" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held at 3.50-3.75% on Jul 29, 2026, though the weak Jul NFP (-23K, Aug 7) has since pulled hike odds down sharply. Kodiak's runway into 2027 reduces near-term financing dependence, but a probable future dilutive raise (per outside analysts) still makes financing conditions relevant.",
+    "inflationNote": "Core PCE still 3.3% YoY. A hot CPI print (Aug 12) could pressure small/mid-cap biotech risk appetite broadly, independent of the DAYBREAK readout itself.",
+    "sectorImpact": "The DAYBREAK/BLA regulatory pathway is idiosyncratic and macro-independent, but a probable future capital raise means broad financing-condition tightening would still matter to this name.",
+    "summary": "MEDIUM — DAYBREAK's outcome is company-specific and macro-independent, but the still-likely future dilutive raise (even with 2027 runway) means broad risk-off from a hawkish Fed surprise would matter more here than for a fully self-funded biotech."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 45.37, "note": "Current price, ~1 month ahead of DAYBREAK topline", "timing": "Now (small starter)" },
+      { "label": "Entry 2", "level": 36, "rangeMax": 40, "note": "Pullback zone if pre-catalyst positioning fades before the Sept print", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 28, "note": "Deep dip — would need a broad biotech selloff or a negative pre-DAYBREAK signal", "timing": "Deep dip / thesis intact" }
+    ],
+    "tp1": { "price": 62.67, "pct": 38.1, "note": "Base — DAYBREAK reads out in-line, hits the Wall Street consensus target" },
+    "tp2": { "price": 80.0, "pct": 76.4, "note": "Bull — clean DAYBREAK win (comparable magnitude to the GLOW2 +66% reaction), hits the high analyst estimate" },
+    "tp3": { "price": 140.65, "pct": 210.0, "note": "Moon — DAYBREAK succeeds AND the Zenkuda BLA/commercial trajectory accelerates across the full retinal pipeline — the full multi-catalyst thesis, not the September print alone", "moon": true },
+    "stopLoss": {
+      "tight": 37.20, "tightPct": -18.0, "tightNote": "Thesis-neutral technical stop — normal pre-catalyst volatility becoming a real breakdown",
+      "hard": 24.95, "hardPct": -45.0, "hardNote": "Would reflect a genuine DAYBREAK miss or non-inferiority failure — a real setback given the study design",
+      "riskReward": "1.7 : 1", "rrNote": "Entry 1 to hard stop vs TP2 (Bull case)", "rrWarning": "Well below the 5:1 turbo target — Kodiak's Base/Bull cases are constrained by analyst targets that already price in real optimism; the Moon case requires the full multi-catalyst thesis playing out over 6-12 months, not just the September print"
+    },
+    "verdict": "SPECULATIVE — a real, already-partially-validated platform (Zenkuda's Phase 3 GLOW2 win) with DAYBREAK as the next extension catalyst, but the near-term print alone (per the GLOW2 precedent) likely produces a Base/Bull-magnitude move, not a Moon-magnitude one — the 200%+ case needs the full pipeline thesis to play out. ค่าขนม/Moonshot sizing, 2-5% max.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "phase3_readout",
+    "preRunup": "Kodiak's own history shows limited pre-catalyst drift — the GLOW2 reaction was a same-day move on the data itself, not a multi-week build. Expect a similar pattern into the Sept DAYBREAK readout.",
+    "preRunupTiming": "Minimal pre-event drift; the move happens on the data release itself",
+    "preRunupPct": "Limited — Kodiak's precedent shows the reaction concentrates on the readout day",
+    "postWin": {
+      "avgPct": 66.3,
+      "range": "+40% to +70%",
+      "note": "Kodiak's own Zenkuda GLOW2 Phase 3 win (May 2026) drove a same-day +66.3% pop — the strongest available same-company precedent for what a positive DAYBREAK readout could do, though DAYBREAK's non-inferiority design against an active comparator may produce a less binary reaction than GLOW2's superiority-vs-sham result.",
+      "exampleDate": "May 2026 (Kodiak GLOW2)"
+    },
+    "postLose": {
+      "avgPct": -45,
+      "range": "-30% to -55%",
+      "note": "No DAYBREAK-specific or recent Kodiak Phase 3 miss precedent is available to cite (the company's recent readouts have all been positive) — this range reflects the general pattern for a retinal-biotech non-inferiority miss against an active comparator.",
+      "exampleDate": "N/A — no recent Kodiak Phase 3 miss precedent; general sector pattern"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "A real, partially-validated platform with 2027 cash runway reduces the survival risk common in this cohort, but the Moon case depends on the full multi-catalyst thesis, not just the Sept print — standard ค่าขนม sizing (3%)"
+    },
+    "stopPreCatalyst": { "pct": -18, "price": 37.20, "note": "A break below ~$37.20 ahead of the Sept DAYBREAK readout would suggest the market is de-risking ahead of the print" },
+    "stopPostCatalyst": { "pct": -30, "note": "If DAYBREAK misses its non-inferiority bar, exit — the wet-AMD extension of the thesis has failed even if Zenkuda's diabetic retinopathy approval path (GLOW2-based) remains intact separately" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "KOD",
+      "event": "Zenkuda (tarcocimab tedromer) Phase 3 GLOW2 win in diabetic retinopathy",
+      "date": "May 2026",
+      "movePct": 66.3,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company, most directly relevant precedent — the platform's prior Phase 3 win drove a same-day +66.3% pop, setting the realistic Base/Bull-case magnitude for a positive DAYBREAK readout."
+    },
+    {
+      "ticker": "KTOS",
+      "event": "Marine Corps Collaborative Combat Aircraft (Valkyrie) selection",
+      "date": "Jan 2026",
+      "movePct": 380,
+      "days": 30,
+      "outcome": "good",
+      "note": "Cross-sector reference for what a full-thesis, multi-catalyst re-rate (not a single data print) can look like — used here to calibrate the Moon case, which requires more than the September print alone."
+    }
+  ],
+  "sources": [
+    "https://finance.yahoo.com/sectors/healthcare/articles/kodiak-sciences-kod-66-3-190512663.html",
+    "https://www.prnewswire.com/news-releases/kodiak-sciences-completes-enrollment-in-first-pivotal-cohort-in-the-phase-3-peak-trial-of-ksi-101-for-macular-edema-secondary-to-inflammation-and-reaffirms-topline-clinical-data-release-remains-on-track-for-december-2026-302844806.html",
+    "https://www.stocktitan.net/news/KOD/kodiak-sciences-announces-recent-business-highlights-and-first-u50u4ml75bbx.html",
+    "https://www.sahmcapital.com/news/content/kodiak-sciences-zenkuda-trial-win-puts-cash-needs-and-growth-in-focus-2026-06-05"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Kodiak de-risk แพลตฟอร์มหลักไปแล้วครั้งหนึ่ง — ข้อมูล Phase 3 GLOW2 ของ Zenkuda ที่เป็นบวกในโรค diabetic retinopathy ทำให้หุ้นบวก +66.3% วันเดียว และคาดยื่น BLA ปลายปี 2026 DAYBREAK ซึ่งเป็น Phase 3 ทดสอบทั้ง Zenkuda และ KSI-501 รวมกันใน wet AMD จะประกาศผลหลัก ก.ย. 2026 — catalyst จริงถัดไป ถ้าบวกจะขยายแพลตฟอร์มสู่โรคจอตาที่ใหญ่ที่สุด runway เงินสดยาวถึงปี 2027 (หลังระดมทุน $184M ธ.ค. 2025) จึงไม่ใช่ survival bet ล้วนแบบบางตัวในกลุ่มนี้ Base/Bull case จากการประกาศผลครั้งเดียวอิงจากบรรทัดฐาน GLOW2 (+66%) ส่วน Moon case ต้องการทั้ง DAYBREAK สำเร็จ บวกเส้นทาง regulatory/commercial ทั้ง pipeline เร่งตัว ไม่ใช่แค่ผลประกาศเดียว",
+      "priceNote": "เทรดใกล้ครึ่งบนของ range ล่าสุด หลังชัยชนะ Zenkuda GLOW2 Phase 3 (บวก +66.3% วันเดียว, พ.ค. 2026) re-rate หุ้น ข้อมูล DAYBREAK (ก.ย. 2026) คือ binary ถัดไป — การประกาศผล pipeline ครั้งที่ 3 ที่จะขยายแพลตฟอร์ม Zenkuda ที่ validated แล้วสู่ wet AMD ตลาดโรคจอตาที่ใหญ่ที่สุด",
+      "scoreLabel": "Moonshot",
+      "catalysts": [
+        { "name": "ผลหลัก DAYBREAK Phase 3 (Wet AMD)", "description": "ข้อมูล primary endpoint 1 ปีของ DAYBREAK (Zenkuda + KSI-501 vs aflibercept ผู้ป่วยลงทะเบียนแล้ว ~690 คน) คาด ก.ย. 2026 — ยังไม่ยืนยันวันที่แน่นอน ถ้าบวกจะขยายแพลตฟอร์ม Zenkuda ที่ validated แล้วสู่ wet AMD ตลาดโรคจอตาเรื้อรังที่ใหญ่ที่สุด" },
+        { "name": "ยื่น BLA Zenkuda (Diabetic Retinopathy)", "description": "หลังข้อมูล Phase 3 GLOW2 บวก คาดยื่น FDA อย่างเป็นทางการปลายปี 2026 — เส้นทางแรกสู่ผลิตภัณฑ์เชิงพาณิชย์ของ Kodiak ในตลาดโรคตาเรื้อรังขนาดใหญ่" }
+      ],
+      "risks": [
+        "บริษัทมีรายได้ปัจจุบันไม่ถึง $1M และมีประวัติเกือบล้มละลาย (เคยมี 'going concern' ก่อนชัยชนะ Phase 3 ของ Zenkuda) — แพลตฟอร์ม validated แล้วตอนนี้ แต่นี่ไม่ใช่บริษัทที่มี track record execution มั่นคงยาวนาน",
+        "นักวิเคราะห์ภายนอกระบุว่าการระดมทุนแบบ dilutive ก่อนมีรายได้เชิงพาณิชย์ 'น่าจะเกิดขึ้น' แม้จะมี runway ถึงปี 2027",
+        "DAYBREAK เป็นการทดสอบ non-inferiority เทียบ active comparator (aflibercept) ไม่ใช่ superiority เทียบ placebo — มาตรฐานของ headline 'ชนะ' ต่างจาก GLOW2 อาจได้ผลลัพธ์ที่กำกวมกว่า",
+        "เป้านักวิเคราะห์ ($56-80 เฉลี่ย ~$62.67) price ความหวังจาก Zenkuda/DAYBREAK ไปมากแล้ว ไม่ใช่หุ้นถูกที่ตลาดยังไม่สนใจ",
+        "ประวัติของ Kodiak เองเคยร่วงหนักมากก่อนจะฟื้นตัว — นี่คือหุ้นที่พิสูจน์แล้วว่าไปได้ทั้งสองทางแบบรุนแรง"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.50-3.75% เมื่อ 29 ก.ค. 2026 แม้ NFP อ่อนแอ (-23K, 7 ส.ค.) จะดึงความน่าจะเป็นขึ้นดอกเบี้ยลงแล้ว runway ถึงปี 2027 ของ Kodiak ลดการพึ่งพาเงื่อนไขการเงินระยะสั้น แต่การระดมทุนเพิ่มเติมที่คาดว่าจะเกิดยังทำให้เงื่อนไขการเงินสำคัญ",
+        "inflationNote": "Core PCE ยังอยู่ 3.3% YoY CPI ร้อนแรง (12 ส.ค.) อาจกดดัน risk appetite biotech ขนาดกลาง-เล็กในวงกว้าง แยกจากผล DAYBREAK เอง",
+        "sectorImpact": "เส้นทาง regulatory DAYBREAK/BLA เป็นเรื่องเฉพาะบริษัทและ independent จาก macro แต่การระดมทุนเพิ่มเติมที่น่าจะเกิดหมายความว่าเงื่อนไขการเงินที่ตึงตัวกว้างยังสำคัญกับหุ้นนี้",
+        "summary": "ปานกลาง — ผล DAYBREAK เป็นเรื่องเฉพาะบริษัทและ independent จาก macro แต่การระดมทุนเพิ่มเติมที่ยังน่าจะเกิด (แม้จะมี runway ถึงปี 2027) หมายความว่า risk-off กว้างจาก Fed hawkish surprise ยังสำคัญกับหุ้นนี้มากกว่า biotech ที่ทุนพอเองเต็มที่"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — แพลตฟอร์มที่ validated บางส่วนแล้วจริง (ชัยชนะ Phase 3 GLOW2 ของ Zenkuda) โดยมี DAYBREAK เป็น catalyst ขยายผลถัดไป แต่ผลประกาศระยะสั้นเพียงอย่างเดียว (อิงบรรทัดฐาน GLOW2) น่าจะให้ผลระดับ Base/Bull ไม่ใช่ Moon — case 200%+ ต้องการ pipeline thesis เต็มรูปแบบ ควร size แบบค่าขนม/Moonshot 2-5% สูงสุด",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน ก่อนผล DAYBREAK ราว 1 เดือน", "timing": "ตอนนี้ (ไม้เล็ก)" },
+          { "note": "โซนย่อถ้าการ position ก่อนผลประกาศจางลง", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงลึก — ต้องมี biotech selloff กว้างหรือสัญญาณลบก่อนผล DAYBREAK", "timing": "Deep dip / thesis intact" }
+        ],
+        "tp1": { "note": "Base — DAYBREAK ออกมาตามคาด แตะเป้า consensus" },
+        "tp2": { "note": "Bull — DAYBREAK ชนะสะอาด (ขนาดใกล้เคียงปฏิกิริยา GLOW2 +66%) แตะเป้าสูงสุดของนักวิเคราะห์" },
+        "tp3": { "note": "Moon — DAYBREAK สำเร็จ บวกเส้นทาง BLA/เชิงพาณิชย์ของ Zenkuda เร่งตัวทั้ง pipeline — thesis เต็มรูปแบบ ไม่ใช่แค่ผลประกาศ ก.ย. เดียว", "moon": true },
+        "stopLoss": {
+          "tightNote": "Stop เชิงเทคนิคที่ thesis ยังไม่พัง — ความผันผวนก่อน catalyst ปกติกลายเป็นการกลับตัวจริง",
+          "hardNote": "แปลว่า DAYBREAK พลาดจริงหรือไม่ผ่านมาตรฐาน non-inferiority — ความพ่ายแพ้จริงตามการออกแบบการทดลอง",
+          "rrNote": "จาก Entry 1 ถึง hard stop เทียบ TP2 (Bull case)",
+          "rrWarning": "ต่ำกว่าเป้า 5:1 ของ turbo มาก — Base/Bull case ของ Kodiak ถูกจำกัดด้วยเป้านักวิเคราะห์ที่ price ความหวังไปแล้ว Moon case ต้องการ thesis เต็มรูปแบบเกิดขึ้นใน 6-12 เดือน ไม่ใช่แค่ผลประกาศ ก.ย."
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลหลัก DAYBREAK Phase 3", "note": "คาด ก.ย. 2026 ยังไม่ยืนยันวันที่แน่นอน" },
+        { "event": "ยื่น BLA Zenkuda", "note": "คาดปลายปี 2026" }
+      ]
+    }
+  }
+}

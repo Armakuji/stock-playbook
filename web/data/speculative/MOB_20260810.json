@@ -1,0 +1,172 @@
+{
+  "ticker": "MOB",
+  "companyName": "Mobilicom Limited",
+  "companyDescription": "Defense comms/cybersecurity microcap · SkyHopper PRO + ICE Electronic Warfare Resistance & Cybersecurity Suite embedded in a Tier-1 U.S. drone manufacturer's loitering munitions under a $249M, 5-year DoD Program of Record — debt-free with 30+ months of cash runway (self-fetched, no live-prices.json cache entry)",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-10T20:00:00.000Z",
+  "price": 5.14,
+  "priceChange": 3.01,
+  "priceNote": "Up 3.0% today, still well off the 52-week high of $11.02 and far above the 52-week low of $1.656 — that range alone shows how sharply this microcap can re-rate on contract news. Aug 13, 2026 earnings is the next real test of order-flow pace under the $249M DoD program of record.",
+  "marketCap": "$64.94M",
+  "sector": "Industrials / Aerospace & Defense (Drone Cybersecurity & Comms)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 52,
+  "summary": "Mobilicom's SkyHopper PRO and ICE Electronic Warfare Resistance & Cybersecurity Suite are now essential systems on a Tier-1 U.S. drone manufacturer's (>$5B annual sales) loitering munitions, sold to the Department of War under a $249M, 5-year Program of Record. That's roughly 3.8x today's entire $65M market cap in contracted program value alone. The company is debt-free with $17.7M cash (Mar 31, 2026) and terminated its ATM facility, removing the dilution overhang common at this cap tier. Aug 13, 2026 six-month results are the next real catalyst — confirming whether order-flow (most recently $2.2M in new April 2026 purchase orders) is accelerating toward the program's full value. ค่าขนม position sized 2-5% max — this is a binary bet on defense-budget order-flow, not a stable holding.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "H1 2026 Results (Six Months Ended Jun 30)",
+      "description": "Confirmed for Thursday, Aug 13, 2026, after market close. Key read: how much of the $249M, 5-year DoD Program of Record has converted into actual bookings/revenue beyond the $2.2M April purchase order, plus any update on new Tier-1 design wins or international (APAC) order progress.",
+      "urgencyLabel": "3 DAYS",
+      "dateBadge": "Aug 13, 2026",
+      "catalystDate": "2026-08-13",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🛡️",
+      "name": "$249M DoD Program of Record — Order-Flow Scale-Up",
+      "description": "SkyHopper PRO/ICE systems are qualified and shipping against a 5-year, $249M program with a Tier-1 U.S. drone manufacturer selling to the Department of War. Ongoing (not single-dated) — the structural driver behind every quarterly print from here.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Revenue is still small and lumpy — the $249M program-of-record figure is a 5-year total contract value, not a confirmed annual run-rate; Aug 13 earnings will show how much has actually converted to bookings",
+    "Thin trading liquidity (recent daily dollar volume in the tens of thousands) means both news and no-news days can produce outsized price swings",
+    "Heavy customer concentration — the Tier-1 drone manufacturer relationship is the single largest revenue driver; losing that design-win would be a major setback",
+    "52-week range of $1.656 to $11.02 shows this is a genuinely volatile name in both directions, not a stable compounder",
+    "Broader Pentagon/DoD budget reprioritization or program delays could slow the order-flow pace the whole thesis depends on"
+  ],
+  "estimateDates": [
+    { "event": "H1 2026 Results", "dateRange": "Aug 13, 2026", "note": "Confirmed date — order-flow pace under the DoD program of record is the key read", "est": "n/a", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -50, "price": 2.57 },
+    { "label": "Base", "color": "yellow", "pct": 80, "price": 9.25 },
+    { "label": "Bull", "color": "green", "pct": 150, "price": 12.85 },
+    { "label": "Moon", "color": "purple", "pct": 280, "price": 19.53 }
+  ],
+  "analystTargets": [],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held at 3.50-3.75% on Jul 29, 2026, though the weak Jul NFP (-23K, Aug 7) has since pulled hike odds down sharply. DoD program-of-record revenue is largely appropriations-driven and rate-insensitive, but a microcap like MOB is still exposed to broad risk-appetite swings around CPI (Aug 12) and FOMC (Sep 15-16).",
+    "inflationNote": "Core PCE still 3.3% YoY. A hot CPI print could trigger risk-off in thinly-traded microcaps broadly, independent of MOB's own contract-flow fundamentals.",
+    "sectorImpact": "Defense budget allocations are largely insulated from the rate cycle, but MOB's own thin liquidity and small cap size make it more sensitive to broad risk-appetite swings than the underlying DoD program itself would suggest.",
+    "summary": "MEDIUM — the DoD program of record is structurally macro-independent, but MOB's thin liquidity and microcap size mean broad risk-off (a hawkish CPI or FOMC surprise) could still pressure the stock independent of order-flow news."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 5.14, "note": "Current price, ahead of Aug 13 earnings", "timing": "Now (small starter)" },
+      { "label": "Entry 2", "level": 4.00, "rangeMax": 4.50, "note": "Pullback zone if pre-earnings positioning fades", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 2.80, "note": "Deep dip — near the lower half of the 52-week range, thesis-intact only", "timing": "Deep dip / thesis intact" }
+    ],
+    "tp1": { "price": 9.25, "pct": 80.0, "note": "Base — Aug 13 earnings confirms order-flow acceleration, re-tests the 52-week high zone" },
+    "tp2": { "price": 12.85, "pct": 150.0, "note": "Bull — breaks above the 52-week high on new Tier-1 design wins or international (APAC) order confirmation" },
+    "tp3": { "price": 19.53, "pct": 280.0, "note": "Moon — the $249M DoD program of record materializes at scale plus new geography expansion, comparable to KTOS's +380% contract-driven re-rate", "moon": true },
+    "stopLoss": {
+      "tight": 4.21, "tightPct": -18.1, "tightNote": "Thesis-neutral technical stop — normal pre-earnings volatility becoming a real breakdown",
+      "hard": 2.83, "hardPct": -44.9, "hardNote": "Risk-of-zero territory for the near-term thesis — would suggest the DoD program of record isn't converting to real bookings",
+      "riskReward": "3.3 : 1", "rrNote": "Entry 1 to hard stop vs TP2 (Bull case)", "rrWarning": "Asymmetric but below the 5:1 turbo target — this microcap's real risk is thin liquidity amplifying any bad print, not just the stop distance"
+    },
+    "verdict": "SPECULATIVE — a real $249M DoD program of record and Blue UAS certification sit underneath a $65M market cap, with Aug 13 earnings as the next confirmation point for order-flow pace. Debt-free with 30+ months of runway (ATM terminated) removes the dilution overhang common at this cap tier. ค่าขนม position only — 2-5% max.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "Microcap defense names like MOB react sharply to contract-award headlines rather than building slowly pre-earnings — the stock's own 52-week range ($1.656 to $11.02) shows this pattern of sharp, news-driven re-rates rather than a steady climb.",
+    "preRunupTiming": "Days around contract/order announcements, not weeks of positioning",
+    "preRunupPct": "Historical range implies moves well beyond +100% on confirmed program-of-record news",
+    "postWin": {
+      "avgPct": 380,
+      "range": "+50% to +380%",
+      "note": "Kratos Defense (KTOS) ran from ~$28 to ~$134 (+380%) after the Marine Corps selected its Valkyrie drone for the Collaborative Combat Aircraft program in Jan 2026 — the clearest same-sector precedent for a DoD program-of-record win re-rating a defense name. Smaller same-tier example: Unusual Machines (UMAC) jumped 52% in a single day on Pentagon equity-stake news (May 2026).",
+      "exampleDate": "Jan 2026 (KTOS) / May 2026 (UMAC)"
+    },
+    "postLose": {
+      "avgPct": -35,
+      "range": "-20% to -50%",
+      "note": "No MOB-specific negative-catalyst precedent was found in this research pass — this range reflects the general pattern for thinly-traded defense microcaps on a program delay or contract-loss headline.",
+      "exampleDate": "N/A — no MOB-specific negative precedent found in this research pass"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Real DoD program of record and a debt-free balance sheet reduce the survival risk common at this cap tier, but revenue is still small and lumpy — ค่าขนม sizing (3% of portfolio), not a core position"
+    },
+    "stopPreCatalyst": { "pct": -18, "price": 4.21, "note": "A break below ~$4.21 ahead of Aug 13 earnings would suggest the market is de-risking the order-flow thesis before the print" },
+    "stopPostCatalyst": { "pct": -30, "note": "If Aug 13 results show the DoD program of record isn't converting to real bookings, exit — the entire thesis rests on that conversion" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "KTOS",
+      "event": "Marine Corps Collaborative Combat Aircraft (Valkyrie) selection — DoD program of record win",
+      "date": "Jan 2026",
+      "movePct": 380,
+      "days": 30,
+      "outcome": "good",
+      "note": "Closest sector comparable for what a confirmed DoD program-of-record win can do to a defense stock's valuation — KTOS ran from ~$28 to ~$134 over the following weeks."
+    },
+    {
+      "ticker": "UMAC",
+      "event": "Pentagon equity-stake news",
+      "date": "May 2026",
+      "movePct": 52,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same defense-microcap tier (~$11M revenue at the time) — shows the single-day magnitude a policy/contract headline can produce even without a full program-of-record scale event."
+    }
+  ],
+  "sources": [
+    "https://stocktwits.com/news-articles/business/others/mobilicom-secures-2-2-million-in-new-purchase-orders-for-u-s-do-w-program-of-record-with-tier-1-drone-manufacturer/cZBIwEDRI6Z",
+    "https://www.sec.gov/Archives/edgar/data/1898643/000121390026061495/ea029228801ex99-1.htm",
+    "https://ir.mobilicom.com/releases/mobilicom-to-report-financial-and-operational-results-for-the-six-months-ended-june-30-2026-on-thursday-august-13-2026/",
+    "https://marketwise.com/investing/best-drone-stocks-2026-pentagon/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "SkyHopper PRO และ ICE Electronic Warfare Resistance & Cybersecurity Suite ของ Mobilicom ตอนนี้เป็นระบบหลักในโดรน loitering munition ของผู้ผลิตโดรนระดับ Tier-1 สหรัฐ (ยอดขายเกิน $5B/ปี) ที่ขายให้กระทรวงกลาโหมภายใต้ Program of Record มูลค่า $249M ระยะ 5 ปี — คิดเป็นราว 3.8 เท่าของมูลค่าตลาดปัจจุบันทั้งบริษัท ($65M) เพียงจากมูลค่าสัญญาโครงการเดียว บริษัทไม่มีหนี้ มีเงินสด $17.7M (31 มี.ค. 2026) และยกเลิก ATM facility แล้ว ลดความกังวลเรื่อง dilution ที่มักเจอในหุ้นระดับนี้ ผลประกอบการ 13 ส.ค. 2026 คือ catalyst จริงถัดไป — ยืนยันว่า order-flow (ล่าสุด $2.2M purchase order เม.ย. 2026) กำลังเร่งตัวสู่มูลค่าเต็มของโครงการหรือไม่ ควร size แบบค่าขนม 2-5% เท่านั้น — นี่คือ binary bet บน order-flow งบ defense ไม่ใช่ไม้ที่มั่นคง",
+      "priceNote": "บวก 3.0% วันนี้ ยังห่างจาก 52-week high ที่ $11.02 มาก และสูงกว่า 52-week low ที่ $1.656 มาก — range นี้เองแสดงว่าหุ้นไมโครแคปตัวนี้ re-rate แรงได้แค่ไหนจากข่าวสัญญา ผลประกอบการ 13 ส.ค. 2026 คือบททดสอบถัดไปของ order-flow ภายใต้โครงการ DoD",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "ผลประกอบการ H1 2026 (6 เดือนสิ้นสุด 30 มิ.ย.)", "description": "ยืนยันวันที่ 13 ส.ค. 2026 หลังตลาดปิด — จับตาว่า order-flow จากโครงการ DoD $249M แปลงเป็น booking/รายได้จริงมากแค่ไหน นอกเหนือจาก purchase order $2.2M เม.ย. บวกอัปเดต design win ใหม่หรือความคืบหน้าออเดอร์ APAC" },
+        { "name": "การขยายสเกล Order-Flow โครงการ DoD $249M", "description": "ระบบ SkyHopper PRO/ICE ผ่านการรับรองและเริ่มส่งมอบตามโครงการ 5 ปี $249M กับผู้ผลิตโดรน Tier-1 สหรัฐที่ขายให้กระทรวงกลาโหม ต่อเนื่อง (ไม่ใช่ event เดียว) — เป็นแรงขับเคลื่อนเชิงโครงสร้างของทุกผลประกอบการจากนี้" }
+      ],
+      "risks": [
+        "รายได้ยังเล็กและไม่สม่ำเสมอ — ตัวเลข $249M เป็นมูลค่าสัญญารวม 5 ปี ไม่ใช่ run-rate รายปีที่ยืนยันแล้ว ผลประกอบการ 13 ส.ค. จะแสดงว่าแปลงเป็น booking จริงมากแค่ไหน",
+        "สภาพคล่องการซื้อขายบางมาก (ปริมาณซื้อขายรายวันหลักหมื่นดอลลาร์) ทำให้ทั้งวันที่มีข่าวและไม่มีข่าวราคาผันผวนแรงได้",
+        "พึ่งพาลูกค้ารายใหญ่สูงมาก — ความสัมพันธ์กับผู้ผลิตโดรน Tier-1 คือแรงขับเคลื่อนรายได้หลัก การเสีย design win นี้จะเป็นปัญหาใหญ่",
+        "52-week range $1.656 ถึง $11.02 แสดงว่านี่คือหุ้นผันผวนจริงทั้งสองทาง ไม่ใช่หุ้นที่นิ่ง",
+        "ความเสี่ยงการจัดสรรงบ Pentagon/DoD ใหม่หรือความล่าช้าของโครงการอาจชะลอ order-flow ที่ thesis ทั้งหมดพึ่งพา"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.50-3.75% เมื่อ 29 ก.ค. 2026 แม้ NFP อ่อนแอ (-23K, 7 ส.ค.) จะดึงความน่าจะเป็นขึ้นดอกเบี้ยลงมาแล้ว รายได้จากโครงการ DoD ส่วนใหญ่ขึ้นกับงบประมาณ ไม่ sensitive กับดอกเบี้ย แต่หุ้นไมโครแคปแบบ MOB ยัง exposed ต่อความผันผวน risk appetite กว้างรอบ CPI (12 ส.ค.) และ FOMC (15-16 ก.ย.)",
+        "inflationNote": "Core PCE ยังอยู่ 3.3% YoY CPI ร้อนแรงอาจกระตุ้น risk-off ในหุ้นไมโครแคปสภาพคล่องบางโดยทั่วไป แยกจาก fundamental order-flow ของ MOB เอง",
+        "sectorImpact": "การจัดสรรงบ defense ส่วนใหญ่ insulated จากวงจรดอกเบี้ย แต่สภาพคล่องบางและขนาดเล็กของ MOB เองทำให้ sensitive ต่อความผันผวน risk appetite กว้างมากกว่าที่โครงการ DoD เองจะบ่งชี้",
+        "summary": "ปานกลาง — โครงการ DoD เป็นเรื่องโครงสร้างที่ independent จาก macro แต่สภาพคล่องบางและขนาดไมโครแคปของ MOB หมายความว่า risk-off กว้าง (CPI หรือ FOMC hawkish surprise) ยังกดดันหุ้นได้แยกจากข่าว order-flow"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — โครงการ DoD Program of Record มูลค่า $249M จริงและการรับรอง Blue UAS อยู่ใต้มูลค่าตลาดเพียง $65M โดยมีผลประกอบการ 13 ส.ค. เป็นจุดยืนยัน order-flow ถัดไป งบดุลไม่มีหนี้ + runway 30+ เดือน (ยกเลิก ATM แล้ว) ลดความกังวล dilution ที่มักเจอในระดับนี้ ควร size แบบค่าขนมเท่านั้น — 2-5% สูงสุด",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน ก่อนผลประกอบการ 13 ส.ค.", "timing": "ตอนนี้ (ไม้เล็ก)" },
+          { "note": "โซนย่อถ้าการ position ก่อนผลประกอบการจางลง", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงลึก — ใกล้ครึ่งล่างของ 52-week range เฉพาะกรณี thesis ยังอยู่", "timing": "Deep dip / thesis intact" }
+        ],
+        "tp1": { "note": "Base — ผลประกอบการ 13 ส.ค. ยืนยัน order-flow เร่งตัว กลับไปทดสอบโซน 52-week high" },
+        "tp2": { "note": "Bull — ทะลุ 52-week high จาก design win ใหม่หรือยืนยันออเดอร์ APAC" },
+        "tp3": { "note": "Moon — โครงการ DoD $249M เกิดขึ้นจริงเต็มสเกล บวกขยายภูมิภาคใหม่ เทียบเท่า KTOS ที่เคยบวก 380%", "moon": true },
+        "stopLoss": {
+          "tightNote": "Stop เชิงเทคนิคที่ thesis ยังไม่พัง — ความผันผวนก่อนผลประกอบการปกติกลายเป็นการกลับตัวจริง",
+          "hardNote": "เขต risk-of-zero ของ thesis ระยะสั้น — แปลว่าโครงการ DoD ไม่แปลงเป็น booking จริง",
+          "rrNote": "จาก Entry 1 ถึง hard stop เทียบ TP2 (Bull case)",
+          "rrWarning": "Asymmetric แต่ต่ำกว่าเป้า 5:1 ของ turbo — ความเสี่ยงจริงของไมโครแคปตัวนี้คือสภาพคล่องบางขยายผลกระทบของข่าวร้าย ไม่ใช่แค่ระยะ stop"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ H1 2026", "note": "ยืนยันวันที่ 13 ส.ค. 2026" }
+      ]
+    }
+  }
+}
