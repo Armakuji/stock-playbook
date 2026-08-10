@@ -1,0 +1,174 @@
+{
+  "ticker": "BIDU",
+  "companyName": "Baidu, Inc.",
+  "companyDescription": "China search & AI · ERNIE LLM + AI Cloud (core AI revenue +49% YoY) + Apollo Go robotaxi — 22M+ cumulative rides across 27 cities, 3.2M fully driverless rides in Q1 2026 alone (+120% YoY)",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-10T18:00:00.000Z",
+  "price": 110.17,
+  "priceChange": 0.76,
+  "priceNote": "Trading near the bottom of its 52-week range ($84.64-$165.30) and below its 200-day moving average, despite core AI business revenue up 49% YoY and Apollo Go robotaxi rides up 120% YoY — the market is still pricing in China-ADR discount and ad-business softness ahead of the Aug 18 print.",
+  "marketCap": "$37.40B",
+  "sector": "Technology / Internet & AI (China)",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 71,
+  "summary": "Baidu's Q1 2026 print showed the AI pivot is real: core AI-powered business revenue topped RMB 13.6B (+49% YoY) and now exceeds half of general business revenue, while Apollo Go delivered 3.2M fully driverless rides (+120% YoY) across 27 cities. EPS missed estimates by 5.3%, but the stock still rose on AI-narrative strength and buybacks. Trading near 52-week lows with Aug 18, 2026 Q2 earnings as the next catalyst, named-analyst targets (Citi $188, JPMorgan $205) imply 70-86% upside if the AI Cloud/robotaxi growth rate holds — with real China-ADR regulatory risk as the offsetting tail.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "Confirmed for Aug 18, 2026 (before US market open) — the next test of whether the Q1 pattern (AI Cloud/Apollo Go beat masking an ad-business/EPS miss) repeats, and whether the market keeps rewarding the AI narrative over the headline numbers.",
+      "urgencyLabel": "~1 WEEK",
+      "dateBadge": "Aug 18, 2026",
+      "catalystDate": "2026-08-18",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🤖",
+      "name": "Apollo Go / AI Cloud Scale-Up",
+      "description": "Ongoing: Apollo Go robotaxi rides +120% YoY across 27 cities (22M+ cumulative rides), ERNIE Assistant daily active users nearly doubling YoY — structural AI growth drivers rather than a single dated event.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "China ADR regulatory/delisting risk — the Holding Foreign Companies Accountable Act (HFCAA) saw revived enforcement signaled in a Feb 2025 US policy memo; Baidu's Hong Kong dual-listing (9888.HK) mitigates but doesn't eliminate this tail risk",
+    "Q1 2026 EPS missed estimates by 5.3% ($1.77 vs $1.87 est.) — the legacy ad business is softening even as AI Cloud/Apollo Go grow, an execution/mix risk that could resurface Aug 18",
+    "Apollo Go's robotaxi rollout depends on Chinese municipal regulatory approval city-by-city — a safety incident or permit slowdown could stall the growth rate that's driving the re-rate thesis",
+    "US-China tech tensions (AI chip export controls) could constrain the compute buildout underneath Baidu's AI Cloud and ERNIE model training roadmap"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Aug 18, 2026", "note": "Confirmed date, before US market open — watch AI Cloud/Apollo Go growth rate vs ad-business trend", "est": "n/a", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -25, "price": 82.63 },
+    { "label": "Base", "color": "yellow", "pct": 20, "price": 132.20 },
+    { "label": "Bull", "color": "green", "pct": 70.7, "price": 188.00 },
+    { "label": "Moon", "color": "purple", "pct": 86.1, "price": 205.00 }
+  ],
+  "analystTargets": [
+    { "firm": "JPMorgan (Alex Yao)", "target": 205, "rating": "Overweight", "note": "Lowered from $230 on Jul 17, 2026, but still Overweight" },
+    { "firm": "Citi (Alicia Yap)", "target": 188, "rating": "Buy", "note": "30-day catalyst watch placed Jun 23, 2026" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held at 3.50-3.75% on Jul 29, 2026, with 3 of 12 officials dissenting toward a hike. For a China ADR, US rate policy matters less directly than China-specific factors — but broad risk-off from a hawkish Fed surprise (CPI Aug 12) still tends to hit high-beta China tech alongside US growth names.",
+    "inflationNote": "Core PCE still 3.3% YoY in the US; separately, China's own domestic demand/consumer trends affect Baidu's ad business more directly than US inflation does — both cross-currents matter for this specific name.",
+    "sectorImpact": "China ADRs carry a dual macro exposure: US rate/risk-appetite cycles plus China-specific regulatory and economic policy — BIDU's re-rate thesis depends on AI Cloud/Apollo Go execution holding through both.",
+    "summary": "MEDIUM — Baidu's AI Cloud and Apollo Go growth are largely idiosyncratic and China-domestic, but the stock's discount (still near 52-week lows) reflects real geopolitical/regulatory overhang (HFCAA enforcement) on top of ordinary US rate-cycle risk, making this a two-front macro exposure rather than one."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 110.17, "note": "Current price, near 52-week lows", "timing": "Now" },
+      { "label": "Entry 2", "level": 95, "rangeMax": 100, "note": "Deeper pullback zone if China-tech risk-off intensifies before Aug 18", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 85, "note": "Near the 52-week low ($84.64) — would need a regulatory/delisting scare or broad China-tech selloff", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 132.20, "pct": 20.0, "note": "Base — steady AI Cloud/Apollo Go growth continues, inline Aug 18 earnings" },
+    "tp2": { "price": 188.00, "pct": 70.7, "note": "Bull — hits Citi's $188 target as AI Cloud re-rating continues" },
+    "tp3": { "price": 205.00, "pct": 86.1, "note": "Moon — hits JPMorgan's $205 Overweight target as Apollo Go scale and AI Cloud margins inflect together", "moon": true },
+    "stopLoss": {
+      "tight": 99.15, "tightPct": -10.0, "tightNote": "Below the Entry 2 pullback zone — normal China-tech volatility becoming a real trend break",
+      "hard": 88.14, "hardPct": -20.0, "hardNote": "Approaches the 52-week low ($84.64) — would reflect a genuine regulatory/delisting scare or broad China-tech selloff",
+      "riskReward": "3.5 : 1", "rrNote": "Entry 1 to hard stop vs TP2 (Bull case)", "rrWarning": "Strong R/R on paper, but China-ADR headline risk (regulatory, geopolitical) can move faster than technical stops can react — size accordingly"
+    },
+    "verdict": "BUY — AI Cloud (+49% YoY core AI revenue) and Apollo Go robotaxi scale (+120% YoY rides) are real, dated growth drivers underneath a stock still near 52-week lows. Aug 18 earnings is the next confirmation point; named-analyst targets (Citi $188, JPMorgan $205) imply 70-86% upside if the AI narrative holds.",
+    "approach": "DCA"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Chinese AI-cloud names have shown pre-earnings run-ups tied to AI narrative newsflow rather than a classic slow build — BABA jumped +10% premarket ahead of its own Aug 28 earnings purely on Qwen AI momentum headlines.",
+    "preRunupTiming": "1-2 weeks before earnings, tied to sector-wide AI newsflow",
+    "preRunupPct": "+5% to +10% (BABA precedent)",
+    "postWin": {
+      "avgPct": 6,
+      "range": "+4% to +8%",
+      "note": "BIDU's own Q1 2026 print missed EPS by 5.3% but the stock still rose ~4-5.9% on AI-pivot optimism (core AI revenue +49% YoY) and buybacks — the market is currently rewarding AI Cloud/Apollo Go growth over headline EPS misses.",
+      "exampleDate": "May 2026 (BIDU Q1 2026 earnings)"
+    },
+    "postLose": {
+      "avgPct": -10,
+      "range": "-5% to -15%",
+      "note": "BABA's May 2026 print saw a premarket pop of +7-8% fade to a -3.22% close despite beating on strategic AI-Cloud metrics — shows the AI-narrative goodwill can evaporate intraday if headline numbers disappoint enough.",
+      "exampleDate": "May 2026 (BABA fiscal Q4 FY2026)"
+    },
+    "spotSizing": {
+      "pct": 5,
+      "reason": "Real AI Cloud + robotaxi growth drivers with a dated Aug 18 earnings catalyst, but China-ADR regulatory tail risk (HFCAA enforcement) caps this at a standard rather than oversized position"
+    },
+    "stopPreCatalyst": { "pct": -12, "price": 96.95, "note": "A break below ~$97 before Aug 18 would suggest broad China-tech/regulatory risk-off is overtaking the earnings setup" },
+    "stopPostCatalyst": { "pct": -15, "note": "If Aug 18 earnings disappoint and the stock doesn't stabilize within days (BABA precedent: initial pop faded to a down close), the AI-pivot re-rating thesis needs reassessment" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "BIDU",
+      "event": "Q1 2026 earnings — EPS miss, AI Cloud/Apollo Go beat",
+      "date": "May 2026",
+      "movePct": 5.9,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company precedent: EPS missed by 5.3% but the stock still rose ~4-5.9% as investors rewarded the AI pivot (core AI revenue +49% YoY) and buybacks over the headline miss."
+    },
+    {
+      "ticker": "BABA",
+      "event": "Fiscal Q4 FY2026 earnings — revenue/EPS miss, AI Cloud beat",
+      "date": "May 2026",
+      "movePct": -3.22,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "Same-sector comparable: premarket popped +7-8% on AI Cloud growth (Cloud Intelligence +38% YoY) but the rally faded to a -3.22% close — shows AI-narrative goodwill can evaporate intraday if headline numbers disappoint."
+    }
+  ],
+  "sources": [
+    "https://ir.baidu.com/news-releases/news-release-details/baidu-announces-first-quarter-2026-results/",
+    "https://www.tipranks.com/news/company-announcements/baidus-core-ai-business-surges-as-apollo-go-and-ernie-5-1-drive-q1-2026-momentum",
+    "https://www.marketbeat.com/instant-alerts/baidu-nasdaqbidu-price-target-cut-to-20500-by-analysts-at-jpmorgan-chase-co-2026-07-17/",
+    "https://www.stocktitan.net/news/BIDU/baidu-to-report-second-quarter-2026-financial-results-on-august-18-61z0wxxelw4m.html",
+    "https://finance.yahoo.com/markets/stocks/articles/alibaba-group-holding-baba-down-005133822.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "ผลประกอบการ Q1 2026 ของ Baidu แสดงว่าการปรับสู่ AI เป็นเรื่องจริง — รายได้ธุรกิจ AI หลักทะลุ RMB 13.6 พันล้าน (+49% YoY) และตอนนี้เกินครึ่งของรายได้ธุรกิจทั่วไป ขณะที่ Apollo Go ให้บริการ 3.2 ล้านเที่ยว fully driverless (+120% YoY) ใน 27 เมือง EPS พลาดคาด 5.3% แต่หุ้นยังบวกจากกระแส AI และการซื้อหุ้นคืน เทรดใกล้ 52-week low โดยมีผลประกอบการ Q2 วันที่ 18 ส.ค. 2026 เป็น catalyst ถัดไป เป้าจากนักวิเคราะห์ชื่อจริง (Citi $188, JPMorgan $205) บ่งชี้ upside 70-86% ถ้าการเติบโต AI Cloud/robotaxi ยังอยู่ — โดยมีความเสี่ยง regulatory ของ China ADR เป็นตัวถ่วง",
+      "priceNote": "เทรดใกล้ขอบล่างของ 52-week range ($84.64-$165.30) และต่ำกว่าเส้นค่าเฉลี่ย 200 วัน แม้รายได้ธุรกิจ AI หลักจะโต 49% YoY และเที่ยว Apollo Go โต 120% YoY — ตลาดยังคง price ส่วนลด China-ADR และความอ่อนแอของธุรกิจโฆษณาอยู่ ก่อนผลประกอบการ 18 ส.ค.",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "ผลประกอบการ Q2 2026", "description": "ยืนยันวันที่ 18 ส.ค. 2026 (ก่อนตลาดสหรัฐเปิด) — ทดสอบว่ารูปแบบของ Q1 (AI Cloud/Apollo Go บีทคาด แต่ธุรกิจโฆษณา/EPS พลาด) จะเกิดซ้ำหรือไม่ และตลาดจะยังให้รางวัลกับ narrative AI มากกว่าตัวเลขหลักหรือไม่" },
+        { "name": "การขยายสเกล Apollo Go / AI Cloud", "description": "ต่อเนื่อง: เที่ยว Apollo Go robotaxi +120% YoY ใน 27 เมือง (สะสม 22 ล้านเที่ยว+), ผู้ใช้ ERNIE Assistant รายวันเพิ่มเกือบเท่าตัว YoY — ปัจจัยเติบโต AI เชิงโครงสร้าง ไม่ใช่ event เดียว" }
+      ],
+      "risks": [
+        "ความเสี่ยง regulatory/delisting ของ China ADR — HFCAA มีการบังคับใช้กลับมาตามบันทึกนโยบายสหรัฐ ก.พ. 2025 การจดทะเบียนคู่ที่ฮ่องกง (9888.HK) ช่วยลดความเสี่ยงแต่ไม่หมดไป",
+        "EPS Q1 2026 พลาดคาด 5.3% ($1.77 vs คาด $1.87) — ธุรกิจโฆษณาเดิมกำลังอ่อนตัวแม้ AI Cloud/Apollo Go จะโต เป็นความเสี่ยงด้าน execution/mix ที่อาจกลับมาอีกใน 18 ส.ค.",
+        "การขยาย Apollo Go ขึ้นกับการอนุมัติ regulatory ระดับเมืองในจีนทีละเมือง — อุบัติเหตุด้านความปลอดภัยหรือใบอนุญาตที่ล่าช้าอาจทำให้อัตราเติบโตที่ขับเคลื่อน thesis สะดุด",
+        "ความตึงเครียดเทคโนโลยีสหรัฐ-จีน (การควบคุมส่งออกชิป AI) อาจจำกัดการสร้าง compute ที่รองรับ AI Cloud และโมเดล ERNIE"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.50-3.75% เมื่อ 29 ก.ค. 2026 กรรมการ 3 ใน 12 คน dissent อยากขึ้นดอกเบี้ย สำหรับ China ADR นโยบายดอกเบี้ยสหรัฐมีผลทางอ้อมน้อยกว่าปัจจัยเฉพาะจีน แต่ risk-off กว้างจาก Fed hawkish surprise (CPI 12 ส.ค.) ยังกระทบหุ้นเทคจีน high-beta ได้เหมือนหุ้น growth สหรัฐ",
+        "inflationNote": "Core PCE สหรัฐยังอยู่ 3.3% YoY แยกส่วน — แนวโน้ม demand ผู้บริโภคในจีนเองก็กระทบธุรกิจโฆษณาของ Baidu โดยตรงมากกว่าเงินเฟ้อสหรัฐ ทั้งสองปัจจัยสำคัญกับหุ้นตัวนี้",
+        "sectorImpact": "China ADR มี macro exposure สองด้าน: วงจร risk appetite/ดอกเบี้ยสหรัฐ บวกนโยบาย regulatory/เศรษฐกิจเฉพาะจีน — thesis การรีเรทของ BIDU ขึ้นกับการ execute AI Cloud/Apollo Go ผ่านทั้งสองด้าน",
+        "summary": "ปานกลาง — การเติบโต AI Cloud และ Apollo Go ของ Baidu ค่อนข้าง idiosyncratic และเป็นเรื่องภายในจีนเป็นหลัก แต่ส่วนลดของหุ้น (ยังใกล้ 52-week low) สะท้อนความกังวล geopolitical/regulatory จริง (การบังคับใช้ HFCAA) ซ้อนทับความเสี่ยงวงจรดอกเบี้ยสหรัฐปกติ ทำให้เป็น macro exposure สองด้านพร้อมกัน"
+      },
+      "entryStrategy": {
+        "verdict": "BUY — AI Cloud (+49% YoY รายได้ AI หลัก) และการขยายสเกล Apollo Go (+120% YoY เที่ยว) เป็นปัจจัยเติบโตจริงที่มีวันที่ชัดเจน ซ้อนอยู่ใต้หุ้นที่ยังใกล้ 52-week low ผลประกอบการ 18 ส.ค. คือจุดยืนยันถัดไป เป้านักวิเคราะห์ชื่อจริง (Citi $188, JPMorgan $205) บ่งชี้ upside 70-86% ถ้า narrative AI ยังอยู่",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน ใกล้ 52-week low", "timing": "ตอนนี้" },
+          { "note": "โซนย่อลึกขึ้นถ้า risk-off หุ้นเทคจีนรุนแรงขึ้นก่อน 18 ส.ค.", "timing": "ถ้าย่อ" },
+          { "note": "ใกล้ 52-week low ($84.64) — ต้องมีความกังวล regulatory/delisting หรือ China-tech selloff กว้าง", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — AI Cloud/Apollo Go เติบโตต่อเนื่อง ผลประกอบการ 18 ส.ค. ตามคาด" },
+        "tp2": { "note": "Bull — แตะเป้า $188 ของ Citi ขณะ AI Cloud รีเรทต่อเนื่อง" },
+        "tp3": { "note": "Moon — แตะเป้า Overweight $205 ของ JPMorgan เมื่อ Apollo Go และ margin AI Cloud inflect พร้อมกัน", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดโซน Entry 2 = ความผันผวนปกติของหุ้นเทคจีนกลายเป็น trend break จริง",
+          "hardNote": "ใกล้ 52-week low ($84.64) = สะท้อนความกังวล regulatory/delisting จริงหรือ China-tech selloff กว้าง",
+          "rrNote": "จาก Entry 1 ถึง hard stop เทียบกับ TP2 (Bull case)",
+          "rrWarning": "R/R ดีในทางทฤษฎี แต่ headline risk ของ China ADR (regulatory, geopolitical) เคลื่อนไหวเร็วกว่า stop เทคนิคได้ ควร size ให้เหมาะสม"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q2 2026", "note": "ยืนยันวันที่ 18 ส.ค. 2026" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "ticker": "LUNR",
+  "companyName": "Intuitive Machines Inc.",
+  "companyDescription": "Lunar Infrastructure + National Security Space · Nova-C/Nova-D landers ($1.1B+ NASA CLPS backlog) plus a new defense-spacecraft line (IM-300 platform) after the Aug 4, 2026 L3Harris/Space Development Agency missile-tracking subcontract — real diversification beyond the lunar-only thesis",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-10T18:00:00.000Z",
+  "price": 16.57,
+  "priceChange": 1.8,
+  "priceNote": "$16.57, up sharply from the $15.14 level of the last report — the bulk of the move came from the Aug 4, 2026 L3Harris/SDA missile-defense subcontract announcement (which drove a same-day pop as large as +22.8%), with the stock now consolidating near those post-news levels ahead of confirmed Q2 earnings on Aug 13.",
+  "marketCap": "~$3.6B (est. — ATM issuance ongoing, share count in flux)",
+  "sector": "Space / Lunar Infrastructure + National Security Space",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Speculative",
+  "score": 60,
+  "summary": "Since the last report, Intuitive Machines picked up real business diversification: L3Harris selected it (Aug 4, 2026) to design, build, and deliver 18 IM-300 spacecraft platforms as a subcontractor on the Space Development Agency's $843M Tranche 3 missile-tracking program — a genuine move beyond the lunar-only thesis into national-security space, and the stock popped as much as +22.8% on the news. Q2 2026 earnings are now confirmed for Aug 13, 2026 (vs. an unconfirmed estimate last report). The lunar side is unchanged: IM-3 (targeting Reiner Gamma) still hasn't launched, and the $500M ATM equity program from June remains a live dilution overhang. This upgrades the thesis from 'pure binary IM-3 bet' to 'diversifying space platform with two live catalysts,' but doesn't remove the speculative risk.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "Now confirmed for Aug 13, 2026 before market open (announced Jul 28) — upgraded from an unconfirmed estimate last report. Key reads: revenue trajectory off Q1's $186.7M, ATM pace/dilution commentary, and initial guidance on the new L3Harris/SDA defense-spacecraft revenue stream.",
+      "urgencyLabel": "3 DAYS",
+      "dateBadge": "Aug 13, 2026",
+      "catalystDate": "2026-08-13",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🛰️",
+      "name": "L3Harris / SDA Missile-Defense Subcontract",
+      "description": "Aug 4, 2026: L3Harris selected Intuitive Machines to design, build and deliver 18 IM-300 spacecraft platforms supporting hypersonic/ballistic missile-tracking for the Space Development Agency's Tranche 3 program ($843M prime contract to L3Harris; IM's specific subcontract value undisclosed). Real diversification into national-security space beyond lunar landers.",
+      "urgencyLabel": "RECENT",
+      "dateBadge": "Aug 4, 2026",
+      "catalystDate": "2026-08-04",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🌑",
+      "name": "IM-3 Lunar Mission — Reiner Gamma",
+      "description": "Third Nova-C lander mission — still has NOT launched as of Aug 10. Redundant altimeters + lighting-independent navigation sensors target the upright-landing failures that hit IM-1 and IM-2. NASA/company guidance remains second half 2026, no confirmed exact date.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "$500M at-the-market equity program (launched Jun 2, 2026) remains an ongoing dilution overhang — not resolved by the L3Harris news, and will keep pressuring shares until the program is exhausted or capped",
+    "Track record: IM-1 tipped on landing (Feb 2024), IM-2 landed on its side with limited data transmission (Mar 2025) — IM-3's upright landing is not guaranteed despite hardware fixes",
+    "The L3Harris/SDA subcontract's specific dollar value to Intuitive Machines was not disclosed — the revenue/margin contribution is a real unknown until Q2 guidance or a follow-up filing clarifies it",
+    "Still lost the NASA Lunar Terrain Vehicle award to Astrolab/Lunar Outpost in May 2026 — no longer positioned as a multi-program Artemis mobility prime, even with the new defense-spacecraft line",
+    "Customer/NASA and DoD budget concentration — Congressional funding risk touches both the CLPS lunar backlog and the new SDA-linked defense revenue"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Aug 13, 2026", "note": "Confirmed date — watch ATM pace, L3Harris/SDA revenue guidance, and IM-3 timeline update", "est": "Rev: ~$200-230M est.", "highlight": "yellow" },
+    { "event": "IM-3 Lunar Mission", "dateRange": "H2 2026", "note": "Not yet launched — third Nova-C delivery, upright landing is the key open question", "est": "Mission success = re-rating catalyst", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -40, "price": 9.94 },
+    { "label": "Base", "color": "yellow", "pct": 20, "price": 19.88 },
+    { "label": "Bull", "color": "green", "pct": 69.0, "price": 28.00 },
+    { "label": "Moon", "color": "purple", "pct": 146.1, "price": 40.78 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (9 analysts)", "target": 40.78, "rating": "Buy", "note": "Carried from prior coverage; implies well over 100% upside from current level" },
+    { "firm": "Craig-Hallum", "target": 45.0, "rating": "Buy", "note": "Reiterated Buy through the prior decline" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Fed held at 3.50-3.75% on Jul 29, 2026, with 3 of 12 officials dissenting toward a hike. Government contract-backed revenue (both NASA CLPS and the new SDA-linked defense line) is largely insulated from rate changes.",
+    "inflationNote": "NASA/DoD contracts are cost-plus in parts — inflation pass-through partially protects margins on both revenue lines.",
+    "sectorImpact": "Space infrastructure with government contracts is rate-insensitive. NASA/DoD budget stability and LUNR's own ATM issuance pace are bigger watchpoints than Fed policy.",
+    "summary": "LOW macro risk from a Fed perspective — the $1.1B+ NASA backlog plus the new L3Harris/SDA subcontract are a revenue floor largely independent of rates. The dominant risks here are company-specific (dilution, IM-3 execution, undisclosed subcontract economics), not macro."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 16.57, "note": "Current — consolidating after the Aug 4 L3Harris pop, ahead of Aug 13 earnings", "timing": "Now" },
+      { "label": "Entry 2", "level": 13, "rangeMax": 14.50, "note": "Pullback zone if some of the L3Harris pop reverses into earnings", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 10, "note": "Deep dip — would need an earnings miss or a broad space-sector selloff", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 19.88, "pct": 20.0, "note": "Base — Q2 earnings inline, L3Harris integration on track" },
+    "tp2": { "price": 28.00, "pct": 69.0, "note": "Bull — clean Q2 beat plus positive IM-3 timeline update" },
+    "tp3": { "price": 40.78, "pct": 146.1, "note": "Moon — IM-3 lands successfully and the L3Harris/defense revenue scales, hits consensus target", "moon": true },
+    "stopLoss": {
+      "tight": 14.91, "tightPct": -10.0, "tightNote": "Below the Entry 2 zone — earnings-week volatility becoming a real reversal",
+      "hard": 13.26, "hardPct": -20.0, "hardNote": "Would give back most of the L3Harris-driven rally — thesis-neutral but a real momentum breakdown",
+      "riskReward": "3.5 : 1", "rrNote": "Entry 1 to hard stop vs TP2 (Bull case)", "rrWarning": "Wide R/R reflects real volatility and two live catalysts (earnings + IM-3) — size for speculative risk, not core conviction"
+    },
+    "verdict": "SPECULATIVE — real defense-sector diversification (L3Harris/SDA missile-tracking subcontract, Aug 4) plus a now-confirmed Aug 13 earnings date reduce the pure-binary risk that dominated the last report, but the ATM dilution overhang and IM-3's unproven landing remain live. Scale in; don't chase the post-L3Harris pop into earnings.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "LUNR has historically run 20-30% in the weeks before a confirmed lunar mission launch window, but the bigger recent driver was the Aug 4 contract-win announcement itself rather than a slow pre-catalyst build.",
+    "preRunupTiming": "Contract-win news moves the stock same-day; lunar-mission run-ups build over 4-8 weeks pre-launch",
+    "preRunupPct": "+15% to +30% pre-launch (lunar); the L3Harris contract news itself was worth up to +22.8% same-day",
+    "postWin": {
+      "avgPct": 22.8,
+      "range": "+15% to +30%",
+      "note": "The Aug 4, 2026 L3Harris/SDA missile-defense subcontract announcement drove a same-day pop as large as +22.8% — the largest and most recent comparable for what real contract-diversification news does to this stock. IM-1 (first private Moon landing, Feb 2024) drove +45% in 3 days.",
+      "exampleDate": "Aug 2026 (L3Harris/SDA) / Feb 2024 (IM-1)"
+    },
+    "postLose": {
+      "avgPct": -18,
+      "range": "-18% to -55%",
+      "note": "The Jun 2, 2026 ATM announcement triggered persistent selling (part of a 7-day, -24.5% losing streak) — a genuine, still-unresolved dilution overhang. A failed IM-3 landing or earnings miss on Aug 13 could compound this.",
+      "exampleDate": "Jun 2026 (ATM announcement)"
+    },
+    "spotSizing": {
+      "pct": 5,
+      "reason": "Real diversification (L3Harris/SDA) offsets some of the prior negative catalysts (LTV loss, ATM dilution), but the dilution overhang and IM-3 binary risk are both still live — max 5% of portfolio, speculative sizing."
+    },
+    "stopPreCatalyst": { "pct": -20, "price": 13.26, "note": "A break below ~$13.26 ahead of Aug 13 earnings would suggest the L3Harris-driven rally is fully reversing" },
+    "stopPostCatalyst": { "pct": -30, "note": "If Aug 13 earnings miss with a guidance cut, or IM-3 later fails to land upright, exit 50%+ immediately" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "LUNR",
+      "event": "L3Harris/SDA IM-300 missile-defense spacecraft subcontract selection",
+      "date": "Aug 2026",
+      "movePct": 22.8,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company, most recent precedent — real business diversification into national-security space drove a same-day pop as large as +22.8%, the strongest positive catalyst since the last report."
+    },
+    {
+      "ticker": "LUNR",
+      "event": "IM-1 first private Moon landing validation",
+      "date": "Feb 2024",
+      "movePct": 45,
+      "days": 3,
+      "outcome": "good",
+      "note": "LUNR's own IM-1 drove +45% in 3 days despite a partial tip-over on landing. A clean IM-3 landing could produce a comparable or larger move given the current, still-modest market cap."
+    },
+    {
+      "ticker": "LUNR",
+      "event": "$500M ATM equity program announcement",
+      "date": "Jun 2026",
+      "movePct": -18,
+      "days": 5,
+      "outcome": "bad",
+      "note": "Stock kept falling after the ATM launch as investors priced in ongoing share issuance — a genuine, still-unresolved dilution overhang despite the recent positive news."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Intuitive Machines Selected by L3Harris to Support Tracking Satellites for SDA and America's Missile Defense",
+    "url": "https://www.globenewswire.com/news-release/2026/08/04/3338302/0/en/Intuitive-Machines-Selected-by-L3Harris-to-Support-Tracking-Satellites-for-SDA-and-America-s-Missile-Defense.html",
+    "date": "Aug 2026"
+  },
+  "sources": [
+    "https://www.globenewswire.com/news-release/2026/08/04/3338302/0/en/Intuitive-Machines-Selected-by-L3Harris-to-Support-Tracking-Satellites-for-SDA-and-America-s-Missile-Defense.html",
+    "https://finance.yahoo.com/markets/stocks/articles/intuitive-machines-lunr-5-9-191018460.html",
+    "https://simplywall.st/stocks/us/capital-goods/nasdaq-lunr/intuitive-machines/news/why-intuitive-machines-lunr-is-up-228-after-winning-l3harris",
+    "https://www.trefis.com/stock/lunr/articles/606829/a-7-day-losing-streak-has-intuitive-machines-stock-down-25/2026-07-13",
+    "https://www.khou.com/article/money/business/houston-business-journal/nasa-contract-venturi-astrolab-lunar-outpost-moon-vehicle/285-d5bc72dc-ee9e-4d72-a71d-e2af919e60f5"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "หลังรายงานฉบับก่อน Intuitive Machines ได้ธุรกิจกระจายความเสี่ยงจริง — L3Harris เลือก IM (4 ส.ค. 2026) ให้ออกแบบ ผลิต และส่งมอบยาน IM-300 จำนวน 18 ลำ เป็น subcontractor ในโครงการติดตามขีปนาวุธ Tranche 3 ของ Space Development Agency มูลค่า prime contract $843M — การกระจายธุรกิจจริงสู่ national security space นอกเหนือจาก lunar หุ้นบวกสูงสุด +22.8% จากข่าวนี้ ผลประกอบการ Q2 2026 ยืนยันแล้ววันที่ 13 ส.ค. 2026 (จากเดิมที่ยังไม่ยืนยัน) ฝั่ง lunar ไม่เปลี่ยน — IM-3 (เป้า Reiner Gamma) ยังไม่ปล่อยยาน และ ATM equity program $500M จาก มิ.ย. ยังเป็น dilution overhang อยู่ นี่คือการอัปเกรด thesis จาก 'IM-3 binary bet ล้วนๆ' เป็น 'platform อวกาศที่กำลังกระจายความเสี่ยงพร้อม catalyst จริง 2 ตัว' แต่ความเสี่ยง speculative ยังไม่หายไป",
+      "priceNote": "$16.57 บวกแรงจากระดับ $15.14 ของรายงานก่อน — ส่วนใหญ่มาจากข่าวสัญญา L3Harris/SDA เมื่อ 4 ส.ค. 2026 (บวกสูงสุดถึง +22.8% วันเดียว) ตอนนี้ราคากำลัง consolidate ใกล้ระดับหลังข่าวก่อนผลประกอบการที่ยืนยันแล้ว 13 ส.ค.",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "ผลประกอบการ Q2 2026", "description": "ยืนยันแล้ววันที่ 13 ส.ค. 2026 ก่อนตลาดเปิด — จับตา ATM pace, guidance รายได้ L3Harris/SDA ใหม่ และอัปเดตไทม์ไลน์ IM-3" },
+        { "name": "สัญญาป้องกันขีปนาวุธ L3Harris / SDA", "description": "4 ส.ค. 2026: L3Harris เลือก IM ออกแบบ ผลิต ส่งมอบยาน IM-300 18 ลำ รองรับระบบติดตามขีปนาวุธของ SDA Tranche 3 (prime contract $843M ให้ L3Harris มูลค่า subcontract ของ IM ยังไม่เปิดเผย) การกระจายธุรกิจจริงสู่ national security space" },
+        { "name": "IM-3 ภารกิจจันทร์ — Reiner Gamma", "description": "ยังไม่ปล่อยยาน ณ 10 ส.ค. เป้า H2 2026 ระบบ altimeter/navigation ใหม่แก้ปัญหาจาก IM-1/IM-2" }
+      ],
+      "risks": [
+        "ATM equity program $500M (เปิด 2 มิ.ย. 2026) ยังเป็น dilution overhang ต่อเนื่อง — ข่าว L3Harris ไม่ได้แก้ปัญหานี้",
+        "ประวัติ: IM-1 ล้ม IM-2 เอียงข้าง — IM-3 landing ตั้งตรงไม่การันตี",
+        "มูลค่า subcontract L3Harris/SDA เฉพาะของ IM ยังไม่เปิดเผย — ผลกระทบต่อรายได้/margin ยังไม่ชัดจนกว่าจะมี guidance Q2 หรือ filing เพิ่ม",
+        "ยังเสียสัญญา Lunar Terrain Vehicle ให้ Astrolab/Lunar Outpost พ.ค. 2026 — ไม่ได้เป็น Artemis mobility prime แม้จะมีธุรกิจ defense ใหม่",
+        "พึ่งพางบ NASA และ DoD สูง — ความเสี่ยง Congressional funding กระทบทั้ง backlog lunar และรายได้ defense ใหม่"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% เมื่อ 29 ก.ค. 2026 — รายได้จากสัญญารัฐบาล (ทั้ง NASA CLPS และ SDA ใหม่) insulated จาก rate",
+        "inflationNote": "สัญญา NASA/DoD cost-plus บางส่วนป้องกัน inflation ได้ทั้งสองสายรายได้",
+        "sectorImpact": "Space infrastructure ที่มีสัญญารัฐบาล rate-insensitive งบ NASA/DoD และ pace การออก ATM ของ IM เองสำคัญกว่านโยบาย Fed",
+        "summary": "Macro risk ต่ำจาก Fed — backlog NASA $1.1B+ บวกสัญญา L3Harris/SDA ใหม่คือ revenue floor ที่ independent จาก rate ความเสี่ยงหลักคือ company-specific (dilution, IM-3 execution, เศรษฐศาสตร์ subcontract ที่ยังไม่เปิดเผย)"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — การกระจายธุรกิจ defense จริง (L3Harris/SDA, 4 ส.ค.) บวกวันที่ผลประกอบการ 13 ส.ค. ที่ยืนยันแล้ว ลดความเสี่ยง binary ล้วนๆ จากรายงานก่อน แต่ ATM overhang และ IM-3 ที่ยังไม่พิสูจน์ยังอยู่ ทยอยเข้า อย่าไล่ราคาหลังข่าว L3Harris ก่อนผลประกอบการ",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — consolidate หลังข่าว L3Harris ก่อนผลประกอบการ 13 ส.ค.", "timing": "ตอนนี้" },
+          { "note": "โซนย่อถ้าข่าว L3Harris บางส่วนกลับตัวก่อนผลประกอบการ", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงลึก — ต้องมีผลประกอบการพลาดคาดหรือ space sector selloff กว้าง", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Base — ผลประกอบการ Q2 ตามคาด L3Harris integration เป็นไปตามแผน" },
+        "tp2": { "note": "Bull — Q2 บีทสะอาด บวกอัปเดตไทม์ไลน์ IM-3 เชิงบวก" },
+        "tp3": { "note": "Moon — IM-3 ลงจอดสำเร็จ บวกรายได้ L3Harris/defense ขยายสเกล แตะเป้า consensus", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดโซน Entry 2 — ความผันผวนช่วงผลประกอบการกลายเป็นการกลับตัวจริง",
+          "hardNote": "คืนกำไรส่วนใหญ่จากการบวกของ L3Harris — thesis ยังไม่พัง แต่ momentum เสียจริง",
+          "rrNote": "จาก Entry 1 ถึง hard stop เทียบ TP2 (Bull case)",
+          "rrWarning": "R/R กว้างสะท้อน volatility จริงและ catalyst 2 ตัวที่ยังมีชีวิต (ผลประกอบการ + IM-3) — size แบบ speculative"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q2 2026", "note": "ยืนยันวันที่ 13 ส.ค. 2026" },
+        { "event": "IM-3 Lunar Mission", "note": "ยังไม่ปล่อยยาน — upright landing คือคำถามหลัก" }
+      ]
+    }
+  }
+}

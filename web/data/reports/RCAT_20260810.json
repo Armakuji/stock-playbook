@@ -1,0 +1,177 @@
+{
+  "ticker": "RCAT",
+  "companyName": "Red Cat Holdings, Inc.",
+  "companyDescription": "Defense drone tech · Teal 2/Black Widow small UAS — winner of the U.S. Army's Short Range Reconnaissance (SRR) Program of Record (5,880-system acquisition objective over 5 years), plus steady NATO/Air Force contract flow",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-10T18:00:00.000Z",
+  "price": 9.60,
+  "priceChange": 1.0,
+  "priceNote": "Recovering modestly (intraday range $9.20-$9.83) after the Aug 6, 2026 Q2 earnings-day drop of -5.4% — Q2 revenue grew 527% YoY to $20.19M but still missed consensus by $2.58M, with net loss widening to $35.26M. Trading well below the $18.78 52-week high, above the $5.77 low.",
+  "marketCap": "$1.40B",
+  "sector": "Industrials / Aerospace & Defense (Small Unmanned Systems)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Speculative",
+  "score": 58,
+  "summary": "Red Cat's Q2 2026 revenue grew 527% YoY to $20.19M, but missed Street consensus and the stock fell -5.4% on the print as the net loss widened to $35.26M. The real structural story is the U.S. Army SRR Program of Record win (up to 5,880 Teal systems over 5 years) plus steady contract flow — including a $2.49M Air Force Black Widow order due for delivery by Aug 24, 2026. Consensus analyst targets ($16.50-$22) imply 72-129% upside, but at ~61x sales the market is already pricing in a clean production ramp that Q2's miss puts some doubt on.",
+  "catalysts": [
+    {
+      "icon": "🚁",
+      "name": "Air Force Black Widow Delivery (Teal subsidiary)",
+      "description": "Contract delivery deadline for the $2.49M U.S. Air Force Black Widow order (awarded Jul 2026) — a real, dated proof point for whether the broader SRR production ramp is executing on schedule.",
+      "urgencyLabel": "2 WEEKS",
+      "dateBadge": "Aug 24, 2026",
+      "catalystDate": "2026-08-24",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings (reported)",
+      "description": "Reported Aug 6, 2026: revenue $20.19M (+527% YoY) but missed consensus by $2.58M, EPS -$0.26 vs -$0.20 est. Stock fell -5.4% same day despite reaffirmed FY guidance of $150-180M.",
+      "urgencyLabel": "PASSED",
+      "dateBadge": "Aug 6, 2026",
+      "catalystDate": "2026-08-06",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Q2 2026 results missed consensus (EPS -$0.26 vs -$0.20 est., revenue $2.58M below estimate) and the stock fell -5.4% same day — even with 527% YoY growth, the bar has been raised and RCAT keeps missing it",
+    "Net loss widened to $35.26M in the quarter against still-small $20.19M revenue — cash burn at this scale raises financing/dilution risk",
+    "Valuation is already stretched — the $22 consensus target implies roughly 61x sales, a multiple that assumes near-flawless execution on the SRR ramp",
+    "The SRR Program of Record's 5,880-system acquisition objective is explicitly 'subject to change over the 5 year period' — Army budget reallocation could shrink the total addressable contract"
+  ],
+  "estimateDates": [
+    { "event": "Air Force Black Widow Delivery", "dateRange": "Aug 24, 2026", "note": "Contract delivery deadline for the $2.49M Black Widow order — real, dated proof point for the SRR production ramp", "est": "n/a", "highlight": "yellow" },
+    { "event": "Q2 2026 Earnings (reported)", "dateRange": "Aug 6, 2026", "note": "Revenue $20.19M (+527% YoY) but missed consensus by $2.58M; stock fell -5.4%", "est": "n/a", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -35, "price": 6.24 },
+    { "label": "Base", "color": "yellow", "pct": 20, "price": 11.52 },
+    { "label": "Bull", "color": "green", "pct": 71.9, "price": 16.50 },
+    { "label": "Moon", "color": "purple", "pct": 129.2, "price": 22.00 }
+  ],
+  "analystTargets": [
+    { "firm": "TipRanks Consensus (2 analysts)", "target": 16.50, "rating": "Buy", "note": "More conservative aggregation — still implies ~72% upside" },
+    { "firm": "S&P Global Consensus (6 analysts)", "target": 22, "rating": "Strong Buy", "note": "Implies ~61x sales at the current run-rate — a stretched multiple assuming near-flawless SRR execution" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held at 3.50-3.75% on Jul 29, 2026, with 3 of 12 officials dissenting toward a hike — the most hawkish split since 2016. Loss-making small-caps like RCAT ($35.26M quarterly net loss) are sensitive to any risk-off from a hawkish CPI surprise (Aug 12) given their reliance on capital markets access.",
+    "inflationNote": "Core PCE still 3.3% YoY, above target. A hot CPI print could widen credit/financing spreads for cash-burning small-caps specifically, on top of any broad equity risk-off.",
+    "sectorImpact": "Defense-budget-driven revenue is largely appropriations-based and not directly rate-sensitive, but RCAT's own balance sheet (widening losses, small revenue base) makes financing conditions matter more here than for a profitable defense name.",
+    "summary": "MEDIUM — the SRR Program of Record and contract-award flow are structurally macro-independent, but RCAT's cash-burn profile means a hawkish-driven tightening in financing conditions would hit this name harder than a profitable peer."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 9.60, "note": "Current price, recovering from the Aug 6 earnings-day drop", "timing": "Now" },
+      { "label": "Entry 2", "level": 7.50, "rangeMax": 8.20, "note": "Post-earnings-miss support zone if the stock retests recent lows before Aug 24", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 5.77, "note": "52-week low — would need a broad defense-drone selloff or a Black Widow delivery slip", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 11.52, "pct": 20.0, "note": "Base — steady SRR ramp continues, no major surprise" },
+    "tp2": { "price": 16.50, "pct": 71.9, "note": "Bull — Black Widow delivery lands clean and the SRR ramp confirms, hits the conservative TipRanks consensus" },
+    "tp3": { "price": 22.00, "pct": 129.2, "note": "Moon — full 5,880-system SRR trajectory confirmed plus NATO order scale-up, hits the S&P Global consensus", "moon": true },
+    "stopLoss": {
+      "tight": 8.64, "tightPct": -10.0, "tightNote": "Below the Entry 2 zone — post-earnings-miss support failing",
+      "hard": 7.68, "hardPct": -20.0, "hardNote": "Approaching the post-Aug-6 lows and toward the 52-week low ($5.77) — would question the SRR production-ramp thesis",
+      "riskReward": "3.6 : 1", "rrNote": "Entry 1 to hard stop vs TP2 (Bull case)", "rrWarning": "Strong R/R on paper, but this is a loss-making small-cap that just missed Q2 consensus and fell -5.4% — respect position sizing over the ratio alone"
+    },
+    "verdict": "SPECULATIVE — real, dated production/delivery catalysts (Aug 24 Air Force Black Widow delivery) sit on top of the SRR Program of Record win, but Q2 2026 results just missed consensus and losses are widening. The 72-129% analyst upside is real but assumes the SRR ramp executes cleanly — size for a loss-making small-cap, not a core holding.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "delivery_beat",
+    "preRunup": "Contract-award news drives RCAT's pre-catalyst positioning more than a classic slow build — the $2.49M Air Force order itself produced an +8% pop on announcement (Jul 2026), well before the Aug 24 delivery date itself.",
+    "preRunupTiming": "Days around each contract announcement, not weeks of positioning before delivery",
+    "preRunupPct": "+8% (the Jul 2026 Air Force order announcement itself)",
+    "postWin": {
+      "avgPct": 8,
+      "range": "+5% to +10%",
+      "note": "RCAT's own Jul 2026 Air Force Black Widow contract award drove an +8% same-day pop — the cleanest recent precedent for a positive delivery/contract outcome.",
+      "exampleDate": "Jul 2026 (RCAT Air Force Black Widow order)"
+    },
+    "postLose": {
+      "avgPct": -5.4,
+      "range": "-4% to -8%",
+      "note": "RCAT's own Q2 2026 earnings (Aug 6, 2026) missed consensus on both revenue and EPS despite 527% YoY growth, and the stock fell -5.4% same day — the direct precedent for a disappointing print/delivery outcome.",
+      "exampleDate": "Aug 6, 2026 (RCAT Q2 2026 earnings)"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "Real dated delivery catalyst (Aug 24) and a structural SRR Program of Record win, but a just-missed Q2 print and widening losses keep this at a moonshot-adjacent size rather than a full core position"
+    },
+    "stopPreCatalyst": { "pct": -15, "price": 8.16, "note": "A break below ~$8.16 before Aug 24 would suggest the market is losing confidence in the SRR production ramp ahead of the delivery date" },
+    "stopPostCatalyst": { "pct": -20, "note": "If the Black Widow delivery slips or underwhelms and the stock doesn't stabilize, the production-ramp thesis needs re-examination" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "RCAT",
+      "event": "$2.49M U.S. Air Force Black Widow contract award",
+      "date": "Jul 2026",
+      "movePct": 8,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company precedent for a positive contract-award reaction — directly relevant to the Aug 24, 2026 delivery deadline for this same order."
+    },
+    {
+      "ticker": "RCAT",
+      "event": "Q2 2026 earnings — revenue +527% YoY but missed consensus",
+      "date": "Aug 6, 2026",
+      "movePct": -5.4,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Same-company precedent for the downside case — even triple-digit YoY growth wasn't enough when the print missed an elevated Street bar."
+    }
+  ],
+  "sources": [
+    "https://ir.redcatholdings.com/news-events/press-releases/detail/237/red-cat-reports-q2-2026-revenue-growth-of-527-yy-q2-gross-margins-increase-39-vs-q2-2025-gross-margins-increased-27-sequentially-from-q1-2026",
+    "https://www.investing.com/news/transcripts/earnings-call-transcript-red-cat-misses-q2-2026-estimates-as-stock-falls-54-93CH-4844472",
+    "https://www.nasdaq.com/press-release/red-cat-receives-249-million-us-air-force-order-black-widow-systems-2026-07-30",
+    "https://www.globenewswire.com/news-release/2024/11/19/2983959/0/en/Red-Cat-Announces-Production-Selection-for-U-S-Army-Short-Range-Reconnaissance-Program.html",
+    "https://financefeeds.com/red-cat-rcat-stock-22-bull-case-5-77-bear-case/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "รายได้ Q2 2026 ของ Red Cat โต 527% YoY เป็น $20.19M แต่พลาด consensus และหุ้นร่วง -5.4% ในวันประกาศผล ขณะที่ขาดทุนสุทธิขยายเป็น $35.26M เรื่องราวเชิงโครงสร้างจริงคือการชนะโครงการ Army SRR Program of Record (สูงสุด 5,880 ระบบ Teal ในเวลา 5 ปี) บวกกระแสสัญญาต่อเนื่อง — รวมถึงออเดอร์ Black Widow กองทัพอากาศ $2.49M ที่ต้องส่งมอบภายใน 24 ส.ค. 2026 เป้านักวิเคราะห์ ($16.50-$22) บ่งชี้ upside 72-129% แต่ที่ ~61x sales ตลาดกำลัง price การ ramp การผลิตที่ราบรื่นไปแล้ว ซึ่งผล Q2 ที่พลาดคาดสร้างข้อกังขาบางส่วน",
+      "priceNote": "ฟื้นตัวเล็กน้อย (ช่วงราคาระหว่างวัน $9.20-$9.83) หลังหุ้นร่วง -5.4% ในวันประกาศผล Q2 เมื่อ 6 ส.ค. 2026 — รายได้ Q2 โต 527% YoY เป็น $20.19M แต่ยังพลาด consensus $2.58M ขาดทุนสุทธิขยายเป็น $35.26M เทรดต่ำกว่า 52-week high ที่ $18.78 มาก อยู่เหนือ 52-week low ที่ $5.77",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "ส่งมอบ Black Widow กองทัพอากาศ (บริษัทลูก Teal)", "description": "กำหนดส่งมอบตามสัญญา Black Widow กองทัพอากาศ $2.49M (ได้สัญญา ก.ค. 2026) — จุดพิสูจน์จริงที่มีวันที่ชัดเจนว่าการ ramp การผลิต SRR โดยรวมเป็นไปตามกำหนดหรือไม่" },
+        { "name": "ผลประกอบการ Q2 2026 (ประกาศแล้ว)", "description": "ประกาศ 6 ส.ค. 2026: รายได้ $20.19M (+527% YoY) แต่พลาด consensus $2.58M, EPS -$0.26 vs คาด -$0.20 หุ้นร่วง -5.4% วันเดียวกัน แม้จะคง guidance ปีนี้ $150-180M" }
+      ],
+      "risks": [
+        "ผล Q2 2026 พลาด consensus (EPS -$0.26 vs คาด -$0.20, รายได้ต่ำกว่าคาด $2.58M) หุ้นร่วง -5.4% วันเดียวกัน — แม้โต 527% YoY ก็ยังพลาดมาตรฐานที่ตลาดตั้งไว้",
+        "ขาดทุนสุทธิขยายเป็น $35.26M ในไตรมาสเทียบรายได้ที่ยังเล็ก $20.19M — เผาเงินสดระดับนี้เพิ่มความเสี่ยงด้านการระดมทุน/dilution",
+        "Valuation ตึงตัวแล้ว — เป้า consensus $22 บ่งชี้ ~61x sales ซึ่งเป็น multiple ที่สมมติว่าการ execute SRR ราบรื่นเกือบสมบูรณ์แบบ",
+        "เป้าหมายจัดซื้อ 5,880 ระบบของโครงการ SRR ระบุชัดว่า 'อาจเปลี่ยนแปลงได้ตลอดช่วง 5 ปี' — การจัดสรรงบกองทัพบกใหม่อาจลดขนาดสัญญาทั้งหมดได้"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.50-3.75% เมื่อ 29 ก.ค. 2026 กรรมการ 3 ใน 12 คน dissent อยากขึ้นดอกเบี้ย — hawkish สุดตั้งแต่ปี 2016 หุ้นเล็กที่ยังขาดทุนแบบ RCAT (ขาดทุนรายไตรมาส $35.26M) sensitive กับ risk-off จาก CPI hawkish surprise (12 ส.ค.) เพราะต้องพึ่งพาการเข้าถึงตลาดทุน",
+        "inflationNote": "Core PCE ยังอยู่ 3.3% YoY สูงกว่าเป้า CPI ร้อนแรงอาจขยาย credit/financing spread สำหรับหุ้นเล็กที่เผาเงินสดโดยเฉพาะ ซ้อนทับ risk-off ตลาดหุ้นกว้าง",
+        "sectorImpact": "รายได้จากงบ defense ส่วนใหญ่ขึ้นกับการจัดสรรงบประมาณ ไม่ sensitive กับดอกเบี้ยโดยตรง แต่ฐานะการเงินของ RCAT เอง (ขาดทุนขยาย รายได้ฐานเล็ก) ทำให้เงื่อนไขการระดมทุนสำคัญกว่าคู่แข่งที่กำไรแล้ว",
+        "summary": "ปานกลาง — โครงการ SRR Program of Record และกระแสสัญญาเป็นเรื่องโครงสร้างที่ independent จาก macro แต่ profile การเผาเงินสดของ RCAT หมายความว่าเงื่อนไขการระดมทุนที่ตึงตัวขึ้นจาก Fed hawkish จะกระทบหุ้นนี้แรงกว่าคู่แข่งที่กำไรแล้ว"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — catalyst การผลิต/ส่งมอบจริงที่มีวันที่ชัดเจน (ส่งมอบ Black Widow กองทัพอากาศ 24 ส.ค.) อยู่บนฐานการชนะโครงการ SRR Program of Record แต่ผล Q2 2026 เพิ่งพลาด consensus และขาดทุนกำลังขยาย upside นักวิเคราะห์ 72-129% เป็นไปได้จริงแต่สมมติว่าการ ramp SRR ราบรื่น ควร size แบบหุ้นเล็กที่ยังขาดทุน ไม่ใช่ core holding",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน ฟื้นตัวจากการร่วงวันประกาศผล 6 ส.ค.", "timing": "ตอนนี้" },
+          { "note": "โซนแนวรับหลังผลประกอบการพลาดคาด ถ้าหุ้นกลับไปทดสอบจุดต่ำก่อน 24 ส.ค.", "timing": "ถ้าย่อ" },
+          { "note": "52-week low — ต้องมี defense-drone selloff กว้างหรือการส่งมอบ Black Widow ล่าช้า", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — การ ramp SRR ต่อเนื่อง ไม่มีเซอร์ไพรส์ใหญ่" },
+        "tp2": { "note": "Bull — ส่งมอบ Black Widow ราบรื่น การ ramp SRR ยืนยันชัดเจน แตะ consensus แบบระมัดระวังของ TipRanks" },
+        "tp3": { "note": "Moon — เส้นทาง SRR เต็ม 5,880 ระบบยืนยันชัดเจน บวกออเดอร์ NATO ขยายสเกล แตะ consensus ของ S&P Global", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดโซน Entry 2 = แนวรับหลังผลประกอบการพลาดคาดล้มเหลว",
+          "hardNote": "ใกล้และหลุดจุดต่ำหลัง 6 ส.ค. ไปทาง 52-week low ($5.77) = ต้องทบทวน thesis การ ramp การผลิต SRR",
+          "rrNote": "จาก Entry 1 ถึง hard stop เทียบกับ TP2 (Bull case)",
+          "rrWarning": "R/R ดีในทางทฤษฎี แต่นี่คือหุ้นเล็กที่ยังขาดทุนและเพิ่งพลาด consensus Q2 ร่วง -5.4% ควรเคารพการ size มากกว่า ratio อย่างเดียว"
+        }
+      },
+      "estimateDates": [
+        { "event": "ส่งมอบ Black Widow กองทัพอากาศ", "note": "24 ส.ค. 2026" },
+        { "event": "ผลประกอบการ Q2 2026 (ประกาศแล้ว)", "note": "6 ส.ค. 2026" }
+      ]
+    }
+  }
+}

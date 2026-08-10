@@ -1,0 +1,199 @@
+{
+  "ticker": "RGNX",
+  "companyName": "REGENXBIO Inc.",
+  "companyDescription": "AAV gene therapy developer · NAVSUNLI (RGX-121) for Hunter syndrome — FDA Type A meeting held Jul 2026, confirmed no additional studies needed; Q2 2026 turned profitable on a $100M AbbVie milestone · RGX-202 Duchenne BLA pathway also advancing",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-10T18:00:00.000Z",
+  "price": 10.72,
+  "priceChange": -4.96,
+  "priceNote": "Pulled back from $11.28 to $10.72, still well up from the pre-Jun-22 base despite today's dip. Q2 2026 results (Aug 6, 2026) beat on EPS and delivered a rare profitable quarter ($108M revenue, $22.7M net income) on a $100M AbbVie milestone recognition — cash runway now extends into Q4 2027.",
+  "marketCap": "~$570M",
+  "sector": "Healthcare / Gene Therapy (Rare Disease)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Speculative",
+  "score": 76,
+  "summary": "Two real updates since the last report. First, the FDA Type A meeting happened in July 2026 as planned and went well: the FDA reaffirmed that no additional patients or studies are required for the NAVSUNLI BLA resubmission, which stays on track for Q3 2026 with longer-term efficacy/safety data plus a post-approval confirmatory study to be discussed at review. Second, Q2 2026 earnings (Aug 6) showed a genuine financial inflection — $108M revenue (vs $21.4M a year ago) and $22.7M net income, driven by a $100M AbbVie milestone payment, extending cash runway into Q4 2027 and reducing near-term dilution risk. The core binary — will the Q3 BLA resubmission be accepted cleanly — is still ahead, with a $23.10 consensus target implying over 100% upside.",
+  "catalysts": [
+    {
+      "icon": "📄",
+      "name": "NAVSUNLI BLA Resubmission",
+      "description": "Following the positive Jul 2026 FDA Type A meeting (no additional studies required), REGENXBIO still targets Q3 2026 for the formal BLA resubmission, which will include longer-term efficacy/safety data and participant imaging already submitted to FDA. A post-approval confirmatory study will be discussed as part of the review.",
+      "urgencyLabel": "Q3 2026",
+      "dateBadge": "Q3 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🧬",
+      "name": "FDA Type A Meeting (completed, positive)",
+      "description": "Held Jul 2026: the FDA reaffirmed the existing NAVSUNLI clinical data is sufficient for the accelerated-approval pathway, with no new patients or studies required — the key uncertainty from the last report is now resolved in the company's favor.",
+      "urgencyLabel": "COMPLETED",
+      "dateBadge": "Jul 2026",
+      "catalystDate": "2026-07-31",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "💊",
+      "name": "RGX-202 (Duchenne) BLA Pathway",
+      "description": "Separate program: AFFINITY DUCHENNE Phase III met its primary endpoint (93% of patients above 10% microdystrophin expression), supporting an accelerated-approval BLA strategy and a potential 2027 commercial launch — independent optionality alongside the NAVSUNLI catalyst, nearing its own BLA per Q2 commentary.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "H2 2026",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "The Type A meeting outcome is positive but not a guarantee — the FDA's own gene-therapy track record has been inconsistent this cycle (uniQure's AMT-130 saw a similar 2024 alignment reversed by the FDA in 2026); a Q3 resubmission still needs to clear formal review, not just the pre-meeting alignment",
+    "The Q2 profit was driven by a one-time $100M AbbVie milestone recognition, not recurring operating profitability — don't extrapolate the net-income swing as a new steady-state",
+    "Analyst target range remains unusually wide ($10-50) — genuine disagreement on approval probability and timeline, not just normal estimate noise",
+    "The 'Q3 2026' BLA resubmission target is still the company's own timeline, not an FDA-mandated deadline — it could slip without new bad news",
+    "Small-cap biotech volatility cuts both ways: the same mechanics that drove a +37% pop on the Jun 22 FDA reversal drove a -21% drop on the original Feb 2026 CRL — size accordingly even with the improved cash position"
+  ],
+  "estimateDates": [
+    { "event": "NAVSUNLI BLA Resubmission", "dateRange": "Q3 2026", "note": "Targeted following the positive Jul 2026 Type A meeting; FDA has committed to an expedited review", "est": "n/a", "highlight": "yellow" },
+    { "event": "RGX-202 (Duchenne) BLA", "dateRange": "H2 2026", "note": "Nearing submission per Q2 2026 commentary — independent optionality", "est": "n/a", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -30, "price": 7.50 },
+    { "label": "Base", "color": "yellow", "pct": 50, "price": 16.08 },
+    { "label": "Bull", "color": "green", "pct": 115.5, "price": 23.10 },
+    { "label": "Moon", "color": "purple", "pct": 291.8, "price": 42.00 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (9 analysts)", "target": 23.10, "rating": "Buy", "note": "Updated consensus post-Type-A-meeting and Q2 results" },
+    { "firm": "Stifel Nicolaus", "target": 42.00, "rating": "Buy", "note": "Carried from prior coverage — highest named target" },
+    { "firm": "Morgan Stanley", "target": 16.00, "rating": "Buy", "note": "Most conservative among named targets — still a Buy but flags timeline/probability caution" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held at 3.50-3.75% on Jul 29, 2026, with 3 of 12 officials dissenting toward a hike — the most hawkish split since 2016. RGNX's improved cash position (runway into Q4 2027) reduces near-term financing dependence on favorable rate conditions versus the last report.",
+    "inflationNote": "Core PCE still 3.3% YoY, above target. CPI (Aug 12) could still move small-cap biotech risk appetite broadly, though RGNX is now less exposed given the extended cash runway.",
+    "sectorImpact": "Biotech regulatory catalysts are largely macro-independent — an FDA decision doesn't care about interest rates — and RGNX's post-AbbVie-milestone balance sheet reduces the financing-cost exposure flagged in the prior report.",
+    "summary": "MEDIUM — the FDA pathway itself remains idiosyncratic and macro-independent, and the extended cash runway (into Q4 2027) meaningfully reduces the financing-driven macro exposure from the last report, though a broad risk-off could still pressure the stock independent of the regulatory news flow."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 10.72, "note": "Current price, post-Q2 pullback despite the profitable quarter", "timing": "Now (small)" },
+      { "label": "Entry 2", "level": 9.00, "rangeMax": 9.75, "note": "Deeper pullback zone ahead of the Q3 BLA resubmission", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 7.50, "note": "Near the post-CRL range low — only on a broad biotech selloff with no new company-specific bad news", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 16.08, "pct": 50.0, "note": "Base — Q3 BLA resubmission filed cleanly, no new FDA pushback" },
+    "tp2": { "price": 23.10, "pct": 115.5, "note": "Bull — resubmission accepted with expedited review confirmed, hits consensus target" },
+    "tp3": { "price": 42.00, "pct": 291.8, "note": "Moon — resubmission accepted and approval trajectory confirmed, hits Stifel's target", "moon": true },
+    "stopLoss": {
+      "tight": 9.65, "tightPct": -10.0, "tightNote": "Below near-term support — thesis-neutral but momentum softening",
+      "hard": 7.50, "hardPct": -30.0, "hardNote": "Deep breach — would suggest a second FDA setback despite the positive Type A meeting, mirroring the Feb 2026 CRL reaction",
+      "riskReward": "13.0 : 1", "rrNote": "From Entry 2 ($9.38 mid) tight stop vs TP2", "rrWarning": "Very high R/R but this remains a binary regulatory stock with a real prior CRL on the record — small size mandatory even with the improved balance sheet"
+    },
+    "verdict": "SPECULATIVE — the positive Type A meeting and a genuinely stronger balance sheet (Q4 2027 runway) de-risk this versus the last report, but the Q3 BLA resubmission is still an unresolved binary. Small-to-moderate position, add on dips toward $9.00-9.75.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "regulatory_approval",
+    "preRunup": "Small-cap gene-therapy names in this cohort react same-day to FDA correspondence rather than grinding up beforehand — REGENXBIO's own Jun 22, 2026 pop happened immediately on the reversal news, and the Jul Type A meeting outcome was similarly absorbed quickly rather than pre-run.",
+    "preRunupTiming": "same-day on FDA correspondence, not a multi-week runup",
+    "preRunupPct": "minimal pre-event drift; the move happens on the news itself",
+    "postWin": {
+      "avgPct": 37,
+      "range": "+30% to +100%+",
+      "note": "REGENXBIO's own Jun 22, 2026 FDA alignment/reversal news drove a premarket pop of up to 37%. The Jul 2026 Type A meeting confirmation was a smaller, more expected positive (already largely priced in from June). General biotech sector pattern for small-cap approval news runs 30-100%+ depending on how much was already priced in.",
+      "exampleDate": "Jun 2026 (RGNX)"
+    },
+    "postLose": {
+      "avgPct": -21,
+      "range": "-15% to -40%",
+      "note": "REGENXBIO's own Feb 2026 Complete Response Letter for the same NAVSUNLI program sent shares down 21% in a single session — the exact same-company, same-program precedent for what a Q3 resubmission setback would look like.",
+      "exampleDate": "Feb 2026 (RGNX)"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "Small-cap (~$570M) binary regulatory stock, but the positive Type A meeting outcome and extended cash runway (Q4 2027) justify a slightly larger allocation than the prior report's 3% — still speculative sizing given the Q3 resubmission remains unresolved."
+    },
+    "stopPreCatalyst": { "pct": -10, "price": 9.65, "note": "Below near-term support ahead of the Q3 BLA resubmission — thesis-neutral but momentum softening" },
+    "stopPostCatalyst": { "pct": -25, "note": "A Q3 resubmission rejection or a new major-amendment request would mirror the Feb 2026 CRL reaction — exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "RGNX",
+      "event": "FDA Type A meeting on NAVSUNLI resubmission pathway — positive outcome",
+      "date": "Jul 2026",
+      "movePct": -4.96,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "The meeting outcome was positive (no additional studies required) but the stock dipped alongside this report's snapshot — most of the good news was already priced in from the June reversal, illustrating how a confirmatory (vs. surprise) positive event produces a muted reaction."
+    },
+    {
+      "ticker": "RGNX",
+      "event": "FDA alignment/reversal on NAVSUNLI accelerated-approval pathway",
+      "date": "Jun 2026",
+      "movePct": 37,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company, same-program precedent for the surprise version of this catalyst type — the strongest available comparable for what a genuinely unexpected positive outcome does to this stock."
+    },
+    {
+      "ticker": "RGNX",
+      "event": "FDA Complete Response Letter for RGX-121/NAVSUNLI",
+      "date": "Feb 2026",
+      "movePct": -21,
+      "days": 1,
+      "outcome": "bad",
+      "note": "The exact same-program risk case — shows what a second adverse FDA decision would look like for this stock, directly relevant given the binary nature of the Q3 BLA resubmission ahead."
+    }
+  ],
+  "sources": [
+    "https://ir.regenxbio.com/news-releases/news-release-details/regenxbio-announces-alignment-fda-path-forward-navsunlitm-bla",
+    "http://www.prnewswire.com/news-releases/regenxbio-reports-second-quarter-2026-financial-results-and-operational-highlights-302844662.html",
+    "https://www.neurologylive.com/view/fda-clears-path-navsunli-bla-resubmission-mps-ii-no-additional-studies-required",
+    "https://www.investing.com/news/transcripts/earnings-call-transcript-regenxbio-beats-on-q2-2026-eps-shares-rise-premarket-93CH-4842301",
+    "https://www.fiercebiotech.com/biotech/another-reversal-rare-disease-fda-reconsider-regenxbio-gene-therapy"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "มีอัปเดตจริง 2 อย่างตั้งแต่รายงานก่อน อย่างแรก Type A meeting กับ FDA เกิดขึ้นจริงตามแผนใน ก.ค. 2026 และผลออกมาดี — FDA ยืนยันไม่ต้องมีผู้ป่วยหรือการศึกษาเพิ่มสำหรับการยื่น NAVSUNLI BLA ใหม่ ยังคงเป้า Q3 2026 พร้อมข้อมูล efficacy/safety ระยะยาวและจะหารือเรื่อง post-approval confirmatory study ตอน review อย่างที่สอง ผลประกอบการ Q2 2026 (6 ส.ค.) แสดง financial inflection จริง — รายได้ $108M (จาก $21.4M ปีก่อน) กำไรสุทธิ $22.7M จาก milestone AbbVie $100M ทำให้ runway เงินสดยืดไปถึง Q4 2027 ลดความเสี่ยง dilution ระยะสั้น ตัว binary หลักคือการยื่น BLA ใหม่ Q3 จะผ่านราบรื่นหรือไม่ยังรออยู่ เป้า consensus $23.10 บ่งชี้ upside เกิน 100%",
+      "priceNote": "ย่อจาก $11.28 มาที่ $10.72 ยังสูงกว่าฐานก่อน 22 มิ.ย. มาก แม้จะย่อวันนี้ ผลประกอบการ Q2 2026 (6 ส.ค.) บีท EPS และมีกำไรไตรมาสที่หายาก (รายได้ $108M กำไรสุทธิ $22.7M) จาก milestone AbbVie $100M runway เงินสดยืดไปถึง Q4 2027",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "ยื่น BLA ใหม่ NAVSUNLI", "description": "หลัง Type A meeting เชิงบวก ก.ค. 2026 (ไม่ต้องมีการศึกษาเพิ่ม) ยังเป้า Q3 2026 พร้อมข้อมูลระยะยาวและ imaging ที่ยื่นแล้ว จะหารือ post-approval confirmatory study ตอน review" },
+        { "name": "FDA Type A Meeting (เสร็จแล้ว ผลบวก)", "description": "จัดขึ้น ก.ค. 2026: FDA ยืนยันข้อมูล clinical ที่มีเพียงพอสำหรับ accelerated approval ไม่ต้องมีผู้ป่วยใหม่หรือการศึกษาเพิ่ม — ความไม่แน่นอนหลักจากรายงานก่อนได้รับการแก้ไขในทางบวกแล้ว" },
+        { "name": "เส้นทาง RGX-202 (Duchenne) BLA", "description": "โปรแกรมแยก: Phase III บรรลุเป้าหลัก หนุน accelerated approval และเปิดตัวเชิงพาณิชย์ปี 2027 ใกล้ยื่น BLA ตามความเห็นจากผลประกอบการ Q2" }
+      ],
+      "risks": [
+        "ผล Type A meeting เป็นบวกแต่ไม่ใช่การันตี — track record ของ FDA ต่อยีนบำบัดรอบนี้ไม่สม่ำเสมอ การยื่น Q3 ยังต้องผ่าน formal review ไม่ใช่แค่การ align ก่อนยื่น",
+        "กำไร Q2 มาจาก milestone AbbVie $100M ครั้งเดียว ไม่ใช่กำไรจากการดำเนินงานต่อเนื่อง — อย่า extrapolate ว่าเป็นสถานะปกติใหม่",
+        "Range เป้าราคานักวิเคราะห์ยังกว้างผิดปกติ ($10-50) สะท้อนความเห็นต่างจริง",
+        "เป้า 'Q3 2026' ยังเป็นเป้าของบริษัทเอง ไม่ใช่ deadline บังคับจาก FDA",
+        "ความผันผวนหุ้นเล็ก biotech มีสองด้าน — กลไกเดียวกับที่ทำให้เด้ง +37% ก็ทำให้ร่วง -21% ได้ size ให้เหมาะสมแม้ฐานะการเงินจะดีขึ้น"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% เมื่อ 29 ก.ค. 2026 ฐานะเงินสดที่ดีขึ้นของ RGNX (runway ถึง Q4 2027) ลดการพึ่งพาเงื่อนไขดอกเบี้ยที่ดีกว่ารายงานก่อน",
+        "inflationNote": "Core PCE ยังอยู่ 3.3% YoY CPI (12 ส.ค.) อาจยังกระทบ risk appetite biotech เล็กในวงกว้าง แม้ RGNX จะ exposed น้อยลงจาก runway ที่ยืดออก",
+        "sectorImpact": "Catalyst ด้าน regulatory ของ biotech แทบไม่ผูกกับ macro งบดุลหลัง milestone AbbVie ลดความเสี่ยงด้านต้นทุนการเงินที่เคยระบุในรายงานก่อน",
+        "summary": "ปานกลาง — เส้นทาง FDA เองยัง idiosyncratic และ independent จาก macro runway เงินสดที่ยืดไปถึง Q4 2027 ลดความเสี่ยง macro ด้านการเงินจากรายงานก่อนได้จริง แม้ risk-off กว้างจะยังกดดันหุ้นได้"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — Type A meeting เชิงบวกและฐานะการเงินที่แข็งแรงขึ้นจริง (runway Q4 2027) ลดความเสี่ยงเทียบรายงานก่อน แต่การยื่น BLA ใหม่ Q3 ยังเป็น binary ที่ยังไม่คลี่คลาย เข้าไม้เล็กถึงกลาง เพิ่มถ้าย่อมาโซน $9.00-9.75",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน หลังย่อจาก Q2 แม้ไตรมาสจะมีกำไร", "timing": "ตอนนี้ (เล็ก)" },
+          { "note": "โซนย่อลึกขึ้นก่อนยื่น BLA ใหม่ Q3", "timing": "ถ้าย่อ" },
+          { "note": "ใกล้ขอบล่างของ range หลัง CRL — เฉพาะกรณี biotech เทขายรวม", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — ยื่น BLA ใหม่ Q3 สำเร็จราบรื่น ไม่มี FDA pushback ใหม่" },
+        "tp2": { "note": "Bull — ยื่นสำเร็จ FDA ยืนยัน expedited review แตะเป้า consensus" },
+        "tp3": { "note": "Moon — ยื่นสำเร็จ + เส้นทางอนุมัติชัดเจน แตะเป้า Stifel", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุด support ใกล้ — thesis ยังไม่พัง แต่ momentum เริ่มอ่อน",
+          "hardNote": "หลุดลึก — FDA อาจปฏิเสธครั้งที่สองแม้ Type A meeting จะบวก ซ้ำปฏิกิริยา CRL ก.พ. 2026",
+          "rrNote": "จาก Entry 2 ($9.38 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R สูงมากแต่ยังเป็นหุ้น regulatory binary ที่เคยมี CRL จริง — size เล็กแม้ฐานะการเงินจะดีขึ้น"
+        }
+      },
+      "estimateDates": [
+        { "event": "ยื่น BLA ใหม่ NAVSUNLI", "note": "เป้า Q3 2026 หลัง Type A meeting เชิงบวก" },
+        { "event": "เส้นทาง RGX-202 (Duchenne) BLA", "note": "ใกล้ยื่นตามความเห็นจากผลประกอบการ Q2" }
+      ]
+    }
+  }
+}
