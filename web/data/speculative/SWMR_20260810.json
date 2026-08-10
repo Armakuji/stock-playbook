@@ -1,0 +1,172 @@
+{
+  "ticker": "SWMR",
+  "companyName": "Swarmer, Inc.",
+  "companyDescription": "Autonomous drone-swarm software · Combat-validated in Ukraine (100,000+ missions since Apr 2024) — expanding into U.S. defense (Oak Grove Technologies/Chimera UAV, SOF training) and hardware partnerships (Lantronix custom compute platform)",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-10T20:00:00.000Z",
+  "price": 35.61,
+  "priceChange": -0.3,
+  "priceNote": "Trading well off the $45.00 52-week high but far above the $11.25 low and its $5.00 IPO price (Mar 16, 2026) — this stock's own history (an IPO-day pop from $5 to a $31 close) already demonstrates the kind of magnitude possible. Q2 2026 results land Aug 13, 2026.",
+  "marketCap": "$504.2M",
+  "sector": "Technology / Defense Software (Autonomous Drone Swarming)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 46,
+  "summary": "Swarmer's autonomous drone-swarming software has real combat validation — over 100,000 missions in Ukraine since April 2024 — and is now expanding into U.S. defense channels: a partnership with Oak Grove Technologies to integrate into the Chimera UAV platform for Special Operations training, an expanded SkyKnight software license (+$1.02M), and a Lantronix hardware collaboration. The stock IPO'd at $5 on Mar 16, 2026 and popped to a $31 close on debut — real evidence of the magnitude this name can move. Q2 2026 results (Aug 13, 2026) are the next catalyst, though a July 24 senior-management realignment adds some execution uncertainty right before the print, and net losses are widening as the company scales.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Results",
+      "description": "Confirmed for Aug 13, 2026, 4:30pm ET call. Key reads: revenue growth from the expanding SkyKnight, Oak Grove, and Lantronix relationships, cash burn/runway update, and commentary on the Jul 24 senior-management realignment.",
+      "urgencyLabel": "3 DAYS",
+      "dateBadge": "Aug 13, 2026",
+      "catalystDate": "2026-08-13",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🤝",
+      "name": "U.S. Defense Channel Expansion",
+      "description": "Ongoing: Oak Grove Technologies/Chimera UAV partnership for U.S. Special Operations Forces training, SkyKnight contract expansion (+$1.02M), Lantronix custom compute-platform collaboration — structural growth drivers beyond the combat-proven Ukraine deployment base.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Net loss widened sharply — $4.5M in Q1 2026 vs $0.7M in Q1 2025 — as the company scales engineering headcount and public-company infrastructure",
+    "Cash runway is genuinely contested: management says 'at least 12 months' from the $23.5M cash position (Mar 31, 2026, boosted by IPO proceeds), but independent analysis flags 'less than a year' based on the current free cash flow trend — a dilutive raise is a real possibility if the gap isn't closed by revenue growth",
+    "A senior-management realignment on Jul 24, 2026 — just 3 weeks before Q2 earnings — introduces execution/leadership uncertainty at a sensitive moment",
+    "Extremely new public company (IPO'd Mar 2026) with a very short trading history and thin analyst coverage — limited precedent to judge management's guidance credibility against",
+    "52-week range of $11.25 to $45.00, plus the IPO-day round trip itself, shows this is an exceptionally volatile name even by turbo-lane standards"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Results", "dateRange": "Aug 13, 2026", "note": "Confirmed date — revenue growth and cash runway are the key reads", "est": "n/a", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -50, "price": 17.81 },
+    { "label": "Base", "color": "yellow", "pct": 40, "price": 49.85 },
+    { "label": "Bull", "color": "green", "pct": 100, "price": 71.22 },
+    { "label": "Moon", "color": "purple", "pct": 230, "price": 117.51 }
+  ],
+  "analystTargets": [],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held at 3.50-3.75% on Jul 29, 2026, though the weak Jul NFP (-23K, Aug 7) has since pulled hike odds down sharply. Defense-software revenue is largely appropriations/program-driven, but a freshly-IPO'd microcap like SWMR is still exposed to broad risk-appetite swings.",
+    "inflationNote": "Core PCE still 3.3% YoY. A hot CPI print (Aug 12, the day before earnings) could compound volatility around the Q2 print itself.",
+    "sectorImpact": "U.S. defense-software demand is largely policy/budget-driven and rate-insensitive, but SWMR's own contested cash runway makes it more exposed to broad financing-condition tightening than a self-funded peer.",
+    "summary": "MEDIUM — the combat-validated software thesis is largely macro-independent, but SWMR's short public history and contested runway mean a broad risk-off (hawkish CPI/FOMC surprise) could pressure both the stock and its financing options."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 35.61, "note": "Current price, ahead of Aug 13 earnings", "timing": "Now (small starter)" },
+      { "label": "Entry 2", "level": 27, "rangeMax": 30, "note": "Pullback zone if pre-earnings positioning fades", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 18, "note": "Deep dip — approaching the 52-week low, thesis-intact only", "timing": "Deep dip / thesis intact" }
+    ],
+    "tp1": { "price": 49.85, "pct": 40.0, "note": "Base — Aug 13 earnings confirms revenue growth from the expanding U.S. defense channel, re-tests the 52-week high" },
+    "tp2": { "price": 71.22, "pct": 100.0, "note": "Bull — a major new U.S. DoD contract lands, comparable in scale to MOB's $249M program-of-record framing" },
+    "tp3": { "price": 117.51, "pct": 230.0, "note": "Moon — autonomous swarm software becomes a standard layer across U.S./NATO drone programs, echoing the magnitude of the IPO-day pop", "moon": true },
+    "stopLoss": {
+      "tight": 29.20, "tightPct": -18.0, "tightNote": "Thesis-neutral technical stop — normal pre-earnings volatility becoming a real breakdown",
+      "hard": 19.59, "hardPct": -45.0, "hardNote": "Risk-of-zero territory for the near-term thesis — would suggest the cash-runway concern is materializing or the U.S. defense expansion is stalling",
+      "riskReward": "2.5 : 1", "rrNote": "Entry 1 to hard stop vs TP2 (Bull case)", "rrWarning": "Below the 5:1 turbo target — this is an extremely new public company with limited precedent; size well below the stated ceiling given the contested runway and thin trading history"
+    },
+    "verdict": "SPECULATIVE — real combat-validated software with genuine U.S. defense channel expansion (Oak Grove, SkyKnight, Lantronix), but a contested cash runway and a pre-earnings management realignment add real execution risk. Aug 13 earnings, 3 days out, is the next confirmation point. ค่าขนม sizing only, 2-5% max.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "SWMR's own IPO-day move (from a $5 offer price to a $31 close, an intraday high of $32.45) is the starkest evidence of this stock's volatility — new contract/partnership announcements have driven step-changes since, not a slow grind.",
+    "preRunupTiming": "Days around contract/partnership announcements and earnings, not weeks of positioning",
+    "preRunupPct": "IPO-day precedent alone implies +500%+ is within this stock's demonstrated range",
+    "postWin": {
+      "avgPct": 520,
+      "range": "+50% to +520%",
+      "note": "SWMR's own Nasdaq debut (Mar 17, 2026) saw the stock surge from a $5 IPO price to a $31 close (+520%) — the clearest same-company evidence of this name's moonshot magnitude. Cross-sector reference: KTOS ran +380% after its Marine Corps CCA (Valkyrie) selection in Jan 2026.",
+      "exampleDate": "Mar 2026 (SWMR IPO debut) / Jan 2026 (KTOS)"
+    },
+    "postLose": {
+      "avgPct": -30,
+      "range": "-15% to -50%",
+      "note": "No SWMR-specific negative-catalyst precedent was found in this research pass — the stock's decline from its post-IPO highs toward the 52-week low ($45.00 to $11.25) shows real downside is possible, but wasn't tied to one clean dated event in the sources found.",
+      "exampleDate": "N/A — no SWMR-specific negative-catalyst precedent found in this research pass"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "Real combat-validated technology and genuine U.S. defense channel expansion are offset by a contested cash runway, a pre-earnings management realignment, and an extremely short public trading history — sized at the bottom of the ค่าขนม range (2%), not the standard 3-5%"
+    },
+    "stopPreCatalyst": { "pct": -18, "price": 29.20, "note": "A break below ~$29.20 ahead of Aug 13 earnings would suggest the market is de-risking the cash-runway concern before the print" },
+    "stopPostCatalyst": { "pct": -30, "note": "If Aug 13 results confirm the tighter runway read (versus management's '12 months' claim) without an offsetting revenue beat, exit — the survival math becomes the dominant story" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "SWMR",
+      "event": "Nasdaq IPO debut",
+      "date": "Mar 17, 2026",
+      "movePct": 520,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company precedent for the extreme magnitude this stock has already demonstrated — priced at $5, closed its first day at $31 (intraday high $32.45)."
+    },
+    {
+      "ticker": "KTOS",
+      "event": "Marine Corps Collaborative Combat Aircraft (Valkyrie) selection",
+      "date": "Jan 2026",
+      "movePct": 380,
+      "days": 30,
+      "outcome": "good",
+      "note": "Cross-sector defense-contract comparable for what a confirmed major U.S. program win could do — relevant to SWMR's own Oak Grove/SOF training expansion trajectory."
+    }
+  ],
+  "sources": [
+    "https://www.stocktitan.net/news/SWMR/swarmer-announces-date-for-second-quarter-2026-results-and-business-fn8q3cj2f673.html",
+    "https://finance.yahoo.com/markets/stocks/articles/swarmer-combat-validated-platform-positioned-153646731.html",
+    "https://www.stocktitan.net/sec-filings/SWMR/10-q-swarmer-inc-quarterly-earnings-report-d0d9f27b266c.html",
+    "https://www.iposcoop.com/the-ipo-buzz-swarmer-swmr-prices-small-ipo-at-5-mid-point/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "ซอฟต์แวร์ swarm โดรนอัตโนมัติของ Swarmer มีการพิสูจน์ในสนามรบจริง — ปฏิบัติการกว่า 100,000 ครั้งในยูเครนตั้งแต่เม.ย. 2024 — และกำลังขยายเข้าสู่ช่องทาง defense สหรัฐ: partnership กับ Oak Grove Technologies เพื่อรวมเข้ากับแพลตฟอร์ม Chimera UAV สำหรับการฝึก Special Operations สัญญา SkyKnight ที่ขยาย (+$1.02M) และความร่วมมือฮาร์ดแวร์กับ Lantronix หุ้น IPO ที่ $5 เมื่อ 16 มี.ค. 2026 และปิดวันแรกที่ $31 — หลักฐานจริงของขนาดการเคลื่อนไหวที่หุ้นนี้ทำได้ ผลประกอบการ Q2 2026 (13 ส.ค. 2026) คือ catalyst ถัดไป แม้การปรับโครงสร้างผู้บริหารระดับสูง 24 ก.ค. จะเพิ่มความไม่แน่นอนด้าน execution ก่อนผลประกาศ และขาดทุนสุทธิกำลังขยายตัวขณะบริษัทขยายสเกล",
+      "priceNote": "เทรดห่างจาก 52-week high $45.00 มาก แต่สูงกว่า 52-week low $11.25 และราคา IPO $5.00 (16 มี.ค. 2026) มาก — ประวัติหุ้นตัวนี้เอง (IPO วันแรกปิดที่ $31 จาก $5) แสดงขนาดการเคลื่อนไหวที่เป็นไปได้แล้ว ผลประกอบการ Q2 2026 มา 13 ส.ค. 2026",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "ผลประกอบการ Q2 2026", "description": "ยืนยันวันที่ 13 ส.ค. 2026 เวลาประชุม 4:30pm ET จับตา: การเติบโตรายได้จากความสัมพันธ์ SkyKnight, Oak Grove, Lantronix ที่ขยายตัว อัปเดต cash burn/runway และความเห็นเรื่องการปรับโครงสร้างผู้บริหาร 24 ก.ค." },
+        { "name": "การขยายช่องทาง Defense สหรัฐ", "description": "ต่อเนื่อง: partnership Oak Grove Technologies/Chimera UAV สำหรับการฝึก US Special Operations Forces สัญญา SkyKnight ที่ขยาย (+$1.02M) ความร่วมมือ compute platform กับ Lantronix — แรงขับเคลื่อนการเติบโตเชิงโครงสร้างนอกเหนือจากฐานการใช้งานในยูเครนที่พิสูจน์แล้ว" }
+      ],
+      "risks": [
+        "ขาดทุนสุทธิขยายตัวมาก — $4.5M ใน Q1 2026 เทียบ $0.7M ใน Q1 2025 — ขณะบริษัทขยายทีมวิศวกรและโครงสร้างบริษัทมหาชน",
+        "Runway เงินสดยังเป็นที่ถกเถียง — ฝ่ายบริหารบอกว่า 'อย่างน้อย 12 เดือน' จากเงินสด $23.5M (31 มี.ค. 2026 ที่เพิ่มจาก IPO) แต่การวิเคราะห์อิสระระบุว่า 'ต่ำกว่าหนึ่งปี' จาก free cash flow trend ปัจจุบัน — การระดมทุนแบบ dilutive เป็นไปได้จริงถ้าช่องว่างไม่ปิดด้วยการเติบโตรายได้",
+        "การปรับโครงสร้างผู้บริหารระดับสูง 24 ก.ค. 2026 — เพียง 3 สัปดาห์ก่อนผลประกอบการ Q2 — เพิ่มความไม่แน่นอนด้าน execution/ผู้นำในจังหวะที่ sensitive",
+        "บริษัทมหาชนใหม่มาก (IPO มี.ค. 2026) ประวัติการซื้อขายสั้นมาก coverage นักวิเคราะห์บาง — บรรทัดฐานจำกัดในการตัดสิน credibility ของ guidance ฝ่ายบริหาร",
+        "52-week range $11.25 ถึง $45.00 บวกการ round trip วัน IPO เอง แสดงว่านี่คือหุ้นผันผวนสูงมากแม้เทียบกับมาตรฐานสาย turbo"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.50-3.75% เมื่อ 29 ก.ค. 2026 แม้ NFP อ่อนแอ (-23K, 7 ส.ค.) จะดึงความน่าจะเป็นขึ้นดอกเบี้ยลงแล้ว รายได้ defense software ส่วนใหญ่ขึ้นกับงบประมาณ/นโยบาย ไม่ sensitive ดอกเบี้ยโดยตรง แต่ไมโครแคปที่เพิ่ง IPO แบบ SWMR ยัง exposed ต่อความผันผวน risk appetite กว้าง",
+        "inflationNote": "Core PCE ยังอยู่ 3.3% YoY CPI ร้อนแรง (12 ส.ค. วันก่อนผลประกอบการ) อาจซ้อนความผันผวนเข้ากับผล Q2 เอง",
+        "sectorImpact": "ความต้องการ defense software สหรัฐส่วนใหญ่ขึ้นกับงบประมาณ/นโยบาย ไม่ sensitive ดอกเบี้ยโดยตรง แต่ runway เงินสดที่ยังถกเถียงของ SWMR เองทำให้ exposed ต่อเงื่อนไขการเงินที่ตึงตัวกว้างมากกว่าคู่แข่งที่ทุนพอเอง",
+        "summary": "ปานกลาง — thesis ซอฟต์แวร์ที่พิสูจน์ในสนามรบจริงส่วนใหญ่ independent จาก macro แต่ประวัติบริษัทมหาชนที่สั้นมากและ runway ที่ยังถกเถียงของ SWMR หมายความว่า risk-off กว้าง (CPI/FOMC hawkish surprise) อาจกดดันทั้งหุ้นและทางเลือกการระดมทุน"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — ซอฟต์แวร์ที่พิสูจน์ในสนามรบจริงพร้อมการขยายช่องทาง defense สหรัฐจริง (Oak Grove, SkyKnight, Lantronix) แต่ runway เงินสดที่ถกเถียงและการปรับโครงสร้างผู้บริหารก่อนผลประกอบการเพิ่มความเสี่ยง execution จริง ผลประกอบการ 13 ส.ค. อีก 3 วัน คือจุดยืนยันถัดไป ควร size แบบค่าขนมเท่านั้น 2-5% สูงสุด",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน ก่อนผลประกอบการ 13 ส.ค.", "timing": "ตอนนี้ (ไม้เล็ก)" },
+          { "note": "โซนย่อถ้าการ position ก่อนผลประกอบการจางลง", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงลึก — ใกล้ 52-week low เฉพาะกรณี thesis ยังอยู่", "timing": "Deep dip / thesis intact" }
+        ],
+        "tp1": { "note": "Base — ผลประกอบการ 13 ส.ค. ยืนยันการเติบโตรายได้จากช่องทาง defense สหรัฐที่ขยายตัว กลับไปทดสอบ 52-week high" },
+        "tp2": { "note": "Bull — สัญญา DoD สหรัฐใหม่ขนาดใหญ่เข้ามา ระดับใกล้เคียงกรอบ program-of-record $249M ของ MOB" },
+        "tp3": { "note": "Moon — ซอฟต์แวร์ swarm อัตโนมัติกลายเป็นชั้นมาตรฐานในโครงการโดรนสหรัฐ/NATO เทียบเท่าขนาดการบวกวัน IPO", "moon": true },
+        "stopLoss": {
+          "tightNote": "Stop เชิงเทคนิคที่ thesis ยังไม่พัง — ความผันผวนก่อนผลประกอบการปกติกลายเป็นการกลับตัวจริง",
+          "hardNote": "เขต risk-of-zero ของ thesis ระยะสั้น — แปลว่าความกังวล runway เงินสดกำลังเกิดขึ้นจริง หรือการขยาย defense สหรัฐกำลังชะงัก",
+          "rrNote": "จาก Entry 1 ถึง hard stop เทียบ TP2 (Bull case)",
+          "rrWarning": "ต่ำกว่าเป้า 5:1 ของ turbo — นี่คือบริษัทมหาชนใหม่มากที่มีบรรทัดฐานจำกัด ควร size ต่ำกว่าเพดานที่ระบุไว้มากเพราะ runway ที่ถกเถียงและประวัติการซื้อขายสั้น"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q2 2026", "note": "ยืนยันวันที่ 13 ส.ค. 2026" }
+      ]
+    }
+  }
+}

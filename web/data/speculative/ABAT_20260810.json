@@ -1,0 +1,175 @@
+{
+  "ticker": "ABAT",
+  "companyName": "American Battery Technology Company",
+  "companyDescription": "Critical battery minerals · Nevada battery recycling (first positive gross margin, Q3 FY26) + Tonopah Flats lithium refinery project — $115M DOE grant reinstated after winning an appeal, PFS shows a $2.57B after-tax NPV vs today's ~$356M market cap",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-10T20:00:00.000Z",
+  "price": 2.61,
+  "priceChange": 9.21,
+  "priceNote": "Up 9.2% on Aug 7 to $2.61 (self-fetched, no live-prices.json cache entry) — still deep in the lower half of the 52-week range ($1.86 to $11.49), which itself shows this stock has already made a +500%+ round trip once this cycle. The DOE grant reinstatement (Jun 8, 2026) and first positive recycling-segment gross margin are real, realized positives; the survival risk below is the real offsetting negative.",
+  "marketCap": "~$356M",
+  "sector": "Materials / Critical Battery Minerals (Lithium, Recycling)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 44,
+  "summary": "American Battery Technology's Nevada recycling facility just hit its first positive gross margin, and the company won an appeal to get a $115M DOE grant reinstated for Phase 1 of its Tonopah Flats lithium refinery — a project whose own PFS shows a $2.57B after-tax NPV (21.8% IRR) against a market cap of roughly $356M today, a 7.2x gap. That's the moonshot math. The offsetting reality: Q3 FY26 alone burned $19.6M from operations against just $7.8M revenue and a $33.8M net loss, funded mostly by ATM share sales, and the company is carrying a sub-12-month cash runway with an active ATM facility still in use. This is a real, calculated ค่าขนม bet on the DOE-backed refinery de-risking faster than the balance sheet runs out — not a clean story.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q4 FY2026 Earnings (estimated)",
+      "description": "Not yet officially confirmed; based on the company's quarterly cadence, expected mid-to-late September 2026 (sources conflict between ~Sep 16 and Sep 30). Key reads: cash burn/runway update, ATM usage pace, and Tonopah Flats construction milestones under the reinstated $115M DOE grant.",
+      "urgencyLabel": "EST. ~5-7 WEEKS",
+      "dateBadge": "~Sept 2026 (est.)",
+      "catalystDate": "2026-09-20",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "⛏️",
+      "name": "Tonopah Flats DOE-Funded Refinery Construction",
+      "description": "$115M DOE grant reinstated Jun 8, 2026 (after winning an appeal against an earlier revocation) for Phase 1 of a commercial-scale critical mineral lithium refinery targeting 5,000 tonnes/year of battery-grade lithium hydroxide. Ongoing construction/deployment milestones, not a single dated event.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "⚠️ SURVIVAL: Sub-12-month cash runway despite recent capital raises — Q3 FY26 alone burned $19.6M from operations against just $7.8M revenue and a $33.8M net loss, funded largely by $45.5M in ATM share sales; the company maintains an active ATM facility, so further dilution is close to a certainty absent a step-change in revenue, not just a tail risk",
+    "The DOE grant reinstatement follows a prior REVOCATION that the company had to win an appeal to overturn — real evidence of policy/political risk to federal critical-minerals funding that could resurface",
+    "Tonopah Flats' $2.57B NPV and 21.8% IRR are PFS-stage (pre-feasibility study) estimates, not construction-confirmed economics — actual project costs and timelines routinely differ from PFS projections in mining",
+    "Extremely thin, sub-$3 share price with a history of heavy share-count dilution — a classic penny-stock risk profile where technical/liquidity dynamics can dominate fundamentals",
+    "52-week range of $1.86 to $11.49 shows this stock has already given back a huge prior move — buying today doesn't guarantee a repeat, and the stock could just as easily grind toward the low end again"
+  ],
+  "estimateDates": [
+    { "event": "Q4 FY2026 Earnings", "dateRange": "~Sept 2026", "note": "Date not yet officially confirmed — watch cash runway and Tonopah Flats construction progress", "est": "n/a", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -55, "price": 1.17 },
+    { "label": "Base", "color": "yellow", "pct": 90, "price": 4.96 },
+    { "label": "Bull", "color": "green", "pct": 180, "price": 7.31 },
+    { "label": "Moon", "color": "purple", "pct": 340, "price": 11.49 }
+  ],
+  "analystTargets": [
+    { "firm": "Wall Street Consensus (2 analysts)", "target": 6.50, "rating": "Buy", "note": "Implies ~194% upside at the price this target was set against; cited elsewhere as a $6.00 fair-value estimate (92% upside) reflecting genuine disagreement on the model" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held at 3.50-3.75% on Jul 29, 2026, though the weak Jul NFP (-23K, Aug 7) has since pulled hike odds down sharply. Critical-minerals/DOE-backed projects are policy-driven and somewhat rate-insensitive, but ABAT's own dependence on ATM equity financing makes it directly exposed to broad risk-appetite and financing-cost conditions.",
+    "inflationNote": "Core PCE still 3.3% YoY. A hot CPI print (Aug 12) could tighten financing conditions for cash-burning small-caps specifically, compounding ABAT's existing survival risk.",
+    "sectorImpact": "US critical-minerals policy (Trump EO restricting Chinese mineral procurement waivers, Project Vault stockpiling initiative) is a genuine tailwind independent of the Fed, but ABAT's own balance sheet makes broad financing-condition tightening a real, direct risk.",
+    "summary": "MEDIUM-HIGH within this dashboard — the DOE-backed critical-minerals policy tailwind is real and largely macro-independent, but ABAT's active ATM dependence means a hawkish-driven tightening in financing conditions would hit this name harder than a self-funded peer."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 2.61, "note": "Current price, post the DOE grant reinstatement and positive gross margin news", "timing": "Now (very small starter)" },
+      { "label": "Entry 2", "level": 2.00, "rangeMax": 2.30, "note": "Pullback zone if ATM-driven selling resumes", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 1.50, "note": "Deep dip — near/below the 52-week low, thesis-intact only", "timing": "Deep dip / thesis intact" }
+    ],
+    "tp1": { "price": 4.96, "pct": 90.0, "note": "Base — Q4 FY26 earnings confirms DOE-funded Tonopah Flats construction proceeding without a further survival scare" },
+    "tp2": { "price": 7.31, "pct": 180.0, "note": "Bull — grant funds fully deployed, second recycling plant siting (Southeast U.S.) confirmed" },
+    "tp3": { "price": 11.49, "pct": 340.0, "note": "Moon — full re-rate to the 52-week high as Tonopah Flats construction de-risks toward the $2.57B PFS-stage NPV", "moon": true },
+    "stopLoss": {
+      "tight": 2.09, "tightPct": -19.9, "tightNote": "Thesis-neutral technical stop — normal penny-stock volatility becoming a real breakdown",
+      "hard": 1.31, "hardPct": -49.8, "hardNote": "Risk-of-zero territory — would suggest the survival risk is materializing (failed ATM raise, DOE funding pulled again, or a going-concern warning)",
+      "riskReward": "3.6 : 1", "rrNote": "Entry 1 to hard stop vs TP2 (Bull case)", "rrWarning": "Asymmetric but below the 5:1 turbo target — the real risk here isn't the stop distance, it's the survival flag; size well below the stated 2-5% ceiling given the sub-12-month runway"
+    },
+    "verdict": "SPECULATIVE — a genuine $2.57B PFS-stage NPV against a $356M market cap is real moonshot math, but the sub-12-month cash runway and active ATM facility are a real, disclosed survival risk, not a footnote. Smallest ค่าขนม sizing only, and only for investors comfortable with a realistic path to further dilution or worse.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "ABAT's own 52-week range shows this stock can run hard on DOE/critical-minerals policy news well before any single confirmed construction milestone — the move from $1.86 to $11.49 this cycle happened on a mix of grant news and revenue-growth headlines, not one clean binary event.",
+    "preRunupTiming": "Days to weeks around DOE/policy headlines, not a single dated catalyst",
+    "preRunupPct": "ABAT's own realized range implies moves well beyond +300% are possible off a suppressed base",
+    "postWin": {
+      "avgPct": 518,
+      "range": "+90% to +518%",
+      "note": "ABAT's own 52-week range ($1.86 low to $11.49 high, a +518% round trip) is the clearest same-company evidence of this stock's moonshot magnitude on a mix of DOE/critical-minerals policy news and revenue-growth headlines.",
+      "exampleDate": "Trailing 52 weeks (ABAT's own range)"
+    },
+    "postLose": {
+      "avgPct": -5.24,
+      "range": "-5% to -15%",
+      "note": "Perpetua Resources' (PPTA) own $2.9B EXIM loan approval — arguably the closest comparable 'landmark critical-minerals financing' news this year — saw the stock close down 5.24% despite an intraday peak of +26%, a genuine 'sell the news' reaction on a financing milestone rather than a construction/production beat. A worse outcome for ABAT specifically (e.g. a survival scare) would likely be far more severe than this muted case.",
+      "exampleDate": "May 21, 2026 (PPTA EXIM loan approval)"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "Real DOE-backed project economics ($2.57B NPV) are offset by a genuine, disclosed sub-12-month runway and active ATM dependence — sized at the bottom of the ค่าขนม range (2%), not the standard 3-5%, specifically because of the survival flag"
+    },
+    "stopPreCatalyst": { "pct": -20, "price": 2.09, "note": "A break below ~$2.09 ahead of the ~Sept earnings would suggest the market is pricing in a real survival scare before the print" },
+    "stopPostCatalyst": { "pct": -30, "note": "If the ~Sept print shows the runway hasn't improved or a new dilutive raise is announced without offsetting progress, exit — the survival risk has become the dominant story" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "ABAT",
+      "event": "52-week trading range — DOE/critical-minerals policy news + recycling revenue growth headlines",
+      "date": "Trailing 52 weeks",
+      "movePct": 518,
+      "days": 365,
+      "outcome": "good",
+      "note": "Same-company precedent for the magnitude this stock can move on a mix of DOE grant and revenue-growth news — from a $1.86 low to an $11.49 high this cycle."
+    },
+    {
+      "ticker": "PPTA",
+      "event": "$2.9B EXIM loan approval for the Stibnite Gold-Antimony Project",
+      "date": "May 21, 2026",
+      "movePct": -5.24,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Closest comparable 'landmark critical-minerals financing' news this year — the stock still closed down 5.24% despite an intraday peak of +26%, showing even a fully-funding financing milestone can be sold as 'already priced in.'"
+    }
+  ],
+  "sources": [
+    "https://finance.yahoo.com/sectors/energy/articles/american-battery-technology-company-wins-095100446.html",
+    "https://www.timothysykes.com/news/american-battery-technology-company-abat-news-2026_06_08/",
+    "https://www.stocktitan.net/sec-filings/ABAT/10-q-american-battery-technology-co-quarterly-earnings-report-4b753aa341b7.html",
+    "https://finance.yahoo.com/news/were-keeping-eye-american-battery-113619538.html",
+    "https://www.tipranks.com/news/company-announcements/perpetua-resources-secures-2-9-billion-exim-loan-approval"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "โรงงานรีไซเคิลแบตเตอรี่ที่เนวาดาของ American Battery Technology เพิ่งมี gross margin เป็นบวกครั้งแรก และบริษัทชนะการอุทธรณ์ทำให้ DOE grant $115M กลับมาใช้ได้สำหรับ Phase 1 ของโรงกลั่นลิเทียม Tonopah Flats — โครงการที่ PFS แสดง after-tax NPV $2.57B (IRR 21.8%) เทียบมูลค่าตลาดวันนี้ราว $356M ต่างกัน 7.2 เท่า นี่คือคณิตศาสตร์ moonshot ด้านตรงข้าม: Q3 FY26 เพียงไตรมาสเดียวเผาเงินสด $19.6M จากการดำเนินงานเทียบรายได้เพียง $7.8M ขาดทุนสุทธิ $33.8M ระดมทุนส่วนใหญ่ผ่าน ATM share sales บริษัทมี runway ต่ำกว่า 12 เดือนและยังมี ATM facility ใช้งานอยู่ นี่คือ ค่าขนม bet ที่คำนวณแล้วจริงว่าโรงกลั่นที่ได้ทุน DOE จะ de-risk ได้เร็วกว่าเงินสดจะหมดหรือไม่ — ไม่ใช่ story ที่สะอาด",
+      "priceNote": "บวก 9.2% เมื่อ 7 ส.ค. เป็น $2.61 (self-fetched ไม่มีใน live-prices.json cache) ยังอยู่ครึ่งล่างของ 52-week range ($1.86 ถึง $11.49) ซึ่งแสดงว่าหุ้นนี้เคยขึ้น-ลงกว่า 500% มาแล้วรอบหนึ่งในรอบนี้ การกลับมาของ DOE grant (8 มิ.ย. 2026) และ gross margin บวกครั้งแรกของธุรกิจรีไซเคิลเป็นข่าวบวกจริงที่เกิดขึ้นแล้ว ความเสี่ยง survival ด้านล่างคือด้านลบจริงที่ชดเชยกัน",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "ผลประกอบการ Q4 FY2026 (ประมาณการ)", "description": "ยังไม่ยืนยันอย่างเป็นทางการ อิงจากรอบไตรมาสคาดกลาง-ปลาย ก.ย. 2026 (แหล่งข้อมูลขัดแย้งกันระหว่าง ~16 ก.ย. กับ 30 ก.ย.) จับตา: runway เงินสด pace การใช้ ATM และความคืบหน้าก่อสร้าง Tonopah Flats ภายใต้ DOE grant ที่กลับมาใช้ได้" },
+        { "name": "การก่อสร้างโรงกลั่น Tonopah Flats ด้วยทุน DOE", "description": "DOE grant $115M กลับมาใช้ได้ 8 มิ.ย. 2026 (หลังชนะอุทธรณ์การถูกเพิกถอนก่อนหน้า) สำหรับ Phase 1 ของโรงกลั่นลิเทียมระดับ commercial เป้าผลิต 5,000 ตัน/ปี lithium hydroxide เกรดแบตเตอรี่ ต่อเนื่อง ไม่ใช่ event เดียว" }
+      ],
+      "risks": [
+        "⚠️ SURVIVAL: runway เงินสดต่ำกว่า 12 เดือนแม้จะระดมทุนมาแล้ว — Q3 FY26 เพียงไตรมาสเดียวเผาเงินสด $19.6M จากการดำเนินงานเทียบรายได้เพียง $7.8M ขาดทุนสุทธิ $33.8M ระดมทุนส่วนใหญ่ผ่าน ATM $45.5M บริษัทยังมี ATM facility ใช้งานอยู่ dilution เพิ่มเติมใกล้เคียงความแน่นอนมากกว่า tail risk",
+        "การกลับมาของ DOE grant ตามหลังการถูกเพิกถอนจริงก่อนหน้า ที่บริษัทต้องชนะอุทธรณ์ถึงจะได้คืน — หลักฐานความเสี่ยงนโยบาย/การเมืองต่อทุนสนับสนุน critical minerals ของรัฐบาลกลางที่อาจกลับมาอีก",
+        "NPV $2.57B และ IRR 21.8% ของ Tonopah Flats เป็นตัวเลขระดับ PFS (pre-feasibility study) ไม่ใช่ economics ที่ยืนยันแล้วจากการก่อสร้างจริง — ต้นทุนและ timeline โครงการเหมืองจริงมักต่างจากที่ PFS ประมาณ",
+        "ราคาหุ้นต่ำกว่า $3 มาก บวกประวัติ dilution จำนวนหุ้นหนัก — profile ความเสี่ยงแบบ penny stock ที่ dynamics เทคนิค/สภาพคล่องมักครอบงำ fundamental",
+        "52-week range $1.86 ถึง $11.49 แสดงว่าหุ้นนี้เคยคืนกำไรก้อนใหญ่ไปแล้วครั้งหนึ่ง การซื้อวันนี้ไม่ได้การันตีว่าจะเกิดซ้ำ อาจไถลลงสู่ขอบล่างอีกก็ได้"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.50-3.75% เมื่อ 29 ก.ค. 2026 แม้ NFP อ่อนแอ (-23K, 7 ส.ค.) จะดึงความน่าจะเป็นขึ้นดอกเบี้ยลงแล้ว โครงการ critical minerals ที่ได้ทุน DOE ขับเคลื่อนด้วยนโยบายค่อนข้าง insensitive ต่อดอกเบี้ย แต่ ABAT เองพึ่งพา ATM equity financing โดยตรง exposed ต่อสภาพ risk appetite และต้นทุนการเงินกว้าง",
+        "inflationNote": "Core PCE ยังอยู่ 3.3% YoY CPI ร้อนแรง (12 ส.ค.) อาจทำให้เงื่อนไขการระดมทุนของหุ้นเล็กที่เผาเงินสดตึงตัวขึ้น ซ้อนทับความเสี่ยง survival ที่มีอยู่แล้วของ ABAT",
+        "sectorImpact": "นโยบาย critical minerals สหรัฐ (Trump EO จำกัด waiver จัดซื้อแร่จีน, Project Vault) เป็นแรงหนุนจริง independent จาก Fed แต่งบดุลของ ABAT เองทำให้เงื่อนไขการเงินที่ตึงตัวเป็นความเสี่ยงตรงจริง",
+        "summary": "ปานกลางถึงสูงในกลุ่มนี้ — แรงหนุนนโยบาย critical minerals ที่ได้ทุน DOE จริงและ independent จาก macro เป็นส่วนใหญ่ แต่การพึ่งพา ATM ของ ABAT เองหมายความว่าเงื่อนไขการเงินที่ตึงตัวขึ้นจาก Fed hawkish จะกระทบหุ้นนี้แรงกว่าบริษัทที่ระดมทุนได้เอง"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — NPV ระดับ PFS $2.57B จริงเทียบมูลค่าตลาด $356M คือคณิตศาสตร์ moonshot แท้จริง แต่ runway เงินสดต่ำกว่า 12 เดือนและ ATM facility ที่ใช้งานอยู่คือความเสี่ยง survival จริงที่เปิดเผยแล้ว ไม่ใช่ footnote ควร size แบบค่าขนมที่เล็กที่สุด และเหมาะกับนักลงทุนที่รับได้กับความเป็นไปได้จริงของ dilution เพิ่มเติมหรือแย่กว่านั้น",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน หลังข่าว DOE grant กลับมาและ gross margin บวก", "timing": "ตอนนี้ (ไม้เล็กมาก)" },
+          { "note": "โซนย่อถ้าแรงขาย ATM กลับมา", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงลึก — ใกล้/ต่ำกว่า 52-week low เฉพาะกรณี thesis ยังอยู่", "timing": "Deep dip / thesis intact" }
+        ],
+        "tp1": { "note": "Base — ผลประกอบการ Q4 FY26 ยืนยันการก่อสร้าง Tonopah Flats ด้วยทุน DOE เดินหน้าโดยไม่มีข่าว survival scare ใหม่" },
+        "tp2": { "note": "Bull — ใช้ทุน grant เต็มจำนวน บวกยืนยันที่ตั้งโรงงานรีไซเคิลที่สอง (ภาคตะวันออกเฉียงใต้สหรัฐ)" },
+        "tp3": { "note": "Moon — re-rate เต็มที่สู่ 52-week high เมื่อการก่อสร้าง Tonopah Flats de-risk เข้าใกล้ NPV ระดับ PFS $2.57B", "moon": true },
+        "stopLoss": {
+          "tightNote": "Stop เชิงเทคนิคที่ thesis ยังไม่พัง — ความผันผวนปกติของ penny stock กลายเป็นการกลับตัวจริง",
+          "hardNote": "เขต risk-of-zero — แปลว่าความเสี่ยง survival กำลังเกิดขึ้นจริง (ระดมทุน ATM ล้มเหลว, ทุน DOE ถูกดึงกลับอีก, หรือมี going-concern warning)",
+          "rrNote": "จาก Entry 1 ถึง hard stop เทียบ TP2 (Bull case)",
+          "rrWarning": "Asymmetric แต่ต่ำกว่าเป้า 5:1 ของ turbo — ความเสี่ยงจริงไม่ใช่ระยะ stop แต่คือ survival flag ควร size ต่ำกว่าเพดาน 2-5% ที่ระบุไว้มาก เพราะ runway ต่ำกว่า 12 เดือน"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q4 FY2026", "note": "ยังไม่ยืนยันอย่างเป็นทางการ ประมาณ ~ก.ย. 2026" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "ticker": "SPIR",
+  "companyName": "Spire Global, Inc.",
+  "companyDescription": "Space data & analytics · Constellation of 100+ nanosatellites providing weather (GNSS-RO), maritime/aviation tracking, and RF geolocation data — pivoting toward defense/government (NOAA HyMS, Diehl Defence missile-tracking MOU) after divesting its lower-margin Maritime segment",
+  "exchange": "NYSE",
+  "generatedAt": "2026-08-10T20:00:00.000Z",
+  "price": 13.79,
+  "priceChange": -1.2,
+  "priceNote": "Trading in the low-to-mid teens, well off the $25.93 52-week high but comfortably above the $6.60 low — the stock has been range-bound since the April 2026 $65.5M private placement (at $14/share) stabilized the balance sheet after the Maritime divestiture caused a real revenue step-down. Q2 2026 earnings, Aug 12, 2026, is the next real test.",
+  "marketCap": "~$554M",
+  "sector": "Technology / Space Data & Analytics",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Moonshot",
+  "score": 58,
+  "summary": "Spire is mid-pivot: after divesting its Maritime business (which caused a real Q3 2025 revenue step-down to $12.7M) and raising $65.5M net in an April 2026 private placement, the company says it now has cash to fund through adjusted EBITDA breakeven. The forward story is 76% of 2026 revenue already under contract, >30% expected growth ex-Maritime, a growing NOAA HyMS microwave-sounding opportunity, and — the real moonshot lever — a Diehl Defence MOU to co-develop satellite-based missile-tracking/early-warning systems, positioning SPIR for a European 'Golden Dome'-style re-rate if that MOU converts to a real contract. Aug 12, 2026 Q2 earnings is the near-term confirmation point.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings",
+      "description": "Confirmed for Aug 12, 2026 — the key read is whether the 76%-contracted 2026 revenue base and >30% ex-Maritime growth guidance are tracking, plus any update on the Diehl Defence MOU's progress toward a definitive agreement.",
+      "urgencyLabel": "2 DAYS",
+      "dateBadge": "Aug 12, 2026",
+      "catalystDate": "2026-08-12",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🛰️",
+      "name": "Diehl Defence Missile-Tracking MOU",
+      "description": "Signed at the ILA Berlin Airshow 2026 — a Memorandum of Understanding (non-binding) to co-develop satellite-based intelligence and early-warning systems for ballistic/hypersonic missile threats. The real moonshot lever: conversion to a definitive, funded contract would re-rate SPIR from a small-sat data vendor toward a European missile-defense-relevant space name.",
+      "urgencyLabel": "ONGOING (MOU stage)",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Cash was down to ~$50M at Q1 2026 before the $65.5M April private placement; despite that raise extending runway to adjusted EBITDA breakeven, the company maintains an active S-3 shelf registration — further dilution is a real possibility if breakeven slips",
+    "The Maritime divestiture caused a genuine revenue step-down (Q3 2025 revenue fell to $12.7M) — the growth thesis depends entirely on HyMS/defense/RF geolocation replacing that lost revenue, not yet fully proven",
+    "The Diehl Defence relationship is currently a non-binding MOU, not a signed contract — conversion to real revenue is neither guaranteed nor dated",
+    "Heavy reliance on government contract renewals — the current NOAA GNSS-RO contract runs through Sep 18, 2026, and non-renewal or a reduced scope would hit revenue directly",
+    "52-week range of $6.60 to $25.93 shows this stock has already delivered and given back a huge move once this cycle — not a low-volatility name"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings", "dateRange": "Aug 12, 2026", "note": "Confirmed date — 76%-contracted revenue base and Diehl Defence MOU progress are the key reads", "est": "n/a", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -45, "price": 7.58 },
+    { "label": "Base", "color": "yellow", "pct": 55, "price": 21.37 },
+    { "label": "Bull", "color": "green", "pct": 100, "price": 27.58 },
+    { "label": "Moon", "color": "purple", "pct": 230, "price": 45.51 }
+  ],
+  "analystTargets": [
+    { "firm": "Wall Street Consensus (3 analysts, Strong Buy)", "target": 20.875, "rating": "Strong Buy", "note": "Average target, high estimate $24, low estimate $15" },
+    { "firm": "Bullish analyst cluster", "target": 26.5, "rating": "Buy", "note": "Cited $26-27 upside case on NASA partnership, booking momentum, HyMS opportunity" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held at 3.50-3.75% on Jul 29, 2026, though the weak Jul NFP (-23K, Aug 7) has since pulled hike odds down sharply. SPIR's revenue mix (government + commercial data subscriptions) is only partly rate-insensitive — the commercial side is more exposed to broad risk appetite than a pure defense-contractor peer.",
+    "inflationNote": "Core PCE still 3.3% YoY. A hot CPI print (Aug 12, the same day as earnings) could compound volatility around the print itself.",
+    "sectorImpact": "Government/defense-adjacent revenue (NOAA, Diehl) is largely appropriations/policy-driven and rate-insensitive, but SPIR's own recent history of capital raises (private placement, active shelf) makes it more exposed than most to a tightening in risk-appetite or financing conditions.",
+    "summary": "MEDIUM — the underlying government/defense pivot is structurally macro-independent, but SPIR's demonstrated need for repeated capital raises means a broad risk-off (hawkish CPI/FOMC surprise) would likely pressure the stock's financing options, not just its multiple."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 13.79, "note": "Current price, ahead of Aug 12 earnings", "timing": "Now (small starter)" },
+      { "label": "Entry 2", "level": 11, "rangeMax": 12, "note": "Pullback zone if earnings-week volatility pushes lower", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 8, "note": "Deep dip — approaching the 52-week low, thesis-intact only", "timing": "Deep dip / thesis intact" }
+    ],
+    "tp1": { "price": 21.37, "pct": 55.0, "note": "Base — Aug 12 earnings confirms the 76%-contracted 2026 revenue base and >30% ex-Maritime growth holding" },
+    "tp2": { "price": 27.58, "pct": 100.0, "note": "Bull — hits the cited $26-27 bull-case zone as the HyMS/NOAA opportunity scales" },
+    "tp3": { "price": 45.51, "pct": 230.0, "note": "Moon — Diehl Defence MOU converts into a major European missile-defense program, full re-rate toward a defense-space multiple", "moon": true },
+    "stopLoss": {
+      "tight": 11.31, "tightPct": -18.0, "tightNote": "Thesis-neutral technical stop — normal earnings-week volatility becoming a real breakdown",
+      "hard": 7.58, "hardPct": -45.0, "hardNote": "Approaches the 52-week low — would suggest the revenue-replacement thesis (HyMS/defense filling the Maritime gap) is failing",
+      "riskReward": "2.2 : 1", "rrNote": "Entry 1 to hard stop vs TP2 (Bull case)", "rrWarning": "Below the 5:1 turbo target — SPIR's downside is more contained than a pure binary bet since it already has real revenue, but that also means the reward is more measured than a pure lottery-ticket moonshot"
+    },
+    "verdict": "SPECULATIVE — a real government/defense pivot (NOAA HyMS, Diehl Defence MOU) sits on top of a company still proving it can replace lost Maritime revenue. Aug 12 earnings, 2 days out, is the next confirmation point. ค่าขนม/Moonshot position only — 2-5% max.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "Space-data/smallsat names with a defense-pivot narrative tend to re-rate sharply on confirmed contract news rather than a slow pre-earnings build — Redwire's ~220% rally on Golden Dome-related contract momentum and AST SpaceMobile's 300%+ YTD run on direct-to-cell commercialization are the closest sector patterns.",
+    "preRunupTiming": "Weeks to months on a structural narrative shift (defense pivot), then a sharp step on the actual contract conversion",
+    "preRunupPct": "Sector precedent (RDW, ASTS) suggests +100% to +300%+ once the defense/commercialization narrative is confirmed by real contract value",
+    "postWin": {
+      "avgPct": 220,
+      "range": "+100% to +300%+",
+      "note": "Redwire (RDW) rallied roughly 220% on Golden Dome missile-defense contract momentum (SHIELD IDIQ award, Feb 2026) — the closest same-theme comparable for what a Diehl Defence contract conversion could do to SPIR. AST SpaceMobile (ASTS) is up over 300% YTD on direct-to-cell commercialization progress, showing the magnitude smallsat names can move on confirmed government/commercial conversion.",
+      "exampleDate": "Feb 2026 (RDW) / 2025-2026 YTD (ASTS)"
+    },
+    "postLose": {
+      "avgPct": -25,
+      "range": "-15% to -40%",
+      "note": "No SPIR-specific negative-catalyst precedent with a clean number was found in this research pass — this range reflects the general pattern for smallsat/space-data names on a revenue miss or contract non-renewal (e.g. RDW's pullback from $24 to $11-12 after a revenue miss and widening GAAP losses in mid-2026).",
+      "exampleDate": "Mid-2026 (RDW pullback, comparable dynamic)"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Real government/defense pivot underway with actual contracted revenue (76% of 2026 under contract), but a genuine dilution/financing history and an MOU-stage (not signed) defense catalyst keep this at ค่าขนม sizing (3%), not a core position"
+    },
+    "stopPreCatalyst": { "pct": -18, "price": 11.31, "note": "A break below ~$11.31 ahead of Aug 12 earnings would suggest the market is de-risking the revenue-replacement thesis before the print" },
+    "stopPostCatalyst": { "pct": -25, "note": "If Aug 12 earnings show the ex-Maritime growth guidance slipping, exit — the entire near-term thesis rests on that growth holding" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "RDW",
+      "event": "Golden Dome missile-defense SHIELD IDIQ contract award (Missile Defense Agency)",
+      "date": "Feb 2026",
+      "movePct": 220,
+      "days": 90,
+      "outcome": "good",
+      "note": "Closest same-theme comparable — a space-hardware name re-rating on confirmed government missile-defense contract value, directly relevant to what a Diehl Defence MOU conversion could do for SPIR."
+    },
+    {
+      "ticker": "ASTS",
+      "event": "Direct-to-cell commercialization progress (BlueBird constellation buildout)",
+      "date": "2025-2026 (YTD)",
+      "movePct": 300,
+      "days": 240,
+      "outcome": "good",
+      "note": "Shows the magnitude a smallsat/space-data name can move once a technology-validation story transitions credibly toward commercial/government revenue — the same transition SPIR is attempting with HyMS and Diehl Defence."
+    }
+  ],
+  "sources": [
+    "https://finance.yahoo.com/markets/stocks/articles/spire-global-spir-story-shifting-141334459.html",
+    "https://www.fool.com/earnings/call-transcripts/2026/05/14/spire-spir-q1-2026-earnings-call-transcript/",
+    "https://ir.spire.com/news-events/press-releases/detail/235/spire-global-awarded-3-8-million-noaa-contract-for",
+    "https://bingx.com/en/learn/article/redwire-corporation-rdw-forecast-and-price-prediction-is-rdw-a-good-investment",
+    "https://stockstotrade.com/news/redwire-corporation-rdw-news-2026_02_18/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Spire อยู่กลางช่วงเปลี่ยนผ่าน — หลังขายธุรกิจ Maritime ออกไป (ทำให้รายได้ Q3 2025 ร่วงลงเหลือ $12.7M จริง) และระดมทุน $65.5M สุทธิผ่าน private placement เม.ย. 2026 บริษัทบอกว่าตอนนี้มีเงินสดพอถึงจุด adjusted EBITDA breakeven เรื่องราวข้างหน้าคือรายได้ปี 2026 ที่ทำสัญญาแล้ว 76% เติบโต >30% ไม่รวม Maritime โอกาส NOAA HyMS ที่กำลังโต และ — ตัวขับเคลื่อน moonshot จริง — MOU กับ Diehl Defence เพื่อพัฒนาระบบติดตามขีปนาวุธผ่านดาวเทียมร่วมกัน วางตำแหน่งให้ SPIR เป็นหุ้น 'Golden Dome' ยุโรปถ้า MOU นี้แปลงเป็นสัญญาจริง ผลประกอบการ Q2 2026 วันที่ 12 ส.ค. คือจุดยืนยันระยะสั้นถัดไป",
+      "priceNote": "เทรดช่วงหลักสิบต้นถึงกลาง ห่างจาก 52-week high $25.93 มาก แต่สูงกว่า 52-week low $6.60 สบายๆ — หุ้นอยู่ในกรอบตั้งแต่ private placement $65.5M (ที่ $14/หุ้น) เม.ย. 2026 ช่วยพยุงงบดุลหลังการขาย Maritime ทำให้รายได้ลดลงจริง ผลประกอบการ Q2 2026 วันที่ 12 ส.ค. คือบททดสอบถัดไป",
+      "scoreLabel": "Moonshot",
+      "catalysts": [
+        { "name": "ผลประกอบการ Q2 2026", "description": "ยืนยันวันที่ 12 ส.ค. 2026 — จับตาว่ารายได้ปี 2026 ที่ทำสัญญาแล้ว 76% และเป้าเติบโต >30% ไม่รวม Maritime เป็นไปตามแผนหรือไม่ บวกอัปเดตความคืบหน้า MOU Diehl Defence สู่สัญญาจริง" },
+        { "name": "MOU ติดตามขีปนาวุธกับ Diehl Defence", "description": "เซ็นที่งาน ILA Berlin Airshow 2026 — บันทึกความเข้าใจ (ยังไม่ผูกพัน) พัฒนาระบบข่าวกรอง/เตือนภัยล่วงหน้าผ่านดาวเทียมสำหรับภัยขีปนาวุธ/hypersonic ตัวขับเคลื่อน moonshot จริง: ถ้าแปลงเป็นสัญญาที่ได้ทุนจริงจะ re-rate SPIR จากผู้ให้บริการข้อมูลดาวเทียมเล็กสู่หุ้น space ที่เกี่ยวกับ missile defense ยุโรป" }
+      ],
+      "risks": [
+        "เงินสดลดเหลือ ~$50M ณ Q1 2026 ก่อน private placement $65.5M เม.ย. แม้จะยืดรันเวย์ถึงจุด breakeven แต่บริษัทยังมี S-3 shelf registration ที่ยังใช้งานได้ — dilution เพิ่มเติมเป็นไปได้จริงถ้า breakeven ล่าช้า",
+        "การขาย Maritime ทำให้รายได้ลดลงจริง (Q3 2025 เหลือ $12.7M) — thesis การเติบโตขึ้นกับ HyMS/defense/RF geolocation มาแทนที่รายได้ที่หายไป ยังไม่พิสูจน์เต็มที่",
+        "ความสัมพันธ์กับ Diehl Defence ตอนนี้เป็นแค่ MOU ไม่ผูกพัน ไม่ใช่สัญญาที่เซ็นแล้ว — การแปลงเป็นรายได้จริงไม่รับประกันและไม่มีวันที่ชัดเจน",
+        "พึ่งพาการต่อสัญญารัฐบาลสูง — สัญญา NOAA GNSS-RO ปัจจุบันหมดอายุ 18 ก.ย. 2026 การไม่ต่อหรือลดขอบเขตจะกระทบรายได้ตรง",
+        "52-week range $6.60 ถึง $25.93 แสดงว่าหุ้นนี้เคยขึ้นแรงและคืนกลับมาแล้วครั้งหนึ่งในรอบนี้ ไม่ใช่หุ้นผันผวนต่ำ"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.50-3.75% เมื่อ 29 ก.ค. 2026 แม้ NFP อ่อนแอ (-23K, 7 ส.ค.) จะดึงความน่าจะเป็นขึ้นดอกเบี้ยลงแล้ว รายได้ SPIR (รัฐบาล + subscription เชิงพาณิชย์) ไม่ insulated จากดอกเบี้ยเต็มที่ — ฝั่งเชิงพาณิชย์ exposed ต่อ risk appetite กว้างมากกว่าบริษัท defense ล้วน",
+        "inflationNote": "Core PCE ยังอยู่ 3.3% YoY CPI ร้อนแรง (12 ส.ค. วันเดียวกับผลประกอบการ) อาจซ้อนความผันผวนเข้ากับตัวผลประกอบการเอง",
+        "sectorImpact": "รายได้ที่เกี่ยวกับรัฐบาล/defense (NOAA, Diehl) ส่วนใหญ่ขึ้นกับงบประมาณ/นโยบาย ไม่ sensitive ดอกเบี้ยโดยตรง แต่ประวัติการระดมทุนซ้ำๆ ของ SPIR เองทำให้ exposed ต่อเงื่อนไขการเงินที่ตึงตัวมากกว่าค่าเฉลี่ย",
+        "summary": "ปานกลาง — การปรับสู่ธุรกิจรัฐบาล/defense เป็นเรื่องโครงสร้างที่ independent จาก macro แต่ SPIR แสดงความจำเป็นต้องระดมทุนซ้ำแล้วซ้ำเล่า risk-off กว้าง (CPI/FOMC hawkish surprise) น่าจะกดดันทางเลือกการระดมทุน ไม่ใช่แค่ multiple"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — การปรับสู่ธุรกิจรัฐบาล/defense จริง (NOAA HyMS, MOU Diehl Defence) อยู่บนบริษัทที่ยังพิสูจน์ว่าจะแทนที่รายได้ Maritime ที่หายไปได้หรือไม่ ผลประกอบการ 12 ส.ค. อีก 2 วัน คือจุดยืนยันถัดไป ควร size แบบค่าขนม/Moonshot เท่านั้น — 2-5% สูงสุด",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน ก่อนผลประกอบการ 12 ส.ค.", "timing": "ตอนนี้ (ไม้เล็ก)" },
+          { "note": "โซนย่อถ้าความผันผวนสัปดาห์ผลประกอบการดันราคาลง", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงลึก — ใกล้ 52-week low เฉพาะกรณี thesis ยังอยู่", "timing": "Deep dip / thesis intact" }
+        ],
+        "tp1": { "note": "Base — ผลประกอบการ 12 ส.ค. ยืนยันรายได้ที่ทำสัญญาแล้ว 76% และเติบโต >30% ไม่รวม Maritime ยังอยู่" },
+        "tp2": { "note": "Bull — แตะโซน bull case $26-27 ตามที่อ้างอิง จาก HyMS/NOAA ที่ขยายสเกล" },
+        "tp3": { "note": "Moon — MOU Diehl Defence แปลงเป็นโครงการ missile defense ยุโรปขนาดใหญ่ re-rate เต็มที่สู่ multiple แบบ defense-space", "moon": true },
+        "stopLoss": {
+          "tightNote": "Stop เชิงเทคนิคที่ thesis ยังไม่พัง — ความผันผวนสัปดาห์ผลประกอบการปกติกลายเป็นการกลับตัวจริง",
+          "hardNote": "ใกล้ 52-week low — แปลว่า thesis การแทนที่รายได้ (HyMS/defense แทน Maritime) กำลังล้มเหลว",
+          "rrNote": "จาก Entry 1 ถึง hard stop เทียบ TP2 (Bull case)",
+          "rrWarning": "ต่ำกว่าเป้า 5:1 ของ turbo — downside ของ SPIR จำกัดกว่า binary bet ล้วนเพราะมีรายได้จริงอยู่แล้ว แต่ reward ก็วัดผลได้มากกว่า lottery ticket ล้วน"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q2 2026", "note": "ยืนยันวันที่ 12 ส.ค. 2026" }
+      ]
+    }
+  }
+}
