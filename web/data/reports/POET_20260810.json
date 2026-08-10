@@ -1,0 +1,204 @@
+{
+  "ticker": "POET",
+  "companyName": "POET Technologies Inc.",
+  "companyDescription": "AI Photonics · POET Optical Interposer™ platform integrates electronics + photonics on a single chip — enabling 800G optical engines for hyperscale data center AI infrastructure; Malaysia high-volume production on track for Q3 2026, but funded by heavy dilution and clouded by a Celestial AI (Marvell subsidiary) order cancellation",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-10T18:00:00.000Z",
+  "price": 9.19,
+  "priceChange": -8.0,
+  "priceNote": "Down from the $9.99 level of the last report despite genuinely positive operational news (board added optics-industry veterans Aug 6, new COO from Silicon Labs, Malaysia 800G ramp confirmed on track). The overhang: shares outstanding have grown to 172.6M (+63.6% in one year) after $830M raised in equity over 12 months, including a $400M registered direct offering — and Celestial AI (a Marvell subsidiary) cancelled all outstanding orders following the CEO NDA-violation allegation, a real negative that wasn't yet confirmed at the last report.",
+  "marketCap": "~$1.78B",
+  "sector": "Technology / AI Photonics",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Speculative",
+  "score": 40,
+  "summary": "Two real, opposing updates since the last report. Positive: POET added optics-industry heavyweights to its board (Aug 6, 2026), hired a new COO (Sandeep Kumar, ex-Silicon Labs) to lead Malaysian production, signed a manufacturing agreement with Globetronics, and confirmed the 800G ramp remains on track for Q3 2026 with a long-term target of 1M units/month by end-2027. Negative, and new since the last report: Celestial AI (a Marvell subsidiary) cancelled all its outstanding orders with POET following the confirmed CEO NDA-violation allegation, and the company has now raised $830M in equity over 12 months (shares outstanding +63.6% YoY to 172.6M) — a much larger, now-realized dilution story than the 'overhang' framed last time. The PFIC lawsuit remains unresolved. Net effect: the stock is lower despite real production progress, because a real customer loss and heavy dilution are now confirmed, not just risks.",
+  "catalysts": [
+    {
+      "icon": "⚡",
+      "name": "Q2 2026 Earnings + Malaysia 800G Ramp Confirmation",
+      "description": "Estimated for Aug 19, 2026 (not yet reconfirmed for this specific quarter) — will reveal first 800G optical engine shipment data from Malaysia against the 30,000+ engine 2026 target, and management's read on the Celestial AI order cancellation's revenue impact.",
+      "urgencyLabel": "~9 DAYS (est.)",
+      "dateBadge": "~Aug 19, 2026",
+      "catalystDate": "2026-08-19",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🏭",
+      "name": "Malaysia High-Volume Production Go-Live",
+      "description": "Confirmed on track at the Jun 26 annual meeting: 800G output begins Q3 2026 at the Malaysia facility (Globetronics manufacturing agreement in place), with a long-term target of 1M units/month by end-2027. Successful production validation is the fundamental de-risking event this thesis needs.",
+      "urgencyLabel": "Q3 2026",
+      "dateBadge": "~Aug 2026",
+      "catalystDate": "2026-08-01",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "⚖️",
+      "name": "Celestial AI (Marvell) Order Cancellation + PFIC Lawsuit",
+      "description": "New and realized since the last report: Celestial AI (a Marvell subsidiary) cancelled all outstanding orders with POET after a senior manager was alleged to have violated a confidentiality agreement in a public interview. The separate PFIC class-action lawsuit (Apr 1-27, 2026 period) also remains unresolved — both are now confirmed overhangs, not just risks.",
+      "urgencyLabel": "REALIZED RISK",
+      "dateBadge": "Ongoing",
+      "badgeColor": "red",
+      "dotColor": "red"
+    }
+  ],
+  "risks": [
+    "REALIZED: Celestial AI (Marvell subsidiary) cancelled all outstanding orders with POET following a confirmed CEO/senior-manager NDA-violation allegation — this was a risk flagged last report and has now materialized into an actual lost customer",
+    "REALIZED: Shares outstanding grew 63.6% over the past year to 172.6M after $830M raised in equity over 12 months (including a $400M registered direct offering at effectively dilutive terms) — up to $661M more could come via outstanding warrants, meaning the dilution story is ongoing, not a one-time event",
+    "PFIC class action lawsuits remain unresolved, continuing to suppress US institutional buying and create legal overhang",
+    "Canadian domicile means US investors face adverse PFIC tax treatment — a structural demand headwind independent of the lawsuit outcome",
+    "Single-name analyst coverage remains thin (Northland's $7 target is from Dec 2024 — badly outdated on both price and thesis)",
+    "Production ramp execution risk remains real: any delay to the Q3 2026 Malaysia 800G shipments would remove the one clean offsetting positive in this story"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings (est.)", "dateRange": "Aug 19, 2026", "note": "Not yet officially reconfirmed for this quarter; 800G ramp + Celestial AI impact are the key reads", "est": "n/a", "highlight": "yellow" },
+    { "event": "Malaysia 800G Ramp", "dateRange": "Q3 2026", "note": "Confirmed on track at the Jun 26 annual meeting; 30,000+ optical engines targeted for 2026", "est": "Est. first large batch", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -45, "price": 5.05 },
+    { "label": "Base", "color": "yellow", "pct": 25, "price": 11.49 },
+    { "label": "Bull", "color": "green", "pct": 60, "price": 14.70 },
+    { "label": "Moon", "color": "purple", "pct": 110, "price": 19.30 }
+  ],
+  "analystTargets": [
+    { "firm": "Northland Capital", "target": 7, "rating": "Outperform", "note": "Dec 2024 — badly outdated; predates both the Malaysia ramp confirmation and the Celestial AI cancellation" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held at 3.50-3.75% on Jul 29, 2026, with 3 of 12 officials dissenting toward a hike — the most hawkish split since 2016. A cash-burning, heavily-dilutive small-cap like POET is directly exposed to any further tightening in financing conditions.",
+    "inflationNote": "Core PCE still 3.3% YoY. A hot CPI print (Aug 12) could compress growth-stock multiples broadly, on top of POET's already-heavy company-specific dilution.",
+    "sectorImpact": "AI photonics hardware benefits structurally from data-center capex even in a higher-rate environment, but POET's own realized dilution (+63.6% share count YoY) is now a bigger swing factor for the stock than sector-wide rate sensitivity.",
+    "summary": "MEDIUM-HIGH within this dashboard — the AI photonics demand story is real and rate-insensitive, but POET's own financing behavior (three large raises totaling $830M in a year, more warrants outstanding) makes it unusually exposed to any tightening in risk appetite or financing conditions."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 9.19, "note": "Current — reflects both the Malaysia ramp progress and the realized Celestial AI/dilution negatives", "timing": "Now (small starter)" },
+      { "label": "Entry 2", "level": 7.50, "rangeMax": 8.20, "note": "Support zone if the stock retests recent lows on further dilution or lawsuit news", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 6.00, "note": "Deep dip — would need a broad small-cap tech selloff or a Malaysia ramp delay", "timing": "Deep dip / thesis intact" }
+    ],
+    "tp1": { "price": 11.49, "pct": 25.0, "note": "Base — Q3 Malaysia ramp confirms on schedule, Celestial AI loss proves manageable" },
+    "tp2": { "price": 14.70, "pct": 60.0, "note": "Bull — clean 800G shipment data plus a new hyperscaler customer offsetting the Celestial AI loss" },
+    "tp3": { "price": 19.30, "pct": 110.0, "note": "Moon — ramp scales toward the 1M units/month 2027 target and dilution slows materially", "moon": true },
+    "stopLoss": {
+      "tight": 8.27, "tightPct": -10.0, "tightNote": "Below current support — dilution/lawsuit overhang dominating over ramp progress",
+      "hard": 5.05, "hardPct": -45.0, "hardNote": "Deep breach — would reflect a Malaysia ramp delay stacked on top of further dilution and lawsuit costs",
+      "riskReward": "2.4 : 1", "rrNote": "Entry 1 to hard stop vs TP2", "rrWarning": "Acceptable for a speculative sizing only — the realized Celestial AI loss and ongoing dilution are bigger, confirmed negatives versus the last report, not just tail risks"
+    },
+    "verdict": "SPECULATIVE — 5% max position. The Malaysia 800G ramp is genuinely on track and the board/COO additions are real quality upgrades, but a confirmed customer loss (Celestial AI) and heavy realized dilution (+63.6% share count YoY) are worse than the 'overhang' framing from the last report. Wait for the ~Aug 19 print before adding.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "product_launch",
+    "preRunup": "AI photonics names typically run 15-25% pre-production milestone announcements as spec buyers position ahead of ramp confirmations, but POET's own pattern this cycle has been dominated by dilution and legal news overwhelming any pre-ramp positioning.",
+    "preRunupTiming": "4–8 weeks before earnings/ramp confirmation, historically — muted this cycle by dilution/legal overhang",
+    "preRunupPct": "+15% to +25% historically; likely dampened given the realized negatives",
+    "postWin": {
+      "avgPct": 35,
+      "range": "+20% to +60%",
+      "note": "Comparable optical component ramp confirmations (e.g., II-VI/Coherent 400G volume in Dec 2021) drove +30-50% moves over 4-6 weeks. POET's 800G at smaller scale suggests similar % magnitude if the Aug ~19 print shows clean shipment data.",
+      "exampleDate": "Dec 2021"
+    },
+    "postLose": {
+      "avgPct": -30,
+      "range": "-20% to -45%",
+      "note": "When MACOM had production delays in 2019, the stock fell 35% over 2 months. A POET ramp miss stacked on the already-realized Celestial AI loss and dilution would likely trigger a similar or worse de-rating.",
+      "exampleDate": "Aug 2019"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "The AI photonics thesis and Malaysia ramp progress remain real, but the newly-realized Celestial AI order cancellation and heavy dilution (+63.6% share count) lower the appropriate sizing versus the last report's 5% — genuine negatives have now materialized, not just risks."
+    },
+    "stopPreCatalyst": { "pct": -10, "price": 8.27, "note": "Below current support ahead of the ~Aug 19 print — dilution/lawsuit overhang dominating over ramp progress" },
+    "stopPostCatalyst": { "pct": -20, "note": "If the Aug print shows a Malaysia ramp delay on top of the Celestial AI loss, exit immediately — don't wait for recovery" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "POET",
+      "event": "Celestial AI (Marvell subsidiary) cancels all outstanding orders following CEO NDA-violation allegation",
+      "date": "Jul-Aug 2026",
+      "movePct": -8,
+      "days": 5,
+      "outcome": "bad",
+      "note": "Same-company precedent for the newly-realized negative catalyst — a confirmed customer loss materializing from what was only a risk flagged in the prior report."
+    },
+    {
+      "ticker": "CIEN",
+      "event": "400G optical ramp volume confirmation",
+      "date": "Oct 2020",
+      "movePct": 28,
+      "days": 10,
+      "outcome": "good",
+      "note": "Ciena confirmed first high-volume 400G shipments to hyperscalers; stock ran +28% in 10 days. POET's 800G analog is structurally similar but smaller scale — the relevant upside comparable if the Malaysia ramp confirms cleanly."
+    },
+    {
+      "ticker": "MACOM",
+      "event": "Production ramp delay miss",
+      "date": "Aug 2019",
+      "movePct": -35,
+      "days": 5,
+      "outcome": "bad",
+      "note": "MACOM optical component production delays caused a -35% selloff — the downside case if POET's Q3 Malaysia ramp slips on top of the already-realized Celestial AI and dilution negatives."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "POET Technologies Institutional Giants Step In as Production Ramp-Up Nears and Legal Overhang Lingers",
+    "url": "https://www.ad-hoc-news.de/boerse/news/ueberblick/institutional-giants-step-into-poet-technologies-as-production-ramp-up/69775165",
+    "date": "Aug 2026"
+  },
+  "sources": [
+    "https://www.ad-hoc-news.de/boerse/news/ueberblick/institutional-giants-step-into-poet-technologies-as-production-ramp-up/69775165",
+    "https://www.ad-hoc-news.de/boerse/news/ueberblick/poet-technologies-production-milestones-clash-with-legal-fallout-as/69836331",
+    "https://stockstotrade.com/news/poet-technologies-inc-poet-news-2026_08_06/",
+    "https://www.stocktitan.net/news/POET/poet-technologies-announces-appointment-of-sandeep-kumar-as-chief-1abkie7mio6j.html",
+    "https://simplywall.st/stocks/us/semiconductors/nasdaq-poet/poet-technologies/news/why-poet-technologies-poet-is-down-75-after-200-q1-sales-sur"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "มีอัปเดตจริง 2 ด้านที่ตรงข้ามกันตั้งแต่รายงานก่อน ด้านบวก: POET เพิ่มผู้เชี่ยวชาญ optics เข้าบอร์ด (6 ส.ค. 2026) จ้าง COO ใหม่ (Sandeep Kumar อดีต Silicon Labs) คุมการผลิตมาเลเซีย เซ็นสัญญาผลิตกับ Globetronics และยืนยัน 800G ramp ยังตรงเป้า Q3 2026 เป้าระยะยาว 1 ล้านชิ้น/เดือนภายในสิ้นปี 2027 ด้านลบ ใหม่ตั้งแต่รายงานก่อน: Celestial AI (บริษัทลูก Marvell) ยกเลิกออเดอร์ที่คงค้างทั้งหมดกับ POET หลังยืนยันข้อกล่าวหาการละเมิด NDA ของ CEO และบริษัทระดมทุน $830M ในรอบ 12 เดือน (จำนวนหุ้น +63.6% YoY เป็น 172.6M) — เป็นเรื่อง dilution ที่เกิดขึ้นจริงและใหญ่กว่าที่เคยกรอบเป็นแค่ 'overhang' คดี PFIC ยังไม่คลี่คลาย ผลสุทธิ: หุ้นราคาต่ำลงแม้จะมีความคืบหน้าการผลิตจริง เพราะการเสียลูกค้าจริงและ dilution หนักเป็นสิ่งที่เกิดขึ้นแล้ว ไม่ใช่แค่ความเสี่ยง",
+      "priceNote": "ลงจากระดับ $9.99 ของรายงานก่อน แม้จะมีข่าวปฏิบัติการเชิงบวกจริง (บอร์ดเพิ่มผู้เชี่ยวชาญ optics 6 ส.ค., COO ใหม่จาก Silicon Labs, ramp มาเลเซียยืนยันตรงเป้า) ตัวถ่วง: จำนวนหุ้นเพิ่มเป็น 172.6M (+63.6% ในหนึ่งปี) หลังระดมทุน $830M ในปีที่ผ่านมา รวมการเสนอขายตรง $400M — และ Celestial AI (บริษัทลูก Marvell) ยกเลิกออเดอร์ทั้งหมดหลังข้อกล่าวหา NDA ของ CEO ได้รับการยืนยัน ซึ่งยังไม่ยืนยันตอนรายงานก่อน",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "ผลประกอบการ Q2 2026 + ยืนยัน 800G Ramp", "description": "ประมาณการวันที่ 19 ส.ค. 2026 (ยังไม่ยืนยันอย่างเป็นทางการสำหรับไตรมาสนี้) — จะเผยข้อมูลส่งมอบ 800G ชุดแรกจากมาเลเซีย เทียบเป้า 30,000+ ชิ้นปี 2026 และผลกระทบจากการเสียออเดอร์ Celestial AI" },
+        { "name": "โรงงานมาเลเซียเริ่ม High-Volume", "description": "ยืนยันตรงเป้าจากการประชุมประจำปี 26 มิ.ย. — เริ่มผลิต 800G Q3 2026 ที่โรงงานมาเลเซีย (มีสัญญากับ Globetronics แล้ว) เป้าระยะยาว 1 ล้านชิ้น/เดือนสิ้นปี 2027" },
+        { "name": "การยกเลิกออเดอร์ Celestial AI (Marvell) + คดี PFIC", "description": "ใหม่และเกิดขึ้นจริงตั้งแต่รายงานก่อน: Celestial AI ยกเลิกออเดอร์ทั้งหมดหลังข้อกล่าวหาละเมิด NDA ของผู้บริหารระดับสูงได้รับการยืนยัน คดี PFIC แยกต่างหาก (ช่วง 1-27 เม.ย. 2026) ก็ยังไม่คลี่คลาย" }
+      ],
+      "risks": [
+        "เกิดขึ้นจริง: Celestial AI (บริษัทลูก Marvell) ยกเลิกออเดอร์ทั้งหมดหลังข้อกล่าวหาละเมิด NDA ได้รับการยืนยัน — จากความเสี่ยงในรายงานก่อนกลายเป็นการเสียลูกค้าจริง",
+        "เกิดขึ้นจริง: จำนวนหุ้นเพิ่ม 63.6% ในปีที่ผ่านมาเป็น 172.6M หลังระดมทุน $830M ในรอบ 12 เดือน (รวมการเสนอขายตรง $400M) อาจมีอีกถึง $661M ผ่าน warrant ที่เหลือ — dilution ยังไม่จบ",
+        "คดี PFIC class action ยังไม่คลี่คลาย ยังกดดันการซื้อของสถาบัน US",
+        "บริษัทจดทะเบียนแคนาดา — นักลงทุน US เจอปัญหาภาษี PFIC เชิงโครงสร้าง",
+        "Coverage นักวิเคราะห์ยังบางมาก (Northland PT $7 จาก ธ.ค. 2024 — เก่ามาก)",
+        "ความเสี่ยง execution การผลิตยังจริง — ความล่าช้าใดๆ ใน Q3 2026 จะทำให้เสียจุดบวกเดียวที่เหลืออยู่"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.50-3.75% เมื่อ 29 ก.ค. 2026 หุ้นเล็กที่เผาเงินสดและ dilute หนักแบบ POET expose ตรงต่อเงื่อนไขการเงินที่ตึงตัวขึ้น",
+        "inflationNote": "Core PCE ยังอยู่ 3.3% YoY CPI ร้อนแรง (12 ส.ค.) อาจกด multiple หุ้น growth กว้าง ซ้อนทับ dilution เฉพาะบริษัทที่หนักอยู่แล้ว",
+        "sectorImpact": "AI photonics hardware ได้ประโยชน์เชิงโครงสร้างจาก capex data center แม้ในดอกเบี้ยสูง แต่ dilution ที่เกิดขึ้นจริงของ POET เองตอนนี้เป็นตัวแปรใหญ่กว่าความ sensitive ต่อดอกเบี้ยของ sector",
+        "summary": "ปานกลางถึงสูงในกลุ่มนี้ — demand AI photonics จริงและ rate-insensitive แต่พฤติกรรมการระดมทุนของ POET เอง (ระดมทุนใหญ่ 3 ครั้งรวม $830M ในปีเดียว มี warrant คงค้างอีก) ทำให้ exposed ต่อ risk appetite หรือเงื่อนไขการเงินที่ตึงตัวมากผิดปกติ"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — จัดสรรไม่เกิน 5% ramp 800G มาเลเซียยังตรงเป้าจริง และการเพิ่มบอร์ด/COO เป็นการยกระดับคุณภาพจริง แต่การเสียลูกค้า (Celestial AI) และ dilution หนัก (+63.6% จำนวนหุ้น YoY) แย่กว่าที่เคยกรอบเป็น overhang ในรายงานก่อน รอดูตัวเลข ~19 ส.ค. ก่อนเพิ่ม position",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — สะท้อนทั้งความคืบหน้า ramp มาเลเซียและข่าวลบที่เกิดขึ้นจริง", "timing": "ตอนนี้ (เล็กๆ)" },
+          { "note": "โซนแนวรับถ้าหุ้นกลับไปทดสอบจุดต่ำจากข่าว dilution หรือคดีเพิ่มเติม", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงลึก — ต้องมี small-cap tech selloff กว้างหรือ ramp มาเลเซียล่าช้า", "timing": "ถ้าร่วงหนัก / thesis ยังอยู่" }
+        ],
+        "tp1": { "note": "Base — ramp มาเลเซีย Q3 ยืนยันตามกำหนด การเสีย Celestial AI จัดการได้" },
+        "tp2": { "note": "Bull — ข้อมูลส่งมอบ 800G สะอาด บวกลูกค้า hyperscaler ใหม่ชดเชยการเสีย Celestial AI" },
+        "tp3": { "note": "Moon — ramp ขยายสู่เป้า 1 ล้านชิ้น/เดือนปี 2027 และ dilution ชะลอลงชัดเจน", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุด support ปัจจุบัน — dilution/คดี overhang ครอบงำมากกว่าความคืบหน้า ramp",
+          "hardNote": "หลุดลึก — สะท้อน ramp มาเลเซียล่าช้าซ้อนทับ dilution เพิ่มและค่าใช้จ่ายคดี",
+          "rrNote": "จาก Entry 1 ถึง hard stop เทียบ TP2",
+          "rrWarning": "พอรับได้สำหรับ speculative เท่านั้น — การเสีย Celestial AI และ dilution ต่อเนื่องเป็นข่าวลบที่ใหญ่กว่าและยืนยันแล้วเทียบรายงานก่อน ไม่ใช่แค่ tail risk"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q2 2026 (est.)", "note": "ยังไม่ยืนยันอย่างเป็นทางการสำหรับไตรมาสนี้ — จับตา ramp 800G และผลกระทบ Celestial AI" },
+        { "event": "Malaysia 800G Ramp", "note": "ยืนยันตรงเป้าจากการประชุมประจำปี 26 มิ.ย. เป้าส่ง 30,000+ engines ปีนี้" }
+      ]
+    }
+  }
+}
