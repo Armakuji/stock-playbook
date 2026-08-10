@@ -1,0 +1,173 @@
+{
+  "ticker": "BTQ",
+  "companyName": "BTQ Technologies Corp.",
+  "companyDescription": "Post-quantum cryptography · QCIM quantum-secure compute-in-memory chip (design completed with ICTK, test silicon due by year-end 2026) · QSSN quantum-safe stablecoin infrastructure · Direct beneficiary of the Jun 22, 2026 White House quantum-security executive orders",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-10T20:00:00.000Z",
+  "price": 4.04,
+  "priceChange": 0.75,
+  "priceNote": "Down further from the $5.33 level of the prior report (~-24%) despite real federal-policy tailwinds and a real chip-design milestone — a $150M CAD ATM program (announced Jun 18, 2026) has been an ongoing overhang. 52-week range $2.09-$16.00; all-time high $22.00 CAD (Oct 2025).",
+  "marketCap": "~$582M",
+  "sector": "Technology / Quantum-Safe Cybersecurity",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 48,
+  "summary": "BTQ completed the design of its next-generation QCIM+PUF quantum-security chip with partner ICTK and plans to ship test silicon by year-end 2026 — real, tangible progress on the hardware side. The Jun 22, 2026 White House executive orders on quantum leadership and cryptographic security remain a direct structural tailwind, mandating federal migration to NIST-approved post-quantum cryptography with CNSA 2.0 deadlines running 2027-2035. The offsetting reality: cash was just C$12.1M at Q1 2026 quarter-end, and the company has an active C$150M ATM program — dilution has been a real, ongoing drag since the prior report, and the stock is down further despite the positive newsflow.",
+  "catalysts": [
+    {
+      "icon": "🔬",
+      "name": "QCIM+PUF Test Silicon Shipment",
+      "description": "Chip design completed with ICTK (announced Aug 2026); company targets shipping test silicon by year-end 2026 — the next tangible hardware milestone toward commercializing the quantum-secure compute-in-memory chip.",
+      "urgencyLabel": "BY YEAR-END 2026",
+      "dateBadge": "~Dec 2026",
+      "catalystDate": "2026-12-15",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🏛️",
+      "name": "White House Quantum Security Executive Orders (federal tailwind)",
+      "description": "Jun 22, 2026: two executive orders direct federal agencies to migrate high-value systems to NIST-approved post-quantum cryptography, with CNSA 2.0 requirements for new acquisitions starting 2027 — a structural, multi-year federal-procurement tailwind for BTQ's core business.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "⚠️ SURVIVAL: Cash was just C$12.1M at Q1 2026 quarter-end against real, ongoing semiconductor R&D and chip-design costs, and the company has an active C$150M ATM program (announced Jun 18, 2026) — while management frames the ATM as 'flexibility' rather than an immediate need, the thin cash level relative to burn makes further dilution highly likely, not just a tail risk",
+      "Stock is down further (~-24%) since the prior report despite genuinely positive newsflow (chip design completion, federal EO tailwind) — the market appears to be pricing the dilution risk more heavily than the operational progress",
+    "Alliance Global lowered its price target to $6 from $10 (still Buy) — even a bullish analyst is trimming expectations",
+    "'Test silicon by year-end 2026' is still pre-commercial — actual revenue-generating QCIM sales remain further out, and semiconductor hardware timelines routinely slip",
+    "Small-cap, thinly-covered name with a Canadian dual-listing (NEO/NASDAQ) structure — liquidity and data consistency (conflicting market-cap figures across sources) are real practical risks"
+  ],
+  "estimateDates": [
+    { "event": "QCIM+PUF Test Silicon Shipment", "dateRange": "~Dec 2026", "note": "Company-stated target, exact date not yet confirmed", "est": "n/a", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -55, "price": 1.82 },
+    { "label": "Base", "color": "yellow", "pct": 50, "price": 6.06 },
+    { "label": "Bull", "color": "green", "pct": 120, "price": 8.89 },
+    { "label": "Moon", "color": "purple", "pct": 296, "price": 16.00 }
+  ],
+  "analystTargets": [
+    { "firm": "Alliance Global (Brian Kinstlinger)", "target": 6, "rating": "Buy", "note": "Lowered from $10, still Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held at 3.50-3.75% on Jul 29, 2026, though the weak Jul NFP (-23K, Aug 7) has since pulled hike odds down sharply. Federal quantum-security policy is executive-order-driven and rate-insensitive, but BTQ's own thin cash position and active ATM make it directly exposed to broad financing-condition tightening.",
+    "inflationNote": "Core PCE still 3.3% YoY. A hot CPI print (Aug 12) could tighten financing conditions for cash-thin small-caps specifically, compounding BTQ's existing dilution overhang.",
+    "sectorImpact": "The federal post-quantum cryptography mandate is a genuine, multi-year, policy-driven tailwind independent of the Fed, but BTQ's own balance sheet makes broad financing-condition tightening a real, direct risk on top of it.",
+    "summary": "MEDIUM-HIGH within this dashboard — the federal quantum-security policy tailwind is real and macro-independent, but BTQ's thin cash position and active ATM mean a hawkish-driven tightening in financing conditions would hit this name harder than a self-funded peer."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 4.04, "note": "Current price, post chip-design-completion news", "timing": "Now (small starter)" },
+      { "label": "Entry 2", "level": 3.00, "rangeMax": 3.40, "note": "Pullback zone if ATM-driven selling continues", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 2.20, "note": "Deep dip — near the 52-week low, thesis-intact only", "timing": "Deep dip / thesis intact" }
+    ],
+    "tp1": { "price": 6.06, "pct": 50.0, "note": "Base — hits Alliance Global's lowered $6 target as test-silicon progress continues" },
+    "tp2": { "price": 8.89, "pct": 120.0, "note": "Bull — QCIM test silicon ships on schedule and a federal design win or pilot is confirmed" },
+    "tp3": { "price": 16.00, "pct": 296.0, "note": "Moon — full re-rate to the 52-week high as CNSA 2.0 federal procurement mandates convert into real QCIM/QSSN revenue", "moon": true },
+    "stopLoss": {
+      "tight": 3.31, "tightPct": -18.1, "tightNote": "Thesis-neutral technical stop — normal volatility becoming a real breakdown",
+      "hard": 2.22, "hardPct": -45.0, "hardNote": "Risk-of-zero territory — would suggest the survival/dilution risk is materializing faster than the chip-design progress can offset",
+      "riskReward": "2.7 : 1", "rrNote": "Entry 1 to hard stop vs TP2 (Bull case)", "rrWarning": "Below the 5:1 turbo target — the real risk here isn't the stop distance, it's the disclosed survival flag; size well below the stated 2-5% ceiling"
+    },
+    "verdict": "SPECULATIVE — a real federal quantum-security policy tailwind and genuine chip-design progress (QCIM+PUF completed with ICTK) sit on top of a thin, ATM-dependent balance sheet. Smallest ค่าขนม sizing only, and only for investors comfortable with a realistic path to further dilution.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "product_launch",
+    "preRunup": "BTQ has historically moved on federal policy headlines (the Jun 22 EO signing) more than a slow pre-catalyst build — the stock's own round trip from a $22 CAD ATH to current levels shows sharp, news-driven swings rather than steady appreciation.",
+    "preRunupTiming": "Days around policy/contract headlines, not weeks of positioning",
+    "preRunupPct": "Historical ATH-to-current range implies moves well beyond +100% are within this stock's demonstrated pattern",
+    "postWin": {
+      "avgPct": 100,
+      "range": "+50% to +296%",
+      "note": "No single cleanly-dated BTQ-specific comparable case with a sourced percentage was found in this research pass beyond the general policy-driven pattern implied by its own 52-week range ($2.09-$16.00, a 665% span) — this range reflects that demonstrated volatility rather than one specific event.",
+      "exampleDate": "N/A — inferred from BTQ's own 52-week range, no single dated comparable found"
+    },
+    "postLose": {
+      "avgPct": -24,
+      "range": "-15% to -35%",
+      "note": "BTQ's own pattern since the prior report — down roughly 24% despite genuinely positive newsflow (chip design completion, federal tailwind) — shows how the ATM dilution overhang can outweigh operational good news for this specific stock.",
+      "exampleDate": "Jul-Aug 2026 (BTQ, this report's own comparison period)"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "Real federal policy tailwind and chip-design progress are offset by a genuine, disclosed thin-cash/active-ATM survival risk — sized at the bottom of the ค่าขนม range (2%), not the standard 3-5%"
+    },
+    "stopPreCatalyst": { "pct": -18, "price": 3.31, "note": "A break below ~$3.31 would suggest the market is pricing in an accelerating dilution/survival concern" },
+    "stopPostCatalyst": { "pct": -30, "note": "If the year-end test-silicon target slips or a large new dilutive raise is announced without offsetting progress, exit — the survival risk has become the dominant story" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "BTQ",
+      "event": "Own 52-week trading range — federal quantum-policy newsflow vs. ATM dilution overhang",
+      "date": "Trailing 52 weeks",
+      "movePct": -75,
+      "days": 300,
+      "outcome": "mixed",
+      "note": "Same-company precedent showing both directions — the stock is down ~75-82% from its Oct 2025 ATH ($22 CAD) despite real policy tailwinds, illustrating how dilution risk has dominated the stock's actual price action even as the underlying federal-mandate thesis strengthened."
+    },
+    {
+      "ticker": "RGTI",
+      "event": "Quantum-sector policy rally on reports of possible U.S. government equity stakes",
+      "date": "Aug 2026",
+      "movePct": 9.3,
+      "days": 1,
+      "outcome": "good",
+      "note": "Cross-sector reference for how the broader quantum-policy narrative (not company-specific news) can move names in this space on a single session — relevant given BTQ trades on the same federal quantum-security theme."
+    }
+  ],
+  "sources": [
+    "https://www.prnewswire.com/news-releases/btq-technologies-and-ictk-complete-design-of-next-generation-qcim-security-chip-integrating-puf-technology-302822628.html",
+    "https://www.stocktitan.net/news/BTQ/btq-technologies-announces-at-the-market-equity-c21h1zue99aq.html",
+    "https://www.newswire.ca/news-releases/btq-technologies-provides-corporate-update-highlighting-qssn-qcim-commercialization-and-qperfect-integration-817062241.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "BTQ ออกแบบชิปความปลอดภัยควอนตัมรุ่นใหม่ QCIM+PUF เสร็จร่วมกับพาร์ทเนอร์ ICTK และวางแผนส่ง test silicon ภายในสิ้นปี 2026 — ความคืบหน้าจับต้องได้ด้านฮาร์ดแวร์จริง คำสั่งบริหาร White House ด้าน quantum security เมื่อ 22 มิ.ย. 2026 ยังเป็นแรงหนุนเชิงโครงสร้าง บังคับให้หน่วยงานรัฐบาลกลางย้ายสู่ post-quantum cryptography ที่ NIST รับรอง มีเส้นตาย CNSA 2.0 ปี 2027-2035 ด้านตรงข้าม: เงินสดเหลือเพียง C$12.1M ณ สิ้น Q1 2026 บริษัทมี ATM program C$150M ที่ใช้งานอยู่ — dilution เป็นแรงกดดันจริงต่อเนื่องตั้งแต่รายงานก่อน หุ้นยังลงต่อแม้ข่าวจะเป็นบวก",
+      "priceNote": "ลงต่อจากระดับ $5.33 ของรายงานก่อน (~-24%) แม้จะมีแรงหนุนนโยบายรัฐบาลกลางจริงและ milestone การออกแบบชิปจริง — ATM program $150M CAD (ประกาศ 18 มิ.ย. 2026) เป็นตัวถ่วงต่อเนื่อง 52-week range $2.09-$16.00 ATH $22.00 CAD (ต.ค. 2025)",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "ส่งมอบ Test Silicon QCIM+PUF", "description": "ออกแบบชิปเสร็จร่วมกับ ICTK (ประกาศ ส.ค. 2026) บริษัทเป้าส่ง test silicon ภายในสิ้นปี 2026 — milestone ฮาร์ดแวร์จับต้องได้ถัดไปสู่การทำ QCIM ให้เป็นเชิงพาณิชย์" },
+        { "name": "คำสั่งบริหาร White House ด้าน Quantum Security (แรงหนุนรัฐบาลกลาง)", "description": "22 มิ.ย. 2026: คำสั่งบริหาร 2 ฉบับสั่งให้หน่วยงานรัฐบาลกลางย้ายระบบสำคัญสู่ post-quantum cryptography ที่ NIST รับรอง มีข้อกำหนด CNSA 2.0 สำหรับการจัดซื้อใหม่เริ่มปี 2027 — แรงหนุนเชิงโครงสร้างระยะยาวสำหรับธุรกิจหลักของ BTQ" }
+      ],
+      "risks": [
+        "⚠️ SURVIVAL: เงินสดเหลือเพียง C$12.1M ณ สิ้น Q1 2026 เทียบต้นทุน R&D/ออกแบบชิปเซมิคอนดักเตอร์ที่สูงจริง บริษัทมี ATM program C$150M ใช้งานอยู่ — แม้ฝ่ายบริหารจะบอกว่า ATM คือ 'ความยืดหยุ่น' ไม่ใช่ความจำเป็นทันที แต่ระดับเงินสดที่บางเทียบ burn ทำให้ dilution เพิ่มเติมมีโอกาสสูงมาก ไม่ใช่แค่ tail risk",
+        "หุ้นลงต่อ (~-24%) ตั้งแต่รายงานก่อนแม้ข่าวจะเป็นบวกจริง (ออกแบบชิปเสร็จ แรงหนุนนโยบายรัฐบาลกลาง) — ตลาดดูเหมือนจะให้น้ำหนักความเสี่ยง dilution มากกว่าความคืบหน้าด้านปฏิบัติการ",
+        "Alliance Global ปรับเป้าลงเป็น $6 จาก $10 (ยังคง Buy) — แม้แต่นักวิเคราะห์ที่ bullish ก็ยังปรับความคาดหวังลง",
+        "'Test silicon ภายในสิ้นปี 2026' ยังเป็น pre-commercial — รายได้จริงจากการขาย QCIM ยังอยู่ไกลออกไป และ timeline ฮาร์ดแวร์เซมิคอนดักเตอร์มักล่าช้า",
+        "หุ้นเล็ก coverage บาง มีโครงสร้างจดทะเบียนคู่แคนาดา (NEO/NASDAQ) — สภาพคล่องและความสอดคล้องของข้อมูล (ตัวเลข market cap ขัดแย้งกันระหว่างแหล่งข้อมูล) เป็นความเสี่ยงเชิงปฏิบัติจริง"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.50-3.75% เมื่อ 29 ก.ค. 2026 แม้ NFP อ่อนแอ (-23K, 7 ส.ค.) จะดึงความน่าจะเป็นขึ้นดอกเบี้ยลงแล้ว นโยบาย quantum security ของรัฐบาลกลางขับเคลื่อนด้วยคำสั่งบริหาร ไม่ sensitive ดอกเบี้ย แต่ฐานะเงินสดที่บางและ ATM ที่ใช้งานอยู่ของ BTQ เองทำให้ exposed ต่อเงื่อนไขการเงินที่ตึงตัวกว้างโดยตรง",
+        "inflationNote": "Core PCE ยังอยู่ 3.3% YoY CPI ร้อนแรง (12 ส.ค.) อาจทำให้เงื่อนไขการระดมทุนของหุ้นเล็กเงินสดบางตึงตัวขึ้น ซ้อนทับ dilution overhang ที่มีอยู่แล้วของ BTQ",
+        "sectorImpact": "คำสั่ง post-quantum cryptography ของรัฐบาลกลางเป็นแรงหนุนเชิงนโยบายระยะยาวจริง independent จาก Fed แต่งบดุลของ BTQ เองทำให้เงื่อนไขการเงินที่ตึงตัวกว้างเป็นความเสี่ยงตรงจริงซ้อนทับ",
+        "summary": "ปานกลางถึงสูงในกลุ่มนี้ — แรงหนุนนโยบาย quantum security ของรัฐบาลกลางจริงและ independent จาก macro แต่ฐานะเงินสดที่บางและ ATM ที่ใช้งานอยู่ของ BTQ หมายความว่าเงื่อนไขการเงินที่ตึงตัวขึ้นจาก Fed hawkish จะกระทบหุ้นนี้แรงกว่าบริษัทที่ทุนพอเอง"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — แรงหนุนนโยบาย quantum security ของรัฐบาลกลางจริงและความคืบหน้าออกแบบชิปจริง (QCIM+PUF เสร็จร่วม ICTK) อยู่บนงบดุลที่บางและพึ่งพา ATM ควร size แบบค่าขนมที่เล็กที่สุด และเหมาะกับนักลงทุนที่รับได้กับความเป็นไปได้จริงของ dilution เพิ่มเติม",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน หลังข่าวออกแบบชิปเสร็จ", "timing": "ตอนนี้ (ไม้เล็กมาก)" },
+          { "note": "โซนย่อถ้าแรงขาย ATM ยังต่อเนื่อง", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงลึก — ใกล้ 52-week low เฉพาะกรณี thesis ยังอยู่", "timing": "Deep dip / thesis intact" }
+        ],
+        "tp1": { "note": "Base — แตะเป้าที่ปรับลงของ Alliance Global $6 ขณะความคืบหน้า test silicon ต่อเนื่อง" },
+        "tp2": { "note": "Bull — QCIM test silicon ส่งมอบตามกำหนด บวกยืนยัน design win หรือ pilot ระดับรัฐบาลกลาง" },
+        "tp3": { "note": "Moon — re-rate เต็มที่สู่ 52-week high เมื่อข้อกำหนดจัดซื้อ CNSA 2.0 ของรัฐบาลกลางแปลงเป็นรายได้ QCIM/QSSN จริง", "moon": true },
+        "stopLoss": {
+          "tightNote": "Stop เชิงเทคนิคที่ thesis ยังไม่พัง — ความผันผวนปกติกลายเป็นการกลับตัวจริง",
+          "hardNote": "เขต risk-of-zero — แปลว่าความเสี่ยง survival/dilution กำลังเกิดขึ้นเร็วกว่าความคืบหน้าออกแบบชิปจะชดเชยได้",
+          "rrNote": "จาก Entry 1 ถึง hard stop เทียบ TP2 (Bull case)",
+          "rrWarning": "ต่ำกว่าเป้า 5:1 ของ turbo — ความเสี่ยงจริงไม่ใช่ระยะ stop แต่คือ survival flag ที่เปิดเผยแล้ว ควร size ต่ำกว่าเพดาน 2-5% มาก"
+        }
+      },
+      "estimateDates": [
+        { "event": "ส่งมอบ Test Silicon QCIM+PUF", "note": "เป้าบริษัท ~ธ.ค. 2026 ยังไม่ยืนยันวันที่แน่นอน" }
+      ]
+    }
+  }
+}

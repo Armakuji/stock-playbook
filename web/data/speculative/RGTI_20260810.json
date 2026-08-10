@@ -1,0 +1,177 @@
+{
+  "ticker": "RGTI",
+  "companyName": "Rigetti Computing, Inc.",
+  "companyDescription": "Quantum computing hardware + cloud access · Novera QPU + Cepheus-1 108-qubit systems · $100M Dept. of Commerce LOI · Riding a sector-wide rally on reports the U.S. government may take equity stakes in quantum computing firms. Market cap $6.02B is above the turbo screen's $5B limit — included for an exceptional, well-evidenced moon case (215%+ to the 52-week high).",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-10T20:00:00.000Z",
+  "price": 17.51,
+  "priceChange": 9.3,
+  "priceNote": "⚠️ Market cap $6.02B — above the turbo screen's $5B max, included for an exceptional asymmetric setup. Up 9.3% today as quantum stocks broadly rally on reports the U.S. government is considering equity stakes in quantum computing firms. Still 70% below the $58.15 52-week high — a return-to-ATH scenario alone is a 232% gain from here.",
+  "marketCap": "$6.02B",
+  "sector": "Technology / Quantum Computing",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 55,
+  "summary": "⚠️ Market cap caveat: at $6.02B, RGTI is above the turbo screen's $5B guideline. Included because the asymmetry is real and evidenced: the stock is 70% below its 52-week high ($58.15), and today's sector-wide rally (government-equity-stake reports) shows how fast this name can move on policy headlines alone. Q2 2026 results (Aug 6) showed real progress — revenue $5.1M (+183% YoY) and a $100M Dept. of Commerce Letter of Intent — but the GAAP loss widened to $52.6M and the stock initially fell -4.4% after hours before the broader rally pulled it back up. The DoC LOI converting to a funded agreement is the real forward catalyst; no confirmed date yet.",
+  "catalysts": [
+    {
+      "icon": "🏛️",
+      "name": "$100M Dept. of Commerce LOI → Definitive Agreement",
+      "description": "Disclosed at Q2 2026 earnings (Aug 6, 2026): a $100M Letter of Intent with the U.S. Department of Commerce. Conversion to a definitive, funded agreement is the real forward catalyst, alongside broader (unconfirmed) reports the U.S. government may take direct equity stakes in quantum computing firms. No confirmed conversion date yet — this is an estimate.",
+      "urgencyLabel": "WATCH",
+      "dateBadge": "~Q4 2026 (est.)",
+      "catalystDate": "2026-11-01",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📊",
+      "name": "Q3 2026 Earnings (estimated date)",
+      "description": "Not yet officially announced; based on the Feb→May→Aug quarterly cadence, expect early-to-mid November 2026. Q2 2026 (Aug 6) already showed revenue $5.1M (+183% YoY) but a widening GAAP loss ($52.6M) — the stock fell -4.4% after hours before the sector-wide rally reversed it.",
+      "urgencyLabel": "EST. ~13 WEEKS",
+      "dateBadge": "~Nov 2026 (est.)",
+      "catalystDate": "2026-11-05",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Market cap ($6.02B) exceeds the turbo screen's $5B ceiling — this is a larger, more liquid name than most picks in this cohort, which also means the moonshot magnitude is somewhat more constrained by sheer size",
+    "Revenue is still tiny ($5.1M in Q2 2026) against a $52.6M GAAP quarterly loss — heavy cash burn, and the stock has fallen after 3 of its last 4 quarterly earnings reports",
+    "Today's rally (and the broader quantum-sector rally) rests on unconfirmed reports the U.S. government 'is considering' equity stakes — a policy walk-back or non-event would likely deflate the sector-wide premium quickly",
+    "The $100M Dept. of Commerce relationship is still a Letter of Intent, not a funded contract — LOIs can stall, shrink, or fail to convert to definitive agreements",
+    "Heavy customer/buyer concentration in Novera QPU hardware sales — a handful of customers drive most of the revenue"
+  ],
+  "estimateDates": [
+    { "event": "$100M DoC LOI conversion", "dateRange": "Q4 2026", "note": "No confirmed date — LOI disclosed at Q2 2026 earnings", "est": "n/a", "highlight": "yellow" },
+    { "event": "Q3 2026 Earnings (estimated)", "dateRange": "Nov 2026", "note": "Not yet officially scheduled; estimate based on the quarterly cadence", "est": "n/a", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -35, "price": 11.38 },
+    { "label": "Base", "color": "yellow", "pct": 45, "price": 25.39 },
+    { "label": "Bull", "color": "green", "pct": 100, "price": 35.02 },
+    { "label": "Moon", "color": "purple", "pct": 232, "price": 58.15 }
+  ],
+  "analystTargets": [
+    { "firm": "Benchmark", "target": 25, "rating": "Buy", "note": "Initiated coverage with a Buy rating" },
+    { "firm": "Wall Street Consensus", "target": 31, "rating": "Buy", "note": "Average price target — implies ~77% upside over today's $17.51 (post-rally) price" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM-HIGH",
+    "rateOutlook": "Fed held at 3.50-3.75% on Jul 29, 2026, though the weak Jul NFP (-23K, Aug 7) has since pulled hike odds down sharply. Unprofitable, high-multiple names like RGTI are among the most rate-sensitive in the market; a hawkish CPI surprise (Aug 12) could hit this name harder than most.",
+    "inflationNote": "Core PCE still 3.3% YoY. A hot CPI print could trigger a broad risk-off in unprofitable growth/speculative tech — exactly the bucket RGTI sits in given its $52.6M quarterly GAAP loss against $5.1M revenue.",
+    "sectorImpact": "Pre-revenue-scale quantum computing names carry high rate-sensitivity — duration risk on future cash flows is severe when current revenue is this small relative to the loss rate.",
+    "summary": "MEDIUM-HIGH — the government-stake/DoC-LOI narrative is policy-driven and somewhat macro-independent, but RGTI's fundamentals (tiny revenue, large loss) make it unusually exposed to any broad risk-off from a hawkish Fed surprise."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 17.51, "note": "Current price, post today's +9.3% sector rally", "timing": "Now (small starter)" },
+      { "label": "Entry 2", "level": 14, "rangeMax": 15.50, "note": "Pullback zone — near the post-earnings after-hours low ($15.80) if today's rally partially reverses", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 12, "note": "Deep dip — would need the government-stake narrative to fully unwind", "timing": "Deep dip / thesis intact" }
+    ],
+    "tp1": { "price": 25.39, "pct": 45.0, "note": "Base — DoC LOI shows real progress and/or a clean Q3 print, hits toward Benchmark's target" },
+    "tp2": { "price": 35.02, "pct": 100.0, "note": "Bull — DoC LOI converts to a funded agreement, government-stake reports gain more confirmation" },
+    "tp3": { "price": 58.15, "pct": 232.0, "note": "Moon — full return to the 52-week high as the quantum-computing government-support theme fully plays out sector-wide", "moon": true },
+    "stopLoss": {
+      "tight": 14.36, "tightPct": -18.0, "tightNote": "Below the Entry 2 zone — today's rally fully reversing",
+      "hard": 9.63, "hardPct": -45.0, "hardNote": "Would suggest the government-stake narrative and DoC LOI have both stalled — a genuine thesis break",
+      "riskReward": "2.2 : 1", "rrNote": "Entry 1 to hard stop vs TP2 (Bull case)", "rrWarning": "Below the 5:1 turbo target — this is a pre-revenue-scale speculative name ($5.1M revenue vs $52.6M loss) despite its larger-than-typical-turbo market cap; size very small regardless of the ratio"
+    },
+    "verdict": "SPECULATIVE — real technical progress (108-qubit Cepheus-1, $100M DoC LOI) and a hot sector narrative (potential government equity stakes) are driving today's rally, but revenue is still tiny against heavy losses, and the market cap exceeds the usual turbo ceiling. ค่าขนม position only — 2-5% max.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "RGTI can rally sharply on sector-wide policy narratives (today's +9.3% on government-stake reports) independent of company-specific news — pre-catalyst positioning here is driven by macro/policy headlines more than a slow binary build toward one date.",
+    "preRunupTiming": "Days, not weeks — moves on headline reports (e.g. today's government-stake speculation)",
+    "preRunupPct": "+8% to +10% single-session moves on sector-wide policy headlines (today's example)",
+    "postWin": {
+      "avgPct": 19,
+      "range": "+9% to +30%",
+      "note": "Today's +9.3% sector-wide rally on government-stake reports is the freshest example. RGTI's own history shows bigger moves are possible — the stock's 52-week high ($58.15) vs today's $17.51 is itself a +232% span, achieved once already this cycle.",
+      "exampleDate": "Aug 2026 (today's rally) / trailing 52 weeks (ATH)"
+    },
+    "postLose": {
+      "avgPct": -8,
+      "range": "-4% to -15%",
+      "note": "RGTI fell -4.4% after hours immediately following its own Aug 6, 2026 Q2 report (revenue beat but GAAP loss widened) before the broader sector rally pulled the stock back up over the following days.",
+      "exampleDate": "Aug 6, 2026 (RGTI Q2 2026 earnings)"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "Pre-revenue-scale, GAAP-loss-heavy name riding a sector-wide policy narrative, with a market cap already above the turbo screen's usual ceiling — sized at the bottom of the ค่าขนม range (2%), not the standard 3-5%"
+    },
+    "stopPreCatalyst": { "pct": -18, "price": 14.36, "note": "A break below ~$14.36 would suggest today's government-stake-driven rally is fully unwinding" },
+    "stopPostCatalyst": { "pct": -30, "note": "If the DoC LOI stalls or the government-stake reports are denied/walked back, exit — the entire thesis rests on the policy-support narrative" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "RGTI",
+      "event": "Sector-wide quantum computing rally on U.S. government equity-stake reports",
+      "date": "Aug 2026",
+      "movePct": 9.3,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-day, same-company precedent for how fast this stock can move on pure policy headlines, independent of company-specific news."
+    },
+    {
+      "ticker": "RGTI",
+      "event": "Q2 2026 earnings — revenue +183% YoY, GAAP loss widened",
+      "date": "Aug 2026",
+      "movePct": -4.4,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Same-company precedent for the downside case — even a 183% YoY revenue beat wasn't enough when the loss widened; the sector-wide rally in the following days masked this initial reaction."
+    }
+  ],
+  "sources": [
+    "https://www.stocktitan.net/news/RGTI/rigetti-computing-reports-second-quarter-2026-financial-i812eesegntu.html",
+    "https://tradersunion.com/news/stocks/show/2898916-rigetti-surges-8-40percent-today-to/",
+    "https://ts2.tech/en/rigetti-computing-nasdaqrgti-hardware-revenue-climbs-rally-faces-challenge-from-buyer-concentration/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "⚠️ ข้อควรระวังมูลค่าตลาด: RGTI ที่ $6.02B สูงกว่าเกณฑ์ turbo screen ที่ $5B รวมไว้เพราะ asymmetry จริงและมีหลักฐาน: หุ้นต่ำกว่า 52-week high ($58.15) อยู่ 70% และการรีบาวด์ทั้งกลุ่มวันนี้ (ข่าวรัฐบาลอาจถือหุ้น) แสดงว่าหุ้นตัวนี้เคลื่อนไหวเร็วแค่ไหนจากข่าวนโยบายล้วนๆ ผลประกอบการ Q2 2026 (6 ส.ค.) แสดงความคืบหน้าจริง — รายได้ $5.1M (+183% YoY) และ LOI $100M กับกระทรวงพาณิชย์ — แต่ขาดทุน GAAP ขยายเป็น $52.6M และหุ้นร่วง -4.4% หลังตลาดปิดก่อนกระแสกลุ่มจะดันกลับขึ้นมา การแปลง LOI กระทรวงพาณิชย์เป็นสัญญาจริงคือ catalyst ถัดไป ยังไม่มีวันที่ยืนยัน",
+      "priceNote": "⚠️ มูลค่าตลาด $6.02B สูงกว่าเกณฑ์สูงสุด $5B ของ turbo screen รวมไว้เพราะ setup asymmetric ที่แท้จริง บวก 9.3% วันนี้ตามหุ้นกลุ่ม quantum ที่บวกทั้งกลุ่มจากข่าวรัฐบาลสหรัฐอาจเข้าถือหุ้น ยังต่ำกว่า 52-week high ($58.15) อยู่ 70% — การกลับไปแตะ ATH เพียงอย่างเดียวคือ upside 232% จากตรงนี้",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "LOI $100M กระทรวงพาณิชย์สหรัฐ → สัญญาจริง", "description": "เปิดเผยที่ผลประกอบการ Q2 2026 (6 ส.ค. 2026): LOI มูลค่า $100M กับกระทรวงพาณิชย์สหรัฐ การแปลงเป็นสัญญาที่ได้ทุนจริงคือ catalyst ถัดไป พร้อมกับรายงาน (ยังไม่ยืนยัน) ว่ารัฐบาลสหรัฐอาจเข้าถือหุ้นตรงในบริษัท quantum computing ยังไม่มีวันที่ยืนยันการแปลงสัญญา — เป็นการประมาณการ" },
+        { "name": "ผลประกอบการ Q3 2026 (ประมาณการวันที่)", "description": "ยังไม่ประกาศอย่างเป็นทางการ อิงจากรอบ ก.พ.→พ.ค.→ส.ค. คาดต้น-กลาง พ.ย. 2026 ผลประกอบการ Q2 2026 (6 ส.ค.) แสดงรายได้ $5.1M (+183% YoY) แต่ขาดทุน GAAP ขยาย ($52.6M) — หุ้นร่วง -4.4% หลังตลาดปิด ก่อนกระแสกลุ่มจะดันกลับขึ้นมา" }
+      ],
+      "risks": [
+        "มูลค่าตลาด ($6.02B) เกินเพดาน $5B ของ turbo screen — เป็นหุ้นที่ใหญ่และมีสภาพคล่องมากกว่าตัวอื่นในกลุ่มนี้ ซึ่งหมายความว่าขนาด moonshot ถูกจำกัดมากกว่าเล็กน้อยจากขนาดที่ใหญ่",
+        "รายได้ยังเล็กมาก ($5.1M ใน Q2 2026) เทียบขาดทุน GAAP รายไตรมาส $52.6M เผาเงินสดหนัก และหุ้นเคยร่วงหลัง 3 ใน 4 ของผลประกอบการล่าสุด",
+        "การบวกวันนี้ (และกระแสกลุ่ม quantum ทั้งกลุ่ม) ตั้งอยู่บนรายงานที่ยังไม่ยืนยันว่ารัฐบาลสหรัฐ 'กำลังพิจารณา' เข้าถือหุ้น — ถ้านโยบายพลิกกลับหรือไม่มีอะไรเกิดขึ้นจริง premium ทั้ง sector อาจแฟบเร็ว",
+        "ความสัมพันธ์ $100M กับกระทรวงพาณิชย์ยังเป็นแค่ LOI ไม่ใช่สัญญาที่ได้ทุนจริง — LOI อาจล่าช้า เล็กลง หรือไม่แปลงเป็นสัญญาจริงก็ได้",
+        "พึ่งพาลูกค้ารายใหญ่ไม่กี่รายในการขายฮาร์ดแวร์ Novera QPU สูงมาก"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.50-3.75% เมื่อ 29 ก.ค. 2026 แม้ NFP อ่อนแอ (-23K, 7 ส.ค.) จะดึงความน่าจะเป็นขึ้นดอกเบี้ยลงแล้ว หุ้น growth ที่ยังขาดทุนและ multiple สูงแบบ RGTI sensitive กับดอกเบี้ยมากที่สุดในตลาด hawkish surprise ก่อน CPI (12 ส.ค.) อาจกระทบหุ้นตัวนี้แรงกว่าตัวอื่น",
+        "inflationNote": "Core PCE ยังอยู่ 3.3% YoY สูงกว่าเป้า CPI ร้อนแรงอาจกระตุ้น risk-off ในกลุ่มหุ้น growth/speculative ที่ยังขาดทุน ซึ่ง RGTI อยู่ในกลุ่มนี้ชัดเจน",
+        "sectorImpact": "หุ้น quantum computing ที่รายได้ยังเล็กมาก sensitive กับดอกเบี้ยสูง — duration risk ต่อกระแสเงินสดในอนาคตรุนแรงเมื่อรายได้ปัจจุบันเล็กมากเทียบอัตราขาดทุน",
+        "summary": "ปานกลางถึงสูง — narrative government-stake/DoC-LOI ขับเคลื่อนด้วยนโยบายและค่อนข้าง independent จาก macro แต่ fundamental ของ RGTI (รายได้เล็ก ขาดทุนมาก) ทำให้ sensitive กับ risk-off จาก Fed hawkish surprise มากผิดปกติ"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — ความคืบหน้าด้านเทคนิคจริง (Cepheus-1 108-qubit, LOI $100M กระทรวงพาณิชย์) และ narrative sector ที่ร้อนแรง (รัฐบาลอาจเข้าถือหุ้น) ขับเคลื่อนการบวกวันนี้ แต่รายได้ยังเล็กมากเทียบขาดทุนหนัก และมูลค่าตลาดเกินเพดาน turbo ปกติ ควร size แบบค่าขนม 2-5% สูงสุด",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน หลังกลุ่ม quantum บวก 9.3% วันนี้", "timing": "ตอนนี้ (ไม้เล็ก)" },
+          { "note": "โซนย่อ — ใกล้จุดต่ำหลังผลประกอบการช่วงหลังตลาดปิด ($15.80) ถ้าการบวกวันนี้กลับตัวบางส่วน", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงลึก — ต้อง narrative government-stake คลายตัวทั้งหมด", "timing": "Deep dip / thesis intact" }
+        ],
+        "tp1": { "note": "Base — LOI กระทรวงพาณิชย์แสดงความคืบหน้าจริง และ/หรือ Q3 บีทสะอาด แตะเป้าของ Benchmark" },
+        "tp2": { "note": "Bull — LOI กระทรวงพาณิชย์แปลงเป็นสัญญาที่ได้ทุนจริง รายงาน government-stake ได้รับการยืนยันมากขึ้น" },
+        "tp3": { "note": "Moon — กลับสู่ 52-week high เต็มที่เมื่อธีม government-support ของ quantum computing เกิดขึ้นจริงทั้ง sector", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดโซน Entry 2 = การบวกวันนี้กลับตัวเต็มที่",
+          "hardNote": "แปลว่า narrative government-stake และ LOI กระทรวงพาณิชย์ทั้งคู่ชะงัก — thesis break จริง",
+          "rrNote": "จาก Entry 1 ถึง hard stop เทียบ TP2 (Bull case)",
+          "rrWarning": "ต่ำกว่าเป้า 5:1 ของ turbo — เป็นหุ้น speculative ที่รายได้ยังเล็กมาก ($5.1M เทียบขาดทุน $52.6M) แม้มูลค่าตลาดจะใหญ่กว่าปกติของสาย turbo ควร size เล็กมากไม่ว่า ratio จะดีแค่ไหน"
+        }
+      },
+      "estimateDates": [
+        { "event": "การแปลง LOI $100M กระทรวงพาณิชย์", "note": "ยังไม่มีวันที่ยืนยัน — เปิดเผยที่ผลประกอบการ Q2 2026" },
+        { "event": "ผลประกอบการ Q3 2026 (ประมาณการ)", "note": "ยังไม่ประกาศวันที่อย่างเป็นทางการ ประมาณจากรอบไตรมาส" }
+      ]
+    }
+  }
+}
