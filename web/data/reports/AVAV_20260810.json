@@ -1,0 +1,175 @@
+{
+  "ticker": "AVAV",
+  "companyName": "AeroVironment, Inc.",
+  "companyDescription": "Defense tech · Switchblade loitering munitions + Puma/JUMP20 drones supplied to Ukraine, now combined with BlueHalo's directed-energy/space/cyber portfolio (post-$4.1B merger) — positioned across air, land, sea, space and cyber for the Golden Dome missile-defense buildout",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-10T18:00:00.000Z",
+  "price": 187.40,
+  "priceChange": 0.3,
+  "priceNote": "Trading well off the $417.86 52-week high, still digesting the post-BlueHalo integration and a broad defense-sector pullback, but roughly 39% above the $135.20 52-week low set earlier this year — steady contract-award news (Switchblade, P550, ESAero) has kept a floor under the stock ahead of Sept 9 earnings.",
+  "marketCap": "~$10B",
+  "sector": "Industrials / Aerospace & Defense (Unmanned Systems)",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 74,
+  "summary": "AeroVironment's Q1 FY2026 print (late June 2026) was a clean beat — revenue $641.6M vs $559.4M est. (+133% YoY), adjusted EPS $1.84 vs $1.47 est. — and the stock jumped ~19% same-day. Since then, the post-BlueHalo combined entity ($4.1B merger, completed May 2025) has kept landing real, dated contract wins: a $186M Army Switchblade order (Feb 2026), a $200M ESAero acquisition (Mar 2026), and a $117M Army P550 order (2026). Sept 9, 2026 earnings is the next real catalyst to confirm the growth rate is holding as BlueHalo's Golden Dome-relevant directed-energy/space/cyber lines scale alongside the legacy drone business.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q4 FY2026 Earnings",
+      "description": "Confirmed for Sept 9, 2026 — the next test of whether the ~133% YoY revenue growth rate from Q1 FY26 is holding as BlueHalo's directed-energy/space/cyber segments scale into the combined entity's reporting.",
+      "urgencyLabel": "~4 WEEKS",
+      "dateBadge": "Sept 9, 2026",
+      "catalystDate": "2026-09-09",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🤝",
+      "name": "Golden Dome / Contract Award Flow",
+      "description": "Ongoing: $186M Army Switchblade order (Feb 2026), $200M ESAero acquisition (Mar 2026), $117M Army P550 order (2026) — BlueHalo's directed-energy and space/cyber tech is being pitched into the Golden Dome missile-defense initiative, a structural multi-year tailwind rather than a single dated event.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Valuation already reflects real optimism after the post-Q1 rally — the 52-week range ($135.20 to $417.86) shows how sharply this stock can reprice on a single earnings miss vs elevated Street expectations",
+    "Two acquisitions in 12 months (BlueHalo $4.1B, ESAero $200M) creates real integration risk — combining air/land/sea/space/cyber product lines and cultures is execution-heavy",
+    "Golden Dome and broader defense-budget program timing depends on Congressional appropriations — award schedules can slip regardless of technical readiness",
+    "Heavy customer concentration in U.S. government/DoD contracts — a single program cancellation or budget reallocation is a real, demonstrated risk in this sector"
+  ],
+  "estimateDates": [
+    { "event": "Q4 FY2026 Earnings", "dateRange": "Sept 9, 2026", "note": "Confirmed date — watch for confirmation the Q1 FY26 growth rate (+133% YoY) is holding post-BlueHalo integration", "est": "n/a", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -20, "price": 149.92 },
+    { "label": "Base", "color": "yellow", "pct": 12.1, "price": 210.00 },
+    { "label": "Bull", "color": "green", "pct": 36.7, "price": 256.06 },
+    { "label": "Moon", "color": "purple", "pct": 70.2, "price": 318.96 }
+  ],
+  "analystTargets": [
+    { "firm": "Robert W. Baird (Peter Arment)", "target": 210, "rating": "Outperform", "note": "Raised from $146 — most recent named-firm update" },
+    { "firm": "Wall Street Consensus (18 analysts)", "target": 256.06, "rating": "Buy", "note": "Cited consensus as of Aug 10, 2026" },
+    { "firm": "Wall Street Consensus (25 analysts, alt. source)", "target": 318.96, "rating": "Buy (83% buy-rated)", "note": "Higher aggregation from a separate source — treated as the Moon-case anchor given the spread vs the 18-analyst figure" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held at 3.50-3.75% on Jul 29, 2026, with 3 of 12 officials dissenting toward a hike — the most hawkish split since 2016. Next FOMC is Sep 15-16, 2026, six days after AVAV's earnings, so no direct overlap this cycle, but a hawkish tilt going into that meeting could still weigh on high-multiple growth names like AVAV into the print.",
+    "inflationNote": "Core PCE still 3.3% YoY, above target — CPI (Aug 12) and jobs data (Aug 7, already printed) are the key data points shaping risk appetite for growth/defense-tech multiples between now and Sept 9 earnings.",
+    "sectorImpact": "Defense spending itself is largely appropriations-driven and not directly rate-sensitive, but AVAV trades at a growth multiple (52-week range of $135-418 shows the multiple compression/expansion swings that come with rate-sensitivity in sentiment, even if the underlying contract backlog is not rate-driven.",
+    "summary": "MEDIUM — the Golden Dome/BlueHalo contract thesis is largely macro-independent, but AVAV's demonstrated high-beta behavior (proven by its own 52-week range) means a hawkish surprise before Sept 9 could compress the multiple even without touching the underlying fundamentals."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 187.40, "note": "Current price", "timing": "Now" },
+      { "label": "Entry 2", "level": 165, "rangeMax": 175, "note": "Pullback zone into Sept 9 earnings — typical pre-earnings de-risking in this name", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 145, "note": "Deep dip approaching the 52-week low ($135.20) — would need a broad defense-sector selloff or a growth-rate scare", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 210.00, "pct": 12.1, "note": "Base — hits Baird's Outperform target on an inline Sept 9 print" },
+    "tp2": { "price": 256.06, "pct": 36.7, "note": "Bull — clean beat repeating the Q1 FY26 pattern (+133% YoY, +19% stock reaction), hits the 18-analyst consensus" },
+    "tp3": { "price": 318.96, "pct": 70.2, "note": "Moon — Golden Dome contract flow accelerates and Street re-rates to the high-end 25-analyst consensus", "moon": true },
+    "stopLoss": {
+      "tight": 168.66, "tightPct": -10.0, "tightNote": "Below the Entry 2 pullback zone — normal pre-earnings positioning becoming a real trend break",
+      "hard": 149.92, "hardPct": -20.0, "hardNote": "Approaches the 52-week low ($135.20) — a breach here would question the post-BlueHalo re-rate thesis entirely",
+      "riskReward": "1.8 : 1", "rrNote": "Entry 1 to hard stop vs TP2 (Bull case)", "rrWarning": "Acceptable but not exceptional R/R — this name's own 52-week range shows it can gap hard in either direction on a single print, so respect the stop"
+    },
+    "verdict": "BUY — BlueHalo-driven diversification (air/land/sea/space/cyber) plus a demonstrated pattern of clean beats (Q1 FY26: +18.76% on a 133% YoY revenue beat) sets up Sept 9 earnings as the next real catalyst; the 36.7% consensus-implied upside is achievable if the growth rate holds.",
+    "approach": "DCA"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "AVAV's own pattern shows contract-win news (Switchblade orders, ESAero acquisition, P550 orders) providing an ongoing floor rather than a single sharp pre-earnings run-up — the stock re-rates incrementally on each dated contract announcement rather than building toward one binary event.",
+    "preRunupTiming": "Ongoing, contract-by-contract, with earnings as the periodic confirmation point",
+    "preRunupPct": "Individual contract-win pops have run smaller (RCAT's comparable $2.49M Air Force order added +8%) than the big quarterly beat itself",
+    "postWin": {
+      "avgPct": 19,
+      "range": "+8% to +20%",
+      "note": "AVAV's own Q1 FY2026 print (133% YoY revenue beat, EPS beat) drove an ~18.8-19.7% same-day pop — the cleanest same-company precedent for what a strong Sept 9 beat could do. Same-sector contract-win reactions run smaller (RCAT's Air Force order: +8%).",
+      "exampleDate": "Jun 2026 (AVAV Q1 FY26 earnings) / Jul 2026 (RCAT contract win)"
+    },
+    "postLose": {
+      "avgPct": -15,
+      "range": "-10% to -25%",
+      "note": "No AVAV-specific earnings-miss precedent is available to cite from this research — this range reflects the general pattern for high-multiple defense-tech names that miss an elevated growth bar after a big prior beat.",
+      "exampleDate": "N/A — no AVAV-specific miss precedent found in this research pass"
+    },
+    "spotSizing": {
+      "pct": 5,
+      "reason": "Real, dated Sept 9 earnings catalyst backed by a demonstrated beat pattern and structural Golden Dome tailwind — sized as a standard core-conviction position, not a pure moonshot"
+    },
+    "stopPreCatalyst": { "pct": -12, "price": 164.91, "note": "A break below the Entry 2 zone ahead of Sept 9 would suggest the market is de-risking the growth-rate thesis before the print" },
+    "stopPostCatalyst": { "pct": -18, "note": "If Sept 9 earnings miss the elevated growth bar and the stock doesn't recover within a few sessions, the post-BlueHalo re-rate thesis needs re-examination" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "AVAV",
+      "event": "Q1 FY2026 earnings beat (revenue +133% YoY, EPS beat)",
+      "date": "Jun 2026",
+      "movePct": 18.76,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company, most directly relevant precedent for what a clean Sept 9 beat could do to the stock — revenue beat estimates by 14.7% and EPS beat by 25%."
+    },
+    {
+      "ticker": "RCAT",
+      "event": "$2.49M U.S. Air Force Black Widow contract award",
+      "date": "Jul 2026",
+      "movePct": 8,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-sector (defense drone) precedent for the smaller, more frequent contract-win pops that make up AVAV's 'ongoing' catalyst alongside the quarterly earnings event."
+    }
+  ],
+  "sources": [
+    "https://stockstory.org/us/stocks/nasdaq/avav/news/earnings/aerovironments-nasdaqavav-q1-cy2026-sales-top-estimates-stock-jumps-119percent",
+    "https://www.tipranks.com/news/the-fly/aerovironment-price-target-raised-to-210-from-146-at-baird-thefly",
+    "https://www.axios.com/2026/02/26/army-drones-aerovironment-switchblade-military",
+    "https://finance.yahoo.com/news/aerovironment-cfo-talks-bluehalo-growth-050510050.html",
+    "https://blockonomi.com/red-cat-holdings-rcat-stock-surge-8-as-2-49m-air-force-contract-fuels-gains/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "ผลประกอบการ Q1 FY2026 ของ AeroVironment (ปลาย มิ.ย. 2026) คือการบีทที่ชัดเจน — รายได้ $641.6M vs คาด $559.4M (+133% YoY), adjusted EPS $1.84 vs คาด $1.47 — หุ้นบวกทันที ~19% ตั้งแต่นั้นมา บริษัทที่รวมกับ BlueHalo แล้ว (ดีล $4.1B เสร็จสมบูรณ์ พ.ค. 2025) ยังคงได้สัญญาจริงต่อเนื่อง: ออเดอร์ Switchblade กองทัพบก $186M (ก.พ. 2026), ซื้อกิจการ ESAero $200M (มี.ค. 2026), ออเดอร์ P550 กองทัพบก $117M (2026) ผลประกอบการ 9 ก.ย. 2026 คือ catalyst จริงตัวถัดไปที่จะยืนยันว่าอัตราการเติบโต ~133% YoY ยังคงอยู่ ขณะที่ธุรกิจ directed-energy/space/cyber ของ BlueHalo กำลังขยายสเกล",
+      "priceNote": "เทรดต่ำกว่า 52-week high ที่ $417.86 มาก ยังอยู่ระหว่างย่อยข่าวการรวมกิจการ BlueHalo และแรงขายทั้งกลุ่ม defense แต่สูงกว่า 52-week low ที่ $135.20 ราว 39% ข่าวสัญญาต่อเนื่อง (Switchblade, P550, ESAero) ช่วยประคองราคาไว้ก่อนผลประกอบการ 9 ก.ย.",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "ผลประกอบการ Q4 FY2026", "description": "ยืนยันวันที่ 9 ก.ย. 2026 — การทดสอบครั้งถัดไปว่าอัตราเติบโต ~133% YoY จาก Q1 FY26 ยังคงอยู่หรือไม่ ขณะที่ธุรกิจ directed-energy/space/cyber ของ BlueHalo เริ่มเข้ามารวมในงบ" },
+        { "name": "กระแสสัญญา Golden Dome / Contract Award", "description": "ต่อเนื่อง: ออเดอร์ Switchblade กองทัพบก $186M (ก.พ. 2026), ซื้อ ESAero $200M (มี.ค. 2026), ออเดอร์ P550 กองทัพบก $117M (2026) — เทค directed-energy และ space/cyber ของ BlueHalo กำลังถูกเสนอเข้าโครงการป้องกันขีปนาวุธ Golden Dome ซึ่งเป็นแรงหนุนเชิงโครงสร้างระยะยาว ไม่ใช่ event เดียว" }
+      ],
+      "risks": [
+        "Valuation สะท้อนความคาดหวังบวกไปมากแล้วหลังการรีบาวด์จาก Q1 — 52-week range ($135.20 ถึง $417.86) แสดงว่าหุ้นตัวนี้ reprice แรงได้แค่ผลประกอบการพลาดคาดครั้งเดียว",
+        "การซื้อกิจการ 2 ดีลใน 12 เดือน (BlueHalo $4.1B, ESAero $200M) สร้างความเสี่ยงด้าน integration จริง — การรวมสายผลิตภัณฑ์ air/land/sea/space/cyber และวัฒนธรรมองค์กรต้องใช้การ execute สูง",
+        "จังหวะโครงการ Golden Dome และงบ defense โดยรวมขึ้นกับการอนุมัติงบจากสภาคองเกรส — กำหนดการสัญญาอาจเลื่อนได้แม้ความพร้อมด้านเทคนิคจะมี",
+        "พึ่งพาลูกค้าภาครัฐสหรัฐ/กระทรวงกลาโหมสูงมาก — การยกเลิกโครงการเดียวหรือการจัดสรรงบใหม่เป็นความเสี่ยงจริงที่เคยเกิดในกลุ่มนี้"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.50-3.75% เมื่อ 29 ก.ค. 2026 กรรมการ 3 ใน 12 คน dissent อยากขึ้นดอกเบี้ย — dissent hawkish สุดตั้งแต่ปี 2016 FOMC ถัดไป 15-16 ก.ย. 2026 มาหลังผลประกอบการ AVAV 6 วัน จึงไม่ทับซ้อนโดยตรง แต่ท่าที hawkish ก่อนการประชุมอาจกดดัน multiple ของหุ้น growth สูงแบบนี้ก่อนถึงวันประกาศผล",
+        "inflationNote": "Core PCE ยังอยู่ที่ 3.3% YoY สูงกว่าเป้า — CPI (12 ส.ค.) และ jobs data (7 ส.ค. ออกแล้ว) เป็นตัวกำหนด risk appetite ของหุ้น growth/defense-tech ช่วงก่อนผลประกอบการ 9 ก.ย.",
+        "sectorImpact": "งบ defense ส่วนใหญ่ขึ้นกับการอนุมัติงบประมาณ ไม่ได้ sensitive กับดอกเบี้ยโดยตรง แต่ AVAV เทรดที่ multiple สูง (52-week range $135-418 แสดงความผันผวนของ multiple ที่มาพร้อม sentiment แม้ backlog สัญญาจะไม่ได้ผูกกับดอกเบี้ย",
+        "summary": "ปานกลาง — thesis Golden Dome/BlueHalo ส่วนใหญ่ independent จาก macro แต่ AVAV แสดง high-beta ชัดเจน (ดูจาก 52-week range เอง) hawkish surprise ก่อน 9 ก.ย. อาจกด multiple ได้แม้ fundamental จะไม่เปลี่ยน"
+      },
+      "entryStrategy": {
+        "verdict": "BUY — การกระจายธุรกิจผ่าน BlueHalo (air/land/sea/space/cyber) บวกรูปแบบการบีทที่ชัดเจน (Q1 FY26: บวก 18.76% จากรายได้บีท 133% YoY) ทำให้ผลประกอบการ 9 ก.ย. เป็น catalyst จริงตัวถัดไป upside 36.7% ตาม consensus เป็นไปได้ถ้าอัตราเติบโตยังอยู่",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน", "timing": "ตอนนี้" },
+          { "note": "โซนย่อก่อนผลประกอบการ 9 ก.ย. — การ de-risk ก่อนผลตามปกติของหุ้นตัวนี้", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงลึกใกล้ 52-week low ($135.20) — ต้องมี defense selloff กว้างหรือความกังวลเรื่องอัตราเติบโต", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — แตะเป้า Outperform ของ Baird จากผลประกอบการที่ตามคาด" },
+        "tp2": { "note": "Bull — บีทสะอาดซ้ำรูปแบบ Q1 FY26 (+133% YoY, หุ้นบวก 19%) แตะ consensus นักวิเคราะห์ 18 คน" },
+        "tp3": { "note": "Moon — กระแสสัญญา Golden Dome เร่งตัว Street ปรับเป้าขึ้นสู่ consensus 25 คนขอบบน", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดโซน Entry 2 = การ de-risk ก่อนผลกลายเป็น trend break จริง",
+          "hardNote": "ใกล้ 52-week low ($135.20) — หลุดระดับนี้แปลว่า thesis การรีเรทหลัง BlueHalo ต้องทบทวนใหม่ทั้งหมด",
+          "rrNote": "จาก Entry 1 ถึง hard stop เทียบกับ TP2 (Bull case)",
+          "rrWarning": "R/R พอใช้ ไม่ถึงกับเยี่ยม — หุ้นตัวนี้เคย gap แรงได้ทั้งสองทางจากผลประกอบการครั้งเดียว ควรเคารพ stop"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q4 FY2026", "note": "ยืนยันวันที่ 9 ก.ย. 2026" }
+      ]
+    }
+  }
+}

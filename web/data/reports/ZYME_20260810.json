@@ -1,0 +1,176 @@
+{
+  "ticker": "ZYME",
+  "companyName": "Zymeworks Inc.",
+  "companyDescription": "Biotech · Bispecific antibody platform (zanidatamab/Ziihera) partnered with Jazz Pharmaceuticals — milestone + royalty stream on an oncology franchise expanding from 2L biliary tract cancer into 1L gastroesophageal adenocarcinoma",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-10T18:00:00.000Z",
+  "price": 24.45,
+  "priceChange": 2.3,
+  "priceNote": "Up 2.3% intraday, still well off the 52-week high of $29.75, recovering from the Aug 6 Q2 earnings miss (EPS -$0.62 vs -$0.37 est., revenue $4.6M vs $19.1M est.) as the market looks past the small BTC commercial base toward the Aug 25 GEA-label PDUFA decision.",
+  "marketCap": "$1.75B",
+  "sector": "Healthcare / Biotechnology (Oncology — Bispecific Antibodies)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Speculative",
+  "score": 62,
+  "summary": "Zymeworks' zanidatamab (marketed as Ziihera, partnered with Jazz Pharmaceuticals) already has FDA approval in 2nd-line HER2+ biliary tract cancer since Nov 2024. The Aug 25, 2026 PDUFA date is for a supplemental BLA adding first-line HER2+ gastroesophageal adenocarcinoma (GEA) — a much larger population — backed by a positive Phase 3 (HERIZON-GEA-01: median PFS 12.4 vs 8.1 months, HR 0.63, p<.0001) and Priority Review status. Approval unlocks a $250M US milestone (of $440M total) plus a materially bigger royalty base, but the Q2 revenue miss shows the current BTC business alone is still thin, and the payout flows through Jazz as milestones/royalties, not full commercial upside.",
+  "catalysts": [
+    {
+      "icon": "💊",
+      "name": "Zanidatamab 1L GEA PDUFA Decision",
+      "description": "FDA target action date for the sBLA (filed by partner Jazz Pharmaceuticals) adding first-line HER2+ gastroesophageal adenocarcinoma to the label. Priority Review was granted on positive Phase 3 HERIZON-GEA-01 data (median PFS 12.4mo vs 8.1mo, HR 0.63, p<.0001; median OS >2 years). Approval unlocks a $250M US regulatory milestone (part of $440M total) plus a much larger addressable population than the existing 2L BTC indication.",
+      "urgencyLabel": "2 WEEKS",
+      "dateBadge": "Aug 25, 2026",
+      "catalystDate": "2026-08-25",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📊",
+      "name": "Q2 2026 Earnings (reported)",
+      "description": "Reported Aug 6, 2026: EPS -$0.62 missed estimate by $0.25, revenue $4.6M vs $19.1M consensus — a real miss. Despite that, Citi raised its target to $37 (from $35) and kept Buy, reading the miss as noise against the PDUFA setup.",
+      "urgencyLabel": "PASSED",
+      "dateBadge": "Aug 6, 2026",
+      "catalystDate": "2026-08-06",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Even with Priority Review and a strong Phase 3 readout, an FDA CRL or label restriction remains possible — binary regulatory risk is never zero",
+    "Q2 revenue miss ($4.6M actual vs $19.1M est.) shows the current commercial BTC indication is still small — the thesis leans heavily on the GEA expansion actually landing on schedule",
+    "Approval economics flow through Jazz Pharmaceuticals as milestones + tiered royalties, not full commercial control — Zymeworks captures only part of eventual GEA revenue, capping upside vs a wholly-owned approval",
+    "Thin trading liquidity (~$1.75B cap, ~250K shares/day recent volume) means the PDUFA reaction — good or bad — can gap sharply with limited ability to exit near the last quoted price"
+  ],
+  "estimateDates": [
+    { "event": "Zanidatamab 1L GEA PDUFA", "dateRange": "Aug 25, 2026", "note": "FDA target action date, Priority Review — positive Phase 3 data (HR 0.63, p<.0001) already public", "est": "high approval probability, not certain", "highlight": "yellow" },
+    { "event": "Q3 2026 Earnings", "dateRange": "Nov 2026", "note": "Next scheduled financial update, after the PDUFA decision", "est": "n/a", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -35, "price": 15.89 },
+    { "label": "Base", "color": "yellow", "pct": 14, "price": 27.87 },
+    { "label": "Bull", "color": "green", "pct": 51.3, "price": 37.00 },
+    { "label": "Moon", "color": "purple", "pct": 90, "price": 46.46 }
+  ],
+  "analystTargets": [
+    { "firm": "Citi", "target": 37, "rating": "Buy", "note": "Raised from $35 on Aug 7, 2026 despite the Q2 revenue miss, ahead of the Aug 25 PDUFA" },
+    { "firm": "Wall Street Consensus (Strong Buy)", "target": 44.5, "rating": "Strong Buy", "note": "Midpoint of the cited $31 (low) – $58 (high) analyst target range" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held at 3.50-3.75% on Jul 29, 2026, but 3 of 12 officials dissented in favor of a hike — the most hawkish dissent split since 2016. Next FOMC is Sep 15-16, 2026, after this PDUFA. CPI prints Aug 12, 2026, sits directly between this report and the Aug 25 decision and could move risk appetite for small-cap biotech financing broadly.",
+    "inflationNote": "Core PCE still running 3.3% YoY, above the Fed's 2% target — a hot Aug 12 CPI could trigger a broad risk-off move in small/micro-cap biotech (rate-sensitive sector via financing costs) independent of ZYME's own binary outcome.",
+    "sectorImpact": "Small-cap clinical/commercial biotech is more sensitive to risk-appetite swings than idiosyncratic FDA-driven names would suggest — a hawkish CPI surprise before Aug 25 could compress the stock's pre-PDUFA run-up regardless of the underlying approval odds.",
+    "summary": "MEDIUM — the approval decision itself is idiosyncratic and largely macro-independent, but the CPI print (Aug 12) lands squarely in the run-up window and a hawkish surprise could dampen the sector-wide biotech risk appetite this specific trade depends on for its pre-catalyst positioning."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 24.45, "note": "Current price, pre-PDUFA", "timing": "Now" },
+      { "label": "Entry 2", "level": 20, "rangeMax": 22, "note": "Pullback zone if biotech risk appetite softens (e.g. hot CPI Aug 12) before the Aug 25 decision", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 16, "note": "Deep dip toward the 52-week low zone — would need a broad biotech selloff or a negative pre-PDUFA signal", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 27.87, "pct": 14.0, "note": "Base — approval lands as expected, muted reaction (similar pattern to the Nov 2024 BTC approval)" },
+    "tp2": { "price": 37.00, "pct": 51.3, "note": "Bull — approval confirmed, 1L GEA label meaningfully expands the addressable market, hits Citi's post-earnings target" },
+    "tp3": { "price": 46.46, "pct": 90.0, "note": "Moon — approval + Street re-rates toward the high end of the Strong Buy range as GEA royalty economics get modeled in", "moon": true },
+    "stopLoss": {
+      "tight": 22.00, "tightPct": -10.0, "tightNote": "Pre-PDUFA technical stop — a break below this level suggests the market is pricing in real rejection risk ahead of Aug 25",
+      "hard": 19.56, "hardPct": -20.0, "hardNote": "Deep breach — would reflect a Complete Response Letter (CRL) or a safety signal surfacing before the decision",
+      "riskReward": "2.6 : 1", "rrNote": "Entry 1 to hard stop vs TP2 (Bull case)", "rrWarning": "Binary PDUFA event — a technical stop is only a partial hedge; size the position for the Bear-case CRL scenario, not just the stop distance"
+    },
+    "verdict": "SPECULATIVE (Buy the binary) — Priority Review + a statistically strong Phase 3 (HR 0.63, p<.0001) lowers approval risk versus a typical first-in-class biotech bet, but the Jazz-partnered royalty structure caps direct upside and a CRL is never zero-probability. Small, sized-for-binary-risk position into Aug 25.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "Priority-Review PDUFA setups typically see a 4-8 week pre-decision run-up as positioning builds ahead of the binary. ZYME has partly followed this pattern off its 52-week low ($10.93), but the Aug 6 earnings miss interrupted the run-up, so less is 'priced in' heading into Aug 25 than a clean Priority Review setup would normally show.",
+    "preRunupTiming": "4–8 weeks before PDUFA (since late June/early July 2026), interrupted by the Aug 6 earnings miss",
+    "preRunupPct": "+20% to +40% is the general Priority-Review pattern; ZYME's own run has been choppier given the earnings miss",
+    "postWin": {
+      "avgPct": 15,
+      "range": "+8% to +25%",
+      "note": "Approval on an already-partnered, already-marketed drug tends toward the muted end of the typical 30-200% first-approval range, since much is already priced in. ZYME's own 2024 BTC approval barely moved the stock (-8% same-day, alongside an earnings release); Omeros' first-in-class approval in Aug 2026 added only +8% premarket.",
+      "exampleDate": "Nov 2024 (ZYME BTC approval) / Aug 2026 (OMER)"
+    },
+    "postLose": {
+      "avgPct": -30,
+      "range": "-20% to -40%",
+      "note": "No direct ZYME-specific CRL precedent exists to cite — this is the general pattern for Priority-Review oncology sBLAs with strong Phase 3 data that still receive a CRL or restrictive label; the surprise factor amplifies the reaction versus a name where rejection was already expected.",
+      "exampleDate": "N/A — general oncology PDUFA/CRL pattern, no ZYME-specific prior case"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Binary PDUFA event on a $1.75B-cap name with real CRL tail risk — even with Priority Review and strong Phase 3 data, this is sized like a speculative/ค่าขนม position, not a core holding"
+    },
+    "stopPreCatalyst": { "pct": -15, "price": 20.78, "note": "A break below $20-21 before Aug 25 signals the market is pricing in real rejection risk — exit before the binary if this level breaks" },
+    "stopPostCatalyst": { "pct": -25, "note": "If approved but the stock still sells off past -25% (e.g. a narrow/restricted label), the 'clean broad approval' thesis has failed even though the drug technically cleared" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "ZYME",
+      "event": "Ziihera (zanidatamab) accelerated approval — 2L HER2+ biliary tract cancer",
+      "date": "Nov 2024",
+      "movePct": -7.97,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "Same drug's first FDA approval — the stock fell ~8% the day it was announced (alongside Q4 results) because accelerated approval was already largely expected. Direct precedent for why the Aug 25 GEA sBLA approval may not produce a large pop even if it clears."
+    },
+    {
+      "ticker": "OMER",
+      "event": "Yartemlea first-in-class FDA approval (rare transplant complication)",
+      "date": "Aug 2026",
+      "movePct": 8,
+      "days": 1,
+      "outcome": "good",
+      "note": "Recent same-window example: even a genuine first-of-its-kind approval only produced a modest +8% premarket pop — approvals well-telegraphed by Priority Review status tend to already be partly priced in before the decision date."
+    }
+  ],
+  "sources": [
+    "https://www.targetedonc.com/view/fda-grants-priority-review-to-zanidatamab-based-regimens-in-first-line-her2-gea",
+    "https://ir.zymeworks.com/news-releases/news-release-details/zymeworks-provides-corporate-update-and-reports-second-quarter-3",
+    "https://www.globenewswire.com/news-release/2024/11/21/2985027/0/en/FDA-Grants-U-S-Approval-of-Ziihera-zanidatamab-hrii-for-the-Treatment-of-Adults-with-Previously-Treated-Unresectable-or-Metastatic-HER2-positive-IHC-3-Biliary-Tract-Cancer-BTC.html",
+    "https://stocktwits.com/news-articles/markets/equity/omeros-stock-jumps-premarket-after-fda-approves-first-drug-for-rare-transplant-complication/cLesxhYREvL"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Zanidatamab ของ Zymeworks (ชื่อการค้า Ziihera ร่วมกับพาร์ทเนอร์ Jazz Pharmaceuticals) ได้รับอนุมัติ FDA ไปแล้วสำหรับมะเร็งท่อน้ำดี HER2+ แนวที่ 2 ตั้งแต่ พ.ย. 2024 ส่วนวันที่ 25 ส.ค. 2026 คือ PDUFA ของ sBLA ที่ขอขยาย label ไปยังมะเร็งกระเพาะ/หลอดอาหาร HER2+ แนวที่ 1 (GEA) — กลุ่มผู้ป่วยใหญ่กว่ามาก โดยมีข้อมูล Phase 3 บวก (HERIZON-GEA-01: PFS กลาง 12.4 vs 8.1 เดือน, HR 0.63, p<.0001) และได้ Priority Review การอนุมัติจะปลดล็อก milestone $250M (จากทั้งหมด $440M) และฐาน royalty ที่ใหญ่ขึ้นมาก แต่ผลประกอบการ Q2 ที่พลาดคาดแสดงว่าธุรกิจ BTC ปัจจุบันยังเล็ก และรายได้ไหลผ่าน Jazz เป็น milestone/royalty ไม่ใช่กำไรเต็มจำนวน",
+      "priceNote": "บวก 2.3% ระหว่างวัน ยังห่างจาก 52-week high ที่ $29.75 อยู่มาก กำลังฟื้นจากผลประกอบการ Q2 ที่พลาดคาด (EPS -$0.62 vs -$0.37 ที่คาด, รายได้ $4.6M vs $19.1M ที่คาด) เมื่อ 6 ส.ค. ตลาดมองข้ามธุรกิจ BTC ที่ยังเล็กไปที่ผล PDUFA 25 ส.ค.",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "ผล PDUFA Zanidatamab แนวที่ 1 GEA", "description": "วันที่ FDA ตัดสิน sBLA (ยื่นโดยพาร์ทเนอร์ Jazz Pharmaceuticals) ขยาย label ไปมะเร็งกระเพาะ/หลอดอาหาร HER2+ แนวที่ 1 ได้ Priority Review จากข้อมูล Phase 3 บวก (PFS กลาง 12.4 vs 8.1 เดือน, HR 0.63, p<.0001) การอนุมัติปลดล็อก milestone $250M (จากทั้งหมด $440M) และฐานผู้ป่วยที่ใหญ่กว่า BTC มาก" },
+        { "name": "ผลประกอบการ Q2 2026 (ประกาศแล้ว)", "description": "ประกาศ 6 ส.ค. 2026: EPS -$0.62 พลาดคาด $0.25, รายได้ $4.6M vs $19.1M ที่คาด — พลาดจริง แต่ Citi ยังปรับเป้าขึ้นเป็น $37 (จาก $35) คงเรตติ้ง Buy มองว่าเป็น noise เทียบกับ setup ของ PDUFA" }
+      ],
+      "risks": [
+        "แม้จะได้ Priority Review และข้อมูล Phase 3 แข็งแรง ความเสี่ยง CRL หรือ label ที่จำกัดยังเป็นไปได้เสมอ — regulatory risk ไม่มีทางเป็นศูนย์",
+        "รายได้ Q2 พลาดคาด ($4.6M จริง vs $19.1M ที่คาด) แสดงว่าธุรกิจ BTC ปัจจุบันยังเล็ก thesis พึ่งพาการขยาย GEA ให้สำเร็จตามกำหนดค่อนข้างมาก",
+        "ผลตอบแทนจากการอนุมัติไหลผ่าน Jazz Pharmaceuticals เป็น milestone + royalty แบบขั้นบันได ไม่ใช่การควบคุมเชิงพาณิชย์เต็มรูปแบบ — Zymeworks ได้รับส่วนแบ่งรายได้ GEA เพียงบางส่วน",
+        "สภาพคล่องการซื้อขายค่อนข้างบาง (มูลค่าตลาด ~$1.75B, ปริมาณซื้อขายล่าสุด ~250K หุ้น/วัน) ทำให้ปฏิกิริยาต่อผล PDUFA ไม่ว่าดีหรือร้ายอาจ gap แรง ขายออกที่ราคาล่าสุดได้ยาก"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.50-3.75% เมื่อ 29 ก.ค. 2026 แต่กรรมการ 3 ใน 12 คน dissent อยากขึ้นดอกเบี้ย — dissent สาย hawkish ที่สุดตั้งแต่ปี 2016 FOMC ถัดไป 15-16 ก.ย. 2026 มาหลัง PDUFA นี้ ตัวเลข CPI 12 ส.ค. 2026 อยู่ตรงกลางระหว่างรายงานนี้กับผล 25 ส.ค. อาจกระทบ risk appetite ของ biotech ขนาดเล็กในวงกว้าง",
+        "inflationNote": "Core PCE ยังอยู่ที่ 3.3% YoY สูงกว่าเป้า 2% — ถ้า CPI 12 ส.ค. ออกมาร้อนแรง อาจกระตุ้น risk-off ในกลุ่ม biotech ขนาดเล็ก/ไมโคร (sector ที่ sensitive กับต้นทุนการระดมทุน) โดยไม่เกี่ยวกับผล PDUFA ของ ZYME เอง",
+        "sectorImpact": "หุ้น biotech ขนาดเล็กที่ยังอยู่ในช่วง clinical/commercial sensitive ต่อการเปลี่ยนแปลง risk appetite มากกว่าที่คิด แม้ catalyst หลักจะเป็นเรื่องเฉพาะบริษัท — CPI hawkish surprise ก่อน 25 ส.ค. อาจกดการไต่ระดับราคาก่อนผล PDUFA ได้",
+        "summary": "ปานกลาง — ผลการตัดสินของ FDA เป็นเรื่องเฉพาะบริษัทและค่อนข้าง macro-independent แต่ตัวเลข CPI (12 ส.ค.) ตกอยู่ในช่วงก่อนตัดสินพอดี hawkish surprise อาจลดทอน risk appetite ของ biotech ที่ trade นี้ต้องพึ่งพาสำหรับการไต่ระดับราคาก่อนวันตัดสิน"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE (ซื้อ binary) — Priority Review บวกข้อมูล Phase 3 ที่แข็งแรงทางสถิติ (HR 0.63, p<.0001) ลดความเสี่ยงเทียบกับ biotech first-in-class ทั่วไป แต่โครงสร้าง royalty ผ่าน Jazz จำกัด upside โดยตรง และ CRL ไม่มีทางเป็นศูนย์ ควรถือไม้เล็กที่ size ตามความเสี่ยง binary ก่อนถึง 25 ส.ค.",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน ก่อนผล PDUFA", "timing": "ตอนนี้" },
+          { "note": "โซนย่อถ้า risk appetite biotech อ่อนลง (เช่น CPI 12 ส.ค. ร้อนแรง) ก่อนผล 25 ส.ค.", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงลึกใกล้ 52-week low — ต้องมี biotech selloff กว้างหรือสัญญาณลบก่อนผล PDUFA", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — อนุมัติตามคาด ปฏิกิริยาราคาไม่หวือหวา (คล้ายรูปแบบการอนุมัติ BTC พ.ย. 2024)" },
+        "tp2": { "note": "Bull — อนุมัติชัดเจน label แนวที่ 1 GEA ขยายตลาดที่เข้าถึงได้มาก แตะเป้าของ Citi หลังผลประกอบการ" },
+        "tp3": { "note": "Moon — อนุมัติ + Street ปรับเป้าขึ้นไปใกล้ขอบบนของช่วง Strong Buy เมื่อโมเดล royalty GEA เข้าไปในราคา", "moon": true },
+        "stopLoss": {
+          "tightNote": "Stop เชิงเทคนิคก่อนผล PDUFA — หลุดระดับนี้แปลว่าตลาดเริ่ม price ความเสี่ยงถูกปฏิเสธก่อนถึง 25 ส.ค.",
+          "hardNote": "หลุดลึก = สะท้อน CRL หรือสัญญาณด้านความปลอดภัยที่โผล่มาก่อนผลตัดสิน",
+          "rrNote": "จาก Entry 1 ถึง hard stop เทียบกับ TP2 (Bull case)",
+          "rrWarning": "เป็น binary event ของ PDUFA — stop เทคนิคช่วยได้แค่บางส่วน ควร size ไม้ให้รองรับ scenario Bear (CRL) ไม่ใช่แค่ระยะ stop"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผล PDUFA Zanidatamab แนวที่ 1 GEA", "note": "วันตัดสินของ FDA, ได้ Priority Review — ข้อมูล Phase 3 บวก (HR 0.63, p<.0001) เปิดเผยแล้ว" },
+        { "event": "ผลประกอบการ Q3 2026", "note": "อัปเดตการเงินครั้งถัดไป หลังผล PDUFA" }
+      ]
+    }
+  }
+}
