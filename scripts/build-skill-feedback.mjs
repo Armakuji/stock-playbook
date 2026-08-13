@@ -306,9 +306,23 @@ const turboEntries = turboSnapshots.map(({ report, reportDate }) =>
       key: `${TURBO_KEY_PREFIX}${report.ticker}_${reportDate}`, windowDays: TURBO_WINDOW_DAYS,
       targetPct: TURBO_TARGET_PCT, softTargetPct: TURBO_SOFT_TARGET_PCT,
     }),
+    catalystType: primaryCatalystType(report),
     scenarios: report.scenarios ?? null,
   }));
 
+// Per-type breakdown for turbo (backlog #39). Previously turbo had only an
+// `overall` block, so its tier-2 rule could fire at the whole-lane level but
+// never distinguish a weak catalyst type from a strong one — the exact signal
+// that made core's byType useful. Same shape and same buildTier2() as core.
+const turboByTypeMap = {};
+for (const e of turboEntries) (turboByTypeMap[e.catalystType] ??= []).push(e);
+const turboByType = Object.entries(turboByTypeMap)
+  .map(([type, es]) => ({ type, total: es.length, ...summarize(es) }))
+  .sort((a, b) =>
+    (b.medianExcessVsBenchPct ?? b.softHitRate ?? b.avgMaxGain ?? -Infinity) -
+    (a.medianExcessVsBenchPct ?? a.softHitRate ?? a.avgMaxGain ?? -Infinity));
+
+const turboOverall = summarize(turboEntries);
 const turbo = {
   windowDays: TURBO_WINDOW_DAYS,
   targetPct: TURBO_TARGET_PCT,
@@ -316,7 +330,9 @@ const turbo = {
   n: turboEntries.length,
   totalComplete: turboEntries.filter((e) => e.status === "complete").length,
   totalAccumulating: turboEntries.filter((e) => e.status === "accumulating").length,
-  overall: summarize(turboEntries),
+  overall: turboOverall,
+  byType: turboByType,
+  tier2: buildTier2(turboByType, turboOverall),
 };
 
 // ── regime (top-level, backlog #27) ──────────────────────────────────────────
@@ -335,44 +351,62 @@ const regime = {
 };
 
 // ── scenario calibration (written Base/Bull vs realized maxGainPct) ─────────
-// Over every COMPLETE entry (core + turbo) that has a Base/Bull scenario written.
-const calibrationSource = [...coreEntries, ...turboEntries].filter(
-  (e) => e.status === "complete" && e.maxGainPct !== null && Array.isArray(e.scenarios),
-);
-const writtenBase = [], writtenBull = [], realized = [];
-for (const e of calibrationSource) {
-  const base = e.scenarios.find((s) => s.label === "Base");
-  const bull = e.scenarios.find((s) => s.label === "Bull");
-  if (base) { writtenBase.push(base.pct); realized.push(e.maxGainPct); }
-  if (bull) { writtenBull.push(bull.pct); }
+// SPLIT PER LANE (backlog #39). This was previously computed over core+turbo
+// pooled, which is wrong in two ways at once: turbo Base scenarios are written
+// far larger than core ones BY DESIGN (a moonshot's base case is not a core
+// pick's base case), and the realized side mixes 14d windows with 30d windows.
+// The pooled "optimism bias" was therefore a blend of two different bars on two
+// different clocks, and meaningless for either lane on its own.
+function buildScenarioCalibration(entries, windowDays, laneLabel) {
+  const src = entries.filter(
+    (e) => e.status === "complete" && e.maxGainPct !== null && Array.isArray(e.scenarios),
+  );
+  const writtenBase = [], writtenBull = [], realized = [];
+  for (const e of src) {
+    const base = e.scenarios.find((s) => s.label === "Base");
+    const bull = e.scenarios.find((s) => s.label === "Bull");
+    if (base) { writtenBase.push(base.pct); realized.push(e.maxGainPct); }
+    if (bull) { writtenBull.push(bull.pct); }
+  }
+  const mRealized = median(realized), mBase = median(writtenBase), mBull = median(writtenBull);
+  return {
+    lane: laneLabel,
+    windowDays,
+    n: src.length,
+    medianWrittenBasePct: r1(mBase),
+    medianWrittenBullPct: r1(mBull),
+    medianRealizedMaxGainPct: r1(mRealized),
+    // Realized distribution (backlog #36) — a single median gives the model
+    // nothing to aim at, so expose the shape it should be writing against.
+    realizedMaxGainP75Pct: r1(percentile(realized, 0.75)),
+    realizedMaxGainP90Pct: r1(percentile(realized, 0.90)),
+    optimismBiasBasePct: (mBase != null && mRealized != null) ? r1(mBase - mRealized) : null,
+    optimismBiasBullPct: (mBull != null && mRealized != null) ? r1(mBull - mRealized) : null,
+    note:
+      `optimismBias = written scenario % − realized max gain % over the same completed ${windowDays}d ` +
+      `window, ${laneLabel} lane only. Positive = we write more optimistic scenarios than what ` +
+      `actually happened. Do NOT compare this number across lanes — the bars differ by design.`,
+    horizonCaveat:
+      `HORIZON MISMATCH — read before acting on this. Realized figures are measured over the ` +
+      `${windowDays}d North Star window, while a written Base/Bull scenario usually implies a ` +
+      `longer horizon. So a positive optimismBias is NOT proof the scenario was wrong — it may ` +
+      `just be a longer clock. That is why the rule below is "declare and justify", not "cap".`,
+    rule:
+      `Every ${laneLabel} report must (a) state the measured optimismBias it was written against, ` +
+      `and (b) if the written Base exceeds realizedMaxGainP75Pct, name the horizon that Base assumes ` +
+      `and the specific driver that gets it there. A Base above realizedMaxGainP90Pct with no stated ` +
+      `horizon is not acceptable — that is the failure mode this field exists to catch.`,
+  };
 }
-const medianRealized = median(realized);
-const medianWrittenBase = median(writtenBase);
-const medianWrittenBull = median(writtenBull);
 
 const scenarioCalibration = {
-  n: calibrationSource.length,
-  medianWrittenBasePct: r1(medianWrittenBase),
-  medianWrittenBullPct: r1(medianWrittenBull),
-  medianRealizedMaxGainPct: r1(medianRealized),
-  // Realized distribution (backlog #36) — a single median gives the model
-  // nothing to aim at, so expose the shape it should be writing against.
-  realizedMaxGainP75Pct: r1(percentile(realized, 0.75)),
-  realizedMaxGainP90Pct: r1(percentile(realized, 0.90)),
-  optimismBiasBasePct: (medianWrittenBase != null && medianRealized != null) ? r1(medianWrittenBase - medianRealized) : null,
-  optimismBiasBullPct: (medianWrittenBull != null && medianRealized != null) ? r1(medianWrittenBull - medianRealized) : null,
-  note: "optimismBias = written scenario % − realized max gain % over the same completed window. Positive = we write more optimistic scenarios than what actually happened.",
-  horizonCaveat:
-    `HORIZON MISMATCH — read before acting on this. Realized figures are measured over the ` +
-    `${CORE_WINDOW_DAYS}d (core) / ${TURBO_WINDOW_DAYS}d (turbo) North Star window, while a written ` +
-    `Base/Bull scenario usually implies a longer horizon. So a positive optimismBias is NOT proof ` +
-    `the scenario was wrong — it may just be a longer clock. That is exactly why the rule below is ` +
-    `"declare and justify", not "cap".`,
-  rule:
-    `Every report must (a) state the measured optimismBias it was written against, and (b) if the ` +
-    `written Base exceeds realizedMaxGainP75Pct, name the horizon that Base assumes and the specific ` +
-    `driver that gets it there. A Base above realizedMaxGainP90Pct with no stated horizon is not ` +
-    `acceptable — that is the failure mode this field exists to catch.`,
+  core: buildScenarioCalibration(coreEntries, CORE_WINDOW_DAYS, "core"),
+  turbo: buildScenarioCalibration(turboEntries, TURBO_WINDOW_DAYS, "turbo"),
+  note:
+    "Split per lane on 2026-08-13 (backlog #39). Consumers MUST read scenarioCalibration.core or " +
+    ".turbo — there is deliberately no pooled top-level figure, because the previous pooled number " +
+    "mixed core and turbo Base scenarios (different bars) measured over 14d and 30d windows " +
+    "(different clocks) and was not usable by either lane.",
 };
 
 // ── near-miss counterfactual (did the top-5 cut add alpha?) — per lane ──────
@@ -477,9 +511,10 @@ fs.writeFileSync(OUT_FILE, JSON.stringify(feedback, null, 2));
 
 console.log(`📊 core: n=${core.n} (${core.totalComplete} complete, ${core.totalAccumulating} accumulating) · ${core.byType.length} catalyst type(s) · hitRate ${core.overall.hitRate}% · softHitRate ${core.overall.softHitRate}% (+${CORE_SOFT_TARGET_PCT}%) · beatBench ${core.overall.beatBenchRate}% · regimeNote: ${core.overall.regimeNote ?? "no bench data yet"}`);
 console.log(`🎯 tier2: ${core.tier2.fired ? `FIRED on ${core.tier2.metric} — laggards: ${core.tier2.laggards.map((l) => `${l.type} (${l.value}, ${l.gapVsOverall}pp vs overall ${core.tier2.overallValue}, n=${l.n})`).join(", ")}` : `not fired (${core.tier2.metric ?? "no usable metric"})`}`);
-console.log(`🎰 turbo: n=${turbo.n} (${turbo.totalComplete} complete, ${turbo.totalAccumulating} accumulating) · hitRate ${turbo.overall.hitRate}% · softHitRate ${turbo.overall.softHitRate}% (+${TURBO_SOFT_TARGET_PCT}%) · regimeNote: ${turbo.overall.regimeNote ?? "no bench data yet"}`);
+console.log(`🎰 turbo: n=${turbo.n} (${turbo.totalComplete} complete, ${turbo.totalAccumulating} accumulating) · ${turbo.byType.length} catalyst type(s) · hitRate ${turbo.overall.hitRate}% · softHitRate ${turbo.overall.softHitRate}% (+${TURBO_SOFT_TARGET_PCT}%) · beatBench ${turbo.overall.beatBenchRate}% · regimeNote: ${turbo.overall.regimeNote ?? "no bench data yet"}`);
+console.log(`🎯 turbo tier2: ${turbo.tier2.fired ? `FIRED on ${turbo.tier2.metric} — laggards: ${turbo.tier2.laggards.map((l) => `${l.type} (${l.value}, ${l.gapVsOverall}pp vs overall ${turbo.tier2.overallValue}, n=${l.n})`).join(", ")}` : `not fired (${turbo.tier2.metric ?? "no usable metric"})`}`);
 console.log(`🛑 stops: core medianMAE ${stopGuidance.coreMedianMAEPct}% · turbo medianMAE ${stopGuidance.turboMedianMAEPct}% — tight stops must be wider than these`);
 console.log(`🌐 regime: n=${regime.n} · median SPY over completed windows: ${regime.medianBenchmarkPct ?? "no data yet"}${regime.medianBenchmarkPct != null ? "%" : ""}`);
-console.log(`📐 scenario calibration: n=${scenarioCalibration.n}`);
+console.log(`📐 scenario calibration · core: n=${scenarioCalibration.core.n} bias +${scenarioCalibration.core.optimismBiasBasePct}pp (P75 ${scenarioCalibration.core.realizedMaxGainP75Pct}%) · turbo: n=${scenarioCalibration.turbo.n} bias +${scenarioCalibration.turbo.optimismBiasBasePct}pp (P75 ${scenarioCalibration.turbo.realizedMaxGainP75Pct}%)`);
 console.log(`🕵️ near-miss counterfactual · core: ${nearMissCounterfactual.core ? `n=${nearMissCounterfactual.core.n}` : "null (no data yet)"} · turbo: ${nearMissCounterfactual.turbo ? `n=${nearMissCounterfactual.turbo.n}` : "null (no data yet)"}`);
 console.log(`✅ skill feedback written → web/data/skill-feedback.json`);

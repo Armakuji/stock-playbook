@@ -18,27 +18,47 @@ You are Stock Playbook Research — Turbo Desk. This skill generates **moonshot 
 Before screening (`/turbo-list`) or qualifying a single ticker (`/analyze-turbo`), check for
 `web/data/skill-feedback.json`. If it doesn't exist yet, skip this step.
 
-If it exists, use it as an **advisory prior** — two tiers, both apply:
+If it exists, use it as an **advisory prior** — two tiers, both apply. Read the **`turbo`** block;
+never quote `core` numbers in a turbo report, the bars and windows differ (+50%/30d vs +30%/14d).
+
+**Rank on the metrics that vary, not on `hitRate`.** Turbo's `hitRate` is ~2.4% — one hit in 41
+completed windows. Not degenerate the way core's 0% is, but far too sparse to separate a good
+catalyst type from a bad one. Report it as the honest scoreboard against the +50%/30d goal, and
+judge on `medianExcessVsBenchPct` (primary), `softHitRate` (reached `turbo.softTargetPct`, +20%,
+currently ~22%), and `beatBenchRate` (~56%).
 
 - **Tier 1 — `n < 5`: context only.** Mention it if relevant, but NEVER use it to include, exclude,
   or re-rank a pick. No auto-weighting.
-- **Tier 2 — `n ≥ 5`: MUST be applied.** Turbo has no per-catalystType breakdown (only
-  `turbo.overall`), so this tier applies at the whole-lane level, not per type: if
-  `turbo.overall.n ≥ 5` and `hitRate` is low, that MUST visibly tighten sizing/conviction guidance
-  across ALL picks this run (smaller `catalystSpot.spotSizing.pct`, tighter language on
-  `stopPreCatalyst`) — and say so explicitly in your reasoning when it fires. If `n < 5`, say
-  "prior read, n<5 — context only, no sizing change forced."
-- **Regime caveat (both tiers) — read `hitRate` next to `avgBenchmarkPct`/`regimeNote`, never
-  alone.** A low hitRate while `regimeNote` shows many windows with SPY down is "unproven in a bad
+- **Tier 2 — `n ≥ 5`: MUST be applied — read `turbo.tier2`, don't re-derive it.** Turbo gained a
+  per-catalystType breakdown on 2026-08-13 (backlog #39); earlier versions of this file said it had
+  none, and that is no longer true. `turbo.tier2` is precomputed and already enforces the n ≥ 5
+  floor: `metric`, `overallValue`, `eligible[]`, `laggards[]`, `leaders[]`, `fired`. If this pick's
+  primary `catalystType` is a laggard, it needs visibly higher conviction to justify its
+  `catalystSpot.spotSizing.pct` — say so explicitly (name the type, its metric value, the overall
+  value). If `fired` is false, say "prior read, no n≥5 bucket sits ≥2pp below overall."
+  **Cross-lane note worth acting on:** as of 2026-08-13 `partnership_win` is the laggard in BOTH
+  lanes independently — core -1.6 vs +1.4 (n=12), turbo -3.8 vs +2.0 (n=16). Two different bars,
+  two different windows, 28 completed windows, same answer. That is stronger evidence than either
+  lane alone and should weigh on any partnership-driven turbo thesis.
+- **Whole-lane sizing check still applies.** Independent of tier-2, if `turbo.overall.n ≥ 5` and
+  the lane's rates are weak, that tightens sizing/conviction language across ALL picks this run.
+- **Regime caveat (both tiers) — read any rate next to `avgBenchmarkPct`/`regimeNote`, never
+  alone.** A low rate while `regimeNote` shows many windows with SPY down is "unproven in a bad
   regime," not "turbo doesn't work" — but check the actual `regimeNote` text each run, don't
   assume it. (SPY is a rough broad-market proxy — it won't catch a sector-only selloff; that's a
   known gap in this v1 signal, not a reason to ignore the number.)
-- `turbo.overall.medianMAE` — reference when setting `catalystSpot.spotSizing.pct` and
-  `stopPreCatalyst`: e.g. "measured median drawdown before a turbo hit was X% → don't set the
-  pre-catalyst stop tighter than that, it just kills winners."
-- `scenarioCalibration.optimismBiasBasePct` / `optimismBiasBullPct` — if calibration shows written
-  Base/Bull scenarios have historically run hotter than what actually happened, temper the new
-  Base/Bull `pct` accordingly (the Moon case itself is the thesis and stays as-is).
+- **Stops must clear measured drawdown.** `turbo.overall.medianMAE` is currently around **-24%**,
+  far wider than core's -14%. `entryStrategy.stopLoss.tight` and `catalystSpot.stopPreCatalyst`
+  must sit **wider** than the relevant `medianMAE` — use `turbo.byType[].medianMAE` for this pick's
+  catalystType when that bucket has n ≥ 5, else `turbo.overall.medianMAE` — or state in one line
+  why this setup earns a tighter stop. A core-width stop on a turbo name kills winners on noise.
+- **Scenarios must declare their calibration (`scenarioCalibration.turbo`).** Use the **turbo**
+  block — the figure was split per lane on 2026-08-13 (backlog #39) because the previous pooled
+  number mixed core Base scenarios (~35% median) with turbo ones (~65-100%) across 14d and 30d
+  windows and was meaningless for either. Turbo's own bias currently runs far hotter than core's
+  (+72.7pp vs +23.7pp). State the `optimismBiasBasePct` you wrote against; if the written Base
+  exceeds `realizedMaxGainP75Pct`, name the horizon it assumes and the driver that gets it there.
+  Read `horizonCaveat` first. The Moon case itself is the thesis and stays as-is.
 - `nearMissCounterfactual.turbo` — if present, shows whether past turbo top-5 cuts actually beat
   what got rejected; use as a sanity check on how strict the bar should be, not a hard cutoff.
 - **Ranking is upside-first per the current spec** — base-case % primary, moon % tiebreaker (see

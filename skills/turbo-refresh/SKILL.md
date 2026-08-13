@@ -36,11 +36,13 @@ Two more turbo-specific differences:
   `rankTurboReports(getAllSpeculativeReports())` with no `reportStage` filter, so a pick whose
   binary event already resolved stays on the leaderboard indefinitely, still claiming its
   pre-event upside. On `/catalyst` those get filtered out. Here you must catch them.
-- **Turbo has no `byType` breakdown in `skill-feedback.json`** — only `turbo.overall`. There is no
-  `tier2` block for this lane, so **every feedback signal here is Tier 1: context only.** Never
-  use it to re-rank or resize.
+- **Turbo now HAS a `byType` breakdown and its own `tier2`** (added 2026-08-13, backlog #39 —
+  earlier versions of this file said otherwise). Read `turbo.tier2` the same way the core lane
+  reads `core.tier2`: it is precomputed and already enforces the n ≥ 5 floor. It may tighten
+  sizing/conviction language on a rewritten report, but it **never changes leaderboard order** —
+  that comes from `basePct` alone.
 
-## Step 0: Read the feedback prior (advisory, Tier 1 only)
+## Step 0: Read the feedback prior
 
 Check `web/data/skill-feedback.json`; skip if missing. Use the **`turbo`** block, not `core`:
 
@@ -49,8 +51,14 @@ Check `web/data/skill-feedback.json`; skip if missing. Use the **`turbo`** block
 - `turbo.overall.medianMAE` — **currently around -24%, far wider than core's -14%.**
   `entryStrategy.stopLoss.tight` must sit wider than this or carry a one-line justification.
   A core-width stop on a turbo name is guaranteed to fire on noise.
-- `turbo.overall.hitRate` / `softHitRate` — read next to `avgBenchmarkPct` and `regimeNote`.
-- `scenarioCalibration` — same rule as everywhere: state the `optimismBiasBasePct` you wrote
+- **Rank on metrics that vary, not `hitRate`.** Turbo's `hitRate` is ~2.4% (1 hit in 41) — not
+  degenerate like core's 0%, but close. `softHitRate` (~22%), `medianExcessVsBenchPct` and
+  `beatBenchRate` (~56%) carry far more signal. Report `hitRate` as the honest scoreboard.
+- `turbo.tier2` — precomputed laggards/leaders at n ≥ 5. If a pick's `catalystType` is a laggard,
+  it needs visibly higher conviction to keep its sizing. Note as of 2026-08-13 `partnership_win`
+  is the laggard in **both** lanes independently (core -1.6 vs +1.4 n=12; turbo -3.8 vs +2.0
+  n=16) — a stronger signal than either lane alone.
+- `scenarioCalibration.turbo` — same rule as everywhere: state the `optimismBiasBasePct` you wrote
   against, and if Base exceeds `realizedMaxGainP75Pct`, name the horizon. This matters more here
   than anywhere, because Base **is the sort key** for the whole board.
 

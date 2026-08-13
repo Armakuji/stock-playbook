@@ -33,7 +33,7 @@ read `core.tier2` rather than re-deriving it. Two fields bind on every report yo
 - `stopGuidance` — `entryStrategy.stopLoss.tight` must be **wider** than the relevant `medianMAE`
   (per-type when that bucket has n ≥ 5, else `core.overall.medianMAE`) or carry a one-line
   justification.
-- `scenarioCalibration` — state the `optimismBiasBasePct` you wrote against; if Base exceeds
+- `scenarioCalibration.core` — state the `optimismBiasBasePct` you wrote against; if Base exceeds
   `realizedMaxGainP75Pct`, name the horizon it assumes. Read `horizonCaveat` first.
 
 ## Step 1: Refresh live prices FIRST — before writing anything
