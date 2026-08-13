@@ -1,0 +1,211 @@
+{
+  "ticker": "MRVL",
+  "companyName": "Marvell Technology, Inc.",
+  "companyDescription": "AI custom silicon (XPU/ASIC) + data center interconnect · $2B NVIDIA strategic investment + NVLink partnership · new CXL/optical AI-memory portfolio (Structera, Bravera SC6, Photonic Fabric) unveiled at FMS 2026 · $250M India R&D expansion",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-10T18:00:00.000Z",
+  "price": 218.72,
+  "priceChange": 4.03,
+  "priceNote": "Roughly flat versus the $218.59 level five days ago, but up 4.03% intraday today as the market continues digesting the FMS 2026 AI-memory portfolio (Structera X CXL platform, Bravera SC6 SSD controller, Photonic Fabric) alongside two new tailwinds since the last report: a $250M, 3-year India R&D expansion (Bangalore/Hyderabad) and reports of a possible FCC ban on new Chinese optical transceivers, which would benefit non-Chinese suppliers like Marvell.",
+  "marketCap": "~$191.4B",
+  "sector": "Technology / Semiconductors (AI Custom Silicon)",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 79,
+  "summary": "Marvell's stock is consolidating near the level it rallied to on the FMS 2026 AI-memory portfolio launch (Aug 3-4), with two incremental positives since: a $250M, 3-year commitment to expand India R&D headcount (Bangalore/Hyderabad) deepening the AI-semiconductor engineering base, and reports the FCC may ban new Chinese optical transceivers — a policy tailwind for non-Chinese suppliers like Marvell if it happens. Morgan Stanley flagged Google's potential 'Frozen v2' AI chip as a future custom-silicon opportunity but kept an Equal Weight ($195 target, below consensus). Q2 FY2027 earnings land Aug 27, 2026, with an Investor Day following Oct 6 — both still the real near-term proof points; today's move is incremental follow-through, not a new step-change catalyst.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q2 FY2027 Earnings",
+      "description": "Confirmed for Aug 27, 2026. Prior guide was $2.7B revenue (±5%), EPS ~$0.91 — watch for confirmation the AI/data-center growth rate is holding after the FMS 2026 product launches and the new India R&D commitment.",
+      "urgencyLabel": "~2 WEEKS",
+      "dateBadge": "Aug 27, 2026",
+      "catalystDate": "2026-08-27",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🌏",
+      "name": "$250M India R&D Expansion",
+      "description": "New since the last report: Marvell will deploy $250M over 3 years to expand its Bangalore and Hyderabad facilities, doubling headcount and deepening AI-semiconductor R&D capacity — a structural investment in the custom-silicon design-win pipeline.",
+      "urgencyLabel": "RECENT",
+      "dateBadge": "Aug 2026",
+      "catalystDate": "2026-08-08",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "🇺🇸",
+      "name": "Potential FCC Ban on Chinese Optical Transceivers",
+      "description": "Reports of a possible FCC ban on new Chinese optical transceivers lifted MRVL and other non-Chinese suppliers today — a policy tailwind that would benefit Marvell's optical/interconnect business if it materializes; not yet confirmed policy.",
+      "urgencyLabel": "UNCONFIRMED",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "🗓️",
+      "name": "Investor Day",
+      "description": "Scheduled for Oct 6, 2026 — typically a venue for updated multi-year guidance and TAM framing.",
+      "urgencyLabel": "~8 WEEKS",
+      "dateBadge": "Oct 6, 2026",
+      "catalystDate": "2026-10-06",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Today's move is largely a continuation of the Aug 3-4 FMS rally plus incremental policy/expansion news, not a fresh confirmed catalyst — the real test remains Aug 27 earnings",
+    "Analyst target dispersion is real: consensus $245.45-256.91 vs Morgan Stanley's more conservative $195 (Equal Weight) — not every analyst is convinced the AI-memory portfolio changes the growth trajectory",
+    "The FCC transceiver-ban tailwind is speculative/unconfirmed policy — a walk-back would remove one of today's supporting narratives",
+    "Sell-the-news pattern has already played out once on this exact stock (the Jun 22 S&P 500 inclusion pump-and-dump, -22% to -28% reversal)",
+    "Valuation remains rich — still ~74-80x+ forward earnings even after some digestion, with no new earnings confirmation since the last report",
+    "Severe customer concentration — 45% of revenue flows through a single distributor, 82% from the top 10 customers"
+  ],
+  "estimateDates": [
+    { "event": "Q2 FY2027 Earnings", "dateRange": "Aug 27, 2026", "note": "Confirmed date — prior guide $2.7B revenue (±5%), EPS ~$0.91", "est": "est. $2.7B rev", "highlight": "yellow" },
+    { "event": "Investor Day", "dateRange": "Oct 6, 2026", "note": "Multi-year guidance / TAM update venue", "est": "n/a", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -20, "price": 174.98 },
+    { "label": "Base", "color": "yellow", "pct": 12.3, "price": 245.60 },
+    { "label": "Bull", "color": "green", "pct": 60.0, "price": 349.95 },
+    { "label": "Moon", "color": "purple", "pct": 82.9, "price": 400.00 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (43 analysts)", "target": 256.91, "rating": "Strong Buy", "note": "Implies +17.5% from current price; range $90-$400" },
+    { "firm": "Alternate consensus aggregation (Buy-rated only)", "target": 252.45, "rating": "Buy", "note": "High $400, low $90" },
+    { "firm": "Morgan Stanley (Timothy Arcuri)", "target": 195, "rating": "Equal Weight", "note": "Reiterated despite flagging Google's Frozen v2 as a future opportunity — most conservative named target" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held at 3.50-3.75% on Jul 29, 2026 (3 hawkish dissents), though the weak Jul NFP (-23K, Aug 7) has since pulled hike odds down sharply. Next FOMC is Sep 15-16, 2026, after MRVL's Aug 27 earnings.",
+    "inflationNote": "Core PCE still 3.3% YoY. CPI (Aug 12) is the next data point that could move sentiment before MRVL's own Aug 27 print.",
+    "sectorImpact": "High-multiple AI-infrastructure names like MRVL (~75-85x+ forward earnings) remain more exposed to a higher-for-longer repricing than the broad market if the Fed's tone hardens.",
+    "summary": "MEDIUM — the AI-infrastructure fundamentals (NVIDIA partnership, new AI-memory portfolio, India R&D expansion) are real and largely macro-independent, but MRVL's demonstrated sensitivity to sentiment/flow shifts means a genuine hawkish surprise before Aug 27 would likely hit this name harder than a typical core semis holding."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 218.72, "note": "Current price, consolidating near the post-FMS-2026 rally level", "timing": "Now" },
+      { "label": "Entry 2", "level": 195, "rangeMax": 205, "note": "Pullback zone if today's incremental news doesn't hold into Aug 27 earnings", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 175, "note": "Deep dip — broad semis selloff or a hawkish Fed surprise before Aug 27", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 245.60, "pct": 12.3, "note": "Base — consensus average, stock holds current levels into earnings" },
+    "tp2": { "price": 349.95, "pct": 60.0, "note": "Bull — clean Aug 27 beat + AI-memory portfolio and India R&D investment show traction" },
+    "tp3": { "price": 400.00, "pct": 82.9, "note": "Moon — Investor Day (Oct 6) raises multi-year guidance + design-win funnel accelerates, hits the high analyst target", "moon": true },
+    "stopLoss": {
+      "tight": 196.85, "tightPct": -10.0, "tightNote": "Below Entry 2 zone — today's incremental news failing to hold into Aug 27",
+      "hard": 174.98, "hardPct": -20.0, "hardNote": "Deep breach — a genuine thesis warning (customer concentration event, hawkish Fed shock, or the FCC/India tailwinds evaporating)",
+      "riskReward": "6.0 : 1", "rrNote": "From Entry 2 ($200 mid) tight stop vs TP2", "rrWarning": "Strong R/R, but this stock has already shown it can give back a big pop fast (Jun 22 inclusion reversal) — size with that precedent in mind"
+    },
+    "verdict": "BUY — the AI-infrastructure thesis keeps gaining incremental supporting evidence (FMS 2026 portfolio, India R&D expansion, potential FCC transceiver tailwind), but today's move is follow-through, not a fresh catalyst. DCA now, add on any pullback ahead of the real test on Aug 27.",
+    "approach": "DCA"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "MRVL's own pattern shows the stock moving on real, dated product/policy news (FMS 2026, today's India/FCC news) well ahead of the actual earnings date, rather than a slow drift into the print.",
+    "preRunupTiming": "3-4 weeks before earnings, on incremental product/policy newsflow",
+    "preRunupPct": "+4% to +13% on individual news days this cycle (Aug 3-4 FMS launch, today's follow-through)",
+    "postWin": {
+      "avgPct": 12.81,
+      "range": "+4% to +13%",
+      "note": "MRVL's own Aug 3-4, 2026 FMS AI-memory portfolio launch drove a same-day +12.81% pop; today's +4.03% is a smaller continuation move on incremental India/FCC news.",
+      "exampleDate": "Aug 2026"
+    },
+    "postLose": {
+      "avgPct": -22,
+      "range": "-22% to -28%",
+      "note": "The Jun 22, 2026 S&P 500 inclusion pump-and-dump reversed -22% to -28% once the news was fully priced in — the clearest same-company precedent for how sharply this stock can give back a big move.",
+      "exampleDate": "Jun-Jul 2026"
+    },
+    "spotSizing": {
+      "pct": 15,
+      "reason": "Core-holding sizing appropriate given the real, multi-pronged AI-infrastructure thesis (NVIDIA partnership, FMS 2026 portfolio, India R&D, potential FCC tailwind), but today's move alone doesn't warrant increasing conviction beyond the existing position size ahead of Aug 27 earnings."
+    },
+    "stopPreCatalyst": { "pct": -10, "price": 196.85, "note": "Below Entry 2 zone ahead of Aug 27 earnings = today's incremental news failing to hold" },
+    "stopPostCatalyst": { "pct": -15, "note": "If Aug 27 earnings miss or guide down despite the FMS/India/FCC tailwinds, exit — those narratives would have failed to translate into numbers" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "MRVL",
+      "event": "S&P 500 Inclusion Sell-the-News Reversal",
+      "date": "Jun-Jul 2026",
+      "movePct": -22,
+      "days": 14,
+      "outcome": "bad",
+      "note": "Same-company, most directly relevant precedent for how sharply this stock can give back a big pop once news is fully priced in."
+    },
+    {
+      "ticker": "MRVL",
+      "event": "FMS 2026 AI memory portfolio launch (Structera CXL, Bravera SSD controller, Photonic Fabric)",
+      "date": "Aug 2026",
+      "movePct": 12.81,
+      "days": 1,
+      "outcome": "good",
+      "note": "The catalyst that set today's consolidation level — a real, dated product announcement."
+    },
+    {
+      "ticker": "MRVL",
+      "event": "Today's follow-through on India R&D expansion + potential FCC transceiver-ban tailwind",
+      "date": "Aug 10, 2026",
+      "movePct": 4.03,
+      "days": 1,
+      "outcome": "good",
+      "note": "Smaller, incremental positive-news move — shows continued but decelerating momentum versus the initial FMS 2026 pop."
+    }
+  ],
+  "sources": [
+    "https://www.timothysykes.com/news/marvell-technology-inc-mrvl-news-2026_08_10/",
+    "https://www.tradingkey.com/news/market-movers/262092808-market-movers-mrvl-20260810",
+    "https://investor.marvell.com/news-events/press-releases/detail/1030/marvell-advances-ai-memory-infrastructure-portfolio-to-accelerate-agentic-ai-inference",
+    "https://public.com/stocks/mrvl/forecast-price-target"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "หุ้น Marvell กำลัง consolidate ใกล้ระดับที่บวกแรงจากการเปิดตัว AI-memory portfolio ที่งาน FMS 2026 (3-4 ส.ค.) โดยมีข่าวบวกเพิ่มเติม 2 อย่างตั้งแต่รายงานก่อน: มุ่งมั่นลงทุน $250M ระยะ 3 ปีขยาย R&D ที่อินเดีย (Bangalore/Hyderabad) เสริมฐานวิศวกรรม AI semiconductor และรายงานว่า FCC อาจแบน optical transceiver จีนใหม่ — แรงหนุนเชิงนโยบายสำหรับผู้ผลิตนอกจีนแบบ Marvell ถ้าเกิดขึ้นจริง Morgan Stanley ชี้ Google Frozen v2 AI chip เป็นโอกาส custom-silicon ในอนาคต แต่ยังคง Equal Weight (เป้า $195 ต่ำกว่า consensus) ผลประกอบการ Q2 FY2027 มา 27 ส.ค. 2026 ตามด้วย Investor Day 6 ต.ค. — ยังเป็นจุดพิสูจน์จริงถัดไป การขึ้นวันนี้เป็นการต่อเนื่อง ไม่ใช่ catalyst ใหม่ระดับเปลี่ยนเกม",
+      "priceNote": "เกือบทรงตัวเทียบระดับ $218.59 เมื่อ 5 วันก่อน แต่บวก 4.03% ระหว่างวันนี้ ขณะตลาดยังคงย่อยข่าว AI-memory portfolio จากงาน FMS 2026 บวกแรงหนุนใหม่ 2 อย่างตั้งแต่รายงานก่อน: ขยาย R&D อินเดีย $250M ระยะ 3 ปี และรายงานความเป็นไปได้ที่ FCC จะแบน optical transceiver จีน ซึ่งเป็นประโยชน์ต่อผู้ผลิตนอกจีนแบบ Marvell",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "ผลประกอบการ Q2 FY2027", "description": "ยืนยันวันที่ 27 ส.ค. 2026 guide เดิม revenue $2.7B (±5%) EPS ~$0.91 — จับตาว่าการเติบโต AI/data center ยังแข็งแรงหลัง FMS 2026 และการลงทุน R&D อินเดียใหม่" },
+        { "name": "ขยาย R&D อินเดีย $250M", "description": "ใหม่ตั้งแต่รายงานก่อน: Marvell จะลงทุน $250M ระยะ 3 ปีขยายโรงงาน Bangalore และ Hyderabad เพิ่มจำนวนพนักงานเป็นสองเท่า เสริมขีดความสามารถ R&D AI semiconductor — การลงทุนเชิงโครงสร้างใน pipeline design-win custom-silicon" },
+        { "name": "การแบน Optical Transceiver จีนที่อาจเกิดขึ้นโดย FCC", "description": "รายงานความเป็นไปได้ที่ FCC จะแบน optical transceiver จีนใหม่ ดันหุ้น MRVL และผู้ผลิตนอกจีนอื่นๆ วันนี้ — แรงหนุนเชิงนโยบายที่จะเป็นประโยชน์ต่อธุรกิจ optical/interconnect ของ Marvell ถ้าเกิดขึ้นจริง ยังไม่ใช่นโยบายที่ยืนยันแล้ว" },
+        { "name": "Investor Day", "description": "กำหนดจัด 6 ต.ค. 2026 — มักเป็นเวทีอัปเดต guidance หลายปีและกรอบ TAM ใหม่" }
+      ],
+      "risks": [
+        "การขึ้นวันนี้ส่วนใหญ่เป็นการต่อเนื่องจากการ rally 3-4 ส.ค. บวกข่าวนโยบาย/การขยายตัวที่เพิ่มเติม ไม่ใช่ catalyst ใหม่ที่ยืนยันแล้ว — บททดสอบจริงยังเป็นผลประกอบการ 27 ส.ค.",
+        "เป้านักวิเคราะห์กระจายจริง: consensus $245.45-256.91 vs Morgan Stanley ที่ระมัดระวังกว่าที่ $195 (Equal Weight) — ไม่ใช่ทุกคนที่เชื่อว่า AI-memory portfolio เปลี่ยนวิถีการเติบโต",
+        "แรงหนุนจากการแบน FCC ยังเป็นนโยบายเก็งกำไร/ยังไม่ยืนยัน — ถ้าพลิกกลับจะดึง narrative สนับสนุนวันนี้ออกไปหนึ่งตัว",
+        "รูปแบบ sell-the-news เคยเกิดขึ้นแล้วจริงกับหุ้นตัวนี้ (การเข้า S&P 500 22 มิ.ย. ร่วง -22% ถึง -28%)",
+        "Valuation ยังสูงชัน — ยัง ~74-80x+ forward earnings แม้จะย่อยข่าวไปบ้าง โดยยังไม่มีการยืนยันผลประกอบการใหม่ตั้งแต่รายงานก่อน",
+        "Customer concentration รุนแรง — 45% revenue ผ่าน distributor รายเดียว 82% จาก top 10 ลูกค้า"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คง 3.50-3.75% เมื่อ 29 ก.ค. 2026 (dissent 3 เสียง) แม้ NFP อ่อนแอ (-23K, 7 ส.ค.) จะดึงความน่าจะเป็นขึ้นดอกเบี้ยลงแล้ว FOMC ถัดไป 15-16 ก.ย. มาหลังผลประกอบการ MRVL 27 ส.ค.",
+        "inflationNote": "Core PCE ยังอยู่ 3.3% YoY CPI (12 ส.ค.) เป็นข้อมูลถัดไปที่อาจขยับ sentiment ก่อนผลประกอบการ MRVL เอง 27 ส.ค.",
+        "sectorImpact": "หุ้น AI-infrastructure valuation สูง (~75-85x+ forward earnings) เสี่ยง repricing มากกว่าตลาดรวมถ้า Fed เอียง hawkish มากขึ้น",
+        "summary": "ปานกลาง — fundamental AI-infrastructure จริงและ macro-independent ส่วนใหญ่ (partnership NVIDIA, AI-memory portfolio ใหม่, ขยาย R&D อินเดีย) แต่ MRVL แสดงความ sensitive ต่อ sentiment/flow มาแล้ว hawkish surprise จริงก่อน 27 ส.ค. น่าจะกระทบหุ้นนี้แรงกว่าหุ้น semis core ทั่วไป"
+      },
+      "entryStrategy": {
+        "verdict": "BUY — thesis AI-infrastructure ยังได้หลักฐานสนับสนุนเพิ่มเติมต่อเนื่อง (FMS 2026 portfolio, ขยาย R&D อินเดีย, แรงหนุน FCC ที่อาจเกิดขึ้น) แต่การขึ้นวันนี้คือการต่อเนื่อง ไม่ใช่ catalyst ใหม่ DCA ตอนนี้ เพิ่มถ้าย่อก่อนบททดสอบจริงวันที่ 27 ส.ค.",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน consolidate ใกล้ระดับหลัง rally FMS 2026", "timing": "ตอนนี้" },
+          { "note": "โซนย่อถ้าข่าววันนี้ไม่คงอยู่ถึงผลประกอบการ 27 ส.ค.", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงลึก — semis selloff กว้าง หรือ Fed hawkish surprise ก่อน 27 ส.ค.", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — consensus average หุ้นรักษาระดับปัจจุบันเข้าสู่ผลประกอบการ" },
+        "tp2": { "note": "Bull — บีทผลประกอบการ 27 ส.ค. สะอาด + AI-memory portfolio และการลงทุน R&D อินเดียมี traction" },
+        "tp3": { "note": "Moon — Investor Day (6 ต.ค.) ปรับ guidance หลายปีขึ้น + pipeline design-win เร่งตัว แตะเป้าสูงสุดของนักวิเคราะห์", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุดโซน Entry 2 = ข่าวเพิ่มเติมวันนี้ไม่คงอยู่ถึงผลประกอบการ 27 ส.ค.",
+          "hardNote": "หลุดลึก = สัญญาณเตือนระดับ thesis จริง (customer concentration event, Fed hawkish shock, หรือแรงหนุน FCC/อินเดียหายไป)",
+          "rrNote": "จาก Entry 2 ($200 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R ดีมาก แต่หุ้นตัวนี้เคยคืนกำไรก้อนใหญ่เร็วมาแล้ว (การกลับตัวหลังเข้า S&P 500 22 มิ.ย.) ควร size ตามประวัตินี้"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q2 FY2027", "note": "ยืนยันวันที่ 27 ส.ค. 2026" },
+        { "event": "Investor Day", "note": "6 ต.ค. 2026" }
+      ]
+    }
+  }
+}

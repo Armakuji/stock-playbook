@@ -470,6 +470,23 @@ dev server) เห็น class ครบ ไม่มี error ใน server log
   **Verify:** byte-diff Step 0 ทั้งสองไฟล์ ✅ · re-read `turbo-list.md` เต็มไฟล์ยืนยัน survival rule + ranking axis + step numbering ปกติ ✅ · side-by-side diff ย่อหน้า live-price ทั้ง 3 skill (`stock-report`/`turbo-report`/`dca-report`) — convention/threshold ตรงกัน (12h) ทั้งหมด ✅ · `node scripts/validate-reports.mjs` ผ่าน 0 blocking (113 reports, 76 warning เดิม ไม่เปลี่ยนจากก่อนหน้า — งานนี้ไม่แตะ data เลยตามคาด) ✅
   **เกี่ยวพัน:** ไม่แตะ #11/#32 (ranking axis decision) และ #28 (small-cap quota/SMH — ยังรอ data ถึง ~2026-07-21)
 
+## 36. ✅ DONE — Feedback loop ที่ใช้งานได้จริง — เลิก rank ด้วย hitRate ที่เป็น 0 ทุก bucket (2026-08-13)
+
+**ปัญหา:** loop จาก #25/#27 ต่อสายครบแล้ว แต่ **ยิงไม่ออก**. North Star bar (+30%/14d) วัดจริงได้ `hitRate = 0%` ใน *ทุก* bucket (0/94 core, turbo 0/36) → กฎ Tier-2 ที่เขียนว่า "ถ้า bucket ไหน hitRate ต่ำกว่า overall ให้กดน้ำหนัก" **ไม่มีวันเข้าเงื่อนไข** (0 vs 0 = ไม่ diverge) ทั้ง `/catalyst-list` และ `stock-report` จึงอ่าน prior ทุกครั้งแล้วไม่ได้อะไรกลับมา. ปัญหาต่อเนื่องอีก 2 จุดที่ data ชี้ชัด: (ก) `optimismBiasBasePct` +33pp (Base median 35.5% vs realized 1.8%) แต่ prompt สั่งแค่ "temper accordingly" — วัดผลไม่ได้; (ข) stop tight ตาม template ~7–12% แคบกว่า `medianMAE` จริง (−14% core / −24% turbo) → pick กลาง ๆ โดน stop ออกก่อนเสมอ
+
+**ทำ:**
+1. `scripts/build-skill-feedback.mjs` — เพิ่ม soft target (`CORE_SOFT_TARGET_PCT` +10% / `TURBO_SOFT_TARGET_PCT` +20%) → `softHitRate`; เพิ่ม `excessVsBenchPct` ต่อ entry → `medianExcessVsBenchPct` + `beatBenchRate`; เพิ่ม `buildTier2()` ที่ precompute `metric`/`overallValue`/`eligible`/`laggards`/`leaders`/`fired` (บังคับ n ≥ 5 ในโค้ด ไม่ปล่อยให้ model เดา); เพิ่ม `stopGuidance` + `scenarioCalibration.realizedMaxGainP75Pct/P90Pct` + `horizonCaveat` + `rule`; sort `byType` ด้วย metric ที่มี variance แทน hitRate
+2. `.claude/commands/catalyst-list.md` Step 0 — เลิก rank ด้วย hitRate (ยังรายงานไว้เป็น scoreboard), อ่าน `core.tier2` ตรง ๆ, เพิ่มบรรทัด stops/scenarios/leaders ใน print block
+3. `skills/stock-report/SKILL.md` Step 0 — กฎ stop ต้องกว้างกว่า `medianBucket MAE` หรือต้องมีเหตุผล 1 บรรทัด · กฎ scenario ต้องประกาศ bias ที่เขียนอิงและระบุ horizon ถ้า Base > P75 (Base > P90 โดยไม่บอก horizon = ไม่ผ่าน) + แก้แถว `stopLoss` ใน Step 2 table
+
+**ไฟล์:** `scripts/build-skill-feedback.mjs` · `.claude/commands/catalyst-list.md` · `skills/stock-report/SKILL.md` · (output: `web/data/skill-feedback.json`)
+
+**เป้า/ผลจริง:** Tier-2 ยิงออกจริงครั้งแรก → `medianExcessVsBenchPct` overall +1.4pp, laggard = `partnership_win` (−1.6, −3pp, n=12, beatBench 41.7% เป็น bucket เดียวที่ต่ำกว่า 50%), leader = `satellite_launch` (+7.4pp, softHit 50%, n=8). core softHitRate 12.8% · beatBenchRate 62.8% — มี variance ให้ rank แล้ว
+
+**Verify:** รัน 2 รอบ diff เท่ากัน (deterministic ยกเว้น `generatedAt`) ✅ · รันบน dir เปล่า → `tier2.metric = null`, `fired = false`, ไม่ crash ✅ · ไม่มีไฟล์ใน `web/lib`/`web/app` อ่าน shape นี้ (consumer เป็น prompt ล้วน) → เพิ่ม field ไม่กระทบ `/backtest` page ✅ · `node scripts/validate-reports.mjs` 0 blocking (221 reports, 7 warning เดิม) ✅
+
+**เกี่ยวพัน:** ต่อจาก #25 (loop) + #27 (regime/benchmark) · ยังไม่แตะ turbo lane prompts (`turbo-list.md` / `turbo-report`) — ตัวเลข soft/tier2 มีให้ใช้แล้วใน JSON แต่ prompt ฝั่ง turbo ยังอ้าง hitRate อยู่ → งานต่อไป · `LAGGARD_MARGIN_PP = 2` เป็น judgement call ควร revisit เมื่อ n ต่อ bucket > ~20
+
 ## ยังไม่เลือกทำ (ไว้พิจารณาทีหลัง)
 - **Earned category ranking + expectancy-based sizing** *(idea 5+9)* — ลบ sector priority (Tech→AI→Space) ให้ category ลอยขึ้น top ตาม hit-rate จริง + size ตาม expectancy (`hitRate × upside ÷ MAE`) **⚠️ ขึ้นกับ #9 มี sample พอก่อน** ไม่งั้น optimize บน noise — ต้องใส่ shrinkage/prior + cap อิทธิพลตอน N น้อย
 - **Portfolio-level correlation view** — holding (AVGO/NVDA/MRVL/INTC/PLTR/ASTS) correlate สูง เด้งพร้อมกันตาม AI sentiment; view exposure/concentration/powder *(#10 ปิดแล้ว — เป็น report-level warning ใน `/catalyst` เท่านั้น ไอเดียนี้ยังแยกเป็นคนละเรื่อง: cross-holding exposure view ต่อ user's actual portfolio/journal ไม่ใช่ต่อ dashboard picks — ไม่ทับซ้อนแล้ว เป็น idea ที่ใหญ่กว่า ทำทีหลังได้)*

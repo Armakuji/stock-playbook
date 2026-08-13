@@ -1,71 +1,90 @@
 {
-  "generatedAt": "2026-07-10T09:33:45.864Z",
-  "windowNote": "core = +30% within 14 days of report price (catalyst plays) · turbo = +50% within 30 days (moonshot plays) · MAE = max adverse excursion (worst drawdown before target hit, or over the window if never hit) · GUARDRAIL (2-tier, backlog #27): n < 5 in a bucket = context only, NEVER a reason to include/exclude/re-rank a pick. n >= 5 = MUST be applied — if that bucket's hitRate is clearly below the overall rate, picks of that type need visibly higher upside/conviction to make top 5, and screening output must say when this rule fired (or that no bucket met the n>=5+divergence bar). REGIME CAVEAT (both tiers): always read hitRate next to avgBenchmarkPct/regimeNote — a 0% hit-rate measured in a deeply negative SPY window means \"unproven in a bad regime\", not \"this type doesn't work\" (e.g. earnings_beat 0/12 measured during the Jul 2026 SOX selloff).",
+  "generatedAt": "2026-08-13T04:13:30.256Z",
+  "windowNote": "core = +30% within 14 days of report price (catalyst plays) · turbo = +50% within 30 days (moonshot plays) · MAE = max adverse excursion (worst drawdown before target hit, or over the window if never hit) · SOFT TARGETS (backlog #36): North Star hitRate currently reads 0% in EVERY bucket, so it cannot rank anything. softHitRate (+10% core / +20% turbo), medianExcessVsBenchPct and beatBenchRate are the metrics that discriminate — rank on those, and keep reporting hitRate as the honest scoreboard against the stated goal. · GUARDRAIL (2-tier, backlog #27): n < 5 in a bucket = context only, NEVER a reason to include/exclude/re-rank a pick. n >= 5 = MUST be applied — but do NOT re-derive this by eye: read `core.tier2`, which precomputes the eligible buckets, the laggards, and whether the rule fired. Screening output must state the tier2 verdict either way. · REGIME CAVEAT (both tiers): always read any rate next to avgBenchmarkPct/regimeNote — a 0% hit-rate measured in a deeply negative SPY window means \"unproven in a bad regime\", not \"this type doesn't work\". Check the actual regimeNote text each run; SPY does not see a sector-only selloff, a known gap in this rough v1 signal.",
   "core": {
     "windowDays": 14,
     "targetPct": 30,
-    "n": 67,
-    "totalComplete": 26,
-    "totalAccumulating": 41,
+    "softTargetPct": 10,
+    "n": 130,
+    "totalComplete": 94,
+    "totalAccumulating": 36,
     "overall": {
-      "n": 26,
+      "n": 94,
       "hitRate": 0,
-      "medianMAE": -10.7,
-      "avgMaxGain": 4.1,
+      "softHitRate": 12.8,
+      "medianExcessVsBenchPct": 1.4,
+      "beatBenchRate": 62.8,
+      "medianMAE": -14,
+      "avgMaxGain": 2.7,
       "medianTimeToHitDays": null,
-      "avgBenchmarkPct": 1.5,
-      "regimeNote": "0/26 windows had SPY down >2%"
+      "avgBenchmarkPct": 0.6,
+      "regimeNote": "5/94 windows had SPY down >2%"
     },
     "byType": [
       {
-        "type": "product_launch",
-        "total": 10,
+        "type": "satellite_launch",
+        "total": 9,
+        "n": 8,
+        "hitRate": 0,
+        "softHitRate": 50,
+        "medianExcessVsBenchPct": 7.4,
+        "beatBenchRate": 62.5,
+        "medianMAE": -19.4,
+        "avgMaxGain": 6.1,
+        "medianTimeToHitDays": null,
+        "avgBenchmarkPct": 0.7,
+        "regimeNote": "0/8 windows had SPY down >2%"
+      },
+      {
+        "type": "regulatory_approval",
+        "total": 7,
+        "n": 6,
+        "hitRate": 0,
+        "softHitRate": 16.7,
+        "medianExcessVsBenchPct": 3.3,
+        "beatBenchRate": 66.7,
+        "medianMAE": -9.3,
+        "avgMaxGain": 4.7,
+        "medianTimeToHitDays": null,
+        "avgBenchmarkPct": 1.7,
+        "regimeNote": "0/6 windows had SPY down >2%"
+      },
+      {
+        "type": "fda_decision",
+        "total": 4,
         "n": 3,
         "hitRate": 0,
-        "medianMAE": -17.5,
-        "avgMaxGain": 1.9,
+        "softHitRate": 0,
+        "medianExcessVsBenchPct": 2,
+        "beatBenchRate": 100,
+        "medianMAE": -13.7,
+        "avgMaxGain": 2.5,
         "medianTimeToHitDays": null,
-        "avgBenchmarkPct": 1.9,
+        "avgBenchmarkPct": -0.9,
         "regimeNote": "0/3 windows had SPY down >2%"
       },
       {
         "type": "earnings_beat",
-        "total": 31,
-        "n": 12,
+        "total": 60,
+        "n": 42,
         "hitRate": 0,
-        "medianMAE": -8.8,
-        "avgMaxGain": 3.1,
+        "softHitRate": 7.1,
+        "medianExcessVsBenchPct": 1.8,
+        "beatBenchRate": 66.7,
+        "medianMAE": -9.6,
+        "avgMaxGain": 2.7,
         "medianTimeToHitDays": null,
-        "avgBenchmarkPct": 1.6,
-        "regimeNote": "0/12 windows had SPY down >2%"
-      },
-      {
-        "type": "satellite_launch",
-        "total": 7,
-        "n": 4,
-        "hitRate": 0,
-        "medianMAE": -17.8,
-        "avgMaxGain": 9.8,
-        "medianTimeToHitDays": null,
-        "avgBenchmarkPct": 0.6,
-        "regimeNote": "0/4 windows had SPY down >2%"
-      },
-      {
-        "type": "delivery_beat",
-        "total": 5,
-        "n": 1,
-        "hitRate": 0,
-        "medianMAE": -6.3,
-        "avgMaxGain": 6.2,
-        "medianTimeToHitDays": null,
-        "avgBenchmarkPct": 0.1,
-        "regimeNote": "0/1 windows had SPY down >2%"
+        "avgBenchmarkPct": 0.5,
+        "regimeNote": "5/42 windows had SPY down >2%"
       },
       {
         "type": "foundry_validation",
         "total": 2,
         "n": 2,
         "hitRate": 0,
+        "softHitRate": 0,
+        "medianExcessVsBenchPct": 1.6,
+        "beatBenchRate": 100,
         "medianMAE": -16.1,
         "avgMaxGain": 1.7,
         "medianTimeToHitDays": null,
@@ -73,80 +92,196 @@
         "regimeNote": "0/2 windows had SPY down >2%"
       },
       {
-        "type": "regulatory_approval",
-        "total": 3,
-        "n": 1,
+        "type": "product_launch",
+        "total": 15,
+        "n": 14,
         "hitRate": 0,
-        "medianMAE": -11.5,
-        "avgMaxGain": 6.6,
+        "softHitRate": 14.3,
+        "medianExcessVsBenchPct": 1,
+        "beatBenchRate": 57.1,
+        "medianMAE": -17,
+        "avgMaxGain": 1.9,
         "medianTimeToHitDays": null,
-        "avgBenchmarkPct": 3.1,
-        "regimeNote": "0/1 windows had SPY down >2%"
+        "avgBenchmarkPct": 0.4,
+        "regimeNote": "0/14 windows had SPY down >2%"
+      },
+      {
+        "type": "delivery_beat",
+        "total": 8,
+        "n": 7,
+        "hitRate": 0,
+        "softHitRate": 0,
+        "medianExcessVsBenchPct": 0.3,
+        "beatBenchRate": 57.1,
+        "medianMAE": -18.3,
+        "avgMaxGain": 0.1,
+        "medianTimeToHitDays": null,
+        "avgBenchmarkPct": -0.4,
+        "regimeNote": "0/7 windows had SPY down >2%"
       },
       {
         "type": "partnership_win",
-        "total": 8,
-        "n": 3,
+        "total": 17,
+        "n": 12,
         "hitRate": 0,
-        "medianMAE": -13.8,
-        "avgMaxGain": 2.4,
+        "softHitRate": 16.7,
+        "medianExcessVsBenchPct": -1.6,
+        "beatBenchRate": 41.7,
+        "medianMAE": -15.8,
+        "avgMaxGain": 1.8,
         "medianTimeToHitDays": null,
-        "avgBenchmarkPct": 2.6,
-        "regimeNote": "0/3 windows had SPY down >2%"
+        "avgBenchmarkPct": 1.6,
+        "regimeNote": "0/12 windows had SPY down >2%"
       },
       {
-        "type": "fda_decision",
-        "total": 1,
+        "type": "other",
+        "total": 8,
         "n": 0,
         "hitRate": null,
+        "softHitRate": null,
+        "medianExcessVsBenchPct": null,
+        "beatBenchRate": null,
         "medianMAE": null,
         "avgMaxGain": null,
         "medianTimeToHitDays": null,
         "avgBenchmarkPct": null,
         "regimeNote": null
       }
-    ]
+    ],
+    "tier2": {
+      "metric": "medianExcessVsBenchPct",
+      "metricLabel": "median (max gain − SPY over the same window), pp",
+      "overallValue": 1.4,
+      "laggardMarginPP": 2,
+      "minN": 5,
+      "fired": true,
+      "eligible": [
+        {
+          "type": "satellite_launch",
+          "n": 8,
+          "value": 7.4,
+          "gapVsOverall": 6,
+          "regimeNote": "0/8 windows had SPY down >2%"
+        },
+        {
+          "type": "regulatory_approval",
+          "n": 6,
+          "value": 3.3,
+          "gapVsOverall": 1.9,
+          "regimeNote": "0/6 windows had SPY down >2%"
+        },
+        {
+          "type": "earnings_beat",
+          "n": 42,
+          "value": 1.8,
+          "gapVsOverall": 0.4,
+          "regimeNote": "5/42 windows had SPY down >2%"
+        },
+        {
+          "type": "product_launch",
+          "n": 14,
+          "value": 1,
+          "gapVsOverall": -0.4,
+          "regimeNote": "0/14 windows had SPY down >2%"
+        },
+        {
+          "type": "delivery_beat",
+          "n": 7,
+          "value": 0.3,
+          "gapVsOverall": -1.1,
+          "regimeNote": "0/7 windows had SPY down >2%"
+        },
+        {
+          "type": "partnership_win",
+          "n": 12,
+          "value": -1.6,
+          "gapVsOverall": -3,
+          "regimeNote": "0/12 windows had SPY down >2%"
+        }
+      ],
+      "laggards": [
+        {
+          "type": "partnership_win",
+          "n": 12,
+          "value": -1.6,
+          "gapVsOverall": -3,
+          "regimeNote": "0/12 windows had SPY down >2%"
+        }
+      ],
+      "leaders": [
+        {
+          "type": "satellite_launch",
+          "n": 8,
+          "value": 7.4,
+          "gapVsOverall": 6,
+          "regimeNote": "0/8 windows had SPY down >2%"
+        }
+      ],
+      "note": "Tier 2 FIRED. Picks whose primary catalystType is in `laggards` need visibly higher upside/conviction to make the top 5, and the screening output must name the type, its medianExcessVsBenchPct, and the overall figure. Ranking uses medianExcessVsBenchPct because the North Star hitRate reads 0 in every bucket and cannot discriminate. Still read each laggard's regimeNote before treating it as settled."
+    }
   },
   "turbo": {
     "windowDays": 30,
     "targetPct": 50,
-    "n": 36,
-    "totalComplete": 0,
-    "totalAccumulating": 36,
+    "softTargetPct": 20,
+    "n": 81,
+    "totalComplete": 41,
+    "totalAccumulating": 40,
     "overall": {
-      "n": 0,
-      "hitRate": null,
-      "medianMAE": null,
-      "avgMaxGain": null,
-      "medianTimeToHitDays": null,
-      "avgBenchmarkPct": null,
-      "regimeNote": null
+      "n": 41,
+      "hitRate": 2.4,
+      "softHitRate": 22,
+      "medianExcessVsBenchPct": 2,
+      "beatBenchRate": 56.1,
+      "medianMAE": -24.1,
+      "avgMaxGain": 6,
+      "medianTimeToHitDays": 24,
+      "avgBenchmarkPct": 1.1,
+      "regimeNote": "5/41 windows had SPY down >2%"
     }
   },
   "regime": {
-    "n": 26,
-    "medianBenchmarkPct": 2.4,
+    "n": 135,
+    "medianBenchmarkPct": 0.7,
     "note": "SPY return over the same window as each complete entry (core+turbo combined). Pair with core.overall.regimeNote / core.byType[].regimeNote / turbo.overall.regimeNote before judging a hitRate — a low hitRate in a down-tape window is unproven, not disproven."
   },
   "scenarioCalibration": {
-    "n": 26,
-    "medianWrittenBasePct": 20.5,
-    "medianWrittenBullPct": 42.5,
-    "medianRealizedMaxGainPct": 2,
-    "optimismBiasBasePct": 18.5,
-    "optimismBiasBullPct": 40.5,
-    "note": "optimismBias = written scenario % − realized max gain % over the same completed window. Positive = we write more optimistic scenarios than what actually happened."
+    "n": 135,
+    "medianWrittenBasePct": 35.5,
+    "medianWrittenBullPct": 76,
+    "medianRealizedMaxGainPct": 1.8,
+    "realizedMaxGainP75Pct": 8.1,
+    "realizedMaxGainP90Pct": 14.5,
+    "optimismBiasBasePct": 33.7,
+    "optimismBiasBullPct": 74.2,
+    "note": "optimismBias = written scenario % − realized max gain % over the same completed window. Positive = we write more optimistic scenarios than what actually happened.",
+    "horizonCaveat": "HORIZON MISMATCH — read before acting on this. Realized figures are measured over the 14d (core) / 30d (turbo) North Star window, while a written Base/Bull scenario usually implies a longer horizon. So a positive optimismBias is NOT proof the scenario was wrong — it may just be a longer clock. That is exactly why the rule below is \"declare and justify\", not \"cap\".",
+    "rule": "Every report must (a) state the measured optimismBias it was written against, and (b) if the written Base exceeds realizedMaxGainP75Pct, name the horizon that Base assumes and the specific driver that gets it there. A Base above realizedMaxGainP90Pct with no stated horizon is not acceptable — that is the failure mode this field exists to catch."
+  },
+  "stopGuidance": {
+    "coreMedianMAEPct": -14,
+    "turboMedianMAEPct": -24.1,
+    "rule": "entryStrategy.stopLoss.tight must sit WIDER than the relevant medianMAE (use core.byType[].medianMAE for the pick's catalystType when that bucket has n >= 5, otherwise core.overall.medianMAE / turbo.overall.medianMAE), or the report must say in one line why this specific setup justifies a tighter stop. Same number informs catalystSpot.stopPreCatalyst and spotSizing.",
+    "caveat": "MAE here is measured from the REPORT price, so it assumes entry at Entry 1 (now). A pick filled on the Entry 2 dip has a structurally shallower drawdown from its own fill — don't apply the full width mechanically to a dip entry."
   },
   "nearMissCounterfactual": {
     "core": {
-      "n": 4,
-      "pickedN": 26,
+      "n": 36,
+      "pickedN": 94,
       "windowDays": 14,
-      "medianNearMissPct": -20,
-      "medianPickedMaxGainPct": 2,
-      "selectionEdgePct": 22,
+      "medianNearMissPct": -7.8,
+      "medianPickedMaxGainPct": 1.3,
+      "selectionEdgePct": 9.1,
       "note": "Not perfectly apples-to-apples: near-miss uses point-in-time +14d price; picks use max gain within the 14d window (structurally favors picks). Treat edge as an upper bound, not exact."
     },
-    "turbo": null
+    "turbo": {
+      "n": 2,
+      "pickedN": 41,
+      "windowDays": 30,
+      "medianNearMissPct": -17.1,
+      "medianPickedMaxGainPct": 2.3,
+      "selectionEdgePct": 19.4,
+      "note": "Not perfectly apples-to-apples: near-miss uses point-in-time +30d price; picks use max gain within the 30d window (structurally favors picks). Treat edge as an upper bound, not exact."
+    }
   }
 }

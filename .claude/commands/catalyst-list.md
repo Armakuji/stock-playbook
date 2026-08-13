@@ -3,27 +3,54 @@ description: Generate the catalyst dashboard — screen 5 best 30%+ catalyst pla
 ---
 Run the `/catalyst-list` workflow from CLAUDE.md (the catalyst dashboard; formerly /dashboard).
 
-0. Read `web/data/skill-feedback.json` if it exists (skip if missing) — use as an **advisory
-   prior**, two tiers:
+0. Read `web/data/skill-feedback.json` if it exists (skip if missing) — use as an **advisory prior**.
+
+   **Do NOT rank on `hitRate`.** The North Star bar (+30%/14d) is aspirational and currently reads
+   **0% in every single bucket** — a metric that is 0 everywhere cannot discriminate between
+   catalyst types, and the old "hitRate below overall" rule could therefore never fire (0 vs 0 = no
+   divergence). Keep reporting `hitRate` — it is the honest scoreboard against the stated goal —
+   but rank on the metrics that actually vary:
+   - `medianExcessVsBenchPct` — median (max gain − SPY over the same window). Primary.
+   - `softHitRate` — % of windows that reached `core.softTargetPct` (+10%). Secondary.
+   - `beatBenchRate` — % of windows that beat SPY at all. Sanity check.
+
    - **Tier 1 — `n < 5`:** context only. Mention it, never a reason to include/exclude/re-rank a pick.
-   - **Tier 2 — `n ≥ 5`: MUST be applied.** If a `core.byType[]` bucket's `hitRate` is clearly
-     below `core.overall.hitRate`, that catalystType needs visibly higher upside/conviction to
-     make top 5 — state in your screening reasoning which type and its hitRate vs. overall. If no
-     `n ≥ 5` bucket diverges, say "prior read, no bucket met the n≥5 + divergence bar."
-   - **Regime caveat (both tiers):** always read `hitRate` next to `avgBenchmarkPct`/`regimeNote` —
-     a low hitRate during a window where `regimeNote` shows SPY broadly down is "unproven in a bad
+   - **Tier 2 — `n ≥ 5`: MUST be applied — and do NOT re-derive it by eye.** `core.tier2` is
+     precomputed by `scripts/build-skill-feedback.mjs`: it names the ranking `metric`, the
+     `overallValue`, every `eligible` bucket (n ≥ 5), the `laggards` (≥ 2pp below overall) and the
+     `leaders`. If `core.tier2.fired` is true, each pick whose primary `catalystType` appears in
+     `laggards` needs visibly higher upside/conviction to make the top 5, and you must name the
+     type, its metric value, and the overall value in your screening reasoning. If `fired` is
+     false, say "tier-2 not fired — no n≥5 bucket sits ≥2pp below overall."
+   - **Leaders are not a licence.** A bucket in `core.tier2.leaders` is a mild tailwind for a pick
+     you already like on fundamentals — never a reason to add a pick whose catalyst or upside
+     doesn't stand on its own. The `n` on these buckets is still small.
+   - **Regime caveat (both tiers):** always read any rate next to `avgBenchmarkPct`/`regimeNote` —
+     a low rate during a window where `regimeNote` shows SPY broadly down is "unproven in a bad
      regime," not "this type doesn't work." Check the actual `regimeNote` text every run, don't
      assume the story repeats (SPY won't catch a sector-only selloff — a known gap in this rough
      v1 signal, e.g. `earnings_beat` once read 0/12 hitRate with a *calm* regimeNote, meaning the
      miss was NOT regime-excused that time).
-   - Reference `medianMAE` when sizing/stopping.
+   - **Stops:** `stopGuidance` gives the measured median drawdown. Every pick's `stopLoss.tight`
+     must be wider than the relevant `medianMAE` or carry a one-line justification — see
+     `stopGuidance.rule` and its `caveat` (MAE is measured from the report price, i.e. an Entry-1
+     fill, so it overstates the drawdown for a pick filled on the Entry-2 dip).
+   - **Scenarios:** `scenarioCalibration.rule` — state the measured `optimismBiasBasePct` you wrote
+     against, and justify any Base above `realizedMaxGainP75Pct` with an explicit horizon. Read
+     `horizonCaveat` first: realized figures are 14d/30d, written scenarios usually aren't, so a
+     positive bias is a prompt to state your clock, not proof the scenario was wrong.
+
    **Print this block in chat before screening — a step with no visible output is a step that
    silently gets skipped:**
    ```
    📊 Feedback prior (skill-feedback.json, generated <date>):
-     core: n=<n> complete=<k> · hitRate <x%|no data yet> · <one-line takeaway>
+     core: n=<n> complete=<k> · hitRate <x>% (North Star, aspirational) · softHitRate <x>% (+<soft>%) · beatBench <x>%
+     rank metric: <core.tier2.metric> · overall <core.tier2.overallValue>
+     tier-2: <FIRED — <type> at <value> vs overall <overallValue> (n=<n>) | not fired — no n≥5 bucket ≥2pp below overall>
+     leaders: <type (value, n) | none>
      regime: SPY median <x>% over windows (n=<n>)
-     tier-2: <fired for <type> (hitRate X% vs overall Y%) | not fired — no bucket met n≥5 + divergence bar>
+     stops: core medianMAE <x>% → tight stop must be wider
+     scenarios: Base bias +<x>pp vs realized · P75 <x>%
      guardrail: n<5 = context only · n≥5 = MUST apply (see tier-2 line)
    ```
    If the file doesn't exist, print `📊 Feedback prior: skill-feedback.json not found — skipping` instead.
