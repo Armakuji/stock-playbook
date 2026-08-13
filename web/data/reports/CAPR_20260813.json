@@ -1,0 +1,194 @@
+{
+  "ticker": "CAPR",
+  "companyName": "Capricor Therapeutics, Inc.",
+  "companyDescription": "Cell therapy · Deramiocel for Duchenne muscular dystrophy cardiomyopathy — thesis materially broken by a 9-3 negative FDA advisory committee vote",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-13T00:00:00.000Z",
+  "price": 4.19,
+  "priceChange": 6.62,
+  "marketCap": "$0.24B",
+  "sector": "Healthcare / Biotechnology (Cell Therapy)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 28,
+  "summary": "⚠️ THESIS BROKEN — this report replaces the Jul 14 version, which modelled a Base case of +70% to $35.04 on the assumption the FDA advisory committee would go Capricor's way. It did not. An FDA briefing document on Jul 27 challenged the statistical validity of the Phase 3 HOPE-3 results, and the AdCom then voted 9-3 that the evidence does NOT establish deramiocel's effectiveness in DMD cardiomyopathy. The stock fell from $22.43 (Jul 6) to $4.19 — down 81% — analysts cut targets from the $38-63 range into single digits, and securities fraud class actions have been filed. The Aug 22 PDUFA still stands and the AdCom vote is formally non-binding, so a surprise approval is not impossible, but the base case is now a CRL. At $4.19 this is ค่าขนม — a lottery ticket on an FDA reversal, not a position.",
+  "catalysts": [
+    {
+      "icon": "⚖️",
+      "name": "FDA PDUFA Decision (2nd review cycle)",
+      "description": "Target action date stands at Aug 22 despite the negative advisory committee vote. The FDA is not bound by the AdCom recommendation and weighs it alongside the full administrative record — but approving over a 9-3 negative vote on an efficacy question would be unusual.",
+      "urgencyLabel": "9 DAYS",
+      "dateBadge": "Aug 22, 2026",
+      "catalystDate": "2026-08-22",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "⚠️",
+      "name": "Securities Class Action Exposure",
+      "description": "Multiple securities fraud suits filed alleging the company misrepresented the integrity of its trial data and statistical analysis plan. This is a claim on cash for a company that now has limited access to equity markets.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "red",
+      "dotColor": "red"
+    }
+  ],
+  "risks": [
+    "AdCom voted 9-3 that the evidence does NOT establish effectiveness — the FDA's own briefing document challenged the HOPE-3 statistics, meaning the regulator and the company disagree on what the data show",
+    "A CRL on the second review cycle would require a new trial, not a resubmission — that is a multi-year timeline against a depleted cash position",
+    "Securities fraud class actions are a direct claim on remaining cash and severely complicate raising more",
+    "Any equity raise from here is massively dilutive at a $0.24B market cap",
+    "The prior report (Jul 14) was wrong in the same direction most reports are wrong — it modelled the favourable branch of a binary and set entries far above where the stock now trades. Treat any residual bullish framing from that version as void."
+  ],
+  "estimateDates": [
+    { "event": "PDUFA Decision", "dateRange": "Aug 22, 2026", "note": "Approve vs CRL — base case is CRL after the 9-3 vote", "est": "CRL more likely than not", "highlight": "yellow" },
+    { "event": "Q3 2026 Earnings", "dateRange": "Nov 2026", "note": "Cash runway and litigation reserve are the only numbers that matter", "est": "n/a — pre-revenue", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -57, "price": 1.8 },
+    { "label": "Base", "color": "yellow", "pct": -14.1, "price": 3.6 },
+    { "label": "Bull", "color": "green", "pct": 114.8, "price": 9.0 },
+    { "label": "Moon", "color": "purple", "pct": 210.3, "price": 13.0 }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Fed funds held at 3.50-3.75% on Jul 29 (fifth consecutive pause, three dissents for a hike). Next FOMC Sep 16, after the Aug 22 PDUFA.",
+    "inflationNote": "July CPI (Aug 12) headline 3.4%, core 2.5%, +0.1% m/m — soft, easing hike pressure.",
+    "sectorImpact": "Irrelevant to this name right now. A binary regulatory outcome and litigation risk dominate anything rates do to a $0.24B pre-revenue biotech.",
+    "summary": "LOW — macro is not what is wrong here."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 4.19, "note": "Current price — only as ค่าขนม sizing on an FDA reversal", "timing": "Lottery ticket only" },
+      { "label": "Entry 2", "level": 2.8, "rangeMax": 3.2, "note": "Post-CRL washout — where a pipeline/cash-value case could be re-examined", "timing": "After the event", "preferred": true },
+      { "label": "Entry 3", "level": 1.8, "note": "Distress — assumes dilution and litigation reserve", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 6.0, "pct": 43.2, "note": "Relief bounce if the FDA signals flexibility before Aug 22" },
+    "tp2": { "price": 9.0, "pct": 114.8, "note": "Surprise approval over the AdCom vote" },
+    "tp3": { "price": 13.0, "pct": 210.3, "note": "Approval plus a workable label · 2027", "moon": true },
+    "stopLoss": {
+      "tight": 3.3,
+      "tightPct": -21.2,
+      "tightNote": "Wider than the measured core medianMAE of -14% as the stop rule requires — though on a name this damaged the honest guidance is position size, not stop placement",
+      "hard": 2.5,
+      "hardPct": -40.3,
+      "hardNote": "Below this the market is pricing dilution plus litigation",
+      "riskReward": "5.4 : 1",
+      "rrNote": "Tight stop (-21.2%) vs TP2 (+114.8%)",
+      "rrWarning": "⚠️ R/R is misleading here — a CRL gaps through any stop overnight, and the 9-3 vote means the unfavourable branch is the base case, not the tail"
+    },
+    "verdict": "Thesis broken — not a new position. Existing holders: this is now a binary lottery on an FDA reversal, size accordingly. Do NOT average down toward the old $17-18.50 entry from the prior report.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "Inverted versus the normal pattern — instead of drifting up into the event, CAPR lost 81% in the 30 days before it as the FDA briefing document and AdCom vote landed. The pre-catalyst move already happened, in the wrong direction.",
+    "preRunupTiming": "30 วันก่อน PDUFA",
+    "preRunupPct": "-81%",
+    "postWin": {
+      "avgPct": 115,
+      "range": "+80% to +210%",
+      "note": "An approval over a 9-3 negative AdCom would be a genuine surprise and would re-rate the stock violently off a washed-out base. SRPT (Jun 2023) is the precedent for approval despite advisory controversy, though its vote was far closer than 9-3.",
+      "exampleDate": "Jun 2023"
+    },
+    "postLose": {
+      "avgPct": -45,
+      "range": "-30% to -60%",
+      "note": "Shallower than the usual -40% to -80% CRL range only because the stock already fell 81% ahead of the decision — much of the CRL is priced. CAPR's own first-cycle CRL (Jul 2025) took it down 30%.",
+      "exampleDate": "Jul 2025"
+    },
+    "spotSizing": {
+      "pct": 1,
+      "reason": "Cut from 3% in the prior report. A 9-3 negative efficacy vote plus active securities litigation is not a 3% conviction position — 1% is ค่าขนม sizing on a low-probability regulatory reversal."
+    },
+    "stopPreCatalyst": { "pct": -21.2, "price": 3.3, "note": "A break here before Aug 22 means the market has fully given up on approval" },
+    "stopPostCatalyst": { "pct": -40, "note": "On a CRL, exit into the first liquidity — the next step is a new trial, measured in years" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "CAPR",
+      "event": "FDA briefing document challenges HOPE-3 statistics, AdCom votes 9-3 against effectiveness",
+      "date": "Jul 2026",
+      "movePct": -81,
+      "days": 30,
+      "outcome": "bad",
+      "note": "The event that broke this thesis. From $22.43 (Jul 6) to $4.17 (Aug 4). This is the case, not an analogue."
+    },
+    {
+      "ticker": "CAPR",
+      "event": "Complete Response Letter, first review cycle",
+      "date": "Jul 2025",
+      "movePct": -30,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Same drug, same company, prior cycle. The -30% is the floor reference for a CRL that the market partly expects — this time far more is already priced in."
+    },
+    {
+      "ticker": "SRPT",
+      "event": "Accelerated approval in DMD despite advisory committee controversy",
+      "date": "Jun 2023",
+      "movePct": 30,
+      "days": 2,
+      "outcome": "good",
+      "note": "The precedent for FDA approving in DMD over advisory objections — the reason the bull branch is not zero. But SRPT's vote was narrow, not 9-3, so this overstates CAPR's odds."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "FDA panel questions Deramiocel efficacy for Capricor Therapeutics — advisory committee votes 9-3 against",
+    "url": "https://www.stocktitan.net/sec-filings/CAPR/8-k-capricor-therapeutics-inc-reports-material-event-3202c37b33fe.html",
+    "date": "Jul 2026"
+  },
+  "sources": [
+    "https://www.stocktitan.net/sec-filings/CAPR/8-k-capricor-therapeutics-inc-reports-material-event-3202c37b33fe.html",
+    "https://www.capricor.com/investors/news-events/press-releases/detail/351/capricor-therapeutics-provides-update-on-fda-advisory",
+    "https://www.capricor.com/investors/news-events/press-releases/detail/338/capricor-therapeutics-announces-establishment-of-new-pdufa",
+    "https://tickeron.com/blogs/capricor-therapeutics-capr-stock-plunges-81-after-fda-raises-questions-on-deramiocel-data-15350/",
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+    "https://www.bls.gov/news.release/archives/cpi_08122026.htm"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "⚠️ THESIS พังแล้ว — รายงานฉบับนี้แทนที่ฉบับ 14 ก.ค. ที่ตั้ง Base case ไว้ +70% ที่ $35.04 บนสมมติฐานว่า FDA advisory committee จะออกมาทางบวก ซึ่งไม่เกิดขึ้น · เอกสาร briefing ของ FDA เมื่อ 27 ก.ค. ตั้งคำถามกับความถูกต้องทางสถิติของ Phase 3 HOPE-3 และ AdCom โหวต 9-3 ว่าหลักฐาน **ไม่** เพียงพอที่จะยืนยันประสิทธิภาพของ deramiocel ใน DMD cardiomyopathy · หุ้นร่วงจาก $22.43 (6 ก.ค.) มาที่ $4.19 = -81% · นักวิเคราะห์หั่นเป้าจากช่วง $38-63 ลงมาเหลือเลขหลักเดียว · มีฟ้องร้องคดี securities fraud แบบกลุ่มแล้ว · PDUFA 22 ส.ค. ยังอยู่ และ AdCom ไม่ผูกมัดตามกฎหมาย การอนุมัติแบบพลิกล็อกจึงยังไม่ถึงกับเป็นไปไม่ได้ แต่ base case ตอนนี้คือ CRL · ที่ $4.19 นี่คือ **ค่าขนม** — ตั๋วหวยเดิมพันว่า FDA จะกลับลำ ไม่ใช่ position",
+      "priceNote": "ราคาสด 13 ส.ค. 07:49 · +6.62% วันนี้ แต่เป็นการเด้งบนฐานที่ร่วงมาแล้ว -81% ใน 30 วัน",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "PDUFA รอบที่ 2", "description": "วันเป้าหมายยังเป็น 22 ส.ค. แม้ AdCom จะโหวตลบ · FDA ไม่ผูกมัดตามมติ AdCom และพิจารณาร่วมกับเอกสารทั้งหมด — แต่การอนุมัติทับมติลบ 9-3 ในประเด็นประสิทธิภาพถือว่าผิดปกติมาก" },
+        { "name": "ความเสี่ยงคดี class action", "description": "มีฟ้อง securities fraud หลายคดี กล่าวหาว่าบริษัทบิดเบือนความน่าเชื่อถือของข้อมูลและแผนวิเคราะห์สถิติ · เป็นภาระต่อเงินสดของบริษัทที่แทบไม่มีทางระดมทุนเพิ่มได้แล้ว" }
+      ],
+      "risks": [
+        "AdCom โหวต 9-3 ว่าหลักฐานไม่พอยืนยันประสิทธิภาพ — และ briefing ของ FDA เองตั้งคำถามกับสถิติ HOPE-3 แปลว่า regulator กับบริษัทมองข้อมูลชุดเดียวกันคนละแบบ",
+        "ถ้าได้ CRL รอบสอง จะต้องทำ trial ใหม่ ไม่ใช่แค่ resubmit — เป็น timeline หลายปีบนเงินสดที่เหลือน้อย",
+        "คดี class action เป็นภาระต่อเงินสดโดยตรง และทำให้ระดมทุนยากขึ้นมาก",
+        "การเพิ่มทุนจากจุดนี้ dilute หนักมากที่ market cap $0.24B",
+        "รายงานฉบับก่อน (14 ก.ค.) ผิดในทิศทางเดียวกับที่รายงานส่วนใหญ่ผิด — คือ model เฉพาะกิ่งที่ดีของ binary แล้วตั้ง entry สูงกว่าราคาปัจจุบันมาก · ให้ถือว่ากรอบ bullish จากฉบับนั้นเป็นโมฆะ"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงที่ 3.50-3.75% เมื่อ 29 ก.ค. (พักครั้งที่ 5, dissent 3 เสียงอยากขึ้น) · FOMC ถัดไป 16 ก.ย. หลัง PDUFA",
+        "inflationNote": "CPI ก.ค. (ออก 12 ส.ค.) headline 3.4% · core 2.5% · m/m +0.1% — อ่อน ลดแรงกดดันขึ้นดอกเบี้ย",
+        "sectorImpact": "ไม่เกี่ยวกับตัวนี้เลยตอนนี้ · ผลลัพธ์ regulatory แบบ binary กับความเสี่ยงคดี มีน้ำหนักเหนือกว่าดอกเบี้ยสำหรับ biotech ที่ยังไม่มีรายได้ขนาด $0.24B",
+        "summary": "LOW — macro ไม่ใช่สิ่งที่ผิดพลาดในเคสนี้"
+      },
+      "entryStrategy": {
+        "verdict": "Thesis พังแล้ว — ไม่ใช่ position ใหม่ · คนที่ถืออยู่: ตอนนี้มันคือหวย binary ว่า FDA จะกลับลำไหม ให้ปรับ size ตามนั้น · ห้ามถัวลงไปหา entry เดิมที่ $17-18.50 จากรายงานฉบับก่อนเด็ดขาด",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — เข้าได้เฉพาะขนาดค่าขนมเดิมพัน FDA พลิก", "timing": "หวยเท่านั้น" },
+          { "note": "โซนล้างไพ่หลัง CRL — จุดที่จะกลับมาดูมูลค่า pipeline/เงินสดได้", "timing": "หลัง event" },
+          { "note": "ระดับ distress — สมมติว่ามีทั้ง dilution และตั้งสำรองคดี", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "เด้งรับข่าว ถ้า FDA ส่งสัญญาณผ่อนปรนก่อน 22 ส.ค." },
+        "tp2": { "note": "อนุมัติแบบพลิกมติ AdCom" },
+        "tp3": { "note": "อนุมัติพร้อม label ที่ใช้ได้จริง · 2027" },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE -14% ตามกฎ stop ใหม่ — แต่กับหุ้นที่เสียหายขนาดนี้ สิ่งที่ควรคุมจริง ๆ คือขนาด position ไม่ใช่จุด stop",
+          "hardNote": "ต่ำกว่านี้แปลว่าตลาด price ทั้ง dilution และคดีเข้าไปแล้ว",
+          "rrNote": "stop แคบ (-21.2%) เทียบ TP2 (+114.8%)",
+          "rrWarning": "⚠️ ตัวเลข R/R หลอกตาในเคสนี้ — CRL ทำให้ราคา gap ทะลุ stop ข้ามคืน และมติ 9-3 แปลว่ากิ่งที่แย่คือ base case ไม่ใช่ tail"
+        },
+        "estimateDates": [
+          { "event": "ผล PDUFA", "note": "อนุมัติ vs CRL — base case คือ CRL หลังมติ 9-3" },
+          { "event": "งบ Q3 2026", "note": "ดูแค่ cash runway กับสำรองคดี" }
+        ]
+      }
+    }
+  }
+}
