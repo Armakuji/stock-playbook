@@ -1,5 +1,5 @@
 ---
-description: Generate the catalyst dashboard — screen 5 best 30%+ catalyst plays
+description: Generate the catalyst dashboard — screen 5 best 20%+ catalyst plays (catalyst within ~6 weeks)
 ---
 Run the `/catalyst-list` workflow from CLAUDE.md (the catalyst dashboard; formerly /dashboard).
 
@@ -57,21 +57,41 @@ Run the `/catalyst-list` workflow from CLAUDE.md (the catalyst dashboard; former
 1. **First, assemble a candidate longlist (≥12 tickers spanning ≥4 distinct `catalystType`s)** before
    any deep research — source broadly: upcoming earnings calendars, FDA/PDUFA calendars, product
    launch schedules, 52-week-low bounces with a dated event — not just "famous AI names" pulled from
-   memory (salience bias is exactly what produces repeat mega-cap picks whose real +30%/14d odds are
+   memory (salience bias is exactly what produces repeat mega-cap picks whose real near-term odds are
    near-zero by market-cap physics alone — see backlog #34). One line per candidate:
-   `TICKER · cap tier (mega ≥$200B / large $10–200B / smid <$10B) · catalyst + approx date · why it
-   might clear +30%`. **Print the longlist in chat before narrowing to 5** — a step with no visible
-   output is a step that silently gets skipped. **Self-check:** if the top 5 you cut down to ends up
-   all mega-cap, state in one sentence why each one can plausibly move +30% in 14 days despite its
-   size. This is visibility, not a quota — do NOT enforce a small-cap minimum in the top 5; that's
-   backlog #28's call once data confirms it's needed. Then screen down to the 5 best stocks with
-   30%+ upside (Tech/AI/Space/Semiconductors/Robotics first). Research each live before writing (use
-   `stock-report` per pick).
-   **30%+ upside gate — pinned definition:** measure against **consensus analyst price target vs.
-   current price** (the primary, required gate). The single highest named-firm target is supporting
-   color only — cite it, don't gate on it. Scenario-implied upside (Bull/Moon `scenarios[].pct`) is
-   NOT a substitute for the gate — a stock without real analyst-target coverage doesn't clear 30%+
-   just because its own Bull case says so.
+   `TICKER · cap tier (mega ≥$200B / large $10–200B / smid <$10B) · catalyst + approx date · date
+   provenance · why it might clear +20%`. **Print the longlist in chat before narrowing to 5** — a
+   step with no visible output is a step that silently gets skipped. **Self-check:** if the top 5 you
+   cut down to ends up all mega-cap, state in one sentence why each one can plausibly move +20%
+   despite its size. This is visibility, not a quota — do NOT enforce a small-cap minimum in the top
+   5; that's backlog #28's call once data confirms it's needed. Then screen down to the 5 best stocks
+   with 20%+ upside (Tech/AI/Space/Semiconductors/Robotics first). Research each live before writing
+   (use `stock-report` per pick).
+
+   **20%+ upside gate — pinned definition (widened from 30% on 2026-08-13, see backlog #38):**
+   measure against **consensus analyst price target vs. current price** (the primary, required gate).
+   The single highest named-firm target is supporting color only — cite it, don't gate on it.
+   Scenario-implied upside (Bull/Moon `scenarios[].pct`) is NOT a substitute for the gate — a stock
+   without real analyst-target coverage doesn't clear 20%+ just because its own Bull case says so.
+   *Why it moved:* at 30% the gate was selecting an empty set. A stock with a hard dated catalyst
+   inside two weeks AND 30%+ consensus upside is close to a contradiction — analysts price the
+   catalyst in — so runs kept surfacing candidates that had one or the other, never both (2026-08-13:
+   NUVL +15% and SRRK +22% both had confirmed PDUFAs and failed; IRON +59% and MLTX +49% cleared
+   upside but had no verified near-term event).
+
+   **Catalyst window — ~6 weeks (42 days) from run date.** A candidate's primary catalyst must be
+   dated within ~42 days to qualify as a near-term catalyst play. Widened from the implicit ~14 days
+   on 2026-08-13 for the same reason as the gate. Two consequences you MUST respect:
+   - **Date provenance still binds (backlog #37).** A 6-week window pulls in more aggregator entries,
+     and those are exactly where CT.gov *estimated completion dates* masquerade as guided events.
+     `catalystDate` must trace to company guidance / SEC filing / official PDUFA letter — never to a
+     CT.gov completion estimate or an `AI-detected` aggregator row. State each candidate's date
+     provenance in the longlist.
+   - **Say it when a pick's catalyst sits outside 14 days.** The North Star still measures +30% within
+     14 days of report price, so a pick with a catalyst 4–6 weeks out cannot be fairly scored by it —
+     that window closes before the event. Note this in the screening output for any such pick so the
+     backtest miss is read as a measurement-horizon artifact, not a bad pick. (Proper fix — a
+     catalyst-anchored measurement alongside the 14d series — is backlog #38.)
 2. Save a JSON report per pick to `web/data/reports/`.
 3. Log runners-up to `web/data/near-misses.json` (counterfactual) — same shape as existing entries
    (`date`, `ticker`, `reason`, `priceAtScreen`, `topAnalystTarget`, `impliedUpside`) plus
