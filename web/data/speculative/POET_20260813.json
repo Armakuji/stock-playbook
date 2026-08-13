@@ -1,0 +1,187 @@
+{
+  "ticker": "POET",
+  "companyName": "POET Technologies Inc.",
+  "companyDescription": "Optical interposer photonics · POET Infinity and Blazar optical engines for AI datacenter interconnect — now funded through the ramp with $830M+ on the balance sheet",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-13T00:00:00.000Z",
+  "price": 8.87,
+  "priceChange": 3.26,
+  "priceNote": "Live price Aug 13 07:49, +3.26% today. Prior turbo report was written Jul 2 at $9.79 — 42 days old, the oldest on the board, and -9.4% drift. Its catalysts were all dated Q2 2026 or earlier, so the pick had gone post-stage and was still ranked as if its events were ahead.",
+  "marketCap": "$1.6B",
+  "sector": "Technology / Semiconductors (Photonics)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 52,
+  "summary": "⚠️ EVENTS RESOLVED — this replaces a Jul 2 report whose catalysts (Lessengers 1.6T samples, LITEON collaboration, Lumilens scale-up) were all dated Q2 2026 or vaguer, and have since passed or dissolved into ongoing execution. Q2 2026 results came out Aug 10. What changed most is the balance sheet: POET disclosed more than $830M in cash and investments as of June, against a ~$1.6B market cap — roughly half the company is cash, which removes the financing risk that defines most picks in this lane. Operationally it guides to over 30,000 optical engines shipped in 2026 and capacity up to 1 million units per month by end-2027. The offset is that sell-side targets sit near $7.00, below the live $8.87, so the upside case is a ramp-execution bet rather than a consensus gap. Base re-derived to +35% from the stale +65%.",
+  "catalysts": [
+    {
+      "icon": "🏭",
+      "name": "Optical Engine Production Ramp (H2 2026)",
+      "description": "Guiding to 30,000+ optical engines shipped in 2026, scaling toward 1 million units per month by end-2027. This is a continuous ramp, not a dated binary — the read is quarterly shipment counts and whether the H2 schedule holds.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "H2 2026",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "📊",
+      "name": "Q3 2026 Earnings",
+      "description": "First print that has to show the H2 ramp converting into revenue rather than guidance. With $830M+ of cash the question is execution, not survival.",
+      "urgencyLabel": "~NOV 2026",
+      "dateBadge": "Nov 2026",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Sell-side targets cluster near $7.00 — below the live price, so consensus currently sees downside, not upside",
+    "Moon case at +170% now sits below the turbo lane's 200-300% bar; on the next screen POET may no longer qualify for /turbo at all and would be better placed in the core lane",
+    "All three catalysts from the prior report have resolved or gone open-ended — the pick has no dated binary left, which is what makes it ค่าขนม rather than a moonshot",
+    "Roughly half the market cap is cash, meaning the operating business is valued near $770M against pre-scale revenue; the ramp has to deliver to justify even that",
+    "Stock rose 30.6% over five sessions into the Aug 10 print — recent buyers are paying for the ramp before it shows in numbers",
+    "Photonics interconnect is contested by far larger incumbents; design-win concentration is the structural risk"
+  ],
+  "estimateDates": [
+    { "event": "Optical Engine Ramp Milestones", "dateRange": "H2 2026", "note": "30,000+ units in 2026, no dated checkpoint", "est": "30,000+ engines", "highlight": "blue" },
+    { "event": "Q3 2026 Earnings", "dateRange": "Nov 2026", "note": "Ramp-to-revenue conversion", "est": "n/a", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -45, "price": 4.88 },
+    { "label": "Base", "color": "yellow", "pct": 35, "price": 11.97 },
+    { "label": "Bull", "color": "green", "pct": 85, "price": 16.41 },
+    { "label": "Moon", "color": "purple", "pct": 170, "price": 23.95 }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Fed funds 3.50-3.75%, held Jul 29 with three dissents for a hike. Next FOMC Sep 16.",
+    "inflationNote": "July CPI (Aug 12) headline 3.4% from 3.5%, core 2.5%, +0.1% m/m — soft print after payrolls at -23k.",
+    "sectorImpact": "Unusually rate-insensitive for this lane: with $830M+ in cash and investments POET does not need the financing window, which is the channel through which rates normally hurt a pre-revenue photonics name. Residual exposure is AI-capex sentiment, not the cost of money.",
+    "summary": "LOW — the cash pile removes the financing channel that makes most turbo picks rate-sensitive."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 8.87, "note": "Current price — above sell-side targets near $7.00", "timing": "Not preferred" },
+      { "label": "Entry 2", "level": 7.4, "rangeMax": 7.9, "note": "Give back the pre-earnings run; closer to where consensus sits", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 6.5, "note": "Below consensus — where the cash backing becomes the floor argument", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 11.97, "pct": 35.0, "note": "Base — H2 ramp holds schedule and shipments are credited" },
+    "tp2": { "price": 16.41, "pct": 85.0, "note": "Bull — 2027 capacity path gets priced before it is delivered" },
+    "tp3": { "price": 23.95, "pct": 170.0, "note": "Moon — POET becomes a named second source at scale · 2027", "moon": true },
+    "stopLoss": {
+      "tight": 6.47,
+      "tightPct": -27.0,
+      "tightNote": "Wider than the turbo lane's measured medianMAE of -24.1% (n=41) per the stop rule",
+      "hard": 5.32,
+      "hardPct": -40.0,
+      "hardNote": "Approaching the cash-backing floor; below this the market is discounting the operating business to near zero",
+      "riskReward": "3.1 : 1",
+      "rrNote": "Tight stop (-27.0%) vs TP2 (+85.0%)",
+      "rrWarning": "Measured from the $7.40-7.90 entry, not from $8.87 above consensus"
+    },
+    "verdict": "Survival risk gone, asymmetry gone with it — wait for $7.40-7.90, and expect this to migrate out of /turbo into the core lane on the next screen.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "Ran 30.6% over five sessions into the Aug 10 Q2 print, then drifted. Context only (turbo has no per-type breakdown in skill-feedback.json, so this is Tier 1): in the CORE lane, partnership_win is the current tier-2 laggard at medianExcessVsBenchPct -1.6 vs +1.4 overall, n=12, with a calm regimeNote — that finding does not govern the turbo lane, but it is a reason to discount partnership-driven upside rather than extrapolate it.",
+    "preRunupTiming": "1 สัปดาห์ก่อนงบ",
+    "preRunupPct": "+30%",
+    "postWin": {
+      "avgPct": 45,
+      "range": "+30% to +70%",
+      "note": "POET's own Apr 2026 partnership announcement produced +70%; the Aug 2026 run into earnings was +30.6%. The response size is shrinking as the story matures, which is what a de-risked name looks like.",
+      "exampleDate": "Apr 2026"
+    },
+    "postLose": {
+      "avgPct": -19,
+      "range": "-9% to -30%",
+      "note": "POET gave back -19% on an Apr 2026 disappointment. With $830M+ of cash the downside is bounded far better than a typical turbo name — the cash is roughly half the market cap.",
+      "exampleDate": "Apr 2026"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "Held at the turbo lane's 2% floor. The balance sheet genuinely de-risks this, but that cuts both ways in this lane: a pick with no dated binary and a Moon case under the 200-300% bar is not what /turbo sizing exists for."
+    },
+    "stopPreCatalyst": { "pct": -27.0, "price": 6.47, "note": "Wider than the -24.1% lane MAE; a break here means the ramp story is being repriced" },
+    "stopPostCatalyst": { "pct": -30, "note": "If the H2 ramp slips on the Q3 print, exit — the entire valuation above cash rests on that schedule" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "POET",
+      "event": "Partnership/design-win announcement",
+      "date": "Apr 2026",
+      "movePct": 70,
+      "days": 3,
+      "outcome": "good",
+      "note": "Same ticker, same catalyst type. The upper bound for how this name responds to partnership news — but it was earlier in the story, at a much lower base."
+    },
+    {
+      "ticker": "POET",
+      "event": "Partnership milestone disappointment",
+      "date": "Apr 2026",
+      "movePct": -19,
+      "days": 2,
+      "outcome": "bad",
+      "note": "The downside template from the same month, showing the two-sided volatility. Post-cash-raise this should be shallower, since roughly half the cap is now cash."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "POET Technologies shares gain, investor attention turns to revenue after cash boost",
+    "url": "https://ts2.tech/en/poet-technologies-inc-shares-gain-investor-attention-turns-to-revenue-after-cash-boost/",
+    "date": "Aug 2026"
+  },
+  "sources": [
+    "https://ts2.tech/en/poet-technologies-inc-shares-gain-investor-attention-turns-to-revenue-after-cash-boost/",
+    "https://www.marketbeat.com/instant-alerts/poet-technologies-poet-to-announce-earnings-on-monday-2026-08-03/",
+    "https://www.stocktitan.net/news/POET/",
+    "https://www.sec.gov/Archives/edgar/data/0001437424/000117184326003487/exh_991.htm",
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+    "https://www.bls.gov/news.release/archives/cpi_08122026.htm"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "⚠️ EVENT จบไปแล้ว — ฉบับนี้แทนที่รายงาน 2 ก.ค. ที่ catalyst ทั้งหมด (Lessengers 1.6T samples, LITEON collaboration, Lumilens scale-up) ระบุเป็น Q2 2026 หรือคลุมเครือกว่านั้น และตอนนี้ผ่านไปแล้วหรือกลายเป็นงาน execution ต่อเนื่อง · งบ Q2 2026 ออกเมื่อ 10 ส.ค. · สิ่งที่เปลี่ยนมากที่สุดคืองบดุล: POET เปิดเผยเงินสดและเงินลงทุนกว่า $830M ณ เดือน มิ.ย. เทียบ market cap ~$1.6B — ราวครึ่งบริษัทเป็นเงินสด ซึ่งลบความเสี่ยงด้านการระดมทุนที่นิยามหุ้นส่วนใหญ่ในเลนนี้ · ด้านปฏิบัติการให้ guidance ส่งมอบ optical engine เกิน 30,000 ตัวในปี 2026 และกำลังการผลิตถึง 1 ล้านตัวต่อเดือนภายในสิ้นปี 2027 · ข้อหักล้างคือเป้าฝั่ง sell-side อยู่แถว $7.00 ต่ำกว่าราคาสด $8.87 upside จึงเป็นการเดิมพันกับการ execute ramp ไม่ใช่ช่องว่างจาก consensus · คำนวณ Base ใหม่เป็น +35% จาก +65% ที่ค้างอยู่",
+      "priceNote": "ราคาสด 13 ส.ค. 07:49 · +3.26% วันนี้ · รายงาน turbo ฉบับก่อนเขียนเมื่อ 2 ก.ค. ที่ $9.79 — เก่า 42 วัน เก่าที่สุดบนกระดาน และ drift -9.4% · catalyst ทั้งหมดระบุเป็น Q2 2026 หรือก่อนหน้า หุ้นจึงเข้าสถานะ post-stage แต่ยังถูกจัดอันดับเหมือน event ยังไม่เกิด",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "การ ramp ผลิต optical engine (H2 2026)", "description": "guidance ส่งมอบ optical engine เกิน 30,000 ตัวในปี 2026 ขยายสู่ 1 ล้านตัวต่อเดือนภายในสิ้นปี 2027 · เป็น ramp ต่อเนื่อง ไม่ใช่ binary ที่มีวัน — สิ่งที่ต้องอ่านคือจำนวนส่งมอบรายไตรมาสและตาราง H2 ยังยืนไหม" },
+        { "name": "งบ Q3 2026", "description": "งบแรกที่ต้องแสดงว่า ramp ครึ่งปีหลังแปลงเป็นรายได้ ไม่ใช่แค่ guidance · ด้วยเงินสดกว่า $830M คำถามคือการ execute ไม่ใช่การอยู่รอด" }
+      ],
+      "risks": [
+        "เป้าฝั่ง sell-side กระจุกแถว $7.00 — ต่ำกว่าราคาสด แปลว่า consensus มองเป็น downside ไม่ใช่ upside",
+        "Moon case ที่ +170% ตอนนี้ต่ำกว่าเกณฑ์ 200-300% ของเลน turbo · การ screen ครั้งหน้า POET อาจไม่ผ่านเกณฑ์ /turbo แล้ว และเหมาะกับเลน core มากกว่า",
+        "catalyst ทั้งสามจากรายงานก่อนจบหรือกลายเป็นปลายเปิดหมดแล้ว — ไม่เหลือ binary ที่มีวัน ซึ่งเป็นเหตุผลที่เป็น ค่าขนม ไม่ใช่ moonshot",
+        "ราวครึ่งของ market cap เป็นเงินสด แปลว่าธุรกิจจริงถูกตีมูลค่าราว $770M เทียบรายได้ที่ยังไม่ถึงสเกล · ramp ต้องทำได้จริงถึงจะคุ้มแม้แต่ระดับนั้น",
+        "หุ้นขึ้น 30.6% ใน 5 วันทำการก่อนงบ 10 ส.ค. — คนที่ซื้อช่วงนี้จ่ายค่า ramp ล่วงหน้าก่อนเห็นตัวเลข",
+        "photonics interconnect มีคู่แข่งรายใหญ่กว่ามาก · การกระจุกตัวของ design win คือความเสี่ยงเชิงโครงสร้าง"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed 3.50-3.75% คงเมื่อ 29 ก.ค. มี dissent 3 เสียงอยากขึ้น · FOMC ถัดไป 16 ก.ย.",
+        "inflationNote": "CPI ก.ค. (12 ส.ค.) headline 3.4% จาก 3.5% · core 2.5% · m/m +0.1% — print อ่อน หลังตัวเลขจ้างงาน -23k",
+        "sectorImpact": "ไวต่อดอกเบี้ยน้อยผิดปกติสำหรับเลนนี้: ด้วยเงินสดและเงินลงทุนกว่า $830M POET ไม่จำเป็นต้องพึ่งหน้าต่างระดมทุน ซึ่งเป็นช่องทางที่ดอกเบี้ยมักทำร้ายหุ้น photonics ที่ยังไม่มีรายได้ · ที่เหลือคือ sentiment ของ AI capex ไม่ใช่ต้นทุนเงิน",
+        "summary": "LOW — กองเงินสดตัดช่องทางการระดมทุนที่ทำให้หุ้น turbo ส่วนใหญ่ไวต่อดอกเบี้ย"
+      },
+      "entryStrategy": {
+        "verdict": "ความเสี่ยงเรื่องอยู่รอดหายไป และ asymmetry หายไปพร้อมกัน — รอโซน $7.40-7.90 และคาดว่าตัวนี้จะย้ายออกจาก /turbo ไปเลน core ในการ screen ครั้งหน้า",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — สูงกว่าเป้า sell-side ที่แถว $7.00", "timing": "ไม่แนะนำ" },
+          { "note": "คืนการวิ่งก่อนงบ ใกล้ระดับที่ consensus อยู่", "timing": "ถ้าย่อ" },
+          { "note": "ต่ำกว่า consensus — จุดที่เงินสดกลายเป็นข้อโต้แย้งเรื่องพื้น", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Base — ramp ครึ่งปีหลังตรงตาราง และตลาดให้เครดิตยอดส่งมอบ" },
+        "tp2": { "note": "Bull — เส้นทางกำลังการผลิตปี 2027 ถูก price ก่อนส่งมอบจริง" },
+        "tp3": { "note": "Moon — POET กลายเป็น second source ที่มีชื่อในระดับสเกล · 2027" },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE ของเลน turbo ที่วัดได้ -24.1% (n=41) ตามกฎ stop",
+          "hardNote": "ใกล้พื้นที่หนุนด้วยเงินสด · ต่ำกว่านี้แปลว่าตลาดตีมูลค่าธุรกิจจริงเกือบเป็นศูนย์",
+          "rrNote": "stop แคบ (-27.0%) เทียบ TP2 (+85.0%)",
+          "rrWarning": "วัดจากจุดเข้า $7.40-7.90 ไม่ใช่จาก $8.87 ที่อยู่เหนือ consensus"
+        },
+        "estimateDates": [
+          { "event": "ไมล์สโตนการ ramp optical engine", "note": "30,000+ ตัวในปี 2026 ไม่มีจุดตรวจที่มีวัน" },
+          { "event": "งบ Q3 2026", "note": "การแปลง ramp เป็นรายได้" }
+        ]
+      }
+    }
+  }
+}
