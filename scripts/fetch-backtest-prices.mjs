@@ -163,18 +163,56 @@ async function fetchPath(ticker, fromISO, toISO) {
   } catch { return null; }
 }
 
-/** Scan `dir` for report snapshots and produce one path-fetch job per ticker,
- *  windowed to `windowDays` and keyed via `keyFn`. */
+// ── Catalyst-anchored window (backlog #38) ──────────────────────────────────
+// Screening now accepts catalysts up to ~42 days out, but the North Star
+// windows are 14d/30d — so a pick whose event is 6 weeks away is measured over
+// a window that closes before the event and scores a miss regardless of
+// outcome. To measure it fairly we need price paths that actually reach the
+// catalyst, so the fetch window is widened per report to cover
+// reportDate → catalystDate + CATALYST_BUFFER_DAYS. The fixed NS windows stay
+// as the floor, so the existing 14d/30d series are unaffected.
+const CATALYST_BUFFER_DAYS = 3;   // trading days of reaction after the event
+const MAX_ANCHOR_WINDOW = 120;    // safety cap — don't fetch a year of daily bars
+
+/** Earliest EXPLICIT catalysts[].catalystDate on/after the report date, as ISO.
+ *  Deliberately ignores dateBadge and estimateDates[]: those are fuzzy strings
+ *  and are exactly where the phantom-date bug lives (backlog #37). A report
+ *  without an explicit catalystDate simply gets no anchored window. */
+export function primaryCatalystISO(report, reportDateYMD) {
+  const startISO = ymdToISO(reportDateYMD);
+  const dates = (report?.catalysts ?? [])
+    .map((c) => c?.catalystDate)
+    .filter((d) => typeof d === "string" && /^\d{4}-\d{2}-\d{2}$/.test(d) && d >= startISO)
+    .sort();
+  return dates[0] ?? null;
+}
+
+/** Scan `dir` for report snapshots and produce one path-fetch job per ticker.
+ *  Window = max(`windowDays`, days to primary catalyst + buffer), so the fetched
+ *  path covers both the fixed North Star window and the catalyst-anchored one. */
 export function collectPathSnapshots(dir, windowDays, keyFn) {
   if (!fs.existsSync(dir)) return [];
   return fs.readdirSync(dir).filter((x) => x.endsWith(".json")).map((f) => {
     const m = f.match(/_(\d{8})\.json$/);
     if (!m) return null;
-    let ticker;
-    try { ticker = JSON.parse(fs.readFileSync(path.join(dir, f), "utf-8")).ticker; }
+    let report;
+    try { report = JSON.parse(fs.readFileSync(path.join(dir, f), "utf-8")); }
     catch { return null; }
+    const ticker = report?.ticker;
     if (!ticker) return null;
-    return { ticker, reportDate: m[1], windowDays, key: keyFn(ticker, m[1]) };
+
+    let effectiveWindow = windowDays;
+    const catISO = primaryCatalystISO(report, m[1]);
+    if (catISO) {
+      const startMs = new Date(ymdToISO(m[1]) + "T00:00:00Z").getTime();
+      const catMs = new Date(catISO + "T00:00:00Z").getTime();
+      const daysToCat = Math.round((catMs - startMs) / 86400000);
+      effectiveWindow = Math.min(
+        MAX_ANCHOR_WINDOW,
+        Math.max(windowDays, daysToCat + CATALYST_BUFFER_DAYS)
+      );
+    }
+    return { ticker, reportDate: m[1], windowDays: effectiveWindow, key: keyFn(ticker, m[1]) };
   }).filter(Boolean);
 }
 

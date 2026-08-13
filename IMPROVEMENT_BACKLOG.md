@@ -526,7 +526,7 @@ provenance ต่อ candidate · validator เตือนเมื่อ dated
 
 ---
 
-## 38. Gate 30%→20% + catalyst window ~14d→~6 สัปดาห์ — และ measurement horizon ที่ยังไม่ตาม (2026-08-13)
+## 38. ✅ DONE — Gate 30%→20% + catalyst window ~14d→~6 สัปดาห์ — และ measurement horizon ที่ยังไม่ตาม (2026-08-13)
 
 **ปัญหา:** test-run `/catalyst-list` จริงชี้ว่า gate เดิม (30%+ consensus upside + catalyst ใกล้ ๆ
 ในกรอบ ~14 วัน) **เลือกได้เซตว่าง** — หุ้นที่มี dated catalyst แน่นอนภายใน 2 สัปดาห์ *และ* consensus
@@ -540,12 +540,29 @@ hitRate = 0/94. เกณฑ์ที่ไม่มีใครผ่านไ�
    เขียนไว้ในไฟล์) · เพิ่ม **catalyst window ~42 วัน** เป็นเงื่อนไขชัดเจน · บังคับใส่ date provenance
    ต่อ candidate ใน longlist (ผูกกับ #37) · บังคับให้ระบุเมื่อ pick มี catalyst เกิน 14 วัน
 2. ✅ `CLAUDE.md` บรรทัด `/catalyst-list` — sync ตัวเลข 20%+ / ~6 สัปดาห์ + ชี้กลับมาที่ pinned definition
-3. ⬜ **ยังไม่ทำ — measurement horizon mismatch (แกนหลักของข้อนี้).** ตอนนี้ screening ยอมรับ catalyst
+3. ✅ **ทำแล้ว 2026-08-13 — measurement horizon mismatch (แกนหลักของข้อนี้).** ตอนนี้ screening ยอมรับ catalyst
    ได้ถึง 42 วัน แต่ North Star ยังวัด "+30% ภายใน 14 วันนับจาก report price" → pick ที่ catalyst อยู่
    สัปดาห์ที่ 4–6 **ถูกวัดในหน้าต่างที่ปิดไปก่อน event เกิด** จะนับเป็น miss เสมอไม่ว่า catalyst จะออกมาดี
    แค่ไหน. ถ้าไม่แก้ hitRate/softHitRate จะยิ่งไร้ความหมายหลังจากนี้ (วัด pre-catalyst drift ล้วน ๆ)
 
-**แนวทางข้อ 3 (เสนอ):** เพิ่ม series ใหม่ **ข้าง ๆ** ของเดิม ห้ามแก้ 14d ทิ้ง (จะพัง comparability
+**ผลของข้อ 3 (ทำเสร็จแล้ว):** เพิ่ม series `catalystAnchored.core` / `.turbo` ใน
+`build-skill-feedback.mjs` วัดจาก reportDate → primary `catalystDate` + 3 วัน โดยมี **fixed NS window
+เป็นพื้น** (`max(14d, daysToCatalyst+3)`) — series เดิม 14d/30d **ไม่ถูกแตะเลย** ตาม comparability ·
+`fetch-backtest-prices.mjs` ขยายหน้าต่างดึงราคาต่อรายงานด้วยสูตรเดียวกัน (cap `MAX_ANCHOR_WINDOW`
+120 วัน) · ใช้เฉพาะ `catalysts[].catalystDate` ที่เป็น ISO ชัดเจนเท่านั้น ไม่แตะ `dateBadge`/
+`estimateDates` เพื่อไม่ให้ลากบั๊ก phantom date จาก #37 เข้ามา · status ใหม่: `undated` (ไม่มี
+catalystDate — ไม่นับเป็น miss), `no-data` (path สั้นกว่า catalyst — แก้ได้ด้วย backtest:fetch),
+`beyond-cap` (catalyst ไกลเกิน 120 วัน — ตั้งใจไม่ดึง)
+
+**ตัวเลขที่ยืนยันว่าปัญหามีจริง:** รายงาน core ที่มี explicit upcoming `catalystDate` = 124 ฉบับ ·
+**81 ฉบับ (65%) มีหน้าต่างที่ต้องยาวเกิน 14 วัน** — คือสองในสามของ pick ถูกวัดด้วยหน้าต่างที่ปิดก่อน
+catalyst ของตัวเอง · ยาวสุด: SERV 194d · LUNR 102d · RXRX 96d
+
+**⚠️ ต้องรัน `npm run backtest:fetch` ก่อนตัวเลขจะมีความหมาย** — path cache ปัจจุบันยาวสุด 31 วัน
+(core 14d / turbo 30d) จึงยังอ่านได้แค่ complete 22/137 core · 10/84 turbo ที่เหลือเป็น no-data 32 +
+accumulating 69 · หลัง fetch รอบใหม่ตัวเลขจะเต็มขึ้นเอง
+
+**แนวทางข้อ 3 (เสนอ — ทำตามนี้แล้ว):** เพิ่ม series ใหม่ **ข้าง ๆ** ของเดิม ห้ามแก้ 14d ทิ้ง (จะพัง comparability
 กับ 94 entry เดิม) — วัด maxGain จาก report date ถึง `catalystDate + 3d` ต่อ report ที่มี
 `catalystDate` จริง แล้วรายงานเป็น `coreCatalystAnchored: { n, hitRate, softHitRate, medianMAE, ... }`
 คู่กับ `core` เดิม. ต้อง fetch path ให้ยาวพอ (ตอนนี้ `fetch-backtest-prices.mjs` ดึงตามหน้าต่าง 14d/30d)

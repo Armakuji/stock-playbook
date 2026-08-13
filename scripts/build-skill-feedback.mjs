@@ -180,6 +180,108 @@ function computeEntry({ ticker, price: p0, reportDate, pathCache, key, windowDay
   return { ticker, reportDate, maxGainPct, maePct, hit, softHit, timeToHitDays, benchmarkPct, excessVsBenchPct, status };
 }
 
+// ── Catalyst-anchored measurement (backlog #38) ─────────────────────────────
+// The fixed 14d/30d North Star windows can close BEFORE a pick's catalyst now
+// that screening accepts events up to ~42 days out — such a pick scores a miss
+// no matter how the event lands. This series measures each pick over
+// reportDate → catalystDate + 3d instead, so the window actually contains the
+// thing the pick was bought for. It runs ALONGSIDE the fixed windows and never
+// replaces them: the 14d series must stay untouched for comparability with the
+// historical entries. Requires paths long enough to reach the catalyst — see
+// the matching change in scripts/fetch-backtest-prices.mjs. Until a
+// `backtest:fetch` runs with that change, most entries here read "no-data".
+const CATALYST_BUFFER_DAYS = 3;
+// MUST match MAX_ANCHOR_WINDOW in scripts/fetch-backtest-prices.mjs. A pick
+// whose primary catalyst is beyond this is reported as "beyond-cap" rather than
+// "no-data", because no amount of re-fetching would ever populate it — the
+// fetcher deliberately doesn't retrieve that far.
+const MAX_ANCHOR_WINDOW = 120;
+
+/** Earliest EXPLICIT catalysts[].catalystDate on/after the report date.
+ *  Ignores dateBadge/estimateDates on purpose — fuzzy strings are where the
+ *  phantom-date bug lives (backlog #37), and this measurement must not inherit it. */
+function primaryCatalystISO(report, reportDateYMD) {
+  const startISO = ymdToISO(reportDateYMD);
+  const dates = (report?.catalysts ?? [])
+    .map((c) => c?.catalystDate)
+    .filter((d) => typeof d === "string" && /^\d{4}-\d{2}-\d{2}$/.test(d) && d >= startISO)
+    .sort();
+  return dates[0] ?? null;
+}
+
+function computeAnchoredEntry({ ticker, price: p0, reportDate, report, pathCache, key, windowDays, targetPct, softTargetPct }) {
+  const catISO = primaryCatalystISO(report, reportDate);
+  if (!catISO) return { ticker, reportDate, status: "undated", catalystISO: null };
+
+  const startISO = ymdToISO(reportDate);
+  // MUST match the window formula in scripts/fetch-backtest-prices.mjs
+  // (collectPathSnapshots), or the builder measures a window the fetcher never
+  // retrieved. The fixed NS window is the FLOOR: when a catalyst is only a few
+  // days out the 14d/30d window already contains it, and shrinking to a 3-day
+  // window would measure a different question and produce rates comparable to
+  // nothing. This series should only ever EXTEND the window, never narrow it.
+  const rawAnchorDays = Math.max(windowDays, daysBetweenISO(startISO, catISO) + CATALYST_BUFFER_DAYS);
+  if (rawAnchorDays > MAX_ANCHOR_WINDOW) {
+    return { ticker, reportDate, catalystISO: catISO, windowDays: rawAnchorDays, status: "beyond-cap" };
+  }
+  const anchorDays = rawAnchorDays;
+  const endISO = addDaysISO(reportDate, anchorDays);
+  const elapsed = endISO <= today;
+  const series = (pathCache[key] ?? [])
+    .filter((pt) => pt.d >= startISO && pt.d <= endISO && typeof pt.c === "number")
+    .sort((a, b) => a.d.localeCompare(b.d));
+
+  // "covered" = the path actually reaches the catalyst, not just the 14d prefix.
+  const covered = series.length > 0 && series[series.length - 1].d >= catISO;
+  if (!elapsed) return { ticker, reportDate, catalystISO: catISO, windowDays: daysBetweenISO(startISO, endISO), status: "accumulating" };
+  if (!covered) return { ticker, reportDate, catalystISO: catISO, windowDays: daysBetweenISO(startISO, endISO), status: "no-data" };
+
+  const gains = series.map((pt) => ((pt.c - p0) / p0) * 100);
+  const maxGainPct = Math.max(...gains);
+  return {
+    ticker, reportDate, catalystISO: catISO,
+    windowDays: daysBetweenISO(startISO, endISO),
+    maxGainPct,
+    maePct: Math.min(...gains, 0),
+    // Point-in-time return at the end of the window — "what you'd actually be
+    // holding just after the event", as opposed to the best exit along the way.
+    pctAtAnchor: gains[gains.length - 1],
+    hit: maxGainPct >= targetPct,
+    softHit: maxGainPct >= softTargetPct,
+    status: "complete",
+  };
+}
+
+function summarizeAnchored(entries, targetPct, softTargetPct, laneLabel) {
+  const complete = entries.filter((e) => e.status === "complete");
+  const anchors = complete.map((e) => e.pctAtAnchor).filter((v) => v != null);
+  return {
+    lane: laneLabel,
+    targetPct, softTargetPct,
+    n: entries.length,
+    totalComplete: complete.length,
+    totalAccumulating: entries.filter((e) => e.status === "accumulating").length,
+    totalUndated: entries.filter((e) => e.status === "undated").length,
+    totalNoData: entries.filter((e) => e.status === "no-data").length,
+    totalBeyondCap: entries.filter((e) => e.status === "beyond-cap").length,
+    hitRate: complete.length ? r1((complete.filter((e) => e.hit).length / complete.length) * 100) : null,
+    softHitRate: complete.length ? r1((complete.filter((e) => e.softHit).length / complete.length) * 100) : null,
+    medianMAE: r1(median(complete.map((e) => e.maePct).filter((v) => v != null))),
+    avgMaxGain: r1(mean(complete.map((e) => e.maxGainPct).filter((v) => v != null))),
+    medianPctAtAnchor: r1(median(anchors)),
+    medianWindowDays: median(complete.map((e) => e.windowDays).filter((v) => v != null)),
+    note:
+      `Measured reportDate → primary catalystDate + ${CATALYST_BUFFER_DAYS}d, so the window CONTAINS ` +
+      `the catalyst. Runs alongside the fixed ${laneLabel === "core" ? CORE_WINDOW_DAYS : TURBO_WINDOW_DAYS}d ` +
+      `series, which is unchanged. medianPctAtAnchor = point-in-time return at window end (what you'd be ` +
+      `holding just after the event); avgMaxGain = best point along the path. Entries with no explicit ` +
+      `catalysts[].catalystDate are "undated" and excluded, not counted as misses. "no-data" means the ` +
+      `cached price path stops before the catalyst — run npm run backtest:fetch to extend it. ` +
+      `"beyond-cap" means the catalyst is further out than MAX_ANCHOR_WINDOW (${MAX_ANCHOR_WINDOW}d) ` +
+      `and is deliberately never fetched.`,
+  };
+}
+
 /** Regime note for a group of (already-complete) entries: how many windows
  *  were a down-tape for the broad market, so a low hitRate can be read as
  *  "unproven in a bad regime" instead of "this type/lane doesn't work". */
@@ -459,6 +561,32 @@ const nearMissCounterfactual = {
   turbo: buildCounterfactual("turbo", TURBO_WINDOW_DAYS, pickedMaxGain30dTurbo),
 };
 
+// ── catalyst-anchored series (backlog #38) ──────────────────────────────────
+const coreAnchoredEntries = coreSnapshots.map(({ report, reportDate }) =>
+  computeAnchoredEntry({
+    ticker: report.ticker, price: report.price, reportDate, report, pathCache,
+    key: `${report.ticker}_${reportDate}`, windowDays: CORE_WINDOW_DAYS,
+    targetPct: CORE_TARGET_PCT, softTargetPct: CORE_SOFT_TARGET_PCT,
+  }));
+const turboAnchoredEntries = turboSnapshots.map(({ report, reportDate }) =>
+  computeAnchoredEntry({
+    ticker: report.ticker, price: report.price, reportDate, report, pathCache,
+    key: `${TURBO_KEY_PREFIX}${report.ticker}_${reportDate}`, windowDays: TURBO_WINDOW_DAYS,
+    targetPct: TURBO_TARGET_PCT, softTargetPct: TURBO_SOFT_TARGET_PCT,
+  }));
+
+const catalystAnchored = {
+  core: summarizeAnchored(coreAnchoredEntries, CORE_TARGET_PCT, CORE_SOFT_TARGET_PCT, "core"),
+  turbo: summarizeAnchored(turboAnchoredEntries, TURBO_TARGET_PCT, TURBO_SOFT_TARGET_PCT, "turbo"),
+  why:
+    "Added 2026-08-13 (backlog #38). /catalyst-list now accepts catalysts up to ~42 days out while " +
+    "the North Star measures 14d from report price, so a pick whose event is 4-6 weeks away is scored " +
+    "over a window that closes before the event and reads as a miss regardless of outcome (SRRK, " +
+    "catalyst 48d out, is the worked example). Read hitRate here NEXT TO core.overall.hitRate: if the " +
+    "fixed-window rate is ~0 but this one is materially higher, the fixed window is measuring the wrong " +
+    "thing for that pick, not measuring a bad pick.",
+};
+
 // ── stop guidance (backlog #36) ──────────────────────────────────────────────
 // Measured MAE vs the stop widths the report template actually writes. A stop
 // tighter than the median drawdown stops out the median pick before the thesis
@@ -501,6 +629,7 @@ const feedback = {
   core,
   turbo,
   regime,
+  catalystAnchored,
   scenarioCalibration,
   stopGuidance,
   nearMissCounterfactual,
@@ -513,6 +642,7 @@ console.log(`📊 core: n=${core.n} (${core.totalComplete} complete, ${core.tota
 console.log(`🎯 tier2: ${core.tier2.fired ? `FIRED on ${core.tier2.metric} — laggards: ${core.tier2.laggards.map((l) => `${l.type} (${l.value}, ${l.gapVsOverall}pp vs overall ${core.tier2.overallValue}, n=${l.n})`).join(", ")}` : `not fired (${core.tier2.metric ?? "no usable metric"})`}`);
 console.log(`🎰 turbo: n=${turbo.n} (${turbo.totalComplete} complete, ${turbo.totalAccumulating} accumulating) · ${turbo.byType.length} catalyst type(s) · hitRate ${turbo.overall.hitRate}% · softHitRate ${turbo.overall.softHitRate}% (+${TURBO_SOFT_TARGET_PCT}%) · beatBench ${turbo.overall.beatBenchRate}% · regimeNote: ${turbo.overall.regimeNote ?? "no bench data yet"}`);
 console.log(`🎯 turbo tier2: ${turbo.tier2.fired ? `FIRED on ${turbo.tier2.metric} — laggards: ${turbo.tier2.laggards.map((l) => `${l.type} (${l.value}, ${l.gapVsOverall}pp vs overall ${turbo.tier2.overallValue}, n=${l.n})`).join(", ")}` : `not fired (${turbo.tier2.metric ?? "no usable metric"})`}`);
+console.log(`🎯 catalyst-anchored · core: complete ${catalystAnchored.core.totalComplete}/${catalystAnchored.core.n} (undated ${catalystAnchored.core.totalUndated} · no-data ${catalystAnchored.core.totalNoData} · accum ${catalystAnchored.core.totalAccumulating}) hitRate ${catalystAnchored.core.hitRate}% softHit ${catalystAnchored.core.softHitRate}% medWindow ${catalystAnchored.core.medianWindowDays}d · turbo: complete ${catalystAnchored.turbo.totalComplete}/${catalystAnchored.turbo.n} hitRate ${catalystAnchored.turbo.hitRate}%`);
 console.log(`🛑 stops: core medianMAE ${stopGuidance.coreMedianMAEPct}% · turbo medianMAE ${stopGuidance.turboMedianMAEPct}% — tight stops must be wider than these`);
 console.log(`🌐 regime: n=${regime.n} · median SPY over completed windows: ${regime.medianBenchmarkPct ?? "no data yet"}${regime.medianBenchmarkPct != null ? "%" : ""}`);
 console.log(`📐 scenario calibration · core: n=${scenarioCalibration.core.n} bias +${scenarioCalibration.core.optimismBiasBasePct}pp (P75 ${scenarioCalibration.core.realizedMaxGainP75Pct}%) · turbo: n=${scenarioCalibration.turbo.n} bias +${scenarioCalibration.turbo.optimismBiasBasePct}pp (P75 ${scenarioCalibration.turbo.realizedMaxGainP75Pct}%)`);
