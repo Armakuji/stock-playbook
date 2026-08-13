@@ -115,13 +115,28 @@ function DeltaBadge({ delta, th }: { delta: number | null; th: boolean }) {
 
 export function RankingChangeTable({ rows }: { rows: RankChange[] }) {
   const [page, setPage] = useState(0);
+  const [query, setQuery] = useState("");
   const { lang } = useLang();
   const th = lang === "th";
 
   if (rows.length === 0) return null;
 
-  const totalPages = Math.ceil(rows.length / PAGE_SIZE);
-  const pageRows = rows.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE);
+  // Search matches ticker OR company name, so both "NVDA" and "nvidia" work.
+  const q = query.trim().toLowerCase();
+  const filtered = q
+    ? rows.filter(
+        (r) =>
+          r.ticker.toLowerCase().includes(q) ||
+          r.companyName.toLowerCase().includes(q)
+      )
+    : rows;
+
+  const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+  // Clamp rather than trusting `page`: the result set shrinks as you type, and
+  // without this you can end up stranded on a page that no longer exists.
+  // setPage(0) also fires on every keystroke below — this is the belt-and-braces half.
+  const safePage = Math.min(page, totalPages - 1);
+  const pageRows = filtered.slice(safePage * PAGE_SIZE, (safePage + 1) * PAGE_SIZE);
 
   return (
     <div style={{ marginTop: 48 }}>
@@ -140,14 +155,55 @@ export function RankingChangeTable({ rows }: { rows: RankChange[] }) {
           fontWeight: 700, padding: "3px 9px", borderRadius: 6,
           border: "1px solid var(--border)", background: "var(--card)",
         }}>
-          {th ? `${rows.length} หุ้น` : `${rows.length} stocks`}
+          {q
+            ? th ? `${filtered.length}/${rows.length} หุ้น` : `${filtered.length}/${rows.length} stocks`
+            : th ? `${rows.length} หุ้น` : `${rows.length} stocks`}
         </span>
       </div>
-      <p style={{ fontSize: 12, color: "var(--muted)", margin: "0 0 16px", fontFamily: "var(--font-mono, monospace)" }}>
+      <p style={{ fontSize: 12, color: "var(--muted)", margin: "0 0 12px", fontFamily: "var(--font-mono, monospace)" }}>
         {th
           ? "เทียบกับรายงานครั้งก่อน · ↑ ขึ้นอันดับ · ↓ ลงอันดับ · NEW = ปรากฏครั้งแรก"
           : "vs. previous report snapshot · ↑ moved up · ↓ moved down · NEW = first appearance"}
       </p>
+
+      {/* ── Search ─────────────────────────────────────────────────────── */}
+      <div style={{ position: "relative", marginBottom: 16, maxWidth: 320 }}>
+        <span style={{
+          position: "absolute", left: 11, top: "50%", transform: "translateY(-50%)",
+          fontSize: 12, color: "var(--muted)", pointerEvents: "none",
+        }}>
+          🔍
+        </span>
+        <input
+          type="text"
+          value={query}
+          onChange={(e) => { setQuery(e.target.value); setPage(0); }}
+          placeholder={th ? "ค้นหาหุ้น หรือ ชื่อบริษัท…" : "Search ticker or company…"}
+          aria-label={th ? "ค้นหาหุ้น" : "Search stocks"}
+          style={{
+            width: "100%", boxSizing: "border-box",
+            padding: "8px 30px 8px 32px",
+            borderRadius: 8, border: "1px solid var(--border)",
+            background: "var(--card)", color: "var(--text)",
+            fontFamily: "var(--font-mono, monospace)", fontSize: 12, fontWeight: 600,
+            outline: "none",
+          }}
+        />
+        {query && (
+          <button
+            onClick={() => { setQuery(""); setPage(0); }}
+            aria-label={th ? "ล้างการค้นหา" : "Clear search"}
+            style={{
+              position: "absolute", right: 8, top: "50%", transform: "translateY(-50%)",
+              background: "transparent", border: "none", cursor: "pointer",
+              color: "var(--muted)", fontSize: 14, lineHeight: 1, padding: 2,
+              fontFamily: "var(--font-mono, monospace)",
+            }}
+          >
+            ×
+          </button>
+        )}
+      </div>
 
       <div style={{ borderRadius: 14, border: "1px solid var(--border)", overflow: "hidden" }}>
         <div style={{ overflowX: "auto" }}>
@@ -170,6 +226,19 @@ export function RankingChangeTable({ rows }: { rows: RankChange[] }) {
               </tr>
             </thead>
             <tbody>
+              {pageRows.length === 0 && (
+                <tr>
+                  <td colSpan={10} style={{
+                    padding: "28px 14px", textAlign: "center",
+                    color: "var(--muted)", fontSize: 12,
+                    fontFamily: "var(--font-mono, monospace)",
+                  }}>
+                    {th
+                      ? `ไม่พบหุ้นที่ตรงกับ “${query}”`
+                      : `No stocks match “${query}”`}
+                  </td>
+                </tr>
+              )}
               {pageRows.map((row, idx) => {
                 const verdictColor = VERDICT_COLORS[row.verdict] ?? "#64748b";
                 const confColor    = CONFIDENCE_COLORS[row.confidence] ?? "#64748b";
@@ -264,10 +333,10 @@ export function RankingChangeTable({ rows }: { rows: RankChange[] }) {
         </div>
 
         <Pagination
-          page={page}
+          page={safePage}
           totalPages={totalPages}
-          onPrev={() => setPage((p) => Math.max(0, p - 1))}
-          onNext={() => setPage((p) => Math.min(totalPages - 1, p + 1))}
+          onPrev={() => setPage(Math.max(0, safePage - 1))}
+          onNext={() => setPage(Math.min(totalPages - 1, safePage + 1))}
           th={th}
         />
       </div>

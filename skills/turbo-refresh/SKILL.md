@@ -51,13 +51,17 @@ Check `web/data/skill-feedback.json`; skip if missing. Use the **`turbo`** block
 - `turbo.overall.medianMAE` — **currently around -24%, far wider than core's -14%.**
   `entryStrategy.stopLoss.tight` must sit wider than this or carry a one-line justification.
   A core-width stop on a turbo name is guaranteed to fire on noise.
-- **Rank on metrics that vary, not `hitRate`.** Turbo's `hitRate` is ~2.4% (1 hit in 41) — not
+- **Rank on metrics that vary, not `hitRate`.** Turbo's `hitRate` is ~4.9% (2 hits in 41) — not
   degenerate like core's 0%, but close. `softHitRate` (~22%), `medianExcessVsBenchPct` and
   `beatBenchRate` (~56%) carry far more signal. Report `hitRate` as the honest scoreboard.
 - `turbo.tier2` — precomputed laggards/leaders at n ≥ 5. If a pick's `catalystType` is a laggard,
   it needs visibly higher conviction to keep its sizing. Note as of 2026-08-13 `partnership_win`
   is the laggard in **both** lanes independently (core -1.6 vs +1.4 n=12; turbo -3.8 vs +2.0
   n=16) — a stronger signal than either lane alone.
+- `entryGuidance.turbo` — **entry rule (backlog #40)**: if `medianPctAtAnchor` is negative with
+  n >= 5, the refreshed report must NOT mark Entry 1 ("now") as `preferred`, and must quote the
+  figure in `entryStrategy.verdict`. Refreshes are exactly where this slips — a pick that has run
+  is the most tempting one to mark "buy now".
 - `scenarioCalibration.turbo` — same rule as everywhere: state the `optimismBiasBasePct` you wrote
   against, and if Base exceeds `realizedMaxGainP75Pct`, name the horizon. This matters more here
   than anywhere, because Base **is the sort key** for the whole board.

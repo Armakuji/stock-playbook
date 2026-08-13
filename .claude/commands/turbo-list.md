@@ -9,7 +9,7 @@ Run `/turbo-list`: load `turbo-report` and use its "Step 0" + "List mode" sectio
    tiebreaker, per Step 1 below; survival-first ranking is backlog #11 and not yet implemented.
    **Both tiers affect sizing/conviction language only, never rank order.**
 
-   **Do NOT rank on `hitRate`.** Turbo's is ~2.4% — one hit in 41 completed windows. Report it as
+   **Do NOT rank on `hitRate`.** Turbo's is ~4.9% — two hits in 41 completed windows. Report it as
    the honest scoreboard against the +50%/30d goal, but judge on the metrics with variance:
    `medianExcessVsBenchPct` (primary), `softHitRate` (+20% bar, ~22%), `beatBenchRate` (~56%).
 
@@ -32,6 +32,10 @@ Run `/turbo-list`: load `turbo-report` and use its "Step 0" + "List mode" sectio
    - **Stops:** `turbo.overall.medianMAE` is ~-24%, far wider than core's -14%. Every pick's
      `stopLoss.tight` and `stopPreCatalyst` must clear the relevant `medianMAE` (`turbo.byType[]`
      when that bucket has n ≥ 5, else overall) or carry a one-line justification.
+   - **🚪 Entry (`entryGuidance.turbo`, backlog #40).** Measured median return from report price to
+     just after the catalyst. If negative with n >= 5, Entry 1 ("now") must not be `preferred` —
+     prefer the dip entry and quote the figure in `entryStrategy.verdict`. Turbo currently reads
+     worse than core on this, so it binds harder here.
    - **Scenarios:** use `scenarioCalibration.turbo`, NOT a pooled figure — the calibration was split
      per lane on 2026-08-13 because pooling mixed core Base (~35%) with turbo Base (~65-100%) across
      14d and 30d windows. Turbo's bias runs far hotter (+72.7pp vs core's +23.7pp). State the bias
@@ -46,6 +50,7 @@ Run `/turbo-list`: load `turbo-report` and use its "Step 0" + "List mode" sectio
      tier-2: <FIRED — <type> at <value> vs overall <overallValue> (n=<n>) | not fired — no n≥5 bucket ≥2pp below overall>
      leaders: <type (value, n) | none>
      regime: SPY median <x>% over windows (n=<n>)
+     entry: median at-catalyst <x>% · <x>% underwater at their event (n=<n>)
      stops: turbo medianMAE <x>% → tight stop must be wider
      scenarios: turbo Base bias +<x>pp vs realized · P75 <x>%
      guardrail: n<5 = context only · n≥5 = MUST apply (sizing/conviction, never rank order)

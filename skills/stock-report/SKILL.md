@@ -53,6 +53,18 @@ one. Report it — it's the honest scoreboard — but judge on `medianExcessVsBe
   number informs `catalystSpot.stopPreCatalyst` and `spotSizing`. Note `stopGuidance.caveat`: MAE is
   measured from the report price (an Entry-1 fill), so it overstates drawdown for an Entry-2 dip fill
   — adjust rather than applying the full width mechanically.
+- **🚪 ENTRY RULE — `entryGuidance.core` (backlog #40). This is the prior that changes what the
+  report RECOMMENDS, not just how it is scored.** `medianPctAtAnchor` is the measured point-in-time
+  return from report price to just after the catalyst — i.e. what buying at report price and holding
+  through the event actually returned. **If it is negative and `n >= 5`, Entry 1 ("now", at report
+  price) MUST NOT carry `preferred: true`.** Mark the dip entry (Entry 2) preferred instead, and
+  state the figure in `entryStrategy.verdict`: e.g. "measured median at-catalyst return is -6.9%
+  with 74% of picks underwater at their event, so report price is not the default entry."
+  To make Entry 1 preferred anyway, name a specific reason this setup differs from the base rate —
+  already at or below its own dip zone, a forced timing constraint, etc. "The thesis is strong" is
+  not a reason; the base rate is measured over picks whose theses all looked strong when written.
+  Read `timingGapPP` alongside it: a large gap means the apparent upside existed only for someone
+  who exited at the right moment, which is an argument for a tighter TP1, not a bigger position.
 - **Scenarios must declare their calibration (`scenarioCalibration.core`).** State the measured
   `optimismBiasBasePct` you wrote against. If your written Base `pct` exceeds
   `realizedMaxGainP75Pct`, name the horizon that Base assumes and the specific driver that gets it

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T10:17:57.620Z",
+  "generatedAt": "2026-08-13T11:37:47.907Z",
   "windowNote": "core = +30% within 14 days of report price (catalyst plays) · turbo = +50% within 30 days (moonshot plays) · MAE = max adverse excursion (worst drawdown before target hit, or over the window if never hit) · SOFT TARGETS (backlog #36): North Star hitRate currently reads 0% in EVERY bucket, so it cannot rank anything. softHitRate (+10% core / +20% turbo), medianExcessVsBenchPct and beatBenchRate are the metrics that discriminate — rank on those, and keep reporting hitRate as the honest scoreboard against the stated goal. · GUARDRAIL (2-tier, backlog #27): n < 5 in a bucket = context only, NEVER a reason to include/exclude/re-rank a pick. n >= 5 = MUST be applied — but do NOT re-derive this by eye: read `core.tier2`, which precomputes the eligible buckets, the laggards, and whether the rule fired. Screening output must state the tier2 verdict either way. · REGIME CAVEAT (both tiers): always read any rate next to avgBenchmarkPct/regimeNote — a 0% hit-rate measured in a deeply negative SPY window means \"unproven in a bad regime\", not \"this type doesn't work\". Check the actual regimeNote text each run; SPY does not see a sector-only selloff, a known gap in this rough v1 signal.",
   "core": {
     "windowDays": 14,
@@ -229,13 +229,13 @@
     "totalAccumulating": 43,
     "overall": {
       "n": 41,
-      "hitRate": 2.4,
+      "hitRate": 4.9,
       "softHitRate": 22,
       "medianExcessVsBenchPct": 2,
       "beatBenchRate": 56.1,
       "medianMAE": -24.1,
-      "avgMaxGain": 6,
-      "medianTimeToHitDays": 24,
+      "avgMaxGain": 6.2,
+      "medianTimeToHitDays": 25.5,
       "avgBenchmarkPct": 1.1,
       "regimeNote": "5/41 windows had SPY down >2%"
     },
@@ -244,14 +244,14 @@
         "type": "phase3_readout",
         "total": 2,
         "n": 1,
-        "hitRate": 0,
+        "hitRate": 100,
         "softHitRate": 100,
-        "medianExcessVsBenchPct": 45.6,
+        "medianExcessVsBenchPct": 49.4,
         "beatBenchRate": 100,
         "medianMAE": -3.8,
-        "avgMaxGain": 48.4,
-        "medianTimeToHitDays": null,
-        "avgBenchmarkPct": 2.8,
+        "avgMaxGain": 52.2,
+        "medianTimeToHitDays": 27,
+        "avgBenchmarkPct": 2.7,
         "regimeNote": "0/1 windows had SPY down >2%"
       },
       {
@@ -260,10 +260,10 @@
         "n": 2,
         "hitRate": 50,
         "softHitRate": 50,
-        "medianExcessVsBenchPct": 30.3,
+        "medianExcessVsBenchPct": 32.5,
         "beatBenchRate": 100,
         "medianMAE": -8.3,
-        "avgMaxGain": 32.4,
+        "avgMaxGain": 34.6,
         "medianTimeToHitDays": 24,
         "avgBenchmarkPct": 2.1,
         "regimeNote": "0/2 windows had SPY down >2%"
@@ -416,6 +416,66 @@
     "medianBenchmarkPct": 0.7,
     "note": "SPY return over the same window as each complete entry (core+turbo combined). Pair with core.overall.regimeNote / core.byType[].regimeNote / turbo.overall.regimeNote before judging a hitRate — a low hitRate in a down-tape window is unproven, not disproven."
   },
+  "catalystAnchored": {
+    "core": {
+      "lane": "core",
+      "targetPct": 30,
+      "softTargetPct": 10,
+      "n": 137,
+      "totalComplete": 54,
+      "totalAccumulating": 69,
+      "totalUndated": 13,
+      "totalNoData": 0,
+      "totalBeyondCap": 1,
+      "hitRate": 5.6,
+      "softHitRate": 24.1,
+      "medianMAE": -16.9,
+      "avgMaxGain": 6.1,
+      "medianPctAtAnchor": -6.9,
+      "pctNegativeAtAnchor": 74.1,
+      "timingGapPP": 9.6,
+      "medianWindowDays": 17.5,
+      "note": "Measured reportDate → primary catalystDate + 3d, so the window CONTAINS the catalyst. Runs alongside the fixed 14d series, which is unchanged. medianPctAtAnchor = point-in-time return at window end (what you'd be holding just after the event); avgMaxGain = best point along the path. Entries with no explicit catalysts[].catalystDate are \"undated\" and excluded, not counted as misses. \"no-data\" means the cached price path stops before the catalyst — run npm run backtest:fetch to extend it. \"beyond-cap\" means the catalyst is further out than MAX_ANCHOR_WINDOW (120d) and is deliberately never fetched."
+    },
+    "turbo": {
+      "lane": "turbo",
+      "targetPct": 50,
+      "softTargetPct": 20,
+      "n": 84,
+      "totalComplete": 19,
+      "totalAccumulating": 44,
+      "totalUndated": 19,
+      "totalNoData": 0,
+      "totalBeyondCap": 2,
+      "hitRate": 0,
+      "softHitRate": 42.1,
+      "medianMAE": -22.1,
+      "avgMaxGain": 7.4,
+      "medianPctAtAnchor": -13.7,
+      "pctNegativeAtAnchor": 78.9,
+      "timingGapPP": 21.2,
+      "medianWindowDays": 29,
+      "note": "Measured reportDate → primary catalystDate + 3d, so the window CONTAINS the catalyst. Runs alongside the fixed 30d series, which is unchanged. medianPctAtAnchor = point-in-time return at window end (what you'd be holding just after the event); avgMaxGain = best point along the path. Entries with no explicit catalysts[].catalystDate are \"undated\" and excluded, not counted as misses. \"no-data\" means the cached price path stops before the catalyst — run npm run backtest:fetch to extend it. \"beyond-cap\" means the catalyst is further out than MAX_ANCHOR_WINDOW (120d) and is deliberately never fetched."
+    },
+    "why": "Added 2026-08-13 (backlog #38). /catalyst-list now accepts catalysts up to ~42 days out while the North Star measures 14d from report price, so a pick whose event is 4-6 weeks away is scored over a window that closes before the event and reads as a miss regardless of outcome (SRRK, catalyst 48d out, is the worked example). Read hitRate here NEXT TO core.overall.hitRate: if the fixed-window rate is ~0 but this one is materially higher, the fixed window is measuring the wrong thing for that pick, not measuring a bad pick."
+  },
+  "entryGuidance": {
+    "core": {
+      "medianPctAtAnchor": -6.9,
+      "pctNegativeAtAnchor": 74.1,
+      "timingGapPP": 9.6,
+      "n": 54
+    },
+    "turbo": {
+      "medianPctAtAnchor": -13.7,
+      "pctNegativeAtAnchor": 78.9,
+      "timingGapPP": 21.2,
+      "n": 19
+    },
+    "rule": "ENTRY RULE — applies to every report. If medianPctAtAnchor for the lane is NEGATIVE (n >= 5), Entry 1 ('now', at report price) MUST NOT carry `preferred: true`. Mark the dip entry (Entry 2) as preferred instead, and state the measured figure in entryStrategy.verdict — e.g. 'measured median at-catalyst return is X%, so buying at report price is not the default entry.' To make Entry 1 preferred anyway, the report must give a specific reason this setup differs from the measured base rate (already at/below its own dip zone, forced timing, etc.). This is the one prior that changes what a report RECOMMENDS rather than how it is scored afterwards.",
+    "interpretation": "medianPctAtAnchor = point-in-time return from report price to just after the catalyst (what holding actually returned). pctNegativeAtAnchor = share of picks underwater at their own event. timingGapPP = median max gain minus median at-anchor return: how much of the apparent upside existed only for someone who exited at the right moment. A large timingGapPP with a negative medianPctAtAnchor is the signature of picks that drift down into their catalyst — read it as an entry-timing problem, not a stock-picking one.",
+    "caveat": "n is small and these are medians — a few picks that run hard into their event (PLTR +49%, RDW +44%, KTOS +29% as of 2026-08-13) sit alongside a median that is negative. This rule shifts the DEFAULT entry; it is not a claim that no pick should ever be bought at report price."
+  },
   "scenarioCalibration": {
     "core": {
       "lane": "core",
@@ -466,12 +526,12 @@
       "note": "Not perfectly apples-to-apples: near-miss uses point-in-time +14d price; picks use max gain within the 14d window (structurally favors picks). Treat edge as an upper bound, not exact."
     },
     "turbo": {
-      "n": 2,
+      "n": 13,
       "pickedN": 41,
       "windowDays": 30,
-      "medianNearMissPct": -17.1,
+      "medianNearMissPct": 10.9,
       "medianPickedMaxGainPct": 2.3,
-      "selectionEdgePct": 19.4,
+      "selectionEdgePct": -8.5,
       "note": "Not perfectly apples-to-apples: near-miss uses point-in-time +30d price; picks use max gain within the 30d window (structurally favors picks). Treat edge as an upper bound, not exact."
     }
   }

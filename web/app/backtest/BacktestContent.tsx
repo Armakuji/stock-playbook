@@ -276,6 +276,18 @@ function TurboNorthStarSection({ ns }: { ns: TurboNorthStar }) {
   const rateColor = (v: number | null) => (v == null ? "#64748b" : v >= 0.5 ? "#10b981" : v >= 0.3 ? "#f59e0b" : "#ef4444");
   const small = ns.totalComplete > 0 && ns.totalComplete < 5;
 
+  // Paginated entries table — this list grows one row per turbo snapshot and
+  // was rendering all of them (84 as of 2026-08-13), which made the /backtest
+  // page unusably long. Same page size and control pattern as the near-miss
+  // and checkpoints tables below.
+  const TURBO_PAGE_SIZE = 10;
+  const [turboPage, setTurboPage] = useState(1);
+  const turboTotalPages = Math.max(1, Math.ceil(ns.entries.length / TURBO_PAGE_SIZE));
+  const pagedTurboEntries = ns.entries.slice(
+    (turboPage - 1) * TURBO_PAGE_SIZE,
+    turboPage * TURBO_PAGE_SIZE
+  );
+
   return (
     <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: 14, padding: "20px 22px", marginBottom: 24 }}>
       <div style={{ fontSize: 10, fontWeight: 800, color: "#ff6d00", textTransform: "uppercase", letterSpacing: "1.5px", fontFamily: "var(--font-mono, monospace)", marginBottom: 6 }}>
@@ -353,8 +365,8 @@ function TurboNorthStarSection({ ns }: { ns: TurboNorthStar }) {
                 </tr>
               </thead>
               <tbody>
-                {ns.entries.map((e, i) => (
-                  <tr key={`${e.ticker}-${e.reportDate}`} style={{ borderBottom: i < ns.entries.length - 1 ? "1px solid var(--border)" : "none" }}>
+                {pagedTurboEntries.map((e, i) => (
+                  <tr key={`${e.ticker}-${e.reportDate}`} style={{ borderBottom: i < pagedTurboEntries.length - 1 ? "1px solid var(--border)" : "none" }}>
                     <td style={{ padding: "8px 12px", fontWeight: 800 }}>{e.ticker}</td>
                     <td style={{ padding: "8px 12px", textAlign: "center", color: "var(--muted)" }}>{fmtDate(e.reportDate)}</td>
                     <td style={{ padding: "8px 12px", textAlign: "center" }}>
@@ -376,6 +388,43 @@ function TurboNorthStarSection({ ns }: { ns: TurboNorthStar }) {
               </tbody>
             </table>
           </div>
+          {ns.entries.length > TURBO_PAGE_SIZE && (
+            <div style={{
+              display: "flex", alignItems: "center", justifyContent: "space-between",
+              paddingTop: 12, marginTop: 4,
+              fontFamily: "var(--font-mono, monospace)", fontSize: 11,
+            }}>
+              <button
+                onClick={() => setTurboPage((p) => Math.max(1, p - 1))}
+                disabled={turboPage === 1}
+                style={{
+                  padding: "5px 12px", borderRadius: 7, border: "1px solid var(--border)",
+                  background: "transparent", color: turboPage === 1 ? "var(--muted)" : "var(--text)",
+                  fontFamily: "inherit", fontSize: 11, fontWeight: 700,
+                  cursor: turboPage === 1 ? "default" : "pointer",
+                  opacity: turboPage === 1 ? 0.4 : 1,
+                }}
+              >
+                ← Prev
+              </button>
+              <span style={{ color: "var(--muted)" }}>
+                Page {turboPage} of {turboTotalPages} · {ns.entries.length} total
+              </span>
+              <button
+                onClick={() => setTurboPage((p) => Math.min(turboTotalPages, p + 1))}
+                disabled={turboPage === turboTotalPages}
+                style={{
+                  padding: "5px 12px", borderRadius: 7, border: "1px solid var(--border)",
+                  background: "transparent", color: turboPage === turboTotalPages ? "var(--muted)" : "var(--text)",
+                  fontFamily: "inherit", fontSize: 11, fontWeight: 700,
+                  cursor: turboPage === turboTotalPages ? "default" : "pointer",
+                  opacity: turboPage === turboTotalPages ? 0.4 : 1,
+                }}
+              >
+                Next →
+              </button>
+            </div>
+          )}
         </>
       )}
     </div>

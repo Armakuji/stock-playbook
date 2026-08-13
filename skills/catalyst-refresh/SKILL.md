@@ -33,6 +33,10 @@ read `core.tier2` rather than re-deriving it. Two fields bind on every report yo
 - `stopGuidance` — `entryStrategy.stopLoss.tight` must be **wider** than the relevant `medianMAE`
   (per-type when that bucket has n ≥ 5, else `core.overall.medianMAE`) or carry a one-line
   justification.
+- `entryGuidance.core` — **entry rule (backlog #40)**: if `medianPctAtAnchor` is negative with
+  n >= 5, the refreshed report must NOT mark Entry 1 ("now") as `preferred`, and must quote the
+  figure in `entryStrategy.verdict`. Refreshes are exactly where this slips — a pick that has run
+  is the most tempting one to mark "buy now".
 - `scenarioCalibration.core` — state the `optimismBiasBasePct` you wrote against; if Base exceeds
   `realizedMaxGainP75Pct`, name the horizon it assumes. Read `horizonCaveat` first.
 
