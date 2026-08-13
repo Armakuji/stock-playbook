@@ -487,6 +487,80 @@ dev server) เห็น class ครบ ไม่มี error ใน server log
 
 **เกี่ยวพัน:** ต่อจาก #25 (loop) + #27 (regime/benchmark) · ยังไม่แตะ turbo lane prompts (`turbo-list.md` / `turbo-report`) — ตัวเลข soft/tier2 มีให้ใช้แล้วใน JSON แต่ prompt ฝั่ง turbo ยังอ้าง hitRate อยู่ → งานต่อไป · `LAGGARD_MARGIN_PP = 2` เป็น judgement call ควร revisit เมื่อ n ต่อ bucket > ~20
 
+## 37. Catalyst date provenance — ห้ามเอา CT.gov estimated-completion มาใช้เป็น `catalystDate`
+
+**ปัญหา:** เจอตอน test-run `/catalyst-list` จริง (2026-08-13). Longlist ที่ดึงจาก PDUFA/catalyst
+aggregator (catalystalert.io) ให้ entry ที่ดูเหมือน dated catalyst แต่พอ verify กับ guidance ของ
+บริษัทเองแล้ว **ไม่ใช่ event**:
+- `IRON` — aggregator ขึ้น "DISC-1459 Phase 3 Est. Readout · Sep 2026 ~Confirmed" แต่ guidance จริงคือ
+  bitopertin Ph3 EPP topline **Q4 2026** และ FDA decision **mid-2027** → ตัวเลข Sep มาจาก
+  *estimated completion date* ใน CT.gov ไม่ใช่วันที่บริษัท guide ว่าจะ readout
+- `MLTX` — aggregator ขึ้น "Ph3 Est. Readout Sep '26" แต่ VELA Ph3 **readout ไปแล้ว** (52-week data
+  positive, Week 40 ที่ AAD 2026) สิ่งที่เหลือคือ **BLA submission** เดือน ก.ย. ซึ่งเป็น filing ไม่ใช่
+  binary outcome
+ถ้าเขียนรายงานตาม aggregator ตรง ๆ = เอา trial-completion estimate ไปขายเป็น near-term catalyst
+ซึ่งผิด rule 1 (ห้าม fabricate) และทำให้ ranking ตาม catalyst proximity (rule 8) เพี้ยนทั้งกระดาน
+— pick ที่ไม่มี event จริงจะลอยขึ้นบนสุดเพราะ `catalystDate` ใกล้
+
+**ทำ:**
+1. `skills/stock-report/SKILL.md` Step 1 ข้อ 4 — เพิ่มกฎ provenance: `catalystDate` ต้องมาจาก
+   **company guidance / SEC filing / official FDA PDUFA letter** เท่านั้น. CT.gov `estimated
+   completion date`, aggregator ที่ mark `~Confirmed`/`AI-detected`, และ trial "completion"
+   ห้ามใช้เป็น `catalystDate` เด็ดขาด — ถ้ามีแค่นั้นให้ปล่อย `catalystDate` ว่างและใช้ fuzzy
+   `dateBadge` (rule 9) แล้วยอมให้ pick จมลงล่างตาม ranking
+2. `.claude/commands/catalyst-list.md` Step 1 — ตอน print longlist ให้ใส่ **แหล่งที่มาของวันที่**
+   ต่อ candidate (`guidance` / `SEC` / `PDUFA letter` / `CT.gov-est` / `aggregator`) และบังคับ
+   verify candidate ที่ไม่ใช่ 3 ประเภทแรกก่อนเข้า top 5
+3. `scripts/validate-reports.mjs` — เพิ่ม WARN ใหม่ข้าง ๆ block "Stale catalystDate" (บรรทัด ~165):
+   ถ้ามี `catalystDate` แต่ `sources[]` ไม่มี URL จาก domain ที่เชื่อถือได้ (sec.gov / fda.gov /
+   ir.* / globenewswire / prnewswire / businesswire) → เตือนว่า catalyst date ไม่มี primary source
+   (WARN ไม่ block เพราะ source บางเคสถูกต้องแต่ domain ไม่อยู่ใน list)
+
+**ไฟล์:** `skills/stock-report/SKILL.md` (Step 1) · `.claude/commands/catalyst-list.md` (Step 1
+longlist format) · `scripts/validate-reports.mjs` (~L165 ข้าง stale-catalyst WARN, ใช้ helper
+`catalystISO` L43 + `isUrl` ที่มีอยู่แล้ว) · อ้าง CLAUDE.md rule 8/9
+
+**เป้า:** ทุก `catalystDate` ที่เขียนลง JSON traceable กลับไปหา primary source ได้ · longlist แสดง
+provenance ต่อ candidate · validator เตือนเมื่อ dated catalyst ไม่มี primary-source URL · ไม่มี pick
+ไหนขึ้นบน `/catalyst` เพราะวันที่ที่ CT.gov เดาให้
+
+---
+
+## 38. Gate 30%→20% + catalyst window ~14d→~6 สัปดาห์ — และ measurement horizon ที่ยังไม่ตาม (2026-08-13)
+
+**ปัญหา:** test-run `/catalyst-list` จริงชี้ว่า gate เดิม (30%+ consensus upside + catalyst ใกล้ ๆ
+ในกรอบ ~14 วัน) **เลือกได้เซตว่าง** — หุ้นที่มี dated catalyst แน่นอนภายใน 2 สัปดาห์ *และ* consensus
+upside 30%+ แทบเป็นข้อขัดแย้งในตัวเอง เพราะ analyst price catalyst เข้าไปใน target แล้ว. ผลรันจริง:
+`NUVL` +15% / `SRRK` +22% (ทั้งคู่มี PDUFA confirmed จริง) ตกเกณฑ์ upside · `IRON` +59% / `MLTX` +49%
+ผ่าน upside แต่ไม่มี catalyst จริงในกรอบ (ดู #37). สอดคล้องกับ backtest: North Star +30%/14d
+hitRate = 0/94. เกณฑ์ที่ไม่มีใครผ่านไม่ได้แปลว่า pick ห่วย — แปลว่านิยามเลือกจากเซตที่แทบไม่มีอยู่จริง
+
+**ทำ (ทำไปแล้วบางส่วน):**
+1. ✅ `.claude/commands/catalyst-list.md` Step 1 — gate 30%→**20%** (pinned definition + เหตุผลที่ย้าย
+   เขียนไว้ในไฟล์) · เพิ่ม **catalyst window ~42 วัน** เป็นเงื่อนไขชัดเจน · บังคับใส่ date provenance
+   ต่อ candidate ใน longlist (ผูกกับ #37) · บังคับให้ระบุเมื่อ pick มี catalyst เกิน 14 วัน
+2. ✅ `CLAUDE.md` บรรทัด `/catalyst-list` — sync ตัวเลข 20%+ / ~6 สัปดาห์ + ชี้กลับมาที่ pinned definition
+3. ⬜ **ยังไม่ทำ — measurement horizon mismatch (แกนหลักของข้อนี้).** ตอนนี้ screening ยอมรับ catalyst
+   ได้ถึง 42 วัน แต่ North Star ยังวัด "+30% ภายใน 14 วันนับจาก report price" → pick ที่ catalyst อยู่
+   สัปดาห์ที่ 4–6 **ถูกวัดในหน้าต่างที่ปิดไปก่อน event เกิด** จะนับเป็น miss เสมอไม่ว่า catalyst จะออกมาดี
+   แค่ไหน. ถ้าไม่แก้ hitRate/softHitRate จะยิ่งไร้ความหมายหลังจากนี้ (วัด pre-catalyst drift ล้วน ๆ)
+
+**แนวทางข้อ 3 (เสนอ):** เพิ่ม series ใหม่ **ข้าง ๆ** ของเดิม ห้ามแก้ 14d ทิ้ง (จะพัง comparability
+กับ 94 entry เดิม) — วัด maxGain จาก report date ถึง `catalystDate + 3d` ต่อ report ที่มี
+`catalystDate` จริง แล้วรายงานเป็น `coreCatalystAnchored: { n, hitRate, softHitRate, medianMAE, ... }`
+คู่กับ `core` เดิม. ต้อง fetch path ให้ยาวพอ (ตอนนี้ `fetch-backtest-prices.mjs` ดึงตามหน้าต่าง 14d/30d)
+
+**ไฟล์:** `.claude/commands/catalyst-list.md` (Step 1 — done) · `CLAUDE.md` (บรรทัด /catalyst-list — done) ·
+`scripts/build-skill-feedback.mjs` (เพิ่ม series ใหม่ ข้าง `core`/`turbo`) · `web/lib/north-star.ts`
+(ถ้าอยากให้หน้า `/backtest` แสดงด้วย — จำ comment "update BOTH places") · `scripts/fetch-backtest-prices.mjs`
+(ขยายช่วงดึงราคาให้ครอบ catalystDate) · `web/lib/catalyst-timing.ts` (`catalystISO` ใช้ resolve วันที่)
+
+**เป้า:** pick ที่ catalyst อยู่สัปดาห์ที่ 4–6 ถูกวัดด้วยหน้าต่างที่ครอบ event จริง · `core` 14d เดิม
+ยังอยู่ครบไม่ถูกแตะ (comparability) · เทียบได้ว่า gate 20%/42d ให้ผลดีกว่า 30%/14d จริงไหมด้วยตัวเลข
+ไม่ใช่ความรู้สึก — review หลังมี complete entry ใหม่ ≥20 รายการภายใต้เกณฑ์ใหม่
+
+---
+
 ## ยังไม่เลือกทำ (ไว้พิจารณาทีหลัง)
 - **Earned category ranking + expectancy-based sizing** *(idea 5+9)* — ลบ sector priority (Tech→AI→Space) ให้ category ลอยขึ้น top ตาม hit-rate จริง + size ตาม expectancy (`hitRate × upside ÷ MAE`) **⚠️ ขึ้นกับ #9 มี sample พอก่อน** ไม่งั้น optimize บน noise — ต้องใส่ shrinkage/prior + cap อิทธิพลตอน N น้อย
 - **Portfolio-level correlation view** — holding (AVGO/NVDA/MRVL/INTC/PLTR/ASTS) correlate สูง เด้งพร้อมกันตาม AI sentiment; view exposure/concentration/powder *(#10 ปิดแล้ว — เป็น report-level warning ใน `/catalyst` เท่านั้น ไอเดียนี้ยังแยกเป็นคนละเรื่อง: cross-holding exposure view ต่อ user's actual portfolio/journal ไม่ใช่ต่อ dashboard picks — ไม่ทับซ้อนแล้ว เป็น idea ที่ใหญ่กว่า ทำทีหลังได้)*
