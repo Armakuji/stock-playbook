@@ -1,0 +1,199 @@
+{
+  "ticker": "NVDA",
+  "companyName": "NVIDIA Corporation",
+  "companyDescription": "AI compute monopoly · Blackwell/Vera Rubin GPUs + CUDA lock-in — the toll booth on every hyperscaler capex dollar",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-13T00:00:00.000Z",
+  "price": 224.09,
+  "priceChange": 3.03,
+  "priceNote": "Live price Aug 13 07:49, +3.03% today. Prior report (Aug 5) used $211.94 — +5.7% drift in 8 days. Now 13.5% above the $195-200 preferred zone with earnings 13 days out.",
+  "marketCap": "$5.42T",
+  "sector": "Technology / Semiconductors",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 84,
+  "summary": "Consensus across the largest analyst sets is $302.83 (61 analysts, Strong Buy), with wider polls reading $316.79 (67) and $319 (79) — call it +35% from here against a $180 low and $500 high. Q2 FY2027 earnings land Aug 26, with the Vera Rubin shipment ramp behind it as the second leg. The thesis is unchanged and unusually well-supported for a $5.4T company; the issue is that the stock has run 5.7% in eight days into the print and now sits 13.5% above the entry zone. Note the measured reality check: this dashboard's earnings_beat bucket has an 0% hit rate on +30%/14d across 42 completed windows — a mega-cap moving 30% in two weeks is close to physically impossible, so treat the consensus target as a 12-month figure, not a catalyst-window one.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Fiscal Q2 FY27 Earnings",
+      "description": "Street looks for continued datacenter acceleration. The read-through that matters is Blackwell supply commentary and the first hard Vera Rubin timing guidance. Note: sources conflict between Aug 26 and Aug 27 — Aug 26 is a Wednesday, NVIDIA's usual reporting day, so that is used here.",
+      "urgencyLabel": "13 DAYS",
+      "dateBadge": "Aug 26, 2026",
+      "catalystDate": "2026-08-26",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🚀",
+      "name": "Vera Rubin H2 2026 Shipments",
+      "description": "Next-generation platform shipping in H2 gives the FY2028 revenue step. Any pull-forward or slip in this schedule is the single biggest swing factor on out-year estimates.",
+      "urgencyLabel": "~7 WEEKS",
+      "dateBadge": "Sep 30, 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "13.5% above the preferred entry zone going into a print — the pre-earnings drift is spent",
+    "Mega-cap physics: at $5.42T, a +30% move inside the 14-day North Star window has essentially never happened, and this dashboard's earnings_beat bucket confirms it (0/42 completed windows)",
+    "Expectations are the risk, not results — NVDA fell 4% on a beat in May 2025, and AVGO managed only +4.7% on a strong Jul 2026 print",
+    "Hyperscaler capex concentration: a handful of customers drive the majority of datacenter revenue",
+    "Vera Rubin schedule slip would reset FY2028 estimates that are already in the price",
+    "Analyst range is $180 to $500 — even the bulls disagree by nearly 3x on terminal value"
+  ],
+  "estimateDates": [
+    { "event": "Q2 FY2027 Earnings", "dateRange": "Aug 26, 2026", "note": "Datacenter growth + Vera Rubin timing", "est": "continued datacenter acceleration", "highlight": "blue" },
+    { "event": "Vera Rubin shipments", "dateRange": "H2 2026", "note": "FY2028 revenue step", "est": "H2 2026 start", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -20, "price": 179.27 },
+    { "label": "Base", "color": "yellow", "pct": 18, "price": 264.43 },
+    { "label": "Bull", "color": "green", "pct": 35.1, "price": 302.83 },
+    { "label": "Moon", "color": "purple", "pct": 55, "price": 347.34 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (61 analysts, S&P Global)", "target": 302.83, "rating": "Strong Buy" },
+    { "firm": "Consensus (67 analysts)", "target": 316.79, "rating": "Buy" },
+    { "firm": "Consensus (79 analysts)", "target": 319, "rating": "Buy" },
+    { "firm": "Street high", "target": 500, "rating": "Buy" },
+    { "firm": "Street low", "target": 180, "rating": "Hold" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds 3.50-3.75%, held Jul 29 for a fifth consecutive meeting with three dissents preferring a hike. Next FOMC Sep 16, three weeks after earnings.",
+    "inflationNote": "July CPI (Aug 12) headline 3.4% from 3.5%, core 2.5%, +0.1% m/m — a soft print that cut hike odds, following July payrolls at -23k with >100k of downward revisions.",
+    "sectorImpact": "Semis carry the index. With the S&P at record highs and VIX near 14.9, a hawkish surprise hits NVDA harder than the market because it is the crowded expression of the AI trade — that concentration is the macro risk, not NVDA's own rate sensitivity.",
+    "summary": "MEDIUM — earnings quality is not in question; positioning and index concentration are."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 224.09, "note": "Current price — 13.5% above zone, into a print", "timing": "Not preferred" },
+      { "label": "Entry 2", "level": 200, "rangeMax": 208, "note": "Pre-earnings cool-off or post-print digestion", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 185, "note": "Broad AI-trade drawdown; near the street low of $180", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 264.43, "pct": 18.0, "note": "Base — datacenter growth holds through the print" },
+    "tp2": { "price": 302.83, "pct": 35.1, "note": "61-analyst consensus · 12-month horizon, not 14-day" },
+    "tp3": { "price": 347.34, "pct": 55.0, "note": "Vera Rubin ramp lands ahead of schedule · 2027", "moon": true },
+    "stopLoss": {
+      "tight": 190,
+      "tightPct": -15.2,
+      "tightNote": "Wider than the measured core medianMAE of -14% per the stop rule; also sits just under the Entry 3 shelf",
+      "hard": 175,
+      "hardPct": -21.9,
+      "hardNote": "Below the street low of $180 — would mean the AI capex cycle itself is being repriced",
+      "riskReward": "2.3 : 1",
+      "rrNote": "Tight stop (-15.2%) vs TP2 (+35.1%)",
+      "rrWarning": "Measured from the $200-208 entry. At $224.09 the R/R compresses materially"
+    },
+    "verdict": "Core holding, wrong entry — accumulate at $200-208, don't chase 13.5% above zone 13 days before a print.",
+    "approach": "DCA"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Ran 5.7% in the eight days since the last report and 3.03% today alone, so the classic 1-2 week pre-earnings drift is already banked. Feedback prior: the earnings_beat bucket has n=42 completed windows with a 0% hit rate on +30%/14d and medianExcessVsBenchPct of +1.8 vs +1.4 overall — not a tier-2 laggard, but concrete evidence that the +30% catalyst-window framing does not apply to mega-caps.",
+    "preRunupTiming": "1-2 สัปดาห์ก่อนงบ",
+    "preRunupPct": "+5% to +8%",
+    "postWin": {
+      "avgPct": 8,
+      "range": "+4% to +20%",
+      "note": "Mega-cap semis on a beat: AVGO +4.7% (Jul 2026) at the low end, MU +20% (Jun-Jul 2026) at the high end where the surprise was larger. NVDA's own size argues for the lower half of that band.",
+      "exampleDate": "Jul 2026"
+    },
+    "postLose": {
+      "avgPct": -8,
+      "range": "-4% to -15%",
+      "note": "NVDA fell 4% on a May 2025 print that beat — when expectations are this elevated, an in-line result is a negative catalyst. That case is the template, not a tail.",
+      "exampleDate": "May 2025"
+    },
+    "spotSizing": {
+      "pct": 8,
+      "reason": "Core Holding sizing, larger than the speculative names on this board because the business quality and analyst coverage depth justify it. Not raised despite the improved consensus — entry 13.5% above zone into a print offsets the better target."
+    },
+    "stopPreCatalyst": { "pct": -15.2, "price": 190, "note": "A break here before Aug 26 would mean the AI capex narrative is cracking, not just NVDA" },
+    "stopPostCatalyst": { "pct": -12, "note": "On a guidance disappointment, trim rather than exit — this is a core holding, and the May 2025 -4% recovered" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "NVDA",
+      "event": "Q1 FY2026 earnings — beat, stock fell anyway",
+      "date": "May 2025",
+      "movePct": -4,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Same ticker, same catalyst type. The most instructive case on this report: NVDA beat and still fell, because the bar was set by positioning rather than by the model. Directly relevant with the stock 13.5% above zone into the print."
+    },
+    {
+      "ticker": "AVGO",
+      "event": "Q2 FY2026 earnings beat",
+      "date": "Jul 2026",
+      "movePct": 4.7,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "Nearest mega-cap semi comparable this cycle. A genuinely strong print produced under +5% — the realistic upside for a company this size, and the reason TP2 is a 12-month target."
+    },
+    {
+      "ticker": "MU",
+      "event": "Earnings beat with strong memory pricing guidance",
+      "date": "Jun-Jul 2026",
+      "movePct": 20,
+      "days": 3,
+      "outcome": "good",
+      "note": "The upper bound: +20% required a genuine estimate reset, not just a beat. Included to bracket the range rather than as the central case."
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/nvda/forecast/",
+    "https://www.marketscreener.com/quote/stock/NVIDIA-CORPORATION-57355629/consensus/",
+    "https://finance.yahoo.com/markets/stocks/articles/36-analysts-share-nvidia-stock-101344754.html",
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+    "https://www.bls.gov/news.release/archives/cpi_08122026.htm"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "consensus จากชุดนักวิเคราะห์ที่ใหญ่ที่สุดอยู่ที่ $302.83 (61 คน, Strong Buy) ส่วนโพลที่กว้างกว่าอ่าน $316.79 (67 คน) และ $319 (79 คน) — ประมาณ +35% จากราคานี้ เทียบกับกรอบล่าง $180 และบน $500 · งบ Q2 FY2027 ออก 26 ส.ค. โดยมี Vera Rubin ramp เป็นขาที่สอง · thesis ไม่เปลี่ยนและมีหลักฐานหนุนแน่นผิดปกติสำหรับบริษัท $5.4T · ปัญหาคือหุ้นวิ่งมา 5.7% ใน 8 วันก่อนงบ และตอนนี้สูงกว่าโซนเข้า 13.5% · ข้อควรจำจากตัวเลขจริง: bucket earnings_beat ของ dashboard นี้มี hit rate 0% บนเกณฑ์ +30%/14 วัน จาก 42 หน้าต่างที่จบแล้ว — mega-cap วิ่ง 30% ใน 2 สัปดาห์แทบเป็นไปไม่ได้เชิงกายภาพ ให้อ่านเป้า consensus เป็นกรอบ 12 เดือน ไม่ใช่กรอบ catalyst",
+      "priceNote": "ราคาสด 13 ส.ค. 07:49 · +3.03% วันนี้ · รายงานก่อน (5 ส.ค.) ใช้ $211.94 — drift +5.7% ใน 8 วัน · ตอนนี้สูงกว่าโซน $195-200 อยู่ 13.5% และเหลืออีก 13 วันจะประกาศงบ",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "งบ Fiscal Q2 FY27", "description": "ตลาดคาดว่า datacenter จะเร่งต่อ · สิ่งที่ต้องอ่านคือคอมเมนต์เรื่อง supply ของ Blackwell และ guidance เรื่องเวลาของ Vera Rubin ครั้งแรกแบบชัด ๆ · หมายเหตุ: แหล่งข้อมูลขัดกันระหว่าง 26 กับ 27 ส.ค. — 26 ส.ค. เป็นวันพุธซึ่งเป็นวันที่ NVIDIA ประกาศงบตามปกติ จึงใช้วันนี้" },
+        { "name": "การส่งมอบ Vera Rubin ครึ่งปีหลัง 2026", "description": "แพลตฟอร์มรุ่นถัดไปที่จะเริ่มส่งครึ่งปีหลัง เป็นขั้นบันไดรายได้ของ FY2028 · การเลื่อนเข้าหรือเลื่อนออกของตารางนี้คือตัวแปรที่เหวี่ยงประมาณการปีถัด ๆ ไปมากที่สุด" }
+      ],
+      "risks": [
+        "สูงกว่าโซนเข้า 13.5% ก่อนประกาศงบ — แรง drift ก่อนงบใช้ไปหมดแล้ว",
+        "ฟิสิกส์ของ mega-cap: ที่ $5.42T การขยับ +30% ในกรอบ 14 วันของ North Star แทบไม่เคยเกิด และ bucket earnings_beat ของ dashboard นี้ยืนยัน (0/42 หน้าต่างที่จบแล้ว)",
+        "ความเสี่ยงอยู่ที่ความคาดหวัง ไม่ใช่ผลประกอบการ — NVDA เคยร่วง 4% ทั้งที่งบ beat เมื่อ พ.ค. 2025 และ AVGO ขึ้นได้แค่ +4.7% จากงบที่แข็งเมื่อ ก.ค. 2026",
+        "การกระจุกตัวของ capex hyperscaler: ลูกค้าไม่กี่รายขับรายได้ datacenter ส่วนใหญ่",
+        "ถ้าตาราง Vera Rubin เลื่อน จะรีเซ็ตประมาณการ FY2028 ที่อยู่ในราคาแล้ว",
+        "กรอบนักวิเคราะห์ $180 ถึง $500 — แม้แต่ฝั่งบวกก็เห็นมูลค่าปลายทางต่างกันเกือบ 3 เท่า"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed 3.50-3.75% คงเป็นครั้งที่ 5 ติดเมื่อ 29 ก.ค. โดยมี dissent 3 เสียงอยากขึ้น · FOMC ถัดไป 16 ก.ย. หลังงบ 3 สัปดาห์",
+        "inflationNote": "CPI ก.ค. (12 ส.ค.) headline 3.4% จาก 3.5% · core 2.5% · m/m +0.1% — print ที่อ่อน ลดโอกาสขึ้นดอกเบี้ย ตามหลังตัวเลขจ้างงาน ก.ค. ที่ -23k พร้อมปรับย้อนหลังลงกว่า 100k",
+        "sectorImpact": "หุ้นเซมิเป็นตัวแบกดัชนี · ด้วย S&P ที่ทำจุดสูงสุดใหม่และ VIX ราว 14.9 ถ้ามี hawkish surprise NVDA จะโดนหนักกว่าตลาดเพราะเป็นตัวแทนของ AI trade ที่คนถือแน่นที่สุด — ความกระจุกตัวนี้คือ macro risk ไม่ใช่ความไวต่อดอกเบี้ยของ NVDA เอง",
+        "summary": "MEDIUM — คุณภาพงบไม่ใช่ประเด็น · positioning กับความกระจุกตัวในดัชนีต่างหาก"
+      },
+      "entryStrategy": {
+        "verdict": "Core holding แต่จุดเข้าผิด — ทยอยสะสมที่ $200-208 อย่าไล่ที่สูงกว่าโซน 13.5% ก่อนงบ 13 วัน",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — สูงกว่าโซน 13.5% และกำลังเข้าใกล้งบ", "timing": "ไม่แนะนำ" },
+          { "note": "ย่อพักก่อนงบ หรือช่วงย่อยข่าวหลังงบ", "timing": "ถ้าย่อ" },
+          { "note": "AI trade โดนเทรวม · ใกล้กรอบล่างของ street ที่ $180", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Base — การเติบโตของ datacenter ยืนได้ผ่านงบ" },
+        "tp2": { "note": "consensus จาก 61 นักวิเคราะห์ · กรอบ 12 เดือน ไม่ใช่ 14 วัน" },
+        "tp3": { "note": "Vera Rubin ramp มาเร็วกว่าตาราง · 2027" },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE -14% ที่วัดได้ตามกฎ stop และอยู่ใต้ชั้น Entry 3 พอดี",
+          "hardNote": "ต่ำกว่ากรอบล่างของ street ที่ $180 — แปลว่าตลาดกำลัง reprice วัฏจักร AI capex ทั้งวง",
+          "rrNote": "stop แคบ (-15.2%) เทียบ TP2 (+35.1%)",
+          "rrWarning": "วัดจากจุดเข้า $200-208 · ที่ $224.09 R/R บีบลงมาก"
+        },
+        "estimateDates": [
+          { "event": "งบ Q2 FY2027", "note": "การเติบโต datacenter + ตาราง Vera Rubin" },
+          { "event": "การส่งมอบ Vera Rubin", "note": "ขั้นบันไดรายได้ FY2028" }
+        ]
+      }
+    }
+  }
+}

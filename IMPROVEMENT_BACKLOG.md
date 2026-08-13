@@ -561,6 +561,59 @@ hitRate = 0/94. เกณฑ์ที่ไม่มีใครผ่านไ�
 
 ---
 
+## 39. ✅ DONE — Port #36 to the turbo lane + แก้ scenarioCalibration ที่เอา core/turbo มารวมกัน (2026-08-13)
+
+**ปัญหา:** ตั้งคำถามว่าควรทำ `/turbo-list` แบบเดียวกับ `/catalyst-list` (#36) ไหม — คำตอบคือ
+**ไม่ใช่การแก้แบบเดียวกัน** เพราะ turbo-list ไม่ได้มีบั๊กแบบเดียวกัน: tier-2 ของ catalyst-list ตายสนิท
+(0 vs 0 ไม่มีวัน diverge) ส่วนของ turbo เป็นระดับทั้งเลน ("ถ้า `turbo.overall.n ≥ 5` และ hitRate ต่ำ →
+บีบ sizing") ซึ่ง**ยิงออกจริง**ที่ n=41 / hitRate 2.4% · แต่เจอช่องว่างจริง 3 จุด:
+1. **turbo ไม่มี `byType`** → มองไม่เห็นความต่างภายในเลนตัวเอง บอกได้แค่ "ทั้งเลนแย่" ทั้งที่ core ใช้
+   byType จนเจอ laggard/leader ได้
+2. **`scenarioCalibration` เอา core+turbo มารวมกัน — ผิดสองชั้นพร้อมกัน** (บั๊กที่ติดมาจาก #36 เอง):
+   Base ของ turbo เขียนใหญ่กว่า core **โดยตั้งใจ** (moonshot ไม่ใช่ core pick) และฝั่ง realized ก็เอา
+   หน้าต่าง 14d ปนกับ 30d → ตัวเลข optimism bias ที่ได้เป็นการผสมคนละเกณฑ์บนคนละนาฬิกา ใช้ไม่ได้กับ
+   เลนไหนเลย · ยังไม่ระเบิดเพราะ prompt ฝั่ง turbo ยังไม่ได้อ่าน field นี้ — ถ้าเพิ่มกฎ scenario เข้า
+   turbo-list ก่อนแก้ จะลากบั๊กเข้าไปด้วย
+3. **prompt ฝั่ง turbo ยัง rank ด้วย `hitRate`** และไม่มีกฎ stop แบบบังคับ (มีแค่ "reference")
+
+**ทำ:**
+1. ✅ `scripts/build-skill-feedback.mjs` — แยก `scenarioCalibration` เป็น `.core` / `.turbo` ผ่าน
+   `buildScenarioCalibration(entries, windowDays, laneLabel)` · **ไม่มี** ตัวเลข pooled ระดับบนสุดอีกต่อไป
+   (ตั้งใจ) + `note` อธิบายว่าทำไม
+2. ✅ เพิ่ม `turbo.byType` + `turbo.tier2` — ใช้ `buildTier2(byType, overall)` ตัวเดิมที่เขียนเป็น generic
+   ไว้แล้วตั้งแต่ #36 (รับ 2 args) จึงเป็นการต่อสายไม่กี่บรรทัด · เพิ่ม `catalystType` เข้า turboEntries
+3. ✅ `.claude/commands/turbo-list.md` Step 0 + `skills/turbo-report/SKILL.md` Step 0 — เลิก rank ด้วย
+   hitRate (ยังรายงานไว้), อ่าน `turbo.tier2` ตรง ๆ, กฎ stop ต้องกว้างกว่า `turbo.byType[]`/`overall`
+   medianMAE, กฎ scenario ใช้ `scenarioCalibration.turbo`, print block ใหม่
+4. ✅ ย้าย consumer ทุกตัวไป path ใหม่: `catalyst-list.md` · `stock-report` · `catalyst-refresh` →
+   `.core` · `turbo-refresh` → `.turbo` (เช็กแล้วไม่เหลือ bare ref)
+5. ✅ แก้ `turbo-refresh/SKILL.md` ที่เพิ่งเขียนไปเมื่อชั่วโมงก่อนว่า "turbo ไม่มี byType/tier2" — ไม่จริงแล้ว
+
+**ไฟล์:** `scripts/build-skill-feedback.mjs` · `.claude/commands/turbo-list.md` ·
+`skills/turbo-report/SKILL.md` · `skills/turbo-refresh/SKILL.md` · `.claude/commands/catalyst-list.md` ·
+`skills/stock-report/SKILL.md` · `skills/catalyst-refresh/SKILL.md`
+
+**ผลจริง (ตัวเลขที่การแยกเลนเปิดเผยออกมา):**
+- optimism bias ที่เคยรวมกันได้ **+33.7pp** → จริง ๆ คือ core **+23.7pp** (P75 6.6%) vs turbo
+  **+72.7pp** (P75 12.2%) — ต่างกัน ~3 เท่า ตัวเลขรวมผิดสำหรับทั้งสองเลน
+- **turbo tier-2 ยิงออกทันที**: laggard = `partnership_win` (-3.8 vs overall +2.0, gap -5.8pp, n=16)
+- **สัญญาณข้ามเลน:** `partnership_win` เป็น laggard ใน **ทั้งสองเลนอย่างอิสระต่อกัน** (core -1.6 vs
+  +1.4 n=12 · turbo -3.8 vs +2.0 n=16) รวม 28 หน้าต่างที่จบแล้ว บนคนละเกณฑ์คนละหน้าต่าง แต่ได้คำตอบ
+  เดียวกัน — หลักฐานแข็งกว่าเลนเดียวมาก
+- turbo byType มี 8 ชนิด · ผ่าน n≥5 จริง 3 ชนิด (partnership_win 16 · fda_decision 10 ·
+  regulatory_approval 8)
+
+**Verify:** รัน 2 รอบ diff เท่ากัน (deterministic) ✅ · รันบน dir เปล่า → `turbo.tier2.fired=false`,
+`metric=null`, `scenarioCalibration` มีครบ `core`/`turbo`/`note` ที่ n=0 ไม่ crash ✅ ·
+`node scripts/validate-reports.mjs` 0 blocking ✅ · grep ยืนยันไม่เหลือ bare `scenarioCalibration.*`
+ใน prompt ไฟล์ไหน ✅
+
+**เกี่ยวพัน:** ต่อจาก #36 (core) และแก้บั๊กที่ #36 สร้างไว้เอง (pooled calibration) · ยังไม่แตะ
+`/dca-list` ซึ่งใช้คนละ scoring (`web/lib/dca-scoring.ts`) และไม่มี North Star window — ถ้าจะพอร์ตต้อง
+คิดนิยาม "hit" ใหม่ทั้งหมดก่อน · `LAGGARD_MARGIN_PP = 2` ยังเป็น judgement call เหมือนเดิม
+
+---
+
 ## ยังไม่เลือกทำ (ไว้พิจารณาทีหลัง)
 - **Earned category ranking + expectancy-based sizing** *(idea 5+9)* — ลบ sector priority (Tech→AI→Space) ให้ category ลอยขึ้น top ตาม hit-rate จริง + size ตาม expectancy (`hitRate × upside ÷ MAE`) **⚠️ ขึ้นกับ #9 มี sample พอก่อน** ไม่งั้น optimize บน noise — ต้องใส่ shrinkage/prior + cap อิทธิพลตอน N น้อย
 - **Portfolio-level correlation view** — holding (AVGO/NVDA/MRVL/INTC/PLTR/ASTS) correlate สูง เด้งพร้อมกันตาม AI sentiment; view exposure/concentration/powder *(#10 ปิดแล้ว — เป็น report-level warning ใน `/catalyst` เท่านั้น ไอเดียนี้ยังแยกเป็นคนละเรื่อง: cross-holding exposure view ต่อ user's actual portfolio/journal ไม่ใช่ต่อ dashboard picks — ไม่ทับซ้อนแล้ว เป็น idea ที่ใหญ่กว่า ทำทีหลังได้)*

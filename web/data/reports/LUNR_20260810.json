@@ -39,7 +39,7 @@
       "name": "IM-3 Lunar Mission — Reiner Gamma",
       "description": "Third Nova-C lander mission — still has NOT launched as of Aug 10. Redundant altimeters + lighting-independent navigation sensors target the upright-landing failures that hit IM-1 and IM-2. NASA/company guidance remains second half 2026, no confirmed exact date.",
       "urgencyLabel": "H2 2026",
-      "dateBadge": "H2 2026",
+      "dateBadge": "~Sep 30, 2026",
       "catalystDate": "2026-09-30",
       "badgeColor": "blue",
       "dotColor": "yellow"
@@ -53,18 +53,60 @@
     "Customer/NASA and DoD budget concentration — Congressional funding risk touches both the CLPS lunar backlog and the new SDA-linked defense revenue"
   ],
   "estimateDates": [
-    { "event": "Q2 2026 Earnings", "dateRange": "Aug 13, 2026", "note": "Confirmed date — watch ATM pace, L3Harris/SDA revenue guidance, and IM-3 timeline update", "est": "Rev: ~$200-230M est.", "highlight": "yellow" },
-    { "event": "IM-3 Lunar Mission", "dateRange": "H2 2026", "note": "Not yet launched — third Nova-C delivery, upright landing is the key open question", "est": "Mission success = re-rating catalyst", "highlight": "blue" }
+    {
+      "event": "Q2 2026 Earnings",
+      "dateRange": "Aug 13, 2026",
+      "note": "Confirmed date — watch ATM pace, L3Harris/SDA revenue guidance, and IM-3 timeline update",
+      "est": "Rev: ~$200-230M est.",
+      "highlight": "yellow"
+    },
+    {
+      "event": "IM-3 Lunar Mission",
+      "dateRange": "~Sep 30, 2026",
+      "note": "Not yet launched — third Nova-C delivery, upright landing is the key open question",
+      "est": "Mission success = re-rating catalyst",
+      "highlight": "blue"
+    }
   ],
   "scenarios": [
-    { "label": "Bear", "color": "red", "pct": -40, "price": 9.94 },
-    { "label": "Base", "color": "yellow", "pct": 20, "price": 19.88 },
-    { "label": "Bull", "color": "green", "pct": 69.0, "price": 28.00 },
-    { "label": "Moon", "color": "purple", "pct": 146.1, "price": 40.78 }
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -40,
+      "price": 9.94
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 20,
+      "price": 19.88
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 69.0,
+      "price": 28.0
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 146.1,
+      "price": 40.78
+    }
   ],
   "analystTargets": [
-    { "firm": "Consensus (9 analysts)", "target": 40.78, "rating": "Buy", "note": "Carried from prior coverage; implies well over 100% upside from current level" },
-    { "firm": "Craig-Hallum", "target": 45.0, "rating": "Buy", "note": "Reiterated Buy through the prior decline" }
+    {
+      "firm": "Consensus (9 analysts)",
+      "target": 40.78,
+      "rating": "Buy",
+      "note": "Carried from prior coverage; implies well over 100% upside from current level"
+    },
+    {
+      "firm": "Craig-Hallum",
+      "target": 45.0,
+      "rating": "Buy",
+      "note": "Reiterated Buy through the prior decline"
+    }
   ],
   "macroRisk": {
     "fedRisk": "LOW",
@@ -75,17 +117,53 @@
   },
   "entryStrategy": {
     "entryLevels": [
-      { "label": "Entry 1", "level": 16.57, "note": "Current — consolidating after the Aug 4 L3Harris pop, ahead of Aug 13 earnings", "timing": "Now" },
-      { "label": "Entry 2", "level": 13, "rangeMax": 14.50, "note": "Pullback zone if some of the L3Harris pop reverses into earnings", "timing": "If dips", "preferred": true },
-      { "label": "Entry 3", "level": 10, "note": "Deep dip — would need an earnings miss or a broad space-sector selloff", "timing": "Deep dip only" }
+      {
+        "label": "Entry 1",
+        "level": 16.57,
+        "note": "Current — consolidating after the Aug 4 L3Harris pop, ahead of Aug 13 earnings",
+        "timing": "Now"
+      },
+      {
+        "label": "Entry 2",
+        "level": 13,
+        "rangeMax": 14.5,
+        "note": "Pullback zone if some of the L3Harris pop reverses into earnings",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 10,
+        "note": "Deep dip — would need an earnings miss or a broad space-sector selloff",
+        "timing": "Deep dip only"
+      }
     ],
-    "tp1": { "price": 19.88, "pct": 20.0, "note": "Base — Q2 earnings inline, L3Harris integration on track" },
-    "tp2": { "price": 28.00, "pct": 69.0, "note": "Bull — clean Q2 beat plus positive IM-3 timeline update" },
-    "tp3": { "price": 40.78, "pct": 146.1, "note": "Moon — IM-3 lands successfully and the L3Harris/defense revenue scales, hits consensus target", "moon": true },
+    "tp1": {
+      "price": 19.88,
+      "pct": 20.0,
+      "note": "Base — Q2 earnings inline, L3Harris integration on track"
+    },
+    "tp2": {
+      "price": 28.0,
+      "pct": 69.0,
+      "note": "Bull — clean Q2 beat plus positive IM-3 timeline update"
+    },
+    "tp3": {
+      "price": 40.78,
+      "pct": 146.1,
+      "note": "Moon — IM-3 lands successfully and the L3Harris/defense revenue scales, hits consensus target",
+      "moon": true
+    },
     "stopLoss": {
-      "tight": 14.91, "tightPct": -10.0, "tightNote": "Below the Entry 2 zone — earnings-week volatility becoming a real reversal",
-      "hard": 13.26, "hardPct": -20.0, "hardNote": "Would give back most of the L3Harris-driven rally — thesis-neutral but a real momentum breakdown",
-      "riskReward": "3.5 : 1", "rrNote": "Entry 1 to hard stop vs TP2 (Bull case)", "rrWarning": "Wide R/R reflects real volatility and two live catalysts (earnings + IM-3) — size for speculative risk, not core conviction"
+      "tight": 14.91,
+      "tightPct": -10.0,
+      "tightNote": "Below the Entry 2 zone — earnings-week volatility becoming a real reversal",
+      "hard": 13.26,
+      "hardPct": -20.0,
+      "hardNote": "Would give back most of the L3Harris-driven rally — thesis-neutral but a real momentum breakdown",
+      "riskReward": "3.5 : 1",
+      "rrNote": "Entry 1 to hard stop vs TP2 (Bull case)",
+      "rrWarning": "Wide R/R reflects real volatility and two live catalysts (earnings + IM-3) — size for speculative risk, not core conviction"
     },
     "verdict": "SPECULATIVE — real defense-sector diversification (L3Harris/SDA missile-tracking subcontract, Aug 4) plus a now-confirmed Aug 13 earnings date reduce the pure-binary risk that dominated the last report, but the ATM dilution overhang and IM-3's unproven landing remain live. Scale in; don't chase the post-L3Harris pop into earnings.",
     "approach": "Scale In"
@@ -111,8 +189,15 @@
       "pct": 5,
       "reason": "Real diversification (L3Harris/SDA) offsets some of the prior negative catalysts (LTV loss, ATM dilution), but the dilution overhang and IM-3 binary risk are both still live — max 5% of portfolio, speculative sizing."
     },
-    "stopPreCatalyst": { "pct": -20, "price": 13.26, "note": "A break below ~$13.26 ahead of Aug 13 earnings would suggest the L3Harris-driven rally is fully reversing" },
-    "stopPostCatalyst": { "pct": -30, "note": "If Aug 13 earnings miss with a guidance cut, or IM-3 later fails to land upright, exit 50%+ immediately" }
+    "stopPreCatalyst": {
+      "pct": -20,
+      "price": 13.26,
+      "note": "A break below ~$13.26 ahead of Aug 13 earnings would suggest the L3Harris-driven rally is fully reversing"
+    },
+    "stopPostCatalyst": {
+      "pct": -30,
+      "note": "If Aug 13 earnings miss with a guidance cut, or IM-3 later fails to land upright, exit 50%+ immediately"
+    }
   },
   "comparableCases": [
     {
@@ -161,9 +246,18 @@
       "priceNote": "$16.57 บวกแรงจากระดับ $15.14 ของรายงานก่อน — ส่วนใหญ่มาจากข่าวสัญญา L3Harris/SDA เมื่อ 4 ส.ค. 2026 (บวกสูงสุดถึง +22.8% วันเดียว) ตอนนี้ราคากำลัง consolidate ใกล้ระดับหลังข่าวก่อนผลประกอบการที่ยืนยันแล้ว 13 ส.ค.",
       "scoreLabel": "Speculative",
       "catalysts": [
-        { "name": "ผลประกอบการ Q2 2026", "description": "ยืนยันแล้ววันที่ 13 ส.ค. 2026 ก่อนตลาดเปิด — จับตา ATM pace, guidance รายได้ L3Harris/SDA ใหม่ และอัปเดตไทม์ไลน์ IM-3" },
-        { "name": "สัญญาป้องกันขีปนาวุธ L3Harris / SDA", "description": "4 ส.ค. 2026: L3Harris เลือก IM ออกแบบ ผลิต ส่งมอบยาน IM-300 18 ลำ รองรับระบบติดตามขีปนาวุธของ SDA Tranche 3 (prime contract $843M ให้ L3Harris มูลค่า subcontract ของ IM ยังไม่เปิดเผย) การกระจายธุรกิจจริงสู่ national security space" },
-        { "name": "IM-3 ภารกิจจันทร์ — Reiner Gamma", "description": "ยังไม่ปล่อยยาน ณ 10 ส.ค. เป้า H2 2026 ระบบ altimeter/navigation ใหม่แก้ปัญหาจาก IM-1/IM-2" }
+        {
+          "name": "ผลประกอบการ Q2 2026",
+          "description": "ยืนยันแล้ววันที่ 13 ส.ค. 2026 ก่อนตลาดเปิด — จับตา ATM pace, guidance รายได้ L3Harris/SDA ใหม่ และอัปเดตไทม์ไลน์ IM-3"
+        },
+        {
+          "name": "สัญญาป้องกันขีปนาวุธ L3Harris / SDA",
+          "description": "4 ส.ค. 2026: L3Harris เลือก IM ออกแบบ ผลิต ส่งมอบยาน IM-300 18 ลำ รองรับระบบติดตามขีปนาวุธของ SDA Tranche 3 (prime contract $843M ให้ L3Harris มูลค่า subcontract ของ IM ยังไม่เปิดเผย) การกระจายธุรกิจจริงสู่ national security space"
+        },
+        {
+          "name": "IM-3 ภารกิจจันทร์ — Reiner Gamma",
+          "description": "ยังไม่ปล่อยยาน ณ 10 ส.ค. เป้า H2 2026 ระบบ altimeter/navigation ใหม่แก้ปัญหาจาก IM-1/IM-2"
+        }
       ],
       "risks": [
         "ATM equity program $500M (เปิด 2 มิ.ย. 2026) ยังเป็น dilution overhang ต่อเนื่อง — ข่าว L3Harris ไม่ได้แก้ปัญหานี้",
@@ -181,13 +275,29 @@
       "entryStrategy": {
         "verdict": "SPECULATIVE — การกระจายธุรกิจ defense จริง (L3Harris/SDA, 4 ส.ค.) บวกวันที่ผลประกอบการ 13 ส.ค. ที่ยืนยันแล้ว ลดความเสี่ยง binary ล้วนๆ จากรายงานก่อน แต่ ATM overhang และ IM-3 ที่ยังไม่พิสูจน์ยังอยู่ ทยอยเข้า อย่าไล่ราคาหลังข่าว L3Harris ก่อนผลประกอบการ",
         "entryLevels": [
-          { "note": "ราคาปัจจุบัน — consolidate หลังข่าว L3Harris ก่อนผลประกอบการ 13 ส.ค.", "timing": "ตอนนี้" },
-          { "note": "โซนย่อถ้าข่าว L3Harris บางส่วนกลับตัวก่อนผลประกอบการ", "timing": "ถ้าย่อ" },
-          { "note": "ร่วงลึก — ต้องมีผลประกอบการพลาดคาดหรือ space sector selloff กว้าง", "timing": "ถ้าร่วงหนัก" }
+          {
+            "note": "ราคาปัจจุบัน — consolidate หลังข่าว L3Harris ก่อนผลประกอบการ 13 ส.ค.",
+            "timing": "ตอนนี้"
+          },
+          {
+            "note": "โซนย่อถ้าข่าว L3Harris บางส่วนกลับตัวก่อนผลประกอบการ",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ร่วงลึก — ต้องมีผลประกอบการพลาดคาดหรือ space sector selloff กว้าง",
+            "timing": "ถ้าร่วงหนัก"
+          }
         ],
-        "tp1": { "note": "Base — ผลประกอบการ Q2 ตามคาด L3Harris integration เป็นไปตามแผน" },
-        "tp2": { "note": "Bull — Q2 บีทสะอาด บวกอัปเดตไทม์ไลน์ IM-3 เชิงบวก" },
-        "tp3": { "note": "Moon — IM-3 ลงจอดสำเร็จ บวกรายได้ L3Harris/defense ขยายสเกล แตะเป้า consensus", "moon": true },
+        "tp1": {
+          "note": "Base — ผลประกอบการ Q2 ตามคาด L3Harris integration เป็นไปตามแผน"
+        },
+        "tp2": {
+          "note": "Bull — Q2 บีทสะอาด บวกอัปเดตไทม์ไลน์ IM-3 เชิงบวก"
+        },
+        "tp3": {
+          "note": "Moon — IM-3 ลงจอดสำเร็จ บวกรายได้ L3Harris/defense ขยายสเกล แตะเป้า consensus",
+          "moon": true
+        },
         "stopLoss": {
           "tightNote": "หลุดโซน Entry 2 — ความผันผวนช่วงผลประกอบการกลายเป็นการกลับตัวจริง",
           "hardNote": "คืนกำไรส่วนใหญ่จากการบวกของ L3Harris — thesis ยังไม่พัง แต่ momentum เสียจริง",
@@ -196,8 +306,14 @@
         }
       },
       "estimateDates": [
-        { "event": "ผลประกอบการ Q2 2026", "note": "ยืนยันวันที่ 13 ส.ค. 2026" },
-        { "event": "IM-3 Lunar Mission", "note": "ยังไม่ปล่อยยาน — upright landing คือคำถามหลัก" }
+        {
+          "event": "ผลประกอบการ Q2 2026",
+          "note": "ยืนยันวันที่ 13 ส.ค. 2026"
+        },
+        {
+          "event": "IM-3 Lunar Mission",
+          "note": "ยังไม่ปล่อยยาน — upright landing คือคำถามหลัก"
+        }
       ]
     }
   }

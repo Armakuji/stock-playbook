@@ -3,27 +3,52 @@ description: Find the 5 best moonshot plays (≥200–300% bull case) → /turbo
 ---
 Run `/turbo-list`: load `turbo-report` and use its "Step 0" + "List mode" sections.
 
-0. Read `web/data/skill-feedback.json` if it exists (skip if missing) — use `turbo.overall`
-   hitRate/medianMAE as an advisory prior, two tiers (ranking is upside-first per the current spec
-   — base-case % primary, moon % tiebreaker, per Step 1 below; survival-first ranking is backlog
-   #11 and not yet implemented. Both tiers affect sizing/conviction language only, never rank order):
+0. Read `web/data/skill-feedback.json` if it exists (skip if missing) — use the **`turbo`** block as
+   an advisory prior. Never quote `core` numbers here: the bars and windows differ (+50%/30d vs
+   +30%/14d). Ranking stays upside-first per the current spec — base-case % primary, moon %
+   tiebreaker, per Step 1 below; survival-first ranking is backlog #11 and not yet implemented.
+   **Both tiers affect sizing/conviction language only, never rank order.**
+
+   **Do NOT rank on `hitRate`.** Turbo's is ~2.4% — one hit in 41 completed windows. Report it as
+   the honest scoreboard against the +50%/30d goal, but judge on the metrics with variance:
+   `medianExcessVsBenchPct` (primary), `softHitRate` (+20% bar, ~22%), `beatBenchRate` (~56%).
+
    - **Tier 1 — `n < 5`:** context only. Mention it, never a reason to include/exclude/re-rank.
-   - **Tier 2 — `n ≥ 5`: MUST be applied.** Turbo has no per-type breakdown, so this applies at the
-     whole-lane level: if `turbo.overall.n ≥ 5` and `hitRate` is low, that MUST visibly tighten
-     sizing/conviction guidance across all picks this run (smaller `spotSizing.pct`, tighter stop
-     language) — say so explicitly when it fires. If `n < 5`, say "prior read, n<5 — context only."
-   - **Regime caveat (both tiers):** read `hitRate` next to `avgBenchmarkPct`/`regimeNote` — a low
-     hitRate during a window where `regimeNote` shows SPY broadly down is "unproven in a bad
-     regime," not "turbo doesn't work." Check the actual `regimeNote` text every run, don't assume
-     it (SPY won't catch a sector-only selloff — a known gap in this rough v1 signal).
+   - **Tier 2 — `n ≥ 5`: MUST be applied — read `turbo.tier2`, don't re-derive it.** Turbo gained a
+     per-catalystType breakdown on 2026-08-13 (backlog #39); it previously had only `turbo.overall`
+     and this step said so. `turbo.tier2` precomputes `metric`, `overallValue`, `eligible[]`,
+     `laggards[]`, `leaders[]`, `fired` and already enforces the n ≥ 5 floor. Picks whose primary
+     `catalystType` is a laggard need visibly higher conviction to justify their sizing — name the
+     type, its value, and the overall figure. If `fired` is false, say so explicitly.
+     **Cross-lane signal:** `partnership_win` is currently the laggard in BOTH lanes independently
+     (core -1.6 vs +1.4, n=12; turbo -3.8 vs +2.0, n=16) — 28 completed windows across two
+     different bars agreeing. Weigh that on any partnership-driven moonshot thesis.
+   - **Whole-lane sizing check (unchanged):** if `turbo.overall.n ≥ 5` and the lane's rates are
+     weak, tighten sizing/conviction across ALL picks this run and say so.
+   - **Regime caveat (both tiers):** read any rate next to `avgBenchmarkPct`/`regimeNote` — a low
+     rate during a window where `regimeNote` shows SPY broadly down is "unproven in a bad regime,"
+     not "turbo doesn't work." Check the actual `regimeNote` text every run (SPY won't catch a
+     sector-only selloff — a known gap in this rough v1 signal).
+   - **Stops:** `turbo.overall.medianMAE` is ~-24%, far wider than core's -14%. Every pick's
+     `stopLoss.tight` and `stopPreCatalyst` must clear the relevant `medianMAE` (`turbo.byType[]`
+     when that bucket has n ≥ 5, else overall) or carry a one-line justification.
+   - **Scenarios:** use `scenarioCalibration.turbo`, NOT a pooled figure — the calibration was split
+     per lane on 2026-08-13 because pooling mixed core Base (~35%) with turbo Base (~65-100%) across
+     14d and 30d windows. Turbo's bias runs far hotter (+72.7pp vs core's +23.7pp). State the bias
+     you wrote against; justify any Base above `realizedMaxGainP75Pct` with a stated horizon.
+
    **Print this block in chat before screening — a step with no visible output is a step that
    silently gets skipped:**
    ```
    📊 Feedback prior (skill-feedback.json, generated <date>):
-     turbo: n=<n> complete=<k> · hitRate <x%|no data yet> · <one-line takeaway>
+     turbo: n=<n> complete=<k> · hitRate <x>% (North Star, aspirational) · softHitRate <x>% (+<soft>%) · beatBench <x>%
+     rank metric: <turbo.tier2.metric> · overall <turbo.tier2.overallValue>
+     tier-2: <FIRED — <type> at <value> vs overall <overallValue> (n=<n>) | not fired — no n≥5 bucket ≥2pp below overall>
+     leaders: <type (value, n) | none>
      regime: SPY median <x>% over windows (n=<n>)
-     tier-2: <fired — sizing tightened this run | not fired — n<5, context only>
-     guardrail: n<5 = context only · n≥5 = MUST apply (see tier-2 line)
+     stops: turbo medianMAE <x>% → tight stop must be wider
+     scenarios: turbo Base bias +<x>pp vs realized · P75 <x>%
+     guardrail: n<5 = context only · n≥5 = MUST apply (sizing/conviction, never rank order)
    ```
    If the file doesn't exist, print `📊 Feedback prior: skill-feedback.json not found — skipping` instead.
 1. **First, assemble a candidate longlist (≥12 tickers spanning ≥4 distinct sectors/catalyst

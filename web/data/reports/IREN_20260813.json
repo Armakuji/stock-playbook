@@ -1,0 +1,197 @@
+{
+  "ticker": "IREN",
+  "companyName": "IREN Limited",
+  "companyDescription": "AI cloud infrastructure (ex-Bitcoin miner) · $2.8B of multi-year contracts covering 85% of a $4B 2026 ARR target, with Microsoft and NVIDIA among the customers",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-13T00:00:00.000Z",
+  "price": 43.67,
+  "priceChange": 9.86,
+  "priceNote": "Live price Aug 13 07:49, up 9.86% today alone. Prior report (Aug 4) used $39.75 — +9.9% drift in 9 days. The stock now sits 30.4% above the $32-35 entry zone, the widest gap of any BUY-rated name on the board.",
+  "marketCap": "$15.6B",
+  "sector": "Technology / AI Infrastructure & Data Centers (ex-Bitcoin Mining)",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 78,
+  "summary": "The transition thesis is now largely proven rather than promised: IREN has secured $2.8B in new multi-year contracts covering 85% of its $4B 2026 ARR target, with Microsoft and NVIDIA among the named customers, and plans 480MW of AI cloud capacity in 2026 rising to 1.2GW in 2027. That is a different company from the Bitcoin miner the ticker used to represent. Consensus is $75.18 (range $46-$100; a 16-analyst S&P set reads higher at $81.73), so upside is +72% or better and the rating split is 62% Strong Buy. The problem is entirely the entry: after a 9.86% move today the stock trades 30.4% above its preferred zone, going into Q4 FY2026 earnings on Aug 27.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q4 FY2026 Earnings",
+      "description": "First print where the AI cloud contracts should show as recognised revenue rather than announced backlog. The number to watch is contracted ARR conversion and whether the 480MW 2026 delivery target holds its schedule.",
+      "urgencyLabel": "14 DAYS",
+      "dateBadge": "Aug 27, 2026",
+      "catalystDate": "2026-08-27",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🤝",
+      "name": "Additional Hyperscaler / AI-Developer Contracts",
+      "description": "With 85% of the $4B ARR target already covered, further contract wins push into 2027's 1.2GW plan. Announcement-driven and undated — each one has re-rated the stock this cycle.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "30.4% above the preferred entry zone after a 9.86% single-day move — the single worst entry on the board among BUY-rated names",
+    "Analyst dispersion is enormous ($46 low to $100 high, a 2.2x spread) and 8% of analysts rate it Sell — the market has not agreed on what this business is worth",
+    "Capacity buildout from 480MW to 1.2GW is capital-intensive and execution-dependent; a schedule slip hits the ARR path directly",
+    "Customer concentration in a handful of hyperscalers means one contract renegotiation moves the whole thesis",
+    "Residual Bitcoin exposure still links the equity to crypto sentiment independent of the AI cloud story",
+    "Buying 14 days ahead of earnings at a 52-week-range extreme is the setup the measured -14% median MAE was built to warn about"
+  ],
+  "estimateDates": [
+    { "event": "Q4 FY2026 Earnings", "dateRange": "Aug 27, 2026", "note": "ARR conversion and 480MW schedule confirmation", "est": "contracted ARR toward $4B target", "highlight": "blue" },
+    { "event": "2027 capacity milestones", "dateRange": "H1 2027", "note": "1.2GW plan — the number funding the bull case", "est": "1.2GW", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -35, "price": 28.39 },
+    { "label": "Base", "color": "yellow", "pct": 30, "price": 56.77 },
+    { "label": "Bull", "color": "green", "pct": 72.1, "price": 75.18 },
+    { "label": "Moon", "color": "purple", "pct": 129, "price": 100.0 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (13 analysts)", "target": 75.18, "rating": "Buy" },
+    { "firm": "Consensus (16 analysts, S&P Global)", "target": 81.73, "rating": "Buy" },
+    { "firm": "Street high", "target": 100, "rating": "Buy" },
+    { "firm": "Street low", "target": 46, "rating": "Sell" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds 3.50-3.75%, held Jul 29 with three dissents for a hike. Next FOMC Sep 16, after IREN's Aug 27 print.",
+    "inflationNote": "July CPI (Aug 12) headline 3.4% from 3.5%, core 2.5%, +0.1% m/m — soft enough to reduce hike odds after a -23k payrolls print.",
+    "sectorImpact": "Data-centre buildout is capital-intensive and financed, so rates feed directly into the cost of the 1.2GW plan. The residual crypto exposure adds a second, separate rate/liquidity channel that a pure AI infrastructure name wouldn't carry.",
+    "summary": "MEDIUM — capital intensity plus residual crypto beta gives this more rate sensitivity than its AI-infrastructure framing suggests."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 43.67, "note": "Current price — 30.4% above zone, chasing a 9.86% up-day", "timing": "Not preferred" },
+      { "label": "Entry 2", "level": 36, "rangeMax": 38.5, "note": "Where the prior zone meets the post-run structure; R/R turns favourable here", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 32, "note": "Original zone floor — needs a broad AI-infra or crypto drawdown", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 56.77, "pct": 30.0, "note": "Base — ARR conversion confirmed on the Aug 27 print" },
+    "tp2": { "price": 75.18, "pct": 72.1, "note": "13-analyst consensus" },
+    "tp3": { "price": 100.0, "pct": 129.0, "note": "Street high on the 1.2GW 2027 plan executing · 2027", "moon": true },
+    "stopLoss": {
+      "tight": 36.5,
+      "tightPct": -16.4,
+      "tightNote": "Wider than the measured core medianMAE of -14% as required — and IREN's realised volatility (9.86% in one session) argues for the wider end regardless",
+      "hard": 31.5,
+      "hardPct": -27.9,
+      "hardNote": "Below the original entry zone floor; would mean the AI-cloud re-rating is unwinding",
+      "riskReward": "4.4 : 1",
+      "rrNote": "Tight stop (-16.4%) vs TP2 (+72.1%)",
+      "rrWarning": "R/R is measured from the $36-38.5 entry. From $43.67 today it is materially worse, and a 9.86% up-day is the wrong moment to measure it"
+    },
+    "verdict": "Best fundamental story on the board, worst entry on the board — wait for $36-38.5 rather than chase 30% above zone into an Aug 27 print.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "The pre-earnings run has already happened and then some — up 9.9% in nine days including 9.86% today, on contract news rather than the earnings itself. Feedback prior's earnings_beat bucket (n=42, medianExcessVsBenchPct +1.8 vs +1.4 overall) is neither leader nor laggard, so no tier-2 adjustment applies.",
+    "preRunupTiming": "2-3 สัปดาห์ก่อนงบ",
+    "preRunupPct": "+10% to +20%",
+    "postWin": {
+      "avgPct": 20,
+      "range": "+15% to +25%",
+      "note": "Direct sector comparables on AI-datacenter pivot news: WULF +22% (Oct 2025), CIFR +19% (Nov 2025), and IREN's own +20% (Jul 2026). Consistent clustering around +20%.",
+      "exampleDate": "Jul 2026"
+    },
+    "postLose": {
+      "avgPct": -25,
+      "range": "-18% to -35%",
+      "note": "Miner-to-AI names give back the re-rating quickly when contracted revenue slips, and IREN is priced 30% above its own entry zone, which raises the give-back on a disappointment.",
+      "exampleDate": "Oct 2025"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Held at 3% despite the improved fundamentals. The contract news genuinely de-risks the thesis, but entering 30.4% above zone into earnings offsets it — conviction in the business does not justify sizing up at this price."
+    },
+    "stopPreCatalyst": { "pct": -16.4, "price": 36.5, "note": "A break here before Aug 27 means the contract-driven re-rating is being given back" },
+    "stopPostCatalyst": { "pct": -25, "note": "If contracted ARR conversion disappoints, exit — the multiple rests entirely on that conversion" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "IREN",
+      "event": "AI cloud contract announcement",
+      "date": "Jul 2026",
+      "movePct": 20,
+      "days": 2,
+      "outcome": "good",
+      "note": "Same ticker, same catalyst family, one month ago — establishes the +20% response size for contract news and shows the market is already paying for this story."
+    },
+    {
+      "ticker": "WULF",
+      "event": "AI/HPC datacenter pivot contract",
+      "date": "Oct 2025",
+      "movePct": 22,
+      "days": 3,
+      "outcome": "good",
+      "note": "Closest structural analogue — a Bitcoin miner repricing as AI infrastructure on a hyperscaler contract. Magnitude matches IREN's own response."
+    },
+    {
+      "ticker": "CIFR",
+      "event": "AI datacenter contract announcement",
+      "date": "Nov 2025",
+      "movePct": 19,
+      "days": 2,
+      "outcome": "good",
+      "note": "Third instance of the same pattern within a month of WULF, confirming ~+20% is the sector's response size rather than a one-off."
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/iren/forecast/",
+    "https://public.com/stocks/iren/forecast-price-target",
+    "https://www.marketbeat.com/stocks/NASDAQ/IREN/forecast/",
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+    "https://www.bls.gov/news.release/archives/cpi_08122026.htm"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Thesis เรื่องการเปลี่ยนผ่านตอนนี้พิสูจน์แล้วเป็นส่วนใหญ่ ไม่ใช่แค่คำสัญญา — IREN ได้สัญญาระยะยาวใหม่มูลค่า $2.8B ครอบคลุม 85% ของเป้า ARR $4B ปี 2026 โดยมี Microsoft และ NVIDIA อยู่ในรายชื่อลูกค้า และวางแผนกำลังการผลิต AI cloud 480MW ในปี 2026 เพิ่มเป็น 1.2GW ในปี 2027 · นี่คือคนละบริษัทกับเหมือง Bitcoin ที่ ticker นี้เคยเป็น · consensus อยู่ที่ $75.18 (ช่วง $46-$100 · ชุด 16 นักวิเคราะห์ของ S&P อ่านสูงกว่าที่ $81.73) upside จึงเป็น +72% ขึ้นไป และเรตติ้ง 62% เป็น Strong Buy · ปัญหาอยู่ที่จุดเข้าล้วน ๆ: หลังวิ่ง 9.86% วันนี้ หุ้นอยู่สูงกว่าโซนที่ต้องการถึง 30.4% และกำลังจะเจองบ Q4 FY2026 วันที่ 27 ส.ค.",
+      "priceNote": "ราคาสด 13 ส.ค. 07:49 · วันนี้วันเดียว +9.86% · รายงานก่อน (4 ส.ค.) ใช้ $39.75 — drift +9.9% ใน 9 วัน · ตอนนี้สูงกว่าโซน $32-35 อยู่ 30.4% ซึ่งเป็นช่องว่างที่กว้างที่สุดในบรรดาหุ้นที่ให้ BUY บนกระดาน",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "งบ Q4 FY2026", "description": "งบแรกที่สัญญา AI cloud ควรโผล่เป็นรายได้รับรู้จริง ไม่ใช่แค่ backlog ที่ประกาศ · ตัวเลขที่ต้องดูคือการแปลง ARR ที่ทำสัญญาไว้ และตารางส่งมอบ 480MW ปี 2026 ยังตรงเวลาไหม" },
+        { "name": "สัญญา hyperscaler / AI developer เพิ่มเติม", "description": "เมื่อ 85% ของเป้า ARR $4B ถูกครอบคลุมแล้ว สัญญาใหม่จะดันเข้าไปในแผน 1.2GW ปี 2027 · ขับเคลื่อนด้วยการประกาศและไม่มีวันที่แน่นอน · แต่ละครั้งที่ประกาศทำให้หุ้น re-rate รอบนี้" }
+      ],
+      "risks": [
+        "สูงกว่าโซนเข้าที่ต้องการ 30.4% หลังวิ่ง 9.86% ในวันเดียว — จุดเข้าที่แย่ที่สุดบนกระดานในกลุ่มที่ให้ BUY",
+        "นักวิเคราะห์เห็นต่างกันมหาศาล ($46 ถึง $100 = ต่างกัน 2.2 เท่า) และ 8% ให้ Sell — ตลาดยังไม่ตกลงกันว่าธุรกิจนี้ควรมีมูลค่าเท่าไหร่",
+        "การขยายกำลังจาก 480MW เป็น 1.2GW ใช้เงินทุนหนักและขึ้นกับการ execute · ถ้าตารางเลื่อนกระทบเส้นทาง ARR โดยตรง",
+        "ลูกค้ากระจุกอยู่ที่ hyperscaler ไม่กี่ราย — การเจรจาสัญญาใหม่รายเดียวขยับ thesis ทั้งก้อน",
+        "ยังมี exposure Bitcoin เหลืออยู่ ทำให้หุ้นผูกกับ sentiment คริปโตแยกจากเรื่อง AI cloud",
+        "การซื้อก่อนงบ 14 วันที่ปลายกรอบ 52 สัปดาห์ คือ setup ที่ medianMAE -14% ที่วัดได้มีไว้เตือนพอดี"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed 3.50-3.75% คงเมื่อ 29 ก.ค. มี dissent 3 เสียงอยากขึ้น · FOMC ถัดไป 16 ก.ย. หลังงบ IREN",
+        "inflationNote": "CPI ก.ค. (12 ส.ค.) headline 3.4% จาก 3.5% · core 2.5% · m/m +0.1% — อ่อนพอที่จะลดโอกาสขึ้นดอกเบี้ยหลังตัวเลขจ้างงาน -23k",
+        "sectorImpact": "การสร้าง data center ใช้เงินทุนหนักและต้องกู้ ดอกเบี้ยจึงเข้าไปในต้นทุนของแผน 1.2GW โดยตรง · exposure คริปโตที่เหลืออยู่เพิ่มช่องทางที่สองของความไวต่อดอกเบี้ย/สภาพคล่อง ซึ่งหุ้น AI infrastructure แท้ ๆ ไม่มี",
+        "summary": "MEDIUM — ความหนักของเงินทุนบวก beta คริปโตที่เหลือ ทำให้ไวต่อดอกเบี้ยมากกว่าที่ภาพ 'AI infrastructure' จะบอก"
+      },
+      "entryStrategy": {
+        "verdict": "เรื่องพื้นฐานดีที่สุดบนกระดาน แต่จุดเข้าแย่ที่สุดบนกระดาน — รอโซน $36-38.5 ดีกว่าไล่ที่สูงกว่าโซน 30% เข้าไปเจองบ 27 ส.ค.",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — สูงกว่าโซน 30.4% และไล่ตามวันที่วิ่ง 9.86%", "timing": "ไม่แนะนำ" },
+          { "note": "จุดที่โซนเดิมมาบรรจบกับโครงสร้างหลังวิ่ง · R/R กลับมาคุ้มตรงนี้", "timing": "ถ้าย่อ" },
+          { "note": "พื้นโซนเดิม — ต้องรอ AI infra หรือคริปโตโดนเทรวม", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Base — ยืนยันการแปลง ARR ในงบ 27 ส.ค." },
+        "tp2": { "note": "consensus จาก 13 นักวิเคราะห์" },
+        "tp3": { "note": "เป้าสูงสุดของ street ถ้าแผน 1.2GW ปี 2027 ทำได้จริง · 2027" },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE -14% ที่วัดได้ตามที่กฎกำหนด — และความผันผวนจริงของ IREN (9.86% ในวันเดียว) ก็บอกให้ใช้ฝั่งกว้างอยู่แล้ว",
+          "hardNote": "ต่ำกว่าพื้นโซนเข้าเดิม · แปลว่า re-rating เรื่อง AI cloud กำลังคลายออก",
+          "rrNote": "stop แคบ (-16.4%) เทียบ TP2 (+72.1%)",
+          "rrWarning": "R/R วัดจากจุดเข้า $36-38.5 · ถ้าเข้าที่ $43.67 วันนี้จะแย่กว่ามาก และวันที่หุ้นวิ่ง 9.86% คือจังหวะที่ผิดที่สุดในการวัด"
+        },
+        "estimateDates": [
+          { "event": "งบ Q4 FY2026", "note": "การแปลง ARR และยืนยันตาราง 480MW" },
+          { "event": "ไมล์สโตนกำลังการผลิตปี 2027", "note": "แผน 1.2GW — ตัวเลขที่ค้ำ bull case" }
+        ]
+      }
+    }
+  }
+}

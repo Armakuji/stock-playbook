@@ -53,20 +53,73 @@
     "Active dilution overhang remains real: a 20.65M-share resale registration (~14.1% of shares outstanding) plus up to ~47.7% potential new-share issuance from the EuLi deal (partly offset by cancellation of EuLi's existing ~31-34% CRML stake and EuLi cash coming onto the balance sheet, once the cash-gap issue is resolved)"
   ],
   "estimateDates": [
-    { "event": "European Lithium EGM Vote", "dateRange": "Late Aug 2026", "note": "Dual-majority vote required; scheme also requires EuLi to close an ~A$36.5-37M cash gap first — NEW disclosed risk", "est": "Binary: approved / delayed / falls through on the cash-gap or vote threshold", "highlight": "yellow" },
-    { "event": "Merger Implementation (if approved)", "dateRange": "Early Sept 2026", "note": "Targeted effective date pending EGM approval and cash-gap resolution", "est": "n/a", "highlight": "blue" },
-    { "event": "Tanbreez Pilot Plant Stage 1 Completion", "dateRange": "Aug 2026", "note": "Footings underway, drill rigs mobilizing — no completion confirmed yet", "est": "On track per Jun 2, 2026 update", "highlight": "yellow" },
-    { "event": "Kenya Mrima Hill Tender Outcome", "dateRange": "H2 2026 (timing TBD)", "note": "One of three finalists as of Jul 21-23, 2026; no award date disclosed", "est": "Binary: win / lose tender", "highlight": "blue" }
+    {
+      "event": "European Lithium EGM Vote",
+      "dateRange": "Late Aug 2026",
+      "note": "Dual-majority vote required; scheme also requires EuLi to close an ~A$36.5-37M cash gap first — NEW disclosed risk",
+      "est": "Binary: approved / delayed / falls through on the cash-gap or vote threshold",
+      "highlight": "yellow"
+    },
+    {
+      "event": "Merger Implementation (if approved)",
+      "dateRange": "Early Sept 2026",
+      "note": "Targeted effective date pending EGM approval and cash-gap resolution",
+      "est": "n/a",
+      "highlight": "blue"
+    },
+    {
+      "event": "Tanbreez Pilot Plant Stage 1 Completion",
+      "dateRange": "~Aug 31, 2026",
+      "note": "Footings underway, drill rigs mobilizing — no completion confirmed yet",
+      "est": "On track per Jun 2, 2026 update",
+      "highlight": "yellow"
+    },
+    {
+      "event": "Kenya Mrima Hill Tender Outcome",
+      "dateRange": "H2 2026 (timing TBD)",
+      "note": "One of three finalists as of Jul 21-23, 2026; no award date disclosed",
+      "est": "Binary: win / lose tender",
+      "highlight": "blue"
+    }
   ],
   "scenarios": [
-    { "label": "Bear", "color": "red", "pct": -55, "price": 2.87 },
-    { "label": "Base", "color": "yellow", "pct": 80, "price": 11.48 },
-    { "label": "Bull", "color": "green", "pct": 215, "price": 20.10 },
-    { "label": "Moon", "color": "purple", "pct": 404, "price": 32.15 }
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -55,
+      "price": 2.87
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 80,
+      "price": 11.48
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 215,
+      "price": 20.1
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 404,
+      "price": 32.15
+    }
   ],
   "analystTargets": [
-    { "firm": "Consensus (avg, 2 analysts)", "target": 17.50, "rating": "Buy" },
-    { "firm": "Cantor Fitzgerald", "target": 18, "rating": "Buy", "note": "Speculative Buy initiation, Jul 2026 — cites Tanbreez heavy-REE strength, expansion potential, and downstream/offtake optionality" }
+    {
+      "firm": "Consensus (avg, 2 analysts)",
+      "target": 17.5,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Cantor Fitzgerald",
+      "target": 18,
+      "rating": "Buy",
+      "note": "Speculative Buy initiation, Jul 2026 — cites Tanbreez heavy-REE strength, expansion potential, and downstream/offtake optionality"
+    }
   ],
   "macroRisk": {
     "fedRisk": "LOW",
@@ -77,17 +130,53 @@
   },
   "entryStrategy": {
     "entryLevels": [
-      { "label": "Entry 1", "level": 6.38, "note": "Current — holding last week's sector-driven pop, ahead of the late-Aug EGM binary", "timing": "Now (small)" },
-      { "label": "Entry 2", "level": 4.75, "rangeMax": 5.50, "note": "Pullback zone — better R/R ahead of the Aug pilot-plant milestone and late-Aug EGM vote", "timing": "If dips", "preferred": true },
-      { "label": "Entry 3", "level": 3.50, "note": "Near 52-week low support ($3.52) — verify the EuLi cash-gap status and no fresh dilutive filing first", "timing": "Deep dip (verify financing/cash-gap news first)" }
+      {
+        "label": "Entry 1",
+        "level": 6.38,
+        "note": "Current — holding last week's sector-driven pop, ahead of the late-Aug EGM binary",
+        "timing": "Now (small)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 4.75,
+        "rangeMax": 5.5,
+        "note": "Pullback zone — better R/R ahead of the Aug pilot-plant milestone and late-Aug EGM vote",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 3.5,
+        "note": "Near 52-week low support ($3.52) — verify the EuLi cash-gap status and no fresh dilutive filing first",
+        "timing": "Deep dip (verify financing/cash-gap news first)"
+      }
     ],
-    "tp1": { "price": 11.48, "pct": 80, "note": "Base — EuLi closes the cash gap and the EGM approves the merger on schedule, Tanbreez development stays on track" },
-    "tp2": { "price": 20.10, "pct": 215, "note": "Bull — merger closes + Kenya tender win + strong Tanbreez progress converge" },
-    "tp3": { "price": 32.15, "pct": 404, "note": "Moon — full sector re-rate, stock revisits its own 52-week high", "moon": true },
+    "tp1": {
+      "price": 11.48,
+      "pct": 80,
+      "note": "Base — EuLi closes the cash gap and the EGM approves the merger on schedule, Tanbreez development stays on track"
+    },
+    "tp2": {
+      "price": 20.1,
+      "pct": 215,
+      "note": "Bull — merger closes + Kenya tender win + strong Tanbreez progress converge"
+    },
+    "tp3": {
+      "price": 32.15,
+      "pct": 404,
+      "note": "Moon — full sector re-rate, stock revisits its own 52-week high",
+      "moon": true
+    },
     "stopLoss": {
-      "tight": 4.75, "tightPct": -25.5, "tightNote": "Below Entry 2 zone — EuLi fails to close the cash gap, the EGM vote fails, Kenya tender is lost, or a fresh dilutive raise surfaces",
-      "hard": 3.30, "hardPct": -48.3, "hardNote": "Below 52-week low support ($3.52) — thesis-level breach",
-      "riskReward": "8.4 : 1", "rrNote": "From current price, tight stop vs TP2 (merger + tender + drilling catalysts converging)", "rrWarning": "Moonshot — real dilution overhang PLUS a newly-disclosed A$36.5-37M cash-gap risk on the merger itself. Size ≤3% of portfolio."
+      "tight": 4.75,
+      "tightPct": -25.5,
+      "tightNote": "Below Entry 2 zone — EuLi fails to close the cash gap, the EGM vote fails, Kenya tender is lost, or a fresh dilutive raise surfaces",
+      "hard": 3.3,
+      "hardPct": -48.3,
+      "hardNote": "Below 52-week low support ($3.52) — thesis-level breach",
+      "riskReward": "8.4 : 1",
+      "rrNote": "From current price, tight stop vs TP2 (merger + tender + drilling catalysts converging)",
+      "rrWarning": "Moonshot — real dilution overhang PLUS a newly-disclosed A$36.5-37M cash-gap risk on the merger itself. Size ≤3% of portfolio."
     },
     "verdict": "Moonshot — genuine scale rare-earth resource (92.5% of Tanbreez) with THREE independent binary catalysts (EuLi EGM/merger, pilot plant, Kenya tender), but the EuLi side of the deal just disclosed a real A$36.5-37M cash shortfall against the scheme's minimum-cash requirement that must close before the late-August vote. The market has been selling CRML's own good news all year on dilution/execution fears — size small into a genuinely two-sided late-August event.",
     "approach": "Scale In"
@@ -113,8 +202,15 @@
       "pct": 3,
       "reason": "Moonshot sizing — genuine scale resource asset with three independent binary catalysts, but the newly-disclosed EuLi cash-gap risk on top of the existing dilution overhang and the market's demonstrated pattern of selling CRML's own good news argue for keeping sizing at the conservative end, not increasing it."
     },
-    "stopPreCatalyst": { "pct": -20, "price": 5.10, "note": "Below Entry 2 zone before the late-Aug EGM / Kenya decision = market pricing in deal risk, the cash gap not closing, or a fresh dilutive filing" },
-    "stopPostCatalyst": { "pct": -15, "note": "If the EuLi EGM vote fails (or the cash gap isn't closed in time), the Kenya tender is lost, or the Aug pilot-plant milestone slips meaningfully, exit — multiple thesis-level catalysts failing together is different from a single-day sentiment selloff" }
+    "stopPreCatalyst": {
+      "pct": -20,
+      "price": 5.1,
+      "note": "Below Entry 2 zone before the late-Aug EGM / Kenya decision = market pricing in deal risk, the cash gap not closing, or a fresh dilutive filing"
+    },
+    "stopPostCatalyst": {
+      "pct": -15,
+      "note": "If the EuLi EGM vote fails (or the cash gap isn't closed in time), the Kenya tender is lost, or the Aug pilot-plant milestone slips meaningfully, exit — multiple thesis-level catalysts failing together is different from a single-day sentiment selloff"
+    }
   },
   "comparableCases": [
     {
@@ -159,9 +255,18 @@
       "priceNote": "ทรงตัวที่ $6.38 — ระดับเดียวกับที่ปิดหลังเด้ง 3 ส.ค. แปลว่าหุ้นรักษากำไร +16% จาก sector สัปดาห์ก่อนไว้ได้ ไม่คืนกลับ แม้จะมีความเสี่ยงเรื่อง merger mechanics ใหม่โผล่มา 52-week range $3.52-$32.15 ยังห่างกัน 9 เท่า",
       "scoreLabel": "Moonshot",
       "catalysts": [
-        { "name": "โหวต EGM European Lithium — ปลายสิงหาคม 2026", "description": "ผู้ถือหุ้น European Lithium โหวตดีลควบรวมที่ EGM ปลายเดือนสิงหาคม 2026 (ยื่น scheme booklet ต่อ ASIC ปลายเดือนกรกฎาคม รวม fairness opinion จากผู้เชี่ยวชาญอิสระ) ต้องผ่าน dual majority: เสียงข้างมากธรรมดาของผู้เข้าร่วม + มูลค่าหุ้นโหวต ≥75% ความเสี่ยงใหม่: scheme กำหนดให้ EuLi ต้องมีเงินสดขั้นต่ำ A$330M และรายงานชี้ว่าขาดอยู่ราว A$36.5-37M (~11%) — ต้องปิดช่องว่างนี้ก่อนโหวตเพื่อให้ดีลเดินหน้าตามโครงสร้างเดิม ถ้าผ่านเป้า implementation ต้นเดือนกันยายน 2026" },
-        { "name": "Tanbreez Pilot Plant Stage 1 เสร็จ", "description": "อาคาร HQ/warehouse ของ pilot plant ยังเป้าเสร็จเดือนนี้ (ตามอัปเดต 2 มิ.ย. 2026) ฐานรากกำลังดำเนินการ rig เจาะกำลังเคลื่อนย้ายสำหรับ drilling/resource development ที่ขยายเพิ่ม ยังไม่มีการยืนยันเสร็จสิ้น ณ รายงานนี้" },
-        { "name": "Kenya Mrima Hill Tender — รอบสุดท้าย", "description": "Consortium ที่ CRML นำทีมยังเป็น 1 ใน 3 finalist ของ tender รัฐบาลเคนยาสำหรับโครงการ rare-earth/niobium Mrima Hill (เข้ารอบ 21-23 ก.ค. 2026) ยังไม่มีกำหนดวันประกาศผล" }
+        {
+          "name": "โหวต EGM European Lithium — ปลายสิงหาคม 2026",
+          "description": "ผู้ถือหุ้น European Lithium โหวตดีลควบรวมที่ EGM ปลายเดือนสิงหาคม 2026 (ยื่น scheme booklet ต่อ ASIC ปลายเดือนกรกฎาคม รวม fairness opinion จากผู้เชี่ยวชาญอิสระ) ต้องผ่าน dual majority: เสียงข้างมากธรรมดาของผู้เข้าร่วม + มูลค่าหุ้นโหวต ≥75% ความเสี่ยงใหม่: scheme กำหนดให้ EuLi ต้องมีเงินสดขั้นต่ำ A$330M และรายงานชี้ว่าขาดอยู่ราว A$36.5-37M (~11%) — ต้องปิดช่องว่างนี้ก่อนโหวตเพื่อให้ดีลเดินหน้าตามโครงสร้างเดิม ถ้าผ่านเป้า implementation ต้นเดือนกันยายน 2026"
+        },
+        {
+          "name": "Tanbreez Pilot Plant Stage 1 เสร็จ",
+          "description": "อาคาร HQ/warehouse ของ pilot plant ยังเป้าเสร็จเดือนนี้ (ตามอัปเดต 2 มิ.ย. 2026) ฐานรากกำลังดำเนินการ rig เจาะกำลังเคลื่อนย้ายสำหรับ drilling/resource development ที่ขยายเพิ่ม ยังไม่มีการยืนยันเสร็จสิ้น ณ รายงานนี้"
+        },
+        {
+          "name": "Kenya Mrima Hill Tender — รอบสุดท้าย",
+          "description": "Consortium ที่ CRML นำทีมยังเป็น 1 ใน 3 finalist ของ tender รัฐบาลเคนยาสำหรับโครงการ rare-earth/niobium Mrima Hill (เข้ารอบ 21-23 ก.ค. 2026) ยังไม่มีกำหนดวันประกาศผล"
+        }
       ],
       "risks": [
         "ใหม่: scheme of arrangement ของ European Lithium กำหนดเงินสดขั้นต่ำ A$330M และรายงานล่าสุดชี้ว่าบริษัทขาดอยู่ราว A$36.5-37M (~11%) จากเกณฑ์นี้ — ต้องปิดช่องว่างนี้ก่อนโหวต EGM ปลายเดือนสิงหาคมเพื่อให้ดีลเดินหน้าตามเงื่อนไขเดิม การปิดไม่สำเร็จคือเส้นทางจริงสู่ความล่าช้าหรือดีลล่ม",
@@ -180,13 +285,29 @@
       "entryStrategy": {
         "verdict": "Moonshot — resource rare-earth ระดับใหญ่จริง (ถือ Tanbreez 92.5%) มี 3 binary catalyst อิสระ (EGM/ดีล EuLi, pilot plant, Kenya tender) แต่ฝั่ง EuLi เพิ่งเปิดเผยปัญหาเงินสดขาด A$36.5-37M จริงเทียบเกณฑ์ขั้นต่ำของ scheme ที่ต้องปิดก่อนโหวตปลายเดือนสิงหาคม ตลาดเทขายข่าวดีของ CRML เองมาตลอดปี — size เล็กเข้าสู่ event สองทางจริงปลายเดือนสิงหาคม",
         "entryLevels": [
-          { "note": "ปัจจุบัน — รักษาระดับกำไรจาก sector sentiment สัปดาห์ก่อน ก่อน binary EGM ปลายเดือนสิงหาคม", "timing": "ตอนนี้ (เล็ก)" },
-          { "note": "โซนย่อ — R/R ดีกว่าก่อนถึง milestone pilot plant ส.ค. และโหวต EGM ปลายเดือนสิงหาคม", "timing": "ถ้าย่อ" },
-          { "note": "ใกล้ 52-week low support ($3.52) — ตรวจสถานะ cash gap ของ EuLi และข่าว financing ก่อน", "timing": "Deep dip (ตรวจข่าว cash gap/financing ก่อน)" }
+          {
+            "note": "ปัจจุบัน — รักษาระดับกำไรจาก sector sentiment สัปดาห์ก่อน ก่อน binary EGM ปลายเดือนสิงหาคม",
+            "timing": "ตอนนี้ (เล็ก)"
+          },
+          {
+            "note": "โซนย่อ — R/R ดีกว่าก่อนถึง milestone pilot plant ส.ค. และโหวต EGM ปลายเดือนสิงหาคม",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ใกล้ 52-week low support ($3.52) — ตรวจสถานะ cash gap ของ EuLi และข่าว financing ก่อน",
+            "timing": "Deep dip (ตรวจข่าว cash gap/financing ก่อน)"
+          }
         ],
-        "tp1": { "note": "Base — EuLi ปิดช่องว่างเงินสดได้ EGM อนุมัติดีลตามแผน Tanbreez พัฒนาต่อเนื่อง" },
-        "tp2": { "note": "Bull — ปิดดีล EuLi + ชนะ Kenya tender + ความคืบหน้า Tanbreez มาบรรจบกัน" },
-        "tp3": { "note": "Moon — sector re-rate เต็มรูปแบบ หุ้นกลับไปแตะ 52-week high เดิม", "moon": true },
+        "tp1": {
+          "note": "Base — EuLi ปิดช่องว่างเงินสดได้ EGM อนุมัติดีลตามแผน Tanbreez พัฒนาต่อเนื่อง"
+        },
+        "tp2": {
+          "note": "Bull — ปิดดีล EuLi + ชนะ Kenya tender + ความคืบหน้า Tanbreez มาบรรจบกัน"
+        },
+        "tp3": {
+          "note": "Moon — sector re-rate เต็มรูปแบบ หุ้นกลับไปแตะ 52-week high เดิม",
+          "moon": true
+        },
         "stopLoss": {
           "tightNote": "ต่ำกว่าโซน Entry 2 = EuLi ปิดช่องว่างเงินสดไม่สำเร็จ, โหวต EGM ล้มเหลว, แพ้ Kenya tender, หรือมี dilutive raise ใหม่",
           "hardNote": "หลุด 52-week low support ($3.52) = thesis พัง",
@@ -195,10 +316,22 @@
         }
       },
       "estimateDates": [
-        { "event": "โหวต EGM European Lithium", "note": "ต้องปิดช่องว่างเงินสด ~A$36.5-37M ก่อน — ความเสี่ยงใหม่ที่เปิดเผย" },
-        { "event": "Implementation ดีล (ถ้าผ่าน)", "note": "เป้าต้นเดือนกันยายน 2026" },
-        { "event": "Tanbreez Pilot Plant Stage 1 เสร็จ", "note": "เป้า ส.ค. 2026 ยังไม่ยืนยันเสร็จสิ้น" },
-        { "event": "ผล Kenya Mrima Hill Tender", "note": "1 ใน 3 finalist ยังไม่มีกำหนดประกาศผล" }
+        {
+          "event": "โหวต EGM European Lithium",
+          "note": "ต้องปิดช่องว่างเงินสด ~A$36.5-37M ก่อน — ความเสี่ยงใหม่ที่เปิดเผย"
+        },
+        {
+          "event": "Implementation ดีล (ถ้าผ่าน)",
+          "note": "เป้าต้นเดือนกันยายน 2026"
+        },
+        {
+          "event": "Tanbreez Pilot Plant Stage 1 เสร็จ",
+          "note": "เป้า ส.ค. 2026 ยังไม่ยืนยันเสร็จสิ้น"
+        },
+        {
+          "event": "ผล Kenya Mrima Hill Tender",
+          "note": "1 ใน 3 finalist ยังไม่มีกำหนดประกาศผล"
+        }
       ]
     }
   }

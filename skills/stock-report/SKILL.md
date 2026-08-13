@@ -53,7 +53,7 @@ one. Report it — it's the honest scoreboard — but judge on `medianExcessVsBe
   number informs `catalystSpot.stopPreCatalyst` and `spotSizing`. Note `stopGuidance.caveat`: MAE is
   measured from the report price (an Entry-1 fill), so it overstates drawdown for an Entry-2 dip fill
   — adjust rather than applying the full width mechanically.
-- **Scenarios must declare their calibration (`scenarioCalibration`).** State the measured
+- **Scenarios must declare their calibration (`scenarioCalibration.core`).** State the measured
   `optimismBiasBasePct` you wrote against. If your written Base `pct` exceeds
   `realizedMaxGainP75Pct`, name the horizon that Base assumes and the specific driver that gets it
   there; a Base above `realizedMaxGainP90Pct` with no stated horizon is not acceptable. Read

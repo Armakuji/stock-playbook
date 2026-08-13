@@ -53,19 +53,65 @@
     "$2.31B market cap is toward the larger end of names on this board — a smaller re-rate in dollar terms still requires a large percentage move given the current valuation"
   ],
   "estimateDates": [
-    { "event": "ORIGIN Phase 3 eGFR Analysis", "dateRange": "Q3 2026", "note": "Moved up from 2027 by FDA agreement — underpins the full-approval case", "est": "Binary trial readout", "highlight": "yellow" },
-    { "event": "sBLA Filing (Full Approval)", "dateRange": "Q4 2026", "note": "Contingent on Q3 data", "est": "Would convert accelerated to full approval", "highlight": "blue" }
+    {
+      "event": "ORIGIN Phase 3 eGFR Analysis",
+      "dateRange": "~Sep 15, 2026",
+      "note": "Moved up from 2027 by FDA agreement — underpins the full-approval case",
+      "est": "Binary trial readout",
+      "highlight": "yellow"
+    },
+    {
+      "event": "sBLA Filing (Full Approval)",
+      "dateRange": "Q4 2026",
+      "note": "Contingent on Q3 data",
+      "est": "Would convert accelerated to full approval",
+      "highlight": "blue"
+    }
   ],
   "scenarios": [
-    { "label": "Bear", "color": "red", "pct": -35, "price": 19.47 },
-    { "label": "Base", "color": "yellow", "pct": 75, "price": 52.41 },
-    { "label": "Bull", "color": "green", "pct": 173.1, "price": 81.79 },
-    { "label": "Moon", "color": "purple", "pct": 267.3, "price": 110.00 }
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -35,
+      "price": 19.47
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 75,
+      "price": 52.41
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 173.1,
+      "price": 81.79
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 267.3,
+      "price": 110.0
+    }
   ],
   "analystTargets": [
-    { "firm": "Consensus (14 analysts)", "target": 81.79, "rating": "Strong Buy" },
-    { "firm": "Highest named target", "target": 110.00, "rating": "Buy", "note": "Real but non-representative — well above the broader $56-110 range" },
-    { "firm": "Guggenheim (prior update)", "target": 61.00, "rating": "Buy", "note": "More conservative than the average" }
+    {
+      "firm": "Consensus (14 analysts)",
+      "target": 81.79,
+      "rating": "Strong Buy"
+    },
+    {
+      "firm": "Highest named target",
+      "target": 110.0,
+      "rating": "Buy",
+      "note": "Real but non-representative — well above the broader $56-110 range"
+    },
+    {
+      "firm": "Guggenheim (prior update)",
+      "target": 61.0,
+      "rating": "Buy",
+      "note": "More conservative than the average"
+    }
   ],
   "macroRisk": {
     "fedRisk": "LOW",
@@ -76,17 +122,53 @@
   },
   "entryStrategy": {
     "entryLevels": [
-      { "label": "Entry 1", "level": 29.95, "note": "Current price — post-EPS-miss, well off the 52-week high despite the FDA approval already won", "timing": "Scale in (small)" },
-      { "label": "Entry 2", "level": 26.00, "rangeMax": 28.00, "note": "Below today's post-miss level — best R/R if launch-spend skepticism persists into Q3", "timing": "If dips", "preferred": true },
-      { "label": "Entry 3", "level": 20.00, "note": "Deep dip — near the 52-week low ($19.07), only on a broad biotech selloff or further launch-execution disappointment", "timing": "Deep dip only" }
+      {
+        "label": "Entry 1",
+        "level": 29.95,
+        "note": "Current price — post-EPS-miss, well off the 52-week high despite the FDA approval already won",
+        "timing": "Scale in (small)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 26.0,
+        "rangeMax": 28.0,
+        "note": "Below today's post-miss level — best R/R if launch-spend skepticism persists into Q3",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 20.0,
+        "note": "Deep dip — near the 52-week low ($19.07), only on a broad biotech selloff or further launch-execution disappointment",
+        "timing": "Deep dip only"
+      }
     ],
-    "tp1": { "price": 52.41, "pct": 75.0, "note": "Base — commercial launch stabilizes, Q3 data awaited without incident" },
-    "tp2": { "price": 81.79, "pct": 173.1, "note": "Bull — positive Q3 eGFR data supports the full-approval case, hits consensus average" },
-    "tp3": { "price": 110.00, "pct": 267.3, "note": "Moon — clean Q3 data + launch spend converts to real revenue growth + full approval trajectory confirmed, hits the highest named target", "moon": true },
+    "tp1": {
+      "price": 52.41,
+      "pct": 75.0,
+      "note": "Base — commercial launch stabilizes, Q3 data awaited without incident"
+    },
+    "tp2": {
+      "price": 81.79,
+      "pct": 173.1,
+      "note": "Bull — positive Q3 eGFR data supports the full-approval case, hits consensus average"
+    },
+    "tp3": {
+      "price": 110.0,
+      "pct": 267.3,
+      "note": "Moon — clean Q3 data + launch spend converts to real revenue growth + full approval trajectory confirmed, hits the highest named target",
+      "moon": true
+    },
     "stopLoss": {
-      "tight": 24.50, "tightPct": -18.2, "tightNote": "Below the post-earnings-miss support — thesis-neutral but launch-spend concerns deepening",
-      "hard": 19.00, "hardPct": -36.6, "hardNote": "Near the 52-week low — would suggest a genuinely disappointing Q3 readout or a failed commercial launch",
-      "riskReward": "9.5 : 1", "rrNote": "From Entry 2 ($27.00 mid) tight stop vs TP2", "rrWarning": "Strong R/R for an already-de-risked (approved) biotech — Moon case relies on a single high analyst target, treat cautiously"
+      "tight": 24.5,
+      "tightPct": -18.2,
+      "tightNote": "Below the post-earnings-miss support — thesis-neutral but launch-spend concerns deepening",
+      "hard": 19.0,
+      "hardPct": -36.6,
+      "hardNote": "Near the 52-week low — would suggest a genuinely disappointing Q3 readout or a failed commercial launch",
+      "riskReward": "9.5 : 1",
+      "rrNote": "From Entry 2 ($27.00 mid) tight stop vs TP2",
+      "rrWarning": "Strong R/R for an already-de-risked (approved) biotech — Moon case relies on a single high analyst target, treat cautiously"
     },
     "verdict": "ค่าขนม — small-to-moderate position on an already-approved drug with a real, accelerated Q3 2026 confirmatory readout ahead. Today's EPS miss is a launch-spend story, not a thesis break, and the pullback improves the entry.",
     "approach": "Scale In"
@@ -112,8 +194,15 @@
       "pct": 4,
       "reason": "Mid-cap ($2.31B) biotech with an already-approved product (lower survival/binary risk than a pre-approval name) but real commercial-execution and confirmatory-trial uncertainty ahead — 4% sizing reflects the reduced-but-real risk profile"
     },
-    "stopPreCatalyst": { "pct": -18, "price": 24.50, "note": "Below the post-earnings-miss support zone ahead of Q3 data — thesis-neutral but launch-execution concerns deepening" },
-    "stopPostCatalyst": { "pct": -30, "note": "If the Q3 eGFR analysis disappoints or commercial launch metrics keep showing weak uptake, exit" }
+    "stopPreCatalyst": {
+      "pct": -18,
+      "price": 24.5,
+      "note": "Below the post-earnings-miss support zone ahead of Q3 data — thesis-neutral but launch-execution concerns deepening"
+    },
+    "stopPostCatalyst": {
+      "pct": -30,
+      "note": "If the Q3 eGFR analysis disappoints or commercial launch metrics keep showing weak uptake, exit"
+    }
   },
   "comparableCases": [
     {
@@ -156,9 +245,18 @@
       "priceNote": "ลง 7.07% วันนี้จาก EPS พลาดเป้า Q1 (-$1.69 เทียบ consensus -$1.37) ที่ประกาศพร้อมผลประกอบการ — เป็นเรื่องค่าใช้จ่ายเปิดตัวเชิงพาณิชย์ ไม่ใช่การเปลี่ยน thesis ตอนนี้ market cap $2.31B ห่างจาก 52-week high ($56.05) มาก และลงมาแล้วราว 17% แค่ในช่วง 2 สัปดาห์ที่ผ่านมา",
       "scoreLabel": "ค่าขนม",
       "catalysts": [
-        { "name": "การวิเคราะห์ eGFR Phase 3 ORIGIN (เลื่อนเร็วขึ้น)", "description": "Vera บรรลุข้อตกลงกับ FDA เลื่อนการวิเคราะห์ eGFR (การทำงานไต) หลักจาก Phase 3 ORIGIN มาเป็น Q3 2026 จากแผนเดิมปี 2027 — ข้อมูลนี้เป็นฐานของเคสขออนุมัติเต็มรูปแบบ" },
-        { "name": "ยื่น sBLA เพื่อขออนุมัติเต็มรูปแบบ", "description": "Vera ตั้งเป้ายื่น supplemental Biologics License Application ใน Q4 2026 เพื่อแปลง accelerated approval ของ TRUTAKNA เป็นอนุมัติเต็มรูปแบบสำหรับ IgA nephropathy ขึ้นกับข้อมูล eGFR Q3" },
-        { "name": "เปิดตัวเชิงพาณิชย์ TRUTAKNA", "description": "เปิดตัวเชิงพาณิชย์ของ TRUTAKNA ที่อนุมัติแล้ว (พร้อมจำหน่ายภายในไม่กี่สัปดาห์หลังอนุมัติ 7 ก.ค.) — EPS พลาดเป้าวันนี้แสดงค่าใช้จ่ายเปิดตัวจริง ตัวชี้วัดระยะใกล้ของตลาดว่าจะแปลงเป็นการสั่งจ่ายยาและรายได้จริงเร็วแค่ไหน" }
+        {
+          "name": "การวิเคราะห์ eGFR Phase 3 ORIGIN (เลื่อนเร็วขึ้น)",
+          "description": "Vera บรรลุข้อตกลงกับ FDA เลื่อนการวิเคราะห์ eGFR (การทำงานไต) หลักจาก Phase 3 ORIGIN มาเป็น Q3 2026 จากแผนเดิมปี 2027 — ข้อมูลนี้เป็นฐานของเคสขออนุมัติเต็มรูปแบบ"
+        },
+        {
+          "name": "ยื่น sBLA เพื่อขออนุมัติเต็มรูปแบบ",
+          "description": "Vera ตั้งเป้ายื่น supplemental Biologics License Application ใน Q4 2026 เพื่อแปลง accelerated approval ของ TRUTAKNA เป็นอนุมัติเต็มรูปแบบสำหรับ IgA nephropathy ขึ้นกับข้อมูล eGFR Q3"
+        },
+        {
+          "name": "เปิดตัวเชิงพาณิชย์ TRUTAKNA",
+          "description": "เปิดตัวเชิงพาณิชย์ของ TRUTAKNA ที่อนุมัติแล้ว (พร้อมจำหน่ายภายในไม่กี่สัปดาห์หลังอนุมัติ 7 ก.ค.) — EPS พลาดเป้าวันนี้แสดงค่าใช้จ่ายเปิดตัวจริง ตัวชี้วัดระยะใกล้ของตลาดว่าจะแปลงเป็นการสั่งจ่ายยาและรายได้จริงเร็วแค่ไหน"
+        }
       ],
       "risks": [
         "EPS Q1 2026 พลาดเป้า consensus (-$1.69 เทียบ -$1.37) — เป็นสาเหตุหุ้นลง -7.07% วันนี้ สะท้อนค่าใช้จ่ายเปิดตัวเชิงพาณิชย์จริงที่มาก่อนรายได้ ไม่ใช่ปัญหา regulatory หรือ clinical แต่เป็นไตรมาสที่สองติดต่อกันที่ตลาดอ่าน launch economics ในแง่ลบ",
@@ -177,13 +275,29 @@
       "entryStrategy": {
         "verdict": "ค่าขนม — เข้าไม้เล็กถึงกลางบนยาที่อนุมัติแล้วพร้อมข้อมูลยืนยัน Q3 2026 ที่เร่งขึ้นจริง EPS พลาดเป้าวันนี้เป็นเรื่องค่าใช้จ่ายเปิดตัว ไม่ใช่ thesis พัง และการย่อทำให้ entry ดีขึ้น",
         "entryLevels": [
-          { "note": "ราคาปัจจุบัน — หลัง EPS พลาดเป้า ห่างจาก 52-week high มากแม้จะได้ FDA approval แล้ว", "timing": "Scale in (เล็ก)" },
-          { "note": "ต่ำกว่าระดับหลังพลาดเป้าวันนี้ — R/R ดีที่สุดถ้าความสงสัยเรื่อง launch spend ยังอยู่ก่อน Q3", "timing": "ถ้าย่อ" },
-          { "note": "ย่อลึกใกล้ 52-week low — เฉพาะ biotech เทขายรวมหรือ execution เปิดตัวผิดหวังเพิ่มเติม", "timing": "Deep dip only" }
+          {
+            "note": "ราคาปัจจุบัน — หลัง EPS พลาดเป้า ห่างจาก 52-week high มากแม้จะได้ FDA approval แล้ว",
+            "timing": "Scale in (เล็ก)"
+          },
+          {
+            "note": "ต่ำกว่าระดับหลังพลาดเป้าวันนี้ — R/R ดีที่สุดถ้าความสงสัยเรื่อง launch spend ยังอยู่ก่อน Q3",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ย่อลึกใกล้ 52-week low — เฉพาะ biotech เทขายรวมหรือ execution เปิดตัวผิดหวังเพิ่มเติม",
+            "timing": "Deep dip only"
+          }
         ],
-        "tp1": { "note": "Base — เปิดตัวเชิงพาณิชย์เริ่มนิ่ง รอข้อมูล Q3 โดยไม่มีปัญหา" },
-        "tp2": { "note": "Bull — ข้อมูล eGFR Q3 บวกหนุนเคสอนุมัติเต็มรูปแบบ แตะเป้าเฉลี่ย consensus" },
-        "tp3": { "note": "Moon — ข้อมูล Q3 สะอาด + ค่าใช้จ่ายเปิดตัวแปลงเป็นรายได้จริง + เส้นทางอนุมัติเต็มรูปแบบยืนยัน แตะเป้าสูงสุดที่มีชื่อ", "moon": true },
+        "tp1": {
+          "note": "Base — เปิดตัวเชิงพาณิชย์เริ่มนิ่ง รอข้อมูล Q3 โดยไม่มีปัญหา"
+        },
+        "tp2": {
+          "note": "Bull — ข้อมูล eGFR Q3 บวกหนุนเคสอนุมัติเต็มรูปแบบ แตะเป้าเฉลี่ย consensus"
+        },
+        "tp3": {
+          "note": "Moon — ข้อมูล Q3 สะอาด + ค่าใช้จ่ายเปิดตัวแปลงเป็นรายได้จริง + เส้นทางอนุมัติเต็มรูปแบบยืนยัน แตะเป้าสูงสุดที่มีชื่อ",
+          "moon": true
+        },
         "stopLoss": {
           "tightNote": "หลุดโซนรองรับหลัง EPS พลาดเป้า — thesis ยังไม่พัง แต่ความกังวล launch spend ลึกขึ้น",
           "hardNote": "ใกล้ 52-week low — จะบ่งชี้ผล Q3 ผิดหวังจริงหรือการเปิดตัวเชิงพาณิชย์ล้มเหลว",
@@ -192,8 +306,14 @@
         }
       },
       "estimateDates": [
-        { "event": "การวิเคราะห์ eGFR Phase 3 ORIGIN", "note": "เลื่อนจากปี 2027 มา Q3 2026 โดยข้อตกลง FDA — เป็นฐานเคสอนุมัติเต็มรูปแบบ" },
-        { "event": "ยื่น sBLA (อนุมัติเต็มรูปแบบ)", "note": "ขึ้นกับข้อมูล Q3" }
+        {
+          "event": "การวิเคราะห์ eGFR Phase 3 ORIGIN",
+          "note": "เลื่อนจากปี 2027 มา Q3 2026 โดยข้อตกลง FDA — เป็นฐานเคสอนุมัติเต็มรูปแบบ"
+        },
+        {
+          "event": "ยื่น sBLA (อนุมัติเต็มรูปแบบ)",
+          "note": "ขึ้นกับข้อมูล Q3"
+        }
       ]
     }
   }

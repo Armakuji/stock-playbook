@@ -35,7 +35,7 @@ Run the `/catalyst-list` workflow from CLAUDE.md (the catalyst dashboard; former
      must be wider than the relevant `medianMAE` or carry a one-line justification — see
      `stopGuidance.rule` and its `caveat` (MAE is measured from the report price, i.e. an Entry-1
      fill, so it overstates the drawdown for a pick filled on the Entry-2 dip).
-   - **Scenarios:** `scenarioCalibration.rule` — state the measured `optimismBiasBasePct` you wrote
+   - **Scenarios:** `scenarioCalibration.core.rule` — state the measured `optimismBiasBasePct` you wrote
      against, and justify any Base above `realizedMaxGainP75Pct` with an explicit horizon. Read
      `horizonCaveat` first: realized figures are 14d/30d, written scenarios usually aren't, so a
      positive bias is a prompt to state your clock, not proof the scenario was wrong.

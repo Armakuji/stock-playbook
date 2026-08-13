@@ -1,0 +1,195 @@
+{
+  "ticker": "PL",
+  "companyName": "Planet Labs PBC",
+  "companyDescription": "Daily-refresh Earth imaging · Pelican/SuperDove constellations — the data layer under defence & intelligence AI, now growing 42% with D&I up 65%",
+  "exchange": "NYSE",
+  "generatedAt": "2026-08-13T00:00:00.000Z",
+  "price": 24.5,
+  "priceChange": 3.38,
+  "priceNote": "Live price Aug 13 07:49. Prior report (Aug 5) used $22.83 — +7.3% drift in 8 days, which is why this refresh was triggered. Stock is now 16.7% above the preferred entry band, so the setup is worse than the thesis.",
+  "marketCap": "$8.7B",
+  "sector": "Technology / Space",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 74,
+  "summary": "Planet's Q1 FY2027 was a genuine inflection: record revenue of $94.2M, up 42% YoY, driven by defence & intelligence contracts growing over 65%. That shifts the story from 'imagery subscriptions with slow growth' to 'defence data supplier with government budget behind it'. Consensus sits around $35.36 across 10 analysts (median $38 on a narrower 5-analyst set, range $22-$53) — roughly +44% from here. The catch is entry, not thesis: the stock has run 7.3% in eight days and now trades 16.7% above the $19-21 zone the last report set. Q2 FY2027 earnings on Sep 8 is the next test.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q2 FY2027 Earnings",
+      "description": "The print that has to confirm Q1 wasn't a one-off. Watch whether defence & intelligence holds anywhere near +65% growth and whether the Pelican Gen-2 ramp shows up in guidance rather than commentary.",
+      "urgencyLabel": "26 DAYS",
+      "dateBadge": "Sep 8, 2026",
+      "catalystDate": "2026-09-08",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🛰️",
+      "name": "Pelican Gen-2 Fleet Buildout",
+      "description": "Higher-resolution Pelican satellites entering service raise revenue per customer without a matching cost step. Continuous rollout rather than a dated event — it shows up in margins, not headlines.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Trading 16.7% above the preferred entry zone — the thesis is intact but this price gives up most of the near-term margin of safety",
+    "Analyst dispersion is wide ($22 low to $53 high), meaning the market has not agreed on what defence growth is worth",
+    "Defence & intelligence concentration cuts both ways — one budget cycle or contract non-renewal moves the growth rate materially",
+    "Still lossmaking; a 42% growth rate has to survive comparisons that get harder from here",
+    "PL fell 37% on a prior quarterly print (Jun 2026) — this name does not reward buying into earnings at the top of its range"
+  ],
+  "estimateDates": [
+    { "event": "Q2 FY2027 Earnings", "dateRange": "Sep 8, 2026", "note": "D&I growth rate is the number that matters", "est": "est. revenue ~$98-102M", "highlight": "blue" },
+    { "event": "Pelican Gen-2 milestones", "dateRange": "H2 2026", "note": "Capacity additions feeding FY2028 revenue", "est": "n/a", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -30, "price": 17.15 },
+    { "label": "Base", "color": "yellow", "pct": 22, "price": 29.89 },
+    { "label": "Bull", "color": "green", "pct": 44.3, "price": 35.36 },
+    { "label": "Moon", "color": "purple", "pct": 63, "price": 39.94 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (10 analysts)", "target": 35.36, "rating": "Buy" },
+    { "firm": "Median (5-analyst set)", "target": 38, "rating": "Buy" },
+    { "firm": "Street high", "target": 53, "rating": "Buy" },
+    { "firm": "Street low", "target": 22, "rating": "Hold" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds 3.50-3.75%, held Jul 29 with three dissents favouring a hike. Next FOMC Sep 16, eight days after PL's earnings.",
+    "inflationNote": "July CPI (Aug 12) headline 3.4% vs 3.5% prior, core 2.5%, +0.1% m/m — soft print, easing hike pressure after payrolls came in at -23k.",
+    "sectorImpact": "MEDIUM rather than LOW: PL is an unprofitable long-duration growth name, so it carries rate sensitivity that a profitable defence supplier wouldn't. Offsetting that, its revenue base is government defence spending, which is far less rate-sensitive than commercial demand.",
+    "summary": "MEDIUM — long-duration valuation risk, partly offset by a government-funded revenue base."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 24.5, "note": "Current price — 16.7% above the preferred zone, chasing", "timing": "Not preferred" },
+      { "label": "Entry 2", "level": 21, "rangeMax": 22.5, "note": "Give back the recent run; where R/R turns favourable again", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 19, "note": "Pre-earnings flush or a broad space-sector drawdown", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 29.89, "pct": 22.0, "note": "Base — D&I growth holds, market pays for the inflection" },
+    "tp2": { "price": 35.36, "pct": 44.3, "note": "Consensus target across 10 analysts" },
+    "tp3": { "price": 39.94, "pct": 63.0, "note": "Toward the upper analyst band on sustained 40%+ growth · 2027", "moon": true },
+    "stopLoss": {
+      "tight": 20.8,
+      "tightPct": -15.1,
+      "tightNote": "Set wider than the measured core medianMAE of -14% per the stop rule — a tighter stop on a name that fell 37% on a past print is just paying the spread",
+      "hard": 18.4,
+      "hardPct": -24.9,
+      "hardNote": "Below the deep-dip entry; would signal the D&I growth story is being repriced",
+      "riskReward": "2.9 : 1",
+      "rrNote": "Tight stop (-15.1%) vs TP2 (+44.3%)",
+      "rrWarning": "Healthy R/R, but measured from the $21-22.5 entry — not from $24.50"
+    },
+    "verdict": "Thesis strong, price isn't — wait for $21-22.5 rather than chasing 16.7% above zone into a Sep 8 print.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "PL has already run 7.3% in the eight days since the last report and sits well above its entry zone, so the pre-earnings drift is largely spent. The feedback prior's earnings_beat bucket (n=42, medianExcessVsBenchPct +1.8 vs +1.4 overall) is unremarkable — no tier-2 action, this type is neither leader nor laggard.",
+    "preRunupTiming": "2-4 สัปดาห์ก่อนงบ",
+    "preRunupPct": "+7% to +15%",
+    "postWin": {
+      "avgPct": 15,
+      "range": "+8% to +20%",
+      "note": "Space/data comparables on a beat: MU +15% (Jun 2026) and RKLB +6% (Aug 2026) bracket the realistic range. PL's own upside case needs D&I growth to hold near 65%.",
+      "exampleDate": "Jun 2026"
+    },
+    "postLose": {
+      "avgPct": -30,
+      "range": "-20% to -37%",
+      "note": "PL's own Jun 2026 print took it down 37% — this stock has a demonstrated habit of punishing a miss hard, which is why the entry zone matters more than usual.",
+      "exampleDate": "Jun 2026"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Cut from 3% held flat rather than raised: thesis improved but entry got materially worse. Chasing 16.7% above zone into a name with a -37% precedent doesn't earn a larger position."
+    },
+    "stopPreCatalyst": { "pct": -15.1, "price": 20.8, "note": "A break here before Sep 8 means the D&I re-rating is unwinding" },
+    "stopPostCatalyst": { "pct": -25, "note": "On a D&I growth miss, exit — the entire re-rating rests on that line item" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "PL",
+      "event": "Quarterly print missed expectations",
+      "date": "Jun 2026",
+      "movePct": -37,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Same ticker, same catalyst type, two quarters ago. The single most relevant case: PL is priced for growth and punishes a miss violently."
+    },
+    {
+      "ticker": "MU",
+      "event": "Earnings beat with strong forward guidance",
+      "date": "Jun 2026",
+      "movePct": 15,
+      "days": 2,
+      "outcome": "good",
+      "note": "Comparable magnitude for a data/infrastructure name beating into a strong demand cycle — the realistic upside shape, not a moonshot."
+    },
+    {
+      "ticker": "RKLB",
+      "event": "Q2 2026 earnings",
+      "date": "Aug 2026",
+      "movePct": 6,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "Closest space-sector comparable this cycle. A beat produced only +6% — evidence that space names now need more than an in-line beat to move."
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/pl/forecast/",
+    "https://public.com/stocks/pl/forecast-price-target",
+    "https://www.marketbeat.com/stocks/NYSE/PL/forecast/",
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+    "https://www.bls.gov/news.release/archives/cpi_08122026.htm"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "งบ Q1 FY2027 ของ Planet เป็นจุดเปลี่ยนจริง — รายได้ทำสถิติที่ $94.2M โต 42% YoY โดยมาจากสัญญากลุ่ม defence & intelligence ที่โตเกิน 65% · เปลี่ยนเรื่องเล่าจาก 'ขาย subscription ภาพถ่ายโตช้า' เป็น 'ผู้ส่งข้อมูลให้กลาโหมที่มีงบรัฐหนุน' · consensus อยู่แถว $35.36 จาก 10 นักวิเคราะห์ (median $38 จากชุด 5 คน, ช่วง $22-$53) ≈ +44% จากราคานี้ · ปัญหาอยู่ที่จุดเข้า ไม่ใช่ thesis: หุ้นวิ่งมา 7.3% ใน 8 วัน และตอนนี้อยู่สูงกว่าโซน $19-21 ที่รายงานก่อนตั้งไว้ถึง 16.7% · งบ Q2 FY2027 วันที่ 8 ก.ย. คือบททดสอบถัดไป",
+      "priceNote": "ราคาสด 13 ส.ค. 07:49 · รายงานก่อน (5 ส.ค.) ใช้ $22.83 — drift +7.3% ใน 8 วัน ซึ่งเป็นเหตุผลที่ต้อง refresh · ตอนนี้อยู่สูงกว่าโซนเข้า 16.7% แปลว่า setup แย่กว่า thesis",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "งบ Q2 FY2027", "description": "งบที่ต้องยืนยันว่า Q1 ไม่ใช่ของฟลุก · ดูว่า defence & intelligence ยังโตใกล้ +65% ไหม และ Pelican Gen-2 เริ่มโผล่ใน guidance ไม่ใช่แค่ในคำบรรยาย" },
+        { "name": "การขยายฝูงดาวเทียม Pelican Gen-2", "description": "ดาวเทียม Pelican ความละเอียดสูงที่ทยอยเข้าประจำการ ทำให้รายได้ต่อลูกค้าเพิ่มโดยต้นทุนไม่ขยับตาม · เป็นการทยอยไม่ใช่ event มีวันที่ · จะเห็นผลที่ margin ไม่ใช่พาดหัว" }
+      ],
+      "risks": [
+        "ซื้อขายสูงกว่าโซนเข้าที่ต้องการ 16.7% — thesis ยังดีแต่ราคานี้กินส่วนเผื่อความปลอดภัยระยะสั้นไปเกือบหมด",
+        "นักวิเคราะห์เห็นต่างกันมาก ($22 ถึง $53) แปลว่าตลาดยังไม่ตกลงกันว่าการโตจากกลาโหมควรมีมูลค่าเท่าไหร่",
+        "การกระจุกตัวใน defence & intelligence เป็นดาบสองคม — งบประมาณรอบเดียวหรือสัญญาไม่ต่อ กระทบอัตราการเติบโตทันที",
+        "ยังขาดทุน และอัตราโต 42% ต้องผ่านฐานเปรียบเทียบที่สูงขึ้นเรื่อย ๆ",
+        "PL เคยร่วง 37% จากงบไตรมาสก่อน (มิ.ย. 2026) — หุ้นตัวนี้ไม่ให้รางวัลกับการซื้อเข้าไปตอนอยู่บนกรอบก่อนประกาศงบ"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed อยู่ที่ 3.50-3.75% คงเมื่อ 29 ก.ค. โดยมี dissent 3 เสียงอยากขึ้น · FOMC ถัดไป 16 ก.ย. หลังงบ PL 8 วัน",
+        "inflationNote": "CPI ก.ค. (ออก 12 ส.ค.) headline 3.4% จาก 3.5% · core 2.5% · m/m +0.1% — เป็น print ที่อ่อน ลดแรงกดดันขึ้นดอกเบี้ยหลังตัวเลขจ้างงานออกมา -23k",
+        "sectorImpact": "ให้ MEDIUM ไม่ใช่ LOW เพราะ PL เป็นหุ้นโตที่ยังขาดทุน จึงมี duration risk ที่ผู้รับเหมากลาโหมที่มีกำไรแล้วไม่มี · แต่หักล้างบางส่วนด้วยฐานรายได้ที่มาจากงบกลาโหมรัฐ ซึ่งไวต่อดอกเบี้ยน้อยกว่าดีมานด์ฝั่งพาณิชย์มาก",
+        "summary": "MEDIUM — เสี่ยงเรื่อง valuation ระยะยาว หักล้างบางส่วนด้วยฐานรายได้จากภาครัฐ"
+      },
+      "entryStrategy": {
+        "verdict": "Thesis แข็ง แต่ราคาไม่ให้ — รอโซน $21-22.5 ดีกว่าไล่ราคาที่สูงกว่าโซน 16.7% เข้าไปเจองบ 8 ก.ย.",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — สูงกว่าโซน 16.7% ถือว่าไล่ราคา", "timing": "ไม่แนะนำ" },
+          { "note": "คืนกำไรที่วิ่งมา · จุดที่ R/R กลับมาคุ้ม", "timing": "ถ้าย่อ" },
+          { "note": "ย่อแรงก่อนงบ หรือ sector อวกาศโดนเทรวม", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Base — D&I ยังโต ตลาดจ่ายให้จุดเปลี่ยน" },
+        "tp2": { "note": "เป้า consensus จาก 10 นักวิเคราะห์" },
+        "tp3": { "note": "ไปทางกรอบบนของนักวิเคราะห์ ถ้าโตเกิน 40% ต่อเนื่อง · 2027" },
+        "stopLoss": {
+          "tightNote": "ตั้งกว้างกว่า medianMAE ที่วัดได้ -14% ตามกฎ stop — ตั้งแคบกว่านั้นกับหุ้นที่เคยร่วง 37% จากงบ ก็แค่จ่ายค่า spread ฟรี",
+          "hardNote": "ต่ำกว่าโซนย่อลึก · แปลว่าเรื่อง D&I กำลังโดน reprice",
+          "rrNote": "stop แคบ (-15.1%) เทียบ TP2 (+44.3%)",
+          "rrWarning": "R/R ดี แต่วัดจากจุดเข้า $21-22.5 ไม่ใช่จาก $24.50"
+        },
+        "estimateDates": [
+          { "event": "งบ Q2 FY2027", "note": "อัตราโตของ D&I คือตัวเลขที่สำคัญที่สุด" },
+          { "event": "ไมล์สโตน Pelican Gen-2", "note": "กำลังการผลิตที่เพิ่มจะไปโผล่เป็นรายได้ FY2028" }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "ticker": "CRDO",
+  "companyName": "Credo Technology Group Holding Ltd",
+  "companyDescription": "AI datacenter connectivity · AECs, SerDes and optical DSPs — the cabling layer inside every hyperscaler GPU rack, with FY26 revenue tripled",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-13T00:00:00.000Z",
+  "price": 268.16,
+  "priceChange": 8.26,
+  "priceNote": "Live price Aug 13 07:49, +8.26% today. Prior report (Aug 5) used $237.92 — +12.7% drift in 8 days, which triggered this refresh. That run has taken the stock through its own consensus target.",
+  "marketCap": "$47.3B",
+  "sector": "Technology / Semiconductors",
+  "verdict": "HOLD",
+  "scoreLabel": "Speculative",
+  "score": 62,
+  "summary": "Downgraded from BUY on price, not on business. Credo guided Q1 FY2027 revenue to $465-475M after tripling FY26 revenue, and the Sep 1 print is now a confirmed date rather than an estimate. But the stock has run 12.7% in eight days and at $268.16 it trades slightly ABOVE the $266.17 consensus target — the upside case no longer rests on the average analyst, it rests on Barclays' $300 (raised Jul 20) against a street range that still runs down to $160. Buying here means paying full consensus for the right to take earnings risk 19 days out, with R/R below 1:1 to the most credible bull target. The AEC franchise is genuinely strong; this is a valuation and timing call.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q1 FY2027 Earnings",
+      "description": "Company-confirmed: results release Sep 1 after market close, conference call 2:00pm PT. Guidance is $465-475M revenue for the quarter ended Aug 1. The question is whether AEC share gains hold as hyperscalers qualify second sources.",
+      "urgencyLabel": "19 DAYS",
+      "dateBadge": "Sep 1, 2026",
+      "catalystDate": "2026-09-01",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🔌",
+      "name": "800G/1.6T AEC Design-Win Ramp",
+      "description": "Next-generation rack architectures pull more active electrical cable content per GPU. Continuous rather than dated — shows up as revenue mix and gross margin, not as an announcement.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Trades above consensus ($268.16 vs $266.17) — by the dashboard's own gate definition there is no consensus upside left at this price",
+    "R/R to the Barclays $300 target is under 1:1 against a stop wide enough to survive normal volatility — the setup, not the company, is what fails here",
+    "Street range $160 to $300 means the bear case is a 40% drawdown and is held by real analysts, not a strawman",
+    "Customer concentration in a handful of hyperscalers; a single second-source qualification resets the growth rate",
+    "Up 8.26% in one session going into a print 19 days out — this is the shape of a crowded pre-earnings trade",
+    "FY26 revenue tripled, so comparisons from here are brutal; decelerating growth at this multiple is the main de-rating risk"
+  ],
+  "estimateDates": [
+    { "event": "Q1 FY2027 Earnings", "dateRange": "Sep 1, 2026", "note": "Company-confirmed, after close · guide $465-475M", "est": "est. revenue $465-475M", "highlight": "blue" },
+    { "event": "Q2 FY2027 Earnings", "dateRange": "Dec 2026", "note": "The print where tripled-revenue comparisons start to bite", "est": "n/a", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -30, "price": 187.71 },
+    { "label": "Base", "color": "yellow", "pct": -0.7, "price": 266.17 },
+    { "label": "Bull", "color": "green", "pct": 11.9, "price": 300.0 },
+    { "label": "Moon", "color": "purple", "pct": 30, "price": 348.6 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus", "target": 266.17, "rating": "Buy", "note": "Below the live price — the reason this is now HOLD" },
+    { "firm": "Barclays", "target": 300, "rating": "Overweight", "note": "Raised from $260 on Jul 20, 2026" },
+    { "firm": "Susquehanna", "target": 250, "rating": "Positive", "note": "Raised from $235 on Jul 21, 2026 — still below the live price" },
+    { "firm": "Street low", "target": 160, "rating": "Hold" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds 3.50-3.75%, held Jul 29 with three dissents for a hike. Next FOMC Sep 16, two weeks after the print.",
+    "inflationNote": "July CPI (Aug 12) headline 3.4% from 3.5%, core 2.5%, +0.1% m/m — soft, following payrolls at -23k.",
+    "sectorImpact": "CRDO is a high-multiple derivative of AI capex. It carries the same index-concentration risk as the large semis but with far less liquidity cushion, so a hawkish surprise or an AI-capex scare moves it more than NVDA, not less.",
+    "summary": "MEDIUM — high-beta expression of the same AI trade the whole board is long."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 268.16, "note": "Current price — above consensus, chasing an 8.26% session", "timing": "Not preferred" },
+      { "label": "Entry 2", "level": 235, "rangeMax": 248, "note": "Back toward where the last report was written; restores a real gap to consensus", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 210, "note": "Original zone floor — needs an AI-capex scare or a guidance miss", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 285.0, "pct": 6.3, "note": "Post-print drift if Sep 1 beats the $465-475M guide" },
+    "tp2": { "price": 300.0, "pct": 11.9, "note": "Barclays target — the only major target above the current price" },
+    "tp3": { "price": 348.6, "pct": 30.0, "note": "Requires a fresh estimate cycle on 1.6T AEC content · 2027", "moon": true },
+    "stopLoss": {
+      "tight": 232.3,
+      "tightPct": -13.4,
+      "tightNote": "Wider than the earnings_beat bucket's measured medianMAE of -9.6% (n=42, so that bucket governs over the -14% overall figure per the stop rule)",
+      "hard": 205.0,
+      "hardPct": -23.6,
+      "hardNote": "Below the deep-dip shelf; would mean the AEC growth premium is being repriced",
+      "riskReward": "0.89 : 1",
+      "rrNote": "Tight stop (-13.4%) vs TP2 (+11.9%)",
+      "rrWarning": "⚠️ BELOW 1:1 — risking more than the credible bull target offers. This single number is why the verdict moved to HOLD; it is not a rounding issue, it is the whole argument"
+    },
+    "verdict": "Strong franchise, exhausted price — HOLD here, and only re-engage at $235-248 where a gap to consensus actually exists.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "The pre-earnings move is not merely spent, it has overshot: +12.7% in eight days including +8.26% today, carrying the stock through consensus with 19 days still to run. Feedback prior: earnings_beat is n=42 with medianExcessVsBenchPct +1.8 vs +1.4 overall — neither leader nor laggard, so no tier-2 adjustment, but its 0% hit rate on +30%/14d is a reminder that the remaining upside here is small.",
+    "preRunupTiming": "2-3 สัปดาห์ก่อนงบ",
+    "preRunupPct": "+12% to +15%",
+    "postWin": {
+      "avgPct": 8,
+      "range": "+4% to +15%",
+      "note": "Mega/large-cap semis on a beat cluster in single digits when the run-up already happened: AVGO +4.7% (Jul 2026) is the closest comparable. MU's +20% (Jun 2026) required an estimate reset CRDO is unlikely to get twice.",
+      "exampleDate": "Jul 2026"
+    },
+    "postLose": {
+      "avgPct": -18,
+      "range": "-12% to -25%",
+      "note": "The asymmetry is the point: a stock that has run 12.7% through consensus into a print has far more to give back on a miss than to gain on a beat.",
+      "exampleDate": "May 2025"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "Cut from 3%. Not a conviction change on the AEC franchise — purely that entering above consensus with sub-1:1 R/R into an earnings date does not deserve a normal position."
+    },
+    "stopPreCatalyst": { "pct": -13.4, "price": 232.3, "note": "A break here before Sep 1 means the pre-earnings crowding is unwinding" },
+    "stopPostCatalyst": { "pct": -20, "note": "On a guidance miss, exit — at this multiple a decelerating growth print re-rates fast" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "AVGO",
+      "event": "Q2 FY2026 earnings beat after a pre-earnings run",
+      "date": "Jul 2026",
+      "movePct": 4.7,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "The direct template: a genuinely strong print delivered under +5% because the move had already happened. CRDO enters Sep 1 in the same posture, only more extended."
+    },
+    {
+      "ticker": "NVDA",
+      "event": "Q1 FY2026 earnings — beat, stock fell anyway",
+      "date": "May 2025",
+      "movePct": -4,
+      "days": 1,
+      "outcome": "bad",
+      "note": "What happens when positioning sets the bar instead of the model. Included because CRDO is now priced above consensus, which is exactly that condition."
+    },
+    {
+      "ticker": "MU",
+      "event": "Earnings beat with strong pricing guidance",
+      "date": "Jun 2026",
+      "movePct": 15,
+      "days": 2,
+      "outcome": "good",
+      "note": "Upper bound, included for balance — but it took a full estimate reset, and CRDO already had its reset when FY26 revenue tripled."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Credo schedules first quarter fiscal year 2027 financial results for Sept. 1 after close",
+    "url": "https://www.stocktitan.net/news/CRDO/credo-schedules-first-quarter-fiscal-year-2027-financial-results-52pw63n2e79j.html",
+    "date": "Aug 2026"
+  },
+  "sources": [
+    "https://www.stocktitan.net/news/CRDO/credo-schedules-first-quarter-fiscal-year-2027-financial-results-52pw63n2e79j.html",
+    "https://investors.credosemi.com/financials/quarterly-results/default.aspx",
+    "https://www.marketbeat.com/stocks/NASDAQ/CRDO/forecast/",
+    "https://www.tipranks.com/news/the-fly/credo-technology-price-target-raised-to-32-from-30-at-barclays",
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+    "https://www.bls.gov/news.release/archives/cpi_08122026.htm"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "ลดจาก BUY เป็น HOLD เพราะราคา ไม่ใช่เพราะธุรกิจ · Credo ให้ guidance รายได้ Q1 FY2027 ที่ $465-475M หลังจากรายได้ FY26 โตสามเท่า และวันประกาศงบ 1 ก.ย. เป็นวันที่ยืนยันแล้วไม่ใช่การประมาณ · แต่หุ้นวิ่งมา 12.7% ใน 8 วัน และที่ $268.16 ตอนนี้ซื้อขาย **สูงกว่า** เป้า consensus ที่ $266.17 เล็กน้อย — upside จึงไม่ได้อยู่ที่นักวิเคราะห์เฉลี่ยอีกต่อไป แต่อยู่ที่เป้า $300 ของ Barclays (ปรับขึ้น 20 ก.ค.) เทียบกับกรอบ street ที่ยังลงไปถึง $160 · การซื้อที่ราคานี้คือจ่ายเต็ม consensus เพื่อแลกกับสิทธิ์รับความเสี่ยงงบในอีก 19 วัน โดยมี R/R ต่ำกว่า 1:1 เทียบเป้า bull ที่น่าเชื่อถือที่สุด · แฟรนไชส์ AEC แข็งจริง แต่นี่เป็นเรื่องของ valuation กับจังหวะ",
+      "priceNote": "ราคาสด 13 ส.ค. 07:49 · +8.26% วันนี้ · รายงานก่อน (5 ส.ค.) ใช้ $237.92 — drift +12.7% ใน 8 วัน ซึ่งเป็นเหตุให้ต้อง refresh · การวิ่งรอบนี้พาหุ้นทะลุเป้า consensus ของตัวเองไปแล้ว",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "งบ Q1 FY2027", "description": "บริษัทยืนยันแล้ว: ออกผลประกอบการ 1 ก.ย. หลังตลาดปิด conference call 14:00 น. เวลาแปซิฟิก · guidance รายได้ $465-475M สำหรับไตรมาสที่จบ 1 ส.ค. · คำถามคือส่วนแบ่ง AEC จะยืนได้ไหมเมื่อ hyperscaler เริ่ม qualify ซัพพลายเออร์รายที่สอง" },
+        { "name": "การ ramp ของ design win AEC 800G/1.6T", "description": "สถาปัตยกรรม rack รุ่นใหม่ดึงปริมาณ active electrical cable ต่อ GPU มากขึ้น · เป็นแบบต่อเนื่องไม่มีวันที่ · จะเห็นผลที่ mix รายได้และ gross margin ไม่ใช่ที่การประกาศ" }
+      ],
+      "risks": [
+        "ซื้อขายสูงกว่า consensus ($268.16 เทียบ $266.17) — ตามนิยาม gate ของ dashboard เอง ที่ราคานี้ไม่เหลือ upside จาก consensus แล้ว",
+        "R/R เทียบเป้า $300 ของ Barclays ต่ำกว่า 1:1 เมื่อใช้ stop ที่กว้างพอจะทนความผันผวนปกติ — สิ่งที่พังคือ setup ไม่ใช่บริษัท",
+        "กรอบ street $160 ถึง $300 แปลว่า bear case คือการร่วง 40% และมีนักวิเคราะห์จริงถืออยู่ ไม่ใช่หุ่นฟาง",
+        "ลูกค้ากระจุกที่ hyperscaler ไม่กี่ราย · การ qualify second source รายเดียวรีเซ็ตอัตราการเติบโต",
+        "วิ่ง 8.26% ในวันเดียวก่อนงบ 19 วัน — เป็นรูปทรงของ trade ก่อนงบที่คนแออัด",
+        "รายได้ FY26 โตสามเท่า ฐานเปรียบเทียบจากนี้จึงโหดมาก · การโตช้าลงที่ multiple ระดับนี้คือความเสี่ยง de-rating หลัก"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed 3.50-3.75% คงเมื่อ 29 ก.ค. มี dissent 3 เสียงอยากขึ้น · FOMC ถัดไป 16 ก.ย. สองสัปดาห์หลังงบ",
+        "inflationNote": "CPI ก.ค. (12 ส.ค.) headline 3.4% จาก 3.5% · core 2.5% · m/m +0.1% — อ่อน ตามหลังตัวเลขจ้างงาน -23k",
+        "sectorImpact": "CRDO เป็นอนุพันธ์ multiple สูงของ AI capex · มีความเสี่ยงกระจุกตัวแบบเดียวกับเซมิตัวใหญ่ แต่มีเบาะสภาพคล่องน้อยกว่ามาก ถ้ามี hawkish surprise หรือข่าวลบเรื่อง AI capex จะขยับแรงกว่า NVDA ไม่ใช่น้อยกว่า",
+        "summary": "MEDIUM — เป็นตัวแทน beta สูงของ AI trade เดียวกับที่ทั้งกระดานถืออยู่"
+      },
+      "entryStrategy": {
+        "verdict": "แฟรนไชส์แข็ง แต่ราคาหมดแรงแล้ว — HOLD ที่ราคานี้ และกลับเข้าเฉพาะโซน $235-248 ที่ยังมีช่องว่างถึง consensus จริง ๆ",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — สูงกว่า consensus และไล่ตามวันที่วิ่ง 8.26%", "timing": "ไม่แนะนำ" },
+          { "note": "กลับไปแถวที่รายงานก่อนเขียนไว้ · ทำให้ช่องว่างถึง consensus กลับมามีจริง", "timing": "ถ้าย่อ" },
+          { "note": "พื้นโซนเดิม — ต้องมีข่าวลบ AI capex หรือ guidance พลาด", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "การไหลขึ้นหลังงบ ถ้า 1 ก.ย. ทำได้เกิน guide $465-475M" },
+        "tp2": { "note": "เป้า Barclays — เป้าเดียวของรายใหญ่ที่ยังอยู่เหนือราคาปัจจุบัน" },
+        "tp3": { "note": "ต้องมีรอบปรับประมาณการใหม่จากปริมาณ AEC 1.6T · 2027" },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE ของ bucket earnings_beat ที่วัดได้ -9.6% (n=42 bucket นี้จึงมีผลเหนือตัวเลขรวม -14% ตามกฎ stop)",
+          "hardNote": "ต่ำกว่าชั้นย่อลึก · แปลว่า premium การเติบโตของ AEC กำลังโดน reprice",
+          "rrNote": "stop แคบ (-13.4%) เทียบ TP2 (+11.9%)",
+          "rrWarning": "⚠️ ต่ำกว่า 1:1 — เสี่ยงมากกว่าที่เป้า bull ที่น่าเชื่อถือจะให้ · ตัวเลขนี้ตัวเดียวคือเหตุผลที่ verdict เปลี่ยนเป็น HOLD ไม่ใช่เรื่องปัดเศษ แต่เป็นข้อโต้แย้งทั้งหมด"
+        },
+        "estimateDates": [
+          { "event": "งบ Q1 FY2027", "note": "บริษัทยืนยัน หลังตลาดปิด · guide $465-475M" },
+          { "event": "งบ Q2 FY2027", "note": "งบที่ฐานเปรียบเทียบรายได้โตสามเท่าเริ่มกัด" }
+        ]
+      }
+    }
+  }
+}
