@@ -1,0 +1,199 @@
+{
+  "ticker": "SRRK",
+  "companyName": "Scholar Rock Holding Corporation",
+  "companyDescription": "Single-asset biotech · Apitegromab (anti-myostatin) for SMA — PDUFA Sep 30 turns a clinical-stage story into a commercial one, or doesn't",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-13T00:00:00.000Z",
+  "price": 49.1,
+  "priceChange": 0,
+  "priceNote": "Price self-fetched via search — SRRK is absent from live-prices.json (cache asOf Aug 5, 8 days stale). Intraday change not available, so priceChange is 0 rather than a guess. Context: stock rallied ~17% on Aug 12 as regulatory progress outweighed in-line Q2, and sits below the 52-week high of $56.54.",
+  "marketCap": "$6.18B",
+  "sector": "Healthcare / Biotechnology",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Speculative",
+  "score": 66,
+  "summary": "Binary PDUFA on Sep 30 for apitegromab in SMA — Scholar Rock has no approved product, so this decision either creates a commercial-stage company or removes the entire thesis. BLA was accepted with two manufacturing sites after the earlier resubmission, and the stock has already run on regulatory progress (+14% on resubmission, +17% post-Q2). Consensus $59.94 across 16 analysts is +22% from here, which clears the dashboard's gate but is not a large cushion for an event with CRL downside of -40% to -80%. Size it as an event trade, not a position.",
+  "catalysts": [
+    {
+      "icon": "⚖️",
+      "name": "Apitegromab PDUFA Decision (SMA)",
+      "description": "FDA target action date for apitegromab in spinal muscular atrophy. BLA accepted with two manufacturing sites following resubmission. Approval would be Scholar Rock's first commercial product; a CRL removes the near-term revenue thesis entirely.",
+      "urgencyLabel": "48 DAYS",
+      "dateBadge": "Sep 30, 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "🏭",
+      "name": "Manufacturing Site Readiness",
+      "description": "The resubmission added a second manufacturing site — the issue that drove the original delay. Any pre-approval inspection finding between now and Sep 30 is the most likely path to another CRL.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Single-asset binary — no approved products, so a CRL removes the near-term commercial thesis outright, not just a quarter of revenue",
+    "CRL downside is historically -40% to -80% for single-asset biotechs (Alimera -73% Nov 2011, Coherus -24% Jun 2017); a stop below the event does not protect against an overnight gap",
+    "Manufacturing was the cause of the original delay — the fix is the least visible part of the file from outside",
+    "Stock has already run ~17% into the event, so a meaningful part of an approval is priced in",
+    "Competitive SMA landscape hardened in the last year: Itvisma (Novartis gene therapy) approved late 2025, high-dose Spinraza approved Mar 30 2026 — label and positioning matter as much as the approval itself"
+  ],
+  "estimateDates": [
+    { "event": "Apitegromab PDUFA", "dateRange": "Sep 30, 2026", "note": "Binary — approval vs CRL", "est": "approval = first commercial product", "highlight": "yellow" },
+    { "event": "Q3 2026 Earnings", "dateRange": "Nov 2026", "note": "First print after the decision; launch readiness detail if approved", "est": "n/a — pre-revenue", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -45, "price": 27.0 },
+    { "label": "Base", "color": "yellow", "pct": 22, "price": 59.9 },
+    { "label": "Bull", "color": "green", "pct": 42.6, "price": 70.0 },
+    { "label": "Moon", "color": "purple", "pct": 54.8, "price": 76.0 }
+  ],
+  "analystTargets": [
+    { "firm": "BMO Capital", "target": 70, "rating": "Outperform" },
+    { "firm": "H.C. Wainwright", "target": 65, "rating": "Buy" },
+    { "firm": "BofA Securities", "target": 58, "rating": "Buy" },
+    { "firm": "Jefferies", "target": 57, "rating": "Buy" },
+    { "firm": "Truist Securities", "target": 55, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Fed funds held at 3.50–3.75% on Jul 29 — fifth consecutive pause, though three members dissented in favour of a hike. Next FOMC Sep 16, two weeks before the PDUFA.",
+    "inflationNote": "July CPI (released Aug 12) came in at 3.4% headline, down from 3.5%, with core at 2.5% and +0.1% m/m — soft enough to take hike pressure down after July payrolls printed -23k with >100k of downward revisions.",
+    "sectorImpact": "A binary PDUFA is close to macro-independent: the Sep 30 outcome dominates anything the Sep 16 FOMC does to this name. Rates matter only via the long-duration discount on unprofitable biotech, and the direction of travel there is currently favourable.",
+    "summary": "LOW — the event is idiosyncratic. The Sep 16 FOMC is a background variable, not a driver of this thesis."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 49.1, "note": "Current price — already +17% off the Q2 reaction", "timing": "Now" },
+      { "label": "Entry 2", "level": 44, "rangeMax": 46, "note": "Give back the post-Q2 pop; better risk into a binary", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 38, "note": "Deep dip — would imply the market is repricing CRL odds", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 59.9, "pct": 22.0, "note": "Consensus $59.94 — approval largely as expected" },
+    "tp2": { "price": 70.0, "pct": 42.6, "note": "BMO target — approval with a clean, broad label" },
+    "tp3": { "price": 76.0, "pct": 54.8, "note": "Street high — approval plus launch/uptake credit · 2027", "moon": true },
+    "stopLoss": {
+      "tight": 41.2,
+      "tightPct": -16.1,
+      "tightNote": "Set deliberately wider than the measured core medianMAE of -14% — a stop inside that range gets hit by ordinary pre-event noise rather than by a broken thesis",
+      "hard": 36.8,
+      "hardPct": -25.1,
+      "hardNote": "Below this the market is pricing a CRL and the pre-event thesis is gone",
+      "riskReward": "2.6 : 1",
+      "rrNote": "Tight stop (-16.1%) vs TP2 (+42.6%)",
+      "rrWarning": "R/R is only meaningful BEFORE Sep 30 — a CRL gaps through any stop overnight"
+    },
+    "verdict": "Event trade, not a position — 3–5% size, prefer the $44–46 dip, and accept that no stop protects you through the decision itself.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "SRRK has repeatedly re-rated on regulatory milestones rather than waiting for the decision itself: +14% on the BLA resubmission and ~+17% on Aug 12 when regulatory progress outweighed an in-line Q2. The pattern is that progress gets paid early, which also means less is left for the approval.",
+    "preRunupTiming": "2–6 สัปดาห์ก่อน PDUFA",
+    "preRunupPct": "+14% to +17%",
+    "postWin": {
+      "avgPct": 15,
+      "range": "+10% to +25%",
+      "note": "Event studies of FDA approvals report mean/median cumulative abnormal returns in the low-single to low-double digits over the 0 to +5 day window. Small single-asset biotechs can double or triple on approval, but that applies to names far smaller than a $6.18B cap that has already run ~17% into the event — hence the +10% to +25% band rather than the headline multiples.",
+      "exampleDate": "Aug 2026"
+    },
+    "postLose": {
+      "avgPct": -50,
+      "range": "-40% to -80%",
+      "note": "CRL outcomes for single-asset biotechs cluster in the -40% to -80% range. Named cases: Alimera Sciences -73% (Nov 2011) and Coherus -24% (Jun 2017), the latter cushioned by a broader pipeline that SRRK does not have.",
+      "exampleDate": "Nov 2011"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "Binary single-asset event with -40% to -80% downside and no pipeline cushion. Conviction is in the setup, not the outcome — 4% keeps a CRL survivable. The feedback prior's fda_decision bucket is n=3, below the n>=5 bar, so it is context only and does not justify sizing up."
+    },
+    "stopPreCatalyst": { "pct": -16.1, "price": 41.2, "note": "Wider than the measured -14% median MAE; a break here before Sep 30 means the market is repricing approval odds, not just drifting" },
+    "stopPostCatalyst": { "pct": -35, "note": "If a CRL lands, exit into the first liquidity rather than waiting for a bounce — the re-filing clock is measured in quarters" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "SRRK",
+      "event": "Q2 2026 print — in-line results, regulatory progress dominated",
+      "date": "Aug 2026",
+      "movePct": 17,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same ticker, same catalyst family: the market pays SRRK for regulatory de-risking ahead of the decision. Directly relevant because it shows how much is already in the price going into Sep 30."
+    },
+    {
+      "ticker": "CHRS",
+      "event": "FDA rejection (Complete Response Letter)",
+      "date": "Jun 2017",
+      "movePct": -24,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Milder CRL reaction because Coherus had other programs to fall back on. SRRK has no approved product, so this is closer to a floor on the downside case than a central estimate."
+    },
+    {
+      "ticker": "ALIM",
+      "event": "FDA rejection of lead candidate",
+      "date": "Nov 2011",
+      "movePct": -73,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Single-asset company rejected on its flagship — the structural analogue to SRRK's position. This is what the bear case actually looks like when there is no second program."
+    }
+  ],
+  "sources": [
+    "https://seekingalpha.com/article/4917690-scholar-rock-new-treatment-boost-for-sma-patients-with-september-pdufa",
+    "https://www.chartmill.com/news/SRRK/Chartmill-53147-Scholar-Rock-NASDAQSRRK-Rallies-17-as-Regulatory-Catalysts-Outweigh-In-Line-Q2-Results",
+    "https://stockanalysis.com/stocks/srrk/",
+    "https://finance.yahoo.com/sectors/healthcare/articles/srrk-stock-jumps-resubmission-fda-163600197.html",
+    "https://www.investing.com/news/analyst-ratings/jefferies-raises-scholar-rock-stock-price-target-on-bla-resubmission-93CH-4593815",
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+    "https://www.bls.gov/news.release/archives/cpi_08122026.htm",
+    "https://www.biospace.com/fda/biogen-bounces-back-with-fda-nod-for-high-dose-spinal-muscular-atrophy-drug"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "PDUFA แบบ binary วันที่ 30 ก.ย. สำหรับ apitegromab ใน SMA — Scholar Rock ยังไม่มียาที่อนุมัติเลยสักตัว การตัดสินครั้งนี้จึงเป็นตัวชี้ว่าบริษัทจะกลายเป็น commercial-stage หรือ thesis หายไปทั้งก้อน BLA ถูกรับพิจารณาพร้อมโรงงาน 2 แห่งหลัง resubmit และหุ้นวิ่งไปแล้วกับข่าว regulatory (+14% ตอน resubmit, +17% หลังงบ Q2) consensus $59.94 จาก 16 นักวิเคราะห์ = +22% ผ่านเกณฑ์ dashboard แต่ไม่ใช่เบาะรองที่หนาสำหรับ event ที่ downside CRL อยู่ที่ -40% ถึง -80% — เล่นเป็น event trade ไม่ใช่ position",
+      "priceNote": "ราคา self-fetch เอง เพราะ SRRK ไม่มีใน live-prices.json (cache asOf 5 ส.ค. เก่า 8 วัน) ไม่มีตัวเลข intraday จึงใส่ priceChange = 0 แทนการเดา · บริบท: หุ้นเด้ง ~17% วันที่ 12 ส.ค. จากข่าว regulatory กลบงบ Q2 ที่ออกมากลาง ๆ และยังต่ำกว่า high 52 สัปดาห์ที่ $56.54",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "PDUFA ตัดสิน apitegromab (SMA)", "description": "วันเป้าหมาย FDA สำหรับ apitegromab ใน SMA · BLA รับพิจารณาพร้อมโรงงาน 2 แห่งหลัง resubmit · ถ้าผ่าน = ยาตัวแรกที่ขายได้ของบริษัท ถ้าโดน CRL = thesis รายได้ระยะใกล้หายทั้งหมด" },
+        { "name": "ความพร้อมโรงงานผลิต", "description": "การ resubmit เพิ่มโรงงานแห่งที่สอง ซึ่งเป็นต้นเหตุที่ทำให้ล่าช้ารอบแรก · ถ้ามี finding จาก pre-approval inspection ก่อน 30 ก.ย. คือเส้นทางที่น่าจะพาไป CRL มากที่สุด" }
+      ],
+      "risks": [
+        "Single-asset binary — ไม่มียาที่อนุมัติแล้วเลย ถ้า CRL คือ thesis หายทั้งก้อน ไม่ใช่แค่พลาดรายได้ไตรมาสเดียว",
+        "downside CRL ในอดีตอยู่ที่ -40% ถึง -80% (Alimera -73% พ.ย. 2011, Coherus -24% มิ.ย. 2017) · stop ที่ตั้งไว้ไม่ช่วยถ้าราคา gap ข้ามคืน",
+        "ปัญหาเดิมคือโรงงาน ซึ่งเป็นส่วนที่คนนอกมองเห็นน้อยที่สุดในไฟล์",
+        "หุ้นวิ่งไปแล้ว ~17% ก่อน event แปลว่าราคาสะท้อนการอนุมัติไปบางส่วนแล้ว",
+        "คู่แข่งใน SMA แข็งขึ้นมากในปีที่ผ่านมา: Itvisma (gene therapy ของ Novartis) อนุมัติปลายปี 2025, Spinraza โดสสูงอนุมัติ 30 มี.ค. 2026 — label กับตำแหน่งทางการตลาดสำคัญพอ ๆ กับตัวการอนุมัติเอง"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ยที่ 3.50–3.75% เมื่อ 29 ก.ค. — พักติดต่อกันครั้งที่ 5 แม้จะมีกรรมการ 3 คน dissent อยากขึ้น · FOMC ถัดไป 16 ก.ย. ก่อน PDUFA 2 สัปดาห์",
+        "inflationNote": "CPI เดือน ก.ค. (ออก 12 ส.ค.) headline 3.4% ลดจาก 3.5% · core 2.5% · m/m +0.1% อ่อนพอที่จะลดแรงกดดันฝั่งขึ้นดอกเบี้ย หลังตัวเลขจ้างงาน ก.ค. ออกมา -23k พร้อมปรับย้อนหลังลงกว่า 100k",
+        "sectorImpact": "PDUFA แบบ binary แทบไม่ขึ้นกับ macro — ผลวันที่ 30 ก.ย. มีน้ำหนักเหนือกว่าอะไรก็ตามที่ FOMC 16 ก.ย. จะทำกับหุ้นตัวนี้ · ดอกเบี้ยมีผลผ่าน discount ของ biotech ที่ยังขาดทุนเท่านั้น ซึ่งตอนนี้ทิศทางเป็นบวก",
+        "summary": "LOW — เป็น event เฉพาะตัว · FOMC 16 ก.ย. เป็นฉากหลัง ไม่ใช่ตัวขับ thesis"
+      },
+      "entryStrategy": {
+        "verdict": "เล่นเป็น event trade ไม่ใช่ position — ขนาด 3–5% รอจังหวะย่อโซน $44–46 และต้องยอมรับว่าไม่มี stop ไหนกันความเสี่ยงข้ามวัน 30 ก.ย. ได้",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — วิ่งมาแล้ว +17% จากงบ Q2", "timing": "ตอนนี้" },
+          { "note": "คืนกำไรหลังงบ · risk ดีกว่าสำหรับ binary event", "timing": "ถ้าย่อ" },
+          { "note": "ย่อลึก — แปลว่าตลาดกำลัง reprice โอกาส CRL", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "consensus $59.94 — อนุมัติตามคาด" },
+        "tp2": { "note": "เป้า BMO — อนุมัติพร้อม label ที่กว้างและสะอาด" },
+        "tp3": { "note": "เป้าสูงสุดของ street — อนุมัติบวกเครดิตเรื่อง launch/uptake · 2027" },
+        "stopLoss": {
+          "tightNote": "ตั้งกว้างกว่า medianMAE ที่วัดได้จริง -14% โดยตั้งใจ — stop แคบกว่านั้นจะโดน noise ก่อน event ไม่ใช่โดนเพราะ thesis พัง",
+          "hardNote": "ต่ำกว่านี้แปลว่าตลาดกำลัง price CRL แล้ว และ thesis ก่อน event จบ",
+          "rrNote": "stop แคบ (-16.1%) เทียบ TP2 (+42.6%)",
+          "rrWarning": "R/R มีความหมายเฉพาะ 'ก่อน' 30 ก.ย. — ถ้า CRL ราคา gap ทะลุ stop ข้ามคืน"
+        },
+        "estimateDates": [
+          { "event": "PDUFA apitegromab", "note": "Binary — อนุมัติ หรือ CRL" },
+          { "event": "งบ Q3 2026", "note": "งบแรกหลังผลตัดสิน · ถ้าผ่านจะเห็นรายละเอียดความพร้อม launch" }
+        ]
+      }
+    }
+  }
+}
