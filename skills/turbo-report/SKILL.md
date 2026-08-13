@@ -21,7 +21,7 @@ Before screening (`/turbo-list`) or qualifying a single ticker (`/analyze-turbo`
 If it exists, use it as an **advisory prior** — two tiers, both apply. Read the **`turbo`** block;
 never quote `core` numbers in a turbo report, the bars and windows differ (+50%/30d vs +30%/14d).
 
-**Rank on the metrics that vary, not on `hitRate`.** Turbo's `hitRate` is ~2.4% — one hit in 41
+**Rank on the metrics that vary, not on `hitRate`.** Turbo's `hitRate` is ~4.9% — two hits in 41
 completed windows. Not degenerate the way core's 0% is, but far too sparse to separate a good
 catalyst type from a bad one. Report it as the honest scoreboard against the +50%/30d goal, and
 judge on `medianExcessVsBenchPct` (primary), `softHitRate` (reached `turbo.softTargetPct`, +20%,
@@ -52,6 +52,12 @@ currently ~22%), and `beatBenchRate` (~56%).
   must sit **wider** than the relevant `medianMAE` — use `turbo.byType[].medianMAE` for this pick's
   catalystType when that bucket has n ≥ 5, else `turbo.overall.medianMAE` — or state in one line
   why this setup earns a tighter stop. A core-width stop on a turbo name kills winners on noise.
+- **🚪 ENTRY RULE — `entryGuidance.turbo` (backlog #40).** `medianPctAtAnchor` is the measured
+  return from report price to just after the catalyst. If negative with `n >= 5`, Entry 1 ("now")
+  MUST NOT be `preferred: true` — prefer the dip entry and state the figure in
+  `entryStrategy.verdict`. This binds harder in turbo than core: the lane reads materially worse on
+  this metric, and its wider MAE means a bad entry compounds. Overriding needs a named
+  setup-specific reason, not conviction in the thesis.
 - **Scenarios must declare their calibration (`scenarioCalibration.turbo`).** Use the **turbo**
   block — the figure was split per lane on 2026-08-13 (backlog #39) because the previous pooled
   number mixed core Base scenarios (~35% median) with turbo ones (~65-100%) across 14d and 30d

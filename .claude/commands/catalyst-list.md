@@ -35,6 +35,11 @@ Run the `/catalyst-list` workflow from CLAUDE.md (the catalyst dashboard; former
      must be wider than the relevant `medianMAE` or carry a one-line justification — see
      `stopGuidance.rule` and its `caveat` (MAE is measured from the report price, i.e. an Entry-1
      fill, so it overstates the drawdown for a pick filled on the Entry-2 dip).
+   - **🚪 Entry (`entryGuidance.core`, backlog #40) — the prior that changes the recommendation.**
+     `medianPctAtAnchor` is the measured return from report price to just after the catalyst. If it
+     is negative with n >= 5, **Entry 1 ("now") must not be `preferred` on any pick this run** —
+     prefer the dip entry and say so in each `entryStrategy.verdict`, quoting the figure. Overriding
+     requires a named setup-specific reason, not "strong thesis".
    - **Scenarios:** `scenarioCalibration.core.rule` — state the measured `optimismBiasBasePct` you wrote
      against, and justify any Base above `realizedMaxGainP75Pct` with an explicit horizon. Read
      `horizonCaveat` first: realized figures are 14d/30d, written scenarios usually aren't, so a
@@ -49,6 +54,7 @@ Run the `/catalyst-list` workflow from CLAUDE.md (the catalyst dashboard; former
      tier-2: <FIRED — <type> at <value> vs overall <overallValue> (n=<n>) | not fired — no n≥5 bucket ≥2pp below overall>
      leaders: <type (value, n) | none>
      regime: SPY median <x>% over windows (n=<n>)
+     entry: median at-catalyst <x>% · <x>% of picks underwater at their event · timing gap <x>pp (n=<n>)
      stops: core medianMAE <x>% → tight stop must be wider
      scenarios: Base bias +<x>pp vs realized · P75 <x>%
      guardrail: n<5 = context only · n≥5 = MUST apply (see tier-2 line)

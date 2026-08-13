@@ -631,6 +631,48 @@ accumulating 69 · หลัง fetch รอบใหม่ตัวเลขจ
 
 ---
 
+## 40. ✅ DONE — Entry rule จาก at-catalyst return — prior ตัวแรกที่เปลี่ยน "คำแนะนำ" ไม่ใช่แค่ "คะแนน" (2026-08-13)
+
+**ปัญหา:** งานวัดผลทั้งหมดตั้งแต่ #25 → #38 ตอบคำถามว่า "pick ดีไหม" แต่ไม่มีอันไหนเปลี่ยนสิ่งที่รายงาน
+**แนะนำ** เลย · พอ #38 เสร็จและรัน `backtest:fetch` ตัวเลขที่โผล่มากลับไม่ใช่ hitRate แต่เป็น
+**median return ณ วัน catalyst = -6.9%** และ **74.1% ของ pick ติดลบตอน event ของตัวเอง** (n=54) ·
+ฝั่ง turbo แย่กว่า: **-13.7%** (n=19) · แปลว่าซื้อที่ราคา report แล้วถือไปจนถึง catalyst ขาดทุนที่ค่ากลาง
+ขณะที่ `maxGain` เป็นบวก — ส่วนต่างคือ **timing** ไม่ใช่การเลือกหุ้น (timing gap 9.6pp)
+
+สอดคล้องกับสิ่งที่ `catalyst-compare` เห็นมาตลอดโดยอิสระ: จาก 32 pre picks มีแค่ 4-5 ตัวที่อยู่ใน
+preferred entry zone จริง ส่วน 16 ตัวเป็น 🔴 chasing
+
+**ทำ:**
+1. ✅ `scripts/build-skill-feedback.mjs` — เพิ่ม `pctNegativeAtAnchor` + `timingGapPP` ใน
+   `summarizeAnchored`, และเพิ่ม block ใหม่ **`entryGuidance`** (core/turbo) ที่มี `rule` /
+   `interpretation` / `caveat` เขียนไว้ชัด
+2. ✅ **กฎใหม่ที่ผูกจริง:** ถ้า `medianPctAtAnchor` ของเลนติดลบ และ n >= 5 →
+   **Entry 1 ("now" ที่ราคา report) ห้ามใส่ `preferred: true`** ให้ preferred เป็น Entry 2 (dip) แทน
+   และต้องอ้างตัวเลขที่วัดได้ใน `entryStrategy.verdict` · จะ override ได้ต้องมีเหตุผลเฉพาะ setup
+   (อยู่ในโซน dip ของตัวเองแล้ว / มีข้อจำกัดเรื่องเวลา) — "thesis แข็ง" ใช้เป็นเหตุผลไม่ได้ เพราะ
+   base rate นี้วัดจาก pick ที่ตอนเขียนก็ดูแข็งทุกตัว
+3. ✅ ต่อสายครบ 6 consumer: `stock-report` · `turbo-report` · `catalyst-list.md` · `turbo-list.md` ·
+   `catalyst-refresh` · `turbo-refresh` (refresh สองตัวเน้นเป็นพิเศษ — pick ที่เพิ่งวิ่งคือตัวที่
+   ล่อใจให้เขียน "ซื้อเลย" มากที่สุด) + เพิ่มบรรทัด entry ใน print block ของทั้งสอง list command
+4. ✅ แก้ตัวเลข turbo hitRate ที่ค้างอยู่ในสาม prompt (2.4% → 4.9% หลัง fetch รอบใหม่)
+
+**ไฟล์:** `scripts/build-skill-feedback.mjs` · `skills/stock-report/SKILL.md` ·
+`skills/turbo-report/SKILL.md` · `skills/catalyst-refresh/SKILL.md` · `skills/turbo-refresh/SKILL.md` ·
+`.claude/commands/catalyst-list.md` · `.claude/commands/turbo-list.md`
+
+**เป้า:** รายงานรอบถัดไปต้องมี Entry 2 เป็น preferred โดย default และต้องพูดถึงตัวเลข at-catalyst
+ตรง ๆ · วัดผลได้ภายหลังด้วย `entryGuidance.core.medianPctAtAnchor` ว่าดีขึ้นไหมเมื่อ pick ใหม่
+สะสมครบหน้าต่าง
+
+**ข้อควรระวังที่เขียนไว้ใน `entryGuidance.caveat`:** n ยังน้อยและเป็น median — มี pick ที่วิ่งเข้าหา
+event จริง (PLTR +49% · RDW +44% · KTOS +29%) อยู่ข้าง ๆ median ที่ติดลบ · กฎนี้เปลี่ยน **default**
+ของ entry ไม่ได้แปลว่าห้ามซื้อที่ราคา report ตลอดไป
+
+**เกี่ยวพัน:** ต่อจาก #38 โดยตรง (ถ้าไม่มี catalyst-anchored window ก็ไม่มีตัวเลขนี้) · ยังไม่แตะ
+`/dca-list` (ไม่มี catalyst window) · ต่อไปควรดู `timingGapPP` ว่าควรทำให้ TP1 แคบลงไหม
+
+---
+
 ## ยังไม่เลือกทำ (ไว้พิจารณาทีหลัง)
 - **Earned category ranking + expectancy-based sizing** *(idea 5+9)* — ลบ sector priority (Tech→AI→Space) ให้ category ลอยขึ้น top ตาม hit-rate จริง + size ตาม expectancy (`hitRate × upside ÷ MAE`) **⚠️ ขึ้นกับ #9 มี sample พอก่อน** ไม่งั้น optimize บน noise — ต้องใส่ shrinkage/prior + cap อิทธิพลตอน N น้อย
 - **Portfolio-level correlation view** — holding (AVGO/NVDA/MRVL/INTC/PLTR/ASTS) correlate สูง เด้งพร้อมกันตาม AI sentiment; view exposure/concentration/powder *(#10 ปิดแล้ว — เป็น report-level warning ใน `/catalyst` เท่านั้น ไอเดียนี้ยังแยกเป็นคนละเรื่อง: cross-holding exposure view ต่อ user's actual portfolio/journal ไม่ใช่ต่อ dashboard picks — ไม่ทับซ้อนแล้ว เป็น idea ที่ใหญ่กว่า ทำทีหลังได้)*

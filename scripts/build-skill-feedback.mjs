@@ -269,6 +269,17 @@ function summarizeAnchored(entries, targetPct, softTargetPct, laneLabel) {
     medianMAE: r1(median(complete.map((e) => e.maePct).filter((v) => v != null))),
     avgMaxGain: r1(mean(complete.map((e) => e.maxGainPct).filter((v) => v != null))),
     medianPctAtAnchor: r1(median(anchors)),
+    // ── Entry-timing signal (backlog #40) ──────────────────────────────────
+    // medianPctAtAnchor is what you'd be HOLDING just after the catalyst.
+    // avgMaxGain is the best moment along the way. The gap between them is the
+    // part of the "upside" that only existed if you timed the exit — and
+    // pctNegativeAtAnchor says how often holding to the event simply lost money.
+    pctNegativeAtAnchor: anchors.length ? r1((anchors.filter((v) => v < 0).length / anchors.length) * 100) : null,
+    timingGapPP: (() => {
+      const mMax = median(complete.map((e) => e.maxGainPct).filter((v) => v != null));
+      const mAnc = median(anchors);
+      return (mMax != null && mAnc != null) ? r1(mMax - mAnc) : null;
+    })(),
     medianWindowDays: median(complete.map((e) => e.windowDays).filter((v) => v != null)),
     note:
       `Measured reportDate → primary catalystDate + ${CATALYST_BUFFER_DAYS}d, so the window CONTAINS ` +
@@ -587,6 +598,47 @@ const catalystAnchored = {
     "thing for that pick, not measuring a bad pick.",
 };
 
+// ── entry guidance (backlog #40) ────────────────────────────────────────────
+// The measurement work through #36-#38 answered "are the picks good?" This
+// block answers the question that actually changes a report: "is buying at
+// report price the right entry?" Measured 2026-08-13 the answer was no — the
+// median pick was DOWN at its own catalyst, while its max gain along the way
+// was positive. That gap is timing, not stock selection, and it is the single
+// most decision-relevant number the feedback file carries.
+const entryGuidance = {
+  core: {
+    medianPctAtAnchor: catalystAnchored.core.medianPctAtAnchor,
+    pctNegativeAtAnchor: catalystAnchored.core.pctNegativeAtAnchor,
+    timingGapPP: catalystAnchored.core.timingGapPP,
+    n: catalystAnchored.core.totalComplete,
+  },
+  turbo: {
+    medianPctAtAnchor: catalystAnchored.turbo.medianPctAtAnchor,
+    pctNegativeAtAnchor: catalystAnchored.turbo.pctNegativeAtAnchor,
+    timingGapPP: catalystAnchored.turbo.timingGapPP,
+    n: catalystAnchored.turbo.totalComplete,
+  },
+  rule:
+    "ENTRY RULE — applies to every report. If medianPctAtAnchor for the lane is NEGATIVE (n >= 5), " +
+    "Entry 1 ('now', at report price) MUST NOT carry `preferred: true`. Mark the dip entry (Entry 2) " +
+    "as preferred instead, and state the measured figure in entryStrategy.verdict — e.g. 'measured " +
+    "median at-catalyst return is X%, so buying at report price is not the default entry.' To make " +
+    "Entry 1 preferred anyway, the report must give a specific reason this setup differs from the " +
+    "measured base rate (already at/below its own dip zone, forced timing, etc.). This is the one " +
+    "prior that changes what a report RECOMMENDS rather than how it is scored afterwards.",
+  interpretation:
+    "medianPctAtAnchor = point-in-time return from report price to just after the catalyst (what " +
+    "holding actually returned). pctNegativeAtAnchor = share of picks underwater at their own event. " +
+    "timingGapPP = median max gain minus median at-anchor return: how much of the apparent upside " +
+    "existed only for someone who exited at the right moment. A large timingGapPP with a negative " +
+    "medianPctAtAnchor is the signature of picks that drift down into their catalyst — read it as an " +
+    "entry-timing problem, not a stock-picking one.",
+  caveat:
+    "n is small and these are medians — a few picks that run hard into their event (PLTR +49%, " +
+    "RDW +44%, KTOS +29% as of 2026-08-13) sit alongside a median that is negative. This rule shifts " +
+    "the DEFAULT entry; it is not a claim that no pick should ever be bought at report price.",
+};
+
 // ── stop guidance (backlog #36) ──────────────────────────────────────────────
 // Measured MAE vs the stop widths the report template actually writes. A stop
 // tighter than the median drawdown stops out the median pick before the thesis
@@ -630,6 +682,7 @@ const feedback = {
   turbo,
   regime,
   catalystAnchored,
+  entryGuidance,
   scenarioCalibration,
   stopGuidance,
   nearMissCounterfactual,
@@ -643,6 +696,7 @@ console.log(`🎯 tier2: ${core.tier2.fired ? `FIRED on ${core.tier2.metric} —
 console.log(`🎰 turbo: n=${turbo.n} (${turbo.totalComplete} complete, ${turbo.totalAccumulating} accumulating) · ${turbo.byType.length} catalyst type(s) · hitRate ${turbo.overall.hitRate}% · softHitRate ${turbo.overall.softHitRate}% (+${TURBO_SOFT_TARGET_PCT}%) · beatBench ${turbo.overall.beatBenchRate}% · regimeNote: ${turbo.overall.regimeNote ?? "no bench data yet"}`);
 console.log(`🎯 turbo tier2: ${turbo.tier2.fired ? `FIRED on ${turbo.tier2.metric} — laggards: ${turbo.tier2.laggards.map((l) => `${l.type} (${l.value}, ${l.gapVsOverall}pp vs overall ${turbo.tier2.overallValue}, n=${l.n})`).join(", ")}` : `not fired (${turbo.tier2.metric ?? "no usable metric"})`}`);
 console.log(`🎯 catalyst-anchored · core: complete ${catalystAnchored.core.totalComplete}/${catalystAnchored.core.n} (undated ${catalystAnchored.core.totalUndated} · no-data ${catalystAnchored.core.totalNoData} · accum ${catalystAnchored.core.totalAccumulating}) hitRate ${catalystAnchored.core.hitRate}% softHit ${catalystAnchored.core.softHitRate}% medWindow ${catalystAnchored.core.medianWindowDays}d · turbo: complete ${catalystAnchored.turbo.totalComplete}/${catalystAnchored.turbo.n} hitRate ${catalystAnchored.turbo.hitRate}%`);
+console.log(`🚪 entry · core: median at-catalyst ${entryGuidance.core.medianPctAtAnchor}% · ${entryGuidance.core.pctNegativeAtAnchor}% of picks underwater at their event · timing gap ${entryGuidance.core.timingGapPP}pp (n=${entryGuidance.core.n}) · turbo: ${entryGuidance.turbo.medianPctAtAnchor}% (n=${entryGuidance.turbo.n})`);
 console.log(`🛑 stops: core medianMAE ${stopGuidance.coreMedianMAEPct}% · turbo medianMAE ${stopGuidance.turboMedianMAEPct}% — tight stops must be wider than these`);
 console.log(`🌐 regime: n=${regime.n} · median SPY over completed windows: ${regime.medianBenchmarkPct ?? "no data yet"}${regime.medianBenchmarkPct != null ? "%" : ""}`);
 console.log(`📐 scenario calibration · core: n=${scenarioCalibration.core.n} bias +${scenarioCalibration.core.optimismBiasBasePct}pp (P75 ${scenarioCalibration.core.realizedMaxGainP75Pct}%) · turbo: n=${scenarioCalibration.turbo.n} bias +${scenarioCalibration.turbo.optimismBiasBasePct}pp (P75 ${scenarioCalibration.turbo.realizedMaxGainP75Pct}%)`);
