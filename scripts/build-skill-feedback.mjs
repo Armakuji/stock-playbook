@@ -38,6 +38,22 @@ const CORE_WINDOW_DAYS = 14;
 const CORE_TARGET_PCT = 30;
 const TURBO_WINDOW_DAYS = 30;
 const TURBO_TARGET_PCT = 50;
+// ── Soft targets (backlog #36) ───────────────────────────────────────────────
+// The North Star bars (+30%/14d, +50%/30d) are ASPIRATIONAL: measured across
+// 94 complete core windows and 36 turbo windows, hitRate was 0% in EVERY
+// bucket. A metric that reads 0 everywhere carries no information — it can't
+// rank catalyst types, so the "n>=5 + divergence" rule downstream could never
+// fire (0 vs 0 = no divergence). These lower bars exist purely to restore
+// variance to the feedback signal; they are NOT a lowering of the product
+// goal, and the North Star hitRate is still reported alongside them.
+const CORE_SOFT_TARGET_PCT = 10;
+const TURBO_SOFT_TARGET_PCT = 20;
+// A bucket is a "laggard" when its rank metric sits at least this many
+// percentage points below the overall figure. Judgement call, not derived:
+// ~2pp separates the visibly weak types from ordinary noise at current n.
+// Revisit once n per bucket is comfortably above ~20.
+const LAGGARD_MARGIN_PP = 2;
+const MIN_N_FOR_RANKING = 5; // Tier-2 threshold — mirrors the n<5 guardrail
 const TURBO_KEY_PREFIX = "turbo:";
 const NEAR_MISS_CHECKPOINT_DAYS = 14;
 const BENCH_TICKER = "SPY";
@@ -66,6 +82,12 @@ function median(xs) {
 }
 function mean(xs) {
   return xs.length ? xs.reduce((s, x) => s + x, 0) / xs.length : null;
+}
+/** Nearest-rank percentile (p in 0..1). Null on empty input. */
+function percentile(xs, p) {
+  if (!xs.length) return null;
+  const s = [...xs].sort((a, b) => a - b);
+  return s[Math.min(s.length - 1, Math.max(0, Math.ceil(p * s.length) - 1))];
 }
 /** Round to 1dp and guard against NaN/Infinity leaking into the JSON. */
 function r1(x) {
@@ -118,8 +140,10 @@ function computeBenchmarkPct(pathCache, reportDate, startISO, endISO) {
   return ((last - first) / first) * 100;
 }
 
-/** One North Star pass (shared math for core 14d/+30% and turbo 30d/+50%). */
-function computeEntry({ ticker, price: p0, reportDate, pathCache, key, windowDays, targetPct }) {
+/** One North Star pass (shared math for core 14d/+30% and turbo 30d/+50%).
+ *  Also computes the soft-target hit and excess-vs-benchmark used for ranking
+ *  (backlog #36) — the North Star `hit` stays exactly as it was. */
+function computeEntry({ ticker, price: p0, reportDate, pathCache, key, windowDays, targetPct, softTargetPct }) {
   const startISO = ymdToISO(reportDate);
   const endISO = addDaysISO(reportDate, windowDays);
   const elapsed = endISO <= today;
@@ -128,6 +152,7 @@ function computeEntry({ ticker, price: p0, reportDate, pathCache, key, windowDay
     .sort((a, b) => a.d.localeCompare(b.d));
 
   let maxGainPct = null, maePct = null, hit = null, timeToHitDays = null, benchmarkPct = null;
+  let softHit = null, excessVsBenchPct = null;
   let status;
 
   if (series.length === 0) {
@@ -137,15 +162,22 @@ function computeEntry({ ticker, price: p0, reportDate, pathCache, key, windowDay
     maxGainPct = Math.max(...gains);
     maePct = Math.min(...gains, 0);
     hit = maxGainPct >= targetPct;
+    softHit = maxGainPct >= softTargetPct;
     status = elapsed ? "complete" : "accumulating";
     if (hit) {
       const firstHit = series.find((pt) => ((pt.c - p0) / p0) * 100 >= targetPct);
       if (firstHit) timeToHitDays = daysBetweenISO(startISO, firstHit.d);
     }
-    if (status === "complete") benchmarkPct = computeBenchmarkPct(pathCache, reportDate, startISO, endISO);
+    if (status === "complete") {
+      benchmarkPct = computeBenchmarkPct(pathCache, reportDate, startISO, endISO);
+      // Max gain is a best-case path stat and SPY's is a point-to-point return,
+      // so this is a rough "did the pick beat just owning the index" read, not
+      // a clean alpha number. Use it to ORDER buckets, not to size positions.
+      if (benchmarkPct !== null) excessVsBenchPct = maxGainPct - benchmarkPct;
+    }
   }
 
-  return { ticker, reportDate, maxGainPct, maePct, hit, timeToHitDays, benchmarkPct, status };
+  return { ticker, reportDate, maxGainPct, maePct, hit, softHit, timeToHitDays, benchmarkPct, excessVsBenchPct, status };
 }
 
 /** Regime note for a group of (already-complete) entries: how many windows
@@ -163,15 +195,68 @@ function regimeNote(completeEntries) {
 function summarize(entries) {
   const complete = entries.filter((e) => e.status === "complete");
   const hits = complete.filter((e) => e.hit);
+  const softHits = complete.filter((e) => e.softHit);
   const withBench = complete.filter((e) => e.benchmarkPct !== null);
+  const withExcess = complete.filter((e) => e.excessVsBenchPct !== null);
   return {
     n: complete.length,
     hitRate: complete.length ? r1((hits.length / complete.length) * 100) : null,
+    // ── ranking metrics (backlog #36) — these have variance, hitRate doesn't ──
+    softHitRate: complete.length ? r1((softHits.length / complete.length) * 100) : null,
+    medianExcessVsBenchPct: withExcess.length ? r1(median(withExcess.map((e) => e.excessVsBenchPct))) : null,
+    beatBenchRate: withExcess.length ? r1((withExcess.filter((e) => e.excessVsBenchPct > 0).length / withExcess.length) * 100) : null,
+    // ────────────────────────────────────────────────────────────────────────
     medianMAE: r1(median(complete.map((e) => e.maePct).filter((v) => v !== null))),
     avgMaxGain: r1(mean(complete.map((e) => e.maxGainPct).filter((v) => v !== null))),
     medianTimeToHitDays: median(hits.map((e) => e.timeToHitDays).filter((v) => v !== null)),
     avgBenchmarkPct: withBench.length ? r1(mean(withBench.map((e) => e.benchmarkPct))) : null,
     regimeNote: regimeNote(complete),
+  };
+}
+
+/** Tier-2 input, precomputed so the prompt reads a verdict instead of
+ *  eyeballing a table (backlog #36). Ranks buckets on `medianExcessVsBenchPct`
+ *  — the North Star `hitRate` is 0 across every bucket and therefore cannot
+ *  discriminate. Falls back to `softHitRate`, then `avgMaxGain`, if the
+ *  benchmark paths aren't populated yet. Only buckets with n >= 5 are eligible
+ *  in either direction, so the n<5 guardrail is enforced here, not left to
+ *  the model. */
+function buildTier2(byType, overall) {
+  const METRICS = ["medianExcessVsBenchPct", "softHitRate", "avgMaxGain"];
+  const metric = METRICS.find((m) => overall[m] !== null &&
+    byType.some((b) => b.n >= MIN_N_FOR_RANKING && b[m] !== null)) ?? null;
+
+  if (!metric) {
+    return {
+      metric: null, fired: false, eligible: [], laggards: [], leaders: [],
+      note: "No bucket has n >= 5 with a usable ranking metric yet — Tier 2 cannot fire. Treat every bucket as Tier 1 (context only).",
+    };
+  }
+
+  const overallValue = overall[metric];
+  const eligible = byType
+    .filter((b) => b.n >= MIN_N_FOR_RANKING && b[metric] !== null)
+    .map((b) => ({ type: b.type, n: b.n, value: b[metric], gapVsOverall: r1(b[metric] - overallValue), regimeNote: b.regimeNote }))
+    .sort((a, b) => b.value - a.value);
+
+  const laggards = eligible.filter((b) => b.gapVsOverall <= -LAGGARD_MARGIN_PP);
+  const leaders = eligible.filter((b) => b.gapVsOverall >= LAGGARD_MARGIN_PP);
+
+  return {
+    metric,
+    metricLabel: metric === "medianExcessVsBenchPct"
+      ? "median (max gain − SPY over the same window), pp"
+      : metric === "softHitRate" ? "% of windows that reached the soft target" : "average max gain %",
+    overallValue,
+    laggardMarginPP: LAGGARD_MARGIN_PP,
+    minN: MIN_N_FOR_RANKING,
+    fired: laggards.length > 0,
+    eligible,
+    laggards,
+    leaders,
+    note: laggards.length
+      ? `Tier 2 FIRED. Picks whose primary catalystType is in \`laggards\` need visibly higher upside/conviction to make the top 5, and the screening output must name the type, its ${metric}, and the overall figure. Ranking uses ${metric} because the North Star hitRate reads 0 in every bucket and cannot discriminate. Still read each laggard's regimeNote before treating it as settled.`
+      : `Tier 2 did not fire — no bucket with n >= ${MIN_N_FOR_RANKING} sits ${LAGGARD_MARGIN_PP}pp or more below overall on ${metric}. Say so explicitly in the screening output.`,
   };
 }
 
@@ -181,7 +266,8 @@ const coreSnapshots = readReportSnapshots(REPORTS_DIR);
 const coreEntries = coreSnapshots.map(({ report, reportDate }) =>
   ({ ...computeEntry({
       ticker: report.ticker, price: report.price, reportDate, pathCache,
-      key: `${report.ticker}_${reportDate}`, windowDays: CORE_WINDOW_DAYS, targetPct: CORE_TARGET_PCT,
+      key: `${report.ticker}_${reportDate}`, windowDays: CORE_WINDOW_DAYS,
+      targetPct: CORE_TARGET_PCT, softTargetPct: CORE_SOFT_TARGET_PCT,
     }),
     catalystType: primaryCatalystType(report),
     scenarios: report.scenarios ?? null,
@@ -191,18 +277,25 @@ const coreByTypeMap = {};
 for (const e of coreEntries) (coreByTypeMap[e.catalystType] ??= []).push(e);
 // Every catalystType we've screened gets a row — total (any status) alongside
 // the complete-only n, so "still accumulating" types aren't silently dropped.
+// Sorted by medianExcessVsBenchPct (falling back to softHitRate, then
+// avgMaxGain): sorting by hitRate used to leave every row tied at 0.
 const coreByType = Object.entries(coreByTypeMap)
   .map(([type, es]) => ({ type, total: es.length, ...summarize(es) }))
-  .sort((a, b) => (b.hitRate ?? -1) - (a.hitRate ?? -1));
+  .sort((a, b) =>
+    (b.medianExcessVsBenchPct ?? b.softHitRate ?? b.avgMaxGain ?? -Infinity) -
+    (a.medianExcessVsBenchPct ?? a.softHitRate ?? a.avgMaxGain ?? -Infinity));
 
+const coreOverall = summarize(coreEntries);
 const core = {
   windowDays: CORE_WINDOW_DAYS,
   targetPct: CORE_TARGET_PCT,
+  softTargetPct: CORE_SOFT_TARGET_PCT,
   n: coreEntries.length,
   totalComplete: coreEntries.filter((e) => e.status === "complete").length,
   totalAccumulating: coreEntries.filter((e) => e.status === "accumulating").length,
-  overall: summarize(coreEntries),
+  overall: coreOverall,
   byType: coreByType,
+  tier2: buildTier2(coreByType, coreOverall),
 };
 
 // ── turbo (+50%/30d) ─────────────────────────────────────────────────────────
@@ -210,7 +303,8 @@ const turboSnapshots = readReportSnapshots(SPECULATIVE_DIR);
 const turboEntries = turboSnapshots.map(({ report, reportDate }) =>
   ({ ...computeEntry({
       ticker: report.ticker, price: report.price, reportDate, pathCache,
-      key: `${TURBO_KEY_PREFIX}${report.ticker}_${reportDate}`, windowDays: TURBO_WINDOW_DAYS, targetPct: TURBO_TARGET_PCT,
+      key: `${TURBO_KEY_PREFIX}${report.ticker}_${reportDate}`, windowDays: TURBO_WINDOW_DAYS,
+      targetPct: TURBO_TARGET_PCT, softTargetPct: TURBO_SOFT_TARGET_PCT,
     }),
     scenarios: report.scenarios ?? null,
   }));
@@ -218,6 +312,7 @@ const turboEntries = turboSnapshots.map(({ report, reportDate }) =>
 const turbo = {
   windowDays: TURBO_WINDOW_DAYS,
   targetPct: TURBO_TARGET_PCT,
+  softTargetPct: TURBO_SOFT_TARGET_PCT,
   n: turboEntries.length,
   totalComplete: turboEntries.filter((e) => e.status === "complete").length,
   totalAccumulating: turboEntries.filter((e) => e.status === "accumulating").length,
@@ -260,9 +355,24 @@ const scenarioCalibration = {
   medianWrittenBasePct: r1(medianWrittenBase),
   medianWrittenBullPct: r1(medianWrittenBull),
   medianRealizedMaxGainPct: r1(medianRealized),
+  // Realized distribution (backlog #36) — a single median gives the model
+  // nothing to aim at, so expose the shape it should be writing against.
+  realizedMaxGainP75Pct: r1(percentile(realized, 0.75)),
+  realizedMaxGainP90Pct: r1(percentile(realized, 0.90)),
   optimismBiasBasePct: (medianWrittenBase != null && medianRealized != null) ? r1(medianWrittenBase - medianRealized) : null,
   optimismBiasBullPct: (medianWrittenBull != null && medianRealized != null) ? r1(medianWrittenBull - medianRealized) : null,
   note: "optimismBias = written scenario % − realized max gain % over the same completed window. Positive = we write more optimistic scenarios than what actually happened.",
+  horizonCaveat:
+    `HORIZON MISMATCH — read before acting on this. Realized figures are measured over the ` +
+    `${CORE_WINDOW_DAYS}d (core) / ${TURBO_WINDOW_DAYS}d (turbo) North Star window, while a written ` +
+    `Base/Bull scenario usually implies a longer horizon. So a positive optimismBias is NOT proof ` +
+    `the scenario was wrong — it may just be a longer clock. That is exactly why the rule below is ` +
+    `"declare and justify", not "cap".`,
+  rule:
+    `Every report must (a) state the measured optimismBias it was written against, and (b) if the ` +
+    `written Base exceeds realizedMaxGainP75Pct, name the horizon that Base assumes and the specific ` +
+    `driver that gets it there. A Base above realizedMaxGainP90Pct with no stated horizon is not ` +
+    `acceptable — that is the failure mode this field exists to catch.`,
 };
 
 // ── near-miss counterfactual (did the top-5 cut add alpha?) — per lane ──────
@@ -315,6 +425,26 @@ const nearMissCounterfactual = {
   turbo: buildCounterfactual("turbo", TURBO_WINDOW_DAYS, pickedMaxGain30dTurbo),
 };
 
+// ── stop guidance (backlog #36) ──────────────────────────────────────────────
+// Measured MAE vs the stop widths the report template actually writes. A stop
+// tighter than the median drawdown stops out the median pick before the thesis
+// has had a chance to play out — this block makes that a checkable number
+// rather than a feel.
+const stopGuidance = {
+  coreMedianMAEPct: core.overall.medianMAE,
+  turboMedianMAEPct: turbo.overall.medianMAE,
+  rule:
+    `entryStrategy.stopLoss.tight must sit WIDER than the relevant medianMAE (use ` +
+    `core.byType[].medianMAE for the pick's catalystType when that bucket has n >= ${MIN_N_FOR_RANKING}, ` +
+    `otherwise core.overall.medianMAE / turbo.overall.medianMAE), or the report must say in one line ` +
+    `why this specific setup justifies a tighter stop. Same number informs ` +
+    `catalystSpot.stopPreCatalyst and spotSizing.`,
+  caveat:
+    `MAE here is measured from the REPORT price, so it assumes entry at Entry 1 (now). A pick filled ` +
+    `on the Entry 2 dip has a structurally shallower drawdown from its own fill — don't apply the ` +
+    `full width mechanically to a dip entry.`,
+};
+
 // ── write ─────────────────────────────────────────────────────────────────
 const feedback = {
   generatedAt: new Date().toISOString(),
@@ -322,25 +452,33 @@ const feedback = {
     `core = +${CORE_TARGET_PCT}% within ${CORE_WINDOW_DAYS} days of report price (catalyst plays) · ` +
     `turbo = +${TURBO_TARGET_PCT}% within ${TURBO_WINDOW_DAYS} days (moonshot plays) · ` +
     `MAE = max adverse excursion (worst drawdown before target hit, or over the window if never hit) · ` +
-    `GUARDRAIL (2-tier, backlog #27): n < 5 in a bucket = context only, NEVER a reason to include/` +
-    `exclude/re-rank a pick. n >= 5 = MUST be applied — if that bucket's hitRate is clearly below ` +
-    `the overall rate, picks of that type need visibly higher upside/conviction to make top 5, and ` +
-    `screening output must say when this rule fired (or that no bucket met the n>=5+divergence bar). ` +
-    `REGIME CAVEAT (both tiers): always read hitRate next to avgBenchmarkPct/regimeNote — a 0% ` +
+    `SOFT TARGETS (backlog #36): North Star hitRate currently reads 0% in EVERY bucket, so it cannot ` +
+    `rank anything. softHitRate (+${CORE_SOFT_TARGET_PCT}% core / +${TURBO_SOFT_TARGET_PCT}% turbo), ` +
+    `medianExcessVsBenchPct and beatBenchRate are the metrics that discriminate — rank on those, and ` +
+    `keep reporting hitRate as the honest scoreboard against the stated goal. · ` +
+    `GUARDRAIL (2-tier, backlog #27): n < ${MIN_N_FOR_RANKING} in a bucket = context only, NEVER a ` +
+    `reason to include/exclude/re-rank a pick. n >= ${MIN_N_FOR_RANKING} = MUST be applied — but do ` +
+    `NOT re-derive this by eye: read \`core.tier2\`, which precomputes the eligible buckets, the ` +
+    `laggards, and whether the rule fired. Screening output must state the tier2 verdict either way. · ` +
+    `REGIME CAVEAT (both tiers): always read any rate next to avgBenchmarkPct/regimeNote — a 0% ` +
     `hit-rate measured in a deeply negative SPY window means "unproven in a bad regime", not "this ` +
-    `type doesn't work" (e.g. earnings_beat 0/12 measured during the Jul 2026 SOX selloff).`,
+    `type doesn't work". Check the actual regimeNote text each run; SPY does not see a sector-only ` +
+    `selloff, a known gap in this rough v1 signal.`,
   core,
   turbo,
   regime,
   scenarioCalibration,
+  stopGuidance,
   nearMissCounterfactual,
 };
 
 fs.mkdirSync(path.dirname(OUT_FILE), { recursive: true });
 fs.writeFileSync(OUT_FILE, JSON.stringify(feedback, null, 2));
 
-console.log(`📊 core: n=${core.n} (${core.totalComplete} complete, ${core.totalAccumulating} accumulating) · ${core.byType.length} catalyst type(s) · regimeNote: ${core.overall.regimeNote ?? "no bench data yet"}`);
-console.log(`🎰 turbo: n=${turbo.n} (${turbo.totalComplete} complete, ${turbo.totalAccumulating} accumulating) · regimeNote: ${turbo.overall.regimeNote ?? "no bench data yet"}`);
+console.log(`📊 core: n=${core.n} (${core.totalComplete} complete, ${core.totalAccumulating} accumulating) · ${core.byType.length} catalyst type(s) · hitRate ${core.overall.hitRate}% · softHitRate ${core.overall.softHitRate}% (+${CORE_SOFT_TARGET_PCT}%) · beatBench ${core.overall.beatBenchRate}% · regimeNote: ${core.overall.regimeNote ?? "no bench data yet"}`);
+console.log(`🎯 tier2: ${core.tier2.fired ? `FIRED on ${core.tier2.metric} — laggards: ${core.tier2.laggards.map((l) => `${l.type} (${l.value}, ${l.gapVsOverall}pp vs overall ${core.tier2.overallValue}, n=${l.n})`).join(", ")}` : `not fired (${core.tier2.metric ?? "no usable metric"})`}`);
+console.log(`🎰 turbo: n=${turbo.n} (${turbo.totalComplete} complete, ${turbo.totalAccumulating} accumulating) · hitRate ${turbo.overall.hitRate}% · softHitRate ${turbo.overall.softHitRate}% (+${TURBO_SOFT_TARGET_PCT}%) · regimeNote: ${turbo.overall.regimeNote ?? "no bench data yet"}`);
+console.log(`🛑 stops: core medianMAE ${stopGuidance.coreMedianMAEPct}% · turbo medianMAE ${stopGuidance.turboMedianMAEPct}% — tight stops must be wider than these`);
 console.log(`🌐 regime: n=${regime.n} · median SPY over completed windows: ${regime.medianBenchmarkPct ?? "no data yet"}${regime.medianBenchmarkPct != null ? "%" : ""}`);
 console.log(`📐 scenario calibration: n=${scenarioCalibration.n}`);
 console.log(`🕵️ near-miss counterfactual · core: ${nearMissCounterfactual.core ? `n=${nearMissCounterfactual.core.n}` : "null (no data yet)"} · turbo: ${nearMissCounterfactual.turbo ? `n=${nearMissCounterfactual.turbo.n}` : "null (no data yet)"}`);

@@ -20,17 +20,24 @@ strict research-first workflow, and the **only output is a JSON report** saved t
 
 Check for `web/data/skill-feedback.json`. If it doesn't exist yet, skip this step.
 
-If it exists, use it as an **advisory prior** — two tiers, both apply to every bucket you touch:
+If it exists, use it as an **advisory prior** — two tiers, both apply to every bucket you touch.
+
+**Rank on the metrics that vary, not on `hitRate`.** The North Star bar (+30%/14d) is aspirational
+and currently reads **0% in every bucket**, so it cannot separate a good catalyst type from a bad
+one. Report it — it's the honest scoreboard — but judge on `medianExcessVsBenchPct` (primary),
+`softHitRate` (reached `core.softTargetPct`, +10%), and `beatBenchRate`.
 
 - **Tier 1 — `n < 5`: context only.** Mention it in your reasoning if relevant, but NEVER use it
   to include, exclude, or re-rank a pick. No auto-weighting.
-- **Tier 2 — `n ≥ 5`: MUST be applied.** If a `core.byType[]` bucket's `hitRate` is clearly below
-  `core.overall.hitRate`, that catalystType needs visibly higher upside/conviction to justify
-  picking this ticker — and you must say so in your reasoning (name the type, its hitRate vs.
-  overall). If no `n ≥ 5` bucket diverges from the overall rate, say that too: "prior read, no
-  bucket met the n≥5 + divergence bar."
-- **Regime caveat (both tiers) — read `hitRate` next to `avgBenchmarkPct`/`regimeNote`, never
-  alone.** A low hitRate measured while `regimeNote` shows a genuinely bad market stretch (many
+- **Tier 2 — `n ≥ 5`: MUST be applied — read `core.tier2`, don't re-derive it.** It is precomputed
+  by `scripts/build-skill-feedback.mjs` and already enforces the n ≥ 5 floor: `metric`,
+  `overallValue`, `eligible[]`, `laggards[]` (≥2pp below overall), `leaders[]`, `fired`. If this
+  ticker's primary `catalystType` is in `laggards`, it needs visibly higher upside/conviction to
+  justify picking it — say so explicitly (name the type, its metric value, the overall value). If
+  `fired` is false, say "prior read, no n≥5 bucket sits ≥2pp below overall." A `leaders` bucket is
+  a mild tailwind for a pick that already stands on its own, never a reason to reach for one.
+- **Regime caveat (both tiers) — read any rate next to `avgBenchmarkPct`/`regimeNote`, never
+  alone.** A low rate measured while `regimeNote` shows a genuinely bad market stretch (many
   windows with SPY down) is "unproven in a bad regime," not "this type doesn't work." But don't
   *assume* a bad regime by default — check the actual `regimeNote` text every run. Real example:
   `earnings_beat` once showed 0/12 hitRate while its `regimeNote` read "0/12 windows had SPY down
@@ -38,11 +45,21 @@ If it exists, use it as an **advisory prior** — two tiers, both apply to every
   excused by regime (SPY doesn't see sector-only stress like a semiconductor-specific selloff —
   a known gap in this rough v1 signal; full sector-adjustment is a later phase). Read the number
   each time, don't assume the story repeats.
-- `core.byType[].medianMAE` — reference when setting `catalystSpot.spotSizing` / `stopPreCatalyst`:
-  e.g. "measured median drawdown before a hit was X% → a stop tighter than X kills real winners."
-- `scenarioCalibration.optimismBiasBasePct` / `optimismBiasBullPct` — if calibration shows written
-  Base/Bull scenarios have historically run hotter than what actually happened, temper the new
-  Base/Bull `pct` accordingly instead of anchoring purely on analyst targets.
+- **Stops must clear measured drawdown (`stopGuidance`).** `entryStrategy.stopLoss.tight` must sit
+  **wider** than the relevant `medianMAE` — use `core.byType[].medianMAE` for this ticker's
+  catalystType when that bucket has n ≥ 5, else `core.overall.medianMAE` — or the report must state
+  in one line why this specific setup earns a tighter stop. The generic "tight ≈ 7–12%" in Step 2 is
+  a starting shape, not a licence to ignore a measured median drawdown that is deeper than it. Same
+  number informs `catalystSpot.stopPreCatalyst` and `spotSizing`. Note `stopGuidance.caveat`: MAE is
+  measured from the report price (an Entry-1 fill), so it overstates drawdown for an Entry-2 dip fill
+  — adjust rather than applying the full width mechanically.
+- **Scenarios must declare their calibration (`scenarioCalibration`).** State the measured
+  `optimismBiasBasePct` you wrote against. If your written Base `pct` exceeds
+  `realizedMaxGainP75Pct`, name the horizon that Base assumes and the specific driver that gets it
+  there; a Base above `realizedMaxGainP90Pct` with no stated horizon is not acceptable. Read
+  `horizonCaveat` first — realized figures are measured over 14d/30d while a written Base usually
+  implies longer, so a positive bias is a prompt to state your clock, not proof the scenario was
+  wrong. Don't anchor purely on analyst targets.
 - `nearMissCounterfactual.core` — if present, shows whether past top-5 cuts actually beat what got
   rejected; use as a sanity check on how strict the bar should be, not a hard cutoff.
 
@@ -75,7 +92,7 @@ Decide these explicitly before writing JSON:
 | `catalysts[]` | 2–3 catalysts with `catalystDate` (ISO) + `dateBadge` (exact day when known) + `dotColor` |
 | `entryStrategy.entryLevels` | Entry 1 (preferred/current), Entry 2 (dip), Entry 3 (deep) + % from price |
 | `entryStrategy.tp1/tp2/tp3` | grounded in analyst targets; % from preferred entry |
-| `entryStrategy.stopLoss` | tight (~7–12%), hard (structural), R/R ratio |
+| `entryStrategy.stopLoss` | tight (~7–12% as a starting shape, but must clear the measured `medianMAE` per Step 0 or be justified), hard (structural), R/R ratio |
 | `scenarios[]` | Bear / Base / Bull / Moon — price + % |
 | `verdict` / `scoreLabel` | BUY/HOLD/SELL/SPECULATIVE · Core Holding / Speculative / ค่าขนม |
 | `macroRisk` | LOW/MEDIUM/HIGH + rate/inflation/sector notes |
