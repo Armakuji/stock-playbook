@@ -1,0 +1,153 @@
+{
+  "ticker": "RIVN",
+  "companyName": "Rivian Automotive, Inc.",
+  "companyDescription": "Electric truck/SUV maker ramping its lower-priced R2 platform — backed by Amazon and Volkswagen, racing to prove mass-market EV unit economics",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-09-29T00:00:00.000Z",
+  "price": 14.92,
+  "priceChange": -0.5,
+  "priceNote": "52-week range $11.84-$22.69; consolidating ahead of the first real R2-ramp delivery data",
+  "marketCap": "$21.74B",
+  "sector": "Consumer Discretionary / Electric Vehicles",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 56,
+  "factorTags": ["ev_auto"],
+  "summary": "Rivian's Q3 2026 production & delivery report is due in early October 2026 (exact day not yet officially set, but the company has released this data in the first days of each quarter all year — Q2 landed Jul 2). It's the first meaningful read on how the R2 ramp is scaling against the raised 65-70K FY delivery guide. Consensus target $19.31 (25 analysts, Hold; Wedbush's Dan Ives at $25 Outperform) implies +29.4% upside from $14.92 — the thinnest R/R of this batch, and the only 'Hold' consensus rating, but the imminent ~3-day catalyst window is the nearest-term event in this run. Base case (+15%) sits closest to the lane's realized 14d P75 (+6.6%) of any pick here — a shorter, more measurable horizon since the catalyst itself is days away, not weeks.",
+  "catalysts": [
+    {
+      "icon": "🚚",
+      "name": "Q3 2026 Production & Delivery Report",
+      "description": "First meaningful update on R2 SUV production scaling since deliveries began this summer. Company raised FY26 delivery guidance to 65,000-70,000 units (weighted to Q4) after a Q2 beat; this print shows whether that ramp is on track.",
+      "urgencyLabel": "~3 DAYS",
+      "dateBadge": "~Oct 2, 2026",
+      "catalystDate": "2026-10-02",
+      "badgeColor": "red",
+      "dotColor": "red"
+    }
+  ],
+  "risks": [
+    "R2 ramp is unproven at scale — this report is the first real test of whether production can hit the raised 65-70K FY guide, which is weighted toward Q4",
+    "CFO Claire McDonough departs Oct 30, 2026 — the leadership transition lands right after the Q3 catalyst window, adding uncertainty into Q4 execution",
+    "The last delivery beat (Jul 2026, +8-10% intraday) was followed by a -14% slide after a 75M-share secondary offering was announced the same window — a good print doesn't preclude a capital-raise overhang",
+    "Consensus rating is 'Hold', not 'Buy' — Street conviction on the upside case is weaker here than the price target alone suggests, unlike the other four picks in this batch",
+    "A recent safety recall (98,828 vehicles, rearview camera issue) shows execution risk beyond just production volume, even though most units were resolved via OTA update"
+  ],
+  "estimateDates": [
+    { "event": "Q3 2026 Production & Delivery Report", "dateRange": "~Oct 2, 2026", "note": "Estimated from Rivian's consistent early-quarter reporting cadence (Q2 was Jul 2); not yet officially confirmed for Q3", "est": "", "highlight": "blue" },
+    { "event": "Q3 2026 Financial Results", "dateRange": "Nov 2026", "note": "Full P&L, set alongside the delivery report per Rivian's usual pattern", "est": "", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -20, "price": 11.94 },
+    { "label": "Base", "color": "yellow", "pct": 15, "price": 17.16 },
+    { "label": "Bull", "color": "green", "pct": 30, "price": 19.40 },
+    { "label": "Moon", "color": "purple", "pct": 52, "price": 22.68 }
+  ],
+  "analystTargets": [
+    { "firm": "Wedbush (Dan Ives)", "target": 25.00, "rating": "Outperform" },
+    { "firm": "Consensus (25 analysts)", "target": 19.31, "rating": "Hold" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed hiked to 3.75-4.00% on Sep 16, 2026 (first hike since 2023); next FOMC is Oct 27-28, 2026 — after the Oct 2 delivery catalyst, so it shouldn't collide directly with this specific print, but it raises financing costs for R2 capex and any future capital raise.",
+    "inflationNote": "The hike is inflation-driven; EV affordability (the whole thesis behind R2's sub-$50K pricing) gets harder to sell to consumers if higher rates keep auto loan costs elevated.",
+    "sectorImpact": "Capital-intensive EV names are more rate-sensitive than most of this batch given ongoing capex needs, but Rivian's $21.7B cap and Amazon/Volkswagen backing provide more cushion than the smaller names in this run.",
+    "summary": "MEDIUM macro risk — Rivian is more insulated than the smaller, cash-burning picks in this batch given its scale and strategic backers, but a hawkish Fed still pressures EV affordability and the cost of Rivian's next capital raise."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 14.92, "note": "Current price", "timing": "Now" },
+      { "label": "Entry 2", "level": 13.20, "rangeMax": 13.60, "note": "Pre-report dip zone", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 11.90, "note": "52-week-low retest", "timing": "If broader EV sector sells off" }
+    ],
+    "tp1": { "price": 17.16, "pct": 15.0, "note": "Base case — in-line Q3 deliveries, R2 ramp on track" },
+    "tp2": { "price": 19.40, "pct": 30.0, "note": "Bull case — delivery beat + guidance raise, near-consensus" },
+    "tp3": { "price": 22.68, "pct": 52.0, "note": "Moon case — R2 demand surge pulls profitability visibility forward · near 52-week high", "moon": true },
+    "stopLoss": {
+      "tight": 11.94, "tightPct": -20.0, "tightNote": "Wider than the delivery_beat bucket's medianMAE (-18.3%, n=7); sits near the 52-week low",
+      "hard": 10.44, "hardPct": -30.0, "hardNote": "Below 52-week-low support — signals the R2 ramp thesis is breaking",
+      "riskReward": "1.5 : 1", "rrNote": "Tight stop vs TP2, off current price", "rrWarning": "Weakest R/R of this batch — reflects the 'Hold' consensus rating"
+    },
+    "verdict": "Measured median at-catalyst return across the core lane is -6.9% (n=54) — buying at today's $14.92 is not the default entry; the $13.20-13.60 pre-report dip is preferred. This is the nearest-term catalyst in the run (~3 days) and the most measurable against the lane's realized 14d window, but it also carries the weakest R/R and the only 'Hold' consensus of this batch — size accordingly and don't chase the print.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "delivery_beat",
+    "preRunup": "Rivian shows a modest anticipation drift into delivery reports as investors position for the guidance-raise narrative that played out in Q1 and Q2 2026",
+    "preRunupTiming": "3-5 days before the report",
+    "preRunupPct": "+3% to +8%",
+    "postWin": {
+      "avgPct": 8,
+      "range": "+5% to +10%",
+      "note": "Rivian's Q2 2026 delivery report (Jul 2, 2026): 12,194 deliveries beat the prior 9,000-11,000 outlook, and the company raised FY guidance to 65-70K units — stock jumped +8% same day, spiking as high as +10% intraday.",
+      "exampleDate": "Jul 2026"
+    },
+    "postLose": {
+      "avgPct": -14,
+      "range": "-5% to -14%",
+      "note": "The same Q2 2026 window shows the downside case: after the initial +8-10% delivery-beat pop, RIVN slid about -14% once a 75M-share secondary offering was announced days later — a reminder that a good delivery print doesn't remove financing/dilution risk.",
+      "exampleDate": "Jul 2026"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "Nearest-term and most measurable catalyst in this batch, but the weakest R/R and a 'Hold' (not 'Buy') consensus — size moderately, not aggressively"
+    },
+    "stopPreCatalyst": { "pct": -20, "price": 11.94, "note": "Below this (52-week-low retest), the R2 ramp thesis is in question ahead of the print" },
+    "stopPostCatalyst": { "pct": -14, "note": "If deliveries miss or a secondary offering is announced alongside a beat (as in Jul 2026), exit into the news rather than holding through" }
+  },
+  "comparableCases": [
+    { "ticker": "RIVN", "event": "Q2 2026 delivery beat (12,194 vs 9,000-11,000 outlook) + raised FY26 guidance to 65-70K units", "date": "Jul 2026", "movePct": 8, "days": 1, "outcome": "good", "note": "Same company, same catalyst type, most recent quarter — the direct template for the Oct 2 report" },
+    { "ticker": "RIVN", "event": "Post-delivery-beat slide after a 75M-share secondary offering was announced the same window", "date": "Jul 2026", "movePct": -14, "days": 3, "outcome": "mixed", "note": "Shows the financing overhang can erase a good delivery print within days" }
+  ],
+  "sources": [
+    "https://www.fool.com/investing/2026/09/17/rivian-reports-q3-deliveries-in-october-heres-the/",
+    "https://www.investing.com/news/stock-market-news/rivian-stock-jumps-5-on-raised-delivery-outlook-4773108",
+    "https://rivian.com/newsroom/article/rivian-releases-q2-2026-production-and-delivery-figures",
+    "https://www.marketbeat.com/stocks/NASDAQ/RIVN/forecast/",
+    "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "รายงานการผลิต/ส่งมอบ Q3 2026 ของ Rivian จะออกต้นเดือนต.ค. 2026 (ยังไม่กำหนดวันแน่นอน แต่บริษัทออกข้อมูลนี้ในช่วงต้นไตรมาสมาตลอดปี — Q2 ออกวันที่ 2 ก.ค.) เป็นตัวชี้วัดแรกว่าการ ramp ของ R2 เป็นไปตาม guidance ที่ปรับขึ้นเป็น 65,000-70,000 คันหรือไม่ Consensus target $19.31 (นักวิเคราะห์ 25 คน, Hold; Wedbush ให้ $25 Outperform) คิดเป็น upside +29.4% จาก $14.92 — R/R บางที่สุดในชุดนี้ แต่เป็น catalyst ที่ใกล้ที่สุดในรอบนี้ (~3 วัน)",
+      "priceNote": "กรอบ 52 สัปดาห์ $11.84-$22.69 · แกว่งตัวรอข้อมูลการ ramp ของ R2 ครั้งแรก",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "รายงานการผลิต/ส่งมอบ Q3 2026", "description": "อัปเดตแรกที่มีนัยสำคัญเกี่ยวกับการ ramp การผลิต R2 SUV หลังเริ่มส่งมอบช่วงฤดูร้อนนี้ บริษัทปรับ guidance การส่งมอบทั้งปีขึ้นเป็น 65,000-70,000 คัน (เน้นหนักที่ Q4) หลัง Q2 ทำได้เกินคาด" }
+      ],
+      "risks": [
+        "การ ramp ของ R2 ยังพิสูจน์ไม่ได้ในระดับ scale — รายงานนี้คือบททดสอบแรกจริงๆ ว่าการผลิตจะถึง guidance 65-70K ที่เน้นหนัก Q4 หรือไม่",
+        "CFO Claire McDonough ลาออกวันที่ 30 ต.ค. 2026 — การเปลี่ยนผู้บริหารเกิดขึ้นทันทีหลัง catalyst Q3 เพิ่มความไม่แน่นอนต่อการทำงานใน Q4",
+        "ครั้งล่าสุดที่ส่งมอบเกินคาด (ก.ค. 2026, +8-10% intraday) ตามมาด้วยการร่วง -14% หลังประกาศเพิ่มทุน 75 ล้านหุ้นในช่วงเดียวกัน — รายงานที่ดีไม่ได้แปลว่าจะไม่มีประเด็นเพิ่มทุน",
+        "Consensus rating เป็น 'Hold' ไม่ใช่ 'Buy' — ความเชื่อมั่นของ Street ต่อ upside อ่อนกว่าตัวเลข target บ่งบอก ต่างจากอีก 4 ตัวในชุดนี้",
+        "มีการ recall ล่าสุด (98,828 คัน ปัญหากล้องมองหลัง) แสดงความเสี่ยงด้าน execution นอกเหนือจากปริมาณการผลิต แม้ส่วนใหญ่แก้ผ่าน OTA แล้ว"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed ขึ้นดอกเบี้ยเป็น 3.75-4.00% วันที่ 16 ก.ย. 2026 FOMC ครั้งถัดไป 27-28 ต.ค. 2026 — อยู่หลัง catalyst วันที่ 2 ต.ค. จึงไม่ชนกันโดยตรง แต่เพิ่มต้นทุนเงินทุนสำหรับ capex ของ R2 และการระดมทุนรอบหน้า",
+        "inflationNote": "การขึ้นดอกเบี้ยมาจากเงินเฟ้อ — thesis เรื่องราคา R2 ที่เข้าถึงง่าย (ต่ำกว่า $50K) จะขายยากขึ้นถ้าดอกเบี้ยสินเชื่อรถยนต์ยังสูง",
+        "sectorImpact": "หุ้น EV ที่ใช้เงินทุนสูงไวต่อดอกเบี้ยมากกว่าตัวอื่นในชุดนี้ แต่มาร์เก็ตแคป $21.7 พันล้านและแรงหนุนจาก Amazon/Volkswagen ทำให้ Rivian มีกันชนมากกว่าหุ้นเล็กตัวอื่น",
+        "summary": "ความเสี่ยง Fed ระดับ MEDIUM — Rivian มีกันชนมากกว่าหุ้นตัวอื่นในชุดนี้จากขนาดและผู้สนับสนุนเชิงกลยุทธ์ แต่ Fed hawkish ยังกดดันความสามารถในการซื้อ EV และต้นทุนเงินทุนรอบหน้า"
+      },
+      "entryStrategy": {
+        "verdict": "ผลตอบแทนเฉลี่ย ณ วัน catalyst ของ core lane อยู่ที่ -6.9% (n=54) — การซื้อที่ราคาปัจจุบัน $14.92 จึงไม่ใช่ทางเลือกหลัก ควรรอโซน $13.20-13.60 ก่อนรายงาน นี่คือ catalyst ที่ใกล้ที่สุดในชุดนี้ (~3 วัน) และวัดผลได้ตรงกับกรอบ 14 วันของ core lane มากที่สุด แต่ก็มี R/R อ่อนที่สุดและเป็น 'Hold' consensus เพียงตัวเดียว — จัด position ให้เหมาะสมและอย่าไล่ราคาตอนออกรายงาน",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน", "timing": "ตอนนี้" },
+          { "note": "โซนย่อก่อนรายงาน (preferred)", "timing": "ถ้าย่อ" },
+          { "note": "ทดสอบจุดต่ำสุด 52 สัปดาห์", "timing": "ถ้ากลุ่ม EV ร่วงทั้งกลุ่ม" }
+        ],
+        "tp1": { "note": "Base case — ส่งมอบ Q3 ตามคาด การ ramp R2 เป็นไปตามแผน" },
+        "tp2": { "note": "Bull case — ส่งมอบเกินคาด + ปรับ guidance ขึ้น ใกล้ consensus" },
+        "tp3": { "note": "Moon case — ดีมานด์ R2 พุ่งแรง ดึงความชัดเจนเรื่องกำไรมาเร็วขึ้น · ใกล้จุดสูงสุด 52 สัปดาห์" },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE ของ delivery_beat (-18.3%, n=7); อยู่ใกล้จุดต่ำสุด 52 สัปดาห์",
+          "hardNote": "ต่ำกว่าแนวรับ 52 สัปดาห์ — สัญญาณว่า thesis การ ramp R2 กำลังพัง",
+          "rrNote": "Stop แคบเทียบ TP2 จากราคาปัจจุบัน",
+          "rrWarning": "R/R อ่อนที่สุดในชุดนี้ — สะท้อน consensus rating แบบ Hold"
+        }
+      },
+      "estimateDates": [
+        { "event": "รายงานการผลิต/ส่งมอบ Q3 2026", "note": "ประมาณการจากรูปแบบการรายงานต้นไตรมาสของ Rivian (Q2 ออก 2 ก.ค.) ยังไม่ยืนยันอย่างเป็นทางการสำหรับ Q3" },
+        { "event": "งบการเงิน Q3 2026", "note": "P&L เต็มรูปแบบ ออกพร้อมรายงานการส่งมอบตามรูปแบบปกติของ Rivian" }
+      ]
+    }
+  }
+}

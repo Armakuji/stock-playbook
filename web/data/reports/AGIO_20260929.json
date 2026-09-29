@@ -1,0 +1,153 @@
+{
+  "ticker": "AGIO",
+  "companyName": "Agios Pharmaceuticals, Inc.",
+  "companyDescription": "Rare-disease biopharma — PYRUKYND/AQVESME (mitapivat) is the only approved pyruvate-kinase activator for hemolytic anemias, now filed for sickle cell disease",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-09-29T00:00:00.000Z",
+  "price": 35.12,
+  "priceChange": 2.09,
+  "priceNote": "52-week range $22.24-$46.00; up 2.09% over the last 24h into the PDUFA window",
+  "marketCap": "$2.04B",
+  "sector": "Biotechnology / Rare Hematology",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 66,
+  "summary": "The FDA has a Priority Review PDUFA decision due Nov 1, 2026 on mitapivat's supplemental NDA for sickle cell disease, backed by durable Phase 3 RISE UP data (lower transfusion needs, better PROs, clean safety). Agios has direct precedent: the same drug's thalassemia approval (Dec 2025) moved the stock +19.97% in a single session. Consensus target $42.33 (BofA $46, H.C. Wainwright $54, JPMorgan $31) implies +20.5% upside — the widened 20% gate is cleared, but with the thinnest margin of this batch given the target dispersion. Base case (+20%) sits near consensus and assumes approval on-label with no surprise; that's inside the lane's realized 14d P75 of +6.6% only if measured point-in-time — the written Base still assumes a multi-week re-rating horizon through the PDUFA date itself, not the fixed 14-day window.",
+  "catalysts": [
+    {
+      "icon": "💊",
+      "name": "Mitapivat Sickle Cell Disease PDUFA Decision",
+      "description": "FDA Priority Review decision on the sNDA for mitapivat in sickle cell disease, backed by Phase 3 RISE UP data showing durable hemoglobin gains and lower transfusion needs. Same drug already has a US approval precedent in thalassemia (Dec 2025).",
+      "urgencyLabel": "33 DAYS",
+      "dateBadge": "Nov 1, 2026",
+      "catalystDate": "2026-11-01",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "PDUFA date can still slip or convert to a Complete Response Letter — Priority Review lowers the odds but doesn't remove them (historical priority-NDA approval rate is ~90%, not 100%)",
+    "Analyst target dispersion is wide ($31-$54), signaling real disagreement on sickle cell peak sales and how much is already priced in",
+    "Even on approval, payer/formulary uptake for a rare-disease label can lag the launch curve seen in thalassemia — commercial ramp risk, not just regulatory risk",
+    "A CRL of the 'fixable' (CMC/procedural) type historically costs -15% to -35%; a 'fatal' (efficacy/safety) CRL costs -40% to -80% — the downside is asymmetric to the +20% base case"
+  ],
+  "estimateDates": [
+    { "event": "Mitapivat SCD PDUFA Decision", "dateRange": "Nov 1, 2026", "note": "Priority Review — FDA decision date", "est": "", "highlight": "blue" },
+    { "event": "Q3 2026 Earnings", "dateRange": "Nov 2026", "note": "AQVESME thalassemia launch trajectory + SCD launch-readiness commentary", "est": "", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -35, "price": 22.83 },
+    { "label": "Base", "color": "yellow", "pct": 20, "price": 42.14 },
+    { "label": "Bull", "color": "green", "pct": 35, "price": 47.41 },
+    { "label": "Moon", "color": "purple", "pct": 55, "price": 54.44 }
+  ],
+  "analystTargets": [
+    { "firm": "H.C. Wainwright", "target": 54.00, "rating": "Buy" },
+    { "firm": "BofA Securities", "target": 46.00, "rating": "Buy" },
+    { "firm": "JPMorgan", "target": 31.00, "rating": "Neutral" },
+    { "firm": "Consensus", "target": 42.33, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed hiked to 3.75-4.00% on Sep 16, 2026 (first hike since 2023); next FOMC is Oct 27-28, 2026 — just 4 days before the Nov 1 PDUFA, so a hawkish surprise there could compress risk appetite right into the binary event.",
+    "inflationNote": "The hike is inflation-driven, not growth-driven — biotech approval catalysts are historically idiosyncratic and less macro-beta than most of this batch, but a risk-off week would still amplify any negative PDUFA surprise.",
+    "sectorImpact": "Biotech with commercial revenue (AGIO has a marketed thalassemia drug) is more insulated from rate moves than pre-revenue names, since the near-term cash flow story doesn't depend on fresh financing.",
+    "summary": "MEDIUM macro risk — Agios already has commercial revenue and doesn't need new financing to clear this catalyst, but the Oct 27-28 FOMC lands 4 days before the PDUFA and could add noise into the event."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 35.12, "note": "Current price", "timing": "Now" },
+      { "label": "Entry 2", "level": 31.00, "rangeMax": 32.00, "note": "Pre-PDUFA dip zone", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 27.00, "note": "Deep dip / de-risked entry ahead of the decision", "timing": "If broader biotech sells off" }
+    ],
+    "tp1": { "price": 42.14, "pct": 20.0, "note": "Base case — on-label approval, in line with consensus" },
+    "tp2": { "price": 47.41, "pct": 35.0, "note": "Bull case — approval + upgraded sickle cell peak-sales estimates" },
+    "tp3": { "price": 54.44, "pct": 55.0, "note": "Moon case — approval + BD/takeout interest · matches H.C. Wainwright's $54 target", "moon": true },
+    "stopLoss": {
+      "tight": 28.80, "tightPct": -18.0, "tightNote": "Wider than the core lane's overall medianMAE (-14%) to give room ahead of a binary regulatory event",
+      "hard": 24.58, "hardPct": -30.0, "hardNote": "Near the 52-week low — signals the market is pricing a CRL",
+      "riskReward": "1.9 : 1", "rrNote": "Tight stop vs TP2, off current price", "rrWarning": "Fair R/R — thinnest of this batch given target dispersion"
+    },
+    "verdict": "Measured median at-catalyst return across the core lane is -6.9% (n=54) — buying at today's $35.12 is not the default entry; the $31-32 pre-PDUFA dip zone is preferred. Agios has direct precedent for this exact setup: the same drug's thalassemia approval moved the stock +19.97% in one session. Size modestly given the binary CRL risk and the widest analyst-target dispersion in this batch.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "Priority-review PDUFA names typically see a modest drift into the decision date as positioning builds, though moves 40-200%+ in either direction are common on the day itself given how binary the outcome is",
+    "preRunupTiming": "1-2 weeks before the PDUFA date",
+    "preRunupPct": "+5% to +15%",
+    "postWin": {
+      "avgPct": 25,
+      "range": "+11% to +45%",
+      "note": "Agios's own precedent: AQVESME thalassemia approval (Dec 23, 2025) moved AGIO +19.97% same day (open $24.85, close $29.50). Sector context: small-cap priority-review approvals typically run +30-100%+, though a well-anticipated approval on an already-large-cap name can be muted — see Madrigal's +11% on the first-ever MASH approval (Mar 2024), where much of the move was pre-priced.",
+      "exampleDate": "Dec 2025"
+    },
+    "postLose": {
+      "avgPct": -25,
+      "range": "-15% to -50%",
+      "note": "Industry-wide priority-review CRL pattern: 'fixable' (CMC/procedural) CRLs average -15% to -35%; 'fatal' (efficacy/safety) CRLs average -40% to -80%. No direct Agios CRL precedent exists for mitapivat — this is a category-level reference, not a company-specific case.",
+      "exampleDate": "2024-2025 priority-review cohort"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "Binary regulatory catalyst with real CRL tail risk despite Priority Review and positive Phase 3 data — size modestly even though Agios has commercial revenue to cushion a miss"
+    },
+    "stopPreCatalyst": { "pct": -18, "price": 28.80, "note": "Below this, the market is pre-pricing a negative outcome — reassess before the date" },
+    "stopPostCatalyst": { "pct": -25, "note": "On a CRL, exit on confirmation rather than waiting for the resubmission timeline" }
+  },
+  "comparableCases": [
+    { "ticker": "AGIO", "event": "AQVESME (mitapivat) FDA approval for thalassemia anemia — same drug, same company, direct precedent for the Nov 1 sickle cell PDUFA", "date": "Dec 2025", "movePct": 19.97, "days": 1, "outcome": "good", "note": "The single best comparable available — identical mechanism, same sponsor, only the indication differs" },
+    { "ticker": "MDGL", "event": "Rezdiffra (resmetirom) approval — first-ever FDA-approved MASH therapy", "date": "Mar 2024", "movePct": 11, "days": 1, "outcome": "good", "note": "Smaller move than typical because the approval was well-anticipated and already large-cap — illustrates the downside case where a clean approval is mostly priced in" }
+  ],
+  "sources": [
+    "https://finance.yahoo.com/healthcare/articles/agios-pharmaceuticals-agio-bargain-fda-121327173.html",
+    "https://investor.agios.com/news-releases/news-release-details/us-fda-grants-priority-review-agios-snda-mitapivat-sickle-cell",
+    "https://www.nasdaq.com/articles/agio-rises-nearly-20-fda-approval-aqvesme-thalassemia-anemia",
+    "https://www.fool.com/investing/2024/03/26/heres-1-huge-new-reason-to-buy-madrigal-pharmaceut/",
+    "https://www.newsbreak.com/tipranks-336537182/4786694093119-agios-pharmaceuticals-buy-rating-reaffirmed-with-unchanged-46-price-target-on-mitapivat-sickle-cell-catalyst-and-aqvesme-thalassemia-launch-momentum",
+    "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "FDA มีกำหนดตัดสิน Priority Review PDUFA วันที่ 1 พ.ย. 2026 สำหรับ mitapivat ในโรค sickle cell โดยมีข้อมูล Phase 3 RISE UP หนุนหลัง (ลดความจำเป็นต้องเติมเลือด ผลลัพธ์ที่ผู้ป่วยรายงานดีขึ้น ความปลอดภัยสะอาด) Agios มีเคสตัวอย่างจากยาตัวเดียวกัน: การอนุมัติในโรค thalassemia (ธ.ค. 2025) ทำให้หุ้นพุ่ง +19.97% วันเดียว Consensus target $42.33 (BofA $46, H.C. Wainwright $54, JPMorgan $31) คิดเป็น upside +20.5% — ผ่านเกณฑ์ 20% ที่ขยายแล้ว แต่ด้วยมาร์จิ้นบางที่สุดในชุดนี้เพราะ target กระจายกว้าง",
+      "priceNote": "กรอบ 52 สัปดาห์ $22.24-$46.00 · บวก 2.09% ใน 24 ชม.ที่ผ่านมาเข้าสู่ช่วง PDUFA",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "ตัดสิน PDUFA Mitapivat ในโรค Sickle Cell", "description": "FDA ตัดสิน Priority Review สำหรับ sNDA ของ mitapivat ในโรค sickle cell หนุนด้วยข้อมูล Phase 3 RISE UP ที่แสดงผลดีต่อเนื่อง ยาตัวนี้มีเคสอนุมัติในสหรัฐฯ มาแล้วในโรค thalassemia (ธ.ค. 2025)" }
+      ],
+      "risks": [
+        "วันตัดสิน PDUFA อาจเลื่อนหรือกลายเป็น Complete Response Letter — Priority Review ลดโอกาสแต่ไม่ได้ทำให้เป็นศูนย์ (อัตราอนุมัติ priority NDA เฉลี่ย ~90% ไม่ใช่ 100%)",
+        "target นักวิเคราะห์กระจายกว้าง ($31-$54) สะท้อนความเห็นต่างเรื่องยอดขายสูงสุดของ sickle cell และสิ่งที่ราคาสะท้อนไปแล้ว",
+        "แม้อนุมัติแล้ว การเบิกจ่าย/ประกันสำหรับโรคหายากอาจตามหลัง launch curve ที่เห็นใน thalassemia — ความเสี่ยงเชิงพาณิชย์ ไม่ใช่แค่กฎระเบียบ",
+        "CRL แบบ 'แก้ไขได้' (CMC/ขั้นตอน) เฉลี่ย -15% ถึง -35%; CRL แบบ 'ร้ายแรง' (ประสิทธิภาพ/ความปลอดภัย) เฉลี่ย -40% ถึง -80% — downside ไม่สมมาตรกับ base case ที่ +20%"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed ขึ้นดอกเบี้ยเป็น 3.75-4.00% วันที่ 16 ก.ย. 2026 FOMC ครั้งถัดไปคือ 27-28 ต.ค. 2026 — ห่างจาก PDUFA วันที่ 1 พ.ย. เพียง 4 วัน อาจเพิ่มความผันผวนก่อนเข้า event",
+        "inflationNote": "การขึ้นดอกเบี้ยมาจากเงินเฟ้อ ไม่ใช่สัญญาณเศรษฐกิจถดถอย — catalyst การอนุมัติยาโดยทั่วไปไม่ค่อยผูกกับ macro มากนัก แต่สัปดาห์ risk-off จะขยายผลลบถ้า PDUFA ออกมาไม่ดี",
+        "sectorImpact": "biotech ที่มีรายได้เชิงพาณิชย์แล้ว (AGIO มียา thalassemia ที่ขายอยู่) ทนต่อการขึ้นดอกเบี้ยได้ดีกว่าบริษัทที่ยังไม่มีรายได้ เพราะไม่ต้องพึ่งเงินทุนใหม่",
+        "summary": "ความเสี่ยง Fed ระดับ MEDIUM — Agios มีรายได้เชิงพาณิชย์แล้วไม่ต้องพึ่งเงินทุนใหม่ผ่าน catalyst นี้ แต่ FOMC วันที่ 27-28 ต.ค. อยู่ก่อน PDUFA แค่ 4 วัน อาจเพิ่ม noise ก่อน event"
+      },
+      "entryStrategy": {
+        "verdict": "ผลตอบแทนเฉลี่ย ณ วัน catalyst ของ core lane อยู่ที่ -6.9% (n=54) — การซื้อที่ราคาปัจจุบัน $35.12 จึงไม่ใช่ทางเลือกหลัก ควรรอโซน $31-32 ก่อน PDUFA Agios มีเคสตัวอย่างตรงประเด็น: ยาตัวเดียวกันเคยอนุมัติแล้วทำหุ้นพุ่ง +19.97% วันเดียว ถือ position ขนาดกลางเพราะความเสี่ยง CRL เป็น binary และ target นักวิเคราะห์กระจายกว้างที่สุดในชุดนี้",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน", "timing": "ตอนนี้" },
+          { "note": "โซนย่อก่อน PDUFA (preferred)", "timing": "ถ้าย่อ" },
+          { "note": "ย่อลึกก่อนตัดสินใจ", "timing": "ถ้ากลุ่ม biotech ร่วงทั้งกลุ่ม" }
+        ],
+        "tp1": { "note": "Base case — อนุมัติตามคาด สอดคล้อง consensus" },
+        "tp2": { "note": "Bull case — อนุมัติ + ปรับประมาณการยอดขาย sickle cell สูงขึ้น" },
+        "tp3": { "note": "Moon case — อนุมัติ + มีข่าว BD/takeout · ตรงกับ target ของ H.C. Wainwright ที่ $54" },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE รวมของ core lane (-14%) เพื่อให้มีที่ว่างก่อน event กฎระเบียบแบบ binary",
+          "hardNote": "ใกล้จุดต่ำสุด 52 สัปดาห์ — สัญญาณว่าตลาดกำลังราคา CRL ไว้แล้ว",
+          "rrNote": "Stop แคบเทียบ TP2 จากราคาปัจจุบัน",
+          "rrWarning": "R/R พอใช้ — บางที่สุดในชุดนี้เพราะ target กระจายกว้าง"
+        }
+      },
+      "estimateDates": [
+        { "event": "ตัดสิน PDUFA Mitapivat SCD", "note": "Priority Review — วันตัดสินของ FDA" },
+        { "event": "งบ Q3 2026", "note": "ความคืบหน้าการขาย AQVESME ในโรค thalassemia + ความพร้อม launch สำหรับ SCD" }
+      ]
+    }
+  }
+}

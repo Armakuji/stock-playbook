@@ -995,6 +995,87 @@
       "priceAtScreen": 218.72,
       "topAnalystTarget": 234.83,
       "impliedUpside": 7.3
+    },
+    {
+      "date": "2026-09-29",
+      "ticker": "LCID",
+      "lane": "core",
+      "reason": "Clears the gate by the widest margin of this run (price $3.95 vs $11.14 avg target = +182%) with a clean dated catalyst (Q3 deliveries, ~Oct 6 per Rivian-style quarterly cadence). Cut on risk, not upside: stock is down from $25 to ~$4 (-84% off highs) after a July 2026 bankruptcy-filing report the company denied; Polymarket still prices a 31% chance of a bankruptcy filing before 2027, and cash burn runs ~$1B/quarter. The wide target gap looks like analysts lagging the crash (stale-target artifact, same pattern as VNDA #37) rather than a mispriced opportunity — thesis too fragile for a BUY-rated catalyst pick.",
+      "priceAtScreen": 3.95,
+      "topAnalystTarget": 11.14,
+      "impliedUpside": 182.0
+    },
+    {
+      "date": "2026-09-29",
+      "ticker": "AEVA",
+      "lane": "core",
+      "reason": "Strong fundamentals (Daimler Truck/Torc Robotics exclusive long-range LiDAR supplier, initial 2026 orders received, Morgan Stanley raised target to $27 in Aug 2026) and big headline upside (price $16.25 vs $30.60 avg target = +88%), but no confirmed dated catalyst inside the 42-day window turned up in this research pass — no officially set Q3 2026 earnings date found. Revisit once Aeva sets its next earnings date.",
+      "priceAtScreen": 16.25,
+      "topAnalystTarget": 30.60,
+      "impliedUpside": 88.3
+    },
+    {
+      "date": "2026-09-29",
+      "ticker": "CIFR",
+      "lane": "core",
+      "reason": "Massive upside on paper (price $16.90 vs $31.13 avg target = +84%, Strong Buy from 20 analysts) off the bitcoin-mining-to-AI-hosting pivot (AWS 300MW lease, Google/Fluidstack HPC deal). Cut on catalyst-date provenance: Q3 2026 earnings has not been officially announced — only inferred from the Q2 2026 report date (Aug 4) plus a typical reporting lag, which is exactly the kind of unverified estimate backlog #37 exists to catch. Revisit once CIFR sets its Q3 date.",
+      "priceAtScreen": 16.90,
+      "topAnalystTarget": 31.13,
+      "impliedUpside": 84.2
+    },
+    {
+      "date": "2026-09-29",
+      "ticker": "BBAI",
+      "lane": "core",
+      "reason": "Real upside (price $2.90 vs $4.00 avg target = +38%) but thin, split coverage — only 2-3 analysts, Cantor Fitzgerald just cut its target to $4 and rates it Neutral, and no confirmed Q3 2026 earnings date was found (only HC Wainwright's own estimate). Conviction and date provenance both too weak to carry into the top 5.",
+      "priceAtScreen": 2.90,
+      "topAnalystTarget": 4.00,
+      "impliedUpside": 37.9
+    },
+    {
+      "date": "2026-09-29",
+      "ticker": "UMAC",
+      "lane": "core",
+      "reason": "Real Q2 2026 beat (revenue +81.9% vs consensus) and a live upside case (price ~$24.00 vs $39.57 avg target = +65%, all-Buy coverage), but the two named catalysts — the Upgrade Energy acquisition 'closing Q3 2026' and a '$1.1B Drone Dominance Phase 2 finalist selection' — carry no specific date, and the FAA BVLOS rule timeline remains under debate industry-wide. Cut on date provenance; the analyst target itself is also several weeks stale (last confirmed mid-August).",
+      "priceAtScreen": 24.00,
+      "topAnalystTarget": 39.57,
+      "impliedUpside": 64.9
+    },
+    {
+      "date": "2026-09-29",
+      "ticker": "NVTS",
+      "lane": "core",
+      "reason": "Right at the gate's edge (price $11.73 vs $14.08 avg target = +20.0%) off the real Nvidia 800VDC MGX partnership, with the OCP Global Summit (Oct 12-15, 2026, where the Nvidia Kyber/800VDC ecosystem is being showcased) as a plausible product-milestone date. Cut because the analyst consensus itself is 'Hold' (not Buy) with wide dispersion ($4.20-$13.00), and the Nov earnings date is not yet company-confirmed (estimates range Nov 2-9). Upside too thin and conviction too soft to clear the bar when four stronger, better-dated picks were available.",
+      "priceAtScreen": 11.73,
+      "topAnalystTarget": 14.08,
+      "impliedUpside": 20.0
+    },
+    {
+      "date": "2026-09-29",
+      "ticker": "ALAB",
+      "lane": "core",
+      "reason": "longlist-cut: excellent business momentum (Scorpio X-Series fabric switches ramping a quarter early, Q2 2026 revenue +104% YoY, $6.5B Amazon warrant agreement) but fails the widened gate outright — price $361.67 vs $389.95 average of 26 analyst targets = only +7.8%. Already large-cap and heavily re-rated (+101% YTD); the growth story is intact but priced in for a 20%+ catalyst play.",
+      "priceAtScreen": 361.67,
+      "topAnalystTarget": 389.95,
+      "impliedUpside": 7.8
+    },
+    {
+      "date": "2026-09-29",
+      "ticker": "WOLF",
+      "lane": "core",
+      "reason": "longlist-cut: AI-datacenter power narrative (silicon carbide/GaN for next-gen racks) but fails the gate — price ~$26.30 vs $27.50 average target = only +4.6%. Just 2 analysts cover the name post-2025 bankruptcy restructuring, both rate it Hold; no confirmed near-term dated catalyst found either. Weakest setup of the run.",
+      "priceAtScreen": 26.30,
+      "topAnalystTarget": 27.50,
+      "impliedUpside": 4.6
+    },
+    {
+      "date": "2026-09-29",
+      "ticker": "QS",
+      "lane": "core",
+      "reason": "longlist-cut: solid-state battery story but data quality and timing both fail here. Live price quotes conflicted sharply between sources ($5.10 vs $12.47) during this research pass, so the upside figure below is low-confidence. More importantly, the only forward catalyst found — first commercial battery cells via the PowerCo licensing deal — is guided for 2027, well outside the 42-day window; QuantumScape is also down >50% YTD after Volkswagen shrank its milestone-payment agreement in July 2026.",
+      "priceAtScreen": 5.10,
+      "topAnalystTarget": 6.66,
+      "impliedUpside": 30.6
     }
   ]
 }

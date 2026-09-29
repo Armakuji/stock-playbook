@@ -1,0 +1,155 @@
+{
+  "ticker": "SATL",
+  "companyName": "Satellogic Inc.",
+  "companyDescription": "Vertically integrated Earth-observation satellite company — designs, builds & operates its own smallsat constellation for daily sub-meter global imaging",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-09-29T00:00:00.000Z",
+  "price": 4.62,
+  "priceChange": 1.8,
+  "priceNote": "Range-bound ahead of the Merlin-1 launch window; 52-week range $1.26-$12.00",
+  "marketCap": "$946M",
+  "sector": "Space / Earth Observation",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 68,
+  "factorTags": ["space_launch"],
+  "summary": "Satellogic's first Merlin-class satellite launches in October 2026 on a SpaceX Transporter rideshare, the first hard revenue-unlock event since the company guided to a ~$1B Space Systems pipeline and Q4 2026 revenue contribution tied to Merlin. Consensus target of $10.98 (5 analysts, Strong Buy) implies +137.7% upside from $4.62. Base case (+60%) assumes a 3-4 month re-rating horizon through launch success and first commissioning data, not the 14-day measurement window — well above the catalyst lane's realized 14d P75 of +6.6%, so read the gap as a horizon difference, not optimism bias.",
+  "catalysts": [
+    {
+      "icon": "🛰️",
+      "name": "Merlin-1 First Satellite Launch",
+      "description": "First satellite in the new Merlin constellation launches via SpaceX Transporter rideshare — fully customer-funded, no incremental capital needed. Success unlocks the ~$1B Space Systems pipeline and the Q4 2026 revenue contribution management has already guided to.",
+      "urgencyLabel": "~16 DAYS",
+      "dateBadge": "Oct 2026",
+      "catalystDate": "2026-10-15",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Launch delay or anomaly would push revenue recognition and could trigger a sharp de-rate — satellite_launch is the most volatile catalyst type in the feedback set (medianMAE -19.4%, n=8)",
+    "Balance sheet depends on continued customer prepayments/financing — a hawkish Fed (rates just hiked to 3.75-4.00%) raises the cost of the next capital round if Merlin slips",
+    "Thin analyst coverage (5 names, target range $8.90-$15) means the consensus target could reprice quickly on any single revision",
+    "Sub-$1B market cap and a low float drive outsized volatility in both directions"
+  ],
+  "estimateDates": [
+    { "event": "Merlin-1 Launch Window", "dateRange": "Oct 2026", "note": "SpaceX Transporter rideshare mission", "est": "confirms Q4 revenue contribution", "highlight": "blue" },
+    { "event": "Q3 2026 Earnings", "dateRange": "Nov 2026", "note": "First commentary on Merlin commissioning + pre-sales beyond the anchor customer", "est": "", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -30, "price": 3.23 },
+    { "label": "Base", "color": "yellow", "pct": 60, "price": 7.39 },
+    { "label": "Bull", "color": "green", "pct": 110, "price": 9.70 },
+    { "label": "Moon", "color": "purple", "pct": 170, "price": 12.47 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (5 analysts, S&P Global)", "target": 10.98, "rating": "Strong Buy" },
+    { "firm": "Street High", "target": 15.00, "rating": "Buy" },
+    { "firm": "Street Low", "target": 8.90, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "HIGH",
+    "rateOutlook": "Fed unexpectedly hiked to 3.75-4.00% on Sep 16, 2026 (first hike since 2023) on elevated inflation; futures price ~4.2% by Dec 2026 and further hikes toward ~4.8% by Sep 2027. Next FOMC is Oct 27-28, 2026 — after Merlin-1's launch window, so it shouldn't collide with the catalyst itself, but it raises the cost of Satellogic's next financing round if launch slips.",
+    "inflationNote": "Elevated inflation is the stated reason for the hike, not a growth scare — risk-on small caps can still work if the launch succeeds, but the discount-rate headwind on unprofitable names is real.",
+    "sectorImpact": "Space/Earth-observation names have re-rated hard on SpaceX-IPO spillover and launch-cadence news in 2026 (ASTS, PL, RKLB); a hawkish Fed is a headwind to that multiple but hasn't broken the sector trend yet.",
+    "summary": "HIGH macro risk given Satellogic's financing-dependent balance sheet in a renewed hiking cycle, but the launch catalyst is company-specific and largely macro-independent — thesis break is a launch failure, not a rate move."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 4.62, "note": "Current price", "timing": "Now" },
+      { "label": "Entry 2", "level": 3.95, "rangeMax": 4.15, "note": "Pre-launch dip zone", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 3.30, "note": "Deep dip / near recent support", "timing": "If sector sells off" }
+    ],
+    "tp1": { "price": 7.39, "pct": 60.0, "note": "Base case — successful launch + commissioning confirmed" },
+    "tp2": { "price": 9.70, "pct": 110.0, "note": "Bull case — near-consensus re-rate on Q4 revenue proof" },
+    "tp3": { "price": 12.47, "pct": 170.0, "note": "Moon case — new contract wins beyond the anchor customer · 2027", "moon": true },
+    "stopLoss": {
+      "tight": 3.60, "tightPct": -22.0, "tightNote": "Wider than the satellite_launch bucket's medianMAE (-19.4%, n=8) to avoid getting shaken out pre-launch",
+      "hard": 3.00, "hardPct": -35.0, "hardNote": "Launch failure / anomaly confirmed — thesis break",
+      "riskReward": "5.0 : 1", "rrNote": "Tight stop vs TP2, off current price", "rrWarning": "Strong R/R"
+    },
+    "verdict": "Measured median at-catalyst return across the core catalyst lane is -6.9% (n=54) — buying at today's $4.62 is not the default entry; the $3.95-4.15 pre-launch dip is preferred. Satellite_launch is the feedback set's strongest catalyst type (+7.4pp median excess vs SPY, n=8) and Merlin-1 is the first hard revenue-unlock event in Satellogic's public history — buy the dip, size small given binary launch risk.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "satellite_launch",
+    "preRunup": "Space/EO names in this sector typically drift up into a confirmed launch window as pre-sales and pipeline commentary build (seen in PL's guidance-raise run and ASTS's deployment-progress rally in 2026)",
+    "preRunupTiming": "2-3 weeks before the launch window",
+    "preRunupPct": "+10% to +20%",
+    "postWin": {
+      "avgPct": 15,
+      "range": "+11% to +34%",
+      "note": "Real 2026 comps: Planet Labs +16% on raised guidance + 3 new satellite launches (Jun 2026), AST SpaceMobile +20% on deployment progress (May 2026), Rocket Lab +34% single-day on a record launch deal (treat as the upper bound, not typical). skill-feedback.json's satellite_launch bucket measures a lower avgMaxGain of 6.1% (n=8) over its fixed 14d window — the gap is a measurement-horizon artifact, not a contradiction.",
+      "exampleDate": "Jun 2026"
+    },
+    "postLose": {
+      "avgPct": -19,
+      "range": "-10% to -25%",
+      "note": "No direct Satellogic launch-failure precedent; proxied from the satellite_launch bucket's own medianMAE (-19.4%, n=8) and the general pattern of launch delays (e.g. Rocket Lab's Neutron slipping to 2026, announced Nov 2025) compressing sentiment until the next confirmed window.",
+      "exampleDate": "Nov 2025"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "Binary, single-event catalyst on a sub-$1B, thinly-covered name in a HIGH macro-risk backdrop — size small even though the type is the feedback set's strongest performer"
+    },
+    "stopPreCatalyst": { "pct": -22, "price": 3.60, "note": "Below this, the pre-launch thesis (successful Transporter integration) is in question" },
+    "stopPostCatalyst": { "pct": -15, "note": "If the launch scrubs or an anomaly is confirmed post-launch, exit — don't wait for the next window" }
+  },
+  "comparableCases": [
+    { "ticker": "PL", "event": "Raised FY26 revenue outlook + successful launch of 3 new Earth-observation satellites", "date": "Jun 2026", "movePct": 16, "days": 1, "outcome": "good", "note": "Closest direct comp — a launch-tied guidance raise in the same Earth-observation niche" },
+    { "ticker": "ASTS", "event": "Sector rally on SpaceX IPO spillover + BlueBird satellite deployment progress", "date": "May 2026", "movePct": 20, "days": 1, "outcome": "good", "note": "Shows how much of the 2026 space-sector move is deployment-progress driven, not just launch-day pops" },
+    { "ticker": "RKLB", "event": "Record backlog ($2.36B) + record launch-deal driven single-day surge", "date": "2026", "movePct": 34, "days": 1, "outcome": "good", "note": "Largest single-day space-sector move observed this cycle — treat as an upper bound, not the typical case" }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/satl/forecast/",
+    "https://finance.yahoo.com/markets/stocks/articles/satellogic-eyes-merlin-pre-sales-135310711.html",
+    "https://satellogic.com/news/press-releases/satellogic-introduces-merlin-constellation-for-daily-global-monitoring-at-one-meter-resolution/",
+    "https://finance.yahoo.com/markets/stocks/articles/planet-labs-pl-16-1-131515439.html",
+    "https://finance.yahoo.com/markets/stocks/articles/ast-spacemobile-rockets-20-planet-164024532.html",
+    "https://www.techbuzz.ai/articles/rocket-lab-surges-34-in-best-day-ever-on-revenue-beat-record-setting-launch-deal",
+    "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "ดาวเทียม Merlin ดวงแรกของ Satellogic จะปล่อยตัวเดือนต.ค. 2026 ผ่านจรวด SpaceX Transporter — เป็น catalyst ที่ปลดล็อกรายได้จริงครั้งแรกตาม guidance ที่บอกว่าจะมี pipeline ~1 พันล้านดอลลาร์และรายได้ใน Q4 2026 consensus target $10.98 (นักวิเคราะห์ 5 คน, Strong Buy) upside +137.7% จากราคา $4.62 Base case (+60%) ใช้กรอบเวลา 3-4 เดือนหลัง catalyst ไม่ใช่ 14 วันตามที่วัดใน skill-feedback — ส่วนต่างมาจาก horizon ไม่ใช่การมองโลกในแง่ดีเกินจริง",
+      "priceNote": "ราคานิ่งรอ window ปล่อยดาวเทียม Merlin-1 · กรอบ 52 สัปดาห์ $1.26-$12.00",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "ปล่อยดาวเทียม Merlin-1 ดวงแรก", "description": "ดาวเทียมดวงแรกของ constellation ใหม่ Merlin ปล่อยผ่านจรวด SpaceX Transporter — ลูกค้าจ่ายเงินไปแล้ว ไม่ต้องใช้เงินทุนเพิ่ม หากสำเร็จจะปลดล็อก pipeline ~1 พันล้านดอลลาร์ และรายได้ Q4 2026 ตามที่บริษัท guide ไว้" }
+      ],
+      "risks": [
+        "ปล่อยดาวเทียมล่าช้าหรือผิดพลาดจะทำให้รายได้เลื่อนและหุ้นร่วงแรง — satellite_launch เป็น catalyst type ที่ผันผวนที่สุดใน feedback set (medianMAE -19.4%, n=8)",
+        "งบดุลพึ่งเงินล่วงหน้าจากลูกค้า/แหล่งทุน — Fed เพิ่งขึ้นดอกเบี้ยเป็น 3.75-4.00% ทำให้ต้นทุนระดมทุนรอบหน้าสูงขึ้นถ้า Merlin ล่าช้า",
+        "นักวิเคราะห์ cover น้อย (5 คน, target ช่วง $8.90-$15) ทำให้ consensus target เปลี่ยนเร็วถ้ามีการปรับแค่รายเดียว",
+        "มาร์เก็ตแคปต่ำกว่า 1 พันล้านและ float น้อย ทำให้ผันผวนสูงทั้งขาขึ้นขาลง"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed ขึ้นดอกเบี้ยเป็น 3.75-4.00% วันที่ 16 ก.ย. 2026 อย่างไม่คาดคิด (ครั้งแรกตั้งแต่ปี 2023) จากเงินเฟ้อที่ยังสูง ตลาดคาด futures ที่ ~4.2% ภายในธ.ค. 2026 FOMC ครั้งถัดไปคือ 27-28 ต.ค. 2026 ซึ่งอยู่หลัง window ปล่อยดาวเทียม Merlin-1 พอดี",
+        "inflationNote": "สาเหตุขึ้นดอกเบี้ยคือเงินเฟ้อสูง ไม่ใช่สัญญาณเศรษฐกิจถดถอย — หุ้น risk-on ยังไปได้ถ้า launch สำเร็จ แต่ discount rate ที่สูงขึ้นกดดันหุ้นที่ยังไม่มีกำไรจริง",
+        "sectorImpact": "หุ้นกลุ่มอวกาศ/Earth-observation รีเรทแรงจากกระแส SpaceX IPO และข่าวปล่อยดาวเทียมตลอดปี 2026 — Fed hawkish เป็นแรงต้าน multiple แต่ยังไม่หยุดเทรนด์กลุ่มนี้",
+        "summary": "ความเสี่ยง Fed ระดับ HIGH เพราะ Satellogic พึ่งเงินทุนในช่วงดอกเบี้ยขาขึ้น แต่ catalyst การปล่อยดาวเทียมเป็นเรื่องเฉพาะบริษัท ความเสี่ยงหลักคือ launch ล้มเหลว ไม่ใช่ดอกเบี้ย"
+      },
+      "entryStrategy": {
+        "verdict": "ผลตอบแทนเฉลี่ย ณ วัน catalyst ของ core lane อยู่ที่ -6.9% (n=54) — การซื้อที่ราคาปัจจุบัน $4.62 จึงไม่ใช่ทางเลือกหลัก ควรรอโซน $3.95-4.15 ก่อนปล่อยดาวเทียม satellite_launch เป็น catalyst type ที่ดีที่สุดใน feedback set (+7.4pp เหนือ SPY, n=8) และ Merlin-1 คือ event ปลดล็อกรายได้จริงครั้งแรกของบริษัท — ทยอยซื้อตอนย่อ ถือ position เล็กเพราะความเสี่ยงเป็น binary",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน", "timing": "ตอนนี้" },
+          { "note": "โซนย่อก่อนปล่อยดาวเทียม (preferred)", "timing": "ถ้าย่อ" },
+          { "note": "ย่อลึกใกล้แนวรับ", "timing": "ถ้ากลุ่มอวกาศร่วงทั้งกลุ่ม" }
+        ],
+        "tp1": { "note": "Base case — ปล่อยดาวเทียมสำเร็จ + ยืนยันการ commission" },
+        "tp2": { "note": "Bull case — รีเรทใกล้ consensus จากรายได้ Q4 ที่พิสูจน์แล้ว" },
+        "tp3": { "note": "Moon case — ได้ลูกค้าใหม่นอกเหนือจาก anchor customer · ปี 2027" },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE ของ satellite_launch (-19.4%, n=8) เพื่อไม่ให้โดนสะบัดออกก่อนปล่อยดาวเทียม",
+          "hardNote": "ยืนยันว่าปล่อยดาวเทียมล้มเหลว/ผิดพลาด — thesis break",
+          "rrNote": "Stop แคบเทียบ TP2 จากราคาปัจจุบัน",
+          "rrWarning": "R/R แข็งแรง"
+        }
+      },
+      "estimateDates": [
+        { "event": "Window ปล่อยดาวเทียม Merlin-1", "note": "ภารกิจ SpaceX Transporter rideshare" },
+        { "event": "งบ Q3 2026", "note": "ความเห็นแรกเกี่ยวกับการ commission ดาวเทียม Merlin + ยอดขายล่วงหน้านอกเหนือ anchor customer" }
+      ]
+    }
+  }
+}

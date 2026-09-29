@@ -1,0 +1,151 @@
+{
+  "ticker": "SOUN",
+  "companyName": "SoundHound AI, Inc.",
+  "companyDescription": "Independent conversational voice AI platform — powers voice assistants across automotive, drive-thru/restaurant, and enterprise customer-service channels",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-09-29T00:00:00.000Z",
+  "price": 8.06,
+  "priceChange": -1.1,
+  "priceNote": "52-week range $5.65-$22.17; well off highs, drifting into the Q3 print",
+  "marketCap": "$2.72B",
+  "sector": "Technology / AI Software (Voice AI)",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 61,
+  "factorTags": ["ai_software"],
+  "summary": "SoundHound reports Q3 2026 earnings on Nov 5, 2026 (confirmed). Its own last two prints show exactly how binary the reaction can be: Q1 2026 beat EPS but the stock fell -7.8% same day (-16% over the week) on dilution/offering concerns, while Q2 2026 beat and the stock jumped +15.4% after hours on clean guidance. Consensus target $12.71 (8 analysts, S&P Global; wider avg $13.29) implies +57.7% upside from $8.06. Base case (+35%) assumes a Q2-style clean beat and is well above the core lane's realized 14d P75 of +6.6% — the gap reflects a longer, multi-week re-rating horizon through and past the print, not the fixed measurement window, and the driver is guidance credibility, not just the EPS beat itself.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 2026 Earnings",
+      "description": "Confirmed Nov 5, 2026 after close. The key swing factor per SoundHound's own history is guidance credibility and dilution risk, not just whether EPS beats — a clean beat with no new equity-offering overhang is what drove the +15.4% Q2 reaction.",
+      "urgencyLabel": "37 DAYS",
+      "dateBadge": "Nov 5, 2026",
+      "catalystDate": "2026-11-05",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "A clean EPS beat is not sufficient on its own — Q1 2026 beat but fell -7.8% same day (-16% over the week) on dilution/equity-offering concerns",
+    "Still unprofitable with negative FCF — a hawkish Fed (rates just hiked to 3.75-4.00%) raises the cost of any future capital raise, and SOUN has a recent history of raising into weakness",
+    "High short interest and retail-driven flows can amplify moves sharply in either direction around the print",
+    "Competition from platform incumbents (Google, Amazon, in-house OEM voice stacks) is intensifying in SoundHound's core automotive and restaurant verticals"
+  ],
+  "estimateDates": [
+    { "event": "Q3 2026 Earnings", "dateRange": "Nov 5, 2026", "note": "Confirmed date, after market close", "est": "FY26 guide $225-260M revenue", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -25, "price": 6.05 },
+    { "label": "Base", "color": "yellow", "pct": 35, "price": 10.88 },
+    { "label": "Bull", "color": "green", "pct": 58, "price": 12.73 },
+    { "label": "Moon", "color": "purple", "pct": 85, "price": 14.91 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (8 analysts, S&P Global)", "target": 12.71, "rating": "Buy" },
+    { "firm": "Street High", "target": 17.00, "rating": "Buy" },
+    { "firm": "Street Low", "target": 7.00, "rating": "Hold" }
+  ],
+  "macroRisk": {
+    "fedRisk": "HIGH",
+    "rateOutlook": "Fed hiked to 3.75-4.00% on Sep 16, 2026 (first hike since 2023); next FOMC is Oct 27-28, 2026 — just 8 days before SOUN's Nov 5 print, so a hawkish tone there could compress risk appetite right before the catalyst.",
+    "inflationNote": "The hike responds to elevated inflation, not a growth scare, but unprofitable small-cap tech is exactly the cohort most sensitive to a higher discount rate and tighter capital-markets access.",
+    "sectorImpact": "AI-software names with negative FCF have been volatile on any dilution headline in 2026 — SOUN's own Q1 print is the case study — and a hawkish Fed makes the next raise more expensive if guidance disappoints.",
+    "summary": "HIGH macro risk — SOUN is unprofitable and dilution-prone, and the Oct 27-28 FOMC lands just over a week before the Q3 print, adding a macro wildcard on top of an already binary earnings setup."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 8.06, "note": "Current price", "timing": "Now" },
+      { "label": "Entry 2", "level": 6.90, "rangeMax": 7.20, "note": "Pre-earnings dip zone", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 6.05, "note": "Deep dip / near 52-week-low support", "timing": "If broader AI-software sells off" }
+    ],
+    "tp1": { "price": 10.88, "pct": 35.0, "note": "Base case — clean beat, Q2-style reaction" },
+    "tp2": { "price": 12.73, "pct": 58.0, "note": "Bull case — near-consensus, raised FY guidance" },
+    "tp3": { "price": 14.91, "pct": 85.0, "note": "Moon case — beat + major new enterprise/auto partnership announced same window", "moon": true },
+    "stopLoss": {
+      "tight": 7.01, "tightPct": -13.0, "tightNote": "Wider than the earnings_beat bucket's medianMAE (-9.6%, n=42) to survive normal pre-print chop",
+      "hard": 6.05, "hardPct": -25.0, "hardNote": "Near 52-week-low support — signals the market is pricing a Q1-style dilution scare again",
+      "riskReward": "4.4 : 1", "rrNote": "Tight stop vs TP2, off current price", "rrWarning": "Strong R/R"
+    },
+    "verdict": "Measured median at-catalyst return across the core lane is -6.9% (n=54) — buying at today's $8.06 is not the default entry; the $6.90-7.20 pre-earnings dip is preferred. SoundHound's own history shows the print itself is binary (Q1: beat but -7.8%; Q2: beat and +15.4%) — the swing factor is guidance/dilution credibility, not the EPS line, so size for that binary outcome.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "High-short-interest AI names like SOUN typically see a modest pre-print drift as positioning builds, though SOUN's own history shows the print outcome swings hard on guidance credibility rather than the setup",
+    "preRunupTiming": "About 1 week before the print",
+    "preRunupPct": "+5% to +10%",
+    "postWin": {
+      "avgPct": 15,
+      "range": "-8% to +15%",
+      "note": "SoundHound's own last two prints: Q2 2026 (Aug 2026) beat on EPS (-$0.02 vs -$0.05 est.) and revenue ($61.9M vs $52.4M est.), stock +15.4% after-hours on clean guidance. Q1 2026 (May 2026) also beat EPS by 40% but fell -7.8% same day / -16% over the week on dilution/equity-offering concerns — included here because it shows a beat alone doesn't guarantee the 'win' outcome.",
+      "exampleDate": "Aug 2026"
+    },
+    "postLose": {
+      "avgPct": -8,
+      "range": "-8% to -16%",
+      "note": "SOUN's Q1 2026 print: EPS beat by 40% but the stock still fell -7.79% same day and -16% over the following week, driven by concerns about dilution from a planned equity offering rather than the numbers themselves.",
+      "exampleDate": "May 2026"
+    },
+    "spotSizing": {
+      "pct": 5,
+      "reason": "Confirmed dated catalyst with real upside to consensus, but SoundHound's own history shows the beat/guidance split is genuinely binary — size for that, not for certainty of a positive reaction"
+    },
+    "stopPreCatalyst": { "pct": -13, "price": 7.01, "note": "Below this, pre-print positioning has turned negative — reassess before Nov 5" },
+    "stopPostCatalyst": { "pct": -12, "note": "If the post-print reaction echoes Q1 (beat but sell the guidance/dilution risk), exit rather than average down" }
+  },
+  "comparableCases": [
+    { "ticker": "SOUN", "event": "Q2 2026 earnings beat — EPS and revenue both ahead of estimates, clean guidance, no new dilution headline", "date": "Aug 2026", "movePct": 15, "days": 1, "outcome": "good", "note": "The best-case template for the Nov 5 print — same company, same catalyst type, recent" },
+    { "ticker": "SOUN", "event": "Q1 2026 earnings — EPS beat by 40% but stock fell on dilution/equity-offering overhang", "date": "May 2026", "movePct": -8, "days": 1, "outcome": "mixed", "note": "Shows a clean beat is necessary but not sufficient — the market was pricing financing risk, not the print itself" }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/soun/forecast/",
+    "https://www.tikr.com/blog/soundhound-ai-stock-fell-16-after-q1-earnings-is-the-selloff-an-overreaction",
+    "https://www.investing.com/news/transcripts/earnings-call-transcript-soundhound-ai-tops-q2-2026-estimates-as-stock-jumps-93CH-4839647",
+    "https://finance.yahoo.com/markets/stocks/articles/soundhound-ai-delivers-record-quarter-171759096.html",
+    "https://www.itiger.com/hant/news/2577319326",
+    "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "SoundHound รายงานงบ Q3 2026 วันที่ 5 พ.ย. 2026 (ยืนยันแล้ว) สองไตรมาสล่าสุดแสดงให้เห็นว่าปฏิกิริยาหุ้นเป็น binary จริงๆ: Q1 2026 กำไรเกินคาดแต่หุ้นร่วง -7.8% วันเดียว (-16% ในสัปดาห์) เพราะกังวลเรื่อง dilution ส่วน Q2 2026 กำไรเกินคาดและหุ้นพุ่ง +15.4% หลังตลาดปิดจาก guidance ที่สะอาด Consensus target $12.71 (นักวิเคราะห์ 8 คน) คิดเป็น upside +57.7% จาก $8.06",
+      "priceNote": "กรอบ 52 สัปดาห์ $5.65-$22.17 · ห่างจากจุดสูงสุดมาก กำลังไต่เข้าสู่งบ Q3",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "งบ Q3 2026", "description": "ยืนยันวันที่ 5 พ.ย. 2026 หลังตลาดปิด ปัจจัยชี้ขาดตามประวัติของ SoundHound คือความน่าเชื่อถือของ guidance และความเสี่ยง dilution ไม่ใช่แค่กำไรเกินคาดหรือไม่" }
+      ],
+      "risks": [
+        "กำไรเกินคาดอย่างเดียวไม่พอ — Q1 2026 เกินคาดแต่หุ้นร่วง -7.8% วันเดียว (-16% ในสัปดาห์) เพราะกังวล dilution/เพิ่มทุน",
+        "ยังไม่มีกำไรและ FCF ติดลบ — Fed เพิ่งขึ้นดอกเบี้ยเป็น 3.75-4.00% ทำให้ต้นทุนระดมทุนรอบหน้าสูงขึ้น และ SOUN เคยเพิ่มทุนตอนหุ้นอ่อนมาแล้ว",
+        "short interest สูงและแรงซื้อขายจากนักลงทุนรายย่อยทำให้ราคาแกว่งแรงทั้งสองทางรอบงบ",
+        "คู่แข่งแพลตฟอร์มใหญ่ (Google, Amazon, ระบบเสียงของค่ายรถเอง) รุกหนักขึ้นในกลุ่มยานยนต์และร้านอาหารซึ่งเป็นฐานหลักของ SoundHound"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed ขึ้นดอกเบี้ยเป็น 3.75-4.00% วันที่ 16 ก.ย. 2026 FOMC ครั้งถัดไป 27-28 ต.ค. 2026 — ห่างจากงบ Q3 ของ SOUN แค่ 8 วัน อาจกดความเสี่ยงก่อนเข้า catalyst",
+        "inflationNote": "การขึ้นดอกเบี้ยมาจากเงินเฟ้อ ไม่ใช่สัญญาณเศรษฐกิจถดถอย แต่หุ้นเทคโนโลยีขนาดเล็กที่ยังไม่มีกำไรไวต่อ discount rate ที่สูงขึ้นและการเข้าถึงตลาดทุนที่ยากขึ้นมากที่สุด",
+        "sectorImpact": "หุ้น AI software ที่ FCF ติดลบผันผวนแรงทุกครั้งที่มีข่าว dilution ในปี 2026 — งบ Q1 ของ SOUN เองคือตัวอย่าง — Fed hawkish ทำให้การเพิ่มทุนรอบหน้าแพงขึ้นถ้า guidance ผิดหวัง",
+        "summary": "ความเสี่ยง Fed ระดับ HIGH — SOUN ยังไม่มีกำไรและมีความเสี่ยง dilution สูง ประกอบกับ FOMC 27-28 ต.ค. อยู่ก่อนงบ Q3 แค่กว่าสัปดาห์เดียว เพิ่มตัวแปร macro เข้าไปในสถานการณ์ที่ binary อยู่แล้ว"
+      },
+      "entryStrategy": {
+        "verdict": "ผลตอบแทนเฉลี่ย ณ วัน catalyst ของ core lane อยู่ที่ -6.9% (n=54) — การซื้อที่ราคาปัจจุบัน $8.06 จึงไม่ใช่ทางเลือกหลัก ควรรอโซน $6.90-7.20 ก่อนงบ ประวัติของ SoundHound เองแสดงว่าปฏิกิริยาต่องบเป็น binary (Q1: เกินคาดแต่ -7.8%; Q2: เกินคาดและ +15.4%) — ปัจจัยชี้ขาดคือความน่าเชื่อถือของ guidance ไม่ใช่ตัวเลขกำไร จึงควรจัดขนาด position ให้เหมาะกับผลลัพธ์แบบ binary",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน", "timing": "ตอนนี้" },
+          { "note": "โซนย่อก่อนงบ (preferred)", "timing": "ถ้าย่อ" },
+          { "note": "ย่อลึกใกล้แนวรับ 52 สัปดาห์", "timing": "ถ้ากลุ่ม AI software ร่วงทั้งกลุ่ม" }
+        ],
+        "tp1": { "note": "Base case — เกินคาดแบบสะอาดคล้าย Q2" },
+        "tp2": { "note": "Bull case — ใกล้ consensus พร้อมปรับ guidance ทั้งปีขึ้น" },
+        "tp3": { "note": "Moon case — เกินคาด + มีดีล enterprise/ยานยนต์ใหญ่ประกาศพร้อมกัน" },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE ของ earnings_beat (-9.6%, n=42) เพื่อรองรับความผันผวนปกติก่อนงบ",
+          "hardNote": "ใกล้แนวรับ 52 สัปดาห์ — สัญญาณตลาดกำลังราคาความกลัว dilution แบบ Q1 อีกครั้ง",
+          "rrNote": "Stop แคบเทียบ TP2 จากราคาปัจจุบัน",
+          "rrWarning": "R/R แข็งแรง"
+        }
+      },
+      "estimateDates": [
+        { "event": "งบ Q3 2026", "note": "วันที่ยืนยันแล้ว หลังตลาดปิด" }
+      ]
+    }
+  }
+}

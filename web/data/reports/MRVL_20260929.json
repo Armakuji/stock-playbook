@@ -1,0 +1,152 @@
+{
+  "ticker": "MRVL",
+  "companyName": "Marvell Technology, Inc.",
+  "companyDescription": "AI custom silicon (XPU/ASIC) + data center interconnect · $2B NVIDIA strategic investment + NVLink partnership · CXL/optical AI-memory portfolio (Structera, Bravera SC6, Photonic Fabric)",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-09-29T00:00:00.000Z",
+  "price": 260.17,
+  "priceChange": 0.6,
+  "priceNote": "Up +19.0% since the Aug 10 report ($218.72) — the stock ran well ahead of where analyst targets have followed",
+  "marketCap": "~$227.7B",
+  "sector": "Technology / Semiconductors (AI Custom Silicon)",
+  "verdict": "HOLD",
+  "scoreLabel": "Core Holding",
+  "score": 55,
+  "factorTags": ["ai_semi"],
+  "summary": "REFRESH (prior report Aug 10, 2026) — DOWNGRADED to HOLD: Marvell's Investor Day is now officially confirmed for Oct 6, 2026 (7 days out), an upgrade in date provenance from the prior report's estimate. But the stock has run +19% since Aug 10 while the consensus target only grew modestly to $285.90 — upside has compressed to just +9.9%, below the threshold that supports a fresh BUY. This is a genuine, data-driven downgrade, not a rounding change: the thesis (AI custom silicon, NVIDIA partnership) is intact, but the margin of safety at today's price is thin. Base case (+8%) sits below the core lane's realized 14d P75 of +6.6% only marginally — this is the most 'measured-horizon-consistent' scenario in this refresh batch, reflecting how far the re-rating has already run.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Marvell Investor Day 2026",
+      "description": "Officially confirmed for the morning of Tuesday, Oct 6, 2026 in New York City — CEO Matt Murphy and senior leadership present. Watch for updated long-term AI-silicon revenue targets after the FMS 2026 CXL/optical product unveils.",
+      "urgencyLabel": "7 DAYS",
+      "dateBadge": "Oct 6, 2026",
+      "catalystDate": "2026-10-06",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Upside to consensus has compressed to +9.9% after a +19% run since Aug — the stock now needs the Investor Day to deliver genuinely new upside targets, not just reaffirm the existing story, to justify a re-rate",
+    "Morgan Stanley's Timothy Arcuri remains at Equal Weight with a $195 target (well below spot) despite flagging Google's 'Frozen v2' as a future opportunity — a credible skeptical voice",
+    "Potential FCC ban on Chinese optical transceivers remains an undated overhang on the interconnect business",
+    "A disappointing Investor Day (in-line guidance, no new design wins announced) could trigger a 'sell the news' reaction given how far the stock has already run"
+  ],
+  "estimateDates": [
+    { "event": "Q2 FY2027 Earnings (realized)", "dateRange": "Aug 27, 2026", "note": "Already reported", "est": "", "highlight": "blue" },
+    { "event": "$250M India R&D Expansion (realized)", "dateRange": "Aug 2026", "note": "Already announced", "est": "", "highlight": "blue" },
+    { "event": "Marvell Investor Day 2026", "dateRange": "Oct 6, 2026", "note": "Officially confirmed via company press release", "est": "", "highlight": "red" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -18, "price": 213.34 },
+    { "label": "Base", "color": "yellow", "pct": 8, "price": 281.06 },
+    { "label": "Bull", "color": "green", "pct": 20, "price": 312.20 },
+    { "label": "Moon", "color": "purple", "pct": 35, "price": 351.23 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (30 analysts)", "target": 285.90, "rating": "Buy", "note": "82% buy-consensus; implies +9.9% from current price" },
+    { "firm": "Morgan Stanley (Timothy Arcuri)", "target": 195.00, "rating": "Equal Weight", "note": "Most conservative named target — a credible skeptical voice despite flagging Google's 'Frozen v2' as upside optionality" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed hiked to 3.75-4.00% on Sep 16, 2026 (first hike since 2023); next FOMC Oct 27-28, 2026 — after Investor Day, so it shouldn't collide directly.",
+    "inflationNote": "Inflation-driven hike; Marvell is solidly profitable, but a name that's already re-rated +19% in under 2 months is the type most exposed to a hawkish-Fed multiple reset.",
+    "sectorImpact": "AI custom-silicon names have run hard on NVIDIA-adjacent partnership news in 2026; a hawkish Fed is a real headwind to that multiple even with intact fundamentals.",
+    "summary": "MEDIUM macro risk — Marvell's profitability provides a cushion, but the recent sharp re-rating leaves more room for multiple compression than for further expansion if the Fed stays hawkish."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 260.17, "note": "Current price", "timing": "Now" },
+      { "label": "Entry 2", "level": 225.00, "rangeMax": 235.00, "note": "Pre-Investor-Day dip zone", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 210.00, "note": "Deep dip / near bear case", "timing": "Broad semis selloff or a hawkish Fed surprise" }
+    ],
+    "tp1": { "price": 281.06, "pct": 8.0, "note": "Base case — Investor Day reaffirms guidance, no major surprises" },
+    "tp2": { "price": 312.20, "pct": 20.0, "note": "Bull case — new AI-silicon revenue targets announced" },
+    "tp3": { "price": 351.23, "pct": 35.0, "note": "Moon case — major new hyperscaler design win unveiled", "moon": true },
+    "stopLoss": {
+      "tight": 223.75, "tightPct": -14.0, "tightNote": "Wider than the earnings_beat bucket's medianMAE (-9.6%, n=42)",
+      "hard": 202.93, "hardPct": -22.0, "hardNote": "Below the pre-rally consolidation level — signals the AI-silicon thesis is being repriced",
+      "riskReward": "1.4 : 1", "rrNote": "Tight stop vs TP2, off current price", "rrWarning": "Weak R/R — the reason for the HOLD downgrade"
+    },
+    "verdict": "Measured median at-catalyst return across the core lane is -6.9% (n=54) — even for existing holders, adding at today's $260.17 is not favored; the $225-235 dip is preferred if you want to add. This is a downgrade from BUY to HOLD: the +19% run since Aug has outpaced the consensus target, leaving a thin ~10% margin of safety into a confirmed but not-guaranteed-positive Investor Day. Existing holders can stay through Oct 6; new money should wait for a bigger pullback or a genuinely new target upgrade.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Marvell has already run +19% since early Aug on NVIDIA-partnership and FMS 2026 product-unveil momentum — most of the pre-Investor-Day run-up may already be behind it",
+    "preRunupTiming": "Typically 1-2 weeks before a confirmed Investor Day",
+    "preRunupPct": "+5% to +10% remaining, if any — much of the move has already happened",
+    "postWin": {
+      "avgPct": 10,
+      "range": "+5% to +15%",
+      "note": "No MRVL-specific Investor Day precedent this cycle (first one at this scale); proxied from the earnings_beat bucket's general pattern for a well-received corporate event on a stock that hasn't already priced in new information.",
+      "exampleDate": "2026 (category reference)"
+    },
+    "postLose": {
+      "avgPct": -12,
+      "range": "-8% to -18%",
+      "note": "A 'sell the news' reaction is the key risk given the stock has already run +19% into the event — proxied from the earnings_beat bucket's medianMAE (-9.6%, n=42), widened for the added chase-risk given the recent rally.",
+      "exampleDate": "2026 (category reference)"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Downgraded to HOLD — thin margin of safety after the recent run means this is a hold-through-the-event setup, not a fresh conviction add"
+    },
+    "stopPreCatalyst": { "pct": -14, "price": 223.75, "note": "Below this, the post-rally consolidation has broken down" },
+    "stopPostCatalyst": { "pct": -12, "note": "If Investor Day delivers a 'sell the news' reaction, exit rather than wait for the next catalyst" }
+  },
+  "comparableCases": [
+    { "ticker": "MRVL", "event": "FMS 2026 CXL/optical AI-memory portfolio unveil (Structera, Bravera SC6, Photonic Fabric)", "date": "2026", "movePct": 10, "days": 3, "outcome": "good", "note": "Same-company precedent for how the stock reacts to concrete new-product news, the template for what Investor Day needs to deliver to justify a fresh BUY" },
+    { "ticker": "MRVL", "event": "Post-FMS-2026 consolidation into Aug 27 earnings — stock held gains rather than extending them", "date": "Aug 2026", "movePct": 2, "days": 5, "outcome": "mixed", "note": "Shows the stock can stall even on good news once a rally has run far enough" }
+  ],
+  "sources": [
+    "https://investor.marvell.com/news-events/press-releases/detail/1029/marvell-technology-inc-announces-conference-call-to-review-second-quarter-of-fiscal-year-2027-financial-results-announces-investor-day-on-october-6-2026",
+    "https://www.fxleaders.com/news/2026/09/17/marvell-stock-forecast-mrvl-238-breakout/",
+    "https://simplywall.st/stocks/us/semiconductors/nasdaq-mrvl/marvell-technology/news/marvell-technology-inc-nasdaqmrvl-just-reported-earnings-and",
+    "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "REFRESH (รายงานก่อนหน้า 10 ส.ค. 2026) — ปรับลดเป็น HOLD: Investor Day ของ Marvell ยืนยันวันที่อย่างเป็นทางการแล้วเป็น 6 ต.ค. 2026 (อีก 7 วัน) ดีขึ้นจากการประมาณการในรายงานก่อนหน้า แต่หุ้นวิ่งขึ้น +19% นับจาก 10 ส.ค. ขณะที่ consensus target ขึ้นแค่เล็กน้อยเป็น $285.90 — upside บีบแคบเหลือแค่ +9.9% ต่ำกว่าเกณฑ์ที่จะหนุน BUY ใหม่ นี่คือการปรับลดที่มีข้อมูลรองรับจริง ไม่ใช่การเปลี่ยนแบบปัดเศษ — thesis (AI custom silicon, พันธมิตร NVIDIA) ยังคงอยู่ แต่ margin of safety ที่ราคาปัจจุบันบางมาก",
+      "priceNote": "บวก +19.0% นับจากรายงาน 10 ส.ค. ($218.72) — หุ้นวิ่งไปไกลกว่าที่ target นักวิเคราะห์ตามทัน",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "Marvell Investor Day 2026", "description": "ยืนยันอย่างเป็นทางการแล้วว่าจะจัดเช้าวันอังคารที่ 6 ต.ค. 2026 ที่นิวยอร์ก — CEO Matt Murphy และทีมผู้บริหารนำเสนอ จับตา target รายได้ AI silicon ระยะยาวที่อัปเดตหลังเปิดตัวผลิตภัณฑ์ CXL/optical ที่ FMS 2026" }
+      ],
+      "risks": [
+        "upside ต่อ consensus บีบแคบเหลือ +9.9% หลังวิ่งขึ้น +19% นับจากส.ค. — ตอนนี้หุ้นต้องการให้ Investor Day ส่งมอบ target ใหม่จริงๆ ไม่ใช่แค่ยืนยันเรื่องเดิม เพื่อให้คุ้มกับการรีเรทใหม่",
+        "Timothy Arcuri จาก Morgan Stanley ยังคง Equal Weight ที่ target $195 (ต่ำกว่าราคาปัจจุบันมาก) แม้จะชี้ว่า Google's 'Frozen v2' เป็นโอกาสในอนาคต — เสียงที่น่าเชื่อถือฝั่งระมัดระวัง",
+        "การแบนทรานซีฟเวอร์ optical จีนที่อาจเกิดขึ้นจาก FCC ยังเป็นความเสี่ยงที่ไม่มีกำหนดต่อธุรกิจ interconnect",
+        "Investor Day ที่น่าผิดหวัง (guidance เดิม ไม่มี design win ใหม่ประกาศ) อาจกระตุ้นปฏิกิริยา 'sell the news' เพราะหุ้นวิ่งมาไกลแล้ว"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed ขึ้นดอกเบี้ยเป็น 3.75-4.00% วันที่ 16 ก.ย. 2026 FOMC ครั้งถัดไป 27-28 ต.ค. 2026 — อยู่หลัง Investor Day จึงไม่ชนกันโดยตรง",
+        "inflationNote": "การขึ้นดอกเบี้ยมาจากเงินเฟ้อ — Marvell มีกำไรแข็งแรง แต่หุ้นที่รีเรทไป +19% ในเวลาไม่ถึง 2 เดือนเป็นประเภทที่เสี่ยงที่สุดต่อการ reset multiple จาก Fed hawkish",
+        "sectorImpact": "หุ้น AI custom-silicon วิ่งแรงจากข่าวพันธมิตรที่เกี่ยวกับ NVIDIA ในปี 2026 — Fed hawkish เป็นแรงต้านจริงต่อ multiple แม้ fundamental ยังดี",
+        "summary": "ความเสี่ยง Fed ระดับ MEDIUM — กำไรของ Marvell ช่วยกันความเสี่ยงได้บ้าง แต่การรีเรทที่เร็วเมื่อไม่นานมานี้เหลือพื้นที่สำหรับ multiple หดตัวมากกว่าขยายตัวถ้า Fed ยัง hawkish"
+      },
+      "entryStrategy": {
+        "verdict": "ผลตอบแทนเฉลี่ย ณ วัน catalyst ของ core lane อยู่ที่ -6.9% (n=54) — แม้แต่ผู้ถือหุ้นเดิม การเพิ่ม position ที่ราคาปัจจุบัน $260.17 ก็ไม่ใช่ทางเลือกหลัก ควรรอโซน $225-235 ถ้าจะเพิ่ม นี่คือการปรับลดจาก BUY เป็น HOLD: การวิ่งขึ้น +19% นับจากส.ค. แซงหน้า consensus target เหลือ margin of safety แค่ ~10% ก่อนเข้า Investor Day ที่ยืนยันวันแล้วแต่ไม่การันตีผลบวก ผู้ถือเดิมถือต่อได้จนถึง 6 ต.ค. ส่วนเงินใหม่ควรรอย่อแรงกว่านี้หรือรอ target ใหม่จริงๆ",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน", "timing": "ตอนนี้" },
+          { "note": "โซนย่อก่อน Investor Day (preferred)", "timing": "ถ้าย่อ" },
+          { "note": "ย่อลึกใกล้ bear case", "timing": "ถ้ากลุ่มเซมิคอนดักเตอร์ร่วงหรือ Fed hawkish เหนือคาด" }
+        ],
+        "tp1": { "note": "Base case — Investor Day ยืนยัน guidance ไม่มีเซอร์ไพรส์ใหญ่" },
+        "tp2": { "note": "Bull case — ประกาศ target รายได้ AI silicon ใหม่" },
+        "tp3": { "note": "Moon case — เปิดตัว design win รายใหญ่จาก hyperscaler ใหม่" },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE ของ earnings_beat (-9.6%, n=42)",
+          "hardNote": "ต่ำกว่าระดับพักฐานก่อน rally — สัญญาณว่า thesis AI silicon กำลังถูกรีไพรซ์",
+          "rrNote": "Stop แคบเทียบ TP2 จากราคาปัจจุบัน",
+          "rrWarning": "R/R อ่อน — เหตุผลของการปรับลดเป็น HOLD"
+        }
+      },
+      "estimateDates": [
+        { "event": "งบ Q2 FY2027 (ผ่านไปแล้ว)", "note": "รายงานไปแล้ว" },
+        { "event": "การขยาย R&D อินเดีย $250M (ผ่านไปแล้ว)", "note": "ประกาศไปแล้ว" },
+        { "event": "Marvell Investor Day 2026", "note": "ยืนยันอย่างเป็นทางการผ่านแถลงการณ์บริษัท" }
+      ]
+    }
+  }
+}

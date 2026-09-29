@@ -1,0 +1,152 @@
+{
+  "ticker": "AVGO",
+  "companyName": "Broadcom Inc.",
+  "companyDescription": "AI networking + custom silicon · designs custom AI chips for Google, Meta and OpenAI — the arms dealer for hyperscaler custom accelerators, beat consensus for the 9th straight quarter",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-09-29T00:00:00.000Z",
+  "price": 349.65,
+  "priceChange": -0.9,
+  "priceNote": "Down -15.9% since the Aug 13 report ($416.05), well off the 52-week high of $493.28, despite a clean Q3 FY26 beat on Sep 2 — looks like broad AI-semis multiple compression rather than a company-specific issue",
+  "marketCap": "~$1.66T",
+  "sector": "Technology / Semiconductors (AI Networking & Custom Silicon)",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 70,
+  "factorTags": ["ai_semi"],
+  "summary": "REFRESH (prior report Aug 13, 2026): Q3 FY2026 earnings already passed (Sep 2) with a clean beat — EPS $3.32 vs $3.16 est. (+5.1%), revenue $29.59B (+85.5% YoY), the ninth consecutive beat. Despite that, the stock is down -15.9% since the last report, which reads as broad AI-semis multiple compression rather than an AVGO-specific problem. That drop widened consensus (50 analysts, Strong Buy) upside to +52.1% from $349.65 — the largest gap in this refresh batch. Next catalyst is Q4 FY2026 earnings, officially confirmed for Dec 10, 2026 (72 days out — beyond the near-term window, but the honest current state). Base case (+25%) sits above the core lane's realized 14d P75 of +6.6% — the gap reflects a multi-month re-rating horizon back toward the stock's own 52-week high, not near-term optimism bias.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q4 FY2026 Earnings",
+      "description": "Officially confirmed for Dec 10, 2026 after close. Watch for continued custom-silicon demand trajectory commentary (Google TPU and other hyperscaler programs) and whether the beat streak extends to 10 straight quarters.",
+      "urgencyLabel": "~72 DAYS",
+      "dateBadge": "Dec 10, 2026",
+      "catalystDate": "2026-12-10",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "A clean beat (9th straight) didn't stop a -15.9% drawdown since Aug — shows the stock is currently trading on multiple/sentiment more than fundamentals, which cuts both ways on the way back up too",
+    "Next confirmed catalyst is 72 days out — outside the near-term window, so this is a longer-hold, lower-urgency setup than the rest of this batch",
+    "A hawkish Fed (rates just hiked to 3.75-4.00%) is a plausible driver of the broad AI-semis multiple compression already underway",
+    "Google TPU / custom-silicon demand trajectory remains an undated, ongoing risk — any hyperscaler in-sourcing news could pressure the thesis"
+  ],
+  "estimateDates": [
+    { "event": "Q3 FY2026 Earnings (realized)", "dateRange": "Sep 2, 2026", "note": "Beat on EPS and revenue — 9th straight beat", "est": "", "highlight": "blue" },
+    { "event": "Q4 FY2026 Earnings", "dateRange": "Dec 10, 2026", "note": "Officially confirmed", "est": "", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -20, "price": 279.72 },
+    { "label": "Base", "color": "yellow", "pct": 25, "price": 437.06 },
+    { "label": "Bull", "color": "green", "pct": 52, "price": 531.47 },
+    { "label": "Moon", "color": "purple", "pct": 80, "price": 629.37 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (50 analysts, S&P Global)", "target": 531.85, "rating": "Strong Buy" },
+    { "firm": "24/7 Wall St.", "target": 427.46, "rating": "Buy", "note": "More conservative named figure — implies +20.4% upside" },
+    { "firm": "Wall Street aggregate", "target": 515.29, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed hiked to 3.75-4.00% on Sep 16, 2026 (first hike since 2023); next FOMC Oct 27-28, 2026 — well before the Dec 10 print, so there's a real window for a hawkish surprise to further pressure the stock before the next catalyst.",
+    "inflationNote": "Inflation-driven hike; Broadcom is highly profitable and diversified across custom-silicon customers, but the -15.9% post-beat drawdown suggests the broad AI-multiple reset is already partly playing out.",
+    "sectorImpact": "AI-networking and custom-silicon names have compressed broadly even on good earnings in 2026 — a hawkish Fed is a credible contributor to that multiple reset.",
+    "summary": "MEDIUM macro risk — Broadcom's profitability and diversified hyperscaler customer base cushion it, but the stock has already shown it can fall -15.9% on a hawkish macro backdrop despite beating estimates."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 349.65, "note": "Current price", "timing": "Now" },
+      { "label": "Entry 2", "level": 310.00, "rangeMax": 325.00, "note": "Further-dip zone if the AI-semis multiple compression continues", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 280.00, "note": "Deep dip / matches bear case", "timing": "Broad AI-capex selloff" }
+    ],
+    "tp1": { "price": 437.06, "pct": 25.0, "note": "Base case — multiple stabilizes, no further macro-driven compression" },
+    "tp2": { "price": 531.47, "pct": 52.0, "note": "Bull case — near-consensus, stock recovers toward its 52-week high" },
+    "tp3": { "price": 629.37, "pct": 80.0, "note": "Moon case — 10th straight beat + new hyperscaler custom-silicon win at the Dec 10 print", "moon": true },
+    "stopLoss": {
+      "tight": 300.70, "tightPct": -14.0, "tightNote": "Wider than the earnings_beat bucket's medianMAE (-9.6%, n=42)",
+      "hard": 265.73, "hardPct": -24.0, "hardNote": "Signals the AI-semis multiple compression has become a genuine demand-side problem, not just sentiment",
+      "riskReward": "3.7 : 1", "rrNote": "Tight stop vs TP2, off current price", "rrWarning": "Strong R/R"
+    },
+    "verdict": "Measured median at-catalyst return across the core lane is -6.9% (n=54) — buying at today's $349.65 is not the default entry; the $310-325 zone is preferred if the compression continues. This is a longer-hold setup than the rest of this batch (72 days to the next confirmed catalyst) — the case here is valuation recovery on a name that just posted its 9th straight beat and still fell -15.9%, not a near-term binary trade.",
+    "approach": "DCA"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "AVGO has historically drifted up into confirmed earnings dates on custom-silicon demand commentary, though the current post-beat drawdown shows macro can override that pattern",
+    "preRunupTiming": "2-3 weeks before the print",
+    "preRunupPct": "+5% to +15% in a normal macro backdrop",
+    "postWin": {
+      "avgPct": 8,
+      "range": "-16% to +15%",
+      "note": "AVGO's own Sep 2, 2026 Q3 print beat on both EPS and revenue (9th straight beat) — yet the stock is down -15.9% since the prior report, illustrating that even a clean beat can be overridden by broad AI-semis multiple compression in a hawkish-Fed environment.",
+      "exampleDate": "Sep 2026"
+    },
+    "postLose": {
+      "avgPct": -14,
+      "range": "-9% to -20%",
+      "note": "Proxied from the earnings_beat bucket's own medianMAE (-9.6%, n=42); AVGO's actual post-beat drawdown this cycle (-15.9%) sits within this range despite being driven by macro rather than a miss.",
+      "exampleDate": "Sep 2026"
+    },
+    "spotSizing": {
+      "pct": 5,
+      "reason": "Highest-quality, most diversified name in this batch — a genuine valuation dislocation (beat + drawdown) rather than a broken thesis, sized larger accordingly"
+    },
+    "stopPreCatalyst": { "pct": -14, "price": 300.70, "note": "Below this, the macro-driven compression has become a deeper trend break" },
+    "stopPostCatalyst": { "pct": -12, "note": "If the Dec 10 print breaks the beat streak or custom-silicon demand commentary turns negative, exit rather than average down" }
+  },
+  "comparableCases": [
+    { "ticker": "AVGO", "event": "Q3 FY2026 earnings — beat on EPS (+5.1%) and revenue (+85.5% YoY), 9th straight beat, but stock still down since the report", "date": "Sep 2026", "movePct": -15.9, "days": 27, "outcome": "mixed", "note": "The central fact this refresh is built around — a genuine beat overridden by macro, which is the setup (and the risk) for anyone entering here" },
+    { "ticker": "MU", "event": "AI-memory supercycle re-rating despite broader semis volatility", "date": "2026", "movePct": 18, "days": 55, "outcome": "good", "note": "Shows the AI-semis complex can also re-rate sharply higher on fundamentals once sentiment stabilizes — the case for AVGO's bull/moon scenarios" }
+  ],
+  "sources": [
+    "https://www.cnbc.com/2026/09/02/broadcom-avgo-q3-earnings-report-2026.html",
+    "https://stockanalysis.com/stocks/avgo/forecast/",
+    "https://247wallst.com/investing/2026/09/26/broadcom-has-more-than-one-way-to-win-heres-where-i-see-the-stock-going/",
+    "https://www.tipranks.com/stocks/avgo/earnings",
+    "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "REFRESH (รายงานก่อนหน้า 13 ส.ค. 2026): งบ Q3 FY2026 ผ่านไปแล้ว (2 ก.ย.) เป็นการเกินคาดที่สะอาด — EPS $3.32 เทียบคาด $3.16 (+5.1%) รายได้ $29.59 พันล้าน (+85.5% YoY) เกินคาดต่อเนื่องเป็นไตรมาสที่ 9 แม้จะเป็นเช่นนั้น หุ้นลดลง -15.9% นับจากรายงานล่าสุด ซึ่งดูเหมือนการหดตัวของ multiple กลุ่ม AI semis ในวงกว้างมากกว่าปัญหาเฉพาะบริษัท การลดลงนี้ทำให้ upside ต่อ consensus (นักวิเคราะห์ 50 คน, Strong Buy) กว้างขึ้นเป็น +52.1% จาก $349.65 — กว้างที่สุดในชุด refresh นี้",
+      "priceNote": "ลดลง -15.9% นับจากรายงาน 13 ส.ค. ($416.05) ห่างจากจุดสูงสุด 52 สัปดาห์ที่ $493.28 มาก แม้งบ Q3 FY26 จะเกินคาดสะอาดเมื่อ 2 ก.ย.",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "งบ Q4 FY2026", "description": "ยืนยันอย่างเป็นทางการแล้วสำหรับ 10 ธ.ค. 2026 หลังตลาดปิด จับตาความเห็นเรื่อง custom-silicon demand ต่อเนื่อง (Google TPU และโปรแกรม hyperscaler อื่นๆ) และว่าสถิติเกินคาดจะต่อเนื่องเป็นไตรมาสที่ 10 หรือไม่" }
+      ],
+      "risks": [
+        "การเกินคาดที่สะอาด (ต่อเนื่องไตรมาสที่ 9) ไม่ได้หยุดการร่วง -15.9% นับจากส.ค. — แสดงว่าตอนนี้หุ้นเทรดตาม multiple/sentiment มากกว่า fundamental ซึ่งเป็นได้ทั้งสองทางตอนขาขึ้นด้วย",
+        "catalyst ที่ยืนยันถัดไปอยู่ห่างออกไป 72 วัน — เกินกรอบเวลาใกล้ จึงเป็นการถือระยะยาวกว่าและความเร่งด่วนต่ำกว่าตัวอื่นในชุดนี้",
+        "Fed hawkish (เพิ่งขึ้นดอกเบี้ยเป็น 3.75-4.00%) เป็นตัวขับเคลื่อนที่เป็นไปได้ของการหดตัว multiple กลุ่ม AI semis ที่กำลังเกิดขึ้น",
+        "แนวโน้มดีมานด์ Google TPU/custom-silicon ยังเป็นความเสี่ยงต่อเนื่องที่ไม่มีกำหนด — ข่าว in-source ของ hyperscaler รายใดก็กดดัน thesis ได้"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed ขึ้นดอกเบี้ยเป็น 3.75-4.00% วันที่ 16 ก.ย. 2026 FOMC ครั้งถัดไป 27-28 ต.ค. 2026 — อยู่ก่อนงบ 10 ธ.ค. มาก จึงมีโอกาสจริงที่ข่าว hawkish จะกดดันหุ้นเพิ่มก่อนถึง catalyst ถัดไป",
+        "inflationNote": "การขึ้นดอกเบี้ยมาจากเงินเฟ้อ — Broadcom มีกำไรแข็งแรงและกระจายฐานลูกค้า custom-silicon แต่การร่วง -15.9% หลังเกินคาดบ่งบอกว่าการ reset multiple ของ AI ในวงกว้างเริ่มเกิดขึ้นบางส่วนแล้ว",
+        "sectorImpact": "หุ้น AI networking และ custom-silicon หดตัวใน multiple ในวงกว้างแม้งบจะออกมาดีในปี 2026 — Fed hawkish เป็นปัจจัยที่น่าเชื่อถือของการ reset นี้",
+        "summary": "ความเสี่ยง Fed ระดับ MEDIUM — กำไรและฐานลูกค้า hyperscaler ที่หลากหลายของ Broadcom ช่วยกันความเสี่ยงได้ แต่หุ้นแสดงให้เห็นแล้วว่าร่วงได้ -15.9% ในภาวะ macro hawkish แม้จะเกินคาด"
+      },
+      "entryStrategy": {
+        "verdict": "ผลตอบแทนเฉลี่ย ณ วัน catalyst ของ core lane อยู่ที่ -6.9% (n=54) — การซื้อที่ราคาปัจจุบัน $349.65 จึงไม่ใช่ทางเลือกหลัก ควรรอโซน $310-325 ถ้าการหดตัวยังดำเนินต่อ นี่เป็นการถือระยะยาวกว่าตัวอื่นในชุดนี้ (72 วันถึง catalyst ที่ยืนยันถัดไป) — เคสที่นี่คือการฟื้นมูลค่าของหุ้นที่เพิ่งเกินคาดต่อเนื่องเป็นไตรมาสที่ 9 แต่ยังร่วง -15.9% ไม่ใช่เทรด binary ระยะใกล้",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน", "timing": "ตอนนี้" },
+          { "note": "โซนย่อลึกกว่าถ้าการหดตัวของ multiple ดำเนินต่อ (preferred)", "timing": "ถ้าย่อ" },
+          { "note": "ย่อลึกตรงกับ bear case", "timing": "ถ้า AI capex ร่วงทั้งกลุ่ม" }
+        ],
+        "tp1": { "note": "Base case — multiple นิ่งขึ้น ไม่มีการหดตัวจาก macro เพิ่มเติม" },
+        "tp2": { "note": "Bull case — ใกล้ consensus หุ้นฟื้นเข้าใกล้จุดสูงสุด 52 สัปดาห์" },
+        "tp3": { "note": "Moon case — เกินคาดต่อเนื่องไตรมาสที่ 10 พร้อม hyperscaler custom-silicon รายใหม่ในงบ 10 ธ.ค." },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE ของ earnings_beat (-9.6%, n=42)",
+          "hardNote": "สัญญาณว่าการหดตัว multiple ของ AI semis กลายเป็นปัญหาด้านดีมานด์จริง ไม่ใช่แค่ sentiment",
+          "rrNote": "Stop แคบเทียบ TP2 จากราคาปัจจุบัน",
+          "rrWarning": "R/R แข็งแรง"
+        }
+      },
+      "estimateDates": [
+        { "event": "งบ Q3 FY2026 (ผ่านไปแล้ว)", "note": "เกินคาดทั้ง EPS และรายได้ — ต่อเนื่องไตรมาสที่ 9" },
+        { "event": "งบ Q4 FY2026", "note": "ยืนยันอย่างเป็นทางการแล้ว" }
+      ]
+    }
+  }
+}

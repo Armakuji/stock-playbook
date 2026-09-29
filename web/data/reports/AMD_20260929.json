@@ -1,0 +1,155 @@
+{
+  "ticker": "AMD",
+  "companyName": "Advanced Micro Devices, Inc.",
+  "companyDescription": "AI GPU / CPU challenger to Nvidia · Instinct MI-series accelerators + EPYC server CPUs · now also acquiring physical-AI/world-model research (Fei-Fei Li's World Labs, $8.2B all-stock, announced Sep 26 2026)",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-09-29T00:00:00.000Z",
+  "price": 585.94,
+  "priceChange": -3.61,
+  "priceNote": "Down -3.61% today on the $8.2B all-stock World Labs acquisition announcement (dilution/integration-risk reaction); down overall from the Aug 4 report's $484.64... note: AMD also underwent typical AI-name volatility between reports — this reflects the post-acquisition-news price specifically",
+  "marketCap": "~$955B",
+  "sector": "Technology / Semiconductors (AI Accelerators)",
+  "verdict": "HOLD",
+  "scoreLabel": "Core Holding",
+  "score": 52,
+  "factorTags": ["ai_semi"],
+  "summary": "REFRESH (prior report Aug 4, 2026) — DOWNGRADED to HOLD: AMD announced an $8.2B all-stock acquisition of Fei-Fei Li's World Labs on Sep 26, 2026 (physical-AI/world-model research, closing expected by end of 2026), and the stock fell -3.61% on the news (dilution/integration-risk reaction), closing today at $585.94. Consensus (55 analysts, Strong Buy) is $618.51 — just +5.6% upside, the thinnest in this entire refresh batch. BofA's freshest call (raised to $720 after the news) implies +22.9%, the more bullish read. Next catalyst is Q3 2026 earnings, Nov 3, 2026 (reported by third-party calendars as confirmed, though AMD's own IR calendar hasn't posted it yet). Base case (+10%) is close to the core lane's realized 14d P75 of +6.6% — the most measured-horizon-consistent scenario in this batch, reflecting how thin the near-term margin of safety has become.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 2026 Earnings",
+      "description": "Reported by third-party earnings calendars (TipRanks) as confirmed for Nov 3, 2026 after close, though AMD's own investor-relations calendar has not yet posted the event. Watch for the first management commentary on World Labs integration alongside the numbers.",
+      "urgencyLabel": "~35 DAYS",
+      "dateBadge": "~Nov 3, 2026",
+      "catalystDate": "2026-11-03",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Consensus upside has compressed to just +5.6% — the thinnest margin of safety in this refresh batch; the stock needs a genuinely new catalyst, not just execution, to re-rate",
+    "The $8.2B all-stock World Labs deal is dilutive and its integration/strategic payoff (physical AI, robotics, autonomous vehicles) is a multi-year story, not a near-term earnings driver — the market's -3.61% reaction reflects real skepticism",
+    "This is AMD's second-largest acquisition on record (after the ~$50B Xilinx deal) — integration risk at that scale is non-trivial",
+    "A hawkish Fed (rates just hiked to 3.75-4.00%) raises the discount rate on a stock trading at a rich AI-accelerator multiple with a newly thin analyst margin of safety"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings (realized)", "dateRange": "Aug 4, 2026", "note": "Already reported", "est": "", "highlight": "blue" },
+    { "event": "World Labs Acquisition Announced (realized)", "dateRange": "Sep 26, 2026", "note": "$8.2B all-stock, closing expected by end of 2026; stock fell -3.61% on the news", "est": "", "highlight": "blue" },
+    { "event": "Q3 2026 Earnings", "dateRange": "~Nov 3, 2026", "note": "Reported as confirmed by third-party calendars; AMD's own IR page not yet updated", "est": "", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -18, "price": 480.47 },
+    { "label": "Base", "color": "yellow", "pct": 10, "price": 644.53 },
+    { "label": "Bull", "color": "green", "pct": 23, "price": 720.71 },
+    { "label": "Moon", "color": "purple", "pct": 40, "price": 820.32 }
+  ],
+  "analystTargets": [
+    { "firm": "Bank of America", "target": 720.00, "rating": "Buy", "note": "Raised from $620 following the World Labs deal — the freshest named call in this batch" },
+    { "firm": "Consensus (55 analysts, S&P Global)", "target": 618.51, "rating": "Strong Buy", "note": "Implies just +5.6% upside — thinnest margin of safety in this refresh batch" },
+    { "firm": "Cantor Fitzgerald", "target": 700.00, "rating": "Buy", "note": "Pre-World-Labs-news call, carried from prior coverage" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed hiked to 3.75-4.00% on Sep 16, 2026 (first hike since 2023); next FOMC Oct 27-28, 2026 — before the estimated Nov 3 print, adding macro noise into an already thin-margin setup.",
+    "inflationNote": "Inflation-driven hike; AMD is profitable but trades at a rich AI-accelerator multiple, making it sensitive to any further discount-rate pressure on top of the digestion of a large dilutive acquisition.",
+    "sectorImpact": "AI-accelerator names are broadly sensitive to Fed policy given how much of their valuation rests on multi-year growth assumptions; a hawkish Fed compounds the World-Labs-dilution digestion already underway.",
+    "summary": "MEDIUM macro risk — AMD's core business is profitable and well-capitalized, but the newly thin analyst margin of safety plus a large dilutive acquisition leave less room to absorb a hawkish-Fed multiple reset."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 585.94, "note": "Current price, post-World-Labs-news selloff", "timing": "Now" },
+      { "label": "Entry 2", "level": 520.00, "rangeMax": 540.00, "note": "Deeper post-acquisition-digestion dip zone", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 480.00, "note": "Deep dip / matches bear case", "timing": "Broad AI-capex selloff or a weak Q3 print" }
+    ],
+    "tp1": { "price": 644.53, "pct": 10.0, "note": "Base case — market digests the World Labs deal without further de-rating" },
+    "tp2": { "price": 720.71, "pct": 23.0, "note": "Bull case — near BofA's fresh post-deal target" },
+    "tp3": { "price": 820.32, "pct": 40.0, "note": "Moon case — World Labs/physical-AI story starts contributing to the growth narrative ahead of schedule", "moon": true },
+    "stopLoss": {
+      "tight": 503.91, "tightPct": -14.0, "tightNote": "Wider than the earnings_beat bucket's medianMAE (-9.6%, n=42)",
+      "hard": 457.03, "hardPct": -22.0, "hardNote": "Signals the market is repricing the World Labs deal as a genuine strategic mistake, not just near-term dilution",
+      "riskReward": "1.6 : 1", "rrNote": "Tight stop vs TP2, off current price", "rrWarning": "Weak R/R — the reason for the HOLD downgrade"
+    },
+    "verdict": "Measured median at-catalyst return across the core lane is -6.9% (n=54) — buying at today's $585.94 is not the default entry; the $520-540 dip is preferred if adding. This is a downgrade from BUY to HOLD: a fresh, dilutive $8.2B acquisition just landed and the market's initial verdict was negative (-3.61%), while consensus upside has compressed to +5.6%. Existing holders can wait through Nov 3 for integration commentary; new money should demand a real pullback first.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "AMD tends to see elevated volatility around both earnings and major strategic announcements — the World Labs deal itself was a surprise announcement, not a pre-telegraphed one",
+    "preRunupTiming": "1-2 weeks before a confirmed earnings date",
+    "preRunupPct": "+5% to +10%",
+    "postWin": {
+      "avgPct": 9,
+      "range": "0% to +20%",
+      "note": "AMD's historical earnings reactions have ranged widely; the base-rate reference here is the core lane's earnings_beat bucket avgMaxGain of ~2.7% (n=42), well below the stock's own historical best/worst swings.",
+      "exampleDate": "2026 (category reference)"
+    },
+    "postLose": {
+      "avgPct": -20,
+      "range": "-8% to -20%",
+      "note": "AMD's worst historical earnings-miss drawdown this cycle was -20.3% (Feb 2026), per the prior report's own research — kept here as the standing worst-case reference for the Nov 3 print, on top of the fresh World Labs dilution overhang.",
+      "exampleDate": "Feb 2026"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Downgraded to HOLD — a fresh dilutive acquisition plus thin analyst margin of safety argue for smaller sizing until the market's verdict on World Labs clarifies"
+    },
+    "stopPreCatalyst": { "pct": -14, "price": 503.91, "note": "Below this, the World Labs deal is being priced as a real strategic misstep, not just dilution" },
+    "stopPostCatalyst": { "pct": -12, "note": "If Q3 earnings or integration commentary disappoints, exit rather than average down into a second negative catalyst" }
+  },
+  "comparableCases": [
+    { "ticker": "AMD", "event": "$8.2B all-stock acquisition of World Labs (Fei-Fei Li's physical-AI startup) announced", "date": "Sep 2026", "movePct": -3.61, "days": 1, "outcome": "bad", "note": "Direct, same-day, same-company precedent for how the market is currently pricing this specific deal — the negative reaction is the central fact this report is built around" },
+    { "ticker": "AMD", "event": "Jul 23 2026 Advancing AI event drove BofA to raise its target from $560 to $620", "date": "Jul 2026", "movePct": 8, "days": 2, "outcome": "good", "note": "Shows AMD can re-rate on a well-received strategic event — the World Labs deal has not (yet) had the same reception" }
+  ],
+  "sources": [
+    "https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/",
+    "https://newsroom.amd.com/news/amd-acquire-world-labs/",
+    "https://www.cnbc.com/2026/09/28/amd-fei-fei-li-world-labs.html",
+    "https://dividendcalculator.co/2026/09/24/amd-earnings/",
+    "https://www.tipranks.com/stocks/amd/earnings",
+    "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "REFRESH (รายงานก่อนหน้า 4 ส.ค. 2026) — ปรับลดเป็น HOLD: AMD ประกาศซื้อกิจการ World Labs ของ Fei-Fei Li ด้วยหุ้นทั้งหมดมูลค่า $8.2 พันล้าน เมื่อ 26 ก.ย. 2026 (งานวิจัย physical-AI/world-model คาดปิดดีลภายในสิ้นปี 2026) และหุ้นร่วง -3.61% จากข่าวนี้ (ปฏิกิริยาต่อความเสี่ยง dilution/integration) ปิดวันนี้ที่ $585.94 Consensus (นักวิเคราะห์ 55 คน, Strong Buy) อยู่ที่ $618.51 — upside แค่ +5.6% บางที่สุดในชุด refresh นี้ทั้งหมด BofA ปรับ target ขึ้นเป็น $720 หลังข่าว คิดเป็น upside +22.9% เป็นมุมมองที่ bullish กว่า",
+      "priceNote": "ลดลง -3.61% วันนี้จากข่าวซื้อกิจการ World Labs ด้วยหุ้นทั้งหมด $8.2 พันล้าน (ปฏิกิริยาเรื่อง dilution/integration)",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "งบ Q3 2026", "description": "ปฏิทินงบจากบุคคลที่สาม (TipRanks) รายงานว่ายืนยันแล้วสำหรับ 3 พ.ย. 2026 หลังตลาดปิด แม้ปฏิทิน IR ของ AMD เองยังไม่ประกาศ จับตาความเห็นแรกของผู้บริหารเรื่องการรวมกิจการ World Labs ควบคู่กับตัวเลขงบ" }
+      ],
+      "risks": [
+        "upside ต่อ consensus บีบแคบเหลือแค่ +5.6% — margin of safety บางที่สุดในชุด refresh นี้ หุ้นต้องการ catalyst ใหม่จริงๆ ไม่ใช่แค่ execution เพื่อรีเรทขึ้น",
+        "ดีล World Labs มูลค่า $8.2 พันล้านที่จ่ายด้วยหุ้นทั้งหมดเป็น dilutive และผลตอบแทนเชิงกลยุทธ์ (physical AI, หุ่นยนต์, รถยนต์ไร้คนขับ) เป็นเรื่องราวหลายปี ไม่ใช่ตัวขับเคลื่อนกำไรระยะใกล้ — ปฏิกิริยา -3.61% ของตลาดสะท้อนความกังขาจริง",
+        "นี่คือการซื้อกิจการใหญ่เป็นอันดับสองของ AMD (รองจากดีล Xilinx ~$50 พันล้าน) — ความเสี่ยงด้านการรวมกิจการในระดับนี้ไม่เล็ก",
+        "Fed hawkish (เพิ่งขึ้นดอกเบี้ยเป็น 3.75-4.00%) เพิ่ม discount rate ให้หุ้นที่เทรดที่ multiple สูงของ AI accelerator ซึ่งตอนนี้มี margin of safety จากนักวิเคราะห์ที่บางลง"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed ขึ้นดอกเบี้ยเป็น 3.75-4.00% วันที่ 16 ก.ย. 2026 FOMC ครั้งถัดไป 27-28 ต.ค. 2026 — อยู่ก่อนงบที่ประมาณการ 3 พ.ย. เพิ่ม noise เข้าไปในสถานการณ์ที่ margin บางอยู่แล้ว",
+        "inflationNote": "การขึ้นดอกเบี้ยมาจากเงินเฟ้อ — AMD มีกำไรและเงินทุนแข็งแรง แต่เทรดที่ multiple สูงของ AI accelerator ทำให้ไวต่อแรงกดดัน discount rate เพิ่มเติมบนดีลซื้อกิจการ dilutive ก้อนใหญ่ที่กำลังถูกย่อย",
+        "sectorImpact": "หุ้น AI accelerator ไวต่อนโยบาย Fed โดยรวมเพราะมูลค่าส่วนใหญ่ตั้งอยู่บนสมมติฐานการเติบโตหลายปี — Fed hawkish ซ้ำเติมการย่อยข่าว dilution จากดีล World Labs ที่กำลังดำเนินอยู่",
+        "summary": "ความเสี่ยง Fed ระดับ MEDIUM — ธุรกิจหลักของ AMD มีกำไรและเงินทุนแข็งแรง แต่ margin of safety จากนักวิเคราะห์ที่บางลงใหม่ บวกกับดีลซื้อกิจการ dilutive ก้อนใหญ่ เหลือพื้นที่น้อยลงสำหรับรองรับ multiple reset จาก Fed hawkish"
+      },
+      "entryStrategy": {
+        "verdict": "ผลตอบแทนเฉลี่ย ณ วัน catalyst ของ core lane อยู่ที่ -6.9% (n=54) — การซื้อที่ราคาปัจจุบัน $585.94 จึงไม่ใช่ทางเลือกหลัก ควรรอโซน $520-540 ถ้าจะเพิ่ม position นี่คือการปรับลดจาก BUY เป็น HOLD: ดีลซื้อกิจการ dilutive มูลค่า $8.2 พันล้านเพิ่งเกิดขึ้น และตลาดตัดสินเบื้องต้นเป็นลบ (-3.61%) ขณะที่ consensus upside บีบแคบเหลือ +5.6% ผู้ถือหุ้นเดิมรอความเห็นเรื่องการรวมกิจการถึง 3 พ.ย. ได้ ส่วนเงินใหม่ควรรอย่อจริงก่อน",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน หลังข่าว World Labs ทำให้หุ้นร่วง", "timing": "ตอนนี้" },
+          { "note": "โซนย่อลึกกว่าหลังย่อยข่าวซื้อกิจการ (preferred)", "timing": "ถ้าย่อ" },
+          { "note": "ย่อลึกตรงกับ bear case", "timing": "ถ้า AI capex ร่วงทั้งกลุ่มหรืองบ Q3 อ่อนแอ" }
+        ],
+        "tp1": { "note": "Base case — ตลาดย่อยข่าวดีล World Labs โดยไม่รีเรทลงเพิ่ม" },
+        "tp2": { "note": "Bull case — ใกล้ target ใหม่หลังดีลของ BofA" },
+        "tp3": { "note": "Moon case — เรื่องราว World Labs/physical AI เริ่มส่งผลต่อการเติบโตเร็วกว่าคาด" },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE ของ earnings_beat (-9.6%, n=42)",
+          "hardNote": "สัญญาณว่าตลาดกำลังมองดีล World Labs เป็นความผิดพลาดเชิงกลยุทธ์จริง ไม่ใช่แค่ dilution ระยะสั้น",
+          "rrNote": "Stop แคบเทียบ TP2 จากราคาปัจจุบัน",
+          "rrWarning": "R/R อ่อน — เหตุผลของการปรับลดเป็น HOLD"
+        }
+      },
+      "estimateDates": [
+        { "event": "งบ Q2 2026 (ผ่านไปแล้ว)", "note": "รายงานไปแล้ว" },
+        { "event": "ประกาศซื้อกิจการ World Labs (ผ่านไปแล้ว)", "note": "$8.2 พันล้านด้วยหุ้นทั้งหมด คาดปิดดีลสิ้นปี 2026 หุ้นร่วง -3.61% จากข่าว" },
+        { "event": "งบ Q3 2026", "note": "รายงานว่ายืนยันแล้วจากปฏิทินบุคคลที่สาม ปฏิทิน IR ของ AMD เองยังไม่อัปเดต" }
+      ]
+    }
+  }
+}

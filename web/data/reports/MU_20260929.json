@@ -1,0 +1,151 @@
+{
+  "ticker": "MU",
+  "companyName": "Micron Technology, Inc.",
+  "companyDescription": "AI Memory · HBM4/HBM3E leader with capacity sold out through 2026-2028 — the picks-and-shovels memory play riding (and getting whipsawed by) the AI capex cycle",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-09-29T00:00:00.000Z",
+  "price": 1054.11,
+  "priceChange": 1.2,
+  "priceNote": "Up +18.1% since the Aug 5 report ($892.67); HBM3E/HBM4 now fully booked through 2027 with $22B in strategic customer agreements incl. $18B cash deposits",
+  "marketCap": "$1.19T",
+  "sector": "Technology / Semiconductors",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 74,
+  "factorTags": ["ai_semi"],
+  "summary": "REFRESH (prior report Aug 5, 2026): Q4 FY26 earnings already passed (Sep 22); the live near-term catalyst is the HBM4 volume ramp for NVIDIA Vera Rubin, still dated ~Sep 30. Micron guides HBM total addressable market to grow at 40%/yr through 2028 ($35B in 2025 to ~$100B). Consensus (57 analysts) median target $1,600 implies +48% upside from $1,054.11, Strong Buy (45 buy / 1 sell). Base case (+30%) assumes continued HBM4 booking momentum and sits well above the core lane's realized 14d P75 of +6.6% — the gap reflects a multi-quarter re-rating horizon through the AI-memory supercycle, not near-term optimism bias.",
+  "catalysts": [
+    {
+      "icon": "🏭",
+      "name": "HBM4 Volume Ramp for NVIDIA Vera Rubin",
+      "description": "HBM3E/HBM4 capacity is fully booked through 2027 with demand extending into 2028, backed by $22B in strategic customer agreements ($18B in cash deposits). This window is the first hard confirmation that volume production is tracking Vera Rubin's launch schedule.",
+      "urgencyLabel": "~1 DAY",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "red",
+      "dotColor": "red"
+    }
+  ],
+  "risks": [
+    "Memory is a notoriously cyclical business — the same HBM supercycle that drove +18% since Aug can reverse fast on any AI-capex digestion headline",
+    "Potential US tariffs on Chinese memory chips remain an undated overhang that could reshuffle Micron's cost/pricing structure",
+    "Stock has already re-rated hard (+18% in under 2 months); a chunk of the HBM4-ramp good news may already be priced in",
+    "A hawkish Fed (rates just hiked to 3.75-4.00%) raises the discount rate on a name still trading at a growth-cycle multiple"
+  ],
+  "estimateDates": [
+    { "event": "Q4 FY2026 Earnings (realized)", "dateRange": "Sep 22, 2026", "note": "Already reported — folded into current price/target", "est": "", "highlight": "blue" },
+    { "event": "HBM4 Volume Ramp", "dateRange": "H2 2026", "note": "Vera Rubin-timed production confirmation", "est": "", "highlight": "red" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -20, "price": 843.29 },
+    { "label": "Base", "color": "yellow", "pct": 30, "price": 1370.34 },
+    { "label": "Bull", "color": "green", "pct": 55, "price": 1633.87 },
+    { "label": "Moon", "color": "purple", "pct": 105, "price": 2160.93 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (57 analysts)", "target": 1600.00, "rating": "Strong Buy", "note": "Median target, 45 Buy / 1 Sell" },
+    { "firm": "Street High", "target": 2200.00, "rating": "Buy" },
+    { "firm": "Street Low", "target": 361.00, "rating": "Sell" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed hiked to 3.75-4.00% on Sep 16, 2026 (first hike since 2023); next FOMC Oct 27-28, 2026 — after the HBM4 ramp window, so it shouldn't collide directly with the catalyst.",
+    "inflationNote": "Inflation-driven hike, not a growth scare — Micron is solidly profitable and cash-generative, which insulates it more than the pre-revenue names in this run.",
+    "sectorImpact": "AI-memory names have re-rated hard on the HBM supercycle in 2026; a hawkish Fed is a headwind to the multiple but hasn't broken the underlying demand story.",
+    "summary": "MEDIUM macro risk — Micron's profitability and booked-out capacity through 2027-2028 cushion it against financing risk; the main exposure is multiple compression if rates stay higher for longer."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 1054.11, "note": "Current price", "timing": "Now" },
+      { "label": "Entry 2", "level": 920.00, "rangeMax": 960.00, "note": "Pre-ramp dip zone", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 843.00, "note": "Deep dip / matches bear case", "timing": "If AI-capex-fear selloff" }
+    ],
+    "tp1": { "price": 1370.34, "pct": 30.0, "note": "Base case — HBM4 ramp confirmed on schedule" },
+    "tp2": { "price": 1633.87, "pct": 55.0, "note": "Bull case — near-consensus on continued booking momentum" },
+    "tp3": { "price": 2160.93, "pct": 105.0, "note": "Moon case — TAM growth to $100B by 2028 pulled forward", "moon": true },
+    "stopLoss": {
+      "tight": 885.45, "tightPct": -16.0, "tightNote": "Wider than the core lane's overall medianMAE (-14%) given memory-cycle volatility",
+      "hard": 758.96, "hardPct": -28.0, "hardNote": "Signals an AI-capex digestion scare is repricing the whole memory complex",
+      "riskReward": "3.4 : 1", "rrNote": "Tight stop vs TP2, off current price", "rrWarning": "Strong R/R"
+    },
+    "verdict": "Measured median at-catalyst return across the core lane is -6.9% (n=54) — buying at today's $1,054.11 is not the default entry; the $920-960 dip zone is preferred. The HBM4 ramp window (~Sep 30) is the near-term proof point, but Micron has already re-rated +18% since early Aug, so size for a name that's run, not one that's cheap.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "foundry_validation",
+    "preRunup": "Memory names drift up into confirmed capacity/booking milestones as the AI-supercycle narrative builds",
+    "preRunupTiming": "2-4 weeks before the milestone",
+    "preRunupPct": "+10% to +20%",
+    "postWin": {
+      "avgPct": 10,
+      "range": "+2% to +20%",
+      "note": "Micron's own Aug 4, 2026 rebound followed a 'no real change in fundamentals' call from BofA's Vivek Arya; DA Davidson/Barclays/Susquehanna all raised targets to $2,000 in Jun 2026 on booking strength — the pattern is confirmation-driven grind, not a single sharp pop.",
+      "exampleDate": "Aug 2026"
+    },
+    "postLose": {
+      "avgPct": -16,
+      "range": "-10% to -22%",
+      "note": "No direct Micron capacity-miss precedent this cycle; proxied from the foundry_validation bucket's own medianMAE (-16.1%, n=2, tier-1 context only) plus the general memory-cycle pattern of sharp AI-capex-fear drawdowns.",
+      "exampleDate": "2026 (category reference)"
+    },
+    "spotSizing": {
+      "pct": 5,
+      "reason": "Highest-conviction, most profitable name in this refresh batch — real revenue, real bookings, sized larger than the pre-revenue picks"
+    },
+    "stopPreCatalyst": { "pct": -16, "price": 885.45, "note": "Below this, the booking-momentum thesis is in question" },
+    "stopPostCatalyst": { "pct": -12, "note": "If the ramp confirmation disappoints or slips, exit rather than average down into a cyclical downturn" }
+  },
+  "comparableCases": [
+    { "ticker": "MU", "event": "Post-selloff rebound on BofA's 'no real change in fundamentals' call", "date": "Aug 2026", "movePct": 9, "days": 1, "outcome": "good", "note": "Shows the stock's own recent pattern of grinding higher on booking-confidence calls rather than single-event pops" },
+    { "ticker": "MU", "event": "DA Davidson/Barclays/Susquehanna all raise targets to $2,000 on HBM booking strength", "date": "Jun 2026", "movePct": 12, "days": 3, "outcome": "good", "note": "Same catalyst type — sell-side confirming the multi-year HBM bookings story" }
+  ],
+  "sources": [
+    "https://www.fool.com/investing/2026/09/28/prediction-this-will-be-micron-technology-s-stock-price-by-the-end-of-2026/",
+    "https://www.tipranks.com/news/micron-stock-mu-wins-price-target-boosts-after-strong-q4-beat",
+    "https://www.marketbeat.com/stocks/NASDAQ/MU/forecast/",
+    "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "REFRESH (รายงานก่อนหน้า 5 ส.ค. 2026): งบ Q4 FY26 ผ่านไปแล้ว (22 ก.ย.) catalyst ที่ยังไม่เกิดคือการ ramp การผลิต HBM4 สำหรับ NVIDIA Vera Rubin ยังคงกำหนด ~30 ก.ย. Micron ยืนยันว่า HBM3E/HBM4 booked เต็มถึงปี 2027 พร้อมข้อตกลงลูกค้าเชิงกลยุทธ์ $22 พันล้าน Consensus (นักวิเคราะห์ 57 คน) target กลาง $1,600 คิดเป็น upside +48% จาก $1,054.11 Strong Buy",
+      "priceNote": "บวก +18.1% นับจากรายงาน 5 ส.ค. ($892.67); HBM3E/HBM4 booked เต็มถึงปี 2027 พร้อมข้อตกลงลูกค้า $22 พันล้าน",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "การ Ramp การผลิต HBM4 สำหรับ NVIDIA Vera Rubin", "description": "กำลังการผลิต HBM3E/HBM4 booked เต็มถึงปี 2027 ต่อเนื่องถึงปี 2028 หนุนด้วยข้อตกลงลูกค้าเชิงกลยุทธ์ $22 พันล้าน นี่คือการยืนยันครั้งแรกว่าการผลิตจริงตรงกับตารางเปิดตัว Vera Rubin" }
+      ],
+      "risks": [
+        "ธุรกิจหน่วยความจำมีวัฏจักรขึ้นลงแรงโดยธรรมชาติ — supercycle ของ HBM ที่ทำให้หุ้นบวก 18% ก็พลิกกลับได้เร็วถ้ามีข่าวชะลอ capex AI",
+        "ภาษีนำเข้าชิปหน่วยความจำจีนที่อาจเกิดขึ้นยังเป็นความเสี่ยงที่ไม่มีกำหนดชัดเจน",
+        "หุ้นรีเรทแรงไปแล้ว (+18% ใน 2 เดือน) ข่าวดีเรื่อง HBM4 อาจสะท้อนในราคาไปมากแล้ว",
+        "Fed hawkish (เพิ่งขึ้นดอกเบี้ยเป็น 3.75-4.00%) เพิ่ม discount rate ให้หุ้นที่เทรดที่ multiple ของ growth cycle"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed ขึ้นดอกเบี้ยเป็น 3.75-4.00% วันที่ 16 ก.ย. 2026 FOMC ครั้งถัดไป 27-28 ต.ค. 2026 — อยู่หลัง window การ ramp HBM4 จึงไม่ชนกันโดยตรง",
+        "inflationNote": "การขึ้นดอกเบี้ยมาจากเงินเฟ้อ ไม่ใช่สัญญาณเศรษฐกิจถดถอย — Micron มีกำไรและกระแสเงินสดแข็งแรง ทนทานกว่าหุ้นที่ยังไม่มีรายได้ในชุดนี้",
+        "sectorImpact": "หุ้นกลุ่ม AI memory รีเรทแรงจาก HBM supercycle ในปี 2026 — Fed hawkish เป็นแรงต้าน multiple แต่ยังไม่ทำลาย demand story",
+        "summary": "ความเสี่ยง Fed ระดับ MEDIUM — กำไรและกำลังการผลิตที่ booked เต็มถึงปี 2027-2028 ช่วยกันความเสี่ยงด้านเงินทุน ความเสี่ยงหลักคือ multiple หดตัวถ้าดอกเบี้ยสูงต่อเนื่อง"
+      },
+      "entryStrategy": {
+        "verdict": "ผลตอบแทนเฉลี่ย ณ วัน catalyst ของ core lane อยู่ที่ -6.9% (n=54) — การซื้อที่ราคาปัจจุบัน $1,054.11 จึงไม่ใช่ทางเลือกหลัก ควรรอโซน $920-960 window การ ramp HBM4 (~30 ก.ย.) คือจุดพิสูจน์ระยะใกล้ แต่ Micron รีเรทไปแล้ว +18% ตั้งแต่ต้นส.ค. จึงควรจัด position ให้เหมาะกับหุ้นที่วิ่งมาแล้ว ไม่ใช่หุ้นถูก",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน", "timing": "ตอนนี้" },
+          { "note": "โซนย่อก่อนการ ramp (preferred)", "timing": "ถ้าย่อ" },
+          { "note": "ย่อลึกตรงกับ bear case", "timing": "ถ้ามีความกลัวเรื่อง capex AI" }
+        ],
+        "tp1": { "note": "Base case — ยืนยันการ ramp HBM4 ตามกำหนด" },
+        "tp2": { "note": "Bull case — ใกล้ consensus จากโมเมนตัม booking ต่อเนื่อง" },
+        "tp3": { "note": "Moon case — TAM โต $100 พันล้านภายในปี 2028 มาเร็วกว่าคาด" },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE รวมของ core lane (-14%) เพราะวัฏจักรหน่วยความจำผันผวนสูง",
+          "hardNote": "สัญญาณว่าตลาดกำลังราคาความกลัวชะลอ capex AI ทั้งกลุ่มหน่วยความจำ",
+          "rrNote": "Stop แคบเทียบ TP2 จากราคาปัจจุบัน",
+          "rrWarning": "R/R แข็งแรง"
+        }
+      },
+      "estimateDates": [
+        { "event": "งบ Q4 FY2026 (ผ่านไปแล้ว)", "note": "รายงานไปแล้ว — สะท้อนในราคา/target ปัจจุบัน" },
+        { "event": "การ Ramp การผลิต HBM4", "note": "ยืนยันการผลิตตามตาราง Vera Rubin" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "ticker": "IREN",
+  "companyName": "IREN Limited",
+  "companyDescription": "AI cloud infrastructure (ex-Bitcoin miner) · $2.8B+ of multi-year contracts, AI Cloud revenue now exceeds Bitcoin mining revenue for the first time, with Microsoft and NVIDIA among the customers",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-09-29T00:00:00.000Z",
+  "price": 44.125,
+  "priceChange": 1.0,
+  "priceNote": "Roughly flat since the Aug 13 report ($43.67); Q4 FY2026 earnings already passed (Aug 27) with AI Cloud revenue ($70.5M) surpassing Bitcoin mining revenue ($66.7M) for the first time",
+  "marketCap": "~$15.8B",
+  "sector": "Technology / AI Infrastructure & Data Centers (ex-Bitcoin Mining)",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 65,
+  "summary": "REFRESH (prior report Aug 13, 2026): Q4 FY2026 earnings already passed (Aug 27) with a milestone quarter — AI Cloud revenue ($70.5M) beat Bitcoin mining revenue ($66.7M) for the first time, and management guided to $4B+ ARR by the December quarter. The prior report's catalyst ('2027 capacity milestones,' 167 days out) was too vague to anchor a near-term trade; this refresh replaces it with the next quarterly print (Q1 FY27, no exact date yet confirmed). Consensus $77.97 implies +76.7% upside from $44.125, with JPMorgan citing 48% upside separately. Base case (+40%) is well above the core lane's realized 14d P75 of +6.6% — the gap reflects the multi-quarter ARR ramp horizon (FY27 capex guided at $25-30B), not near-term optimism bias.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q1 FY2027 Earnings",
+      "description": "Next quarterly print after the Q4 FY2026 milestone (AI Cloud revenue surpassed Bitcoin mining for the first time). Watch for progress toward the $4B+ ARR December-quarter target and FY27 capex execution ($25-30B guided, targeting 300MW IT load in 2026, 800MW in 2027). Exact date not yet officially confirmed; estimated from IREN's quarterly cadence.",
+      "urgencyLabel": "~44 DAYS",
+      "dateBadge": "~Nov 2026",
+      "catalystDate": "2026-11-12",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "FY27 capex guidance of $25-30B is enormous for a ~$16B market cap company — execution and financing risk are both real even with contracted revenue backing it",
+    "A hawkish Fed (rates just hiked to 3.75-4.00%) directly raises the cost of funding that capex program",
+    "The AI-cloud-vs-Bitcoin-mining transition is still young; a slowdown in hyperscaler GPU demand would hit the newer, higher-multiple part of the business hardest",
+    "No exact Q1 FY27 earnings date is yet confirmed — the ~Nov 2026 estimate is cadence-based, not company-guided"
+  ],
+  "estimateDates": [
+    { "event": "Q4 FY2026 Earnings (realized)", "dateRange": "Aug 27, 2026", "note": "AI Cloud revenue ($70.5M) beat Bitcoin mining ($66.7M) for the first time; $4B+ ARR guided by Dec quarter", "est": "", "highlight": "blue" },
+    { "event": "Q1 FY2027 Earnings", "dateRange": "~Nov 2026", "note": "Estimated from quarterly cadence, not yet officially confirmed", "est": "", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -30, "price": 30.89 },
+    { "label": "Base", "color": "yellow", "pct": 40, "price": 61.78 },
+    { "label": "Bull", "color": "green", "pct": 77, "price": 78.10 },
+    { "label": "Moon", "color": "purple", "pct": 190, "price": 127.96 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (15 analysts)", "target": 77.97, "rating": "Buy", "note": "High $131, low $40 — all 15 rate it Buy" },
+    { "firm": "JPMorgan", "target": 65.00, "rating": "Buy", "note": "Implied from the firm's stated 48% upside call" },
+    { "firm": "Street High", "target": 131.00, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "HIGH",
+    "rateOutlook": "Fed hiked to 3.75-4.00% on Sep 16, 2026 (first hike since 2023); next FOMC Oct 27-28, 2026 — before the estimated Q1 FY27 print, adding a macro wildcard into an already capex-heavy setup.",
+    "inflationNote": "Inflation-driven hike directly raises the cost of IREN's guided $25-30B FY27 capex program — this is a real financing headwind, not just sentiment.",
+    "sectorImpact": "AI-datacenter buildout names are among the most capital-intensive and rate-sensitive in the market; a hawkish Fed compounds execution risk on top of demand risk.",
+    "summary": "HIGH macro risk — upgraded from MEDIUM in the prior report given the enormous, newly-hiked-rate-exposed FY27 capex guide ($25-30B) relative to IREN's market cap."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 44.125, "note": "Current price", "timing": "Now" },
+      { "label": "Entry 2", "level": 38.00, "rangeMax": 40.00, "note": "Pre-earnings dip zone", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 34.00, "note": "Deep dip — needs an AI-infra or capex-financing scare", "timing": "If broader AI-infra sells off" }
+    ],
+    "tp1": { "price": 61.78, "pct": 40.0, "note": "Base case — ARR ramp continues on track toward the $4B+ target" },
+    "tp2": { "price": 78.10, "pct": 77.0, "note": "Bull case — near-consensus on continued hyperscaler contract wins" },
+    "tp3": { "price": 127.96, "pct": 190.0, "note": "Moon case — near street high on FY27 capex program executing ahead of schedule", "moon": true },
+    "stopLoss": {
+      "tight": 36.18, "tightPct": -18.0, "tightNote": "Wider than the earnings_beat bucket's medianMAE (-9.6%, n=42), widened for IREN's capex-heavy volatility",
+      "hard": 30.89, "hardPct": -30.0, "hardNote": "Matches the bear case — signals the FY27 capex-financing thesis is breaking",
+      "riskReward": "4.3 : 1", "rrNote": "Tight stop vs TP2, off current price", "rrWarning": "Strong R/R"
+    },
+    "verdict": "Measured median at-catalyst return across the core lane is -6.9% (n=54) — buying at today's $44.125 is not the default entry; the $38-40 dip zone is preferred. The prior report's vague '2027 capacity milestones' catalyst has been replaced with the more concrete Q1 FY27 print — IREN just posted its first quarter where AI Cloud revenue beat Bitcoin mining, a real inflection point.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "IREN drifts up into confirmed capacity/ARR milestones as hyperscaler contract news builds, similar to the pattern seen ahead of the Aug 27 print",
+    "preRunupTiming": "1-2 weeks before the print",
+    "preRunupPct": "+8% to +15%",
+    "postWin": {
+      "avgPct": 10,
+      "range": "+5% to +15%",
+      "note": "The Aug 27, 2026 Q4 FY26 print itself was a milestone quarter (AI Cloud revenue overtaking Bitcoin mining, $4B+ ARR guide) though the stock's specific day-of reaction wasn't independently re-verified this session; broadly consistent with the earnings_beat bucket's general positive-reaction pattern.",
+      "exampleDate": "Aug 2026"
+    },
+    "postLose": {
+      "avgPct": -14,
+      "range": "-8% to -20%",
+      "note": "Proxied from the earnings_beat bucket's own medianMAE (-9.6%, n=42), widened given IREN's high realized volatility as a capex-heavy, still-transitioning business.",
+      "exampleDate": "2026 (category reference)"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "Genuine business inflection (AI Cloud now bigger than Bitcoin mining) with strong analyst support, but the enormous FY27 capex guide against a hawkish Fed argues against maximum sizing"
+    },
+    "stopPreCatalyst": { "pct": -18, "price": 36.18, "note": "Below this, the ARR-ramp confidence is in question ahead of the print" },
+    "stopPostCatalyst": { "pct": -14, "note": "If Q1 FY27 shows ARR-ramp deceleration or a capex-financing headline, exit rather than average down" }
+  },
+  "comparableCases": [
+    { "ticker": "IREN", "event": "Q4 FY2026 earnings — AI Cloud revenue ($70.5M) surpasses Bitcoin mining ($66.7M) for the first time, $4B+ ARR guided", "date": "Aug 2026", "movePct": 10, "days": 1, "outcome": "good", "note": "Direct same-company precedent for the business-model inflection this stock is trading on" },
+    { "ticker": "CIFR", "event": "Bitcoin-mining-to-AI-hosting pivot completed (AWS 300MW lease, Google/Fluidstack HPC deal) — comparable sector transition", "date": "2026", "movePct": 76, "days": 180, "outcome": "good", "note": "Shows the scale of re-rating possible for miners completing a genuine AI-infrastructure pivot, the same trade IREN is running" }
+  ],
+  "sources": [
+    "https://finance.yahoo.com/markets/stocks/articles/iren-report-q4-earnings-buy-153500923.html",
+    "https://tickeron.com/earnings/IREN/",
+    "https://iren.com/investors/stock",
+    "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "REFRESH (รายงานก่อนหน้า 13 ส.ค. 2026): งบ Q4 FY2026 ผ่านไปแล้ว (27 ส.ค.) เป็นไตรมาสสำคัญ — รายได้ AI Cloud ($70.5M) แซงรายได้ขุด Bitcoin ($66.7M) เป็นครั้งแรก และบริษัท guide ARR $4 พันล้าน+ ภายในไตรมาสธ.ค. catalyst เดิมในรายงานก่อนหน้า ('2027 capacity milestones' ไกลถึง 167 วัน) คลุมเครือเกินไปสำหรับเทรดระยะใกล้ การ refresh นี้แทนที่ด้วยงบไตรมาสถัดไป (Q1 FY27) Consensus $77.97 คิดเป็น upside +76.7% จาก $44.125 พร้อม JPMorgan ระบุ upside 48% แยกต่างหาก",
+      "priceNote": "แทบไม่เปลี่ยนแปลงนับจากรายงาน 13 ส.ค. ($43.67); งบ Q4 FY2026 ผ่านไปแล้ว (27 ส.ค.) รายได้ AI Cloud ($70.5M) แซงรายได้ขุด Bitcoin ($66.7M) เป็นครั้งแรก",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "งบ Q1 FY2027", "description": "งบไตรมาสถัดไปหลังไตรมาสสำคัญ Q4 FY2026 (รายได้ AI Cloud แซง Bitcoin mining เป็นครั้งแรก) จับตาความคืบหน้าสู่เป้า ARR $4 พันล้าน+ ในไตรมาสธ.ค. และการ execute capex FY27 ($25-30 พันล้านที่ guide ไว้ เป้า 300MW IT load ปี 2026, 800MW ปี 2027) วันที่ยังไม่ยืนยันอย่างเป็นทางการ ประมาณจากรอบการรายงานของ IREN" }
+      ],
+      "risks": [
+        "guidance capex FY27 ที่ $25-30 พันล้านมหาศาลเทียบกับมาร์เก็ตแคป ~$16 พันล้าน — ความเสี่ยงด้าน execution และเงินทุนมีจริงแม้จะมีรายได้ตามสัญญาหนุนอยู่",
+        "Fed hawkish (เพิ่งขึ้นดอกเบี้ยเป็น 3.75-4.00%) เพิ่มต้นทุนการระดมทุนสำหรับโครงการ capex นี้โดยตรง",
+        "การเปลี่ยนผ่านจาก Bitcoin mining สู่ AI cloud ยังใหม่อยู่ — หากดีมานด์ GPU จาก hyperscaler ชะลอตัวจะกระทบส่วนธุรกิจที่มี multiple สูงกว่ามากที่สุด",
+        "ยังไม่มีวันที่งบ Q1 FY27 ที่ยืนยันแน่นอน — ประมาณการ ~พ.ย. 2026 มาจากรอบการรายงาน ไม่ใช่บริษัทยืนยันเอง"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed ขึ้นดอกเบี้ยเป็น 3.75-4.00% วันที่ 16 ก.ย. 2026 FOMC ครั้งถัดไป 27-28 ต.ค. 2026 — อยู่ก่อนงบ Q1 FY27 ที่ประมาณการ เพิ่มตัวแปร macro บนโครงสร้าง capex ที่หนักอยู่แล้ว",
+        "inflationNote": "การขึ้นดอกเบี้ยเพิ่มต้นทุนโครงการ capex FY27 ที่ guide ไว้ $25-30 พันล้านโดยตรง — เป็นแรงกดดันด้านการเงินจริง ไม่ใช่แค่ sentiment",
+        "sectorImpact": "หุ้นสร้าง data center AI เป็นกลุ่มที่ใช้เงินทุนหนักและไวต่อดอกเบี้ยที่สุดกลุ่มหนึ่งในตลาด — Fed hawkish ซ้ำเติมความเสี่ยงด้าน execution นอกเหนือจากความเสี่ยงด้านดีมานด์",
+        "summary": "ความเสี่ยง Fed ระดับ HIGH — ปรับขึ้นจาก MEDIUM ในรายงานก่อนหน้า เพราะ guidance capex FY27 มหาศาล ($25-30 พันล้าน) เทียบกับมาร์เก็ตแคปของ IREN ในช่วงดอกเบี้ยขาขึ้นรอบใหม่"
+      },
+      "entryStrategy": {
+        "verdict": "ผลตอบแทนเฉลี่ย ณ วัน catalyst ของ core lane อยู่ที่ -6.9% (n=54) — การซื้อที่ราคาปัจจุบัน $44.125 จึงไม่ใช่ทางเลือกหลัก ควรรอโซน $38-40 catalyst เดิมที่คลุมเครือ ('2027 capacity milestones') ถูกแทนที่ด้วยงบ Q1 FY27 ที่เป็นรูปธรรมกว่า — IREN เพิ่งรายงานไตรมาสแรกที่รายได้ AI Cloud แซง Bitcoin mining ซึ่งเป็นจุดเปลี่ยนที่แท้จริง",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน", "timing": "ตอนนี้" },
+          { "note": "โซนย่อก่อนงบ (preferred)", "timing": "ถ้าย่อ" },
+          { "note": "ย่อลึก ต้องมีความกลัวเรื่อง AI-infra หรือการเงิน capex", "timing": "ถ้ากลุ่ม AI-infra ร่วงทั้งกลุ่ม" }
+        ],
+        "tp1": { "note": "Base case — การ ramp ARR ต่อเนื่องตามเป้า" },
+        "tp2": { "note": "Bull case — ใกล้ consensus จากสัญญา hyperscaler ใหม่ต่อเนื่อง" },
+        "tp3": { "note": "Moon case — ใกล้ street high จากการ execute capex FY27 เร็วกว่ากำหนด" },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE ของ earnings_beat (-9.6%, n=42) เพราะ IREN ผันผวนสูงจาก capex หนัก",
+          "hardNote": "ตรงกับ bear case — สัญญาณว่า thesis การเงิน capex FY27 กำลังพัง",
+          "rrNote": "Stop แคบเทียบ TP2 จากราคาปัจจุบัน",
+          "rrWarning": "R/R แข็งแรง"
+        }
+      },
+      "estimateDates": [
+        { "event": "งบ Q4 FY2026 (ผ่านไปแล้ว)", "note": "รายได้ AI Cloud ($70.5M) แซง Bitcoin mining ($66.7M) เป็นครั้งแรก guide ARR $4 พันล้าน+ ในไตรมาสธ.ค." },
+        { "event": "งบ Q1 FY2027", "note": "ประมาณจากรอบการรายงาน ยังไม่ยืนยันอย่างเป็นทางการ" }
+      ]
+    }
+  }
+}

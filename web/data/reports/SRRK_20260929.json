@@ -1,0 +1,156 @@
+{
+  "ticker": "SRRK",
+  "companyName": "Scholar Rock Holding Corporation",
+  "companyDescription": "Single-asset biotech, now commercial-stage · ISEMBYLD (apitegromab-mstn) — first and only muscle-targeted treatment for SMA, FDA-approved Sep 11, 2026",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-09-29T00:00:00.000Z",
+  "price": 49.37,
+  "priceChange": 0.4,
+  "priceNote": "Roughly flat since the Aug 13 report ($49.10) — the PDUFA catalyst already fired: FDA approved ISEMBYLD on Sep 11, 2026, ahead of the Sep 30 action date",
+  "marketCap": "$6.22B",
+  "sector": "Healthcare / Biotechnology",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 64,
+  "summary": "REFRESH (prior report Aug 13, 2026) — CATALYST RESOLVED: the FDA approved ISEMBYLD (apitegromab-mstn) on Sep 11, 2026 — the first and only muscle-targeted SMA treatment, ahead of its Sep 30 PDUFA date. Jefferies raised its target to $65 (Buy) on the approval. Despite the positive outcome, the stock is roughly flat since Aug ($49.10 to $49.37) — the binary-event risk premium simply came out of the price rather than driving a fresh pop, consistent with a well-anticipated approval. The story is now commercial-execution, not regulatory-binary: the next catalyst is Q3 2026 earnings, the first quarter of real launch metrics. Consensus (Jefferies-anchored) $65 implies +31.7% upside from $49.37. Base case (+20%) is above the core lane's realized 14d P75 of +6.6% — the gap reflects a multi-quarter commercial-launch horizon, not optimism bias.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 2026 Earnings — First ISEMBYLD Launch Metrics",
+      "description": "First quarterly print since the Sep 11 FDA approval — the market's first real read on payer/formulary uptake and prescription volume for a muscle-targeted SMA drug. Exact date not yet company-confirmed; estimated from typical biotech reporting cadence.",
+      "urgencyLabel": "~45 DAYS",
+      "dateBadge": "~Nov 2026",
+      "catalystDate": "2026-11-13",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "The approval is done, but commercial execution is a different risk class — payer/formulary uptake for a rare-disease drug can lag the approval headline by quarters",
+    "Stock's muted reaction to a positive approval (flat since Aug) suggests the good news was well-anticipated and largely priced in — less room for a pure 'relief rally'",
+    "Manufacturing site readiness (second fill-finish facility) remains an operational dependency for supply as launch ramps",
+    "Single-asset biotech — ISEMBYLD is effectively the entire investment thesis, with no diversification if launch uptake disappoints",
+    "A hawkish Fed (rates just hiked to 3.75-4.00%) raises financing costs, though the approval reduces near-term capital-raise urgency"
+  ],
+  "estimateDates": [
+    { "event": "FDA Approval (realized)", "dateRange": "Sep 11, 2026", "note": "ISEMBYLD approved — ahead of the Sep 30 PDUFA date", "est": "", "highlight": "blue" },
+    { "event": "Q3 2026 Earnings", "dateRange": "~Nov 2026", "note": "First commercial-launch metrics quarter", "est": "", "highlight": "yellow" },
+    { "event": "Manufacturing Site Readiness", "dateRange": "Ongoing", "note": "Second fill-finish facility supports supply as launch scales", "est": "", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -30, "price": 34.56 },
+    { "label": "Base", "color": "yellow", "pct": 20, "price": 59.24 },
+    { "label": "Bull", "color": "green", "pct": 32, "price": 65.17 },
+    { "label": "Moon", "color": "purple", "pct": 50, "price": 74.06 }
+  ],
+  "analystTargets": [
+    { "firm": "Jefferies", "target": 65.00, "rating": "Buy", "note": "Raised post-approval, Sep 2026" },
+    { "firm": "BMO Capital", "target": 70.00, "rating": "Outperform", "note": "Prior to approval; likely to be revisited post-launch data" },
+    { "firm": "BofA Securities", "target": 58.00, "rating": "Buy" },
+    { "firm": "Truist Securities", "target": 55.00, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed hiked to 3.75-4.00% on Sep 16, 2026 (first hike since 2023); next FOMC Oct 27-28, 2026 — before the estimated Q3 earnings window, adding some macro noise into the print.",
+    "inflationNote": "Inflation-driven hike; the FDA approval materially reduces Scholar Rock's near-term financing dependency versus the pre-approval state, which cushions the macro exposure somewhat.",
+    "sectorImpact": "Commercial-stage biotech with an approved, differentiated drug is less rate-sensitive than pre-approval, cash-burning names — the story is now about launch execution, which is largely idiosyncratic.",
+    "summary": "MEDIUM macro risk — approval reduces financing urgency, but Scholar Rock is still pre-meaningful-revenue and will eventually need the capital markets to cushion the launch ramp; a hawkish Fed raises that future cost."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 49.37, "note": "Current price", "timing": "Now" },
+      { "label": "Entry 2", "level": 43.00, "rangeMax": 45.00, "note": "Pre-earnings dip zone", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 38.00, "note": "Deep dip — would imply the market is pricing a weak launch", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 59.24, "pct": 20.0, "note": "Base case — steady early launch uptake" },
+    "tp2": { "price": 65.17, "pct": 32.0, "note": "Bull case — near Jefferies' post-approval target" },
+    "tp3": { "price": 74.06, "pct": 50.0, "note": "Moon case — launch uptake beats expectations, target upgrades follow", "moon": true },
+    "stopLoss": {
+      "tight": 42.46, "tightPct": -14.0, "tightNote": "Wider than the earnings_beat bucket's medianMAE (-9.6%, n=42)",
+      "hard": 37.03, "hardPct": -25.0, "hardNote": "Near the pre-approval deep-dip zone — signals the launch thesis is breaking",
+      "riskReward": "2.3 : 1", "rrNote": "Tight stop vs TP2, off current price", "rrWarning": "Fair R/R"
+    },
+    "verdict": "Measured median at-catalyst return across the core lane is -6.9% (n=54) — buying at today's $49.37 is not the default entry; the $43-45 pre-earnings dip is preferred. The regulatory binary has already resolved favorably (approved Sep 11); the remaining trade is a commercial-launch execution story, which is a lower-variance but also lower-adrenaline setup than the original PDUFA play.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Now that the regulatory binary has resolved, SRRK should behave more like a standard commercial-stage biotech into its next print — modest pre-earnings drift on launch-metrics anticipation",
+    "preRunupTiming": "1-2 weeks before the print",
+    "preRunupPct": "+5% to +10%",
+    "postWin": {
+      "avgPct": 15,
+      "range": "+10% to +25%",
+      "note": "No SRRK-specific commercial-launch print exists yet (this is the first one). Proxied from general small-cap biotech launch-quarter beats and from the muted approval-day reaction itself, which suggests the stock will react to concrete uptake numbers more than headline sentiment.",
+      "exampleDate": "N/A — first commercial quarter"
+    },
+    "postLose": {
+      "avgPct": -18,
+      "range": "-10% to -25%",
+      "note": "Rare-disease drug launches that miss uptake expectations in their first reporting quarter typically see sharp de-rates as the market recalibrates peak-sales assumptions; no SRRK-specific precedent exists yet.",
+      "exampleDate": "N/A — first commercial quarter"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "Regulatory risk is now off the table (approved), but this is a single-asset biotech entering its first commercial quarter — size moderately for launch-execution uncertainty"
+    },
+    "stopPreCatalyst": { "pct": -14, "price": 42.46, "note": "Below this, pre-print sentiment on launch uptake has turned negative" },
+    "stopPostCatalyst": { "pct": -14, "note": "If the first commercial quarter shows weak uptake, exit rather than wait for a second data point" }
+  },
+  "comparableCases": [
+    { "ticker": "SRRK", "event": "FDA approves ISEMBYLD (apitegromab) for SMA — first and only muscle-targeted treatment", "date": "Sep 2026", "movePct": 0.5, "days": 1, "outcome": "mixed", "note": "The approval itself barely moved the stock, confirming it was well-anticipated — the real re-rating opportunity is now the launch data, not the approval headline" },
+    { "ticker": "AGIO", "event": "AQVESME (mitapivat) FDA approval for thalassemia anemia — comparable rare-hematology/neuromuscular approval pattern", "date": "Dec 2025", "movePct": 19.97, "days": 1, "outcome": "good", "note": "Shows the wider range of possible approval-day reactions in rare-disease biotech — SRRK's muted move sits at the low end of that range" }
+  ],
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/0001727196/000110465926107273/tm2625362d1_ex99-1.htm",
+    "https://www.biospace.com/press-releases/scholar-rock-announces-fda-approval-of-isembyld-apitegromab-mstn-the-first-and-only-muscle-targeted-treatment-for-children-and-adults-with-spinal-muscular-atrophy-sma",
+    "https://investors.scholarrock.com/news-releases/news-release-details/scholar-rock-announces-fda-review-apitegromab-biologics-license",
+    "https://finance.yahoo.com/healthcare/articles/scholar-rock-announces-fda-approval-222500403.html",
+    "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "REFRESH (รายงานก่อนหน้า 13 ส.ค. 2026) — catalyst เกิดขึ้นแล้ว: FDA อนุมัติ ISEMBYLD (apitegromab-mstn) เมื่อ 11 ก.ย. 2026 — เป็นยาตัวแรกและตัวเดียวที่มุ่งเป้าที่กล้ามเนื้อสำหรับ SMA เร็วกว่ากำหนด PDUFA เดิม 30 ก.ย. Jefferies ปรับ target ขึ้นเป็น $65 (Buy) หลังอนุมัติ แม้ผลจะเป็นบวก หุ้นแทบไม่ขยับนับจากส.ค. ($49.10 เป็น $49.37) — premium ความเสี่ยง binary หายไปจากราคาแล้วแทนที่จะทำให้หุ้นพุ่งใหม่ สอดคล้องกับการอนุมัติที่ตลาดคาดไว้แล้ว ตอนนี้เรื่องราวกลายเป็นการ execute เชิงพาณิชย์ ไม่ใช่ binary ด้านกฎระเบียบอีกต่อไป",
+      "priceNote": "แทบไม่เปลี่ยนแปลงนับจากรายงาน 13 ส.ค. ($49.10) — catalyst PDUFA เกิดขึ้นแล้ว: FDA อนุมัติ ISEMBYLD เมื่อ 11 ก.ย. 2026 เร็วกว่ากำหนด 30 ก.ย.",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "งบ Q3 2026 — ตัวเลข launch ISEMBYLD ครั้งแรก", "description": "งบไตรมาสแรกหลังอนุมัติ FDA เมื่อ 11 ก.ย. — เป็นตัวชี้วัดจริงครั้งแรกของการเบิกจ่ายประกัน/ยอดใบสั่งยาสำหรับยาที่มุ่งเป้ากล้ามเนื้อสำหรับ SMA วันที่ยังไม่ยืนยันจากบริษัท ประมาณจากรอบรายงานทั่วไปของ biotech" }
+      ],
+      "risks": [
+        "การอนุมัติเสร็จแล้ว แต่การ execute เชิงพาณิชย์เป็นความเสี่ยงคนละแบบ — การเบิกจ่ายประกันสำหรับยาโรคหายากอาจตามหลังข่าวอนุมัติไปหลายไตรมาส",
+        "ปฏิกิริยาหุ้นที่แผ่วต่อข่าวอนุมัติเชิงบวก (แทบไม่ขยับนับจากส.ค.) บ่งบอกว่าข่าวดีถูกคาดไว้แล้วและสะท้อนในราคาไปมาก — เหลือพื้นที่น้อยสำหรับ relief rally แท้ๆ",
+        "ความพร้อมของโรงงานผลิต (fill-finish แห่งที่สอง) ยังเป็นปัจจัยพึ่งพาด้าน operation สำหรับ supply ขณะ launch ขยายตัว",
+        "biotech สินทรัพย์เดียว — ISEMBYLD คือ thesis การลงทุนทั้งหมด ไม่มีการกระจายความเสี่ยงถ้า launch ไม่เป็นไปตามคาด",
+        "Fed hawkish (เพิ่งขึ้นดอกเบี้ยเป็น 3.75-4.00%) เพิ่มต้นทุนทางการเงิน แม้การอนุมัติจะลดความเร่งด่วนในการระดมทุนระยะสั้น"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed ขึ้นดอกเบี้ยเป็น 3.75-4.00% วันที่ 16 ก.ย. 2026 FOMC ครั้งถัดไป 27-28 ต.ค. 2026 — อยู่ก่อนช่วงงบ Q3 ที่ประมาณการ เพิ่ม noise เข้าไปในงบ",
+        "inflationNote": "การขึ้นดอกเบี้ยมาจากเงินเฟ้อ — การอนุมัติ FDA ลดการพึ่งพาเงินทุนระยะสั้นของ Scholar Rock ลงมาก เทียบกับช่วงก่อนอนุมัติ ช่วยลดความเสี่ยง macro ได้บ้าง",
+        "sectorImpact": "biotech ระยะพาณิชย์ที่มียาที่อนุมัติแล้วและแตกต่างจากคู่แข่งไวต่อดอกเบี้ยน้อยกว่าบริษัทก่อนอนุมัติที่เผาเงินสด — ตอนนี้เรื่องราวคือการ execute launch ซึ่งเป็นเรื่องเฉพาะบริษัทเป็นหลัก",
+        "summary": "ความเสี่ยง Fed ระดับ MEDIUM — การอนุมัติลดความเร่งด่วนด้านเงินทุน แต่ Scholar Rock ยังไม่มีรายได้มีนัยสำคัญและจะต้องพึ่งตลาดทุนอีกครั้งเพื่อหนุน launch ramp Fed hawkish เพิ่มต้นทุนอนาคตนั้น"
+      },
+      "entryStrategy": {
+        "verdict": "ผลตอบแทนเฉลี่ย ณ วัน catalyst ของ core lane อยู่ที่ -6.9% (n=54) — การซื้อที่ราคาปัจจุบัน $49.37 จึงไม่ใช่ทางเลือกหลัก ควรรอโซน $43-45 ก่อนงบ ความเสี่ยงด้านกฎระเบียบคลี่คลายไปแล้ว (อนุมัติ 11 ก.ย.) สิ่งที่เหลือคือเรื่องการ execute เชิงพาณิชย์ ซึ่งผันผวนน้อยกว่าแต่ก็ไม่ตื่นเต้นเท่าดีล PDUFA เดิม",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน", "timing": "ตอนนี้" },
+          { "note": "โซนย่อก่อนงบ (preferred)", "timing": "ถ้าย่อ" },
+          { "note": "ย่อลึก ต้องบ่งชี้ว่า launch อ่อนแอ", "timing": "ย่อลึกเท่านั้น" }
+        ],
+        "tp1": { "note": "Base case — การเบิกจ่ายช่วง launch เป็นไปอย่างสม่ำเสมอ" },
+        "tp2": { "note": "Bull case — ใกล้ target หลังอนุมัติของ Jefferies" },
+        "tp3": { "note": "Moon case — การเบิกจ่ายช่วง launch เกินคาด ตามด้วยการปรับ target ขึ้น" },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE ของ earnings_beat (-9.6%, n=42)",
+          "hardNote": "ใกล้โซนย่อลึกก่อนอนุมัติ — สัญญาณว่า thesis เรื่อง launch กำลังพัง",
+          "rrNote": "Stop แคบเทียบ TP2 จากราคาปัจจุบัน",
+          "rrWarning": "R/R พอใช้"
+        }
+      },
+      "estimateDates": [
+        { "event": "อนุมัติ FDA (เกิดขึ้นแล้ว)", "note": "อนุมัติ ISEMBYLD แล้ว — เร็วกว่ากำหนด PDUFA 30 ก.ย." },
+        { "event": "งบ Q3 2026", "note": "ไตรมาสแรกของตัวเลข launch เชิงพาณิชย์" },
+        { "event": "ความพร้อมโรงงานผลิต", "note": "โรงงาน fill-finish แห่งที่สองหนุน supply ขณะ launch ขยายตัว" }
+      ]
+    }
+  }
+}
