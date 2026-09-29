@@ -1,21 +1,30 @@
 import { ConfigService } from "@nestjs/config";
-import { ClaudeClient } from "./claude.client";
+import { ClaudeClient, maxTokensFor } from "./claude.client";
 import { TradeForPrompt } from "./prompt";
+import { computeTradeMetrics } from "./trade-rules";
 
-const trade: TradeForPrompt = {
-  id: "trade-1",
-  ticker: "AVGO",
+const base = {
   entryPrice: 389.55,
   shares: 5,
+  exitedShares: 0,
   entryDate: "2026-06-01",
   plannedTP: [420, 460, 500],
   plannedSL: 360,
-  notes: null,
+  plannedHardSL: null,
   currentPrice: 396.3,
+};
+const trade: TradeForPrompt = {
+  ...base,
+  id: "trade-1",
+  ticker: "AVGO",
+  catalystType: null,
+  notes: null,
+  metrics: computeTradeMetrics(base),
 };
 
 interface ExpectedCreateParams {
   model: string;
+  max_tokens: number;
   tool_choice: unknown;
 }
 type CreateCallArgs = [ExpectedCreateParams, { timeout: number }];
@@ -46,13 +55,12 @@ describe("ClaudeClient", () => {
                 tradeId: "trade-1",
                 verdict: "HOLD",
                 thesisIntact: true,
-                stopBreached: false,
-                atRisk: false,
+                addMore: "WAIT",
+                stopDecision: "NOT_APPLICABLE",
                 summary: "on track",
                 summaryTh: "ยังตามแผน",
                 action: "hold",
                 actionTh: "ถือ",
-                color: "green",
               },
             ],
           },
@@ -146,5 +154,59 @@ describe("ClaudeClient", () => {
 
     const [params] = create.mock.calls[0] as CreateCallArgs;
     expect(params.model).toBe("claude-sonnet-5");
+  });
+
+  it("exposes the configured model name for audit rows", () => {
+    expect(new ClaudeClient(makeConfig()).modelName).toBe("claude-sonnet-5");
+    expect(
+      new ClaudeClient(makeConfig({ ANTHROPIC_MODEL: "claude-opus-5" }))
+        .modelName,
+    ).toBe("claude-opus-5");
+  });
+
+  it("scales max_tokens with trade count (capped)", async () => {
+    expect(maxTokensFor(1)).toBe(1724);
+    expect(maxTokensFor(10)).toBe(8024);
+    expect(maxTokensFor(1000)).toBe(32000);
+
+    const create = jest.fn().mockResolvedValue({
+      stop_reason: "tool_use",
+      usage: { input_tokens: 1, output_tokens: 1 },
+      content: [
+        {
+          type: "tool_use",
+          id: "t",
+          name: "submit_validation",
+          input: { results: [] },
+        },
+      ],
+    });
+    const client = new ClaudeClient(makeConfig());
+    (
+      client as unknown as { client: { messages: { create: typeof create } } }
+    ).client = { messages: { create } };
+    await client.validate([trade, { ...trade, id: "trade-2" }]);
+    const [params] = create.mock.calls[0] as CreateCallArgs;
+    expect(params.max_tokens).toBe(maxTokensFor(2));
+  });
+
+  it("throws on a max_tokens-truncated response instead of trusting partial tool input", async () => {
+    const create = jest.fn().mockResolvedValue({
+      stop_reason: "max_tokens",
+      usage: { input_tokens: 500, output_tokens: 1724 },
+      content: [
+        {
+          type: "tool_use",
+          id: "t",
+          name: "submit_validation",
+          input: { results: [] },
+        },
+      ],
+    });
+    const client = new ClaudeClient(makeConfig());
+    (
+      client as unknown as { client: { messages: { create: typeof create } } }
+    ).client = { messages: { create } };
+    await expect(client.validate([trade])).rejects.toThrow(/max_tokens/);
   });
 });

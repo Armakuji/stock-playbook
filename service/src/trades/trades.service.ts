@@ -50,6 +50,7 @@ export class TradesService {
           entryDate: new Date(dto.entryDate),
           plannedTP: dto.plannedTP,
           plannedSL: dto.plannedSL,
+          plannedHardSL: dto.plannedHardSL ?? null,
           status: "open",
           notes: dto.notes,
         },
@@ -90,6 +91,9 @@ export class TradesService {
         }),
         ...(dto.plannedTP !== undefined && { plannedTP: dto.plannedTP }),
         ...(dto.plannedSL !== undefined && { plannedSL: dto.plannedSL }),
+        ...(dto.plannedHardSL !== undefined && {
+          plannedHardSL: dto.plannedHardSL,
+        }),
         ...(dto.notes !== undefined && { notes: dto.notes }),
       },
       include: { exits: true, validation: true },

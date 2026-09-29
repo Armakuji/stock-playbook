@@ -91,6 +91,7 @@ export default async function JournalPage() {
     tp2: r.entryStrategy.tp2.price,
     tp3: r.entryStrategy.tp3.price,
     tightStop: r.entryStrategy.stopLoss.tight ?? null,
+    hardStop: r.entryStrategy.stopLoss.hard ?? null,
     reportDate: r.generatedAt.slice(0, 10).replace(/-/g, ""),
     catalystType: r.catalystSpot?.catalystType ?? null,
   }));
@@ -103,7 +104,7 @@ export default async function JournalPage() {
   const grouped = getAllReportsGrouped();
   const reportsByTicker: Record<
     string,
-    { reportDate: string; price: number; tp1: number; tp2: number; tp3: number; tightStop: number | null; catalystType: string | null }[]
+    { reportDate: string; price: number; tp1: number; tp2: number; tp3: number; tightStop: number | null; hardStop: number | null; catalystType: string | null }[]
   > = {};
   for (const [ticker, reps] of Object.entries(grouped)) {
     reportsByTicker[ticker] = reps.map((r) => ({
@@ -113,6 +114,7 @@ export default async function JournalPage() {
       tp2: r.entryStrategy.tp2.price,
       tp3: r.entryStrategy.tp3.price,
       tightStop: r.entryStrategy.stopLoss.tight ?? null,
+      hardStop: r.entryStrategy.stopLoss.hard ?? null,
       catalystType: r.catalystSpot?.catalystType ?? null,
     }));
   }

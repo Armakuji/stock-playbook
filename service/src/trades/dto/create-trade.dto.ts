@@ -40,6 +40,12 @@ export class CreateTradeDto {
   @IsNumber()
   plannedSL!: number;
 
+  // Optional structural stop below plannedSL (the report's stopLoss.hard).
+  // null clears it on update.
+  @IsOptional()
+  @IsNumber()
+  plannedHardSL?: number | null;
+
   @IsOptional()
   @IsString()
   notes?: string;

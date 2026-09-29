@@ -4,7 +4,7 @@ import { useState, useCallback, useEffect, useRef } from "react";
 import type { LivePrice } from "@/app/api/prices/route";
 import Link from "next/link";
 import { useLang } from "@/lib/LanguageContext";
-import { Trade, CatalystType, TradeExit, ValidatorResult, AiValidateQuota } from "@/lib/journal-types";
+import { Trade, CatalystType, TradeExit, ValidatorResult, AiValidateQuota, AddMoreCall, StopDecision } from "@/lib/journal-types";
 import { JournalStats, realizedPnL as calcPnL, holdDays } from "@/lib/journal-math";
 import { readError } from "@/lib/auth-client";
 
@@ -17,6 +17,7 @@ export interface ReportOption {
   tp2:          number;
   tp3:          number;
   tightStop:    number | null;
+  hardStop:     number | null;
   reportDate:   string; // YYYYMMDD
   catalystType: string | null;
 }
@@ -257,6 +258,7 @@ function TradeForm({ initial, reportOptions, reportsByTicker, onSave, onCancel }
       entryPrice:       r.price,
       plannedTP:        [r.tp1, r.tp2, r.tp3],
       plannedSL:        r.tightStop ?? prev.plannedSL,
+      plannedHardSL:    r.hardStop ?? null,
       linkedReportDate: r.reportDate,
       catalystType:     (r.catalystType as CatalystType) ?? prev.catalystType,
     }));
@@ -284,6 +286,7 @@ function TradeForm({ initial, reportOptions, reportsByTicker, onSave, onCancel }
         entryPrice:       r.price,
         plannedTP:        [r.tp1, r.tp2, r.tp3],
         plannedSL:        r.tightStop ?? prev.plannedSL,
+        plannedHardSL:    r.hardStop ?? null,
         linkedReportDate: r.reportDate,
         catalystType:     (r.catalystType as CatalystType) ?? prev.catalystType,
       }));
@@ -478,6 +481,9 @@ function TradeForm({ initial, reportOptions, reportsByTicker, onSave, onCancel }
         <Field label="Tight Stop $">
           <input style={inputStyle} type="number" step="0.01" value={t.plannedSL || ""} onChange={(e) => field("plannedSL", parseFloat(e.target.value) || 0)} />
         </Field>
+        <Field label="Hard Stop $ (optional)">
+          <input style={inputStyle} type="number" step="0.01" value={t.plannedHardSL || ""} onChange={(e) => field("plannedHardSL", parseFloat(e.target.value) || null)} />
+        </Field>
         <Field label="TP1 $">
           <input style={inputStyle} type="number" step="0.01" value={t.plannedTP[0] || ""} onChange={(e) => setTP(0, parseFloat(e.target.value) || 0)} />
         </Field>
@@ -622,12 +628,28 @@ const VALIDATOR_COLORS: Record<string, { bg: string; border: string; text: strin
   red:    { bg: "#ef444412", border: "#ef444435", text: "#ef4444" },
 };
 
+const ADD_MORE_META: Record<AddMoreCall, { en: string; th: string; color: string }> = {
+  BUY_DIP:  { en: "🟢 BUY THE DIP", th: "🟢 เติมได้ถ้าย่อ", color: "#10b981" },
+  WAIT:     { en: "🟡 WAIT TO ADD", th: "🟡 รอก่อนค่อยเติม", color: "#f59e0b" },
+  DONT_ADD: { en: "🔴 DON'T ADD",  th: "🔴 ห้ามเติม",      color: "#ef4444" },
+};
+
+const STOP_DECISION_LABEL: Record<StopDecision, { en: string; th: string }> = {
+  HOLD_TO_HARD_STOP: { en: "HOLD TO HARD STOP", th: "ถือถึง HARD STOP" },
+  CUT_NOW:           { en: "CUT AT TIGHT STOP", th: "ตัดที่ TIGHT STOP" },
+  EXIT_IMMEDIATELY:  { en: "EXIT NOW",          th: "ออกทันที" },
+};
+
 function ValidatorSection({ result, generatedAt }: { result: ValidatorResult; generatedAt: string }) {
   const { lang } = useLang();
   const th = lang === "th";
   const c = VALIDATOR_COLORS[result.color] ?? VALIDATOR_COLORS.yellow;
   const summaryText = th ? (result.summaryTh || result.summary) : result.summary;
   const actionText = th ? (result.actionTh || result.action) : result.action;
+  const tightBreached = result.tightStopBreached ?? result.stopBreached ?? false;
+  const hardBreached = result.hardStopBreached ?? false;
+  const addMore = result.addMore ? ADD_MORE_META[result.addMore] : null;
+  const stopDecisionLabel = result.stopDecision ? STOP_DECISION_LABEL[result.stopDecision][th ? "th" : "en"] : null;
   const d = new Date(generatedAt);
   const dateStr = d.toLocaleDateString("en-US", { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" });
   return (
@@ -643,14 +665,34 @@ function ValidatorSection({ result, generatedAt }: { result: ValidatorResult; ge
         }}>
           {result.verdict}
         </span>
-        {result.stopBreached && (
+        {hardBreached && (
+          <span style={{ fontSize: 9, fontWeight: 800, color: "#ef4444", fontFamily: "var(--font-mono, monospace)", background: "#ef444415", border: "1px solid #ef444330", borderRadius: 5, padding: "2px 7px" }}>
+            🚨 HARD STOP BREACHED
+          </span>
+        )}
+        {tightBreached && !hardBreached && (
           <span style={{ fontSize: 9, fontWeight: 800, color: "#ef4444", fontFamily: "var(--font-mono, monospace)", background: "#ef444415", border: "1px solid #ef444330", borderRadius: 5, padding: "2px 7px" }}>
             🚨 STOP BREACHED
           </span>
         )}
-        {result.atRisk && !result.stopBreached && (
+        {stopDecisionLabel && (
+          <span style={{ fontSize: 9, fontWeight: 800, color: c.text, fontFamily: "var(--font-mono, monospace)", background: c.bg, border: `1px solid ${c.border}`, borderRadius: 5, padding: "2px 7px" }}>
+            {stopDecisionLabel}
+          </span>
+        )}
+        {result.atRisk && !tightBreached && (
           <span style={{ fontSize: 9, fontWeight: 800, color: "#f59e0b", fontFamily: "var(--font-mono, monospace)", background: "#f59e0b12", border: "1px solid #f59e0b30", borderRadius: 5, padding: "2px 7px" }}>
             ⚠ AT RISK
+          </span>
+        )}
+        {addMore && (
+          <span title={th ? "ควรเติมเพิ่มไหม" : "Add more?"} style={{ fontSize: 9, fontWeight: 800, color: addMore.color, fontFamily: "var(--font-mono, monospace)", background: `${addMore.color}14`, border: `1px solid ${addMore.color}35`, borderRadius: 5, padding: "2px 7px" }}>
+            {th ? addMore.th : addMore.en}
+          </span>
+        )}
+        {typeof result.slBufferPct === "number" && !tightBreached && (
+          <span style={{ fontSize: 9, color: "#64748b", fontFamily: "var(--font-mono, monospace)" }}>
+            SL buffer {result.slBufferPct.toFixed(1)}%
           </span>
         )}
         <span style={{ fontSize: 9, color: "#334155", fontFamily: "var(--font-mono, monospace)", marginLeft: "auto" }}>
@@ -1883,6 +1925,7 @@ export interface ReportDateOption {
   tp2:          number;
   tp3:          number;
   tightStop:    number | null;
+  hardStop:     number | null;
   catalystType: string | null;
 }
 

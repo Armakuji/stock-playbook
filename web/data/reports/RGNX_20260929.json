@@ -1,152 +1,171 @@
 {
   "ticker": "RGNX",
   "companyName": "REGENXBIO Inc.",
-  "companyDescription": "AAV gene therapy developer · NAVSUNLI (RGX-121) for Hunter syndrome — FDA aligned on a resubmission path in Jul 2026, confirming no additional studies needed; expedited review promised on resubmission",
+  "companyDescription": "AAV gene therapy developer · RGX-121/NAVSUNLI for MPS II now on FDA clinical hold with no near-term resubmission expected — but RGX-202 (Duchenne) already met its Phase III primary endpoint and BLA submission is guided for this quarter, plus a partnered retina program (ABBV-RGX-314) with positive 3-year durability data",
   "exchange": "NASDAQ",
   "generatedAt": "2026-09-29T00:00:00.000Z",
-  "price": 8.62,
-  "priceChange": -1.2,
-  "priceNote": "Down -19.6% since the Aug 10 report ($10.72) despite continued positive regulatory news — a genuine value expansion, not a thesis break",
-  "marketCap": "~$460M",
-  "sector": "Healthcare / Gene Therapy (Rare Disease)",
+  "price": 7.56,
+  "priceChange": 1.2,
+  "priceNote": "⚠️ CATALYST CORRECTION: today's earlier RGNX report (also dated Sep 29, written before this refresh) used $8.62 and framed NAVSUNLI resubmission as imminent — that was wrong. Live price is $7.56 (-12.3% vs that draft). Independent research for this refresh surfaced a Aug 24, 2026 FDA clinical hold on RGX-121 that the prior draft never incorporated.",
+  "marketCap": "~$500M",
+  "sector": "Healthcare / Gene Therapy (Multi-Asset AAV Platform)",
   "verdict": "SPECULATIVE",
   "scoreLabel": "Speculative",
-  "score": 60,
-  "summary": "REFRESH (prior report Aug 10, 2026): REGENXBIO confirmed the FDA has aligned on a path forward for NAVSUNLI's BLA resubmission — no additional RGX-121 studies required, and FDA will review the resubmission on an expedited basis. The company plans to resubmit within Q3 2026, which ends Sep 30, so the resubmission itself is imminent. Despite this continued positive news, shares are down -19.6% since Aug — this looks like drift/profit-taking rather than a thesis break, which makes the entry more attractive, not less: consensus $23.73 (9 analysts, high $50, low $10, all-Buy) now implies +175.3% upside from $8.62, the widest in this refresh batch. Base case (+55%) is well above the core lane's realized 14d P75 of +6.6% — the gap reflects the multi-quarter path from resubmission to potential accelerated approval, not near-term optimism bias.",
+  "score": 48,
+  "summary": "⚠️ THESIS BROKEN (catalyst pivot, not a full washout): the prior report's near-term catalyst — an imminent NAVSUNLI (RGX-121) BLA resubmission by end of Q3 2026 — is void. On Aug 24, 2026, the FDA placed a clinical hold on RGX-121 after asymptomatic spinal MRI findings (small nodules/cystic masses, characterized as nonserious/likely benign) turned up in 5 trial participants dosed 3-6 years earlier; REGENXBIO stated it 'does not expect to resubmit the RGX-121 BLA in the near term.' That specific catalyst is dead for this cycle. The real near-term catalyst is a different pipeline asset: RGX-202 for Duchenne muscular dystrophy already met its Phase III AFFINITY DUCHENNE primary endpoint with high statistical significance in Q2 2026, its confirmatory study is fully enrolled ahead of schedule, and management guided a BLA submission this quarter (Q3 2026, ending Sep 30). Analysts have largely held their ground post-clinical-hold — 11 analysts, consensus $23.73 (Strong Buy 6 / Buy 3 / Hold 2), reiterations as recent as Sep 28 (H.C. Wainwright $21) and Sep 25 (Stifel $42) — one analyst called the RGX-121 setback 'disappointing' but said 'larger catalysts remain intact,' referring to RGX-202. Cash runway >$310M pro forma into Q4 2027 reduces near-term financing risk. This is a corrected, more cautious thesis, not a dead one.",
   "catalysts": [
     {
       "icon": "⚖️",
-      "name": "NAVSUNLI BLA Resubmission",
-      "description": "FDA has aligned with REGENXBIO on the resubmission path (no additional studies needed) and committed to an expedited review. Company plans to resubmit within Q3 2026 — this window covers the resubmission itself, with labeling discussions to begin shortly after.",
+      "name": "RGX-202 Duchenne BLA Submission",
+      "description": "Management guided on the Q2 2026 earnings call that the Duchenne BLA submission is planned 'this quarter' (Q3 2026, ending Sep 30). Phase III AFFINITY DUCHENNE already met its primary endpoint with high statistical significance; the confirmatory study is fully enrolled ahead of schedule. Exact submission day not company-confirmed.",
       "urgencyLabel": "~1 DAY",
-      "dateBadge": "~Q3 2026 (by Sep 30)",
+      "dateBadge": "Q3 2026 (by Sep 30)",
       "catalystDate": "2026-09-30",
       "badgeColor": "red",
-      "dotColor": "red"
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "👁️",
+      "name": "ABBV-RGX-314 Wet AMD Pivotal Topline Data",
+      "description": "Partnered with AbbVie. Pivotal-trial topline data for wet AMD expected Q4 2026, alongside an actively enrolling NAAVIGATE Phase IIb/III trial in diabetic retinopathy — where REGENXBIO just reported positive 3-year durability data (Sep 24, 2026): 60% of long-term participants achieved a >2-step DRSS improvement without additional treatment.",
+      "urgencyLabel": "~Q4 2026",
+      "dateBadge": "Q4 2026",
+      "catalystDate": "2026-11-15",
+      "badgeColor": "blue",
+      "dotColor": "gray"
     }
   ],
   "risks": [
-    "A resubmission is not an approval — even with FDA alignment on no additional studies, the accelerated-approval decision itself is a later, separate binary event",
-    "Stock is down -19.6% since the last report with no negative company-specific news identified — could reflect broader small-cap biotech rotation or profit-taking after the initial Type A meeting pop",
-    "Analyst target dispersion is extremely wide ($10-$50) — a sub-$500M market cap gene-therapy name with real methodology disagreement on peak sales",
-    "Post-approval confirmatory study requirements (to be discussed during BLA review) could weigh on the long-term economics even if the near-term approval succeeds"
+    "RGX-121/NAVSUNLI is not paused-and-resuming — REGENXBIO explicitly said it does NOT expect to resubmit the BLA in the near term; treat this program as impaired, not merely delayed, until new data changes that",
+    "The safety finding (spinal MRI abnormalities in dosed patients) is specific to intracisternal/intraventricular AAV dosing — investors should watch whether it raises any read-through concern for other REGENXBIO delivery routes, even though management has not flagged one",
+    "RGX-202's 'this quarter' BLA-submission guidance is company language, not an FDA-committed date — submission could slip into Q4 without formally breaking guidance",
+    "A sub-$500M market cap gene-therapy name with genuinely wide analyst target dispersion ($10-$50) — real methodology disagreement on how much of the platform's multi-asset value the market should price in after a setback",
+    "This report replaces an internally-inconsistent same-day draft that priced NAVSUNLI as imminent — a reminder that same-day 'fresh' isn't automatically accurate; always re-verify against a primary source before trusting a catalyst date"
   ],
   "estimateDates": [
-    { "event": "FDA Type A Meeting (realized)", "dateRange": "Jul 2026", "note": "Positive — no additional RGX-121 studies required for resubmission", "est": "", "highlight": "blue" },
-    { "event": "NAVSUNLI BLA Resubmission", "dateRange": "~Q3 2026", "note": "Company-guided window; FDA has committed to expedited review", "est": "", "highlight": "red" },
-    { "event": "RGX-202 (Duchenne) BLA Pathway", "dateRange": "H2 2026", "note": "Separate pipeline asset advancing in parallel", "est": "", "highlight": "yellow" }
+    { "event": "FDA Clinical Hold on RGX-121 (realized)", "dateRange": "Aug 24, 2026", "note": "Spinal MRI findings in 5 long-term dosed patients; company does not expect near-term BLA resubmission", "est": "", "highlight": "red" },
+    { "event": "RGX-202 Duchenne BLA Submission", "dateRange": "Q3 2026 (by Sep 30)", "note": "Company-guided window; Phase III primary endpoint already met", "est": "", "highlight": "blue" },
+    { "event": "ABBV-RGX-314 Wet AMD Pivotal Topline Data", "dateRange": "Q4 2026", "note": "Partnered with AbbVie; diabetic retinopathy arm shows positive 3-year durability", "est": "", "highlight": "yellow" }
   ],
   "scenarios": [
-    { "label": "Bear", "color": "red", "pct": -30, "price": 6.03 },
-    { "label": "Base", "color": "yellow", "pct": 55, "price": 13.36 },
-    { "label": "Bull", "color": "green", "pct": 115, "price": 18.53 },
-    { "label": "Moon", "color": "purple", "pct": 290, "price": 33.62 }
+    { "label": "Bear", "color": "red", "pct": -35, "price": 4.91 },
+    { "label": "Base", "color": "yellow", "pct": 40, "price": 10.58 },
+    { "label": "Bull", "color": "green", "pct": 90, "price": 14.36 },
+    { "label": "Moon", "color": "purple", "pct": 210, "price": 23.44 }
   ],
   "analystTargets": [
-    { "firm": "Stifel Nicolaus", "target": 42.00, "rating": "Buy", "note": "Highest named target, carried from prior coverage" },
-    { "firm": "Consensus (9 analysts)", "target": 23.73, "rating": "Buy", "note": "High $50, low $10 — all 9 rate it Buy" },
-    { "firm": "Morgan Stanley", "target": 16.00, "rating": "Buy", "note": "Most conservative named target — flags timeline/probability caution" }
+    { "firm": "Stifel Nicolaus", "target": 42.00, "rating": "Buy", "note": "Reiterated Sep 25, 2026, post-clinical-hold" },
+    { "firm": "Consensus (11 analysts)", "target": 23.73, "rating": "Buy", "note": "High $50, low $10; 6 Strong Buy / 3 Buy / 2 Hold" },
+    { "firm": "H.C. Wainwright", "target": 21.00, "rating": "Buy", "note": "Reiterated Sep 28, 2026" },
+    { "firm": "Bank of America", "target": 15.00, "rating": "Buy", "note": "Most conservative named target, reiterated Sep 21, 2026" }
   ],
   "macroRisk": {
     "fedRisk": "MEDIUM",
-    "rateOutlook": "Fed hiked to 3.75-4.00% on Sep 16, 2026 (first hike since 2023); next FOMC Oct 27-28, 2026 — after the resubmission window.",
-    "inflationNote": "Inflation-driven hike; REGENXBIO turned profitable in Q2 2026 on a $100M AbbVie milestone, which cushions financing risk somewhat versus a pure cash-burning biotech.",
-    "sectorImpact": "Ultra-rare-disease gene therapy names trade on binary regulatory catalysts more than macro data, but a hawkish Fed still compresses the small-cap biotech multiple broadly.",
-    "summary": "MEDIUM macro risk — a recent profitable quarter (AbbVie milestone) reduces near-term financing dependency, but this remains a small-cap name sensitive to broad risk-off moves."
+    "rateOutlook": "Fed hiked to 3.75-4.00% on Sep 16, 2026 (first hike since 2023); next FOMC Oct 27-28, 2026 — after the RGX-202 BLA-submission window.",
+    "inflationNote": "Inflation-driven hike; REGENXBIO's >$310M pro forma cash runway into Q4 2027 meaningfully cushions financing risk versus a pure cash-burning biotech.",
+    "sectorImpact": "Ultra-rare/multi-asset gene therapy names trade on binary regulatory catalysts more than macro data, but a hawkish Fed still compresses the small-cap biotech multiple broadly.",
+    "summary": "MEDIUM macro risk — the multi-year cash runway reduces near-term financing dependency, but this remains a small-cap name sensitive to broad risk-off moves, now compounded by real program-specific setback risk on RGX-121."
   },
   "entryStrategy": {
     "entryLevels": [
-      { "label": "Entry 1", "level": 8.62, "note": "Current price", "timing": "Now" },
-      { "label": "Entry 2", "level": 7.20, "rangeMax": 7.60, "note": "Pre-resubmission dip zone", "timing": "If dips", "preferred": true },
-      { "label": "Entry 3", "level": 6.00, "note": "Deep dip / matches bear case", "timing": "If broader biotech sells off" }
+      { "label": "Entry 1", "level": 7.56, "note": "Current price", "timing": "Now" },
+      { "label": "Entry 2", "level": 6.40, "rangeMax": 6.80, "note": "Post-clinical-hold consolidation zone", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 5.30, "note": "Deep dip / near bear case", "timing": "If broader biotech sells off or RGX-202 submission slips" }
     ],
-    "tp1": { "price": 13.36, "pct": 55.0, "note": "Base case — clean resubmission, expedited review proceeds on track" },
-    "tp2": { "price": 18.53, "pct": 115.0, "note": "Bull case — near-consensus on accelerated-approval progress" },
-    "tp3": { "price": 33.62, "pct": 290.0, "note": "Moon case — approval secured, RGX-202 Duchenne pathway also advances", "moon": true },
+    "tp1": { "price": 10.58, "pct": 40.0, "note": "Base case — RGX-202 BLA submitted on schedule this quarter, no further RGX-121-style surprises; Base assumes the multi-month path through submission, not the 14-day North Star window" },
+    "tp2": { "price": 14.36, "pct": 90.0, "note": "Bull case — RGX-202 submission confirmed plus continued accelerated-approval alignment, approaches BofA's conservative $15 target" },
+    "tp3": { "price": 23.44, "pct": 210.0, "note": "Moon case — RGX-202 approval pathway de-risks further and retina program delivers, full re-rate toward consensus · 2027", "moon": true },
     "stopLoss": {
-      "tight": 7.15, "tightPct": -17.0, "tightNote": "Wider than the regulatory_approval bucket's medianMAE (-9.3%, n=6)",
-      "hard": 6.03, "hardPct": -30.0, "hardNote": "Matches the bear case — signals the resubmission thesis is breaking",
-      "riskReward": "6.7 : 1", "rrNote": "Tight stop vs TP2, off current price", "rrWarning": "Very strong R/R — reflects genuine sub-$500M-cap optionality"
+      "tight": 6.05, "tightPct": -20.0, "tightNote": "Wider than the regulatory_approval bucket's medianMAE (-9.3%, n=6) — widened further given the added RGX-121 program-impairment uncertainty",
+      "hard": 4.91, "hardPct": -35.0, "hardNote": "Matches the bear case — signals the RGX-202 submission itself is slipping or facing new FDA pushback",
+      "riskReward": "5.8 : 1", "rrNote": "Tight stop vs TP2, off current price", "rrWarning": "Still a strong R/R, but genuinely wider stop than before given the confirmed setback"
     },
-    "verdict": "Measured median at-catalyst return across the core lane is -6.9% (n=54) — buying at today's $8.62 is not the default entry; the $7.20-7.60 dip is preferred. The -19.6% drift since Aug looks like an opportunity, not a warning — the underlying regulatory story has only gotten better (FDA alignment, expedited-review commitment) since the last report.",
+    "verdict": "Measured median at-catalyst return across the core lane is -6.9% (n=54) — buying at today's $7.56 is not the default entry; the $6.40-6.80 zone is preferred. This is a corrected thesis, not a broken one: the specific catalyst this pick was built on (NAVSUNLI resubmission) is void near-term, but RGX-202's Phase III win and this-quarter BLA guidance is a real, still-intact near-term catalyst that analysts have largely kept faith in post-setback.",
     "approach": "Scale In"
   },
   "catalystSpot": {
     "catalystType": "regulatory_approval",
-    "preRunup": "RGNX popped on the initial Jul 2026 Type A meeting news but has since drifted down, showing the resubmission-window run-up hasn't started yet — plausible setup for a move as the Sep 30 window approaches",
-    "preRunupTiming": "1-2 weeks before the resubmission window",
-    "preRunupPct": "+5% to +15%",
+    "preRunup": "REGENXBIO's stock reacted negatively and immediately to the Aug 24 clinical-hold news; no meaningful pre-runup has built yet into the RGX-202 BLA-submission window since the market is still digesting the RGX-121 setback",
+    "preRunupTiming": "N/A this cycle — sentiment reset first",
+    "preRunupPct": "n/a (post-setback reset)",
     "postWin": {
-      "avgPct": 20,
-      "range": "+10% to +30%",
-      "note": "REGENXBIO's own Jul 2026 Type A meeting news (FDA alignment on no additional studies) drove a positive reaction; the regulatory_approval bucket in skill-feedback shows a median excess of +3.3pp vs SPY (n=6), among the stronger catalyst types.",
+      "avgPct": 15,
+      "range": "+8% to +25%",
+      "note": "REGENXBIO's own Jul 2026 Type A meeting news (a DIFFERENT, now-void catalyst) drove a positive reaction when it looked like good regulatory news; the regulatory_approval bucket in skill-feedback shows a median excess of +3.3pp vs SPY (n=6). A clean RGX-202 BLA submission this quarter would likely produce a similar modest positive move, not a re-rate on its own — approval itself is the bigger event, still quarters away.",
       "exampleDate": "Jul 2026"
     },
     "postLose": {
-      "avgPct": -15,
-      "range": "-10% to -25%",
-      "note": "No RGNX-specific resubmission-rejection precedent exists (this is a resubmission, not yet a decision); proxied from the regulatory_approval bucket's own medianMAE (-9.3%, n=6) as the general downside reference.",
-      "exampleDate": "2026 (category reference)"
+      "avgPct": -12,
+      "range": "-8% to -20%",
+      "note": "REGENXBIO's own Aug 24, 2026 clinical-hold reaction on RGX-121 is the direct precedent for how this stock reacts to genuine bad regulatory news on one of its programs.",
+      "exampleDate": "Aug 2026"
     },
     "spotSizing": {
-      "pct": 3,
-      "reason": "Sub-$500M market cap with extremely wide analyst dispersion ($10-$50) — real optionality but genuine uncertainty, size small"
+      "pct": 2,
+      "reason": "Cut from 3% in the same-day draft — one of three pipeline programs just took a real regulatory hit, and while RGX-202 remains intact, conviction should reflect the confirmed setback, not just the surviving optionality"
     },
-    "stopPreCatalyst": { "pct": -17, "price": 7.15, "note": "Below this, the market is pricing a resubmission delay or setback" },
-    "stopPostCatalyst": { "pct": -15, "note": "If the resubmission slips past Q3 2026 or the FDA raises new concerns, exit on confirmation" }
+    "stopPreCatalyst": { "pct": -20, "price": 6.05, "note": "Below this, the market is pricing a slip in the RGX-202 submission itself or a second program-level setback" },
+    "stopPostCatalyst": { "pct": -15, "note": "If RGX-202 submission slips past Q3 2026 or the FDA raises new concerns on it, exit on confirmation" }
   },
   "comparableCases": [
-    { "ticker": "RGNX", "event": "FDA Type A meeting confirms no additional RGX-121 studies needed for resubmission", "date": "Jul 2026", "movePct": 15, "days": 1, "outcome": "good", "note": "Direct same-company, same-asset precedent for continued positive regulatory momentum" },
+    { "ticker": "RGNX", "event": "FDA places clinical hold on RGX-121 after spinal MRI findings in long-term dosed patients", "date": "Aug 2026", "movePct": -12, "days": 5, "outcome": "bad", "note": "The event this refresh corrects for — same company, direct precedent for how much this stock moves on genuine program-level regulatory setbacks" },
+    { "ticker": "RGNX", "event": "FDA Type A meeting confirms no additional RGX-121 studies needed (now superseded by the Aug 24 clinical hold)", "date": "Jul 2026", "movePct": 15, "days": 1, "outcome": "good", "note": "Illustrates the range of reaction to REGENXBIO regulatory news, though this specific outcome was later overtaken by events" },
     { "ticker": "AGIO", "event": "Mitapivat sickle cell PDUFA process — comparable ultra-rare-disease gene/biologic regulatory pathway", "date": "2026", "movePct": 20, "days": 1, "outcome": "good", "note": "Illustrates the range of outcomes possible when a rare-disease regulatory process concludes positively" }
   ],
+  "rankChangeSource": {
+    "headline": "REGENXBIO Announces Regulatory Update on RGX-121 for MPS II (FDA clinical hold)",
+    "url": "https://www.stocktitan.net/news/RGNX/",
+    "date": "Aug 2026"
+  },
   "sources": [
-    "https://ir.regenxbio.com/news-releases/news-release-details/regenxbio-announces-alignment-fda-path-forward-navsunlitm-bla",
-    "https://finance.yahoo.com/healthcare/articles/regenxbio-shares-rise-plans-resubmit-144600974.html",
-    "https://seekingalpha.com/article/4918315-regenxbio-strong-buy-on-fda-course-reversal-navsunli-potential-aa-dmd-filing",
-    "https://ir.regenxbio.com/news-releases/news-release-details/regenxbio-reports-second-quarter-2026-financial-results-and",
+    "https://www.stocktitan.net/news/RGNX/",
+    "https://stockanalysis.com/stocks/rgnx/",
+    "https://stockanalysis.com/stocks/rgnx/forecast/",
     "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html"
   ],
   "i18n": {
     "th": {
-      "summary": "REFRESH (รายงานก่อนหน้า 10 ส.ค. 2026): REGENXBIO ยืนยันว่า FDA เห็นพ้องกับแนวทางการยื่น BLA ใหม่ของ NAVSUNLI — ไม่ต้องมีการศึกษาเพิ่มเติมสำหรับ RGX-121 และ FDA สัญญาจะพิจารณาแบบเร่งด่วน บริษัทวางแผนยื่นใหม่ภายใน Q3 2026 ซึ่งสิ้นสุด 30 ก.ย. จึงใกล้เกิดขึ้นมาก แม้ข่าวจะยังเป็นบวกต่อเนื่อง หุ้นลดลง -19.6% นับจากส.ค. — ดูเหมือนเป็นการพักฐาน/ทำกำไรมากกว่า thesis พัง ทำให้จุดเข้าน่าสนใจขึ้นไม่ใช่ลดลง consensus $23.73 (นักวิเคราะห์ 9 คน) คิดเป็น upside +175.3% จาก $8.62 กว้างที่สุดในชุด refresh นี้",
-      "priceNote": "ลดลง -19.6% นับจากรายงาน 10 ส.ค. ($10.72) แม้มีข่าวกฎระเบียบเชิงบวกต่อเนื่อง — เป็นการขยายมูลค่าที่แท้จริง ไม่ใช่ thesis พัง",
+      "summary": "⚠️ THESIS ต้องปรับ (ไม่ใช่พังทั้งหมด) — catalyst ใกล้ตัวที่รายงานฉบับก่อนใช้ (การยื่น BLA ใหม่ของ NAVSUNLI ภายใน Q3 2026) เป็นโมฆะแล้ว วันที่ 24 ส.ค. 2026 FDA สั่ง clinical hold กับ RGX-121 หลังพบความผิดปกติที่กระดูกสันหลังแบบไม่มีอาการในผู้ป่วย 5 รายที่ได้รับยาไปแล้ว 3-6 ปี บริษัทระบุว่า 'ไม่คาดว่าจะยื่น BLA ใหม่ในระยะใกล้' catalyst ที่แท้จริงตอนนี้คือ RGX-202 สำหรับ Duchenne ซึ่งผ่าน primary endpoint ของ Phase III AFFINITY DUCHENNE แล้วใน Q2 2026 และบริษัท guide ว่าจะยื่น BLA ในไตรมาสนี้ นักวิเคราะห์ส่วนใหญ่ยังคง rating Buy ไว้หลังข่าวลบ (11 คน consensus $23.73)",
+      "priceNote": "⚠️ แก้ไข catalyst: รายงาน RGNX ฉบับก่อนหน้าในวันเดียวกัน (ก่อน refresh นี้) ใช้ราคา $8.62 และเข้าใจผิดว่าการยื่นใหม่ของ NAVSUNLI ใกล้เกิดขึ้น — ราคาสด $7.56 (-12.3% จากฉบับนั้น) การวิจัยรอบนี้พบข่าว FDA clinical hold วันที่ 24 ส.ค. ที่ฉบับก่อนไม่เคยรวมเข้าไป",
       "scoreLabel": "Speculative",
       "catalysts": [
-        { "name": "ยื่น BLA ใหม่ของ NAVSUNLI", "description": "FDA เห็นพ้องกับแนวทางการยื่นใหม่ของ REGENXBIO (ไม่ต้องศึกษาเพิ่ม) และสัญญาจะพิจารณาแบบเร่งด่วน บริษัทวางแผนยื่นใหม่ภายใน Q3 2026 — window นี้ครอบคลุมการยื่นเอง พร้อมการหารือเรื่อง labeling ที่จะเริ่มทันทีหลังจากนั้น" }
+        { "name": "การยื่น BLA ใหม่ของ RGX-202 (Duchenne)", "description": "ผู้บริหาร guide ในการประชุมผลประกอบการ Q2 2026 ว่าจะยื่น BLA ภายในไตรมาสนี้ Phase III AFFINITY DUCHENNE ผ่าน primary endpoint แล้วอย่างมีนัยสำคัญทางสถิติ การศึกษายืนยันลงทะเบียนครบแล้วก่อนกำหนด" },
+        { "name": "ข้อมูล Topline การศึกษา Pivotal ของ ABBV-RGX-314 (Wet AMD)", "description": "ร่วมมือกับ AbbVie ข้อมูล topline คาดว่าจะออก Q4 2026 พร้อมการศึกษา NAAVIGATE สำหรับ diabetic retinopathy ที่เพิ่งรายงานข้อมูล durability 3 ปีเชิงบวก" }
       ],
       "risks": [
-        "การยื่นใหม่ไม่ใช่การอนุมัติ — แม้ FDA จะเห็นพ้องว่าไม่ต้องศึกษาเพิ่ม การตัดสินใจ accelerated approval เองยังเป็น event แบบ binary ที่แยกและเกิดทีหลัง",
-        "หุ้นลดลง -19.6% นับจากรายงานล่าสุดโดยไม่มีข่าวลบเฉพาะบริษัท — อาจสะท้อนการหมุน biotech ขนาดเล็กในวงกว้างหรือการทำกำไรหลังข่าว Type A meeting",
-        "target นักวิเคราะห์กระจายกว้างมาก ($10-$50) — หุ้น gene therapy มาร์เก็ตแคปต่ำกว่า 500 ล้านที่มีความเห็นต่างจริงเรื่องยอดขายสูงสุด",
-        "ข้อกำหนดการศึกษายืนยันหลังอนุมัติ (ที่จะหารือระหว่างพิจารณา BLA) อาจกดดันเศรษฐศาสตร์ระยะยาวแม้การอนุมัติระยะใกล้จะสำเร็จ"
+        "RGX-121/NAVSUNLI ไม่ใช่แค่หยุดชั่วคราว — บริษัทระบุชัดว่าจะไม่ยื่น BLA ใหม่ในระยะใกล้ ควรมองว่าโปรแกรมนี้เสียหาย ไม่ใช่แค่ล่าช้า จนกว่าจะมีข้อมูลใหม่",
+        "ปัญหาด้านความปลอดภัย (ความผิดปกติที่กระดูกสันหลัง) เฉพาะเจาะจงกับวิธีให้ยาแบบ intracisternal/intraventricular — ควรจับตาว่าจะกระทบความเชื่อมั่นต่อ delivery route อื่นของบริษัทหรือไม่",
+        "การ guide ว่าจะยื่น RGX-202 'ไตรมาสนี้' เป็นคำพูดของบริษัท ไม่ใช่วันที่ FDA ผูกมัด อาจเลื่อนไป Q4 ได้โดยไม่ถือว่าผิด guidance",
+        "มาร์เก็ตแคปต่ำกว่า 500 ล้านดอลลาร์ที่มี target นักวิเคราะห์กระจายกว้างจริง ($10-$50)",
+        "รายงานฉบับนี้แทนที่ฉบับก่อนหน้าในวันเดียวกันที่มีข้อมูลไม่สอดคล้องกัน — เตือนใจว่าความ 'สด' ในวันเดียวกันไม่ได้แปลว่าถูกต้องเสมอไป"
       ],
       "macroRisk": {
-        "rateOutlook": "Fed ขึ้นดอกเบี้ยเป็น 3.75-4.00% วันที่ 16 ก.ย. 2026 FOMC ครั้งถัดไป 27-28 ต.ค. 2026 — อยู่หลัง window การยื่นใหม่",
-        "inflationNote": "การขึ้นดอกเบี้ยมาจากเงินเฟ้อ — REGENXBIO มีกำไรใน Q2 2026 จาก milestone ของ AbbVie $100 ล้าน ช่วยลดความเสี่ยงด้านเงินทุนได้บ้างเทียบกับ biotech ที่เผาเงินสดล้วนๆ",
-        "sectorImpact": "หุ้น gene therapy โรคหายากมากเทรดตาม catalyst กฎระเบียบแบบ binary มากกว่าข้อมูล macro แต่ Fed hawkish ยังกด multiple ของ biotech ขนาดเล็กโดยรวม",
-        "summary": "ความเสี่ยง Fed ระดับ MEDIUM — ไตรมาสที่มีกำไรล่าสุด (milestone AbbVie) ลดการพึ่งพาเงินทุนระยะสั้น แต่ยังเป็นหุ้นขนาดเล็กที่ไวต่อการ risk-off ในวงกว้าง"
+        "rateOutlook": "Fed ขึ้นดอกเบี้ยเป็น 3.75-4.00% วันที่ 16 ก.ย. 2026 FOMC ครั้งถัดไป 27-28 ต.ค. 2026 — อยู่หลัง window การยื่น RGX-202",
+        "inflationNote": "การขึ้นดอกเบี้ยมาจากเงินเฟ้อ — เงินสด pro forma กว่า $310M ที่ใช้ได้ถึง Q4 2027 ช่วยลดความเสี่ยงด้านเงินทุนได้มาก",
+        "sectorImpact": "หุ้น gene therapy หลายสินทรัพย์เทรดตาม catalyst กฎระเบียบแบบ binary มากกว่าข้อมูล macro แต่ Fed hawkish ยังกด multiple ของ biotech ขนาดเล็ก",
+        "summary": "ความเสี่ยง Fed ระดับ MEDIUM — เงินสดที่มีหลายปีลดการพึ่งพาเงินทุนระยะสั้น แต่ตอนนี้มีความเสี่ยงเฉพาะโปรแกรมเพิ่มเข้ามาจากเคส RGX-121"
       },
       "entryStrategy": {
-        "verdict": "ผลตอบแทนเฉลี่ย ณ วัน catalyst ของ core lane อยู่ที่ -6.9% (n=54) — การซื้อที่ราคาปัจจุบัน $8.62 จึงไม่ใช่ทางเลือกหลัก ควรรอโซน $7.20-7.60 การลดลง -19.6% นับจากส.ค. ดูเหมือนโอกาสมากกว่าสัญญาณเตือน — เรื่องราวกฎระเบียบพื้นฐานดีขึ้นเท่านั้นนับจากรายงานล่าสุด (FDA เห็นพ้อง คำมั่นพิจารณาเร่งด่วน)",
+        "verdict": "ผลตอบแทนเฉลี่ย ณ วัน catalyst ของ core lane อยู่ที่ -6.9% (n=54) — การซื้อที่ราคาปัจจุบัน $7.56 จึงไม่ใช่ทางเลือกหลัก ควรรอโซน $6.40-6.80 นี่คือการปรับ thesis ไม่ใช่ thesis ที่พังทั้งหมด — catalyst เดิม (NAVSUNLI) เป็นโมฆะ แต่ RGX-202 ที่ผ่าน Phase III และ guide ว่าจะยื่น BLA ไตรมาสนี้ยังเป็นของจริง",
         "entryLevels": [
           { "note": "ราคาปัจจุบัน", "timing": "ตอนนี้" },
-          { "note": "โซนย่อก่อนการยื่นใหม่ (preferred)", "timing": "ถ้าย่อ" },
-          { "note": "ย่อลึกตรงกับ bear case", "timing": "ถ้ากลุ่ม biotech ร่วงทั้งกลุ่ม" }
+          { "note": "โซนพักฐานหลัง clinical hold (preferred)", "timing": "ถ้าย่อ" },
+          { "note": "ย่อลึกตรงกับ bear case", "timing": "ถ้ากลุ่ม biotech ร่วงทั้งกลุ่มหรือ RGX-202 เลื่อนยื่น" }
         ],
-        "tp1": { "note": "Base case — ยื่นใหม่ราบรื่น การพิจารณาเร่งด่วนดำเนินตามแผน" },
-        "tp2": { "note": "Bull case — ใกล้ consensus จากความคืบหน้า accelerated approval" },
-        "tp3": { "note": "Moon case — ได้รับอนุมัติ พร้อม RGX-202 Duchenne pathway คืบหน้าด้วย" },
+        "tp1": { "note": "Base case — ยื่น RGX-202 ตามกำหนดไตรมาสนี้ ไม่มีเซอร์ไพรส์ลบเพิ่ม" },
+        "tp2": { "note": "Bull case — ยืนยันการยื่น RGX-202 พร้อม alignment accelerated approval ต่อเนื่อง" },
+        "tp3": { "note": "Moon case — เส้นทางอนุมัติ RGX-202 ชัดเจนขึ้นและโปรแกรม retina ส่งมอบผลดี · ปี 2027" },
         "stopLoss": {
-          "tightNote": "กว้างกว่า medianMAE ของ regulatory_approval (-9.3%, n=6)",
-          "hardNote": "ตรงกับ bear case — สัญญาณว่า thesis การยื่นใหม่กำลังพัง",
-          "rrNote": "Stop แคบเทียบ TP2 จากราคาปัจจุบัน",
-          "rrWarning": "R/R แข็งแรงมาก — สะท้อน optionality จริงของหุ้นมาร์เก็ตแคปต่ำกว่า 500 ล้าน"
+          "tightNote": "กว้างกว่า medianMAE ของ regulatory_approval (-9.3%, n=6) — กว้างขึ้นอีกจากความไม่แน่นอนของ RGX-121",
+          "hardNote": "ตรงกับ bear case — สัญญาณว่าการยื่น RGX-202 เองกำลังเลื่อนหรือเจอปัญหาใหม่",
+          "rrNote": "Stop กว้างขึ้นกว่าเดิมจริงเทียบ TP2",
+          "rrWarning": "R/R ยังแข็งแรงแต่ stop กว้างขึ้นจริงจากความเสียหายที่ยืนยันแล้ว"
         }
       },
       "estimateDates": [
-        { "event": "FDA Type A Meeting (ผ่านไปแล้ว)", "note": "เป็นบวก — ไม่ต้องศึกษา RGX-121 เพิ่มสำหรับการยื่นใหม่" },
-        { "event": "การยื่น BLA ใหม่ของ NAVSUNLI", "note": "ช่วงเวลาที่บริษัท guide ไว้ FDA สัญญาพิจารณาแบบเร่งด่วน" },
-        { "event": "RGX-202 (Duchenne) BLA Pathway", "note": "สินทรัพย์ pipeline อีกตัวที่คืบหน้าคู่ขนาน" }
+        { "event": "FDA สั่ง Clinical Hold RGX-121 (ผ่านไปแล้ว)", "note": "พบความผิดปกติกระดูกสันหลังในผู้ป่วยระยะยาว 5 ราย บริษัทไม่คาดว่าจะยื่นใหม่ในระยะใกล้" },
+        { "event": "การยื่น BLA ของ RGX-202 (Duchenne)", "note": "ช่วงเวลาที่บริษัท guide ไว้ Phase III ผ่าน primary endpoint แล้ว" },
+        { "event": "ข้อมูล Topline Pivotal ของ ABBV-RGX-314 (Wet AMD)", "note": "ร่วมมือกับ AbbVie แขน diabetic retinopathy มีข้อมูล durability 3 ปีเชิงบวก" }
       ]
     }
   }

@@ -49,6 +49,10 @@ model Trade {
   entryDate        DateTime    @map("entry_date") @db.Date
   plannedTP        Json        @map("planned_tp")
   plannedSL        Float       @map("planned_sl")
+  // Optional structural "hard" stop below the tight stop (plannedSL). When set,
+  // the AI validator may recommend holding to it after the tight stop breaks
+  // (CLI analyze-journal "HOLD TO HARD STOP" flow); null = tight stop is final.
+  plannedHardSL    Float?      @map("planned_hard_sl")
   status           String
   realizedPnL      Float?      @map("realized_pnl")
   notes            String?
@@ -127,8 +131,15 @@ model TradeValidation {
   trade        Trade    @relation(fields: [tradeId], references: [id], onDelete: Cascade)
   verdict      String   // HOLD | CUT | WATCH
   thesisIntact Boolean  @map("thesis_intact")
-  stopBreached Boolean  @map("stop_breached")
+  // Stop flags / buffer / color are computed by code (validation/trade-rules.ts),
+  // never taken from the model. tightStopBreached reuses the original
+  // stop_breached column (it always meant price <= plannedSL).
+  tightStopBreached Boolean @map("stop_breached")
+  hardStopBreached  Boolean @default(false) @map("hard_stop_breached")
   atRisk       Boolean  @map("at_risk")
+  slBufferPct  Float?   @map("sl_buffer_pct")
+  addMore      String?  @map("add_more") // BUY_DIP | WAIT | DONT_ADD
+  stopDecision String?  @map("stop_decision") // HOLD_TO_HARD_STOP | CUT_NOW | EXIT_IMMEDIATELY (only when tight stop breached)
   summary      String
   summaryTh    String   @default("") @map("summary_th")
   action       String

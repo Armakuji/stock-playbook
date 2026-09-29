@@ -1,13 +1,17 @@
 import { Prisma } from "@prisma/client";
-import { ValidationToolResult } from "./prompt";
+import { ValidationResult } from "./trade-rules";
 
 /** Fields written to trade_validations on create/update (excludes tradeId). */
 export type TradeValidationWrite = Pick<
   Prisma.TradeValidationUncheckedCreateInput,
   | "verdict"
   | "thesisIntact"
-  | "stopBreached"
+  | "tightStopBreached"
+  | "hardStopBreached"
   | "atRisk"
+  | "slBufferPct"
+  | "addMore"
+  | "stopDecision"
   | "summary"
   | "summaryTh"
   | "action"
@@ -17,14 +21,18 @@ export type TradeValidationWrite = Pick<
 >;
 
 export function toTradeValidationWrite(
-  r: ValidationToolResult,
+  r: ValidationResult,
   validatedAt: Date,
 ): TradeValidationWrite {
   return {
     verdict: r.verdict,
     thesisIntact: r.thesisIntact,
-    stopBreached: r.stopBreached,
+    tightStopBreached: r.tightStopBreached,
+    hardStopBreached: r.hardStopBreached,
     atRisk: r.atRisk,
+    slBufferPct: r.slBufferPct,
+    addMore: r.addMore,
+    stopDecision: r.stopDecision,
     summary: r.summary,
     summaryTh: r.summaryTh,
     action: r.action,

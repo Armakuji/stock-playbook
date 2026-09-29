@@ -12,13 +12,22 @@ interface YahooNewsItem {
   publisher?: string;
   link?: string;
   providerPublishTime?: number; // unix seconds
+  relatedTickers?: string[];
 }
 
 export interface NewsHeadline {
   title: string;
   publisher: string;
   link: string;
-  publishedAt: string; // ISO string
+  publishedAt: string | null; // ISO string; null when Yahoo gave no time
+}
+
+// Yahoo search is free-text, so short tickers (FLY, ON, SERV…) pull in
+// unrelated stories. Keep items tagged with this ticker (untagged kept).
+function isRelevantToTicker(item: YahooNewsItem, ticker: string): boolean {
+  const related = item.relatedTickers;
+  if (!Array.isArray(related) || related.length === 0) return true;
+  return related.some((r) => typeof r === "string" && r.toUpperCase() === ticker.toUpperCase());
 }
 
 const MAX_HEADLINES_PER_TICKER = 5;
@@ -28,7 +37,7 @@ async function fetchYahooNews(
   count: number,
 ): Promise<NewsHeadline[]> {
   try {
-    const url = `https://query1.finance.yahoo.com/v1/finance/search?q=${encodeURIComponent(ticker)}&newsCount=${count}&quotesCount=0`;
+    const url = `https://query1.finance.yahoo.com/v1/finance/search?q=${encodeURIComponent(ticker)}&newsCount=${Math.max(count * 3, 10)}&quotesCount=0`;
     const res = await fetch(url, {
       headers: {
         "User-Agent": "Mozilla/5.0",
@@ -46,6 +55,7 @@ async function fetchYahooNews(
       .filter((n): n is Required<Pick<YahooNewsItem, "title" | "publisher" | "link">> & YahooNewsItem =>
         typeof n.title === "string" && typeof n.publisher === "string" && typeof n.link === "string",
       )
+      .filter((n) => isRelevantToTicker(n, ticker))
       .slice(0, count)
       .map((n) => ({
         title: n.title!,
@@ -53,7 +63,7 @@ async function fetchYahooNews(
         link: n.link!,
         publishedAt: n.providerPublishTime
           ? new Date(n.providerPublishTime * 1000).toISOString()
-          : new Date().toISOString(),
+          : null,
       }));
   } catch {
     return [];

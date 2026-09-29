@@ -8,7 +8,7 @@ export interface NewsHeadline {
   title: string;
   publisher: string;
   link: string;
-  publishedAt: string; // ISO string
+  publishedAt: string | null; // ISO string; null when Yahoo gave no time
 }
 
 interface YahooNewsItem {
@@ -16,13 +16,28 @@ interface YahooNewsItem {
   publisher?: string;
   link?: string;
   providerPublishTime?: number;
+  relatedTickers?: string[];
 }
 
 const HEADLINES_PER_TICKER = 3;
+// Yahoo's search endpoint matches the query as free text, so short tickers
+// (FLY, ON, SERV…) pull in unrelated stories. Over-fetch, then keep only
+// items Yahoo tags with this ticker (untagged items are kept — can't tell).
+const FETCH_COUNT = 10;
+
+export function isRelevantToTicker(
+  item: { relatedTickers?: string[] },
+  ticker: string,
+): boolean {
+  const related = item.relatedTickers;
+  if (!Array.isArray(related) || related.length === 0) return true;
+  const want = ticker.toUpperCase();
+  return related.some((r) => typeof r === "string" && r.toUpperCase() === want);
+}
 
 async function fetchFromYahooDirect(ticker: string): Promise<NewsHeadline[]> {
   try {
-    const url = `https://query1.finance.yahoo.com/v1/finance/search?q=${encodeURIComponent(ticker)}&newsCount=${HEADLINES_PER_TICKER}&quotesCount=0`;
+    const url = `https://query1.finance.yahoo.com/v1/finance/search?q=${encodeURIComponent(ticker)}&newsCount=${FETCH_COUNT}&quotesCount=0`;
     const res = await fetch(url, {
       headers: { "User-Agent": "Mozilla/5.0", Accept: "application/json" },
     });
@@ -48,6 +63,7 @@ async function fetchFromYahooDirect(ticker: string): Promise<NewsHeadline[]> {
           typeof n.publisher === "string" &&
           typeof n.link === "string",
       )
+      .filter((n) => isRelevantToTicker(n, ticker))
       .slice(0, HEADLINES_PER_TICKER)
       .map((n) => ({
         title: n.title,
@@ -55,7 +71,7 @@ async function fetchFromYahooDirect(ticker: string): Promise<NewsHeadline[]> {
         link: n.link,
         publishedAt: n.providerPublishTime
           ? new Date(n.providerPublishTime * 1000).toISOString()
-          : new Date().toISOString(),
+          : null,
       }));
   } catch (err) {
     console.warn(
