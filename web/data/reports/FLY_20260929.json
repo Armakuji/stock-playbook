@@ -1,0 +1,191 @@
+{
+  "ticker": "FLY",
+  "companyName": "Firefly Aerospace Inc.",
+  "companyDescription": "Launch + lunar + defense · Alpha rocket + Blue Ghost lunar lander + SciTec (space domain awareness) · Q2 2026 revenue up 659% YoY to a record $117.7M, FY26 guidance raised to $420-450M — the real story is fundamentals genuinely improving while the stock has actually given back ground since the pre-earnings pop",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-09-29T00:00:00.000Z",
+  "price": 23.24,
+  "priceChange": -3.61,
+  "priceNote": "Prior report (Aug 10) used $26.71 — that price captured a pre-earnings pop (+11.0% same day) heading into the Aug 11 print. The print itself delivered record results (revenue +659% YoY, guidance raised), but the stock has since given back the pre-earnings spike and sits at $23.24, -13.0% vs the Aug 10 report — a 'sell the news'/multiple-compression pattern, not a fundamentals problem. Consensus analyst targets were trimmed alongside (from $40.64 to $38.60) even as guidance went up, which is the clearest evidence this is a valuation reset, not a thesis problem.",
+  "marketCap": "~$3.91B",
+  "sector": "Industrials / Aerospace & Space Launch",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Speculative",
+  "score": 56,
+  "summary": "Firefly's Q2 2026 print (Aug 11) delivered record revenue of $117.7M, up 659% YoY — a genuine acceleration from Q1's 45% YoY pace — with FY26 guidance raised to $420-450M (80%+ pre-booked via backlog). New contract wins have kept landing since: an SSC Space multi-launch deal (Alpha from Sweden, 2028+), a NASA Spacecraft Processing Operations Contract at Vandenberg, SciTec's $93.7M Space Force radar-digitization contract, a Lockheed Martin contract extension, and a new ISO Class 8 cleanroom (completed Sep 22) that can assemble up to 12 Blue Ghost/Elytra vehicles simultaneously. Despite all this, the stock is DOWN -13.0% versus the Aug 10 report's pre-earnings price, and the 10-analyst consensus target fell to $38.60 from $40.64 — the market priced in the good news early and is now digesting execution risk on the steep H2 ramp the guidance implies. Alpha's full Block II configuration (Flight 8) still has not flown as of late Sep 2026, slipping past its 'late summer 2026' guided window with no new confirmed date — the real de-risking event for the core launch business remains outstanding.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 2026 Earnings",
+      "description": "Reports Nov 11, 2026. Tests whether the raised FY26 guidance ($420-450M revenue) holds after Q2's 659% YoY beat — the H2 ramp implied by that guidance is a real execution test, not a formality. Market will also want an update on SSC Space, NASA, and Space Force contract cadence, plus any Alpha Flight 8 timeline.",
+      "urgencyLabel": "~6 WEEKS",
+      "dateBadge": "Nov 11, 2026",
+      "catalystDate": "2026-11-11",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🚀",
+      "name": "Alpha Block II Debut (Flight 8) — Overdue",
+      "description": "Still hasn't flown as of late Sep 2026, having slipped past the 'late summer 2026' guided window with no new confirmed date. Flight 7 (Mar 2026) already validated key Block II sub-components and popped the stock +12.77%; the FULL configuration debut on Flight 8 remains the true de-risking event for the launch business.",
+      "urgencyLabel": "OVERDUE — NO NEW DATE",
+      "dateBadge": "Delayed (past late-summer target)",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Alpha Flight 8 (full Block II configuration) has slipped past its own 'late summer 2026' guided window with no new confirmed date as of late Sep 2026 — a real, live schedule risk that the Aug 10 report expected to be resolved by now",
+    "FY26 guidance of $420-450M implies a steep H2 ramp from the $117.7M Q2 print — Nov 11 earnings is a genuine test of execution, not just a formality",
+    "The stock's -13.0% drift since the Aug 10 report despite record Q2 results, alongside a $40.64→$38.60 consensus-target trim, shows the market pricing in real execution skepticism, not just profit-taking",
+    "Net loss was $92.3M in Q2 despite the revenue beat — still cash-burning at scale even as growth accelerates",
+    "Heavy dilution history: shares outstanding grew significantly post-IPO and post-SciTec — further issuance risk remains live",
+    "Extreme realized volatility even on good news — the stock has swung double digits in both directions repeatedly through 2026"
+  ],
+  "estimateDates": [
+    { "event": "Q2 2026 Earnings (realized)", "dateRange": "Aug 11, 2026", "note": "Record $117.7M revenue, +659% YoY; FY26 guidance raised to $420-450M", "est": "", "highlight": "blue" },
+    { "event": "New Cleanroom Completed (realized)", "dateRange": "Sep 22, 2026", "note": "ISO Class 8, Cedar Park TX — up to 12 simultaneous Blue Ghost/Elytra units", "est": "", "highlight": "blue" },
+    { "event": "Q3 2026 Earnings", "dateRange": "Nov 11, 2026", "note": "Tests whether raised FY26 guidance holds; also watch for an Alpha Flight 8 timeline update", "est": "Revenue growth expected to continue; execution is the real question", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -35, "price": 15.11 },
+    { "label": "Base", "color": "yellow", "pct": 45, "price": 33.70 },
+    { "label": "Bull", "color": "green", "pct": 65, "price": 38.35 },
+    { "label": "Moon", "color": "purple", "pct": 115, "price": 49.97 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (10 analysts)", "target": 38.60, "rating": "Buy", "note": "Down from $40.64 last report despite the stock itself falling — a real, incremental caution signal, not just a trailing artifact" },
+    { "firm": "Roth Capital", "target": 45.00, "rating": "Buy", "note": "Trimmed from $60" },
+    { "firm": "B. Riley Financial", "target": 50.00, "rating": "Buy", "note": "Trimmed from $60" },
+    { "firm": "Jefferies", "target": 35.00, "rating": "Buy", "note": "Trimmed from $52" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed hiked to 3.75-4.00% on Sep 16, 2026 (first hike since 2023); next FOMC Oct 27-28, 2026 — well before Nov 11 earnings. Rising Treasury yields have been an active headwind for high-multiple, cash-burning growth names this quarter.",
+    "inflationNote": "Core inflation remains above target — a persistent headwind for space-sector capex-heavy names generally.",
+    "sectorImpact": "The space sector's sentiment has stabilized somewhat as Firefly's own fundamentals caught up to the news flow, but the sector remains sensitive to broad risk-off moves and capital rotation (e.g. toward SpaceX's IPO).",
+    "summary": "MEDIUM — Firefly's contract wins are macro-independent, but the stock's post-earnings pullback shows it's still exposed to broad growth-stock rate sensitivity and execution skepticism, same as its space-sector peers."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 23.24, "note": "Current price — down 13.0% since the last report despite record Q2 results", "timing": "Now" },
+      { "label": "Entry 2", "level": 19.50, "rangeMax": 21.00, "note": "Pullback zone ahead of Nov 11 earnings — best R/R if the post-earnings drift continues before stabilizing", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 16.50, "note": "Deep capitulation — only on a broad space-sector selloff or an Alpha Flight 8 setback", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 33.70, "pct": 45, "note": "Base — Nov 11 earnings confirm the FY26 guidance ramp is on track; Base assumes a ~6-week horizon to the print, beyond the core lane's 14-day North Star window" },
+    "tp2": { "price": 38.35, "pct": 65, "note": "Bull — matches the 10-analyst consensus target, market fully credits the guidance raise and Alpha Flight 8 finally flies clean" },
+    "tp3": { "price": 49.97, "pct": 115, "note": "Moon — hits the new analyst high estimate on additional contract wins + a beat-and-raise Nov 11 print", "moon": true },
+    "stopLoss": {
+      "tight": 17.00, "tightPct": -26.8, "tightNote": "Wider than the earnings_beat bucket's medianMAE (-9.6%, n=42) given this name's demonstrated volatility even on good news",
+      "hard": 14.50, "hardPct": -37.6, "hardNote": "Below the recent trading range floor — would suggest real fundamentals deterioration or a confirmed Alpha Flight 8 failure, not just multiple compression",
+      "riskReward": "5.6 : 1", "rrNote": "From Entry 2 mid ($20.25), tight stop vs TP2", "rrWarning": "Solid R/R, but the still-undated Flight 8 debut is real event risk sitting underneath this trade"
+    },
+    "verdict": "SPECULATIVE — measured median at-catalyst return across the core lane is -6.9% (n=54); buying at today's $23.24 is not the default entry. Prefer the $19.50-21.00 dip zone ahead of Nov 11 earnings. This is a genuine fundamentals story (659% YoY revenue growth, raised guidance, real contract wins) trading against a market that already front-ran the good news and is now pricing execution risk on the H2 ramp — the gap between story and price has actually widened since the last report, not closed.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Firefly ran +11% into the Aug 11 print itself, but has since drifted down -13.0% net versus the Aug 10 report price even with record results — showing the pre-earnings run had already pulled forward most of the near-term optimism",
+    "preRunupTiming": "1-2 weeks before a confirmed print, based on the Aug 11 pattern",
+    "preRunupPct": "+10% to +15% typical pre-print, though this can fully reverse post-print as it did this cycle",
+    "postWin": {
+      "avgPct": 14,
+      "range": "+5% to +20%",
+      "note": "Comparable space-sector names show 5-20% pops on major beats. Firefly's own Aug 11 print delivered the beat and guidance raise, but the stock's net move since then has been negative (-13.0% vs the pre-print price) — a reminder that a clean beat doesn't guarantee a sustained positive reaction if the run-up already priced it in.",
+      "exampleDate": "Aug 11, 2026 (FLY Q2 2026 print)"
+    },
+    "postLose": {
+      "avgPct": -18,
+      "range": "-10% to -28%",
+      "note": "Firefly's own stock fell -27.9% over 30 days in Jul 2026 purely on sentiment (before fundamentals caught up) — the direct precedent for how much this stock can still fall on a Nov 11 guidance miss or a further Alpha Flight 8 delay.",
+      "exampleDate": "Jul 2026"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Real fundamentals improvement supports a moderate core-lane size, but the still-undated Alpha Flight 8 debut and the post-earnings price drift argue against sizing up further until Nov 11 or a confirmed Flight 8 date"
+    },
+    "stopPreCatalyst": { "pct": -27, "price": 17.00, "note": "Below the recent trading range — wider than the earnings_beat medianMAE given this name's demonstrated volatility" },
+    "stopPostCatalyst": { "pct": -20, "note": "If Nov 11 guidance disappoints relative to the $420-450M FY26 range, or Alpha Flight 8 suffers a failure, exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "FLY",
+      "event": "Q2 2026 earnings: record $117.7M revenue (+659% YoY), FY26 guidance raised to $420-450M, but stock net-negative since",
+      "date": "Aug 11, 2026",
+      "movePct": -13,
+      "days": 49,
+      "outcome": "mixed",
+      "note": "The print that this refresh is measured against — genuinely good results, but the market had already priced the pre-earnings run, so the net reaction since has been negative despite the beat."
+    },
+    {
+      "ticker": "FLY",
+      "event": "Alpha Flight 7 successful launch, validating key Block II sub-components",
+      "date": "Mar 11, 2026",
+      "movePct": 12.77,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company precedent for how a successful, dated launch milestone moves this stock — directly relevant to the still-pending, now-overdue full Block II debut on Flight 8."
+    },
+    {
+      "ticker": "RKLB",
+      "event": "Q4 2025 earnings beat still sold off on Neutron-delay news days later",
+      "date": "Feb 2026",
+      "movePct": -9.5,
+      "days": 2,
+      "outcome": "bad",
+      "note": "Same-sector precedent for how a good headline number alone doesn't guarantee a positive reaction if roadmap/timeline commentary (e.g. Alpha Block II Flight 8 date) disappoints — exactly the dynamic playing out with FLY's own overdue Flight 8."
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/fly/",
+    "https://stockanalysis.com/stocks/fly/forecast/",
+    "https://www.stocktitan.net/news/FLY/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "ผล Q2 2026 ของ Firefly (11 ส.ค.) ทำรายได้สถิติ $117.7M ขึ้น 659% YoY — เร่งตัวจริงจาก Q1 ที่ 45% YoY พร้อม guidance FY26 ปรับขึ้นเป็น $420-450M (จองแล้ว 80%+) สัญญาใหม่เข้ามาต่อเนื่อง (SSC Space, NASA, Space Force $93.7M, Lockheed Martin, cleanroom ใหม่เสร็จ 22 ก.ย.) แต่หุ้นกลับ ลง -13.0% เทียบราคารายงาน 10 ส.ค. และเป้าเฉลี่ยนักวิเคราะห์ 10 คนลดจาก $40.64 เหลือ $38.60 — ตลาด price ข่าวดีไปก่อนแล้วและกำลังกังวลเรื่อง execution ของการเร่งตัวช่วง H2 Alpha Block II เต็มรูปแบบ (Flight 8) ยังไม่บินจนถึงปลายก.ย. 2026 เลยกำหนด 'ปลายฤดูร้อน' ไปแล้วโดยไม่มีวันใหม่",
+      "priceNote": "รายงานก่อน (10 ส.ค.) ใช้ $26.71 ซึ่งเป็นราคาที่วิ่งขึ้นก่อนผลประกอบการ (+11.0% วันเดียว) ก่อนผล 11 ส.ค. ผลจริงออกมาดี (รายได้ +659% YoY, guidance ปรับขึ้น) แต่หุ้นคืนกำไรที่วิ่งไปก่อนหน้านั้นแล้ว เหลือ $23.24 ลง -13.0% เทียบรายงาน 10 ส.ค. — เป็น pattern sell-the-news/บีบ multiple ไม่ใช่ปัญหาพื้นฐาน เป้านักวิเคราะห์ก็ถูกปรับลง ($40.64→$38.60) แม้ guidance จะขึ้น เป็นหลักฐานชัดว่านี่คือการปรับมูลค่า ไม่ใช่ปัญหา thesis",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "ผลประกอบการ Q3 2026", "description": "รายงาน 11 พ.ย. 2026 ทดสอบว่า guidance FY26 ที่ปรับขึ้น ($420-450M) จะยืนได้ไหมหลังบีท Q2 659% YoY ตลาดต้องการอัปเดตจังหวะสัญญา SSC Space, NASA, Space Force และไทม์ไลน์ Alpha Flight 8" },
+        { "name": "Alpha Block II Debut (Flight 8) — เลยกำหนดแล้ว", "description": "ยังไม่บินจนถึงปลายก.ย. 2026 เลยกำหนด 'ปลายฤดูร้อน 2026' ไปแล้วโดยไม่มีวันใหม่ Flight 7 (มี.ค. 2026) พิสูจน์ sub-component สำคัญแล้วและหุ้นบวก +12.77% การ debut Block II เต็มรูปแบบยังเป็นจุดพิสูจน์ de-risk ที่แท้จริง" }
+      ],
+      "risks": [
+        "Alpha Flight 8 (config Block II เต็มรูปแบบ) เลยกำหนด 'ปลายฤดูร้อน 2026' ไปแล้วโดยไม่มีวันใหม่ ณ ปลายก.ย. 2026 — ความเสี่ยงด้าน timeline จริงที่รายงาน 10 ส.ค. คาดว่าจะคลี่คลายแล้วตอนนี้",
+        "Guidance FY26 $420-450M หมายถึงต้องเร่งตัวแรงมากจากยอด Q2 ที่ $117.7M — ผล 11 พ.ย. คือบททดสอบจริง",
+        "หุ้นลง -13.0% นับจากรายงาน 10 ส.ค. แม้ผล Q2 จะออกมาดี พร้อมเป้านักวิเคราะห์ที่ถูกปรับลง แสดงว่าตลาดกังวล execution จริง ไม่ใช่แค่ทำกำไร",
+        "ขาดทุนสุทธิ $92.3M ใน Q2 แม้รายได้จะบีท — ยัง burn เงินสดหนักในสเกลใหญ่",
+        "ประวัติ dilution หนัก — ความเสี่ยงออกหุ้นเพิ่มยังมีอยู่จริง",
+        "ผันผวนสูงมากแม้ข่าวดี — หุ้นแกว่งเลขสองหลักทั้งสองทางซ้ำๆ ตลอดปี 2026"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed ขึ้นดอกเบี้ยเป็น 3.75-4.00% วันที่ 16 ก.ย. 2026 FOMC ครั้งถัดไป 27-28 ต.ค. 2026 — ก่อนผล 11 พ.ย. มาก yield พันธบัตรที่ขึ้นเป็นแรงกดดันจริงต่อหุ้น growth cash-burning ไตรมาสนี้",
+        "inflationNote": "เงินเฟ้อ core ยังสูงกว่าเป้า เป็นแรงกดดันต่อเนื่องต่อหุ้น space sector ที่ capex หนัก",
+        "sectorImpact": "Sentiment sector อวกาศนิ่งขึ้นบ้างเพราะพื้นฐานของ Firefly เองเริ่มตามทัน แต่ sector ยังไวต่อการเทขายกว้างและการหมุนทุน",
+        "summary": "ความเสี่ยง Fed ระดับกลาง — สัญญาที่ Firefly ได้เองไม่ผูกกับ macro แต่การย่อหลังผลประกอบการแสดงว่ายัง exposed กับ rate sensitivity และความกังวล execution เหมือน peer กลุ่มอวกาศ"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — ผลตอบแทนเฉลี่ย ณ วัน catalyst ของ core lane วัดได้ -6.9% (n=54) การซื้อที่ราคาปัจจุบัน $23.24 จึงไม่ใช่ทางเลือกหลัก ควรรอโซน $19.50-21.00 ก่อนผล 11 พ.ย. นี่คือ story พื้นฐานที่ดีจริง (รายได้โต 659% YoY, guidance ปรับขึ้น, สัญญาจริง) ที่เทรดสวนกับตลาดที่ price ข่าวดีไปก่อนแล้วและกำลังกังวล execution — ช่องว่างระหว่าง story กับราคาจริงกว้างขึ้นนับจากรายงานก่อน ไม่ได้แคบลง",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ลง 13.0% นับจากรายงานก่อนแม้ผล Q2 จะดี", "timing": "ตอนนี้" },
+          { "note": "โซนย่อก่อนผลประกอบการ 11 พ.ย. — R/R ดีที่สุดถ้าการย่อหลังผลยังต่อเนื่อง", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงหนัก — เฉพาะ sector อวกาศเทขายรวมหรือ Alpha Flight 8 มีปัญหา", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — ผล 11 พ.ย. ยืนยัน guidance FY26 เดินตามแผน สมมติ horizon ~6 สัปดาห์ ไกลกว่ากรอบ 14 วันของ North Star" },
+        "tp2": { "note": "Bull — ตรงเป้าเฉลี่ยนักวิเคราะห์ 10 คน ตลาดให้เครดิต guidance เต็มที่และ Alpha Flight 8 บินสำเร็จในที่สุด" },
+        "tp3": { "note": "Moon — แตะเป้าสูงสุดใหม่จากสัญญาเพิ่ม + ผล 11 พ.ย. บีทและ raise guidance" },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE ของ earnings_beat (-9.6%, n=42) เพราะหุ้นตัวนี้แสดง volatility จริงแม้ข่าวดี",
+          "hardNote": "ต่ำกว่าฐานเทรดล่าสุด — จะบ่งชี้ปัญหาพื้นฐานจริงหรือ Alpha Flight 8 ล้มเหลวยืนยันแล้ว",
+          "rrNote": "จาก Entry 2 ($20.25 กลาง) stop แคบเทียบ TP2",
+          "rrWarning": "R/R ดี แต่ความเสี่ยง Flight 8 ที่ยังไม่มีวันชัดเจนเป็น event risk จริงที่ซ่อนอยู่"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q2 2026 (ผ่านไปแล้ว)", "note": "รายได้สถิติ $117.7M ขึ้น 659% YoY guidance FY26 ปรับขึ้นเป็น $420-450M" },
+        { "event": "Cleanroom ใหม่เสร็จ (ผ่านไปแล้ว)", "note": "ISO Class 8, Cedar Park TX — ผลิต Blue Ghost/Elytra พร้อมกันได้ถึง 12 ยูนิต" },
+        { "event": "ผลประกอบการ Q3 2026", "note": "ทดสอบว่า guidance FY26 จะยืนได้ไหม พร้อมจับตาไทม์ไลน์ Alpha Flight 8" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "ticker": "CAPR",
+  "companyName": "Capricor Therapeutics, Inc.",
+  "companyDescription": "Cell therapy · Deramiocel for Duchenne muscular dystrophy — thesis materially RECOVERED (not broken) since the Aug 13 report: FDA extended the PDUFA to Nov 22, 2026 for a BLA narrowed to the upper-limb-function endpoint the adcomm was directionally supportive on",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-09-29T00:00:00.000Z",
+  "price": 8.62,
+  "priceChange": -1.03,
+  "priceNote": "⚠️ THESIS RECOVERY: the Aug 13 report ($4.19, written the day after a 9-3 negative adcomm vote) has more than doubled — +105.7% — to $8.62. This is not a random bounce: on Aug 24, 2026 the FDA extended the PDUFA from Aug 22 to Nov 22, 2026 after Capricor amended the BLA to claim only the upper-limb-function (PUL 2.0) endpoint — the narrower claim the adcomm gave directionally supportive feedback on even while voting against the broader cardiomyopathy indication.",
+  "marketCap": "~$497M (57.7M shares, Q1'26 count × $8.62)",
+  "sector": "Healthcare / Biotechnology (Cell Therapy)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 46,
+  "summary": "⚠️ THESIS RECOVERED — this replaces the Aug 13 report, which correctly flagged the Jul 29-30 9-3 negative adcomm vote as breaking the original DMD-cardiomyopathy thesis and cut sizing to 1%. Since then, Capricor amended the BLA to claim ONLY the upper-limb-function endpoint (PUL 2.0) — the narrower claim the adcomm was directionally supportive on — and on Aug 24, 2026 the FDA granted a PDUFA extension to Nov 22, 2026 to review it. That is a real, positive regulatory signal: the FDA did not simply reject the amendment outright. The stock has re-rated from $4.19 to $8.62 (+105.7%) on this. But this is still Capricor's SECOND regulatory swing at the same drug after a Jul 2025 CRL and the Jul 2026 negative adcomm vote — not a clean bet. A shareholder letter (Kaos Capital, Aug 21) flagged cash burn ($237.9M as of Jun 30, 2026, down $80.2M from year-end 2025) and governance concerns, and active securities-fraud litigation continues. Consensus (8 analysts) $44.63 (Strong Buy) implies a huge headline upside, but that consensus predates the narrowed-indication amendment and should be treated with real skepticism until updated post-PDUFA.",
+  "catalysts": [
+    {
+      "icon": "⚖️",
+      "name": "Deramiocel PDUFA Decision — Upper-Limb Function Indication",
+      "description": "FDA target action date for the amended BLA, narrowed to upper-limb function (PUL 2.0 primary endpoint) after the Jul 29-30, 2026 adcomm voted 9-3 against the original DMD-cardiomyopathy claim but gave directionally supportive feedback on this narrower endpoint. Extended from Aug 22 to Nov 22, 2026 on Aug 24, 2026.",
+      "urgencyLabel": "~8 WEEKS",
+      "dateBadge": "Nov 22, 2026",
+      "catalystDate": "2026-11-22",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📊",
+      "name": "Q3 2026 Earnings",
+      "description": "Cash-runway update ahead of the PDUFA. Company said in Aug 2026 it expects current resources to fund operations for at least 12 months, but a shareholder letter (Aug 21) flagged the pace of burn.",
+      "urgencyLabel": "~5 WEEKS",
+      "dateBadge": "~Early Nov 2026",
+      "catalystDate": "2026-11-05",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "This is the drug's SECOND regulatory decision point after a Jul 2025 CRL and a Jul 2026 9-3 negative adcomm vote on the broader indication — approval of even the narrowed claim is not a clean coin flip",
+    "The Aug 21, 2026 Kaos Capital shareholder letter flagged cash burn ($237.9M cash as of Jun 30, down $80.2M from year-end 2025) and governance concerns — a live overhang independent of the FDA outcome",
+    "Ongoing securities fraud class action tied to the pre-adcomm clinical data disclosure remains a direct claim on cash",
+    "The narrowed indication (upper-limb function only, not cardiomyopathy) caps the addressable DMD patient population and likely peak sales even if approved — the $44.63 analyst consensus largely predates this amendment and should not be taken at face value",
+    "Extreme binary-catalyst volatility — 52-week range roughly $2.96 to $40.37 — a second regulatory setback would likely retest or breach the post-adcomm low near $4.19"
+  ],
+  "estimateDates": [
+    { "event": "PDUFA Extension Granted (realized)", "dateRange": "Aug 24, 2026", "note": "Extended from Aug 22 to Nov 22, 2026 after BLA amendment narrowed to upper-limb function", "est": "", "highlight": "blue" },
+    { "event": "World Muscle Society Congress Data Presentation (realized)", "dateRange": "Sep 17, 2026", "note": "24-month HOPE-3 + open-label extension data supporting the narrowed claim", "est": "", "highlight": "blue" },
+    { "event": "PDUFA Decision", "dateRange": "Nov 22, 2026", "note": "Approve vs CRL on the narrowed upper-limb-function claim", "est": "Genuinely uncertain — not a clean coin flip", "highlight": "red" },
+    { "event": "Q3 2026 Earnings", "dateRange": "~Early Nov 2026", "note": "Cash runway and litigation reserve are the numbers that matter most", "est": "n/a — pre-revenue", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -50, "price": 4.31 },
+    { "label": "Base", "color": "yellow", "pct": 70, "price": 14.65 },
+    { "label": "Bull", "color": "green", "pct": 140, "price": 20.69 },
+    { "label": "Moon", "color": "purple", "pct": 250, "price": 30.17 }
+  ],
+  "analystTargets": [
+    { "firm": "H.C. Wainwright", "target": 60.00, "rating": "Buy" },
+    { "firm": "Cantor Fitzgerald", "target": 62.00, "rating": "Overweight" },
+    { "firm": "Wall Street Consensus (8 analysts)", "target": 44.63, "rating": "Strong Buy", "note": "Largely predates the narrowed upper-limb-only BLA amendment — treat with skepticism until refreshed" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Fed hiked to 3.75-4.00% on Sep 16, 2026 (first hike since 2023); next FOMC Oct 27-28, 2026 — well before the Nov 22 PDUFA.",
+    "inflationNote": "Inflation-driven hike; CAPR's binary FDA-decision thesis is not meaningfully rate-sensitive either way, though a hawkish backdrop raises the cost of any post-PDUFA capital raise for commercial launch.",
+    "sectorImpact": "Irrelevant to this name right now. A binary regulatory outcome, cash-burn pace, and litigation risk dominate anything rates do to a sub-$500M pre-revenue biotech.",
+    "summary": "LOW — macro is not the swing factor here; the Nov 22 PDUFA and the cash/litigation overhang are."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 8.62, "note": "Current price — already recovered +105.7% since the Aug 13 low", "timing": "Now" },
+      { "label": "Entry 2", "level": 6.80, "rangeMax": 7.40, "note": "Pre-PDUFA dip zone / profit-taking retest", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 4.50, "note": "Deep dip — near the post-adcomm-vote low ($4.19); only on a broad biotech selloff or fresh negative signal", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 14.65, "pct": 70.0, "note": "Base — FDA approves the narrowed upper-limb-only indication near the Nov 22, 2026 PDUFA; Base assumes the ~8-week catalyst-anchored horizon to the decision, well beyond the core lane's 14-day North Star window" },
+    "tp2": { "price": 20.69, "pct": 140.0, "note": "Bull — clean approval plus a stronger-than-expected initial launch reception, re-rating toward the low-to-middle of the (pre-amendment) analyst range" },
+    "tp3": { "price": 30.17, "pct": 250.0, "note": "Moon — approval plus early signals support could extend back toward the original cardiomyopathy indication · 2027", "moon": true },
+    "stopLoss": {
+      "tight": 6.47,
+      "tightPct": -25.0,
+      "tightNote": "fda_decision has n=3 in skill-feedback (context only, below the n≥5 floor) — using core.overall.medianMAE (-14%) as the reference; widened well beyond it given this is a name with one CRL and one negative adcomm vote already on record",
+      "hard": 4.74,
+      "hardPct": -45.0,
+      "hardNote": "Near the post-adcomm-vote low ($4.19) — a breach here means the market is pricing a second regulatory rejection",
+      "riskReward": "7.5 : 1",
+      "rrNote": "Tight stop (-25%) vs TP2/Bull (+140%)",
+      "rrWarning": "⚠️ R/R is asymmetric on paper, but a CRL gaps through any stop overnight — this is not a name where the stop protects you cleanly"
+    },
+    "verdict": "SPECULATIVE — ค่าขนม-level sizing, not a core position. Measured median at-catalyst return across the core lane is -6.9% (n=54) — buying at today's $8.62 is not the default entry; the $6.80-7.40 dip is preferred. The thesis genuinely recovered (FDA extension + narrowed claim + directionally-supportive adcomm feedback on that specific endpoint is real, positive information), but this is still a second regulatory swing at a drug that already failed once — size for a binary outcome, not a sure thing.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "CAPR has drifted UP steadily from $4.19 to $8.62 over the ~7 weeks since the adcomm low, as the market digested the PDUFA extension, the narrowed-claim rationale, and the Sep 17 WMS Congress data presentation — a genuine, gradual re-rate rather than a single pre-event pop",
+    "preRunupTiming": "Gradual, over the ~7 weeks since the Jul 30 adcomm low",
+    "preRunupPct": "+105.7% cumulative (not a typical single pre-catalyst window — this is a post-setback recovery)",
+    "postWin": {
+      "avgPct": 150,
+      "range": "+80% to +300%",
+      "note": "CAPR's own Dec 2025 Phase 3 HOPE-3 readout is the most direct precedent (+300% in 2 trading days on positive DMD data), but a November approval of an already-partly-priced-in narrowed claim would likely produce a smaller pop than a surprise data win. SRPT's narrow-label DMD approval (Jun 2023) is a cautionary comp — even an approval can disappoint if the label is restrictive.",
+      "exampleDate": "Dec 2025"
+    },
+    "postLose": {
+      "avgPct": -45,
+      "range": "-36% to -60%",
+      "note": "CAPR's own Jul 30, 2026 reaction to the adcomm's 9-3 vote is the direct precedent (-36% in one day). A second rejection/CRL on the narrowed upper-limb indication in November would likely be at least as severe, possibly worse given it would be the drug's second regulatory setback on the same program.",
+      "exampleDate": "Jul 30, 2026"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "Raised from 1% in the Aug 13 report — the FDA extension and narrowed-claim path are genuine positive developments, not just a bounce — but kept well below the pre-adcomm 3% given this is still a second swing at a drug with one CRL and one negative adcomm vote on record"
+    },
+    "stopPreCatalyst": { "pct": -25, "price": 6.47, "note": "A break here before Nov 22 without news means the market is fading the extension's positive signal" },
+    "stopPostCatalyst": { "pct": -45, "note": "On a second CRL, exit into the first liquidity — a third regulatory attempt on the same drug is a multi-year proposition" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "CAPR",
+      "event": "FDA extends PDUFA to Nov 22, 2026 after BLA amended to upper-limb-function-only claim",
+      "date": "Aug 2026",
+      "movePct": 106,
+      "days": 35,
+      "outcome": "good",
+      "note": "The event this refresh corrects for — a genuine, gradual recovery from the post-adcomm low, not a single-day pop. Same drug, same company, direct precedent for how the market re-prices a partially-derisked binary outcome."
+    },
+    {
+      "ticker": "CAPR",
+      "event": "FDA advisory committee votes 9-3 against DMD-cardiomyopathy effectiveness",
+      "date": "Jul 2026",
+      "movePct": -36,
+      "days": 1,
+      "outcome": "bad",
+      "note": "The event that originally broke the thesis. Direct precedent for the downside if the Nov 22 PDUFA disappoints again."
+    },
+    {
+      "ticker": "SRPT",
+      "event": "Elevidys FDA accelerated approval (first DMD gene therapy) — restrictive label triggers a same-day drop despite the approval itself",
+      "date": "Jun 2023",
+      "movePct": -11,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "A reminder that a narrow-label 'win' can still disappoint the market — CAPR's own narrowed upper-limb-only ask carries similar risk even in an approval scenario."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Capricor Therapeutics Announces Extension of PDUFA Target Action Date as FDA Continues Review of Deramiocel BLA",
+    "url": "https://www.biospace.com/press-releases/capricor-therapeutics-announces-extension-of-pdufa-target-action-date-as-fda-continues-review-of-deramiocel-bla",
+    "date": "Aug 2026"
+  },
+  "sources": [
+    "https://www.biospace.com/press-releases/capricor-therapeutics-announces-extension-of-pdufa-target-action-date-as-fda-continues-review-of-deramiocel-bla",
+    "https://www.biospace.com/fda/fda-advisers-vote-against-approval-of-capricors-dmd-therapy-in-chaotic-adcomm-meeting",
+    "https://www.globenewswire.com/news-release/2026/09/25/3369016/0/en/capr-stock-drop-alert-capricor-therapeutics-stock-plummets-64-after-clinical-data-issues-revealed-bfa-law-notifies-investors-of-the-imminent-september-28-deadline.html",
+    "https://www.investing.com/news/analyst-ratings/hc-wainwright-reiterates-capricor-stock-buy-rating-at-60-target-93CH-4814844",
+    "https://www.fiercebiotech.com/biotech/capricor-sets-2nd-approval-attempt-duchenne-cell-therapy-phase-3-win",
+    "https://www.stocktitan.net/news/CAPR/",
+    "https://stockanalysis.com/stocks/capr/statistics/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "⚠️ THESIS ฟื้นตัวแล้ว (ไม่ใช่พัง) — รายงานฉบับนี้แทนที่ฉบับ 13 ส.ค. ที่ระบุถูกต้องว่ามติ adcomm 9-3 ลบวันที่ 29-30 ก.ค. ทำให้ thesis เดิมพัง และลด sizing เหลือ 1% นับจากนั้น Capricor แก้ BLA ให้เหลือแค่ข้อบ่งใช้ upper-limb function (PUL 2.0) ซึ่งเป็นจุดที่ adcomm สนับสนุนในทาง และวันที่ 24 ส.ค. 2026 FDA อนุมัติเลื่อน PDUFA ไปเป็น 22 พ.ย. 2026 เพื่อพิจารณา — เป็นสัญญาณบวกจริง หุ้นรีเรทจาก $4.19 มา $8.62 (+105.7%) แต่นี่ยังเป็นการตัดสินใจ FDA รอบที่ 2 ของยาตัวนี้ ไม่ใช่เดิมพันที่ชัวร์ มีจดหมายผู้ถือหุ้น (Kaos Capital, 21 ส.ค.) เตือนเรื่อง cash burn และธรรมาภิบาล และมีคดี securities fraud อยู่",
+      "priceNote": "⚠️ THESIS ฟื้นตัว: รายงาน 13 ส.ค. ($4.19 วันหลังมติ adcomm ลบ) ขึ้นมาแล้วกว่าเท่าตัว +105.7% เป็น $8.62 ไม่ใช่การเด้งสุ่ม — 24 ส.ค. 2026 FDA เลื่อน PDUFA จาก 22 ส.ค. เป็น 22 พ.ย. 2026 หลัง Capricor แก้ BLA ให้เหลือแค่ข้อบ่งใช้ upper-limb function ที่ adcomm สนับสนุนในทาง",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "คำตัดสิน PDUFA ของ Deramiocel — ข้อบ่งใช้ upper-limb function", "description": "วันตัดสินของ FDA สำหรับ BLA ที่แก้ไขแล้ว เหลือแค่ข้อบ่งใช้ upper-limb function หลัง adcomm โหวต 9-3 คว่ำข้อบ่งใช้เดิมแต่สนับสนุน endpoint นี้ เลื่อนจาก 22 ส.ค. เป็น 22 พ.ย. 2026" },
+        { "name": "ผลประกอบการ Q3 2026", "description": "อัปเดตสถานะเงินสดก่อน PDUFA — บริษัทระบุว่าเงินสดพอใช้อย่างน้อย 12 เดือน แต่จดหมายผู้ถือหุ้นเตือนเรื่องอัตราการเผาเงิน" }
+      ],
+      "risks": [
+        "นี่คือการตัดสินใจ FDA รอบที่ 2 ของยาตัวนี้ หลัง CRL ปี 2025 และมติ adcomm ลบปี 2026 — การอนุมัติแม้แค่ข้อบ่งใช้แคบก็ไม่ใช่เดิมพัน 50-50",
+        "จดหมายผู้ถือหุ้น Kaos Capital (21 ส.ค. 2026) เตือนเรื่อง cash burn (เงินสด $237.9M ณ 30 มิ.ย. ลดลง $80.2M จากสิ้นปี 2025) และธรรมาภิบาล",
+        "คดี securities fraud class action ที่ยังดำเนินอยู่เป็นภาระต่อเงินสดโดยตรง",
+        "ข้อบ่งใช้ที่แคบลง (upper-limb function เท่านั้น) จำกัดขนาดตลาดและยอดขายสูงสุด แม้จะได้อนุมัติ — เป้า consensus $44.63 ส่วนใหญ่มาจากก่อนการแก้ไข BLA นี้ ควรระวัง",
+        "ความผันผวนสูงมากแบบ binary — ช่วง 52 สัปดาห์ราว $2.96-$40.37 — หากพลาดอีกครั้งมีโอกาสร่วงกลับไปแถว $4.19"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed ขึ้นดอกเบี้ยเป็น 3.75-4.00% วันที่ 16 ก.ย. 2026 FOMC ครั้งถัดไป 27-28 ต.ค. 2026 — ก่อน PDUFA 22 พ.ย. มาก",
+        "inflationNote": "thesis ของ CAPR ไม่ไวต่อดอกเบี้ยมากนัก แต่บรรยากาศ hawkish เพิ่มต้นทุนถ้าต้องระดมทุนหลัง PDUFA",
+        "sectorImpact": "ไม่เกี่ยวกับตัวนี้เลยตอนนี้ — ผลลัพธ์ regulatory แบบ binary, อัตราเผาเงินสด และความเสี่ยงคดีมีน้ำหนักเหนือกว่าดอกเบี้ย",
+        "summary": "LOW — macro ไม่ใช่ตัวแปรหลัก ตัวแปรหลักคือ PDUFA 22 พ.ย. และภาระเงินสด/คดี"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — sizing ระดับค่าขนม ไม่ใช่ position หลัก ผลตอบแทนเฉลี่ย ณ วัน catalyst ของ core lane อยู่ที่ -6.9% (n=54) — การซื้อที่ราคาปัจจุบัน $8.62 จึงไม่ใช่ทางเลือกหลัก ควรรอโซน $6.80-7.40 thesis ฟื้นตัวจริง (การเลื่อน PDUFA + แก้ BLA + feedback บวกจาก adcomm ต่อ endpoint นี้คือข้อมูลบวกจริง) แต่นี่ยังเป็นการตัดสินใจรอบที่ 2 ของยาที่เคยพลาดมาแล้วครั้งหนึ่ง",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ฟื้นตัวแล้ว +105.7% จากจุดต่ำ 13 ส.ค.", "timing": "ตอนนี้" },
+          { "note": "โซน dip ก่อน PDUFA / retest การทำกำไร (preferred)", "timing": "ถ้าย่อ" },
+          { "note": "โซนลึก ใกล้จุดต่ำหลัง adcomm ($4.19)", "timing": "ถ้าร่วงหนักเท่านั้น" }
+        ],
+        "tp1": { "note": "Base — FDA อนุมัติข้อบ่งใช้ upper-limb ที่แคบลงใกล้ PDUFA 22 พ.ย. — สมมติ horizon ~8 สัปดาห์ ไกลกว่ากรอบ 14 วันของ North Star" },
+        "tp2": { "note": "Bull — อนุมัติราบรื่นบวกการตอบรับ launch ที่ดีกว่าคาด" },
+        "tp3": { "note": "Moon — อนุมัติบวกสัญญาณว่าจะขยายกลับไปครอบคลุม cardiomyopathy ได้ · ปี 2027" },
+        "stopLoss": {
+          "tightNote": "fda_decision มี n=3 ใน skill-feedback (context only) ใช้ core.overall medianMAE -14% เป็นฐานอ้างอิง กว้างขึ้นอีกเพราะยานี้เคยพลาดมาแล้วครั้งหนึ่ง",
+          "hardNote": "ใกล้จุดต่ำหลัง adcomm ($4.19) — หลุดจุดนี้แปลว่าตลาด price การถูกปฏิเสธรอบสอง",
+          "rrNote": "stop แคบ (-25%) เทียบ TP2 (+140%)",
+          "rrWarning": "⚠️ R/R หลอกตาบนกระดาษ — CRL ทำให้ราคา gap ทะลุ stop ข้ามคืนได้"
+        }
+      },
+      "estimateDates": [
+        { "event": "FDA อนุมัติเลื่อน PDUFA (ผ่านไปแล้ว)", "note": "เลื่อนจาก 22 ส.ค. เป็น 22 พ.ย. 2026 หลังแก้ BLA เหลือข้อบ่งใช้ upper-limb function" },
+        { "event": "นำเสนอข้อมูลที่ World Muscle Society Congress (ผ่านไปแล้ว)", "note": "ข้อมูล HOPE-3 24 เดือน + open-label extension สนับสนุนข้อบ่งใช้ที่แคบลง" },
+        { "event": "ผล PDUFA", "note": "อนุมัติ vs CRL บนข้อบ่งใช้ upper-limb ที่แคบลง — ไม่แน่นอนจริง ไม่ใช่เดิมพันชัวร์" },
+        { "event": "งบ Q3 2026", "note": "ดูแค่ cash runway กับสำรองคดีเป็นหลัก" }
+      ]
+    }
+  }
+}

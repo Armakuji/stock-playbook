@@ -1,134 +1,138 @@
 {
   "ticker": "RXRX",
   "companyName": "Recursion Pharmaceuticals, Inc.",
-  "companyDescription": "AI-driven drug discovery (TechBio) · REC-4881 in FDA registrational-pathway discussions for familial adenomatous polyposis (FAP) · partnered with Sanofi/Roche ($500M+ milestones delivered)",
+  "companyDescription": "AI-driven drug discovery (TechBio) · REC-4881 in FDA registrational-pathway discussions for familial adenomatous polyposis (FAP) · partnered with Sanofi/Roche/Genentech ($500M+ milestones delivered) · Tempus AI data-licensing partner",
   "exchange": "NASDAQ",
   "generatedAt": "2026-09-29T00:00:00.000Z",
-  "price": 3.19,
-  "priceChange": -1.54,
-  "priceNote": "Roughly flat since the Aug 4 report ($3.18); Q2 2026 earnings already passed without a major surprise",
-  "marketCap": "$1.70B",
+  "price": 3.87,
+  "priceChange": 4.59,
+  "priceNote": "Prior same-day draft used $3.19 — live price $3.87 is +21.3% higher. The move traces to a real, dated catalyst the draft missed: on Sep 21, 2026, Recursion extended its Tempus AI data-licensing deal through Nov 2029 and granted Tempus a license to its TxFM RNA-sequencing foundation model, restructuring fees from a discretionary ~$84M ceiling to a committed $42M over 3 years — a durable, non-dilutive revenue signal the market rewarded with a same-day +3.92% pop and has kept building on since.",
+  "marketCap": "$2.07B",
   "sector": "Healthcare / AI Drug Discovery (TechBio)",
   "verdict": "SPECULATIVE",
   "scoreLabel": "ค่าขนม",
-  "score": 57,
+  "score": 60,
   "factorTags": ["ai_software"],
-  "summary": "REFRESH (prior report Aug 4, 2026): Q2 2026 earnings already passed (Aug 5) without moving the stock materially. The live catalyst remains the REC-4881 FDA registrational-pathway update, unchanged at ~Oct 15, 2026. Consensus (7 analysts, S&P Global) $7.22 implies +126.3% upside from $3.19, though Morgan Stanley trimmed its target to $5.30 (Equal Weight, from $5.50) — a caution flag from a named, conservative voice. Base case (+45%) sits well above the core lane's realized 14d P75 of +6.6% — the gap reflects the multi-month horizon to a registrational-pathway resolution, not near-term optimism bias.",
+  "summary": "Two things changed since the last snapshot: the Tempus AI partnership was extended and restructured (Sep 21, 2026) into committed, non-dilutive payments, and the REC-4881 FDA registrational-pathway update for familial adenomatous polyposis (FAP) remains the live near-term catalyst, now dated precisely to Oct 15, 2026 (previously badged inconsistently as 'H2 2026' against the same catalystDate — fixed in this refresh). Consensus (7 analysts, S&P Global) $7.22 implies +86.6% upside from $3.87, though Morgan Stanley's prior trim to $5.30 (Equal Weight) remains a real caution flag from a named, conservative voice. Base case (+35%) sits above the core lane's realized 14d P75 of +6.6% — the gap reflects the multi-month horizon to a registrational-pathway resolution, not near-term optimism bias.",
   "catalysts": [
     {
       "icon": "💊",
       "name": "REC-4881 FDA Registrational Pathway Update",
-      "description": "Update on the registrational pathway discussions for REC-4881 in familial adenomatous polyposis (FAP), an AI-discovered asset partnered with Sanofi/Roche. Unchanged from the prior report.",
+      "description": "Update on the registrational pathway discussions for REC-4881 in familial adenomatous polyposis (FAP), an AI-discovered asset partnered with Sanofi/Roche. Targeted for Oct 15, 2026.",
       "urgencyLabel": "~16 DAYS",
-      "dateBadge": "H2 2026",
+      "dateBadge": "Oct 15, 2026",
       "catalystDate": "2026-10-15",
       "badgeColor": "yellow",
       "dotColor": "yellow"
     }
   ],
   "risks": [
-    "Morgan Stanley just trimmed its target to $5.30 (Equal Weight) from $5.50 — a real, recent caution signal from a named analyst, not just noise",
+    "Morgan Stanley's target trim to $5.30 (Equal Weight) from $5.50 remains the most recent named-analyst caution signal — no new upgrade has offset it since",
     "Target dispersion remains wide ($4.00 low to $10 high) — genuine methodology disagreement on how to value the TechBio platform",
-    "Still unprofitable with cash-burn risk — a hawkish Fed (rates just hiked to 3.75-4.00%) raises the cost of any future capital raise",
-    "A 'registrational pathway update' is a process milestone, not a binary approval/rejection — the market reaction could be muted if it's just incremental clarity rather than a clear green light"
+    "Still unprofitable with cash-burn risk — a hawkish Fed (rates hiked to 3.75-4.00%) raises the cost of any future capital raise, though the Tempus restructuring reduces near-term revenue uncertainty somewhat",
+    "A 'registrational pathway update' is a process milestone, not a binary approval/rejection — the market reaction could be muted if it's just incremental clarity rather than a clear green light",
+    "The stock has already run +21% into this refresh on the Tempus news — some of the near-term goodwill may be pulled forward ahead of the Oct 15 pathway update itself"
   ],
   "estimateDates": [
-    { "event": "Q2 2026 Earnings (realized)", "dateRange": "Aug 5, 2026", "note": "Already reported, no major surprise", "est": "", "highlight": "blue" },
-    { "event": "REC-4881 Registrational Pathway Update", "dateRange": "H2 2026", "note": "Unchanged catalyst window", "est": "", "highlight": "yellow" }
+    { "event": "Tempus AI Data-License Extension (realized)", "dateRange": "Sep 21, 2026", "note": "Extended through Nov 2029; restructured to $42M committed over 3 years + TxFM model license", "est": "", "highlight": "blue" },
+    { "event": "REC-4881 Registrational Pathway Update", "dateRange": "Oct 15, 2026", "note": "Now matches catalystDate — prior draft had this fuzzily badged as 'H2 2026'", "est": "", "highlight": "yellow" }
   ],
   "scenarios": [
-    { "label": "Bear", "color": "red", "pct": -25, "price": 2.39 },
-    { "label": "Base", "color": "yellow", "pct": 45, "price": 4.63 },
-    { "label": "Bull", "color": "green", "pct": 126, "price": 7.21 },
-    { "label": "Moon", "color": "purple", "pct": 215, "price": 10.05 }
+    { "label": "Bear", "color": "red", "pct": -25, "price": 2.90 },
+    { "label": "Base", "color": "yellow", "pct": 35, "price": 5.22 },
+    { "label": "Bull", "color": "green", "pct": 87, "price": 7.24 },
+    { "label": "Moon", "color": "purple", "pct": 160, "price": 10.06 }
   ],
   "analystTargets": [
     { "firm": "Consensus (7 analysts, S&P Global)", "target": 7.22, "rating": "Buy" },
-    { "firm": "Morgan Stanley", "target": 5.30, "rating": "Equal Weight", "note": "Trimmed from $5.50" },
+    { "firm": "Morgan Stanley", "target": 5.30, "rating": "Equal Weight", "note": "Trimmed from $5.50 — most recent named caution flag" },
     { "firm": "Street High", "target": 10.00, "rating": "Buy" },
     { "firm": "Street Low", "target": 4.00, "rating": "Hold" }
   ],
   "macroRisk": {
     "fedRisk": "HIGH",
     "rateOutlook": "Fed hiked to 3.75-4.00% on Sep 16, 2026 (first hike since 2023); next FOMC Oct 27-28, 2026 — after the Oct 15 pathway update, so it shouldn't collide directly, but tightens the backdrop for any future raise.",
-    "inflationNote": "Inflation-driven hike; RXRX is still unprofitable and cash-burning, making it directly exposed to higher financing costs.",
+    "inflationNote": "Inflation-driven hike; RXRX is still unprofitable and cash-burning, making it directly exposed to higher financing costs, though the Tempus restructuring adds committed near-term revenue.",
     "sectorImpact": "TechBio/AI-drug-discovery names with negative FCF are among the most rate-sensitive cohorts — a hawkish Fed compounds an already-cautious Morgan Stanley call.",
-    "summary": "HIGH macro risk — upgraded from LOW in the prior report given the renewed hiking cycle directly raises RXRX's future financing costs at a time when a named analyst just trimmed its target."
+    "summary": "HIGH macro risk — the renewed hiking cycle directly raises RXRX's future financing costs, though the newly-committed Tempus payments partially de-risk near-term cash needs."
   },
   "entryStrategy": {
     "entryLevels": [
-      { "label": "Entry 1", "level": 3.19, "note": "Current price", "timing": "Now" },
-      { "label": "Entry 2", "level": 2.65, "rangeMax": 2.80, "note": "Pre-catalyst dip zone", "timing": "If dips", "preferred": true },
-      { "label": "Entry 3", "level": 2.35, "note": "Deep dip / matches bear case", "timing": "If broader biotech sells off" }
+      { "label": "Entry 1", "level": 3.87, "note": "Current price — already up 21% since the last snapshot on the Tempus news", "timing": "Now" },
+      { "label": "Entry 2", "level": 3.20, "rangeMax": 3.40, "note": "Pre-catalyst dip zone", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 2.75, "note": "Deep dip / matches bear case", "timing": "If broader biotech sells off" }
     ],
-    "tp1": { "price": 4.63, "pct": 45.0, "note": "Base case — modest positive pathway clarity" },
-    "tp2": { "price": 7.21, "pct": 126.0, "note": "Bull case — near-consensus on a clear registrational path forward" },
-    "tp3": { "price": 10.05, "pct": 215.0, "note": "Moon case — near street high on an accelerated pathway + new Sanofi/Roche milestone", "moon": true },
+    "tp1": { "price": 5.22, "pct": 35.0, "note": "Base case — modest positive pathway clarity" },
+    "tp2": { "price": 7.24, "pct": 87.0, "note": "Bull case — near-consensus on a clear registrational path forward" },
+    "tp3": { "price": 10.06, "pct": 160.0, "note": "Moon case — near street high on an accelerated pathway + new Sanofi/Roche milestone", "moon": true },
     "stopLoss": {
-      "tight": 2.62, "tightPct": -18.0, "tightNote": "Wider than the earnings_beat bucket's medianMAE (-9.6%, n=42) given micro-cap TechBio volatility",
-      "hard": 2.23, "hardPct": -30.0, "hardNote": "Deep capitulation — signals a cash-runway scare or a negative pathway update",
-      "riskReward": "7.1 : 1", "rrNote": "Tight stop vs TP2, off current price", "rrWarning": "Very strong R/R — reflects genuine micro-cap optionality"
+      "tight": 3.10, "tightPct": -20.0, "tightNote": "Wider than the regulatory_approval bucket's medianMAE (-9.3%, n=6) given micro-cap TechBio volatility and the recent +21% run",
+      "hard": 2.71, "hardPct": -30.0, "hardNote": "Deep capitulation — signals a cash-runway scare or a negative pathway update",
+      "riskReward": "6.5 : 1", "rrNote": "Tight stop vs TP2, off current price", "rrWarning": "Strong R/R — reflects genuine micro-cap optionality"
     },
-    "verdict": "Measured median at-catalyst return across the core lane is -6.9% (n=54) — buying at today's $3.19 is not the default entry; the $2.65-2.80 dip is preferred. Morgan Stanley's recent target trim is a real caution flag worth respecting even as the consensus upside stays large — size for genuine two-sided risk, not just the headline R/R.",
+    "verdict": "Measured median at-catalyst return across the core lane is -6.9% (n=54) — buying at today's $3.87 is not the default entry; the $3.20-3.40 dip is preferred. Morgan Stanley's target trim is still a real caution flag worth respecting even as the Tempus restructuring adds genuine near-term revenue visibility — size for two-sided risk, not just the headline R/R.",
     "approach": "Scale In"
   },
   "catalystSpot": {
-    "catalystType": "earnings_beat",
-    "preRunup": "Micro-cap TechBio names like RXRX can drift on any partnership or pathway-clarity headline ahead of a confirmed regulatory-adjacent update",
-    "preRunupTiming": "1-2 weeks before the update",
-    "preRunupPct": "+5% to +15%",
+    "catalystType": "regulatory_approval",
+    "preRunup": "Micro-cap TechBio names like RXRX can drift on any partnership or pathway-clarity headline ahead of a confirmed regulatory-adjacent update — the Sep 21 Tempus news is a real example of this pattern playing out ahead of the Oct 15 pathway update",
+    "preRunupTiming": "1-4 weeks before the update",
+    "preRunupPct": "+5% to +21% (partly already realized via the Tempus news)",
     "postWin": {
       "avgPct": 20,
       "range": "+10% to +35%",
-      "note": "No RXRX-specific 'registrational pathway update' precedent exists yet — proxied from general small-cap biotech reactions to positive regulatory-pathway clarity, plus RXRX's existing Sanofi/Roche partnership credibility ($500M+ milestones already delivered).",
+      "note": "No RXRX-specific 'registrational pathway update' precedent exists yet — proxied from general small-cap biotech reactions to positive regulatory-pathway clarity, plus RXRX's existing Sanofi/Roche/Genentech partnership credibility and the newly-committed Tempus revenue.",
       "exampleDate": "2026 (category reference)"
     },
     "postLose": {
       "avgPct": -18,
       "range": "-10% to -25%",
-      "note": "Proxied from the earnings_beat bucket's own medianMAE (-9.6%, n=42), widened for RXRX's smaller float and higher realized volatility; Morgan Stanley's recent trim to $5.30 shows the downside case has real analyst support.",
+      "note": "Proxied from the regulatory_approval bucket's own medianMAE (-9.3%, n=6), widened for RXRX's smaller float and higher realized volatility; Morgan Stanley's trim to $5.30 shows the downside case has real analyst support.",
       "exampleDate": "Sep 2026 (Morgan Stanley trim)"
     },
     "spotSizing": {
       "pct": 3,
-      "reason": "Wide target dispersion and a recent conservative-analyst trim argue for smaller sizing despite the large headline upside"
+      "reason": "Wide target dispersion and a recent conservative-analyst trim argue for smaller sizing despite the large headline upside and the Tempus revenue de-risking"
     },
-    "stopPreCatalyst": { "pct": -18, "price": 2.62, "note": "Below this, the market is pricing a negative pathway update ahead of time" },
+    "stopPreCatalyst": { "pct": -20, "price": 3.10, "note": "Below this, the market is pricing a negative pathway update ahead of time" },
     "stopPostCatalyst": { "pct": -15, "note": "If the update disappoints or is delayed, exit rather than average down" }
   },
   "comparableCases": [
-    { "ticker": "RXRX", "event": "Q2 2026 earnings — no major surprise, stock roughly flat", "date": "Aug 2026", "movePct": 0.3, "days": 1, "outcome": "mixed", "note": "Shows the stock has been quiet since the last report; the pathway update is the next real catalyst, not the earnings cadence itself" },
+    { "ticker": "RXRX", "event": "Tempus AI data-license extension restructured to committed payments + TxFM model license", "date": "Sep 2026", "movePct": 3.92, "days": 1, "outcome": "good", "note": "Real, dated same-day reaction — explains part of the drift this refresh corrects for; also demonstrates the partnership-headline sensitivity described in preRunup" },
+    { "ticker": "RXRX", "event": "Q2 2026 earnings — revenue miss vs consensus but opex guidance cut 40%", "date": "Aug 2026", "movePct": 0.3, "days": 1, "outcome": "mixed", "note": "Shows the stock was quiet on the earnings print itself; the pathway update and partnership news are the real catalysts, not the earnings cadence" },
     { "ticker": "AGIO", "event": "Mitapivat sickle cell PDUFA process — comparable AI/biotech regulatory-pathway dynamic for a partnered rare-disease asset", "date": "2026", "movePct": 20, "days": 1, "outcome": "good", "note": "Illustrates the upside case if RXRX's pathway update resolves cleanly positive" }
   ],
   "sources": [
-    "https://www.etoro.com/markets/rxrx",
+    "https://www.stocktitan.net/news/RXRX/",
+    "https://stockanalysis.com/stocks/rxrx/",
     "https://stockanalysis.com/stocks/rxrx/forecast/",
     "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html"
   ],
   "i18n": {
     "th": {
-      "summary": "REFRESH (รายงานก่อนหน้า 4 ส.ค. 2026): งบ Q2 2026 ผ่านไปแล้ว (5 ส.ค.) โดยไม่ทำให้หุ้นขยับมาก catalyst ที่ยังไม่เกิดคือการอัปเดต registrational pathway ของ REC-4881 จาก FDA ยังคงกำหนด ~15 ต.ค. 2026 เหมือนเดิม Consensus (นักวิเคราะห์ 7 คน, S&P Global) $7.22 คิดเป็น upside +126.3% จาก $3.19 แม้ Morgan Stanley จะลด target เหลือ $5.30 (Equal Weight จาก $5.50) — สัญญาณเตือนจากนักวิเคราะห์ที่ระบุชื่อและระมัดระวัง",
-      "priceNote": "แทบไม่เปลี่ยนแปลงนับจากรายงาน 4 ส.ค. ($3.18); งบ Q2 2026 ผ่านไปแล้วโดยไม่มีเซอร์ไพรส์ใหญ่",
+      "summary": "สองเรื่องเปลี่ยนแปลงนับจากรายงานฉบับก่อน: พันธมิตร Tempus AI ถูกขยายและปรับโครงสร้างใหม่ (21 ก.ย. 2026) และการอัปเดต registrational pathway ของ REC-4881 สำหรับ FAP ยังเป็น catalyst หลัก ตอนนี้กำหนดวันที่ชัดเจนเป็น 15 ต.ค. 2026 (เดิม badge ไม่ตรงกับ catalystDate — แก้ไขแล้วในรอบนี้) Consensus (นักวิเคราะห์ 7 คน) $7.22 คิดเป็น upside +86.6% จาก $3.87",
+      "priceNote": "รายงานฉบับก่อนในวันเดียวกันใช้ $3.19 — ราคาสด $3.87 สูงกว่า +21.3% มาจากข่าวจริงที่ฉบับก่อนพลาด: 21 ก.ย. 2026 Recursion ขยายดีล Tempus AI ถึงพ.ย. 2029 พร้อมให้สิทธิ์โมเดล TxFM ปรับโครงสร้างค่าธรรมเนียมจากเพดาน discretionary ~$84M เป็นเงื่อนไขผูกพัน $42M ใน 3 ปี — สัญญาณรายได้ที่มั่นคงและไม่ dilute ตลาดตอบรับบวก +3.92% วันเดียว",
       "scoreLabel": "ค่าขนม",
       "catalysts": [
-        { "name": "อัปเดต Registrational Pathway ของ REC-4881 จาก FDA", "description": "อัปเดตเรื่องแนวทางการขึ้นทะเบียนของ REC-4881 สำหรับ familial adenomatous polyposis (FAP) สินทรัพย์ที่ค้นพบด้วย AI ร่วมกับ Sanofi/Roche ไม่เปลี่ยนแปลงจากรายงานก่อนหน้า" }
+        { "name": "อัปเดต Registrational Pathway ของ REC-4881 จาก FDA", "description": "อัปเดตเรื่องแนวทางการขึ้นทะเบียนของ REC-4881 สำหรับ familial adenomatous polyposis (FAP) ร่วมกับ Sanofi/Roche กำหนดเป็น 15 ต.ค. 2026" }
       ],
       "risks": [
-        "Morgan Stanley เพิ่งลด target เหลือ $5.30 (Equal Weight) จาก $5.50 — สัญญาณเตือนจริงและใหม่จากนักวิเคราะห์ที่ระบุชื่อ ไม่ใช่แค่ noise",
-        "target กระจายกว้าง ($4.00 ต่ำสุด ถึง $10 สูงสุด) — ความเห็นต่างเชิงวิธีการจริงในการประเมินมูลค่าแพลตฟอร์ม TechBio",
-        "ยังไม่มีกำไรและมีความเสี่ยงเผาเงินสด — Fed hawkish (เพิ่งขึ้นดอกเบี้ยเป็น 3.75-4.00%) เพิ่มต้นทุนการระดมทุนในอนาคต",
-        "'อัปเดต registrational pathway' เป็น milestone เชิงกระบวนการ ไม่ใช่ binary อนุมัติ/ปฏิเสธ — ปฏิกิริยาตลาดอาจแผ่วถ้าเป็นแค่ความชัดเจนที่เพิ่มขึ้นทีละน้อย ไม่ใช่ไฟเขียวชัดเจน"
+        "การลด target ของ Morgan Stanley เหลือ $5.30 (Equal Weight) ยังเป็นสัญญาณเตือนล่าสุดจากนักวิเคราะห์ที่ระบุชื่อ ยังไม่มีการอัปเกรดใหม่มาหักล้าง",
+        "target กระจายกว้าง ($4.00 ต่ำสุด ถึง $10 สูงสุด)",
+        "ยังไม่มีกำไรและมีความเสี่ยงเผาเงินสด — Fed hawkish เพิ่มต้นทุนระดมทุนในอนาคต แม้การปรับโครงสร้าง Tempus จะลดความไม่แน่นอนรายได้ระยะสั้นบ้าง",
+        "'อัปเดต registrational pathway' เป็น milestone เชิงกระบวนการ ไม่ใช่ binary อนุมัติ/ปฏิเสธ",
+        "หุ้นวิ่งขึ้นแล้ว +21% จากข่าว Tempus ก่อน refresh นี้ — ความหวังบางส่วนอาจถูกดึงมาล่วงหน้าก่อนอัปเดต 15 ต.ค. จริง"
       ],
       "macroRisk": {
-        "rateOutlook": "Fed ขึ้นดอกเบี้ยเป็น 3.75-4.00% วันที่ 16 ก.ย. 2026 FOMC ครั้งถัดไป 27-28 ต.ค. 2026 — อยู่หลังอัปเดตวันที่ 15 ต.ค. จึงไม่ชนกันโดยตรง แต่ทำให้บรรยากาศสำหรับการระดมทุนรอบหน้าตึงขึ้น",
-        "inflationNote": "การขึ้นดอกเบี้ยมาจากเงินเฟ้อ — RXRX ยังไม่มีกำไรและเผาเงินสด ทำให้ไวต่อต้นทุนทางการเงินที่สูงขึ้นโดยตรง",
-        "sectorImpact": "หุ้น TechBio/AI drug discovery ที่ FCF ติดลบเป็นกลุ่มที่ไวต่อดอกเบี้ยที่สุดกลุ่มหนึ่ง — Fed hawkish ซ้ำเติมมุมมองระมัดระวังของ Morgan Stanley ที่มีอยู่แล้ว",
-        "summary": "ความเสี่ยง Fed ระดับ HIGH — ปรับขึ้นจาก LOW ในรายงานก่อนหน้า เพราะวงจรขึ้นดอกเบี้ยรอบใหม่เพิ่มต้นทุนทางการเงินในอนาคตของ RXRX โดยตรง ในช่วงที่นักวิเคราะห์ที่ระบุชื่อเพิ่งลด target"
+        "rateOutlook": "Fed ขึ้นดอกเบี้ยเป็น 3.75-4.00% วันที่ 16 ก.ย. 2026 FOMC ครั้งถัดไป 27-28 ต.ค. 2026 — อยู่หลังอัปเดต 15 ต.ค.",
+        "inflationNote": "RXRX ยังไม่มีกำไรและเผาเงินสด แม้การปรับโครงสร้าง Tempus จะเพิ่มความชัดเจนรายได้ระยะสั้น",
+        "sectorImpact": "หุ้น TechBio/AI drug discovery ที่ FCF ติดลบไวต่อดอกเบี้ยที่สุดกลุ่มหนึ่ง",
+        "summary": "ความเสี่ยง Fed ระดับ HIGH — วงจรขึ้นดอกเบี้ยรอบใหม่เพิ่มต้นทุนทางการเงินในอนาคต แม้เงื่อนไข Tempus ที่ผูกพันแล้วจะลดความเสี่ยงเงินสดระยะสั้นบางส่วน"
       },
       "entryStrategy": {
-        "verdict": "ผลตอบแทนเฉลี่ย ณ วัน catalyst ของ core lane อยู่ที่ -6.9% (n=54) — การซื้อที่ราคาปัจจุบัน $3.19 จึงไม่ใช่ทางเลือกหลัก ควรรอโซน $2.65-2.80 การลด target ล่าสุดของ Morgan Stanley เป็นสัญญาณเตือนจริงที่ควรให้ความสำคัญแม้ upside โดยรวมยังสูง — ควรจัด position ให้เหมาะกับความเสี่ยงสองด้านจริง ไม่ใช่แค่ R/R หลัก",
+        "verdict": "ผลตอบแทนเฉลี่ย ณ วัน catalyst ของ core lane อยู่ที่ -6.9% (n=54) — การซื้อที่ราคาปัจจุบัน $3.87 จึงไม่ใช่ทางเลือกหลัก ควรรอโซน $3.20-3.40 การลด target ของ Morgan Stanley ยังเป็นสัญญาณเตือนจริงแม้การปรับโครงสร้าง Tempus จะเพิ่มการมองเห็นรายได้",
         "entryLevels": [
-          { "note": "ราคาปัจจุบัน", "timing": "ตอนนี้" },
+          { "note": "ราคาปัจจุบัน — วิ่งขึ้นแล้ว 21% จากข่าว Tempus", "timing": "ตอนนี้" },
           { "note": "โซนย่อก่อน catalyst (preferred)", "timing": "ถ้าย่อ" },
           { "note": "ย่อลึกตรงกับ bear case", "timing": "ถ้ากลุ่ม biotech ร่วงทั้งกลุ่ม" }
         ],
@@ -136,15 +140,15 @@
         "tp2": { "note": "Bull case — ใกล้ consensus จากแนวทางขึ้นทะเบียนที่ชัดเจน" },
         "tp3": { "note": "Moon case — ใกล้ street high จาก pathway ที่เร่งเร็วขึ้น + milestone ใหม่จาก Sanofi/Roche" },
         "stopLoss": {
-          "tightNote": "กว้างกว่า medianMAE ของ earnings_beat (-9.6%, n=42) เพราะ TechBio มาร์เก็ตแคปเล็กผันผวนสูง",
+          "tightNote": "กว้างกว่า medianMAE ของ regulatory_approval (-9.3%, n=6) เพราะ TechBio มาร์เก็ตแคปเล็กผันผวนสูงและหุ้นวิ่งมาแล้ว",
           "hardNote": "จุดยอมแพ้ลึก — สัญญาณความกลัวเรื่อง cash runway หรืออัปเดต pathway เชิงลบ",
           "rrNote": "Stop แคบเทียบ TP2 จากราคาปัจจุบัน",
-          "rrWarning": "R/R แข็งแรงมาก — สะท้อน optionality จริงของหุ้นมาร์เก็ตแคปเล็ก"
+          "rrWarning": "R/R แข็งแรงมาก"
         }
       },
       "estimateDates": [
-        { "event": "งบ Q2 2026 (ผ่านไปแล้ว)", "note": "รายงานไปแล้ว ไม่มีเซอร์ไพรส์ใหญ่" },
-        { "event": "อัปเดต Registrational Pathway ของ REC-4881", "note": "ช่วง catalyst ไม่เปลี่ยนแปลง" }
+        { "event": "ขยายดีล Tempus AI (ผ่านไปแล้ว)", "note": "ขยายถึงพ.ย. 2029 ปรับโครงสร้างเป็น $42M ผูกพัน 3 ปี + สิทธิ์โมเดล TxFM" },
+        { "event": "อัปเดต Registrational Pathway ของ REC-4881", "note": "ตรงกับ catalystDate แล้ว — เดิม badge ไม่ตรงกัน" }
       ]
     }
   }

@@ -1,81 +1,92 @@
 {
   "ticker": "SATL",
   "companyName": "Satellogic Inc.",
-  "companyDescription": "Vertically integrated Earth-observation satellite company — designs, builds & operates its own smallsat constellation for daily sub-meter global imaging",
+  "companyDescription": "Vertically integrated Earth-observation satellite company — designs, builds & operates its own smallsat constellation for daily sub-meter global imaging; now scaling into government/defense (new President is a former NGA director)",
   "exchange": "NASDAQ",
   "generatedAt": "2026-09-29T00:00:00.000Z",
-  "price": 4.62,
-  "priceChange": 1.8,
-  "priceNote": "Range-bound ahead of the Merlin-1 launch window; 52-week range $1.26-$12.00",
-  "marketCap": "$946M",
+  "price": 5.59,
+  "priceChange": -7.52,
+  "priceNote": "Prior same-day draft used $4.62 — live price $5.59 is +21.0% higher, confirmed genuine (not a stale-cache artifact). The gap traces to real news the draft missed: the Sep 8 appointment of VADM (Ret.) Frank Whitworth, former NGA director, as President drove a +15.73% single-day pop, on top of the Sep 3 SynMax maritime-imagery partnership news. Today's -7.52% looks like profit-taking after that run, not new negative news.",
+  "marketCap": "$1.14B",
   "sector": "Space / Earth Observation",
   "verdict": "BUY",
   "scoreLabel": "Speculative",
-  "score": 68,
+  "score": 66,
   "factorTags": ["space_launch"],
-  "summary": "Satellogic's first Merlin-class satellite launches in October 2026 on a SpaceX Transporter rideshare, the first hard revenue-unlock event since the company guided to a ~$1B Space Systems pipeline and Q4 2026 revenue contribution tied to Merlin. Consensus target of $10.98 (5 analysts, Strong Buy) implies +137.7% upside from $4.62. Base case (+60%) assumes a 3-4 month re-rating horizon through launch success and first commissioning data, not the 14-day measurement window — well above the catalyst lane's realized 14d P75 of +6.6%, so read the gap as a horizon difference, not optimism bias.",
+  "summary": "Satellogic's Merlin constellation begins launching in October 2026 (two NewSat Mark VI satellites with inter-satellite-link tech plus one NewSat Mark V), the first hard revenue-unlock event since the company guided to a ~$1B Space Systems pipeline. Since the last snapshot, two real catalysts landed: SynMax was named exclusive maritime partner for Merlin-constellation imagery (Sep 3), and Vice Admiral (Ret.) Frank Whitworth — former director of the National Geospatial-Intelligence Agency — was appointed President (Sep 8), a strong signal on government/defense scaling that the market rewarded with a +15.73% pop. Q2 2026 revenue grew 259% YoY to $15.9M with the company's first-ever positive operating income. Consensus target is now $10.20 (5 analysts, Strong Buy, high $11/low $9), +82.5% from $5.59 — narrower than the prior report's $8.90-15 range but confirms real analyst conviction survives the run. Base case (+55%) assumes a 3-4 month re-rating horizon through launch success and first commissioning data, not the 14-day North Star window — well above the core lane's realized 14d P75 of +6.6%, so read the gap as a horizon difference, not optimism bias.",
   "catalysts": [
     {
       "icon": "🛰️",
-      "name": "Merlin-1 First Satellite Launch",
-      "description": "First satellite in the new Merlin constellation launches via SpaceX Transporter rideshare — fully customer-funded, no incremental capital needed. Success unlocks the ~$1B Space Systems pipeline and the Q4 2026 revenue contribution management has already guided to.",
+      "name": "Merlin Constellation Launch (2 NewSat Mark VI + 1 Mark V)",
+      "description": "First Merlin-class satellites launch in October 2026, fully customer-funded. Success unlocks the ~$1B Space Systems pipeline and the Q4 2026 revenue contribution management has already guided to. SynMax now holds exclusive maritime-imagery rights on Merlin data (announced Sep 3, 2026).",
       "urgencyLabel": "~16 DAYS",
       "dateBadge": "Oct 2026",
       "catalystDate": "2026-10-15",
       "badgeColor": "yellow",
       "dotColor": "yellow"
+    },
+    {
+      "icon": "🎖️",
+      "name": "Defense/Government Scale-Up Under New President",
+      "description": "VADM (Ret.) Frank Whitworth, former NGA director, appointed President effective Sep 8, 2026 — a strong signal for government/defense business development. ONR Slingshot III program also expanded (six additional Mark VI satellites over 18 months).",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "green",
+      "dotColor": "gray"
     }
   ],
   "risks": [
-    "Launch delay or anomaly would push revenue recognition and could trigger a sharp de-rate — satellite_launch is the most volatile catalyst type in the feedback set (medianMAE -19.4%, n=8)",
-    "Balance sheet depends on continued customer prepayments/financing — a hawkish Fed (rates just hiked to 3.75-4.00%) raises the cost of the next capital round if Merlin slips",
-    "Thin analyst coverage (5 names, target range $8.90-$15) means the consensus target could reprice quickly on any single revision",
-    "Sub-$1B market cap and a low float drive outsized volatility in both directions"
+    "Launch delay or anomaly would push revenue recognition and could trigger a sharp de-rate — satellite_launch is the most volatile catalyst type in the feedback set (medianMAE -19.4%, n=8) and is also the feedback set's STRONGEST performer on median excess vs SPY (+7.4pp, n=8) — high variance in both directions",
+    "The stock has already run +21% into this refresh on real news (Whitworth appointment, SynMax deal) — some of the launch catalyst's upside may already be partly priced in ahead of the actual October launch",
+    "Balance sheet depends on continued customer prepayments/financing — a hawkish Fed (rates hiked to 3.75-4.00% on Sep 16) raises the cost of the next capital round if Merlin slips",
+    "Thin analyst coverage (5 names, target range $9-$11) means the consensus target could reprice quickly on any single revision",
+    "Sub-$1.2B market cap and a still-relatively-low float drive outsized volatility in both directions, as today's -7.52% single-day move shows"
   ],
   "estimateDates": [
-    { "event": "Merlin-1 Launch Window", "dateRange": "Oct 2026", "note": "SpaceX Transporter rideshare mission", "est": "confirms Q4 revenue contribution", "highlight": "blue" },
+    { "event": "President Appointment (realized)", "dateRange": "Sep 8, 2026", "note": "VADM (Ret.) Frank Whitworth, former NGA director — +15.73% same-day reaction", "est": "", "highlight": "blue" },
+    { "event": "Merlin Constellation Launch Window", "dateRange": "Oct 2026", "note": "2x NewSat Mark VI + 1x NewSat Mark V; SpaceX-adjacent rideshare cadence", "est": "confirms Q4 revenue contribution", "highlight": "yellow" },
     { "event": "Q3 2026 Earnings", "dateRange": "Nov 2026", "note": "First commentary on Merlin commissioning + pre-sales beyond the anchor customer", "est": "", "highlight": "yellow" }
   ],
   "scenarios": [
-    { "label": "Bear", "color": "red", "pct": -30, "price": 3.23 },
-    { "label": "Base", "color": "yellow", "pct": 60, "price": 7.39 },
-    { "label": "Bull", "color": "green", "pct": 110, "price": 9.70 },
-    { "label": "Moon", "color": "purple", "pct": 170, "price": 12.47 }
+    { "label": "Bear", "color": "red", "pct": -30, "price": 3.91 },
+    { "label": "Base", "color": "yellow", "pct": 55, "price": 8.67 },
+    { "label": "Bull", "color": "green", "pct": 100, "price": 11.18 },
+    { "label": "Moon", "color": "purple", "pct": 160, "price": 14.53 }
   ],
   "analystTargets": [
-    { "firm": "Consensus (5 analysts, S&P Global)", "target": 10.98, "rating": "Strong Buy" },
-    { "firm": "Street High", "target": 15.00, "rating": "Buy" },
-    { "firm": "Street Low", "target": 8.90, "rating": "Buy" }
+    { "firm": "Consensus (5 analysts, S&P Global)", "target": 10.20, "rating": "Strong Buy" },
+    { "firm": "Northland Securities (Michael Latimore)", "target": 11.00, "rating": "Buy", "note": "Reiterated Sep 16, 2026" },
+    { "firm": "Freedom Capital Markets (Sergey Glinyanov)", "target": 9.00, "rating": "Buy", "note": "Street low; upgraded from $8.90 on Jun 29, 2026" }
   ],
   "macroRisk": {
     "fedRisk": "HIGH",
-    "rateOutlook": "Fed unexpectedly hiked to 3.75-4.00% on Sep 16, 2026 (first hike since 2023) on elevated inflation; futures price ~4.2% by Dec 2026 and further hikes toward ~4.8% by Sep 2027. Next FOMC is Oct 27-28, 2026 — after Merlin-1's launch window, so it shouldn't collide with the catalyst itself, but it raises the cost of Satellogic's next financing round if launch slips.",
-    "inflationNote": "Elevated inflation is the stated reason for the hike, not a growth scare — risk-on small caps can still work if the launch succeeds, but the discount-rate headwind on unprofitable names is real.",
-    "sectorImpact": "Space/Earth-observation names have re-rated hard on SpaceX-IPO spillover and launch-cadence news in 2026 (ASTS, PL, RKLB); a hawkish Fed is a headwind to that multiple but hasn't broken the sector trend yet.",
+    "rateOutlook": "Fed hiked to 3.75-4.00% on Sep 16, 2026 (first hike since 2023) on elevated inflation; futures price ~4.2% by Dec 2026. Next FOMC is Oct 27-28, 2026 — after Merlin's launch window, so it shouldn't collide with the catalyst itself, but it raises the cost of Satellogic's next financing round if launch slips.",
+    "inflationNote": "Elevated inflation is the stated reason for the hike, not a growth scare — risk-on small caps can still work if the launch succeeds, but the discount-rate headwind on still-scaling names is real, even with Q2's first positive operating income.",
+    "sectorImpact": "Space/Earth-observation names have re-rated hard on SpaceX-IPO spillover, launch-cadence news, and defense-scaling hires (Satellogic's own Whitworth appointment) in 2026; a hawkish Fed is a headwind to that multiple but hasn't broken the sector trend yet.",
     "summary": "HIGH macro risk given Satellogic's financing-dependent balance sheet in a renewed hiking cycle, but the launch catalyst is company-specific and largely macro-independent — thesis break is a launch failure, not a rate move."
   },
   "entryStrategy": {
     "entryLevels": [
-      { "label": "Entry 1", "level": 4.62, "note": "Current price", "timing": "Now" },
-      { "label": "Entry 2", "level": 3.95, "rangeMax": 4.15, "note": "Pre-launch dip zone", "timing": "If dips", "preferred": true },
-      { "label": "Entry 3", "level": 3.30, "note": "Deep dip / near recent support", "timing": "If sector sells off" }
+      { "label": "Entry 1", "level": 5.59, "note": "Current price — already up 21% since the last snapshot on real news", "timing": "Now" },
+      { "label": "Entry 2", "level": 4.70, "rangeMax": 5.00, "note": "Pre-launch dip zone / retest of today's pullback", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 3.90, "note": "Deep dip / matches bear case", "timing": "If sector sells off" }
     ],
-    "tp1": { "price": 7.39, "pct": 60.0, "note": "Base case — successful launch + commissioning confirmed" },
-    "tp2": { "price": 9.70, "pct": 110.0, "note": "Bull case — near-consensus re-rate on Q4 revenue proof" },
-    "tp3": { "price": 12.47, "pct": 170.0, "note": "Moon case — new contract wins beyond the anchor customer · 2027", "moon": true },
+    "tp1": { "price": 8.67, "pct": 55.0, "note": "Base case — successful launch + commissioning confirmed" },
+    "tp2": { "price": 11.18, "pct": 100.0, "note": "Bull case — near/above consensus re-rate on Q4 revenue proof + defense-scaling traction" },
+    "tp3": { "price": 14.53, "pct": 160.0, "note": "Moon case — new contract wins beyond the anchor customer + defense pipeline materializes · 2027", "moon": true },
     "stopLoss": {
-      "tight": 3.60, "tightPct": -22.0, "tightNote": "Wider than the satellite_launch bucket's medianMAE (-19.4%, n=8) to avoid getting shaken out pre-launch",
-      "hard": 3.00, "hardPct": -35.0, "hardNote": "Launch failure / anomaly confirmed — thesis break",
-      "riskReward": "5.0 : 1", "rrNote": "Tight stop vs TP2, off current price", "rrWarning": "Strong R/R"
+      "tight": 4.35, "tightPct": -22.0, "tightNote": "Wider than the satellite_launch bucket's medianMAE (-19.4%, n=8) to avoid getting shaken out pre-launch",
+      "hard": 3.63, "hardPct": -35.0, "hardNote": "Launch failure / anomaly confirmed — thesis break",
+      "riskReward": "4.5 : 1", "rrNote": "Tight stop vs TP2, off current price", "rrWarning": "Strong R/R, slightly narrower than before since the entry price itself has already run"
     },
-    "verdict": "Measured median at-catalyst return across the core catalyst lane is -6.9% (n=54) — buying at today's $4.62 is not the default entry; the $3.95-4.15 pre-launch dip is preferred. Satellite_launch is the feedback set's strongest catalyst type (+7.4pp median excess vs SPY, n=8) and Merlin-1 is the first hard revenue-unlock event in Satellogic's public history — buy the dip, size small given binary launch risk.",
+    "verdict": "Measured median at-catalyst return across the core catalyst lane is -6.9% (n=54) — buying at today's $5.59 is not the default entry; the $4.70-5.00 zone (today's pullback) is preferred. Satellite_launch is the feedback set's strongest catalyst type (+7.4pp median excess vs SPY, n=8) and Merlin is the first hard revenue-unlock event in Satellogic's public history, now backed by a credible defense-scaling hire — buy the dip, size small given binary launch risk.",
     "approach": "Scale In"
   },
   "catalystSpot": {
     "catalystType": "satellite_launch",
-    "preRunup": "Space/EO names in this sector typically drift up into a confirmed launch window as pre-sales and pipeline commentary build (seen in PL's guidance-raise run and ASTS's deployment-progress rally in 2026)",
-    "preRunupTiming": "2-3 weeks before the launch window",
-    "preRunupPct": "+10% to +20%",
+    "preRunup": "Space/EO names in this sector typically drift up into a confirmed launch window as pre-sales and pipeline commentary build; Satellogic itself has already shown this pattern twice this month (SynMax deal Sep 3, Whitworth appointment Sep 8) ahead of the actual October launch",
+    "preRunupTiming": "2-4 weeks before the launch window",
+    "preRunupPct": "+15% to +25% (already partly realized this cycle)",
     "postWin": {
       "avgPct": 15,
       "range": "+11% to +34%",
@@ -85,69 +96,70 @@
     "postLose": {
       "avgPct": -19,
       "range": "-10% to -25%",
-      "note": "No direct Satellogic launch-failure precedent; proxied from the satellite_launch bucket's own medianMAE (-19.4%, n=8) and the general pattern of launch delays (e.g. Rocket Lab's Neutron slipping to 2026, announced Nov 2025) compressing sentiment until the next confirmed window.",
-      "exampleDate": "Nov 2025"
+      "note": "No direct Satellogic launch-failure precedent; proxied from the satellite_launch bucket's own medianMAE (-19.4%, n=8) and the general pattern of launch delays compressing sentiment until the next confirmed window.",
+      "exampleDate": "2026 (category reference)"
     },
     "spotSizing": {
       "pct": 4,
-      "reason": "Binary, single-event catalyst on a sub-$1B, thinly-covered name in a HIGH macro-risk backdrop — size small even though the type is the feedback set's strongest performer"
+      "reason": "Binary, single-event catalyst on a sub-$1.2B, thinly-covered name in a HIGH macro-risk backdrop — size small even though the type is the feedback set's strongest performer and the entry has already run"
     },
-    "stopPreCatalyst": { "pct": -22, "price": 3.60, "note": "Below this, the pre-launch thesis (successful Transporter integration) is in question" },
+    "stopPreCatalyst": { "pct": -22, "price": 4.35, "note": "Below this, the pre-launch thesis (successful Merlin integration) is in question" },
     "stopPostCatalyst": { "pct": -15, "note": "If the launch scrubs or an anomaly is confirmed post-launch, exit — don't wait for the next window" }
   },
   "comparableCases": [
+    { "ticker": "SATL", "event": "VADM (Ret.) Frank Whitworth, former NGA director, appointed President", "date": "Sep 8, 2026", "movePct": 15.73, "days": 1, "outcome": "good", "note": "Direct, same-company precedent — shows how much the market rewards a credible defense-scaling signal even ahead of any launch event" },
     { "ticker": "PL", "event": "Raised FY26 revenue outlook + successful launch of 3 new Earth-observation satellites", "date": "Jun 2026", "movePct": 16, "days": 1, "outcome": "good", "note": "Closest direct comp — a launch-tied guidance raise in the same Earth-observation niche" },
-    { "ticker": "ASTS", "event": "Sector rally on SpaceX IPO spillover + BlueBird satellite deployment progress", "date": "May 2026", "movePct": 20, "days": 1, "outcome": "good", "note": "Shows how much of the 2026 space-sector move is deployment-progress driven, not just launch-day pops" },
     { "ticker": "RKLB", "event": "Record backlog ($2.36B) + record launch-deal driven single-day surge", "date": "2026", "movePct": 34, "days": 1, "outcome": "good", "note": "Largest single-day space-sector move observed this cycle — treat as an upper bound, not the typical case" }
   ],
   "sources": [
+    "https://www.stocktitan.net/news/SATL/",
     "https://stockanalysis.com/stocks/satl/forecast/",
-    "https://finance.yahoo.com/markets/stocks/articles/satellogic-eyes-merlin-pre-sales-135310711.html",
-    "https://satellogic.com/news/press-releases/satellogic-introduces-merlin-constellation-for-daily-global-monitoring-at-one-meter-resolution/",
+    "https://stockanalysis.com/stocks/satl/",
     "https://finance.yahoo.com/markets/stocks/articles/planet-labs-pl-16-1-131515439.html",
-    "https://finance.yahoo.com/markets/stocks/articles/ast-spacemobile-rockets-20-planet-164024532.html",
-    "https://www.techbuzz.ai/articles/rocket-lab-surges-34-in-best-day-ever-on-revenue-beat-record-setting-launch-deal",
     "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html"
   ],
   "i18n": {
     "th": {
-      "summary": "ดาวเทียม Merlin ดวงแรกของ Satellogic จะปล่อยตัวเดือนต.ค. 2026 ผ่านจรวด SpaceX Transporter — เป็น catalyst ที่ปลดล็อกรายได้จริงครั้งแรกตาม guidance ที่บอกว่าจะมี pipeline ~1 พันล้านดอลลาร์และรายได้ใน Q4 2026 consensus target $10.98 (นักวิเคราะห์ 5 คน, Strong Buy) upside +137.7% จากราคา $4.62 Base case (+60%) ใช้กรอบเวลา 3-4 เดือนหลัง catalyst ไม่ใช่ 14 วันตามที่วัดใน skill-feedback — ส่วนต่างมาจาก horizon ไม่ใช่การมองโลกในแง่ดีเกินจริง",
-      "priceNote": "ราคานิ่งรอ window ปล่อยดาวเทียม Merlin-1 · กรอบ 52 สัปดาห์ $1.26-$12.00",
+      "summary": "Merlin constellation ของ Satellogic เริ่มปล่อยตัวเดือนต.ค. 2026 (ดาวเทียม NewSat Mark VI 2 ดวง + Mark V 1 ดวง) เป็น catalyst ปลดล็อกรายได้จริงครั้งแรก นับจากรายงานฉบับก่อนมีข่าวจริง 2 เรื่อง: SynMax ได้สิทธิ์ maritime imagery จาก Merlin แบบ exclusive (3 ก.ย.) และ VADM (เกษียณ) Frank Whitworth อดีตผู้อำนวยการ NGA ได้รับแต่งตั้งเป็นประธาน (8 ก.ย.) ซึ่งตลาดตอบรับด้วยการบวก +15.73% วันเดียว รายได้ Q2 2026 โต 259% YoY เป็น $15.9M พร้อมกำไรจากการดำเนินงานเป็นบวกครั้งแรก consensus target ตอนนี้ $10.20 (นักวิเคราะห์ 5 คน, Strong Buy) upside +82.5% จาก $5.59",
+      "priceNote": "รายงานฉบับก่อนในวันเดียวกันใช้ $4.62 — ราคาสด $5.59 สูงกว่า +21.0% ยืนยันว่าเป็นของจริง ไม่ใช่ cache เก่า ส่วนต่างมาจากข่าวจริงที่ฉบับก่อนพลาดไป (แต่งตั้ง Whitworth 8 ก.ย. บวก 15.73%, ดีล SynMax 3 ก.ย.) วันนี้ -7.52% ดูเหมือนการทำกำไรมากกว่าข่าวลบใหม่",
       "scoreLabel": "Speculative",
       "catalysts": [
-        { "name": "ปล่อยดาวเทียม Merlin-1 ดวงแรก", "description": "ดาวเทียมดวงแรกของ constellation ใหม่ Merlin ปล่อยผ่านจรวด SpaceX Transporter — ลูกค้าจ่ายเงินไปแล้ว ไม่ต้องใช้เงินทุนเพิ่ม หากสำเร็จจะปลดล็อก pipeline ~1 พันล้านดอลลาร์ และรายได้ Q4 2026 ตามที่บริษัท guide ไว้" }
+        { "name": "ปล่อยดาวเทียม Merlin Constellation (Mark VI x2 + Mark V x1)", "description": "ดาวเทียม Merlin-class ชุดแรกปล่อยตัวเดือนต.ค. 2026 ลูกค้าจ่ายเงินไปแล้วทั้งหมด หากสำเร็จจะปลดล็อก pipeline ~1 พันล้านดอลลาร์และรายได้ Q4 2026 SynMax ได้สิทธิ์ maritime imagery แบบ exclusive จากข้อมูล Merlin แล้ว (ประกาศ 3 ก.ย. 2026)" },
+        { "name": "การขยายธุรกิจภาครัฐ/กลาโหมภายใต้ประธานคนใหม่", "description": "VADM (เกษียณ) Frank Whitworth อดีตผู้อำนวยการ NGA ได้รับแต่งตั้งเป็นประธานมีผล 8 ก.ย. 2026 — สัญญาณแข็งแรงต่อธุรกิจภาครัฐ/กลาโหม โปรแกรม ONR Slingshot III ก็ขยายเพิ่มด้วย" }
       ],
       "risks": [
-        "ปล่อยดาวเทียมล่าช้าหรือผิดพลาดจะทำให้รายได้เลื่อนและหุ้นร่วงแรง — satellite_launch เป็น catalyst type ที่ผันผวนที่สุดใน feedback set (medianMAE -19.4%, n=8)",
-        "งบดุลพึ่งเงินล่วงหน้าจากลูกค้า/แหล่งทุน — Fed เพิ่งขึ้นดอกเบี้ยเป็น 3.75-4.00% ทำให้ต้นทุนระดมทุนรอบหน้าสูงขึ้นถ้า Merlin ล่าช้า",
-        "นักวิเคราะห์ cover น้อย (5 คน, target ช่วง $8.90-$15) ทำให้ consensus target เปลี่ยนเร็วถ้ามีการปรับแค่รายเดียว",
-        "มาร์เก็ตแคปต่ำกว่า 1 พันล้านและ float น้อย ทำให้ผันผวนสูงทั้งขาขึ้นขาลง"
+        "ปล่อยดาวเทียมล่าช้าหรือผิดพลาดจะทำให้รายได้เลื่อนและหุ้นร่วงแรง — satellite_launch ผันผวนที่สุดใน feedback set (medianMAE -19.4%, n=8) แต่ก็ perform ดีที่สุดด้วย (+7.4pp เหนือ SPY)",
+        "หุ้นวิ่งขึ้นแล้ว +21% จากข่าวจริงก่อน refresh นี้ — upside บางส่วนของ catalyst ปล่อยดาวเทียมอาจถูก price ไปแล้วบางส่วน",
+        "งบดุลพึ่งเงินล่วงหน้าจากลูกค้า/แหล่งทุน — Fed hawkish เพิ่มต้นทุนระดมทุนรอบหน้าถ้า Merlin ล่าช้า",
+        "นักวิเคราะห์ cover น้อย (5 คน, target ช่วง $9-$11) ทำให้ consensus เปลี่ยนเร็วถ้ามีการปรับแค่รายเดียว",
+        "มาร์เก็ตแคปต่ำกว่า 1.2 พันล้านและ float ยังค่อนข้างน้อย ทำให้ผันผวนสูงทั้งสองทาง ตามที่เห็นวันนี้ที่ -7.52%"
       ],
       "macroRisk": {
-        "rateOutlook": "Fed ขึ้นดอกเบี้ยเป็น 3.75-4.00% วันที่ 16 ก.ย. 2026 อย่างไม่คาดคิด (ครั้งแรกตั้งแต่ปี 2023) จากเงินเฟ้อที่ยังสูง ตลาดคาด futures ที่ ~4.2% ภายในธ.ค. 2026 FOMC ครั้งถัดไปคือ 27-28 ต.ค. 2026 ซึ่งอยู่หลัง window ปล่อยดาวเทียม Merlin-1 พอดี",
-        "inflationNote": "สาเหตุขึ้นดอกเบี้ยคือเงินเฟ้อสูง ไม่ใช่สัญญาณเศรษฐกิจถดถอย — หุ้น risk-on ยังไปได้ถ้า launch สำเร็จ แต่ discount rate ที่สูงขึ้นกดดันหุ้นที่ยังไม่มีกำไรจริง",
-        "sectorImpact": "หุ้นกลุ่มอวกาศ/Earth-observation รีเรทแรงจากกระแส SpaceX IPO และข่าวปล่อยดาวเทียมตลอดปี 2026 — Fed hawkish เป็นแรงต้าน multiple แต่ยังไม่หยุดเทรนด์กลุ่มนี้",
-        "summary": "ความเสี่ยง Fed ระดับ HIGH เพราะ Satellogic พึ่งเงินทุนในช่วงดอกเบี้ยขาขึ้น แต่ catalyst การปล่อยดาวเทียมเป็นเรื่องเฉพาะบริษัท ความเสี่ยงหลักคือ launch ล้มเหลว ไม่ใช่ดอกเบี้ย"
+        "rateOutlook": "Fed ขึ้นดอกเบี้ยเป็น 3.75-4.00% วันที่ 16 ก.ย. 2026 FOMC ครั้งถัดไป 27-28 ต.ค. 2026 อยู่หลัง window ปล่อยดาวเทียม Merlin",
+        "inflationNote": "สาเหตุขึ้นดอกเบี้ยคือเงินเฟ้อสูง — discount rate ที่สูงขึ้นยังกดดันหุ้นที่กำลังขยายตัว แม้ Q2 จะมีกำไรดำเนินงานบวกครั้งแรก",
+        "sectorImpact": "หุ้นกลุ่มอวกาศ/Earth-observation รีเรทแรงจากกระแส SpaceX IPO ข่าวปล่อยดาวเทียม และการจ้างผู้บริหารสายกลาโหม (เช่น Whitworth ของ Satellogic เอง)",
+        "summary": "ความเสี่ยง Fed ระดับ HIGH เพราะ Satellogic พึ่งเงินทุนในช่วงดอกเบี้ยขาขึ้น แต่ catalyst ปล่อยดาวเทียมเป็นเรื่องเฉพาะบริษัท"
       },
       "entryStrategy": {
-        "verdict": "ผลตอบแทนเฉลี่ย ณ วัน catalyst ของ core lane อยู่ที่ -6.9% (n=54) — การซื้อที่ราคาปัจจุบัน $4.62 จึงไม่ใช่ทางเลือกหลัก ควรรอโซน $3.95-4.15 ก่อนปล่อยดาวเทียม satellite_launch เป็น catalyst type ที่ดีที่สุดใน feedback set (+7.4pp เหนือ SPY, n=8) และ Merlin-1 คือ event ปลดล็อกรายได้จริงครั้งแรกของบริษัท — ทยอยซื้อตอนย่อ ถือ position เล็กเพราะความเสี่ยงเป็น binary",
+        "verdict": "ผลตอบแทนเฉลี่ย ณ วัน catalyst ของ core lane อยู่ที่ -6.9% (n=54) — การซื้อที่ราคาปัจจุบัน $5.59 จึงไม่ใช่ทางเลือกหลัก ควรรอโซน $4.70-5.00 (การย่อวันนี้) satellite_launch เป็น catalyst type ที่ดีที่สุดใน feedback set และ Merlin คือ event ปลดล็อกรายได้จริงครั้งแรก หนุนด้วยการจ้างผู้บริหารสายกลาโหมที่น่าเชื่อถือ",
         "entryLevels": [
-          { "note": "ราคาปัจจุบัน", "timing": "ตอนนี้" },
-          { "note": "โซนย่อก่อนปล่อยดาวเทียม (preferred)", "timing": "ถ้าย่อ" },
-          { "note": "ย่อลึกใกล้แนวรับ", "timing": "ถ้ากลุ่มอวกาศร่วงทั้งกลุ่ม" }
+          { "note": "ราคาปัจจุบัน — วิ่งขึ้นแล้ว 21% จากข่าวจริง", "timing": "ตอนนี้" },
+          { "note": "โซนย่อก่อนปล่อยดาวเทียม / retest การย่อวันนี้ (preferred)", "timing": "ถ้าย่อ" },
+          { "note": "ย่อลึกตรงกับ bear case", "timing": "ถ้ากลุ่มอวกาศร่วงทั้งกลุ่ม" }
         ],
         "tp1": { "note": "Base case — ปล่อยดาวเทียมสำเร็จ + ยืนยันการ commission" },
-        "tp2": { "note": "Bull case — รีเรทใกล้ consensus จากรายได้ Q4 ที่พิสูจน์แล้ว" },
-        "tp3": { "note": "Moon case — ได้ลูกค้าใหม่นอกเหนือจาก anchor customer · ปี 2027" },
+        "tp2": { "note": "Bull case — รีเรทใกล้/เหนือ consensus จากรายได้ Q4 ที่พิสูจน์แล้ว + การขยายธุรกิจกลาโหม" },
+        "tp3": { "note": "Moon case — ได้ลูกค้าใหม่นอกเหนือจาก anchor customer + pipeline กลาโหมเป็นจริง · ปี 2027" },
         "stopLoss": {
           "tightNote": "กว้างกว่า medianMAE ของ satellite_launch (-19.4%, n=8) เพื่อไม่ให้โดนสะบัดออกก่อนปล่อยดาวเทียม",
           "hardNote": "ยืนยันว่าปล่อยดาวเทียมล้มเหลว/ผิดพลาด — thesis break",
-          "rrNote": "Stop แคบเทียบ TP2 จากราคาปัจจุบัน",
-          "rrWarning": "R/R แข็งแรง"
+          "rrNote": "Stop แคบเทียบ TP2 แต่แคบกว่าเดิมเล็กน้อยเพราะราคาเข้าวิ่งไปแล้ว",
+          "rrWarning": "R/R ยังแข็งแรง"
         }
       },
       "estimateDates": [
-        { "event": "Window ปล่อยดาวเทียม Merlin-1", "note": "ภารกิจ SpaceX Transporter rideshare" },
+        { "event": "แต่งตั้งประธานคนใหม่ (ผ่านไปแล้ว)", "note": "VADM (เกษียณ) Frank Whitworth อดีต NGA — บวก 15.73% วันเดียว" },
+        { "event": "Window ปล่อยดาวเทียม Merlin Constellation", "note": "Mark VI x2 + Mark V x1" },
         { "event": "งบ Q3 2026", "note": "ความเห็นแรกเกี่ยวกับการ commission ดาวเทียม Merlin + ยอดขายล่วงหน้านอกเหนือ anchor customer" }
       ]
     }
