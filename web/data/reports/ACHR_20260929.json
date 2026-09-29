@@ -1,0 +1,153 @@
+{
+  "ticker": "ACHR",
+  "companyName": "Archer Aviation Inc.",
+  "companyDescription": "eVTOL air-taxi developer nearing FAA type certification — recently acquired Boeing's Wisk Aero (autonomous) and Insitu (drone) units to broaden its aerospace platform",
+  "exchange": "NYSE",
+  "generatedAt": "2026-09-29T00:00:00.000Z",
+  "price": 5.61,
+  "priceChange": -1.83,
+  "priceNote": "52-week range $4.30-$14.62; near the low end, down ~35% YTD on cash-burn concerns",
+  "marketCap": "$4.32B",
+  "sector": "Industrials / Advanced Air Mobility (eVTOL)",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 58,
+  "summary": "Archer reports Q3 2026 earnings in the Nov 5-9, 2026 window (not yet officially confirmed to the exact day). The setup follows a Q2 2026 print where revenue surged 213% YoY to $5M and the Wisk Aero + Insitu acquisitions were announced, driving a standalone +15% pop, while the earnings reaction itself was muted (~-1%) amid sector-wide headline noise. Consensus target $11.63 (67% Buy) implies +107.3% upside from $5.61 — the largest upside in this batch, reflecting how far the stock has fallen (-35% YTD) versus a Street that hasn't fully cut targets. Base case (+45%) assumes reaffirmed certification progress and is well above the lane's realized 14d P75 of +6.6% — the gap is a multi-quarter re-rating horizon toward FAA type certification, not near-term optimism bias, and the specific driver is a certification-timeline update, not the Q3 numbers alone.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 2026 Earnings + Certification Update",
+      "description": "Estimated Nov 5-9, 2026 (exact day not yet company-confirmed). Watch for FAA type-certification timeline commentary alongside the numbers — Archer closed Phase 3 of the FAA's 4-phase process in May 2026 and 'late 2026' final issuance is the Street's working assumption, not a hard date.",
+      "urgencyLabel": "~38 DAYS",
+      "dateBadge": "~Nov 6, 2026",
+      "catalystDate": "2026-11-06",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Pre-revenue on the core eVTOL program — Q2 2026 revenue was just $5M; the investment case is almost entirely certification-timeline dependent, not current financials",
+    "FAA full type-certification has already slipped multiple times industry-wide; 'late 2026' is the Street's assumption, not a company-committed date — some analysts model mid-2027 or later",
+    "Cash burn is heavy; further dilution into 2027 is a real risk despite the balance-sheet boost from the Wisk/Insitu deal",
+    "eVTOL sector sentiment is highly correlated to Joby Aviation — a Joby-specific setback can drag ACHR even without ACHR-specific news",
+    "Exact Q3 earnings date is not yet company-confirmed (estimated window only) — provenance is weaker than the other picks in this batch"
+  ],
+  "estimateDates": [
+    { "event": "Q3 2026 Earnings", "dateRange": "~Nov 6, 2026", "note": "Estimated window Nov 5-9; not yet officially confirmed", "est": "", "highlight": "yellow" },
+    { "event": "FAA Type Certification", "dateRange": "H2 2026", "note": "Street's working assumption post-Phase-3 closure (May 2026); frequently slips industry-wide", "est": "", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -25, "price": 4.21 },
+    { "label": "Base", "color": "yellow", "pct": 45, "price": 8.13 },
+    { "label": "Bull", "color": "green", "pct": 95, "price": 10.94 },
+    { "label": "Moon", "color": "purple", "pct": 150, "price": 14.03 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus", "target": 11.63, "rating": "Buy" },
+    { "firm": "Street High", "target": 18.00, "rating": "Buy" },
+    { "firm": "Street Low", "target": 4.50, "rating": "Hold" }
+  ],
+  "macroRisk": {
+    "fedRisk": "HIGH",
+    "rateOutlook": "Fed hiked to 3.75-4.00% on Sep 16, 2026 (first hike since 2023); next FOMC is Oct 27-28, 2026 — just days before ACHR's estimated Q3 window, adding a macro wildcard on top of an already fuzzy earnings date.",
+    "inflationNote": "The hike is inflation-driven; pre-revenue, heavy-cash-burn names like Archer are the most exposed cohort to a higher discount rate and tighter access to the capital markets it will eventually need again.",
+    "sectorImpact": "eVTOL names are down sharply in 2026 (ACHR -35% YTD) on cash-burn and certification-delay concerns; a hawkish Fed compounds the multiple compression already underway rather than being the primary driver.",
+    "summary": "HIGH macro risk — Archer is pre-revenue and cash-burning in a renewed hiking cycle; the certification-timeline catalyst is largely company/regulator-specific, but financing risk is real if the timeline slips again."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 5.61, "note": "Current price", "timing": "Now" },
+      { "label": "Entry 2", "level": 4.80, "rangeMax": 5.00, "note": "Pre-earnings dip zone", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 4.30, "note": "52-week-low retest", "timing": "If eVTOL sector sells off" }
+    ],
+    "tp1": { "price": 8.13, "pct": 45.0, "note": "Base case — certification progress reaffirmed" },
+    "tp2": { "price": 10.94, "pct": 95.0, "note": "Bull case — near-consensus on a concrete certification milestone" },
+    "tp3": { "price": 14.03, "pct": 150.0, "note": "Moon case — first commercial passenger-flight window confirmed · near 52-week high", "moon": true },
+    "stopLoss": {
+      "tight": 4.77, "tightPct": -15.0, "tightNote": "Wider than the earnings_beat bucket's medianMAE (-9.6%, n=42) given ACHR's higher realized volatility (pre-revenue, thin financials)",
+      "hard": 4.21, "hardPct": -25.0, "hardNote": "Below the 52-week low — signals the certification/cash-burn thesis is breaking",
+      "riskReward": "6.3 : 1", "rrNote": "Tight stop vs TP2, off current price", "rrWarning": "Strong R/R — but weak date provenance argues for smaller size"
+    },
+    "verdict": "Measured median at-catalyst return across the core lane is -6.9% (n=54) — buying at today's $5.61 is not the default entry; the $4.80-5.00 pre-earnings dip is preferred. The +107% consensus gap is the largest in this batch, but the exact catalyst date is still an estimate, not a confirmed one — size smaller than the R/R alone would suggest.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Certification and M&A news (not the earnings print itself) has been the bigger mover for ACHR in 2026 — the Wisk Aero + Insitu acquisition news drove a standalone +15% pop ahead of the Q2 print",
+    "preRunupTiming": "1-2 weeks before the print, on certification/deal headlines",
+    "preRunupPct": "+8% to +15%",
+    "postWin": {
+      "avgPct": 12,
+      "range": "flat to +15%",
+      "note": "ACHR's Q2 2026 report (Aug 10, 2026): revenue +213% YoY to $5M, but the earnings-day reaction itself was muted (~-1%) as Tesla Roadster headlines pulled sentiment away from advanced-transportation names same window. The clearer positive comp is the +15% Wisk Aero/Insitu acquisition announcement, which shows the stock can move hard on concrete milestone news.",
+      "exampleDate": "Aug 2026"
+    },
+    "postLose": {
+      "avgPct": -15,
+      "range": "-5% to -20%",
+      "note": "General 2026 pattern for ACHR: cash-burn and insider-sale-plan headlines have weighed on the stock through the year (down ~35% YTD as of late August 2026) even without a single sharp catalyst-day drop identified in this research pass.",
+      "exampleDate": "Aug 2026"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Largest headline upside in this batch, but weakest date provenance (estimated window, not confirmed) and pre-revenue financials — size the smallest of the five picks"
+    },
+    "stopPreCatalyst": { "pct": -15, "price": 4.77, "note": "Below this, the market is pricing renewed certification-delay or financing fear ahead of the print" },
+    "stopPostCatalyst": { "pct": -12, "note": "If the print disappoints on cash burn or certification timeline slips again, exit rather than average down" }
+  },
+  "comparableCases": [
+    { "ticker": "ACHR", "event": "Wisk Aero + Insitu acquisition from Boeing announced", "date": "Aug 2026", "movePct": 15, "days": 1, "outcome": "good", "note": "Shows concrete milestone/deal news moves ACHR more than the earnings print itself" },
+    { "ticker": "ACHR", "event": "Q2 2026 earnings — revenue +213% YoY but shares roughly flat/down amid sector-wide Tesla Roadster headline pressure", "date": "Aug 2026", "movePct": -1, "days": 1, "outcome": "mixed", "note": "Illustrates that a clean beat can still be overridden by unrelated sector sentiment" }
+  ],
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/0001824502/000182450226000035/archerq126earningspressr.htm",
+    "https://stockstotrade.com/news/archer-aviation-inc-achr-news-2026_08_20/",
+    "https://finance.yahoo.com/markets/stocks/articles/archer-aviation-down-35-still-142727029.html",
+    "https://www.commercialuavnews.com/faa-regulation-certification-aam-joby-archer-electra",
+    "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Archer รายงานงบ Q3 2026 ในช่วง 5-9 พ.ย. 2026 (ยังไม่ยืนยันวันที่แน่นอน) หลัง Q2 2026 รายได้พุ่ง 213% เป็น $5M และประกาศซื้อ Wisk Aero + Insitu ทำให้หุ้นพุ่ง +15% แยกต่างหาก ส่วนปฏิกิริยาต่องบเองค่อนข้างนิ่ง (~-1%) เพราะข่าว Tesla Roadster กลบกระแส Consensus target $11.63 (67% Buy) คิดเป็น upside +107.3% จาก $5.61 — upside สูงสุดในชุดนี้ สะท้อนว่าหุ้นร่วงมาก (-35% YTD) ขณะที่ Street ยังไม่ปรับ target ลงเต็มที่",
+      "priceNote": "กรอบ 52 สัปดาห์ $4.30-$14.62 · ใกล้จุดต่ำสุด ร่วงราว 35% ตั้งแต่ต้นปีจากความกังวลเรื่องเผาเงินสด",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "งบ Q3 2026 + อัปเดตการรับรอง", "description": "ประมาณการช่วง 5-9 พ.ย. 2026 (ยังไม่ยืนยันวันที่แน่นอน) จับตาความคืบหน้าการรับรองจาก FAA ควบคู่กับตัวเลขงบ — Archer ปิด Phase 3 จาก 4 phase ของ FAA ไปแล้วเมื่อพ.ค. 2026 และ 'ปลายปี 2026' เป็นสมมติฐานของ Street ไม่ใช่วันที่บริษัทยืนยัน" }
+      ],
+      "risks": [
+        "ยังไม่มีรายได้จากธุรกิจ eVTOL หลัก — งบ Q2 2026 มีรายได้แค่ $5M การลงทุนขึ้นอยู่กับ timeline การรับรองเกือบทั้งหมด",
+        "การรับรองแบบเต็มรูปแบบจาก FAA เลื่อนมาแล้วหลายครั้งทั้งอุตสาหกรรม 'ปลายปี 2026' เป็นแค่สมมติฐานของ Street ไม่ใช่วันที่บริษัทยืนยัน",
+        "เผาเงินสดหนัก มีความเสี่ยง dilution เพิ่มในปี 2027 แม้จะมีดีล Wisk/Insitu ช่วยงบดุล",
+        "sentiment กลุ่ม eVTOL ผูกกับ Joby Aviation สูง — ข่าวลบของ Joby ก็ลาก ACHR ลงได้แม้ไม่มีข่าวเฉพาะของ ACHR",
+        "วันที่งบ Q3 ยังไม่ยืนยันแน่นอน (เป็นแค่ช่วงประมาณการ) — ความน่าเชื่อถือของวันที่ต่ำกว่าตัวอื่นในชุดนี้"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed ขึ้นดอกเบี้ยเป็น 3.75-4.00% วันที่ 16 ก.ย. 2026 FOMC ครั้งถัดไป 27-28 ต.ค. 2026 — อยู่ก่อนช่วงงบ Q3 ของ ACHR ไม่กี่วัน เพิ่มตัวแปร macro บนวันที่ catalyst ที่ยังไม่ชัดเจนอยู่แล้ว",
+        "inflationNote": "การขึ้นดอกเบี้ยมาจากเงินเฟ้อ หุ้นที่ยังไม่มีรายได้และเผาเงินสดหนักอย่าง Archer ไวต่อ discount rate ที่สูงขึ้นและการเข้าถึงตลาดทุนที่ยากขึ้นมากที่สุด",
+        "sectorImpact": "หุ้นกลุ่ม eVTOL ร่วงแรงในปี 2026 (ACHR -35% YTD) จากความกังวลเผาเงินสดและการรับรองล่าช้า Fed hawkish ซ้ำเติม multiple ที่หดตัวอยู่แล้วมากกว่าจะเป็นสาเหตุหลัก",
+        "summary": "ความเสี่ยง Fed ระดับ HIGH — Archer ยังไม่มีรายได้และเผาเงินสดในช่วงดอกเบี้ยขาขึ้น catalyst เรื่อง timeline การรับรองเป็นเรื่องเฉพาะบริษัท/หน่วยงานกำกับดูแลเป็นหลัก แต่ความเสี่ยงด้านเงินทุนมีจริงถ้า timeline เลื่อนอีก"
+      },
+      "entryStrategy": {
+        "verdict": "ผลตอบแทนเฉลี่ย ณ วัน catalyst ของ core lane อยู่ที่ -6.9% (n=54) — การซื้อที่ราคาปัจจุบัน $5.61 จึงไม่ใช่ทางเลือกหลัก ควรรอโซน $4.80-5.00 ก่อนงบ ช่องว่าง +107% เป็น upside สูงสุดในชุดนี้ แต่วันที่ catalyst ยังเป็นแค่ประมาณการ ไม่ใช่วันยืนยัน — ควรถือ position เล็กกว่าที่ R/R บ่งบอก",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน", "timing": "ตอนนี้" },
+          { "note": "โซนย่อก่อนงบ (preferred)", "timing": "ถ้าย่อ" },
+          { "note": "ทดสอบจุดต่ำสุด 52 สัปดาห์", "timing": "ถ้ากลุ่ม eVTOL ร่วงทั้งกลุ่ม" }
+        ],
+        "tp1": { "note": "Base case — ยืนยันความคืบหน้าการรับรอง" },
+        "tp2": { "note": "Bull case — ใกล้ consensus จาก milestone การรับรองที่ชัดเจน" },
+        "tp3": { "note": "Moon case — ยืนยัน window เที่ยวบินโดยสารเชิงพาณิชย์แรก · ใกล้จุดสูงสุด 52 สัปดาห์" },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE ของ earnings_beat (-9.6%, n=42) เพราะ ACHR ผันผวนสูงกว่าปกติ (ยังไม่มีรายได้ งบการเงินบาง)",
+          "hardNote": "ต่ำกว่าจุดต่ำสุด 52 สัปดาห์ — สัญญาณว่า thesis เรื่องการรับรอง/เผาเงินสดกำลังพัง",
+          "rrNote": "Stop แคบเทียบ TP2 จากราคาปัจจุบัน",
+          "rrWarning": "R/R แข็งแรง — แต่วันที่ catalyst ยังไม่ชัดเจน ควรถือ position เล็กกว่า"
+        }
+      },
+      "estimateDates": [
+        { "event": "งบ Q3 2026", "note": "ช่วงประมาณการ 5-9 พ.ย. ยังไม่ยืนยันอย่างเป็นทางการ" },
+        { "event": "การรับรองจาก FAA", "note": "สมมติฐานของ Street หลังปิด Phase 3 (พ.ค. 2026) มักเลื่อนทั้งอุตสาหกรรม" }
+      ]
+    }
+  }
+}

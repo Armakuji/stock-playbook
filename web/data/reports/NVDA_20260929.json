@@ -1,0 +1,154 @@
+{
+  "ticker": "NVDA",
+  "companyName": "NVIDIA Corporation",
+  "companyDescription": "AI compute monopoly · Blackwell/Vera Rubin GPUs + CUDA lock-in — the toll booth on every hyperscaler capex dollar",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-09-29T00:00:00.000Z",
+  "price": 228.19,
+  "priceChange": 1.4,
+  "priceNote": "Up modestly since the Aug 13 report ($224.09); Vera Rubin entered full production, stock +3% on the news, though a minor thermal hiccup on the Rubin chip drew analyst attention",
+  "marketCap": "$5.52T",
+  "sector": "Technology / Semiconductors",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 76,
+  "factorTags": ["ai_semi"],
+  "summary": "REFRESH (prior report Aug 13, 2026): Fiscal Q2 FY27 earnings already passed (Aug 26); the live catalyst is Vera Rubin H2 2026 shipments, still dated ~Sep 30. Vera Rubin has entered full production and GF Securities' Jeff Pu raised his target to $345 on rising cloud-provider orders, even after flagging a minor Rubin thermal hiccup. Consensus $327.70 implies +43.6% upside from $228.19. Base case (+25%) assumes the shipment ramp holds and sits above the core lane's realized 14d P75 of +6.6% — the gap reflects the multi-quarter Vera Rubin ramp horizon, not near-term optimism bias.",
+  "catalysts": [
+    {
+      "icon": "🚀",
+      "name": "Vera Rubin H2 2026 Shipments",
+      "description": "Vera Rubin, NVIDIA's next-gen AI platform, has entered full production; this window is the first hard confirmation that shipment volumes are tracking the H2 2026 guide. A minor thermal issue on the Rubin chip was flagged but hasn't derailed analyst targets — GF Securities raised to $345 on rising cloud-provider orders.",
+      "urgencyLabel": "~1 DAY",
+      "dateBadge": "Sep 30, 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "red",
+      "dotColor": "red"
+    }
+  ],
+  "risks": [
+    "The flagged 'minor thermal hiccup' on the Rubin chip bears watching — even a minor issue can compound at hyperscaler-fleet scale",
+    "Fiscal Q2 FY27 earnings already resolved the last major print; this window is a shipment-confirmation event, not a fresh beat/miss binary — lower information content than a typical earnings catalyst",
+    "Valuation ($5.5T market cap) leaves little room for a shipment disappointment, however minor",
+    "A hawkish Fed (rates just hiked to 3.75-4.00%) raises the discount rate on the market's largest growth-multiple name"
+  ],
+  "estimateDates": [
+    { "event": "Fiscal Q2 FY27 Earnings (realized)", "dateRange": "Aug 26, 2026", "note": "Already reported — folded into current price/target", "est": "", "highlight": "blue" },
+    { "event": "Vera Rubin H2 2026 Shipments", "dateRange": "Sep 30, 2026", "note": "Full production confirmed; this window checks shipment volume", "est": "", "highlight": "red" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -20, "price": 182.55 },
+    { "label": "Base", "color": "yellow", "pct": 25, "price": 285.24 },
+    { "label": "Bull", "color": "green", "pct": 45, "price": 330.88 },
+    { "label": "Moon", "color": "purple", "pct": 80, "price": 410.74 }
+  ],
+  "analystTargets": [
+    { "firm": "GF Securities (Jeff Pu)", "target": 345.00, "rating": "Buy", "note": "Raised from $308 on rising cloud-provider orders" },
+    { "firm": "Morgan Stanley", "target": 288.00, "rating": "Buy" },
+    { "firm": "Consensus", "target": 327.70, "rating": "Strong Buy" },
+    { "firm": "Street High", "target": 515.00, "rating": "Buy" },
+    { "firm": "Street Low", "target": 180.00, "rating": "Hold" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed hiked to 3.75-4.00% on Sep 16, 2026 (first hike since 2023); next FOMC Oct 27-28, 2026 — after the Vera Rubin shipment window.",
+    "inflationNote": "Inflation-driven hike; NVIDIA's enormous free cash flow makes it the most rate-insensitive name in this batch, but the sheer size of its market cap makes it a bellwether for any broad AI-multiple de-rating.",
+    "sectorImpact": "The entire AI-capex trade is sensitive to a hawkish Fed narrative even when the underlying demand data (like Vera Rubin's order book) stays strong.",
+    "summary": "MEDIUM macro risk — NVIDIA's cash generation is effectively rate-immune operationally, but as the largest-weighted AI name, it's the most exposed to a broad multiple reset if the Fed stays hawkish."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 228.19, "note": "Current price", "timing": "Now" },
+      { "label": "Entry 2", "level": 205.00, "rangeMax": 212.00, "note": "Pre-shipment-window dip zone", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 185.00, "note": "Deep dip / near street low $180", "timing": "Broad AI-trade drawdown" }
+    ],
+    "tp1": { "price": 285.24, "pct": 25.0, "note": "Base case — shipment ramp confirmed on schedule" },
+    "tp2": { "price": 330.88, "pct": 45.0, "note": "Bull case — near-consensus on Jeff Pu's raised target" },
+    "tp3": { "price": 410.74, "pct": 80.0, "note": "Moon case — Rubin becomes the dominant hyperscaler platform faster than modeled", "moon": true },
+    "stopLoss": {
+      "tight": 198.53, "tightPct": -13.0, "tightNote": "Wider than the earnings_beat bucket's medianMAE (-9.6%, n=42)",
+      "hard": 178.00, "hardPct": -22.0, "hardNote": "Near the street low of $180 — signals a broad AI-multiple reset",
+      "riskReward": "3.5 : 1", "rrNote": "Tight stop vs TP2, off current price", "rrWarning": "Strong R/R"
+    },
+    "verdict": "Measured median at-catalyst return across the core lane is -6.9% (n=54) — buying at today's $228.19 is not the default entry; the $205-212 dip zone is preferred. Vera Rubin's shipment window (~Sep 30) is a confirmation event on a platform already in full production — the thermal hiccup is worth monitoring but hasn't moved sell-side targets down.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "NVDA drifts up into confirmed production/shipment milestones as hyperscaler order-book commentary builds",
+    "preRunupTiming": "1-2 weeks before the milestone",
+    "preRunupPct": "+5% to +10%",
+    "postWin": {
+      "avgPct": 6,
+      "range": "+3% to +10%",
+      "note": "NVDA rebounded +3% on news that Vera Rubin entered full production; the move is more grind-higher confirmation than a sharp earnings-style pop, consistent with the core lane's earnings_beat bucket avgMaxGain of ~2.7% (n=42).",
+      "exampleDate": "Sep 2026"
+    },
+    "postLose": {
+      "avgPct": -9,
+      "range": "-5% to -15%",
+      "note": "No sharp single-day Vera Rubin-specific miss identified this cycle; proxied from the earnings_beat bucket's own medianMAE (-9.6%, n=42) as the general downside reference for a shipment-confirmation disappointment.",
+      "exampleDate": "2026 (category reference)"
+    },
+    "spotSizing": {
+      "pct": 5,
+      "reason": "Highest-quality, most liquid name in this batch — the main risk is broad multiple compression, not company-specific execution"
+    },
+    "stopPreCatalyst": { "pct": -13, "price": 198.53, "note": "Below this, the Vera Rubin production-confidence narrative is in question" },
+    "stopPostCatalyst": { "pct": -10, "note": "If the thermal issue escalates into a real shipment delay, exit rather than average down" }
+  },
+  "comparableCases": [
+    { "ticker": "NVDA", "event": "Vera Rubin enters full production, stock rebounds", "date": "Sep 2026", "movePct": 3, "days": 1, "outcome": "good", "note": "Direct same-company precedent for the Sep 30 shipment-confirmation window" },
+    { "ticker": "NVDA", "event": "Rubin chip thermal hiccup flagged; analysts raise targets anyway", "date": "Sep 2026", "movePct": 1, "days": 1, "outcome": "mixed", "note": "Shows the stock can absorb minor negative technical news when the demand backdrop (rising cloud-provider orders) stays intact" }
+  ],
+  "sources": [
+    "https://finance.yahoo.com/markets/stocks/articles/why-1-analyst-says-vera-174106031.html",
+    "https://www.trefis.com/stock/nvda/articles/616421/nvidia-stock-looks-expensive-until-you-price-the-vera-rubin-ramp/2026-09-24",
+    "https://www.top1markets.com/news/nvda-stock-rally-nvidia-vera-rubin-production-full-shipment",
+    "https://finance.biggo.com/news/653cd2c3-eabe-4841-b01f-ca514b7ce911",
+    "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "REFRESH (รายงานก่อนหน้า 13 ส.ค. 2026): งบ Fiscal Q2 FY27 ผ่านไปแล้ว (26 ส.ค.) catalyst ที่ยังไม่เกิดคือการส่งมอบ Vera Rubin H2 2026 ยังคงกำหนด ~30 ก.ย. Vera Rubin เข้าสู่การผลิตเต็มรูปแบบแล้ว และ Jeff Pu จาก GF Securities ปรับ target ขึ้นเป็น $345 จากคำสั่งซื้อ cloud provider ที่เพิ่มขึ้น แม้จะมีปัญหาความร้อนเล็กน้อยกับชิป Rubin Consensus $327.70 คิดเป็น upside +43.6% จาก $228.19",
+      "priceNote": "ขยับขึ้นเล็กน้อยนับจากรายงาน 13 ส.ค. ($224.09); Vera Rubin เข้าสู่การผลิตเต็มรูปแบบ หุ้น +3% จากข่าวนี้ แม้มีปัญหาความร้อนเล็กน้อยที่นักวิเคราะห์จับตา",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "การส่งมอบ Vera Rubin H2 2026", "description": "Vera Rubin แพลตฟอร์ม AI รุ่นใหม่ของ NVIDIA เข้าสู่การผลิตเต็มรูปแบบแล้ว window นี้คือการยืนยันครั้งแรกว่าปริมาณส่งมอบตรงตามเป้า H2 2026 มีปัญหาความร้อนเล็กน้อยที่ถูกจับตา แต่ไม่กระทบ target ของนักวิเคราะห์ — GF Securities ปรับขึ้นเป็น $345" }
+      ],
+      "risks": [
+        "ปัญหาความร้อนเล็กน้อยที่ถูกจับตาบนชิป Rubin ควรติดตามต่อ — แม้ปัญหาเล็กก็ขยายผลได้เมื่อใช้งานระดับ fleet ของ hyperscaler",
+        "งบ Fiscal Q2 FY27 ผ่านไปแล้ว window นี้เป็นแค่การยืนยันการส่งมอบ ไม่ใช่ binary กำไรเกิน/พลาดคาดแบบงบทั่วไป — ข้อมูลใหม่น้อยกว่า catalyst งบปกติ",
+        "มูลค่า ($5.5 ล้านล้านดอลลาร์) เหลือพื้นที่น้อยมากสำหรับความผิดหวังด้านการส่งมอบแม้เพียงเล็กน้อย",
+        "Fed hawkish (เพิ่งขึ้นดอกเบี้ยเป็น 3.75-4.00%) เพิ่ม discount rate ให้หุ้น growth multiple ที่ใหญ่ที่สุดในตลาด"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed ขึ้นดอกเบี้ยเป็น 3.75-4.00% วันที่ 16 ก.ย. 2026 FOMC ครั้งถัดไป 27-28 ต.ค. 2026 — อยู่หลัง window ส่งมอบ Vera Rubin",
+        "inflationNote": "การขึ้นดอกเบี้ยมาจากเงินเฟ้อ — กระแสเงินสดมหาศาลของ NVIDIA ทำให้เป็นหุ้นที่ทนดอกเบี้ยได้ดีที่สุดในชุดนี้ แต่ขนาดมาร์เก็ตแคปทำให้เป็นตัวชี้วัดหลักถ้า multiple ของ AI ทั้งตลาดถูกรีเรทลง",
+        "sectorImpact": "การเทรด AI capex ทั้งหมดไวต่อกระแส Fed hawkish แม้ demand data จริง (เช่น order book ของ Vera Rubin) ยังแข็งแรง",
+        "summary": "ความเสี่ยง Fed ระดับ MEDIUM — กระแสเงินสดของ NVIDIA แทบไม่ไวต่อดอกเบี้ยในเชิงปฏิบัติการ แต่ในฐานะหุ้น AI ที่มีน้ำหนักมากที่สุด จึงเสี่ยงมากที่สุดถ้า multiple ทั้งกลุ่มถูกรีเรทลง"
+      },
+      "entryStrategy": {
+        "verdict": "ผลตอบแทนเฉลี่ย ณ วัน catalyst ของ core lane อยู่ที่ -6.9% (n=54) — การซื้อที่ราคาปัจจุบัน $228.19 จึงไม่ใช่ทางเลือกหลัก ควรรอโซน $205-212 window ส่งมอบ Vera Rubin (~30 ก.ย.) เป็น event ยืนยันบนแพลตฟอร์มที่ผลิตเต็มรูปแบบแล้ว — ปัญหาความร้อนควรติดตามแต่ยังไม่ทำให้ target ฝั่ง sell-side ลดลง",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน", "timing": "ตอนนี้" },
+          { "note": "โซนย่อก่อน window ส่งมอบ (preferred)", "timing": "ถ้าย่อ" },
+          { "note": "ย่อลึกใกล้ street low $180", "timing": "ถ้าเทรด AI ทั้งกลุ่มร่วงแรง" }
+        ],
+        "tp1": { "note": "Base case — ยืนยันการ ramp การส่งมอบตามกำหนด" },
+        "tp2": { "note": "Bull case — ใกล้ consensus ตาม target ที่ Jeff Pu ปรับขึ้น" },
+        "tp3": { "note": "Moon case — Rubin กลายเป็นแพลตฟอร์มหลักของ hyperscaler เร็วกว่าที่โมเดลไว้" },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE ของ earnings_beat (-9.6%, n=42)",
+          "hardNote": "ใกล้ street low $180 — สัญญาณว่า multiple ของ AI ทั้งกลุ่มถูกรีเซ็ต",
+          "rrNote": "Stop แคบเทียบ TP2 จากราคาปัจจุบัน",
+          "rrWarning": "R/R แข็งแรง"
+        }
+      },
+      "estimateDates": [
+        { "event": "งบ Fiscal Q2 FY27 (ผ่านไปแล้ว)", "note": "รายงานไปแล้ว — สะท้อนในราคา/target ปัจจุบัน" },
+        { "event": "การส่งมอบ Vera Rubin H2 2026", "note": "ยืนยันการผลิตเต็มรูปแบบแล้ว window นี้ตรวจสอบปริมาณส่งมอบ" }
+      ]
+    }
+  }
+}

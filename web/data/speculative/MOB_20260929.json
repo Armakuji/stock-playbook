@@ -1,0 +1,204 @@
+{
+  "ticker": "MOB",
+  "companyName": "Mobilicom Limited",
+  "companyDescription": "Defense comms/cybersecurity microcap · SkyHopper PRO + ICE Electronic Warfare Resistance & Cybersecurity Suite now shipping on a monthly delivery cadence under a $249M, 5-year DoD Program of Record with a Tier-1 U.S. drone manufacturer, plus new Israeli and Asia-Pacific Tier-1 design wins — debt-free, no active ATM, but H1 2026 net loss widened sharply as opex scaled ahead of revenue",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-09-29T00:00:00.000Z",
+  "price": 4.63,
+  "priceChange": -3.54,
+  "priceNote": "Down 3.5% today and trading just 6.9% above the 52-week low ($4.33) — the stock has drifted from $5.14 (Aug 10 report) to $4.63 over seven weeks despite a run of genuinely positive news (Aug 13 H1 results, Aug 5 Israeli Tier-1 design win, Sept 14 Asia-Pacific robotics follow-on order). Nov 12, 2026 Q3 results is the next real test of whether revenue conversion can outrun the sharply widened H1 net loss.",
+  "marketCap": "$59.58M",
+  "sector": "Industrials / Aerospace & Defense (Drone Cybersecurity & Comms)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 46,
+  "summary": "Mobilicom's H1 2026 print (Aug 13) confirmed the DoD Program of Record moved from episodic purchase orders to a monthly delivery cadence — a real structural inflection — and the company has since added an Israeli Tier-1 defense design win (Aug 5) and a follow-on Asia-Pacific robotics order (Sept 14). But H1 revenue grew only 19% YoY to $1.73M while net loss ballooned to $6.69M (from $0.07M in H1 2025) as opex surged to $9.31M — the market's read has been net negative, with the stock drifting from $5.14 to $4.63 (-9.9%) over the seven weeks since that report despite the design-win headlines. Cash fell to $15.08M (Jun 30) from $19.0M (Dec 2025); at the adjusted $591K/month burn that's ~25 months of runway, or ~18 months at the unadjusted $859K/month rate — both clear the 12-month survival bar and no active ATM was found in recent filings, so this is NOT a survival flag, but the burn trend needs to stabilize by Nov 12. catalystType is partnership_win, turbo's weakest bucket (medianExcessVsBenchPct -3.8pp vs +2.0pp lane overall, n=16) — position sized down to 2% (from the prior 3%) to reflect both that headwind and the widened losses, despite the real, converting DoD contract underneath a $60M market cap.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Next Results Update (Q3 2026)",
+      "description": "TipRanks lists Nov 12, 2026 as the confirmed next results date. Key read: whether the H1 2026 net loss widening ($6.69M vs $0.07M prior year) is stabilizing as the DoD program's monthly delivery cadence scales, or whether opex keeps outrunning revenue conversion.",
+      "urgencyLabel": "44 DAYS",
+      "dateBadge": "Nov 12, 2026",
+      "catalystDate": "2026-11-12",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🛡️",
+      "name": "$249M DoD Program of Record — Now at Monthly Delivery Cadence",
+      "description": "SkyHopper PRO/ICE systems moved from episodic purchase orders to a monthly delivery cadence under the 5-year, $249M program with a Tier-1 U.S. drone manufacturer selling to the Department of War. Ongoing structural driver behind every quarterly print from here.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🌏",
+      "name": "New Design-Win Pipeline (Israel + Asia-Pacific)",
+      "description": "Aug 5 Tier-1 Israeli defense design win (loitering munitions) and Sept 14 follow-on production order from an Asia-based Tier-1 robotics customer — the first real evidence of geographic diversification beyond the single U.S. DoD customer concentration risk.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "H1 2026 net loss widened to $6.69M (from just $0.07M in H1 2025) as operating expenses surged to $9.31M against only 19% revenue growth — the widening-loss trend, not the DoD program itself, is what's pressuring the stock; Nov 12 needs to show it stabilizing",
+    "Cash fell to $15.08M (Jun 30, 2026) from $19.0M (Dec 2025); runway is ~18-25 months depending on adjusted vs unadjusted burn — comfortably above 12 months and no active ATM was found, but a name this small can't sustain the current burn trajectory indefinitely without either revenue conversion or new financing",
+    "catalystType is partnership_win, the weakest bucket in the turbo skill-feedback dataset (medianExcessVsBenchPct -3.8pp vs +2.0pp lane overall, n=16) — design-win headlines have not been reliably converting into sustained re-rates lane-wide",
+    "Thin trading liquidity (tens of thousands of dollars in daily volume) means both news and no-news days can produce outsized swings in either direction",
+    "Heavy customer concentration — the original Tier-1 U.S. drone manufacturer relationship remains the single largest revenue driver even as new design wins diversify the pipeline",
+    "The Sept 16, 2026 FOMC hike to 3.75-4.00% (unanimous, guidance toward a possible further hike in 2026) raises the broad risk-off backdrop for thinly-traded, unprofitable microcaps independent of MOB's own fundamentals"
+  ],
+  "estimateDates": [
+    { "event": "Next Results Update (Q3 2026)", "dateRange": "Nov 12, 2026", "note": "Confirmed per TipRanks — key read is whether the H1 net-loss widening trend is stabilizing as the DoD program's monthly delivery cadence scales", "est": "n/a", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -45, "price": 2.55 },
+    { "label": "Base", "color": "yellow", "pct": 60, "price": 7.41 },
+    { "label": "Bull", "color": "green", "pct": 130, "price": 10.65 },
+    { "label": "Moon", "color": "purple", "pct": 260, "price": 16.67 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (2 analysts)", "target": 11.00, "rating": "Strong Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "HIGH",
+    "rateOutlook": "The Fed actually hiked 25bps to 3.75-4.00% on Sept 16, 2026 (unanimous 12-0), reversing the dovish expectations baked into the Aug report — 16 of 18 policymakers see room for at least one more 25bp hike in 2026. Next FOMC is Oct 28, 2026. DoD program-of-record revenue is appropriations-driven and rate-insensitive, but a thinly-traded microcap like MOB is directly exposed to the broad risk-off tone a hawkish, still-hiking Fed creates.",
+    "inflationNote": "The Sept 16 hike itself was explicitly justified by inflation remaining elevated above the 2% target — a materially more hawkish read than the 'weak NFP pulling hike odds down' framing from the prior report.",
+    "sectorImpact": "Defense budget allocations remain largely insulated from the rate cycle, but MOB's thin liquidity and $60M market cap make it more sensitive to a genuinely hawkish, still-hiking Fed than the underlying DoD program itself would suggest.",
+    "summary": "HIGH — the Fed hiked (not held) on Sept 16 with guidance toward more hikes, a real shift from the prior report's dovish-leaning read. The DoD program is structurally macro-independent, but MOB's microcap size and thin liquidity mean this raises real risk-off pressure into the Nov 12 print."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 4.63, "note": "Current price — already just 6.9% above the 52-week low ($4.33)", "timing": "Now (small starter)" },
+      { "label": "Entry 2", "level": 3.90, "rangeMax": 4.20, "note": "Dip zone through/near the 52-week low — measured turbo entry-timing data shows a median -13.7% return from report price to just after catalyst (n=19), so this is the default entry, not Entry 1", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 3.00, "note": "Deep dip — thesis-intact only; would need burn-rate stabilization confirmed at Nov 12 not to be a red flag", "timing": "Deep dip / thesis intact" }
+    ],
+    "tp1": { "price": 7.41, "pct": 60.0, "note": "Base — Nov 12 results show the net-loss widening trend stabilizing while the DoD program's monthly cadence keeps scaling. Written against a +72.7pp optimism bias measured on turbo Base scenarios (skill-feedback, n=41); this assumes a ~6-8 week horizon through and just past the Nov 12 print, not the 30-day North Star window" },
+      "tp2": { "price": 10.65, "pct": 130.0, "note": "Bull — breaks back above the 52-week high zone on confirmed bookings conversion plus continued Israeli/APAC design-win traction" },
+    "tp3": { "price": 16.67, "pct": 260.0, "note": "Moon — the $249M DoD program of record materializes at scale plus new-geography expansion delivers real revenue, comparable to KTOS's +380% contract-driven re-rate", "moon": true },
+    "stopLoss": {
+      "tight": 3.33, "tightPct": -28.1, "tightNote": "Wider than partnership_win's own medianMAE (-25.9%, n=16, turbo skill-feedback) — a break here ahead of Nov 12 says the market is de-risking before the print",
+      "hard": 2.55, "hardPct": -44.9, "hardNote": "Risk-of-zero territory — coincides with the Bear scenario; would mean the DoD program isn't converting to bookings fast enough to offset the widened loss run-rate",
+      "riskReward": "4.4 : 1", "rrNote": "Entry 2 (dip, ~$4.05 mid) to hard stop vs TP2 (Bull case)", "rrWarning": "Below the 5:1 turbo target, but the stop is intentionally wider than the laggard catalystType's own measured drawdown — accept the lower ratio rather than tighten the stop into normal noise"
+    },
+    "verdict": "SPECULATIVE — measured turbo entry-timing data (median -13.7% return from report price to catalyst, n=19) argues against buying now; wait for the $3.90-4.20 dip zone. MOB's catalystType (partnership_win) is turbo's weakest bucket (-3.8pp median excess vs +2.0pp lane overall, n=16), and H1 net loss widened nearly 100x YoY even as the DoD program converts to real monthly revenue — sized down to 2% to reflect both. Nov 12 is the next real confirmation point.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "Microcap defense names like MOB continue to react sharply to contract/design-win headlines rather than building slowly pre-earnings — five design-win or order announcements since the Aug 13 print (Aug 5 Israeli Tier-1, Aug 17 tariff/onshore alignment, Sept 14 Asia-Pacific robotics follow-on) produced only brief, fading price support.",
+    "preRunupTiming": "Days around contract/order announcements, not weeks of positioning",
+    "preRunupPct": "Individual headlines have produced single-day pops in the mid-single-digits to +6% range, but have not sustained a re-rate on their own",
+    "postWin": {
+      "avgPct": 380,
+      "range": "+50% to +380%",
+      "note": "Kratos Defense (KTOS) ran +380% after its Jan 2026 Marine Corps CCA (Valkyrie) program-of-record win — still the clearest same-sector precedent for what a confirmed DoD program-of-record win can do. MOB's own Aug 13 H1 print (revenue +19% YoY, DoD program moving to monthly delivery cadence) produced a same-week +6.09% pop on 4.5x volume but has since faded to a net -9.9% drift by Sept 29 — the market wants bookings conversion outpacing loss growth, not just design-win headlines, to sustain a re-rate.",
+      "exampleDate": "Jan 2026 (KTOS) / Aug 2026 (MOB's own faded pop)"
+    },
+    "postLose": {
+      "avgPct": -35,
+      "range": "-20% to -50%",
+      "note": "No confirmed MOB-specific hard-negative catalyst precedent exists yet, but the post-Aug-13 fade (a +6.09% day-one pop fully reversed and then some within seven weeks) is itself a soft-negative precedent: even a genuinely positive print with real order-flow can't hold a re-rate once net losses widen faster than revenue.",
+      "exampleDate": "Aug-Sept 2026 (MOB's own post-earnings fade)"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "partnership_win is turbo's laggard catalystType (-3.8pp median excess vs +2.0pp lane overall, n=16) and H1 net loss widened nearly 100x YoY ($6.69M vs $0.07M) even as the DoD program converts to real revenue — sized down from the prior report's 3% to reflect both the type-level headwind and the execution risk, despite the debt-free balance sheet and 18-25 month runway"
+    },
+    "stopPreCatalyst": { "pct": -28, "price": 3.33, "note": "A break below ~$3.33 ahead of Nov 12 earnings would suggest the market is de-risking the order-flow-vs-loss-widening thesis before the print" },
+    "stopPostCatalyst": { "pct": -35, "note": "If Nov 12 results show net losses continuing to widen faster than the DoD program converts to bookings, exit — that is the thesis, not just a stop-loss level" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "KTOS",
+      "event": "Marine Corps Collaborative Combat Aircraft (Valkyrie) selection — DoD program of record win",
+      "date": "Jan 2026",
+      "movePct": 380,
+      "days": 30,
+      "outcome": "good",
+      "note": "Closest sector comparable for what a confirmed DoD program-of-record win can do to a defense stock's valuation."
+    },
+    {
+      "ticker": "UMAC",
+      "event": "Pentagon equity-stake news",
+      "date": "May 2026",
+      "movePct": 52,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same defense-microcap tier — shows the single-day magnitude a policy/contract headline can produce even without a full program-of-record scale event."
+    },
+    {
+      "ticker": "MOB",
+      "event": "H1 2026 results — DoD program moves to monthly delivery cadence, revenue +19% YoY, but net loss widens to $6.69M",
+      "date": "Aug 2026",
+      "movePct": 6.09,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "Own-name precedent: a genuinely positive structural update (monthly delivery cadence) produced a +6.09% day-one pop on 4.5x volume, but the stock fully reversed that and drifted to -9.9% below the report price within seven weeks once the market digested how much net loss widened — the clearest evidence yet that this catalystType needs bookings conversion, not just news flow, to hold a re-rate."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Mobilicom Earnings: First-Half Revenue Up 19% to $1.7M, Net Loss Widens Sharply",
+    "url": "https://www.stocktitan.net/news/MOB/mobilicom-reports-financial-and-operational-results-for-the-six-iimoffgzcnzx.html",
+    "date": "Aug 2026"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/mob/",
+    "https://www.stocktitan.net/news/MOB/mobilicom-reports-financial-and-operational-results-for-the-six-iimoffgzcnzx.html",
+    "https://www.stocktitan.net/sec-filings/MOB/",
+    "https://www.tipranks.com/stocks/mob/earnings",
+    "https://www.marketbeat.com/stocks/NASDAQ/MOB/forecast/",
+    "https://www.marketbeat.com/stocks/NASDAQ/MOB/earnings/",
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+    "https://tradingeconomics.com/united-states/interest-rate"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "ผลประกอบการ H1 2026 ของ Mobilicom (13 ส.ค.) ยืนยันว่าโครงการ DoD Program of Record เปลี่ยนจาก purchase order เป็นๆ ไปๆ สู่การส่งมอบรายเดือนแล้ว — เป็นจุดเปลี่ยนเชิงโครงสร้างจริง และหลังจากนั้นยังได้ design win ใหม่กับลูกค้า defense ระดับ Tier-1 ของอิสราเอล (5 ส.ค.) และออเดอร์ต่อเนื่องจากลูกค้า robotics เอเชีย-แปซิฟิก (14 ก.ย.) แต่รายได้ H1 โตแค่ 19% YoY เป็น $1.73M ขณะที่ขาดทุนสุทธิพุ่งเป็น $6.69M (จาก $0.07M ใน H1 2025) เพราะ opex พุ่งเป็น $9.31M — ตลาดตอบรับเป็นลบสุทธิ หุ้นไหลจาก $5.14 เหลือ $4.63 (-9.9%) ในเจ็ดสัปดาห์ทั้งที่มีข่าวดีต่อเนื่อง เงินสดลดเหลือ $15.08M (30 มิ.ย.) จาก $19.0M (ธ.ค. 2025) ที่ burn rate ปรับปรุงแล้ว $591K/เดือน คิดเป็น runway ~25 เดือน หรือ ~18 เดือนที่ burn ไม่ปรับปรุง $859K/เดือน — ทั้งสองกรณีผ่านเกณฑ์ 12 เดือน และไม่พบ ATM ที่ยัง active ในเอกสารล่าสุด จึงยังไม่ใช่ survival flag แต่แนวโน้ม burn ต้องนิ่งขึ้นภายในผลประกอบการ 12 พ.ย. catalystType คือ partnership_win ซึ่งเป็นกลุ่มที่อ่อนแอที่สุดใน turbo lane (medianExcessVsBenchPct -3.8pp เทียบ +2.0pp โดยรวม, n=16) — size ลงเหลือ 2% (จากเดิม 3%) สะท้อนทั้งจุดอ่อนของประเภท catalyst และขาดทุนที่ขยายตัว แม้จะมีสัญญา DoD จริงที่กำลังแปลงเป็นรายได้อยู่ใต้มูลค่าตลาดแค่ $60M",
+      "priceNote": "ลง 3.5% วันนี้ และเทรดสูงกว่า 52-week low ($4.33) แค่ 6.9% — หุ้นไหลจาก $5.14 (รายงาน 10 ส.ค.) เหลือ $4.63 ในเจ็ดสัปดาห์ ทั้งที่มีข่าวดีต่อเนื่อง (ผลประกอบการ 13 ส.ค., design win อิสราเอล 5 ส.ค., ออเดอร์ต่อเนื่อง APAC 14 ก.ย.) ผลประกอบการ 12 พ.ย. 2026 คือบททดสอบจริงถัดไปว่าการแปลงรายได้จะตามทันขาดทุนที่ขยายตัวได้หรือไม่",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "อัปเดตผลประกอบการถัดไป (Q3 2026)", "description": "TipRanks ระบุวันที่ 12 พ.ย. 2026 เป็นวันยืนยัน — จับตาว่าแนวโน้มขาดทุนที่ขยายตัว ($6.69M เทียบ $0.07M ปีก่อน) จะนิ่งขึ้นตามที่โครงการ DoD ขยายสเกลการส่งมอบรายเดือนหรือไม่" },
+        { "name": "โครงการ DoD $249M — ส่งมอบรายเดือนแล้ว", "description": "ระบบ SkyHopper PRO/ICE เปลี่ยนจาก purchase order เป็นๆ ไปๆ สู่การส่งมอบรายเดือนภายใต้โครงการ 5 ปี $249M กับผู้ผลิตโดรน Tier-1 สหรัฐ — แรงขับเคลื่อนเชิงโครงสร้างต่อเนื่อง" },
+        { "name": "Pipeline Design-Win ใหม่ (อิสราเอล + เอเชีย-แปซิฟิก)", "description": "Design win Tier-1 อิสราเอล (5 ส.ค.) และออเดอร์ต่อเนื่องจากลูกค้า robotics เอเชีย-แปซิฟิก (14 ก.ย.) — หลักฐานแรกของการกระจายฐานลูกค้านอกเหนือจาก DoD สหรัฐรายเดียว" }
+      ],
+      "risks": [
+        "ขาดทุนสุทธิ H1 2026 ขยายเป็น $6.69M (จากแค่ $0.07M ใน H1 2025) เพราะ opex พุ่งเป็น $9.31M ขณะรายได้โตแค่ 19% — แนวโน้มขาดทุนขยายตัวนี้เองที่กดดันหุ้น ไม่ใช่ตัวโครงการ DoD ผลประกอบการ 12 พ.ย. ต้องแสดงว่านิ่งขึ้น",
+        "เงินสดลดเหลือ $15.08M (30 มิ.ย. 2026) จาก $19.0M (ธ.ค. 2025) — runway ~18-25 เดือนแล้วแต่วิธีคิด burn เกิน 12 เดือนสบายๆ และไม่พบ ATM active แต่บริษัทขนาดนี้ทน burn rate ปัจจุบันได้ไม่ตลอดไปถ้าไม่มีการแปลงรายได้เพิ่มหรือระดมทุนใหม่",
+        "catalystType เป็น partnership_win ซึ่งเป็นกลุ่มอ่อนแอที่สุดในชุดข้อมูล skill-feedback ของ turbo (medianExcessVsBenchPct -3.8pp เทียบ +2.0pp โดยรวม, n=16) — ข่าว design win ไม่ค่อยแปลงเป็นการ re-rate ที่ยั่งยืนทั้ง lane",
+        "สภาพคล่องซื้อขายบางมาก (ปริมาณรายวันหลักหมื่นดอลลาร์) ทำให้ทั้งวันมีข่าวและไม่มีข่าวราคาผันผวนแรงได้ทั้งสองทาง",
+        "พึ่งพาลูกค้ารายใหญ่สูง — ความสัมพันธ์กับผู้ผลิตโดรน Tier-1 สหรัฐเดิมยังเป็นแรงขับเคลื่อนรายได้หลักแม้จะมี design win ใหม่ช่วยกระจายความเสี่ยง",
+        "Fed ขึ้นดอกเบี้ยเป็น 3.75-4.00% เมื่อ 16 ก.ย. 2026 (เอกฉันท์ พร้อม guidance ว่าอาจขึ้นอีกในปีนี้) เพิ่มบรรยากาศ risk-off กว้างสำหรับไมโครแคปที่ยังไม่กำไรและสภาพคล่องบาง"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed ขึ้นดอกเบี้ยจริง 25bps เป็น 3.75-4.00% เมื่อ 16 ก.ย. 2026 (เอกฉันท์ 12-0) กลับทิศจากมุมมอง dovish ในรายงานก่อนหน้า — กรรมการ 16 จาก 18 คนเห็นช่องขึ้นดอกเบี้ยอีกอย่างน้อย 1 ครั้งในปีนี้ FOMC ถัดไป 28 ต.ค. 2026 รายได้จากโครงการ DoD ยังคง insensitive กับดอกเบี้ย แต่ไมโครแคปสภาพคล่องบางแบบ MOB exposed ต่อบรรยากาศ risk-off กว้างโดยตรง",
+        "inflationNote": "การขึ้นดอกเบี้ย 16 ก.ย. เองก็มาจากเหตุผลว่าเงินเฟ้อยังสูงกว่าเป้า 2% — เป็นมุมมองที่ hawkish กว่ากรอบเดิมที่บอกว่า NFP อ่อนแอดึงโอกาสขึ้นดอกเบี้ยลง",
+        "sectorImpact": "งบ defense ยัง insulated จากวงจรดอกเบี้ยเป็นส่วนใหญ่ แต่สภาพคล่องบางและมูลค่าตลาดแค่ $60M ของ MOB ทำให้ sensitive ต่อ Fed ที่ hawkish และยังขึ้นดอกเบี้ยต่อมากกว่าที่ตัวโครงการ DoD เองจะบ่งชี้",
+        "summary": "สูง — Fed ขึ้นดอกเบี้ยจริง (ไม่ใช่แค่คง) เมื่อ 16 ก.ย. พร้อม guidance ว่าจะขึ้นอีก เป็นการเปลี่ยนแปลงจริงจากมุมมอง dovish ในรายงานก่อนหน้า โครงการ DoD ยังเป็นเรื่องโครงสร้างที่ independent จาก macro แต่ขนาดไมโครแคปและสภาพคล่องบางของ MOB หมายความว่าเพิ่มความเสี่ยง risk-off ก่อนผลประกอบการ 12 พ.ย."
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — ข้อมูล entry-timing ของ turbo วัดได้ว่า median return จากราคารายงานถึงหลัง catalyst อยู่ที่ -13.7% (n=19) จึงไม่แนะนำเข้าตอนนี้ รอโซนย่อ $3.90-4.20 catalystType ของ MOB (partnership_win) เป็นกลุ่มอ่อนแอที่สุดใน turbo lane (-3.8pp เทียบ +2.0pp โดยรวม, n=16) และขาดทุน H1 ขยายเกือบ 100 เท่า YoY แม้โครงการ DoD จะแปลงเป็นรายได้รายเดือนจริง — size ลงเหลือ 2% สะท้อนทั้งสองปัจจัย ผลประกอบการ 12 พ.ย. คือจุดยืนยันถัดไป",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — สูงกว่า 52-week low ($4.33) แค่ 6.9% แล้ว", "timing": "ตอนนี้ (ไม้เล็ก)" },
+          { "note": "โซนย่อผ่าน/ใกล้ 52-week low — ข้อมูล entry-timing วัดได้ median -13.7% (n=19) จึงเป็น default entry แทน Entry 1", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงลึก — เฉพาะกรณี thesis ยังอยู่ ต้องรอยืนยัน burn rate นิ่งที่ผลประกอบการ 12 พ.ย.", "timing": "Deep dip / thesis intact" }
+        ],
+        "tp1": { "note": "Base — ผลประกอบการ 12 พ.ย. แสดงแนวโน้มขาดทุนนิ่งขึ้นขณะโครงการ DoD ยังขยายสเกลรายเดือน เขียนโดยอิง optimism bias +72.7pp ของ turbo Base scenario (n=41) และสมมติ horizon ~6-8 สัปดาห์ผ่านผลประกอบการ 12 พ.ย. ไม่ใช่ 30 วันของ North Star window" },
+        "tp2": { "note": "Bull — ทะลุกลับโซน 52-week high จากการยืนยัน bookings บวก traction design win อิสราเอล/APAC ต่อเนื่อง" },
+        "tp3": { "note": "Moon — โครงการ DoD $249M เกิดขึ้นจริงเต็มสเกล บวกขยายภูมิภาคใหม่สร้างรายได้จริง เทียบเท่า KTOS ที่เคยบวก 380%", "moon": true },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE ของ partnership_win เอง (-25.9%, n=16) — หลุดจุดนี้ก่อนผลประกอบการ 12 พ.ย. แปลว่าตลาดกำลัง de-risk ก่อนวันจริง",
+          "hardNote": "เขต risk-of-zero — ตรงกับ Bear scenario แปลว่าโครงการ DoD แปลงเป็น booking ไม่ทันขาดทุนที่ขยายตัว",
+          "rrNote": "จาก Entry 2 (ย่อ ~$4.05 กลาง) ถึง hard stop เทียบ TP2 (Bull case)",
+          "rrWarning": "ต่ำกว่าเป้า 5:1 ของ turbo แต่ stop กว้างกว่าปกติโดยตั้งใจเพราะ catalystType นี้มี drawdown สูงกว่าเฉลี่ย — ยอมรับ ratio ต่ำกว่าดีกว่าตั้ง stop แคบจนโดน noise ปกติ"
+        }
+      },
+      "estimateDates": [
+        { "event": "อัปเดตผลประกอบการถัดไป (Q3 2026)", "note": "ยืนยันตาม TipRanks — จับตาว่าแนวโน้มขาดทุนที่ขยายตัวนิ่งขึ้นตามที่โครงการ DoD ขยายสเกลการส่งมอบรายเดือนหรือไม่" }
+      ]
+    }
+  }
+}

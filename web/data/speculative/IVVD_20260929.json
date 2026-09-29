@@ -1,0 +1,200 @@
+{
+  "ticker": "IVVD",
+  "companyName": "Invivyd, Inc.",
+  "companyDescription": "Antibody therapeutics · VYD2311 — next-gen long-acting monoclonal antibody for COVID-19 prevention in immunocompromised patients; pivotal Phase 3 readout imminent",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-09-29T00:00:00.000Z",
+  "price": 0.94,
+  "priceChange": -3.0,
+  "priceNote": "Down ~66% YTD and ~13% this month after a Q2 EPS/revenue miss on Sep 22 — trading near the bottom of a $0.53-$3.05 52-week range just as the pivotal DECLARATION readout (guided 'late Q3 2026') comes due",
+  "marketCap": "$162M (Sep 27, 2026)",
+  "sector": "Healthcare / Biotechnology — Infectious Disease / Antibody Therapeutics",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 45,
+  "summary": "Invivyd's entire near-term thesis rides on DECLARATION, the Phase 3 pivotal trial for VYD2311 (a next-gen, longer-acting successor to its commercial antibody PEMGARDA) — enrollment completed in June 2026 and topline data is guided for approximately late Q3 2026, i.e. within days of today. The stock has been crushed heading into the readout: -66% YTD, with an 8% single-day drop on Sep 22 after a Q2 EPS/revenue miss, leaving almost no cushion if the trial disappoints. Cash of $160.1M (Q2 2026) is explicitly guided to cover through the DECLARATION readout and initial commercial launch readiness, so this is a binary data bet, not a survival one — but the beaten-down legacy franchise and imminent timing mean there's little room for error.",
+  "catalysts": [
+    {
+      "icon": "🧪",
+      "name": "DECLARATION Phase 3 topline (VYD2311)",
+      "description": "Pivotal Phase 3 topline data for VYD2311, a next-gen long-acting monoclonal antibody for COVID-19 prevention in immunocompromised patients — guided for approximately late Q3 2026; the LIBERTY trial topline may read out alongside it. This is a trial readout that determines the BLA path, not a PDUFA date itself.",
+      "urgencyLabel": "DAYS AWAY",
+      "dateBadge": "~Early Oct 2026",
+      "catalystDate": "2026-10-03",
+      "badgeColor": "red",
+      "dotColor": "red"
+    }
+  ],
+  "risks": [
+    "Q2 2026 earnings miss (EPS -$0.14 vs -$0.11 est., revenue $14.29M vs $14.40M est.) drove much of the Sep 2026 selloff — stock down ~66% YTD as of Sep 22, 2026 — a soft commercial base undercuts confidence heading into the binary readout.",
+    "The company's antibody franchise has a history of variant-escape concerns (prior-generation pemivibart's efficacy has been questioned against newer SARS-CoV-2 variants) — a real risk VYD2311 itself underperforms against currently circulating variants even if the trial technically hits its endpoint.",
+    "If DECLARATION misses, sector precedent is severe: EyePoint fell 71% in a single day on an Aug 2026 Phase 3 miss — IVVD could see a similarly violent reaction, and the stock already has little cushion left.",
+    "The commercial market for a COVID-19 prophylactic antibody is narrower and more uncertain than pre-2023 — declining testing/awareness, competition from updated mRNA vaccines, and reimbursement uncertainty for an immunocompromised-focused indication.",
+    "New CEO (Marc Elia, appointed Sep 1, 2026) means a leadership transition during the most consequential data readout in company history — though his compensation structure (0.5-1.5% payout on any $5B+ sale) does align him toward pursuing a strategic outcome quickly if data is positive."
+  ],
+  "estimateDates": [
+    {
+      "event": "DECLARATION Phase 3 topline (VYD2311)",
+      "dateRange": "~Late Sep – Oct 2026",
+      "note": "Guided 'approximately late Q3 2026' as of the Jun 2026 enrollment-completion release; LIBERTY topline may accompany it",
+      "est": "Primary endpoint hit / miss",
+      "highlight": "blue"
+    },
+    {
+      "event": "Potential BLA submission (if DECLARATION positive)",
+      "dateRange": "H1 2027 (est.)",
+      "note": "No formal FDA filing timeline guided yet — contingent entirely on the DECLARATION readout",
+      "est": "n/a",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -65, "price": 0.33 },
+    { "label": "Base", "color": "yellow", "pct": 150, "price": 2.35 },
+    { "label": "Bull", "color": "green", "pct": 300, "price": 3.76 },
+    { "label": "Moon", "color": "purple", "pct": 550, "price": 6.11 }
+  ],
+  "analystTargets": [
+    { "firm": "Wall Street Consensus (6 analysts, post-Q2 miss)", "target": 8.00, "rating": "Hold" },
+    { "firm": "Wall Street Consensus (9 analysts, pre-Q2 print)", "target": 10.20, "rating": "Strong Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Same easing-bias backdrop as the broader market (the Aug 2026 payrolls miss pushed rate-hike odds lower) — largely irrelevant to whether DECLARATION hits its primary endpoint.",
+    "inflationNote": "Core PCE at 3.3% YoY (Jun 2026 print) is a macro tail risk for risk assets broadly, but IVVD is currently trading almost entirely on its own binary catalyst and its Q2 earnings miss, not on macro inputs.",
+    "sectorImpact": "A risk-off macro shock would amplify any post-DECLARATION-miss drawdown and could pressure the company's ability to raise capital later if the trial disappoints, given IVVD is already a distressed-looking micro-cap.",
+    "summary": "Fed risk is LOW for the thesis itself — this trades on DECLARATION, not on rates. Macro matters here as a volatility amplifier around the event, not as a driver of the outcome."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 0.94, "note": "Current price — DECLARATION topline is guided for 'late Q3 2026' (which ends Sep 30), so there is almost no time buffer to wait for a dip before the binary event", "timing": "Now" },
+      { "label": "Entry 2", "level": 0.75, "rangeMax": 0.85, "note": "Dip zone — continued post-Q2-miss drift; the measured turbo entry edge favors this over chasing $0.94, though it may not print before data", "timing": "If dips (may not arrive before data)", "preferred": true },
+      { "label": "Entry 3", "level": 0.55, "note": "Deep dip — at the 52-week low ($0.53); only on further pre-data selling or a broad biotech risk-off move", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 2.35, "pct": 150.0, "note": "Base — DECLARATION hits its primary endpoint with a solid effect size, de-risking the BLA path; a re-rate off penny-stock levels within roughly 4-8 weeks of the readout as institutional interest returns" },
+    "tp2": { "price": 3.76, "pct": 300.0, "note": "Bull — strong efficacy signal plus a clean LIBERTY readout too, re-rating back above the 52-week high ($3.05)" },
+    "tp3": { "price": 6.11, "pct": 550.0, "note": "Moon — clean pivotal win plus a clear BLA-acceptance track plus M&A interest (the new CEO's pay package is explicitly tied to a $5B+ sale outcome)", "moon": true },
+    "stopLoss": {
+      "tight": 0.66,
+      "tightPct": -30,
+      "tightNote": "Wider than the fda_decision turbo-lane medianMAE of -18.4% (n=10) — appropriate given this is a sub-$1 stock already down ~66% YTD heading into a days-away binary event",
+      "hard": 0.42,
+      "hardPct": -55,
+      "hardNote": "Below the 52-week low ($0.53) — would confirm the market is pricing a DECLARATION miss or a deeper franchise problem",
+      "riskReward": "10 : 1",
+      "rrNote": "Tight stop (-30%) vs TP2/Bull (+300%)",
+      "rrWarning": "Asymmetric ✅ — clears the turbo ≥5:1 target, but this is a sub-$1 microcap; cents matter more than percentages here"
+    },
+    "verdict": "SPECULATIVE — ค่าขนม only, cap at 2% of portfolio (low end of the 2-5% band). The measured median at-catalyst return across turbo picks is -13.7% (n=19), which argues against chasing $0.94 — BUT DECLARATION is guided for 'late Q3 2026' (ends Sep 30, today's date), so there may be no practical dip window before the readout; size down at Entry 1 if the dip zone never prints, rather than forcing it. fda_decision is turbo's best-performing catalyst type on record (+9.3pp median excess, n=10), but IVVD carries extra red flags a clean fda_decision pick wouldn't: a Q2 earnings miss, a declining/variant-pressured legacy franchise, and a stock already down ~66% YTD.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "Sub-$1 binary-catalyst biotechs often see thin, choppy pre-event trading with occasional speculative pops on positioning rather than a reliable directional drift — IVVD's own price action into the DECLARATION window has actually been more downdrift (post-Q2-earnings-miss selling) than run-up so far.",
+    "preRunupTiming": "1-2 สัปดาห์ก่อน readout",
+    "preRunupPct": "-10% to +15% (choppy, no clean pattern for this name specifically)",
+    "postWin": {
+      "avgPct": 175,
+      "range": "+166% to +300%",
+      "note": "Kodiak Sciences (KOD) jumped ~166-180% on its Sep 28, 2026 Phase 3 DAYBREAK topline win in wet AMD — a small-cap biotech binary Phase 3 win just weeks before IVVD's own readout, direct evidence 150%+ single-day moves still happen in this regime. Capricor's own +300% Dec 2025 Phase 3 win is a further (cross-sector) tail-upside reference, though IVVD's Q2 earnings-miss overhang argues for a more moderate outcome than either.",
+      "exampleDate": "Sep 2026"
+    },
+    "postLose": {
+      "avgPct": -71,
+      "range": "-55% to -71%",
+      "note": "EyePoint Pharmaceuticals (EYPT) fell 71% in one day on Aug 17, 2026 when its Phase 3 LUGANO trial missed its primary endpoint in wet AMD — a small-cap biotech binary Phase 3 miss just one month before IVVD's own DECLARATION readout, the direct downside precedent for this exact type of imminent single-catalyst risk.",
+      "exampleDate": "Aug 2026"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "Smallest end of the 2-5% ค่าขนม band — DECLARATION is one of the strongest single-catalyst setups in the turbo lane by type (fda_decision), but the Q2 earnings miss, prior variant-escape efficacy concerns on the legacy franchise, and days-away binary timing (little room to average in beforehand) argue for capping size low."
+    },
+    "stopPreCatalyst": { "pct": -30, "price": 0.66, "note": "Thesis breach if IVVD breaks toward the 52-week low before data without news — would suggest the market is pricing a miss." },
+    "stopPostCatalyst": { "pct": -55, "note": "If DECLARATION misses the primary endpoint, exit — PEMGARDA's declining, variant-pressured legacy franchise alone doesn't support the current valuation without a VYD2311 Phase 3 win." }
+  },
+  "comparableCases": [
+    {
+      "ticker": "KOD",
+      "event": "Phase 3 DAYBREAK topline win (Zenkuda/tarcocimab, wet AMD)",
+      "date": "Sep 2026",
+      "movePct": 172,
+      "days": 1,
+      "outcome": "good",
+      "note": "Small-cap biotech, positive pivotal Phase 3 topline just weeks before IVVD's own readout — direct evidence binary Phase 3 wins still produce 150%+ single-day moves in this market regime (reported as +166% to +180% depending on the intraday mark)."
+    },
+    {
+      "ticker": "EYPT",
+      "event": "Phase 3 LUGANO primary endpoint miss (Duravyu vs. Eylea, wet AMD)",
+      "date": "Aug 2026",
+      "movePct": -71,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Small-cap biotech binary Phase 3 miss just one month before IVVD's own DECLARATION readout — the direct downside precedent for this exact type of imminent single-catalyst risk."
+    },
+    {
+      "ticker": "CAPR",
+      "event": "Phase 3 HOPE-3 data win (deramiocel, DMD)",
+      "date": "Dec 2025",
+      "movePct": 300,
+      "days": 2,
+      "outcome": "good",
+      "note": "Cross-sector but the same catalyst mechanism (binary Phase 3 topline in a beaten-down small-cap) — shows the tail-upside case for IVVD isn't fabricated, even if IVVD's own commercial overhang argues for a more moderate base case."
+    }
+  ],
+  "sources": [
+    "https://investors.invivyd.com/news-releases/news-release-details/invivyd-reports-second-quarter-2026-financial-results-and-recent",
+    "https://www.globenewswire.com/news-release/2026/06/01/3304208/0/en/invivyd-announces-completion-of-enrollment-in-upsized-declaration-clinical-trial-a-phase-3-pivotal-study-of-vyd2311-an-investigational-antibody-to-prevent-covid.html",
+    "https://www.stocktitan.net/news/IVVD/invivyd-appoints-chairman-marc-w-elia-as-chief-executive-officer-j2bd4mqtttct.html",
+    "https://www.biospace.com/drug-development/eyepoints-phase-3-fail-sends-stock-spiraling-amid-next-gen-amd-race",
+    "https://www.biospace.com/drug-development/kodiak-sciences-stock-soars-166-after-2-assets-match-eylea-in-phase-3-trial",
+    "https://www.aaii.com/investingideas/article/484967-why-invivyd-inc8217s-ivvd-stock-is-down-574",
+    "https://www.wallstreetzen.com/stocks/us/nasdaq/ivvd/stock-forecast"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "ทั้งหมดของ thesis ระยะสั้นของ Invivyd ขึ้นอยู่กับ DECLARATION การทดลอง Phase 3 หลักของ VYD2311 (แอนติบอดีรุ่นใหม่ที่ออกฤทธิ์นานกว่า PEMGARDA ที่ขายอยู่) — enrollment เสร็จ มิ.ย. 2026 และ topline data guide ไว้ที่ประมาณปลาย Q3 2026 คือภายในไม่กี่วันจากวันนี้ หุ้นถูกเทขายหนักก่อนถึงวันประกาศผล: -66% YTD และร่วง 8% วันเดียวในวันที่ 22 ก.ย. หลังพลาดเป้า EPS/รายได้ Q2 แทบไม่เหลือ cushion หากผลออกมาไม่ดี เงินสด $160.1M (Q2 2026) ถูก guide ไว้ชัดว่าคลุมถึงวันประกาศผล DECLARATION และการเตรียม launch เชิงพาณิชย์ ดังนั้นนี่คือเดิมพันข้อมูล ไม่ใช่เรื่อง survival — แต่ franchise เดิมที่อ่อนแอและจังหวะเวลาที่ใกล้มากทำให้แทบไม่มีที่ว่างให้ผิดพลาด",
+      "priceNote": "ร่วง ~66% YTD และ ~13% เดือนนี้หลังพลาดเป้า Q2 วันที่ 22 ก.ย. — เทรดใกล้โซนล่างของช่วง 52 สัปดาห์ $0.53-$3.05 ขณะที่ผล DECLARATION (guide ไว้ 'ปลาย Q3 2026') กำลังจะมาถึง",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "ผล Phase 3 DECLARATION (VYD2311)",
+          "description": "ผล topline ของการทดลอง Phase 3 หลักสำหรับ VYD2311 แอนติบอดีรุ่นใหม่ออกฤทธิ์นานสำหรับป้องกันโควิดในผู้ป่วยภูมิคุ้มกันบกพร่อง — guide ไว้ที่ประมาณปลาย Q3 2026 อาจมีผล LIBERTY ออกมาพร้อมกัน นี่คือผลการทดลองที่กำหนดเส้นทาง BLA ไม่ใช่วัน PDUFA โดยตรง"
+        }
+      ],
+      "risks": [
+        "พลาดเป้าผลประกอบการ Q2 2026 (EPS -$0.14 เทียบคาด -$0.11, รายได้ $14.29M เทียบคาด $14.40M) เป็นตัวเร่งการเทขายเดือน ก.ย. 2026 — หุ้นร่วง ~66% YTD ฐานธุรกิจเชิงพาณิชย์ที่อ่อนแอบั่นทอนความเชื่อมั่นก่อนผลการทดลองที่เป็น binary",
+        "franchise แอนติบอดีของบริษัทเคยมีปัญหาเรื่องภูมิคุ้มกันหนีของไวรัสสายพันธุ์ใหม่ (pemivibart รุ่นก่อนถูกตั้งคำถามเรื่องประสิทธิผลต่อสายพันธุ์ใหม่) เป็นความเสี่ยงจริงที่ VYD2311 อาจได้ผลไม่ดีต่อสายพันธุ์ที่ระบาดอยู่ แม้ trial จะผ่าน endpoint ทางสถิติ",
+        "หาก DECLARATION พลาดเป้า มีตัวอย่างในกลุ่มที่รุนแรง: EyePoint ร่วง 71% ในวันเดียวหลัง Phase 3 พลาดเป้าเดือน ส.ค. 2026 — IVVD อาจเจอปฏิกิริยารุนแรงคล้ายกัน โดยที่หุ้นแทบไม่เหลือ cushion แล้ว",
+        "ตลาดสำหรับแอนติบอดีป้องกันโควิดแคบและไม่แน่นอนกว่าก่อนปี 2023 — การตรวจหาเชื้อ/ความตระหนักลดลง แข่งกับวัคซีน mRNA รุ่นใหม่ และความไม่แน่นอนเรื่องการเบิกจ่ายสำหรับกลุ่มภูมิคุ้มกันบกพร่อง",
+        "CEO ใหม่ (Marc Elia แต่งตั้ง 1 ก.ย. 2026) แปลว่ามีการเปลี่ยนผู้นำในช่วงเวลาที่สำคัญที่สุดของบริษัท แม้โครงสร้างค่าตอบแทน (0.5-1.5% หากขายบริษัทมูลค่า $5B ขึ้นไป) จะทำให้เขามีแรงจูงใจผลักดันทางออกเชิงกลยุทธ์เร็วขึ้นหากผลออกมาดี"
+      ],
+      "macroRisk": {
+        "rateOutlook": "บรรยากาศ easing เดียวกับตลาดกว้าง (ตัวเลขจ้างงานแย่เดือน ส.ค. 2026 กดโอกาสขึ้นดอกเบี้ย) — แทบไม่เกี่ยวกับว่า DECLARATION จะผ่าน endpoint หรือไม่",
+        "inflationNote": "Core PCE ที่ 3.3% YoY (มิ.ย. 2026) เป็นความเสี่ยงมหภาคต่อสินทรัพย์เสี่ยงโดยรวม แต่ IVVD เทรดตาม catalyst ของตัวเองและผลพลาดเป้า Q2 เป็นหลัก ไม่ใช่ตัวแปรมหภาค",
+        "sectorImpact": "หาก macro พลิกเป็น risk-off จะขยายแรงร่วงถ้า DECLARATION พลาดเป้า และอาจกดดันความสามารถระดมทุนในอนาคตของบริษัทที่ดูเปราะบางอยู่แล้ว",
+        "summary": "ความเสี่ยง Fed ต่ำสำหรับ thesis นี้ — หุ้นตัวนี้เทรดตามผล DECLARATION ไม่ใช่ตามดอกเบี้ย macro มีผลแค่ในแง่ขยายความผันผวนรอบ event ไม่ใช่ตัวกำหนดผลลัพธ์"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — ค่าขนมเท่านั้น จำกัดไม่เกิน 2% ของพอร์ต (ระดับล่างของกรอบ 2-5%) ค่าเฉลี่ยผลตอบแทน ณ จุด catalyst ของหุ้น turbo วัดได้ -13.7% (n=19) ซึ่งบอกว่าไม่ควรไล่ราคา $0.94 — แต่ DECLARATION guide ไว้ที่ 'ปลาย Q3 2026' (สิ้นสุดวันนี้ 30 ก.ย.) จึงอาจไม่มีช่วงเวลาให้รอ dip ก่อนผลจริง หากโซน dip ไม่มาให้ลดขนาดที่ Entry 1 แทนที่จะฝืนไล่ราคา fda_decision เป็น catalyst type ที่ perform ดีที่สุดในกลุ่ม turbo (+9.3pp เหนือ SPY, n=10) แต่ IVVD มีความเสี่ยงเพิ่มเติมที่ fda_decision ทั่วไปไม่มี: พลาดเป้า Q2, franchise เดิมที่อ่อนแอ/เสี่ยงสายพันธุ์ใหม่ และหุ้นที่ร่วงมาแล้ว ~66% YTD",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ผล DECLARATION guide ไว้ 'ปลาย Q3 2026' (สิ้นสุด 30 ก.ย.) แทบไม่มีเวลาให้รอ dip ก่อนถึง event", "timing": "ตอนนี้" },
+          { "note": "โซน dip — แรงเทขายต่อเนื่องหลังพลาดเป้า Q2 เป็นจุดเข้าที่มี edge ตามสถิติ turbo มากกว่า แม้อาจไม่มาก่อนผลจริง", "timing": "ถ้าย่อ (อาจไม่มาก่อนผล)" },
+          { "note": "โซน dip ลึก — ที่จุดต่ำ 52 สัปดาห์ ($0.53) เฉพาะกรณีมีแรงขายเพิ่มก่อนผล หรือตลาด biotech ร่วงทั้งกลุ่ม", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Base — DECLARATION ผ่าน endpoint หลักด้วยขนาดผลชัดเจน ลดความเสี่ยงเส้นทาง BLA รีเรทจากระดับ penny stock ภายใน ~4-8 สัปดาห์หลังผลออก" },
+        "tp2": { "note": "Bull — สัญญาณประสิทธิผลแข็งแรงบวกผล LIBERTY ที่ดีด้วย รีเรทกลับเหนือ high 52 สัปดาห์ ($3.05)" },
+        "tp3": { "note": "Moon — ชนะการทดลองหลักชัดเจนบวกเส้นทาง BLA ที่ชัดบวกความสนใจ M&A (ค่าตอบแทน CEO ใหม่ผูกกับดีลขาย $5B ขึ้นไป)" },
+        "stopLoss": {
+          "tightNote": "กว้างกว่าค่ากลาง MAE ของ fda_decision กลุ่ม turbo ที่ -18.4% (n=10) — เหมาะสมเพราะนี่คือหุ้นราคาต่ำกว่า $1 ที่ร่วงมาแล้ว ~66% YTD ก่อนเจอ binary event ที่ใกล้มาก",
+          "hardNote": "ต่ำกว่าจุดต่ำ 52 สัปดาห์ ($0.53) — ยืนยันว่าตลาดกำลัง price ผล DECLARATION ที่แย่ หรือปัญหา franchise ที่ลึกกว่านั้น",
+          "rrNote": "Stop แคบ (-30%) เทียบ TP2/Bull (+300%)",
+          "rrWarning": "Asymmetric ✅ — ผ่านเกณฑ์ ≥5:1 ของ turbo แต่เป็น microcap ต่ำกว่า $1 ต้องระวังหน่วยเซนต์มากกว่าเปอร์เซ็นต์"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผล Phase 3 DECLARATION (VYD2311)", "note": "guide ไว้ 'ประมาณปลาย Q3 2026' ตามข่าว enrollment เสร็จเดือน มิ.ย. 2026 อาจมีผล LIBERTY ออกมาพร้อมกัน" },
+        { "event": "การยื่น BLA ที่อาจเกิดขึ้น (หาก DECLARATION เป็นบวก)", "note": "ยังไม่มี timeline การยื่นที่เป็นทางการ ขึ้นอยู่กับผล DECLARATION ทั้งหมด" }
+      ]
+    }
+  }
+}

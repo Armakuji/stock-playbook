@@ -1,0 +1,173 @@
+{
+  "ticker": "BTQ",
+  "companyName": "BTQ Technologies Corp.",
+  "companyDescription": "Post-quantum cryptography · QCIM chip core validated in TSMC 28nm silicon (Aug 2026) · QSSN powering Korea's first stablecoin pilot · Cash fell further to CAD 9.73M against an active C$150M ATM — dilution/survival risk has deepened, not resolved",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-09-29T00:00:00.000Z",
+  "price": 2.805,
+  "priceChange": -1.92,
+  "priceNote": "Self-fetched today (live-prices.json cache dated Aug 13, too stale to use). Down 30.6% since the last report ($4.04 → $2.805) despite real technical progress — the QCIM core was validated in a TSMC 28nm silicon environment in August, a genuine milestone beyond the design-completion news in the prior report. 52-week range $2.09-$16.00.",
+  "marketCap": "$425.67M",
+  "sector": "Technology / Quantum-Safe Cybersecurity",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 42,
+  "summary": "BTQ hit a real technical milestone since the last report — its QCIM core was validated in a TSMC 28nm silicon environment (Aug 7), a step beyond the design-completion news covered before, and the company reaffirmed a year-end 2026 target to ship test chips to customers. Commercial activity is genuinely broadening: an MOU with ITCENGLOBAL (a large Korean IT conglomerate), QSSN now powering Korea's first stablecoin pilot, a commercial pipeline described as ~16 organizations across five countries, and a new hire (ex-Samsung Knox security lead) to push commercialization. The problem is the balance sheet: cash fell further to CAD 9.73M at the Q2 print (from C$12.1M last report) against an active C$150M ATM program with no news of it being wound down — the survival risk flagged last report has deepened, not resolved, and the stock is down 30.6% as the market prices that in ahead of the operational progress.",
+  "catalysts": [
+    {
+      "icon": "🔬",
+      "name": "QCIM Test Silicon Shipment (Year-End 2026)",
+      "description": "QCIM core validated in a TSMC 28nm environment (Aug 7) — real silicon progress beyond the design-completion milestone in the last report. Company reaffirmed (Aug 18) the target to ship test chips to key customers/partners by year-end 2026.",
+      "urgencyLabel": "REAFFIRMED — BY YEAR-END 2026",
+      "dateBadge": "~Dec 2026",
+      "catalystDate": "2026-12-15",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🇰🇷",
+      "name": "Korean Commercial Push — ITCENGLOBAL MOU + QSSN Stablecoin Pilot",
+      "description": "MOU with ITCENGLOBAL (large Korean IT services group, Aug 13) plus QSSN powering Korea's first stablecoin pilot — real, near-term commercial traction beyond the federal-policy tailwind thesis, though not yet material revenue.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "⚠️ SURVIVAL: Cash fell further to CAD 9.73M as of the Q2 2026 print — down from C$12.1M at the last report's Q1 checkpoint — against an active C$150M ATM program with no news of it being paused. The runway/dilution risk flagged last report has deepened, not resolved; further dilutive raises are now more likely, not less",
+    "Stock is down 30.6% since the last report despite genuinely positive newsflow (silicon validation, Korean commercial MOU, new commercialization hire) — the deepening cash concern is clearly dominating sentiment over operational progress",
+    "Alliance Global's $6 target (last cut from $10) has no fresh update this cycle — treat as stale context, not current analyst conviction",
+    "'Test silicon by year-end 2026' remains pre-commercial — actual revenue-generating QCIM sales are still further out, and the cash trajectory makes execution risk higher, not lower, than at the last report",
+    "Small-cap, thinly-covered name with a Canadian dual-listing (NEO/NASDAQ) structure — liquidity and cross-source data consistency remain real practical risks"
+  ],
+  "estimateDates": [
+    { "event": "QCIM Test Silicon Shipment", "dateRange": "~Dec 2026", "note": "Company-stated target, reaffirmed Aug 18; exact date not yet confirmed", "est": "n/a", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -60, "price": 1.12 },
+    { "label": "Base", "color": "yellow", "pct": 55, "price": 4.35 },
+    { "label": "Bull", "color": "green", "pct": 130, "price": 6.45 },
+    { "label": "Moon", "color": "purple", "pct": 300, "price": 11.22 }
+  ],
+  "analystTargets": [
+    { "firm": "Alliance Global (Brian Kinstlinger, last update Aug 2026)", "target": 6, "rating": "Buy", "note": "No fresh update this cycle — stale, treat with caution given the deepened cash concern since" }
+  ],
+  "macroRisk": {
+    "fedRisk": "HIGH",
+    "rateOutlook": "Federal quantum-security policy is executive-order-driven and rate-insensitive, but BTQ's now-thinner cash position (CAD 9.73M) and active ATM make it directly and increasingly exposed to broad financing-condition tightening.",
+    "inflationNote": "A hot CPI print would tighten financing conditions for cash-thin small-caps specifically, compounding BTQ's deepening dilution overhang.",
+    "sectorImpact": "The federal post-quantum cryptography mandate remains a genuine, multi-year, policy-driven tailwind independent of the Fed, but BTQ's own balance sheet trajectory makes broad financing-condition tightening a materially larger risk than at the last report.",
+    "summary": "Raised to HIGH from MEDIUM-HIGH — the federal quantum-security tailwind is unchanged and real, but BTQ's cash position deteriorated further this quarter (C$12.1M → CAD 9.73M) while the ATM remains active, making this name meaningfully more exposed to a hawkish-driven financing squeeze than last report."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 2.805, "note": "Current price, post silicon-validation news — turbo lane's measured median at-catalyst return is -13.7% (n=19), and this pick's own deepening survival risk argues even more strongly against chasing here", "timing": "Now (smallest starter, 1% max)" },
+      { "label": "Entry 2", "level": 2.20, "rangeMax": 2.45, "note": "Pullback zone if ATM-driven selling continues — still small sizing given the survival flag", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 1.60, "note": "Deep dip — near the 52-week low, thesis-intact only", "timing": "Deep dip / thesis intact" }
+    ],
+    "tp1": { "price": 4.35, "pct": 55.0, "note": "Base — hits the stale Alliance Global $6 zone partially as test-silicon progress continues; Base assumes a ~3mo horizon to year-end shipment with no major new dilution event" },
+    "tp2": { "price": 6.45, "pct": 130.0, "note": "Bull — QCIM test silicon ships on schedule and a design win emerges from the ~16-organization commercial pipeline" },
+    "tp3": { "price": 11.22, "pct": 300.0, "note": "Moon — full re-rate toward prior highs as CNSA 2.0 federal procurement mandates convert into real QCIM/QSSN revenue and the cash/dilution overhang resolves favorably", "moon": true },
+    "stopLoss": {
+      "tight": 2.24, "tightPct": -20.1, "tightNote": "Deliberately TIGHTER than the turbo overall median MAE (-24.1%, n=41; product_launch type n=2 too thin to use) — the deepening survival risk (cash down again this quarter, ATM still active) means further breakdown is more likely to reflect the balance-sheet risk materializing than normal noise, so cutting earlier is the right call here",
+      "hard": 1.26, "hardPct": -55.0, "hardNote": "Risk-of-zero territory — would confirm the survival/dilution risk is materializing faster than commercial progress can offset",
+      "riskReward": "3.0 : 1", "rrNote": "Entry 1 to tight stop vs TP2 (Bull case)", "rrWarning": "The real risk here is not the stop distance — it's the disclosed, deepening SURVIVAL flag; size at the very bottom of the ค่าขนม range regardless of the nominal R/R"
+    },
+    "verdict": "SPECULATIVE, SURVIVAL-FLAGGED — 1% max, the smallest sizing on the board. Cash fell further to CAD 9.73M against an active C$150M ATM; genuine technical/commercial progress (silicon validation, Korean MOU) does not offset a deepening balance-sheet risk. Measured turbo median at-catalyst return is -13.7% (n=19); combined with the worsening cash trajectory, this is explicitly not a chase-here setup. Included as an honest, survival-flagged carryover, appropriate only for investors who fully accept a realistic path to further dilution or worse.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "product_launch",
+    "preRunup": "BTQ has historically moved on federal policy headlines more than a slow pre-catalyst build — the stock's round trip from a $22 CAD ATH to current levels shows sharp, news-driven swings rather than steady appreciation, and the cash trajectory is now a second, independent driver of volatility.",
+    "preRunupTiming": "Days around policy/technical-milestone headlines, not weeks of positioning",
+    "preRunupPct": "Historical ATH-to-current range implies moves well beyond +100% are within this stock's demonstrated pattern, in both directions",
+    "postWin": {
+      "avgPct": 100,
+      "range": "+50% to +296%",
+      "note": "No single cleanly-dated BTQ-specific comparable case with a sourced percentage was found beyond the general policy-driven pattern implied by its own 52-week range ($2.09-$16.00) — unchanged from last report. product_launch catalystType has n=2 in this run's turbo feedback data, too thin (tier 1) to apply mandatorily.",
+      "exampleDate": "N/A — inferred from BTQ's own 52-week range"
+    },
+    "postLose": {
+      "avgPct": -30,
+      "range": "-15% to -35%",
+      "note": "BTQ's own pattern has worsened since the prior report — down 30.6% now versus ~24% at the last check, despite MORE positive operational news (silicon validation, Korean MOU) than last time. This is the clearest evidence yet that the market is pricing the deepening cash/ATM overhang ahead of operational execution.",
+      "exampleDate": "Aug-Sep 2026 (BTQ, this report's own comparison period)"
+    },
+    "spotSizing": {
+      "pct": 1,
+      "reason": "Cut from 2% last report — cash fell further (C$12.1M → CAD 9.73M) against an active C$150M ATM with no signs of being wound down. The SURVIVAL flag has deepened, not resolved, so this now sits at the absolute minimum sizing for inclusion on the board at all."
+    },
+    "stopPreCatalyst": { "pct": -20, "price": 2.24, "note": "หลุด $2.24 = แคบกว่า median MAE โดยรวมของ turbo (-24.1%) โดยตั้งใจ เพราะความเสี่ยง survival ที่ลึกขึ้นหมายความว่าการหลุดต่อควรตีความว่าความเสี่ยงงบดุลกำลังเกิดขึ้นจริง ไม่ใช่ noise ปกติ" },
+    "stopPostCatalyst": { "pct": -35, "note": "ถ้า target ปลายปี test silicon เลื่อน หรือมี dilutive raise ก้อนใหญ่ใหม่โดยไม่มีความคืบหน้าชดเชย — exit ทันที ความเสี่ยง survival กลายเป็น story หลัก" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "BTQ",
+      "event": "Own 52-week trading range — federal quantum-policy newsflow vs. deepening ATM dilution overhang",
+      "date": "Trailing 52 weeks",
+      "movePct": -82,
+      "days": 330,
+      "outcome": "bad",
+      "note": "Same-company precedent — down ~82% from its Oct 2025 ATH ($22 CAD) despite real policy tailwinds and, this quarter, real technical progress (silicon validation). Dilution/cash risk has dominated the stock's price action throughout."
+    },
+    {
+      "ticker": "BTQ",
+      "event": "QCIM core silicon validation (TSMC 28nm) + Korean ITCENGLOBAL MOU, stock falls 30.6% anyway on deepening cash concern",
+      "date": "Aug-Sep 2026",
+      "movePct": -30.6,
+      "days": 50,
+      "outcome": "bad",
+      "note": "The defining data point of this refresh — genuinely more positive operational news than the last report, yet a materially worse stock reaction, because the cash/ATM overhang worsened in the same window."
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/btq/",
+    "https://www.stocktitan.net/news/BTQ/",
+    "https://www.prnewswire.com/news-releases/btq-technologies-and-ictk-complete-design-of-next-generation-qcim-security-chip-integrating-puf-technology-302822628.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "BTQ มี milestone เทคนิคจริงตั้งแต่รายงานก่อน — validate QCIM core ในสภาพแวดล้อม silicon TSMC 28nm จริง (7 ส.ค.) ก้าวหน้ากว่าข่าวออกแบบเสร็จในรายงานก่อน และยืนยัน target ส่ง test chip ให้ลูกค้าภายในสิ้นปี 2026 กิจกรรมเชิงพาณิชย์กว้างขึ้นจริง — MOU กับ ITCENGLOBAL (กลุ่ม IT ใหญ่ของเกาหลี), QSSN กำลังขับเคลื่อน stablecoin pilot แรกของเกาหลี, commercial pipeline ที่อธิบายว่ามีราว 16 องค์กรใน 5 ประเทศ และการจ้างงานใหม่ (อดีตหัวหน้า security ของ Samsung Knox) เพื่อผลักดัน commercialization ปัญหาคืองบดุล: เงินสดลดลงต่อเหลือ CAD 9.73M ในผล Q2 (จาก C$12.1M ในรายงานก่อน) เทียบ ATM program C$150M ที่ยังใช้งานอยู่โดยไม่มีข่าวว่าหยุดใช้ — ความเสี่ยง survival ที่เคยระบุในรายงานก่อนลึกขึ้น ไม่ได้คลี่คลาย และหุ้นลง 30.6% เพราะตลาด price สิ่งนี้เข้าไปก่อนความคืบหน้าเชิงปฏิบัติการ",
+      "priceNote": "self-fetch วันนี้ (live-prices.json cache เก่าตั้งแต่ 13 ส.ค.) ลง 30.6% ตั้งแต่รายงานก่อน ($4.04 → $2.805) ทั้งที่มีความคืบหน้าเทคนิคจริง — validate QCIM core ใน silicon TSMC 28nm จริงในเดือนส.ค. ก้าวหน้ากว่าข่าวออกแบบเสร็จในรายงานก่อน 52-week range $2.09-$16.00",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "ส่งมอบ Test Silicon QCIM (สิ้นปี 2026)", "description": "Validate QCIM core ในสภาพแวดล้อม TSMC 28nm แล้ว (7 ส.ค.) — ความคืบหน้า silicon จริงเกินกว่า milestone ออกแบบเสร็จในรายงานก่อน บริษัทยืนยัน (18 ส.ค.) target ส่ง test chip ให้ลูกค้า/พาร์ทเนอร์หลักภายในสิ้นปี 2026" },
+        { "name": "การรุกตลาดเกาหลี — MOU ITCENGLOBAL + QSSN Stablecoin Pilot", "description": "MOU กับ ITCENGLOBAL (กลุ่ม IT ใหญ่ของเกาหลี, 13 ส.ค.) บวก QSSN กำลังขับเคลื่อน stablecoin pilot แรกของเกาหลี — แรงหนุนเชิงพาณิชย์ระยะใกล้จริงเกินกว่าแค่ thesis นโยบายรัฐบาลกลาง แม้จะยังไม่เป็นรายได้ก้อนใหญ่" }
+      ],
+      "risks": [
+        "⚠️ SURVIVAL: เงินสดลดลงต่อเหลือ CAD 9.73M ณ ผล Q2 2026 — ลดจาก C$12.1M ณ จุดตรวจสอบ Q1 ในรายงานก่อน เทียบ ATM program C$150M ที่ยังใช้งานอยู่โดยไม่มีข่าวหยุด — ความเสี่ยง runway/dilution ที่เคยระบุในรายงานก่อนลึกขึ้น ไม่ได้คลี่คลาย การ raise ทุนแบบ dilutive เพิ่มมีโอกาสสูงขึ้น ไม่ใช่ลดลง",
+        "หุ้นลง 30.6% ตั้งแต่รายงานก่อนทั้งที่ข่าวจะเป็นบวกจริง (validate silicon, MOU เกาหลี, จ้างงานใหม่ด้าน commercialization) — ความกังวลเงินสดที่ลึกขึ้นชัดเจนว่ามีน้ำหนักเหนือความคืบหน้าเชิงปฏิบัติการ",
+        "เป้า Alliance Global $6 (ปรับลงจาก $10 ครั้งล่าสุด) ไม่มีอัปเดตใหม่รอบนี้ — ควรมองเป็นข้อมูลเก่า ไม่ใช่ conviction ปัจจุบันของ analyst",
+        "'Test silicon ภายในสิ้นปี 2026' ยังเป็น pre-commercial — รายได้จริงจากการขาย QCIM ยังอยู่ไกลออกไป และ trajectory เงินสดทำให้ execution risk สูงขึ้น ไม่ใช่ลดลง เทียบรายงานก่อน",
+        "หุ้นเล็ก coverage บาง มีโครงสร้างจดทะเบียนคู่แคนาดา (NEO/NASDAQ) — สภาพคล่องและความสอดคล้องของข้อมูลข้ามแหล่งยังเป็นความเสี่ยงเชิงปฏิบัติจริง"
+      ],
+      "macroRisk": {
+        "rateOutlook": "นโยบาย quantum security ของรัฐบาลกลางขับเคลื่อนด้วยคำสั่งบริหาร ไม่ sensitive ดอกเบี้ย แต่ฐานะเงินสดที่บางลงของ BTQ (CAD 9.73M) และ ATM ที่ใช้งานอยู่ทำให้ exposed ต่อเงื่อนไขการเงินที่ตึงตัวกว้างมากขึ้นเรื่อยๆ",
+        "inflationNote": "CPI ร้อนแรงจะทำให้เงื่อนไขการระดมทุนของหุ้นเล็กเงินสดบางตึงตัวขึ้น ซ้อนทับ dilution overhang ที่ลึกขึ้นของ BTQ",
+        "sectorImpact": "คำสั่ง post-quantum cryptography ของรัฐบาลกลางยังเป็นแรงหนุนเชิงนโยบายระยะยาวจริง independent จาก Fed แต่ trajectory งบดุลของ BTQ เองทำให้เงื่อนไขการเงินที่ตึงตัวกว้างเป็นความเสี่ยงที่ใหญ่กว่าเทียบรายงานก่อนมาก",
+        "summary": "ปรับขึ้นเป็นสูงจากปานกลางถึงสูง — แรงหนุนนโยบาย quantum security ของรัฐบาลกลางไม่เปลี่ยนและจริง แต่ฐานะเงินสดของ BTQ แย่ลงต่อในไตรมาสนี้ (C$12.1M → CAD 9.73M) ขณะที่ ATM ยังใช้งานอยู่ ทำให้หุ้นนี้ exposed ต่อ financing squeeze จาก Fed hawkish มากกว่ารายงานก่อนอย่างมีนัยสำคัญ"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE, SURVIVAL-FLAGGED — 1% max, sizing เล็กสุดในบอร์ด เงินสดลดลงต่อเหลือ CAD 9.73M เทียบ ATM C$150M ที่ยังใช้งานอยู่ ความคืบหน้าเทคนิค/เชิงพาณิชย์จริง (validate silicon, MOU เกาหลี) ไม่ชดเชยความเสี่ยงงบดุลที่ลึกขึ้น median at-catalyst return ของ turbo lane วัดได้ -13.7% (n=19) บวกกับ trajectory เงินสดที่แย่ลง — นี่ไม่ใช่ setup ที่ควรไล่ราคาชัดเจน รวมไว้เป็น carryover ที่ตรงไปตรงมาและมี survival flag เหมาะกับนักลงทุนที่ยอมรับความเป็นไปได้จริงของ dilution เพิ่มเติมหรือแย่กว่านั้นเท่านั้น",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน หลังข่าว validate silicon — median at-catalyst return วัดได้ -13.7% บวกกับความเสี่ยง survival ที่ลึกขึ้นของ pick นี้เอง ยิ่งไม่ควรไล่ราคา", "timing": "ตอนนี้ (ไม้เล็กสุด 1% max)" },
+          { "note": "โซนย่อถ้าแรงขาย ATM ยังต่อเนื่อง — ยัง size เล็กเพราะ survival flag", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงลึก — ใกล้ 52-week low เฉพาะกรณี thesis ยังอยู่", "timing": "Deep dip / thesis intact" }
+        ],
+        "tp1": { "note": "Base — แตะโซนเป้า Alliance Global $6 (เก่า) บางส่วนขณะความคืบหน้า test silicon ต่อเนื่อง สมมติ horizon ราว 3 เดือนถึงการส่งมอบปลายปีโดยไม่มี dilution ก้อนใหญ่ใหม่" },
+        "tp2": { "note": "Bull — QCIM test silicon ส่งมอบตามกำหนด บวก design win จาก commercial pipeline ~16 องค์กร" },
+        "tp3": { "note": "Moon — re-rate เต็มที่สู่ระดับสูงเดิมเมื่อข้อกำหนดจัดซื้อ CNSA 2.0 แปลงเป็นรายได้ QCIM/QSSN จริง และปัญหาเงินสด/dilution คลี่คลายในทางบวก", "moon": true },
+        "stopLoss": {
+          "tightNote": "ตั้งใจให้แคบกว่า median MAE โดยรวมของ turbo (-24.1%) เพราะความเสี่ยง survival ที่ลึกขึ้น (เงินสดลดต่อ ATM ยังใช้งาน) หมายความว่าการหลุดต่อควรตีความว่าความเสี่ยงงบดุลกำลังเกิดขึ้นจริง ไม่ใช่ noise — การตัดขาดทุนเร็วกว่าคือทางเลือกที่ถูกต้องที่นี่",
+          "hardNote": "เขต risk-of-zero — ยืนยันว่าความเสี่ยง survival/dilution กำลังเกิดขึ้นเร็วกว่าความคืบหน้าเชิงพาณิชย์จะชดเชยได้",
+          "rrNote": "Entry 1 ถึง stop แคบ เทียบ TP2 (Bull case)",
+          "rrWarning": "ความเสี่ยงจริงไม่ใช่ระยะ stop — คือ SURVIVAL flag ที่เปิดเผยแล้วและลึกขึ้น ควร size ที่ระดับต่ำสุดของช่วงค่าขนมไม่ว่า R/R ตัวเลขจะเป็นอย่างไร"
+        }
+      },
+      "estimateDates": [
+        { "event": "ส่งมอบ Test Silicon QCIM", "note": "เป้าบริษัท ~ธ.ค. 2026 ยืนยันซ้ำ 18 ส.ค. ยังไม่ยืนยันวันที่แน่นอน" }
+      ]
+    }
+  }
+}

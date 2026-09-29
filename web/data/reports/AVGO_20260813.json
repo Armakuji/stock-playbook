@@ -1,0 +1,204 @@
+{
+  "ticker": "AVGO",
+  "companyName": "Broadcom Inc.",
+  "companyDescription": "AI networking + custom silicon · guiding Q3 AI semiconductor revenue to ~$16B, more than 200% YoY — the arms dealer for hyperscaler custom accelerators",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-13T00:00:00.000Z",
+  "price": 416.05,
+  "priceChange": -0.01,
+  "priceNote": "Live price Aug 13 07:49, flat on the day (-0.01%) while the rest of AI semis ran 2-5% — which is why it is the only large-cap still inside its own entry zone. Prior report (Aug 10) used $425.10, so -2.1% drift.",
+  "marketCap": "$1.97T",
+  "sector": "Technology / Semiconductors (AI Networking & Custom Silicon)",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 76,
+  "summary": "The numbers going into Q3 are unusually concrete for a company this size: Broadcom has guided Q3 FY2026 revenue to roughly $29.4B, up about 84% year-over-year, with AI semiconductor revenue guided to approximately $16.0B — more than 200% growth. Consensus sits at $518.66 across 41 analysts (32 Strong Buy, 3 Moderate Buy, 6 Hold), about +24.7% from $416.05. Corrects a date error in the prior report: results are Thursday Sep 3 after close, not Sep 2. The honest counterweight is that AVGO's own recent prints have not rewarded strength — it fell 12.6% after Jun 2026 and was flat (-0.6%) in Aug 2026 — so the setup is 'good company, exhausted reaction function', and buying 21 days ahead of the print is exactly what this dashboard's measured base rate argues against.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 FY2026 Earnings",
+      "description": "Thursday Sep 3, 2026 after market close (corrected from Sep 2 in the prior report). Guided to ~$29.4B revenue (+84% YoY) with AI semis ~$16.0B (+200%+). The read that matters is whether custom-silicon order visibility extends into FY2027 rather than the headline beat.",
+      "urgencyLabel": "21 DAYS",
+      "dateBadge": "Sep 3, 2026",
+      "catalystDate": "2026-09-03",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🔧",
+      "name": "Google TPU / Custom Silicon Demand Trajectory",
+      "description": "Custom accelerator programs are the structural driver behind the AI revenue ramp. Continuous rather than dated — it shows up as backlog commentary and mix, not as an announcement.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "AVGO's reaction function has turned hostile to good news: -12.6% after the Jun 2026 print and -0.6% in Aug 2026. A beat is close to priced",
+    "Measured base rate on this dashboard is -6.9% median return from report price to just after the catalyst, with 74% of picks underwater at their own event (n=54) — buying 21 days ahead of a print is the specific behaviour that produces that number",
+    "The earnings_beat bucket is 0-for-42 on +30%/14d; the $518.66 consensus is a 12-month target, not a 21-day expectation",
+    "AI revenue guided +200% YoY sets a comparison base that becomes brutal in FY2027 — deceleration is the de-rating risk even if absolute numbers stay large",
+    "Hyperscaler customer concentration: a handful of buyers drive the custom-silicon ramp, and one re-sourcing decision resets the trajectory",
+    "At ~$1.97T this is a market-weight AI proxy — a hawkish Sep 16 FOMC or an AI-capex scare hits it with the index, not independently of it"
+  ],
+  "estimateDates": [
+    { "event": "Q3 FY2026 Earnings", "dateRange": "Sep 3, 2026", "note": "After close · guided ~$29.4B revenue, ~$16.0B AI semis", "est": "est. revenue ~$29.4B", "highlight": "blue" },
+    { "event": "Q4 FY2026 Earnings", "dateRange": "Dec 2026", "note": "Where the +200% AI comparison starts to bite", "est": "n/a", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -18, "price": 341.16 },
+    { "label": "Base", "color": "yellow", "pct": 24.7, "price": 518.66 },
+    { "label": "Bull", "color": "green", "pct": 39.4, "price": 580.0 },
+    { "label": "Moon", "color": "purple", "pct": 62.2, "price": 675.0 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (41 analysts)", "target": 518.66, "rating": "Strong Buy", "note": "32 Strong Buy · 3 Moderate Buy · 6 Hold" },
+    { "firm": "J.P. Morgan (Harlan Sur)", "target": 580, "rating": "Overweight" },
+    { "firm": "Bernstein (Stacy Rasgon)", "target": 550, "rating": "Outperform" },
+    { "firm": "Morgan Stanley (Joseph Moore)", "target": 502, "rating": "Overweight" },
+    { "firm": "Barclays (Thomas O'Malley)", "target": 500, "rating": "Overweight" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds 3.50-3.75%, held Jul 29 for a fifth straight meeting with three dissents preferring a hike. Next FOMC Sep 16, two weeks after the print.",
+    "inflationNote": "July CPI (Aug 12) headline 3.4% from 3.5%, core 2.5%, +0.1% m/m — soft enough to cut hike odds, following July payrolls at -23k with >100k of downward revisions.",
+    "sectorImpact": "AVGO is one of the largest single expressions of the AI capex trade. With the S&P at record highs and VIX near 14.9, positioning is the risk channel — a hawkish surprise hits crowded AI semis harder than the index, and AVGO is now a meaningful share of that index itself.",
+    "summary": "MEDIUM — earnings quality isn't the question; crowding and index concentration are."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 416.05, "note": "Current price, inside the zone — but NOT preferred: measured median at-catalyst return is -6.9% with 74% of picks underwater at their own event (n=54), and this is a print 21 days out", "timing": "Not preferred" },
+      { "label": "Entry 2", "level": 395, "rangeMax": 405, "note": "The zone proper — where R/R to consensus is meaningfully better and the base rate argues you'll get the chance", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 370, "note": "Post-print digestion or a broad AI-capex scare", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 470.0, "pct": 13.0, "note": "Pre-print drift or an in-line beat being credited" },
+    "tp2": { "price": 518.66, "pct": 24.7, "note": "41-analyst consensus · 12-month horizon, not 21-day" },
+    "tp3": { "price": 580.0, "pct": 39.4, "note": "J.P. Morgan target on custom silicon extending into FY2027 · 2027", "moon": true },
+    "stopLoss": {
+      "tight": 356.0,
+      "tightPct": -14.4,
+      "tightNote": "Just wider than the measured core medianMAE of -14% as the stop rule requires. Tighter than that on a name that fell 12.6% on a single print would be stopped out by an ordinary reaction",
+      "hard": 330.0,
+      "hardPct": -20.7,
+      "hardNote": "Below the Bear case; would mean the AI capex cycle itself is being repriced, not AVGO specifically",
+      "riskReward": "1.7 : 1",
+      "rrNote": "Tight stop (-14.4%) vs TP2 (+24.7%)",
+      "rrWarning": "Under 2:1 from here. From the $395-405 entry it improves to roughly 2.4:1 — which is the arithmetic case for waiting rather than a preference"
+    },
+    "verdict": "Best-quality setup on the board and the only large-cap still in its zone — but the measured base rate (-6.9% at-catalyst, 74% underwater) and a sub-2:1 R/R from $416 both say accumulate at $395-405 rather than buy the print at today's price.",
+    "approach": "DCA"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Notably absent, which is the interesting part: AVGO was flat today (-0.01%) while NVDA +3.0%, MU +4.9% and MRVL +2.3% ran. The usual 1-2 week pre-earnings drift has not started, so unlike most of the board this pick is not being bought ahead of its own event. Feedback prior: earnings_beat is n=42 with medianExcessVsBenchPct +1.8 vs +1.4 overall — neither leader nor laggard, so no tier-2 adjustment.",
+    "preRunupTiming": "1-2 สัปดาห์ก่อนงบ (ยังไม่เริ่ม)",
+    "preRunupPct": "0% (ถึงตอนนี้)",
+    "postWin": {
+      "avgPct": 6,
+      "range": "-0.6% to +24%",
+      "note": "The range is the warning. NVDA gained 24% on a May 2023 print that reset estimates, but AVGO's own recent prints delivered -0.6% (Aug 2026) and -12.6% (Jun 2026) despite strong numbers. For a $1.97T company a beat alone is not a catalyst.",
+      "exampleDate": "Aug 2026"
+    },
+    "postLose": {
+      "avgPct": -12,
+      "range": "-8% to -13%",
+      "note": "AVGO's own Jun 2026 print took it down 12.6%. That is the realistic downside on a guidance disappointment, and it is deeper than the -14% corpus median MAE suggests for a mega-cap.",
+      "exampleDate": "Jun 2026"
+    },
+    "spotSizing": {
+      "pct": 8,
+      "reason": "Core Holding sizing — business quality and 41-analyst coverage depth justify a larger position than the speculative names on this board. Not raised despite being the only large-cap in zone, because the entry rule says the preferred fill is $395-405, not today's price."
+    },
+    "stopPreCatalyst": { "pct": -14.4, "price": 356.0, "note": "Wider than the measured -14% median MAE; a break here before Sep 3 means the AI capex narrative is cracking rather than AVGO specifically" },
+    "stopPostCatalyst": { "pct": -12, "note": "On a guidance disappointment, trim rather than exit — the Jun 2026 -12.6% recovered, and this is a Core Holding" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "AVGO",
+      "event": "Q2 FY2026 earnings — strong print, stock fell",
+      "date": "Jun 2026",
+      "movePct": -12.6,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Same ticker, same catalyst type, one quarter ago. The single most relevant case: AVGO delivered and still fell 12.6%, because expectations rather than results set the bar."
+    },
+    {
+      "ticker": "AVGO",
+      "event": "Q2 FY2026 earnings beat (Jul reaction)",
+      "date": "Aug 2026",
+      "movePct": -0.62,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "Essentially no reaction to a strong quarter. Two consecutive prints now where good numbers produced nothing — the reason TP1 is set at a modest +13%."
+    },
+    {
+      "ticker": "NVDA",
+      "event": "Earnings print that reset the entire estimate cycle",
+      "date": "May 2023",
+      "movePct": 24,
+      "days": 1,
+      "outcome": "good",
+      "note": "The upper bound, included for balance. It required a genuine estimate reset across the whole sector — AVGO's +200% AI guide is already public, so the equivalent surprise is not available here."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Broadcom to report Q3 FY2026 results Thursday September 3, 2026 after market close; guides ~$29.4B revenue and ~$16.0B AI semiconductor revenue",
+    "url": "https://www.financecalendar.com/event/avgo-earnings-september-2026/",
+    "date": "Aug 2026"
+  },
+  "sources": [
+    "https://www.financecalendar.com/event/avgo-earnings-september-2026/",
+    "https://www.tipranks.com/news/is-broadcom-stock-avgo-a-buy-ahead-of-q3-earnings",
+    "https://finance.yahoo.com/markets/stocks/articles/broadcoms-quarterly-earnings-preview-know-134511367.html",
+    "https://www.cnbc.com/2026/06/03/broadcom-avgo-earnings-report-q2-2026.html",
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+    "https://www.bls.gov/news.release/archives/cpi_08122026.htm"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "ตัวเลขก่อนเข้า Q3 ชัดผิดปกติสำหรับบริษัทขนาดนี้: Broadcom guide รายได้ Q3 FY2026 ไว้ราว $29.4B โต ~84% YoY โดยรายได้ AI semiconductor guide ไว้ราว $16.0B — โตเกิน 200% · consensus อยู่ที่ $518.66 จาก 41 นักวิเคราะห์ (32 Strong Buy · 3 Moderate Buy · 6 Hold) ≈ +24.7% จาก $416.05 · แก้วันที่ผิดจากรายงานก่อน: ประกาศงบวันพฤหัสที่ 3 ก.ย. หลังตลาดปิด ไม่ใช่ 2 ก.ย. · ข้อหักล้างที่ต้องพูดตรง ๆ คืองบล่าสุดของ AVGO เองไม่ได้ให้รางวัลกับความแข็งแกร่ง — ร่วง 12.6% หลังงบ มิ.ย. 2026 และแทบไม่ขยับ (-0.6%) เมื่อ ส.ค. 2026 · setup จึงเป็น 'บริษัทดี แต่ reaction function หมดแรง' และการซื้อก่อนงบ 21 วันคือพฤติกรรมที่ base rate ที่วัดได้ของ dashboard นี้เตือนพอดี",
+      "priceNote": "ราคาสด 13 ส.ค. 07:49 · แทบไม่ขยับ (-0.01%) ขณะที่เซมิ AI ตัวอื่นวิ่ง 2-5% — ซึ่งเป็นเหตุผลที่ตัวนี้เป็น large cap ตัวเดียวที่ยังอยู่ในโซนเข้าของตัวเอง · รายงานก่อน (10 ส.ค.) ใช้ $425.10 drift -2.1%",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        { "name": "งบ Q3 FY2026", "description": "วันพฤหัสที่ 3 ก.ย. 2026 หลังตลาดปิด (แก้จาก 2 ก.ย. ในรายงานก่อน) · guide รายได้ ~$29.4B (+84% YoY) และ AI semis ~$16.0B (+200%+) · สิ่งที่ต้องอ่านคือ visibility ของคำสั่งซื้อ custom silicon ยืดไปถึง FY2027 ไหม ไม่ใช่ตัวเลข beat พาดหัว" },
+        { "name": "ทิศทางดีมานด์ Google TPU / custom silicon", "description": "โปรแกรม custom accelerator คือตัวขับเชิงโครงสร้างเบื้องหลังการ ramp ของรายได้ AI · เป็นแบบต่อเนื่องไม่มีวันที่ · จะเห็นผลผ่านคอมเมนต์ backlog และ mix ไม่ใช่การประกาศ" }
+      ],
+      "risks": [
+        "reaction function ของ AVGO กลายเป็นศัตรูกับข่าวดี: -12.6% หลังงบ มิ.ย. 2026 และ -0.6% เมื่อ ส.ค. 2026 · การ beat แทบถูก price ไปแล้ว",
+        "base rate ที่วัดได้ของ dashboard นี้คือ median -6.9% จากราคา report ถึงหลัง catalyst และ 74% ของ pick ติดลบตอน event ของตัวเอง (n=54) — การซื้อก่อนงบ 21 วันคือพฤติกรรมที่สร้างตัวเลขนั้นพอดี",
+        "bucket earnings_beat ยัง 0 จาก 42 บนเกณฑ์ +30%/14 วัน · เป้า $518.66 เป็นกรอบ 12 เดือน ไม่ใช่ 21 วัน",
+        "รายได้ AI ที่ guide ไว้ +200% YoY สร้างฐานเปรียบเทียบที่โหดมากใน FY2027 — การโตช้าลงคือความเสี่ยง de-rating แม้ตัวเลขสัมบูรณ์จะยังใหญ่",
+        "ลูกค้า hyperscaler กระจุกตัว: ผู้ซื้อไม่กี่รายขับการ ramp ของ custom silicon และการตัดสินใจเปลี่ยนซัพพลายเออร์รายเดียวรีเซ็ตเส้นทางทั้งเส้น",
+        "ที่ ~$1.97T ตัวนี้เป็น AI proxy ระดับ market weight — FOMC 16 ก.ย. ที่ hawkish หรือข่าวลบ AI capex จะกระทบพร้อมดัชนี ไม่ใช่แยกจากดัชนี"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed 3.50-3.75% คงเป็นครั้งที่ 5 ติดเมื่อ 29 ก.ค. โดยมี dissent 3 เสียงอยากขึ้น · FOMC ถัดไป 16 ก.ย. สองสัปดาห์หลังงบ",
+        "inflationNote": "CPI ก.ค. (12 ส.ค.) headline 3.4% จาก 3.5% · core 2.5% · m/m +0.1% — อ่อนพอที่จะลดโอกาสขึ้นดอกเบี้ย ตามหลังตัวเลขจ้างงาน ก.ค. -23k พร้อมปรับย้อนหลังลงกว่า 100k",
+        "sectorImpact": "AVGO เป็นหนึ่งในตัวแทนที่ใหญ่ที่สุดของ AI capex trade · ด้วย S&P ที่จุดสูงสุดใหม่และ VIX ราว 14.9 ช่องทางความเสี่ยงคือ positioning — hawkish surprise กระทบเซมิ AI ที่คนถือแน่นหนักกว่าดัชนี และตอนนี้ AVGO เองก็เป็นสัดส่วนที่มีนัยของดัชนีนั้น",
+        "summary": "MEDIUM — คุณภาพงบไม่ใช่ประเด็น · ความแออัดของ positioning และการกระจุกตัวในดัชนีต่างหาก"
+      },
+      "entryStrategy": {
+        "verdict": "setup คุณภาพดีที่สุดบนกระดาน และเป็น large cap ตัวเดียวที่ยังอยู่ในโซน — แต่ base rate ที่วัดได้ (-6.9% ณ catalyst, 74% ติดลบ) และ R/R ที่ต่ำกว่า 2:1 จาก $416 ทั้งคู่บอกให้ทยอยสะสมที่ $395-405 มากกว่าซื้อรับงบที่ราคาวันนี้",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน อยู่ในโซน — แต่ **ไม่แนะนำ**: median at-catalyst ที่วัดได้คือ -6.9% และ 74% ของ pick ติดลบตอน event ของตัวเอง (n=54) และนี่คืองบที่ห่างอีก 21 วัน", "timing": "ไม่แนะนำ" },
+          { "note": "โซนจริง · จุดที่ R/R ถึง consensus ดีขึ้นชัดเจน และ base rate บอกว่ามีโอกาสได้ราคานี้", "timing": "ถ้าย่อ" },
+          { "note": "ช่วงย่อยข่าวหลังงบ หรือข่าวลบ AI capex", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "การไหลขึ้นก่อนงบ หรือการ beat แบบพอดีที่ตลาดให้เครดิต" },
+        "tp2": { "note": "consensus จาก 41 นักวิเคราะห์ · กรอบ 12 เดือน ไม่ใช่ 21 วัน" },
+        "tp3": { "note": "เป้า J.P. Morgan ถ้า custom silicon ยืดไปถึง FY2027 · 2027" },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE -14% ที่วัดได้เล็กน้อยตามที่กฎ stop กำหนด · แคบกว่านี้กับหุ้นที่เคยร่วง 12.6% จากงบครั้งเดียวจะโดนปฏิกิริยาปกติเขี่ยออก",
+          "hardNote": "ต่ำกว่า Bear case · แปลว่าตลาดกำลัง reprice วัฏจักร AI capex ทั้งวง ไม่ใช่เฉพาะ AVGO",
+          "rrNote": "stop แคบ (-14.4%) เทียบ TP2 (+24.7%)",
+          "rrWarning": "ต่ำกว่า 2:1 จากราคานี้ · ถ้าเข้าที่โซน $395-405 จะดีขึ้นเป็นราว 2.4:1 — เป็นเหตุผลเชิงเลขคณิตที่ให้รอ ไม่ใช่แค่ความชอบ"
+        },
+        "estimateDates": [
+          { "event": "งบ Q3 FY2026", "note": "หลังตลาดปิด · guide ~$29.4B รายได้ · AI semis ~$16.0B" },
+          { "event": "งบ Q4 FY2026", "note": "จุดที่ฐานเปรียบเทียบ AI +200% เริ่มกัด" }
+        ]
+      }
+    }
+  }
+}

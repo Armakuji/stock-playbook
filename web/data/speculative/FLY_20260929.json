@@ -1,0 +1,184 @@
+{
+  "ticker": "FLY",
+  "companyName": "Firefly Aerospace Inc.",
+  "companyDescription": "Rockets, spacecraft & lunar landers · first commercial firm to complete a successful Moon landing (Blue Ghost) · Q2 2026 revenue up 659% YoY to a record $117.7M — the fundamentals/sentiment divergence flagged last report has genuinely started closing",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-09-29T00:00:00.000Z",
+  "price": 23.45,
+  "priceChange": -2.74,
+  "priceNote": "Self-fetched today (live-prices.json cache dated Aug 13, too stale to use). Up 13.6% since the last report ($20.65 → $23.45) after Q2 2026 results (Aug 11) delivered record revenue of $117.7M, up 659% YoY — a genuine acceleration from Q1's 45% YoY pace that the last report specifically flagged as the thing to watch.",
+  "marketCap": "$3.93B",
+  "sector": "Industrials / Space Launch & Lunar Landers",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 57,
+  "summary": "This is a genuinely positive update, but with an important honest caveat: the fundamentals/sentiment divergence flagged last report has started closing (stock +13.6% since July), and Q2 2026 revenue exploded to $117.7M (+659% YoY) with FY26 guidance raised to $420-450M — a real inflection, not just noise. New contract wins keep landing (SSC Space multi-launch deal, NASA Spacecraft Processing Contract, Space Force $93.7M radar digitization, a new cleanroom for 12-unit simultaneous Blue Ghost/Elytra production). BUT the 10-analyst consensus target has fallen to $38.6 (+64.6%) from $48.11 last report, and the high estimate is now $50 (+113%) versus Roth's prior $60 (+191%) — the stock's own rally has compressed the remaining upside below this board's typical 200%+ turbo floor even further than before. Cash is strong ($635.2M total liquidity). Next earnings Nov 11, 2026 is the catalyst that tests whether $420-450M FY guidance holds.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 2026 Earnings",
+      "description": "Reports Nov 11, 2026. Tests whether the raised FY26 guidance ($420-450M revenue) holds after Q2's 659% YoY beat. Market will also want an update on the SSC Space and NASA processing contract cadence.",
+      "urgencyLabel": "~6 WEEKS",
+      "dateBadge": "Nov 11, 2026",
+      "catalystDate": "2026-11-11",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🏭",
+      "name": "New Cleanroom — Production Scale-Up",
+      "description": "ISO Class 8 cleanroom completed in Cedar Park, TX (Sep 22), enabling simultaneous assembly of up to 12 Blue Ghost lunar landers and Elytra orbital vehicles — direct evidence the company is building out capacity to match its expanding contract backlog.",
+      "urgencyLabel": "COMPLETED",
+      "dateBadge": "Sep 22, 2026",
+      "catalystDate": "2026-09-22",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "🚀",
+      "name": "Contract Momentum — SSC Space, NASA, Space Force",
+      "description": "Multi-launch deal with SSC Space (Alpha rocket launches from Sweden, 2028+), NASA Spacecraft Processing Operations Contract (Vandenberg payload processing), and SciTec's $93.7M Space Force radar digitization contract — real, diversified revenue visibility beyond the original Blue Ghost/SkyFall wins.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "green",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Real upside has compressed further below this board's 200%+ turbo bar — the 10-analyst consensus fell to $38.6 (+64.6%) from $48.11 last report, and even the new high estimate ($50, +113%) is below Roth's prior $60 (+191%). The stock's own rally is eating the remaining asymmetry faster than the fundamentals story is expanding it",
+    "FY26 guidance of $420-450M implies a steep H2 ramp from the $117.7M Q2 print — Nov 11 earnings is a real test of execution, not just a formality",
+    "Net loss was $92.3M in Q2 despite the revenue beat — still cash-burning at scale even as growth accelerates",
+    "Most new contract wins (SSC Space 2028+, Space Force radar work) are multi-year — cash doesn't flow immediately even as backlog visibility improves",
+    "This is now a genuinely borderline turbo pick on a strict upside basis — worth flagging for the next `turbo-compare` cycle rather than treating the Moon case here as a clean 200%+ moonshot"
+  ],
+  "estimateDates": [
+    { "event": "Q3 2026 Earnings", "dateRange": "Nov 11, 2026", "note": "Tests whether the raised FY26 guidance ($420-450M) holds after Q2's 659% YoY beat", "est": "Revenue growth expected to continue; guidance execution is the real question now", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -35, "price": 15.24 },
+    { "label": "Base", "color": "yellow", "pct": 50, "price": 35.18 },
+    { "label": "Bull", "color": "green", "pct": 65, "price": 38.69 },
+    { "label": "Moon", "color": "purple", "pct": 115, "price": 50.42 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (10 analysts)", "target": 38.60, "rating": "Buy", "note": "Range $25-$50; down from $48.11 last report as the stock's own rally compressed the gap" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Rising Treasury yields have been an active headwind for high-multiple, cash-burning growth names this quarter (see ACHR's -7% same-cohort move) — a real, current risk, not a hypothetical one.",
+    "inflationNote": "Core inflation remains above target; a persistent headwind for space-sector capex-heavy names generally.",
+    "sectorImpact": "The space sector's sentiment has stabilized somewhat since the last report as Firefly's own fundamentals started catching up to the news flow, but the sector remains sensitive to broad risk-off moves and capital rotation (e.g. toward SpaceX's IPO).",
+    "summary": "MEDIUM — Firefly's contract wins are macro-independent, but the stock's re-rating this quarter shows it's still exposed to broad growth-stock rate sensitivity, same as its eVTOL/space peers."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 23.45, "note": "Current price — up 13.6% since July as the sentiment gap closed; turbo lane's measured median at-catalyst return is -13.7% (n=19), so this is not the default entry", "timing": "Scale in (small)" },
+      { "label": "Entry 2", "level": 19.50, "rangeMax": 21.00, "note": "Pullback zone ahead of Nov 11 earnings — best R/R if some of this quarter's rally unwinds first", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 16.50, "note": "Deep capitulation — only on a broad space-sector selloff", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 35.18, "pct": 50.0, "note": "Base — Nov 11 earnings confirm the FY26 guidance ramp is on track; Base assumes a ~2mo horizon to the print, driven by continued contract-cadence proof points" },
+    "tp2": { "price": 38.69, "pct": 65.0, "note": "Bull — matches the 10-analyst consensus target, market fully credits the guidance raise" },
+    "tp3": { "price": 50.42, "pct": 115.0, "note": "Moon — hits the new analyst high estimate on additional contract wins + a beat-and-raise Nov 11 print", "moon": true },
+    "stopLoss": {
+      "tight": 16.50, "tightPct": -29.6, "tightNote": "Below the recent trading range floor and wider than the turbo overall median MAE (-24.1%, n=41, earnings_beat n=2 too thin to use) — this name has shown real volatility even on good news",
+      "hard": 13.00, "hardPct": -44.6, "hardNote": "Below the prior 52-week-low retest zone — would suggest real fundamentals deterioration, not just profit-taking after the rally",
+      "riskReward": "3.7 : 1", "rrNote": "From Entry 2 ($20.25 mid) tight stop vs TP2", "rrWarning": "Decent R/R but real upside is now below the typical 200% turbo bar — treat as borderline, flag for turbo-compare"
+    },
+    "verdict": "SPECULATIVE, genuinely improving but increasingly borderline as a turbo pick — the fundamentals/sentiment gap flagged last report has closed (stock +13.6%), but consensus upside (65%, or 113% at the new high end) is now further below this board's usual 200%+ bar than it was in July. Measured turbo median at-catalyst return is -13.7% (n=19); prefer the $19.50-21.00 dip zone ahead of Nov 11 earnings over chasing here.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Firefly's Q2 print (Aug 11) drove the stock's recovery this quarter, reversing the muted/negative pattern to contract news flagged last report — the market did eventually reward the fundamentals, just with a lag.",
+    "preRunupTiming": "weeks before the print, as contract-cadence news built the case ahead of the Aug 11 beat",
+    "preRunupPct": "+13.6% cumulative into and through the Aug 11 print (from the last report's price)",
+    "postWin": {
+      "avgPct": 14,
+      "range": "+5% to +20%",
+      "note": "Comparable space-sector names show 5-20% pops on major beats; Firefly's own Q2 2026 print (659% YoY revenue growth, guidance raise) appears to have driven a meaningful part of the stock's 13.6% move since the last report, though the exact single-day reaction wasn't isolated in available data.",
+      "exampleDate": "Aug 11, 2026 (FLY Q2 2026 print)"
+    },
+    "postLose": {
+      "avgPct": -18,
+      "range": "-10% to -28%",
+      "note": "Firefly's own stock fell -27.9% over 30 days in July purely on sentiment (before the fundamentals caught up) — the direct precedent for how much this stock can still fall on a Nov 11 guidance miss, especially after this quarter's re-rate leaves less room for disappointment.",
+      "exampleDate": "H2 Jul 2026 (FLY, pre-earnings sentiment low)"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Reduced from 4% last report — the stock's rally has compressed the remaining upside below the typical turbo floor even as the fundamentals genuinely improved, so conviction is now about execution continuation rather than a wide undervaluation gap."
+    },
+    "stopPreCatalyst": { "pct": -30, "price": 16.50, "note": "Below the recent trading range — wider than turbo's overall median MAE (-24.1%) given this name's demonstrated volatility" },
+    "stopPostCatalyst": { "pct": -20, "note": "If Nov 11 guidance disappoints relative to the $420-450M FY26 range, or free cash flow burn worsens materially, exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "FLY",
+      "event": "Q2 2026 earnings: record $117.7M revenue (+659% YoY), FY26 guidance raised to $420-450M",
+      "date": "Aug 11, 2026",
+      "movePct": 14,
+      "days": 30,
+      "outcome": "good",
+      "note": "The print that closed the fundamentals/sentiment gap flagged in the last report — stock is up 13.6% in the roughly seven weeks since, contract wins have kept compounding on top."
+    },
+    {
+      "ticker": "FLY",
+      "event": "String of contract wins despite stock decline (pre-Q2 pattern)",
+      "date": "Jul 2026",
+      "movePct": -28,
+      "days": 30,
+      "outcome": "bad",
+      "note": "Same-company precedent for how badly this stock can trade against good news when sentiment is against it — the eventual reversal shows the pattern isn't permanent, but it can persist for a month-plus."
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/fly/",
+    "https://stockanalysis.com/stocks/fly/forecast/",
+    "https://www.stocktitan.net/news/FLY/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "นี่เป็นอัปเดตที่ดีจริง แต่มีข้อควรระวังที่ต้องพูดตรงๆ — ช่องว่าง sentiment/พื้นฐานที่รายงานก่อนเคยระบุเริ่มปิดแล้ว (หุ้นขึ้น 13.6% ตั้งแต่ก.ค.) และรายได้ Q2 2026 พุ่งเป็น $117.7M (+659% YoY) พร้อม guidance FY26 ปรับขึ้นเป็น $420-450M — เป็น inflection จริง ไม่ใช่แค่ noise สัญญาใหม่ยังเข้ามาต่อเนื่อง (ดีล multi-launch SSC Space, สัญญา NASA Spacecraft Processing, Space Force $93.7M radar digitization, cleanroom ใหม่ผลิต Blue Ghost/Elytra 12 หน่วยพร้อมกัน) แต่เป้าเฉลี่ยนักวิเคราะห์ 10 คนลดลงมาที่ $38.6 (+64.6%) จาก $48.11 ในรายงานก่อน และเป้าสูงสุดตอนนี้คือ $50 (+113%) เทียบกับ Roth เดิม $60 (+191%) — การวิ่งขึ้นของหุ้นเองบีบ upside ที่เหลือให้ต่ำกว่าเกณฑ์ turbo 200%+ ของบอร์ดนี้มากกว่าเดิมอีก งบดุลแข็งแรง ($635.2M liquidity รวม) ผลประกอบการถัดไป 11 พ.ย. 2026 คือ catalyst ที่จะทดสอบว่า guidance FY26 $420-450M จะยืนได้ไหม",
+      "priceNote": "self-fetch วันนี้ (live-prices.json cache เก่าตั้งแต่ 13 ส.ค.) ขึ้น 13.6% ตั้งแต่รายงานก่อน ($20.65 → $23.45) หลังผล Q2 2026 (11 ส.ค.) รายได้ทำสถิติ $117.7M ขึ้น 659% YoY — เร่งขึ้นจริงจาก Q1 ที่ 45% YoY ที่รายงานก่อนระบุว่าต้องจับตา",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "ผลประกอบการ Q3 2026", "description": "รายงาน 11 พ.ย. 2026 ทดสอบว่า guidance FY26 ที่ปรับขึ้น ($420-450M) จะยืนได้ไหมหลังบีท Q2 659% YoY ตลาดต้องการอัปเดตจังหวะสัญญา SSC Space และ NASA processing ด้วย" },
+        { "name": "Cleanroom ใหม่ — ขยายกำลังผลิต", "description": "Cleanroom ISO Class 8 สร้างเสร็จที่ Cedar Park, TX (22 ก.ย.) ผลิต Blue Ghost lunar lander และ Elytra orbital vehicle พร้อมกันได้ถึง 12 ยูนิต — หลักฐานตรงว่าบริษัทขยายกำลังผลิตให้ทันกับ backlog สัญญาที่เพิ่มขึ้น" },
+        { "name": "Momentum สัญญา — SSC Space, NASA, Space Force", "description": "ดีล multi-launch กับ SSC Space (จรวด Alpha จากสวีเดน ปี 2028+), สัญญา NASA Spacecraft Processing Operations (ประมวลผล payload ที่ Vandenberg), และสัญญา Space Force $93.7M digitize radar ของ SciTec — การมองเห็นรายได้กระจายตัวจริงเกินกว่าแค่ Blue Ghost/SkyFall เดิม" }
+      ],
+      "risks": [
+        "Upside จริงบีบตัวลงต่ำกว่าเกณฑ์ 200%+ ของบอร์ดนี้มากกว่าเดิม — เป้าเฉลี่ยนักวิเคราะห์ 10 คนลดเหลือ $38.6 (+64.6%) จาก $48.11 และแม้เป้าสูงสุดใหม่ ($50, +113%) ก็ยังต่ำกว่า Roth เดิม ($60, +191%) — การวิ่งขึ้นของหุ้นเองกิน asymmetry ที่เหลือเร็วกว่า story พื้นฐานที่ขยายตัว",
+        "Guidance FY26 $420-450M หมายถึงต้องเร่งตัวแรงมากจากยอด Q2 ที่ $117.7M — ผล 11 พ.ย. คือบททดสอบจริงของการ execute ไม่ใช่แค่พิธีกรรม",
+        "ขาดทุนสุทธิ $92.3M ใน Q2 แม้รายได้จะบีท — ยัง burn เงินสดหนักในสเกลใหญ่แม้การเติบโตจะเร่งขึ้น",
+        "สัญญาใหม่ส่วนใหญ่ (SSC Space 2028+, งาน radar Space Force) เป็นสัญญาหลายปี — เงินสดยังไม่เข้าทันทีแม้การมองเห็น backlog จะดีขึ้น",
+        "ตอนนี้เป็น turbo pick แบบ borderline จริงบนฐาน upside — ควรยกขึ้นพิจารณาใน turbo-compare รอบถัดไป มากกว่ามอง Moon case นี้เป็น moonshot 200%+ ที่สะอาด"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Yield พันธบัตรที่ขึ้นเป็นแรงกดดันจริงต่อหุ้น growth multiple สูง cash-burning ในไตรมาสนี้ (ดู ACHR ที่ลง -7% ในกลุ่มเดียวกัน) — เป็นความเสี่ยงจริงตอนนี้ ไม่ใช่สมมติ",
+        "inflationNote": "เงินเฟ้อ core ยังสูงกว่าเป้า เป็นแรงกดดันต่อเนื่องต่อหุ้น space sector ที่ capex หนัก",
+        "sectorImpact": "Sentiment sector อวกาศนิ่งขึ้นบ้างตั้งแต่รายงานก่อน เพราะพื้นฐานของ Firefly เองเริ่มตามข่าวทัน แต่ sector ยังไวต่อการเทขายกว้างและการหมุนทุน (เช่น ไป SpaceX IPO)",
+        "summary": "ความเสี่ยง Fed ระดับกลาง — สัญญาที่ Firefly ได้เองไม่ผูกกับ macro แต่การ re-rate ของหุ้นไตรมาสนี้แสดงว่ายัง exposed กับ rate sensitivity ของหุ้น growth เหมือน peer กลุ่ม eVTOL/space"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE ดีขึ้นจริงแต่ borderline มากขึ้นในฐานะ turbo pick — ช่องว่าง sentiment/พื้นฐานที่เคยระบุปิดแล้ว (หุ้นขึ้น 13.6%) แต่ upside consensus (65% หรือ 113% ขอบบน) ตอนนี้ต่ำกว่าเกณฑ์ 200%+ ปกติของบอร์ดนี้มากกว่าเดิม median at-catalyst return ของ turbo lane วัดได้ -13.7% (n=19) ควรเข้าโซนย่อ $19.50-21.00 ก่อนผล 11 พ.ย. มากกว่าไล่ราคา",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ขึ้น 13.6% ตั้งแต่ก.ค.เพราะช่องว่าง sentiment ปิดแล้ว median at-catalyst return วัดได้ -13.7% จึงไม่ใช่ entry เริ่มต้นที่แนะนำ", "timing": "Scale in (เล็ก)" },
+          { "note": "โซนย่อก่อนผลประกอบการ 11 พ.ย. — R/R ดีที่สุดถ้าการวิ่งขึ้นไตรมาสนี้ย่อลงมาก่อน", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงหนัก — เฉพาะ sector อวกาศเทขายรวม", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — ผล 11 พ.ย. ยืนยัน guidance FY26 เดินตามแผน สมมติ horizon ราว 2 เดือนถึงวันประกาศผล" },
+        "tp2": { "note": "Bull — ตรงเป้าเฉลี่ยนักวิเคราะห์ 10 คน ตลาดให้เครดิต guidance ที่ปรับขึ้นเต็มที่" },
+        "tp3": { "note": "Moon — แตะเป้าสูงสุดใหม่จากสัญญาเพิ่ม + ผล 11 พ.ย. บีทและ raise guidance", "moon": true },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่าฐานเทรดล่าสุด และกว้างกว่า median MAE โดยรวมของ turbo (-24.1%) เพราะหุ้นตัวนี้แสดง volatility จริงแม้ข่าวดี",
+          "hardNote": "ต่ำกว่าโซน retest 52-week low เดิม — จะบ่งชี้ปัญหาพื้นฐานจริง ไม่ใช่แค่ profit-taking หลังวิ่งขึ้น",
+          "rrNote": "จาก Entry 2 ($20.25 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R พอใช้ได้แต่ upside จริงตอนนี้ต่ำกว่าเกณฑ์ turbo 200% ปกติ — ถือเป็น borderline ควรยกไป turbo-compare"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q3 2026", "note": "ทดสอบว่า guidance FY26 ที่ปรับขึ้น ($420-450M) จะยืนได้ไหมหลังบีท Q2 659% YoY" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "ticker": "LAES",
+  "companyName": "SEALSQ Corp",
+  "companyDescription": "Quantum-safe semiconductors · WISeKey-affiliated post-quantum secure chip platform (QS7001, CCEAL5+ RISC-V) building toward the Quantum Spatial Orbital Cloud (QSOC) — a planned satellite-based post-quantum security/digital-identity network launching its first node via a SpaceX mission in Q4 2026, part of a broader 'Quantum Made in USA' push (EeroQ, Quobly, Quantix investments)",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-09-29T00:00:00.000Z",
+  "price": 2.28,
+  "priceChange": -2.98,
+  "priceNote": "Trading in the low-$2 range, well off the $8.71 52-week high but above the $1.99 low. Down ~44% over the trailing year despite H1 2026 revenue up 131% YoY — a name still trading mostly on the quantum-sector narrative and the Q4 2026 QSOC launch, not on current fundamentals. Closed Sep 28, 2026.",
+  "marketCap": "~$526M",
+  "sector": "Technology / Quantum-Safe Semiconductors",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Moonshot",
+  "score": 47,
+  "summary": "SEALSQ's first Quantum Spatial Orbital Cloud (QSOC) satellite is planned to launch via a SpaceX mission in Q4 2026, the first node in a post-quantum security/digital-identity network the company plans to scale to as many as 100 satellites by 2033 — building on 21 partner-operated satellites already validated since 2023. Unlike most turbo picks, survival is genuinely clean: SEALSQ ended Q1 2026 with $525M+ in cash and short-term investments and zero debt, backstopped by a $125M registered direct offering priced at $4.11/share in March 2026 that analysts have generally read as accretive given the stock's post-raise performance. catalystType here is product_launch, which is Tier 1 in the turbo skill-feedback dataset (n=2 — context only, not used to size this pick up or down). The real edge is the clean balance sheet: it means this is a name that can survive a slipped launch date or a soft quarter without a distressed raise, which is rare in this lane.",
+  "catalysts": [
+    {
+      "icon": "🛰️",
+      "name": "QSOC First Satellite Launch (SpaceX)",
+      "description": "SEALSQ's first Quantum Spatial Orbital Cloud satellite — the initial node of a planned post-quantum security, digital-identity, and quantum-randomness network delivered from orbit — is planned to launch on a SpaceX mission. Company guidance targets scaling to as many as 100 satellites by 2033.",
+      "urgencyLabel": "PLANNED Q4 2026",
+      "dateBadge": "Q4 2026",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🔗",
+      "name": "Quantum Highway Expansion — Chicago / EeroQ Corridor",
+      "description": "SEALSQ expanded its Quantum Highway to nine interconnected hubs linking La Línea, Murcia, Toulouse, Meyreuil, Grenoble, Geneva, Lausanne and a future Swiss center, extending the sovereign quantum corridor to Chicago via the EeroQ partnership — part of the 'Quantum Made in USA' build-out ahead of the QSOC launch.",
+      "urgencyLabel": "RECENT",
+      "dateBadge": "Sep 9, 2026",
+      "catalystDate": "2026-09-09",
+      "badgeColor": "green",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "First QSOC satellite launch is only 'planned' for Q4 2026 on a SpaceX mission — no confirmed launch date has been announced, and slippage into 2027 is a real possibility for a first-of-its-kind orbital deployment.",
+    "Net loss widened to $27.8M in H1 2026 from $20.0M a year earlier — the company remains deeply unprofitable, and H1 2026 revenue of $11.2M is tiny relative to the ~$526M market cap.",
+    "Share count has grown ~16.7% since Dec 2025 (191.5M to 223.4M shares outstanding) from ongoing capital raises; the March 2026 $125M raise at $4.11 has so far been read by analysts as accretive given the post-raise stock performance, but further dilution funding the satellite/Quantum Fund build-out is a structural feature of the model, not a one-off risk that goes away.",
+    "A meaningful share of the $525M+ cash pile sits in strategic investments and fund commitments (EeroQ, Quobly, IC'ALPS, ColibriTD, Quantix, WeCan Group — ~$30M deployed in FY2025 alone, Quantum Fund expanded to $200M) rather than SEALSQ's own QSOC/QS7001 execution — part of the balance sheet is effectively a bet on other companies' success, not a moat.",
+    "52-week range of $1.99-$8.71 shows the stock has already round-tripped a huge move once this cycle — high-beta quantum-sector sentiment (RGTI, IONQ, QBTS all trade correlated) can move LAES independent of company-specific news."
+  ],
+  "estimateDates": [
+    { "event": "QSOC First Satellite Launch (SpaceX)", "dateRange": "Q4 2026", "note": "No confirmed exact date yet — planned window per company guidance", "est": "n/a", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -50, "price": 1.14 },
+    { "label": "Base", "color": "yellow", "pct": 35, "price": 3.08 },
+    { "label": "Bull", "color": "green", "pct": 90, "price": 4.33 },
+    { "label": "Moon", "color": "purple", "pct": 250, "price": 7.98 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (2 analysts)", "target": 5.88, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed unexpectedly resumed hiking on Sep 16, 2026 — +25bp to 3.75-4.00%, the first hike since 2023 — with the dot plot signaling one more 2026 hike and a slower, more cautious descent through 2027-28. Next decision Oct 28, 2026.",
+    "inflationNote": "Core PCE still running around 3.3% YoY — the hawkish surprise reflects the Fed prioritizing inflation control even with labor-market softness earlier in the year.",
+    "sectorImpact": "Quantum/post-quantum semis are a long-duration growth story — higher-for-longer rates compress the multiple the market will pay for FY26 revenue that is still tiny ($11.2M H1 2026) relative to market cap. But SEALSQ's $525M+ cash cushion and zero debt mean it isn't forced into a distressed raise the way a burn-constrained peer would be under tighter financial conditions.",
+    "summary": "MEDIUM — the Sep 16 hike pressures long-duration growth multiples broadly, and LAES's high-beta quantum-sector correlation (moves with RGTI/IONQ/QBTS) means a risk-off tape would likely hit the stock regardless of company-specific news, but the clean balance sheet removes the financing-driven downside that would otherwise push this to HIGH."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 2.28, "note": "Current price — do not chase; NOT the preferred entry given the measured turbo at-catalyst base rate (see verdict)", "timing": "Now (starter only)" },
+      { "label": "Entry 2", "level": 1.90, "rangeMax": 2.05, "note": "Dip zone near the 52-week low ($1.99) — preferred entry given the measured turbo at-catalyst median return of -13.7% (n=19)", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 1.50, "note": "Deep dip — thesis-intact only; the clean balance sheet limits true zero-risk, but high-beta quantum-sector sentiment could still overshoot to the downside", "timing": "Deep dip / thesis-intact only" }
+    ],
+    "tp1": { "price": 3.08, "pct": 35.1, "note": "Base — QSOC satellite reaches orbit on the planned SpaceX mission and initial revenue tracks within the reaffirmed 50-100% YoY FY26 guidance; assumes a ~4-6 month horizon through the Q4 2026 launch and initial post-launch data, not the 30d North Star window" },
+    "tp2": { "price": 4.33, "pct": 89.9, "note": "Bull — successful launch plus revenue meaningfully beating guidance, pulling the stock toward and past the $5.88 analyst consensus" },
+    "tp3": { "price": 7.98, "pct": 250.0, "note": "Moon — QSOC becomes the reference post-quantum orbital security platform narrative, quantum-sector-wide re-rate (RGTI/IONQ-style) plus additional satellite launches and commercial contracts stack on top", "moon": true },
+    "stopLoss": {
+      "tight": 1.64, "tightPct": -28.0, "tightNote": "Wider than the turbo lane's overall medianMAE (-24.1%, n=41) — product_launch itself only has n=2 in the skill-feedback dataset (too thin for its own type-specific bar), so the whole-lane figure is the right reference, widened slightly given a binary hardware-launch catalyst",
+      "hard": 1.25, "hardPct": -45.0, "hardNote": "Deep-drawdown territory — a breach here would suggest either a confirmed launch failure/major slip, or a broad quantum-sector de-rate unrelated to company execution",
+      "riskReward": "3.2 : 1", "rrNote": "Entry 1 to tight stop vs TP2 (Bull case)", "rrWarning": "Below the 5:1 turbo target — the whole-lane-width stop compresses R/R somewhat, but the clean balance sheet justifies sizing at the higher end of the 2-5% band rather than tightening the stop artificially"
+    },
+    "verdict": "SPECULATIVE — a clean balance sheet ($525M+ cash, zero debt) backs a concrete Q4 2026 binary catalyst (first QSOC satellite launch via SpaceX). product_launch is Tier 1 in turbo skill-feedback (n=2, context only — not used to size this up or down). Measured turbo at-catalyst median return is -13.7% (n=19) — do not chase at report price; the dip zone (Entry 2) is the preferred entry. Moonshot position — up to 4% given the unusually clean survival profile for this lane.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "product_launch",
+    "preRunup": "product_launch is Tier 1 in the turbo skill-feedback (n=2 — context only, not used to size this pick up or down). Pre-launch periods for concrete hardware milestones (first satellite reaching orbit, first chip shipment) in the space/semis sector tend to show a modest build in the final weeks as the launch window firms up, then a sharper move on confirmed successful deployment.",
+    "preRunupTiming": "Final 2-4 weeks before a confirmed launch window (sector pattern, not LAES-specific — no confirmed date yet)",
+    "preRunupPct": "+10% to +20% typical pre-launch build (sector pattern, not LAES-specific)",
+    "postWin": {
+      "avgPct": 45,
+      "range": "+30% to +90%",
+      "note": "product_launch has only n=2 in the turbo dataset (Tier 1 — context only), so this uses same-sector quantum precedent instead: Rigetti Computing (RGTI) rallied as much as 545% over the trailing year to Dec 2025 on federal quantum-investment validation, and IonQ (IONQ) gained 50%+ from end-March 2026 on federal investment announcements plus the NVIDIA Accelerated Quantum Research Center partnership — both show how sharply quantum-sector names re-rate on concrete validation events, the same kind of proof-point a successful QSOC orbital launch would represent for LAES.",
+      "exampleDate": "Dec 2025 (RGTI) / Mar-Sep 2026 (IONQ)"
+    },
+    "postLose": {
+      "avgPct": -20,
+      "range": "-10% to -35%",
+      "note": "No LAES/QSOC-specific launch-failure precedent exists yet since the first launch hasn't happened. This range reflects the turbo lane's overall medianMAE (-24.1%, n=41) since product_launch itself is too thin (n=2) to set its own bar.",
+      "exampleDate": "n/a — turbo lane-wide bar, skill-feedback generatedAt 2026-08-13"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "Clean balance sheet ($525M+ cash, zero debt, dilution history generally read as accretive by analysts) supports the higher end of the 2-5% turbo band despite product_launch being Tier 1/context-only (n=2) — sizing here is driven by survival cleanliness, not catalyst-type conviction."
+    },
+    "stopPreCatalyst": { "pct": -28, "price": 1.64, "note": "Wider than the turbo lane's overall medianMAE (-24.1%, n=41) — a break below this level ahead of the launch window would suggest the market is de-risking execution, not just normal pre-launch volatility" },
+    "stopPostCatalyst": { "pct": -35, "note": "If the QSOC launch slips well past Q4 2026 (into H2 2027+) or fails outright, or FY26 revenue guidance (50-100% YoY) is walked back, exit — that's the growth narrative breaking, not post-catalyst noise" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "RGTI",
+      "event": "Federal quantum-investment validation driving trailing-year re-rate",
+      "date": "Dec 2025",
+      "movePct": 545,
+      "days": 365,
+      "outcome": "good",
+      "note": "Shows the magnitude a small-cap quantum name can re-rate on tangible government/commercial validation over a sustained period — relevant precedent for what a successful first QSOC satellite launch plus the 'Quantum Made in USA' narrative could do for LAES, though the driver (broad quantum-sector momentum, not one launch event) differs from a single binary catalyst."
+    },
+    {
+      "ticker": "IONQ",
+      "event": "Federal investment announcements + NVIDIA Accelerated Quantum Research Center partnership",
+      "date": "Mar-Sep 2026",
+      "movePct": 50,
+      "days": 180,
+      "outcome": "good",
+      "note": "Shows the pattern of quantum-sector names rallying on concrete validation/partnership news rather than pure speculation — the same kind of proof-point dynamic a successful, orbit-confirmed QSOC launch would represent for SEALSQ specifically."
+    }
+  ],
+  "sources": [
+    "https://seekingalpha.com/news/4603025-sealsq-sets-first-qsoc-satellite-launch-in-q4-but-shares-are-still-in-red-zone",
+    "https://www.globenewswire.com/news-release/2026/06/12/3311109/0/en/SEALSQ-and-WISeKey-Update-Progress-on-their-Post-Quantum-Security-Cloud-from-Space-Through-the-Quantum-Spatial-Orbital-Cloud-QSOC.html",
+    "https://www.globenewswire.com/news-release/2026/09/09/3358983/0/en/sealsq-expands-its-quantum-highway-nine-interconnected-hubs-now-link-la-l%C3%ADnea-murcia-toulouse-meyreuil-grenoble-geneva-lausanne-and-the-future-swiss-based-center-and-extend-the-sov.html",
+    "https://www.sealsq.com/investors/news-releases/sealsq-announces-125.0-million-registered-direct-offering-priced-at-the-market-under-nasdaq-rules",
+    "https://www.stocktitan.net/sec-filings/WKEY/6-k-wisekey-international-holding-s-a-current-report-foreign-issuer-b3c4d8351f8f.html",
+    "https://stockanalysis.com/stocks/laes/",
+    "https://www.fool.com/investing/2026/06/12/ionq-rigetti-and-d-wave-are-surging-again-is-quant/",
+    "https://www.benzinga.com/trading-ideas/movers/26/09/61944117/rigetti-stock-rises-as-ionq-nvidia-deal-lifts-quantum-computing-sector",
+    "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "ดาวเทียม Quantum Spatial Orbital Cloud (QSOC) ดวงแรกของ SEALSQ วางแผนปล่อยผ่านภารกิจ SpaceX ใน Q4 2026 เป็นโหนดแรกของเครือข่ายความปลอดภัยไซเบอร์ post-quantum/digital-identity ที่บริษัทวางแผนขยายไปถึง 100 ดวงภายในปี 2033 — ต่อยอดจากดาวเทียมพันธมิตร 21 ดวงที่ผ่านการทดสอบแล้วตั้งแต่ปี 2023 ต่างจากหุ้น turbo ส่วนใหญ่ ความเสี่ยงด้าน survival ของหุ้นนี้สะอาดจริง: SEALSQ ปิด Q1 2026 ด้วยเงินสดและเงินลงทุนระยะสั้น $525M+ และไม่มีหนี้เลย หนุนหลังด้วยการระดมทุน registered direct $125M ที่ราคา $4.11/หุ้นใน มี.ค. 2026 ซึ่งนักวิเคราะห์ส่วนใหญ่มองว่า accretive เมื่อดูผลตอบแทนหุ้นหลังระดมทุน catalystType ที่นี่คือ product_launch ซึ่งเป็น Tier 1 ในข้อมูล turbo skill-feedback (n=2 — ใช้เป็นบริบทเท่านั้น ไม่ใช้ปรับขนาด position ขึ้นหรือลง) จุดแข็งจริงคืองบดุลที่สะอาด: หมายความว่าหุ้นนี้รอดได้แม้การปล่อยดาวเทียมจะล่าช้าหรือไตรมาสอ่อนแอ โดยไม่ต้องระดมทุนแบบ distressed ซึ่งหาได้ยากใน lane นี้",
+      "priceNote": "เทรดช่วง $2 ต้นๆ ห่างจาก 52-week high $8.71 มาก แต่สูงกว่า 52-week low $1.99 ลงมาแล้ว ~44% ในรอบปีทั้งที่รายได้ H1 2026 โต 131% YoY — หุ้นที่ยังเทรดตาม narrative กลุ่ม quantum และการปล่อยดาวเทียม QSOC ใน Q4 2026 มากกว่าพื้นฐานปัจจุบัน ปิดตลาด 28 ก.ย. 2026",
+      "scoreLabel": "Moonshot",
+      "catalysts": [
+        { "name": "ปล่อยดาวเทียม QSOC ดวงแรก (SpaceX)", "description": "ดาวเทียม Quantum Spatial Orbital Cloud ดวงแรกของ SEALSQ — โหนดแรกของเครือข่ายความปลอดภัยไซเบอร์ post-quantum, digital identity และ quantum randomness จากอวกาศ — วางแผนปล่อยผ่านภารกิจ SpaceX เป้าหมายบริษัทคือขยายไปถึง 100 ดวงภายในปี 2033" },
+        { "name": "ขยาย Quantum Highway — Chicago / EeroQ Corridor", "description": "SEALSQ ขยาย Quantum Highway เป็นเก้า hub เชื่อมโยง La Línea, Murcia, Toulouse, Meyreuil, Grenoble, Geneva, Lausanne และศูนย์สวิสในอนาคต ต่อขยาย corridor quantum ไปถึง Chicago ผ่านพันธมิตร EeroQ ส่วนหนึ่งของแผน 'Quantum Made in USA' ก่อนการปล่อย QSOC" }
+      ],
+      "risks": [
+        "การปล่อยดาวเทียม QSOC ดวงแรกเป็นแค่แผนใน Q4 2026 ผ่านภารกิจ SpaceX — ยังไม่มีวันที่ยืนยันชัดเจน การเลื่อนไปปี 2027 เป็นไปได้จริงสำหรับการปล่อยดาวเทียมแบบใหม่ครั้งแรก",
+        "ขาดทุนสุทธิเพิ่มเป็น $27.8M ใน H1 2026 จาก $20.0M ปีก่อนหน้า — บริษัทยังขาดทุนหนัก และรายได้ H1 2026 ที่ $11.2M เล็กมากเทียบกับ market cap ~$526M",
+        "หุ้นหมุนเวียนเพิ่มขึ้น ~16.7% ตั้งแต่ ธ.ค. 2025 (จาก 191.5M เป็น 223.4M หุ้น) จากการระดมทุนต่อเนื่อง การระดมทุน $125M ที่ $4.11 เมื่อ มี.ค. 2026 นักวิเคราะห์มองว่า accretive จากผลตอบแทนหุ้นหลังระดมทุน แต่ dilution เพิ่มเติมเพื่อสนับสนุนดาวเทียม/Quantum Fund เป็นลักษณะโครงสร้างของโมเดลธุรกิจ ไม่ใช่ความเสี่ยงครั้งเดียวจบ",
+        "เงินสด $525M+ ส่วนใหญ่อยู่ในเงินลงทุนเชิงกลยุทธ์และกองทุน (EeroQ, Quobly, IC'ALPS, ColibriTD, Quantix, WeCan Group — ลงทุนไปแล้ว ~$30M ใน FY2025 ขยาย Quantum Fund เป็น $200M) มากกว่าการดำเนินงาน QSOC/QS7001 ของ SEALSQ เอง — งบดุลส่วนหนึ่งจึงเป็นการเดิมพันกับบริษัทอื่น ไม่ใช่ moat ของตัวเอง",
+        "ช่วง 52 สัปดาห์ $1.99-$8.71 แสดงว่าหุ้นเคยวิ่งแรงและร่วงกลับมาแล้วครั้งหนึ่งในรอบนี้ sentiment กลุ่ม quantum ที่ผันผวนสูง (RGTI, IONQ, QBTS เคลื่อนไหวสัมพันธ์กัน) อาจขยับ LAES ได้โดยไม่ต้องมีข่าวเฉพาะบริษัท"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed ขึ้นดอกเบี้ยแบบไม่คาดคิดเมื่อ 16 ก.ย. 2026 — ขึ้น 25bp เป็น 3.75-4.00% ครั้งแรกนับจาก 2023 — dot plot บ่งชี้จะขึ้นอีกครั้งในปี 2026 และลดดอกเบี้ยช้าลงในปี 2027-28 การประชุมถัดไป 28 ต.ค. 2026",
+        "inflationNote": "Core PCE ยังอยู่ราว 3.3% YoY — การขึ้นดอกเบี้ยแบบเซอร์ไพรส์สะท้อนว่า Fed ให้ความสำคัญกับเงินเฟ้อมากกว่าความอ่อนแอของตลาดแรงงานก่อนหน้านี้",
+        "sectorImpact": "หุ้นเซมิคอนดักเตอร์ quantum/post-quantum เป็นเรื่องราวการเติบโตระยะยาว — ดอกเบี้ยที่สูงต่อเนื่องกดดัน multiple ที่ตลาดยอมจ่ายให้รายได้ปี FY26 ที่ยังเล็กมาก ($11.2M H1 2026) เทียบกับ market cap แต่เงินสด $525M+ และไม่มีหนี้ของ SEALSQ ทำให้ไม่ต้องระดมทุนแบบ distressed เหมือนคู่แข่งที่เงินสดจำกัดภายใต้เงื่อนไขการเงินที่ตึงตัว",
+        "summary": "MEDIUM — การขึ้นดอกเบี้ย 16 ก.ย. กดดัน multiple หุ้นเติบโตระยะยาวโดยรวม และความสัมพันธ์สูงกับกลุ่ม quantum (เคลื่อนไหวตาม RGTI/IONQ/QBTS) ทำให้ภาวะ risk-off อาจกระทบหุ้นได้โดยไม่ต้องมีข่าวเฉพาะบริษัท แต่งบดุลที่สะอาดช่วยลดความเสี่ยงด้านการระดมทุนที่จะทำให้ระดับนี้กลายเป็น HIGH"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — งบดุลที่สะอาด ($525M+ เงินสด ไม่มีหนี้) หนุนหลัง catalyst แบบ binary ที่ชัดเจนใน Q4 2026 (ปล่อยดาวเทียม QSOC ดวงแรกผ่าน SpaceX) product_launch เป็น Tier 1 ใน turbo skill-feedback (n=2 ใช้เป็นบริบทเท่านั้น ไม่ใช้ปรับขนาด position) ผลตอบแทนเฉลี่ย ณ จุด catalyst ของ turbo lane วัดได้ -13.7% (n=19) — อย่าไล่ราคาที่ราคารายงาน โซนย่อ (Entry 2) คือจุดเข้าที่แนะนำ ตำแหน่ง Moonshot — สูงสุด 4% เนื่องจากโปรไฟล์ survival ที่สะอาดผิดปกติสำหรับ lane นี้",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — อย่าไล่ราคา ไม่ใช่จุดเข้าที่แนะนำตามสถิติ (ดู verdict)", "timing": "ตอนนี้ (starter เท่านั้น)" },
+          { "note": "โซนย่อใกล้ 52-week low ($1.99) — จุดเข้าที่แนะนำตามผลตอบแทนเฉลี่ย ณ จุด catalyst ของ turbo lane ที่ -13.7% (n=19)", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงหนัก — เข้าเฉพาะถ้า thesis ยังไม่เปลี่ยน งบดุลที่สะอาดจำกัดความเสี่ยงเป็นศูนย์จริง แต่ sentiment กลุ่ม quantum ที่ผันผวนสูงอาจร่วงเกินจริงได้", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Base — ดาวเทียม QSOC ถึงวงโคจรตามแผนภารกิจ SpaceX และรายได้เริ่มต้นเป็นไปตามเป้า FY26 ที่ 50-100% YoY สมมติฐานกรอบเวลา ~4-6 เดือนผ่านการปล่อยดาวเทียม Q4 2026 และข้อมูลหลังปล่อยช่วงแรก ไม่ใช่หน้าต่าง 30 วันของ North Star" },
+        "tp2": { "note": "Bull — ปล่อยสำเร็จบวกรายได้เกินเป้าอย่างมีนัยสำคัญ ดันหุ้นเข้าใกล้และเกินเป้าเฉลี่ยนักวิเคราะห์ $5.88" },
+        "tp3": { "note": "Moon — QSOC กลายเป็น narrative แพลตฟอร์มความปลอดภัยวงโคจร post-quantum อ้างอิง กลุ่ม quantum re-rate ทั้งกลุ่มแบบ RGTI/IONQ บวกการปล่อยดาวเทียมและสัญญาเชิงพาณิชย์เพิ่มเติม" },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE โดยรวมของ turbo lane (-24.1%, n=41) — product_launch เองมีแค่ n=2 ในข้อมูล skill-feedback (บางเกินไปสำหรับ bar เฉพาะประเภท) จึงใช้ตัวเลขทั้ง lane เป็นตัวอ้างอิง กว้างขึ้นเล็กน้อยเพราะเป็น catalyst แบบ binary hardware launch",
+          "hardNote": "เขต drawdown ลึก — การหลุดระดับนี้บ่งชี้ว่าการปล่อยดาวเทียมล้มเหลว/เลื่อนมาก หรือกลุ่ม quantum ทั้งกลุ่ม de-rate โดยไม่เกี่ยวกับการดำเนินงานของบริษัท",
+          "rrNote": "Entry 1 ถึง tight stop เทียบกับ TP2 (กรณี Bull)",
+          "rrWarning": "ต่ำกว่าเป้า 5:1 ของ turbo เล็กน้อย — stop ตามความกว้างทั้ง lane ทำให้ R/R แคบลงบ้าง แต่งบดุลที่สะอาดสนับสนุนให้ตั้งขนาด position ที่ปลายสูงของช่วง 2-5% แทนที่จะบีบ stop ให้แคบเทียม"
+        }
+      },
+      "estimateDates": [
+        { "event": "ปล่อยดาวเทียม QSOC ดวงแรก (SpaceX)", "note": "ยังไม่มีวันที่ยืนยันชัดเจน — เป็นกรอบเวลาตามแผนของบริษัท" }
+      ],
+      "catalystSpot": {
+        "preRunup": "product_launch เป็น Tier 1 ในข้อมูล turbo skill-feedback (n=2 — ใช้เป็นบริบทเท่านั้น ไม่ใช้ปรับขนาด position) ช่วงก่อนการปล่อยสำหรับ milestone ฮาร์ดแวร์ที่ชัดเจน (ดาวเทียมถึงวงโคจรครั้งแรก ชิปส่งมอบครั้งแรก) ในกลุ่ม space/semis มักมี momentum สร้างตัวเล็กน้อยในสัปดาห์สุดท้ายก่อนวันปล่อยชัดเจน แล้วขยับแรงขึ้นเมื่อยืนยันการปล่อยสำเร็จ",
+        "preRunupTiming": "2-4 สัปดาห์สุดท้ายก่อนวันปล่อยที่ยืนยันแล้ว (pattern กลุ่ม ไม่เฉพาะ LAES — ยังไม่มีวันที่ยืนยัน)",
+        "postWin": { "note": "product_launch มีแค่ n=2 ในข้อมูล turbo (Tier 1 ใช้เป็นบริบทเท่านั้น) จึงใช้ precedent กลุ่ม quantum แทน: Rigetti Computing (RGTI) วิ่งขึ้นถึง 545% ในรอบปีถึง ธ.ค. 2025 จากการยืนยันการลงทุน quantum ของรัฐบาลกลาง และ IonQ (IONQ) เพิ่มขึ้น 50%+ จากปลาย มี.ค. 2026 จากข่าวการลงทุนรัฐบาลกลางบวกพันธมิตร NVIDIA Accelerated Quantum Research Center ทั้งสองแสดงว่าหุ้นกลุ่ม quantum re-rate แรงเมื่อมีเหตุการณ์ยืนยันที่จับต้องได้ แบบเดียวกับที่การปล่อย QSOC สำเร็จจะเป็นให้ LAES" },
+        "postLose": { "note": "ยังไม่มี precedent การปล่อยล้มเหลวเฉพาะ LAES/QSOC เพราะยังไม่เคยปล่อยครั้งแรก ตัวเลขนี้อ้างอิง medianMAE โดยรวมของ turbo lane (-24.1%, n=41) เพราะ product_launch เองบางเกินไป (n=2) ที่จะตั้ง bar เฉพาะตัว" },
+        "spotSizing": { "reason": "งบดุลที่สะอาด ($525M+ เงินสด ไม่มีหนี้ ประวัติ dilution ที่นักวิเคราะห์มองว่า accretive) สนับสนุนขนาด position ที่ปลายสูงของช่วง 2-5% ของ turbo แม้ product_launch จะเป็น Tier 1/บริบทเท่านั้น (n=2) — ขนาด position นี้ขับเคลื่อนด้วยความสะอาดของ survival ไม่ใช่ความมั่นใจใน catalyst type" },
+        "stopPreCatalyst": { "note": "กว้างกว่า medianMAE โดยรวมของ turbo lane (-24.1%, n=41) — การหลุดระดับนี้ก่อนหน้าต่างการปล่อยแสดงว่าตลาดกำลังราคาความเสี่ยงด้านการดำเนินงาน ไม่ใช่ความผันผวนก่อนปล่อยปกติ" },
+        "stopPostCatalyst": { "note": "หากการปล่อย QSOC เลื่อนไปมากถึง H2 2027+ หรือล้มเหลวเลย หรือเป้ารายได้ FY26 (50-100% YoY) ถูกปรับลด ให้ออก — นั่นคือ narrative การเติบโตพัง ไม่ใช่ noise หลัง catalyst ปกติ" }
+      },
+      "comparableCases": [
+        { "note": "แสดงขนาดการ re-rate ของหุ้น quantum small-cap จากการยืนยันการลงทุนภาครัฐ/เอกชนที่จับต้องได้ในช่วงเวลาต่อเนื่อง — precedent ที่เกี่ยวข้องกับสิ่งที่การปล่อยดาวเทียม QSOC สำเร็จครั้งแรกบวก narrative 'Quantum Made in USA' อาจทำให้ LAES แม้ตัวขับเคลื่อน (momentum กลุ่ม quantum โดยรวม ไม่ใช่ event ปล่อยครั้งเดียว) จะต่างกัน" },
+        { "note": "แสดง pattern ของหุ้นกลุ่ม quantum ที่วิ่งขึ้นจากข่าวการยืนยัน/พันธมิตรที่จับต้องได้ มากกว่าการเก็งกำไรล้วนๆ — dynamic แบบเดียวกับที่การปล่อย QSOC สำเร็จและยืนยันวงโคจรแล้วจะเป็นสำหรับ SEALSQ โดยเฉพาะ" }
+      ]
+    }
+  }
+}

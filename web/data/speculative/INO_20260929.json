@@ -1,0 +1,196 @@
+{
+  "ticker": "INO",
+  "companyName": "Inovio Pharmaceuticals, Inc.",
+  "companyDescription": "DNA immunotherapy · INO-3107 for recurrent respiratory papillomatosis — a single-asset PDUFA bet on Oct 30 (31 days out), now past a clean late-cycle review AND all pre-licensure inspections, with label negotiations underway; the Accelerated Approval eligibility question is still unresolved and cash runway into late Q1 2027 is the real clock",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-09-29T12:00:00.000Z",
+  "price": 1.17,
+  "priceChange": -0.85,
+  "priceNote": "$1.17, -0.85% today — up +51.9% since the Aug 13 report's $0.77 on real regulatory de-risking: the late-cycle review completed with no new issues, all pre-licensure inspections finished (one minor observation, response submitted), and label negotiations began in September. The stock is now ABOVE the $0.95 July offering price for the first time since that raise, so the warrant overhang caps upside less than before — but there's also less margin of safety left if the Oct 30 read goes badly. This run means the old report's Base target ($1.40, +81.8% from $0.77) now offers only +19.7% remaining — a ~62pp base-decay distortion that this refresh exists to correct.",
+  "marketCap": "$121M",
+  "sector": "Healthcare / Biotechnology (Rare Disease)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Moonshot",
+  "score": 54,
+  "summary": "The regulatory picture has cleanly improved since Aug 13: the FDA completed its late-cycle review of the INO-3107 BLA and finished all scheduled pre-licensure inspections (clinical, manufacturing, in-house testing, delivery device) with only one observation, already addressed; label negotiations began in September, and commercial prep continues with Syneos Health and MSLs engaging customers. The open question is unchanged — the Accelerated Approval eligibility issue flagged in the file acceptance letter still has no direct FDA comment as of the Sep 11 H.C. Wainwright conference. What's new and worth flagging honestly: a fresh survival check trips for the first time on this name. Cash funds operations only into late Q1 2027 (~5-6 months from today), and Inovio filed an active S-3 shelf on Jul 2, 2026 that it already tapped once for the $20M July offering — a follow-on raise before or shortly after the Oct 30 PDUFA is a real possibility. The +52% run since Aug 13 has already priced in much of the de-risking, so less reward is left on approval than the last report implied. This remains a single-asset binary at a ~$121M market cap — sized as ค่าขนม regardless of how clean the file looks.",
+  "catalysts": [
+    {
+      "icon": "⚖️",
+      "name": "INO-3107 PDUFA Decision",
+      "description": "FDA target action date for INO-3107 in adults with recurrent respiratory papillomatosis. Late-cycle review is complete and all pre-licensure inspections (clinical, manufacturing, in-house testing, delivery device facility) have finished with only one observation, already addressed; label negotiations began September 2026. This is the whole thesis. Note: the Oct 27-28 FOMC meeting lands just 2 days before this PDUFA, adding macro noise right ahead of the binary.",
+      "urgencyLabel": "31 DAYS",
+      "dateBadge": "Oct 30, 2026",
+      "catalystDate": "2026-10-30",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🤝",
+      "name": "Accelerated-Approval Eligibility Meeting",
+      "description": "The FDA's file acceptance letter flagged a potential review issue on whether INO-3107 qualifies under the Accelerated Approval pathway. As of the Sep 11, 2026 H.C. Wainwright conference, the FDA still had not directly commented on eligibility despite Inovio raising it; the company continues to believe it meets the requirements. No date published — genuinely undated, ahead of the Oct 30 PDUFA.",
+      "urgencyLabel": "BEFORE PDUFA",
+      "dateBadge": "~Oct 2026",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "⚠️ SURVIVAL: Cash funds operations only into late Q1 2027 (~5-6 months from today), and Inovio maintains an active shelf registration (S-3 filed Jul 2, 2026, already tapped once for the $20M July offering) — a follow-on raise before or shortly after the Oct 30 PDUFA is a real possibility, not a tail risk, though a clean approval would likely let any raise price well above today's level rather than at a distressed discount",
+    "Single-asset binary at a ~$121M market cap — a CRL removes essentially the entire equity story, and after the +52% run since Aug 13 there is more value at risk on a bad outcome than the last report priced in",
+    "The Accelerated Approval eligibility question flagged in the file acceptance letter is still unresolved as of the Sep 11 conference — the FDA has not directly addressed it despite Inovio raising it, and it remains the specific issue most likely to produce an adverse label or delay on Oct 30",
+    "Dilution is the standing pattern, not a tail risk: the Jul 2026 $20M offering (21.05M shares plus warrants for up to 42.1M more, priced at $0.95) took the stock down ~30% at the time, and average shares outstanding have more than doubled YoY (81.6M vs 38.8M in Q2 2025)",
+    "31 days to the PDUFA is still a long carry through an FDA process with a known open question, and the Oct 27-28 FOMC meeting lands 2 days before the decision, adding macro noise right ahead of the binary"
+  ],
+  "estimateDates": [
+    { "event": "INO-3107 PDUFA Decision", "dateRange": "Oct 30, 2026", "note": "Binary — approve vs CRL, now past a clean late-cycle review and completed inspections", "est": "approval = first commercial product", "highlight": "yellow" },
+    { "event": "Accelerated-Approval Eligibility", "dateRange": "~Oct 2026", "note": "Still no direct FDA comment as of Sep 11; no date published", "est": "informal meeting", "highlight": "blue" },
+    { "event": "FOMC Meeting", "dateRange": "Oct 27-28, 2026", "note": "Lands 2 days before the PDUFA — macro overlay on the binary week", "est": "n/a", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -63.2, "price": 0.43 },
+    { "label": "Base", "color": "yellow", "pct": 36.8, "price": 1.60 },
+    { "label": "Bull", "color": "green", "pct": 122.2, "price": 2.60 },
+    { "label": "Moon", "color": "purple", "pct": 259.0, "price": 4.20 }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "The Fed hiked 25bp to 3.75-4.00% on Sep 16, 2026 (12-0), a hawkish surprise despite the earlier weak Jul payrolls print. Next FOMC is Oct 27-28, 2026 — just 2 days before the Oct 30 PDUFA, adding a macro event directly into the binary week. Higher rates raise up from LOW (Aug 13 report) given the newly-flagged survival risk: any follow-on raise now prices against a tighter financing backdrop.",
+    "inflationNote": "Aug CPI (released Sep 11): headline 3.4% YoY, core 2.4% YoY (cooler YoY), but MoM ran hot at +0.4% headline / +0.3% core on a gasoline spike — the kind of print that keeps the Fed hawkish and financing costs elevated for a cash-constrained small-cap biotech.",
+    "sectorImpact": "A single-asset PDUFA outcome still dominates anything macro does to a ~$121M biotech. But with the survival check now tripped (runway to late Q1 2027, active shelf already used once), the Sep 16 hike and the Oct 27-28 FOMC sitting right before the PDUFA both matter more than they did in the Aug 13 report.",
+    "summary": "MEDIUM — up from LOW in the last report. The Oct 30 decision still dominates the price, but the freshly-identified survival flag means financing conditions (a real hike just landed, another FOMC lands 2 days pre-PDUFA) are no longer a background factor."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 1.17, "note": "Current price — up +52% since Aug 13 on clean regulatory progress. Per the turbo entry rule, median return from report-price anchor to catalyst is -13.7% (n=19); not preferred as the first move", "timing": "ค่าขนม only" },
+      { "label": "Entry 2", "level": 0.95, "rangeMax": 1.05, "note": "Pullback toward the July offering price — preferred per the -13.7% anchor-to-catalyst entry rule, better risk into a 31-day carry", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 0.80, "note": "Deep dip back toward pre-de-risking levels — would suggest a bad signal from the AA eligibility question or a surprise raise", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 1.60, "pct": 36.8, "note": "Base — standard-pathway approval at the Oct 30 PDUFA readout itself (31 days out); the specific driver is FDA approval as a discrete binary event following a clean late-cycle review and fully-passed inspections, materially de-risked versus the pooled 30d lane baseline (P75 12.2% / P90 25.9%) which mostly reflects continuous, non-binary catalysts" },
+    "tp2": { "price": 2.60, "pct": 122.2, "note": "Bull — approval plus Accelerated Approval eligibility confirmed" },
+    "tp3": { "price": 4.20, "pct": 259.0, "note": "Moon — approval, AA pathway, and a credible launch ramp echoing the RETA template · 2027", "moon": true },
+    "stopLoss": {
+      "tight": 0.84, "tightPct": -28.2, "tightNote": "Wider than the fda_decision catalystType's medianMAE (-18.4%, n=10) per the stop rule — a tighter stop would risk firing on ordinary pre-PDUFA volatility",
+      "hard": 0.68, "hardPct": -41.9, "hardNote": "Below the deep-dip level; would imply the market is pricing a CRL or a distressed raise",
+      "riskReward": "2.9 : 1",
+      "rrNote": "Entry 1 to hard stop vs TP2 (Bull)",
+      "rrWarning": "⚠️ Below the 5:1 turbo target — a CRL gaps straight through any stop overnight, and this is now compounded by the newly-flagged survival risk (runway to late Q1 2027, active shelf already used once). Treat position sizing, not R/R, as the real risk control. True asymmetry sits in the Moon case (+259.0% vs -41.9% hard stop ≈ 6.2:1)."
+    },
+    "verdict": "Late-cycle review and all pre-licensure inspections are now clean, which genuinely improves the odds — but the stock already ran +52% pricing much of that in, and a fresh survival check trips for the first time (runway to late Q1 2027, active shelf tapped once already). Turbo's entry rule reads -13.7% median return from report-price to catalyst (n=19), so Entry 1 is not preferred; prefer the $0.95-$1.05 zone. 2% ค่าขนม sizing — at the floor of the 2-5% band given the survival flag and single-asset concentration.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "The +52% move since the Aug 13 report (from $0.77 to $1.17) on the clean late-cycle review and completed inspections IS the pre-run here — unusually early and news-driven rather than the classic 1-2 week pre-PDUFA drift, which likely still has room to build into Oct 30. fda_decision is a Tier-2 LEADER catalystType (medianExcessVsBenchPct +9.3pp vs the overall +2pp, gap +7.3, n=10) — a genuine tailwind worth citing.",
+    "preRunupTiming": "Since mid-Sep 2026 on regulatory de-risking news; the classic 1-2 week pre-PDUFA drift has not yet begun",
+    "preRunupPct": "+51.9% since Aug 13 (de-risking-driven, ahead of the classic pre-PDUFA drift)",
+    "postWin": {
+      "avgPct": 200,
+      "range": "+100% to +300%",
+      "note": "Sub-$200M single-asset biotechs re-rate violently on approval because the entire equity is the one product. RETA (Feb 2023) gained 199% on its approval — the structural template, though RETA was a larger company with a cleaner file. fda_decision is also this lane's strongest Tier-2 catalystType on a relative basis (+9.3pp excess vs benchmark, n=10), a real tailwind for this setup.",
+      "exampleDate": "Feb 2023"
+    },
+    "postLose": {
+      "avgPct": -55,
+      "range": "-40% to -70%",
+      "note": "A CRL on a single-asset name with the survival flag now tripped (runway to late Q1 2027, shelf already used once) forces an immediate dilutive raise, so the drawdown compounds. INO's own -30% on the Jul 2026 offering shows how the market prices dilution here even without a CRL; a CRL-driven raise would be worse, and SRPT's mixed -11% reaction to an Accelerated Approval grant shows even a positive regulatory outcome can disappoint if the label or conditions fall short.",
+      "exampleDate": "Jul 2026"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "Held at the floor of the 2-5% turbo band. fda_decision is a Tier-2 leader (+9.3pp vs overall +2, n=10) — a real tailwind — but the freshly-identified survival flag (runway to late Q1 2027, active shelf already tapped once) and single-asset concentration keep sizing conservative despite the favorable catalyst-type read and the cleaner file."
+    },
+    "stopPreCatalyst": { "pct": -28.2, "price": 0.84, "note": "A break below ~$0.84 ahead of Oct 30 would suggest the AA eligibility question or label negotiations went badly" },
+    "stopPostCatalyst": { "pct": -45, "note": "On a CRL, exit into the first liquidity — the follow-on raise is now more urgent given the tighter runway math, and the re-file clock runs in years" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "RETA",
+      "event": "FDA approval of lead asset in a rare disease",
+      "date": "Feb 2023",
+      "movePct": 199,
+      "days": 2,
+      "outcome": "good",
+      "note": "The structural template for a single-asset rare-disease approval re-rate, and the basis for the Bull/Moon cases. Caveat: RETA was materially larger with no open pathway question."
+    },
+    {
+      "ticker": "SRPT",
+      "event": "Accelerated approval granted despite advisory controversy",
+      "date": "Jun 2023",
+      "movePct": -11,
+      "days": 2,
+      "outcome": "mixed",
+      "note": "Directly relevant to INO's open Accelerated Approval question: an AA grant does not guarantee a positive stock reaction if the label or conditions disappoint."
+    },
+    {
+      "ticker": "INO",
+      "event": "$20M dilutive offering priced at $0.95",
+      "date": "Jul 2026",
+      "movePct": -30,
+      "days": 2,
+      "outcome": "bad",
+      "note": "Same ticker, the realistic non-PDUFA downside path — the S-3 shelf behind that offering is the same one still active today, and the reason the survival flag is now tripped."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Inovio at H.C. Wainwright conference: FDA review and launch loom — late-cycle review complete, all pre-licensure inspections finished, label negotiations begin September",
+    "url": "https://www.investing.com/news/transcripts/inovio-at-hc-wainwright-conference-fda-review-and-launch-loom-93CH-4897818",
+    "date": "Sep 11, 2026"
+  },
+  "sources": [
+    "https://www.investing.com/news/transcripts/inovio-at-hc-wainwright-conference-fda-review-and-launch-loom-93CH-4897818",
+    "https://www.fool.com/earnings/call-transcripts/2026/08/12/inovio-ino-q2-2026-earnings-call-transcript/",
+    "https://www.gurufocus.com/news/9029857/inovio-pharmaceuticals-inc-ino-q2-2026-earnings-call-highlights-ino3107-on-track-for-pdufa-as-cash-runway-extends-into-2027",
+    "https://finance.yahoo.com/sectors/healthcare/articles/inovio-pharmaceuticals-shareholders-back-board-180245147.html",
+    "https://stockanalysis.com/stocks/ino/",
+    "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001055726&type=S-3&dateb=&owner=include&count=40",
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+    "https://www.bls.gov/news.release/cpi.nr0.htm",
+    "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "ภาพ regulatory ดีขึ้นจริงตั้งแต่รายงาน 13 ส.ค.: FDA ทำ late-cycle review ของ BLA INO-3107 เสร็จ และตรวจสอบ pre-licensure inspection ครบทุกจุด (clinical, การผลิต, การทดสอบในบริษัท, โรงงานอุปกรณ์นำส่งยา) โดยมี observation เดียว ซึ่งแก้ไขแล้ว label negotiations เริ่ม ก.ย. และการเตรียมพาณิชย์เดินหน้าต่อกับ Syneos Health และ MSL ที่เริ่มติดต่อลูกค้า คำถามที่ยังค้างเหมือนเดิม — ประเด็น Accelerated Approval eligibility ในจดหมายตอบรับแฟ้ม ยังไม่มีความเห็นตรงจาก FDA ณ การประชุม H.C. Wainwright 11 ก.ย. สิ่งใหม่ที่ต้องพูดตรงๆ: การเช็ค survival รอบนี้ trip เป็นครั้งแรกสำหรับหุ้นตัวนี้ เงินสดพอถึงปลาย Q1 2027 เท่านั้น (~5-6 เดือนจากวันนี้) และ Inovio มี S-3 shelf ที่ยื่นไว้ 2 ก.ค. 2026 ซึ่งใช้ไปแล้วครั้งหนึ่งสำหรับการเพิ่มทุน $20M เดือน ก.ค. — การระดมทุนรอบใหม่ก่อนหรือหลัง PDUFA 30 ต.ค. ไม่นานเป็นไปได้จริง การวิ่งขึ้น +52% ตั้งแต่ 13 ส.ค. ได้ price การ de-risk ไปมากแล้ว เหลือ upside จากการอนุมัติน้อยกว่าที่รายงานก่อนบอกไว้ ยังเป็น binary สินทรัพย์เดียวที่ market cap ~$121M — size แบบ ค่าขนม ไม่ว่าไฟล์จะดูสะอาดแค่ไหน",
+      "priceNote": "$1.17 ลดลง 0.85% วันนี้ — ขึ้นมา +51.9% นับจากรายงาน 13 ส.ค. ที่ $0.77 จากการ de-risk เชิง regulatory จริง: late-cycle review เสร็จโดยไม่มีประเด็นใหม่ pre-licensure inspection ครบทุกจุด (observation เดียว แก้ไขแล้ว) และเริ่ม label negotiations ใน ก.ย. ตอนนี้หุ้นอยู่ เหนือ ราคาเสนอขาย $0.95 ของเดือน ก.ค. เป็นครั้งแรกนับจากการเพิ่มทุนนั้น ทำให้ warrant overhang กดเพดาน upside น้อยลง — แต่ก็แปลว่ามี margin of safety เหลือน้อยลงถ้าผล 30 ต.ค. ออกมาไม่ดี การวิ่งนี้ทำให้เป้า Base เดิมของรายงานก่อน ($1.40 = +81.8% จาก $0.77) เหลือ upside จริงแค่ +19.7% — decay ราว 62pp ซึ่งเป็นเหตุผลที่การ refresh รอบนี้ต้องแก้ไข",
+      "scoreLabel": "Moonshot",
+      "catalysts": [
+        { "name": "ผลตัดสิน PDUFA ของ INO-3107", "description": "วันเป้าหมาย FDA สำหรับ INO-3107 ในผู้ใหญ่ที่เป็น recurrent respiratory papillomatosis · late-cycle review เสร็จและ pre-licensure inspection ครบทุกจุด (clinical, การผลิต, ทดสอบในบริษัท, โรงงานอุปกรณ์นำส่งยา) มี observation เดียว แก้ไขแล้ว label negotiations เริ่ม ก.ย. 2026 นี่คือ thesis ทั้งหมด หมายเหตุ: FOMC 27-28 ต.ค. อยู่ก่อน PDUFA แค่ 2 วัน เพิ่ม macro noise ในสัปดาห์ binary" },
+        { "name": "ประชุมเรื่องคุณสมบัติ Accelerated Approval", "description": "จดหมายตอบรับแฟ้มของ FDA ตั้งประเด็นว่า INO-3107 เข้าเกณฑ์เส้นทาง Accelerated Approval หรือไม่ ณ การประชุม H.C. Wainwright 11 ก.ย. 2026 FDA ยังไม่แสดงความเห็นตรงแม้ Inovio จะยกประเด็นนี้ขึ้นมา บริษัทยังเชื่อว่าเข้าเกณฑ์ ยังไม่ประกาศวัน — ไม่มีวันจริง อยู่ก่อน PDUFA 30 ต.ค." }
+      ],
+      "risks": [
+        "⚠️ SURVIVAL: เงินสดพอถึงปลาย Q1 2027 เท่านั้น (~5-6 เดือนจากวันนี้) และ Inovio มี shelf registration (S-3 ยื่น 2 ก.ค. 2026) ที่ใช้ไปแล้วครั้งหนึ่งสำหรับการเพิ่มทุน $20M เดือน ก.ค. — การระดมทุนรอบใหม่ก่อนหรือหลัง PDUFA 30 ต.ค. ไม่นานเป็นไปได้จริง ไม่ใช่ tail risk แม้การอนุมัติที่สะอาดน่าจะทำให้การระดมทุนใดๆ ราคาสูงกว่าวันนี้มาก ไม่ใช่ discount แบบ distressed",
+        "binary สินทรัพย์เดียวที่ market cap ~$121M — ถ้า CRL คือ equity story หายไปเกือบทั้งหมด และหลังวิ่ง +52% นับจาก 13 ส.ค. มูลค่าที่เสี่ยงหากผลออกมาแย่มากกว่าที่รายงานก่อนสะท้อนไว้",
+        "ประเด็นคุณสมบัติ Accelerated Approval ที่ตั้งไว้ในจดหมายตอบรับยังไม่จบ ณ การประชุม 11 ก.ย. — FDA ยังไม่แสดงความเห็นตรงแม้ Inovio จะยกขึ้นมา และเป็นประเด็นที่มีโอกาสสร้าง label ลบหรือความล่าช้าในวันที่ 30 ต.ค. มากที่สุด",
+        "การ dilute เป็นรูปแบบประจำ ไม่ใช่ความเสี่ยงหางแถว: การเพิ่มทุน $20M เมื่อ ก.ค. 2026 (21.05M หุ้น บวก warrant อีกไม่เกิน 42.1M ราคา $0.95) ทำให้หุ้นร่วงราว 30% ในตอนนั้น และจำนวนหุ้นเฉลี่ยเพิ่มขึ้นกว่าเท่าตัวเทียบปีก่อน (81.6M เทียบ 38.8M ใน Q2 2025)",
+        "อีก 31 วันถึง PDUFA ยังเป็นการแบกยาวผ่านกระบวนการ FDA ที่มีคำถามค้างอยู่ และ FOMC 27-28 ต.ค. อยู่ก่อนผลตัดสินแค่ 2 วัน เพิ่ม macro noise ในสัปดาห์ binary"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed ขึ้นดอกเบี้ย 25bp เป็น 3.75-4.00% เมื่อ 16 ก.ย. 2026 (มติ 12-0) เป็น hawkish surprise ทั้งที่ตัวเลขจ้างงาน ก.ค. อ่อนแอก่อนหน้านี้ FOMC ถัดไป 27-28 ต.ค. 2026 — ก่อน PDUFA 30 ต.ค. แค่ 2 วัน เพิ่ม macro event เข้าไปในสัปดาห์ binary โดยตรง ดอกเบี้ยที่สูงขึ้นทำให้ risk ระดับปานกลางขึ้นจาก LOW ในรายงาน 13 ส.ค. เพราะ survival risk ที่เพิ่งถูกระบุใหม่: การระดมทุนรอบใหม่จะเจอเงื่อนไขการเงินที่ตึงตัวกว่าเดิม",
+        "inflationNote": "CPI ส.ค. (เผยแพร่ 11 ก.ย.): headline 3.4% YoY, core 2.4% YoY (เย็นลงเทียบ YoY) แต่ MoM ร้อนแรงที่ +0.4% headline / +0.3% core จากราคาน้ำมันเบนซินที่พุ่ง — ตัวเลขแบบนี้คือสิ่งที่ทำให้ Fed ยัง hawkish และต้นทุนการเงินสำหรับ biotech หุ้นเล็กที่เงินสดตึงยังสูงอยู่",
+        "sectorImpact": "ผล PDUFA ของสินทรัพย์เดียวยังมีน้ำหนักเหนือกว่าอะไรก็ตามที่ macro จะทำกับ biotech ขนาด ~$121M แต่เมื่อ survival check ถูก trip แล้ว (runway ถึงปลาย Q1 2027 shelf ใช้ไปแล้วครั้งหนึ่ง) การขึ้นดอกเบี้ย 16 ก.ย. และ FOMC 27-28 ต.ค. ที่อยู่ก่อน PDUFA มีน้ำหนักมากกว่าที่รายงาน 13 ส.ค. สะท้อนไว้",
+        "summary": "ปานกลาง — ขึ้นจาก LOW ในรายงานก่อน ผลตัดสิน 30 ต.ค. ยังครอบงำราคาหุ้นเป็นหลัก แต่ survival flag ที่เพิ่งถูกระบุใหม่หมายความว่าเงื่อนไขการเงิน (การขึ้นดอกเบี้ยจริงเพิ่งเกิด อีก FOMC อยู่ก่อน PDUFA 2 วัน) ไม่ใช่ปัจจัยพื้นหลังอีกต่อไป"
+      },
+      "entryStrategy": {
+        "verdict": "late-cycle review และ pre-licensure inspection ทั้งหมดสะอาดแล้ว ซึ่งช่วยเพิ่มโอกาสจริง — แต่หุ้นวิ่งไปแล้ว +52% price การ de-risk ไปมาก และการเช็ค survival รอบนี้ trip เป็นครั้งแรก (runway ถึงปลาย Q1 2027 shelf ใช้ไปแล้วครั้งหนึ่ง) กฎ entry ของ turbo อ่านได้ -13.7% median return จากราคารายงานถึง catalyst (n=19) จึง Entry 1 ไม่ preferred ให้เน้นโซน $0.95-$1.05 แทน size แบบ ค่าขนม 2% — ที่พื้นของ band 2-5% เพราะ survival flag และความเข้มข้นของสินทรัพย์เดียว",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — วิ่งขึ้น +52% นับจาก 13 ส.ค. จากความคืบหน้า regulatory ที่สะอาด ตามกฎ entry ของ turbo median return จากราคารายงานถึง catalyst อยู่ที่ -13.7% (n=19) จึงไม่ใช่ไม้แรกที่ preferred", "timing": "ค่าขนมเท่านั้น" },
+          { "note": "ย่อกลับใกล้ราคาเสนอขาย ก.ค. — preferred ตามกฎ entry -13.7% risk ดีกว่าสำหรับการแบก 31 วัน", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงลึกกลับไปใกล้ระดับก่อน de-risk — แปลว่าสัญญาณลบจากประเด็น AA eligibility หรือมีการเพิ่มทุนกะทันหัน", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Base — อนุมัติผ่านเส้นทางมาตรฐานที่จุดอ่านผล PDUFA 30 ต.ค. เอง (อีก 31 วัน) driver เฉพาะคือการอนุมัติ FDA ในฐานะ binary event ที่ชัดเจน หลัง late-cycle review สะอาดและ inspection ผ่านครบ ซึ่ง de-risk มากกว่าฐาน 30 วันของทั้งเลน (P75 12.2% / P90 25.9%) ที่ส่วนใหญ่สะท้อน catalyst ต่อเนื่องไม่ใช่ binary" },
+        "tp2": { "note": "Bull — อนุมัติบวกยืนยันคุณสมบัติ Accelerated Approval" },
+        "tp3": { "note": "Moon — อนุมัติ ได้เส้นทาง AA และมี launch ramp ที่น่าเชื่อถือ ตามแบบ RETA · 2027", "moon": true },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE ของ catalystType fda_decision (-18.4%, n=10) ตามกฎ stop — stop แคบกว่านี้เสี่ยงโดน noise ปกติก่อน PDUFA",
+          "hardNote": "ต่ำกว่าระดับย่อลึก แปลว่าตลาดกำลัง price CRL หรือการเพิ่มทุนแบบ distressed",
+          "rrNote": "จาก Entry 1 ถึง hard stop เทียบ TP2 (Bull)",
+          "rrWarning": "⚠️ ต่ำกว่าเป้า 5:1 ของ turbo — CRL ทำให้ราคา gap ทะลุ stop ข้ามคืน และตอนนี้ยิ่งซ้อนทับกับ survival risk ที่เพิ่งถูกระบุใหม่ (runway ถึงปลาย Q1 2027 shelf ใช้ไปแล้วครั้งหนึ่ง) ให้ใช้ขนาด position เป็นตัวคุมความเสี่ยงจริง ไม่ใช่ R/R asymmetry แท้จริงอยู่ที่ Moon case (+259.0% เทียบ hard stop -41.9% ≈ 6.2:1)"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลตัดสิน PDUFA INO-3107", "note": "Binary — อนุมัติ vs CRL ผ่าน late-cycle review สะอาดและ inspection ครบแล้ว" },
+        { "event": "คุณสมบัติ Accelerated Approval", "note": "ยังไม่มีความเห็นตรงจาก FDA ณ 11 ก.ย. ยังไม่ประกาศวัน" },
+        { "event": "การประชุม FOMC", "note": "อยู่ก่อน PDUFA แค่ 2 วัน — macro overlay ในสัปดาห์ binary" }
+      ]
+    }
+  }
+}

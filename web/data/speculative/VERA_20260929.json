@@ -1,0 +1,292 @@
+{
+  "ticker": "VERA",
+  "companyName": "Vera Therapeutics, Inc.",
+  "companyDescription": "Kidney-disease biotech · TRUTAKNA (atacicept) has FDA accelerated approval (Jul 7, 2026) for high-risk IgA nephropathy AND now a POSITIVE ORIGIN Phase 3 confirmatory readout (Sep 15, 2026, p<0.0001) — sBLA for full approval targeted Q4 2026",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-09-29T14:30:00.000Z",
+  "price": 32.50,
+  "priceChange": -0.12,
+  "priceNote": "Roughly flat today, but up from $29.95 on the last report (Aug 5) after the Sep 15 ORIGIN 3 confirmatory Phase 3 data hit its primary endpoint (p<0.0001) — JPMorgan raised its target to $83 from $76 on the print. Still well off the 52-week high ($56.05); the stock hasn't fully re-rated toward the print despite two consecutive positive regulatory/clinical outcomes.",
+  "marketCap": "$2.34B",
+  "sector": "Healthcare / Biotechnology (Nephrology)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 63,
+  "summary": "The original catalyst FIRED and came in clean: the ORIGIN 3 Phase 3 confirmatory readout (Sep 15, 2026) hit its primary eGFR endpoint (-0.6 mL/min/1.73m²/yr with TRUTAKNA vs -5.6 with placebo, p<0.0001) with a 76% reduction in composite kidney-disease-progression events (HR 0.24) — the last major clinical binary before full approval, on top of the accelerated approval already won Jul 7. Thesis is STRENGTHENED, not just intact: JPMorgan raised its target to $83 from $76 on the data. Yet the stock is only up ~8.5% since the last report ($29.95→$32.50) — the market wants to see the Q4 2026 sBLA actually filed before pricing in full approval. Well-capitalized ($499.2M cash as of Q2 2026, net loss $109.5M/qtr) with no survival concern. Position size 2-5% max; per the turbo lane's entry-rule prior (entryGuidance.turbo, n=19), chasing a name into a resolved catalyst has historically returned a median -13.7% by the next measurement point — Entry 1 is NOT preferred here, the dip (Entry 2) is.",
+  "catalysts": [
+    {
+      "icon": "🧬",
+      "name": "ORIGIN 3 Phase 3 Confirmatory Data — POSITIVE (resolved)",
+      "description": "The FDA-agreed, moved-up primary eGFR analysis read out Sep 15, 2026: eGFR slope -0.6 vs -5.6 placebo (p<0.0001), composite kidney-disease-progression events cut 76% (HR 0.24). This clears the clinical binary underpinning the case for full approval and drove JPMorgan's target raise to $83.",
+      "urgencyLabel": "RESOLVED",
+      "dateBadge": "Sep 15, 2026",
+      "catalystDate": "2026-09-15",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "📄",
+      "name": "sBLA Filing for Full Approval",
+      "description": "Vera targets filing a supplemental Biologics License Application in Q4 2026, now backed by the positive ORIGIN 3 confirmatory data, to convert TRUTAKNA's accelerated approval into full approval — company guides full approval could land in 2027.",
+      "urgencyLabel": "Q4 2026",
+      "dateBadge": "Q4 2026",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🚀",
+      "name": "TRUTAKNA Commercial Launch + Q3 2026 Earnings",
+      "description": "Ongoing commercial rollout since the Jul 7 approval; the next visibility point on launch economics (prescriptions, payer coverage, revenue ramp vs launch spend) is the Q3 2026 earnings call, expected ~Nov 2026 — exact date not yet scheduled.",
+      "urgencyLabel": "~NOV 2026",
+      "dateBadge": "~Nov 2026",
+      "catalystDate": "2026-11-10",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "sBLA filing timeline risk — Q4 2026 target could slip, and even with positive confirmatory data, the eventual FDA decision on full approval (likely 2027) carries residual review risk (manufacturing, labeling, CRL possibility) despite the clean clinical readout",
+    "Commercial launch execution remains genuinely uncertain — physician adoption, payer coverage, and real-world uptake for a newly-approved nephrology drug take time to show up in the numbers; Q3 2026 earnings (~Nov) is the next real data point",
+    "Fed hiked 25bp to 3.75-4.00% on Sep 16, 2026 (unanimous, hawkish surprise vs prior market expectations of fading hike odds) — raises the broad cost-of-capital backdrop for biotech even though VERA's own catalysts are execution-driven, not financing-dependent",
+    "The highest named target ($100, +207.7%) is a single, non-representative ceiling versus the $34-100 range and the $77.50 average — the Moon case leans on one outlier estimate",
+    "$2.34B market cap already prices in two consecutive positive catalysts (accelerated approval + positive Phase 3 confirmatory data) — further re-rating now requires continued execution proof (filing on schedule, launch metrics improving), not just more good news, and the stock's muted reaction to the Sep 15 data (only ~8.5% since Aug 5) shows the market is making the company earn it",
+    "Chief Regulatory Officer transition (William Turner to advisor, Nancy Boman succeeding) remains a mild but real personnel-continuity risk during the active sBLA-filing process"
+  ],
+  "estimateDates": [
+    {
+      "event": "ORIGIN 3 Phase 3 eGFR Analysis",
+      "dateRange": "Sep 15, 2026 ✓",
+      "note": "RESOLVED — hit primary endpoint p<0.0001, 76% reduction in composite progression events",
+      "est": "Positive readout",
+      "highlight": "blue"
+    },
+    {
+      "event": "sBLA Filing (Full Approval)",
+      "dateRange": "Q4 2026",
+      "note": "Now backed by positive confirmatory data",
+      "est": "Sets up eventual full-approval decision in 2027",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -33, "price": 21.78 },
+    { "label": "Base", "color": "yellow", "pct": 45, "price": 47.13 },
+    { "label": "Bull", "color": "green", "pct": 138.5, "price": 77.50 },
+    { "label": "Moon", "color": "purple", "pct": 207.7, "price": 100.0 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (14 analysts)", "target": 77.50, "rating": "Strong Buy" },
+    { "firm": "JPMorgan", "target": 83.0, "rating": "Buy", "note": "Raised from $76 on Sep 15 ORIGIN 3 confirmatory data" },
+    { "firm": "Highest named target", "target": 100.0, "rating": "Buy", "note": "Down from $110 in the prior report; still a single-analyst, non-representative ceiling versus the $34-100 range" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed unexpectedly hiked 25bp to 3.75-4.00% on Sep 16, 2026 (unanimous 12-0), reversing the market's prior read that hike odds were fading after a weak July jobs print (-23K vs +80K expected, Aug 7) — a genuinely hawkish surprise for the rate path into year-end",
+    "inflationNote": "FOMC's own statement cites elevated inflation and targets 'a timelier return to the 2% goal' — inflation concern, not labor softness, dominated this decision",
+    "sectorImpact": "VERA's near-term drivers (sBLA filing, commercial launch execution) are clinical/regulatory/execution-driven, not financing-dependent, and the company is well-capitalized ($499.2M cash) and already commercial — this stays one of the more macro-independent names on the board despite the hawkish surprise",
+    "summary": "MEDIUM — the surprise hike raises the cost-of-capital backdrop for biotech broadly, but VERA's own catalysts don't route through financing, so the direct read-through to this specific thesis is limited"
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 32.50,
+        "note": "Current price — post two consecutive positive catalysts. NOT preferred: the turbo entry-rule prior (entryGuidance.turbo, n=19) shows a median -13.7% return chasing a name into/after a resolved catalyst (78.9% of cases negative)",
+        "timing": "Now (not preferred)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 27.5,
+        "rangeMax": 29.5,
+        "note": "Dip zone, roughly -9% to -15% off current — matches the -13.7% median pullback the entry-rule prior measures from report price forward",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 23.5,
+        "note": "Deep dip — near the 52-week low ($23.05), only on a broad biotech selloff or a material sBLA-filing delay",
+        "timing": "Deep dip only"
+      }
+    ],
+    "tp1": {
+      "price": 47.13,
+      "pct": 45.0,
+      "note": "Base — assumes a ~9-12 month horizon: sBLA filed on schedule in Q4 2026 plus commercial-launch metrics stabilize over the next two quarters. Written well above the turbo lane's realized 30-day P75 (12.2%) and P90 (25.9%) because this is a multi-quarter execution re-rate, not a single 30-day catalyst pop — flagging that against the lane's +72.7pp historical optimism bias."
+    },
+    "tp2": {
+      "price": 77.50,
+      "pct": 138.5,
+      "note": "Bull — hits the 14-analyst consensus average; full-approval process (sBLA → decision) completes broadly on guided timeline, ~12-18 month horizon"
+    },
+    "tp3": {
+      "price": 100.0,
+      "pct": 207.7,
+      "note": "Moon — hits the single highest named target; blockbuster commercial ramp + full approval + possible label expansion, ~18-24 month horizon",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 23.5,
+      "tightPct": -27.7,
+      "tightNote": "Below 52-week-low support — wider than the fda_decision-type median MAE (-18.4%, n=10 per the turbo feedback prior), since a name that already cleared two binaries deserves room, not a tight technical stop",
+      "hard": 18.0,
+      "hardPct": -44.6,
+      "hardNote": "Well below the 52-week low — would imply a genuinely failed commercial launch or a surprise setback on the full-approval pathway despite the clean confirmatory data",
+      "riskReward": "5.0 : 1",
+      "rrNote": "From Entry 2 ($28.50 mid), tight stop vs TP2",
+      "rrWarning": "Solid R/R for a name that already cleared its two biggest binaries — Moon case still leans on one analyst's outlier target, treat cautiously"
+    },
+    "verdict": "ค่าขนม — thesis STRENGTHENED: the Sep 15 ORIGIN 3 confirmatory data hit p<0.0001, clearing the last major clinical binary before full approval. But the entry-rule prior (n=19) shows a -13.7% median return chasing a name into a resolved catalyst — don't buy the pop, wait for the dip (Entry 2).",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "VERA ran up ahead of both the Jul 7 accelerated-approval decision and the Sep 15 ORIGIN 3 confirmatory readout as anticipation built — real same-name precedent for pre-event positioning",
+    "preRunupTiming": "1-3 weeks before each confirmed event date",
+    "preRunupPct": "modest single-digit-to-low-teens % gains into each date, based on VERA's own pattern",
+    "postWin": {
+      "avgPct": 15,
+      "range": "+7% to +30%",
+      "note": "VERA's own Jul 7 accelerated approval drove a +7.05% single-day gain. The Sep 15 ORIGIN 3 confirmatory data (p<0.0001, 76% reduction in composite progression) then drove JPMorgan to raise its target to $83 from $76 — but the stock has only re-rated modestly since (~$30 to $32.50), suggesting the market wants the sBLA actually filed, not just positive data, before pricing in full approval. fda_decision is a Tier-2 LEADER bucket in the turbo feedback prior (n=10, +9.3pp median excess vs SPY, gap +7.3 vs the overall +2pp) — a real tailwind cited here.",
+      "exampleDate": "Jul 2026 & Sep 2026 (VERA)"
+    },
+    "postLose": {
+      "avgPct": -35,
+      "range": "-16% to -69%",
+      "note": "Two relevant downside patterns from the same window: Celcuity (CELC) fell -16% on Jul 15, 2026 despite a clean FDA approval, purely on a delayed commercial-launch timeline guide — the launch-execution risk VERA itself now faces post-approval; a genuine confirmatory Phase 3 miss can be far worse, as Karyopharm (KPTI) fell -69% on an Aug 2026 Phase 3 primary-endpoint miss (VERA's own confirmatory readout already cleared this risk on Sep 15).",
+      "exampleDate": "Jul 2026 (CELC) / Aug 2026 (KPTI)"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Two of the name's three major binaries (accelerated approval, Phase 3 confirmatory data) are already resolved positively and the company is commercial + well-capitalized ($499.2M cash) — lower survival/binary risk than a typical turbo name, but correspondingly lower remaining asymmetry (Moon case now ~208% vs a fresh binary's 300%+), so sizing stays modest rather than scaling up just because risk fell"
+    },
+    "stopPreCatalyst": {
+      "pct": -28,
+      "price": 23.5,
+      "note": "Below the 52-week-low support zone ahead of the Q4 2026 sBLA filing — thesis-neutral pullback territory"
+    },
+    "stopPostCatalyst": {
+      "pct": -35,
+      "note": "If the sBLA filing slips materially past Q4 2026, or early signals point to CRL risk on the eventual full-approval decision, exit"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "VERA",
+      "event": "FDA accelerated approval for TRUTAKNA in high-risk IgA nephropathy",
+      "date": "Jul 7, 2026",
+      "movePct": 7.05,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company precedent for the first regulatory binary, already realized — a real but muted single-day reaction; the market has continued to demand commercial and confirmatory-data proof before re-rating further, a pattern that repeated after the Sep 15 Phase 3 data."
+    },
+    {
+      "ticker": "CELC",
+      "event": "REVTORPYK (gedatolisib) FDA approval, followed by delayed launch-timeline guidance",
+      "date": "Jul 15, 2026",
+      "movePct": -16,
+      "days": 1,
+      "outcome": "bad",
+      "note": "A directly comparable pattern — a clean FDA approval still produced a sharp drop once management guided a slower commercial launch than expected, the exact launch-execution risk VERA carries into its Q3 2026 earnings check."
+    },
+    {
+      "ticker": "KPTI",
+      "event": "Phase 3 XPORT-EC-042 endometrial cancer trial primary-endpoint miss",
+      "date": "Aug 2026",
+      "movePct": -69,
+      "days": 1,
+      "outcome": "bad",
+      "note": "The sector base rate for a genuine confirmatory Phase 3 miss — shows how much worse VERA's Sep 15 ORIGIN 3 readout could have gone; instead it cleared cleanly (p<0.0001), which is the core reason this thesis is now de-risked rather than broken."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "ORIGIN 3 Phase 3 confirmatory data hits primary endpoint (p<0.0001, 76% reduction in composite progression events); JPMorgan raises price target to $83 from $76",
+    "url": "https://www.stocktitan.net/news/VERA/",
+    "date": "Sep 2026"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/VERA/",
+    "https://stockanalysis.com/stocks/VERA/forecast/",
+    "https://www.stocktitan.net/news/VERA/",
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Catalyst เดิมออกผลแล้วและออกมาดีมาก: ผลการวิเคราะห์ eGFR หลักของ ORIGIN 3 Phase 3 (15 ก.ย. 2026) ผ่าน primary endpoint (-0.6 เทียบ -5.6 ของ placebo, p<0.0001) ลดเหตุการณ์ kidney disease progression แบบ composite ลง 76% (HR 0.24) — เคลียร์ binary ทางคลินิกตัวสุดท้ายก่อนขออนุมัติเต็มรูปแบบ ต่อยอดจาก accelerated approval ที่ได้ไปแล้ว 7 ก.ค. Thesis แข็งแกร่งขึ้น ไม่ใช่แค่ยังอยู่รอด — JPMorgan ปรับเป้าขึ้นเป็น $83 จาก $76 ตามข้อมูลนี้ แต่หุ้นขึ้นแค่ ~8.5% จากรายงานก่อนหน้า ($29.95→$32.50) — ตลาดยังรอดูว่า sBLA จะยื่นจริงใน Q4 2026 ก่อนถึงจะ price in อนุมัติเต็มรูปแบบ บริษัทมีเงินสดหนา ($499.2M ณ Q2 2026, ขาดทุนสุทธิ $109.5M/ไตรมาส) ไม่มีความเสี่ยง survival ตาม entry-rule prior ของ turbo lane (entryGuidance.turbo, n=19) การไล่ซื้อหุ้นหลัง catalyst ออกผลแล้วให้ผลตอบแทนเฉลี่ย -13.7% — Entry 1 จึงไม่ใช่ตัวเลือกที่แนะนำ ควรรอ Entry 2 (ย่อ) แทน",
+      "priceNote": "วันนี้ราคาเกือบทรงตัว แต่ขึ้นจาก $29.95 (รายงานก่อนหน้า 5 ส.ค.) หลังข้อมูล ORIGIN 3 Phase 3 (15 ก.ย.) ผ่าน primary endpoint (p<0.0001) — JPMorgan ปรับเป้าขึ้นเป็น $83 จาก $76 ตามข้อมูลนี้ ยังห่างจาก 52-week high ($56.05) มาก หุ้นยังไม่ re-rate เต็มที่แม้จะมีข่าวดีต่อเนื่องสองครั้ง",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "ผลการวิเคราะห์ ORIGIN 3 Phase 3 — บวก (จบแล้ว)",
+          "description": "ผลวิเคราะห์ eGFR หลักที่เลื่อนเร็วขึ้นโดยข้อตกลง FDA ออกมา 15 ก.ย. 2026: eGFR slope -0.6 เทียบ -5.6 ของ placebo (p<0.0001) ลดเหตุการณ์ kidney disease progression แบบ composite ลง 76% (HR 0.24) เคลียร์ binary ทางคลินิกที่เป็นฐานของการขออนุมัติเต็มรูปแบบ และเป็นเหตุผลที่ JPMorgan ปรับเป้าขึ้น"
+        },
+        {
+          "name": "ยื่น sBLA เพื่อขออนุมัติเต็มรูปแบบ",
+          "description": "Vera ตั้งเป้ายื่น supplemental BLA ใน Q4 2026 ซึ่งตอนนี้มีข้อมูล confirmatory ที่บวกหนุนอยู่แล้ว เพื่อแปลง accelerated approval เป็นอนุมัติเต็มรูปแบบ — บริษัทให้แนวทางว่าอนุมัติเต็มรูปแบบอาจมาในปี 2027"
+        },
+        {
+          "name": "เปิดตัวเชิงพาณิชย์ TRUTAKNA + ผลประกอบการ Q3 2026",
+          "description": "เปิดตัวเชิงพาณิชย์ต่อเนื่องตั้งแต่อนุมัติ 7 ก.ค. จุดที่จะเห็นข้อมูล launch economics ชัดขึ้นคือผลประกอบการ Q3 2026 ที่คาดว่าจะมาใน ~พ.ย. 2026 (ยังไม่มีวันที่แน่นอน)"
+        }
+      ],
+      "risks": [
+        "ความเสี่ยงเรื่องเวลายื่น sBLA — เป้า Q4 2026 อาจเลื่อน และแม้ข้อมูลคลินิกจะดี การตัดสินใจอนุมัติเต็มรูปแบบของ FDA (คาดปี 2027) ยังมีความเสี่ยง review เหลืออยู่ (manufacturing, labeling, ความเป็นไปได้ของ CRL)",
+        "Execution เปิดตัวเชิงพาณิชย์ยังมีความไม่แน่นอนจริง — การยอมรับของแพทย์ ความครอบคลุมของ payer และ uptake จริงต้องใช้เวลากว่าจะเห็นในตัวเลข ผลประกอบการ Q3 2026 (~พ.ย.) คือจุดข้อมูลถัดไป",
+        "Fed ขึ้นดอกเบี้ย 25bp เป็น 3.75-4.00% เมื่อ 16 ก.ย. 2026 (เป็นเอกฉันท์ hawkish เหนือความคาดหมายเดิมที่มองว่าโอกาสขึ้นดอกเบี้ยกำลังลดลง) — เพิ่มต้นทุนเงินทุนของกลุ่ม biotech โดยรวม แม้ catalyst ของ VERA เองจะไม่ผูกกับการเงิน",
+        "เป้าสูงสุดที่มีชื่อ ($100, +207.7%) เป็นตัวเลขนักวิเคราะห์รายเดียวที่ไม่ใช่ตัวแทน เทียบ range $34-100 และค่าเฉลี่ย $77.50",
+        "มูลค่าตลาด $2.34B ได้ price in ข่าวดีสองรอบไปแล้ว (accelerated approval + ผล Phase 3 บวก) — การ re-rate ต่อไปต้องอาศัยหลักฐาน execution จริง (ยื่นไฟล์ตรงเวลา, launch metrics ดีขึ้น) ไม่ใช่แค่ข่าวดีเพิ่ม ซึ่งการที่หุ้นตอบสนองไม่มากนัก (~8.5% จาก 5 ส.ค.) สะท้อนว่าตลาดต้องการเห็นผลจริงก่อน",
+        "เปลี่ยนตัว Chief Regulatory Officer (William Turner ไปเป็น advisor, Nancy Boman รับช่วงต่อ) ยังเป็นความเสี่ยงบุคลากรเล็กน้อยแต่จริงช่วงกระบวนการยื่น sBLA ที่ยังดำเนินอยู่"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed ขึ้นดอกเบี้ย 25bp เป็น 3.75-4.00% เมื่อ 16 ก.ย. 2026 (เอกฉันท์ 12-0) กลับทิศจากที่ตลาดเคยมองว่าโอกาสขึ้นดอกเบี้ยกำลังลดลงหลังตัวเลขจ้างงาน ก.ค. อ่อนแอ (-23K เทียบคาด +80K, 7 ส.ค.) — เป็น hawkish surprise จริง",
+        "inflationNote": "แถลงการณ์ FOMC เองระบุว่าเงินเฟ้อยังสูงและต้องการ 'กลับสู่เป้าหมาย 2% เร็วขึ้น' — ความกังวลเงินเฟ้อ ไม่ใช่ความอ่อนแอของแรงงาน เป็นตัวขับการตัดสินใจครั้งนี้",
+        "sectorImpact": "ปัจจัยขับเคลื่อนหลักของ VERA (ยื่น sBLA, execution เปิดตัวเชิงพาณิชย์) เป็นเรื่อง clinical/regulatory/execution ไม่ใช่พึ่งพาการเงิน และบริษัทมีเงินสดหนา ($499.2M) พร้อมมีรายได้เชิงพาณิชย์แล้ว — ยังเป็นหนึ่งในหุ้นที่ macro-independent ที่สุดในบอร์ดนี้แม้จะมี hawkish surprise",
+        "summary": "ความเสี่ยง Fed ระดับกลาง — การขึ้นดอกเบี้ยเหนือคาดเพิ่มต้นทุนเงินทุนของ biotech โดยรวม แต่ catalyst ของ VERA เองไม่ผูกกับการเงินโดยตรง ผลกระทบทางตรงจึงจำกัด"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม — thesis แข็งแกร่งขึ้น: ข้อมูล ORIGIN 3 (15 ก.ย.) ผ่าน p<0.0001 เคลียร์ binary ทางคลินิกตัวสุดท้ายก่อนอนุมัติเต็มรูปแบบ แต่ entry-rule prior (n=19) แสดงผลตอบแทนเฉลี่ย -13.7% เมื่อไล่ซื้อหลัง catalyst ออกผลแล้ว — อย่าไล่ราคา รอ Entry 2 (ย่อ) แทน",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — หลังข่าวดีต่อเนื่องสองรอบ ไม่แนะนำ: entry-rule prior ของ turbo lane (n=19) แสดงผลตอบแทนเฉลี่ย -13.7% เมื่อไล่ซื้อหลัง catalyst ออกผลแล้ว (78.9% ของกรณีติดลบ)",
+            "timing": "ตอนนี้ (ไม่แนะนำ)"
+          },
+          {
+            "note": "โซนย่อ ประมาณ -9% ถึง -15% จากราคาปัจจุบัน — ตรงกับค่ากลาง -13.7% ที่ entry-rule prior วัดได้",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ย่อลึกใกล้ 52-week low ($23.05) — เฉพาะ biotech เทขายรวมหรือ sBLA เลื่อนอย่างมีนัยสำคัญ",
+            "timing": "Deep dip only"
+          }
+        ],
+        "tp1": {
+          "note": "Base — สมมติฐาน horizon ~9-12 เดือน: ยื่น sBLA ตรงเวลาใน Q4 2026 บวกตัวเลข launch นิ่งขึ้นใน 2 ไตรมาสถัดไป เขียนสูงกว่า P75 (12.2%) และ P90 (25.9%) ของ turbo lane มาก เพราะนี่คือการ re-rate จาก execution หลายไตรมาส ไม่ใช่ catalyst pop 30 วันเดียว"
+        },
+        "tp2": {
+          "note": "Bull — แตะเป้าเฉลี่ย consensus 14 นักวิเคราะห์ กระบวนการอนุมัติเต็มรูปแบบ (sBLA → ตัดสิน) เสร็จตามแผน horizon ~12-18 เดือน"
+        },
+        "tp3": {
+          "note": "Moon — แตะเป้าสูงสุดที่มีชื่อ เปิดตัวเชิงพาณิชย์แข็งแกร่งมาก + อนุมัติเต็มรูปแบบ + อาจขยาย label horizon ~18-24 เดือน",
+          "moon": true
+        },
+        "stopLoss": {
+          "tightNote": "หลุดแนวรับ 52-week low — กว้างกว่าค่ากลาง MAE ของ fda_decision (-18.4%, n=10) ตาม turbo feedback prior เพราะหุ้นที่ผ่าน binary มาแล้วสองครั้งสมควรได้พื้นที่มากกว่า stop แคบ",
+          "hardNote": "ต่ำกว่า 52-week low มาก — จะบ่งชี้ว่าเปิดตัวเชิงพาณิชย์ล้มเหลวจริง หรือมีปัญหาเซอร์ไพรส์กับเส้นทางอนุมัติเต็มรูปแบบแม้ข้อมูล confirmatory จะสะอาด",
+          "rrNote": "จาก Entry 2 ($28.50 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R ดีสำหรับหุ้นที่ผ่าน binary ใหญ่มาแล้วสองครั้ง — Moon case ยังพึ่งเป้านักวิเคราะห์รายเดียว ควรระมัดระวัง"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "ผลการวิเคราะห์ ORIGIN 3 Phase 3 eGFR",
+          "note": "จบแล้ว — ผ่าน primary endpoint p<0.0001 ลดเหตุการณ์ progression แบบ composite 76%"
+        },
+        {
+          "event": "ยื่น sBLA (อนุมัติเต็มรูปแบบ)",
+          "note": "ตอนนี้มีข้อมูล confirmatory บวกหนุนอยู่แล้ว"
+        }
+      ]
+    }
+  }
+}

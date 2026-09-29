@@ -1,0 +1,171 @@
+{
+  "ticker": "SPIR",
+  "companyName": "Spire Global, Inc.",
+  "companyDescription": "Space data & analytics · 100+ nanosatellite constellation for weather (GNSS-RO), maritime/aviation tracking, and RF geolocation · $65M+ in fresh NOAA/EUMETSAT bookings since August · Diehl Defence missile-tracking MOU still the moonshot lever",
+  "exchange": "NYSE",
+  "generatedAt": "2026-09-29T00:00:00.000Z",
+  "price": 11.34,
+  "priceChange": -3.41,
+  "priceNote": "Self-fetched today (live-prices.json cache dated Aug 13, too stale to use). Down 17.8% since the last report ($13.79 → $11.34) despite a genuinely strong run of new contract wins — the Aug 12 Q2 print showed a WildFireSat contract cancellation that dented gross margin (34%, down from prior levels), which looks like the more likely driver of the decline than the underlying bookings trend, which has stayed strong.",
+  "marketCap": "$443.56M",
+  "sector": "Technology / Space Data & Analytics",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Moonshot",
+  "score": 60,
+  "summary": "Spire's bookings momentum has genuinely strengthened since the last report: $33.2M NOAA contract (Sep 22, with surge options to ~$66M), $28M NOAA hyperspectral microwave-sounding deal (Aug 26), €4M EUMETSAT renewal (Aug 25), and a $3.7M NOAA award (Aug 14) — over $65M in fresh bookings in six weeks. Q2 2026 earnings (Aug 12) showed $18.0M revenue (+16% YoY ex-Maritime, +19% sequentially), $91.7M cash with no debt, and FY26 guidance reaffirmed at $75-85M — but gross margin slipped to 34% on a WildFireSat contract cancellation, and the stock fell 17.8% despite the otherwise-strong bookings quarter. The Diehl Defence missile-tracking MOU — the real moonshot lever — has no confirmed progress update since the last report; it remains MOU-stage, not a signed contract. Cash position is healthy, removing near-term survival risk.",
+  "catalysts": [
+    {
+      "icon": "🛰️",
+      "name": "NOAA/EUMETSAT Bookings Momentum",
+      "description": "Four new contracts in six weeks: $33.2M NOAA weather-data award (Sep 22, surge options to ~$66M), $28M NOAA hyperspectral microwave-sounding deal (Aug 26), €4M EUMETSAT renewal (Aug 25), $3.7M NOAA award (Aug 14) — direct evidence the government-data pivot is working commercially.",
+      "urgencyLabel": "ACCELERATING",
+      "dateBadge": "Sep 2026",
+      "badgeColor": "green",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "🛡️",
+      "name": "Diehl Defence Missile-Tracking MOU",
+      "description": "Still the real moonshot lever — the non-binding MOU to co-develop satellite-based missile-tracking/early-warning systems has no confirmed progress update since the last report. Conversion to a definitive, funded contract remains the catalyst that would re-rate SPIR toward a European missile-defense-relevant multiple.",
+      "urgencyLabel": "ONGOING (MOU stage, no update)",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Gross margin slipped to 34% in Q2 on a WildFireSat contract cancellation — a real, negative development not present in the last report, and the more likely driver of the 17.8% stock decline than the (otherwise strong) bookings trend",
+    "The Diehl Defence relationship remains a non-binding MOU with no confirmed progress since the last report — conversion to real revenue is neither guaranteed nor dated, and staying at MOU-stage for this long is itself a mild negative signal",
+    "Per this run's feedback data, SPIR's catalystType (partnership_win) is a measured tier-2 LAGGARD across the turbo lane (medianExcessVsBenchPct -3.8pp vs +2.0pp overall, n=16) — needs visibly higher conviction to justify inclusion",
+    "Heavy reliance on government contract renewals for revenue continuity — a strong recent run of awards is positive, but the model is inherently lumpy and dependent on continued appropriations",
+    "52-week range of $6.60 to $25.93 shows this stock has already delivered and given back a huge move once this cycle — not a low-volatility name"
+  ],
+  "estimateDates": [
+    { "event": "Q3 2026 Earnings", "dateRange": "Nov 2026 (exact date not yet confirmed)", "note": "Next confirmation point for the >30% ex-Maritime growth guidance and any Diehl Defence MOU progress update", "est": "n/a", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -40, "price": 6.80 },
+    { "label": "Base", "color": "yellow", "pct": 70, "price": 19.28 },
+    { "label": "Bull", "color": "green", "pct": 115, "price": 24.38 },
+    { "label": "Moon", "color": "purple", "pct": 235, "price": 38.00 }
+  ],
+  "analystTargets": [
+    { "firm": "Wall Street Consensus (3 analysts, Strong Buy, as of last update)", "target": 20.875, "rating": "Strong Buy", "note": "No fresh analyst update found this cycle — treat as dated context alongside the strong recent bookings" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "SPIR's revenue mix (government + commercial data subscriptions) is only partly rate-insensitive — the commercial side remains more exposed to broad risk appetite than a pure defense-contractor peer.",
+    "inflationNote": "Core inflation remains above target; a secondary factor versus the WildFireSat-driven margin question and Diehl MOU timing.",
+    "sectorImpact": "Government/defense-adjacent revenue (NOAA, EUMETSAT, Diehl) is largely appropriations/policy-driven and rate-insensitive, but SPIR's own recent history of capital raises (April private placement, active shelf) keeps it more exposed than most to a tightening in financing conditions.",
+    "summary": "MEDIUM — the underlying government/defense pivot is structurally macro-independent and cash is now healthier ($91.7M, no debt), reducing the financing-risk channel somewhat since the last report."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 11.34, "note": "Current price — down 17.8% despite a strong bookings quarter; turbo lane's measured median at-catalyst return is -13.7% (n=19), so this is not the default entry", "timing": "Now (small starter)" },
+      { "label": "Entry 2", "level": 9.20, "rangeMax": 10.00, "note": "Pullback zone — better R/R given the margin-miss overhang hasn't fully cleared", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 7.00, "note": "Deep dip — approaching the 52-week low, thesis-intact only", "timing": "Deep dip / thesis intact" }
+    ],
+    "tp1": { "price": 19.28, "pct": 70.0, "note": "Base — bookings momentum continues (more NOAA/EUMETSAT-style wins), WildFireSat margin drag fades; Base assumes a ~6mo horizon through the next earnings cycle for margin recovery to show" },
+    "tp2": { "price": 24.38, "pct": 115.0, "note": "Bull — matches/exceeds the cited bull-case zone as HyMS/NOAA scales further" },
+    "tp3": { "price": 38.00, "pct": 235.0, "note": "Moon — Diehl Defence MOU converts into a major European missile-defense program, full re-rate toward a defense-space multiple", "moon": true },
+    "stopLoss": {
+      "tight": 8.28, "tightPct": -27.0, "tightNote": "Wider than the turbo partnership_win-type median MAE (-25.9%, n=16) since this name has shown real volatility even on a strong bookings quarter",
+      "hard": 5.67, "hardPct": -50.0, "hardNote": "Deep breach — would suggest the revenue-replacement thesis (HyMS/defense/bookings offsetting the margin drag) is failing",
+      "riskReward": "4.3 : 1", "rrNote": "Entry ($11.34) vs TP2 ($24.38), tight stop ($8.28)", "rrWarning": "Good asymmetry ✅, but per tier2 feedback partnership_win is a lane-wide laggard type — this needs the Diehl MOU to actually convert to justify the wide Moon case, not just Base/Bull momentum"
+    },
+    "verdict": "Moonshot — small starter sizing. Measured turbo median at-catalyst return is -13.7% (n=19); prefer the $9.20-10.00 dip zone over chasing here despite the strong bookings quarter. Base (bookings momentum continues) → $19.28 (+70%), Bull (HyMS/NOAA scales) → $24.38 (+115%), Moon (Diehl Defence contract conversion) → $38.00 (+235%). partnership_win is a measured lane-wide laggard per this run's feedback — the Diehl conversion, not incremental NOAA wins alone, is what would justify the Moon case.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "Space-data/smallsat names with a defense-pivot narrative tend to re-rate sharply on confirmed contract news rather than a slow pre-earnings build — Redwire's ~220% rally on Golden Dome-related contract momentum remains the closest sector pattern.",
+    "preRunupTiming": "Weeks to months on a structural narrative shift (defense pivot), then a sharp step on actual contract conversion",
+    "preRunupPct": "Sector precedent (RDW, ASTS) suggests +100% to +300%+ once the defense/commercialization narrative is confirmed by real contract value",
+    "postWin": {
+      "avgPct": 220,
+      "range": "+100% to +300%+",
+      "note": "Redwire (RDW) rallied roughly 220% on Golden Dome missile-defense contract momentum (SHIELD IDIQ award, Feb 2026) — the closest same-theme comparable for what a Diehl Defence contract conversion could do to SPIR. Per this run's tier2 feedback, partnership_win is a lane-wide laggard (-3.8pp vs +2.0pp overall, n=16), so this needs to be a real conversion, not just incremental bookings, to move the needle.",
+      "exampleDate": "Feb 2026 (RDW)"
+    },
+    "postLose": {
+      "avgPct": -18,
+      "range": "-15% to -25%",
+      "note": "SPIR's own Q2 2026 print is now the most relevant precedent — a genuinely strong bookings quarter ($65M+ in new contracts) still produced a -17.8% stock decline over six weeks on the WildFireSat margin miss, showing this stock can fall hard even on net-positive news.",
+      "exampleDate": "Aug-Sep 2026 (SPIR's own post-Q2 drift)"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Unchanged — real, accelerating government/defense bookings sit against a still-MOU-stage Diehl catalyst and a lane-wide laggard catalystType (partnership_win) per this run's feedback. 3% reflects genuine but not fully converted conviction."
+    },
+    "stopPreCatalyst": { "pct": -27, "price": 8.28, "note": "หลุด $8.28 = ตลาดกำลัง de-risk thesis การแทนที่รายได้ก่อน Q3 — กว้างกว่า median MAE กลุ่ม partnership_win (-25.9%, n=16)" },
+    "stopPostCatalyst": { "pct": -25, "note": "ถ้า Q3 แสดงว่า margin drag ต่อเนื่องหรือ growth guidance หลุด — exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "RDW",
+      "event": "Golden Dome missile-defense SHIELD IDIQ contract award (Missile Defense Agency)",
+      "date": "Feb 2026",
+      "movePct": 220,
+      "days": 90,
+      "outcome": "good",
+      "note": "Closest same-theme comparable — directly relevant to what a Diehl Defence MOU conversion could do for SPIR."
+    },
+    {
+      "ticker": "SPIR",
+      "event": "$65M+ in new NOAA/EUMETSAT contract bookings over six weeks (Aug-Sep 2026), stock declines anyway on WildFireSat margin miss",
+      "date": "Aug-Sep 2026",
+      "movePct": -17.8,
+      "days": 42,
+      "outcome": "bad",
+      "note": "Same-company precedent for how a strong bookings quarter can still be overshadowed by a single margin-negative item — directly relevant risk context for weighting near-term contract news versus margin trajectory."
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/spir/",
+    "https://www.stocktitan.net/news/SPIR/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Momentum การรับงานของ Spire แข็งแกร่งขึ้นจริงตั้งแต่รายงานก่อน — สัญญา NOAA $33.2M (22 ก.ย. มี surge option ถึง ~$66M), ดีล NOAA hyperspectral microwave-sounding $28M (26 ส.ค.), EUMETSAT renewal €4M (25 ส.ค.) และสัญญา NOAA $3.7M (14 ส.ค.) — รวมกว่า $65M ใน 6 สัปดาห์ ผลประกอบการ Q2 2026 (12 ส.ค.) แสดงรายได้ $18.0M (+16% YoY ไม่รวม Maritime, +19% QoQ) เงินสด $91.7M ไม่มีหนี้ guidance FY26 ยืนยันที่ $75-85M แต่ gross margin ลดเหลือ 34% จากการยกเลิกสัญญา WildFireSat และหุ้นลง 17.8% ทั้งที่เป็นไตรมาสที่ bookings แข็งแกร่ง MOU ติดตามขีปนาวุธ Diehl Defence — ตัวขับเคลื่อน moonshot จริง — ยังไม่มีอัปเดตความคืบหน้าที่ยืนยันตั้งแต่รายงานก่อน ยังเป็นแค่ MOU ไม่ใช่สัญญาที่เซ็นแล้ว เงินสดยังแข็งแรง ตัดความเสี่ยง survival ระยะใกล้ออกไป",
+      "priceNote": "self-fetch วันนี้ (live-prices.json cache เก่าตั้งแต่ 13 ส.ค.) ลง 17.8% ตั้งแต่รายงานก่อน ($13.79 → $11.34) ทั้งที่มีสัญญาใหม่เข้ามาต่อเนื่องจริง — ผล Q2 (12 ส.ค.) แสดงการยกเลิกสัญญา WildFireSat ที่กด gross margin ลง ดูเหมือนเป็นสาเหตุการร่วงมากกว่าแนว bookings ที่ยังแข็งแรง",
+      "scoreLabel": "Moonshot",
+      "catalysts": [
+        { "name": "Momentum การรับงาน NOAA/EUMETSAT", "description": "สัญญาใหม่ 4 ฉบับใน 6 สัปดาห์: NOAA $33.2M (22 ก.ย. surge ถึง ~$66M), NOAA hyperspectral $28M (26 ส.ค.), EUMETSAT renewal €4M (25 ส.ค.), NOAA $3.7M (14 ส.ค.) — หลักฐานตรงว่าการปรับสู่ธุรกิจข้อมูลรัฐบาลได้ผลเชิงพาณิชย์จริง" },
+        { "name": "MOU ติดตามขีปนาวุธ Diehl Defence", "description": "ยังเป็นตัวขับเคลื่อน moonshot จริง — MOU ไม่ผูกพันเพื่อพัฒนาระบบติดตามขีปนาวุธผ่านดาวเทียมร่วมกัน ยังไม่มีอัปเดตความคืบหน้าที่ยืนยันตั้งแต่รายงานก่อน การแปลงเป็นสัญญาผูกพันจริงยังเป็น catalyst ที่จะ re-rate SPIR" }
+      ],
+      "risks": [
+        "Gross margin ลดเหลือ 34% ใน Q2 จากการยกเลิกสัญญา WildFireSat — พัฒนาการลบจริงที่ไม่มีในรายงานก่อน และน่าจะเป็นสาเหตุการร่วง 17.8% มากกว่าแนว bookings ที่ยังแข็งแรง",
+        "ความสัมพันธ์ Diehl Defence ยังเป็นแค่ MOU ไม่ผูกพัน ไม่มีความคืบหน้าที่ยืนยันตั้งแต่รายงานก่อน — การแปลงเป็นรายได้จริงไม่รับประกันและไม่มีวันที่ชัดเจน การค้างที่ขั้น MOU นานขนาดนี้เองก็เป็นสัญญาณลบเล็กน้อย",
+        "ตาม feedback data ของรอบนี้ catalystType ของ SPIR (partnership_win) เป็น tier-2 laggard ที่วัดได้จริงทั่ว turbo lane (medianExcessVsBenchPct -3.8pp เทียบ +2.0pp โดยรวม, n=16) — ต้องการ conviction สูงกว่าเดิมชัดเจนเพื่อ justify การรวมไว้",
+        "พึ่งพาการต่อสัญญารัฐบาลสูงสำหรับความต่อเนื่องของรายได้ — ผลงานล่าสุดที่แข็งแกร่งเป็นบวก แต่โมเดลนี้ผันผวนโดยธรรมชาติและขึ้นกับงบประมาณต่อเนื่อง",
+        "52-week range $6.60 ถึง $25.93 แสดงว่าหุ้นนี้เคยขึ้นแรงและคืนกลับมาแล้วครั้งหนึ่งในรอบนี้ ไม่ใช่หุ้นผันผวนต่ำ"
+      ],
+      "macroRisk": {
+        "rateOutlook": "รายได้ SPIR (รัฐบาล + subscription เชิงพาณิชย์) ไม่ insulated จากดอกเบี้ยเต็มที่ — ฝั่งเชิงพาณิชย์ exposed ต่อ risk appetite กว้างมากกว่าบริษัท defense ล้วน",
+        "inflationNote": "เงินเฟ้อ core ยังสูงกว่าเป้า เป็นปัจจัยรองเทียบกับคำถามเรื่อง margin จาก WildFireSat และ timing ของ Diehl MOU",
+        "sectorImpact": "รายได้ที่เกี่ยวกับรัฐบาล/defense (NOAA, EUMETSAT, Diehl) ส่วนใหญ่ขึ้นกับงบประมาณ/นโยบาย ไม่ sensitive ดอกเบี้ยโดยตรง แต่ประวัติการระดมทุนของ SPIR เองยังทำให้ exposed มากกว่าค่าเฉลี่ยต่อเงื่อนไขการเงินที่ตึงตัว",
+        "summary": "ปานกลาง — การปรับสู่ธุรกิจรัฐบาล/defense เป็นเรื่องโครงสร้างที่ independent จาก macro และเงินสดตอนนี้แข็งแรงขึ้น ($91.7M ไม่มีหนี้) ลดความเสี่ยงด้านการเงินลงบ้างเทียบรายงานก่อน"
+      },
+      "entryStrategy": {
+        "verdict": "Moonshot — เข้าไม้เล็ก median at-catalyst return ของ turbo lane วัดได้ -13.7% (n=19) ควรรอโซนย่อ $9.20-10.00 มากกว่าไล่ราคาแม้ bookings จะแข็งแกร่ง Base (bookings momentum ต่อเนื่อง) → $19.28 (+70%) Bull (HyMS/NOAA ขยายสเกล) → $24.38 (+115%) Moon (สัญญา Diehl Defence แปลงจริง) → $38.00 (+235%) partnership_win เป็น laggard ที่วัดได้จริงทั่ว lane ตาม feedback รอบนี้ — ต้องการการแปลง Diehl จริง ไม่ใช่แค่ NOAA win เพิ่ม เพื่อ justify Moon case",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ลง 17.8% ทั้งที่เป็นไตรมาส bookings แข็งแกร่ง median at-catalyst return วัดได้ -13.7% จึงไม่ใช่ entry เริ่มต้นที่แนะนำ", "timing": "ตอนนี้ (ไม้เล็ก)" },
+          { "note": "โซนย่อ — R/R ดีกว่าเพราะ margin-miss overhang ยังไม่คลี่คลายเต็มที่", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงลึก — ใกล้ 52-week low เฉพาะกรณี thesis ยังอยู่", "timing": "Deep dip / thesis intact" }
+        ],
+        "tp1": { "note": "Base — bookings momentum ต่อเนื่อง margin drag จาก WildFireSat จางลง สมมติ horizon ราว 6 เดือนถึงรอบผลถัดไป" },
+        "tp2": { "note": "Bull — แตะ/เกินโซน bull case ตามที่อ้างอิง จาก HyMS/NOAA ที่ขยายสเกล" },
+        "tp3": { "note": "Moon — MOU Diehl Defence แปลงเป็นโครงการ missile defense ยุโรปขนาดใหญ่ re-rate เต็มที่", "moon": true },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า median MAE กลุ่ม partnership_win (-25.9%, n=16) เพราะหุ้นนี้ผันผวนจริงแม้ไตรมาส bookings จะแข็งแกร่ง",
+          "hardNote": "หลุดลึก — บ่งชี้ thesis การแทนที่รายได้ (HyMS/defense/bookings ชดเชย margin drag) กำลังล้มเหลว",
+          "rrNote": "Entry ($11.34) เทียบ TP2 ($24.38), stop แคบ ($8.28)",
+          "rrWarning": "Asymmetry ดี ✅ แต่ตาม feedback tier2 partnership_win เป็น laggard ทั่ว lane — ต้องการ Diehl MOU แปลงจริงเพื่อ justify Moon case กว้าง ไม่ใช่แค่ momentum Base/Bull"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q3 2026", "note": "จุดยืนยันถัดไปสำหรับ growth guidance ไม่รวม Maritime >30% และอัปเดตความคืบหน้า Diehl MOU (ยังไม่มีวันที่ยืนยัน)" }
+      ]
+    }
+  }
+}

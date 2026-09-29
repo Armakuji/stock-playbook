@@ -1,0 +1,212 @@
+{
+  "ticker": "SERV",
+  "companyName": "Serve Robotics Inc.",
+  "companyDescription": "Autonomous sidewalk delivery robots · fleet across 44 cities — but Uber, the partner the thesis was built on, has now fully exited",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-08-13T00:00:00.000Z",
+  "price": 4.83,
+  "priceChange": -1.43,
+  "priceNote": "Live price Aug 13 07:49, -1.43% today. Prior report (Aug 4) used $5.65 — -14.5% drift. That report was written TWO DAYS BEFORE the Aug 6 Q2 print and its entire analyst-target basis (Northland $26, Wedbush $22, Oppenheimer $20, consensus $18.45) predates the cuts that followed.",
+  "marketCap": "$373M",
+  "sector": "Technology / Robotics (Autonomous Delivery)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 34,
+  "summary": "⚠️ THESIS BROKEN — this replaces the Aug 4 report, whose catalyst was the Aug 6 Q2 print and which assumed a consensus of $18.45. That print landed badly and the assumption is void. Q2 revenue came in at $3.2M against a $3.92M consensus with a wider-than-expected loss, Uber delivery growth REVERSED, and management cut full-year 2026 revenue guidance to $9-10M. Uber has since divested its entire stake — the partner the whole delivery thesis rested on. Analysts followed: Oppenheimer cut $20 → $7, Guggenheim $13 → $7, Ladenburg $16 → $15, and Cantor Fitzgerald downgraded to Neutral and withdrew its target outright. The stale $18.45 consensus still sitting on the board is what made this pick screen as the best risk/reward available — it is not. Treat any residual bullish framing from the prior version as void.",
+  "catalysts": [
+    {
+      "icon": "🤝",
+      "name": "Post-Uber Partnership Replacement",
+      "description": "With Uber fully divested, the open question is whether Serve can sign a replacement demand partner at comparable volume. No announced date — this is the thesis-critical unknown, not a scheduled event.",
+      "urgencyLabel": "UNDATED",
+      "dateBadge": "Ongoing",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "🏥",
+      "name": "Diligent Robotics Healthcare Diversification",
+      "description": "Healthcare robotics as a second leg away from food delivery. Genuinely undated and early — optionality, not a near-term catalyst, and it cannot offset a halved delivery guide in 2026.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "📊",
+      "name": "Q3 2026 Earnings",
+      "description": "First print against the reduced $9-10M guide. The test is whether the cut was conservative enough to beat, or the start of a trend.",
+      "urgencyLabel": "~NOV 2026",
+      "dateBadge": "Nov 2026",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Uber fully divested its stake — the anchor partner and demand channel behind the original thesis is gone, not merely reduced",
+    "2026 revenue guidance cut to $9-10M, and Q2 delivery volume went backwards rather than merely growing slower",
+    "Two analysts cut to $7 (Oppenheimer from $20, Guggenheim from $13) and Cantor withdrew its target entirely — the target range is now bimodal and near the current price, not above it",
+    "At a $373M cap on $9-10M of guided revenue, the multiple still prices a growth story that just stopped growing",
+    "Cash burn against a halved revenue plan makes a dilutive raise materially more likely",
+    "The prior report screened this as the best R/R on the board (17:1) purely because its stale $18.45 consensus survived a print that invalidated it — a warning about the board's inputs, not a feature of this stock"
+  ],
+  "estimateDates": [
+    { "event": "Q3 2026 Earnings", "dateRange": "Nov 2026", "note": "First test of the reduced $9-10M guide", "est": "guide $9-10M FY26", "highlight": "yellow" },
+    { "event": "Partnership replacement", "dateRange": "Ongoing", "note": "Undated; thesis-critical", "est": "n/a", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -45, "price": 2.66 },
+    { "label": "Base", "color": "yellow", "pct": 44.9, "price": 7.0 },
+    { "label": "Bull", "color": "green", "pct": 100, "price": 9.66 },
+    { "label": "Moon", "color": "purple", "pct": 210.6, "price": 15.0 }
+  ],
+  "analystTargets": [
+    { "firm": "Oppenheimer", "target": 7, "rating": "Hold", "note": "CUT from $20 after the Aug 6 print" },
+    { "firm": "Guggenheim", "target": 7, "rating": "Hold", "note": "CUT from $13" },
+    { "firm": "Ladenburg Thalmann", "target": 15, "rating": "Buy", "note": "Cut from $16 — the outlier that keeps the Moon case alive" },
+    { "firm": "Cantor Fitzgerald", "target": 0, "rating": "Hold", "note": "Downgraded to Neutral and WITHDREW its price target — not a $0 target, an absence of one" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds 3.50-3.75%, held Jul 29 with three dissents for a hike. Next FOMC Sep 16.",
+    "inflationNote": "July CPI (Aug 12) headline 3.4% from 3.5%, core 2.5%, +0.1% m/m — soft print after payrolls at -23k.",
+    "sectorImpact": "A $373M pre-scale robotics company that likely needs to raise is highly sensitive to the financing window, which is the channel rates actually work through here. But the binding constraint right now is company-specific, not macro.",
+    "summary": "MEDIUM — financing conditions matter, but the guidance cut and partner exit dominate."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 4.83, "note": "Current price — NOT preferred. Measured median at-catalyst return across this dashboard is -6.9% with 74% of picks underwater at their own event (n=54), and this pick has no dated catalyst left to underwrite an immediate entry", "timing": "Not preferred" },
+      { "label": "Entry 2", "level": 4.0, "rangeMax": 4.3, "note": "Post-guidance-cut base; where the reduced revenue plan is closer to priced", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 3.2, "note": "Dilution or a second guidance cut", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 7.0, "pct": 44.9, "note": "Both post-cut analyst targets sit here" },
+    "tp2": { "price": 9.66, "pct": 100.0, "note": "Requires a credible replacement demand partner" },
+    "tp3": { "price": 15.0, "pct": 210.6, "note": "Ladenburg's outlier — needs the healthcare leg to become real · 2027", "moon": true },
+    "stopLoss": {
+      "tight": 3.85,
+      "tightPct": -20.3,
+      "tightNote": "Wider than the measured core medianMAE of -14% per the stop rule, and deliberately wider still: a name that just cut guidance and lost its anchor partner has fatter tails than the corpus median",
+      "hard": 3.35,
+      "hardPct": -30.6,
+      "hardNote": "Below this the market is pricing a dilutive raise",
+      "riskReward": "4.9 : 1",
+      "rrNote": "Tight stop (-20.3%) vs TP2 (+100%)",
+      "rrWarning": "⚠️ The prior report showed 17:1 here. That number came from a consensus target the Aug 6 print invalidated — do not compare the two"
+    },
+    "verdict": "Not a new position. Measured base rate is -6.9% at-catalyst with 74% underwater, and this pick no longer has a dated catalyst at all — its event already happened and went against it. If held, this is now 1.5% ค่าขนม on a partnership-replacement bet, not a delivery-growth story.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Not applicable going forward — the earnings catalyst already fired on Aug 6 and resolved against the thesis. The -14.5% drift since the prior report is the market repricing the guidance cut, not pre-event drift.",
+    "preRunupTiming": "n/a — event passed",
+    "preRunupPct": "-14.5% (post-event)",
+    "postWin": {
+      "avgPct": 14,
+      "range": "+12% to +15%",
+      "note": "SERV's own Mar 2026 beat produced +12.3%, and SYM (Nov 2025) +14.5% as a robotics comparable. Both predate the partner exit, so they overstate what a beat is worth now.",
+      "exampleDate": "Mar 2026"
+    },
+    "postLose": {
+      "avgPct": -20,
+      "range": "-3% to -30%",
+      "note": "SERV shed only -3% on a May 2026 disappointment, but the Aug 2026 print was a different order of magnitude — guidance halved plus partner exit — and the stock is -14.5% since. The old comparable understates the new downside.",
+      "exampleDate": "Aug 2026"
+    },
+    "spotSizing": {
+      "pct": 1.5,
+      "reason": "Cut from 3%. Guidance halved, anchor partner gone, two targets cut to $7 and one withdrawn. This is lottery sizing on a partnership replacement, not a 3% conviction position."
+    },
+    "stopPreCatalyst": { "pct": -20.3, "price": 3.85, "note": "No pre-catalyst window remains; this is a general risk stop" },
+    "stopPostCatalyst": { "pct": -30, "note": "If Q3 shows the $9-10M guide was still too high, exit — that would confirm a trend rather than a reset" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "SERV",
+      "event": "Q2 2026 print — revenue miss, guidance cut to $9-10M, Uber divests",
+      "date": "Aug 2026",
+      "movePct": -14.5,
+      "days": 7,
+      "outcome": "bad",
+      "note": "This is the event, not an analogue. It happened two days after the prior report was written and invalidated its entire target basis."
+    },
+    {
+      "ticker": "SERV",
+      "event": "Q1 2026 beat",
+      "date": "Mar 2026",
+      "movePct": 12.3,
+      "days": 2,
+      "outcome": "good",
+      "note": "What a good print used to be worth — while Uber was still the demand channel. Included as the ceiling, with the caveat that the channel is gone."
+    },
+    {
+      "ticker": "SYM",
+      "event": "Strong quarterly print",
+      "date": "Nov 2025",
+      "movePct": 14.51,
+      "days": 1,
+      "outcome": "good",
+      "note": "Robotics-sector comparable for beat magnitude. Note SYM itself fell 13% on a strong print in Aug 2026 — the sector's reaction function has turned less forgiving."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Serve Robotics Q2 2026: revenue misses, 2026 guidance cut to $9-10M as Uber delivery growth reverses; Uber divests stake",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/earnings-watch-serve-robotics-inc-133719086.html",
+    "date": "Aug 2026"
+  },
+  "sources": [
+    "https://finance.yahoo.com/markets/stocks/articles/earnings-watch-serve-robotics-inc-133719086.html",
+    "https://finance.yahoo.com/markets/stocks/articles/serve-robotics-report-q2-earnings-145500054.html",
+    "https://stockanalysis.com/stocks/serv/forecast/",
+    "https://stockanalysis.com/stocks/serv/",
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+    "https://www.bls.gov/news.release/archives/cpi_08122026.htm"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "⚠️ THESIS พังแล้ว — ฉบับนี้แทนที่รายงาน 4 ส.ค. ที่ใช้ catalyst เป็นงบ Q2 วันที่ 6 ส.ค. และตั้งอยู่บน consensus $18.45 · งบออกมาแย่และสมมติฐานนั้นเป็นโมฆะแล้ว · รายได้ Q2 อยู่ที่ $3.2M เทียบคาด $3.92M ขาดทุนกว้างกว่าคาด การเติบโตของ delivery ฝั่ง Uber **ติดลบ** และผู้บริหารหั่น guidance รายได้ทั้งปี 2026 เหลือ $9-10M · หลังจากนั้น Uber ขายหุ้นที่ถืออยู่ออกทั้งหมด — คือพาร์ตเนอร์ที่ thesis ทั้งก้อนวางอยู่บนนั้น · นักวิเคราะห์ตามมา: Oppenheimer หั่น $20 → $7, Guggenheim $13 → $7, Ladenburg $16 → $15 และ Cantor Fitzgerald ลดเป็น Neutral พร้อม **ถอนเป้าราคาทิ้ง** · consensus $18.45 ที่ยังค้างอยู่บนกระดานคือสาเหตุที่ทำให้ตัวนี้ดูเป็น risk/reward ดีที่สุด — ซึ่งไม่จริง · ให้ถือว่ากรอบ bullish จากฉบับก่อนเป็นโมฆะ",
+      "priceNote": "ราคาสด 13 ส.ค. 07:49 · -1.43% วันนี้ · รายงานก่อน (4 ส.ค.) ใช้ $5.65 — drift -14.5% · รายงานนั้นเขียน **ก่อนงบ Q2 วันที่ 6 ส.ค. สองวัน** และฐานเป้านักวิเคราะห์ทั้งหมด (Northland $26, Wedbush $22, Oppenheimer $20, consensus $18.45) เป็นตัวเลขก่อนการหั่นเป้าทั้งสิ้น",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "การหาพาร์ตเนอร์แทน Uber", "description": "เมื่อ Uber ถอนตัวออกหมด คำถามคือ Serve จะเซ็นพาร์ตเนอร์ฝั่ง demand รายใหม่ที่ปริมาณใกล้เคียงได้ไหม · ไม่มีวันที่ประกาศ — เป็นตัวแปรชี้ชะตา ไม่ใช่ event ที่มีกำหนด" },
+        { "name": "การกระจายไปสุขภาพผ่าน Diligent Robotics", "description": "หุ่นยนต์ในโรงพยาบาลเป็นขาที่สองออกจากส่งอาหาร · ยังไม่มีวันและอยู่ช่วงต้นมาก — เป็น optionality ไม่ใช่ catalyst ระยะใกล้ และชดเชย guidance ส่งอาหารที่หายไปครึ่งหนึ่งในปี 2026 ไม่ได้" },
+        { "name": "งบ Q3 2026", "description": "งบแรกที่เทียบกับ guide ใหม่ $9-10M · ข้อทดสอบคือการหั่นครั้งนี้อนุรักษ์นิยมพอจะ beat ได้ไหม หรือเป็นจุดเริ่มของแนวโน้ม" }
+      ],
+      "risks": [
+        "Uber ขายหุ้นออกทั้งหมด — พาร์ตเนอร์หลักและช่องทาง demand ที่เป็นฐานของ thesis เดิมหายไป ไม่ใช่แค่ลดลง",
+        "guidance รายได้ปี 2026 ถูกหั่นเหลือ $9-10M และปริมาณ delivery ใน Q2 ถอยหลัง ไม่ใช่แค่โตช้าลง",
+        "นักวิเคราะห์สองรายหั่นเหลือ $7 (Oppenheimer จาก $20, Guggenheim จาก $13) และ Cantor ถอนเป้าทิ้ง — กรอบเป้าตอนนี้แยกเป็นสองขั้วและอยู่ใกล้ราคาปัจจุบัน ไม่ได้อยู่เหนือ",
+        "ที่ market cap $373M บนรายได้ที่ guide ไว้ $9-10M multiple ยังสะท้อนเรื่องการเติบโตที่เพิ่งหยุดโต",
+        "การเผาเงินสดเทียบแผนรายได้ที่เหลือครึ่งเดียว ทำให้โอกาสเพิ่มทุนแบบ dilute สูงขึ้นมาก",
+        "รายงานฉบับก่อนทำให้ตัวนี้ขึ้นเป็น R/R ดีที่สุดบนกระดาน (17:1) เพราะ consensus $18.45 ที่ค้างอยู่รอดจากงบที่ทำให้มันเป็นโมฆะ — เป็นคำเตือนเรื่อง input ของกระดาน ไม่ใช่จุดเด่นของหุ้นตัวนี้"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed 3.50-3.75% คงเมื่อ 29 ก.ค. มี dissent 3 เสียงอยากขึ้น · FOMC ถัดไป 16 ก.ย.",
+        "inflationNote": "CPI ก.ค. (12 ส.ค.) headline 3.4% จาก 3.5% · core 2.5% · m/m +0.1% — print อ่อน หลังตัวเลขจ้างงาน -23k",
+        "sectorImpact": "บริษัทหุ่นยนต์ขนาด $373M ที่ยังไม่ถึงสเกลและน่าจะต้องเพิ่มทุน ไวต่อหน้าต่างการระดมทุนมาก ซึ่งเป็นช่องทางที่ดอกเบี้ยทำงานจริงในเคสนี้ · แต่ข้อจำกัดที่ผูกอยู่ตอนนี้เป็นเรื่องเฉพาะบริษัท ไม่ใช่ macro",
+        "summary": "MEDIUM — เงื่อนไขการระดมทุนสำคัญ แต่การหั่น guidance และการถอนตัวของพาร์ตเนอร์มีน้ำหนักกว่า"
+      },
+      "entryStrategy": {
+        "verdict": "ไม่ใช่ position ใหม่ · base rate ที่วัดได้คือ -6.9% ณ วัน catalyst และ 74% ติดลบ ขณะที่ตัวนี้ไม่เหลือ catalyst ที่มีวันแล้วด้วยซ้ำ — event เกิดไปแล้วและออกมาสวนทาง · ถ้าถืออยู่ ตอนนี้คือ ค่าขนม 1.5% เดิมพันกับการหาพาร์ตเนอร์ใหม่ ไม่ใช่เรื่องการเติบโตของ delivery",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — **ไม่แนะนำ** · median at-catalyst ที่วัดได้ทั้ง dashboard คือ -6.9% และ 74% ของ pick ติดลบตอน event ของตัวเอง (n=54) และตัวนี้ไม่เหลือ catalyst ที่มีวันมารองรับการเข้าเลย", "timing": "ไม่แนะนำ" },
+          { "note": "ฐานหลังหั่น guidance · จุดที่แผนรายได้ใหม่ถูก price เข้าไปมากขึ้น", "timing": "ถ้าย่อ" },
+          { "note": "มีการ dilute หรือหั่น guidance รอบสอง", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "เป้าหลังหั่นของนักวิเคราะห์ทั้งสองรายอยู่ตรงนี้" },
+        "tp2": { "note": "ต้องมีพาร์ตเนอร์ demand รายใหม่ที่น่าเชื่อถือ" },
+        "tp3": { "note": "เป้า outlier ของ Ladenburg — ต้องให้ขาสุขภาพเป็นจริง · 2027" },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE -14% ตามกฎ stop และตั้งใจให้กว้างกว่านั้นอีก: หุ้นที่เพิ่งหั่น guidance และเสียพาร์ตเนอร์หลักมีหางที่อ้วนกว่าค่ากลางของ corpus",
+          "hardNote": "ต่ำกว่านี้แปลว่าตลาด price การเพิ่มทุนแบบ dilute แล้ว",
+          "rrNote": "stop แคบ (-20.3%) เทียบ TP2 (+100%)",
+          "rrWarning": "⚠️ รายงานฉบับก่อนแสดง 17:1 ตรงนี้ · ตัวเลขนั้นมาจากเป้า consensus ที่งบ 6 ส.ค. ทำให้เป็นโมฆะ — อย่าเอาสองตัวเลขมาเทียบกัน"
+        },
+        "estimateDates": [
+          { "event": "งบ Q3 2026", "note": "บททดสอบแรกของ guide ใหม่ $9-10M" },
+          { "event": "การหาพาร์ตเนอร์แทน", "note": "ไม่มีวัน · ชี้ชะตา thesis" }
+        ]
+      }
+    }
+  }
+}
