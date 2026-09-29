@@ -1,0 +1,192 @@
+{
+  "ticker": "BTBT",
+  "companyName": "Bit Digital, Inc.",
+  "companyDescription": "Ethereum treasury (~164,310 ETH) + AI/HPC infrastructure via majority-owned WhiteFiber (WYFI), whose $865M/10-year Nscale agreement began billing in 2026 — Q3 earnings due Nov 12, 2026, with cash now growing rather than shrinking since our last look",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-09-29T18:00:00.000Z",
+  "price": 1.68,
+  "priceChange": -4.55,
+  "priceNote": "Self-fetched today (live-prices.json cache is from Aug 13, too stale to trust) — closed $1.68 on Sep 28, 2026 (-4.55% that session), but up +21.7% from the $1.38 level at our Aug 4 report as ETH rallied to ~$2,700 and Q2 earnings (Aug 13) beat on revenue and cash flow.",
+  "marketCap": "$605.7M",
+  "sector": "Technology / Crypto Treasury & AI Infrastructure",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Moonshot",
+  "score": 64,
+  "summary": "Bit Digital's Ethereum-treasury-plus-AI/HPC thesis has meaningfully de-risked since our Aug 4 report — the stock didn't just run, the fundamentals genuinely improved. Q2 2026 (reported Aug 13) beat: revenue $32.1M (+15% QoQ), cloud revenue +42% to $23.8M, gross margin 57.9%, and operating cash flow of $46.8M (+33% YoY) pushed cash UP to $83.6M from $79.5M despite a still-large GAAP net loss ($107.2M, ~$86M of it non-cash ETH mark-to-market). WhiteFiber's $865M, 10-year Nscale agreement began billing at its NC-1 facility with full contracted run-rate expected by late August 2026. ETH itself has rallied to ~$2,700, lifting the ~164,310 ETH treasury to roughly $443M. The stock is up +21.7% since our last report ($1.38 → $1.68), but consensus targets barely moved ($4.13 → $4.10), so upside has compressed from +199% to +144%. We're removing the ⚠️ SURVIVAL flag carried in the last two reports — cash grew, not shrank, operating cash flow turned strongly positive, and no new dilutive raise was confirmed in this refresh — but ETH-price sensitivity and convertible-note leverage from the WhiteFiber buildout remain real risks, and a Sep 16 Fed hike (first since 2023) is a fresh headwind. Q3 earnings (Nov 12, 2026) is the next binary read on whether the Nscale ramp is actually showing up in revenue. Position small — 2-5% max.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 2026 Earnings",
+      "description": "Bit Digital reports Q3 2026 results on Nov 12, 2026 (consensus EPS est. -$0.05). Q2 (Aug 13) beat on revenue and cash flow — this print is the market's first real confirmation of whether WhiteFiber's $865M Nscale agreement hit full contracted run-rate billing as guided for late August, and whether cash keeps growing or an ETH mark-to-market swing hits the headline loss again.",
+      "urgencyLabel": "~44 DAYS",
+      "dateBadge": "Nov 12, 2026",
+      "catalystDate": "2026-11-12",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🖥️",
+      "name": "WhiteFiber $865M Nscale Agreement — Run-Rate Ramp",
+      "description": "WhiteFiber's (WYFI) 10-year, $865M Nscale AI/HPC agreement began billing at the NC-1 facility in 2026, with full contracted run-rate expected by late August 2026. Bit Digital holds 27.04M WYFI shares as a separately-tradable equity stake in the buildout, funded partly by the $100M (expandable to $150M) Ethereum-backed term loan it originated as lender.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "ETH price is still the dominant swing factor for treasury value — the ~164,310 ETH treasury is worth roughly $443M at today's ~$2,700 ETH price, but was worth as little as $295M when ETH traded lower earlier in 2026; a reversal of the ETH rally hits both treasury value and the collateral behind WhiteFiber's Ethereum-backed term loan",
+    "GAAP net loss remains large ($107.2M in Q2, ~$86M non-cash from ETH mark-to-market) — the headline loss will keep looking dramatic every quarter regardless of underlying cash generation, and could spook momentum-driven sellers around each print",
+    "Convertible note leverage from the WhiteFiber buildout financing remains on the balance sheet (~$300M+ as of Q1 2026, not independently re-verified this quarter) — layered on top of ETH-price sensitivity, this is a name with real financial complexity across two separately-listed entities (BTBT/WYFI)",
+    "Consensus analyst targets have barely moved ($4.13 → $4.10) even as the stock ran +21.7% since our last report — upside has compressed from +199% to +144%, and the Sep 16, 2026 Fed rate hike (first since 2023, to 3.75-4.00%) is a genuine headwind for both ETH as a risk asset and WhiteFiber's debt-funded buildout economics",
+    "Q3 earnings (Nov 12) is the first real test of whether the Nscale run-rate ramp is showing up in revenue as guided — if it disappoints the way Q1 did (-15.3% same-day), the improved cash position doesn't fully insulate the stock from a sharp drawdown"
+  ],
+  "estimateDates": [
+    { "event": "Q3 2026 Earnings", "dateRange": "Nov 12, 2026", "note": "First real read on whether the Nscale run-rate ramp is flowing through revenue, and whether cash keeps growing", "est": "Consensus EPS -$0.05", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -36.9, "price": 1.06 },
+    { "label": "Base", "color": "yellow", "pct": 48.2, "price": 2.49 },
+    { "label": "Bull", "color": "green", "pct": 144.0, "price": 4.10 },
+    { "label": "Moon", "color": "purple", "pct": 257.1, "price": 6.00 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (4-5 analysts)", "target": 4.10, "rating": "Strong Buy" },
+    { "firm": "Clear Street", "target": 6.00, "rating": "Buy", "note": "Set Sep 1, 2026 — highest target on the Street" },
+    { "firm": "H.C. Wainwright", "target": 4.00, "rating": "Buy", "note": "Maintained Sep 22, 2026" },
+    { "firm": "Craig-Hallum", "target": 3.50, "rating": "Buy", "note": "Since Aug 14, 2026" },
+    { "firm": "Northland Securities", "target": 3.50, "rating": "Buy", "note": "Since Aug 14, 2026 — low end of range" }
+  ],
+  "macroRisk": {
+    "fedRisk": "HIGH",
+    "rateOutlook": "Fed hiked 25bp to 3.75-4.00% on Sep 16, 2026, unanimous 12-0 — the first hike since 2023. Next FOMC decision is Oct 28, 2026.",
+    "inflationNote": "An actual hike (not just hawkish talk) signals the Fed still sees inflation risk as live — a real regime shift for risk assets broadly, including crypto.",
+    "sectorImpact": "BTBT carries double exposure to this: ETH as a risk asset is directly sensitive to a higher-rate, tighter-liquidity regime, and WhiteFiber's debt-funded AI/HPC buildout (the $100-150M term loan) is sensitive to financing costs — a hawkish Fed pressures both halves of the story even as the underlying Nscale/ETH fundamentals have improved.",
+    "summary": "HIGH — upgraded from MEDIUM last report. The Sep 16 hike is a genuine hawkish shift, not just talk, and it lands on a name with real crypto-price and financing-cost exposure even though the operating/cash story has gotten better."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 1.68, "note": "Current price — up 21.7% since our last report on the Q2 beat and ETH rally; chasing here means paying up after both the fundamentals and the price have already moved", "timing": "Now (small)" },
+      { "label": "Entry 2", "level": 1.35, "rangeMax": 1.50, "note": "Pullback zone above the 52-week low ($1.18) — the turbo lane's measured entry-timing edge favors this dip over the current price (median -13.7% from report price to post-catalyst read, 19 completed windows, 79% negative)", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 1.15, "note": "Near/below the 52-week low — only on a surprise dilutive raise, a sharp ETH drawdown, or a Q3 print that repeats the Q1 pattern", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 2.49, "pct": 48.2, "note": "Base — Q3 print confirms the Nscale run-rate ramp showing up in revenue, ETH holds ~$2,700, cash keeps growing" },
+    "tp2": { "price": 4.10, "pct": 144.0, "note": "Bull — hits the 4-5 analyst consensus as WhiteFiber scales and the ETH treasury value re-rates" },
+    "tp3": { "price": 6.00, "pct": 257.1, "note": "Moon — hits Clear Street's high target as ETH extends its rally and Nscale/WhiteFiber capacity keeps expanding beyond the current $865M contract", "moon": true },
+    "stopLoss": {
+      "tight": 1.24, "tightPct": -26.2, "tightNote": "Just above the 52-week low ($1.18) — wider than the turbo lane's overall median MAE (-24.1%) per skill-feedback, since this catalyst type (earnings_beat) needs room for ETH-driven noise on top of ordinary earnings-day volatility",
+      "hard": 0.97, "hardPct": -42.3, "hardNote": "Deep breach below the 52-week low — would suggest a surprise dilutive raise, a sharp ETH drawdown hitting treasury/collateral value together, or a Q3 print that repeats Q1's pattern",
+      "riskReward": "14.5 : 1", "rrNote": "From Entry 2 ($1.43 mid) tight stop vs TP2", "rrWarning": "High headline R/R, and the setup is genuinely better than last report (cash grew, OCF turned strongly positive) — but this is still an ETH-price-linked, convertible-note-leveraged story into a Sep hawkish Fed shift; size for that volatility, not just the R/R math"
+    },
+    "verdict": "Moonshot — small position; fundamentals have improved materially since our last report (cash up, Nscale ramping, ETH rallied) but consensus targets haven't moved with the stock, so upside has compressed. The turbo lane's entry-timing edge still favors the dip (median -13.7%, 79% negative) over chasing the +21.7% run — wait for Entry 2 unless Q3 earnings (Nov 12) delivers a fresh confirmation.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "No consistent pre-earnings runup pattern for BTBT — price action tracks ETH spot moves and Nscale/WhiteFiber news more than the calendar, though the stock did run +21.7% in the seven weeks since the Q2 beat as ETH rallied alongside it.",
+    "preRunupTiming": "no consistent pre-earnings pattern — ETH-price and Nscale-ramp-news driven",
+    "preRunupPct": "highly variable, tracks ETH spot moves and Nscale news more than the calendar",
+    "postWin": {
+      "avgPct": 12,
+      "range": "+10% to +12%",
+      "note": "BTBT's own Q2 2026 print (Aug 13-14, 2026) sent the stock up ~12% on the revenue/cash-flow beat — a fresher, same-company precedent than the SBET/BMNR sector comps from July, and the one most directly comparable to what a Q3 beat could do.",
+      "exampleDate": "Aug 13-14, 2026 (BTBT Q2 beat)"
+    },
+    "postLose": {
+      "avgPct": -15,
+      "range": "-15% to -25%",
+      "note": "BTBT fell -15.3% the session after its May 14, 2026 Q1 print on a revenue miss and a large ETH mark-to-market net loss — the still-relevant downside precedent if Q3 disappoints on the Nscale ramp or ETH reverses sharply.",
+      "exampleDate": "May 14-15, 2026 (BTBT Q1 print)"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Cash position improved materially (grew to $83.6M, OCF +$46.8M in Q2) versus last report's sub-12-month-runway flag, so sizing moves up from 2% — but ETH-price sensitivity, convertible-note leverage, and a fresh hawkish Fed shift keep this at 3%, not higher."
+    },
+    "stopPreCatalyst": { "pct": -26, "price": 1.24, "note": "Just above the 52-week low ($1.18) — wider than the turbo lane's overall median MAE (-24.1%)" },
+    "stopPostCatalyst": { "pct": -25, "note": "If Q3 repeats the Q1 pattern (revenue miss + large mark-to-market loss), the Nscale ramp disappoints, or management announces a dilutive raise, exit — the thesis reverts to a survival story rather than a growth one" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "BTBT",
+      "event": "Q2 2026 earnings beat: revenue +15% QoQ, cash flow +33% YoY, cash grew to $83.6M",
+      "date": "Aug 2026",
+      "movePct": 12,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company precedent for the Q3 setup — shows the market will reward a clean beat on revenue/cash flow, not just narrative."
+    },
+    {
+      "ticker": "BTBT",
+      "event": "Q1 2026 earnings: revenue -13.7% QoQ, $146.7M net loss on ETH mark-to-market",
+      "date": "May 2026",
+      "movePct": -15.3,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Same-company precedent for the downside if Q3 disappoints — still the worst-case anchor for the tight stop."
+    },
+    {
+      "ticker": "SBET",
+      "event": "SharpLink Gaming (Ethereum treasury peer) beat earnings + growth guidance",
+      "date": "Jul 2026",
+      "movePct": 10.15,
+      "days": 1,
+      "outcome": "good",
+      "note": "Comparable Ethereum-treasury business model — shows the peer-group magnitude of an ETH-treasury beat, consistent with BTBT's own Q2 reaction."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Bit Digital Q2 2026: cash grew to $83.6M, operating cash flow +33% YoY as WhiteFiber's $865M Nscale deal began billing",
+    "url": "https://www.stocktitan.net/news/BTBT/",
+    "date": "Aug 2026"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/btbt/",
+    "https://stockanalysis.com/stocks/btbt/forecast/",
+    "https://www.stocktitan.net/news/BTBT/",
+    "https://www.tipranks.com/stocks/btbt/earnings"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Thesis Ethereum treasury บวก AI/HPC ของ Bit Digital ลดความเสี่ยงลงจริงตั้งแต่รายงาน 4 ส.ค. — ไม่ใช่แค่ราคาวิ่ง แต่ปัจจัยพื้นฐานดีขึ้นจริง ผล Q2 2026 (ประกาศ 13 ส.ค.) เกินคาด: รายได้ $32.1M (+15% QoQ) รายได้ cloud +42% เป็น $23.8M gross margin 57.9% และกระแสเงินสดจากการดำเนินงาน $46.8M (+33% YoY) ทำให้เงินสดเพิ่มขึ้นเป็น $83.6M จาก $79.5M แม้ขาดทุนสุทธิตามบัญชี GAAP จะยังสูง ($107.2M ในนั้น ~$86M เป็นรายการไม่ใช่เงินสดจาก ETH mark-to-market) ข้อตกลง Nscale ของ WhiteFiber มูลค่า $865M ระยะ 10 ปี เริ่ม billing ที่โรงงาน NC-1 โดยคาด full run-rate ปลายเดือน ส.ค. 2026 ราคา ETH เองรีบาวด์ขึ้นมาราว $2,700 ดัน treasury ~164,310 ETH ให้มีมูลค่าราว $443M หุ้นขึ้น +21.7% ตั้งแต่รายงานก่อน ($1.38 → $1.68) แต่เป้านักวิเคราะห์แทบไม่ขยับ ($4.13 → $4.10) ทำให้ upside บีบแคบจาก +199% เหลือ +144% เราตัด flag ⚠️ SURVIVAL ที่ติดไว้ 2 รายงานก่อนออก — เงินสดเพิ่มขึ้นไม่ใช่ลดลง กระแสเงินสดพลิกเป็นบวกแรง และไม่พบการระดมทุนแบบ dilutive ใหม่ในการค้นครั้งนี้ — แต่ความ sensitive ต่อราคา ETH และ leverage จากหุ้นกู้แปลงสภาพของการสร้าง WhiteFiber ยังเป็นความเสี่ยงจริง บวกกับ Fed ขึ้นดอกเบี้ย 16 ก.ย. (ครั้งแรกตั้งแต่ปี 2023) เป็นแรงกดดันใหม่ ผลประกอบการ Q3 (12 พ.ย. 2026) คือบทพิสูจน์ binary ถัดไปว่า Nscale ramp จะสะท้อนในรายได้จริงหรือไม่ Size เล็ก — 2-5% สูงสุด",
+      "priceNote": "Self-fetch วันนี้ (live-prices.json cache เก่าตั้งแต่ 13 ส.ค. ใช้ไม่ได้แล้ว) — ปิดที่ $1.68 วันที่ 28 ก.ย. 2026 (-4.55% วันนั้น) แต่ขึ้น +21.7% จากระดับ $1.38 ตอนรายงาน 4 ส.ค. เพราะ ETH รีบาวด์ขึ้นราว $2,700 และผล Q2 (13 ส.ค.) เกินคาดทั้งรายได้และกระแสเงินสด",
+      "scoreLabel": "Moonshot",
+      "catalysts": [
+        { "name": "ผลประกอบการ Q3 2026", "description": "Bit Digital รายงานผล Q3 2026 วันที่ 12 พ.ย. 2026 (consensus EPS est. -$0.05) ผล Q2 (13 ส.ค.) เกินคาดทั้งรายได้และกระแสเงินสด — รอบนี้เป็นบทพิสูจน์จริงครั้งแรกว่าข้อตกลง Nscale มูลค่า $865M ของ WhiteFiber แตะ full run-rate billing ตามที่ guide ไว้ปลาย ส.ค. หรือไม่ และเงินสดจะเพิ่มต่อหรือถูกกระทบจาก ETH mark-to-market อีกครั้ง" },
+        { "name": "ข้อตกลง Nscale $865M ของ WhiteFiber — ramp สู่ run-rate", "description": "ข้อตกลง Nscale AI/HPC ระยะ 10 ปี มูลค่า $865M ของ WhiteFiber (WYFI) เริ่ม billing ที่โรงงาน NC-1 ในปี 2026 คาด full run-rate ปลาย ส.ค. 2026 Bit Digital ถือหุ้น WYFI 27.04 ล้านหุ้นเป็นสัดส่วนทุนแยกที่ซื้อขายได้ในการสร้างนี้ ให้ทุนบางส่วนจากวงเงินกู้ Ethereum-backed $100M (ขยายได้ถึง $150M) ที่ Bit Digital เป็นผู้ปล่อยกู้" }
+      ],
+      "risks": [
+        "ราคา ETH ยังเป็นตัวแปรหลักที่กำหนดมูลค่า treasury — ETH ~164,310 เหรียญมีมูลค่าราว $443M ที่ราคา ETH ปัจจุบัน ~$2,700 แต่เคยเหลือแค่ $295M ตอน ETH ราคาต่ำกว่านี้ช่วงต้นปี 2026 — ถ้า ETH กลับตัวลง จะกระทบทั้งมูลค่า treasury และ collateral ของวงเงินกู้ Ethereum-backed ที่หนุน WhiteFiber",
+        "ขาดทุนสุทธิตามบัญชี GAAP ยังสูง ($107.2M ใน Q2 ในนั้น ~$86M ไม่ใช่เงินสดจาก ETH mark-to-market) — ตัวเลขขาดทุนหลักจะยังดูน่ากลัวทุกไตรมาสไม่ว่าการสร้างเงินสดจริงจะดีแค่ไหน อาจทำให้นักลงทุนสาย momentum ตกใจขายทุกรอบผลประกอบการ",
+        "Leverage จากหุ้นกู้แปลงสภาพที่ใช้ในการสร้าง WhiteFiber ยังอยู่ในงบดุล (~$300M+ ณ Q1 2026 ยังไม่ได้ตรวจสอบอัปเดตไตรมาสนี้) ซ้อนทับความ sensitive ต่อราคา ETH ทำให้เป็นหุ้นที่มีความซับซ้อนทางการเงินจริงข้าม 2 นิติบุคคลที่จดทะเบียนแยกกัน (BTBT/WYFI)",
+        "เป้านักวิเคราะห์ consensus แทบไม่ขยับ ($4.13 → $4.10) แม้หุ้นวิ่ง +21.7% ตั้งแต่รายงานก่อน — upside บีบแคบจาก +199% เหลือ +144% และ Fed ขึ้นดอกเบี้ย 16 ก.ย. 2026 (ครั้งแรกตั้งแต่ปี 2023 เป็น 3.75-4.00%) เป็นแรงกดดันจริงทั้งต่อ ETH ในฐานะ risk asset และเศรษฐศาสตร์การสร้างที่ใช้หนี้ของ WhiteFiber",
+        "ผลประกอบการ Q3 (12 พ.ย.) คือบทพิสูจน์จริงครั้งแรกว่า Nscale run-rate ramp จะสะท้อนในรายได้ตามที่ guide หรือไม่ — ถ้าผิดหวังแบบ Q1 (-15.3% วันเดียว) สถานะเงินสดที่ดีขึ้นก็ยังไม่ช่วยกันหุ้นร่วงแรงได้ทั้งหมด"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed ขึ้นดอกเบี้ย 25bp เป็น 3.75-4.00% เมื่อ 16 ก.ย. 2026 ด้วยมติเอกฉันท์ 12-0 — ครั้งแรกนับตั้งแต่ปี 2023 FOMC ถัดไป 28 ต.ค. 2026",
+        "inflationNote": "การขึ้นดอกเบี้ยจริง (ไม่ใช่แค่ hawkish talk) สะท้อนว่า Fed ยังมองความเสี่ยงเงินเฟ้อจริงจัง — เป็นการเปลี่ยน regime จริงสำหรับ risk asset ในวงกว้าง รวมถึงคริปโต",
+        "sectorImpact": "BTBT มี exposure สองชั้นต่อเรื่องนี้ — ETH ในฐานะ risk asset sensitive ต่อ regime ดอกเบี้ยสูง/สภาพคล่องตึงตัวโดยตรง ขณะที่การสร้าง AI/HPC แบบใช้หนี้ของ WhiteFiber (วงเงินกู้ $100-150M) sensitive ต่อต้นทุนการเงิน — Fed สาย hawkish กดดันทั้งสองด้านพร้อมกัน แม้ปัจจัยพื้นฐาน Nscale/ETH จะดีขึ้นจริง",
+        "summary": "ความเสี่ยง Fed ระดับสูง — ปรับขึ้นจาก MEDIUM ในรายงานก่อน การขึ้นดอกเบี้ย 16 ก.ย. เป็นการเปลี่ยนท่าทีจริง ไม่ใช่แค่คำพูด และกระทบหุ้นที่มี exposure จริงต่อราคาคริปโตและต้นทุนการเงิน แม้ story ด้านการดำเนินงาน/เงินสดจะดีขึ้น"
+      },
+      "entryStrategy": {
+        "verdict": "Moonshot — เข้าไม้เล็ก; ปัจจัยพื้นฐานดีขึ้นจริงตั้งแต่รายงานก่อน (เงินสดเพิ่ม Nscale กำลัง ramp ETH รีบาวด์) แต่เป้า consensus ไม่ขยับตามราคา ทำให้ upside บีบแคบ turbo lane ยังมี entry-timing edge ที่เอื้อต่อการเข้าตอนย่อ (median -13.7% ติดลบ 79%) มากกว่าไล่ราคาที่วิ่งไปแล้ว +21.7% — รอ Entry 2 เว้นแต่ผลประกอบการ Q3 (12 พ.ย.) จะยืนยันเรื่องราวใหม่",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ขึ้น 21.7% ตั้งแต่รายงานก่อนจากผล Q2 ที่เกินคาดและ ETH รีบาวด์; ไล่ราคาตรงนี้คือจ่ายแพงขึ้นหลังทั้งปัจจัยพื้นฐานและราคาขยับไปแล้ว", "timing": "ตอนนี้ (ไม้เล็ก)" },
+          { "note": "โซนย่อเหนือ 52-week low ($1.18) — turbo lane มี entry-timing edge ที่เอื้อต่อการเข้าตอนย่อมากกว่าไล่ราคาปัจจุบัน (median -13.7% จากราคารายงานถึงจุดหลัง catalyst, 19 windows, ติดลบ 79%)", "timing": "ถ้าย่อ" },
+          { "note": "ใกล้/ต่ำกว่า 52-week low — เฉพาะกรณีประกาศระดมทุนแบบ dilutive กะทันหัน ETH ร่วงแรง หรือ Q3 ออกมาซ้ำ pattern Q1", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — ผล Q3 ยืนยัน Nscale run-rate ramp สะท้อนในรายได้ ETH ทรงตัวที่ ~$2,700 เงินสดเพิ่มต่อเนื่อง" },
+        "tp2": { "note": "Bull — แตะเป้า consensus 4-5 นักวิเคราะห์ ขณะ WhiteFiber ขยายตัวและมูลค่า ETH treasury re-rate" },
+        "tp3": { "note": "Moon — แตะเป้าสูงสุดของ Clear Street ขณะ ETH ขยายการรีบาวด์ต่อและกำลังการผลิต Nscale/WhiteFiber ขยายเกินสัญญา $865M ปัจจุบัน", "moon": true },
+        "stopLoss": {
+          "tightNote": "เหนือ 52-week low ($1.18) เล็กน้อย — กว้างกว่า median MAE โดยรวมของ turbo lane (-24.1%) ตาม skill-feedback เพราะ catalyst type นี้ (earnings_beat) ต้องการพื้นที่สำหรับความผันผวนจาก ETH บวกกับความผันผวนปกติของวันประกาศผล",
+          "hardNote": "หลุดลึกต่ำกว่า 52-week low — จะบ่งชี้การระดมทุนแบบ dilutive กะทันหัน ETH ร่วงแรงกระทบทั้ง treasury และ collateral พร้อมกัน หรือ Q3 ออกมาซ้ำ pattern Q1",
+          "rrNote": "จาก Entry 2 ($1.43 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R ตัวเลขสูง และ setup ดีขึ้นจริงเทียบรายงานก่อน (เงินสดเพิ่ม กระแสเงินสดพลิกบวกแรง) แต่นี่ยังเป็น story ที่ผูกราคา ETH และมี leverage จากหุ้นกู้แปลงสภาพ เข้าสู่ช่วง Fed hawkish หลัง 16 ก.ย. — size ให้สอดคล้องกับความผันผวนนี้ ไม่ใช่ดูแค่ตัวเลข R/R"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q3 2026", "note": "บทพิสูจน์จริงครั้งแรกว่า Nscale run-rate ramp จะสะท้อนในรายได้หรือไม่ และเงินสดจะเพิ่มต่อเนื่องหรือไม่" }
+      ]
+    }
+  }
+}

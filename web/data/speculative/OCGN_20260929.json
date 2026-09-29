@@ -1,0 +1,188 @@
+{
+  "ticker": "OCGN",
+  "companyName": "Ocugen, Inc.",
+  "companyDescription": "Gene therapy · Modifier gene therapy platform (OCU400/OCU410/OCU410ST) targeting retinitis pigmentosa, geographic atrophy, and Stargardt disease — deeply discounted small-cap whose near-term regulatory catalyst just slipped, with the real pivotal readout now Q1 2027",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-09-29T12:00:00.000Z",
+  "price": 1.03,
+  "priceChange": 0.98,
+  "priceNote": "$1.03 at Sep 28, 2026 close (+0.98%), near the bottom of its 52-week band ($0.97-$2.73). Down from $1.23 at the Aug 4 report (-16%) after the OCU400 rolling-BLA timeline slipped in late Aug/early Sep. Stock has stabilized in the $1.00-$1.04 range over the past week.",
+  "marketCap": "~$349M",
+  "sector": "Healthcare / Biotechnology",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Moonshot",
+  "score": 58,
+  "summary": "The primary catalyst this report was built around — OCU400's rolling BLA filing start in Q3 2026 — did NOT fire as planned. The FDA clarified it requires Phase 3 topline data in a pre-BLA meeting before agreeing to a rolling submission schedule, so the de-risking waypoint investors were tracking vanished: there is no meaningful OCU400 regulatory event now until the Phase 3 liMeliGhT topline lands in Q1 2027, with BLA submission still targeted for Q2 2027 (the approval timeline itself hasn't slipped, only the interim milestone did). The stock fell ~16% on this news and hasn't recovered. Thesis WEAKENED, not broken: cash runway is strong (survival check clears — $100.4M cash as of Jun 30, 2026, extended to 2028 via a $130M convertible note raise closed in Q2 2026), OCU410 Phase 3 (ArMaDa3, 237 patients) dosed its first patient Sep 1, 2026, and OCU400 picked up a minor positive — provisional approval + priority designation in The Bahamas (Sep 25, 2026) under an expanded-access framework, though this is a small ex-US proof point, not a US regulatory event. The nearest real catalyst is now OCU410ST interim Stargardt data, still guided for Q3 2026 (i.e., within days of this report) — a non-binary, process-style readout, not the pivotal event. Analyst consensus has come down slightly (avg $9.50 across 5 analysts vs $11.43 previously) with a genuine split: Canaccord cut to $11, HC Wainwright and Oppenheimer raised/initiated at $10, Chardan reiterated $7, Weiss upgraded to Sell — even the reduced consensus still implies triple-digit nominal upside, which this report deliberately discounts per the turbo lane's own optimism-bias data.",
+  "catalysts": [
+    {
+      "icon": "🧬",
+      "name": "OCU410ST Interim Data (Stargardt Disease)",
+      "description": "Interim analysis of the OCU410ST Phase 2/3 pivotal confirmatory trial, guided for Q3 2026 by the company — i.e., within days of this report's date. A process/interim readout, not a single clean binary; topline Phase 2/3 data isn't expected until Q2 2027.",
+      "urgencyLabel": "~DAYS (Q3 2026 GUIDANCE)",
+      "dateBadge": "~Sep 30, 2026",
+      "catalystDate": "2026-09-30",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🩺",
+      "name": "OCU400 Phase 3 liMeliGhT Topline Data",
+      "description": "The real pivotal OCU400 readout — the previously-expected Q3 2026 rolling BLA start was reframed away because the FDA requires this topline data first. BLA submission still targeted Q2 2027.",
+      "urgencyLabel": "~4 MONTHS OUT",
+      "dateBadge": "Q1 2027",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🌴",
+      "name": "OCU400 Bahamas Expanded Access (minor, already fired)",
+      "description": "Sep 25, 2026: OCU400 received provisional approval and priority designation under The Bahamas' Longevity and Regenerative Therapies Act, targeting first patient treatment within 90 days of full LARTA approval. A small ex-US proof point, not a material financial catalyst.",
+      "urgencyLabel": "ALREADY FIRED",
+      "dateBadge": "Sep 25, 2026",
+      "catalystDate": "2026-09-25",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "OCU400's rolling BLA start — this report's original primary catalyst — was reframed away: the FDA requires Phase 3 topline data before agreeing to a rolling schedule, so there is no meaningful OCU400 regulatory event until Q1 2027 topline / Q2 2027 BLA filing. The near-term de-risking waypoint the old thesis relied on is gone.",
+      "OCU410ST interim data (guided ~Q3 2026, i.e., imminent) is a non-binary process readout — a mixed or inconclusive result could disappoint without a clean thesis-kill signal either way",
+    "Real dilution overhang from the $130M convertible senior notes (6.75% due 2034, 45% conversion premium) and outstanding warrants; a Sep 21, 2026 stockholder vote on reserved shares tied to this financing was referenced in recent coverage but its outcome is not independently confirmed in public news as of this report",
+    "Sector base rate for a genuine binary miss remains severe even though OCU410ST is only interim, not pivotal: Karyopharm fell -69% on an Aug 2026 Phase 3 miss, Gossamer Bio fell -77% on a Phase 3 PAH miss",
+    "Stock is trading near 52-week lows post the BLA-timeline selloff (-16% since the Aug 4 report) — sentiment is fragile and a further slip or a weak OCU410ST readout risks compounding the de-rate"
+  ],
+  "estimateDates": [
+    { "event": "OCU410ST interim data (Stargardt)", "dateRange": "~Sep 30, 2026", "note": "Company-guided for Q3 2026 — imminent as of this report; non-binary interim readout", "est": "Q3 2026 guidance", "highlight": "yellow" },
+    { "event": "OCU400 Phase 3 liMeliGhT topline", "dateRange": "Q1 2027", "note": "The real pivotal readout — FDA requires this before rolling BLA can begin", "est": "Q1 2027 per company guidance", "highlight": "blue" },
+    { "event": "OCU400 BLA submission", "dateRange": "Q2 2027", "note": "Timeline unchanged from prior guidance despite the rolling-start delay", "est": "Q2 2027", "highlight": "blue" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -40, "price": 0.62 },
+    { "label": "Base", "color": "yellow", "pct": 25, "price": 1.29 },
+    { "label": "Bull", "color": "green", "pct": 90, "price": 1.96 },
+    { "label": "Moon", "color": "purple", "pct": 250, "price": 3.61 }
+  ],
+  "analystTargets": [
+    { "firm": "Canaccord Genuity", "target": 11, "rating": "Buy", "note": "Lowered target, Sep 2026" },
+    { "firm": "Oppenheimer", "target": 10, "rating": "Outperform", "note": "Initiated coverage, Sep 2026" },
+    { "firm": "HC Wainwright", "target": 10, "rating": "Buy", "note": "Raised target, Sep 2026" },
+    { "firm": "Chardan Capital", "target": 7, "rating": "Buy", "note": "Reiterated, Sep 2026" },
+    { "firm": "Street consensus (5 analysts)", "target": 9.5, "rating": "Moderate Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Last confirmed Fed action: held at 3.50-3.75% on Jul 29, 2026 with 3 hawkish dissents favoring a hike — rate-hike tail risk into year-end hasn't gone away",
+    "inflationNote": "Core PCE last confirmed at 3.3% YoY, well above the 2% target",
+    "sectorImpact": "Small-cap biotech is highly sensitive to risk appetite and rates as a long-duration, cash-burning sector, but OCGN's own catalyst calendar (imminent OCU410ST interim data, Q1 2027 OCU400 topline) dominates the stock's direction far more than macro does",
+    "summary": "Macro risk is secondary here — the delayed regulatory timeline and the imminent OCU410ST interim readout, not the Fed, are what move this stock now"
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 1.03, "note": "Current price, near 52-week lows post the BLA-delay selloff. Turbo's own entry-timing data shows the median position is down -13.7% by the time a name reaches its catalyst (n=19, 79% of windows negative), so this level is not the preferred entry", "timing": "Now (small)" },
+      { "label": "Entry 2", "level": 0.85, "rangeMax": 0.92, "note": "Dip zone matching the turbo lane's -13.7% median entry-to-catalyst drawdown — this range sits at or just below the current 52-week low, meaning a fair amount of pessimism may already be priced in by the time it's reached", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 0.7, "note": "Deep dip below the 52-week low — only if the OCU410ST interim data disappoints or sector risk-off deepens", "timing": "If sector selloff" }
+    ],
+    "tp1": { "price": 1.29, "pct": 25, "note": "Base — OCU410ST interim data lands roughly in line, market gives a partial, cautious re-rate given the BLA-delay overhang" },
+    "tp2": { "price": 1.96, "pct": 90, "note": "Bull — OCU410ST data clearly positive, sentiment recovers meaningfully from the BLA-delay selloff" },
+    "tp3": { "price": 3.61, "pct": 250, "note": "Moon — OCU410ST data beats + early Q1 2027 OCU400 topline anticipation builds + partnership/licensing speculation (MENA-style deal precedent)", "moon": true },
+    "stopLoss": {
+      "tight": 0.77, "tightPct": -25, "tightNote": "Below the dip-zone floor — set wider than the fda_decision catalystType's own -18.4% median MAE (n=10) per the feedback prior",
+      "hard": 0.57, "hardPct": -45, "hardNote": "Well below the 52-week low — market has stopped pricing in any near-term catalyst",
+      "riskReward": "3.6 : 1", "rrNote": "vs TP2, using the wider MAE-compliant tight stop", "rrWarning": "Micro-cap biotech — expect violent overnight gaps both ways, especially around the imminent OCU410ST readout"
+    },
+    "verdict": "Very small starter position — this report's original catalyst (rolling BLA start) slipped to Q1/Q2 2027, and turbo's own entry-timing data shows -13.7% median drawdown from report price to catalyst (n=19, 79% negative), so Entry 1 is NOT preferred; size small and prefer the Entry 2 dip zone, which already sits near the 52-week low. fda_decision catalystType is a lane leader (+9.3pp median excess vs +2.0pp overall, n=10) — a real tailwind for the imminent OCU410ST interim data, but this is an interim readout, not the pivotal one.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "OCGN has repeatedly rallied into positive gene-therapy data windows through 2025-2026 as specialist biotech and retail investors position ahead of quarterly updates — but this report period ran the opposite way: the stock fell ~16% on the OCU400 rolling-BLA delay news (late Aug/early Sep 2026) rather than rallying into a catalyst, since the expected near-term milestone was removed rather than delivered.",
+    "preRunupTiming": "2-6 weeks before a genuine readout window historically; this cycle instead saw a de-rate on the removal of an expected milestone",
+    "preRunupPct": "+15% to +40% into genuine readouts historically; -16% this cycle on the BLA-timeline reframing",
+    "postWin": {
+      "avgPct": 90,
+      "range": "+30% to +150%",
+      "note": "Ocugen's own stock re-rated meaningfully through 2025 on a string of positive preliminary gene-therapy readouts (OCU410 geographic-atrophy data around Jan 2026) — this name reacts strongly to incremental good news even pre-approval, though the imminent OCU410ST readout is only interim, not pivotal, so a smaller reaction is more likely than this historical range",
+      "exampleDate": "2025-2026 (OCGN's own history)"
+    },
+    "postLose": {
+      "avgPct": -40,
+      "range": "-16% to -77%",
+      "note": "Two real precedents: OCGN's own -16% de-rate on the Aug/Sep 2026 rolling-BLA delay (a process/timeline miss, not a data miss), and the sector base rate for genuine Phase 2/3 primary-endpoint misses — Karyopharm (KPTI) -69% (Aug 2026), Gossamer Bio -77%. The imminent OCU410ST interim readout is closer in character to the milder, process-style miss than a clean binary failure.",
+      "exampleDate": "Aug/Sep 2026 (OCGN) & Aug 2026 (KPTI)"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Ultra-small-cap, pre-approval biotech whose near-term regulatory catalyst just slipped two quarters — survival check clears (cash to 2028) but real dilution overhang persists from the convertible notes/warrants, and the imminent OCU410ST readout is interim, not pivotal. Size very small."
+    },
+    "stopPreCatalyst": { "pct": -25, "price": 0.77, "note": "Below the dip-zone floor ahead of the imminent OCU410ST interim data — set wider than the fda_decision bucket's own -18.4% median MAE per the feedback prior" },
+    "stopPostCatalyst": { "pct": -35, "note": "If the OCU410ST interim data disappoints or the OCU400 timeline slips again, exit — don't wait for the Q1 2027 pivotal OCU400 readout to bail you out" }
+  },
+  "comparableCases": [
+    { "ticker": "OCGN", "event": "Positive preliminary gene-therapy readouts (OCU410 geographic atrophy data)", "date": "2025-2026", "movePct": 75, "days": 365, "outcome": "good", "note": "Ocugen's own stock re-rated cumulatively through 2025 on a string of positive preliminary data — this name has shown it reacts strongly to incremental good news pre-approval." },
+    { "ticker": "OCGN", "event": "OCU400 rolling BLA start reframed away to Q1/Q2 2027", "date": "Aug/Sep 2026", "movePct": -16, "days": 14, "outcome": "bad", "note": "The near-term de-risking waypoint the prior report's thesis relied on vanished when the FDA required Phase 3 topline data first — a process/timeline miss, not a data miss, but the market de-rated the stock meaningfully anyway." },
+    { "ticker": "KPTI", "event": "Phase 3 XPORT-EC-042 endometrial cancer trial miss", "date": "Aug 2026", "movePct": -69, "days": 1, "outcome": "bad", "note": "A clean primary-endpoint miss triggered a same-day collapse — the sector base rate for a genuine binary readout failure, useful context even though OCU410ST's upcoming data is only interim." },
+    { "ticker": "GOSS", "event": "Phase 3 seralutinib PAH trial miss", "date": "2026", "movePct": -77, "days": 1, "outcome": "bad", "note": "Another Phase 3 primary-endpoint miss with a near-total single-day wipeout — reinforces how binary a genuine pivotal readout is, versus the milder interim event OCGN faces next." }
+  ],
+  "rankChangeSource": {
+    "headline": "UPDATE: Ocugen (OCGN) – The Rolling BLA Rolls Away",
+    "url": "https://biotechdistilled.substack.com/p/update-ocugen-ocgn-the-rolling-bla",
+    "date": "Sep 2026"
+  },
+  "sources": [
+    "https://biotechdistilled.substack.com/p/update-ocugen-ocgn-the-rolling-bla",
+    "https://www.stocktitan.net/news/OCGN/",
+    "https://www.stocktitan.net/news/OCGN/ocugen-receives-provisional-approval-and-priority-designation-under-4n9w8g38c9fz.html",
+    "https://www.biospace.com/press-releases/ocugen-receives-provisional-approval-and-priority-designation-under-the-longevity-and-regenerative-therapies-act-in-the-bahamas-to-provide-ocu400-to-patients-for-treatment-of-retinitis-pigmentosa",
+    "https://www.marketbeat.com/stocks/NASDAQ/OCGN/forecast/",
+    "https://stockanalysis.com/stocks/ocgn/",
+    "https://stockstotrade.com/news/karyopharmtherapeuticsinc-kpti-news-2026_08_02/",
+    "https://www.fiercebiotech.com/biotech/gossamer-bio-fails-phase-3-pulmonary-arterial-hypertension-trial-tries-thread-path-market"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Catalyst หลักที่รายงานนี้เคยสร้างขึ้นรอบมัน — การเริ่มยื่น rolling BLA ของ OCU400 ใน Q3 2026 — ไม่เกิดขึ้นตามแผน FDA ชี้แจงว่าต้องมีข้อมูล topline Phase 3 ในการประชุม pre-BLA ก่อนถึงจะอนุมัติตารางส่ง rolling ได้ waypoint de-risking ที่นักลงทุนติดตามจึงหายไป — ไม่มี event ด้านกำกับดูแลของ OCU400 ที่มีนัยสำคัญจนกว่าจะถึงข้อมูล topline ของ Phase 3 liMeliGhT ใน Q1 2027 ส่วน BLA submission ยังเป้า Q2 2027 เหมือนเดิม (timeline การอนุมัติจริงไม่ได้เลื่อน แค่ milestone ระหว่างทางหายไป) หุ้นร่วง ~16% จากข่าวนี้และยังไม่ฟื้น Thesis อ่อนลง ไม่พัง: cash runway แข็งแรง (survival check ผ่าน — เงินสด $100.4M ณ 30 มิ.ย. 2026 ขยายถึงปี 2028 จากการระดมทุน convertible note $130M ที่ปิดใน Q2 2026) OCU410 Phase 3 (ArMaDa3, 237 คน) ให้ยาผู้ป่วยรายแรกแล้ว 1 ก.ย. 2026 และ OCU400 ได้ข่าวดีเล็กน้อย — provisional approval + priority designation ที่ Bahamas (25 ก.ย. 2026) ภายใต้กรอบ expanded-access แม้จะเป็นแค่ proof point นอกสหรัฐฯ เล็กๆ ไม่ใช่ event ด้านกำกับดูแลของสหรัฐฯ Catalyst ที่ใกล้ที่สุดตอนนี้คือข้อมูล interim OCU410ST (Stargardt) ที่บริษัทยังการันตี Q3 2026 (คือภายในไม่กี่วันจากรายงานนี้) — เป็น readout แบบ process ไม่ใช่ binary เดี่ยว เป้าเฉลี่ยนักวิเคราะห์ลดลงเล็กน้อย (เฉลี่ย $9.50 จาก 5 คน เทียบ $11.43 เดิม) พร้อมความเห็นแตกจริง: Canaccord ลดเป้าเหลือ $11, HC Wainwright และ Oppenheimer ปรับขึ้น/เริ่ม coverage ที่ $10, Chardan คงเป้า $7, Weiss ปรับเป็น Sell — แม้เป้าเฉลี่ยที่ลดลงก็ยัง imply upside สามหลักซึ่งรายงานนี้ตั้งใจ discount ตามข้อมูล optimism-bias ของ turbo lane เอง",
+      "priceNote": "$1.03 ปิด 28 ก.ย. 2026 (+0.98%) ใกล้ก้นช่วง 52 สัปดาห์ ($0.97-$2.73) ลดจาก $1.23 ที่รายงาน 4 ส.ค. (-16%) หลังไทม์ไลน์ rolling BLA ของ OCU400 เลื่อนช่วงปลาย ส.ค./ต้น ก.ย. หุ้นทรงตัวในช่วง $1.00-$1.04 สัปดาห์ที่ผ่านมา",
+      "scoreLabel": "Moonshot",
+      "catalysts": [
+        { "name": "ข้อมูล Interim OCU410ST (โรค Stargardt)", "description": "การวิเคราะห์ interim ของการทดลอง Phase 2/3 pivotal confirmatory ของ OCU410ST บริษัทการันตี Q3 2026 — คือภายในไม่กี่วันจากรายงานนี้ เป็น readout แบบ process/interim ไม่ใช่ binary เดี่ยว ข้อมูล topline Phase 2/3 ตัวจริงยังไม่มาจนกว่าจะถึง Q2 2027" },
+        { "name": "ข้อมูล Topline OCU400 Phase 3 liMeliGhT", "description": "Readout pivotal ตัวจริงของ OCU400 — การเริ่ม rolling BLA ที่เคยคาด Q3 2026 ถูกปรับออกเพราะ FDA ต้องการข้อมูล topline นี้ก่อน BLA submission ยังเป้า Q2 2027" },
+        { "name": "OCU400 Bahamas Expanded Access (ข่าวเล็ก เกิดแล้ว)", "description": "25 ก.ย. 2026: OCU400 ได้ provisional approval และ priority designation ภายใต้กฎหมาย Longevity and Regenerative Therapies ของ Bahamas เป้าให้ยาผู้ป่วยรายแรกภายใน 90 วันหลัง LARTA อนุมัติเต็มรูปแบบ เป็น proof point นอกสหรัฐฯ เล็กๆ ไม่ใช่ catalyst ด้านการเงินที่มีนัยสำคัญ" }
+      ],
+      "risks": [
+        "การเริ่ม rolling BLA ของ OCU400 — catalyst หลักเดิมของรายงานนี้ — ถูกปรับออก: FDA ต้องการข้อมูล topline Phase 3 ก่อนถึงจะอนุมัติตาราง rolling จึงไม่มี event ด้านกำกับดูแลของ OCU400 ที่มีนัยสำคัญจนกว่าจะถึง topline Q1 2027 / ยื่น BLA Q2 2027 waypoint de-risking ระยะสั้นที่ thesis เดิมพึ่งพาหายไปแล้ว",
+        "ข้อมูล interim OCU410ST (การันตี ~Q3 2026 คือใกล้มาก) เป็น readout แบบ process ไม่ใช่ binary — ผลกลางๆ หรือไม่ชัดเจนอาจทำให้ผิดหวังโดยไม่มีสัญญาณ thesis-kill ชัดเจน",
+        "มี dilution overhang จริงจาก convertible senior notes $130M (6.75% due 2034, conversion premium 45%) และ warrant ที่เหลือ; การโหวตผู้ถือหุ้นเรื่อง reserved shares ที่เกี่ยวกับการระดมทุนนี้เมื่อ 21 ก.ย. 2026 ถูกอ้างถึงในข่าวล่าสุดแต่ผลยังไม่ยืนยันอิสระในข่าวสาธารณะ ณ รายงานนี้",
+        "Sector base rate ของการพลาดแบบ binary จริงยังรุนแรง แม้ OCU410ST ตัวที่จะมาถึงจะเป็นแค่ interim ไม่ใช่ pivotal: Karyopharm ร่วง -69% จาก Phase 3 miss (ส.ค. 2026), Gossamer Bio ร่วง -77% จาก Phase 3 PAH miss",
+        "หุ้นเทรดใกล้ 52-week low หลังการเทขายจากข่าวเลื่อน BLA (-16% จากรายงาน 4 ส.ค.) — sentiment เปราะบาง หากเลื่อนอีกหรือ OCU410ST readout อ่อนอาจซ้ำเติม de-rate"
+      ],
+      "macroRisk": {
+        "rateOutlook": "การตัดสินใจ Fed ล่าสุดที่ยืนยันได้: คงดอกเบี้ย 3.50-3.75% วันที่ 29 ก.ค. 2026 พร้อม 3 เสียง dissent แบบ hawkish ความเสี่ยงขึ้นดอกเบี้ยช่วงปลายปียังไม่หมด",
+        "inflationNote": "Core PCE ล่าสุดที่ยืนยันได้ยังอยู่ที่ 3.3% YoY สูงกว่าเป้าหมาย 2% มาก",
+        "sectorImpact": "Biotech เล็กไวต่อ risk appetite และดอกเบี้ยเพราะเป็น long-duration cash-burning แต่ปฏิทิน catalyst ของ OCGN เอง (ข้อมูล interim OCU410ST ที่ใกล้มาก, OCU400 topline Q1 2027) มีน้ำหนักมากกว่า macro",
+        "summary": "ความเสี่ยง macro เป็นเรื่องรอง — ไทม์ไลน์ด้านกำกับดูแลที่เลื่อนออกไปและข้อมูล interim OCU410ST ที่ใกล้มาก ไม่ใช่ Fed คือตัวกำหนดทิศทางหุ้นตอนนี้"
+      },
+      "entryStrategy": {
+        "verdict": "เข้าไม้เล็กมาก — catalyst เดิมของรายงานนี้ (เริ่ม rolling BLA) เลื่อนไป Q1/Q2 2027 และข้อมูล entry-timing ของ turbo lane เองแสดง median drawdown -13.7% จากราคารายงานถึง catalyst (n=19, 79% ติดลบ) — Entry 1 จึงไม่ใช่ตัวที่แนะนำ ให้ size เล็กและรอโซน Entry 2 ที่ใกล้ 52-week low อยู่แล้ว fda_decision เป็น catalystType leader ของ lane (+9.3pp เทียบ overall +2.0pp, n=10) — tailwind จริงสำหรับข้อมูล interim OCU410ST ที่ใกล้มาก แต่เป็นแค่ readout interim ไม่ใช่ตัว pivotal",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน ใกล้ 52-week low หลังการเทขายจากข่าวเลื่อน BLA ข้อมูล entry-timing ของ turbo lane แสดงราคามักลดลง -13.7% median ก่อนถึง catalyst จึงไม่ใช่จุดเข้าที่แนะนำ", "timing": "ตอนนี้ (เล็ก)" },
+          { "note": "โซนย่อตาม median drawdown -13.7% ของ turbo lane — ช่วงนี้ใกล้หรือต่ำกว่า 52-week low ปัจจุบัน แปลว่า pessimism ส่วนใหญ่อาจ price เข้าไปแล้วเมื่อถึงจุดนี้", "timing": "ถ้าย่อ" },
+          { "note": "ย่อลึกต่ำกว่า 52-week low — เฉพาะถ้าข้อมูล OCU410ST ผิดหวังหรือ risk-off ภาคทั้งหมดหนักขึ้น", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Base — ข้อมูล interim OCU410ST ออกมาตามคาดคร่าวๆ ตลาด re-rate บางส่วนอย่างระมัดระวังเพราะยังมี overhang จากข่าวเลื่อน BLA" },
+        "tp2": { "note": "Bull — ข้อมูล OCU410ST ออกมาดีชัดเจน sentiment ฟื้นตัวมีนัยสำคัญจากการเทขายช่วงเลื่อน BLA" },
+        "tp3": { "note": "Moon — ข้อมูล OCU410ST เกินคาด + คาดการณ์ topline OCU400 Q1 2027 เริ่มก่อตัว + เก็งกำไรดีล partnership/license", "moon": true },
+        "stopLoss": {
+          "tightNote": "ต่ำกว่าโซนย่อ — ตั้งกว้างกว่า median MAE -18.4% ของ fda_decision bucket (n=10) ตาม feedback prior",
+          "hardNote": "ต่ำกว่า 52-week low มาก — ตลาดเลิก price catalyst ระยะสั้นใดๆ เข้าไปแล้ว",
+          "rrNote": "เทียบ TP2 โดยใช้ tight stop ที่กว้างขึ้นตามเกณฑ์ MAE",
+          "rrWarning": "หุ้นเล็กมาก ผันผวนสูง ระวัง overnight gap ทั้งสองทาง โดยเฉพาะรอบข้อมูล OCU410ST ที่ใกล้มาก"
+        }
+      },
+      "estimateDates": [
+        { "event": "ข้อมูล Interim OCU410ST (Stargardt)", "note": "บริษัทการันตี Q3 2026 — ใกล้มาก ณ รายงานนี้ เป็น readout interim ไม่ใช่ binary เดี่ยว" },
+        { "event": "ข้อมูล Topline OCU400 Phase 3 liMeliGhT", "note": "Readout pivotal ตัวจริง — FDA ต้องการก่อนเริ่ม rolling BLA ได้" },
+        { "event": "ยื่น BLA ของ OCU400", "note": "ไทม์ไลน์ไม่เปลี่ยนจากเดิมแม้การเริ่ม rolling จะเลื่อน" }
+      ]
+    }
+  }
+}

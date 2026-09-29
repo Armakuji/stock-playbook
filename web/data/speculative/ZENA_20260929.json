@@ -1,0 +1,203 @@
+{
+  "ticker": "ZENA",
+  "companyName": "ZenaTech, Inc.",
+  "companyDescription": "Drone-as-a-Service & defense drones · ZenaDrone subsidiary pursuing DoD/NATO Blue UAS certification for three defense platforms (ZenaDrone 1000, IQ Square, IQ Nano), layered on top of a fast-growing 21-company Drone-as-a-Service rollup (agriculture, construction, surveying, inspections)",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-09-29T00:00:00.000Z",
+  "price": 1.38,
+  "priceChange": -2.82,
+  "priceNote": "Trading near the 52-week low ($1.15), down ~73% over the trailing year despite 705%+ trailing-twelve-month revenue growth — a name where sentiment has decoupled sharply from fundamentals. Small pre-market recovery (+0.72%) into today. Closed Sep 28, 2026.",
+  "marketCap": "~$128M",
+  "sector": "Technology / Robotics & Defense Drones",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 36,
+  "summary": "ZenaTech's three ZenaDrone defense platforms (1000, IQ Square, IQ Nano) are in the cybersecurity validation phase of Blue UAS certification — a Tier-2 LEADER catalyst type in the turbo skill-feedback dataset (regulatory_approval: +5.3pp median excess vs SPY vs +2pp lane-wide, n=8, though 2 of those 8 windows saw SPY down >2%, so treat it as 'works, unproven in a hard risk-off tape'). A fresh Sept 2026 win as a qualified supplier under Canada's Defence Drone Initiative Marketplace adds near-term momentum on top of a DaaS rollup growing revenue triple-digits YoY. ⚠️ This is a genuine survival-risk pick, not a clean setup: cash burn (~$7.2M/month in H1 2026) implies under 12 months of runway against an active $75M ATM shelf (effective Feb 2026) and a fresh $25M registered direct raise (May 2026), with shares outstanding already up ~120%+ YoY from realized dilution. It earns inclusion anyway because the ~$128M market cap is small enough that a real Blue UAS certification win (unlocking DoD/NATO procurement eligibility) or a follow-on contract moves this stock disproportionately — but this is a 2-3% max, survival-aware position, explicitly not a core or even a standard ค่าขนม-sized bet.",
+  "catalysts": [
+    {
+      "icon": "🛡️",
+      "name": "Blue UAS Certification — Cybersecurity Validation Phase",
+      "description": "All three ZenaDrone defense platforms (1000, IQ Square, IQ Nano) advanced together through the streamlined Green-to-Blue AUVSI framework, completing onboarding and NDAA supply-chain review (May 2026). They now face third-party cybersecurity validation, with final Blue UAS status still subject to DCMA review. Full certification unlocks direct DoD/federal/allied procurement eligibility.",
+      "urgencyLabel": "PENDING (cybersecurity phase)",
+      "dateBadge": "H1 2027",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🇨🇦",
+      "name": "Canada Defence Drone Initiative — Qualified Supplier",
+      "description": "ZenaTech became a qualified supplier on Canada's Defence Drone Initiative Marketplace in Sept 2026, adding a second government procurement channel alongside the U.S. Blue UAS pathway.",
+      "urgencyLabel": "ACHIEVED",
+      "dateBadge": "Sep 2026",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "📊",
+      "name": "Q3 2026 Earnings",
+      "description": "Next scheduled report — the read is whether DaaS revenue momentum (1,225% YoY disclosed at Q3) and the cash burn rate are tracking, given the survival-risk backdrop. Consensus estimate: EPS -$0.20, revenue $10.92M.",
+      "urgencyLabel": "~6 WEEKS",
+      "dateBadge": "Nov 9, 2026",
+      "catalystDate": "2026-11-09",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "⚠️ SURVIVAL: cash runway is under 12 months on the current burn trend (~$43.5M used in operating activities in H1 2026, roughly $7.2M/month) against an active Form F-3 shelf (effective Feb 23, 2026, backing a $75M ATM agreement) plus a $25M registered direct offering already completed in May 2026 — shares outstanding are already up ~120%+ YoY from realized dilution, and another capital raise before Blue UAS certification completes is a real possibility, not a tail risk.",
+    "Blue UAS certification is still only in the cybersecurity validation phase, not full certification — remaining phases and DCMA review could slip well past any date estimate, and full certification is not guaranteed even after this phase clears.",
+    "Company remains deeply pre-profit with widening GAAP losses; the DaaS rollup (21 acquisitions done at ~1x revenue) carries real integration and execution risk on top of the drone-certification story.",
+    "Revenue growth (705%+ TTM, 1,225% YoY DaaS) is coming off a very small base — headline growth rates compress fast as the denominator grows, and government/defense revenue specifically depends on continued NDAA-linked budget appropriations.",
+    "52-week range of $1.15–$7.11 shows the stock has already fallen roughly 80% from its high — a name prone to extreme volatility, and a sub-$1.50 share price raises real reverse-split / continued-listing risk on top of the operating risks above."
+  ],
+  "estimateDates": [
+    { "event": "Q3 2026 Earnings", "dateRange": "Nov 9, 2026", "note": "DaaS revenue momentum + burn-rate trajectory vs the survival flag", "est": "est. EPS -$0.20 / rev $10.92M", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -65, "price": 0.48 },
+    { "label": "Base", "color": "yellow", "pct": 40, "price": 1.93 },
+    { "label": "Bull", "color": "green", "pct": 95, "price": 2.69 },
+    { "label": "Moon", "color": "purple", "pct": 250, "price": 4.83 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (2 analysts, S&P Global — last updated Jun 8, 2026, stale)", "target": 4.48, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "HIGH",
+    "rateOutlook": "Fed unexpectedly resumed hiking on Sep 16, 2026 — +25bp to 3.75-4.00%, the first hike since 2023 — with the dot plot signaling one more 2026 hike and a slower, more cautious descent through 2027-28. Next decision Oct 28, 2026.",
+    "inflationNote": "Core PCE still running around 3.3% YoY — the hawkish surprise reflects the Fed prioritizing inflation control even with labor-market softness earlier in the year.",
+    "sectorImpact": "Small-cap, pre-profit defense-drone names like ZENA are among the most rate-sensitive equities in the market — a hawkish surprise directly raises both the cost and probability of the next dilutive capital raise this company will almost certainly need, on top of pressuring the general risk appetite a certification-driven re-rate depends on.",
+    "summary": "HIGH — the Sep 16 hike compounds ZENA's existing survival risk: tightening financial conditions make the next dilutive raise both more likely and more expensive, and any broader risk-off tape would hit an unprofitable micro-cap defense name hardest of all."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 1.38, "note": "Current price, already near the 52-week low ($1.15) — small starter only, NOT the preferred entry given the measured turbo at-catalyst base rate (see verdict)", "timing": "Now (starter only)" },
+      { "label": "Entry 2", "level": 1.05, "rangeMax": 1.20, "note": "Dip zone approaching the 52-week low; measured turbo at-catalyst median return is -13.7% (n=19), so this is the base-rate-preferred entry, not the report-price entry", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 0.70, "note": "Deep dip — thesis-intact only; below this level the market is plausibly pricing real going-concern risk, not just noise", "timing": "Deep dip / thesis-intact only" }
+    ],
+    "tp1": { "price": 1.93, "pct": 39.9, "note": "Base — cybersecurity validation phase progresses without full certification yet; DaaS revenue momentum (1,225% YoY) continues and no further survival-threatening dilution event occurs; assumes a ~6-9 month horizon, not the 30d North Star window" },
+    "tp2": { "price": 2.69, "pct": 94.9, "note": "Bull — Blue UAS full certification achieved plus a first confirmed DoD/NATO procurement order" },
+    "tp3": { "price": 4.83, "pct": 250.0, "note": "Moon — full certification plus a real recurring DoD/NATO contract stack, re-rating ZENA toward an AVAV/RCAT-style defense-drone multiple", "moon": true },
+    "stopLoss": {
+      "tight": 0.97, "tightPct": -30.0, "tightNote": "Set wider than the turbo regulatory_approval medianMAE (-25%, n=8, per skill-feedback) — a tighter stop would get shaken out by ordinary volatility in a stock already down 73% YoY, and given the survival flag this stop is deliberately not tighter than the level where the market would plausibly be pricing real distress rather than noise",
+      "hard": 0.62, "hardPct": -55.0, "hardNote": "Risk-of-zero territory — a breach here should be read as the market pricing a failed capital raise or a stalled/lapsed Blue UAS pathway, not a normal drawdown",
+      "riskReward": "3.2 : 1", "rrNote": "Entry 1 to tight stop vs TP2 (Bull case)", "rrWarning": "Below the 5:1 turbo target — the survival-driven wider stop compresses R/R; the 2-3% position sizing is set low specifically to compensate for that"
+    },
+    "verdict": "SPECULATIVE — ⚠️ genuine survival risk (sub-12-month runway + active shelf, ~120%+ YoY realized dilution) sits underneath a real Tier-2-leader catalyst (regulatory_approval, +5.3pp median excess vs SPY in turbo skill-feedback, n=8). Measured turbo at-catalyst median return is -13.7% (n=19) — do not chase at report price; the dip zone (Entry 2) is the preferred entry. ค่าขนม position only — 2-3% of portfolio max, no more, given the survival flag.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "regulatory_approval",
+    "preRunup": "Staged certification-pathway announcements tend to build momentum step by step (Green-to-Blue progression signals) rather than one single pre-event run-up — AgEagle's eBee TAC and eBee VISION Blue UAS certification announcements, roughly a week apart, each produced a double-digit-to-mid-30s% surge on their own.",
+    "preRunupTiming": "Days-to-weeks around each staged pathway milestone announcement, not a single concentrated pre-event window",
+    "preRunupPct": "+7.7% to +34% per staged milestone announcement (AgEagle/Red Cat precedent)",
+    "postWin": {
+      "avgPct": 20,
+      "range": "+7.66% to +34%",
+      "note": "AgEagle (UAVS) surged 25-34% on Jul 18, 2025 when its eBee TAC drone achieved Blue UAS certification, then jumped again about a week later on eBee VISION certification. Red Cat Holdings (RCAT) popped +7.66% same-day on its Nov 2025 FANG Blue UAS Cleared List addition — but that gain had faded to a -29.27% 30-day return without a follow-on contract, showing win-day pops need a real contract to hold.",
+      "exampleDate": "Jul 2025 (UAVS) / Nov 2025 (RCAT)"
+    },
+    "postLose": {
+      "avgPct": -35,
+      "range": "-20% to -50%",
+      "note": "No drone name in this research has had a Blue UAS certification formally rejected, so there is no clean ZENA-type negative precedent for that exact event. This range instead reflects the turbo lane's regulatory_approval medianMAE (-25%, n=8, skill-feedback) plus ZENA's own demonstrated volatility — the stock is already down ~73% over the trailing year despite 705%+ revenue growth, showing how sharply sentiment can decouple from fundamentals on this specific name.",
+      "exampleDate": "Trailing 12 months to Sep 2026 (ZENA itself)"
+    },
+    "spotSizing": {
+      "pct": 2.5,
+      "reason": "Survival flag caps sizing at the low end of the 2-5% turbo band. The real Tier-2-leader catalyst edge (regulatory_approval, +5.3pp vs +2pp lane-wide, n=8) is offset by sub-12-month runway and an active shelf — conviction in the catalyst type does not override the cash-risk reality."
+    },
+    "stopPreCatalyst": { "pct": -30, "price": 0.97, "note": "Wider than the turbo regulatory_approval medianMAE bar (-25%, n=8, per skill-feedback) — a break below this level ahead of certification news would suggest the market is de-risking the survival story, not just the catalyst" },
+    "stopPostCatalyst": { "pct": -40, "note": "If the cybersecurity validation phase stalls, DCMA review flags an issue, or another dilutive raise is announced at a distressed price, exit — that is the thesis breaking, not ordinary post-catalyst noise" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "UAVS",
+      "event": "eBee TAC drone achieves Blue UAS certification for DoD procurement",
+      "date": "Jul 2025",
+      "movePct": 30,
+      "days": 1,
+      "outcome": "good",
+      "note": "Closest real-world comparable — a small-cap drone name re-rating sharply on the exact catalyst type (Blue UAS certification) ZENA's three platforms are pursuing. A second certification (eBee VISION) about a week later produced a further surge, showing staged certification news compounds rather than being a one-off."
+    },
+    {
+      "ticker": "RCAT",
+      "event": "FANG drone system added to the Blue UAS Cleared List",
+      "date": "Nov 2025",
+      "movePct": 8,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "Same catalyst type but a smaller, faster-fading reaction (+7.66% day-1, -29.27% over the following 30 days) — the honest counter-example showing a regulatory win alone doesn't sustain a re-rate without a follow-on contract. Relevant caution for ZENA: certification is necessary but not sufficient."
+    }
+  ],
+  "sources": [
+    "https://www.stocktitan.net/news/ZENA/zena-tech-advances-three-zena-drone-defense-platforms-through-blue-sf8509ljx7d6.html",
+    "https://www.globenewswire.com/news-release/2026/05/19/3297461/0/en/ZenaTech-Advances-Three-ZenaDrone-Defense-Platforms-Through-Blue-UAS-Certification-Pathway.html",
+    "https://www.sec.gov/Archives/edgar/data/1997403/000137647426000151/zt_f3.htm",
+    "https://www.tipranks.com/news/company-announcements/zenatech-launches-25-million-registered-direct-offering-to-fund-drone-expansion",
+    "https://stockanalysis.com/stocks/zena/",
+    "https://stockanalysis.com/stocks/zena/forecast/",
+    "https://www.investing.com/news/stock-market-news/ageagle-stock-soars-after-ebee-tac-drone-earns-blue-uas-certification-93CH-4141801",
+    "https://finance.yahoo.com/news/red-cat-holdings-rcat-examining-160831403.html",
+    "https://www.theglobeandmail.com/investing/markets/markets-news/GetNews/35521245/zenatech-inc-nasdaq-zena-prepares-25-u-s-daas-hubs-amid-555-billion-drone-market-growth/",
+    "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "สามแพลตฟอร์มโดรนทางทหารของ ZenaDrone (1000, IQ Square, IQ Nano) อยู่ในขั้นตรวจสอบความปลอดภัยไซเบอร์ของการรับรอง Blue UAS — ประเภท catalyst ที่เป็น Tier-2 LEADER ในข้อมูล turbo skill-feedback (regulatory_approval: excess เทียบ SPY เฉลี่ย +5.3pp เทียบกับภาพรวม +2pp, n=8 แม้ 2 ใน 8 ช่วงจะเป็นช่วง SPY ลง >2% จึงควรมองว่า 'ได้ผลจริงแต่ยังไม่พิสูจน์ในตลาดขาลงหนัก') บวกกับการเป็น qualified supplier บน Canada Defence Drone Initiative Marketplace เดือน ก.ย. 2026 ที่เพิ่งได้มาใหม่ ⚠️ นี่คือหุ้นที่มีความเสี่ยงเรื่อง survival จริง ไม่ใช่ setup ที่สะอาด: อัตราการเผาเงินสด (~$7.2M/เดือนใน H1 2026) บ่งชี้รันเวย์ต่ำกว่า 12 เดือน เทียบกับ shelf ที่ใช้งานได้ $75M และเพิ่งระดมทุน $25M เม.ย.-พ.ค. 2026 หุ้นที่หมุนเวียนเพิ่มขึ้นแล้ว ~120%+ YoY จาก dilution จริง ยังคงใส่ไว้เพราะ market cap เล็กเพียง ~$128M ทำให้การได้ Blue UAS certification จริงหรือสัญญาใหม่จะขยับราคาหุ้นแรงมาก — แต่นี่คือ position ขนาด 2-3% สูงสุดเท่านั้น ไม่ใช่ core holding",
+      "priceNote": "เทรดใกล้ 52-week low ($1.15) ลงมาแล้ว ~73% ในรอบปี ทั้งที่รายได้ TTM โต 705%+ — หุ้นที่ sentiment แยกออกจาก fundamental ชัดเจน มีการฟื้นตัวเล็กน้อย pre-market (+0.72%) เข้าสู่วันนี้ ปิดตลาด 28 ก.ย. 2026",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "การรับรอง Blue UAS — ขั้นตรวจสอบความปลอดภัยไซเบอร์", "description": "แพลตฟอร์มโดรนทางทหารทั้งสาม (1000, IQ Square, IQ Nano) ผ่านขั้นตอน onboarding และตรวจสอบ supply chain ตาม NDAA แล้ว (พ.ค. 2026) ตอนนี้อยู่ระหว่างตรวจสอบความปลอดภัยไซเบอร์โดยบุคคลที่สาม สถานะ Blue UAS เต็มรูปแบบยังต้องผ่านการตรวจสอบ DCMA การรับรองเต็มรูปแบบจะปลดล็อคการจัดซื้อโดยตรงจาก DoD/รัฐบาลกลาง/พันธมิตร" },
+        { "name": "Canada Defence Drone Initiative — Qualified Supplier", "description": "ZenaTech กลายเป็น qualified supplier บน Defence Drone Initiative Marketplace ของแคนาดาในเดือน ก.ย. 2026 เพิ่มช่องทางจัดซื้อจากรัฐบาลอีกช่องทางนอกเหนือจาก Blue UAS ของสหรัฐฯ" },
+        { "name": "ผลประกอบการ Q3 2026", "description": "รายงานถัดไปที่กำหนดไว้ — จับตาว่า momentum รายได้ DaaS (โต 1,225% YoY ที่เปิดเผยใน Q3) และอัตราการเผาเงินสดเป็นไปตามแผนหรือไม่ ท่ามกลางความเสี่ยงเรื่อง survival ประมาณการ: EPS -$0.20 รายได้ $10.92M" }
+      ],
+      "risks": [
+        "⚠️ SURVIVAL: รันเวย์เงินสดต่ำกว่า 12 เดือนตามอัตราเผาเงินปัจจุบัน (ใช้เงินสดในการดำเนินงาน ~$43.5M ใน H1 2026 หรือ ~$7.2M/เดือน) เทียบกับ shelf แบบ Form F-3 ที่ใช้งานได้ (มีผล 23 ก.พ. 2026 รองรับข้อตกลง ATM $75M) บวกกับการระดมทุนแบบ registered direct $25M ที่ทำไปแล้วใน พ.ค. 2026 — หุ้นหมุนเวียนเพิ่มขึ้นแล้ว ~120%+ YoY จาก dilution จริง และการระดมทุนรอบใหม่ก่อนการรับรอง Blue UAS จะเสร็จสมบูรณ์เป็นความเป็นไปได้จริง ไม่ใช่ความเสี่ยงส่วนหาง",
+        "การรับรอง Blue UAS ยังอยู่แค่ขั้นตรวจสอบความปลอดภัยไซเบอร์ ยังไม่ใช่การรับรองเต็มรูปแบบ — ขั้นตอนที่เหลือและการตรวจสอบ DCMA อาจล่าช้ากว่าที่ประมาณการไว้มาก และการรับรองเต็มรูปแบบไม่ได้รับประกันแม้ขั้นนี้จะผ่าน",
+        "บริษัทยังขาดทุนหนักตามมาตรฐาน GAAP และขาดทุนเพิ่มขึ้น การขยายธุรกิจ DaaS ผ่านการซื้อกิจการ 21 บริษัทที่ ~1 เท่าของรายได้ มีความเสี่ยงด้านการรวมธุรกิจจริง",
+        "การเติบโตของรายได้ (705%+ TTM, DaaS โต 1,225% YoY) มาจากฐานที่เล็กมาก อัตราการเติบโตแบบนี้จะลดลงเร็วเมื่อฐานใหญ่ขึ้น และรายได้จากภาครัฐ/กลาโหมขึ้นกับงบประมาณที่เชื่อมโยงกับ NDAA อย่างต่อเนื่อง",
+        "ช่วง 52 สัปดาห์ $1.15-$7.11 แสดงว่าหุ้นร่วงมาแล้วประมาณ 80% จากจุดสูงสุด เป็นหุ้นที่ผันผวนรุนแรง และราคาต่ำกว่า $1.50 มีความเสี่ยงเรื่อง reverse split หรือการคงสถานะจดทะเบียนจริงเพิ่มเติมจากความเสี่ยงด้านธุรกิจข้างต้น"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed ขึ้นดอกเบี้ยแบบไม่คาดคิดเมื่อ 16 ก.ย. 2026 — ขึ้น 25bp เป็น 3.75-4.00% ครั้งแรกนับจาก 2023 — dot plot บ่งชี้จะขึ้นอีกครั้งในปี 2026 และลดดอกเบี้ยช้าลงในปี 2027-28 การประชุมถัดไป 28 ต.ค. 2026",
+        "inflationNote": "Core PCE ยังอยู่ราว 3.3% YoY — การขึ้นดอกเบี้ยแบบเซอร์ไพรส์สะท้อนว่า Fed ให้ความสำคัญกับเงินเฟ้อมากกว่าความอ่อนแอของตลาดแรงงานก่อนหน้านี้",
+        "sectorImpact": "หุ้นโดรนทางทหาร small-cap ที่ยังขาดทุนอย่าง ZENA เป็นหนึ่งในหุ้นที่ไวต่อดอกเบี้ยที่สุดในตลาด — การขึ้นดอกเบี้ยแบบเซอร์ไพรส์เพิ่มทั้งต้นทุนและความน่าจะเป็นของการระดมทุนแบบเจือจางครั้งถัดไป และกดดัน risk appetite ที่การ re-rate จากการรับรองต้องพึ่งพา",
+        "summary": "HIGH — การขึ้นดอกเบี้ย 16 ก.ย. ซ้ำเติมความเสี่ยง survival ของ ZENA ที่มีอยู่แล้ว เงื่อนไขการเงินที่ตึงตัวขึ้นทำให้การระดมทุนเจือจางครั้งถัดไปทั้งมีโอกาสมากขึ้นและแพงขึ้น และภาวะ risk-off ในวงกว้างจะกระทบหุ้นกลาโหม micro-cap ที่ยังขาดทุนแรงที่สุด"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — ⚠️ มีความเสี่ยง survival จริง (รันเวย์ต่ำกว่า 12 เดือน + shelf ที่ใช้งานได้ + dilution จริง ~120%+ YoY) อยู่ใต้ catalyst ที่เป็น Tier-2 leader จริง (regulatory_approval, excess +5.3pp เทียบ SPY ใน turbo skill-feedback, n=8) ผลตอบแทนเฉลี่ย ณ จุด catalyst ของ turbo lane วัดได้ -13.7% (n=19) — อย่าไล่ราคาที่ราคารายงาน โซนย่อ (Entry 2) คือจุดเข้าที่แนะนำ ตำแหน่งขนาดค่าขนมเท่านั้น — สูงสุด 2-3% ของ portfolio เนื่องจากมีธงเตือน survival",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน ใกล้ 52-week low ($1.15) แล้ว — เริ่มด้วยขนาดเล็กเท่านั้น ไม่ใช่จุดเข้าที่แนะนำ (ดู verdict)", "timing": "ตอนนี้ (starter เท่านั้น)" },
+          { "note": "โซนย่อใกล้ 52-week low ผลตอบแทนเฉลี่ย ณ จุด catalyst ของ turbo lane วัดได้ -13.7% (n=19) จึงเป็นจุดเข้าที่แนะนำตามสถิติ ไม่ใช่ราคาที่รายงาน", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงหนัก — เข้าเฉพาะถ้า thesis ยังไม่เปลี่ยน ต่ำกว่าระดับนี้ตลาดอาจกำลังราคา going-concern risk จริง ไม่ใช่แค่ noise", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Base — ขั้นตรวจสอบความปลอดภัยไซเบอร์คืบหน้าแต่ยังไม่รับรองเต็มรูปแบบ รายได้ DaaS ยังโตต่อเนื่อง (1,225% YoY) และไม่มีเหตุการณ์ dilution ที่กระทบ survival เพิ่ม สมมติฐานกรอบเวลา ~6-9 เดือน ไม่ใช่หน้าต่าง 30 วันของ North Star" },
+        "tp2": { "note": "Bull — ได้รับการรับรอง Blue UAS เต็มรูปแบบ บวกคำสั่งซื้อจาก DoD/NATO ที่ยืนยันแล้วครั้งแรก" },
+        "tp3": { "note": "Moon — รับรองเต็มรูปแบบบวกสัญญา DoD/NATO ต่อเนื่องจริง ทำให้ ZENA re-rate ไปสู่ multiple แบบหุ้นโดรนกลาโหมอย่าง AVAV/RCAT" },
+        "stopLoss": {
+          "tightNote": "ตั้งกว้างกว่า medianMAE ของ regulatory_approval ใน turbo lane (-25%, n=8 ตาม skill-feedback) — stop ที่แคบกว่านี้จะโดนสั่นออกจากความผันผวนปกติของหุ้นที่ร่วงมาแล้ว 73% ในรอบปี และด้วยธง survival จึงตั้งไม่แคบกว่าระดับที่ตลาดอาจกำลังราคาความเสี่ยงจริง ไม่ใช่แค่ noise",
+          "hardNote": "เขตความเสี่ยงเป็นศูนย์ — หากหลุดระดับนี้ควรตีความว่าตลาดกำลังราคาการระดมทุนที่ล้มเหลวหรือเส้นทาง Blue UAS ที่หยุดชะงัก ไม่ใช่การร่วงตามปกติ",
+          "rrNote": "Entry 1 ถึง tight stop เทียบกับ TP2 (กรณี Bull)",
+          "rrWarning": "ต่ำกว่าเป้า 5:1 ของ turbo — stop ที่กว้างขึ้นจากธง survival ทำให้ R/R แคบลง ขนาด position 2-3% ตั้งไว้ต่ำเพื่อชดเชยส่วนนี้"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q3 2026", "note": "momentum รายได้ DaaS และอัตราการเผาเงินสดเทียบกับธง survival" }
+      ],
+      "catalystSpot": {
+        "preRunup": "ข่าวการรับรองแบบเป็นขั้นตอนมักสร้าง momentum ทีละขั้น (สัญญาณ Green-to-Blue) มากกว่าการวิ่งก่อน event ครั้งเดียว — การรับรอง Blue UAS ของ AgEagle ทั้ง eBee TAC และ eBee VISION ห่างกันประมาณหนึ่งสัปดาห์ ต่างก็ทำให้หุ้นวิ่งขึ้นสองหลักถึงกลาง 30% ด้วยตัวเอง",
+        "preRunupTiming": "หลายวันถึงหลายสัปดาห์รอบข่าวแต่ละขั้นตอน ไม่ใช่ช่วงเดียวก่อน event",
+        "postWin": { "note": "AgEagle (UAVS) วิ่งขึ้น 25-34% เมื่อ 18 ก.ค. 2025 ตอนโดรน eBee TAC ได้รับรอง Blue UAS จากนั้นวิ่งขึ้นอีกครั้งประมาณหนึ่งสัปดาห์ต่อมาตอน eBee VISION ได้รับรอง Red Cat Holdings (RCAT) วิ่งขึ้น +7.66% วันเดียวกันตอน FANG เข้า Blue UAS Cleared List พ.ย. 2025 — แต่กำไรนั้นหายไปเหลือ -29.27% ใน 30 วันถัดมาเพราะไม่มีสัญญาต่อยอด แสดงว่ากำไรวันแรกต้องมีสัญญาจริงมาต่อถึงจะยืน" },
+        "postLose": { "note": "ยังไม่มีโดรนบริษัทไหนถูกปฏิเสธการรับรอง Blue UAS อย่างเป็นทางการ จึงไม่มี precedent เชิงลบที่ตรงกับ ZENA ชัดเจน ตัวเลขนี้อ้างอิง medianMAE ของ regulatory_approval ใน turbo lane (-25%, n=8) บวกความผันผวนที่ ZENA เคยแสดงเอง (ร่วงมาแล้ว ~73% ในรอบปีทั้งที่รายได้โต 705%+)" },
+        "spotSizing": { "reason": "ธง survival กดขนาด position ไว้ที่ปลายล่างของช่วง 2-5% ของ turbo แม้ catalyst type จะเป็น Tier-2 leader จริง (regulatory_approval, +5.3pp เทียบภาพรวม +2pp, n=8) — ความมั่นใจใน catalyst type ไม่ควรลบล้างความเสี่ยงเรื่องเงินสดจริง" },
+        "stopPreCatalyst": { "note": "กว้างกว่า medianMAE ของ regulatory_approval ใน turbo lane (-25%, n=8 ตาม skill-feedback) — การหลุดระดับนี้ก่อนข่าวรับรองแสดงว่าตลาดกำลังราคาความเสี่ยง survival ไม่ใช่แค่ตัว catalyst" },
+        "stopPostCatalyst": { "note": "หากขั้นตรวจสอบความปลอดภัยไซเบอร์หยุดชะงัก DCMA พบปัญหา หรือมีการระดมทุนเจือจางรอบใหม่ที่ราคาต่ำ ให้ออก — นั่นคือ thesis พัง ไม่ใช่ noise หลัง catalyst ปกติ" }
+      },
+      "comparableCases": [
+        { "note": "เปรียบเทียบที่ใกล้เคียงที่สุด — หุ้นโดรน small-cap ที่ re-rate แรงจาก catalyst ประเภทเดียวกัน (การรับรอง Blue UAS) ที่สามแพลตฟอร์มของ ZENA กำลังไล่ตาม การรับรองครั้งที่สอง (eBee VISION) ประมาณหนึ่งสัปดาห์ต่อมาทำให้หุ้นวิ่งต่ออีก แสดงว่าข่าวรับรองแบบเป็นขั้นตอนทบต้นได้ ไม่ใช่แค่ครั้งเดียวจบ" },
+        { "note": "catalyst ประเภทเดียวกันแต่ปฏิกิริยาเล็กกว่าและจางเร็วกว่า (+7.66% วันแรก, -29.27% ใน 30 วันถัดมา) — ตัวอย่างที่ตรงข้ามที่ซื่อสัตย์ว่าการรับรองอย่างเดียวไม่พอจะยืนราคาถ้าไม่มีสัญญาต่อยอด ข้อควรระวังสำหรับ ZENA: การรับรองจำเป็นแต่ไม่พอ" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "ticker": "PDYN",
+  "companyName": "Palladyne AI Corp.",
+  "companyDescription": "Defense autonomy/robotics software · exclusive US manufacturing & distribution partnership with Israel Aerospace Industries for 'battle-proven' loitering munitions, plus new FANUC America, NORDA Dynamics and Orkid Tech UAV partnerships · FY26 revenue guided to grow 357-415% YoY, backlog now $24.6M",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-09-29T18:00:00.000Z",
+  "price": 5.28,
+  "priceChange": -2.04,
+  "priceNote": "Self-fetched today (live-prices.json cache is from Aug 13, too stale to trust) — closed $5.28 on Sep 28, 2026 (-2.04%), almost unchanged from the $5.33 level at our Jul 22 report despite three months of partnership news (FANUC, NORDA Dynamics, Orkid UAV) and a Q2 revenue beat — the market is still waiting on the DoW contract, not incremental partnerships.",
+  "marketCap": "$260.5M",
+  "sector": "Industrials / Defense Robotics & Autonomy Software",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 53,
+  "summary": "The IAI loitering-munitions partnership catalyst still hasn't converted into a Department of War contract three months after Northland flagged it (Jul 2026) — the stock is essentially flat ($5.33 → $5.28) despite the company adding three more partnerships since (FANUC America for manufacturing/logistics robots, NORDA Dynamics for terminal guidance, Orkid Tech for fixed-wing UAVs) and a Q2 print that beat revenue estimates (+470% YoY, +63% QoQ, backlog up to $24.6M from $17M). The market's muted +0.3% earnings-day reaction to that beat — on an EPS miss of -$0.27 vs -$0.24 est. — signals investors want profitability progress and/or the DoW contract specifically, not just partnership headlines. Consensus target is $10.75 (+103.6%), Northland's raised $15 (+184%) is still the high end and still short of a clean 200%+ floor without assuming a further re-rate. Thesis intact but unproven: partnership_win is a measured laggard catalyst type in this lane per skill-feedback (turbo tier2: n=16, medianExcessVsBenchPct -3.8pp vs +2pp overall, gap -5.8pp), so conviction here rests on the DoW-specific tail risk/reward, not the general cadence of partnership news. Position small — 2-5% max.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 2026 Earnings",
+      "description": "Palladyne AI reports Q3 2026 results around Nov 11, 2026 (some trackers show Nov 18 — dated as an estimate). The market will be watching backlog conversion pace against the reaffirmed $24-27M FY26 revenue guide, cash burn against the $32-36M FY26 guide, and any update on DoW contract timing for the IAI loitering-munitions partnership.",
+      "urgencyLabel": "~44 DAYS",
+      "dateBadge": "~Nov 11, 2026",
+      "catalystDate": "2026-11-11",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🚀",
+      "name": "IAI Loitering Munitions Partnership — DoW Contract Still Pending",
+      "description": "Exclusive US manufacturing/distribution partnership with Israel Aerospace Industries for HARPY/HAROP/Mini HARPY loitering munitions remains a manufacturing-and-marketing agreement, not yet a Department of War contract award. Three additional partnerships since our last report (FANUC America robotics, NORDA Dynamics terminal guidance, Orkid Tech fixed-wing UAV) show platform momentum but haven't replaced the DoW contract as the binary re-rate event.",
+      "urgencyLabel": "ONGOING (contract still TBD)",
+      "dateBadge": "H2 2026",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "DoW contract opportunity that Northland flagged in July still hasn't materialized three months later — no confirmed award, size, or timeline — and the stock is flat over that period, suggesting the market isn't pricing it in yet either",
+    "Q2 2026 earnings reaction was muted (+0.3%) despite a real revenue beat (+470% YoY) — an EPS miss (-$0.27 vs -$0.24 est.) shows investors want profitability progress, not just top-line growth, before re-rating the stock",
+    "partnership_win is a measured laggard catalyst type in the turbo lane per skill-feedback (n=16, medianExcessVsBenchPct -3.8pp vs +2pp overall, gap -5.8pp) — the FANUC/NORDA/Orkid partnerships add credibility but the pattern argues against expecting a standalone re-rate from partnership news alone; the DoW contract specifically remains the real thesis",
+    "Consensus upside has compressed and stays inconsistent — Jefferies (Hold, $7, twice-cut from $8) vs Northland (Buy, $15) is a wide, genuinely disclosed analyst split, and even the high end ($15, +184%) doesn't clear a clean 200% floor without assuming a DoW-contract re-rate beyond current targets",
+    "Cash runway is tightening — $43.7M cash as of Jun 30, 2026 against FY26-guided $32-36M annual operating cash burn implies roughly 12-15 months of runway from today; no confirmed active shelf/ATM was found in this refresh, but FY25 financing activity ($39.25M raised) shows the company has tapped capital markets before and would likely do so again if the DoW contract timeline keeps slipping"
+  ],
+  "estimateDates": [
+    { "event": "Q3 2026 Earnings", "dateRange": "~Nov 11, 2026", "note": "Backlog conversion pace, cash burn vs FY26 guide, and any DoW contract timing update", "est": "Consensus not yet published", "highlight": "blue" },
+    { "event": "DoW Contract Decision (potential)", "dateRange": "H2 2026", "note": "Still speculative — no confirmed award, size, or date three months after Northland flagged it", "est": "Northland's bull case, unconfirmed", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -35.0, "price": 3.43 },
+    { "label": "Base", "color": "yellow", "pct": 65.0, "price": 8.71 },
+    { "label": "Bull", "color": "green", "pct": 103.6, "price": 10.75 },
+    { "label": "Moon", "color": "purple", "pct": 212.5, "price": 16.50 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (4 analysts)", "target": 10.75, "rating": "Buy" },
+    { "firm": "Northland Securities", "target": 15.00, "rating": "Buy", "note": "Reiterated Aug 7, 2026 — highest target, cites the DoW contract opportunity" },
+    { "firm": "Lake Street", "target": 11.00, "rating": "Buy", "note": "Reiterated Sep 15, 2026" },
+    { "firm": "Alliance Global Partners", "target": 10.00, "rating": "Buy", "note": "Downgraded from $12 on Aug 6, 2026" },
+    { "firm": "Jefferies", "target": 7.00, "rating": "Hold", "note": "Downgraded from $8 on May 6, 2026 — low end of range" }
+  ],
+  "macroRisk": {
+    "fedRisk": "HIGH",
+    "rateOutlook": "Fed hiked 25bp to 3.75-4.00% on Sep 16, 2026 in a unanimous 12-0 vote — the first hike since 2023, reversing the hold-then-cut expectations priced earlier in the year. Next FOMC decision is Oct 28, 2026.",
+    "inflationNote": "An actual hike (not just hawkish talk) signals the Fed still sees inflation risk as live enough to act — a genuine regime shift for cost-of-capital-sensitive small caps.",
+    "sectorImpact": "PDYN's defense-contract revenue is policy/budget-driven rather than directly rate-sensitive, but a small-cap still burning roughly $8-9M/quarter against $43.7M cash is exposed to the financing channel via any future capital raise — a higher-rate environment makes that capital more expensive right when the DoW contract timeline is already slipping.",
+    "summary": "HIGH — upgraded from MEDIUM last report. The Sep 16 hike is a real hawkish shift, not just talk, and it lands directly on a name that may need to tap capital markets again if the DoW contract keeps taking longer than the market expected."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 5.28, "note": "Current price — flat vs three months ago despite partnership news; the DoW contract catalyst hasn't fired yet so there's little urgency to chase here", "timing": "Now (small)" },
+      { "label": "Entry 2", "level": 4.35, "rangeMax": 4.60, "note": "Near the 52-week-low zone ($4.14) — best R/R if the DoW contract news takes longer to materialize; the turbo lane's measured entry-timing edge favors this dip over chasing the current price (median -13.7% from report price to post-catalyst read, 19 completed windows, 79% negative)", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 3.70, "note": "Deep capitulation — only on a broad small-cap defense-tech selloff or a Jefferies-style downgrade cascade", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 8.71, "pct": 65.0, "note": "Base — backlog keeps converting on the reaffirmed FY26 guided pace over the next 2-3 quarters, no DoW contract needed yet" },
+    "tp2": { "price": 10.75, "pct": 103.6, "note": "Bull — hits the 4-analyst consensus as backlog conversion accelerates and partnership momentum (FANUC, NORDA, Orkid) continues" },
+    "tp3": { "price": 16.50, "pct": 212.5, "note": "Moon — DoW contract materializes at scale and the stock re-rates the way Red Cat Holdings (RCAT) did on its Army SRR drone contract (+911% over ~13 months) — this is the thesis itself, not a base-case expectation", "moon": true },
+    "stopLoss": {
+      "tight": 3.85, "tightPct": -27.1, "tightNote": "Below the 52-week low ($4.14) — wider than the turbo lane's overall median MAE (-24.1%) and specifically wider than this catalyst type's (partnership_win) median MAE of -25.9% per skill-feedback, since a partnership-driven turbo thesis needs room for choppier drawdowns",
+      "hard": 3.06, "hardPct": -42.0, "hardNote": "Deep breach — would suggest the backlog isn't converting, cash runway is tightening faster than guided, or the IAI/DoW opportunity has gone cold",
+      "riskReward": "10.0 : 1", "rrNote": "From Entry 2 ($4.48 mid) tight stop vs TP2", "rrWarning": "High headline R/R, but partnership_win is a measured laggard catalyst type in this lane (turbo tier2, n=16) and the DoW contract itself still hasn't fired after 3 months — size for that uncertainty, not just the R/R math"
+    },
+    "verdict": "ค่าขนม — small, scaled-in position; the turbo lane's entry-timing edge favors the dip (median -13.7% pullback from report price to post-catalyst read, 19 completed windows, 79% negative) over chasing the current flat price, and the DoW contract remains the real catalyst — FANUC/NORDA/Orkid are credibility, not the re-rate trigger.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "PDYN doesn't show a clean pre-event runup pattern for partnership announcements — FANUC (Sep 8), NORDA Dynamics (Aug 26) and Orkid Tech (Aug 19) all landed with muted, same-day-only reactions, consistent with partnership_win being this lane's measured laggard catalyst type (turbo tier2: n=16, medianExcessVsBenchPct -3.8pp vs +2pp overall).",
+    "preRunupTiming": "no consistent pre-announcement runup — reactions (when any) are same-day",
+    "preRunupPct": "roughly flat to low single digits on most recent partnership announcements",
+    "postWin": {
+      "avgPct": 6,
+      "range": "+0.3% to +17.2%",
+      "note": "Wide range from PDYN's own history: the 2026 guidance-hike/IQ 2.0 launch produced +17.2% same-day, but the Aug 6, 2026 Q2 earnings beat (revenue +470% YoY) only moved the stock +0.3% — the market is discriminating between concrete contract/guidance wins and incremental partnership news.",
+      "exampleDate": "2026 (PDYN, guidance hike vs Q2 earnings)"
+    },
+    "postLose": {
+      "avgPct": -15,
+      "range": "-10% to -20%",
+      "note": "General small-cap defense-tech pattern for backlog-conversion disappointments or partnership-timeline slippage — no PDYN-specific bad print yet, but Jefferies' two target cuts (to $8, then $7) show real analyst-side downside conviction.",
+      "exampleDate": "general sector pattern"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "partnership_win is this lane's measured laggard catalyst type and the DoW contract specifically hasn't fired in 3 months — 3% reflects real platform momentum (four partnerships now, Army validation, growing backlog) without over-crediting partnership announcements the data says don't reliably move this stock on their own."
+    },
+    "stopPreCatalyst": { "pct": -27, "price": 3.85, "note": "Below the 52-week low — wider than this catalyst type's -25.9% median MAE per skill-feedback" },
+    "stopPostCatalyst": { "pct": -22, "note": "If Q3 backlog conversion misses the FY26 guided pace, or cash burn runs ahead of the $32-36M FY26 guide with no DoW contract in sight, exit — thesis becomes a financing story rather than a growth one" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "PDYN",
+      "event": "2026 guidance hike + IQ 2.0 product launch",
+      "date": "2026",
+      "movePct": 17.2,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company precedent for how the market rewards concrete guidance/product milestones over partnership announcements."
+    },
+    {
+      "ticker": "PDYN",
+      "event": "Q2 2026 earnings: revenue +470% YoY beat, but EPS miss",
+      "date": "Aug 2026",
+      "movePct": 0.3,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "Muted reaction despite a real revenue beat shows the market wants profitability progress and/or the DoW contract specifically, not just top-line growth."
+    },
+    {
+      "ticker": "RCAT",
+      "event": "Army Short Range Reconnaissance (SRR) drone contract win",
+      "date": "2024-2025",
+      "movePct": 911,
+      "days": 395,
+      "outcome": "good",
+      "note": "Comparable small-cap defense-tech name — shows the magnitude of re-rate a real, at-scale DoD production contract can produce over ~13 months once it converts from partnership/opportunity to award. Supports the Moon case here, not the Base case."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Palladyne AI adds FANUC, NORDA Dynamics and Orkid Tech partnerships while the DoW contract opportunity remains unconfirmed",
+    "url": "https://www.stocktitan.net/news/PDYN/",
+    "date": "Aug-Sep 2026"
+  },
+  "sources": [
+    "https://stockanalysis.com/stocks/pdyn/",
+    "https://stockanalysis.com/stocks/pdyn/forecast/",
+    "https://www.stocktitan.net/news/PDYN/",
+    "https://www.tipranks.com/stocks/pdyn/financials"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Catalyst partnership IAI loitering munitions ยังไม่แปลงเป็นสัญญา Department of War หลังผ่านมา 3 เดือนตั้งแต่ Northland ระบุไว้ (ก.ค. 2026) — หุ้นแทบไม่ขยับ ($5.33 → $5.28) แม้บริษัทจะเพิ่ม partnership อีก 3 รายการ (FANUC America หุ่นยนต์, NORDA Dynamics terminal guidance, Orkid Tech fixed-wing UAV) และผล Q2 ที่รายได้เกินคาด (+470% YoY, +63% QoQ, backlog ขึ้นเป็น $24.6M จาก $17M) ปฏิกิริยาหุ้นวันประกาศผลที่เบามาก (+0.3%) ทั้งที่รายได้เกินคาด — พร้อม EPS พลาดเป้า (-$0.27 vs -$0.24 est.) — สะท้อนว่านักลงทุนต้องการเห็นความคืบหน้าด้าน profitability และ/หรือสัญญา DoW จริงๆ ไม่ใช่แค่ข่าว partnership เป้าเฉลี่ยนักวิเคราะห์อยู่ที่ $10.75 (+103.6%) เป้าที่ Northland ปรับขึ้น $15 (+184%) ยังเป็นเพดานบนและยังไม่ถึงเกณฑ์ 200%+ สะอาดถ้าไม่สมมติการ re-rate เพิ่มเติม Thesis ยังไม่พัง แต่ยังพิสูจน์ไม่ได้ — partnership_win เป็น catalyst type ที่วัดผลแล้วด้อยกว่าค่าเฉลี่ยใน lane นี้ตาม skill-feedback (turbo tier2: n=16, medianExcessVsBenchPct -3.8pp เทียบ +2pp โดยรวม, ห่าง -5.8pp) ดังนั้น conviction ต้องอิงจากสัญญา DoW โดยเฉพาะ ไม่ใช่จังหวะข่าว partnership ทั่วไป Size เล็ก — 2-5% สูงสุด",
+      "priceNote": "Self-fetch วันนี้ (live-prices.json cache เก่าตั้งแต่ 13 ส.ค. ใช้ไม่ได้แล้ว) — ปิดที่ $5.28 วันที่ 28 ก.ย. 2026 (-2.04%) แทบไม่เปลี่ยนจากระดับ $5.33 ตอนรายงาน 22 ก.ค. แม้จะมีข่าว partnership 3 เดือนต่อเนื่อง (FANUC, NORDA Dynamics, Orkid UAV) และผล Q2 ที่เกินคาด — ตลาดยังรอสัญญา DoW ไม่ใช่ partnership ย่อยๆ",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "ผลประกอบการ Q3 2026", "description": "Palladyne AI รายงานผล Q3 2026 ราว 11 พ.ย. 2026 (บาง tracker แสดง 18 พ.ย. — ระบุเป็น estimate) ตลาดจะจับตาความเร็วในการแปลง backlog เทียบ guidance FY26 ที่ $24-27M การเผาเงินสดเทียบ guidance $32-36M และอัปเดต timing สัญญา DoW สำหรับ partnership IAI loitering munitions" },
+        { "name": "Partnership IAI Loitering Munitions — สัญญา DoW ยังรอ", "description": "Partnership แบบ exclusive กับ Israel Aerospace Industries สำหรับ HARPY/HAROP/Mini HARPY ยังเป็นข้อตกลงผลิต/การตลาด ยังไม่ใช่สัญญา Department of War จริง Partnership เพิ่มอีก 3 รายการตั้งแต่รายงานก่อน (FANUC America, NORDA Dynamics, Orkid Tech) แสดง momentum ของ platform แต่ยังไม่แทนที่สัญญา DoW ในฐานะ binary re-rate event" }
+      ],
+      "risks": [
+        "โอกาสสัญญา DoW ที่ Northland ระบุไว้เดือนก.ค. ยังไม่เกิดขึ้นจริงหลังผ่านไป 3 เดือน — ไม่มีการมอบสัญญา ขนาด หรือ timeline ที่ยืนยัน และหุ้นแทบไม่ขยับช่วงนี้ สะท้อนว่าตลาดก็ยังไม่ price-in เช่นกัน",
+        "ปฏิกิริยาผล Q2 2026 เบามาก (+0.3%) ทั้งที่รายได้เกินคาดจริง (+470% YoY) — EPS พลาดเป้า (-$0.27 vs -$0.24 est.) แสดงว่านักลงทุนต้องการเห็นความคืบหน้าด้าน profitability ไม่ใช่แค่การเติบโตของรายได้ ก่อนจะ re-rate หุ้น",
+        "partnership_win เป็น catalyst type ที่วัดผลแล้วด้อยกว่าค่าเฉลี่ยใน turbo lane ตาม skill-feedback (n=16, medianExcessVsBenchPct -3.8pp เทียบ +2pp โดยรวม ห่าง -5.8pp) — partnership FANUC/NORDA/Orkid เพิ่มความน่าเชื่อถือ แต่ pattern บอกว่าอย่าคาดหวัง re-rate จากข่าว partnership เดี่ยวๆ สัญญา DoW โดยเฉพาะยังคือ thesis จริง",
+        "Upside consensus บีบแคบลงและยังไม่สอดคล้องกัน — Jefferies (Hold, $7, ลดเป้า 2 ครั้งจาก $8) เทียบ Northland (Buy, $15) เป็นความเห็นต่างที่เปิดเผยจริงและกว้าง แม้เป้าสูงสุด ($15, +184%) ก็ยังไม่ถึงเกณฑ์ 200% สะอาดถ้าไม่สมมติการ re-rate จากสัญญา DoW เพิ่มเติม",
+        "Cash runway เริ่มตึงตัว — เงินสด $43.7M ณ 30 มิ.ย. 2026 เทียบ guidance เผาเงินสดรายปี FY26 ที่ $32-36M หมายถึง runway ราว 12-15 เดือนจากวันนี้ ไม่พบ shelf/ATM ที่ active ชัดเจนในการค้นครั้งนี้ แต่กิจกรรมการเงิน FY25 ($39.25M ที่ระดมได้) แสดงว่าบริษัทเคยเข้าตลาดทุนมาก่อนและอาจทำอีกถ้า timeline สัญญา DoW ยืดออกไป"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed ขึ้นดอกเบี้ย 25bp เป็น 3.75-4.00% เมื่อ 16 ก.ย. 2026 ด้วยมติเอกฉันท์ 12-0 — ครั้งแรกนับตั้งแต่ปี 2023 พลิกจากที่ตลาดคาดว่าจะคงหรือลดดอกเบี้ยก่อนหน้านี้ FOMC ถัดไป 28 ต.ค. 2026",
+        "inflationNote": "การขึ้นดอกเบี้ยจริง (ไม่ใช่แค่ hawkish talk) สะท้อนว่า Fed ยังมองความเสี่ยงเงินเฟ้อจริงจังพอที่จะลงมือ — เป็นการเปลี่ยน regime จริงสำหรับหุ้นเล็กที่ sensitive ต่อต้นทุนทุน",
+        "sectorImpact": "รายได้จากสัญญากลาโหมของ PDYN ขับเคลื่อนด้วยนโยบาย/งบประมาณมากกว่า sensitive ต่อดอกเบี้ยโดยตรง แต่บริษัทเล็กที่ยังเผาเงินสดราว $8-9M/ไตรมาสเทียบเงินสด $43.7M ยัง expose ต่อช่องทางการเงินผ่านการระดมทุนในอนาคต — สภาพแวดล้อมดอกเบี้ยสูงทำให้ทุนแพงขึ้นในจังหวะที่ timeline สัญญา DoW กำลังยืดออกไป",
+        "summary": "ความเสี่ยง Fed ระดับสูง — ปรับขึ้นจาก MEDIUM ในรายงานก่อน การขึ้นดอกเบี้ย 16 ก.ย. เป็นการเปลี่ยนท่าทีจริง ไม่ใช่แค่คำพูด และกระทบตรงกับหุ้นที่อาจต้องเข้าตลาดทุนอีกครั้งถ้าสัญญา DoW ใช้เวลานานกว่าที่ตลาดคาด"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม — เข้าไม้เล็กแบบ scale in; turbo lane มี entry-timing edge ที่เอื้อต่อการเข้าตอนย่อ (median -13.7% จากราคารายงานถึงจุดหลัง catalyst, 19 windows ที่ครบแล้ว, ติดลบ 79%) มากกว่าไล่ราคาปัจจุบันที่แทบไม่ขยับ และสัญญา DoW ยังคือ catalyst จริง — FANUC/NORDA/Orkid คือความน่าเชื่อถือ ไม่ใช่ตัวจุดชนวน re-rate",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — แทบไม่ขยับจาก 3 เดือนก่อนแม้มีข่าว partnership; catalyst สัญญา DoW ยังไม่เกิด จึงไม่จำเป็นต้องรีบไล่ราคา", "timing": "ตอนนี้ (ไม้เล็ก)" },
+          { "note": "ใกล้โซน 52-week low ($4.14) — R/R ดีที่สุดถ้าข่าวสัญญา DoW ใช้เวลานานกว่าคาด; turbo lane มี entry-timing edge ที่เอื้อต่อการเข้าตอนย่อมากกว่าไล่ราคา (median -13.7% จากราคารายงานถึงจุดหลัง catalyst, 19 windows, ติดลบ 79%)", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงหนัก — เฉพาะ defense-tech เล็กเทขายรวมหรือ downgrade ต่อเนื่องแบบ Jefferies", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — backlog แปลงเป็นรายได้ตามจังหวะ FY26 guide ต่อเนื่องอีก 2-3 ไตรมาส ไม่ต้องรอสัญญา DoW" },
+        "tp2": { "note": "Bull — แตะเป้า consensus 4 นักวิเคราะห์ ขณะ backlog แปลงเร็วขึ้นและ momentum partnership (FANUC, NORDA, Orkid) ต่อเนื่อง" },
+        "tp3": { "note": "Moon — สัญญา DoW เกิดขึ้นจริงในระดับใหญ่ และหุ้น re-rate แบบ Red Cat Holdings (RCAT) ที่วิ่ง +911% ใน ~13 เดือนจากสัญญาโดรน Army SRR — นี่คือ thesis เอง ไม่ใช่ base case", "moon": true },
+        "stopLoss": {
+          "tightNote": "หลุด 52-week low ($4.14) — กว้างกว่า median MAE โดยรวมของ turbo lane (-24.1%) และกว้างกว่า median MAE เฉพาะ catalyst type นี้ (partnership_win) ที่ -25.9% ตาม skill-feedback เพราะ thesis แบบ partnership-driven ต้องการพื้นที่สำหรับความผันผวนที่มากกว่า",
+          "hardNote": "หลุดลึก — จะบ่งชี้ backlog ไม่แปลงตามแผน cash runway ตึงเร็วกว่า guide หรือโอกาส IAI/DoW เย็นชืดลง",
+          "rrNote": "จาก Entry 2 ($4.48 กลาง) stop แคบ vs TP2",
+          "rrWarning": "R/R ตัวเลขสูง แต่ partnership_win คือ catalyst type ที่วัดผลแล้วด้อยกว่าค่าเฉลี่ยใน lane นี้ (turbo tier2, n=16) และสัญญา DoW เองยังไม่เกิดขึ้นหลังผ่านไป 3 เดือน — size ให้สอดคล้องกับความไม่แน่นอนนี้ ไม่ใช่ดูแค่ตัวเลข R/R"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q3 2026", "note": "ความเร็วการแปลง backlog การเผาเงินสดเทียบ FY26 guide และอัปเดต timing สัญญา DoW" },
+        { "event": "การตัดสินใจสัญญา DoW (ถ้ามี)", "note": "ยังเป็นการคาดการณ์ — ไม่มีการมอบสัญญา ขนาด หรือวันที่ยืนยันหลังผ่านไป 3 เดือนตั้งแต่ Northland ระบุไว้" }
+      ]
+    }
+  }
+}
