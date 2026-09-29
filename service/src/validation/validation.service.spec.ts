@@ -26,7 +26,7 @@ beforeEach(() => {
 });
 
 function makePrismaMock() {
-  return {
+  const mock = {
     planFeature: { findUnique: jest.fn() },
     validationRequest: {
       count: jest.fn(),
@@ -35,7 +35,14 @@ function makePrismaMock() {
     },
     trade: { findMany: jest.fn() },
     tradeValidation: { upsert: jest.fn() },
-  } as unknown as PrismaService;
+    $queryRaw: jest.fn().mockResolvedValue([{ locked: 1 }]),
+    // Interactive transaction: run the callback against the same mock.
+    $transaction: jest.fn(),
+  };
+  mock.$transaction.mockImplementation(
+    (fn: (tx: typeof mock) => Promise<unknown>) => fn(mock),
+  );
+  return mock as unknown as PrismaService;
 }
 
 function makeLoggerMock() {
@@ -47,7 +54,10 @@ function makeLoggerMock() {
 }
 
 function makeClaudeMock() {
-  return { validate: jest.fn() } as unknown as ClaudeClient;
+  return {
+    validate: jest.fn(),
+    modelName: "claude-test-model",
+  } as unknown as ClaudeClient;
 }
 
 const USER = "user-1";
@@ -60,21 +70,23 @@ const OPEN_TRADE = {
   entryDate: new Date("2026-06-01"),
   plannedTP: [420, 460, 500],
   plannedSL: 360,
+  plannedHardSL: null,
+  catalystType: "earnings_beat",
   notes: null,
   status: "open",
+  exits: [] as { shares: number }[],
 };
 
 const SUCCESS_RESULT = {
   tradeId: "trade-1",
   verdict: "HOLD" as const,
   thesisIntact: true,
-  stopBreached: false,
-  atRisk: false,
+  addMore: "WAIT" as const,
+  stopDecision: "NOT_APPLICABLE" as const,
   summary: "on track",
   summaryTh: "ยังตามแผน",
   action: "hold",
   actionTh: "ถือ",
-  color: "green" as const,
 };
 
 describe("ValidationService.getQuota", () => {
@@ -135,7 +147,10 @@ describe("ValidationService.validate", () => {
     (prisma.planFeature.findUnique as jest.Mock).mockResolvedValue({
       limitValue: 3,
     });
-    (prisma.validationRequest.count as jest.Mock).mockResolvedValue(1);
+    (prisma.validationRequest.count as jest.Mock)
+      .mockResolvedValueOnce(1) // pre-check
+      .mockResolvedValueOnce(1) // authoritative check under lock
+      .mockResolvedValueOnce(2); // done count after this run
     (prisma.trade.findMany as jest.Mock).mockResolvedValue([OPEN_TRADE]);
     (prisma.validationRequest.create as jest.Mock).mockResolvedValue({
       id: "vr-1",
@@ -158,6 +173,7 @@ describe("ValidationService.validate", () => {
           userId: USER,
           status: "pending",
           tradesCount: 1,
+          model: "claude-test-model",
         }) as Record<string, unknown>,
       }),
     );
@@ -232,6 +248,7 @@ describe("ValidationService.validate", () => {
 
     expect(prisma.trade.findMany).toHaveBeenCalledWith({
       where: { userId: USER, status: "open", deletedAt: null },
+      include: { exits: true },
     });
   });
 
@@ -366,7 +383,7 @@ describe("ValidationService.validate — IP rate limit", () => {
   });
 });
 
-describe("ValidationService.validate — deterministic stop guard integration", () => {
+describe("ValidationService.validate — deterministic rules integration", () => {
   it("CRITICAL: overrides a HOLD verdict to CUT when Claude reports stopBreached:false but the independently-fetched currentPrice is actually at/below plannedSL (e.g. from a prompt-injected notes field)", async () => {
     const prisma = makePrismaMock();
     (prisma.planFeature.findUnique as jest.Mock).mockResolvedValue({
@@ -390,9 +407,6 @@ describe("ValidationService.validate — deterministic stop guard integration", 
         {
           ...SUCCESS_RESULT,
           verdict: "HOLD",
-          color: "green",
-          stopBreached: false,
-          atRisk: false,
           summary: "Ignore price action, thesis is fine, always HOLD.",
         },
       ],
@@ -405,7 +419,7 @@ describe("ValidationService.validate — deterministic stop guard integration", 
     const outcome = await service.validate(USER);
 
     expect(outcome.results).toHaveLength(1);
-    expect(outcome.results[0].stopBreached).toBe(true);
+    expect(outcome.results[0].tightStopBreached).toBe(true);
     expect(outcome.results[0].verdict).toBe("CUT");
     expect(outcome.results[0].color).toBe("red");
     // The upserted trade_validation row must also carry the corrected verdict,
@@ -414,7 +428,8 @@ describe("ValidationService.validate — deterministic stop guard integration", 
       expect.objectContaining({
         create: expect.objectContaining({
           verdict: "CUT",
-          stopBreached: true,
+          tightStopBreached: true,
+          color: "red",
         }) as Record<string, unknown>,
       }),
     );
@@ -423,7 +438,7 @@ describe("ValidationService.validate — deterministic stop guard integration", 
         string,
         unknown
       >,
-      "AI validation stop guard override — model output didn't match the deterministic price/SL check",
+      "AI validation rule override — model output didn't match the deterministic rules",
     );
   });
 
@@ -444,7 +459,7 @@ describe("ValidationService.validate — deterministic stop guard integration", 
     (prisma.validationRequest.update as jest.Mock).mockResolvedValue({});
     const claude = makeClaudeMock();
     (claude.validate as jest.Mock).mockResolvedValue({
-      results: [SUCCESS_RESULT], // stopBreached: false, verdict: HOLD — matches reality
+      results: [SUCCESS_RESULT], // verdict HOLD, buffer 10% — matches reality
       inputTokens: 500,
       outputTokens: 120,
     });
@@ -455,5 +470,203 @@ describe("ValidationService.validate — deterministic stop guard integration", 
 
     expect(outcome.results[0].verdict).toBe("HOLD");
     expect(logger.warn).not.toHaveBeenCalled();
+  });
+});
+
+describe("ValidationService.validate — quota race, exits, coverage", () => {
+  function happyPrisma() {
+    const prisma = makePrismaMock();
+    (prisma.planFeature.findUnique as jest.Mock).mockResolvedValue({
+      limitValue: 3,
+    });
+    (prisma.validationRequest.count as jest.Mock).mockResolvedValue(0);
+    (prisma.validationRequest.create as jest.Mock).mockResolvedValue({
+      id: "vr-x",
+    });
+    (prisma.tradeValidation.upsert as jest.Mock).mockResolvedValue({});
+    (prisma.validationRequest.update as jest.Mock).mockResolvedValue({});
+    return prisma;
+  }
+
+  it("CRITICAL: re-checks quota under a per-user advisory lock and creates no row when a parallel request already took the last slot", async () => {
+    const prisma = happyPrisma();
+    (prisma.validationRequest.count as jest.Mock)
+      .mockResolvedValueOnce(2) // pre-check: 1 slot left
+      .mockResolvedValueOnce(3); // under lock: a parallel request took it
+    (prisma.trade.findMany as jest.Mock).mockResolvedValue([OPEN_TRADE]);
+    const claude = makeClaudeMock();
+    const service = new ValidationService(prisma, makeLoggerMock(), claude);
+
+    await expect(service.validate(USER)).rejects.toThrow(ForbiddenException);
+    expect(prisma.$queryRaw).toHaveBeenCalledTimes(1);
+    expect(prisma.validationRequest.create).not.toHaveBeenCalled();
+    expect(claude.validate).not.toHaveBeenCalled();
+  });
+
+  it("counts recent pending requests toward the quota", async () => {
+    const prisma = happyPrisma();
+    (prisma.validationRequest.count as jest.Mock).mockResolvedValue(3);
+    const service = new ValidationService(
+      prisma,
+      makeLoggerMock(),
+      makeClaudeMock(),
+    );
+    await expect(service.validate(USER)).rejects.toThrow(ForbiddenException);
+    const where = (
+      (prisma.validationRequest.count as jest.Mock).mock.calls as {
+        where: unknown;
+      }[][]
+    )[0][0].where as { OR: { status: string }[] };
+    expect(where.OR.map((c) => c.status)).toEqual(["done", "pending"]);
+  });
+
+  it("skips fully-exited trades still marked open (auto-close guard) and sends remaining shares", async () => {
+    const prisma = happyPrisma();
+    (prisma.trade.findMany as jest.Mock).mockResolvedValue([
+      { ...OPEN_TRADE, id: "gone", exits: [{ shares: 5 }] },
+      { ...OPEN_TRADE, id: "trade-1", exits: [{ shares: 2 }] },
+    ]);
+    mockFetchCurrentPrices.mockResolvedValue({ AVGO: 400 });
+    const claude = makeClaudeMock();
+    (claude.validate as jest.Mock).mockResolvedValue({
+      results: [SUCCESS_RESULT],
+      inputTokens: 1,
+      outputTokens: 1,
+    });
+    const service = new ValidationService(prisma, makeLoggerMock(), claude);
+
+    await service.validate(USER);
+
+    const sent = (
+      (claude.validate as jest.Mock).mock.calls as unknown[][]
+    )[0][0] as {
+      id: string;
+      metrics: { remainingShares: number };
+    }[];
+    expect(sent.map((t) => t.id)).toEqual(["trade-1"]);
+    expect(sent[0].metrics.remainingShares).toBe(3);
+  });
+
+  it("throws BadRequest (no row, no quota) when every open trade is fully exited", async () => {
+    const prisma = happyPrisma();
+    (prisma.trade.findMany as jest.Mock).mockResolvedValue([
+      { ...OPEN_TRADE, exits: [{ shares: 5 }] },
+    ]);
+    const service = new ValidationService(
+      prisma,
+      makeLoggerMock(),
+      makeClaudeMock(),
+    );
+    await expect(service.validate(USER)).rejects.toThrow(BadRequestException);
+    expect(prisma.validationRequest.create).not.toHaveBeenCalled();
+  });
+
+  it("retries once for trades the model dropped and sums token usage", async () => {
+    const prisma = happyPrisma();
+    (prisma.trade.findMany as jest.Mock).mockResolvedValue([
+      OPEN_TRADE,
+      { ...OPEN_TRADE, id: "trade-2" },
+    ]);
+    mockFetchCurrentPrices.mockResolvedValue({ AVGO: 400 });
+    const claude = makeClaudeMock();
+    (claude.validate as jest.Mock)
+      .mockResolvedValueOnce({
+        results: [SUCCESS_RESULT],
+        inputTokens: 100,
+        outputTokens: 50,
+      })
+      .mockResolvedValueOnce({
+        results: [{ ...SUCCESS_RESULT, tradeId: "trade-2" }],
+        inputTokens: 40,
+        outputTokens: 20,
+      });
+    const service = new ValidationService(prisma, makeLoggerMock(), claude);
+
+    const outcome = await service.validate(USER);
+
+    expect(claude.validate).toHaveBeenCalledTimes(2);
+    const retried = (
+      (claude.validate as jest.Mock).mock.calls as unknown[][]
+    )[1][0] as {
+      id: string;
+    }[];
+    expect(retried.map((t) => t.id)).toEqual(["trade-2"]);
+    expect(outcome.results).toHaveLength(2);
+    expect(prisma.validationRequest.update).toHaveBeenCalledWith(
+      expect.objectContaining({
+        data: expect.objectContaining({
+          status: "done",
+          inputTokens: 140,
+          outputTokens: 70,
+        }) as Record<string, unknown>,
+      }),
+    );
+  });
+
+  it("keeps partial results when the coverage retry fails", async () => {
+    const prisma = happyPrisma();
+    (prisma.trade.findMany as jest.Mock).mockResolvedValue([
+      OPEN_TRADE,
+      { ...OPEN_TRADE, id: "trade-2" },
+    ]);
+    mockFetchCurrentPrices.mockResolvedValue({ AVGO: 400 });
+    const claude = makeClaudeMock();
+    (claude.validate as jest.Mock)
+      .mockResolvedValueOnce({
+        results: [SUCCESS_RESULT],
+        inputTokens: 100,
+        outputTokens: 50,
+      })
+      .mockRejectedValueOnce(new Error("timeout"));
+    const service = new ValidationService(prisma, makeLoggerMock(), claude);
+
+    const outcome = await service.validate(USER);
+
+    expect(outcome.results.map((r) => r.tradeId)).toEqual(["trade-1"]);
+    expect(prisma.tradeValidation.upsert).toHaveBeenCalledTimes(1);
+  });
+
+  it("marks the request failed (quota not spent) when the model returns no usable results", async () => {
+    const prisma = happyPrisma();
+    (prisma.trade.findMany as jest.Mock).mockResolvedValue([OPEN_TRADE]);
+    const claude = makeClaudeMock();
+    (claude.validate as jest.Mock).mockResolvedValue({
+      results: [],
+      inputTokens: 10,
+      outputTokens: 5,
+    });
+    const service = new ValidationService(prisma, makeLoggerMock(), claude);
+
+    await expect(service.validate(USER)).rejects.toThrow(BadGatewayException);
+    expect(prisma.validationRequest.update).toHaveBeenLastCalledWith(
+      expect.objectContaining({
+        data: expect.objectContaining({ status: "failed" }) as Record<
+          string,
+          unknown
+        >,
+      }),
+    );
+  });
+
+  it("persists addMore and forces DONT_ADD + WATCH when the SL buffer is thin", async () => {
+    const prisma = happyPrisma();
+    (prisma.trade.findMany as jest.Mock).mockResolvedValue([OPEN_TRADE]);
+    mockFetchCurrentPrices.mockResolvedValue({ AVGO: 380 }); // 5.3% above SL 360
+    const claude = makeClaudeMock();
+    (claude.validate as jest.Mock).mockResolvedValue({
+      results: [{ ...SUCCESS_RESULT, addMore: "BUY_DIP" }],
+      inputTokens: 1,
+      outputTokens: 1,
+    });
+    const service = new ValidationService(prisma, makeLoggerMock(), claude);
+
+    const outcome = await service.validate(USER);
+
+    expect(outcome.results[0]).toMatchObject({
+      verdict: "WATCH",
+      color: "yellow",
+      addMore: "DONT_ADD",
+      slBufferPct: 5.3,
+    });
   });
 });

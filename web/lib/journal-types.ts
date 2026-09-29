@@ -34,7 +34,8 @@ export interface Trade {
   shares: number;
   entryDate: string;                // ISO date
   plannedTP: number[];              // [tp1, tp2, tp3]
-  plannedSL: number;
+  plannedSL: number;                // tight stop
+  plannedHardSL?: number | null;    // optional structural stop below plannedSL
   status: TradeStatus;
   exits: TradeExit[];
   realizedPnL?: number;             // computed on close; stored for speed
@@ -48,12 +49,22 @@ export interface JournalFile {
 }
 
 export type ValidatorVerdict = "HOLD" | "CUT" | "WATCH";
+export type AddMoreCall = "BUY_DIP" | "WAIT" | "DONT_ADD";
+export type StopDecision = "HOLD_TO_HARD_STOP" | "CUT_NOW" | "EXIT_IMMEDIATELY";
 
 export interface ValidatorResult {
   verdict: ValidatorVerdict;
   thesisIntact: boolean;
-  stopBreached: boolean;
+  // Stop flags, buffer and color are computed by the API's rules engine
+  // (service/src/validation/trade-rules.ts), not by the model.
+  tightStopBreached?: boolean;
+  /** Legacy name (pre hard-stop split, CLI journal-validation.json) — same meaning as tightStopBreached. */
+  stopBreached?: boolean;
+  hardStopBreached?: boolean;
   atRisk: boolean;
+  slBufferPct?: number | null;
+  addMore?: AddMoreCall | null;
+  stopDecision?: StopDecision | null;
   summary: string;
   summaryTh?: string;
   action: string;

@@ -38,6 +38,42 @@ describe("fetchNewsForTickers", () => {
       });
     });
 
+    it("drops headlines Yahoo tags only with other tickers, keeps untagged ones", async () => {
+      global.fetch = jest.fn().mockResolvedValue({
+        ok: true,
+        json: () => ({
+          news: [
+            {
+              title: "Other co",
+              publisher: "P",
+              link: "l1",
+              relatedTickers: ["FLYW"],
+            },
+            {
+              title: "Ours",
+              publisher: "P",
+              link: "l2",
+              relatedTickers: ["FLY", "SPCE"],
+            },
+            { title: "Untagged", publisher: "P", link: "l3" },
+          ],
+        }),
+      });
+      const news = await fetchNewsForTickers(["FLY"]);
+      expect(news.FLY.map((n) => n.title)).toEqual(["Ours", "Untagged"]);
+    });
+
+    it("leaves publishedAt null when Yahoo gives no timestamp (never fakes 'now')", async () => {
+      global.fetch = jest.fn().mockResolvedValue({
+        ok: true,
+        json: () => ({
+          news: [{ title: "T", publisher: "P", link: "l" }],
+        }),
+      });
+      const news = await fetchNewsForTickers(["AVGO"]);
+      expect(news.AVGO[0].publishedAt).toBeNull();
+    });
+
     it("returns an empty array for a ticker when Yahoo fails", async () => {
       global.fetch = jest.fn().mockResolvedValue({ ok: false, status: 429 });
       const news = await fetchNewsForTickers(["AVGO"]);
