@@ -1,0 +1,168 @@
+{
+  "ticker": "IQMX",
+  "companyName": "IQM Quantum Computers Oyj",
+  "companyDescription": "Superconducting full-stack quantum computers · Commercial momentum accelerating (Brazil, Japan/Toyo second system, Finland LUMI staged path) but the market keeps selling the stock on each announcement — the persistent sentiment/fundamentals gap from the last report has only deepened",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-09-29T00:00:00.000Z",
+  "price": 10.30,
+  "priceChange": 0.0,
+  "priceNote": "Self-fetched today (live-prices.json cache dated Aug 13, too stale to use). Up modestly from $9.65 (Aug 5) but the pattern flagged last report has repeated and intensified: three separate commercial-win announcements in September each produced a same-day decline (LUMI -1.63%, Toyo -5.09%, Brazil -4.93%) — good news is still not being rewarded.",
+  "marketCap": "$1.95B",
+  "sector": "Technology / Quantum Computing",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 52,
+  "summary": "IQM's commercial momentum has genuinely accelerated since the last report — a second full-stack system sale to Toyo (Japan, Sep 15), a first South American deployment via Brazil's Eldorado Research Institute (Sep 17), and a staged upgrade path selected by Finland's LUMI AI Factory toward logical qubits (Sep 10) — plus BTIG initiated coverage at Buy with a $20 target (~Sep 21), the first fresh sell-side validation since the IPO. Yet the stock fell on EVERY one of those three announcement days (-1.63%, -5.09%, -4.93%), the exact 'good news doesn't move this stock' pattern the last report flagged, now with three more data points confirming it's persistent rather than a one-off. Analyst coverage remains thin (2 analysts: BTIG Buy $20, Redburn Hold $12.88, average $16.44) — per this run's tier2 feedback, IQMX's catalystType (partnership_win) is a measured LAGGARD across the turbo lane (medianExcessVsBenchPct -3.8pp vs +2.0pp overall, n=16), which argues for keeping conviction and sizing small even as the underlying commercial story improves. Cash (€309.4M, runway into Q2 2028) removes survival risk.",
+  "catalysts": [
+    {
+      "icon": "🏛️",
+      "name": "US/EU Government Quantum Contract Wave",
+      "description": "Still the binary Moon catalyst — IQMX was excluded from the May 2026 $2B US Commerce Dept quantum equity round that sent RGTI/QBTS/Infleqtion up 30%+ in a single day. No confirmed date or new signal since the last report on inclusion in a future round.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "🌎",
+      "name": "Commercial Momentum — Toyo, Brazil, LUMI",
+      "description": "Second full-stack system sale to Toyo Corporation (Japan, Sep 15), first South American deployment via Brazil's Eldorado Research Institute (Sep 17), and Finland's LUMI AI Factory selecting IQM's staged path to logical-qubit quantum computing (Sep 10) — three real commercial wins in three weeks, none of which moved the stock up.",
+      "urgencyLabel": "ACCELERATING",
+      "dateBadge": "Sep 2026",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "📈",
+      "name": "BTIG Buy Initiation ($20 Target)",
+      "description": "First fresh sell-side validation since the IPO — BTIG's Jesse Sobelson initiated coverage (~Sep 21) at Buy with a $20 price target (+94% from current price), versus Redburn's more cautious Hold at $12.88.",
+      "urgencyLabel": "NEW COVERAGE",
+      "dateBadge": "Sep 2026",
+      "badgeColor": "green",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "The 'good news doesn't move this stock' pattern flagged last report has now repeated THREE more times in September (LUMI -1.63%, Toyo -5.09%, Brazil -4.93%) — this is a persistent, deepening sentiment discount, not a one-off reaction",
+    "Per this run's feedback data, IQMX's catalystType (partnership_win) is a measured tier-2 LAGGARD across the whole turbo lane (medianExcessVsBenchPct -3.8pp vs +2.0pp overall, n=16, gap -5.8pp) — commercial-deal-driven turbo picks have underperformed as a category, independent of this specific stock's news",
+    "Analyst coverage is still thin — only 2 named analysts (BTIG Buy $20, Redburn Hold $12.88) — treat any single target with real caution given the small sample",
+    "Continued warrant/dilution overhang from the SPAC-era structure — prior report noted 577,237 Kreos Capital shares exercised in July; further exercises remain a live risk",
+    "The real binary catalyst (US/EU government quantum-equity award) already passed IQMX over once in May 2026, with no confirmed signal of inclusion in a future round since"
+  ],
+  "estimateDates": [
+    { "event": "US/EU government quantum contract decision", "dateRange": "H2 2026 (undated)", "note": "Still the binary Moon catalyst; no new signal on timing since the last report", "est": "Unconfirmed", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -35, "price": 6.70 },
+    { "label": "Base", "color": "yellow", "pct": 50, "price": 15.45 },
+    { "label": "Bull", "color": "green", "pct": 95, "price": 20.09 },
+    { "label": "Moon", "color": "purple", "pct": 240, "price": 35.02 }
+  ],
+  "analystTargets": [
+    { "firm": "BTIG (Jesse Sobelson, Sep 2026 initiation)", "target": 20.00, "rating": "Buy" },
+    { "firm": "Rothschild & Co Redburn (Mike Harrison)", "target": 12.88, "rating": "Hold" },
+    { "firm": "Average (2 analysts)", "target": 16.44, "rating": "Moderate Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Growth/speculative tech like quantum computing is rate-sensitive, but IQMX's own persistent post-news price action and the government-contract binary continue to dominate the near-term stock story far more than macro.",
+    "inflationNote": "Core inflation remains above target — a secondary factor for this name.",
+    "sectorImpact": "The repeated sell-the-news pattern this quarter (three times in September alone) suggests the current discount is IQMX-specific/sector-sentiment-driven rather than a macro-rate story.",
+    "summary": "Macro risk is secondary here — the persistent gap between genuinely improving commercial fundamentals and the stock's reaction is the dominant story, now with three more months of confirming evidence."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 10.30, "note": "Current price — turbo lane's measured median at-catalyst return is -13.7% (n=19), and this specific stock has sold off on every recent catalyst, so this is not the default entry", "timing": "Now (2% max)" },
+      { "label": "Entry 2", "level": 9.20, "rangeMax": 9.60, "note": "Toward the recent 52-week-low zone — given the demonstrated pattern of selling into good news, this remains the more disciplined entry", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 7.80, "note": "Deep dip if quantum-sector sentiment de-rates further", "timing": "If sector selloff" }
+    ],
+    "tp1": { "price": 15.45, "pct": 50.0, "note": "Base — backlog conversion tracks the FY26 guide with continued commercial wins (Brazil/Toyo/LUMI-style deals), no fresh catalyst needed; Base assumes a ~6-9mo horizon for sentiment to catch up to the commercial cadence" },
+    "tp2": { "price": 20.09, "pct": 95.0, "note": "Bull — hits BTIG's $20 target as sentiment finally starts crediting the commercial momentum" },
+    "tp3": { "price": 35.02, "pct": 240.0, "note": "Moon — a real US/EU government quantum-contract win lands, triggering the full re-rate seen in RGTI/QBTS/DWAV in May 2026", "moon": true },
+    "stopLoss": {
+      "tight": 7.40, "tightPct": -28.2, "tightNote": "Wider than the turbo partnership_win-type median MAE (-25.9%, n=16) given this name's demonstrated pattern of selling off even on good news",
+      "hard": 6.20, "hardPct": -39.8, "hardNote": "Deep breach — backlog conversion stalling, a failed government-contract bid confirmed, or a new dilutive warrant wave",
+      "riskReward": "3.3 : 1", "rrNote": "From Entry 2 ($9.40 mid) tight stop vs TP2 ($20.09)", "rrWarning": "Convex on paper via the Moon case, but this name has shown three more times this quarter that good news doesn't stop the slide — treat every stop level as real, not theoretical"
+    },
+    "verdict": "ค่าขนม SPECULATIVE — 2% max, unchanged smallest sizing. Measured turbo median at-catalyst return is -13.7% (n=19); this specific stock has additionally sold off on every recent catalyst, so Entry 1 is explicitly not the default — wait for the $9.20-9.60 zone. IQMX's catalystType (partnership_win) is a measured tier-2 laggard across the turbo lane, so this pick needs the wide Moon case (240%, government contract) to justify inclusion, not the Base/Bull cases alone.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "Post-SPAC quantum names have shown no reliable pre-announcement runup pattern for IQMX specifically — three commercial wins in September each produced a same-day DECLINE rather than a pop, the opposite of a typical binary-catalyst setup.",
+    "preRunupTiming": "n/a — this name has not shown a positive pre-event pattern in any of the last four data points",
+    "preRunupPct": "n/a — negative reaction has been the norm this quarter",
+    "postWin": {
+      "avgPct": 31,
+      "range": "+30% to +33%",
+      "note": "The May 2026 US government quantum equity round sent D-Wave +33%, Rigetti +30%, Infleqtion +31% in a single day — the direct precedent for what a real US government contract win would do for IQMX, since it was excluded from that exact round and remains excluded as of this report.",
+      "exampleDate": "May 2026 (DWAV/RGTI/QUBT sector round)"
+    },
+    "postLose": {
+      "avgPct": -4,
+      "range": "-1.6% to -5.1%",
+      "note": "IQMX's own pattern is now the most relevant downside case — three separate commercial-win announcements in September (LUMI, Toyo, Brazil) each produced same-day declines of -1.6% to -5.1%, confirming the persistent sentiment discount flagged last report is deepening, not a one-off.",
+      "exampleDate": "Sep 2026 (three separate IQMX announcement-day declines)"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "2% — unchanged, and reinforced by this run's tier2 feedback: partnership_win is a measured laggard catalystType across the whole turbo lane (-3.8pp vs +2.0pp overall, n=16). Genuinely improving fundamentals are still not being rewarded by the market three months running — size small until sentiment shows any sign of turning."
+    },
+    "stopPreCatalyst": { "pct": -28, "price": 7.40, "note": "หลุด $7.40 = แนวรับทางเทคนิคสุดท้ายหลุด — กว้างกว่า median MAE กลุ่ม partnership_win (-25.9%, n=16) เพราะหุ้นนี้ขายลงแม้ข่าวดีซ้ำๆ" },
+    "stopPostCatalyst": { "pct": -25, "note": "ถ้า backlog conversion สะดุดหรือแพ้ประมูลสัญญาภาครัฐยืนยันแล้ว — exit อย่ารอให้ sentiment กลับเอง" }
+  },
+  "comparableCases": [
+    { "ticker": "DWAV", "event": "May 2026 US Commerce Dept quantum equity round inclusion", "date": "May 2026", "movePct": 33, "days": 1, "outcome": "good", "note": "The direct precedent for what a real US government quantum award does for a stock in this group — IQMX was excluded from this exact round and remains a candidate for a future one." },
+    { "ticker": "IQMX", "event": "Three commercial wins in one month (LUMI staged path, Toyo second system, Brazil Eldorado deployment) all sold on the news", "date": "Sep 2026", "movePct": -3.9, "days": 1, "outcome": "bad", "note": "Average of three same-company, same-month data points (-1.63%, -5.09%, -4.93%) — the strongest evidence yet that sentiment, not fundamentals, is the binding constraint on this stock right now." },
+    { "ticker": "RGTI", "event": "May 2026 US Commerce Dept quantum equity round inclusion", "date": "May 2026", "movePct": 30, "days": 1, "outcome": "good", "note": "A second name from the same May 2026 government round, reinforcing the size of move a real US award produces in this sector." }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/iqmx/",
+    "https://www.stocktitan.net/news/IQMX/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "momentum เชิงพาณิชย์ของ IQM เร่งตัวขึ้นจริงตั้งแต่รายงานก่อน — ขายระบบ full-stack ตัวที่สองให้ Toyo (ญี่ปุ่น, 15 ก.ย.), ติดตั้งครั้งแรกในอเมริกาใต้ผ่าน Eldorado Research Institute ของบราซิล (17 ก.ย.), และ LUMI AI Factory ของฟินแลนด์เลือก staged path ของ IQM สู่ logical qubit (10 ก.ย.) บวกกับ BTIG เริ่ม coverage ที่ Buy เป้า $20 (~21 ก.ย.) — การยืนยันจาก sell-side รายแรกตั้งแต่ IPO แต่หุ้นกลับลงทุกวันที่ประกาศทั้งสามข่าว (-1.63%, -5.09%, -4.93%) รูปแบบ 'ข่าวดีไม่ทำให้หุ้นขึ้น' ที่รายงานก่อนเคยระบุ ตอนนี้มีหลักฐานเพิ่มอีกสามจุดยืนยันว่าเป็นเรื่องต่อเนื่อง ไม่ใช่ครั้งเดียว analyst coverage ยังบางมาก (2 คน: BTIG Buy $20, Redburn Hold $12.88 เฉลี่ย $16.44) — ตาม feedback tier2 ของรอบนี้ catalystType ของ IQMX (partnership_win) เป็น laggard ที่วัดได้จริงทั่วทั้ง turbo lane (medianExcessVsBenchPct -3.8pp เทียบ +2.0pp โดยรวม, n=16) ทำให้ควรคง conviction และ sizing เล็กแม้ story เชิงพาณิชย์จะดีขึ้น เงินสด (€309.4M runway ถึง Q2 2028) ตัดความเสี่ยง survival ออกไป",
+      "priceNote": "self-fetch วันนี้ (live-prices.json cache เก่าตั้งแต่ 13 ส.ค.) ขึ้นเล็กน้อยจาก $9.65 (5 ส.ค.) แต่ pattern ที่เคยระบุในรายงานก่อนเกิดซ้ำและรุนแรงขึ้น — ข่าวชนะสัญญาสามข่าวแยกกันในเดือนก.ย.แต่ละข่าวหุ้นลงวันเดียวกัน (LUMI -1.63%, Toyo -5.09%, Brazil -4.93%) — ข่าวดียังไม่ถูกให้รางวัล",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "สัญญาภาครัฐสหรัฐ/EU ด้าน Quantum", "description": "ยังเป็น catalyst moonshot ตัวจริง — IQMX ถูกตัดออกจากรอบทุนภาครัฐสหรัฐ $2B พ.ค. 2026 ที่ส่ง RGTI/QBTS/Infleqtion ขึ้น 30%+ วันเดียว ยังไม่มีสัญญาณวันที่หรือการเข้ารอบใหม่ตั้งแต่รายงานก่อน" },
+        { "name": "Momentum เชิงพาณิชย์ — Toyo, บราซิล, LUMI", "description": "ขายระบบ full-stack ตัวที่สองให้ Toyo Corporation (ญี่ปุ่น, 15 ก.ย.), ติดตั้งครั้งแรกในอเมริกาใต้ผ่าน Eldorado Research Institute บราซิล (17 ก.ย.), และ LUMI AI Factory ฟินแลนด์เลือก staged path ของ IQM สู่ logical-qubit quantum computing (10 ก.ย.) — ชัยชนะเชิงพาณิชย์จริง 3 ครั้งใน 3 สัปดาห์ ไม่มีครั้งไหนทำให้หุ้นขึ้น" },
+        { "name": "BTIG เริ่ม Coverage ที่เป้า $20", "description": "การยืนยันจาก sell-side รายแรกตั้งแต่ IPO — Jesse Sobelson จาก BTIG เริ่ม coverage (~21 ก.ย.) ที่ Buy เป้า $20 (+94% จากราคาปัจจุบัน) เทียบกับ Redburn ที่ระมัดระวังกว่าที่ Hold $12.88" }
+      ],
+      "risks": [
+        "รูปแบบ 'ข่าวดีไม่ทำให้หุ้นขึ้น' ที่รายงานก่อนเคยระบุเกิดซ้ำอีกสามครั้งในเดือนก.ย. (LUMI -1.63%, Toyo -5.09%, Brazil -4.93%) — เป็น sentiment discount ที่ต่อเนื่องและลึกขึ้น ไม่ใช่เหตุการณ์ครั้งเดียว",
+        "ตาม feedback data ของรอบนี้ catalystType ของ IQMX (partnership_win) เป็น tier-2 laggard ที่วัดได้จริงทั่ว turbo lane (medianExcessVsBenchPct -3.8pp เทียบ +2.0pp โดยรวม, n=16, gap -5.8pp) — turbo pick ที่ขับเคลื่อนด้วยดีลพาณิชย์ underperform ทั้งกลุ่ม ไม่ใช่แค่หุ้นตัวนี้",
+        "analyst coverage ยังบางมาก — มีแค่ 2 คนที่ระบุชื่อ (BTIG Buy $20, Redburn Hold $12.88) — ควรระวังการอ้างอิงเป้าเดียวเพราะ sample เล็ก",
+        "ยัง dilution overhang จาก warrant โครงสร้าง SPAC เดิม — รายงานก่อนระบุ Kreos Capital ใช้สิทธิ 577,237 หุ้นในก.ค. และยังมี warrant ค้างอยู่",
+        "catalyst binary ตัวจริง (สัญญาภาครัฐสหรัฐ/EU ด้าน quantum) เคยข้าม IQMX ไปแล้วครั้งหนึ่งในพ.ค. 2026 ยังไม่มีสัญญาณเข้ารอบใหม่ที่ยืนยันตั้งแต่รายงานก่อน"
+      ],
+      "macroRisk": {
+        "rateOutlook": "หุ้น growth/speculative tech อย่าง quantum computing ไวต่อดอกเบี้ย แต่ปฏิกิริยาต่อข่าวของ IQMX เองที่ต่อเนื่องและ catalyst สัญญาภาครัฐยังมีน้ำหนักมากกว่า macro",
+        "inflationNote": "เงินเฟ้อ core ยังสูงกว่าเป้า เป็นปัจจัยรองสำหรับหุ้นตัวนี้",
+        "sectorImpact": "รูปแบบขายเมื่อมีข่าวดีที่เกิดซ้ำในไตรมาสนี้ (สามครั้งในเดือนก.ย.เดียว) บ่งชี้ว่า discount ตอนนี้เฉพาะเจาะจงกับ IQMX/sector sentiment มากกว่าเรื่อง macro rate",
+        "summary": "ความเสี่ยง macro เป็นเรื่องรอง — ช่องว่างต่อเนื่องระหว่างพื้นฐานเชิงพาณิชย์ที่ดีขึ้นจริงกับปฏิกิริยาของหุ้นคือ story หลัก ตอนนี้มีหลักฐานยืนยันเพิ่มอีกสามเดือน"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม 2% max ไม่เปลี่ยนจาก sizing เล็กสุด median at-catalyst return ของ turbo lane วัดได้ -13.7% (n=19) บวกกับหุ้นตัวนี้ขายลงทุก catalyst ล่าสุด — Entry 1 จึงไม่ใช่ default ชัดเจน รอโซน $9.20-9.60 catalystType ของ IQMX (partnership_win) เป็น laggard ที่วัดได้จริงทั่ว turbo lane จึงต้องพึ่ง Moon case กว้าง (240%, สัญญาภาครัฐ) เพื่อ justify การรวมไว้ ไม่ใช่แค่ Base/Bull",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — median at-catalyst return วัดได้ -13.7% บวกกับหุ้นตัวนี้ขายลงทุก catalyst ล่าสุด จึงไม่ใช่ entry เริ่มต้นที่แนะนำ", "timing": "ตอนนี้ (2% max)" },
+          { "note": "ใกล้โซน 52-week low — ตามรูปแบบที่หุ้นขายลงแม้ข่าวดี ยังเป็น entry ที่มีวินัยมากกว่า", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงลึกถ้า sentiment กลุ่ม quantum แย่ลงอีก", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Base — backlog แปลงตามเป้า FY26 ต่อเนื่องด้วยดีลพาณิชย์แบบ Brazil/Toyo/LUMI ไม่ต้องมี catalyst ใหม่ สมมติ horizon ราว 6-9 เดือนให้ sentiment ตามพื้นฐานทัน" },
+        "tp2": { "note": "Bull — แตะเป้า BTIG $20 เมื่อ sentiment เริ่มให้เครดิต momentum เชิงพาณิชย์" },
+        "tp3": { "note": "Moon — ได้สัญญาภาครัฐสหรัฐ/EU จริง กระตุ้น re-rate เต็มรูปแบบแบบที่ RGTI/QBTS/DWAV เจอในพ.ค. 2026", "moon": true },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า median MAE กลุ่ม partnership_win (-25.9%, n=16) เพราะหุ้นนี้แสดงรูปแบบขายลงแม้ข่าวดีซ้ำๆ",
+          "hardNote": "หลุดลึก = backlog แปลงสะดุด แพ้ประมูลสัญญาภาครัฐยืนยันแล้ว หรือมี warrant dilution ระลอกใหม่",
+          "rrNote": "จาก Entry 2 ($9.40 กลาง) stop แคบ vs TP2 ($20.09)",
+          "rrWarning": "Convex ในทางทฤษฎีผ่าน Moon case แต่หุ้นตัวนี้แสดงแล้วอีกสามครั้งในไตรมาสนี้ว่าข่าวดีไม่ทำให้หยุดร่วง ควรมอง stop ทุกระดับเป็นเรื่องจริง ไม่ใช่ทฤษฎี"
+        }
+      },
+      "estimateDates": [
+        { "event": "สัญญาภาครัฐสหรัฐ/EU ด้าน Quantum", "note": "ยังเป็น Moon catalyst ตัวจริง ไม่มีสัญญาณ timing ใหม่ตั้งแต่รายงานก่อน" }
+      ]
+    }
+  }
+}

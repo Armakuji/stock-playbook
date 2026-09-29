@@ -1,0 +1,195 @@
+{
+  "ticker": "NB",
+  "companyName": "NioCorp Developments Ltd.",
+  "companyDescription": "Critical minerals · Elk Creek niobium/scandium/titanium project — 2nd-largest indicated US rare-earth resource · 2026 Feasibility Study complete ($4.1B pre-tax NPV8%) · $800M EXIM Bank debt financing still in review",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-09-29T00:00:00.000Z",
+  "price": 3.47,
+  "priceChange": 0.0,
+  "priceNote": "Self-fetched today (live-prices.json cache dated Aug 13, too stale to use). Down 27.9% since the last report ($4.81 → $3.47) despite two genuinely positive milestones — the 2026 Feasibility Study (Aug 10) and a Lockheed Martin scandium MOU (Aug 4) — both of which the stock actually sold off on (-1.65% and -3.28% same-day). The decline tracks a broader rare-earth sector pullback around the Trump-Xi summit rather than a company-specific break.",
+  "marketCap": "$506M",
+  "sector": "Materials / Critical Minerals",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 58,
+  "summary": "NioCorp's Elk Creek project cleared a real EXIM Bank requirement this quarter: the Aug 10 2026 Feasibility Study ($4.1B pre-tax NPV8%, 2.93-year after-tax payback, 40-year mine life across 8 minerals) lets the company move toward detailed engineering and EPC contracting, though EXIM's financing amount and timing 'remain uncertain' per the company's own language — still no confirmed decision date. Jefferies initiated coverage Sep 2 at Hold, $4.70 (+35% from here) — the low end of a 6-analyst Buy consensus averaging $11.12 (+220%). The stock has fallen 28% since July anyway, including selling off on both pieces of good news, which reads as sector-wide rare-earth cooling (Trump-Xi summit eased trade-war urgency around critical minerals) rather than a NB-specific thesis break. Genuinely wider entry now, but the binary EXIM catalyst is still undated and dilution risk from a pre-revenue, multi-billion-dollar capex build remains real.",
+  "catalysts": [
+    {
+      "icon": "🏦",
+      "name": "EXIM Bank $800M Debt Financing Decision",
+      "description": "The Aug 10 2026 Feasibility Study satisfies a key EXIM Bank technical requirement, unlocking progress toward detailed engineering and EPC contracting. The company itself says the eventual EXIM financing amount and timing remain uncertain — still no confirmed Board decision date.",
+      "urgencyLabel": "IN REVIEW",
+      "dateBadge": "H2 2026",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🛡️",
+      "name": "Lockheed Martin Scandium MOU",
+      "description": "Non-binding agreement (Aug 4) for Lockheed to purchase up to 15 tonnes/year of scandium oxide over a decade, building on NioCorp's existing $10M DPA Title III Pentagon award. A real defense-industrial offtake signal, even though the stock sold off -3.28% the day it was announced.",
+      "urgencyLabel": "SIGNED (NON-BINDING)",
+      "dateBadge": "Aug 4, 2026",
+      "catalystDate": "2026-08-04",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "🇺🇸",
+      "name": "Project Vault — $12B Critical Minerals Stockpile",
+      "description": "Trump's Project Vault ($10B EXIM facility + ~$2B private capital) remains the policy tailwind NB's EXIM application sits inside. The Sep 2026 Trump-Xi summit easing trade tensions has cooled sector urgency somewhat — a real risk to the policy-tailwind half of this thesis, not just noise.",
+      "urgencyLabel": "POLICY TAILWIND (COOLING)",
+      "dateBadge": "2026",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "EXIM financing is still NOT guaranteed — the Feasibility Study clears a requirement but the company's own language says amount/timing 'remain uncertain,' with no confirmed decision date",
+    "Stock sold off on BOTH pieces of good news this quarter (Feasibility Study -1.65%, Lockheed MOU -3.28%) — a real, persistent pattern suggesting sector-wide rare-earth de-rating (Trump-Xi trade-tension easing) is overpowering company-specific catalysts right now",
+    "Heavy dilution risk unchanged — pre-revenue mining developers building a ~$1.85B capex project over 35 months will need repeated capital raises; NioCorp already priced a $100M offering at $5.00 earlier this year, above the current $3.47 price",
+    "Pre-revenue, pre-production — Elk Creek is still under construction; mine economics depend on commodity prices (niobium, scandium, titanium) years out",
+    "Policy dependency — the critical-minerals stockpile thesis (Project Vault, DPA awards) depends on continued government prioritization; the Trump-Xi summit is early evidence that priorities can shift with the geopolitical weather"
+  ],
+  "estimateDates": [
+    { "event": "EXIM Bank Financing Decision", "dateRange": "H2 2026 (no confirmed date)", "note": "Feasibility Study (Aug 10) clears a technical requirement; Board decision timeline still undisclosed", "est": "Process advancing, timeline not disclosed", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -55, "price": 1.56 },
+    { "label": "Base", "color": "yellow", "pct": 45, "price": 5.03 },
+    { "label": "Bull", "color": "green", "pct": 130, "price": 7.98 },
+    { "label": "Moon", "color": "purple", "pct": 220, "price": 11.10 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (6 analysts, S&P Global)", "target": 11.12, "rating": "Buy", "note": "+220% from current price; range $4.70-$15" },
+    { "firm": "Jefferies (Sep 2, most conservative)", "target": 4.70, "rating": "Hold" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "As a pre-revenue project-finance story, NB is genuinely rate-sensitive — the EXIM debt package's cost and NioCorp's equity-raise capacity both get harder in a higher-for-longer rate environment.",
+    "inflationNote": "Construction and equipment costs for the newly-scoped 8-mineral Elk Creek build are exposed to input-cost inflation; a hot CPI print raises project capex risk directly.",
+    "sectorImpact": "MEDIUM-HIGH. The added wrinkle since the last report: the Trump-Xi summit shows the critical-minerals policy tailwind itself is not immune to macro/geopolitical shifts — this is now a two-sided macro exposure (rates AND trade-policy sentiment), not just a rates story.",
+    "summary": "Fed risk MEDIUM — this remains the one pick on the board where the macro/policy backdrop hits the catalyst directly (EXIM cost/availability, Project Vault urgency), not just the trading multiple."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 3.47, "note": "Current price — down 28% since July despite good news; measured turbo median at-catalyst return is -13.7% (n=19), so this is not the default entry", "timing": "Now (2% max)" },
+      { "label": "Entry 2", "level": 2.95, "rangeMax": 3.25, "note": "Below the recent offering price zone — better entry given the demonstrated pattern of selling into good news", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 2.20, "note": "Deep dip zone — high conviction add only", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 5.03, "pct": 45.0, "note": "Base — EXIM review keeps advancing without a final decision; Base assumes a ~6-9mo horizon as engineering/EPC work continues, driven by re-rating toward the Jefferies floor target" },
+    "tp2": { "price": 7.98, "pct": 130.0, "note": "Bull — EXIM review reaches late-stage/positive signals, matches mid-Street consensus range" },
+    "tp3": { "price": 11.10, "pct": 220.0, "note": "Moon — EXIM finalizes the $800M debt commitment, fully de-risking construction financing; hits the 6-analyst consensus average", "moon": true },
+    "stopLoss": {
+      "tight": 2.50, "tightPct": -28.0, "tightNote": "Wider than the turbo regulatory_approval-type median MAE (-25%, n=8) since this name has shown it sells off on good news — a tighter stop would get shaken out by noise",
+      "hard": 1.56, "hardPct": -55.0, "hardNote": "EXIM financing rejected/delayed indefinitely or a new dilutive down-round raise — thesis materially impaired",
+      "riskReward": "4.6 : 1", "rrNote": "Entry ($3.47) vs TP2 ($7.98), tight stop ($2.50)", "rrWarning": "Good asymmetry ✅ — but dilution risk is ongoing, not one-time, and this is a multi-month not multi-week story"
+    },
+    "verdict": "ค่าขนม SPECULATIVE — 2% max, smallest sizing on the board given the undated catalyst. Measured turbo median at-catalyst return is -13.7% (n=19, entryGuidance.turbo), so buy the dip zone ($2.95-3.25), not the current price. Base (EXIM review advances) → $5.03 (+45%), Bull (positive EXIM signals) → $7.98 (+130%), Moon (EXIM $800M finalized) → $11.10 (+220%).",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "regulatory_approval",
+    "preRunup": "Critical-minerals small-caps have historically run hard on Trump administration policy headlines (Project Vault, tariff/export-control news, DPA awards) even without a company-specific announcement — but NB itself has NOT shown this pattern this quarter, selling off on its own good news instead.",
+    "preRunupTiming": "days ก่อน policy headline (unpredictable timing) — though NB's own recent reactions have broken this pattern",
+    "preRunupPct": "+10-35% historically (sector), but NB itself has recently moved the opposite way on good news",
+    "postWin": {
+      "avgPct": 20,
+      "range": "+4% to +35%",
+      "note": "Sector precedent: CRML surged 35% on the Feb 2026 Project Vault announcement, USAR rose ~13% on its Serra Verde acquisition (Apr 2026). NB's own recent reactions (Feasibility Study -1.65%, Lockheed MOU -3.28%) have NOT matched this pattern — a genuine EXIM finalization would need to overcome the current sector-wide skepticism, not just be good news on its own.",
+      "exampleDate": "Feb-Apr 2026 (sector); Aug 2026 (NB's own muted/negative reactions)"
+    },
+    "postLose": {
+      "avgPct": -40,
+      "range": "-25% to -55%",
+      "note": "A rejected or indefinitely delayed EXIM application would force NioCorp toward more dilutive equity financing, likely triggering a sharp de-rate given how central the $800M debt package is to the bull case; per turbo.overall stopGuidance, drawdowns of this type median around -25% for regulatory_approval catalysts (n=8) but can run deeper on financing-specific breaks.",
+      "exampleDate": "Hypothetical — no direct comp found; NB's own -28% drift since July shows the downside is already partly playing out absent an actual rejection"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "2% — smallest sizing on this list. NB's EXIM decision has no confirmed timeline, carries real dilution risk, AND has now shown it sells off on its own good news — three compounding reasons to size minimally."
+    },
+    "stopPreCatalyst": { "pct": -28, "price": 2.50, "note": "หลุด $2.50 = financing sentiment แย่ลงต่อเนื่อง แม้ EXIM ยังไม่ตัดสิน — กว้างกว่า median MAE ของกลุ่ม regulatory_approval (-25%, n=8) เพราะหุ้นตัวนี้ขายลงแม้ข่าวดี" },
+    "stopPostCatalyst": { "pct": -55, "note": "ถ้า EXIM ปฏิเสธหรือ delay ไม่มีกำหนด หรือมี down-round raise ใหม่ — exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "NB",
+      "event": "2026 Feasibility Study release ($4.1B pre-tax NPV8%, clears key EXIM requirement)",
+      "date": "Aug 10, 2026",
+      "movePct": -1.65,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Same-company precedent for the current pattern: genuinely positive project-finance progress, sold on the news anyway. Confirms this is a sector-sentiment issue, not a company-execution one."
+    },
+    {
+      "ticker": "NB",
+      "event": "Lockheed Martin scandium oxide MOU (defense offtake signal)",
+      "date": "Aug 4, 2026",
+      "movePct": -3.28,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Second same-company data point in one week showing real news isn't moving the stock — reinforces that a company-specific EXIM finalization will need to be large enough to break through current sector skepticism."
+    },
+    {
+      "ticker": "CRML",
+      "event": "Project Vault $12B Critical Minerals Stockpile Announcement",
+      "date": "Feb 2026",
+      "movePct": 35,
+      "days": 1,
+      "outcome": "good",
+      "note": "Shows the sector CAN move sharply on policy catalysts — the question is whether NB's own EXIM news can still trigger this now that the Trump-Xi summit has cooled the policy tailwind somewhat."
+    }
+  ],
+  "sources": [
+    "https://www.niocorp.com/niocorp-receives_800-million-letter-of-interest-from-exim-bank/",
+    "https://www.stocktitan.net/news/NB/",
+    "https://stockanalysis.com/stocks/nb/",
+    "https://stockanalysis.com/stocks/nb/forecast/",
+    "https://www.cnbc.com/2026/02/03/rare-earths-stocks-trump-critical-minerals-stockpile-project-vault.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "โครงการ Elk Creek ของ NioCorp ผ่านข้อกำหนดสำคัญของ EXIM Bank ในไตรมาสนี้จริง — 2026 Feasibility Study (10 ส.ค.) ให้ NPV pre-tax $4.1B, payback 2.93 ปี, mine life 40 ปีสำหรับ 8 แร่ธาตุ ทำให้เดินหน้าสู่ detailed engineering และ EPC contracting ได้ แต่บริษัทเองบอกว่าจำนวนเงินและ timeline ของ EXIM ยัง 'ไม่แน่นอน' — ยังไม่มีวันตัดสินชัดเจน Jefferies เริ่ม coverage 2 ก.ย. ที่ Hold $4.70 (+35% จากราคานี้) — ต่ำสุดใน consensus Buy จาก 6 analysts เฉลี่ย $11.12 (+220%) หุ้นร่วง 28% ตั้งแต่ก.ค. ทั้งที่มีข่าวดี รวมถึงขายลงตอนข่าวดีทั้งสองครั้ง — สะท้อนการเย็นตัวของ sector rare-earth ทั้งกลุ่ม (Trump-Xi summit ลดความเร่งด่วนเรื่อง trade war ต่อ critical minerals) มากกว่า thesis ของ NB เองพัง เข้าได้ราคาถูกลงจริง แต่ EXIM catalyst ยังไม่มีวันที่ชัดเจน และความเสี่ยง dilution จากโครงการ capex หลายพันล้านที่ยังไม่มีรายได้ยังคงอยู่จริง",
+      "priceNote": "self-fetch วันนี้ (live-prices.json cache เก่าตั้งแต่ 13 ส.ค. ใช้ไม่ได้) ลง 27.9% ตั้งแต่รายงานก่อน ($4.81 → $3.47) ทั้งที่มี 2 ข่าวดีจริง — Feasibility Study (10 ส.ค.) และ Lockheed Martin MOU (4 ส.ค.) — ซึ่งหุ้นขายลงทั้งสองวัน (-1.65% และ -3.28%) การร่วงนี้สอดคล้องกับการเย็นตัวของ sector rare-earth ทั้งกลุ่มช่วง Trump-Xi summit มากกว่าปัญหาเฉพาะบริษัท",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "EXIM Bank ตัดสิน Debt Financing $800M", "description": "2026 Feasibility Study (10 ส.ค.) ผ่านข้อกำหนดสำคัญของ EXIM Bank แล้ว ปลดล็อกความคืบหน้าสู่ detailed engineering และ EPC contracting แต่บริษัทเองบอกว่าจำนวนและ timeline ของ EXIM financing ยังไม่แน่นอน — ยังไม่มีวันตัดสิน Board ที่ชัดเจน" },
+        { "name": "Lockheed Martin Scandium MOU", "description": "ข้อตกลงไม่ binding (4 ส.ค.) ให้ Lockheed ซื้อ scandium oxide สูงสุด 15 ตัน/ปี ตลอด 10 ปี ต่อยอดจาก DPA Title III award $10M ที่มีอยู่แล้ว เป็นสัญญาณ offtake ด้านกลาโหมจริง แม้หุ้นจะขายลง -3.28% วันที่ประกาศ" },
+        { "name": "Project Vault — คลังสำรอง Critical Minerals $12B", "description": "Project Vault ของ Trump ยังเป็น policy tailwind ที่ EXIM application ของ NB อยู่ใน process แต่ Trump-Xi summit เดือนก.ย. 2026 ที่ลด trade tension เป็นความเสี่ยงจริงต่อครึ่งหนึ่งของ thesis นี้ ไม่ใช่แค่ noise" }
+      ],
+      "risks": [
+        "EXIM financing ยังไม่การันตี — Feasibility Study ผ่านข้อกำหนดหนึ่งแล้ว แต่บริษัทเองบอกจำนวน/timeline ยังไม่แน่นอน ไม่มีวันตัดสินชัดเจน",
+        "หุ้นขายลงทั้งสองข่าวดีในไตรมาสนี้ (Feasibility Study -1.65%, Lockheed MOU -3.28%) — สัญญาณต่อเนื่องจริงว่า sector rare-earth กำลัง de-rate ทั้งกลุ่ม (Trump-Xi ลด trade tension) มีน้ำหนักมากกว่า catalyst เฉพาะบริษัทตอนนี้",
+        "ความเสี่ยง dilution สูงเหมือนเดิม — โครงการ pre-revenue ที่ต้องใช้ capex ราว $1.85B ตลอด 35 เดือน ต้อง raise ทุนซ้ำๆ แน่นอน NioCorp เคย price offering $100M ที่ $5.00 ซึ่งสูงกว่าราคาปัจจุบัน $3.47",
+        "ยังไม่มี revenue ยังไม่ production — Elk Creek ยังอยู่ระหว่างก่อสร้าง เศรษฐศาสตร์ของเหมืองขึ้นกับราคาสินค้าโภคภัณฑ์ในอีกหลายปีข้างหน้า",
+        "พึ่งพานโยบายรัฐ — thesis เรื่อง critical-minerals stockpile ทั้งหมดขึ้นกับการให้ความสำคัญของรัฐบาลต่อเนื่อง Trump-Xi summit เป็นหลักฐานแรกว่า priority เปลี่ยนได้ตามสภาพภูมิรัฐศาสตร์"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ในฐานะ story project-finance ก่อน revenue จริง NB sensitive กับดอกเบี้ยจริง — ต้นทุน EXIM debt package และความสามารถ raise ทุนแพงขึ้นในโลกดอกเบี้ยสูงต่อเนื่อง",
+        "inflationNote": "ต้นทุนก่อสร้างของโครงการ Elk Creek ที่ขยายเป็น 8 แร่ธาตุ exposed กับ input-cost inflation โดยตรง",
+        "sectorImpact": "ปานกลางถึงสูง — สิ่งที่เพิ่มมาจากรายงานก่อน: Trump-Xi summit แสดงว่า policy tailwind เรื่อง critical minerals เองก็ไม่รอดจากความเปลี่ยนแปลงทาง geopolitical — ตอนนี้เป็น macro exposure สองทาง (ดอกเบี้ย + sentiment นโยบายการค้า) ไม่ใช่แค่เรื่องดอกเบี้ยอย่างเดียว",
+        "summary": "ความเสี่ยง Fed ปานกลาง — ยังเป็นตัวเดียวใน board ที่ macro/policy backdrop กระทบ catalyst โดยตรง (ต้นทุน/ความพร้อมของ EXIM debt, ความเร่งด่วนของ Project Vault) ไม่ใช่แค่ trading multiple"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม 2% max — sizing เล็กสุดใน board เพราะ catalyst ยังไม่มีวันที่ชัดเจน ตัวเลข median at-catalyst return ของ turbo lane วัดได้ -13.7% (n=19) ดังนั้นควรเข้าโซนย่อ ($2.95-3.25) ไม่ใช่ราคาปัจจุบัน Base (EXIM review คืบหน้า) → $5.03 (+45%), Bull (สัญญาณบวก EXIM) → $7.98 (+130%), Moon (EXIM อนุมัติ $800M) → $11.10 (+220%)",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ลง 28% ตั้งแต่ก.ค.ทั้งที่มีข่าวดี median at-catalyst return วัดได้ -13.7% จึงไม่ใช่ entry เริ่มต้นที่แนะนำ", "timing": "ตอนนี้ (2% max)" },
+          { "note": "ต่ำกว่าโซน offering ล่าสุด — เข้าดีกว่าตามรูปแบบที่หุ้นขายลงแม้ข่าวดี", "timing": "ถ้าย่อ" },
+          { "note": "โซนย่อลึก — เข้าเฉพาะมั่นใจสูง", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Base — EXIM review เดินหน้าต่อโดยยังไม่ตัดสิน สมมติ horizon ราว 6-9 เดือนตาม engineering/EPC" },
+        "tp2": { "note": "Bull — EXIM review เข้าขั้นท้ายๆ/สัญญาณบวก ตรง consensus ระดับกลาง" },
+        "tp3": { "note": "Moon — EXIM อนุมัติ debt commitment $800M ปลดล็อก construction financing เต็มรูปแบบ ตรง consensus เฉลี่ย 6 analysts", "moon": true },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า median MAE ของกลุ่ม regulatory_approval (-25%, n=8) เพราะหุ้นนี้แสดงแล้วว่าขายลงแม้ข่าวดี — stop แคบเกินไปจะโดนสั่นออกจาก noise",
+          "hardNote": "EXIM delay/ปฏิเสธ หรือมี down-round raise ใหม่ — thesis เสียหายจริง",
+          "rrNote": "Entry ($3.47) เทียบ TP2 ($7.98), stop แคบ ($2.50)",
+          "rrWarning": "Asymmetry ดี ✅ — แต่ dilution risk เป็นเรื่องต่อเนื่อง ไม่ใช่ one-time event และเป็น story ระดับหลายเดือน"
+        }
+      },
+      "estimateDates": [
+        { "event": "EXIM Bank ตัดสิน Financing", "note": "Feasibility Study (10 ส.ค.) ผ่านข้อกำหนดหนึ่งแล้ว — timeline การตัดสิน Board ยังไม่เปิดเผย" }
+      ]
+    }
+  }
+}

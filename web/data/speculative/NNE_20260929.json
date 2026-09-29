@@ -1,0 +1,184 @@
+{
+  "ticker": "NNE",
+  "companyName": "NANO Nuclear Energy Inc.",
+  "companyDescription": "Pre-revenue micro-reactor developer (ZEUS, ODIN) · KRONOS MMR construction permit application now formally DOCKETED by the NRC for a University of Illinois site (concrete 2027 review / mid-2027 construction timeline) · New nuclear-powered AI infrastructure LOI with IP3 · $580M cash",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-09-29T00:00:00.000Z",
+  "price": 16.00,
+  "priceChange": -0.99,
+  "priceNote": "Self-fetched today (live-prices.json cache dated Aug 13, too stale to use). Down 8.3% since the last report ($17.44 → $16.00) despite genuinely concrete regulatory and strategic progress — the NRC has now DOCKETED (not just 'initiated review of') the KRONOS construction permit application, with a real environmental-review timeline (2027) and construction target (mid-2027).",
+  "marketCap": "$859M",
+  "sector": "Energy / Advanced Nuclear (Micro-Reactors)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 55,
+  "summary": "Two genuinely concrete developments since the last report: the NRC formally docketed the KRONOS construction permit application for a University of Illinois site, with environmental review targeted for 2027 and construction expected mid-2027 — real dates where before there was only 'formal review activities' with no timeline. Second, a Sep 25 non-binding LOI with IP3 Corporation and Cybernetic Intelligence to jointly pursue nuclear-powered AI infrastructure taps directly into the hot AI-datacenter-power theme, a real expansion of the addressable narrative. Needham initiated coverage Sep 21 at Buy, $33 (the first fresh analyst signal since the last report), pulling the 8-analyst consensus to $37.57 (+135%) — still real upside but honestly still below this board's classic 200%+ turbo bar, unchanged from last report. Cash remains exceptional (~$580M), fully removing survival risk. This is a genuine progress update, not a fresh high-conviction pick.",
+  "catalysts": [
+    {
+      "icon": "⚛️",
+      "name": "KRONOS Construction Permit — NRC Docketed",
+      "description": "The NRC has formally docketed the KRONOS micro modular reactor's construction permit application for a University of Illinois site, with environmental review targeted for 2027 and construction expected mid-2027 — a concrete procedural advance and the first real timeline this thesis has had.",
+      "urgencyLabel": "DOCKETED — 2027 REVIEW",
+      "dateBadge": "2027",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🤖",
+      "name": "Nuclear-Powered AI Infrastructure LOI (IP3 / Cybernetic Intelligence)",
+      "description": "Non-binding letter of intent (Sep 25) to jointly pursue nuclear-powered AI infrastructure projects, positioning NNE as a 'preferred provider' of nuclear technology for AI datacenters — a real expansion of the addressable market narrative beyond micro-reactors alone.",
+      "urgencyLabel": "NEW (LOI STAGE)",
+      "dateBadge": "Sep 25, 2026",
+      "catalystDate": "2026-09-25",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "🚛",
+      "name": "Advanced Fuel Transportation / HALEU Logistics",
+      "description": "Nearest-term path to actual revenue — HALEU logistics targeted for 2027-2028 through the Advanced Fuel Transportation subsidiary, well ahead of any reactor commercialization.",
+      "urgencyLabel": "2027-2028",
+      "dateBadge": "2027-2028",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Real upside (consensus +135%) still doesn't clear this board's typical 200%+ bar — unchanged assessment from the last report, now with a broader 8-analyst sample (Needham's $33 initiation is more conservative than the prior average and pulled the consensus down slightly)",
+    "Genuinely pre-revenue with the nearest commercial revenue path (HALEU logistics) still 1-2 years out — even with docketing, the KRONOS construction-permit review timeline (2027 review, mid-2027 construction) is a multi-year story, not a near-term binary",
+    "The IP3/Cybernetic Intelligence AI-infrastructure tie-up is a non-binding LOI, not a signed contract — real, but early-stage",
+    "Stock is down 8.3% since the last report despite genuinely positive regulatory and strategic news — a mild version of the pattern seen elsewhere on this board where good news isn't being fully rewarded",
+    "Sector-wide SMR/advanced-nuclear sentiment has been volatile in 2026 on DOE loan-program news that favors large reactors over small modular designs — a real headwind for the whole peer group, unchanged"
+  ],
+  "estimateDates": [
+    { "event": "KRONOS NRC Environmental Review", "dateRange": "2027", "note": "Construction permit application now formally docketed; environmental review targeted 2027, construction expected mid-2027", "est": "Multi-year process with a real timeline now attached", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -35, "price": 10.40 },
+    { "label": "Base", "color": "yellow", "pct": 55, "price": 24.80 },
+    { "label": "Bull", "color": "green", "pct": 105, "price": 32.80 },
+    { "label": "Moon", "color": "purple", "pct": 160, "price": 41.60 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (8 analysts, S&P Global)", "target": 37.57, "rating": "Buy", "note": "5 Strong Buy, 1 Buy, 2 Hold; +135% from current price" },
+    { "firm": "Needham (Sean Milligan, Sep 21 initiation)", "target": 33.00, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "NNE's exceptionally strong cash position (~$580M) meaningfully reduces near-term financing risk versus most pre-revenue names, though a long-duration story like this remains multiple-sensitive to rate moves broadly.",
+    "inflationNote": "Core inflation remains above target — a headwind for pre-revenue growth names generally, though NNE's cash cushion blunts the direct financing-risk channel.",
+    "sectorImpact": "The SMR/advanced-nuclear sector has shown real sensitivity to DOE loan-program news favoring large reactors over small modular designs this year — a structural sector headwind independent of Fed policy, unchanged from last report.",
+    "summary": "MEDIUM — NNE's cash position blunts the direct financing-risk channel most pre-revenue names face, but continued SMR-sector-wide sentiment weakness would still pressure a long-duration, multi-year story like this."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 16.00, "note": "Current price — down 8.3% despite genuinely positive NRC docketing and AI-infra LOI news; turbo lane's measured median at-catalyst return is -13.7% (n=19), so this is not the default entry", "timing": "Scale in (small)" },
+      { "label": "Entry 2", "level": 13.50, "rangeMax": 14.70, "note": "At/near the 52-week low zone — best R/R if SMR-sector sentiment weakens further", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 10.50, "note": "Deep capitulation — only on a broad SMR-sector selloff", "timing": "Deep dip only" }
+    ],
+    "tp1": { "price": 24.80, "pct": 55.0, "note": "Base — KRONOS review progresses on the newly-disclosed 2027 timeline, IP3 AI-infra LOI develops further; Base assumes a ~9-12mo horizon given the multi-year regulatory clock" },
+    "tp2": { "price": 32.80, "pct": 105.0, "note": "Bull — near Needham's $33 target, a positive regulatory milestone or HALEU logistics contract win" },
+    "tp3": { "price": 41.60, "pct": 160.0, "note": "Moon — sector-wide SMR re-rate plus the AI-nuclear-infrastructure theme catches fire, exceeding consensus", "moon": true },
+    "stopLoss": {
+      "tight": 11.68, "tightPct": -27.0, "tightNote": "Wider than the turbo regulatory_approval-type median MAE (-25%, n=8); a leader type per tier2 feedback (+5.3pp vs +2.0pp overall), supporting normal-width sizing",
+      "hard": 9.28, "hardPct": -42.0, "hardNote": "Deep breach — would suggest a serious setback to the KRONOS review or a broad SMR-sector capitulation",
+      "riskReward": "4.5 : 1", "rrNote": "Entry ($16.00) vs TP2 ($32.80), tight stop ($11.68)", "rrWarning": "Decent R/R with a strong cash cushion, but the Moon case (160%) is still below this board's usual 200%+ bar — same honest caveat as last report"
+    },
+    "verdict": "ค่าขนม — small position on a well-capitalized, genuinely-progressing but still multi-year story. Measured turbo median at-catalyst return is -13.7% (n=19); prefer the $13.50-14.70 dip zone. Real upside remains below 200% (Moon 160%) — this is a progress-update carryover, not a fresh high-conviction pick, though the NRC docketing and AI-infra LOI are real positive developments.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "regulatory_approval",
+    "preRunup": "SMR/advanced-nuclear names in this cohort move on discrete DOE/NRC milestone headlines — NNE's continued decline despite the NRC docketing news shows the sector-wide sentiment overhang (DOE large-reactor-loan-program bias) is still the dominant driver, not company-specific execution.",
+    "preRunupTiming": "same-day on regulatory/DOE news, not a multi-week runup",
+    "preRunupPct": "+5% to +15% same-day on positive regulatory milestones historically",
+    "postWin": {
+      "avgPct": 15,
+      "range": "+5% to +25%",
+      "note": "SMR-sector names have shown 5-25% pops on positive DOE/NRC regulatory milestones. Per this run's tier2 feedback, regulatory_approval is a lane-wide LEADER catalystType (+5.3pp vs +2.0pp overall, n=8), supporting normal conviction/sizing here.",
+      "exampleDate": "H1 2026 (sector pattern)"
+    },
+    "postLose": {
+      "avgPct": -22,
+      "range": "-8% to -40%",
+      "note": "NNE's own decline from its 52-week high ($60.87) to current levels ($16.00) — a ~74% drawdown — remains the most direct same-company precedent for how far SMR-sector sentiment can turn against these names on DOE policy news unrelated to company-specific execution.",
+      "exampleDate": "H1 2026 (NNE)"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Unchanged. Pre-revenue small-cap ($859M) with an unusually strong cash position and genuinely concrete new regulatory/strategic progress (NRC docketing, AI-infra LOI), but a multi-year commercialization timeline keeps sizing at 3%, not higher."
+    },
+    "stopPreCatalyst": { "pct": -27, "price": 11.68, "note": "หลุด $11.68 = โซน 52-week low ใหม่ — กว้างกว่า median MAE กลุ่ม regulatory_approval (-25%, n=8)" },
+    "stopPostCatalyst": { "pct": -25, "note": "ถ้าการพิจารณา NRC ของ KRONOS มีปัญหาสำคัญ หรือ sentiment sector SMR แย่ลงอีก — exit" }
+  },
+  "comparableCases": [
+    {
+      "ticker": "NNE",
+      "event": "Decline from 52-week high ($60.87) to current levels amid DOE large-reactor loan-program news",
+      "date": "H1 2026",
+      "movePct": -74,
+      "days": 240,
+      "outcome": "bad",
+      "note": "Same-company precedent for how sector-wide policy sentiment (not company execution) can drive a severe drawdown — directly relevant risk context, now extended by the continued decline despite the docketing news."
+    },
+    {
+      "ticker": "NNE",
+      "event": "NRC formally dockets KRONOS construction permit application (University of Illinois site) + IP3 nuclear-AI LOI, stock declines anyway",
+      "date": "Sep 2026",
+      "movePct": -8.3,
+      "days": 69,
+      "outcome": "bad",
+      "note": "Same-company, most current precedent — two genuinely concrete positive developments still produced a decline, reinforcing that sector-wide sentiment currently dominates company-specific news for this name."
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/nne/",
+    "https://stockanalysis.com/stocks/nne/forecast/",
+    "https://www.stocktitan.net/news/NNE/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "มีพัฒนาการจริง 2 เรื่องตั้งแต่รายงานก่อน — NRC ลงทะเบียน (docketed) construction permit application ของ KRONOS สำหรับพื้นที่ University of Illinois อย่างเป็นทางการแล้ว มี environmental review เล็งปี 2027 และก่อสร้างคาดกลางปี 2027 — วันที่จริงที่ก่อนหน้านี้มีแค่ 'formal review activities' โดยไม่มี timeline สอง LOI ไม่ผูกพันกับ IP3 Corporation และ Cybernetic Intelligence (25 ก.ย.) เพื่อพัฒนา nuclear-powered AI infrastructure ร่วมกัน แตะ theme AI-datacenter-power ที่ร้อนแรงตรง ขยาย narrative จริง Needham เริ่ม coverage 21 ก.ย. ที่ Buy $33 (สัญญาณ analyst ใหม่รายแรกตั้งแต่รายงานก่อน) ดึง consensus 8 analysts เหลือ $37.57 (+135%) — ยัง upside จริงแต่ยังต่ำกว่าเกณฑ์ turbo 200%+ ของบอร์ดนี้ตรงไปตรงมา เหมือนรายงานก่อน เงินสดยังยอดเยี่ยม (~$580M) ตัดความเสี่ยง survival ออกไปเต็มที่ นี่คืออัปเดตความคืบหน้าจริง ไม่ใช่ pick ความเชื่อมั่นสูงใหม่",
+      "priceNote": "self-fetch วันนี้ (live-prices.json cache เก่าตั้งแต่ 13 ส.ค.) ลง 8.3% ตั้งแต่รายงานก่อน ($17.44 → $16.00) ทั้งที่มีความคืบหน้า regulatory และ strategic จริง — NRC ลงทะเบียน (ไม่ใช่แค่ 'เริ่มพิจารณา') construction permit ของ KRONOS แล้ว พร้อม timeline จริง (2027 review / ก่อสร้างกลางปี 2027)",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "Construction Permit ของ KRONOS — NRC ลงทะเบียนแล้ว", "description": "NRC ลงทะเบียน construction permit application ของเครื่องปฏิกรณ์ micro modular KRONOS สำหรับพื้นที่ University of Illinois อย่างเป็นทางการ มี environmental review เล็งปี 2027 และก่อสร้างคาดกลางปี 2027 — ความคืบหน้าเชิงกระบวนการจริงและ timeline แรกที่ thesis นี้เคยมี" },
+        { "name": "LOI Nuclear-Powered AI Infrastructure (IP3 / Cybernetic Intelligence)", "description": "บันทึกความเข้าใจไม่ผูกพัน (25 ก.ย.) เพื่อร่วมพัฒนาโครงสร้าง AI infrastructure ที่ใช้พลังงานนิวเคลียร์ วางตำแหน่ง NNE เป็น 'preferred provider' ด้านเทคโนโลยีนิวเคลียร์สำหรับ AI datacenter — ขยาย addressable market narrative จริงเกินกว่าแค่ micro-reactor" },
+        { "name": "Advanced Fuel Transportation / HALEU Logistics", "description": "เส้นทางรายได้จริงระยะใกล้ที่สุด — เล็ง HALEU logistics เริ่ม 2027-2028 ผ่านบริษัทลูก Advanced Fuel Transportation ก่อนการทำ commercial เครื่องปฏิกรณ์ใด ๆ" }
+      ],
+      "risks": [
+        "Upside จริง (consensus +135%) ยังไม่ถึงเกณฑ์ 200%+ ปกติของบอร์ดนี้ — ประเมินไม่เปลี่ยนจากรายงานก่อน ตอนนี้มี sample analyst กว้างขึ้นเป็น 8 คน (เป้า Needham $33 ระมัดระวังกว่าค่าเฉลี่ยเดิมและดึง consensus ลงเล็กน้อย)",
+        "ยัง pre-revenue จริง เส้นทางรายได้เชิงพาณิชย์ที่ใกล้ที่สุด (HALEU logistics) ยังอีก 1-2 ปี แม้จะ docketed แล้ว timeline การพิจารณา construction permit ของ KRONOS (review 2027, ก่อสร้างกลางปี 2027) ยังเป็น story หลายปี ไม่ใช่ binary ระยะใกล้",
+        "ดีล IP3/Cybernetic Intelligence ด้าน AI infrastructure ยังเป็น LOI ไม่ผูกพัน ไม่ใช่สัญญาที่เซ็นแล้ว — เป็นเรื่องจริงแต่ยังระยะเริ่มต้น",
+        "หุ้นลง 8.3% ตั้งแต่รายงานก่อนทั้งที่มีข่าว regulatory และ strategic เป็นบวกจริง — pattern แบบอ่อนๆ เดียวกับที่เห็นในหุ้นอื่นบนบอร์ดนี้ที่ข่าวดียังไม่ถูกให้รางวัลเต็มที่",
+        "Sentiment กลุ่ม SMR/advanced-nuclear ทั้ง sector ผันผวนในปี 2026 จากข่าวโครงการเงินกู้ DOE ที่เอียงไปทาง large reactor — headwind จริงต่อกลุ่มเพื่อนทั้งกลุ่ม ไม่เปลี่ยนจากเดิม"
+      ],
+      "macroRisk": {
+        "rateOutlook": "เงินสดก้อนใหญ่มากของ NNE (~$580M) ลดความเสี่ยงการเงินระยะใกล้ได้มากเทียบหุ้น pre-revenue ส่วนใหญ่ แต่ story ระยะยาวแบบนี้ยัง sensitive กับ multiple จากการขยับของดอกเบี้ยกว้างๆ",
+        "inflationNote": "เงินเฟ้อ core ยังสูงกว่าเป้า เป็น headwind ต่อหุ้น pre-revenue growth ทั่วไป แม้เงินสดของ NNE จะลดช่องทางความเสี่ยงการเงินโดยตรงได้",
+        "sectorImpact": "Sector SMR/advanced-nuclear แสดง sensitivity จริงต่อข่าวโครงการเงินกู้ DOE ที่เอียงไปทาง large reactor ปีนี้ — headwind เชิงโครงสร้างที่ไม่ผูกกับนโยบาย Fed ไม่เปลี่ยนจากรายงานก่อน",
+        "summary": "ปานกลาง — งบดุลของ NNE ลดช่องทางความเสี่ยงการเงินโดยตรงที่หุ้น pre-revenue ส่วนใหญ่เจอ แต่ sentiment กลุ่ม SMR ที่อ่อนแอต่อเนื่องยังกดดัน story ระยะยาวหลายปีแบบนี้ได้"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม — เข้าไม้เล็กตาม story ที่มีทุนหนาและกำลังคืบหน้าจริง แต่ยังเป็น story หลายปี median at-catalyst return ของ turbo lane วัดได้ -13.7% (n=19) ควรรอโซนย่อ $13.50-14.70 upside จริงยังต่ำกว่า 200% (Moon 160%) — นี่คือการอัปเดต carryover ไม่ใช่ pick ความเชื่อมั่นสูงใหม่ แม้ NRC docketing และ AI-infra LOI จะเป็นพัฒนาการบวกจริง",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ลง 8.3% ทั้งที่มีข่าว NRC docketing และ AI-infra LOI เป็นบวกจริง median at-catalyst return วัดได้ -13.7% จึงไม่ใช่ entry เริ่มต้นที่แนะนำ", "timing": "Scale in (เล็ก)" },
+          { "note": "ใกล้/ที่โซน 52-week low — R/R ดีที่สุดถ้า sentiment sector SMR อ่อนตัวเพิ่ม", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงหนัก — เฉพาะ sector SMR เทขายรวม", "timing": "Deep dip only" }
+        ],
+        "tp1": { "note": "Base — การพิจารณา KRONOS คืบหน้าตาม timeline 2027 ที่เปิดเผยใหม่ LOI IP3 ด้าน AI-infra พัฒนาต่อ สมมติ horizon ราว 9-12 เดือนตามนาฬิกา regulatory หลายปี" },
+        "tp2": { "note": "Bull — ใกล้เป้า Needham $33 milestone regulatory บวกหรือสัญญา HALEU logistics" },
+        "tp3": { "note": "Moon — SMR sector re-rate ทั้งกลุ่ม บวก theme AI-nuclear infrastructure ติดตลาด เกิน consensus", "moon": true },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า median MAE กลุ่ม regulatory_approval (-25%, n=8) ซึ่งเป็น leader type ตาม feedback tier2 (+5.3pp เทียบ +2.0pp โดยรวม) รองรับ sizing ปกติ",
+          "hardNote": "หลุดลึก — จะบ่งชี้ปัญหาร้ายแรงต่อการพิจารณา KRONOS หรือ SMR sector capitulation",
+          "rrNote": "Entry ($16.00) เทียบ TP2 ($32.80), stop แคบ ($11.68)",
+          "rrWarning": "R/R ดีพร้อมเงินสดหนุนแข็งแรง แต่ Moon case (160%) ยังต่ำกว่าเกณฑ์ 200%+ ปกติของบอร์ดนี้ — คำเตือนเดียวกับรายงานก่อน"
+        }
+      },
+      "estimateDates": [
+        { "event": "NRC Environmental Review ของ KRONOS", "note": "construction permit application ลงทะเบียนแล้ว environmental review เล็งปี 2027 ก่อสร้างคาดกลางปี 2027" }
+      ]
+    }
+  }
+}

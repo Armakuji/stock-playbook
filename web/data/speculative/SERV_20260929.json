@@ -1,0 +1,158 @@
+{
+  "ticker": "SERV",
+  "companyName": "Serve Robotics Inc.",
+  "companyDescription": "Sidewalk delivery robots · guidance cut from $26M to $9-10M FY26 (Aug 6) after Uber Eats volume disappointed; Uber has since fully exited its board seat and stake — the single-customer thesis is broken, now betting on Grubhub/DoorDash multi-platform diversification instead",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-09-29T00:00:00.000Z",
+  "price": 4.43,
+  "priceChange": -0.4,
+  "priceNote": "Self-fetched today (live-prices.json cache dated Aug 13, too stale to use). Down 7% since the last report ($4.78 → $4.43) after Aug 6 earnings delivered a severe guidance cut (-10.48% same-day) — this is a materially different, weaker setup than the pre-earnings squeeze thesis this pick was built on in August.",
+  "marketCap": "$393M",
+  "sector": "Technology / Robotics",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 48,
+  "summary": "The Aug 6 print that was the catalyst for the last report went badly: FY26 revenue guidance was cut from $26M to just $9-10M on 'lower-than-expected Uber Eats delivery volume and the removal of projected second-half demand,' and the stock fell -10.48% same-day — a real thesis break, not just sentiment. Uber has since fully exited: its board seat was replaced back in June, and the company's own Aug 6 language effectively confirms Uber Eats volume collapsed. The recovery narrative now rests on genuine multi-platform diversification — new Grubhub city launches (Chicago, LA, Alexandria, Aug 17) and DoorDash expansion (DC, San Jose) — reducing single-customer dependency, but from a much smaller revenue base than bulls were pricing in six weeks ago. Cash remains healthy ($240.4M at Q2), so there's no near-term survival risk, but several analysts slashed targets hard (Northland $26→$10, Oppenheimer $20→$7, Guggenheim $13→$7) even as one holdout keeps the $22 high end alive. Next earnings Nov 11 is the real test of whether the diversification is working.",
+  "catalysts": [
+    {
+      "icon": "🤖",
+      "name": "Q3 2026 Earnings — Multi-Platform Proof Point",
+      "description": "Reports Nov 11, 2026. First full quarter to show whether the new Grubhub (Chicago/LA/Alexandria) and DoorDash (DC/San Jose) city launches are offsetting the collapsed Uber Eats volume that drove the Aug 6 guidance cut.",
+      "urgencyLabel": "~6 WEEKS",
+      "dateBadge": "Nov 11, 2026",
+      "catalystDate": "2026-11-11",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🍔",
+      "name": "Grubhub/DoorDash Multi-City Expansion",
+      "description": "Launched with Grubhub in Chicago, LA and Alexandria, plus DoorDash operations opening in Washington DC and San Jose (Aug 17) — the concrete diversification move away from Uber Eats dependency that the post-guidance-cut thesis now rests on.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "THESIS BROKEN (not a survival risk — cash is healthy at $240.4M): FY26 revenue guidance was cut ~62-65% (from $26M to $9-10M) on Aug 6, with the stock falling -10.48% same-day — this is a confirmed fundamental deterioration, not a sentiment-only dip. Any entry here is a bet on a genuine recovery, not a continuation of the prior squeeze setup",
+    "Uber has fully exited — board seat replaced in June, and the volume collapse behind the Aug 6 cut effectively confirms the partnership underperformed materially versus plan",
+    "Heavy cash burn continues (-$101.4M net loss in FY2025 on just $2.65M revenue) funded by dilutive equity offerings — share count has roughly doubled over the past year",
+    "Analyst targets were slashed hard post-cut (Northland $26→$10, Oppenheimer $20→$7, Guggenheim $13→$7, Cantor downgraded to Hold) — the $12.14 consensus average is propped up by one high $22 holdout, so the real post-cut bar is closer to $7-10",
+    "Unit economics of robot delivery at scale remain genuinely unproven even before this setback — the guidance cut makes the path to profitability materially longer, not shorter"
+  ],
+  "estimateDates": [
+    { "event": "Q3 2026 earnings", "dateRange": "Nov 11, 2026", "note": "First quarter to prove out the Grubhub/DoorDash diversification against the Aug 6 guidance cut", "est": "Watch whether new-city ramp offsets lost Uber Eats volume", "highlight": "red" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -45, "price": 2.44 },
+    { "label": "Base", "color": "yellow", "pct": 40, "price": 6.20 },
+    { "label": "Bull", "color": "green", "pct": 125, "price": 9.97 },
+    { "label": "Moon", "color": "purple", "pct": 220, "price": 14.18 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (8 analysts, S&P Global)", "target": 12.14, "rating": "Buy", "note": "+174% headline, but skewed by one $22 holdout; post-cut targets cluster $7-10 (Northland $10, Oppenheimer $7, Guggenheim $7)" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "SERV is pre-profitability and cash-burning, so financing cost is directly relevant, but the Aug 6 guidance cut is a company-specific fundamentals event that dominates the near-term story far more than macro right now.",
+    "inflationNote": "Core inflation remains above target; a secondary factor versus the diversification-execution question.",
+    "sectorImpact": "Growth/cash-burning tech like SERV is rate-sensitive on financing cost, but the Nov 11 print and whether Grubhub/DoorDash offset the Uber Eats loss will drive the stock far more than any Fed move between now and then.",
+    "summary": "Macro risk is secondary — this is now an execution/recovery story after a real guidance cut, not a macro-driven one."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 4.43, "note": "Current price, post-guidance-cut — turbo lane's measured median at-catalyst return is -13.7% (n=19), and this specific pick just demonstrated a real -10.48% thesis-break move, so this is not the default entry", "timing": "Now (1-2% max, smallest sizing)" },
+      { "label": "Entry 2", "level": 3.60, "rangeMax": 3.95, "note": "Deeper dip zone — better R/R given the confirmed thesis deterioration, wait for more evidence the diversification is working before sizing up", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 2.80, "note": "Deep capitulation only — high conviction that Grubhub/DoorDash ramp is proving out", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 6.20, "pct": 40.0, "note": "Base — Q3 print shows Grubhub/DoorDash expansion stabilizing revenue post-cut; Base assumes a ~6-week horizon to the Nov 11 print with modest execution proof" },
+    "tp2": { "price": 9.97, "pct": 125.0, "note": "Bull — matches the post-cut analyst median (~$7-10), diversification clearly offsetting the Uber Eats loss" },
+    "tp3": { "price": 14.18, "pct": 220.0, "note": "Moon — multi-platform expansion re-accelerates growth well beyond the cut guidance and sentiment fully recovers toward the high-end target", "moon": true },
+    "stopLoss": {
+      "tight": 3.30, "tightPct": -25.5, "tightNote": "Wider than the turbo overall median MAE (-24.1%, n=41; earnings_beat type n=2 too thin to use) given this name just demonstrated a real double-digit single-day thesis-break move",
+      "hard": 2.44, "hardPct": -45.0, "hardNote": "A second guidance cut, further Uber Eats deterioration, or a new dilutive offering — thesis fails to recover",
+      "riskReward": "5.2 : 1", "rrNote": "From Entry 2 ($3.78 mid) tight stop vs TP2", "rrWarning": "Nominal asymmetry is still wide, but this is now a recovery bet after a confirmed break, not a clean momentum setup — size accordingly small"
+    },
+    "verdict": "ค่าขนม SPECULATIVE — 1-2% max, reduced from prior sizing given the confirmed Aug 6 guidance-cut break. Measured turbo median at-catalyst return is -13.7% (n=19); combined with this pick's own -10.48% break-day move, Entry 1 is explicitly not recommended — wait for the $3.60-3.95 zone or clear Nov 11 evidence the Grubhub/DoorDash diversification is working.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "SERV historically ran up into earnings on short-interest positioning, but the Aug 6 print broke that pattern with a real guidance cut instead of a beat — the pre-earnings setup this time around (into Nov 11) is a genuine unknown given the changed fundamental picture.",
+    "preRunupTiming": "1-2 weeks before earnings historically, though the Aug 6 outcome shows this pattern can fail hard",
+    "preRunupPct": "+10% to +25% historically, but Aug 6 broke the pattern entirely",
+    "postWin": {
+      "avgPct": 20,
+      "range": "+5% to +21%",
+      "note": "The Q4 2025 report showed the classic short-squeeze pattern (~+11% pre-market, +10% more intraday), but the very next quarter (Aug 6, 2026) broke it completely with a guidance-cut-driven -10.48% drop. Both outcomes are real, recent precedent for this name — treat the squeeze upside as live but no longer the base case.",
+      "exampleDate": "Feb 2026 (Q4 2025 beat) vs Aug 2026 (Q2 2026 miss/cut)"
+    },
+    "postLose": {
+      "avgPct": -15,
+      "range": "-10.5% to -19.5%",
+      "note": "Aug 6, 2026 guidance cut drove -10.48% same-day — the most recent and most relevant precedent, a genuine fundamentals break rather than the earlier July dilution-fear selloff (-19.5% over 10 days) which was sentiment-only.",
+      "exampleDate": "Aug 6, 2026 (Q2 2026 guidance cut)"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "Cut from 4% last report — the Aug 6 guidance cut is a confirmed thesis break (Uber Eats volume collapse), not just short-term sentiment, so this now needs to earn back conviction through Q3 execution evidence before sizing up again."
+    },
+    "stopPreCatalyst": { "pct": -26, "price": 3.30, "note": "หลุด $3.30 = สัญญาณว่าการ diversify ไป Grubhub/DoorDash ไม่ได้ชดเชย Uber Eats ที่หายไป — กว้างกว่า median MAE โดยรวมของ turbo (-24.1%)" },
+    "stopPostCatalyst": { "pct": -30, "note": "ถ้า Q3 (11 พ.ย.) แสดงว่า guidance ยังแย่ลงอีก หรือมี dilutive offering ใหม่ — exit, อย่ารอให้ thesis ฟื้นเอง" }
+  },
+  "comparableCases": [
+    { "ticker": "SERV", "event": "Q2 2026 earnings: FY26 guidance cut from $26M to $9-10M on Uber Eats volume collapse", "date": "Aug 6, 2026", "movePct": -10.48, "days": 1, "outcome": "bad", "note": "The defining event of this refresh — a confirmed fundamentals break, not sentiment. Multiple analysts slashed targets 50-70% the same week, and this is the most relevant precedent for how the stock reacts to real bad news now." },
+    { "ticker": "SERV", "event": "Q4 2025 earnings beat with heavy short interest outstanding", "date": "Feb 2026", "movePct": 21, "days": 1, "outcome": "good", "note": "Shows the squeeze mechanism is real and available IF the company beats again — but Aug 6 proves it cuts both ways violently, and the more recent precedent is the bad one." },
+    { "ticker": "SERV", "event": "Uber board seat replacement (Andreas Lieber replaces Uber's Sarfraz Maredia)", "date": "Jun 22, 2026", "movePct": -4.52, "days": 1, "outcome": "bad", "note": "Early, real signal of the Uber relationship cooling that preceded the Aug 6 guidance cut by six weeks — in hindsight, a leading indicator worth weighing more heavily next time." }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/serv/",
+    "https://stockanalysis.com/stocks/serv/forecast/",
+    "https://www.stocktitan.net/news/SERV/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "ผลประกอบการ 6 ส.ค. ที่เป็น catalyst ของรายงานก่อนออกมาแย่ — guidance รายได้ FY26 ถูกตัดจาก $26M เหลือแค่ $9-10M เพราะ 'ปริมาณส่งของผ่าน Uber Eats ต่ำกว่าคาดและตัดดีมานด์ครึ่งปีหลังที่เคยคาดไว้ออก' หุ้นลง -10.48% วันเดียวกัน — เป็นการพัง thesis จริง ไม่ใช่แค่ sentiment Uber ถอนตัวเต็มรูปแบบแล้ว — เปลี่ยนที่นั่งบอร์ดตั้งแต่มิ.ย. และภาษาที่บริษัทใช้วันที่ 6 ส.ค. ยืนยันโดยนัยว่าปริมาณ Uber Eats พังจริง เรื่องราวการฟื้นตัวตอนนี้ขึ้นกับการกระจายแพลตฟอร์มจริง — เปิดเมืองใหม่กับ Grubhub (Chicago, LA, Alexandria, 17 ส.ค.) และขยาย DoorDash (DC, San Jose) ลดการพึ่งพาลูกค้ารายเดียว แต่จากฐานรายได้ที่เล็กลงมากกว่าที่ bull เคย price ไว้เมื่อ 6 สัปดาห์ก่อน เงินสดยังแข็งแรง ($240.4M ณ Q2) จึงไม่มีความเสี่ยง survival ระยะใกล้ แต่หลาย analyst ตัดเป้าหนักมาก (Northland $26→$10, Oppenheimer $20→$7, Guggenheim $13→$7) แม้จะมีคนเดียวที่ยังคงเป้าสูงสุด $22 ผลประกอบการถัดไป 11 พ.ย. คือบททดสอบจริงว่าการกระจายแพลตฟอร์มได้ผลไหม",
+      "priceNote": "self-fetch วันนี้ (live-prices.json cache เก่าตั้งแต่ 13 ส.ค.) ลง 7% ตั้งแต่รายงานก่อน ($4.78 → $4.43) หลังผล 6 ส.ค. ที่ guidance ถูกตัดหนัก (-10.48% วันเดียวกัน) — เป็น setup ที่อ่อนแอกว่า squeeze thesis เดิมที่เคยเขียนไว้ในส.ค.มาก",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "ผลประกอบการ Q3 2026 — บทพิสูจน์ Multi-Platform", "description": "รายงาน 11 พ.ย. 2026 ไตรมาสเต็มแรกที่จะแสดงว่าการเปิดเมืองใหม่กับ Grubhub (Chicago/LA/Alexandria) และ DoorDash (DC/San Jose) จะชดเชยปริมาณ Uber Eats ที่หายไปซึ่งทำให้ guidance ถูกตัดวันที่ 6 ส.ค. ได้หรือไม่" },
+        { "name": "ขยายหลายแพลตฟอร์ม Grubhub/DoorDash", "description": "เปิดตัวกับ Grubhub ใน Chicago, LA และ Alexandria พร้อม DoorDash เปิดที่ Washington DC และ San Jose (17 ส.ค.) — การกระจายความเสี่ยงจริงที่ thesis หลัง guidance cut ตอนนี้พึ่งพา" }
+      ],
+      "risks": [
+        "THESIS พัง (ไม่ใช่ความเสี่ยง survival — เงินสดยังแข็งแรงที่ $240.4M): guidance รายได้ FY26 ถูกตัดราว 62-65% (จาก $26M เหลือ $9-10M) วันที่ 6 ส.ค. หุ้นลง -10.48% วันเดียวกัน — เป็นการเสื่อมของพื้นฐานที่ยืนยันแล้ว ไม่ใช่แค่ sentiment การเข้าตอนนี้คือ bet เรื่องการฟื้นตัวจริง ไม่ใช่ squeeze setup เดิม",
+        "Uber ถอนตัวเต็มรูปแบบแล้ว — เปลี่ยนที่นั่งบอร์ดตั้งแต่มิ.ย. และการหายไปของปริมาณที่อยู่เบื้องหลัง guidance cut 6 ส.ค. ยืนยันโดยนัยว่าความร่วมมือแย่กว่าแผนจริง",
+        "burn เงินสดหนักต่อเนื่อง (ขาดทุนสุทธิ -$101.4M ในปี 2025 จากรายได้แค่ $2.65M) ด้วยการออกหุ้นเพิ่มซ้ำๆ — จำนวนหุ้นเพิ่มขึ้นเกือบเท่าตัวในปีที่ผ่านมา",
+        "เป้า analyst ถูกตัดหนักหลัง guidance cut (Northland $26→$10, Oppenheimer $20→$7, Guggenheim $13→$7, Cantor ลดเป็น Hold) — เป้าเฉลี่ย $12.14 ถูกยกขึ้นด้วยคนเดียวที่ยังให้ $22 สูงสุด บาร์จริงหลัง cut ใกล้ $7-10 มากกว่า",
+        "Unit economics ของการส่งของด้วยหุ่นยนต์ในสเกลใหญ่ยังพิสูจน์ไม่ได้จริงอยู่แล้วก่อนเหตุการณ์นี้ — guidance cut ทำให้เส้นทางสู่กำไรยาวขึ้น ไม่ใช่สั้นลง"
+      ],
+      "macroRisk": {
+        "rateOutlook": "SERV ยังไม่ทำกำไรและ burn เงินสดหนัก ต้นทุนการระดมทุนจึงเกี่ยวข้องตรง แต่ guidance cut 6 ส.ค. เป็นเหตุการณ์พื้นฐานเฉพาะบริษัทที่มีน้ำหนักมากกว่า macro ตอนนี้มาก",
+        "inflationNote": "เงินเฟ้อ core ยังสูงกว่าเป้า เป็นปัจจัยรองเทียบกับคำถามเรื่องการ execute การกระจายแพลตฟอร์ม",
+        "sectorImpact": "หุ้น growth/cash-burning อย่าง SERV ไวต่อดอกเบี้ยด้านต้นทุนการระดมทุน แต่ผล 11 พ.ย. และว่า Grubhub/DoorDash จะชดเชย Uber Eats ได้ไหมมีน้ำหนักต่อหุ้นมากกว่า Fed move ใดๆ ก่อนหน้านั้น",
+        "summary": "ความเสี่ยง macro เป็นเรื่องรอง — ตอนนี้เป็น story เรื่อง execution/การฟื้นตัวหลัง guidance cut จริง ไม่ใช่เรื่อง macro"
+      },
+      "entryStrategy": {
+        "verdict": "ค่าขนม 1-2% max ลดจาก sizing เดิมเพราะ guidance cut 6 ส.ค. ที่ยืนยันแล้ว median at-catalyst return ของ turbo lane วัดได้ -13.7% (n=19) รวมกับการเคลื่อนไหว -10.48% วันที่พังของ pick นี้เอง — Entry 1 จึงไม่แนะนำชัดเจน รอโซน $3.60-3.95 หรือหลักฐานชัดจาก 11 พ.ย. ว่าการกระจายแพลตฟอร์มได้ผล",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน หลัง guidance cut — median at-catalyst return วัดได้ -13.7% บวกกับ pick นี้เองเพิ่งมีวันพัง -10.48% จริง จึงไม่ใช่ entry เริ่มต้นที่แนะนำ", "timing": "ตอนนี้ (1-2% max, sizing เล็กสุด)" },
+          { "note": "โซนย่อลึกกว่า — R/R ดีกว่าเพราะ thesis เสื่อมจริงแล้ว รอหลักฐานเพิ่มก่อนเพิ่ม size", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงหนักเท่านั้น — มั่นใจสูงว่า Grubhub/DoorDash ramp กำลังพิสูจน์ตัวเอง", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Base — ผล Q3 แสดงว่าการขยาย Grubhub/DoorDash เริ่มทำให้รายได้นิ่งหลัง cut สมมติ horizon ราว 6 สัปดาห์ถึงผล 11 พ.ย." },
+        "tp2": { "note": "Bull — ตรงเป้าเฉลี่ย analyst หลัง cut (~$7-10) การกระจายแพลตฟอร์มชดเชย Uber Eats ได้ชัดเจน" },
+        "tp3": { "note": "Moon — การขยายหลายแพลตฟอร์มเร่งการเติบโตเกิน guidance ที่ตัดไปมาก sentiment ฟื้นเต็มที่สู่เป้าสูงสุด", "moon": true },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า median MAE โดยรวมของ turbo (-24.1%) เพราะหุ้นตัวนี้เพิ่งแสดงการเคลื่อนไหวพัง thesis สองหลักในวันเดียวจริง",
+          "hardNote": "guidance cut รอบสอง, Uber Eats แย่ลงอีก, หรือมี dilutive offering ใหม่ — thesis ไม่ฟื้น",
+          "rrNote": "จาก Entry 2 ($3.78 กลาง) stop แคบ vs TP2",
+          "rrWarning": "Asymmetry ตัวเลขยังกว้าง แต่นี่คือ bet ฟื้นตัวหลังพังจริงแล้ว ไม่ใช่ momentum setup ที่สะอาด — size ให้เล็กตามความเสี่ยง"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q3 2026", "note": "ไตรมาสแรกที่พิสูจน์การกระจายแพลตฟอร์ม Grubhub/DoorDash เทียบ guidance cut 6 ส.ค." }
+      ]
+    }
+  }
+}
