@@ -1,0 +1,288 @@
+{
+  "ticker": "SVRA",
+  "companyName": "Savara Inc.",
+  "companyDescription": "Rare disease biotech · First-in-class inhaled MOLBREEVI (molgramostim) in Priority Review for autoimmune pulmonary alveolar proteinosis (aPAP) — PDUFA target action date Nov 22, 2026 holds firm, no second delay — no FDA-approved therapy exists for this ultra-rare lung disease today",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-10-26T00:00:00.000Z",
+  "price": 4.29,
+  "priceChange": 1.9,
+  "priceNote": "Live $4.29 (+1.9%) on Oct 26, 2026 — 52-week range $3.86-$7.01, down ~15% from $5.07 at the Sep 29 report. Market cap ~$1.09B. Since the Sep 29 reports, this board's small caps fell 21-41% after the Sep 16 hike and the hot Sep CPI (Oct 14). This is a sector/size selloff that SPY-based regime notes don't capture, so drawdowns here say as much about the tape as the thesis.",
+  "marketCap": "~$1.09B",
+  "sector": "Healthcare / Biotechnology",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Moonshot",
+  "score": 0,
+  "summary": "REFRESH (prior report Sep 29, 2026). MOLBREEVI's priority-review PDUFA holds at Nov 22, 2026 for autoimmune PAP, an ultra-rare lung disease with no approved therapy. The earlier Aug → Nov extension was a major-amendment classification with no safety, efficacy or manufacturing issue cited, and modeled approval odds are ~85%. The stock has drifted ~15% lower to just above its 52-week low, so the usual pre-PDUFA run-up hasn't started. Consensus $11.06 (+158%). Survival check passes: $173M cash at Jun 30 (~13 months of runway), plus $75M of RTW royalty funding triggered by approval. ATM dilution has been real (+23% shares since Q1), and there's a $30M Hercules loan. fda_decision is a Tier-2 LEADER in turbo feedback. This is the cleanest 'set and hold through the market' binary on the board: the outcome is FDA-driven, not macro-driven. Base +35% (above the lane's realized 30d P90 of +25.9%; written-Base bias +72.7pp) assumes approval and a 1-3 month re-rating toward ~$5.80. แนะนำ 2-3% ของ portfolio เท่านั้น — ถ้าโดน CRL ลงได้ 40-60%.",
+  "catalysts": [
+    {
+      "icon": "💊",
+      "name": "MOLBREEVI (molgramostim) BLA — PDUFA, priority review",
+      "description": "FDA decision for autoimmune PAP, an ultra-rare lung disease with no approved therapy. The date was extended once (Aug 22 → Nov 22) after Savara's information-request responses were classed as a major amendment; FDA cited no safety, efficacy or manufacturing concerns.",
+      "urgencyLabel": "~4 WEEKS",
+      "dateBadge": "Nov 22, 2026",
+      "catalystDate": "2026-11-22",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🇬🇧",
+      "name": "UK MHRA (accelerated) + EMA review",
+      "description": "MHRA validated the MAA under Accelerated Review (150-day assessment); the EMA/CHMP decision is expected Q1 2027.",
+      "urgencyLabel": "PENDING",
+      "dateBadge": "Q1 2027",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "CRL risk — the review was already extended once (Aug → Nov) after an FDA information request; a CRL or second delay is still possible despite no cited safety, efficacy or manufacturing issue.",
+    "Ongoing dilution — shares outstanding rose ~23% since Q1 via ATM issuance while cash fell from $203M (Q1) to $173M (Q2); expect more issuance around approval.",
+    "Runway ~13 months at the current burn ($62.8M in H1 2026), plus a $30M Hercules loan with covenants tied to approval and revenue milestones.",
+    "Launch risk: aPAP is ultra-rare and under-diagnosed, so patient-finding could make uptake slower than models assume.",
+    "Thinly traded rare-disease name — a CRL would gap the stock through any stop (CORT fell ~50% on a CRL in Dec 2025)."
+  ],
+  "estimateDates": [
+    {
+      "event": "MOLBREEVI PDUFA",
+      "dateRange": "Nov 22, 2026",
+      "note": "Approval unlocks $75M RTW royalty funding (by Mar 31, 2027)",
+      "est": "~85% modeled PoA",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -40,
+      "price": 2.57
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 35,
+      "price": 5.79
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 90,
+      "price": 8.15
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 210,
+      "price": 13.3
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus (stockanalysis.com)",
+      "target": 11.06,
+      "rating": "Strong Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds at 3.75-4.00% after the surprise Sep 16, 2026 hike (first since 2023). The Oct 27-28 FOMC is priced ~93% hold / ~7% +25bp as of Oct 25 — but hike odds briefly spiked to ~44% after the hot Sep CPI print on Oct 14, so the path stays two-sided.",
+    "inflationNote": "September CPI +0.6% m/m, 3.7% y/y headline; core +0.3% m/m, 2.6% y/y — both above consensus. Headline re-acceleration keeps a further 2026 hike live.",
+    "sectorImpact": "Rare-disease biotech whose next move is driven by an FDA decision, not rates; rates matter only through small-cap biotech risk appetite and the cost of ATM funding.",
+    "summary": "MEDIUM — Oct 28 hold is priced (~93%), but hot CPI keeps a further 2026 hike live. Small, cash-burning names have already absorbed most of this tape's damage, so a hold is mildly supportive and a surprise hike is the main macro tail."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 4.29,
+        "note": "Current price — starter only. Not preferred: turbo at-catalyst median -13.7% (n=19)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 3.95,
+        "rangeMax": 4.2,
+        "note": "Just above the $3.86 52-week low — preferred, ahead of the Nov 22 PDUFA",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 3.5,
+        "note": "Deep dip — only if no new CRL signal",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 5.79,
+      "pct": 35,
+      "note": "Base — approved on Nov 22; re-rates to ~$5.80 (back above the Sep 29 level). Horizon ~1-3 months."
+    },
+    "tp2": {
+      "price": 8.15,
+      "pct": 90,
+      "note": "Bull — approval plus a clean label and visible early launch; ~$8.15."
+    },
+    "tp3": {
+      "price": 13.3,
+      "pct": 210,
+      "note": "Moon — monopoly first-in-class launch plus EU/UK approvals; ~$13.30, above the $11.06 consensus. 12-24 month thesis.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 3.35,
+      "tightPct": -22,
+      "tightNote": "-22% — wider than the turbo fda_decision medianMAE (-18.4%, n=10); sits below the $3.86 52-week low.",
+      "hard": 2.57,
+      "hardPct": -40,
+      "hardNote": "-40% — CRL territory; equals the Bear case.",
+      "riskReward": "4.1 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Below the 5:1 turbo target — sizing kept small to compensate"
+    },
+    "verdict": "SPECULATIVE · Moonshot 2-3% max (refreshed Oct 26) — the cleanest market-independent binary on the turbo board: a priority-review PDUFA with high modeled odds, a funded balance sheet, and a stock near its 52-week low. Measured turbo at-catalyst median is -13.7% (n=19), so Entry 2 ($3.95-4.20) is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "No run-up yet: SVRA is ~15% below the Sep 29 report ($5.07 → $4.29), just above its $3.86 52-week low, four weeks before the PDUFA — the drift-up pattern for rare-disease PDUFAs has not started.",
+    "preRunupTiming": "2-4 weeks before Nov 22",
+    "preRunupPct": "-15% since Sep 29",
+    "postWin": {
+      "avgPct": 40,
+      "range": "+15% to +80% same-day/week for underfollowed first-in-class rare-disease approvals",
+      "note": "Reata (Skyclarys, Feb 2023) jumped +199% the day after an underfollowed first-in-class rare-disease approval — the closest structural comparable to SVRA's monopoly setup. VERA's own Jul 7, 2026 accelerated approval drove a more muted +7.05% day-of gain (a larger, more-followed name with a less clean-cut binary). fda_decision is a Tier-2 LEADER bucket in the turbo feedback prior (n=10, +9.3pp median excess vs SPY, gap +7.3 vs the overall +2pp).",
+      "exampleDate": "Feb 2023 (RETA) / Jul 2026 (VERA)"
+    },
+    "postLose": {
+      "avgPct": -35,
+      "range": "-21% to -50%",
+      "note": "CRLs in rare-disease/orphan biotech have produced brutal single-day drops even without a cited safety issue — Corcept (CORT) fell -50% on a Dec 2025 CRL, RegenxBio (RGNX) fell -21% on a Feb 2026 CRL",
+      "exampleDate": "Dec 2025 (CORT)"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "3%. fda_decision is a Tier-2 LEADER in turbo feedback (+9.3pp median excess vs SPY vs +2.0pp overall, n=10; 0/10 windows had SPY down >2%). The binary is idiosyncratic and approval odds are high (~85% modeled), but a CRL would still gap the stock down, and ATM dilution is ongoing."
+    },
+    "stopPreCatalyst": {
+      "pct": -22,
+      "price": 3.35,
+      "note": "Wider than the fda_decision medianMAE (-18.4%, n=10). A break below the 52-week low before Nov 22 would suggest the market is pricing a CRL."
+    },
+    "stopPostCatalyst": {
+      "pct": -35,
+      "note": "If FDA issues a CRL or a further extension, exit on day 1 — don't wait for a resubmission story."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "RETA",
+      "event": "Skyclarys (Friedreich's ataxia) FDA approval — first-in-class",
+      "date": "Feb 2023",
+      "movePct": 199,
+      "days": 1,
+      "outcome": "good",
+      "note": "Underfollowed first-in-class rare-disease approval — the stock nearly tripled overnight as the market re-rated a name few had modeled for a clean approval. Closest structural precedent to SVRA's own first-in-class aPAP monopoly setup."
+    },
+    {
+      "ticker": "VERA",
+      "event": "TRUTAKNA (IgA nephropathy) accelerated approval",
+      "date": "Jul 7, 2026",
+      "movePct": 7.05,
+      "days": 1,
+      "outcome": "good",
+      "note": "A larger, more-followed biotech name still only re-rated modestly on approval day — shows the range of outcomes even within 'good' approvals depends heavily on how much was already priced in and how well-known the name is."
+    },
+    {
+      "ticker": "CORT",
+      "event": "Relacorilant Complete Response Letter",
+      "date": "Dec 2025",
+      "movePct": -50,
+      "days": 1,
+      "outcome": "bad",
+      "note": "A CRL with no cited safety issue still triggered a 50% single-day collapse — shows how violently binary FDA misses can move even a well-covered name; SVRA's review has already slipped once, raising the odds of a repeat."
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/svra/",
+    "https://www.stocktitan.net/news/SVRA/savara-announces-the-u-s-food-drug-administration-fda-has-extended-x7v5whz88c2u.html",
+    "https://www.sec.gov/Archives/edgar/data/0001160308/000119312526344585/svra-20260630.htm",
+    "https://www.panabee.com/news/savara-earnings-q2-2026-report",
+    "https://www.biopharmawatch.com/blog/fda-calendar-q4-2026-key-pdufa-dates-upcoming-approvals",
+    "https://stockanalysis.com/stocks/SVRA/",
+    "https://stockanalysis.com/stocks/SVRA/forecast/",
+    "https://www.stocktitan.net/news/SVRA/",
+    "https://stockanalysis.com/stocks/SVRA/financials/cash-flow-statement/?p=quarterly",
+    "https://stockanalysis.com/stocks/SVRA/financials/balance-sheet/?p=quarterly",
+    "https://www.chase.com/personal/investments/learning-and-insights/article/will-the-federal-reserve-hike-rates-at-october-2026-fomc-meeting",
+    "https://defirate.com/prediction-markets/fed-decision-odds/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "REFRESH (รายงานก่อน 29 ก.ย. 2026) PDUFA แบบ priority review ของ MOLBREEVI ยังอยู่ที่ 22 พ.ย. 2026 สำหรับ autoimmune PAP โรคปอดหายากมากที่ยังไม่มียาอนุมัติ การเลื่อนจาก ส.ค. เป็น พ.ย. ก่อนหน้านี้เป็นเพราะจัดเป็น major amendment โดยไม่มีประเด็นความปลอดภัย ประสิทธิผล หรือการผลิต โอกาสอนุมัติตามโมเดล ~85% หุ้นค่อย ๆ ลง ~15% ไปอยู่เหนือ 52-week low เล็กน้อย การวิ่งก่อน PDUFA ตามปกติจึงยังไม่เริ่ม เป้าเฉลี่ย $11.06 (+158%) ผ่านเกณฑ์ survival: เงินสด $173M ณ 30 มิ.ย. (รันเวย์ ~13 เดือน) บวกเงิน royalty $75M จาก RTW เมื่อได้อนุมัติ แต่ dilution ผ่าน ATM เกิดขึ้นจริง (หุ้นเพิ่ม +23% ตั้งแต่ Q1) และมีเงินกู้ Hercules $30M fda_decision เป็น Tier-2 LEADER ใน turbo feedback นี่คือ binary ที่ 'ซื้อแล้วถือข้ามตลาด' ได้สะอาดที่สุดบนกระดาน เพราะผลขึ้นกับ FDA ไม่ใช่มหภาค Base +35% (สูงกว่า P90 30 วันที่ +25.9%; bias +72.7pp) สมมติได้อนุมัติและ re-rate ใน 1-3 เดือนไปราว $5.80 แนะนำ 2-3% ของ portfolio เท่านั้น — ถ้าโดน CRL ลงได้ 40-60%",
+      "priceNote": "ราคาสด $4.29 (+1.9%) 26 ต.ค. 2026 — ช่วง 52 สัปดาห์ $3.86-$7.01 ลง ~15% จาก $5.07 ณ รายงาน 29 ก.ย. Market cap ~$1.09B ตั้งแต่รายงาน 29 ก.ย. หุ้นเล็กบนกระดานนี้ร่วง 21-41% หลัง Fed ขึ้นดอกเบี้ย 16 ก.ย. และ CPI ก.ย. ที่ร้อน (14 ต.ค.) เป็นการเทขายตามขนาด/กลุ่มที่ regime note แบบ SPY จับไม่ได้ การร่วงจึงสะท้อนภาวะตลาดพอ ๆ กับตัว thesis",
+      "scoreLabel": "Moonshot",
+      "catalysts": [
+        {
+          "name": "BLA ของ MOLBREEVI (molgramostim) — วัน PDUFA แบบ priority review",
+          "description": "FDA ตัดสินยาสำหรับ autoimmune PAP โรคปอดหายากมากที่ยังไม่มียาอนุมัติ วันตัดสินเคยเลื่อนครั้งหนึ่ง (22 ส.ค. → 22 พ.ย.) เพราะคำตอบต่อคำขอข้อมูลถูกจัดเป็น major amendment โดย FDA ไม่ได้ระบุข้อกังวลด้านความปลอดภัย ประสิทธิผล หรือการผลิต"
+        },
+        {
+          "name": "MHRA สหราชอาณาจักร (แบบเร่งรัด) + การพิจารณาของ EMA",
+          "description": "MHRA รับคำขอแบบ Accelerated Review (พิจารณา 150 วัน) ส่วน EMA/CHMP คาดตัดสินใน Q1 2027"
+        }
+      ],
+      "risks": [
+        "ความเสี่ยง CRL — การพิจารณาเคยเลื่อนแล้วครั้งหนึ่ง (ส.ค. → พ.ย.) หลัง FDA ขอข้อมูลเพิ่ม ยังอาจโดน CRL หรือเลื่อนอีกได้แม้ไม่มีประเด็นความปลอดภัย ประสิทธิผล หรือการผลิตที่ระบุ",
+        "dilution ต่อเนื่อง — จำนวนหุ้นเพิ่ม ~23% ตั้งแต่ Q1 ผ่าน ATM ขณะเงินสดลดจาก $203M (Q1) เป็น $173M (Q2) คาดว่าจะออกหุ้นเพิ่มอีกรอบวันอนุมัติ",
+        "รันเวย์ ~13 เดือนตามอัตราเผาเงินปัจจุบัน ($62.8M ใน H1 2026) บวกเงินกู้ Hercules $30M ที่มีเงื่อนไขผูกกับการอนุมัติและรายได้",
+        "ความเสี่ยงการเปิดตัว: aPAP หายากมากและวินิจฉัยได้น้อย การหาผู้ป่วยอาจทำให้ยอดใช้โตช้ากว่าที่โมเดลคาด",
+        "หุ้นโรคหายากสภาพคล่องต่ำ — ถ้าโดน CRL ราคาจะ gap ทะลุ stop (CORT ลง ~50% จาก CRL เมื่อ ธ.ค. 2025)"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ยนโยบาย 3.75-4.00% หลัง Fed ขึ้นดอกเบี้ยแบบเซอร์ไพรส์เมื่อ 16 ก.ย. 2026 (ครั้งแรกตั้งแต่ 2023) ประชุม FOMC 27-28 ต.ค. ตลาดให้น้ำหนักคงดอกเบี้ย ~93% / ขึ้น 25bp ~7% (ณ 25 ต.ค.) แต่โอกาสขึ้นดอกเบี้ยเคยพุ่งถึง ~44% หลัง CPI ก.ย. ออกมาร้อนเมื่อ 14 ต.ค. ทิศทางจึงยังเสี่ยงสองด้าน",
+        "inflationNote": "CPI ก.ย. +0.6% m/m, 3.7% y/y ส่วน core +0.3% m/m, 2.6% y/y สูงกว่าคาดทั้งคู่ — เงินเฟ้อ headline เร่งตัวทำให้การขึ้นดอกเบี้ยอีกครั้งในปี 2026 ยังเป็นไปได้",
+        "sectorImpact": "ไบโอเทคโรคหายากที่การเคลื่อนไหวถัดไปขึ้นกับการตัดสินของ FDA ไม่ใช่ดอกเบี้ย ดอกเบี้ยมีผลผ่าน risk appetite ของไบโอเทคเล็กและต้นทุนการระดมทุนผ่าน ATM เท่านั้น",
+        "summary": "MEDIUM — ตลาดคาดคงดอกเบี้ย 28 ต.ค. (~93%) แต่ CPI ร้อนทำให้ยังอาจขึ้นได้อีกในปี 2026 หุ้นเล็กที่เผาเงินรับแรงกระแทกของตลาดรอบนี้ไปมากแล้ว การคงดอกเบี้ยจึงช่วยเล็กน้อย ส่วนการขึ้นแบบเซอร์ไพรส์คือความเสี่ยงหางหลักด้านมหภาค"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · Moonshot สูงสุด 2-3% (refresh 26 ต.ค.) — binary ที่ไม่ขึ้นกับตลาดและสะอาดที่สุดบนกระดาน turbo: PDUFA แบบ priority review โอกาสอนุมัติตามโมเดลสูง เงินทุนพอ และราคาใกล้ 52-week low median ถึงวัน catalyst ของ turbo -13.7% (n=19) — เข้าที่ Entry 2 ($3.95-4.20) เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ turbo -13.7% (n=19)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "เหนือ 52-week low $3.86 เล็กน้อย — จุดเข้าหลักก่อน PDUFA 22 พ.ย.",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ย่อลึก — เฉพาะเมื่อไม่มีสัญญาณ CRL ใหม่",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — อนุมัติ 22 พ.ย. re-rate ไปราว $5.80 (กลับเหนือระดับ 29 ก.ย.) กรอบ ~1-3 เดือน"
+        },
+        "tp2": {
+          "note": "Bull — อนุมัติ + ฉลากดี + เห็นการเปิดตัวช่วงแรก ~$8.15"
+        },
+        "tp3": {
+          "note": "Moon — ผูกขาดตลาดในฐานะยาตัวแรก + ได้อนุมัติ EU/UK ~$13.30 เหนือเป้าเฉลี่ย $11.06 thesis 12-24 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-22% — กว้างกว่า medianMAE ของ fda_decision ใน turbo (-18.4%, n=10) อยู่ใต้ 52-week low $3.86",
+          "hardNote": "-40% — โซน CRL เท่ากับเคส Bear",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "ต่ำกว่าเป้า 5:1 ของ turbo — จึงคุมขนาด position ให้เล็ก"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "PDUFA ของ MOLBREEVI",
+          "note": "การอนุมัติปลดล็อกเงิน royalty $75M จาก RTW (ภายใน 31 มี.ค. 2027)"
+        }
+      ]
+    }
+  }
+}
