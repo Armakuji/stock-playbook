@@ -1,0 +1,265 @@
+{
+  "ticker": "SOUN",
+  "companyName": "SoundHound AI, Inc.",
+  "companyDescription": "Independent conversational voice AI platform — powers voice assistants across automotive, drive-thru/restaurant, and enterprise customer-service channels",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-10-26T00:00:00.000Z",
+  "price": 4.34,
+  "priceChange": -2.03,
+  "priceNote": "Live $4.34 (-2.0%) on Oct 26, 2026 — at the 52-week low ($4.21-$19.09), -46% since Sep 29. Market cap ~$1.93B.",
+  "marketCap": "~$1.93B",
+  "sector": "Technology / AI Software (Voice AI)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Speculative",
+  "score": 0,
+  "summary": "REFRESH (prior report Sep 29, 2026). SOUN fell ~46% into its Nov 5 Q3 print, the first to include LivePerson (closed Sep 2026). TTM revenue grew +55% and OASYS Edge launched (LLM voice agents on edge hardware), but losses persist (TTM ~$137M). Consensus $12.57 (+190%; clears the gate). Written against the core Base optimism bias of +23.7pp (realized 14d P75 +6.6%, P90 +11.7%). Base +25% assumes a ~1-3 month relief rally if organic growth holds and the LivePerson math looks accretive. แนะนำ 2-3% ของ portfolio — Speculative.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 2026 earnings",
+      "description": "Nov 5. First print including LivePerson (closed Sep 2026). The read is organic voice-AI growth vs. acquired revenue, the OASYS Edge launch, and the path to adjusted-EBITDA breakeven.",
+      "urgencyLabel": "10 DAYS",
+      "dateBadge": "Nov 5, 2026",
+      "catalystDate": "2026-11-05",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "LivePerson integration: acquired revenue could mask slowing organic voice-AI growth.",
+    "Ongoing losses (TTM ~$137M) — the path to breakeven is the key question.",
+    "-46% in a month: sentiment is broken and could stay that way through the print.",
+    "Customer concentration in auto and restaurant voice deployments.",
+    "Competition from big-tech LLM voice assistants."
+  ],
+  "estimateDates": [
+    {
+      "event": "Q3 2026 earnings",
+      "dateRange": "Nov 5, 2026",
+      "note": "Organic growth + LivePerson integration",
+      "est": "TTM rev $203M (+55%)",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -25,
+      "price": 3.25
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 25,
+      "price": 5.42
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 60,
+      "price": 6.94
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 190,
+      "price": 12.59
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus (8 analysts, stockanalysis.com)",
+      "target": 12.57,
+      "rating": "Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "HIGH",
+    "rateOutlook": "Fed funds at 3.75-4.00% after the surprise Sep 16, 2026 hike (first since 2023). The Oct 27-28 FOMC is priced ~93% hold / ~7% +25bp as of Oct 25 — but hike odds briefly spiked to ~44% after the hot Sep CPI print on Oct 14, so the path stays two-sided.",
+    "inflationNote": "September CPI +0.6% m/m, 3.7% y/y headline; core +0.3% m/m, 2.6% y/y — both above consensus. Headline re-acceleration keeps a further 2026 hike live.",
+    "sectorImpact": "Loss-making voice-AI small/mid cap — among the hardest-hit names in the October growth selloff.",
+    "summary": "HIGH — the Oct 28 FOMC is priced ~93% hold, but September CPI ran hot (3.7% headline) and a further 2026 hike is still live. October's growth/AI-infra selloff was largely a rates trade, so the decision and the dot path matter directly for this name's multiple."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 4.34,
+        "note": "Current price — starter only; not preferred (core at-catalyst median -6.9%, n=54)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 3.85,
+        "rangeMax": 4.15,
+        "note": "Below the $4.21 52-week low — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 3.4,
+        "note": "Deep dip",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 5.42,
+      "pct": 24.9,
+      "note": "Base — clean Q3 with organic growth intact; ~$5.40. Horizon ~1-3 months."
+    },
+    "tp2": {
+      "price": 6.94,
+      "pct": 59.9,
+      "note": "Bull — breakeven timeline pulled in; ~$6.95."
+    },
+    "tp3": {
+      "price": 12.59,
+      "pct": 190.1,
+      "note": "Moon — re-rate toward consensus (~$12.57). 12-month thesis.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 3.65,
+      "tightPct": -16,
+      "tightNote": "-16% — wider than the core earnings_beat medianMAE (-9.6%, n=42); a name at -46% in a month needs the room.",
+      "hard": 3.04,
+      "hardPct": -30,
+      "hardNote": "-30% — thesis break.",
+      "riskReward": "3.8 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Acceptable ✅ — clears the 2:1 core floor"
+    },
+    "verdict": "SPECULATIVE — a growth name at its 52-week low into a Nov 5 print. The measured core median at-catalyst return is -6.9% with 74% of picks underwater at their event (n=54), so Entry 2 ($3.85-4.15) is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Reverse run-up: SOUN is -46% since Sep 29 ($8.06 → $4.34) and at its 52-week low.",
+    "preRunupTiming": "N/A",
+    "preRunupPct": "-46% since Sep 29",
+    "postWin": {
+      "avgPct": 15,
+      "range": "-8% to +15%",
+      "note": "SoundHound's own last two prints: Q2 2026 (Aug 2026) beat on EPS (-$0.02 vs -$0.05 est.) and revenue ($61.9M vs $52.4M est.), stock +15.4% after-hours on clean guidance. Q1 2026 (May 2026) also beat EPS by 40% but fell -7.8% same day / -16% over the week on dilution/equity-offering concerns — included here because it shows a beat alone doesn't guarantee the 'win' outcome.",
+      "exampleDate": "Aug 2026"
+    },
+    "postLose": {
+      "avgPct": -8,
+      "range": "-8% to -16%",
+      "note": "SOUN's Q1 2026 print: EPS beat by 40% but the stock still fell -7.79% same day and -16% over the following week, driven by concerns about dilution from a planned equity offering rather than the numbers themselves.",
+      "exampleDate": "May 2026"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "3%. earnings_beat carries no tier-2 penalty (n=42), but a -46% month, ongoing losses and LivePerson integration risk keep size small."
+    },
+    "stopPreCatalyst": {
+      "pct": -16,
+      "price": 3.65,
+      "note": "Wider than the earnings_beat medianMAE (-9.6%, n=42)."
+    },
+    "stopPostCatalyst": {
+      "pct": -18,
+      "note": "If organic growth decelerates sharply or guidance is cut, exit."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "SOUN",
+      "event": "Q2 2026 earnings beat — EPS and revenue both ahead of estimates, clean guidance, no new dilution headline",
+      "date": "Aug 2026",
+      "movePct": 15,
+      "days": 1,
+      "outcome": "good",
+      "note": "The best-case template for the Nov 5 print — same company, same catalyst type, recent"
+    },
+    {
+      "ticker": "SOUN",
+      "event": "Q1 2026 earnings — EPS beat by 40% but stock fell on dilution/equity-offering overhang",
+      "date": "May 2026",
+      "movePct": -8,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "Shows a clean beat is necessary but not sufficient — the market was pricing financing risk, not the print itself"
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/soun/",
+    "https://stockanalysis.com/stocks/soun/forecast/",
+    "https://www.tikr.com/blog/soundhound-ai-stock-fell-16-after-q1-earnings-is-the-selloff-an-overreaction",
+    "https://www.investing.com/news/transcripts/earnings-call-transcript-soundhound-ai-tops-q2-2026-estimates-as-stock-jumps-93CH-4839647",
+    "https://finance.yahoo.com/markets/stocks/articles/soundhound-ai-delivers-record-quarter-171759096.html",
+    "https://www.itiger.com/hant/news/2577319326",
+    "https://www.chase.com/personal/investments/learning-and-insights/article/will-the-federal-reserve-hike-rates-at-october-2026-fomc-meeting",
+    "https://defirate.com/prediction-markets/fed-decision-odds/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "REFRESH (รายงานก่อน 29 ก.ย. 2026) SOUN ลง ~46% ก่อนงบ Q3 วันที่ 5 พ.ย. ซึ่งเป็นงบแรกที่รวม LivePerson (ปิดดีล ก.ย. 2026) รายได้ TTM โต +55% และเปิดตัว OASYS Edge (voice agent จาก LLM บนอุปกรณ์ edge) แต่ยังขาดทุน (TTM ~$137M) เป้าเฉลี่ย $12.57 (+190% ผ่านเกณฑ์) เขียนโดยคำนึงถึง optimism bias ของ Base ใน core +23.7pp (P75 ที่เกิดจริงใน 14 วัน +6.6%, P90 +11.7%) Base +25% สมมติรีบาวด์ใน ~1-3 เดือนถ้าการเติบโต organic ยังอยู่และตัวเลข LivePerson ดูเพิ่มมูลค่า แนะนำ 2-3% ของ portfolio — Speculative",
+      "priceNote": "ราคาสด $4.34 (-2.0%) 26 ต.ค. 2026 — อยู่ที่ 52-week low ($4.21-$19.09) ลง -46% นับจาก 29 ก.ย. Market cap ~$1.93B",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        {
+          "name": "งบ Q3 2026",
+          "description": "5 พ.ย. งบแรกที่รวม LivePerson (ปิดดีล ก.ย. 2026) ดูการเติบโตของ voice AI แบบ organic เทียบรายได้จากการซื้อกิจการ การเปิดตัว OASYS Edge และเส้นทางสู่ EBITDA ปรับปรุงคุ้มทุน"
+        }
+      ],
+      "risks": [
+        "การรวม LivePerson: รายได้จากการซื้อกิจการอาจบังการเติบโต voice AI แบบ organic ที่ชะลอ",
+        "ยังขาดทุน (TTM ~$137M) เส้นทางสู่จุดคุ้มทุนคือคำถามหลัก",
+        "ลง -46% ในเดือนเดียว sentiment พังและอาจพังต่อผ่านงบ",
+        "ลูกค้ากระจุกในกลุ่มรถยนต์และร้านอาหาร",
+        "การแข่งขันจากผู้ช่วยเสียง LLM ของบริษัทเทคยักษ์"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ยนโยบาย 3.75-4.00% หลัง Fed ขึ้นดอกเบี้ยแบบเซอร์ไพรส์เมื่อ 16 ก.ย. 2026 (ครั้งแรกตั้งแต่ 2023) ประชุม FOMC 27-28 ต.ค. ตลาดให้น้ำหนักคงดอกเบี้ย ~93% / ขึ้น 25bp ~7% (ณ 25 ต.ค.) แต่โอกาสขึ้นดอกเบี้ยเคยพุ่งถึง ~44% หลัง CPI ก.ย. ออกมาร้อนเมื่อ 14 ต.ค. ทิศทางจึงยังเสี่ยงสองด้าน",
+        "inflationNote": "CPI ก.ย. +0.6% m/m, 3.7% y/y ส่วน core +0.3% m/m, 2.6% y/y สูงกว่าคาดทั้งคู่ — เงินเฟ้อ headline เร่งตัวทำให้การขึ้นดอกเบี้ยอีกครั้งในปี 2026 ยังเป็นไปได้",
+        "sectorImpact": "หุ้น voice AI ขนาดกลาง-เล็กที่ขาดทุน — โดนหนักที่สุดกลุ่มหนึ่งในแรงขายหุ้นเติบโตเดือน ต.ค.",
+        "summary": "HIGH — ตลาดคาด FOMC 28 ต.ค. คงดอกเบี้ย ~93% แต่ CPI ก.ย. ร้อน (headline 3.7%) และยังอาจขึ้นได้อีกในปี 2026 แรงขายหุ้นเติบโต/AI infra เดือน ต.ค. ส่วนใหญ่มาจากดอกเบี้ย ผลประชุมและ dot plot จึงกระทบ multiple ของหุ้นตัวนี้โดยตรง"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — หุ้นเติบโตที่ 52-week low ก่อนงบ 5 พ.ย. median ผลตอบแทนถึงวัน catalyst ของ core = -6.9% และ 74% ของหุ้นติดลบ ณ วัน event (n=54) — เข้าที่ Entry 2 ($3.85-4.15) เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น ไม่ใช่จุดเข้าหลัก (median ถึงวัน catalyst ของ core -6.9%, n=54)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "ต่ำกว่า 52-week low $4.21 — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ย่อลึก",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — Q3 สะอาด การเติบโต organic ยังอยู่ ~$5.40 กรอบ ~1-3 เดือน"
+        },
+        "tp2": {
+          "note": "Bull — ไทม์ไลน์จุดคุ้มทุนเร็วขึ้น ~$6.95"
+        },
+        "tp3": {
+          "note": "Moon — re-rate เข้าหาเป้าเฉลี่ย (~$12.57) thesis 12 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-16% — กว้างกว่า medianMAE ของ earnings_beat (-9.6%, n=42) หุ้นที่ลง -46% ในเดือนเดียวต้องการพื้นที่",
+          "hardNote": "-30% — thesis พัง",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "รับได้ ✅ — ผ่านเกณฑ์ขั้นต่ำ 2:1 ของ core"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "งบ Q3 2026",
+          "note": "การเติบโต organic + การรวม LivePerson"
+        }
+      ]
+    }
+  },
+  "factorTags": [
+    "ai_software"
+  ]
+}

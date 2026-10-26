@@ -1,0 +1,279 @@
+{
+  "ticker": "SRRK",
+  "companyName": "Scholar Rock Holding Corporation",
+  "companyDescription": "Single-asset biotech, now commercial-stage · ISEMBYLD (apitegromab-mstn) — first and only muscle-targeted treatment for SMA, FDA-approved Sep 11, 2026",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-10-26T00:00:00.000Z",
+  "price": 41.71,
+  "priceChange": 0.52,
+  "priceNote": "Live $41.71 (+0.5%) on Oct 26, 2026 — 52-week range $27.07-$61.76. Market cap ~$5.08B. Down ~16% since Sep 29.",
+  "marketCap": "~$5.08B",
+  "sector": "Healthcare / Biotechnology",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 0,
+  "summary": "REFRESH (prior report Sep 29, 2026). ISEMBYLD (apitegromab) is approved and launching in SMA at $11,659/vial, and the EMA MAA was resubmitted in October. The stock has drifted ~16% lower since Sep 29. Q3 earnings move to Nov 10 (company date; was ~Nov 13) and will carry the first launch metrics. Consensus $70.44 (+69%; clears the gate). Written against the core Base optimism bias of +23.7pp (realized 14d P75 +6.6%, P90 +11.7%). Base +20% assumes a ~1-3 month horizon for early launch data to re-rate the stock. The print is 15 days out, just outside the 14d North Star window. แนะนำ 3-5% ของ portfolio — Speculative.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 2026 earnings — first ISEMBYLD launch metrics",
+      "description": "Nov 10. First launch read for the first muscle-targeted SMA therapy (approved Sep 2026; priced $11,659/vial).",
+      "urgencyLabel": "15 DAYS",
+      "dateBadge": "Nov 10, 2026",
+      "catalystDate": "2026-11-10",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🇪🇺",
+      "name": "EMA MAA resubmitted",
+      "description": "Marketing Authorization Application resubmitted to the EMA in October 2026.",
+      "urgencyLabel": "ACHIEVED",
+      "dateBadge": "Oct 2026",
+      "badgeColor": "green",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "First-quarter launch numbers are usually small and noisy — easy to disappoint.",
+    "Payer access and reimbursement for a premium-priced add-on SMA therapy.",
+    "Manufacturing scale-up (a past CRL issue) remains a watch item.",
+    "EU approval timing after the resubmission.",
+    "Competition from established SMA therapies (Spinraza, Evrysdi, Zolgensma)."
+  ],
+  "estimateDates": [
+    {
+      "event": "Q3 2026 earnings",
+      "dateRange": "Nov 10, 2026",
+      "note": "First ISEMBYLD launch metrics",
+      "est": "launch quarter",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -25,
+      "price": 31.28
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 20,
+      "price": 50.05
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 40,
+      "price": 58.39
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 69,
+      "price": 70.49
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus (stockanalysis.com)",
+      "target": 70.44,
+      "rating": "Strong Buy"
+    },
+    {
+      "firm": "Jefferies (post-approval, Sep 2026)",
+      "target": 65,
+      "rating": "Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds at 3.75-4.00% after the surprise Sep 16, 2026 hike (first since 2023). The Oct 27-28 FOMC is priced ~93% hold / ~7% +25bp as of Oct 25 — but hike odds briefly spiked to ~44% after the hot Sep CPI print on Oct 14, so the path stays two-sided.",
+    "inflationNote": "September CPI +0.6% m/m, 3.7% y/y headline; core +0.3% m/m, 2.6% y/y — both above consensus. Headline re-acceleration keeps a further 2026 hike live.",
+    "sectorImpact": "Newly commercial rare-disease biotech; moderate rate sensitivity, launch execution dominates.",
+    "summary": "MEDIUM — the Oct 28 FOMC is priced ~93% hold, but September CPI ran hot (3.7% headline) and a further 2026 hike is still live. October's growth/AI-infra selloff was largely a rates trade, so the decision and the dot path matter directly for this name's multiple."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 41.71,
+        "note": "Current price — starter only; not preferred (core at-catalyst median -6.9%, n=54)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 38,
+        "rangeMax": 40,
+        "note": "Pre-earnings dip zone — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 34,
+        "note": "Deep dip",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 50.05,
+      "pct": 20,
+      "note": "Base — encouraging early launch metrics; ~$50. Horizon ~1-3 months."
+    },
+    "tp2": {
+      "price": 58.39,
+      "pct": 40,
+      "note": "Bull — strong uptake plus payer coverage; ~$58.40, near Jefferies $65."
+    },
+    "tp3": {
+      "price": 70.49,
+      "pct": 69,
+      "note": "Moon — consensus ~$70. 12-month thesis.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 35.87,
+      "tightPct": -14,
+      "tightNote": "-14% — wider than the core earnings_beat medianMAE (-9.6%, n=42).",
+      "hard": 30.03,
+      "hardPct": -28,
+      "hardNote": "-28% — launch thesis in doubt.",
+      "riskReward": "2.9 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Acceptable ✅ — clears the 2:1 core floor"
+    },
+    "verdict": "BUY (Speculative) — approved and launching, ~16% cheaper than at the last report, into a Nov 10 first-launch print. The measured core median at-catalyst return is -6.9% with 74% of picks underwater at their event (n=54), so Entry 2 ($38-40) is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Now that the regulatory binary has resolved, SRRK should behave more like a standard commercial-stage biotech into its next print — modest pre-earnings drift on launch-metrics anticipation",
+    "preRunupTiming": "1-2 weeks before the print",
+    "preRunupPct": "+5% to +10%",
+    "postWin": {
+      "avgPct": 15,
+      "range": "+10% to +25%",
+      "note": "No SRRK-specific commercial-launch print exists yet (this is the first one). Proxied from general small-cap biotech launch-quarter beats and from the muted approval-day reaction itself, which suggests the stock will react to concrete uptake numbers more than headline sentiment.",
+      "exampleDate": "N/A — first commercial quarter"
+    },
+    "postLose": {
+      "avgPct": -18,
+      "range": "-10% to -25%",
+      "note": "Rare-disease drug launches that miss uptake expectations in their first reporting quarter typically see sharp de-rates as the market recalibrates peak-sales assumptions; no SRRK-specific precedent exists yet.",
+      "exampleDate": "N/A — first commercial quarter"
+    },
+    "spotSizing": {
+      "pct": 5,
+      "reason": "5%. earnings_beat carries no tier-2 penalty (n=42). A first-launch quarter is often messy (partial quarter), so the print can disappoint even if the launch is on track."
+    },
+    "stopPreCatalyst": {
+      "pct": -14,
+      "price": 35.87,
+      "note": "Wider than the earnings_beat medianMAE (-9.6%, n=42)."
+    },
+    "stopPostCatalyst": {
+      "pct": -15,
+      "note": "If launch metrics or guidance are clearly below expectations, exit."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "SRRK",
+      "event": "FDA approves ISEMBYLD (apitegromab) for SMA — first and only muscle-targeted treatment",
+      "date": "Sep 2026",
+      "movePct": 0.5,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "The approval itself barely moved the stock, confirming it was well-anticipated — the real re-rating opportunity is now the launch data, not the approval headline"
+    },
+    {
+      "ticker": "AGIO",
+      "event": "AQVESME (mitapivat) FDA approval for thalassemia anemia — comparable rare-hematology/neuromuscular approval pattern",
+      "date": "Dec 2025",
+      "movePct": 19.97,
+      "days": 1,
+      "outcome": "good",
+      "note": "Shows the wider range of possible approval-day reactions in rare-disease biotech — SRRK's muted move sits at the low end of that range"
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/srrk/",
+    "https://www.sec.gov/Archives/edgar/data/0001727196/000110465926107273/tm2625362d1_ex99-1.htm",
+    "https://www.biospace.com/press-releases/scholar-rock-announces-fda-approval-of-isembyld-apitegromab-mstn-the-first-and-only-muscle-targeted-treatment-for-children-and-adults-with-spinal-muscular-atrophy-sma",
+    "https://investors.scholarrock.com/news-releases/news-release-details/scholar-rock-announces-fda-review-apitegromab-biologics-license",
+    "https://finance.yahoo.com/healthcare/articles/scholar-rock-announces-fda-approval-222500403.html",
+    "https://www.chase.com/personal/investments/learning-and-insights/article/will-the-federal-reserve-hike-rates-at-october-2026-fomc-meeting",
+    "https://defirate.com/prediction-markets/fed-decision-odds/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "REFRESH (รายงานก่อน 29 ก.ย. 2026) ISEMBYLD (apitegromab) ได้รับอนุมัติและกำลังเปิดตัวใน SMA ที่ $11,659/vial และยื่น MAA ต่อ EMA ใหม่เดือน ต.ค. หุ้นค่อย ๆ ลง ~16% นับจาก 29 ก.ย. งบ Q3 เลื่อนมาเป็น 10 พ.ย. (วันของบริษัท; เดิม ~13 พ.ย.) และจะมีตัวเลขเปิดตัวครั้งแรก เป้าเฉลี่ย $70.44 (+69% ผ่านเกณฑ์) เขียนโดยคำนึงถึง optimism bias ของ Base ใน core +23.7pp (P75 ที่เกิดจริงใน 14 วัน +6.6%, P90 +11.7%) Base +20% สมมติกรอบ ~1-3 เดือนที่ข้อมูลการเปิดตัวช่วงแรกทำให้ re-rate งบอยู่ห่าง 15 วัน เลยกรอบ North Star 14 วันเล็กน้อย แนะนำ 3-5% ของ portfolio — Speculative",
+      "priceNote": "ราคาสด $41.71 (+0.5%) 26 ต.ค. 2026 — ช่วง 52 สัปดาห์ $27.07-$61.76 Market cap ~$5.08B ลง ~16% นับจาก 29 ก.ย.",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        {
+          "name": "งบ Q3 2026 — ตัวเลขเปิดตัว ISEMBYLD ครั้งแรก",
+          "description": "10 พ.ย. ตัวเลขเปิดตัวครั้งแรกของยา SMA ตัวแรกที่มุ่งเป้ากล้ามเนื้อ (อนุมัติ ก.ย. 2026; ราคา $11,659/vial)"
+        },
+        {
+          "name": "ยื่น MAA ต่อ EMA ใหม่",
+          "description": "ยื่นขออนุญาตจำหน่ายต่อ EMA ใหม่ในเดือน ต.ค. 2026"
+        }
+      ],
+      "risks": [
+        "ตัวเลขเปิดตัวไตรมาสแรกมักเล็กและผันผวน ผิดหวังได้ง่าย",
+        "การเข้าถึงและการเบิกจ่ายของ payer สำหรับยาเสริม SMA ราคาสูง",
+        "การขยายการผลิต (เคยเป็นประเด็น CRL) ยังต้องติดตาม",
+        "ไทม์ไลน์การอนุมัติในยุโรปหลังยื่นใหม่",
+        "การแข่งขันกับการรักษา SMA ที่มีอยู่ (Spinraza, Evrysdi, Zolgensma)"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ยนโยบาย 3.75-4.00% หลัง Fed ขึ้นดอกเบี้ยแบบเซอร์ไพรส์เมื่อ 16 ก.ย. 2026 (ครั้งแรกตั้งแต่ 2023) ประชุม FOMC 27-28 ต.ค. ตลาดให้น้ำหนักคงดอกเบี้ย ~93% / ขึ้น 25bp ~7% (ณ 25 ต.ค.) แต่โอกาสขึ้นดอกเบี้ยเคยพุ่งถึง ~44% หลัง CPI ก.ย. ออกมาร้อนเมื่อ 14 ต.ค. ทิศทางจึงยังเสี่ยงสองด้าน",
+        "inflationNote": "CPI ก.ย. +0.6% m/m, 3.7% y/y ส่วน core +0.3% m/m, 2.6% y/y สูงกว่าคาดทั้งคู่ — เงินเฟ้อ headline เร่งตัวทำให้การขึ้นดอกเบี้ยอีกครั้งในปี 2026 ยังเป็นไปได้",
+        "sectorImpact": "ไบโอเทคโรคหายากที่เพิ่งมีรายได้ อ่อนไหวต่อดอกเบี้ยปานกลาง การเปิดตัวยาสำคัญที่สุด",
+        "summary": "MEDIUM — ตลาดคาด FOMC 28 ต.ค. คงดอกเบี้ย ~93% แต่ CPI ก.ย. ร้อน (headline 3.7%) และยังอาจขึ้นได้อีกในปี 2026 แรงขายหุ้นเติบโต/AI infra เดือน ต.ค. ส่วนใหญ่มาจากดอกเบี้ย ผลประชุมและ dot plot จึงกระทบ multiple ของหุ้นตัวนี้โดยตรง"
+      },
+      "entryStrategy": {
+        "verdict": "BUY (Speculative) — ได้อนุมัติและกำลังเปิดตัว ถูกกว่ารายงานก่อน ~16% ก่อนงบเปิดตัวครั้งแรก 10 พ.ย. median ผลตอบแทนถึงวัน catalyst ของ core = -6.9% และ 74% ของหุ้นติดลบ ณ วัน event (n=54) — เข้าที่ Entry 2 ($38-40) เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น ไม่ใช่จุดเข้าหลัก (median ถึงวัน catalyst ของ core -6.9%, n=54)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "โซนย่อก่อนงบ — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ย่อลึก",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — ตัวเลขเปิดตัวช่วงแรกน่าพอใจ ~$50 กรอบ ~1-3 เดือน"
+        },
+        "tp2": {
+          "note": "Bull — ยอดใช้แข็งแรง + payer ครอบคลุม ~$58.40 ใกล้เป้า Jefferies $65"
+        },
+        "tp3": {
+          "note": "Moon — เป้าเฉลี่ย ~$70 thesis 12 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-14% — กว้างกว่า medianMAE ของ earnings_beat (-9.6%, n=42)",
+          "hardNote": "-28% — thesis การเปิดตัวถูกตั้งคำถาม",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "รับได้ ✅ — ผ่านเกณฑ์ขั้นต่ำ 2:1 ของ core"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "งบ Q3 2026",
+          "note": "ตัวเลขเปิดตัว ISEMBYLD ครั้งแรก"
+        }
+      ]
+    }
+  }
+}

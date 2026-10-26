@@ -1,0 +1,285 @@
+{
+  "ticker": "RIVN",
+  "companyName": "Rivian Automotive, Inc.",
+  "companyDescription": "Electric truck/SUV maker ramping its lower-priced R2 platform — backed by Amazon and Volkswagen, racing to prove mass-market EV unit economics",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-10-26T00:00:00.000Z",
+  "price": 11.66,
+  "priceChange": -1.48,
+  "priceNote": "Live $11.66 (-1.5%) on Oct 26, 2026 — at the 52-week low ($11.54-$22.69), -22% since Sep 29. Market cap ~$16.9B.",
+  "marketCap": "~$16.9B",
+  "sector": "Consumer Discretionary / Electric Vehicles",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 0,
+  "summary": "REFRESH (prior report Sep 29, 2026). The Oct 2 delivery catalyst came in strong — a record 19,248 Q3 deliveries (+46%) with FY26 65-70k reaffirmed — yet RIVN fell ~22% to its 52-week low. Q3 earnings on Oct 29 (3 days) are now the catalyst. Consensus $19.00 (+63%; clears the gate) but rated Hold. A VW $1B loan facility and the Third Dimension AI acquisition are new since the last report. Written against the core Base optimism bias of +23.7pp (realized 14d P75 +6.6%, P90 +11.7%). Base +15% assumes a ~1-2 month relief move if margins and R2 timing hold. แนะนำ 3-5% ของ portfolio — Speculative.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 2026 earnings",
+      "description": "Oct 29 after the close. Record Q3 deliveries (19,248, +46% YoY) are known; the read is gross margin, R2 launch timing, and cash burn after the VW $1B loan facility.",
+      "urgencyLabel": "3 DAYS",
+      "dateBadge": "Oct 29, 2026",
+      "catalystDate": "2026-10-29",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🚚",
+      "name": "Q3 deliveries — record",
+      "description": "19,248 delivered (+46% YoY); 19,751 produced; FY26 guide 65-70k reaffirmed.",
+      "urgencyLabel": "ACHIEVED",
+      "dateBadge": "Oct 2, 2026",
+      "catalystDate": "2026-10-02",
+      "badgeColor": "green",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Still deeply loss-making (2025 net loss ~$3.2B); margins are the key swing factor.",
+    "R2 launch timing — any slip would hit 2027 volume expectations.",
+    "Consensus rating is Hold — limited institutional conviction.",
+    "EV demand and tariff/credit policy uncertainty.",
+    "Good news (record deliveries) did not stop the slide — sentiment is weak."
+  ],
+  "estimateDates": [
+    {
+      "event": "Q3 2026 earnings",
+      "dateRange": "Oct 29, 2026",
+      "note": "Margin + R2 timing",
+      "est": "FY26 deliveries 65-70k",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -20,
+      "price": 9.33
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 15,
+      "price": 13.41
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 35,
+      "price": 15.74
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 63,
+      "price": 19.01
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus (25 analysts, stockanalysis.com)",
+      "target": 19,
+      "rating": "Hold"
+    },
+    {
+      "firm": "Wedbush (Dan Ives)",
+      "target": 25,
+      "rating": "Outperform"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds at 3.75-4.00% after the surprise Sep 16, 2026 hike (first since 2023). The Oct 27-28 FOMC is priced ~93% hold / ~7% +25bp as of Oct 25 — but hike odds briefly spiked to ~44% after the hot Sep CPI print on Oct 14, so the path stays two-sided.",
+    "inflationNote": "September CPI +0.6% m/m, 3.7% y/y headline; core +0.3% m/m, 2.6% y/y — both above consensus. Headline re-acceleration keeps a further 2026 hike live.",
+    "sectorImpact": "Cash-burning EV maker with VW backing; rates affect auto-loan demand and the multiple.",
+    "summary": "MEDIUM — the Oct 28 FOMC is priced ~93% hold, but September CPI ran hot (3.7% headline) and a further 2026 hike is still live. October's growth/AI-infra selloff was largely a rates trade, so the decision and the dot path matter directly for this name's multiple."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 11.66,
+        "note": "Current price — starter only; not preferred (core at-catalyst median -6.9%, n=54)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 10.6,
+        "rangeMax": 11.3,
+        "note": "Below the $11.54 52-week low — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 9.8,
+        "note": "Deep dip",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 13.41,
+      "pct": 15,
+      "note": "Base — margins improve, R2 on track; ~$13.40. Horizon ~1-2 months."
+    },
+    "tp2": {
+      "price": 15.74,
+      "pct": 35,
+      "note": "Bull — gross-margin inflection; ~$15.75."
+    },
+    "tp3": {
+      "price": 19.01,
+      "pct": 63,
+      "note": "Moon — consensus ~$19. 12-month thesis.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 10.03,
+      "tightPct": -14,
+      "tightNote": "-14% — wider than the core earnings_beat medianMAE (-9.6%, n=42).",
+      "hard": 8.75,
+      "hardPct": -25,
+      "hardNote": "-25% — thesis break.",
+      "riskReward": "2.5 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Acceptable ✅ — clears the 2:1 core floor"
+    },
+    "verdict": "BUY (Speculative) — record deliveries priced at a 52-week low, 3 days before earnings. The measured core median at-catalyst return is -6.9% with 74% of picks underwater at their event (n=54), so Entry 2 ($10.60-11.30) is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "No run-up: RIVN fell ~22% since Sep 29 to its 52-week low despite record Q3 deliveries.",
+    "preRunupTiming": "N/A",
+    "preRunupPct": "-22% since Sep 29",
+    "postWin": {
+      "avgPct": 15.5,
+      "range": "+15.5%",
+      "note": "CRWV's Aug 2026 day-1 reaction (+15.5%) to an operating-leverage beat — the same high-beta AI/infra cohort.",
+      "exampleDate": "Aug 2026"
+    },
+    "postLose": {
+      "avgPct": -7,
+      "range": "-4.3% to -10%",
+      "note": "Average of IONQ (-4.3%, Aug 5, 2026) and MRVL (-10%, Aug 28, 2026) — both beat-and-raise prints that still sold off.",
+      "exampleDate": "Aug 2026"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "4%. Re-typed to earnings_beat (the delivery_beat catalyst — +0.3pp, n=7 — is realized). Consensus rating is only Hold, so conviction is moderate."
+    },
+    "stopPreCatalyst": {
+      "pct": -14,
+      "price": 10.03,
+      "note": "Wider than the earnings_beat medianMAE (-9.6%, n=42)."
+    },
+    "stopPostCatalyst": {
+      "pct": -15,
+      "note": "If Q3 shows margin regression or an R2 delay, exit."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "CRWV",
+      "event": "Q2 2026 earnings — adj. operating income ~2x guided midpoint",
+      "date": "Aug 2026",
+      "movePct": 15.5,
+      "days": 1,
+      "outcome": "good",
+      "note": "A margin beat re-rated an AI-infra name +15.5% in a skeptical tape."
+    },
+    {
+      "ticker": "MRVL",
+      "event": "Q2 FY27 earnings — beat and raise",
+      "date": "Aug 2026",
+      "movePct": -10,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Beat-and-raise that still fell ~10% — the sell-the-news template for crowded AI names."
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/rivn/",
+    "https://www.indmoney.com/blog/us-stocks/crwv-stock-jumps-coreweave-q2-earnings-analysis",
+    "https://finviz.com/news/386694/marvell-mrvl-stock-falls-10-after-q2-earnings-buy-the-dip",
+    "https://www.fool.com/investing/2026/09/17/rivian-reports-q3-deliveries-in-october-heres-the/",
+    "https://www.investing.com/news/stock-market-news/rivian-stock-jumps-5-on-raised-delivery-outlook-4773108",
+    "https://rivian.com/newsroom/article/rivian-releases-q2-2026-production-and-delivery-figures",
+    "https://www.marketbeat.com/stocks/NASDAQ/RIVN/forecast/",
+    "https://www.chase.com/personal/investments/learning-and-insights/article/will-the-federal-reserve-hike-rates-at-october-2026-fomc-meeting",
+    "https://defirate.com/prediction-markets/fed-decision-odds/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "REFRESH (รายงานก่อน 29 ก.ย. 2026) catalyst ยอดส่งมอบ 2 ต.ค. ออกมาแข็งแรง — สูงสุดเป็นประวัติการณ์ 19,248 คันใน Q3 (+46%) และยืนยันเป้าปี 2026 65-70k — แต่ RIVN ยังลง ~22% ถึง 52-week low งบ Q3 วันที่ 29 ต.ค. (อีก 3 วัน) คือ catalyst ตอนนี้ เป้าเฉลี่ย $19.00 (+63% ผ่านเกณฑ์) แต่เรตติ้ง Hold มีวงเงินกู้ VW $1B และซื้อ Third Dimension AI ใหม่ เขียนโดยคำนึงถึง optimism bias ของ Base ใน core +23.7pp (P75 ที่เกิดจริงใน 14 วัน +6.6%, P90 +11.7%) Base +15% สมมติรีบาวด์ใน ~1-2 เดือนถ้า margin และไทม์ไลน์ R2 ยังดี แนะนำ 3-5% ของ portfolio — Speculative",
+      "priceNote": "ราคาสด $11.66 (-1.5%) 26 ต.ค. 2026 — อยู่ที่ 52-week low ($11.54-$22.69) ลง -22% นับจาก 29 ก.ย. Market cap ~$16.9B",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        {
+          "name": "งบ Q3 2026",
+          "description": "29 ต.ค. หลังปิดตลาด ยอดส่งมอบ Q3 สูงสุดเป็นประวัติการณ์ (19,248 คัน, +46% YoY) รู้แล้ว ดู gross margin ไทม์ไลน์ R2 และการเผาเงินหลังได้วงเงินกู้ VW $1B"
+        },
+        {
+          "name": "ยอดส่งมอบ Q3 — สูงสุดเป็นประวัติการณ์",
+          "description": "ส่งมอบ 19,248 คัน (+46% YoY) ผลิต 19,751 คัน ยืนยันเป้าปี 2026 65-70k"
+        }
+      ],
+      "risks": [
+        "ยังขาดทุนหนัก (ปี 2025 ~$3.2B) margin คือตัวแปรสำคัญ",
+        "ไทม์ไลน์ R2 — ถ้าเลื่อนจะกระทบประมาณการยอดปี 2027",
+        "เรตติ้งเฉลี่ยเป็น Hold — ความมั่นใจของสถาบันจำกัด",
+        "ความต้องการ EV และความไม่แน่นอนเรื่องภาษี/นโยบายสินเชื่อ",
+        "ข่าวดี (ยอดส่งมอบสูงสุด) ไม่ได้หยุดการร่วง sentiment อ่อนแอ"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ยนโยบาย 3.75-4.00% หลัง Fed ขึ้นดอกเบี้ยแบบเซอร์ไพรส์เมื่อ 16 ก.ย. 2026 (ครั้งแรกตั้งแต่ 2023) ประชุม FOMC 27-28 ต.ค. ตลาดให้น้ำหนักคงดอกเบี้ย ~93% / ขึ้น 25bp ~7% (ณ 25 ต.ค.) แต่โอกาสขึ้นดอกเบี้ยเคยพุ่งถึง ~44% หลัง CPI ก.ย. ออกมาร้อนเมื่อ 14 ต.ค. ทิศทางจึงยังเสี่ยงสองด้าน",
+        "inflationNote": "CPI ก.ย. +0.6% m/m, 3.7% y/y ส่วน core +0.3% m/m, 2.6% y/y สูงกว่าคาดทั้งคู่ — เงินเฟ้อ headline เร่งตัวทำให้การขึ้นดอกเบี้ยอีกครั้งในปี 2026 ยังเป็นไปได้",
+        "sectorImpact": "ผู้ผลิต EV ที่เผาเงินและมี VW หนุน ดอกเบี้ยกระทบความต้องการสินเชื่อรถและ multiple",
+        "summary": "MEDIUM — ตลาดคาด FOMC 28 ต.ค. คงดอกเบี้ย ~93% แต่ CPI ก.ย. ร้อน (headline 3.7%) และยังอาจขึ้นได้อีกในปี 2026 แรงขายหุ้นเติบโต/AI infra เดือน ต.ค. ส่วนใหญ่มาจากดอกเบี้ย ผลประชุมและ dot plot จึงกระทบ multiple ของหุ้นตัวนี้โดยตรง"
+      },
+      "entryStrategy": {
+        "verdict": "BUY (Speculative) — ยอดส่งมอบสูงสุดแต่ราคาอยู่ที่ 52-week low อีก 3 วันถึงงบ median ผลตอบแทนถึงวัน catalyst ของ core = -6.9% และ 74% ของหุ้นติดลบ ณ วัน event (n=54) — เข้าที่ Entry 2 ($10.60-11.30) เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น ไม่ใช่จุดเข้าหลัก (median ถึงวัน catalyst ของ core -6.9%, n=54)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "ต่ำกว่า 52-week low $11.54 — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ย่อลึก",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — margin ดีขึ้น R2 ตามแผน ~$13.40 กรอบ ~1-2 เดือน"
+        },
+        "tp2": {
+          "note": "Bull — gross margin ถึงจุดเปลี่ยน ~$15.75"
+        },
+        "tp3": {
+          "note": "Moon — เป้าเฉลี่ย ~$19 thesis 12 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-14% — กว้างกว่า medianMAE ของ earnings_beat (-9.6%, n=42)",
+          "hardNote": "-25% — thesis พัง",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "รับได้ ✅ — ผ่านเกณฑ์ขั้นต่ำ 2:1 ของ core"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "งบ Q3 2026",
+          "note": "Margin + ไทม์ไลน์ R2"
+        }
+      ]
+    }
+  },
+  "factorTags": [
+    "ev_auto"
+  ]
+}

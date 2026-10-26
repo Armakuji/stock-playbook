@@ -1,0 +1,283 @@
+{
+  "ticker": "SATL",
+  "companyName": "Satellogic Inc.",
+  "companyDescription": "Vertically integrated Earth-observation satellite company — designs, builds & operates its own smallsat constellation for daily sub-meter global imaging; now scaling into government/defense (new President is a former NGA director)",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-10-26T00:00:00.000Z",
+  "price": 3.74,
+  "priceChange": -2.35,
+  "priceNote": "Live $3.74 (-2.4%) on Oct 26, 2026 — 52-week range $1.255-$12.00, -33% since Sep 29. Market cap ~$575M.",
+  "marketCap": "~$575M",
+  "sector": "Space / Earth Observation",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 0,
+  "summary": "REFRESH (prior report Sep 29, 2026). The Merlin launch succeeded (Merlin.01 plus NewSats in early October), but SATL sold off ~33% anyway — the satellite_launch catalyst (a tier-2 leader) is now realized. Q3 earnings on Nov 9 follow Q2's first positive operating income. Consensus $10.20 (+173%; clears the gate). Written against the core Base optimism bias of +23.7pp (realized 14d P75 +6.6%, P90 +11.7%). Base +30% assumes a ~1-3 month re-rating if Q3 confirms profitability and defense growth. The print is 14 days out, at the edge of the North Star window. แนะนำ 2-3% ของ portfolio — Speculative.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 2026 earnings",
+      "description": "Nov 9. Follows Q2's ~$16M revenue and first-ever positive operating income; the read is whether profitability holds and defense backlog grows under the new NGA-veteran president.",
+      "urgencyLabel": "14 DAYS",
+      "dateBadge": "Nov 9, 2026",
+      "catalystDate": "2026-11-09",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🛰️",
+      "name": "Merlin.01 launched",
+      "description": "First Merlin satellite plus additional NewSats launched in early October 2026; ~8 Merlin satellites planned for 2027.",
+      "urgencyLabel": "ACHIEVED",
+      "dateBadge": "Oct 2026",
+      "badgeColor": "green",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Q2's positive operating income may not repeat — small revenue base (~$16M/quarter) is lumpy.",
+    "Sold off on a successful launch — sentiment is fragile.",
+    "Defense/government contract timing.",
+    "Small cap, thin coverage (5 analysts) and high volatility.",
+    "Constellation build-out (~8 Merlins in 2027) needs capital."
+  ],
+  "estimateDates": [
+    {
+      "event": "Q3 2026 earnings",
+      "dateRange": "Nov 9, 2026",
+      "note": "Profitability + defense backlog",
+      "est": "Q2 rev ~$16M",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -35,
+      "price": 2.43
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 30,
+      "price": 4.86
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 80,
+      "price": 6.73
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 170,
+      "price": 10.1
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus (5 analysts, stockanalysis.com)",
+      "target": 10.2,
+      "rating": "Strong Buy"
+    },
+    {
+      "firm": "Northland Securities (Sep 16, 2026)",
+      "target": 11,
+      "rating": "Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "HIGH",
+    "rateOutlook": "Fed funds at 3.75-4.00% after the surprise Sep 16, 2026 hike (first since 2023). The Oct 27-28 FOMC is priced ~93% hold / ~7% +25bp as of Oct 25 — but hike odds briefly spiked to ~44% after the hot Sep CPI print on Oct 14, so the path stays two-sided.",
+    "inflationNote": "September CPI +0.6% m/m, 3.7% y/y headline; core +0.3% m/m, 2.6% y/y — both above consensus. Headline re-acceleration keeps a further 2026 hike live.",
+    "sectorImpact": "Sub-$600M space small cap — small-cap risk appetite and rates drive the multiple.",
+    "summary": "HIGH — the Oct 28 FOMC is priced ~93% hold, but September CPI ran hot (3.7% headline) and a further 2026 hike is still live. October's growth/AI-infra selloff was largely a rates trade, so the decision and the dot path matter directly for this name's multiple."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 3.74,
+        "note": "Current price — starter only; not preferred (core at-catalyst median -6.9%, n=54)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 3.2,
+        "rangeMax": 3.5,
+        "note": "Pre-earnings dip zone — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 2.8,
+        "note": "Deep dip",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 4.86,
+      "pct": 29.9,
+      "note": "Base — Q3 confirms profitability; ~$4.86. Horizon ~1-3 months."
+    },
+    "tp2": {
+      "price": 6.73,
+      "pct": 79.9,
+      "note": "Bull — new defense contract plus profitable growth; ~$6.73."
+    },
+    "tp3": {
+      "price": 10.1,
+      "pct": 170.1,
+      "note": "Moon — consensus ~$10. 12-month thesis.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 2.99,
+      "tightPct": -20,
+      "tightNote": "-20% — wider than the core earnings_beat medianMAE (-9.6%, n=42) and the satellite_launch MAE (-19.4%, n=8); a small cap at -33% in a month needs the room.",
+      "hard": 2.43,
+      "hardPct": -35,
+      "hardNote": "-35% — thesis break.",
+      "riskReward": "4.0 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Acceptable ✅ — clears the 2:1 core floor"
+    },
+    "verdict": "BUY (Speculative) — launch delivered and the first profitable quarter is in, yet the stock is -33% into a Nov 9 print. The measured core median at-catalyst return is -6.9% with 74% of picks underwater at their event (n=54), so Entry 2 ($3.20-3.50) is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Sell-the-news: SATL fell ~33% since Sep 29 even though the Merlin launch succeeded.",
+    "preRunupTiming": "N/A",
+    "preRunupPct": "-33% since Sep 29",
+    "postWin": {
+      "avgPct": 15.5,
+      "range": "+15.5%",
+      "note": "CRWV's Aug 2026 day-1 reaction (+15.5%) to an operating-leverage beat — the same high-beta AI/infra cohort.",
+      "exampleDate": "Aug 2026"
+    },
+    "postLose": {
+      "avgPct": -7,
+      "range": "-4.3% to -10%",
+      "note": "Average of IONQ (-4.3%, Aug 5, 2026) and MRVL (-10%, Aug 28, 2026) — both beat-and-raise prints that still sold off.",
+      "exampleDate": "Aug 2026"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "3%. Re-typed to earnings_beat — the satellite_launch catalyst (tier-2 LEADER, +7.4pp vs +1.4pp, n=8) is realized, and the stock sold off on it anyway. Small cap and high volatility keep size small."
+    },
+    "stopPreCatalyst": {
+      "pct": -20,
+      "price": 2.99,
+      "note": "Wider than the earnings_beat medianMAE (-9.6%, n=42)."
+    },
+    "stopPostCatalyst": {
+      "pct": -20,
+      "note": "If Q3 reverts to operating losses without backlog growth, exit."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "CRWV",
+      "event": "Q2 2026 earnings — adj. operating income ~2x guided midpoint",
+      "date": "Aug 2026",
+      "movePct": 15.5,
+      "days": 1,
+      "outcome": "good",
+      "note": "A margin beat re-rated an AI-infra name +15.5% in a skeptical tape."
+    },
+    {
+      "ticker": "MRVL",
+      "event": "Q2 FY27 earnings — beat and raise",
+      "date": "Aug 2026",
+      "movePct": -10,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Beat-and-raise that still fell ~10% — the sell-the-news template for crowded AI names."
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/satl/",
+    "https://www.indmoney.com/blog/us-stocks/crwv-stock-jumps-coreweave-q2-earnings-analysis",
+    "https://finviz.com/news/386694/marvell-mrvl-stock-falls-10-after-q2-earnings-buy-the-dip",
+    "https://www.stocktitan.net/news/SATL/",
+    "https://stockanalysis.com/stocks/satl/forecast/",
+    "https://finance.yahoo.com/markets/stocks/articles/planet-labs-pl-16-1-131515439.html",
+    "https://www.chase.com/personal/investments/learning-and-insights/article/will-the-federal-reserve-hike-rates-at-october-2026-fomc-meeting",
+    "https://defirate.com/prediction-markets/fed-decision-odds/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "REFRESH (รายงานก่อน 29 ก.ย. 2026) การปล่อย Merlin สำเร็จ (Merlin.01 + NewSat ต้น ต.ค.) แต่ SATL ยังถูกขาย ~33% — catalyst satellite_launch (tier-2 leader) เกิดขึ้นแล้ว งบ Q3 วันที่ 9 พ.ย. ต่อจาก Q2 ที่มีกำไรจากการดำเนินงานครั้งแรก เป้าเฉลี่ย $10.20 (+173% ผ่านเกณฑ์) เขียนโดยคำนึงถึง optimism bias ของ Base ใน core +23.7pp (P75 ที่เกิดจริงใน 14 วัน +6.6%, P90 +11.7%) Base +30% สมมติ re-rate ใน ~1-3 เดือนถ้า Q3 ยืนยันกำไรและการเติบโตด้านกลาโหม งบอยู่ห่าง 14 วัน ขอบกรอบ North Star พอดี แนะนำ 2-3% ของ portfolio — Speculative",
+      "priceNote": "ราคาสด $3.74 (-2.4%) 26 ต.ค. 2026 — ช่วง 52 สัปดาห์ $1.255-$12.00 ลง -33% นับจาก 29 ก.ย. Market cap ~$575M",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        {
+          "name": "งบ Q3 2026",
+          "description": "9 พ.ย. ต่อจาก Q2 ที่มีรายได้ ~$16M และกำไรจากการดำเนินงานเป็นบวกครั้งแรก ดูว่ากำไรยังอยู่ไหมและ backlog ด้านกลาโหมโตขึ้นภายใต้ประธานที่เคยเป็นผู้บริหาร NGA"
+        },
+        {
+          "name": "Merlin.01 ขึ้นสู่วงโคจรแล้ว",
+          "description": "ดาวเทียม Merlin ดวงแรกและ NewSat เพิ่มเติมขึ้นสู่วงโคจรต้น ต.ค. 2026 วางแผน ~8 ดวงในปี 2027"
+        }
+      ],
+      "risks": [
+        "กำไรจากการดำเนินงานใน Q2 อาจไม่เกิดซ้ำ — ฐานรายได้เล็ก (~$16M/ไตรมาส) ไม่สม่ำเสมอ",
+        "ถูกขายแม้การปล่อยดาวเทียมสำเร็จ — sentiment เปราะบาง",
+        "จังหวะสัญญากลาโหม/รัฐบาล",
+        "small cap นักวิเคราะห์น้อย (5 ราย) ผันผวนสูง",
+        "การขยาย constellation (~8 Merlin ในปี 2027) ต้องใช้เงินทุน"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ยนโยบาย 3.75-4.00% หลัง Fed ขึ้นดอกเบี้ยแบบเซอร์ไพรส์เมื่อ 16 ก.ย. 2026 (ครั้งแรกตั้งแต่ 2023) ประชุม FOMC 27-28 ต.ค. ตลาดให้น้ำหนักคงดอกเบี้ย ~93% / ขึ้น 25bp ~7% (ณ 25 ต.ค.) แต่โอกาสขึ้นดอกเบี้ยเคยพุ่งถึง ~44% หลัง CPI ก.ย. ออกมาร้อนเมื่อ 14 ต.ค. ทิศทางจึงยังเสี่ยงสองด้าน",
+        "inflationNote": "CPI ก.ย. +0.6% m/m, 3.7% y/y ส่วน core +0.3% m/m, 2.6% y/y สูงกว่าคาดทั้งคู่ — เงินเฟ้อ headline เร่งตัวทำให้การขึ้นดอกเบี้ยอีกครั้งในปี 2026 ยังเป็นไปได้",
+        "sectorImpact": "หุ้นอวกาศเล็กต่ำกว่า $600M — risk appetite ของ small cap และดอกเบี้ยกำหนด multiple",
+        "summary": "HIGH — ตลาดคาด FOMC 28 ต.ค. คงดอกเบี้ย ~93% แต่ CPI ก.ย. ร้อน (headline 3.7%) และยังอาจขึ้นได้อีกในปี 2026 แรงขายหุ้นเติบโต/AI infra เดือน ต.ค. ส่วนใหญ่มาจากดอกเบี้ย ผลประชุมและ dot plot จึงกระทบ multiple ของหุ้นตัวนี้โดยตรง"
+      },
+      "entryStrategy": {
+        "verdict": "BUY (Speculative) — ปล่อยดาวเทียมสำเร็จและมีไตรมาสกำไรแรกแล้ว แต่หุ้นลง -33% ก่อนงบ 9 พ.ย. median ผลตอบแทนถึงวัน catalyst ของ core = -6.9% และ 74% ของหุ้นติดลบ ณ วัน event (n=54) — เข้าที่ Entry 2 ($3.20-3.50) เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น ไม่ใช่จุดเข้าหลัก (median ถึงวัน catalyst ของ core -6.9%, n=54)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "โซนย่อก่อนงบ — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ย่อลึก",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — Q3 ยืนยันกำไร ~$4.86 กรอบ ~1-3 เดือน"
+        },
+        "tp2": {
+          "note": "Bull — สัญญากลาโหมใหม่ + เติบโตแบบมีกำไร ~$6.73"
+        },
+        "tp3": {
+          "note": "Moon — เป้าเฉลี่ย ~$10 thesis 12 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-20% — กว้างกว่า medianMAE ของ earnings_beat (-9.6%, n=42) และ satellite_launch (-19.4%, n=8) small cap ที่ร่วง -33% ในเดือนเดียวต้องการพื้นที่",
+          "hardNote": "-35% — thesis พัง",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "รับได้ ✅ — ผ่านเกณฑ์ขั้นต่ำ 2:1 ของ core"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "งบ Q3 2026",
+          "note": "กำไร + backlog กลาโหม"
+        }
+      ]
+    }
+  },
+  "factorTags": [
+    "space_launch"
+  ]
+}
