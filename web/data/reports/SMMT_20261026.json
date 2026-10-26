@@ -1,0 +1,297 @@
+{
+  "ticker": "SMMT",
+  "companyName": "Summit Therapeutics Inc.",
+  "companyDescription": "Oncology · ivonescimab (PD-1 x VEGF bispecific) — BLA for EGFR-mutant NSCLC post-TKI under FDA review (PDUFA Nov 14) · five global Phase 3 HARMONi trials · $2B AstraZeneca equity investment at $18.36/share (Oct 2026)",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-10-26T00:00:00.000Z",
+  "price": 14.76,
+  "priceChange": -4.59,
+  "priceNote": "Live $14.76 (-4.6%) on Oct 26, 2026 — 52-week range $12.07-$29.23. Market cap ~$11.8B. Trades ~20% below AstraZeneca's $18.36/share investment price from early October.",
+  "marketCap": "~$11.8B",
+  "sector": "Healthcare / Oncology Biotech",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Speculative",
+  "score": 0,
+  "summary": "Ivonescimab's first FDA decision lands Nov 14 (PDUFA from the official BLA-acceptance PR). HARMONi met PFS but missed OS significance (HR 0.79, p=0.057). That makes this a real two-sided binary, which is why the stock trades ~20% below the price AstraZeneca paid for its $2B stake weeks ago. Consensus $30.23 (+105%; clears the gate). fda_decision has n=3 in core feedback (context only). Written against the core Base optimism bias of +23.7pp (realized 14d P75 +6.6%, P90 +11.7%). Base +25% assumes approval and a ~1-2 month re-rating back to the AZ $18.36 reference. This pick's catalyst is 19 days out, just outside the 14d North Star window. แนะนำ 3-5% ของ portfolio — Speculative.",
+  "catalysts": [
+    {
+      "icon": "💊",
+      "name": "Ivonescimab BLA — PDUFA (EGFRm NSCLC post-TKI)",
+      "description": "FDA goal date set in the Jan 2026 BLA-acceptance PR. HARMONi met PFS but OS missed statistical significance (HR 0.79, p=0.057; median 16.8 vs 14.0 months) — the core regulatory question.",
+      "urgencyLabel": "19 DAYS",
+      "dateBadge": "Nov 14, 2026",
+      "catalystDate": "2026-11-14",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📊",
+      "name": "Q3 2026 earnings",
+      "description": "First print since AstraZeneca's $2B convertible-preferred investment.",
+      "urgencyLabel": "11 DAYS",
+      "dateBadge": "Nov 6, 2026",
+      "catalystDate": "2026-11-06",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "OS was not statistically significant in HARMONi (HR 0.79, p=0.057) — the FDA may require OS benefit, restrict the label, or issue a CRL.",
+    "Good news has not stuck: the +23% AZ pop fully faded within four weeks.",
+    "Even on approval, the initial label (EGFRm NSCLC post-TKI) is a niche; the big value sits in the other HARMONi trials still reading out.",
+    "Partner dependence: ex-US rights and much of the data come from Akeso; regulatory acceptance of China-heavy data is a recurring FDA question.",
+    "Heavy losses (TTM net loss ~$856M) while running five global Phase 3s."
+  ],
+  "estimateDates": [
+    {
+      "event": "Ivonescimab PDUFA",
+      "dateRange": "Nov 14, 2026",
+      "note": "First US approval decision for a PD-1xVEGF bispecific",
+      "est": "binary",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -35,
+      "price": 9.59
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 25,
+      "price": 18.45
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 60,
+      "price": 23.62
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 105,
+      "price": 30.26
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus (17 analysts, stockanalysis.com)",
+      "target": 30.23,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Stifel",
+      "target": 45,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Jefferies",
+      "target": 44,
+      "rating": "Buy"
+    },
+    {
+      "firm": "H.C. Wainwright",
+      "target": 40,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Citi (raised from $13)",
+      "target": 19,
+      "rating": "n/a"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds at 3.75-4.00% after the surprise Sep 16, 2026 hike (first since 2023). The Oct 27-28 FOMC is priced ~93% hold / ~7% +25bp as of Oct 25 — but hike odds briefly spiked to ~44% after the hot Sep CPI print on Oct 14, so the path stays two-sided.",
+    "inflationNote": "September CPI +0.6% m/m, 3.7% y/y headline; core +0.3% m/m, 2.6% y/y — both above consensus. Headline re-acceleration keeps a further 2026 hike live.",
+    "sectorImpact": "Large-cap biotech with a $2B AstraZeneca backstop — financing risk is low. Rates matter through the biotech risk appetite into a binary FDA event.",
+    "summary": "MEDIUM — the Oct 28 FOMC is priced ~93% hold, but September CPI ran hot (3.7% headline) and a further 2026 hike is still live. October's growth/AI-infra selloff was largely a rates trade, so the decision and the dot path matter directly for this name's multiple."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 14.76,
+        "note": "Current price — starter only; not preferred (core at-catalyst median -6.9%, n=54)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 13,
+        "rangeMax": 14,
+        "note": "Pre-PDUFA dip zone — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 12.1,
+        "note": "52-week low ($12.07)",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 18.45,
+      "pct": 25,
+      "note": "Base — approval on Nov 14; re-rates toward the AZ $18.36 reference (~$18.45). Horizon ~1-2 months."
+    },
+    "tp2": {
+      "price": 23.62,
+      "pct": 60,
+      "note": "Bull — approval with a clean label plus positive HARMONi-3 read-through; ~$23.60."
+    },
+    "tp3": {
+      "price": 30.26,
+      "pct": 105,
+      "note": "Moon — ivonescimab recognized as a PD-1 successor across lung cancer; ~$30, at consensus. 12-month thesis.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 12.4,
+      "tightPct": -16,
+      "tightNote": "-16% — wider than the core overall medianMAE (-14%; the fda_decision bucket is n=3, too thin to use).",
+      "hard": 10.33,
+      "hardPct": -30,
+      "hardNote": "-30% — CRL territory; exit.",
+      "riskReward": "3.8 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Acceptable ✅ — clears the 2:1 core floor"
+    },
+    "verdict": "SPECULATIVE — a big-pharma-validated asset priced below its own strategic investment, into a genuinely two-sided Nov 14 PDUFA. The measured core median at-catalyst return is -6.9% with 74% of picks underwater at their event (n=54), so Entry 2 ($13-14) is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "Faded: SMMT spiked ~23% pre-market on the Sep 29 AstraZeneca $2B news, then gave it all back to $14.76 — now ~20% below AZ's $18.36 entry price.",
+    "preRunupTiming": "Last 2-3 weeks before Nov 14",
+    "preRunupPct": "-20% vs the AZ $18.36 investment price",
+    "postWin": {
+      "avgPct": 23,
+      "range": "+23%",
+      "note": "SMMT's own reaction to the Sep 29, 2026 AstraZeneca $2B investment (+23% pre-market) — the best sourced proxy for how a validating event moves this large-cap biotech.",
+      "exampleDate": "Sep 2026"
+    },
+    "postLose": {
+      "avgPct": -33,
+      "range": "-33%",
+      "note": "Capricor's Jul 11, 2025 CRL (-33% in one day) — an efficacy-evidence CRL, the same type of risk the HARMONi OS miss raises.",
+      "exampleDate": "Jul 2025"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "4%. fda_decision has n=3 in core feedback (context only, +2.0pp). The $2B AZ backstop supports the balance sheet, but the OS miss makes this a genuine two-sided FDA binary."
+    },
+    "stopPreCatalyst": {
+      "pct": -16,
+      "price": 12.4,
+      "note": "Wider than the core overall medianMAE (-14%). A break below the $12.07 52-week low before Nov 14 suggests the market is pricing a CRL."
+    },
+    "stopPostCatalyst": {
+      "pct": -25,
+      "note": "If FDA issues a CRL or requires a new OS trial, exit on day 1."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "SMMT",
+      "event": "AstraZeneca $2B strategic equity investment + ivonescimab collaboration",
+      "date": "Sep 2026",
+      "movePct": 23,
+      "days": 1,
+      "outcome": "good",
+      "note": "A big-pharma validation event moved SMMT +23% pre-market — then fully faded within four weeks. Good news here needs follow-through to hold."
+    },
+    {
+      "ticker": "CAPR",
+      "event": "Complete Response Letter (efficacy evidence)",
+      "date": "Jul 2025",
+      "movePct": -33,
+      "days": 1,
+      "outcome": "bad",
+      "note": "An efficacy-evidence CRL at a biotech with a debated pivotal dataset. HARMONi's non-significant OS is the analogous risk."
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/smmt/",
+    "https://businesswire.com/news/home/20260129109846/en/Summit-Therapeutics-Announces-U.S.-FDA-Acceptance-of-Biologics-License-Application-BLA-Seeking-Approval-for-Ivonescimab-in-Combination-with-Chemotherapy-in-Treatment-of-Patients-with-EGFRm-NSCLC-Post-TKI-Therapy",
+    "https://www.barchart.com/story/news/3399468/ivonescimab-plus-chemotherapy-shows-consistent-favorable-overall-survival-results-in-western-and-asian-patients-in-updated-analysis-from-global-phase-iii-harmoni-study",
+    "https://www.rttnews.com/3694521/astrazeneca-invests-2-billion-in-summit-expands-cancer-drug-collaboration-stock-up.aspx",
+    "https://www.timeslive.co.za/news/sci-tech/2026-09-29-summit-soars-after-2bn-investment-from-astrazeneca-for-cancer-therapies",
+    "https://www.tipranks.com/news/the-fly/summit-therapeutics-price-target-raised-to-19-from-13-at-citi",
+    "https://secure.businesswire.com/news/home/20250825847686/en/CAPR-INVESTORS-Kirby-McInerney-LLP-Reminds-Capricor-Therapeutics-Inc.-Investors-of-Important-Deadline-and-Encourages-Investors-to-Contact-the-Firm",
+    "https://www.chase.com/personal/investments/learning-and-insights/article/will-the-federal-reserve-hike-rates-at-october-2026-fomc-meeting",
+    "https://defirate.com/prediction-markets/fed-decision-odds/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "ivonescimab ได้รับการตัดสินจาก FDA ครั้งแรก 14 พ.ย. (PDUFA ตาม PR รับ BLA อย่างเป็นทางการ) HARMONi ผ่าน PFS แต่ OS ไม่มีนัยสำคัญ (HR 0.79, p=0.057) จึงเป็น binary สองด้านจริง หุ้นจึงต่ำกว่าราคาที่ AstraZeneca จ่ายเพื่อถือหุ้น $2B เมื่อไม่กี่สัปดาห์ก่อน ~20% เป้าเฉลี่ย $30.23 (+105% ผ่านเกณฑ์) fda_decision มี n=3 ใน core feedback (บริบทเท่านั้น) เขียนโดยคำนึงถึง optimism bias ของ Base ใน core +23.7pp (P75 ที่เกิดจริงใน 14 วัน +6.6%, P90 +11.7%) Base +25% สมมติได้รับอนุมัติและ re-rate ใน ~1-2 เดือนกลับไปหาราคา AZ $18.36 catalyst อยู่ห่าง 19 วัน เลยกรอบ North Star 14 วันเล็กน้อย แนะนำ 3-5% ของ portfolio — Speculative",
+      "priceNote": "ราคาสด $14.76 (-4.6%) 26 ต.ค. 2026 — ช่วง 52 สัปดาห์ $12.07-$29.23 Market cap ~$11.8B เทรดต่ำกว่าราคาที่ AstraZeneca ลงทุน $18.36/หุ้น เมื่อต้น ต.ค. ราว 20%",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        {
+          "name": "BLA ของ ivonescimab — วัน PDUFA (EGFRm NSCLC หลัง TKI)",
+          "description": "วันตัดสินของ FDA ตาม PR รับ BLA เดือน ม.ค. 2026 HARMONi ผ่าน PFS แต่ OS ไม่มีนัยสำคัญทางสถิติ (HR 0.79, p=0.057; median 16.8 vs 14.0 เดือน) — คำถามหลักด้านกฎระเบียบ"
+        },
+        {
+          "name": "งบ Q3 2026",
+          "description": "งบแรกหลัง AstraZeneca ลงทุน $2B ในหุ้นบุริมสิทธิ์แปลงสภาพ"
+        }
+      ],
+      "risks": [
+        "OS ใน HARMONi ไม่มีนัยสำคัญทางสถิติ (HR 0.79, p=0.057) — FDA อาจต้องการประโยชน์ด้าน OS จำกัดฉลาก หรือออก CRL",
+        "ข่าวดีไม่อยู่: การกระโดด +23% จากข่าว AZ หายหมดภายใน 4 สัปดาห์",
+        "แม้ได้อนุมัติ ฉลากแรก (EGFRm NSCLC หลัง TKI) เป็นตลาดเฉพาะ มูลค่าใหญ่อยู่ใน HARMONi ตัวอื่นที่ยังรอผล",
+        "พึ่งพาพันธมิตร: สิทธิ์นอกสหรัฐฯ และข้อมูลส่วนใหญ่มาจาก Akeso การยอมรับข้อมูลที่มาจากจีนเป็นหลักเป็นคำถามที่ FDA ถามซ้ำ ๆ",
+        "ขาดทุนหนัก (TTM ~$856M) ขณะทำ Phase 3 ทั่วโลก 5 การศึกษา"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ยนโยบาย 3.75-4.00% หลัง Fed ขึ้นดอกเบี้ยแบบเซอร์ไพรส์เมื่อ 16 ก.ย. 2026 (ครั้งแรกตั้งแต่ 2023) ประชุม FOMC 27-28 ต.ค. ตลาดให้น้ำหนักคงดอกเบี้ย ~93% / ขึ้น 25bp ~7% (ณ 25 ต.ค.) แต่โอกาสขึ้นดอกเบี้ยเคยพุ่งถึง ~44% หลัง CPI ก.ย. ออกมาร้อนเมื่อ 14 ต.ค. ทิศทางจึงยังเสี่ยงสองด้าน",
+        "inflationNote": "CPI ก.ย. +0.6% m/m, 3.7% y/y ส่วน core +0.3% m/m, 2.6% y/y สูงกว่าคาดทั้งคู่ — เงินเฟ้อ headline เร่งตัวทำให้การขึ้นดอกเบี้ยอีกครั้งในปี 2026 ยังเป็นไปได้",
+        "sectorImpact": "ไบโอเทคขนาดใหญ่ที่มี AstraZeneca หนุน $2B ความเสี่ยงด้านเงินทุนต่ำ ดอกเบี้ยกระทบผ่าน risk appetite ของไบโอเทคก่อน event binary ของ FDA",
+        "summary": "MEDIUM — ตลาดคาด FOMC 28 ต.ค. คงดอกเบี้ย ~93% แต่ CPI ก.ย. ร้อน (headline 3.7%) และยังอาจขึ้นได้อีกในปี 2026 แรงขายหุ้นเติบโต/AI infra เดือน ต.ค. ส่วนใหญ่มาจากดอกเบี้ย ผลประชุมและ dot plot จึงกระทบ multiple ของหุ้นตัวนี้โดยตรง"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — สินทรัพย์ที่ยาใหญ่รับรองแล้วแต่ราคาต่ำกว่าเงินลงทุนเชิงกลยุทธ์ของตัวเอง ก่อน PDUFA 14 พ.ย. ที่เสี่ยงสองด้านจริง median ผลตอบแทนถึงวัน catalyst ของ core = -6.9% และ 74% ของหุ้นติดลบ ณ วัน event (n=54) — เข้าที่ Entry 2 ($13-14) เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น ไม่ใช่จุดเข้าหลัก (median ถึงวัน catalyst ของ core -6.9%, n=54)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "โซนย่อก่อน PDUFA — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "52-week low ($12.07)",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — อนุมัติ 14 พ.ย. re-rate ไปหาราคา AZ $18.36 (~$18.45) กรอบ ~1-2 เดือน"
+        },
+        "tp2": {
+          "note": "Bull — อนุมัติด้วยฉลากที่ดี + ผล HARMONi-3 ส่งสัญญาณบวก ~$23.60"
+        },
+        "tp3": {
+          "note": "Moon — ivonescimab ได้รับการยอมรับว่าเป็นทายาทของ PD-1 ในมะเร็งปอด ~$30 เท่าเป้าเฉลี่ย thesis 12 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-16% — กว้างกว่า medianMAE ภาพรวม core (-14%; fda_decision n=3 บางเกินใช้)",
+          "hardNote": "-30% — โซน CRL ออก",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "รับได้ ✅ — ผ่านเกณฑ์ขั้นต่ำ 2:1 ของ core"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "PDUFA ของ ivonescimab",
+          "note": "การตัดสินอนุมัติครั้งแรกในสหรัฐฯ ของ bispecific PD-1xVEGF"
+        }
+      ]
+    }
+  }
+}
