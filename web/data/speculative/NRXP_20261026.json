@@ -1,0 +1,322 @@
+{
+  "ticker": "NRXP",
+  "companyName": "NRx Pharmaceuticals, Inc.",
+  "companyDescription": "CNS / ketamine · Preservative-free IV ketamine (NRX-100) awaiting ANDA approval Nov 10, plus an NDA path for suicidal depression, NRX-101, and a small HOPE ketamine-clinic network (Dura acquisition)",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-10-26T00:00:00.000Z",
+  "price": 2.51,
+  "priceChange": 0.8,
+  "priceNote": "Live $2.51 (+0.8%) at Oct 26, 2026 open. 52-week range $1.62-$5.055: off the low, but still half the high. Market cap ~$109M on 43.3M shares. The $38.50 consensus target (4 small-shop analysts) is far from price and should be read as a long-dated NDA thesis, not a 30-day target.",
+  "marketCap": "~$109M",
+  "sector": "Healthcare / CNS Biotech",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 0,
+  "summary": "NRX-100 (preservative-free IV ketamine) hits its GDUFA date on Nov 10, 2026. Every recent FDA interaction has been downgraded to Minor (amendment, labeling letter), and process validation is complete, so the binary is better-defined than most micro-cap PDUFAs. fda_decision is a Tier-2 LEADER in turbo feedback (+9.3pp median excess vs SPY vs +2.0pp overall, n=10). ⚠️ SURVIVAL: the Jun 30 10-Q carries going-concern language, with $26.7M cash against ~$2.2M/month operating burn and ongoing ATM use. This pick is in the top 5 anyway because the GDUFA event lands inside the runway and approval converts NRx from a pure story into a revenue-bearing ketamine supplier at a ~$109M valuation. The cost is a 2% max position and a dip-only entry. Scenario Base (+60%) runs far above the turbo lane's realized 30-day P75 (+12.2%; written-Base optimism bias +72.7pp). It assumes a 3-6 month horizon after approval, driven by a re-test of the $5 52-week high once ANDA revenue and the NDA path are re-priced. แนะนำ 2% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 50-80%.",
+  "catalysts": [
+    {
+      "icon": "💊",
+      "name": "NRX-100 ANDA — GDUFA goal date",
+      "description": "FDA decision on preservative-free IV ketamine. First-cycle review found no drug-related major deficiencies; the remaining vial-connector question was reclassified Minor; the Oct 15 labeling letter asked only Minor changes; process validation + 2-year stability completed Oct 19.",
+      "urgencyLabel": "15 DAYS",
+      "dateBadge": "Nov 10, 2026",
+      "catalystDate": "2026-11-10",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📊",
+      "name": "Q3 2026 Earnings",
+      "description": "Cash, burn, and going-concern language update. This is the first read on how NRx plans to fund launch after the GDUFA outcome.",
+      "urgencyLabel": "3 WEEKS",
+      "dateBadge": "Nov 16, 2026",
+      "catalystDate": "2026-11-16",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "⚖️",
+      "name": "Benzethonium-chloride citizen petition",
+      "description": "NRx petitioned FDA to restrict ketamine containing the preservative benzethonium chloride. A favorable FDA response would make a preservative-free supplier the default, but the petition is contested and has no FDA deadline.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "⚠️ SURVIVAL: going-concern doubt disclosed in the Jun 30, 2026 10-Q. Cash was $26.7M against ~$13.2M of H1 operating cash burn (~12 months of runway), and the company is actively funding through an ATM ($11.8M net in H1) plus an April $20.7M underwritten offering. More dilution right after approval is the base case, not a tail risk.",
+    "An ANDA approval is a generic ketamine product in a commoditized market. The large-value asset (NRX-100 NDA for suicidal depression, Fast Track) is a separate, later, and less certain filing.",
+    "The open CMC item (vial-to-syringe connector certification) is exactly the kind of issue that produced the Outlook Therapeutics CRL. 'Minor' classification is not approval.",
+    "The benzethonium-chloride petition campaign drew a contested NYT story and a public rebuttal. Reputational and regulatory friction could cut either way.",
+    "The $38.50 consensus comes from four small-shop analysts (BTIG at $10 is the realistic anchor). The target dispersion is a warning sign, not support."
+  ],
+  "estimateDates": [
+    {
+      "event": "NRX-100 GDUFA decision",
+      "dateRange": "Nov 10, 2026",
+      "note": "Approval vs. another cycle — binary for the near-term thesis",
+      "est": "Minor-only labeling asks",
+      "highlight": "blue"
+    },
+    {
+      "event": "Q3 2026 earnings",
+      "dateRange": "Nov 16, 2026",
+      "note": "Cash runway / going concern / ATM usage",
+      "est": "cash $26.7M at Jun 30",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -55,
+      "price": 1.13
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 60,
+      "price": 4.02
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 140,
+      "price": 6.02
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 400,
+      "price": 12.55
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus (4 analysts, stockanalysis.com)",
+      "target": 38.5,
+      "rating": "Strong Buy"
+    },
+    {
+      "firm": "Ascendiant Capital (Oct 1, 2026)",
+      "target": 50,
+      "rating": "Buy"
+    },
+    {
+      "firm": "BTIG (Sep 14, 2026)",
+      "target": 10,
+      "rating": "Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "HIGH",
+    "rateOutlook": "Fed funds at 3.75-4.00% after the surprise Sep 16, 2026 hike (first since 2023). The Oct 27-28 FOMC is priced ~93% hold / ~7% +25bp as of Oct 25 — but hike odds briefly spiked to ~44% after the hot Sep CPI print on Oct 14, so the path stays two-sided.",
+    "inflationNote": "September CPI +0.6% m/m, 3.7% y/y headline; core +0.3% m/m, 2.6% y/y — both above consensus. Headline re-acceleration keeps a further 2026 hike live.",
+    "sectorImpact": "A going-concern micro-cap is the most rate-sensitive profile in the market. Tighter financial conditions raise the cost and likelihood of the next ATM draw, and the 'approval then raise' pattern gets worse when risk appetite is thin.",
+    "summary": "HIGH — a hold on Oct 28 is priced, but hot CPI keeps another hike live. For a company funding itself through an ATM, a hawkish surprise directly raises dilution risk around the approval window."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 2.51,
+        "note": "Current price — small starter only. Not preferred: measured turbo at-catalyst median is -13.7% (n=19)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 2.05,
+        "rangeMax": 2.25,
+        "note": "Pre-GDUFA dip zone — base-rate-preferred entry",
+        "timing": "If dips before Nov 10",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 1.65,
+        "note": "52-week low ($1.62) — only if thesis intact and no new financing at a distressed price",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 4.02,
+      "pct": 60.2,
+      "note": "Base — ANDA approved on time; stock re-tests the $4-5 zone (52-week high $5.055). Horizon 3-6 months, not the 30d North Star window."
+    },
+    "tp2": {
+      "price": 6.02,
+      "pct": 139.8,
+      "note": "Bull — approval plus a commercial/licensing deal for NRX-100 (PharmaTher-style monetization) that funds the company without a distressed raise."
+    },
+    "tp3": {
+      "price": 12.55,
+      "pct": 400,
+      "note": "Moon — NRX-100 NDA (suicidal depression) progresses and the preservative-free standard gains FDA traction. 12-24 month thesis.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 1.88,
+      "tightPct": -25,
+      "tightNote": "-25% — wider than the turbo fda_decision medianMAE (-18.4%, n=10) so ordinary pre-event noise doesn't stop the position out.",
+      "hard": 1.25,
+      "hardPct": -50,
+      "hardNote": "-50% — CRL / financing-at-distress territory. A break here means the binary went wrong.",
+      "riskReward": "5.6 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Asymmetric ✅ — clears the 5:1 turbo target"
+    },
+    "verdict": "SPECULATIVE · ค่าขนม 2% max — clean-looking GDUFA binary (Nov 10) on a Tier-2 leader catalyst type, under a real going-concern flag. Measured turbo at-catalyst median is -13.7% (n=19, 79% underwater at their event), so do not chase: Entry 2 ($2.05-2.25) is the preferred entry, Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "Thin precedent for a micro-cap ketamine ANDA. NRXP has already run from the $1.62 low toward $2.5 on the Minor-amendment and labeling-letter news, so part of the approval may be priced in before Nov 10.",
+    "preRunupTiming": "Final 2-3 weeks before the GDUFA date",
+    "preRunupPct": "Not measured — no clean sector average found",
+    "postWin": {
+      "avgPct": 148,
+      "range": "+148% over ~6 months (single precedent)",
+      "note": "PharmaTher (PHRM.CN) gained 148% in the six months after FDA approved its KETARx ketamine on Aug 8, 2025. That is a 6-month move, not a day-1 pop, and it is the only ketamine-approval precedent found. Treat it as an upper reference, not an expectation.",
+      "exampleDate": "Aug 2025"
+    },
+    "postLose": {
+      "avgPct": -56,
+      "range": "-33% to -80%",
+      "note": "Average of two real 2025 small-cap CRLs: Capricor -33% in one day (Jul 11, 2025) and Outlook Therapeutics ~-80% after hours (Dec 31, 2025). With going-concern language, NRXP sits closer to the Outlook end if FDA asks for another cycle.",
+      "exampleDate": "Jul 2025 (CAPR) / Dec 2025 (OTLK)"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "2% max. The fda_decision bucket is a Tier-2 LEADER in turbo feedback (+9.3pp median excess vs SPY vs +2.0pp lane-wide, n=10), but the survival flag and the lane's weak overall scoreboard (hitRate 4.9%, softHit 22%, n=41) both cap sizing at the bottom of the 2-5% band."
+    },
+    "stopPreCatalyst": {
+      "pct": -25,
+      "price": 1.88,
+      "note": "Wider than the fda_decision medianMAE (-18.4%, n=10). A break below ~$1.88 before Nov 10 suggests the market is pricing a financing or a CRL leak."
+    },
+    "stopPostCatalyst": {
+      "pct": -35,
+      "note": "If FDA issues a CRL or the company announces a deeply discounted raise after approval, exit. Do not average down into going-concern dilution."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "PHRM.CN",
+      "event": "FDA approval of KETARx (ketamine) after two prior rejections",
+      "date": "Aug 2025",
+      "movePct": 148,
+      "days": 180,
+      "outcome": "good",
+      "note": "Closest product comparable: a micro-cap ketamine approval that re-rated the stock. The move took about six months, and the company then sold US rights for $25M+ in milestones. A ketamine approval can be worth more as a licensing asset than as an in-house launch."
+    },
+    {
+      "ticker": "OTLK",
+      "event": "Complete Response Letter for ONS-5010 BLA",
+      "date": "Dec 2025",
+      "movePct": -80,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Downside template for a cash-strapped small cap that misses an FDA date: CMC and inspection issues were cited, and the stock lost ~80% after hours. NRXP's open CMC item (the vial connector) is the analogous risk."
+    },
+    {
+      "ticker": "CAPR",
+      "event": "Complete Response Letter for deramiocel BLA",
+      "date": "Jul 2025",
+      "movePct": -33,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Milder CRL case (-33% day-1) for a company with more cash. It shows the range between a survivable rejection and a going-concern rejection."
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/nrxp/",
+    "https://www.sec.gov/Archives/edgar/data/0001719406/000143774926028027/nrxp20260630_10q.htm",
+    "https://www.rttnews.com/3691332/nrx-pharmaceuticals-reports-fda-reclassifies-ketamine-amendment-as-minor.aspx",
+    "https://mychesco.com/a/news/regional/nrx-nears-fda-decision-on-u-s-made-ketamine-product",
+    "https://www.gurufocus.com/news/9136886/nrx-pharmaceuticals-nrxp-rebuts-benzethonium-chloride-toxicity-claims-amid-market-challenges",
+    "https://stockscan.io/stocks/NRXP/forecast",
+    "https://healingmaps.com/pharmather-achieves-historic-ketamine-fda-approval-after-third-attempt/",
+    "https://seekingalpha.com/news/4536122-outlook-therapeutics-receives-crl--ressubmitted-bla--wet-amd-asset",
+    "https://secure.businesswire.com/news/home/20250825847686/en/CAPR-INVESTORS-Kirby-McInerney-LLP-Reminds-Capricor-Therapeutics-Inc.-Investors-of-Important-Deadline-and-Encourages-Investors-to-Contact-the-Firm",
+    "https://www.chase.com/personal/investments/learning-and-insights/article/will-the-federal-reserve-hike-rates-at-october-2026-fomc-meeting",
+    "https://defirate.com/prediction-markets/fed-decision-odds/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "NRX-100 (คีตามีน IV แบบไม่มีสารกันเสีย) มีวันตัดสิน GDUFA 10 พ.ย. 2026 ทุกการติดต่อกับ FDA ล่าสุดถูกลดเป็น Minor (amendment, จดหมายฉลาก) และ validation การผลิตเสร็จแล้ว binary นี้จึงชัดกว่า PDUFA ไมโครแคปทั่วไป fda_decision เป็น Tier-2 LEADER ใน turbo feedback (+9.3pp median excess เทียบ SPY vs ภาพรวม +2.0pp, n=10) ⚠️ SURVIVAL: 10-Q ณ 30 มิ.ย. มีข้อความ going concern เงินสด $26.7M เทียบการเผาเงิน ~$2.2M/เดือน และยังใช้ ATM อยู่ ที่ยังติด top 5 เพราะวัน GDUFA อยู่ในรันเวย์ และการอนุมัติจะเปลี่ยน NRx จากหุ้นเรื่องเล่าเป็นผู้ขายคีตามีนที่มีรายได้ที่มูลค่า ~$109M แลกกับขนาด 2% และเข้าเฉพาะตอนย่อ Base (+60%) สูงกว่า P75 ที่เกิดจริงของ turbo ใน 30 วัน (+12.2%; bias +72.7pp) โดยสมมติกรอบ 3-6 เดือนหลังอนุมัติ แนะนำ 2% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 50-80%",
+      "priceNote": "ราคาสด $2.51 (+0.8%) เปิดตลาด 26 ต.ค. 2026 ช่วง 52 สัปดาห์ $1.62-$5.055 — ฟื้นจากจุดต่ำแต่ยังครึ่งหนึ่งของจุดสูง Market cap ~$109M (43.3M หุ้น) เป้าเฉลี่ย $38.50 จากนักวิเคราะห์โบรกเล็ก 4 ราย ห่างจากราคามาก ควรมองเป็น thesis NDA ระยะยาว ไม่ใช่เป้า 30 วัน",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "NRX-100 ANDA — วันตัดสิน GDUFA",
+          "description": "FDA ตัดสินคีตามีนแบบไม่มีสารกันเสีย รอบแรกไม่พบข้อบกพร่องใหญ่ของตัวยา ประเด็นข้อต่อ vial ถูกลดเป็น Minor จดหมายตรวจฉลาก 15 ต.ค. ขอแก้แค่ Minor และ validation การผลิต + ข้อมูลความคงตัว 2 ปีเสร็จ 19 ต.ค."
+        },
+        {
+          "name": "งบ Q3 2026",
+          "description": "อัปเดตเงินสด อัตราเผาเงิน และข้อความ going concern — สัญญาณแรกว่าจะหาเงินมาเปิดตัวยาอย่างไรหลังผล GDUFA"
+        },
+        {
+          "name": "Citizen petition เรื่อง benzethonium chloride",
+          "description": "NRx ยื่นให้ FDA จำกัดคีตามีนที่มีสารกันเสีย benzethonium chloride ถ้า FDA ตอบรับ ผู้ผลิตแบบไม่มีสารกันเสียจะกลายเป็นมาตรฐาน แต่ยังมีข้อโต้แย้งและไม่มีกำหนดเวลา"
+        }
+      ],
+      "risks": [
+        "⚠️ SURVIVAL: 10-Q ณ 30 มิ.ย. 2026 เปิดเผยข้อสงสัย going concern เงินสด $26.7M เทียบการเผาเงินดำเนินงาน ~$13.2M ใน H1 (รันเวย์ ~12 เดือน) และยังระดมทุนผ่าน ATM ($11.8M สุทธิใน H1) บวกการเพิ่มทุน $20.7M เดือน เม.ย. — dilution หลังอนุมัติเป็นกรณีฐาน ไม่ใช่ความเสี่ยงส่วนหาง",
+        "ANDA คือคีตามีนแบบ generic ในตลาดที่แข่งราคา สินทรัพย์มูลค่าสูงจริง (NDA โรคซึมเศร้าที่มีความคิดฆ่าตัวตาย, Fast Track) เป็นการยื่นแยกที่ช้ากว่าและไม่แน่นอนกว่า",
+        "ประเด็น CMC ที่ค้าง (การรับรองข้อต่อ vial กับ syringe) คือประเภทเดียวกับที่ทำให้ Outlook Therapeutics โดน CRL การถูกจัดเป็น Minor ยังไม่ใช่การอนุมัติ",
+        "แคมเปญ petition เรื่อง benzethonium chloride ถูก NYT ตั้งคำถามและบริษัทต้องออกโต้ — แรงเสียดทานด้านชื่อเสียงและกฎระเบียบไปได้ทั้งสองทาง",
+        "เป้าเฉลี่ย $38.50 มาจากโบรกเล็ก 4 ราย (BTIG $10 คือจุดอ้างอิงที่สมจริง) — การกระจายของเป้าเป็นสัญญาณเตือน ไม่ใช่แรงหนุน"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ยนโยบาย 3.75-4.00% หลัง Fed ขึ้นดอกเบี้ยแบบเซอร์ไพรส์เมื่อ 16 ก.ย. 2026 (ครั้งแรกตั้งแต่ 2023) ประชุม FOMC 27-28 ต.ค. ตลาดให้น้ำหนักคงดอกเบี้ย ~93% / ขึ้น 25bp ~7% (ณ 25 ต.ค.) แต่โอกาสขึ้นดอกเบี้ยเคยพุ่งถึง ~44% หลัง CPI ก.ย. ออกมาร้อนเมื่อ 14 ต.ค. ทิศทางจึงยังเสี่ยงสองด้าน",
+        "inflationNote": "CPI ก.ย. +0.6% m/m, 3.7% y/y ส่วน core +0.3% m/m, 2.6% y/y สูงกว่าคาดทั้งคู่ — เงินเฟ้อ headline เร่งตัวทำให้การขึ้นดอกเบี้ยอีกครั้งในปี 2026 ยังเป็นไปได้",
+        "sectorImpact": "หุ้นไมโครแคปที่มีข้อความ going concern อ่อนไหวต่อดอกเบี้ยที่สุด ภาวะการเงินตึงตัวทำให้การดึง ATM รอบถัดไปแพงและเกิดง่ายขึ้น รูปแบบ 'อนุมัติแล้วเพิ่มทุน' จะแย่ลงเมื่อ risk appetite บาง",
+        "summary": "HIGH — ตลาดคาดคงดอกเบี้ย 28 ต.ค. แต่ CPI ที่ร้อนทำให้ยังอาจขึ้นได้อีก สำหรับบริษัทที่หาเงินผ่าน ATM ความเซอร์ไพรส์ฝั่ง hawkish เพิ่มความเสี่ยง dilution รอบวันอนุมัติโดยตรง"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · ค่าขนม สูงสุด 2% — binary GDUFA (10 พ.ย.) ที่ดูสะอาดบน catalyst ประเภท Tier-2 leader แต่มีธง going concern จริง median ผลตอบแทนถึงวัน catalyst ของ turbo = -13.7% (n=19, 79% ติดลบ ณ วัน event) อย่าไล่ราคา: Entry 2 ($2.05-2.25) คือจุดเข้าหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เล็กเริ่มต้นเท่านั้น ไม่ใช่จุดเข้าหลัก เพราะ median ผลตอบแทนถึงวัน catalyst ของ turbo = -13.7% (n=19)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "โซนย่อก่อนวัน GDUFA — จุดเข้าที่ base rate แนะนำ",
+            "timing": "ถ้าย่อก่อน 10 พ.ย."
+          },
+          {
+            "note": "ใกล้ 52-week low ($1.62) — เฉพาะเมื่อ thesis ยังอยู่และไม่มีการเพิ่มทุนราคาต่ำ",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — ANDA อนุมัติตามกำหนด หุ้นกลับไปทดสอบโซน $4-5 (52-week high $5.055) กรอบ 3-6 เดือน ไม่ใช่ 30 วัน"
+        },
+        "tp2": {
+          "note": "Bull — อนุมัติ + ดีลขาย/ไลเซนส์ NRX-100 (แบบ PharmaTher) ที่หาเงินได้โดยไม่ต้องเพิ่มทุนราคาต่ำ"
+        },
+        "tp3": {
+          "note": "Moon — NDA ของ NRX-100 (ซึมเศร้ามีความคิดฆ่าตัวตาย) เดินหน้า และมาตรฐานไม่มีสารกันเสียได้แรงหนุนจาก FDA — thesis 12-24 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-25% — กว้างกว่า medianMAE ของ fda_decision (-18.4%, n=10) เพื่อไม่โดนสต็อปจาก noise ก่อนวัน event",
+          "hardNote": "-50% — โซน CRL / เพิ่มทุนแบบจนตรอก หลุดตรงนี้แปลว่า binary ผิดทาง",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "อสมมาตร ✅ — ผ่านเป้า 5:1 ของ turbo"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "ผลตัดสิน GDUFA ของ NRX-100",
+          "note": "อนุมัติหรือต้องอีกรอบ — จุด binary ของ thesis ระยะสั้น"
+        },
+        {
+          "event": "งบ Q3 2026",
+          "note": "รันเวย์เงินสด / going concern / การใช้ ATM"
+        }
+      ]
+    }
+  }
+}
