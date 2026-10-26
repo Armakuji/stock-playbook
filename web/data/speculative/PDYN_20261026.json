@@ -1,0 +1,295 @@
+{
+  "ticker": "PDYN",
+  "companyName": "Palladyne AI Corp.",
+  "companyDescription": "Defense autonomy/robotics software · exclusive US manufacturing & distribution partnership with Israel Aerospace Industries for 'battle-proven' loitering munitions, plus new FANUC America, NORDA Dynamics and Orkid Tech UAV partnerships · FY26 revenue guided to grow 357-415% YoY, backlog now $24.6M",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-10-26T00:00:00.000Z",
+  "price": 3.6,
+  "priceChange": -2.7,
+  "priceNote": "Live $3.60 (-2.7%) at Oct 26, 2026 open — down ~32% from $5.28 at the Sep 29 report, well off the $10.00 52-week high. Market cap ~$178M on 49.3M shares. Since the Sep 29 reports, this board's small caps fell 21-41% after the Sep 16 hike and the hot Sep CPI (Oct 14). This is a sector/size selloff that SPY-based regime notes don't capture, so drawdowns here say as much about the tape as the thesis.",
+  "marketCap": "~$178M",
+  "sector": "Industrials / Defense Robotics & Autonomy Software",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 0,
+  "summary": "REFRESH (prior report Sep 29, 2026): Palladyne is pivoting to a vertically integrated 'Palladyne Defense' (three acquisitions) and booked a cluster of October awards: USAF swarming, a missile propulsion subsystem from a major prime, a spacecraft contract, and SwarmShot with Federal Ammunition/Mossberg. The stock still fell ~32%. The IAI loitering-munition DoW contract remains unconfirmed. Q3 earnings (~Nov 11) are the next dated test of the $24-27M revenue guide against $32-36M burn. ⚠️ Tier-2 note: partnership_win is the measured Tier-2 LAGGARD in turbo feedback (medianExcessVsBenchPct -3.8pp vs +2.0pp overall, n=16; 3/16 windows had SPY down >2%), and it is independently the laggard in the core lane too (-1.6 vs +1.4, n=12). That calls for visibly higher conviction, which a run of undisclosed-value awards doesn't provide, so sizing sits at 2%. Survival: $43.7M cash at Jun 30 vs the burn guide is ~12-15 months, so the flag is not tripped, but the acquisitions could change that. Base trimmed from +65% to +55% (above the lane's realized 30d P90 of +25.9%; written-Base bias +72.7pp). It assumes 3-6 months of funded backlog growth. แนะนำ 2% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 40-60%.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 2026 Earnings",
+      "description": "First print since the pivot to 'Palladyne Defense' (three acquisitions) and a string of October awards. The read: FY26 $24-27M revenue guide vs. $32-36M operating burn, and how much of the new contract flow is funded backlog.",
+      "urgencyLabel": "~2 WEEKS",
+      "dateBadge": "~Nov 11, 2026",
+      "catalystDate": "2026-11-11",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🎯",
+      "name": "October contract flow — USAF swarming, missile-propulsion subsystem, spacecraft",
+      "description": "A U.S. Air Force contract for cross-domain swarming, a propulsion-subsystem award from a major defense prime for an existing missile program, a next-gen spacecraft contract, a successful IntelliSwarm flight test, and SwarmShot co-development with Federal Ammunition/Mossberg. The IAI loitering-munition DoW contract is still unconfirmed.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Oct 2026",
+      "badgeColor": "green",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "The IAI loitering-munition DoW contract flagged in July is still unconfirmed — no award, size, or timeline after three-plus months.",
+    "partnership_win is the measured Tier-2 LAGGARD in turbo feedback (medianExcessVsBenchPct -3.8pp vs +2.0pp overall, n=16; 3/16 windows had SPY down >2%), and it is independently the laggard in the core lane too (-1.6 vs +1.4, n=12). The October award flow fits that pattern: headlines without disclosed dollar values haven't moved the stock.",
+    "Runway is ~12-15 months on $43.7M cash (Jun 30) against $32-36M guided burn. Three acquisitions could accelerate burn or require equity.",
+    "Integration risk: a pivot from software/robotics to a vertically integrated defense contractor via M&A is a material execution change.",
+    "Analyst targets are split (Jefferies Hold ~$7 vs Northland $15). The $10.75 consensus implies ~199% upside, so the 300% Moon needs the DoW contract."
+  ],
+  "estimateDates": [
+    {
+      "event": "Q3 2026 earnings",
+      "dateRange": "~Nov 11, 2026",
+      "note": "FY26 $24-27M guide vs $32-36M burn; acquisition accounting",
+      "est": "rev guide $24-27M",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -40,
+      "price": 2.16
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 55,
+      "price": 5.58
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 125,
+      "price": 8.1
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 300,
+      "price": 14.4
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus (4 analysts, stockanalysis.com)",
+      "target": 10.75,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Northland Securities (Aug 7, 2026)",
+      "target": 15,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Lake Street (Sep 15, 2026)",
+      "target": 11,
+      "rating": "Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "HIGH",
+    "rateOutlook": "Fed funds at 3.75-4.00% after the surprise Sep 16, 2026 hike (first since 2023). The Oct 27-28 FOMC is priced ~93% hold / ~7% +25bp as of Oct 25 — but hike odds briefly spiked to ~44% after the hot Sep CPI print on Oct 14, so the path stays two-sided.",
+    "inflationNote": "September CPI +0.6% m/m, 3.7% y/y headline; core +0.3% m/m, 2.6% y/y — both above consensus. Headline re-acceleration keeps a further 2026 hike live.",
+    "sectorImpact": "Pre-profit defense-autonomy small cap now pursuing acquisitions with ~$32-36M annual burn. Financing conditions and small-cap risk appetite drive the multiple.",
+    "summary": "HIGH — Oct 28 hold is priced (~93%), but hot CPI keeps a further 2026 hike live. Small, cash-burning names have already absorbed most of this tape's damage, so a hold is mildly supportive and a surprise hike is the main macro tail."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 3.6,
+        "note": "Current price — starter only. Not preferred: turbo at-catalyst median -13.7% (n=19)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 3.1,
+        "rangeMax": 3.35,
+        "note": "Pre-earnings dip zone — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 2.7,
+        "note": "Deep dip — thesis-intact only",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 5.58,
+      "pct": 55,
+      "note": "Base — Q3 confirms the guide and funded backlog grows; re-rates to ~$5.58. Horizon 3-6 months."
+    },
+    "tp2": {
+      "price": 8.1,
+      "pct": 125,
+      "note": "Bull — the IAI/DoW loitering-munition contract is confirmed with a disclosed value; ~$8.10."
+    },
+    "tp3": {
+      "price": 14.4,
+      "pct": 300,
+      "note": "Moon — Palladyne Defense scales into a program-of-record supplier; ~$14.40, near Northland's $15. 12-24 month thesis.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 2.59,
+      "tightPct": -28,
+      "tightNote": "-28% — wider than the turbo partnership_win medianMAE (-25.9%, n=16).",
+      "hard": 1.98,
+      "hardPct": -45,
+      "hardNote": "-45% — thesis-break / financing territory.",
+      "riskReward": "4.5 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Below the 5:1 turbo target — sizing kept small to compensate"
+    },
+    "verdict": "SPECULATIVE · ค่าขนม 2% max (refreshed Oct 26) — real defense contract momentum, but a Tier-2 laggard catalyst type and M&A-driven execution risk. Measured turbo at-catalyst median is -13.7% (n=19), so Entry 2 ($3.10-3.35) is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "No run-up: PDYN fell ~32% since Sep 29 even as it announced several defense awards. Small-contract headlines are not re-rating the stock in this tape.",
+    "preRunupTiming": "N/A",
+    "preRunupPct": "-32% since Sep 29",
+    "postWin": {
+      "avgPct": 6,
+      "range": "+0.3% to +17.2%",
+      "note": "Wide range from PDYN's own history: the 2026 guidance-hike/IQ 2.0 launch produced +17.2% same-day, but the Aug 6, 2026 Q2 earnings beat (revenue +470% YoY) only moved the stock +0.3% — the market is discriminating between concrete contract/guidance wins and incremental partnership news.",
+      "exampleDate": "2026 (PDYN, guidance hike vs Q2 earnings)"
+    },
+    "postLose": {
+      "avgPct": -15,
+      "range": "-10% to -20%",
+      "note": "General small-cap defense-tech pattern for backlog-conversion disappointments or partnership-timeline slippage — no PDYN-specific bad print yet, but Jefferies' two target cuts (to $8, then $7) show real analyst-side downside conviction.",
+      "exampleDate": "general sector pattern"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "2% max. partnership_win is the measured Tier-2 LAGGARD in turbo feedback (medianExcessVsBenchPct -3.8pp vs +2.0pp overall, n=16; 3/16 windows had SPY down >2%), and it is independently the laggard in the core lane too (-1.6 vs +1.4, n=12). October's awards are real but small and mostly undisclosed in value, and the pivot to acquisitions adds integration and financing risk, so sizing sits at the floor."
+    },
+    "stopPreCatalyst": {
+      "pct": -28,
+      "price": 2.59,
+      "note": "Wider than the partnership_win medianMAE (-25.9%, n=16). A break below ~$2.59 before Q3 likely means a financing tied to the acquisitions."
+    },
+    "stopPostCatalyst": {
+      "pct": -30,
+      "note": "If Q3 cuts the revenue guide or reveals an equity raise for the acquisitions, exit."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "PDYN",
+      "event": "2026 guidance hike + IQ 2.0 product launch",
+      "date": "2026",
+      "movePct": 17.2,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company precedent for how the market rewards concrete guidance/product milestones over partnership announcements."
+    },
+    {
+      "ticker": "PDYN",
+      "event": "Q2 2026 earnings: revenue +470% YoY beat, but EPS miss",
+      "date": "Aug 2026",
+      "movePct": 0.3,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "Muted reaction despite a real revenue beat shows the market wants profitability progress and/or the DoW contract specifically, not just top-line growth."
+    },
+    {
+      "ticker": "RCAT",
+      "event": "Army Short Range Reconnaissance (SRR) drone contract win",
+      "date": "2024-2025",
+      "movePct": 911,
+      "days": 395,
+      "outcome": "good",
+      "note": "Comparable small-cap defense-tech name — shows the magnitude of re-rate a real, at-scale DoD production contract can produce over ~13 months once it converts from partnership/opportunity to award. Supports the Moon case here, not the Base case."
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/PDYN",
+    "https://aktien.guide/news/Palladyne-AI-US80359A2050",
+    "https://www.nasdaq.com/articles/palladyne-ai-q2-earnings-call-highlights",
+    "https://stockanalysis.com/stocks/pdyn/",
+    "https://stockanalysis.com/stocks/pdyn/forecast/",
+    "https://www.stocktitan.net/news/PDYN/",
+    "https://www.tipranks.com/stocks/pdyn/financials",
+    "https://www.chase.com/personal/investments/learning-and-insights/article/will-the-federal-reserve-hike-rates-at-october-2026-fomc-meeting",
+    "https://defirate.com/prediction-markets/fed-decision-odds/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "REFRESH (รายงานก่อน 29 ก.ย. 2026): Palladyne กำลังเปลี่ยนเป็น 'Palladyne Defense' แบบครบวงจร (ซื้อกิจการ 3 แห่ง) และได้สัญญาหลายฉบับในเดือน ต.ค. — USAF swarming, ระบบขับเคลื่อนขีปนาวุธจาก prime รายใหญ่, สัญญายานอวกาศ และ SwarmShot กับ Federal Ammunition/Mossberg แต่หุ้นยังลง ~32% สัญญา DoW ของ IAI ยังไม่ยืนยัน งบ Q3 (~11 พ.ย.) คือการทดสอบเป้ารายได้ $24-27M เทียบการเผาเงิน $32-36M ⚠️ หมายเหตุ Tier-2: partnership_win เป็น Tier-2 LAGGARD ที่วัดได้ใน turbo feedback (medianExcessVsBenchPct -3.8pp เทียบภาพรวม +2.0pp, n=16; 3/16 ช่วง SPY ลง >2%) และเป็น laggard ใน core lane ด้วยแยกกัน (-1.6 vs +1.4, n=12) จึงต้องมีความมั่นใจสูงกว่าปกติ ซึ่งสัญญาที่ไม่เปิดเผยมูลค่าให้ไม่ได้ ขนาดจึงอยู่ที่ 2% ด้าน survival: เงินสด $43.7M (30 มิ.ย.) เทียบการเผาเงิน ≈ 12-15 เดือน ยังไม่ติดธง แต่การซื้อกิจการอาจเปลี่ยนสิ่งนี้ Base ลดจาก +65% เป็น +55% (สูงกว่า P90 30 วัน +25.9%; bias +72.7pp) โดยสมมติกรอบ 3-6 เดือนที่ backlog ที่มีงบเติบโต แนะนำ 2% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 40-60%",
+      "priceNote": "ราคาสด $3.60 (-2.7%) เปิดตลาด 26 ต.ค. 2026 — ลง ~32% จาก $5.28 ณ รายงาน 29 ก.ย. ห่างจาก 52-week high $10.00 มาก Market cap ~$178M (49.3M หุ้น) ตั้งแต่รายงาน 29 ก.ย. หุ้นเล็กบนกระดานนี้ร่วง 21-41% หลัง Fed ขึ้นดอกเบี้ย 16 ก.ย. และ CPI ก.ย. ที่ร้อน (14 ต.ค.) เป็นการเทขายตามขนาด/กลุ่มที่ regime note แบบ SPY จับไม่ได้ การร่วงจึงสะท้อนภาวะตลาดพอ ๆ กับตัว thesis",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "งบ Q3 2026",
+          "description": "งบแรกหลังเปลี่ยนเป็น 'Palladyne Defense' (ซื้อกิจการ 3 แห่ง) และได้สัญญาหลายฉบับในเดือน ต.ค. ดูเป้ารายได้ปี 2026 $24-27M เทียบการเผาเงิน $32-36M และสัญญาใหม่เป็น backlog ที่มีงบจริงเท่าไร"
+        },
+        {
+          "name": "สัญญาเดือน ต.ค. — USAF swarming, ระบบขับเคลื่อนขีปนาวุธ, ยานอวกาศ",
+          "description": "สัญญากองทัพอากาศสหรัฐฯ ด้าน swarming ข้ามโดเมน งานระบบขับเคลื่อนจาก defense prime รายใหญ่สำหรับโครงการขีปนาวุธ สัญญายานอวกาศรุ่นใหม่ ทดสอบบิน IntelliSwarm สำเร็จ และพัฒนา SwarmShot ร่วมกับ Federal Ammunition/Mossberg ส่วนสัญญา DoW สำหรับโดรนพลีชีพของ IAI ยังไม่ยืนยัน"
+        }
+      ],
+      "risks": [
+        "สัญญา DoW สำหรับโดรนพลีชีพ IAI ที่ถูกพูดถึงตั้งแต่ ก.ค. ยังไม่ยืนยัน — ไม่มีการมอบสัญญา ขนาด หรือกำหนดเวลา หลังผ่านไปกว่า 3 เดือน",
+        "partnership_win เป็น Tier-2 LAGGARD ที่วัดได้ใน turbo feedback (medianExcessVsBenchPct -3.8pp เทียบภาพรวม +2.0pp, n=16; 3/16 ช่วง SPY ลง >2%) และเป็น laggard ใน core lane ด้วยแยกกัน (-1.6 vs +1.4, n=12) — สัญญาเดือน ต.ค. ก็เป็นไปตามรูปแบบนี้: ข่าวที่ไม่เปิดเผยมูลค่าไม่ได้ขยับหุ้น",
+        "รันเวย์ ~12-15 เดือนจากเงินสด $43.7M (30 มิ.ย.) เทียบการเผาเงิน $32-36M การซื้อกิจการ 3 แห่งอาจเร่งการเผาเงินหรือต้องเพิ่มทุน",
+        "ความเสี่ยงการรวมกิจการ: การเปลี่ยนจากซอฟต์แวร์/หุ่นยนต์เป็นผู้รับเหมากลาโหมครบวงจรผ่าน M&A เป็นการเปลี่ยนแปลงการดำเนินงานที่สำคัญ",
+        "เป้านักวิเคราะห์แตกต่างกันมาก (Jefferies Hold ~$7 vs Northland $15) เป้าเฉลี่ย $10.75 = upside ~199% เคส Moon 300% ต้องอาศัยสัญญา DoW"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ยนโยบาย 3.75-4.00% หลัง Fed ขึ้นดอกเบี้ยแบบเซอร์ไพรส์เมื่อ 16 ก.ย. 2026 (ครั้งแรกตั้งแต่ 2023) ประชุม FOMC 27-28 ต.ค. ตลาดให้น้ำหนักคงดอกเบี้ย ~93% / ขึ้น 25bp ~7% (ณ 25 ต.ค.) แต่โอกาสขึ้นดอกเบี้ยเคยพุ่งถึง ~44% หลัง CPI ก.ย. ออกมาร้อนเมื่อ 14 ต.ค. ทิศทางจึงยังเสี่ยงสองด้าน",
+        "inflationNote": "CPI ก.ย. +0.6% m/m, 3.7% y/y ส่วน core +0.3% m/m, 2.6% y/y สูงกว่าคาดทั้งคู่ — เงินเฟ้อ headline เร่งตัวทำให้การขึ้นดอกเบี้ยอีกครั้งในปี 2026 ยังเป็นไปได้",
+        "sectorImpact": "หุ้นเล็กด้าน autonomy กลาโหมที่ยังขาดทุน และกำลังซื้อกิจการ เผาเงิน ~$32-36M ต่อปี ภาวะการเงินและ risk appetite กำหนด multiple",
+        "summary": "HIGH — ตลาดคาดคงดอกเบี้ย 28 ต.ค. (~93%) แต่ CPI ร้อนทำให้ยังอาจขึ้นได้อีกในปี 2026 หุ้นเล็กที่เผาเงินรับแรงกระแทกของตลาดรอบนี้ไปมากแล้ว การคงดอกเบี้ยจึงช่วยเล็กน้อย ส่วนการขึ้นแบบเซอร์ไพรส์คือความเสี่ยงหางหลักด้านมหภาค"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · ค่าขนม สูงสุด 2% (refresh 26 ต.ค.) — มีโมเมนตัมสัญญากลาโหมจริง แต่ catalyst เป็นประเภท Tier-2 laggard และมีความเสี่ยงการดำเนินงานจาก M&A median ถึงวัน catalyst ของ turbo -13.7% (n=19) — เข้าที่ Entry 2 ($3.10-3.35) เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ turbo -13.7% (n=19)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "โซนย่อก่อนงบ — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ย่อลึก — เฉพาะเมื่อ thesis ยังอยู่",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — Q3 ยืนยันเป้าและ backlog ที่มีงบเติบโต re-rate ไป ~$5.58 กรอบ 3-6 เดือน"
+        },
+        "tp2": {
+          "note": "Bull — สัญญา IAI/DoW สำหรับโดรนพลีชีพยืนยันพร้อมมูลค่า ~$8.10"
+        },
+        "tp3": {
+          "note": "Moon — Palladyne Defense เติบโตเป็นผู้ผลิตในโครงการ program-of-record ~$14.40 ใกล้เป้า Northland $15 thesis 12-24 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-28% — กว้างกว่า medianMAE ของ partnership_win (-25.9%, n=16)",
+          "hardNote": "-45% — โซน thesis พัง / เพิ่มทุน",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "ต่ำกว่าเป้า 5:1 ของ turbo — จึงคุมขนาด position ให้เล็ก"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "งบ Q3 2026",
+          "note": "เป้ารายได้ $24-27M เทียบการเผาเงิน $32-36M; บัญชีการซื้อกิจการ"
+        }
+      ]
+    }
+  }
+}
