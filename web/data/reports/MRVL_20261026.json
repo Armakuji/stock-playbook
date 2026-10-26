@@ -1,0 +1,277 @@
+{
+  "ticker": "MRVL",
+  "companyName": "Marvell Technology, Inc.",
+  "companyDescription": "AI data-center semis · custom XPU silicon for hyperscalers, electro-optics and Ethernet · FY27 revenue guide ~$12B, FY28 target ~$18B",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-10-26T00:00:00.000Z",
+  "price": 225.8,
+  "priceChange": -1.19,
+  "priceNote": "Live $225.80 (-1.2%) on Oct 26, 2026 — 52-week range $70.69-$329.88; ~15% below early-October levels and near the ~$216.62 post-Q2 low. Market cap ~$198B.",
+  "marketCap": "~$198B",
+  "sector": "Technology / Semiconductors",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 0,
+  "summary": "Marvell guided Q3 FY27 to ~$3.15B revenue / ~$1.10 non-GAAP EPS, has FY27 at ~$12B and an FY28 target of ~$18B, and custom XPU revenue (doubled in FY26) is guided to double again in FY28. The stock has given back ~15% in the October AI-semis selloff to near its post-Q2 low. Consensus $341.44 (+51%; clears the gate). Self-check: at ~$198B this is large-cap, not mega; +20% just retraces to the ~$267 pre-Investor-Day level. earnings_beat has no tier-2 penalty. Written against the core Base optimism bias of +23.7pp (realized 14d P75 +6.6%, P90 +11.7%). Base +18% assumes a ~2-3 month horizon through the ~Dec 1 print. This pick's catalyst is ~36 days out, well outside the 14d North Star window, so a 14d backtest miss would be a measurement-horizon artifact. แนะนำ 5-10% ของ portfolio — Core Holding.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 FY27 earnings",
+      "description": "Expected ~Dec 1 (aggregator; Marvell historically reports in the first days of December). Company guided Q3 revenue ~$3.15B, non-GAAP EPS ~$1.10, gross margin ~53.4%. The read is custom-XPU ramp and FY28 ~$18B visibility.",
+      "urgencyLabel": "~5 WEEKS",
+      "dateBadge": "~Dec 1, 2026",
+      "catalystDate": "2026-12-01",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Sell-the-news pattern: fell 8-11.6% after a beat-and-raise in Aug 2026.",
+    "Customer concentration in a few hyperscalers' custom-silicon programs — a single program loss or delay hits the FY28 target.",
+    "~40x forward P/E leaves the multiple exposed to rate and AI-capex sentiment shocks.",
+    "Earnings date is an estimate (~Dec 1), not yet company-confirmed.",
+    "Competitive pressure in custom silicon (Broadcom, in-house hyperscaler teams)."
+  ],
+  "estimateDates": [
+    {
+      "event": "Q3 FY27 earnings",
+      "dateRange": "~Dec 1, 2026",
+      "note": "Guide ~$3.15B rev / ~$1.10 EPS",
+      "est": "~$3.15B",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -20,
+      "price": 180.64
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 18,
+      "price": 266.44
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 35,
+      "price": 304.83
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 51,
+      "price": 340.96
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus (46 analysts, stockanalysis.com)",
+      "target": 341.44,
+      "rating": "Strong Buy"
+    },
+    {
+      "firm": "Oppenheimer",
+      "target": 325,
+      "rating": "Outperform"
+    },
+    {
+      "firm": "Needham",
+      "target": 300,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Rosenblatt",
+      "target": 300,
+      "rating": "Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds at 3.75-4.00% after the surprise Sep 16, 2026 hike (first since 2023). The Oct 27-28 FOMC is priced ~93% hold / ~7% +25bp as of Oct 25 — but hike odds briefly spiked to ~44% after the hot Sep CPI print on Oct 14, so the path stays two-sided.",
+    "inflationNote": "September CPI +0.6% m/m, 3.7% y/y headline; core +0.3% m/m, 2.6% y/y — both above consensus. Headline re-acceleration keeps a further 2026 hike live.",
+    "sectorImpact": "Profitable AI-semis leader, but at ~40x forward earnings it re-rates with real yields and AI-capex sentiment (October's selloff hit it ~15%).",
+    "summary": "MEDIUM — the Oct 28 FOMC is priced ~93% hold, but September CPI ran hot (3.7% headline) and a further 2026 hike is still live. October's growth/AI-infra selloff was largely a rates trade, so the decision and the dot path matter directly for this name's multiple."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 225.8,
+        "note": "Current price — starter only; not preferred (core at-catalyst median -6.9%, n=54)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 205,
+        "rangeMax": 215,
+        "note": "Near the post-Q2 low (~$216.62) — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 190,
+        "note": "Deep dip — thesis-intact only",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 266.44,
+      "pct": 18,
+      "note": "Base — Q3 in line or above the ~$3.15B guide with FY28 reaffirmed; back to ~$266 (pre-Investor-Day level). Horizon ~2-3 months."
+    },
+    "tp2": {
+      "price": 304.83,
+      "pct": 35,
+      "note": "Bull — FY28 target raised; ~$305, toward the $300-325 named-firm targets."
+    },
+    "tp3": {
+      "price": 340.96,
+      "pct": 51,
+      "note": "Moon — consensus ~$341 on a sustained custom-XPU ramp. 12-month thesis.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 198.7,
+      "tightPct": -12,
+      "tightNote": "-12% — wider than the core earnings_beat medianMAE (-9.6%, n=42).",
+      "hard": 176.12,
+      "hardPct": -22,
+      "hardNote": "-22% — breaks the post-Q2 base decisively; the custom-silicon thesis is being questioned.",
+      "riskReward": "2.9 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Acceptable ✅ — clears the 2:1 core floor"
+    },
+    "verdict": "BUY (Core Holding) — profitable AI-semis franchise near its post-Q2 low with consensus +51%. The measured core median at-catalyst return is -6.9% with 74% of picks underwater at their event (n=54), so Entry 2 ($205-215) is preferred; Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "No run-up yet: MRVL is down from ~$267 before the Oct 6 Investor Day to $225.80 amid the October AI-semis selloff — near the ~$216.62 post-Q2 low.",
+    "preRunupTiming": "Last 2 weeks before ~Dec 1",
+    "preRunupPct": "-15% since early October",
+    "postWin": {
+      "avgPct": 15.5,
+      "range": "+15.5%",
+      "note": "CRWV's Aug 2026 +15.5% on an operating-leverage beat — the same AI-infra cohort's upside template.",
+      "exampleDate": "Aug 2026"
+    },
+    "postLose": {
+      "avgPct": -10,
+      "range": "-8% to -11.6%",
+      "note": "MRVL's own Aug 28, 2026 reaction: -8% intraday to -11.6% after a beat-and-raise (FY27 ~$12B, FY28 ~$18B).",
+      "exampleDate": "Aug 2026"
+    },
+    "spotSizing": {
+      "pct": 8,
+      "reason": "8%. Large-cap quality with real earnings (forward P/E ~40), earnings_beat bucket without tier-2 penalty (n=42). Sizing reflects MRVL's history of selling off on good prints (-10% in Aug)."
+    },
+    "stopPreCatalyst": {
+      "pct": -12,
+      "price": 198.7,
+      "note": "Wider than the earnings_beat medianMAE (-9.6%, n=42). A close well under ~$200 before ~Dec 1 means AI-semis de-rating is still running."
+    },
+    "stopPostCatalyst": {
+      "pct": -12,
+      "note": "If Q3 guides below ~$3.15B or walks back FY28 ~$18B, exit."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "MRVL",
+      "event": "Q2 FY27 earnings — beat + raised FY27 to ~$12B, FY28 ~$18B",
+      "date": "Aug 2026",
+      "movePct": -10,
+      "days": 1,
+      "outcome": "bad",
+      "note": "A beat-and-raise that still fell ~10% because positioning wanted more. The sell-the-news template for crowded AI names."
+    },
+    {
+      "ticker": "CRWV",
+      "event": "Q2 2026 earnings — adj. operating income ~2x guided midpoint, FY guide raised",
+      "date": "Aug 2026",
+      "movePct": 15.5,
+      "days": 1,
+      "outcome": "good",
+      "note": "A margin beat (not just revenue) re-rated an AI-infra name +15.5% even in a debt-skeptical tape. The upside template for a clean beat-and-raise."
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/mrvl/",
+    "https://finviz.com/news/386694/marvell-mrvl-stock-falls-10-after-q2-earnings-buy-the-dip",
+    "https://www.shacknews.com/article/150523/marvell-mrvl-q2-fy27-earnings-results",
+    "https://247wallst.com/investing/2026/10/14/the-real-ai-opportunity-at-marvell-is-just-starting-to-emerge/",
+    "https://tikr.com/blog/marvell-stock-has-doubled-in-2026-analysts-are-still-playing-catch-up",
+    "https://www.indmoney.com/blog/us-stocks/crwv-stock-jumps-coreweave-q2-earnings-analysis",
+    "https://www.chase.com/personal/investments/learning-and-insights/article/will-the-federal-reserve-hike-rates-at-october-2026-fomc-meeting",
+    "https://defirate.com/prediction-markets/fed-decision-odds/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Marvell ให้เป้า Q3 FY27 รายได้ ~$3.15B / EPS non-GAAP ~$1.10 เป้า FY27 ~$12B และ FY28 ~$18B ส่วนรายได้ custom XPU (โตเท่าตัวใน FY26) ตั้งเป้าโตเท่าตัวอีกใน FY28 หุ้นคืนกำไร ~15% ในแรงขายชิป AI เดือน ต.ค. จนใกล้จุดต่ำหลังงบ Q2 เป้าเฉลี่ย $341.44 (+51% ผ่านเกณฑ์) ตรวจตัวเอง: ที่ ~$198B เป็น large-cap ไม่ใช่ mega และ +20% แค่กลับไปที่ ~$267 ระดับก่อน Investor Day earnings_beat ไม่โดน tier-2 ลงโทษ เขียนโดยคำนึงถึง optimism bias ของ Base ใน core +23.7pp (P75 ที่เกิดจริงใน 14 วัน +6.6%, P90 +11.7%) Base +18% สมมติกรอบ ~2-3 เดือนผ่านงบ ~1 ธ.ค. catalyst ห่าง ~36 วัน เลยกรอบ North Star 14 วันมาก ถ้า backtest 14 วันพลาดจะเป็นผลจากกรอบการวัด แนะนำ 5-10% ของ portfolio — Core Holding",
+      "priceNote": "ราคาสด $225.80 (-1.2%) 26 ต.ค. 2026 — ช่วง 52 สัปดาห์ $70.69-$329.88 ต่ำกว่าระดับต้น ต.ค. ~15% ใกล้จุดต่ำหลังงบ Q2 ~$216.62 Market cap ~$198B",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        {
+          "name": "งบ Q3 FY27",
+          "description": "คาด ~1 ธ.ค. (aggregator; Marvell มักประกาศช่วงต้นเดือน ธ.ค.) บริษัทให้เป้ารายได้ Q3 ~$3.15B, EPS non-GAAP ~$1.10, gross margin ~53.4% ดูการเร่งของ custom XPU และความชัดเจนของเป้า FY28 ~$18B"
+        }
+      ],
+      "risks": [
+        "รูปแบบ sell-the-news: ร่วง 8-11.6% หลังงบดีและปรับเป้าขึ้นเมื่อ ส.ค. 2026",
+        "พึ่งโครงการ custom silicon ของ hyperscaler ไม่กี่ราย — ถ้าเสียหรือเลื่อนโครงการเดียวกระทบเป้า FY28",
+        "P/E ล่วงหน้า ~40 เท่า multiple อ่อนไหวต่อดอกเบี้ยและ sentiment AI capex",
+        "วันงบเป็นการประมาณ (~1 ธ.ค.) ยังไม่ยืนยันจากบริษัท",
+        "การแข่งขันใน custom silicon (Broadcom, ทีมภายในของ hyperscaler)"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ยนโยบาย 3.75-4.00% หลัง Fed ขึ้นดอกเบี้ยแบบเซอร์ไพรส์เมื่อ 16 ก.ย. 2026 (ครั้งแรกตั้งแต่ 2023) ประชุม FOMC 27-28 ต.ค. ตลาดให้น้ำหนักคงดอกเบี้ย ~93% / ขึ้น 25bp ~7% (ณ 25 ต.ค.) แต่โอกาสขึ้นดอกเบี้ยเคยพุ่งถึง ~44% หลัง CPI ก.ย. ออกมาร้อนเมื่อ 14 ต.ค. ทิศทางจึงยังเสี่ยงสองด้าน",
+        "inflationNote": "CPI ก.ย. +0.6% m/m, 3.7% y/y ส่วน core +0.3% m/m, 2.6% y/y สูงกว่าคาดทั้งคู่ — เงินเฟ้อ headline เร่งตัวทำให้การขึ้นดอกเบี้ยอีกครั้งในปี 2026 ยังเป็นไปได้",
+        "sectorImpact": "ผู้นำชิป AI ที่มีกำไร แต่ที่ ~40 เท่าของกำไรล่วงหน้า multiple ขยับตาม real yield และ sentiment AI capex (แรงขาย ต.ค. ทำให้ลง ~15%)",
+        "summary": "MEDIUM — ตลาดคาด FOMC 28 ต.ค. คงดอกเบี้ย ~93% แต่ CPI ก.ย. ร้อน (headline 3.7%) และยังอาจขึ้นได้อีกในปี 2026 แรงขายหุ้นเติบโต/AI infra เดือน ต.ค. ส่วนใหญ่มาจากดอกเบี้ย ผลประชุมและ dot plot จึงกระทบ multiple ของหุ้นตัวนี้โดยตรง"
+      },
+      "entryStrategy": {
+        "verdict": "BUY (Core Holding) — ธุรกิจชิป AI ที่มีกำไร ใกล้จุดต่ำหลังงบ Q2 และเป้าเฉลี่ย +51% median ผลตอบแทนถึงวัน catalyst ของ core = -6.9% และ 74% ของหุ้นติดลบ ณ วัน event (n=54) — เข้าที่ Entry 2 ($205-215) เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น ไม่ใช่จุดเข้าหลัก (median ถึงวัน catalyst ของ core -6.9%, n=54)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "ใกล้จุดต่ำหลังงบ Q2 (~$216.62) — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ย่อลึก — เฉพาะเมื่อ thesis ยังอยู่",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — Q3 ตามหรือเกินเป้า ~$3.15B และยืนยัน FY28 กลับไป ~$266 (ระดับก่อน Investor Day) กรอบ ~2-3 เดือน"
+        },
+        "tp2": {
+          "note": "Bull — ปรับเป้า FY28 ขึ้น ~$305 เข้าหาเป้าโบรก $300-325"
+        },
+        "tp3": {
+          "note": "Moon — เป้าเฉลี่ย ~$341 จาก custom XPU ที่เร่งตัวต่อเนื่อง thesis 12 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-12% — กว้างกว่า medianMAE ของ earnings_beat ใน core (-9.6%, n=42)",
+          "hardNote": "-22% — หลุดฐานหลังงบ Q2 ชัดเจน thesis custom silicon ถูกตั้งคำถาม",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "รับได้ ✅ — ผ่านเกณฑ์ขั้นต่ำ 2:1 ของ core"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "งบ Q3 FY27",
+          "note": "เป้า ~$3.15B รายได้ / ~$1.10 EPS"
+        }
+      ]
+    }
+  }
+}

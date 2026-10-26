@@ -1,0 +1,285 @@
+{
+  "ticker": "IQMX",
+  "companyName": "IQM Quantum Computers Oyj",
+  "companyDescription": "Superconducting full-stack quantum computers · Commercial momentum accelerating (Brazil, Japan/Toyo second system, Finland LUMI staged path) but the market keeps selling the stock on each announcement — the persistent sentiment/fundamentals gap from the last report has only deepened",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-10-26T00:00:00.000Z",
+  "price": 8.79,
+  "priceChange": -2.44,
+  "priceNote": "Live $8.79 (-2.4%) at Oct 26, 2026 open — down ~15% from $10.30 at the Sep 29 report, at a fresh 52-week low ($8.74-$15.10). Market cap ~$1.67B on 159.8M shares. Since the Sep 29 reports, this board's small caps fell 21-41% after the Sep 16 hike and the hot Sep CPI (Oct 14). This is a sector/size selloff that SPY-based regime notes don't capture, so drawdowns here say as much about the tape as the thesis.",
+  "marketCap": "~$1.67B",
+  "sector": "Technology / Quantum Computing",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 0,
+  "summary": "REFRESH (prior report Sep 29, 2026): commercial traction keeps building (26 systems sold, €102M+ backlog, Telefónica Madrid, Eldorado Brazil, TTM revenue +91%), and the stock keeps falling: ~15% since Sep 29, to a 52-week low. Q3 earnings on Nov 5 are the dated test of backlog conversion. ⚠️ Tier-2 note: partnership_win is the measured Tier-2 LAGGARD in turbo feedback (medianExcessVsBenchPct -3.8pp vs +2.0pp overall, n=16; 3/16 windows had SPY down >2%), and it is independently the laggard in the core lane too (-1.6 vs +1.4, n=12). IQMX's repeated sell-offs on good news fit that pattern, so sizing sits at 2%. Base cut from +50% to +40% (above the lane's realized 30d P90 of +25.9%; written-Base bias +72.7pp). It assumes 3-6 months of backlog conversion re-rating it toward the ~$12.30 range. Moon trimmed to +200% (to ~$26, above BTIG's $20) because without a government-program win the 3x case is thin. แนะนำ 2% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 30-50%.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 2026 Earnings",
+      "description": "First print since 26 systems sold, a €102M+ backlog, and new Telefónica (Madrid) and Eldorado (Brazil) deployments. The read is backlog conversion vs. the ~$108M TTM loss.",
+      "urgencyLabel": "10 DAYS",
+      "dateBadge": "Nov 5, 2026",
+      "catalystDate": "2026-11-05",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🏛️",
+      "name": "US/EU government quantum contract wave",
+      "description": "The real binary — inclusion in a government quantum-equity or procurement round — passed IQMX over once in May 2026; no confirmed signal since.",
+      "urgencyLabel": "PENDING",
+      "dateBadge": "H2 2026",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "The 'good news doesn't move this stock' pattern keeps repeating: Telefónica and Eldorado deployments coincided with new lows.",
+    "partnership_win is the measured Tier-2 LAGGARD in turbo feedback (medianExcessVsBenchPct -3.8pp vs +2.0pp overall, n=16; 3/16 windows had SPY down >2%), and it is independently the laggard in the core lane too (-1.6 vs +1.4, n=12). Commercial deal flow alone hasn't produced sustained re-rates lane-wide.",
+    "Thin coverage: BTIG Buy $20, TD Cowen Buy, Redburn Neutral $12.88, and no aggregated consensus available.",
+    "SPAC-era warrant/dilution overhang (prior Kreos Capital exercises) remains a live risk.",
+    "The real binary — a US/EU government quantum award — already passed IQMX over once (May 2026), with no confirmed signal since."
+  ],
+  "estimateDates": [
+    {
+      "event": "Q3 2026 earnings",
+      "dateRange": "Nov 5, 2026",
+      "note": "Backlog conversion vs. losses",
+      "est": "TTM rev $39M (+91%)",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -30,
+      "price": 6.15
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 40,
+      "price": 12.31
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 90,
+      "price": 16.7
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 200,
+      "price": 26.37
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "BTIG (Sep 2026 initiation)",
+      "target": 20,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Rothschild & Co Redburn",
+      "target": 12.88,
+      "rating": "Neutral"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds at 3.75-4.00% after the surprise Sep 16, 2026 hike (first since 2023). The Oct 27-28 FOMC is priced ~93% hold / ~7% +25bp as of Oct 25 — but hike odds briefly spiked to ~44% after the hot Sep CPI print on Oct 14, so the path stays two-sided.",
+    "inflationNote": "September CPI +0.6% m/m, 3.7% y/y headline; core +0.3% m/m, 2.6% y/y — both above consensus. Headline re-acceleration keeps a further 2026 hike live.",
+    "sectorImpact": "Quantum hardware at a ~$1.67B cap with ~$108M TTM losses. Rates move the long-duration multiple; the balance sheet isn't the near-term issue.",
+    "summary": "MEDIUM — Oct 28 hold is priced (~93%), but hot CPI keeps a further 2026 hike live. Small, cash-burning names have already absorbed most of this tape's damage, so a hold is mildly supportive and a surprise hike is the main macro tail."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 8.79,
+        "note": "Current price — starter only. Not preferred: turbo at-catalyst median -13.7% (n=19)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 7.8,
+        "rangeMax": 8.4,
+        "note": "Below the $8.74 52-week low, ahead of Q3 — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 7,
+        "note": "Deep dip — thesis-intact only",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 12.31,
+      "pct": 40,
+      "note": "Base — Q3 shows backlog converting and losses narrowing; re-rates to ~$12.30, near Redburn's $12.88. Horizon 3-6 months."
+    },
+    "tp2": {
+      "price": 16.7,
+      "pct": 90,
+      "note": "Bull — a government program win or large sovereign order; ~$16.70."
+    },
+    "tp3": {
+      "price": 26.37,
+      "pct": 200,
+      "note": "Moon — multiple government programs plus rapid system sales; ~$26.40. 12-24 month thesis.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 6.33,
+      "tightPct": -28,
+      "tightNote": "-28% — wider than the turbo partnership_win medianMAE (-25.9%, n=16).",
+      "hard": 4.83,
+      "hardPct": -45,
+      "hardNote": "-45% — thesis-break territory.",
+      "riskReward": "3.2 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Below the 5:1 turbo target — sizing kept small to compensate"
+    },
+    "verdict": "SPECULATIVE · ค่าขนม 2% max (refreshed Oct 26) — real commercial traction at a 52-week low, but a Tier-2 laggard catalyst type that keeps selling the news. Measured turbo at-catalyst median is -13.7% (n=19), so Entry 2 ($7.80-8.40) is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "Falling into the print: IQMX is ~15% below the Sep 29 report, at a fresh 52-week low, and again sold off on deployment news (Telefónica, Eldorado).",
+    "preRunupTiming": "N/A",
+    "preRunupPct": "-15% since Sep 29",
+    "postWin": {
+      "avgPct": 31,
+      "range": "+30% to +33%",
+      "note": "The May 2026 US government quantum equity round sent D-Wave +33%, Rigetti +30%, Infleqtion +31% in a single day — the direct precedent for what a real US government contract win would do for IQMX, since it was excluded from that exact round and remains excluded as of this report.",
+      "exampleDate": "May 2026 (DWAV/RGTI/QUBT sector round)"
+    },
+    "postLose": {
+      "avgPct": -4,
+      "range": "-1.6% to -5.1%",
+      "note": "IQMX's own pattern is now the most relevant downside case — three separate commercial-win announcements in September (LUMI, Toyo, Brazil) each produced same-day declines of -1.6% to -5.1%, confirming the persistent sentiment discount flagged last report is deepening, not a one-off.",
+      "exampleDate": "Sep 2026 (three separate IQMX announcement-day declines)"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "2% max. partnership_win is the measured Tier-2 LAGGARD in turbo feedback (medianExcessVsBenchPct -3.8pp vs +2.0pp overall, n=16; 3/16 windows had SPY down >2%), and it is independently the laggard in the core lane too (-1.6 vs +1.4, n=12). IQMX has now sold off on good commercial news repeatedly, which is the laggard pattern in miniature."
+    },
+    "stopPreCatalyst": {
+      "pct": -28,
+      "price": 6.33,
+      "note": "Wider than the partnership_win medianMAE (-25.9%, n=16). Another leg down after Q3 would confirm the sentiment discount is structural."
+    },
+    "stopPostCatalyst": {
+      "pct": -30,
+      "note": "If Q3 shows backlog not converting or a dilutive raise, exit."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "DWAV",
+      "event": "May 2026 US Commerce Dept quantum equity round inclusion",
+      "date": "May 2026",
+      "movePct": 33,
+      "days": 1,
+      "outcome": "good",
+      "note": "The direct precedent for what a real US government quantum award does for a stock in this group — IQMX was excluded from this exact round and remains a candidate for a future one."
+    },
+    {
+      "ticker": "IQMX",
+      "event": "Three commercial wins in one month (LUMI staged path, Toyo second system, Brazil Eldorado deployment) all sold on the news",
+      "date": "Sep 2026",
+      "movePct": -3.9,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Average of three same-company, same-month data points (-1.63%, -5.09%, -4.93%) — the strongest evidence yet that sentiment, not fundamentals, is the binding constraint on this stock right now."
+    },
+    {
+      "ticker": "RGTI",
+      "event": "May 2026 US Commerce Dept quantum equity round inclusion",
+      "date": "May 2026",
+      "movePct": 30,
+      "days": 1,
+      "outcome": "good",
+      "note": "A second name from the same May 2026 government round, reinforcing the size of move a real US award produces in this sector."
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/iqmx/",
+    "https://www.stocktitan.net/news/IQMX/",
+    "https://www.chase.com/personal/investments/learning-and-insights/article/will-the-federal-reserve-hike-rates-at-october-2026-fomc-meeting",
+    "https://defirate.com/prediction-markets/fed-decision-odds/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "REFRESH (รายงานก่อน 29 ก.ย. 2026): แรงส่งเชิงพาณิชย์โตต่อเนื่อง (ขายระบบ 26 เครื่อง backlog เกิน €102M Telefónica มาดริด Eldorado บราซิล รายได้ TTM +91%) แต่หุ้นก็ลงต่อเนื่อง ~15% นับจาก 29 ก.ย. ถึง 52-week low งบ Q3 วันที่ 5 พ.ย. คือการทดสอบการแปลง backlog ⚠️ หมายเหตุ Tier-2: partnership_win เป็น Tier-2 LAGGARD ที่วัดได้ใน turbo feedback (medianExcessVsBenchPct -3.8pp เทียบภาพรวม +2.0pp, n=16; 3/16 ช่วง SPY ลง >2%) และเป็น laggard ใน core lane ด้วยแยกกัน (-1.6 vs +1.4, n=12) การที่ IQMX ถูกขายซ้ำ ๆ เมื่อมีข่าวดีตรงกับรูปแบบนี้ ขนาดจึงอยู่ที่ 2% Base ลดจาก +50% เป็น +40% (สูงกว่า P90 30 วัน +25.9%; bias +72.7pp) โดยสมมติกรอบ 3-6 เดือนที่ backlog แปลงเป็นรายได้และ re-rate ไปราว $12.30 Moon ลดเป็น +200% (~$26 เหนือเป้า BTIG $20) เพราะถ้าไม่ได้สัญญารัฐ เคส 3 เท่าค่อนข้างบาง แนะนำ 2% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 30-50%",
+      "priceNote": "ราคาสด $8.79 (-2.4%) เปิดตลาด 26 ต.ค. 2026 — ลง ~15% จาก $10.30 ณ รายงาน 29 ก.ย. ทำ 52-week low ใหม่ ($8.74-$15.10) Market cap ~$1.67B (159.8M หุ้น) ตั้งแต่รายงาน 29 ก.ย. หุ้นเล็กบนกระดานนี้ร่วง 21-41% หลัง Fed ขึ้นดอกเบี้ย 16 ก.ย. และ CPI ก.ย. ที่ร้อน (14 ต.ค.) เป็นการเทขายตามขนาด/กลุ่มที่ regime note แบบ SPY จับไม่ได้ การร่วงจึงสะท้อนภาวะตลาดพอ ๆ กับตัว thesis",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "งบ Q3 2026",
+          "description": "งบแรกหลังขายระบบได้ 26 เครื่อง backlog เกิน €102M และติดตั้งใหม่ที่ Telefónica (มาดริด) และ Eldorado (บราซิล) ดูการแปลง backlog เทียบขาดทุน TTM ~$108M"
+        },
+        {
+          "name": "สัญญาควอนตัมจากรัฐบาลสหรัฐฯ/ยุโรป",
+          "description": "binary ที่แท้จริง — การได้รับเลือกในรอบลงทุน/จัดซื้อควอนตัมของรัฐ — เคยข้าม IQMX ไปครั้งหนึ่งเมื่อ พ.ค. 2026 ยังไม่มีสัญญาณยืนยันนับจากนั้น"
+        }
+      ],
+      "risks": [
+        "รูปแบบ 'ข่าวดีไม่ขยับหุ้น' เกิดซ้ำ: การติดตั้งที่ Telefónica และ Eldorado มาพร้อมจุดต่ำใหม่",
+        "partnership_win เป็น Tier-2 LAGGARD ที่วัดได้ใน turbo feedback (medianExcessVsBenchPct -3.8pp เทียบภาพรวม +2.0pp, n=16; 3/16 ช่วง SPY ลง >2%) และเป็น laggard ใน core lane ด้วยแยกกัน (-1.6 vs +1.4, n=12) — ดีลเชิงพาณิชย์อย่างเดียวยังไม่ทำให้ re-rate อย่างยั่งยืนทั้ง lane",
+        "นักวิเคราะห์ครอบคลุมน้อย: BTIG Buy $20, TD Cowen Buy, Redburn Neutral $12.88 ไม่มีเป้าเฉลี่ยรวม",
+        "แรงกดดันจาก warrant/dilution ยุค SPAC (การใช้สิทธิของ Kreos Capital ก่อนหน้า) ยังเป็นความเสี่ยง",
+        "binary ที่แท้จริง — สัญญาควอนตัมจากรัฐบาลสหรัฐฯ/ยุโรป — เคยข้าม IQMX ไปแล้วครั้งหนึ่ง (พ.ค. 2026) ยังไม่มีสัญญาณยืนยันนับจากนั้น"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ยนโยบาย 3.75-4.00% หลัง Fed ขึ้นดอกเบี้ยแบบเซอร์ไพรส์เมื่อ 16 ก.ย. 2026 (ครั้งแรกตั้งแต่ 2023) ประชุม FOMC 27-28 ต.ค. ตลาดให้น้ำหนักคงดอกเบี้ย ~93% / ขึ้น 25bp ~7% (ณ 25 ต.ค.) แต่โอกาสขึ้นดอกเบี้ยเคยพุ่งถึง ~44% หลัง CPI ก.ย. ออกมาร้อนเมื่อ 14 ต.ค. ทิศทางจึงยังเสี่ยงสองด้าน",
+        "inflationNote": "CPI ก.ย. +0.6% m/m, 3.7% y/y ส่วน core +0.3% m/m, 2.6% y/y สูงกว่าคาดทั้งคู่ — เงินเฟ้อ headline เร่งตัวทำให้การขึ้นดอกเบี้ยอีกครั้งในปี 2026 ยังเป็นไปได้",
+        "sectorImpact": "ฮาร์ดแวร์ควอนตัมที่ cap ~$1.67B ขาดทุน TTM ~$108M ดอกเบี้ยกระทบ multiple ระยะยาว งบดุลไม่ใช่ประเด็นระยะใกล้",
+        "summary": "MEDIUM — ตลาดคาดคงดอกเบี้ย 28 ต.ค. (~93%) แต่ CPI ร้อนทำให้ยังอาจขึ้นได้อีกในปี 2026 หุ้นเล็กที่เผาเงินรับแรงกระแทกของตลาดรอบนี้ไปมากแล้ว การคงดอกเบี้ยจึงช่วยเล็กน้อย ส่วนการขึ้นแบบเซอร์ไพรส์คือความเสี่ยงหางหลักด้านมหภาค"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · ค่าขนม สูงสุด 2% (refresh 26 ต.ค.) — แรงส่งเชิงพาณิชย์จริงที่ 52-week low แต่ catalyst เป็นประเภท Tier-2 laggard ที่โดนขายเมื่อมีข่าว median ถึงวัน catalyst ของ turbo -13.7% (n=19) — เข้าที่ Entry 2 ($7.80-8.40) เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ turbo -13.7% (n=19)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "ต่ำกว่า 52-week low $8.74 ก่อนงบ Q3 — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ย่อลึก — เฉพาะเมื่อ thesis ยังอยู่",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — Q3 แสดง backlog แปลงเป็นรายได้และขาดทุนแคบลง re-rate ไป ~$12.30 ใกล้เป้า Redburn $12.88 กรอบ 3-6 เดือน"
+        },
+        "tp2": {
+          "note": "Bull — ได้โครงการรัฐหรือออร์เดอร์ใหญ่ระดับประเทศ ~$16.70"
+        },
+        "tp3": {
+          "note": "Moon — ได้หลายโครงการรัฐ + ขายระบบเร่งตัว ~$26.40 thesis 12-24 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-28% — กว้างกว่า medianMAE ของ partnership_win (-25.9%, n=16)",
+          "hardNote": "-45% — โซน thesis พัง",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "ต่ำกว่าเป้า 5:1 ของ turbo — จึงคุมขนาด position ให้เล็ก"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "งบ Q3 2026",
+          "note": "การแปลง backlog เทียบขาดทุน"
+        }
+      ]
+    }
+  }
+}

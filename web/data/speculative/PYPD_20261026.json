@@ -1,0 +1,293 @@
+{
+  "ticker": "PYPD",
+  "companyName": "PolyPid Ltd.",
+  "companyDescription": "Hospital anti-infective · D-PLEX100, a prolonged-release local doxycycline implant to prevent surgical-site infections after abdominal colorectal surgery. Priority-review PDUFA Nov 28; US rights licensed to Azurity ($30M received, ~$290M milestones + mid-teens to mid-20s royalties)",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-10-26T00:00:00.000Z",
+  "price": 5.26,
+  "priceChange": 0.19,
+  "priceNote": "Live $5.26 (+0.2%) at Oct 26, 2026 open — near the $5.73 52-week high (low $3.14). Market cap ~$107M on 20.3M shares. $6.6M cash at Jun 30 before the Azurity $15M + $15M payments; the company guides funding into 2028.",
+  "marketCap": "~$107M",
+  "sector": "Healthcare / Specialty Pharma",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 0,
+  "summary": "D-PLEX100 has a priority-review PDUFA on Nov 28, 2026 for preventing surgical-site infections in colorectal surgery. US rights are already licensed to Azurity ($30M received, ~$290M of milestones, mid-teens to mid-20s royalties) and EU rights were regained, so approval converts a ~$107M company into a royalty stream with a funded launch partner. fda_decision is a Tier-2 LEADER (+9.3pp vs +2.0pp overall, n=10). Survival check passes: the company guides funding into 2028 with Azurity payments, so no flag. The weak spots are that it trades near its highs into the event and has the thinnest Moon in this run (+210%), which is why it ranks 5th. Base (+40%) exceeds the lane's realized 30-day P90 (+25.9%; written-Base bias +72.7pp). It assumes a 3-6 month horizon of approval plus a milestone-driven re-rating toward ~$7.40. แนะนำ 2-3% ของ portfolio เท่านั้น — ถ้าโดน CRL ลงได้ 50-80%.",
+  "catalysts": [
+    {
+      "icon": "💊",
+      "name": "D-PLEX100 NDA — PDUFA (priority review)",
+      "description": "FDA decision on prevention of surgical-site infections in abdominal colorectal surgery. Approval should trigger Azurity regulatory milestones and an early-2027 US launch by Azurity.",
+      "urgencyLabel": "~5 WEEKS",
+      "dateBadge": "Nov 28, 2026",
+      "catalystDate": "2026-11-28",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🎤",
+      "name": "Investor Day",
+      "description": "Company investor day — likely launch-readiness, EU strategy (rights regained), and pipeline framing ahead of the PDUFA.",
+      "urgencyLabel": "2 DAYS",
+      "dateBadge": "Oct 28, 2026",
+      "catalystDate": "2026-10-28",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Priced for approval: PYPD is up ~67% off its low and near its 52-week high into the PDUFA. A CRL from this level likely looks like Outlook (-80%), not Capricor (-33%).",
+    "Thin cash on the balance sheet ($6.6M at Jun 30) before Azurity payments. The 'into 2028' funding guide assumes milestones arrive on schedule.",
+    "Economics run through a partner: PolyPid's upside is milestones and royalties, not full product revenue. Azurity's launch execution is outside its control.",
+    "Consensus targets were trimmed (Craig-Hallum $15 → $13), and the $11.75 average implies only ~123% upside, so the 3x Moon needs EU commercialization and label expansion too.",
+    "The hospital surgical-site-infection market is conservative. Formulary adoption could be slow even after approval."
+  ],
+  "estimateDates": [
+    {
+      "event": "D-PLEX100 PDUFA",
+      "dateRange": "Nov 28, 2026",
+      "note": "Approval → Azurity milestones + early-2027 US launch",
+      "est": "priority review",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -50,
+      "price": 2.63
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 40,
+      "price": 7.36
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 100,
+      "price": 10.52
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 210,
+      "price": 16.31
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus (4 analysts, stockanalysis.com) — range $9-$14",
+      "target": 11.75,
+      "rating": "Strong Buy"
+    },
+    {
+      "firm": "Craig-Hallum (lowered from $15)",
+      "target": 13,
+      "rating": "Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds at 3.75-4.00% after the surprise Sep 16, 2026 hike (first since 2023). The Oct 27-28 FOMC is priced ~93% hold / ~7% +25bp as of Oct 25 — but hike odds briefly spiked to ~44% after the hot Sep CPI print on Oct 14, so the path stays two-sided.",
+    "inflationNote": "September CPI +0.6% m/m, 3.7% y/y headline; core +0.3% m/m, 2.6% y/y — both above consensus. Headline re-acceleration keeps a further 2026 hike live.",
+    "sectorImpact": "Micro-cap, but partner-funded (Azurity paid $30M; ~$290M of milestones remain). Rate risk shows up mainly as small-cap risk appetite into the PDUFA, not as a forced raise.",
+    "summary": "MEDIUM — the Oct 28 hold is priced. The company's funding is partner-backed, so macro mainly affects the multiple the market pays after approval."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 5.26,
+        "note": "Current price, near the $5.73 52-week high — starter only. Not preferred: turbo at-catalyst median -13.7% (n=19)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 4.6,
+        "rangeMax": 4.9,
+        "note": "Post-investor-day / pre-PDUFA dip zone — preferred",
+        "timing": "If dips before Nov 28",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 4,
+        "note": "Deep dip — prior consolidation zone",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 7.36,
+      "pct": 39.9,
+      "note": "Base — approved on time; Azurity regulatory milestone paid; re-rates to ~$7.40. Horizon 3-6 months."
+    },
+    "tp2": {
+      "price": 10.52,
+      "pct": 100,
+      "note": "Bull — approval plus a clean label and visible early-2027 launch plan; ~$10.50, near the $11.75 consensus."
+    },
+    "tp3": {
+      "price": 16.31,
+      "pct": 210.1,
+      "note": "Moon — US launch traction plus an EU partner and label expansion (other surgery types); ~$16.30. 12-24 month thesis.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 4.21,
+      "tightPct": -20,
+      "tightNote": "-20% — wider than the turbo fda_decision medianMAE (-18.4%, n=10), and a level the stock should not revisit before Nov 28 if approval odds are intact.",
+      "hard": 2.89,
+      "hardPct": -45,
+      "hardNote": "-45% — CRL territory.",
+      "riskReward": "5.0 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Asymmetric ✅ — clears the 5:1 turbo target"
+    },
+    "verdict": "SPECULATIVE · ค่าขนม 2-3% max — a de-risked, partner-funded PDUFA (Nov 28) on a Tier-2 leader catalyst type, but priced near its highs with the smallest Moon in the run. Measured turbo at-catalyst median is -13.7% (n=19), so Entry 2 ($4.60-4.90) is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "Already running: PYPD sits near its $5.73 52-week high (+67% off the $3.14 low) into a priority-review PDUFA, with an investor day two days out. Some of the approval is priced in.",
+    "preRunupTiming": "Ongoing into Nov 28",
+    "preRunupPct": "+67% off the 52-week low",
+    "postWin": {
+      "avgPct": 148,
+      "range": "+148% over ~6 months (single precedent)",
+      "note": "PharmaTher's six-month +148% after its Aug 2025 ketamine approval is the only clean micro-cap approval-then-license precedent found. PYPD has already licensed US rights, so the post-approval leg comes through milestones and royalties rather than a fresh deal.",
+      "exampleDate": "Aug 2025"
+    },
+    "postLose": {
+      "avgPct": -56,
+      "range": "-33% to -80%",
+      "note": "Average of the Capricor (-33%, Jul 2025) and Outlook (-80%, Dec 2025) CRL reactions. Because PYPD is trading near its highs into the date, a CRL would likely land toward the steep end.",
+      "exampleDate": "Jul 2025 (CAPR) / Dec 2025 (OTLK)"
+    },
+    "spotSizing": {
+      "pct": 2.5,
+      "reason": "2.5%. The fda_decision bucket is a Tier-2 LEADER (+9.3pp vs +2.0pp, n=10). Funding is adequate (company guides into 2028 including Azurity payments). But the stock is near its highs into the event, the Moon is the thinnest of the five (+210%), and the lane scoreboard is weak (hitRate 4.9%, n=41)."
+    },
+    "stopPreCatalyst": {
+      "pct": -20,
+      "price": 4.21,
+      "note": "Wider than the fda_decision medianMAE (-18.4%, n=10). A drop below ~$4.21 before Nov 28 suggests investor-day disappointment or a review issue."
+    },
+    "stopPostCatalyst": {
+      "pct": -30,
+      "note": "If FDA issues a CRL, exit on day 1. The partner economics only exist with an approved label."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "PHRM.CN",
+      "event": "FDA approval of KETARx (ketamine) then US-rights sale",
+      "date": "Aug 2025",
+      "movePct": 148,
+      "days": 180,
+      "outcome": "good",
+      "note": "Approval-then-monetize template at micro-cap scale. PYPD has already done the licensing step (Azurity), so its upside depends on milestone and royalty realization."
+    },
+    {
+      "ticker": "CAPR",
+      "event": "Complete Response Letter for deramiocel BLA",
+      "date": "Jul 2025",
+      "movePct": -33,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Milder CRL outcome. Relevant if the FDA issue is a fixable label/data request."
+    },
+    {
+      "ticker": "OTLK",
+      "event": "Complete Response Letter for ONS-5010 BLA (CMC + evidence)",
+      "date": "Dec 2025",
+      "movePct": -80,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Steep CRL outcome for a company priced for approval. PYPD trading near its highs into Nov 28 raises the risk of this shape."
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/pypd/",
+    "https://www.nasdaq.com/articles/polypid-advances-d-plex100-fda-grants-priority-review",
+    "https://www.sec.gov/Archives/edgar/data/0001611842/000121390026088040/ea030152801ex99-1.htm",
+    "https://investors.polypid.com/news-releases/news-release-details/polypid-provides-corporate-update-and-reports-second-quarter-3",
+    "https://www.marketbeat.com/instant-alerts/polypid-q2-earnings-call-highlights-2026-08-12/",
+    "https://www.tipranks.com/news/the-fly/polypid-price-target-lowered-to-13-from-15-at-craig-hallum-thefly",
+    "https://healingmaps.com/pharmather-achieves-historic-ketamine-fda-approval-after-third-attempt/",
+    "https://seekingalpha.com/news/4536122-outlook-therapeutics-receives-crl--ressubmitted-bla--wet-amd-asset",
+    "https://secure.businesswire.com/news/home/20250825847686/en/CAPR-INVESTORS-Kirby-McInerney-LLP-Reminds-Capricor-Therapeutics-Inc.-Investors-of-Important-Deadline-and-Encourages-Investors-to-Contact-the-Firm",
+    "https://www.chase.com/personal/investments/learning-and-insights/article/will-the-federal-reserve-hike-rates-at-october-2026-fomc-meeting",
+    "https://defirate.com/prediction-markets/fed-decision-odds/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "D-PLEX100 มีวัน PDUFA แบบ priority review 28 พ.ย. 2026 สำหรับป้องกันการติดเชื้อแผลผ่าตัดลำไส้ใหญ่ สิทธิ์ในสหรัฐฯ ไลเซนส์ให้ Azurity แล้ว (รับแล้ว $30M, milestone ~$290M, royalty กลางสิบถึงกลางยี่สิบ%) และได้สิทธิ์ยุโรปคืน การอนุมัติจะเปลี่ยนบริษัทมูลค่า ~$107M ให้มีรายได้ royalty และพันธมิตรที่จ่ายค่าเปิดตัว fda_decision เป็น Tier-2 LEADER (+9.3pp vs +2.0pp, n=10) ผ่านเกณฑ์ survival: บริษัทระบุมีเงินถึงปี 2028 รวมเงิน Azurity จุดอ่อนคือเทรดใกล้จุดสูงก่อน event และ Moon บางที่สุดในรอบนี้ (+210%) จึงอยู่อันดับ 5 Base (+40%) สูงกว่า P90 ที่เกิดจริง (+25.9%; bias +72.7pp) โดยสมมติกรอบ 3-6 เดือน (อนุมัติ + milestone) re-rate ไป ~$7.40 แนะนำ 2-3% ของ portfolio เท่านั้น — ถ้าโดน CRL ลงได้ 50-80%",
+      "priceNote": "ราคาสด $5.26 (+0.2%) เปิดตลาด 26 ต.ค. 2026 — ใกล้ 52-week high $5.73 (ต่ำสุด $3.14) Market cap ~$107M (20.3M หุ้น) เงินสด $6.6M ณ 30 มิ.ย. ก่อนรับเงิน Azurity $15M + $15M บริษัทระบุมีเงินถึงปี 2028",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "NDA ของ D-PLEX100 — วัน PDUFA (priority review)",
+          "description": "FDA ตัดสินยาป้องกันการติดเชื้อแผลผ่าตัดลำไส้ใหญ่ ถ้าอนุมัติจะได้ milestone จาก Azurity และ Azurity จะเปิดตัวในสหรัฐฯ ต้นปี 2027"
+        },
+        {
+          "name": "Investor Day",
+          "description": "งานพบนักลงทุน — น่าจะพูดถึงความพร้อมเปิดตัว กลยุทธ์ยุโรป (ได้สิทธิ์คืน) และ pipeline ก่อน PDUFA"
+        }
+      ],
+      "risks": [
+        "ราคาสะท้อนการอนุมัติแล้ว: PYPD ขึ้น ~67% จากจุดต่ำและอยู่ใกล้ 52-week high ก่อน PDUFA ถ้าโดน CRL จากระดับนี้น่าจะเหมือน Outlook (-80%) มากกว่า Capricor (-33%)",
+        "เงินสดในงบบาง ($6.6M ณ 30 มิ.ย.) ก่อนรับเงิน Azurity การบอกว่ามีเงินถึงปี 2028 สมมติว่า milestone มาตามกำหนด",
+        "รายได้ผ่านพันธมิตร: upside ของ PolyPid คือ milestone + royalty ไม่ใช่รายได้เต็มของยา การเปิดตัวของ Azurity อยู่นอกการควบคุม",
+        "เป้านักวิเคราะห์ถูกปรับลง (Craig-Hallum $15 → $13) เป้าเฉลี่ย $11.75 = upside ~123% เคส Moon 3 เท่าจึงต้องอาศัยตลาดยุโรปและการขยายข้อบ่งใช้",
+        "ตลาดยาป้องกันการติดเชื้อในโรงพยาบาลค่อนข้างอนุรักษ์นิยม การเข้า formulary อาจช้าแม้ได้รับอนุมัติ"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ยนโยบาย 3.75-4.00% หลัง Fed ขึ้นดอกเบี้ยแบบเซอร์ไพรส์เมื่อ 16 ก.ย. 2026 (ครั้งแรกตั้งแต่ 2023) ประชุม FOMC 27-28 ต.ค. ตลาดให้น้ำหนักคงดอกเบี้ย ~93% / ขึ้น 25bp ~7% (ณ 25 ต.ค.) แต่โอกาสขึ้นดอกเบี้ยเคยพุ่งถึง ~44% หลัง CPI ก.ย. ออกมาร้อนเมื่อ 14 ต.ค. ทิศทางจึงยังเสี่ยงสองด้าน",
+        "inflationNote": "CPI ก.ย. +0.6% m/m, 3.7% y/y ส่วน core +0.3% m/m, 2.6% y/y สูงกว่าคาดทั้งคู่ — เงินเฟ้อ headline เร่งตัวทำให้การขึ้นดอกเบี้ยอีกครั้งในปี 2026 ยังเป็นไปได้",
+        "sectorImpact": "ไมโครแคป แต่มีพันธมิตรให้ทุน (Azurity จ่ายแล้ว $30M เหลือ milestone ~$290M) ความเสี่ยงดอกเบี้ยมาในรูป risk appetite ของ small cap ก่อน PDUFA มากกว่าการถูกบังคับเพิ่มทุน",
+        "summary": "MEDIUM — ตลาดคาดคงดอกเบี้ย 28 ต.ค. เงินทุนบริษัทมีพันธมิตรหนุน มหภาคจึงกระทบ multiple ที่ตลาดให้หลังอนุมัติเป็นหลัก"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · ค่าขนม สูงสุด 2-3% — PDUFA (28 พ.ย.) ที่ลดความเสี่ยงแล้วและมีพันธมิตรให้ทุน บน catalyst ประเภท Tier-2 leader แต่ราคาใกล้จุดสูงและ Moon เล็กที่สุดในรอบนี้ median ถึงวัน catalyst ของ turbo -13.7% (n=19) — เข้าที่ Entry 2 ($4.60-4.90) เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน ใกล้ 52-week high $5.73 — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ turbo -13.7% (n=19)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "โซนย่อหลัง investor day / ก่อน PDUFA — จุดเข้าหลัก",
+            "timing": "ถ้าย่อก่อน 28 พ.ย."
+          },
+          {
+            "note": "ย่อลึก — โซนพักตัวเดิม",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — อนุมัติตามกำหนด ได้ milestone จาก Azurity re-rate ไป ~$7.40 กรอบ 3-6 เดือน"
+        },
+        "tp2": {
+          "note": "Bull — อนุมัติ + ฉลากดี + แผนเปิดตัวต้นปี 2027 ชัดเจน ~$10.50 ใกล้เป้าเฉลี่ย $11.75"
+        },
+        "tp3": {
+          "note": "Moon — เปิดตัวในสหรัฐฯ ติดตลาด + ได้พันธมิตรยุโรป + ขยายข้อบ่งใช้ (การผ่าตัดอื่น) ~$16.30 thesis 12-24 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-20% — กว้างกว่า medianMAE ของ fda_decision (-18.4%, n=10) และเป็นระดับที่ไม่ควรกลับมาก่อน 28 พ.ย. ถ้าโอกาสอนุมัติยังดี",
+          "hardNote": "-45% — โซน CRL",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "อสมมาตร ✅ — ผ่านเป้า 5:1 ของ turbo"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "PDUFA ของ D-PLEX100",
+          "note": "อนุมัติ → milestone จาก Azurity + เปิดตัวในสหรัฐฯ ต้นปี 2027"
+        }
+      ]
+    }
+  }
+}

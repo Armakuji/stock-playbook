@@ -1,0 +1,285 @@
+{
+  "ticker": "ABOS",
+  "companyName": "Acumen Pharmaceuticals, Inc.",
+  "companyDescription": "Alzheimer's · Sabirnetug (ACU193), a monoclonal antibody that targets toxic soluble amyloid-beta oligomers rather than plaque. The 542-patient Phase 2 ALTITUDE-AD reads out Nov 2026; subcutaneous version with Halozyme; JCR brain-shuttle program",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-10-26T00:00:00.000Z",
+  "price": 2.09,
+  "priceChange": 5.56,
+  "priceNote": "Live $2.09 (+5.6%) at Oct 26, 2026 open, the day Q3 results reaffirmed November topline timing. 52-week range $1.50-$3.60. Market cap ~$151M on 72.3M shares; Sep 30 cash $78.6M is ~$1.09/share (~52% of price).",
+  "marketCap": "~$151M",
+  "sector": "Healthcare / Neurology Biotech",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 0,
+  "summary": "ALTITUDE-AD — a 542-patient Phase 2 of the oligomer-selective antibody sabirnetug in early Alzheimer's — reads out in November 2026. This is the purest binary on the board. Success (~30% iADRS slowing, management's bar) would make ABOS a credible partner asset in a market where lecanemab and donanemab already validated the amyloid pathway. ⚠️ SURVIVAL: cash of $78.6M only funds operations into early 2027, and the company has an S-3 shelf/ATM in place. It earns a top-5 slot anyway because the readout lands before cash runs out, and ~52% of the market cap is cash. A positive result would likely be followed by a raise from strength, not distress. The phase3_readout bucket has n=1 in turbo feedback (context only). Base (+45%) exceeds the lane's realized 30-day P90 (+25.9%; written-Base bias +72.7pp). It assumes an 'encouraging but sub-30%' topline within ~1-3 months that re-tests the $3.03-3.60 zone. แนะนำ 2% ของ portfolio เท่านั้น — ถ้าผลไม่ผ่าน ลงได้ 60-80%.",
+  "catalysts": [
+    {
+      "icon": "🧠",
+      "name": "ALTITUDE-AD Phase 2 topline (sabirnetug)",
+      "description": "542-patient, placebo-controlled, every-4-week IV study in early Alzheimer's, testing two doses. Management calls ~30% slowing on iADRS a clear success threshold. Exact day not announced; company guides November 2026.",
+      "urgencyLabel": "~3-5 WEEKS",
+      "dateBadge": "Nov 2026",
+      "catalystDate": "2026-11-15",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🧪",
+      "name": "Enhanced Brain Delivery IND (JCR partnership)",
+      "description": "Brain-shuttle version of the oligomer antibody. IND targeted mid-2027 — optionality only.",
+      "urgencyLabel": "LATER",
+      "dateBadge": "Mid 2027",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "⚠️ SURVIVAL: Sep 30, 2026 cash $78.6M funds operations only 'into early 2027' (under 12 months) on ~$25M quarterly net loss, with an active S-3 shelf and ATM program. Any outcome is likely followed by a financing; after a miss it would be deeply dilutive.",
+    "True binary: the Athira precedent (-72% after hours, -81% in three days) is the realistic failure template, and cash/share (~$1.09) is only a partial floor once burn is counted.",
+    "Phase 2 primary endpoint risk: a statistically 'positive' but clinically modest effect (well under 30% iADRS slowing) could still sell off, as Compass Pathways did on a narrow Phase 3 win.",
+    "Commercial overhang: even on success, sabirnetug enters a market where Leqembi and Kisunla already exist and uptake has been slower than hoped. The partnering value depends on a clear safety/ARIA edge.",
+    "Exact topline date not disclosed ('November 2026'), so time-decay and pre-event dilution timing are both uncertain."
+  ],
+  "estimateDates": [
+    {
+      "event": "ALTITUDE-AD topline",
+      "dateRange": "Nov 2026",
+      "note": "~30% iADRS slowing = management's success bar",
+      "est": "binary",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -65,
+      "price": 0.73
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 45,
+      "price": 3.03
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 165,
+      "price": 5.54
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 380,
+      "price": 10.03
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus (6 analysts, stockanalysis.com) — range $5-$10",
+      "target": 7.6,
+      "rating": "Strong Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "HIGH",
+    "rateOutlook": "Fed funds at 3.75-4.00% after the surprise Sep 16, 2026 hike (first since 2023). The Oct 27-28 FOMC is priced ~93% hold / ~7% +25bp as of Oct 25 — but hike odds briefly spiked to ~44% after the hot Sep CPI print on Oct 14, so the path stays two-sided.",
+    "inflationNote": "September CPI +0.6% m/m, 3.7% y/y headline; core +0.3% m/m, 2.6% y/y — both above consensus. Headline re-acceleration keeps a further 2026 hike live.",
+    "sectorImpact": "A sub-$200M, pre-revenue biotech with under 12 months of cash is maximally exposed to financing conditions. A hawkish surprise compresses the window to raise on good data and deepens the discount on any raise after bad data.",
+    "summary": "HIGH — macro won't decide this binary, but it decides how expensive the next raise is either way. Oct 28 hold is priced; hot CPI keeps hikes alive."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 2.09,
+        "note": "Current price — starter only. Not preferred: turbo at-catalyst median -13.7% (n=19)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 1.75,
+        "rangeMax": 1.9,
+        "note": "Pre-readout dip zone — preferred",
+        "timing": "If dips before topline",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 1.5,
+        "note": "52-week low; still ~38% above cash/share (~$1.09)",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 3.03,
+      "pct": 45,
+      "note": "Base — 'encouraging but sub-30%' data; stock re-tests $3.03 (toward the $3.60 52-week high). Horizon ~1-3 months, not the 30d window."
+    },
+    "tp2": {
+      "price": 5.54,
+      "pct": 165.1,
+      "note": "Bull — hits the ~30% iADRS slowing bar with clean ARIA safety; re-rates toward the $5-$7.60 analyst range."
+    },
+    "tp3": {
+      "price": 10.03,
+      "pct": 379.9,
+      "note": "Moon — clear win plus a big-pharma partnership; re-rates to the top of the $10 analyst range (~$700M cap). Same playbook as the 2021 SAVA move, on real data.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 1.5,
+      "tightPct": -28,
+      "tightNote": "-28% — wider than the turbo lane medianMAE (-24.1%, n=41; phase3_readout bucket n=1, too thin to use). A binary can gap straight through any stop, so this mainly guards against a pre-readout financing.",
+      "hard": 0.94,
+      "hardPct": -55,
+      "hardNote": "-55% — near cash/share. Below here, the market is pricing failure or a distressed raise.",
+      "riskReward": "5.8 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Asymmetric ✅ — clears the 5:1 turbo target"
+    },
+    "verdict": "SPECULATIVE · ค่าขนม 2% max — the purest Alzheimer's binary available (Nov 2026 topline), with a survival flag offset by ~52% of cap in cash. Measured turbo at-catalyst median is -13.7% (n=19), so Entry 2 ($1.75-1.90) is preferred and Entry 1 is a starter only. Size it as an option premium you can lose entirely.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "phase3_readout",
+    "preRunup": "Alzheimer's small caps tend to drift up into readouts and then gap on the data. ABOS is +5.6% today and well off its $1.50 low, but still below its $3.60 high. Note: ALTITUDE-AD is a Phase 2, but at n=542 it is sized like a pivotal study, so it is bucketed with phase3_readout as the closest clinical-readout type.",
+    "preRunupTiming": "2-4 weeks before topline",
+    "preRunupPct": "Not measured — no clean sector average found",
+    "postWin": {
+      "avgPct": 83,
+      "range": "+21% to +145%",
+      "note": "Average of two real Alzheimer's small-cap positive-data moves: Cassava (SAVA) +145% over Feb 2021 on simufilam cognition data, and Cognition Therapeutics (CGTX) +20.8% day-1 on its Jul 2025 Phase 2. The SAVA case was later tainted by data-integrity allegations, so treat it as the sentiment ceiling, not a base rate.",
+      "exampleDate": "Feb 2021 (SAVA) / Jul 2025 (CGTX)"
+    },
+    "postLose": {
+      "avgPct": -72,
+      "range": "-72% to -81%",
+      "note": "Athira (ATHA): LIFT-AD Alzheimer's failure on Sep 3, 2024 — -72% after hours, -81% over three sessions. This is the realistic gap-down template for a failed AD readout at a sub-$200M cap.",
+      "exampleDate": "Sep 2024"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "2% max. A pure binary with a survival flag. The phase3_readout bucket has n=1 in turbo feedback (context only, no tier-2 weight), and the lane-wide scoreboard is weak (hitRate 4.9%, softHit 22%, n=41), so sizing sits at the floor of the band."
+    },
+    "stopPreCatalyst": {
+      "pct": -28,
+      "price": 1.5,
+      "note": "Wider than the lane medianMAE (-24.1%). Pre-readout breaks below ~$1.50 usually mean a raise or a leak. A topline miss will gap through any stop, so position size is the real risk control."
+    },
+    "stopPostCatalyst": {
+      "pct": -40,
+      "note": "If ALTITUDE-AD misses the primary endpoint, exit on day 1 — do not wait for a 'subgroup' story (the Athira pattern)."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "SAVA",
+      "event": "Simufilam Alzheimer's cognition data + end-of-Phase-2 FDA meeting",
+      "date": "Feb 2021",
+      "movePct": 145,
+      "days": 28,
+      "outcome": "good",
+      "note": "Upside template: a sub-$200M Alzheimer's name re-rated 2.5x in one month on positive cognition data. Caveat: Cassava's data later faced integrity allegations — the move shows what sentiment does, not what the science was worth."
+    },
+    {
+      "ticker": "ATHA",
+      "event": "LIFT-AD Phase 2/3 fails primary endpoint",
+      "date": "Sep 2024",
+      "movePct": -72,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Downside template: Alzheimer's readout miss at a small cap. -72% after hours, -81% over three days. ABOS's bear case (-65%) assumes cash/share (~$1.09) provides only a partial floor because of ongoing burn."
+    },
+    {
+      "ticker": "CGTX",
+      "event": "Zervimesine Phase 2 Alzheimer's data",
+      "date": "Jul 2025",
+      "movePct": 21,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "Middle case: encouraging but not decisive Phase 2 data gave only +20.8% day-1. A 'directional but not 30%' ALTITUDE-AD result likely lands here."
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/abos/",
+    "https://www.sec.gov/Archives/edgar/data/0001576885/000162828026067129/abos-20261026xexx991.htm",
+    "https://www.sec.gov/Archives/edgar/data/0001576885/000162828026056199/abos-20260630.htm",
+    "https://www.biospace.com/press-releases/acumen-pharmaceuticals-completes-enrollment-of-altitude-ad-a-phase-2-clinical-trial-of-sabirnetug-acu193-in-early-alzheimers-disease",
+    "https://www.fool.com/investing/2021/03/08/why-cassava-sciences-stock-skyrocketed-1451-in-feb",
+    "https://www.nasdaq.com/articles/athira-shares-plunge-after-phase-2-3-fosgonimeton-trial-alzheimers-fails-meet-endpoints",
+    "https://www.benzinga.com/markets/equities/25/07/46258444/cognition-therapeutics-shares-jump-12-after-hours-following-encouraging-phase-2-alzheimers-trial-data",
+    "https://www.chase.com/personal/investments/learning-and-insights/article/will-the-federal-reserve-hike-rates-at-october-2026-fomc-meeting",
+    "https://defirate.com/prediction-markets/fed-decision-odds/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "ALTITUDE-AD — Phase 2 จำนวน 542 รายของ sabirnetug แอนติบอดีที่จับ amyloid-beta oligomer แบบเฉพาะ ในอัลไซเมอร์ระยะแรก — ประกาศผลเดือน พ.ย. 2026 เป็น binary ที่ชัดที่สุดบนกระดาน ถ้าสำเร็จ (ชะลอ iADRS ~30% ตามเกณฑ์ผู้บริหาร) ABOS จะเป็นสินทรัพย์ที่ยาใหญ่สนใจ ในตลาดที่ lecanemab และ donanemab พิสูจน์แนวทาง amyloid แล้ว ⚠️ SURVIVAL: เงินสด $78.6M พอถึงต้นปี 2027 เท่านั้น และมี S-3 shelf/ATM ที่ยังติด top 5 เพราะผลออกก่อนเงินหมด และ ~52% ของ market cap เป็นเงินสด ผลบวกน่าจะตามด้วยการเพิ่มทุนจากจุดแข็ง ไม่ใช่จนตรอก ประเภท phase3_readout มี n=1 ใน turbo feedback (ใช้เป็นบริบทเท่านั้น) Base (+45%) สูงกว่า P90 ที่เกิดจริง (+25.9%; bias +72.7pp) โดยสมมติผล 'ดีแต่ไม่ถึง 30%' ในกรอบ 1-3 เดือน แนะนำ 2% ของ portfolio เท่านั้น — ถ้าผลไม่ผ่าน ลงได้ 60-80%",
+      "priceNote": "ราคาสด $2.09 (+5.6%) เปิดตลาด 26 ต.ค. 2026 วันเดียวกับงบ Q3 ที่ยืนยันกำหนดผลเดือน พ.ย. ช่วง 52 สัปดาห์ $1.50-$3.60 Market cap ~$151M (72.3M หุ้น) เงินสด 30 ก.ย. $78.6M ≈ $1.09/หุ้น (~52% ของราคา)",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "ผล topline Phase 2 ALTITUDE-AD (sabirnetug)",
+          "description": "การศึกษา 542 ราย เทียบยาหลอก ฉีด IV ทุก 4 สัปดาห์ในอัลไซเมอร์ระยะแรก ทดสอบ 2 ขนาดยา ผู้บริหารตั้งเกณฑ์สำเร็จที่ชะลอ iADRS ~30% ยังไม่ประกาศวันแน่นอน บริษัทระบุ พ.ย. 2026"
+        },
+        {
+          "name": "IND โครงการ Enhanced Brain Delivery (ร่วมกับ JCR)",
+          "description": "แอนติบอดีที่ใช้ระบบนำส่งเข้าสมอง เป้ายื่น IND กลางปี 2027 — เป็นเพียง optionality"
+        }
+      ],
+      "risks": [
+        "⚠️ SURVIVAL: เงินสด ณ 30 ก.ย. 2026 $78.6M พอใช้ถึง 'ต้นปี 2027' เท่านั้น (ต่ำกว่า 12 เดือน) ขาดทุนสุทธิ ~$25M/ไตรมาส และมี S-3 shelf กับ ATM — ผลทางใดก็น่าจะตามด้วยการเพิ่มทุน ถ้าผลไม่ผ่านจะ dilute หนัก",
+        "binary แท้: กรณี Athira (-72% หลังปิดตลาด, -81% ใน 3 วัน) คือแม่แบบขาลงที่สมจริง เงินสดต่อหุ้น (~$1.09) เป็นพื้นได้เพียงบางส่วนเมื่อนับการเผาเงิน",
+        "ความเสี่ยง endpoint: ผล 'ผ่านทางสถิติ' แต่ผลทางคลินิกน้อย (ต่ำกว่า 30% มาก) ก็อาจโดนขายได้ เหมือน Compass Pathways ที่ชนะ Phase 3 แบบเฉียด",
+        "แม้ผลดี sabirnetug ต้องแข่งกับ Leqembi และ Kisunla ที่ยอดใช้โตช้ากว่าคาด มูลค่าดีลขึ้นกับความได้เปรียบด้านความปลอดภัย/ARIA",
+        "ยังไม่ประกาศวันแน่นอน ('พ.ย. 2026') ทั้ง time decay และจังหวะการเพิ่มทุนก่อน event จึงไม่แน่นอน"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ยนโยบาย 3.75-4.00% หลัง Fed ขึ้นดอกเบี้ยแบบเซอร์ไพรส์เมื่อ 16 ก.ย. 2026 (ครั้งแรกตั้งแต่ 2023) ประชุม FOMC 27-28 ต.ค. ตลาดให้น้ำหนักคงดอกเบี้ย ~93% / ขึ้น 25bp ~7% (ณ 25 ต.ค.) แต่โอกาสขึ้นดอกเบี้ยเคยพุ่งถึง ~44% หลัง CPI ก.ย. ออกมาร้อนเมื่อ 14 ต.ค. ทิศทางจึงยังเสี่ยงสองด้าน",
+        "inflationNote": "CPI ก.ย. +0.6% m/m, 3.7% y/y ส่วน core +0.3% m/m, 2.6% y/y สูงกว่าคาดทั้งคู่ — เงินเฟ้อ headline เร่งตัวทำให้การขึ้นดอกเบี้ยอีกครั้งในปี 2026 ยังเป็นไปได้",
+        "sectorImpact": "ไบโอเทคมูลค่าต่ำกว่า $200M ไม่มีรายได้ และเงินสดน้อยกว่า 12 เดือน อ่อนไหวต่อภาวะการเงินสูงสุด ความเซอร์ไพรส์ฝั่ง hawkish ทำให้หน้าต่างการเพิ่มทุนหลังผลดีแคบลง และส่วนลดหลังผลแย่ลึกขึ้น",
+        "summary": "HIGH — มหภาคไม่ได้ตัดสิน binary นี้ แต่ตัดสินว่าการเพิ่มทุนรอบหน้าจะแพงแค่ไหนไม่ว่าผลจะออกทางใด ตลาดคาดคงดอกเบี้ย 28 ต.ค. แต่ CPI ร้อนทำให้ยังอาจขึ้นได้อีก"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · ค่าขนม สูงสุด 2% — binary อัลไซเมอร์ที่ชัดที่สุด (ผล พ.ย. 2026) มีธง survival แต่มีเงินสด ~52% ของ market cap รองรับ median ถึงวัน catalyst ของ turbo -13.7% (n=19) — เข้าที่ Entry 2 ($1.75-1.90) เป็นหลัก Entry 1 แค่ไม้เริ่ม ให้มองเป็นค่า option ที่เสียได้ทั้งหมด",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น ไม่ใช่จุดเข้าหลัก: median ถึงวัน catalyst ของ turbo -13.7% (n=19)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "โซนย่อก่อนประกาศผล — จุดเข้าหลัก",
+            "timing": "ถ้าย่อก่อนผล topline"
+          },
+          {
+            "note": "52-week low ยังสูงกว่าเงินสดต่อหุ้น (~$1.09) ราว 38%",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — ผล 'ดีแต่ต่ำกว่า 30%' หุ้นกลับไปทดสอบ $3.03 (เข้าใกล้ 52-week high $3.60) กรอบ ~1-3 เดือน"
+        },
+        "tp2": {
+          "note": "Bull — ผ่านเกณฑ์ชะลอ iADRS ~30% และความปลอดภัย ARIA ดี re-rate เข้าโซนเป้านักวิเคราะห์ $5-$7.60"
+        },
+        "tp3": {
+          "note": "Moon — ชนะชัด + ดีลกับยาใหญ่ re-rate สู่เป้าสูงสุด $10 (~$700M cap) — แบบ SAVA ปี 2021 แต่บนข้อมูลจริง"
+        },
+        "stopLoss": {
+          "tightNote": "-28% — กว้างกว่า medianMAE ภาพรวม turbo (-24.1%, n=41; ประเภท phase3_readout n=1 บางเกินใช้) binary อาจ gap ทะลุ stop ได้ จุดนี้จึงมีไว้กันการเพิ่มทุนก่อนประกาศผลเป็นหลัก",
+          "hardNote": "-55% — ใกล้เงินสดต่อหุ้น ต่ำกว่านี้ตลาดกำลัง price ความล้มเหลวหรือการเพิ่มทุนแบบจนตรอก",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "อสมมาตร ✅ — ผ่านเป้า 5:1 ของ turbo"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "ผล topline ALTITUDE-AD",
+          "note": "ชะลอ iADRS ~30% = เกณฑ์สำเร็จของผู้บริหาร"
+        }
+      ]
+    }
+  }
+}
