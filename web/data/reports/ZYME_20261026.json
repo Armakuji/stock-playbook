@@ -1,0 +1,293 @@
+{
+  "ticker": "ZYME",
+  "companyName": "Zymeworks Inc.",
+  "companyDescription": "Biotech · Bispecific antibody platform (zanidatamab/Ziihera) partnered with Jazz Pharmaceuticals — milestone + royalty stream on an oncology franchise expanding from 2L biliary tract cancer into 1L gastroesophageal adenocarcinoma",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-10-26T00:00:00.000Z",
+  "price": 28.23,
+  "priceChange": 0.02,
+  "priceNote": "Live $28.23 (flat) on Oct 26, 2026 — 52-week range $16.00-$31.34, near the high. Market cap ~$2.0B.",
+  "marketCap": "~$2.00B",
+  "sector": "Healthcare / Biotechnology (Oncology — Bispecific Antibodies)",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 0,
+  "summary": "REFRESH (prior report Aug 10, 2026). The Aug 25 PDUFA delivered: zanidatamab is FDA-approved in 1L HER2+ GEA. Since then ZYME closed the Theravance acquisition and licensed ZW209 to Roche. Q3 on Nov 9 is the next dated catalyst. Consensus $41.36 (+46.5%; clears the gate), but FY26 revenue guidance ($278-292M) sits below the ~$304M Street figure. Written against the core Base optimism bias of +23.7pp (realized 14d P75 +6.6%, P90 +11.7%). Base +15% assumes a ~1-3 month horizon for early GEA royalties to support the stock. The print is 14 days out. แนะนำ 3-5% ของ portfolio.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 2026 earnings",
+      "description": "Nov 9. First quarter after FDA approval of zanidatamab in 1L HER2+ gastroesophageal adenocarcinoma (Aug 25, 2026) and the Theravance Biopharma acquisition close. The read is GEA launch royalties via Jazz and the FY26 $278-292M revenue guide (below the ~$304M consensus).",
+      "urgencyLabel": "14 DAYS",
+      "dateBadge": "Nov 9, 2026",
+      "catalystDate": "2026-11-09",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "✅",
+      "name": "Zanidatamab 1L GEA — FDA approved",
+      "description": "Approved Aug 25, 2026 — described as a new standard of care in HER2+ GEA.",
+      "urgencyLabel": "ACHIEVED",
+      "dateBadge": "Aug 25, 2026",
+      "catalystDate": "2026-08-25",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "🤝",
+      "name": "Roche license for ZW209 (DLL3 trispecific)",
+      "description": "Exclusive global license and collaboration with Roche — non-dilutive validation of the platform.",
+      "urgencyLabel": "ACHIEVED",
+      "dateBadge": "Oct 2026",
+      "badgeColor": "green",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "FY26 revenue guide ($278-292M) is below consensus (~$304M).",
+    "Economics flow through Jazz as royalties/milestones — Zymeworks captures only part of GEA revenue.",
+    "Early-launch royalties are small and noisy.",
+    "Theravance integration.",
+    "Thin liquidity can gap the stock on the print."
+  ],
+  "estimateDates": [
+    {
+      "event": "Q3 2026 earnings",
+      "dateRange": "Nov 9, 2026",
+      "note": "GEA royalties + FY26 guide",
+      "est": "FY26 guide $278-292M",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -22,
+      "price": 22.02
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 15,
+      "price": 32.46
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 32,
+      "price": 37.26
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 47,
+      "price": 41.5
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus (13 analysts, stockanalysis.com)",
+      "target": 41.36,
+      "rating": "Strong Buy"
+    },
+    {
+      "firm": "Citi",
+      "target": 37,
+      "rating": "Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds at 3.75-4.00% after the surprise Sep 16, 2026 hike (first since 2023). The Oct 27-28 FOMC is priced ~93% hold / ~7% +25bp as of Oct 25 — but hike odds briefly spiked to ~44% after the hot Sep CPI print on Oct 14, so the path stays two-sided.",
+    "inflationNote": "September CPI +0.6% m/m, 3.7% y/y headline; core +0.3% m/m, 2.6% y/y — both above consensus. Headline re-acceleration keeps a further 2026 hike live.",
+    "sectorImpact": "Royalty-funded oncology biotech with an approved product; moderate rate sensitivity.",
+    "summary": "MEDIUM — the Oct 28 FOMC is priced ~93% hold, but September CPI ran hot (3.7% headline) and a further 2026 hike is still live. October's growth/AI-infra selloff was largely a rates trade, so the decision and the dot path matter directly for this name's multiple."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 28.23,
+        "note": "Current price — starter only; not preferred (core at-catalyst median -6.9%, n=54)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 25.5,
+        "rangeMax": 27,
+        "note": "Pre-earnings dip zone — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 23,
+        "note": "Deep dip",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 32.46,
+      "pct": 15,
+      "note": "Base — solid GEA launch commentary; ~$32.50. Horizon ~1-3 months."
+    },
+    "tp2": {
+      "price": 37.26,
+      "pct": 32,
+      "note": "Bull — guide raise plus pipeline progress (ZW191); ~$37."
+    },
+    "tp3": {
+      "price": 41.5,
+      "pct": 47,
+      "note": "Moon — consensus ~$41.50. 12-month thesis.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 24.56,
+      "tightPct": -13,
+      "tightNote": "-13% — wider than the core earnings_beat medianMAE (-9.6%, n=42).",
+      "hard": 21.17,
+      "hardPct": -25,
+      "hardNote": "-25% — thesis break.",
+      "riskReward": "2.5 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Acceptable ✅ — clears the 2:1 core floor"
+    },
+    "verdict": "BUY (Speculative) — approval delivered, Roche validation added, into a Nov 9 print. The measured core median at-catalyst return is -6.9% with 74% of picks underwater at their event (n=54), so Entry 2 ($25.50-27) is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Held up: ZYME is +15% since the Aug 10 report and near the top of its 52-week range after the approval and Roche deal.",
+    "preRunupTiming": "N/A",
+    "preRunupPct": "+15% since Aug 10",
+    "postWin": {
+      "avgPct": 15,
+      "range": "+8% to +25%",
+      "note": "Approval on an already-partnered, already-marketed drug tends toward the muted end of the typical 30-200% first-approval range, since much is already priced in. ZYME's own 2024 BTC approval barely moved the stock (-8% same-day, alongside an earnings release); Omeros' first-in-class approval in Aug 2026 added only +8% premarket.",
+      "exampleDate": "Nov 2024 (ZYME BTC approval) / Aug 2026 (OMER)"
+    },
+    "postLose": {
+      "avgPct": -30,
+      "range": "-20% to -40%",
+      "note": "No direct ZYME-specific CRL precedent exists to cite — this is the general pattern for Priority-Review oncology sBLAs with strong Phase 3 data that still receive a CRL or restrictive label; the surprise factor amplifies the reaction versus a name where rejection was already expected.",
+      "exampleDate": "N/A — general oncology PDUFA/CRL pattern, no ZYME-specific prior case"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "4%. Re-typed to earnings_beat (the fda_decision catalyst is realized — approved Aug 25). earnings_beat has no tier-2 penalty. FY26 guidance below consensus caps conviction."
+    },
+    "stopPreCatalyst": {
+      "pct": -13,
+      "price": 24.56,
+      "note": "Wider than the earnings_beat medianMAE (-9.6%, n=42)."
+    },
+    "stopPostCatalyst": {
+      "pct": -13,
+      "note": "If Q3 cuts the guide or GEA uptake disappoints, exit."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "ZYME",
+      "event": "Ziihera (zanidatamab) accelerated approval — 2L HER2+ biliary tract cancer",
+      "date": "Nov 2024",
+      "movePct": -7.97,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "Same drug's first FDA approval — the stock fell ~8% the day it was announced (alongside Q4 results) because accelerated approval was already largely expected. Direct precedent for why the Aug 25 GEA sBLA approval may not produce a large pop even if it clears."
+    },
+    {
+      "ticker": "OMER",
+      "event": "Yartemlea first-in-class FDA approval (rare transplant complication)",
+      "date": "Aug 2026",
+      "movePct": 8,
+      "days": 1,
+      "outcome": "good",
+      "note": "Recent same-window example: even a genuine first-of-its-kind approval only produced a modest +8% premarket pop — approvals well-telegraphed by Priority Review status tend to already be partly priced in before the decision date."
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/zyme/",
+    "https://www.targetedonc.com/view/fda-grants-priority-review-to-zanidatamab-based-regimens-in-first-line-her2-gea",
+    "https://ir.zymeworks.com/news-releases/news-release-details/zymeworks-provides-corporate-update-and-reports-second-quarter-3",
+    "https://www.globenewswire.com/news-release/2024/11/21/2985027/0/en/FDA-Grants-U-S-Approval-of-Ziihera-zanidatamab-hrii-for-the-Treatment-of-Adults-with-Previously-Treated-Unresectable-or-Metastatic-HER2-positive-IHC-3-Biliary-Tract-Cancer-BTC.html",
+    "https://stocktwits.com/news-articles/markets/equity/omeros-stock-jumps-premarket-after-fda-approves-first-drug-for-rare-transplant-complication/cLesxhYREvL",
+    "https://www.chase.com/personal/investments/learning-and-insights/article/will-the-federal-reserve-hike-rates-at-october-2026-fomc-meeting",
+    "https://defirate.com/prediction-markets/fed-decision-odds/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "REFRESH (รายงานก่อน 10 ส.ค. 2026) PDUFA 25 ส.ค. ออกมาตามคาด: zanidatamab ได้รับอนุมัติใน HER2+ GEA first-line หลังจากนั้น ZYME ปิดดีลซื้อ Theravance และไลเซนส์ ZW209 ให้ Roche งบ Q3 วันที่ 9 พ.ย. คือ catalyst ถัดไป เป้าเฉลี่ย $41.36 (+46.5% ผ่านเกณฑ์) แต่เป้ารายได้ปี 2026 ($278-292M) ต่ำกว่าตัวเลขตลาด ~$304M เขียนโดยคำนึงถึง optimism bias ของ Base ใน core +23.7pp (P75 ที่เกิดจริงใน 14 วัน +6.6%, P90 +11.7%) Base +15% สมมติกรอบ ~1-3 เดือนที่ royalty GEA ช่วงแรกช่วยพยุงหุ้น งบอยู่ห่าง 14 วัน แนะนำ 3-5% ของ portfolio",
+      "priceNote": "ราคาสด $28.23 (ทรงตัว) 26 ต.ค. 2026 — ช่วง 52 สัปดาห์ $16.00-$31.34 ใกล้จุดสูง Market cap ~$2.0B",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        {
+          "name": "งบ Q3 2026",
+          "description": "9 พ.ย. ไตรมาสแรกหลัง FDA อนุมัติ zanidatamab ใน HER2+ GEA first-line (25 ส.ค. 2026) และปิดดีลซื้อ Theravance Biopharma ดู royalty จากการเปิดตัว GEA ผ่าน Jazz และเป้ารายได้ปี 2026 $278-292M (ต่ำกว่าที่ตลาดคาด ~$304M)"
+        },
+        {
+          "name": "Zanidatamab 1L GEA — FDA อนุมัติแล้ว",
+          "description": "อนุมัติ 25 ส.ค. 2026 — ถูกระบุว่าเป็นมาตรฐานการรักษาใหม่ใน HER2+ GEA"
+        },
+        {
+          "name": "ไลเซนส์ ZW209 (trispecific DLL3) ให้ Roche",
+          "description": "ข้อตกลงไลเซนส์และความร่วมมือทั่วโลกแบบ exclusive กับ Roche — การรับรองแพลตฟอร์มโดยไม่ต้อง dilute"
+        }
+      ],
+      "risks": [
+        "เป้ารายได้ปี 2026 ($278-292M) ต่ำกว่าที่ตลาดคาด (~$304M)",
+        "รายได้ผ่าน Jazz ในรูป royalty/milestone — Zymeworks ได้เพียงส่วนหนึ่งของรายได้ GEA",
+        "royalty ช่วงเปิดตัวยังเล็กและผันผวน",
+        "การรวมกิจการ Theravance",
+        "สภาพคล่องต่ำอาจทำให้หุ้น gap แรงหลังงบ"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ยนโยบาย 3.75-4.00% หลัง Fed ขึ้นดอกเบี้ยแบบเซอร์ไพรส์เมื่อ 16 ก.ย. 2026 (ครั้งแรกตั้งแต่ 2023) ประชุม FOMC 27-28 ต.ค. ตลาดให้น้ำหนักคงดอกเบี้ย ~93% / ขึ้น 25bp ~7% (ณ 25 ต.ค.) แต่โอกาสขึ้นดอกเบี้ยเคยพุ่งถึง ~44% หลัง CPI ก.ย. ออกมาร้อนเมื่อ 14 ต.ค. ทิศทางจึงยังเสี่ยงสองด้าน",
+        "inflationNote": "CPI ก.ย. +0.6% m/m, 3.7% y/y ส่วน core +0.3% m/m, 2.6% y/y สูงกว่าคาดทั้งคู่ — เงินเฟ้อ headline เร่งตัวทำให้การขึ้นดอกเบี้ยอีกครั้งในปี 2026 ยังเป็นไปได้",
+        "sectorImpact": "ไบโอเทคมะเร็งที่มีรายได้ royalty และยาที่ได้อนุมัติแล้ว อ่อนไหวต่อดอกเบี้ยปานกลาง",
+        "summary": "MEDIUM — ตลาดคาด FOMC 28 ต.ค. คงดอกเบี้ย ~93% แต่ CPI ก.ย. ร้อน (headline 3.7%) และยังอาจขึ้นได้อีกในปี 2026 แรงขายหุ้นเติบโต/AI infra เดือน ต.ค. ส่วนใหญ่มาจากดอกเบี้ย ผลประชุมและ dot plot จึงกระทบ multiple ของหุ้นตัวนี้โดยตรง"
+      },
+      "entryStrategy": {
+        "verdict": "BUY (Speculative) — ได้อนุมัติแล้ว มี Roche รับรองเพิ่ม ก่อนงบ 9 พ.ย. median ผลตอบแทนถึงวัน catalyst ของ core = -6.9% และ 74% ของหุ้นติดลบ ณ วัน event (n=54) — เข้าที่ Entry 2 ($25.50-27) เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น ไม่ใช่จุดเข้าหลัก (median ถึงวัน catalyst ของ core -6.9%, n=54)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "โซนย่อก่อนงบ — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ย่อลึก",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — ความเห็นเรื่องการเปิดตัว GEA แข็งแรง ~$32.50 กรอบ ~1-3 เดือน"
+        },
+        "tp2": {
+          "note": "Bull — ปรับเป้าขึ้น + pipeline คืบหน้า (ZW191) ~$37"
+        },
+        "tp3": {
+          "note": "Moon — เป้าเฉลี่ย ~$41.50 thesis 12 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-13% — กว้างกว่า medianMAE ของ earnings_beat (-9.6%, n=42)",
+          "hardNote": "-25% — thesis พัง",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "รับได้ ✅ — ผ่านเกณฑ์ขั้นต่ำ 2:1 ของ core"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "งบ Q3 2026",
+          "note": "royalty GEA + เป้าปี 2026"
+        }
+      ]
+    }
+  }
+}

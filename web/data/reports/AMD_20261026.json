@@ -1,0 +1,270 @@
+{
+  "ticker": "AMD",
+  "companyName": "Advanced Micro Devices, Inc.",
+  "companyDescription": "AI GPU / CPU challenger to Nvidia · Instinct MI-series accelerators + EPYC server CPUs · now also acquiring physical-AI/world-model research (Fei-Fei Li's World Labs, $8.2B all-stock, announced Sep 26 2026)",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-10-26T00:00:00.000Z",
+  "price": 519.25,
+  "priceChange": 0.48,
+  "priceNote": "Live $519.25 (+0.5%) on Oct 26, 2026 — 52-week range $188.22-$658.52, ~21% off the high. Market cap ~$848B (mega).",
+  "marketCap": "~$848B",
+  "sector": "Technology / Semiconductors (AI Accelerators)",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 0,
+  "summary": "REFRESH (prior report Sep 29, 2026). AMD pulled back ~11% since Sep 29 ($585.94 → $519.25) and ~21% from its high, which pushes consensus ($637.61) to +22.8% — back above the gate. Q3 prints Nov 3. Self-check (mega-cap): +20% just retraces to the late-September level on a strong data-center GPU guide. earnings_beat has no tier-2 penalty. Written against the core Base optimism bias of +23.7pp (realized 14d P75 +6.6%, P90 +11.7%). Base +10% assumes a ~1-2 month horizon through the print. แนะนำ 5-10% ของ portfolio — Core Holding.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 2026 earnings",
+      "description": "Scheduled Nov 3 after the close. The read is MI-series data-center GPU ramp, the World Labs integration, and Q4 guide.",
+      "urgencyLabel": "8 DAYS",
+      "dateBadge": "Nov 3, 2026",
+      "catalystDate": "2026-11-03",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Mega-cap: +20% needs a decisive data-center GPU beat-and-raise.",
+    "Beta 2.45 and ~47x forward P/E — the sector selloff could extend through the print.",
+    "AI-capex sustainability debate (hyperscaler budgets) hits AMD harder than NVDA on any wobble.",
+    "World Labs acquisition integration and spend.",
+    "Sell-the-news risk seen across AI semis in Aug 2026 (MRVL -10%)."
+  ],
+  "estimateDates": [
+    {
+      "event": "Q3 2026 earnings",
+      "dateRange": "Nov 3, 2026",
+      "note": "Data-center GPU ramp + Q4 guide",
+      "est": "TTM rev $41.3B",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -18,
+      "price": 425.79
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 10,
+      "price": 571.18
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 23,
+      "price": 638.68
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 35,
+      "price": 700.99
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus (55 analysts, stockanalysis.com)",
+      "target": 637.61,
+      "rating": "Strong Buy"
+    },
+    {
+      "firm": "Bank of America",
+      "target": 720,
+      "rating": "Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds at 3.75-4.00% after the surprise Sep 16, 2026 hike (first since 2023). The Oct 27-28 FOMC is priced ~93% hold / ~7% +25bp as of Oct 25 — but hike odds briefly spiked to ~44% after the hot Sep CPI print on Oct 14, so the path stays two-sided.",
+    "inflationNote": "September CPI +0.6% m/m, 3.7% y/y headline; core +0.3% m/m, 2.6% y/y — both above consensus. Headline re-acceleration keeps a further 2026 hike live.",
+    "sectorImpact": "Profitable mega-cap semis, but beta 2.45 and ~47x forward earnings keep it sensitive to yields and AI-capex sentiment.",
+    "summary": "MEDIUM — the Oct 28 FOMC is priced ~93% hold, but September CPI ran hot (3.7% headline) and a further 2026 hike is still live. October's growth/AI-infra selloff was largely a rates trade, so the decision and the dot path matter directly for this name's multiple."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 519.25,
+        "note": "Current price — starter only; not preferred (core at-catalyst median -6.9%, n=54)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 475,
+        "rangeMax": 500,
+        "note": "Pullback zone — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 440,
+        "note": "Deep dip",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 571.18,
+      "pct": 10,
+      "note": "Base — solid beat; ~$571. Horizon ~1-2 months."
+    },
+    "tp2": {
+      "price": 638.68,
+      "pct": 23,
+      "note": "Bull — data-center guide raise; ~$639 (consensus)."
+    },
+    "tp3": {
+      "price": 700.99,
+      "pct": 35,
+      "note": "Moon — ~$701, toward BofA's $720. 12-month thesis.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 456.94,
+      "tightPct": -12,
+      "tightNote": "-12% — wider than the core earnings_beat medianMAE (-9.6%, n=42).",
+      "hard": 405.01,
+      "hardPct": -22,
+      "hardNote": "-22% — trend break; exit.",
+      "riskReward": "1.9 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Below the 2:1 core floor — size down"
+    },
+    "verdict": "BUY (Core Holding) — consensus upside re-opened to ~23% after the pullback, into a Nov 3 print. The measured core median at-catalyst return is -6.9% with 74% of picks underwater at their event (n=54), so Entry 2 ($475-500) is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "AMD tends to see elevated volatility around both earnings and major strategic announcements — the World Labs deal itself was a surprise announcement, not a pre-telegraphed one",
+    "preRunupTiming": "1-2 weeks before a confirmed earnings date",
+    "preRunupPct": "+5% to +10%",
+    "postWin": {
+      "avgPct": 9,
+      "range": "0% to +20%",
+      "note": "AMD's historical earnings reactions have ranged widely; the base-rate reference here is the core lane's earnings_beat bucket avgMaxGain of ~2.7% (n=42), well below the stock's own historical best/worst swings.",
+      "exampleDate": "2026 (category reference)"
+    },
+    "postLose": {
+      "avgPct": -20,
+      "range": "-8% to -20%",
+      "note": "AMD's worst historical earnings-miss drawdown this cycle was -20.3% (Feb 2026), per the prior report's own research — kept here as the standing worst-case reference for the Nov 3 print, on top of the fresh World Labs dilution overhang.",
+      "exampleDate": "Feb 2026"
+    },
+    "spotSizing": {
+      "pct": 8,
+      "reason": "8%. earnings_beat carries no tier-2 penalty (n=42). Mega-cap with real earnings; consensus +22.8% clears the gate after a ~21% pullback from the high."
+    },
+    "stopPreCatalyst": {
+      "pct": -12,
+      "price": 456.94,
+      "note": "Wider than the earnings_beat medianMAE (-9.6%, n=42)."
+    },
+    "stopPostCatalyst": {
+      "pct": -12,
+      "note": "If the Q4 data-center guide disappoints, trim."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "AMD",
+      "event": "$8.2B all-stock acquisition of World Labs (Fei-Fei Li's physical-AI startup) announced",
+      "date": "Sep 2026",
+      "movePct": -3.61,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Direct, same-day, same-company precedent for how the market is currently pricing this specific deal — the negative reaction is the central fact this report is built around"
+    },
+    {
+      "ticker": "AMD",
+      "event": "Jul 23 2026 Advancing AI event drove BofA to raise its target from $560 to $620",
+      "date": "Jul 2026",
+      "movePct": 8,
+      "days": 2,
+      "outcome": "good",
+      "note": "Shows AMD can re-rate on a well-received strategic event — the World Labs deal has not (yet) had the same reception"
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/amd/",
+    "https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/",
+    "https://newsroom.amd.com/news/amd-acquire-world-labs/",
+    "https://www.cnbc.com/2026/09/28/amd-fei-fei-li-world-labs.html",
+    "https://dividendcalculator.co/2026/09/24/amd-earnings/",
+    "https://www.tipranks.com/stocks/amd/earnings",
+    "https://www.chase.com/personal/investments/learning-and-insights/article/will-the-federal-reserve-hike-rates-at-october-2026-fomc-meeting",
+    "https://defirate.com/prediction-markets/fed-decision-odds/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "REFRESH (รายงานก่อน 29 ก.ย. 2026) AMD ย่อ ~11% นับจาก 29 ก.ย. ($585.94 → $519.25) และ ~21% จากจุดสูง ทำให้เป้าเฉลี่ย ($637.61) มี upside +22.8% กลับมาผ่านเกณฑ์ งบ Q3 วันที่ 3 พ.ย. ตรวจตัวเอง (mega-cap): +20% แค่กลับไปที่ระดับปลาย ก.ย. ถ้าเป้า GPU data center แข็งแรง earnings_beat ไม่โดน tier-2 ลงโทษ เขียนโดยคำนึงถึง optimism bias ของ Base ใน core +23.7pp (P75 ที่เกิดจริงใน 14 วัน +6.6%, P90 +11.7%) Base +10% สมมติกรอบ ~1-2 เดือนผ่านงบ แนะนำ 5-10% ของ portfolio — Core Holding",
+      "priceNote": "ราคาสด $519.25 (+0.5%) 26 ต.ค. 2026 — ช่วง 52 สัปดาห์ $188.22-$658.52 ต่ำกว่าจุดสูง ~21% Market cap ~$848B (mega)",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        {
+          "name": "งบ Q3 2026",
+          "description": "กำหนด 3 พ.ย. หลังปิดตลาด ดูการเร่งของ GPU data center ซีรีส์ MI การรวม World Labs และเป้า Q4"
+        }
+      ],
+      "risks": [
+        "Mega-cap: +20% ต้องมีงบ GPU data center ที่ดีกว่าคาดและปรับเป้าขึ้นชัดเจน",
+        "beta 2.45 และ P/E ล่วงหน้า ~47 เท่า แรงขายกลุ่มอาจลากยาวผ่านงบ",
+        "ข้อถกเถียงเรื่องความยั่งยืนของ AI capex (งบ hyperscaler) กระทบ AMD แรงกว่า NVDA เมื่อมีความไม่แน่นอน",
+        "การรวมกิจการและค่าใช้จ่ายจากการซื้อ World Labs",
+        "ความเสี่ยง sell-the-news ที่เห็นในหุ้นชิป AI ช่วง ส.ค. 2026 (MRVL -10%)"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ยนโยบาย 3.75-4.00% หลัง Fed ขึ้นดอกเบี้ยแบบเซอร์ไพรส์เมื่อ 16 ก.ย. 2026 (ครั้งแรกตั้งแต่ 2023) ประชุม FOMC 27-28 ต.ค. ตลาดให้น้ำหนักคงดอกเบี้ย ~93% / ขึ้น 25bp ~7% (ณ 25 ต.ค.) แต่โอกาสขึ้นดอกเบี้ยเคยพุ่งถึง ~44% หลัง CPI ก.ย. ออกมาร้อนเมื่อ 14 ต.ค. ทิศทางจึงยังเสี่ยงสองด้าน",
+        "inflationNote": "CPI ก.ย. +0.6% m/m, 3.7% y/y ส่วน core +0.3% m/m, 2.6% y/y สูงกว่าคาดทั้งคู่ — เงินเฟ้อ headline เร่งตัวทำให้การขึ้นดอกเบี้ยอีกครั้งในปี 2026 ยังเป็นไปได้",
+        "sectorImpact": "หุ้นชิปขนาดใหญ่ที่มีกำไร แต่ beta 2.45 และ ~47 เท่าของกำไรล่วงหน้า ทำให้อ่อนไหวต่ออัตราผลตอบแทนและ sentiment AI capex",
+        "summary": "MEDIUM — ตลาดคาด FOMC 28 ต.ค. คงดอกเบี้ย ~93% แต่ CPI ก.ย. ร้อน (headline 3.7%) และยังอาจขึ้นได้อีกในปี 2026 แรงขายหุ้นเติบโต/AI infra เดือน ต.ค. ส่วนใหญ่มาจากดอกเบี้ย ผลประชุมและ dot plot จึงกระทบ multiple ของหุ้นตัวนี้โดยตรง"
+      },
+      "entryStrategy": {
+        "verdict": "BUY (Core Holding) — upside ตามเป้าเฉลี่ยกลับมา ~23% หลังย่อ ก่อนงบ 3 พ.ย. median ผลตอบแทนถึงวัน catalyst ของ core = -6.9% และ 74% ของหุ้นติดลบ ณ วัน event (n=54) — เข้าที่ Entry 2 ($475-500) เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น ไม่ใช่จุดเข้าหลัก (median ถึงวัน catalyst ของ core -6.9%, n=54)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "โซนย่อ — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ย่อลึก",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — งบดีกว่าคาด ~$571 กรอบ ~1-2 เดือน"
+        },
+        "tp2": {
+          "note": "Bull — ปรับเป้า data center ขึ้น ~$639 (เป้าเฉลี่ย)"
+        },
+        "tp3": {
+          "note": "Moon — ~$701 เข้าหาเป้า BofA $720 thesis 12 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-12% — กว้างกว่า medianMAE ของ earnings_beat (-9.6%, n=42)",
+          "hardNote": "-22% — แนวโน้มพัง ออก",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "ต่ำกว่าเกณฑ์ 2:1 ของ core — ลดขนาด position"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "งบ Q3 2026",
+          "note": "GPU data center + เป้า Q4"
+        }
+      ]
+    }
+  },
+  "factorTags": [
+    "ai_semi"
+  ]
+}

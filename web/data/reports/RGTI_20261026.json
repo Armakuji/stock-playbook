@@ -1,0 +1,281 @@
+{
+  "ticker": "RGTI",
+  "companyName": "Rigetti Computing, Inc.",
+  "companyDescription": "Quantum computing · Novera QPU hardware + Cepheus-1 108-qubit systems — $100M Dept. of Commerce LOI, NSF-funded Pittsburgh Supercomputing testbed, riding a sector-wide rally on reports the U.S. government may take equity stakes in quantum computing firms",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-10-26T00:00:00.000Z",
+  "price": 11.31,
+  "priceChange": -1.82,
+  "priceNote": "Live $11.31 (-1.8%) on Oct 26, 2026 — at the 52-week low ($11.11-$44.52), -35% since Aug 10. Market cap ~$3.77B.",
+  "marketCap": "~$3.77B",
+  "sector": "Technology / Quantum Computing",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Speculative",
+  "score": 0,
+  "summary": "REFRESH (prior report Aug 10, 2026). The $100M Dept. of Commerce LOI converted into a definitive agreement, but RGTI still fell ~35% to its 52-week low as quantum names de-rated around IonQ's $2B raise. Q3 earnings on Nov 9 are the next dated catalyst. Consensus $28.53 (+152%; clears the gate). Catalyst type moved from partnership_win (the tier-2 laggard; now realized) to earnings_beat. Written against the core Base optimism bias of +23.7pp (realized 14d P75 +6.6%, P90 +11.7%). Base +25% assumes a 1-3 month relief rally if Q3 shows roadmap progress. The Nov 9 print is 14 days out, at the edge of the North Star window. แนะนำ 2-3% ของ portfolio — Speculative.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 2026 earnings",
+      "description": "First print since the $100M Dept. of Commerce definitive agreement. The read is roadmap progress (Cepheus/next-gen QPUs), Novera sales, and how the DoC funding flows.",
+      "urgencyLabel": "14 DAYS",
+      "dateBadge": "Nov 9, 2026",
+      "catalystDate": "2026-11-09",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🏛️",
+      "name": "$100M Dept. of Commerce definitive agreement — signed",
+      "description": "The LOI converted into a definitive agreement to accelerate superconducting quantum R&D (alongside DoC investments in D-Wave and Quantinuum).",
+      "urgencyLabel": "ACHIEVED",
+      "dateBadge": "Oct 2026",
+      "badgeColor": "green",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Revenue is tiny (TTM $13.4M) against a ~$239M TTM net loss — the valuation is entirely roadmap.",
+    "Quantum sentiment is fragile: peers' dilution (IonQ $2B) drags the group.",
+    "Technical roadmap execution (fidelity, qubit scaling) vs. trapped-ion and neutral-atom competitors.",
+    "Government funding concentration — DoC money also went to D-Wave and Quantinuum.",
+    "High beta to rates and retail flows."
+  ],
+  "estimateDates": [
+    {
+      "event": "Q3 2026 earnings",
+      "dateRange": "Nov 9, 2026",
+      "note": "Roadmap + DoC funding",
+      "est": "TTM rev $13.4M",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -30,
+      "price": 7.92
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 25,
+      "price": 14.14
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 70,
+      "price": 19.23
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 150,
+      "price": 28.28
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus (13 analysts, stockanalysis.com)",
+      "target": 28.53,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Benchmark",
+      "target": 25,
+      "rating": "Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds at 3.75-4.00% after the surprise Sep 16, 2026 hike (first since 2023). The Oct 27-28 FOMC is priced ~93% hold / ~7% +25bp as of Oct 25 — but hike odds briefly spiked to ~44% after the hot Sep CPI print on Oct 14, so the path stays two-sided.",
+    "inflationNote": "September CPI +0.6% m/m, 3.7% y/y headline; core +0.3% m/m, 2.6% y/y — both above consensus. Headline re-acceleration keeps a further 2026 hike live.",
+    "sectorImpact": "Well-funded but pre-scale quantum hardware; trades as a high-beta rate/sentiment proxy with IONQ and QBTS.",
+    "summary": "MEDIUM — the Oct 28 FOMC is priced ~93% hold, but September CPI ran hot (3.7% headline) and a further 2026 hike is still live. October's growth/AI-infra selloff was largely a rates trade, so the decision and the dot path matter directly for this name's multiple."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 11.31,
+        "note": "Current price — starter only; not preferred (core at-catalyst median -6.9%, n=54)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 10,
+        "rangeMax": 10.8,
+        "note": "Below the $11.11 52-week low — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 9,
+        "note": "Deep dip",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 14.14,
+      "pct": 25,
+      "note": "Base — Q3 roadmap progress; relief rally to ~$14. Horizon ~1-3 months."
+    },
+    "tp2": {
+      "price": 19.23,
+      "pct": 70,
+      "note": "Bull — fidelity/scale milestone plus new government orders; ~$19."
+    },
+    "tp3": {
+      "price": 28.28,
+      "pct": 150,
+      "note": "Moon — sector re-rating back to consensus (~$28). 12-month thesis.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 9.5,
+      "tightPct": -16,
+      "tightNote": "-16% — wider than the core earnings_beat medianMAE (-9.6%, n=42); a 52-week-low, high-beta name needs the room.",
+      "hard": 7.92,
+      "hardPct": -30,
+      "hardNote": "-30% — capitulation; exit.",
+      "riskReward": "4.4 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Acceptable ✅ — clears the 2:1 core floor"
+    },
+    "verdict": "SPECULATIVE — a funded quantum name at its 52-week low into a Nov 9 print. The measured core median at-catalyst return is -6.9% with 74% of picks underwater at their event (n=54), so Entry 2 ($10-10.80) is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Reverse run-up: RGTI fell ~35% since Aug 10 despite the DoC deal converting — quantum names de-rated with the IONQ raise and rates.",
+    "preRunupTiming": "N/A",
+    "preRunupPct": "-35% since Aug 10",
+    "postWin": {
+      "avgPct": 15.5,
+      "range": "+15.5%",
+      "note": "CRWV's Aug 2026 day-1 reaction (+15.5%) to an operating-leverage beat — the same high-beta AI/infra cohort.",
+      "exampleDate": "Aug 2026"
+    },
+    "postLose": {
+      "avgPct": -7,
+      "range": "-4.3% to -10%",
+      "note": "Average of IONQ (-4.3%, Aug 5, 2026) and MRVL (-10%, Aug 28, 2026) — both beat-and-raise prints that still sold off.",
+      "exampleDate": "Aug 2026"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "3%. Re-typed to earnings_beat (the DoC partnership is now signed, so the old partnership_win catalyst — the tier-2 LAGGARD at -1.6pp vs +1.4pp, n=12 — is realized). Revenue is still tiny (TTM $13.4M), so size small."
+    },
+    "stopPreCatalyst": {
+      "pct": -16,
+      "price": 9.5,
+      "note": "Wider than the earnings_beat medianMAE (-9.6%, n=42)."
+    },
+    "stopPostCatalyst": {
+      "pct": -18,
+      "note": "If Q3 slips roadmap milestones, exit."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "IONQ",
+      "event": "Q2 2026 earnings — beat + raised guide",
+      "date": "Aug 2026",
+      "movePct": -4.3,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "A large beat with a raised guide still sold off ~4% — quantum prints need a clean beat on both lines."
+    },
+    {
+      "ticker": "CRWV",
+      "event": "Q2 2026 earnings — adj. operating income ~2x guided midpoint",
+      "date": "Aug 2026",
+      "movePct": 15.5,
+      "days": 1,
+      "outcome": "good",
+      "note": "A margin beat re-rated an AI-infra name +15.5% in a skeptical tape."
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/rgti/",
+    "https://www.indmoney.com/blog/us-stocks/crwv-stock-jumps-coreweave-q2-earnings-analysis",
+    "https://finviz.com/news/386694/marvell-mrvl-stock-falls-10-after-q2-earnings-buy-the-dip",
+    "https://www.marketbeat.com/earnings/reports/2026-8-5-ionq-inc-stock/",
+    "https://www.stocktitan.net/news/RGTI/rigetti-computing-reports-second-quarter-2026-financial-i812eesegntu.html",
+    "https://tradersunion.com/news/stocks/show/2898916-rigetti-surges-8-40percent-today-to/",
+    "https://ts2.tech/en/rigetti-computing-nasdaqrgti-hardware-revenue-climbs-rally-faces-challenge-from-buyer-concentration/",
+    "https://www.chase.com/personal/investments/learning-and-insights/article/will-the-federal-reserve-hike-rates-at-october-2026-fomc-meeting",
+    "https://defirate.com/prediction-markets/fed-decision-odds/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "REFRESH (รายงานก่อน 10 ส.ค. 2026) LOI $100M กับกระทรวงพาณิชย์แปลงเป็นข้อตกลงจริงแล้ว แต่ RGTI ยังลง ~35% ถึง 52-week low ขณะหุ้นควอนตัมถูก de-rate รอบการเพิ่มทุน $2B ของ IonQ งบ Q3 วันที่ 9 พ.ย. คือ catalyst ถัดไป เป้าเฉลี่ย $28.53 (+152% ผ่านเกณฑ์) เปลี่ยนประเภท catalyst จาก partnership_win (tier-2 laggard; เกิดขึ้นแล้ว) เป็น earnings_beat เขียนโดยคำนึงถึง optimism bias ของ Base ใน core +23.7pp (P75 ที่เกิดจริงใน 14 วัน +6.6%, P90 +11.7%) Base +25% สมมติรีบาวด์ใน 1-3 เดือนถ้า Q3 แสดงความคืบหน้า roadmap งบ 9 พ.ย. อยู่ห่าง 14 วัน ขอบกรอบ North Star พอดี แนะนำ 2-3% ของ portfolio — Speculative",
+      "priceNote": "ราคาสด $11.31 (-1.8%) 26 ต.ค. 2026 — อยู่ที่ 52-week low ($11.11-$44.52) ลง -35% นับจาก 10 ส.ค. Market cap ~$3.77B",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        {
+          "name": "งบ Q3 2026",
+          "description": "งบแรกหลังลงนามข้อตกลง $100M กับกระทรวงพาณิชย์ ดูความคืบหน้า roadmap (Cepheus/QPU รุ่นถัดไป) ยอดขาย Novera และการไหลของเงิน DoC"
+        },
+        {
+          "name": "ข้อตกลง $100M กับกระทรวงพาณิชย์ — ลงนามแล้ว",
+          "description": "LOI แปลงเป็นข้อตกลงจริงเพื่อเร่ง R&D ควอนตัมแบบ superconducting (ควบคู่กับการลงทุนของ DoC ใน D-Wave และ Quantinuum)"
+        }
+      ],
+      "risks": [
+        "รายได้เล็กมาก (TTM $13.4M) เทียบขาดทุน TTM ~$239M มูลค่าขึ้นกับ roadmap ทั้งหมด",
+        "sentiment ควอนตัมเปราะบาง: dilution ของคู่แข่ง (IonQ $2B) ฉุดทั้งกลุ่ม",
+        "การทำ roadmap ทางเทคนิค (fidelity, การขยาย qubit) เทียบคู่แข่ง trapped-ion และ neutral-atom",
+        "เงินทุนรัฐกระจุก — เงิน DoC ไปที่ D-Wave และ Quantinuum ด้วย",
+        "beta สูงต่อดอกเบี้ยและเงินรายย่อย"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ยนโยบาย 3.75-4.00% หลัง Fed ขึ้นดอกเบี้ยแบบเซอร์ไพรส์เมื่อ 16 ก.ย. 2026 (ครั้งแรกตั้งแต่ 2023) ประชุม FOMC 27-28 ต.ค. ตลาดให้น้ำหนักคงดอกเบี้ย ~93% / ขึ้น 25bp ~7% (ณ 25 ต.ค.) แต่โอกาสขึ้นดอกเบี้ยเคยพุ่งถึง ~44% หลัง CPI ก.ย. ออกมาร้อนเมื่อ 14 ต.ค. ทิศทางจึงยังเสี่ยงสองด้าน",
+        "inflationNote": "CPI ก.ย. +0.6% m/m, 3.7% y/y ส่วน core +0.3% m/m, 2.6% y/y สูงกว่าคาดทั้งคู่ — เงินเฟ้อ headline เร่งตัวทำให้การขึ้นดอกเบี้ยอีกครั้งในปี 2026 ยังเป็นไปได้",
+        "sectorImpact": "ควอนตัมฮาร์ดแวร์ที่มีเงินทุนแต่ยังไม่ถึงขนาด เทรดเป็นตัวแทน beta สูงต่อดอกเบี้ย/sentiment ร่วมกับ IONQ และ QBTS",
+        "summary": "MEDIUM — ตลาดคาด FOMC 28 ต.ค. คงดอกเบี้ย ~93% แต่ CPI ก.ย. ร้อน (headline 3.7%) และยังอาจขึ้นได้อีกในปี 2026 แรงขายหุ้นเติบโต/AI infra เดือน ต.ค. ส่วนใหญ่มาจากดอกเบี้ย ผลประชุมและ dot plot จึงกระทบ multiple ของหุ้นตัวนี้โดยตรง"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — หุ้นควอนตัมที่มีเงินทุน อยู่ที่ 52-week low ก่อนงบ 9 พ.ย. median ผลตอบแทนถึงวัน catalyst ของ core = -6.9% และ 74% ของหุ้นติดลบ ณ วัน event (n=54) — เข้าที่ Entry 2 ($10-10.80) เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น ไม่ใช่จุดเข้าหลัก (median ถึงวัน catalyst ของ core -6.9%, n=54)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "ต่ำกว่า 52-week low $11.11 — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ย่อลึก",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — Q3 มีความคืบหน้า roadmap รีบาวด์ไป ~$14 กรอบ ~1-3 เดือน"
+        },
+        "tp2": {
+          "note": "Bull — milestone fidelity/การขยาย + ออร์เดอร์รัฐใหม่ ~$19"
+        },
+        "tp3": {
+          "note": "Moon — กลุ่ม re-rate กลับไปหาเป้าเฉลี่ย (~$28) thesis 12 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-16% — กว้างกว่า medianMAE ของ earnings_beat (-9.6%, n=42) หุ้น beta สูงที่ 52-week low ต้องการพื้นที่",
+          "hardNote": "-30% — capitulation ออก",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "รับได้ ✅ — ผ่านเกณฑ์ขั้นต่ำ 2:1 ของ core"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "งบ Q3 2026",
+          "note": "Roadmap + เงิน DoC"
+        }
+      ]
+    }
+  }
+}

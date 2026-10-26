@@ -1,0 +1,297 @@
+{
+  "ticker": "AGIO",
+  "companyName": "Agios Pharmaceuticals, Inc.",
+  "companyDescription": "Rare-disease biopharma — PYRUKYND/AQVESME (mitapivat) is the only approved pyruvate-kinase activator for hemolytic anemias, now filed for sickle cell disease",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-10-26T00:00:00.000Z",
+  "price": 37.78,
+  "priceChange": 2.11,
+  "priceNote": "Live $37.78 (+2.1%) on Oct 26, 2026 — 52-week range $22.24-$46.00. Market cap ~$2.26B.",
+  "marketCap": "~$2.26B",
+  "sector": "Biotechnology / Rare Hematology",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 0,
+  "summary": "REFRESH (prior report Sep 29, 2026). Mitapivat's SCD PDUFA lands Nov 1 (priority review); the stock is +7.6% since Sep 29. Consensus moved to $45.88 (+21.4%), so it just clears the 20% gate (BofA $50, Truist cut to $37). Q3 earnings follow Nov 5. fda_decision is n=3 in core feedback (context only). Written against the core Base optimism bias of +23.7pp (realized 14d P75 +6.6%, P90 +11.7%). Base +15% assumes approval and a ~1-month re-rating toward $43. The upside is the thinnest on the board, so size modestly. แนะนำ 3-5% ของ portfolio.",
+  "catalysts": [
+    {
+      "icon": "💊",
+      "name": "Mitapivat sickle cell disease sNDA — PDUFA (priority review)",
+      "description": "FDA goal date Nov 1, 2026 (a Sunday — action could land Oct 30 or Nov 2). Approval would make mitapivat the first PK activator for SCD.",
+      "urgencyLabel": "6 DAYS",
+      "dateBadge": "Nov 1, 2026",
+      "catalystDate": "2026-11-01",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📊",
+      "name": "Q3 2026 earnings",
+      "description": "First read on SCD launch readiness and PYRUKYND thalassemia uptake.",
+      "urgencyLabel": "10 DAYS",
+      "dateBadge": "Nov 5, 2026",
+      "catalystDate": "2026-11-05",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Approval is not certain: Agios discontinued tebapivat in SCD (Jul 2026) after Phase 2 failed to show a differentiated profile — SCD has been a hard indication.",
+    "Consensus upside is only ~21% — much of an approval may already be priced after the run from $22.",
+    "Launch execution in SCD (payer access, physician adoption) against established therapies.",
+    "Sunday PDUFA date — the action may arrive a day early or late.",
+    "Label risk: a narrow label or safety monitoring requirement would cap sales."
+  ],
+  "estimateDates": [
+    {
+      "event": "Mitapivat SCD PDUFA",
+      "dateRange": "Nov 1, 2026",
+      "note": "Priority review",
+      "est": "binary",
+      "highlight": "blue"
+    },
+    {
+      "event": "Q3 2026 earnings",
+      "dateRange": "Nov 5, 2026",
+      "note": "Launch readiness",
+      "est": "Q2 rev $44.7M",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -30,
+      "price": 26.45
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 15,
+      "price": 43.45
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 30,
+      "price": 49.11
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 50,
+      "price": 56.67
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus (10 analysts, stockanalysis.com)",
+      "target": 45.88,
+      "rating": "Buy"
+    },
+    {
+      "firm": "BofA Securities (raised)",
+      "target": 50,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Truist (lowered)",
+      "target": 37,
+      "rating": "Hold"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds at 3.75-4.00% after the surprise Sep 16, 2026 hike (first since 2023). The Oct 27-28 FOMC is priced ~93% hold / ~7% +25bp as of Oct 25 — but hike odds briefly spiked to ~44% after the hot Sep CPI print on Oct 14, so the path stays two-sided.",
+    "inflationNote": "September CPI +0.6% m/m, 3.7% y/y headline; core +0.3% m/m, 2.6% y/y — both above consensus. Headline re-acceleration keeps a further 2026 hike live.",
+    "sectorImpact": "Commercial-stage rare-disease biotech with ~$2.3B cap; rate sensitivity is moderate, the FDA outcome dominates.",
+    "summary": "MEDIUM — the Oct 28 FOMC is priced ~93% hold, but September CPI ran hot (3.7% headline) and a further 2026 hike is still live. October's growth/AI-infra selloff was largely a rates trade, so the decision and the dot path matter directly for this name's multiple."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 37.78,
+        "note": "Current price — starter only; not preferred (core at-catalyst median -6.9%, n=54)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 34.5,
+        "rangeMax": 36,
+        "note": "Pre-PDUFA dip zone — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 31,
+        "note": "Deep dip — post-decision only",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 43.45,
+      "pct": 15,
+      "note": "Base — approval on time; re-rates to ~$43.45. Horizon ~1 month."
+    },
+    "tp2": {
+      "price": 49.11,
+      "pct": 30,
+      "note": "Bull — broad label; ~$49, near BofA's $50."
+    },
+    "tp3": {
+      "price": 56.67,
+      "pct": 50,
+      "note": "Moon — strong early SCD uptake; ~$57. 12-month thesis.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 31.74,
+      "tightPct": -16,
+      "tightNote": "-16% — wider than the core overall medianMAE (-14%; fda_decision n=3, too thin).",
+      "hard": 26.45,
+      "hardPct": -30,
+      "hardNote": "-30% — CRL territory.",
+      "riskReward": "1.9 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Below the 2:1 core floor — size down"
+    },
+    "verdict": "BUY (Speculative) — a priority-review PDUFA 6 days out with modest (~21%) consensus upside. The measured core median at-catalyst return is -6.9% with 74% of picks underwater at their event (n=54), so Entry 2 ($34.50-36) is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "Priority-review PDUFA names typically see a modest drift into the decision date as positioning builds, though moves 40-200%+ in either direction are common on the day itself given how binary the outcome is",
+    "preRunupTiming": "1-2 weeks before the PDUFA date",
+    "preRunupPct": "+5% to +15%",
+    "postWin": {
+      "avgPct": 25,
+      "range": "+11% to +45%",
+      "note": "Agios's own precedent: AQVESME thalassemia approval (Dec 23, 2025) moved AGIO +19.97% same day (open $24.85, close $29.50). Sector context: small-cap priority-review approvals typically run +30-100%+, though a well-anticipated approval on an already-large-cap name can be muted — see Madrigal's +11% on the first-ever MASH approval (Mar 2024), where much of the move was pre-priced.",
+      "exampleDate": "Dec 2025"
+    },
+    "postLose": {
+      "avgPct": -25,
+      "range": "-15% to -50%",
+      "note": "Industry-wide priority-review CRL pattern: 'fixable' (CMC/procedural) CRLs average -15% to -35%; 'fatal' (efficacy/safety) CRLs average -40% to -80%. No direct Agios CRL precedent exists for mitapivat — this is a category-level reference, not a company-specific case.",
+      "exampleDate": "2024-2025 priority-review cohort"
+    },
+    "spotSizing": {
+      "pct": 5,
+      "reason": "5%. fda_decision has n=3 in core feedback (context only). Approval odds are reasonable, but the tebapivat SCD discontinuation (Jul 2026) shows the indication isn't easy; consensus upside is only ~21%."
+    },
+    "stopPreCatalyst": {
+      "pct": -16,
+      "price": 31.74,
+      "note": "Wider than the core overall medianMAE (-14%)."
+    },
+    "stopPostCatalyst": {
+      "pct": -20,
+      "note": "If FDA issues a CRL or a restrictive label, exit on day 1."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "AGIO",
+      "event": "AQVESME (mitapivat) FDA approval for thalassemia anemia — same drug, same company, direct precedent for the Nov 1 sickle cell PDUFA",
+      "date": "Dec 2025",
+      "movePct": 19.97,
+      "days": 1,
+      "outcome": "good",
+      "note": "The single best comparable available — identical mechanism, same sponsor, only the indication differs"
+    },
+    {
+      "ticker": "MDGL",
+      "event": "Rezdiffra (resmetirom) approval — first-ever FDA-approved MASH therapy",
+      "date": "Mar 2024",
+      "movePct": 11,
+      "days": 1,
+      "outcome": "good",
+      "note": "Smaller move than typical because the approval was well-anticipated and already large-cap — illustrates the downside case where a clean approval is mostly priced in"
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/agio/",
+    "https://finance.yahoo.com/healthcare/articles/agios-pharmaceuticals-agio-bargain-fda-121327173.html",
+    "https://investor.agios.com/news-releases/news-release-details/us-fda-grants-priority-review-agios-snda-mitapivat-sickle-cell",
+    "https://www.nasdaq.com/articles/agio-rises-nearly-20-fda-approval-aqvesme-thalassemia-anemia",
+    "https://www.fool.com/investing/2024/03/26/heres-1-huge-new-reason-to-buy-madrigal-pharmaceut/",
+    "https://www.newsbreak.com/tipranks-336537182/4786694093119-agios-pharmaceuticals-buy-rating-reaffirmed-with-unchanged-46-price-target-on-mitapivat-sickle-cell-catalyst-and-aqvesme-thalassemia-launch-momentum",
+    "https://www.chase.com/personal/investments/learning-and-insights/article/will-the-federal-reserve-hike-rates-at-october-2026-fomc-meeting",
+    "https://defirate.com/prediction-markets/fed-decision-odds/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "REFRESH (รายงานก่อน 29 ก.ย. 2026) PDUFA ของ mitapivat ใน SCD 1 พ.ย. (priority review) หุ้นขึ้น +7.6% นับจาก 29 ก.ย. เป้าเฉลี่ยเปลี่ยนเป็น $45.88 (+21.4%) ผ่านเกณฑ์ 20% แบบเฉียด (BofA $50, Truist ลดเป็น $37) งบ Q3 ตามมา 5 พ.ย. fda_decision มี n=3 ใน core feedback (บริบทเท่านั้น) เขียนโดยคำนึงถึง optimism bias ของ Base ใน core +23.7pp (P75 ที่เกิดจริงใน 14 วัน +6.6%, P90 +11.7%) Base +15% สมมติได้อนุมัติและ re-rate ใน ~1 เดือนไปราว $43 upside บางที่สุดบนกระดาน จึงคุมขนาด แนะนำ 3-5% ของ portfolio",
+      "priceNote": "ราคาสด $37.78 (+2.1%) 26 ต.ค. 2026 — ช่วง 52 สัปดาห์ $22.24-$46.00 Market cap ~$2.26B",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        {
+          "name": "sNDA ของ mitapivat ในโรคเม็ดเลือดแดงรูปเคียว — วัน PDUFA (priority review)",
+          "description": "วันตัดสินของ FDA 1 พ.ย. 2026 (วันอาทิตย์ — อาจประกาศ 30 ต.ค. หรือ 2 พ.ย.) ถ้าอนุมัติ mitapivat จะเป็นยากระตุ้น PK ตัวแรกสำหรับ SCD"
+        },
+        {
+          "name": "งบ Q3 2026",
+          "description": "สัญญาณแรกเรื่องความพร้อมเปิดตัวใน SCD และยอด PYRUKYND ใน thalassemia"
+        }
+      ],
+      "risks": [
+        "การอนุมัติไม่แน่นอน: Agios หยุดพัฒนา tebapivat ใน SCD (ก.ค. 2026) หลัง Phase 2 ไม่แสดงความแตกต่าง SCD เป็นข้อบ่งใช้ที่ยาก",
+        "upside ตามเป้าเฉลี่ยแค่ ~21% การอนุมัติอาจสะท้อนในราคาไปมากแล้วหลังวิ่งจาก $22",
+        "การเปิดตัวใน SCD (การเบิกจ่าย การยอมรับของแพทย์) แข่งกับการรักษาที่มีอยู่",
+        "PDUFA ตรงวันอาทิตย์ — อาจประกาศเร็วหรือช้าหนึ่งวัน",
+        "ความเสี่ยงฉลาก: ฉลากแคบหรือต้องติดตามความปลอดภัยจะจำกัดยอดขาย"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ยนโยบาย 3.75-4.00% หลัง Fed ขึ้นดอกเบี้ยแบบเซอร์ไพรส์เมื่อ 16 ก.ย. 2026 (ครั้งแรกตั้งแต่ 2023) ประชุม FOMC 27-28 ต.ค. ตลาดให้น้ำหนักคงดอกเบี้ย ~93% / ขึ้น 25bp ~7% (ณ 25 ต.ค.) แต่โอกาสขึ้นดอกเบี้ยเคยพุ่งถึง ~44% หลัง CPI ก.ย. ออกมาร้อนเมื่อ 14 ต.ค. ทิศทางจึงยังเสี่ยงสองด้าน",
+        "inflationNote": "CPI ก.ย. +0.6% m/m, 3.7% y/y ส่วน core +0.3% m/m, 2.6% y/y สูงกว่าคาดทั้งคู่ — เงินเฟ้อ headline เร่งตัวทำให้การขึ้นดอกเบี้ยอีกครั้งในปี 2026 ยังเป็นไปได้",
+        "sectorImpact": "ไบโอเทคโรคหายากที่มีรายได้แล้ว cap ~$2.3B อ่อนไหวต่อดอกเบี้ยปานกลาง ผล FDA สำคัญที่สุด",
+        "summary": "MEDIUM — ตลาดคาด FOMC 28 ต.ค. คงดอกเบี้ย ~93% แต่ CPI ก.ย. ร้อน (headline 3.7%) และยังอาจขึ้นได้อีกในปี 2026 แรงขายหุ้นเติบโต/AI infra เดือน ต.ค. ส่วนใหญ่มาจากดอกเบี้ย ผลประชุมและ dot plot จึงกระทบ multiple ของหุ้นตัวนี้โดยตรง"
+      },
+      "entryStrategy": {
+        "verdict": "BUY (Speculative) — PDUFA แบบ priority review อีก 6 วัน upside ตามเป้าเฉลี่ยไม่มาก (~21%) median ผลตอบแทนถึงวัน catalyst ของ core = -6.9% และ 74% ของหุ้นติดลบ ณ วัน event (n=54) — เข้าที่ Entry 2 ($34.50-36) เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น ไม่ใช่จุดเข้าหลัก (median ถึงวัน catalyst ของ core -6.9%, n=54)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "โซนย่อก่อน PDUFA — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ย่อลึก — หลังผลตัดสินเท่านั้น",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — อนุมัติตามกำหนด re-rate ไป ~$43.45 กรอบ ~1 เดือน"
+        },
+        "tp2": {
+          "note": "Bull — ฉลากกว้าง ~$49 ใกล้เป้า BofA $50"
+        },
+        "tp3": {
+          "note": "Moon — ยอดใช้ใน SCD ช่วงแรกแข็งแรง ~$57 thesis 12 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-16% — กว้างกว่า medianMAE ภาพรวม core (-14%; fda_decision n=3 บางเกินใช้)",
+          "hardNote": "-30% — โซน CRL",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "ต่ำกว่าเกณฑ์ 2:1 ของ core — ลดขนาด position"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "PDUFA ของ mitapivat ใน SCD",
+          "note": "Priority review"
+        },
+        {
+          "event": "งบ Q3 2026",
+          "note": "ความพร้อมเปิดตัว"
+        }
+      ]
+    }
+  }
+}

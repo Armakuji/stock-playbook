@@ -1,0 +1,273 @@
+{
+  "ticker": "ACHR",
+  "companyName": "Archer Aviation Inc.",
+  "companyDescription": "eVTOL air-taxi developer nearing FAA type certification — recently acquired Boeing's Wisk Aero (autonomous) and Insitu (drone) units to broaden its aerospace platform",
+  "exchange": "NYSE",
+  "generatedAt": "2026-10-26T00:00:00.000Z",
+  "price": 3.81,
+  "priceChange": -2.56,
+  "priceNote": "Live $3.81 (-2.6%) on Oct 26, 2026 — fresh 52-week low ($3.68-$11.72), -32% since Sep 29. Market cap ~$2.93B; ~$1.5B+ liquidity.",
+  "marketCap": "~$2.93B",
+  "sector": "Industrials / Advanced Air Mobility (eVTOL)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Speculative",
+  "score": 0,
+  "summary": "REFRESH (prior report Sep 29, 2026). ACHR is down ~32% to a new 52-week low with the thesis unchanged: first eVTOL through FAA TC Phase 3 of 4, piloted Bay Area flights, Texas networks announced, Wisk/Insitu/SkyGrid closing at year-end, and ARK adding ~$12.1M in early October. Q3 earnings move to Nov 9. Consensus $10.89 (+186%; clears the gate). Written against the core Base optimism bias of +23.7pp (realized 14d P75 +6.6%, P90 +11.7%). Base +25% assumes a ~1-3 month relief move on a credible Phase 4 timeline. The print is 14 days out, at the edge of the North Star window. แนะนำ 2-3% ของ portfolio — Speculative.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 2026 earnings + certification update",
+      "description": "Nov 9 (per stockanalysis; was ~Nov 6). The read is burn (Q2 net loss $263.2M), liquidity, the FAA Phase 4 timeline, and Wisk/Insitu/SkyGrid closing.",
+      "urgencyLabel": "14 DAYS",
+      "dateBadge": "Nov 9, 2026",
+      "catalystDate": "2026-11-09",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Pre-revenue (TTM revenue ~$6.9M) with ~$800M TTM net loss.",
+    "No confirmed FAA Phase 4 timeline; commercial launch could slip into 2027.",
+    "Repeatedly sells off on rising yields — high beta.",
+    "Wisk/Insitu/SkyGrid integration still pending remaining approvals.",
+    "Sector-wide eVTOL safety-incident risk."
+  ],
+  "estimateDates": [
+    {
+      "event": "Q3 2026 earnings",
+      "dateRange": "Nov 9, 2026",
+      "note": "Burn + FAA Phase 4 timing",
+      "est": "Q2 net loss $263.2M",
+      "highlight": "blue"
+    },
+    {
+      "event": "FAA Type Certification",
+      "dateRange": "H2 2026",
+      "note": "Final phase",
+      "est": "pending",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -30,
+      "price": 2.67
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 25,
+      "price": 4.76
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 60,
+      "price": 6.1
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 150,
+      "price": 9.53
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus (9 analysts, stockanalysis.com)",
+      "target": 10.89,
+      "rating": "Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "HIGH",
+    "rateOutlook": "Fed funds at 3.75-4.00% after the surprise Sep 16, 2026 hike (first since 2023). The Oct 27-28 FOMC is priced ~93% hold / ~7% +25bp as of Oct 25 — but hike odds briefly spiked to ~44% after the hot Sep CPI print on Oct 14, so the path stays two-sided.",
+    "inflationNote": "September CPI +0.6% m/m, 3.7% y/y headline; core +0.3% m/m, 2.6% y/y — both above consensus. Headline re-acceleration keeps a further 2026 hike live.",
+    "sectorImpact": "Pre-revenue, high-beta eVTOL name that has repeatedly sold off on rising Treasury yields.",
+    "summary": "HIGH — the Oct 28 FOMC is priced ~93% hold, but September CPI ran hot (3.7% headline) and a further 2026 hike is still live. October's growth/AI-infra selloff was largely a rates trade, so the decision and the dot path matter directly for this name's multiple."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 3.81,
+        "note": "Current price — starter only; not preferred (core at-catalyst median -6.9%, n=54)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 3.3,
+        "rangeMax": 3.6,
+        "note": "Below the $3.68 52-week low — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 2.9,
+        "note": "Deep dip",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 4.76,
+      "pct": 24.9,
+      "note": "Base — credible Phase 4 timeline in Q3; ~$4.76. Horizon ~1-3 months."
+    },
+    "tp2": {
+      "price": 6.1,
+      "pct": 60.1,
+      "note": "Bull — type certificate plus first commercial ops; ~$6.10."
+    },
+    "tp3": {
+      "price": 9.53,
+      "pct": 150.1,
+      "note": "Moon — ~$9.50, toward consensus. 12-24 month thesis.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 3.2,
+      "tightPct": -16,
+      "tightNote": "-16% — wider than the core earnings_beat medianMAE (-9.6%, n=42); high beta needs the room.",
+      "hard": 2.67,
+      "hardPct": -30,
+      "hardNote": "-30% — certification-delay territory.",
+      "riskReward": "3.8 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Acceptable ✅ — clears the 2:1 core floor"
+    },
+    "verdict": "SPECULATIVE — thesis intact at a 52-week low into a Nov 9 print. The measured core median at-catalyst return is -6.9% with 74% of picks underwater at their event (n=54), so Entry 2 ($3.30-3.60) is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Certification and M&A news (not the earnings print itself) has been the bigger mover for ACHR in 2026 — the Wisk Aero + Insitu acquisition news drove a standalone +15% pop ahead of the Q2 print",
+    "preRunupTiming": "1-2 weeks before the print, on certification/deal headlines",
+    "preRunupPct": "+8% to +15%",
+    "postWin": {
+      "avgPct": 12,
+      "range": "flat to +15%",
+      "note": "ACHR's Q2 2026 report (Aug 10, 2026): revenue +213% YoY to $5M, but the earnings-day reaction itself was muted (~-1%) as Tesla Roadster headlines pulled sentiment away from advanced-transportation names same window. The clearer positive comp is the +15% Wisk Aero/Insitu acquisition announcement, which shows the stock can move hard on concrete milestone news.",
+      "exampleDate": "Aug 2026"
+    },
+    "postLose": {
+      "avgPct": -15,
+      "range": "-5% to -20%",
+      "note": "General 2026 pattern for ACHR: cash-burn and insider-sale-plan headlines have weighed on the stock through the year (down ~35% YTD as of late August 2026) even without a single sharp catalyst-day drop identified in this research pass.",
+      "exampleDate": "Aug 2026"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "3%. earnings_beat carries no tier-2 penalty (n=42). Pre-revenue with ~$800M TTM losses; the print matters mainly for the certification timeline."
+    },
+    "stopPreCatalyst": {
+      "pct": -16,
+      "price": 3.2,
+      "note": "Wider than the earnings_beat medianMAE (-9.6%, n=42)."
+    },
+    "stopPostCatalyst": {
+      "pct": -18,
+      "note": "If Q3 pushes certification into late 2027, exit."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "ACHR",
+      "event": "Wisk Aero + Insitu acquisition from Boeing announced",
+      "date": "Aug 2026",
+      "movePct": 15,
+      "days": 1,
+      "outcome": "good",
+      "note": "Shows concrete milestone/deal news moves ACHR more than the earnings print itself"
+    },
+    {
+      "ticker": "ACHR",
+      "event": "Q2 2026 earnings — revenue +213% YoY but shares roughly flat/down amid sector-wide Tesla Roadster headline pressure",
+      "date": "Aug 2026",
+      "movePct": -1,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "Illustrates that a clean beat can still be overridden by unrelated sector sentiment"
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/achr/",
+    "https://aerospaceamerica.aiaa.org/archer-to-explore-how-to-incorporate-wisks-autonomous-flight-tech-ceo-says/",
+    "https://www.sec.gov/Archives/edgar/data/0001824502/000182450226000035/archerq126earningspressr.htm",
+    "https://stockstotrade.com/news/archer-aviation-inc-achr-news-2026_08_20/",
+    "https://finance.yahoo.com/markets/stocks/articles/archer-aviation-down-35-still-142727029.html",
+    "https://www.commercialuavnews.com/faa-regulation-certification-aam-joby-archer-electra",
+    "https://www.chase.com/personal/investments/learning-and-insights/article/will-the-federal-reserve-hike-rates-at-october-2026-fomc-meeting",
+    "https://defirate.com/prediction-markets/fed-decision-odds/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "REFRESH (รายงานก่อน 29 ก.ย. 2026) ACHR ลง ~32% ถึง 52-week low ใหม่ โดย thesis ไม่เปลี่ยน: eVTOL รายแรกที่ผ่าน FAA TC เฟส 3 จาก 4 บินแบบมีนักบินใน Bay Area ประกาศเครือข่ายเท็กซัส ปิดดีล Wisk/Insitu/SkyGrid สิ้นปี และ ARK ซื้อเพิ่ม ~$12.1M ต้น ต.ค. งบ Q3 เลื่อนเป็น 9 พ.ย. เป้าเฉลี่ย $10.89 (+186% ผ่านเกณฑ์) เขียนโดยคำนึงถึง optimism bias ของ Base ใน core +23.7pp (P75 ที่เกิดจริงใน 14 วัน +6.6%, P90 +11.7%) Base +25% สมมติรีบาวด์ใน ~1-3 เดือนถ้าไทม์ไลน์เฟส 4 น่าเชื่อถือ งบอยู่ห่าง 14 วัน ขอบกรอบ North Star พอดี แนะนำ 2-3% ของ portfolio — Speculative",
+      "priceNote": "ราคาสด $3.81 (-2.6%) 26 ต.ค. 2026 — ทำ 52-week low ใหม่ ($3.68-$11.72) ลง -32% นับจาก 29 ก.ย. Market cap ~$2.93B; สภาพคล่อง ~$1.5B+",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        {
+          "name": "งบ Q3 2026 + อัปเดตการรับรอง",
+          "description": "9 พ.ย. (ตาม stockanalysis; เดิม ~6 พ.ย.) ดูการเผาเงิน (Q2 ขาดทุน $263.2M) สภาพคล่อง ไทม์ไลน์ FAA เฟส 4 และการปิดดีล Wisk/Insitu/SkyGrid"
+        }
+      ],
+      "risks": [
+        "ยังไม่มีรายได้ (TTM ~$6.9M) ขาดทุน TTM ~$800M",
+        "ยังไม่มีไทม์ไลน์ FAA เฟส 4 ที่ยืนยัน การให้บริการเชิงพาณิชย์อาจเลื่อนไป 2027",
+        "ร่วงตามอัตราผลตอบแทนที่สูงขึ้นซ้ำ ๆ — beta สูง",
+        "การรวม Wisk/Insitu/SkyGrid ยังรออนุมัติที่เหลือ",
+        "ความเสี่ยงอุบัติเหตุ eVTOL ทั้งกลุ่ม"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ยนโยบาย 3.75-4.00% หลัง Fed ขึ้นดอกเบี้ยแบบเซอร์ไพรส์เมื่อ 16 ก.ย. 2026 (ครั้งแรกตั้งแต่ 2023) ประชุม FOMC 27-28 ต.ค. ตลาดให้น้ำหนักคงดอกเบี้ย ~93% / ขึ้น 25bp ~7% (ณ 25 ต.ค.) แต่โอกาสขึ้นดอกเบี้ยเคยพุ่งถึง ~44% หลัง CPI ก.ย. ออกมาร้อนเมื่อ 14 ต.ค. ทิศทางจึงยังเสี่ยงสองด้าน",
+        "inflationNote": "CPI ก.ย. +0.6% m/m, 3.7% y/y ส่วน core +0.3% m/m, 2.6% y/y สูงกว่าคาดทั้งคู่ — เงินเฟ้อ headline เร่งตัวทำให้การขึ้นดอกเบี้ยอีกครั้งในปี 2026 ยังเป็นไปได้",
+        "sectorImpact": "หุ้น eVTOL ที่ยังไม่มีรายได้และ beta สูง ร่วงตามอัตราผลตอบแทนพันธบัตรที่สูงขึ้นซ้ำ ๆ",
+        "summary": "HIGH — ตลาดคาด FOMC 28 ต.ค. คงดอกเบี้ย ~93% แต่ CPI ก.ย. ร้อน (headline 3.7%) และยังอาจขึ้นได้อีกในปี 2026 แรงขายหุ้นเติบโต/AI infra เดือน ต.ค. ส่วนใหญ่มาจากดอกเบี้ย ผลประชุมและ dot plot จึงกระทบ multiple ของหุ้นตัวนี้โดยตรง"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — thesis ยังอยู่ ที่ 52-week low ก่อนงบ 9 พ.ย. median ผลตอบแทนถึงวัน catalyst ของ core = -6.9% และ 74% ของหุ้นติดลบ ณ วัน event (n=54) — เข้าที่ Entry 2 ($3.30-3.60) เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น ไม่ใช่จุดเข้าหลัก (median ถึงวัน catalyst ของ core -6.9%, n=54)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "ต่ำกว่า 52-week low $3.68 — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ย่อลึก",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — Q3 ให้ไทม์ไลน์เฟส 4 ที่น่าเชื่อถือ ~$4.76 กรอบ ~1-3 เดือน"
+        },
+        "tp2": {
+          "note": "Bull — ได้ type certificate + เริ่มให้บริการเชิงพาณิชย์ ~$6.10"
+        },
+        "tp3": {
+          "note": "Moon — ~$9.50 เข้าหาเป้าเฉลี่ย thesis 12-24 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-16% — กว้างกว่า medianMAE ของ earnings_beat (-9.6%, n=42) beta สูงต้องการพื้นที่",
+          "hardNote": "-30% — โซนการรับรองล่าช้า",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "รับได้ ✅ — ผ่านเกณฑ์ขั้นต่ำ 2:1 ของ core"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "งบ Q3 2026",
+          "note": "การเผาเงิน + ไทม์ไลน์ FAA เฟส 4"
+        },
+        {
+          "event": "FAA Type Certification",
+          "note": "เฟสสุดท้าย"
+        }
+      ]
+    }
+  }
+}
