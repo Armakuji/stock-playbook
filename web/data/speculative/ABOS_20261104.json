@@ -1,0 +1,324 @@
+{
+  "ticker": "ABOS",
+  "companyName": "Acumen Pharmaceuticals, Inc.",
+  "companyDescription": "Former Alzheimer's biotech · sabirnetug (ACU193) failed Phase 2 ALTITUDE-AD on Oct 30, 2026 and was discontinued; now a cash shell (~$78.6M cash at Sep 30) evaluating strategic alternatives",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-04T17:00:00.000Z",
+  "price": 0.2319,
+  "priceChange": -0.9,
+  "priceNote": "Live $0.2319 (-0.9%) on Nov 4, 2026 — down ~89% from $2.09 at the Oct 26 report after the Oct 30 ALTITUDE-AD failure (52-week $0.20-$3.60); 52-week range $0.20-$3.60. Nov 4 tape: S&P futures -1.2% / Nasdaq -2% on a Democratic midterm sweep; Dec 9 hike ~85% priced.",
+  "marketCap": "~$17M",
+  "sector": "Healthcare / Neurology Biotech",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 0,
+  "summary": "REFRESH (prior report Oct 26, 2026): the binary resolved negatively. ALTITUDE-AD missed its primary endpoint at both doses (and CDR-SB), sabirnetug — the only clinical asset — was discontinued, and BofA (PT $1) and Stifel downgraded. What remains is a cash-shell setup: ~$78.6M cash at Sep 30 vs a ~$17M market cap, with management 'evaluating strategic options' (reverse merger, wind-down, or EBD program). This is no longer a moonshot thesis; it is a liquidation-value bet whose outcome depends on wind-down costs and how management deploys the cash. Base cut from +45% to +30% (above the lane's realized 30d P75 (+12.2%; written-Base bias +72.7pp)), assuming a cash-return or reverse-merger announcement within ~3-6 months. แนะนำ 0.5% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 50%+.",
+  "catalysts": [
+    {
+      "icon": "🧾",
+      "name": "Strategic alternatives outcome",
+      "description": "After discontinuing sabirnetug, management is evaluating options incl. the EBD program; cash ~$78.6M (Sep 30) vs ~$17M cap.",
+      "urgencyLabel": "UNDATED",
+      "dateBadge": "TBD",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🧪",
+      "name": "ALTITUDE-AD biomarker/imaging data",
+      "description": "Additional fluid-biomarker and imaging results expected 'in the coming weeks' — unlikely to revive the program.",
+      "urgencyLabel": "WEEKS",
+      "dateBadge": "Coming weeks",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "🧠",
+      "name": "Enhanced Brain Delivery IND (JCR partnership)",
+      "description": "The only remaining program; IND guided mid-2027.",
+      "urgencyLabel": "MID 2027",
+      "dateBadge": "Mid 2027",
+      "catalystDate": "2027-06-30",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "The thesis is broken: ALTITUDE-AD failed on Oct 30, 2026 and sabirnetug was discontinued. This is now a cash-shell / liquidation-value bet, not a clinical moonshot.",
+    "Cash can be consumed before it reaches shareholders: wind-down costs, severance, lease obligations and any EBD spending reduce what a liquidation or reverse merger returns.",
+    "Reverse-merger risk: shell biotechs often merge into a private company at terms that dilute existing holders heavily.",
+    "Sub-$1 price: Nasdaq continued-listing notice / reverse split risk.",
+    "Thin liquidity after an ~89% collapse — exits can be costly."
+  ],
+  "estimateDates": [
+    {
+      "event": "Strategic alternatives outcome",
+      "dateRange": "TBD",
+      "note": "After discontinuing sabirnetug, management is evaluating options incl. the EBD program; cash ~$78.6M (Sep 30) vs ~$17M cap.",
+      "est": "n/a",
+      "highlight": "blue"
+    },
+    {
+      "event": "ALTITUDE-AD biomarker/imaging data",
+      "dateRange": "Coming weeks",
+      "note": "Additional fluid-biomarker and imaging results expected 'in the coming weeks' — unlikely to revive the program.",
+      "est": "n/a",
+      "highlight": "yellow"
+    },
+    {
+      "event": "Enhanced Brain Delivery IND (JCR partnership)",
+      "dateRange": "Mid 2027",
+      "note": "The only remaining program; IND guided mid-2027.",
+      "est": "n/a",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -50,
+      "price": 0.12
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 30,
+      "price": 0.3
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 100,
+      "price": 0.46
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 200,
+      "price": 0.7
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "BofA (post-failure downgrade to Underperform)",
+      "target": 1,
+      "rating": "Underperform"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held at 3.75–4.00% on Oct 28 (10–2 vote; Cook and Hammack dissented for a hike). Futures price ~85% odds of another +25bp at the Dec 9 FOMC after Logan and Musalem called for more tightening; Warsh gave no explicit December signal.",
+    "inflationNote": "Sep PCE: headline 3.6% y/y (+0.5% m/m), core 3.1% y/y (+0.3% m/m); Q3 GDP +3.4% annualized. Oct CPI on Nov 10 is the next test — core ≥0.4% m/m would effectively lock in the December hike.",
+    "sectorImpact": "A sub-$200M, pre-revenue biotech with under 12 months of cash is maximally exposed to financing conditions. A hawkish surprise compresses the window to raise on good data and deepens the discount on any raise after bad data.",
+    "summary": "LOW relevance — the outcome is a corporate-action question (cash return vs reverse merger), not a macro one."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 0.2319,
+        "note": "Current price — starter only. Not preferred: turbo at-catalyst median -13.7% (n=19)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 0.2,
+        "rangeMax": 0.22,
+        "note": "At the $0.20 52-week low — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 0.17,
+        "note": "Deep dip — only if no reverse-merger dilution is announced",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 0.3,
+      "pct": 29.4,
+      "note": "Base — strategic review points to preserving cash; ~$0.30."
+    },
+    "tp2": {
+      "price": 0.46,
+      "pct": 98.4,
+      "note": "Bull — announced cash return/tender; ~$0.46."
+    },
+    "tp3": {
+      "price": 0.7,
+      "pct": 201.9,
+      "note": "Moon — liquidation near net cash; ~$0.70 (BofA PT $1).",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 0.17,
+      "tightPct": -26.7,
+      "tightNote": "-27% — wider than the turbo overall medianMAE (bucket n<5) (-24.1%).",
+      "hard": 0.12,
+      "hardPct": -48.3,
+      "hardNote": "-50% — dilutive reverse merger.",
+      "riskReward": "3.7 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Below the 5:1 turbo target ⚠️ — size down"
+    },
+    "verdict": "SPECULATIVE · ค่าขนม 0.5% max (refreshed Nov 4) — the clinical moonshot is dead; what remains is a small cash-shell option, sized at a token level. Measured turbo at-catalyst median is -13.7% (n=19), so Entry 2 ($0.2-0.22) is preferred.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "phase3_readout",
+    "preRunup": "Resolved: the stock collapsed ~89% on the Oct 30 readout.",
+    "preRunupTiming": "Event passed (Oct 30, 2026)",
+    "preRunupPct": "-89% on the readout",
+    "postWin": {
+      "avgPct": 83,
+      "range": "+21% to +145%",
+      "note": "Average of two real Alzheimer's small-cap positive-data moves: Cassava (SAVA) +145% over Feb 2021 on simufilam cognition data, and Cognition Therapeutics (CGTX) +20.8% day-1 on its Jul 2025 Phase 2. The SAVA case was later tainted by data-integrity allegations, so treat it as the sentiment ceiling, not a base rate.",
+      "exampleDate": "Feb 2021 (SAVA) / Jul 2025 (CGTX)"
+    },
+    "postLose": {
+      "avgPct": -72,
+      "range": "-72% to -81%",
+      "note": "Athira (ATHA): LIFT-AD Alzheimer's failure on Sep 3, 2024 — -72% after hours, -81% over three sessions. This is the realistic gap-down template for a failed AD readout at a sub-$200M cap.",
+      "exampleDate": "Sep 2024"
+    },
+    "spotSizing": {
+      "pct": 0.5,
+      "reason": "0.5%. the phase3_readout catalyst already resolved negatively; this is a cash-shell option, not a turbo thesis — token size only."
+    },
+    "stopPreCatalyst": {
+      "pct": -26.7,
+      "price": 0.17,
+      "note": "Wider than the turbo overall medianMAE (bucket n<5) (-24.1%). A break below the tight stop before the catalyst means the market expects a dilutive reverse merger."
+    },
+    "stopPostCatalyst": {
+      "pct": -40,
+      "note": "If ALTITUDE-AD misses the primary endpoint, exit on day 1 — do not wait for a 'subgroup' story (the Athira pattern)."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "SAVA",
+      "event": "Simufilam Alzheimer's cognition data + end-of-Phase-2 FDA meeting",
+      "date": "Feb 2021",
+      "movePct": 145,
+      "days": 28,
+      "outcome": "good",
+      "note": "Upside template: a sub-$200M Alzheimer's name re-rated 2.5x in one month on positive cognition data. Caveat: Cassava's data later faced integrity allegations — the move shows what sentiment does, not what the science was worth."
+    },
+    {
+      "ticker": "ATHA",
+      "event": "LIFT-AD Phase 2/3 fails primary endpoint",
+      "date": "Sep 2024",
+      "movePct": -72,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Downside template: Alzheimer's readout miss at a small cap. -72% after hours, -81% over three days. ABOS's bear case (-65%) assumes cash/share (~$1.09) provides only a partial floor because of ongoing burn."
+    },
+    {
+      "ticker": "CGTX",
+      "event": "Zervimesine Phase 2 Alzheimer's data",
+      "date": "Jul 2025",
+      "movePct": 21,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "Middle case: encouraging but not decisive Phase 2 data gave only +20.8% day-1. A 'directional but not 30%' ALTITUDE-AD result likely lands here."
+    }
+  ],
+  "sources": [
+    "https://www.biospace.com/drug-development/acumen-scraps-sole-asset-after-alzheimers-fail-plunging-stock-80",
+    "https://www.investing.com/news/analyst-ratings/bofa-downgrades-acumen-pharmaceuticals-stock-on-trial-failure-93CH-4990615",
+    "https://www.rttnews.com/3706686/acumen-shares-drop-89-after-sabirnetug-fails-phase-2-alzheimer-s-trial.aspx",
+    "https://seekingalpha.com/article/4960608-acumen-pharmaceuticals-altitude-ad-failure-destroys-the-investment-thesis-rating-downgrade",
+    "https://stockanalysis.com/stocks/abos/",
+    "https://www.sec.gov/Archives/edgar/data/0001576885/000162828026067129/abos-20261026xexx991.htm",
+    "https://www.sec.gov/Archives/edgar/data/0001576885/000162828026056199/abos-20260630.htm",
+    "https://www.biospace.com/press-releases/acumen-pharmaceuticals-completes-enrollment-of-altitude-ad-a-phase-2-clinical-trial-of-sabirnetug-acu193-in-early-alzheimers-disease",
+    "https://www.fool.com/investing/2021/03/08/why-cassava-sciences-stock-skyrocketed-1451-in-feb",
+    "https://www.nasdaq.com/articles/athira-shares-plunge-after-phase-2-3-fosgonimeton-trial-alzheimers-fails-meet-endpoints",
+    "https://www.benzinga.com/markets/equities/25/07/46258444/cognition-therapeutics-shares-jump-12-after-hours-following-encouraging-phase-2-alzheimers-trial-data",
+    "https://www.cnbc.com/2026/10/28/fed-interest-rate-decision-october-2026.html",
+    "https://www.cnbc.com/2026/10/29/pce-inflation-report-september-2026-.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "REFRESH (รายงานก่อน Oct 26, 2026): binary จบในทางลบ ALTITUDE-AD พลาด endpoint หลักทั้งสองขนาดยา (และ CDR-SB) sabirnetug ซึ่งเป็นสินทรัพย์ทางคลินิกตัวเดียวถูกยุติ BofA (เป้า $1) และ Stifel ลดอันดับ ที่เหลือคือ setup แบบ cash shell: เงินสด ~$78.6M ณ 30 ก.ย. เทียบ market cap ~$17M ผู้บริหาร 'ประเมินทางเลือกเชิงกลยุทธ์' (reverse merger ปิดกิจการ หรือโปรแกรม EBD) นี่ไม่ใช่ thesis แบบ moonshot แล้ว แต่เป็นการเดิมพันมูลค่าชำระบัญชีที่ขึ้นกับต้นทุนปิดกิจการและการใช้เงินสดของผู้บริหาร Base ลดจาก +45% เป็น +30% (สูงกว่า P75 30 วันจริงของกลุ่ม (+12.2%; bias +72.7pp)) สมมติประกาศคืนเงินสดหรือ reverse merger ใน ~3-6 เดือน แนะนำ 0.5% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 50%+",
+      "priceNote": "ราคาสด $0.2319 (-0.9%) 4 พ.ย. 2026 — ลง ~89% จาก $2.09 ณ รายงาน 26 ต.ค. หลัง ALTITUDE-AD ล้มเหลว 30 ต.ค. ช่วง 52 สัปดาห์ $0.20-$3.60 ตลาด 4 พ.ย.: futures S&P -1.2% / Nasdaq -2% จากผลเลือกตั้งกลางเทอม ตลาดให้โอกาสขึ้นดอกเบี้ย 9 ธ.ค. ~85%",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "ผลการพิจารณาทางเลือกเชิงกลยุทธ์",
+          "description": "หลังยุติ sabirnetug ผู้บริหารประเมินทางเลือกรวมถึงโปรแกรม EBD เงินสด ~$78.6M (30 ก.ย.) เทียบ cap ~$17M"
+        },
+        {
+          "name": "ข้อมูล biomarker/ภาพถ่ายของ ALTITUDE-AD",
+          "description": "ผล biomarker ในของเหลวและภาพถ่ายเพิ่มเติมคาดใน 'อีกไม่กี่สัปดาห์' ไม่น่าฟื้นโปรแกรมได้"
+        },
+        {
+          "name": "IND ของ Enhanced Brain Delivery (พาร์ทเนอร์ JCR)",
+          "description": "โปรแกรมเดียวที่เหลือ คาด IND กลางปี 2027"
+        }
+      ],
+      "risks": [
+        "thesis พังแล้ว: ALTITUDE-AD ล้มเหลว 30 ต.ค. 2026 และยุติ sabirnetug ตอนนี้เป็นการเดิมพัน cash shell / มูลค่าชำระบัญชี ไม่ใช่ moonshot ทางคลินิก",
+        "เงินสดอาจถูกใช้ก่อนถึงมือผู้ถือหุ้น: ต้นทุนปิดกิจการ ค่าชดเชย สัญญาเช่า และการใช้จ่ายของ EBD ลดสิ่งที่ผู้ถือหุ้นจะได้คืน",
+        "ความเสี่ยง reverse merger: ไบโอเทคที่เป็น shell มักควบรวมกับบริษัทเอกชนด้วยเงื่อนไขที่เจือจางผู้ถือหุ้นเดิมหนัก",
+        "ราคาต่ำกว่า $1: เสี่ยงถูก Nasdaq เตือน/ต้อง reverse split",
+        "สภาพคล่องบางหลังร่วง ~89% การขายออกอาจมีต้นทุนสูง"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.75–4.00% เมื่อ 28 ต.ค. (โหวต 10–2, Cook และ Hammack ต้องการขึ้น) futures ให้โอกาสขึ้นอีก 25bp ในประชุม 9 ธ.ค. ราว 85% หลัง Logan และ Musalem เรียกร้องให้คุมเข้มต่อ ส่วน Warsh ไม่ส่งสัญญาณชัดเรื่อง ธ.ค.",
+        "inflationNote": "PCE ก.ย.: headline 3.6% y/y (+0.5% m/m), core 3.1% y/y (+0.3% m/m); GDP Q3 +3.4% CPI ต.ค. วันที่ 10 พ.ย. คือบททดสอบถัดไป — ถ้า core ≥0.4% m/m แทบล็อกการขึ้นดอกเบี้ย ธ.ค.",
+        "sectorImpact": "ไบโอเทคมูลค่าต่ำกว่า $200M ไม่มีรายได้ และเงินสดน้อยกว่า 12 เดือน อ่อนไหวต่อภาวะการเงินสูงสุด ความเซอร์ไพรส์ฝั่ง hawkish ทำให้หน้าต่างการเพิ่มทุนหลังผลดีแคบลง และส่วนลดหลังผลแย่ลึกขึ้น",
+        "summary": "ความเกี่ยวข้องต่ำ — ผลลัพธ์ขึ้นกับการตัดสินใจของบริษัท (คืนเงินสด vs reverse merger) ไม่ใช่มหภาค"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · ค่าขนม สูงสุด 0.5% (refresh 4 พ.ย.) — moonshot ทางคลินิกจบแล้ว ที่เหลือคือ option แบบ cash shell ขนาดเล็ก ถือแค่ไม้สัญลักษณ์ median ถึงวัน catalyst ของ turbo -13.7% (n=19) จึงเข้าที่ Entry 2 ($0.2-0.22) เป็นหลัก",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ turbo -13.7% (n=19)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "ที่ 52-week low $0.20 — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ร่วงหนัก — เฉพาะเมื่อไม่มีประกาศ reverse merger ที่เจือจาง",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — การทบทวนเชิงกลยุทธ์ชี้ไปทางรักษาเงินสด ~$0.30"
+        },
+        "tp2": {
+          "note": "Bull — ประกาศคืนเงินสด/tender ~$0.46"
+        },
+        "tp3": {
+          "note": "Moon — ชำระบัญชีใกล้มูลค่าเงินสดสุทธิ ~$0.70 (BofA เป้า $1)"
+        },
+        "stopLoss": {
+          "tightNote": "-27% — กว้างกว่า medianMAE รวมของ turbo (กลุ่ม n<5) (-24.1%)",
+          "hardNote": "-50% — reverse merger ที่เจือจาง",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "ต่ำกว่าเป้า 5:1 ⚠️ — ลดขนาด"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "ผลการพิจารณาทางเลือกเชิงกลยุทธ์",
+          "note": "หลังยุติ sabirnetug ผู้บริหารประเมินทางเลือกรวมถึงโปรแกรม EBD เงินสด ~$78.6M (30 ก.ย.) เทียบ cap ~$17M"
+        },
+        {
+          "event": "ข้อมูล biomarker/ภาพถ่ายของ ALTITUDE-AD",
+          "note": "ผล biomarker ในของเหลวและภาพถ่ายเพิ่มเติมคาดใน 'อีกไม่กี่สัปดาห์' ไม่น่าฟื้นโปรแกรมได้"
+        },
+        {
+          "event": "IND ของ Enhanced Brain Delivery (พาร์ทเนอร์ JCR)",
+          "note": "โปรแกรมเดียวที่เหลือ คาด IND กลางปี 2027"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,318 @@
+{
+  "ticker": "RDW",
+  "companyName": "Redwire Corporation",
+  "companyDescription": "Space infrastructure + defense UAS · Already selected into the $151B Golden Dome SHIELD IDIQ pool (Jan 2026) · Edge Autonomy's Stalker drones landing repeat U.S. military orders · ISS/Lunar Gateway solar arrays + in-space manufacturing — the thesis has shifted from \"will RDW get picked\" to \"can RDW convert pool membership into real task-order revenue\"",
+  "exchange": "NYSE",
+  "generatedAt": "2026-11-04T17:00:00.000Z",
+  "price": 7.9,
+  "priceChange": -2.71,
+  "priceNote": "Live $7.9 (-2.71%) on Nov 4, 2026 — down ~21% from $9.98 at the Aug 4 report (52-week $4.87-$26.64); 52-week range $4.87-$26.64. Nov 4 tape: S&P futures -1.2% / Nasdaq -2% on a Democratic midterm sweep; Dec 9 hike ~85% priced.",
+  "marketCap": "~$1.88B",
+  "sector": "Space & Defense Technology — Space Infrastructure + UAS/Drones",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 58,
+  "summary": "REFRESH (prior report Aug 4, 2026): Q3 results land after today's close (Nov 4; call Nov 5, 9:00 AM ET). Consensus is ~-$0.09 to -$0.12 EPS on ~$126M revenue; Q2 was $117.1M with a record $542.1M backlog and the $450-500M FY guide reaffirmed. The moon case is still Golden Dome SHIELD task orders plus Stalker UAS volume. Base cut from +48% to +40% (above the lane's realized 30d P75 (+12.2%; written-Base bias +72.7pp)), assuming a Q3 in line with the FY guide and first SHIELD task-order visibility over ~1-3 months. แนะนำ 1.5% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 40-50%.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 2026 earnings",
+      "description": "After the close today; call Nov 5, 9:00 AM ET. Consensus ~$126M revenue; watch backlog vs the $542.1M Q2 record and the $450-500M FY guide.",
+      "urgencyLabel": "TODAY",
+      "dateBadge": "Nov 4, 2026",
+      "catalystDate": "2026-11-04",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🛡️",
+      "name": "Golden Dome SHIELD IDIQ — task order awards",
+      "description": "Redwire is in the SHIELD IDIQ pool; first large task orders are the re-rating event.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Still deeply unprofitable — Q1 2026 net loss $76.5M (though >$44M was non-recurring Edge Autonomy stock comp) and FCF still negative (-$12.7M in Q1, improving from -$49M a year ago but not yet cash-flow positive",
+    "Active $500M ATM equity program (June 2026), on top of a $350M ATM and $249.7M already sold under a prior Nov 2025 program — real, ongoing dilution risk even though liquidity (~$175M cash + undrawn revolver) is not a near-term survival issue at the current burn rate",
+    "Golden Dome SHIELD IDIQ is a multi-vendor ceiling contract with zero guaranteed revenue — RDW still has to out-compete L3Harris, Anduril, Palantir and Lockheed for specific task orders; the initial pool-selection pop has already happened and partly reversed",
+    "Extreme volatility (beta 3.02) — stock has round-tripped from a 52-week low of $4.87 to a high of $26.64 and back to under $10; a Q2 earnings miss on Aug 5 could trigger a sharp single-day drawdown given how much good news is already priced in"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q3 2026 earnings",
+      "dateRange": "Nov 4, 2026",
+      "note": "After the close today; call Nov 5, 9:00 AM ET. Consensus ~$126M revenue; watch backlog vs the $542.1M Q2 record and the $450-500M FY guide.",
+      "est": "n/a",
+      "highlight": "blue"
+    },
+    {
+      "event": "Golden Dome SHIELD IDIQ — task order awards",
+      "dateRange": "H2 2026",
+      "note": "Redwire is in the SHIELD IDIQ pool; first large task orders are the re-rating event.",
+      "est": "n/a",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -40,
+      "price": 4.74
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 40,
+      "price": 11.06
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 130,
+      "price": 18.17
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 250,
+      "price": 27.65
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "H.C. Wainwright",
+      "target": 22,
+      "rating": "Buy",
+      "note": "Trimmed from $26 — still sees initial large-scale Golden Dome task awards as 2026 catalyst"
+    },
+    {
+      "firm": "Street consensus (9-14 analysts)",
+      "target": 14.8,
+      "rating": "Buy",
+      "note": "~48-54% upside from current price; ~77% buy-rated consensus"
+    },
+    {
+      "firm": "Prior street-high (Canaccord, Jun 2026)",
+      "target": 24,
+      "rating": "Buy",
+      "note": "Pre-dilution target; due for revision post-ATM and post-Q2 print"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held at 3.75–4.00% on Oct 28 (10–2 vote; Cook and Hammack dissented for a hike). Futures price ~85% odds of another +25bp at the Dec 9 FOMC after Logan and Musalem called for more tightening; Warsh gave no explicit December signal.",
+    "inflationNote": "Sep PCE: headline 3.6% y/y (+0.5% m/m), core 3.1% y/y (+0.3% m/m); Q3 GDP +3.4% annualized. Oct CPI on Nov 10 is the next test — core ≥0.4% m/m would effectively lock in the December hike.",
+    "sectorImpact": "LOW direct impact, but beta of 3.02 means a hawkish macro tape (equity de-risking, high-beta small caps sold first) can still hit RDW hard even when the underlying government-contract thesis is intact — as seen in its round trip from $26.64 to under $10.",
+    "summary": "MEDIUM — defense budget support vs a Democratic House reshaping FY27 priorities; high-beta space names into the Dec 9 FOMC."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 7.9,
+        "note": "Current price — starter only. Not preferred: turbo at-catalyst median -13.7% (n=19)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 6.8,
+        "rangeMax": 7.3,
+        "note": "Post-earnings dip zone — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 6,
+        "note": "Deep dip — only if backlog holds",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 11.06,
+      "pct": 40,
+      "note": "Base — Q3 in line + guide held; ~$11.06."
+    },
+    "tp2": {
+      "price": 18.17,
+      "pct": 130,
+      "note": "Bull — first SHIELD task orders; ~$18.17 (toward HCW $22)."
+    },
+    "tp3": {
+      "price": 27.65,
+      "pct": 250,
+      "note": "Moon — Golden Dome scale + Stalker volume; ~$27.65, near the $26.64 52-week high.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 5.93,
+      "tightPct": -24.9,
+      "tightNote": "-25% — wider than the turbo overall medianMAE (bucket n<5) (-24.1%).",
+      "hard": 4.35,
+      "hardPct": -44.9,
+      "hardNote": "-45% — guide cut + no SHIELD orders.",
+      "riskReward": "5.2 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Asymmetric ✅ — clears the 5:1 turbo target"
+    },
+    "verdict": "SPECULATIVE · ค่าขนม 1.5% max (refreshed Nov 4) — the binary is tonight's print; the moonshot still needs SHIELD task orders that remain undated. Measured turbo at-catalyst median is -13.7% (n=19), so Entry 2 ($6.8-7.3) is preferred.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "RDW itself just showed the pattern: it ran +10.9-11.8% on Aug 3, 2026 — two days before Q2 earnings — purely on Stalker UAS follow-on order and facility-expansion headlines. Contract-flow news in the run-up to earnings reliably moves this stock double digits before the print itself lands.",
+    "preRunupTiming": "1-2 days before earnings, on contract-flow headlines",
+    "preRunupPct": "+10-15%",
+    "postWin": {
+      "avgPct": 20,
+      "range": "+11% to +29%",
+      "note": "RDW's own history: +29% same-day on the Jan 27, 2026 SHIELD IDIQ pool selection (CNBC/TipRanks), and +11.8% on Aug 3, 2026 pre-earnings on Stalker UAS follow-on military orders. This exact stock reliably pops double digits on contract-flow wins.",
+      "exampleDate": "Jan 27, 2026 & Aug 3, 2026"
+    },
+    "postLose": {
+      "avgPct": -25,
+      "range": "-15% to -35%",
+      "note": "RDW's own round trip is the cautionary case: after the +29% Golden Dome pop on Jan 27, 2026, shares gave back the gain and more as a $350M-then-$500M ATM equity program (announced June 2026) diluted the re-rate — RDW now trades ~62% below its 52-week high of $26.64 even though the Golden Dome win itself was never reversed. Dilution overhang can erase a catalyst win's gains with no bad news required.",
+      "exampleDate": "Jan-Aug 2026"
+    },
+    "spotSizing": {
+      "pct": 1.5,
+      "reason": "1.5%. The dated catalyst's type has n<5 (context only), so the weak lane prior governs (hitRate 4.9%, medianExcess +2.0pp, n=41)."
+    },
+    "stopPreCatalyst": {
+      "pct": -24.9,
+      "price": 5.93,
+      "note": "Wider than the turbo overall medianMAE (bucket n<5) (-24.1%). A break below the tight stop before the catalyst means the print disappointed on backlog or guidance."
+    },
+    "stopPostCatalyst": {
+      "pct": -20,
+      "note": "ถ้า Q2 พลาด guidance หรือ ATM dilution เร่งตัวหลังงบ — exit ทั้งหมด"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "RDW",
+      "event": "Selected into $151B Golden Dome SHIELD IDIQ multi-vendor pool",
+      "date": "Jan 27, 2026",
+      "movePct": 29,
+      "days": 1,
+      "outcome": "good",
+      "note": "RDW's own precedent for how binary contract news moves this exact stock. But this catalyst has already fired and its gains have since round-tripped on ATM dilution — the current trade is about the NEXT task order, not this one."
+    },
+    {
+      "ticker": "RKLB",
+      "event": "Record defense/launch contract win (largest in company history)",
+      "date": "Jul 2026",
+      "movePct": 10,
+      "days": 1,
+      "outcome": "good",
+      "note": "Comparable small/mid-cap space-defense peer — shows contract-win pops are a live pattern across the sector right now, though smaller in magnitude than RDW's own Golden Dome pool-selection pop."
+    },
+    {
+      "ticker": "KTOS",
+      "event": "$156M mobile counter-drone (C-UAS) contract award",
+      "date": "Jul 21, 2026",
+      "movePct": 4.3,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "Shows follow-on/incremental contract wins (vs. an initial big pool selection) tend to produce single-digit, not double-digit, pops. Sets realistic expectations for RDW's next Golden Dome task-order win, since the large pool-selection pop already happened in January."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Redwire Corporation to Report Second Quarter 2026 Results on August 5, 2026",
+    "url": "https://www.businesswire.com/news/home/20260730660026/en/Redwire-Corporation-to-Report-Second-Quarter-2026-Results-on-August-5-2026",
+    "date": "Jul 30, 2026"
+  },
+  "sources": [
+    "https://www.marketbeat.com/earnings/reports/2026-11-4-redwire-corporation-stock/",
+    "https://www.gurufocus.com/news/9167199/redwire-rdw-set-to-report-q3-earnings-on-november-4th-what-investors-should-watch",
+    "https://www.tradingview.com/news/zacks:12bf42f1e094b:0-redwire-corp-to-post-q3-earnings-what-s-in-the-cards/",
+    "https://stockanalysis.com/stocks/rdw/",
+    "https://www.timothysykes.com/news/redwire-corporation-rdw-news-2026_08_03/",
+    "https://www.cnbc.com/2026/01/27/redwire-stock-trump-golden-dome-defense.html",
+    "https://www.tipranks.com/news/redwire-stock-rdw-jumps-28-on-news-of-golden-dome-contract",
+    "https://www.businesswire.com/news/home/20260730660026/en/Redwire-Corporation-to-Report-Second-Quarter-2026-Results-on-August-5-2026",
+    "https://finance.yahoo.com/markets/stocks/articles/redwire-us-500-million-atm-021231065.html",
+    "https://www.top1markets.com/news/rdw-stock-redwire-q1-loss-backlog-uas-dilution",
+    "https://www.stocktitan.net/news/KTOS/kratos-receives-mobile-counter-unmanned-aircraft-system-c-uas-nz7j9czkxfzz.html",
+    "https://www.tipranks.com/news/the-fly/redwire-price-target-lowered-to-22-from-26-at-h-c-wainwright-thefly",
+    "https://www.cnbc.com/2026/10/28/fed-interest-rate-decision-october-2026.html",
+    "https://www.cnbc.com/2026/10/29/pce-inflation-report-september-2026-.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "REFRESH (รายงานก่อน Aug 4, 2026): งบ Q3 ออกหลังตลาดปิดวันนี้ (4 พ.ย.; call 5 พ.ย. 9:00 น. ET) consensus EPS ราว -$0.09 ถึง -$0.12 รายได้ ~$126M Q2 ได้ $117.1M backlog สูงสุด $542.1M และยืนยัน guide ปี $450-500M Moon case ยังเป็น task order ของ Golden Dome SHIELD บวกยอด Stalker UAS Base ลดจาก +48% เป็น +40% (สูงกว่า P75 30 วันจริงของกลุ่ม (+12.2%; bias +72.7pp)) สมมติQ3 ตาม guide ปีและเริ่มเห็น task order ของ SHIELD ใน ~1-3 เดือน แนะนำ 1.5% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 40-50%",
+      "priceNote": "ราคาสด $7.9 (-2.71%) 4 พ.ย. 2026 — ลง ~21% จาก $9.98 ณ รายงาน 4 ส.ค. ช่วง 52 สัปดาห์ $4.87-$26.64 ตลาด 4 พ.ย.: futures S&P -1.2% / Nasdaq -2% จากผลเลือกตั้งกลางเทอม ตลาดให้โอกาสขึ้นดอกเบี้ย 9 ธ.ค. ~85%",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "งบ Q3 2026",
+          "description": "หลังตลาดปิดวันนี้; call 5 พ.ย. 9:00 น. ET consensus รายได้ ~$126M ดู backlog เทียบสถิติ Q2 $542.1M และ guide ปี $450-500M"
+        },
+        {
+          "name": "Golden Dome SHIELD IDIQ — task order",
+          "description": "Redwire อยู่ในกลุ่มผู้รับ SHIELD IDIQ task order ใหญ่แรกคือ event ที่จะ re-rate"
+        }
+      ],
+      "risks": [
+        "ยังขาดทุนหนัก — Q1 2026 ขาดทุน $76.5M (ส่วนใหญ่เป็นรายการ non-recurring) FCF ยังติดลบแม้จะดีขึ้น",
+        "ATM $500M (มิ.ย. 2026) ซ้อนบน ATM เดิม $350M — dilution risk จริง แม้ liquidity ~$175M จะยังไม่ใช่ปัญหา survival ระยะสั้น",
+        "Golden Dome IDIQ เป็น multi-vendor ceiling ไม่การันตีรายได้ — ต้องแข่ง task order จริงกับ L3Harris, Anduril, Palantir, Lockheed",
+        "Beta สูงมาก (3.02) หุ้นเหวี่ยงจาก 52w low $4.87 ถึง high $26.64 แล้วกลับมาต่ำกว่า $10 — งบ Q2 พลาดอาจทำให้ร่วงแรงในวันเดียว"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.75–4.00% เมื่อ 28 ต.ค. (โหวต 10–2, Cook และ Hammack ต้องการขึ้น) futures ให้โอกาสขึ้นอีก 25bp ในประชุม 9 ธ.ค. ราว 85% หลัง Logan และ Musalem เรียกร้องให้คุมเข้มต่อ ส่วน Warsh ไม่ส่งสัญญาณชัดเรื่อง ธ.ค.",
+        "inflationNote": "PCE ก.ย.: headline 3.6% y/y (+0.5% m/m), core 3.1% y/y (+0.3% m/m); GDP Q3 +3.4% CPI ต.ค. วันที่ 10 พ.ย. คือบททดสอบถัดไป — ถ้า core ≥0.4% m/m แทบล็อกการขึ้นดอกเบี้ย ธ.ค.",
+        "sectorImpact": "ผลกระทบตรงต่ำ แต่ beta 3.02 ทำให้หุ้นโดนเทขายแรงเวลาตลาด risk-off แม้ thesis สัญญารัฐบาลจะยังดีอยู่ — เห็นได้จากการเหวี่ยงจาก $26.64 มาต่ำกว่า $10",
+        "summary": "MEDIUM — งบกลาโหมหนุน แต่สภาเดโมแครตอาจปรับลำดับความสำคัญ FY27 หุ้นอวกาศ beta สูงก่อน FOMC 9 ธ.ค."
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · ค่าขนม สูงสุด 1.5% (refresh 4 พ.ย.) — binary คืองบคืนนี้ แต่ moonshot ยังต้องอาศัย task order SHIELD ที่ยังไม่มีวัน median ถึงวัน catalyst ของ turbo -13.7% (n=19) จึงเข้าที่ Entry 2 ($6.8-7.3) เป็นหลัก",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ turbo -13.7% (n=19)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "โซนย่อหลังงบ — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ร่วงหนัก — เฉพาะเมื่อ backlog ยังอยู่",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — Q3 ตามคาด + คง guide ~$11.06"
+        },
+        "tp2": {
+          "note": "Bull — task order SHIELD แรก ~$18.17 (เข้าใกล้ HCW $22)"
+        },
+        "tp3": {
+          "note": "Moon — Golden Dome ขยาย + ยอด Stalker ~$27.65 ใกล้ 52-week high $26.64"
+        },
+        "stopLoss": {
+          "tightNote": "-25% — กว้างกว่า medianMAE รวมของ turbo (กลุ่ม n<5) (-24.1%)",
+          "hardNote": "-45% — ตัด guide + ไม่มี task order SHIELD",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "อสมมาตร ✅ — ผ่านเป้า 5:1 ของ turbo"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "งบ Q3 2026",
+          "note": "หลังตลาดปิดวันนี้; call 5 พ.ย. 9:00 น. ET consensus รายได้ ~$126M ดู backlog เทียบสถิติ Q2 $542.1M และ guide ปี $450-500M"
+        },
+        {
+          "event": "Golden Dome SHIELD IDIQ — task order",
+          "note": "Redwire อยู่ในกลุ่มผู้รับ SHIELD IDIQ task order ใหญ่แรกคือ event ที่จะ re-rate"
+        }
+      ]
+    }
+  }
+}

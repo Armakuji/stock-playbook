@@ -1,0 +1,310 @@
+{
+  "ticker": "ACHR",
+  "companyName": "Archer Aviation Inc.",
+  "companyDescription": "eVTOL Air Taxi · First manufacturer to complete FAA Type Certification Phase 3 of 4 · Acquiring Boeing's Wisk Aero, Insitu & SkyGrid (antitrust cleared Sep 2026) · $1.56B cash cushion",
+  "exchange": "NYSE",
+  "generatedAt": "2026-11-04T17:00:00.000Z",
+  "price": 4.205,
+  "priceChange": 1.82,
+  "priceNote": "Live $4.205 (+1.82%) on Nov 4, 2026 — up ~10% from $3.81 at the Oct 26 report (52-week $3.68-$9.85); 52-week range $3.68-$9.85. Nov 4 tape: S&P futures -1.2% / Nasdaq -2% on a Democratic midterm sweep; Dec 9 hike ~85% priced.",
+  "marketCap": "~$3.23B",
+  "sector": "Industrials / Aerospace (eVTOL)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 0,
+  "summary": "REFRESH (prior report Oct 26, 2026): Q3 results on Nov 9 are the next dated event; FAA Type Certification Phase 4 (final) remains H2 2026-targeted and the Boeing Wisk/Insitu/SkyGrid acquisition close is guided for December. Pre-revenue (~$6.9M TTM revenue vs ~$800M TTM loss) with a ~$1.56B cash cushion — survival is fine; the thesis is certification timing. regulatory_approval is a Tier-2 LEADER (+5.3pp vs +2.0pp, n=8). Base cut from +45% to +45% (above the lane's realized 30d P75 (+12.2%; written-Base bias +72.7pp)), assuming Q3 reaffirming the certification timeline plus the December deal close over ~1-3 months. แนะนำ 1.5% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 40-50%.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 2026 earnings",
+      "description": "Certification timeline, cash burn vs the ~$1.56B cushion, Wisk/Insitu integration plan.",
+      "urgencyLabel": "5 DAYS",
+      "dateBadge": "Nov 9, 2026",
+      "catalystDate": "2026-11-09",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "✈️",
+      "name": "FAA Type Certification — Phase 4 (final)",
+      "description": "First manufacturer through Phase 3 of 4; final phase targeted H2 2026.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "🤝",
+      "name": "Boeing Wisk / Insitu / SkyGrid acquisition close",
+      "description": "Antitrust cleared Sep 2026; close guided for December.",
+      "urgencyLabel": "DEC 2026",
+      "dateBadge": "Dec 2026",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Pre-revenue: TTM revenue ~$6.9M against a ~$800M TTM net loss. The thesis is entirely certification and commercialization timing.",
+    "Rate-sensitive, high-beta stock: it has repeatedly sold off on rising Treasury yields, even with ample cash.",
+    "No confirmed FAA Phase 4 timeline yet; 2026 commercial-launch targets could slip into 2027.",
+    "The Wisk/Insitu/SkyGrid acquisition still needs remaining regulatory approvals, and integrating three Boeing subsidiaries is complex.",
+    "A single eVTOL safety incident, Archer's or a competitor's, would hit the whole sector."
+  ],
+  "estimateDates": [
+    {
+      "event": "Q3 2026 earnings",
+      "dateRange": "Nov 9, 2026",
+      "note": "Certification timeline, cash burn vs the ~$1.56B cushion, Wisk/Insitu integration plan.",
+      "est": "n/a",
+      "highlight": "blue"
+    },
+    {
+      "event": "FAA Type Certification — Phase 4 (final)",
+      "dateRange": "H2 2026",
+      "note": "First manufacturer through Phase 3 of 4; final phase targeted H2 2026.",
+      "est": "n/a",
+      "highlight": "yellow"
+    },
+    {
+      "event": "Boeing Wisk / Insitu / SkyGrid acquisition close",
+      "dateRange": "Dec 2026",
+      "note": "Antitrust cleared Sep 2026; close guided for December.",
+      "est": "n/a",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -40,
+      "price": 2.52
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 45,
+      "price": 6.1
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 140,
+      "price": 10.09
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 260,
+      "price": 15.14
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus (9 analysts, stockanalysis.com)",
+      "target": 10.89,
+      "rating": "Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held at 3.75–4.00% on Oct 28 (10–2 vote; Cook and Hammack dissented for a hike). Futures price ~85% odds of another +25bp at the Dec 9 FOMC after Logan and Musalem called for more tightening; Warsh gave no explicit December signal.",
+    "inflationNote": "Sep PCE: headline 3.6% y/y (+0.5% m/m), core 3.1% y/y (+0.3% m/m); Q3 GDP +3.4% annualized. Oct CPI on Nov 10 is the next test — core ≥0.4% m/m would effectively lock in the December hike.",
+    "sectorImpact": "Well-funded but pre-revenue and high-beta. ACHR has repeatedly traded on Treasury yields, so a hawkish surprise hits the multiple even though solvency isn't in question.",
+    "summary": "MEDIUM — a long-duration pre-revenue name; a December hike weighs on the multiple, the cash pile limits survival risk."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 4.205,
+        "note": "Current price — starter only. Not preferred: turbo at-catalyst median -13.7% (n=19)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 3.7,
+        "rangeMax": 3.95,
+        "note": "Back toward the $3.68 52-week low — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 3.3,
+        "note": "Deep dip — only if certification timing holds",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 6.1,
+      "pct": 45.1,
+      "note": "Base — Q3 reaffirms the timeline + deal closes; ~$6.10."
+    },
+    "tp2": {
+      "price": 10.09,
+      "pct": 140,
+      "note": "Bull — Phase 4 certification; ~$10.09 (consensus $10.89)."
+    },
+    "tp3": {
+      "price": 15.14,
+      "pct": 260,
+      "note": "Moon — commercial launch + Wisk/Insitu scale; ~$15.14. 12-24 month thesis.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 3.07,
+      "tightPct": -27,
+      "tightNote": "-27% — wider than the turbo regulatory_approval medianMAE (n=8) (-25%).",
+      "hard": 2.31,
+      "hardPct": -45.1,
+      "hardNote": "-45% — certification slips into 2027+.",
+      "riskReward": "5.2 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Asymmetric ✅ — clears the 5:1 turbo target"
+    },
+    "verdict": "SPECULATIVE · ค่าขนม 1.5% max (refreshed Nov 4) — well-funded, but the moonshot is certification timing that has slipped before. Measured turbo at-catalyst median is -13.7% (n=19), so Entry 2 ($3.7-3.95) is preferred.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "regulatory_approval",
+    "preRunup": "No run-up: ACHR fell ~26% since Sep 29 to a new 52-week low, even as ARK bought ~2.57M shares (~$12.1M) in early October.",
+    "preRunupTiming": "N/A",
+    "preRunupPct": "-26% since Sep 29",
+    "postWin": {
+      "avgPct": 60,
+      "range": "+30% to +100%+",
+      "note": "Full FAA Type Certification (Phase 4) remains the single biggest catalyst in company history — no eVTOL company has completed this yet, so Archer as first mover is the reference case. This is unchanged from the last report; per turbo.tier2, regulatory_approval is a LEADER type (medianExcessVsBenchPct +5.3pp vs overall +2.0pp, n=8), supporting this sizing.",
+      "exampleDate": "No direct historical comp — first mover"
+    },
+    "postLose": {
+      "avgPct": -35,
+      "range": "-25% to -50%",
+      "note": "A major Phase 4 delay, a sector-wide safety incident, or the Boeing deal collapsing on remaining regulatory approvals would likely trigger a sharp de-rate. The recent -7% single-day move on rising yields alone shows how quickly sentiment can turn even without company-specific bad news.",
+      "exampleDate": "Sep 2026 (yields-driven -7% session, macro not company-specific)"
+    },
+    "spotSizing": {
+      "pct": 1.5,
+      "reason": "1.5%. regulatory_approval is a Tier-2 LEADER (+5.3pp vs +2.0pp, n=8); the lane-wide prior (hitRate 4.9%) and a ~$3.2B cap keep it at 1.5%."
+    },
+    "stopPreCatalyst": {
+      "pct": -27,
+      "price": 3.07,
+      "note": "Wider than the turbo regulatory_approval medianMAE (n=8) (-25%). A break below the tight stop before the catalyst means a certification slip is being priced."
+    },
+    "stopPostCatalyst": {
+      "pct": -30,
+      "note": "If Q3 pushes certification or commercial launch into late 2027, or announces a large discounted raise, exit."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "ACHR",
+      "event": "FAA Type Certification Phase 3 Completion",
+      "date": "Jul 2026",
+      "movePct": 4,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-day +4.02% reaction to becoming the first eVTOL manufacturer to complete Phase 3 — direct evidence of how the market reacts to certification-phase milestones; full Type Certification (Phase 4) should be a materially larger version of this same reaction."
+    },
+    {
+      "ticker": "ACHR",
+      "event": "Rising Treasury yields hit eVTOL/speculative growth names",
+      "date": "Sep 2026",
+      "movePct": -7,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Recent, direct evidence of macro rate-sensitivity — a pure sentiment/multiple-compression move, not thesis-driven, but real and worth sizing around given the current hawkish-Fed backdrop."
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/achr/",
+    "https://aerospaceamerica.aiaa.org/archer-to-explore-how-to-incorporate-wisks-autonomous-flight-tech-ceo-says/",
+    "https://www.nasdaq.com/articles/archer-aviations-faa-certification-progress-what-investors-need-know-now",
+    "https://stockanalysis.com/stocks/achr/forecast/",
+    "https://www.stocktitan.net/news/ACHR/",
+    "https://www.cnbc.com/2026/10/28/fed-interest-rate-decision-october-2026.html",
+    "https://www.cnbc.com/2026/10/29/pce-inflation-report-september-2026-.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "REFRESH (รายงานก่อน Oct 26, 2026): งบ Q3 วันที่ 9 พ.ย. คือ event ที่มีวันถัดไป FAA Type Certification Phase 4 (สุดท้าย) ยังตั้งเป้า H2 2026 และการปิดดีลซื้อ Wisk/Insitu/SkyGrid ของ Boeing คาดใน ธ.ค. ยังไม่มีรายได้ (~$6.9M TTM vs ขาดทุน ~$800M TTM) แต่มีเงินสด ~$1.56B — survival ไม่มีปัญหา thesis คือจังหวะการได้ใบรับรอง regulatory_approval เป็น Tier-2 LEADER (+5.3pp vs +2.0pp, n=8) Base ลดจาก +45% เป็น +45% (สูงกว่า P75 30 วันจริงของกลุ่ม (+12.2%; bias +72.7pp)) สมมติQ3 ยืนยันไทม์ไลน์ใบรับรองและปิดดีล ธ.ค. ใน ~1-3 เดือน แนะนำ 1.5% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 40-50%",
+      "priceNote": "ราคาสด $4.205 (+1.82%) 4 พ.ย. 2026 — ขึ้น ~10% จาก $3.81 ณ รายงาน 26 ต.ค. ช่วง 52 สัปดาห์ $3.68-$9.85 ตลาด 4 พ.ย.: futures S&P -1.2% / Nasdaq -2% จากผลเลือกตั้งกลางเทอม ตลาดให้โอกาสขึ้นดอกเบี้ย 9 ธ.ค. ~85%",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "งบ Q3 2026",
+          "description": "ไทม์ไลน์ใบรับรอง การเผาเงินเทียบเงินสด ~$1.56B และแผนรวม Wisk/Insitu"
+        },
+        {
+          "name": "FAA Type Certification — Phase 4 (สุดท้าย)",
+          "description": "ผู้ผลิตรายแรกที่ผ่าน Phase 3 จาก 4 เฟสสุดท้ายตั้งเป้า H2 2026"
+        },
+        {
+          "name": "ปิดดีลซื้อ Wisk / Insitu / SkyGrid จาก Boeing",
+          "description": "ผ่านการพิจารณาผูกขาด ก.ย. 2026 คาดปิดดีล ธ.ค."
+        }
+      ],
+      "risks": [
+        "ยังไม่มีรายได้: รายได้ TTM ~$6.9M เทียบขาดทุน TTM ~$800M thesis ขึ้นกับเวลาการรับรองและเชิงพาณิชย์ทั้งหมด",
+        "อ่อนไหวต่อดอกเบี้ยและ beta สูง: ร่วงตามอัตราผลตอบแทนพันธบัตรซ้ำ ๆ แม้มีเงินสดเพียงพอ",
+        "ยังไม่มีไทม์ไลน์ FAA เฟส 4 ที่ยืนยัน เป้าเริ่มให้บริการปี 2026 อาจเลื่อนไป 2027",
+        "ดีล Wisk/Insitu/SkyGrid ยังต้องได้อนุมัติที่เหลือ และการรวม 3 บริษัทลูกของ Boeing มีความซับซ้อน",
+        "อุบัติเหตุ eVTOL เพียงครั้งเดียว ไม่ว่าของ Archer หรือคู่แข่ง จะกระทบทั้งกลุ่ม"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.75–4.00% เมื่อ 28 ต.ค. (โหวต 10–2, Cook และ Hammack ต้องการขึ้น) futures ให้โอกาสขึ้นอีก 25bp ในประชุม 9 ธ.ค. ราว 85% หลัง Logan และ Musalem เรียกร้องให้คุมเข้มต่อ ส่วน Warsh ไม่ส่งสัญญาณชัดเรื่อง ธ.ค.",
+        "inflationNote": "PCE ก.ย.: headline 3.6% y/y (+0.5% m/m), core 3.1% y/y (+0.3% m/m); GDP Q3 +3.4% CPI ต.ค. วันที่ 10 พ.ย. คือบททดสอบถัดไป — ถ้า core ≥0.4% m/m แทบล็อกการขึ้นดอกเบี้ย ธ.ค.",
+        "sectorImpact": "เงินทุนแข็งแรงแต่ยังไม่มีรายได้และ beta สูง ACHR เคลื่อนไหวตามอัตราผลตอบแทนพันธบัตรซ้ำ ๆ ความเซอร์ไพรส์ฝั่ง hawkish จึงกด multiple แม้ความอยู่รอดจะไม่ใช่ปัญหา",
+        "summary": "MEDIUM — หุ้นที่ยังไม่มีรายได้และ duration ยาว การขึ้นดอกเบี้ย ธ.ค. กด multiple แต่เงินสดก้อนใหญ่จำกัดความเสี่ยง survival"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · ค่าขนม สูงสุด 1.5% (refresh 4 พ.ย.) — เงินทุนแน่น แต่ moonshot คือจังหวะใบรับรองที่เคยเลื่อนมาแล้ว median ถึงวัน catalyst ของ turbo -13.7% (n=19) จึงเข้าที่ Entry 2 ($3.7-3.95) เป็นหลัก",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ turbo -13.7% (n=19)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "กลับไปใกล้ 52-week low $3.68 — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ร่วงหนัก — เฉพาะเมื่อไทม์ไลน์ใบรับรองยังอยู่",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — Q3 ยืนยันไทม์ไลน์ + ปิดดีล ~$6.10"
+        },
+        "tp2": {
+          "note": "Bull — ได้ใบรับรอง Phase 4 ~$10.09 (consensus $10.89)"
+        },
+        "tp3": {
+          "note": "Moon — เปิดบริการเชิงพาณิชย์ + ขยาย Wisk/Insitu ~$15.14 thesis 12-24 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-27% — กว้างกว่า medianMAE ของ regulatory_approval (n=8) (-25%)",
+          "hardNote": "-45% — ใบรับรองเลื่อนไปปี 2027+",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "อสมมาตร ✅ — ผ่านเป้า 5:1 ของ turbo"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "งบ Q3 2026",
+          "note": "ไทม์ไลน์ใบรับรอง การเผาเงินเทียบเงินสด ~$1.56B และแผนรวม Wisk/Insitu"
+        },
+        {
+          "event": "FAA Type Certification — Phase 4 (สุดท้าย)",
+          "note": "ผู้ผลิตรายแรกที่ผ่าน Phase 3 จาก 4 เฟสสุดท้ายตั้งเป้า H2 2026"
+        },
+        {
+          "event": "ปิดดีลซื้อ Wisk / Insitu / SkyGrid จาก Boeing",
+          "note": "ผ่านการพิจารณาผูกขาด ก.ย. 2026 คาดปิดดีล ธ.ค."
+        }
+      ]
+    }
+  }
+}

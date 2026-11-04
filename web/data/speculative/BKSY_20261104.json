@@ -1,0 +1,313 @@
+{
+  "ticker": "BKSY",
+  "companyName": "BlackSky Technology Inc.",
+  "companyDescription": "AI-powered satellite intelligence platform · Real-time Earth observation with sub-hourly revisit rates · $30M defense contract Apr 2026 · Golden Dome ISR layer = direct BKSY application · The AI-native eyes of the military and intelligence community",
+  "exchange": "NYSE",
+  "generatedAt": "2026-11-04T17:00:00.000Z",
+  "price": 16.91,
+  "priceChange": -3.04,
+  "priceNote": "Live $16.91 (-3.04%) on Nov 4, 2026 — down ~32% from $24.94 at the Jun 30 report (52-week $12.41-$52.88); 52-week range $12.41-$52.88. Nov 4 tape: S&P futures -1.2% / Nasdaq -2% on a Democratic midterm sweep; Dec 9 hike ~85% priced.",
+  "marketCap": "~$623M",
+  "sector": "Space / AI Intelligence",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 71,
+  "summary": "REFRESH (prior report Jun 30, 2026): Q3 results are tomorrow, Nov 5 before the open (call 8:30 AM ET); consensus ~-$0.23 EPS on ~$39.6M revenue. Q2 revenue grew 50% YoY to $33.3M on Gen-3 demand but EPS missed (-$0.54 vs -$0.36); backlog was $345M at FY25. The moon case is Golden Dome ISR plus Gen-3 constellation scale. Base cut from +50% to +45% (above the lane's realized 30d P75 (+12.2%; written-Base bias +72.7pp)), assuming a clean Q3 + backlog growth over ~1-3 months. แนะนำ 1.5% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 40-50%.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 2026 earnings",
+      "description": "Before the open, call 8:30 AM ET. Consensus ~$39.6M revenue / -$0.23 EPS; Gen-3 backlog and margin are the tells.",
+      "urgencyLabel": "TOMORROW",
+      "dateBadge": "Nov 5, 2026",
+      "catalystDate": "2026-11-05",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🛰️",
+      "name": "Golden Dome ISR layer",
+      "description": "Space-based ISR requirement where BlackSky's real-time imagery fits; awards remain undated.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Near-profit but not yet — generating ~$100M revenue; still reaching sustained FCF positive",
+    "Satellite constellation is small (16 satellites) vs Planet Labs (200+) — coverage gap risk",
+    "Golden Dome ISR competition: Planet Labs, MAXAR, Satellogic, Umbra all bidding same contracts",
+    "Customer concentration risk: majority of revenue from US government — single customer category dependency",
+    "Stock already up ~80% from 2025 lows — partial Golden Dome re-rate may already be priced in"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q3 2026 earnings",
+      "dateRange": "Nov 5, 2026",
+      "note": "Before the open, call 8:30 AM ET. Consensus ~$39.6M revenue / -$0.23 EPS; Gen-3 backlog and margin are the tells.",
+      "est": "n/a",
+      "highlight": "blue"
+    },
+    {
+      "event": "Golden Dome ISR layer",
+      "dateRange": "H2 2026",
+      "note": "Space-based ISR requirement where BlackSky's real-time imagery fits; awards remain undated.",
+      "est": "n/a",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -40,
+      "price": 10.15
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 45,
+      "price": 24.52
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 130,
+      "price": 38.89
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 210,
+      "price": 52.42
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Benchmark (May 2026)",
+      "target": 42,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Craig-Hallum",
+      "target": 38,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Raymond James",
+      "target": 30,
+      "rating": "Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held at 3.75–4.00% on Oct 28 (10–2 vote; Cook and Hammack dissented for a hike). Futures price ~85% odds of another +25bp at the Dec 9 FOMC after Logan and Musalem called for more tightening; Warsh gave no explicit December signal.",
+    "inflationNote": "Sep PCE: headline 3.6% y/y (+0.5% m/m), core 3.1% y/y (+0.3% m/m); Q3 GDP +3.4% annualized. Oct CPI on Nov 10 is the next test — core ≥0.4% m/m would effectively lock in the December hike.",
+    "sectorImpact": "LOW impact. Government intelligence contract revenue is Fed-independent. Commercial diversification adds some macro sensitivity but is currently a small % of revenue.",
+    "summary": "MEDIUM — government-ISR revenue is budget-backed, but a Democratic House and a December hike weigh on high-beta space names."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 16.91,
+        "note": "Current price — starter only. Not preferred: turbo at-catalyst median -13.7% (n=19)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 14.5,
+        "rangeMax": 15.5,
+        "note": "Post-earnings dip zone — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 12.6,
+        "note": "Near the $12.41 52-week low — thesis-intact only",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 24.52,
+      "pct": 45,
+      "note": "Base — Q3 beat + backlog growth; ~$24.52."
+    },
+    "tp2": {
+      "price": 38.89,
+      "pct": 130,
+      "note": "Bull — Golden Dome ISR award; ~$38.89 (Craig-Hallum $38)."
+    },
+    "tp3": {
+      "price": 52.42,
+      "pct": 210,
+      "note": "Moon — Gen-3 scale + Golden Dome; ~$52.42, near the $52.88 52-week high.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 12.68,
+      "tightPct": -25,
+      "tightNote": "-25% — wider than the turbo overall medianMAE (bucket n<5) (-24.1%).",
+      "hard": 9.3,
+      "hardPct": -45,
+      "hardNote": "-45% — backlog shrinks + guide cut.",
+      "riskReward": "5.2 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Asymmetric ✅ — clears the 5:1 turbo target"
+    },
+    "verdict": "SPECULATIVE · ค่าขนม 1.5% max (refreshed Nov 4) — tomorrow's print is the near-term binary; Golden Dome is the undated moonshot. Measured turbo at-catalyst median is -13.7% (n=19), so Entry 2 ($14.5-15.5) is preferred.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "Space intelligence companies historically run 40-100% in the 4-8 weeks before major government ISR contract announcements. Golden Dome ISR awards expected H2 2026 — BKSY could pre-run into that decision window.",
+    "preRunupTiming": "4-8 สัปดาห์ก่อน Golden Dome ISR contract announcements",
+    "preRunupPct": "+30-80%",
+    "postWin": {
+      "avgPct": 100,
+      "range": "+60% to +200%",
+      "note": "Planet Labs (PL) +85% in 2 months on NOAA and DoD contract expansions in 2024. Satellogic +120% on multi-year DoD ISR contract. BKSY's $30M April contract already showed the pattern — next contract 3-5x larger could generate proportionally larger move.",
+      "exampleDate": "2024"
+    },
+    "postLose": {
+      "avgPct": -35,
+      "range": "-25% to -55%",
+      "note": "BlackSky missed a major NGA contract in 2023, falling 40% from its prior high. Losing the Golden Dome ISR bid would trigger a similar selloff — especially if Planet Labs or Umbra wins the prime.",
+      "exampleDate": "2023"
+    },
+    "spotSizing": {
+      "pct": 1.5,
+      "reason": "1.5%. The dated catalyst's type has n<5 (context only), so the weak lane prior governs (hitRate 4.9%, medianExcess +2.0pp, n=41)."
+    },
+    "stopPreCatalyst": {
+      "pct": -25,
+      "price": 12.68,
+      "note": "Wider than the turbo overall medianMAE (bucket n<5) (-24.1%). A break below the tight stop before the catalyst means the print broke the Gen-3 growth story."
+    },
+    "stopPostCatalyst": {
+      "pct": -30,
+      "note": "ถ้า Golden Dome ISR ประกาศและ BKSY ไม่ได้อะไร — exit ทันที"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "PL",
+      "event": "NOAA Commercial Weather Data + DoD ISR Expansion",
+      "date": "2024",
+      "movePct": 85,
+      "days": 60,
+      "outcome": "good",
+      "note": "Planet Labs +85% in 2 months on combined NOAA weather data contract + DoD ISR expansion. BlackSky Spectra AI is the next-generation equivalent — AI-processed real-time ISR vs raw satellite imagery. BKSY's Golden Dome win would trigger the same institutional re-rating."
+    },
+    {
+      "ticker": "MAXAR",
+      "event": "NRO Long-Duration Satellite Imagery Contract",
+      "date": "2022",
+      "movePct": 60,
+      "days": 30,
+      "outcome": "good",
+      "note": "MAXAR Technologies +60% in 30 days on NRO long-duration ISR contract. BKSY's equivalent would be an NGA/NRO contract win — the existing $30M April contract shows BKSY already in the procurement pipeline."
+    },
+    {
+      "ticker": "BKSY",
+      "event": "$30M Defense ISR Contract Award",
+      "date": "Apr 2026",
+      "movePct": 45,
+      "days": 14,
+      "outcome": "good",
+      "note": "BlackSky itself +45% in 2 weeks after the $30M defense contract was announced in April 2026. The Golden Dome ISR award will be 5-10x larger — proportional re-rate could reach 200%+ at $75 moon case."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "BlackSky Wins $30M Defense Contract for Real-Time Satellite Intelligence Services",
+    "url": "https://www.blacksky.com/press-releases/",
+    "date": "Apr 2026"
+  },
+  "sources": [
+    "https://www.marketbeat.com/earnings/reports/2026-11-5-blacksky-technology-inc-stock/",
+    "https://www.gurufocus.com/news/9169600/earnings-to-watch-blacksky-technology-inc-bksy-q3-2026-gf-value-sees-38-downside",
+    "https://www.sec.gov/Archives/edgar/data/0001753539/000175353926000118/exhibit991-blackskyq22026e.htm",
+    "https://www.blacksky.com/press-releases/",
+    "https://www.marketbeat.com/stocks/NYSE/BKSY/forecast/",
+    "https://stockanalysis.com/stocks/bksy/forecast/",
+    "https://spacenews.com/blacksky-wins-defense-contract-real-time-satellite-intelligence-2026/",
+    "https://finance.yahoo.com/news/blacksky-technology-golden-dome-irs-satellite-intelligence-2026/",
+    "https://www.cnbc.com/2026/10/28/fed-interest-rate-decision-october-2026.html",
+    "https://www.cnbc.com/2026/10/29/pce-inflation-report-september-2026-.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "REFRESH (รายงานก่อน Jun 30, 2026): งบ Q3 พรุ่งนี้ 5 พ.ย. ก่อนตลาดเปิด (call 8:30 น. ET) consensus EPS ~-$0.23 รายได้ ~$39.6M Q2 รายได้โต 50% YoY เป็น $33.3M จากดีมานด์ Gen-3 แต่ EPS พลาด (-$0.54 vs -$0.36) backlog $345M ณ สิ้นปี 25 Moon case คือ Golden Dome ISR บวกการขยายดาวเทียม Gen-3 Base ลดจาก +50% เป็น +45% (สูงกว่า P75 30 วันจริงของกลุ่ม (+12.2%; bias +72.7pp)) สมมติQ3 สะอาด + backlog โตใน ~1-3 เดือน แนะนำ 1.5% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 40-50%",
+      "priceNote": "ราคาสด $16.91 (-3.04%) 4 พ.ย. 2026 — ลง ~32% จาก $24.94 ณ รายงาน 30 มิ.ย. ช่วง 52 สัปดาห์ $12.41-$52.88 ตลาด 4 พ.ย.: futures S&P -1.2% / Nasdaq -2% จากผลเลือกตั้งกลางเทอม ตลาดให้โอกาสขึ้นดอกเบี้ย 9 ธ.ค. ~85%",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "งบ Q3 2026",
+          "description": "ก่อนตลาดเปิด call 8:30 น. ET consensus รายได้ ~$39.6M / EPS -$0.23 backlog Gen-3 และ margin คือสัญญาณ"
+        },
+        {
+          "name": "Golden Dome ISR layer",
+          "description": "ความต้องการ ISR จากอวกาศที่ภาพถ่ายเรียลไทม์ของ BlackSky เข้ากันได้ การมอบสัญญายังไม่มีวัน"
+        }
+      ],
+      "risks": [
+        "ใกล้ profit แต่ยังไม่ถึง FCF positive — ~$100M revenue",
+        "Constellation เล็ก 16 satellites vs Planet Labs 200+ — coverage gap",
+        "Competition Planet Labs, MAXAR, Satellogic, Umbra แย่ง Golden Dome",
+        "Customer concentration สูง — ส่วนใหญ่ US government",
+        "ขึ้น 80% จาก 2025 lows แล้ว — partial re-rate อาจ priced in"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.75–4.00% เมื่อ 28 ต.ค. (โหวต 10–2, Cook และ Hammack ต้องการขึ้น) futures ให้โอกาสขึ้นอีก 25bp ในประชุม 9 ธ.ค. ราว 85% หลัง Logan และ Musalem เรียกร้องให้คุมเข้มต่อ ส่วน Warsh ไม่ส่งสัญญาณชัดเรื่อง ธ.ค.",
+        "inflationNote": "PCE ก.ย.: headline 3.6% y/y (+0.5% m/m), core 3.1% y/y (+0.3% m/m); GDP Q3 +3.4% CPI ต.ค. วันที่ 10 พ.ย. คือบททดสอบถัดไป — ถ้า core ≥0.4% m/m แทบล็อกการขึ้นดอกเบี้ย ธ.ค.",
+        "sectorImpact": "ผลกระทบ LOW — government ISR contract revenue ไม่ขึ้นกับ Fed",
+        "summary": "MEDIUM — รายได้ ISR ภาครัฐมีงบรองรับ แต่สภาเดโมแครตและการขึ้นดอกเบี้ย ธ.ค. กดหุ้นอวกาศ beta สูง"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · ค่าขนม สูงสุด 1.5% (refresh 4 พ.ย.) — งบพรุ่งนี้คือ binary ระยะสั้น Golden Dome คือ moonshot ที่ไม่มีวัน median ถึงวัน catalyst ของ turbo -13.7% (n=19) จึงเข้าที่ Entry 2 ($14.5-15.5) เป็นหลัก",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ turbo -13.7% (n=19)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "โซนย่อหลังงบ — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ใกล้ 52-week low $12.41 — เฉพาะเมื่อ thesis ยังอยู่",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — Q3 ดีกว่าคาด + backlog โต ~$24.52"
+        },
+        "tp2": {
+          "note": "Bull — ได้สัญญา Golden Dome ISR ~$38.89 (Craig-Hallum $38)"
+        },
+        "tp3": {
+          "note": "Moon — Gen-3 ขยาย + Golden Dome ~$52.42 ใกล้ 52-week high $52.88"
+        },
+        "stopLoss": {
+          "tightNote": "-25% — กว้างกว่า medianMAE รวมของ turbo (กลุ่ม n<5) (-24.1%)",
+          "hardNote": "-45% — backlog หด + ตัด guide",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "อสมมาตร ✅ — ผ่านเป้า 5:1 ของ turbo"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "งบ Q3 2026",
+          "note": "ก่อนตลาดเปิด call 8:30 น. ET consensus รายได้ ~$39.6M / EPS -$0.23 backlog Gen-3 และ margin คือสัญญาณ"
+        },
+        {
+          "event": "Golden Dome ISR layer",
+          "note": "ความต้องการ ISR จากอวกาศที่ภาพถ่ายเรียลไทม์ของ BlackSky เข้ากันได้ การมอบสัญญายังไม่มีวัน"
+        }
+      ]
+    }
+  }
+}

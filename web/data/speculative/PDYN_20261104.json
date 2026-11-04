@@ -1,0 +1,308 @@
+{
+  "ticker": "PDYN",
+  "companyName": "Palladyne AI Corp.",
+  "companyDescription": "Defense autonomy/robotics software · exclusive US manufacturing & distribution partnership with Israel Aerospace Industries for loitering munitions, plus UAV/swarming work (AFRL HANGTIME) · FY26 revenue guided +357-415% YoY, backlog $24.6M",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-04T15:00:00.000Z",
+  "price": 3.31,
+  "priceChange": 2.8,
+  "priceNote": "Live $3.31 (+2.8%) on Nov 4, 2026, down ~8% from $3.60 at the Oct 26 report and just above the $3.21 52-week low (high $10.00). Market cap ~$164M. Nov 4 tape: S&P futures -1.2% / Nasdaq -2% on a Democratic midterm sweep; Dec 9 hike ~85% priced.",
+  "marketCap": "~$164M",
+  "sector": "Industrials / Defense Robotics & Autonomy Software",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 0,
+  "summary": "REFRESH (prior report Oct 26, 2026). Q3 2026 results come before the open on Nov 10 (consensus EPS -$0.21, revenue ~$7.5M). They are the dated test of the FY26 guide for +357-415% growth and the $24.6M backlog. The real moonshot driver is still unconfirmed after three months: a US award for the Israel Aerospace Industries loitering munition. The stock sits ~3% above its 52-week low, and consensus is $10.75. The thesis is partnership-driven, and partnership_win is the measured Tier-2 LAGGARD in BOTH lanes (turbo -3.8pp vs +2.0pp overall, n=16; core -1.6 vs +1.4, n=12), so conviction and size are cut to 1.5%. Base +50% (~$5) assumes an in-line print with guidance held, over ~1-2 months, above the lane's realized 30-day P75 (+12.2%; Base bias +72.7pp). แนะนำ 1-2% ของ portfolio เท่านั้น — ถ้า guide ถูกตัด ลงได้ 40-50%.",
+  "factorTags": [
+    "ai_software"
+  ],
+  "catalysts": [
+    {
+      "icon": "📈",
+      "name": "Q3 2026 earnings — guide and backlog check",
+      "description": "Before market open; call 8:00 AM ET. Consensus EPS -$0.21 on ~$7.54M revenue. Watch whether FY26 revenue growth of +357-415% holds and the backlog ($24.6M at Q2) keeps building.",
+      "urgencyLabel": "6 DAYS",
+      "dateBadge": "Nov 10, 2026",
+      "catalystDate": "2026-11-10",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🎯",
+      "name": "IAI loitering-munition US contract",
+      "description": "Exclusive US manufacturing/distribution of Israel Aerospace Industries loitering munitions. No award, size or timeline has been disclosed since July; this is the event that would make the Moon case real.",
+      "urgencyLabel": "UNDATED",
+      "dateBadge": "Ongoing",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "The IAI loitering-munition DoW contract is still unconfirmed: no award, size, or timeline after three-plus months.",
+    "partnership_win is the measured Tier-2 LAGGARD in both lanes (turbo -3.8pp vs +2.0pp, n=16; core -1.6 vs +1.4, n=12). October award headlines without dollar values didn't move the stock either.",
+    "Q2 missed on EPS (-$0.27 vs -$0.23). Another miss with a trimmed FY guide would undercut the whole re-rating story.",
+    "Runway is ~12-15 months on $43.7M cash (Jun 30) against $32-36M guided burn. Acquisitions could accelerate burn or require equity.",
+    "Pivoting from software/robotics into a vertically integrated defense contractor via M&A is a material execution change."
+  ],
+  "estimateDates": [
+    {
+      "event": "Q3 2026 earnings",
+      "dateRange": "Nov 10, 2026",
+      "note": "Pre-market; FY26 guide (+357-415%) and backlog are the tells",
+      "est": "EPS -$0.21 · Rev ~$7.5M",
+      "highlight": "blue"
+    },
+    {
+      "event": "IAI loitering-munition award",
+      "dateRange": "Undated",
+      "note": "The Moon-case driver; no timing disclosed",
+      "est": "Award size TBD",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -50,
+      "price": 1.66
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 50,
+      "price": 4.97
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 130,
+      "price": 7.61
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 300,
+      "price": 13.24
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus (4 analysts, stockanalysis.com)",
+      "target": 10.75,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Northland Securities (Aug 2026)",
+      "target": 15,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Lake Street (Sep 2026)",
+      "target": 11,
+      "rating": "Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held at 3.75–4.00% on Oct 28 (10–2 vote; Cook and Hammack dissented for a hike). Futures price ~85% odds of another +25bp at the Dec 9 FOMC after Logan and Musalem called for more tightening; Warsh gave no explicit December signal.",
+    "inflationNote": "Sep PCE: headline 3.6% y/y (+0.5% m/m), core 3.1% y/y (+0.3% m/m); Q3 GDP +3.4% annualized. Oct CPI on Nov 10 is the next test — core ≥0.4% m/m would effectively lock in the December hike.",
+    "sectorImpact": "Small-cap defense tech. Defense budgets support demand, but the Nov 3 Democratic midterm sweep adds uncertainty to FY27 procurement priorities, and higher rates hurt cash-burning small caps.",
+    "summary": "MEDIUM — the Nov 10 print lands on CPI day. A Democratic Congress is a mild headwind for new defense-tech program starts, and a December hike weighs on cash-burning small caps."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 3.31,
+        "note": "Current price — starter only. Not preferred: turbo at-catalyst median -13.7% (n=19)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 2.9,
+        "rangeMax": 3.1,
+        "note": "Below the 52-week low, after the Nov 10 print — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 2.5,
+        "note": "Deep dip — only if the FY guide is intact",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 4.97,
+      "pct": 50.2,
+      "note": "Base — Q3 in line and FY26 guide held; ~$5 within ~1-2 months."
+    },
+    "tp2": {
+      "price": 7.61,
+      "pct": 129.9,
+      "note": "Bull — guide raised and backlog step-up; ~$7.60."
+    },
+    "tp3": {
+      "price": 13.24,
+      "pct": 300,
+      "note": "Moon — IAI loitering-munition award lands; ~$13.25, toward the Northland $15 target. 6-12 month thesis.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 2.48,
+      "tightPct": -25.1,
+      "tightNote": "-25% — wider than the turbo overall medianMAE (-24.1%), which applies because the earnings_beat bucket has n=2. It sits a hair inside partnership_win's -25.9%: a close below ~$2.48 would mean the FY guide is broken, a thesis change rather than noise.",
+      "hard": 1.66,
+      "hardPct": -49.8,
+      "hardNote": "-50% — guide cut + no IAI award.",
+      "riskReward": "5.2 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Asymmetric ✅ — clears the 5:1 turbo target"
+    },
+    "verdict": "SPECULATIVE · ค่าขนม 1.5% max (refreshed Nov 4). The cheapest point on its range, with a dated Nov 10 test, but the moonshot rests on an IAI award with no date in a measured laggard catalyst type. Measured turbo at-catalyst median is -13.7% (n=19), so Entry 2 ($2.90-3.10, after the print) is preferred.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "No run-up: the stock has bled ~8% since Oct 26 to just above its 52-week low, despite October award headlines (AFRL HANGTIME, GuideTech).",
+    "preRunupTiming": "Final 1-2 weeks before Nov 10",
+    "preRunupPct": "-8% since Oct 26",
+    "postWin": {
+      "avgPct": 9,
+      "range": "+0.3% to +17.2%",
+      "note": "PDYN's own reactions: +17.2% on the 2026 guidance hike / IQ 2.0 launch, but only +0.3% on the Q2 2026 beat (revenue +470% YoY with an EPS miss). Earnings alone rarely re-rate this name; the contract does.",
+      "exampleDate": "Aug 2026 (Q2 print)"
+    },
+    "postLose": {
+      "avgPct": -15,
+      "range": "-10% to -20%",
+      "note": "Defense-tech small caps that cut guidance typically lose 10-20% on the day. Treat this as a sector rule of thumb, not a PDYN-specific precedent.",
+      "exampleDate": "general sector pattern"
+    },
+    "spotSizing": {
+      "pct": 1.5,
+      "reason": "1.5%. The dated catalyst is earnings (earnings_beat n=2, context only), but the moonshot thesis is a partnership/contract win, and partnership_win is the Tier-2 LAGGARD in both lanes (turbo -3.8pp vs +2.0pp, n=16; core -1.6 vs +1.4, n=12). That warrants visibly lower size than the rest of this run."
+    },
+    "stopPreCatalyst": {
+      "pct": -25.1,
+      "price": 2.48,
+      "note": "Wider than the overall turbo medianMAE (-24.1%). A break below ~$2.48 would mean the FY guide is broken, a thesis change rather than noise."
+    },
+    "stopPostCatalyst": {
+      "pct": -30,
+      "note": "If Q3 cuts the FY26 guide or backlog shrinks, exit day 1."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "PDYN",
+      "event": "Q2 2026 earnings: revenue +470% YoY beat, EPS miss",
+      "date": "Aug 2026",
+      "movePct": 0.3,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "Same company, same catalyst type. A big revenue beat barely moved the stock; earnings are a floor-check, not the re-rating event."
+    },
+    {
+      "ticker": "RCAT",
+      "event": "Army Short Range Reconnaissance (SRR) drone program win",
+      "date": "Nov 2024",
+      "movePct": 911,
+      "days": 395,
+      "outcome": "good",
+      "note": "A program-of-record defense award re-rated a sub-$200M drone company ~10x over ~13 months. This is the shape of PDYN's Moon case if the IAI award lands."
+    },
+    {
+      "ticker": "PDYN",
+      "event": "2026 guidance hike + IQ 2.0 product launch",
+      "date": "2026",
+      "movePct": 17.2,
+      "days": 1,
+      "outcome": "good",
+      "note": "Forward guidance, not the print, moves PDYN. A raised FY guide on Nov 10 is the Bull path."
+    }
+  ],
+  "sources": [
+    "https://www.marketbeat.com/instant-alerts/upcoming-palladyne-ai-pdyn-expected-to-release-quarterly-earnings-on-tuesday-2026-11-03/",
+    "https://stockanalysis.com/stocks/pdyn/forecast/",
+    "https://www.nasdaq.com/articles/palladyne-ai-q2-earnings-call-highlights",
+    "https://www.stocktitan.net/news/PDYN/page-2.html",
+    "https://stockanalysis.com/stocks/pdyn/",
+    "https://www.foxbusiness.com/markets/us-stock-futures-tumble-democrats-score-key-midterm-election-wins",
+    "https://www.cnbc.com/2026/10/28/fed-interest-rate-decision-october-2026.html",
+    "https://www.cnbc.com/2026/10/29/pce-inflation-report-september-2026-.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "REFRESH (รายงานก่อน 26 ต.ค. 2026): งบ Q3 2026 ประกาศก่อนตลาดเปิด 10 พ.ย. (consensus EPS -$0.21, รายได้ ~$7.5M) เป็นการทดสอบที่มีวันแน่นอนของ guide ปี 26 ที่ +357-415% และ backlog $24.6M ตัวขับ moonshot จริงคือสัญญาของสหรัฐฯ สำหรับ loitering munition ของ Israel Aerospace Industries ซึ่งยังไม่ยืนยันมาสามเดือน หุ้นอยู่เหนือ 52-week low ราว 3% ส่วน consensus อยู่ที่ $10.75 thesis ขับด้วย partnership และ partnership_win เป็น Tier-2 LAGGARD ทั้งสองเลน (turbo -3.8pp vs +2.0pp, n=16; core -1.6 vs +1.4, n=12) จึงลด conviction และขนาดเหลือ 1.5% Base +50% (~$5) สมมติงบตามคาดและคง guide ใน ~1-2 เดือน สูงกว่า P75 30 วันจริง (+12.2%; bias +72.7pp) แนะนำ 1-2% ของ portfolio เท่านั้น — ถ้าตัด guide ลงได้ 40-50%",
+      "priceNote": "ราคาสด $3.31 (+2.8%) 4 พ.ย. 2026 ลง ~8% จาก $3.60 ณ รายงาน 26 ต.ค. อยู่เหนือ 52-week low $3.21 นิดเดียว (สูงสุด $10.00) Market cap ~$164M ตลาด 4 พ.ย.: futures S&P -1.2% / Nasdaq -2% จากผลเลือกตั้งกลางเทอม ตลาดให้โอกาสขึ้นดอกเบี้ย 9 ธ.ค. ~85%",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "งบ Q3 2026 — เช็ก guide และ backlog",
+          "description": "ก่อนตลาดเปิด call 8:00 น. ET consensus EPS -$0.21 รายได้ ~$7.54M ดูว่า guide รายได้ปี 26 +357-415% ยังอยู่และ backlog ($24.6M ณ Q2) โตต่อหรือไม่"
+        },
+        {
+          "name": "สัญญา loitering munition ของ IAI ในสหรัฐฯ",
+          "description": "สิทธิ์ผลิต/จัดจำหน่าย loitering munition ของ Israel Aerospace Industries ในสหรัฐฯ แต่เพียงผู้เดียว ยังไม่มีการประกาศสัญญา ขนาด หรือกรอบเวลาตั้งแต่ ก.ค. นี่คือ event ที่จะทำให้ Moon case เป็นจริง"
+        }
+      ],
+      "risks": [
+        "สัญญา DoW สำหรับ loitering munition ของ IAI ยังไม่ยืนยัน — ไม่มีการประกาศ ขนาด หรือกรอบเวลาหลังผ่านไปกว่าสามเดือน",
+        "partnership_win เป็น Tier-2 LAGGARD ที่วัดได้ทั้งสองเลน (turbo -3.8pp vs +2.0pp, n=16; core -1.6 vs +1.4, n=12) พาดหัวสัญญาเดือน ต.ค. ที่ไม่เปิดมูลค่าก็ไม่ขยับหุ้น",
+        "Q2 EPS พลาดคาด (-$0.27 vs -$0.23) ถ้าพลาดอีกพร้อมตัด guide ปีจะทำลายเรื่องการ re-rate ทั้งหมด",
+        "Runway ~12-15 เดือนจากเงินสด $43.7M (30 มิ.ย.) เทียบกับการเผาเงิน $32-36M ตาม guide การซื้อกิจการอาจเร่งการเผาเงินหรือต้องเพิ่มทุน",
+        "การเปลี่ยนจากซอฟต์แวร์/หุ่นยนต์ไปเป็นผู้รับเหมากลาโหมแบบครบวงจรผ่าน M&A เป็นการเปลี่ยนแปลงการดำเนินงานครั้งใหญ่"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.75–4.00% เมื่อ 28 ต.ค. (โหวต 10–2, Cook และ Hammack ต้องการขึ้น) futures ให้โอกาสขึ้นอีก 25bp ในประชุม 9 ธ.ค. ราว 85% หลัง Logan และ Musalem เรียกร้องให้คุมเข้มต่อ ส่วน Warsh ไม่ส่งสัญญาณชัดเรื่อง ธ.ค.",
+        "inflationNote": "PCE ก.ย.: headline 3.6% y/y (+0.5% m/m), core 3.1% y/y (+0.3% m/m); GDP Q3 +3.4% CPI ต.ค. วันที่ 10 พ.ย. คือบททดสอบถัดไป — ถ้า core ≥0.4% m/m แทบล็อกการขึ้นดอกเบี้ย ธ.ค.",
+        "sectorImpact": "หุ้นเทคกลาโหมขนาดเล็ก งบกลาโหมหนุนดีมานด์ แต่การที่เดโมแครตกวาดที่นั่งเลือกตั้งกลางเทอม (3 พ.ย.) ทำให้ลำดับความสำคัญการจัดซื้อปี FY27 ไม่แน่นอน และดอกเบี้ยสูงกดหุ้นเล็กที่เผาเงิน",
+        "summary": "MEDIUM — งบ 10 พ.ย. ตรงกับวัน CPI สภาเดโมแครตเป็นแรงต้านเล็กน้อยต่อโครงการเทคกลาโหมใหม่ และการขึ้นดอกเบี้ย ธ.ค. กดหุ้นเล็กที่เผาเงิน"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · ค่าขนม สูงสุด 1.5% (refresh 4 พ.ย.) — ราคาต่ำสุดในกรอบพร้อมการทดสอบ 10 พ.ย. ที่มีวันแน่นอน แต่ moonshot ขึ้นกับสัญญา IAI ที่ไม่มีวัน และอยู่ในกลุ่ม catalyst ที่วัดได้ว่าแย่ median ถึงวัน catalyst ของ turbo -13.7% (n=19) จึงเข้าที่ Entry 2 ($2.90-3.10 หลังงบ) เป็นหลัก",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ turbo -13.7% (n=19)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "ต่ำกว่า 52-week low หลังงบ 10 พ.ย. — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ร่วงหนัก — เฉพาะเมื่อ guide ปียังอยู่",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — Q3 ตามคาดและคง guide ปี 26 ~$5 ใน ~1-2 เดือน"
+        },
+        "tp2": {
+          "note": "Bull — ปรับ guide ขึ้นและ backlog ก้าวกระโดด ~$7.60"
+        },
+        "tp3": {
+          "note": "Moon — ได้สัญญา loitering munition ของ IAI ~$13.25 เข้าใกล้เป้า Northland $15 thesis 6-12 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-25% — กว้างกว่า medianMAE รวมของ turbo (-24.1%) ใช้ค่ารวมเพราะกลุ่ม earnings_beat มี n=2 ถ้าปิดต่ำกว่า ~$2.48 แปลว่า guide ปีพัง ซึ่ง thesis เปลี่ยน ไม่ใช่ noise",
+          "hardNote": "-50% — ตัด guide + ไม่มีสัญญา IAI",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "อสมมาตร ✅ — ผ่านเป้า 5:1 ของ turbo"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "งบ Q3 2026",
+          "note": "ก่อนตลาดเปิด guide ปี 26 (+357-415%) และ backlog คือสัญญาณ"
+        },
+        {
+          "event": "สัญญา loitering munition ของ IAI",
+          "note": "ตัวขับ Moon case ยังไม่เปิดเผยกรอบเวลา"
+        }
+      ]
+    }
+  }
+}
