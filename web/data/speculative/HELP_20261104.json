@@ -1,0 +1,312 @@
+{
+  "ticker": "HELP",
+  "companyName": "Helus Pharma (formerly Cybin)",
+  "companyDescription": "Psychedelic psychiatry · HLP003 (deuterated psilocybin analog, formerly CYB003) in Phase 3 for adjunctive MDD — APPROACH topline guided Q4 2026, EMBRACE second pivotal enrolling, NDA targeted 2028",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-04T15:00:00.000Z",
+  "price": 8.85,
+  "priceChange": -1.99,
+  "priceNote": "Live $8.85 (-2.0%) on Nov 4, 2026, down ~14% from $10.31 at the Oct 26 report. Shares fell ~18% in one session on rival Usona's FDA filing news. 52-week range $3.76-$15.15. Market cap ~$646M. Nov 4 tape: S&P futures -1.2% / Nasdaq -2% on a Democratic midterm sweep; Dec 9 hike ~85% priced.",
+  "marketCap": "~$646M",
+  "sector": "Healthcare / Psychiatry Biotech",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Moonshot",
+  "score": 0,
+  "summary": "REFRESH (prior report Oct 26, 2026). The APPROACH Phase 3 topline for HLP003 in adjunctive MDD (223 patients, fully enrolled Jul 2026) is still guided to Q4 2026, as reiterated at the Oct 21 investor presentation, but no exact date has been given. The stock lost ~14% since Oct 26, mostly on the ~18% one-day drop on Usona's competing FDA filing. That lowers the entry, but it is also a reminder that the psychedelic race has more than one runner. Consensus is $41.40 (11 analysts), but the Compass precedent (Phase 3 hit, stock -36-47% on effect size) is the main risk to the pop. phase3_readout has n=1 in the feedback file, so it is context only. Base +55% ($13.70, near the September high) assumes a clean separation of ≥5 MADRS points within ~1-2 months of the readout, above the lane's realized 30-day P75 (+12.2%; Base bias +72.7pp). แนะนำ 2-3% ของ portfolio เท่านั้น — ถ้าผลออกมาอ่อน ลงได้ 40-60%.",
+  "catalysts": [
+    {
+      "icon": "🧠",
+      "name": "APPROACH Phase 3 topline — HLP003 adjunctive MDD",
+      "description": "Pivotal, 1:1 randomized (16 mg vs placebo, two doses three weeks apart), 223 participants. Topline including key secondaries guided to Q4 2026, reaffirmed Oct 21. The market bar is ≥5-point MADRS separation (the Compass lesson).",
+      "urgencyLabel": "BY DEC 31",
+      "dateBadge": "Q4 2026 (by Dec 31)",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📊",
+      "name": "Fiscal Q2 results",
+      "description": "Cash and runway check against the $100M ATM; any narrowing of the APPROACH topline window.",
+      "urgencyLabel": "~2 WEEKS",
+      "dateBadge": "~mid-Nov 2026",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Sell-the-news risk: Compass hit its Phase 3 primary endpoint in Jun 2025 and still fell 36-47% because the effect size missed the ~5-point MADRS bar. HELP needs a clear separation, not just statistical significance.",
+    "Competitive race: Usona's FDA filing news cost HELP ~18% in a day. A rival ahead in the regulatory queue compresses the first-mover premium.",
+    "Runway is ~12-14 months on ~$166M cash with a $100M ATM. That clears the survival bar but only just; expect a raise after positive data, and a punitive one after a miss.",
+    "Functional unblinding and expectancy effects are a known FDA concern for psychedelic trials, and the FDA rejected Lykos's MDMA application (Aug 2024).",
+    "The topline date is undisclosed ('Q4 2026'). A slip into 2027 adds time decay and financing risk."
+  ],
+  "estimateDates": [
+    {
+      "event": "APPROACH Phase 3 topline (HLP003, adjunctive MDD)",
+      "dateRange": "Q4 2026 (by Dec 31)",
+      "note": "Primary MADRS change + key secondaries; the market bar is ≥5-point separation",
+      "est": "≥5-pt MADRS delta",
+      "highlight": "blue"
+    },
+    {
+      "event": "Fiscal Q2 2027 results",
+      "dateRange": "~mid-Nov 2026",
+      "note": "Cash/ATM usage; topline window update",
+      "est": "Cash ~$150M",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -55,
+      "price": 3.98
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 55,
+      "price": 13.72
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 130,
+      "price": 20.35
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 300,
+      "price": 35.4
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus (11 analysts, stockanalysis.com)",
+      "target": 41.4,
+      "rating": "Strong Buy"
+    },
+    {
+      "firm": "H.C. Wainwright (Jul 2026)",
+      "target": 70,
+      "rating": "Buy"
+    },
+    {
+      "firm": "TD Cowen",
+      "target": 62,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Wells Fargo (Jul 2026)",
+      "target": 16,
+      "rating": "n/a"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held at 3.75–4.00% on Oct 28 (10–2 vote; Cook and Hammack dissented for a hike). Futures price ~85% odds of another +25bp at the Dec 9 FOMC after Logan and Musalem called for more tightening; Warsh gave no explicit December signal.",
+    "inflationNote": "Sep PCE: headline 3.6% y/y (+0.5% m/m), core 3.1% y/y (+0.3% m/m); Q3 GDP +3.4% annualized. Oct CPI on Nov 10 is the next test — core ≥0.4% m/m would effectively lock in the December hike.",
+    "sectorImpact": "Pre-revenue psychiatry biotech funded by equity. The readout dominates; higher-for-longer rates raise the cost of the post-data raise and weigh on long-duration biotech multiples.",
+    "summary": "MEDIUM — the readout window overlaps the Dec 9 FOMC (~85% hike priced). A risk-off December would mute a positive topline's first-day move."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 8.85,
+        "note": "Current price — starter only. Not preferred: turbo at-catalyst median -13.7% (n=19)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 7.4,
+        "rangeMax": 8,
+        "note": "Pre-readout dip zone — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 6.2,
+        "note": "Deep dip — only if the readout is still guided to Q4",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 13.72,
+      "pct": 55,
+      "note": "Base — clean APPROACH win (≥5-pt MADRS) re-rates toward the ~$14-15 September high within ~1-2 months."
+    },
+    "tp2": {
+      "price": 20.35,
+      "pct": 129.9,
+      "note": "Bull — strong effect size plus durability; ~$20.35, toward Wells Fargo's $16 and beyond."
+    },
+    "tp3": {
+      "price": 35.4,
+      "pct": 300,
+      "note": "Moon — EMBRACE confirms and an NDA path opens; ~$35 (still below the $41 consensus). 2027-28 thesis.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 6.64,
+      "tightPct": -25,
+      "tightNote": "-25% — wider than the turbo overall medianMAE (-24.1%); phase3_readout has n=1.",
+      "hard": 3.98,
+      "hardPct": -55,
+      "hardNote": "-55% — failed-readout territory (Compass -36-47% on a technical win).",
+      "riskReward": "5.2 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Asymmetric ✅ — clears the 5:1 turbo target"
+    },
+    "verdict": "SPECULATIVE · Moonshot 2% max (refreshed Nov 4). A cheaper entry after the Usona-driven drop, but an undated Q4 readout, a ~12-14 month runway and the Compass sell-the-news template keep size small. Measured turbo at-catalyst median is -13.7% (n=19), so Entry 2 ($7.40-8.00) is preferred.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "phase3_readout",
+    "preRunup": "HELP ran +170%+ off its low into the September high ($15.15), then gave back ~40% on Usona's filing and the small-cap selloff, so the pre-readout froth has been flushed.",
+    "preRunupTiming": "Final 4-6 weeks before the Q4 readout",
+    "preRunupPct": "-14% since Oct 26",
+    "postWin": {
+      "avgPct": 19,
+      "range": "+8% to +30%",
+      "note": "Psychedelic readouts have not produced 3x days: ATAI +30% on Beckley BPL-003 Phase 2b (Jul 2025), CYBN +8% on CYB003 Phase 2 interim (Nov 2023). The Moon case needs EMBRACE and an NDA path, not one readout.",
+      "exampleDate": "Jul 2025 (ATAI) / Nov 2023 (CYBN)"
+    },
+    "postLose": {
+      "avgPct": -41,
+      "range": "-36% to -47%",
+      "note": "Compass COMP005 (Jun 23, 2025) hit its primary endpoint but showed only a -3.6 MADRS separation versus a ~5-point bar; shares fell 36-47% intraday.",
+      "exampleDate": "Jun 2025"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "2%. phase3_readout has no n≥5 bucket (n=1, context only), so the weak lane prior (hitRate 4.9%, medianExcess +2.0pp) governs, and the sector's own history shows positive psychedelic readouts producing +8-30%, not 3x."
+    },
+    "stopPreCatalyst": {
+      "pct": -25,
+      "price": 6.64,
+      "note": "Wider than the overall turbo medianMAE (-24.1%). A break below ~$6.65 pre-readout means the race/financing story is winning over the data."
+    },
+    "stopPostCatalyst": {
+      "pct": -40,
+      "note": "If the MADRS separation is < 3 points or the primary misses, exit day 1. The Compass precedent shows no recovery bounce."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "CMPS",
+      "event": "COMP005 Phase 3 psilocybin (TRD) hits primary endpoint",
+      "date": "Jun 2025",
+      "movePct": -36,
+      "days": 1,
+      "outcome": "bad",
+      "note": "The key template: a technically positive Phase 3 with a -3.6 MADRS delta (bar ~5) sold off 36-47%. Effect size, not p-value, sets HELP's reaction."
+    },
+    {
+      "ticker": "ATAI",
+      "event": "Beckley BPL-003 Phase 2b positive (TRD)",
+      "date": "Jul 2025",
+      "movePct": 30,
+      "days": 1,
+      "outcome": "good",
+      "note": "A clean psychedelic efficacy win produced ~+30% — the realistic first-day shape for HELP's Base."
+    },
+    {
+      "ticker": "CYBN",
+      "event": "CYB003 Phase 2 interim data (MDD)",
+      "date": "Nov 2023",
+      "movePct": 8,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "Same molecule, earlier stage. Strong data was met with a muted +8%, a reminder that the psychedelic tape under-reacts to good news."
+    }
+  ],
+  "sources": [
+    "https://stockanalysis.com/stocks/help/",
+    "https://www.biospace.com/press-releases/helus-pharma-completes-enrollment-in-phase-3-approach-study-of-hlp003-in-adjunctive-treatment-of-major-depressive-disorder-ahead-of-schedule",
+    "https://finance.yahoo.com/healthcare/articles/cmps-help-stocks-track-worst-195733318.html",
+    "https://www.stocktitan.net/news/HELP/helus-pharma-appoints-michael-halstead-as-chief-executive-oi3h4nwhhwf7.html",
+    "https://kalkine.ca/news/healthcare/helus-pharma-stock-drops-729-as-volatility-builds-ahead-of-pivotal-phase-3-approach-readout-for-hlp003-cnhelp",
+    "https://www.bioworld.com/articles/721464-compass-pathways-succeeds-in-phase-iii-depression-study-stock-slides",
+    "https://www.tipranks.com/news/the-fly/jefferies-sees-potential-50-100-move-in-atai-after-robust-depression-data-thefly",
+    "https://www.nasdaq.com/articles/cybin-announces-positive-phase-2-interim-data-for-cyb003-in-major-depressive-disorder",
+    "https://www.cnbc.com/2026/10/28/fed-interest-rate-decision-october-2026.html",
+    "https://www.cnbc.com/2026/10/29/pce-inflation-report-september-2026-.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "REFRESH (รายงานก่อน 26 ต.ค. 2026): ผล topline Phase 3 APPROACH ของ HLP003 ใน MDD แบบเสริม (223 ราย รับครบ ก.ค. 2026) ยังคาดใน Q4 2026 ตามที่ยืนยันในงานนำเสนอนักลงทุน 21 ต.ค. แต่ยังไม่ระบุวัน หุ้นลง ~14% นับจาก 26 ต.ค. ส่วนใหญ่มาจากการร่วง ~18% ในวันเดียวเมื่อคู่แข่ง Usona ยื่นเอกสารกับ FDA ทำให้จุดเข้าถูกลง แต่ก็เตือนว่าการแข่งขันกลุ่ม psychedelic มีผู้เล่นมากกว่าหนึ่ง เป้า consensus $41.40 (11 นักวิเคราะห์) แต่กรณี Compass (ผ่าน Phase 3 แต่หุ้นร่วง 36-47% เพราะผลเล็ก) คือความเสี่ยงหลัก phase3_readout มี n=1 ใช้เป็นบริบทเท่านั้น Base +55% ($13.70 ใกล้จุดสูง ก.ย.) สมมติผลแยกจากยาหลอก ≥5 คะแนน MADRS ภายใน ~1-2 เดือนหลังผล สูงกว่า P75 30 วันจริง (+12.2%; bias +72.7pp) แนะนำ 2-3% ของ portfolio เท่านั้น — ถ้าผลอ่อน ลงได้ 40-60%",
+      "priceNote": "ราคาสด $8.85 (-2.0%) 4 พ.ย. 2026 ลง ~14% จาก $10.31 ณ รายงาน 26 ต.ค. หุ้นร่วง ~18% ในวันเดียวจากข่าว Usona ยื่น FDA ช่วง 52 สัปดาห์ $3.76-$15.15 Market cap ~$646M ตลาด 4 พ.ย.: futures S&P -1.2% / Nasdaq -2% จากผลเลือกตั้งกลางเทอม ตลาดให้โอกาสขึ้นดอกเบี้ย 9 ธ.ค. ~85%",
+      "scoreLabel": "Moonshot",
+      "catalysts": [
+        {
+          "name": "ผล topline Phase 3 APPROACH — HLP003 สำหรับ MDD แบบเสริม",
+          "description": "การศึกษาหลักแบบสุ่ม 1:1 (16 mg vs ยาหลอก ให้ 2 ครั้งห่าง 3 สัปดาห์) 223 ราย ผลรวม endpoint รองคาดใน Q4 2026 (ยืนยัน 21 ต.ค.) เกณฑ์ตลาดคือแยกจากยาหลอก ≥5 คะแนน MADRS (บทเรียนจาก Compass)"
+        },
+        {
+          "name": "ผลประกอบการไตรมาส 2 ปีงบ",
+          "description": "เช็กเงินสด/runway เทียบกับ ATM $100M และดูว่ากรอบเวลาผล APPROACH แคบลงหรือไม่"
+        }
+      ],
+      "risks": [
+        "เสี่ยง sell-the-news: Compass ผ่าน endpoint หลัก Phase 3 เมื่อ มิ.ย. 2025 แต่หุ้นร่วง 36-47% เพราะผลต่ำกว่าเกณฑ์ ~5 คะแนน MADRS HELP ต้องแยกจากยาหลอกชัด ไม่ใช่แค่มีนัยสำคัญทางสถิติ",
+        "การแข่งขัน: ข่าว Usona ยื่น FDA ทำ HELP ร่วง ~18% ในวันเดียว คู่แข่งที่นำหน้าในคิว FDA ลดค่าพรีเมียมการเป็นรายแรก",
+        "Runway ~12-14 เดือนจากเงินสด ~$166M พร้อม ATM $100M ผ่านเกณฑ์ survival แบบเฉียด คาดว่าจะเพิ่มทุนหลังผลดี และเพิ่มทุนแบบเจ็บถ้าผลพลาด",
+        "การเดาได้ว่าได้ยาจริง (functional unblinding) และ expectancy effect เป็นข้อกังวลของ FDA ต่อการทดลอง psychedelic และ FDA เคยปฏิเสธ MDMA ของ Lykos (ส.ค. 2024)",
+        "ยังไม่ระบุวันผล topline ('Q4 2026') ถ้าเลื่อนไปปี 2027 เพิ่มทั้ง time decay และความเสี่ยงด้านเงินทุน"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.75–4.00% เมื่อ 28 ต.ค. (โหวต 10–2, Cook และ Hammack ต้องการขึ้น) futures ให้โอกาสขึ้นอีก 25bp ในประชุม 9 ธ.ค. ราว 85% หลัง Logan และ Musalem เรียกร้องให้คุมเข้มต่อ ส่วน Warsh ไม่ส่งสัญญาณชัดเรื่อง ธ.ค.",
+        "inflationNote": "PCE ก.ย.: headline 3.6% y/y (+0.5% m/m), core 3.1% y/y (+0.3% m/m); GDP Q3 +3.4% CPI ต.ค. วันที่ 10 พ.ย. คือบททดสอบถัดไป — ถ้า core ≥0.4% m/m แทบล็อกการขึ้นดอกเบี้ย ธ.ค.",
+        "sectorImpact": "ไบโอเทคจิตเวชที่ยังไม่มีรายได้และพึ่งการเพิ่มทุน ผลการทดลองสำคัญที่สุด ดอกเบี้ยสูงนานเพิ่มต้นทุนการเพิ่มทุนหลังผลและกด multiple ไบโอเทคระยะยาว",
+        "summary": "MEDIUM — กรอบเวลาผลทับกับ FOMC 9 ธ.ค. (ตลาดให้ขึ้น ~85%) ถ้า ธ.ค. ตลาด risk-off จะลดแรงวิ่งวันแรกของผลบวก"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · Moonshot สูงสุด 2% (refresh 4 พ.ย.) — จุดเข้าถูกลงหลังร่วงจากข่าว Usona แต่ผลยังไม่มีวันแน่นอนใน Q4 runway ~12-14 เดือน และแบบอย่าง sell-the-news ของ Compass ทำให้ต้องถือไม้เล็ก median ถึงวัน catalyst ของ turbo -13.7% (n=19) จึงเข้าที่ Entry 2 ($7.40-8.00) เป็นหลัก",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ turbo -13.7% (n=19)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "โซนย่อก่อนผล — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ร่วงหนัก — เฉพาะเมื่อยังคาดผลใน Q4",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — APPROACH ชนะชัด (≥5 คะแนน MADRS) re-rate ไปราว $14-15 ระดับสูงสุด ก.ย. ใน ~1-2 เดือน"
+        },
+        "tp2": {
+          "note": "Bull — ผลแรง + คงทน ~$20.35 เกินเป้า Wells Fargo $16"
+        },
+        "tp3": {
+          "note": "Moon — EMBRACE ยืนยัน + เปิดทางยื่น NDA ~$35 (ยังต่ำกว่า consensus $41) thesis ปี 2027-28"
+        },
+        "stopLoss": {
+          "tightNote": "-25% — กว้างกว่า medianMAE รวมของ turbo (-24.1%) เพราะกลุ่ม phase3_readout มี n=1",
+          "hardNote": "-55% — โซนผลล้มเหลว (Compass -36-47% แม้ผ่าน endpoint)",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "อสมมาตร ✅ — ผ่านเป้า 5:1 ของ turbo"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "ผล topline Phase 3 APPROACH (HLP003, MDD แบบเสริม)",
+          "note": "การเปลี่ยนแปลง MADRS หลัก + endpoint รอง เกณฑ์ตลาดคือแยกจากยาหลอก ≥5 คะแนน"
+        },
+        {
+          "event": "ผลประกอบการไตรมาส 2 ปีงบ 2027",
+          "note": "การใช้เงินสด/ATM และอัปเดตกรอบเวลาผล"
+        }
+      ]
+    }
+  }
+}

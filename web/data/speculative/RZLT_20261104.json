@@ -1,0 +1,307 @@
+{
+  "ticker": "RZLT",
+  "companyName": "Rezolute, Inc.",
+  "companyDescription": "Rare metabolic disease · ersodetug (RZ358), an allosteric insulin-receptor antibody for hyperinsulinism — pivotal upLIFT readout in tumor HI due mid-December, congenital-HI path being reworked with FDA after sunRIZE",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-04T15:00:00.000Z",
+  "price": 4.01,
+  "priceChange": 0,
+  "priceNote": "Live $4.01 (flat) on Nov 4, 2026, -5% over the past week. The 52-week range is $1.07-$11.46: the low came after the Dec 2025 sunRIZE miss, and the stock has since recovered to ~35% of its high. Market cap ~$460M. Nov 4 tape: S&P futures -1.2% / Nasdaq -2% on a Democratic midterm sweep; Dec 9 hike ~85% priced.",
+  "marketCap": "~$460M",
+  "sector": "Healthcare / Biotechnology — Rare Metabolic Disease",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Moonshot",
+  "score": 0,
+  "summary": "The mid-December topline from upLIFT is the binary. upLIFT is a single-arm Phase 3 of ersodetug in tumor hyperinsulinism (~16 patients, fully enrolled Oct 14, 2026). In the interim look, 7 of the first 8 participants met the primary endpoint and came off IV glucose. After sunRIZE missed in Dec 2025 (~-87%), the FDA still recommended a Type B pre-BLA meeting on the congenital-HI data, and analysts have reset targets higher: Citizens $15, H.C. Wainwright $10, Craig-Hallum $7. Cash of $108M is guided to last into Q1 2028, so there is no survival flag. phase3_readout has n=1 in the feedback file, so it is context only. Base +80% is a 1-2 month post-data re-rating toward the $7-10 target cluster. That is well above the lane's realized 30-day P75 (+12.2%; Base bias +72.7pp), so treat it as a post-readout horizon, not a 30-day call. แนะนำ 2-3% ของ portfolio เท่านั้น — ถ้า upLIFT พลาด ลงได้ 50-70%.",
+  "catalysts": [
+    {
+      "icon": "🧪",
+      "name": "upLIFT Phase 3 topline — ersodetug in tumor HI",
+      "description": "Single-arm pivotal study (~16 participants, 9 mg/kg weekly × 8 weeks), fully enrolled Oct 14, 2026. 7 of the first 8 participants met the primary endpoint at interim. Company guides topline to mid-December 2026.",
+      "urgencyLabel": "~6 WEEKS",
+      "dateBadge": "Mid-Dec 2026",
+      "catalystDate": "2026-12-15",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🏛️",
+      "name": "Congenital HI — FDA Type B pre-BLA meeting",
+      "description": "After sunRIZE missed its primary endpoint, FDA recommended a Type B pre-BLA meeting on the congenital-HI dataset. The meeting outcome sets whether a second, larger indication is still filable.",
+      "urgencyLabel": "H1 2027",
+      "dateBadge": "H1 2027",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Tiny, single-arm pivotal: ~16 patients with no control arm. One or two non-responders change the headline rate, and the 7/8 interim may not hold in the full cohort.",
+    "Credibility discount: sunRIZE (congenital HI) missed its primary endpoint in Dec 2025 and the stock lost ~87%. The market will haircut any 'positive' readout that needs caveats.",
+    "Even a successful upLIFT does not guarantee approval. The company says so itself, and FDA has not yet agreed a filing path for tumor HI on single-arm data.",
+    "Tumor HI (mostly insulinoma/NICTH) is an ultra-rare market. Peak sales are modest unless the congenital-HI label is rescued.",
+    "Expect a raise into strength after positive data even with $108M cash. The equity overhang caps the first-day move."
+  ],
+  "estimateDates": [
+    {
+      "event": "upLIFT Phase 3 topline (tumor HI)",
+      "dateRange": "Mid-Dec 2026",
+      "note": "Primary endpoint: responders who discontinue IV glucose; interim 7/8",
+      "est": "Responder rate ≥ interim",
+      "highlight": "blue"
+    },
+    {
+      "event": "Fiscal Q1 2027 results",
+      "dateRange": "~mid-Nov 2026",
+      "note": "Cash/runway check; any FDA Type B timing update",
+      "est": "Cash ~$95-100M",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -55,
+      "price": 1.8
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 80,
+      "price": 7.22
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 175,
+      "price": 11.03
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 275,
+      "price": 15.04
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Citizens JMP (Oct 2026)",
+      "target": 15,
+      "rating": "Market Outperform"
+    },
+    {
+      "firm": "H.C. Wainwright (Oct 2026)",
+      "target": 10,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Craig-Hallum (upgrade)",
+      "target": 7,
+      "rating": "Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held at 3.75–4.00% on Oct 28 (10–2 vote; Cook and Hammack dissented for a hike). Futures price ~85% odds of another +25bp at the Dec 9 FOMC after Logan and Musalem called for more tightening; Warsh gave no explicit December signal.",
+    "inflationNote": "Sep PCE: headline 3.6% y/y (+0.5% m/m), core 3.1% y/y (+0.3% m/m); Q3 GDP +3.4% annualized. Oct CPI on Nov 10 is the next test — core ≥0.4% m/m would effectively lock in the December hike.",
+    "sectorImpact": "Single-asset rare-disease biotech. The upLIFT readout dominates. Rates matter only through small-cap biotech risk appetite (XBI/IWM) and the price of a post-data raise.",
+    "summary": "MEDIUM — a December hike is mostly priced. A hot Oct CPI (Nov 10) would hit small-cap biotech multiples before the mid-Dec readout, which is a reason to prefer the dip entry."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 4.01,
+        "note": "Current price — starter only. Not preferred: turbo at-catalyst median -13.7% (n=19)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 3.4,
+        "rangeMax": 3.7,
+        "note": "Pre-readout dip zone (CPI/FOMC tape) — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 2.9,
+        "note": "Deep dip — only if no company-specific bad news",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 7.22,
+      "pct": 80,
+      "note": "Base — clean upLIFT topline re-rates toward the $7-10 target cluster. Horizon ~1-2 months after the readout."
+    },
+    "tp2": {
+      "price": 11.03,
+      "pct": 175.1,
+      "note": "Bull — strong responder rate plus a constructive congenital-HI Type B outcome; back near the $11.46 52-week high."
+    },
+    "tp3": {
+      "price": 15.04,
+      "pct": 275.1,
+      "note": "Moon — both HI indications back on a filing path; ~$15 (Citizens target). 12-24 month thesis.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 3.01,
+      "tightPct": -24.9,
+      "tightNote": "-25% — wider than the turbo overall medianMAE (-24.1%); the phase3_readout bucket has n=1, so the overall figure applies.",
+      "hard": 1.8,
+      "hardPct": -55.1,
+      "hardNote": "-55% — readout-failure territory (sunRIZE precedent).",
+      "riskReward": "7.0 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Asymmetric ✅ — clears the 5:1 turbo target"
+    },
+    "verdict": "SPECULATIVE · Moonshot 2.5% max — the most asymmetric dated binary on this screen: interim 7/8 responders, funded into 2028, and the stock at a third of its high. Measured turbo at-catalyst median is -13.7% (n=19), so Entry 2 ($3.40-3.70) is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "phase3_readout",
+    "preRunup": "Small-cap biotechs with a dated pivotal readout often drift higher into the event, but RZLT has slipped ~5% in the past week with the small-cap tape. There is no visible pre-run yet.",
+    "preRunupTiming": "Final 2-4 weeks before mid-Dec",
+    "preRunupPct": "-5% past week (no run-up yet)",
+    "postWin": {
+      "avgPct": 100,
+      "range": "+40% to +268%",
+      "note": "MDGL rose ~268% in one session on a clean Phase 3 (MAESTRO-NASH, Dec 2022). CAPR ran +300% in two days on HOPE-3 (Dec 2025). Those are top-decile outcomes on large indications; for an ultra-rare, single-arm study a +40-100% re-rating toward the $7-10 target cluster is the realistic base.",
+      "exampleDate": "Dec 19, 2022 (MDGL)"
+    },
+    "postLose": {
+      "avgPct": -60,
+      "range": "-36% to -87%",
+      "note": "RZLT's own sunRIZE miss (Dec 2025) took the stock down ~87%. CMPS fell 36-47% on a Phase 3 that technically hit its endpoint but disappointed on effect size (Jun 2025).",
+      "exampleDate": "Dec 2025 (RZLT sunRIZE)"
+    },
+    "spotSizing": {
+      "pct": 2.5,
+      "reason": "2.5%. phase3_readout has no n≥5 bucket (n=1, context only), so the lane-wide prior governs: turbo hitRate 4.9% (2/41) and medianExcessVsBench only +2.0pp, which caps any turbo pick at 2-3% in a SELECTIVE/low-conviction tape."
+    },
+    "stopPreCatalyst": {
+      "pct": -24.9,
+      "price": 3.01,
+      "note": "Wider than the overall turbo medianMAE (-24.1%). A break below ~$3.00 before mid-December means the market is pricing a weak readout."
+    },
+    "stopPostCatalyst": {
+      "pct": -40,
+      "note": "If upLIFT misses or the responder rate collapses, exit day 1. sunRIZE was ~-87% in Dec 2025, so there is no 'wait for a bounce'."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "RZLT",
+      "event": "sunRIZE Phase 3 (congenital HI) misses primary endpoint",
+      "date": "Dec 2025",
+      "movePct": -87,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Same drug, same company. This is the downside template if upLIFT disappoints, though tumor HI is a different, smaller single-arm study with a strong interim."
+    },
+    {
+      "ticker": "MDGL",
+      "event": "MAESTRO-NASH Phase 3 topline hits both endpoints",
+      "date": "Dec 2022",
+      "movePct": 268,
+      "days": 1,
+      "outcome": "good",
+      "note": "Upper-bound template for a clean pivotal win in a depressed small/mid-cap. MDGL's indication was far larger, so treat it as the Moon-case shape, not the base."
+    },
+    {
+      "ticker": "CMPS",
+      "event": "COMP005 Phase 3 psilocybin hits primary endpoint but effect size disappoints",
+      "date": "Jun 2025",
+      "movePct": -36,
+      "days": 1,
+      "outcome": "bad",
+      "note": "A technical 'win' can still sell off if the effect looks small. For RZLT, the responder rate versus the 7/8 interim is the number to watch."
+    }
+  ],
+  "sources": [
+    "https://ir.rezolutebio.com/news/detail/386/rezolute-announces-completion-of-enrollment-in-phase-3-uplift-study-of-ersodetug-in-tumor-hyperinsulinism",
+    "https://www.tradingview.com/news/tradingview:c3c9ae9ea3aef:0-rezolute-updates-investors-on-ersodetug-programs-108-million-cash-position/",
+    "https://www.investing.com/news/analyst-ratings/citizens-raises-rezolute-stock-price-target-on-fda-feedback-93CH-4933867",
+    "https://www.investing.com/news/analyst-ratings/h.c.-wainwright-reiterates-buy-on-rezolute-stock-10-target-93CH-4934174",
+    "https://stocktwits.com/news-articles/markets/equity/rzlt-stock-lost-nearly-90-of-its-value-today-what-did-the-company-s-latest-trial-reveal/cLIxW9kREno",
+    "https://www.tipranks.com/news/mdgl-skyrockets-after-positive-clinical-trial",
+    "https://www.bioworld.com/articles/721464-compass-pathways-succeeds-in-phase-iii-depression-study-stock-slides",
+    "https://stockanalysis.com/stocks/rzlt/market-cap/",
+    "https://www.cnbc.com/2026/10/28/fed-interest-rate-decision-october-2026.html",
+    "https://www.cnbc.com/2026/10/29/pce-inflation-report-september-2026-.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "ตัวชี้ขาดคือผล topline ของ upLIFT กลางเดือน ธ.ค. — Phase 3 แบบแขนเดียวของ ersodetug ใน tumor hyperinsulinism (~16 ราย รับครบ 14 ต.ค. 2026) ผลระหว่างทาง 7 ใน 8 รายแรกผ่าน endpoint หลัก (เลิกใช้กลูโคสทางหลอดเลือดได้) แม้ sunRIZE ล้มเหลวเมื่อ ธ.ค. 2025 (~-87%) FDA ยังแนะนำให้ประชุม Type B ก่อนยื่น BLA สำหรับข้อมูล congenital HI และนักวิเคราะห์ปรับเป้าขึ้น (Citizens $15, H.C. Wainwright $10, Craig-Hallum $7) เงินสด $108M ใช้ได้ถึง Q1 2028 จึงไม่ติด survival flag phase3_readout มี n=1 ในไฟล์ feedback ใช้เป็นบริบทเท่านั้น Base +80% คือการ re-rate ใน 1-2 เดือนหลังผล สูงกว่า P75 30 วันจริงของกลุ่มมาก (+12.2%; bias +72.7pp) จึงเป็นกรอบเวลาหลังผลออก ไม่ใช่คาด 30 วัน แนะนำ 2-3% ของ portfolio เท่านั้น — ถ้า upLIFT พลาด ลงได้ 50-70%",
+      "priceNote": "ราคาสด $4.01 (ทรงตัว) 4 พ.ย. 2026 ลง ~5% ในสัปดาห์ ช่วง 52 สัปดาห์ $1.07-$11.46 (จุดต่ำหลัง sunRIZE พลาด ธ.ค. 2025) ฟื้นมาราว 35% ของจุดสูงสุด Market cap ~$460M ตลาด 4 พ.ย.: futures S&P -1.2% / Nasdaq -2% จากผลเลือกตั้งกลางเทอม ตลาดให้โอกาสขึ้นดอกเบี้ย 9 ธ.ค. ~85%",
+      "scoreLabel": "Moonshot",
+      "catalysts": [
+        {
+          "name": "ผล topline Phase 3 upLIFT — ersodetug ใน tumor HI",
+          "description": "การศึกษาหลักแบบแขนเดียว (~16 ราย, 9 mg/kg ทุกสัปดาห์ × 8 สัปดาห์) รับครบ 14 ต.ค. 2026 ผลระหว่างทาง 7/8 ผ่าน endpoint หลัก บริษัทคาดประกาศกลาง ธ.ค. 2026"
+        },
+        {
+          "name": "Congenital HI — ประชุม Type B ก่อนยื่น BLA กับ FDA",
+          "description": "หลัง sunRIZE พลาด FDA แนะนำประชุม Type B สำหรับข้อมูล congenital HI ผลการประชุมจะบอกว่าข้อบ่งใช้ที่ใหญ่กว่ายังยื่นได้หรือไม่"
+        }
+      ],
+      "risks": [
+        "การศึกษาหลักเล็กมากและไม่มีกลุ่มควบคุม (~16 ราย) แค่ 1-2 รายที่ไม่ตอบสนองก็เปลี่ยนตัวเลขหลักได้ และผล 7/8 ระหว่างทางอาจไม่คงอยู่ทั้งกลุ่ม",
+        "ความน่าเชื่อถือถูกหักลด: sunRIZE พลาดเมื่อ ธ.ค. 2025 หุ้นร่วง ~87% ตลาดจะหักลดผล 'บวก' ที่มีเงื่อนไขแฝง",
+        "แม้ upLIFT สำเร็จก็ไม่การันตีการอนุมัติ — บริษัทระบุเอง และ FDA ยังไม่ยืนยันเส้นทางยื่นสำหรับ tumor HI ด้วยข้อมูลแขนเดียว",
+        "Tumor HI (ส่วนใหญ่ insulinoma/NICTH) เป็นตลาดหายากมาก ยอดขายสูงสุดจำกัดหากกู้ข้อบ่งใช้ congenital HI ไม่ได้",
+        "คาดว่าจะเพิ่มทุนตอนหุ้นแข็งหลังผลดีแม้มีเงินสด $108M แรงขายนี้จำกัดการวิ่งวันแรก"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.75–4.00% เมื่อ 28 ต.ค. (โหวต 10–2, Cook และ Hammack ต้องการขึ้น) futures ให้โอกาสขึ้นอีก 25bp ในประชุม 9 ธ.ค. ราว 85% หลัง Logan และ Musalem เรียกร้องให้คุมเข้มต่อ ส่วน Warsh ไม่ส่งสัญญาณชัดเรื่อง ธ.ค.",
+        "inflationNote": "PCE ก.ย.: headline 3.6% y/y (+0.5% m/m), core 3.1% y/y (+0.3% m/m); GDP Q3 +3.4% CPI ต.ค. วันที่ 10 พ.ย. คือบททดสอบถัดไป — ถ้า core ≥0.4% m/m แทบล็อกการขึ้นดอกเบี้ย ธ.ค.",
+        "sectorImpact": "ไบโอเทคโรคหายากที่มีสินทรัพย์เดียว ผล upLIFT สำคัญที่สุด ดอกเบี้ยกระทบผ่าน risk appetite ของไบโอเทคเล็ก (XBI/IWM) และราคาการเพิ่มทุนหลังผล",
+        "summary": "MEDIUM — ตลาดรับการขึ้นดอกเบี้ย ธ.ค. ไปมากแล้ว แต่ถ้า CPI ต.ค. (10 พ.ย.) ร้อนจะกด multiple ไบโอเทคเล็กก่อนผลกลาง ธ.ค. จึงควรรอเข้าตอนย่อ"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · Moonshot สูงสุด 2.5% — binary ที่มีวันชัดและอสมมาตรที่สุดในรอบนี้: ผลระหว่างทาง 7/8, เงินพอถึงปี 2028, หุ้นอยู่ 1/3 ของจุดสูงสุด median ถึงวัน catalyst ของ turbo -13.7% (n=19) จึงเข้าที่ Entry 2 ($3.40-3.70) เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ turbo -13.7% (n=19)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "โซนย่อก่อนผล (ช่วง CPI/FOMC) — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ร่วงหนัก — เฉพาะเมื่อไม่มีข่าวร้ายของบริษัทเอง",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — ผล upLIFT สะอาด re-rate ไปโซนเป้า $7-10 กรอบ ~1-2 เดือนหลังผล"
+        },
+        "tp2": {
+          "note": "Bull — อัตราตอบสนองแข็ง + ผลประชุม Type B congenital HI ดี กลับไปใกล้ 52-week high $11.46"
+        },
+        "tp3": {
+          "note": "Moon — ทั้งสองข้อบ่งใช้ HI กลับสู่เส้นทางยื่น ~$15 (เป้า Citizens) thesis 12-24 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-25% — กว้างกว่า medianMAE รวมของ turbo (-24.1%) เพราะกลุ่ม phase3_readout มี n=1",
+          "hardNote": "-55% — โซนผลล้มเหลว (เทียบ sunRIZE)",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "อสมมาตร ✅ — ผ่านเป้า 5:1 ของ turbo"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "ผล topline Phase 3 upLIFT (tumor HI)",
+          "note": "Endpoint หลัก: ผู้ตอบสนองที่เลิกกลูโคสทางหลอดเลือดได้ ระหว่างทาง 7/8"
+        },
+        {
+          "event": "ผลประกอบการไตรมาส 1 ปีงบ 2027",
+          "note": "เช็กเงินสด/runway และความคืบหน้านัด Type B กับ FDA"
+        }
+      ]
+    }
+  }
+}
