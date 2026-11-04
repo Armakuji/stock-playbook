@@ -1,0 +1,275 @@
+{
+  "ticker": "BTQ",
+  "companyName": "BTQ Technologies Corp.",
+  "companyDescription": "Post-quantum cryptography · QCIM chip core validated in TSMC 28nm silicon (Aug 2026) · QSSN powering Korea's first stablecoin pilot · Cash fell further to CAD 9.73M against an active C$150M ATM — dilution/survival risk has deepened, not resolved",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-04T16:00:00.000Z",
+  "price": 1.95,
+  "priceChange": 1.56,
+  "priceNote": "Live $1.95 (+1.6%) on Nov 4, 2026 — flat vs $1.97 at the Oct 26 report, near the $1.82 52-week low (high $7.92). Nov 4 tape: S&P futures -1.2% / Nasdaq -2% on a Democratic midterm sweep; Dec 9 hike ~85% priced.",
+  "marketCap": "~$289M",
+  "sector": "Technology / Quantum-Safe Cybersecurity",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 0,
+  "summary": "REFRESH (prior report Oct 26, 2026): no new company news since the August QCIM+PUF chip design completion and Q2 update. The year-end QCIM test-silicon shipment (~Dec 15 target) remains the only dated milestone, and it is a soft product milestone rather than a commercial order. ⚠️ SURVIVAL: CAD 9.73M cash at Q2 against an active C$150M ATM (~C$100M still available); ATM selling is the funding model and caps rallies. Base cut from +50% to +40% and Moon from +300% to +250% (consensus is only $6.04) — above the lane's realized 30d P90 of +25.9% (written-Base bias +72.7pp), assuming the silicon ships on time and an evaluation customer is named within ~2-3 months. product_launch has n=2 (context only). แนะนำ 1% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 60-80%.",
+  "catalysts": [
+    {
+      "icon": "🔬",
+      "name": "QCIM Test Silicon Shipment (Year-End 2026)",
+      "description": "QCIM core validated in a TSMC 28nm environment (Aug 7) — real silicon progress beyond the design-completion milestone in the last report. Company reaffirmed (Aug 18) the target to ship test chips to key customers/partners by year-end 2026.",
+      "urgencyLabel": "~7 WEEKS",
+      "dateBadge": "~Dec 2026",
+      "catalystDate": "2026-12-15",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🇰🇷",
+      "name": "Korean Commercial Push — ITCENGLOBAL MOU + QSSN Stablecoin Pilot",
+      "description": "MOU with ITCENGLOBAL (large Korean IT services group, Aug 13) plus QSSN powering Korea's first stablecoin pilot — real, near-term commercial traction beyond the federal-policy tailwind thesis, though not yet material revenue.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "⚠️ SURVIVAL: cash was CAD 9.73M at the Q2 2026 print against an active C$150M ATM (~C$100M still available). Continued ATM selling is the funding model, and it caps any rally until revenue appears.",
+    "Revenue is negligible (2025 revenue ~CAD 0.3M, down ~53%), so the valuation rests entirely on QCIM commercialization.",
+    "The QCIM test-silicon shipment is a year-end target, not a firm date, and could slip into 2027.",
+    "Analyst coverage is thin (two analysts, $6.04 average) and dated relative to the deeper cash concern.",
+    "The post-quantum narrative is crowded, and large incumbents can ship PQC in software without dedicated chips."
+  ],
+  "estimateDates": [
+    {
+      "event": "QCIM Test Silicon Shipment",
+      "dateRange": "~Dec 2026",
+      "note": "Company-stated target, reaffirmed Aug 18; exact date not yet confirmed",
+      "est": "n/a",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -60,
+      "price": 0.78
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 40,
+      "price": 2.73
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 130,
+      "price": 4.48
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 250,
+      "price": 6.83
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus (2 analysts, stockanalysis.com)",
+      "target": 6.04,
+      "rating": "Strong Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held at 3.75–4.00% on Oct 28 (10–2 vote; Cook and Hammack dissented for a hike). Futures price ~85% odds of another +25bp at the Dec 9 FOMC after Logan and Musalem called for more tightening; Warsh gave no explicit December signal.",
+    "inflationNote": "Sep PCE: headline 3.6% y/y (+0.5% m/m), core 3.1% y/y (+0.3% m/m); Q3 GDP +3.4% annualized. Oct CPI on Nov 10 is the next test — core ≥0.4% m/m would effectively lock in the December hike.",
+    "sectorImpact": "Pre-revenue quantum-security micro-cap funding itself through an ATM — the cost of equity sets the dilution rate directly.",
+    "summary": "MEDIUM — an ATM-funded pre-revenue name is directly exposed to a December hike and weak small-cap/quantum risk appetite."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 1.95,
+        "note": "Current price — starter only. Not preferred: turbo at-catalyst median -13.7% (n=19)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 1.7,
+        "rangeMax": 1.82,
+        "note": "At/below the $1.82 52-week low — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 1.5,
+        "note": "Deep dip — only if the Dec silicon target holds",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 2.73,
+      "pct": 40,
+      "note": "Base — QCIM test silicon ships on time; ~$2.73 over ~2-3 months."
+    },
+    "tp2": {
+      "price": 4.48,
+      "pct": 129.7,
+      "note": "Bull — named evaluation customer for QCIM; ~$4.49."
+    },
+    "tp3": {
+      "price": 6.83,
+      "pct": 250.3,
+      "note": "Moon — first commercial QCIM design-in; ~$6.83, above the $6.04 consensus. 12-month thesis.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 1.46,
+      "tightPct": -25.1,
+      "tightNote": "-25% — wider than the turbo overall medianMAE (-24.1%); product_launch n=2.",
+      "hard": 0.88,
+      "hardPct": -54.9,
+      "hardNote": "-55% — silicon slip + heavy ATM selling.",
+      "riskReward": "5.2 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Asymmetric ✅ — clears the 5:1 turbo target"
+    },
+    "verdict": "SPECULATIVE · ค่าขนม 1% max (refreshed Nov 4) — a soft, year-end product milestone with an active ATM overhead. Measured turbo at-catalyst median is -13.7% (n=19), so Entry 2 ($1.70-1.82) is preferred.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "product_launch",
+    "preRunup": "Falling into the event: BTQ is ~30% below the Sep 29 report and ~81% off its $10.20 high, with ATM supply overhanging any run-up into the year-end QCIM test-silicon milestone.",
+    "preRunupTiming": "N/A",
+    "preRunupPct": "-30% since Sep 29",
+    "postWin": {
+      "avgPct": 100,
+      "range": "+50% to +296%",
+      "note": "No single cleanly-dated BTQ-specific comparable case with a sourced percentage was found beyond the general policy-driven pattern implied by its own 52-week range ($2.09-$16.00) — unchanged from last report. product_launch catalystType has n=2 in this run's turbo feedback data, too thin (tier 1) to apply mandatorily.",
+      "exampleDate": "N/A — inferred from BTQ's own 52-week range"
+    },
+    "postLose": {
+      "avgPct": -30,
+      "range": "-15% to -35%",
+      "note": "BTQ's own pattern has worsened since the prior report — down 30.6% now versus ~24% at the last check, despite MORE positive operational news (silicon validation, Korean MOU) than last time. This is the clearest evidence yet that the market is pricing the deepening cash/ATM overhang ahead of operational execution.",
+      "exampleDate": "Aug-Sep 2026 (BTQ, this report's own comparison period)"
+    },
+    "spotSizing": {
+      "pct": 1,
+      "reason": "1%. product_launch has n=2 (tier 1, context only); the survival flag (CAD 9.73M cash vs an active C$150M ATM) and a soft, non-commercial milestone justify the smallest size on the board."
+    },
+    "stopPreCatalyst": {
+      "pct": -25.1,
+      "price": 1.46,
+      "note": "Wider than the overall turbo medianMAE (-24.1%). A break below ~$1.46 means the ATM is overwhelming the story."
+    },
+    "stopPostCatalyst": {
+      "pct": -40,
+      "note": "If the silicon milestone slips into 2027, or a deeply discounted raise lands, exit."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "BTQ",
+      "event": "Own 52-week trading range — federal quantum-policy newsflow vs. deepening ATM dilution overhang",
+      "date": "Trailing 52 weeks",
+      "movePct": -82,
+      "days": 330,
+      "outcome": "bad",
+      "note": "Same-company precedent — down ~82% from its Oct 2025 ATH ($22 CAD) despite real policy tailwinds and, this quarter, real technical progress (silicon validation). Dilution/cash risk has dominated the stock's price action throughout."
+    },
+    {
+      "ticker": "BTQ",
+      "event": "QCIM core silicon validation (TSMC 28nm) + Korean ITCENGLOBAL MOU, stock falls 30.6% anyway on deepening cash concern",
+      "date": "Aug-Sep 2026",
+      "movePct": -30.6,
+      "days": 50,
+      "outcome": "bad",
+      "note": "The defining data point of this refresh — genuinely more positive operational news than the last report, yet a materially worse stock reaction, because the cash/ATM overhang worsened in the same window."
+    }
+  ],
+  "sources": [
+    "https://www.prnewswire.com/news-releases/btq-technologies-and-ictk-complete-design-of-next-generation-qcim-security-chip-integrating-puf-technology-302822628.html",
+    "https://stockanalysis.com/stocks/btq/",
+    "https://finviz.com/news/362824/btq-technologies-announces-at-the-market-equity-program",
+    "https://www.barchart.com/story/news/3720482/btq-technologies-and-itri-complete-first-milestone-in-global-qcim-chip-roadmap",
+    "https://quartr.com/events/btq-technologies-corp-btq-q2-2026_FTmmTxON",
+    "https://www.stocktitan.net/news/BTQ/",
+    "https://www.cnbc.com/2026/10/28/fed-interest-rate-decision-october-2026.html",
+    "https://www.cnbc.com/2026/10/29/pce-inflation-report-september-2026-.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "REFRESH (รายงานก่อน 26 ต.ค. 2026): ไม่มีข่าวใหม่ของบริษัทหลังออกแบบชิป QCIM+PUF เสร็จเดือน ส.ค. และอัปเดต Q2 การส่ง test silicon ของ QCIM ปลายปี (เป้า ~15 ธ.ค.) ยังเป็น milestone เดียวที่มีวัน และเป็น milestone ผลิตภัณฑ์แบบอ่อน ไม่ใช่ออร์เดอร์เชิงพาณิชย์ ⚠️ SURVIVAL: เงินสด CAD 9.73M ณ Q2 เทียบ ATM C$150M ที่ยังเปิดอยู่ (~C$100M เหลือ) การขายผ่าน ATM คือวิธีหาเงินหลักและกดการวิ่ง Base ลดจาก +50% เป็น +40% และ Moon จาก +300% เป็น +250% (consensus แค่ $6.04) สูงกว่า P90 30 วัน +25.9% (bias +72.7pp) สมมติส่ง silicon ตรงเวลาและมีลูกค้าประเมินภายใน ~2-3 เดือน product_launch n=2 (บริบทเท่านั้น) แนะนำ 1% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 60-80%",
+      "priceNote": "ราคาสด $1.95 (+1.6%) 4 พ.ย. 2026 ทรงตัวจาก $1.97 ณ รายงาน 26 ต.ค. ใกล้ 52-week low $1.82 (สูงสุด $7.92) ตลาด 4 พ.ย.: futures S&P -1.2% / Nasdaq -2% จากผลเลือกตั้งกลางเทอม ตลาดให้โอกาสขึ้นดอกเบี้ย 9 ธ.ค. ~85%",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "ส่งมอบ Test Silicon QCIM (สิ้นปี 2026)",
+          "description": "Validate QCIM core ในสภาพแวดล้อม TSMC 28nm แล้ว (7 ส.ค.) — ความคืบหน้า silicon จริงเกินกว่า milestone ออกแบบเสร็จในรายงานก่อน บริษัทยืนยัน (18 ส.ค.) target ส่ง test chip ให้ลูกค้า/พาร์ทเนอร์หลักภายในสิ้นปี 2026"
+        },
+        {
+          "name": "การรุกตลาดเกาหลี — MOU ITCENGLOBAL + QSSN Stablecoin Pilot",
+          "description": "MOU กับ ITCENGLOBAL (กลุ่ม IT ใหญ่ของเกาหลี, 13 ส.ค.) บวก QSSN กำลังขับเคลื่อน stablecoin pilot แรกของเกาหลี — แรงหนุนเชิงพาณิชย์ระยะใกล้จริงเกินกว่าแค่ thesis นโยบายรัฐบาลกลาง แม้จะยังไม่เป็นรายได้ก้อนใหญ่"
+        }
+      ],
+      "risks": [
+        "⚠️ SURVIVAL: เงินสด CAD 9.73M ณ งบ Q2 2026 เทียบ ATM C$150M ที่ใช้งานอยู่ (เหลือ ~C$100M) — การขายหุ้นผ่าน ATM ต่อเนื่องคือโมเดลการหาเงิน และจะกดทุกการ rally จนกว่าจะมีรายได้",
+        "รายได้แทบไม่มี (ปี 2025 ~CAD 0.3M ลด ~53%) มูลค่าขึ้นกับการทำ QCIM เชิงพาณิชย์ทั้งหมด",
+        "การส่งชิปทดสอบ QCIM เป็นเป้าสิ้นปี ไม่ใช่วันที่แน่นอน อาจเลื่อนไป 2027",
+        "นักวิเคราะห์ครอบคลุมน้อย (2 ราย เฉลี่ย $6.04) และเป้าเก่ากว่าความกังวลเรื่องเงินสดที่ลึกขึ้น",
+        "เรื่องเล่า post-quantum แออัด และผู้เล่นใหญ่สามารถส่ง PQC แบบซอฟต์แวร์โดยไม่ต้องใช้ชิปเฉพาะ"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.75–4.00% เมื่อ 28 ต.ค. (โหวต 10–2, Cook และ Hammack ต้องการขึ้น) futures ให้โอกาสขึ้นอีก 25bp ในประชุม 9 ธ.ค. ราว 85% หลัง Logan และ Musalem เรียกร้องให้คุมเข้มต่อ ส่วน Warsh ไม่ส่งสัญญาณชัดเรื่อง ธ.ค.",
+        "inflationNote": "PCE ก.ย.: headline 3.6% y/y (+0.5% m/m), core 3.1% y/y (+0.3% m/m); GDP Q3 +3.4% CPI ต.ค. วันที่ 10 พ.ย. คือบททดสอบถัดไป — ถ้า core ≥0.4% m/m แทบล็อกการขึ้นดอกเบี้ย ธ.ค.",
+        "sectorImpact": "หุ้นไมโครแคปด้านความปลอดภัยควอนตัมที่ยังไม่มีรายได้และหาเงินผ่าน ATM — ต้นทุนส่วนทุนกำหนดอัตรา dilution โดยตรง",
+        "summary": "MEDIUM — หุ้นที่ยังไม่มีรายได้และใช้ ATM ระดมทุนโดนผลตรงจากการขึ้นดอกเบี้ย ธ.ค. และ risk appetite ที่อ่อนของหุ้นเล็ก/quantum"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · ค่าขนม สูงสุด 1% (refresh 4 พ.ย.) — milestone ผลิตภัณฑ์ปลายปีแบบอ่อนพร้อม ATM กดอยู่ median ถึงวัน catalyst ของ turbo -13.7% (n=19) จึงเข้าที่ Entry 2 ($1.70-1.82) เป็นหลัก",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ turbo -13.7% (n=19)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "ที่/ต่ำกว่า 52-week low $1.82 — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ร่วงหนัก — เฉพาะเมื่อเป้า silicon ธ.ค. ยังอยู่",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — ส่ง test silicon ของ QCIM ตรงเวลา ~$2.73 ใน ~2-3 เดือน"
+        },
+        "tp2": {
+          "note": "Bull — ประกาศชื่อลูกค้าประเมิน QCIM ~$4.49"
+        },
+        "tp3": {
+          "note": "Moon — design-in เชิงพาณิชย์ครั้งแรกของ QCIM ~$6.83 เหนือ consensus $6.04 thesis 12 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-25% — กว้างกว่า medianMAE รวมของ turbo (-24.1%) กลุ่ม product_launch n=2",
+          "hardNote": "-55% — silicon เลื่อน + ขาย ATM หนัก",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "อสมมาตร ✅ — ผ่านเป้า 5:1 ของ turbo"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "ส่งมอบ Test Silicon QCIM",
+          "note": "เป้าบริษัท ~ธ.ค. 2026 ยืนยันซ้ำ 18 ส.ค. ยังไม่ยืนยันวันที่แน่นอน"
+        }
+      ]
+    }
+  }
+}
