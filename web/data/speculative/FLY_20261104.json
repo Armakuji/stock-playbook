@@ -1,0 +1,292 @@
+{
+  "ticker": "FLY",
+  "companyName": "Firefly Aerospace Inc.",
+  "companyDescription": "Rockets, spacecraft & lunar landers · first commercial firm to complete a successful Moon landing (Blue Ghost) · Q2 2026 revenue up 659% YoY to a record $117.7M — the fundamentals/sentiment divergence flagged last report has genuinely started closing",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-04T17:00:00.000Z",
+  "price": 17.28,
+  "priceChange": 1.56,
+  "priceNote": "Live $17.28 (+1.56%) on Nov 4, 2026 — down ~26% from $23.45 at the Sep 29 report, just above the $15.99 52-week low (high $62.17); 52-week range $15.99-$62.17. Nov 4 tape: S&P futures -1.2% / Nasdaq -2% on a Democratic midterm sweep; Dec 9 hike ~85% priced.",
+  "marketCap": "~$2.90B",
+  "sector": "Industrials / Space Launch & Lunar Landers",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 57,
+  "summary": "REFRESH (prior report Sep 29, 2026): Q3 results are expected ~Nov 10 (one calendar; the prior report had Nov 11). Revenue is growing (Q2 $117.7M, FY26 guide $420-450M held), but Alpha Block 2's debut slipped, and KeyBanc ($50→$35) and B. Riley ($50→$40) cut targets this week. Blue Ghost Mission 2 is NET late 2026. At a ~$2.9B cap the moon case needs Alpha cadence plus a clean Blue Ghost M2. Base cut from +50% to +40% (above the lane's realized 30d P75 (+12.2%; written-Base bias +72.7pp)), assuming an in-line Q3 with the Alpha schedule reaffirmed over ~1-3 months. แนะนำ 1.5% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 40-50%.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 2026 earnings",
+      "description": "Revenue vs the $420-450M FY guide; Alpha launch cadence (Flights 8-9) and Block 2 timing.",
+      "urgencyLabel": "~6 DAYS",
+      "dateBadge": "~Nov 10, 2026",
+      "catalystDate": "2026-11-10",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🌙",
+      "name": "Blue Ghost Mission 2",
+      "description": "Second lunar lander mission; NET late 2026 per company/press.",
+      "urgencyLabel": "LATE 2026",
+      "dateBadge": "NET late 2026",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Real upside has compressed further below this board's 200%+ turbo bar — the 10-analyst consensus fell to $38.6 (+64.6%) from $48.11 last report, and even the new high estimate ($50, +113%) is below Roth's prior $60 (+191%). The stock's own rally is eating the remaining asymmetry faster than the fundamentals story is expanding it",
+    "FY26 guidance of $420-450M implies a steep H2 ramp from the $117.7M Q2 print — Nov 11 earnings is a real test of execution, not just a formality",
+    "Net loss was $92.3M in Q2 despite the revenue beat — still cash-burning at scale even as growth accelerates",
+    "Most new contract wins (SSC Space 2028+, Space Force radar work) are multi-year — cash doesn't flow immediately even as backlog visibility improves",
+    "This is now a genuinely borderline turbo pick on a strict upside basis — worth flagging for the next `turbo-compare` cycle rather than treating the Moon case here as a clean 200%+ moonshot"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q3 2026 earnings",
+      "dateRange": "~Nov 10, 2026",
+      "note": "Revenue vs the $420-450M FY guide; Alpha launch cadence (Flights 8-9) and Block 2 timing.",
+      "est": "n/a",
+      "highlight": "blue"
+    },
+    {
+      "event": "Blue Ghost Mission 2",
+      "dateRange": "NET late 2026",
+      "note": "Second lunar lander mission; NET late 2026 per company/press.",
+      "est": "n/a",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -40,
+      "price": 10.37
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 40,
+      "price": 24.19
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 130,
+      "price": 39.74
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 250,
+      "price": 60.48
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "B. Riley (Nov 4, 2026)",
+      "target": 40,
+      "rating": "Buy"
+    },
+    {
+      "firm": "KeyBanc (Nov 2, 2026)",
+      "target": 35,
+      "rating": "Overweight"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held at 3.75–4.00% on Oct 28 (10–2 vote; Cook and Hammack dissented for a hike). Futures price ~85% odds of another +25bp at the Dec 9 FOMC after Logan and Musalem called for more tightening; Warsh gave no explicit December signal.",
+    "inflationNote": "Sep PCE: headline 3.6% y/y (+0.5% m/m), core 3.1% y/y (+0.3% m/m); Q3 GDP +3.4% annualized. Oct CPI on Nov 10 is the next test — core ≥0.4% m/m would effectively lock in the December hike.",
+    "sectorImpact": "The space sector's sentiment has stabilized somewhat since the last report as Firefly's own fundamentals started catching up to the news flow, but the sector remains sensitive to broad risk-off moves and capital rotation (e.g. toward SpaceX's IPO).",
+    "summary": "MEDIUM — Q3 lands on CPI day; space/defense small-mid caps are trading as high-beta into the Dec 9 FOMC."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 17.28,
+        "note": "Current price — starter only. Not preferred: turbo at-catalyst median -13.7% (n=19)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 15.2,
+        "rangeMax": 16,
+        "note": "Below the $15.99 52-week low after the print — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 13.5,
+        "note": "Deep dip — only if the FY guide holds",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 24.19,
+      "pct": 40,
+      "note": "Base — Q3 in line + Alpha schedule reaffirmed; ~$24.19."
+    },
+    "tp2": {
+      "price": 39.74,
+      "pct": 130,
+      "note": "Bull — Alpha cadence restored + Blue Ghost M2 dated; ~$39.74 (B. Riley $40)."
+    },
+    "tp3": {
+      "price": 60.48,
+      "pct": 250,
+      "note": "Moon — reusable cadence + lunar program wins; ~$60.48, near the $62.17 52-week high. 12-18 month thesis.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 12.96,
+      "tightPct": -25,
+      "tightNote": "-25% — wider than the turbo overall medianMAE (bucket n<5) (-24.1%).",
+      "hard": 9.5,
+      "hardPct": -45,
+      "hardNote": "-45% — guide cut + further Alpha slips.",
+      "riskReward": "5.2 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Asymmetric ✅ — clears the 5:1 turbo target"
+    },
+    "verdict": "SPECULATIVE · ค่าขนม 1.5% max (refreshed Nov 4) — growth is real but the Alpha slip and two target cuts this week say the story needs proof, not hope. Measured turbo at-catalyst median is -13.7% (n=19), so Entry 2 ($15.2-16) is preferred.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Firefly's Q2 print (Aug 11) drove the stock's recovery this quarter, reversing the muted/negative pattern to contract news flagged last report — the market did eventually reward the fundamentals, just with a lag.",
+    "preRunupTiming": "weeks before the print, as contract-cadence news built the case ahead of the Aug 11 beat",
+    "preRunupPct": "+13.6% cumulative into and through the Aug 11 print (from the last report's price)",
+    "postWin": {
+      "avgPct": 14,
+      "range": "+5% to +20%",
+      "note": "Comparable space-sector names show 5-20% pops on major beats; Firefly's own Q2 2026 print (659% YoY revenue growth, guidance raise) appears to have driven a meaningful part of the stock's 13.6% move since the last report, though the exact single-day reaction wasn't isolated in available data.",
+      "exampleDate": "Aug 11, 2026 (FLY Q2 2026 print)"
+    },
+    "postLose": {
+      "avgPct": -18,
+      "range": "-10% to -28%",
+      "note": "Firefly's own stock fell -27.9% over 30 days in July purely on sentiment (before the fundamentals caught up) — the direct precedent for how much this stock can still fall on a Nov 11 guidance miss, especially after this quarter's re-rate leaves less room for disappointment.",
+      "exampleDate": "H2 Jul 2026 (FLY, pre-earnings sentiment low)"
+    },
+    "spotSizing": {
+      "pct": 1.5,
+      "reason": "1.5%. The dated catalyst's type has n<5 (context only), so the weak lane prior governs (hitRate 4.9%, medianExcess +2.0pp, n=41)."
+    },
+    "stopPreCatalyst": {
+      "pct": -25,
+      "price": 12.96,
+      "note": "Wider than the turbo overall medianMAE (bucket n<5) (-24.1%). A break below the tight stop before the catalyst means the market expects a guide cut."
+    },
+    "stopPostCatalyst": {
+      "pct": -20,
+      "note": "If Nov 11 guidance disappoints relative to the $420-450M FY26 range, or free cash flow burn worsens materially, exit"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "FLY",
+      "event": "Q2 2026 earnings: record $117.7M revenue (+659% YoY), FY26 guidance raised to $420-450M",
+      "date": "Aug 11, 2026",
+      "movePct": 14,
+      "days": 30,
+      "outcome": "good",
+      "note": "The print that closed the fundamentals/sentiment gap flagged in the last report — stock is up 13.6% in the roughly seven weeks since, contract wins have kept compounding on top."
+    },
+    {
+      "ticker": "FLY",
+      "event": "String of contract wins despite stock decline (pre-Q2 pattern)",
+      "date": "Jul 2026",
+      "movePct": -28,
+      "days": 30,
+      "outcome": "bad",
+      "note": "Same-company precedent for how badly this stock can trade against good news when sentiment is against it — the eventual reversal shows the pattern isn't permanent, but it can persist for a month-plus."
+    }
+  ],
+  "sources": [
+    "https://www.marketbeat.com/instant-alerts/analyst-firefly-aerospace-nasdaq-fly-stock-gets-price-target-cut-from-keycorp-2026-11-02/",
+    "https://marketbeat.com/instant-alerts/analyst-b-riley-financial-issues-pessimistic-forecast-for-firefly-aerospace-nasdaq-fly-stock-price-2026-11-04",
+    "https://www.tradingview.com/symbols/NASDAQ-FLY/",
+    "https://finance.yahoo.com/markets/stocks/articles/firefly-aerospace-q2-earnings-call-171600584.html",
+    "https://stockanalysis.com/stocks/fly/",
+    "https://stockanalysis.com/stocks/fly/forecast/",
+    "https://www.stocktitan.net/news/FLY/",
+    "https://www.cnbc.com/2026/10/28/fed-interest-rate-decision-october-2026.html",
+    "https://www.cnbc.com/2026/10/29/pce-inflation-report-september-2026-.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "REFRESH (รายงานก่อน Sep 29, 2026): งบ Q3 คาดราว 10 พ.ย. (ปฏิทินหนึ่งแห่ง; รายงานก่อนระบุ 11 พ.ย.) รายได้โต (Q2 $117.7M, guide ปี 26 $420-450M คงเดิม) แต่การเปิดตัว Alpha Block 2 เลื่อน และสัปดาห์นี้ KeyBanc ($50→$35) กับ B. Riley ($50→$40) ลดเป้า Blue Ghost Mission 2 เร็วสุดปลายปี 2026 ที่ cap ~$2.9B Moon case ต้องอาศัยจังหวะการยิง Alpha และ Blue Ghost M2 ที่สะอาด Base ลดจาก +50% เป็น +40% (สูงกว่า P75 30 วันจริงของกลุ่ม (+12.2%; bias +72.7pp)) สมมติQ3 ตามคาดและยืนยันตาราง Alpha ใน ~1-3 เดือน แนะนำ 1.5% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 40-50%",
+      "priceNote": "ราคาสด $17.28 (+1.56%) 4 พ.ย. 2026 — ลง ~26% จาก $23.45 ณ รายงาน 29 ก.ย. อยู่เหนือ 52-week low $15.99 เล็กน้อย (สูงสุด $62.17) ช่วง 52 สัปดาห์ $15.99-$62.17 ตลาด 4 พ.ย.: futures S&P -1.2% / Nasdaq -2% จากผลเลือกตั้งกลางเทอม ตลาดให้โอกาสขึ้นดอกเบี้ย 9 ธ.ค. ~85%",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "งบ Q3 2026",
+          "description": "รายได้เทียบ guide ปี $420-450M จังหวะการยิง Alpha (เที่ยว 8-9) และกำหนด Block 2"
+        },
+        {
+          "name": "Blue Ghost Mission 2",
+          "description": "ภารกิจยานลงจอดดวงจันทร์ครั้งที่สอง เร็วสุดปลายปี 2026"
+        }
+      ],
+      "risks": [
+        "Upside จริงบีบตัวลงต่ำกว่าเกณฑ์ 200%+ ของบอร์ดนี้มากกว่าเดิม — เป้าเฉลี่ยนักวิเคราะห์ 10 คนลดเหลือ $38.6 (+64.6%) จาก $48.11 และแม้เป้าสูงสุดใหม่ ($50, +113%) ก็ยังต่ำกว่า Roth เดิม ($60, +191%) — การวิ่งขึ้นของหุ้นเองกิน asymmetry ที่เหลือเร็วกว่า story พื้นฐานที่ขยายตัว",
+        "Guidance FY26 $420-450M หมายถึงต้องเร่งตัวแรงมากจากยอด Q2 ที่ $117.7M — ผล 11 พ.ย. คือบททดสอบจริงของการ execute ไม่ใช่แค่พิธีกรรม",
+        "ขาดทุนสุทธิ $92.3M ใน Q2 แม้รายได้จะบีท — ยัง burn เงินสดหนักในสเกลใหญ่แม้การเติบโตจะเร่งขึ้น",
+        "สัญญาใหม่ส่วนใหญ่ (SSC Space 2028+, งาน radar Space Force) เป็นสัญญาหลายปี — เงินสดยังไม่เข้าทันทีแม้การมองเห็น backlog จะดีขึ้น",
+        "ตอนนี้เป็น turbo pick แบบ borderline จริงบนฐาน upside — ควรยกขึ้นพิจารณาใน turbo-compare รอบถัดไป มากกว่ามอง Moon case นี้เป็น moonshot 200%+ ที่สะอาด"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.75–4.00% เมื่อ 28 ต.ค. (โหวต 10–2, Cook และ Hammack ต้องการขึ้น) futures ให้โอกาสขึ้นอีก 25bp ในประชุม 9 ธ.ค. ราว 85% หลัง Logan และ Musalem เรียกร้องให้คุมเข้มต่อ ส่วน Warsh ไม่ส่งสัญญาณชัดเรื่อง ธ.ค.",
+        "inflationNote": "PCE ก.ย.: headline 3.6% y/y (+0.5% m/m), core 3.1% y/y (+0.3% m/m); GDP Q3 +3.4% CPI ต.ค. วันที่ 10 พ.ย. คือบททดสอบถัดไป — ถ้า core ≥0.4% m/m แทบล็อกการขึ้นดอกเบี้ย ธ.ค.",
+        "sectorImpact": "Sentiment sector อวกาศนิ่งขึ้นบ้างตั้งแต่รายงานก่อน เพราะพื้นฐานของ Firefly เองเริ่มตามข่าวทัน แต่ sector ยังไวต่อการเทขายกว้างและการหมุนทุน (เช่น ไป SpaceX IPO)",
+        "summary": "MEDIUM — งบ Q3 ตรงวัน CPI หุ้นอวกาศ/กลาโหมขนาดกลาง-เล็กเคลื่อนไหวแบบ beta สูงก่อน FOMC 9 ธ.ค."
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · ค่าขนม สูงสุด 1.5% (refresh 4 พ.ย.) — การเติบโตเป็นของจริง แต่ Alpha ที่เลื่อนและการลดเป้าสองครั้งในสัปดาห์นี้บอกว่าต้องพิสูจน์ ไม่ใช่หวัง median ถึงวัน catalyst ของ turbo -13.7% (n=19) จึงเข้าที่ Entry 2 ($15.2-16) เป็นหลัก",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ turbo -13.7% (n=19)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "ต่ำกว่า 52-week low $15.99 หลังงบ — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ร่วงหนัก — เฉพาะเมื่อ guide ปียังอยู่",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — Q3 ตามคาด + ยืนยันตาราง Alpha ~$24.19"
+        },
+        "tp2": {
+          "note": "Bull — จังหวะ Alpha กลับมา + Blue Ghost M2 มีวัน ~$39.74 (B. Riley $40)"
+        },
+        "tp3": {
+          "note": "Moon — ยิงต่อเนื่อง + ได้งานโครงการดวงจันทร์ ~$60.48 ใกล้ 52-week high $62.17 thesis 12-18 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-25% — กว้างกว่า medianMAE รวมของ turbo (กลุ่ม n<5) (-24.1%)",
+          "hardNote": "-45% — ตัด guide + Alpha เลื่อนอีก",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "อสมมาตร ✅ — ผ่านเป้า 5:1 ของ turbo"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "งบ Q3 2026",
+          "note": "รายได้เทียบ guide ปี $420-450M จังหวะการยิง Alpha (เที่ยว 8-9) และกำหนด Block 2"
+        },
+        {
+          "event": "Blue Ghost Mission 2",
+          "note": "ภารกิจยานลงจอดดวงจันทร์ครั้งที่สอง เร็วสุดปลายปี 2026"
+        }
+      ]
+    }
+  }
+}

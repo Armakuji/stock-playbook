@@ -1,0 +1,298 @@
+{
+  "ticker": "ASPI",
+  "companyName": "ASP Isotopes Inc.",
+  "companyDescription": "Nuclear/Quantum Materials · Aerodynamic Separation Process + Quantum Enrichment tech — enriching Silicon-28, Ytterbium-176, Carbon-14 + HALEU nuclear fuel; first-ever commercial isotope shipments targeted Q3 2026",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-04T17:00:00.000Z",
+  "price": 1.87,
+  "priceChange": 3.31,
+  "priceNote": "Live $1.87 (+3.31%) on Nov 4, 2026 — down ~36% from $2.93 at the Sep 29 report, near the $1.80 52-week low (high $9.38); 52-week range $1.80-$9.38. Nov 4 tape: S&P futures -1.2% / Nasdaq -2% on a Democratic midterm sweep; Dec 9 hike ~85% priced.",
+  "marketCap": "~$330M",
+  "sector": "Materials / Nuclear Fuel & Specialty Isotopes",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 62,
+  "summary": "REFRESH (prior report Sep 29, 2026): the Q3 target for the first commercial Silicon-28 shipment has passed with no confirmation found, and Q2 EPS missed (-$0.28 vs -$0.17). Quantum Leap Energy cut its convertible debt 50% via a $109M debt-for-equity exchange (~23M new ASPI shares), and H1 net loss was ~$61M. Q3 results are expected ~mid-Nov (last year Nov 19); the shipment confirmation is now the gating event. Base cut from +45% to +35% (above the lane's realized 30d P75 (+12.2%; written-Base bias +72.7pp)), assuming a confirmed first Si-28 shipment with the Q3 report within ~1-3 months. แนะนำ 1% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 50-70%.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 2026 results — Si-28 shipment confirmation",
+      "description": "Expected ~mid-Nov (prior year Nov 19). Confirmation of the first commercial Silicon-28 shipment (Q3 target) is the gating item.",
+      "urgencyLabel": "~2 WEEKS",
+      "dateBadge": "~mid-Nov 2026",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "⚛️",
+      "name": "Ytterbium-176 first commercial shipment",
+      "description": "Medical-isotope feedstock; H2 2026 target.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Repeated technical delays — the Si-28 facility already slipped once (Oct 2025 laser/power-surge damage → 7-month rebuild); a second Q3 2026 slip would break the near-term thesis this report is priced on",
+    "Pre-revenue-scale stage — H1 2026 revenue was only $9.3M against a $60.7M operating loss; the company is funding two capex-intensive build-outs (isotope enrichment + natural gas assets) simultaneously",
+    "Dilution risk — active ~$106M resale shelf registration (Jul 2026) plus a ~$36.7M ESOP-related shelf; further capital raises are plausible if the isotope ramp needs more capex, even though current runway itself is not urgent",
+    "Customer concentration — the Si-28 commercial case rests on 3 disclosed US contracts plus a ~$9M supply deal; delay or loss of any one materially changes the read on \"first shipment\" success",
+    "Single-site production risk — enrichment capacity is concentrated in Pretoria, South Africa, where a 2025 power surge already halted production once"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q3 2026 results — Si-28 shipment confirmation",
+      "dateRange": "~mid-Nov 2026",
+      "note": "Expected ~mid-Nov (prior year Nov 19). Confirmation of the first commercial Silicon-28 shipment (Q3 target) is the gating item.",
+      "est": "n/a",
+      "highlight": "blue"
+    },
+    {
+      "event": "Ytterbium-176 first commercial shipment",
+      "dateRange": "H2 2026",
+      "note": "Medical-isotope feedstock; H2 2026 target.",
+      "est": "n/a",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -55,
+      "price": 0.84
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 35,
+      "price": 2.52
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 130,
+      "price": 4.3
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 300,
+      "price": 7.48
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus (3 analysts, Strong Buy)",
+      "target": 13,
+      "rating": "Strong Buy"
+    },
+    {
+      "firm": "WallStreetZen 1Y model",
+      "target": 11,
+      "rating": "Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held at 3.75–4.00% on Oct 28 (10–2 vote; Cook and Hammack dissented for a hike). Futures price ~85% odds of another +25bp at the Dec 9 FOMC after Logan and Musalem called for more tightening; Warsh gave no explicit December signal.",
+    "inflationNote": "Sep PCE: headline 3.6% y/y (+0.5% m/m), core 3.1% y/y (+0.3% m/m); Q3 GDP +3.4% annualized. Oct CPI on Nov 10 is the next test — core ≥0.4% m/m would effectively lock in the December hike.",
+    "sectorImpact": "Nuclear/critical-materials names have kept a policy-driven risk premium (AI power demand, US isotope supply-chain onshoring) that has partly decoupled them from the standard rate-sensitivity playbook — but ASPI is small/illiquid enough that a broad risk-off move in speculative small caps would hit it disproportionately regardless of the Fed's stance on nuclear policy specifically.",
+    "summary": "MEDIUM — a cash-burning pre-commercial materials company funding through equity is exposed to a December hike."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 1.87,
+        "note": "Current price — starter only. Not preferred: turbo at-catalyst median -13.7% (n=19)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 1.65,
+        "rangeMax": 1.8,
+        "note": "Below the $1.80 52-week low — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 1.45,
+        "note": "Deep dip — only if the Si-28 shipment is confirmed",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 2.52,
+      "pct": 34.8,
+      "note": "Base — Si-28 shipment confirmed; ~$2.52."
+    },
+    "tp2": {
+      "price": 4.3,
+      "pct": 129.9,
+      "note": "Bull — Yb-176 shipment + supply contracts; ~$4.30."
+    },
+    "tp3": {
+      "price": 7.48,
+      "pct": 300,
+      "note": "Moon — commercial isotope revenue ramp + HALEU path; ~$7.48 (consensus $13).",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 1.4,
+      "tightPct": -25.1,
+      "tightNote": "-25% — wider than the turbo overall medianMAE (bucket n<5) (-24.1%).",
+      "hard": 0.94,
+      "hardPct": -49.7,
+      "hardNote": "-50% — second facility slip + dilution.",
+      "riskReward": "5.2 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Asymmetric ✅ — clears the 5:1 turbo target"
+    },
+    "verdict": "SPECULATIVE · ค่าขนม 1% max (refreshed Nov 4) — the dated Q3 milestone passed unconfirmed; the next print has to prove first revenue. Measured turbo at-catalyst median is -13.7% (n=19), so Entry 2 ($1.65-1.8) is preferred.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "delivery_beat",
+    "preRunup": "Nuclear-fuel-cycle / isotope names tend to pre-run on ANY positive proof point ahead of the actual shipment — not just the shipment itself. ASPI's own May 2026 facility-restart news (still a precursor, not the shipment) triggered an immediate one-day pop.",
+    "preRunupTiming": "1-4 สัปดาห์ก่อน event",
+    "preRunupPct": "+15% to +25%",
+    "postWin": {
+      "avgPct": 40,
+      "range": "+24% (single-day precursor pop, ASPI) to +700%+ (multi-quarter re-rating, LEU)",
+      "note": "n=1 for this exact catalystType in skill-feedback (Tier 1, context only) — do not treat as a reliable average. ASPI's own May 2026 restart news popped +24% same day; Centrus (LEU) re-rated from ~$684M to ~$5.5B market cap over the ~18 months following its Nov 2023 first HALEU delivery, though that move mixed the delivery proof-point with separate DOE policy tailwinds.",
+      "exampleDate": "May 2026 (ASPI) / Nov 2023 (LEU)"
+    },
+    "postLose": {
+      "avgPct": -24,
+      "range": "-18% to -35%",
+      "note": "No clean single-stock precedent for a FAILED first-shipment on ASPI itself; using the turbo lane's overall medianMAE (-24.1%, skill-feedback.json) as the directional anchor since delivery_beat's own n=1 sample can't support a standalone estimate. ASPI already sold off hard on the Oct 2025 equipment-failure delay disclosure, though the exact single-day % was not independently re-verified this run.",
+      "exampleDate": "Oct 2025 (ASPI delay disclosure)"
+    },
+    "spotSizing": {
+      "pct": 1,
+      "reason": "1%. The dated catalyst's type has n<5 (context only), so the weak lane prior governs (hitRate 4.9%, medianExcess +2.0pp, n=41). The Q3 shipment slipped silently — floor size."
+    },
+    "stopPreCatalyst": {
+      "pct": -25.1,
+      "price": 1.4,
+      "note": "Wider than the turbo overall medianMAE (bucket n<5) (-24.1%). A break below the tight stop before the catalyst means another delay is being priced."
+    },
+    "stopPostCatalyst": {
+      "pct": -20,
+      "note": "ถ้า Q3 2026 ปิดไปโดยไม่มี shipment จริง (delay รอบที่ 2) ให้ขายทันที ไม่ต้องรอ hard stop เพราะ credibility ของ management ต่อ timeline จะเสียไปแล้ว"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "LEU",
+      "event": "First commercial HALEU delivery to US DOE, completing Phase 1 of its enrichment contract",
+      "date": "Nov 2023",
+      "movePct": 704,
+      "days": 540,
+      "outcome": "good",
+      "note": "Centrus's market cap grew from ~$684M to ~$5.5B over the ~18 months following its first HALEU delivery — the closest real analog to ASPI's Si-28 situation (small-cap proving out a novel domestic enrichment process for the first time), though the move mixed the delivery proof-point with separate DOE/policy tailwinds, so it's a multi-quarter re-rating case, not a single-day pop."
+    },
+    {
+      "ticker": "ASPI",
+      "event": "Restart of Silicon-28 enrichment facility + Q3 2026 shipment timeline reaffirmed (precursor news, not the shipment itself)",
+      "date": "May 2026",
+      "movePct": 24,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same company, same catalyst chain, one step earlier — shows the market already reacts sharply to any credible Si-28 proof point. The actual first shipment (this report's catalyst) is a stronger, more concrete milestone than a facility restart, so the reaction could be larger — or could disappoint if volumes/pricing undersell expectations."
+    }
+  ],
+  "sources": [
+    "https://www.marketbeat.com/instant-alerts/asp-isotopes-nasdaqaspi-posts-quarterly-earnings-results-misses-expectations-by-011-eps-2026-08-14/",
+    "https://www.panabee.com/company/ASPI",
+    "https://www.tradingview.com/symbols/NASDAQ-ASPI/",
+    "https://ir.aspisotopes.com/news-events/press-releases/detail/107/asp-isotopes-implements-engineering-enhancements-to",
+    "https://www.stocktitan.net/news/ASPI/asp-isotopes-implements-engineering-enhancements-to-silicon-28-xgdj5sasx1bz.html",
+    "https://www.sec.gov/Archives/edgar/data/0001921865/000119312526352603/aspi-20260630.htm",
+    "https://www.wallstreetzen.com/stocks/us/nasdaq/aspi/stock-forecast",
+    "https://www.benzinga.com/trading-ideas/movers/26/05/52776943/asp-isotopes-stock-surges-after-silicon-28-facility-restart",
+    "https://investors.centrusenergy.com/news-releases/news-release-details/centrus-makes-first-haleu-delivery-us-department-energy",
+    "https://www.fool.com/investing/2026/09/24/is-centrus-energy-the-ultimate-picks-and-shovels/",
+    "https://finance.yahoo.com/news/lutetium-177-lu-177-market-151600646.html",
+    "https://www.datainsightsmarket.com/reports/silicon-28-1060380",
+    "https://www.engineeringnews.co.za/article/asp-isotopes-expects-first-shipments-of-nuclear-medicine-electronics-isotopes-in-2026-2026-04-13",
+    "https://www.cnbc.com/2026/10/28/fed-interest-rate-decision-october-2026.html",
+    "https://www.cnbc.com/2026/10/29/pce-inflation-report-september-2026-.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "REFRESH (รายงานก่อน Sep 29, 2026): เป้า Q3 สำหรับการส่ง Silicon-28 เชิงพาณิชย์ครั้งแรกผ่านไปโดยไม่พบการยืนยัน และ EPS Q2 พลาด (-$0.28 vs -$0.17) Quantum Leap Energy ลดหนี้แปลงสภาพ 50% ผ่านการแลกหนี้เป็นทุน $109M (หุ้น ASPI ใหม่ ~23M หุ้น) ขาดทุนสุทธิ H1 ~$61M งบ Q3 คาดราวกลาง พ.ย. (ปีก่อน 19 พ.ย.) การยืนยันการส่งมอบตอนนี้คือ event ชี้ขาด Base ลดจาก +45% เป็น +35% (สูงกว่า P75 30 วันจริงของกลุ่ม (+12.2%; bias +72.7pp)) สมมติยืนยันการส่ง Si-28 ครั้งแรกพร้อมงบ Q3 ใน ~1-3 เดือน แนะนำ 1% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 50-70%",
+      "priceNote": "ราคาสด $1.87 (+3.31%) 4 พ.ย. 2026 — ลง ~36% จาก $2.93 ณ รายงาน 29 ก.ย. ใกล้ 52-week low $1.80 (สูงสุด $9.38) ช่วง 52 สัปดาห์ $1.80-$9.38 ตลาด 4 พ.ย.: futures S&P -1.2% / Nasdaq -2% จากผลเลือกตั้งกลางเทอม ตลาดให้โอกาสขึ้นดอกเบี้ย 9 ธ.ค. ~85%",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "งบ Q3 2026 — ยืนยันการส่ง Si-28",
+          "description": "คาดราวกลาง พ.ย. (ปีก่อน 19 พ.ย.) การยืนยันการส่ง Silicon-28 เชิงพาณิชย์ครั้งแรก (เป้า Q3) คือประเด็นชี้ขาด"
+        },
+        {
+          "name": "การส่ง Ytterbium-176 เชิงพาณิชย์ครั้งแรก",
+          "description": "วัตถุดิบไอโซโทปทางการแพทย์ เป้า H2 2026"
+        }
+      ],
+      "risks": [
+        "Delay ซ้ำได้ — โรงงาน Si-28 เคย delay มาแล้วครั้งนึง (ไฟกระชากทำลายอุปกรณ์ ต.ค. 2025 → ซ่อม 7 เดือน) ถ้า Q3 2026 หลุดอีกรอบ thesis ของรายงานนี้จะพังทันที",
+        "ยังอยู่ระดับ pre-revenue-scale — รายได้ H1 2026 แค่ $9.3M เทียบ operating loss $60.7M บริษัทกำลังลงทุนสร้างสองธุรกิจพร้อมกัน (isotope enrichment + natural gas assets)",
+        "ความเสี่ยง dilution — มี shelf registration ~$106M (ก.ค. 2026) ที่ยังแอคทีฟ บวก ESOP shelf ~$36.7M มีโอกาสระดมทุนเพิ่มถ้า isotope ramp ต้องการ capex มากขึ้น แม้ runway ปัจจุบันจะยังไม่เร่งด่วน",
+        "ลูกค้ากระจุกตัว — เคส Si-28 พึ่งสัญญาสหรัฐฯ 3 รายบวกดีล ~$9M ถ้าสัญญาใดสัญญาหนึ่ง delay หรือหลุด จะกระทบภาพ \"ส่งของสำเร็จ\" ทันที",
+        "ความเสี่ยงจากศูนย์ผลิตเดียว — enrichment รวมศูนย์ที่ Pretoria แอฟริกาใต้ ซึ่งเคยไฟดับหยุดผลิตมาแล้วรอบนึงเมื่อปี 2025"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.75–4.00% เมื่อ 28 ต.ค. (โหวต 10–2, Cook และ Hammack ต้องการขึ้น) futures ให้โอกาสขึ้นอีก 25bp ในประชุม 9 ธ.ค. ราว 85% หลัง Logan และ Musalem เรียกร้องให้คุมเข้มต่อ ส่วน Warsh ไม่ส่งสัญญาณชัดเรื่อง ธ.ค.",
+        "inflationNote": "PCE ก.ย.: headline 3.6% y/y (+0.5% m/m), core 3.1% y/y (+0.3% m/m); GDP Q3 +3.4% CPI ต.ค. วันที่ 10 พ.ย. คือบททดสอบถัดไป — ถ้า core ≥0.4% m/m แทบล็อกการขึ้นดอกเบี้ย ธ.ค.",
+        "sectorImpact": "หุ้นสาย nuclear/critical materials มี risk premium จาก policy (ความต้องการไฟฟ้าจาก AI, การดึง isotope supply chain กลับสหรัฐฯ) ที่แยกตัวจากวงจรดอกเบี้ยปกติบางส่วน แต่ ASPI เล็กและสภาพคล่องต่ำพอที่ risk-off รอบใหญ่ใน small cap เก็งกำไรจะกระทบหนักกว่าค่าเฉลี่ย",
+        "summary": "MEDIUM — บริษัทวัสดุที่ยังไม่ขายเชิงพาณิชย์และเผาเงินผ่านการเพิ่มทุน โดนผลจากการขึ้นดอกเบี้ย ธ.ค."
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · ค่าขนม สูงสุด 1% (refresh 4 พ.ย.) — milestone Q3 ผ่านไปโดยไม่ยืนยัน งบครั้งถัดไปต้องพิสูจน์รายได้แรก median ถึงวัน catalyst ของ turbo -13.7% (n=19) จึงเข้าที่ Entry 2 ($1.65-1.8) เป็นหลัก",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ turbo -13.7% (n=19)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "ต่ำกว่า 52-week low $1.80 — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ร่วงหนัก — เฉพาะเมื่อยืนยันการส่ง Si-28",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — ยืนยันการส่ง Si-28 ~$2.52"
+        },
+        "tp2": {
+          "note": "Bull — ส่ง Yb-176 + สัญญาจัดหา ~$4.30"
+        },
+        "tp3": {
+          "note": "Moon — รายได้ไอโซโทปเชิงพาณิชย์เร่งตัว + เส้นทาง HALEU ~$7.48 (consensus $13)"
+        },
+        "stopLoss": {
+          "tightNote": "-25% — กว้างกว่า medianMAE รวมของ turbo (กลุ่ม n<5) (-24.1%)",
+          "hardNote": "-50% — โรงงานเลื่อนอีกรอบ + การเจือจาง",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "อสมมาตร ✅ — ผ่านเป้า 5:1 ของ turbo"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "งบ Q3 2026 — ยืนยันการส่ง Si-28",
+          "note": "คาดราวกลาง พ.ย. (ปีก่อน 19 พ.ย.) การยืนยันการส่ง Silicon-28 เชิงพาณิชย์ครั้งแรก (เป้า Q3) คือประเด็นชี้ขาด"
+        },
+        {
+          "event": "การส่ง Ytterbium-176 เชิงพาณิชย์ครั้งแรก",
+          "note": "วัตถุดิบไอโซโทปทางการแพทย์ เป้า H2 2026"
+        }
+      ]
+    }
+  }
+}

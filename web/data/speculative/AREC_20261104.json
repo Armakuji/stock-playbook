@@ -1,0 +1,312 @@
+{
+  "ticker": "AREC",
+  "companyName": "American Resources Corporation",
+  "companyDescription": "US critical minerals · 19% of ReElement Technologies, which just took $25M from the Dept of War to build domestic rare-earth refining at Marion, Indiana",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-04T17:00:00.000Z",
+  "price": 1.049,
+  "priceChange": -1.5,
+  "priceNote": "Live $1.049 (-1.5%) on Nov 4, 2026 — down ~63% from $2.80 at the Aug 13 report, at the $1.00 52-week low (high $4.80); 52-week range $1.00-$4.80. Nov 4 tape: S&P futures -1.2% / Nasdaq -2% on a Democratic midterm sweep; Dec 9 hike ~85% priced.",
+  "marketCap": "~$112M",
+  "sector": "Materials / Critical Minerals & Rare Earth Elements",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 63,
+  "summary": "REFRESH (prior report Aug 13, 2026): the dated milestone has passed without confirmation: ReElement's Marion germanium line was targeted for Q3 2026 commercial operations, but no start has been announced since the Aug 7 commercial-scale column news. AREC owns ~19% of ReElement, so the critical-minerals story accrues at a fraction, and a $200M equity facility overhangs a ~$112M cap. No analyst coverage found. Moon trimmed to +200% (the turbo floor). Base cut from +50% to +30% (above the lane's realized 30d P75 (+12.2%; written-Base bias +72.7pp)), assuming a confirmed Marion production start within ~1-3 months. แนะนำ 1% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 50-70%.",
+  "catalysts": [
+    {
+      "icon": "⛏️",
+      "name": "ReElement Marion germanium line — commercial start",
+      "description": "Targeted for Q3 2026; not yet confirmed. Noblesville germanium dioxide production resumed; Aug 7 commercial-scale column commissioned.",
+      "urgencyLabel": "OVERDUE",
+      "dateBadge": "Overdue (Q3 2026 target)",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🏛️",
+      "name": "DOE / Dept of War critical-minerals funding",
+      "description": "Program-level support ($25M Dept of War to ReElement); further grants are policy-contingent.",
+      "urgencyLabel": "H2 2026",
+      "dateBadge": "H2 2026",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Entry is 26.7% worse than nine days ago — same target, far less remaining upside, and this is the pick the board most over-ranked",
+    "No analyst coverage found at write time, so there is no external check on any of these scenarios — they are thesis-derived and should carry less weight than a consensus-anchored pick",
+    "Exposure is indirect: AREC owns 19% of ReElement, so the rare-earth story accrues to shareholders at a fraction, not one-for-one",
+    "A $200M equity facility on a ~$300M market cap is a standing dilution overhang — drawing it is how this thesis gets funded and how holders get diluted",
+    "Germanium production start is a target, not a committed date; slipping past Q3 removes the only near-dated operational milestone",
+    "Critical-minerals policy support is real but politically contingent; the Dept of War money is a program, not a contract"
+  ],
+  "estimateDates": [
+    {
+      "event": "ReElement Marion germanium line — commercial start",
+      "dateRange": "Overdue (Q3 2026 target)",
+      "note": "Targeted for Q3 2026; not yet confirmed. Noblesville germanium dioxide production resumed; Aug 7 commercial-scale column commissioned.",
+      "est": "n/a",
+      "highlight": "blue"
+    },
+    {
+      "event": "DOE / Dept of War critical-minerals funding",
+      "dateRange": "H2 2026",
+      "note": "Program-level support ($25M Dept of War to ReElement); further grants are policy-contingent.",
+      "est": "n/a",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -45,
+      "price": 0.58
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 30,
+      "price": 1.36
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 100,
+      "price": 2.1
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 200,
+      "price": 3.15
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed held at 3.75–4.00% on Oct 28 (10–2 vote; Cook and Hammack dissented for a hike). Futures price ~85% odds of another +25bp at the Dec 9 FOMC after Logan and Musalem called for more tightening; Warsh gave no explicit December signal.",
+    "inflationNote": "Sep PCE: headline 3.6% y/y (+0.5% m/m), core 3.1% y/y (+0.3% m/m); Q3 GDP +3.4% annualized. Oct CPI on Nov 10 is the next test — core ≥0.4% m/m would effectively lock in the December hike.",
+    "sectorImpact": "A ~$300M pre-scale miner funding a refining build-out is about as rate-sensitive as equities get: the $200M facility prices off risk appetite, not fundamentals. Offsetting that, critical-minerals policy funding is fiscal rather than monetary, so the Dept of War money doesn't care what the Fed does.",
+    "summary": "MEDIUM — micro-cap with an equity facility; a December hike raises the cost of the dilution this thesis depends on."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 1.049,
+        "note": "Current price — starter only. Not preferred: turbo at-catalyst median -13.7% (n=19)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 0.9,
+        "rangeMax": 0.98,
+        "note": "Below the $1.00 52-week low — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 0.8,
+        "note": "Deep dip — only if Marion start is confirmed",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 1.36,
+      "pct": 29.6,
+      "note": "Base — Marion start confirmed; ~$1.36."
+    },
+    "tp2": {
+      "price": 2.1,
+      "pct": 100.2,
+      "note": "Bull — first offtake contract; ~$2.10."
+    },
+    "tp3": {
+      "price": 3.15,
+      "pct": 200.3,
+      "note": "Moon — rare-earth line funded + ReElement monetization; ~$3.15.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 0.77,
+      "tightPct": -26.6,
+      "tightNote": "-27% — wider than the turbo regulatory_approval medianMAE (n=8) (-25%).",
+      "hard": 0.58,
+      "hardPct": -44.7,
+      "hardNote": "-45% — facility draw at the lows.",
+      "riskReward": "3.8 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Below the 5:1 turbo target ⚠️ — size down"
+    },
+    "verdict": "SPECULATIVE · ค่าขนม 1% max (refreshed Nov 4) — the only dated milestone slipped silently; this is now a policy-option micro-cap, sized accordingly. Measured turbo at-catalyst median is -13.7% (n=19), so Entry 2 ($0.9-0.98) is preferred.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "regulatory_approval",
+    "preRunup": "The run-up already happened and is precisely the problem: +26.7% in nine days on the Dept of War investment and Russell index-addition news. Feedback prior note — the turbo lane has no per-type breakdown in skill-feedback.json (only turbo.overall), so every signal here is Tier 1 context only and none of it re-ranks or resizes this pick.",
+    "preRunupTiming": "1-2 สัปดาห์ก่อนข่าว funding",
+    "preRunupPct": "+20% to +27%",
+    "postWin": {
+      "avgPct": 50,
+      "range": "+3% to +50%",
+      "note": "MP Materials (Jul 2025) gained ~50% on a US government rare-earth backstop — the strategic-refiner re-rate is real when Washington is the counterparty. AREC's own Jul 2026 funding news moved it only +3.35%, so the +50% case needs a materially larger catalyst than a program grant.",
+      "exampleDate": "Jul 2025"
+    },
+    "postLose": {
+      "avgPct": -25,
+      "range": "-2% to -40%",
+      "note": "AREC gave back only -1.69% on an Aug 2026 disappointment, but that was against a much lower base. Having now run 26.7%, the give-back on a germanium slip is far larger than the historical average suggests.",
+      "exampleDate": "Aug 2026"
+    },
+    "spotSizing": {
+      "pct": 1,
+      "reason": "1%. regulatory_approval is a Tier-2 LEADER (+5.3pp vs +2.0pp, n=8), but the Q3 milestone slipped with no update and there is no analyst coverage — size is cut to the floor."
+    },
+    "stopPreCatalyst": {
+      "pct": -26.6,
+      "price": 0.77,
+      "note": "Wider than the turbo regulatory_approval medianMAE (n=8) (-25%). A break below the tight stop before the catalyst means the equity facility is being drawn into weakness."
+    },
+    "stopPostCatalyst": {
+      "pct": -35,
+      "note": "If germanium production slips past Q3, exit — it is the only near-dated operational proof point"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "MP",
+      "event": "US government rare-earth supply backstop announced",
+      "date": "Jul 2025",
+      "movePct": 50,
+      "days": 3,
+      "outcome": "good",
+      "note": "The strategic template: when Washington becomes the counterparty, domestic refiners re-rate hard. This is what the Moon case is priced on."
+    },
+    {
+      "ticker": "AREC",
+      "event": "Critical-minerals funding news",
+      "date": "Jul 2026",
+      "movePct": 3.35,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "Same ticker, same catalyst family, last month — a +3.35% response. The honest counterweight to the MP comparison: AREC's own funding news has not produced MP-scale moves."
+    },
+    {
+      "ticker": "AREC",
+      "event": "Milestone disappointment",
+      "date": "Aug 2026",
+      "movePct": -1.69,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Muted downside, but measured from a much lower price. After a 26.7% run the asymmetry has shifted against holders."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "American Resources' ReElement Technologies receives $25M US investment to expand rare earth refining capacity",
+    "url": "https://finance.yahoo.com/energy/articles/american-resources-reelement-technologies-receives-125600459.html",
+    "date": "Aug 2026"
+  },
+  "sources": [
+    "https://www.proactiveinvestors.com/companies/news/1096730/american-resources-unit-reelement-hits-commercial-scale-germanium-milestone-1096730.html",
+    "https://www.stocktitan.net/news/AREC/re-element-technologies-successfully-demonstrates-commercial-scale-ahgvxjfkyoir.html",
+    "https://finance.yahoo.com/energy/articles/american-resources-reelement-technologies-receives-125600459.html",
+    "https://www.theglobeandmail.com/investing/markets/stocks/AREC/pressreleases/3320473/arecs-reelement-gets-25m-to-expand-domestic-rare-earth-refining-hub/",
+    "https://www.proactiveinvestors.com/companies/news/1089692/american-resources-expands-rare-earth-capacity-icymi-1089692.html",
+    "https://finance.yahoo.com/news/american-resources-corporation-arec-secures-021321251.html",
+    "https://stockanalysis.com/stocks/arec/",
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+    "https://www.bls.gov/news.release/archives/cpi_08122026.htm",
+    "https://www.cnbc.com/2026/10/28/fed-interest-rate-decision-october-2026.html",
+    "https://www.cnbc.com/2026/10/29/pce-inflation-report-september-2026-.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "REFRESH (รายงานก่อน Aug 13, 2026): milestone ที่มีวันผ่านไปโดยไม่มีการยืนยัน: สายการผลิต germanium ที่ Marion ของ ReElement ตั้งเป้าเปิดเชิงพาณิชย์ใน Q3 2026 แต่ไม่มีประกาศตั้งแต่ข่าวคอลัมน์ขนาดเชิงพาณิชย์ 7 ส.ค. AREC ถือ ReElement ~19% เรื่องแร่สำคัญจึงตกถึงผู้ถือหุ้นแค่บางส่วน และวงเงินเพิ่มทุน $200M กดทับ cap ~$112M ไม่พบนักวิเคราะห์ Moon ลดเหลือ +200% (เกณฑ์ขั้นต่ำ turbo) Base ลดจาก +50% เป็น +30% (สูงกว่า P75 30 วันจริงของกลุ่ม (+12.2%; bias +72.7pp)) สมมติยืนยันการเริ่มผลิตที่ Marion ใน ~1-3 เดือน แนะนำ 1% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 50-70%",
+      "priceNote": "ราคาสด $1.049 (-1.5%) 4 พ.ย. 2026 — ลง ~63% จาก $2.80 ณ รายงาน 13 ส.ค. อยู่ที่ 52-week low $1.00 (สูงสุด $4.80) ช่วง 52 สัปดาห์ $1.00-$4.80 ตลาด 4 พ.ย.: futures S&P -1.2% / Nasdaq -2% จากผลเลือกตั้งกลางเทอม ตลาดให้โอกาสขึ้นดอกเบี้ย 9 ธ.ค. ~85%",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "สายการผลิต germanium ที่ Marion ของ ReElement — เริ่มเชิงพาณิชย์",
+          "description": "เป้า Q3 2026 ยังไม่ยืนยัน โรงงาน Noblesville กลับมาผลิต germanium dioxide แล้ว และเริ่มใช้คอลัมน์ขนาดเชิงพาณิชย์ 7 ส.ค."
+        },
+        {
+          "name": "เงินทุนแร่สำคัญจาก DOE / Dept of War",
+          "description": "การสนับสนุนระดับโครงการ ($25M จาก Dept of War ให้ ReElement) ทุนเพิ่มเติมขึ้นกับนโยบาย"
+        }
+      ],
+      "risks": [
+        "จุดเข้าแย่กว่าเมื่อ 9 วันก่อน 26.7% — เป้าเท่าเดิมแต่ upside เหลือน้อยลงมาก และเป็นตัวที่กระดานจัดอันดับเกินจริงมากที่สุด",
+        "ไม่พบ analyst coverage ตอนเขียน จึงไม่มีตัวตรวจสอบจากภายนอกสำหรับ scenario เหล่านี้เลย — มาจาก thesis ล้วน ควรให้น้ำหนักน้อยกว่าหุ้นที่ยึด consensus",
+        "การถือครองเป็นทางอ้อม: AREC ถือ ReElement 19% เรื่องแร่หายากจึงตกถึงผู้ถือหุ้นเป็นเศษส่วน ไม่ใช่หนึ่งต่อหนึ่ง",
+        "equity facility $200M บน market cap ~$300M คือแรงกดดัน dilution ที่ค้างอยู่ — การเบิกใช้คือวิธีที่ thesis นี้ได้เงินทุน และเป็นวิธีที่ผู้ถือหุ้นโดน dilute",
+        "การเริ่มผลิต germanium เป็นเป้าหมาย ไม่ใช่วันที่ผูกมัด · ถ้าเลื่อนพ้น Q3 จะไม่เหลือ milestone เชิงปฏิบัติการที่มีวันใกล้เลย",
+        "การสนับสนุนเชิงนโยบายด้าน critical minerals มีจริงแต่ขึ้นกับการเมือง · เงินจาก Dept of War เป็นโครงการ ไม่ใช่สัญญา"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.75–4.00% เมื่อ 28 ต.ค. (โหวต 10–2, Cook และ Hammack ต้องการขึ้น) futures ให้โอกาสขึ้นอีก 25bp ในประชุม 9 ธ.ค. ราว 85% หลัง Logan และ Musalem เรียกร้องให้คุมเข้มต่อ ส่วน Warsh ไม่ส่งสัญญาณชัดเรื่อง ธ.ค.",
+        "inflationNote": "PCE ก.ย.: headline 3.6% y/y (+0.5% m/m), core 3.1% y/y (+0.3% m/m); GDP Q3 +3.4% CPI ต.ค. วันที่ 10 พ.ย. คือบททดสอบถัดไป — ถ้า core ≥0.4% m/m แทบล็อกการขึ้นดอกเบี้ย ธ.ค.",
+        "sectorImpact": "เหมืองขนาด ~$300M ที่ยังไม่ถึงสเกลและกำลังสร้างโรงกลั่น ไวต่อดอกเบี้ยพอ ๆ กับหุ้นที่ไวที่สุด: facility $200M ตั้งราคาตาม risk appetite ไม่ใช่พื้นฐาน · หักล้างบางส่วนด้วยเงินทุนนโยบาย critical minerals ซึ่งเป็นนโยบายการคลัง ไม่ใช่การเงิน เงิน Dept of War จึงไม่สนใจว่า Fed ทำอะไร",
+        "summary": "MEDIUM — micro-cap ที่มีวงเงินเพิ่มทุน การขึ้นดอกเบี้ย ธ.ค. เพิ่มต้นทุนการเจือจางที่ thesis นี้ต้องพึ่ง"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · ค่าขนม สูงสุด 1% (refresh 4 พ.ย.) — milestone ที่มีวันเพียงตัวเดียวเลื่อนไปเงียบ ๆ ตอนนี้เป็น micro-cap ที่เดิมพันกับนโยบาย จึงถือไม้เล็ก median ถึงวัน catalyst ของ turbo -13.7% (n=19) จึงเข้าที่ Entry 2 ($0.9-0.98) เป็นหลัก",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ turbo -13.7% (n=19)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "ต่ำกว่า 52-week low $1.00 — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ร่วงหนัก — เฉพาะเมื่อยืนยันการเริ่มผลิตที่ Marion",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — ยืนยันการเริ่มผลิตที่ Marion ~$1.36"
+        },
+        "tp2": {
+          "note": "Bull — สัญญา offtake แรก ~$2.10"
+        },
+        "tp3": {
+          "note": "Moon — สายแร่หายากได้เงินทุน + มีการสร้างมูลค่าจาก ReElement ~$3.15"
+        },
+        "stopLoss": {
+          "tightNote": "-27% — กว้างกว่า medianMAE ของ regulatory_approval (n=8) (-25%)",
+          "hardNote": "-45% — ดึงวงเงินเพิ่มทุนที่จุดต่ำ",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "ต่ำกว่าเป้า 5:1 ⚠️ — ลดขนาด"
+        },
+        "estimateDates": [
+          {
+            "event": "ReElement ผลิต germanium",
+            "note": "เป้า Q3 ยังไม่มีวันยืนยัน"
+          },
+          {
+            "event": "ปันผลพิเศษ",
+            "note": "วัน record · จ่าย 25 ส.ค."
+          },
+          {
+            "event": "สรุปทุน DOE",
+            "note": "optionality ที่ยังไม่มีวัน"
+          }
+        ]
+      },
+      "estimateDates": [
+        {
+          "event": "สายการผลิต germanium ที่ Marion ของ ReElement — เริ่มเชิงพาณิชย์",
+          "note": "เป้า Q3 2026 ยังไม่ยืนยัน โรงงาน Noblesville กลับมาผลิต germanium dioxide แล้ว และเริ่มใช้คอลัมน์ขนาดเชิงพาณิชย์ 7 ส.ค."
+        },
+        {
+          "event": "เงินทุนแร่สำคัญจาก DOE / Dept of War",
+          "note": "การสนับสนุนระดับโครงการ ($25M จาก Dept of War ให้ ReElement) ทุนเพิ่มเติมขึ้นกับนโยบาย"
+        }
+      ]
+    }
+  }
+}
