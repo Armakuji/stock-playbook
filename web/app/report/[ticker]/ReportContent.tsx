@@ -262,7 +262,7 @@ function ScoreBreakdown({ breakdown, color, th }: { breakdown: ScoreComponent[];
                 <div key={c.label} style={{ display: "grid", gridTemplateColumns: "minmax(0, 1.1fr) 1.3fr auto", alignItems: "center", gap: 12 }}>
                   <div style={{ minWidth: 0 }}>
                     <div style={{ fontSize: 11.5, color: "var(--text)", fontWeight: 600, lineHeight: 1.3 }}>{c.label}</div>
-                    <div style={{ fontSize: 9.5, color: "#64748b", fontFamily: "var(--font-mono, monospace)", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{c.detail}</div>
+                    <div style={{ fontSize: 9.5, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{c.detail}</div>
                   </div>
                   <div style={{ height: 6, borderRadius: 4, background: "var(--border)", overflow: "hidden" }}>
                     <div style={{ height: "100%", width: `${pct}%`, background: color, borderRadius: 4, opacity: 0.85, transition: "width 0.5s ease" }} />
@@ -350,7 +350,7 @@ function EntryCard({ levels }: { levels: EntryLevel[] }) {
                 </span>
               </div>
               <div style={{ display: "flex", justifyContent: "space-between" }}>
-                <span style={{ fontSize: 11, color: "#475569" }}>{e.note}</span>
+                <span style={{ fontSize: 11, color: "var(--muted)" }}>{e.note}</span>
                 {e.timing && <span style={{ fontSize: 11, color: "var(--muted)" }}>{e.timing}</span>}
               </div>
               {i < levels.length - 1 && <Divider />}
@@ -377,7 +377,7 @@ function TakeProfitCard({ report }: { report: StockReport }) {
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
               <div>
                 <span style={{ fontSize: 12, color: "var(--muted)" }}>{label}{data.moon ? " 🌙" : ""}</span>
-                {data.note && <div style={{ fontSize: 11, color: "#475569", marginTop: 2 }}>{data.note}</div>}
+                {data.note && <div style={{ fontSize: 11, color: "var(--muted)", marginTop: 2 }}>{data.note}</div>}
               </div>
               <div style={{ textAlign: "right" }}>
                 <div style={{ fontSize: 18, fontWeight: 800, color: "#10b981", fontFamily: "var(--font-mono, monospace)" }}>
@@ -416,7 +416,7 @@ function StopLossCard({ report }: { report: StockReport }) {
           <div style={{ display: "flex", justifyContent: "space-between" }}>
             <div>
               <span style={{ fontSize: 12, color: "var(--muted)" }}>Tight Stop</span>
-              {sl.tightNote && <div style={{ fontSize: 11, color: "#475569", marginTop: 2 }}>{sl.tightNote}</div>}
+              {sl.tightNote && <div style={{ fontSize: 11, color: "var(--muted)", marginTop: 2 }}>{sl.tightNote}</div>}
             </div>
             <div style={{ textAlign: "right" }}>
               <div style={{ fontSize: 18, fontWeight: 800, color: "#ef4444", fontFamily: "var(--font-mono, monospace)" }}>${sl.tight}</div>
@@ -429,7 +429,7 @@ function StopLossCard({ report }: { report: StockReport }) {
           <div style={{ display: "flex", justifyContent: "space-between" }}>
             <div>
               <span style={{ fontSize: 12, color: "var(--muted)" }}>Hard Stop</span>
-              {sl.hardNote && <div style={{ fontSize: 11, color: "#475569", marginTop: 2 }}>{sl.hardNote}</div>}
+              {sl.hardNote && <div style={{ fontSize: 11, color: "var(--muted)", marginTop: 2 }}>{sl.hardNote}</div>}
             </div>
             <div style={{ textAlign: "right" }}>
               <div style={{ fontSize: 18, fontWeight: 800, color: "#ef4444", fontFamily: "var(--font-mono, monospace)" }}>${sl.hard}</div>
@@ -443,7 +443,7 @@ function StopLossCard({ report }: { report: StockReport }) {
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 10 }}>
               <div style={{ flexShrink: 0 }}>
                 <span style={{ fontSize: 12, color: "var(--muted)" }}>Risk / Reward</span>
-                {sl.rrNote && <div style={{ fontSize: 11, color: "#475569", marginTop: 2 }}>{sl.rrNote}</div>}
+                {sl.rrNote && <div style={{ fontSize: 11, color: "var(--muted)", marginTop: 2 }}>{sl.rrNote}</div>}
               </div>
               <div style={{ textAlign: "right", minWidth: 0 }}>
                 <div style={{ fontSize: 18, fontWeight: 800, color: "var(--text)", fontFamily: "var(--font-mono, monospace)" }}>{sl.riskReward}</div>
@@ -469,7 +469,7 @@ function EstimateDateCard({ dates }: { dates: EstimateDate[] }) {
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
                 <div style={{ flex: 1, paddingRight: 12 }}>
                   <div style={{ fontSize: 12, fontWeight: 600, color: "var(--text)", marginBottom: 2 }}>{d.event}</div>
-                  {d.note && <div style={{ fontSize: 11, color: "#475569" }}>{d.note}</div>}
+                  {d.note && <div style={{ fontSize: 11, color: "var(--muted)" }}>{d.note}</div>}
                 </div>
                 <div style={{ textAlign: "right", flexShrink: 0 }}>
                   <div style={{ fontSize: 13, fontWeight: 700, color: dateColor, fontFamily: "var(--font-mono, monospace)" }}>{d.dateRange}</div>
@@ -610,7 +610,7 @@ function EarningsHistoryStrip({ cs, lang }: { cs: CatalystSpot; lang: Lang }) {
         <span style={{ fontSize: 11, fontWeight: 700, color: "var(--muted)", textTransform: "uppercase", letterSpacing: "0.5px", fontFamily: "var(--font-mono, monospace)" }}>
           📊 {th ? `ประวัติตอบรับ ${hist.length} ไตรมาส` : `${hist.length}-quarter reaction history`}
         </span>
-        <span style={{ fontSize: 10, color: "#64748b", fontFamily: "var(--font-mono, monospace)" }}>
+        <span style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>
           {th ? "day-1 move" : "day-1 move"}
         </span>
       </div>
@@ -623,7 +623,7 @@ function EarningsHistoryStrip({ cs, lang }: { cs: CatalystSpot; lang: Lang }) {
             <div key={i} className="hover-lift" style={{ display: "flex", alignItems: "center", gap: 10, borderRadius: 7, padding: "5px 7px", margin: "0 -7px" }}>
               <div style={{ width: 64, flexShrink: 0 }}>
                 <div style={{ fontSize: 11, fontWeight: 700, color: "var(--text)", fontFamily: "var(--font-mono, monospace)" }}>{h.quarter}</div>
-                <div style={{ fontSize: 9, color: "#64748b", fontFamily: "var(--font-mono, monospace)" }}>{h.date}</div>
+                <div style={{ fontSize: 9, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>{h.date}</div>
               </div>
               <div style={{ flex: 1, position: "relative", height: 16 }}>
                 <div style={{ position: "absolute", inset: 0, background: "#12121f", borderRadius: 5 }} />
@@ -687,7 +687,7 @@ function SizingBreakdown({ cs, lang }: { cs: CatalystSpot; lang: Lang }) {
           <p style={{ fontSize: 12, color: "#94a3b8", lineHeight: 1.65, margin: 0 }}>{cs.spotSizing.reason}</p>
         )}
         {steps.length > 0 && (
-          <p style={{ fontSize: 11, color: "#64748b", lineHeight: 1.6, margin: "10px 0 0", fontStyle: "italic" }}>{cs.spotSizing.reason}</p>
+          <p style={{ fontSize: 11, color: "var(--muted)", lineHeight: 1.6, margin: "10px 0 0" }}>{cs.spotSizing.reason}</p>
         )}
       </div>
     </div>
@@ -706,7 +706,7 @@ function CatalystSpotCard({ cs, lang, coreTightPct, coreHardPct }: { cs: Catalys
         <span style={{ textTransform: "uppercase", letterSpacing: "0.5px", color: SPOT_PURPLE }}>{label}</span>
       </div>
       {sublabel && (
-        <div style={{ fontSize: 10, color: "#64748b", marginTop: 3, fontFamily: "var(--font-mono, monospace)", paddingLeft: 18 }}>{sublabel}</div>
+        <div style={{ fontSize: 10, color: "var(--muted)", marginTop: 3, fontFamily: "var(--font-mono, monospace)", paddingLeft: 18 }}>{sublabel}</div>
       )}
     </div>
   );
@@ -786,8 +786,8 @@ function CatalystSpotCard({ cs, lang, coreTightPct, coreHardPct }: { cs: Catalys
                   <span style={{ fontSize: 16, fontWeight: 800, color: "#10b981", fontFamily: "var(--font-mono, monospace)" }}>avg +{cs.postWin.avgPct}%</span>
                 </div>
                 <div style={{ display: "flex", gap: 8, marginBottom: 4 }}>
-                  <span style={{ fontSize: 10, color: "#64748b", fontFamily: "var(--font-mono, monospace)" }}>range: {cs.postWin.range}</span>
-                  {cs.postWin.exampleDate && <span style={{ fontSize: 10, color: "#475569", fontFamily: "var(--font-mono, monospace)" }}>· {cs.postWin.exampleDate}</span>}
+                  <span style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>range: {cs.postWin.range}</span>
+                  {cs.postWin.exampleDate && <span style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>· {cs.postWin.exampleDate}</span>}
                 </div>
                 <div style={{ fontSize: 11, color: "#94a3b8", lineHeight: 1.55 }}>{cs.postWin.note}</div>
               </div>
@@ -797,8 +797,8 @@ function CatalystSpotCard({ cs, lang, coreTightPct, coreHardPct }: { cs: Catalys
                   <span style={{ fontSize: 16, fontWeight: 800, color: "#ef4444", fontFamily: "var(--font-mono, monospace)" }}>avg {cs.postLose.avgPct}%</span>
                 </div>
                 <div style={{ display: "flex", gap: 8, marginBottom: 4 }}>
-                  <span style={{ fontSize: 10, color: "#64748b", fontFamily: "var(--font-mono, monospace)" }}>range: {cs.postLose.range}</span>
-                  {cs.postLose.exampleDate && <span style={{ fontSize: 10, color: "#475569", fontFamily: "var(--font-mono, monospace)" }}>· {cs.postLose.exampleDate}</span>}
+                  <span style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>range: {cs.postLose.range}</span>
+                  {cs.postLose.exampleDate && <span style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>· {cs.postLose.exampleDate}</span>}
                 </div>
                 <div style={{ fontSize: 11, color: "#94a3b8", lineHeight: 1.55 }}>{cs.postLose.note}</div>
               </div>
@@ -852,7 +852,7 @@ function ComparableCasesCard({ cases, lang }: { cases: ComparableCase[]; lang: L
   const OUTCOME_STYLE: Record<string, { bg: string; color: string; label: string }> = {
     good:  { bg: "#10b98118", color: "#10b981", label: th ? "✅ ดี"      : "✅ Good"  },
     mixed: { bg: "#f59e0b18", color: "#f59e0b", label: th ? "⚡ ปนกัน"  : "⚡ Mixed" },
-    bad:   { bg: "#ef444418", color: "#ef4444", label: th ? "❌ แย่"     : "❌ Bad"   },
+    bad:   { bg: "#ef444418", color: "#f87171", label: th ? "❌ แย่"     : "❌ Bad"   },
   };
 
   return (
@@ -887,7 +887,7 @@ function ComparableCasesCard({ cases, lang }: { cases: ComparableCase[]; lang: L
                   </div>
                 </div>
               </div>
-              <div style={{ fontSize: 11, color: "#64748b", marginBottom: 4, fontFamily: "var(--font-mono, monospace)" }}>{c.event}</div>
+              <div style={{ fontSize: 11, color: "var(--muted)", marginBottom: 4, fontFamily: "var(--font-mono, monospace)" }}>{c.event}</div>
               <div style={{ fontSize: 11, color: "#94a3b8", lineHeight: 1.55 }}>{c.note}</div>
             </div>
           );
@@ -937,7 +937,7 @@ const TURBO_COLORS = {
   moon:      "#d500f9",
   card:      "#0e0508",
   border:    "#2d1010",
-  muted:     "#7f4040",
+  muted:     "#b58780",
   deepBg:    "#13050a",
 };
 
@@ -1104,7 +1104,7 @@ export function ReportContent({ report: baseReport, timelinePoints = [], isTurbo
                 <div style={{ fontSize: 11, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", marginTop: 2 }}>MCap {report.marketCap}</div>
               )}
               {report.priceNote && (
-                <div style={{ fontSize: 10, color: "#475569", marginTop: 2, maxWidth: 180, textAlign: "right" }}>{report.priceNote}</div>
+                <div style={{ fontSize: 10, color: "var(--muted)", marginTop: 2, maxWidth: 180, textAlign: "right" }}>{report.priceNote}</div>
               )}
             </div>
           </div>
@@ -1211,7 +1211,7 @@ export function ReportContent({ report: baseReport, timelinePoints = [], isTurbo
               </a>
             ))}
           </div>
-          <p style={{ fontSize: 11, color: "#475569", marginTop: 12, marginBottom: 0 }}>
+          <p style={{ fontSize: 11, color: "var(--muted)", marginTop: 12, marginBottom: 0 }}>
             Generated {report.generatedAt.slice(0, 10)} · Not financial advice
           </p>
         </div>

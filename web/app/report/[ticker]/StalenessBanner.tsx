@@ -63,7 +63,7 @@ export function StalenessBanner({
           {drift >= 0 ? "▲" : "▼"} {Math.abs(drift).toFixed(1)}% since · live ${live!.toFixed(2)}
         </span>
       )}
-      {failed && <span style={{ color: "#475569" }}>· live price unavailable</span>}
+      {failed && <span style={{ color: "var(--muted)" }}>· live price unavailable</span>}
       {sev !== "low" && (
         <span style={{ color: "var(--muted)", fontStyle: "italic" }}>
           entry levels may be stale — re-check before acting

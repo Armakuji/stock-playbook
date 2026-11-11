@@ -129,7 +129,7 @@ export function TurboCard({
               {report.scoreLabel ?? "ค่าขนม"}
             </span>
           </div>
-          <div style={{ fontSize: 11, color: "#7f4040" }}>{report.companyName}</div>
+          <div style={{ fontSize: 11, color: "#c19790" }}>{report.companyName}</div>
 
           {/* Cap size badge */}
           {cap && (
@@ -148,7 +148,7 @@ export function TurboCard({
             </div>
           )}
 
-          <div style={{ fontSize: 10, color: "#4d2020", marginTop: 4, fontStyle: "italic" }}>
+          <div style={{ fontSize: 11, color: "#b58780", marginTop: 6, lineHeight: 1.5 }}>
             {report.companyDescription}
           </div>
         </div>
@@ -191,7 +191,7 @@ export function TurboCard({
 
         {/* Row 4: summary */}
         <p style={{
-          fontSize: 12, color: "#7f4040", lineHeight: 1.6, margin: "0 0 12px",
+          fontSize: 12, color: "#d8b3ab", lineHeight: 1.6, margin: "0 0 12px",
           display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden",
         }}>
           {report.summary}
