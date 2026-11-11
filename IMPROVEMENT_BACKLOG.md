@@ -487,7 +487,7 @@ dev server) เห็น class ครบ ไม่มี error ใน server log
 
 **เกี่ยวพัน:** ต่อจาก #25 (loop) + #27 (regime/benchmark) · ยังไม่แตะ turbo lane prompts (`turbo-list.md` / `turbo-report`) — ตัวเลข soft/tier2 มีให้ใช้แล้วใน JSON แต่ prompt ฝั่ง turbo ยังอ้าง hitRate อยู่ → งานต่อไป · `LAGGARD_MARGIN_PP = 2` เป็น judgement call ควร revisit เมื่อ n ต่อ bucket > ~20
 
-## 37. Catalyst date provenance — ห้ามเอา CT.gov estimated-completion มาใช้เป็น `catalystDate`
+## 37. ✅ DONE (2026-11-12) — Catalyst date provenance — ห้ามเอา CT.gov estimated-completion มาใช้เป็น `catalystDate`
 
 **ปัญหา:** เจอตอน test-run `/catalyst-list` จริง (2026-08-13). Longlist ที่ดึงจาก PDUFA/catalyst
 aggregator (catalystalert.io) ให้ entry ที่ดูเหมือน dated catalyst แต่พอ verify กับ guidance ของ

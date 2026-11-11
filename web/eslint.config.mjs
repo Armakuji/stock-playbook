@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Git-ignored scratch renders (see web/.gitignore) — not source.
+    ".render-tmp/**",
   ]),
 ]);
 
