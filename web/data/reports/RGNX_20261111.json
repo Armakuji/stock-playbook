@@ -1,0 +1,291 @@
+{
+  "ticker": "RGNX",
+  "companyName": "REGENXBIO Inc.",
+  "companyDescription": "AAV gene therapy developer · RGX-121/NAVSUNLI for MPS II now on FDA clinical hold with no near-term resubmission expected — but RGX-202 (Duchenne) already met its Phase III primary endpoint and BLA submission is guided for this quarter, plus a partnered retina program (ABBV-RGX-314) with positive 3-year durability data",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-11T12:00:00.000Z",
+  "price": 7.69,
+  "priceChange": -4.71,
+  "priceNote": "Live $7.69 on Nov 11, 2026. The prior report (Oct 26) used $6.85, a +12.3% drift. Q3 was reported Nov 5 (not Nov 9 as the prior report had it).",
+  "marketCap": "~$452M",
+  "sector": "Healthcare / Gene Therapy (Multi-Asset AAV Platform)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Speculative",
+  "score": 0,
+  "summary": "Refresh: the Q3 print (Nov 5; the prior report wrongly dated it Nov 9) narrowed the loss on a Sarepta settlement gain ($39M cash in Oct) and left $251M cash at Sep 30. The real binary is unchanged: ABBV-RGX-314 (surabgene lomparvovec) ATMOSPHERE + ASCENT pivotal wet-AMD toplines, which management says come \"this quarter\" (Q4 2026), with no exact date. Negatives since the last report: RGX-121 is on FDA clinical hold (Aug), and the RGX-202 DMD BLA slipped to a single Q1 2027 submission. The stock is +12% since Oct 26. Core Base bias +23.7pp vs realized 14d P75 +6.6%, so Base is a multi-week horizon, not a 14-day call.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 2026 earnings — RESOLVED (Nov 5)",
+      "description": "Narrower loss on Sarepta settlement; $251M cash; RGX-202 BLA moved to Q1 2027.",
+      "urgencyLabel": "DONE",
+      "dateBadge": "Nov 5, 2026",
+      "catalystDate": "2026-11-05",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "👁️",
+      "name": "ATMOSPHERE + ASCENT pivotal topline — wet AMD",
+      "description": "Management guides \"this quarter\" (Q4 2026), followed by global filings in 2027. Partnered with AbbVie.",
+      "urgencyLabel": "Q4",
+      "dateBadge": "~Q4 2026",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "RGX-202 BLA submission (guided Q3 2026) not confirmed in the sources checked — a slip would hurt credibility.",
+    "RGX-121 clinical hold (spinal imaging findings) — possible read-through concerns for intrathecal AAV programs.",
+    "ABBV-RGX-314 pivotal is a genuine binary with an AbbVie split of economics.",
+    "Wide analyst dispersion ($10-$50).",
+    "Net loss ~$196M (2025) — further financing likely (a 424B5 was filed in 2026)."
+  ],
+  "estimateDates": [
+    {
+      "event": "ATMOSPHERE/ASCENT topline",
+      "dateRange": "~Q4 2026",
+      "note": "Pivotal wet AMD",
+      "est": "Non-inferiority vs aflibercept",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -42.13,
+      "price": 4.45
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 15.73,
+      "price": 8.9
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 69.18,
+      "price": 13.01
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 202.86,
+      "price": 23.29
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus (12 analysts, stockanalysis.com)",
+      "target": 23.58,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Stifel Nicolaus (Sep 25, 2026)",
+      "target": 42,
+      "rating": "Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "The Fed held at 3.75–4.00% on Oct 28. After the hot Oct CPI on Nov 10, CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~89–100%, with ~10% odds of 50bp. The 10-year is ~4.98%.",
+    "inflationNote": "Oct CPI: headline +0.4% m/m, core +0.3% m/m vs 0.2% expected. Sep core PCE 3.1% y/y. Oct PCE (Nov 25) and Nov CPI (Dec 10) are next.",
+    "sectorImpact": "Sub-$500M gene-therapy name; small-cap biotech risk appetite drives the multiple.",
+    "summary": "MEDIUM — a 25bp December hike is priced after the hot CPI. The tails are a 50bp move or a hot Nov 25 PCE, both of which hit small caps first, so the dip entry is preferred."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 7.69,
+        "note": "Current price — starter only. Not preferred: core at-catalyst median -6.9% (n=54)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 6.74,
+        "rangeMax": 7.3,
+        "note": "Pre-earnings dip zone — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 6.17,
+        "note": "Near the $5.46 52-week low",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 8.9,
+      "pct": 15.73,
+      "note": "Base — RGX-202 BLA confirmed; ~$8.90. Horizon ~1-3 months."
+    },
+    "tp2": {
+      "price": 13.01,
+      "pct": 69.18,
+      "note": "Bull — positive RGX-314 pivotal; ~$13."
+    },
+    "tp3": {
+      "price": 23.29,
+      "pct": 202.86,
+      "note": "Moon — two pivotal-stage assets de-risked; ~$23, at consensus. 12-month thesis.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 6.54,
+      "tightPct": -14.95,
+      "tightNote": "-15% — wider than the core medianMAE (-14%); overall figure applies.",
+      "hard": 4.61,
+      "hardPct": -40.05,
+      "hardNote": "-40% — pivotal-failure territory.",
+      "riskReward": "4.6 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Good R/R ✅ (≥2:1 core bar)"
+    },
+    "verdict": "SPECULATIVE — the pivotal wet-AMD readout is guided to Q4 with no exact date. RGX-121 hold and RGX-202 slip add risk. Measured core at-catalyst median is -6.9% (n=54), so Entry 2 is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "regulatory_approval",
+    "preRunup": "REGENXBIO's stock reacted negatively and immediately to the Aug 24 clinical-hold news; no meaningful pre-runup has built yet into the RGX-202 BLA-submission window since the market is still digesting the RGX-121 setback",
+    "preRunupTiming": "N/A this cycle — sentiment reset first",
+    "preRunupPct": "n/a (post-setback reset)",
+    "postWin": {
+      "avgPct": 15,
+      "range": "+8% to +25%",
+      "note": "REGENXBIO's own Jul 2026 Type A meeting news (a DIFFERENT, now-void catalyst) drove a positive reaction when it looked like good regulatory news; the regulatory_approval bucket in skill-feedback shows a median excess of +3.3pp vs SPY (n=6). A clean RGX-202 BLA submission this quarter would likely produce a similar modest positive move, not a re-rate on its own — approval itself is the bigger event, still quarters away.",
+      "exampleDate": "Jul 2026"
+    },
+    "postLose": {
+      "avgPct": -12,
+      "range": "-8% to -20%",
+      "note": "REGENXBIO's own Aug 24, 2026 clinical-hold reaction on RGX-121 is the direct precedent for how this stock reacts to genuine bad regulatory news on one of its programs.",
+      "exampleDate": "Aug 2026"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "3%. regulatory_approval is +3.3pp vs +1.4pp overall (n=6) — no tier-2 penalty, but the RGX-121 clinical hold and wide target dispersion ($10-$50) keep size small."
+    },
+    "stopPreCatalyst": {
+      "pct": -14.95,
+      "price": 6.54,
+      "note": "Wider than the core overall medianMAE (-14%)."
+    },
+    "stopPostCatalyst": {
+      "pct": -30,
+      "note": "If RGX-314 misses or the RGX-202 BLA slips materially, exit."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "RGNX",
+      "event": "FDA places clinical hold on RGX-121 after spinal MRI findings in long-term dosed patients",
+      "date": "Aug 2026",
+      "movePct": -12,
+      "days": 5,
+      "outcome": "bad",
+      "note": "The event this refresh corrects for — same company, direct precedent for how much this stock moves on genuine program-level regulatory setbacks"
+    },
+    {
+      "ticker": "RGNX",
+      "event": "FDA Type A meeting confirms no additional RGX-121 studies needed (now superseded by the Aug 24 clinical hold)",
+      "date": "Jul 2026",
+      "movePct": 15,
+      "days": 1,
+      "outcome": "good",
+      "note": "Illustrates the range of reaction to REGENXBIO regulatory news, though this specific outcome was later overtaken by events"
+    },
+    {
+      "ticker": "AGIO",
+      "event": "Mitapivat sickle cell PDUFA process — comparable ultra-rare-disease gene/biologic regulatory pathway",
+      "date": "2026",
+      "movePct": 20,
+      "days": 1,
+      "outcome": "good",
+      "note": "Illustrates the range of outcomes possible when a rare-disease regulatory process concludes positively"
+    }
+  ],
+  "sources": [
+    "https://finviz.com/news/416751/regenxbio-reports-third-quarter-2026-financial-results-and-operational-highlights",
+    "https://finviz.com/news/417190/regenxbios-narrower-loss-leans-on-a-sarepta-settlement-gain-while-investors-wait-on-the-wet-amd-readout",
+    "https://stockanalysis.com/stocks/rgnx/",
+    "https://ir.regenxbio.com/news-releases/news-release-details/regenxbio-highlights-key-2026-catalysts-and-announces-positive",
+    "https://www.stocktitan.net/news/RGNX/",
+    "https://stockanalysis.com/stocks/rgnx/forecast/",
+    "https://www.chase.com/personal/investments/learning-and-insights/article/will-the-federal-reserve-hike-rates-at-october-2026-fomc-meeting",
+    "https://defirate.com/prediction-markets/fed-decision-odds/",
+    "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+    "https://www.investing.com/news/economy-news/fed-rate-hike-odds-in-december-at-88-after-hot-cpi-cme-fedwatch-5017585"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "รีเฟรช: งบ Q3 (5 พ.ย.; รายงานก่อนระบุผิดเป็น 9 พ.ย.) ขาดทุนแคบลงจากกำไรข้อตกลงกับ Sarepta (เงินสด $39M ใน ต.ค.) เงินสด $251M ณ 30 ก.ย. binary จริงยังเหมือนเดิม: ผล topline pivotal ATMOSPHERE + ASCENT ของ ABBV-RGX-314 (surabgene lomparvovec) ใน wet AMD ผู้บริหารบอกว่าจะออก \"ไตรมาสนี้\" (Q4 2026) ไม่มีวันแน่นอน ข่าวลบตั้งแต่รายงานก่อน: RGX-121 ถูก FDA สั่งหยุดทดลอง (ส.ค.) และการยื่น BLA ของ RGX-202 (DMD) เลื่อนเป็นยื่นครั้งเดียวใน Q1 2027 หุ้น +12% ตั้งแต่ 26 ต.ค. bias ของ Base ใน core +23.7pp เทียบ P75 14 วันจริง +6.6% Base จึงเป็นกรอบหลายสัปดาห์ ไม่ใช่คาด 14 วัน",
+      "priceNote": "ราคาสด $7.69 11 พ.ย. 2026 รายงานก่อนหน้า (26 ต.ค.) ใช้ $6.85 drift +12.3% งบ Q3 ออก 5 พ.ย. (ไม่ใช่ 9 พ.ย. ตามรายงานก่อน)",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        {
+          "name": "งบ Q3 2026 — ผ่านแล้ว (5 พ.ย.)",
+          "description": "ขาดทุนแคบลงจากข้อตกลง Sarepta; เงินสด $251M; BLA ของ RGX-202 เลื่อนเป็น Q1 2027"
+        },
+        {
+          "name": "ผล topline pivotal ATMOSPHERE + ASCENT — wet AMD",
+          "description": "ผู้บริหารระบุ \"ไตรมาสนี้\" (Q4 2026) แล้วยื่นทั่วโลกในปี 2027 ร่วมกับ AbbVie"
+        }
+      ],
+      "risks": [
+        "การยื่น BLA ของ RGX-202 (เป้า Q3 2026) ยังไม่ยืนยันในแหล่งที่ตรวจ ถ้าเลื่อนจะกระทบความน่าเชื่อถือ",
+        "clinical hold ของ RGX-121 (ผลภาพถ่ายไขสันหลัง) อาจส่งผลต่อความกังวลในโปรแกรม AAV แบบฉีดเข้าไขสันหลัง",
+        "pivotal ของ ABBV-RGX-314 เป็น binary จริง และแบ่งผลประโยชน์กับ AbbVie",
+        "เป้านักวิเคราะห์ต่างกันมาก ($10-$50)",
+        "ขาดทุนสุทธิ ~$196M (2025) น่าจะต้องหาเงินเพิ่ม (มีการยื่น 424B5 ในปี 2026)"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.75–4.00% เมื่อ 28 ต.ค. หลัง CPI ต.ค. ออกมาร้อน (10 พ.ย.) CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ราว 89–100% และโอกาสขึ้น 50bp ~10% ส่วน yield 10 ปีอยู่ ~4.98%",
+        "inflationNote": "CPI ต.ค.: headline +0.4% m/m, core +0.3% m/m (คาด 0.2%) core PCE ก.ย. 3.1% y/y ตัวถัดไปคือ PCE ต.ค. (25 พ.ย.) และ CPI พ.ย. (10 ธ.ค.)",
+        "sectorImpact": "หุ้นยีนบำบัดมูลค่าต่ำกว่า $500M risk appetite ของไบโอเทคเล็กกำหนด multiple",
+        "summary": "MEDIUM — ตลาดรับการขึ้นดอกเบี้ย 25bp ใน ธ.ค. แล้วหลัง CPI ร้อน ความเสี่ยงหางคือขึ้น 50bp หรือ PCE 25 พ.ย. ร้อน ซึ่งกระทบหุ้นเล็กก่อน จึงควรรอเข้าตอนย่อ"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — ผล pivotal wet AMD คาด Q4 ไม่มีวันแน่นอน การหยุด RGX-121 และการเลื่อน RGX-202 เพิ่มความเสี่ยง median ถึงวัน catalyst ของ core -6.9% (n=54) จึงเข้าที่ Entry 2 เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ core -6.9% (n=54)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "โซนย่อก่อนงบ — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ใกล้ 52-week low $5.46",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — ยืนยันการยื่น BLA ของ RGX-202 ~$8.90 กรอบ ~1-3 เดือน"
+        },
+        "tp2": {
+          "note": "Bull — ผล pivotal RGX-314 บวก ~$13"
+        },
+        "tp3": {
+          "note": "Moon — สินทรัพย์ระยะ pivotal สองตัวลดความเสี่ยงได้ ~$23 เท่าเป้าเฉลี่ย thesis 12 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-15% — กว้างกว่า medianMAE ของ core (-14%)",
+          "hardNote": "-40% — โซน pivotal ล้มเหลว",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "R/R ดี ✅ (≥2:1 เกณฑ์ core)"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "ผล topline ATMOSPHERE/ASCENT",
+          "note": "pivotal wet AMD"
+        }
+      ]
+    }
+  }
+}

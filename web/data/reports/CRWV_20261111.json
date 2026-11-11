@@ -1,0 +1,267 @@
+{
+  "ticker": "CRWV",
+  "companyName": "CoreWeave, Inc.",
+  "companyDescription": "AI cloud / neocloud · GPU infrastructure for hyperscalers and AI labs · $104B revenue backlog, FY26 revenue guide $12.4-13.2B · ~$50B debt load under bond-market stress",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-11T12:00:00.000Z",
+  "price": 48.73,
+  "priceChange": -0.51,
+  "priceNote": "Live $48.73 on Nov 11, 2026 (prior close; ~+5.7% after hours on Q3). The prior report (Oct 26) used $53.64, a -9.2% drift. The stock is ~-40% over the past month in the AI-infrastructure selloff.",
+  "marketCap": "~$29.6B",
+  "sector": "Technology / AI Infrastructure",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Speculative",
+  "score": 0,
+  "summary": "RESOLVED (Q3, Nov 10) — a double beat and raise. Revenue was $3.66B (+168% y/y) vs ~$3.55B est. Backlog is ~$132.5B (from ~$104B in June), the FY26 guide was raised to $13.0–13.3B, and the exit-2026 run-rate target is $20–21B. Capex is $37–39B. Shares rose ~5.7% after hours, after a ~-40% month on AI-capex/regulation fears. The leverage concern is unchanged (interest expense was $640M in Q2). With no dated catalyst left, the report goes post-stage. Core Base bias +23.7pp vs realized 14d P75 +6.6%, so Base is a multi-week horizon, not a 14-day call.",
+  "catalysts": [
+    {
+      "icon": "✅",
+      "name": "Q3 2026 earnings — RESOLVED (beat & raise)",
+      "description": "Rev $3.66B; backlog ~$132.5B; FY26 guide $13.0–13.3B; +5.7% AH.",
+      "urgencyLabel": "DONE",
+      "dateBadge": "Nov 10, 2026",
+      "catalystDate": "2026-11-10",
+      "badgeColor": "green",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Credit stress: 2031 bond yields briefly >16% and CDS >1,000bp — the equity is subordinated to a stressed capital structure.",
+    "Q3 interest expense of $860-940M against a modest operating profit; any slip in operating leverage widens losses fast.",
+    "Neocloud sector narrative risk (Gartner: 80% of neoclouds gone by 2030; public skepticism from prominent tech figures).",
+    "Customer concentration in a handful of hyperscalers/AI labs; contract renegotiation risk if AI capex cools.",
+    "Earnings date is an aggregator estimate (~Nov 10), not yet company-confirmed."
+  ],
+  "estimateDates": [
+    {
+      "event": "Q3 2026 earnings (realized)",
+      "dateRange": "Nov 10, 2026",
+      "note": "Beat & raise",
+      "est": "Done",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -28.44,
+      "price": 34.87
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 37.59,
+      "price": 67.05
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 87.13,
+      "price": 91.19
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 175.19,
+      "price": 134.1
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus (42 analysts, stockanalysis.com)",
+      "target": 134.5,
+      "rating": "Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "The Fed held at 3.75–4.00% on Oct 28. After the hot Oct CPI on Nov 10, CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~89–100%, with ~10% odds of 50bp. The 10-year is ~4.98%.",
+    "inflationNote": "Oct CPI: headline +0.4% m/m, core +0.3% m/m vs 0.2% expected. Sep core PCE 3.1% y/y. Oct PCE (Nov 25) and Nov CPI (Dec 10) are next.",
+    "sectorImpact": "~$50B of debt with Q3 interest guided at $860-940M — the stock is now a credit trade. Every bp on yields hits both its cost of capital and the equity multiple.",
+    "summary": "MEDIUM — a 25bp December hike is priced after the hot CPI. The tails are a 50bp move or a hot Nov 25 PCE, both of which hit small caps first, so the dip entry is preferred."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 48.73,
+        "note": "Current price — starter only. Not preferred: core at-catalyst median -6.9% (n=54)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 42.7,
+        "rangeMax": 46.33,
+        "note": "Pre-earnings dip zone, below the $51.24 52-week low — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 38.16,
+        "note": "Deep dip — only if bond spreads stabilize",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 67.05,
+      "pct": 37.59,
+      "note": "Base — Q3 shows operating income scaling faster than interest; bonds stabilize; ~$67. Horizon ~1-3 months."
+    },
+    "tp2": {
+      "price": 91.19,
+      "pct": 87.13,
+      "note": "Bull — guide raised again plus a refinancing that lowers cost of debt; ~$91."
+    },
+    "tp3": {
+      "price": 134.1,
+      "pct": 175.19,
+      "note": "Moon — re-rate toward consensus (~$134) as the credit overhang clears. 12-month thesis.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 41.42,
+      "tightPct": -15,
+      "tightNote": "-15% — wider than the core medianMAE (-14%); overall figure applies.",
+      "hard": 34.11,
+      "hardPct": -30,
+      "hardNote": "-30% — the credit stress is winning; exit.",
+      "riskReward": "5.8 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Good R/R ✅ (≥2:1 core bar)"
+    },
+    "verdict": "SPECULATIVE hold — the binary resolved as a beat-and-raise. Leverage keeps it speculative; add only on dips. Measured core at-catalyst median is -6.9% (n=54), so Entry 2 is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Reverse run-up: -25% in one week (Oct 9 to Oct 16) as hot CPI put its ~$50B debt in focus; the Oct 2031 bond yield briefly topped 16% and CDS exceeded 1,000bp.",
+    "preRunupTiming": "N/A",
+    "preRunupPct": "-25% in the week to Oct 16",
+    "postWin": {
+      "avgPct": 15.5,
+      "range": "+15.5%",
+      "note": "CRWV's own Aug 2026 Q2 reaction (+15.5%) when adj. operating income came in ~2x the guided midpoint.",
+      "exampleDate": "Aug 2026"
+    },
+    "postLose": {
+      "avgPct": -10,
+      "range": "-10%",
+      "note": "MRVL's Aug 28, 2026 sell-the-news (-10% on a beat-and-raise) is the closest same-cohort template for 'good print, crowded name'.",
+      "exampleDate": "Aug 2026"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "3%. earnings_beat carries no tier-2 penalty (n=42), but credit-market stress (16%+ bond yields, record CDS) makes this an equity option on refinancing — size small despite the +150% consensus upside."
+    },
+    "stopPreCatalyst": {
+      "pct": -15,
+      "price": 41.42,
+      "note": "Wider than the earnings_beat medianMAE (-9.6%, n=42). A decisive break below the $51.24 52-week low before the print means credit fears are re-accelerating."
+    },
+    "stopPostCatalyst": {
+      "pct": -18,
+      "note": "If Q3 shows interest outrunning operating income or a dilutive/expensive financing, exit within 1-2 sessions."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "CRWV",
+      "event": "Q2 2026 earnings — adj. operating income ~2x guided midpoint, FY guide raised",
+      "date": "Aug 2026",
+      "movePct": 15.5,
+      "days": 1,
+      "outcome": "good",
+      "note": "A margin beat (not just revenue) re-rated an AI-infra name +15.5% even in a debt-skeptical tape. The upside template for a clean beat-and-raise."
+    },
+    {
+      "ticker": "MRVL",
+      "event": "Q2 FY27 earnings — beat + raised FY27 to ~$12B, FY28 ~$18B",
+      "date": "Aug 2026",
+      "movePct": -10,
+      "days": 1,
+      "outcome": "bad",
+      "note": "A beat-and-raise that still fell ~10% because positioning wanted more. The sell-the-news template for crowded AI names."
+    }
+  ],
+  "sources": [
+    "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx",
+    "https://www.cnbc.com/2026/11/10/coreweave-crwv-q3-earnings-report-2026.html",
+    "https://stockanalysis.com/stocks/crwv/",
+    "https://days.to/coreweave-earnings",
+    "https://www.tikr.com/blog/coreweave-stock-fell-25-last-week-on-bond-distress-is-it-a-buy-now",
+    "https://cryptobriefing.com/deutsche-bank-buy-coreweave-selloff/",
+    "https://www.indmoney.com/blog/us-stocks/crwv-stock-jumps-coreweave-q2-earnings-analysis",
+    "https://trendspider.com/blog/coreweave-stock-q2-earnings-guidance-2026/",
+    "https://finviz.com/news/386694/marvell-mrvl-stock-falls-10-after-q2-earnings-buy-the-dip",
+    "https://www.chase.com/personal/investments/learning-and-insights/article/will-the-federal-reserve-hike-rates-at-october-2026-fomc-meeting",
+    "https://defirate.com/prediction-markets/fed-decision-odds/",
+    "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+    "https://www.investing.com/news/economy-news/fed-rate-hike-odds-in-december-at-88-after-hot-cpi-cme-fedwatch-5017585"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "ผ่าน catalyst แล้ว (Q3, 10 พ.ย.) — beat ทั้งสองบรรทัดและปรับเป้าขึ้น รายได้ $3.66B (+168% y/y) เทียบคาด ~$3.55B backlog ~$132.5B (จาก ~$104B ใน มิ.ย.) ปรับเป้าปี 2026 เป็น $13.0–13.3B และเป้า run-rate ปลายปี 2026 $20–21B capex $37–39B หุ้นขึ้น ~5.7% after hours หลังลง ~-40% ในเดือนเดียวจากความกังวล capex/กฎคุม AI ความกังวลเรื่องหนี้ยังเหมือนเดิม (ดอกเบี้ยจ่าย $640M ใน Q2) ไม่มี catalyst ที่มีวันเหลือ รายงานจึงเข้าสู่ post-stage bias ของ Base ใน core +23.7pp เทียบ P75 14 วันจริง +6.6% Base จึงเป็นกรอบหลายสัปดาห์ ไม่ใช่คาด 14 วัน",
+      "priceNote": "ราคาสด $48.73 11 พ.ย. 2026 (ราคาปิดก่อนหน้า; ~+5.7% after hours หลังงบ Q3) รายงานก่อนหน้า (26 ต.ค.) ใช้ $53.64 drift -9.2% หุ้นลง ~-40% ในเดือนที่ผ่านมาจากการเทขายโครงสร้างพื้นฐาน AI",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        {
+          "name": "งบ Q3 2026 — ผ่านแล้ว (beat & raise)",
+          "description": "รายได้ $3.66B; backlog ~$132.5B; เป้าปี 2026 $13.0–13.3B; +5.7% AH"
+        }
+      ],
+      "risks": [
+        "ความตึงเครียดด้านเครดิต: yield หุ้นกู้ 2031 เคยเกิน 16% และ CDS เกิน 1,000bp หุ้นอยู่ใต้โครงสร้างทุนที่ตึงเครียด",
+        "ดอกเบี้ยจ่าย Q3 $860-940M เทียบกำไรจากการดำเนินงานที่ไม่มาก ถ้า operating leverage พลาด ขาดทุนจะกว้างขึ้นเร็ว",
+        "ความเสี่ยงเรื่องเล่าของกลุ่ม neocloud (Gartner: 80% หายไปภายในปี 2030; มีบุคคลดังในวงการเทคแสดงความสงสัยต่อสาธารณะ)",
+        "ลูกค้ากระจุกในไม่กี่ hyperscaler/AI lab เสี่ยงการเจรจาสัญญาใหม่ถ้า AI capex ชะลอ",
+        "วันงบเป็นการประมาณจาก aggregator (~10 พ.ย.) ยังไม่ยืนยันจากบริษัท"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.75–4.00% เมื่อ 28 ต.ค. หลัง CPI ต.ค. ออกมาร้อน (10 พ.ย.) CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ราว 89–100% และโอกาสขึ้น 50bp ~10% ส่วน yield 10 ปีอยู่ ~4.98%",
+        "inflationNote": "CPI ต.ค.: headline +0.4% m/m, core +0.3% m/m (คาด 0.2%) core PCE ก.ย. 3.1% y/y ตัวถัดไปคือ PCE ต.ค. (25 พ.ย.) และ CPI พ.ย. (10 ธ.ค.)",
+        "sectorImpact": "หนี้ ~$50B ดอกเบี้ยจ่าย Q3 ตามเป้า $860-940M หุ้นตัวนี้กลายเป็นการเทรดเครดิต ทุก bp ของอัตราผลตอบแทนกระทบทั้งต้นทุนเงินทุนและ multiple ของหุ้น",
+        "summary": "MEDIUM — ตลาดรับการขึ้นดอกเบี้ย 25bp ใน ธ.ค. แล้วหลัง CPI ร้อน ความเสี่ยงหางคือขึ้น 50bp หรือ PCE 25 พ.ย. ร้อน ซึ่งกระทบหุ้นเล็กก่อน จึงควรรอเข้าตอนย่อ"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE ถือ — binary ผ่านไปแบบ beat-and-raise หนี้สูงทำให้ยังเป็นหุ้นเก็งกำไร เพิ่มเฉพาะตอนย่อ median ถึงวัน catalyst ของ core -6.9% (n=54) จึงเข้าที่ Entry 2 เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ core -6.9% (n=54)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "โซนย่อก่อนงบ ต่ำกว่า 52-week low $51.24 — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ย่อลึก — เฉพาะเมื่อ spread หุ้นกู้นิ่ง",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — Q3 แสดงกำไรจากการดำเนินงานโตเร็วกว่าดอกเบี้ย หุ้นกู้นิ่ง ~$67 กรอบ ~1-3 เดือน"
+        },
+        "tp2": {
+          "note": "Bull — ปรับเป้าขึ้นอีก + รีไฟแนนซ์ที่ลดต้นทุนหนี้ ~$91"
+        },
+        "tp3": {
+          "note": "Moon — re-rate ไปหาเป้าเฉลี่ย (~$134) เมื่อแรงกดดันด้านเครดิตคลี่คลาย thesis 12 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-15% — กว้างกว่า medianMAE ของ core (-14%)",
+          "hardNote": "-30% — ความตึงเครียดด้านเครดิตชนะ ออก",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "R/R ดี ✅ (≥2:1 เกณฑ์ core)"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "งบ Q3 2026 (เกิดแล้ว)",
+          "note": "beat & raise"
+        }
+      ]
+    }
+  }
+}

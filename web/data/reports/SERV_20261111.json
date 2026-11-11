@@ -1,0 +1,322 @@
+{
+  "ticker": "SERV",
+  "companyName": "Serve Robotics Inc.",
+  "companyDescription": "Autonomous sidewalk delivery robots · fleet across 44 cities — but Uber, the partner the thesis was built on, has now fully exited",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-11T12:00:00.000Z",
+  "price": 3.11,
+  "priceChange": -8.26,
+  "priceNote": "Live $3.11 on Nov 11, 2026. The prior report (Aug 13) used $4.83, a -35.6% drift over 90 days. Q3 was reported Nov 5.",
+  "marketCap": "$373M",
+  "sector": "Technology / Robotics (Autonomous Delivery)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 34,
+  "summary": "RESOLVED (Q3, Nov 5) — revenue of ~$2.8M (+313% y/y) beat the ~$1.7M estimate, and the guide was reportedly raised to $12M (unconfirmed in primary text). Fleet margin improved by more than 100pp q/q, and the company now serves 27 hospitals (Diligent). But the net loss is ~21x revenue, and coverage flags a sequential revenue dip and heavy burn. The stock is -36% since the Aug 13 report, and the post-Uber partnership replacement the prior report relied on is still unannounced. Base is cut to +30%. With no dated catalyst left, the report goes post-stage. Core Base bias +23.7pp vs realized 14d P75 +6.6%, so Base is a multi-week horizon, not a 14-day call.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 2026 earnings — RESOLVED",
+      "description": "Rev ~$2.8M beat; guide reportedly $12M; heavy burn.",
+      "urgencyLabel": "DONE",
+      "dateBadge": "Nov 5, 2026",
+      "catalystDate": "2026-11-05",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "🤝",
+      "name": "Post-Uber partnership replacement",
+      "description": "Still unannounced.",
+      "urgencyLabel": "UNDATED",
+      "dateBadge": "Ongoing",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Uber fully divested its stake — the anchor partner and demand channel behind the original thesis is gone, not merely reduced",
+    "2026 revenue guidance cut to $9-10M, and Q2 delivery volume went backwards rather than merely growing slower",
+    "Two analysts cut to $7 (Oppenheimer from $20, Guggenheim from $13) and Cantor withdrew its target entirely — the target range is now bimodal and near the current price, not above it",
+    "At a $373M cap on $9-10M of guided revenue, the multiple still prices a growth story that just stopped growing",
+    "Cash burn against a halved revenue plan makes a dilutive raise materially more likely",
+    "The prior report screened this as the best R/R on the board (17:1) purely because its stale $18.45 consensus survived a print that invalidated it — a warning about the board's inputs, not a feature of this stock"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q3 2026 earnings (realized)",
+      "dateRange": "Nov 5, 2026",
+      "note": "Rev beat; burn heavy",
+      "est": "Done",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -45.02,
+      "price": 1.71
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 29.9,
+      "price": 4.04
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 90.03,
+      "price": 5.91
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 150.16,
+      "price": 7.78
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Oppenheimer",
+      "target": 7,
+      "rating": "Hold",
+      "note": "CUT from $20 after the Aug 6 print"
+    },
+    {
+      "firm": "Guggenheim",
+      "target": 7,
+      "rating": "Hold",
+      "note": "CUT from $13"
+    },
+    {
+      "firm": "Ladenburg Thalmann",
+      "target": 15,
+      "rating": "Buy",
+      "note": "Cut from $16 — the outlier that keeps the Moon case alive"
+    },
+    {
+      "firm": "Cantor Fitzgerald",
+      "target": 0,
+      "rating": "Hold",
+      "note": "Downgraded to Neutral and WITHDREW its price target — not a $0 target, an absence of one"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "The Fed held at 3.75–4.00% on Oct 28. After the hot Oct CPI on Nov 10, CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~89–100%, with ~10% odds of 50bp. The 10-year is ~4.98%.",
+    "inflationNote": "Oct CPI: headline +0.4% m/m, core +0.3% m/m vs 0.2% expected. Sep core PCE 3.1% y/y. Oct PCE (Nov 25) and Nov CPI (Dec 10) are next.",
+    "sectorImpact": "A $373M pre-scale robotics company that likely needs to raise is highly sensitive to the financing window, which is the channel rates actually work through here. But the binding constraint right now is company-specific, not macro.",
+    "summary": "MEDIUM — a 25bp December hike is priced after the hot CPI. The tails are a 50bp move or a hot Nov 25 PCE, both of which hit small caps first, so the dip entry is preferred."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 3.11,
+        "note": "Current price — starter only. Not preferred: core at-catalyst median -6.9% (n=54)",
+        "timing": "Not preferred"
+      },
+      {
+        "label": "Entry 2",
+        "level": 2.58,
+        "rangeMax": 2.77,
+        "note": "Post-guidance-cut base; where the reduced revenue plan is closer to priced",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 2.06,
+        "note": "Dilution or a second guidance cut",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 4.04,
+      "pct": 29.9,
+      "note": "Both post-cut analyst targets sit here"
+    },
+    "tp2": {
+      "price": 5.91,
+      "pct": 90.03,
+      "note": "Requires a credible replacement demand partner"
+    },
+    "tp3": {
+      "price": 7.78,
+      "pct": 150.16,
+      "note": "Ladenburg's outlier — needs the healthcare leg to become real · 2027",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 2.64,
+      "tightPct": -15.11,
+      "tightNote": "-15% — wider than the core medianMAE (-14%); overall figure applies.",
+      "hard": 2.16,
+      "hardPct": -30.55,
+      "hardNote": "Below this the market is pricing a dilutive raise",
+      "riskReward": "6.0 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Good R/R ✅ (≥2:1 core bar)"
+    },
+    "verdict": "SPECULATIVE hold — the Q3 binary resolved and the stock is -36% since the last report. No dated catalyst; starter-only. Measured core at-catalyst median is -6.9% (n=54), so Entry 2 is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Not applicable going forward — the earnings catalyst already fired on Aug 6 and resolved against the thesis. The -14.5% drift since the prior report is the market repricing the guidance cut, not pre-event drift.",
+    "preRunupTiming": "n/a — event passed",
+    "preRunupPct": "-14.5% (post-event)",
+    "postWin": {
+      "avgPct": 14,
+      "range": "+12% to +15%",
+      "note": "SERV's own Mar 2026 beat produced +12.3%, and SYM (Nov 2025) +14.5% as a robotics comparable. Both predate the partner exit, so they overstate what a beat is worth now.",
+      "exampleDate": "Mar 2026"
+    },
+    "postLose": {
+      "avgPct": -20,
+      "range": "-3% to -30%",
+      "note": "SERV shed only -3% on a May 2026 disappointment, but the Aug 2026 print was a different order of magnitude — guidance halved plus partner exit — and the stock is -14.5% since. The old comparable understates the new downside.",
+      "exampleDate": "Aug 2026"
+    },
+    "spotSizing": {
+      "pct": 1,
+      "reason": "1%. -36% drift, the Q3 binary resolved, and burn is heavy. Hold the starter only."
+    },
+    "stopPreCatalyst": {
+      "pct": -15.11,
+      "price": 2.64,
+      "note": "No pre-catalyst window remains; this is a general risk stop"
+    },
+    "stopPostCatalyst": {
+      "pct": -30,
+      "note": "If Q3 shows the $9-10M guide was still too high, exit — that would confirm a trend rather than a reset"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "SERV",
+      "event": "Q2 2026 print — revenue miss, guidance cut to $9-10M, Uber divests",
+      "date": "Aug 2026",
+      "movePct": -14.5,
+      "days": 7,
+      "outcome": "bad",
+      "note": "This is the event, not an analogue. It happened two days after the prior report was written and invalidated its entire target basis."
+    },
+    {
+      "ticker": "SERV",
+      "event": "Q1 2026 beat",
+      "date": "Mar 2026",
+      "movePct": 12.3,
+      "days": 2,
+      "outcome": "good",
+      "note": "What a good print used to be worth — while Uber was still the demand channel. Included as the ceiling, with the caveat that the channel is gone."
+    },
+    {
+      "ticker": "SYM",
+      "event": "Strong quarterly print",
+      "date": "Nov 2025",
+      "movePct": 14.51,
+      "days": 1,
+      "outcome": "good",
+      "note": "Robotics-sector comparable for beat magnitude. Note SYM itself fell 13% on a strong print in Aug 2026 — the sector's reaction function has turned less forgiving."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Serve Robotics Q2 2026: revenue misses, 2026 guidance cut to $9-10M as Uber delivery growth reverses; Uber divests stake",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/earnings-watch-serve-robotics-inc-133719086.html",
+    "date": "Aug 2026"
+  },
+  "sources": [
+    "https://www.nasdaq.com/articles/serve-robotics-q3-earnings-miss-estimates-revenues-beat",
+    "https://finviz.com/news/418163/serve-robotics-beats-and-lifts-its-outlook-but-a-sequential-revenue-dip-and-heavy-cash-burn-keep-the-turnaround-unproven",
+    "https://finance.yahoo.com/markets/stocks/articles/earnings-watch-serve-robotics-inc-133719086.html",
+    "https://finance.yahoo.com/markets/stocks/articles/serve-robotics-report-q2-earnings-145500054.html",
+    "https://stockanalysis.com/stocks/serv/forecast/",
+    "https://stockanalysis.com/stocks/serv/",
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+    "https://www.bls.gov/news.release/archives/cpi_08122026.htm",
+    "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+    "https://www.investing.com/news/economy-news/fed-rate-hike-odds-in-december-at-88-after-hot-cpi-cme-fedwatch-5017585"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "ผ่าน catalyst แล้ว (Q3, 5 พ.ย.) — รายได้ ~$2.8M (+313% y/y) ดีกว่าคาด ~$1.7M และมีรายงานว่าปรับเป้าเป็น $12M (ยังไม่ยืนยันจากเอกสารต้นทาง) margin ของ fleet ดีขึ้นกว่า 100pp q/q และให้บริการ 27 โรงพยาบาล (Diligent) แต่ขาดทุนสุทธิ ~21 เท่าของรายได้ และมีรายงานว่ารายได้ลดลงจากไตรมาสก่อนและเผาเงินหนัก หุ้น -36% ตั้งแต่รายงาน 13 ส.ค. และพันธมิตรที่จะมาแทน Uber ตามที่รายงานก่อนคาดไว้ยังไม่ประกาศ ลด Base เป็น +30% ไม่มี catalyst ที่มีวันเหลือ รายงานจึงเข้าสู่ post-stage bias ของ Base ใน core +23.7pp เทียบ P75 14 วันจริง +6.6% Base จึงเป็นกรอบหลายสัปดาห์ ไม่ใช่คาด 14 วัน",
+      "priceNote": "ราคาสด $3.11 11 พ.ย. 2026 รายงานก่อนหน้า (13 ส.ค.) ใช้ $4.83 drift -35.6% ใน 90 วัน งบ Q3 ออก 5 พ.ย.",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "งบ Q3 2026 — ผ่านแล้ว",
+          "description": "รายได้ ~$2.8M beat; มีรายงานว่าเป้า $12M; เผาเงินหนัก"
+        },
+        {
+          "name": "พันธมิตรใหม่แทน Uber",
+          "description": "ยังไม่ประกาศ"
+        }
+      ],
+      "risks": [
+        "Uber ขายหุ้นออกทั้งหมด — พาร์ตเนอร์หลักและช่องทาง demand ที่เป็นฐานของ thesis เดิมหายไป ไม่ใช่แค่ลดลง",
+        "guidance รายได้ปี 2026 ถูกหั่นเหลือ $9-10M และปริมาณ delivery ใน Q2 ถอยหลัง ไม่ใช่แค่โตช้าลง",
+        "นักวิเคราะห์สองรายหั่นเหลือ $7 (Oppenheimer จาก $20, Guggenheim จาก $13) และ Cantor ถอนเป้าทิ้ง — กรอบเป้าตอนนี้แยกเป็นสองขั้วและอยู่ใกล้ราคาปัจจุบัน ไม่ได้อยู่เหนือ",
+        "ที่ market cap $373M บนรายได้ที่ guide ไว้ $9-10M multiple ยังสะท้อนเรื่องการเติบโตที่เพิ่งหยุดโต",
+        "การเผาเงินสดเทียบแผนรายได้ที่เหลือครึ่งเดียว ทำให้โอกาสเพิ่มทุนแบบ dilute สูงขึ้นมาก",
+        "รายงานฉบับก่อนทำให้ตัวนี้ขึ้นเป็น R/R ดีที่สุดบนกระดาน (17:1) เพราะ consensus $18.45 ที่ค้างอยู่รอดจากงบที่ทำให้มันเป็นโมฆะ — เป็นคำเตือนเรื่อง input ของกระดาน ไม่ใช่จุดเด่นของหุ้นตัวนี้"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.75–4.00% เมื่อ 28 ต.ค. หลัง CPI ต.ค. ออกมาร้อน (10 พ.ย.) CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ราว 89–100% และโอกาสขึ้น 50bp ~10% ส่วน yield 10 ปีอยู่ ~4.98%",
+        "inflationNote": "CPI ต.ค.: headline +0.4% m/m, core +0.3% m/m (คาด 0.2%) core PCE ก.ย. 3.1% y/y ตัวถัดไปคือ PCE ต.ค. (25 พ.ย.) และ CPI พ.ย. (10 ธ.ค.)",
+        "sectorImpact": "บริษัทหุ่นยนต์ขนาด $373M ที่ยังไม่ถึงสเกลและน่าจะต้องเพิ่มทุน ไวต่อหน้าต่างการระดมทุนมาก ซึ่งเป็นช่องทางที่ดอกเบี้ยทำงานจริงในเคสนี้ · แต่ข้อจำกัดที่ผูกอยู่ตอนนี้เป็นเรื่องเฉพาะบริษัท ไม่ใช่ macro",
+        "summary": "MEDIUM — ตลาดรับการขึ้นดอกเบี้ย 25bp ใน ธ.ค. แล้วหลัง CPI ร้อน ความเสี่ยงหางคือขึ้น 50bp หรือ PCE 25 พ.ย. ร้อน ซึ่งกระทบหุ้นเล็กก่อน จึงควรรอเข้าตอนย่อ"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE ถือ — binary Q3 ผ่านไปแล้ว และหุ้น -36% ตั้งแต่รายงานก่อน ไม่มี catalyst ที่มีวัน ถือแค่ไม้เริ่ม median ถึงวัน catalyst ของ core -6.9% (n=54) จึงเข้าที่ Entry 2 เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ core -6.9% (n=54)",
+            "timing": "ไม่แนะนำ"
+          },
+          {
+            "note": "ฐานหลังหั่น guidance · จุดที่แผนรายได้ใหม่ถูก price เข้าไปมากขึ้น",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "มีการ dilute หรือหั่น guidance รอบสอง",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "เป้าหลังหั่นของนักวิเคราะห์ทั้งสองรายอยู่ตรงนี้"
+        },
+        "tp2": {
+          "note": "ต้องมีพาร์ตเนอร์ demand รายใหม่ที่น่าเชื่อถือ"
+        },
+        "tp3": {
+          "note": "เป้า outlier ของ Ladenburg — ต้องให้ขาสุขภาพเป็นจริง · 2027"
+        },
+        "stopLoss": {
+          "tightNote": "-15% — กว้างกว่า medianMAE ของ core (-14%)",
+          "hardNote": "ต่ำกว่านี้แปลว่าตลาด price การเพิ่มทุนแบบ dilute แล้ว",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "R/R ดี ✅ (≥2:1 เกณฑ์ core)"
+        },
+        "estimateDates": [
+          {
+            "event": "งบ Q3 2026",
+            "note": "บททดสอบแรกของ guide ใหม่ $9-10M"
+          },
+          {
+            "event": "การหาพาร์ตเนอร์แทน",
+            "note": "ไม่มีวัน · ชี้ชะตา thesis"
+          }
+        ]
+      },
+      "estimateDates": [
+        {
+          "event": "งบ Q3 2026 (เกิดแล้ว)",
+          "note": "รายได้ beat; เผาเงินหนัก"
+        }
+      ]
+    }
+  }
+}

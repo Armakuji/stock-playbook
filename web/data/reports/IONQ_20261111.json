@@ -1,0 +1,291 @@
+{
+  "ticker": "IONQ",
+  "companyName": "IonQ, Inc.",
+  "companyDescription": "Quantum computing · trapped-ion systems + networking/quantum-security rollup (Elisity pending) · FY26 revenue guide $280-290M, organic growth 132% · freshly recapitalized with a $2B equity raise",
+  "exchange": "NYSE",
+  "generatedAt": "2026-11-11T12:00:00.000Z",
+  "price": 34.99,
+  "priceChange": -0.99,
+  "priceNote": "Live $34.99 on Nov 11, 2026. The prior report (Oct 26) used $30.15, a +16.1% drift. The Nov 5 Q3 catalyst has resolved.",
+  "marketCap": "~$12.9B",
+  "sector": "Technology / Quantum Computing",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 0,
+  "summary": "RESOLVED (Q3, Nov 5) — a beat-and-raise. Revenue was $173.8M (+336% y/y, including $83.5M from SkyWater; the core platform was $90.3M, +127%) vs ~$141M est. The FY26 guide was raised to $505–515M from $450–460M, and RPO is $1.2B. The stock reacted -10% on the day, then +18% the next. Watch the dilution: $1.15B all-stock Elisity deal plus a $2.0B equity raise (Oct 16), for $3.7B pro-forma cash. With no dated catalyst left, the report goes post-stage. Core Base bias +23.7pp vs realized 14d P75 +6.6%, so Base is a multi-week horizon, not a 14-day call.",
+  "catalysts": [
+    {
+      "icon": "✅",
+      "name": "Q3 2026 earnings — RESOLVED (beat & raise)",
+      "description": "Rev $173.8M vs ~$141M; FY26 guide $505–515M; RPO $1.2B.",
+      "urgencyLabel": "DONE",
+      "dateBadge": "Nov 5, 2026",
+      "catalystDate": "2026-11-05",
+      "badgeColor": "green",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "🔐",
+      "name": "Elisity acquisition close ($1.15B stock)",
+      "description": "Zero-trust security acquisition; dilutive.",
+      "urgencyLabel": "Q4",
+      "dateBadge": "~Q4 2026",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Dilution: the $2B raise (20.5M shares + 29.5M pre-funded warrants) plus 100M seven-year warrants at $69.46 and Elisity's all-stock consideration expand the share count materially; growth must outrun it.",
+    "Sell-the-news history: IONQ fell ~4% on its Aug 2026 beat-and-raise; a beat alone may not be enough.",
+    "Still deeply loss-making (TTM net loss ~$1.36B incl. non-cash items) — valuation rests on long-dated quantum adoption.",
+    "Integration risk from serial M&A (Elisity on top of prior networking/security acquisitions).",
+    "High beta to yields and to quantum-peer sentiment (RGTI, QBTS moved in sympathy with the raise)."
+  ],
+  "estimateDates": [
+    {
+      "event": "Q3 2026 earnings (realized)",
+      "dateRange": "Nov 5, 2026",
+      "note": "Beat & raise",
+      "est": "Done",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -35.38,
+      "price": 22.61
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 3.4,
+      "price": 36.18
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 24.95,
+      "price": 43.72
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 80.94,
+      "price": 63.31
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus (14 analysts, stockanalysis.com)",
+      "target": 64.06,
+      "rating": "Strong Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "The Fed held at 3.75–4.00% on Oct 28. After the hot Oct CPI on Nov 10, CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~89–100%, with ~10% odds of 50bp. The 10-year is ~4.98%.",
+    "inflationNote": "Oct CPI: headline +0.4% m/m, core +0.3% m/m vs 0.2% expected. Sep core PCE 3.1% y/y. Oct PCE (Nov 25) and Nov CPI (Dec 10) are next.",
+    "sectorImpact": "Now well-capitalized after the $2B raise, so financing risk is low. But quantum is among the highest-beta, longest-duration growth trades, and it sold off with yields in October.",
+    "summary": "MEDIUM — a 25bp December hike is priced after the hot CPI. The tails are a 50bp move or a hot Nov 25 PCE, both of which hit small caps first, so the dip entry is preferred."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 34.99,
+        "note": "Current price — starter only. Not preferred: core at-catalyst median -6.9% (n=54)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 31.33,
+        "rangeMax": 33.08,
+        "note": "Pre-earnings dip zone — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 30.06,
+        "note": "52-week low ($25.89)",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 36.18,
+      "pct": 3.4,
+      "note": "Base — clean Q3 beat and reaffirmed guide; re-rates toward the $36 area (still below the $40 raise price). Horizon ~1-3 months."
+    },
+    "tp2": {
+      "price": 43.72,
+      "pct": 24.95,
+      "note": "Bull — guide raised plus margin expansion; ~$43.70."
+    },
+    "tp3": {
+      "price": 63.31,
+      "pct": 80.94,
+      "note": "Moon — quantum-networking/security platform re-rated as recurring software; ~$63, at the $64 consensus. 12-month thesis.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 29.74,
+      "tightPct": -15,
+      "tightNote": "-15% — wider than the core medianMAE (-14%); overall figure applies.",
+      "hard": 26.24,
+      "hardPct": -25.01,
+      "hardNote": "-25% — breaks the 52-week low decisively; the thesis is wrong.",
+      "riskReward": "1.7 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "⚠️ Below 2:1 (1.7:1)"
+    },
+    "verdict": "BUY on dips only — a beat-and-raise has resolved the catalyst. Treat it as a post-event hold, not a fresh catalyst play. Measured core at-catalyst median is -6.9% (n=54), so Entry 2 is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Reverse run-up: IONQ fell from $34.78 to ~$30 after the Oct 9 Elisity deal and Oct 14 $2B raise, taking out the usual pre-print drift.",
+    "preRunupTiming": "Last 1-2 weeks before Nov 5",
+    "preRunupPct": "-13% since Oct 13",
+    "postWin": {
+      "avgPct": 15,
+      "range": "+14.8% to +15.5%",
+      "note": "Average of two Aug 2026 day-1 beat reactions in adjacent high-beta AI-infra names: CRWV +15.5% (margin beat) and OKLO +14.8% (milestone beat).",
+      "exampleDate": "Aug 2026"
+    },
+    "postLose": {
+      "avgPct": -7,
+      "range": "-4.3% to -10%",
+      "note": "Average of IONQ's own Aug 5, 2026 reaction (-4.3% on a beat with a cautious guide) and MRVL's Aug 28, 2026 sell-the-news (-10%).",
+      "exampleDate": "Aug 2026"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "4%. earnings_beat is the largest core bucket (n=42, +1.8pp median excess vs +1.4pp overall, softHit 7.1%) — no tier-2 penalty, but no edge either. The fresh $2B raise removes survival risk but adds ~15%+ dilution plus 100M warrants struck at $69.46."
+    },
+    "stopPreCatalyst": {
+      "pct": -15,
+      "price": 29.74,
+      "note": "Wider than the earnings_beat medianMAE (-9.6%, n=42). A break below ~$25.90 (the 52-week low) before Nov 5 means the dilution narrative is winning."
+    },
+    "stopPostCatalyst": {
+      "pct": -15,
+      "note": "If Q3 cuts the FY26 guide or margins compress again, exit within 1-2 sessions."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "IONQ",
+      "event": "Q2 2026 earnings — revenue $80M (+287%) beat, FY guide raised to $280-290M",
+      "date": "Aug 2026",
+      "movePct": -4.3,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "Even a large beat with a raised guide sold off ~4% on margin and guidance-caution concerns. Quantum names need a clean beat on both lines."
+    },
+    {
+      "ticker": "CRWV",
+      "event": "Q2 2026 earnings — adj. operating income ~2x guided midpoint, FY guide raised",
+      "date": "Aug 2026",
+      "movePct": 15.5,
+      "days": 1,
+      "outcome": "good",
+      "note": "A margin beat (not just revenue) re-rated an AI-infra name +15.5% even in a debt-skeptical tape. The upside template for a clean beat-and-raise."
+    },
+    {
+      "ticker": "MRVL",
+      "event": "Q2 FY27 earnings — beat + raised FY27 to ~$12B, FY28 ~$18B",
+      "date": "Aug 2026",
+      "movePct": -10,
+      "days": 1,
+      "outcome": "bad",
+      "note": "A beat-and-raise that still fell ~10% because positioning wanted more. The sell-the-news template for crowded AI names."
+    }
+  ],
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/0001824920/000119312526449779/ionq-ex99_1.htm",
+    "https://fool.com/investing/2026/11/06/why-ionq-stock-is-soaring-today",
+    "https://stockanalysis.com/stocks/ionq/",
+    "https://www.stocktitan.net/news/IONQ/ion-q-to-report-third-quarter-2026-financial-results-on-november-5-vwy51orwf1yu.html",
+    "https://investors.ionq.com/news/news-details/2026/IonQ-Announces-Pricing-of-2-0-Billion-Equity-Offering/default.aspx",
+    "https://www.sec.gov/Archives/edgar/data/0001824920/000119312526419609/ionq-20261009.htm",
+    "https://247wallst.com/investing/2026/10/14/ionq-falls-6-as-2b-equity-offering-follows-1-3b-elisity-stock-deal-d-wave-and-rigetti-retreat-4/",
+    "https://www.marketbeat.com/earnings/reports/2026-8-5-ionq-inc-stock/",
+    "https://www.indmoney.com/blog/us-stocks/crwv-stock-jumps-coreweave-q2-earnings-analysis",
+    "https://finviz.com/news/386694/marvell-mrvl-stock-falls-10-after-q2-earnings-buy-the-dip",
+    "https://www.benzinga.com/quote/oklo/earnings",
+    "https://www.chase.com/personal/investments/learning-and-insights/article/will-the-federal-reserve-hike-rates-at-october-2026-fomc-meeting",
+    "https://defirate.com/prediction-markets/fed-decision-odds/",
+    "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+    "https://www.investing.com/news/economy-news/fed-rate-hike-odds-in-december-at-88-after-hot-cpi-cme-fedwatch-5017585"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "ผ่าน catalyst แล้ว (Q3, 5 พ.ย.) — beat-and-raise รายได้ $173.8M (+336% y/y รวม SkyWater $83.5M; platform หลัก $90.3M, +127%) เทียบคาด ~$141M ปรับเป้าปี 2026 เป็น $505–515M จาก $450–460M RPO $1.2B หุ้นลง -10% ในวันนั้นแล้วขึ้น +18% วันถัดมา ระวังการเจือจางหุ้น: ซื้อ Elisity $1.15B ด้วยหุ้นทั้งหมด + เพิ่มทุน $2.0B (16 ต.ค.) เงินสด pro-forma $3.7B ไม่มี catalyst ที่มีวันเหลือ รายงานจึงเข้าสู่ post-stage bias ของ Base ใน core +23.7pp เทียบ P75 14 วันจริง +6.6% Base จึงเป็นกรอบหลายสัปดาห์ ไม่ใช่คาด 14 วัน",
+      "priceNote": "ราคาสด $34.99 11 พ.ย. 2026 รายงานก่อนหน้า (26 ต.ค.) ใช้ $30.15 drift +16.1% catalyst งบ Q3 วันที่ 5 พ.ย. ผ่านไปแล้ว",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        {
+          "name": "งบ Q3 2026 — ผ่านแล้ว (beat & raise)",
+          "description": "รายได้ $173.8M เทียบคาด ~$141M; เป้าปี 2026 $505–515M; RPO $1.2B"
+        },
+        {
+          "name": "ปิดดีลซื้อ Elisity ($1.15B ด้วยหุ้น)",
+          "description": "ซื้อกิจการความปลอดภัย zero-trust; เจือจางหุ้น"
+        }
+      ],
+      "risks": [
+        "Dilution: เพิ่มทุน $2B (20.5M หุ้น + pre-funded warrant 29.5M) บวก warrant 7 ปี 100M หุ้นที่ $69.46 และการจ่ายหุ้นซื้อ Elisity ทำให้จำนวนหุ้นเพิ่มมาก การเติบโตต้องแซงให้ได้",
+        "ประวัติ sell-the-news: IONQ ลง ~4% หลังงบ ส.ค. 2026 ที่ดีกว่าคาดและปรับเป้าขึ้น ชนะอย่างเดียวอาจไม่พอ",
+        "ยังขาดทุนหนัก (TTM ~$1.36B รวมรายการไม่ใช่เงินสด) มูลค่าขึ้นกับการใช้ควอนตัมในระยะยาว",
+        "ความเสี่ยงการรวมกิจการจาก M&A ต่อเนื่อง (Elisity ต่อจากดีลเครือข่าย/ความปลอดภัยก่อนหน้า)",
+        "beta สูงต่ออัตราผลตอบแทนและ sentiment หุ้นควอนตัมกลุ่มเดียวกัน (RGTI, QBTS ร่วงตามการเพิ่มทุน)"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.75–4.00% เมื่อ 28 ต.ค. หลัง CPI ต.ค. ออกมาร้อน (10 พ.ย.) CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ราว 89–100% และโอกาสขึ้น 50bp ~10% ส่วน yield 10 ปีอยู่ ~4.98%",
+        "inflationNote": "CPI ต.ค.: headline +0.4% m/m, core +0.3% m/m (คาด 0.2%) core PCE ก.ย. 3.1% y/y ตัวถัดไปคือ PCE ต.ค. (25 พ.ย.) และ CPI พ.ย. (10 ธ.ค.)",
+        "sectorImpact": "หลังเพิ่มทุน $2B เงินทุนแข็งแรง ความเสี่ยงด้านการระดมทุนต่ำ แต่ควอนตัมเป็นหุ้นเติบโต beta สูงและ duration ยาวที่สุดกลุ่มหนึ่ง และถูกขายตามอัตราผลตอบแทนพันธบัตรในเดือน ต.ค.",
+        "summary": "MEDIUM — ตลาดรับการขึ้นดอกเบี้ย 25bp ใน ธ.ค. แล้วหลัง CPI ร้อน ความเสี่ยงหางคือขึ้น 50bp หรือ PCE 25 พ.ย. ร้อน ซึ่งกระทบหุ้นเล็กก่อน จึงควรรอเข้าตอนย่อ"
+      },
+      "entryStrategy": {
+        "verdict": "BUY เฉพาะตอนย่อ — binary ผ่านไปแบบ beat-and-raise ถือเป็นการถือหลัง event ไม่ใช่ catalyst play ใหม่ median ถึงวัน catalyst ของ core -6.9% (n=54) จึงเข้าที่ Entry 2 เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ core -6.9% (n=54)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "โซนย่อก่อนงบ — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "52-week low ($25.89)",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — Q3 ดีกว่าคาดชัดและยืนยันเป้า re-rate ไปแถว $36 (ยังต่ำกว่าราคาเพิ่มทุน $40) กรอบ ~1-3 เดือน"
+        },
+        "tp2": {
+          "note": "Bull — ปรับเป้าขึ้น + margin ขยาย ~$43.70"
+        },
+        "tp3": {
+          "note": "Moon — แพลตฟอร์มเครือข่าย/ความปลอดภัยควอนตัมถูก re-rate เป็นซอฟต์แวร์รายได้ต่อเนื่อง ~$63 เท่าเป้าเฉลี่ย $64 thesis 12 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-15% — กว้างกว่า medianMAE ของ core (-14%)",
+          "hardNote": "-25% — หลุด 52-week low ชัดเจน thesis ผิด",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "⚠️ ต่ำกว่า 2:1 (1.7:1)"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "งบ Q3 2026 (เกิดแล้ว)",
+          "note": "beat & raise"
+        }
+      ]
+    }
+  }
+}

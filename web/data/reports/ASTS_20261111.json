@@ -1,0 +1,320 @@
+{
+  "ticker": "ASTS",
+  "companyName": "AST SpaceMobile, Inc.",
+  "companyDescription": "Direct-to-smartphone satellite broadband · BlueBird constellation now 13 birds up, production through satellite 42 — building a space-based cellular network standard phones can already use",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-11T12:00:00.000Z",
+  "price": 33.69,
+  "priceChange": -8.67,
+  "priceNote": "Live $33.69 on Nov 11, 2026. The prior report (Aug 13) used $74.31, a -54.7% drift over 90 days. The J-LEO (Sep 15) catalyst date has passed.",
+  "marketCap": "$28.8B",
+  "sector": "Technology / Space / Telecom",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 58,
+  "summary": "⚠️ THESIS BROKEN — the Aug 13 report assumed a ~Sep 15 Japan J-LEO award and a smooth constellation scale-up at $74. The stock is now $33.69 (-55%). The J-LEO outcome was not verified in this refresh, and the old framing is void. Q3 2026 revenue was $42.3M (+187% y/y) but missed ~$46M consensus, the GAAP net loss widened to $132.4M, and net long-term debt nearly doubled to $4.1B (from $2.2B at YE25). New commitments include ~$900M for the Firefly Blacklift rocket program and Rakuten JV funding; cash is $3.2B. The FY26 revenue guide of $150–200M was kept. Sizing is cut 3% → 1%, and the report goes post-stage. Core Base bias +23.7pp vs realized 14d P75 +6.6%, so Base is a multi-week horizon, not a 14-day call.",
+  "catalysts": [
+    {
+      "icon": "❌",
+      "name": "Q3 2026 earnings — RESOLVED (revenue miss)",
+      "description": "Rev $42.3M vs ~$46M; debt $4.1B; FY26 guide $150–200M kept.",
+      "urgencyLabel": "DONE",
+      "dateBadge": "Q3 2026 (reported)",
+      "catalystDate": "2026-11-10",
+      "badgeColor": "red",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "❓",
+      "name": "Japan J-LEO award — date passed (outcome unverified)",
+      "description": "Guided ~Sep 15; outcome not verified in this refresh.",
+      "urgencyLabel": "DONE",
+      "dateBadge": "Sep 15, 2026",
+      "catalystDate": "2026-09-15",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "$28.8B market cap against $31.5M of quarterly revenue — valuation is the dominant risk now that launch execution has largely de-risked",
+    "2026 guidance of $150-200M means the multiple depends entirely on 2027+ subscriber economics that do not yet exist",
+    "Capital intensity is relentless: the company raised $1.15B in convertible notes in Jul 2026 and the stock fell 13% on that announcement — further raises are likely and the market has shown how it reacts",
+    "The Japan J-LEO award has no published decision date; treating it as a near-term catalyst is a mistake this report deliberately corrects",
+    "Prior report is superseded on ranking as well as price: its 'Q3 2026' estimateDates entry parsed to Aug 15 and pushed ASTS to rank 3 on a board where its real next event is roughly a month out"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q3 2026 earnings (realized)",
+      "dateRange": "Nov 10, 2026",
+      "note": "Rev miss; debt up",
+      "est": "Done",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -40.01,
+      "price": 20.21
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 24.99,
+      "price": 42.11
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 79.99,
+      "price": 60.64
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 150.01,
+      "price": 84.23
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus",
+      "target": 83.32,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Street high (post-launch upgrades)",
+      "target": 115,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Piper Sandler",
+      "target": 100,
+      "rating": "Overweight"
+    },
+    {
+      "firm": "Fair-value estimate",
+      "target": 71.51,
+      "rating": "Hold",
+      "note": "Intrinsic-value read below the current price — the bear-side anchor"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "The Fed held at 3.75–4.00% on Oct 28. After the hot Oct CPI on Nov 10, CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~89–100%, with ~10% odds of 50bp. The 10-year is ~4.98%.",
+    "inflationNote": "Oct CPI: headline +0.4% m/m, core +0.3% m/m vs 0.2% expected. Sep core PCE 3.1% y/y. Oct PCE (Nov 25) and Nov CPI (Dec 10) are next.",
+    "sectorImpact": "ASTS is the definition of a long-duration asset: no meaningful current cash flow, a constellation funded by convertible debt, and terminal value doing all the work. Rate moves hit this harder than almost anything else on the board, and the Jul 2026 convert raise makes financing conditions a live variable rather than a background one.",
+    "summary": "MEDIUM — a 25bp December hike is priced after the hot CPI. The tails are a 50bp move or a hot Nov 25 PCE, both of which hit small caps first, so the dip entry is preferred."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 33.69,
+        "note": "Current price — starter only. Not preferred: core at-catalyst median -6.9% (n=54)",
+        "timing": "Not preferred"
+      },
+      {
+        "label": "Entry 2",
+        "level": 28.11,
+        "rangeMax": 29.92,
+        "note": "Give back the post-launch move; near where the last report was written",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 24.94,
+        "note": "Convert-raise style flush — the Jul 2026 -13% reaction is the template",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 42.11,
+      "pct": 24.99,
+      "note": "Consensus — launch success and guidance reaffirmed get priced"
+    },
+    "tp2": {
+      "price": 60.64,
+      "pct": 79.99,
+      "note": "Toward Piper's $100 handle on constellation cadence holding"
+    },
+    "tp3": {
+      "price": 84.23,
+      "pct": 150.01,
+      "note": "Street high on J-LEO award plus commercial beta · 2027",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 28.64,
+      "tightPct": -14.99,
+      "tightNote": "-15% — wider than the core medianMAE (-14%); overall figure applies.",
+      "hard": 23.58,
+      "hardPct": -30.01,
+      "hardNote": "Below the deep-dip shelf; would imply the financing window is closing",
+      "riskReward": "5.3 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Good R/R ✅ (≥2:1 core bar)"
+    },
+    "verdict": "⚠️ THESIS BROKEN — SPECULATIVE 1% max. The old J-LEO/scale-up framing is void; re-underwrite before adding. Measured core at-catalyst median is -6.9% (n=54), so Entry 2 is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "satellite_launch",
+    "preRunup": "The run already happened: +17.0% in the nine days spanning the Aug 5 launch and the Q2 print. Feedback prior note — satellite_launch is the current tier-2 LEADER (medianExcessVsBenchPct +7.4pp vs +1.4 overall, softHitRate 50%, n=8). Per the guardrail that is a mild tailwind for a pick that already stands on its own, NOT a reason to size up, and n=8 is a small sample.",
+    "preRunupTiming": "1-2 สัปดาห์ก่อน launch",
+    "preRunupPct": "+10% to +17%",
+    "postWin": {
+      "avgPct": 20,
+      "range": "+6% to +100%",
+      "note": "Range is genuinely wide because launch significance varies enormously. ASTS's own BlueBird 1 launch (Apr 2024) produced +100% because it proved the concept; incremental launches into an existing constellation are worth far less, which is why the Aug 5 launch moved the stock ~17% rather than double.",
+      "exampleDate": "Apr 2024"
+    },
+    "postLose": {
+      "avgPct": -20,
+      "range": "-13% to -30%",
+      "note": "For ASTS the realistic downside catalyst is financing, not launch failure: the Jul 2026 $1.15B convertible offering took the stock down 13% after hours. A launch anomaly would be worse.",
+      "exampleDate": "Jul 2026"
+    },
+    "spotSizing": {
+      "pct": 1,
+      "reason": "1% (cut from 3%). Thesis broken at -55%, debt nearly doubled, and the J-LEO outcome is unverified."
+    },
+    "stopPreCatalyst": {
+      "pct": -14.99,
+      "price": 28.64,
+      "note": "Wider than the measured -19.4% bucket MAE; a break here means the post-launch re-rating is fully unwinding"
+    },
+    "stopPostCatalyst": {
+      "pct": -25,
+      "note": "If the J-LEO award goes elsewhere, the Japan optionality leaves the model — trim rather than exit, since the thesis was never solely J-LEO"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "ASTS",
+      "event": "BlueBird 1 launch success + first direct-to-phone call",
+      "date": "Apr 2024",
+      "movePct": 100,
+      "days": 5,
+      "outcome": "good",
+      "note": "The concept-proving launch. Included as the upper bound and explicitly NOT the template for incremental launches — BlueBird 11/12/13 moved the stock roughly 17%, not 100%."
+    },
+    {
+      "ticker": "ASTS",
+      "event": "$1.15B convertible senior notes offering",
+      "date": "Jul 2026",
+      "movePct": -13,
+      "days": 1,
+      "outcome": "bad",
+      "note": "The realistic downside catalyst for this name. Capital intensity means more raises are coming, and this is how the market prices them."
+    },
+    {
+      "ticker": "IRDM",
+      "event": "Rocket Lab $8B acquisition announcement",
+      "date": "Jun 2026",
+      "movePct": 22,
+      "days": 2,
+      "outcome": "good",
+      "note": "Sector read-through: satellite communications assets are being valued strategically, which supports ASTS's terminal-value case independently of its own execution."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "AST SpaceMobile Announces Successful Orbital Launch of BlueBirds 11, 12, and 13",
+    "url": "https://www.businesswire.com/news/home/20260805761351/en/AST-SpaceMobile-Announces-Successful-Orbital-Launch-of-BlueBirds-11-12-and-13",
+    "date": "Aug 2026"
+  },
+  "sources": [
+    "https://www.panabee.com/news/ast-spacemobile-earnings-q3-2026",
+    "https://stocktwits.com/news-articles/markets/equity/ast-spacemobile-stock-tumbles-premarket-as-q3-losses-widen/cJ4FNSZRfu",
+    "https://goldesel.de/aktien/news/ast-spacemobile-aktie-umsatzprognose-bestatigt-q3-umsatz-verfehlt-erwartungen",
+    "https://www.businesswire.com/news/home/20260805761351/en/AST-SpaceMobile-Announces-Successful-Orbital-Launch-of-BlueBirds-11-12-and-13",
+    "https://www.businesswire.com/news/home/20260728125090/en/AST-SpaceMobile-Announces-Launch-Date-for-BlueBird-Satellites-11-12-and-13",
+    "https://stockanalysis.com/stocks/asts/",
+    "https://www.businesswire.com/news/home/20260721294685/en/AST-SpaceMobile-Announces-Completion-of-Private-Offering-of-$1.15-Billion-of-Convertible-Senior-Notes-Due-2034",
+    "https://www.cnbc.com/2026/06/29/rocket-lab-buys-iridium.html",
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+    "https://www.bls.gov/news.release/archives/cpi_08122026.htm",
+    "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+    "https://www.investing.com/news/economy-news/fed-rate-hike-odds-in-december-at-88-after-hot-cpi-cme-fedwatch-5017585"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "⚠️ THESIS พังแล้ว — รายงาน 13 ส.ค. สมมติว่าได้สัญญา J-LEO ของญี่ปุ่นราว 15 ก.ย. และการขยายกลุ่มดาวเทียมราบรื่นที่ราคา $74 ตอนนี้หุ้นอยู่ที่ $33.69 (-55%) ยังไม่ได้ยืนยันผล J-LEO ในการรีเฟรชนี้ กรอบคิดเดิมใช้ไม่ได้แล้ว รายได้ Q3 2026 $42.3M (+187% y/y) แต่พลาด consensus ~$46M ขาดทุนสุทธิ GAAP กว้างขึ้นเป็น $132.4M และหนี้ระยะยาวสุทธิเกือบเท่าตัวเป็น $4.1B (จาก $2.2B ณ สิ้นปี 2025) ภาระใหม่รวม ~$900M สำหรับโครงการจรวด Firefly Blacklift และเงินทุน JV กับ Rakuten เงินสด $3.2B ยังคงเป้ารายได้ปี 2026 $150–200M ลดขนาดจาก 3% → 1% รายงานเข้าสู่ post-stage bias ของ Base ใน core +23.7pp เทียบ P75 14 วันจริง +6.6% Base จึงเป็นกรอบหลายสัปดาห์ ไม่ใช่คาด 14 วัน",
+      "priceNote": "ราคาสด $33.69 11 พ.ย. 2026 รายงานก่อนหน้า (13 ส.ค.) ใช้ $74.31 drift -54.7% ใน 90 วัน วันของ catalyst J-LEO (15 ก.ย.) ผ่านไปแล้ว",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "งบ Q3 2026 — ผ่านแล้ว (รายได้พลาด)",
+          "description": "รายได้ $42.3M เทียบ ~$46M; หนี้ $4.1B; คงเป้าปี 2026 $150–200M"
+        },
+        {
+          "name": "สัญญา J-LEO ญี่ปุ่น — เลยวันแล้ว (ยังไม่ยืนยันผล)",
+          "description": "คาด ~15 ก.ย.; ยังไม่ยืนยันผลในการรีเฟรชนี้"
+        }
+      ],
+      "risks": [
+        "market cap $28.8B เทียบรายได้รายไตรมาส $31.5M — valuation คือความเสี่ยงหลักแล้ว หลัง execution การยิงจรวดลดความเสี่ยงลงไปมาก",
+        "guidance ปี 2026 ที่ $150-200M แปลว่า multiple ขึ้นกับเศรษฐศาสตร์ผู้ใช้ปี 2027+ ที่ยังไม่มีอยู่จริง",
+        "ใช้เงินทุนหนักต่อเนื่อง: ระดม convertible notes $1.15B เมื่อ ก.ค. 2026 และหุ้นร่วง 13% จากข่าวนั้น — มีโอกาสระดมทุนอีกและตลาดแสดงให้เห็นแล้วว่าจะตอบสนองอย่างไร",
+        "รางวัล J-LEO ญี่ปุ่นไม่มีวันตัดสินที่ประกาศไว้ · การนับเป็น catalyst ระยะใกล้คือความผิดพลาดที่รายงานฉบับนี้แก้ไขโดยตั้งใจ",
+        "รายงานฉบับก่อนถูกแทนที่ทั้งเรื่องราคาและเรื่อง ranking: entry 'Q3 2026' ใน estimateDates ถูกแปลงเป็น 15 ส.ค. ทำให้ ASTS ขึ้นไปอยู่อันดับ 3 บนกระดาน ทั้งที่ event จริงอยู่อีกราวหนึ่งเดือน"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.75–4.00% เมื่อ 28 ต.ค. หลัง CPI ต.ค. ออกมาร้อน (10 พ.ย.) CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ราว 89–100% และโอกาสขึ้น 50bp ~10% ส่วน yield 10 ปีอยู่ ~4.98%",
+        "inflationNote": "CPI ต.ค.: headline +0.4% m/m, core +0.3% m/m (คาด 0.2%) core PCE ก.ย. 3.1% y/y ตัวถัดไปคือ PCE ต.ค. (25 พ.ย.) และ CPI พ.ย. (10 ธ.ค.)",
+        "sectorImpact": "ASTS คือนิยามของสินทรัพย์ long-duration: ไม่มีกระแสเงินสดที่มีนัยตอนนี้ constellation ใช้หนี้แปลงสภาพเป็นทุน และ terminal value ทำงานทั้งหมด · การขยับของดอกเบี้ยกระทบตัวนี้แรงกว่าเกือบทุกตัวบนกระดาน และการระดม convert เมื่อ ก.ค. 2026 ทำให้เงื่อนไขการระดมทุนเป็นตัวแปรที่มีชีวิต ไม่ใช่ฉากหลัง",
+        "summary": "MEDIUM — ตลาดรับการขึ้นดอกเบี้ย 25bp ใน ธ.ค. แล้วหลัง CPI ร้อน ความเสี่ยงหางคือขึ้น 50bp หรือ PCE 25 พ.ย. ร้อน ซึ่งกระทบหุ้นเล็กก่อน จึงควรรอเข้าตอนย่อ"
+      },
+      "entryStrategy": {
+        "verdict": "⚠️ THESIS พังแล้ว — SPECULATIVE สูงสุด 1% กรอบ J-LEO/การขยายเดิมใช้ไม่ได้ ต้องประเมินใหม่ก่อนเพิ่ม median ถึงวัน catalyst ของ core -6.9% (n=54) จึงเข้าที่ Entry 2 เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ core -6.9% (n=54)",
+            "timing": "ไม่แนะนำ"
+          },
+          {
+            "note": "คืนการวิ่งหลัง launch · ใกล้ระดับที่รายงานก่อนเขียนไว้",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ย่อแบบตอนระดม convert — เคส -13% เมื่อ ก.ค. 2026 คือแม่แบบ",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "consensus — ตลาด price ความสำเร็จของ launch และการยืนยัน guidance"
+        },
+        "tp2": {
+          "note": "ไปทางกรอบ $100 ของ Piper ถ้าจังหวะการยิงยังคงที่"
+        },
+        "tp3": {
+          "note": "เป้าสูงสุดของ street ถ้าได้ J-LEO บวก commercial beta · 2027"
+        },
+        "stopLoss": {
+          "tightNote": "-15% — กว้างกว่า medianMAE ของ core (-14%)",
+          "hardNote": "ต่ำกว่าชั้นย่อลึก · แปลว่าหน้าต่างการระดมทุนกำลังปิด",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "R/R ดี ✅ (≥2:1 เกณฑ์ core)"
+        },
+        "estimateDates": [
+          {
+            "event": "การตัดสินรางวัล J-LEO ญี่ปุ่น",
+            "note": "ประมาณการภายใน Q3 — ยังไม่มีวันยืนยัน"
+          },
+          {
+            "event": "งบ Q3 2026",
+            "note": "งบแรกที่ทดสอบ guide ทั้งปี $150-200M"
+          }
+        ]
+      },
+      "estimateDates": [
+        {
+          "event": "งบ Q3 2026 (เกิดแล้ว)",
+          "note": "รายได้พลาด; หนี้เพิ่ม"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,311 @@
+{
+  "ticker": "RKLB",
+  "companyName": "Rocket Lab Corporation",
+  "companyDescription": "Launch + space systems · Electron/HASTE operational, Neutron debut targeted Q4 2026 · pending $8B Iridium acquisition (closing ~mid-2027) · Q2 2026 earnings land AFTER CLOSE today, Aug 10",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-11T12:00:00.000Z",
+  "price": 62.71,
+  "priceChange": 6.54,
+  "priceNote": "Live $62.71 on Nov 11, 2026. The prior report (Aug 10) used $85.30, a -26.5% drift over 93 days. Neutron's first launch has slipped to 2027.",
+  "marketCap": "~$37B",
+  "sector": "Industrials / Aerospace & Space Launch",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Speculative",
+  "score": 70,
+  "summary": "⚠️ THESIS BROKEN (timing) — the Aug 10 report dated Neutron's first launch as a Q4 2026 catalyst (2026-11-15). Per the Q3 2026 release coverage (secondary source; primary not retrieved), Neutron is now targeted for 2027, so the near-term binary is gone and that framing is void. Partial offsets: ~$515M of new Neutron contracts in Q3, 16 Neutron missions booked, and record backlog (~$3.6B). The $8B Iridium deal targets a mid-2027 close. The stock is -26.5% since Aug 10. At ~$37B cap, this is no longer a near-term catalyst play; the report goes post-stage. Core Base bias +23.7pp vs realized 14d P75 +6.6%, so Base is a multi-week horizon, not a 14-day call.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 2026 results — RESOLVED",
+      "description": "Record backlog (~$3.6B); $515M of new Neutron contracts; Neutron first launch moved to 2027.",
+      "urgencyLabel": "DONE",
+      "dateBadge": "Q3 2026 (reported)",
+      "catalystDate": "2026-11-10",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🚀",
+      "name": "Neutron first launch",
+      "description": "Slipped from Q4 2026 to 2027 (no date).",
+      "urgencyLabel": "SLIPPED",
+      "dateBadge": "~2027",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "🛰️",
+      "name": "Iridium acquisition ($8B) close",
+      "description": "Targets mid-2027.",
+      "urgencyLabel": "LONG",
+      "dateBadge": "~Mid-2027",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Earnings reactions cut both ways for this exact stock — a clean Q1 2026 beat sent RKLB +34%, but a Q4 2025 beat still triggered a -9.5% drop days later purely on Neutron-timeline news; after a 45.5% pre-earnings run into tonight's print, the bar for 'good enough' is higher than ever",
+    "Neutron has now slipped twice (originally early 2026, then Q1, now Q4 2026) — a real, repeatable pattern risk, and the new $397M SB-AMTI contract is explicitly tied to it, raising the cost of a third delay",
+    "Rich, pre-profit valuation — market cap has grown to ~$51B on a stock still guided to a net loss this quarter (EPS -$0.06 est.)",
+    "Extreme high-beta/sentiment-driven — the stock round-tripped roughly -61% then +45% within about a month on a mix of sector-wide and company-specific factors, showing how disconnected price action can be from any single data point",
+    "Iridium deal adds integration and dilution risk — $8B cash+stock transaction, new share issuance, and a long ~mid-2027 close mean execution risk stacks on top of the core launch business"
+  ],
+  "estimateDates": [
+    {
+      "event": "Neutron first launch",
+      "dateRange": "~2027",
+      "note": "Slipped from Q4 2026",
+      "est": "TBD",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -30,
+      "price": 43.9
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 20,
+      "price": 75.25
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 45,
+      "price": 90.93
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 80,
+      "price": 112.88
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "KGI Securities",
+      "target": 107,
+      "rating": "Outperform",
+      "note": "New upgrade, Aug 2026"
+    },
+    {
+      "firm": "Consensus (~17-21 analysts)",
+      "target": 111,
+      "rating": "Buy",
+      "note": "Carried from Aug 3 aggregation; upside compressed as price has since run"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "The Fed held at 3.75–4.00% on Oct 28. After the hot Oct CPI on Nov 10, CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~89–100%, with ~10% odds of 50bp. The 10-year is ~4.98%.",
+    "inflationNote": "Oct CPI: headline +0.4% m/m, core +0.3% m/m vs 0.2% expected. Sep core PCE 3.1% y/y. Oct PCE (Nov 25) and Nov CPI (Dec 10) are next.",
+    "sectorImpact": "HIGH — RKLB fell as much as 61% from its May peak on a sector-wide de-rating, then round-tripped +45% in under two weeks on contract wins. That swing shows sentiment, amplified by real news, is currently driving the tape more than any single fundamental data point.",
+    "summary": "MEDIUM — a 25bp December hike is priced after the hot CPI. The tails are a 50bp move or a hot Nov 25 PCE, both of which hit small caps first, so the dip entry is preferred."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 62.71,
+        "note": "Current price — starter only. Not preferred: core at-catalyst median -6.9% (n=54)",
+        "timing": "Now (aggressive only)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 49.99,
+        "rangeMax": 54.4,
+        "note": "Post-earnings pullback zone if the print doesn't clear the raised bar — best R/R",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 40.43,
+        "note": "Deep dip — approaching pre-rally levels, only on a Neutron slip or a broad macro/sector shock",
+        "timing": "Deep dip only"
+      }
+    ],
+    "tp1": {
+      "price": 75.25,
+      "pct": 20,
+      "note": "Base — clean Q2 beat, Neutron timeline holds at Q4 2026"
+    },
+    "tp2": {
+      "price": 90.93,
+      "pct": 45,
+      "note": "Bull — Q2 beat + raised guidance, stock reaches the KGI/consensus target zone"
+    },
+    "tp3": {
+      "price": 112.88,
+      "pct": 80,
+      "note": "Moon — Q2 beat + de-risked Neutron progress + Iridium-deal re-rate stacked together",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 53.3,
+      "tightPct": -15.01,
+      "tightNote": "-15% — wider than the core medianMAE (-14%); overall figure applies.",
+      "hard": 42.64,
+      "hardPct": -32,
+      "hardNote": "Back toward the Jul 29 low — deep macro/company-specific breach, thesis materially damaged",
+      "riskReward": "3.0 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Good R/R ✅ (≥2:1 core bar)"
+    },
+    "verdict": "⚠️ THESIS BROKEN (timing) — Neutron slipped to 2027. Not a near-term catalyst play; hold the core only. Measured core at-catalyst median is -6.9% (n=54), so Entry 2 is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "RKLB ran 45.5% in the two weeks before tonight's print on real contract-win news (HASTE, SB-AMTI) rather than pure earnings anticipation — an unusually large run-up that raises the bar for what counts as a 'good' result.",
+    "preRunupTiming": "1-2 weeks before the print, this cycle amplified by contract-win headlines",
+    "preRunupPct": "+45.5% this cycle (Jul 29 - Aug 10) — well above the historical norm, driven by news not just positioning",
+    "postWin": {
+      "avgPct": 34,
+      "range": "+16% to +34%",
+      "note": "RKLB's Q1 2026 beat (record $200.3M revenue) sent the stock up 34% intraday, the strongest same-company precedent. Its Feb 2026 Q4 2025 beat initially closed green before Neutron-delay news days later erased the gains.",
+      "exampleDate": "May 2026"
+    },
+    "postLose": {
+      "avgPct": -9.5,
+      "range": "-7% to -10%",
+      "note": "Q4 2025 results (Feb 26, 2026) beat on both revenue and EPS, but the accompanying Neutron delay to Q4 2026 drove a 9.5% single-day drop within days — roadmap/guidance risk has hurt this stock more than headline beat/miss outcomes.",
+      "exampleDate": "Feb 2026"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "2% (cut). The dated Neutron binary slipped to 2027."
+    },
+    "stopPreCatalyst": {
+      "pct": -15.01,
+      "price": 53.3,
+      "note": "Below the pre-run consolidation zone tonight/tomorrow = the 'sell the news' scenario materializing"
+    },
+    "stopPostCatalyst": {
+      "pct": -15,
+      "note": "If Q2 misses guidance or Neutron slips again past Q4 2026, exit within 2 sessions"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "RKLB",
+      "event": "Q1 2026 Earnings Beat — Record Revenue, Broke $100",
+      "date": "May 2026",
+      "movePct": 34,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company precedent for how RKLB reacts to a clean beat — the closest possible comp for tonight's Q2 print."
+    },
+    {
+      "ticker": "RKLB",
+      "event": "Q4 2025 Earnings Beat Overshadowed by Neutron Delay",
+      "date": "Feb 2026",
+      "movePct": -9.5,
+      "days": 2,
+      "outcome": "bad",
+      "note": "A clean revenue/EPS beat still led to a 9.5% drop days later once the Neutron delay was digested — shows guidance/roadmap risk can override a good print for this name, directly relevant given tonight's elevated bar."
+    },
+    {
+      "ticker": "MRVL",
+      "event": "FMS 2026 AI memory portfolio launch driving a same-day rally",
+      "date": "Aug 2026",
+      "movePct": 12.81,
+      "days": 1,
+      "outcome": "good",
+      "note": "Cross-sector reference for how a real, dated positive catalyst can move a stock that had already been digesting sector-wide news — a similar dynamic to RKLB's contract-driven run into tonight."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Rocket Lab Stock Up 41% From Its July Low: Can Q2 Clear a Sky-High Bar?",
+    "url": "https://www.benzinga.com/trading-ideas/movers/26/08/61081032/rocket-lab-stock-up-41-from-its-july-low-can-q2-clear-a-sky-high-bar",
+    "date": "Aug 2026"
+  },
+  "sources": [
+    "https://fourweekmba.com/ai-rocket-lab-backlog-hits-record-3-57b-after-1-2b-jump/",
+    "https://www.sec.gov/Archives/edgar/data/0001819994/000181999426000062/rklb-20260630.htm",
+    "https://www.stocktitan.net/news/RKLB/rocket-lab-announces-date-of-second-quarter-2026-financial-rmgj339cu2wx.html",
+    "https://www.benzinga.com/trading-ideas/movers/26/08/61081032/rocket-lab-stock-up-41-from-its-july-low-can-q2-clear-a-sky-high-bar",
+    "https://www.benzinga.com/trading-ideas/movers/26/08/61067802/rocket-lab-stock-is-gaining-monday-whats-going-on",
+    "https://www.timothysykes.com/news/rocket-lab-corporation-rklb-news-2026_08_10/",
+    "https://rocketlabcorp.com/updates/rocket-lab-to-acquire-iridium-in-historic-deal-creating-a-fully-vertically-integrated-space-powerhouse-primed-for-growth/",
+    "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+    "https://www.investing.com/news/economy-news/fed-rate-hike-odds-in-december-at-88-after-hot-cpi-cme-fedwatch-5017585"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "⚠️ THESIS พัง (เรื่องเวลา) — รายงาน 10 ส.ค. กำหนดการปล่อย Neutron ครั้งแรกเป็น catalyst ใน Q4 2026 (2026-11-15) แต่ตามข่าวงบ Q3 2026 (แหล่งรอง; ยังไม่ได้เอกสารต้นทาง) Neutron เลื่อนไปปี 2027 binary ระยะใกล้จึงหายไป กรอบคิดเดิมใช้ไม่ได้ ส่วนที่ช่วยชดเชย: สัญญา Neutron ใหม่ ~$515M ใน Q3, จองภารกิจ Neutron 16 ครั้ง และ backlog สูงสุดเป็นประวัติการณ์ (~$3.6B) ดีล Iridium $8B คาดปิดกลางปี 2027 หุ้น -26.5% ตั้งแต่ 10 ส.ค. ที่ cap ~$37B ไม่ใช่ catalyst play ระยะใกล้แล้ว รายงานเข้าสู่ post-stage bias ของ Base ใน core +23.7pp เทียบ P75 14 วันจริง +6.6% Base จึงเป็นกรอบหลายสัปดาห์ ไม่ใช่คาด 14 วัน",
+      "priceNote": "ราคาสด $62.71 11 พ.ย. 2026 รายงานก่อนหน้า (10 ส.ค.) ใช้ $85.30 drift -26.5% ใน 93 วัน การปล่อย Neutron ครั้งแรกเลื่อนไปปี 2027",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        {
+          "name": "งบ Q3 2026 — ผ่านแล้ว",
+          "description": "backlog สูงสุด (~$3.6B); สัญญา Neutron ใหม่ $515M; การปล่อยครั้งแรกเลื่อนเป็นปี 2027"
+        },
+        {
+          "name": "การปล่อย Neutron ครั้งแรก",
+          "description": "เลื่อนจาก Q4 2026 เป็นปี 2027 (ไม่มีวัน)"
+        },
+        {
+          "name": "ปิดดีลซื้อ Iridium ($8B)",
+          "description": "คาดกลางปี 2027"
+        }
+      ],
+      "risks": [
+        "Earnings reaction ได้ทั้งสองทางกับหุ้นตัวนี้ — Q1 beat หุ้น +34% แต่ Q4 beat ก็ยังร่วง -9.5% จากข่าว Neutron delay อย่างเดียว หลังวิ่งมาแล้ว 45.5% ก่อนผลคืนนี้ มาตรฐาน 'ดีพอ' สูงขึ้นกว่าที่เคย",
+        "Neutron เลื่อนมาแล้ว 2 ครั้ง สัญญา SB-AMTI $397M ใหม่ผูกกับมันโดยตรง เพิ่มต้นทุนถ้าเลื่อนอีกครั้ง",
+        "Valuation สูงยังไม่ทำกำไร — มูลค่าตลาดโตเป็น ~$51B บนหุ้นที่ยัง guide ขาดทุนไตรมาสนี้",
+        "High-beta สุดขั้ว — ร่วง 61% แล้ว round-trip ขึ้น 45% ในเวลาราวเดือนเดียว จากปัจจัยผสมทั้ง sector และบริษัท",
+        "ดีล Iridium เพิ่มความเสี่ยง integration + dilution — ออกหุ้นใหม่ ปิดดีลช้าถึงกลางปี 2027"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.75–4.00% เมื่อ 28 ต.ค. หลัง CPI ต.ค. ออกมาร้อน (10 พ.ย.) CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ราว 89–100% และโอกาสขึ้น 50bp ~10% ส่วน yield 10 ปีอยู่ ~4.98%",
+        "inflationNote": "CPI ต.ค.: headline +0.4% m/m, core +0.3% m/m (คาด 0.2%) core PCE ก.ย. 3.1% y/y ตัวถัดไปคือ PCE ต.ค. (25 พ.ย.) และ CPI พ.ย. (10 ธ.ค.)",
+        "sectorImpact": "สูง — RKLB ร่วงสูงสุด 61% จาก sector de-rating แล้ว round-trip ขึ้น 45% ในเวลาไม่ถึง 2 สัปดาห์จากสัญญาจริง แสดงว่า sentiment ที่ขยายด้วยข่าวจริงกำลังขับราคาอยู่ตอนนี้",
+        "summary": "MEDIUM — ตลาดรับการขึ้นดอกเบี้ย 25bp ใน ธ.ค. แล้วหลัง CPI ร้อน ความเสี่ยงหางคือขึ้น 50bp หรือ PCE 25 พ.ย. ร้อน ซึ่งกระทบหุ้นเล็กก่อน จึงควรรอเข้าตอนย่อ"
+      },
+      "entryStrategy": {
+        "verdict": "⚠️ THESIS พัง (เรื่องเวลา) — Neutron เลื่อนไปปี 2027 ไม่ใช่ catalyst play ระยะใกล้ ถือแค่ส่วนหลัก median ถึงวัน catalyst ของ core -6.9% (n=54) จึงเข้าที่ Entry 2 เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ core -6.9% (n=54)",
+            "timing": "ตอนนี้ (aggressive เท่านั้น)"
+          },
+          {
+            "note": "โซนย่อหลังผลประกอบการถ้าผลไม่ผ่านมาตรฐานที่สูงขึ้น — R/R ดีที่สุด",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ร่วงลึกกลับสู่ระดับก่อนวิ่ง — เฉพาะกรณี Neutron เลื่อนหรือ macro shock",
+            "timing": "Deep dip only"
+          }
+        ],
+        "tp1": {
+          "note": "Base — Q2 beat สะอาด Neutron timeline ยังยืน Q4 2026"
+        },
+        "tp2": {
+          "note": "Bull — Q2 beat + guide ขึ้น แตะโซนเป้า KGI/consensus"
+        },
+        "tp3": {
+          "note": "Moon — Q2 beat + Neutron progress + ดีล Iridium re-rate พร้อมกัน",
+          "moon": true
+        },
+        "stopLoss": {
+          "tightNote": "-15% — กว้างกว่า medianMAE ของ core (-14%)",
+          "hardNote": "กลับสู่ระดับต่ำ 29 ก.ค. = thesis เสียหายจริง",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "R/R ดี ✅ (≥2:1 เกณฑ์ core)"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "ปล่อย Neutron ครั้งแรก",
+          "note": "เลื่อนจาก Q4 2026"
+        }
+      ]
+    }
+  }
+}
