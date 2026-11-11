@@ -1,0 +1,280 @@
+{
+  "ticker": "AVGO",
+  "companyName": "Broadcom Inc.",
+  "companyDescription": "Custom AI accelerators (XPU) + AI networking (Tomahawk/Jericho) + VMware — the custom-ASIC leader; Q4 guide $34.8B (+93% y/y)",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-11T11:30:00.000Z",
+  "price": 331.98,
+  "priceChange": 3.91,
+  "priceNote": "Live $331.98 on Nov 11, 2026, ~33% below its $495 52-week high (low $289.77) after the Nov 5 AI-chip selloff. FQ4 2026 results are Dec 9 after the close (company-confirmed), the same day as the FOMC decision.",
+  "marketCap": "~$1.56T",
+  "sector": "Technology / Semiconductors",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 0,
+  "summary": "AVGO reports FQ4 and FY2026 on Dec 9 after the close (company-confirmed). Q4 revenue is guided to ~$34.8B (+93% y/y), and EPS consensus is ~$3.82–3.83. The stock is ~33% off its high on AI-trade unwind fears, not company news. Consensus targets of ~$530 (47 Buy / 3 Hold) imply ~+60%, well past the 20% gate. Mega-cap self-check: Dec 2024 showed AVGO can add +24% in one session on an AI outlook. Caveat: the print lands on FOMC day (Dec 9), so the macro and company binaries stack. The catalyst is 28 days out, outside the 14-day North Star window, so a backtest miss there is a horizon artifact. Core Base bias is +23.7pp vs realized 14d P75 +6.6%, so Base is a ~4–8 week post-earnings re-rating horizon, not a 14-day call. Size 5–7%.",
+  "catalysts": [
+    {
+      "icon": "⚡",
+      "name": "FQ4 / FY2026 earnings — AI revenue + FY27 outlook",
+      "description": "Company-confirmed Dec 9, 2026 after the close (2pm PT call). Q4 guide ~$34.8B (+93% y/y); EPS consensus ~$3.82. The FY27 AI SAM/backlog commentary is the swing factor. Same day as the FOMC decision.",
+      "urgencyLabel": "28 DAYS",
+      "dateBadge": "Dec 9, 2026",
+      "catalystDate": "2026-12-09",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Event stacking: earnings and FOMC on the same day (Dec 9), and Nov CPI the next morning. Even a good print can be swamped by a 50bp surprise.",
+    "Customer concentration in custom XPUs (a handful of hyperscalers). Any capex pause is magnified.",
+    "Political: data-center regulation fears hit the whole AI-infrastructure complex.",
+    "Mega-cap math: +20% means adding ~$300B of value, so it needs a genuinely narrative-changing outlook."
+  ],
+  "estimateDates": [
+    {
+      "event": "FQ4 / FY2026 earnings",
+      "dateRange": "Dec 9, 2026",
+      "note": "Q4 guide ~$34.8B; same day as FOMC",
+      "est": "Cons. EPS $3.82",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -14.15,
+      "price": 285
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 18.98,
+      "price": 395
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 35.55,
+      "price": 450
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 59.65,
+      "price": 530
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus (51 analysts)",
+      "target": 533.42,
+      "rating": "Strong Buy"
+    },
+    {
+      "firm": "Consensus (47 Buy / 3 Hold)",
+      "target": 530.14,
+      "rating": "Buy"
+    },
+    {
+      "firm": "24/7 Wall St. 12-month",
+      "target": 405.37,
+      "rating": "—"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "The Fed held at 3.75–4.00% on Oct 28. After the hot Oct CPI on Nov 10, CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~89–100%, with ~10% odds of 50bp. The 10-year is ~4.98%.",
+    "inflationNote": "Oct CPI: headline +0.4% m/m, core +0.3% m/m vs 0.2% expected. Sep core PCE was 3.1% y/y. Oct PCE on Nov 25 is the next print, then Nov CPI on Dec 10, the day after FOMC.",
+    "sectorImpact": "AI semis are the epicenter of the Nov 5 selloff (SOX -9–12% on midterm data-center-regulation fears) and are rate-sensitive long-duration equities; a 50bp December surprise would extend the de-rating.",
+    "summary": "MEDIUM-HIGH for timing — the print lands on FOMC day with CPI the next morning. Build the position before Dec 9 on dips, but do not add the day of the event."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 331.98,
+        "note": "Current price — starter only. Not preferred: core at-catalyst median -6.9% (n=54)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 305,
+        "rangeMax": 318,
+        "note": "Retest of the $290–320 support zone into PCE — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 292,
+        "note": "At the $289.77 52-week low",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 395,
+      "pct": 18.98,
+      "note": "Base — AI outlook holds; ~$395. Horizon 4–8 weeks."
+    },
+    "tp2": {
+      "price": 450,
+      "pct": 35.55,
+      "note": "Bull — FY27 AI revenue raised; ~$450."
+    },
+    "tp3": {
+      "price": 530,
+      "pct": 59.65,
+      "note": "Moon — back to the ~$530 consensus. 6–12 months.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 282,
+      "tightPct": -15.06,
+      "tightNote": "-15% — wider than the core medianMAE (-14%) — overall core figure applies.",
+      "hard": 250,
+      "hardPct": -24.69,
+      "hardNote": "-25% — an AI outlook cut or a hyperscaler program loss.",
+      "riskReward": "2.4 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Good R/R ✅ (≥2:1 core bar)"
+    },
+    "verdict": "BUY (scale in) — the custom-ASIC leader ~33% off its high into a company-confirmed print with ~+60% to consensus. Respect the FOMC-day stack. Measured core at-catalyst median is -6.9% (n=54; 74% of picks underwater at their event), so Entry 2 is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "AVGO historically firms into its December print on AI-SAM anticipation (Dec 2024). This cycle it will also trade off NVDA (Nov 17) and MRVL (Dec 1) read-throughs first.",
+    "preRunupTiming": "1–3 weeks before Dec 9",
+    "preRunupPct": "flat past 5 sessions",
+    "postWin": {
+      "avgPct": 24,
+      "range": "+11% to +24%",
+      "note": "Dec 2024: AVGO +24% (closing) on FQ4 with AI revenue +220% and a $60–90B FY27 AI SAM, crossing $1T market cap.",
+      "exampleDate": "Dec 13, 2024"
+    },
+    "postLose": {
+      "avgPct": -7,
+      "range": "-3% to -10%",
+      "note": "Template from NVDA Aug 2024: a beat with a guide below the whisper fades ~6–7%.",
+      "exampleDate": "Aug 29, 2024 (NVDA)"
+    },
+    "spotSizing": {
+      "pct": 6,
+      "reason": "6%. A quality mega-cap with a confirmed date; earnings_beat is not a Tier-2 laggard. Trimmed from a full weight because of the FOMC-day event stack."
+    },
+    "stopPreCatalyst": {
+      "pct": -15.06,
+      "price": 282,
+      "note": "At -15%, wider than the core medianMAE (-14%). A close below ~$282 breaks the $290 52-week low."
+    },
+    "stopPostCatalyst": {
+      "pct": -10,
+      "note": "If the FY27 AI outlook is cut, exit on day 1."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "AVGO",
+      "event": "FQ4 2024 beat + AI SAM outlook",
+      "date": "Dec 2024",
+      "movePct": 24,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same company, same seasonal print. The upside template."
+    },
+    {
+      "ticker": "MRVL",
+      "event": "Custom-AI guide beat",
+      "date": "Dec 2024",
+      "movePct": 23,
+      "days": 1,
+      "outcome": "good",
+      "note": "Custom-ASIC peer. MRVL prints Dec 1, a week ahead of AVGO this cycle."
+    },
+    {
+      "ticker": "NVDA",
+      "event": "Beat, guide below whisper",
+      "date": "Aug 2024",
+      "movePct": -7,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Downside template for an AI semi."
+    }
+  ],
+  "sources": [
+    "https://www.stocktitan.net/news/AVGO/broadcom-inc-to-announce-fourth-quarter-and-fiscal-year-2026-4dl464vxvr5e.html",
+    "https://www.stocktitan.net/sec-filings/AVGO/8-k-broadcom-inc-reports-material-event-f19c72b0f907.html",
+    "https://247wallst.com/investing/2026/11/05/broadcom-stock-could-be-approaching-a-major-turning-point-heres-the-price-target/",
+    "https://www.marketbeat.com/stocks/NASDAQ/AVGO/earnings/",
+    "https://test.gurufocus.com/news/2633264/broadcom-surges-24-hits-1-trillion-market-cap-amid-ai-boom",
+    "https://www.fool.com/investing/2024/12/04/why-marvell-technology-stock-was-soaring-today",
+    "https://thelogic.co/briefing/nvidias-stock-drops-despite-exceeding-q2-earnings-estimates/",
+    "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+    "https://www.investing.com/news/economy-news/fed-rate-hike-odds-in-december-at-88-after-hot-cpi-cme-fedwatch-5017585"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "AVGO ประกาศงบ FQ4 และทั้งปี 2026 วันที่ 9 ธ.ค. หลังปิดตลาด (บริษัทยืนยัน) เป้ารายได้ Q4 ~$34.8B (+93% y/y) consensus EPS ~$3.82–3.83 หุ้นต่ำกว่าจุดสูงสุด ~33% จากความกังวลที่ตลาดเทขายธีม AI ไม่ใช่ข่าวบริษัท เป้า consensus ~$530 (Buy 47 / Hold 3) คิดเป็น ~+60% ผ่านเกณฑ์ 20% สบาย เช็กหุ้นใหญ่: ธ.ค. 2024 AVGO เคยขึ้น +24% ในวันเดียวจากมุมมองตลาด AI ข้อควรระวัง: งบออกวันเดียวกับ FOMC (9 ธ.ค.) binary ด้าน macro และบริษัทจึงซ้อนกัน catalyst อีก 28 วัน เกินกรอบ North Star 14 วัน ถ้า backtest พลาดจึงเป็นผลจากกรอบเวลา bias ของ Base ใน core +23.7pp เทียบ P75 14 วันจริง +6.6% Base จึงเป็นกรอบ re-rate ~4–8 สัปดาห์หลังงบ ไม่ใช่คาด 14 วัน ขนาด 5–7%",
+      "priceNote": "ราคาสด $331.98 11 พ.ย. 2026 ต่ำกว่า 52-week high $495 ราว 33% (ต่ำสุด $289.77) หลังการเทขายหุ้นชิป AI 5 พ.ย. งบ FQ4 2026 วันที่ 9 ธ.ค. หลังปิดตลาด (บริษัทยืนยัน) ตรงกับวันประกาศ FOMC",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        {
+          "name": "งบ FQ4 / ทั้งปี 2026 — รายได้ AI + มุมมองปีงบ 2027",
+          "description": "บริษัทยืนยัน 9 ธ.ค. 2026 หลังปิดตลาด (call 14:00 PT) เป้า Q4 ~$34.8B (+93% y/y) consensus EPS ~$3.82 มุมมอง SAM/backlog ด้าน AI ปีงบ 2027 เป็นตัวชี้ขาด ตรงกับวันประกาศ FOMC"
+        }
+      ],
+      "risks": [
+        "event ซ้อน: งบและ FOMC วันเดียวกัน (9 ธ.ค.) และ CPI พ.ย. เช้าวันถัดไป งบดีก็อาจถูกกลบถ้าขึ้น 50bp",
+        "พึ่งลูกค้าน้อยรายใน custom XPU (hyperscaler ไม่กี่ราย) ถ้า capex หยุดชั่วคราวผลจะขยายใหญ่",
+        "การเมือง: ความกังวลกฎคุม data center กระทบทั้งกลุ่มโครงสร้างพื้นฐาน AI",
+        "คณิตศาสตร์หุ้นใหญ่: +20% คือเพิ่มมูลค่า ~$300B ต้องมีมุมมองที่เปลี่ยนเรื่องเล่าได้จริง"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.75–4.00% เมื่อ 28 ต.ค. หลัง CPI ต.ค. ออกมาร้อน (10 พ.ย.) CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ราว 89–100% และโอกาสขึ้น 50bp ~10% ส่วน yield 10 ปีอยู่ ~4.98%",
+        "inflationNote": "CPI ต.ค.: headline +0.4% m/m, core +0.3% m/m (คาด 0.2%) core PCE ก.ย. 3.1% y/y ตัวถัดไปคือ PCE ต.ค. วันที่ 25 พ.ย. แล้วตามด้วย CPI พ.ย. วันที่ 10 ธ.ค. (วันถัดจาก FOMC)",
+        "sectorImpact": "หุ้นชิป AI เป็นศูนย์กลางของการเทขาย 5 พ.ย. (SOX -9–12% จากความกังวลเรื่องกฎคุม data center หลังเลือกตั้งกลางเทอม) และเป็นหุ้น long-duration ที่อ่อนไหวต่อดอกเบี้ย ถ้า ธ.ค. ขึ้น 50bp จะยิ่งถูกลด multiple",
+        "summary": "MEDIUM-HIGH เรื่องจังหวะ — งบออกวัน FOMC และ CPI เช้าวันถัดไป สะสมตอนย่อก่อน 9 ธ.ค. แต่อย่าเพิ่มในวัน event"
+      },
+      "entryStrategy": {
+        "verdict": "BUY (ทยอยเข้า) — ผู้นำ custom-ASIC ต่ำกว่าจุดสูงสุด ~33% ก่อนงบที่บริษัทยืนยันวันแล้ว upside ~+60% ไปหา consensus ระวัง event ซ้อนวัน FOMC median ถึงวัน catalyst ของ core -6.9% (n=54; 74% ของ pick ติดลบในวัน event) จึงเข้าที่ Entry 2 เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ core -6.9% (n=54)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "ทดสอบโซนแนวรับ $290–320 ช่วง PCE — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ที่ 52-week low $289.77",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — มุมมอง AI ยังอยู่ ~$395 กรอบ 4–8 สัปดาห์"
+        },
+        "tp2": {
+          "note": "Bull — ปรับประมาณการรายได้ AI ปีงบ 2027 ขึ้น ~$450"
+        },
+        "tp3": {
+          "note": "Moon — กลับไปที่ consensus ~$530 ใน 6–12 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-15% — กว้างกว่า medianMAE ของ core (-14%)",
+          "hardNote": "-25% — ลดมุมมอง AI หรือเสียโปรแกรม hyperscaler",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "R/R ดี ✅ (≥2:1 เกณฑ์ core)"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "งบ FQ4 / ทั้งปี 2026",
+          "note": "เป้า Q4 ~$34.8B; วันเดียวกับ FOMC"
+        }
+      ]
+    }
+  }
+}

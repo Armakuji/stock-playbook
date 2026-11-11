@@ -1,0 +1,270 @@
+{
+  "ticker": "MLYS",
+  "companyName": "Mineralys Therapeutics, Inc.",
+  "companyDescription": "Cardiorenal · lorundrostat, a selective aldosterone synthase inhibitor for uncontrolled/resistant hypertension — PDUFA Dec 22, 2026; second-to-market behind AstraZeneca baxdrostat",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-11T11:30:00.000Z",
+  "price": 15.52,
+  "priceChange": -1.83,
+  "priceNote": "Live $15.52 on Nov 11, 2026, near the bottom of its $14.91–$47.65 52-week range. Market cap is ~$1.45B against $625M cash (EV ~$0.8B). The Dec 22 PDUFA is 41 days out.",
+  "marketCap": "~$1.45B",
+  "sector": "Healthcare / Biotechnology — Cardiorenal",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Speculative",
+  "score": 0,
+  "summary": "The Dec 22, 2026 PDUFA for lorundrostat (hypertension) is the catalyst. The stock is -67% from its high since AstraZeneca's baxdrostat launched first. The consensus mean is ~$48.50 (BofA $49, UBS $29), which implies ~+210%. That figure is stale (Aug 2026), but even UBS's $29 clears the 20% gate (+87%). EV is ~$0.8B for a mass-market hypertension drug with 48-week OLE data of -17.8 mmHg (AHA 2026), and $625M cash funds the launch into 2028. The catalyst is 41 days out, at the edge of the 42-day window and well outside the 14-day North Star, so a backtest miss there is a horizon artifact. Core Base bias is +23.7pp vs realized 14d P75 +6.6%, so Base is a ~4–8 week post-earnings re-rating horizon, not a 14-day call. Also carried in the turbo lane today; size it once across both. Size 2–3%.",
+  "catalysts": [
+    {
+      "icon": "💊",
+      "name": "Lorundrostat PDUFA — hypertension",
+      "description": "The NDA (add-on for uncontrolled/resistant hypertension) has a PDUFA target action date of Dec 22, 2026. Review is underway per the Nov 8 update, and a sales force is being built ahead of the date.",
+      "urgencyLabel": "41 DAYS",
+      "dateBadge": "Dec 22, 2026",
+      "catalystDate": "2026-12-22",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Second to market behind AstraZeneca's baxdrostat, so approval is a re-rating event, not a monopoly.",
+    "Label risk (hyperkalemia monitoring) could cap the re-rate.",
+    "A CRL would mean ~-40–50% for a single-asset company.",
+    "Stale consensus target (pre-baxdrostat launch)."
+  ],
+  "estimateDates": [
+    {
+      "event": "Lorundrostat PDUFA",
+      "dateRange": "Dec 22, 2026",
+      "note": "Approval + label",
+      "est": "Approval likely",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -42.01,
+      "price": 9
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 40.14,
+      "price": 21.75
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 99.74,
+      "price": 31
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 212.5,
+      "price": 48.5
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "BofA",
+      "target": 49,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Consensus mean (Aug 2026, stale)",
+      "target": 48.5,
+      "rating": "Strong Buy"
+    },
+    {
+      "firm": "UBS",
+      "target": 29,
+      "rating": "Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "The Fed held at 3.75–4.00% on Oct 28. After the hot Oct CPI on Nov 10, CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~89–100%, with ~10% odds of 50bp. The 10-year is ~4.98%.",
+    "inflationNote": "Oct CPI: headline +0.4% m/m, core +0.3% m/m vs 0.2% expected. Sep core PCE was 3.1% y/y. Oct PCE on Nov 25 is the next print, then Nov CPI on Dec 10, the day after FOMC.",
+    "sectorImpact": "Single-asset cardiorenal biotech moving to launch, funded into 2028. Rates matter through the biotech multiple only.",
+    "summary": "MEDIUM — the PDUFA lands after the Dec 9 FOMC and Dec 10 CPI, so macro volatility comes first and may offer a better entry."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 15.52,
+        "note": "Current price — starter only. Not preferred: core at-catalyst median -6.9% (n=54)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 13.8,
+        "rangeMax": 14.6,
+        "note": "Undercut of the $14.91 52-week low on FOMC/CPI week — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 12.6,
+        "note": "Aug-2026 low area",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 21.75,
+      "pct": 40.14,
+      "note": "Base — approval with a clean label; ~$21.75. Horizon 2–6 weeks post-PDUFA."
+    },
+    "tp2": {
+      "price": 31,
+      "pct": 99.74,
+      "note": "Bull — a differentiated label; ~$31."
+    },
+    "tp3": {
+      "price": 48.5,
+      "pct": 212.5,
+      "note": "Moon — share gains vs baxdrostat; ~$48.50 consensus. 12 months.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 13,
+      "tightPct": -16.24,
+      "tightNote": "-16% — wider than the core medianMAE (-14%) — overall core figure applies.",
+      "hard": 9,
+      "hardPct": -42.01,
+      "hardNote": "-42% — CRL territory, cushioned by ~$6.6/share cash.",
+      "riskReward": "6.1 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Good R/R ✅ (≥2:1 core bar)"
+    },
+    "verdict": "SPECULATIVE — an approval-likely PDUFA at an EV of ~$0.8B. The upside is capped by being second to market. Measured core at-catalyst median is -6.9% (n=54; 74% of picks underwater at their event), so Entry 2 is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "No run-up: the stock is grinding along its 52-week low into the PDUFA, a disbelief setup.",
+    "preRunupTiming": "Final 2 weeks before Dec 22",
+    "preRunupPct": "-1.8% Nov 10; near the 52-week low",
+    "postWin": {
+      "avgPct": 40,
+      "range": "+33% to +74%",
+      "note": "AXSM +40% on a doubted approval (Aug 2022); SRPT +74% on a contested approval (Sep 2016).",
+      "exampleDate": "Aug 19, 2022 (AXSM)"
+    },
+    "postLose": {
+      "avgPct": -38,
+      "range": "-26% to -53%",
+      "note": "CAPR opened -38.6% on a CRL (Jul 2025).",
+      "exampleDate": "Jul 11, 2025 (CAPR)"
+    },
+    "spotSizing": {
+      "pct": 2.5,
+      "reason": "2.5% (combined with the turbo lane position). fda_decision is not a Tier-2 laggard; capped for second-to-market economics."
+    },
+    "stopPreCatalyst": {
+      "pct": -16.24,
+      "price": 13,
+      "note": "At -16%, wider than the core medianMAE (-14%). A close below ~$13 means the market is pricing a CRL or label problem."
+    },
+    "stopPostCatalyst": {
+      "pct": -30,
+      "note": "On a CRL, exit day 1."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "AXSM",
+      "event": "Auvelity approval after extended review",
+      "date": "Aug 2022",
+      "movePct": 40,
+      "days": 1,
+      "outcome": "good",
+      "note": "A doubted approval that re-rated the stock."
+    },
+    {
+      "ticker": "CAPR",
+      "event": "FDA CRL for deramiocel",
+      "date": "Jul 2025",
+      "movePct": -38,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Single-asset CRL template."
+    }
+  ],
+  "sources": [
+    "https://www.biospace.com/press-releases/mineralys-therapeutics-reports-third-quarter-2026-financial-results-and-provides-corporate-update",
+    "https://www.quantisnow.com/insight/mineralys-therapeutics-presents-new-late-breaking-data-from-transform-htn-open-label-extension-6779802",
+    "https://stockanalysis.com/stocks/mlys",
+    "https://www.benzinga.com/news/26/11/62897821/mineralys-therapeutics-q3-2026-earnings-call-transcript",
+    "https://www.zacks.com/amp/stock/news/1970946/axsome-axsm-soars-on-fda-nod-for-depression-drug-auvelity",
+    "https://medcitynews.com/2025/07/capricor-cell-therapy-duchenne-muscular-dystrophy-deramiocel-cardiomyopathy-heart-failure-dmd-capr/",
+    "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+    "https://www.investing.com/news/economy-news/fed-rate-hike-odds-in-december-at-88-after-hot-cpi-cme-fedwatch-5017585"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "PDUFA ของ lorundrostat (ความดันโลหิตสูง) วันที่ 22 ธ.ค. 2026 คือ catalyst หุ้นลง -67% จากจุดสูงสุดหลัง baxdrostat ของ AstraZeneca เปิดตลาดก่อน consensus เฉลี่ย ~$48.50 (BofA $49, UBS $29) คิดเป็น ~+210% ตัวเลขนี้เก่า (ส.ค. 2026) แต่แม้ใช้เป้า UBS $29 ก็ผ่านเกณฑ์ 20% (+87%) EV ~$0.8B สำหรับยาความดันสูงตลาดใหญ่ที่มีข้อมูล OLE 48 สัปดาห์ -17.8 mmHg (AHA 2026) และเงินสด $625M รองรับการเปิดตลาดถึงปี 2028 catalyst อีก 41 วัน อยู่ขอบกรอบ 42 วัน และเกิน North Star 14 วันมาก ถ้า backtest พลาดจึงเป็นผลจากกรอบเวลา bias ของ Base ใน core +23.7pp เทียบ P75 14 วันจริง +6.6% Base จึงเป็นกรอบ re-rate ~4–8 สัปดาห์หลังงบ ไม่ใช่คาด 14 วัน มีใน turbo วันนี้ด้วย ให้นับขนาดรวมครั้งเดียวทั้งสองเลน ขนาด 2–3%",
+      "priceNote": "ราคาสด $15.52 11 พ.ย. 2026 ใกล้ก้นช่วง 52 สัปดาห์ $14.91–$47.65 Market cap ~$1.45B เทียบเงินสด $625M (EV ~$0.8B) PDUFA 22 ธ.ค. อีก 41 วัน",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        {
+          "name": "PDUFA ของ lorundrostat — ความดันโลหิตสูง",
+          "description": "NDA (ยาเสริมในความดันสูงที่คุมไม่ได้/ดื้อยา) วัน PDUFA 22 ธ.ค. 2026 อยู่ระหว่างรีวิวตามอัปเดต 8 พ.ย. และกำลังสร้างทีมขายก่อนถึงวัน"
+        }
+      ],
+      "risks": [
+        "เข้าตลาดเป็นอันดับสองตามหลัง baxdrostat ของ AstraZeneca การอนุมัติจึงเป็นเหตุ re-rate ไม่ใช่การผูกขาด",
+        "ความเสี่ยงด้าน label (การติดตามโพแทสเซียมสูง) อาจจำกัดการ re-rate",
+        "ถ้าโดน CRL จะลง ~-40–50% สำหรับบริษัทที่มียาตัวเดียว",
+        "เป้า consensus เก่า (ก่อน baxdrostat เปิดตลาด)"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.75–4.00% เมื่อ 28 ต.ค. หลัง CPI ต.ค. ออกมาร้อน (10 พ.ย.) CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ราว 89–100% และโอกาสขึ้น 50bp ~10% ส่วน yield 10 ปีอยู่ ~4.98%",
+        "inflationNote": "CPI ต.ค.: headline +0.4% m/m, core +0.3% m/m (คาด 0.2%) core PCE ก.ย. 3.1% y/y ตัวถัดไปคือ PCE ต.ค. วันที่ 25 พ.ย. แล้วตามด้วย CPI พ.ย. วันที่ 10 ธ.ค. (วันถัดจาก FOMC)",
+        "sectorImpact": "ไบโอเทคหัวใจและไตที่มียาตัวเดียวกำลังเปิดตลาด มีเงินพอถึงปี 2028 ดอกเบี้ยกระทบผ่าน multiple ไบโอเทคเท่านั้น",
+        "summary": "MEDIUM — PDUFA อยู่หลัง FOMC 9 ธ.ค. และ CPI 10 ธ.ค. ความผันผวนจาก macro มาก่อน อาจได้จุดเข้าที่ดีกว่า"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — PDUFA ที่มีแนวโน้มอนุมัติ EV ~$0.8B upside ถูกจำกัดเพราะเข้าตลาดเป็นอันดับสอง median ถึงวัน catalyst ของ core -6.9% (n=54; 74% ของ pick ติดลบในวัน event) จึงเข้าที่ Entry 2 เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ core -6.9% (n=54)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "หลุด 52-week low $14.91 ช่วงสัปดาห์ FOMC/CPI — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "โซนต่ำ ส.ค. 2026",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — อนุมัติพร้อม label ที่ดี ~$21.75 กรอบ 2–6 สัปดาห์หลัง PDUFA"
+        },
+        "tp2": {
+          "note": "Bull — label ที่แตกต่าง ~$31"
+        },
+        "tp3": {
+          "note": "Moon — แย่งส่วนแบ่งจาก baxdrostat ~$48.50 consensus ใน 12 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-16% — กว้างกว่า medianMAE ของ core (-14%)",
+          "hardNote": "-42% — โซน CRL มีเงินสด ~$6.6/หุ้น ช่วยรองรับ",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "R/R ดี ✅ (≥2:1 เกณฑ์ core)"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "PDUFA lorundrostat",
+          "note": "การอนุมัติ + label"
+        }
+      ]
+    }
+  }
+}
