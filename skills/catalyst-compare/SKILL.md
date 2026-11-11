@@ -23,6 +23,11 @@ deliberately different (survival-first, not catalyst-proximity-first).
 
 Check for `web/data/skill-feedback.json`. If it doesn't exist yet, skip this step.
 
+**⏱ Freshness gate (do this first).** If the file's `generatedAt` is more than 7 days old, run
+`cd web && npm run backtest:fetch` and re-read it. If it is still >7 days old, say
+`⚠️ STALE PRIOR — generated <date> (<n>d old)` and treat EVERY rule below as context only (Tier 2
+does not fire, the entry rule is quoted but not binding) — never present a stale figure as current.
+
 This skill doesn't screen or select new tickers — it only re-orders already-published dashboard
 picks by current entry attractiveness (Step 3's formula below), which this file does **not**
 change. Both tiers below apply to **commentary only** (Section 4 — Summary verdict), never to the

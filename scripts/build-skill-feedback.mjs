@@ -95,6 +95,42 @@ function r1(x) {
   return Math.round(x * 10) / 10;
 }
 
+// ── Stop-out (hard stop) on the path — "count a stopped pick as a loss" ─────
+// The North Star `hit` reads the best close in the window and ignores the
+// report's own stop, so a pick that closed through its hard stop on day 3 and
+// then bounced to +30% on day 12 scored a hit nobody following the plan held.
+// This series runs ALONGSIDE the existing ones (which stay untouched for
+// comparability): walking closes in order, a close at/below
+// entryStrategy.stopLoss.hard ends the trade at the stop price.
+// Same rule as web/lib/stop-status.ts (hard stop, not tight). Daily closes
+// only — an intraday wick through the stop is not seen.
+function hardStopPrice(report) {
+  const h = report?.entryStrategy?.stopLoss?.hard;
+  return typeof h === "number" && h > 0 ? h : null;
+}
+/** Walk an ordered series; returns stop-adjusted outcome vs a target %. */
+function stopWalk(series, p0, stopPrice, targetPct) {
+  if (!series.length) return null;
+  const stopPct = stopPrice != null ? ((stopPrice - p0) / p0) * 100 : null;
+  let stoppedAt = -1, hitAt = -1;
+  for (let i = 0; i < series.length; i++) {
+    const g = ((series[i].c - p0) / p0) * 100;
+    if (hitAt < 0 && g >= targetPct) hitAt = i;
+    if (stopPct != null && stoppedAt < 0 && series[i].c <= stopPrice) stoppedAt = i;
+  }
+  const stoppedOut = stoppedAt >= 0 && (hitAt < 0 || stoppedAt <= hitAt);
+  const endPct = ((series[series.length - 1].c - p0) / p0) * 100;
+  return {
+    stopPct,
+    stoppedOut,
+    stopAdjHit: hitAt >= 0 && !stoppedOut,
+    // What a plan-follower actually holds at window end: the stop loss if
+    // stopped first, else the last close.
+    stopAdjEndPct: stoppedOut ? stopPct : endPct,
+    endPct,
+  };
+}
+
 // Mirrors web/lib/catalyst-timing.ts primaryCatalystType() — pure string
 // parsing, no need for the full TS module.
 function primaryCatalystType(report) {
@@ -143,7 +179,7 @@ function computeBenchmarkPct(pathCache, reportDate, startISO, endISO) {
 /** One North Star pass (shared math for core 14d/+30% and turbo 30d/+50%).
  *  Also computes the soft-target hit and excess-vs-benchmark used for ranking
  *  (backlog #36) — the North Star `hit` stays exactly as it was. */
-function computeEntry({ ticker, price: p0, reportDate, pathCache, key, windowDays, targetPct, softTargetPct }) {
+function computeEntry({ ticker, price: p0, reportDate, pathCache, key, windowDays, targetPct, softTargetPct, stopPrice = null }) {
   const startISO = ymdToISO(reportDate);
   const endISO = addDaysISO(reportDate, windowDays);
   const elapsed = endISO <= today;
@@ -153,6 +189,7 @@ function computeEntry({ ticker, price: p0, reportDate, pathCache, key, windowDay
 
   let maxGainPct = null, maePct = null, hit = null, timeToHitDays = null, benchmarkPct = null;
   let softHit = null, excessVsBenchPct = null;
+  let stop = null;
   let status;
 
   if (series.length === 0) {
@@ -164,6 +201,7 @@ function computeEntry({ ticker, price: p0, reportDate, pathCache, key, windowDay
     hit = maxGainPct >= targetPct;
     softHit = maxGainPct >= softTargetPct;
     status = elapsed ? "complete" : "accumulating";
+    stop = stopWalk(series, p0, stopPrice, targetPct);
     if (hit) {
       const firstHit = series.find((pt) => ((pt.c - p0) / p0) * 100 >= targetPct);
       if (firstHit) timeToHitDays = daysBetweenISO(startISO, firstHit.d);
@@ -177,7 +215,14 @@ function computeEntry({ ticker, price: p0, reportDate, pathCache, key, windowDay
     }
   }
 
-  return { ticker, reportDate, maxGainPct, maePct, hit, softHit, timeToHitDays, benchmarkPct, excessVsBenchPct, status };
+  return {
+    ticker, reportDate, maxGainPct, maePct, hit, softHit, timeToHitDays, benchmarkPct, excessVsBenchPct, status,
+    hasStop: stopPrice != null,
+    stoppedOut: stop?.stoppedOut ?? null,
+    stopAdjHit: stop?.stopAdjHit ?? null,
+    stopAdjEndPct: stop?.stopAdjEndPct ?? null,
+    endPct: stop?.endPct ?? null,
+  };
 }
 
 // ── Catalyst-anchored measurement (backlog #38) ─────────────────────────────
@@ -238,7 +283,13 @@ function computeAnchoredEntry({ ticker, price: p0, reportDate, report, pathCache
 
   const gains = series.map((pt) => ((pt.c - p0) / p0) * 100);
   const maxGainPct = Math.max(...gains);
+  const stop = stopWalk(series, p0, hardStopPrice(report), targetPct);
   return {
+    stoppedOut: stop?.stoppedOut ?? null,
+    // Held-through-catalyst return with the stop honoured — a stopped pick is
+    // booked at its stop loss, not at whatever it recovered to by the event.
+    stopAdjPctAtAnchor: stop ? stop.stopAdjEndPct : null,
+    hasStop: hardStopPrice(report) != null,
     ticker, reportDate, catalystISO: catISO,
     windowDays: daysBetweenISO(startISO, endISO),
     maxGainPct,
@@ -281,6 +332,12 @@ function summarizeAnchored(entries, targetPct, softTargetPct, laneLabel) {
       return (mMax != null && mAnc != null) ? r1(mMax - mAnc) : null;
     })(),
     medianWindowDays: median(complete.map((e) => e.windowDays).filter((v) => v != null)),
+    // ── Stop-adjusted (hard stop honoured) ─────────────────────────────────
+    stopOutRate: (() => {
+      const w = complete.filter((e) => e.hasStop);
+      return w.length ? r1((w.filter((e) => e.stoppedOut).length / w.length) * 100) : null;
+    })(),
+    medianStopAdjPctAtAnchor: r1(median(complete.map((e) => e.stopAdjPctAtAnchor).filter((v) => v != null))),
     note:
       `Measured reportDate → primary catalystDate + ${CATALYST_BUFFER_DAYS}d, so the window CONTAINS ` +
       `the catalyst. Runs alongside the fixed ${laneLabel === "core" ? CORE_WINDOW_DAYS : TURBO_WINDOW_DAYS}d ` +
@@ -322,6 +379,14 @@ function summarize(entries) {
     medianMAE: r1(median(complete.map((e) => e.maePct).filter((v) => v !== null))),
     avgMaxGain: r1(mean(complete.map((e) => e.maxGainPct).filter((v) => v !== null))),
     medianTimeToHitDays: median(hits.map((e) => e.timeToHitDays).filter((v) => v !== null)),
+    // ── Stop-adjusted (hard stop honoured; parallel series, hitRate untouched) ──
+    stopOutRate: (() => {
+      const w = complete.filter((e) => e.hasStop && e.stoppedOut !== null);
+      return w.length ? r1((w.filter((e) => e.stoppedOut).length / w.length) * 100) : null;
+    })(),
+    stopAdjHitRate: complete.length ? r1((complete.filter((e) => e.stopAdjHit).length / complete.length) * 100) : null,
+    medianStopAdjEndPct: r1(median(complete.map((e) => e.stopAdjEndPct).filter((v) => v != null))),
+    medianEndPct: r1(median(complete.map((e) => e.endPct).filter((v) => v != null))),
     avgBenchmarkPct: withBench.length ? r1(mean(withBench.map((e) => e.benchmarkPct))) : null,
     regimeNote: regimeNote(complete),
   };
@@ -381,6 +446,7 @@ const coreEntries = coreSnapshots.map(({ report, reportDate }) =>
       ticker: report.ticker, price: report.price, reportDate, pathCache,
       key: `${report.ticker}_${reportDate}`, windowDays: CORE_WINDOW_DAYS,
       targetPct: CORE_TARGET_PCT, softTargetPct: CORE_SOFT_TARGET_PCT,
+      stopPrice: hardStopPrice(report),
     }),
     catalystType: primaryCatalystType(report),
     scenarios: report.scenarios ?? null,
@@ -418,6 +484,7 @@ const turboEntries = turboSnapshots.map(({ report, reportDate }) =>
       ticker: report.ticker, price: report.price, reportDate, pathCache,
       key: `${TURBO_KEY_PREFIX}${report.ticker}_${reportDate}`, windowDays: TURBO_WINDOW_DAYS,
       targetPct: TURBO_TARGET_PCT, softTargetPct: TURBO_SOFT_TARGET_PCT,
+      stopPrice: hardStopPrice(report),
     }),
     catalystType: primaryCatalystType(report),
     scenarios: report.scenarios ?? null,
@@ -647,6 +714,31 @@ const entryGuidance = {
 const stopGuidance = {
   coreMedianMAEPct: core.overall.medianMAE,
   turboMedianMAEPct: turbo.overall.medianMAE,
+  // Stop-adjusted outcomes (hard stop honoured, daily closes) — the "count a
+  // stopped pick as a loss" view. Compare medianStopAdjEndPct to medianEndPct:
+  // if stops make the median outcome WORSE, they are too tight for the lane.
+  core: {
+    stopOutRate: core.overall.stopOutRate,
+    stopAdjHitRate: core.overall.stopAdjHitRate,
+    medianStopAdjEndPct: core.overall.medianStopAdjEndPct,
+    medianEndPct: core.overall.medianEndPct,
+    anchoredStopOutRate: catalystAnchored.core.stopOutRate,
+    anchoredMedianStopAdjPct: catalystAnchored.core.medianStopAdjPctAtAnchor,
+  },
+  turbo: {
+    stopOutRate: turbo.overall.stopOutRate,
+    stopAdjHitRate: turbo.overall.stopAdjHitRate,
+    medianStopAdjEndPct: turbo.overall.medianStopAdjEndPct,
+    medianEndPct: turbo.overall.medianEndPct,
+    anchoredStopOutRate: catalystAnchored.turbo.stopOutRate,
+    anchoredMedianStopAdjPct: catalystAnchored.turbo.medianStopAdjPctAtAnchor,
+  },
+  stopAdjNote:
+    "stopOutRate = % of complete windows whose daily close hit entryStrategy.stopLoss.hard before the " +
+    "target. stopAdjHitRate counts a hit only if the target came BEFORE the stop. medianStopAdjEndPct " +
+    "books a stopped pick at its stop loss, else at the window's last close (medianEndPct = same without " +
+    "the stop). Parallel series: hitRate/softHitRate above are unchanged. Same hard-stop rule the " +
+    "/catalyst and /turbo boards use to pull picks (web/lib/stop-status.ts).",
   rule:
     `entryStrategy.stopLoss.tight must sit WIDER than the relevant medianMAE (use ` +
     `core.byType[].medianMAE for the pick's catalystType when that bucket has n >= ${MIN_N_FOR_RANKING}, ` +
@@ -698,6 +790,7 @@ console.log(`🎯 turbo tier2: ${turbo.tier2.fired ? `FIRED on ${turbo.tier2.met
 console.log(`🎯 catalyst-anchored · core: complete ${catalystAnchored.core.totalComplete}/${catalystAnchored.core.n} (undated ${catalystAnchored.core.totalUndated} · no-data ${catalystAnchored.core.totalNoData} · accum ${catalystAnchored.core.totalAccumulating}) hitRate ${catalystAnchored.core.hitRate}% softHit ${catalystAnchored.core.softHitRate}% medWindow ${catalystAnchored.core.medianWindowDays}d · turbo: complete ${catalystAnchored.turbo.totalComplete}/${catalystAnchored.turbo.n} hitRate ${catalystAnchored.turbo.hitRate}%`);
 console.log(`🚪 entry · core: median at-catalyst ${entryGuidance.core.medianPctAtAnchor}% · ${entryGuidance.core.pctNegativeAtAnchor}% of picks underwater at their event · timing gap ${entryGuidance.core.timingGapPP}pp (n=${entryGuidance.core.n}) · turbo: ${entryGuidance.turbo.medianPctAtAnchor}% (n=${entryGuidance.turbo.n})`);
 console.log(`🛑 stops: core medianMAE ${stopGuidance.coreMedianMAEPct}% · turbo medianMAE ${stopGuidance.turboMedianMAEPct}% — tight stops must be wider than these`);
+console.log(`🛑 stop-adjusted · core: stopOut ${stopGuidance.core.stopOutRate}% · stopAdjHit ${stopGuidance.core.stopAdjHitRate}% · median end ${stopGuidance.core.medianEndPct}% → stop-adj ${stopGuidance.core.medianStopAdjEndPct}% · turbo: stopOut ${stopGuidance.turbo.stopOutRate}% · stopAdjHit ${stopGuidance.turbo.stopAdjHitRate}% · median end ${stopGuidance.turbo.medianEndPct}% → stop-adj ${stopGuidance.turbo.medianStopAdjEndPct}%`);
 console.log(`🌐 regime: n=${regime.n} · median SPY over completed windows: ${regime.medianBenchmarkPct ?? "no data yet"}${regime.medianBenchmarkPct != null ? "%" : ""}`);
 console.log(`📐 scenario calibration · core: n=${scenarioCalibration.core.n} bias +${scenarioCalibration.core.optimismBiasBasePct}pp (P75 ${scenarioCalibration.core.realizedMaxGainP75Pct}%) · turbo: n=${scenarioCalibration.turbo.n} bias +${scenarioCalibration.turbo.optimismBiasBasePct}pp (P75 ${scenarioCalibration.turbo.realizedMaxGainP75Pct}%)`);
 console.log(`🕵️ near-miss counterfactual · core: ${nearMissCounterfactual.core ? `n=${nearMissCounterfactual.core.n}` : "null (no data yet)"} · turbo: ${nearMissCounterfactual.turbo ? `n=${nearMissCounterfactual.turbo.n}` : "null (no data yet)"}`);

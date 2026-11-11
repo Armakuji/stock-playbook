@@ -41,6 +41,20 @@ export function catalystISO(c: Catalyst): string | null {
   return parseDateStr(c.dateBadge);
 }
 
+/** A "~"-prefixed dateBadge ("~Q4 2026", "~Aug 12") marks a genuinely fuzzy
+ *  catalyst window. Its catalystDate (if any) is the window's END bound — good
+ *  enough to tell when the event has passed (reportStage / lastCatalyst), but
+ *  NOT a real event day, so it must never drive proximity sorting, the
+ *  calendar, or event-day clustering. Mirrored in scripts/validate-reports.mjs. */
+export function isFuzzyBadge(raw?: string): boolean {
+  return typeof raw === "string" && raw.trim().startsWith("~");
+}
+
+/** catalystISO for proximity use — null for fuzzy (~) catalysts. */
+export function proximityISO(c: Catalyst): string | null {
+  return isFuzzyBadge(c.dateBadge) ? null : catalystISO(c);
+}
+
 export function todayISO(): string {
   const d = new Date();
   d.setHours(0, 0, 0, 0);
@@ -55,11 +69,12 @@ export function daysBetweenISO(fromISO: string, toISO: string): number {
 
 export interface NextCatalyst { iso: string; name: string; days: number; }
 
-/** Soonest upcoming catalyst (catalysts[] first, then estimateDates[]). null if none upcoming. */
+/** Soonest upcoming catalyst (catalysts[] first, then estimateDates[]). null if none upcoming.
+ *  Fuzzy (~) catalysts are skipped — see isFuzzyBadge. */
 export function nextCatalyst(report: StockReport, ref?: string): NextCatalyst | null {
   const base = ref ?? todayISO();
   const cands: { iso: string; name: string }[] = [];
-  for (const c of report.catalysts ?? []) { const d = catalystISO(c); if (d) cands.push({ iso: d, name: c.name }); }
+  for (const c of report.catalysts ?? []) { const d = proximityISO(c); if (d) cands.push({ iso: d, name: c.name }); }
   for (const e of report.estimateDates ?? []) { const d = parseDateStr(e.dateRange); if (d) cands.push({ iso: d, name: e.event }); }
   const upcoming = cands.filter((c) => c.iso >= base).sort((a, b) => a.iso.localeCompare(b.iso));
   if (!upcoming.length) return null;

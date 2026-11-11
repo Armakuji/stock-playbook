@@ -33,7 +33,7 @@ over-ranked the same way.
 Two more turbo-specific differences:
 
 - **`/turbo` does NOT filter post-stage picks.** `web/app/turbo/page.tsx` calls
-  `rankTurboReports(getAllSpeculativeReports())` with no `reportStage` filter, so a pick whose
+  `rankTurboReports(...)` with no `reportStage` filter (only a hard-stop filter), so a pick whose
   binary event already resolved stays on the leaderboard indefinitely, still claiming its
   pre-event upside. On `/catalyst` those get filtered out. Here you must catch them.
 - **Turbo now HAS a `byType` breakdown and its own `tier2`** (added 2026-08-13, backlog #39 —
@@ -48,16 +48,16 @@ Check `web/data/skill-feedback.json`; skip if missing. Use the **`turbo`** block
 
 - `turbo.targetPct` / `turbo.softTargetPct` — the lane's bars are **+50%/30d** and **+20%/30d**,
   not the core +30%/14d. Never quote core numbers in a turbo report.
-- `turbo.overall.medianMAE` — **currently around -24%, far wider than core's -14%.**
+- `turbo.overall.medianMAE` — **roughly 2× core's (−20% vs −10.8% on 2026-11-11 — read the live value).**
   `entryStrategy.stopLoss.tight` must sit wider than this or carry a one-line justification.
   A core-width stop on a turbo name is guaranteed to fire on noise.
-- **Rank on metrics that vary, not `hitRate`.** Turbo's `hitRate` is ~4.9% (2 hits in 41) — not
-  degenerate like core's 0%, but close. `softHitRate` (~22%), `medianExcessVsBenchPct` and
-  `beatBenchRate` (~56%) carry far more signal. Report `hitRate` as the honest scoreboard.
+- **Rank on metrics that vary, not `hitRate`.** Turbo's `hitRate` is single-digit (6.5% on 2026-11-11) — not
+  degenerate like core's 0%, but close. `softHitRate`, `medianExcessVsBenchPct` and
+  `beatBenchRate` carry far more signal. Report `hitRate` as the honest scoreboard.
 - `turbo.tier2` — precomputed laggards/leaders at n ≥ 5. If a pick's `catalystType` is a laggard,
-  it needs visibly higher conviction to keep its sizing. Note as of 2026-08-13 `partnership_win`
-  is the laggard in **both** lanes independently (core -1.6 vs +1.4 n=12; turbo -3.8 vs +2.0
-  n=16) — a stronger signal than either lane alone.
+  it needs visibly higher conviction to keep its sizing. A type that is a laggard in BOTH
+  `core.tier2` and `turbo.tier2` is stronger evidence than either lane alone — read the live tier2
+  (the Aug-13 `partnership_win` cross-lane laggard did not survive the 2026-11-11 rebuild).
 - `entryGuidance.turbo` — **entry rule (backlog #40)**: if `medianPctAtAnchor` is negative with
   n >= 5, the refreshed report must NOT mark Entry 1 ("now") as `preferred`, and must quote the
   figure in `entryStrategy.verdict`. Refreshes are exactly where this slips — a pick that has run
@@ -87,7 +87,9 @@ failed). After running it:
 
 ## Step 2: Compute the visible leaderboard exactly as the page does
 
-- `rankTurboReports(getAllSpeculativeReports())` from `web/lib/speculative.ts`
+- `rankTurboReports(partitionStopped(getAllSpeculativeReports()).active)` from `web/lib/speculative.ts`
+  — picks whose live price is ≤ their hard stop (`web/lib/stop-status.ts`) are pulled off the board
+  into the 🛑 Stopped strip before ranking; list them, don't refresh them unless asked
 - sorted by `basePct` desc, tiebreak `moonPct` desc — **no stage filter**
 - take the top `TURBO_DISPLAY_LIMIT` — currently **10**, in `web/app/turbo/TurboContent.tsx`
 

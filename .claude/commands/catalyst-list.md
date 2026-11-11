@@ -5,8 +5,18 @@ Run the `/catalyst-list` workflow from CLAUDE.md (the catalyst dashboard; former
 
 0. Read `web/data/skill-feedback.json` if it exists (skip if missing) — use as an **advisory prior**.
 
-   **Do NOT rank on `hitRate`.** The North Star bar (+30%/14d) is aspirational and currently reads
-   **0% in every single bucket** — a metric that is 0 everywhere cannot discriminate between
+   **⏱ Freshness gate — run BEFORE reading any number.** `ageDays` = today − the file's top-level
+   `generatedAt`. If `ageDays > 7`: run `cd web && npm run backtest:fetch` (extends path-cache and
+   rebuilds this file), then re-read. If it is still > 7 days old (fetch failed / network blocked),
+   the prior is **STALE**: print `⚠️ STALE PRIOR — generated <date> (<ageDays>d old) · reports written
+   since are unmeasured` as the FIRST line of the 📊 block below, and downgrade the whole prior to
+   **context only** — Tier 2 does not fire, the entry rule and whole-lane sizing check are quoted
+   but not binding, and no figure may be presented as current. (From 2026-08-13 to 2026-11-11 the
+   file went 90 days without a rebuild and every list run quoted August numbers as live — this gate
+   exists so that can't happen silently again.)
+
+   **Do NOT rank on `hitRate`.** The North Star bar (+30%/14d) is aspirational and reads near
+   **zero** (0% in every bucket in Aug; 2.9% overall, n=174, on 2026-11-11) — a near-zero metric cannot discriminate between
    catalyst types, and the old "hitRate below overall" rule could therefore never fire (0 vs 0 = no
    divergence). Keep reporting `hitRate` — it is the honest scoreboard against the stated goal —
    but rank on the metrics that actually vary:
@@ -48,7 +58,7 @@ Run the `/catalyst-list` workflow from CLAUDE.md (the catalyst dashboard; former
    **Print this block in chat before screening — a step with no visible output is a step that
    silently gets skipped:**
    ```
-   📊 Feedback prior (skill-feedback.json, generated <date>):
+   📊 Feedback prior (skill-feedback.json, generated <date> · <ageDays>d old<, ⚠️ STALE — context only>):
      core: n=<n> complete=<k> · hitRate <x>% (North Star, aspirational) · softHitRate <x>% (+<soft>%) · beatBench <x>%
      rank metric: <core.tier2.metric> · overall <core.tier2.overallValue>
      tier-2: <FIRED — <type> at <value> vs overall <overallValue> (n=<n>) | not fired — no n≥5 bucket ≥2pp below overall>
@@ -56,6 +66,7 @@ Run the `/catalyst-list` workflow from CLAUDE.md (the catalyst dashboard; former
      regime: SPY median <x>% over windows (n=<n>)
      entry: median at-catalyst <x>% · <x>% of picks underwater at their event · timing gap <x>pp (n=<n>)
      stops: core medianMAE <x>% → tight stop must be wider
+     stop-adj: stopOut <stopGuidance.core.stopOutRate>% · median end <medianEndPct>% → stop-adj <medianStopAdjEndPct>% (hard stop booked as loss)
      scenarios: Base bias +<x>pp vs realized · P75 <x>%
      guardrail: n<5 = context only · n≥5 = MUST apply (see tier-2 line)
    ```
@@ -117,7 +128,8 @@ Run the `/catalyst-list` workflow from CLAUDE.md (the catalyst dashboard; former
    their catalyst stay on the board and rot: their report ages past 7 days and shows STALE
    (`ageDays >= 7` in `web/app/report/[ticker]/StalenessBanner.tsx`). A run that refreshes only
    the new 5 leaves ~half the visible board stale.
-   After Step 4, compute the visible board the same way the page does — `rankReports(getAllReports())`,
+   After Step 4, compute the visible board the same way the page does — `rankReports(partitionStopped(getAllReports()).active)`
+   (hard-stop hits are off the board — `web/lib/stop-status.ts`),
    filter `reportStage(r) !== "post"`, take the top 10 — and for **every ticker in that top-10 that
    is NOT one of the 5 you just wrote AND whose latest report is >=7 days old**, re-run the single-ticker
    `/analyze` flow (`stock-report` skill: fresh research -> new `web/data/reports/<TICKER>_<today>.json`).

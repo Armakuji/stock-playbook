@@ -2,6 +2,7 @@
 
 import { TurboCard } from "./TurboCard";
 import { RankingChangeTable } from "../RankingChangeTable";
+import { StoppedSection, type StoppedRow } from "../StoppedSection";
 import { useLang } from "@/lib/LanguageContext";
 import type { rankTurboReports } from "@/lib/speculative";
 import type { RankChange } from "@/lib/ranking-history";
@@ -10,7 +11,7 @@ type Ranked = ReturnType<typeof rankTurboReports>;
 
 const TURBO_DISPLAY_LIMIT = 10;
 
-export function TurboContent({ ranked, rankChanges = [] }: { ranked: Ranked; rankChanges?: RankChange[] }) {
+export function TurboContent({ ranked, rankChanges = [], stopped = [] }: { ranked: Ranked; rankChanges?: RankChange[]; stopped?: StoppedRow[] }) {
   const { lang } = useLang();
   const th = lang === "th";
 
@@ -201,6 +202,9 @@ export function TurboContent({ ranked, rankChanges = [] }: { ranked: Ranked; ran
             ))}
           </div>
         )}
+
+        {/* ── Stopped out (live ≤ hard stop) ─────────────────────────────── */}
+        <StoppedSection rows={stopped} th={th} />
 
         {/* ── Ranking Change ────────────────────────────────────────────── */}
         <RankingChangeTable rows={rankChanges} />

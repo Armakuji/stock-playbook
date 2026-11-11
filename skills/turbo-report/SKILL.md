@@ -18,14 +18,19 @@ You are Stock Playbook Research — Turbo Desk. This skill generates **moonshot 
 Before screening (`/turbo-list`) or qualifying a single ticker (`/analyze-turbo`), check for
 `web/data/skill-feedback.json`. If it doesn't exist yet, skip this step.
 
+**⏱ Freshness gate (do this first).** If the file's `generatedAt` is more than 7 days old, run
+`cd web && npm run backtest:fetch` and re-read it. If it is still >7 days old, say
+`⚠️ STALE PRIOR — generated <date> (<n>d old)` and treat EVERY rule below as context only (Tier 2
+does not fire, the entry rule is quoted but not binding) — never present a stale figure as current.
+
 If it exists, use it as an **advisory prior** — two tiers, both apply. Read the **`turbo`** block;
 never quote `core` numbers in a turbo report, the bars and windows differ (+50%/30d vs +30%/14d).
 
-**Rank on the metrics that vary, not on `hitRate`.** Turbo's `hitRate` is ~4.9% — two hits in 41
-completed windows. Not degenerate the way core's 0% is, but far too sparse to separate a good
+**Rank on the metrics that vary, not on `hitRate`.** Turbo's `hitRate` is single-digit (6.5% over
+107 completed windows on 2026-11-11). Not degenerate, but far too sparse to separate a good
 catalyst type from a bad one. Report it as the honest scoreboard against the +50%/30d goal, and
 judge on `medianExcessVsBenchPct` (primary), `softHitRate` (reached `turbo.softTargetPct`, +20%,
-currently ~22%), and `beatBenchRate` (~56%).
+read the live value), and `beatBenchRate`.
 
 - **Tier 1 — `n < 5`: context only.** Mention it if relevant, but NEVER use it to include, exclude,
   or re-rank a pick. No auto-weighting.
@@ -36,10 +41,9 @@ currently ~22%), and `beatBenchRate` (~56%).
   primary `catalystType` is a laggard, it needs visibly higher conviction to justify its
   `catalystSpot.spotSizing.pct` — say so explicitly (name the type, its metric value, the overall
   value). If `fired` is false, say "prior read, no n≥5 bucket sits ≥2pp below overall."
-  **Cross-lane note worth acting on:** as of 2026-08-13 `partnership_win` is the laggard in BOTH
-  lanes independently — core -1.6 vs +1.4 (n=12), turbo -3.8 vs +2.0 (n=16). Two different bars,
-  two different windows, 28 completed windows, same answer. That is stronger evidence than either
-  lane alone and should weigh on any partnership-driven turbo thesis.
+  **Cross-lane check:** a type that is a laggard in BOTH `core.tier2` and `turbo.tier2` is stronger
+  evidence than either lane alone. (The Aug-13 `partnership_win` cross-lane laggard did NOT survive
+  the 2026-11-11 rebuild — always read the live tier2, never a figure quoted in this file.)
 - **Whole-lane sizing check still applies.** Independent of tier-2, if `turbo.overall.n ≥ 5` and
   the lane's rates are weak, that tightens sizing/conviction language across ALL picks this run.
 - **Regime caveat (both tiers) — read any rate next to `avgBenchmarkPct`/`regimeNote`, never
@@ -47,7 +51,7 @@ currently ~22%), and `beatBenchRate` (~56%).
   regime," not "turbo doesn't work" — but check the actual `regimeNote` text each run, don't
   assume it. (SPY is a rough broad-market proxy — it won't catch a sector-only selloff; that's a
   known gap in this v1 signal, not a reason to ignore the number.)
-- **Stops must clear measured drawdown.** `turbo.overall.medianMAE` is currently around **-24%**,
+- **Stops must clear measured drawdown.** `turbo.overall.medianMAE` runs roughly **2× core's** (−20% vs −10.8% on 2026-11-11),
   far wider than core's -14%. `entryStrategy.stopLoss.tight` and `catalystSpot.stopPreCatalyst`
   must sit **wider** than the relevant `medianMAE` — use `turbo.byType[].medianMAE` for this pick's
   catalystType when that bucket has n ≥ 5, else `turbo.overall.medianMAE` — or state in one line
@@ -62,14 +66,13 @@ currently ~22%), and `beatBenchRate` (~56%).
   block — the figure was split per lane on 2026-08-13 (backlog #39) because the previous pooled
   number mixed core Base scenarios (~35% median) with turbo ones (~65-100%) across 14d and 30d
   windows and was meaningless for either. Turbo's own bias currently runs far hotter than core's
-  (+72.7pp vs +23.7pp). State the `optimismBiasBasePct` you wrote against; if the written Base
+  (+52.5pp vs +19.3pp on 2026-11-11 — read the live value). State the `optimismBiasBasePct` you wrote against; if the written Base
   exceeds `realizedMaxGainP75Pct`, name the horizon it assumes and the driver that gets it there.
   Read `horizonCaveat` first. The Moon case itself is the thesis and stays as-is.
 - `nearMissCounterfactual.turbo` — if present, shows whether past turbo top-5 cuts actually beat
   what got rejected; use as a sanity check on how strict the bar should be, not a hard cutoff.
-- **Ranking is upside-first per the current spec** — base-case % primary, moon % tiebreaker (see
-  List mode Step 2 below). Survival-first ranking is backlog #11 and not yet implemented. Feedback
-  never re-orders the `/turbo-list` pick order (Tier 2 above affects sizing/conviction language,
+- **Ranking is survival-first** — `turbo-compare` Step 3's moonshot score (see List mode Step 2
+  below; backlog #11, implemented via #32). Feedback never re-orders the `/turbo-list` pick order (Tier 2 above affects sizing/conviction language,
   not rank); it only informs the sizing/stop notes you write into the report.
 
 ## List mode — `/turbo-list` (build the whole Turbo dashboard)
@@ -79,8 +82,10 @@ ticker, **screen for the 5 best moonshot plays** and generate a report for each.
 
 1. **Screen** small/mid-cap (≤ ~$5B) speculative names with a credible ≥ 200–300% bull case and a
    near-term binary catalyst (FDA, contract, first commercial milestone, etc.). Research live for all.
-2. **Score / rank** by most possible upside — base-case % primary, moon % tiebreaker (same axis the
-   `/turbo` page sorts on); pick the top 5.
+2. **Score / rank survival-first** with `turbo-compare` Step 3's moonshot score (Survival +
+   Upside reality + Entry + Headwind, Bull% as tiebreaker only); pick the top 5. The ≥200–300% bull
+   case is the entry ticket to the screen, not the sort key. (The `/turbo` page still sorts on
+   base % until review item #3 lands — `/turbo-list` prints both orders.)
 3. **Generate** a full turbo report for each (per the steps below) → save all to
    `web/data/speculative/<TICKER>_<YYYYMMDD>.json`.
 4. **Validate + push once:** `node scripts/validate-reports.mjs` → `git add web/data/speculative/`

@@ -42,6 +42,21 @@ function parseDateStr(raw) {
 const catalystISO = (c) =>
   c?.catalystDate && /^\d{4}-\d{2}-\d{2}$/.test(c.catalystDate) ? c.catalystDate : parseDateStr(c?.dateBadge);
 
+// ── Fuzzy-date grammar (backlog: phantom-date bug, commit 2653bf4) ──────────
+// "Q4 2026" / "H2 2026" / "Dec 2026" parse to a phantom mid-period day (Nov 15,
+// Aug 15, Dec 15) that then drives proximity sorting, the calendar and the
+// post-stage flip as if it were a real event day. A genuinely fuzzy window
+// must be written with a "~" prefix ("~Q4 2026"): parseDateStr ignores it,
+// and web/lib/catalyst-timing.ts (isFuzzyBadge/proximityISO) keeps a "~"
+// catalyst's catalystDate (its window END) out of sorting/calendar while still
+// using it to tell when the window has passed.
+const FUZZY_GRAMMAR = [/^[A-Za-z]{3}\s+\d{4}$/, /^Q[1-4]\s+\d{4}$/, /^H[12]\s+\d{4}$/];
+const isPhantomFuzzy = (raw) => typeof raw === "string" && FUZZY_GRAMMAR.some((re) => re.test(raw.trim()));
+// Reports generated on/after this date BLOCK on an un-tilded fuzzy date;
+// older ones only WARN (and only if still the visible/latest report for the
+// ticker) so the legacy corpus doesn't flood the output.
+const FUZZY_RULE_SINCE = "2026-11-12";
+
 // Read once, offline — no network call from the validator itself. Missing
 // file / stale entries are handled per-ticker below (never blocks).
 function readLivePrices() {
@@ -109,6 +124,25 @@ for (const dir of DIRS) {
   }
 }
 
+// Latest file per ticker per bucket = the one the site actually shows.
+const latestByBucketTicker = new Map();
+for (const { dir, file } of targets) {
+  const key = `${path.basename(dir)}:${file.split("_")[0]}`;
+  const prev = latestByBucketTicker.get(key);
+  if (!prev || file > prev) latestByBucketTicker.set(key, file);
+}
+// When validating specific files only, also consider every file on disk so
+// "latest" is judged against the whole bucket, not just the argv subset.
+for (const dir of DIRS) {
+  if (!fs.existsSync(dir)) continue;
+  for (const file of fs.readdirSync(dir)) {
+    if (!file.endsWith(".json")) continue;
+    const key = `${path.basename(dir)}:${file.split("_")[0]}`;
+    const prev = latestByBucketTicker.get(key);
+    if (!prev || file > prev) latestByBucketTicker.set(key, file);
+  }
+}
+
 let hardFails = 0, warns = 0;
 const log = [];
 
@@ -172,6 +206,26 @@ for (const { dir, file: f } of targets) {
     const dated = Array.isArray(r.catalysts) ? r.catalysts.map(catalystISO).filter(Boolean) : [];
     if (genDate && dated.length && dated.every((d) => d < genDate)) {
       warnings.push(`all catalysts dated in the past at generation time (generatedAt ${genDate}, latest catalyst ${dated.sort().at(-1)})`);
+    }
+  }
+
+  // ── Fuzzy date without "~" (BLOCKING for new reports, WARN for the visible
+  // legacy report) — see FUZZY_GRAMMAR above. dca/ is exempt: it ranks on
+  // quality/valuation, never on catalyst proximity.
+  if (bucket !== "dca") {
+    const genDate = typeof r.generatedAt === "string" ? r.generatedAt.slice(0, 10) : "";
+    const phantom = [];
+    (r.catalysts ?? []).forEach((c, i) => {
+      if (isPhantomFuzzy(c?.dateBadge)) phantom.push(`catalysts[${i}].dateBadge "${c.dateBadge}"`);
+    });
+    (r.estimateDates ?? []).forEach((e, i) => {
+      if (isPhantomFuzzy(e?.dateRange)) phantom.push(`estimateDates[${i}].dateRange "${e.dateRange}"`);
+    });
+    if (phantom.length) {
+      const msg = `fuzzy date without "~" parses to a phantom mid-period day: ${phantom.join(", ")} — write "~${phantom[0].match(/"(.*)"/)[1]}" (or the exact day if known; CLAUDE.md rule 9)`;
+      const isLatest = latestByBucketTicker.get(`${bucket}:${f.split("_")[0]}`) === f;
+      if (genDate >= FUZZY_RULE_SINCE) errs.push(msg);
+      else if (isLatest) warnings.push(msg);
     }
   }
 
