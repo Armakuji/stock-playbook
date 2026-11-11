@@ -96,8 +96,8 @@ export function TurboContent({ ranked, rankChanges = [], stopped = [] }: { ranke
                 ? `Top ${displayed.length}${ranked.length > TURBO_DISPLAY_LIMIT ? ` จาก ${ranked.length}` : ""} · เรียงตาม 🎯 upside ที่เป็นไปได้มากสุด (base case) · small/mid cap เด้ง 300%++`
                 : `Top ${displayed.length}${ranked.length > TURBO_DISPLAY_LIMIT ? ` of ${ranked.length}` : ""} · ranked by 🎯 most possible upside (base case) · small/mid cap 300%++ plays`
               : th
-                ? "ยังไม่มี turbo picks — รัน /analyze-turbo TICKER เพื่อสร้าง"
-                : "No turbo picks yet — run /analyze-turbo TICKER to generate one"}
+                ? "ยังไม่มี turbo picks ที่เผยแพร่ในตอนนี้"
+                : "No turbo picks are published right now"}
           </p>
 
           {/* ── Stats strip ───────────────────────────────────────────── */}
@@ -182,7 +182,7 @@ export function TurboContent({ ranked, rankChanges = [], stopped = [] }: { ranke
               {th ? "ยังไม่มี turbo picks" : "No turbo picks yet."}
             </p>
             <p style={{ fontSize: 13, margin: "8px 0 0", color: "#a8786f", fontFamily: "var(--font-mono, monospace)" }}>
-              {th ? "รัน " : "Run "}<code style={{ color: "#ff6d00" }}>/analyze-turbo TICKER</code>{th ? " เพื่อเพิ่ม moonshot" : " to add a moonshot pick."}
+              {th ? "กลับมาดูหลังรอบคัดหุ้นถัดไป" : "Check back after the next screen."}
             </p>
           </div>
         ) : (

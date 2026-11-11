@@ -252,7 +252,7 @@ export function CatalystContent({
         <div style={{ textAlign: "center", padding: "80px 0", color: "var(--muted)" }}>
           <div style={{ fontSize: 32, marginBottom: 12 }}>📊</div>
           <p style={{ fontSize: 15, margin: 0 }}>
-            {th ? <>ยังไม่มีรายงาน รัน <code>/analyze TICKER</code> เพื่อสร้าง</> : <>No reports yet. Run <code>/analyze TICKER</code> to generate one.</>}
+            {th ? "ยังไม่มีหุ้นที่เผยแพร่ในตอนนี้ — กลับมาดูหลังรอบคัดหุ้นถัดไป" : "No picks are published right now. Check back after the next screen."}
           </p>
         </div>
       ) : (

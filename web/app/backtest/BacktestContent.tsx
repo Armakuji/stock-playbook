@@ -175,7 +175,7 @@ function FetchButton({ pendingItems }: {
           {pendingItems.length} past checkpoint{pendingItems.length !== 1 ? "s" : ""} pending price lookup
         </div>
         <div style={{ fontSize: 11, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", opacity: 0.8 }}>
-          — run <code>npm run backtest:fetch</code> locally to fill
+          — filled by the daily price update
         </div>
       </div>
     );
@@ -218,13 +218,13 @@ function NorthStarSection({ ns }: { ns: NorthStar }) {
         ⭐ North Star — +{ns.targetPct}% within {ns.windowDays} days
       </div>
       <p style={{ fontSize: 11.5, color: "var(--muted)", margin: "0 0 16px", lineHeight: 1.6 }}>
-        The actual job of a 30% hunter, measured. MAE = max drawdown endured before the target hit.
+        The North Star (+30% within 14 days of the report), measured. MAE = the largest drawdown along the way.
       </p>
 
       {ns.totalComplete === 0 ? (
         <div style={{ textAlign: "center", padding: "24px 0", color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", fontSize: 12 }}>
           <div style={{ fontSize: 22, marginBottom: 8 }}>⏳</div>
-          {ns.totalAccumulating} window{ns.totalAccumulating === 1 ? "" : "s"} still filling — run <code>npm run backtest:fetch</code> as the 14-day windows complete.
+          {ns.totalAccumulating} window{ns.totalAccumulating === 1 ? "" : "s"} still filling — results appear as each 14-day window completes.
         </div>
       ) : (
         <>
@@ -314,7 +314,7 @@ function TurboNorthStarSection({ ns }: { ns: TurboNorthStar }) {
       {ns.totalComplete === 0 ? (
         <div style={{ textAlign: "center", padding: "24px 0", color: "var(--muted)", fontFamily: "var(--font-mono, monospace)", fontSize: 12 }}>
           <div style={{ fontSize: 22, marginBottom: 8 }}>⏳</div>
-          {ns.totalAccumulating} window{ns.totalAccumulating === 1 ? "" : "s"} still filling — run <code>npm run backtest:fetch</code> as the 30-day windows complete.
+          {ns.totalAccumulating} window{ns.totalAccumulating === 1 ? "" : "s"} still filling — results appear as each 30-day window completes.
         </div>
       ) : (
         <>
