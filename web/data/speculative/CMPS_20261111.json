@@ -1,0 +1,324 @@
+{
+  "ticker": "CMPS",
+  "companyName": "COMPASS Pathways plc",
+  "companyDescription": "Psychedelic psychiatry · COMP360 psilocybin for treatment-resistant depression — two positive Phase 3s, final NDA submission due ~mid-Nov 2026 under rolling review; aiming for the first FDA-approved psilocybin therapy (1H27 launch target)",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-11T15:00:00.000Z",
+  "price": 9.25,
+  "priceChange": 7.68,
+  "priceNote": "Live $9.25 (+7.7%) on Nov 11, 2026. The 52-week range is $4.88–$15.87. Market cap is ~$1.3B. HC Wainwright reiterated Buy/$65 on Nov 9. Cash was ~$444M at Sep 30.",
+  "marketCap": "~$1.3B",
+  "sector": "Healthcare / Biotechnology — Psychiatry (TRD)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Moonshot",
+  "score": 0,
+  "summary": "This is a regulatory moonshot. On Nov 3, Compass said the final COMP360 NDA (TRD) would be filed \"within two weeks\" under rolling review, after two positive Phase 3s (COMP005, and COMP006 with 26-week durability out Jul 2026). Next come FDA filing acceptance (~60 days, ~mid-Jan 2027), any priority-review or voucher acceleration, and a 1H 2027 launch target as the first approved psilocybin therapy. Consensus is ~$23.75 (16 analysts, Strong Buy) and HCW is $65. Cash of $444M means no survival flag. regulatory_approval is a Tier-2 leader (+5.3pp vs +2.0 overall, n=8). Base +60% (~$14.8) is a filing-plus-acceptance re-rating over ~2–3 months, above the lane's realized 30d P75 (+12.2%; Base bias +72.7pp). แนะนำ 2–4% ของ portfolio เท่านั้น — ถ้า FDA ปฏิเสธ (CRL) ลงได้ 50%+.",
+  "catalysts": [
+    {
+      "icon": "📄",
+      "name": "Final COMP360 NDA submission (TRD)",
+      "description": "Rolling review is underway with sections already submitted. On Nov 3 management said the final submission would be filed within two weeks, so the expected window is ~Nov 17.",
+      "urgencyLabel": "~1 WEEK",
+      "dateBadge": "~Nov 17, 2026",
+      "catalystDate": "2026-11-17",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🏛️",
+      "name": "FDA filing acceptance + review designation",
+      "description": "The 60-day filing decision (~mid-Jan 2027) sets the PDUFA date. Priority review or a national priority voucher could pull approval into 1H 2027.",
+      "urgencyLabel": "~9 WEEKS",
+      "dateBadge": "~mid-Jan 2027",
+      "catalystDate": "2027-01-16",
+      "badgeColor": "red",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "FDA could refuse to file or later issue a CRL. Functional unblinding, durability and REMS/monitoring design are known psychedelic review issues (Lykos MDMA CRL, 2024).",
+    "The effect size has disappointed before: CMPS fell ~36% on COMP005 in Jun 2025 despite hitting the primary endpoint.",
+    "Commercial model risk: in-clinic dosing with monitoring needs certified sites and a reimbursement path, so the launch ramp may be slow.",
+    "Warrant overhang and the likelihood of a raise around approval.",
+    "Timing slippage: \"within two weeks\" filings can slide, and the acceptance window could move PDUFA past 1H27."
+  ],
+  "estimateDates": [
+    {
+      "event": "Final NDA submission",
+      "dateRange": "~Nov 17, 2026",
+      "note": "Rolling review completes",
+      "est": "Filing PR",
+      "highlight": "yellow"
+    },
+    {
+      "event": "FDA filing acceptance",
+      "dateRange": "~mid-Jan 2027",
+      "note": "Sets PDUFA date; priority/voucher?",
+      "est": "PDUFA in 1H27",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -49.95,
+      "price": 4.63
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 60,
+      "price": 14.8
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 156.76,
+      "price": 23.75
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 300,
+      "price": 37
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "H.C. Wainwright (Nov 9, 2026)",
+      "target": 65,
+      "rating": "Buy"
+    },
+    {
+      "firm": "TD Cowen",
+      "target": 29,
+      "rating": "Buy"
+    },
+    {
+      "firm": "BTIG",
+      "target": 25,
+      "rating": "Buy"
+    },
+    {
+      "firm": "RBC",
+      "target": 21,
+      "rating": "Outperform"
+    },
+    {
+      "firm": "Jefferies",
+      "target": 18,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Wells Fargo",
+      "target": 10,
+      "rating": "Equal Weight"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "The Fed held at 3.75–4.00% on Oct 28. After the hot Oct CPI on Nov 10, CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~89–100%, with ~10% odds of 50bp. The 10-year is ~4.98%.",
+    "inflationNote": "Oct CPI: headline +0.4% m/m, core +0.3% m/m vs 0.2% expected. Sep core PCE was 3.1% y/y. Oct PCE on Nov 25 is the next print, then Nov CPI on Dec 10, the day after FOMC.",
+    "sectorImpact": "Pre-commercial CNS biotech moving toward launch. Funded (~$444M), so rates matter through biotech multiples rather than financing needs.",
+    "summary": "MEDIUM — the regulatory clock is independent of the Fed, but the Dec 9 FOMC and Dec 10 CPI can knock small-cap biotech down between filing and acceptance. Use those dips."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 9.25,
+        "note": "Current price — starter only. Not preferred: turbo at-catalyst median -13.7% (n=19)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 8,
+        "rangeMax": 8.6,
+        "note": "Fade today's +7.7% pop / FOMC-week dip — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 7.2,
+        "note": "Deep dip — only if the filing is confirmed and there is no FDA bad news",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 14.8,
+      "pct": 60,
+      "note": "Base — NDA filed and accepted; ~$14.8. Horizon ~2–3 months."
+    },
+    "tp2": {
+      "price": 23.75,
+      "pct": 156.76,
+      "note": "Bull — priority review / accelerated PDUFA; consensus ~$23.75."
+    },
+    "tp3": {
+      "price": 37,
+      "pct": 300,
+      "note": "Moon — approval of the first psilocybin therapy in 1H27; ~$37 (still well under HCW $65).",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 6.94,
+      "tightPct": -24.97,
+      "tightNote": "-25% — wider than the turbo medianMAE (-24.1%) — regulatory_approval bucket MAE not used; overall figure applies.",
+      "hard": 4.63,
+      "hardPct": -49.95,
+      "hardNote": "-50% — refuse-to-file / CRL territory.",
+      "riskReward": "6.3 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Asymmetric ✅ — clears the 5:1 turbo target"
+    },
+    "verdict": "SPECULATIVE · Moonshot 3% max — two positive Phase 3s, a filing in days, a funded balance sheet and a Tier-2 leader catalyst type (regulatory_approval +5.3pp). The risk is FDA process, not data. Measured turbo at-catalyst median is -13.7% (n=19), so Entry 2 is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "regulatory_approval",
+    "preRunup": "CMPS is already moving: +7.7% on Nov 11 with HCW reiterating $65. Filing news is largely expected, and the bigger re-rating historically comes at acceptance and approval.",
+    "preRunupTiming": "Into the filing PR (~Nov 17) and the 60-day acceptance",
+    "preRunupPct": "+7.7% on Nov 11",
+    "postWin": {
+      "avgPct": 40,
+      "range": "+33% to +74%",
+      "note": "AXSM rose ~40% on the Auvelity (depression) approval after a long review (Aug 2022). SRPT closed +74% on the eteplirsen accelerated approval (Sep 2016). Novel-mechanism CNS approvals re-rate sharply when the market had priced in doubt.",
+      "exampleDate": "Aug 19, 2022 (AXSM)"
+    },
+    "postLose": {
+      "avgPct": -40,
+      "range": "-36% to -50%",
+      "note": "CMPS itself fell ~36% on underwhelming COMP005 effect size (Jun 2025). A CRL or refuse-to-file would plausibly be -40–50% for a pre-commercial single-asset company.",
+      "exampleDate": "Jun 2025 (CMPS)"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "3%. regulatory_approval is a Tier-2 leader (+5.3pp vs +2.0 overall, n=8; 2/8 windows had SPY down >2%), which supports the upper end of turbo sizing. The SELECTIVE macro tape and the lane-wide 4.9% hitRate cap it at 3%."
+    },
+    "stopPreCatalyst": {
+      "pct": -24.97,
+      "price": 6.94,
+      "note": "Wider than the turbo medianMAE (-24.1%). Below ~$6.90 the market doubts the filing or acceptance."
+    },
+    "stopPostCatalyst": {
+      "pct": -35,
+      "note": "Refuse-to-file or a CRL means exit immediately. Do not average down into a resubmission cycle."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "AXSM",
+      "event": "FDA approves Auvelity for MDD after an extended review",
+      "date": "Aug 2022",
+      "movePct": 40,
+      "days": 1,
+      "outcome": "good",
+      "note": "Depression approval after the market had priced in rejection risk. This is the template for a COMP360 approval re-rating."
+    },
+    {
+      "ticker": "SRPT",
+      "event": "Eteplirsen accelerated approval (DMD)",
+      "date": "Sep 2016",
+      "movePct": 74,
+      "days": 1,
+      "outcome": "good",
+      "note": "Controversial first-in-class approval. The stock had priced in doubt and closed +74%, the upper bound for a contested regulatory win."
+    },
+    {
+      "ticker": "CMPS",
+      "event": "COMP005 Phase 3 hits primary but effect size disappoints",
+      "date": "Jun 2025",
+      "movePct": -36,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Same company and drug. It shows how harshly the market treats perceived weakness, and the downside shape for any FDA pushback."
+    }
+  ],
+  "sources": [
+    "https://psychedelicalpha.com/news/compass-says-nda-will-be-filed-within-two-weeks-declines-to-comment-on-usona/",
+    "https://ir.compasspathways.com/News--Events-/news/news-details/2026/Compass-Pathways-Announces-Third-Quarter-2026-Financial-Results-and-Business-Highlights/default.aspx",
+    "https://www.businesswire.com/news/home/20260707713443/en/Compass-Pathways-Announces-Six-Month-Data-from-Second-Phase-3-Trial-Confirming-Rapid-and-Durable-Profile",
+    "https://www.gurufocus.com/news/9184618/cmps-reiterated-by-hc-wainwright-co-price-target-maintained-at-65",
+    "https://stockanalysis.com/stocks/cmps/",
+    "https://www.investing.com/news/analyst-ratings/jefferies-reiterates-buy-on-compass-pathways-stock-on-trd-approval-93CH-5012513",
+    "https://www.zacks.com/amp/stock/news/1970946/axsome-axsm-soars-on-fda-nod-for-depression-drug-auvelity",
+    "https://www.biocentury.com/article/277951/fda-approves-sarepta-s-eteplirsen-first-dmd-drug",
+    "https://www.bioworld.com/articles/721464-compass-pathways-succeeds-in-phase-iii-depression-study-stock-slides",
+    "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+    "https://www.investing.com/news/economy-news/fed-rate-hike-odds-in-december-at-88-after-hot-cpi-cme-fedwatch-5017585"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Moonshot เชิงกำกับดูแล เมื่อ 3 พ.ย. Compass ระบุว่าจะยื่น NDA ฉบับสุดท้ายของ COMP360 (TRD) \"ภายในสองสัปดาห์\" ภายใต้ rolling review หลังมี Phase 3 ผลบวกสองตัว (COMP005 และ COMP006 ที่ผลความทนทาน 26 สัปดาห์ออกเมื่อ ก.ค. 2026) ขั้นต่อไปคือ FDA รับเรื่อง (~60 วัน, ~กลาง ม.ค. 2027) การเร่งรีวิวแบบ priority หรือ voucher และเป้าเปิดตัวครึ่งแรกปี 2027 เป็นยา psilocybin ตัวแรกที่ได้รับอนุมัติ consensus ~$23.75 (16 นักวิเคราะห์, Strong Buy) HCW $65 เงินสด $444M ไม่ติด survival flag regulatory_approval เป็น leader ใน Tier-2 (+5.3pp เทียบ +2.0 รวม, n=8) Base +60% (~$14.8) คือการ re-rate จากการยื่น + รับเรื่องในกรอบ ~2–3 เดือน สูงกว่า P75 30 วันจริงของกลุ่ม (+12.2%; bias +72.7pp) แนะนำ 2–4% ของ portfolio เท่านั้น — ถ้า FDA ปฏิเสธ (CRL) ลงได้ 50%+",
+      "priceNote": "ราคาสด $9.25 (+7.7%) 11 พ.ย. 2026 ช่วง 52 สัปดาห์ $4.88–$15.87 Market cap ~$1.3B HC Wainwright ย้ำ Buy/$65 เมื่อ 9 พ.ย. เงินสด ~$444M ณ 30 ก.ย.",
+      "scoreLabel": "Moonshot",
+      "catalysts": [
+        {
+          "name": "ยื่น NDA ฉบับสุดท้ายของ COMP360 (TRD)",
+          "description": "อยู่ระหว่าง rolling review และยื่นบางส่วนไปแล้ว เมื่อ 3 พ.ย. ผู้บริหารระบุว่าจะยื่นฉบับสุดท้ายภายในสองสัปดาห์ คาดช่วง ~17 พ.ย."
+        },
+        {
+          "name": "FDA รับเรื่อง + กำหนดประเภทการรีวิว",
+          "description": "การตัดสินรับเรื่องภายใน 60 วัน (~กลาง ม.ค. 2027) จะกำหนดวัน PDUFA ถ้าได้ priority review หรือ national priority voucher อาจดึงการอนุมัติเข้ามาในครึ่งแรกปี 2027"
+        }
+      ],
+      "risks": [
+        "FDA อาจไม่รับเรื่องหรือออก CRL ภายหลัง ประเด็นที่รู้กันในการรีวิวยาหลอนประสาทคือการปิดบังไม่ได้จริง ความทนทานของผล และการออกแบบ REMS/การติดตาม (Lykos MDMA ถูก CRL ปี 2024)",
+        "ขนาดผลเคยทำให้ผิดหวัง: CMPS ลง ~36% เมื่อผล COMP005 ออก มิ.ย. 2025 แม้จะผ่าน endpoint หลัก",
+        "ความเสี่ยงโมเดลธุรกิจ: การให้ยาในคลินิกพร้อมการติดตามต้องมีสถานที่ที่ได้รับรองและเส้นทางเบิกจ่าย การเปิดตลาดอาจช้า",
+        "แรงกดจาก warrant และมีโอกาสเพิ่มทุนช่วงได้รับอนุมัติ",
+        "เวลาอาจเลื่อน: การยื่น \"ภายในสองสัปดาห์\" อาจเลื่อนได้ และช่วงรับเรื่องอาจดัน PDUFA ออกไปเกินครึ่งแรกปี 2027"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.75–4.00% เมื่อ 28 ต.ค. หลัง CPI ต.ค. ออกมาร้อน (10 พ.ย.) CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ราว 89–100% และโอกาสขึ้น 50bp ~10% ส่วน yield 10 ปีอยู่ ~4.98%",
+        "inflationNote": "CPI ต.ค.: headline +0.4% m/m, core +0.3% m/m (คาด 0.2%) core PCE ก.ย. 3.1% y/y ตัวถัดไปคือ PCE ต.ค. วันที่ 25 พ.ย. แล้วตามด้วย CPI พ.ย. วันที่ 10 ธ.ค. (วันถัดจาก FOMC)",
+        "sectorImpact": "ไบโอเทคระบบประสาทที่กำลังเข้าสู่การเปิดตลาด มีเงินพอ (~$444M) ดอกเบี้ยจึงกระทบผ่าน multiple ไบโอเทค มากกว่าความต้องการเงินทุน",
+        "summary": "MEDIUM — นาฬิกาการกำกับดูแลไม่ขึ้นกับ Fed แต่ FOMC 9 ธ.ค. และ CPI 10 ธ.ค. อาจกดไบโอเทคเล็กลงช่วงระหว่างยื่นกับรับเรื่อง ใช้จังหวะย่อนั้น"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · Moonshot สูงสุด 3% — Phase 3 ผลบวกสองตัว ยื่นในไม่กี่วัน งบดุลมีเงินพอ และประเภท catalyst เป็น leader ใน Tier-2 (regulatory_approval +5.3pp) ความเสี่ยงอยู่ที่กระบวนการของ FDA ไม่ใช่ข้อมูล median ถึงวัน catalyst ของ turbo -13.7% (n=19) จึงเข้าที่ Entry 2 เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ turbo -13.7% (n=19)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "รอให้คืนการวิ่ง +7.7% ของวันนี้ / ย่อช่วง FOMC — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ร่วงหนัก — เฉพาะเมื่อยื่นแล้วและไม่มีข่าวร้ายจาก FDA",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — ยื่น NDA แล้วและ FDA รับเรื่อง ~$14.8 กรอบ ~2–3 เดือน"
+        },
+        "tp2": {
+          "note": "Bull — ได้ priority review / PDUFA เร็วขึ้น consensus ~$23.75"
+        },
+        "tp3": {
+          "note": "Moon — อนุมัติยา psilocybin ตัวแรกในครึ่งแรกปี 2027 ~$37 (ยังต่ำกว่าเป้า HCW $65 มาก)"
+        },
+        "stopLoss": {
+          "tightNote": "-25% — กว้างกว่า medianMAE ของ turbo (-24.1%)",
+          "hardNote": "-50% — โซนไม่รับเรื่อง / CRL",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "อสมมาตร ✅ — ผ่านเป้า 5:1 ของ turbo"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "ยื่น NDA ฉบับสุดท้าย",
+          "note": "rolling review ครบ"
+        },
+        {
+          "event": "FDA รับเรื่อง",
+          "note": "กำหนดวัน PDUFA; ได้ priority/voucher หรือไม่?"
+        }
+      ]
+    }
+  }
+}

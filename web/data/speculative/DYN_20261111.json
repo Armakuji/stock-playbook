@@ -1,0 +1,308 @@
+{
+  "ticker": "DYN",
+  "companyName": "Dyne Therapeutics, Inc.",
+  "companyDescription": "FORCE™ muscle-targeted oligonucleotides · z-rostudirsen BLA (exon 51 DMD) under priority review, PDUFA Jan 21, 2027; z-basivarsen (DM1) registrational ACHIEVE data Q1 2027",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-11T15:00:00.000Z",
+  "price": 17.92,
+  "priceChange": -0.72,
+  "priceNote": "Live $17.92 (-0.7%) on Nov 11, 2026. The 52-week range is $14.00–$27.31. Market cap is ~$3.3B (~187M shares). It is below the July 2026 offering price of $20.50 after peer Novartis data cut targets. Cash is $1.134B.",
+  "marketCap": "~$3.3B",
+  "sector": "Healthcare / Biotechnology — Neuromuscular (DMD, DM1)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 0,
+  "summary": "This is a two-step regulatory and data moonshot. First, z-rostudirsen (exon 51 DMD) has a priority-review PDUFA on Jan 21, 2027 for accelerated approval on dystrophin expression, the same pathway that sent SRPT +74% in 2016. Then z-basivarsen's registrational ACHIEVE data in DM1 (Q1 2027) is the bigger TAM, since there is no approved DM1 therapy. Targets were cut after peer Novartis data (Baird $26, RBC $30, MS $36; HCW $50; consensus ~$34). The stock trades below its July $20.50 raise with $1.13B cash, so there is no survival flag. fda_decision is a Tier-2 leader (+9.3pp vs +2.0, n=10). At ~$3.3B the cap is under the $5B ceiling, but the Moon (+200%) needs both catalysts to land. R/R is below 5:1, so size at the low end. Base +45% (~$26) is a post-approval re-rating, above the lane's realized 30d P75 (+12.2%; Base bias +72.7pp), with a ~3-month horizon. แนะนำ 2% ของ portfolio เท่านั้น — ถ้า CRL ลงได้ 40%+.",
+  "catalysts": [
+    {
+      "icon": "💊",
+      "name": "z-rostudirsen PDUFA — exon 51 DMD (priority review)",
+      "description": "BLA accepted Jul 2026 with Priority Review, seeking accelerated approval on dystrophin expression. PDUFA target action date is Jan 21, 2027, and the company is preparing a Q1 2027 launch.",
+      "urgencyLabel": "~10 WEEKS",
+      "dateBadge": "Jan 21, 2027",
+      "catalystDate": "2027-01-21",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🧪",
+      "name": "z-basivarsen ACHIEVE registrational topline — DM1",
+      "description": "Registrational expansion cohort data in myotonic dystrophy type 1, planned for Q1 2027 to support an accelerated-approval BLA in Q3 2027. There is no approved DM1 therapy.",
+      "urgencyLabel": "Q1 2027",
+      "dateBadge": "Q1 2027",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "A CRL or delay on z-rostudirsen. Accelerated approvals on dystrophin are contested, and peer Capricor fell ~38% on a DMD CRL (Jul 2025).",
+    "Competitive read-through: Novartis data already forced target cuts. Exon 51 is a small slice of DMD (~13%), with Sarepta incumbent.",
+    "At ~$3.3B, a 200%+ move needs DM1 success on top of approval. This is the weakest Moon math in the set.",
+    "Heavy burn: Q3 net loss ~$194M with launch costs ramping. Cash of $1.13B covers it, but expect raises after positive news.",
+    "R/R is only ~3.6:1 vs the 5:1 turbo target."
+  ],
+  "estimateDates": [
+    {
+      "event": "z-rostudirsen PDUFA (exon 51 DMD)",
+      "dateRange": "Jan 21, 2027",
+      "note": "Accelerated approval, priority review",
+      "est": "Approval → Q1 launch",
+      "highlight": "blue"
+    },
+    {
+      "event": "ACHIEVE REC topline (DM1)",
+      "dateRange": "Q1 2027",
+      "note": "Supports Q3 2027 BLA",
+      "est": "Splicing + functional signal",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -44.98,
+      "price": 9.86
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 44.98,
+      "price": 25.98
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 89.73,
+      "price": 34
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 200,
+      "price": 53.76
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "H.C. Wainwright",
+      "target": 50,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Morgan Stanley (Sep 2026)",
+      "target": 36,
+      "rating": "Overweight"
+    },
+    {
+      "firm": "RBC",
+      "target": 30,
+      "rating": "Outperform"
+    },
+    {
+      "firm": "Baird",
+      "target": 26,
+      "rating": "Outperform"
+    },
+    {
+      "firm": "Raymond James",
+      "target": 31,
+      "rating": "Outperform"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "The Fed held at 3.75–4.00% on Oct 28. After the hot Oct CPI on Nov 10, CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~89–100%, with ~10% odds of 50bp. The 10-year is ~4.98%.",
+    "inflationNote": "Oct CPI: headline +0.4% m/m, core +0.3% m/m vs 0.2% expected. Sep core PCE was 3.1% y/y. Oct PCE on Nov 25 is the next print, then Nov CPI on Dec 10, the day after FOMC.",
+    "sectorImpact": "Mid-cap rare-disease biotech moving to commercial. Well funded. Rates matter through the biotech multiple and the cost of the next raise.",
+    "summary": "MEDIUM — the PDUFA falls after the Dec 9 hike and the Dec 10 CPI, so the macro shock comes before the binary. Use any December weakness to build the position."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 17.92,
+        "note": "Current price — starter only. Not preferred: turbo at-catalyst median -13.7% (n=19)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 15.5,
+        "rangeMax": 16.5,
+        "note": "December macro dip toward the low-$16s — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 14.2,
+        "note": "Near the 52-week low ($14) — only without FDA news",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 25.98,
+      "pct": 44.98,
+      "note": "Base — z-rostudirsen approved; ~$26 (back above the $20.50 raise). Horizon ~3 months."
+    },
+    "tp2": {
+      "price": 34,
+      "pct": 89.73,
+      "note": "Bull — approval plus clean launch metrics; consensus ~$34."
+    },
+    "tp3": {
+      "price": 53.76,
+      "pct": 200,
+      "note": "Moon — DMD approval AND positive DM1 registrational data; ~$54 (above HCW $50). 6–12 month thesis.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 13.44,
+      "tightPct": -25,
+      "tightNote": "-25% — wider than the turbo medianMAE (-24.1%) — fda_decision bucket MAE not broken out; overall figure applies.",
+      "hard": 9.86,
+      "hardPct": -44.98,
+      "hardNote": "-45% — CRL territory (CAPR precedent), cushioned by ~$6/share cash.",
+      "riskReward": "3.6 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "⚠️ Below the 5:1 turbo target (3.6:1) — size at the low end"
+    },
+    "verdict": "SPECULATIVE · ค่าขนม 2% max — a dated priority-review PDUFA in a Tier-2 leader catalyst type (fda_decision +9.3pp) at a depressed price. R/R is only ~3.6:1 and the cap is ~$3.3B, so keep it small. Measured turbo at-catalyst median is -13.7% (n=19), so Entry 2 is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "Rare-disease PDUFA names often drift up in the final 2–4 weeks. SRPT rose 20%+ in the week before its 2016 approval on FDA-personnel news. DYN is currently drifting below its raise price instead.",
+    "preRunupTiming": "Final 2–4 weeks before Jan 21",
+    "preRunupPct": "-0.7% today; below the $20.50 raise",
+    "postWin": {
+      "avgPct": 74,
+      "range": "+40% to +90%",
+      "note": "SRPT closed +74% (intraday +90%) on the eteplirsen accelerated approval, the same dystrophin-surrogate pathway. DYN is a larger cap with competition, so a +30–50% re-rating is the realistic base.",
+      "exampleDate": "Sep 19, 2016 (SRPT)"
+    },
+    "postLose": {
+      "avgPct": -35,
+      "range": "-26% to -53%",
+      "note": "CAPR opened -38.6% on a DMD CRL (deramiocel, Jul 11, 2025). Reports ranged from -26% to -53% depending on timing.",
+      "exampleDate": "Jul 11, 2025 (CAPR)"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "2%. fda_decision is the strongest Tier-2 leader (+9.3pp vs +2.0, n=10, 0/10 windows with SPY down >2%), which is supportive. But R/R is ~3.6:1 (below 5:1) and the cap is ~$3.3B, so it stays at the turbo floor."
+    },
+    "stopPreCatalyst": {
+      "pct": -25,
+      "price": 13.44,
+      "note": "Wider than the turbo medianMAE (-24.1%). A close below ~$13.40 breaks the 52-week-low area and means the market is pricing a CRL."
+    },
+    "stopPostCatalyst": {
+      "pct": -30,
+      "note": "On a CRL, exit day 1. On approval, trail the stop to the $20.50 raise price."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "SRPT",
+      "event": "Eteplirsen (exon 51 DMD) accelerated approval",
+      "date": "Sep 2016",
+      "movePct": 74,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same exon, same dystrophin-surrogate pathway. This is the upside template, though SRPT was first-in-class and DYN is not."
+    },
+    {
+      "ticker": "CAPR",
+      "event": "FDA CRL for deramiocel (DMD cardiomyopathy)",
+      "date": "Jul 2025",
+      "movePct": -38,
+      "days": 1,
+      "outcome": "bad",
+      "note": "DMD regulatory-failure template: a CRL for lack of substantial evidence plus CMC issues."
+    }
+  ],
+  "sources": [
+    "https://www.barchart.com/story/news/3361754/dyne-therapeutics-announces-u-s-fda-acceptance-of-biologics-license-application-bla-for-z-rostudirsen-in-exon-51-duchenne-muscular-dystrophy-dmd",
+    "https://www.panabee.com/news/dyne-therapeutics-earnings-q3-2026",
+    "https://www.biopharmawatch.com/news/DYN/dyne-therapeutics-q3-2026-results",
+    "https://www.tipranks.com/news/the-fly/dyne-therapeutics-price-target-lowered-to-31-from-37-at-raymond-james-thefly",
+    "https://www.google.com/finance/quote/DYN%3ANASDAQ",
+    "https://www.cnbc.com/2016/09/19/sarepta-therapeutics-shares-briefly-leap-80-after-fda-approves-eteplirsen-drug.html",
+    "https://www.biocentury.com/article/277951/fda-approves-sarepta-s-eteplirsen-first-dmd-drug",
+    "https://medcitynews.com/2025/07/capricor-cell-therapy-duchenne-muscular-dystrophy-deramiocel-cardiomyopathy-heart-failure-dmd-capr/",
+    "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+    "https://www.investing.com/news/economy-news/fed-rate-hike-odds-in-december-at-88-after-hot-cpi-cme-fedwatch-5017585"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Moonshot สองขั้นทั้งการกำกับดูแลและข้อมูล ขั้นแรก z-rostudirsen (DMD exon 51) ได้ priority review วัน PDUFA 21 ม.ค. 2027 เพื่อขอ accelerated approval จากการแสดงออกของ dystrophin เส้นทางเดียวกับที่ทำให้ SRPT +74% ในปี 2016 ขั้นต่อไปคือข้อมูล registrational ACHIEVE ของ z-basivarsen ใน DM1 (Q1 2027) ซึ่ง TAM ใหญ่กว่า เพราะยังไม่มียา DM1 ที่ได้รับอนุมัติ เป้าถูกลดหลังข้อมูลของคู่แข่ง Novartis (Baird $26, RBC $30, MS $36; HCW $50; consensus ~$34) หุ้นต่ำกว่าราคาเพิ่มทุน ก.ค. $20.50 โดยมีเงินสด $1.13B จึงไม่ติด survival flag fda_decision เป็น leader ใน Tier-2 (+9.3pp เทียบ +2.0, n=10) Market cap ~$3.3B ต่ำกว่าเพดาน $5B แต่ Moon (+200%) ต้องได้ทั้งสอง catalyst R/R ต่ำกว่า 5:1 จึงถือไม้เล็ก Base +45% (~$26) คือการ re-rate หลังอนุมัติ สูงกว่า P75 30 วันจริงของกลุ่ม (+12.2%; bias +72.7pp) กรอบ ~3 เดือน แนะนำ 2% ของ portfolio เท่านั้น — ถ้าโดน CRL ลงได้ 40%+",
+      "priceNote": "ราคาสด $17.92 (-0.7%) 11 พ.ย. 2026 ช่วง 52 สัปดาห์ $14.00–$27.31 Market cap ~$3.3B (~187M หุ้น) ต่ำกว่าราคาเพิ่มทุน ก.ค. 2026 ที่ $20.50 หลังข้อมูลของคู่แข่ง Novartis ทำให้ถูกลดเป้า เงินสด $1.134B",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "PDUFA ของ z-rostudirsen — DMD exon 51 (priority review)",
+          "description": "FDA รับ BLA เมื่อ ก.ค. 2026 แบบ Priority Review เพื่อขอ accelerated approval จากการแสดงออกของ dystrophin วัน PDUFA คือ 21 ม.ค. 2027 บริษัทเตรียมเปิดตลาด Q1 2027"
+        },
+        {
+          "name": "ผล registrational ACHIEVE ของ z-basivarsen — DM1",
+          "description": "ข้อมูลกลุ่มขยายแบบ registrational ในโรค myotonic dystrophy type 1 คาด Q1 2027 เพื่อยื่น BLA แบบ accelerated approval ใน Q3 2027 ยังไม่มียา DM1 ที่ได้รับอนุมัติ"
+        }
+      ],
+      "risks": [
+        "โดน CRL หรือเลื่อนสำหรับ z-rostudirsen — accelerated approval จาก dystrophin มีข้อถกเถียง Capricor ลง ~38% จาก CRL ใน DMD (ก.ค. 2025)",
+        "แรงกดจากคู่แข่ง: ข้อมูล Novartis ทำให้ถูกลดเป้าไปแล้ว exon 51 เป็นส่วนเล็กของ DMD (~13%) และมี Sarepta เป็นผู้เล่นเดิม",
+        "ที่ ~$3.3B การวิ่ง 200%+ ต้องได้ทั้ง DM1 และการอนุมัติ — คณิตศาสตร์ Moon อ่อนที่สุดในชุดนี้",
+        "เผาเงินหนัก: ขาดทุนสุทธิ Q3 ~$194M และต้นทุนเปิดตลาดเพิ่มขึ้น เงินสด $1.13B รองรับได้ แต่คาดว่าจะเพิ่มทุนหลังข่าวดี",
+        "R/R แค่ ~3.6:1 เทียบเป้า 5:1 ของ turbo"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.75–4.00% เมื่อ 28 ต.ค. หลัง CPI ต.ค. ออกมาร้อน (10 พ.ย.) CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ราว 89–100% และโอกาสขึ้น 50bp ~10% ส่วน yield 10 ปีอยู่ ~4.98%",
+        "inflationNote": "CPI ต.ค.: headline +0.4% m/m, core +0.3% m/m (คาด 0.2%) core PCE ก.ย. 3.1% y/y ตัวถัดไปคือ PCE ต.ค. วันที่ 25 พ.ย. แล้วตามด้วย CPI พ.ย. วันที่ 10 ธ.ค. (วันถัดจาก FOMC)",
+        "sectorImpact": "ไบโอเทคโรคหายากขนาดกลางที่กำลังเข้าสู่เชิงพาณิชย์ มีเงินพอ ดอกเบี้ยกระทบผ่าน multiple ไบโอเทคและต้นทุนการเพิ่มทุนครั้งถัดไป",
+        "summary": "MEDIUM — วัน PDUFA อยู่หลังการขึ้นดอกเบี้ย 9 ธ.ค. และ CPI 10 ธ.ค. แรงกระแทกจาก macro จึงมาก่อน binary ใช้ช่วงอ่อนตัวในเดือน ธ.ค. สะสมหุ้น"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · ค่าขนม สูงสุด 2% — PDUFA แบบ priority review ที่มีวันแน่นอน ในประเภท catalyst ที่เป็น leader ของ Tier-2 (fda_decision +9.3pp) ที่ราคาตกต่ำ แต่ R/R แค่ ~3.6:1 และ cap ~$3.3B จึงถือไม้เล็ก median ถึงวัน catalyst ของ turbo -13.7% (n=19) จึงเข้าที่ Entry 2 เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ turbo -13.7% (n=19)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "ย่อจาก macro เดือน ธ.ค. ลงแถว $16 ต้นๆ — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ใกล้ 52-week low ($14) — เฉพาะเมื่อไม่มีข่าวจาก FDA",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — z-rostudirsen ได้รับอนุมัติ ~$26 (กลับเหนือราคาเพิ่มทุน $20.50) กรอบ ~3 เดือน"
+        },
+        "tp2": {
+          "note": "Bull — อนุมัติ + ตัวเลขเปิดตลาดดี consensus ~$34"
+        },
+        "tp3": {
+          "note": "Moon — อนุมัติ DMD และข้อมูล DM1 registrational บวก ~$54 (เหนือเป้า HCW $50) thesis 6–12 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-25% — กว้างกว่า medianMAE ของ turbo (-24.1%)",
+          "hardNote": "-45% — โซน CRL (เทียบ CAPR) มีเงินสด ~$6/หุ้น ช่วยรองรับ",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "⚠️ ต่ำกว่าเป้า 5:1 ของ turbo (3.6:1) — ถือไม้เล็ก"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "PDUFA z-rostudirsen (DMD exon 51)",
+          "note": "Accelerated approval แบบ priority review"
+        },
+        {
+          "event": "ผล ACHIEVE REC (DM1)",
+          "note": "รองรับการยื่น BLA Q3 2027"
+        }
+      ]
+    }
+  }
+}
