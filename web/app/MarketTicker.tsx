@@ -48,11 +48,11 @@ interface MarketTimingData {
 }
 
 // ── Colour maps ───────────────────────────────────────────────────────
-const RISK_COLORS: Record<Week["risk"], { bg: string; border: string; badge: string; label: string }> = {
-  high:   { bg: "rgba(239,68,68,0.06)",  border: "#ef4444", badge: "#ef4444", label: "🔴 HIGH"  },
-  medium: { bg: "rgba(245,158,11,0.06)", border: "#f59e0b", badge: "#f59e0b", label: "⚠️ MED"   },
-  entry:  { bg: "rgba(16,185,129,0.08)", border: "#10b981", badge: "#10b981", label: "✅ ENTRY" },
-  wait:   { bg: "rgba(148,163,184,0.06)",border: "#475569", badge: "#94a3b8", label: "⏸ WAIT"  },
+const RISK_COLORS: Record<Week["risk"], { badge: string; label: string; labelTh: string }> = {
+  high:   { badge: "#f87171", label: "High risk", labelTh: "เสี่ยงสูง" },
+  medium: { badge: "#fbbf24", label: "Caution",   labelTh: "ระวัง"    },
+  entry:  { badge: "#34d399", label: "Entry",     labelTh: "เข้าได้"   },
+  wait:   { badge: "#94a3b8", label: "Wait",      labelTh: "รอ"       },
 };
 
 const CHIP_COLORS: Record<WeekEvent["chip"], { bg: string; text: string; border: string }> = {
@@ -90,9 +90,9 @@ const VERDICT_STYLE: Record<MarketTimingData["verdict"], {
 };
 
 const DECISION_COLOR: Record<DecisionItem["color"], string> = {
-  green:  "#10b981",
-  red:    "#ef4444",
-  yellow: "#f59e0b",
+  green:  "#34d399",
+  red:    "#f87171",
+  yellow: "#fbbf24",
 };
 
 // ── Component ─────────────────────────────────────────────────────────
@@ -215,138 +215,79 @@ export function MarketTicker({ data }: { data: MarketTimingData | null | undefin
 
       {/* ── Expanded drawer ─────────────────────────────────────── */}
       {open && (
-        <div style={{ borderBottom: `1px solid ${vs.drawerBorder}`, background: "var(--card)" }}>
-          <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+        <div className="mt-drawer" style={{ borderBottom: `1px solid ${vs.drawerBorder}`, background: "var(--card)" }}>
+          <div className="mt-wrap">
 
-            {/* Summary + entry window — always stacked (TH summary is long; side-by-side flex broke layout) */}
-            <div style={{ padding: "12px 16px", display: "flex", flexDirection: "column", gap: 12 }}>
-              <div style={{ fontSize: 11, color: "var(--text)", lineHeight: 1.7 }}>
-                {summaryText}
+            {/* Read (left) · decide (right) */}
+            <div className="mt-top">
+              <div>
+                <p className="mt-summary">{summaryText}</p>
+
+                <h3 className="mt-h">{th ? "ถ้าเกิดสิ่งนี้" : "If this happens"}</h3>
+                <ul className="mt-if">
+                  {data.decisionTree.map((dt, i) => (
+                    <li key={i}>
+                      <span className="mt-if-cond">{dt.condition}</span>
+                      <span className="mt-if-act" style={{ color: DECISION_COLOR[dt.color] }}>{dt.action}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <div style={{
-                alignSelf: "center",
-                width: "100%",
-                maxWidth: 360,
-                padding: "9px 16px",
-                borderRadius: 9,
-                background: "rgba(16,185,129,0.08)",
-                border: "1px solid rgba(16,185,129,0.25)",
-                textAlign: "center",
-              }}>
-                <div style={{ fontSize: 9, color: "#10b981", fontWeight: 800, letterSpacing: "1px", marginBottom: 4 }}>
-                  🎯 BEST ENTRY WINDOW
+
+              <aside className="mt-side">
+                <div className="mt-entry">
+                  <h3 className="mt-h" style={{ marginTop: 0 }}>
+                    {th ? "ช่วงเข้าซื้อ" : "Entry window"}
+                    {inEntryWindow && <span className="mt-live">{th ? "เปิดอยู่" : "open now"}</span>}
+                  </h3>
+                  <div className="mt-entry-label">{data.entryWindow.label}</div>
+                  <p className="mt-entry-cond">{entryConditionText}</p>
                 </div>
-                <div style={{ fontSize: 16, fontWeight: 800, color: "#10b981" }}>
-                  {data.entryWindow.label}
-                </div>
-                <div style={{ fontSize: 9, color: "var(--muted)", marginTop: 4, lineHeight: 1.5 }}>
-                  {entryConditionText}
-                </div>
-              </div>
-            </div>
 
-            {/* Event Risk Calendar table */}
-            <div style={{ padding: "0 16px 12px" }}>
-              <div style={{
-                fontSize: 9, fontWeight: 800, color: "var(--muted)", textTransform: "uppercase",
-                letterSpacing: "1px", marginBottom: 6,
-              }}>
-                📅 EVENT RISK CALENDAR
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: 2, borderRadius: 8, overflow: "hidden", border: "1px solid var(--border)" }}>
-                {data.weeks.map((week, i) => {
-                  const rc = RISK_COLORS[week.risk];
-                  return (
-                    <div key={i} style={{
-                      display: "grid",
-                      gridTemplateColumns: "120px 1fr auto auto",
-                      gap: 8, alignItems: "center",
-                      padding: "7px 10px",
-                      background: rc.bg,
-                      borderLeft: `3px solid ${rc.border}`,
-                      borderBottom: i < data.weeks.length - 1 ? "1px solid var(--border)" : "none",
-                    }}>
-                      {/* Week label */}
-                      <div style={{ fontSize: 10, fontWeight: 700, color: "var(--text)", whiteSpace: "nowrap" }}>
-                        {week.label}
-                      </div>
-
-                      {/* Event chips */}
-                      <div style={{ display: "flex", flexWrap: "wrap", gap: 4 }}>
-                        {week.events.map((ev, j) => {
-                          const cc = CHIP_COLORS[ev.chip];
-                          return (
-                            <span key={j} style={{
-                              fontSize: 9, fontWeight: 700, padding: "1px 7px", borderRadius: 4,
-                              background: cc.bg, color: cc.text, border: `1px solid ${cc.border}`,
-                              whiteSpace: "nowrap",
-                            }}>
-                              {ev.name}
-                            </span>
-                          );
-                        })}
-                      </div>
-
-                      {/* Risk badge */}
-                      <div style={{
-                        fontSize: 9, fontWeight: 800, color: rc.badge, whiteSpace: "nowrap",
-                      }}>
-                        {rc.label}
-                      </div>
-
-                      {/* Action */}
-                      <div style={{ fontSize: 9, color: "var(--muted)", whiteSpace: "nowrap", textAlign: "right" }}>
-                        {th ? (week.actionTh || week.action) : week.action}
-                      </div>
+                <h3 className="mt-h">{th ? "ตัวเลขมหภาค" : "Macro"}</h3>
+                <dl className="mt-macro">
+                  {[
+                    { label: "Fed",                           value: data.macroSnapshot.fedRate },
+                    { label: "PCE",                           value: data.macroSnapshot.pce },
+                    { label: "VIX",                           value: data.macroSnapshot.vix },
+                    { label: th ? "FOMC ถัดไป" : "Next FOMC", value: data.macroSnapshot.nextFomc },
+                    { label: th ? "เทรนด์" : "Trend",         value: data.macroSnapshot.marketTrend },
+                  ].map(({ label, value }) => (
+                    <div key={label}>
+                      <dt>{label}</dt>
+                      <dd>{value}</dd>
                     </div>
-                  );
-                })}
-              </div>
+                  ))}
+                </dl>
+              </aside>
             </div>
 
-            {/* Decision tree + macro snapshot side by side */}
-            <div style={{ padding: "0 16px 14px", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
-
-              {/* Decision tree */}
-              <div style={{ background: "rgba(0,0,0,0.15)", borderRadius: 8, padding: "10px 12px" }}>
-                <div style={{ fontSize: 9, fontWeight: 800, color: "var(--muted)", letterSpacing: "1px", textTransform: "uppercase", marginBottom: 8 }}>
-                  IF / THEN
-                </div>
-                {data.decisionTree.map((dt, i) => (
-                  <div key={i} style={{ display: "flex", gap: 6, alignItems: "flex-start", marginBottom: 6, fontSize: 10 }}>
-                    <span style={{ color: "var(--muted)", flexShrink: 0, marginTop: 1 }}>→</span>
-                    <div>
-                      <span style={{ color: "var(--text)" }}>{dt.condition}</span>
-                      {" "}
-                      <span style={{ fontWeight: 800, color: DECISION_COLOR[dt.color] }}>{dt.action}</span>
+            {/* Week by week */}
+            <h3 className="mt-h" style={{ marginTop: 22 }}>{th ? "รายสัปดาห์" : "Week by week"}</h3>
+            <ol className="mt-weeks">
+              {data.weeks.map((week, i) => {
+                const rc = RISK_COLORS[week.risk];
+                return (
+                  <li key={i} className="mt-week">
+                    <span className="mt-week-date">{week.label}</span>
+                    <span className="mt-week-risk" style={{ color: rc.badge }}>
+                      <span className="mt-dot" style={{ background: rc.badge }} />
+                      {th ? rc.labelTh : rc.label}
+                    </span>
+                    <div className="mt-week-body">
+                      <div className="mt-week-events">
+                        {week.events.map((ev, j) => (
+                          <span key={j} className={ev.chip === "red" ? "is-hot" : undefined}>{ev.name}</span>
+                        ))}
+                      </div>
+                      <div className="mt-week-action">{th ? (week.actionTh || week.action) : week.action}</div>
                     </div>
-                  </div>
-                ))}
-              </div>
+                  </li>
+                );
+              })}
+            </ol>
 
-              {/* Macro snapshot */}
-              <div style={{ background: "rgba(0,0,0,0.15)", borderRadius: 8, padding: "10px 12px" }}>
-                <div style={{ fontSize: 9, fontWeight: 800, color: "var(--muted)", letterSpacing: "1px", textTransform: "uppercase", marginBottom: 8 }}>
-                  MACRO SNAPSHOT
-                </div>
-                {[
-                  { label: "Fed Rate",    value: data.macroSnapshot.fedRate    },
-                  { label: "PCE",         value: data.macroSnapshot.pce        },
-                  { label: "VIX",         value: data.macroSnapshot.vix        },
-                  { label: "Next FOMC",   value: data.macroSnapshot.nextFomc   },
-                  { label: "Trend",       value: data.macroSnapshot.marketTrend },
-                ].map(({ label, value }) => (
-                  <div key={label} style={{ display: "flex", justifyContent: "space-between", marginBottom: 5, fontSize: 10 }}>
-                    <span style={{ color: "var(--muted)" }}>{label}</span>
-                    <span style={{ color: "var(--text)", fontWeight: 600, textAlign: "right", maxWidth: "60%" }}>{value}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div style={{ padding: "0 16px 12px", fontSize: 9, color: "var(--muted)" }}>
-              upd. {generatedDate}
-            </div>
+            <div className="mt-updated">{th ? "อัปเดต" : "Updated"} {generatedDate}</div>
           </div>
         </div>
       )}
@@ -363,6 +304,44 @@ export function MarketTicker({ data }: { data: MarketTimingData | null | undefin
         }
         @media (max-width: 640px) {
           .srw-ticker-entry { display: none; }
+        }
+
+        /* ── Drawer: sans for reading, mono only for dates/numbers ── */
+        .mt-drawer { font-family: var(--font-body, system-ui, sans-serif); }
+        .mt-wrap { max-width: 1200px; margin: 0 auto; padding: 18px 16px 14px; }
+        .mt-top { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 36px; align-items: start; }
+        .mt-summary { margin: 0; max-width: 68ch; font-size: 13.5px; line-height: 1.65; color: var(--text); }
+        .mt-h { margin: 18px 0 8px; font-size: 12px; font-weight: 600; color: var(--muted); letter-spacing: 0; display: flex; align-items: center; gap: 8px; }
+        .mt-if { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; max-width: 68ch; }
+        .mt-if li { font-size: 12.5px; line-height: 1.5; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 14px; padding: 5px 0; border-top: 1px solid var(--border); }
+        .mt-if li:first-child { border-top: none; padding-top: 0; }
+        .mt-if-cond { color: var(--muted); }
+        .mt-if-act { font-weight: 600; }
+        .mt-side { border-left: 1px solid var(--border); padding-left: 24px; }
+        .mt-entry-label { font-family: var(--font-mono, monospace); font-size: 15px; font-weight: 700; color: #34d399; line-height: 1.4; }
+        .mt-entry-cond { margin: 6px 0 0; font-size: 12.5px; line-height: 1.55; color: var(--muted); }
+        .mt-live { font-size: 10.5px; font-weight: 600; color: #34d399; background: rgba(52,211,153,0.12); padding: 1px 7px; border-radius: 99px; }
+        .mt-macro { margin: 0; display: grid; gap: 4px; }
+        .mt-macro > div { display: grid; grid-template-columns: 84px minmax(0, 1fr); gap: 10px; font-size: 12.5px; line-height: 1.45; }
+        .mt-macro dt { color: var(--muted); }
+        .mt-macro dd { margin: 0; color: var(--text); font-family: var(--font-mono, monospace); font-size: 12px; }
+        .mt-weeks { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--border); }
+        .mt-week { display: grid; grid-template-columns: 116px 104px minmax(0, 1fr); gap: 14px; align-items: baseline; padding: 9px 0; border-bottom: 1px solid var(--border); }
+        .mt-week-date { font-family: var(--font-mono, monospace); font-size: 12px; font-weight: 600; color: var(--text); white-space: nowrap; }
+        .mt-week-risk { font-size: 12px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+        .mt-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+        .mt-week-events { font-size: 12.5px; color: var(--muted); display: flex; flex-wrap: wrap; column-gap: 14px; row-gap: 2px; }
+        .mt-week-events .is-hot { color: #f87171; }
+        .mt-week-action { font-size: 13px; color: var(--text); line-height: 1.5; margin-top: 2px; max-width: 80ch; }
+        .mt-updated { margin-top: 10px; font-size: 11px; color: var(--muted); }
+        @media (max-width: 860px) {
+          .mt-top { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+          .mt-side { border-left: none; padding-left: 0; border-top: 1px solid var(--border); padding-top: 14px; margin-top: 14px; }
+          .mt-if li { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+        }
+        @media (max-width: 640px) {
+          .mt-week { grid-template-columns: auto minmax(0, 1fr); row-gap: 4px; }
+          .mt-week-body { grid-column: 1 / -1; }
         }
       `}</style>
     </div>

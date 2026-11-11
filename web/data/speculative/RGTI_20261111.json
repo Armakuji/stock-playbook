@@ -1,0 +1,354 @@
+{
+  "ticker": "RGTI",
+  "companyName": "Rigetti Computing, Inc.",
+  "companyDescription": "Superconducting quantum computing hardware + cloud access · Novera QPUs and Cepheus multi-chip systems · $497M cash, no debt · pending up-to-$100M Dept. of Commerce CHIPS award (LOI, equity-linked) · FY2026 revenue guided to ~$20M contingent on C-DAC system acceptance in Q4",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-11T16:50:00.000Z",
+  "price": 11.52,
+  "priceChange": -5.23,
+  "priceNote": "Live $11.52 (-5.2%) on Nov 11, 2026, the session after the Nov 10 Q3 print — down 34% from $17.51 at the Aug 10 report and roughly 75% below its 52-week high per B. Riley's Nov 2 note. Market cap ~$4.0B (~344M shares), now inside the turbo $5B ceiling. Old Base +45% ($25.39) is replaced by a new Base +30% ($14.98) anchored to the live price.",
+  "marketCap": "~$4.0B",
+  "sector": "Technology / Quantum Computing",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 45,
+  "summary": "Refresh after a -34% slide since the Aug 10 report and a weak Q3: revenue fell to $1.4M (vs $1.9M a year ago and a ~$3.5M estimate) on lumpy milestone and hardware-acceptance timing, though 9M revenue still doubled to $10.9M and cash held at $497M with no debt. Full-year 2026 revenue is guided to ~$20M, which needs customer acceptance of the C-DAC system and revenue recognition in Q4 — that is now the near-term proof point. The up-to-$100M Department of Commerce CHIPS award is still only a letter of intent (signed May 21), with the government taking an equity stake tied to the funding; no definitive agreement has been announced. Survival is clean, but the stock is a ~$4B company on ~$20M of revenue in a sector analysts are resetting (B. Riley cut to $25 on Nov 2), so this is a ค่าขนม position, not a Moonshot. Measured turbo median return to just after the catalyst is -10.6% (n=69): prefer the dip zone. Size 2% max.",
+  "catalysts": [
+    {
+      "icon": "🖥️",
+      "name": "C-DAC System Acceptance → FY2026 ~$20M Revenue",
+      "description": "Management's ~$20M FY2026 revenue outlook assumes customer acceptance of the C-DAC system and revenue recognition in Q4 2026. With 9M revenue at $10.9M, Q4 needs roughly $9M — the acceptance is the swing factor.",
+      "urgencyLabel": "Q4 2026",
+      "dateBadge": "~Q4 2026",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🏛️",
+      "name": "Dept. of Commerce $100M LOI → Definitive Agreement",
+      "description": "LOI signed May 21, 2026 for up to $100M over three years under the CHIPS Act, with Commerce receiving an equity stake tied to the amount awarded. Conversion to definitive agreements has no announced date.",
+      "urgencyLabel": "PENDING",
+      "dateBadge": "Pending",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "📉",
+      "name": "Q3 2026 Results",
+      "description": "Revenue $1.4M (miss vs ~$3.5M est.), operating loss $33.2M, GAAP net loss $3.1M on non-cash warrant/earn-out adjustments, cash $497M, no debt. Stock -5.2% the next session.",
+      "urgencyLabel": "RESOLVED",
+      "dateBadge": "Nov 10, 2026",
+      "catalystDate": "2026-11-10",
+      "badgeColor": "red",
+      "dotColor": "red"
+    }
+  ],
+  "risks": [
+    "Q3 revenue fell 27% YoY to $1.4M and missed estimates; revenue is lumpy and tied to a handful of hardware acceptances, so the ~$20M FY2026 guide depends on one Q4 customer acceptance (C-DAC).",
+    "~$4.0B market cap on ~$20M of annual revenue — valuation still rests almost entirely on the quantum-sector narrative, which is being reset (B. Riley cut RGTI to $25 from $35 and D-Wave to $27 from $40 on Nov 2).",
+    "The $100M Department of Commerce award is still an LOI; it may not convert, and if it does the government's equity stake dilutes existing holders.",
+    "Operating loss of $33.2M in Q3; the small GAAP loss was flattered by non-cash warrant and earn-out fair-value changes, not operations.",
+    "High correlation with IONQ, QBTS and LAES — sector-wide selling (including the Nov 5 semiconductor selloff) moves RGTI regardless of company news."
+  ],
+  "estimateDates": [
+    {
+      "event": "C-DAC acceptance / Q4 revenue recognition",
+      "dateRange": "~Q4 2026",
+      "note": "Needed for the ~$20M FY2026 revenue outlook",
+      "est": "~$9M Q4 revenue",
+      "highlight": "blue"
+    },
+    {
+      "event": "Q4 / FY2026 results",
+      "dateRange": "~Q1 2027",
+      "note": "First read on whether the C-DAC acceptance landed",
+      "est": "~$20M FY26",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -40,
+      "price": 6.91
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 30,
+      "price": 14.98
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 117,
+      "price": 25.0
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 200,
+      "price": 34.56
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "B. Riley",
+      "target": 25,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Benchmark",
+      "target": 25,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Mizuho",
+      "target": 27,
+      "rating": "Outperform"
+    }
+  ],
+  "macroRisk": {
+    "rateOutlook": "The Fed hiked 25bp on Sep 16, 2026 (first hike since 2023), and a hot October CPI (core +0.3% m/m vs 0.2% expected) has pushed Dec 9 FOMC hike odds to roughly 89–100%, with the 10-year near 4.98%.",
+    "inflationNote": "October CPI ran hot (headline +0.4% m/m, core +0.3%); October PCE on Nov 25 is the next inflation read.",
+    "fedRisk": "HIGH",
+    "sectorImpact": "A ~$4B valuation on ~$20M of revenue is about as long-duration as equities get, so a priced-in December hike and a ~5% 10-year hit the multiple directly. Cash of $497M means no forced raise, but it does not protect the multiple.",
+    "summary": "HIGH — rates are the main driver of quantum-sector multiples right now, and RGTI has no near-term earnings to anchor on; the clean balance sheet limits survival risk, not drawdown risk."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 11.52,
+        "note": "Live price after the Q3 miss — starter only; measured turbo at-catalyst median is -10.6% (n=69)",
+        "timing": "Now (starter only)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 10.0,
+        "rangeMax": 10.8,
+        "note": "Dip zone — preferred entry",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 8.5,
+        "note": "Deep dip — thesis-intact only (C-DAC accepted, cash intact)",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 14.98,
+      "pct": 30.0,
+      "note": "Base — C-DAC acceptance lands and FY2026 prints ~$20M; ~6–9 month horizon through the Q4 print (Base is above the turbo realized P75 of 21.5%; turbo optimismBiasBasePct is +52.5pp)"
+    },
+    "tp2": {
+      "price": 25.0,
+      "pct": 117.0,
+      "note": "Bull — ~$20M FY26 plus a definitive Commerce agreement; matches the B. Riley and Benchmark $25 targets"
+    },
+    "tp3": {
+      "price": 34.56,
+      "pct": 200.0,
+      "note": "Moon — sector re-rate back toward 2025 levels on a funded government stake plus multi-system orders",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 8.8,
+      "tightPct": -23.6,
+      "tightNote": "Wider than turbo medianMAE (-20%, n=107) and partnership_win's -21.7% (n=32)",
+      "hard": 6.9,
+      "hardPct": -40.1,
+      "hardNote": "A break here means the market is pricing the C-DAC acceptance failing and the LOI lapsing",
+      "riskReward": "5.0 : 1",
+      "rrNote": "Entry 1 to tight stop vs TP2",
+      "rrWarning": "Meets the 5:1 turbo target"
+    },
+    "verdict": "SPECULATIVE — clean survival ($497M cash, no debt) but a Q3 revenue miss and a ~$4B valuation on ~$20M revenue; the next proof is C-DAC acceptance in Q4. Measured turbo median return from report price to just after the catalyst is -10.6% (n=69), so buying at report price is not the default: prefer $10.00–10.80. ค่าขนม sizing 2%.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "partnership_win is the largest turbo bucket (n=32 complete, median excess vs SPY +7.3pp vs +7.7 overall — in line, not a laggard). RGTI's history shows sharp sector-wide runs on government-funding headlines rather than slow pre-event builds.",
+    "preRunupTiming": "Headline-driven — 1–3 days around government funding news",
+    "preRunupPct": "+9% to +20% on sector-wide government-funding headlines",
+    "postWin": {
+      "avgPct": 19,
+      "range": "+9% to +30%",
+      "note": "RGTI rose +9.3% in a single session in Aug 2026 on reports of U.S. government equity stakes in quantum firms; a definitive Commerce agreement would be a more concrete version of the same headline.",
+      "exampleDate": "Aug 2026"
+    },
+    "postLose": {
+      "avgPct": -8,
+      "range": "-4% to -15%",
+      "note": "RGTI fell -4.4% after hours on its Aug 6, 2026 Q2 print and -5.2% the session after its Nov 10, 2026 Q3 miss (live-prices.json, Nov 11).",
+      "exampleDate": "Aug 6, 2026 / Nov 11, 2026"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "Clean balance sheet, but the moon case needs both a sector re-rate and a funded government deal; ~$4B cap limits asymmetry, so the low end of the 2–5% band."
+    },
+    "stopPreCatalyst": {
+      "pct": -23.6,
+      "price": 8.8,
+      "note": "Wider than partnership_win medianMAE (-21.7%, n=32)"
+    },
+    "stopPostCatalyst": {
+      "pct": -30,
+      "note": "Exit if FY2026 revenue lands well below ~$20M (C-DAC not accepted) or the Commerce LOI is withdrawn"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "RGTI",
+      "event": "Sector-wide quantum rally on reports of U.S. government equity stakes",
+      "date": "Aug 2026",
+      "movePct": 9.3,
+      "days": 1,
+      "outcome": "good",
+      "note": "Shows how fast RGTI reprices on government-funding headlines — the same mechanism a definitive Commerce agreement would trigger."
+    },
+    {
+      "ticker": "RGTI",
+      "event": "Q3 2026 results — revenue $1.4M, miss vs ~$3.5M estimate",
+      "date": "Nov 2026",
+      "movePct": -5.2,
+      "days": 1,
+      "outcome": "bad",
+      "note": "The most recent print: lumpy hardware revenue missed and the stock fell the next session, which is why FY26 hinges on the C-DAC acceptance."
+    },
+    {
+      "ticker": "RGTI",
+      "event": "Trailing-year re-rate on federal quantum-investment validation",
+      "date": "Dec 2025",
+      "movePct": 545,
+      "days": 365,
+      "outcome": "good",
+      "note": "The magnitude the moon case leans on: a sustained sector re-rate driven by government validation, not a single event."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "Rigetti Computing Reports Third Quarter 2026 Financial Results",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001838359/000110465926125152/rgti-ex99d1.htm",
+    "date": "Nov 2026"
+  },
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/0001838359/000110465926125152/rgti-ex99d1.htm",
+    "https://thequantuminsider.com/2026/11/11/rigetti-q3-2026-results-quantum-computing-roadmap/",
+    "https://www.stocktitan.net/news/RGTI/rigetti-computing-reports-third-quarter-2026-financial-j26a547yudna.html",
+    "https://www.gurufocus.com/news/9189769/rigetti-computing-reports-q3-2026-revenue-of-14-million-beats-eps-estimates-with-008-loss-per-share",
+    "https://investors.rigetti.com/news-releases/news-release-details/rigetti-signs-letter-intent-us-government-quantum-computing",
+    "https://www.tikr.com/blog/b-rileys-25-target-says-rigettis-selloff-went-too-far",
+    "https://www.marketbeat.com/instant-alerts/rigetti-computing-nasdaqrgti-price-target-cut-to-2700-by-analysts-at-mizuho-2026-05-12/",
+    "https://www.fool.com/investing/2026/06/12/ionq-rigetti-and-d-wave-are-surging-again-is-quant/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "รีเฟรชหลังราคาร่วง 34% จากรายงาน 10 ส.ค. และงบ Q3 ที่อ่อน: รายได้ลดเหลือ $1.4M (ปีก่อน $1.9M คาด ~$3.5M) เพราะจังหวะการรับมอบระบบไม่สม่ำเสมอ แต่รายได้ 9 เดือนยังโตเท่าตัวเป็น $10.9M และมีเงินสด $497M ไม่มีหนี้ เป้ารายได้ทั้งปี 2026 ~$20M ต้องอาศัยการรับมอบระบบ C-DAC และรับรู้รายได้ใน Q4 นี่คือจุดพิสูจน์ระยะใกล้ ส่วนเงินทุน CHIPS จาก Department of Commerce สูงสุด $100M ยังเป็นแค่ LOI (เซ็น 21 พ.ค.) และรัฐบาลจะได้หุ้นตามเงินที่ให้ ยังไม่มีสัญญาจริง survival ยังสะอาด แต่บริษัทมูลค่า ~$4B บนรายได้ ~$20M ในกลุ่มที่นักวิเคราะห์กำลังลดเป้า (B. Riley ลดเหลือ $25 เมื่อ 2 พ.ย.) จึงเป็นไม้ค่าขนม ไม่ใช่ Moonshot ผลตอบแทน median ของ turbo ณ หลัง catalyst คือ -10.6% (n=69) ให้รอโซนย่อ แนะนำ 2% ของ portfolio เท่านั้น",
+      "priceNote": "ราคาล่าสุด $11.52 (-5.2%) วันที่ 11 พ.ย. 2026 หลังงบ Q3 วันที่ 10 พ.ย. — ลง 34% จาก $17.51 ในรายงาน 10 ส.ค. และต่ำกว่า 52-week high ราว 75% ตามโน้ต B. Riley วันที่ 2 พ.ย. market cap ~$4.0B (~344M หุ้น) อยู่ในเพดาน $5B ของ turbo แล้ว Base เดิม +45% ($25.39) ถูกแทนด้วย Base ใหม่ +30% ($14.98) คิดจากราคาล่าสุด",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "รับมอบระบบ C-DAC → รายได้ FY2026 ~$20M",
+          "description": "เป้ารายได้ FY2026 ~$20M สมมติว่าลูกค้ารับมอบระบบ C-DAC และรับรู้รายได้ใน Q4 2026 รายได้ 9 เดือน $10.9M แปลว่า Q4 ต้องได้ราว $9M การรับมอบนี้คือตัวชี้ขาด"
+        },
+        {
+          "name": "LOI $100M กับ Dept. of Commerce → สัญญาจริง",
+          "description": "เซ็น LOI 21 พ.ค. 2026 สูงสุด $100M ใน 3 ปีภายใต้ CHIPS Act โดย Commerce ได้หุ้นตามเงินที่ให้ ยังไม่มีกำหนดวันเซ็นสัญญาจริง"
+        },
+        {
+          "name": "งบ Q3 2026",
+          "description": "รายได้ $1.4M (ต่ำกว่าคาด ~$3.5M) ขาดทุนจากการดำเนินงาน $33.2M ขาดทุนสุทธิ GAAP $3.1M จากรายการ warrant/earn-out ที่ไม่ใช่เงินสด เงินสด $497M ไม่มีหนี้ หุ้นลง 5.2% วันถัดมา"
+        }
+      ],
+      "risks": [
+        "รายได้ Q3 ลด 27% YoY เหลือ $1.4M และต่ำกว่าคาด รายได้ไม่สม่ำเสมอและผูกกับการรับมอบฮาร์ดแวร์ไม่กี่ราย เป้า ~$20M ปี 2026 จึงขึ้นกับการรับมอบ C-DAC รายเดียวใน Q4",
+        "market cap ~$4.0B บนรายได้ปีละ ~$20M — มูลค่ายังพึ่ง narrative กลุ่ม quantum เกือบทั้งหมด ซึ่งกำลังถูกรีเซ็ต (B. Riley ลดเป้า RGTI จาก $35 เหลือ $25 และ D-Wave จาก $40 เหลือ $27 เมื่อ 2 พ.ย.)",
+        "เงินทุน $100M จาก Department of Commerce ยังเป็นแค่ LOI อาจไม่เกิดจริง และถ้าเกิด หุ้นที่รัฐบาลได้ก็จะ dilute ผู้ถือหุ้นเดิม",
+        "ขาดทุนจากการดำเนินงาน $33.2M ใน Q3 ขาดทุน GAAP ที่ดูน้อยเป็นผลจากการปรับมูลค่า warrant และ earn-out ที่ไม่ใช่เงินสด ไม่ใช่จากธุรกิจ",
+        "เคลื่อนตาม IONQ, QBTS และ LAES สูง — แรงขายทั้งกลุ่ม (รวมถึงชิปร่วง 5 พ.ย.) กระทบ RGTI ได้โดยไม่ต้องมีข่าวบริษัท"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed ขึ้นดอกเบี้ย 25bp เมื่อ 16 ก.ย. 2026 และ CPI ต.ค. ที่ร้อนกว่าคาด (core +0.3% m/m เทียบคาด 0.2%) ดันโอกาสขึ้นดอกเบี้ย 9 ธ.ค. เป็น ~89–100% บอนด์ 10 ปี ~4.98%",
+        "inflationNote": "CPI ต.ค. ร้อน (headline +0.4% m/m, core +0.3%) ตัวถัดไปคือ PCE ต.ค. วันที่ 25 พ.ย.",
+        "sectorImpact": "มูลค่า ~$4B บนรายได้ ~$20M เป็นหุ้น long-duration ขั้นสุด การขึ้นดอกเบี้ย ธ.ค. ที่ price แล้วและบอนด์ 10 ปี ~5% กด multiple โดยตรง เงินสด $497M ทำให้ไม่ต้องระดมทุน แต่ไม่ได้ปกป้อง multiple",
+        "summary": "HIGH — ดอกเบี้ยคือตัวขับหลักของ multiple กลุ่ม quantum ตอนนี้ และ RGTI ไม่มีกำไรใกล้ๆ ให้ยึด งบดุลที่สะอาดจำกัดความเสี่ยงด้าน survival แต่ไม่จำกัด drawdown"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — survival สะอาด (เงินสด $497M ไม่มีหนี้) แต่รายได้ Q3 พลาดเป้าและมูลค่า ~$4B บนรายได้ ~$20M จุดพิสูจน์ถัดไปคือการรับมอบ C-DAC ใน Q4 ผลตอบแทน median ของ turbo จากราคารายงานถึงหลัง catalyst คือ -10.6% (n=69) จึงไม่ควรซื้อที่ราคารายงานเป็นค่าเริ่มต้น ให้รอ $10.00–10.80 ขนาดค่าขนม 2%",
+        "entryLevels": [
+          {
+            "note": "ราคาล่าสุดหลังงบ Q3 พลาด — ไม้แรกเล็กๆ เท่านั้น สถิติ turbo ณ หลัง catalyst -10.6% (n=69)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "โซนย่อ — จุดเข้าที่แนะนำ",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ร่วงหนัก — เข้าเฉพาะถ้า thesis ยังอยู่ (C-DAC รับมอบแล้ว เงินสดยังครบ)",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — รับมอบ C-DAC สำเร็จและ FY2026 ได้ ~$20M กรอบเวลา ~6–9 เดือนถึงงบ Q4 (Base สูงกว่า P75 ที่ทำได้จริงของ turbo 21.5% และ turbo เขียน Base เกินจริงเฉลี่ย +52.5pp)"
+        },
+        "tp2": {
+          "note": "Bull — FY26 ~$20M บวกสัญญาจริงกับ Commerce ตรงกับเป้า $25 ของ B. Riley และ Benchmark"
+        },
+        "tp3": {
+          "note": "Moon — กลุ่ม re-rate กลับไปใกล้ระดับปี 2025 จากหุ้นที่รัฐบาลถือจริงบวกออเดอร์ระบบหลายชุด"
+        },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE ของ turbo (-20%, n=107) และของ partnership_win -21.7% (n=32)",
+          "hardNote": "หลุดตรงนี้แปลว่าตลาดราคาว่าการรับมอบ C-DAC ล้มและ LOI หมดอายุ",
+          "rrNote": "Entry 1 ถึง tight stop เทียบกับ TP2",
+          "rrWarning": "ถึงเป้า 5:1 ของ turbo"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "รับมอบ C-DAC / รับรู้รายได้ Q4",
+          "note": "จำเป็นต่อเป้ารายได้ FY2026 ~$20M"
+        },
+        {
+          "event": "งบ Q4 / FY2026",
+          "note": "จะเห็นว่าการรับมอบ C-DAC เกิดขึ้นหรือไม่"
+        }
+      ],
+      "catalystSpot": {
+        "preRunup": "partnership_win เป็นกลุ่มใหญ่สุดของ turbo (n=32 excess vs SPY median +7.3pp เทียบ overall +7.7 ใกล้เคียง ไม่ใช่ laggard) RGTI มักวิ่งแรงทั้งกลุ่มตามข่าวเงินทุนรัฐบาล มากกว่าค่อยๆ ขึ้นก่อน event",
+        "preRunupTiming": "ตามข่าว — 1–3 วันรอบข่าวเงินทุนรัฐบาล",
+        "postWin": {
+          "note": "RGTI ขึ้น +9.3% ในวันเดียวเมื่อ ส.ค. 2026 จากข่าวรัฐบาลสหรัฐฯ จะถือหุ้นบริษัท quantum สัญญาจริงกับ Commerce จะเป็นข่าวแบบเดียวกันแต่จับต้องได้กว่า"
+        },
+        "postLose": {
+          "note": "RGTI ลง -4.4% หลังปิดตลาดวันงบ Q2 (6 ส.ค. 2026) และ -5.2% วันหลังงบ Q3 ที่พลาดเป้า (10 พ.ย. 2026, live-prices.json วันที่ 11 พ.ย.)"
+        },
+        "spotSizing": {
+          "reason": "งบดุลสะอาด แต่ moon case ต้องได้ทั้งกลุ่ม re-rate และสัญญารัฐบาลจริง market cap ~$4B จำกัดความไม่สมมาตร จึงอยู่ปลายล่างของช่วง 2–5%"
+        },
+        "stopPreCatalyst": {
+          "note": "กว้างกว่า medianMAE ของ partnership_win (-21.7%, n=32)"
+        },
+        "stopPostCatalyst": {
+          "note": "ออกถ้ารายได้ FY2026 ต่ำกว่า ~$20M มาก (C-DAC ไม่รับมอบ) หรือ LOI ของ Commerce ถูกยกเลิก"
+        }
+      },
+      "comparableCases": [
+        {
+          "note": "แสดงว่า RGTI reprice เร็วแค่ไหนจากข่าวเงินทุนรัฐบาล — กลไกเดียวกับที่สัญญาจริงกับ Commerce จะจุดชนวน"
+        },
+        {
+          "note": "งบล่าสุด: รายได้ฮาร์ดแวร์ที่ไม่สม่ำเสมอพลาดเป้าและหุ้นลงวันถัดมา ทำให้ FY26 ขึ้นกับการรับมอบ C-DAC"
+        },
+        {
+          "note": "ขนาดที่ moon case อ้างอิง: กลุ่ม re-rate ต่อเนื่องจากการยืนยันของรัฐบาล ไม่ใช่ event เดียว"
+        }
+      ]
+    }
+  }
+}

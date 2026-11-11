@@ -385,7 +385,7 @@ dev server) เห็น class ครบ ไม่มี error ใน server log
   - **เคาะ: ไม่ consolidate ตอนนี้** — การให้ command ชี้ไปหา skill's Step 0 แทนที่จะ copy เนื้อมา เป็นการเปลี่ยน prompt ที่ agent ใช้จริงตอน run `/catalyst-list`/`/turbo-list` — ไม่มีทาง verify ว่า "behavior เหมือนเดิม" ได้ในแซนด์บ็อกซ์ (ต้องรัน live command จริงเทียบผลลัพธ์) ต่างจาก code refactor ที่ tsc/test ยืนยันได้ → ความเสี่ยงสูงกว่าประโยชน์ของการลด duplication ตอนนี้ ทำตามกติกา #30 point 8 ("ถ้าเสี่ยง behavior change อย่าทำ — จดไว้")
   - **พบเพิ่ม (แยกเรื่อง ไม่ใช่ dedup แต่เกี่ยวกับ symlink check ที่ #30 ขอ):** `.claude/skills/xvary-stock-report`, `.claude/skills/xvary-turbo-report`, `.claude/skills/xvary-dca-report` เป็น **broken symlinks** ชี้ไปที่ `skills/xvary-*` ที่ไม่มีจริง (ของจริงคือ `skills/stock-report`, `skills/turbo-report`, `skills/dca-report` — ไม่มี `xvary-` prefix) — เช็คแล้วว่าไม่กระทบงาน #30 (ไม่มี "สำเนาที่สอง" ที่จะลืมแก้ เพราะ symlink เสียไม่ได้ชี้ไปไฟล์จริงไหนเลย) แต่เป็น repo hygiene issue แยกที่ควรมีคนดู — ไม่รู้ว่าเป็นความตั้งใจ (ปิดใช้งานชั่วคราว) หรือ typo ตกค้าง
 **ไฟล์:** อ่านอย่างเดียว ไม่แก้: `.claude/commands/catalyst-list.md` · `.claude/commands/turbo-list.md` · `skills/stock-report/SKILL.md` · `skills/turbo-report/SKILL.md` · `skills/dashboard-compare/SKILL.md` · `.claude/skills/xvary-*` (พบ broken symlink)
-**เป้า:** ถ้าจะทำจริง — consolidate `catalyst-list.md`/`turbo-list.md` ให้ชี้ไปหา skill's Step 0 แทน copy เนื้อ (ทำทีละคู่ + รัน live `/catalyst-list` และ `/turbo-list` จริงเทียบ output ก่อน-หลัง) และเคาะว่า `.claude/skills/xvary-*` ตั้งใจ broken หรือควรแก้เป็นชื่อจริง
+**เป้า:** ถ้าจะทำจริง — consolidate `catalyst-list.md`/`turbo-list.md` ให้ชี้ไปหา skill's Step 0 แทน copy เนื้อ (ทำทีละคู่ + รัน live `/catalyst-list` และ `/turbo-list` จริงเทียบ output ก่อน-หลัง) และเคาะว่า `.claude/skills/xvary-*` ตั้งใจ broken หรือควรแก้เป็นชื่อจริง · **✅ symlink แก้แล้ว 2026-11-12:** ลบ `xvary-*` สร้าง `.claude/skills/{stock,turbo,dca}-report -> ../../skills/…` (ยืนยันว่า skill โผล่ใน skill list ของ session แล้ว) — ส่วน dedup ยังเปิดอยู่
 
 ## 32. ✅ DONE — Compare v3 — rename `dashboard-compare`→`catalyst-compare` + stage/proximity-aware + แยก turbo-compare (implement #11)
 
@@ -487,7 +487,7 @@ dev server) เห็น class ครบ ไม่มี error ใน server log
 
 **เกี่ยวพัน:** ต่อจาก #25 (loop) + #27 (regime/benchmark) · ยังไม่แตะ turbo lane prompts (`turbo-list.md` / `turbo-report`) — ตัวเลข soft/tier2 มีให้ใช้แล้วใน JSON แต่ prompt ฝั่ง turbo ยังอ้าง hitRate อยู่ → งานต่อไป · `LAGGARD_MARGIN_PP = 2` เป็น judgement call ควร revisit เมื่อ n ต่อ bucket > ~20
 
-## 37. Catalyst date provenance — ห้ามเอา CT.gov estimated-completion มาใช้เป็น `catalystDate`
+## 37. ✅ DONE (2026-11-12) — Catalyst date provenance — ห้ามเอา CT.gov estimated-completion มาใช้เป็น `catalystDate`
 
 **ปัญหา:** เจอตอน test-run `/catalyst-list` จริง (2026-08-13). Longlist ที่ดึงจาก PDUFA/catalyst
 aggregator (catalystalert.io) ให้ entry ที่ดูเหมือน dated catalyst แต่พอ verify กับ guidance ของ
@@ -687,6 +687,6 @@ event จริง (PLTR +49% · RDW +44% · KTOS +29%) อยู่ข้าง
   - คำสั่ง: `cd web && npm run backtest:fetch` (หรือ `node scripts/fetch-backtest-prices.mjs` จาก root)
   - cron แนะนำ: ทุกเช้าหลังตลาดปิด 1 รอบ เช่น `0 6 * * *`
   - หมายเหตุ: ต้องตั้งบน account/เครื่องใหม่ (Mac mini) เพราะ schedule ผูกกับ session/เครื่อง
-- **รัน `npm run build` ครั้งแรกบน Mac** — ยืนยัน production build ผ่าน (แซนด์บ็อกซ์รันไม่ได้เพราะ SWC binary เป็น linux/arm64 ไม่ตรง platform) tsc ผ่านแล้วทุกไฟล์
+- ✅ **DONE (`web/.next/BUILD_ID` มีแล้ว ต.ค. 2026)** ~~รัน `npm run build` ครั้งแรกบน Mac~~ — ยืนยัน production build ผ่าน (แซนด์บ็อกซ์รันไม่ได้เพราะ SWC binary เป็น linux/arm64 ไม่ตรง platform) tsc ผ่านแล้วทุกไฟล์
 
 _Generated during code review · not financial advice · Stock Playbook Research_

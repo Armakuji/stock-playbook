@@ -33,7 +33,7 @@ export function TurboContent({ ranked, rankChanges = [], stopped = [] }: { ranke
     {
       label: th ? "แสดง" : "Showing",
       value: ranked.length > TURBO_DISPLAY_LIMIT ? `${displayed.length}/${ranked.length}` : `${displayed.length}`,
-      color: "#7f4040",
+      color: "#b58780",
     },
   ];
 
@@ -88,7 +88,7 @@ export function TurboContent({ ranked, rankChanges = [], stopped = [] }: { ranke
           </div>
 
           <p style={{
-            fontSize: 12, color: "#7f3030", margin: "0 0 20px",
+            fontSize: 12, color: "#b58780", margin: "0 0 20px",
             fontFamily: "var(--font-mono, monospace)",
           }}>
             {displayed.length > 0
@@ -96,8 +96,8 @@ export function TurboContent({ ranked, rankChanges = [], stopped = [] }: { ranke
                 ? `Top ${displayed.length}${ranked.length > TURBO_DISPLAY_LIMIT ? ` จาก ${ranked.length}` : ""} · เรียงตาม 🎯 upside ที่เป็นไปได้มากสุด (base case) · small/mid cap เด้ง 300%++`
                 : `Top ${displayed.length}${ranked.length > TURBO_DISPLAY_LIMIT ? ` of ${ranked.length}` : ""} · ranked by 🎯 most possible upside (base case) · small/mid cap 300%++ plays`
               : th
-                ? "ยังไม่มี turbo picks — รัน /analyze-turbo TICKER เพื่อสร้าง"
-                : "No turbo picks yet — run /analyze-turbo TICKER to generate one"}
+                ? "ยังไม่มี turbo picks ที่เผยแพร่ในตอนนี้"
+                : "No turbo picks are published right now"}
           </p>
 
           {/* ── Stats strip ───────────────────────────────────────────── */}
@@ -114,7 +114,7 @@ export function TurboContent({ ranked, rankChanges = [], stopped = [] }: { ranke
                   borderRadius: 10, padding: "10px 12px",
                 }}>
                   <div style={{
-                    fontSize: 9, color: "#4d2020", textTransform: "uppercase",
+                    fontSize: 9, color: "#a8786f", textTransform: "uppercase",
                     letterSpacing: "1px", marginBottom: 4,
                     fontFamily: "var(--font-mono, monospace)",
                   }}>
@@ -156,7 +156,7 @@ export function TurboContent({ ranked, rankChanges = [], stopped = [] }: { ranke
               )}
               <span style={{
                 fontSize: 11, padding: "4px 12px", borderRadius: 8,
-                background: "#13050a", color: "#4d2020",
+                background: "#13050a", color: "#a8786f",
                 border: "1px solid #2d1010", fontWeight: 800,
                 fontFamily: "var(--font-mono, monospace)",
               }}>
@@ -175,14 +175,14 @@ export function TurboContent({ ranked, rankChanges = [], stopped = [] }: { ranke
         {/* ── Card grid ─────────────────────────────────────────────────── */}
         {displayed.length === 0 ? (
           <div style={{
-            textAlign: "center", padding: "80px 0", color: "#4d2020",
+            textAlign: "center", padding: "80px 0", color: "#a8786f",
           }}>
             <div style={{ fontSize: 48, marginBottom: 16 }}>🔥</div>
-            <p style={{ fontSize: 15, margin: 0, color: "#7f3030" }}>
+            <p style={{ fontSize: 15, margin: 0, color: "#b58780" }}>
               {th ? "ยังไม่มี turbo picks" : "No turbo picks yet."}
             </p>
-            <p style={{ fontSize: 13, margin: "8px 0 0", color: "#4d2020", fontFamily: "var(--font-mono, monospace)" }}>
-              {th ? "รัน " : "Run "}<code style={{ color: "#ff6d00" }}>/analyze-turbo TICKER</code>{th ? " เพื่อเพิ่ม moonshot" : " to add a moonshot pick."}
+            <p style={{ fontSize: 13, margin: "8px 0 0", color: "#a8786f", fontFamily: "var(--font-mono, monospace)" }}>
+              {th ? "กลับมาดูหลังรอบคัดหุ้นถัดไป" : "Check back after the next screen."}
             </p>
           </div>
         ) : (
@@ -218,7 +218,7 @@ export function TurboContent({ ranked, rankChanges = [], stopped = [] }: { ranke
             border: "1px solid #2d1010",
             borderLeft: "3px solid #ff3d00",
             borderRadius: 8,
-            fontSize: 12, color: "#7f3030",
+            fontSize: 12, color: "#c19790",
           }}>
             {th ? (
               <>⚠️ <strong style={{ color: "#ff6d00" }}>Turbo-Stock คือ high-risk zone</strong> — size 2–5% ต่อตัวเท่านั้น

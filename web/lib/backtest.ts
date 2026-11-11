@@ -48,8 +48,8 @@ function addDays(dateStr: string, days: number): string {
   const y = parseInt(dateStr.slice(0, 4));
   const m = parseInt(dateStr.slice(4, 6)) - 1;
   const d = parseInt(dateStr.slice(6, 8));
-  const dt = new Date(y, m, d);
-  dt.setDate(dt.getDate() + days);
+  const dt = new Date(Date.UTC(y, m, d)); // UTC — see catalyst-timing.ts todayISO
+  dt.setUTCDate(dt.getUTCDate() + days);
   return dt.toISOString().slice(0, 10);
 }
 

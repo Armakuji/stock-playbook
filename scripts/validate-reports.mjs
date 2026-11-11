@@ -64,6 +64,16 @@ function readLivePrices() {
   catch { return {}; }
 }
 const LIVE_PRICES = readLivePrices();
+const DRIFT_MAX_QUOTE_AGE_H = 24;
+const DRIFT_PCT = 8; // same bar as StalenessBanner + catalyst-refresh: |live − report| / report ≥ 8%
+let driftSkippedStale = 0;
+
+// Primary-source domains for a dated catalyst (backlog #37 step 3). A report
+// whose catalystDate is backed only by aggregators gets a WARN, never a block —
+// some legitimate sources (company IR on its own domain) won't match this list.
+// q4cdn.com / q4inc.com host company IR documents (press-release PDFs) for many issuers.
+const PRIMARY_SOURCE_RE = /(^|\.)(sec\.gov|fda\.gov|globenewswire\.com|prnewswire\.com|businesswire\.com|accessnewswire\.com|newsfilecorp\.com|q4cdn\.com|q4inc\.com)$|^(ir|investors?|investor-relations)\./i;
+const hostOf = (u) => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return ""; } };
 
 const SCENARIO_ORDER = ["Bear", "Base", "Bull", "Moon"];
 
@@ -191,7 +201,7 @@ for (const { dir, file: f } of targets) {
 
   // factorTags typos (e.g. "ai-semi", "AI_semi") silently split a factor into two
   // buckets in the concentration warning — WARN, don't block (advisory field).
-  if (Array.isArray(r.factorTags)) {
+  if (Array.isArray(r.factorTags) && bucket !== "dca") {
     const bogus = r.factorTags.filter((t) => !FACTOR_TAGS.includes(t));
     if (bogus.length) warnings.push(`factorTags has unknown value(s): ${bogus.join(", ")} (see FACTOR_TAGS in web/lib/factors.ts)`);
   }
@@ -206,6 +216,21 @@ for (const { dir, file: f } of targets) {
     const dated = Array.isArray(r.catalysts) ? r.catalysts.map(catalystISO).filter(Boolean) : [];
     if (genDate && dated.length && dated.every((d) => d < genDate)) {
       warnings.push(`all catalysts dated in the past at generation time (generatedAt ${genDate}, latest catalyst ${dated.sort().at(-1)})`);
+    }
+  }
+
+  // ── Visible-report checks (latest per ticker only, catalyst lanes only) ──
+  // Archived snapshots are history; warning on them is noise nobody will fix.
+  const isLatestReport = latestByBucketTicker.get(`${bucket}:${f.split("_")[0]}`) === f;
+  if (isLatestReport && bucket !== "dca") {
+    const datedCats = (r.catalysts ?? []).filter((c) => c?.catalystDate && /^\d{4}-\d{2}-\d{2}$/.test(c.catalystDate));
+    // CLAUDE.md rule 8 — the nearest catalyst needs an ISO catalystDate.
+    if (!datedCats.length) {
+      warnings.push("no catalysts[].catalystDate at all — the pick has no dated catalyst to sort or measure on (CLAUDE.md rule 8)");
+    }
+    // Backlog #37 step 3 — a dated catalyst should trace to a primary source.
+    if (datedCats.length && !sources.some((u) => PRIMARY_SOURCE_RE.test(hostOf(u)))) {
+      warnings.push("dated catalyst but no primary-source URL in sources[] (sec.gov / fda.gov / company IR / GlobeNewswire / PR Newswire / Business Wire) — check the date isn't from an aggregator or CT.gov estimate (backlog #37)");
     }
   }
 
@@ -296,16 +321,26 @@ for (const { dir, file: f } of targets) {
     }
   }
 
-  // ── Price drift vs live-prices.json (WARN) — only compared when the cache
-  // has this ticker with a fresh (≤24h) asOf; never fetches over the network.
-  {
+  // ── Price drift vs live-prices.json (WARN) — latest report per ticker only,
+  // and only against a quote ≤24h old (never fetches). Same formula and bar
+  // as StalenessBanner / catalyst-refresh. Written close to the quote, a big
+  // gap means research used a stale price; written days before, it means the
+  // market moved and the pick is a refresh candidate.
+  if (isLatestReport) {
     const live = LIVE_PRICES[r.ticker];
-    if (live && typeof live.price === "number" && live.price > 0 && typeof live.asOf === "string" && typeof r.price === "number") {
+    if (live && typeof live.price === "number" && live.price > 0 && typeof live.asOf === "string" && typeof r.price === "number" && r.price > 0) {
       const asOfMs = Date.parse(live.asOf);
-      if (!Number.isNaN(asOfMs) && Date.now() - asOfMs <= 24 * 3600 * 1000) {
-        const driftPct = (Math.abs(r.price - live.price) / live.price) * 100;
-        if (driftPct > 7) {
-          warnings.push(`report price $${r.price} vs live $${live.price} (${driftPct.toFixed(1)}% drift) — research may have used a stale quote`);
+      if (Number.isNaN(asOfMs) || Date.now() - asOfMs > DRIFT_MAX_QUOTE_AGE_H * 3600 * 1000) {
+        driftSkippedStale++;
+      } else {
+        const driftPct = ((live.price - r.price) / r.price) * 100;
+        if (Math.abs(driftPct) >= DRIFT_PCT) {
+          const genMs = Date.parse(r.generatedAt);
+          const daysBefore = Number.isNaN(genMs) ? null : (asOfMs - genMs) / 86400000;
+          const sign = driftPct > 0 ? "+" : "";
+          warnings.push(daysBefore !== null && daysBefore <= 2
+            ? `report price $${r.price} vs live $${live.price} (${sign}${driftPct.toFixed(1)}%) right after writing — research may have used a stale quote`
+            : `price moved ${sign}${driftPct.toFixed(1)}% since the report ($${r.price} → $${live.price}) — refresh candidate`);
         }
       }
     }
@@ -317,6 +352,7 @@ for (const { dir, file: f } of targets) {
 const files = targets;
 
 if (log.length) console.log(log.join("\n"));
+if (driftSkippedStale) console.log(`\nℹ️  drift check skipped for ${driftSkippedStale} report(s): live-prices.json quotes are older than ${DRIFT_MAX_QUOTE_AGE_H}h (run \`cd web && npm run prices:fetch\`)`);
 console.log(`\nvalidate-reports: ${files.length} report(s) · ${hardFails} blocking · ${warns} warning(s)`);
 if (hardFails > 0) {
   console.error("\n🛑 Blocking issues found — fix sourcing before pushing.");

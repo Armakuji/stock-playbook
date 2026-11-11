@@ -65,8 +65,9 @@ const today = new Date().toISOString().slice(0, 10);
 // ── shared helpers (mirrors web/lib/north-star.ts) ──────────────────────────
 function ymdToISO(s) { return `${s.slice(0, 4)}-${s.slice(4, 6)}-${s.slice(6, 8)}`; }
 function addDaysISO(yyyymmdd, days) {
+  // UTC — a local-midnight Date ends every window a day early east of UTC.
   const y = +yyyymmdd.slice(0, 4), m = +yyyymmdd.slice(4, 6) - 1, d = +yyyymmdd.slice(6, 8);
-  const dt = new Date(y, m, d); dt.setDate(dt.getDate() + days);
+  const dt = new Date(Date.UTC(y, m, d)); dt.setUTCDate(dt.getUTCDate() + days);
   return dt.toISOString().slice(0, 10);
 }
 function daysBetweenISO(fromISO, toISO) {

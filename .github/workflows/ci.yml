@@ -45,6 +45,8 @@ jobs:
               - 'tests/**'
             reports:
               - 'web/data/**'
+              # validator / feedback-builder changes must re-run the validator too
+              - 'scripts/**'
 
   service:
     needs: changes
@@ -87,6 +89,9 @@ jobs:
       # No `next build` here — Vercel already builds on every push; running
       # it again here would just be a slower, redundant type-check.
       - run: npx tsc --noEmit
+        working-directory: web
+      # node:test with built-in type stripping — date math, stage, stop rule.
+      - run: npm test
         working-directory: web
 
   tools:

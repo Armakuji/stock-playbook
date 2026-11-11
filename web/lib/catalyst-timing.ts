@@ -6,7 +6,7 @@
 // human dateBadge string. So existing reports work immediately via dateBadge,
 // and new reports can pin an exact ISO date.
 
-import { StockReport, Catalyst } from "./types";
+import type { StockReport, Catalyst } from "./types";
 
 const MONTH_MAP: Record<string, number> = {
   jan: 0, feb: 1, mar: 2, apr: 3, may: 4, jun: 5,
@@ -55,10 +55,19 @@ export function proximityISO(c: Catalyst): string | null {
   return isFuzzyBadge(c.dateBadge) ? null : catalystISO(c);
 }
 
+/** Today's date in UTC (YYYY-MM-DD). Must not use local midnight: on a UTC+7
+ *  machine, local midnight .toISOString() is YESTERDAY, which flipped picks to
+ *  "post" a day late and disagreed with the UTC server. Same convention as every
+ *  other `new Date().toISOString().slice(0, 10)` in the repo. */
 export function todayISO(): string {
-  const d = new Date();
-  d.setHours(0, 0, 0, 0);
-  return d.toISOString().slice(0, 10);
+  return new Date().toISOString().slice(0, 10);
+}
+
+/** "YYYYMMDD" + n days → "YYYY-MM-DD", in UTC (timezone-independent). */
+export function addDaysUTC(yyyymmdd: string, days: number): string {
+  const dt = new Date(Date.UTC(+yyyymmdd.slice(0, 4), +yyyymmdd.slice(4, 6) - 1, +yyyymmdd.slice(6, 8)));
+  dt.setUTCDate(dt.getUTCDate() + days);
+  return dt.toISOString().slice(0, 10);
 }
 
 export function daysBetweenISO(fromISO: string, toISO: string): number {

@@ -1,0 +1,334 @@
+{
+  "ticker": "ABAT",
+  "companyName": "American Battery Technology Company",
+  "companyDescription": "Critical battery minerals · Nevada battery recycling (first positive adjusted gross profit in FY26) + Tonopah Flats lithium refinery in NEPA review · Commerce license to export up to $100M of recycled black mass (Oct 2026) · ~$188M market cap vs a PFS-stage $2.57B after-tax NPV",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-11T16:55:00.000Z",
+  "price": 1.32,
+  "priceChange": 0.38,
+  "priceNote": "Live $1.32 (+0.4%) on Nov 11, 2026 — down 42% from $2.27 at the Sep 29 report, near the ~$1.29 low it touched Oct 26. Market cap ~$188M (~143M shares). The slide came after the black-mass export license was granted, with no company-specific negative news found. Old Base +44.9% ($3.29) is replaced by a new Base +45% ($1.91) anchored to the live price.",
+  "marketCap": "~$188M",
+  "sector": "Materials / Battery Recycling & Lithium",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 45,
+  "summary": "Refresh after a -42% slide since the Sep 29 report. The biggest open risk in that report has resolved in ABAT's favour: in early October the Commerce Department's BIS licensed ABAT to export and sell up to $100M of recycled black mass, after a federal export restriction had forced it to store material on-site. The stock still fell from ~$1.57 (Oct 15) to ~$1.29 (Oct 26) with no company-specific trigger found — momentum selling in a weak small-cap tape, possibly with ATM selling under the $250M shelf filed Sep 18 (not confirmed). Survival is not flagged: FY26 closed with $49.5M cash and zero long-term debt against a $24.2M annual operating burn (~2 years at that pace), but no FY27 Q1 numbers are out yet and the shelf is the funding plan for Tonopah Flats. The next proof point is the Q1 FY2027 print (expected mid-to-late November, not yet scheduled): recycling revenue and the first export-license sales. Measured turbo median return to just after the catalyst is -10.6% (n=69), so prefer the dip zone. Size 2% max.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q1 FY2027 Earnings (quarter ended Sep 30)",
+      "description": "Not yet scheduled; last year's Q1 print came Nov 7. First quarter with the black-mass export license in place — watch recycling revenue, gross margin, cash burn and any ATM usage under the $250M shelf.",
+      "urgencyLabel": "NOV 2026 (est.)",
+      "dateBadge": "~Nov 2026",
+      "catalystDate": "2026-11-30",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🌍",
+      "name": "Black Mass Export License — First Sales",
+      "description": "BIS approved ABAT's request to export and sell up to $100M of recycled black mass (early Oct 2026), lifting the on-site storage constraint from the federal export restriction. Shares rose ~10% premarket on the news before fading.",
+      "urgencyLabel": "RECENT",
+      "dateBadge": "Oct 5, 2026",
+      "catalystDate": "2026-10-05",
+      "badgeColor": "green",
+      "dotColor": "green"
+    },
+    {
+      "icon": "⛏️",
+      "name": "Tonopah Flats NEPA Review",
+      "description": "BLM accepted the Plan of Operations on Sep 8, 2026, moving the lithium refinery into full NEPA environmental review. No single dated milestone.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "The stock fell ~42% in six weeks with no company-specific trigger found, including after good news (the export license) — that pattern often means persistent supply, such as ATM selling under the $250M mixed shelf filed Sep 18, 2026. Q1 FY27 filings will show whether shares were sold.",
+    "Runway (~2 years at the FY26 burn of $24.2M against $49.5M of cash) is fine for operations but nowhere near enough for the multi-billion-dollar Tonopah Flats build — that will need large equity or project financing at a ~$188M market cap.",
+    "Tonopah Flats' $2.57B NPV and 21.8% IRR are pre-feasibility estimates, and the refinery is still in NEPA review.",
+    "Federal funding has already been revoked once and reinstated on appeal; critical-minerals policy can change again, including the export-restriction regime the new license sits under.",
+    "Analyst coverage is thin (consensus $6 from two analysts) and may be stale; the Q1 FY27 report date is not yet announced."
+  ],
+  "estimateDates": [
+    {
+      "event": "Q1 FY2027 Earnings",
+      "dateRange": "~Nov 2026",
+      "note": "Not yet scheduled; last year's Q1 came Nov 7",
+      "est": "Recycling revenue + export sales",
+      "highlight": "yellow"
+    },
+    {
+      "event": "Tonopah Flats NEPA milestones",
+      "dateRange": "Ongoing",
+      "note": "Full environmental review after BLM accepted the Plan of Operations Sep 8",
+      "est": "n/a",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -40,
+      "price": 0.79
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 45,
+      "price": 1.91
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 127,
+      "price": 3.0
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 354.5,
+      "price": 6.0
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Wall Street Consensus (2 analysts)",
+      "target": 6.0,
+      "rating": "Buy",
+      "note": "Thin coverage; may predate the Sep–Nov slide"
+    }
+  ],
+  "macroRisk": {
+    "rateOutlook": "The Fed hiked 25bp on Sep 16, 2026 (first hike since 2023), and a hot October CPI (core +0.3% m/m vs 0.2% expected) has pushed Dec 9 FOMC hike odds to roughly 89–100%, with the 10-year near 4.98%.",
+    "inflationNote": "October CPI ran hot (headline +0.4% m/m, core +0.3%); October PCE on Nov 25 is the next inflation read.",
+    "fedRisk": "HIGH",
+    "sectorImpact": "ABAT's long-term plan depends on raising large amounts of capital for Tonopah Flats; a priced-in December hike and a ~5% 10-year make that capital more expensive and keep small-cap materials names out of favour.",
+    "summary": "HIGH — the company is not forced to raise near term, but its growth case is financing-dependent and the stock is a small cap in a weak tape."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 1.32,
+        "note": "Live price — starter only; measured turbo at-catalyst median is -10.6% (n=69)",
+        "timing": "Now (starter only)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 1.15,
+        "rangeMax": 1.25,
+        "note": "Dip zone below the ~$1.29 Oct 26 low — preferred entry",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 1.0,
+        "note": "Deep dip — only if Q1 FY27 shows no heavy ATM selling",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 1.91,
+      "pct": 44.7,
+      "note": "Base — Q1 FY27 shows recycling growth and first export sales, and the stock retraces to its late-September ~$1.9–2.0 level; ~6–12 month horizon (Base is above the turbo realized P90 of 33.5%; turbo optimismBiasBasePct is +52.5pp)"
+    },
+    "tp2": {
+      "price": 3.0,
+      "pct": 127.3,
+      "note": "Bull — export sales plus NEPA progress re-rate the stock back above $3"
+    },
+    "tp3": {
+      "price": 6.0,
+      "pct": 354.5,
+      "note": "Moon — consensus $6 target; Tonopah Flats financing secured on non-dilutive terms",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 1.0,
+      "tightPct": -24.2,
+      "tightNote": "Wider than turbo medianMAE (-20%, n=107) and regulatory_approval's -19.8% (n=23)",
+      "hard": 0.75,
+      "hardPct": -43.2,
+      "hardNote": "A break here likely means heavy dilution or a policy reversal",
+      "riskReward": "5.3 : 1",
+      "rrNote": "Entry 1 to tight stop vs TP2",
+      "rrWarning": "Meets the 5:1 turbo target"
+    },
+    "verdict": "SPECULATIVE — the export-license risk resolved in ABAT's favour, but the stock fell 42% anyway, which points to supply or dilution until Q1 FY27 shows otherwise. Measured turbo median return from report price to just after the catalyst is -10.6% (n=69), so buying at report price is not the default: prefer $1.15–1.25. ค่าขนม sizing 2%.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "regulatory_approval",
+    "preRunup": "regulatory_approval in the turbo lane has n=23 complete windows (median excess vs SPY +7.1pp vs +7.7 overall — in line, not a laggard). ABAT's own pattern is short headline pops (+10% premarket on the export license) that fade within days.",
+    "preRunupTiming": "Headline-driven — 1–2 days",
+    "preRunupPct": "+5% to +10% on regulatory headlines, typically fading",
+    "postWin": {
+      "avgPct": 10,
+      "range": "+5% to +10% (fading)",
+      "note": "ABAT rose ~10% premarket on the black-mass export license (early Oct 2026) and then faded. regulatory_approval in the turbo lane runs in line with the overall lane (+7.1pp vs +7.7, n=23). ABAT's own 52-week range, which included a multi-hundred-percent run on stacked DOE/BLM headlines plus revenue growth, is the guide to the upper bound, not any single event.",
+      "exampleDate": "Oct 2026 (export license)"
+    },
+    "postLose": {
+      "avgPct": -5.24,
+      "range": "-5% to -15%",
+      "note": "Perpetua Resources (PPTA) closed down 5.24% on its $2.9B EXIM loan approval despite an intraday peak of +26% — the same sell-the-news pattern ABAT just showed on its export license.",
+      "exampleDate": "May 21, 2026 (PPTA)"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "Survival is not flagged, but an unexplained 42% slide after good news and a financing-dependent growth plan keep this at the bottom of the 2–5% band."
+    },
+    "stopPreCatalyst": {
+      "pct": -24.2,
+      "price": 1.0,
+      "note": "Wider than regulatory_approval medianMAE (-19.8%, n=23)"
+    },
+    "stopPostCatalyst": {
+      "pct": -30,
+      "note": "Exit if Q1 FY27 shows heavy ATM selling or no export sales, or if the export license is withdrawn"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "ABAT",
+      "event": "52-week trading range — DOE/BLM regulatory-approval news + recycling revenue growth headlines",
+      "date": "Trailing 52 weeks",
+      "movePct": 474.5,
+      "days": 365,
+      "outcome": "good",
+      "note": "Same-company precedent for the magnitude this stock can move on a mix of DOE grant and BLM permitting news stacked with revenue-growth headlines — from a $2.00 low to an $11.49 high this cycle."
+    },
+    {
+      "ticker": "PPTA",
+      "event": "$2.9B EXIM loan approval for the Stibnite Gold-Antimony Project",
+      "date": "May 21, 2026",
+      "movePct": -5.24,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Closest comparable 'landmark critical-minerals financing/regulatory' news this year — the stock still closed down 5.24% despite an intraday peak of +26%, showing even a fully-funded regulatory/financing milestone can be sold as 'already priced in.'"
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "ABTC Secures US License to Export up to $100M of Black Mass",
+    "url": "https://www.spglobal.com/energy/en/news-research/latest-news/metals/100526-battery-recycler-abtc-secures-us-license-to-export-up-to-100m-of-black-mass",
+    "date": "Oct 2026"
+  },
+  "sources": [
+    "https://www.spglobal.com/energy/en/news-research/latest-news/metals/100526-battery-recycler-abtc-secures-us-license-to-export-up-to-100m-of-black-mass",
+    "https://www.metaltechnews.com/story/2026/10/07/tech-metals/abtc-wins-100m-black-mass-export-license/2973.html",
+    "https://resource-recycling.com/e-scrap/2026/10/09/abtc-gets-black-mass-export-exemption/",
+    "https://finviz.com/news/397859/american-battery-technology-shares-rise-10-after-receiving-export-approval",
+    "https://www.globenewswire.com/news-release/2026/09/14/3360988/0/en/american-battery-technology-company-reports-fy-26-financial-results-delivering-407-revenue-growth-and-positive-adjusted-gross-profit.html",
+    "https://www.aaii.com/investingideas/article/545130-why-american-battery-technology-company8217s-abat-stock-is-up-573",
+    "https://www.globenewswire.com/news-release/2025/11/07/3183668/0/en/American-Battery-Technology-Company-Announces-First-Quarter-Fiscal-2026-Financial-Results.html",
+    "https://stockanalysis.com/stocks/abat/",
+    "https://www.tipranks.com/news/company-announcements/perpetua-resources-secures-2-9-billion-exim-loan-approval"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "รีเฟรชหลังราคาร่วง 42% จากรายงาน 29 ก.ย. ความเสี่ยงใหญ่ที่สุดในรายงานก่อนคลี่คลายไปทางบวกแล้ว: ต้นเดือน ต.ค. BIS ของกระทรวงพาณิชย์ให้ใบอนุญาต ABAT ส่งออกและขาย black mass รีไซเคิลได้สูงสุด $100M หลังข้อจำกัดการส่งออกของรัฐบาลกลางบังคับให้ต้องเก็บไว้ในโรงงาน แต่หุ้นยังร่วงจาก ~$1.57 (15 ต.ค.) ถึง ~$1.29 (26 ต.ค.) โดยไม่พบข่าวลบของบริษัท — น่าจะเป็นแรงขายตาม momentum ในตลาด small-cap ที่อ่อน อาจมีการขายผ่าน ATM ภายใต้ shelf $250M ที่ยื่น 18 ก.ย. ด้วย (ยังไม่ยืนยัน) survival ไม่ติดธง: ปิด FY26 ด้วยเงินสด $49.5M ไม่มีหนี้ระยะยาว เทียบ burn $24.2M ต่อปี (~2 ปีที่อัตรานี้) แต่ยังไม่มีตัวเลข Q1 FY27 และ shelf คือแผนหาเงินสร้าง Tonopah Flats จุดพิสูจน์ถัดไปคืองบ Q1 FY2027 (คาดกลางถึงปลาย พ.ย. ยังไม่ประกาศวัน): รายได้รีไซเคิลและยอดขายส่งออกแรก ผลตอบแทน median ของ turbo ณ หลัง catalyst คือ -10.6% (n=69) ให้รอโซนย่อ แนะนำ 2% ของ portfolio เท่านั้น",
+      "priceNote": "ราคาล่าสุด $1.32 (+0.4%) วันที่ 11 พ.ย. 2026 — ลง 42% จาก $2.27 ในรายงาน 29 ก.ย. ใกล้จุดต่ำ ~$1.29 วันที่ 26 ต.ค. market cap ~$188M (~143M หุ้น) ร่วงหลังได้ใบอนุญาตส่งออก black mass โดยไม่พบข่าวลบของบริษัท Base เดิม +44.9% ($3.29) ถูกแทนด้วย Base ใหม่ +45% ($1.91) คิดจากราคาล่าสุด",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "งบ Q1 FY2027 (ไตรมาสสิ้นสุด 30 ก.ย.)",
+          "description": "ยังไม่ประกาศวัน ปีที่แล้ว Q1 ออก 7 พ.ย. เป็นไตรมาสแรกที่มีใบอนุญาตส่งออก black mass — ดูรายได้รีไซเคิล gross margin cash burn และการใช้ ATM ภายใต้ shelf $250M"
+        },
+        {
+          "name": "ใบอนุญาตส่งออก Black Mass — ยอดขายแรก",
+          "description": "BIS อนุมัติให้ ABAT ส่งออกและขาย black mass รีไซเคิลได้สูงสุด $100M (ต้น ต.ค. 2026) ปลดข้อจำกัดที่ต้องเก็บไว้ในโรงงานจากมาตรการจำกัดการส่งออก หุ้นขึ้น ~10% ช่วงก่อนตลาดเปิดแล้วแผ่วลง"
+        },
+        {
+          "name": "Tonopah Flats ทบทวน NEPA",
+          "description": "BLM รับ Plan of Operations เมื่อ 8 ก.ย. 2026 โรงกลั่นลิเธียมเข้าสู่การทบทวนสิ่งแวดล้อมเต็มรูปแบบ ไม่มี milestone ที่มีวันที่ชัด"
+        }
+      ],
+      "risks": [
+        "หุ้นร่วง ~42% ใน 6 สัปดาห์โดยไม่พบสาเหตุเฉพาะบริษัท รวมถึงหลังข่าวดี (ใบอนุญาตส่งออก) — รูปแบบนี้มักหมายถึงมีหุ้นขายออกมาต่อเนื่อง เช่น การขายผ่าน ATM ภายใต้ shelf $250M ที่ยื่น 18 ก.ย. 2026 งบ Q1 FY27 จะบอกว่ามีการขายหุ้นหรือไม่",
+        "runway (~2 ปีที่ burn $24.2M เทียบเงินสด $49.5M) พอสำหรับการดำเนินงาน แต่ไม่พอสร้าง Tonopah Flats มูลค่าหลายพันล้าน — ต้องระดมทุนหุ้นหรือ project financing จำนวนมากที่ market cap ~$188M",
+        "NPV $2.57B และ IRR 21.8% ของ Tonopah Flats เป็นตัวเลขระดับ pre-feasibility และโรงกลั่นยังอยู่ในการทบทวน NEPA",
+        "เงินสนับสนุนจากรัฐบาลกลางเคยถูกยกเลิกแล้วได้คืนจากการอุทธรณ์ นโยบายแร่สำคัญเปลี่ยนได้อีก รวมถึงระบบจำกัดการส่งออกที่ใบอนุญาตใหม่อยู่ภายใต้",
+        "นักวิเคราะห์ติดตามน้อย (เป้าเฉลี่ย $6 จาก 2 ราย) และอาจเป็นตัวเลขเก่า วันประกาศงบ Q1 FY27 ยังไม่แจ้ง"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed ขึ้นดอกเบี้ย 25bp เมื่อ 16 ก.ย. 2026 และ CPI ต.ค. ที่ร้อนกว่าคาด (core +0.3% m/m เทียบคาด 0.2%) ดันโอกาสขึ้นดอกเบี้ย 9 ธ.ค. เป็น ~89–100% บอนด์ 10 ปี ~4.98%",
+        "inflationNote": "CPI ต.ค. ร้อน (headline +0.4% m/m, core +0.3%) ตัวถัดไปคือ PCE ต.ค. วันที่ 25 พ.ย.",
+        "sectorImpact": "แผนระยะยาวของ ABAT ต้องระดมทุนจำนวนมากเพื่อ Tonopah Flats การขึ้นดอกเบี้ย ธ.ค. ที่ price แล้วและบอนด์ 10 ปี ~5% ทำให้ต้นทุนเงินสูงขึ้น และหุ้น small-cap กลุ่มวัตถุดิบยังไม่เป็นที่นิยม",
+        "summary": "HIGH — บริษัทยังไม่ถูกบังคับให้ระดมทุนระยะใกล้ แต่ growth case ขึ้นกับการหาเงิน และหุ้นเป็น small-cap ในตลาดที่อ่อน"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — ความเสี่ยงเรื่องใบอนุญาตส่งออกคลี่คลายไปทางบวก แต่หุ้นยังร่วง 42% ซึ่งชี้ว่ามีแรงขายหรือ dilution จนกว่างบ Q1 FY27 จะบอกเป็นอย่างอื่น ผลตอบแทน median ของ turbo จากราคารายงานถึงหลัง catalyst คือ -10.6% (n=69) จึงไม่ควรซื้อที่ราคารายงานเป็นค่าเริ่มต้น ให้รอ $1.15–1.25 ขนาดค่าขนม 2%",
+        "entryLevels": [
+          {
+            "note": "ราคาล่าสุด — ไม้แรกเล็กๆ เท่านั้น สถิติ turbo ณ หลัง catalyst -10.6% (n=69)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "โซนย่อใต้จุดต่ำ ~$1.29 วันที่ 26 ต.ค. — จุดเข้าที่แนะนำ",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ร่วงหนัก — เข้าเฉพาะถ้างบ Q1 FY27 ไม่มีการขาย ATM หนัก",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — งบ Q1 FY27 โชว์รายได้รีไซเคิลโตและยอดขายส่งออกแรก หุ้นกลับไปแถว ~$1.9–2.0 ของปลาย ก.ย. กรอบเวลา ~6–12 เดือน (Base สูงกว่า P90 ที่ทำได้จริงของ turbo 33.5% และ turbo เขียน Base เกินจริงเฉลี่ย +52.5pp)"
+        },
+        "tp2": {
+          "note": "Bull — ยอดส่งออกบวกความคืบหน้า NEPA ดันหุ้นกลับเหนือ $3"
+        },
+        "tp3": {
+          "note": "Moon — เป้า consensus $6 และได้เงินทุน Tonopah Flats แบบไม่ dilute"
+        },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE ของ turbo (-20%, n=107) และของ regulatory_approval -19.8% (n=23)",
+          "hardNote": "หลุดตรงนี้น่าจะหมายถึง dilution หนักหรือนโยบายกลับทิศ",
+          "rrNote": "Entry 1 ถึง tight stop เทียบกับ TP2",
+          "rrWarning": "ถึงเป้า 5:1 ของ turbo"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "งบ Q1 FY2027",
+          "note": "ยังไม่ประกาศวัน ปีที่แล้ว Q1 ออก 7 พ.ย."
+        },
+        {
+          "event": "milestone NEPA ของ Tonopah Flats",
+          "note": "ทบทวนสิ่งแวดล้อมเต็มรูปแบบหลัง BLM รับ Plan of Operations 8 ก.ย."
+        }
+      ],
+      "catalystSpot": {
+        "preRunup": "regulatory_approval ใน turbo lane มี n=23 (excess vs SPY median +7.1pp เทียบ overall +7.7 ใกล้เคียง ไม่ใช่ laggard) รูปแบบของ ABAT เองคือพุ่งสั้นๆ ตามข่าว (+10% ก่อนตลาดเปิดวันได้ใบอนุญาต) แล้วแผ่วลงในไม่กี่วัน",
+        "preRunupTiming": "ตามข่าว — 1–2 วัน",
+        "postWin": {
+          "note": "ABAT ขึ้น ~10% ก่อนตลาดเปิดวันได้ใบอนุญาตส่งออก black mass (ต้น ต.ค. 2026) แล้วแผ่วลง กรอบ 52 สัปดาห์ของ ABAT เองที่เคยวิ่งหลายร้อย % จากข่าว DOE/BLM ซ้อนกับการเติบโตของรายได้ เป็นตัวบอกขนาดสูงสุด ไม่ใช่ event เดียว"
+        },
+        "postLose": {
+          "note": "Perpetua Resources (PPTA) ได้อนุมัติเงินกู้ EXIM $2.9B (21 พ.ค. 2026) แต่ปิดลง 5.24% ทั้งที่ระหว่างวันเคยขึ้น 26% — sell the news แบบที่ ABAT เพิ่งเจอกับใบอนุญาตส่งออก"
+        },
+        "spotSizing": {
+          "reason": "survival ไม่ติดธง แต่ราคาร่วง 42% หลังข่าวดีโดยไม่มีคำอธิบาย และแผนเติบโตต้องพึ่งการหาเงิน จึงอยู่ปลายล่างของช่วง 2–5%"
+        },
+        "stopPreCatalyst": {
+          "note": "กว้างกว่า medianMAE ของ regulatory_approval (-19.8%, n=23)"
+        },
+        "stopPostCatalyst": {
+          "note": "ออกถ้างบ Q1 FY27 มีการขาย ATM หนักหรือไม่มียอดส่งออก หรือใบอนุญาตส่งออกถูกเพิกถอน"
+        }
+      },
+      "comparableCases": [
+        {
+          "note": "กรอบราคา 52 สัปดาห์ของ ABAT เองที่วิ่งหลายร้อย % จากข่าว DOE/BLM ซ้อนกับการเติบโตของรายได้ — ตัวบอกขนาดสูงสุดของ moon case"
+        },
+        {
+          "note": "PPTA ได้อนุมัติเงินกู้ EXIM แต่ปิดลง 5.24% — sell the news บน milestone ด้านกฎระเบียบ/การเงินของกลุ่มแร่สำคัญ"
+        }
+      ]
+    }
+  }
+}

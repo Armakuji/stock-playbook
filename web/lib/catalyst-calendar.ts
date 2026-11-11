@@ -36,9 +36,8 @@ export function getCatalystCalendar(): CalendarEvent[] {
     } catch { /* skip bad files */ }
   }
 
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-  const todayISO = today.toISOString().slice(0, 10);
+  // UTC date — local midnight would read as yesterday east of UTC.
+  const todayISO = new Date().toISOString().slice(0, 10);
 
   const events: CalendarEvent[] = [];
 

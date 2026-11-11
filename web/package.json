@@ -10,7 +10,8 @@
     "backtest:fetch": "node ../scripts/fetch-backtest-prices.mjs && npm run feedback:build",
     "feedback:build": "node ../scripts/build-skill-feedback.mjs",
     "validate": "node ../scripts/validate-reports.mjs",
-    "prices:fetch": "node ../scripts/fetch-live-prices.mjs"
+    "prices:fetch": "node ../scripts/fetch-live-prices.mjs",
+    "test": "node --experimental-strip-types --no-warnings --test \"test/*.test.mjs\""
   },
   "dependencies": {
     "next": "16.2.9",

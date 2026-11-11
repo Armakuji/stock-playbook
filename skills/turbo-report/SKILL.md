@@ -133,7 +133,7 @@ Search for:
    reasoning that the price was self-fetched. Either way, still search live for the 52-week range
    and market cap — the cache only covers current price/change%.
 2. **Moon scenario research** — search `"[TICKER] bull case 2026 analyst target"` and `"[TICKER] 5-year upside potential"`
-3. **Binary catalyst** — exact date/event that triggers the 300%+ move
+3. **Binary catalyst** — exact date/event that triggers the 300%+ move. **Date provenance (backlog #37):** `catalystDate` must trace to company guidance, an SEC filing or an official FDA/PDUFA letter — never to a ClinicalTrials.gov *estimated completion* date or an `AI-detected` aggregator row. Put the primary source URL in `sources[]`. If only a month/quarter is known, use a `~` badge (`"~Q1 2027"`) instead of inventing a day.
 4. **Comparable 10x cases** — find 2–3 real stocks that made 300–1000%+ moves on a similar catalyst (mandatory — the `comparableCases[]` array needs real examples)
 5. **TAM / addressable market** — how big is the market if the company wins?
 6. **Risk of zero** — what is the realistic downside scenario?

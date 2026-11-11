@@ -80,7 +80,7 @@ function Pagination({
 }
 
 const VERDICT_COLORS: Record<StockReport["verdict"], string> = {
-  BUY: "#10b981", HOLD: "#f59e0b", SELL: "#ef4444", SPECULATIVE: "#8b5cf6",
+  BUY: "#10b981", HOLD: "#f59e0b", SELL: "#ef4444", SPECULATIVE: "#a78bfa",
 };
 const CONFIDENCE_COLORS: Record<string, string> = {
   High: "#10b981", Medium: "#f59e0b", Low: "#ef4444",
@@ -91,7 +91,7 @@ function DeltaBadge({ delta, th }: { delta: number | null; th: boolean }) {
     return (
       <span style={{
         fontSize: 10, fontWeight: 800, padding: "2px 7px", borderRadius: 5,
-        background: "#3b82f618", color: "#3b82f6", border: "1px solid #3b82f630",
+        background: "#3b82f618", color: "#60a5fa", border: "1px solid #3b82f630",
         fontFamily: "var(--font-mono, monospace)",
       }}>{th ? "ใหม่" : "NEW"}</span>
     );
@@ -290,7 +290,7 @@ export function RankingChangeTable({ rows }: { rows: RankChange[] }) {
                       {row.source ? (
                         <div>
                           <a href={row.source.url} target="_blank" rel="noopener noreferrer" style={{
-                            fontSize: 11, color: "#3b82f6", textDecoration: "none", lineHeight: 1.4,
+                            fontSize: 11, color: "#60a5fa", textDecoration: "none", lineHeight: 1.4,
                             display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden",
                             fontFamily: "var(--font-body, sans-serif)",
                           }}>
@@ -301,7 +301,7 @@ export function RankingChangeTable({ rows }: { rows: RankChange[] }) {
                           </div>
                         </div>
                       ) : (
-                        <span style={{ fontSize: 10, color: "#374151", fontFamily: "var(--font-mono, monospace)", fontStyle: "italic" }}>
+                        <span style={{ fontSize: 10, color: "var(--muted)", fontFamily: "var(--font-mono, monospace)" }}>
                           {th ? "ไม่พบข่าวเฉพาะ — อาจเป็น sector-wide move" : "No specific news found — may be a sector-wide move"}
                         </span>
                       )}

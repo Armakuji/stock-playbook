@@ -17,7 +17,7 @@
 
 import fs from "fs";
 import path from "path";
-import { StockReport } from "./types";
+import type { StockReport } from "./types";
 
 export interface LiveQuote { price: number; changePct?: number; asOf: string }
 

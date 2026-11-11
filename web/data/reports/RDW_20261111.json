@@ -1,0 +1,320 @@
+{
+  "ticker": "RDW",
+  "companyName": "Redwire Corporation",
+  "companyDescription": "Space infrastructure + tactical UAS · Penguin/Stalker drones for NATO/US military + on-orbit space components · record $619.7M backlog (Q3 2026) · FY2026 revenue guide $450–500M rests on a back-end-loaded Q4",
+  "exchange": "NYSE",
+  "generatedAt": "2026-11-11T17:30:00.000Z",
+  "price": 8.59,
+  "priceChange": 5.6,
+  "priceNote": "Live $8.59 (+5.6%) on Nov 11, 2026 — down 11% from $9.63 at the Aug 4 report, after a ~-20% reaction to the Nov 4 Q3 print. Old report's primary catalyst (Aug 5 Q2 earnings) has passed; this refresh re-anchors on the Q4 delivery test.",
+  "marketCap": "~$2.1B",
+  "sector": "Industrials / Space Infrastructure & Defense Drones",
+  "verdict": "HOLD",
+  "scoreLabel": "Speculative",
+  "score": 70,
+  "summary": "Refresh: the Aug 5 catalyst the old report was built around is long past, and the Nov 4 Q3 print split the story. Backlog hit a record $619.7M (up ~75% YoY) with a record 32.3% gross margin, but revenue of $109.0M missed by ~13% and free cash flow was -$66.4M, and the reaffirmed $450–500M full-year guide now needs a heavily back-end-loaded Q4 — the stock fell ~20% after the print. Liquidity is $538.9M after ~$567M of equity raised this year, so survival is not the question; dilution and Q4 deliveries are. There is no dated catalyst inside the ~6-week window this board hunts for: the next real test is the FY2026 print (~Q1 2027). So this is a HOLD, not a near-term catalyst play, and it will rank low on the board by design. Measured core median return to just after the catalyst is -6.7% (n=146): only the dip zone makes sense for new money.",
+  "catalysts": [
+    {
+      "icon": "📦",
+      "name": "Q4 deliveries → FY2026 guide ($450–500M)",
+      "description": "The reaffirmed guide implies a large Q4; the FY2026 print shows whether back-end-loaded deliveries landed. Date not yet announced.",
+      "urgencyLabel": "Q1 2027",
+      "dateBadge": "~Q1 2027",
+      "catalystDate": "2027-03-31",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📉",
+      "name": "Q3 2026 results — record backlog, revenue miss",
+      "description": "Revenue $109.0M (+5.4% YoY, ~13% miss), record 32.3% gross margin, record $619.7M backlog, FCF -$66.4M, liquidity $538.9M; stock ~-20% after.",
+      "urgencyLabel": "RESOLVED",
+      "dateBadge": "Nov 4, 2026",
+      "catalystDate": "2026-11-04",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "🏭",
+      "name": "Huntsville, AL manufacturing expansion",
+      "description": "164,000 sq ft expansion for UAS and space-systems production capacity.",
+      "urgencyLabel": "2027",
+      "dateBadge": "~Q4 2027",
+      "catalystDate": "2027-12-31",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "The $450–500M FY2026 guide depends on a heavily back-end-loaded Q4; any delivery slip makes it a guide cut.",
+    "Free cash flow was -$66.4M in Q3 (vs -$27.8M a year earlier) and inventory rose to $99.8M from $55.8M — working capital is absorbing the backlog growth.",
+    "~$567M of equity raised in 2026 means heavy dilution; more is possible even with $538.9M of liquidity.",
+    "The stock has missed and dropped on several recent prints (Q1 2026 -10.5%, Q3 2026 ~-20%).",
+    "No dated catalyst within the ~6-week window this board targets — capital tied up here waits for the FY print."
+  ],
+  "estimateDates": [
+    {
+      "event": "Q4 / FY2026 results",
+      "dateRange": "~Q1 2027",
+      "note": "Back-end-loaded Q4 vs $450–500M guide",
+      "est": "$450–500M FY26",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -30,
+      "price": 6.01
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 25,
+      "price": 10.74
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 66,
+      "price": 14.26
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 179.4,
+      "price": 24.0
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus (MarketBeat, Nov 5, 2026)",
+      "target": 14.28,
+      "rating": "Hold"
+    },
+    {
+      "firm": "Jefferies (Apr 2026)",
+      "target": 13,
+      "rating": "Hold"
+    },
+    {
+      "firm": "Street-high (prior report)",
+      "target": 24,
+      "rating": "Buy"
+    }
+  ],
+  "macroRisk": {
+    "rateOutlook": "The Fed hiked 25bp on Sep 16, 2026 (first hike since 2023), and a hot October CPI (core +0.3% m/m vs 0.2% expected) has pushed Dec 9 FOMC hike odds to roughly 89–100%, with the 10-year near 4.98%.",
+    "inflationNote": "October CPI ran hot (headline +0.4% m/m, core +0.3%); October PCE on Nov 25 is the next inflation read.",
+    "fedRisk": "MEDIUM",
+    "sectorImpact": "Defense demand supports the backlog, but a cash-burning, equity-funded small/mid cap is sensitive to higher-for-longer rates through dilution cost and multiple.",
+    "summary": "MEDIUM — rates matter mostly through financing; the bigger swing factor is Q4 execution."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 8.59,
+        "note": "Live price — not preferred; measured core at-catalyst median is -6.7% (n=146)",
+        "timing": "Now"
+      },
+      {
+        "label": "Entry 2",
+        "level": 7.6,
+        "rangeMax": 8.1,
+        "note": "Dip zone — preferred for new money",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 6.8,
+        "note": "Deep dip — only if Q4 commentary holds the guide",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 10.74,
+      "pct": 25.0,
+      "note": "Base — FY2026 lands inside the guide; ~4–5 month horizon to the FY print (above the core realized P75 of 10.3%, so the horizon is explicit)"
+    },
+    "tp2": {
+      "price": 14.26,
+      "pct": 66.0,
+      "note": "Bull — guide met plus backlog conversion lifts 2027 visibility; ≈ $14.28 consensus"
+    },
+    "tp3": {
+      "price": 24.0,
+      "pct": 179.4,
+      "note": "Moon — the prior street-high; defense UAS + space re-rate",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 7.25,
+      "tightPct": -15.6,
+      "tightNote": "Wider than core medianMAE (-13.1%)",
+      "hard": 6.3,
+      "hardPct": -26.7,
+      "hardNote": "Below here the market is pricing a guide cut",
+      "riskReward": "4.2 : 1",
+      "rrNote": "Entry 1 to tight stop vs TP2",
+      "rrWarning": "Acceptable, but no near-term catalyst"
+    },
+    "verdict": "HOLD — record backlog but a back-end-loaded Q4 and heavy dilution, and no dated catalyst within ~6 weeks. Measured core median return from report price to just after the catalyst is -6.7% (n=146): new money only in the $7.60–8.10 dip zone.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Space/defense-infrastructure names in this cohort move on same-day contract-award and sector-tailwind headlines rather than a sustained pre-event grind — RDW's own 11.7% Monday pop (defense-funding + de-escalation news) fired the trading day before the print, echoing the pattern from its Jul 21 Stalker-order pop.",
+    "preRunupTiming": "1-2 days pre-earnings on sector-wide tailwind / contract-pipeline optimism, not a multi-week runup",
+    "preRunupPct": "+10% to +12% in the day(s) just before the print (this cycle)",
+    "postWin": {
+      "avgPct": 10,
+      "range": "+5% to +12%",
+      "note": "Rocket Lab jumped 12% on its $8B Iridium takeover (Jun 29, 2026); AST SpaceMobile jumped 12% on Trump's $1.2T Golden Dome estimates (Jul 22, 2026); Redwire's own Stalker follow-on order news drove a +9.5% pop on Jul 21, 2026 — this cohort rewards confirmed contract/beat news with same-day double-digit moves.",
+      "exampleDate": "Jun-Jul 2026 (RKLB/ASTS/RDW)"
+    },
+    "postLose": {
+      "avgPct": -10.5,
+      "range": "-10% to -23%",
+      "note": "Redwire's own Q1 2026 print is the direct precedent: sales missed estimates and EPS surprise was -166.67%, sending the stock down 10.5% same-day; this followed an earlier miss + dilution overhang that had already pulled shares from $26.64 toward single digits. Sector capital also rotated away from names like SPCX (-23% YTD at points) during SpaceX's IPO.",
+      "exampleDate": "May 2026 (RDW Q1 2026 miss)"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "HOLD with no near-term catalyst; small starter only in the dip zone."
+    },
+    "stopPreCatalyst": {
+      "pct": -15.6,
+      "price": 7.25,
+      "note": "Wider than core medianMAE (-13.1%)"
+    },
+    "stopPostCatalyst": {
+      "pct": -20,
+      "note": "Exit if the FY2026 print cuts the guide or shows Q4 deliveries slipped"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "RKLB",
+      "event": "$8 billion Iridium takeover announcement",
+      "date": "Jun 2026",
+      "movePct": 12,
+      "days": 1,
+      "outcome": "good",
+      "note": "Closest same-sector precedent for how a major contract/M&A headline moves a space-infrastructure name — directly comparable to RDW's Taiwan/Marine Corps contract pattern this cycle."
+    },
+    {
+      "ticker": "ASTS",
+      "event": "Golden Dome $1.2T federal defense-spend estimate",
+      "date": "Jul 2026",
+      "movePct": 12,
+      "days": 1,
+      "outcome": "good",
+      "note": "Shows how federal defense/space procurement headlines can move a beaten-down, high-beta name double digits in a single session — same dynamic behind RDW's Aug 3 pop on the PDW Holdings loan news."
+    },
+    {
+      "ticker": "RDW",
+      "event": "Q1 2026 earnings miss (EPS -166% surprise, revenue miss)",
+      "date": "May 2026",
+      "movePct": -10.5,
+      "days": 1,
+      "outcome": "bad",
+      "note": "The most direct precedent for tomorrow's Aug 5 print — the exact same setup (backlog headlines vs. actual conversion) produced a same-day double-digit drop last quarter."
+    },
+    {
+      "ticker": "RDW",
+      "event": "Q3 2026 — record backlog but ~13% revenue miss, back-end-loaded guide",
+      "date": "Nov 2026",
+      "movePct": -20,
+      "days": 1,
+      "outcome": "bad",
+      "note": "The latest print: backlog and margins were strong, but the miss plus a Q4-dependent guide drew a ~20% drop — the same pattern as Q1 2026."
+    }
+  ],
+  "sources": [
+    "https://finviz.com/news/416076/redwire-corporation-reports-third-quarter-2026-financial-results-expands-backlog-achieves-record-gross-margins",
+    "https://finviz.com/news/417403/redwire-edges-past-eps-estimate-but-a-13-revenue-miss-leaves-a-back-end-loaded-guide-hanging-on-q4-deliveries",
+    "https://www.marketbeat.com/instant-alerts/price-redwire-nyse-rdw-stock-price-down-15-heres-why-2026-11-05/",
+    "https://finsee.ai/earnings/rdw/2026/q3/en/",
+    "https://www.sec.gov/Archives/edgar/data/0001819810/000181981026000060/exhibit991redwire03312026e.htm"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "รีเฟรช: catalyst 5 ส.ค. ที่รายงานเดิมใช้เป็นแกนผ่านไปนานแล้ว และงบ Q3 วันที่ 4 พ.ย. ออกมาผสม backlog สถิติใหม่ $619.7M (+~75% YoY) gross margin สถิติใหม่ 32.3% แต่รายได้ $109.0M ต่ำกว่าคาด ~13% free cash flow -$66.4M และเป้าทั้งปี $450–500M ที่ยืนไว้ต้องอาศัย Q4 ที่หนักมาก หุ้นลง ~20% หลังงบ สภาพคล่อง $538.9M หลังระดมทุนหุ้น ~$567M ในปีนี้ survival จึงไม่ใช่ประเด็น แต่เป็น dilution และการส่งมอบ Q4 ไม่มี catalyst ที่มีวันที่ภายใน ~6 สัปดาห์ที่บอร์ดนี้ต้องการ บททดสอบจริงถัดไปคืองบ FY2026 (~Q1 2027) จึงเป็น HOLD ไม่ใช่ catalyst play ระยะใกล้ และจะอยู่อันดับท้ายของบอร์ดโดยตั้งใจ ผลตอบแทน median ของ core ณ หลัง catalyst คือ -6.7% (n=146) เงินใหม่ควรเข้าเฉพาะโซนย่อ",
+      "priceNote": "ราคาล่าสุด $8.59 (+5.6%) วันที่ 11 พ.ย. 2026 — ลง 11% จาก $9.63 ในรายงาน 4 ส.ค. หลังร่วง ~20% จากงบ Q3 วันที่ 4 พ.ย. catalyst หลักของรายงานเดิม (งบ Q2 5 ส.ค.) ผ่านไปแล้ว รีเฟรชนี้ยึดบททดสอบการส่งมอบ Q4 แทน",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        {
+          "name": "ส่งมอบ Q4 → เป้า FY2026 ($450–500M)",
+          "description": "เป้าที่ยืนไว้หมายถึง Q4 ที่ใหญ่มาก งบ FY2026 จะบอกว่าส่งมอบได้ตามนั้นหรือไม่ ยังไม่ประกาศวัน"
+        },
+        {
+          "name": "งบ Q3 2026 — backlog สถิติใหม่ รายได้พลาด",
+          "description": "รายได้ $109.0M (+5.4% YoY ต่ำกว่าคาด ~13%) gross margin สถิติใหม่ 32.3% backlog สถิติใหม่ $619.7M FCF -$66.4M สภาพคล่อง $538.9M หุ้นลง ~20% หลังงบ"
+        },
+        {
+          "name": "ขยายโรงงาน Huntsville, AL",
+          "description": "ขยายพื้นที่ 164,000 ตร.ฟุต เพิ่มกำลังผลิต UAS และระบบอวกาศ"
+        }
+      ],
+      "risks": [
+        "เป้า FY2026 $450–500M ขึ้นกับ Q4 ที่หนักมาก ถ้าส่งมอบเลื่อนจะกลายเป็นการลดเป้า",
+        "free cash flow Q3 -$66.4M (ปีก่อน -$27.8M) และสินค้าคงคลังเพิ่มเป็น $99.8M จาก $55.8M — เงินทุนหมุนเวียนถูกดูดไปกับการโตของ backlog",
+        "ระดมทุนหุ้น ~$567M ในปี 2026 คือ dilution หนัก และอาจมีเพิ่มแม้มีสภาพคล่อง $538.9M",
+        "หุ้นพลาดเป้าและร่วงหลังงบหลายครั้งล่าสุด (Q1 2026 -10.5%, Q3 2026 ~-20%)",
+        "ไม่มี catalyst ที่มีวันที่ภายใน ~6 สัปดาห์ที่บอร์ดนี้ต้องการ เงินที่ลงตรงนี้ต้องรองบ FY"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed ขึ้นดอกเบี้ย 25bp เมื่อ 16 ก.ย. 2026 และ CPI ต.ค. ที่ร้อนกว่าคาด (core +0.3% m/m เทียบคาด 0.2%) ดันโอกาสขึ้นดอกเบี้ย 9 ธ.ค. เป็น ~89–100% บอนด์ 10 ปี ~4.98%",
+        "inflationNote": "CPI ต.ค. ร้อน (headline +0.4% m/m, core +0.3%) ตัวถัดไปคือ PCE ต.ค. วันที่ 25 พ.ย.",
+        "sectorImpact": "ความต้องการด้านกลาโหมหนุน backlog แต่หุ้น small/mid cap ที่เผาเงินและพึ่งการระดมทุนหุ้นไวต่อดอกเบี้ยสูงนานผ่านต้นทุน dilution และ multiple",
+        "summary": "MEDIUM — ดอกเบี้ยกระทบผ่านการหาเงินเป็นหลัก ตัวแปรที่ใหญ่กว่าคือการส่งมอบ Q4"
+      },
+      "entryStrategy": {
+        "verdict": "HOLD — backlog สถิติใหม่ แต่ Q4 หนักและ dilution สูง และไม่มี catalyst ที่มีวันที่ภายใน ~6 สัปดาห์ ผลตอบแทน median ของ core จากราคารายงานถึงหลัง catalyst คือ -6.7% (n=146) เงินใหม่เข้าเฉพาะโซนย่อ $7.60–8.10",
+        "entryLevels": [
+          {
+            "note": "ราคาล่าสุด — ไม่ใช่จุดเข้าที่แนะนำ สถิติ core ณ หลัง catalyst -6.7% (n=146)",
+            "timing": "ตอนนี้"
+          },
+          {
+            "note": "โซนย่อ — จุดเข้าที่แนะนำสำหรับเงินใหม่",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ร่วงหนัก — เข้าเฉพาะถ้าความเห็นเรื่อง Q4 ยังยืนเป้าได้",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — FY2026 อยู่ในกรอบเป้า กรอบเวลา ~4–5 เดือนถึงงบ FY (สูงกว่า P75 ที่ทำได้จริงของ core 10.3% จึงระบุกรอบเวลาชัด)"
+        },
+        "tp2": {
+          "note": "Bull — ได้ตามเป้าบวก backlog แปลงเป็นรายได้ ทำให้เห็นปี 2027 ชัดขึ้น ≈ consensus $14.28"
+        },
+        "tp3": {
+          "note": "Moon — เป้าสูงสุดของ street เดิม re-rate ทั้ง UAS กลาโหมและอวกาศ"
+        },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE ของ core (-13.1%)",
+          "hardNote": "ต่ำกว่านี้ตลาดกำลังราคาการลดเป้า",
+          "rrNote": "Entry 1 ถึง tight stop เทียบกับ TP2",
+          "rrWarning": "ยอมรับได้ แต่ไม่มี catalyst ระยะใกล้"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "งบ Q4 / FY2026",
+          "note": "Q4 ที่หนักเทียบเป้า $450–500M"
+        }
+      ]
+    }
+  },
+  "rankChangeSource": {
+    "headline": "Redwire Corporation Reports Third Quarter 2026 Financial Results",
+    "url": "https://finviz.com/news/416076/redwire-corporation-reports-third-quarter-2026-financial-results-expands-backlog-achieves-record-gross-margins",
+    "date": "Nov 2026"
+  }
+}

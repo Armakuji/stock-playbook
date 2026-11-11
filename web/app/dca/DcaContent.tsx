@@ -201,8 +201,8 @@ export function DcaContent({
                   ? `${ranked.length} หุ้น core · เรียงตาม quality + valuation · ถือยาว 3–5 ปี`
                   : `${ranked.length} core stocks · ranked by quality + valuation · hold 3–5 yrs`)
             : isFund
-              ? (th ? "ยังไม่มีกองทุน — รัน /dca-list เพื่อสร้างลิสต์ ETF" : "No funds yet — run /dca-list to build the ETF list")
-              : (th ? "ยังไม่มีหุ้น — รัน /dca-list เพื่อสร้างลิสต์ quality-core" : "No stocks yet — run /dca-list to build the quality-core list")}
+              ? (th ? "ยังไม่มีกองทุนที่เผยแพร่" : "No funds published yet")
+              : (th ? "ยังไม่มีหุ้นที่เผยแพร่" : "No stocks published yet")}
         </p>
 
         {ranked.length > 0 && (
@@ -234,7 +234,7 @@ export function DcaContent({
               {isFund ? (th ? "ยังไม่มีกองทุน" : "No funds yet.") : (th ? "ยังไม่มีหุ้น" : "No stocks yet.")}
             </p>
             <p style={{ fontSize: 13, margin: "8px 0 0", color: "#3a5560", fontFamily: "var(--font-mono, monospace)" }}>
-              {th ? "รัน " : "Run "}<code style={{ color: "#7dd3fc" }}>/dca-list</code>{th ? " เพื่อสร้างลิสต์" : " to build the list."}
+              {th ? "กลับมาดูหลังรอบคัดเลือกถัดไป" : "Check back after the next review."}
             </p>
           </div>
         ) : (

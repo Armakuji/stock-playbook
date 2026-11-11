@@ -55,9 +55,10 @@ export interface NorthStar {
 const pathKey = (ticker: string, reportDate: string) => `${ticker}_${reportDate}`;
 const ymdToISO = (s: string) => `${s.slice(0, 4)}-${s.slice(4, 6)}-${s.slice(6, 8)}`;
 
+// UTC: local-midnight Date + toISOString ends windows a day early east of UTC.
 function addDaysISO(yyyymmdd: string, days: number): string {
   const y = +yyyymmdd.slice(0, 4), m = +yyyymmdd.slice(4, 6) - 1, d = +yyyymmdd.slice(6, 8);
-  const dt = new Date(y, m, d); dt.setDate(dt.getDate() + days);
+  const dt = new Date(Date.UTC(y, m, d)); dt.setUTCDate(dt.getUTCDate() + days);
   return dt.toISOString().slice(0, 10);
 }
 

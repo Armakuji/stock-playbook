@@ -9,9 +9,9 @@ import { CatalystContent } from "./CatalystContent";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Catalyst Dashboard — 30%+ Upside Picks",
+  title: "Catalyst Dashboard — 20%+ Upside, Dated Catalysts",
   description:
-    "5 stocks screened for 30%+ near-term upside on a dated catalyst — earnings, launches, FDA decisions. Ranked by catalyst proximity, re-screened automatically.",
+    "Stocks screened for 20%+ upside with a catalyst dated within about six weeks — earnings, launches, FDA decisions. Ranked by how close the catalyst is.",
   alternates: { canonical: "/catalyst" },
 };
 
