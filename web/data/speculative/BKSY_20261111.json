@@ -1,0 +1,331 @@
+{
+  "ticker": "BKSY",
+  "companyName": "BlackSky Technology Inc.",
+  "companyDescription": "AI-powered satellite intelligence platform · Real-time Earth observation with sub-hourly revisit rates · $30M defense contract Apr 2026 · Golden Dome ISR layer = direct BKSY application · The AI-native eyes of the military and intelligence community",
+  "exchange": "NYSE",
+  "generatedAt": "2026-11-11T17:30:00.000Z",
+  "price": 24.32,
+  "priceChange": 2.01,
+  "priceNote": "Live $24.32 (+2.0%) on Nov 11, 2026 — up 44% from $16.91 at the Nov 4 report after the Nov 5 Q3 beat. The old Base target ($24.52) has been reached, so the old +45% Base is replaced by a new Base +15% ($27.97) anchored to the live price.",
+  "marketCap": "~$890M",
+  "sector": "Space / AI Intelligence",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 71,
+  "summary": "The binary resolved in BlackSky's favour: Q3 (Nov 5) delivered record revenue of $42.8M, net income of $19M and record adjusted EBITDA of $13M, with full-year revenue and EBITDA guidance raised, and the stock ran +44% from the Nov 4 report — straight through the old Base target. What is left is a slower story: getting to the targeted eight Gen-3 satellites on orbit by year-end after earlier launch delays, Golden Dome ISR awards that remain undated, and proving Q3 margins were not flattered by a one-off two-month government Gen-3 pilot (an analyst read flags a soft Q4 setup). Cash is $231M with roughly -$12M quarterly free cash flow, so survival is clean. The asymmetry is much smaller than a week ago: Base is now +15% and the Moon case (+200%) needs Golden Dome plus a full Gen-3 constellation, so this is a ค่าขนม hold, not a fresh moonshot entry. Measured turbo median return to just after the catalyst is -4.0% (n=68): wait for the post-earnings gap to fill. Size 1–1.5% max.",
+  "catalysts": [
+    {
+      "icon": "🛰️",
+      "name": "Eight Gen-3 satellites on orbit by year-end",
+      "description": "Management kept the target of eight Gen-3 satellites on orbit by end of 2026 despite earlier launch delays; it also said 2026 revenue does not depend on more launches. Hitting it de-risks 2027 capacity.",
+      "urgencyLabel": "BY YEAR-END",
+      "dateBadge": "~Q4 2026",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🛡️",
+      "name": "Golden Dome ISR layer awards",
+      "description": "Space-based ISR requirement where BlackSky's real-time imagery fits; award timing is not public.",
+      "urgencyLabel": "UNDATED",
+      "dateBadge": "Pending",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "📊",
+      "name": "Q3 2026 results — beat and raise",
+      "description": "Revenue $42.8M, net income $19M, record adjusted EBITDA $13M, full-year guidance raised; cash and investments $231.1M. Stock +44% since.",
+      "urgencyLabel": "RESOLVED",
+      "dateBadge": "Nov 5, 2026",
+      "catalystDate": "2026-11-05",
+      "badgeColor": "green",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Q3 was partly flattered by a seven-figure, two-month U.S. government Gen-3 pilot, so the 30% EBITDA margin is not a run rate; an analyst read calls the Q4 setup soft.",
+    "Gen-3 launches have slipped before; missing the eight-satellites-by-year-end target would push capacity and revenue growth into 2027.",
+    "After a +44% move, the highest named targets (~$38–42) imply limited upside versus a moonshot lane; much of the near-term good news is priced.",
+    "Revenue is concentrated in government and international defense customers; budget or contract timing shifts move results quarter to quarter.",
+    "Continued share issuance while holding $231M of cash would mean ongoing dilution despite positive operating cash flow."
+  ],
+  "estimateDates": [
+    {
+      "event": "Gen-3 constellation — 8 on orbit",
+      "dateRange": "~Q4 2026",
+      "note": "Company target for year-end 2026",
+      "est": "8 satellites",
+      "highlight": "blue"
+    },
+    {
+      "event": "Q4 / FY2026 results",
+      "dateRange": "~Q1 2027",
+      "note": "Tests whether Q3 margins hold without the pilot",
+      "est": "FY guide (raised)",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -40,
+      "price": 14.59
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 15,
+      "price": 27.97
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 73,
+      "price": 42.07
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 200,
+      "price": 72.96
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Benchmark (May 2026)",
+      "target": 42,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Craig-Hallum",
+      "target": 38,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Raymond James",
+      "target": 30,
+      "rating": "Buy"
+    }
+  ],
+  "macroRisk": {
+    "rateOutlook": "The Fed hiked 25bp on Sep 16, 2026 (first hike since 2023), and a hot October CPI (core +0.3% m/m vs 0.2% expected) has pushed Dec 9 FOMC hike odds to roughly 89–100%, with the 10-year near 4.98%.",
+    "inflationNote": "October CPI ran hot (headline +0.4% m/m, core +0.3%); October PCE on Nov 25 is the next inflation read.",
+    "fedRisk": "MEDIUM",
+    "sectorImpact": "Defense-space names have held up better than speculative tech, and BlackSky is now EBITDA-positive, so higher-for-longer rates matter less here than for pre-revenue peers; the risk is multiple compression after a +44% run.",
+    "summary": "MEDIUM — a priced-in December hike pressures high-multiple small caps, but government demand and positive EBITDA cushion BlackSky relative to the rest of the lane."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 24.32,
+        "note": "Live price after a +44% run — starter only; measured turbo at-catalyst median is -4.0% (n=68)",
+        "timing": "Now (starter only)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 20.5,
+        "rangeMax": 22.0,
+        "note": "Partial fill of the post-earnings gap — preferred entry",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 18.0,
+        "note": "Full gap fill — thesis-intact only",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 27.97,
+      "pct": 15.0,
+      "note": "Base — eight Gen-3 on orbit and a Q4 that holds margins; ~3–4 month horizon (below the turbo realized P75 of 21.5%)"
+    },
+    "tp2": {
+      "price": 42.07,
+      "pct": 73.0,
+      "note": "Bull — Golden Dome ISR award plus continued international wins; matches the ~$42 top analyst targets"
+    },
+    "tp3": {
+      "price": 72.96,
+      "pct": 200.0,
+      "note": "Moon — BlackSky becomes a core real-time ISR provider for Golden Dome with a full Gen-3 constellation",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 18.9,
+      "tightPct": -22.3,
+      "tightNote": "Wider than turbo medianMAE (-20%, n=107) and partnership_win's -21.7% (n=32)",
+      "hard": 14.6,
+      "hardPct": -40.0,
+      "hardNote": "Back below the pre-earnings level — the Q3 re-rate has fully unwound",
+      "riskReward": "3.3 : 1",
+      "rrNote": "Entry 1 to tight stop vs TP2",
+      "rrWarning": "Below the 5:1 turbo target after the run — size down"
+    },
+    "verdict": "SPECULATIVE — the Q3 binary resolved positively and the stock already ran +44%; what remains is a slower Gen-3 + Golden Dome story. Measured turbo median return from report price to just after the catalyst is -4.0% (n=68), so do not chase: prefer $20.50–22.00. ค่าขนม 1–1.5%.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "Space intelligence companies historically run 40-100% in the 4-8 weeks before major government ISR contract announcements. Golden Dome ISR awards expected H2 2026 — BKSY could pre-run into that decision window.",
+    "preRunupTiming": "4-8 สัปดาห์ก่อน Golden Dome ISR contract announcements",
+    "preRunupPct": "+30-80%",
+    "postWin": {
+      "avgPct": 100,
+      "range": "+60% to +200%",
+      "note": "Planet Labs (PL) +85% in 2 months on NOAA and DoD contract expansions in 2024. Satellogic +120% on multi-year DoD ISR contract. BKSY's $30M April contract already showed the pattern — next contract 3-5x larger could generate proportionally larger move.",
+      "exampleDate": "2024"
+    },
+    "postLose": {
+      "avgPct": -35,
+      "range": "-25% to -55%",
+      "note": "BlackSky missed a major NGA contract in 2023, falling 40% from its prior high. Losing the Golden Dome ISR bid would trigger a similar selloff — especially if Planet Labs or Umbra wins the prime.",
+      "exampleDate": "2023"
+    },
+    "spotSizing": {
+      "pct": 1.5,
+      "reason": "Binary already resolved and the stock ran +44%; remaining upside is slower and smaller, so the low end of the turbo band."
+    },
+    "stopPreCatalyst": {
+      "pct": -22.3,
+      "price": 18.9,
+      "note": "Wider than partnership_win medianMAE (-21.7%, n=32)"
+    },
+    "stopPostCatalyst": {
+      "pct": -30,
+      "note": "Exit if fewer than eight Gen-3 are on orbit by year-end and Q4 margins fall back"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "PL",
+      "event": "NOAA Commercial Weather Data + DoD ISR Expansion",
+      "date": "2024",
+      "movePct": 85,
+      "days": 60,
+      "outcome": "good",
+      "note": "Planet Labs +85% in 2 months on combined NOAA weather data contract + DoD ISR expansion. BlackSky Spectra AI is the next-generation equivalent — AI-processed real-time ISR vs raw satellite imagery. BKSY's Golden Dome win would trigger the same institutional re-rating."
+    },
+    {
+      "ticker": "MAXAR",
+      "event": "NRO Long-Duration Satellite Imagery Contract",
+      "date": "2022",
+      "movePct": 60,
+      "days": 30,
+      "outcome": "good",
+      "note": "MAXAR Technologies +60% in 30 days on NRO long-duration ISR contract. BKSY's equivalent would be an NGA/NRO contract win — the existing $30M April contract shows BKSY already in the procurement pipeline."
+    },
+    {
+      "ticker": "BKSY",
+      "event": "$30M Defense ISR Contract Award",
+      "date": "Apr 2026",
+      "movePct": 45,
+      "days": 14,
+      "outcome": "good",
+      "note": "BlackSky itself +45% in 2 weeks after the $30M defense contract was announced in April 2026. The Golden Dome ISR award will be 5-10x larger — proportional re-rate could reach 200%+ at $75 moon case."
+    },
+    {
+      "ticker": "BKSY",
+      "event": "Q3 2026 beat and raise — record revenue, positive net income",
+      "date": "Nov 2026",
+      "movePct": 44,
+      "days": 5,
+      "outcome": "good",
+      "note": "This pick's own binary: the +44% from $16.91 to $24.32 is the move the old Base was written for, so the remaining upside had to be re-derived."
+    }
+  ],
+  "rankChangeSource": {
+    "headline": "BlackSky Reports Third Quarter 2026 Results",
+    "url": "https://www.morningstar.com/news/business-wire/20261105968484/blacksky-reports-third-quarter-2026-results",
+    "date": "Nov 2026"
+  },
+  "sources": [
+    "https://www.morningstar.com/news/business-wire/20261105968484/blacksky-reports-third-quarter-2026-results",
+    "https://s21.q4cdn.com/515173672/files/doc_earnings/2026/q3/earnings-result/PressRelease-3Q26.pdf",
+    "https://finviz.com/news/417260/blackskys-record-gen-3-quarter-delivers-margin-breakout-and-higher-guidance-but-backlog-satellite-timing-and-a-soft-q4-setup-keep-the-market-skeptical",
+    "https://finsee.ai/earnings/bksy/2026/q3/en/",
+    "https://fool.com/earnings/call-transcripts/2026/08/13/blacksky-bksy-q2-2026-earnings-call-transcript",
+    "https://www.satellitetoday.com/finance/2026/08/06/blacksky-reports-record-service-revenue-and-international-growth-from-gen-3-adoption/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "binary ออกมาดีสำหรับ BlackSky: งบ Q3 (5 พ.ย.) รายได้สถิติใหม่ $42.8M กำไรสุทธิ $19M และ adjusted EBITDA สถิติใหม่ $13M พร้อมปรับเป้าทั้งปีขึ้น หุ้นวิ่ง +44% จากรายงาน 4 พ.ย. ทะลุ Base เดิมไปแล้ว ที่เหลือเป็นเรื่องช้ากว่า: ให้ได้ดาวเทียม Gen-3 ครบ 8 ดวงภายในสิ้นปีหลังเคยเลื่อน, สัญญา Golden Dome ISR ที่ยังไม่มีวันที่ และพิสูจน์ว่า margin Q3 ไม่ได้มาจาก pilot ของรัฐบาล 2 เดือนครั้งเดียว (มีบทวิเคราะห์ชี้ว่า Q4 อาจอ่อน) เงินสด $231M free cash flow ติดลบราว $12M ต่อไตรมาส survival สะอาด ความไม่สมมาตรเหลือน้อยกว่าสัปดาห์ก่อนมาก: Base เหลือ +15% และ Moon (+200%) ต้องได้ทั้ง Golden Dome และ Gen-3 ครบ จึงเป็นไม้ค่าขนมถือต่อ ไม่ใช่จุดเข้า moonshot ใหม่ ผลตอบแทน median ของ turbo ณ หลัง catalyst คือ -4.0% (n=68) รอให้ gap หลังงบเติมก่อน แนะนำ 1–1.5% ของ portfolio เท่านั้น",
+      "priceNote": "ราคาล่าสุด $24.32 (+2.0%) วันที่ 11 พ.ย. 2026 — ขึ้น 44% จาก $16.91 ในรายงาน 4 พ.ย. หลังงบ Q3 ดีกว่าคาดเมื่อ 5 พ.ย. เป้า Base เดิม ($24.52) ถึงแล้ว จึงแทน Base เดิม +45% ด้วย Base ใหม่ +15% ($27.97) คิดจากราคาล่าสุด",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "ดาวเทียม Gen-3 ครบ 8 ดวงภายในสิ้นปี",
+          "description": "ผู้บริหารยังยืนเป้า Gen-3 8 ดวงในวงโคจรภายในสิ้นปี 2026 แม้เคยเลื่อนการปล่อย และบอกว่ารายได้ปี 2026 ไม่ได้พึ่งการปล่อยเพิ่ม ถ้าทำได้จะลดความเสี่ยงด้านกำลังผลิตปี 2027"
+        },
+        {
+          "name": "สัญญา Golden Dome ISR",
+          "description": "ความต้องการ ISR จากอวกาศที่ภาพเรียลไทม์ของ BlackSky ตอบโจทย์ ยังไม่มีกำหนดเวลาประกาศ"
+        },
+        {
+          "name": "งบ Q3 2026 — ดีกว่าคาดและปรับเป้าขึ้น",
+          "description": "รายได้ $42.8M กำไรสุทธิ $19M adjusted EBITDA สถิติใหม่ $13M ปรับเป้าทั้งปีขึ้น เงินสดและเงินลงทุน $231.1M หุ้นขึ้น 44% นับจากนั้น"
+        }
+      ],
+      "risks": [
+        "Q3 ได้แรงหนุนจาก pilot Gen-3 ของรัฐบาลสหรัฐฯ ระยะ 2 เดือนมูลค่าหลักล้านดอลลาร์ margin EBITDA 30% จึงไม่ใช่อัตราปกติ และมีบทวิเคราะห์มองว่า Q4 อ่อน",
+        "การปล่อย Gen-3 เคยเลื่อนมาแล้ว ถ้าไม่ครบ 8 ดวงภายในสิ้นปี กำลังผลิตและการเติบโตจะเลื่อนไปปี 2027",
+        "หลังขึ้น 44% เป้านักวิเคราะห์สูงสุด (~$38–42) เหลือ upside จำกัดสำหรับ lane moonshot ข่าวดีระยะใกล้ถูก price ไปมากแล้ว",
+        "รายได้กระจุกที่ลูกค้ารัฐบาลและกลาโหมต่างประเทศ งบประมาณหรือจังหวะสัญญาที่เลื่อนทำให้ผลแต่ละไตรมาสแกว่ง",
+        "ถ้ายังออกหุ้นเพิ่มทั้งที่มีเงินสด $231M ก็คือ dilution ต่อเนื่องแม้กระแสเงินสดจากการดำเนินงานเป็นบวก"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed ขึ้นดอกเบี้ย 25bp เมื่อ 16 ก.ย. 2026 และ CPI ต.ค. ที่ร้อนกว่าคาด (core +0.3% m/m เทียบคาด 0.2%) ดันโอกาสขึ้นดอกเบี้ย 9 ธ.ค. เป็น ~89–100% บอนด์ 10 ปี ~4.98%",
+        "inflationNote": "CPI ต.ค. ร้อน (headline +0.4% m/m, core +0.3%) ตัวถัดไปคือ PCE ต.ค. วันที่ 25 พ.ย.",
+        "sectorImpact": "หุ้นกลาโหม-อวกาศยืนได้ดีกว่าหุ้นเทคเก็งกำไร และ BlackSky มี EBITDA เป็นบวกแล้ว ดอกเบี้ยสูงนานจึงกระทบน้อยกว่าคู่แข่งที่ยังไม่มีรายได้ ความเสี่ยงคือ multiple หดหลังวิ่ง 44%",
+        "summary": "MEDIUM — การขึ้นดอกเบี้ย ธ.ค. ที่ price แล้วกดหุ้น small cap ที่ multiple สูง แต่ความต้องการจากรัฐบาลและ EBITDA ที่เป็นบวกช่วยรองรับเมื่อเทียบกับหุ้นอื่นใน lane"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — binary Q3 ออกมาดีและหุ้นวิ่งไปแล้ว 44% ที่เหลือเป็นเรื่อง Gen-3 + Golden Dome ที่ช้ากว่า ผลตอบแทน median ของ turbo จากราคารายงานถึงหลัง catalyst คือ -4.0% (n=68) อย่าไล่ราคา ให้รอ $20.50–22.00 ค่าขนม 1–1.5%",
+        "entryLevels": [
+          {
+            "note": "ราคาล่าสุดหลังวิ่ง 44% — ไม้แรกเล็กๆ เท่านั้น สถิติ turbo ณ หลัง catalyst -4.0% (n=68)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "เติม gap หลังงบบางส่วน — จุดเข้าที่แนะนำ",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "เติม gap เต็ม — เข้าเฉพาะถ้า thesis ยังอยู่",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — Gen-3 ครบ 8 ดวงและ Q4 รักษา margin ได้ กรอบเวลา ~3–4 เดือน (ต่ำกว่า P75 ที่ทำได้จริงของ turbo 21.5%)"
+        },
+        "tp2": {
+          "note": "Bull — ได้สัญญา Golden Dome ISR บวกชนะสัญญาต่างประเทศต่อเนื่อง ตรงกับเป้านักวิเคราะห์สูงสุด ~$42"
+        },
+        "tp3": {
+          "note": "Moon — BlackSky เป็นผู้ให้บริการ ISR เรียลไทม์หลักของ Golden Dome พร้อม Gen-3 ครบชุด"
+        },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE ของ turbo (-20%, n=107) และของ partnership_win -21.7% (n=32)",
+          "hardNote": "กลับต่ำกว่าระดับก่อนงบ — การ re-rate จาก Q3 หายหมด",
+          "rrNote": "Entry 1 ถึง tight stop เทียบกับ TP2",
+          "rrWarning": "ต่ำกว่าเป้า 5:1 ของ turbo หลังวิ่งแรง — ลดขนาด"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "Gen-3 ครบ 8 ดวงในวงโคจร",
+          "note": "เป้าของบริษัทภายในสิ้นปี 2026"
+        },
+        {
+          "event": "งบ Q4 / FY2026",
+          "note": "ทดสอบว่า margin Q3 อยู่ได้โดยไม่มี pilot"
+        }
+      ]
+    }
+  }
+}

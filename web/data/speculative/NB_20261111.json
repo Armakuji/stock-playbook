@@ -1,0 +1,294 @@
+{
+  "ticker": "NB",
+  "companyName": "NioCorp Developments Ltd.",
+  "companyDescription": "Critical minerals · Elk Creek niobium/scandium/titanium project — 2nd-largest indicated US rare-earth resource · 2026 Feasibility Study complete ($4.1B pre-tax NPV8%) · $800M EXIM Bank debt financing still in review",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-11T17:30:00.000Z",
+  "price": 3.02,
+  "priceChange": 0.33,
+  "priceNote": "Live $3.02 (+0.3%) on Nov 11, 2026 — down 13% from $3.47 at the Sep 29 report. The old report sat in post-stage only because its 'H2 2026' badge parsed to a phantom Sep 15; the EXIM decision is still pending. Old Base +45% ($5.03) is replaced by a new Base +40% ($4.23) anchored to the live price.",
+  "marketCap": "~$440M",
+  "sector": "Materials / Critical Minerals",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 58,
+  "summary": "Still waiting on the one binary that matters: EXIM Bank's debt package for Elk Creek. An Oct 14, 2026 EXIM letter of support reaffirmed the intent to finance about 65% of upfront costs — now a potential ~$1.2B loan after the August feasibility study raised development costs — and EXIM says it will take the loan to its Transaction Review Committee 'as expeditiously as practicable', with final approval by the EXIM Board. No decision date is public, so this report carries no catalyst date rather than inventing one (the previous 'H2 2026' badge had parsed to a phantom Sep 15 and pushed the pick into post-stage). The stock has kept drifting lower on sector-wide rare-earth cooling despite the supportive letter. Base +40% assumes TRC and Board approval within ~6 months; Moon is the ~$11 analyst consensus. Measured turbo median return to just after the catalyst is -4.0% (n=68): prefer the dip zone. Size 1.5–2% max.",
+  "catalysts": [
+    {
+      "icon": "🏦",
+      "name": "EXIM Bank TRC review → Board approval (~$1.2B loan)",
+      "description": "Oct 14, 2026 EXIM letter of support reaffirmed ~65% financing of upfront costs; next is the Transaction Review Committee, then a final EXIM Board decision. No date announced.",
+      "urgencyLabel": "PENDING",
+      "dateBadge": "Pending",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🤝",
+      "name": "Offtake + strategic financing stack",
+      "description": "Lockheed Martin scandium MOU (Aug 2026), Traxys offtake for remaining output and the Jan 2026 ~$150M equity raise form the non-EXIM part of the capital stack.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "EXIM approval is the whole thesis and has no date; the process has run since a 2024 term sheet, and further delay is the base risk.",
+    "The August feasibility study raised development costs; the loan is now ~$1.2B for ~65% of upfront costs, so the equity gap and dilution grow with it.",
+    "Rare-earth and critical-mineral sentiment has cooled since the Trump–Xi summit; the stock fell even on good news (feasibility study, Lockheed MOU, EXIM letter).",
+    "Pre-revenue mine developer: any financing slip extends cash burn before production.",
+    "Analyst targets are wide (Jefferies $4.70 Hold vs ~$11 consensus), so the Moon case leans on the optimistic end."
+  ],
+  "estimateDates": [
+    {
+      "event": "EXIM TRC / Board decision",
+      "dateRange": "Pending",
+      "note": "EXIM: 'as expeditiously as practicable' — no date",
+      "est": "~$1.2B loan",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -50,
+      "price": 1.51
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 40,
+      "price": 4.23
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 130,
+      "price": 6.95
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 268.2,
+      "price": 11.12
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus (6 analysts, S&P Global)",
+      "target": 11.12,
+      "rating": "Buy",
+      "note": "+220% from current price; range $4.70-$15"
+    },
+    {
+      "firm": "Jefferies (Sep 2, most conservative)",
+      "target": 4.7,
+      "rating": "Hold"
+    }
+  ],
+  "macroRisk": {
+    "rateOutlook": "The Fed hiked 25bp on Sep 16, 2026 (first hike since 2023), and a hot October CPI (core +0.3% m/m vs 0.2% expected) has pushed Dec 9 FOMC hike odds to roughly 89–100%, with the 10-year near 4.98%.",
+    "inflationNote": "October CPI ran hot (headline +0.4% m/m, core +0.3%); October PCE on Nov 25 is the next inflation read.",
+    "fedRisk": "HIGH",
+    "sectorImpact": "A pre-production mine needing a ~$1.2B loan plus equity is directly exposed to higher-for-longer rates through financing cost and to risk appetite for small-cap resources.",
+    "summary": "HIGH — the thesis is a financing event, and financing gets harder and more dilutive as rates stay high."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 3.02,
+        "note": "Live price — starter only; measured turbo at-catalyst median is -4.0% (n=68)",
+        "timing": "Now (starter only)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 2.6,
+        "rangeMax": 2.8,
+        "note": "Dip zone — preferred entry while the EXIM date is unknown",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 2.3,
+        "note": "Deep dip — thesis-intact only",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 4.23,
+      "pct": 40.1,
+      "note": "Base — EXIM TRC + Board approval within ~6 months; above the turbo realized P75 of 21.5% because the event itself is binary"
+    },
+    "tp2": {
+      "price": 6.95,
+      "pct": 130.1,
+      "note": "Bull — approval plus a full financing close and early-works start"
+    },
+    "tp3": {
+      "price": 11.12,
+      "pct": 268.2,
+      "note": "Moon — the ~$11 analyst consensus: funded, constructing, and re-rated as a US critical-minerals supplier",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 2.3,
+      "tightPct": -23.8,
+      "tightNote": "Wider than turbo medianMAE (-20%, n=107) and regulatory_approval's -19.8% (n=23)",
+      "hard": 1.75,
+      "hardPct": -42.1,
+      "hardNote": "A break here likely means EXIM delay or rejection is being priced",
+      "riskReward": "5.5 : 1",
+      "rrNote": "Entry 1 to tight stop vs TP2",
+      "rrWarning": "Meets the 5:1 turbo target"
+    },
+    "verdict": "SPECULATIVE — one undated binary (EXIM ~$1.2B loan) with supportive signals but no decision. Measured turbo median return from report price to just after the catalyst is -4.0% (n=68), so buying at report price is not the default: prefer $2.60–2.80. ค่าขนม 1.5–2%.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "regulatory_approval",
+    "preRunup": "Critical-minerals small-caps have historically run hard on Trump administration policy headlines (Project Vault, tariff/export-control news, DPA awards) even without a company-specific announcement — but NB itself has NOT shown this pattern this quarter, selling off on its own good news instead.",
+    "preRunupTiming": "days ก่อน policy headline (unpredictable timing) — though NB's own recent reactions have broken this pattern",
+    "preRunupPct": "+10-35% historically (sector), but NB itself has recently moved the opposite way on good news",
+    "postWin": {
+      "avgPct": 20,
+      "range": "+4% to +35%",
+      "note": "Sector precedent: CRML surged 35% on the Feb 2026 Project Vault announcement, USAR rose ~13% on its Serra Verde acquisition (Apr 2026). NB's own recent reactions (Feasibility Study -1.65%, Lockheed MOU -3.28%) have NOT matched this pattern — a genuine EXIM finalization would need to overcome the current sector-wide skepticism, not just be good news on its own.",
+      "exampleDate": "Feb-Apr 2026 (sector); Aug 2026 (NB's own muted/negative reactions)"
+    },
+    "postLose": {
+      "avgPct": -40,
+      "range": "-25% to -55%",
+      "note": "A rejected or indefinitely delayed EXIM application would force NioCorp toward more dilutive equity financing, likely triggering a sharp de-rate given how central the $800M debt package is to the bull case; per turbo.overall stopGuidance, drawdowns of this type median around -25% for regulatory_approval catalysts (n=8) but can run deeper on financing-specific breaks.",
+      "exampleDate": "Hypothetical — no direct comp found; NB's own -28% drift since July shows the downside is already partly playing out absent an actual rejection"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "Single undated binary; survival not flagged but the equity gap grows with the higher loan size — low end of the band."
+    },
+    "stopPreCatalyst": {
+      "pct": -23.8,
+      "price": 2.3,
+      "note": "Wider than regulatory_approval medianMAE (-19.8%, n=23)"
+    },
+    "stopPostCatalyst": {
+      "pct": -35,
+      "note": "Exit if EXIM declines or materially cuts the loan, or the TRC review slips past mid-2027"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "NB",
+      "event": "2026 Feasibility Study release ($4.1B pre-tax NPV8%, clears key EXIM requirement)",
+      "date": "Aug 10, 2026",
+      "movePct": -1.65,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Same-company precedent for the current pattern: genuinely positive project-finance progress, sold on the news anyway. Confirms this is a sector-sentiment issue, not a company-execution one."
+    },
+    {
+      "ticker": "NB",
+      "event": "Lockheed Martin scandium oxide MOU (defense offtake signal)",
+      "date": "Aug 4, 2026",
+      "movePct": -3.28,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Second same-company data point in one week showing real news isn't moving the stock — reinforces that a company-specific EXIM finalization will need to be large enough to break through current sector skepticism."
+    },
+    {
+      "ticker": "CRML",
+      "event": "Project Vault $12B Critical Minerals Stockpile Announcement",
+      "date": "Feb 2026",
+      "movePct": 35,
+      "days": 1,
+      "outcome": "good",
+      "note": "Shows the sector CAN move sharply on policy catalysts — the question is whether NB's own EXIM news can still trigger this now that the Trump-Xi summit has cooled the policy tailwind somewhat."
+    }
+  ],
+  "sources": [
+    "https://www.metaltechnews.com/story/2026/10/21/tech-metals/exim-affirms-65-percent-elk-creek-financing-target/2988.html",
+    "https://www.barchart.com/story/news/30744237/exim-advances-niocorp-elk-creek-critical-minerals-project-to-independent-technical-review",
+    "https://www.northernminer.com/news/niocorp-nears-elk-creek-full-1-1b-financing/1003889850",
+    "https://www.metalnomist.com/2026/01/niocorp-elk-creek-critical-minerals.html",
+    "https://www.niocorp.com/niocorp-receives_800-million-letter-of-interest-from-exim-bank/",
+    "https://www.stocktitan.net/news/NB/",
+    "https://stockanalysis.com/stocks/nb/",
+    "https://stockanalysis.com/stocks/nb/forecast/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "ยังรอ binary ตัวเดียวที่สำคัญ: วงเงินกู้จาก EXIM Bank สำหรับ Elk Creek จดหมายสนับสนุนของ EXIM วันที่ 14 ต.ค. 2026 ยืนยันเจตนาให้กู้ราว 65% ของต้นทุนเริ่มต้น — ตอนนี้วงเงินอาจราว $1.2B หลัง feasibility study เดือน ส.ค. ปรับต้นทุนขึ้น — EXIM บอกว่าจะนำเข้า Transaction Review Committee 'โดยเร็วที่สุดเท่าที่ทำได้' แล้วให้บอร์ด EXIM อนุมัติขั้นสุดท้าย ยังไม่มีวันตัดสิน รายงานนี้จึงไม่ใส่วัน catalyst แทนที่จะเดา (badge 'H2 2026' เดิมถูกแปลงเป็น 15 ก.ย. ที่ไม่มีจริงและทำให้ถูกนับว่า catalyst ผ่านไปแล้ว) หุ้นยังไหลลงตามกลุ่ม rare earth ที่เย็นลงแม้มีจดหมายสนับสนุน Base +40% สมมติว่าผ่าน TRC และบอร์ดภายใน ~6 เดือน Moon คือ consensus ~$11 ผลตอบแทน median ของ turbo ณ หลัง catalyst คือ -4.0% (n=68) ให้รอโซนย่อ แนะนำ 1.5–2% ของ portfolio เท่านั้น",
+      "priceNote": "ราคาล่าสุด $3.02 (+0.3%) วันที่ 11 พ.ย. 2026 — ลง 13% จาก $3.47 ในรายงาน 29 ก.ย. รายงานเดิมถูกนับเป็น post-stage เพราะ badge 'H2 2026' ถูกแปลงเป็น 15 ก.ย. ที่ไม่มีจริง การตัดสินของ EXIM ยังค้างอยู่ Base เดิม +45% ($5.03) ถูกแทนด้วย Base ใหม่ +40% ($4.23) คิดจากราคาล่าสุด",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "EXIM TRC → บอร์ดอนุมัติ (เงินกู้ ~$1.2B)",
+          "description": "จดหมายสนับสนุน EXIM 14 ต.ค. 2026 ยืนยันให้กู้ ~65% ของต้นทุนเริ่มต้น ขั้นต่อไปคือ Transaction Review Committee แล้วบอร์ด EXIM ตัดสิน ยังไม่ประกาศวัน"
+        },
+        {
+          "name": "offtake + แหล่งเงินทุนอื่น",
+          "description": "MOU scandium กับ Lockheed Martin (ส.ค. 2026), offtake กับ Traxys และการระดมทุน ~$150M เมื่อ ม.ค. 2026 เป็นส่วนของเงินทุนที่ไม่ใช่ EXIM"
+        }
+      ],
+      "risks": [
+        "การอนุมัติของ EXIM คือ thesis ทั้งหมดและไม่มีวันที่ กระบวนการเดินมาตั้งแต่ term sheet ปี 2024 การเลื่อนต่อคือความเสี่ยงพื้นฐาน",
+        "feasibility study เดือน ส.ค. ปรับต้นทุนขึ้น วงเงินกู้จึงเป็น ~$1.2B สำหรับ ~65% ของต้นทุน ส่วนที่ต้องหาจากหุ้นและ dilution ก็โตตาม",
+        "sentiment กลุ่ม rare earth เย็นลงตั้งแต่การประชุม Trump–Xi หุ้นร่วงแม้มีข่าวดี (feasibility study, MOU Lockheed, จดหมาย EXIM)",
+        "เป็นเหมืองที่ยังไม่มีรายได้ ถ้าการหาเงินเลื่อน cash burn ก่อนผลิตจะยืดออก",
+        "เป้านักวิเคราะห์กว้าง (Jefferies $4.70 Hold เทียบ consensus ~$11) Moon case จึงอิงฝั่งที่มองบวก"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed ขึ้นดอกเบี้ย 25bp เมื่อ 16 ก.ย. 2026 และ CPI ต.ค. ที่ร้อนกว่าคาด (core +0.3% m/m เทียบคาด 0.2%) ดันโอกาสขึ้นดอกเบี้ย 9 ธ.ค. เป็น ~89–100% บอนด์ 10 ปี ~4.98%",
+        "inflationNote": "CPI ต.ค. ร้อน (headline +0.4% m/m, core +0.3%) ตัวถัดไปคือ PCE ต.ค. วันที่ 25 พ.ย.",
+        "sectorImpact": "เหมืองที่ยังไม่ผลิตและต้องกู้ ~$1.2B บวกระดมทุนหุ้น โดนดอกเบี้ยสูงนานตรงๆ ทั้งต้นทุนการเงินและความอยากเสี่ยงต่อหุ้น small-cap กลุ่มทรัพยากร",
+        "summary": "HIGH — thesis คือเหตุการณ์ด้านการเงิน และยิ่งดอกเบี้ยสูงนาน การหาเงินก็ยากและ dilute มากขึ้น"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — binary ตัวเดียวที่ไม่มีวันที่ (เงินกู้ EXIM ~$1.2B) มีสัญญาณสนับสนุนแต่ยังไม่ตัดสิน ผลตอบแทน median ของ turbo จากราคารายงานถึงหลัง catalyst คือ -4.0% (n=68) จึงไม่ควรซื้อที่ราคารายงานเป็นค่าเริ่มต้น ให้รอ $2.60–2.80 ค่าขนม 1.5–2%",
+        "entryLevels": [
+          {
+            "note": "ราคาล่าสุด — ไม้แรกเล็กๆ เท่านั้น สถิติ turbo ณ หลัง catalyst -4.0% (n=68)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "โซนย่อ — จุดเข้าที่แนะนำระหว่างที่ยังไม่รู้วันของ EXIM",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ร่วงหนัก — เข้าเฉพาะถ้า thesis ยังอยู่",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — ผ่าน TRC และบอร์ด EXIM ภายใน ~6 เดือน สูงกว่า P75 ที่ทำได้จริงของ turbo 21.5% เพราะตัว event เป็น binary"
+        },
+        "tp2": {
+          "note": "Bull — อนุมัติบวกปิดดีลการเงินครบและเริ่มงานก่อสร้างช่วงแรก"
+        },
+        "tp3": {
+          "note": "Moon — consensus ~$11: มีเงินครบ เริ่มก่อสร้าง และถูก re-rate เป็นผู้ผลิตแร่สำคัญของสหรัฐฯ"
+        },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE ของ turbo (-20%, n=107) และของ regulatory_approval -19.8% (n=23)",
+          "hardNote": "หลุดตรงนี้น่าจะหมายถึงตลาดกำลังราคาว่า EXIM เลื่อนหรือปฏิเสธ",
+          "rrNote": "Entry 1 ถึง tight stop เทียบกับ TP2",
+          "rrWarning": "ถึงเป้า 5:1 ของ turbo"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "EXIM TRC / บอร์ดตัดสิน",
+          "note": "EXIM: 'โดยเร็วที่สุดเท่าที่ทำได้' — ไม่มีวันที่"
+        }
+      ]
+    }
+  },
+  "rankChangeSource": {
+    "headline": "EXIM affirms 65 percent Elk Creek financing target",
+    "url": "https://www.metaltechnews.com/story/2026/10/21/tech-metals/exim-affirms-65-percent-elk-creek-financing-target/2988.html",
+    "date": "Oct 2026"
+  }
+}

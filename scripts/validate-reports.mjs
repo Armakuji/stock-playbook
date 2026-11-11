@@ -71,7 +71,8 @@ let driftSkippedStale = 0;
 // Primary-source domains for a dated catalyst (backlog #37 step 3). A report
 // whose catalystDate is backed only by aggregators gets a WARN, never a block —
 // some legitimate sources (company IR on its own domain) won't match this list.
-const PRIMARY_SOURCE_RE = /(^|\.)(sec\.gov|fda\.gov|globenewswire\.com|prnewswire\.com|businesswire\.com|accessnewswire\.com|newsfilecorp\.com)$|^(ir|investors?|investor-relations)\./i;
+// q4cdn.com / q4inc.com host company IR documents (press-release PDFs) for many issuers.
+const PRIMARY_SOURCE_RE = /(^|\.)(sec\.gov|fda\.gov|globenewswire\.com|prnewswire\.com|businesswire\.com|accessnewswire\.com|newsfilecorp\.com|q4cdn\.com|q4inc\.com)$|^(ir|investors?|investor-relations)\./i;
 const hostOf = (u) => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return ""; } };
 
 const SCENARIO_ORDER = ["Bear", "Base", "Bull", "Moon"];
