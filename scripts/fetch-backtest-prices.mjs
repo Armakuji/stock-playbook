@@ -50,8 +50,8 @@ export function addDays(dateStr, days) {              // dateStr "YYYYMMDD" → 
   const y = +dateStr.slice(0, 4);
   const m = +dateStr.slice(4, 6) - 1;
   const d = +dateStr.slice(6, 8);
-  const dt = new Date(y, m, d);
-  dt.setDate(dt.getDate() + days);
+  const dt = new Date(Date.UTC(y, m, d)); // UTC — local midnight shifts a day east of UTC
+  dt.setUTCDate(dt.getUTCDate() + days);
   return dt.toISOString().slice(0, 10);
 }
 export const cacheKey = (ticker, date) => `${ticker}_${date}`;

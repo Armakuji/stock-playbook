@@ -30,8 +30,8 @@ export interface NearMissOutcome extends NearMiss {
 
 function addDays(yyyymmdd: string, days: number): string {
   const y = +yyyymmdd.slice(0, 4), m = +yyyymmdd.slice(4, 6) - 1, d = +yyyymmdd.slice(6, 8);
-  const dt = new Date(y, m, d);
-  dt.setDate(dt.getDate() + days);
+  const dt = new Date(Date.UTC(y, m, d)); // UTC — see catalyst-timing.ts todayISO
+  dt.setUTCDate(dt.getUTCDate() + days);
   return dt.toISOString().slice(0, 10);
 }
 

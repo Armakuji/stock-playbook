@@ -90,6 +90,9 @@ jobs:
       # it again here would just be a slower, redundant type-check.
       - run: npx tsc --noEmit
         working-directory: web
+      # node:test with built-in type stripping — date math, stage, stop rule.
+      - run: npm test
+        working-directory: web
 
   tools:
     needs: changes
