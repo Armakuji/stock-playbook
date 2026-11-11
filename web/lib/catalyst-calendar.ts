@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { StockReport } from "./types";
-import { parseDateStr, catalystISO } from "./catalyst-timing";
+import { parseDateStr, proximityISO } from "./catalyst-timing";
 
 const REPORTS_DIR = path.join(process.cwd(), "data", "reports");
 
@@ -45,7 +45,8 @@ export function getCatalystCalendar(): CalendarEvent[] {
   for (const r of reports) {
     // From catalysts[]
     for (const c of r.catalysts ?? []) {
-      const iso = catalystISO(c);
+      // Fuzzy (~) catalysts have no real event day — keep them off the calendar.
+      const iso = proximityISO(c);
       if (!iso || iso < todayISO) continue;
       events.push({
         ticker: r.ticker,

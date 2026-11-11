@@ -65,7 +65,8 @@ when every fetch fails, which silently replaces the cache with zero tickers (obs
 
 The user's complaint is always about what they can *see*, so scope to the visible board first:
 
-- `rankReports(getAllReports())` from `web/lib/ranking.ts` — sorts by `timingTier(daysToCatalyst)`
+- `rankReports(partitionStopped(getAllReports()).active)` from `web/lib/ranking.ts` (picks at/below
+  their hard stop — `web/lib/stop-status.ts` — sit in the 🛑 Stopped strip, not on the board) — sorts by `timingTier(daysToCatalyst)`
   first, then `computeRankScore`
 - filter `reportStage(r) !== "post"` (`web/lib/catalyst-timing.ts`)
 - take the top `TOP_N` — currently **10**, defined in `web/app/catalyst/CatalystContent.tsx`

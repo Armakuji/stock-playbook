@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getAllSpeculativeReports, rankTurboReports } from "@/lib/speculative";
 import { getTurboRankingChanges } from "@/lib/ranking-history";
+import { partitionStopped } from "@/lib/stop-status";
 import { TurboContent } from "./TurboContent";
 
 export const dynamic = "force-dynamic";
@@ -13,7 +14,11 @@ export const metadata: Metadata = {
 };
 
 export default function TurboPage() {
-  const ranked = rankTurboReports(getAllSpeculativeReports());
+  // Picks already below their hard stop come off the board before ranking
+  // (backlog #6 of the 2026-11-11 review) — see web/lib/stop-status.ts.
+  const { active, stopped } = partitionStopped(getAllSpeculativeReports());
+  const ranked = rankTurboReports(active);
   const rankChanges = getTurboRankingChanges();
-  return <TurboContent ranked={ranked} rankChanges={rankChanges} />;
+  const stoppedRows = stopped.map((s) => ({ ticker: s.ticker, livePrice: s.livePrice, hardStop: s.hardStop, movePct: s.movePct, asOf: s.asOf }));
+  return <TurboContent ranked={ranked} rankChanges={rankChanges} stopped={stoppedRows} />;
 }

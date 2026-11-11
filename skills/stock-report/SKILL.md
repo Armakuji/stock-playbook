@@ -20,6 +20,11 @@ strict research-first workflow, and the **only output is a JSON report** saved t
 
 Check for `web/data/skill-feedback.json`. If it doesn't exist yet, skip this step.
 
+**⏱ Freshness gate (do this first).** If the file's `generatedAt` is more than 7 days old, run
+`cd web && npm run backtest:fetch` and re-read it. If it is still >7 days old, say
+`⚠️ STALE PRIOR — generated <date> (<n>d old)` and treat EVERY rule below as context only (Tier 2
+does not fire, the entry rule is quoted but not binding) — never present a stale figure as current.
+
 If it exists, use it as an **advisory prior** — two tiers, both apply to every bucket you touch.
 
 **Rank on the metrics that vary, not on `hitRate`.** The North Star bar (+30%/14d) is aspirational
@@ -120,7 +125,7 @@ template + allowed enum values live in **CLAUDE.md** ("After every /analyze — 
 
 Rules that matter:
 - **`score` is computed** by `web/lib/scoring.ts` at load — fill the grounded fields accurately; any `score` you write is advisory only.
-- **`dateBadge` must match real date precision** — exact day (e.g. `"Jun 30, 2026"`) when known, matching `catalystDate`; reserve fuzzy badges (`"H2 2026"`, `"~Aug 12"`, `"Ongoing"`) only for genuinely undated events (CLAUDE.md rule 9).
+- **`dateBadge` must match real date precision** — exact day (e.g. `"Jun 30, 2026"`) when known, matching `catalystDate`; reserve fuzzy badges (`"~H2 2026"`, `"~Aug 12"`, `"Ongoing"`) only for genuinely undated events, and always prefix month/quarter/half strings (badge or `estimateDates[].dateRange`) with `~` — an un-tilded `"Q4 2026"` parses to a phantom Nov 15 and the validator blocks it (CLAUDE.md rule 9).
 - **`sources[]`** needs ≥1 real URL (≥2 preferred); `comparableCases` + `catalystSpot` averages must trace to sources / `exampleDate`.
 - Always include `macroRisk` (Fed verdict + reason), full `entryStrategy` (3 entries, TP1/2/3, stop, R/R), and the `i18n.th` overrides.
 

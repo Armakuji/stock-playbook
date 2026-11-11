@@ -683,7 +683,7 @@ event จริง (PLTR +49% · RDW +44% · KTOS +29%) อยู่ข้าง
 
 ## Ops setup (ทำบน Mac mini หลังย้าย project + เปลี่ยน account Claude)
 
-- **ตั้ง scheduled task รัน `backtest:fetch` รายเช้า** — ให้ price-cache + path-cache สะสมอัตโนมัติ ไม่งั้น backtest/North Star/near-miss จะว่างตลอด *(network ในแซนด์บ็อกซ์ blocked — ต้องรันบนเครื่องจริงที่ต่อ Yahoo ได้)*
+- ✅ **DONE 2026-11-11 (MacBook Pro, Claude desktop scheduled task `stock-playbook-backtest-fetch`, 06:37 daily · prices:fetch + backtest:fetch · ไม่ commit — data ถูก commit ตอนรัน list/refresh) + freshness gate ใน Step 0 ของ /catalyst-list, /turbo-list และ 4 skills (>7d → re-fetch, ยังเก่า → ⚠️ STALE PRIOR = context only)** ~~ตั้ง scheduled task รัน `backtest:fetch` รายเช้า~~ — ให้ price-cache + path-cache สะสมอัตโนมัติ ไม่งั้น backtest/North Star/near-miss จะว่างตลอด *(network ในแซนด์บ็อกซ์ blocked — ต้องรันบนเครื่องจริงที่ต่อ Yahoo ได้)*
   - คำสั่ง: `cd web && npm run backtest:fetch` (หรือ `node scripts/fetch-backtest-prices.mjs` จาก root)
   - cron แนะนำ: ทุกเช้าหลังตลาดปิด 1 รอบ เช่น `0 6 * * *`
   - หมายเหตุ: ต้องตั้งบน account/เครื่องใหม่ (Mac mini) เพราะ schedule ผูกกับ session/เครื่อง

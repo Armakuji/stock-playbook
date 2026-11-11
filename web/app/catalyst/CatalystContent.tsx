@@ -8,6 +8,7 @@ import { detectCatalystClusters, reportStage, daysSinceCatalyst } from "@/lib/ca
 import { factorConcentration } from "@/lib/factors";
 import { useLang } from "@/lib/LanguageContext";
 import { RankingChangeTable } from "../RankingChangeTable";
+import { StoppedSection, type StoppedRow } from "../StoppedSection";
 import { CatalystCalendar } from "../CatalystCalendar";
 import { ThemeGroups } from "../ThemeGroups";
 import { FactorRiskPanel } from "../FactorRiskPanel";
@@ -93,10 +94,12 @@ export function CatalystContent({
   ranked,
   rankChanges,
   calendarEvents,
+  stopped = [],
 }: {
   ranked: Ranked;
   rankChanges: RankChanges;
   calendarEvents: CalendarEvents;
+  stopped?: StoppedRow[];
 }) {
   const { lang } = useLang();
   const th = lang === "th";
@@ -258,6 +261,9 @@ export function CatalystContent({
 
       {/* ── Realized / post-catalyst ── */}
       <RealizedSection reports={realized} th={th} />
+
+      {/* ── Stopped out (live ≤ hard stop) ── */}
+      <StoppedSection rows={stopped} th={th} />
 
       {/* ── Ranking Change section ── */}
       <RankingChangeTable rows={rankChanges} />
