@@ -77,6 +77,9 @@ Run `/turbo-list`: load `turbo-report` and use its "Step 0" + "List mode" sectio
    regardless of whether they're actually the strongest moonshots available this run — see backlog
    #35). One line per candidate: `TICKER · market cap · binary catalyst · rough bull-case % · why
    ≥200–300% is credible`. Flag two more things per candidate:
+   - **date provenance (backlog #37):** where the catalyst date comes from — company guidance, SEC
+     filing or FDA/PDUFA letter. A ClinicalTrials.gov estimated completion or an `AI-detected` aggregator
+     row is not a catalyst date; write `~` + the window instead.
    - **cap check:** market cap ≤ $5B? (>$5B needs a stated 300%+ path or gets cut per this skill's
      own Step 1 qualification screen)
    - **survival pre-check:** a one-word runway read from a quick search — `ok` / `tight` / `flag`.

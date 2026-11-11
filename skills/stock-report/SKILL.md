@@ -94,6 +94,7 @@ Before writing any JSON, gather live data on the ticker (use WebSearch — never
 2. **Analyst targets** — consensus avg/low/high, # of analysts, key named firm targets + ratings
 3. **Next earnings date** — exact date or quarter
 4. **Catalysts** — upcoming events, launches, partnerships, macro tailwinds, news from the past 2–4 weeks. Get the **exact event date** where it's genuinely known.
+   **Date provenance (backlog #37):** `catalystDate` must trace to company guidance, an SEC filing or an official FDA/PDUFA letter — never to a ClinicalTrials.gov *estimated completion* date or an `AI-detected` aggregator row. Put the primary source URL in `sources[]`. If only a month/quarter is known, use a `~` badge (`"~Q1 2027"`) instead of inventing a day.
 5. **Fed/Macro risk** — LOW / MEDIUM / HIGH for this stock, with a one-line reason
 6. **catalystSpot history + comparableCases** — real historical % moves for the same catalyst type / 2–3 real comparable cases (per CLAUDE.md anti-fabrication rules)
 
