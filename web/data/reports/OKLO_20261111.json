@@ -1,0 +1,304 @@
+{
+  "ticker": "OKLO",
+  "companyName": "Oklo Inc.",
+  "companyDescription": "Advanced fission · Aurora powerhouse (15-75 MW) for AI data centers + fuel recycling and isotopes · broke ground on the first Aurora; ~$1.2B cash + securities · Altman-backed",
+  "exchange": "NYSE",
+  "generatedAt": "2026-11-11T12:00:00.000Z",
+  "price": 25.09,
+  "priceChange": -6.52,
+  "priceNote": "Live $25.09 on Nov 11, 2026. The prior report (Oct 26) used $25.57 (-1.9%) but was 16 days old. The Q3 print (early Nov) has resolved.",
+  "marketCap": "~$4.76B",
+  "sector": "Utilities / Advanced Nuclear",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Speculative",
+  "score": 0,
+  "summary": "RESOLVED (Q3, early Nov) — a negative timeline update. First Aurora-INL startup is now framed as 2028–2029 instead of the firm 2028 that management repeated through Q2, a slip tied to Groves-1 commissioning lessons. Coverage also flags a PJM setback. Positives: excavation is complete, safety-related rebar and steel are underway, first full fuel assembly is targeted for 2027, a new fuel-facility approval, an NRC rule allowing DOE-reactor evidence in licensing, and $3.1B cash. Q3 revenue (~$1.9M) missed. With no dated catalyst left (the NRC readiness assessment has no date), the report goes post-stage. Core Base bias +23.7pp vs realized 14d P75 +6.6%, so Base is a multi-week horizon, not a 14-day call.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 2026 results — RESOLVED (Aurora slip)",
+      "description": "Aurora startup 2028–2029 (was 2028); $3.1B cash; revenue miss.",
+      "urgencyLabel": "DONE",
+      "dateBadge": "Nov 6, 2026",
+      "catalystDate": "2026-11-06",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🏛️",
+      "name": "NRC pre-application readiness assessment",
+      "description": "No date guided.",
+      "urgencyLabel": "UNDATED",
+      "dateBadge": "~Q4 2026",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Pre-revenue (TTM ~$1.2M); first powerhouse online only ~end-2027 — earnings can't validate the thesis, only milestones can.",
+    "Extreme analyst dispersion (Citi $10 Sell vs Barclays $59 OW) — the consensus average hides real disagreement.",
+    "Repeated equity issuance has been a recurring overhang; spending is rising (2026 loss estimate widened to ~$0.94/share).",
+    "Highly rate-sensitive: -25% in one day during the Sep 2026 nuclear selloff.",
+    "NRC licensing timelines for advanced reactors have historically slipped."
+  ],
+  "estimateDates": [
+    {
+      "event": "Q3 2026 earnings (realized)",
+      "dateRange": "Nov 6, 2026",
+      "note": "Aurora 2028–29 slip",
+      "est": "Done",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -28.66,
+      "price": 17.9
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 27.38,
+      "price": 31.96
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 63.05,
+      "price": 40.91
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 175.17,
+      "price": 69.04
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus (23 analysts, stockanalysis.com)",
+      "target": 68.95,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Barclays (Oct 20, 2026, cut from $76)",
+      "target": 59,
+      "rating": "Overweight"
+    },
+    {
+      "firm": "TD Cowen (initiation)",
+      "target": 26,
+      "rating": "Hold"
+    },
+    {
+      "firm": "Citi (lowered from $11)",
+      "target": 10,
+      "rating": "Sell"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "The Fed held at 3.75–4.00% on Oct 28. After the hot Oct CPI on Nov 10, CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~89–100%, with ~10% odds of 50bp. The 10-year is ~4.98%.",
+    "inflationNote": "Oct CPI: headline +0.4% m/m, core +0.3% m/m vs 0.2% expected. Sep core PCE 3.1% y/y. Oct PCE (Nov 25) and Nov CPI (Dec 10) are next.",
+    "sectorImpact": "The purest long-duration rate trade on this board: pre-revenue, with cash flows from 2028+. The nuclear complex sold off on rising yields in Sep-Oct.",
+    "summary": "MEDIUM — a 25bp December hike is priced after the hot CPI. The tails are a 50bp move or a hot Nov 25 PCE, both of which hit small caps first, so the dip entry is preferred."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 25.09,
+        "note": "Current price — starter only. Not preferred: core at-catalyst median -6.9% (n=54)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 22.08,
+        "rangeMax": 23.55,
+        "note": "Below the $25.40 52-week low — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 19.62,
+        "note": "Deep dip — thesis-intact only",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 31.96,
+      "pct": 27.38,
+      "note": "Base — milestone-heavy Q3 (Aurora build, NRC timing) sparks a relief rally to ~$32. Horizon ~1-3 months."
+    },
+    "tp2": {
+      "price": 40.91,
+      "pct": 63.05,
+      "note": "Bull — firm NRC schedule plus a binding data-center offtake; ~$41."
+    },
+    "tp3": {
+      "price": 69.04,
+      "pct": 175.17,
+      "note": "Moon — sector re-rating back toward consensus (~$69). 12-24 month thesis.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 21.33,
+      "tightPct": -14.99,
+      "tightNote": "-15% — wider than the core medianMAE (-14%); overall figure applies.",
+      "hard": 17.56,
+      "hardPct": -30.01,
+      "hardNote": "-30% — capitulation territory; exit.",
+      "riskReward": "4.2 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Good R/R ✅ (≥2:1 core bar)"
+    },
+    "verdict": "SPECULATIVE hold — the Q3 binary resolved with an Aurora timeline slip. No dated catalyst left. Measured core at-catalyst median is -6.9% (n=54), so Entry 2 is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "No run-up: OKLO is at its 52-week low, -83% from the Oct 2025 high, after a sector-wide nuclear selloff on rising rates and repeated stock sales.",
+    "preRunupTiming": "N/A",
+    "preRunupPct": "-83% from the Oct 2025 high",
+    "postWin": {
+      "avgPct": 15,
+      "range": "+14.8% to +15.5%",
+      "note": "OKLO's own Aug 7, 2026 reaction (+14.8% on first revenue despite an EPS miss) and CRWV's Aug 2026 +15.5% margin beat — both high-beta infra names re-rating on a narrative milestone.",
+      "exampleDate": "Aug 2026"
+    },
+    "postLose": {
+      "avgPct": -25,
+      "range": "-25%",
+      "note": "OKLO fell ~25% in the late-September 2026 rates-driven nuclear selloff (MarketBeat, Sep 28) — the realistic magnitude of a risk-off leg for this name.",
+      "exampleDate": "Sep 2026"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "3%. earnings_beat carries no tier-2 penalty (+1.8pp vs +1.4pp, n=42), but a pre-revenue print rarely changes fundamentals. Analyst dispersion is extreme ($10 Citi to $59 Barclays) and the name is rate-sensitive, so size stays small."
+    },
+    "stopPreCatalyst": {
+      "pct": -14.99,
+      "price": 21.33,
+      "note": "Wider than the earnings_beat medianMAE (-9.6%, n=42). A further break well under the 52-week low before Nov 6 means the rates selloff is still in control."
+    },
+    "stopPostCatalyst": {
+      "pct": -18,
+      "note": "If Q3 pushes the NRC step or Aurora timeline into 2027+, or announces another raise, exit."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "OKLO",
+      "event": "Q2 2026 earnings — first revenue ($1.2M) despite an EPS miss",
+      "date": "Aug 2026",
+      "movePct": 14.8,
+      "days": 1,
+      "outcome": "good",
+      "note": "A pre-revenue nuclear name rallied +14.8% on a narrative milestone (first revenue) even with a wide EPS miss. Prints here trade on milestones, not P&L."
+    },
+    {
+      "ticker": "CRWV",
+      "event": "Q2 2026 earnings — adj. operating income ~2x guided midpoint, FY guide raised",
+      "date": "Aug 2026",
+      "movePct": 15.5,
+      "days": 1,
+      "outcome": "good",
+      "note": "A margin beat (not just revenue) re-rated an AI-infra name +15.5% even in a debt-skeptical tape. The upside template for a clean beat-and-raise."
+    },
+    {
+      "ticker": "OKLO",
+      "event": "Rates-driven nuclear selloff",
+      "date": "Sep 2026",
+      "movePct": -25,
+      "days": 1,
+      "outcome": "bad",
+      "note": "A one-day ~25% drop with no company-specific news — the downside template when yields spike around a print."
+    }
+  ],
+  "sources": [
+    "https://finviz.com/news/418461/oklo-narrows-its-loss-against-expectations-but-an-aurora-slip-and-pjm-setback-overshadow-construction-progress",
+    "https://www.marketbeat.com/instant-alerts/transcript-oklo-q3-earnings-call-highlights-2026-11-07/",
+    "https://stockanalysis.com/stocks/oklo/",
+    "https://www.tikr.com/blog/oklo-has-lost-83-in-a-year-barclays-sees-117-upside",
+    "https://www.tipranks.com/news/the-fly/oklo-price-target-lowered-to-10-from-11-at-citi",
+    "https://www.marketbeat.com/instant-alerts/price-oklo-nyse-oklo-stock-price-down-25-heres-why-2026-09-28/",
+    "https://finance.yahoo.com/markets/stocks/articles/oklo-oklo-advances-aurora-project-083601484.html",
+    "https://www.benzinga.com/quote/oklo/earnings",
+    "https://www.indmoney.com/blog/us-stocks/crwv-stock-jumps-coreweave-q2-earnings-analysis",
+    "https://www.chase.com/personal/investments/learning-and-insights/article/will-the-federal-reserve-hike-rates-at-october-2026-fomc-meeting",
+    "https://defirate.com/prediction-markets/fed-decision-odds/",
+    "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+    "https://www.investing.com/news/economy-news/fed-rate-hike-odds-in-december-at-88-after-hot-cpi-cme-fedwatch-5017585"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "ผ่าน catalyst แล้ว (Q3, ต้น พ.ย.) — อัปเดตเรื่องเวลาเป็นลบ การเริ่มเดินเครื่อง Aurora-INL เครื่องแรกเลื่อนเป็นปี 2028–2029 จากเดิมที่ผู้บริหารย้ำว่า 2028 ตลอดถึง Q2 สาเหตุมาจากบทเรียนตอนทดสอบ Groves-1 มีรายงานปัญหาเรื่อง PJM ด้วย ข้อดี: ขุดดินเสร็จแล้ว งานเหล็กเสริมและโครงสร้างที่เกี่ยวกับความปลอดภัยกำลังดำเนินการ เป้าชุดเชื้อเพลิงชุดแรกปี 2027 ได้อนุมัติโรงงานเชื้อเพลิงใหม่ กฎ NRC ใหม่ให้ใช้หลักฐานจากเครื่องปฏิกรณ์ของ DOE ในการขอใบอนุญาตได้ และเงินสด $3.1B รายได้ Q3 (~$1.9M) พลาดเป้า ไม่มี catalyst ที่มีวันเหลือ (การประเมินความพร้อมของ NRC ไม่มีวัน) รายงานเข้าสู่ post-stage bias ของ Base ใน core +23.7pp เทียบ P75 14 วันจริง +6.6% Base จึงเป็นกรอบหลายสัปดาห์ ไม่ใช่คาด 14 วัน",
+      "priceNote": "ราคาสด $25.09 11 พ.ย. 2026 รายงานก่อนหน้า (26 ต.ค.) ใช้ $25.57 (-1.9%) แต่อายุ 16 วัน งบ Q3 (ต้น พ.ย.) ผ่านไปแล้ว",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        {
+          "name": "งบ Q3 2026 — ผ่านแล้ว (Aurora เลื่อน)",
+          "description": "Aurora เริ่มเดินเครื่อง 2028–2029 (เดิม 2028); เงินสด $3.1B; รายได้พลาด"
+        },
+        {
+          "name": "NRC ประเมินความพร้อมก่อนยื่น",
+          "description": "ไม่มีวันระบุ"
+        }
+      ],
+      "risks": [
+        "ยังไม่มีรายได้ (TTM ~$1.2M) โรงไฟฟ้าแรกเดินเครื่อง ~สิ้นปี 2027 งบยืนยัน thesis ไม่ได้ มีแต่ milestone",
+        "เป้านักวิเคราะห์ต่างกันสุดขั้ว (Citi $10 Sell vs Barclays $59 OW) ค่าเฉลี่ยซ่อนความเห็นที่ขัดแย้งจริง",
+        "การเพิ่มทุนซ้ำเป็นแรงกดดันต่อเนื่อง ค่าใช้จ่ายเพิ่มขึ้น (ประมาณการขาดทุนปี 2026 กว้างขึ้นเป็น ~$0.94/หุ้น)",
+        "อ่อนไหวต่อดอกเบี้ยมาก: ร่วง -25% ในวันเดียวช่วงกลุ่มนิวเคลียร์ถูกขาย ก.ย. 2026",
+        "ไทม์ไลน์ใบอนุญาต NRC สำหรับเตาปฏิกรณ์ขั้นสูงมักล่าช้าในอดีต"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.75–4.00% เมื่อ 28 ต.ค. หลัง CPI ต.ค. ออกมาร้อน (10 พ.ย.) CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ราว 89–100% และโอกาสขึ้น 50bp ~10% ส่วน yield 10 ปีอยู่ ~4.98%",
+        "inflationNote": "CPI ต.ค.: headline +0.4% m/m, core +0.3% m/m (คาด 0.2%) core PCE ก.ย. 3.1% y/y ตัวถัดไปคือ PCE ต.ค. (25 พ.ย.) และ CPI พ.ย. (10 ธ.ค.)",
+        "sectorImpact": "หุ้นอ่อนไหวต่อดอกเบี้ยระยะยาวที่สุดบนกระดาน: ยังไม่มีรายได้ กระแสเงินสดเริ่มปี 2028+ กลุ่มนิวเคลียร์ถูกขายตามอัตราผลตอบแทนที่สูงขึ้นช่วง ก.ย.-ต.ค.",
+        "summary": "MEDIUM — ตลาดรับการขึ้นดอกเบี้ย 25bp ใน ธ.ค. แล้วหลัง CPI ร้อน ความเสี่ยงหางคือขึ้น 50bp หรือ PCE 25 พ.ย. ร้อน ซึ่งกระทบหุ้นเล็กก่อน จึงควรรอเข้าตอนย่อ"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE ถือ — binary Q3 ผ่านไปพร้อม Aurora เลื่อน ไม่มี catalyst ที่มีวันเหลือ median ถึงวัน catalyst ของ core -6.9% (n=54) จึงเข้าที่ Entry 2 เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ core -6.9% (n=54)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "ต่ำกว่า 52-week low $25.40 — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ย่อลึก — เฉพาะเมื่อ thesis ยังอยู่",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — งบ Q3 มี milestone (การก่อสร้าง Aurora, ไทม์ไลน์ NRC) ทำให้รีบาวด์ไป ~$32 กรอบ ~1-3 เดือน"
+        },
+        "tp2": {
+          "note": "Bull — ไทม์ไลน์ NRC ชัดเจน + สัญญาซื้อไฟฟ้า data center ที่ผูกมัด ~$41"
+        },
+        "tp3": {
+          "note": "Moon — กลุ่มถูก re-rate กลับไปหาเป้าเฉลี่ย (~$69) thesis 12-24 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-15% — กว้างกว่า medianMAE ของ core (-14%)",
+          "hardNote": "-30% — โซน capitulation ออก",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "R/R ดี ✅ (≥2:1 เกณฑ์ core)"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "งบ Q3 2026 (เกิดแล้ว)",
+          "note": "Aurora เลื่อนเป็น 2028–29"
+        }
+      ]
+    }
+  }
+}

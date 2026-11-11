@@ -1,0 +1,270 @@
+{
+  "ticker": "SVRA",
+  "companyName": "Savara Inc.",
+  "companyDescription": "Rare respiratory · MOLBREEVI (inhaled molgramostim) for autoimmune pulmonary alveolar proteinosis (aPAP) — BLA under Priority Review, PDUFA Nov 22, 2026",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-11T11:30:00.000Z",
+  "price": 4.92,
+  "priceChange": -2.57,
+  "priceNote": "Live $4.92 on Nov 11, 2026. The 52-week range is $4.00–$7.01. Market cap is ~$1.15B. The PDUFA (Nov 22, a Sunday, so the decision is likely by Fri Nov 20 or Mon Nov 23) is 11 days out.",
+  "marketCap": "~$1.15B",
+  "sector": "Healthcare / Biotechnology — Rare Respiratory",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 0,
+  "summary": "The Nov 22, 2026 PDUFA for MOLBREEVI (inhaled GM-CSF for aPAP) under Priority Review is the binary. It is a resubmitted BLA, and the date was extended from Aug 22 by a major amendment. MOLBREEVI would be the first approved aPAP therapy in the US. Consensus targets of ~$10.56 (Simply Wall St; ~$8.8–10.6 range across providers, dated Apr 2026 and so best-effort) imply ~+115% and clear the 20% gate even at the low end (~+80%). fda_decision is a core lane type with no Tier-2 laggard flag (laggard: partnership_win). The catalyst is 11 days out, inside the 14-day North Star window. Core Base bias is +23.7pp vs realized 14d P75 +6.6%, so Base is a ~4–8 week post-earnings re-rating horizon, not a 14-day call. Size 2–3%. Event-day cluster: CAPR also has a Nov 22 PDUFA on the board.",
+  "catalysts": [
+    {
+      "icon": "💊",
+      "name": "MOLBREEVI PDUFA — aPAP (Priority Review)",
+      "description": "Resubmitted BLA; target action date Nov 22, 2026, extended from Aug 22 after a major amendment. It would be the first US-approved therapy for autoimmune PAP.",
+      "urgencyLabel": "11 DAYS",
+      "dateBadge": "Nov 22, 2026",
+      "catalystDate": "2026-11-22",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Resubmission history: the original BLA hit a refuse-to-file/CMC snag, and the date was already extended once. Another CRL is possible.",
+    "Approval-likely pricing: the stock has not run, but a clean approval may still be a +20–40% event rather than a multiple re-rate.",
+    "Ultra-rare market (aPAP) means launch revenue ramps slowly.",
+    "Consensus target data is stale (Apr 2026), so upside is a best-effort estimate."
+  ],
+  "estimateDates": [
+    {
+      "event": "MOLBREEVI PDUFA (aPAP)",
+      "dateRange": "Nov 22, 2026",
+      "note": "Priority Review; resubmitted BLA",
+      "est": "Approval likely",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -49.19,
+      "price": 2.5
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 38.21,
+      "price": 6.8
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 82.93,
+      "price": 9
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 123.58,
+      "price": 11
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Simply Wall St consensus (Apr 2026)",
+      "target": 10.56,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Public.com consensus (7 analysts, Apr 2026)",
+      "target": 8.86,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Street high (TipRanks)",
+      "target": 16,
+      "rating": "Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "The Fed held at 3.75–4.00% on Oct 28. After the hot Oct CPI on Nov 10, CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~89–100%, with ~10% odds of 50bp. The 10-year is ~4.98%.",
+    "inflationNote": "Oct CPI: headline +0.4% m/m, core +0.3% m/m vs 0.2% expected. Sep core PCE was 3.1% y/y. Oct PCE on Nov 25 is the next print, then Nov CPI on Dec 10, the day after FOMC.",
+    "sectorImpact": "Single-asset rare-disease biotech. The PDUFA dominates; rates matter only through small-cap biotech risk appetite.",
+    "summary": "LOW-MEDIUM — the binary (Nov 22) lands before the Nov 25 PCE and the Dec 9 FOMC. The regulatory clock is independent of the Fed."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 4.92,
+        "note": "Current price — starter only. Not preferred: core at-catalyst median -6.9% (n=54)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 4.4,
+        "rangeMax": 4.7,
+        "note": "Pre-PDUFA dip toward the $4.00–4.50 base — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 4.1,
+        "note": "Near the $4.00 52-week low",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 6.8,
+      "pct": 38.21,
+      "note": "Base — approval; ~$6.80. Horizon 2–6 weeks post-decision."
+    },
+    "tp2": {
+      "price": 9,
+      "pct": 82.93,
+      "note": "Bull — approval with a broad label plus a fast launch; ~$9."
+    },
+    "tp3": {
+      "price": 11,
+      "pct": 123.58,
+      "note": "Moon — ~$11 (consensus) as aPAP sales ramp. 12 months.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 4.03,
+      "tightPct": -18.09,
+      "tightNote": "-18% — wider than the core medianMAE (-14%) — fda_decision core bucket MAE not broken out; overall core figure applies.",
+      "hard": 2.9,
+      "hardPct": -41.06,
+      "hardNote": "-41% — CRL territory.",
+      "riskReward": "4.6 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Good R/R ✅ (≥2:1 core bar)"
+    },
+    "verdict": "SPECULATIVE · ค่าขนม 2.5% — a dated Priority-Review PDUFA for a first-in-class aPAP drug at ~+115% to (stale) consensus. Measured core at-catalyst median is -6.9% (n=54; 74% of picks underwater at their event), so Entry 2 is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "There is no run-up yet: SVRA sits near the bottom of its range. Rare-disease PDUFA names often drift up in the final week.",
+    "preRunupTiming": "Final week before Nov 22",
+    "preRunupPct": "-2.6% Nov 10; near the range low",
+    "postWin": {
+      "avgPct": 40,
+      "range": "+33% to +74%",
+      "note": "AXSM +40% on an approval the market doubted (Aug 2022). SRPT +74% on a contested rare-disease approval (Sep 2016). SVRA is approval-likely, so expect the low end.",
+      "exampleDate": "Aug 19, 2022 (AXSM)"
+    },
+    "postLose": {
+      "avgPct": -38,
+      "range": "-26% to -53%",
+      "note": "CAPR opened -38.6% on a CRL (Jul 2025).",
+      "exampleDate": "Jul 11, 2025 (CAPR)"
+    },
+    "spotSizing": {
+      "pct": 2.5,
+      "reason": "2.5%. Single-asset binary. fda_decision is not a Tier-2 laggard. Kept small given the resubmission history and stale targets."
+    },
+    "stopPreCatalyst": {
+      "pct": -18.09,
+      "price": 4.03,
+      "note": "At -18%, wider than the core medianMAE (-14%). Below ~$4.00 (52-week low) the market is pricing a CRL."
+    },
+    "stopPostCatalyst": {
+      "pct": -30,
+      "note": "On a CRL, exit day 1."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "AXSM",
+      "event": "Auvelity approval after extended review",
+      "date": "Aug 2022",
+      "movePct": 40,
+      "days": 1,
+      "outcome": "good",
+      "note": "An approval after doubt, which is the upside shape for a resubmitted BLA."
+    },
+    {
+      "ticker": "CAPR",
+      "event": "FDA CRL for deramiocel",
+      "date": "Jul 2025",
+      "movePct": -38,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Rare-disease CRL template."
+    }
+  ],
+  "sources": [
+    "https://www.webull.com/news/14089616205825024",
+    "https://simplywall.st/stock/nasdaqgs/svra",
+    "https://public.com/stocks/svra/forecast-price-target",
+    "https://www.tipranks.com/stocks/svra/forecast",
+    "https://www.zacks.com/amp/stock/news/1970946/axsome-axsm-soars-on-fda-nod-for-depression-drug-auvelity",
+    "https://medcitynews.com/2025/07/capricor-cell-therapy-duchenne-muscular-dystrophy-deramiocel-cardiomyopathy-heart-failure-dmd-capr/",
+    "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+    "https://www.investing.com/news/economy-news/fed-rate-hike-odds-in-december-at-88-after-hot-cpi-cme-fedwatch-5017585"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "PDUFA ของ MOLBREEVI (GM-CSF แบบสูดสำหรับ aPAP) วันที่ 22 พ.ย. 2026 ภายใต้ Priority Review คือ binary เป็น BLA ที่ยื่นใหม่ และวันถูกเลื่อนจาก 22 ส.ค. เพราะ major amendment MOLBREEVI จะเป็นยารักษา aPAP ตัวแรกที่ได้รับอนุมัติในสหรัฐฯ เป้า consensus ~$10.56 (Simply Wall St; ช่วง ~$8.8–10.6 จากหลายแหล่ง ข้อมูลเม.ย. 2026 จึงเป็นค่าประมาณ) คิดเป็น ~+115% ผ่านเกณฑ์ 20% แม้ใช้ค่าต่ำสุด (~+80%) fda_decision ไม่ติด laggard ใน Tier-2 (laggard คือ partnership_win) catalyst อีก 11 วัน อยู่ในกรอบ North Star 14 วัน bias ของ Base ใน core +23.7pp เทียบ P75 14 วันจริง +6.6% Base จึงเป็นกรอบ re-rate ~4–8 สัปดาห์หลังงบ ไม่ใช่คาด 14 วัน ขนาด 2–3% ระวัง event วันเดียวกัน: CAPR มี PDUFA 22 พ.ย. บนกระดานด้วย",
+      "priceNote": "ราคาสด $4.92 11 พ.ย. 2026 ช่วง 52 สัปดาห์ $4.00–$7.01 Market cap ~$1.15B PDUFA (22 พ.ย. ตรงกับวันอาทิตย์ คาดว่าจะตัดสินภายในศุกร์ 20 หรือจันทร์ 23 พ.ย.) อีก 11 วัน",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "PDUFA ของ MOLBREEVI — aPAP (Priority Review)",
+          "description": "BLA ยื่นใหม่ วันเป้าหมาย 22 พ.ย. 2026 เลื่อนจาก 22 ส.ค. หลัง major amendment จะเป็นยารักษา autoimmune PAP ตัวแรกที่ได้รับอนุมัติในสหรัฐฯ"
+        }
+      ],
+      "risks": [
+        "ประวัติการยื่นใหม่: BLA เดิมเจอปัญหาไม่รับเรื่อง/CMC และวันถูกเลื่อนไปแล้วหนึ่งครั้ง อาจโดน CRL อีก",
+        "ราคาสะท้อนว่าน่าจะอนุมัติ: หุ้นยังไม่วิ่ง แต่การอนุมัติแบบสะอาดอาจเป็นแค่ +20–40% ไม่ใช่การ re-rate หลายเท่า",
+        "ตลาดหายากมาก (aPAP) รายได้ช่วงเปิดตลาดจะค่อยๆ ขึ้น",
+        "ข้อมูลเป้า consensus เก่า (เม.ย. 2026) upside จึงเป็นค่าประมาณ"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.75–4.00% เมื่อ 28 ต.ค. หลัง CPI ต.ค. ออกมาร้อน (10 พ.ย.) CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ราว 89–100% และโอกาสขึ้น 50bp ~10% ส่วน yield 10 ปีอยู่ ~4.98%",
+        "inflationNote": "CPI ต.ค.: headline +0.4% m/m, core +0.3% m/m (คาด 0.2%) core PCE ก.ย. 3.1% y/y ตัวถัดไปคือ PCE ต.ค. วันที่ 25 พ.ย. แล้วตามด้วย CPI พ.ย. วันที่ 10 ธ.ค. (วันถัดจาก FOMC)",
+        "sectorImpact": "ไบโอเทคโรคหายากที่มียาตัวเดียว PDUFA สำคัญที่สุด ดอกเบี้ยกระทบผ่าน risk appetite ของไบโอเทคเล็กเท่านั้น",
+        "summary": "LOW-MEDIUM — binary (22 พ.ย.) มาก่อน PCE 25 พ.ย. และ FOMC 9 ธ.ค. นาฬิกาการกำกับดูแลไม่ขึ้นกับ Fed"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · ค่าขนม 2.5% — PDUFA แบบ Priority Review ที่มีวันแน่นอน ของยา aPAP ตัวแรก upside ~+115% ไปหา consensus (ข้อมูลเก่า) median ถึงวัน catalyst ของ core -6.9% (n=54; 74% ของ pick ติดลบในวัน event) จึงเข้าที่ Entry 2 เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ core -6.9% (n=54)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "ย่อก่อน PDUFA ลงหาฐาน $4.00–4.50 — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ใกล้ 52-week low $4.00",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — ได้รับอนุมัติ ~$6.80 กรอบ 2–6 สัปดาห์หลังตัดสิน"
+        },
+        "tp2": {
+          "note": "Bull — อนุมัติ label กว้าง + เปิดตลาดเร็ว ~$9"
+        },
+        "tp3": {
+          "note": "Moon — ~$11 (consensus) เมื่อยอดขาย aPAP เพิ่มขึ้น ใน 12 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-18% — กว้างกว่า medianMAE ของ core (-14%)",
+          "hardNote": "-41% — โซน CRL",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "R/R ดี ✅ (≥2:1 เกณฑ์ core)"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "PDUFA MOLBREEVI (aPAP)",
+          "note": "Priority Review; BLA ยื่นใหม่"
+        }
+      ]
+    }
+  }
+}

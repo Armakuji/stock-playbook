@@ -1,0 +1,302 @@
+{
+  "ticker": "LUNR",
+  "companyName": "Intuitive Machines Inc.",
+  "companyDescription": "Lunar Infrastructure + National Security Space · Nova-C/Nova-D landers ($1.1B+ NASA CLPS backlog) plus a new defense-spacecraft line (IM-300 platform) after the Aug 4, 2026 L3Harris/Space Development Agency missile-tracking subcontract",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-11T12:00:00.000Z",
+  "price": 11.81,
+  "priceChange": -1.91,
+  "priceNote": "Live $11.81 on Nov 11, 2026. The prior report (Sep 29) used $14.62, a -19.2% drift in 43 days. IM-3 has slipped (third-party manifests show Q1 2027 / TBD). Q3 results come Nov 12 before the open (company-confirmed).",
+  "marketCap": "~$3.2B",
+  "sector": "Space / Lunar Infrastructure + National Security Space",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Speculative",
+  "score": 52,
+  "factorTags": [
+    "space_launch"
+  ],
+  "summary": "Refresh: the prior report's headline catalyst (IM-3 landing, dated Nov 15) is no longer in window. The company lists IM-3 only as \"2026\", and launch manifests show Q1 2027 / TBD, so the IM-3 date is removed as a dated catalyst. The near-term event is Q3 results on Nov 12 before the open (company release Oct 29), where IM-3 timing and backlog are the read. The stock is -19% since Sep 29. Base is held at +40% from the lower price rather than inflated. Core Base bias +23.7pp vs realized 14d P75 +6.6%, so Base is a multi-week horizon, not a 14-day call. Size 2%.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 2026 earnings — IM-3 timing + backlog",
+      "description": "Company-confirmed Nov 12, 2026 before the open (8:30am ET call).",
+      "urgencyLabel": "1 DAY",
+      "dateBadge": "Nov 12, 2026",
+      "catalystDate": "2026-11-12",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🌙",
+      "name": "IM-3 lunar landing — Reiner Gamma",
+      "description": "The company lists 2026 only; manifests show Q1 2027 / TBD. Not treated as a dated catalyst.",
+      "urgencyLabel": "SLIPPED",
+      "dateBadge": "~Q1 2027",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "IM-3's landing date is genuinely unconfirmed this cycle — sources conflict between an H2 2026 landing attempt and a Q1 2027 launch entirely; treat any specific date as low-confidence until the company clarifies",
+    "IM-1 and IM-2 both toppled onto their side shortly after touching down — a clean IM-3 landing is not assured even once the date is confirmed",
+    "ATM equity issuance keeps share count in flux — a hawkish Fed (rates just hiked to 3.75-4.00%) raises the cost of that ongoing dilution",
+    "Analyst targets show real dispersion this cycle (Strong Buy consensus $29.50 vs a separately reported 'edged down to $14.38' figure) — treat the headline upside with some caution",
+    "Stock is down -11.8% since the last report despite no negative company-specific news identified — could reflect broader space-sector rotation"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q3 2026 earnings",
+      "dateRange": "Nov 12, 2026",
+      "note": "IM-3 timing, backlog",
+      "est": "Backlog update",
+      "highlight": "yellow"
+    },
+    {
+      "event": "IM-3 landing",
+      "dateRange": "~Q1 2027",
+      "note": "Slipped from H2 2026",
+      "est": "TBD",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -39.97,
+      "price": 7.09
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 39.97,
+      "price": 16.53
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 109.99,
+      "price": 24.8
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 200,
+      "price": 35.43
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Craig-Hallum",
+      "target": 45,
+      "rating": "Buy",
+      "note": "Reiterated through the prior decline"
+    },
+    {
+      "firm": "Consensus",
+      "target": 29.5,
+      "rating": "Strong Buy"
+    },
+    {
+      "firm": "Lower-end reported figure",
+      "target": 14.38,
+      "rating": "n/a",
+      "note": "One source shows targets 'edged slightly lower' on delayed-launch concerns — flags real dispersion, not used as the primary consensus"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "The Fed held at 3.75–4.00% on Oct 28. After the hot Oct CPI on Nov 10, CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~89–100%, with ~10% odds of 50bp. The 10-year is ~4.98%.",
+    "inflationNote": "Oct CPI: headline +0.4% m/m, core +0.3% m/m vs 0.2% expected. Sep core PCE 3.1% y/y. Oct PCE (Nov 25) and Nov CPI (Dec 10) are next.",
+    "sectorImpact": "Space-infrastructure names are volatile on both launch-cadence news and financing headlines; a hawkish Fed compounds the latter.",
+    "summary": "MEDIUM — a 25bp December hike is priced after the hot CPI. The tails are a 50bp move or a hot Nov 25 PCE, both of which hit small caps first, so the dip entry is preferred."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 11.81,
+        "note": "Current price — starter only. Not preferred: core at-catalyst median -6.9% (n=54)",
+        "timing": "Now"
+      },
+      {
+        "label": "Entry 2",
+        "level": 9.86,
+        "rangeMax": 10.34,
+        "note": "Pullback zone",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 8.48,
+        "note": "Deep dip — needs a broad space-sector selloff or bad IM-3 date news",
+        "timing": "Deep dip only"
+      }
+    ],
+    "tp1": {
+      "price": 16.53,
+      "pct": 39.97,
+      "note": "Base case — landing date confirmed within H2 2026, IM-300 progress continues"
+    },
+    "tp2": {
+      "price": 24.8,
+      "pct": 109.99,
+      "note": "Bull case — successful landing attempt or major new defense contract"
+    },
+    "tp3": {
+      "price": 35.43,
+      "pct": 200,
+      "note": "Moon case — clean IM-3 landing (unlike IM-1/IM-2) + IM-300 contract wins",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 10.04,
+      "tightPct": -14.99,
+      "tightNote": "-15% — wider than the core medianMAE (-14%); overall figure applies.",
+      "hard": 7.68,
+      "hardPct": -34.97,
+      "hardNote": "Matches the bear case — signals the market has lost confidence in a 2026 landing at all",
+      "riskReward": "7.3 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Good R/R ✅ (≥2:1 core bar)"
+    },
+    "verdict": "SPECULATIVE — the IM-3 date has slipped out of window. Tomorrow's Q3 print is the only dated event. Measured core at-catalyst median is -6.9% (n=54), so Entry 2 is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "satellite_launch",
+    "preRunup": "LUNR has shown sharp pre-event run-ups on confirmed mission news (the Aug 4 L3Harris pop) but has drifted down -11.8% since without a specific negative catalyst — the opposite of a clean pre-runup this cycle",
+    "preRunupTiming": "Typically 1-2 weeks before a confirmed mission milestone",
+    "preRunupPct": "+10% to +20% on confirmed news; currently drifting down on date uncertainty instead",
+    "postWin": {
+      "avgPct": 15,
+      "range": "+7% to +20%",
+      "note": "Sector comps this cycle: AST SpaceMobile +20% (May 2026), Planet Labs +16% on a launch-tied guidance raise (Jun 2026). No LUNR-specific clean landing precedent exists yet since IM-1 and IM-2 both toppled on touchdown.",
+      "exampleDate": "Jun 2026"
+    },
+    "postLose": {
+      "avgPct": -20,
+      "range": "-10% to -30%",
+      "note": "IM-1 and IM-2 both toppled onto their side after landing — a real, company-specific precedent for the downside case if IM-3 repeats the pattern, though exact stock-reaction percentages for those events weren't re-verified this session.",
+      "exampleDate": "2024-2025 (IM-1/IM-2 precedent)"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "Genuine catalyst-date uncertainty this cycle plus a real landing-execution track record concern (IM-1/IM-2 both toppled) — size the smallest of the refresh batch"
+    },
+    "stopPreCatalyst": {
+      "pct": -14.99,
+      "price": 10.04,
+      "note": "Below this, the market has lost confidence in a near-term landing entirely"
+    },
+    "stopPostCatalyst": {
+      "pct": -20,
+      "note": "If IM-3 repeats the IM-1/IM-2 toppling pattern, exit on confirmation"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "PL",
+      "event": "Raised FY26 revenue outlook + successful launch of 3 new Earth-observation satellites",
+      "date": "Jun 2026",
+      "movePct": 16,
+      "days": 1,
+      "outcome": "good",
+      "note": "Sector comp for a successful mission/launch-tied catalyst"
+    },
+    {
+      "ticker": "ASTS",
+      "event": "Sector rally on SpaceX IPO spillover + satellite deployment progress",
+      "date": "May 2026",
+      "movePct": 20,
+      "days": 1,
+      "outcome": "good",
+      "note": "Shows deployment-progress news can move a space name even without a landing-day event"
+    }
+  ],
+  "sources": [
+    "https://investors.intuitivemachines.com/news-releases/news-release-details/intuitive-machines-announces-date-third-quarter-2026-financial",
+    "https://www.intuitivemachines.com/im-3-lunar-mission",
+    "https://en.wikipedia.org/wiki/IM-3",
+    "https://aerospaceamerica.aiaa.org/how-intuitive-machines-is-planning-to-make-its-third-moon-landing-a-successful-one/",
+    "https://www.wallstreetzen.com/stocks/us/nasdaq/lunr/stock-forecast",
+    "https://www.space.com/astronomy/moon/moon-rush-these-private-spacecraft-will-attempt-lunar-landings-in-2026",
+    "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html",
+    "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+    "https://www.investing.com/news/economy-news/fed-rate-hike-odds-in-december-at-88-after-hot-cpi-cme-fedwatch-5017585"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "รีเฟรช: catalyst หลักของรายงานก่อน (ลงจอด IM-3 กำหนด 15 พ.ย.) ไม่อยู่ในกรอบแล้ว บริษัทระบุ IM-3 แค่ \"2026\" และตารางปล่อยจรวดระบุ Q1 2027 / TBD จึงตัดวันของ IM-3 ออกจาก catalyst ที่มีวัน event ใกล้คืองบ Q3 วันที่ 12 พ.ย. ก่อนเปิดตลาด (บริษัทประกาศ 29 ต.ค.) ซึ่งจะบอกเวลา IM-3 และ backlog หุ้นลง -19% ตั้งแต่ 29 ก.ย. คง Base ที่ +40% จากราคาที่ต่ำลง ไม่เพิ่ม bias ของ Base ใน core +23.7pp เทียบ P75 14 วันจริง +6.6% Base จึงเป็นกรอบหลายสัปดาห์ ไม่ใช่คาด 14 วัน ขนาด 2%",
+      "priceNote": "ราคาสด $11.81 11 พ.ย. 2026 รายงานก่อนหน้า (29 ก.ย.) ใช้ $14.62 drift -19.2% ใน 43 วัน IM-3 เลื่อน (ตารางภายนอกระบุ Q1 2027 / TBD) งบ Q3 วันที่ 12 พ.ย. ก่อนเปิดตลาด (บริษัทยืนยัน)",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        {
+          "name": "งบ Q3 2026 — เวลา IM-3 + backlog",
+          "description": "บริษัทยืนยัน 12 พ.ย. 2026 ก่อนเปิดตลาด (call 8:30 ET)"
+        },
+        {
+          "name": "ลงจอดดวงจันทร์ IM-3 — Reiner Gamma",
+          "description": "บริษัทระบุแค่ 2026; ตารางปล่อยระบุ Q1 2027 / TBD ไม่นับเป็น catalyst ที่มีวัน"
+        }
+      ],
+      "risks": [
+        "วันที่ลงจอด IM-3 ยังไม่ยืนยันจริงรอบนี้ — แหล่งข่าวขัดแย้งกันระหว่างการลงจอดใน H2 2026 กับการปล่อยตัวทั้งหมดใน Q1 2027 — ควรมองวันที่เจาะจงใดๆ ด้วยความระมัดระวัง",
+        "ทั้ง IM-1 และ IM-2 ล้มตะแคงหลังลงจอดไม่นาน — การลงจอด IM-3 ที่สมบูรณ์ไม่ใช่เรื่องแน่นอนแม้จะยืนยันวันที่แล้ว",
+        "การออกหุ้นผ่าน ATM ยังดำเนินต่อทำให้จำนวนหุ้นเปลี่ยนแปลง — Fed hawkish (เพิ่งขึ้นดอกเบี้ยเป็น 3.75-4.00%) เพิ่มต้นทุนของการเจือจางที่ดำเนินอยู่",
+        "target นักวิเคราะห์กระจายกว้างจริงรอบนี้ (consensus Strong Buy $29.50 เทียบกับตัวเลขที่รายงานแยกที่ 'ลดลงเหลือ $14.38') — ควรระวังตัวเลข upside หลัก",
+        "หุ้นลดลง -11.8% นับจากรายงานล่าสุดแม้ไม่มีข่าวลบเฉพาะบริษัท — อาจสะท้อนการหมุนกลุ่มอวกาศในวงกว้าง"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.75–4.00% เมื่อ 28 ต.ค. หลัง CPI ต.ค. ออกมาร้อน (10 พ.ย.) CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ราว 89–100% และโอกาสขึ้น 50bp ~10% ส่วน yield 10 ปีอยู่ ~4.98%",
+        "inflationNote": "CPI ต.ค.: headline +0.4% m/m, core +0.3% m/m (คาด 0.2%) core PCE ก.ย. 3.1% y/y ตัวถัดไปคือ PCE ต.ค. (25 พ.ย.) และ CPI พ.ย. (10 ธ.ค.)",
+        "sectorImpact": "หุ้นโครงสร้างพื้นฐานอวกาศผันผวนทั้งจากข่าว launch cadence และข่าวการเงิน Fed hawkish ซ้ำเติมด้านหลัง",
+        "summary": "MEDIUM — ตลาดรับการขึ้นดอกเบี้ย 25bp ใน ธ.ค. แล้วหลัง CPI ร้อน ความเสี่ยงหางคือขึ้น 50bp หรือ PCE 25 พ.ย. ร้อน ซึ่งกระทบหุ้นเล็กก่อน จึงควรรอเข้าตอนย่อ"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — วันของ IM-3 เลื่อนออกนอกกรอบ งบ Q3 พรุ่งนี้เป็น event เดียวที่มีวัน median ถึงวัน catalyst ของ core -6.9% (n=54) จึงเข้าที่ Entry 2 เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ core -6.9% (n=54)",
+            "timing": "ตอนนี้"
+          },
+          {
+            "note": "โซนย่อ (preferred)",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ย่อลึก ต้องมีข่าวลบกลุ่มอวกาศหรือข่าวเลื่อนวันที่ IM-3",
+            "timing": "ย่อลึกเท่านั้น"
+          }
+        ],
+        "tp1": {
+          "note": "Base case — ยืนยันวันลงจอดภายใน H2 2026 ความคืบหน้า IM-300 ต่อเนื่อง"
+        },
+        "tp2": {
+          "note": "Bull case — ลงจอดสำเร็จหรือได้สัญญากลาโหมใหม่ก้อนใหญ่"
+        },
+        "tp3": {
+          "note": "Moon case — IM-3 ลงจอดสมบูรณ์ (ต่างจาก IM-1/IM-2) พร้อมสัญญา IM-300 ใหม่"
+        },
+        "stopLoss": {
+          "tightNote": "-15% — กว้างกว่า medianMAE ของ core (-14%)",
+          "hardNote": "ตรงกับ bear case — สัญญาณว่าตลาดหมดความเชื่อมั่นเรื่องการลงจอดในปี 2026 เลย",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "R/R ดี ✅ (≥2:1 เกณฑ์ core)"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "งบ Q3 2026",
+          "note": "เวลา IM-3, backlog"
+        },
+        {
+          "event": "ลงจอด IM-3",
+          "note": "เลื่อนจากครึ่งหลังปี 2026"
+        }
+      ]
+    }
+  }
+}

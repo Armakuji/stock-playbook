@@ -1,0 +1,285 @@
+{
+  "ticker": "MRVL",
+  "companyName": "Marvell Technology, Inc.",
+  "companyDescription": "Custom AI silicon (XPU) + optical/electro-optical interconnect for hyperscalers — the custom-ASIC #2 behind Broadcom; Celestial AI photonics deal advancing",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-11T11:30:00.000Z",
+  "price": 154.39,
+  "priceChange": -0.14,
+  "priceNote": "Live $154.39 on Nov 11, 2026, down ~10% over 5 sessions and ~53% below its $329.88 52-week high (low $70.69). Hit by the Nov 5 AI-chip selloff. Q3 FY27 results are Dec 1 after the close (company-confirmed).",
+  "marketCap": "~$135B",
+  "sector": "Technology / Semiconductors",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 0,
+  "summary": "MRVL reports Q3 FY2027 on Dec 1 (company press release Nov 6; call 1:30pm PT). Company EPS guide is $1.05–1.15 and consensus is ~$1.10 / $3.15B revenue. The stock has halved from its high in the AI-trade unwind, while consensus targets sit at ~$300–311 (43 analysts, Strong Buy). That is ~+95% upside, far past the 20% gate. Dispersion is wide: Cantor cut to $225 Neutral, Craig-Hallum is $380. The setup mirrors Dec 2024, when a custom-AI guide sent MRVL +23% in a day. The catalyst is 20 days out, outside the 14-day North Star window, so a backtest miss there is a horizon artifact. Core Base bias is +23.7pp vs realized 14d P75 +6.6%, so Base is a ~4–8 week post-earnings re-rating horizon, not a 14-day call. Size 3–5%.",
+  "catalysts": [
+    {
+      "icon": "⚡",
+      "name": "Q3 FY2027 earnings — custom XPU + optical guide",
+      "description": "Company-confirmed Dec 1, 2026 after the close (call 1:30pm PT). EPS guide $1.05–1.15; consensus ~$1.10 / $3.15B. The custom-silicon ramp and the Q4 guide are the swing factors.",
+      "urgencyLabel": "20 DAYS",
+      "dateBadge": "Dec 1, 2026",
+      "catalystDate": "2026-12-01",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Wide target dispersion ($225–$450) signals real uncertainty about custom-silicon share vs Broadcom, plus customer concentration.",
+    "Beta: MRVL fell harder than peers in the Nov 5 selloff and would do so again on a hawkish Dec 9 FOMC.",
+    "Read-through risk: NVDA (Nov 17) reports first and sets the tone for AI capex before MRVL speaks.",
+    "Integration and dilution from acquisitions (Celestial AI; a reported Lumentum all-stock deal) could cloud the print."
+  ],
+  "estimateDates": [
+    {
+      "event": "Q3 FY2027 earnings",
+      "dateRange": "Dec 1, 2026",
+      "note": "EPS guide $1.05–1.15",
+      "est": "Cons. $1.10 / $3.15B",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -19.04,
+      "price": 125
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 23.06,
+      "price": 190
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 55.45,
+      "price": 240
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 100.79,
+      "price": 310
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "StockAnalysis consensus (43)",
+      "target": 310.94,
+      "rating": "Strong Buy"
+    },
+    {
+      "firm": "MarketBeat consensus (Nov 11)",
+      "target": 300.09,
+      "rating": "Moderate Buy"
+    },
+    {
+      "firm": "Craig-Hallum",
+      "target": 380,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Cantor Fitzgerald (cut)",
+      "target": 225,
+      "rating": "Neutral"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "The Fed held at 3.75–4.00% on Oct 28. After the hot Oct CPI on Nov 10, CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~89–100%, with ~10% odds of 50bp. The 10-year is ~4.98%.",
+    "inflationNote": "Oct CPI: headline +0.4% m/m, core +0.3% m/m vs 0.2% expected. Sep core PCE was 3.1% y/y. Oct PCE on Nov 25 is the next print, then Nov CPI on Dec 10, the day after FOMC.",
+    "sectorImpact": "AI semis are the epicenter of the Nov 5 selloff (SOX -9–12% on midterm data-center-regulation fears) and are rate-sensitive long-duration equities; a 50bp December surprise would extend the de-rating.",
+    "summary": "MEDIUM — Dec 1 falls after the Nov 25 PCE and before the Dec 9 FOMC. A hot PCE would pressure the stock into the print."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 154.39,
+        "note": "Current price — starter only. Not preferred: core at-catalyst median -6.9% (n=54)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 140,
+        "rangeMax": 147,
+        "note": "Post-NVDA / pre-PCE dip — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 130,
+        "note": "Deep dip — only if NVDA disappoints on capex",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 190,
+      "pct": 23.06,
+      "note": "Base — custom-AI guide holds; ~$190. Horizon 4–8 weeks."
+    },
+    "tp2": {
+      "price": 240,
+      "pct": 55.45,
+      "note": "Bull — guide raise plus new XPU program wins; ~$240."
+    },
+    "tp3": {
+      "price": 310,
+      "pct": 100.79,
+      "note": "Moon — back to the consensus ~$310. 6–12 months.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 131.2,
+      "tightPct": -15.02,
+      "tightNote": "-15% — wider than the core medianMAE (-14%) — overall core figure applies.",
+      "hard": 112,
+      "hardPct": -27.46,
+      "hardNote": "-27% — a guide cut or the loss of a custom program.",
+      "riskReward": "3.7 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Good R/R ✅ (≥2:1 core bar)"
+    },
+    "verdict": "BUY (scale in) — a halved AI-silicon name into a dated, company-confirmed print with ~+95% to consensus. Let NVDA (Nov 17) report first. Measured core at-catalyst median is -6.9% (n=54; 74% of picks underwater at their event), so Entry 2 is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Semis typically firm into prints after a washout. MRVL's Dec 2024 print followed a run, but this one follows a -50% drawdown, so a pre-print bounce from NVDA read-through is plausible.",
+    "preRunupTiming": "1–2 weeks before Dec 1 (after NVDA)",
+    "preRunupPct": "-10% past 5 sessions",
+    "postWin": {
+      "avgPct": 23,
+      "range": "+11% to +23%",
+      "note": "Dec 2024: MRVL +23% in a day on a custom-AI guide ($1.8B vs $1.65B est.), then another +11% on Broadcom's print a week later.",
+      "exampleDate": "Dec 4, 2024"
+    },
+    "postLose": {
+      "avgPct": -7,
+      "range": "-3% to -10%",
+      "note": "Template from NVDA Aug 2024: a beat with a guide below the whisper fades ~6–7%. MRVL's higher beta likely means a deeper move.",
+      "exampleDate": "Aug 29, 2024 (NVDA)"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "4%. earnings_beat is not a Tier-2 laggard. Sized below NVDA/AVGO for beta and target dispersion."
+    },
+    "stopPreCatalyst": {
+      "pct": -15.02,
+      "price": 131.2,
+      "note": "At -15%, wider than the core medianMAE (-14%). Below ~$131 the AI-capex fear is winning."
+    },
+    "stopPostCatalyst": {
+      "pct": -12,
+      "note": "If the custom-silicon guide is cut, exit on day 1."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "MRVL",
+      "event": "Q3 FY25 custom-AI guide beat",
+      "date": "Dec 2024",
+      "movePct": 23,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same company and same catalyst type. A narrative-confirming custom-AI guide."
+    },
+    {
+      "ticker": "AVGO",
+      "event": "FQ4 2024 AI outlook",
+      "date": "Dec 2024",
+      "movePct": 24,
+      "days": 1,
+      "outcome": "good",
+      "note": "Custom-ASIC peer read-through. AVGO's Dec 9 print lands after MRVL's this cycle."
+    },
+    {
+      "ticker": "NVDA",
+      "event": "Beat, guide below whisper",
+      "date": "Aug 2024",
+      "movePct": -7,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Downside template for an AI semi that beats but under-guides."
+    }
+  ],
+  "sources": [
+    "https://investor.marvell.com/news-events/press-releases/detail/1041/marvell-technology-inc-announces-conference-call-to-review-third-quarter-of-fiscal-year-2027-financial-results",
+    "https://www.marketbeat.com/earnings/reports/2026-12-1-marvell-technology-group-ltd-stock/",
+    "https://stockanalysis.com/stocks/mrvl/",
+    "https://www.fool.com/investing/2024/12/04/why-marvell-technology-stock-was-soaring-today",
+    "https://test.gurufocus.com/news/2633264/broadcom-surges-24-hits-1-trillion-market-cap-amid-ai-boom",
+    "https://thelogic.co/briefing/nvidias-stock-drops-despite-exceeding-q2-earnings-estimates/",
+    "https://www.cnbc.com/2026/11/04/stock-market-today-live-updates.html",
+    "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+    "https://www.investing.com/news/economy-news/fed-rate-hike-odds-in-december-at-88-after-hot-cpi-cme-fedwatch-5017585"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "MRVL ประกาศงบ Q3 ปีงบ 2027 วันที่ 1 ธ.ค. (บริษัทออกข่าว 6 พ.ย.; call 13:30 PT) บริษัทให้เป้า EPS $1.05–1.15 consensus ~$1.10 / รายได้ $3.15B หุ้นลงครึ่งหนึ่งจากจุดสูงสุดในช่วงที่ตลาดเทขายธีม AI ขณะที่เป้า consensus ~$300–311 (43 นักวิเคราะห์, Strong Buy) คิดเป็น upside ~+95% ผ่านเกณฑ์ 20% สบาย เป้ากระจายกว้าง: Cantor ลดเหลือ $225 Neutral, Craig-Hallum $380 ภาพคล้าย ธ.ค. 2024 ที่เป้ารายได้ custom AI ทำให้ MRVL +23% ในวันเดียว catalyst อีก 20 วัน เกินกรอบ North Star 14 วัน ถ้า backtest พลาดจึงเป็นผลจากกรอบเวลา bias ของ Base ใน core +23.7pp เทียบ P75 14 วันจริง +6.6% Base จึงเป็นกรอบ re-rate ~4–8 สัปดาห์หลังงบ ไม่ใช่คาด 14 วัน ขนาด 3–5%",
+      "priceNote": "ราคาสด $154.39 11 พ.ย. 2026 ลง ~10% ใน 5 วันทำการ และต่ำกว่า 52-week high $329.88 ราว 53% (ต่ำสุด $70.69) โดนแรงเทขายหุ้นชิป AI 5 พ.ย. งบ Q3 ปีงบ 2027 วันที่ 1 ธ.ค. หลังปิดตลาด (บริษัทยืนยัน)",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        {
+          "name": "งบ Q3 ปีงบ 2027 — custom XPU + เป้า optical",
+          "description": "บริษัทยืนยัน 1 ธ.ค. 2026 หลังปิดตลาด (call 13:30 PT) เป้า EPS $1.05–1.15 consensus ~$1.10 / $3.15B การเพิ่มผลิต custom silicon และเป้า Q4 เป็นตัวชี้ขาด"
+        }
+      ],
+      "risks": [
+        "เป้ากระจายกว้าง ($225–$450) สะท้อนความไม่แน่นอนเรื่องส่วนแบ่ง custom silicon เทียบ Broadcom และการพึ่งลูกค้าน้อยราย",
+        "Beta สูง: MRVL ลงแรงกว่าคู่แข่งในการเทขาย 5 พ.ย. และจะเป็นอีกถ้า FOMC 9 ธ.ค. แข็งกร้าว",
+        "ความเสี่ยงจากผลของคนอื่น: NVDA (17 พ.ย.) รายงานก่อน และกำหนดทิศทาง capex AI ก่อนที่ MRVL จะพูด",
+        "การรวมกิจการและการเจือจางหุ้นจากการซื้อกิจการ (Celestial AI; ข่าวดีลแลกหุ้นกับ Lumentum) อาจทำให้งบดูไม่ชัด"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.75–4.00% เมื่อ 28 ต.ค. หลัง CPI ต.ค. ออกมาร้อน (10 พ.ย.) CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ราว 89–100% และโอกาสขึ้น 50bp ~10% ส่วน yield 10 ปีอยู่ ~4.98%",
+        "inflationNote": "CPI ต.ค.: headline +0.4% m/m, core +0.3% m/m (คาด 0.2%) core PCE ก.ย. 3.1% y/y ตัวถัดไปคือ PCE ต.ค. วันที่ 25 พ.ย. แล้วตามด้วย CPI พ.ย. วันที่ 10 ธ.ค. (วันถัดจาก FOMC)",
+        "sectorImpact": "หุ้นชิป AI เป็นศูนย์กลางของการเทขาย 5 พ.ย. (SOX -9–12% จากความกังวลเรื่องกฎคุม data center หลังเลือกตั้งกลางเทอม) และเป็นหุ้น long-duration ที่อ่อนไหวต่อดอกเบี้ย ถ้า ธ.ค. ขึ้น 50bp จะยิ่งถูกลด multiple",
+        "summary": "MEDIUM — 1 ธ.ค. อยู่หลัง PCE 25 พ.ย. และก่อน FOMC 9 ธ.ค. ถ้า PCE ร้อนจะกดหุ้นก่อนงบ"
+      },
+      "entryStrategy": {
+        "verdict": "BUY (ทยอยเข้า) — หุ้นชิป AI ที่ลงครึ่งหนึ่ง ก่อนงบที่บริษัทยืนยันวันแล้ว upside ~+95% ไปหา consensus ให้ NVDA (17 พ.ย.) รายงานก่อน median ถึงวัน catalyst ของ core -6.9% (n=54; 74% ของ pick ติดลบในวัน event) จึงเข้าที่ Entry 2 เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ core -6.9% (n=54)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "ย่อหลัง NVDA / ก่อน PCE — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ร่วงหนัก — เฉพาะถ้า NVDA ทำให้ผิดหวังเรื่อง capex",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — เป้า custom-AI ยังอยู่ ~$190 กรอบ 4–8 สัปดาห์"
+        },
+        "tp2": {
+          "note": "Bull — ปรับเป้าขึ้น + ได้โปรแกรม XPU ใหม่ ~$240"
+        },
+        "tp3": {
+          "note": "Moon — กลับไปที่ consensus ~$310 ใน 6–12 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-15% — กว้างกว่า medianMAE ของ core (-14%)",
+          "hardNote": "-27% — ลดเป้าหรือเสียโปรแกรม custom",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "R/R ดี ✅ (≥2:1 เกณฑ์ core)"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "งบ Q3 ปีงบ 2027",
+          "note": "เป้า EPS $1.05–1.15"
+        }
+      ]
+    }
+  }
+}

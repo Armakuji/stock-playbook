@@ -1,0 +1,306 @@
+{
+  "ticker": "RZLV",
+  "companyName": "Rezolve AI PLC",
+  "companyDescription": "Agentic AI commerce platform · H1 2026 revenue $130.8M (~20x YoY), $360M FY26 guide reaffirmed · TCS/Zilch/Microsoft/Tech Mahindra reseller partnerships plus a new Google data-platform selection · going-concern working-capital deficit MORE THAN DOUBLED to $205.2M in the Sept 1 6-K (from $87.1M in the Mar 2026 20-F) — trading near its 52-week low",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-11T11:00:00.000Z",
+  "price": 1.39,
+  "priceChange": -2.11,
+  "priceNote": "Live $1.39 on Nov 11, 2026, -8.3% vs the Nov 4 report ($1.515), with no November company news. Base is held at +45% from the lower price (targets scaled down, not up). The ⚠️ SURVIVAL flag stands.",
+  "marketCap": "~$640M",
+  "sector": "Technology / AI Software (Agentic Commerce)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 0,
+  "summary": "Refresh (no thesis change): there is no November company news, and the stock slid another -8.3%. The ⚠️ SURVIVAL flag stands: the going-concern working-capital deficit was $205.2M per the Sep 1 6-K. The next check is the Q3 trading update (~Dec 2, calendar estimate only), which tests the burn and the $350–360M 2026 revenue / $500M ARR-exit guide. Base is held at +45% from $1.39 (targets scaled down), because a slide with no news is not new upside. Base bias +72.7pp vs realized 30d P75 +12.2%, so Base is a post-catalyst horizon, not a 30-day call. แนะนำ 1% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 55–80%.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 2026 trading update — burn + $360M guide check",
+      "description": "Sep-quarter results; one earnings calendar lists ~Dec 2 (unconfirmed). H2 needs ~$229M revenue to hit the $360M FY26 guide after H1's ~$131M.",
+      "urgencyLabel": "~4 WEEKS",
+      "dateBadge": "~Dec 2, 2026 (est.)",
+      "catalystDate": "2026-12-02",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🤝",
+      "name": "Enterprise reseller ramp (Mastercard, Revolut, TCS, Microsoft, Google)",
+      "description": "Distribution deals that need to show up as revenue in H2 to keep the guide credible.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "⚠️ SURVIVAL: the Sept 1, 2026 6-K showed the going-concern working-capital deficit at $205.2M (more than double the $87.1M in the Mar 2026 20-F). Another equity raise remains likely despite the company's $300M buyback authorization.",
+    "Guidance credibility: Q2 revenue of $65.4M vs the $127M consensus makes the $360M FY26 guide look stretched. Another miss would likely break the 52-week low decisively.",
+    "Legal overhang: a Pomerantz investigation on behalf of investors was announced Oct 23, 2026.",
+    "Heavy losses (TTM net loss ~$183M) and an acquisition-heavy revenue base make organic growth hard to read.",
+    "Leadership changes announced Oct 22 add execution uncertainty during a critical cost-cut period."
+  ],
+  "estimateDates": [
+    {
+      "event": "Q3 2026 trading update",
+      "dateRange": "~Dec 2, 2026 (est.)",
+      "note": "Calendar estimate, not company-confirmed; revenue vs the ~$229M H2 requirement",
+      "est": "Rev ~$98M (calendar est.)",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -54.96,
+      "price": 0.626
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 44.96,
+      "price": 2.015
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 130,
+      "price": 3.197
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 300,
+      "price": 5.56
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus (4 analysts, stockanalysis.com)",
+      "target": 10,
+      "rating": "Strong Buy"
+    },
+    {
+      "firm": "Roth Capital (cut post-H1 print)",
+      "target": 6.5,
+      "rating": "Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "The Fed held at 3.75–4.00% on Oct 28. After the hot Oct CPI on Nov 10, CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~89–100%, with ~10% odds of 50bp. The 10-year is ~4.98%.",
+    "inflationNote": "Oct CPI: headline +0.4% m/m, core +0.3% m/m vs 0.2% expected. Sep core PCE 3.1% y/y. Oct PCE (Nov 25) and Nov CPI (Dec 10) are next.",
+    "sectorImpact": "Going-concern working-capital deficit plus heavy losses. Rates and risk appetite set both the multiple and the terms of any refinancing.",
+    "summary": "MEDIUM — a 25bp December hike is priced after the hot CPI. The tails are a 50bp move or a hot Nov 25 PCE, both of which hit small caps first, so the dip entry is preferred."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 1.39,
+        "note": "Current price — starter only. Not preferred: turbo at-catalyst median -13.7% (n=19)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 1.193,
+        "rangeMax": 1.284,
+        "note": "Below the $1.40 52-week low — preferred only after the Q3 update",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 1.009,
+        "note": "Deep dip — only if the guide is reaffirmed with numbers",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 2.015,
+      "pct": 44.96,
+      "note": "Base — Q3 tracks the $360M guide; ~$2.20 over ~1-3 months."
+    },
+    "tp2": {
+      "price": 3.197,
+      "pct": 130,
+      "note": "Bull — guide met plus financing at a premium; ~$3.48."
+    },
+    "tp3": {
+      "price": 5.56,
+      "pct": 300,
+      "note": "Moon — EBITDA breakeven on schedule; ~$6.06, toward Roth's $6.50. 12-month thesis.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 1.043,
+      "tightPct": -24.96,
+      "tightNote": "-25% — wider than the turbo medianMAE (-24.1%); overall figure applies.",
+      "hard": 0.624,
+      "hardPct": -55.11,
+      "hardNote": "-55% — guide cut + dilutive raise.",
+      "riskReward": "5.2 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Asymmetric ✅ — clears the 5:1 turbo target"
+    },
+    "verdict": "SPECULATIVE · ค่าขนม 1% max — survival-flagged with no dated catalyst (the ~Dec 2 update is an estimate). Hold any starter; no adds. Measured turbo at-catalyst median is -13.7% (n=19), so Entry 2 is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "No run-up: RZLV fell ~33% since Sep 29 after a large Q2 revenue miss; an Oct 23 law-firm investigation and leadership changes followed.",
+    "preRunupTiming": "N/A — falling into the next print",
+    "preRunupPct": "-33% since Sep 29",
+    "postWin": {
+      "avgPct": 5,
+      "range": "-5% to +10%",
+      "note": "The isolated day-of reaction to the Sept 1, 2026 H1 print was not cleanly separable in this research pass, but the stock is down a cumulative ~17.5% from $2.57 (Aug 3) to $2.12 (Sept 29) across the period spanning both the H1 print and the Sept 23 cost-cut announcement — net negative, materially worse than the prior report's muted-but-flat +3.1% framing. Roth Capital cutting its target to $6.50 from $9.50 on the print is direct evidence the going-concern deficit escalation is now outweighing the revenue beat in the market's read. NOTE: catalystType earnings_beat has only n=2 in the turbo skill-feedback dataset — Tier 1, context only, no tier2 directive applies.",
+      "exampleDate": "Sept 1-23, 2026 (RZLV, cumulative)"
+    },
+    "postLose": {
+      "avgPct": -30,
+      "range": "-11% to -99%",
+      "note": "BigBear.ai (BBAI), a similarly ATM/dilution-dependent AI micro-cap, fell 11.3% the day after missing Q1 2025 estimates. The more relevant tail case is now Canoo (GOEV): disclosed the same going-concern language RZLV's deficit now mirrors at a larger scale, was never able to resolve it, and was delisted after a Chapter 7 filing — the real downside case now that RZLV's own deficit has more than doubled in one filing period.",
+      "exampleDate": "May 2025 (BBAI) / Jan 2025 (GOEV)"
+    },
+    "spotSizing": {
+      "pct": 1,
+      "reason": "1%. A ⚠️ SURVIVAL flag (going-concern deficit $205M) plus a slide with no news keep it at the minimum."
+    },
+    "stopPreCatalyst": {
+      "pct": -24.96,
+      "price": 1.043,
+      "note": "Wider than the overall turbo medianMAE (-24.1%). A break below ~$1.14 means the market expects a guide cut or a punitive raise."
+    },
+    "stopPostCatalyst": {
+      "pct": -35,
+      "note": "If the Q3 update cuts the $360M guide or shows burn not falling, exit — that breaks the thesis."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "RZLV",
+      "event": "Sept 1 H1 2026 print (revenue ~20x YoY, guidance reaffirmed) + Sept 23 cost-cut announcement — going-concern deficit more than doubles to $205.2M",
+      "date": "Sept 2026",
+      "movePct": -17.5,
+      "days": 28,
+      "outcome": "bad",
+      "note": "Own-company precedent showing the market now discounts even a very strong revenue beat once the going-concern deficit escalates — net price action was negative across both the H1 print and the follow-up mitigation announcement, the clearest evidence yet that survival risk now dominates the growth narrative."
+    },
+    {
+      "ticker": "BBAI",
+      "event": "Q1 2025 EPS/revenue miss — dilution-risk AI micro-cap punished on a bad print",
+      "date": "May 2025",
+      "movePct": -11.3,
+      "days": 1,
+      "outcome": "bad",
+      "note": "BigBear.ai, a similarly dilution/ATM-dependent AI micro-cap, fell 11.3% the day after missing Q1 2025 estimates — a real base rate for how a weak update could hit RZLV given its own going-concern overhang."
+    },
+    {
+      "ticker": "BBAI",
+      "event": "ATM-funded balance-sheet turnaround — 90%+ debt reduction, $693M raised via equity facilities, ended FY2025 with $462M cash",
+      "date": "Mar 2026",
+      "movePct": 0,
+      "days": 0,
+      "outcome": "good",
+      "note": "Shows an ATM/dilution-dependent AI micro-cap can use the same mechanism RZLV is now relying on to genuinely fix its balance sheet rather than just delay failure — the bull-case survival path for RZLV's own mitigation plan."
+    },
+    {
+      "ticker": "GOEV",
+      "event": "Going-concern doubt disclosed but never resolved — Chapter 7 bankruptcy filing and Nasdaq delisting",
+      "date": "Jan 2025",
+      "movePct": -99,
+      "days": 365,
+      "outcome": "bad",
+      "note": "Canoo disclosed the same kind of going-concern language RZLV's filings now carry at a larger and worsening scale, was unable to secure sufficient additional funding, and ultimately filed Chapter 7 and was delisted — the real tail-risk case now that RZLV's own working-capital deficit has more than doubled in a single filing period."
+    }
+  ],
+  "sources": [
+    "https://www.investing.com/equities/armada-acquisition-i-earnings",
+    "https://www.stocktitan.net/news/RZLV/rezolve-ai-delivers-543-h2-growth-raises-2026-revenue-guidance-to-aoa5h0gs9r84.html",
+    "https://stockanalysis.com/stocks/rzlv/",
+    "https://www.marketbeat.com/instant-alerts/price-rezolve-ai-nasdaq-rzlv-stock-falls-8-time-to-sell-2026-10-12/",
+    "https://rezolve.gcs-web.com/events/event-details/rezolve-ai-host-investor-day-nasdaq-october-6-2026",
+    "https://quantisnow.com/ticker/RZLV",
+    "https://www.stocktitan.net/sec-filings/RZLV/",
+    "https://www.stocktitan.net/news/RZLV/",
+    "https://www.marketbeat.com/stocks/NASDAQ/RZLV/",
+    "https://www.tipranks.com/stocks/rzlv/earnings",
+    "https://finance.yahoo.com/news/bigbear-ai-bbai-strengthens-balance-163950174.html",
+    "https://www.stocktitan.net/news/GOEV/canoo-inc-announces-chapter-7-bankruptcy-ms4ruqehq4oq.html",
+    "https://www.cnbc.com/2026/10/28/fed-interest-rate-decision-october-2026.html",
+    "https://www.cnbc.com/2026/10/29/pce-inflation-report-september-2026-.html",
+    "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+    "https://www.investing.com/news/economy-news/fed-rate-hike-odds-in-december-at-88-after-hot-cpi-cme-fedwatch-5017585"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "รีเฟรช (thesis ไม่เปลี่ยน): ไม่มีข่าวบริษัทใน พ.ย. หุ้นไหลลงอีก -8.3% ⚠️ SURVIVAL flag ยังอยู่ (ขาดดุลเงินทุนหมุนเวียนตาม going-concern $205.2M ตาม 6-K วันที่ 1 ก.ย.) จุดเช็กถัดไปคืออัปเดตผล Q3 (~2 ธ.ค. ตามปฏิทินคาดการณ์เท่านั้น) ซึ่งทดสอบการเผาเงินและเป้ารายได้ปี 2026 $350–360M / ARR ปลายปี $500M คง Base ที่ +45% จาก $1.39 (ลดเป้าตาม) เพราะการไหลลงโดยไม่มีข่าวไม่ใช่ upside ใหม่ bias ของ Base +72.7pp เทียบ P75 30 วันจริง +12.2% จึงเป็นกรอบเวลาหลัง catalyst ไม่ใช่คาด 30 วัน แนะนำ 1% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 55–80%",
+      "priceNote": "ราคาสด $1.39 11 พ.ย. 2026 -8.3% จากรายงาน 4 พ.ย. ($1.515) ไม่มีข่าวบริษัทใน พ.ย. คง Base ที่ +45% จากราคาที่ต่ำลง (ลดเป้าตาม ไม่เพิ่ม) ⚠️ SURVIVAL flag ยังอยู่",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "อัปเดตการค้า Q3 2026 — เช็กการเผาเงิน + guide $360M",
+          "description": "ผลไตรมาส ก.ย. ปฏิทินงบแห่งหนึ่งระบุ ~2 ธ.ค. (ยังไม่ยืนยัน) H2 ต้องได้รายได้ ~$229M ถึงจะถึง guide ปี 26 $360M หลัง H1 ได้ ~$131M"
+        },
+        {
+          "name": "การขยายผ่าน reseller องค์กร (Mastercard, Revolut, TCS, Microsoft, Google)",
+          "description": "ดีลจัดจำหน่ายที่ต้องเห็นเป็นรายได้ใน H2 เพื่อให้ guide น่าเชื่อถือ"
+        }
+      ],
+      "risks": [
+        "⚠️ SURVIVAL: 6-K วันที่ 1 ก.ย. 2026 แสดงเงินทุนหมุนเวียนติดลบระดับ going concern $205.2M (มากกว่าสองเท่าของ $87.1M ใน 20-F เดือน มี.ค. 2026) — ยังน่าจะต้องเพิ่มทุนอีก แม้บริษัทจะได้อนุมัติซื้อหุ้นคืน $300M",
+        "ความน่าเชื่อถือของเป้า: รายได้ Q2 $65.4M เทียบที่ตลาดคาด $127M ทำให้เป้า $360M ปี 2026 ดูตึง ถ้าพลาดอีกน่าจะหลุด 52-week low ชัดเจน",
+        "คดีความ: Pomerantz ประกาศสอบสวนแทนผู้ลงทุนเมื่อ 23 ต.ค. 2026",
+        "ขาดทุนหนัก (TTM ~$183M) และรายได้จากการซื้อกิจการจำนวนมาก ทำให้อ่านการเติบโตจากธุรกิจเดิมยาก",
+        "การเปลี่ยนผู้บริหารที่ประกาศ 22 ต.ค. เพิ่มความไม่แน่นอนช่วงลดต้นทุนที่สำคัญ"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.75–4.00% เมื่อ 28 ต.ค. หลัง CPI ต.ค. ออกมาร้อน (10 พ.ย.) CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ราว 89–100% และโอกาสขึ้น 50bp ~10% ส่วน yield 10 ปีอยู่ ~4.98%",
+        "inflationNote": "CPI ต.ค.: headline +0.4% m/m, core +0.3% m/m (คาด 0.2%) core PCE ก.ย. 3.1% y/y ตัวถัดไปคือ PCE ต.ค. (25 พ.ย.) และ CPI พ.ย. (10 ธ.ค.)",
+        "sectorImpact": "ขาดทุนหนักและมีเงินทุนหมุนเวียนติดลบระดับ going concern ดอกเบี้ยและ risk appetite กำหนดทั้ง multiple และเงื่อนไขการรีไฟแนนซ์",
+        "summary": "MEDIUM — ตลาดรับการขึ้นดอกเบี้ย 25bp ใน ธ.ค. แล้วหลัง CPI ร้อน ความเสี่ยงหางคือขึ้น 50bp หรือ PCE 25 พ.ย. ร้อน ซึ่งกระทบหุ้นเล็กก่อน จึงควรรอเข้าตอนย่อ"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · ค่าขนม สูงสุด 1% — ติด survival flag และไม่มี catalyst ที่มีวัน (~2 ธ.ค. เป็นแค่การคาด) ถือไม้เริ่มไว้ ไม่เพิ่ม median ถึงวัน catalyst ของ turbo -13.7% (n=19) จึงเข้าที่ Entry 2 เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ turbo -13.7% (n=19)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "ต่ำกว่า 52-week low $1.40 — จุดเข้าหลักเฉพาะหลังอัปเดต Q3",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ร่วงหนัก — เฉพาะเมื่อยืนยัน guide พร้อมตัวเลข",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — Q3 ตาม guide $360M ~$2.20 ใน ~1-3 เดือน"
+        },
+        "tp2": {
+          "note": "Bull — ถึง guide + เพิ่มทุนที่ราคาพรีเมียม ~$3.48"
+        },
+        "tp3": {
+          "note": "Moon — EBITDA คุ้มทุนตามกำหนด ~$6.06 เข้าใกล้ Roth $6.50 thesis 12 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-25% — กว้างกว่า medianMAE ของ turbo (-24.1%)",
+          "hardNote": "-55% — ตัด guide + เพิ่มทุนแบบเจือจาง",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "อสมมาตร ✅ — ผ่านเป้า 5:1 ของ turbo"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "อัปเดตการค้า Q3 2026",
+          "note": "วันจากปฏิทินประมาณการ บริษัทยังไม่ยืนยัน รายได้เทียบความต้องการ H2 ~$229M"
+        }
+      ]
+    }
+  }
+}

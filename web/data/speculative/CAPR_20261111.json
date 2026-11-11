@@ -1,0 +1,297 @@
+{
+  "ticker": "CAPR",
+  "companyName": "Capricor Therapeutics, Inc.",
+  "companyDescription": "Cell therapy · Deramiocel — allogeneic cardiac-derived cell therapy for Duchenne muscular dystrophy, first-in-class mechanism awaiting its second FDA decision (Nov 22)",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-11T11:00:00.000Z",
+  "price": 8.87,
+  "priceChange": -9.95,
+  "priceNote": "Live $8.87 on Nov 11, 2026, +10.6% vs the Nov 4 report ($8.02). The Base target ($12.83) is unchanged, so remaining Base upside falls from +60% to ~+45% (15pp base decay). The Nov 22 PDUFA is 11 days out.",
+  "marketCap": "~$515M",
+  "sector": "Healthcare / Biotechnology — Cell Therapy",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Moonshot",
+  "score": 0,
+  "summary": "The Nov 22, 2026 PDUFA for deramiocel (narrowed to upper-limb function in DMD, the HOPE-3 primary endpoint, plus 24-month OLE data in the major amendment) is 11 days out. The stock has run another +10.6% since Nov 4, so with the target unchanged the remaining Base is ~+45% (was +60%). The board was over-ranking it by ~15pp. The 9-3 negative adcomm (Jul 29) on the original indication is the key risk. Cash of ~$198.5M covers at least 12 months, and the San Diego facility is launch-ready. fda_decision is a Tier-2 leader (+9.3pp vs +2.0, n=10). Base bias +72.7pp vs realized 30d P75 +12.2%, so Base is a post-catalyst horizon, not a 30-day call. แนะนำ 2–3% ของ portfolio เท่านั้น — ถ้า CRL ลงได้ 40–55%.",
+  "catalysts": [
+    {
+      "icon": "⚕️",
+      "name": "Deramiocel PDUFA decision — upper-limb function indication",
+      "description": "FDA target action date for the amended BLA, narrowed to upper-limb function (PUL 2.0) after the Jul 29-30, 2026 adcomm voted 9-3 against the original DMD-cardiomyopathy claim. Clinical investigators publicly urged approval on Nov 3.",
+      "urgencyLabel": "18 DAYS",
+      "dateBadge": "Nov 22, 2026",
+      "catalystDate": "2026-11-22",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "The FDA adcomm voted 9-3 against efficacy for the original DMD-cardiomyopathy indication (Jul 2026, non-binding). The narrowed upper-limb ask is a reasonable fix, not an assured approval.",
+    "Part of the approval is now priced: +38% since Oct 26 and +14% on Nov 3 alone. The approval-day pop will be smaller than the Dec 2025 data move.",
+    "A second CRL (after the Jul 2025 CRL, -33% on day 1) would likely send the stock back to the ~$4 post-adcomm low and force a dilutive raise.",
+    "Securities class actions over the early-September 2026 disclosure are an overhang independent of the FDA outcome.",
+    "If approved, launch risk remains: payer coverage for a novel cell therapy, the narrower population, and manufacturing scale-up."
+  ],
+  "estimateDates": [
+    {
+      "event": "PDUFA target action date — Deramiocel BLA (upper-limb)",
+      "dateRange": "Nov 22, 2026",
+      "note": "Second FDA decision on this drug after the Jul 2025 CRL and the Jul 2026 9-3 negative adcomm",
+      "est": "Approval / CRL / delay",
+      "highlight": "blue"
+    },
+    {
+      "event": "Q3 2026 earnings",
+      "dateRange": "~mid-Nov 2026",
+      "note": "Cash runway ahead of a potential launch; any pre-decision FDA commentary",
+      "est": "n/a",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -59.3,
+      "price": 3.61
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 44.64,
+      "price": 12.83
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 135.06,
+      "price": 20.85
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 261.67,
+      "price": 32.08
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus (stockanalysis.com)",
+      "target": 27,
+      "rating": "Buy"
+    },
+    {
+      "firm": "B. Riley (upgrade, Sep 30, 2026)",
+      "target": 21,
+      "rating": "Buy"
+    },
+    {
+      "firm": "H.C. Wainwright",
+      "target": 60,
+      "rating": "Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "The Fed held at 3.75–4.00% on Oct 28. After the hot Oct CPI on Nov 10, CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~89–100%, with ~10% odds of 50bp. The 10-year is ~4.98%.",
+    "inflationNote": "Oct CPI: headline +0.4% m/m, core +0.3% m/m vs 0.2% expected. Sep core PCE 3.1% y/y. Oct PCE (Nov 25) and Nov CPI (Dec 10) are next.",
+    "sectorImpact": "Single-asset cell-therapy company. The FDA outcome dominates; rates matter through small-cap biotech risk appetite and the cost of a launch raise.",
+    "summary": "MEDIUM — a 25bp December hike is priced after the hot CPI. The tails are a 50bp move or a hot Nov 25 PCE, both of which hit small caps first, so the dip entry is preferred."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 8.87,
+        "note": "Current price — starter only. Not preferred: turbo at-catalyst median -13.7% (n=19)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 7.52,
+        "rangeMax": 8.07,
+        "note": "Gives back part of the Nov 3 letter pop — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 6.41,
+        "note": "Back to the Oct 26 level — thesis-intact only",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 12.83,
+      "pct": 44.64,
+      "note": "Base — approved Nov 22 on the upper-limb label; ~$12.80 within ~1-3 months."
+    },
+    "tp2": {
+      "price": 20.85,
+      "pct": 135.06,
+      "note": "Bull — approval plus clean launch guidance; ~$20.85, near the B. Riley $21 target."
+    },
+    "tp3": {
+      "price": 32.08,
+      "pct": 261.67,
+      "note": "Moon — strong launch plus a label-expansion path; ~$32, still under the $40.37 52-week high. 12-24 month thesis.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 6.65,
+      "tightPct": -25.03,
+      "tightNote": "-25% — wider than the turbo medianMAE (-24.1%); overall figure applies.",
+      "hard": 4.43,
+      "hardPct": -50.06,
+      "hardNote": "-50% — CRL territory (post-adcomm low ~$4).",
+      "riskReward": "5.4 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Asymmetric ✅ — clears the 5:1 turbo target"
+    },
+    "verdict": "SPECULATIVE · Moonshot 2.5% max — the PDUFA is 11 days out after a +10.6% run. Don't chase: remaining Base is ~+45%, and a 9-3 negative adcomm still hangs over the decision. Measured turbo at-catalyst median is -13.7% (n=19), so Entry 2 is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "A classic late pre-PDUFA run-up: +38% since Oct 26, capped by the Nov 3 investigator-letter pop (+14%), after a ~41% slide in October on litigation.",
+    "preRunupTiming": "Final 3-4 weeks before Nov 22",
+    "preRunupPct": "+38% since Oct 26",
+    "postWin": {
+      "avgPct": 300,
+      "range": "+60% to +300%",
+      "note": "CAPR's own Dec 2025 HOPE-3 Phase 3 readout took the stock from $6.36 to $40.37 (+300%) in two trading days. An approval on the narrowed label, after the November run-up, likely produces a smaller move (+40-80%), but the stock has shown it can triple on this drug.",
+      "exampleDate": "Dec 2025"
+    },
+    "postLose": {
+      "avgPct": -36,
+      "range": "-33% to -55%",
+      "note": "CAPR fell 36% on Jul 30, 2026 after the adcomm's 9-3 negative vote ($6.57 to $4.19), and 33% on day 1 of the Jul 2025 CRL. A second CRL would likely be at least as severe.",
+      "exampleDate": "Jul 30, 2026"
+    },
+    "spotSizing": {
+      "pct": 2.5,
+      "reason": "2.5%. fda_decision is a Tier-2 LEADER (+9.3pp vs +2.0pp, n=10), but the 9-3 adcomm, pending litigation and a +38% run-up keep it at 2.5%. The weak lane scoreboard (hitRate 4.9%, n=41) caps it here."
+    },
+    "stopPreCatalyst": {
+      "pct": -25.03,
+      "price": 6.65,
+      "note": "Wider than the fda_decision medianMAE (-18.4%, n=10). A break below ~$6.25 before Nov 22 suggests the market is pricing a second CRL."
+    },
+    "stopPostCatalyst": {
+      "pct": -35,
+      "note": "If FDA issues a second CRL, exit day 1. The 2025 CRL precedent was -33% in one session."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "CAPR",
+      "event": "Phase 3 HOPE-3 24-month data supporting the refiled BLA",
+      "date": "Dec 2025",
+      "movePct": 300,
+      "days": 2,
+      "outcome": "good",
+      "note": "Same drug, same company. HOPE-3 drove CAPR from $6.36 to $40.37 in two trading days, the direct precedent for how this stock trades on binary DMD news."
+    },
+    {
+      "ticker": "CAPR",
+      "event": "FDA adcomm 9-3 vote against DMD-cardiomyopathy efficacy",
+      "date": "Jul 2026",
+      "movePct": -36,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Same drug. A negative non-binding vote cost 36% in one day. A CRL on the narrowed ask would be the second regulatory setback."
+    },
+    {
+      "ticker": "SRPT",
+      "event": "Elevidys FDA accelerated approval (first DMD gene therapy)",
+      "date": "Jun 2023",
+      "movePct": -11,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "A narrower-than-hoped label triggered an 11% drop despite approval. CAPR's upper-limb-only ask carries similar 'approved but narrow' risk."
+    }
+  ],
+  "sources": [
+    "https://cureduchenne.org/research/capricors-pdufa-date-for-fda-to-review-deramiocel-has-been-extended-to-november-22-2026/",
+    "https://seekingalpha.com/news/4670381-capricor-outlines-2027-manufacturing-validation-as-deramiocel-bla-heads-toward-nov-22-pdufa",
+    "https://stockanalysis.com/stocks/capr/",
+    "https://stocktwits.com/news-articles/markets/equity/capr-stock-rises-as-clinical-trial-investigators-write-to-fda-urging-approval-for-deramiocel/cNGX1b1R9d0",
+    "https://finviz.com/news/384903/capricor-therapeutics-deramiocel-pdufa-date-extended-to-november-as-fda-reviews-bla-amendment",
+    "https://www.biospace.com/fda/fda-advisers-vote-against-approval-of-capricors-dmd-therapy-in-chaotic-adcomm-meeting",
+    "https://stockstotrade.com/news/capricor-therapeutics-inc-capr-news-2026_09_30-3/",
+    "https://www.fiercebiotech.com/biotech/capricor-sets-2nd-approval-attempt-duchenne-cell-therapy-phase-3-win",
+    "https://investorrelations.sarepta.com/news-releases/news-release-details/sarepta-therapeutics-announces-fda-approval-elevidys-first-gene",
+    "https://www.cnbc.com/2026/10/28/fed-interest-rate-decision-october-2026.html",
+    "https://www.cnbc.com/2026/10/29/pce-inflation-report-september-2026-.html",
+    "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+    "https://www.investing.com/news/economy-news/fed-rate-hike-odds-in-december-at-88-after-hot-cpi-cme-fedwatch-5017585"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "PDUFA ของ deramiocel วันที่ 22 พ.ย. 2026 (จำกัดเหลือการทำงานของแขนในผู้ป่วย DMD ซึ่งเป็น endpoint หลักของ HOPE-3 และเพิ่มข้อมูล OLE 24 เดือนใน major amendment) เหลืออีก 11 วัน หุ้นวิ่งเพิ่มอีก +10.6% ตั้งแต่ 4 พ.ย. เมื่อเป้าเท่าเดิม Base ที่เหลือจึง ~+45% (เดิม +60%) กระดานจัดอันดับสูงเกินจริงราว 15pp ความเสี่ยงหลักคือ adcomm โหวตค้าน 9-3 (29 ก.ค.) สำหรับข้อบ่งใช้เดิม เงินสด ~$198.5M พอสำหรับอย่างน้อย 12 เดือน และโรงงาน San Diego พร้อมเปิดตลาด fda_decision เป็น leader ใน Tier-2 (+9.3pp เทียบ +2.0, n=10) bias ของ Base +72.7pp เทียบ P75 30 วันจริง +12.2% จึงเป็นกรอบเวลาหลัง catalyst ไม่ใช่คาด 30 วัน แนะนำ 2–3% ของ portfolio เท่านั้น — ถ้าโดน CRL ลงได้ 40–55%",
+      "priceNote": "ราคาสด $8.87 11 พ.ย. 2026 +10.6% จากรายงาน 4 พ.ย. ($8.02) เป้า Base ($12.83) ไม่เปลี่ยน upside ที่เหลือจึงลดจาก +60% เป็น ~+45% (base decay 15pp) PDUFA 22 พ.ย. อีก 11 วัน",
+      "scoreLabel": "Moonshot",
+      "catalysts": [
+        {
+          "name": "คำตัดสิน PDUFA ของ Deramiocel — ข้อบ่งใช้ upper-limb function",
+          "description": "วันตัดสินของ FDA สำหรับ BLA ที่แก้ไขให้เหลือข้อบ่งใช้การทำงานของแขน (PUL 2.0) หลัง adcomm 29-30 ก.ค. 2026 โหวต 9-3 คว่ำข้อบ่งใช้ cardiomyopathy เดิม แพทย์ผู้วิจัยเรียกร้องให้อนุมัติเมื่อ 3 พ.ย."
+        }
+      ],
+      "risks": [
+        "adcomm ของ FDA โหวต 9-3 ไม่เห็นด้วยกับประสิทธิผลในข้อบ่งใช้ DMD-cardiomyopathy เดิม (ก.ค. 2026, ไม่ผูกมัด) การจำกัดเหลือข้อบ่งใช้แขนเป็นทางแก้ที่สมเหตุสมผล ไม่ใช่การอนุมัติที่แน่นอน",
+        "ราคารับการอนุมัติไปบางส่วนแล้ว: +38% นับจาก 26 ต.ค. และ +14% เฉพาะวันที่ 3 พ.ย. การวิ่งวันอนุมัติจะเล็กกว่าตอนผล ธ.ค. 2025",
+        "ถ้าโดน CRL ครั้งที่สอง (หลัง CRL ก.ค. 2025 ที่ -33% วันแรก) น่าจะกลับไปจุดต่ำหลัง adcomm ~$4 และต้องเพิ่มทุน",
+        "คดีหลักทรัพย์จากการเปิดเผยข้อมูลต้น ก.ย. 2026 เป็นแรงกดดันแยกจากผล FDA",
+        "ถ้าอนุมัติ ยังมีความเสี่ยงการเปิดตัว: การเบิกจ่ายของ payer ประชากรผู้ป่วยที่แคบลง และการขยายการผลิต"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.75–4.00% เมื่อ 28 ต.ค. หลัง CPI ต.ค. ออกมาร้อน (10 พ.ย.) CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ราว 89–100% และโอกาสขึ้น 50bp ~10% ส่วน yield 10 ปีอยู่ ~4.98%",
+        "inflationNote": "CPI ต.ค.: headline +0.4% m/m, core +0.3% m/m (คาด 0.2%) core PCE ก.ย. 3.1% y/y ตัวถัดไปคือ PCE ต.ค. (25 พ.ย.) และ CPI พ.ย. (10 ธ.ค.)",
+        "sectorImpact": "บริษัท cell therapy ที่มีสินทรัพย์เดียว ผล FDA สำคัญที่สุด ดอกเบี้ยกระทบผ่าน risk appetite ของไบโอเทคเล็กและต้นทุนการเพิ่มทุนเพื่อเปิดตัวยา",
+        "summary": "MEDIUM — ตลาดรับการขึ้นดอกเบี้ย 25bp ใน ธ.ค. แล้วหลัง CPI ร้อน ความเสี่ยงหางคือขึ้น 50bp หรือ PCE 25 พ.ย. ร้อน ซึ่งกระทบหุ้นเล็กก่อน จึงควรรอเข้าตอนย่อ"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · Moonshot สูงสุด 2.5% — PDUFA อีก 11 วัน หลังวิ่ง +10.6% อย่าไล่ราคา Base ที่เหลือ ~+45% และ adcomm ที่โหวตค้าน 9-3 ยังกดดันการตัดสิน median ถึงวัน catalyst ของ turbo -13.7% (n=19) จึงเข้าที่ Entry 2 เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ turbo -13.7% (n=19)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "คืนกำไรบางส่วนจากการวิ่งวันที่ 3 พ.ย. — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "กลับไประดับ 26 ต.ค. — เฉพาะเมื่อ thesis ยังอยู่",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — อนุมัติ 22 พ.ย. ด้วยฉลากการทำงานของแขน ~$12.80 ใน ~1-3 เดือน"
+        },
+        "tp2": {
+          "note": "Bull — อนุมัติ + แนวทางเปิดตัวชัด ~$20.85 ใกล้เป้า B. Riley $21"
+        },
+        "tp3": {
+          "note": "Moon — เปิดตัวแข็ง + มีเส้นทางขยายข้อบ่งใช้ ~$32 ยังต่ำกว่า 52-week high $40.37 thesis 12-24 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-25% — กว้างกว่า medianMAE ของ turbo (-24.1%)",
+          "hardNote": "-50% — โซน CRL (จุดต่ำหลัง adcomm ~$4)",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "อสมมาตร ✅ — ผ่านเป้า 5:1 ของ turbo"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "วัน PDUFA — BLA ของ Deramiocel (ข้อบ่งใช้แขน)",
+          "note": "คำตัดสิน FDA รอบที่ 2 ของยานี้ หลัง CRL ก.ค. 2025 และโหวต adcomm ลบ 9-3 ก.ค. 2026"
+        },
+        {
+          "event": "ผลประกอบการ Q3 2026",
+          "note": "เงินสดก่อนเปิดตัวยา และความเห็นจาก FDA ก่อนวันตัดสิน"
+        }
+      ]
+    }
+  }
+}

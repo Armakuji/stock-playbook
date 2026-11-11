@@ -1,0 +1,299 @@
+{
+  "ticker": "NVDA",
+  "companyName": "NVIDIA Corporation",
+  "companyDescription": "AI GPU · Blackwell/Rubin data-center accelerators + CUDA/NVLink ecosystem — the AI capex bellwether, now de-rated ~30% from its high on midterm regulation fears and a board probe of the CEO",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-11T11:30:00.000Z",
+  "price": 168.89,
+  "priceChange": -5.47,
+  "priceNote": "Live $168.89 on Nov 11, 2026, near the $164.27 52-week low (high $243.37). It is down ~24% in a month: the Nov 5 AI-chip selloff after the Democratic midterm sweep (data-center regulation fears), then -4% on Nov 9 when the board opened an independent investigation into Jensen Huang. Earnings are Nov 17 after the close.",
+  "marketCap": "~$4.1T",
+  "sector": "Technology / Semiconductors",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 0,
+  "summary": "NVDA reports fiscal Q3 2027 on Nov 17 (company-confirmed, 5pm ET call). Guide is $108B ±2% at 74% GM, and consensus is ~$108.8B / EPS $2.47. The stock is back near its 52-week low after two non-fundamental hits: the Nov 5 midterm/AI-regulation selloff and the Nov 8 board probe of Huang. The board says it has no reason to believe secrets were compromised, and Huang stays CEO. Consensus targets of ~$320–340 (Citi cut to $285, GS $300, Wells $300) leave ~+90% to consensus, far past the 20% gate. A clean beat-and-raise that re-anchors AI demand could plausibly retrace +20% of a -30% drawdown, which is why a mega-cap clears here. The catalyst is 6 days out, inside the 14-day North Star window. Core Base bias is +23.7pp vs realized 14d P75 +6.6%, so Base is a ~4–8 week post-earnings re-rating horizon, not a 14-day call. Size 5–8%; this is a de-rated core name, not a lottery ticket.",
+  "catalysts": [
+    {
+      "icon": "⚡",
+      "name": "Q3 FY2027 earnings — Blackwell/Rubin ramp + Q4 guide",
+      "description": "Company-confirmed for Nov 17, 2026 after the close (5pm ET call). Guide $108B ±2%, GM 74% ±50bp; consensus ~$108.8B / EPS $2.47. The Q4 guide and any read on 2027 capex vs. the regulation fears are the swing factors.",
+      "urgencyLabel": "6 DAYS",
+      "dateBadge": "Nov 17, 2026",
+      "catalystDate": "2026-11-17",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🔍",
+      "name": "Board independent investigation — CEO",
+      "description": "Opened Nov 8 by a committee of independent directors with outside counsel. No timeline. The board says it has no reason to believe secrets were compromised, and Huang remains CEO.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "CEO investigation is an open-ended governance overhang. Any finding that forces a leadership change would hit the multiple regardless of earnings.",
+    "Data-center regulation risk under a Democratic Congress is a narrative that one earnings print cannot disprove.",
+    "Beat-and-fade history: NVDA fell ~6–7% after a clean beat in Aug 2024 because the guide missed the whisper.",
+    "Macro: a Dec 9 hike is ~89–100% priced, with a ~10% tail for 50bp. Long-duration tech is the most rate-sensitive group."
+  ],
+  "estimateDates": [
+    {
+      "event": "Q3 FY2027 earnings",
+      "dateRange": "Nov 17, 2026",
+      "note": "Guide $108B ±2%; GM 74%",
+      "est": "Cons. $108.8B / $2.47",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -17.11,
+      "price": 140
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 21.38,
+      "price": 205
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 45.06,
+      "price": 245
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 77.63,
+      "price": 300
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus (Yahoo, Nov 9)",
+      "target": 327.14,
+      "rating": "Strong Buy"
+    },
+    {
+      "firm": "Wells Fargo",
+      "target": 300,
+      "rating": "Overweight"
+    },
+    {
+      "firm": "Goldman Sachs",
+      "target": 300,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Citigroup (cut Nov 11)",
+      "target": 285,
+      "rating": "Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "The Fed held at 3.75–4.00% on Oct 28. After the hot Oct CPI on Nov 10, CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~89–100%, with ~10% odds of 50bp. The 10-year is ~4.98%.",
+    "inflationNote": "Oct CPI: headline +0.4% m/m, core +0.3% m/m vs 0.2% expected. Sep core PCE was 3.1% y/y. Oct PCE on Nov 25 is the next print, then Nov CPI on Dec 10, the day after FOMC.",
+    "sectorImpact": "AI semis are the epicenter of the Nov 5 selloff (SOX -9–12% on midterm data-center-regulation fears) and are rate-sensitive long-duration equities; a 50bp December surprise would extend the de-rating.",
+    "summary": "MEDIUM — the hike is priced. Earnings on Nov 17 land before the Nov 25 PCE and Dec 9 FOMC, so the print is a clean test of fundamentals before the next macro hurdle."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 168.89,
+        "note": "Current price — starter only. Not preferred: core at-catalyst median -6.9% (n=54)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 158,
+        "rangeMax": 163,
+        "note": "Undercut of the $164 52-week low into the print — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 150,
+        "note": "Capitulation zone — only if the board probe escalates",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 205,
+      "pct": 21.38,
+      "note": "Base — beat-and-raise; retraces toward the pre-selloff ~$205. Horizon 4–8 weeks."
+    },
+    "tp2": {
+      "price": 245,
+      "pct": 45.06,
+      "note": "Bull — guide re-anchors 2027 AI capex; ~$245 (52-week high zone)."
+    },
+    "tp3": {
+      "price": 300,
+      "pct": 77.63,
+      "note": "Moon — probe closes clean plus capex upside; ~$300 (GS/Wells targets). 6–12 months.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 143.5,
+      "tightPct": -15.03,
+      "tightNote": "-15% — wider than the core medianMAE (-14%) — earnings_beat bucket MAE not broken out; overall core figure applies.",
+      "hard": 125,
+      "hardPct": -25.99,
+      "hardNote": "-26% — a probe escalation or a guide cut breaks the thesis.",
+      "riskReward": "3.0 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Good R/R ✅ (≥2:1 core bar)"
+    },
+    "verdict": "BUY (scale in) — the AI bellwether at its 52-week low into a dated print, with ~+90% to consensus. The overhangs are governance and politics, not demand. Measured core at-catalyst median is -6.9% (n=54; 74% of picks underwater at their event), so Entry 2 is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "NVDA usually runs into prints, but this time it is falling into one (-24% in a month). Positioning is washed out, which historically raises the odds of a relief move on any clean guide.",
+    "preRunupTiming": "1–2 weeks before earnings",
+    "preRunupPct": "-24% past month (inverse run-up)",
+    "postWin": {
+      "avgPct": 24,
+      "range": "+8% to +24%",
+      "note": "May 2023: NVDA +24% in a day on a guide of $11B vs $7.2B expected, then the largest market-cap jump on record. A de-rated setup makes a high-single to low-double-digit relief move the realistic base.",
+      "exampleDate": "May 25, 2023"
+    },
+    "postLose": {
+      "avgPct": -7,
+      "range": "-3% to -10%",
+      "note": "Aug 2024: NVDA fell ~6–7% after beating on revenue ($30.0B vs $29B) because the guide trailed the whisper and a Blackwell mask change spooked buyers.",
+      "exampleDate": "Aug 29, 2024"
+    },
+    "spotSizing": {
+      "pct": 6,
+      "reason": "6%. earnings_beat is not a Tier-2 laggard (laggard: partnership_win -1.6 vs +1.4 overall). The size is capped below a full core weight because of the open-ended CEO probe."
+    },
+    "stopPreCatalyst": {
+      "pct": -15.03,
+      "price": 143.5,
+      "note": "At -15%, wider than the core medianMAE (-14%). A break below ~$143 would mean the market is pricing more than sentiment, such as leadership change or a demand reset."
+    },
+    "stopPostCatalyst": {
+      "pct": -12,
+      "note": "If the Q4 guide comes in below consensus, cut on day 1. A beat with a weak guide repeats Aug 2024."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "NVDA",
+      "event": "Q1 FY24 guide blowout ($11B vs $7.2B)",
+      "date": "May 2023",
+      "movePct": 24,
+      "days": 1,
+      "outcome": "good",
+      "note": "Upside template: a guide that resets the AI-demand narrative. The current setup needs a narrative reset too (regulation fears)."
+    },
+    {
+      "ticker": "NVDA",
+      "event": "Q2 FY25 beat, guide below whisper",
+      "date": "Aug 2024",
+      "movePct": -7,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Downside template: beating is not enough when the whisper is above the guide."
+    },
+    {
+      "ticker": "AVGO",
+      "event": "FQ4 2024 beat + AI SAM outlook",
+      "date": "Dec 2024",
+      "movePct": 24,
+      "days": 1,
+      "outcome": "good",
+      "note": "A mega-cap AI semi can move +20%+ in a day on a narrative-changing outlook. This is the self-check for mega-cap eligibility."
+    }
+  ],
+  "sources": [
+    "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/",
+    "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-chinese-spy-investigation.html",
+    "https://finance.yahoo.com/markets/stocks/articles/only-one-analyst-rates-nvidia-122724930.html",
+    "https://www.defenseworld.net/2026/11/11/nvidia-nasdaqnvda-price-target-cut-to-285-00-by-analysts-at-citigroup.html",
+    "https://www.cnbc.com/2026/11/04/stock-market-today-live-updates.html",
+    "https://www.bnnbloomberg.ca/nvidia-s-184-billion-jump-in-five-charts-1.1925275",
+    "https://thelogic.co/briefing/nvidias-stock-drops-despite-exceeding-q2-earnings-estimates/",
+    "https://test.gurufocus.com/news/2633264/broadcom-surges-24-hits-1-trillion-market-cap-amid-ai-boom",
+    "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+    "https://www.investing.com/news/economy-news/fed-rate-hike-odds-in-december-at-88-after-hot-cpi-cme-fedwatch-5017585"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "NVDA ประกาศงบไตรมาส 3 ปีงบ 2027 วันที่ 17 พ.ย. (บริษัทยืนยัน, call 17:00 ET) เป้า $108B ±2% GM 74% consensus ~$108.8B / EPS $2.47 หุ้นกลับมาใกล้ 52-week low หลังโดนสองเรื่องที่ไม่ใช่พื้นฐาน: เทขาย 5 พ.ย. จากเลือกตั้งกลางเทอม/กฎ AI และบอร์ดสอบสวน Huang 8 พ.ย. บอร์ดระบุว่าไม่มีเหตุให้เชื่อว่าความลับรั่ว และ Huang ยังเป็น CEO เป้า consensus ~$320–340 (Citi ลดเหลือ $285, GS $300, Wells $300) เหลือ upside ~+90% ไปถึง consensus ผ่านเกณฑ์ 20% สบาย งบที่ beat-and-raise ชัดและยืนยันดีมานด์ AI อาจทำให้หุ้นฟื้น +20% จาก drawdown -30% ได้ หุ้นใหญ่ขนาดนี้จึงผ่านเกณฑ์ catalyst อีก 6 วัน อยู่ในกรอบ North Star 14 วัน bias ของ Base ใน core +23.7pp เทียบ P75 14 วันจริง +6.6% Base จึงเป็นกรอบ re-rate ~4–8 สัปดาห์หลังงบ ไม่ใช่คาด 14 วัน ขนาด 5–8% — เป็นหุ้นหลักที่ถูกลด multiple ไม่ใช่สลากกินแบ่ง",
+      "priceNote": "ราคาสด $168.89 11 พ.ย. 2026 ใกล้ 52-week low $164.27 (สูงสุด $243.37) ลง ~24% ในเดือนเดียว: เทขายหุ้นชิป AI 5 พ.ย. หลังเดโมแครตชนะเลือกตั้งกลางเทอม (กังวลกฎคุม data center) แล้ว -4% วันที่ 9 พ.ย. เมื่อบอร์ดเปิดการสอบสวนอิสระเรื่อง Jensen Huang งบออก 17 พ.ย. หลังปิดตลาด",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        {
+          "name": "งบ Q3 ปีงบ 2027 — การผลิต Blackwell/Rubin + เป้า Q4",
+          "description": "บริษัทยืนยัน 17 พ.ย. 2026 หลังปิดตลาด (call 17:00 ET) เป้า $108B ±2%, GM 74% ±50bp consensus ~$108.8B / EPS $2.47 เป้า Q4 และมุมมอง capex ปี 2027 ท่ามกลางความกังวลเรื่องกฎคุมเป็นตัวชี้ขาด"
+        },
+        {
+          "name": "บอร์ดสอบสวนอิสระ — CEO",
+          "description": "เปิดเมื่อ 8 พ.ย. โดยคณะกรรมการอิสระพร้อมที่ปรึกษากฎหมายภายนอก ไม่มีกรอบเวลา บอร์ดระบุว่าไม่มีเหตุให้เชื่อว่าความลับรั่ว Huang ยังเป็น CEO"
+        }
+      ],
+      "risks": [
+        "การสอบสวน CEO เป็นแรงกดด้านธรรมาภิบาลที่ไม่มีกำหนดจบ ถ้าผลสอบนำไปสู่การเปลี่ยนผู้นำ multiple จะถูกกดไม่ว่างบจะดีแค่ไหน",
+        "ความเสี่ยงกฎคุม data center ภายใต้สภาที่เดโมแครตคุม เป็นเรื่องเล่าที่งบไตรมาสเดียวหักล้างไม่ได้",
+        "ประวัติ beat แล้วร่วง: NVDA ลง ~6–7% หลังงบ beat ชัดเมื่อ ส.ค. 2024 เพราะเป้าไม่ถึงที่ตลาดกระซิบ",
+        "Macro: ตลาดให้โอกาสขึ้นดอกเบี้ย 9 ธ.ค. ~89–100% และมีหางขึ้น 50bp ~10% หุ้นเทค long-duration อ่อนไหวต่อดอกเบี้ยที่สุด"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.75–4.00% เมื่อ 28 ต.ค. หลัง CPI ต.ค. ออกมาร้อน (10 พ.ย.) CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ราว 89–100% และโอกาสขึ้น 50bp ~10% ส่วน yield 10 ปีอยู่ ~4.98%",
+        "inflationNote": "CPI ต.ค.: headline +0.4% m/m, core +0.3% m/m (คาด 0.2%) core PCE ก.ย. 3.1% y/y ตัวถัดไปคือ PCE ต.ค. วันที่ 25 พ.ย. แล้วตามด้วย CPI พ.ย. วันที่ 10 ธ.ค. (วันถัดจาก FOMC)",
+        "sectorImpact": "หุ้นชิป AI เป็นศูนย์กลางของการเทขาย 5 พ.ย. (SOX -9–12% จากความกังวลเรื่องกฎคุม data center หลังเลือกตั้งกลางเทอม) และเป็นหุ้น long-duration ที่อ่อนไหวต่อดอกเบี้ย ถ้า ธ.ค. ขึ้น 50bp จะยิ่งถูกลด multiple",
+        "summary": "MEDIUM — ตลาดรับการขึ้นดอกเบี้ยแล้ว งบ 17 พ.ย. มาก่อน PCE 25 พ.ย. และ FOMC 9 ธ.ค. จึงเป็นการทดสอบพื้นฐานที่ชัดก่อนด่าน macro ถัดไป"
+      },
+      "entryStrategy": {
+        "verdict": "BUY (ทยอยเข้า) — หุ้นตัวชี้วัด AI ที่ 52-week low ก่อนงบที่มีวันแน่นอน upside ~+90% ไปหา consensus แรงกดคือธรรมาภิบาลและการเมือง ไม่ใช่ดีมานด์ median ถึงวัน catalyst ของ core -6.9% (n=54; 74% ของ pick ติดลบในวัน event) จึงเข้าที่ Entry 2 เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ core -6.9% (n=54)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "หลุด 52-week low $164 ก่อนงบ — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "โซนเทขายหมดแรง — เฉพาะถ้าการสอบสวนบอร์ดลุกลาม",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — beat-and-raise ฟื้นไปแถว ~$205 ก่อนเทขาย กรอบ 4–8 สัปดาห์"
+        },
+        "tp2": {
+          "note": "Bull — เป้ายืนยัน capex AI ปี 2027 ~$245 (โซน 52-week high)"
+        },
+        "tp3": {
+          "note": "Moon — ผลสอบจบสะอาด + capex เกินคาด ~$300 (เป้า GS/Wells) 6–12 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-15% — กว้างกว่า medianMAE ของ core (-14%)",
+          "hardNote": "-26% — การสอบสวนลุกลามหรือลดเป้า = thesis พัง",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "R/R ดี ✅ (≥2:1 เกณฑ์ core)"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "งบ Q3 ปีงบ 2027",
+          "note": "เป้า $108B ±2%; GM 74%"
+        }
+      ]
+    }
+  }
+}
