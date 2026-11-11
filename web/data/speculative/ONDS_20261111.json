@@ -1,0 +1,290 @@
+{
+  "ticker": "ONDS",
+  "companyName": "Ondas Holdings Inc.",
+  "companyDescription": "Multi-domain autonomous defense platform · drone/counter-UAS systems + Sentrycs subsidiary · Q2 orders above $150M, FY26 revenue guide raised to $390M+",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-11T11:00:00.000Z",
+  "price": 5.57,
+  "priceChange": -6.7,
+  "priceNote": "Live $5.57 on Nov 11, 2026, -0.8% vs the Nov 4 report ($5.615). Base is ~+46%, essentially unchanged. Q3 results are tomorrow, Nov 12 at 8:30 AM ET (confirmed by company release).",
+  "marketCap": "~$3.2B",
+  "sector": "Industrials / Defense Drones & Counter-UAS",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 62,
+  "summary": "Refresh (no thesis change): the binary is tomorrow. Q3 2026 results come Nov 12 at 8:30 AM ET (company-confirmed). Company guidance is $140–155M revenue (from $83.8M in Q2); consensus is ~$147–148M at EPS ~-$0.13 to -$0.14. Management already flagged 2H gross-margin pressure from mix and the acquired businesses’ excess capacity, and Zacks models no beat. The price is flat, so Base stays ~+46%. As noted on Nov 4, consensus upside (~+137%) no longer clears the board’s 200% bar, so this is a compressed carryover. Base bias +72.7pp vs realized 30d P75 +12.2%, so Base is a post-catalyst horizon, not a 30-day call. แนะนำ 1–2% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 40%+.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 2026 earnings",
+      "description": "Confirmed: Nov 12, 8:30 AM ET. Q3 revenue guide $140-155M; FY26 guide $390M+.",
+      "urgencyLabel": "8 DAYS",
+      "dateBadge": "Nov 12, 2026",
+      "catalystDate": "2026-11-12",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🛡️",
+      "name": "Counter-UAS / Sentrycs contract flow",
+      "description": "Event-security and defense counter-drone awards (incl. 2026 World Cup security work).",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Real upside (12-month consensus +137%) no longer clears this board's typical 200%+ bar — this is now a compressed carryover, not a fresh high-conviction moonshot",
+    "Q2 earnings date is still unconfirmed by the company (estimated Aug 11-14) — real date uncertainty adds to the binary-event risk rather than reducing it",
+    "Today's pop is partly a sector-wide drone-defense rally (similar moves seen in RCAT, AVAV, KTOS) — not purely Ondas-specific news, so some of this gain could reverse if the broader sector cools",
+    "Market cap has grown over 1,100% in the trailing period — a re-rate this large raises real questions about how much future growth is already priced in",
+    "10x YoY order growth is an extraordinary comp — sustaining that growth rate gets mechanically harder each subsequent quarter"
+  ],
+  "estimateDates": [
+    {
+      "event": "Q3 2026 earnings",
+      "dateRange": "Nov 12, 2026",
+      "note": "Confirmed: Nov 12, 8:30 AM ET. Q3 revenue guide $140-155M; FY26 guide $390M+.",
+      "est": "n/a",
+      "highlight": "blue"
+    },
+    {
+      "event": "Counter-UAS / Sentrycs contract flow",
+      "dateRange": "Ongoing",
+      "note": "Event-security and defense counter-drone awards (incl. 2026 World Cup security work).",
+      "est": "n/a",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -39.5,
+      "price": 3.37
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 46.14,
+      "price": 8.14
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 131.78,
+      "price": 12.91
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 257.81,
+      "price": 19.93
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus average (Jul 2026, stale)",
+      "target": 20.12,
+      "rating": "Strong Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "The Fed held at 3.75–4.00% on Oct 28. After the hot Oct CPI on Nov 10, CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~89–100%, with ~10% odds of 50bp. The 10-year is ~4.98%.",
+    "inflationNote": "Oct CPI: headline +0.4% m/m, core +0.3% m/m vs 0.2% expected. Sep core PCE 3.1% y/y. Oct PCE (Nov 25) and Nov CPI (Dec 10) are next.",
+    "sectorImpact": "Defense/government-contract revenue is less directly rate-sensitive than pure-growth tech, but Ondas' recent 1,100%+ market-cap re-rate means it's still a high-beta name that would get hit in a broad risk-off move.",
+    "summary": "MEDIUM — a 25bp December hike is priced after the hot CPI. The tails are a 50bp move or a hot Nov 25 PCE, both of which hit small caps first, so the dip entry is preferred."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 5.57,
+        "note": "Current price — starter only. Not preferred: turbo at-catalyst median -13.7% (n=19)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 4.91,
+        "rangeMax": 5.26,
+        "note": "Retest of the $4.95 52-week low — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 4.36,
+        "note": "Deep dip — only if Q3 meets guide",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 8.14,
+      "pct": 46.14,
+      "note": "Base — Q3 meets guide; ~$8.14."
+    },
+    "tp2": {
+      "price": 12.91,
+      "pct": 131.78,
+      "note": "Bull — guide raised; ~$12.91."
+    },
+    "tp3": {
+      "price": 19.93,
+      "pct": 257.81,
+      "note": "Moon — sustained order growth; ~$19.93, near the $20.12 consensus.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 4.18,
+      "tightPct": -24.96,
+      "tightNote": "-25% — wider than the turbo medianMAE (-24.1%); overall figure applies.",
+      "hard": 3.06,
+      "hardPct": -45.06,
+      "hardNote": "-45% — Q3 miss + guide cut.",
+      "riskReward": "5.3 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Asymmetric ✅ — clears the 5:1 turbo target"
+    },
+    "verdict": "SPECULATIVE · ค่าขนม 1.5% max — the binary is tomorrow (Nov 12, pre-market). Don't add into the print; margin pressure is already flagged. Measured turbo at-catalyst median is -13.7% (n=19), so Entry 2 is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Drone-defense names in this cohort move on same-day contract/tailwind headlines with limited sustained pre-event runup — today's pop tracks a broader sector rally (RCAT, AVAV, KTOS all up this week) rather than a single Ondas-specific announcement.",
+    "preRunupTiming": "same-day on sector/contract news, not a multi-week grind",
+    "preRunupPct": "+5% to +15% same-day on sector-wide catalysts",
+    "postWin": {
+      "avgPct": 20,
+      "range": "+10% to +30%",
+      "note": "Ondas' own Q2 2026 order surge (10x YoY to $50.1M) and raised FY26 revenue guide drove sustained momentum; peer AeroVironment's Jun 30 2026 record quarter + Pentagon contract drove a 19-32% pop as the closest sector comparable.",
+      "exampleDate": "Jul 2026 (ONDS) / Jun 2026 (AVAV sector comp)"
+    },
+    "postLose": {
+      "avgPct": -18,
+      "range": "-10% to -25%",
+      "note": "Sector comparable AeroVironment fell ~18% over a month despite a record quarter after guiding to a much larger loss on a lost $1.7B contract and goodwill impairment — shows this sector's downside sensitivity even on otherwise-strong prints.",
+      "exampleDate": "Jun 2026 (AVAV, sector comparable)"
+    },
+    "spotSizing": {
+      "pct": 1.5,
+      "reason": "1.5%. The dated catalyst's type has n<5 (context only), so the weak lane prior governs (hitRate 4.9%, medianExcess +2.0pp, n=41)."
+    },
+    "stopPreCatalyst": {
+      "pct": -24.96,
+      "price": 4.18,
+      "note": "Wider than the turbo overall medianMAE (bucket n<5) (-24.1%). A break below the tight stop before the catalyst means the market expects a Q3 miss."
+    },
+    "stopPostCatalyst": {
+      "pct": -25,
+      "note": "If Q2 results don't confirm the $150M+ order pace or FY26 guidance is walked back, exit — mirrors the sector's guidance-cut drawdown pattern"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "ONDS",
+      "event": "Q2 2026 orders surge 10x YoY to $50.1M, FY26 revenue guide raised to $390M+",
+      "date": "Jul 2026",
+      "movePct": 11.5,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same-company precedent for how the market rewards confirmed order growth — directly relevant to the upcoming (unconfirmed-date) earnings print."
+    },
+    {
+      "ticker": "AVAV",
+      "event": "FY26 guidance cut to a much larger loss after a $1.7B contract termination + goodwill impairment, despite a record quarter",
+      "date": "Jun 2026",
+      "movePct": -18,
+      "days": 30,
+      "outcome": "bad",
+      "note": "Sector risk case — shows even a strong headline print doesn't protect against a lost-contract shock in this space."
+    }
+  ],
+  "sources": [
+    "https://ir.ondas.com/news/detail/336/ondas-to-report-third-quarter-2026-financial-results-on-november-12-2026-at-8-30-am-et",
+    "https://www.itiger.com/news/1122769051",
+    "https://www.ondas.com/post/ondas-to-report-third-quarter-2026-financial-results-on-november-12-2026-at-8-30-am-et",
+    "https://ir.ondas.com/ir-calendar",
+    "https://www.top1markets.com/news/ondas-onds-stock-defense-tech-catalysts-2026",
+    "https://ts2.tech/en/ondas-stock-just-got-a-navy-catalyst-why-onds-traders-are-watching-the-next-move/",
+    "https://stockanalysis.com/stocks/onds/",
+    "https://www.benzinga.com/trading-ideas/movers/26/06/53116227/3-under-the-radar-defense-tech-stocks-small-caps-with-real-pentagon-contracts",
+    "https://www.cnbc.com/2026/10/28/fed-interest-rate-decision-october-2026.html",
+    "https://www.cnbc.com/2026/10/29/pce-inflation-report-september-2026-.html",
+    "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+    "https://www.investing.com/news/economy-news/fed-rate-hike-odds-in-december-at-88-after-hot-cpi-cme-fedwatch-5017585"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "รีเฟรช (thesis ไม่เปลี่ยน): binary คือพรุ่งนี้ งบ Q3 2026 วันที่ 12 พ.ย. 8:30 น. ET (บริษัทยืนยัน) บริษัทให้เป้ารายได้ $140–155M (จาก $83.8M ใน Q2) consensus ~$147–148M EPS ~-$0.13 ถึง -$0.14 ผู้บริหารเตือนแล้วว่า gross margin ครึ่งหลังจะถูกกดจาก mix และกำลังการผลิตส่วนเกินของธุรกิจที่ซื้อมา และ Zacks ไม่คาดว่าจะ beat ราคาทรงตัว Base จึงยัง ~+46% ตามที่ระบุไว้เมื่อ 4 พ.ย. upside จาก consensus (~+137%) ไม่ผ่านเกณฑ์ 200% ของกระดานแล้ว เป็น carryover ที่ upside ถูกบีบ bias ของ Base +72.7pp เทียบ P75 30 วันจริง +12.2% จึงเป็นกรอบเวลาหลัง catalyst ไม่ใช่คาด 30 วัน แนะนำ 1–2% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 40%+",
+      "priceNote": "ราคาสด $5.57 11 พ.ย. 2026 -0.8% จากรายงาน 4 พ.ย. ($5.615) Base ~+46% แทบไม่เปลี่ยน งบ Q3 พรุ่งนี้ 12 พ.ย. 8:30 น. ET (บริษัทยืนยันแล้ว)",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "งบ Q3 2026",
+          "description": "ยืนยัน 12 พ.ย. 8:30 น. ET guide รายได้ Q3 $140-155M guide ปี 26 $390M+"
+        },
+        {
+          "name": "สัญญา counter-UAS / Sentrycs",
+          "description": "สัญญาต่อต้านโดรนด้านความปลอดภัยงานใหญ่และกลาโหม (รวมงาน World Cup 2026)"
+        }
+      ],
+      "risks": [
+        "Upside จริง (เป้า 12 เดือน +137%) ไม่ถึงเกณฑ์ 200%+ ปกติของบอร์ดนี้แล้ว — ตอนนี้เป็น carryover ที่บีบแคบ ไม่ใช่ moonshot ความเชื่อมั่นสูงใหม่",
+        "วันที่ผลประกอบการ Q2 ยังไม่ยืนยันจากบริษัท (คาด 11-14 ส.ค.) — ความไม่แน่นอนด้านวันที่จริงเพิ่มความเสี่ยง binary event แทนที่จะลดลง",
+        "การขึ้นวันนี้ส่วนหนึ่งมาจากการรีบาวด์ของกลุ่มโดรนกลาโหมทั้งกลุ่ม (คล้ายกับ RCAT, AVAV, KTOS) — ไม่ใช่ข่าวเฉพาะ Ondas ล้วน ๆ กำไรบางส่วนอาจกลับตัวถ้ากลุ่มเย็นลง",
+        "มูลค่าตลาดโตกว่า 1,100% ในช่วงที่ผ่านมา — การ re-rate ขนาดนี้ทำให้เกิดคำถามจริงว่าการเติบโตในอนาคต price in ไปแล้วมากแค่ไหน",
+        "การเติบโตยอดสั่งซื้อ 10 เท่า YoY เป็นฐานเปรียบเทียบที่สุดโต่ง — การรักษาอัตราการเติบโตนี้ยากขึ้นเชิงกลไกทุกไตรมาสถัดไป"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.75–4.00% เมื่อ 28 ต.ค. หลัง CPI ต.ค. ออกมาร้อน (10 พ.ย.) CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ราว 89–100% และโอกาสขึ้น 50bp ~10% ส่วน yield 10 ปีอยู่ ~4.98%",
+        "inflationNote": "CPI ต.ค.: headline +0.4% m/m, core +0.3% m/m (คาด 0.2%) core PCE ก.ย. 3.1% y/y ตัวถัดไปคือ PCE ต.ค. (25 พ.ย.) และ CPI พ.ย. (10 ธ.ค.)",
+        "sectorImpact": "รายได้จากสัญญารัฐบาล/กลาโหม sensitive ต่อดอกเบี้ยน้อยกว่าหุ้น growth ล้วน แต่การ re-rate 1,100%+ ล่าสุดทำให้ Ondas ยังเป็นหุ้น high-beta ที่จะโดนหนักถ้า risk-off มาแรง",
+        "summary": "MEDIUM — ตลาดรับการขึ้นดอกเบี้ย 25bp ใน ธ.ค. แล้วหลัง CPI ร้อน ความเสี่ยงหางคือขึ้น 50bp หรือ PCE 25 พ.ย. ร้อน ซึ่งกระทบหุ้นเล็กก่อน จึงควรรอเข้าตอนย่อ"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · ค่าขนม สูงสุด 1.5% — binary คือพรุ่งนี้ (12 พ.ย. ก่อนเปิดตลาด) ไม่เพิ่มก่อนงบ บริษัทเตือนเรื่อง margin ไว้แล้ว median ถึงวัน catalyst ของ turbo -13.7% (n=19) จึงเข้าที่ Entry 2 เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ turbo -13.7% (n=19)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "ทดสอบ 52-week low $4.95 — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ร่วงหนัก — เฉพาะเมื่อ Q3 ถึง guide",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — Q3 ถึง guide ~$8.14"
+        },
+        "tp2": {
+          "note": "Bull — ปรับ guide ขึ้น ~$12.91"
+        },
+        "tp3": {
+          "note": "Moon — ออร์เดอร์โตต่อเนื่อง ~$19.93 ใกล้ consensus $20.12"
+        },
+        "stopLoss": {
+          "tightNote": "-25% — กว้างกว่า medianMAE ของ turbo (-24.1%)",
+          "hardNote": "-45% — Q3 พลาด + ตัด guide",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "อสมมาตร ✅ — ผ่านเป้า 5:1 ของ turbo"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "งบ Q3 2026",
+          "note": "ยืนยัน 12 พ.ย. 8:30 น. ET guide รายได้ Q3 $140-155M guide ปี 26 $390M+"
+        },
+        {
+          "event": "สัญญา counter-UAS / Sentrycs",
+          "note": "สัญญาต่อต้านโดรนด้านความปลอดภัยงานใหญ่และกลาโหม (รวมงาน World Cup 2026)"
+        }
+      ]
+    }
+  }
+}

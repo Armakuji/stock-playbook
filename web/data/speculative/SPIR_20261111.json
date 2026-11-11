@@ -1,0 +1,278 @@
+{
+  "ticker": "SPIR",
+  "companyName": "Spire Global, Inc.",
+  "companyDescription": "Space data & analytics · 100+ nanosatellite constellation for weather (GNSS-RO), maritime/aviation tracking, and RF geolocation · $65M+ in fresh NOAA/EUMETSAT bookings since August · Diehl Defence missile-tracking MOU still the moonshot lever",
+  "exchange": "NYSE",
+  "generatedAt": "2026-11-11T11:00:00.000Z",
+  "price": 9.35,
+  "priceChange": -1.16,
+  "priceNote": "Cached live $9.35 is the Nov 10 regular-session close. After the Q3 miss, shares traded ~$7.92 after hours (-15%), so expect a gap down today. Entry zones are set off the after-hours level.",
+  "marketCap": "~$290M",
+  "sector": "Technology / Space Data & Analytics",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 0,
+  "summary": "RESOLVED (Q3, Nov 10) — a revenue miss. Revenue was $18.0M (+42% y/y, +77% ex-maritime) vs ~$20.5M consensus. The FY guide of $75–80M is below the $81.5M Street number and implies a back-end-loaded Q4 of $23–28M. Shares fell ~15% after hours to ~$7.92. The positives are real: non-GAAP gross margin recovered to 49% (from the Q2 34% dip), op cash burn fell to $5.0M, cash is $78M with no debt, and RPO is $175M. But the dated catalyst is gone and the Diehl missile-tracking MOU is undated. Base is cut from +45% to +30% and Moon from +250% to +200%, and the label moves to ค่าขนม. Base bias +72.7pp vs realized 30d P75 +12.2%, so Base is a post-catalyst horizon, not a 30-day call. แนะนำ 1–2% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 35–50%.",
+  "catalysts": [
+    {
+      "icon": "❌",
+      "name": "Q3 2026 results — RESOLVED (Nov 10, miss)",
+      "description": "Revenue $18.0M vs ~$20.5M est.; FY guide $75–80M below the Street. GM 49%, burn $5M, $78M cash, $175M RPO. ~-15% after hours.",
+      "urgencyLabel": "DONE",
+      "dateBadge": "Nov 10, 2026",
+      "catalystDate": "2026-11-10",
+      "badgeColor": "red",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "🛰️",
+      "name": "Q4 delivery of the $23–28M implied quarter / Diehl Defence MOU",
+      "description": "The back-end-loaded Q4 and any conversion of the Diehl missile-tracking MOU into a contract are the next tests; neither is dated.",
+      "urgencyLabel": "UNDATED",
+      "dateBadge": "~Mar 2027",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Gross margin slipped to 34% in Q2 on the WildFireSat contract cancellation; Q3 needs to show recovery.",
+    "partnership_win is the measured Tier-2 LAGGARD in turbo feedback (medianExcessVsBenchPct -3.8pp vs +2.0pp overall, n=16; 3/16 windows had SPY down >2%), and it is independently the laggard in the core lane too (-1.6 vs +1.4, n=12). Contract headlines have not reliably converted into sustained re-rates lane-wide.",
+    "The Diehl Defence relationship is still a non-binding MOU with no confirmed progress. The moonshot lever is undated.",
+    "TTM revenue is down ~33% (post-maritime divestiture), and the business depends on lumpy government renewals and appropriations.",
+    "52-week range $6.60-$25.93: this stock has already round-tripped a huge move once this cycle."
+  ],
+  "estimateDates": [
+    {
+      "event": "Q4 / FY2026 results",
+      "dateRange": "~Mar 2027",
+      "note": "Implied Q4 rev $23–28M",
+      "est": "FY $75–80M",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -34.97,
+      "price": 6.08
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 30.05,
+      "price": 12.16
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 89.95,
+      "price": 17.76
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 200,
+      "price": 28.05
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus (4 analysts, stockanalysis.com)",
+      "target": 20.88,
+      "rating": "Strong Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "The Fed held at 3.75–4.00% on Oct 28. After the hot Oct CPI on Nov 10, CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~89–100%, with ~10% odds of 50bp. The 10-year is ~4.98%.",
+    "inflationNote": "Oct CPI: headline +0.4% m/m, core +0.3% m/m vs 0.2% expected. Sep core PCE 3.1% y/y. Oct PCE (Nov 25) and Nov CPI (Dec 10) are next.",
+    "sectorImpact": "Government-contract space-data company. Rates affect the small-cap multiple more than the business, which depends on appropriations.",
+    "summary": "MEDIUM — a 25bp December hike is priced after the hot CPI. The tails are a 50bp move or a hot Nov 25 PCE, both of which hit small caps first, so the dip entry is preferred."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 9.35,
+        "note": "Current price — starter only. Not preferred: turbo at-catalyst median -13.7% (n=19)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 7.6,
+        "rangeMax": 8,
+        "note": "After-hours gap zone (~$7.92) — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 7,
+        "note": "Deep dip below the AH level",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 12.16,
+      "pct": 30.05,
+      "note": "Base — Q3 shows bookings conversion and margin recovery; re-rates to ~$13. Horizon 3-6 months."
+    },
+    "tp2": {
+      "price": 17.76,
+      "pct": 89.95,
+      "note": "Bull — margin back toward ~40%+ with new defense data awards; ~$18.90, near the $20.88 consensus."
+    },
+    "tp3": {
+      "price": 28.05,
+      "pct": 200,
+      "note": "Moon — Diehl MOU converts to a funded missile-tracking program; ~$31.50. 12-24 month thesis.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 7.01,
+      "tightPct": -25.03,
+      "tightNote": "-25% — wider than the turbo medianMAE (-24.1%); overall figure applies.",
+      "hard": 5.14,
+      "hardPct": -45.03,
+      "hardNote": "-45% — thesis-break territory.",
+      "riskReward": "3.6 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "⚠️ Below the 5:1 turbo target (3.6:1) — size at the low end"
+    },
+    "verdict": "SPECULATIVE · ค่าขนม 1.5% max — the binary resolved as a miss. Wait for the gap-down to settle near ~$7.9 before any starter; the margin and burn repair is real, but the dated catalyst is gone. Measured turbo at-catalyst median is -13.7% (n=19), so Entry 2 is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "Falling, not running: SPIR is ~21% below the Sep 29 report price despite the NOAA award, consistent with the partnership_win lane pattern of contract headlines not sticking.",
+    "preRunupTiming": "N/A",
+    "preRunupPct": "-21% since Sep 29",
+    "postWin": {
+      "avgPct": 220,
+      "range": "+100% to +300%+",
+      "note": "Redwire (RDW) rallied roughly 220% on Golden Dome missile-defense contract momentum (SHIELD IDIQ award, Feb 2026) — the closest same-theme comparable for what a Diehl Defence contract conversion could do to SPIR. Per this run's tier2 feedback, partnership_win is a lane-wide laggard (-3.8pp vs +2.0pp overall, n=16), so this needs to be a real conversion, not just incremental bookings, to move the needle.",
+      "exampleDate": "Feb 2026 (RDW)"
+    },
+    "postLose": {
+      "avgPct": -18,
+      "range": "-15% to -25%",
+      "note": "SPIR's own Q2 2026 print is now the most relevant precedent — a genuinely strong bookings quarter ($65M+ in new contracts) still produced a -17.8% stock decline over six weeks on the WildFireSat margin miss, showing this stock can fall hard even on net-positive news.",
+      "exampleDate": "Aug-Sep 2026 (SPIR's own post-Q2 drift)"
+    },
+    "spotSizing": {
+      "pct": 1.5,
+      "reason": "1.5%. The Q3 binary resolved as a revenue miss with a guide below the Street. partnership_win is the cross-lane Tier-2 laggard (turbo -3.8pp vs +2.0, n=16)."
+    },
+    "stopPreCatalyst": {
+      "pct": -25.03,
+      "price": 7.01,
+      "note": "Wider than the partnership_win medianMAE (-25.9%, n=16). A break of the 52-week low before Q3 means the bookings story isn't being believed."
+    },
+    "stopPostCatalyst": {
+      "pct": -30,
+      "note": "If Q3 shows margin still falling or bookings not converting, exit — the laggard pattern says not to wait for the MOU."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "RDW",
+      "event": "Golden Dome missile-defense SHIELD IDIQ contract award (Missile Defense Agency)",
+      "date": "Feb 2026",
+      "movePct": 220,
+      "days": 90,
+      "outcome": "good",
+      "note": "Closest same-theme comparable — directly relevant to what a Diehl Defence MOU conversion could do for SPIR."
+    },
+    {
+      "ticker": "SPIR",
+      "event": "$65M+ in new NOAA/EUMETSAT contract bookings over six weeks (Aug-Sep 2026), stock declines anyway on WildFireSat margin miss",
+      "date": "Aug-Sep 2026",
+      "movePct": -17.8,
+      "days": 42,
+      "outcome": "bad",
+      "note": "Same-company precedent for how a strong bookings quarter can still be overshadowed by a single margin-negative item — directly relevant risk context for weighting near-term contract news versus margin trajectory."
+    }
+  ],
+  "sources": [
+    "https://www.gurufocus.com/news/9189798/spire-global-inc-reports-q3-2026-revenue-of-180-million-missing-estimates-with-net-loss-of-203-million",
+    "https://www.chartmill.com/news/SPIR/Chartmill-58498-Spire-Global-NYSESPIR-Slides-After-Q3-Revenue-Miss-Offsets-Improving-Margins",
+    "https://www.fool.com/earnings/call-transcripts/2026/11/10/spire-global-spir-q3-2026-earnings-call-transcript/",
+    "https://stockanalysis.com/stocks/spir/",
+    "https://www.barchart.com/story/news/3789760/spire-global-s-post-maritime-identity-finally-gets-its-first-real-test",
+    "https://www.sec.gov/Archives/edgar/data/0001816017/000119312526346835/spir-ex99_1.htm",
+    "https://www.stocktitan.net/news/SPIR/",
+    "https://www.chase.com/personal/investments/learning-and-insights/article/will-the-federal-reserve-hike-rates-at-october-2026-fomc-meeting",
+    "https://defirate.com/prediction-markets/fed-decision-odds/",
+    "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+    "https://www.investing.com/news/economy-news/fed-rate-hike-odds-in-december-at-88-after-hot-cpi-cme-fedwatch-5017585"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "ผ่าน catalyst แล้ว (Q3, 10 พ.ย.) — รายได้พลาดเป้า $18.0M (+42% y/y, +77% ไม่รวม maritime) เทียบคาด ~$20.5M เป้าทั้งปี $75–80M ต่ำกว่าที่ตลาดคาด $81.5M และหมายถึง Q4 ต้องได้ $23–28M หุ้นลง ~15% ใน after hours เหลือ ~$7.92 ข้อดีมีจริง: gross margin non-GAAP ฟื้นเป็น 49% (จาก 34% ใน Q2) การเผาเงินจากการดำเนินงานลดเหลือ $5.0M เงินสด $78M ไม่มีหนี้ และ RPO $175M แต่ catalyst ที่มีวันหมดแล้ว และ MOU ติดตามขีปนาวุธกับ Diehl ยังไม่มีวัน ลด Base จาก +45% เป็น +30% และ Moon จาก +250% เป็น +200% เปลี่ยนเป็น ค่าขนม bias ของ Base +72.7pp เทียบ P75 30 วันจริง +12.2% จึงเป็นกรอบเวลาหลัง catalyst ไม่ใช่คาด 30 วัน แนะนำ 1–2% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 35–50%",
+      "priceNote": "ราคา live ที่แคชไว้ $9.35 เป็นราคาปิดช่วงปกติ 10 พ.ย. หลังงบ Q3 พลาดเป้า หุ้นซื้อขาย ~$7.92 ใน after hours (-15%) คาดว่าวันนี้จะ gap ลง โซนเข้าตั้งจากระดับ after hours",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "งบ Q3 2026 — ผ่านแล้ว (10 พ.ย. พลาดเป้า)",
+          "description": "รายได้ $18.0M เทียบคาด ~$20.5M เป้าทั้งปี $75–80M ต่ำกว่าตลาดคาด GM 49% เผาเงิน $5M เงินสด $78M RPO $175M ลด ~-15% ใน after hours"
+        },
+        {
+          "name": "ทำ Q4 ให้ได้ $23–28M / MOU กับ Diehl Defence",
+          "description": "Q4 ที่กระจุกช่วงท้ายปี และการเปลี่ยน MOU ติดตามขีปนาวุธกับ Diehl เป็นสัญญา คือบททดสอบถัดไป ทั้งคู่ไม่มีวัน"
+        }
+      ],
+      "risks": [
+        "Gross margin ลดเหลือ 34% ใน Q2 จากการยกเลิกสัญญา WildFireSat — Q3 ต้องแสดงการฟื้นตัว",
+        "partnership_win เป็น Tier-2 LAGGARD ที่วัดได้ใน turbo feedback (medianExcessVsBenchPct -3.8pp เทียบภาพรวม +2.0pp, n=16; 3/16 ช่วง SPY ลง >2%) และเป็น laggard ใน core lane ด้วยแยกกัน (-1.6 vs +1.4, n=12) — ข่าวสัญญาไม่ได้แปลงเป็นการ re-rate ที่ยั่งยืนอย่างสม่ำเสมอทั้ง lane",
+        "ความสัมพันธ์กับ Diehl Defence ยังเป็น MOU ไม่ผูกมัด ไม่มีความคืบหน้ายืนยัน คันโยก moonshot ไม่มีวันที่",
+        "รายได้ TTM ลด ~33% (หลังขายธุรกิจ maritime) และธุรกิจพึ่งการต่อสัญญารัฐที่เป็นก้อน ๆ และงบประมาณ",
+        "ช่วง 52 สัปดาห์ $6.60-$25.93 — หุ้นวิ่งขึ้นและคืนกำไรก้อนใหญ่ไปแล้วรอบหนึ่ง"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.75–4.00% เมื่อ 28 ต.ค. หลัง CPI ต.ค. ออกมาร้อน (10 พ.ย.) CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ราว 89–100% และโอกาสขึ้น 50bp ~10% ส่วน yield 10 ปีอยู่ ~4.98%",
+        "inflationNote": "CPI ต.ค.: headline +0.4% m/m, core +0.3% m/m (คาด 0.2%) core PCE ก.ย. 3.1% y/y ตัวถัดไปคือ PCE ต.ค. (25 พ.ย.) และ CPI พ.ย. (10 ธ.ค.)",
+        "sectorImpact": "บริษัทข้อมูลอวกาศที่พึ่งสัญญารัฐ ดอกเบี้ยกระทบ multiple ของ small cap มากกว่าตัวธุรกิจ ซึ่งขึ้นกับงบประมาณรัฐ",
+        "summary": "MEDIUM — ตลาดรับการขึ้นดอกเบี้ย 25bp ใน ธ.ค. แล้วหลัง CPI ร้อน ความเสี่ยงหางคือขึ้น 50bp หรือ PCE 25 พ.ย. ร้อน ซึ่งกระทบหุ้นเล็กก่อน จึงควรรอเข้าตอนย่อ"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · ค่าขนม สูงสุด 1.5% — binary ผ่านไปแบบพลาดเป้า รอให้ gap ลงนิ่งแถว ~$7.9 ก่อนเข้าไม้เริ่ม margin และการเผาเงินดีขึ้นจริง แต่ catalyst ที่มีวันหมดแล้ว median ถึงวัน catalyst ของ turbo -13.7% (n=19) จึงเข้าที่ Entry 2 เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ turbo -13.7% (n=19)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "โซน gap หลัง after hours (~$7.92) — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ร่วงหนักต่ำกว่าระดับ after hours",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — Q3 แสดงการแปลง bookings และ margin ฟื้น re-rate ไป ~$13 กรอบ 3-6 เดือน"
+        },
+        "tp2": {
+          "note": "Bull — margin กลับไป ~40%+ พร้อมสัญญาข้อมูลกลาโหมใหม่ ~$18.90 ใกล้เป้าเฉลี่ย $20.88"
+        },
+        "tp3": {
+          "note": "Moon — MOU กับ Diehl แปลงเป็นโครงการติดตามขีปนาวุธที่มีงบ ~$31.50 thesis 12-24 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-25% — กว้างกว่า medianMAE ของ turbo (-24.1%)",
+          "hardNote": "-45% — โซน thesis พัง",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "⚠️ ต่ำกว่าเป้า 5:1 ของ turbo (3.6:1) — ถือไม้เล็ก"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "งบ Q4 / ทั้งปี 2026",
+          "note": "Q4 ต้องได้ $23–28M"
+        }
+      ]
+    }
+  }
+}

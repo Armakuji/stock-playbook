@@ -1,0 +1,308 @@
+{
+  "ticker": "IVVD",
+  "companyName": "Invivyd, Inc.",
+  "companyDescription": "Antibody therapeutics · VYD2311 — next-gen long-acting monoclonal antibody for COVID-19 prevention in immunocompromised patients; pivotal Phase 3 readout imminent",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-11T11:00:00.000Z",
+  "price": 0.57,
+  "priceChange": -3.66,
+  "priceNote": "Live $0.57 on Nov 11, 2026, -6.8% vs the Nov 4 report ($0.6118). Base is held at +50% from the lower price (target scaled down, not up) because no news justifies more upside. The DECLARATION topline remains overdue and undated.",
+  "marketCap": "~$168M",
+  "sector": "Healthcare / Biotechnology — Infectious Disease / Antibody Therapeutics",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 0,
+  "summary": "Refresh: the DECLARATION safety/immunogenicity topline for VYD2311 (guided \"October\") is still unreleased and undated. The only November item is routine inducement grants (Nov 1); the October news was VMS063 measles data and the FLINTLOCK long-COVID start. The stock slid another -6.8%. Base is held at +50% from $0.57 (targets scaled down, not up), because a falling price with no news is not new upside. The ⚠️ SURVIVAL flag stands (~11 months of runway, ATM active, going-concern language). Base bias +72.7pp vs realized 30d P75 +12.2%, so Base is a post-catalyst horizon, not a 30-day call. แนะนำ 1–2% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 60–80%.",
+  "catalysts": [
+    {
+      "icon": "🧪",
+      "name": "DECLARATION pivotal topline — safety + immunogenicity (VYD2311)",
+      "description": "Placebo-controlled Phase 3 safety/immunogenicity readout that gates the Accelerated Approval BLA. Guided to October 2026; not released or re-dated as of Nov 4.",
+      "urgencyLabel": "OVERDUE",
+      "dateBadge": "Overdue (guided Oct 2026)",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📄",
+      "name": "VYD2311 BLA submission (Accelerated Approval)",
+      "description": "Filing planned on LIBERTY + DECLARATION data; efficacy to be unblinded after accelerated approval, subject to event accrual.",
+      "urgencyLabel": "AFTER DATA",
+      "dateBadge": "After DECLARATION",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "⏳",
+      "name": "PEMGARDA EUA sunset",
+      "description": "PEMGARDA's emergency authorization ends unless a full approval lands first — the revenue cliff VYD2311 must beat.",
+      "urgencyLabel": "~8 MONTHS",
+      "dateBadge": "Jun 29, 2027",
+      "catalystDate": "2027-06-29",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "⚠️ SURVIVAL: $160.1M cash at Jun 30, 2026 against $85M of H1 operating cash use (~11 months of runway, under 12), $55M still available on the ATM, and going-concern language flagged in Q2 coverage. A raise around the BLA is likely regardless of outcome.",
+    "The DECLARATION readout is overdue and un-dated. Silence past a guided window often precedes a delay, a reframed endpoint, or a financing.",
+    "Revenue cliff: PEMGARDA is the only revenue line and its EUA terminates Jun 29, 2027.",
+    "Accelerated Approval on immunogenicity with efficacy still blinded is a novel, contestable path — FDA could require efficacy first.",
+    "Sub-$1 share price: Nasdaq continued-listing notice / reverse split risk."
+  ],
+  "estimateDates": [
+    {
+      "event": "DECLARATION topline",
+      "dateRange": "Oct 2026",
+      "note": "Safety/immunogenicity → Accelerated Approval BLA",
+      "est": "binary",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -60,
+      "price": 0.228
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 50,
+      "price": 0.855
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 150,
+      "price": 1.425
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 400,
+      "price": 2.85
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus (3 analysts, stockanalysis.com)",
+      "target": 10,
+      "rating": "Strong Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "The Fed held at 3.75–4.00% on Oct 28. After the hot Oct CPI on Nov 10, CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~89–100%, with ~10% odds of 50bp. The 10-year is ~4.98%.",
+    "inflationNote": "Oct CPI: headline +0.4% m/m, core +0.3% m/m vs 0.2% expected. Sep core PCE 3.1% y/y. Oct PCE (Nov 25) and Nov CPI (Dec 10) are next.",
+    "sectorImpact": "Single-product antibody company; outcome is regulatory and financing-driven. Rates matter through small-cap biotech risk appetite and the cost of the next raise.",
+    "summary": "MEDIUM — a 25bp December hike is priced after the hot CPI. The tails are a 50bp move or a hot Nov 25 PCE, both of which hit small caps first, so the dip entry is preferred."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 0.57,
+        "note": "Current price — starter only. Not preferred: turbo at-catalyst median -13.7% (n=19)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 0.494,
+        "rangeMax": 0.531,
+        "note": "Retest of the $0.53 52-week low — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 0.429,
+        "note": "Deep dip — only if DECLARATION is re-dated",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 0.855,
+      "pct": 50,
+      "note": "Base — clean DECLARATION + BLA filing; ~$0.92 within ~1-2 months of the readout."
+    },
+    "tp2": {
+      "price": 1.425,
+      "pct": 150,
+      "note": "Bull — BLA accepted with priority review; ~$1.53, back toward the Sep levels."
+    },
+    "tp3": {
+      "price": 2.85,
+      "pct": 400,
+      "note": "Moon — Accelerated Approval before the EUA sunset; ~$3.06, the 52-week high. 6-12 month thesis.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 0.428,
+      "tightPct": -24.91,
+      "tightNote": "-25% — wider than the turbo medianMAE (-24.1%); overall figure applies.",
+      "hard": 0.223,
+      "hardPct": -60.88,
+      "hardNote": "-60% — failed readout / financing at the lows.",
+      "riskReward": "6.0 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Asymmetric ✅ — clears the 5:1 turbo target"
+    },
+    "verdict": "SPECULATIVE · ค่าขนม 1.5% max — overdue, undated readout plus a survival flag. Hold the starter, don't add until DECLARATION is dated. Measured turbo at-catalyst median is -13.7% (n=19), so Entry 2 is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "phase3_readout",
+    "preRunup": "No run-up: IVVD fell ~37% since the Sep 29 report and sold off even on a positive LIBERTY readout. The market is pricing financing and EUA-cliff risk, not the trial.",
+    "preRunupTiming": "None observed into the October readout",
+    "preRunupPct": "-37% since Sep 29",
+    "postWin": {
+      "avgPct": 175,
+      "range": "+166% to +300%",
+      "note": "Kodiak Sciences (KOD) jumped ~166-180% on its Sep 28, 2026 Phase 3 DAYBREAK topline win in wet AMD — a small-cap biotech binary Phase 3 win just weeks before IVVD's own readout, direct evidence 150%+ single-day moves still happen in this regime. Capricor's own +300% Dec 2025 Phase 3 win is a further (cross-sector) tail-upside reference, though IVVD's Q2 earnings-miss overhang argues for a more moderate outcome than either.",
+      "exampleDate": "Sep 2026"
+    },
+    "postLose": {
+      "avgPct": -71,
+      "range": "-55% to -71%",
+      "note": "EyePoint Pharmaceuticals (EYPT) fell 71% in one day on Aug 17, 2026 when its Phase 3 LUGANO trial missed its primary endpoint in wet AMD — a small-cap biotech binary Phase 3 miss just one month before IVVD's own DECLARATION readout, the direct downside precedent for this exact type of imminent single-catalyst risk.",
+      "exampleDate": "Aug 2026"
+    },
+    "spotSizing": {
+      "pct": 1.5,
+      "reason": "1.5%. ⚠️ SURVIVAL flag (runway under 12 months plus an active ATM) and an overdue, undated binary keep it below the turbo floor."
+    },
+    "stopPreCatalyst": {
+      "pct": -24.91,
+      "price": 0.428,
+      "note": "Wider than the overall turbo medianMAE (-24.1%). A break below ~$0.46 before the readout means the market is pricing a delay plus a raise."
+    },
+    "stopPostCatalyst": {
+      "pct": -40,
+      "note": "If DECLARATION shows a safety signal or weak titers, exit day 1."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "KOD",
+      "event": "Phase 3 DAYBREAK topline win (Zenkuda/tarcocimab, wet AMD)",
+      "date": "Sep 2026",
+      "movePct": 172,
+      "days": 1,
+      "outcome": "good",
+      "note": "Small-cap biotech, positive pivotal Phase 3 topline just weeks before IVVD's own readout — direct evidence binary Phase 3 wins still produce 150%+ single-day moves in this market regime (reported as +166% to +180% depending on the intraday mark)."
+    },
+    {
+      "ticker": "EYPT",
+      "event": "Phase 3 LUGANO primary endpoint miss (Duravyu vs. Eylea, wet AMD)",
+      "date": "Aug 2026",
+      "movePct": -71,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Small-cap biotech binary Phase 3 miss just one month before IVVD's own DECLARATION readout — the direct downside precedent for this exact type of imminent single-catalyst risk."
+    },
+    {
+      "ticker": "CAPR",
+      "event": "Phase 3 HOPE-3 data win (deramiocel, DMD)",
+      "date": "Dec 2025",
+      "movePct": 300,
+      "days": 2,
+      "outcome": "good",
+      "note": "Cross-sector but the same catalyst mechanism (binary Phase 3 topline in a beaten-down small-cap) — shows the tail-upside case for IVVD isn't fabricated, even if IVVD's own commercial overhang argues for a more moderate base case."
+    }
+  ],
+  "sources": [
+    "https://www.stocktitan.net/news/IVVD/invivyd-reports-inducement-grants-under-nasdaq-listing-rule-5635-c-rbm0kqfipn16.html",
+    "https://www.globenewswire.com/news-release/2026/09/29/3370682/0/en/invivyd-announces-positive-topline-results-from-liberty-phase-3-study-demonstrating-vyd2311-safety-and-tolerability-superior-to-mrna-based-covid-19-vaccine-announces-regulatory-sub.html",
+    "https://www.stocktitan.net/news/IVVD/",
+    "https://stockanalysis.com/stocks/ivvd/",
+    "https://www.stocktitan.net/news/IVVD/invivyd-announces-positive-topline-results-from-liberty-phase-3-x3t2v69ivl63.html",
+    "https://www.sec.gov/Archives/edgar/data/0001832038/000119312526377493/ivvd-ex99_1.htm",
+    "https://www.panabee.com/news/invivyd-earnings-q2-2026-report",
+    "https://www.santelog.com/actualites-sante-nasdaq/invivyd-reports-second-quarter-2026-financial-results-and-recent-business",
+    "https://investors.invivyd.com/news-releases/news-release-details/invivyd-reports-second-quarter-2026-financial-results-and-recent",
+    "https://www.globenewswire.com/news-release/2026/06/01/3304208/0/en/invivyd-announces-completion-of-enrollment-in-upsized-declaration-clinical-trial-a-phase-3-pivotal-study-of-vyd2311-an-investigational-antibody-to-prevent-covid.html",
+    "https://www.stocktitan.net/news/IVVD/invivyd-appoints-chairman-marc-w-elia-as-chief-executive-officer-j2bd4mqtttct.html",
+    "https://www.biospace.com/drug-development/eyepoints-phase-3-fail-sends-stock-spiraling-amid-next-gen-amd-race",
+    "https://www.biospace.com/drug-development/kodiak-sciences-stock-soars-166-after-2-assets-match-eylea-in-phase-3-trial",
+    "https://www.aaii.com/investingideas/article/484967-why-invivyd-inc8217s-ivvd-stock-is-down-574",
+    "https://www.wallstreetzen.com/stocks/us/nasdaq/ivvd/stock-forecast",
+    "https://www.cnbc.com/2026/10/28/fed-interest-rate-decision-october-2026.html",
+    "https://www.cnbc.com/2026/10/29/pce-inflation-report-september-2026-.html",
+    "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+    "https://www.investing.com/news/economy-news/fed-rate-hike-odds-in-december-at-88-after-hot-cpi-cme-fedwatch-5017585"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "รีเฟรช: ผล safety/immunogenicity ของ DECLARATION สำหรับ VYD2311 (คาด \"ต.ค.\") ยังไม่ออกและไม่มีวัน ข่าว พ.ย. มีแค่การให้ inducement grants ตามปกติ (1 พ.ย.) ส่วนข่าว ต.ค. คือข้อมูล VMS063 โรคหัด และการเริ่ม FLINTLOCK ใน long COVID หุ้นลงอีก -6.8% คง Base ที่ +50% จาก $0.57 (ลดเป้าตาม ไม่เพิ่ม) เพราะราคาที่ลดลงโดยไม่มีข่าวไม่ใช่ upside ใหม่ ⚠️ SURVIVAL flag ยังอยู่ (runway ~11 เดือน, ATM ใช้งานอยู่, มีข้อความ going-concern) bias ของ Base +72.7pp เทียบ P75 30 วันจริง +12.2% จึงเป็นกรอบเวลาหลัง catalyst ไม่ใช่คาด 30 วัน แนะนำ 1–2% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 60–80%",
+      "priceNote": "ราคาสด $0.57 11 พ.ย. 2026 -6.8% จากรายงาน 4 พ.ย. ($0.6118) คง Base ที่ +50% จากราคาที่ต่ำลง (ลดเป้าตาม ไม่เพิ่ม) เพราะไม่มีข่าวที่รองรับ upside มากขึ้น ผล DECLARATION ยังล่าช้าและไม่มีวัน",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "ผล topline DECLARATION — ความปลอดภัย + ภูมิคุ้มกัน (VYD2311)",
+          "description": "ผล Phase 3 เทียบยาหลอกที่เป็นประตูสู่ BLA แบบ Accelerated Approval คาดใน ต.ค. 2026 แต่ยังไม่ประกาศและไม่มีวันใหม่ ณ 4 พ.ย."
+        },
+        {
+          "name": "ยื่น BLA ของ VYD2311 (Accelerated Approval)",
+          "description": "แผนยื่นด้วยข้อมูล LIBERTY + DECLARATION ผลประสิทธิผลจะเปิดหลังได้ accelerated approval ขึ้นกับจำนวน event"
+        },
+        {
+          "name": "EUA ของ PEMGARDA สิ้นสุด",
+          "description": "การอนุญาตฉุกเฉินของ PEMGARDA สิ้นสุดเว้นแต่ได้อนุมัติเต็มก่อน — หน้าผารายได้ที่ VYD2311 ต้องชนะ"
+        }
+      ],
+      "risks": [
+        "⚠️ SURVIVAL: เงินสด $160.1M ณ 30 มิ.ย. 2026 เทียบการใช้เงิน H1 $85M (runway ~11 เดือน ต่ำกว่า 12) ATM เหลือ $55M และมีภาษา going-concern คาดเพิ่มทุนรอบ BLA ไม่ว่าผลจะออกมาอย่างไร",
+        "ผล DECLARATION เลยกำหนดและไม่มีวันใหม่ การเงียบหลังกรอบเวลาที่ให้ไว้มักนำไปสู่การเลื่อน ปรับ endpoint หรือเพิ่มทุน",
+        "หน้าผารายได้: PEMGARDA เป็นรายได้เดียวและ EUA สิ้นสุด 29 มิ.ย. 2027",
+        "Accelerated Approval จากข้อมูลภูมิคุ้มกันโดยยังปิดผลประสิทธิผลเป็นเส้นทางใหม่ที่โต้แย้งได้ FDA อาจขอข้อมูลประสิทธิผลก่อน",
+        "ราคาต่ำกว่า $1: เสี่ยงถูก Nasdaq เตือนเรื่องคงสถานะ/ต้อง reverse split"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.75–4.00% เมื่อ 28 ต.ค. หลัง CPI ต.ค. ออกมาร้อน (10 พ.ย.) CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ราว 89–100% และโอกาสขึ้น 50bp ~10% ส่วน yield 10 ปีอยู่ ~4.98%",
+        "inflationNote": "CPI ต.ค.: headline +0.4% m/m, core +0.3% m/m (คาด 0.2%) core PCE ก.ย. 3.1% y/y ตัวถัดไปคือ PCE ต.ค. (25 พ.ย.) และ CPI พ.ย. (10 ธ.ค.)",
+        "sectorImpact": "บริษัทแอนติบอดีที่มีผลิตภัณฑ์เดียว ผลขึ้นกับ regulatory และการหาเงิน ดอกเบี้ยกระทบผ่าน risk appetite ไบโอเทคเล็กและต้นทุนการเพิ่มทุนครั้งถัดไป",
+        "summary": "MEDIUM — ตลาดรับการขึ้นดอกเบี้ย 25bp ใน ธ.ค. แล้วหลัง CPI ร้อน ความเสี่ยงหางคือขึ้น 50bp หรือ PCE 25 พ.ย. ร้อน ซึ่งกระทบหุ้นเล็กก่อน จึงควรรอเข้าตอนย่อ"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · ค่าขนม สูงสุด 1.5% — ผลล่าช้าไม่มีวัน + survival flag ถือไม้เริ่มไว้ ไม่เพิ่มจนกว่า DECLARATION จะมีวันแน่นอน median ถึงวัน catalyst ของ turbo -13.7% (n=19) จึงเข้าที่ Entry 2 เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ turbo -13.7% (n=19)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "ทดสอบ 52-week low $0.53 — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ร่วงหนัก — เฉพาะเมื่อ DECLARATION มีวันใหม่",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — DECLARATION สะอาด + ยื่น BLA ~$0.92 ใน ~1-2 เดือนหลังผล"
+        },
+        "tp2": {
+          "note": "Bull — FDA รับ BLA แบบ priority review ~$1.53 กลับไปแถวระดับ ก.ย."
+        },
+        "tp3": {
+          "note": "Moon — ได้ Accelerated Approval ก่อน EUA หมด ~$3.06 (52-week high) thesis 6-12 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-25% — กว้างกว่า medianMAE ของ turbo (-24.1%)",
+          "hardNote": "-60% — ผลล้มเหลว / เพิ่มทุนที่จุดต่ำ",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "อสมมาตร ✅ — ผ่านเป้า 5:1 ของ turbo"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "ผล topline DECLARATION",
+          "note": "ความปลอดภัย/ภูมิคุ้มกัน → BLA แบบ Accelerated Approval"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,315 @@
+{
+  "ticker": "VNDA",
+  "companyName": "Vanda Pharmaceuticals Inc.",
+  "companyDescription": "Commercial CNS/derm pharma · Fanapt, HETLIOZ, newly approved BYSANTI (bipolar I / schizophrenia), and imsidolimab (IL-36R antibody for generalized pustular psoriasis) awaiting a Dec 12 PDUFA — a revenue-generating company trading near 52-week lows",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-11T11:00:00.000Z",
+  "price": 4.08,
+  "priceChange": -0.24,
+  "priceNote": "Live $4.08 on Nov 11, 2026, +7.9% vs the Nov 4 report ($3.78). With the target unchanged, Base is ~+39% (was +50%; 11pp base decay). The imsidolimab PDUFA (Dec 12) is confirmed, and the Bysanti launch is expected in Q4 2026.",
+  "marketCap": "~$245M",
+  "sector": "Healthcare / Specialty Pharma",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 0,
+  "summary": "Refresh: the Dec 12, 2026 PDUFA for imsidolimab (Quimilza) in generalized pustular psoriasis is confirmed. The pivotal data are in NEJM Evidence (Apr 2026), and Bysanti (bipolar I / schizophrenia, approved) is expected to launch in Q4 2026; the MDD Phase 3 is now 1H 2027. The stock is +7.9% since Nov 4, so with the target unchanged the remaining Base is ~+39% (was +50%) and the board was over-ranking it by ~11pp. Heavy losses vs cash remain the overhang. fda_decision is a Tier-2 leader (+9.3pp vs +2.0, n=10). Base bias +72.7pp vs realized 30d P75 +12.2%, so Base is a post-catalyst horizon, not a 30-day call. แนะนำ 2% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 40%+.",
+  "catalysts": [
+    {
+      "icon": "⚕️",
+      "name": "Imsidolimab BLA — PDUFA (GPP)",
+      "description": "FDA target action date for imsidolimab (Quimilza) in generalized pustular psoriasis; BLA accepted Feb 2026. GEMINI-1/2: 53% GPPGA 0/1 at week 4 vs 13% placebo after a single IV dose (NEJM Evidence, Apr 2026). AnaptysBio expects approval in December.",
+      "urgencyLabel": "~5 WEEKS",
+      "dateBadge": "Dec 12, 2026",
+      "catalystDate": "2026-12-12",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "💊",
+      "name": "BYSANTI commercial launch",
+      "description": "Launch of the newly approved bipolar I / schizophrenia drug. Early script trends determine whether the revenue guide and the 'funded through 2027' claim hold.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "H2 2026",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Losses are heavy: H1 2026 net loss of $111.1M (Q2 alone $62.5M) against $170M cash at Jun 30. The 'funded through 2027' guide depends on revenue growth and on expenses falling as promised.",
+    "The VQW-765 social-anxiety Phase 3 failed on Oct 14, 2026, widening the pipeline-credibility discount.",
+    "GPP is ultra-rare and spesolimab (Spevigo) is already approved, so imsidolimab's revenue ceiling is modest. Approval alone is not a 3x catalyst.",
+    "BYSANTI launches into a crowded, heavily genericized antipsychotic market; early scripts may disappoint.",
+    "Vanda has a long history of FDA disputes and litigation, which adds idiosyncratic regulatory risk."
+  ],
+  "estimateDates": [
+    {
+      "event": "Imsidolimab PDUFA (GPP)",
+      "dateRange": "Dec 12, 2026",
+      "note": "Second recent approval decision after BYSANTI; partner AnaptysBio expects approval",
+      "est": "Approval (88% modeled on one tracker)",
+      "highlight": "blue"
+    },
+    {
+      "event": "Q3 2026 results",
+      "dateRange": "~early Nov 2026",
+      "note": "BYSANTI launch metrics and cash burn vs the 'through 2027' runway guide",
+      "est": "Rev ~$60-70M",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -44.36,
+      "price": 2.27
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 38.97,
+      "price": 5.67
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 94.61,
+      "price": 7.94
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 214.95,
+      "price": 12.85
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus (5 analysts, stockanalysis.com)",
+      "target": 11.75,
+      "rating": "Strong Buy"
+    },
+    {
+      "firm": "H.C. Wainwright (Aug 2026)",
+      "target": 20,
+      "rating": "Buy"
+    },
+    {
+      "firm": "B. Riley (Aug 2026)",
+      "target": 12,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Oppenheimer (Sep 2026)",
+      "target": 10,
+      "rating": "Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "The Fed held at 3.75–4.00% on Oct 28. After the hot Oct CPI on Nov 10, CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~89–100%, with ~10% odds of 50bp. The 10-year is ~4.98%.",
+    "inflationNote": "Oct CPI: headline +0.4% m/m, core +0.3% m/m vs 0.2% expected. Sep core PCE 3.1% y/y. Oct PCE (Nov 25) and Nov CPI (Dec 10) are next.",
+    "sectorImpact": "Commercial specialty pharma with real revenue, so it is less rate-sensitive than pre-revenue biotech. Rates still matter through the cost of funding losses until the loss rate narrows.",
+    "summary": "MEDIUM — a 25bp December hike is priced after the hot CPI. The tails are a 50bp move or a hot Nov 25 PCE, both of which hit small caps first, so the dip entry is preferred."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 4.08,
+        "note": "Current price — starter only. Not preferred: turbo at-catalyst median -13.7% (n=19)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 3.67,
+        "rangeMax": 3.89,
+        "note": "Retest of the $3.64 52-week low — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 3.35,
+        "note": "Deep dip — only if the Q3 cash burn is in line",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 5.67,
+      "pct": 38.97,
+      "note": "Base — approved Dec 12 and the loss rate stabilizes; ~$5.67 within ~1-3 months."
+    },
+    "tp2": {
+      "price": 7.94,
+      "pct": 94.61,
+      "note": "Bull — approval plus a strong BYSANTI script ramp; ~$7.94, toward the Oppenheimer $10 target."
+    },
+    "tp3": {
+      "price": 12.85,
+      "pct": 214.95,
+      "note": "Moon — both launches work and a path to profitability; ~$12.85, near the $11.75 consensus. 12-18 month thesis.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 3.06,
+      "tightPct": -25,
+      "tightNote": "-25% — wider than the turbo medianMAE (-24.1%); overall figure applies.",
+      "hard": 2.24,
+      "hardPct": -45.1,
+      "hardNote": "-45% — CRL plus cash-burn stress.",
+      "riskReward": "3.8 : 1",
+      "rrNote": "Entry 1 (current price) to tight stop vs TP2 (Bull)",
+      "rrWarning": "⚠️ Below the 5:1 turbo target (3.8:1) — size at the low end"
+    },
+    "verdict": "SPECULATIVE · ค่าขนม 2% max — the Dec 12 PDUFA plus the Bysanti launch are intact, but after +7.9% the remaining Base is only ~+39%. Measured turbo at-catalyst median is -13.7% (n=19), so Entry 2 is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "No run-up yet: the stock is ~7% lower since Oct 26 and sits near its 52-week low after the Oct 14 VQW-765 failure.",
+    "preRunupTiming": "Final 2-4 weeks before Dec 12",
+    "preRunupPct": "-7% since Oct 26",
+    "postWin": {
+      "avgPct": 148,
+      "range": "+148% over ~6 months (single precedent)",
+      "note": "PharmaTher's KETARx approval (Aug 2025) re-rated the stock +148% over ~6 months. That was a single small-cap approval; Vanda's revenue base dampens both tails.",
+      "exampleDate": "Aug 2025"
+    },
+    "postLose": {
+      "avgPct": -56,
+      "range": "-33% to -80%",
+      "note": "CRL reactions: CAPR -33% day 1 (Jul 2025), OTLK -80% day 1 (Dec 2025). Vanda's revenue floor should keep a CRL nearer the mild end.",
+      "exampleDate": "Jul 2025 (CAPR) / Dec 2025 (OTLK)"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "2%. fda_decision is a Tier-2 LEADER (+9.3pp vs +2.0pp, n=10), and the approval odds look high, but the small GPP market and ~$60M/quarter losses cap the upside per dollar of risk."
+    },
+    "stopPreCatalyst": {
+      "pct": -25,
+      "price": 3.06,
+      "note": "Wider than the fda_decision medianMAE (-18.4%, n=10). A break below ~$2.95 pre-PDUFA means the market is pricing a CRL or a financing."
+    },
+    "stopPostCatalyst": {
+      "pct": -30,
+      "note": "If FDA issues a CRL for imsidolimab, exit day 1 — the revenue floor cushions less than it looks while losses run at ~$60M a quarter."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "PHRM.CN",
+      "event": "FDA approval of KETARx (ketamine)",
+      "date": "Aug 2025",
+      "movePct": 148,
+      "days": 180,
+      "outcome": "good",
+      "note": "A small-cap approval re-rated over ~6 months, not in a day. That fits VNDA's Base/Bull as a multi-month re-rating."
+    },
+    {
+      "ticker": "CAPR",
+      "event": "Complete Response Letter for deramiocel BLA",
+      "date": "Jul 2025",
+      "movePct": -33,
+      "days": 1,
+      "outcome": "bad",
+      "note": "A typical small-cap CRL reaction. VNDA's revenue base should cushion a CRL relative to single-asset names."
+    },
+    {
+      "ticker": "OTLK",
+      "event": "Complete Response Letter for ONS-5010 BLA",
+      "date": "Dec 2025",
+      "movePct": -80,
+      "days": 1,
+      "outcome": "bad",
+      "note": "The worst case for a single-asset company; not VNDA's base case given its commercial products."
+    }
+  ],
+  "sources": [
+    "https://www.biopharmawatch.com/news/VNDA/vanda-pharmaceuticals-q3-2026-results",
+    "https://www.stocktitan.net/sec-filings/VNDA/8-k-vanda-pharmaceuticals-inc-reports-material-event-11ca2862b67a.html",
+    "https://stockanalysis.com/stocks/vnda/",
+    "https://www.hcplive.com/view/fda-accepts-bla-imsidolimab-generalized-pustular-psoriasis-treatment",
+    "https://vandapharmaceuticalsinc.gcs-web.com/node/17101/pdf",
+    "https://www.sec.gov/Archives/edgar/data/0001370053/000119312526396690/anab-ex99_1.htm",
+    "https://catalystalert.io/pdufa/december-2026",
+    "https://healingmaps.com/pharmather-achieves-historic-ketamine-fda-approval-after-third-attempt/",
+    "https://seekingalpha.com/news/4536122-outlook-therapeutics-receives-crl--ressubmitted-bla--wet-amd-asset",
+    "https://www.cnbc.com/2026/10/28/fed-interest-rate-decision-october-2026.html",
+    "https://www.cnbc.com/2026/10/29/pce-inflation-report-september-2026-.html",
+    "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+    "https://www.investing.com/news/economy-news/fed-rate-hike-odds-in-december-at-88-after-hot-cpi-cme-fedwatch-5017585"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "รีเฟรช: ยืนยัน PDUFA ของ imsidolimab (Quimilza) ในโรคสะเก็ดเงินชนิดตุ่มหนองทั่วตัว วันที่ 12 ธ.ค. 2026 ข้อมูลหลักตีพิมพ์ใน NEJM Evidence (เม.ย. 2026) Bysanti (ไบโพลาร์ I / จิตเภท อนุมัติแล้ว) คาดเปิดตลาด Q4 2026 ส่วน Phase 3 MDD เลื่อนเป็นครึ่งแรกปี 2027 หุ้น +7.9% ตั้งแต่ 4 พ.ย. เมื่อเป้าเท่าเดิม Base ที่เหลือจึง ~+39% (เดิม +50%) กระดานจัดอันดับสูงเกินจริงราว 11pp ขาดทุนหนักเทียบเงินสดยังเป็นแรงกดดัน fda_decision เป็น leader ใน Tier-2 (+9.3pp เทียบ +2.0, n=10) bias ของ Base +72.7pp เทียบ P75 30 วันจริง +12.2% จึงเป็นกรอบเวลาหลัง catalyst ไม่ใช่คาด 30 วัน แนะนำ 2% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 40%+",
+      "priceNote": "ราคาสด $4.08 11 พ.ย. 2026 +7.9% จากรายงาน 4 พ.ย. ($3.78) เป้าเท่าเดิม Base ~+39% (เดิม +50%; base decay 11pp) ยืนยัน PDUFA ของ imsidolimab 12 ธ.ค. และคาดเปิดตลาด Bysanti ใน Q4 2026",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "BLA ของ Imsidolimab — PDUFA (GPP)",
+          "description": "วันตัดสินของ FDA สำหรับ imsidolimab (Quimilza) ใน generalized pustular psoriasis รับ BLA เมื่อ ก.พ. 2026 GEMINI-1/2: 53% ได้ GPPGA 0/1 ที่สัปดาห์ 4 vs ยาหลอก 13% หลังให้ทางหลอดเลือดครั้งเดียว (NEJM Evidence, เม.ย. 2026) AnaptysBio คาดอนุมัติใน ธ.ค."
+        },
+        {
+          "name": "การเปิดตัวเชิงพาณิชย์ของ BYSANTI",
+          "description": "การเปิดตัวยาไบโพลาร์ I / จิตเภทที่เพิ่งอนุมัติ แนวโน้มใบสั่งยาช่วงแรกจะบอกว่า guide รายได้และคำกล่าวว่า 'มีเงินถึงปี 2027' ยังอยู่หรือไม่"
+        }
+      ],
+      "risks": [
+        "ขาดทุนหนัก: ขาดทุนสุทธิ H1 2026 $111.1M (Q2 อย่างเดียว $62.5M) เทียบเงินสด $170M ณ 30 มิ.ย. คำกล่าวว่า 'มีเงินถึงปี 2027' ขึ้นกับการเติบโตของรายได้และค่าใช้จ่ายที่ลดลงตามที่สัญญา",
+        "Phase 3 ของ VQW-765 (social anxiety) ล้มเหลว 14 ต.ค. 2026 ทำให้ความน่าเชื่อถือของ pipeline ถูกหักลดมากขึ้น",
+        "GPP เป็นโรคหายากมากและมี spesolimab (Spevigo) อนุมัติแล้ว เพดานรายได้ของ imsidolimab จึงจำกัด การอนุมัติอย่างเดียวไม่ใช่ catalyst 3 เท่า",
+        "BYSANTI เปิดตัวในตลาดยารักษาโรคจิตที่แออัดและเต็มไปด้วยยาสามัญ ใบสั่งยาช่วงแรกอาจน่าผิดหวัง",
+        "Vanda มีประวัติขัดแย้งและฟ้องร้องกับ FDA ยาวนาน เพิ่มความเสี่ยงด้าน regulatory เฉพาะตัว"
+      ],
+      "macroRisk": {
+        "rateOutlook": "Fed คงดอกเบี้ย 3.75–4.00% เมื่อ 28 ต.ค. หลัง CPI ต.ค. ออกมาร้อน (10 พ.ย.) CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ราว 89–100% และโอกาสขึ้น 50bp ~10% ส่วน yield 10 ปีอยู่ ~4.98%",
+        "inflationNote": "CPI ต.ค.: headline +0.4% m/m, core +0.3% m/m (คาด 0.2%) core PCE ก.ย. 3.1% y/y ตัวถัดไปคือ PCE ต.ค. (25 พ.ย.) และ CPI พ.ย. (10 ธ.ค.)",
+        "sectorImpact": "Specialty pharma ที่มีรายได้จริง จึงอ่อนไหวต่อดอกเบี้ยน้อยกว่าไบโอเทคที่ยังไม่มีรายได้ แต่ดอกเบี้ยยังสำคัญต่อต้นทุนการหาเงินมาชดเชยขาดทุนจนกว่าอัตราขาดทุนจะแคบลง",
+        "summary": "MEDIUM — ตลาดรับการขึ้นดอกเบี้ย 25bp ใน ธ.ค. แล้วหลัง CPI ร้อน ความเสี่ยงหางคือขึ้น 50bp หรือ PCE 25 พ.ย. ร้อน ซึ่งกระทบหุ้นเล็กก่อน จึงควรรอเข้าตอนย่อ"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · ค่าขนม สูงสุด 2% — PDUFA 12 ธ.ค. และการเปิดตลาด Bysanti ยังอยู่ แต่หลังวิ่ง +7.9% Base ที่เหลือแค่ ~+39% median ถึงวัน catalyst ของ turbo -13.7% (n=19) จึงเข้าที่ Entry 2 เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ turbo -13.7% (n=19)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "ทดสอบ 52-week low $3.64 — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ร่วงหนัก — เฉพาะเมื่อการเผาเงิน Q3 ตามคาด",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — อนุมัติ 12 ธ.ค. และอัตราขาดทุนนิ่ง ~$5.67 ใน ~1-3 เดือน"
+        },
+        "tp2": {
+          "note": "Bull — อนุมัติ + ใบสั่งยา BYSANTI โตแรง ~$7.94 เข้าใกล้เป้า Oppenheimer $10"
+        },
+        "tp3": {
+          "note": "Moon — ทั้งสองยาเปิดตัวสำเร็จและเห็นทางทำกำไร ~$12.85 ใกล้ consensus $11.75 thesis 12-18 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-25% — กว้างกว่า medianMAE ของ turbo (-24.1%)",
+          "hardNote": "-45% — CRL + แรงกดดันจากการเผาเงิน",
+          "rrNote": "จาก Entry 1 (ราคาปัจจุบัน) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "⚠️ ต่ำกว่าเป้า 5:1 ของ turbo (3.8:1) — ถือไม้เล็ก"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "PDUFA ของ Imsidolimab (GPP)",
+          "note": "การตัดสินการอนุมัติครั้งที่สองในช่วงนี้หลัง BYSANTI พาร์ทเนอร์ AnaptysBio คาดอนุมัติ"
+        },
+        {
+          "event": "ผลประกอบการ Q3 2026",
+          "note": "ตัวเลขการเปิดตัว BYSANTI และการเผาเงินเทียบ guide runway ถึงปี 2027"
+        }
+      ]
+    }
+  }
+}
