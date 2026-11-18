@@ -1,0 +1,317 @@
+{
+  "ticker": "ANNX",
+  "companyName": "Annexon, Inc.",
+  "companyDescription": "Complement (C1q) platform · vonaprument (ANX007) Phase 3 ARCHER II in geographic atrophy — the first GA program targeting vision loss (BCVA) rather than lesion growth; tanruprubart BLA in GBS also due Q4",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-18T16:00:00.000Z",
+  "price": 3.53,
+  "priceChange": 1.73,
+  "priceNote": "Live $3.53 (+1.73%) on Nov 18, 2026 (live-prices cache) — -16% since the Nov 11 report ($4.21) with no company-specific bad news; the small-cap biotech tape sold off into the Nov 17 S&P five-month low. The Nov 9 Q3 release kept ARCHER II topline in Q4 2026 and the U.S. tanruprubart BLA in Q4, with $213M cash and runway into 2028.",
+  "marketCap": "~$720M",
+  "sector": "Healthcare / Biotechnology — Ophthalmology & Neuroimmunology",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Moonshot",
+  "score": 0,
+  "summary": "Refresh (no thesis change, -16% on the tape): the Nov 9 Q3 release kept ARCHER II (vonaprument in geographic atrophy, the first GA program aimed at vision loss rather than lesion growth) on track for Q4 2026 topline, with the U.S. tanruprubart BLA in GBS also due in Q4 while the EMA reviews the MAA. Cash is $213M with runway into 2028, so there is no survival flag. The drop to $3.53 is sector-driven. Base is trimmed to $7.06 (+100%) against the turbo Base bias (+52.5pp vs realized 30d P75 +21.5%); Bull/Moon targets are unchanged. The turbo at-catalyst median is -6.6% (n=76), so Entry 2 is preferred. แนะนำ 2–3% ของ portfolio เท่านั้น — ถ้า ARCHER II พลาด ลงได้ 50–60%.",
+  "catalysts": [
+    {
+      "icon": "👁️",
+      "name": "ARCHER II Month-15 primary endpoint (DMC assessment)",
+      "description": "An independent DMC assesses the primary endpoint (≥15-letter BCVA loss) at Month 15 in 659 GA patients. If it is met, sub-study analyses follow in Q1 2027. If not, the trial continues to the Month-24 dual primary. The company guides to Q4 2026 with no exact day.",
+      "urgencyLabel": "≤7 WEEKS",
+      "dateBadge": "~Q4 2026",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🧬",
+      "name": "Tanruprubart BLA submission — Guillain-Barré syndrome",
+      "description": "A second shot on goal: Annexon guides to a US BLA for tanruprubart in GBS in Q4 2026. A filing would be the company's first potential commercial product.",
+      "urgencyLabel": "Q4 2026",
+      "dateBadge": "~Q4 2026",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Binary Month-15 readout. Phase 2 ARCHER hit on vision but missed on lesion-growth reduction, so a single Phase 3 could disappoint on effect size even if it is technically positive.",
+    "No exact date: \"Q4 2026\" could slip into early 2027, and a DMC-driven readout can arrive with little warning.",
+    "GA is a crowded market with incumbents (Apellis Syfovre, Astellas Izervay). The Syfovre safety scare (Jul 2023, ~-38%) shows how fast intravitreal sentiment can turn.",
+    "Expect a large equity raise into strength after positive data, which caps the first-day move.",
+    "Macro: a hot-CPI, rate-hike tape hits small-cap biotech multiples (XBI/IWM) before the readout."
+  ],
+  "estimateDates": [
+    {
+      "event": "ARCHER II Month-15 DMC assessment",
+      "dateRange": "~Q4 2026",
+      "note": "Primary: ≥15-letter BCVA loss vs sham",
+      "est": "Hit → sub-studies Q1 2027",
+      "highlight": "blue"
+    },
+    {
+      "event": "Tanruprubart (GBS) BLA submission",
+      "dateRange": "~Q4 2026",
+      "note": "First potential commercial filing",
+      "est": "Filing confirmation",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -52.41,
+      "price": 1.68
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 100.0,
+      "price": 7.06
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 317.56,
+      "price": 14.74
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 615.58,
+      "price": 25.26
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "H.C. Wainwright (Oct 2026)",
+      "target": 25,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Needham",
+      "target": 25,
+      "rating": "Buy"
+    },
+    {
+      "firm": "JPMorgan",
+      "target": 15,
+      "rating": "Overweight"
+    },
+    {
+      "firm": "Consensus (10 analysts, late Oct 2026)",
+      "target": 17,
+      "rating": "Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds 3.75–4.00% after the Sep 16 hike. CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~95% (Nov 17–18), with the remainder on 50bp. Waller has floated 50bp; Williams pushed back.",
+    "inflationNote": "Oct CPI ran hot (core +0.3% m/m vs 0.2%). Sep core PCE 3.1% y/y. Oct PCE (Nov 25) and Nov CPI (Dec 10) are next.",
+    "sectorImpact": "Pre-revenue ophthalmology biotech. The ARCHER II readout dominates. Rates matter only through small-cap biotech risk appetite and the price of the post-data raise.",
+    "summary": "MEDIUM — macro is WAIT (30/100): the S&P closed Nov 17 on its 200-day at a 5-month low with VIX ~23–26. The outcome here is idiosyncratic, but small-cap biotech sells first on a hot PCE, so use the dip entry."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 3.53,
+        "note": "Current price — starter only. Not preferred: turbo at-catalyst median -6.6% (n=76)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 3.1,
+        "rangeMax": 3.4,
+        "note": "Pre-readout dip zone (PCE/FOMC tape) — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 2.8,
+        "note": "Deep dip — only without company-specific bad news",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 7.06,
+      "pct": 100.0,
+      "note": "Base — ARCHER II shows a BCVA benefit; re-rate toward ~$7 (trimmed from $8.42 for the turbo Base bias +52.5pp). Horizon: weeks after the Q4 readout."
+    },
+    "tp2": {
+      "price": 14.74,
+      "pct": 317.56,
+      "note": "Bull — a clean BCVA win plus a GBS BLA filed; ~$15 (JPM target, toward consensus)."
+    },
+    "tp3": {
+      "price": 25.26,
+      "pct": 615.58,
+      "note": "Moon — first vision-preserving GA drug on a filing path; $25 (HCW/Needham). 12–24 month thesis.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 2.65,
+      "tightPct": -24.93,
+      "tightNote": "-25% — wider than the turbo medianMAE (-20%).",
+      "hard": 1.68,
+      "hardPct": -52.41,
+      "hardNote": "-60% — readout-failure territory (cash ~$1/share is the floor anchor).",
+      "riskReward": "19.1 : 1",
+      "rrNote": "Entry 2 midpoint ($3.25) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Asymmetric ✅ — clears the 5:1 turbo target"
+    },
+    "verdict": "SPECULATIVE · Moonshot 2.5% max — unchanged thesis, cheaper entry: ARCHER II topline due Q4 with runway into 2028. The measured turbo at-catalyst median is -6.6% (n=76), so Entry 2 ($3.10–3.40) is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "phase3_readout",
+    "preRunup": "GA small caps tend to run into pivotal readouts. ISEE gained before GATHER2, and ANNX already rerated from ~$2.5 to $7 in 2026 on analyst PoS upgrades before giving most of it back. There is no fresh run-up yet.",
+    "preRunupTiming": "Final 2–4 weeks before the DMC assessment",
+    "preRunupPct": "-16% since Nov 11 (no run-up)",
+    "postWin": {
+      "avgPct": 66,
+      "range": "+33% to +86%",
+      "note": "ISEE (Iveric) on GATHER2 GA Phase 3 topline: opened ~+33%, closed ~+66% on the day (Zacks), and ~+86% for the week (Motley Fool). ANNX is smaller and more depressed, so the upside is plausibly larger.",
+      "exampleDate": "Sep 6, 2022 (ISEE)"
+    },
+    "postLose": {
+      "avgPct": -60,
+      "range": "-38% to -88%",
+      "note": "APLS fell ~38% in a day on a GA safety signal (Jul 2023). ALLK fell ~88% when a Phase 2/3 missed its symptom endpoints (Dec 2021). A Month-15 miss with a Month-24 continuation likely lands in between.",
+      "exampleDate": "Jul 17, 2023 (APLS)"
+    },
+    "spotSizing": {
+      "pct": 2.5,
+      "reason": "2.5%. phase3_readout has no n≥5 turbo bucket (context only). Lane-wide prior (hitRate 6.5%, softHitRate 27.1%, beatBench 71%, n=107) and a WAIT macro tape (30/100) keep turbo sizing at the low end of 2–5%."
+    },
+    "stopPreCatalyst": {
+      "pct": -24.93,
+      "price": 2.65,
+      "note": "Wider than the turbo medianMAE (-20%). A break below ~$2.65 before the event means the market is pricing a bad outcome."
+    },
+    "stopPostCatalyst": {
+      "pct": -40,
+      "note": "If the Month-15 endpoint misses, exit day 1. The Month-24 continuation is not a reason to hold through a ~50%+ gap."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "ISEE",
+      "event": "GATHER2 Phase 3 (Zimura, GA) positive topline",
+      "date": "Sep 2022",
+      "movePct": 66,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same indication, same pivotal-readout shape. This is the template for an ANNX win, though ANNX's BCVA endpoint is more differentiated than lesion growth."
+    },
+    {
+      "ticker": "APLS",
+      "event": "Syfovre retinal-vasculitis safety reports (GA)",
+      "date": "Jul 2023",
+      "movePct": -38,
+      "days": 1,
+      "outcome": "bad",
+      "note": "GA intravitreal sentiment can reverse in a day. This is the downside shape for any safety surprise in ARCHER II."
+    },
+    {
+      "ticker": "ALLK",
+      "event": "Lirentelimab Phase 2/3 misses symptom endpoints",
+      "date": "Dec 2021",
+      "movePct": -88,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Worst-case template: hitting a biomarker but missing the clinical endpoint wipes out a single-asset small cap."
+    }
+  ],
+  "sources": [
+    "https://finviz.com/news/419405/annexon-reports-third-quarter-2026-financial-results-business-updates-and-key-anticipated-milestones",
+    "https://www.stocktitan.net/news/ANNX/annexon-reports-third-quarter-2026-financial-results-business-haw6j6nreaka.html",
+    "https://www.tradingview.com/news/marketbeat:70da1ead0094b:0-annexon-eyes-q4-2026-phase-iii-readout-for-vision-preserving-ga-drug/",
+    "https://ir.annexonbio.com/news-releases/news-release-details/annexon-provides-update-archer-ii-global-registrational-program",
+    "https://www.investing.com/news/analyst-ratings/hc-wainwright-raises-annexon-stock-price-target-on-gbs-approval-prospects-93CH-4959842",
+    "https://stockanalysis.com/stocks/annx/",
+    "https://equibles.com/stocks/ANNX",
+    "https://www.fool.com/investing/2022/09/08/why-iveric-bio-stock-is-skyrocketing-this-week",
+    "https://www.thepharmaletter.com/biotech-news/iveric-opens-a-third-higher-on-positive-zimura-results",
+    "https://www.nasdaq.com/articles/apellis-apls-plunges-on-safety-issues-with-eye-treatment",
+    "https://www.fool.com/investing/2021/12/22/why-allakos-stock-is-crashing-today",
+    "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+    "https://www.investing.com/news/economy-news/fed-rate-hike-odds-in-december-at-88-after-hot-cpi-cme-fedwatch-5017585",
+    "https://www.fool.com/investing/2026/11/16/theres-now-100-chance-fed-rate-hike-in-december-thats-not-worst-news-for-wall-street/",
+    "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-17-224356767.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "รีเฟรช (thesis ไม่เปลี่ยน ลง 16% ตามตลาด): งบ Q3 (9 พ.ย.) ยืนยัน ARCHER II (vonaprument ใน geographic atrophy โปรแกรม GA แรกที่มุ่งรักษาการมองเห็นแทนการลดขนาดรอยโรค) ยังเดินตามแผนประกาศ topline Q4 2026 และ BLA ของ tanruprubart ใน GBS ในสหรัฐฯ ก็มีกำหนด Q4 ขณะที่ EMA กำลังพิจารณา MAA เงินสด $213M พอถึงปี 2028 จึงไม่ติด survival flag การลงมาที่ $3.53 เป็นเรื่องของกลุ่ม ปรับ Base ลงเป็น $7.06 (+100%) ตาม bias ของ Base ใน turbo (+52.5pp เทียบ P75 30 วันจริง +21.5%) เป้า Bull/Moon เท่าเดิม median ถึงวัน catalyst ของ turbo -6.6% (n=76) จึงเข้าที่ Entry 2 เป็นหลัก แนะนำ 2–3% ของ portfolio เท่านั้น — ถ้า ARCHER II พลาด ลงได้ 50–60%",
+      "priceNote": "ราคาสด $3.53 (+1.73%) 18 พ.ย. 2026 ลง 16% จากรายงาน 11 พ.ย. ($4.21) โดยไม่มีข่าวร้ายของบริษัท ไบโอเทคเล็กโดนเทขายพร้อมที่ S&P ทำจุดต่ำสุดรอบ 5 เดือน 17 พ.ย. งบ Q3 (9 พ.ย.) ยืนยัน topline ARCHER II ใน Q4 2026 และ BLA tanruprubart ในสหรัฐฯ ใน Q4 เงินสด $213M พอถึงปี 2028",
+      "scoreLabel": "Moonshot",
+      "catalysts": [
+        {
+          "name": "ARCHER II — ผล endpoint หลักเดือน 15 (DMC ประเมิน)",
+          "description": "DMC อิสระประเมิน endpoint หลัก (สูญเสียการมองเห็น ≥15 ตัวอักษร) ที่เดือน 15 ในผู้ป่วย GA 659 ราย ถ้าผ่าน จะวิเคราะห์ sub-study ต่อใน Q1 2027 ถ้าไม่ผ่าน การศึกษาเดินต่อถึง dual primary เดือน 24 บริษัทระบุ Q4 2026 ไม่มีวันแน่นอน"
+        },
+        {
+          "name": "ยื่น BLA ของ tanruprubart — โรค Guillain-Barré",
+          "description": "โอกาสที่สอง: Annexon คาดยื่น BLA ในสหรัฐฯ สำหรับ tanruprubart ใน GBS ภายใน Q4 2026 ถ้ายื่นได้จะเป็นผลิตภัณฑ์เชิงพาณิชย์ตัวแรกที่เป็นไปได้ของบริษัท"
+        }
+      ],
+      "risks": [
+        "ผลเดือน 15 เป็น binary — Phase 2 ผ่านด้านการมองเห็นแต่ไม่ผ่านด้านลดการโตของรอยโรค Phase 3 อาจผิดหวังเรื่องขนาดผลแม้จะผ่านทางเทคนิค",
+        "ไม่มีวันแน่นอน: \"Q4 2026\" อาจเลื่อนไปต้นปี 2027 และผลจาก DMC อาจออกมาโดยไม่มีการเตือนล่วงหน้า",
+        "ตลาด GA มีผู้เล่นเดิม (Apellis Syfovre, Astellas Izervay) กรณี Syfovre มีปัญหาความปลอดภัย (ก.ค. 2023, ~-38%) แสดงว่า sentiment ยาฉีดเข้าตาเปลี่ยนเร็วมาก",
+        "คาดว่าจะเพิ่มทุนก้อนใหญ่ตอนหุ้นแข็งหลังผลดี ซึ่งจะจำกัดการวิ่งวันแรก",
+        "Macro: ตลาดที่ CPI ร้อนและมีการขึ้นดอกเบี้ย กด multiple ของไบโอเทคเล็ก (XBI/IWM) ก่อนผลจะออก"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ย Fed 3.75–4.00% หลังขึ้น 16 ก.ย. CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ~95% (17–18 พ.ย.) ที่เหลือเป็น 50bp Waller เปิดทาง 50bp ส่วน Williams ค้าน",
+        "inflationNote": "CPI ต.ค. ร้อน (core +0.3% m/m เทียบคาด 0.2%) core PCE ก.ย. 3.1% y/y ตัวถัดไปคือ PCE ต.ค. (25 พ.ย.) และ CPI พ.ย. (10 ธ.ค.)",
+        "sectorImpact": "ไบโอเทคจักษุวิทยาที่ยังไม่มีรายได้ ผล ARCHER II สำคัญที่สุด ดอกเบี้ยกระทบผ่าน risk appetite ของไบโอเทคเล็กและราคาการเพิ่มทุนหลังผล",
+        "summary": "MEDIUM — มหภาคเป็น WAIT (30/100): S&P ปิด 17 พ.ย. บนเส้น 200 วันที่ต่ำสุดรอบ 5 เดือน VIX ~23–26 ผลลัพธ์เป็นเรื่องเฉพาะบริษัท แต่ไบโอเทคเล็กโดนขายก่อนถ้า PCE ร้อน จึงใช้จุดเข้าตอนย่อ"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · Moonshot สูงสุด 2.5% — thesis เดิม จุดเข้าถูกลง: ผล topline ARCHER II ใน Q4 เงินพอถึงปี 2028 median ถึงวัน catalyst ของ turbo -6.6% (n=76) จึงเข้าที่ Entry 2 ($3.10–3.40) เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ turbo -6.6% (n=76)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "โซนย่อก่อนผล (ช่วง PCE/FOMC) — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ร่วงหนัก — เฉพาะเมื่อไม่มีข่าวร้ายของบริษัทเอง",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — ARCHER II เห็นผลด้าน BCVA re-rate ไป ~$7 (ลดจาก $8.42 ตาม bias ของ Base ใน turbo +52.5pp) กรอบหลายสัปดาห์หลังผล Q4"
+        },
+        "tp2": {
+          "note": "Bull — ผล BCVA ชัด + ยื่น BLA ของ GBS แล้ว ~$15 (เป้า JPM ใกล้ consensus)"
+        },
+        "tp3": {
+          "note": "Moon — ยา GA ตัวแรกที่รักษาการมองเห็นเข้าสู่เส้นทางยื่น $25 (HCW/Needham) thesis 12–24 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-25% — กว้างกว่า medianMAE ของ turbo (-20%)",
+          "hardNote": "-60% — โซนผลล้มเหลว (เงินสด ~$1/หุ้น เป็นพื้น)",
+          "rrNote": "จากกลาง Entry 2 ($3.25) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "อสมมาตร ✅ — ผ่านเป้า 5:1 ของ turbo"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "ผลประเมิน DMC เดือน 15 ของ ARCHER II",
+          "note": "Endpoint หลัก: สูญเสียการมองเห็น ≥15 ตัวอักษร เทียบ sham"
+        },
+        {
+          "event": "ยื่น BLA ของ tanruprubart (GBS)",
+          "note": "การยื่นขออนุมัติเชิงพาณิชย์ครั้งแรกที่เป็นไปได้"
+        }
+      ]
+    }
+  }
+}
