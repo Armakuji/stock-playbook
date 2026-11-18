@@ -1,0 +1,273 @@
+{
+  "ticker": "MLYS",
+  "companyName": "Mineralys Therapeutics, Inc.",
+  "companyDescription": "Cardiorenal · lorundrostat, a selective aldosterone synthase inhibitor for uncontrolled/resistant hypertension — PDUFA Dec 22, 2026; second-to-market behind AstraZeneca baxdrostat",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-18T16:00:00.000Z",
+  "price": 14.36,
+  "priceChange": -0.86,
+  "priceNote": "Live $14.36 (-0.86%) on Nov 18, 2026 (live-prices cache), -7% vs the Nov 11 report ($15.52) with the biotech tape. Lorundrostat's PDUFA stays Dec 22, 2026 (company release, Mar 9); no newer company news was found.",
+  "marketCap": "~$1.35B",
+  "sector": "Healthcare / Biotechnology — Cardiorenal",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Speculative",
+  "score": 0,
+  "summary": "Refresh (no thesis change, -7% on the tape): lorundrostat (aldosterone synthase inhibitor) for hypertension has a Dec 22, 2026 PDUFA (company release, Mar 9) backed by five pivotal trials; Mineralys held $646M cash (Mar 31) with funding into 2028, bought back the Tanabe royalty, and has defined launch territories. The Explore-OSA miss (sleep apnea) does not affect the hypertension NDA. Consensus ~$48.5 (BofA $49, UBS $29) implies +238%. fda_decision is a core tier-2 leader (+8.1pp vs +4.1pp, n=11), a mild tailwind only. Core at-catalyst median -6.5% (n=157) → Entry 2 preferred. แนะนำ 3–4% ของ capital.",
+  "catalysts": [
+    {
+      "icon": "💊",
+      "name": "Lorundrostat PDUFA — hypertension",
+      "description": "The NDA (add-on for uncontrolled/resistant hypertension) has a PDUFA target action date of Dec 22, 2026. Review is underway per the Nov 8 update, and a sales force is being built ahead of the date.",
+      "urgencyLabel": "41 DAYS",
+      "dateBadge": "Dec 22, 2026",
+      "catalystDate": "2026-12-22",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Second to market behind AstraZeneca's baxdrostat, so approval is a re-rating event, not a monopoly.",
+    "Label risk (hyperkalemia monitoring) could cap the re-rate.",
+    "A CRL would mean ~-40–50% for a single-asset company.",
+    "Stale consensus target (pre-baxdrostat launch)."
+  ],
+  "estimateDates": [
+    {
+      "event": "Lorundrostat PDUFA",
+      "dateRange": "Dec 22, 2026",
+      "note": "Approval + label",
+      "est": "Approval likely",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -37.33,
+      "price": 9
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 51.46,
+      "price": 21.75
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 115.88,
+      "price": 31
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 237.74,
+      "price": 48.5
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "BofA",
+      "target": 49,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Consensus mean (Aug 2026, stale)",
+      "target": 48.5,
+      "rating": "Strong Buy"
+    },
+    {
+      "firm": "UBS",
+      "target": 29,
+      "rating": "Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds 3.75–4.00% after the Sep 16 hike. CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~95% (Nov 17–18), with the remainder on 50bp. Waller has floated 50bp; Williams pushed back.",
+    "inflationNote": "Oct CPI ran hot (core +0.3% m/m vs 0.2%). Sep core PCE 3.1% y/y. Oct PCE (Nov 25) and Nov CPI (Dec 10) are next.",
+    "sectorImpact": "Single-asset cardiorenal biotech moving to launch, funded into 2028. Rates matter through the biotech multiple only.",
+    "summary": "MEDIUM — the Dec 22 PDUFA dominates; macro is WAIT (30/100) and the Dec 9 FOMC/Dec 10 CPI land two weeks before the decision."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 14.36,
+        "note": "Current price — not preferred: core at-catalyst median -6.5% (n=157, 65% underwater)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 13.2,
+        "rangeMax": 13.9,
+        "note": "Undercut of the $14.91 52-week low on FOMC/CPI week — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 12.0,
+        "note": "Aug-2026 low area",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 21.75,
+      "pct": 51.46,
+      "note": "Base — approval with a clean label; ~$21.75. Horizon 2–6 weeks post-PDUFA."
+    },
+    "tp2": {
+      "price": 31,
+      "pct": 115.88,
+      "note": "Bull — a differentiated label; ~$31."
+    },
+    "tp3": {
+      "price": 48.5,
+      "pct": 237.74,
+      "note": "Moon — share gains vs baxdrostat; ~$48.50 consensus. 12 months.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 12.4,
+      "tightPct": -13.65,
+      "tightNote": "-14% — wider than the fda_decision medianMAE (-10.6%).",
+      "hard": 9,
+      "hardPct": -37.33,
+      "hardNote": "-42% — CRL territory, cushioned by ~$6.6/share cash.",
+      "riskReward": "15.2 : 1",
+      "rrNote": "Entry 2 midpoint ($13.55) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Good R/R ✅"
+    },
+    "verdict": "SPECULATIVE — a Dec 22 PDUFA for a large-market drug, funded into 2028. The measured core at-catalyst median is -6.5% with 65% of picks underwater at their event, so report price is not the default entry: Entry 2 ($13.20–13.90) is preferred.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "No run-up: the stock is grinding along its 52-week low into the PDUFA, a disbelief setup.",
+    "preRunupTiming": "Final 2 weeks before Dec 22",
+    "preRunupPct": "-7% since Nov 11 (no run-up)",
+    "postWin": {
+      "avgPct": 40,
+      "range": "+33% to +74%",
+      "note": "AXSM +40% on a doubted approval (Aug 2022); SRPT +74% on a contested approval (Sep 2016).",
+      "exampleDate": "Aug 19, 2022 (AXSM)"
+    },
+    "postLose": {
+      "avgPct": -38,
+      "range": "-26% to -53%",
+      "note": "CAPR opened -38.6% on a CRL (Jul 2025).",
+      "exampleDate": "Jul 11, 2025 (CAPR)"
+    },
+    "spotSizing": {
+      "pct": 2.5,
+      "reason": "2.5% (combined with the turbo lane position). fda_decision is not a Tier-2 laggard; capped for second-to-market economics."
+    },
+    "stopPreCatalyst": {
+      "pct": -13.65,
+      "price": 12.4,
+      "note": "Wider than the fda_decision medianMAE (-10.6%). A break below ~$12.4 before the event means the market is pricing a bad outcome."
+    },
+    "stopPostCatalyst": {
+      "pct": -30,
+      "note": "On a CRL, exit day 1."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "AXSM",
+      "event": "Auvelity approval after extended review",
+      "date": "Aug 2022",
+      "movePct": 40,
+      "days": 1,
+      "outcome": "good",
+      "note": "A doubted approval that re-rated the stock."
+    },
+    {
+      "ticker": "CAPR",
+      "event": "FDA CRL for deramiocel",
+      "date": "Jul 2025",
+      "movePct": -38,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Single-asset CRL template."
+    }
+  ],
+  "sources": [
+    "https://www.barchart.com/story/news/649648/mineralys-therapeutics-announces-fda-acceptance-of-nda-for-lorundrostat-for-treatment-of-adults-with-hypertension-and-topline-explore-osa-trial-results",
+    "https://www.biospace.com/press-releases/mineralys-therapeutics-reports-third-quarter-2026-financial-results-and-provides-corporate-update",
+    "https://www.quantisnow.com/insight/mineralys-therapeutics-presents-new-late-breaking-data-from-transform-htn-open-label-extension-6779802",
+    "https://stockanalysis.com/stocks/mlys",
+    "https://www.benzinga.com/news/26/11/62897821/mineralys-therapeutics-q3-2026-earnings-call-transcript",
+    "https://www.zacks.com/amp/stock/news/1970946/axsome-axsm-soars-on-fda-nod-for-depression-drug-auvelity",
+    "https://medcitynews.com/2025/07/capricor-cell-therapy-duchenne-muscular-dystrophy-deramiocel-cardiomyopathy-heart-failure-dmd-capr/",
+    "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+    "https://www.investing.com/news/economy-news/fed-rate-hike-odds-in-december-at-88-after-hot-cpi-cme-fedwatch-5017585",
+    "https://www.fool.com/investing/2026/11/16/theres-now-100-chance-fed-rate-hike-in-december-thats-not-worst-news-for-wall-street/",
+    "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-17-224356767.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "รีเฟรช (thesis ไม่เปลี่ยน ลง 7% ตามตลาด): lorundrostat (aldosterone synthase inhibitor) สำหรับความดันโลหิตสูงมี PDUFA 22 ธ.ค. 2026 (ประกาศบริษัท 9 มี.ค.) อิงการศึกษาหลัก 5 การศึกษา Mineralys มีเงินสด $646M (31 มี.ค.) พอถึงปี 2028 ซื้อคืนภาระ royalty ของ Tanabe แล้ว และกำหนดพื้นที่ขายแล้ว การพลาดของ Explore-OSA (ภาวะหยุดหายใจขณะหลับ) ไม่กระทบ NDA ความดัน เป้าเฉลี่ย ~$48.5 (BofA $49, UBS $29) = +238% fda_decision เป็น leader ของ tier-2 ฝั่ง core (+8.1pp เทียบ +4.1pp, n=11) แค่แรงหนุนเล็กน้อย median ถึงวัน catalyst ของ core -6.5% (n=157) → เข้าที่ Entry 2 เป็นหลัก แนะนำ 3–4% ของ capital",
+      "priceNote": "ราคาสด $14.36 (-0.86%) 18 พ.ย. 2026 ลง 7% จากรายงาน 11 พ.ย. ($15.52) ตามไบโอเทค PDUFA ของ lorundrostat ยังเป็น 22 ธ.ค. 2026 (ประกาศบริษัท 9 มี.ค.) ไม่พบข่าวบริษัทใหม่",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        {
+          "name": "PDUFA ของ lorundrostat — ความดันโลหิตสูง",
+          "description": "NDA (ยาเสริมในความดันสูงที่คุมไม่ได้/ดื้อยา) วัน PDUFA 22 ธ.ค. 2026 อยู่ระหว่างรีวิวตามอัปเดต 8 พ.ย. และกำลังสร้างทีมขายก่อนถึงวัน"
+        }
+      ],
+      "risks": [
+        "เข้าตลาดเป็นอันดับสองตามหลัง baxdrostat ของ AstraZeneca การอนุมัติจึงเป็นเหตุ re-rate ไม่ใช่การผูกขาด",
+        "ความเสี่ยงด้าน label (การติดตามโพแทสเซียมสูง) อาจจำกัดการ re-rate",
+        "ถ้าโดน CRL จะลง ~-40–50% สำหรับบริษัทที่มียาตัวเดียว",
+        "เป้า consensus เก่า (ก่อน baxdrostat เปิดตลาด)"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ย Fed 3.75–4.00% หลังขึ้น 16 ก.ย. CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ~95% (17–18 พ.ย.) ที่เหลือเป็น 50bp Waller เปิดทาง 50bp ส่วน Williams ค้าน",
+        "inflationNote": "CPI ต.ค. ร้อน (core +0.3% m/m เทียบคาด 0.2%) core PCE ก.ย. 3.1% y/y ตัวถัดไปคือ PCE ต.ค. (25 พ.ย.) และ CPI พ.ย. (10 ธ.ค.)",
+        "sectorImpact": "ไบโอเทคหัวใจและไตที่มียาตัวเดียวกำลังเปิดตลาด มีเงินพอถึงปี 2028 ดอกเบี้ยกระทบผ่าน multiple ไบโอเทคเท่านั้น",
+        "summary": "MEDIUM — PDUFA 22 ธ.ค. สำคัญที่สุด มหภาคเป็น WAIT (30/100) และ FOMC 9 ธ.ค./CPI 10 ธ.ค. มาก่อนการตัดสินสองสัปดาห์"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE — PDUFA 22 ธ.ค. ของยาตลาดใหญ่ เงินพอถึงปี 2028 median ถึงวัน catalyst ของ core -6.5% โดย 65% ของ picks ติดลบ ณ วัน event ราคาปัจจุบันจึงไม่ใช่จุดเข้าหลัก เข้าที่ Entry 2 ($13.20–13.90)",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม่ใช่จุดเข้าหลัก median ถึงวัน catalyst ของ core -6.5% (n=157, 65% ติดลบ)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "หลุด 52-week low $14.91 ช่วงสัปดาห์ FOMC/CPI — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "โซนต่ำ ส.ค. 2026",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — อนุมัติพร้อม label ที่ดี ~$21.75 กรอบ 2–6 สัปดาห์หลัง PDUFA"
+        },
+        "tp2": {
+          "note": "Bull — label ที่แตกต่าง ~$31"
+        },
+        "tp3": {
+          "note": "Moon — แย่งส่วนแบ่งจาก baxdrostat ~$48.50 consensus ใน 12 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "-14% — กว้างกว่า medianMAE ของ fda_decision (-10.6%)",
+          "hardNote": "-42% — โซน CRL มีเงินสด ~$6.6/หุ้น ช่วยรองรับ",
+          "rrNote": "จากกลาง Entry 2 ($13.55) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "R/R ดี ✅"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "PDUFA lorundrostat",
+          "note": "การอนุมัติ + label"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "ticker": "SNOW",
+  "companyName": "Snowflake Inc.",
+  "companyDescription": "AI Data Cloud · consumption-based data platform; product revenue +37% y/y to $1.49B in Q2 FY27 (third straight acceleration) with Cortex AI agents driving usage · Q3 FY27 results Dec 2, 2026 AMC",
+  "exchange": "NYSE",
+  "generatedAt": "2026-11-18T17:20:00.000Z",
+  "price": 276.95,
+  "priceChange": 1.47,
+  "priceNote": "Self-fetched (Yahoo chart API, Nov 18, 2026 intraday): $276.95 (+1.5%). Down from $298.70 on Nov 11 and ~25% below the $368.89 high (Oct 9, 2026); 1-year low $121.11 (Apr 10). The slide is sector-driven (AI-capex worries, ServiceNow miss, Nov 17 software rout) with no company-specific news.",
+  "marketCap": "~$93B",
+  "sector": "Technology / Data & AI Software",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 0,
+  "summary": "Snowflake reports Q3 FY27 on Dec 2 (company release) coming off three straight quarters of accelerating product revenue (+37% to $1.49B in Q2). The stock is ~25% off its October high on sector de-rating, not company news. Consensus is wide — Barchart's ~$342 average implies +23.5% and Benzinga's $402 implies +45% (Evercore $430). The gate clears on the conservative figure. The risk is the opposite of CRM's: SNOW is priced for growth (forward P/E ~121x), so a merely in-line product-revenue guide can sell off (Dec 2025: -8% despite a beat). Core at-catalyst median -6.5% (n=157) → Entry 2 preferred. Base +14% is a ~2-week horizon, above the 14d P75 (+10.8%) because the Nov 21, 2024 precedent was +32%. แนะนำ 4–6% ของ capital เท่านั้น.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 FY2027 earnings — product revenue growth + Q4 guide",
+      "description": "Confirmed for Wednesday Dec 2, 2026 after the close (company press release, Nov 2). The market watches product revenue growth (37% in Q2), net revenue retention, and the product gross margin (guide cut to 74% from 75% on AI costs).",
+      "urgencyLabel": "14 DAYS",
+      "dateBadge": "Dec 2, 2026",
+      "catalystDate": "2026-12-02",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🤖",
+      "name": "Cortex AI / agent consumption ramp",
+      "description": "AI workloads (Cortex, Cortex Code agents) are the acceleration driver and the reason gross margin guidance was trimmed. Any disclosed AI revenue run-rate on the call is the swing factor for the multiple.",
+      "urgencyLabel": "WITH PRINT",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Priced for growth: ~121x forward P/E after the drop. An in-line product-revenue guide can trigger a sell-off even on a beat (Dec 2025: -8%).",
+    "AI costs: management already cut the product gross margin outlook to 74% from 75%. Further compression would undercut the AI-monetization story.",
+    "Sector beta: SNOW fell 7.2% on Nov 5 and ~13% in the week to Nov 2 with no company news — the AI-capex/software narrative can overwhelm the print.",
+    "Consensus dispersion ($292–$427 across sources) means the +20% gate depends on which average you use; the conservative ~$342 clears by only ~3pp.",
+    "Macro is WAIT (30/100) with VIX ~23–26; long-duration growth multiples are the most rate-sensitive part of software."
+  ],
+  "estimateDates": [
+    { "event": "Q3 FY2027 earnings", "dateRange": "Dec 2, 2026", "note": "Product revenue growth vs 37% in Q2", "est": "Product rev ~+35–38%", "highlight": "blue" },
+    { "event": "FOMC decision", "dateRange": "Dec 9, 2026", "note": "+25bp ~95% priced", "est": "+25bp", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -18, "price": 227.1 },
+    { "label": "Base", "color": "yellow", "pct": 14, "price": 315.72 },
+    { "label": "Bull", "color": "green", "pct": 23.5, "price": 342.0 },
+    { "label": "Moon", "color": "purple", "pct": 45, "price": 401.58 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (Barchart average)", "target": 342, "rating": "Buy" },
+    { "firm": "Consensus (Benzinga)", "target": 402, "rating": "Buy" },
+    { "firm": "Evercore ISI (raised from $360, Nov 2026)", "target": 430, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds 3.75–4.00% after the Sep 16 hike. CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~95% (Nov 17–18), with the remainder on 50bp.",
+    "inflationNote": "Oct CPI ran hot (core +0.3% m/m vs 0.2%). Sep core PCE 3.1% y/y. Oct PCE (Nov 25) lands a week before the print.",
+    "sectorImpact": "High-multiple, long-duration software is the most rate-sensitive part of tech. A hawkish Dec 9 FOMC a week after the print can cap any post-earnings rally.",
+    "summary": "MEDIUM — the print dominates, but a WAIT macro tape (30/100) and a hike a week later argue for a dip entry and partial profit-taking at TP1."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 276.95, "note": "Current price — not preferred: core at-catalyst median -6.5% (n=157, 65% underwater)", "timing": "Now" },
+      { "label": "Entry 2", "level": 258, "rangeMax": 268, "note": "Pre-print dip / Nov 5 low area ($269.54) — preferred", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 240, "note": "Deep dip — only if the software rout extends", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 315.72, "pct": 14, "note": "Base — beat + product revenue growth holds ~35%+; retrace toward the Nov 11 level (~$299) and beyond. Horizon ~2 weeks." },
+    "tp2": { "price": 342.0, "pct": 23.5, "note": "Bull — re-acceleration + AI revenue disclosure; Barchart consensus ~$342." },
+    "tp3": { "price": 401.58, "pct": 45, "note": "Moon — new highs above $368.89 toward Benzinga's $402 consensus / Evercore $430. 3–6 months.", "moon": true },
+    "stopLoss": {
+      "tight": 238,
+      "tightPct": -14.06,
+      "tightNote": "-14% — wider than the earnings_beat medianMAE (-9.5%, n=89).",
+      "hard": 215,
+      "hardPct": -22.37,
+      "hardNote": "-22% — growth deceleration confirmed; multiple resets.",
+      "riskReward": "3.2 : 1",
+      "rrNote": "Entry 2 midpoint ($263) to tight stop vs TP2",
+      "rrWarning": "Good R/R ✅"
+    },
+    "verdict": "BUY (Speculative) — accelerating product revenue into a confirmed Dec 2 print after a ~25% sector de-rating. The measured core at-catalyst median is -6.5% with 65% of picks underwater at their event, so report price is not the default entry: Entry 2 ($258–268) is preferred. Take partial profits at TP1 before the Dec 9 FOMC.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "No run-up: the stock has de-rated ~25% from its October high into the print on sector fears, so the bar is lower than the multiple suggests.",
+    "preRunupTiming": "Final 1–2 weeks before Dec 2",
+    "preRunupPct": "-7% since Nov 11 (no run-up)",
+    "postWin": {
+      "avgPct": 15,
+      "range": "+8% to +32%",
+      "note": "SNOW jumped ~32% on Nov 21, 2024 after a Q3 FY25 beat and raised guide. A beat from a de-rated base can move far more than the core 14d P75.",
+      "exampleDate": "Nov 21, 2024 (SNOW Q3 FY25)"
+    },
+    "postLose": {
+      "avgPct": -10,
+      "range": "-8% to -20%",
+      "note": "SNOW fell ~8% in Dec 2025 as product revenue growth slowed despite a revenue beat.",
+      "exampleDate": "Dec 2025 (SNOW Q3 FY26)"
+    },
+    "spotSizing": {
+      "pct": 5,
+      "reason": "5% (spot). earnings_beat sits at +4.2pp medianExcess vs +4.1pp overall (n=89) — neutral. High multiple + WAIT macro tape → mid-low sizing, scaled in."
+    },
+    "stopPreCatalyst": { "pct": -14.06, "price": 238, "note": "Wider than the earnings_beat medianMAE (-9.5%). Below ~$238 before the print, the sector is still de-rating — step aside." },
+    "stopPostCatalyst": { "pct": -10, "note": "If product revenue growth decelerates below ~33% or the guide is light, exit on day 1 — Dec 2025 is the template." }
+  },
+  "comparableCases": [
+    { "ticker": "SNOW", "event": "Q3 FY25 beat + raised product revenue guide", "date": "Nov 2024", "movePct": 32, "days": 1, "outcome": "good", "note": "Same company, same fiscal quarter: a beat from a de-rated base produced a +32% day — the Moon-case shape." },
+    { "ticker": "SNOW", "event": "Q3 FY26: revenue beat but product revenue growth slowed", "date": "Dec 2025", "movePct": -8, "days": 1, "outcome": "bad", "note": "The market trades the growth metric, not the headline beat." },
+    { "ticker": "CRM", "event": "Q3 FY25 beat + AI-agent enthusiasm", "date": "Dec 2024", "movePct": 11, "days": 1, "outcome": "good", "note": "A software peer reporting the same week shows AI-monetization beats can re-rate quickly." }
+  ],
+  "sources": [
+    "https://www.snowflake.com/en/news/press-releases/fy27-q3-earnings-date-announcement/",
+    "https://finviz.com/news/388294/snowflake-reports-financial-results-for-the-second-quarter-of-fiscal-2027",
+    "https://www.trefis.com/stock/snow/articles/623366/what-just-happened-to-snowflake-stock/2026-11-06",
+    "https://www.tikr.com/blog/snowflake-keeps-sliding-but-evercore-isi-sees-51-upside",
+    "https://www.tikr.com/blog/snowflake-is-20-off-its-september-high-its-december-2-report-must-prove-ai-growth-sticks",
+    "https://www.tikr.com/blog/snowflake-stock-sinks-over-8-as-product-revenue-growth-slows-in-fiscal-q3",
+    "https://www.webull.com/news/15402721740006400",
+    "https://www.benzinga.com/quote/SNOW?getReport=1",
+    "https://www.fool.com/investing/2026/11/16/theres-now-100-chance-fed-rate-hike-in-december-thats-not-worst-news-for-wall-street/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "Snowflake ประกาศงบ Q3 FY27 วันที่ 2 ธ.ค. (ประกาศของบริษัท) หลังรายได้ product เร่งตัวสามไตรมาสติด (+37% เป็น $1.49B ใน Q2) หุ้นต่ำกว่า high เดือน ต.ค. ~25% จากการลดมูลค่าทั้งกลุ่ม ไม่ใช่ข่าวบริษัท เป้าเฉลี่ยกระจายกว้าง — ค่าเฉลี่ย Barchart ~$342 = +23.5% และ Benzinga $402 = +45% (Evercore $430) ผ่านเกณฑ์ด้วยตัวเลขที่ระมัดระวัง ความเสี่ยงตรงข้ามกับ CRM: SNOW ถูก price สำหรับการเติบโต (forward P/E ~121 เท่า) guide รายได้ product ที่แค่ตามคาดก็อาจโดนขาย (ธ.ค. 2025: -8% แม้งบดี) median ถึงวัน catalyst ของ core -6.5% (n=157) → เข้าที่ Entry 2 เป็นหลัก Base +14% เป็นกรอบ ~2 สัปดาห์ สูงกว่า P75 14 วัน (+10.8%) เพราะกรณี 21 พ.ย. 2024 ขึ้น +32% แนะนำ 4–6% ของ capital เท่านั้น",
+      "priceNote": "ดึงราคาเอง (Yahoo chart API 18 พ.ย. 2026 ระหว่างวัน): $276.95 (+1.5%) ลงจาก $298.70 เมื่อ 11 พ.ย. และต่ำกว่า high $368.89 (9 ต.ค. 2026) ~25% low 1 ปี $121.11 (10 เม.ย.) การลงมาจากกลุ่ม (กังวล AI capex, ServiceNow พลาด, เทขายซอฟต์แวร์ 17 พ.ย.) ไม่มีข่าวเฉพาะบริษัท",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "งบ Q3 FY2027 — การเติบโตรายได้ product + guide Q4", "description": "ยืนยันวันพุธที่ 2 ธ.ค. 2026 หลังตลาดปิด (ประกาศของบริษัท 2 พ.ย.) ตลาดดูการเติบโตรายได้ product (37% ใน Q2) net revenue retention และ gross margin ของ product (guide ลดเป็น 74% จาก 75% เพราะต้นทุน AI)" },
+        { "name": "การใช้งาน Cortex AI / agent ที่เร่งขึ้น", "description": "งาน AI (Cortex, Cortex Code agents) คือตัวเร่งการเติบโตและเหตุผลที่ลด guide gross margin ถ้าบริษัทเปิดเผย run-rate รายได้ AI ใน call จะเป็นตัวชี้ขาด multiple" }
+      ],
+      "risks": [
+        "ถูก price สำหรับการเติบโต: forward P/E ~121 เท่าหลังร่วง guide รายได้ product ที่แค่ตามคาดอาจทำให้โดนขายแม้งบดี (ธ.ค. 2025: -8%)",
+        "ต้นทุน AI: ผู้บริหารลด outlook gross margin ของ product เป็น 74% จาก 75% แล้ว ถ้าหดอีกจะบั่นทอนเรื่องการสร้างรายได้จาก AI",
+        "beta ของกลุ่ม: SNOW ลง 7.2% เมื่อ 5 พ.ย. และ ~13% ในสัปดาห์ถึง 2 พ.ย. โดยไม่มีข่าวบริษัท — เรื่องเล่า AI-capex/ซอฟต์แวร์อาจกลบงบได้",
+        "เป้าเฉลี่ยกระจาย ($292–$427 ตามแหล่ง) การผ่านเกณฑ์ +20% ขึ้นกับว่าใช้ค่าเฉลี่ยไหน ตัวเลขระมัดระวัง ~$342 ผ่านแค่ ~3pp",
+        "มหภาคเป็น WAIT (30/100) VIX ~23–26 multiple ของหุ้นเติบโต duration ยาวไวต่อดอกเบี้ยที่สุดในกลุ่มซอฟต์แวร์"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ย Fed 3.75–4.00% หลังขึ้น 16 ก.ย. CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ~95% (17–18 พ.ย.) ที่เหลือเป็น 50bp",
+        "inflationNote": "CPI ต.ค. ร้อน (core +0.3% m/m เทียบคาด 0.2%) core PCE ก.ย. 3.1% y/y PCE ต.ค. (25 พ.ย.) ออกหนึ่งสัปดาห์ก่อนงบ",
+        "sectorImpact": "ซอฟต์แวร์ multiple สูง duration ยาวไวต่อดอกเบี้ยที่สุดในกลุ่มเทค FOMC 9 ธ.ค. ที่ hawkish หนึ่งสัปดาห์หลังงบอาจจำกัดการวิ่งหลังงบ",
+        "summary": "MEDIUM — งบสำคัญที่สุด แต่มหภาค WAIT (30/100) และการขึ้นดอกเบี้ยหนึ่งสัปดาห์ถัดมา จึงควรเข้าตอนย่อและขายทำกำไรบางส่วนที่ TP1"
+      },
+      "entryStrategy": {
+        "verdict": "BUY (Speculative) — รายได้ product เร่งตัวก่อนงบ 2 ธ.ค. ที่ยืนยันแล้ว หลังกลุ่มถูกลดมูลค่า ~25% median ถึงวัน catalyst ของ core -6.5% โดย 65% ของ picks ติดลบ ณ วัน event ราคาปัจจุบันจึงไม่ใช่จุดเข้าหลัก เข้าที่ Entry 2 ($258–268) ขายทำกำไรบางส่วนที่ TP1 ก่อน FOMC 9 ธ.ค.",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ไม่ใช่จุดเข้าหลัก median ถึงวัน catalyst ของ core -6.5% (n=157, 65% ติดลบ)", "timing": "ตอนนี้" },
+          { "note": "ย่อก่อนงบ / โซน low วันที่ 5 พ.ย. ($269.54) — จุดเข้าหลัก", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงหนัก — เฉพาะเมื่อการเทขายซอฟต์แวร์ลากยาว", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Base — งบดี + การเติบโตรายได้ product คงที่ ~35%+ กลับไประดับ 11 พ.ย. (~$299) และสูงกว่า กรอบ ~2 สัปดาห์" },
+        "tp2": { "note": "Bull — เร่งตัวอีก + เปิดเผยรายได้ AI เป้าเฉลี่ย Barchart ~$342" },
+        "tp3": { "note": "Moon — ทำ high ใหม่เหนือ $368.89 ไปหาเป้าเฉลี่ย Benzinga $402 / Evercore $430 กรอบ 3–6 เดือน" },
+        "stopLoss": {
+          "tightNote": "-14% — กว้างกว่า medianMAE ของ earnings_beat (-9.5%, n=89)",
+          "hardNote": "-22% — ยืนยันการเติบโตชะลอ multiple ถูก reset",
+          "rrNote": "จากกลาง Entry 2 ($263) ถึง tight stop เทียบกับ TP2",
+          "rrWarning": "R/R ดี ✅"
+        }
+      },
+      "estimateDates": [
+        { "event": "งบ Q3 FY2027", "note": "การเติบโตรายได้ product เทียบ 37% ใน Q2" },
+        { "event": "ประชุม FOMC", "note": "ตลาด price การขึ้น 25bp ~95%" }
+      ]
+    }
+  }
+}

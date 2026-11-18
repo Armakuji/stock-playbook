@@ -1,0 +1,176 @@
+{
+  "ticker": "CRM",
+  "companyName": "Salesforce, Inc.",
+  "companyDescription": "Enterprise CRM / AI agents · Agentforce + Data Cloud are the AI monetization story; the stock is the market's proxy for 'AI disrupts seat-based SaaS' fear · Q3 FY27 results Dec 2, 2026 AMC",
+  "exchange": "NYSE",
+  "generatedAt": "2026-11-18T17:10:00.000Z",
+  "price": 189.45,
+  "priceChange": -2.61,
+  "priceNote": "Self-fetched (Yahoo chart API, Nov 18, 2026 intraday): $189.45 (-2.6%), after -9.4% on Nov 17 to $194.52 — its worst day since May 2024 — in a software rout ahead of the Anthropic IPO (ServiceNow -6.5%, Intuit ~-7%). Closed $217.84 on Nov 13. 1-year closing range $150.12–$266.23.",
+  "marketCap": "~$180B",
+  "sector": "Technology / Enterprise Software",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 0,
+  "summary": "A sentiment-driven washout into a dated print. CRM fell ~13% in two sessions (Nov 17–18) on AI-disruption fears and Anthropic IPO supply, with no company news. Q3 FY27 results are confirmed for Dec 2 after the close, against company guidance of $11.42–11.50B revenue. Consensus ~$245 (52 analysts) implies +29%, but targets are falling (Morgan Stanley $187 Equal Weight, BofA $160 Underperform), so the gate clears on a stale-skewed average. Mega-cap self-check: a +20% move needs a re-rating, not a beat — the realistic path is gap-filling the Nov 17 drop on an Agentforce/RPO beat. Core at-catalyst median -6.5% (n=157) → Entry 2 preferred. Base +12% is a ~2-week horizon, near the 14d P75 (+10.8%). แนะนำ 5–8% ของ capital เท่านั้น.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q3 FY2027 earnings — Agentforce / Data Cloud + Q4 guide",
+      "description": "Confirmed for Wednesday Dec 2, 2026 after the close, webcast 5:00 p.m. ET (company IR, Nov 10). Guide: Q3 revenue $11.42–11.50B. The print needs to show AI (Agentforce) revenue and cRPO holding up to answer the 'seat compression' bear case.",
+      "urgencyLabel": "14 DAYS",
+      "dateBadge": "Dec 2, 2026",
+      "catalystDate": "2026-12-02",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🤖",
+      "name": "Anthropic IPO — supply + sentiment overhang",
+      "description": "The Nov 17 software selloff was tied to the pending Anthropic IPO (AI-native competition narrative + new supply for AI allocations). The IPO's pricing and reception shape software sentiment into the print. No confirmed pricing date found.",
+      "urgencyLabel": "PENDING",
+      "dateBadge": "Pending",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Narrative risk dominates: the selloff was about AI-native disruption of seat-based software, not numbers. A clean beat may not reverse it if Q4 guidance or cRPO is merely in line.",
+    "Analyst targets are falling: Morgan Stanley downgraded to Equal Weight ($187), BofA reinstated Underperform ($160), Northland downgraded to Market Perform ($264). The $245 average is stale-skewed.",
+    "Mega-cap physics: +20% within weeks on a ~$180B company requires a re-rating; the core lane's 14d P75 max gain is only +10.8%.",
+    "Further supply/sentiment pressure from the Anthropic IPO and AI capex debates could push CRM toward the $150 1-year low regardless of results.",
+    "Macro is WAIT (30/100): the S&P sits on its 200-day at a 5-month low with VIX ~23–26."
+  ],
+  "estimateDates": [
+    { "event": "Q3 FY2027 earnings", "dateRange": "Dec 2, 2026", "note": "Revenue guide $11.42–11.50B; Agentforce + cRPO", "est": "Rev ~$11.46B", "highlight": "blue" },
+    { "event": "FOMC decision", "dateRange": "Dec 9, 2026", "note": "+25bp ~95% priced", "est": "+25bp", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -15, "price": 161.03 },
+    { "label": "Base", "color": "yellow", "pct": 12, "price": 212.18 },
+    { "label": "Bull", "color": "green", "pct": 29.4, "price": 245.16 },
+    { "label": "Moon", "color": "purple", "pct": 40, "price": 265.23 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (52 analysts)", "target": 245.16, "rating": "Buy" },
+    { "firm": "Northland (downgrade to Market Perform)", "target": 264, "rating": "Market Perform" },
+    { "firm": "Morgan Stanley (downgrade to Equal Weight)", "target": 187, "rating": "Equal Weight" },
+    { "firm": "BofA (reinstated)", "target": 160, "rating": "Underperform" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds 3.75–4.00% after the Sep 16 hike. CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~95% (Nov 17–18), with the remainder on 50bp.",
+    "inflationNote": "Oct CPI ran hot (core +0.3% m/m vs 0.2%). Sep core PCE 3.1% y/y. Oct PCE (Nov 25) lands a week before the print.",
+    "sectorImpact": "Large-cap software is cash-generative, so rates matter less than the AI-disruption narrative. Higher long yields still compress the multiple at the margin.",
+    "summary": "MEDIUM — the stock's driver is sector narrative, but macro is WAIT (30/100). Let PCE (Nov 25) pass before adding; size the position to survive a gap either way on Dec 2."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 189.45, "note": "Current price — not preferred: core at-catalyst median -6.5% (n=157, 65% underwater)", "timing": "Now" },
+      { "label": "Entry 2", "level": 178, "rangeMax": 185, "note": "Capitulation zone into PCE / pre-print — preferred", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 165, "note": "Deep dip toward the $150 1-year low", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 212.18, "pct": 12, "note": "Base — beat + steady guide fills part of the Nov 17 gap (~$212–218). Horizon ~2 weeks." },
+    "tp2": { "price": 245.16, "pct": 29.4, "note": "Bull — Agentforce acceleration re-rates toward the $245 consensus. 1–3 months." },
+    "tp3": { "price": 265.23, "pct": 40, "note": "Moon — back to the $266 1-year high on an AI-monetization inflection. 6+ months.", "moon": true },
+    "stopLoss": {
+      "tight": 164,
+      "tightPct": -13.43,
+      "tightNote": "-13% — wider than the earnings_beat medianMAE (-9.5%, n=89).",
+      "hard": 150,
+      "hardPct": -20.82,
+      "hardNote": "-21% — the 1-year low; below it the disruption narrative has won.",
+      "riskReward": "3.6 : 1",
+      "rrNote": "Entry 2 midpoint ($181.50) to tight stop vs TP2",
+      "rrWarning": "Good R/R ✅"
+    },
+    "verdict": "BUY (Speculative) — a sentiment washout into a confirmed Dec 2 print, +29% to consensus. The measured core at-catalyst median is -6.5% with 65% of picks underwater at their event, so report price is not the default entry: Entry 2 ($178–185) is preferred. Mega-cap: expect a gap-fill (TP1), not +30%, inside 14 days.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Software names usually drift into prints. This setup is a pre-print washout instead: -13% in two sessions with no company news, so expectations are reset low.",
+    "preRunupTiming": "Final 1–2 weeks before Dec 2",
+    "preRunupPct": "-13% Nov 13 → Nov 18 (washout, not a run-up)",
+    "postWin": {
+      "avgPct": 8,
+      "range": "+5% to +11%",
+      "note": "CRM rose ~11% after its Q3 FY25 beat (Dec 4, 2024). A beat from a washed-out base fits the upper half.",
+      "exampleDate": "Dec 4, 2024 (CRM Q3 FY25)"
+    },
+    "postLose": {
+      "avgPct": -12,
+      "range": "-6% to -20%",
+      "note": "CRM fell ~20% on May 30, 2024 after a revenue miss and soft guide — its worst day since 2004 at the time.",
+      "exampleDate": "May 30, 2024 (CRM Q1 FY25)"
+    },
+    "spotSizing": {
+      "pct": 6,
+      "reason": "6% (spot). earnings_beat sits at +4.2pp medianExcess vs +4.1pp overall (n=89) — neutral, neither laggard nor leader. Mega-cap with a narrative headwind and a WAIT macro tape: mid sizing, scaled in."
+    },
+    "stopPreCatalyst": { "pct": -13.43, "price": 164, "note": "Wider than the earnings_beat medianMAE (-9.5%). Below ~$164 before Dec 2, the narrative is still winning — step aside." },
+    "stopPostCatalyst": { "pct": -10, "note": "If Q4 guide or cRPO disappoints and the stock closes below the pre-print low, exit — May 2024 shows how far a guide miss can run." }
+  },
+  "comparableCases": [
+    { "ticker": "CRM", "event": "Q3 FY25 beat + Agentforce enthusiasm", "date": "Dec 2024", "movePct": 11, "days": 1, "outcome": "good", "note": "Same company, same quarter of the fiscal year. A beat with an AI-monetization story produced a double-digit day." },
+    { "ticker": "CRM", "event": "Q1 FY25 revenue miss + soft guide", "date": "May 2024", "movePct": -20, "days": 1, "outcome": "bad", "note": "Downside template: a guide miss produced CRM's worst day in two decades." },
+    { "ticker": "SNOW", "event": "Fiscal Q3 product revenue growth slowed despite a revenue beat", "date": "Dec 2025", "movePct": -8, "days": 1, "outcome": "bad", "note": "In the current AI-software regime, a headline beat is not enough if the growth metric the market watches decelerates." }
+  ],
+  "sources": [
+    "https://investor.salesforce.com/news/news-details/2026/Salesforce-Announces-Date-of-Third-Quarter-Fiscal-2027-Earnings-Release-and-Webcast/default.aspx",
+    "https://www.stocktitan.net/news/CRM/salesforce-announces-date-of-third-quarter-fiscal-2027-earnings-sesuyuv0s3or.html",
+    "https://www.benzinga.com/markets/equities/26/11/63359152/stock-market-today-salesforce-software-selloff-anthropic-ipo-nvidia-november-17",
+    "https://www.tradingkey.com/analysis/stocks/us-stocks/262310309-salesforce-worst-day-since-2024-ai-fears-software-selloff-189-50-support-november-18-2026-tradingkey",
+    "https://finance.yahoo.com/news/why-analysts-still-see-big-203300033.html",
+    "https://finance.yahoo.com/markets/stocks/articles/bofa-slaps-salesforce-underperform-rating-153256535.html",
+    "https://www.tipranks.com/news/the-fly/salesforce-downgraded-to-market-perform-from-outperform-at-northland-thefly",
+    "https://newsable.asianetnews.com/markets/crm-stock-snags-second-rating-downgrade-this-month-analyst-says-risk/reward-on-salesforce-balanced-in-absence-of-notable-growth-inflection-articleshow-1b1u9c8",
+    "https://www.tikr.com/blog/snowflake-stock-sinks-over-8-as-product-revenue-growth-slows-in-fiscal-q3",
+    "https://www.fool.com/investing/2026/11/16/theres-now-100-chance-fed-rate-hike-in-december-thats-not-worst-news-for-wall-street/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "การล้างแรงขายจาก sentiment ก่อนงบที่มีวันแน่นอน CRM ลง ~13% ในสองวัน (17–18 พ.ย.) จากความกลัวว่า AI จะ disrupt และอุปทานหุ้นจาก IPO ของ Anthropic โดยไม่มีข่าวบริษัท งบ Q3 FY27 ยืนยันวันที่ 2 ธ.ค. หลังตลาดปิด guide รายได้ $11.42–11.50B เป้าเฉลี่ย ~$245 (52 นักวิเคราะห์) = +29% แต่เป้ากำลังลดลง (Morgan Stanley $187 Equal Weight, BofA $160 Underperform) จึงผ่านเกณฑ์ด้วยค่าเฉลี่ยที่เอียงไปทางเป้าเก่า เช็ก mega-cap: การขึ้น +20% ต้องการ re-rating ไม่ใช่แค่งบดี — เส้นทางที่เป็นจริงคือปิด gap ของวันที่ 17 พ.ย. จากงบ Agentforce/RPO ที่ดีกว่าคาด median ถึงวัน catalyst ของ core -6.5% (n=157) → เข้าที่ Entry 2 เป็นหลัก Base +12% เป็นกรอบ ~2 สัปดาห์ ใกล้ P75 14 วัน (+10.8%) แนะนำ 5–8% ของ capital เท่านั้น",
+      "priceNote": "ดึงราคาเอง (Yahoo chart API 18 พ.ย. 2026 ระหว่างวัน): $189.45 (-2.6%) หลังลง -9.4% เมื่อ 17 พ.ย. เหลือ $194.52 — แย่สุดตั้งแต่ พ.ค. 2024 — ในการเทขายซอฟต์แวร์ก่อน IPO ของ Anthropic (ServiceNow -6.5%, Intuit ~-7%) ปิด $217.84 เมื่อ 13 พ.ย. กรอบราคาปิด 1 ปี $150.12–$266.23",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "งบ Q3 FY2027 — Agentforce / Data Cloud + guide Q4", "description": "ยืนยันวันพุธที่ 2 ธ.ค. 2026 หลังตลาดปิด webcast 17:00 ET (IR บริษัท 10 พ.ย.) guide รายได้ Q3 $11.42–11.50B งบต้องโชว์รายได้ AI (Agentforce) และ cRPO ที่ยังแข็ง เพื่อตอบ bear case เรื่องจำนวน seat ลดลง" },
+        { "name": "IPO ของ Anthropic — แรงกดด้านอุปทาน + sentiment", "description": "การเทขายซอฟต์แวร์ 17 พ.ย. เชื่อมโยงกับ IPO ของ Anthropic ที่ใกล้เข้ามา (เรื่องเล่าคู่แข่ง AI-native + อุปทานใหม่สำหรับเงินลงทุนธีม AI) ราคาและการตอบรับของ IPO จะกำหนด sentiment ของซอฟต์แวร์ก่อนงบ ยังไม่พบวันกำหนดราคา" }
+      ],
+      "risks": [
+        "ความเสี่ยงเรื่องเล่าเป็นหลัก: การเทขายเป็นเรื่อง AI-native disrupt ซอฟต์แวร์แบบคิดตาม seat ไม่ใช่ตัวเลข งบดีอาจไม่พลิกสถานการณ์ถ้า guide Q4 หรือ cRPO แค่ตามคาด",
+        "เป้านักวิเคราะห์กำลังลด: Morgan Stanley ลดเป็น Equal Weight ($187), BofA กลับมาที่ Underperform ($160), Northland ลดเป็น Market Perform ($264) ค่าเฉลี่ย $245 เอียงไปทางเป้าเก่า",
+        "ฟิสิกส์ของ mega-cap: +20% ในไม่กี่สัปดาห์ของบริษัท ~$180B ต้องการ re-rating ส่วน P75 ของ max gain 14 วันใน lane core แค่ +10.8%",
+        "แรงกดด้านอุปทาน/sentiment เพิ่มเติมจาก IPO ของ Anthropic และประเด็น AI capex อาจกด CRM ไปหา low 1 ปี $150 ไม่ว่างบจะออกมาอย่างไร",
+        "มหภาคเป็น WAIT (30/100): S&P อยู่บนเส้น 200 วันที่ต่ำสุดรอบ 5 เดือน VIX ~23–26"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ย Fed 3.75–4.00% หลังขึ้น 16 ก.ย. CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ~95% (17–18 พ.ย.) ที่เหลือเป็น 50bp",
+        "inflationNote": "CPI ต.ค. ร้อน (core +0.3% m/m เทียบคาด 0.2%) core PCE ก.ย. 3.1% y/y PCE ต.ค. (25 พ.ย.) ออกหนึ่งสัปดาห์ก่อนงบ",
+        "sectorImpact": "ซอฟต์แวร์ขนาดใหญ่สร้างกระแสเงินสดได้ ดอกเบี้ยจึงสำคัญน้อยกว่าเรื่องเล่า AI disrupt แต่ yield ระยะยาวที่สูงขึ้นยังกด multiple อยู่บ้าง",
+        "summary": "MEDIUM — ตัวขับเคลื่อนคือเรื่องเล่าของกลุ่ม แต่มหภาคเป็น WAIT (30/100) ให้ PCE (25 พ.ย.) ผ่านไปก่อนเพิ่มไม้ และถือขนาดที่รับ gap ได้ทั้งสองทางในวันที่ 2 ธ.ค."
+      },
+      "entryStrategy": {
+        "verdict": "BUY (Speculative) — การล้างแรงขายจาก sentiment ก่อนงบ 2 ธ.ค. ที่ยืนยันแล้ว +29% ถึงเป้าเฉลี่ย median ถึงวัน catalyst ของ core -6.5% โดย 65% ของ picks ติดลบ ณ วัน event ราคาปัจจุบันจึงไม่ใช่จุดเข้าหลัก เข้าที่ Entry 2 ($178–185) Mega-cap: คาดการปิด gap (TP1) ไม่ใช่ +30% ใน 14 วัน",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ไม่ใช่จุดเข้าหลัก median ถึงวัน catalyst ของ core -6.5% (n=157, 65% ติดลบ)", "timing": "ตอนนี้" },
+          { "note": "โซนเทขายหนักช่วง PCE / ก่อนงบ — จุดเข้าหลัก", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงหนักเข้าใกล้ low 1 ปี $150", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Base — งบดี + guide ทรงตัว ปิด gap ของ 17 พ.ย. บางส่วน (~$212–218) กรอบ ~2 สัปดาห์" },
+        "tp2": { "note": "Bull — Agentforce เร่งตัว re-rate ไปเป้าเฉลี่ย $245 กรอบ 1–3 เดือน" },
+        "tp3": { "note": "Moon — กลับไป high 1 ปี $266 จากจุดเปลี่ยนการสร้างรายได้จาก AI กรอบ 6 เดือนขึ้นไป" },
+        "stopLoss": {
+          "tightNote": "-13% — กว้างกว่า medianMAE ของ earnings_beat (-9.5%, n=89)",
+          "hardNote": "-21% — low 1 ปี ถ้าหลุดแปลว่าเรื่องเล่า disrupt ชนะ",
+          "rrNote": "จากกลาง Entry 2 ($181.50) ถึง tight stop เทียบกับ TP2",
+          "rrWarning": "R/R ดี ✅"
+        }
+      },
+      "estimateDates": [
+        { "event": "งบ Q3 FY2027", "note": "guide รายได้ $11.42–11.50B; Agentforce + cRPO" },
+        { "event": "ประชุม FOMC", "note": "ตลาด price การขึ้น 25bp ~95%" }
+      ]
+    }
+  }
+}

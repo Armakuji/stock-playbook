@@ -1,0 +1,320 @@
+{
+  "ticker": "SPCX",
+  "companyName": "Space Exploration Technologies Corp.",
+  "companyDescription": "SpaceX · Starlink broadband (10M+ subscribers, 61% of revenue) + Falcon 9/Heavy launch + Starship V3 development · Largest US IPO on record (Jun 12, 2026, $85.7B raised)",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-18T16:00:00.000Z",
+  "price": 141.77,
+  "priceChange": 0.05,
+  "priceNote": "Live $141.77 (+0.05%) on Nov 18, 2026 (live-prices cache), -1% vs the Nov 11 report ($143.09). The 180-day lockup expiry is listed as Dec 8 by one tracker vs Dec 9 here; neither is confirmed from the 424B4 in this run.",
+  "marketCap": "~$2.1T",
+  "sector": "Industrials / Aerospace & Space (Launch + Satellite Broadband)",
+  "verdict": "HOLD",
+  "scoreLabel": "Speculative",
+  "score": 62,
+  "summary": "Refresh (no thesis change): the primary dated event is still the post-IPO 180-day lockup expiry around Dec 8–9 (sources conflict by a day). The August unlock of ~911M shares drove a ~14% single-day drop to an all-time low, so supply is the near-term risk, not the upside catalyst. Starship ship-catch/reflight is guided for end-2026 or early 2027 (undated). Consensus (~$210) implies ~+48%. product_launch is a core tier-2 LAGGARD (+1.1pp medianExcess vs +4.1pp overall, n=15), so this pick needs visibly higher conviction — sizing is cut to 3%. Core at-catalyst median -6.5% (n=157) → Entry 2 preferred, ideally after the lockup. แนะนำ 3% ของ capital เท่านั้น.",
+  "catalysts": [
+    {
+      "icon": "🔓",
+      "name": "Post-IPO lockup expiry — bulk of shares tradable",
+      "description": "The bulk of the remaining locked shares become tradable by Dec 9, 2026 (supply headwind). Musk's stake stays locked until Jun 2027.",
+      "urgencyLabel": "28 DAYS",
+      "dateBadge": "Dec 9, 2026",
+      "catalystDate": "2026-12-09",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🚀",
+      "name": "Starship Flight 15 — booster + ship catch attempt",
+      "description": "Musk said in August the company will 'probably catch the ship with the tower in a few months', with the first ship reflight expected end-2026 or early 2027. No flight date has been announced.",
+      "urgencyLabel": "~Q1 2027",
+      "dateBadge": "~Q1 2027",
+      "badgeColor": "yellow",
+      "dotColor": "gray",
+      "catalystDate": "2027-03-31"
+    }
+  ],
+  "risks": [
+    "Starship has a real, recent failure history — Flight 12 (May 22) failed its flip-and-boostback maneuver, and Flight 13 needs to demonstrate a fix, not just attempt the same maneuver again. Another failure would extend the post-IPO drawdown.",
+    "Extreme analyst target dispersion ($190 to $800) reflects genuine, unresolved disagreement about valuation methodology this early in the company's public life — treat any single number, including this report's gate figures, as a rough estimate, not a settled consensus",
+    "Down 30% since debut already — the stock has shown it can move sharply on sentiment around Starship specifically, independent of the actually-profitable Starlink business",
+    "At a ~$2.1-2.3T valuation, SPCX is priced for enormous execution success across both Starlink scaling and Starship commercialization — a lot of the bull case is already reflected in the price even after the pullback",
+    "Newly public (5 weeks old as of this report) — limited trading history means technical support/resistance levels and typical volatility patterns are not yet well-established"
+  ],
+  "estimateDates": [
+    {
+      "event": "Lockup expiry",
+      "dateRange": "Dec 9, 2026",
+      "note": "Supply event",
+      "est": "Headwind",
+      "highlight": "yellow"
+    },
+    {
+      "event": "Starship Flight 15",
+      "dateRange": "~Q1 2027",
+      "note": "Catch attempt",
+      "est": "TBD",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -32.15,
+      "price": 96.19
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 21.15,
+      "price": 171.76
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 48.3,
+      "price": 210.24
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 73.49,
+      "price": 245.96
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Raymond James",
+      "target": 800,
+      "rating": "Strong Buy",
+      "note": "Extreme outlier — supporting color only, not the gate basis"
+    },
+    {
+      "firm": "Stifel",
+      "target": 190,
+      "rating": "Buy",
+      "note": "Reiterated ahead of the Flight 13 launch"
+    },
+    {
+      "firm": "Consensus (30 analysts)",
+      "target": 210.28,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Recent 3-month average",
+      "target": 245.96,
+      "rating": "Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds 3.75–4.00% after the Sep 16 hike. CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~95% (Nov 17–18), with the remainder on 50bp. Waller has floated 50bp; Williams pushed back.",
+    "inflationNote": "Oct CPI ran hot (core +0.3% m/m vs 0.2%). Sep core PCE 3.1% y/y. Oct PCE (Nov 25) and Nov CPI (Dec 10) are next.",
+    "sectorImpact": "MEDIUM-HIGH. As a newly-public mega-cap trading on execution narrative more than established fundamentals-multiple discipline, SPCX is more exposed than a seasoned mega-cap to a broad risk-off shock, especially with Flight 13 landing just before the dense Jul 27-Aug 1 macro week.",
+    "summary": "MEDIUM — a mega-cap growth name with an equity-supply event inside the WAIT window (30/100). The lockup matters more than the Fed."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 141.77,
+        "note": "Current price — not preferred: core at-catalyst median -6.5% (n=157, 65% underwater)",
+        "timing": "Now (small)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 125,
+        "rangeMax": 135,
+        "note": "Further pre-flight dip zone — better R/R, though a real binary event is imminent either way",
+        "timing": "If dips before Jul 16",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 104,
+        "note": "Deep dip — post-Flight-13-failure scenario or broad macro selloff",
+        "timing": "Deep dip only"
+      }
+    ],
+    "tp1": {
+      "price": 171.76,
+      "pct": 21.15,
+      "note": "Base — Flight 13 succeeds cleanly, market relief rally"
+    },
+    "tp2": {
+      "price": 210.24,
+      "pct": 48.3,
+      "note": "Bull — clean Flight 13 + Starlink growth continues, broad consensus target reached"
+    },
+    "tp3": {
+      "price": 245.96,
+      "pct": 73.49,
+      "note": "Moon — Flight 13 success validates V3 cost targets, 3-month average target reached",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 116,
+      "tightPct": -18.18,
+      "tightNote": "-18% — wider than the product_launch medianMAE (-17.4%).",
+      "hard": 98.88,
+      "hardPct": -30.25,
+      "hardNote": "Deep breach — another Starship failure, thesis-level setback",
+      "riskReward": "5.7 : 1",
+      "rrNote": "Entry 2 midpoint ($130.00) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Good R/R ✅"
+    },
+    "verdict": "HOLD / accumulate after the lockup — the Dec 8–9 unlock is a supply event (the August unlock was -14% in a day). The measured core at-catalyst median is -6.5% with 65% of picks underwater at their event, and product_launch is a tier-2 laggard, so Entry 2 ($125–135) after the unlock is preferred.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "product_launch",
+    "preRunup": "As a newly-public stock with no long trading history, SPCX doesn't yet have an established pre-event drift pattern — the stock has instead been in a steady post-IPO decline heading into Flight 13, suggesting the market is pricing in real failure risk rather than assuming success.",
+    "preRunupTiming": "no established pattern yet — 5 weeks of trading history",
+    "preRunupPct": "-1% since Nov 11",
+    "postWin": {
+      "avgPct": 20,
+      "range": "+10% to +30%",
+      "note": "No same-company precedent exists for a post-IPO Starship test result yet. Sized using the standard pattern for a major aerospace test-flight success reversing recent sentiment-driven weakness — a clean Flight 13 would directly address the exact concern (flip-and-boostback failure) that has weighed on the stock.",
+      "exampleDate": "no same-company precedent yet — first major test post-IPO"
+    },
+    "postLose": {
+      "avgPct": -20,
+      "range": "-12% to -30%",
+      "note": "Flight 12's flip-and-boostback failure (May 22, pre-IPO) is the closest same-company precedent for a Starship test setback, though the stock wasn't yet public then. Sized using typical aerospace-test-failure reactions plus the added sensitivity of a newly-public, sentiment-driven stock.",
+      "exampleDate": "May 2026 (Flight 12, pre-IPO)"
+    },
+    "spotSizing": {
+      "pct": 3,
+      "reason": "3% (cut from 4%). product_launch is a core tier-2 LAGGARD (+1.1pp medianExcess vs +4.1pp overall, n=15), and the dated event is a supply unlock, not an upside catalyst."
+    },
+    "stopPreCatalyst": {
+      "pct": -18.18,
+      "price": 116,
+      "note": "Wider than the product_launch medianMAE (-17.4%). A break below ~$116 before the event means the market is pricing a bad outcome."
+    },
+    "stopPostCatalyst": {
+      "pct": -20,
+      "note": "If Flight 13 fails the flip-and-boostback maneuver again, exit — don't average into a repeated technical failure"
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "SPCX",
+      "event": "Starship Flight 12 — Flip-and-Boostback Maneuver Failure",
+      "date": "May 2026",
+      "movePct": -15,
+      "days": 3,
+      "outcome": "bad",
+      "note": "Same-company precedent (pre-IPO) for how the market/company narrative reacted to the exact failure mode Flight 13 needs to fix — directly relevant to the binary outcome ahead."
+    },
+    {
+      "ticker": "SPCX",
+      "event": "Post-IPO decline amid Starship uncertainty",
+      "date": "Jun-Jul 2026",
+      "movePct": -30,
+      "days": 30,
+      "outcome": "bad",
+      "note": "Same-company precedent for the stock's demonstrated sensitivity to Starship sentiment even without a specific failure event — shows how much of the current price already reflects caution."
+    },
+    {
+      "ticker": "RKLB",
+      "event": "Q1 2026 Earnings Beat — Record Revenue",
+      "date": "May 2026",
+      "movePct": 34,
+      "days": 1,
+      "outcome": "good",
+      "note": "Comparable space-sector reaction to a strong positive surprise — useful proxy for the magnitude a clean Flight 13 success could produce, given no exact same-event precedent exists for SPCX yet."
+    }
+  ],
+  "sources": [
+    "https://www.wptv.com/business/company-news/more-than-900-million-spacex-shares-unlock-today-heres-what-to-know",
+    "https://pro.stockalarm.io/blog/spacex-ipo-lockup-financials",
+    "https://www.allinvestview.com/earnings/SPCX/q3-2026/",
+    "https://stocktwits.com/news-articles/markets/equity/spacex-debut-quarter-chanos-starship-forecast-cut-wall-street-upside/cZDiymyRBiO",
+    "https://www.tikr.com/blog/spacex-stock-starship-flight-14-orbital-launch-starlink-v3",
+    "https://www.investing.com/news/analyst-ratings/raymond-james-reiterates-strong-buy-on-spacex-stock-800-target-93CH-4789043",
+    "https://www.investing.com/news/analyst-ratings/stifel-reiterates-buy-on-spacex-stock-190-target-ahead-of-launch-93CH-4789484",
+    "https://www.fool.com/investing/2026/07/14/x-wall-street-analysts-priced-spacex-here-is-the-t/",
+    "https://www.cnbc.com/2026/05/21/spacex-starlink-growth-profit-nasdaq-ipo.html",
+    "https://sacra.com/c/spacex/",
+    "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+    "https://www.investing.com/news/economy-news/fed-rate-hike-odds-in-december-at-88-after-hot-cpi-cme-fedwatch-5017585",
+    "https://www.fool.com/investing/2026/11/16/theres-now-100-chance-fed-rate-hike-in-december-thats-not-worst-news-for-wall-street/",
+    "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-17-224356767.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "รีเฟรช (thesis ไม่เปลี่ยน): event หลักที่มีวันยังเป็นการปลด lockup 180 วันหลัง IPO ราว 8–9 ธ.ค. (แหล่งต่างกันหนึ่งวัน) การปลดหุ้น ~911M หุ้นใน ส.ค. ทำให้ร่วง ~14% ในวันเดียวลงไปต่ำสุดตลอดกาล อุปทานหุ้นจึงเป็นความเสี่ยงระยะใกล้ ไม่ใช่ catalyst ด้านบวก การจับ ship/บินซ้ำของ Starship คาดปลายปี 2026 หรือต้นปี 2027 (ยังไม่มีวัน) เป้าเฉลี่ย (~$210) = ~+48% product_launch เป็น LAGGARD ของ tier-2 ฝั่ง core (+1.1pp เทียบ +4.1pp รวม, n=15) จึงต้องมี conviction สูงกว่าปกติ — ลดขนาดไม้เป็น 3% median ถึงวัน catalyst ของ core -6.5% (n=157) → เข้าที่ Entry 2 โดยเฉพาะหลังปลด lockup แนะนำ 3% ของ capital เท่านั้น",
+      "priceNote": "ราคาสด $141.77 (+0.05%) 18 พ.ย. 2026 ลง 1% จากรายงาน 11 พ.ย. ($143.09) วันปลด lockup 180 วันระบุเป็น 8 ธ.ค. ในแหล่งหนึ่ง และ 9 ธ.ค. ในรายงานนี้ ยังไม่ได้ยืนยันจาก 424B4 ในรอบนี้",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        {
+          "name": "หุ้นหลัง IPO ปลด lockup — หุ้นส่วนใหญ่ซื้อขายได้",
+          "description": "หุ้นที่ยังล็อกส่วนใหญ่ซื้อขายได้ภายใน 9 ธ.ค. 2026 (แรงขาย) หุ้นของ Musk ยังล็อกถึง มิ.ย. 2027"
+        },
+        {
+          "name": "Starship เที่ยวบิน 15 — พยายามจับ booster + ยาน",
+          "description": "คาดใน พ.ย. ตาม call Q3; ไม่มีวันยืนยัน"
+        }
+      ],
+      "risks": [
+        "Starship มีประวัติล้มเหลวจริงล่าสุด — Flight 12 (22 พ.ค.) ล้มเหลว flip-and-boostback Flight 13 ต้องพิสูจน์ว่าแก้ได้จริง ไม่ใช่แค่ลองซ้ำ",
+        "Target กระจายมากผิดปกติ ($190-800) สะท้อนความเห็นต่างจริงเรื่อง valuation methodology สำหรับบริษัทที่เพิ่ง IPO — มองเลขไหนก็ตามเป็นประมาณการ",
+        "ร่วง 30% จากวันเปิดตัวแล้ว — หุ้นแสดงว่าขยับแรงตาม sentiment Starship ได้ อิสระจากธุรกิจ Starlink ที่กำไรจริง",
+        "มูลค่า ~$2.1-2.3T price in ความสำเร็จ execution สูงมากทั้ง Starlink scaling และ Starship commercialization แม้ย่อแล้ว",
+        "เพิ่งเข้าตลาด (5 สัปดาห์) — ประวัติเทรดจำกัด แนวรับ/ต้านทางเทคนิคัลและ pattern ผันผวนยังไม่ชัดเจน"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ย Fed 3.75–4.00% หลังขึ้น 16 ก.ย. CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ~95% (17–18 พ.ย.) ที่เหลือเป็น 50bp Waller เปิดทาง 50bp ส่วน Williams ค้าน",
+        "inflationNote": "CPI ต.ค. ร้อน (core +0.3% m/m เทียบคาด 0.2%) core PCE ก.ย. 3.1% y/y ตัวถัดไปคือ PCE ต.ค. (25 พ.ย.) และ CPI พ.ย. (10 ธ.ค.)",
+        "sectorImpact": "ปานกลาง-สูง mega-cap เพิ่ง IPO ที่เทรดตาม execution narrative มากกว่า discipline multiple แบบ mega-cap เก่า expose กับ risk-off กว้างมากกว่าปกติ โดยเฉพาะ Flight 13 มาก่อนสัปดาห์ macro หนาแน่น 27ก.ค.-1ส.ค.",
+        "summary": "MEDIUM — หุ้นเติบโตขนาดใหญ่ที่มี event อุปทานหุ้นในช่วง WAIT (30/100) การปลด lockup สำคัญกว่า Fed"
+      },
+      "entryStrategy": {
+        "verdict": "HOLD / สะสมหลังปลด lockup — การปลดหุ้น 8–9 ธ.ค. เป็น event ด้านอุปทาน (ส.ค. ร่วง -14% ในวันเดียว) median ถึงวัน catalyst ของ core -6.5% โดย 65% ของ picks ติดลบ ณ วัน event และ product_launch เป็น laggard ของ tier-2 จึงเข้าที่ Entry 2 ($125–135) หลังปลด lockup เป็นหลัก",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม่ใช่จุดเข้าหลัก median ถึงวัน catalyst ของ core -6.5% (n=157, 65% ติดลบ)",
+            "timing": "ตอนนี้ (เล็ก)"
+          },
+          {
+            "note": "โซนย่อเพิ่มก่อนบิน — R/R ดีกว่า แต่ binary event ใกล้จริงทั้งสองทาง",
+            "timing": "ถ้าย่อก่อน 16 ก.ค."
+          },
+          {
+            "note": "ร่วงลึก — สถานการณ์หลัง Flight 13 ล้มเหลวหรือ macro selloff กว้าง",
+            "timing": "Deep dip only"
+          }
+        ],
+        "tp1": {
+          "note": "Base — Flight 13 สำเร็จสะอาด rally บรรเทา"
+        },
+        "tp2": {
+          "note": "Bull — Flight 13 สำเร็จ + Starlink โตต่อเนื่อง แตะ consensus กว้าง"
+        },
+        "tp3": {
+          "note": "Moon — Flight 13 สำเร็จยืนยันเป้าต้นทุน V3 แตะ target เฉลี่ย 3 เดือน",
+          "moon": true
+        },
+        "stopLoss": {
+          "tightNote": "-18% — กว้างกว่า medianMAE ของ product_launch (-17.4%)",
+          "hardNote": "หลุดลึก = Starship ล้มเหลวอีกครั้ง thesis เจ็บหนัก",
+          "rrNote": "จากกลาง Entry 2 ($130.00) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "R/R ดี ✅"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "ปลด lockup",
+          "note": "แรงขาย"
+        },
+        {
+          "event": "Starship เที่ยวบิน 15",
+          "note": "พยายามจับ"
+        }
+      ]
+    }
+  }
+}
