@@ -1,0 +1,188 @@
+{
+  "ticker": "COGT",
+  "companyName": "Cogent Biosciences, Inc.",
+  "companyDescription": "Precision oncology / rare disease · bezuclastinib (selective KIT inhibitor) with three PDUFA dates: GIST combo Nov 30, 2026 (Priority Review), NonAdvanced Systemic Mastocytosis Dec 30, 2026, AdvSM Jun 29, 2027 · $791M cash, runway into late 2028 · commercial team in place",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-18T17:00:00.000Z",
+  "price": 28.66,
+  "priceChange": 2.91,
+  "priceNote": "Self-fetched (Yahoo chart API, Nov 18, 2026 intraday): $28.66 (+2.9%). Not in the live-prices cache. Down from $31.64 at the Nov 11 screen and near the 1-year closing low ($27.44, Nov 16), well below the 1-year high ($42.84). The pullback is sector-wide small/mid-cap biotech weakness into the S&P's 5-month low, not company news.",
+  "marketCap": "~$4.9B",
+  "sector": "Healthcare / Biotechnology — Oncology & Rare Disease",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 0,
+  "summary": "Two dated FDA decisions inside six weeks: bezuclastinib's GIST combination PDUFA is Nov 30 (Priority Review, 12 days out) and NonAdvanced Systemic Mastocytosis is Dec 30, with AdvSM on Jun 29, 2027. Cash is $791M (Sep 30), funding into late 2028, and the commercial team is hired. The stock has pulled back to $28.66, near its 1-year low, against a ~$54 May–Aug consensus (+88%; even a $45 best-effort target clears the 20% gate). fda_decision is a core tier-2 leader (+8.1pp medianExcess vs +4.1pp overall, n=11) — a mild tailwind only. Core at-catalyst median is -6.5% (n=157, 65% underwater), so Entry 2 is preferred. Base +25% spans both PDUFAs (~6 weeks), above the 14d P75 (+10.8%) by design.",
+  "catalysts": [
+    {
+      "icon": "🏛️",
+      "name": "PDUFA — bezuclastinib + sunitinib in GIST (Priority Review)",
+      "description": "FDA target action date for the GIST NDA under Priority Review (company Q3 2026 update). Second-line GIST is the larger near-term commercial indication; approval would make Cogent a commercial company before year-end.",
+      "urgencyLabel": "12 DAYS",
+      "dateBadge": "Nov 30, 2026",
+      "catalystDate": "2026-11-30",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🏛️",
+      "name": "PDUFA — bezuclastinib in NonAdvanced Systemic Mastocytosis",
+      "description": "FDA target action date Dec 30, 2026 for NonAdvSM, backed by the SUMMIT Phase 2 data. This is the second approval shot inside the window.",
+      "urgencyLabel": "6 WEEKS",
+      "dateBadge": "Dec 30, 2026",
+      "catalystDate": "2026-12-30",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🧬",
+      "name": "AdvSM PDUFA + SUMMIT switch sub-study data",
+      "description": "AdvSM has a Jun 29, 2027 PDUFA. The company plans a first look at patients switching from avapritinib (Ayvakit) to bezuclastinib — the competitive-positioning data point.",
+      "urgencyLabel": "2027",
+      "dateBadge": "Jun 29, 2027",
+      "catalystDate": "2027-06-29",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Binary FDA risk on both dates: a CRL or label restriction (safety, dosing) would hit hard. Small/mid-cap CRLs have produced -38% to -75% one-day moves (CAPR Jul 2025, ALDX Mar 2026).",
+    "Competition: avapritinib (Ayvakit) is entrenched in systemic mastocytosis, and the switch data are not out yet. Launch uptake against an incumbent is the post-approval question.",
+    "Spending ramps before revenue: Q3 net loss was $111.4M (vs $80.9M) with G&A up to $42.1M, plus $108.5M of non-cancelable manufacturing commitments.",
+    "Approval may be largely priced as 'expected' — 'sell the news' is common for Priority Review drugs with clean data.",
+    "Macro is WAIT (30/100) with VIX ~23–26; mid-cap biotech has been selling with the tape."
+  ],
+  "estimateDates": [
+    { "event": "GIST PDUFA (Priority Review)", "dateRange": "Nov 30, 2026", "note": "First commercial approval", "est": "Approval", "highlight": "blue" },
+    { "event": "NonAdvSM PDUFA", "dateRange": "Dec 30, 2026", "note": "Second label", "est": "Approval", "highlight": "blue" },
+    { "event": "AdvSM PDUFA", "dateRange": "Jun 29, 2027", "note": "Third label", "est": "Approval", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -30, "price": 20.06 },
+    { "label": "Base", "color": "yellow", "pct": 25, "price": 35.83 },
+    { "label": "Bull", "color": "green", "pct": 55, "price": 44.42 },
+    { "label": "Moon", "color": "purple", "pct": 90, "price": 54.45 }
+  ],
+  "analystTargets": [
+    { "firm": "Consensus (Benzinga; Piper/Guggenheim/Wedbush ratings May–Aug 2026)", "target": 54, "rating": "Buy" },
+    { "firm": "Range low (same set)", "target": 52, "rating": "Buy" },
+    { "firm": "Best-effort current consensus (Nov 11 core screen)", "target": 45, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds 3.75–4.00% after the Sep 16 hike. CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~95% (Nov 17–18), with the remainder on 50bp.",
+    "inflationNote": "Oct CPI ran hot (core +0.3% m/m vs 0.2%). Sep core PCE 3.1% y/y. Oct PCE (Nov 25) lands between the two PDUFAs; Nov CPI is Dec 10.",
+    "sectorImpact": "A funded (into 2028) mid-cap biotech: rates matter through XBI risk appetite, not financing. The FDA outcomes dominate.",
+    "summary": "MEDIUM — idiosyncratic FDA catalysts, but macro is WAIT (30/100) and biotech is trading with the tape. Prefer the dip entry near the 1-year low."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 28.66, "note": "Current price — not preferred: core at-catalyst median -6.5% (n=157, 65% underwater)", "timing": "Now" },
+      { "label": "Entry 2", "level": 26.8, "rangeMax": 27.8, "note": "At/just below the $27.44 1-year low, into the Nov 25 PCE tape — preferred", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 24.5, "note": "Deep dip — only without company news", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 35.83, "pct": 25, "note": "Base — GIST approval Nov 30; partial re-rate. Horizon ~6 weeks (both PDUFAs)." },
+    "tp2": { "price": 44.42, "pct": 55, "note": "Bull — two approvals by Dec 30 with clean labels; back above the $42.84 1-year high." },
+    "tp3": { "price": 54.45, "pct": 90, "note": "Moon — two labels + strong early launch metrics; ~$54 consensus. 3–6 months.", "moon": true },
+    "stopLoss": {
+      "tight": 24.9,
+      "tightPct": -13.12,
+      "tightNote": "-13% — wider than the fda_decision medianMAE (-10.6%, n=11).",
+      "hard": 21.5,
+      "hardPct": -24.98,
+      "hardNote": "-25% — CRL territory on GIST.",
+      "riskReward": "7.1 : 1",
+      "rrNote": "Entry 2 midpoint ($27.30) to tight stop vs TP2",
+      "rrWarning": "Good R/R ✅ — but the Nov 30 decision can gap through the stop"
+    },
+    "verdict": "BUY (Speculative sizing) — two dated PDUFAs in six weeks with funding into 2028. The measured core at-catalyst median is -6.5% with 65% of picks underwater at their event, so report price is not the default entry: Entry 2 ($26.80–27.80) is preferred.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "Priority-review biotechs often drift up 1–2 weeks before a PDUFA. COGT has done the opposite (-9% since Nov 11) with the biotech tape, so positioning into Nov 30 is light.",
+    "preRunupTiming": "Final 1–2 weeks before Nov 30",
+    "preRunupPct": "-9% since Nov 11 (no run-up)",
+    "postWin": {
+      "avgPct": 20,
+      "range": "+7% to +74%",
+      "note": "SRPT gained ~74% on eteplirsen's accelerated approval (Sep 2016); AXSM rose ~40% on Auvelity's approval after an extended review (Aug 2022); VERA rose only ~7% on its approval day (Jul 2026). Clean, expected approvals sit at the low end.",
+      "exampleDate": "Aug 2022 (AXSM Auvelity)"
+    },
+    "postLose": {
+      "avgPct": -40,
+      "range": "-38% to -75%",
+      "note": "CAPR fell ~38% on its deramiocel CRL (Jul 2025); ALDX fell ~75% on its third reproxalap CRL (Mar 2026).",
+      "exampleDate": "Jul 2025 (CAPR CRL)"
+    },
+    "spotSizing": {
+      "pct": 6,
+      "reason": "6% (spot). fda_decision is a core tier-2 leader (+8.1pp medianExcess vs +4.1pp overall, n=11) — a mild tailwind only. Two shots on goal and funding into 2028 support mid sizing; macro WAIT and the binary gap risk keep it below 10%."
+    },
+    "stopPreCatalyst": { "pct": -13.12, "price": 24.9, "note": "Wider than the fda_decision medianMAE (-10.6%). A break below ~$24.90 before Nov 30 means the market is pricing a CRL." },
+    "stopPostCatalyst": { "pct": -20, "note": "If GIST gets a CRL, exit — the Dec 30 SM decision alone does not justify holding through a -40% gap." }
+  },
+  "comparableCases": [
+    { "ticker": "SRPT", "event": "Eteplirsen (Exondys 51) FDA accelerated approval", "date": "Sep 2016", "movePct": 74, "days": 1, "outcome": "good", "note": "Upper-bound template for a contested approval. COGT's GIST data are cleaner, so expect a smaller but positive reaction." },
+    { "ticker": "AXSM", "event": "FDA approves Auvelity for MDD after an extended review", "date": "Aug 2022", "movePct": 40, "days": 1, "outcome": "good", "note": "A mid-cap approval that re-rated the stock ~40% — the Bull-case shape if both COGT labels land." },
+    { "ticker": "CAPR", "event": "FDA complete response letter for deramiocel", "date": "Jul 2025", "movePct": -38, "days": 1, "outcome": "bad", "note": "Downside template: a CRL on a lead program erases ~40% in a day." }
+  ],
+  "sources": [
+    "https://finviz.com/news/417577/cogent-biosciences-reports-recent-business-highlights-and-third-quarter-2026-financial-results",
+    "https://investors.cogentbio.com/static-files/5afad93a-be6b-4f47-b307-4759496c113b",
+    "https://www.webull.com.au/news-detail/14562159645959168",
+    "https://www.marketbeat.com/stocks/NASDAQ/COGT/fda-events/",
+    "https://quartr.com/events/cogent-biosciences-inc-cogt-q3-2026_FkY2nwEd",
+    "https://www.panabee.com/news/cogent-biosciences-earnings-q3-2026",
+    "https://kr.benzinga.com/quote/COGT/report",
+    "https://www.fool.com/investing/2026/11/16/theres-now-100-chance-fed-rate-hike-in-december-thats-not-worst-news-for-wall-street/",
+    "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-17-224356767.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "มีการตัดสินของ FDA สองครั้งที่มีวันแน่นอนในหกสัปดาห์: PDUFA ของ bezuclastinib แบบใช้ร่วมใน GIST วันที่ 30 พ.ย. (Priority Review อีก 12 วัน) และ NonAdvanced Systemic Mastocytosis วันที่ 30 ธ.ค. ส่วน AdvSM วันที่ 29 มิ.ย. 2027 เงินสด $791M (30 ก.ย.) พอถึงปลายปี 2028 และทีมขายพร้อมแล้ว หุ้นย่อมาที่ $28.66 ใกล้จุดต่ำสุดรอบ 1 ปี เทียบเป้าเฉลี่ย ~$54 (พ.ค.–ส.ค.) = +88% (แม้ใช้เป้า $45 ก็ผ่านเกณฑ์ 20%) fda_decision เป็น leader ของ tier-2 ฝั่ง core (+8.1pp เทียบ +4.1pp รวม, n=11) — แค่แรงหนุนเล็กน้อย median ถึงวัน catalyst ของ core -6.5% (n=157, 65% ติดลบ) จึงเข้าที่ Entry 2 เป็นหลัก Base +25% ครอบคลุมทั้งสอง PDUFA (~6 สัปดาห์) สูงกว่า P75 14 วัน (+10.8%) โดยตั้งใจ",
+      "priceNote": "ดึงราคาเอง (Yahoo chart API 18 พ.ย. 2026 ระหว่างวัน): $28.66 (+2.9%) ไม่อยู่ใน cache ลงจาก $31.64 ตอนคัดกรอง 11 พ.ย. ใกล้ราคาปิดต่ำสุดรอบ 1 ปี ($27.44, 16 พ.ย.) และต่ำกว่า high 1 ปี ($42.84) มาก เป็นการอ่อนตัวของไบโอเทคกลาง/เล็กทั้งกลุ่ม ไม่ใช่ข่าวบริษัท",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        { "name": "PDUFA — bezuclastinib + sunitinib ใน GIST (Priority Review)", "description": "วันที่ FDA ตั้งเป้าตัดสิน NDA ของ GIST แบบ Priority Review (อัปเดต Q3 2026 ของบริษัท) GIST แนวที่สองเป็นข้อบ่งใช้เชิงพาณิชย์ที่ใหญ่กว่าในระยะใกล้ ถ้าอนุมัติ Cogent จะเป็นบริษัทที่มียาขายก่อนสิ้นปี" },
+        { "name": "PDUFA — bezuclastinib ใน NonAdvanced Systemic Mastocytosis", "description": "วันที่ FDA ตั้งเป้าตัดสิน 30 ธ.ค. 2026 สำหรับ NonAdvSM อิงข้อมูล SUMMIT Phase 2 เป็นโอกาสอนุมัติครั้งที่สองในกรอบเวลา" },
+        { "name": "PDUFA ของ AdvSM + ข้อมูล sub-study การเปลี่ยนยาใน SUMMIT", "description": "AdvSM มี PDUFA 29 มิ.ย. 2027 บริษัทวางแผนเผยข้อมูลแรกของผู้ป่วยที่เปลี่ยนจาก avapritinib (Ayvakit) มาใช้ bezuclastinib — ข้อมูลสำคัญด้านการแข่งขัน" }
+      ],
+      "risks": [
+        "ความเสี่ยง binary จาก FDA ทั้งสองวัน: CRL หรือฉลากที่จำกัด (ความปลอดภัย ขนาดยา) จะกระทบหนัก CRL ของหุ้นเล็ก/กลางเคยลบ -38% ถึง -75% ในวันเดียว (CAPR ก.ค. 2025, ALDX มี.ค. 2026)",
+        "การแข่งขัน: avapritinib (Ayvakit) ครองตลาด systemic mastocytosis อยู่ และข้อมูลการเปลี่ยนยายังไม่ออก การเจาะตลาดเทียบยาเดิมคือคำถามหลังอนุมัติ",
+        "ค่าใช้จ่ายเพิ่มก่อนรายได้: ขาดทุนสุทธิ Q3 $111.4M (เทียบ $80.9M) G&A เพิ่มเป็น $42.1M บวกภาระผูกพันการผลิตที่ยกเลิกไม่ได้ $108.5M",
+        "การอนุมัติอาจถูก price ไว้แล้วว่า 'คาดอยู่แล้ว' — 'sell the news' พบบ่อยกับยา Priority Review ที่ข้อมูลสะอาด",
+        "มหภาคเป็น WAIT (30/100) VIX ~23–26 ไบโอเทคขนาดกลางถูกขายตามตลาด"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ย Fed 3.75–4.00% หลังขึ้น 16 ก.ย. CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ~95% (17–18 พ.ย.) ที่เหลือเป็น 50bp",
+        "inflationNote": "CPI ต.ค. ร้อน (core +0.3% m/m เทียบคาด 0.2%) core PCE ก.ย. 3.1% y/y PCE ต.ค. (25 พ.ย.) อยู่ระหว่างสอง PDUFA ส่วน CPI พ.ย. วันที่ 10 ธ.ค.",
+        "sectorImpact": "ไบโอเทคขนาดกลางที่มีเงินถึงปี 2028: ดอกเบี้ยกระทบผ่าน risk appetite ของ XBI ไม่ใช่การระดมทุน ผล FDA สำคัญที่สุด",
+        "summary": "MEDIUM — catalyst จาก FDA เฉพาะบริษัท แต่มหภาคเป็น WAIT (30/100) และไบโอเทคเคลื่อนไหวตามตลาด ควรเข้าตอนย่อใกล้จุดต่ำสุดรอบ 1 ปี"
+      },
+      "entryStrategy": {
+        "verdict": "BUY (ไม้แบบ Speculative) — PDUFA สองครั้งที่มีวันแน่นอนในหกสัปดาห์และเงินถึงปี 2028 median ถึงวัน catalyst ของ core -6.5% โดย 65% ของ picks ติดลบ ณ วัน event ราคาปัจจุบันจึงไม่ใช่จุดเข้าหลัก เข้าที่ Entry 2 ($26.80–27.80)",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ไม่ใช่จุดเข้าหลัก median ถึงวัน catalyst ของ core -6.5% (n=157, 65% ติดลบ)", "timing": "ตอนนี้" },
+          { "note": "ที่/ต่ำกว่าจุดต่ำสุด 1 ปี $27.44 เล็กน้อย ช่วง PCE 25 พ.ย. — จุดเข้าหลัก", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงหนัก — เฉพาะเมื่อไม่มีข่าวบริษัท", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Base — GIST อนุมัติ 30 พ.ย. re-rate บางส่วน กรอบ ~6 สัปดาห์ (ทั้งสอง PDUFA)" },
+        "tp2": { "note": "Bull — อนุมัติสองครั้งภายใน 30 ธ.ค. ฉลากสะอาด กลับเหนือ high 1 ปี $42.84" },
+        "tp3": { "note": "Moon — สองฉลาก + ตัวเลขเปิดตัวช่วงแรกแข็ง เป้าเฉลี่ย ~$54 กรอบ 3–6 เดือน" },
+        "stopLoss": {
+          "tightNote": "-13% — กว้างกว่า medianMAE ของ fda_decision (-10.6%, n=11)",
+          "hardNote": "-25% — โซน CRL ของ GIST",
+          "rrNote": "จากกลาง Entry 2 ($27.30) ถึง tight stop เทียบกับ TP2",
+          "rrWarning": "R/R ดี ✅ — แต่ผล 30 พ.ย. อาจ gap ทะลุ stop"
+        }
+      },
+      "estimateDates": [
+        { "event": "PDUFA ของ GIST (Priority Review)", "note": "การอนุมัติเชิงพาณิชย์ครั้งแรก" },
+        { "event": "PDUFA ของ NonAdvSM", "note": "ฉลากที่สอง" },
+        { "event": "PDUFA ของ AdvSM", "note": "ฉลากที่สาม" }
+      ]
+    }
+  }
+}

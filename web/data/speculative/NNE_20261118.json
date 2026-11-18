@@ -1,0 +1,176 @@
+{
+  "ticker": "NNE",
+  "companyName": "NANO Nuclear Energy Inc.",
+  "companyDescription": "Pre-revenue micro-reactor developer · KRONOS MMR construction permit application under formal NRC review (University of Illinois site; accepted May 18, review began Jun 23, 2026) · NRC-approved KRONOS fuel qualification methodology · ~$580M cash vs a ~$560M market cap · FY2026 business update Nov 30",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-18T15:20:00.000Z",
+  "price": 10.42,
+  "priceChange": -0.67,
+  "priceNote": "Live $10.42 (-0.67%) on Nov 18, 2026 (live-prices cache). That is -12% since the Oct 26 report ($11.87) and below that report's $11.79 52-week low, with the 52-week high at $49.50. At ~53.7M shares, the market cap (~$560M) now sits roughly at the ~$580M cash balance (Jun 30). The decline is a sector/size selloff, not company news.",
+  "marketCap": "~$560M",
+  "sector": "Energy / Advanced Nuclear — Microreactors",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Moonshot",
+  "score": 0,
+  "summary": "Refresh of a stale board pick (Oct 26 report, 23 days old). NNE now trades at about its ~$580M cash, so the market assigns ~zero value to KRONOS, which is under formal NRC construction-permit review (accepted May 18, review began Jun 23) with an NRC-approved fuel qualification methodology. The next dated event is the FY2026 business update webcast on Nov 30, after the 10-K. The permit decision is ~mid-2027 and construction H2 2027, so this is a long-fuse moonshot, not a near-term binary. Consensus (~$37–45) was set when the stock traded $13–25 and is stale, and the most recent cut was to $19. Base +60% is a 6–9 month horizon. แนะนำ 2–3% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 30–40%.",
+  "catalysts": [
+    {
+      "icon": "🎙️",
+      "name": "FY2026 (Q4) business update webcast",
+      "description": "NANO Nuclear said on Nov 11 it will hold its fourth-quarter fiscal 2026 business update on Nov 30, 2026 at 5:00 p.m. ET, after filing its 10-K for the year ended Sep 30. Watch the cash balance, burn, and any NRC review milestone or customer agreement.",
+      "urgencyLabel": "12 DAYS",
+      "dateBadge": "Nov 30, 2026",
+      "catalystDate": "2026-11-30",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "⚛️",
+      "name": "KRONOS MMR construction permit — NRC review",
+      "description": "The University of Illinois submitted the CPA on Mar 31, 2026; the NRC accepted it May 18 and began formal review Jun 23, with ~12 months expected. Management targets initial construction in H2 2027. A permit issuance would be the first hard de-risking of the reactor program.",
+      "urgencyLabel": "~MID-2027",
+      "dateBadge": "~mid-2027",
+      "catalystDate": "2027-06-30",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Pre-revenue: the reactor business has no sales, and the first construction is H2 2027 at the earliest. The Secured Transportation Systems acquisition adds a small logistics revenue line only.",
+    "Long fuse: the NRC permit decision is ~mid-2027, so there is no reactor binary inside a typical 30-day turbo window — the score here rests on survival and valuation, not timing.",
+    "Spending ramps ahead of revenue: $297.6M went into investing activities in the nine months to Jun 30, 2026. Cash will decline from ~$580M, and the next 10-K (Nov 30 update) will show by how much.",
+    "Advanced-nuclear sentiment is volatile and rate-sensitive: the stock is ~79% below its $49.50 high, and higher rates compress long-duration, pre-revenue valuations most.",
+    "Analyst targets are stale and falling: consensus (~$37–45) dates from $13–25 share prices, and the most recent cut was to $19."
+  ],
+  "estimateDates": [
+    { "event": "FY2026 10-K + business update", "dateRange": "Nov 30, 2026", "note": "Cash, burn, NRC review status", "est": "Cash ~$500M+", "highlight": "blue" },
+    { "event": "KRONOS construction permit decision", "dateRange": "~mid-2027", "note": "~12-month NRC review from Jun 23, 2026", "est": "Permit issued", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -30, "price": 7.29 },
+    { "label": "Base", "color": "yellow", "pct": 60, "price": 16.67 },
+    { "label": "Bull", "color": "green", "pct": 130, "price": 23.97 },
+    { "label": "Moon", "color": "purple", "pct": 250, "price": 36.47 }
+  ],
+  "analystTargets": [
+    { "firm": "Benchmark (Aug 13, 2026)", "target": 45, "rating": "Buy" },
+    { "firm": "Needham (Sep 21, 2026 initiation)", "target": 33, "rating": "Buy" },
+    { "firm": "Most recent cut (Simply Wall St, undated)", "target": 19, "rating": "n/a" }
+  ],
+  "macroRisk": {
+    "fedRisk": "HIGH",
+    "rateOutlook": "Fed funds 3.75–4.00% after the Sep 16 hike. CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~95% (Nov 17–18), with the remainder on 50bp.",
+    "inflationNote": "Oct CPI ran hot (core +0.3% m/m vs 0.2%). Sep core PCE 3.1% y/y. Oct PCE (Nov 25) and Nov CPI (Dec 10) are next.",
+    "sectorImpact": "Pre-revenue, long-duration nuclear names are the most rate-sensitive part of the AI-power trade. A hawkish December tilts the sector lower regardless of NRC progress.",
+    "summary": "HIGH — macro is WAIT (30/100) with the S&P on its 200-day and VIX ~23–26. The trading-at-cash floor helps, but don't front-run the Nov 25 PCE / Dec 9 FOMC tape."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 10.42, "note": "Current price (~cash) — starter only. Not preferred: turbo at-catalyst median -6.6% (n=76)", "timing": "Now (starter)" },
+      { "label": "Entry 2", "level": 9.4, "rangeMax": 10.0, "note": "Below cash per share into the PCE/FOMC tape — preferred", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 8.4, "note": "Deep dip — ~20% under cash; only if the Nov 30 update shows no surprise burn", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 16.67, "pct": 60, "note": "Base — market re-prices KRONOS above zero as NRC review progresses (~1.6x cash). Horizon 6–9 months." },
+    "tp2": { "price": 23.97, "pct": 130, "note": "Bull — construction permit on track + a binding offtake/customer deal (e.g., the data-center feasibility work)." },
+    "tp3": { "price": 36.47, "pct": 250, "note": "Moon — permit issued (~mid-2027) and AI-power re-rating back toward the stale ~$37 consensus. 12–18 month thesis.", "moon": true },
+    "stopLoss": {
+      "tight": 7.9,
+      "tightPct": -24.18,
+      "tightNote": "-24% — wider than the turbo medianMAE (-20%); ~18% below cash per share.",
+      "hard": 6.25,
+      "hardPct": -40.02,
+      "hardNote": "-40% — market pricing cash burn plus a broken reactor timeline.",
+      "riskReward": "7.9 : 1",
+      "rrNote": "Entry 2 midpoint ($9.70) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Asymmetric ✅ — long fuse; capital is tied up until mid-2027"
+    },
+    "verdict": "SPECULATIVE · Moonshot 2.5% max — NNE trades at ~cash with the KRONOS permit under formal NRC review. The measured turbo at-catalyst median is -6.6% (n=76), so Entry 2 ($9.40–10.00, below cash) is preferred. This is a 2027 thesis, not a 30-day trade.",
+    "approach": "DCA"
+  },
+  "catalystSpot": {
+    "catalystType": "regulatory_approval",
+    "preRunup": "Microreactor names move on NRC/DOE milestone headlines rather than drifting into dates. NNE rose ~45% over 10 days when the NRC accepted the KRONOS CPA (May 2026), then gave it all back in the sector selloff.",
+    "preRunupTiming": "Milestone headlines are unscheduled; Nov 30 update is the near-term dated event",
+    "preRunupPct": "-12% since Oct 26 (no run-up)",
+    "postWin": {
+      "avgPct": 35,
+      "range": "+15% to +45%",
+      "note": "NNE gained ~45% in 10 days on the NRC CPA acceptance (May 2026); the SMR sector typically reacts ~+15% on regulatory milestones (H1 2026). A permit issuance in 2027 would be a bigger step.",
+      "exampleDate": "May 2026 (NRC CPA accepted)"
+    },
+    "postLose": {
+      "avgPct": -20,
+      "range": "-8% to -74%",
+      "note": "NNE fell ~8% over 69 days even after the NRC docketed the CPA (Sep 2026) and ~74% from its $60.87 high in H1 2026 — good regulatory news has not protected the stock from sector de-ratings.",
+      "exampleDate": "H1 2026 (NNE drawdown)"
+    },
+    "spotSizing": {
+      "pct": 2.5,
+      "reason": "2.5%. regulatory_approval sits at +5.8pp medianExcess vs +7.7pp overall (n=23), a -1.9pp gap that does not reach the 2pp laggard bar. Lane-wide prior governs; macro WAIT keeps size low."
+    },
+    "stopPreCatalyst": { "pct": -24.18, "price": 7.9, "note": "Wider than the turbo medianMAE (-20%). Below ~$7.90 the market is discounting a burn or timeline surprise." },
+    "stopPostCatalyst": { "pct": -30, "note": "If the Nov 30 update shows a big cash drop with no NRC progress, or the NRC review slips past 2027, exit." }
+  },
+  "comparableCases": [
+    { "ticker": "NNE", "event": "NRC construction permit application accepted (KRONOS)", "date": "May 2026", "movePct": 45, "days": 10, "outcome": "good", "note": "Same company, same program. It shows the move a regulatory step can produce, even though the gain later faded with the sector." },
+    { "ticker": "OKLO", "event": "SPAC listing through the AI-power re-rating on DOE regulatory milestones", "date": "May 2024 – 2025", "movePct": 2094, "days": 500, "outcome": "good", "note": "Upper-bound template for a pre-revenue advanced-nuclear name re-rating on regulatory progress plus AI-power demand." },
+    { "ticker": "SMR", "event": "NuScale first NRC design approval", "date": "Aug 2022", "movePct": 300, "days": 60, "outcome": "good", "note": "A first NRC approval re-rated an SMR developer ~3x in two months — the Moon-case shape for a KRONOS permit." },
+    { "ticker": "NNE", "event": "Decline from the 52-week high amid DOE large-reactor loan-program news", "date": "H1 2026", "movePct": -74, "days": 240, "outcome": "bad", "note": "Downside template: sentiment, not company news, drove a ~74% drawdown. It can repeat in a hawkish-rate tape." }
+  ],
+  "sources": [
+    "https://finviz.com/news/420988/nano-nuclear-to-hold-fourth-quarter-business-update-webcast-on-november-30-2026",
+    "https://www.malaymail.com/news/money/mediaoutreach/2026/11/11/nano-nuclear-to-hold-fourth-quarter-business-update-webcast-on-november-30-2026/500845",
+    "https://www.sec.gov/Archives/edgar/data/0001923891/000149315226037746/ex99-1.htm",
+    "https://www.tradingview.com/news/tradingview:d41b83e92237d:0-nano-nuclear-reports-q3-fy2026-results-nrc-accepts-kronos-cpa-ends-q3-with-580m-cash/",
+    "https://nanonuclearenergy.com/nano-nuclear-and-university-of-illinois-urbana-champaign-receive-nuclear-regulatory-commission-nrc-fuel-qualification-methodology-approval-for-kronos-mmr-energy-system/",
+    "https://www.webull.com/news/15740926860731392",
+    "https://www.investing.com/equities/nano-nuclear-energy-consensus-estimates",
+    "https://stockanalysis.com/stocks/NNE",
+    "https://www.fool.com/investing/2026/11/16/theres-now-100-chance-fed-rate-hike-in-december-thats-not-worst-news-for-wall-street/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "รีเฟรชตัวที่ค้างบนบอร์ด (รายงาน 26 ต.ค. อายุ 23 วัน) ตอนนี้ NNE เทรดใกล้เงินสด ~$580M ตลาดจึงให้มูลค่า KRONOS แทบเป็นศูนย์ ขณะที่ใบอนุญาตก่อสร้างอยู่ระหว่างการพิจารณาอย่างเป็นทางการของ NRC (รับคำขอ 18 พ.ค. เริ่มพิจารณา 23 มิ.ย.) และ NRC อนุมัติวิธีรับรองเชื้อเพลิงแล้ว event ถัดไปที่มีวันคือ webcast สรุปปีงบ 2026 วันที่ 30 พ.ย. หลังยื่น 10-K ใบอนุญาตคาด ~กลางปี 2027 ก่อสร้าง H2 2027 จึงเป็น moonshot ระยะยาว ไม่ใช่ binary ใกล้ๆ เป้าเฉลี่ย (~$37–45) ตั้งตอนหุ้นอยู่ $13–25 จึงล้าสมัย ล่าสุดมีการหั่นเหลือ $19 Base +60% เป็นกรอบ 6–9 เดือน แนะนำ 2–3% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 30–40%",
+      "priceNote": "ราคาสด $10.42 (-0.67%) 18 พ.ย. 2026 ลง 12% จากรายงาน 26 ต.ค. ($11.87) และต่ำกว่า 52-week low เดิม $11.79 (high $49.50) ที่ ~53.7M หุ้น มาร์เก็ตแคป (~$560M) ใกล้เงินสด ~$580M (30 มิ.ย.) เป็นการเทขายทั้งกลุ่ม/หุ้นเล็ก ไม่ใช่ข่าวบริษัท",
+      "scoreLabel": "Moonshot",
+      "catalysts": [
+        { "name": "Webcast สรุปธุรกิจปีงบ 2026 (Q4)", "description": "NANO Nuclear ประกาศ 11 พ.ย. ว่าจะจัด business update ไตรมาส 4 ปีงบ 2026 วันที่ 30 พ.ย. 2026 เวลา 17:00 ET หลังยื่น 10-K ปีที่สิ้นสุด 30 ก.ย. ดูเงินสด การเผาเงิน และความคืบหน้า NRC หรือข้อตกลงลูกค้า" },
+        { "name": "ใบอนุญาตก่อสร้าง KRONOS MMR — การพิจารณาของ NRC", "description": "University of Illinois ยื่น CPA 31 มี.ค. 2026 NRC รับ 18 พ.ค. และเริ่มพิจารณา 23 มิ.ย. คาดใช้ ~12 เดือน ผู้บริหารตั้งเป้าเริ่มก่อสร้าง H2 2027 การออกใบอนุญาตคือการลดความเสี่ยงครั้งใหญ่ครั้งแรกของโปรแกรม" }
+      ],
+      "risks": [
+        "ยังไม่มีรายได้: ธุรกิจเตาปฏิกรณ์ไม่มียอดขาย ก่อสร้างแรกเร็วสุด H2 2027 การซื้อ Secured Transportation Systems เพิ่มรายได้โลจิสติกส์เล็กน้อยเท่านั้น",
+        "ระยะยาว: ใบอนุญาต NRC ~กลางปี 2027 ไม่มี binary ของเตาปฏิกรณ์ในกรอบ 30 วันของ turbo คะแนนนี้มาจาก survival และมูลค่า ไม่ใช่จังหวะเวลา",
+        "ใช้จ่ายนำหน้ารายได้: ใช้เงินลงทุน $297.6M ใน 9 เดือนถึง 30 มิ.ย. 2026 เงินสดจะลดจาก ~$580M และ 10-K (30 พ.ย.) จะบอกว่าลดเท่าไหร่",
+        "sentiment นิวเคลียร์รุ่นใหม่ผันผวนและไวต่อดอกเบี้ย: หุ้นต่ำกว่า high $49.50 ~79% ดอกเบี้ยสูงกดมูลค่าหุ้นยังไม่มีรายได้มากที่สุด",
+        "เป้านักวิเคราะห์ล้าสมัยและกำลังลด: เป้าเฉลี่ย (~$37–45) ตั้งตอนหุ้น $13–25 ล่าสุดหั่นเหลือ $19"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ย Fed 3.75–4.00% หลังขึ้น 16 ก.ย. CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ~95% (17–18 พ.ย.) ที่เหลือเป็น 50bp",
+        "inflationNote": "CPI ต.ค. ร้อน (core +0.3% m/m เทียบคาด 0.2%) core PCE ก.ย. 3.1% y/y ตัวถัดไปคือ PCE ต.ค. (25 พ.ย.) และ CPI พ.ย. (10 ธ.ค.)",
+        "sectorImpact": "หุ้นนิวเคลียร์ที่ยังไม่มีรายได้และ duration ยาวไวต่อดอกเบี้ยที่สุดในธีม AI-power ถ้า ธ.ค. hawkish กลุ่มจะลงไม่ว่า NRC จะคืบหน้าแค่ไหน",
+        "summary": "HIGH — มหภาคเป็น WAIT (30/100) S&P อยู่บนเส้น 200 วัน VIX ~23–26 พื้นที่เทรดใกล้เงินสดช่วยได้ แต่อย่าเข้าก่อน PCE 25 พ.ย. / FOMC 9 ธ.ค."
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · Moonshot สูงสุด 2.5% — NNE เทรดใกล้เงินสด ขณะใบอนุญาต KRONOS อยู่ระหว่างการพิจารณาของ NRC median ถึงวัน catalyst ของ turbo -6.6% (n=76) จึงเข้าที่ Entry 2 ($9.40–10.00 ต่ำกว่าเงินสด) เป็นหลัก เป็น thesis ปี 2027 ไม่ใช่เทรด 30 วัน",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน (~เงินสด) — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ turbo -6.6% (n=76)", "timing": "ตอนนี้ (ไม้เล็ก)" },
+          { "note": "ต่ำกว่าเงินสดต่อหุ้นช่วง PCE/FOMC — จุดเข้าหลัก", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงหนัก — ต่ำกว่าเงินสด ~20% เฉพาะเมื่อ update 30 พ.ย. ไม่มีการเผาเงินผิดคาด", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Base — ตลาดเริ่มให้มูลค่า KRONOS มากกว่าศูนย์ตามความคืบหน้า NRC (~1.6 เท่าเงินสด) กรอบ 6–9 เดือน" },
+        "tp2": { "note": "Bull — ใบอนุญาตเดินตามแผน + ได้ดีลลูกค้า/offtake ที่ผูกพัน (เช่น งาน feasibility ดาต้าเซ็นเตอร์)" },
+        "tp3": { "note": "Moon — ได้ใบอนุญาต (~กลางปี 2027) และ AI-power re-rate กลับไปใกล้เป้าเฉลี่ยเดิม ~$37 thesis 12–18 เดือน" },
+        "stopLoss": {
+          "tightNote": "-24% — กว้างกว่า medianMAE ของ turbo (-20%) ต่ำกว่าเงินสดต่อหุ้น ~18%",
+          "hardNote": "-40% — ตลาด price การเผาเงินบวกไทม์ไลน์เตาปฏิกรณ์พัง",
+          "rrNote": "จากกลาง Entry 2 ($9.70) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "อสมมาตร ✅ — ระยะยาว เงินจมถึงกลางปี 2027"
+        }
+      },
+      "estimateDates": [
+        { "event": "10-K ปีงบ 2026 + business update", "note": "เงินสด การเผาเงิน สถานะการพิจารณาของ NRC" },
+        { "event": "ผลใบอนุญาตก่อสร้าง KRONOS", "note": "NRC พิจารณา ~12 เดือนนับจาก 23 มิ.ย. 2026" }
+      ]
+    }
+  }
+}

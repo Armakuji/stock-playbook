@@ -1,0 +1,186 @@
+{
+  "ticker": "UMAC",
+  "companyName": "Unusual Machines, Inc.",
+  "companyDescription": "NDAA-compliant US drone components + FPV drones · Q3 2026 revenue $13.9M (+551% y/y) with a reaffirmed $25M Q4 target · Drone Dominance Phase 2 orders placed, Phase 3 funded for early 2027 · ~$260M cash + short-term investments vs a ~$485M market cap",
+  "exchange": "NYSE American",
+  "generatedAt": "2026-11-18T15:00:00.000Z",
+  "price": 9.71,
+  "priceChange": -3.29,
+  "priceNote": "Live $9.71 (-3.29%) on Nov 18, 2026 (live-prices cache). Down ~50% from $19.53 at the Jul 22 report and ~42% in the past month (GuruFocus, Nov 13). The drop followed the Nov 5 Q3 print, where a GAAP miss came from investment markdowns, plus PT cuts (Needham $40→$22) and a sector-wide drone selloff (Nov 16). 52-week range $7.24–$34.93.",
+  "marketCap": "~$485M",
+  "sector": "Industrials / Defense — Drones & Components",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Moonshot",
+  "score": 0,
+  "summary": "Survival-first #1 this run. UMAC holds ~$162M cash plus $98.4M short-term investments (Sep 30) against a ~$485M market cap, and Q3 revenue rose 551% y/y to $13.9M with the $25M Q4 target reaffirmed. The stock has still halved since July on a GAAP miss (non-cash markdowns), PT cuts and the Nov 16 drone-sector selloff. The upside path is Q4 delivery (reported ~Mar 2027) plus Drone Dominance Phase 3 orders funded for early 2027. Base +55% is a 3–4 month horizon, not a 30-day call (turbo Base bias +52.5pp vs realized 30d P75 +21.5%). The turbo at-catalyst median is -6.6% (n=76), so Entry 2 is preferred. แนะนำ 2–3% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 35–50%.",
+  "catalysts": [
+    {
+      "icon": "📦",
+      "name": "Q4 2026 delivery vs the $25M revenue target",
+      "description": "Management reaffirmed a $25M Q4 revenue target on the Nov 5 call and called the risk operational, not demand. Q4 results are expected ~early March 2027 (no date announced). Hitting $25M would put the run-rate near $100M/yr against a ~$485M cap.",
+      "urgencyLabel": "~15 WEEKS",
+      "dateBadge": "~Mar 2027",
+      "catalystDate": "2027-03-31",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🇺🇸",
+      "name": "Drone Dominance Phase 3 orders",
+      "description": "Drone Dominance Phase 2 orders were placed in October. Phase 3 is reported as funded for early 2027, but sources conflict on whether UMAC's current allocations include it. A Phase 3 allocation is the order-flow catalyst for the Bull case.",
+      "urgencyLabel": "Q1 2027",
+      "dateBadge": "~Q1 2027",
+      "catalystDate": "2027-03-31",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "🛡️",
+      "name": "Powerus $16.9M counter-drone order — shipments",
+      "description": "A $16.9M order from counter-drone partner Powerus was announced with Q3. Shipments feed the Q4 number. Management says current demand supports production through Q1 2027 without new budget initiatives.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "green",
+      "dotColor": "green"
+    }
+  ],
+  "risks": [
+    "Execution risk on the $25M Q4 target. Management framed it as operational (supply/production), and a miss would land on a stock that has already de-rated ~50% on doubt.",
+    "Policy dependence: Drone Dominance Phase 3 is funded for early 2027 per one source, but another says UMAC's allocations don't include it yet. A Democratic Congress and continuing-resolution risk could slow new DoD drone money.",
+    "GAAP losses are noisy: Q3 diluted EPS was -$0.50, driven by an $18.4M unrealized loss on short-term investments. Investment-portfolio markdowns can repeat.",
+    "Analyst targets are falling (Needham $40→$22, Piper Sandler to $29). If the story breaks, consensus could compress toward the price.",
+    "High-beta sector: drone names moved together on Nov 16 (ONDS -8%, RCAT -5%, UMAC -4%) despite company-specific news. Macro is WAIT (30/100) with VIX ~23–26."
+  ],
+  "estimateDates": [
+    { "event": "Q4 2026 results", "dateRange": "~Mar 2027", "note": "Delivery vs the reaffirmed $25M Q4 target", "est": "Rev ~$25M", "highlight": "blue" },
+    { "event": "Drone Dominance Phase 3 allocations", "dateRange": "~Q1 2027", "note": "Whether UMAC is in the Phase 3 order flow", "est": "New DoD orders", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -35, "price": 6.31 },
+    { "label": "Base", "color": "yellow", "pct": 55, "price": 15.05 },
+    { "label": "Bull", "color": "green", "pct": 125, "price": 21.85 },
+    { "label": "Moon", "color": "purple", "pct": 230, "price": 32.04 }
+  ],
+  "analystTargets": [
+    { "firm": "Needham (Nov 6, 2026 — cut from $40)", "target": 22, "rating": "Buy" },
+    { "firm": "Piper Sandler (Nov 2026 — lowered)", "target": 29, "rating": "Overweight" },
+    { "firm": "Consensus (Intrinsic Alpha, range $22–40)", "target": 31, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "HIGH",
+    "rateOutlook": "Fed funds 3.75–4.00% after the Sep 16 hike. CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~95% (Nov 17–18), with the remainder on 50bp. Waller has floated 50bp; Williams pushed back.",
+    "inflationNote": "Oct CPI ran hot (core +0.3% m/m vs 0.2%). Sep core PCE 3.1% y/y. Oct PCE (Nov 25) and Nov CPI (Dec 10) are next.",
+    "sectorImpact": "High-beta small-cap defense tech. Rate hikes compress long-duration growth multiples, and the drone basket is trading as one factor (Nov 16 selloff). A DoD continuing resolution would delay new program money.",
+    "summary": "HIGH — macro verdict is WAIT (30/100): the S&P sits on its 200-day at a 5-month low with VIX ~23–26. High-beta small caps take the first hit if Oct PCE is hot, so scale in only on dips."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 9.71, "note": "Current price — starter only. Not preferred: turbo at-catalyst median -6.6% (n=76)", "timing": "Now (starter)" },
+      { "label": "Entry 2", "level": 9.0, "rangeMax": 9.6, "note": "Dip zone into the Nov 25 PCE / Dec 9 FOMC tape — preferred", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 7.4, "note": "Retest of the $7.24 52-week low — only if no company-specific bad news", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 15.05, "pct": 55, "note": "Base — Q4 lands near $25M and the stock retraces to mid-Nov pre-cut levels (~$15–16). Horizon ~3–4 months (Q4 print)." },
+    "tp2": { "price": 21.85, "pct": 125, "note": "Bull — Q4 hit + Drone Dominance Phase 3 allocation; back to Needham's $22." },
+    "tp3": { "price": 32.04, "pct": 230, "note": "Moon — run-rate >$100M/yr with Phase 3 orders; re-rate toward the $29–40 target range and the $34.93 high. 12-month thesis.", "moon": true },
+    "stopLoss": {
+      "tight": 7.2,
+      "tightPct": -25.85,
+      "tightNote": "-26% — just under the $7.24 52-week low and wider than the turbo medianMAE (-20%).",
+      "hard": 5.8,
+      "hardPct": -40.27,
+      "hardNote": "-40% — market cap near cash + investments; the thesis is being priced as broken.",
+      "riskReward": "6.0 : 1",
+      "rrNote": "Entry 2 midpoint ($9.30) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Asymmetric ✅ — clears the 5:1 turbo target"
+    },
+    "verdict": "SPECULATIVE · Moonshot 2.5% max — the best-funded name in the screen (~$260M cash + investments vs ~$485M cap) after a ~50% de-rating. The measured turbo at-catalyst median is -6.6% (n=76), so Entry 2 ($9.00–9.60) is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "Drone names re-rate on order/program headlines rather than drifting into a date. UMAC has fallen ~42% in a month, so there is no pre-run — the setup is a washed-out tape ahead of a Q1 2027 order cycle.",
+    "preRunupTiming": "Program headlines are unscheduled; Q4 print ~Mar 2027",
+    "preRunupPct": "-42% past month (no run-up)",
+    "postWin": {
+      "avgPct": 40,
+      "range": "+20% to +65%",
+      "note": "UMAC jumped ~65% in one session on the 2026 WSJ report of Pentagon equity/debt-stake talks with domestic drone makers. A clean Q4 + Phase 3 allocation is a smaller, earnings-backed version of that move.",
+      "exampleDate": "2026 (WSJ Pentagon-stake report)"
+    },
+    "postLose": {
+      "avgPct": -30,
+      "range": "-18% to -42%",
+      "note": "AVAV fell ~18% over 30 days on a guidance cut after a $1.7B contract termination (Jun 2026). UMAC itself fell ~42% in the month to Nov 13, 2026 on PT cuts and the post-Q3 selloff.",
+      "exampleDate": "Jun 2026 (AVAV)"
+    },
+    "spotSizing": {
+      "pct": 2.5,
+      "reason": "2.5%. partnership_win sits at +7.5pp medianExcess vs +7.7pp overall (n=32), so it is not a laggard; the lane-wide prior governs (hitRate 6.5%, softHitRate 27.1%, beatBench 71%). Macro is WAIT, so stay at the low end of 2–5%."
+    },
+    "stopPreCatalyst": { "pct": -25.85, "price": 7.2, "note": "Below the $7.24 52-week low and wider than the turbo medianMAE (-20%). A break means the market doubts Q4." },
+    "stopPostCatalyst": { "pct": -35, "note": "If Q4 revenue misses $25M materially (<$20M) or Phase 3 excludes UMAC, exit — the order-growth thesis is the whole case." }
+  },
+  "comparableCases": [
+    { "ticker": "UMAC", "event": "Pentagon funding-stake report (WSJ) + U.S. Army drone-motor contract award", "date": "Oct 2025 – May 2026", "movePct": 900, "days": 270, "outcome": "good", "note": "UMAC's own prior run on the domestic-drone policy story. It shows the upside shape when policy money and orders line up; the current setup starts from a ~50% de-rating." },
+    { "ticker": "RCAT", "event": "U.S. Army Short Range Reconnaissance (SRR) program-of-record win", "date": "Nov 2024", "movePct": 911, "days": 395, "outcome": "good", "note": "Small-cap drone maker re-rated ~10x over about a year after a program-of-record win. That is the Moon-case template for a Phase 3 allocation." },
+    { "ticker": "AVAV", "event": "FY26 guidance cut after a $1.7B contract termination + goodwill impairment", "date": "Jun 2026", "movePct": -18, "days": 30, "outcome": "bad", "note": "Downside template: even a large, established drone name de-rated when a big program fell away. UMAC's Q4 execution is the equivalent risk." }
+  ],
+  "sources": [
+    "https://www.newswire.com/news/unusual-machines-third-quarter-2026-shareholder-letter",
+    "https://finviz.com/news/418087/unusual-machines-misses-on-gaap-investment-markdowns-but-revenue-beat-and-reaffirmed-25m-q4-target-shift-the-debate-to-execution",
+    "https://www.webull.com/news/15873468070861824",
+    "https://www.marketbeat.com/instant-alerts/analyst-needham-company-llc-issues-pessimistic-forecast-for-unusual-machines-nyseamerican-umac-stock-price-2026-11-06/",
+    "https://www.gurufocus.com/news/9199185/unusual-machines-inc-umac-shares-fall-47-what-gf-score-of-37-tells-investors",
+    "https://247wallst.com/investing/2026/11/16/ondas-falls-8-despite-1-1-billion-2027-revenue-target-as-drone-stocks-extend-losses-red-cat-drops-5-unusual-machines-slides-4/",
+    "https://intrinsicalpha.com/equity/amex/umac/estimates",
+    "https://stockanalysis.com/stocks/umac/financials/balance-sheet/",
+    "https://www.fool.com/investing/2026/11/16/theres-now-100-chance-fed-rate-hike-in-december-thats-not-worst-news-for-wall-street/",
+    "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-17-224356767.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "อันดับ 1 แบบ survival-first รอบนี้ UMAC มีเงินสด ~$162M บวกเงินลงทุนระยะสั้น $98.4M (30 ก.ย.) เทียบมาร์เก็ตแคป ~$485M รายได้ Q3 โต 551% y/y เป็น $13.9M และยืนยันเป้า Q4 $25M แต่หุ้นยังลงครึ่งหนึ่งตั้งแต่ ก.ค. จากกำไร GAAP พลาด (ขาดทุนทางบัญชีที่ไม่ใช่เงินสด) การหั่นเป้าของนักวิเคราะห์ และการเทขายหุ้นโดรนทั้งกลุ่ม (16 พ.ย.) เส้นทางขึ้นคือส่งมอบ Q4 ได้ตามเป้า (รายงาน ~มี.ค. 2027) และคำสั่งซื้อ Drone Dominance Phase 3 ที่มีงบแล้วสำหรับต้นปี 2027 Base +55% เป็นกรอบ 3–4 เดือน ไม่ใช่ 30 วัน (bias Base ของ turbo +52.5pp เทียบ P75 30 วันจริง +21.5%) median ถึงวัน catalyst ของ turbo -6.6% (n=76) จึงเข้าที่ Entry 2 เป็นหลัก แนะนำ 2–3% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 35–50%",
+      "priceNote": "ราคาสด $9.71 (-3.29%) 18 พ.ย. 2026 ลง ~50% จาก $19.53 ในรายงาน 22 ก.ค. และ ~42% ในเดือนที่ผ่านมา หลังงบ Q3 (5 พ.ย.) ที่กำไร GAAP พลาดจากการตีมูลค่าเงินลงทุนลง บวกการหั่นเป้า (Needham $40→$22) และการเทขายหุ้นโดรนทั้งกลุ่ม (16 พ.ย.) กรอบ 52 สัปดาห์ $7.24–$34.93",
+      "scoreLabel": "Moonshot",
+      "catalysts": [
+        { "name": "การส่งมอบ Q4 2026 เทียบเป้ารายได้ $25M", "description": "ผู้บริหารยืนยันเป้ารายได้ Q4 $25M ใน call 5 พ.ย. และบอกว่าความเสี่ยงอยู่ที่การผลิต ไม่ใช่ดีมานด์ คาดรายงานผล Q4 ~ต้น มี.ค. 2027 (ยังไม่ประกาศวัน) ถ้าได้ $25M run-rate จะใกล้ $100M/ปี เทียบมาร์เก็ตแคป ~$485M" },
+        { "name": "คำสั่งซื้อ Drone Dominance Phase 3", "description": "คำสั่งซื้อ Phase 2 ออกใน ต.ค. ส่วน Phase 3 มีรายงานว่ามีงบสำหรับต้นปี 2027 แต่แหล่งข่าวขัดกันว่ารวม UMAC แล้วหรือยัง การได้ส่วนแบ่ง Phase 3 คือ catalyst ของ Bull case" },
+        { "name": "คำสั่งซื้อต้านโดรน Powerus $16.9M — การส่งมอบ", "description": "ประกาศพร้อม Q3 การส่งมอบเป็นส่วนหนึ่งของรายได้ Q4 ผู้บริหารบอกดีมานด์ปัจจุบันรองรับการผลิตถึง Q1 2027 โดยไม่ต้องพึ่งงบใหม่" }
+      ],
+      "risks": [
+        "ความเสี่ยงการส่งมอบเป้า Q4 $25M ผู้บริหารบอกเป็นเรื่องการผลิต ถ้าพลาดจะซ้ำเติมหุ้นที่ถูกลดมูลค่าไปแล้ว ~50%",
+        "พึ่งนโยบาย: Phase 3 มีงบต้นปี 2027 ตามแหล่งหนึ่ง แต่อีกแหล่งบอกยังไม่รวม UMAC สภาคองเกรสเสียงข้างมากเดโมแครตและความเสี่ยง CR อาจทำให้เงินใหม่ของ DoD ช้าลง",
+        "ขาดทุน GAAP ผันผวน: EPS Q3 -$0.50 จากการขาดทุนที่ยังไม่รับรู้ของเงินลงทุนระยะสั้น $18.4M อาจเกิดซ้ำ",
+        "เป้านักวิเคราะห์กำลังลดลง (Needham $40→$22, Piper Sandler เหลือ $29) ถ้า story พัง เป้าอาจหดเข้าหาราคา",
+        "กลุ่ม high-beta: หุ้นโดรนลงพร้อมกัน 16 พ.ย. (ONDS -8%, RCAT -5%, UMAC -4%) มหภาคเป็น WAIT (30/100) VIX ~23–26"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ย Fed 3.75–4.00% หลังขึ้น 16 ก.ย. CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ~95% (17–18 พ.ย.) ที่เหลือเป็น 50bp Waller เปิดทาง 50bp ส่วน Williams ค้าน",
+        "inflationNote": "CPI ต.ค. ร้อน (core +0.3% m/m เทียบคาด 0.2%) core PCE ก.ย. 3.1% y/y ตัวถัดไปคือ PCE ต.ค. (25 พ.ย.) และ CPI พ.ย. (10 ธ.ค.)",
+        "sectorImpact": "หุ้นเทคกลาโหมขนาดเล็ก high-beta ดอกเบี้ยขึ้นกด multiple ของหุ้นเติบโต และกลุ่มโดรนเคลื่อนไหวเป็นก้อนเดียว (16 พ.ย.) ถ้ามี CR ของ DoD เงินโปรแกรมใหม่จะล่าช้า",
+        "summary": "HIGH — มหภาคเป็น WAIT (30/100): S&P อยู่บนเส้น 200 วันที่ต่ำสุดรอบ 5 เดือน VIX ~23–26 หุ้นเล็ก high-beta โดนก่อนถ้า PCE ต.ค. ร้อน จึงทยอยเข้าเฉพาะตอนย่อ"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · Moonshot สูงสุด 2.5% — ตัวที่มีเงินแน่นที่สุดในรอบนี้ (~$260M เงินสด+เงินลงทุน เทียบแคป ~$485M) หลังถูกลดมูลค่า ~50% median ถึงวัน catalyst ของ turbo -6.6% (n=76) จึงเข้าที่ Entry 2 ($9.00–9.60) เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ turbo -6.6% (n=76)", "timing": "ตอนนี้ (ไม้เล็ก)" },
+          { "note": "โซนย่อช่วง PCE 25 พ.ย. / FOMC 9 ธ.ค. — จุดเข้าหลัก", "timing": "ถ้าย่อ" },
+          { "note": "ทดสอบ 52-week low $7.24 — เฉพาะเมื่อไม่มีข่าวร้ายของบริษัท", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Base — Q4 ได้ใกล้ $25M หุ้นกลับไประดับกลาง พ.ย. ก่อนหั่นเป้า (~$15–16) กรอบ ~3–4 เดือน" },
+        "tp2": { "note": "Bull — Q4 ได้ตามเป้า + ได้ส่วนแบ่ง Drone Dominance Phase 3 กลับไปเป้า Needham $22" },
+        "tp3": { "note": "Moon — run-rate >$100M/ปี พร้อมคำสั่งซื้อ Phase 3 re-rate ไปช่วงเป้า $29–40 และ high $34.93 thesis 12 เดือน" },
+        "stopLoss": {
+          "tightNote": "-26% — ใต้ 52-week low $7.24 และกว้างกว่า medianMAE ของ turbo (-20%)",
+          "hardNote": "-40% — มาร์เก็ตแคปใกล้เงินสด+เงินลงทุน ตลาดตีว่า thesis พัง",
+          "rrNote": "จากกลาง Entry 2 ($9.30) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "อสมมาตร ✅ — ผ่านเป้า 5:1 ของ turbo"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผลประกอบการ Q4 2026", "note": "ส่งมอบได้ตามเป้า Q4 $25M หรือไม่" },
+        { "event": "การจัดสรร Drone Dominance Phase 3", "note": "UMAC อยู่ในคำสั่งซื้อ Phase 3 หรือไม่" }
+      ]
+    }
+  }
+}

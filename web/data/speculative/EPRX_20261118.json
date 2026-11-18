@@ -1,0 +1,297 @@
+{
+  "ticker": "EPRX",
+  "companyName": "Eupraxia Pharmaceuticals Inc.",
+  "companyDescription": "Extended-release local steroid (Diffusphere™) · EP-104GI, a single-procedure esophageal injection for eosinophilic esophagitis — Phase 2b RESOLVE placebo-controlled interim due December 2026",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-18T16:00:00.000Z",
+  "price": 6.43,
+  "priceChange": -2.87,
+  "priceNote": "Live $6.43 (-2.87%) on Nov 18, 2026 (live-prices cache) — -16% since the Nov 11 report ($7.63). No company news was found since then; the move tracks the small-cap biotech selloff into the Nov 17 S&P five-month low.",
+  "marketCap": "~$420M",
+  "sector": "Healthcare / Biotechnology — Gastroenterology (EoE)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 0,
+  "summary": "Refresh (no thesis change, -16% on the tape): no Eupraxia news was found since Nov 11. The thesis remains the placebo-controlled RESOLVE Phase 2b interim for EP-104GI (single-procedure Diffusphere steroid injection for EoE), expected December 2026, after open-label high-dose cohorts showed 66% clinical remission at 36 weeks (Apr 2026). The drop to $6.43 is sector-driven. Base is trimmed to $11.25 (+75%) against the turbo Base bias (+52.5pp vs realized 30d P75 +21.5%); the Bull/Moon targets ($17.17 consensus, $25 Stifel) are unchanged. The turbo at-catalyst median is -6.6% (n=76), so Entry 2 is preferred. แนะนำ 2–3% ของ portfolio เท่านั้น — ถ้า RESOLVE interim พลาด ลงได้ 45–55%.",
+  "catalysts": [
+    {
+      "icon": "🧪",
+      "name": "RESOLVE Phase 2b interim (placebo-controlled) — EP-104GI in EoE",
+      "description": "120 patients (120mg / 160mg / vehicle, 1:1:1), enrollment complete Oct 12, 2026. Company reconfirmed a December 2026 interim in its Nov 10 Q3 release. Histology plus symptom (dysphagia) separation vs vehicle is the bar.",
+      "urgencyLabel": "~4–7 WEEKS",
+      "dateBadge": "~Dec 2026",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "EoE trials can hit histology and still miss symptoms. Allakos hit its histologic co-primaries but missed the symptom endpoints and fell ~88% (Dec 2021).",
+    "A new US$125M ATM (Nov 10) gives the company a way to sell into any pre-data strength.",
+    "The open-label Phase 1b/2a cohorts were tiny (the high-dose group was n=3), so placebo-controlled data may shrink the effect.",
+    "Competitive market: Dupixent is entrenched in EoE, and oral and biologic entrants keep raising the bar.",
+    "\"December\" has no exact day, and an interim (not final) readout invites a \"wait for full data\" discount."
+  ],
+  "estimateDates": [
+    {
+      "event": "RESOLVE Phase 2b interim",
+      "dateRange": "~Dec 2026",
+      "note": "Histologic + dysphagia response vs vehicle",
+      "est": "Clear separation at both doses",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -46.66,
+      "price": 3.43
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 74.96,
+      "price": 11.25
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 167.03,
+      "price": 17.17
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 288.8,
+      "price": 25.0
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Stifel",
+      "target": 25,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Wedbush (initiation)",
+      "target": 17,
+      "rating": "Outperform"
+    },
+    {
+      "firm": "Oppenheimer (initiation)",
+      "target": 17,
+      "rating": "Outperform"
+    },
+    {
+      "firm": "H.C. Wainwright",
+      "target": 11,
+      "rating": "Buy"
+    },
+    {
+      "firm": "MarketBeat consensus (Nov 2026)",
+      "target": 17.17,
+      "rating": "Moderate Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds 3.75–4.00% after the Sep 16 hike. CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~95% (Nov 17–18), with the remainder on 50bp. Waller has floated 50bp; Williams pushed back.",
+    "inflationNote": "Oct CPI ran hot (core +0.3% m/m vs 0.2%). Sep core PCE 3.1% y/y. Oct PCE (Nov 25) and Nov CPI (Dec 10) are next.",
+    "sectorImpact": "Clinical-stage GI biotech. The RESOLVE interim dominates. Rates matter through small-cap biotech multiples and the ATM sale price.",
+    "summary": "MEDIUM — macro is WAIT (30/100): the S&P closed Nov 17 on its 200-day at a 5-month low with VIX ~23–26. The outcome here is idiosyncratic, but small-cap biotech sells first on a hot PCE, so use the dip entry."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 6.43,
+        "note": "Current price — starter only. Not preferred: turbo at-catalyst median -6.6% (n=76)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 5.8,
+        "rangeMax": 6.2,
+        "note": "Give back today's +11% pop / ATM supply zone — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 5.2,
+        "note": "Near the 52-week low area — only without bad news",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 11.25,
+      "pct": 74.96,
+      "note": "Base — a clean placebo-controlled RESOLVE interim re-rates toward ~$11 (trimmed from $12.97 for the turbo Base bias +52.5pp). Horizon: weeks after the December interim."
+    },
+    "tp2": {
+      "price": 17.17,
+      "pct": 167.03,
+      "note": "Bull — both doses separate on histology AND symptoms; consensus ~$17."
+    },
+    "tp3": {
+      "price": 25.0,
+      "pct": 288.8,
+      "note": "Moon — one-shot EoE therapy with a durable profile draws partner/M&A interest; $25 (Stifel).",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 4.85,
+      "tightPct": -24.57,
+      "tightNote": "-25% — wider than the turbo medianMAE (-20%).",
+      "hard": 3.43,
+      "hardPct": -46.66,
+      "hardNote": "-55% — interim-failure territory (ALLK precedent).",
+      "riskReward": "9.7 : 1",
+      "rrNote": "Entry 2 midpoint ($6.00) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Asymmetric ✅ — clears the 5:1 turbo target"
+    },
+    "verdict": "SPECULATIVE · ค่าขนม 2.5% max — unchanged thesis, cheaper entry ahead of the December placebo-controlled interim. The measured turbo at-catalyst median is -6.6% (n=76), so Entry 2 ($5.80–6.20) is preferred and Entry 1 is a starter only.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "phase3_readout",
+    "preRunup": "EPRX popped +11% on Nov 11 after Q3 reconfirmed the December timing. Small caps with a dated controlled readout often drift up into it, but the ATM will supply stock into strength.",
+    "preRunupTiming": "Final 2–3 weeks before the interim",
+    "preRunupPct": "-16% since Nov 11 (no run-up)",
+    "postWin": {
+      "avgPct": 70,
+      "range": "+30% to +268%",
+      "note": "MDGL rose ~268% in a day on a clean Phase 3 (Dec 2022), the top-decile shape. A Phase 2b interim on a mid-size indication more realistically re-rates +30–100% toward the ~$17 consensus.",
+      "exampleDate": "Dec 19, 2022 (MDGL)"
+    },
+    "postLose": {
+      "avgPct": -60,
+      "range": "-36% to -88%",
+      "note": "ALLK fell ~88% when its EoE program hit histology but missed symptoms (Dec 2021). CMPS fell ~36% on a technically positive but underwhelming Phase 3 (Jun 2025).",
+      "exampleDate": "Dec 22, 2021 (ALLK)"
+    },
+    "spotSizing": {
+      "pct": 2.5,
+      "reason": "2.5%. phase3_readout has no n≥5 turbo bucket (context only). Lane-wide prior (hitRate 6.5%, softHitRate 27.1%, beatBench 71%, n=107) and a WAIT macro tape (30/100) keep turbo sizing at the low end of 2–5%."
+    },
+    "stopPreCatalyst": {
+      "pct": -24.57,
+      "price": 4.85,
+      "note": "Wider than the turbo medianMAE (-20%). A break below ~$4.85 before the event means the market is pricing a bad outcome."
+    },
+    "stopPostCatalyst": {
+      "pct": -40,
+      "note": "If either dose fails to separate on symptoms, exit day 1 (ALLK precedent)."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "ALLK",
+      "event": "Lirentelimab EoE/EG Phase 2/3 — histology hit, symptoms missed",
+      "date": "Dec 2021",
+      "movePct": -88,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Same disease and the exact failure mode to fear: biopsy improvement without symptom benefit."
+    },
+    {
+      "ticker": "MDGL",
+      "event": "MAESTRO-NASH Phase 3 topline hits both endpoints",
+      "date": "Dec 2022",
+      "movePct": 268,
+      "days": 1,
+      "outcome": "good",
+      "note": "Upper-bound template for a clean controlled win in a depressed small/mid-cap. Treat it as the Moon shape, not the base."
+    },
+    {
+      "ticker": "EPRX",
+      "event": "RESOLVE Phase 1b/2a open-label remission data (59–76%)",
+      "date": "2025",
+      "movePct": 5,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "The open-label data barely moved the stock (~+5%). The market is waiting for placebo control, which is why the December interim is the real binary."
+    }
+  ],
+  "sources": [
+    "https://pharmanow.live/latest-news/ep-104gi-36-week-remission-eoe-resolve-trial-cohort-9",
+    "https://www.globenewswire.com/news-release/2026/11/10/3400184/0/en/eupraxia-pharmaceuticals-reports-third-quarter-2026-financial-results.html",
+    "https://www.stocktitan.net/news/EPRX/eupraxia-pharmaceuticals-reaches-its-enrollment-target-for-the-ldnwou59ojnx.html",
+    "https://www.tipranks.com/news/company-announcements/eupraxia-pharmaceuticals-establishes-us125-million-at-the-market-offering-program",
+    "https://www.dailypolitical.com/2026/11/09/eupraxia-pharmaceuticals-nasdaqeprx-rating-lowered-to-strong-sell-at-wall-street-zen.html",
+    "https://stockanalysis.com/stocks/eprx/",
+    "https://stocktwits.com/news-articles/markets/equity/eupraxia-eprx-stock-phase-2-data-remission-rates/cZ3E2OARIQx",
+    "https://www.fool.com/investing/2021/12/22/why-allakos-stock-is-crashing-today",
+    "https://www.biopharmadive.com/news/allakos-shares-trial-failure-eosinophil/616488/",
+    "https://www.tipranks.com/news/mdgl-skyrockets-after-positive-clinical-trial",
+    "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+    "https://www.investing.com/news/economy-news/fed-rate-hike-odds-in-december-at-88-after-hot-cpi-cme-fedwatch-5017585",
+    "https://www.fool.com/investing/2026/11/16/theres-now-100-chance-fed-rate-hike-in-december-thats-not-worst-news-for-wall-street/",
+    "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-17-224356767.html"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "รีเฟรช (thesis ไม่เปลี่ยน ลง 16% ตามตลาด): ไม่พบข่าว Eupraxia ใหม่ตั้งแต่ 11 พ.ย. thesis ยังเป็นผลระหว่างทางของ RESOLVE Phase 2b แบบมีกลุ่มยาหลอกของ EP-104GI (ยาสเตียรอยด์ Diffusphere ฉีดครั้งเดียวสำหรับ EoE) คาดออก ธ.ค. 2026 หลังกลุ่มขนาดสูงแบบ open-label ให้ clinical remission 66% ที่ 36 สัปดาห์ (เม.ย. 2026) การลงมาที่ $6.43 เป็นเรื่องของกลุ่ม ปรับ Base ลงเป็น $11.25 (+75%) ตาม bias ของ Base ใน turbo (+52.5pp เทียบ P75 30 วันจริง +21.5%) เป้า Bull/Moon ($17.17 เป้าเฉลี่ย, $25 Stifel) เท่าเดิม median ถึงวัน catalyst ของ turbo -6.6% (n=76) จึงเข้าที่ Entry 2 เป็นหลัก แนะนำ 2–3% ของ portfolio เท่านั้น — ถ้าผล RESOLVE พลาด ลงได้ 45–55%",
+      "priceNote": "ราคาสด $6.43 (-2.87%) 18 พ.ย. 2026 ลง 16% จากรายงาน 11 พ.ย. ($7.63) ไม่พบข่าวบริษัทตั้งแต่นั้น การลงตามการเทขายไบโอเทคเล็กพร้อมที่ S&P ทำจุดต่ำสุดรอบ 5 เดือน 17 พ.ย.",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "ผลระหว่างทาง Phase 2b ของ RESOLVE (มีกลุ่มยาหลอก) — EP-104GI ใน EoE",
+          "description": "120 ราย (120mg / 160mg / vehicle, 1:1:1) รับครบ 12 ต.ค. 2026 บริษัทยืนยันผลระหว่างทางเดือน ธ.ค. 2026 ในงบ Q3 (10 พ.ย.) เกณฑ์คือแยกจาก vehicle ได้ทั้งด้านชิ้นเนื้อและอาการกลืนลำบาก"
+        }
+      ],
+      "risks": [
+        "การทดลอง EoE อาจผ่านด้านชิ้นเนื้อแต่ไม่ผ่านด้านอาการ — Allakos ผ่าน co-primary ด้านชิ้นเนื้อแต่ไม่ผ่านด้านอาการ ร่วง ~88% (ธ.ค. 2021)",
+        "ATM US$125M ใหม่ (10 พ.ย.) ทำให้บริษัทขายหุ้นออกมาได้ทุกครั้งที่หุ้นแข็งก่อนผล",
+        "กลุ่ม Phase 1b/2a แบบ open-label เล็กมาก (กลุ่ม dose สูง n=3) ข้อมูลที่มีกลุ่มยาหลอกอาจทำให้ผลดูเล็กลง",
+        "ตลาดแข่งขันสูง: Dupixent ครองตลาด EoE และยากินกับยาชีววัตถุตัวใหม่ทำให้มาตรฐานสูงขึ้นเรื่อยๆ",
+        "\"ธ.ค.\" ไม่มีวันแน่นอน และผลระหว่างทาง (ไม่ใช่ผลสุดท้าย) มักถูกหักลดแบบ \"รอผลเต็ม\""
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ย Fed 3.75–4.00% หลังขึ้น 16 ก.ย. CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ~95% (17–18 พ.ย.) ที่เหลือเป็น 50bp Waller เปิดทาง 50bp ส่วน Williams ค้าน",
+        "inflationNote": "CPI ต.ค. ร้อน (core +0.3% m/m เทียบคาด 0.2%) core PCE ก.ย. 3.1% y/y ตัวถัดไปคือ PCE ต.ค. (25 พ.ย.) และ CPI พ.ย. (10 ธ.ค.)",
+        "sectorImpact": "ไบโอเทคระบบทางเดินอาหารระยะทดลอง ผลระหว่างทาง RESOLVE สำคัญที่สุด ดอกเบี้ยกระทบผ่าน multiple ไบโอเทคเล็กและราคาที่ขายผ่าน ATM",
+        "summary": "MEDIUM — มหภาคเป็น WAIT (30/100): S&P ปิด 17 พ.ย. บนเส้น 200 วันที่ต่ำสุดรอบ 5 เดือน VIX ~23–26 ผลลัพธ์เป็นเรื่องเฉพาะบริษัท แต่ไบโอเทคเล็กโดนขายก่อนถ้า PCE ร้อน จึงใช้จุดเข้าตอนย่อ"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · ค่าขนม สูงสุด 2.5% — thesis เดิม จุดเข้าถูกลงก่อนผลระหว่างทางแบบมีกลุ่มยาหลอกใน ธ.ค. median ถึงวัน catalyst ของ turbo -6.6% (n=76) จึงเข้าที่ Entry 2 ($5.80–6.20) เป็นหลัก Entry 1 แค่ไม้เริ่ม",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ turbo -6.6% (n=76)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "รอให้คืนกำไร +11% ของวันนี้ / โซนที่ ATM ขายออกมา — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ใกล้โซน 52-week low — เฉพาะเมื่อไม่มีข่าวร้าย",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — ผลระหว่างทาง RESOLVE แบบมีกลุ่มยาหลอกสะอาด re-rate ไป ~$11 (ลดจาก $12.97 ตาม bias ของ Base ใน turbo +52.5pp) กรอบหลายสัปดาห์หลังผล ธ.ค."
+        },
+        "tp2": {
+          "note": "Bull — ทั้งสอง dose แยกได้ทั้งด้านชิ้นเนื้อและอาการ consensus ~$17"
+        },
+        "tp3": {
+          "note": "Moon — การรักษา EoE แบบฉีดครั้งเดียวที่ได้ผลยาวนาน ดึงดูดพันธมิตร/M&A $25 (Stifel)"
+        },
+        "stopLoss": {
+          "tightNote": "-25% — กว้างกว่า medianMAE ของ turbo (-20%)",
+          "hardNote": "-55% — โซนผลระหว่างทางล้มเหลว (เทียบ ALLK)",
+          "rrNote": "จากกลาง Entry 2 ($6.00) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "อสมมาตร ✅ — ผ่านเป้า 5:1 ของ turbo"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "ผลระหว่างทาง Phase 2b ของ RESOLVE",
+          "note": "การตอบสนองด้านชิ้นเนื้อ + อาการกลืนลำบาก เทียบ vehicle"
+        }
+      ]
+    }
+  }
+}
