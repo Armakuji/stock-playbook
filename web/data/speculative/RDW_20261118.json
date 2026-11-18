@@ -1,0 +1,175 @@
+{
+  "ticker": "RDW",
+  "companyName": "Redwire Corporation",
+  "companyDescription": "Space infrastructure + defense UAS (Edge Autonomy Stalker drones) · in the $151B Golden Dome SHIELD IDIQ pool since Jan 2026 · Q3 2026 record backlog $619.7M (+75% y/y, book-to-bill 1.73) but a ~13% revenue miss and a back-end-loaded Q4 · $488.9M cash vs ~$48M debt",
+  "exchange": "NYSE",
+  "generatedAt": "2026-11-18T15:30:00.000Z",
+  "price": 6.79,
+  "priceChange": 0.15,
+  "priceNote": "Live $6.79 (+0.15%) on Nov 18, 2026 (live-prices cache). That is -14% since the Nov 4 report ($7.90). The stock fell ~20% in the session after the Nov 4 Q3 print (revenue $109.0M vs ~$125.7M expected) despite an EPS beat, and traded $8.13 on Nov 10 before sliding with the tape. 52-week range $4.87–$26.64.",
+  "marketCap": "~$1.6B",
+  "sector": "Industrials / Aerospace & Defense — Space Infrastructure",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 0,
+  "summary": "Redwire's balance sheet is now strong enough to clear the survival bar outright: $488.9M cash plus a $50M undrawn revolver vs ~$48M debt. Q3 bookings drove a record $619.7M backlog (+75% y/y, book-to-bill 1.73) with gross margin up to 32.3%. The problem is conversion. Revenue missed by ~13%, the Q4 guide is back-end-loaded on deliveries, and Golden Dome SHIELD task orders are still unawarded, with continuing-resolution risk under the new Democratic Congress. Consensus is ~$14 (+106%) and H.C. Wainwright is at $22 (+224%). Base +60% is a 3–6 month horizon on Q4 delivery and first task orders. แนะนำ 2% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 35–45%.",
+  "catalysts": [
+    {
+      "icon": "🛡️",
+      "name": "Golden Dome SHIELD task-order awards",
+      "description": "RDW was selected into the $151B multi-vendor SHIELD IDIQ in Jan 2026, but no funds were obligated at award. The real catalyst is competitive task orders. H.C. Wainwright still sees initial large-scale awards as the catalyst, but timing is now exposed to continuing-resolution risk. No date announced.",
+      "urgencyLabel": "Q1 2027",
+      "dateBadge": "~Q1 2027",
+      "catalystDate": "2027-03-31",
+      "badgeColor": "blue",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📦",
+      "name": "Q4 2026 deliveries + results",
+      "description": "Management's FY guide hangs on back-end-loaded Q4 deliveries after the Q3 revenue miss. Q4 results are expected ~early March 2027 (no date announced). Converting the $619.7M backlog into revenue is the near-term test.",
+      "urgencyLabel": "~15 WEEKS",
+      "dateBadge": "~Mar 2027",
+      "catalystDate": "2027-03-15",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Execution: Q3 revenue was $109.0M vs ~$125.7M expected (~13% miss) and the FY guide now relies on back-end-loaded Q4 deliveries. A second miss would hit credibility.",
+    "Golden Dome is a ceiling, not revenue: SHIELD has a $151B shared ceiling with no funds obligated at award, so RDW must win task orders against many vendors.",
+    "Political/budget risk: the post-midterm Democratic Congress, a possible continuing resolution and Golden Dome uncertainty could delay DoD awards into mid-2027.",
+    "Dilution: an active $500M ATM program (June 2026) sits on top of earlier ATM sales, so equity issuance can cap rallies.",
+    "Extreme volatility (beta ~3): the stock has round-tripped between $4.87 and $26.64 in a year. Macro is WAIT (30/100) with VIX ~23–26."
+  ],
+  "estimateDates": [
+    { "event": "Golden Dome SHIELD task orders", "dateRange": "~Q1 2027", "note": "First competitive awards from the IDIQ", "est": "Initial task orders", "highlight": "blue" },
+    { "event": "Q4 2026 results", "dateRange": "~Mar 2027", "note": "Back-end-loaded delivery test vs the FY guide", "est": "Backlog conversion", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -35, "price": 4.41 },
+    { "label": "Base", "color": "yellow", "pct": 60, "price": 10.86 },
+    { "label": "Bull", "color": "green", "pct": 106, "price": 14.0 },
+    { "label": "Moon", "color": "purple", "pct": 224, "price": 22.0 }
+  ],
+  "analystTargets": [
+    { "firm": "H.C. Wainwright (trimmed from $26)", "target": 22, "rating": "Buy" },
+    { "firm": "B. Riley (Nov 6, 2026 — cut from $15)", "target": 14, "rating": "Buy" },
+    { "firm": "Consensus (11 analysts, median)", "target": 14, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "HIGH",
+    "rateOutlook": "Fed funds 3.75–4.00% after the Sep 16 hike. CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~95% (Nov 17–18), with the remainder on 50bp.",
+    "inflationNote": "Oct CPI ran hot (core +0.3% m/m vs 0.2%). Sep core PCE 3.1% y/y. Oct PCE (Nov 25) and Nov CPI (Dec 10) are next.",
+    "sectorImpact": "High-beta space/defense small cap. Rates hit the multiple; a federal continuing resolution delays new-start awards like Golden Dome task orders.",
+    "summary": "HIGH — macro is WAIT (30/100) with the S&P on its 200-day and VIX ~23–26. Beta ~3 means RDW amplifies any PCE/FOMC shock; scale in only on dips."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 6.79, "note": "Current price — starter only. Not preferred: turbo at-catalyst median -6.6% (n=76)", "timing": "Now (starter)" },
+      { "label": "Entry 2", "level": 6.2, "rangeMax": 6.6, "note": "Dip zone into the PCE/FOMC tape — preferred", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 5.3, "note": "Deep dip toward the $4.87 52-week low — only without a new guide cut", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 10.86, "pct": 60, "note": "Base — Q4 deliveries land and the stock retraces the post-Q3 gap (~$10–11). Horizon 3–6 months." },
+    "tp2": { "price": 14.0, "pct": 106, "note": "Bull — first Golden Dome task orders + a clean Q4; consensus ~$14." },
+    "tp3": { "price": 22.0, "pct": 224, "note": "Moon — large-scale Golden Dome awards and backlog conversion; H.C. Wainwright $22. 12-month thesis.", "moon": true },
+    "stopLoss": {
+      "tight": 5.1,
+      "tightPct": -24.89,
+      "tightNote": "-25% — wider than the turbo medianMAE (-20%); beta ~3 needs room.",
+      "hard": 4.35,
+      "hardPct": -35.94,
+      "hardNote": "-36% — below the $4.87 52-week low; the backlog story is not being believed.",
+      "riskReward": "5.8 : 1",
+      "rrNote": "Entry 2 midpoint ($6.40) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Asymmetric ✅ — clears the 5:1 turbo target"
+    },
+    "verdict": "SPECULATIVE · ค่าขนม 2% max — fully funded with record backlog, but execution and budget timing are the open questions. The measured turbo at-catalyst median is -6.6% (n=76), so Entry 2 ($6.20–6.60) is preferred.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "partnership_win",
+    "preRunup": "Defense small caps re-rate on award headlines rather than drifting into a date. RDW jumped ~29% the day it was named to the SHIELD pool, then de-rated as awards lagged. There is no run-up now: -14% since Nov 4.",
+    "preRunupTiming": "Award headlines are unscheduled",
+    "preRunupPct": "-14% since Nov 4 (no run-up)",
+    "postWin": {
+      "avgPct": 30,
+      "range": "+10% to +45%",
+      "note": "RDW rose ~29% in one session on the Jan 27, 2026 SHIELD selection; RKLB gained ~10% on its largest-ever defense/launch contract (Jul 2026). A first funded task order is the comparable event.",
+      "exampleDate": "Jan 27, 2026 (RDW SHIELD selection)"
+    },
+    "postLose": {
+      "avgPct": -20,
+      "range": "-12% to -20%",
+      "note": "RDW fell ~20% the session after its Nov 4, 2026 revenue miss; in Nov 2025 it dropped ~12% on a guidance cut tied to government contract delays.",
+      "exampleDate": "Nov 5, 2026 (RDW post-Q3)"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "2%. partnership_win sits at +7.5pp medianExcess vs +7.7pp overall (n=32) — not a laggard. The lane-wide prior governs (hitRate 6.5%, softHitRate 27.1%); macro WAIT and the revenue miss keep size at the floor."
+    },
+    "stopPreCatalyst": { "pct": -24.89, "price": 5.1, "note": "Wider than the turbo medianMAE (-20%). Below ~$5.10 the market is pricing another miss." },
+    "stopPostCatalyst": { "pct": -25, "note": "If Q4 misses the guide again or a CR pushes Golden Dome awards past mid-2027, exit." }
+  },
+  "comparableCases": [
+    { "ticker": "RDW", "event": "Selected into the $151B Golden Dome SHIELD IDIQ multi-vendor pool", "date": "Jan 27, 2026", "movePct": 29, "days": 1, "outcome": "good", "note": "Same company, same program. A funded task order would be the follow-through the January pop was pricing." },
+    { "ticker": "RKLB", "event": "NASA ESCAPADE Mars mission + Neutron program momentum", "date": "2024", "movePct": 350, "days": 180, "outcome": "good", "note": "A space-infrastructure small cap re-rated ~4.5x as contracts converted into a credible growth story — the Moon-case shape." },
+    { "ticker": "KTOS", "event": "$156M mobile counter-drone (C-UAS) contract award", "date": "Jul 21, 2026", "movePct": 4.3, "days": 1, "outcome": "mixed", "note": "A mid-size award moved a larger defense name only ~4%. Task-order size matters: small orders won't re-rate RDW on their own." }
+  ],
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1819810/000181981026000139/exhibit991redwire09302026e.htm",
+    "https://www.gurufocus.com/news/9171155/redwire-corp-reports-q3-2026-results-revenues-of-1090-million-miss-estimates-eps-loss-of-009-beats-expectations",
+    "https://www.fool.com/earnings/call-transcripts/2026/11/06/redwire-corp-rdw-q3-2026-earnings-call-transcript/",
+    "https://finviz.com/news/417403/redwire-edges-past-eps-estimate-but-a-13-revenue-miss-leaves-a-back-end-loaded-guide-hanging-on-q4-deliveries",
+    "https://www.earningswhispers.com/article/RDW/r1832",
+    "https://www.tipranks.com/news/the-fly/redwire-price-target-lowered-to-22-from-26-at-h-c-wainwright-thefly",
+    "https://stockanalysis.com/stocks/rdw",
+    "https://satnews.com/2025/12/22/mda-taps-sidus-ursa-space-for-151-billion-golden-dome-shield-contract/",
+    "https://www.fool.com/investing/2026/11/16/theres-now-100-chance-fed-rate-hike-in-december-thats-not-worst-news-for-wall-street/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "ตอนนี้งบดุล Redwire แข็งพอผ่านเกณฑ์ survival เต็มๆ: เงินสด $488.9M บวกวงเงินกู้ที่ยังไม่ใช้ $50M เทียบหนี้ ~$48M ยอดจอง Q3 ดัน backlog เป็นสถิติ $619.7M (+75% y/y, book-to-bill 1.73) และ gross margin ขึ้นเป็น 32.3% ปัญหาคือการแปลงเป็นรายได้: รายได้พลาด ~13% guide Q4 กระจุกปลายไตรมาสตามการส่งมอบ และ task order ของ Golden Dome SHIELD ยังไม่ได้ ขณะที่มีความเสี่ยง CR จากสภาคองเกรสเดโมแครตชุดใหม่ เป้าเฉลี่ย ~$14 (+106%) H.C. Wainwright $22 (+224%) Base +60% เป็นกรอบ 3–6 เดือนจากการส่งมอบ Q4 และ task order แรก แนะนำ 2% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 35–45%",
+      "priceNote": "ราคาสด $6.79 (+0.15%) 18 พ.ย. 2026 ลง 14% จากรายงาน 4 พ.ย. ($7.90) หุ้นลง ~20% วันหลังงบ Q3 (4 พ.ย.: รายได้ $109.0M เทียบคาด ~$125.7M) แม้ EPS ดีกว่าคาด เคยอยู่ $8.13 วันที่ 10 พ.ย. ก่อนไหลตามตลาด กรอบ 52 สัปดาห์ $4.87–$26.64",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "การมอบ task order ของ Golden Dome SHIELD", "description": "RDW ถูกเลือกเข้า IDIQ หลายผู้ขาย $151B ตั้งแต่ ม.ค. 2026 แต่ไม่มีเงินผูกพันตอนมอบสัญญา catalyst จริงคือ task order ที่ต้องแข่งกัน H.C. Wainwright ยังมองว่าการมอบงานใหญ่ครั้งแรกคือ catalyst แต่จังหวะเวลาเสี่ยงจาก CR ยังไม่ประกาศวัน" },
+        { "name": "การส่งมอบ + ผลประกอบการ Q4 2026", "description": "guide ทั้งปีขึ้นกับการส่งมอบปลาย Q4 หลังรายได้ Q3 พลาด คาดรายงาน Q4 ~ต้น มี.ค. 2027 (ยังไม่ประกาศวัน) การแปลง backlog $619.7M เป็นรายได้คือบททดสอบระยะใกล้" }
+      ],
+      "risks": [
+        "การส่งมอบ: รายได้ Q3 $109.0M เทียบคาด ~$125.7M (พลาด ~13%) guide ทั้งปีพึ่งการส่งมอบปลาย Q4 ถ้าพลาดอีกจะเสียความน่าเชื่อถือ",
+        "Golden Dome เป็นเพดาน ไม่ใช่รายได้: SHIELD มีเพดานร่วม $151B ไม่มีเงินผูกพันตอนมอบ RDW ต้องแข่งชิง task order กับผู้ขายจำนวนมาก",
+        "ความเสี่ยงการเมือง/งบประมาณ: สภาคองเกรสเดโมแครตหลัง midterm ความเป็นไปได้ของ CR และความไม่แน่นอนของ Golden Dome อาจเลื่อนการมอบงานของ DoD ไปกลางปี 2027",
+        "dilution: โปรแกรม ATM $500M (มิ.ย. 2026) ยังเปิดอยู่ บวกการขาย ATM ก่อนหน้า การออกหุ้นอาจกดการวิ่งขึ้น",
+        "ผันผวนสุดขั้ว (beta ~3): หุ้นวิ่งไปกลับระหว่าง $4.87–$26.64 ในหนึ่งปี มหภาคเป็น WAIT (30/100) VIX ~23–26"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ย Fed 3.75–4.00% หลังขึ้น 16 ก.ย. CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ~95% (17–18 พ.ย.) ที่เหลือเป็น 50bp",
+        "inflationNote": "CPI ต.ค. ร้อน (core +0.3% m/m เทียบคาด 0.2%) core PCE ก.ย. 3.1% y/y ตัวถัดไปคือ PCE ต.ค. (25 พ.ย.) และ CPI พ.ย. (10 ธ.ค.)",
+        "sectorImpact": "หุ้นอวกาศ/กลาโหมขนาดเล็ก high-beta ดอกเบี้ยกด multiple ส่วน CR ของรัฐบาลกลางทำให้การมอบงานโครงการใหม่อย่าง task order ของ Golden Dome ล่าช้า",
+        "summary": "HIGH — มหภาคเป็น WAIT (30/100) S&P อยู่บนเส้น 200 วัน VIX ~23–26 beta ~3 ทำให้ RDW ขยายแรงกระแทกจาก PCE/FOMC ทยอยเข้าเฉพาะตอนย่อ"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · ค่าขนม สูงสุด 2% — เงินเต็มพร้อม backlog สถิติ แต่การส่งมอบและจังหวะงบประมาณยังเป็นคำถาม median ถึงวัน catalyst ของ turbo -6.6% (n=76) จึงเข้าที่ Entry 2 ($6.20–6.60) เป็นหลัก",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ turbo -6.6% (n=76)", "timing": "ตอนนี้ (ไม้เล็ก)" },
+          { "note": "โซนย่อช่วง PCE/FOMC — จุดเข้าหลัก", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงหนักเข้าใกล้ 52-week low $4.87 — เฉพาะเมื่อไม่มีการหั่น guide ใหม่", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Base — ส่งมอบ Q4 ได้ หุ้นปิด gap หลังงบ Q3 (~$10–11) กรอบ 3–6 เดือน" },
+        "tp2": { "note": "Bull — ได้ task order แรกของ Golden Dome + Q4 สะอาด เป้าเฉลี่ย ~$14" },
+        "tp3": { "note": "Moon — ได้งาน Golden Dome ขนาดใหญ่และแปลง backlog ได้ เป้า H.C. Wainwright $22 thesis 12 เดือน" },
+        "stopLoss": {
+          "tightNote": "-25% — กว้างกว่า medianMAE ของ turbo (-20%) beta ~3 ต้องเผื่อพื้นที่",
+          "hardNote": "-36% — ต่ำกว่า 52-week low $4.87 ตลาดไม่เชื่อ story backlog",
+          "rrNote": "จากกลาง Entry 2 ($6.40) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "อสมมาตร ✅ — ผ่านเป้า 5:1 ของ turbo"
+        }
+      },
+      "estimateDates": [
+        { "event": "Task order ของ Golden Dome SHIELD", "note": "การมอบงานแบบแข่งขันครั้งแรกจาก IDIQ" },
+        { "event": "ผลประกอบการ Q4 2026", "note": "บททดสอบการส่งมอบปลายไตรมาสเทียบ guide ทั้งปี" }
+      ]
+    }
+  }
+}

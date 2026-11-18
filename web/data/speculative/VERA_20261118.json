@@ -1,0 +1,187 @@
+{
+  "ticker": "VERA",
+  "companyName": "Vera Therapeutics, Inc.",
+  "companyDescription": "Kidney-disease biotech · TRUTAKNA (atacicept), the first BAFF/APRIL dual inhibitor for IgA nephropathy (FDA accelerated approval Jul 7, 2026) · first launch quarter $10.3M revenue + ~700 patient start forms · sBLA for full approval reportedly submitted · Vertex's competing povetacicept decision due Nov 30",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-18T15:40:00.000Z",
+  "price": 26.32,
+  "priceChange": 0.46,
+  "priceNote": "Live $26.32 (+0.46%) on Nov 18, 2026 (live-prices cache). That is -19% since the stale Sep 29 report ($32.50) and ~$30.14 around the Nov 6 Q3 print, roughly -40% YTD, and well off the $56.05 52-week high. The stock has de-rated on competition fears (Vertex's povetacicept, PDUFA Nov 30) despite a solid first launch quarter.",
+  "marketCap": "~$1.9B",
+  "sector": "Healthcare / Biotechnology — Nephrology",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Moonshot",
+  "score": 0,
+  "summary": "Refresh of a stale board pick (Sep 29 report, 49 days old). The pre-stage catalysts in that report have resolved: TRUTAKNA is approved (Jul 7) and ORIGIN 3 hit (Sep 15). The first launch quarter brought $10.3M revenue (about half channel stocking) and ~700 patient start forms. The stock has still fallen to ~$26 on competition: Vertex's povetacicept, another BAFF/APRIL inhibitor, has a Nov 30 PDUFA. Targets are wide — Raymond James $87, Guggenheim $66, Wedbush $29 (Neutral). Cash was $499.2M at Jun 30 against ~$100M/quarter operating burn, so runway is ~12–18 months before launch revenue scales. Base +55% is a 6–9 month launch-ramp horizon. แนะนำ 2–3% ของ portfolio เท่านั้น — ถ้า launch สะดุด ลงได้ 35–40%.",
+  "catalysts": [
+    {
+      "icon": "⚔️",
+      "name": "Vertex povetacicept FDA decision (competitor)",
+      "description": "Vertex's povetacicept, a second dual BAFF/APRIL inhibitor in IgAN, has a PDUFA date of Nov 30, 2026 (per one source). An approval is largely expected and partly priced. The read for VERA is label breadth, dosing convenience and pricing vs TRUTAKNA.",
+      "urgencyLabel": "12 DAYS",
+      "dateBadge": "Nov 30, 2026",
+      "catalystDate": "2026-11-30",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "📄",
+      "name": "Full-approval sBLA — FDA filing acceptance",
+      "description": "One source reports Vera completed its sBLA for full approval (ORIGIN 3 eGFR data) on Nov 3, 2026. FDA filing acceptance would typically follow ~60 days after submission. Full approval removes the accelerated-approval overhang.",
+      "urgencyLabel": "~JAN 2027",
+      "dateBadge": "~Jan 2027",
+      "catalystDate": "2027-01-31",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    },
+    {
+      "icon": "📈",
+      "name": "Q4 2026 launch metrics",
+      "description": "Q4 results (~late Feb 2027, no date announced) will show the first full quarter of TRUTAKNA demand net of channel stocking, plus patient start form growth from ~700.",
+      "urgencyLabel": "~14 WEEKS",
+      "dateBadge": "~Feb 2027",
+      "catalystDate": "2027-02-28",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    }
+  ],
+  "risks": [
+    "Competition: Vertex's povetacicept (PDUFA Nov 30) targets the same BAFF/APRIL mechanism in IgAN, alongside Novartis and Otsuka's IgAN drugs. A broad competitor label would compress TRUTAKNA's share assumptions.",
+    "Launch quality: roughly half of the $10.3M first-quarter revenue was channel stocking, so Q4 must show real demand growth.",
+    "Burn: Q2 operating cash use was $100.2M against $499.2M cash (Jun 30). With SG&A at $61.4M per quarter, runway is ~12–18 months before revenue scales; a raise is possible (no Q3 cash figure was found).",
+    "Accelerated-approval status: long-term benefit on kidney-function decline is not yet established. The sBLA submission (Nov 3) is from a single source and needs confirmation.",
+    "Wide analyst dispersion ($29 Wedbush Neutral to $87 Raymond James) shows the market has no settled view on peak sales. Macro is WAIT (30/100)."
+  ],
+  "estimateDates": [
+    { "event": "Vertex povetacicept PDUFA", "dateRange": "Nov 30, 2026", "note": "Competitor label and pricing read-through", "est": "Approval expected", "highlight": "blue" },
+    { "event": "Q4 2026 results / launch metrics", "dateRange": "~Feb 2027", "note": "First full quarter of underlying demand", "est": "Rev > $10.3M ex-stocking", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -35, "price": 17.11 },
+    { "label": "Base", "color": "yellow", "pct": 55, "price": 40.8 },
+    { "label": "Bull", "color": "green", "pct": 150, "price": 65.8 },
+    { "label": "Moon", "color": "purple", "pct": 230, "price": 86.86 }
+  ],
+  "analystTargets": [
+    { "firm": "Raymond James (Nov 2026 — raised from $84)", "target": 87, "rating": "Strong Buy" },
+    { "firm": "Guggenheim (Nov 2026 — cut from $76)", "target": 66, "rating": "Buy" },
+    { "firm": "Wedbush (Nov 2026 — cut from $34)", "target": 29, "rating": "Neutral" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds 3.75–4.00% after the Sep 16 hike. CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~95% (Nov 17–18), with the remainder on 50bp.",
+    "inflationNote": "Oct CPI ran hot (core +0.3% m/m vs 0.2%). Sep core PCE 3.1% y/y. Oct PCE (Nov 25) and Nov CPI (Dec 10) are next.",
+    "sectorImpact": "A commercial-stage biotech is less rate-sensitive than pre-revenue names, but a cash-burning launch still gets discounted when rates rise, and any equity raise prices worse in a weak tape.",
+    "summary": "MEDIUM — the Nov 30 competitor decision dominates. Macro is WAIT (30/100), so wait for the Vertex label before sizing up."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 26.32, "note": "Current price — starter only. Not preferred: turbo at-catalyst median -6.6% (n=76)", "timing": "Now (starter)" },
+      { "label": "Entry 2", "level": 24.0, "rangeMax": 25.5, "note": "Dip zone around the Nov 30 Vertex decision — preferred", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 21.0, "note": "Deep dip — only if the povetacicept label is not clearly superior", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 40.8, "pct": 55, "note": "Base — Q4 demand growth ex-stocking plus sBLA acceptance re-rates toward ~$40. Horizon 6–9 months." },
+    "tp2": { "price": 65.8, "pct": 150, "note": "Bull — full approval on track and share holding vs povetacicept; Guggenheim's $66." },
+    "tp3": { "price": 86.86, "pct": 230, "note": "Moon — TRUTAKNA becomes the IgAN standard of care, or strategic M&A; Raymond James $87. 12–18 month thesis.", "moon": true },
+    "stopLoss": {
+      "tight": 19.9,
+      "tightPct": -24.39,
+      "tightNote": "-24% — wider than the turbo medianMAE (-20%).",
+      "hard": 16.5,
+      "hardPct": -37.31,
+      "hardNote": "-37% — the market is pricing a competitive loss or a dilutive raise.",
+      "riskReward": "8.5 : 1",
+      "rrNote": "Entry 2 midpoint ($24.75) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Asymmetric ✅ — clears the 5:1 turbo target"
+    },
+    "verdict": "SPECULATIVE · Moonshot 2.5% max — an approved, launching drug at ~$1.9B after a ~40% YTD de-rating on competition. The measured turbo at-catalyst median is -6.6% (n=76), so Entry 2 ($24.00–25.50) is preferred; let the Nov 30 Vertex label print first.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "product_launch",
+    "preRunup": "No run-up: the stock has drifted down into the competitor decision. Launch stocks usually re-rate on quarterly demand prints rather than into dates.",
+    "preRunupTiming": "Q4 print ~late Feb 2027",
+    "preRunupPct": "-13% since the Nov 6 print (~$30 → $26)",
+    "postWin": {
+      "avgPct": 35,
+      "range": "+7% to +46%",
+      "note": "TVTX gained ~46% in the 30 days after its expanded Filspari approval (Apr–May 2026); VERA itself rose only ~7% on its own approval day (Jul 7, 2026). Launch re-ratings build over weeks.",
+      "exampleDate": "Apr–May 2026 (TVTX)"
+    },
+    "postLose": {
+      "avgPct": -20,
+      "range": "-16% to -25%",
+      "note": "CELC fell ~16% when post-approval launch-timeline guidance disappointed (Jul 15, 2026). A strong competitor label at Vertex's Nov 30 PDUFA is the equivalent risk.",
+      "exampleDate": "Jul 15, 2026 (CELC)"
+    },
+    "spotSizing": {
+      "pct": 2.5,
+      "reason": "2.5%. product_launch is a tier-2 leader (+9.7pp medianExcess vs +7.7pp overall, n=7) — a mild tailwind only, not a reason to upsize. Macro WAIT and the Nov 30 competitor binary keep size low."
+    },
+    "stopPreCatalyst": { "pct": -24.39, "price": 19.9, "note": "Wider than the turbo medianMAE (-20%). Below ~$19.90 the market is pricing share loss to povetacicept." },
+    "stopPostCatalyst": { "pct": -25, "note": "If Q4 shows flat demand ex-stocking or the sBLA is not accepted, exit." }
+  },
+  "comparableCases": [
+    { "ticker": "VERA", "event": "FDA accelerated approval for TRUTAKNA in high-risk IgA nephropathy", "date": "Jul 7, 2026", "movePct": 7.05, "days": 1, "outcome": "good", "note": "Same company: the approval itself moved the stock modestly. The re-rating has to come from launch numbers, not regulatory headlines." },
+    { "ticker": "TVTX", "event": "Filspari 30-day post-approval momentum (expanded FSGS label)", "date": "Apr–May 2026", "movePct": 46, "days": 30, "outcome": "good", "note": "Nephrology launch peer — a label win plus early demand produced a ~46% month. This is the Base-to-Bull path for VERA." },
+    { "ticker": "CELC", "event": "REVTORPYK approval followed by delayed launch-timeline guidance", "date": "Jul 15, 2026", "movePct": -16, "days": 1, "outcome": "bad", "note": "Downside template: launch disappointment hits even an approved drug." }
+  ],
+  "sources": [
+    "https://www.biospace.com/press-releases/vera-therapeutics-receives-fda-accelerated-approval-for-trutakna-for-adult-patients-with-primary-iga-nephropathy",
+    "https://www.fool.com/earnings/call-transcripts/2026/11/06/vera-therapeutics-vera-q3-2026-earnings-call-transcript/",
+    "https://www.gurufocus.com/news/9183940/vera-therapeutics-inc-vera-q3-2026-earnings-call-highlights-trutakna-launch-off-to-a-strong-start-with-103-million-in-first-revenue",
+    "https://biotechcatalystcalendar.substack.com/p/catalyst-alert-vera-q3-trutakna-launch",
+    "https://www.investing.com/news/analyst-ratings/raymond-james-raises-vera-therapeutics-price-target-on-strong-launch-93CH-5007684",
+    "https://www.investing.com/news/analyst-ratings/wedbush-lowers-vera-therapeutics-stock-price-target-on-competition-93CH-5007271",
+    "https://in.investing.com/news/stock-market-news/guggenheim-lowers-vera-therapeutics-stock-price-target-on-model-changes-93CH-5686946",
+    "https://www.merlintrader.com/vera-therapeutics-stock-hub/",
+    "https://www.fiercepharma.com/pharma/fda-approves-vera-therapeutics-atacicept-setting-igan-market-battle-novartis-otsuka",
+    "https://www.fool.com/investing/2026/11/16/theres-now-100-chance-fed-rate-hike-in-december-thats-not-worst-news-for-wall-street/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "รีเฟรชตัวที่ค้างบนบอร์ด (รายงาน 29 ก.ย. อายุ 49 วัน) catalyst ในรายงานเดิมจบแล้ว: TRUTAKNA ได้รับอนุมัติ (7 ก.ค.) และ ORIGIN 3 ผลบวก (15 ก.ย.) ไตรมาสแรกของการขายได้รายได้ $10.3M (ราวครึ่งเป็นการเติมสต็อกช่องทาง) และ patient start form ~700 ใบ แต่หุ้นยังลงมา ~$26 จากความกังวลเรื่องคู่แข่ง: povetacicept ของ Vertex ซึ่งเป็น BAFF/APRIL inhibitor อีกตัว มี PDUFA 30 พ.ย. เป้ากระจายกว้าง — Raymond James $87, Guggenheim $66, Wedbush $29 (Neutral) เงินสด $499.2M ณ 30 มิ.ย. เทียบการเผาเงิน ~$100M/ไตรมาส runway ~12–18 เดือนก่อนรายได้โต Base +55% เป็นกรอบ 6–9 เดือนตามการ ramp ยอดขาย แนะนำ 2–3% ของ portfolio เท่านั้น — ถ้าการขายสะดุด ลงได้ 35–40%",
+      "priceNote": "ราคาสด $26.32 (+0.46%) 18 พ.ย. 2026 ลง 19% จากรายงาน 29 ก.ย. ($32.50) และ ~$30.14 ช่วงงบ Q3 (6 พ.ย.) ลง ~40% YTD ห่างจาก 52-week high $56.05 มาก หุ้นถูกลดมูลค่าเพราะกลัวคู่แข่ง (povetacicept ของ Vertex, PDUFA 30 พ.ย.) แม้ไตรมาสแรกของการขายจะดี",
+      "scoreLabel": "Moonshot",
+      "catalysts": [
+        { "name": "FDA ตัดสิน povetacicept ของ Vertex (คู่แข่ง)", "description": "povetacicept ของ Vertex เป็น BAFF/APRIL inhibitor ตัวที่สองใน IgAN มี PDUFA 30 พ.ย. 2026 (ตามแหล่งเดียว) ตลาดคาดว่าจะอนุมัติและ price ไว้บางส่วนแล้ว ประเด็นสำหรับ VERA คือความกว้างของฉลาก ความสะดวกในการให้ยา และราคาเทียบ TRUTAKNA" },
+        { "name": "sBLA เพื่อการอนุมัติเต็มรูปแบบ — FDA รับเรื่อง", "description": "มีรายงานแหล่งเดียวว่า Vera ยื่น sBLA (ข้อมูล eGFR ของ ORIGIN 3) ครบเมื่อ 3 พ.ย. 2026 ปกติ FDA รับเรื่องราว 60 วันหลังยื่น การอนุมัติเต็มรูปแบบจะปลดแรงกดของสถานะอนุมัติแบบเร่งด่วน" },
+        { "name": "ตัวเลขการขาย Q4 2026", "description": "งบ Q4 (~ปลาย ก.พ. 2027 ยังไม่ประกาศวัน) จะเป็นไตรมาสเต็มแรกที่เห็นดีมานด์จริงของ TRUTAKNA หลังหักการเติมสต็อก และการเติบโตของ patient start form จาก ~700" }
+      ],
+      "risks": [
+        "คู่แข่ง: povetacicept ของ Vertex (PDUFA 30 พ.ย.) ใช้กลไก BAFF/APRIL เดียวกันใน IgAN นอกจากนี้ยังมียา IgAN ของ Novartis และ Otsuka ถ้าคู่แข่งได้ฉลากกว้าง สมมติฐานส่วนแบ่งตลาดของ TRUTAKNA จะหด",
+        "คุณภาพการขาย: ราวครึ่งของรายได้ $10.3M ไตรมาสแรกเป็นการเติมสต็อกช่องทาง Q4 จึงต้องโชว์ดีมานด์จริงที่โตขึ้น",
+        "การเผาเงิน: เงินสดดำเนินงาน Q2 ใช้ไป $100.2M เทียบเงินสด $499.2M (30 มิ.ย.) SG&A $61.4M ต่อไตรมาส runway ~12–18 เดือนก่อนรายได้โต อาจต้องระดมทุน (ไม่พบตัวเลขเงินสด Q3)",
+        "สถานะอนุมัติแบบเร่งด่วน: ยังไม่ยืนยันประโยชน์ระยะยาวต่อการเสื่อมของไต ข่าวยื่น sBLA (3 พ.ย.) มาจากแหล่งเดียว ต้องยืนยัน",
+        "เป้านักวิเคราะห์กระจายกว้าง ($29 Wedbush Neutral ถึง $87 Raymond James) แปลว่าตลาดยังไม่มีมุมมองยอดขายสูงสุดที่ชัด มหภาคเป็น WAIT (30/100)"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ย Fed 3.75–4.00% หลังขึ้น 16 ก.ย. CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ~95% (17–18 พ.ย.) ที่เหลือเป็น 50bp",
+        "inflationNote": "CPI ต.ค. ร้อน (core +0.3% m/m เทียบคาด 0.2%) core PCE ก.ย. 3.1% y/y ตัวถัดไปคือ PCE ต.ค. (25 พ.ย.) และ CPI พ.ย. (10 ธ.ค.)",
+        "sectorImpact": "ไบโอเทคที่มียาขายแล้วไวต่อดอกเบี้ยน้อยกว่าตัวที่ยังไม่มีรายได้ แต่ช่วงเปิดตัวที่ยังเผาเงินก็ถูกหักลดเมื่อดอกเบี้ยขึ้น และการเพิ่มทุนในตลาดอ่อนจะได้ราคาแย่กว่า",
+        "summary": "MEDIUM — การตัดสินยาคู่แข่ง 30 พ.ย. สำคัญที่สุด มหภาคเป็น WAIT (30/100) จึงรอดูฉลากของ Vertex ก่อนเพิ่มไม้"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · Moonshot สูงสุด 2.5% — ยาที่อนุมัติและกำลังขาย ที่มาร์เก็ตแคป ~$1.9B หลังลดลง ~40% YTD จากความกังวลเรื่องคู่แข่ง median ถึงวัน catalyst ของ turbo -6.6% (n=76) จึงเข้าที่ Entry 2 ($24.00–25.50) เป็นหลัก รอฉลากของ Vertex 30 พ.ย. ก่อน",
+        "entryLevels": [
+          { "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ turbo -6.6% (n=76)", "timing": "ตอนนี้ (ไม้เล็ก)" },
+          { "note": "โซนย่อช่วงที่ Vertex รู้ผล 30 พ.ย. — จุดเข้าหลัก", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงหนัก — เฉพาะเมื่อฉลาก povetacicept ไม่ได้เหนือกว่าชัดเจน", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Base — ดีมานด์ Q4 หลังหักสต็อกโต + FDA รับ sBLA re-rate ไป ~$40 กรอบ 6–9 เดือน" },
+        "tp2": { "note": "Bull — การอนุมัติเต็มรูปแบบเดินตามแผนและรักษาส่วนแบ่งเทียบ povetacicept ได้ เป้า Guggenheim $66" },
+        "tp3": { "note": "Moon — TRUTAKNA กลายเป็นมาตรฐานการรักษา IgAN หรือมี M&A เชิงกลยุทธ์ เป้า Raymond James $87 thesis 12–18 เดือน" },
+        "stopLoss": {
+          "tightNote": "-24% — กว้างกว่า medianMAE ของ turbo (-20%)",
+          "hardNote": "-37% — ตลาด price การเสียส่วนแบ่งให้คู่แข่งหรือการเพิ่มทุนที่ dilute",
+          "rrNote": "จากกลาง Entry 2 ($24.75) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "อสมมาตร ✅ — ผ่านเป้า 5:1 ของ turbo"
+        }
+      },
+      "estimateDates": [
+        { "event": "PDUFA povetacicept ของ Vertex", "note": "ผลต่อฉลากและราคาของคู่แข่ง" },
+        { "event": "งบ Q4 2026 / ตัวเลขการขาย", "note": "ไตรมาสเต็มแรกที่เห็นดีมานด์จริง" }
+      ]
+    }
+  }
+}

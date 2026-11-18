@@ -1,0 +1,176 @@
+{
+  "ticker": "IMUX",
+  "companyName": "Immunic, Inc.",
+  "companyDescription": "MS biotech · vidofludimus calcium (oral DHODH inhibitor) in twin Phase 3 ENSURE-1/ENSURE-2 trials for relapsing MS, topline guided to December 2026 · ~$132M cash (Sep 30) vs a ~$102M market cap · NDA planned mid-2027 if positive",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-18T15:10:00.000Z",
+  "price": 7.52,
+  "priceChange": 0,
+  "priceNote": "Self-fetched: IMUX is not in the live-prices cache, so this uses the Nov 13, 2026 close of $7.52 (Fool.com), the latest confirmed print. The stock fell ~5% after Q3 results (Nov 13) and is down from $13.97 on Jul 31. Prices are post the 1-for-10 reverse split (effective Apr 27, 2026; ~13.6M shares). The company trades below its ~$132M cash.",
+  "marketCap": "~$102M",
+  "sector": "Healthcare / Biotechnology — Neurology (Multiple Sclerosis)",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 0,
+  "summary": "A true binary: twin Phase 3 ENSURE-1/ENSURE-2 readouts of oral vidofludimus in relapsing MS are guided to December 2026 (Q3 release). The company trades at ~$102M against ~$132M cash at Sep 30, so the market prices meaningful failure odds. H.C. Wainwright's $22 target implies ~+190%. Runway is guided into late 2027 (~12–13 months), plus up to ~$200M from outstanding warrants, so there is no survival flag. The bar is high: ENSURE compares against the active comparator teriflunomide, not placebo. phase3_readout has n<5 in the turbo prior (context only). Base +110% is a post-readout horizon, not a 30-day call. แนะนำ 2% ของ portfolio เท่านั้น — ถ้า ENSURE พลาด ลงได้ 55–70%.",
+  "catalysts": [
+    {
+      "icon": "🧪",
+      "name": "ENSURE-1 / ENSURE-2 Phase 3 topline (relapsing MS)",
+      "description": "Twin pivotal trials of vidofludimus calcium vs teriflunomide in relapsing MS, primary endpoint annualized relapse rate. The company reaffirmed topline in December 2026 in its Q3 2026 update, with both studies on track. No exact day guided.",
+      "urgencyLabel": "~4–6 WEEKS",
+      "dateBadge": "~Dec 2026",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📄",
+      "name": "NDA submission (if ENSURE positive)",
+      "description": "Subject to positive data, Immunic plans an NDA in mid-2027, which could lead to approval in 2028. A partnering or licensing deal is the more likely near-term monetization for a ~$100M company.",
+      "urgencyLabel": "MID-2027",
+      "dateBadge": "~mid-2027",
+      "catalystDate": "2027-06-30",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Active-comparator bar: ENSURE tests vidofludimus against teriflunomide, an approved oral MS drug (same DHODH mechanism class). Beating it on relapse rate is harder than beating placebo, and a 'non-inferior but not superior' result would be read as a miss.",
+    "Binary single-asset company: if both trials miss, the equity is priced toward a cash shell, with burn continuing.",
+    "Financing overhang: the Feb 12, 2026 securities purchase agreement drove the 1-for-10 reverse split, and outstanding warrants (up to ~$200M) could dilute holders heavily on positive data.",
+    "Runway is ~12–13 months (guided into late 2027). That is enough to read out, but not to launch alone, so a raise or partnership is needed either way.",
+    "Small-cap biotech risk appetite: macro is WAIT (30/100) with VIX ~23–26. A hot Oct PCE (Nov 25) would hit XBI/IWM into the readout window."
+  ],
+  "estimateDates": [
+    { "event": "ENSURE-1/2 topline", "dateRange": "~Dec 2026", "note": "Annualized relapse rate vs teriflunomide", "est": "Superiority on ARR", "highlight": "blue" },
+    { "event": "NDA submission", "dateRange": "~mid-2027", "note": "Only if ENSURE is positive", "est": "Approval ~2028", "highlight": "yellow" }
+  ],
+  "scenarios": [
+    { "label": "Bear", "color": "red", "pct": -60, "price": 3.01 },
+    { "label": "Base", "color": "yellow", "pct": 110, "price": 15.79 },
+    { "label": "Bull", "color": "green", "pct": 193, "price": 22.0 },
+    { "label": "Moon", "color": "purple", "pct": 350, "price": 33.84 }
+  ],
+  "analystTargets": [
+    { "firm": "H.C. Wainwright (reiterated, 2026)", "target": 22, "rating": "Buy" },
+    { "firm": "Consensus (Stockopedia, date unverified)", "target": 14.17, "rating": "Buy" }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds 3.75–4.00% after the Sep 16 hike. CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~95% (Nov 17–18), with the remainder on 50bp.",
+    "inflationNote": "Oct CPI ran hot (core +0.3% m/m vs 0.2%). Sep core PCE 3.1% y/y. Oct PCE (Nov 25) and Nov CPI (Dec 10) are next — both land inside the readout window.",
+    "sectorImpact": "Single-asset biotech: the ENSURE readout dominates. Rates matter only through small-cap biotech appetite and the price of any post-data raise.",
+    "summary": "MEDIUM — the outcome is idiosyncratic, but macro is WAIT (30/100) and small caps sell first on a hot PCE. Use the dip entry and keep size small."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      { "label": "Entry 1", "level": 7.52, "note": "Last confirmed close — starter only. Not preferred: turbo at-catalyst median -6.6% (n=76)", "timing": "Now (starter)" },
+      { "label": "Entry 2", "level": 6.9, "rangeMax": 7.35, "note": "Pre-readout dip zone, still below cash per share (~$9.7) — preferred", "timing": "If dips", "preferred": true },
+      { "label": "Entry 3", "level": 6.0, "note": "Deep dip — only on tape weakness, not on company news", "timing": "Deep dip" }
+    ],
+    "tp1": { "price": 15.79, "pct": 110, "note": "Base — at least one ENSURE trial shows superiority; re-rate to ~1.5x cash plus a pipeline value. Horizon: weeks after the December readout." },
+    "tp2": { "price": 22.0, "pct": 193, "note": "Bull — both trials positive; H.C. Wainwright's $22 target." },
+    "tp3": { "price": 33.84, "pct": 350, "note": "Moon — clean twin wins plus a partnering/licensing deal for a once-daily oral RMS drug. 6–12 month thesis.", "moon": true },
+    "stopLoss": {
+      "tight": 5.65,
+      "tightPct": -24.87,
+      "tightNote": "-25% pre-readout — wider than the turbo medianMAE (-20%). A slide to ~$5.65 with no news means the market is front-running a miss.",
+      "hard": 3.4,
+      "hardPct": -54.79,
+      "hardNote": "-55% — readout-failure territory (cash shell with ongoing burn).",
+      "riskReward": "10.1 : 1",
+      "rrNote": "Entry 2 midpoint ($7.13) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Asymmetric ✅ — but binary: the tight stop does not protect against an overnight readout gap"
+    },
+    "verdict": "SPECULATIVE · ค่าขนม 2% max — a dated December binary priced below cash. The measured turbo at-catalyst median is -6.6% (n=76), so Entry 2 ($6.90–7.35) is preferred. Size for a gap: a readout lands overnight, so stops will not save a miss.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "phase3_readout",
+    "preRunup": "Small-cap biotechs with a dated pivotal readout often drift up 2–4 weeks before the event. IMUX has done the opposite (-46% since July and -5% post-Q3), so positioning is light.",
+    "preRunupTiming": "Final 2–4 weeks before the December readout",
+    "preRunupPct": "-5% post-Q3 (no run-up yet)",
+    "postWin": {
+      "avgPct": 150,
+      "range": "+40% to +300%",
+      "note": "MDGL rose ~268% in one session on a clean Phase 3 (MAESTRO-NASH, Dec 2022); CAPR ran ~+300% in two days on HOPE-3 (Dec 2025). A below-cash company with a twin-trial win in a large indication fits the upper half of that range.",
+      "exampleDate": "Dec 19, 2022 (MDGL)"
+    },
+    "postLose": {
+      "avgPct": -55,
+      "range": "-36% to -70%",
+      "note": "EYPT fell ~71% on its LUGANO Phase 3 miss (Aug 2026); CMPS fell ~36% on a Phase 3 that hit but disappointed on effect size (Jun 2025). Cash support limits the floor somewhat for IMUX.",
+      "exampleDate": "Aug 2026 (EYPT LUGANO)"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "2%. phase3_readout has no n≥5 turbo bucket (context only), so the lane-wide prior governs (hitRate 6.5%, softHitRate 27.1%). It is binary with an overnight gap, and macro is WAIT, so size at the floor."
+    },
+    "stopPreCatalyst": { "pct": -24.87, "price": 5.65, "note": "Wider than the turbo medianMAE (-20%). Below ~$5.65 before data, the market is pricing a miss." },
+    "stopPostCatalyst": { "pct": -40, "note": "If either trial fails superiority on ARR, exit day 1 — no 'wait for the full data' bounce." }
+  },
+  "comparableCases": [
+    { "ticker": "MDGL", "event": "MAESTRO-NASH Phase 3 topline hits both endpoints", "date": "Dec 2022", "movePct": 268, "days": 1, "outcome": "good", "note": "Upper-bound template for a clean pivotal win in a depressed small cap. IMUX starts below cash, which makes the re-rating math similar." },
+    { "ticker": "CAPR", "event": "Phase 3 HOPE-3 data win (deramiocel, DMD)", "date": "Dec 2025", "movePct": 300, "days": 2, "outcome": "good", "note": "A recent small-cap pivotal win that tripled in two days — the Moon-case shape." },
+    { "ticker": "EYPT", "event": "Phase 3 LUGANO primary endpoint miss (Duravyu vs Eylea, wet AMD)", "date": "Aug 2026", "movePct": -71, "days": 1, "outcome": "bad", "note": "Active-comparator Phase 3 miss — the same structure as ENSURE vs teriflunomide. This is the downside template." }
+  ],
+  "sources": [
+    "https://www.proactiveinvestors.com/companies/news/1101753/immunic-ceo-discusses-q3-highlights-and-december-phase-3-ms-trial-readouts.html",
+    "https://www.rttnews.com/3714528/immunic-q3-loss-widens-on-higher-expenses-phase-3-ms-trial-data-expected-in-december-2026.aspx",
+    "https://www.biopharmawatch.com/news/IMUX/immunic-reports-q3-2026-results-and-update",
+    "https://imux.com/immunic-inc-announces-1-for-10-reverse-stock-split/",
+    "https://ir.imux.com/2026-04-23-Immunic,-Inc-Announces-1-for-10-Reverse-Stock-Split?asPDF=1",
+    "https://www.investing.com/news/analyst-ratings/hc-wainwright-reiterates-buy-on-immunic-stock-22-target-93CH-5036068",
+    "https://www.fool.com/quote/nasdaq/immunic-inc/imux/",
+    "https://finviz.com/news/422598/why-is-immunic-stock-falling-5-following-its-third-quarter-results",
+    "https://www.stockopedia.com/share-prices/immunic-NSQ:IMUX",
+    "https://www.tipranks.com/news/mdgl-skyrockets-after-positive-clinical-trial",
+    "https://www.fool.com/investing/2026/11/16/theres-now-100-chance-fed-rate-hike-in-december-thats-not-worst-news-for-wall-street/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "binary แท้: ผล Phase 3 คู่ ENSURE-1/ENSURE-2 ของ vidofludimus ชนิดกินใน MS ชนิดกำเริบซ้ำ บริษัทคาดออก ธ.ค. 2026 (งบ Q3) มาร์เก็ตแคป ~$102M ต่ำกว่าเงินสด ~$132M ณ 30 ก.ย. แปลว่าตลาด price โอกาสล้มเหลวไว้สูง เป้า H.C. Wainwright $22 = ~+190% เงินพอถึงปลายปี 2027 (~12–13 เดือน) บวก warrant อีกสูงสุด ~$200M จึงไม่ติด survival flag แต่โจทย์ยาก: ENSURE เทียบกับยา teriflunomide ไม่ใช่ยาหลอก phase3_readout มี n<5 (บริบทเท่านั้น) Base +110% เป็นกรอบหลังผล ไม่ใช่ 30 วัน แนะนำ 2% ของ portfolio เท่านั้น — ถ้า ENSURE พลาด ลงได้ 55–70%",
+      "priceNote": "ดึงราคาเอง: IMUX ไม่อยู่ใน cache จึงใช้ราคาปิด 13 พ.ย. 2026 ที่ $7.52 (Fool.com) หุ้นลง ~5% หลังงบ Q3 และลงจาก $13.97 เมื่อ 31 ก.ค. ราคาหลัง reverse split 1:10 (มีผล 27 เม.ย. 2026; ~13.6M หุ้น) บริษัทเทรดต่ำกว่าเงินสด ~$132M",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        { "name": "ผล topline Phase 3 ENSURE-1 / ENSURE-2 (MS ชนิดกำเริบซ้ำ)", "description": "การศึกษาหลักคู่ vidofludimus calcium เทียบ teriflunomide endpoint หลักคืออัตรากำเริบต่อปี บริษัทยืนยันผลใน ธ.ค. 2026 ในงบ Q3 ทั้งสองการศึกษาเดินตามแผน ยังไม่ระบุวัน" },
+        { "name": "ยื่น NDA (ถ้า ENSURE ผลบวก)", "description": "ถ้าผลบวก วางแผนยื่น NDA กลางปี 2027 อาจได้รับอนุมัติปี 2028 สำหรับบริษัท ~$100M ดีลพาร์ทเนอร์/licensing น่าจะเป็นทางทำเงินระยะใกล้ที่เป็นไปได้กว่า" }
+      ],
+      "risks": [
+        "โจทย์ยาเปรียบเทียบจริง: ENSURE เทียบกับ teriflunomide ซึ่งเป็นยา MS ชนิดกินที่อนุมัติแล้ว (กลไก DHODH เดียวกัน) เอาชนะเรื่องอัตรากำเริบยากกว่าเทียบยาหลอก ผล 'ไม่ด้อยกว่าแต่ไม่เหนือกว่า' จะถูกมองว่าพลาด",
+        "บริษัทมีสินทรัพย์เดียว: ถ้าทั้งสองการศึกษาพลาด หุ้นจะถูกตีราคาเหมือนบริษัทเปลือกที่มีเงินสด และยังเผาเงินต่อ",
+        "แรงกดจากการระดมทุน: สัญญาซื้อหลักทรัพย์ 12 ก.พ. 2026 เป็นเหตุให้ทำ reverse split 1:10 และ warrant คงค้าง (สูงสุด ~$200M) อาจ dilute หนักเมื่อผลดี",
+        "เงินพอ ~12–13 เดือน (ถึงปลายปี 2027) พอรู้ผลแต่ไม่พอเปิดตัวยาเอง ต้องระดมทุนหรือหาพาร์ทเนอร์อยู่ดี",
+        "risk appetite ไบโอเทคเล็ก: มหภาคเป็น WAIT (30/100) VIX ~23–26 ถ้า PCE ต.ค. (25 พ.ย.) ร้อนจะกด XBI/IWM ในช่วงรอผล"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ย Fed 3.75–4.00% หลังขึ้น 16 ก.ย. CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ~95% (17–18 พ.ย.) ที่เหลือเป็น 50bp",
+        "inflationNote": "CPI ต.ค. ร้อน (core +0.3% m/m เทียบคาด 0.2%) core PCE ก.ย. 3.1% y/y PCE ต.ค. (25 พ.ย.) และ CPI พ.ย. (10 ธ.ค.) อยู่ในช่วงรอผลพอดี",
+        "sectorImpact": "ไบโอเทคสินทรัพย์เดียว ผล ENSURE สำคัญที่สุด ดอกเบี้ยกระทบผ่าน risk appetite ของไบโอเทคเล็กและราคาการเพิ่มทุนหลังผล",
+        "summary": "MEDIUM — ผลลัพธ์เป็นเรื่องเฉพาะบริษัท แต่มหภาคเป็น WAIT (30/100) และหุ้นเล็กโดนขายก่อนถ้า PCE ร้อน ใช้จุดเข้าตอนย่อและถือไม้เล็ก"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · ค่าขนม สูงสุด 2% — binary ที่มีกรอบเวลา ธ.ค. และเทรดต่ำกว่าเงินสด median ถึงวัน catalyst ของ turbo -6.6% (n=76) จึงเข้าที่ Entry 2 ($6.90–7.35) เป็นหลัก ถือไม้ขนาดที่รับ gap ได้ เพราะผลออกนอกเวลาตลาด stop ช่วยไม่ได้ถ้าพลาด",
+        "entryLevels": [
+          { "note": "ราคาปิดล่าสุดที่ยืนยันได้ — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ turbo -6.6% (n=76)", "timing": "ตอนนี้ (ไม้เล็ก)" },
+          { "note": "โซนย่อก่อนผล ยังต่ำกว่าเงินสดต่อหุ้น (~$9.7) — จุดเข้าหลัก", "timing": "ถ้าย่อ" },
+          { "note": "ร่วงหนัก — เฉพาะตลาดอ่อน ไม่ใช่ข่าวบริษัท", "timing": "ถ้าร่วงหนัก" }
+        ],
+        "tp1": { "note": "Base — อย่างน้อยหนึ่งการศึกษาชนะแบบเหนือกว่า re-rate ไป ~1.5 เท่าเงินสดบวกมูลค่า pipeline กรอบหลายสัปดาห์หลังผล ธ.ค." },
+        "tp2": { "note": "Bull — ผลบวกทั้งสองการศึกษา เป้า H.C. Wainwright $22" },
+        "tp3": { "note": "Moon — ชนะทั้งคู่แบบสะอาด + ดีลพาร์ทเนอร์ยา RMS ชนิดกินวันละครั้ง thesis 6–12 เดือน" },
+        "stopLoss": {
+          "tightNote": "-25% ก่อนผล — กว้างกว่า medianMAE ของ turbo (-20%) ถ้าไหลลง ~$5.65 โดยไม่มีข่าว แปลว่าตลาดดักผลพลาด",
+          "hardNote": "-55% — โซนผลล้มเหลว (บริษัทเปลือกที่ยังเผาเงิน)",
+          "rrNote": "จากกลาง Entry 2 ($7.13) ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "อสมมาตร ✅ — แต่เป็น binary: tight stop ไม่ป้องกัน gap ข้ามคืนวันประกาศผล"
+        }
+      },
+      "estimateDates": [
+        { "event": "ผล topline ENSURE-1/2", "note": "อัตรากำเริบต่อปีเทียบ teriflunomide" },
+        { "event": "ยื่น NDA", "note": "เฉพาะกรณี ENSURE ผลบวก" }
+      ]
+    }
+  }
+}
