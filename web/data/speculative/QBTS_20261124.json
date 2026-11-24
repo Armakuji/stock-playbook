@@ -1,0 +1,304 @@
+{
+  "ticker": "QBTS",
+  "companyName": "D-Wave Quantum Inc.",
+  "companyDescription": "Quantum computing · annealing (Advantage2) + gate-model via Quantum Circuits acquisition (Jan 2026) · Q3 2026 revenue $4.5M (+21%), RPO $38.3M (+1,221%) · $503M cash · up to $100M CHIPS Act agreement",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-24T15:00:00.000Z",
+  "price": 7.31,
+  "priceChange": 12.12,
+  "priceNote": "Live $7.31 (+12.12%, Nov 23 close, Yahoo) after the Nov 23 rebound. About 77% below the $32.19 52-week high, ~60% below the 200-day (~$18.12) and ~12% above the 52-week low ($6.52).",
+  "marketCap": "~$2.5B (est.)",
+  "sector": "Technology / Quantum Computing",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Moonshot",
+  "score": 0,
+  "summary": "The quantum basket's best balance sheet at a crash price. D-Wave holds $503.4M of cash and securities against an adjusted EBITDA loss of ~$38M a quarter, which is about three years of runway. RPO jumped 1,221% to $38.3M, it signed up to $100M of CHIPS Act funding, and management expects to recognise a large part of the Florida Atlantic University system revenue in Q4. Q3 bookings fell 19% and gross margin dropped to 52.9%, so the quarter was not clean. The stock is ~77% off its high. Base +65% is a 6–12 month horizon recovering half the gap to the 200-day, which is above the turbo P75 (21.5%). แนะนำ 2% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 50%+.",
+  "catalysts": [
+    {
+      "icon": "🖥️",
+      "name": "Florida Atlantic University system delivery (Q4 revenue)",
+      "description": "Management expects to deliver the FAU on-prem system and recognise a substantial part of that revenue in Q4 2026, a step-change versus the $4.5M Q3 revenue.",
+      "urgencyLabel": "~5 WEEKS",
+      "dateBadge": "~Dec 2026",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "📊",
+      "name": "Q4 2026 results",
+      "description": "The print that shows whether the FAU revenue landed and RPO is converting. No date announced (Q4 prints have historically come in March).",
+      "urgencyLabel": "~15 WEEKS",
+      "dateBadge": "~Mar 2027",
+      "catalystDate": "2027-03-31",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Bookings fell 19% y/y to $1.9M in Q3 and gross margin dropped to 52.9% from 71.4% on a mix shift to professional services. Revenue is still tiny ($4.5M/quarter) against a ~$2.5B valuation.",
+    "Opex rose ~84% to $55.9M after the Quantum Circuits acquisition; cash fell to $503M from $836M a year earlier. At the current burn that is ~3 years of runway, but the burn is rising.",
+    "Narrative risk: quantum names sold off 60–80% in 2026; a single big-tech comment (e.g. Jan 2025 'quantum is 15–30 years away') has previously cut QBTS ~36% in a day.",
+    "Analyst targets are dated and dispersed (Mizuho $40 Feb 2026; consensus pages $23–37).",
+    "Macro WAIT (15/100) and a possible Dec 9 hike hit long-duration, pre-profit tech hardest."
+  ],
+  "estimateDates": [
+    {
+      "event": "FAU system delivery",
+      "dateRange": "~Dec 2026",
+      "note": "Q4 revenue step-up",
+      "est": "Revenue recognised in Q4",
+      "highlight": "yellow"
+    },
+    {
+      "event": "Q4 2026 results",
+      "dateRange": "~Mar 2027",
+      "note": "RPO conversion",
+      "est": "Rev >> $4.5M",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -50,
+      "price": 3.66
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 65,
+      "price": 12.06
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 180,
+      "price": 20.47
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 350,
+      "price": 32.89
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Mizuho (Feb 2026)",
+      "target": 40,
+      "rating": "Outperform"
+    },
+    {
+      "firm": "Consensus avg (Webull, 2026)",
+      "target": 33.21,
+      "rating": "Buy"
+    },
+    {
+      "firm": "TipRanks 3-mo avg (dated)",
+      "target": 23.5,
+      "rating": "Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "HIGH",
+    "rateOutlook": "Fed funds 3.75–4.00%. CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~91% (Nov 23); futures dropped the 50bp tail after the November selloff.",
+    "inflationNote": "Oct core CPI +0.3% m/m (hot). Sep core PCE 3.1% y/y; Oct PCE (Nov 25) consensus 3.2% is the last inflation print before the Fed.",
+    "sectorImpact": "Quantum is the most long-duration, pre-profit corner of tech: rate hikes and risk-off compress it first. D-Wave's cash pile means it can wait out the cycle without an equity raise at these prices.",
+    "summary": "HIGH — /macro is WAIT (15/100, high conviction): S&P 7,237 is still below its 200-day (~7,340) after the Nov 23 +4.7% squeeze, VIX 27, breadth ~43% above 50DMA, HY OAS widening to ~3.52%. Turbo prior is unproven in this regime (0/107 windows had SPY down >2%)."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 7.31,
+        "note": "Current price — starter only. Not preferred: turbo at-catalyst median -6.6% (n=76)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 6.5,
+        "rangeMax": 7,
+        "note": "Retest of the 52-week low ($6.52) — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 5.6,
+        "note": "Deep dip — near cash value per share territory",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 12.06,
+      "pct": 65,
+      "note": "Base — ~$12 as FAU revenue lands and the 50-day (~$12.8) is reclaimed. Horizon 6–12 months; above the turbo P75 (21.5%) by design."
+    },
+    "tp2": {
+      "price": 20.47,
+      "pct": 180,
+      "note": "Bull — ~$20.5, back near the 200-day, if Q4 shows RPO converting and bookings recover."
+    },
+    "tp3": {
+      "price": 32.89,
+      "pct": 350,
+      "note": "Moon — ~$33 consensus-average target, a 2024-style quantum re-rating. 12–24 months.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 5.3,
+      "tightPct": -27.5,
+      "tightNote": "-28% — wider than the turbo medianMAE (-20%). Below the 52-week low with no bounce means the quantum bid is gone.",
+      "hard": 4,
+      "hardPct": -45.28,
+      "hardNote": "-45% — the market is valuing the business near its cash; thesis broken.",
+      "riskReward": "9.5 : 1",
+      "rrNote": "Entry 2 midpoint ($6.75) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Asymmetric ✅ — clears the 5:1 turbo target"
+    },
+    "verdict": "SPECULATIVE · Moonshot 2% max — ~3 years of cash, RPO +1,221%, ~77% off the high. The turbo at-catalyst median is -6.6% (n=76), so Entry 2 ($6.50–7.00) is preferred; don't chase the +13% rebound day.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Quantum names trade on sector momentum more than individual prints; run-ups cluster around big-tech quantum announcements.",
+    "preRunupTiming": "Sector-driven, not date-driven",
+    "preRunupPct": "Highly variable (±30%)",
+    "postWin": {
+      "avgPct": 40,
+      "range": "+20% to +800%",
+      "note": "QBTS ran from ~$1 (Oct 2024) to ~$10+ (Jan 2025) on the late-2024 quantum re-rating. Single good prints typically add +20–40%.",
+      "exampleDate": "Nov 2024 – Jan 2025"
+    },
+    "postLose": {
+      "avgPct": -36,
+      "range": "-25% to -36%",
+      "note": "QBTS fell ~36% on Jan 8, 2025 after big-tech comments that useful quantum was 15–30 years away.",
+      "exampleDate": "Jan 8, 2025"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "2%. earnings_beat is a tier-2 leader (+13.9pp vs +7.7pp overall, n=15) — a mild tailwind, not a reason to upsize. The primary event is fuzzy and macro is WAIT."
+    },
+    "stopPreCatalyst": {
+      "pct": -27.5,
+      "price": 5.3,
+      "note": "Wider than the turbo medianMAE (-20%). Below the 52-week low with no bounce means the quantum bid is gone."
+    },
+    "stopPostCatalyst": {
+      "pct": -30,
+      "note": "If Q4 shows no FAU revenue or RPO stalls, exit."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "QBTS",
+      "event": "Late-2024 quantum sector re-rating (Willow, Advantage2 news)",
+      "date": "Dec 2024",
+      "movePct": 800,
+      "days": 75,
+      "outcome": "good",
+      "note": "Same company: a crushed quantum name re-rated ~9x in under three months once the sector narrative turned."
+    },
+    {
+      "ticker": "RGTI",
+      "event": "Same quantum sector re-rating",
+      "date": "Dec 2024",
+      "movePct": 1000,
+      "days": 60,
+      "outcome": "good",
+      "note": "Peer confirms the move was sector-wide — QBTS upside depends on the basket, not just its own prints."
+    },
+    {
+      "ticker": "QBTS",
+      "event": "Big-tech 'quantum is 15–30 years away' comments",
+      "date": "Jan 2025",
+      "movePct": -36,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Narrative shocks hit hard and fast; size for it."
+    }
+  ],
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/0001907982/000190798226000180/qbts-20261110xexx991.htm",
+    "https://quantumcomputingreport.com/d-wave-reports-q3-2026-results-revenue-up-21-yoy-rpo-surges-1221-to-38-3m-and-finalizes-100m-chips-act-agreement/",
+    "https://finviz.com/news/419893/d-wave-reports-third-quarter-2026-results",
+    "https://www.webull.com/news/15905094598247424",
+    "https://benzinga.com/stock/qbts/ratings",
+    "https://www.fool.com/coverage/stock-market-today/2026/11/23/stock-market-today-nov-23-markets-rebound-from-correction-on-ai-relief-rally/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "งบดุลดีที่สุดในกลุ่ม quantum ที่ราคาหลังถล่ม D-Wave มีเงินสดและหลักทรัพย์ $503.4M เทียบ EBITDA ปรับปรุงขาดทุน ~$38M ต่อไตรมาส หรือ runway ~3 ปี RPO พุ่ง 1,221% เป็น $38.3M เซ็นข้อตกลง CHIPS Act สูงสุด $100M และผู้บริหารคาดรับรู้รายได้ระบบ Florida Atlantic University ส่วนใหญ่ใน Q4 แต่ bookings Q3 ลง 19% และ gross margin ลดเป็น 52.9% ไตรมาสนี้จึงไม่ได้สะอาด หุ้นต่ำกว่าจุดสูงสุด ~77% Base +65% เป็นกรอบ 6–12 เดือนที่ฟื้นครึ่งทางไปหาเส้น 200 วัน สูงกว่า P75 ของ turbo (21.5%) แนะนำ 2% ของ portfolio เท่านั้น — ถ้า thesis fail ลงได้ 50%+",
+      "priceNote": "ราคาสด $7.31 (+12.12% ปิด 23 พ.ย., Yahoo) หลังเด้ง 23 พ.ย. ต่ำกว่า 52-week high $32.19 ~77% ต่ำกว่าเส้น 200 วัน (~$18.12) ~60% และสูงกว่า 52-week low ($6.52) ~12%",
+      "scoreLabel": "Moonshot",
+      "catalysts": [
+        {
+          "name": "ส่งมอบระบบให้ Florida Atlantic University (รายได้ Q4)",
+          "description": "ผู้บริหารคาดส่งมอบระบบ on-prem ให้ FAU และรับรู้รายได้ส่วนใหญ่ใน Q4 2026 ซึ่งจะเป็นก้าวกระโดดเทียบรายได้ Q3 $4.5M"
+        },
+        {
+          "name": "งบ Q4 2026",
+          "description": "งบที่จะบอกว่ารายได้ FAU เข้ามาจริงหรือไม่และ RPO แปลงเป็นรายได้ ยังไม่ประกาศวัน (ปกติงบ Q4 ออกเดือน มี.ค.)"
+        }
+      ],
+      "risks": [
+        "bookings Q3 ลง 19% y/y เหลือ $1.9M และ gross margin ลดเป็น 52.9% จาก 71.4% เพราะสัดส่วนงานบริการเพิ่ม รายได้ยังเล็กมาก ($4.5M/ไตรมาส) เทียบมูลค่า ~$2.5B",
+        "Opex เพิ่ม ~84% เป็น $55.9M หลังซื้อ Quantum Circuits เงินสดลดเป็น $503M จาก $836M ปีก่อน ที่อัตราเผาเงินปัจจุบันอยู่ได้ ~3 ปี แต่อัตราเผาเงินกำลังเพิ่ม",
+        "ความเสี่ยงด้าน narrative: หุ้น quantum ร่วง 60–80% ในปี 2026 ความเห็นจาก big tech ครั้งเดียว (เช่น ม.ค. 2025 'quantum ยังอีก 15–30 ปี') เคยทำ QBTS ลง ~36% ในวันเดียว",
+        "เป้านักวิเคราะห์เก่าและกระจาย (Mizuho $40 ก.พ. 2026 หน้า consensus $23–37)",
+        "มหภาค WAIT (15/100) และการขึ้นดอกเบี้ย 9 ธ.ค. กระทบหุ้นเทคระยะยาวที่ยังไม่มีกำไรหนักสุด"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ย Fed 3.75–4.00% CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ~91% (23 พ.ย.) ฟิวเจอร์สตัดโอกาสขึ้น 50bp ออกหลังตลาดร่วงเดือน พ.ย.",
+        "inflationNote": "core CPI ต.ค. +0.3% m/m (ร้อน) core PCE ก.ย. 3.1% y/y PCE ต.ค. (25 พ.ย.) คาด 3.2% เป็นตัวเลขเงินเฟ้อตัวสุดท้ายก่อน Fed",
+        "sectorImpact": "quantum เป็นกลุ่มเทคที่ระยะยาวที่สุดและยังไม่มีกำไร ดอกเบี้ยขึ้นและ risk-off กดกลุ่มนี้ก่อน แต่เงินสดก้อนใหญ่ทำให้ D-Wave รอผ่านรอบนี้ได้โดยไม่ต้องเพิ่มทุนที่ราคานี้",
+        "summary": "HIGH — /macro เป็น WAIT (15/100 ความมั่นใจสูง): S&P 7,237 ยังต่ำกว่าเส้น 200 วัน (~7,340) หลังเด้ง +4.7% เมื่อ 23 พ.ย. VIX 27 breadth ~43% เหนือ 50DMA HY OAS กว้างขึ้นเป็น ~3.52% prior ของ turbo ยังไม่เคยพิสูจน์ในตลาดขาลงแบบนี้ (0/107 window ที่ SPY ลง >2%)"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · Moonshot สูงสุด 2% — เงินสด ~3 ปี RPO +1,221% ต่ำกว่าจุดสูงสุด ~77% median ถึงวัน catalyst ของ turbo -6.6% (n=76) จึงเข้าที่ Entry 2 ($6.50–7.00) เป็นหลัก อย่าไล่ราคาวันที่เด้ง +13%",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ turbo -6.6% (n=76)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "ทดสอบ 52-week low ($6.52) อีกรอบ — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ร่วงหนัก — ใกล้มูลค่าเงินสดต่อหุ้น",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — ~$12 เมื่อรายได้ FAU เข้าและกลับเหนือเส้น 50 วัน (~$12.8) กรอบ 6–12 เดือน สูงกว่า P75 ของ turbo โดยตั้งใจ"
+        },
+        "tp2": {
+          "note": "Bull — ~$20.5 ใกล้เส้น 200 วัน ถ้า Q4 แสดงว่า RPO แปลงเป็นรายได้และ bookings ฟื้น"
+        },
+        "tp3": {
+          "note": "Moon — ~$33 เป้าเฉลี่ย consensus แบบ re-rate ของ quantum ปี 2024 กรอบ 12–24 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE ของ turbo (-20%) หลุด 52-week low โดยไม่เด้งแปลว่าแรงซื้อ quantum หมด",
+          "hardNote": "-45% — ตลาดให้มูลค่าใกล้เงินสด thesis พัง",
+          "rrNote": "จากกลาง Entry 2 ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "อสมมาตร ✅ — ผ่านเป้า 5:1 ของ turbo"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "ส่งมอบระบบ FAU",
+          "note": "รายได้ Q4 กระโดด"
+        },
+        {
+          "event": "งบ Q4 2026",
+          "note": "การแปลง RPO เป็นรายได้"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,307 @@
+{
+  "ticker": "LUNR",
+  "companyName": "Intuitive Machines, Inc.",
+  "companyDescription": "Lunar & space infrastructure · Nova-C landers (IM-1/IM-2 flown, IM-3 ~early 2027), NASA Near Space Network data relay, Lanteris + Goonhilly acquisitions · Q3 2026 revenue $269M, positive FCF, $1.87B backlog",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-24T15:00:00.000Z",
+  "price": 9.75,
+  "priceChange": 11.11,
+  "priceNote": "Live $9.75 (+11.1%) on the Nov 23 relief rally (live-prices cache). Still ~79% below the $45.70 52-week high, ~49% below its 200-day (~$19.08) and within 13% of the 52-week low ($8.62). The stock fell 27% in October alone despite record Q3 numbers.",
+  "marketCap": "~$2B (est.)",
+  "sector": "Aerospace / Space Infrastructure",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Moonshot",
+  "score": 0,
+  "summary": "A space name priced like it is in trouble, though it is not: Q3 2026 revenue was $269M (vs ~$248M est.), adjusted EBITDA +$8.3M, free cash flow +$33.5M, cash $463.8M and backlog $1.87B, with FY26 revenue guidance of $920–950M reaffirmed. Yet the stock is ~$9.75, ~79% off its high, after the November speculative-tech crash. There is no near-term binary event; the catalysts are the Q4 print (~Mar 2027) and IM-3 (NASA lists early 2027). Base +60% is a 6–12 month re-rating toward the 200-day, so it sits above the turbo P75 (21.5%) by design. Survival is the strongest on this list. แนะนำ 2% ของ portfolio เท่านั้น (macro WAIT) — ถ้า thesis fail ลงได้ 40–50%.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q4 2026 results / FY27 guide",
+      "description": "First full-year print with Lanteris consolidated. The FY26 $920–950M revenue guide and positive adjusted EBITDA were reaffirmed at Q3; a FY27 guide that converts the $1.87B backlog is the re-rating trigger. No date announced.",
+      "urgencyLabel": "~14 WEEKS",
+      "dateBadge": "~Mar 2027",
+      "catalystDate": "2027-03-31",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🌙",
+      "name": "IM-3 lunar landing mission (Reiner Gamma)",
+      "description": "Third Nova-C mission on a Falcon 9. NASA's CLPS schedule lists it as early 2027; older trackers said H2 2026, so treat the date as fuzzy. A clean landing after IM-1 and IM-2 both tipped over would be the binary narrative win.",
+      "urgencyLabel": "~Q1 2027",
+      "dateBadge": "~Q1 2027",
+      "catalystDate": "2027-03-31",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Lunar landing execution: IM-1 (Feb 2024) and IM-2 both landed tipped over. A third failed landing on IM-3 would hit credibility on NASA CLPS follow-ons.",
+    "Contract concentration: NASA picked Astrolab and Lunar Outpost over Intuitive Machines for the Lunar Terrain Vehicle award (May 2026). Government budget/award timing drives the backlog.",
+    "Operating loss widened to $34.2M in Q3 even as adjusted EBITDA turned positive — acquisition integration (Lanteris, Goonhilly) adds execution risk; one summary headlined 'contract cuts', which could not be verified.",
+    "Analyst targets are stale (Canaccord $41 and KeyBanc $27 are from spring 2026); no November 2026 target changes were found.",
+    "Macro WAIT (15/100): high-beta space names fell 50–80% in the Nov selloff and have no floor until the S&P reclaims its 200-day."
+  ],
+  "estimateDates": [
+    {
+      "event": "Q4 2026 results",
+      "dateRange": "~Mar 2027",
+      "note": "FY27 guide vs $1.87B backlog",
+      "est": "FY26 rev $920–950M",
+      "highlight": "yellow"
+    },
+    {
+      "event": "IM-3 launch & landing",
+      "dateRange": "~Q1 2027",
+      "note": "NASA lists early 2027",
+      "est": "Upright landing",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -45,
+      "price": 5.36
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 60,
+      "price": 15.6
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 160,
+      "price": 25.35
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 320,
+      "price": 40.95
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Canaccord Genuity (May 2026)",
+      "target": 41,
+      "rating": "Buy"
+    },
+    {
+      "firm": "KeyBanc (Apr 2026)",
+      "target": 27,
+      "rating": "Overweight"
+    },
+    {
+      "firm": "B. Riley (Feb 2026)",
+      "target": 25,
+      "rating": "Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "HIGH",
+    "rateOutlook": "Fed funds 3.75–4.00%. CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~91% (Nov 23); futures dropped the 50bp tail after the November selloff.",
+    "inflationNote": "Oct core CPI +0.3% m/m (hot). Sep core PCE 3.1% y/y; Oct PCE (Nov 25) consensus 3.2% is the last inflation print before the Fed.",
+    "sectorImpact": "Space infrastructure is a long-duration, high-beta growth trade: rate hikes and a risk-off tape compress multiples hardest here, even with positive FCF.",
+    "summary": "HIGH — /macro is WAIT (15/100, high conviction): S&P 7,237 is still below its 200-day (~7,340) after the Nov 23 +4.7% squeeze, VIX 27, breadth ~43% above 50DMA, HY OAS widening to ~3.52%. Turbo prior is unproven in this regime (0/107 windows had SPY down >2%)."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 9.75,
+        "note": "Current price — starter only. Not preferred: turbo at-catalyst median -6.6% (n=76)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 8.6,
+        "rangeMax": 9.2,
+        "note": "Retest of the 52-week low ($8.62) — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 7.5,
+        "note": "Deep dip — only if the S&P breaks the Nov 20 low (6,910)",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 15.6,
+      "pct": 60,
+      "note": "Base — re-rate toward ~$15.6 as Q4 confirms FY27 backlog conversion. Horizon 6–12 months; above the turbo P75 (21.5%) by design."
+    },
+    "tp2": {
+      "price": 25.35,
+      "pct": 160,
+      "note": "Bull — back above the 200-day toward ~$25, in line with KeyBanc/B. Riley spring targets; needs a clean IM-3."
+    },
+    "tp3": {
+      "price": 40.95,
+      "pct": 320,
+      "note": "Moon — Canaccord's $41 case: NASA moon-base + Golden Dome data-relay demand, 12–24 month thesis.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 7.2,
+      "tightPct": -26.15,
+      "tightNote": "-26% — wider than the turbo medianMAE (-20%). Below the 52-week low the market is pricing a broken backlog story.",
+      "hard": 5.5,
+      "hardPct": -43.59,
+      "hardNote": "-44% — FCF-positive company priced like a distressed one; thesis broken.",
+      "riskReward": "9.7 : 1",
+      "rrNote": "Entry 2 midpoint ($8.90) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Asymmetric ✅ — clears the 5:1 turbo target"
+    },
+    "verdict": "SPECULATIVE · Moonshot 2% max — FCF-positive, $464M cash, $1.87B backlog at ~79% off the high. The turbo at-catalyst median is -6.6% (n=76) and macro is WAIT, so Entry 2 ($8.60–9.20) is preferred; don't chase the +11% rally day.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "satellite_launch",
+    "preRunup": "LUNR historically runs hard into landing windows (IM-1 Feb 2024) and sells off on landing anomalies.",
+    "preRunupTiming": "2–3 weeks before a landing",
+    "preRunupPct": "+50–200% (IM-1 Feb 2024)",
+    "postWin": {
+      "avgPct": 24,
+      "range": "+24% to +200%",
+      "note": "LUNR +24% in a day on the $4.82B NASA Near Space Network award (Sep 19, 2024); the stock roughly tripled into the IM-1 landing in Feb 2024.",
+      "exampleDate": "Sep 19, 2024"
+    },
+    "postLose": {
+      "avgPct": -35,
+      "range": "-27% to -35%",
+      "note": "LUNR fell ~35% the day after IM-1 was found tipped on its side (Feb 26, 2024); October 2026 -27% month shows tape risk even without news.",
+      "exampleDate": "Feb 26, 2024"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "2%. satellite_launch has no n≥5 tier-2 bucket (context only). Whole-lane softHitRate 27.1% and a regime the prior has never measured (0/107 SPY-down windows) keep size at the floor."
+    },
+    "stopPreCatalyst": {
+      "pct": -26.15,
+      "price": 7.2,
+      "note": "Wider than the turbo medianMAE (-20%). Below the 52-week low the market is pricing a broken backlog story."
+    },
+    "stopPostCatalyst": {
+      "pct": -30,
+      "note": "If IM-3 fails or the FY27 guide undercuts backlog conversion, exit."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "LUNR",
+      "event": "IM-1 landing run-up (first US commercial Moon landing)",
+      "date": "Feb 2024",
+      "movePct": 200,
+      "days": 10,
+      "outcome": "good",
+      "note": "Same company: the stock roughly tripled into the landing, a template for IM-3 narrative upside."
+    },
+    {
+      "ticker": "LUNR",
+      "event": "NASA Near Space Network $4.82B contract award",
+      "date": "Sep 2024",
+      "movePct": 24,
+      "days": 1,
+      "outcome": "good",
+      "note": "Contract wins re-rate the stock quickly; this is the backlog-conversion path."
+    },
+    {
+      "ticker": "LUNR",
+      "event": "IM-1 lander found tipped over",
+      "date": "Feb 2024",
+      "movePct": -35,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Landing anomalies erase run-ups fast; size for this."
+    }
+  ],
+  "sources": [
+    "https://finviz.com/news/421555/intuitive-machines-reports-third-quarter-2026-financial-results-reports-record-financials-across-the-board-revenue-profitability-positive-cash-flow-and-backlog",
+    "https://stocktwits.com/news-articles/markets/equity/lunr-ceo-highlights-record-q3-revenue-hits-269-m-backlog-reaches-1-9-b/cNGz6b2R9aA",
+    "https://www.nasa.gov/event/clps-flight-intuitive-machines-im-3",
+    "https://finance.yahoo.com/markets/stocks/articles/canaccord-just-hiked-intuitive-machines-160459021.html",
+    "https://247wallst.com/investing/2026/04/29/keybanc-raises-intuitive-machines-price-target-to-27-is-the-lunar-economy-finally-liftoff-ready/",
+    "https://finance.yahoo.com/markets/stocks/articles/lunr-stock-wavers-nasa-selects-190429920.html",
+    "https://www.fool.com/investing/2024/09/19/why-intuitive-machines-stock-rocketed-24-skyward-o",
+    "https://www.fool.com/coverage/stock-market-today/2026/11/23/stock-market-today-nov-23-markets-rebound-from-correction-on-ai-relief-rally/",
+    "https://www.intuitivemachines.com/im-3-lunar-mission"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "หุ้นอวกาศที่ราคาเหมือนบริษัทมีปัญหา ทั้งที่ไม่ใช่: Q3 2026 รายได้ $269M (คาด ~$248M) EBITDA ปรับปรุง +$8.3M FCF +$33.5M เงินสด $463.8M backlog $1.87B และยืนยัน guide รายได้ปี 2026 $920–950M แต่หุ้นอยู่ที่ ~$9.75 ต่ำกว่าจุดสูงสุด ~79% หลังหุ้นเทคเก็งกำไรถล่มเดือน พ.ย. ไม่มี event binary ระยะใกล้ catalyst คืองบ Q4 (~มี.ค. 2027) และ IM-3 (NASA ระบุต้นปี 2027) Base +60% เป็นการ re-rate กลับหาเส้น 200 วันในกรอบ 6–12 เดือน จึงสูงกว่า P75 ของ turbo (21.5%) โดยตั้งใจ ความอยู่รอดแข็งแรงที่สุดในลิสต์นี้ แนะนำ 2% ของ portfolio เท่านั้น (มหภาค WAIT) — ถ้า thesis fail ลงได้ 40–50%",
+      "priceNote": "ราคาสด $9.75 (+11.1%) ในวันเด้ง 23 พ.ย. ยังต่ำกว่า 52-week high $45.70 ~79% ต่ำกว่าเส้น 200 วัน (~$19.08) ~49% และห่างจาก 52-week low ($8.62) ไม่ถึง 13% หุ้นลง 27% ในเดือน ต.ค. เดือนเดียวแม้งบ Q3 ทำสถิติ",
+      "scoreLabel": "Moonshot",
+      "catalysts": [
+        {
+          "name": "งบ Q4 2026 / guidance ปี 2027",
+          "description": "งบเต็มปีแรกที่รวม Lanteris แล้ว Q3 ยืนยัน guide รายได้ปี 2026 $920–950M และ EBITDA ปรับปรุงเป็นบวก ถ้า guide ปี 2027 แปลง backlog $1.87B เป็นรายได้ได้ชัด จะเป็นตัวจุด re-rate ยังไม่ประกาศวัน"
+        },
+        {
+          "name": "ภารกิจลงจอดดวงจันทร์ IM-3 (Reiner Gamma)",
+          "description": "ภารกิจ Nova-C ครั้งที่ 3 บน Falcon 9 ตารางของ NASA ระบุต้นปี 2027 (แหล่งเก่าบอก H2 2026 จึงถือว่าวันยังไม่แน่นอน) ถ้าลงจอดสมบูรณ์หลัง IM-1 และ IM-2 ล้มทั้งคู่ จะเป็นชัยชนะเชิง narrative แบบ binary"
+        }
+      ],
+      "risks": [
+        "ความเสี่ยงการลงจอด: IM-1 (ก.พ. 2024) และ IM-2 ลงจอดแล้วล้มทั้งคู่ ถ้า IM-3 พลาดอีกจะกระทบความน่าเชื่อถือต่องาน CLPS ถัดไปของ NASA",
+        "พึ่งพาสัญญารัฐ: NASA เลือก Astrolab และ Lunar Outpost แทน Intuitive Machines ในสัญญา Lunar Terrain Vehicle (พ.ค. 2026) backlog ขึ้นกับงบและจังหวะการให้สัญญาของรัฐ",
+        "ขาดทุนจากการดำเนินงานกว้างขึ้นเป็น $34.2M ใน Q3 แม้ EBITDA ปรับปรุงเป็นบวก การรวมกิจการ (Lanteris, Goonhilly) เพิ่มความเสี่ยงการบริหาร มีสรุปหนึ่งพาดหัวว่า 'ตัดสัญญา' ซึ่งยังยืนยันไม่ได้",
+        "เป้านักวิเคราะห์เก่า (Canaccord $41 และ KeyBanc $27 มาจากช่วงต้นปี 2026) ไม่พบการปรับเป้าเดือน พ.ย. 2026",
+        "มหภาค WAIT (15/100): หุ้นอวกาศ beta สูงร่วง 50–80% ในรอบขาย พ.ย. และยังไม่มีพื้นจนกว่า S&P จะกลับเหนือเส้น 200 วัน"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ย Fed 3.75–4.00% CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ~91% (23 พ.ย.) ฟิวเจอร์สตัดโอกาสขึ้น 50bp ออกหลังตลาดร่วงเดือน พ.ย.",
+        "inflationNote": "core CPI ต.ค. +0.3% m/m (ร้อน) core PCE ก.ย. 3.1% y/y PCE ต.ค. (25 พ.ย.) คาด 3.2% เป็นตัวเลขเงินเฟ้อตัวสุดท้ายก่อน Fed",
+        "sectorImpact": "หุ้นโครงสร้างพื้นฐานอวกาศเป็น growth ระยะยาว beta สูง ดอกเบี้ยขาขึ้นและตลาด risk-off กด multiple กลุ่มนี้หนักสุด แม้จะมี FCF เป็นบวก",
+        "summary": "HIGH — /macro เป็น WAIT (15/100 ความมั่นใจสูง): S&P 7,237 ยังต่ำกว่าเส้น 200 วัน (~7,340) หลังเด้ง +4.7% เมื่อ 23 พ.ย. VIX 27 breadth ~43% เหนือ 50DMA HY OAS กว้างขึ้นเป็น ~3.52% prior ของ turbo ยังไม่เคยพิสูจน์ในตลาดขาลงแบบนี้ (0/107 window ที่ SPY ลง >2%)"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · Moonshot สูงสุด 2% — FCF เป็นบวก เงินสด $464M backlog $1.87B ที่ราคาต่ำกว่าจุดสูงสุด ~79% median ถึงวัน catalyst ของ turbo -6.6% (n=76) และมหภาคเป็น WAIT จึงเข้าที่ Entry 2 ($8.60–9.20) เป็นหลัก อย่าไล่ราคาวันที่เด้ง +11%",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ turbo -6.6% (n=76)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "ทดสอบ 52-week low ($8.62) อีกรอบ — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ร่วงหนัก — เฉพาะถ้า S&P หลุด low 20 พ.ย. (6,910)",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — re-rate ไป ~$15.6 เมื่องบ Q4 ยืนยันการแปลง backlog ปี 2027 กรอบ 6–12 เดือน สูงกว่า P75 ของ turbo โดยตั้งใจ"
+        },
+        "tp2": {
+          "note": "Bull — กลับเหนือเส้น 200 วันไป ~$25 ใกล้เป้า KeyBanc/B. Riley ช่วงต้นปี ต้องการ IM-3 ที่สมบูรณ์"
+        },
+        "tp3": {
+          "note": "Moon — กรณี $41 ของ Canaccord: ฐานบนดวงจันทร์ของ NASA + ดีมานด์ data relay จาก Golden Dome thesis 12–24 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE ของ turbo (-20%) ต่ำกว่า 52-week low แปลว่าตลาด price ว่า backlog พัง",
+          "hardNote": "-44% — บริษัท FCF บวกถูก price เหมือนบริษัทใกล้ล้ม thesis พัง",
+          "rrNote": "จากกลาง Entry 2 ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "อสมมาตร ✅ — ผ่านเป้า 5:1 ของ turbo"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "งบ Q4 2026",
+          "note": "guide ปี 2027 เทียบ backlog $1.87B"
+        },
+        {
+          "event": "ปล่อยและลงจอด IM-3",
+          "note": "NASA ระบุต้นปี 2027"
+        }
+      ]
+    }
+  }
+}

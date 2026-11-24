@@ -1,0 +1,292 @@
+{
+  "ticker": "CIEN",
+  "companyName": "Ciena Corporation",
+  "companyDescription": "Optical networking · coherent optics + data-center interconnect for AI/cloud · Hyper-Rail multi-rail platform (hyperscaler order signed, revenue from 2027) · FY26 revenue guide $6.42B (+35%)",
+  "exchange": "NYSE",
+  "generatedAt": "2026-11-24T15:00:00.000Z",
+  "price": 264.73,
+  "priceChange": 12.95,
+  "priceNote": "Live $264.73 (+13.0%, Nov 23 close, Yahoo). About 58% below the $627 52-week high and ~35% below the 200-day (~$406.5); it briefly traded below its 52-week closing low during the Nov selloff.",
+  "marketCap": "~$38B (est.)",
+  "sector": "Technology / Communications Equipment — Optical",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 0,
+  "summary": "An AI-optics leader at a bear-market price. Ciena raised FY26 revenue guidance to $6.42B (+35%) at Q3 and guided FQ4 to $1.75B ± $50M. It has a signed hyperscaler order for its Hyper-Rail platform, which contributes revenue from 2027, and management is framing ~30% growth for FY27. Yet the stock is ~58% off its high after AI-hardware de-rating and supply-constraint worries. The FQ4 print is confirmed for Dec 10 before the open (company release, Nov 12), the morning after FOMC. Consensus is ~$508–565 (+92%). The catalyst is 16 days out, just beyond the 14d North Star window. Base +18% is a 4–8 week horizon above the core P75 (10.8%).",
+  "catalysts": [
+    {
+      "icon": "⚡",
+      "name": "FQ4 FY26 earnings + FY27 outlook (Dec 10, BMO)",
+      "description": "Confirmed by Ciena's Nov 12 release: results before the open Dec 10, webcast 8:30am ET. FQ4 guide $1.75B ± $50M. The read is the FY27 framework (~30% growth) and whether supply constraints ease.",
+      "urgencyLabel": "16 DAYS",
+      "dateBadge": "Dec 10, 2026",
+      "catalystDate": "2026-12-10",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🏦",
+      "name": "FOMC decision the evening before (Dec 9)",
+      "description": "The print lands the morning after FOMC and the same day as Nov CPI — a triple event stack.",
+      "urgencyLabel": "15 DAYS",
+      "dateBadge": "Dec 9, 2026",
+      "catalystDate": "2026-12-09",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Supply constraints were flagged as the key limiter on 2027 growth; a cautious FY27 frame would hit the stock even on a beat.",
+    "Hyper-Rail revenue starts only in 2027 — TD Cowen cut its target $675→$575 on that timing in Aug and the stock fell ~9%.",
+    "Optical competition: Marvell's move to buy Lumentum reshapes the optics landscape.",
+    "Event stack: FOMC (Dec 9) + print + CPI (Dec 10) within ~18 hours; macro WAIT (15/100)."
+  ],
+  "estimateDates": [
+    {
+      "event": "FQ4 FY26 earnings",
+      "dateRange": "Dec 10, 2026",
+      "note": "FY27 framework + supply",
+      "est": "Rev $1.75B ± $50M",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -22,
+      "price": 206.49
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 18,
+      "price": 312.38
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 40,
+      "price": 370.62
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 80,
+      "price": 476.51
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus avg (S&P Global via StockAnalysis)",
+      "target": 564.92,
+      "rating": "Buy"
+    },
+    {
+      "firm": "TD Cowen (Aug 2026 — cut from $675)",
+      "target": 575,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Barclays (Sep 18, 2026)",
+      "target": 548,
+      "rating": "Overweight"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds 3.75–4.00%. CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~91% (Nov 23); futures dropped the 50bp tail after the November selloff.",
+    "inflationNote": "Oct core CPI +0.3% m/m (hot). Sep core PCE 3.1% y/y; Oct PCE (Nov 25) consensus 3.2% is the last inflation print before the Fed.",
+    "sectorImpact": "AI networking hardware is high-beta to capex sentiment and rates, but Ciena is profitable and growing ~35%, so it is less fragile than pre-profit AI names.",
+    "summary": "MEDIUM — /macro is WAIT (15/100, high conviction): S&P 7,237 is still below its 200-day (~7,340) after the Nov 23 +4.7% squeeze, VIX 27, breadth ~43% above 50DMA, HY OAS widening to ~3.52%. Core prior is largely unmeasured in this regime (8/174 windows had SPY down >2%)."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 264.73,
+        "note": "Current price — starter only. Not preferred: core at-catalyst median -6.5% (n=157)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 235,
+        "rangeMax": 250,
+        "note": "Back toward the pre-rally Nov 20 level — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 215,
+        "note": "Deep dip — near the Nov lows",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 312.38,
+      "pct": 18,
+      "note": "Base — ~$312 as the FY27 frame confirms ~30% growth. 4–8 week horizon; above the core P75 (10.8%) by design."
+    },
+    "tp2": {
+      "price": 370.62,
+      "pct": 40,
+      "note": "Bull — ~$371, toward the 200-day, if supply eases and Hyper-Rail timing pulls in."
+    },
+    "tp3": {
+      "price": 476.51,
+      "pct": 80,
+      "note": "Moon — ~$477, near the lower end of the consensus range.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 222,
+      "tightPct": -16.14,
+      "tightNote": "-16% — wider than the earnings_beat medianMAE (-9.5%). Below the Nov lows the re-rating thesis has failed.",
+      "hard": 195,
+      "hardPct": -26.34,
+      "hardNote": "-26% — market pricing an AI optics down-cycle.",
+      "riskReward": "6.2 : 1",
+      "rrNote": "Entry 2 midpoint ($242.50) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Good R/R ✅"
+    },
+    "verdict": "BUY · Core 5% — confirmed Dec 10 print, FY26 guide raised, 58% off the high. The core at-catalyst median is -6.5% (n=157), so Entry 2 ($235–250) is preferred; size for the FOMC/CPI stack.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "Ciena has often sold off after beats on forward-supply worries, then re-rated over the following weeks.",
+    "preRunupTiming": "1–2 weeks before results",
+    "preRunupPct": "+5–10%",
+    "postWin": {
+      "avgPct": 23,
+      "range": "+10% to +23%",
+      "note": "CIEN jumped ~23% after its fiscal Q3 2025 beat-and-raise (Sep 2025).",
+      "exampleDate": "Sep 2025"
+    },
+    "postLose": {
+      "avgPct": -15,
+      "range": "-9% to -15%",
+      "note": "CIEN fell 15.2% in the week after its fiscal Q3 2026 beat on supply-risk worries, and ~9% on TD Cowen's Aug 2026 target cut.",
+      "exampleDate": "Sep 2026"
+    },
+    "spotSizing": {
+      "pct": 5,
+      "reason": "5%. earnings_beat is not a tier-2 laggard; trimmed for macro WAIT and the FOMC/CPI stack around the print."
+    },
+    "stopPreCatalyst": {
+      "pct": -16.14,
+      "price": 222,
+      "note": "Wider than the turbo medianMAE (-20%). Below the Nov lows the re-rating thesis has failed."
+    },
+    "stopPostCatalyst": {
+      "pct": -15,
+      "note": "If the FY27 frame comes in below ~25% growth, exit."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "CIEN",
+      "event": "Fiscal Q3 2025 beat-and-raise",
+      "date": "Sep 2025",
+      "movePct": 23,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same company: a beat with a raised outlook re-rated the stock fast."
+    },
+    {
+      "ticker": "CIEN",
+      "event": "Fiscal Q3 2026 beat followed by supply-risk selloff",
+      "date": "Sep 2026",
+      "movePct": -15.2,
+      "days": 5,
+      "outcome": "bad",
+      "note": "Same company, recent: beats alone haven't been enough while supply is the constraint."
+    },
+    {
+      "ticker": "MRVL",
+      "event": "Q4 FY25 print disappoints on custom-silicon timing",
+      "date": "Mar 2025",
+      "movePct": -20,
+      "days": 1,
+      "outcome": "bad",
+      "note": "AI networking peer: timing disappointments cost ~20% in a day."
+    }
+  ],
+  "sources": [
+    "https://finviz.com/news/421814/ciena-announces-reporting-date-and-web-broadcast-for-fiscal-fourth-quarter-and-year-end-2026-results",
+    "https://s25.q4cdn.com/550667411/files/doc_news/Ciena-Announces-Reporting-Date-and-Web-Broadcast-for-Fiscal-Fourth-Quarter-and-Year-End-2026-Results-2026.pdf",
+    "https://finviz.com/news/388508/ciena-reports-fiscal-third-quarter-2026-financial-results",
+    "https://www.zacks.com/stock/news/2988629/cien-falls-15.2-in-a-week-as-ai-growth-faces-persistent-supply-risks",
+    "https://www.tikr.com/blog/ciena-stock-fell-9-after-td-cowen-cut-its-target-100-the-buy-rating-stayed",
+    "https://stockanalysis.com/stocks/cien/forecast/",
+    "https://zacks.com/stock/news/3025356/ciena-eyes-30-revenue-growth-in-fy27-can-strong-demand-sustain-it"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "ผู้นำ optics สำหรับ AI ที่ราคาตลาดหมี Ciena ปรับ guide รายได้ปีงบ 2026 ขึ้นเป็น $6.42B (+35%) ในงบ Q3 และ guide FQ4 $1.75B ± $50M มีออเดอร์ Hyper-Rail จาก hyperscaler ที่เซ็นแล้ว (รายได้เริ่มปี 2027) และผู้บริหารวางกรอบการเติบโตปีงบ 2027 ~30% แต่หุ้นต่ำกว่าจุดสูงสุด ~58% จากการลดมูลค่าหุ้นฮาร์ดแวร์ AI และความกังวลเรื่องซัพพลาย งบ FQ4 ยืนยันวันที่ 10 ธ.ค. ก่อนตลาดเปิด (ประกาศบริษัท 12 พ.ย.) เช้าหลัง FOMC consensus ~$508–565 (+92%) catalyst อีก 16 วัน เกินกรอบ 14 วันของ North Star เล็กน้อย Base +18% กรอบ 4–8 สัปดาห์ สูงกว่า P75 ของ core (10.8%)",
+      "priceNote": "ราคาสด $264.73 (+13.0% ปิด 23 พ.ย., Yahoo) ต่ำกว่า 52-week high $627 ~58% และต่ำกว่าเส้น 200 วัน (~$406.5) ~35% เคยหลุดต่ำกว่าจุดปิดต่ำสุดรอบ 52 สัปดาห์ช่วงสั้นๆ ในรอบขายเดือน พ.ย.",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        {
+          "name": "งบ FQ4 ปีงบ 2026 + outlook ปีงบ 2027 (10 ธ.ค. ก่อนตลาดเปิด)",
+          "description": "ยืนยันโดย Ciena (ประกาศ 12 พ.ย.): ประกาศงบก่อนตลาดเปิด 10 ธ.ค. webcast 8:30 ET guide FQ4 $1.75B ± $50M ประเด็นคือกรอบปีงบ 2027 (~30%) และปัญหาซัพพลายคลี่คลายหรือไม่"
+        },
+        {
+          "name": "FOMC คืนก่อนหน้า (9 ธ.ค.)",
+          "description": "งบออกเช้าหลัง FOMC และวันเดียวกับ CPI พ.ย. — event ซ้อนสามตัว"
+        }
+      ],
+      "risks": [
+        "ซัพพลายจำกัดถูกระบุเป็นตัวจำกัดการเติบโตปี 2027 ถ้ากรอบปีงบ 2027 ระมัดระวัง หุ้นอาจลงแม้งบดี",
+        "รายได้ Hyper-Rail เริ่มปี 2027 — TD Cowen ลดเป้า $675→$575 เพราะจังหวะนี้ในเดือน ส.ค. และหุ้นลง ~9%",
+        "การแข่งขันใน optics: Marvell ซื้อ Lumentum เปลี่ยนภูมิทัศน์ของกลุ่ม",
+        "event ซ้อน: FOMC (9 ธ.ค.) + งบ + CPI (10 ธ.ค.) ภายใน ~18 ชม. มหภาค WAIT (15/100)"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ย Fed 3.75–4.00% CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ~91% (23 พ.ย.) ฟิวเจอร์สตัดโอกาสขึ้น 50bp ออกหลังตลาดร่วงเดือน พ.ย.",
+        "inflationNote": "core CPI ต.ค. +0.3% m/m (ร้อน) core PCE ก.ย. 3.1% y/y PCE ต.ค. (25 พ.ย.) คาด 3.2% เป็นตัวเลขเงินเฟ้อตัวสุดท้ายก่อน Fed",
+        "sectorImpact": "ฮาร์ดแวร์เครือข่าย AI beta สูงต่ออารมณ์ capex และดอกเบี้ย แต่ Ciena มีกำไรและโต ~35% จึงเปราะบางน้อยกว่าหุ้น AI ที่ยังไม่มีกำไร",
+        "summary": "MEDIUM — /macro เป็น WAIT (15/100 ความมั่นใจสูง): S&P 7,237 ยังต่ำกว่าเส้น 200 วัน (~7,340) หลังเด้ง +4.7% เมื่อ 23 พ.ย. VIX 27 breadth ~43% เหนือ 50DMA HY OAS กว้างขึ้นเป็น ~3.52% prior ของ core แทบไม่เคยวัดในตลาดแบบนี้ (8/174 window ที่ SPY ลง >2%)"
+      },
+      "entryStrategy": {
+        "verdict": "BUY · Core 5% — งบ 10 ธ.ค. ยืนยันแล้ว guide ปีงบ 2026 ปรับขึ้น ต่ำกว่าจุดสูงสุด 58% median ถึงวัน catalyst ของ core -6.5% (n=157) จึงเข้าที่ Entry 2 ($235–250) เป็นหลัก ขนาดไม้คำนึงถึง FOMC/CPI ที่ซ้อนกัน",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ core -6.5% (n=157)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "ย่อกลับไปใกล้ระดับก่อนวันเด้ง (20 พ.ย.) — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ร่วงหนัก — ใกล้ low เดือน พ.ย.",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — ~$312 เมื่อกรอบปีงบ 2027 ยืนยันการเติบโต ~30% กรอบ 4–8 สัปดาห์ สูงกว่า P75 ของ core โดยตั้งใจ"
+        },
+        "tp2": {
+          "note": "Bull — ~$371 ไปหาเส้น 200 วัน ถ้าซัพพลายคลี่คลายและ Hyper-Rail มาเร็วขึ้น"
+        },
+        "tp3": {
+          "note": "Moon — ~$477 ใกล้ขอบล่างของช่วง consensus"
+        },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE ของ earnings_beat (-9.5%) ต่ำกว่า low เดือน พ.ย. แปลว่า thesis การ re-rate ล้มเหลว",
+          "hardNote": "-26% — ตลาด price วัฏจักรขาลงของ AI optics",
+          "rrNote": "จากกลาง Entry 2 ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "R/R ดี ✅"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "งบ FQ4 ปีงบ 2026",
+          "note": "กรอบปีงบ 2027 + ซัพพลาย"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,319 @@
+{
+  "ticker": "MLTX",
+  "companyName": "MoonLake Immunotherapeutics",
+  "companyDescription": "Immunology biotech · sonelokimab (IL-17A/F Nanobody) · HS BLA submitted Sep 30, 2026 · PsA Phase 3 IZAR-1 met all Week 16 endpoints · cash $537M, runway into mid-2028",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-24T15:00:00.000Z",
+  "price": 11.71,
+  "priceChange": 5.78,
+  "priceNote": "Live $11.71 (+5.78%, Nov 23 close, Yahoo). Near the bottom of its $9.55–22.16 52-week range, about 27% below the 200-day (~$16.14) and flat vs the 50-day (~$11.59). It has never recovered from the Sep 2025 VELA readout collapse.",
+  "marketCap": "~$0.75B (est.)",
+  "sector": "Healthcare / Biotechnology — Immunology",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "Moonshot",
+  "score": 0,
+  "summary": "A filing-stage biotech whose stock still trades near its post-VELA lows. MoonLake submitted the sonelokimab BLA in hidradenitis suppurativa on Sep 30, 2026 and guides to an FDA filing-acceptance decision by end-November and a PDUFA goal date by mid-December, including whether it gets Priority Review (6 vs 10 months). IZAR-1 in PsA met all Week 16 endpoints (Aug 2026). Cash of $537M funds operations into mid-2028, so this is not a financing story. Targets are wide: H.C. Wainwright $50 (Buy), Leerink $29, Goldman a Sell at $10 (undated). Base +70% assumes acceptance plus Priority Review over 3–6 months, which is above the turbo P75 (21.5%). แนะนำ 2% ของ portfolio เท่านั้น — ถ้า FDA refuse-to-file ลงได้ 40–50%.",
+  "catalysts": [
+    {
+      "icon": "📄",
+      "name": "FDA BLA filing acceptance + Priority Review decision",
+      "description": "MoonLake guided (Nov 4 Q3 release) to an FDA filing-acceptance decision by the end of November 2026 for the sonelokimab HS BLA, including whether it gets Priority Review. A refuse-to-file letter is the binary downside.",
+      "urgencyLabel": "~6 DAYS",
+      "dateBadge": "~Nov 30, 2026",
+      "catalystDate": "2026-11-30",
+      "badgeColor": "red",
+      "dotColor": "red"
+    },
+    {
+      "icon": "🗓️",
+      "name": "PDUFA goal date disclosed",
+      "description": "Company guides to a PDUFA goal date by mid-December. Priority Review would put action ~6 months from filing (~mid-2027) vs ~10 months (Q3–Q4 2027 launch) under standard review.",
+      "urgencyLabel": "~3 WEEKS",
+      "dateBadge": "~Dec 15, 2026",
+      "catalystDate": "2026-12-15",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🧪",
+      "name": "IZAR-2 PsA Week 16 topline",
+      "description": "Second Phase 3 PsA study (enrollment completed Sep 2026); Week 16 topline guided to Q1 2027.",
+      "urgencyLabel": "~Q1 2027",
+      "dateBadge": "~Q1 2027",
+      "catalystDate": "2027-03-31",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Regulatory binary: a refuse-to-file or a standard (10-month) review would push launch to Q3–Q4 2027; Citi has previously flagged 'significant' regulatory risk.",
+    "Competitive HS market: UCB's Bimzelx (IL-17A/F) is already approved in HS, so sonelokimab has to win on dosing or efficacy margin, and the Sep 2025 VELA data disappointed on that comparison.",
+    "Analyst dispersion: Goldman's Sell/$10 target (undated) sits below the current price; Leerink $29 vs H.C. Wainwright $50.",
+    "IZAR-1 placebo comparisons stay blinded until the Phase 3 program completes, so the PsA efficacy margin is not yet fully visible.",
+    "Macro WAIT (15/100) — small-cap biotech beta in a risk-off tape."
+  ],
+  "estimateDates": [
+    {
+      "event": "BLA filing acceptance",
+      "dateRange": "~Nov 30, 2026",
+      "note": "Priority Review yes/no",
+      "est": "Acceptance expected",
+      "highlight": "blue"
+    },
+    {
+      "event": "PDUFA goal date set",
+      "dateRange": "~Dec 15, 2026",
+      "note": "6- vs 10-month clock",
+      "est": "~mid-2027 if priority",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -50,
+      "price": 5.86
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 70,
+      "price": 19.91
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 200,
+      "price": 35.13
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 330,
+      "price": 50.35
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "H.C. Wainwright (Aug 2026)",
+      "target": 50,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Leerink Partners (Jul 2026)",
+      "target": 29,
+      "rating": "Maintains"
+    },
+    {
+      "firm": "Goldman Sachs (undated)",
+      "target": 10,
+      "rating": "Sell"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds 3.75–4.00%. CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~91% (Nov 23); futures dropped the 50bp tail after the November selloff.",
+    "inflationNote": "Oct core CPI +0.3% m/m (hot). Sep core PCE 3.1% y/y; Oct PCE (Nov 25) consensus 3.2% is the last inflation print before the Fed.",
+    "sectorImpact": "A cash-rich filing-stage biotech is less rate-sensitive than pre-revenue tech, but small-cap biotech beta still tracks risk appetite; no financing need before mid-2028 limits dilution risk.",
+    "summary": "MEDIUM — /macro is WAIT (15/100, high conviction): S&P 7,237 is still below its 200-day (~7,340) after the Nov 23 +4.7% squeeze, VIX 27, breadth ~43% above 50DMA, HY OAS widening to ~3.52%. Turbo prior is unproven in this regime (0/107 windows had SPY down >2%)."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 11.71,
+        "note": "Current price — starter only. Not preferred: turbo at-catalyst median -6.6% (n=76)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 10.3,
+        "rangeMax": 11,
+        "note": "Pullback into the filing-acceptance decision — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 8.8,
+        "note": "Deep dip — only if acceptance comes without Priority Review",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 19.91,
+      "pct": 70,
+      "note": "Base — acceptance + Priority Review re-rates toward ~$19.9 (back near the 200-day). Horizon 3–6 months; above the turbo P75 (21.5%) by design."
+    },
+    "tp2": {
+      "price": 35.13,
+      "pct": 200,
+      "note": "Bull — ~$35 by the mid-2027 PDUFA if IZAR-2 also reads out cleanly; near Leerink's $29 plus pipeline."
+    },
+    "tp3": {
+      "price": 50.35,
+      "pct": 330,
+      "note": "Moon — H.C. Wainwright's $50 case: HS + PsA + axSpA franchise or M&A by a large immunology player. 12–18 months.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 8.4,
+      "tightPct": -28.27,
+      "tightNote": "-28% — wider than the turbo medianMAE (-20%). Below ~$8.40 the market is pricing a refuse-to-file.",
+      "hard": 6.4,
+      "hardPct": -45.35,
+      "hardNote": "-45% — trades near net cash; thesis broken.",
+      "riskReward": "10.9 : 1",
+      "rrNote": "Entry 2 midpoint ($10.65) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Asymmetric ✅ — clears the 5:1 turbo target"
+    },
+    "verdict": "SPECULATIVE · Moonshot 2% max — filing-stage, runway to mid-2028, ~6 days from the FDA acceptance call. The turbo at-catalyst median is -6.6% (n=76), so Entry 2 ($10.30–11.00) is preferred; a full-size position only after acceptance + Priority Review.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "regulatory_approval",
+    "preRunup": "Filing-acceptance events usually move biotechs modestly; the big move comes with Priority Review designation or the PDUFA itself. MLTX rose ~8% into the acceptance deadline (Nov 11).",
+    "preRunupTiming": "1–2 weeks before acceptance",
+    "preRunupPct": "+5–10%",
+    "postWin": {
+      "avgPct": 25,
+      "range": "+10% to +40%",
+      "note": "Verona (VRNA) went from ~$15 at its Jun 2024 Ohtuvayre approval to a $107/ADS Merck takeout in Jul 2025 — the launch-to-M&A moon path. Acceptance alone is typically a smaller +10–25% step.",
+      "exampleDate": "Jun 2024 (VRNA)"
+    },
+    "postLose": {
+      "avgPct": -50,
+      "range": "-40% to -89%",
+      "note": "MLTX itself fell ~89% on the Sep 29, 2025 VELA HS readout. A refuse-to-file would be a smaller but similar shock.",
+      "exampleDate": "Sep 29, 2025 (MLTX)"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "2%. regulatory_approval sits at +5.8pp vs +7.7pp overall (n=23) — below average but not a ≥2pp tier-2 laggard. Whole-lane weakness and macro WAIT keep size at the floor."
+    },
+    "stopPreCatalyst": {
+      "pct": -28.27,
+      "price": 8.4,
+      "note": "Wider than the turbo medianMAE (-20%). Below ~$8.40 the market is pricing a refuse-to-file."
+    },
+    "stopPostCatalyst": {
+      "pct": -30,
+      "note": "If the BLA is refused or gets only a standard review with no offset, exit."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "VRNA",
+      "event": "Ohtuvayre approval → launch → Merck acquisition at $107/ADS",
+      "date": "Jun 2024",
+      "movePct": 600,
+      "days": 390,
+      "outcome": "good",
+      "note": "The moon template: an approved, differentiated immunology/respiratory asset at a small cap ended in a large-cap takeout."
+    },
+    {
+      "ticker": "MLTX",
+      "event": "VELA Phase 3 HS readout vs Bimzelx benchmark",
+      "date": "Sep 2025",
+      "movePct": -89,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Same company and same drug: shows how violently the market punishes a perceived efficacy gap."
+    },
+    {
+      "ticker": "MLTX",
+      "event": "IZAR-1 PsA Phase 3 met all Week 16 endpoints",
+      "date": "Aug 2026",
+      "movePct": 8,
+      "days": 1,
+      "outcome": "mixed",
+      "note": "Positive data moved the stock only modestly — the regulatory clock, not data, is the re-rating driver now."
+    }
+  ],
+  "sources": [
+    "https://finviz.com/news/415210/moonlake-reports-third-quarter-2026-financial-results-and-provides-a-business-update",
+    "https://stocktwits.com/news-articles/markets/equity/mltx-stock-climbs-on-optimism-ahead-of-fda-acceptance-deadline-for-lead-drug-filing/cNGx2NYR99E",
+    "https://www.hcplive.com/view/izar-1-sonelokimab-meets-phase-3-end-points-for-psa",
+    "https://finance.yahoo.com/sectors/healthcare/articles/moonlake-immunotherapeutics-mltx-price-target-135536449.html",
+    "https://kr.benzinga.com/quote/MLTX/analyst-ratings",
+    "https://stockanalysis.com/stocks/mltx/ratings",
+    "https://stocktwits.com/news-articles/markets/equity/moonlake-immunotherapeutics-stock-draws-wall-street-attention-post-mondays-plunge/chDDKdWR39j"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "ไบโอเทคที่อยู่ระหว่างยื่นขออนุมัติ แต่หุ้นยังเทรดใกล้จุดต่ำหลัง VELA MoonLake ยื่น BLA ของ sonelokimab ใน HS เมื่อ 30 ก.ย. 2026 และ guide ว่า FDA จะตัดสินรับไฟล์ภายในสิ้น พ.ย. และได้วัน PDUFA ภายในกลาง ธ.ค. รวมถึงว่าจะได้ Priority Review (6 เทียบ 10 เดือน) หรือไม่ IZAR-1 ใน PsA ผ่านทุก endpoint สัปดาห์ 16 (ส.ค. 2026) เงินสด $537M พอถึงกลางปี 2028 จึงไม่ใช่เรื่องระดมทุน เป้ากระจาย: H.C. Wainwright $50 (Buy), Leerink $29, Goldman Sell $10 (ไม่ระบุวัน) Base +70% สมมติว่าได้รับไฟล์ + Priority Review ในกรอบ 3–6 เดือน สูงกว่า P75 ของ turbo (21.5%) แนะนำ 2% ของ portfolio เท่านั้น — ถ้า FDA refuse-to-file ลงได้ 40–50%",
+      "priceNote": "ราคาสด $11.71 (+5.78% ปิด 23 พ.ย., Yahoo) ใกล้ก้นกรอบ 52 สัปดาห์ $9.55–22.16 ต่ำกว่าเส้น 200 วัน (~$16.14) ~27% และใกล้เส้น 50 วัน (~$11.59) ไม่เคยฟื้นจากการถล่มหลังผล VELA ก.ย. 2025",
+      "scoreLabel": "Moonshot",
+      "catalysts": [
+        {
+          "name": "FDA รับไฟล์ BLA + ตัดสิน Priority Review",
+          "description": "MoonLake ให้ guidance (งบ Q3 4 พ.ย.) ว่า FDA จะตัดสินรับไฟล์ BLA ของ sonelokimab ใน HS ภายในสิ้น พ.ย. 2026 รวมถึงว่าจะได้ Priority Review หรือไม่ ถ้าโดน refuse-to-file คือ downside แบบ binary"
+        },
+        {
+          "name": "ประกาศวัน PDUFA",
+          "description": "บริษัทคาดได้วัน PDUFA ภายในกลาง ธ.ค. ถ้าได้ Priority Review FDA จะตัดสินภายใน ~6 เดือนหลังยื่น (~กลางปี 2027) เทียบ ~10 เดือน (เปิดตัว Q3–Q4 2027) แบบปกติ"
+        },
+        {
+          "name": "ผล topline สัปดาห์ 16 ของ IZAR-2 (PsA)",
+          "description": "Phase 3 PsA ตัวที่สอง (รับผู้ป่วยครบ ก.ย. 2026) guide ผลสัปดาห์ 16 ใน Q1 2027"
+        }
+      ],
+      "risks": [
+        "ความเสี่ยงด้านกำกับดูแลแบบ binary: ถ้าโดน refuse-to-file หรือได้ review ปกติ (10 เดือน) การเปิดตัวจะเลื่อนไป Q3–Q4 2027 Citi เคยเตือนความเสี่ยงด้านกำกับดูแล 'อย่างมีนัยสำคัญ'",
+        "ตลาด HS แข่งขันสูง: Bimzelx (IL-17A/F) ของ UCB อนุมัติใน HS แล้ว sonelokimab ต้องชนะเรื่องการให้ยาหรือประสิทธิภาพ ซึ่งข้อมูล VELA ก.ย. 2025 ทำได้น่าผิดหวังในการเทียบนี้",
+        "เป้ากระจาย: Goldman ให้ Sell เป้า $10 (ไม่ระบุวัน) ต่ำกว่าราคาปัจจุบัน Leerink $29 เทียบ H.C. Wainwright $50",
+        "การเทียบกับยาหลอกของ IZAR-1 ยังปิดตาจนกว่าโปรแกรม Phase 3 จะจบ จึงยังไม่เห็นส่วนต่างประสิทธิภาพใน PsA ทั้งหมด",
+        "มหภาค WAIT (15/100) — หุ้นไบโอเทคเล็ก beta สูงในตลาด risk-off"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ย Fed 3.75–4.00% CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ~91% (23 พ.ย.) ฟิวเจอร์สตัดโอกาสขึ้น 50bp ออกหลังตลาดร่วงเดือน พ.ย.",
+        "inflationNote": "core CPI ต.ค. +0.3% m/m (ร้อน) core PCE ก.ย. 3.1% y/y PCE ต.ค. (25 พ.ย.) คาด 3.2% เป็นตัวเลขเงินเฟ้อตัวสุดท้ายก่อน Fed",
+        "sectorImpact": "ไบโอเทคที่มีเงินสดมากและอยู่ระหว่างยื่นขออนุมัติไวต่อดอกเบี้ยน้อยกว่าหุ้นเทคที่ยังไม่มีรายได้ แต่ beta ของไบโอเทคเล็กยังตามอารมณ์ตลาด ไม่ต้องระดมทุนก่อนกลางปี 2028 จึงลดความเสี่ยง dilution",
+        "summary": "MEDIUM — /macro เป็น WAIT (15/100 ความมั่นใจสูง): S&P 7,237 ยังต่ำกว่าเส้น 200 วัน (~7,340) หลังเด้ง +4.7% เมื่อ 23 พ.ย. VIX 27 breadth ~43% เหนือ 50DMA HY OAS กว้างขึ้นเป็น ~3.52% prior ของ turbo ยังไม่เคยพิสูจน์ในตลาดขาลงแบบนี้ (0/107 window ที่ SPY ลง >2%)"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · Moonshot สูงสุด 2% — อยู่ระหว่างยื่น runway ถึงกลางปี 2028 อีก ~6 วันถึงการตัดสินรับไฟล์ median ถึงวัน catalyst ของ turbo -6.6% (n=76) จึงเข้าที่ Entry 2 ($10.30–11.00) เป็นหลัก เพิ่มเต็มไม้หลังได้รับไฟล์ + Priority Review เท่านั้น",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ turbo -6.6% (n=76)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "ย่อก่อนการตัดสินรับไฟล์ — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ร่วงหนัก — เฉพาะถ้าได้รับไฟล์แต่ไม่ได้ Priority Review",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — ได้รับไฟล์ + Priority Review re-rate ไป ~$19.9 (ใกล้เส้น 200 วัน) กรอบ 3–6 เดือน สูงกว่า P75 ของ turbo โดยตั้งใจ"
+        },
+        "tp2": {
+          "note": "Bull — ~$35 ก่อน PDUFA กลางปี 2027 ถ้า IZAR-2 ออกมาดีด้วย"
+        },
+        "tp3": {
+          "note": "Moon — กรณี $50 ของ H.C. Wainwright: แฟรนไชส์ HS + PsA + axSpA หรือถูกซื้อกิจการโดยบริษัทใหญ่ด้าน immunology กรอบ 12–18 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE ของ turbo (-20%) ต่ำกว่า ~$8.40 แปลว่าตลาด price การโดน refuse-to-file",
+          "hardNote": "-45% — เทรดใกล้เงินสดสุทธิ thesis พัง",
+          "rrNote": "จากกลาง Entry 2 ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "อสมมาตร ✅ — ผ่านเป้า 5:1 ของ turbo"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "FDA รับไฟล์ BLA",
+          "note": "ได้ Priority Review หรือไม่"
+        },
+        {
+          "event": "ได้วัน PDUFA",
+          "note": "นาฬิกา 6 เทียบ 10 เดือน"
+        }
+      ]
+    }
+  }
+}
