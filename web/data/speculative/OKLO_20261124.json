@@ -1,0 +1,293 @@
+{
+  "ticker": "OKLO",
+  "companyName": "Oklo Inc.",
+  "companyDescription": "Advanced nuclear (fast-fission microreactors) · Aurora powerhouse at INL (now guided 2028–2029) · Groves-1 test reactor reached criticality · fuel fabrication + recycling + isotopes · $3.1B cash after $2.3B of 2026 ATM sales",
+  "exchange": "NYSE",
+  "generatedAt": "2026-11-24T15:00:00.000Z",
+  "price": 20.77,
+  "priceChange": 4.63,
+  "priceNote": "Live $20.77 (+4.63%, Nov 23 close, Yahoo). About 81% below the $111.65 52-week high, ~58% below the 200-day (~$49.06) and just above the $19.20 52-week low. It set new lows in early November despite a +22.7% Q3 day (Nov 6).",
+  "marketCap": "~$3.5B (est.)",
+  "sector": "Energy / Advanced Nuclear",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 0,
+  "summary": "The best-funded name in advanced nuclear, now priced near its lows. Oklo holds $3.1B of cash and securities, its Groves-1 test reactor reached criticality in under a year, and it has 2027 milestones lined up: first full fuel assembly, a recycling pilot, Groves-2 and its first isotope delivery. The headwinds are real. The first Aurora plant slipped to 2028–2029, there was a PJM setback, a new $1B ATM is open, and the average analyst target fell to $65 from $105 (B. Riley $61, Wedbush $36). There is no binary event before the Q4 print (~Mar 2027). Base +55% is a 6–12 month recovery toward the 50-day (~$30), above the turbo P75 (21.5%). It ranks #5 on survival only. แนะนำ 1–2% ของ portfolio เท่านั้น — dilution ต่อเนื่อง ถ้า thesis fail ลงได้ 45%+.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "Q4 2026 results / 2027 milestone update",
+      "description": "Next scheduled update on the Aurora-INL construction timeline (now 2028–2029), Groves-2 start and fuel-fabrication progress. No date announced.",
+      "urgencyLabel": "~15 WEEKS",
+      "dateBadge": "~Mar 2027",
+      "catalystDate": "2027-03-31",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "⚛️",
+      "name": "First full fuel assembly + recycling pilot",
+      "description": "Management's 2027 targets: first full fuel assembly at its fabrication facility and commissioning a recycling pilot, alongside the first contracted isotope delivery. Timing depends on approvals.",
+      "urgencyLabel": "~2027",
+      "dateBadge": "~H2 2027",
+      "catalystDate": "2027-12-31",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Timeline slip: the first Aurora plant at INL is now guided to 2028–2029 and an analyst questioned even that on the Q3 call; the NRC permit path has no timeline.",
+    "Dilution: $2.3B was raised through ATM sales in the first three quarters of 2026 and a new $1.0B ATM opened Sep 11; analysts estimate ~$6.3B of FCF burn in 2026–2030, about 2x current cash.",
+    "PJM setback (Q3) and no binding power-purchase revenue yet; the initial customer is expected to be the national laboratories.",
+    "Target cuts: B. Riley $92→$61 (Oct 28), Wedbush assumed at $36 (from $110); the average target fell to $65 from $105.",
+    "Macro WAIT (15/100); AI-power names were a core part of the Nov unwind."
+  ],
+  "estimateDates": [
+    {
+      "event": "Q4 2026 results",
+      "dateRange": "~Mar 2027",
+      "note": "Aurora timeline + 2027 milestones",
+      "est": "Hold 2028–29",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -45,
+      "price": 11.42
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 55,
+      "price": 32.19
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 190,
+      "price": 60.23
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 380,
+      "price": 99.7
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "B. Riley (Oct 28, 2026 — cut from $92)",
+      "target": 61,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Wedbush (2026 — reassumed, from $110)",
+      "target": 36,
+      "rating": "Outperform"
+    },
+    {
+      "firm": "Consensus avg (TIKR, Nov 2026)",
+      "target": 65,
+      "rating": "Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "HIGH",
+    "rateOutlook": "Fed funds 3.75–4.00%. CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~91% (Nov 23); futures dropped the 50bp tail after the November selloff.",
+    "inflationNote": "Oct core CPI +0.3% m/m (hot). Sep core PCE 3.1% y/y; Oct PCE (Nov 25) consensus 3.2% is the last inflation print before the Fed.",
+    "sectorImpact": "Advanced nuclear is the longest-duration trade on the board: first revenue is years out, so every rate hike lowers the present value of 2028+ cash flows. The cash pile removes near-term survival risk but not dilution risk.",
+    "summary": "HIGH — /macro is WAIT (15/100, high conviction): S&P 7,237 is still below its 200-day (~7,340) after the Nov 23 +4.7% squeeze, VIX 27, breadth ~43% above 50DMA, HY OAS widening to ~3.52%. Turbo prior is unproven in this regime (0/107 windows had SPY down >2%)."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 20.77,
+        "note": "Current price — starter only. Not preferred: turbo at-catalyst median -6.6% (n=76)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 18,
+        "rangeMax": 19.5,
+        "note": "Around the 52-week low ($19.20) — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 15.5,
+        "note": "Deep dip — only on a market-wide retest of the Nov 20 lows",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 32.19,
+      "pct": 55,
+      "note": "Base — ~$32, back to the 50-day, as 2027 milestones stay on track. Horizon 6–12 months; above the turbo P75 (21.5%) by design."
+    },
+    "tp2": {
+      "price": 60.23,
+      "pct": 190,
+      "note": "Bull — ~$60, near B. Riley's $61, if Aurora's 2028 start firms up and a power customer signs."
+    },
+    "tp3": {
+      "price": 99.7,
+      "pct": 380,
+      "note": "Moon — ~$100, a 2025-style AI-power re-rating. 18–24 month thesis.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 15,
+      "tightPct": -27.78,
+      "tightNote": "-28% — wider than the turbo medianMAE (-20%). A break of the 52-week low with no bounce means the nuclear bid is gone.",
+      "hard": 11.5,
+      "hardPct": -44.63,
+      "hardNote": "-45% — market valuing it below its cash; thesis broken.",
+      "riskReward": "11.1 : 1",
+      "rrNote": "Entry 2 midpoint ($18.75) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Asymmetric ✅ — clears the 5:1 turbo target"
+    },
+    "verdict": "SPECULATIVE · ค่าขนม 1–2% max — $3.1B cash but the Aurora timeline slipped and dilution continues. The turbo at-catalyst median is -6.6% (n=76), so Entry 2 ($18.00–19.50) is preferred; this is the weakest of the five on headwinds.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "regulatory_approval",
+    "preRunup": "OKLO trades on AI-power sentiment and DOE/NRC headlines more than dated events.",
+    "preRunupTiming": "Headline-driven",
+    "preRunupPct": "±20–30% swings",
+    "postWin": {
+      "avgPct": 23,
+      "range": "+22% to +700%",
+      "note": "OKLO rose 22.7% on Nov 6, 2026 (Q3 + Groves-1 criticality); in 2025 it ran from ~$20 to ~$190 on the AI-power trade.",
+      "exampleDate": "Nov 6, 2026"
+    },
+    "postLose": {
+      "avgPct": -31,
+      "range": "-14% to -31%",
+      "note": "OKLO fell 31.2% in November 2025 and 14% in a week (Oct 27–Nov 3, 2026) with no company news.",
+      "exampleDate": "Nov 2025"
+    },
+    "spotSizing": {
+      "pct": 1.5,
+      "reason": "1.5%. regulatory_approval sits at +5.8pp vs +7.7pp overall (n=23), below average but not a laggard. Headwinds (Aurora slip, $1B ATM) and macro WAIT cut size below the 2% floor of the other four."
+    },
+    "stopPreCatalyst": {
+      "pct": -27.78,
+      "price": 15,
+      "note": "Wider than the turbo medianMAE (-20%). A break of the 52-week low with no bounce means the nuclear bid is gone."
+    },
+    "stopPostCatalyst": {
+      "pct": -30,
+      "note": "If Q4 pushes Aurora past 2029 or the ATM accelerates below $20, exit."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "OKLO",
+      "event": "AI-power / nuclear re-rating",
+      "date": "2025",
+      "movePct": 700,
+      "days": 270,
+      "outcome": "good",
+      "note": "Same company: the 2025 run from ~$20 to ~$190 shows what the moon case looks like when the narrative turns."
+    },
+    {
+      "ticker": "SMR",
+      "event": "Same 2025 advanced-nuclear re-rating",
+      "date": "2025",
+      "movePct": 300,
+      "days": 180,
+      "outcome": "good",
+      "note": "Peer move confirms it was a sector re-rating."
+    },
+    {
+      "ticker": "OKLO",
+      "event": "November 2025 drawdown",
+      "date": "Nov 2025",
+      "movePct": -31,
+      "days": 30,
+      "outcome": "bad",
+      "note": "Sentiment-driven drawdowns are large and frequent; size small."
+    }
+  ],
+  "sources": [
+    "https://finviz.com/news/418461/oklo-narrows-its-loss-against-expectations-but-an-aurora-slip-and-pjm-setback-overshadow-construction-progress",
+    "https://www.marketbeat.com/instant-alerts/transcript-oklo-q3-earnings-call-highlights-2026-11-07/",
+    "https://www.trefis.com/stock/oklo/articles/623735/what-is-behind-the-move-in-oklo-stock/2026-11-07",
+    "https://www.tikr.com/blog/oklo-sinks-14-in-a-week-to-a-new-52-week-low-is-the-selling-overdone",
+    "https://www.nasdaq.com/articles/oklo-stock-sank-312-november-whats-next",
+    "https://finimize.com/content/oklos-q3-numbers-hint-its-moving-from-plans-to-power"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "หุ้นนิวเคลียร์ขั้นสูงที่มีเงินทุนมากที่สุด ตอนนี้ราคาใกล้จุดต่ำ Oklo มีเงินสดและหลักทรัพย์ $3.1B เครื่องปฏิกรณ์ทดสอบ Groves-1 ถึงจุดวิกฤตในเวลาไม่ถึงปี และมี milestone ปี 2027 รออยู่: ชุดเชื้อเพลิงเต็มชุดแรก โรงรีไซเคิลนำร่อง Groves-2 และการส่งมอบไอโซโทปครั้งแรก แต่แรงต้านมีจริง: Aurora แห่งแรกเลื่อนไปปี 2028–2029 มีอุปสรรคกับ PJM เปิด ATM ใหม่ $1B และเป้าเฉลี่ยลดเป็น $65 จาก $105 (B. Riley $61, Wedbush $36) ไม่มี event binary ก่อนงบ Q4 (~มี.ค. 2027) Base +55% เป็นการฟื้นกลับหาเส้น 50 วัน (~$30) ในกรอบ 6–12 เดือน สูงกว่า P75 ของ turbo (21.5%) ติดอันดับ 5 เพราะความอยู่รอดเท่านั้น แนะนำ 1–2% ของ portfolio เท่านั้น — dilution ต่อเนื่อง ถ้า thesis fail ลงได้ 45%+",
+      "priceNote": "ราคาสด $20.77 (+4.63% ปิด 23 พ.ย., Yahoo) ต่ำกว่า 52-week high $111.65 ~81% ต่ำกว่าเส้น 200 วัน (~$49.06) ~58% และอยู่เหนือ 52-week low $19.20 เพียงเล็กน้อย ทำ low ใหม่ต้นเดือน พ.ย. แม้มีวันที่ขึ้น +22.7% หลังงบ Q3 (6 พ.ย.)",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "งบ Q4 2026 / อัปเดต milestone ปี 2027",
+          "description": "อัปเดตตามกำหนดครั้งถัดไปเรื่องไทม์ไลน์ก่อสร้าง Aurora-INL (ตอนนี้ 2028–2029) การเริ่ม Groves-2 และความคืบหน้าโรงผลิตเชื้อเพลิง ยังไม่ประกาศวัน"
+        },
+        {
+          "name": "ชุดเชื้อเพลิงเต็มชุดแรก + โรงรีไซเคิลนำร่อง",
+          "description": "เป้าปี 2027 ของผู้บริหาร: ผลิตชุดเชื้อเพลิงเต็มชุดแรก เดินโรงรีไซเคิลนำร่อง และส่งมอบไอโซโทปตามสัญญาครั้งแรก ระยะเวลาขึ้นกับการอนุมัติ"
+        }
+      ],
+      "risks": [
+        "ไทม์ไลน์เลื่อน: Aurora แห่งแรกที่ INL ตอนนี้ guide ปี 2028–2029 และนักวิเคราะห์ยังตั้งคำถามกับไทม์ไลน์นี้ใน call Q3 เส้นทางใบอนุญาต NRC ยังไม่มีกำหนด",
+        "Dilution: ระดมทุนผ่าน ATM $2.3B ใน 3 ไตรมาสแรกของปี 2026 และเปิด ATM ใหม่ $1.0B เมื่อ 11 ก.ย. นักวิเคราะห์ประเมินการเผาเงิน FCF ~$6.3B ช่วงปี 2026–2030 ราว 2 เท่าของเงินสดปัจจุบัน",
+        "อุปสรรคกับ PJM (Q3) และยังไม่มีรายได้จากสัญญาซื้อไฟที่ผูกพัน ลูกค้ารายแรกคาดว่าเป็นห้องปฏิบัติการแห่งชาติ",
+        "การลดเป้า: B. Riley $92→$61 (28 ต.ค.) Wedbush เริ่มใหม่ที่ $36 (จาก $110) เป้าเฉลี่ยลดเป็น $65 จาก $105",
+        "มหภาค WAIT (15/100) หุ้นพลังงานเพื่อ AI เป็นแกนหลักของการเทขายเดือน พ.ย."
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ย Fed 3.75–4.00% CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ~91% (23 พ.ย.) ฟิวเจอร์สตัดโอกาสขึ้น 50bp ออกหลังตลาดร่วงเดือน พ.ย.",
+        "inflationNote": "core CPI ต.ค. +0.3% m/m (ร้อน) core PCE ก.ย. 3.1% y/y PCE ต.ค. (25 พ.ย.) คาด 3.2% เป็นตัวเลขเงินเฟ้อตัวสุดท้ายก่อน Fed",
+        "sectorImpact": "นิวเคลียร์ขั้นสูงเป็นเทรดที่ระยะยาวที่สุดบนบอร์ด รายได้แรกยังอีกหลายปี การขึ้นดอกเบี้ยทุกครั้งลดมูลค่าปัจจุบันของกระแสเงินสดปี 2028+ เงินสดก้อนใหญ่ตัดความเสี่ยงอยู่รอดระยะสั้น แต่ไม่ตัดความเสี่ยง dilution",
+        "summary": "HIGH — /macro เป็น WAIT (15/100 ความมั่นใจสูง): S&P 7,237 ยังต่ำกว่าเส้น 200 วัน (~7,340) หลังเด้ง +4.7% เมื่อ 23 พ.ย. VIX 27 breadth ~43% เหนือ 50DMA HY OAS กว้างขึ้นเป็น ~3.52% prior ของ turbo ยังไม่เคยพิสูจน์ในตลาดขาลงแบบนี้ (0/107 window ที่ SPY ลง >2%)"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · ค่าขนม สูงสุด 1–2% — เงินสด $3.1B แต่ไทม์ไลน์ Aurora เลื่อนและ dilution ต่อเนื่อง median ถึงวัน catalyst ของ turbo -6.6% (n=76) จึงเข้าที่ Entry 2 ($18.00–19.50) เป็นหลัก แรงต้านหนักที่สุดในห้าตัว",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ turbo -6.6% (n=76)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "รอบ 52-week low ($19.20) — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ร่วงหนัก — เฉพาะถ้าตลาดทั้งหมดลงไปทดสอบ low 20 พ.ย.",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — ~$32 กลับหาเส้น 50 วัน เมื่อ milestone ปี 2027 เดินตามแผน กรอบ 6–12 เดือน สูงกว่า P75 ของ turbo โดยตั้งใจ"
+        },
+        "tp2": {
+          "note": "Bull — ~$60 ใกล้เป้า B. Riley $61 ถ้า Aurora ปี 2028 ชัดขึ้นและได้ลูกค้าซื้อไฟ"
+        },
+        "tp3": {
+          "note": "Moon — ~$100 แบบ re-rate ของหุ้นพลังงาน AI ปี 2025 กรอบ 18–24 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE ของ turbo (-20%) หลุด 52-week low โดยไม่เด้งแปลว่าแรงซื้อนิวเคลียร์หมด",
+          "hardNote": "-45% — ตลาดให้มูลค่าต่ำกว่าเงินสด thesis พัง",
+          "rrNote": "จากกลาง Entry 2 ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "อสมมาตร ✅ — ผ่านเป้า 5:1 ของ turbo"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "งบ Q4 2026",
+          "note": "ไทม์ไลน์ Aurora + milestone ปี 2027"
+        }
+      ]
+    }
+  }
+}

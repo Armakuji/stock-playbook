@@ -1,0 +1,287 @@
+{
+  "ticker": "AEHR",
+  "companyName": "Aehr Test Systems",
+  "companyDescription": "Semiconductor test & burn-in equipment · FOX-XP wafer-level burn-in for AI processors, SiC and GaN · FQ1 FY27 revenue $33.0M (+200%), bookings $46.7M, effective backlog $109.3M · FY27 revenue outlook raised to $150M",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-24T15:00:00.000Z",
+  "price": 48.51,
+  "priceChange": 21.76,
+  "priceNote": "Live $48.51 (+21.76%, Nov 23 close, Yahoo). About 67% below the $145.61 52-week high and ~37% below the 200-day (~$76.58), though still well above the 52-week low ($20.19). The stock gave back its post-earnings +26% pop (Nov 3) in the November semis crash.",
+  "marketCap": "~$1.5B (est.)",
+  "sector": "Technology / Semiconductor Equipment",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 0,
+  "summary": "A profitable equipment name whose fundamentals beat while its multiple collapsed. FQ1 FY27 revenue was a record $33.0M (+200%), adjusted EPS $0.28, bookings $46.7M (>1.4x book-to-bill) and effective backlog $109.3M, and the FY27 revenue outlook was raised to $150M, about triple FY26. Cash is $105.1M with near-breakeven operating cash flow, so survival is not in question. Analysts cut targets on sector multiple compression but still sit far above the price: Jefferies $140, Lake Street $90. The next print is ~late January (no date announced). Base +55% is a 3–6 month horizon re-rating toward the 200-day, above the turbo P75 (21.5%). แนะนำ 2% ของ portfolio เท่านั้น — semis beta สูง ถ้า AI capex ชะลอ ลงได้ 40%.",
+  "catalysts": [
+    {
+      "icon": "📊",
+      "name": "FQ2 FY27 results",
+      "description": "Quarter ending ~late Dec. Watch whether bookings stay above revenue and whether the $150M FY27 outlook is held or raised. Date not yet announced; FQ1 was reported Nov 2.",
+      "urgencyLabel": "~9 WEEKS",
+      "dateBadge": "~Jan 2027",
+      "catalystDate": "2027-01-31",
+      "badgeColor": "yellow",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🤖",
+      "name": "AI processor burn-in orders",
+      "description": "Follow-on FOX-XP orders from hyperscaler AI-processor customers are the platform driver behind the $109.3M backlog; any new named customer is upside.",
+      "urgencyLabel": "ONGOING",
+      "dateBadge": "Ongoing",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Customer concentration: a few AI-processor and SiC customers drive bookings; one delayed order can swing a quarter (AEHR fell ~44% between its prior two reports).",
+    "Semicap multiple compression: Jefferies ($175→$140) and Lake Street ($110→$90) cut targets despite a beat-and-raise.",
+    "SiC end-market (EV) remains weak; the thesis now rests on the AI burn-in ramp.",
+    "Cash fell ~$11M in the quarter to $105.1M; a prior public offering appears in the cash-flow statement, so dilution is possible if growth needs working capital.",
+    "Macro WAIT (15/100); SOX-beta names led the Nov selloff."
+  ],
+  "estimateDates": [
+    {
+      "event": "FQ2 FY27 results",
+      "dateRange": "~Jan 2027",
+      "note": "Bookings vs revenue; FY27 $150M outlook",
+      "est": "Rev ~$35M+",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -40,
+      "price": 29.11
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 55,
+      "price": 75.19
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 130,
+      "price": 111.57
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 200,
+      "price": 145.53
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Jefferies (Nov 2026 — cut from $175)",
+      "target": 140,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Lake Street (Nov 3, 2026 — cut from $110)",
+      "target": 90,
+      "rating": "Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds 3.75–4.00%. CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~91% (Nov 23); futures dropped the 50bp tail after the November selloff.",
+    "inflationNote": "Oct core CPI +0.3% m/m (hot). Sep core PCE 3.1% y/y; Oct PCE (Nov 25) consensus 3.2% is the last inflation print before the Fed.",
+    "sectorImpact": "Semicap equipment is cyclical and high-beta to AI capex sentiment; rate hikes compress multiples, but AEHR's profitability and backlog make it less fragile than pre-revenue turbo names.",
+    "summary": "MEDIUM — /macro is WAIT (15/100, high conviction): S&P 7,237 is still below its 200-day (~7,340) after the Nov 23 +4.7% squeeze, VIX 27, breadth ~43% above 50DMA, HY OAS widening to ~3.52%. Turbo prior is unproven in this regime (0/107 windows had SPY down >2%)."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 48.51,
+        "note": "Current price — starter only. Not preferred: turbo at-catalyst median -6.6% (n=76)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 43,
+        "rangeMax": 46,
+        "note": "Pullback zone near the Nov 23 pre-rally level — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 38,
+        "note": "Deep dip — only if the SOX makes a new low",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 75.19,
+      "pct": 55,
+      "note": "Base — ~$75 toward the 200-day as FQ2 holds the $150M outlook. Horizon 3–6 months; above the turbo P75 (21.5%) by design."
+    },
+    "tp2": {
+      "price": 111.57,
+      "pct": 130,
+      "note": "Bull — ~$112, between the Lake Street $90 and Jefferies $140 targets, if AI burn-in orders broaden."
+    },
+    "tp3": {
+      "price": 145.53,
+      "pct": 200,
+      "note": "Moon — ~$146, the 52-week high and Jefferies' $140, on a new hyperscaler customer. 12 months.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 36,
+      "tightPct": -25.79,
+      "tightNote": "-26% — wider than the turbo medianMAE (-20%). Below ~$36 the post-earnings base has failed.",
+      "hard": 28,
+      "hardPct": -42.28,
+      "hardNote": "-42% — market pricing an AI order air-pocket; thesis broken.",
+      "riskReward": "7.9 : 1",
+      "rrNote": "Entry 2 midpoint ($44.50) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Asymmetric ✅ — clears the 5:1 turbo target"
+    },
+    "verdict": "SPECULATIVE · ค่าขนม 2% max — profitable, backlog $109M, FY27 outlook tripled, ~67% off the high. The turbo at-catalyst median is -6.6% (n=76), so Entry 2 ($43–46) is preferred; earnings_beat is the lane's best tier-2 type.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "AEHR tends to drift into prints and gap on bookings; the Nov 3 report produced its biggest one-day gain since July (+26%).",
+    "preRunupTiming": "1–2 weeks before results",
+    "preRunupPct": "+5–15%",
+    "postWin": {
+      "avgPct": 26,
+      "range": "+20% to +26%",
+      "note": "AEHR rose ~26% on Nov 3, 2026 after the FQ1 beat-and-raise.",
+      "exampleDate": "Nov 3, 2026"
+    },
+    "postLose": {
+      "avgPct": -25,
+      "range": "-18% to -44%",
+      "note": "AEHR lost ~44% between its FQ4 FY26 and FQ1 FY27 reports on order-timing fears; single-day guide cuts have historically cost ~20%.",
+      "exampleDate": "Aug–Nov 2026"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "2%. earnings_beat is a tier-2 leader (+13.9pp vs +7.7pp overall, n=15), the strongest type in the lane, but whole-lane weakness and macro WAIT cap it at 2%."
+    },
+    "stopPreCatalyst": {
+      "pct": -25.79,
+      "price": 36,
+      "note": "Wider than the turbo medianMAE (-20%). Below ~$36 the post-earnings base has failed."
+    },
+    "stopPostCatalyst": {
+      "pct": -25,
+      "note": "If FQ2 bookings fall below revenue or the $150M outlook is cut, exit."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "AEHR",
+      "event": "SiC burn-in order ramp (FY23)",
+      "date": "Jul 2022",
+      "movePct": 500,
+      "days": 365,
+      "outcome": "good",
+      "note": "Same company: the last order-ramp cycle took the stock from ~$8 to ~$50 in a year. AI burn-in is the analogous ramp now."
+    },
+    {
+      "ticker": "AEHR",
+      "event": "FQ1 FY27 beat-and-raise ($150M outlook)",
+      "date": "Nov 2026",
+      "movePct": 26,
+      "days": 1,
+      "outcome": "good",
+      "note": "Prints still move the stock hard; the gain was then erased by the sector selloff."
+    },
+    {
+      "ticker": "AEHR",
+      "event": "Guide cut on SiC demand slowdown",
+      "date": "Jan 2024",
+      "movePct": -20,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Downside template: customer-timing misses cost ~20% in a day."
+    }
+  ],
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/0001040470/000165495426009385/aehr_ex991.htm",
+    "https://finviz.com/news/413485/aehr-test-systems-reports-record-first-quarter-fiscal-2027-revenue-of-330-million-raises-full-year-revenue-outlook-to-150-million-triple-fiscal-2026-revenue",
+    "https://stocktwits.com/news-articles/markets/equity/aehr-stock-heads-for-biggest-single-day-gain-since-july-analysts-cut-targets-despite-earnings-beat-raised-guidance/cNGX7dHR9db",
+    "https://www.stock-world.de/aehr-test-aktie-lake-street-holt-ziel-auf-90-dollar-runter/",
+    "https://finviz.com/news/413842/aehr-test-systems-crushes-estimates-and-lifts-outlook-but-the-stock-arrives-near-its-lows",
+    "https://www.fool.com/coverage/stock-market-today/2026/11/23/stock-market-today-nov-23-markets-rebound-from-correction-on-ai-relief-rally/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "หุ้นอุปกรณ์ที่มีกำไร พื้นฐานดีกว่าคาดแต่ multiple ถล่ม FQ1 ปีงบ 2027 รายได้สูงสุดเป็นประวัติการณ์ $33.0M (+200%) EPS ปรับปรุง $0.28 bookings $46.7M (book-to-bill >1.4 เท่า) backlog $109.3M และปรับ outlook รายได้ปีงบ 2027 ขึ้นเป็น $150M ราว 3 เท่าของปีงบ 2026 เงินสด $105.1M และกระแสเงินสดดำเนินงานใกล้คุ้มทุน ความอยู่รอดจึงไม่ใช่ประเด็น นักวิเคราะห์ลดเป้าเพราะ multiple ทั้งกลุ่มหด แต่ยังสูงกว่าราคามาก: Jefferies $140, Lake Street $90 งบถัดไป ~ปลาย ม.ค. (ยังไม่ประกาศวัน) Base +55% เป็นกรอบ 3–6 เดือนที่ re-rate กลับหาเส้น 200 วัน สูงกว่า P75 ของ turbo (21.5%) แนะนำ 2% ของ portfolio เท่านั้น — semis beta สูง ถ้า AI capex ชะลอ ลงได้ 40%",
+      "priceNote": "ราคาสด $48.51 (+21.76% ปิด 23 พ.ย., Yahoo) ต่ำกว่า 52-week high $145.61 ~67% ต่ำกว่าเส้น 200 วัน (~$76.58) ~37% แต่ยังสูงกว่า 52-week low ($20.19) มาก หุ้นคืนกำไร +26% หลังงบ (3 พ.ย.) ไปหมดในรอบถล่มของ semis เดือน พ.ย.",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "งบ FQ2 ปีงบ 2027",
+          "description": "ไตรมาสจบ ~ปลาย ธ.ค. ดูว่า bookings ยังสูงกว่ารายได้และ outlook ปีงบ 2027 $150M คงไว้หรือปรับขึ้น ยังไม่ประกาศวัน (FQ1 ประกาศ 2 พ.ย.)"
+        },
+        {
+          "name": "ออเดอร์ burn-in สำหรับชิป AI",
+          "description": "ออเดอร์ FOX-XP ต่อเนื่องจากลูกค้าชิป AI ของ hyperscaler คือแรงขับหลักของ backlog $109.3M ถ้ามีลูกค้าใหม่ที่เปิดชื่อได้คือ upside"
+        }
+      ],
+      "risks": [
+        "พึ่งพาลูกค้าน้อยราย: ลูกค้าชิป AI และ SiC ไม่กี่รายขับ bookings ออเดอร์เดียวที่เลื่อนก็เปลี่ยนไตรมาสได้ (AEHR ลง ~44% ระหว่างงบสองครั้งก่อน)",
+        "multiple ของกลุ่ม semicap หด: Jefferies ($175→$140) และ Lake Street ($110→$90) ลดเป้าแม้งบดีกว่าคาดและปรับ guide ขึ้น",
+        "ตลาด SiC (EV) ยังอ่อน thesis ตอนนี้ขึ้นกับการ ramp ของ burn-in สำหรับ AI",
+        "เงินสดลด ~$11M ในไตรมาสเหลือ $105.1M งบกระแสเงินสดมีรายการ public offering ก่อนหน้า จึงอาจมี dilution ถ้าการเติบโตต้องใช้ทุนหมุนเวียน",
+        "มหภาค WAIT (15/100) หุ้นที่มี beta กับ SOX นำการร่วงเดือน พ.ย."
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ย Fed 3.75–4.00% CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ~91% (23 พ.ย.) ฟิวเจอร์สตัดโอกาสขึ้น 50bp ออกหลังตลาดร่วงเดือน พ.ย.",
+        "inflationNote": "core CPI ต.ค. +0.3% m/m (ร้อน) core PCE ก.ย. 3.1% y/y PCE ต.ค. (25 พ.ย.) คาด 3.2% เป็นตัวเลขเงินเฟ้อตัวสุดท้ายก่อน Fed",
+        "sectorImpact": "อุปกรณ์ semicap เป็นวัฏจักรและ beta สูงต่ออารมณ์ AI capex ดอกเบี้ยขึ้นกด multiple แต่การมีกำไรและ backlog ทำให้ AEHR เปราะบางน้อยกว่าหุ้น turbo ที่ยังไม่มีรายได้",
+        "summary": "MEDIUM — /macro เป็น WAIT (15/100 ความมั่นใจสูง): S&P 7,237 ยังต่ำกว่าเส้น 200 วัน (~7,340) หลังเด้ง +4.7% เมื่อ 23 พ.ย. VIX 27 breadth ~43% เหนือ 50DMA HY OAS กว้างขึ้นเป็น ~3.52% prior ของ turbo ยังไม่เคยพิสูจน์ในตลาดขาลงแบบนี้ (0/107 window ที่ SPY ลง >2%)"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · ค่าขนม สูงสุด 2% — มีกำไร backlog $109M outlook ปีงบ 2027 เพิ่ม 3 เท่า ต่ำกว่าจุดสูงสุด ~67% median ถึงวัน catalyst ของ turbo -6.6% (n=76) จึงเข้าที่ Entry 2 ($43–46) เป็นหลัก earnings_beat เป็น type ที่ดีที่สุดใน tier-2 ของ lane นี้",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ turbo -6.6% (n=76)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "โซนย่อใกล้ระดับก่อนวันเด้ง 23 พ.ย. — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ร่วงหนัก — เฉพาะถ้า SOX ทำ low ใหม่",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — ~$75 กลับหาเส้น 200 วัน เมื่อ FQ2 ยืนยัน outlook $150M กรอบ 3–6 เดือน สูงกว่า P75 ของ turbo โดยตั้งใจ"
+        },
+        "tp2": {
+          "note": "Bull — ~$112 ระหว่างเป้า Lake Street $90 และ Jefferies $140 ถ้าออเดอร์ burn-in AI กระจายตัว"
+        },
+        "tp3": {
+          "note": "Moon — ~$146 เท่า 52-week high และใกล้ Jefferies $140 ถ้ามีลูกค้า hyperscaler รายใหม่ กรอบ 12 เดือน"
+        },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE ของ turbo (-20%) ต่ำกว่า ~$36 แปลว่าฐานหลังงบล้มเหลว",
+          "hardNote": "-42% — ตลาด price ว่าออเดอร์ AI หายไป thesis พัง",
+          "rrNote": "จากกลาง Entry 2 ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "อสมมาตร ✅ — ผ่านเป้า 5:1 ของ turbo"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "งบ FQ2 ปีงบ 2027",
+          "note": "bookings เทียบรายได้ และ outlook $150M"
+        }
+      ]
+    }
+  }
+}
