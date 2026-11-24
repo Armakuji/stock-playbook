@@ -1,0 +1,277 @@
+{
+  "ticker": "CRDO",
+  "companyName": "Credo Technology Group Holding Ltd",
+  "companyDescription": "AI connectivity · active electrical cables (AECs), SerDes, optical DSPs for hyperscale AI clusters · FQ1 FY27 revenue $479M (+115%) · FQ2 guide $525–535M, 67–69% non-GAAP GM",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-24T15:00:00.000Z",
+  "price": 122.46,
+  "priceChange": 22.63,
+  "priceNote": "Live $122.46 (+22.6%, Nov 23 close, Yahoo). About 60% below the $302.52 52-week high and ~32% below the 200-day (~$181). It fell 32% in the week to Nov 5 with no company-specific news.",
+  "marketCap": "~$21B (est.)",
+  "sector": "Technology / Semiconductors — AI Connectivity",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 0,
+  "summary": "A hypergrowth AI-connectivity name cut by more than half with no company-specific bad news. FQ1 revenue was $479M (+115%), and the FQ2 guide is $525–535M at a 67–69% gross margin. Analysts expect normalized EPS to roughly triple from FY26 to FY28, yet the forward P/E is at a three-year low. FQ2 results are confirmed for Dec 1 after the close (company release), 7 days out and inside the 14d window. Consensus is ~$210–284 (+72%). The risks are concentration (four customers are ~84% of revenue) and the copper-vs-optics debate. Base +20% is a 2–4 week horizon on a beat-and-raise, above the core P75 (10.8%).",
+  "catalysts": [
+    {
+      "icon": "⚡",
+      "name": "FQ2 FY27 earnings (Dec 1, AMC)",
+      "description": "Confirmed by Credo: results after the close Dec 1, call 2pm PT. Guide $525–535M revenue, 67–69% non-GAAP GM. The read is customer breadth beyond the top two and AEC demand into 2027.",
+      "urgencyLabel": "7 DAYS",
+      "dateBadge": "Dec 1, 2026",
+      "catalystDate": "2026-12-01",
+      "badgeColor": "red",
+      "dotColor": "red"
+    }
+  ],
+  "risks": [
+    "Customer concentration: four end customers were ~84% of FQ1 revenue (one at 33%, another at 28%).",
+    "Copper vs optics: investors worry AECs get displaced by optical links; Marvell's Lumentum deal sharpened the debate.",
+    "Beat-and-drop pattern: the stock has sold off after strong prints in the 2026 AI-hangover tape.",
+    "Extreme beta: -32% in a week, +22.6% in a day; macro WAIT (15/100)."
+  ],
+  "estimateDates": [
+    {
+      "event": "FQ2 FY27 earnings",
+      "dateRange": "Dec 1, 2026",
+      "note": "Customer breadth + FQ3 guide",
+      "est": "Rev $525–535M",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -25,
+      "price": 91.85
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 20,
+      "price": 146.95
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 45,
+      "price": 177.57
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 85,
+      "price": 226.55
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Benzinga consensus (21 analysts)",
+      "target": 211,
+      "rating": "Buy"
+    },
+    {
+      "firm": "TIKR-cited average",
+      "target": 284,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Yahoo consensus",
+      "target": 209.29,
+      "rating": "Strong Buy"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds 3.75–4.00%. CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~91% (Nov 23); futures dropped the 50bp tail after the November selloff.",
+    "inflationNote": "Oct core CPI +0.3% m/m (hot). Sep core PCE 3.1% y/y; Oct PCE (Nov 25) consensus 3.2% is the last inflation print before the Fed.",
+    "sectorImpact": "AI connectivity semis are among the highest-beta names in the market; profitability helps, but multiples swing with AI-capex sentiment and rates.",
+    "summary": "MEDIUM — /macro is WAIT (15/100, high conviction): S&P 7,237 is still below its 200-day (~7,340) after the Nov 23 +4.7% squeeze, VIX 27, breadth ~43% above 50DMA, HY OAS widening to ~3.52%. Core prior is largely unmeasured in this regime (8/174 windows had SPY down >2%)."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 122.46,
+        "note": "Current price — starter only. Not preferred: core at-catalyst median -6.5% (n=157)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 108,
+        "rangeMax": 115,
+        "note": "Partial give-back of the +22.6% day — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 98,
+        "note": "Deep dip — near the Nov 20 close",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 146.95,
+      "pct": 20,
+      "note": "Base — ~$147 on a beat-and-raise. 2–4 week horizon; above the core P75 (10.8%) by design."
+    },
+    "tp2": {
+      "price": 177.57,
+      "pct": 45,
+      "note": "Bull — ~$178, back near the 200-day."
+    },
+    "tp3": {
+      "price": 226.55,
+      "pct": 85,
+      "note": "Moon — ~$227, around the ~$210 consensus.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 100,
+      "tightPct": -18.34,
+      "tightNote": "-18% — wider than the earnings_beat medianMAE (-9.5%). Below ~$100 the post-selloff base has broken.",
+      "hard": 88,
+      "hardPct": -28.14,
+      "hardNote": "-28% — market pricing customer loss or AEC displacement.",
+      "riskReward": "5.7 : 1",
+      "rrNote": "Entry 2 midpoint ($111.50) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Good R/R ✅"
+    },
+    "verdict": "BUY · Speculative 4% — confirmed Dec 1 print, +115% growth, 60% off the high. The core at-catalyst median is -6.5% (n=157), so Entry 2 ($108–115) is preferred over chasing the +22.6% day.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "CRDO's biggest moves come on the print itself; the run-up is sector-driven.",
+    "preRunupTiming": "Days before results",
+    "preRunupPct": "+5–15%",
+    "postWin": {
+      "avgPct": 48,
+      "range": "+15% to +48%",
+      "note": "CRDO jumped ~48% the day after its Dec 2024 FQ2 FY25 beat-and-raise.",
+      "exampleDate": "Dec 2024"
+    },
+    "postLose": {
+      "avgPct": -15,
+      "range": "-10% to -15%",
+      "note": "CRDO dropped ~15% in the Nov 2026 optics selloff, and has shed ~10% after beats in the 2026 AI hangover.",
+      "exampleDate": "Nov 2026"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "4%. earnings_beat is not a tier-2 laggard; concentration risk and extreme beta keep it below a full core weight."
+    },
+    "stopPreCatalyst": {
+      "pct": -18.34,
+      "price": 100,
+      "note": "Wider than the turbo medianMAE (-20%). Below ~$100 the post-selloff base has broken."
+    },
+    "stopPostCatalyst": {
+      "pct": -15,
+      "note": "If the FQ3 guide decelerates or a top customer pauses, exit."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "CRDO",
+      "event": "FQ2 FY25 beat-and-raise (AEC ramp)",
+      "date": "Dec 2024",
+      "movePct": 48,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same company, same quarter: the template for a big beat in a supportive tape."
+    },
+    {
+      "ticker": "CRDO",
+      "event": "Nov 2026 optics selloff",
+      "date": "Nov 2026",
+      "movePct": -15,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Sector-driven drawdown with no company news."
+    },
+    {
+      "ticker": "MRVL",
+      "event": "Q4 FY25 print disappoints on custom-silicon timing",
+      "date": "Mar 2025",
+      "movePct": -20,
+      "days": 1,
+      "outcome": "bad",
+      "note": "AI networking peer: guide timing can cost ~20% even when growth is strong."
+    }
+  ],
+  "sources": [
+    "https://s205.q4cdn.com/511065572/files/doc_news/Credo-Schedules-Second-Quarter-Fiscal-Year-2027-Financial-Results-Conference-Call-2026.pdf",
+    "https://finviz.com/news/387707/credo-technology-group-holding-ltd-reports-first-quarter-of-fiscal-year-2027-financial-results",
+    "https://www.tikr.com/blog/credo-just-dropped-32-in-a-week-is-it-time-to-sell-or-load-up",
+    "https://www.trefis.com/stock/crdo/articles/625288/why-did-credo-technology-stock-fall/2026-11-16",
+    "https://finance.yahoo.com/news/credo-drops-15-lumentum-11-233131021.html",
+    "https://www.benzinga.com/quote/CRDO/price-targets"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "หุ้น AI connectivity ที่โตแรงแต่ถูกหั่นราคาเกินครึ่งโดยไม่มีข่าวร้ายของบริษัท รายได้ FQ1 $479M (+115%) guide FQ2 $525–535M ที่ GM 67–69% นักวิเคราะห์คาด EPS ปกติเพิ่มราว 3 เท่าจากปีงบ 2026 ถึง 2028 แต่ forward P/E ต่ำสุดรอบ 3 ปี งบ FQ2 ยืนยันวันที่ 1 ธ.ค. หลังตลาดปิด (ประกาศบริษัท) อีก 7 วัน อยู่ในกรอบ 14 วัน consensus ~$210–284 (+72%) ความเสี่ยงคือพึ่งลูกค้าน้อยราย (4 รายเป็น ~84% ของรายได้) และประเด็นทองแดงเทียบ optics Base +20% กรอบ 2–4 สัปดาห์ถ้างบดี + ปรับ guide สูงกว่า P75 ของ core (10.8%)",
+      "priceNote": "ราคาสด $122.46 (+22.6% ปิด 23 พ.ย., Yahoo) ต่ำกว่า 52-week high $302.52 ~60% และต่ำกว่าเส้น 200 วัน (~$181) ~32% ร่วง 32% ในสัปดาห์ที่จบ 5 พ.ย. โดยไม่มีข่าวของบริษัท",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        {
+          "name": "งบ FQ2 ปีงบ 2027 (1 ธ.ค. หลังตลาดปิด)",
+          "description": "ยืนยันโดย Credo: ประกาศงบหลังตลาดปิด 1 ธ.ค. call 14:00 PT guide รายได้ $525–535M GM non-GAAP 67–69% ประเด็นคือการกระจายลูกค้านอกเหนือสองรายใหญ่ และดีมานด์ AEC ปี 2027"
+        }
+      ],
+      "risks": [
+        "พึ่งพาลูกค้าน้อยราย: ลูกค้าปลายทาง 4 รายคิดเป็น ~84% ของรายได้ FQ1 (รายหนึ่ง 33% อีกราย 28%)",
+        "ทองแดงเทียบ optics: นักลงทุนกังวลว่า AEC จะถูกแทนด้วย optical link ดีล Lumentum ของ Marvell ทำให้ประเด็นนี้ชัดขึ้น",
+        "รูปแบบงบดีแต่หุ้นลง: หุ้นเคยถูกขายหลังงบดีในช่วงตลาด AI เมาค้างปี 2026",
+        "beta สูงมาก: -32% ในสัปดาห์เดียว +22.6% ในวันเดียว มหภาค WAIT (15/100)"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ย Fed 3.75–4.00% CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ~91% (23 พ.ย.) ฟิวเจอร์สตัดโอกาสขึ้น 50bp ออกหลังตลาดร่วงเดือน พ.ย.",
+        "inflationNote": "core CPI ต.ค. +0.3% m/m (ร้อน) core PCE ก.ย. 3.1% y/y PCE ต.ค. (25 พ.ย.) คาด 3.2% เป็นตัวเลขเงินเฟ้อตัวสุดท้ายก่อน Fed",
+        "sectorImpact": "ชิปเชื่อมต่อ AI เป็นกลุ่มที่ beta สูงที่สุดในตลาด การมีกำไรช่วยได้ แต่ multiple แกว่งตามอารมณ์ AI capex และดอกเบี้ย",
+        "summary": "MEDIUM — /macro เป็น WAIT (15/100 ความมั่นใจสูง): S&P 7,237 ยังต่ำกว่าเส้น 200 วัน (~7,340) หลังเด้ง +4.7% เมื่อ 23 พ.ย. VIX 27 breadth ~43% เหนือ 50DMA HY OAS กว้างขึ้นเป็น ~3.52% prior ของ core แทบไม่เคยวัดในตลาดแบบนี้ (8/174 window ที่ SPY ลง >2%)"
+      },
+      "entryStrategy": {
+        "verdict": "BUY · Speculative 4% — งบ 1 ธ.ค. ยืนยันแล้ว โต +115% ต่ำกว่าจุดสูงสุด 60% median ถึงวัน catalyst ของ core -6.5% (n=157) จึงเข้าที่ Entry 2 ($108–115) ดีกว่าไล่ราคาวันที่ขึ้น +22.6%",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ core -6.5% (n=157)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "รอคืนกำไรบางส่วนจากวันที่ขึ้น +22.6% — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ร่วงหนัก — ใกล้ราคาปิด 20 พ.ย.",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — ~$147 ถ้างบดี + ปรับ guide กรอบ 2–4 สัปดาห์ สูงกว่า P75 ของ core โดยตั้งใจ"
+        },
+        "tp2": {
+          "note": "Bull — ~$178 กลับใกล้เส้น 200 วัน"
+        },
+        "tp3": {
+          "note": "Moon — ~$227 ราว consensus ~$210"
+        },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE ของ earnings_beat (-9.5%) ต่ำกว่า ~$100 แปลว่าฐานหลังรอบขายพัง",
+          "hardNote": "-28% — ตลาด price การเสียลูกค้าหรือ AEC ถูกแทนที่",
+          "rrNote": "จากกลาง Entry 2 ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "R/R ดี ✅"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "งบ FQ2 ปีงบ 2027",
+          "note": "การกระจายลูกค้า + guide FQ3"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,308 @@
+{
+  "ticker": "VNDA",
+  "companyName": "Vanda Pharmaceuticals Inc.",
+  "companyDescription": "Commercial CNS/immunology pharma · Fanapt, HETLIOZ, BYSANTI (Q4 2026 launch) · Quimilza (imsidolimab, GPP) PDUFA Dec 12, 2026 · tradipitant sNDA planned · Q3 revenue $69.8M (+24%), FY26 guide >$240M",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-24T15:00:00.000Z",
+  "price": 3.49,
+  "priceChange": 1.16,
+  "priceNote": "Live $3.49 (+1.2%, Nov 23 close, Yahoo). It sits right on the $3.45 52-week low, ~41% below the 200-day (~$5.90) and ~64% below the $9.56 high.",
+  "marketCap": "~$0.2B (est.)",
+  "sector": "Healthcare / Pharmaceuticals",
+  "verdict": "SPECULATIVE",
+  "scoreLabel": "ค่าขนม",
+  "score": 0,
+  "summary": "A revenue-generating pharma priced near its lows into an FDA decision. Quimilza (imsidolimab) for generalized pustular psoriasis has a PDUFA of Dec 12, 2026, per FDA BLA acceptance and partner AnaptysBio's release. Q3 revenue rose 24% to $69.8M (Fanapt +24%), Q3 opex fell 18% q/q, FY26 revenue guidance is >$240M, and BYSANTI launches in Q4. Consensus is ~$11.75–14 (+240%+, 4–5 analysts), with B. Riley at $12 and H.C. Wainwright at $20. Cash fell ~$123M year to date per one unverified recap, so the balance sheet is the risk. The catalyst is 18 days out, beyond the 14d North Star window. Base +25% is the approval move over 3–4 weeks. ค่าขนม — 2% max.",
+  "catalysts": [
+    {
+      "icon": "💊",
+      "name": "Quimilza (imsidolimab) FDA decision — PDUFA Dec 12",
+      "description": "BLA for generalized pustular psoriasis (partnered with AnaptysBio). FDA accepted the filing; AnaptysBio's Sep 2026 release lists Dec 12, 2026 as the target action date. Dec 12 is a Saturday, so the news may land Friday Dec 11 or Monday Dec 14.",
+      "urgencyLabel": "18 DAYS",
+      "dateBadge": "Dec 12, 2026",
+      "catalystDate": "2026-12-12",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🚀",
+      "name": "BYSANTI commercial launch",
+      "description": "Management lists the Q4 2026 BYSANTI launch as a near-term milestone; MDD adjunct Phase 3 results are expected in H1 2027.",
+      "urgencyLabel": "~Q4 2026",
+      "dateBadge": "~Dec 2026",
+      "catalystDate": "2026-12-31",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Cash burn: one recap puts cash down ~$123M from Dec 31, 2025 (unverified vs the 10-Q); continued losses could force financing.",
+    "Small market: GPP is a rare indication and Boehringer's Spevigo is already approved, so the approval is more validation than a revenue step-change.",
+    "HETLIOZ Q3 sales included ~$7M of timing-shifted orders; underlying growth is slower than the headline.",
+    "Thin coverage (4–5 analysts) and a history of FDA disputes; micro-cap liquidity."
+  ],
+  "estimateDates": [
+    {
+      "event": "Quimilza PDUFA",
+      "dateRange": "Dec 12, 2026",
+      "note": "GPP — Saturday date",
+      "est": "Approval",
+      "highlight": "blue"
+    },
+    {
+      "event": "BYSANTI launch",
+      "dateRange": "~Dec 2026",
+      "note": "Q4 2026 per company",
+      "est": "Launch",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -35,
+      "price": 2.27
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 25,
+      "price": 4.36
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 60,
+      "price": 5.58
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 150,
+      "price": 8.73
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Investing.com consensus (5 analysts)",
+      "target": 11.75,
+      "rating": "Strong Buy"
+    },
+    {
+      "firm": "H.C. Wainwright (Aug 10, 2026 — cut from $21)",
+      "target": 20,
+      "rating": "Buy"
+    },
+    {
+      "firm": "B. Riley (Aug 10, 2026 — cut from $17)",
+      "target": 12,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Oppenheimer (Sep 23, 2026 — initiation)",
+      "target": 10,
+      "rating": "Outperform"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Fed funds 3.75–4.00%. CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~91% (Nov 23); futures dropped the 50bp tail after the November selloff.",
+    "inflationNote": "Oct core CPI +0.3% m/m (hot). Sep core PCE 3.1% y/y; Oct PCE (Nov 25) consensus 3.2% is the last inflation print before the Fed.",
+    "sectorImpact": "A commercial-stage pharma is not rate-driven; the swing factor is the FDA binary and whether the balance sheet needs equity in a weak tape.",
+    "summary": "LOW — /macro is WAIT (15/100, high conviction): S&P 7,237 is still below its 200-day (~7,340) after the Nov 23 +4.7% squeeze, VIX 27, breadth ~43% above 50DMA, HY OAS widening to ~3.52%. Core prior is largely unmeasured in this regime (8/174 windows had SPY down >2%)."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 3.49,
+        "note": "Current price — starter only. Not preferred: core at-catalyst median -6.5% (n=157)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 3.15,
+        "rangeMax": 3.35,
+        "note": "Just under the 52-week low — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 2.9,
+        "note": "Deep dip — only if a financing is announced",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 4.36,
+      "pct": 25,
+      "note": "Base — ~$4.36 on approval. 3–4 week horizon; above the core P75 (10.8%) by design."
+    },
+    "tp2": {
+      "price": 5.58,
+      "pct": 60,
+      "note": "Bull — ~$5.58, near the 200-day, as BYSANTI launches."
+    },
+    "tp3": {
+      "price": 8.73,
+      "pct": 150,
+      "note": "Moon — ~$8.73, still below the ~$12 consensus.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 2.95,
+      "tightPct": -15.47,
+      "tightNote": "-15% — wider than the fda_decision medianMAE (-10.6%). A break below the 52-week low with no bounce means the market is pricing financing risk.",
+      "hard": 2.5,
+      "hardPct": -28.37,
+      "hardNote": "-28% — CRL or dilutive raise.",
+      "riskReward": "7.8 : 1",
+      "rrNote": "Entry 2 midpoint ($3.25) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Good R/R ✅"
+    },
+    "verdict": "SPECULATIVE · ค่าขนม 2% — Dec 12 PDUFA, growing revenue, at the 52-week low. The core at-catalyst median is -6.5% (n=157), so Entry 2 ($3.15–3.35) is preferred; fda_decision is a tier-2 leader, but cash is the risk.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "Low-priced pharmas with thin coverage rarely run up into a niche PDUFA; the move comes on the decision.",
+    "preRunupTiming": "Days before PDUFA",
+    "preRunupPct": "0–10%",
+    "postWin": {
+      "avgPct": 7,
+      "range": "+7% to +46%",
+      "note": "VERA +7% on its Jul 7, 2026 approval day; TVTX +46% over 30 days after its Apr 2026 expanded approval.",
+      "exampleDate": "Jul 7, 2026"
+    },
+    "postLose": {
+      "avgPct": -16,
+      "range": "-16% to -40%",
+      "note": "CELC -16% on launch-guidance disappointment (Jul 15, 2026); a CRL on a micro-cap is typically worse.",
+      "exampleDate": "Jul 15, 2026"
+    },
+    "spotSizing": {
+      "pct": 2,
+      "reason": "2%. fda_decision is a core tier-2 leader (+8.1pp vs +4.1pp, n=11), but a micro-cap with unverified cash and thin coverage stays at ค่าขนม size."
+    },
+    "stopPreCatalyst": {
+      "pct": -15.47,
+      "price": 2.95,
+      "note": "Wider than the turbo medianMAE (-20%). A break below the 52-week low with no bounce means the market is pricing financing risk."
+    },
+    "stopPostCatalyst": {
+      "pct": -20,
+      "note": "On a CRL or a financing announcement, exit."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "VERA",
+      "event": "FDA accelerated approval for TRUTAKNA",
+      "date": "Jul 2026",
+      "movePct": 7,
+      "days": 1,
+      "outcome": "good",
+      "note": "Approval-day moves in immunology are modest; the run-up comes from launch numbers."
+    },
+    {
+      "ticker": "TVTX",
+      "event": "Filspari expanded approval → 30-day momentum",
+      "date": "Apr–May 2026",
+      "movePct": 46,
+      "days": 30,
+      "outcome": "good",
+      "note": "Upside template when approval reframes the commercial story."
+    },
+    {
+      "ticker": "CELC",
+      "event": "Approval followed by weak launch guidance",
+      "date": "Jul 2026",
+      "movePct": -16,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Downside template even with approval."
+    }
+  ],
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/0001347178/000162828026067886/vnda8-k10282026exhibit991.htm",
+    "https://www.marketbeat.com/stocks/NASDAQ/ANAB/fda-events/",
+    "https://finviz.com/news/393973/anaptys-announces-second-quarter-and-transitional-fiscal-year-2026-financial-results-and-provides-business-update",
+    "https://www.biopharmawatch.com/blog/q4-2026-pdufa-dates",
+    "https://www.investing.com/equities/vanda-pharmaceuticals-consensus-estimates",
+    "https://www.benzinga.com/quote/VNDA/price-targets",
+    "https://www.mitrade.com/insights/news/live-news/article-0-2209237-20261029"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "บริษัทยาที่มีรายได้แล้วแต่ราคาใกล้จุดต่ำก่อน FDA ตัดสิน Quimilza (imsidolimab) สำหรับ GPP มี PDUFA 12 ธ.ค. 2026 (FDA รับ BLA และเอกสารของ AnaptysBio ซึ่งเป็นพันธมิตร) รายได้ Q3 เพิ่ม 24% เป็น $69.8M (Fanapt +24%) opex Q3 ลด 18% q/q guide รายได้ปี 2026 >$240M และ BYSANTI เปิดตัวใน Q4 consensus ~$11.75–14 (+240%+, 4–5 ราย) B. Riley $12, H.C. Wainwright $20 เงินสดลด ~$123M ตั้งแต่ต้นปี (สรุปแหล่งเดียวยังไม่ยืนยัน) งบดุลจึงเป็นความเสี่ยง catalyst อีก 18 วัน เกินกรอบ 14 วันของ North Star Base +25% คือการขึ้นเมื่อได้รับอนุมัติในกรอบ 3–4 สัปดาห์ ค่าขนม — สูงสุด 2%",
+      "priceNote": "ราคาสด $3.49 (+1.2% ปิด 23 พ.ย., Yahoo) อยู่บน 52-week low $3.45 พอดี ต่ำกว่าเส้น 200 วัน (~$5.90) ~41% และต่ำกว่าจุดสูงสุด $9.56 ~64%",
+      "scoreLabel": "ค่าขนม",
+      "catalysts": [
+        {
+          "name": "FDA ตัดสิน Quimilza (imsidolimab) — PDUFA 12 ธ.ค.",
+          "description": "BLA สำหรับโรคสะเก็ดเงินชนิดตุ่มหนองทั่วตัว (GPP) ร่วมกับ AnaptysBio FDA รับไฟล์แล้ว และเอกสารของ AnaptysBio (ก.ย. 2026) ระบุวันที่ 12 ธ.ค. 2026 ตรงกับวันเสาร์ ข่าวอาจออกศุกร์ 11 หรือจันทร์ 14 ธ.ค."
+        },
+        {
+          "name": "เปิดตัว BYSANTI เชิงพาณิชย์",
+          "description": "ผู้บริหารระบุการเปิดตัว BYSANTI ใน Q4 2026 เป็น milestone ระยะใกล้ ผล Phase 3 MDD แบบเสริมคาดใน H1 2027"
+        }
+      ],
+      "risks": [
+        "การเผาเงิน: สรุปแหล่งหนึ่งระบุเงินสดลด ~$123M จาก 31 ธ.ค. 2025 (ยังไม่ยืนยันกับ 10-Q) ถ้าขาดทุนต่อเนื่องอาจต้องระดมทุน",
+        "ตลาดเล็ก: GPP เป็นโรคหายาก และ Spevigo ของ Boehringer อนุมัติแล้ว การอนุมัติจึงเป็นการยืนยันมากกว่าการเพิ่มรายได้ก้าวกระโดด",
+        "ยอด HETLIOZ Q3 มีออเดอร์ที่เลื่อนจังหวะ ~$7M การเติบโตจริงช้ากว่าตัวเลขพาดหัว",
+        "นักวิเคราะห์น้อย (4–5 ราย) และมีประวัติขัดแย้งกับ FDA สภาพคล่องแบบ micro-cap"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ย Fed 3.75–4.00% CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ~91% (23 พ.ย.) ฟิวเจอร์สตัดโอกาสขึ้น 50bp ออกหลังตลาดร่วงเดือน พ.ย.",
+        "inflationNote": "core CPI ต.ค. +0.3% m/m (ร้อน) core PCE ก.ย. 3.1% y/y PCE ต.ค. (25 พ.ย.) คาด 3.2% เป็นตัวเลขเงินเฟ้อตัวสุดท้ายก่อน Fed",
+        "sectorImpact": "บริษัทยาที่มีรายได้แล้วไม่ได้ขับเคลื่อนด้วยดอกเบี้ย ตัวแปรคือ binary ของ FDA และงบดุลจะต้องเพิ่มทุนในตลาดอ่อนหรือไม่",
+        "summary": "LOW — /macro เป็น WAIT (15/100 ความมั่นใจสูง): S&P 7,237 ยังต่ำกว่าเส้น 200 วัน (~7,340) หลังเด้ง +4.7% เมื่อ 23 พ.ย. VIX 27 breadth ~43% เหนือ 50DMA HY OAS กว้างขึ้นเป็น ~3.52% prior ของ core แทบไม่เคยวัดในตลาดแบบนี้ (8/174 window ที่ SPY ลง >2%)"
+      },
+      "entryStrategy": {
+        "verdict": "SPECULATIVE · ค่าขนม 2% — PDUFA 12 ธ.ค. รายได้โต ราคาอยู่ที่ 52-week low median ถึงวัน catalyst ของ core -6.5% (n=157) จึงเข้าที่ Entry 2 ($3.15–3.35) เป็นหลัก fda_decision เป็น leader ใน tier-2 แต่เงินสดคือความเสี่ยง",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ core -6.5% (n=157)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "ต่ำกว่า 52-week low เล็กน้อย — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ร่วงหนัก — เฉพาะถ้าประกาศระดมทุน",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — ~$4.36 เมื่อได้รับอนุมัติ กรอบ 3–4 สัปดาห์ สูงกว่า P75 ของ core โดยตั้งใจ"
+        },
+        "tp2": {
+          "note": "Bull — ~$5.58 ใกล้เส้น 200 วันเมื่อ BYSANTI เปิดตัว"
+        },
+        "tp3": {
+          "note": "Moon — ~$8.73 ยังต่ำกว่า consensus ~$12"
+        },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE ของ fda_decision (-10.6%) หลุด 52-week low โดยไม่เด้งแปลว่าตลาด price ความเสี่ยงระดมทุน",
+          "hardNote": "-28% — โดน CRL หรือเพิ่มทุนแบบ dilute",
+          "rrNote": "จากกลาง Entry 2 ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "R/R ดี ✅"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "PDUFA Quimilza",
+          "note": "GPP — ตรงวันเสาร์"
+        },
+        {
+          "event": "เปิดตัว BYSANTI",
+          "note": "Q4 2026 ตามบริษัท"
+        }
+      ]
+    }
+  }
+}

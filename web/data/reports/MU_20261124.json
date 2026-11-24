@@ -1,0 +1,292 @@
+{
+  "ticker": "MU",
+  "companyName": "Micron Technology, Inc.",
+  "companyDescription": "Memory · DRAM + NAND + HBM for AI accelerators · HBM sold out for 2026 · FQ4 FY26 revenue $54.2B, FQ1 FY27 guide $61.5B ± $1.5B (vs ~$57B Street)",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-24T15:00:00.000Z",
+  "price": 707.7,
+  "priceChange": 19.04,
+  "priceNote": "Live $707.70 (+19.0%, Nov 23 close, Yahoo) on the NVIDIA/Huang relief rally. About 42% below the $1,213.56 52-week high and below both the 50-day (~$908) and the 200-day (~$774). It fell 17.5% on Nov 5 alone in the AI/chip selloff.",
+  "marketCap": "~$790B (est.)",
+  "sector": "Technology / Semiconductors — Memory",
+  "verdict": "BUY",
+  "scoreLabel": "Core Holding",
+  "score": 0,
+  "summary": "The AI memory leader has de-rated about 42% from its high while guidance keeps rising. FQ4 revenue was $54.2B and the FQ1 guide is $61.5B ± $1.5B, against a ~$57B Street estimate going in. HBM is sold out for 2026. The FQ1 report is confirmed for Dec 17 (company release, Nov 19). Consensus sits around $1,560 (+120%) with 45 Buy/Strong Buy ratings, but the dispersion is huge ($361–$2,500). The catalyst is 23 days out, beyond the 14d North Star window. Base +15% assumes a clean beat-and-raise into January, a 4–6 week horizon above the core P75 (10.8%).",
+  "catalysts": [
+    {
+      "icon": "⚡",
+      "name": "FQ1 FY27 earnings (Dec 17)",
+      "description": "Confirmed by Micron's Nov 19 release: call Dec 17, 2026 at 2:30pm MT. Guide was $61.5B ± $1.5B. The read is HBM pricing for 2027 and whether capex discipline holds.",
+      "urgencyLabel": "23 DAYS",
+      "dateBadge": "Dec 17, 2026",
+      "catalystDate": "2026-12-17",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "🏦",
+      "name": "FOMC Dec 9 + CPI Dec 10",
+      "description": "Macro stack one week before the print: a +25bp hike is ~91% priced; a 50bp surprise would hit high-beta semis first.",
+      "urgencyLabel": "15 DAYS",
+      "dateBadge": "Dec 9, 2026",
+      "catalystDate": "2026-12-09",
+      "badgeColor": "yellow",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Memory is cyclical: 66% gross margins in the cloud memory unit invite new supply that eventually pushes prices down.",
+    "Extreme volatility: -17.5% on Nov 5 and +19% on Nov 23; a beat can still sell off if 2027 HBM pricing disappoints.",
+    "Policy: the Nov 5 drop was tied to midterm results that could curb data-center construction.",
+    "Macro WAIT (15/100) with FOMC/CPI one week before the print."
+  ],
+  "estimateDates": [
+    {
+      "event": "FQ1 FY27 earnings",
+      "dateRange": "Dec 17, 2026",
+      "note": "HBM 2027 pricing + FQ2 guide",
+      "est": "Rev $61.5B ± $1.5B",
+      "highlight": "blue"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -20,
+      "price": 566.16
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 15,
+      "price": 813.86
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 35,
+      "price": 955.4
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 70,
+      "price": 1203.09
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Consensus median (55 analysts, Nov 15)",
+      "target": 1575,
+      "rating": "Strong Buy"
+    },
+    {
+      "firm": "KeyBanc (John Vinh)",
+      "target": 2500,
+      "rating": "Overweight"
+    },
+    {
+      "firm": "Street low",
+      "target": 361,
+      "rating": "—"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "MEDIUM",
+    "rateOutlook": "Fed funds 3.75–4.00%. CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~91% (Nov 23); futures dropped the 50bp tail after the November selloff.",
+    "inflationNote": "Oct core CPI +0.3% m/m (hot). Sep core PCE 3.1% y/y; Oct PCE (Nov 25) consensus 3.2% is the last inflation print before the Fed.",
+    "sectorImpact": "Semis are high-beta to rates and AI-capex sentiment; MU's earnings momentum gives it more support than pre-profit AI names.",
+    "summary": "MEDIUM — /macro is WAIT (15/100, high conviction): S&P 7,237 is still below its 200-day (~7,340) after the Nov 23 +4.7% squeeze, VIX 27, breadth ~43% above 50DMA, HY OAS widening to ~3.52%. Core prior is largely unmeasured in this regime (8/174 windows had SPY down >2%)."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 707.7,
+        "note": "Current price — starter only. Not preferred: core at-catalyst median -6.5% (n=157)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 640,
+        "rangeMax": 680,
+        "note": "Give-back of part of the +19% Nov 23 squeeze — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 600,
+        "note": "Deep dip — near the Nov 20 close",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 813.86,
+      "pct": 15,
+      "note": "Base — ~$814, back above the 200-day after a beat-and-raise. 4–6 week horizon; above the core P75 (10.8%) by design."
+    },
+    "tp2": {
+      "price": 955.4,
+      "pct": 35,
+      "note": "Bull — ~$955, toward the 50-day as 2027 HBM pricing is confirmed."
+    },
+    "tp3": {
+      "price": 1203.09,
+      "pct": 70,
+      "note": "Moon — ~$1,203, the 52-week high; still below the ~$1,560 consensus.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 600,
+      "tightPct": -15.22,
+      "tightNote": "-15% — wider than the earnings_beat medianMAE (-9.5%). Below the Nov 20 close the squeeze has fully failed.",
+      "hard": 540,
+      "hardPct": -23.7,
+      "hardNote": "-24% — market pricing a memory down-cycle.",
+      "riskReward": "4.9 : 1",
+      "rrNote": "Entry 2 midpoint ($660.00) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Good R/R ✅"
+    },
+    "verdict": "BUY · Core 5% — confirmed Dec 17 print, guide above Street, 42% off the high. The core at-catalyst median is -6.5% (n=157), so Entry 2 ($640–680) is preferred over chasing the +19% day.",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "earnings_beat",
+    "preRunup": "MU tends to run into prints when the guide is strong, and sells off on any pricing-cycle doubt.",
+    "preRunupTiming": "1–2 weeks before results",
+    "preRunupPct": "+5–10%",
+    "postWin": {
+      "avgPct": 15,
+      "range": "+9% to +15%",
+      "note": "MU rose ~14.7% the day after its Sep 2024 FQ4 beat-and-raise; it bounced +9% in late Oct 2026 on memory supercycle data.",
+      "exampleDate": "Sep 26, 2024"
+    },
+    "postLose": {
+      "avgPct": -16,
+      "range": "-16% to -17.5%",
+      "note": "MU fell ~16% after its Dec 2024 guide disappointed, and -17.5% on Nov 5, 2026 in the AI/chip selloff.",
+      "exampleDate": "Dec 19, 2024"
+    },
+    "spotSizing": {
+      "pct": 5,
+      "reason": "5%. earnings_beat is not a tier-2 laggard; trimmed from a full core weight because macro is WAIT and FOMC/CPI land a week before the print."
+    },
+    "stopPreCatalyst": {
+      "pct": -15.22,
+      "price": 600,
+      "note": "Wider than the turbo medianMAE (-20%). Below the Nov 20 close the squeeze has fully failed."
+    },
+    "stopPostCatalyst": {
+      "pct": -15,
+      "note": "If the FQ2 guide comes in below the FQ1 run-rate, exit."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "MU",
+      "event": "FQ4 FY24 beat-and-raise",
+      "date": "Sep 2024",
+      "movePct": 14.7,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same company: a strong guide produced a mid-teens one-day move."
+    },
+    {
+      "ticker": "MU",
+      "event": "FQ1 FY25 guide miss",
+      "date": "Dec 2024",
+      "movePct": -16,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Same quarter of the year: a soft guide erased gains fast."
+    },
+    {
+      "ticker": "MU",
+      "event": "Nov 5, 2026 AI/chip selloff",
+      "date": "Nov 2026",
+      "movePct": -17.5,
+      "days": 1,
+      "outcome": "bad",
+      "note": "No company news needed — tape risk is the main downside in this regime."
+    }
+  ],
+  "sources": [
+    "https://finviz.com/news/397277/micron-technology-inc-reports-record-fiscal-fourth-quarter-and-full-year-2026-results",
+    "https://www.quiverquant.com/news/Micron+Technology+Announces+Date+for+Fiscal+First+Quarter+2026+Earnings+Conference+Call",
+    "https://fool.com/investing/2026/11/15/this-will-be-microns-stock-price-late-2027",
+    "https://247wallst.com/investing/2026/11/09/micron-has-lost-over-40-since-june-where-does-its-price-target-stand-now/",
+    "https://www.webull.com/news/15911150122550272",
+    "https://www.fool.com/investing/2026/10/28/why-micron-stock-is-up-today/",
+    "https://www.fool.com/coverage/stock-market-today/2026/11/23/stock-market-today-nov-23-markets-rebound-from-correction-on-ai-relief-rally/"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "ผู้นำหน่วยความจำ AI ถูกลดมูลค่า ~42% จากจุดสูงสุด ขณะที่ guidance ยังเพิ่มขึ้น รายได้ FQ4 $54.2B และ guide FQ1 $61.5B ± $1.5B เทียบ Street ที่คาด ~$57B ก่อนงบ HBM ขายหมดสำหรับปี 2026 งบ FQ1 ยืนยันวันที่ 17 ธ.ค. (ประกาศบริษัท 19 พ.ย.) consensus ราว $1,560 (+120%) โดยมี Buy/Strong Buy 45 ราย แต่เป้ากระจายมาก ($361–$2,500) catalyst อีก 23 วัน เกินกรอบ 14 วันของ North Star Base +15% สมมติงบดี + ปรับ guide ขึ้นถึงเดือน ม.ค. กรอบ 4–6 สัปดาห์ สูงกว่า P75 ของ core (10.8%)",
+      "priceNote": "ราคาสด $707.70 (+19.0% ปิด 23 พ.ย., Yahoo) ในวันที่ตลาดเด้งจากข่าว NVIDIA/Huang ต่ำกว่า 52-week high $1,213.56 ~42% และต่ำกว่าทั้งเส้น 50 วัน (~$908) และ 200 วัน (~$774) ร่วง 17.5% ในวันที่ 5 พ.ย. วันเดียว",
+      "scoreLabel": "Core Holding",
+      "catalysts": [
+        {
+          "name": "งบ FQ1 ปีงบ 2027 (17 ธ.ค.)",
+          "description": "ยืนยันโดย Micron (ประกาศ 19 พ.ย.): call 17 ธ.ค. 2026 เวลา 14:30 MT guide $61.5B ± $1.5B ประเด็นคือราคา HBM ปี 2027 และวินัยด้าน capex"
+        },
+        {
+          "name": "FOMC 9 ธ.ค. + CPI 10 ธ.ค.",
+          "description": "event มหภาคซ้อนหนึ่งสัปดาห์ก่อนงบ ตลาด price การขึ้น 25bp ~91% ถ้าขึ้น 50bp จะกระทบหุ้นชิป beta สูงก่อน"
+        }
+      ],
+      "risks": [
+        "หน่วยความจำเป็นวัฏจักร: gross margin 66% ในหน่วยธุรกิจ cloud memory ดึงซัพพลายใหม่เข้ามาและกดราคาในที่สุด",
+        "ผันผวนสูงมาก: -17.5% วันที่ 5 พ.ย. และ +19% วันที่ 23 พ.ย. ต่อให้งบดีก็ยังลงได้ถ้าราคา HBM ปี 2027 น่าผิดหวัง",
+        "นโยบาย: การร่วง 5 พ.ย. เชื่อมกับผลเลือกตั้งกลางเทอมที่อาจชะลอการสร้าง data center",
+        "มหภาค WAIT (15/100) และมี FOMC/CPI หนึ่งสัปดาห์ก่อนงบ"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ย Fed 3.75–4.00% CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ~91% (23 พ.ย.) ฟิวเจอร์สตัดโอกาสขึ้น 50bp ออกหลังตลาดร่วงเดือน พ.ย.",
+        "inflationNote": "core CPI ต.ค. +0.3% m/m (ร้อน) core PCE ก.ย. 3.1% y/y PCE ต.ค. (25 พ.ย.) คาด 3.2% เป็นตัวเลขเงินเฟ้อตัวสุดท้ายก่อน Fed",
+        "sectorImpact": "หุ้นชิป beta สูงต่อดอกเบี้ยและอารมณ์ AI capex โมเมนตัมกำไรของ MU ช่วยพยุงได้มากกว่าหุ้น AI ที่ยังไม่มีกำไร",
+        "summary": "MEDIUM — /macro เป็น WAIT (15/100 ความมั่นใจสูง): S&P 7,237 ยังต่ำกว่าเส้น 200 วัน (~7,340) หลังเด้ง +4.7% เมื่อ 23 พ.ย. VIX 27 breadth ~43% เหนือ 50DMA HY OAS กว้างขึ้นเป็น ~3.52% prior ของ core แทบไม่เคยวัดในตลาดแบบนี้ (8/174 window ที่ SPY ลง >2%)"
+      },
+      "entryStrategy": {
+        "verdict": "BUY · Core 5% — งบ 17 ธ.ค. ยืนยันแล้ว guide สูงกว่า Street ต่ำกว่าจุดสูงสุด 42% median ถึงวัน catalyst ของ core -6.5% (n=157) จึงเข้าที่ Entry 2 ($640–680) ดีกว่าไล่ราคาวันที่ขึ้น +19%",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ core -6.5% (n=157)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "รอคืนกำไรบางส่วนจากวันที่เด้ง +19% (23 พ.ย.) — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ร่วงหนัก — ใกล้ราคาปิด 20 พ.ย.",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — ~$814 กลับเหนือเส้น 200 วันหลังงบดี + ปรับ guide กรอบ 4–6 สัปดาห์ สูงกว่า P75 ของ core โดยตั้งใจ"
+        },
+        "tp2": {
+          "note": "Bull — ~$955 ไปหาเส้น 50 วันเมื่อราคา HBM ปี 2027 ยืนยัน"
+        },
+        "tp3": {
+          "note": "Moon — ~$1,203 เท่า 52-week high ยังต่ำกว่า consensus ~$1,560"
+        },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE ของ earnings_beat (-9.5%) ต่ำกว่าราคาปิด 20 พ.ย. แปลว่าการเด้งล้มเหลวทั้งหมด",
+          "hardNote": "-24% — ตลาด price วัฏจักรขาลงของหน่วยความจำ",
+          "rrNote": "จากกลาง Entry 2 ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "R/R ดี ✅"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "งบ FQ1 ปีงบ 2027",
+          "note": "ราคา HBM ปี 2027 + guide FQ2"
+        }
+      ]
+    }
+  }
+}

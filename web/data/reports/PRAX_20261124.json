@@ -1,0 +1,303 @@
+{
+  "ticker": "PRAX",
+  "companyName": "Praxis Precision Medicines, Inc.",
+  "companyDescription": "CNS biotech · relutrigine (SCN2A/SCN8A DEE, PDUFA Dec 27, 2026) · ulixacaltamide (essential tremor, PDUFA Jan 29, 2027) · field team fully hired ahead of launch",
+  "exchange": "NASDAQ",
+  "generatedAt": "2026-11-24T15:00:00.000Z",
+  "price": 307,
+  "priceChange": 2.19,
+  "priceNote": "Live $307.00 (+2.2%, Nov 23 close, Yahoo). About 21% below the $386.33 52-week high and roughly at its 200-day (~$314). It is less damaged than tech in the Nov selloff.",
+  "marketCap": "~$9B (est.)",
+  "sector": "Healthcare / Biotechnology — CNS",
+  "verdict": "BUY",
+  "scoreLabel": "Speculative",
+  "score": 0,
+  "summary": "Two back-to-back FDA decisions for a CNS biotech that is ready to launch. Relutrigine for SCN2A/SCN8A DEE has a PDUFA of Dec 27, 2026, moved from Sep 27 after a major amendment and confirmed in the Nov 9 Q3 update. The mid-cycle review found no major safety or efficacy concerns and no AdCom is planned. Ulixacaltamide (essential tremor) follows with a PDUFA of Jan 29, 2027. Consensus is ~$539 (+75%, 17 analysts), though Wedbush sits at $162 Underperform. The catalyst is 33 days out, so the 14d North Star window closes first. fda_decision is a core tier-2 leader (+8.1pp vs +4.1pp). Base +20% is the approval move over ~5 weeks, above the core P75 (10.8%).",
+  "catalysts": [
+    {
+      "icon": "💊",
+      "name": "Relutrigine FDA decision (PDUFA Dec 27)",
+      "description": "NDA for SCN2A/SCN8A developmental and epileptic encephalopathies. The date was moved from Sep 27 after a major amendment (sensitivity analyses) and was confirmed in Praxis's Nov 9 update. Mid-cycle review found no major concerns; no AdCom planned.",
+      "urgencyLabel": "33 DAYS",
+      "dateBadge": "Dec 27, 2026",
+      "catalystDate": "2026-12-27",
+      "badgeColor": "red",
+      "dotColor": "yellow"
+    },
+    {
+      "icon": "💊",
+      "name": "Ulixacaltamide FDA decision (PDUFA Jan 29, 2027)",
+      "description": "Essential tremor — the larger commercial market. A second binary five weeks after relutrigine.",
+      "urgencyLabel": "66 DAYS",
+      "dateBadge": "Jan 29, 2027",
+      "catalystDate": "2027-01-29",
+      "badgeColor": "blue",
+      "dotColor": "gray"
+    }
+  ],
+  "risks": [
+    "Regulatory binary: the major amendment shows the FDA wanted more analysis; a CRL would hit hard after an ~800% run.",
+    "Bear target: Wedbush cut to $162 (Underperform) on extended vormatrigine launch timing.",
+    "Rare-disease launch: SCN2A/SCN8A is a small population, so the real value sits in the Jan 29 ulixacaltamide decision.",
+    "Holiday timing: Dec 27 falls on a Sunday in a thin-liquidity week."
+  ],
+  "estimateDates": [
+    {
+      "event": "Relutrigine PDUFA",
+      "dateRange": "Dec 27, 2026",
+      "note": "SCN2A/SCN8A DEE",
+      "est": "Approval",
+      "highlight": "blue"
+    },
+    {
+      "event": "Ulixacaltamide PDUFA",
+      "dateRange": "Jan 29, 2027",
+      "note": "Essential tremor",
+      "est": "Approval",
+      "highlight": "yellow"
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Bear",
+      "color": "red",
+      "pct": -35,
+      "price": 199.55
+    },
+    {
+      "label": "Base",
+      "color": "yellow",
+      "pct": 20,
+      "price": 368.4
+    },
+    {
+      "label": "Bull",
+      "color": "green",
+      "pct": 45,
+      "price": 445.15
+    },
+    {
+      "label": "Moon",
+      "color": "purple",
+      "pct": 90,
+      "price": 583.3
+    }
+  ],
+  "analystTargets": [
+    {
+      "firm": "Benzinga consensus (17 analysts)",
+      "target": 539,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Needham (Sep 24, 2026)",
+      "target": 582,
+      "rating": "Buy"
+    },
+    {
+      "firm": "Wedbush",
+      "target": 162,
+      "rating": "Underperform"
+    }
+  ],
+  "macroRisk": {
+    "fedRisk": "LOW",
+    "rateOutlook": "Fed funds 3.75–4.00%. CME FedWatch prices a +25bp hike at the Dec 9 FOMC at ~91% (Nov 23); futures dropped the 50bp tail after the November selloff.",
+    "inflationNote": "Oct core CPI +0.3% m/m (hot). Sep core PCE 3.1% y/y; Oct PCE (Nov 25) consensus 3.2% is the last inflation print before the Fed.",
+    "sectorImpact": "A launch-stage biotech is driven by FDA binaries rather than rates; macro matters mainly through risk appetite into a thin holiday tape.",
+    "summary": "LOW — /macro is WAIT (15/100, high conviction): S&P 7,237 is still below its 200-day (~7,340) after the Nov 23 +4.7% squeeze, VIX 27, breadth ~43% above 50DMA, HY OAS widening to ~3.52%. Core prior is largely unmeasured in this regime (8/174 windows had SPY down >2%)."
+  },
+  "entryStrategy": {
+    "entryLevels": [
+      {
+        "label": "Entry 1",
+        "level": 307,
+        "note": "Current price — starter only. Not preferred: core at-catalyst median -6.5% (n=157)",
+        "timing": "Now (starter)"
+      },
+      {
+        "label": "Entry 2",
+        "level": 280,
+        "rangeMax": 295,
+        "note": "Pullback toward the 50-day (~$286) — preferred",
+        "timing": "If dips",
+        "preferred": true
+      },
+      {
+        "label": "Entry 3",
+        "level": 255,
+        "note": "Deep dip — only on a broad biotech selloff",
+        "timing": "Deep dip"
+      }
+    ],
+    "tp1": {
+      "price": 368.4,
+      "pct": 20,
+      "note": "Base — ~$368 on relutrigine approval. ~5 week horizon; above the core P75 (10.8%) by design."
+    },
+    "tp2": {
+      "price": 445.15,
+      "pct": 45,
+      "note": "Bull — ~$445 if both approvals land with clean labels."
+    },
+    "tp3": {
+      "price": 583.3,
+      "pct": 90,
+      "note": "Moon — ~$583, Needham's $582 target.",
+      "moon": true
+    },
+    "stopLoss": {
+      "tight": 262,
+      "tightPct": -14.66,
+      "tightNote": "-15% — wider than the fda_decision medianMAE (-10.6%). Below ~$262 the market is pricing a CRL risk.",
+      "hard": 225,
+      "hardPct": -26.71,
+      "hardNote": "-27% — CRL-type move; thesis broken.",
+      "riskReward": "6.2 : 1",
+      "rrNote": "Entry 2 midpoint ($287.50) to tight stop vs TP2 (Bull)",
+      "rrWarning": "Good R/R ✅"
+    },
+    "verdict": "BUY · Speculative 4% — confirmed Dec 27 PDUFA, no major mid-cycle concerns, second PDUFA Jan 29. The core at-catalyst median is -6.5% (n=157), so Entry 2 ($280–295) is preferred; fda_decision is a tier-2 leader (+8.1pp).",
+    "approach": "Scale In"
+  },
+  "catalystSpot": {
+    "catalystType": "fda_decision",
+    "preRunup": "Biotechs with a clean mid-cycle review often drift up into the PDUFA.",
+    "preRunupTiming": "2–4 weeks before PDUFA",
+    "preRunupPct": "+5–15%",
+    "postWin": {
+      "avgPct": 7,
+      "range": "+7% to +46%",
+      "note": "VERA rose ~7% on its Jul 7, 2026 TRUTAKNA approval; TVTX gained ~46% in the 30 days after its expanded Filspari approval (Apr–May 2026).",
+      "exampleDate": "Jul 7, 2026"
+    },
+    "postLose": {
+      "avgPct": -16,
+      "range": "-16% to -50%",
+      "note": "CELC fell ~16% when post-approval launch guidance disappointed (Jul 15, 2026); an outright CRL typically costs far more.",
+      "exampleDate": "Jul 15, 2026"
+    },
+    "spotSizing": {
+      "pct": 4,
+      "reason": "4%. fda_decision is a core tier-2 leader (+8.1pp vs +4.1pp, n=11) — a mild tailwind only. Two binaries in five weeks and the Wedbush bear case keep it below full weight."
+    },
+    "stopPreCatalyst": {
+      "pct": -14.66,
+      "price": 262,
+      "note": "Wider than the turbo medianMAE (-20%). Below ~$262 the market is pricing a CRL risk."
+    },
+    "stopPostCatalyst": {
+      "pct": -20,
+      "note": "On a CRL or restrictive label, exit."
+    }
+  },
+  "comparableCases": [
+    {
+      "ticker": "PRAX",
+      "event": "Essential3 ulixacaltamide Phase 3 win",
+      "date": "Oct 2025",
+      "movePct": 200,
+      "days": 1,
+      "outcome": "good",
+      "note": "Same company: the pivotal data that started the ~800% run."
+    },
+    {
+      "ticker": "TVTX",
+      "event": "Filspari expanded approval → 30-day momentum",
+      "date": "Apr–May 2026",
+      "movePct": 46,
+      "days": 30,
+      "outcome": "good",
+      "note": "Approval plus launch narrative can extend for weeks."
+    },
+    {
+      "ticker": "CELC",
+      "event": "Approval followed by weak launch-timing guidance",
+      "date": "Jul 2026",
+      "movePct": -16,
+      "days": 1,
+      "outcome": "bad",
+      "note": "Even an approval can sell off if launch details disappoint."
+    }
+  ],
+  "sources": [
+    "https://www.barchart.com/story/news/3040512/praxis-precision-medicines-announces-extension-period-for-relutrigine-for-treatment-of-scn2a-and-scn8a-developmental-and-epileptic-encephalopathies",
+    "https://finviz.com/news/418883/praxis-precision-medicines-provides-corporate-update-and-reports-third-quarter-2026-financial-results",
+    "https://finviz.com/news/422265/praxis-precision-medicines-details-launch-readiness-for-relutrigine-and-ulixacaltamide-and-outlines-expanded-pipeline-in-preparation-to-be-the-preeminent-cns-biotech-at-investor-day",
+    "https://www.prnewswire.com/news-releases/a-run-of-fda-target-dates-fills-the-biotech-calendar-from-late-november-to-year-end-302937803.html",
+    "https://kr.benzinga.com/quote/PRAX/price-targets",
+    "https://www.nasdaq.com/articles/wedbush-analyst-ratings-prax-idya-ewtx-jade",
+    "https://www.rttnews.com/3678001/show-me-the-money-after-an-800-gain-prax-enters-a-high-stakes-stretch.aspx?type=ts"
+  ],
+  "i18n": {
+    "th": {
+      "summary": "FDA ตัดสินสองครั้งติดกันสำหรับไบโอเทค CNS ที่พร้อมเปิดตัวแล้ว relutrigine (SCN2A/SCN8A DEE) มี PDUFA 27 ธ.ค. 2026 (เลื่อนจาก 27 ก.ย. หลังมี major amendment และยืนยันใน update Q3 วันที่ 9 พ.ย.) การประชุม mid-cycle ไม่พบประเด็นใหญ่ด้านความปลอดภัยหรือประสิทธิภาพ และไม่มี AdCom ulixacaltamide (โรคมือสั่น) ตามมาด้วย PDUFA 29 ม.ค. 2027 consensus ~$539 (+75%, 17 ราย) แต่ Wedbush ให้ $162 Underperform catalyst อีก 33 วัน กรอบ 14 วันของ North Star จะปิดก่อน fda_decision เป็น leader ใน tier-2 ของ core (+8.1pp เทียบ +4.1pp) Base +20% คือการขึ้นเมื่อได้รับอนุมัติในกรอบ ~5 สัปดาห์ สูงกว่า P75 ของ core (10.8%)",
+      "priceNote": "ราคาสด $307.00 (+2.2% ปิด 23 พ.ย., Yahoo) ต่ำกว่า 52-week high $386.33 ~21% และใกล้เส้น 200 วัน (~$314) เสียหายน้อยกว่าหุ้นเทคในรอบขายเดือน พ.ย.",
+      "scoreLabel": "Speculative",
+      "catalysts": [
+        {
+          "name": "FDA ตัดสิน relutrigine (PDUFA 27 ธ.ค.)",
+          "description": "NDA สำหรับโรคลมชักรุนแรงในเด็ก SCN2A/SCN8A วันถูกเลื่อนจาก 27 ก.ย. หลังมี major amendment และยืนยันใน update 9 พ.ย. ของบริษัท การประชุม mid-cycle ไม่พบประเด็นใหญ่ และไม่มี AdCom"
+        },
+        {
+          "name": "FDA ตัดสิน ulixacaltamide (PDUFA 29 ม.ค. 2027)",
+          "description": "โรคมือสั่น (essential tremor) — ตลาดใหญ่กว่า เป็น binary ตัวที่สองห้าสัปดาห์หลัง relutrigine"
+        }
+      ],
+      "risks": [
+        "binary ด้านกำกับดูแล: major amendment แสดงว่า FDA ต้องการการวิเคราะห์เพิ่ม ถ้าได้ CRL จะลงแรงหลังหุ้นวิ่งไป ~800%",
+        "เป้าฝั่งหมี: Wedbush ลดเป้าเป็น $162 (Underperform) เพราะคาดการเปิดตัว vormatrigine ล่าช้า",
+        "การเปิดตัวยาโรคหายาก: SCN2A/SCN8A ผู้ป่วยน้อย มูลค่าจริงอยู่ที่การตัดสิน ulixacaltamide 29 ม.ค.",
+        "จังหวะวันหยุด: 27 ธ.ค. ตรงกับวันอาทิตย์ในสัปดาห์ที่สภาพคล่องบาง"
+      ],
+      "macroRisk": {
+        "rateOutlook": "ดอกเบี้ย Fed 3.75–4.00% CME FedWatch ให้โอกาสขึ้น 25bp ในประชุม 9 ธ.ค. ~91% (23 พ.ย.) ฟิวเจอร์สตัดโอกาสขึ้น 50bp ออกหลังตลาดร่วงเดือน พ.ย.",
+        "inflationNote": "core CPI ต.ค. +0.3% m/m (ร้อน) core PCE ก.ย. 3.1% y/y PCE ต.ค. (25 พ.ย.) คาด 3.2% เป็นตัวเลขเงินเฟ้อตัวสุดท้ายก่อน Fed",
+        "sectorImpact": "ไบโอเทคที่ใกล้เปิดตัวขับเคลื่อนด้วย binary ของ FDA มากกว่าดอกเบี้ย มหภาคมีผลหลักผ่านอารมณ์ตลาดในช่วงวันหยุดที่สภาพคล่องบาง",
+        "summary": "LOW — /macro เป็น WAIT (15/100 ความมั่นใจสูง): S&P 7,237 ยังต่ำกว่าเส้น 200 วัน (~7,340) หลังเด้ง +4.7% เมื่อ 23 พ.ย. VIX 27 breadth ~43% เหนือ 50DMA HY OAS กว้างขึ้นเป็น ~3.52% prior ของ core แทบไม่เคยวัดในตลาดแบบนี้ (8/174 window ที่ SPY ลง >2%)"
+      },
+      "entryStrategy": {
+        "verdict": "BUY · Speculative 4% — PDUFA 27 ธ.ค. ยืนยันแล้ว mid-cycle ไม่มีประเด็นใหญ่ PDUFA ตัวที่สอง 29 ม.ค. median ถึงวัน catalyst ของ core -6.5% (n=157) จึงเข้าที่ Entry 2 ($280–295) เป็นหลัก fda_decision เป็น leader ใน tier-2 (+8.1pp)",
+        "entryLevels": [
+          {
+            "note": "ราคาปัจจุบัน — ไม้เริ่มเท่านั้น median ถึงวัน catalyst ของ core -6.5% (n=157)",
+            "timing": "ตอนนี้ (ไม้เล็ก)"
+          },
+          {
+            "note": "ย่อไปหาเส้น 50 วัน (~$286) — จุดเข้าหลัก",
+            "timing": "ถ้าย่อ"
+          },
+          {
+            "note": "ร่วงหนัก — เฉพาะถ้ากลุ่มไบโอเทคถูกขายทั้งกลุ่ม",
+            "timing": "ถ้าร่วงหนัก"
+          }
+        ],
+        "tp1": {
+          "note": "Base — ~$368 เมื่อ relutrigine ได้รับอนุมัติ กรอบ ~5 สัปดาห์ สูงกว่า P75 ของ core โดยตั้งใจ"
+        },
+        "tp2": {
+          "note": "Bull — ~$445 ถ้าได้อนุมัติทั้งสองตัวด้วยฉลากที่ดี"
+        },
+        "tp3": {
+          "note": "Moon — ~$583 เป้า Needham $582"
+        },
+        "stopLoss": {
+          "tightNote": "กว้างกว่า medianMAE ของ fda_decision (-10.6%) ต่ำกว่า ~$262 แปลว่าตลาด price ความเสี่ยง CRL",
+          "hardNote": "-27% — การเคลื่อนไหวแบบโดน CRL thesis พัง",
+          "rrNote": "จากกลาง Entry 2 ถึง tight stop เทียบกับ TP2 (Bull)",
+          "rrWarning": "R/R ดี ✅"
+        }
+      },
+      "estimateDates": [
+        {
+          "event": "PDUFA relutrigine",
+          "note": "โรคลมชัก SCN2A/SCN8A"
+        },
+        {
+          "event": "PDUFA ulixacaltamide",
+          "note": "โรคมือสั่น"
+        }
+      ]
+    }
+  }
+}

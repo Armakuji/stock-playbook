@@ -1998,6 +1998,78 @@
       "priceAtScreen": 2.05,
       "topAnalystTarget": 6,
       "impliedUpside": 192.7
+    },
+    {
+      "date": "2026-11-24",
+      "ticker": "ORCL",
+      "lane": "core",
+      "reason": "longlist-cut: +107% to the $235.77 consensus, but the ~Dec 14 report date comes only from aggregators (\"expected\"); no company confirmation found, so it fails date provenance (#37).",
+      "priceAtScreen": 113.68,
+      "topAnalystTarget": 235.77,
+      "impliedUpside": 107.4
+    },
+    {
+      "date": "2026-11-24",
+      "ticker": "MDB",
+      "lane": "core",
+      "reason": "Dec 1 earnings confirmed (company PR, Nov 5), but upside to consensus is marginal (~$382 Benzinga, undated; mid-2026 snapshots $370–396 → +18–27%) and ranked below the five on the gate margin.",
+      "priceAtScreen": 312.69,
+      "topAnalystTarget": 381.97,
+      "impliedUpside": 22.2
+    },
+    {
+      "date": "2026-11-24",
+      "ticker": "OKTA",
+      "lane": "core",
+      "reason": "longlist-cut: Dec 1 earnings confirmed but upside to consensus is thin (~$215 vs $206, +4%); fails the 20% gate.",
+      "priceAtScreen": 206.28,
+      "topAnalystTarget": 214.72,
+      "impliedUpside": 4.1
+    },
+    {
+      "date": "2026-11-24",
+      "ticker": "ADBE",
+      "lane": "core",
+      "reason": "longlist-cut: no confirmed December report date found (only a stale aggregator entry). $300 target is a best-effort estimate.",
+      "priceAtScreen": 223.98,
+      "topAnalystTarget": 300,
+      "impliedUpside": 33.9
+    },
+    {
+      "date": "2026-11-24",
+      "ticker": "BBIO",
+      "lane": "core",
+      "reason": "longlist-cut: BBP-418 PDUFA Nov 27 is company-announced, but consensus upside was not verified this run. $95 target is a best-effort estimate.",
+      "priceAtScreen": 79.13,
+      "topAnalystTarget": 95,
+      "impliedUpside": 20.1
+    },
+    {
+      "date": "2026-11-24",
+      "ticker": "CORT",
+      "lane": "core",
+      "reason": "longlist-cut: relacorilant Dec 17 resubmission date still from aggregators only (same as the Nov 18 run). $95 target is a best-effort estimate.",
+      "priceAtScreen": 66.25,
+      "topAnalystTarget": 95,
+      "impliedUpside": 43.4
+    },
+    {
+      "date": "2026-11-24",
+      "ticker": "CRWD",
+      "lane": "core",
+      "reason": "longlist-cut: already reported Nov 23 (call moved up from Dec 1) — the event is post-stage. $300 target is a best-effort estimate.",
+      "priceAtScreen": 208.97,
+      "topAnalystTarget": 300,
+      "impliedUpside": 43.6
+    },
+    {
+      "date": "2026-11-24",
+      "ticker": "PYPD",
+      "lane": "core",
+      "reason": "longlist-cut: D-PLEX100 PDUFA Nov 28 comes from an aggregator (moved up a quarter by priority review); it is a turbo-lane name, and consensus was not verified. $12 target is a best-effort estimate.",
+      "priceAtScreen": 5.77,
+      "topAnalystTarget": 12,
+      "impliedUpside": 108
     }
   ]
 }
